@@ -21,241 +21,174 @@ badge: label="Private beta" type="Informative"
 * [Get started with Loyalty Challenges](get-started.md) - Overview, workflow, prerequisites
 * [Access Loyalty Challenges](access-loyalty-challenges.md) - Inventory and filtering
 * **Create challenges** ◀︎ **You are here** - Build and configure challenges
+* [Create tasks](create-tasks.md) - Define challenge tasks
 * [Manage challenges](manage-challenges.md) - Edit, monitor, optimize
 
 >[!ENDSHADEBOX]
 
->[!CONTEXTUALHELP]
->id="ajo_loyalty_create_challenge"
->title="Create a loyalty challenge"
->abstract="Create a loyalty challenge to define the engagement offer, configure content cards for delivery, add tasks, set up rewards, and optionally configure messaging across channels."
-
-## Before you start {#before-you-start}
-
-Before creating a challenge, ensure you have:
-
-* Configured and validated data ingestion through source connectors
-* Created any required audiences in Experience Platform
-* Prepared content assets (images, text, etc.) for your challenge
-* Defined the tasks and rewards you want to offer
-
-## Create a challenge {#create-a-challenge}
-
-For detailed steps on creating challenges including:
-* Challenge properties configuration
-* Challenge types (Standard, Streak, Sequential)
-* Audience selection
-* Date configuration
-
-## Add tasks {#add-tasks}
-
-Tasks define the specific actions or milestones that customers must complete to earn rewards in a loyalty challenge. You can configure task types, quantities, product requirements, and reward values to create engaging and personalized loyalty experiences.
-
-### Task overview {#task-overview}
-
-Each task represents a measurable action that contributes toward challenge completion. Depending on your challenge type (Standard, Streak, or Sequential), customers complete tasks differently:
-
-* **Standard challenges**: Customers complete any specified number of tasks in any order
-* **Streak challenges**: Customers complete the same task multiple times consecutively
-* **Sequential challenges**: Customers complete tasks in a defined order
-
-### Add a task {#add-task}
-
-To add a task to your challenge:
-
-1. Open your challenge or create a new one.
-
-2. Navigate to the **[!UICONTROL Tasks]** section.
-
-3. Select **[!UICONTROL Add task]** or **[!UICONTROL Create new task]**.
-
-4. In the task creation screen, configure the following properties.
-
-### Task properties {#task-properties}
-
-#### Basic task information {#basic-info}
-
-**[!UICONTROL Task name]**: Enter a descriptive name for the task. This name is visible to you and your team but may not be shown to customers depending on your content card design.
-
-**[!UICONTROL Task description]**: (Optional) Add details about the task purpose or requirements.
-
-**[!UICONTROL Task type]**: Select the type of action customers must perform. Available task types include:
-
-* **[!UICONTROL Purchase]**: Customer makes a purchase transaction
-* **[!UICONTROL Spend amount]**: Customer spends a specified monetary amount
-* **[!UICONTROL Visit]**: Customer visits a physical location or digital property
-* **[!UICONTROL Engagement]**: Customer engages with content, such as viewing a video or reading an article
-* **[!UICONTROL Custom event]**: Customer triggers a custom event tracked through your data ingestion
-
-#### Quantity requirements {#quantity-requirements}
-
-**[!UICONTROL Required quantity]**: Specify how many times the customer must perform the task to complete it.
-
-For example:
-
-* For a Purchase task: "Buy 2 items" (quantity = 2)
-* For a Spend amount task: "Spend $50" (quantity = 50)
-* For a Visit task: "Visit 5 times" (quantity = 5)
-
-**[!UICONTROL Tracking period]**: (Optional) Define the time window for completing this task:
-
-* Per challenge duration (default)
-* Per day
-* Per week
-* Per month
-* Custom date range
-
-### Product and SKU filtering {#product-filtering}
-
-For Purchase and Spend amount tasks, you can specify which products qualify toward task completion.
-
-#### Product inclusions {#product-inclusions}
-
-Define which products or categories count toward the task:
-
-1. Select **[!UICONTROL Add product criteria]**.
-
-2. Choose how to define qualifying products:
-   * **[!UICONTROL By SKU]**: Enter specific product SKU codes
-   * **[!UICONTROL By category]**: Select product categories from your catalog
-   * **[!UICONTROL By attribute]**: Filter by product attributes such as brand, size, color, or custom attributes
-
-3. Enter or select the product identifiers:
-
-   **Example - By SKU**:
-
-   ```text
-   SKU001, SKU002, SKU003
-   ```
-
-   **Example - By category**:
-
-   * Beverages > Coffee
-   * Bakery > Pastries
-
-   **Example - By attribute**:
-
-   * Brand = "Premium Brand"
-   * Category = "Seasonal Items"
-   * Price > $20
-
-4. Select **[!UICONTROL Add]** to save the product criteria.
-
-#### Product exclusions {#product-exclusions}
-
-Optionally, exclude specific products from counting toward the task:
-
-1. Select **[!UICONTROL Add exclusions]**.
-
-2. Use the same filtering methods as product inclusions to specify which products should be excluded.
-
-3. Common exclusion scenarios:
-
-   * Sale or clearance items
-   * Gift cards
-   * Promotional or free items
-   * Specific brands or categories
-
->[!NOTE]
+>[!AVAILABILITY]
 >
->**Inclusion and exclusion logic**: When both inclusions and exclusions are defined:
->
->* Products must match inclusion criteria
->* Products matching exclusion criteria are removed, even if they match inclusions
->* If no inclusions are defined, all products qualify except those explicitly excluded
+>This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
-#### Examples of product filtering {#product-filtering-examples}
+## How it works {#how-it-works}
 
-##### Example 1: Coffee challenge {#example-1}
+<!-- SCHEMA: Visual workflow showing the 5 main steps with icons: Create challenge → Add tasks → Design content cards → Configure messaging → Review and publish -->
 
-* Task type: Purchase
-* Required quantity: 3
-* Inclusions: Category = "Beverages > Coffee"
-* Result: Customer must purchase 3 coffee beverages
+Creating and launching a loyalty challenge follows this workflow:
 
-##### Example 2: Premium spending {#example-2}
+1. **Create a challenge** - Define the basic challenge properties including name, type (Standard, Streak, or Sequential), audience, and date range.
 
-* Task type: Spend amount
-* Required quantity: $100
-* Inclusions: Brand = "Premium Brand"
-* Exclusions: Category = "Clearance"
-* Result: Customer must spend $100 on Premium Brand items, excluding clearance items
+1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, visit, etc.), quantities, product filters, and rewards.
 
-##### Example 3: Specific product purchase {#example-3}
+1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices.
 
-* Task type: Purchase
-* Required quantity: 1
-* Inclusions: SKU = "NEWPRODUCT2024"
-* Result: Customer must purchase the specific product with SKU "NEWPRODUCT2024"
+1. **Configure messaging** (Optional) - Set up multi-channel messages (in-app, email, push, SMS) for key stages: launch, in-progress, and completion.
 
-### Configure rewards {#configure-rewards}
+1. **Review and publish** - Test your challenge with test profiles, then publish it to make it available to your target audience.
 
-Define what customers earn for completing tasks. Rewards can be granted at the task level or at the challenge level after all tasks are complete.
+## Create the challenge {#create-challenge}
 
-#### Reward timing {#reward-timing}
+<!-- SCREENSHOT: Challenge creation screen showing challenge properties form with fields for name, type, audience, dates -->
 
-Choose when customers receive rewards:
+To create a new loyalty challenge:
 
-**[!UICONTROL After task completion]**: Customers receive a reward immediately after completing this specific task (also called "progressive rewards" or "milestone rewards").
+1. Navigate to **[!UICONTROL Loyalty challenges]** in Journey Optimizer.
 
-**[!UICONTROL After challenge completion]**: Customers receive a reward only after completing all required tasks in the challenge (also called "final rewards" or "grand prizes").
+1. Select the **[!UICONTROL Challenges]** tab.
 
->[!TIP]
->
->You can combine both reward types in a single challenge to maintain engagement throughout the customer journey. For example:
->
->* Give 10 points after each task completion (progressive rewards)
->* Give an additional 100 points after completing the entire challenge (final reward)
+1. Select **[!UICONTROL Create challenge]**.
 
-#### Reward types and values {#reward-types}
+1. Configure the challenge properties:
 
-**[!UICONTROL Points]**: Award loyalty points to the customer's account.
+   **Challenge name**: Enter a descriptive name for your challenge. This name appears in the challenges inventory and helps you identify the challenge.
 
-* Enter the number of points (e.g., 100)
-* Points are communicated to your external loyalty management system via API
+   **Challenge type**: Select one of the following types:
+   * **[!UICONTROL Standard]**: Customers complete any specified number of tasks in any order
+   * **[!UICONTROL Streak]**: Customers complete the same task multiple times consecutively
+   * **[!UICONTROL Sequential]**: Customers complete tasks in a defined order
 
-**[!UICONTROL Discount]**: Provide a discount code or value.
+   **Target audience**: Select the audience segment that defines who can participate in this challenge. You must create audiences in Experience Platform before creating challenges. For more information, see [Get started with audiences](../audience/about-audiences.md).
 
-* Enter discount type (percentage or fixed amount)
-* Enter discount value
-* Optionally specify discount code or let the system generate one
+   **Start date**: Set when the challenge becomes available to customers.
 
-**[!UICONTROL Free item]**: Grant a free product or service.
+   **End date**: Set when the challenge expires and no longer accepts new completions.
 
-* Specify the item SKU or description
-* Indicate how the free item should be claimed
+<!-- VISUAL: Comparison table or diagram showing the three challenge types (Standard, Streak, Sequential) with examples of each -->
 
-**[!UICONTROL Custom reward]**: Define a custom reward type.
+### Add tasks {#add-tasks}
 
-* Enter reward description
-* Provide any relevant codes or identifiers
-* Configure how the reward is delivered or claimed
+Tasks define the specific actions or milestones that customers must complete to earn rewards. You configure task types (purchase, spend, visit, engagement, custom events), quantities, product filters, and rewards.
 
-## Configure content cards {#configure-content-cards}
+Depending on your challenge type, customers complete tasks differently:
 
-For detailed steps on configuring content cards including:
-* Content card setup
-* Design and personalization
-* Preview and testing
+* **Standard challenges**: Complete any specified number of tasks in any order
+* **Streak challenges**: Complete the same task multiple times consecutively
+* **Sequential challenges**: Complete tasks in a defined order
 
-## Configure messaging {#configure-messaging}
+To add tasks to your challenge, select **[!UICONTROL Add task]** in the Tasks section and configure the task properties.
 
-For detailed steps on configuring multi-channel messaging including:
-* Message channels (in-app, email, push)
-* Message stages (launch, in-progress, complete)
-* Message timing and triggers
+For detailed instructions on creating and configuring tasks, see [Create tasks](create-tasks.md).
 
-## Review and publish {#review-and-publish}
+### Configure content cards {#configure-content-cards}
+
+<!-- SCREENSHOT: Content cards configuration section in the challenge editor -->
+
+Content cards provide the visual representation of your challenge on customer devices, displaying challenge information, progress, and rewards. Learn more about [content cards](../content-card/get-started-content-card.md).
+
+<!-- VISUAL: Example content card designs showing different states: challenge start, in-progress with progress bar, completion with reward -->
+
+To configure content cards for your challenge:
+
+1. In the challenge editor, navigate to the **[!UICONTROL Content cards]** section.
+
+1. Select **[!UICONTROL Create content card]** or choose an existing template.
+
+1. Design your content card:
+   * Add images, text, and branding elements
+   * Include [personalization tokens](../personalization/personalization-syntax.md) to display customer-specific information
+   * Show challenge progress indicators
+   * Display rewards and incentives
+
+1. Configure when the content card displays:
+   * **Challenge start**: Show when the challenge becomes available
+   * **In progress**: Display while customers are actively participating
+   * **Completion**: Show after customers complete all tasks
+
+1. Preview the content card on different devices to ensure proper display.
+
+1. Save the content card configuration.
+
+For more information on designing and personalizing content cards, see [Design content cards](../content-card/design-content-card.md).
+
+### Configure messaging {#configure-messaging}
+
+<!-- SCREENSHOT: Messaging configuration section showing the three lifecycle stages: Launch, In-progress, Completion -->
+
+Set up multi-channel messages to engage customers at key stages of the challenge lifecycle.
+
+<!-- VISUAL: Timeline diagram showing when each message type is sent during the challenge lifecycle -->
+
+To configure messaging for your challenge:
+
+1. In the challenge editor, navigate to the **[!UICONTROL Messaging]** section.
+
+1. Configure messages for each lifecycle stage:
+
+   **Launch messages** - Notify customers when the challenge starts:
+   * Select channels: [In-app](../in-app/get-started-in-app.md), [email](../email/get-started-email.md), [push notification](../push/get-started-push.md), or [SMS](../sms/get-started-sms.md)
+   * Design the message with challenge details and call-to-action
+   * Set timing: Send immediately when challenge goes live or schedule for a specific time
+
+   **In-progress messages** - Keep customers engaged during the challenge:
+   * Define trigger conditions (for example, 50% completion, specific task completed)
+   * Create reminder messages to encourage continued participation
+   * Include progress updates and next steps
+
+   **Completion messages** - Celebrate success and deliver rewards:
+   * Congratulate customers on completing the challenge
+   * Confirm reward allocation
+   * Provide instructions for claiming rewards
+   * Suggest next challenges or actions
+
+For more information on creating messages for specific channels, refer to:
+
+* [In-app messages documentation](../in-app/get-started-in-app.md)
+* [Email messages documentation](../email/get-started-email.md)
+* [Push notifications documentation](../push/get-started-push.md)
+* [SMS messages documentation](../sms/get-started-sms.md)
+
+## Review and publish the challenge {#review-and-publish}
+
+<!-- SCREENSHOT: Review screen showing summary of challenge configuration with all components listed -->
 
 Before publishing your challenge:
 
-1. **Review all components**: Challenge properties, tasks, rewards, content, messaging
-2. **Test the experience**: Use test profiles to validate content and task triggers
-3. **Publish**: Make the challenge active for your target audience
+1. **Review all components**: Verify challenge properties, tasks, rewards, content cards, and messaging configurations.
 
-The auto-generated journey activates on your specified start date.
+1. **Test the experience**: Use [test profiles](../test-approve/test-profiles.md) to validate content card display and task trigger behavior.
+
+1. **Publish**: Select **[!UICONTROL Publish]** to make the challenge available for your target audience.
+
+<!-- SCREENSHOT: Journeys inventory showing the auto-generated journey in Draft status with name format "Challenge: [Challenge Name]" -->
+
+When you publish a challenge, Journey Optimizer automatically creates a [journey](../building-journeys/journey-gs.md) in Draft status. The auto-generated journey appears in your journey inventory with the name format "Challenge: [Challenge Name]".
+
+To make the challenge available to customers:
+
+1. Navigate to the **[!UICONTROL Journeys]** inventory in Journey Optimizer.
+
+1. Locate the auto-generated journey (it will have "Challenge:" as a prefix in its name).
+
+1. [Activate the journey](../building-journeys/publishing-the-journey.md).
+
+The journey starts automatically on your specified challenge start date.
+
+>[!NOTE]
+>
+>The auto-generated journey appears in your journey inventory and can be customized if needed. However, changes made directly to the journey do not sync back to the challenge configuration.
 
 ## Next steps {#next-steps}
 
 * [Manage challenges](manage-challenges.md) - Learn how to edit, monitor, and optimize challenges
 * [Understand Loyalty Challenges](get-started.md) - Review features and capabilities
+  

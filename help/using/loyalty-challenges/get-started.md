@@ -21,105 +21,88 @@ badge: label="Private beta" type="Informative"
 * **Get started with Loyalty Challenges** ◀︎ **You are here** - Overview, workflow, prerequisites
 * [Access Loyalty Challenges](access-loyalty-challenges.md) - Inventory and filtering
 * [Create challenges](create-challenges.md) - Build and configure challenges
+* [Create tasks](create-tasks.md) - Define challenge tasks
 * [Manage challenges](manage-challenges.md) - Edit, monitor, optimize
 
 >[!ENDSHADEBOX]
 
->[!CONTEXTUALHELP]
->id="ajo_loyalty_challenges_overview"
->title="About Loyalty Challenges"
->abstract="Loyalty Challenges enables you to create personalized engagement offers that motivate customers to complete specific actions and earn rewards."
-
 >[!AVAILABILITY]
 >
->This feature is currently in **private beta** and may not be available in your environment. Contact your Adobe representative to gain access.
+>This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
 ## Overview {#overview}
 
-Loyalty Challenges provides a complete solution for creating loyalty programs at scale, from defining tasks and milestones to delivering content and tracking performance across channels. You can create three types of challenge experiences, configure rewards, send multi-channel notifications at key lifecycle stages, and monitor performance through automatically generated journeys—all while maintaining integration with your external loyalty management system.
+Loyalty Challenges provide a complete solution for creating loyalty programs at scale, from defining tasks and milestones to delivering content and tracking performance across channels.
 
-## Key capabilities {#key-capabilities}
+You can create three types of challenge experiences:
 
-Use Loyalty Challenges to:
+* **Standard challenges**: Customers complete any specified number of tasks in any order
+* **Streak challenges**: Customers complete the same task multiple times consecutively
+* **Sequential challenges**: Customers complete tasks in a defined order
 
-* **Create three types of challenges**:
-  * **Standard**: Customers complete any number of tasks in any order to earn rewards
-  * **Streak**: Customers complete the same task multiple times consecutively
-  * **Sequential**: Customers complete tasks in a specific order
+With Loyalty Challenges, you can configure rewards, send multi-channel notifications at key lifecycle stages, and monitor performance through automatically generated journeys—all while maintaining integration with your external loyalty management system.
 
-* **Design challenge content**: Use Journey Optimizer content cards to create the visual representation of your challenge on customer devices. Content cards display the challenge information, progress, and rewards.
-
-* **Set up task requirements**: Define what customers must do to earn rewards, including:
-  * Task types (purchase, spend amount, visit, engagement, custom events)
-  * Quantity requirements
-  * Product inclusions/exclusions using SKUs, categories, or attributes
-  * Custom attributes and conditions
-
-* **Configure rewards**: Define rewards that customers earn either at task completion (progressive rewards) or after completing the entire challenge (final rewards).
-
-* **Send multi-channel notifications**: Deliver messages across multiple channels (in-app, email, push) at key stages:
-  * **Launch**: When the challenge starts
-  * **In progress**: When customers are partway through
-  * **Complete**: When customers finish the challenge
-
-* **Track performance**: Monitor automatically generated journeys and review challenge performance through built-in reports.
+<!-- SCREENSHOT: High-level diagram showing Loyalty Challenges architecture with: Data ingestion from source connectors -> Challenge creation in JO -> Content cards & messaging -> Customer device -> Journey tracking -->
 
 ## How it works {#how-it-works}
 
+<!-- SCHEMA: Visual workflow diagram showing the 8 steps in the loyalty challenge creation process with icons for each step -->
+
 Creating and launching a loyalty challenge follows this workflow:
 
-1. **Set up data ingestion** - Configure Experience Platform source connectors (like Capillary) to ingest loyalty event data that tracks customer actions and progress.
+1. **Set up data ingestion** - Configure Experience Platform source connectors (such as the Capillary connector) to ingest loyalty event data that tracks customer actions and progress. This data powers challenge tracking and task completion.
 
-2. **Create a challenge** - Define the basic challenge properties including name, type (Standard, Streak, or Sequential), audience, and date range.
+1. **Create a challenge** - Define the basic challenge properties including name, type (Standard, Streak, or Sequential), audience, and date range. See [Create challenges](create-challenges.md) for detailed steps.
 
-3. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, visit, etc.), quantities, product filters, and rewards.
+1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, visit, engagement, custom events), quantities, product filters, and rewards. See [Create tasks](create-tasks.md) for detailed instructions.
 
-4. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices.
+1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer [content cards](../content-card/get-started-content-card.md) that display on customer devices. Content cards show challenge information, progress, and rewards.
 
-5. **Configure messaging** (Optional) - Set up multi-channel messages (in-app, email, push) for key stages: launch, in-progress, and completion.
+1. **Configure messaging** (Optional) - Set up multi-channel messages ([in-app](../in-app/get-started-in-app.md), [email](../email/get-started-email.md), [push](../push/get-started-push.md)) for key lifecycle stages: launch, in-progress, and completion.
 
-6. **Review and publish** - Test your challenge with test profiles, then publish it to make it available to your target audience.
+1. **Review and publish** - Test your challenge with [test profiles](../test-approve/test-profiles.md), then publish it to make it available to your target audience.
 
-7. **Auto-generated journey** - When you publish, Journey Optimizer automatically creates a journey that orchestrates content card delivery and messaging.
+1. **Activate journey** - When you publish a challenge, Journey Optimizer automatically creates a [journey](../building-journeys/journey-gs.md) in Draft status that orchestrates content card delivery and messaging. Navigate to the Journeys inventory, locate the auto-generated journey (named "Challenge: [Challenge Name]"), and [activate it](../building-journeys/publishing-the-journey.md) to make the challenge available to your customers.
 
-8. **Activate journey** - The auto-generated journey activates on your challenge start date and manages all customer interactions.
-
-9. **Monitor performance** - Track participation, completion rates, rewards distribution, and message engagement through built-in reports and the journey canvas.
-
->[!NOTE]
->
->The auto-generated journey appears in your journey inventory and can be customized if needed. However, changes made directly to the journey do not sync back to the challenge configuration.
+1. **Monitor performance** - Track participation, completion rates, rewards distribution, and message engagement through built-in reports and the journey canvas. See [Manage challenges](manage-challenges.md) for monitoring details.
 
 ## Prerequisites {#prerequisites}
 
 Before using Loyalty Challenges, ensure you have:
 
-### Data ingestion setup {#data-ingestion}
++++Data ingestion setup
 
-Loyalty Challenges relies on data ingested through Experience Platform source connectors to track customer progress and task completion.
+Loyalty Challenges rely on data ingested through Experience Platform source connectors to track customer progress and task completion.
 
-1. **Configure a supported source connector**: Currently, the Capillary connector is generally available. Additional connectors are planned.
+1. **Configure a supported source connector**: Currently, the Capillary connector is generally available. Additional connectors are planned for future releases.
 
-2. **Validate data ingestion**: Ensure that loyalty events and customer data are flowing into Experience Platform and available in Journey Optimizer.
+1. **Validate data ingestion**: Ensure that loyalty events and customer data are flowing into Experience Platform and available in Journey Optimizer. Verify that the data schema includes the necessary fields for tracking customer actions and progress.
 
 For detailed instructions, see:
 
 * [Experience Platform sources documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 * [Configure source connectors in Journey Optimizer](../start/get-started-sources.md)
 
-### Required permissions {#required-permissions}
++++
 
-To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer. Contact your administrator if you cannot access the feature.
++++Required permissions
 
-### Target audiences {#target-audiences}
+To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer. Required permissions include:
 
-Create target audiences in Experience Platform before creating challenges. You can select existing audiences but cannot create new audiences from the Loyalty Challenges UI.
+* Access to the **[!UICONTROL Loyalty challenges]** feature
+* Permissions to create and manage journeys
+* Permissions to create and manage content cards
+* Permissions to create and manage audiences
 
-## Important limitations {#limitations}
+Contact your administrator if you cannot access the feature or need additional permissions.
 
-* **No ledger system**: Loyalty Challenges does not track monetary values or point balances. When customers complete a challenge and earn a reward, Journey Optimizer calls your external loyalty management system to handle point allocation.
++++
 
-* **Audience selection only**: You can select existing audiences but cannot create new audiences from the Loyalty Challenges UI.
++++Target audiences
+
+Create target audiences in Experience Platform before creating challenges. These audiences define which customers are eligible to participate in your loyalty challenges. For more information on how to create audiences, refer to [Get started with audiences](../audience/about-audiences.md).
+
++++
 
 ## Next steps {#next-steps}
 
@@ -134,7 +117,7 @@ Create target audiences in Experience Platform before creating challenges. You c
     </div>
     <p>
     <em>Learn how to access the inventory and filter challenges</em>
-    <p>
+    </p>
   </td>
   <td>
     <a href="create-challenges.md">
@@ -145,7 +128,18 @@ Create target audiences in Experience Platform before creating challenges. You c
     </div>
     <p>
     <em>Build and configure your first loyalty challenge</em>
+    </p>
+  </td>
+  <td>
+    <a href="create-tasks.md">
+    <!--<img alt="Tasks" src="../assets/do-not-localize/start-button.svg">-->
+    </a>
+    <div>
+    <a href="create-tasks.md"><strong>Create tasks</strong></a>
+    </div>
     <p>
+    <em>Define actions and rewards for challenges</em>
+    </p>
   </td>
   <td>
     <a href="manage-challenges.md">
@@ -156,7 +150,7 @@ Create target audiences in Experience Platform before creating challenges. You c
     </div>
     <p>
     <em>Edit, monitor, and optimize challenges</em>
-    <p>
+    </p>
   </td>
 </tr>
 </table>

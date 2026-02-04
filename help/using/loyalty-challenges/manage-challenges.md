@@ -1,6 +1,6 @@
 ---
 solution: Journey Optimizer
-product: journey optimizer  
+product: journey optimizer
 title: Manage loyalty challenges
 description: Learn how to manage, monitor, and optimize loyalty challenges in Adobe Journey Optimizer.
 feature: Journeys
@@ -21,80 +21,169 @@ badge: label="Private beta" type="Informative"
 * [Get started with Loyalty Challenges](get-started.md) - Overview, workflow, prerequisites
 * [Access Loyalty Challenges](access-loyalty-challenges.md) - Inventory and filtering
 * [Create challenges](create-challenges.md) - Build and configure challenges
+* [Create tasks](create-tasks.md) - Define challenge tasks
 * **Manage challenges** ◀︎ **You are here** - Edit, monitor, optimize
 
 >[!ENDSHADEBOX]
 
->[!CONTEXTUALHELP]
->id="ajo_loyalty_manage_challenges"
->title="Manage loyalty challenges"
->abstract="After creating and publishing loyalty challenges, you can view, edit, monitor, and optimize them to ensure they deliver the desired results for your loyalty program."
+>[!AVAILABILITY]
+>
+>This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
-## Challenge lifecycle {#challenge-lifecycle}
+## Manage challenges {#manage-challenges-section}
 
-Challenges move through different statuses:
+### Challenge lifecycle {#challenge-lifecycle}
 
-* **Draft**: Being created or edited
-* **Scheduled**: Published, will become active on start date
-* **Live**: Active and customers can participate
-* **Completed**: Passed end date or objectives met
-* **Stopped**: Manually stopped before completion
-* **Archived**: Archived for organizational purposes
+<!-- VISUAL: Flowchart diagram showing challenge lifecycle with status transitions: Draft → Scheduled → Live → Completed/Stopped/Archived -->
 
-## Edit challenges {#edit-challenges}
+Challenges move through different statuses during their lifecycle:
+
+* **Draft**: Challenge is being created or edited and is not yet available to customers
+* **Scheduled**: Challenge has been published and will automatically become active on the specified start date
+* **Live**: Challenge is currently active and customers can participate
+* **Completed**: Challenge has ended - either the end date has passed or all objectives have been met
+* **Stopped**: Challenge was manually stopped before reaching its natural completion
+* **Archived**: Challenge has been archived for organizational purposes and is no longer visible in the main inventory
+
+### Edit challenges {#edit-challenges}
 
 You can edit challenges depending on their current status:
 
-* **Draft challenges**: Full editing capability
-* **Scheduled/Live challenges**: Limited editing (content updates, date extensions)
+* **Draft challenges**: Full editing capability - all properties can be modified
+* **Scheduled/Live challenges**: Limited editing - you can update content, messaging, and extend dates, but cannot change core challenge structure (type, audience, or task definitions)
 
-For changes requiring major modifications, duplicate the challenge and create a new version.
+To edit a challenge:
 
-## Duplicate challenges {#duplicate-challenges}
+1. Navigate to the **[!UICONTROL Challenges]** tab in the Loyalty Challenges inventory.
+
+1. Locate the challenge you want to edit.
+
+1. Select the challenge name to open it in edit mode.
+
+1. Make your changes based on the challenge status:
+   * **Draft challenges**: Modify any properties, tasks, content, or messaging
+   * **Scheduled/Live challenges**: Update content cards, messaging, or extend end dates as needed
+
+1. Save your changes. For scheduled or live challenges, changes take effect immediately or according to your update schedule.
+
+>[!NOTE]
+>
+>For changes requiring major modifications (such as changing challenge type, audience, or task structure), duplicate the challenge and create a new version instead of editing the existing one.
+
+### Duplicate challenges {#duplicate-challenges}
 
 Duplicate challenges to:
+
 * Rerun successful challenges for new time periods
 * Create variations for different audiences
 * Update task requirements or rewards
 * Reactivate stopped or completed challenges
 
-## Monitor performance {#monitor-performance}
+Duplicating a challenge creates an exact copy with all tasks, content, and messaging intact, allowing you to quickly create new versions without starting from scratch.
 
-Track challenge performance through:
+To duplicate a challenge:
 
-* **Participation metrics**: Enrollment, active participants
-* **Completion metrics**: Completion rates, average completion time
-* **Reward metrics**: Total rewards distributed, rewards by type
-* **Engagement metrics**: Content card impressions, message delivery
+1. Navigate to the **[!UICONTROL Challenges]** tab in the Loyalty Challenges inventory.
 
-Access performance data in the challenge Performance tab and the auto-generated journey reports.
+1. Locate the challenge you want to duplicate.
 
-## Best practices {#best-practices}
+1. Select the more actions menu (three dots) next to that challenge.
 
-### Challenge creation
+1. Choose **[!UICONTROL Duplicate]**.
 
-* Start simple for your first challenge
-* Test thoroughly before publishing to production
-* Ensure clear communication about requirements and rewards
-* Set realistic timing allowing customers to complete challenges
+1. A copy of the challenge is created with "[Copy]" appended to its name.
 
-### Management and monitoring
+1. Open the duplicated challenge and modify the necessary properties:
+   * Update the challenge name
+   * Adjust start and end dates
+   * Change the target audience if needed
+   * Modify tasks, rewards, content, or messaging as required
 
-* Check challenge performance regularly (at least weekly for live challenges)
-* Use descriptive names indicating purpose, audience, or time period
-* Apply consistent tags for organization
-* Archive completed challenges to keep inventory manageable
+1. Review and publish the duplicated challenge.
 
-## Troubleshooting {#troubleshooting}
+### Monitor performance {#monitor-performance}
 
-Common issues and solutions:
+<!-- SCREENSHOT: Challenge Performance tab showing key metrics dashboard with participation, completion, reward, and engagement metrics -->
 
-* **Challenge not appearing to customers**: Verify status, audience eligibility, content card configuration
-* **Low participation rates**: Review content visibility, messaging clarity, task achievability
-* **Tasks not triggering**: Check data ingestion, event attributes, audience eligibility
-* **Rewards not allocating**: Confirm configuration and external system connection
+Track challenge performance through key metrics:
 
-## Next steps {#next-steps}
+* **Participation metrics**:
+  * Enrollment: Number of customers who joined the challenge
+  * Active participants: Customers currently engaged with the challenge
+* **Completion metrics**:
+  * Completion rates: Percentage of enrolled customers who completed the challenge
+  * Average completion time: Mean time taken to complete all tasks
+* **Reward metrics**:
+  * Total rewards distributed: Aggregate value of all rewards given
+  * Rewards by type: Breakdown of rewards by reward category
+* **Engagement metrics**:
+  * Content card impressions: Number of times challenge content cards were displayed
+  * Message delivery: Count of messages successfully sent across all channels
 
-* [Create challenges](create-challenges.md) - Build new loyalty challenges
-* [Understand Loyalty Challenges](get-started.md) - Review features and capabilities
+To access performance data:
+
+1. Navigate to the **[!UICONTROL Challenges]** tab in the Loyalty Challenges inventory.
+
+1. Select the challenge you want to monitor.
+
+1. Open the **[!UICONTROL Performance]** tab to view real-time metrics and analytics.
+
+<!-- SCREENSHOT: Journey report showing challenge performance data with graphs and tables -->
+
+You can also access detailed performance data in the [auto-generated journey reports](../reports/journey-global-report-cja.md), which provide additional insights and historical trends.
+
+## Manage tasks {#manage-tasks}
+
+Tasks are reusable components that can be used across multiple challenges. Managing tasks effectively ensures consistency across your loyalty program and makes it easier to update task definitions centrally. Tasks created in one challenge can be reused in other challenges, reducing duplication and maintaining standardization.
+
+### Edit tasks {#edit-tasks}
+
+You can edit existing tasks from the Tasks inventory. Consider the following:
+
+* **Tasks not used in active challenges**: Can be edited freely - all properties can be modified without impact
+* **Tasks used in live challenges**: Exercise caution, as changes affect all challenges using the task - modifications apply immediately to all referencing challenges
+
+To edit a task:
+
+1. Navigate to the **[!UICONTROL Tasks]** tab in the Loyalty Challenges inventory.
+
+1. Locate the task you want to edit.
+
+1. Select the task name to open it in edit mode.
+
+1. Modify the task properties as needed:
+   * Update task name or description
+   * Change activity type or attributes
+   * Adjust eligible items and exclusions
+   * Modify quantity or amount requirements
+
+1. Save your changes.
+
+>[!WARNING]
+>
+>When editing a task that's actively used in live challenges, consider creating a duplicate with a new version rather than modifying the original. This prevents unintended changes to active challenges and allows you to test modifications before applying them.
+
+### Delete tasks {#delete-tasks}
+
+Tasks can only be deleted if they are not currently used in any challenges. Before deleting a task:
+
+* Check the **[!UICONTROL Used in challenges]** count in the Tasks inventory
+* Ensure no draft, scheduled, or live challenges reference the task
+
+To delete a task:
+
+1. Navigate to the **[!UICONTROL Tasks]** tab in the Loyalty Challenges inventory.
+
+1. Locate the task you want to delete.
+
+1. Verify the **[!UICONTROL Used in challenges]** count shows 0. If the count is greater than 0, you must first remove the task from all challenges before deletion.
+
+1. Select the more actions menu (three dots) next to the task.
+
+1. Choose **[!UICONTROL Delete]**.
+
+1. Confirm the deletion in the dialog box.
+
+>[!NOTE]
+>
+>If a task is used in any challenge (draft, scheduled, or live), you must first remove it from all challenges before you can delete it. Consider archiving or duplicating tasks instead of deleting them if you may need them in the future.

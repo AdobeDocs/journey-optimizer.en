@@ -21,29 +21,34 @@ badge: label="Private beta" type="Informative"
 * [Get started with Loyalty Challenges](get-started.md) - Overview, workflow, prerequisites
 * **Access Loyalty Challenges** ◀︎ **You are here** - Inventory and filtering
 * [Create challenges](create-challenges.md) - Build and configure challenges
+* [Create tasks](create-tasks.md) - Define challenge tasks
 * [Manage challenges](manage-challenges.md) - Edit, monitor, optimize
 
 >[!ENDSHADEBOX]
 
+>[!AVAILABILITY]
+>
+>This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
+
 ## Access the Loyalty Challenges inventory {#access-inventory}
 
-To access Loyalty Challenges:
+<!-- SCREENSHOT: Journey Optimizer main menu showing "Loyalty challenges" under "Customer journeys" section -->
 
-1. In Adobe Journey Optimizer, select **[!UICONTROL Loyalty challenges]** in the left navigation menu under the **[!UICONTROL Customer journeys]** section.
+To access Loyalty Challenges, navigate to Journey Optimizer and select **[!UICONTROL Loyalty challenges]** under the **[!UICONTROL Customer journeys]** section.
 
-2. The Loyalty Challenges page displays with two tabs:
-   * **[!UICONTROL Challenges]**: View and manage all loyalty challenges
-   * **[!UICONTROL Tasks]**: View and manage all tasks that can be reused across challenges
+<!-- SCREENSHOT: Loyalty Challenges landing page showing the two tabs: Challenges and Tasks -->
 
-By default, the **[!UICONTROL Challenges]** tab is selected, showing all existing challenges in your organization.
+The Loyalty Challenges page displays with two tabs:
 
-## Challenges tab {#challenges-tab}
+* **[!UICONTROL Challenges]**: View and manage all loyalty challenges
 
-The Challenges tab displays all challenges sorted by last modified date, with the most recently modified challenges appearing first.
+* **[!UICONTROL Tasks]**: View and manage all tasks that can be reused across challenges
 
-### Understanding the challenges inventory {#inventory-overview}
+## Challenges inventory {#challenges-tab}
 
-The Challenges inventory displays all challenges with the following information:
+<!-- SCREENSHOT: Challenges tab showing the inventory table with columns: Challenge name, Status, Type, Start date, End date, Created by, Last modified, Tags -->
+
+The Challenges tab displays all challenges sorted by last modified date, with the most recently modified challenges appearing first. The following information is displayed:
 
 * **[!UICONTROL Challenge name]**: The name you assigned to the challenge
 * **[!UICONTROL Status]**: Current state of the challenge (see status descriptions below)
@@ -56,51 +61,63 @@ The Challenges inventory displays all challenges with the following information:
 
 ### Challenge statuses {#challenge-statuses}
 
-Challenges can have the following statuses:
+<!-- VISUAL: Status badges showing different challenge statuses with color coding: Draft (gray), Scheduled (blue), Live (green), Completed (gray), Stopped (red), Archived (gray) -->
 
-* **[!UICONTROL Draft]**: Challenge is being created or edited but not yet published
-* **[!UICONTROL Scheduled]**: Challenge is published and scheduled to start at a future date
-* **[!UICONTROL Live]**: Challenge is currently active and available to the target audience
-* **[!UICONTROL Completed]**: Challenge has passed its end date or all objectives have been met
-* **[!UICONTROL Stopped]**: Challenge was manually stopped before completion
-* **[!UICONTROL Archived]**: Challenge has been archived for organizational purposes
+Challenges display with different statuses indicating their current state in the lifecycle:
+
+* **Draft**: Challenge is being created or edited
+* **Scheduled**: Challenge is published and will become active on the start date
+* **Live**: Challenge is active and customers can participate
+* **Completed**: Challenge end date has passed or objectives have been met
+* **Stopped**: Challenge was manually stopped before completion
+* **Archived**: Challenge has been archived for organizational purposes
+
+For detailed information on status transitions and the challenge lifecycle, see [Challenge lifecycle](manage-challenges.md#challenge-lifecycle).
 
 ### Search and filter challenges {#search-challenges}
 
-Use the search functionality to quickly find specific challenges by name or description.
+<!-- SCREENSHOT: Search bar and filter panel showing available filters (status, type, dates, tags) with an example of active filters applied -->
 
-You can also apply filters to narrow down the challenge list based on specific criteria. You can combine multiple filters to refine your search.
+You can quickly locate challenges using search and filters:
 
-You can filter challenges by their current status, by their challenge type, based on their start or end dates, or by tags you've applied for organization.
+**Search:**
+
+* Use the search bar to find challenges by entering keywords from the challenge name or description. The search updates results in real-time as you type.
+
+**Filters:**
+
+* Apply one or more filters to narrow your results:
+  * **Status**: Filter by challenge status (Draft, Scheduled, Live, Completed, Stopped, Archived)
+  * **Type**: Filter by challenge type (Standard, Streak, Sequential)
+  * **Dates**: Filter by start date or end date ranges
+  * **Tags**: Filter by tags applied to challenges
+
+You can combine multiple filters simultaneously. For example, filter for Live Standard challenges tagged with "Summer2024" to quickly find active seasonal campaigns.
+
+To clear filters, select **[!UICONTROL Clear all]** or remove individual filters.
 
 ### Take actions on challenges {#inventory-actions}
 
+<!-- SCREENSHOT: More actions menu (three dots) expanded showing options: Edit, Duplicate, Stop, Archive, Delete -->
+
 From the Challenges tab, you can perform quick actions on challenges:
 
-* **View challenge details**: Select a challenge name to open its details page
-* **Edit a challenge**: Select the more actions menu (three dots) and choose **[!UICONTROL Edit]**
-* **Duplicate a challenge**: Select the more actions menu and choose **[!UICONTROL Duplicate]**
-* **Stop a live challenge**: Select the more actions menu and choose **[!UICONTROL Stop]**
-* **Archive a challenge**: Select the more actions menu and choose **[!UICONTROL Archive]**
-* **Delete a draft challenge**: Select the more actions menu and choose **[!UICONTROL Delete]** (only available for drafts)
+* **View challenge details**: Select the challenge name to open its details page
+* **Edit a challenge**: Select the **[!UICONTROL More actions]** menu (three dots) and choose **[!UICONTROL Edit]**
+* **Duplicate a challenge**: Select the **[!UICONTROL More actions]** menu and choose **[!UICONTROL Duplicate]**
+* **Stop a live challenge**: Select the **[!UICONTROL More actions]** menu and choose **[!UICONTROL Stop]**
+* **Archive a challenge**: Select the **[!UICONTROL More actions]** menu and choose **[!UICONTROL Archive]**
+* **Delete a draft challenge**: Select the **[!UICONTROL More actions]** menu and choose **[!UICONTROL Delete]** (only available for drafts)
 
-### Create a new challenge {#create-from-inventory}
+For detailed information on managing challenges after creation, including editing limitations, duplication strategies, performance monitoring, and troubleshooting, see [Manage challenges](manage-challenges.md).
 
-To create a new challenge from the Challenges tab:
+## Tasks inventory {#tasks-tab}
 
-1. Select **[!UICONTROL Create challenge]** in the top-right corner.
-
-2. The challenge creation workflow begins.
-
-For detailed instructions, see [Create challenges](create-challenges.md).
-
-## Tasks tab {#tasks-tab}
+<!-- SCREENSHOT: Tasks tab showing the inventory table with columns: Task name, Task type, Description, Created by, Last modified, Used in challenges -->
 
 The Tasks tab displays all reusable tasks that can be used across multiple challenges. Tasks created here become available for selection when creating or editing any challenge.
 
-### Understanding the tasks inventory {#tasks-inventory-overview}
-
-The Tasks inventory displays all tasks with the following information:
+The Tasks inventory displays the following information:
 
 * **[!UICONTROL Task name]**: The name you assigned to the task
 * **[!UICONTROL Task type]**: Type of action (Purchase, Spend amount, Visit, Engagement, Custom event)
@@ -109,38 +126,20 @@ The Tasks inventory displays all tasks with the following information:
 * **[!UICONTROL Last modified]**: Date and time of last modification
 * **[!UICONTROL Used in challenges]**: Number of challenges currently using this task
 
-### Create tasks from the Tasks tab {#create-tasks-from-tab}
-
-You can create tasks in two ways:
-
-1. **From the Tasks tab** (recommended for reusable tasks):
-   * Navigate to the **[!UICONTROL Tasks]** tab
-   * Select **[!UICONTROL Create task]**
-   * Configure the task properties (name, type, quantity, product filters, rewards)
-   * Save the task to make it available for use in any challenge
-
-2. **When creating a challenge** (for challenge-specific tasks):
-   * During challenge creation, select **[!UICONTROL Add task]** in the Tasks section
-   * Choose **[!UICONTROL Create new task]** or select from existing tasks
-   * Tasks created this way are also saved to the Tasks inventory and can be reused
-
->[!TIP]
->
->Creating tasks from the Tasks tab is recommended when you plan to use the same task across multiple challenges. This ensures consistency and makes it easier to update task definitions centrally.
-
 ### Take actions on tasks {#tasks-actions}
 
 From the Tasks tab, you can perform actions on tasks:
 
-* **View task details**: Select a task name to view full configuration
-* **Edit a task**: Select the more actions menu (three dots) and choose **[!UICONTROL Edit]**
-* **Duplicate a task**: Select the more actions menu and choose **[!UICONTROL Duplicate]**
-* **Delete a task**: Select the more actions menu and choose **[!UICONTROL Delete]** (only if not used in any active challenges)
+* **View task details**: Select the task name to view full configuration
+* **Edit a task**: Select the **[!UICONTROL More actions]** menu (three dots) and choose **[!UICONTROL Edit]**
+* **Duplicate a task**: Select the **[!UICONTROL More actions]** menu and choose **[!UICONTROL Duplicate]**
+* **Delete a task**: Select the **[!UICONTROL More actions]** menu and choose **[!UICONTROL Delete]** (only if not used in any active challenges)
 * **View usage**: See which challenges are currently using the task
 
 ## Next steps {#next-steps}
 
 Now that you know how to access and navigate the Loyalty Challenges inventory:
 
-* [Create challenges](create-challenges.md) - Learn how to build your first challenge
-* [Manage challenges](manage-challenges.md) - Learn how to edit and monitor challenges
+* [Create challenges](create-challenges.md) - Learn how to build your first challenge and configure tasks
+* [Create tasks](create-tasks.md) - Learn how to define reusable tasks for challenges
+* [Manage challenges](manage-challenges.md) - Learn how to edit, monitor, and optimize challenges
