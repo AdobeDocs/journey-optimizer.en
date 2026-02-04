@@ -14,23 +14,21 @@ badge: label="Private beta" type="Informative"
 
 # Create challenges {#create-challenges}
 
->[!CONTEXTUALHELP]
->id="ajo_loyalty_create_challenge"
->title="Create a loyalty challenge"
->abstract="Create a loyalty challenge to define the engagement offer, configure content cards for delivery, add tasks, set up rewards, and optionally configure messaging across channels."
-
-Create a loyalty challenge to define the engagement offer, configure content cards, add tasks, set up rewards, and configure messaging across channels.
-
 >[!BEGINSHADEBOX]
 
 **Loyalty Challenges documentation:**
 
-* [Get started with Loyalty Challenges](gs-loyalty-challenges.md) - Quick overview and next steps
-* [Understand Loyalty Challenges](get-started.md) - Features, workflow, prerequisites
+* [Get started with Loyalty Challenges](get-started.md) - Overview, workflow, prerequisites
+* [Access Loyalty Challenges](access-loyalty-challenges.md) - Inventory and filtering
 * **Create challenges** ◀︎ **You are here** - Build and configure challenges
 * [Manage challenges](manage-challenges.md) - Edit, monitor, optimize
 
 >[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_create_challenge"
+>title="Create a loyalty challenge"
+>abstract="Create a loyalty challenge to define the engagement offer, configure content cards for delivery, add tasks, set up rewards, and optionally configure messaging across channels."
 
 ## Before you start {#before-you-start}
 

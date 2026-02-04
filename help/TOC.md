@@ -127,8 +127,8 @@ solution: Journey Optimizer
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Loyalty challenges {#loyalty-challenges}
-  + [Get started with Loyalty Challenges](using/loyalty-challenges/gs-loyalty-challenges.md)
-  + [Understand Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + [Access Loyalty Challenges](using/loyalty-challenges/access-loyalty-challenges.md)
   + [Create challenges](using/loyalty-challenges/create-challenges.md)
   + [Manage challenges](using/loyalty-challenges/manage-challenges.md)
 + Campaigns {#campaigns}

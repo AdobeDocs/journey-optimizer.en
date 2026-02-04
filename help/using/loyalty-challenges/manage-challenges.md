@@ -14,23 +14,21 @@ badge: label="Private beta" type="Informative"
 
 # Manage challenges {#manage-challenges}
 
->[!CONTEXTUALHELP]
->id="ajo_loyalty_manage_challenges"
->title="Manage loyalty challenges"
->abstract="After creating and publishing loyalty challenges, you can view, edit, monitor, and optimize them to ensure they deliver the desired results for your loyalty program."
-
-After creating and publishing loyalty challenges, you can view, edit, monitor, and optimize them to ensure they deliver the desired results for your loyalty program.
-
 >[!BEGINSHADEBOX]
 
 **Loyalty Challenges documentation:**
 
-* [Get started with Loyalty Challenges](gs-loyalty-challenges.md) - Quick overview and next steps
-* [Understand Loyalty Challenges](get-started.md) - Features, workflow, prerequisites
+* [Get started with Loyalty Challenges](get-started.md) - Overview, workflow, prerequisites
+* [Access Loyalty Challenges](access-loyalty-challenges.md) - Inventory and filtering
 * [Create challenges](create-challenges.md) - Build and configure challenges
 * **Manage challenges** ◀︎ **You are here** - Edit, monitor, optimize
 
 >[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_manage_challenges"
+>title="Manage loyalty challenges"
+>abstract="After creating and publishing loyalty challenges, you can view, edit, monitor, and optimize them to ensure they deliver the desired results for your loyalty program."
 
 ## Challenge lifecycle {#challenge-lifecycle}
 
