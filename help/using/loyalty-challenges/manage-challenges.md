@@ -39,67 +39,38 @@ badge: label="Private beta" type="Informative"
 Challenges move through different statuses during their lifecycle:
 
 * **Draft**: Challenge is being created or edited and is not yet available to customers
-* **Scheduled**: Challenge has been published and will automatically become active on the specified start date
-* **Live**: Challenge is currently active and customers can participate
-* **Completed**: Challenge has ended - either the end date has passed or all objectives have been met
-* **Stopped**: Challenge was manually stopped before reaching its natural completion
-* **Archived**: Challenge has been archived for organizational purposes and is no longer visible in the main inventory
+* **Published**: Challenge is active, the associated journey has been created.
 
 ### Edit challenges {#edit-challenges}
 
-You can edit challenges depending on their current status:
+You can edit challenges by opening them in the Challenges inventory. The editing behavior differs depending on the challenge status:
 
-* **Draft challenges**: Full editing capability - all properties can be modified
-* **Scheduled/Live challenges**: Limited editing - you can update content, messaging, and extend dates, but cannot change core challenge structure (type, audience, or task definitions)
+**Draft challenges**: You have full editing capability. All properties, tasks, content, and messaging can be modified without restrictions.
 
-To edit a challenge:
+**Published challenges**: When you open a published challenge for editing, you first need to revert it to Draft status.
 
-1. Navigate to the **[!UICONTROL Challenges]** tab in the Loyalty Challenges inventory.
+* Any customizations made directly to the auto-generated journey will be lost
+* The challenge returns to Draft state
+* After making your changes, you must save and publish the challenge again
+* You must reactivate the associated journey to make the updated challenge available to customers
 
-1. Locate the challenge you want to edit.
-
-1. Select the challenge name to open it in edit mode.
-
-1. Make your changes based on the challenge status:
-   * **Draft challenges**: Modify any properties, tasks, content, or messaging
-   * **Scheduled/Live challenges**: Update content cards, messaging, or extend end dates as needed
-
-1. Save your changes. For scheduled or live challenges, changes take effect immediately or according to your update schedule.
-
->[!NOTE]
+>[!IMPORTANT]
 >
->For changes requiring major modifications (such as changing challenge type, audience, or task structure), duplicate the challenge and create a new version instead of editing the existing one.
+>Reverting a published challenge to draft cannot be undone. Consider the impact on your active journey before proceeding.
 
 ### Duplicate challenges {#duplicate-challenges}
-
-Duplicate challenges to:
-
-* Rerun successful challenges for new time periods
-* Create variations for different audiences
-* Update task requirements or rewards
-* Reactivate stopped or completed challenges
 
 Duplicating a challenge creates an exact copy with all tasks, content, and messaging intact, allowing you to quickly create new versions without starting from scratch.
 
 To duplicate a challenge:
 
-1. Navigate to the **[!UICONTROL Challenges]** tab in the Loyalty Challenges inventory.
+1. Navigate to the **[!UICONTROL Challenges]** tab and locate the challenge you want to duplicate.
 
-1. Locate the challenge you want to duplicate.
+1. Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon next to that challenge and choose **[!UICONTROL Duplicate]**.
 
-1. Select the more actions menu (three dots) next to that challenge.
+1. A copy of the challenge is created. Open the duplicated challenge and modify the necessary properties.
 
-1. Choose **[!UICONTROL Duplicate]**.
-
-1. A copy of the challenge is created with "[Copy]" appended to its name.
-
-1. Open the duplicated challenge and modify the necessary properties:
-   * Update the challenge name
-   * Adjust start and end dates
-   * Change the target audience if needed
-   * Modify tasks, rewards, content, or messaging as required
-
-1. Review and publish the duplicated challenge.
+1. Save the duplicated challenge and generate the associated journey.
 
 ### Monitor performance {#monitor-performance}
 
@@ -178,7 +149,7 @@ To delete a task:
 
 1. Verify the **[!UICONTROL Used in challenges]** count shows 0. If the count is greater than 0, you must first remove the task from all challenges before deletion.
 
-1. Select the more actions menu (three dots) next to the task.
+1. Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon next to the task.
 
 1. Choose **[!UICONTROL Delete]**.
 

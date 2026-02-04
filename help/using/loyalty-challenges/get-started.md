@@ -89,7 +89,7 @@ For detailed instructions, see:
 
 To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer. Required permissions include:
 
-* Access to the **[!UICONTROL Loyalty challenges]** feature
+* Access to the **[!UICONTROL Loyalty Challenges (Beta)]** feature
 * Permissions to create and manage journeys
 * Permissions to create and manage content cards
 * Permissions to create and manage audiences
@@ -100,7 +100,7 @@ Contact your administrator if you cannot access the feature or need additional p
 
 +++Target audiences
 
-Create target audiences in Experience Platform before creating challenges. These audiences define which customers are eligible to participate in your loyalty challenges. For more information on how to create audiences, refer to [Get started with audiences](../audience/about-audiences.md).
+Define target audiences that specify which customers are eligible to participate in your loyalty challenges. You can select existing audiences or create new ones directly from the challenge creation interface. For more information on how to work with audiences, refer to [Get started with audiences](../audience/about-audiences.md).
 
 +++
 

@@ -54,7 +54,7 @@ You can create tasks from two entry points. The configuration process is the sam
 
 +++From the Tasks inventory
 
-1. Navigate to **[!UICONTROL Loyalty challenges]** in Journey Optimizer.
+1. Navigate to **[!UICONTROL Loyalty Challenges (Beta)]** in Journey Optimizer.
 
 1. Select the **[!UICONTROL Tasks]** tab.
 
