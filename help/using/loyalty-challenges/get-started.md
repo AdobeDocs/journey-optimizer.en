@@ -45,7 +45,7 @@ With Loyalty Challenges, you can configure rewards, send multi-channel notificat
 
 Creating and launching a loyalty challenge follows this workflow:
 
-1. **Set up data ingestion** - Configure Experience Platform source connectors (such as the Capillary connector) to ingest loyalty event data that tracks customer actions and progress. This data powers challenge tracking and task completion.
+1. **Set up data ingestion** - Configure Experience Platform source connectors (such as the [Capillary connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty)) to ingest loyalty event data that tracks customer actions and progress. This data powers challenge tracking and task completion.
 
 1. **Select target audience** - Define which customers can participate in your challenge by selecting an audience from Adobe Experience Platform.
 
@@ -69,14 +69,11 @@ Before using Loyalty Challenges, ensure you have:
 
 Loyalty Challenges rely on data ingested through Experience Platform source connectors to track customer progress and task completion.
 
-1. **Configure a supported source connector**: Currently, the Capillary connector is generally available. Additional connectors are planned for future releases.
+1. **Configure a supported source connector**: Currently, the Capillary connector is available. Additional connectors are planned for future releases. [Learn about loyalty source connectors](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty).
 
 1. **Validate data ingestion**: Ensure that loyalty events and customer data are flowing into Experience Platform and available in Journey Optimizer. Verify that the data schema includes the necessary fields for tracking customer actions and progress.
 
-For detailed instructions, see:
-
-* [Experience Platform sources documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
-* [Configure source connectors in Journey Optimizer](../start/get-started-sources.md)
+For detailed instructions, see [Experience Platform sources overview](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
 
 +++
 
