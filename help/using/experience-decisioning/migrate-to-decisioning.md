@@ -90,12 +90,11 @@ The Migration Tooling APIs allow you to:
 * **Migrate at different scopes** - sandbox, offer, or decision level
 * **Rollback migrations** if issues are discovered
 
-For complete API documentation, including authentication, endpoints, request/response examples, and step-by-step workflows, refer to the [Decisioning Migration API documentation](decisioning-migration-api.md).
+For complete API documentation, including authentication, endpoints, request/response examples, and step-by-step workflows, refer to [this page](decisioning-migration-api.md).
 
 ## Related topics {#related-topics}
 
 * [Get started with Decisioning](gs-experience-decisioning.md)
 * [Decisioning guardrails and limitations](decisioning-guardrails.md)
 * [Decisioning FAQ](decisioning-faq.md)
-* [Decisioning Migration API](decisioning-migration-api.md)
 

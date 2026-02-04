@@ -26,6 +26,10 @@ When configuring a new [email channel configuration](email-settings.md), you can
 
 The parameters defined in the corresponding section will be appended to the end of the URLs included in your email message content. You can then capture these parameters in web analytics tools such as Adobe Analytics or Google Analytics, and create various performance reports.
 
+>[!NOTE]
+>
+>The order of URL tracking parameters appended to the URL is random and cannot be controlled. If your system requires parameters in a specific order, you will need to parse and reorder them on your side.
+
 You can add up to 10 tracking parameters using the **[!UICONTROL Add new parameter]** button.
 
 ![](assets/preset-url-tracking.png){width="80%"}
