@@ -602,7 +602,9 @@ solution: Journey Optimizer
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
-    + [Migrate from Decision management to Decisioning](using/experience-decisioning/migrate-to-decisioning.md)
+    + Migrate to Decisioning {#migrate-to-decisioning}
+      + [Benefits of migrating to Decisioning](using/experience-decisioning/migrate-to-decisioning.md)
+      + [Decisioning Migration API](using/experience-decisioning/decisioning-migration-api.md)
     + API reference {#experience-decisioning-api-reference}
       + [API reference](/help/rp_landing_pages/experience-decisioning-api-reference-landing-page.md)
       + [Get started with Decisioning APIs](using/experience-decisioning/api-reference/getting-started.md)

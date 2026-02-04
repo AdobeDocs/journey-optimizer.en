@@ -26,6 +26,10 @@ The copy process is carried via a package export and import between the source a
 1. [Publish the package](#publish)
 1. [Import the package in the target sandbox](#import)
 
+>[!NOTE]
+>
+>For migrating Decision management objects to Decisioning, use the dedicated [Decisioning Migration API](../experience-decisioning/decisioning-migration-api.md) which provides automated dependency resolution and rollback capabilities specifically designed for decisioning entity migration.
+
 ## Exported objects & best practices {#objects}
 
 Journey Optimizer allows the export of journeys, custom actions, content templates, fragments and other objects to another sandbox. The following sections provide information and best practices for each type of object.
@@ -87,7 +91,7 @@ When copying campaigns, ensure that the object listed below are validated in the
 
 * Sandbox copy for ranking formulas with AI Models is currently not supported.
 
-* When copying a campaign, decision items (offer items) are not copied along automatically. Make sure you copy them individually using the "Add to Package" option”.
+* When copying a campaign, decision items (offer items) are not copied along automatically. Make sure you copy them individually using the "Add to Package" option".
 
 * If a Decision Policy has a selection strategy, decision items must be added separately. If it has manual/fallback decision items, they are added as direct dependencies automatically.
 

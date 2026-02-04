@@ -33,7 +33,11 @@ Our next-generation decision framework, designed to unify existing Journey Optim
 
 Decisioning is currently supported in the Code-based experience channel. 
 
-➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md) 
+➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md)
+
+>[!NOTE]
+>
+>To migrate from Decision management to Decisioning, refer to the [migration documentation](../experience-decisioning/migrate-to-decisioning.md) and [Migration API guide](../experience-decisioning/decisioning-migration-api.md).
 
 ## Decision management {#decision-management}
 

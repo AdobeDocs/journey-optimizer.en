@@ -1,5 +1,5 @@
 ---
-title: Migrate from Decision management to Decisioning
+title: Benefits of migrating to Decisioning
 description: Learn about the benefits of migrating from Decision management to Decisioning
 feature: Decisioning
 topic: Integrations
@@ -7,7 +7,7 @@ role: User
 level: Experienced
 
 ---
-# Migrate from Decision management to Decisioning {#migrate-to-decisioning}
+# Benefits of migrating to Decisioning {#migrate-to-decisioning}
 
 ## What is Decisioning? {#what-is-decisioning}
 
@@ -82,11 +82,20 @@ Dashboard documenting performance of decision items and selection strategies aga
 
 ## Migration tooling {#migration-tooling}
 
-The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
+A comprehensive set of **Migration Tooling APIs** is available to migrate Decision management entities to Decisioning. These APIs enable seamless migration between sandboxes with automated dependency resolution and rollback capabilities.
+
+The Migration Tooling APIs allow you to:
+
+* **Analyze dependencies** between source and target sandboxes
+* **Migrate at different scopes** - sandbox, offer, or decision level
+* **Rollback migrations** if issues are discovered
+
+For complete API documentation, including authentication, endpoints, request/response examples, and step-by-step workflows, refer to the [Decisioning Migration API documentation](decisioning-migration-api.md).
 
 ## Related topics {#related-topics}
 
 * [Get started with Decisioning](gs-experience-decisioning.md)
 * [Decisioning guardrails and limitations](decisioning-guardrails.md)
 * [Decisioning FAQ](decisioning-faq.md)
+* [Decisioning Migration API](decisioning-migration-api.md)
 

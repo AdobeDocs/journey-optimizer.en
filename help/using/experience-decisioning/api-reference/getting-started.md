@@ -54,3 +54,7 @@ Now that you understand the basics of the Decisioning APIs, you can proceed to t
 * [Create eligibility rules](eligibility-rules/create.md)
 
 For more information about using decisioning in your campaigns and journeys, refer to the [Decisioning documentation](../gs-experience-decisioning.md).
+
+>[!NOTE]
+>
+>If you need to migrate existing Decision management objects to Decisioning, use the dedicated [Decisioning Migration API](../decisioning-migration-api.md). This specialized API provides automated dependency resolution and rollback capabilities specifically designed for decisioning entity migration across sandboxes.

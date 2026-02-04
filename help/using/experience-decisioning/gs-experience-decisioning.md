@@ -91,6 +91,7 @@ The main steps to work with Decisioning are as follows:
 * **[Define selection strategies](selection-strategies.md)** - Discover how to create selection strategies with eligibility rules and ranking methods.
 * **[Create decision policies](create-decision-policy.md)** - Learn how to build decision policies combining strategies and constraints.
 * **[Ranking and AI models](ranking/ranking.md)** - Master ranking formulas and AI models for personalized decisioning.
+* **[Migrate from Decision management](migrate-to-decisioning.md)** - Understand the benefits of migrating to Decisioning and use migration tooling APIs.
 * **[Decisioning guardrails](decisioning-guardrails.md)** - Review important limitations and best practices for decisioning implementation.
 * **[Decisioning tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/decision-capabilities/decisioning/introduction-to-decisioning){target="_blank"}** - Explore step-by-step video tutorials on decisioning features and best practices.
 
