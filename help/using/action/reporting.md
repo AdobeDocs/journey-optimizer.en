@@ -90,3 +90,12 @@ The **[!UICONTROL Latency breakdown]** table provides a detailed breakdown of la
 
 ➡️[See the KPIs section for a description of the Latency metrics](#kpis)
 
+## How-to video {#video}
+
+The video below shows how to monitor the reliability and performance of API calls made from your journeys to third-party systems.
+
++++See video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479541?quality=12&learn=on)
+
++++
