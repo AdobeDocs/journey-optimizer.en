@@ -493,7 +493,7 @@ solution: Journey Optimizer
       + [Brands](/help/rp_landing_pages/brands-landing-page.md)
       + [Create & manage your Brands](using/content-management/brands.md)
       + [Personalize your Brands](using/content-management/brands-personalize.md)
-      + [Evaluate your Brand alignment score](using/content-management/brands-score.md)
+      + [Evaluate your content](using/content-management/brands-score.md)
   + Multilingual content {#content-multilingual}
     + [Multilingual content](/help/rp_landing_pages/content-multilingual-landing-page.md)
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)

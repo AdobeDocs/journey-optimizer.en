@@ -83,7 +83,7 @@ Once [your brand is set up and published](brands.md), assess your brand alignmen
 
 >[!NOTE]
 >
->Content quality evaluation is brand-agnostic. Even if a brand is selected in the drop-down menu, its guidelines are not applied to the quality check. The brand selection is only relevant for brand alignment scoring.
+>Content quality evaluation is independent of brand guidelines. Even if a brand is selected in the drop-down menu, its guidelines are not applied to the quality check. The brand selection is only relevant for brand alignment scoring.
 
 In addition to brand alignment, you can assess general content quality to identify potential issues with readability, content cohesiveness, and effectivenes, independent of your brand guidelines.
 
