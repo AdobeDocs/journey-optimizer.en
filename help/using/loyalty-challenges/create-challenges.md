@@ -93,7 +93,7 @@ For detailed instructions on creating and configuring tasks, see [Create tasks](
 
 <!-- SCREENSHOT: Content cards configuration section in the challenge editor -->
 
-Content cards provide the visual representation of your challenge on customer devices, displaying challenge information, progress, and rewards. Learn more about [content cards](../content-card/get-started-content-card.md).
+Content cards provide the visual representation of your challenge on customer devices, displaying challenge information, progress, and rewards. Learn more about [content cards](../content-card/create-content-card.md).
 
 <!-- VISUAL: Example content card designs showing different states: challenge start, in-progress with progress bar, completion with reward -->
 
