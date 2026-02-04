@@ -33,13 +33,20 @@ badge: label="Private beta" type="Informative"
 
 Loyalty Challenges provide a complete solution for creating loyalty programs at scale, from defining tasks and milestones to delivering content and tracking performance across channels.
 
+![](assets/challenges-gs.png)
+
 You can create three types of challenge experiences:
 
-* **Standard challenges**: Customers complete any specified number of tasks in any order
-* **Streak challenges**: Customers complete the same task multiple times consecutively
-* **Sequential challenges**: Customers complete tasks in a defined order
+* **Standard challenges**: Customers complete any specified number of tasks in any order  
+  *Example: Complete 3 out of 5 available tasks*
 
-With Loyalty Challenges, you can configure rewards, send multi-channel notifications at key lifecycle stages, and monitor performance through automatically generated journeys—all while maintaining integration with your external loyalty management system.
+* **Streak challenges**: Customers complete the same task multiple times consecutively  
+  *Example: Make a purchase on 7 consecutive days*
+
+* **Sequential challenges**: Customers complete tasks in a defined order  
+  *Example: Purchase → Review → Share (must be completed in this sequence)*
+
+With Loyalty Challenges, configure rewards, send multi-channel notifications at key lifecycle stages, using auto-generated journeys — all while maintaining integration with your external loyalty management system.
 
 ## How it works {#how-it-works}
 
@@ -47,15 +54,15 @@ Creating and launching a loyalty challenge follows this workflow:
 
 1. **Set up data ingestion** - Configure Experience Platform source connectors (such as the [Capillary connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty)) to ingest loyalty event data that tracks customer actions and progress. This data powers challenge tracking and task completion.
 
-1. **Select target audience** - Define which customers can participate in your challenge by selecting an audience from Adobe Experience Platform.
-
 1. **Create a challenge** - Define the basic challenge properties, including name, type (Standard, Streak, or Sequential), and date range.
 
-1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, visit, engagement, custom events), quantities, product filters, and rewards.
+1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend), quantities, product filters, and rewards.
 
 1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices. Content cards show challenge information, progress, and rewards.
 
 1. **Configure messaging** (Optional) - Set up multi-channel messages (in-app, email, push) for key lifecycle stages: launch, in-progress, and completion.
+
+1. **Select target audience** - Define which customers can participate in your challenge by selecting an audience from Adobe Experience Platform.
 
 1. **Publish journey** - Journey Optimizer automatically generates a journey for your challenge. Navigate to the Journeys inventory and publish the auto-generated journey to make the challenge available to customers.
 
@@ -130,18 +137,7 @@ Define a target audience that specifies which customers are eligible to particip
     <a href="create-tasks.md"><strong>Create tasks</strong></a>
     </div>
     <p>
-    <em>Define actions and rewards for challenges</em>
-    </p>
-  </td>
-  <td>
-    <a href="access-loyalty-challenges.md">
-    <!--<img alt="Manage" src="../assets/do-not-localize/monitor-button.svg">-->
-    </a>
-    <div>
-    <a href="access-loyalty-challenges.md"><strong>Manage challenges and tasks</strong></a>
-    </div>
-    <p>
-    <em>Edit, duplicate, and delete challenges and tasks</em>
+    <em>Define actions to complete for challenges</em>
     </p>
   </td>
 </tr>

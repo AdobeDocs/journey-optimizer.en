@@ -65,13 +65,13 @@ In the **[!UICONTROL Structure]** tab, define how your challenge is organized: i
 
 ### Schedule the challenge {#schedule}
 
-Configure when your challenge runs by selecting the ![](assets/do-not-localize/schedule-icon.svg) **[!UICONTROL Open schedule]** icon:
+Configure when your challenge runs by selecting the **[!UICONTROL Open schedule]** icon:
 
-![](assets/challenge-create-properties.png)
+![](assets/challenge-create-schedule.png)
 
 * **[!UICONTROL Start date and time]**: Set when the challenge becomes available to customers.
 * **[!UICONTROL End date and time]**: Set when the challenge expires and no longer accepts new completions.
-   * **[!UICONTROL Time zone]**: The challenge uses the recipient's local time zone by default.
+* **[!UICONTROL Time zone]**: The challenge uses the recipient's local time zone by default.
 * **[!UICONTROL Tasks must be completed]**: Choose when customers can complete tasks:
 
    * **[!UICONTROL Any time during challenge]**: Customers can complete tasks at any time between the challenge start and end dates.
@@ -83,17 +83,6 @@ The challenge schedule is now configured. Next, add the tasks that customers nee
 
 Tasks define the specific actions customers must complete to earn rewards. You can configure task types (purchase, spend), quantities, product filters, and other attributes.
 
-Depending on your challenge type, customers complete tasks differently:
-
-* **Standard challenges**: Complete any specified number of tasks in any order  
-  *Example: Complete 3 out of 5 tasks - make a purchase, write a review, refer a friend, share on social media, or update profile*
-
-* **Streak challenges**: Complete the same task multiple times consecutively  
-  *Example: Make a purchase for 7 consecutive days to earn bonus rewards*
-
-* **Sequential challenges**: Complete tasks in a defined order  
-  *Example: First make a purchase, then write a review, then share on social media - tasks must be completed in this exact sequence*
-
 To add tasks to your challenge, follow these steps:
 
 1. In the **[!UICONTROL Tasks]** section, select **[!UICONTROL Add task]**.
@@ -102,12 +91,41 @@ To add tasks to your challenge, follow these steps:
 
 1. The **[!UICONTROL Tasks Inventory]** opens. Select one or more tasks from the list and select **[!UICONTROL Add]**. To create a new task, select **[!UICONTROL New]**. [Learn how to create and configure tasks](create-tasks.md).
 
-1. In the **[!UICONTROL Task completion requirement]** section, specify when the challenge is considered completed:
+1. Specify when the challenge is considered completed. Available settings depend on the challenge type:
 
-   * **[!UICONTROL Customer chooses 1 task to complete]**: Customers can select and complete any single task to earn rewards.
-   * **[!UICONTROL Customer completes specific number of tasks]**: Customers must complete a defined number of tasks.
+   +++Standard challenges
 
-1. By default, challenges allow customers to complete tasks across multiple transactions. To require all tasks to be completed in a single transaction, select the ![](assets/do-not-localize/settings-icon.svg) **[!UICONTROL Settings]** icon and toggle on the option below.
+   **[!UICONTROL Task completion requirement]** - Choose between:
+
+      * **[!UICONTROL Customer chooses 1 task to complete]**: Customers can select and complete any single task to earn rewards
+      * **[!UICONTROL Customer completes specific number of tasks]**: Customers must complete a defined number of tasks. Specify the required number - *Example: Complete 3 out of 5 tasks*
+
+   +++
+
+   +++Streak challenges
+
+   * **[!UICONTROL Streak type]**:
+
+      * **Consecutive**: Customers must complete the task on consecutive days without breaks - *Example: Purchase on Monday, Tuesday, Wednesday - missing a day breaks the streak*
+
+      * **Non-consecutive**: Customers can complete the task with gaps between completions - *Example: Complete 7 purchases over 30 days, with breaks allowed*
+
+   * **[!UICONTROL Streak length]**: Specify how many times the task must be completed - *Example: Set to 7 for a "7-day purchase streak"*
+
+   +++
+
+   +++Sequential challenges
+
+   **[!UICONTROL Task completion requirement]** - Choose between:
+
+      * **[!UICONTROL Customer chooses 1 task to complete]**: Customers can select and complete any single task to earn rewards
+      * **[!UICONTROL Customer completes specific number of tasks]**: Customers must complete a defined number of tasks in the exact order you define. Missing or skipping a task breaks the sequence. Specify the required number (e.g., complete 3 out of 5 tasks)
+
+      *Example: Task 1 (Purchase) → Task 2 (Review) → Task 3 (Share) - must be completed in this order*
+
+   +++
+
+1. By default, standard and sequential challenges allow customers to complete tasks across multiple transactions. To require all tasks to be completed in a single transaction, select the ![](assets/do-not-localize/settings-icon.svg) **[!UICONTROL Settings]** icon and toggle on the option below.
 
    ![](assets/challenge-create-single-transaction.png)
 
