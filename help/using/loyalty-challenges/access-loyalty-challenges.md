@@ -32,33 +32,35 @@ badge: label="Private beta" type="Informative"
 
 To access Loyalty Challenges, navigate to Journey Optimizer and select **[!UICONTROL Loyalty Challenge (Beta)]** under the **[!UICONTROL Journey management]** section.
 
+## Overview {#overview}
+
+The Loyalty Challenges interface provides a centralized location to view, manage, and organize all your challenges and tasks. You can access two main inventories:
+
+* **Challenges inventory**: View and manage all loyalty challenges, monitor their status, and perform quick actions
+* **Tasks inventory**: Browse reusable tasks that can be used across multiple challenges
+
 ## Challenges inventory {#challenges-tab}
 
 The **[!UICONTROL Challenges]** tab displays all challenges sorted by last modified date, with the most recently modified challenges appearing first.
 
 ![](assets/challenges-inventory.png)
 
-The following information is displayed:
+Key information displayed:
 
-* **[!UICONTROL Challenge]**: The name you assigned to the challenge
-* **[!UICONTROL State]**: Current state of the challenge. For detailed information on status transitions and the challenge lifecycle, see [Challenge lifecycle](manage-challenges.md#challenge-lifecycle).
-* **[!UICONTROL Description]**: Brief description of the challenge purpose
+* **[!UICONTROL Challenge]**: Challenge name
+* **[!UICONTROL State]**: Current state of the challenge (Draft or Published). [Learn more on status transitions](manage-challenges.md#challenge-lifecycle)
 * **[!UICONTROL Tasks]**: Number of tasks configured in the challenge
 * **[!UICONTROL Journey]**: Link to the auto-generated journey associated with the challenge
 * **[!UICONTROL Status]**: Current status of the associated journey (Draft, Live, Stopped, etc.)
-* **[!UICONTROL Start Date (UTC)]**: When the challenge becomes active
-* **[!UICONTROL End Date (UTC)]**: When the challenge expires
-* **[!UICONTROL Last Modified]**: Date and time of last modification
-* **[!UICONTROL Creation Date]**: Date when the challenge was created
-* **[!UICONTROL Created by]**: User who created the challenge
+* **[!UICONTROL Start/End Date (UTC)]**: When the challenge becomes active and when it expires
 
 From the Challenges tab, you can perform quick actions on challenges:
 
-* **View challenge details**: Select the challenge name to open its details page
+* **View challenge details**: Select the challenge name to open its details page and/or edit the challenge
 * **Duplicate a challenge**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Duplicate]**
 * **Delete a draft challenge**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Delete]**
 
-For detailed information on managing challenges after creation, see [Manage challenges and tasks](manage-challenges.md).
+[Learn how to manage challenges after creation](manage-challenges.md).
 
 ## Tasks inventory {#tasks-tab}
 
@@ -66,24 +68,20 @@ The Tasks tab displays all reusable tasks that can be used across multiple chall
 
 ![](assets/tasks-inventory.png)
 
-The Tasks inventory displays the following information:
+Key information displayed:
 
 * **[!UICONTROL Task Name]**: The name you assigned to the task
 * **[!UICONTROL Description]**: Brief description of what the task requires
 * **[!UICONTROL Task Activity]**: Type of activity (Purchase, Spend)
 * **[!UICONTROL SKU]**: Eligible and/or excluded items
-* **[!UICONTROL Last Modified]**: Date and time of last modification
-* **[!UICONTROL Last Modified By]**: Last user who modified the task
-* **[!UICONTROL Creation Date]**: Date when the task was created
-* **[!UICONTROL Created by]**: User who created the task
 
 From the Tasks tab, you can perform quick actions on tasks:
 
-* **View task details**: Select the task name to view full configuration
+* **View task details**: Select the task name to view full configuration and/or edit the task
 * **Duplicate a task**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Duplicate]**
 * **Delete a task**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Delete]**
 
-For detailed information on managing tasks after creation, see [Manage challenges and tasks](manage-challenges.md).
+[Learn how to manage tasks after creation](manage-challenges.md).
 
 ## Next steps {#next-steps}
 

@@ -12,7 +12,7 @@ hidefromtoc: yes
 badge: label="Private beta" type="Informative"
 ---
 
-# Manage challenges {#manage-challenges}
+# Manage challenges & tasks {#manage-challenges}
 
 >[!BEGINSHADEBOX]
 
@@ -32,9 +32,7 @@ badge: label="Private beta" type="Informative"
 
 ## Manage challenges {#manage-challenges-section}
 
-### Challenge lifecycle {#challenge-lifecycle}
-
-<!-- VISUAL: Flowchart diagram showing challenge lifecycle with status transitions: Draft → Scheduled → Live → Completed/Stopped/Archived -->
+### Challenge states {#challenge-lifecycle}
 
 Challenges move through different statuses during their lifecycle:
 

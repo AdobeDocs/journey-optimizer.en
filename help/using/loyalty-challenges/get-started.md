@@ -100,7 +100,7 @@ Contact your administrator if you cannot access the feature or need additional p
 
 +++Target audiences
 
-Define target audiences that specify which customers are eligible to participate in your loyalty challenges. You can select existing audiences or create new ones directly from the challenge creation interface. For more information on how to work with audiences, refer to [Get started with audiences](../audience/about-audiences.md).
+Define target audiences that specify which customers are eligible to participate in your loyalty challenges. You can select existing audiences or create new ones directly from the challenge creation interface. [Learn how to work with audiences](../audience/about-audiences.md).
 
 +++
 
