@@ -15,10 +15,6 @@ mini-toc-levels: 1
 
 # Access & manage challenges and tasks {#access-loyalty-challenges}
 
->[!AVAILABILITY]
->
->This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
-
 >[!BEGINSHADEBOX]
 
 **Loyalty Challenges documentation:**
@@ -29,6 +25,10 @@ mini-toc-levels: 1
 * [Create tasks](create-tasks.md)
 
 >[!ENDSHADEBOX]
+
+>[!AVAILABILITY]
+>
+>This feature is currently in **private beta**. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
 ## Access & manage challenges and tasks
 

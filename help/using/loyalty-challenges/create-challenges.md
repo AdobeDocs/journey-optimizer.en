@@ -15,10 +15,6 @@ mini-toc-levels: 1
 
 # Create challenges {#create-challenges}
 
->[!AVAILABILITY]
->
->This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
-
 >[!BEGINSHADEBOX]
 
 **Loyalty Challenges documentation:**
@@ -29,6 +25,10 @@ mini-toc-levels: 1
 * [Create tasks](create-tasks.md)
 
 >[!ENDSHADEBOX]
+
+>[!AVAILABILITY]
+>
+>This feature is currently in **private beta**. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
 This page covers the complete process of creating a loyalty challenge, from selecting the challenge type and configuring its properties to generating and publishing the journey that will deliver the challenge to your customers.
 
