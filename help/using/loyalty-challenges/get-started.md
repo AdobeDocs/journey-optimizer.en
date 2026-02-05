@@ -111,7 +111,7 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
 <tr style="border: 0;">
   <td>
     <a href="access-loyalty-challenges.md">
-      <img alt="Access" src="assets/do-not-localize/icon-access.png">
+      <img alt="Access" src="assets/do-not-localize/icon-access.png" width="48"/>
     </a>
     <div>
     <a href="access-loyalty-challenges.md"><strong>Access & manage challenges and tasks</strong></a>
@@ -122,7 +122,7 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
   </td>
   <td>
     <a href="create-challenges.md">
-      <img alt="Create" src="assets/do-not-localize/icon-challenge.png">
+      <img alt="Create" src="assets/do-not-localize/icon-challenge.png" width="48"/>
     </a>
     <div>
     <a href="create-challenges.md"><strong>Create challenges</strong></a>
@@ -133,7 +133,7 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
   </td>
   <td>
     <a href="create-tasks.md">
-      <img alt="Tasks" src="assets/do-not-localize/icon-task.png">
+      <img alt="Tasks" src="assets/do-not-localize/icon-task.png" width="48"/>
     </a>
     <div>
     <a href="create-tasks.md"><strong>Create tasks</strong></a>
