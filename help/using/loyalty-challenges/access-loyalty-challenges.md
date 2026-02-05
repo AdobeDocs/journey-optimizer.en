@@ -23,8 +23,8 @@ mini-toc-levels: 2
 
 **Loyalty Challenges documentation:**
 
-* **Access & manage challenges and tasks** ◀︎ **You are here** - Inventory, challenges and tasks management
 * [Get started with Loyalty Challenges](get-started.md) - Overview, workflow, prerequisites
+* **Access & manage challenges and tasks** ◀︎ **You are here** - Inventory, challenge and task management
 * [Create challenges](create-challenges.md) - Build and configure challenges
 * [Create tasks](create-tasks.md) - Define challenge tasks
 
