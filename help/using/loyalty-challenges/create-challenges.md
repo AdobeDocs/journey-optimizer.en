@@ -10,7 +10,7 @@ level: Intermediate
 hide: yes
 hidefromtoc: yes
 badge: label="Private beta" type="Informative"
-mini-toc-levels: 2
+mini-toc-levels: 1
 ---
 
 # Create challenges {#create-challenges}
@@ -29,6 +29,8 @@ mini-toc-levels: 2
 * [Create tasks](create-tasks.md) - Define challenge tasks
 
 >[!ENDSHADEBOX]
+
+This page covers the complete process of creating a loyalty challenge, from selecting the challenge type and configuring its properties to generating and publishing the journey that will deliver the challenge to your customers.
 
 ## Create the challenge {#create-the-challenge}
 
@@ -62,9 +64,9 @@ In the **[!UICONTROL Structure]** tab, define how your challenge is organized: i
    * **[!UICONTROL Name]**: Enter a descriptive name for your challenge. This name appears in the challenges inventory.
    * **[!UICONTROL Description]**: Enter a description that explains the challenge's purpose and goals.
 
-   ![](assets/challenge-create-properties.png)
-
 1. Use the **[!UICONTROL Custom metadata]** section to add custom metadata using key/value pairs. This metadata can be used for tracking or integration with external systems.
+
+   ![](assets/challenge-create-properties.png)
 
 ### Schedule the challenge {#schedule}
 
@@ -111,13 +113,13 @@ To add tasks to your challenge, follow these steps:
 
    +++Streak challenges
 
-   * **[!UICONTROL Streak type]**:
+   In the **[!UICONTROL Streak type]** drop-down, choose between:
 
       * **Consecutive**: Customers must complete the task on consecutive days without breaks. *Example: Purchase on Monday, Tuesday, Wednesday—missing a day breaks the streak.*
 
       * **Non-consecutive**: Customers can complete the task with gaps between completions. *Example: Complete 7 purchases over 30 days, with breaks allowed.*
 
-   * **[!UICONTROL Streak length]**: Specify how many times the task must be completed. *Example: Set to 7 for a "7-day purchase streak."*
+   In the **[!UICONTROL Streak length]** field, specify how many times the task must be completed. *Example: Set to 7 for a "7-day purchase streak."*
 
    +++
 
@@ -151,6 +153,8 @@ To configure when and how rewards are delivered:
      *Example: Award 10 points after task 1, 20 points after task 2, and 50 points after task 3*
 
 1. Select your reward provider. This is your loyalty solution that manages customer points and rewards.
+
+   ![](assets/challenge-create-reward-type.png)
 
 1. Configure the reward amounts based on your selected delivery method:
 
@@ -204,7 +208,7 @@ Set up multi-channel messages to engage customers at key stages of the challenge
    * **In-progress** message: Keep customers engaged with reminders and progress updates
    * **Completion** message: Celebrate success and confirm reward allocation
 
-1. For each stage, add message button to create a message for that stage.
+1. For each stage, click the add message button to create a message for that stage.
 
 1. Choose your desired channel: **[!UICONTROL In-app]**, **[!UICONTROL Email]**, or **[!UICONTROL Push notification]** and select the associated channel configuration.
 
@@ -239,8 +243,6 @@ After configuring all challenge components, generate the journey that will orche
    ![](assets/challenge-create-generate-journey.png)
 
 1. Journey Optimizer automatically creates a journey in "Draft" status. The auto-generated journey appears in your journey inventory with the name format *"Journey: [Challenge Name]"*. [Learn more about the journey inventory](../building-journeys/journey-ui.md).
-
-   Navigate to the **[!UICONTROL Journeys]** inventory to review the auto-generated journey configuration if needed.
 
    ![](assets/challenge-create-journey.png)
 

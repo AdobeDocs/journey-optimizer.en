@@ -10,7 +10,7 @@ level: Intermediate
 hide: yes
 hidefromtoc: yes
 badge: label="Private beta" type="Informative"
-mini-toc-levels: 2
+mini-toc-levels: 1
 ---
 
 # Create tasks {#create-tasks}
