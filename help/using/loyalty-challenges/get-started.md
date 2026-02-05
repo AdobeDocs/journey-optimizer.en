@@ -10,43 +10,50 @@ level: Intermediate
 hide: yes
 hidefromtoc: yes
 badge: label="Private beta" type="Informative"
+mini-toc-levels: 2
 ---
 
 # Get started with Loyalty Challenges {#get-started-loyalty-challenges}
+
+>[!AVAILABILITY]
+>
+>This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
 >[!BEGINSHADEBOX]
 
 **Loyalty Challenges documentation:**
 
 * **Get started with Loyalty Challenges** ◀︎ **You are here** - Overview, workflow, prerequisites
-* [Access and manage Loyalty Challenges](access-loyalty-challenges.md) - Inventory, challenges and tasks management
+* [Access & manage challenges and tasks](access-loyalty-challenges.md) - Inventory, challenge and task management
 * [Create challenges](create-challenges.md) - Build and configure challenges
 * [Create tasks](create-tasks.md) - Define challenge tasks
 
 >[!ENDSHADEBOX]
 
->[!AVAILABILITY]
->
->This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
-
 ## Overview {#overview}
 
-Loyalty Challenges provide a complete solution for creating loyalty programs at scale, from defining tasks and milestones to delivering content and tracking performance across channels.
+Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends.
+
+With Loyalty Challenges, you can:
+
+* **Design flexible challenge types**: Create Standard, Streak, or Sequential challenges to match your business goals
+* **Configure rewards strategically**: Deliver points at task milestones or upon full completion to maintain engagement
+* **Personalize the experience**: Use content cards and multi-channel messaging to create immersive, branded experiences
+* **Integrate seamlessly**: Connect with your existing loyalty providers and leverage Experience Platform data
+* **Track automatically**: Monitor customer progress through auto-generated journeys without custom development
 
 ![](assets/challenges-gs.png)
 
 You can create three types of challenge experiences:
 
-* **Standard challenges**: Customers complete any specified number of tasks in any order  
-  *Example: Complete 3 out of 5 available tasks*
+* **Standard challenges**: Customers complete any specified number of tasks in any order. Use this type when you want flexibility and multiple paths to completion.  
+  *Example: "Summer Wellness Challenge" - Complete 3 out of 5 tasks: buy health products, share on social media, refer a friend, write a review, or attend a virtual event*
 
-* **Streak challenges**: Customers complete the same task multiple times consecutively  
-  *Example: Make a purchase on 7 consecutive days*
+* **Streak challenges**: Customers complete the same task multiple times consecutively. Use this type to encourage consistent, repeated behavior over time.  
+  *Example: "Coffee Lover's Week" - Purchase coffee products for 7 consecutive days to unlock a free drink reward*
 
-* **Sequential challenges**: Customers complete tasks in a defined order  
-  *Example: Purchase → Review → Share (must be completed in this sequence)*
-
-With Loyalty Challenges, configure rewards, send multi-channel notifications at key lifecycle stages, using auto-generated journeys — all while maintaining integration with your external loyalty management system.
+* **Sequential challenges**: Customers complete tasks in a defined order. Use this type to guide customers through a specific journey or onboarding process.  
+  *Example: "New Member Journey" - Sign up for emails → Make your first purchase → Write a product review → Refer a friend (complete in this exact order)*
 
 ## How it works {#how-it-works}
 
@@ -60,7 +67,7 @@ Creating and launching a loyalty challenge follows this workflow:
 
 1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices. Content cards show challenge information, progress, and rewards.
 
-1. **Configure messaging** (Optional) - Set up multi-channel messages (in-app, email, push) for key lifecycle stages: launch, in-progress, and completion.
+1. **Configure messaging** (optional) - Set up multi-channel messages (in-app, email, push) for key lifecycle stages: launch, in-progress, and completion.
 
 1. **Select target audience** - Define which customers can participate in your challenge by selecting an audience from Adobe Experience Platform.
 
@@ -76,30 +83,23 @@ Before using Loyalty Challenges, ensure you have:
 
 Loyalty Challenges rely on data ingested through Experience Platform source connectors to track customer progress and task completion.
 
-1. **Configure a supported source connector**: Currently, the Capillary connector is available. Additional connectors are planned for future releases. [Learn about loyalty source connectors](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty).
-
-1. **Validate data ingestion**: Ensure that loyalty events and customer data are flowing into Experience Platform and available in Journey Optimizer. Verify that the data schema includes the necessary fields for tracking customer actions and progress.
-
-For detailed instructions, see [Experience Platform sources overview](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home)
+Before starting, configure a supported source connector. Currently, the Capillary connector is available. Additional connectors are planned for future releases. [Learn about loyalty source connectors](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty).
 
 +++
 
-+++Required permissions
+<!--+++Required permissions
 
 To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer. Required permissions include:
 
-* Access to the **[!UICONTROL Loyalty Challenges (Beta)]** feature
-* Permissions to create and manage journeys
-* Permissions to create and manage content cards
-* Permissions to create and manage audiences
+TBD
 
 Contact your administrator if you cannot access the feature or need additional permissions.
 
-+++
++++-->
 
 +++Target audience
 
-Define a target audience that specifies which customers are eligible to participate in your loyalty challenges. You can select existing audiences or create new ones directly from the challenge creation interface. [Learn how to work with audiences](../audience/about-audiences.md).
+Ensure the target audience you need exists in Adobe Experience Platform before creating your challenge. During challenge configuration, you will select the audience that defines which customers are eligible to participate. [Learn how to work with audiences](../audience/about-audiences.md).
 
 +++
 
@@ -112,7 +112,7 @@ Define a target audience that specifies which customers are eligible to particip
     <!--<img alt="Access" src="../assets/do-not-localize/learn-more-button.svg">-->
     </a>
     <div>
-    <a href="access-loyalty-challenges.md"><strong>Access Loyalty Challenges</strong></a>
+    <a href="access-loyalty-challenges.md"><strong>Access & manage challenges and tasks</strong></a>
     </div>
     <p>
     <em>Learn how to access the inventory and filter challenges</em>
@@ -126,7 +126,7 @@ Define a target audience that specifies which customers are eligible to particip
     <a href="create-challenges.md"><strong>Create challenges</strong></a>
     </div>
     <p>
-    <em>Build and configure your first loyalty challenge</em>
+    <em>Learn how to build and configure your first loyalty challenge</em>
     </p>
   </td>
   <td>
@@ -137,7 +137,7 @@ Define a target audience that specifies which customers are eligible to particip
     <a href="create-tasks.md"><strong>Create tasks</strong></a>
     </div>
     <p>
-    <em>Define actions to complete for challenges</em>
+    <em>Learn how to configure actions that customers complete for challenges</em>
     </p>
   </td>
 </tr>

@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Access and manage Loyalty Challenges
+title: Access & manage challenges and tasks
 description: Learn how to access, manage, and organize loyalty challenges and tasks in Adobe Journey Optimizer.
 feature: Journeys
 topic: Content Management
@@ -10,32 +10,35 @@ level: Intermediate
 hide: yes
 hidefromtoc: yes
 badge: label="Private beta" type="Informative"
+mini-toc-levels: 2
 ---
 
-# Access and manage Loyalty Challenges {#access-loyalty-challenges}
+# Access & manage challenges and tasks {#access-loyalty-challenges}
+
+>[!AVAILABILITY]
+>
+>This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
 >[!BEGINSHADEBOX]
 
 **Loyalty Challenges documentation:**
 
+* **Access & manage challenges and tasks** ◀︎ **You are here** - Inventory, challenges and tasks management
 * [Get started with Loyalty Challenges](get-started.md) - Overview, workflow, prerequisites
-* **Access Loyalty Challenges** ◀︎ **You are here** - Inventory, challenges and tasks management
 * [Create challenges](create-challenges.md) - Build and configure challenges
 * [Create tasks](create-tasks.md) - Define challenge tasks
 
 >[!ENDSHADEBOX]
 
->[!AVAILABILITY]
->This feature is currently in **private beta** and may not be available in your environment. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
+## Access & manage challenges and tasks
 
-## Access Loyal Challenges
+To access Loyalty Challenges, navigate to Journey Optimizer and select **[!UICONTROL Loyalty Challenge (Beta)]** under the **[!UICONTROL Journey management]** section. The Loyalty Challenges interface provides a centralized location to view, manage, and organize all your challenges and tasks.
 
-To access Loyalty Challenges, navigate to Journey Optimizer and select **[!UICONTROL Loyalty Challenge (Beta)]** under the **[!UICONTROL Journey management]** section.
+The interface provides access to two main inventories:
 
-The Loyalty Challenges interface provides a centralized location to view, manage, and organize all your challenges and tasks. You can access two main inventories:
+* **Challenges**: View and manage all loyalty challenges, monitor their status, and perform quick actions such as viewing, editing, duplicating, or deleting challenges
+* **Tasks**: Browse reusable tasks that can be used across multiple challenges, and manage task definitions independently
 
-* **Challenges inventory**: View and manage all loyalty challenges, monitor their status, and perform quick actions
-* **Tasks inventory**: Browse reusable tasks that can be used across multiple challenges
 
 ## Challenges inventory {#challenges-tab}
 
@@ -45,7 +48,6 @@ The **[!UICONTROL Challenges]** tab displays all challenges sorted by last modif
 
 Key information displayed:
 
-* **[!UICONTROL Challenge]**: Challenge name
 * **[!UICONTROL State]**: Current state of the challenge (Draft or Published)
 * **[!UICONTROL Tasks]**: Number of tasks configured in the challenge
 * **[!UICONTROL Journey]**: Link to the auto-generated journey associated with the challenge
@@ -57,14 +59,9 @@ From the Challenges tab, you can perform actions on challenges:
 * **View challenge**: Select the challenge name to open its details page
 * **Duplicate a challenge**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Duplicate]**. A copy is created with all tasks, content, and messaging intact.
 * **Delete a challenge**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Delete]**
-* **Edit a challenge**: Select the challenge name to open its details page and edit it. 
+* **Edit a challenge**: Select the challenge name to open its details page and edit it.
 
-  When you open a published challenge for editing, you first need to revert it to Draft status:
-
-  * Any customizations made directly to the auto-generated journey will be lost
-  * The challenge returns to Draft status
-  * After making your changes, you must save and publish the challenge again
-  * You must republish the associated journey to make the updated challenge available to customers
+  When you open a published challenge for editing, you first need to revert it to "Draft" status. Any customizations made directly to the auto-generated journey will be lost. After making your changes, save and publish the challenge again, and republish the associated journey.
 
   >[!IMPORTANT]
   >
@@ -78,7 +75,6 @@ The **[!UICONTROL Tasks]** tab displays all reusable tasks that can be used acro
 
 Key information displayed:
 
-* **[!UICONTROL Task Name]**: The name you assigned to the task
 * **[!UICONTROL Description]**: Brief description of what the task requires
 * **[!UICONTROL Task Activity]**: Type of activity (Purchase, Spend)
 * **[!UICONTROL SKU]**: Eligible and/or excluded items
@@ -86,6 +82,6 @@ Key information displayed:
 
 From the Tasks tab, you can perform actions on tasks:
 
-* **View/Edit task**: Select the task name to view full configuration and edit the task
+* **View/Edit a task**: Select the task name to view the full configuration and edit the task
 * **Duplicate a task**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Duplicate]**
 * **Delete a task**: Select the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and choose **[!UICONTROL Delete]**

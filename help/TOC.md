@@ -128,7 +128,7 @@ solution: Journey Optimizer
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
 + Loyalty challenges {#loyalty-challenges}
   + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
-  + [Access and manage Loyalty Challenges](using/loyalty-challenges/access-loyalty-challenges.md)
+  + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
   + [Create challenges](using/loyalty-challenges/create-challenges.md)
   + [Create tasks](using/loyalty-challenges/create-tasks.md)
 + Campaigns {#campaigns}
