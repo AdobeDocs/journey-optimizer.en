@@ -17,6 +17,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The text version email documentation has been enhanced with comprehensive use case guidance, including decision criteria for when to use custom plain text versus auto-sync, practical examples with real-world scenarios, and an FAQ section with common questions. [Read more](../email/text-version-email.md#when-to-use)
 
+* The Email Designer themes documentation has been updated with information about web fonts support limitations and the importance of fallback fonts. [Read more](../email/apply-email-themes.md#themes-guardrails)
+
 * A limitation has been added to the Execution Metadata helper documentation to clarify that metadata is not captured for profiles excluded from the action. [Read more](../personalization/functions/helpers.md#execution-metadata)
 
 * The code-based implementation samples documentation has been updated to include the tokens field in the propositionAction for accurate tracking and attribution in Decisioning. [Read more](../code-based/code-based-implementation-samples.md#client-side-how)
