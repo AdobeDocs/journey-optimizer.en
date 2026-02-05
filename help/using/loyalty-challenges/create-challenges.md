@@ -230,23 +230,29 @@ Define which customers can participate in your loyalty challenge.
 
 1. In the audience selection dialog, select your target audience from the list of available Adobe Experience Platform audiences and select **[!UICONTROL Add audience]**. [Learn how to work with audiences](../audience/about-audiences.md).
 
-Your challenge is now fully configured with its structure, content, messaging, and target audience. The final step is to generate and publish the journey.
+Your challenge is now fully configured with its structure, content, messaging, and target audience. To launch it, you must publish the challenge and its associated journey.
 
-## Generate and publish the journey {#review-and-publish}
+## Launching the challenge {#launch}
 
-After configuring all challenge components, generate the journey that will orchestrate your challenge delivery:
+Launching a challenge requires **three steps**: (1) publish the challenge, (2) generate the journey, (3) publish the journey. All three must be completed for the challenge to be delivered to customers.
 
 1. Review your challenge configuration to ensure all required fields are completed.
 
-1. Select **[!UICONTROL Save]** to save your challenge configuration and select **[!UICONTROL Generate Journey]**.
+1. Click the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and select **[!UICONTROL Publish]**.
+
+   ![](assets/challenge-create-publish.png)
+
+1. Select **[!UICONTROL Generate Journey]** to create the journey that will orchestrate your challenge delivery.
 
    ![](assets/challenge-create-generate-journey.png)
 
-1. Journey Optimizer automatically creates a journey in "Draft" status. The auto-generated journey appears in your journey inventory with the name format *"Journey: [Challenge Name]"*. [Learn more about the journey inventory](../building-journeys/journey-ui.md).
+1. Journey Optimizer automatically creates a journey in "Draft" status. The journey appears in your journey inventory with the name format *"Journey: [Challenge Name]"*. [Learn more about the journey inventory](../building-journeys/journey-ui.md).
 
    ![](assets/challenge-create-journey.png)
 
-1. When ready, publish the journey to make the challenge available to customers. The journey will start automatically on your specified challenge start date and deliver content and messages according to your configuration. [Learn how to publish a journey](../building-journeys/publish-journey.md).
+1. Open the journey and publish it. The journey will start automatically on your specified challenge start date and deliver content and messages according to your configuration. [Learn how to publish a journey](../building-journeys/publish-journey.md).
+
+1. Once your challenge is live, monitor performance and message delivery in the [journey report](../reports/journey-global-report-cja.md).
 
 >[!NOTE]
 >

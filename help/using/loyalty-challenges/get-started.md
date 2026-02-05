@@ -71,7 +71,7 @@ Creating and launching a loyalty challenge follows this workflow:
 
 1. **Select target audience** - Define which customers can participate in your challenge by selecting an audience from Adobe Experience Platform.
 
-1. **Publish journey** - Journey Optimizer automatically generates a journey for your challenge. Navigate to the Journeys inventory and publish the auto-generated journey to make the challenge available to customers.
+1. **Publish challenge and journey** - Publish the challenge, then generate a journey. Journey Optimizer automatically creates the journey for your challenge. Navigate to the Journeys inventory and publish the auto-generated journey to make the challenge available to customers.
 
 For detailed step-by-step instructions, see [Create challenges](create-challenges.md).
 
@@ -87,15 +87,17 @@ Before starting, configure a supported source connector. Currently, the Capillar
 
 +++
 
-<!--+++Required permissions
++++Required permissions
 
 To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer. Required permissions include:
 
-TBD
+* TBD
+* TBD
+* TBD
 
 Contact your administrator if you cannot access the feature or need additional permissions.
 
-+++-->
++++
 
 +++Target audience
 
