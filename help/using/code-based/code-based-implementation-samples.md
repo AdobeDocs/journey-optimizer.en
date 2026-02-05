@@ -112,12 +112,12 @@ If you have a client-side implementation, you can use one of the AEP client SDKs
 
     >[!IMPORTANT]
     >
-    >The `tokens` field in `propositionAction` is critical for accurate tracking and attribution in Adobe Journey Optimizer Decisioning (AJO-D). These tokens enable:
-    >- Proper click attribution for decisioning activities
-    >- Accurate reporting of user interactions with decisioned content
-    >- Optimization of offer performance based on user engagement
+    >The `tokens` field in `propositionAction` is critical for accurate tracking and attribution in Adobe Journey Optimizer Decisioning. These tokens enable:
+    >* Proper click attribution for decisioning activities
+    >* Accurate reporting of user interactions with decision content
+    >* Optimization of offer performance based on user engagement
     >
-    >The tokens are typically found in `proposition.items[0].characteristics.tokens` and should always be included when tracking user interactions with decisioned content.
+    >The tokens are typically found in `proposition.items[0].characteristics.tokens` and should always be included when tracking user interactions with decision content.
 
 ### Key Observations
 

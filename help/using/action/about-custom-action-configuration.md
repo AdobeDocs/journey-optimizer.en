@@ -403,9 +403,6 @@ A comprehensive example integrating multiple concepts:
 >Field names in the payload cannot contain a dot `.` character, nor start with a `$` character. Ensure your JSON structure follows these naming conventions.
 -->
 
-* [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
-
-
 ## Additional resources
 
 Browse the sections below to learn more about configuring, using and troubleshooting your custom actions:
