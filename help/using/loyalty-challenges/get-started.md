@@ -105,13 +105,15 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
 
 +++
 
-## Next steps {#next-steps}
+## Let's dive deeper {#lets-dive-deeper}
+
+Now that you know what Loyalty Challenges are and how they work, it's time to dive into the details. Explore the following topics to access the interface, create your first challenge, and define the tasks your customers will complete.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
   <td>
     <a href="access-loyalty-challenges.md">
-      <img alt="Access" src="assets/do-not-localize/icon-access.png" width="48"/>
+      <img alt="Access" src="assets/do-not-localize/icon-access.png" width="200"/>
     </a>
     <div>
     <a href="access-loyalty-challenges.md"><strong>Access & manage challenges and tasks</strong></a>
@@ -122,7 +124,7 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
   </td>
   <td>
     <a href="create-challenges.md">
-      <img alt="Create" src="assets/do-not-localize/icon-challenge.png" width="48"/>
+      <img alt="Create" src="assets/do-not-localize/icon-challenge.png" width="200"/>
     </a>
     <div>
     <a href="create-challenges.md"><strong>Create challenges</strong></a>
@@ -133,7 +135,7 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
   </td>
   <td>
     <a href="create-tasks.md">
-      <img alt="Tasks" src="assets/do-not-localize/icon-task.png" width="48"/>
+      <img alt="Tasks" src="assets/do-not-localize/icon-task.png" width="200"/>
     </a>
     <div>
     <a href="create-tasks.md"><strong>Create tasks</strong></a>
