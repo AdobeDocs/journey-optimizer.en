@@ -111,13 +111,13 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
 <tr style="border: 0;">
   <td>
     <a href="access-loyalty-challenges.md">
-      <img alt="Create" src="assets/do-not-localize/icon-access.png">
+      <img alt="Access" src="assets/do-not-localize/icon-access.png">
     </a>
     <div>
     <a href="access-loyalty-challenges.md"><strong>Access & manage challenges and tasks</strong></a>
     </div>
     <p>
-    <em>Learn how to access the inventory and filter challenges</em>
+    <em>Learn how to access the inventory and manage challenges and tasks</em>
     </p>
   </td>
   <td>
@@ -133,13 +133,13 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
   </td>
   <td>
     <a href="create-tasks.md">
-    <<img alt="Tasks" src="assets/do-not-localize/icon-task.png">
+      <img alt="Tasks" src="assets/do-not-localize/icon-task.png">
     </a>
     <div>
     <a href="create-tasks.md"><strong>Create tasks</strong></a>
     </div>
     <p>
-    <em>Learn how to configure actions that customers complete for challenges</em>
+    <em>Learn how to define tasks that customers complete for challenges</em>
     </p>
   </td>
 </tr>
