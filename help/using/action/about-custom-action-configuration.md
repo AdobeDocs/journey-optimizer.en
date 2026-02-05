@@ -201,6 +201,7 @@ In these field configuration, you must:
 >If you configure optional parameters while allowing Null values, parameters not filled in by a journey practitioner are sent as Null.
 >
 
+<!--
 ## Comprehensive JSON examples {#json-examples}
 
 This section provides complete JSON examples demonstrating all supported parameter types and configurations for custom actions.
@@ -400,6 +401,7 @@ A comprehensive example integrating multiple concepts:
 >[!CAUTION]
 >
 >Field names in the payload cannot contain a dot `.` character, nor start with a `$` character. Ensure your JSON structure follows these naming conventions.
+-->
 
 * [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
 
