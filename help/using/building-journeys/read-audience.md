@@ -266,8 +266,6 @@ The segmentation can be based on:
 >[!NOTE]
 >
 >When using the "Daily" scheduler type with a **[!UICONTROL Read Audience]** activity, you can define a time window for the journey to wait for fresh audience data. This ensures accurate targeting and prevents issues caused by delays in batch segmentation jobs. [Learn how to schedule a journey](#schedule)
->
->The **[!UICONTROL Trigger after batch audience evaluation]** option is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
 **Exclusion**
 
