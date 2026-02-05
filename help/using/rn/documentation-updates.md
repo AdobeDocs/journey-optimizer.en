@@ -15,11 +15,11 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## February 2026 {#february-2026}
 
-* The text version email documentation has been enhanced with comprehensive use case guidance, including decision criteria for when to use custom plain text versus auto-sync, practical examples with real-world scenarios, and an FAQ section with common questions. [Read more](../email/text-version-email.md)
+* The text version email documentation has been enhanced with comprehensive use case guidance, including decision criteria for when to use custom plain text versus auto-sync, practical examples with real-world scenarios, and an FAQ section with common questions. [Read more](../email/text-version-email.md#when-to-use)
 
 * A limitation has been added to the Execution Metadata helper documentation to clarify that metadata is not captured for profiles excluded from the action. [Read more](../personalization/functions/helpers.md#execution-metadata)
 
-* The code-based implementation samples documentation has been updated to include the tokens field in the propositionAction for accurate tracking and attribution in Decisioning. [Read more](../code-based/code-based-implementation-samples.md)
+* The code-based implementation samples documentation has been updated to include the tokens field in the propositionAction for accurate tracking and attribution in Decisioning. [Read more](../code-based/code-based-implementation-samples.md#client-side-how)
 
 * A note has been added to the URL tracking and List unsubscribe documentation to clarify that the order of URL tracking parameters appended to URLs is random and cannot be controlled. [Read more](../email/url-tracking.md)
 
