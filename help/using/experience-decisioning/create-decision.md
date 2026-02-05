@@ -79,7 +79,7 @@ The main steps to leverage decision policies in messages are as follows:
 
 Learn how to use Decisioning to personalize emails for your audience.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479199?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3476158?quality=12)
 
 Learn how to use Decisioning to personalize push notifications for your audience.
 
