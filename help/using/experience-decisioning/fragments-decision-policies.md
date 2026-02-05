@@ -5,8 +5,8 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
+exl-id: 70f64348-092b-4350-91dc-72c3c07300f9
 ---
-
 # Leverage fragments in decision policies {#fragments}
 
 If your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn more on fragments](../content-management/fragments.md)

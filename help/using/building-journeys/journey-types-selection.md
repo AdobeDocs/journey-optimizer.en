@@ -10,8 +10,8 @@ keywords: journey types, unitary, read audience, audience qualification, busines
 version: Journey Orchestration
 hide: yes
 hidefromtoc: yes
+exl-id: 0c894dc1-76b6-4b33-baf8-eaf6686f7d38
 ---
-
 # Journey types and selection guide {#journey-types-selection}
 
 Adobe Journey Optimizer supports four journey types, each designed for different entry mechanisms and business scenarios. This guide helps you understand the differences and choose the right type for your use case.
@@ -173,4 +173,3 @@ Now that you understand journey types, you're ready to:
 **Need to compare with campaigns?**
 
 * [Journeys vs Campaigns comparison guide](../start/journeys-vs-campaigns.md) - Choose between journeys, Action/API campaigns, and Orchestrated campaigns
-

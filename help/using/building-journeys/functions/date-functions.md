@@ -7,6 +7,7 @@ role: Developer
 level: Experienced
 keywords: date, functions, expression, journey, time
 version: Journey Orchestration
+exl-id: 68c102c1-f1c7-44b7-893f-9a3b7e0854b6
 ---
 # Date functions {#date-functions}
 
@@ -552,4 +553,3 @@ Returns 2023-08-28T17:15:30.123+02:00.
 If the value of the timestamp field is `2021-11-16T16:55:12.939318+01:00`, then the function returns `2021-11-17T02:55:12.942115+11:00`.
 
 +++
-

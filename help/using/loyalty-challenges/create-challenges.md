@@ -11,8 +11,8 @@ hide: yes
 hidefromtoc: yes
 badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
+exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
 ---
-
 # Create challenges {#create-challenges}
 
 >[!BEGINSHADEBOX]

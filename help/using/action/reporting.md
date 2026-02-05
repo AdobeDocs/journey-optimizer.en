@@ -7,6 +7,7 @@ feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: 908f553a-6d2b-45e5-bdb2-eb685f5e1165
 ---
 # Monitor your custom actions {#reporting}
 

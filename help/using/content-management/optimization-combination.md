@@ -6,6 +6,7 @@ description: Learn how to combine targeting and experiments within a single jour
 role: User
 level: Intermediate
 keywords: optimization, targeting, experimentation, combination, advanced
+exl-id: dafcb4d3-e33c-40c5-a5c6-972822a23cc0
 ---
 # Combine targeting and experimentation {#combination}
 
@@ -48,4 +49,3 @@ Once the journey/campaign is live, users from each targeted group are randomly a
 
 E.g. explaining how a marketer can look at the report to determine which treatment (e.g. which message content) is performing the best for the targeting audience
 -->
-

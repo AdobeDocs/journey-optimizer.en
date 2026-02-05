@@ -8,6 +8,7 @@ role: Admin
 level: Intermediate
 hidefromtoc: yes
 hide: yes
+exl-id: d8de1524-9d71-4978-86f5-1cd46f2e265c
 ---
 # Configure web push notification channel {#push-notification-configuration}
 

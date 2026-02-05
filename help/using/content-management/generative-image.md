@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
+exl-id: f0585411-c862-45f2-9a10-d8a72497c533
 ---
 # Generate images with AI Assistant {#generative-image}
 
@@ -176,4 +177,3 @@ After generating image variations for your push notifications, you can fine-tune
     You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
 When you have defined your content, audience and schedule, you are ready to prepare your push campaign. [Learn more](../campaigns/review-activate-campaign.md)
-

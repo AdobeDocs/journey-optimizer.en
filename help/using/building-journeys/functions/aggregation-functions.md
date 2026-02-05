@@ -7,6 +7,7 @@ role: Developer
 level: Experienced
 keywords: aggregation, functions, expression, journey, avg, count, max, min, sum
 version: Journey Orchestration
+exl-id: 871a5212-5b94-4a54-bf1d-276022be3c95
 ---
 # Aggregation functions {#aggregation-functions}
 

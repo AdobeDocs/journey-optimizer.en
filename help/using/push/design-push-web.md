@@ -9,6 +9,7 @@ role: User
 level: Beginner
 hidefromtoc: yes
 hide: yes
+exl-id: 7b1f82da-4b99-47c3-acce-c728d6b553fa
 ---
 # Design a web push notification {#design-push-notification}
 
@@ -71,4 +72,3 @@ Use the **[!UICONTROL Add Button]** option to define each button's label and ass
 In the **[!UICONTROL Custom Data]** section, you can add custom key-value pairs to the notification payload. These values can be used by your web application to trigger specific actions or customize the user experience. For more on how to set up push notifications in Adobe Experience Platform, refer to [this section](push-gs.md)
 
 ![](assets/web-custom.png)
-

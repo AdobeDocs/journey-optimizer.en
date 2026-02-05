@@ -6,6 +6,7 @@ description: Learn how to configure Webhooks to capture inbound responses for ma
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
+exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
 ---
 # Create Webhook {#webhook}
 
@@ -234,4 +235,3 @@ Once configured, you can leverage all out-of-the-box channel capabilities such a
 ## How-to video {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431625)
-

@@ -7,6 +7,7 @@ feature: SMS
 topic: Content Management
 role: User
 level: Intermediate
+exl-id: c8c156da-8482-4932-9c15-45ab83c173e7
 ---
 # Best practices for SMS cost optimization {#sms-cost-optimization}
 
@@ -71,4 +72,3 @@ Dynamic personalization may increase the length of a message. For instance, subs
 ## Additional resources {#additional-resources}
 
 Review supported characters and encoding rules in [Sinch Character Support Guide](https://developers.sinch.com/docs/sms/resources/message-info/character-support/)
-

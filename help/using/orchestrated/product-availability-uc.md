@@ -5,6 +5,7 @@ title: Notify users about product availability
 description: Notify users about product availability
 feature: Use Cases
 version: Campaign Orchestration
+exl-id: a3b5ff92-fe26-41ad-ad12-b346025e9e0f
 ---
 # Notify users about product availability {#product-availability-uc}
 
@@ -57,4 +58,3 @@ Design a back-in-stock notification to inform customers when items from their Wi
 1. Once your campaign is tested and ready, click **[!UICONTROL Publish]** to make it live.
 
 With this orchestrated campaign, customer receives a separate email for each of their wishlist items. Each message is sent to the specific email address associated with that wishlist, with personalized content drawn from the details of that particular wishlist item.
-

@@ -8,8 +8,8 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: error, codes, troubleshooting, journey, campaign, messages
+exl-id: 84924153-1bb5-465a-b91c-797628fc816c
 ---
-
 # Error codes reference {#error-codes}
 
 Adobe Journey Optimizer uses standardized error codes to help you quickly identify and resolve issues across journeys, campaigns, and message configurations. Understanding these error codes can significantly reduce troubleshooting time and help you maintain optimal campaign performance.
@@ -187,4 +187,3 @@ If you encounter persistent errors that cannot be resolved using this guide:
 
 * [Demystifying Adobe Journey Optimizer Error Codes: Part 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884){target="_blank"}
 * [Demystifying Adobe Journey Optimizer Error Codes: Part 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661){target="_blank"}
-

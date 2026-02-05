@@ -6,6 +6,7 @@ description: Learn how to personalize your brand guidelines
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: e5254a1f-e256-4ec8-b165-0b5b62ae4034
 ---
 # Personalize your brand {#brands-personalize}
 

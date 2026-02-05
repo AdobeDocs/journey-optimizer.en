@@ -4,6 +4,7 @@ product: journey optimizer
 title: Configure your Channel configuration
 description: Learn how to configure your Channel configuration
 version: Campaign Orchestration
+exl-id: 6793e9b8-06ca-403b-8cb0-3bcaef089837
 ---
 # Configure your Channel configuration {#channel-configuration}
 

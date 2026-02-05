@@ -6,6 +6,7 @@ description: Learn how to use content experiments to test multiple versions of c
 role: User
 level: Intermediate
 keywords: experimentation, optimization, A/B testing, content experiment, treatments
+exl-id: 4e8537c4-944f-4a39-be2b-af8ebfb6e099
 ---
 # Use experimentation {#experimentation}
 
@@ -52,4 +53,3 @@ To set up experimentation and determine which message drives the most purchases,
 Once the journey/campaign is live, users are randomly assigned the different content variations. [!DNL Journey Optimizer] tracks which variation drives more purchases and provides actionable insights.
 
 Follow the success of your campaign with the [journey](../reports/journey-global-report-cja.md) and [campaign](../reports/campaign-global-report-cja-experimentation.md) reports. <!--Link to Experimentation journey reportis missing-->
-

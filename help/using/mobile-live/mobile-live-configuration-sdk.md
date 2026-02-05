@@ -8,8 +8,8 @@ role: Admin
 level: Intermediate
 hide: yes
 hidefromtoc: yes
+exl-id: 02ca7c8e-105a-4e77-9aad-2381904255d0
 ---
-
 # Live Activity integration with Adobe Experience Platform Mobile SDK {#mobile-live-config-sdk}
 
 >[!BEGINSHADEBOX]
@@ -237,5 +237,3 @@ extension FoodDeliveryLiveActivityAttributes: LiveActivityAssuranceDebuggable {
     }
 }
 ```
-
-

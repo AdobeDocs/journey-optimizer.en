@@ -8,6 +8,7 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
+exl-id: e7e994ca-aa0c-4e86-8710-c87430b74188
 ---
 # Frequently asked questions {#mobile-live-faq}
 

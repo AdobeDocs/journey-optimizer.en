@@ -7,6 +7,7 @@ role: Developer
 level: Experienced
 keywords: math, functions, expression, journey, calculation, number
 version: Journey Orchestration
+exl-id: da710b22-3112-41fe-8b91-2b6563b79f27
 ---
 # Math functions {#math-functions}
 
@@ -85,4 +86,3 @@ Returns -3.
 Returns 3.
 
 +++
-

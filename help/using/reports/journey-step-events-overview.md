@@ -7,6 +7,7 @@ feature: Journeys, Reporting
 role: Developer, Admin, User
 level: Intermediate, Experienced
 keywords: journey, step events, analytics, reporting, monitoring, XDM
+exl-id: 2e7c5ea5-d8c5-416d-ab88-d2bc02043558
 ---
 # Work with journey step events {#work-with-journey-step-events}
 

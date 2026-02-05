@@ -9,8 +9,8 @@ level: Beginner, Intermediate
 hide: yes
 hidefromtoc: yes
 keywords: journey, orchestration, getting started, onboarding, capabilities
+exl-id: 96b1d619-986d-493d-a73b-d7c63b92cca8
 ---
-
 # Journey Orchestration - Complete guide{#journey-orchestration-guide}
 
 Journeys in Adobe Journey Optimizer empower you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
@@ -246,4 +246,3 @@ Discover the components of a journey and understand the basics of building a jou
 * **[Troubleshooting](troubleshooting.md)** - Common journey issues and solutions
 * **[Journey Tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Learn journey building through hands-on video tutorials
 * **[Journey guardrails & limitations](../start/guardrails.md)** - Check guardrails and limitations when using [!DNL Adobe Journey Optimizer]
-

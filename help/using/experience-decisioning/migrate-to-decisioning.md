@@ -5,7 +5,7 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-
+exl-id: aedd7845-3d8d-457a-a7f3-03897846b241
 ---
 # Benefits of migrating to Decisioning {#migrate-to-decisioning}
 
@@ -97,4 +97,3 @@ For complete API documentation, including authentication, endpoints, request/res
 * [Get started with Decisioning](gs-experience-decisioning.md)
 * [Decisioning guardrails and limitations](decisioning-guardrails.md)
 * [Decisioning FAQ](decisioning-faq.md)
-

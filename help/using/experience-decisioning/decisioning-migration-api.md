@@ -5,8 +5,8 @@ feature: Decisioning
 topic: Integrations
 role: Developer
 level: Experienced
+exl-id: 3ec084ca-af9e-4b5e-b66f-ec390328a9d6
 ---
-
 # Decisioning Migration API {#decisioning-migration-api}
 
 The Decisioning Migration Service API enables you to migrate Decision management objects from one sandbox to another. The migration process runs as asynchronous workflows that include dependency analysis, execution, and optional rollback capabilities.

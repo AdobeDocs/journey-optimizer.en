@@ -7,6 +7,7 @@ role: User
 level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
+exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
 ---
 # Use decision policies in messages {#create-decision}
 

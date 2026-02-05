@@ -6,6 +6,7 @@ description: Essential terms and concepts in Adobe Journey Optimizer
 feature: Get Started
 role: Admin, Developer, User
 level: Beginner
+exl-id: 14e72376-87ad-4fae-bf8c-f347109d7903
 ---
 # Key Terminology {#key-terminology}
 
@@ -75,4 +76,3 @@ This reference guide defines the essential terms you'll encounter when using Ado
 * [Understanding how Journey Optimizer works](understanding-ajo.md)
 * [Get started with the user interface](user-interface.md)
 * [Choose your role and learning path](quick-start.md)
-

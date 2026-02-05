@@ -5,7 +5,7 @@ feature: API, Decisioning
 topic: Integrations
 role: Developer
 level: Experienced
-exl-id: 7a4b5d4e-9c1d-4f3a-b8e9-1d5f6e7a8c3a
+exl-id: 78ed06a3-7787-4aab-8373-df7eb40c1727
 version: Journey Orchestration
 ---
 # Decisioning API developer guide {#decisioning-api-developer-guide}

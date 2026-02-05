@@ -6,8 +6,8 @@ topic: Integrations
 role: User
 level: Experienced
 version: Journey Orchestration
+exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
 ---
-
 # Create decision policies {#create-decision}
 
 >[!CONTEXTUALHELP]

@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Artificial Intelligence
 role: User
 level: Beginner
+exl-id: 9f395b3d-8414-4e88-b849-6d9af9640b32
 ---
 # Generate full content with AI Assistant {#generative-full-content}
 

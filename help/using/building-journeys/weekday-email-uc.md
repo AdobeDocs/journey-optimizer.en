@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: journey, use case, weekdays, condition, email, scheduling
 version: Journey Orchestration
+exl-id: 2f313e59-ee50-473c-9346-8859889346ec
 ---
 # Send emails only on weekdays {#send-emails-only-on-weekdays}
 

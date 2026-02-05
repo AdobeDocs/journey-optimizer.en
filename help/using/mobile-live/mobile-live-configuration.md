@@ -8,6 +8,7 @@ role: Admin
 level: Intermediate
 hide: yes
 hidefromtoc: yes
+exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
 ---
 # Get started with Live activity configuration {#mobile-live-config}
 

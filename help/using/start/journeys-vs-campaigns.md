@@ -9,8 +9,8 @@ level: Beginner
 keywords: journey, campaign, orchestrated, comparison, choose, decision, workflow, real-time, batch, orchestration, multi-step, scheduled, API-triggered, event-driven
 hide: yes
 hidefromtoc: yes
+exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
 ---
-
 # Journeys vs Campaigns: Choose the right approach {#journeys-vs-campaigns}
 
 Adobe Journey Optimizer offers three powerful approaches to reach and engage your customers. Understanding when to use each is key to building effective marketing experiences.
@@ -274,4 +274,3 @@ Ready to start building? Explore the detailed documentation for your chosen appr
 * [Campaign types comparison](../campaigns/get-started-with-campaigns.md#campaign-types)
 * [Journey FAQ](../building-journeys/journey-faq.md)
 * [Orchestrated Campaigns FAQ](../orchestrated/orchestrated-campaigns-faq.md)
-

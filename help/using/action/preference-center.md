@@ -8,7 +8,7 @@ topic: Administration
 role: Data Engineer, Data Architect, Admin
 level: Experienced
 keywords: policies, governance, platform, consent, healthcare shield
-
+exl-id: a3e68015-c8f8-4b01-8171-f39d70b7e59d
 ---
 # Manage your customers' preferences {#preference-center}
 

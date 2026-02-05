@@ -9,6 +9,7 @@ role: User
 level: Beginner
 badge: label="Limited availability" type="Informative"
 keywords: email, template, image, HTML, AI, design, converter
+exl-id: d13467b7-2f3c-4707-a7e0-9b46cb6cafb1
 ---
 # Convert images to HTML templates with the image to HTML converter {#image-to-html}
 
@@ -226,4 +227,3 @@ Yes! The image to HTML converter is ideal for migrating from other email marketi
 * [Get started with email design](get-started-email-design.md)
 * [Import your email content](existing-content.md)
 * [Design content from scratch](content-from-scratch.md)
-

@@ -4,6 +4,7 @@ product: journey optimizer
 title: Adobe Journey Optimizer release cycle
 feature: Release Notes
 description: Understanding Adobe Journey Optimizer Release Cycle
+exl-id: 344ae3cf-923c-4f0e-b3bc-0313993243c8
 ---
 # Journey Optimizer release cycle {#releases}
 

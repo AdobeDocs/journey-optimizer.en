@@ -7,6 +7,7 @@ role: Developer
 level: Experienced
 keywords: conversion, functions, expression, journey, type, cast
 version: Journey Orchestration
+exl-id: f1267c9e-200c-43ae-8b98-3c5951a2f2d7
 ---
 # Conversion functions {#conversion-functions}
 
@@ -424,4 +425,3 @@ Returns the string representation of the given dateOnly field (XDM Date field), 
 Returns "PT1.52S".
 
 +++
-

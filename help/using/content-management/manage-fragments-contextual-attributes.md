@@ -9,6 +9,7 @@ role: User
 level: Intermediate, Experienced
 hide: yes
 hidefromtoc: yes
+exl-id: a274656e-2570-4a9c-b72b-4e8e920b7462
 ---
 # Add contextual attributes to published fragments {#adding-contextual-attributes}
 
@@ -75,4 +76,3 @@ To add contextual attributes to a published fragment, follow the steps below.
 * [Edit a fragment](manage-fragments.md#edit-fragments)
 * [API-triggered campaigns](../campaigns/api-triggered-campaigns.md)
 * [Personalization syntax](../personalization/personalization-syntax.md)
-
