@@ -111,7 +111,7 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
 <tr style="border: 0;">
   <td>
     <a href="access-loyalty-challenges.md">
-    <!--<img alt="Access" src="../assets/do-not-localize/learn-more-button.svg">-->
+      <img alt="Create" src="assets/do-not-localize/icon-access.png">
     </a>
     <div>
     <a href="access-loyalty-challenges.md"><strong>Access & manage challenges and tasks</strong></a>
@@ -122,7 +122,7 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
   </td>
   <td>
     <a href="create-challenges.md">
-      <!--<img alt="Create" src="../assets/do-not-localize/start-button.svg">-->
+      <img alt="Create" src="assets/do-not-localize/icon-challenge.png">
     </a>
     <div>
     <a href="create-challenges.md"><strong>Create challenges</strong></a>
@@ -133,7 +133,7 @@ Ensure the target audience you need exists in Adobe Experience Platform before c
   </td>
   <td>
     <a href="create-tasks.md">
-    <!--<img alt="Tasks" src="../assets/do-not-localize/start-button.svg">-->
+    <<img alt="Tasks" src="assets/do-not-localize/icon-task.png">
     </a>
     <div>
     <a href="create-tasks.md"><strong>Create tasks</strong></a>
