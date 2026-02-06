@@ -15,9 +15,9 @@ Once you’ve added a decision policy to your content, you can use attributes fr
 
 >[!CAUTION]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **SMS** and **Push notification** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **SMS**, and **Push notification** channels.
 >
->Decisioning for the Email channel is available in Limited Availability. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
+>Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
 ## Insert the decision policy code {#insert}
 
