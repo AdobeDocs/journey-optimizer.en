@@ -19,11 +19,11 @@ version: Journey Orchestration
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into a wide range of inbound surfaces through the [code-based experience channel](../code-based/get-started-code-based.md), accessible within [!DNL Adobe Journey Optimizer] campaigns.
+These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), email, SMS, and push notifications.
 
 >[!IMPORTANT]
 >
->Decisioning decision policies are available for use in code-based experience and email campaigns only.
+>Decision policies are available to all customers for the **Code-based Experience**, **Push notification**, and **SMS** channels. Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
 ➡️ [Discover this feature in video](#video)
 
@@ -79,7 +79,7 @@ The main steps to work with Decisioning are as follows:
 
     ➡️ [Learn how to create selection strategies in the user interface](selection-strategies.md) in the user interface (and in the [API documentation](api-reference/selection-strategies/create.md))
 
-1. **Create a decision policy and embed it into your code-based or email journey/campaign**: Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
+1. **Create a decision policy and embed it into your journey or campaign** (code-based experience, email, SMS, or push): Decision policies combine multiple selection strategies to determine the eligible decision items to display to the intended audience. 
     
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
