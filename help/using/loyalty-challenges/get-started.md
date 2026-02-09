@@ -59,8 +59,6 @@ You can create three types of challenge experiences:
 
 Creating and launching a loyalty challenge follows this workflow:
 
-1. **Set up data ingestion** - Configure Experience Platform source connectors (such as the [Capillary connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty)) to ingest loyalty event data that tracks customer actions and progress. This data powers challenge tracking and task completion.
-
 1. **Create a challenge** - Define the basic challenge properties, including name, type (Standard, Streak, or Sequential), and date range.
 
 1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend), quantities, product filters, and rewards.
@@ -79,21 +77,28 @@ For detailed step-by-step instructions, see [Create challenges](create-challenge
 
 Before using Loyalty Challenges, ensure you have:
 
-+++Data ingestion setup
-
-Loyalty Challenges rely on data ingested through Experience Platform source connectors to track customer progress and task completion.
-
-Before starting, configure a supported source connector. Currently, the Capillary connector is available. Additional connectors are planned for future releases. [Learn about loyalty source connectors](https://experienceleague.adobe.com/en/docs/experience-platform/sources/home#loyalty).
-
-+++
-
 +++Required permissions
 
-To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer. Required permissions include:
+To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer and Adobe Experience Platform.
 
-* TBD
-* TBD
-* TBD
+**Journey Optimizer:**
+
+* `journeys.read`
+* `journeys.write`
+* `journeys.delete`
+* `journeys.publish`
+* `journeys_events.read`
+* `journeys_events.write`
+* `journeys_events.delete`
+* `journeys_report.read`
+* `messages.read`
+* `messages_report.read`
+
+**Adobe Experience Platform:**
+
+* `segments.read`
+* `profiles.read`
+* `identity_namespace.read`
 
 Contact your administrator if you cannot access the feature or need additional permissions.
 
