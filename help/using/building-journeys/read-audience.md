@@ -52,9 +52,9 @@ The steps to configure the Read Audience activity are as follows.
 
    >[!NOTE]
    >
-    >In addition, you can target [!DNL Adobe Experience Platform] audiences created using [audience compositions](../audience/get-started-audience-orchestration.md).
-    >You can also target audiences [uploaded from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
-    >[Learn more about how to generate and target audiences in Journey Optimizer](../audience/about-audiences.md).
+   >In addition, you can target [!DNL Adobe Experience Platform] audiences created using [audience compositions](../audience/get-started-audience-orchestration.md).
+   >You can also target audiences [uploaded from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
+   >[Learn more about how to generate and target audiences in Journey Optimizer](../audience/about-audiences.md).
 
     Note that you can customize the columns displayed in the list and sort them.
 
