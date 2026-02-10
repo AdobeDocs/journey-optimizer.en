@@ -9,6 +9,7 @@ role: Developer
 level: Intermediate
 keywords: expression, editor
 mini-toc-levels: 1
+badge: label="Limited Availability" type="Informative"
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 ---
 # Use Adobe Experience Platform data {#aep-data}
@@ -19,6 +20,10 @@ exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 >abstract="Enabling a dataset for lookup allows you to leverage its data within Journey Optimizer personalization, Decisioning and journey orchestration capabilities."
 
 [!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] data with personalization, Decisioning, and journey orchestration capabilities. To do this, record-based datasets needed for lookup personalization must first be enabled for the lookup service as described below.
+
+>[!NOTE]
+>
+>The data lookup capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
 Learn more on how to access and work with datasets in this section : [Get started with datasets](../data/get-started-datasets.md)
 
