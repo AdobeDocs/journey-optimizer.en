@@ -11,7 +11,7 @@ exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
 ---
 # Use decision policies in messages {#create-decision}
 
-Once you’ve added a decision policy to your content, you can use attributes from returned decision items for personalization. To do so, first insert the decision policy code into your content.
+Once you've added a decision policy to your content, you can use attributes from returned decision items for personalization. To do so, first insert the decision policy code into your content.
 
 >[!CAUTION]
 >
@@ -33,7 +33,7 @@ Once you’ve added a decision policy to your content, you can use attributes fr
 
 >[!NOTE]
 >
->For Code-based experiences, if your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn how to leverage fragments](../experience-decisioning/fragments-decision-policies.md)
+>For code-based experiences, if your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn how to leverage fragments](fragments-decision-policies.md)
 
 >[!TAB Email]
 
@@ -45,7 +45,7 @@ Once you’ve added a decision policy to your content, you can use attributes fr
 
    >[!NOTE]
    >
-   >If the insertion option doesn’t appear, a decision policy might already be configured for the parent component.
+   >If the insertion option doesn't appear, a decision policy might already be configured for the parent component.
 
 3. If no placement has been assigned yet to the component, select one from the list and click **[!UICONTROL Assign]**.  
 
@@ -81,7 +81,7 @@ The decision policy code is added. You can now use attributes from the returned 
 
 ## Personalize with decision item attributes {#attributes}
 
-After you’ve added the code for a decision policy in your content, all attributes from the returned decision items become available for personalization. [Learn how to work with personalization](../personalization/personalize.md).
+After you've added the code for a decision policy in your content, all attributes from the returned decision items become available for personalization. [Learn how to work with personalization](../personalization/personalize.md).
 
 Attributes are stored in the "Offers" [catalog schema](catalogs.md). They display in the following folders from the personalization editor:
 * **Custom attributes**: `_\<imsOrg\>` folder 
@@ -129,7 +129,7 @@ For code-based experiences, as soon as your developer makes an API or SDK call t
 
 >[!NOTE]
 >
->You currently can’t simulate decision-based content for [Code-based experience](../code-based/create-code-based.md) campaigns or journeys. A workaround is available [here](../code-based/code-based-decisioning-implementations.md).
+>You currently can't simulate decision-based content for [Code-based experience](../code-based/create-code-based.md) campaigns or journeys. A workaround is available [here](../code-based/code-based-decisioning-implementations.md).
 
 ## Use reporting dashboards
 

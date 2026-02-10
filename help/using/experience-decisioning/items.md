@@ -46,9 +46,9 @@ Start by defining the decision item's standard and custom attributes :
 
     >[!AVAILABILITY]
     >
-    >This capability is currently only available for the Code-based experience channel.
+    >This capability is currently only available for the Code-based experience channel and for a set of organizations (Limited Availability).
 
-    In the **[!UICONTROL Fragments]** section, select the published fragments you want to use and assign them a reference key. You can then leverage these fragments in you decision policies. [Learn how](use-decision-policy.md#fragments)
+    In the **[!UICONTROL Fragments]** section, select the published fragments you want to use and assign them a reference key. You can then leverage these fragments in you decision policies. [Learn how](fragments-decision-policies.md)
 
     ![](assets/item-fragments.png){width=70%}
 
