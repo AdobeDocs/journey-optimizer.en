@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## February 2026 {#february-2026}
 
+* A new exclusion reason has been added to the exclusions list: **UnsubscribeLinkNotValid** (error code 050081). This exclusion is generated when the List-Unsubscribe mailTo subject length is greater than the RFC limit of 998 characters. [Read more](../reports/exclusion-list.md)
+
 * The formatDate helper function documentation has been enhanced with a note that the function requires a date-time field type (not a string) and with multiple examples: formatting a date-time field, converting a string to date first, full date with day name, dynamic date from system time, and day-of-week format including lowercase output. [Read more](../personalization/functions/dates.md#format-date)
 
 * The text version email documentation has been enhanced with comprehensive use case guidance, including decision criteria for when to use custom plain text versus auto-sync, practical examples with real-world scenarios, and an FAQ section with common questions. [Read more](../email/text-version-email.md#when-to-use)
