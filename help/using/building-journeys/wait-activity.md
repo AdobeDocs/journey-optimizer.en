@@ -32,6 +32,8 @@ You can set two types of **Wait** activity:
 
 ## Recommendations {#wait-recommendations}
 
+Use these recommendations to keep waits predictable and safe.
+
 ### Multiple Wait activities {#multiple-wait-activities}
 
 When using multiple **Wait** activities in a journey, be aware that the [global timeout](journey-properties.md#global_timeout) for journeys is 91 days, meaning that profiles are always drop out of the journey maximum 91 days after they entered it. Learn more on [this page](journey-properties.md#global_timeout).
@@ -51,6 +53,8 @@ In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to def
 If you want to show an [in-app message](../in-app/create-in-app.md) shortly after sending a [push notification](../../rp_landing_pages/push-landing-page.md), use a **Wait** activity to allow the in-app message payload time to propagate. Typically a 5–15 minute wait is recommended, but exact times can vary depending on payload complexity and personalization needs.
 
 ## Configuration {#wait-configuration}
+
+Configure wait duration and timing here.
 
 ### Duration wait {#duration}
 

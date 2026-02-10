@@ -14,7 +14,7 @@ version: Journey Orchestration
 >
 >Need more details? [Read out the FAQ](#faq-ee).
 
-This page outlines common patterns and scalable approaches to help you make the most of Experience Events in Adobe Journey Optimizer. These use cases are designed to help you solve frequent challenges such as managing opt-outs, controlling message frequency, personalizing content based on user behavior, and reacting to real-time signals.
+This page outlines common patterns and scalable approaches to help you make the most of Experience Events in [!DNL Adobe Journey Optimizer]. These use cases are designed to help you solve frequent challenges such as managing opt-outs, controlling message frequency, personalizing content based on user behavior, and reacting to real-time signals.
 
 By leveraging these strategies, you can turn behavioral data into meaningful actions—suppressing, qualifying, or excluding profiles based on the events they trigger or the attributes they carry. Whether you're building logic for purchase thresholds, abandonment triggers, or bounce handling, these examples offer practical guidance you can adapt to your needs.
 
@@ -33,7 +33,7 @@ Learn more:
 
 ## Bounce-based suppression
 
-To exclude profiles that have experienced email bounces, leverage Adobe Journey Optimizer's automatic suppression list for bounced addresses. This built-in mechanism ensures that invalid or unreachable emails are excluded from future sends without requiring custom logic. 
+To exclude profiles that have experienced email bounces, leverage [!DNL Adobe Journey Optimizer]'s automatic suppression list for bounced addresses. This built-in mechanism ensures that invalid or unreachable emails are excluded from future sends without requiring custom logic. 
 
 Learn more:
 
@@ -46,9 +46,9 @@ To suppress profiles that have demonstrated certain behaviors, use batch audienc
 
 Learn more:
 
-* Adobe Experience Platform [Segment builder - Events](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segment builder - Events](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
 
@@ -65,9 +65,9 @@ To prevent sending messages to profiles who have received any communications wit
 
 Learn more using audiences:
 
-* Adobe Experience Platform [Segment builder - Events](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segment builder - Events](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
 
@@ -87,9 +87,9 @@ To include or exclude profiles based on whether they received a specific message
 
 Learn more:
 
-* Adobe Experience Platform [Segment builder - Events](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segment builder - Events](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events){target="_blank"}
 
-* Adobe Experience Platform [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
+* [!DNL Adobe Experience Platform] [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
 * [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
 
@@ -99,8 +99,8 @@ Learn more:
 
 To personalize communications based on the latest cart or browse events across multiple cart types or product views:
 
-* If you have access to [Adobe Experience Platform Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview){target="_blank"}, configure automated queries to extract the required data from the event, manipulate it to fit the use case, and write it back to a profile-enabled dataset for activation.
-* If the abandonment data can be modeled on the profile with scalar attributes, consider using Computed attributes to capture the latest information and then reference these attributes in the journey to construct the communication. [Learn more in Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
+* If you have access to [[!DNL Adobe Experience Platform] Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview){target="_blank"}, configure automated queries to extract the required data from the event, manipulate it to fit the use case, and write it back to a profile-enabled dataset for activation.
+* If the abandonment data can be modeled on the profile with scalar attributes, consider using Computed attributes to capture the latest information and then reference these attributes in the journey to construct the communication. [Learn more in [!DNL Adobe Experience Platform] documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 
 ## Behavior-based journey exit 
@@ -117,7 +117,7 @@ To trigger journeys based on purchases and suppress if value is above/below a th
 
 Learn more:
 
-* Adobe Experience Platform [Computed attributes overview](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
+* [!DNL Adobe Experience Platform] [Computed attributes overview](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 
 
@@ -125,7 +125,7 @@ Learn more:
 
 You will find below Frequently Asked Questions about Experience event lookup in journeys.
 
-Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++What specific capabilities are impacted? 
 

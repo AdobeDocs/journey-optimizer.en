@@ -14,7 +14,7 @@ exl-id: 0c894dc1-76b6-4b33-baf8-eaf6686f7d38
 ---
 # Journey types and selection guide {#journey-types-selection}
 
-Adobe Journey Optimizer supports four journey types, each designed for different entry mechanisms and business scenarios. This guide helps you understand the differences and choose the right type for your use case.
+[!DNL Adobe Journey Optimizer] supports four journey types, each designed for different entry mechanisms and business scenarios. This guide helps you understand the differences and choose the right type for your use case.
 
 ## Journey types overview {#journey-types}
 
@@ -34,7 +34,7 @@ Adobe Journey Optimizer supports four journey types, each designed for different
 
 **When to use:** Scheduled campaigns to audience segments
 
-**Read Audience journeys** start with an Adobe Experience Platform audience and send messages in batch to all profiles simultaneously. This journey type is ideal for scheduled, large-scale communications.
+**Read Audience journeys** start with an [!DNL Adobe Experience Platform] audience and send messages in batch to all profiles simultaneously. This journey type is ideal for scheduled, large-scale communications.
 
 **Perfect for:** Monthly newsletters, promotional campaigns to target segments, product announcements, and seasonal marketing campaigns.
 
@@ -116,7 +116,7 @@ Use this table to quickly compare journey types and choose the right one for you
 | **Use when** | Immediate response to individual actions needed | Reaching large audience segments on schedule | Responding to customer status changes | Business events affect multiple customers |
 | **Examples** | Order confirmation, password reset | Monthly newsletter, seasonal campaign | VIP upgrade, inactivity alert | Low stock alert, flash sale, price drop |
 | **Re-entrance** | Configurable (allow multiple entries per profile) | Each profile enters once per execution | Configurable per qualification event | Multiple profiles can be affected by same event |
-| **Data requirements** | Event schema with trigger data | Adobe Experience Platform audience | Streaming or batch audience | Business event schema |
+| **Data requirements** | Event schema with trigger data | [!DNL Adobe Experience Platform] audience | Streaming or batch audience | Business event schema |
 
 ## Feature compatibility by journey type {#feature-compatibility}
 

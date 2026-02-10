@@ -158,7 +158,7 @@ Instead of using the built-in message capabilities, you can use custom actions t
 
 * If you are using a third-party system to send your messages, you can create a custom action. [Learn more](../action/action.md)
 
-* If you are working with Adobe Campaign, refer to these sections:
+* If you are working with [!DNL Adobe Campaign], refer to these sections:
 
    * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
    * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)

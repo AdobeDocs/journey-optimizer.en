@@ -196,7 +196,7 @@ When you resume this journey:
 
 ## Troubleshoot profile discards in paused journeys {#discards-troubleshoot}
 
-You can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened.
+You can use the [[!DNL Adobe Experience Platform] Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened.
 
 * For discards happening before the profile enters the journey, use the following code:
 

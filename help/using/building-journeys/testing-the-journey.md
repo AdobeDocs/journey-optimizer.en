@@ -28,10 +28,12 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 ## Important notes {#important_notes}
 
+Review these notes before running tests in your journey.
+
 ### General limitations
 
 * **Test profiles only** - Only individuals flagged as "test profiles" in the Real-time Customer Profile Service can enter a journey in test mode. [Learn how to create test profiles](../audience/creating-test-profiles.md). 
-* **Namespace requirement** - Test mode is available only for draft journeys that use a namespace. Test mode needs to check if a person entering the journey is a test profile or not and thus must be able to reach Adobe Experience Platform.
+* **Namespace requirement** - Test mode is available only for draft journeys that use a namespace. Test mode needs to check if a person entering the journey is a test profile or not and thus must be able to reach [!DNL Adobe Experience Platform].
 * **Profile limit** - A maximum of 100 test profiles can enter a journey during a single test session.  
 * **Event triggering** - Events can only be fired from the interface. Events cannot be fired from external systems using an API.
 * **Custom upload audiences** - Journey test mode does not support [custom upload audience](../audience/custom-upload.md) attribute enrichment.
@@ -98,7 +100,7 @@ Use the **[!UICONTROL Trigger an event]** button to configure an event that will
 
 ### Prerequisites {#trigger-events-prerequisites}
 
-As a prerequisite, you must know which profiles are flagged as test profiles in Adobe Experience Platform. Indeed, the test mode only allows these profiles in the journey.
+As a prerequisite, you must know which profiles are flagged as test profiles in [!DNL Adobe Experience Platform]. Indeed, the test mode only allows these profiles in the journey.
 
 The event must contain an ID. The expected ID depends on the event configuration. It can be an ECID or an email address for example. The value of this key needs to be added in the **Profile Identifier** field.  
 
@@ -184,5 +186,5 @@ Here are the different statuses of an individual's journey:
 
 When an event is triggered using the test mode, a dataset is automatically generated with the name of the source.
 
-The test mode automatically creates an Experience Event and sends it to Adobe Experience Platform. The name of the source for this experience Event is "Journey Orchestration Test Events".
+The test mode automatically creates an Experience Event and sends it to [!DNL Adobe Experience Platform]. The name of the source for this experience Event is "Journey Orchestration Test Events".
 

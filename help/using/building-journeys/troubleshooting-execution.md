@@ -25,7 +25,7 @@ The starting point of a journey is always an event. You can perform tests using 
 
 You can check if the API call you send through these tools is sent correctly or not. If you get an error back, it means that your call has an issue. Check the payload again, the header (and especially the organization ID) and the destination URL. You can ask your administrator what is the right URL to hit.
 
-Events are not pushed directly from the source to journeys. Indeed, journeys rely on Adobe Experience Platform's streaming ingestion APIs. As a result, in case of event related issues, you can refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} for Streaming ingestion APIs troubleshooting.
+Events are not pushed directly from the source to journeys. Indeed, journeys rely on [!DNL Adobe Experience Platform]'s streaming ingestion APIs. As a result, in case of event related issues, you can refer to [[!DNL Adobe Experience Platform] documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} for Streaming ingestion APIs troubleshooting.
 
 If your journey fails to enable test mode with error `ERR_MODEL_RULES_16`, ensure the event used includes an [identity namespace](../audience/get-started-identity.md) when using a channel action.
 
@@ -67,7 +67,7 @@ If test profiles enter the journey but do not advance past the initial step, che
     * Ensure the current time falls within the journey's active date window
     * If necessary, update the journey properties to adjust the start date
 
-* **Test profile configuration** - Confirm that the profile is correctly flagged as a test profile in Adobe Experience Platform. See [how to create test profiles](../audience/creating-test-profiles.md) for more information.
+* **Test profile configuration** - Confirm that the profile is correctly flagged as a test profile in [!DNL Adobe Experience Platform]. See [how to create test profiles](../audience/creating-test-profiles.md) for more information.
 
 * **Identity namespace** - Ensure the identity namespace used in the event configuration matches the namespace of your test profile.
 
@@ -109,6 +109,8 @@ In case of a message sent via a custom action, the only thing that can be checke
 
 ## Understanding duplicate entries in Journey Step Events {#duplicate-step-events}
 
+Use this section to understand why duplicate rows can appear in Journey Step Events.
+
 ### Why do I see multiple entries with the same journey instance, profile, node, and request IDs?
 
 When querying Journey Step Events data, you may occasionally observe what appears to be duplicate log entries for the same journey execution. These entries share identical values for:
@@ -122,7 +124,7 @@ However, these entries have **different `_id` values**, which is the key indicat
 
 ### What causes this behavior?
 
-This occurs due to backend auto-scaling operations (also called "rebalancing") in Adobe Journey Optimizer's microservices architecture. During periods of high load or system optimization:
+This occurs due to backend auto-scaling operations (also called "rebalancing") in [!DNL Adobe Journey Optimizer]'s microservices architecture. During periods of high load or system optimization:
 
 1. A journey step event begins processing and is logged to the Journey Step Events dataset
 2. An auto-scaling operation redistributes workload across service instances
@@ -132,7 +134,7 @@ This is an expected system behavior and is **working as designed**.
 
 ### Is there any impact on journey execution or message delivery?
 
-**No.** The impact is limited to logging only. Adobe Journey Optimizer has built-in deduplication mechanisms at the message execution layer that ensure:
+**No.** The impact is limited to logging only. [!DNL Adobe Journey Optimizer] has built-in deduplication mechanisms at the message execution layer that ensure:
 
 * Only one message (email, SMS, push notification, etc.) is sent to each profile
 * Actions are executed only once

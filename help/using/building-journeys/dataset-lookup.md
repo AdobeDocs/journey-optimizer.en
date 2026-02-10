@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use Adobe Experience Platform data in journeys
-description: Learn how to use the Dataset Lookup Activity in Adobe Journey Optimizer to enrich customer journeys with external data from Adobe Experience Platform.
+title: Use [!DNL Adobe Experience Platform] data in journeys
+description: Learn how to use the Dataset Lookup Activity in [!DNL Adobe Journey Optimizer] to enrich customer journeys with external data from [!DNL Adobe Experience Platform].
 feature: Journeys, Activities
 topic: Content Management
 role: User
@@ -16,9 +16,9 @@ exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dataset_lookup"
 >title="Dataset lookup activity"
->abstract="The **[!UICONTROL Dataset lookup]** activity allows you to to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
+>abstract="The **[!UICONTROL Dataset lookup]** activity allows you to to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
 
-The **[!UICONTROL Dataset lookup]** activity allows you to to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
+The **[!UICONTROL Dataset lookup]** activity allows you to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
 
 Key Benefits:
 
@@ -32,9 +32,11 @@ Key Benefits:
 
 ## Must-read {#must-read}
 
+Review these requirements before you configure dataset lookups.
+
 ### Dataset enablement
 
-The dataset must be enabled for lookup in Adobe Experience Platform. Detailed information are available in this section: [Use Adobe Experience Platform data](../data/lookup-aep-data.md). 
+The dataset must be enabled for lookup in [!DNL Adobe Experience Platform]. Detailed information are available in this section: [Use [!DNL Adobe Experience Platform] data](../data/lookup-aep-data.md). 
 
 ### Limits & restrictions
 
@@ -58,7 +60,7 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
 
 1. Unfold the **[!UICONTROL Orchestration]** category and drop a **[!UICONTROL Dataset lookup]** activity into your canvas.
 
-   ![Adobe Experience Platform dataset lookup activity in journey](assets/aep-data-activity.png)
+   ![[!DNL Adobe Experience Platform] dataset lookup activity in journey](assets/aep-data-activity.png)
 
 1. Add a label and description.
 

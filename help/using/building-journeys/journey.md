@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with journeys
-description: Get started with journeys - Learn about journey types, workflow, capabilities, and best practices for creating personalized customer experiences in Adobe Journey Optimizer
+description: Get started with journeys - Learn about journey types, workflow, capabilities, and best practices for creating personalized customer experiences in [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started, Overview
 role: User
 level: Beginner, Intermediate
@@ -13,7 +13,7 @@ version: Journey Orchestration
 
 # Get started with journeys{#jo-general-principle}
 
-Adobe Journey Optimizer empowers you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
+[!DNL Adobe Journey Optimizer] empowers you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
 
 This guide provides a clear roadmap to help you understand journey fundamentals, choose the right journey type for your use case, and confidently design journeys that deliver meaningful, timely customer experiences.
 
@@ -33,7 +33,7 @@ Use [!DNL Journey Optimizer] to:
 
 ### Journeys vs Campaigns: When to use each {#journeys-vs-campaigns-intro}
 
-Adobe Journey Optimizer offers three approaches to reach customers: **Journeys** (1:1 real-time orchestration), **Campaigns** (simple batch or API-triggered delivery), and **Orchestrated Campaigns** (batch canvas workflows with multi-entity data).
+[!DNL Adobe Journey Optimizer] offers three approaches to reach customers: **Journeys** (1:1 real-time orchestration), **Campaigns** (simple batch or API-triggered delivery), and **Orchestrated Campaigns** (batch canvas workflows with multi-entity data).
 
 **Quick decision:**
 
@@ -46,7 +46,7 @@ Adobe Journey Optimizer offers three approaches to reach customers: **Journeys**
 
 ## Choose your journey type {#journey-types}
 
-Adobe Journey Optimizer supports four journey types, each designed for different entry mechanisms and business scenarios:
+[!DNL Adobe Journey Optimizer] supports four journey types, each designed for different entry mechanisms and business scenarios:
 
 * **Unitary journeys**: Real-time, event-triggered experiences (order confirmations, welcome emails)
 * **Read Audience journeys**: Scheduled batch communications to audience segments (newsletters, promotional campaigns)
@@ -101,7 +101,7 @@ Branch your journey based on profile attributes, audience membership, or real-ti
 
 **Leverage data**
 
-Use contextual data from events, Adobe Experience Platform, or third-party API services.
+Use contextual data from events, [!DNL Adobe Experience Platform], or third-party API services.
 
 [Work with data sources](../datasource/about-data-sources.md)
 :::
@@ -264,7 +264,7 @@ Orchestrate seamless experiences across email, push, SMS, and web channels in a 
 
 Explore the complete library of journey use cases with step-by-step implementations.
 
-[Browse all →](jo-use-cases.md) | [Use case library →](/help/rp_landing_pages/journey-use-cases-landing-page.md)
+[Browse all →](jo-use-cases.md) | [Use case library →](../../rp_landing_pages/journey-use-cases-landing-page.md)
 :::
 
 ::::
@@ -282,7 +282,7 @@ As you get more comfortable with journey building, explore these powerful capabi
 
 Build dynamic conditions and personalization using the expression editor for data manipulation and complex logic.
 
-[Learn about expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
+[Learn about expressions](../../rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
 :::
 
 :::
@@ -337,7 +337,7 @@ Limit message throughput to manage sending reputation and avoid overwhelming sys
 
 ::::
 
-[View all journey capabilities →](/help/rp_landing_pages/manage-journey-landing-page.md)
+[View all journey capabilities →](../../rp_landing_pages/manage-journey-landing-page.md)
 
 ## Learn by watching {#video}
 
@@ -351,7 +351,7 @@ Get a visual introduction to journey components and learn the basics of building
 
 +++ What is the difference between a journey and a campaign?
 
-Adobe Journey Optimizer offers three approaches:
+[!DNL Adobe Journey Optimizer] offers three approaches:
 
 * **Journeys**: 1:1 real-time orchestration where each profile travels through steps at their own pace. Best for behavior-driven, multi-step experiences with conditional logic (e.g., onboarding, cart abandonment).
 
@@ -384,11 +384,13 @@ You can edit limited elements (name, message content), but structural changes re
 
 ## Need help? {#help}
 
+Use these links to find guidance, troubleshooting, and resources.
+
 ### Quick links for common tasks
 
 * **[Create your first journey](journey-gs.md)** - Step-by-step guide for beginners
 * **[Journey FAQ](journey-faq.md)** - Common questions answered
-* **[Troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)** - Diagnose and fix issues
+* **[Troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)** - Diagnose and fix issues
 * **[Error codes reference](error-codes-reference.md)** - Understand error messages
 * **[Guardrails & limitations](../start/guardrails.md)** - Technical boundaries and best practices
 
@@ -398,8 +400,8 @@ Set up **[journey alerts](../reports/alerts.md)** to receive real-time notificat
 
 ### Additional resources
 
-* **[Journey management hub](/help/rp_landing_pages/manage-journey-landing-page.md)** - Tools for filtering, optimization, and profile management
-* **[Journey activities reference](/help/rp_landing_pages/about-journey-building-landing-page.md)** - Complete guide to all activity types
+* **[Journey management hub](../../rp_landing_pages/manage-journey-landing-page.md)** - Tools for filtering, optimization, and profile management
+* **[Journey activities reference](../../rp_landing_pages/about-journey-building-landing-page.md)** - Complete guide to all activity types
 * **[Troubleshooting execution issues](troubleshooting-execution.md)** - Debug journey execution problems
 * **[Troubleshooting inbound activities](troubleshooting-inbound.md)** - Fix entry and qualification issues
 

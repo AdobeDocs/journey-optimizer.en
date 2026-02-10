@@ -21,7 +21,7 @@ Profile entrance management depends on the type of journey.
 
 ## Types of journeys {#types-of-journeys}
 
-With Adobe Journey Optimizer, you can create the following types of journeys:
+With [!DNL Adobe Journey Optimizer], you can create the following types of journeys:
 
 * **Unitary event** journeys: These journeys start with a Unitary event. When the event is received, the associated profile enters the journey. [Read more](#entry-unitary)
 
@@ -43,13 +43,13 @@ Journey processing rate is impacted by multiple factors that determine how profi
 
 How profiles enter journeys and their expected rate depends on the first activity being used:
 
-* **Read audience** journeys (batch scenario, where you target an audience of profiles and trigger a journey for that full audience): the maximum is 20,000 TPS (transactions per second), which is the quota available at a **sandbox level**. If you have multiple journeys running at the same time on that sandbox, 20,000 TPS may not be achievable. Consider this maximum as the best case scenario.
+* **Read audience** journeys (batch scenario, where you target an audience of profiles and trigger a journey for that full audience): the maximum is 20,000 TPS (transactions per second). This is the quota available at a **sandbox level**. If multiple journeys run at the same time in that sandbox, 20,000 TPS may not be achievable. Consider this maximum a best-case scenario.
 
 * **Audience qualification** journeys (unitary scenario, where you want to trigger a journey when a profile qualifies or disqualifies for a streaming audience): the maximum is 5,000 TPS. Note that this is a shared limit with journeys starting with events and is also shared across journeys at an **organization level**.
 
 * **Unitary event** journeys (unitary scenario, where you want to trigger a journey when an event is emitted from a profile): same as above, both sharing the same 5,000 TPS limit. More information regarding journey event throughput is available in [this section](../event/about-events.md#event-thoughput).
 
-* **Business event** journeys (which is essentially a unitary to batch scenario as a business event is always followed with a Read audience): business events also count towards the 5,000 TPS quota but the Read audience activity right after will have the same limit as journeys starting with a Read audience (20,000 TPS).
+* **Business event** journeys (a unitary-to-batch scenario because a business event is always followed by a Read audience): business events count toward the 5,000 TPS quota. The Read audience activity that follows has the same limit as journeys starting with a Read audience (20,000 TPS).
 
 ### Events and audience qualifications inside journeys {#events-inside-journeys}
 
@@ -61,7 +61,7 @@ After entrance, you can use **Unitary event** or **Audience qualification** acti
 
 ### Action activities {#action-activities-impact}
 
-Finally, **action** activities (native channels like Email, SMS, Push, etc., outbound or inbound, Custom actions, Jumps sending profiles to other journeys, Update profiles sending data to the Unified Profile Service, etc.) can be impacted by the profile load coming from journeys but can also impact the processing rate. For example, a custom action targeting an external endpoint with a high response time will slow the journey processing rate. 
+Finally, **action** activities can be impacted by the profile load coming from journeys and can also affect processing rate. These include native channels like Email, SMS, and Push, plus custom actions, jumps to other journeys, and update profile activities. For example, a custom action targeting an external endpoint with a high response time will slow the journey processing rate.
 
 For custom actions, the default capping is 300,000 calls per minute, which can be changed with a custom capping policy. Learn more about custom action capping in [this section](../configuration/external-systems.md#capping).
 

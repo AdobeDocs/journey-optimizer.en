@@ -74,7 +74,7 @@ You are now ready to leverage the output of this content decision activity in yo
 
 Updates to consent policies take up to 48 hours to take effect. If a decision policy references an attribute tied to a recently updated consent policy, the changes will not be applied immediately.
 
-Similarly, if new profile attributes that are subject to a consent policy are added to a decision policy, they will be usable, but the consent policy associated with them will not be enforced until the delay has passed.
+Similarly, new profile attributes subject to a consent policy can be added to a decision policy and used. The related consent policy will not be enforced until the delay has passed.
 
 Consent policies are only available to organizations with the Adobe Healthcare Shield or Privacy and Security Shield add-on.
 
@@ -108,7 +108,7 @@ To leverage the output of a content decision activity, you can add a condition t
 
    >[!NOTE]
    >
-   >Any restricted label defined on an attribute, either in a journey experience event used in a decision rule (as context data), or in the [offers schema](../experience-decisioning/catalogs.md#access-catalog-schema), does result in policy violation for DULE or consent. Learn more on data governance policies in [this section](../action/action-privacy.md)
+   >Any restricted label defined on an attribute can result in a policy violation for DULE or consent. This applies to journey experience events used in a decision rule and to the [offers schema](../experience-decisioning/catalogs.md#access-catalog-schema). Learn more about data governance policies in [this section](../action/action-privacy.md).
 
 1. To check if any offer has been returned for the profiles who enter the journey, use the [listSize](functions/list-functions.md#listSize) function with the following syntax: `listSize(@decision{ContentdecisionName.items})>0`
 

@@ -50,7 +50,7 @@ To do so, in the **[!UICONTROL Journey Properties]** pane, select a time zone.
 >title="Use profile time zone"
 >abstract="Check the box to use the real-time profile time zone in wait and condition activities. If a time zone has been defined for a profile, it will be retrieved and used by the journey. If not, the time zone will be the one defined in the timezone field above."
 
-If the entry event of the journey has a namespace, meaning that the journey can reach the Real-time Customer Profile service of Adobe Experience Platform, you may want to use the time zone defined at the profile level. To do so, in **Properties**, check **Use Profile time zone in waits and conditions**. This option is not checked by default.
+If the entry event of the journey has a namespace, meaning that the journey can reach the Real-time Customer Profile service of [!DNL Adobe Experience Platform], you may want to use the time zone defined at the profile level. To do so, in **Properties**, check **Use Profile time zone in waits and conditions**. This option is not checked by default.
 
 If a time zone has been defined for a profile, it will be retrieved and used by the journey. If it hasn't, the time zone used will be the one defined in the timezone field.
 

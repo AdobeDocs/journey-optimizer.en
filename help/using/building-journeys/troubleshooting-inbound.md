@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Troubleshooting guide for inbound actions in journeys
-description: Learn how to debug and resolve issues related to inbound actions in journeys Adobe Journey Optimizer
+description: Learn how to debug and resolve issues related to inbound actions in journeys [!DNL Adobe Journey Optimizer]
 feature: Journeys, Monitoring
 topic: Content Management
 role: User
@@ -27,7 +27,7 @@ This guide provides a step-by-step process to debug issues related to inbound ac
 
 Before you can start troubleshooting, ensure the following:
 
-1. Set up an **Assurance** session. Learn how in the [Adobe Experience Platform Assurance documentation](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}.
+1. Set up an **Assurance** session. Learn how in the [[!DNL Adobe Experience Platform] Assurance documentation](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"}.
 
 1. Navigate to the journey containing the inbound action to retrieve the journey name and version ID.
 
@@ -211,7 +211,7 @@ Go through the same debugging steps as for [Scenario 1](#debugging-steps) to che
 ## Reference Section {#reference-section}
 
 - [Assurance Setup Guide](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance)
-- [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/home.html)
+- [[!DNL Adobe Experience Platform] Documentation](https://experienceleague.adobe.com/docs/experience-platform/home.html)
 - [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html)
 
 -->

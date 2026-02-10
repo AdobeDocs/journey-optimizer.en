@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Use an audience in a journey
-description: Learn how to configure and use the Read Audience activity to make individuals from Adobe Experience Platform audiences enter journeys.
+description: Learn how to configure and use the Read Audience activity to make individuals from [!DNL Adobe Experience Platform] audiences enter journeys.
 feature: Journeys, Activities, Audiences
 topic: Content Management
 role: User
@@ -12,6 +12,8 @@ exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 version: Journey Orchestration
 ---
 # Use an audience in a journey {#segment-trigger-activity}
+
+Use the Read Audience activity to start journeys with defined audiences.
 
 ## About the Read Audience activity {#about-segment-trigger-actvitiy}
 
@@ -50,11 +52,13 @@ The steps to configure the Read Audience activity are as follows.
 
    >[!NOTE]
    >
-   >In addition, you can also target [!DNL Adobe Experience Platform] audiences created using [audience compositions](../audience/get-started-audience-orchestration.md) or [uploaded from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}. [Learn more about how to generate and target audiences in Journey Optimizer](../audience/about-audiences.md).
+    >In addition, you can target [!DNL Adobe Experience Platform] audiences created using [audience compositions](../audience/get-started-audience-orchestration.md).
+    >You can also target audiences [uploaded from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}.
+    >[Learn more about how to generate and target audiences in Journey Optimizer](../audience/about-audiences.md).
 
     Note that you can customize the columns displayed in the list and sort them.
 
-    ![Audience selection interface showing available Adobe Experience Platform audiences](assets/read-segment-selection.png)
+    ![Audience selection interface showing available [!DNL Adobe Experience Platform] audiences](assets/read-segment-selection.png)
 
     Once the audience is added, the **[!UICONTROL Copy]** button allows you to copy its name and ID:
 
@@ -180,7 +184,7 @@ To minimize the risk of missing profiles:
 
 >[!CAUTION]
 >
->If you are targeting a [custom upload audience](../audience/about-audiences.md#about-segments) in your journey, profiles are only retrieved on the first recurrence if this option is enabled in a recurring journey, as these audiences are fixed.
+>If you are targeting a [custom upload audience](../audience/about-audiences.md#about-segments) in your journey, profiles are only retrieved on the first recurrence when this option is enabled in a recurring journey. These audiences are fixed.
 
 +++
 
@@ -188,7 +192,7 @@ To minimize the risk of missing profiles:
 
 This option allows you to make all profiles still present in the journey automatically exit it on the next execution.
 
-For example, if you have a 2 days wait in a daily recurrent journey, by activating this option, profiles will always be moved on the next journey execution (so the day after), whether they are in the next run audience or not.
+For example, if you have a 2-day wait in a daily recurring journey, activating this option moves profiles to the next journey execution. This happens the day after, whether they are in the next run audience or not.
 
 If the lifespan of your profiles in this journey may be longer than the recurrence frequency, do not activate this option to make sure that profiles can finish their journey.
 
@@ -291,7 +295,7 @@ If you notice discrepancies between estimated audience counts, qualified profile
 
 * **Batch segmentation job completion**: For batch audiences, ensure that the daily batch segmentation job has completed and snapshots are updated before the journey runs. Batch audiences become ready for use approximately **2 hours** after segmentation job completion. Learn more about [audience evaluation methods](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#evaluate-segments){target="_blank"}.
 
-* **Data ingestion timing**: Verify that profile data ingestion has fully completed before the journey execution. If profiles were ingested shortly before the journey starts, they may not be reflected in the audience yet. Learn more about [data ingestion in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
+* **Data ingestion timing**: Verify that profile data ingestion has fully completed before the journey execution. If profiles were ingested shortly before the journey starts, they may not be reflected in the audience yet. Learn more about [data ingestion in [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 * **Use "Trigger after batch audience evaluation" option**: For daily scheduled journeys using batch audiences, consider enabling the **[!UICONTROL Trigger after batch audience evaluation]** option. This ensures the journey waits for fresh audience data (up to 6 hours) before executing. [Learn more about scheduling](#schedule)
 
@@ -299,9 +303,9 @@ If you notice discrepancies between estimated audience counts, qualified profile
 
 ### Data validation and monitoring
 
-* **Check segmentation job status**: Monitor batch segmentation job completion times in Adobe Experience Platform's [monitoring dashboard](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html){target="_blank"} to verify when audience data is ready.
+* **Check segmentation job status**: Monitor batch segmentation job completion times in the [!DNL Adobe Experience Platform] [monitoring dashboard](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html){target="_blank"}. Use it to verify when audience data is ready.
 
-* **Verify merge policies**: Ensure that the merge policy configured for your audience matches the expected behavior for combining profile data from different sources. Learn more about [merge policies in Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html){target="_blank"}.
+* **Verify merge policies**: Ensure that the merge policy configured for your audience matches the expected behavior for combining profile data from different sources. Learn more about [merge policies in [!DNL Adobe Experience Platform]](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html){target="_blank"}.
 
 * **Review segment definitions**: Confirm that segment definitions are configured correctly and include all expected qualification criteria. Learn more about [building audiences](../audience/creating-a-segment-definition.md). Pay special attention to:
     * Time-based conditions that may exclude profiles based on event timestamps
@@ -326,7 +330,7 @@ If count mismatches persist after following these steps, contact Adobe support w
 
 Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
 
-Unsuccessful **Read Audience** triggers are captured and displayed in the **Alerts**. The **Read Audience alert** warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max). [Learn more](../reports/alerts.md#alert-read-audiences)
+Unsuccessful **Read Audience** triggers are captured and displayed in **Alerts**. The **Read Audience alert** warns you if a **Read Audience** activity has not processed any profile 10 minutes after the scheduled execution time. This failure can be caused by technical issues or an empty audience. If the failure is due to technical issues, retries can still occur depending on the issue type. For example, if export job creation fails, we retry every 10 minutes for up to 1 hour. [Learn more](../reports/alerts.md#alert-read-audiences)
 
 ## Related topics
 
