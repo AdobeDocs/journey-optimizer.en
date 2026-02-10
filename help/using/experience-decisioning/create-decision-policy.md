@@ -316,6 +316,6 @@ For emails, you need to define a placement for the component associated to the d
 
 ## Next steps {#next-steps}
 
-Now that you understand how to create a decision policy, you’re ready to use it into [!DNL Journey Optimizer] channels to deliver offers.
+Now that you understand how to create a decision policy, you're ready to use it into [!DNL Journey Optimizer] channels to deliver offers.
 
 ➡️ [Learn how to use decision policies in messages](../experience-decisioning/use-decision-policy.md)
