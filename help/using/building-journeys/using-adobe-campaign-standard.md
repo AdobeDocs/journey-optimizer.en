@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: "[!DNL Adobe Campaign] Standard actions"
-description: "Learn about [!DNL Adobe Campaign] Standard actions"
+title: [!DNL Adobe Campaign] Standard actions
+description: Learn about [!DNL Adobe Campaign] Standard actions
 feature: Journeys, Actions, Custom Actions
 topic: Administration
 role: User

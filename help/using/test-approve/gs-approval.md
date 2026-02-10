@@ -10,7 +10,7 @@ exl-id: 92d1439e-5cac-4e7d-85f8-ebf432e9ef7c
 
 ## Get started with approval policies {#gs}
 
-Journey Optimizer allows you to set up an approval process that allows marketing teams to ensure campaigns and journeys are reviewed and signed off by the appropriate stakeholders before they go live.
+[!DNL Journey Optimizer] allows you to set up an approval process that enables marketing teams to ensure campaigns and journeys are reviewed and signed off by the appropriate stakeholders before they go live.
 
 Approval policies introduce a structured workflow directly within the user interface, eliminating the need for external mediums such as email or task management tools, and ensuring all approvals are centrally managed and tracked.
 
@@ -20,9 +20,9 @@ In addition, this feature provides enhanced control on the publication of your j
 
 Before starting, make sure the permissions below have been configured.
 
-To access approve and publish journeys and campaigns, users need to be granted the **Approve & publish Campaigns** and **Approve & publish Journeys** permissions. [Learn more](../administration/permissions.md)
+To approve and publish journeys and campaigns, users need to be granted the **Approve & publish Campaigns** and **Approve & publish Journeys** permissions. [Learn more](../administration/permissions.md)
 
-+++  Learn how to assign Approval related permissions
++++  Learn how to assign approval-related permissions
 
 1. In the **Permissions** product, go to the **Roles** tab and select the desired **Role**.
     
@@ -30,11 +30,11 @@ To access approve and publish journeys and campaigns, users need to be granted t
 
 1. Add the **Campaigns** resource, then select **Approve & publish Campaigns** from the drop-down menu.
 
-    ![](assets/permissions_approval.png){zoomable="yes"}
+    ![Assign approve and publish Campaigns permission](assets/permissions_approval.png){zoomable="yes"}
 
 1. Add the **Journeys** resource, then select **Approve & publish Journeys** from the drop-down menu.
 
-    ![](assets/permissions_approval_2.png){zoomable="yes"}
+    ![Assign approve and publish Journeys permission](assets/permissions_approval_2.png){zoomable="yes"}
 
 1. Click **Save** to apply changes.
 
@@ -44,7 +44,7 @@ Any users already assigned to this role will have their permissions automaticall
 
 1. Enter the user's name, email address, or choose from the list, then click **Save**.
 
-1. If the user was not previously created, refer to the [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+1. If the user was not previously created, refer to [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
 
 The user will receive an email with instructions to access your instance.
 
@@ -54,15 +54,15 @@ The user will receive an email with instructions to access your instance.
 
 The global approval process is as follows:
 
-![](assets/approval-process.png){zoomable="yes"}
+![Approval process flow](assets/approval-process.png){zoomable="yes"}
 
 1. **Approval policies setup**
 
-    An admin users creates an approval policy, defining conditions under which the policy should apply to journeys or campaigns. For example, you can create an approval policy that requires that all scheduled campaigns created by a given user should be approved before being activated. [Learn how to create approval policies](approval-policies.md)
+    An admin user creates an approval policy, defining conditions under which the policy should apply to journeys or campaigns. For example, you can create an approval policy that requires all scheduled campaigns created by a given user to be approved before activation. [Learn how to create approval policies](approval-policies.md)
 
 1. **Campaign/journey submission for approval**
 
-    The campaign/journey creators build a journey or campaign and submits it for approval. The campaign/journey enters an "In Review" state, during which no edits can be made unless the request is canceled. [Learn how to request approval](request-approval.md)
+    The campaign/journey creators build a journey or campaign and submit it for approval. The campaign/journey enters an "In Review" state, during which no edits can be made unless the request is canceled. [Learn how to request approval](request-approval.md)
 
     >[!NOTE]
     >
@@ -76,7 +76,7 @@ The global approval process is as follows:
 
 You can monitor all the approval and change requests that have been submitted for a given journey or campaign. To do this, click the **[!UICONTROL Show Audit Trail]** icon located in the upper-right section of the journey canvas or the campaign review screen.
 
-![](assets/monitor-requests.png)
+![Approval requests audit trail](assets/monitor-requests.png)
 
 ## Additional resources
 

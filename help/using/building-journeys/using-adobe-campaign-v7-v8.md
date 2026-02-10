@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: "[!DNL Adobe Campaign] v7/v8 actions"
-description: "Learn about [!DNL Adobe Campaign] v7/v8 actions"
+title: [!DNL Adobe Campaign] v7/v8 actions
+description: Learn about [!DNL Adobe Campaign] v7/v8 actions
 feature: Journeys, Actions, Custom Actions
 topic: Administration
 role: User
