@@ -16,7 +16,7 @@ To learn more about AEM Content Fragments, refer to [Working with Content Fragme
 
 >[!AVAILABILITY]
 >
->For Healthcare customers, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Enhanced Security add-on offerings.
+>For Healthcare customers, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Extended Security for Healthcare add-on offerings.
 
 ## Limitations {#limitations}
 
