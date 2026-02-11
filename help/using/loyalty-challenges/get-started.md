@@ -23,6 +23,7 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * [Create challenges](create-challenges.md)
 * [Create tasks](create-tasks.md)
+* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
 >[!ENDSHADEBOX]
 
@@ -151,3 +152,7 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
   </td>
 </tr>
 </table>
+
+## API reference {#api-reference}
+
+To manage loyalty challenges programmatically, use the [Loyalty Challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}. The API lets you create, update, and manage challenges and tasks via REST endpoints.

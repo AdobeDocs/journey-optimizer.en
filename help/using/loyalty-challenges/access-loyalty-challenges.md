@@ -23,6 +23,7 @@ exl-id: 8907c18e-4623-4743-a76b-333f34e13baf
 * **Access & manage challenges and tasks** ◀︎ **You are here**
 * [Create challenges](create-challenges.md)
 * [Create tasks](create-tasks.md)
+* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
 
 >[!ENDSHADEBOX]
 
