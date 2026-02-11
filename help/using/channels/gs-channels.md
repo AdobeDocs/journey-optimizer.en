@@ -132,7 +132,7 @@ The table below shows the availability of each channel across different journeys
 | SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Push notification    | ✅ | ✅ | ✅ | ✅ | ✅ |
 | In-app               | ✅ | ✅ | — | — | — |
-| Direct mail          | ✅ | ✅ | — | — | — |
+| Direct mail          | ✅ | ✅ | — | — | ✅ |
 | Web                  | ✅ | ✅ | — | — | — |
 | Code-based exp.      | ✅ | ✅ | — | — | — |
 | Content cards        | ✅ | ✅ | — | — | — |

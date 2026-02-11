@@ -7,18 +7,13 @@ feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Limited availability" type="Informative"
 keywords: activity, decisioning, content decision, decision policy, canvas, journey
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
 version: Journey Orchestration
 ---
 # Content decision activity {#content-decision}
 
->[!AVAILABILITY]
->
->This capability is only available for a set of organizations (Limited Availability), and will be rolled out globally in a future release.
-
-[!DNL Journey Optimizer] allows you to include offers in your journeys through the dedicated **content decision** activity in the journey canvas. You can then add other activities (such as [custom actions](../action/about-custom-action-configuration.md)) to your journeys to target your audiences with these personalized offers.
+[!DNL Journey Optimizer] allows you to include offers in your journeys through the dedicated **Content decision** activity in the journey canvas. You can then add other activities (such as [custom actions](../action/about-custom-action-configuration.md)) to your journeys to target your audiences with these personalized offers.
 
 >[!NOTE]
 >
@@ -72,11 +67,11 @@ You are now ready to leverage the output of this content decision activity in yo
 
 **Consent policies** 
 
-Updates to consent policies take up to 48 hours to take effect. If a decision policy references an attribute tied to a recently updated consent policy, the changes will not be applied immediately.
+* Updates to consent policies take up to 48 hours to take effect. If a decision policy references an attribute tied to a recently updated consent policy, the changes will not be applied immediately.
 
-Similarly, new profile attributes subject to a consent policy can be added to a decision policy and used. The related consent policy will not be enforced until the delay has passed.
+* Similarly, if new profile attributes that are subject to a consent policy are added to a decision policy, they will be usable, but the consent policy associated with them will not be enforced until the delay has passed.
 
-Consent policies are only available to organizations with the Adobe Healthcare Shield or Privacy and Security Shield add-on.
+* Consent policies are only available to organizations with the Adobe Healthcare Shield or Privacy and Security Shield add-on.
 
 ## Use the output of the content decision activity {#use-content-decision-output}
 
@@ -146,7 +141,7 @@ To leverage the output of a content decision activity, you can add a custom acti
    >
    >The output of a content decision node is only available in the **[!UICONTROL Advanced mode]**.
 
-1. Browse through the [offers catalog schema](../experience-decisioning/catalogs.md#access-catalog-schema) using the`items` array. For example, use the `itemName` of the first offer retrieved and the `itemName` of the second offer retrieved.
+1. Browse through the [offers catalog schema](../experience-decisioning/catalogs.md#access-catalog-schema) using the `items` array. For example, use the `itemName` of the first offer retrieved and the `itemName` of the second offer retrieved.
 
    ![Custom action's request parameters including the decision policy](assets/journey-content-decision-custom-action-param-ex.png)
 
@@ -175,3 +170,60 @@ Once the journey is [activated](publish-journey.md):
 1. Only profiles for which at least one offer is retrieved continue the journey (through the 'Eligible profiles' path).
 
 1. If the condition is met, the corresponding offers are sent to an external system through the custom action.
+
+## Decisioning data in step events {#decisioning-step-events}
+
+When a content decision activity is executed in a journey, decisioning data is made available in the journey step events. This data provides detailed information about the items retrieved and how the decisions were made.
+
+For each content decision activity, the step event includes decisioning data at the top level (such as **exdRequestID** and **propositionEventType**), and an array of **propositions**. Each proposition has an **id**, **scopeDetails** (including decision provider, correlation ID, and decision policy), and an **items** array. Each item contains:
+
+* **id**: the unique identifier of the item
+* **name**: the name of the item
+* **score**: the score assigned to the item
+* **itemSelection**: data related to how the decision was made and how the item was retrieved, including:
+    * **selectionDetail**: information about the selection strategy used
+    * **rankingDetail**: information about the ranking process (strategy, algorithm, step, traffic type)
+
+**Example of decisioning data in a step event:**
+
+```json
+"decisioning": {
+  "exdRequestID": "8079d2bb-a8b2-4ecf-b9e7-32923dd6ad4e",
+  "propositions": [
+    {
+      "id": "f475cb21-0842-44da-b0eb-70766ba53464",
+      "scopeDetails": {
+        "decisionProvider": "EXD",
+        "correlationID": "6940d1c46208f3c00dae2ab94f3cd31c601461b47bf6d29ff8af0d0806a9c204",
+        "decisionPolicy": {
+          "id": "b913f724-3747-447b-a51e-8a2f9178f0db"
+        }
+      },
+      "items": [
+        {
+          "id": "dps:14c7468e7f6271ff8023748a1146d11f05f77b7fc1368081:1bebbf0b7e0f1374",
+          "name": "My item name",
+          "score": 0.93,
+          "itemSelection": {
+            "selectionDetail": {
+              "strategyID": "dps:selection-strategy:1bebbfc9245cb35e",
+              "strategyName": "My selection strategy",
+              "selectionType": "selectionStrategy",
+              "version": "latest"
+            },
+            "rankingDetail": {
+              "strategyID": "4FyRZTmpjrbzuL7rX7gvmu",
+              "algorithmID": "RANDOM",
+              "step": "aiModel",
+              "trafficType": "random"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "propositionEventType": {
+    "decision": 1
+  }
+}
+```

@@ -201,7 +201,7 @@ Combines workflow complexity with batch campaign execution.
 | Web | ✅ | ✅ | ❌ | ❌ |
 | Code-based | ✅ | ✅ | ❌ | ❌ |
 | Content cards | ✅ | ✅ | ❌ | ❌ |
-| Direct mail | ✅ | ✅ | ❌ | ❌ |
+| Direct mail | ✅ | ✅ | ❌ | ✅ |
 
 ### Advanced capabilities
 
