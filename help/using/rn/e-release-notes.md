@@ -145,22 +145,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Use Adobe Experience Platform data in Decisioning</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Using <strong>Adobe Experience Platform data</strong> in Decisioning is now available for <strong>all channels</strong>. Previously, this capability was limited to email and to custom actions in journeys.</p>
-<p>This capability is now available to all environments (General Availability).</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Web Push notifications channel</strong><br/></th>
 </tr>
 </thead>
@@ -212,6 +196,8 @@ Improvements coming with this release are listed below.
   Availability date: February 9, 2026.
 
 * **Offer Ranking AI Model Observability** - Journey Optimizer now allows you to monitor the health, training status, and performance of your <strong>AI models</strong> in Decisioning so you can verify training success, troubleshoot failures, and understand impact on your outcomes. This capability is available for personalized optimization models only (not auto-optimization).
+
+* **Use Adobe Experience Platform data in Decisioning** - Using <strong>Adobe Experience Platform data</strong> in Decisioning is now available for <strong>all channels</strong>. Previously, this capability was limited to email and to custom actions in journeys.
 
 * **Experience Decisioning preview in the Code-based Experience channel** - You can now <strong>preview decision items</strong> when configuring Experience Decisioning with the <strong>Code-based Experience channel</strong>. Preview is available directly in the authoring interface before going live.
 
