@@ -156,7 +156,7 @@ You can create Orchestrated campaigns to send **emails**, **SMS**, **push notifi
 
 +++ Can multiple communications and different channels be launched within the same Orchestrated campaign?
 
-Yes, Orchestrated campaigns supports cross-channel orchestration. You can combine email, SMS, and push notification activities into a multi-step campaign canvas to create comprehensive customer experiences.
+Yes, Orchestrated campaigns supports cross-channel orchestration. You can combine email, SMS, push notification, and direct mail activities into a multi-step campaign canvas to create comprehensive customer experiences.
 
 **Learn more**
 
@@ -189,7 +189,7 @@ No, the content designer, including the Email Designer, is common across all Jou
 
 +++ How are the different channels connected in Orchestrated campaigns?
 
-The channel component & runtime are common to all Journey Optimizer campaigns, however, supported channels differ. Orchestrated campaigns support email, SMS, and push notifications.
+The channel component & runtime are common to all Journey Optimizer campaigns, however, supported channels differ. Orchestrated campaigns support email, SMS, push notifications, and direct mail.
 
 **Learn more**
 
@@ -201,7 +201,7 @@ The channel component & runtime are common to all Journey Optimizer campaigns, h
 
 +++ Can Orchestrated campaigns connect with outbound channels (web, inApp)?
 
-No, inbound channels like web and in-app are not supported in Orchestrated campaigns. Only outbound channels (email, SMS, and push notifications) are supported.
+No, inbound channels like web and in-app are not supported in Orchestrated campaigns. Only outbound channels (email, SMS, push notifications, and direct mail) are supported.
 
 **Learn more**
 
