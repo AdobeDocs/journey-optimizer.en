@@ -115,7 +115,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Journey Agent content generation</strong><br/></th>
+<th><strong>Journey Agent: Channel Content Create</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -145,6 +145,22 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Mobile Live Activities</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Live Activities</strong> provide real-time updates and interactive experiences within mobile apps, allowing users to stay informed about ongoing events or tasks directly on their device's screen. This feature enhances engagement by delivering live information, such as progress tracking, event updates, or interactive content, without requiring users to open the app.</p>
+<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Web Push notifications channel</strong><br/></th>
 </tr>
 </thead>
@@ -153,7 +169,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <td>
 <p>Adobe Journey Optimizer now supports <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both mobile and desktop browsers, enabling you to reach customers directly on their devices without requiring an app. This enhancement allows you to engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
 <p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: February 11, 2026</p>
+<p>Availability date: February 12, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -172,12 +188,6 @@ Improvements coming with this release are listed below.
 #### Campaigns
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into <strong>folders</strong> to improve navigation and management in the interface.
-
-#### Channels
-
-* **Mobile Live Activities** - <strong>Live Activities</strong> provide real-time updates and interactive experiences within mobile apps, allowing users to stay informed about ongoing events or tasks directly on their device's screen. This feature enhances engagement by delivering live information, such as progress tracking, event updates, or interactive content, without requiring users to open the app.
-
-  **Note**: Previously released in beta, this capability is now available to all environments (General Availability).
 
 #### Configuration
 
