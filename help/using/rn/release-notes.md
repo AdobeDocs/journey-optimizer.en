@@ -104,10 +104,13 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ### Improvements {#feb-26-01-updates-improv}
 
-<!--
-* **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to <strong>decision items</strong> which can be leveraged in code-based experience campaigns through decision policies.
+* **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach <strong>fragments</strong> to <strong>decision items</strong> which can be leveraged in code-based experience campaigns through decision policies. Previously released in Limited Availability, this improvement is now available to all environments (General Availability). [Read more](../experience-decisioning/fragments-decision-policies.md)
 
-  Availability date: February 11, 2026.-->
+  Availability date: February 12, 2026.
+
+* **JSON-type expression fragment validation** - JSON-type expression fragments are now syntactically validated when saved. Validation errors are treated as warnings and displayed as alerts after save. [Read more](../content-management/create-fragments.md#content)
+
+  Availability date: February 12, 2026.
 
 * **SMS Webhooks** - Webhooks are now supported across all SMS providers. You can configure each webhook based on its intended purpose, Inbound webhooks to capture incoming messages and Feedback webhooks to receive delivery receipts, status updates, and other message-related events. [Read more](../sms/sms-webhook.md)
 
