@@ -217,6 +217,8 @@ Improvements coming with this release are listed below.
 
   **Note**: This improvement is now available to all environments (General Availability).
 
+* **Experience event lookup retirement** - Starting April 1, 2026, experience event lookup in the journey condition expression editor will be retired for organizations that have not used experience event lookup in the last 90 days. This capability has already been unavailable for new customer organizations since July 8, 2025. For alternatives, see [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md).
+
 #### Orchestrated campaigns
 
 * **Test activity in orchestrated campaigns** - The <strong>Test activity</strong> is now available in orchestrated campaigns. This Flow control activity enables <strong>conditional branching</strong> with multiple output transitions based on specified conditions, so you can create dynamic campaign flows that adapt to different scenarios.

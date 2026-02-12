@@ -29,6 +29,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A note has been added to the URL tracking and List unsubscribe documentation to clarify that the order of URL tracking parameters appended to URLs is random and cannot be controlled. [Read more](../email/url-tracking.md)
 
+* The Experience event lookup documentation has been updated to clarify the April 1, 2026 retirement for organizations that have not used experience event lookup in the last 90 days, and to refine the FAQ for impacted organizations. [Read more](../building-journeys/exp-event-lookup.md)
+
 ## January 2026 {#january-2026}
 
 * The License usage dashboard documentation has been clarified with updated guidance about **Engageable Profiles**, including definition details and troubleshooting guidance. [Read more](../audience/license-usage.md#what-is-engageable-profile)
