@@ -47,24 +47,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Carbon copy (CC) for email</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now configure an optional CC (carbon copy) field in your email channel settings. Unlike BCC, CC recipients are visible to the primary recipient, enabling transparent communication and clearer ownership.</p>
-<p>This allows you to automatically copy the right stakeholder on each message—such as a relationship manager or account owner—while ensuring the customer knows who to contact for follow-up.</p>
-<p>The CC field supports personalization, so a single configuration can dynamically route copies based on profile data, making it scalable across multiple use cases without additional setup.</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14051">Link to DOCAC JIRA task</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Journey arbitration</strong><br/></th>
 </tr>
 </thead>
@@ -263,6 +245,10 @@ Improvements coming with this release are listed below.
 * **Integration of custom Firefly models and third-party image generation models** - Enable seamless integration of standard and custom Firefly models, along with approved third-party image models (e.g., NanoBanana), to provide greater flexibility, control, and brand alignment when generating images. This allows you to select the best model for each use case: standard Firefly for general needs, custom Firefly for on-brand generation, or approved third-party models for specialized or experimental scenarios.
 
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13918">Link to DOCAC JIRA task</a>
+
+* **Firefly 3P model support for third-party image generation** - You can now use third-party image generation models (such as OpenAI and Gemini) alongside Firefly for creating images in Journey Optimizer. This gives you more flexibility to choose the right model for each use case and integrate approved external providers through the Firefly 3P gateway.
+
+  <a href="https://jira.corp.adobe.com/browse/DOCAC-14145">Link to DOCAC JIRA task</a>
 
 #### Campaigns
 
