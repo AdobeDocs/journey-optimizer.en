@@ -246,10 +246,6 @@ Improvements coming with this release are listed below.
 
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13918">Link to DOCAC JIRA task</a>
 
-* **Firefly 3P model support for third-party image generation** - You can now use <strong>third-party image generation models</strong> (such as OpenAI and Gemini) alongside Firefly for creating images in Journey Optimizer. This gives you more flexibility to choose the right model for each use case and integrate approved external providers through the <strong>Firefly 3P gateway</strong>.
-
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-14145">Link to DOCAC JIRA task</a>
-
 #### Campaigns
 
 * **Folders for journeys and campaigns** - You can now organize your <strong>journeys</strong> and <strong>campaigns</strong> into <strong>folders</strong> to improve navigation and management in the interface.
