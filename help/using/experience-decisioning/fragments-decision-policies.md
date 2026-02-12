@@ -13,7 +13,7 @@ If your decision policy contains decision items including fragments, you can lev
 
 >[!AVAILABILITY]
 >
->This capability is currently only available for the **Code-based experience** channel and for a set of organizations (Limited Availability). For more information, contact your Adobe representative.
+>This capability is currently only available for the **Code-based experience** channel.
 
 For example, let's say you want to display different contents for several mobile device models. Make sure you added fragments corresponding to those devices to the decision item that you are using in the decision policy. [Learn how](items.md#attributes).
 
@@ -87,6 +87,6 @@ Let's say you want to use the *sport* variable in your fragment.
 
 * The validation of the fragment content happens only during the fragment creation and publication.
 
-* In case of JSON fragments, the validity of the JSON object is not ensured. Make sure that the expression fragment content is a valid JSON so that it can be used in decision items.
+* For JSON-type expression fragments, the content is syntactically validated upon saving the fragment. Validation errors are displayed as alerts.
 
 At runtime, the campaign content (including fragment content from decision items) is validated. In case of a validation failure, the campaign will not get rendered.
