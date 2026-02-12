@@ -122,23 +122,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Web Push notifications channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer now supports <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both mobile and desktop browsers, enabling you to reach customers directly on their devices without requiring an app.</p>
-<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: February 12, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Action activity in journeys</strong><br/></th>
 </tr>
 </thead>
@@ -153,6 +136,23 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <li>The ability to add both experimentation and multilingual options to any action.</li>
 </ul>
 <p>This capability is now available to all environments (General Availability).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Web Push notifications channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now supports <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both mobile and desktop browsers, enabling you to reach customers directly on their devices without requiring an app.</p>
+<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
+<p>Availability date: February 12, 2026</p>
 </td>
 </tr>
 </tbody>
