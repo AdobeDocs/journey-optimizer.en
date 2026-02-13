@@ -19,7 +19,7 @@ As such, an important prerequisite for setting up events for [!DNL Journey Optim
 
 >[!CAUTION]
 >
->Starting July 8, 2025, new customer organizations cannot create expressions using experience event lookup in journey conditions. Starting April 1, 2026, organizations that have not used experience event lookup in the last 90 days will no longer have access to this capability. Alternative approaches and best practices are listed in [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md). If your event-triggered journey use case still requires experience event lookup and cannot be supported through any of the listed alternatives, please reach out to your Adobe representative and we will help you reach your goal.
+>Starting July 8, 2025, new customer organizations cannot create expressions using experience event attributes in journey conditions. Starting April 1, 2026, organizations that have not accessed experience events via journey expressions in the last 90 days will no longer have access to this capability. Alternative approaches and best practices are listed in [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md).
 >
 >Accessing context from the starting event of a journey is not impacted.
 
