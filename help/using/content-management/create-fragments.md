@@ -79,6 +79,10 @@ After you have configured the fragment's properties, the Email Designer or the p
 
     ![](assets/fragment-expression-editor.png)
 
+    >[!NOTE]
+    >
+    >JSON-type expression fragments are syntactically validated upon saving, with any errors shown as warning alerts.
+
 When your content is ready, click the **[!UICONTROL Save]** button.
 
 >[!NOTE]

@@ -64,8 +64,8 @@ For more information about sandbox management, refer to [Use and assign sandboxe
 
 Use the following base URLs depending on your environment:
 
-* **Production**: `https://platform.adobe.io`
-* **Staging**: `https://platform-stage.adobe.io`
+* **Production**: `https://decisioning-migration.adobe.io`
+* **Staging**: `https://decisioning-migration-stage.adobe.io`
 
 ### Authentication {#authentication}
 
@@ -73,7 +73,6 @@ All API requests require the following headers:
 
 * `Authorization: Bearer <IMS_ACCESS_TOKEN>`
 * `x-gw-ims-org-id: <IMS_ORG_ID>`
-* `x-api-key: <CLIENT_API_KEY>`
 * `Content-Type: application/json`
 
 For detailed instructions on setting up authentication, refer to the [Journey Optimizer authentication guide](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}.
@@ -85,7 +84,7 @@ Each API call creates or retrieves a workflow resource. Workflows are asynchrono
 A workflow has the following properties:
 
 * `id` - Unique workflow identifier (UUID)
-* `status` - Current workflow status: `New`, `Running`, `Completed`, `Failed`, or `Cancelled`
+* `status` - Current workflow status: `New`, `Running`, `Completed`, or `Failed`
 * `result` - Workflow output when completed (includes migration results and warnings)
 * `errors` - Structured error details when failed
 * `_etag` - Version identifier used for delete operations (service users only)
@@ -106,7 +105,7 @@ Use the following API call to create a dependency analysis workflow.
 **API format**
 
 ```http
-POST /migration/service/dependency
+POST /workflows/generate-dependencies
 ```
 
 **Sandbox-level dependency (recommended first)**
@@ -115,10 +114,9 @@ Start with a sandbox-level analysis to get a complete view of all dependencies:
 
 ```shell
 curl --request POST \
-  --url "https://platform.adobe.io/migration/service/dependency" \
+  --url "https://decisioning-migration.adobe.io/workflows/generate-dependencies" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>" \
   --header "Content-Type: application/json" \
   --data '{
     "imsOrgId": "<IMS_ORG_ID>",
@@ -143,24 +141,23 @@ Poll the dependency workflow to check when the analysis is complete.
 **API format**
 
 ```http
-GET /migration/service/dependency/{id}
+GET /workflows/generate-dependencies/{id}
 ```
 
 **Request**
 
 ```shell
 curl --request GET \
-  --url "https://platform.adobe.io/migration/service/dependency/<WORKFLOW_ID>" \
+  --url "https://decisioning-migration.adobe.io/workflows/generate-dependencies/<WORKFLOW_ID>" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
-  --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>"
+  --header "x-gw-ims-org-id: <IMS_ORG_ID>"
 ```
 
 When the `status` field shows `Completed`, the dependency analysis is ready. Use the workflow output to build your migration dependency mappings:
 
-* **profileAttributeDependency** - Maps source profile attributes to target profile attributes
-* **contextAttributeDependency** - Maps source context attributes to target context attributes  
-* **segmentsDependency** - Maps source segment keys to target segment identifiers (`{segmentNamespace, segmentId}`)
+* **profileAttributes** - Maps source profile attributes to target profile attributes
+* **contextAttributes** - Maps source context attributes to target context attributes
+* **segments** - Maps source segment keys to target segment identifiers (`{namespace, id}`)
 * **datasetName** - Specifies the target dataset name for the migration
 
 ### Step 2: Execute the migration {#execute-migration}
@@ -174,7 +171,7 @@ Use the dependency mappings from Step 1 to configure and execute your migration.
 **API format**
 
 ```http
-POST /migration/service/migrations
+POST /workflows/migration
 ```
 
 **Sandbox-level migration**
@@ -183,10 +180,9 @@ To migrate all decisioning objects from one sandbox to another:
 
 ```shell
 curl --request POST \
-  --url "https://platform.adobe.io/migration/service/migrations" \
+  --url "https://decisioning-migration.adobe.io/workflows/migration" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>" \
   --header "Content-Type: application/json" \
   --data '{
     "imsOrgId": "<IMS_ORG_ID>",
@@ -194,16 +190,16 @@ curl --request POST \
     "targetSandboxDetails": { "sandboxName": "<TARGET_SANDBOX_NAME>" },
     "createDataStream": true,
     "dependency": {
-      "profileAttributeDependency": {
+      "profileAttributes": {
         "sourceAttr1": "targetAttr1"
       },
-      "segmentsDependency": {
+      "segments": {
         "sourceSegmentKey1": {
-          "segmentNamespace": "<TARGET_SEGMENT_NAMESPACE>",
-          "segmentId": "<TARGET_SEGMENT_ID>"
+          "namespace": "<TARGET_SEGMENT_NAMESPACE>",
+          "id": "<TARGET_SEGMENT_ID>"
         }
       },
-      "contextAttributeDependency": {
+      "contextAttributes": {
         "sourceCtx1": "targetCtx1"
       },
       "datasetName": "<TARGET_DATASET_NAME>"
@@ -235,17 +231,16 @@ Poll the migration workflow to track its progress.
 **API format**
 
 ```http
-GET /migration/service/migrations/{id}
+GET /workflows/migration/{id}
 ```
 
 **Request**
 
 ```shell
 curl --request GET \
-  --url "https://platform.adobe.io/migration/service/migrations/<WORKFLOW_ID>" \
+  --url "https://decisioning-migration.adobe.io/workflows/migration/<WORKFLOW_ID>" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
-  --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>"
+  --header "x-gw-ims-org-id: <IMS_ORG_ID>"
 ```
 
 **Migration results**
@@ -295,20 +290,21 @@ Initiate a rollback by creating a rollback workflow that references the migratio
 **API format**
 
 ```http
-POST /migration/service/rollbacks/{migrationWorkflowId}
+POST /workflows/rollback
 ```
-
-Replace `{migrationWorkflowId}` with the ID of the migration workflow you want to roll back.
 
 **Request**
 
 ```shell
 curl --request POST \
-  --url "https://platform.adobe.io/migration/service/rollbacks/<MIGRATION_WORKFLOW_ID>" \
+  --url "https://decisioning-migration.adobe.io/workflows/rollback" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>"
+  --header "Content-Type: application/json" \
+  --data '{ "rollbackWorkflowId": "<MIGRATION_WORKFLOW_ID>" }'
 ```
+
+Replace `<MIGRATION_WORKFLOW_ID>` with the ID of the migration workflow you want to roll back.
 
 ### Monitor rollback status {#poll-rollback-status}
 
@@ -317,17 +313,16 @@ Poll the rollback workflow to track its progress.
 **API format**
 
 ```http
-GET /migration/service/rollbacks/{rollbackWorkflowId}
+GET /workflows/rollback/{rollbackWorkflowId}
 ```
 
 **Request**
 
 ```shell
 curl --request GET \
-  --url "https://platform.adobe.io/migration/service/rollbacks/<ROLLBACK_WORKFLOW_ID>" \
+  --url "https://decisioning-migration.adobe.io/workflows/rollback/<ROLLBACK_WORKFLOW_ID>" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
-  --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "x-api-key: <CLIENT_API_KEY>"
+  --header "x-gw-ims-org-id: <IMS_ORG_ID>"
 ```
 
 ## Handle concurrent workflows {#handle-concurrency}
@@ -357,9 +352,9 @@ Workflow resources can be deleted by service users only. Delete operations requi
 
 **Available delete operations:**
 
-* `DELETE /migration/service/dependency/{id}`
-* `DELETE /migration/service/migrations/{id}`
-* `DELETE /migration/service/rollbacks/{id}`
+* `DELETE /workflows/generate-dependencies/{id}`
+* `DELETE /workflows/migration/{id}`
+* `DELETE /workflows/rollback/{id}`
 
 >[!NOTE]
 >

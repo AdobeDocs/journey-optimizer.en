@@ -184,6 +184,7 @@ After creating and configuring the inbound settings for the Webhook, you now nee
 
 Once configured, you can leverage all out-of-the-box channel capabilities such as message authoring, personalization, link tracking, and reporting.
 
+<!--
 >[!TAB Twilio]
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL SMS Webhooks]** menu under **[!UICONTROL SMS settings]**, and click the **[!UICONTROL Create Webhook]** button.
@@ -227,7 +228,7 @@ Once configured, you can leverage all out-of-the-box channel capabilities such a
 After creating and configuring the inbound settings for the Webhook, you now need to create a [channel configuration](sms-configuration-surface.md) for SMS messages. 
 
 Once configured, you can leverage all out-of-the-box channel capabilities such as message authoring, personalization, link tracking, and reporting.
-
+-->
 
 >[!ENDTABS]
 
