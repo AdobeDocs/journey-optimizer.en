@@ -222,7 +222,7 @@ Improvements coming with this release are listed below.
 
 #### Configuration
 
-* **Experience event lookup retirement** - Starting April 1, 2026, <strong>experience event lookup</strong> in the journey condition expression editor will be retired for organizations that have not used experience event lookup in the last 90 days. This capability has already been unavailable for new customer organizations since July 8, 2025. For alternatives, see [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md).
+* **Experience event usage in journey expressions** - Starting April 1, 2026, the use of experience event attributes in journey expressions will no longer be supported for organizations that have not used this capability in the last 90 days. This capability has already been unavailable for new customer organizations since July 8, 2025. For alternatives, see [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md).
 
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14136">Link to DOCAC JIRA task</a>
 
