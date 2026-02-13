@@ -93,7 +93,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p><strong>Live Activities</strong> provide <strong>real-time updates</strong> and interactive experiences within mobile apps, allowing users to stay informed about ongoing events or tasks directly on their device's screen. This feature enhances engagement by delivering live information, such as progress tracking, event updates, or interactive content, without requiring users to open the app.</p>
-<p>Previously released in beta, this capability is now available to all environments (<strong>General Availability</strong>).</p>
+<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
 </td>
 </tr>
 </tbody>
@@ -131,7 +131,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Adobe Journey Optimizer now supports <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both mobile and desktop browsers, enabling you to reach customers directly on their devices without requiring an app. This enhancement allows you to engage users with timely, personalized messages in real time, leveraging the same <strong>authoring workflows</strong> and <strong>targeting capabilities</strong> already available for mobile push.</p>
-<p>Previously released in beta, this capability is now available to all environments (<strong>General Availability</strong>).</p>
+<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
 <p>Availability date: February 13, 2026</p>
 </td>
 </tr>
@@ -148,7 +148,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>A new <strong>Content decision activity</strong> is now available in the <strong>journey canvas</strong> for integrating <strong>personalized offers</strong> directly into your customer journeys. This activity enables you to deliver decision-based content and reference those offers throughout your journey—in conditions for creating eligibility-based branching, in custom actions for passing offer data to external systems, and in other activities for building fully personalized customer experiences.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (<strong>General Availability</strong>).</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><img src="assets/do-not-localize/content-decision.gif"/></p>
 <p>For more information, refer to the <a href="../building-journeys/content-decision.md">detailed documentation</a>.</p>
 <p>Availability date: February 11, 2026</p>
@@ -190,7 +190,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>Gain deeper insight into the health and performance of your <strong>custom action endpoints</strong> with a new <strong>monitoring dashboard</strong> and enriched <strong>journey step event data</strong>. Track successful calls, errors, throughput, response times, and queue wait times to quickly understand when, where, and why anomalies occur.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (<strong>General Availability</strong>).</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p>For more information, refer to the <a href="../action/reporting.md">detailed documentation</a>.</p>
 <p>Availability date: February 3, 2026</p>
 </td>
