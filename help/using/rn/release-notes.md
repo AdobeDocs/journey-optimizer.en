@@ -27,7 +27,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
-**Release date**: February 17, 2026
+**Release date**: February 17-18, 2026
 
 ### New capabilities {#feb-26-01-features}
 
