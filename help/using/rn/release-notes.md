@@ -83,6 +83,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -98,6 +99,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>

@@ -12,6 +12,7 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated at the end of each month in the [release notes](release-notes.md). 
 
+<!--
 ## February '26 pre-release notes {#feb-26-01-rn}
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
@@ -264,7 +265,7 @@ Improvements coming with this release are listed below.
 
   Availability date: February 2, 2026.
 
-
+-->
 <!--
 ## January '26 pre-release notes {#jan-26-01-rn}
 
