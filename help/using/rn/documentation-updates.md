@@ -15,19 +15,43 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## February 2026 {#february-2026}
 
+* The External systems integration page has been updated with links to custom data sources and custom actions, and clarifies that the egress proxy provides a static IP for outbound calls from **Custom actions** to your external systems. [Read more](../configuration/external-systems.md)
+
+* The Journey Dry run documentation has been clarified: the step event attributes `inDryRun` and `dryRunID` now document that they return `true`/instance ID when in Dry run mode and `null` for test or live journeys. Guidance for excluding Dry run step events in reporting queries has been updated accordingly. [Read more](../building-journeys/journey-dry-run.md)
+
+* **Web push** is now generally available. The push notification documentation has been restructured and updated accordingly (get started, design, send, create). [Read more](../push/get-started-push.md)
+
+* The Web push configuration page is now available in the documentation. [Read more](../push/push-configuration-web.md)
+
+* Documentation on using fragments in Decisioning has been updated: notes have been added in the Fragments and Decisioning sections, and the Fragments in decision policies page has been updated. [Read more](../experience-decisioning/fragments-decision-policies.md)
+
+* The SMS webhook documentation has been updated: Twilio webhook content has been removed. [Read more](../sms/sms-webhook.md)
+
+* The Decisioning migration API documentation has been updated. [Read more](../experience-decisioning/decisioning-migration-api.md)
+
+* The **Content Decision** activity is now generally available. The Content Decision activity page has been updated with a section on Decisioning data available in step events. [Read more](../building-journeys/content-decision.md)
+
+* Links to the loyalty challenge API documentation have been added to the Loyalty challenges section (get started, create challenges, create tasks, access loyalty challenges). [Read more](../loyalty-challenges/get-started.md)
+
+* The supported channels information in the campaign creation wizard documentation has been corrected. The Get started with channels and Orchestrated campaigns FAQ pages have been updated accordingly. [Read more](../campaigns/get-started-with-campaigns.md)
+
+* The permissions documentation has been corrected regarding **Journey Manage** and **Approve** permissions. [Read more](../administration/ootb-permissions.md)
+
+* The AEM (Adobe Experience Manager) integrations documentation has been updated with revised naming (AEM dynamic content and AEM fragments). [Read more](../integrations/aem-fragments.md)
+
 * A new exclusion reason has been added to the exclusions list: **UnsubscribeLinkNotValid** (error code 050081). This exclusion is generated when the List-Unsubscribe mailTo subject length is greater than the RFC limit of 998 characters. [Read more](../reports/exclusion-list.md)
 
 * The formatDate helper function documentation has been enhanced with a note that the function requires a date-time field type (not a string) and with multiple examples: formatting a date-time field, converting a string to date first, full date with day name, dynamic date from system time, and day-of-week format including lowercase output. [Read more](../personalization/functions/dates.md#format-date)
 
 * The text version email documentation has been enhanced with comprehensive use case guidance, including decision criteria for when to use custom plain text versus auto-sync, practical examples with real-world scenarios, and an FAQ section with common questions. [Read more](../email/text-version-email.md#when-to-use)
 
-* The Email Designer themes documentation has been updated with information about web fonts support limitations and the importance of fallback fonts. [Read more](../email/apply-email-themes.md#themes-guardrails)
-
 * A limitation has been added to the Execution Metadata helper documentation to clarify that metadata is not captured for profiles excluded from the action. [Read more](../personalization/functions/helpers.md#execution-metadata)
 
 * The code-based implementation samples documentation has been updated to include the tokens field in the propositionAction for accurate tracking and attribution in Decisioning. [Read more](../code-based/code-based-implementation-samples.md#client-side-how)
 
 * A note has been added to the URL tracking and List unsubscribe documentation to clarify that the order of URL tracking parameters appended to URLs is random and cannot be controlled. [Read more](../email/url-tracking.md)
+
+* The Email Designer themes documentation has been updated with information about web fonts support limitations and the importance of fallback fonts. [Read more](../email/apply-email-themes.md#themes-guardrails)
 
 ## January 2026 {#january-2026}
 
