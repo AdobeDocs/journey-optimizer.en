@@ -13,7 +13,7 @@ exl-id: 27859689-dc61-4f7a-b942-431cdf244455
 
 This page presents the different guardrails provided by Journey Optimizer when integrating an external system, as well as best practices: how to optimize the protection of your external system using the capping API, how to configure journey timeout, and how retries work. 
 
-Journey Optimizer allows you to configure connections to external systems via custom data sources and custom actions. This allows you, for example, to enrich your journeys with data coming from an external reservation system, or send messages using a third-party system such as Epsilon or Facebook.
+Journey Optimizer allows you to configure connections to external systems via [custom data sources](../datasource/about-data-sources.md) and [custom actions](../action/action.md). This allows you, for example, to enrich your journeys with data coming from an external reservation system, or send messages using a third-party system such as Epsilon or Facebook.
 
 When integrating an external system, you can encounter several issues, the system can be slow, can stop responding, or it might not be able to handle a large volume. Journey Optimizer offers several guardrails to protect your system from over-loading.
 
@@ -126,7 +126,7 @@ In each journey, you can define a timeout duration. Timeout duration is configur
 
 +++ What is the egress proxy and when should I use it?
 
-The egress proxy provides a **static IP address** for outbound calls from Journey Optimizer to your external systems. Use it when your third-party endpoints require IP allowlisting.
+The egress proxy provides a **static IP address** for outbound calls from Journey Optimizer **Custom actions** to your external systems. Use it when your third-party endpoints require IP allowlisting.
 
 **Important:** The egress proxy does NOT control throughput, rate limits, or the number of concurrent connections. To manage call volume and connection limits, use the [Capping API](capping.md) or [Throttling API](throttling.md).
 
