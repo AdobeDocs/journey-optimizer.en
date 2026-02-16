@@ -244,6 +244,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The Assign priority scores page was updated with the specific steps to define a priority score for inbound channel actions within the **Action** activity. [Read more](../conflict-prioritization/priority-scores.md#priority-action)
 
+<!--
 ## August 2025 {#august-2025}
 
 * A new page listing the best practices for designing accessible email and landing page content with [!DNL Journey Optimizer] was added. [Read more](../email/accessible-content.md)
@@ -278,6 +279,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 <!--* The possible email error types that could happen upon sending email deliveries with are now listed in a dedicated section. [Read more](../configuration/email-error-types.md)-->
 
+<!--
 ## June 2025 {#june-2025}
 
 * Added a new section on how to add and use rich text such as line breaks, bold, italics etc., to customizable fragments by using HTML components. [Read more](../content-management/customizable-fragments.md#rich-text)
@@ -338,6 +340,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Added a recommendation about the native keywords usage when using two-way SMS. [Read more](../sms/sms-opt-out.md)
 * Updated the journey test page with a note about the need for including an identity namespace in the event used. [Read more](../building-journeys/testing-the-journey.md)
 * Currently, you cannot undelegate subdomains through the [!UICONTROL Journey Optimizer] user interface - you must reach out to your Adobe representative. Steps to undelegate a subdomain are now detailed for [Emails](../configuration/delegate-subdomain.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-subdomain), [Web experiences](../web/web-delegated-subdomains.md#undelegate-subdomain), and [Landing pages](../landing-pages/lp-subdomains.md#undelegate-subdomain).<!--[Read more](../configuration/delegate-subdomain.md#undelegate-subdomain)-->
+<!--
 * Added clarification about the optional `maxHttpConnections` parameter in the journeys Capping API, including guidance on how to use it alongside throttling configurations for the same endpoint. [Read more](../configuration/throttling.md)
 * In the Decisioning section, added guidance explaining that approved offer items cannot be deleted if they are used in a collection or a decision. Included steps to change their status to "Draft" using the **[!UICONTROL Undo approve]** option. [Read more](../experience-decisioning/items.md#manage)
 * Information on sandboxes have been grouped together into a new "Sandboxes management" section. This new section provides information on how to use and assign sandboxes, and how to use package export and import capabilitie to copy objects such as journeys, content templates, or fragments, across multiple sandboxes. [Read more](../administration/sandboxes.md)
