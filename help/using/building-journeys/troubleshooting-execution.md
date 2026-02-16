@@ -51,18 +51,16 @@ You can start troubleshooting with the questions below:
     Content-type - application/json
     ```
 
-* **Event condition and schema data types** - Ensure the data types used in your event condition (rule) match the event schema. Mismatched types (for example, string vs. integer) cause rule evaluation to fail and events to be dropped. See [Verify event identity and rule data types](#verify-event-identity-and-rule-data-types).
+* **Event condition and schema data types** - Ensure the data types used in your event condition (rule) match the event schema. Mismatched types (for example, string vs. integer) cause rule evaluation to fail and events to be dropped. See [Verify event identity](#verify-event-identity-and-rule-data-types).
 
 >
 >**For Audience Qualification journeys with streaming audiences**: If you're using an Audience Qualification activity as the journey entry point, be aware that not all profiles qualifying for the audience will necessarily enter the journey due to timing factors, quick exits from the audience, or if profiles were already in the audience before publishing. Learn more about [streaming audience qualification timing considerations](audience-qualification-events.md#streaming-entry-caveats).
 
-### Verify event identity and rule data types {#verify-event-identity-and-rule-data-types}
+### Verify event identity {#verify-event-identity-and-rule-data-types}
 
-When configuring an event-based journey, confirm that the payload's identity field matches the [namespace selected in the event](../event/about-creating.md#select-the-namespace). If the event includes fields used in the event condition (rule), verify that the **letter case** and **data type** in the condition exactly match the inbound data and the event schema.
+When configuring an event-based journey, confirm that the payload's identity field matches the [namespace selected in the event](../event/about-creating.md#select-the-namespace). If the event includes fields for profile matching, verify the **letter case** and **data type** in the event condition exactly match the inbound data. For example, if the event schema defines `roStatus` as a string, the journey rule must also evaluate it as a string. Mismatched data types (for example, string vs. integer) cause rule evaluation to fail and valid events to be dropped.
 
-For example, if the event schema defines a field such as `roStatus` as a string, the journey rule must also evaluate it as a string. Mismatched data types (for example, string in the schema vs. integer in the rule) cause rule evaluation to fail and valid events to be dropped, so no profiles enter the journey even when events are successfully ingested.
-
-To validate your event condition in [!DNL Journey Optimizer], use the payload preview in the event configuration and ensure the types and values you use in the rule match the payload structure. Learn how to [preview the payload](../event/about-creating.md#preview-the-payload) and [configure rule-based events](../event/about-creating.md).
+To validate your event condition in [!DNL Journey Optimizer], use the payload preview in the event configuration and ensure the types and values in the rule match the payload structure. Learn how to [preview the payload](../event/about-creating.md#preview-the-payload) and [configure rule-based events](../event/about-creating.md).
 
 ## Troubleshoot test mode transitions {#troubleshooting-test-transitions}
 
