@@ -229,7 +229,7 @@ Combines workflow complexity with batch campaign execution.
 
 +++ Can I combine journeys and campaigns in my marketing strategy?
 
-Yes. Most organizations use all four approaches for different scenarios:
+Yes. Many organizations use all four approaches for different scenarios:
 
 * **Journeys** for behavioral, real-time engagement
 * **Action Campaigns** for scheduled broadcast communications
