@@ -245,7 +245,7 @@ Improvements coming with this release are listed below.
 * **Experience event usage in journey expressions** - Starting April 1, 2026, the use of experience event attributes in journey expressions will no longer be supported for organizations that have not used this capability in the last 90 days. This capability has already been unavailable for new customer organizations since July 8, 2025. For alternatives, see [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md).
 
 
-* **Subdomain delegation method switching** - You can now switch from one subdomain delegation method to another. This enables you to migrate domains using the CNAME delegation mode to the custom delegation method to adhere to your company's security policies.
+* **Migrate subdomains to custom delegation** - You can now migrate subdomains using the CNAME delegation mode to custom delegation directly from the interface, so you can meet stricter security policies in line with your company's guidelines without re-creating channel configurations.
 
   **Note**: This capability is only available for a set of organizations (<strong>Limited Availability</strong>). To gain access, contact your Adobe representative.
 
