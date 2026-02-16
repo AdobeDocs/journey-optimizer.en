@@ -40,11 +40,11 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>You can schedule outbound messages from <strong>campaigns</strong> or <strong>journeys</strong> to be delivered in controlled <strong>batches</strong> over time.</p>
+<p>You can schedule outbound messages from campaigns or journeys to be delivered in controlled batches over time.</p>
 <p>Wave sending offers the following benefits:</p>
 <ul>
-<li>Better <strong>deliverability</strong> – Spread sends over time to help maintain a strong sender reputation and reduce the risk of being flagged as spam.</li>
-<li><strong>Load control</strong> – Avoid overwhelming downstream systems (e.g. call centers, landing pages) by limiting how many messages go out at once.</li>
+<li>Better deliverability – Spread sends over time to help maintain a strong sender reputation and reduce the risk of being flagged as spam.</li>
+<li>Load control – Avoid overwhelming downstream systems (e.g. call centers, landing pages) by limiting how many messages go out at once.</li>
 <li>High-volume and time-sensitive use cases – Suited to large audiences or when you need to control timing (e.g. call center capacity, ramp-up, or time-bound offers).</li>
 </ul>
 </td>
@@ -61,7 +61,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>You can now use <strong>formulas</strong> and <strong>AI models</strong> to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
+<p>You can now use <strong>ranking formulas</strong> <!--and <strong>AI models</strong> -->to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
 <p>This capability is only available for a set of organizations (<strong>Limited Availability</strong>). To gain access, contact your Adobe representative.</p>
 </td>
 </tr>
@@ -104,6 +104,22 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>AI models Monitoring</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now allows you to monitor the health, training status, and performance of your AI models in Decisioning—so you can verify training success, troubleshoot failures, and understand impact on your outcomes.</p>
+<p>This capability is currently available for <strong>personalized optimization</strong> models only (not auto-optimization).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Action activity in journeys</strong><br/></th>
 </tr>
 </thead>
@@ -114,8 +130,8 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <ul>
 <li>A simplified native action configuration within the journey canvas.</li>
 <li>The capacity to create multi-action inbound action groups.</li>
-<li>The ability to add <strong>optimization</strong> to any built-in channel action.</li>
-<li>The ability to add both <strong>experimentation</strong> and <strong>multilingual</strong> options to any action.</li>
+<li>The ability to add optimization to any built-in channel action.</li>
+<li>The ability to add both experimentation and multilingual> options to any action.</li>
 </ul>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 </td>
@@ -187,11 +203,11 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p><strong>Migration tooling APIs</strong> are now available to programmatically migrate <strong>Decision management</strong> entities to <strong>Decisioning</strong>, featuring:</p>
+<p>Migration tooling APIs are now available to programmatically migrate <strong>Decision management</strong> entities to <strong>Decisioning</strong>, featuring:</p>
 <ul>
-<li>Flexible migration scopes (<strong>sandbox</strong>, <strong>offer</strong>, or <strong>decision</strong> level)</li>
-<li>Automated <strong>dependency analysis</strong> and validation</li>
-<li><strong>Rollback support</strong> for completed migrations</li>
+<li>Flexible migration scopes (sandbox, offer, or decision level)</li>
+<li>Automated dependency analysis and validation</li>
+<li>Rollback support for completed migrations</li>
 <li>Detailed migration reports with object mappings</li>
 </ul>
 <p>For more information, refer to the <a href="../experience-decisioning/decisioning-migration-api.md">detailed documentation</a>.</p>
@@ -271,9 +287,6 @@ Improvements coming with this release are listed below.
 
 
 * **Experience Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Experience Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
-
-
-* **Offer Ranking AI Model Observability** - Journey Optimizer now allows you to monitor the health, training status, and performance of your AI models in Decisioning—so you can verify training success, troubleshoot failures, and understand impact on your outcomes. This capability is available for personalized optimization models only (not auto-optimization).
 
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies.
