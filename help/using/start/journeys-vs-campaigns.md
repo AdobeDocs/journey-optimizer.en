@@ -282,4 +282,3 @@ Ready to start building? Explore the detailed documentation for your chosen appr
 >* [Campaign types comparison](../campaigns/get-started-with-campaigns.md#campaign-types)
 >* [Journey FAQ](../building-journeys/journey-faq.md)
 >* [Orchestrated Campaigns FAQ](../orchestrated/orchestrated-campaigns-faq.md)
->* [Best practices](best-practices.md) – Real-time use cases and scaling with guardrails
