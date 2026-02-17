@@ -40,12 +40,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>You can schedule outbound messages from campaigns or journeys to be delivered in controlled batches over time.</p>
+<p>You can now schedule outbound messages from Journey Optimizer campaigns or journeys to be delivered in controlled batches over time.</p>
 <p>Wave sending offers the following benefits:</p>
 <ul>
 <li>Better deliverability – Spread sends over time to help maintain a strong sender reputation and reduce the risk of being flagged as spam.</li>
 <li>Load control – Avoid overwhelming downstream systems (e.g. call centers, landing pages) by limiting how many messages go out at once.</li>
 <li>High-volume and time-sensitive use cases – Suited to large audiences or when you need to control timing (e.g. call center capacity, ramp-up, or time-bound offers).</li>
+<p>In campaigns, this capability is available to all environments (General Availability). In journeys, this capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </ul>
 </td>
 </tr>
