@@ -267,7 +267,6 @@ solution: Journey Optimizer
         + [Import your content](using/email/existing-content.md)
         + [Code your own content](using/email/code-content.md)
         + [Use email templates](using/email/use-email-templates.md)
-        + [Convert images to HTML templates](using/email/image-to-html.md)
         + [Leverage email themes](using/email/apply-email-themes.md)
         + [Attach PDF files to your emails](using/email/pdf-attachments.md)
       + Design your content {#add-content}
@@ -451,6 +450,7 @@ solution: Journey Optimizer
     + [Get started with content templates](using/content-management/content-templates.md)
     + [Access & manage templates](using/content-management/access-content-templates.md)
     + [Create content templates](using/content-management/create-content-templates.md)
+    + [Convert images to HTML templates](using/content-management/image-to-html.md)
     + [Lock content in email templates](using/content-management/content-locking.md)
     + [Test content templates](using/content-management/test-content-templates.md)
     + [Use content templates](using/content-management/use-content-templates.md)

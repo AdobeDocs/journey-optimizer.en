@@ -119,7 +119,7 @@ exl-id: 7962189b-4135-4f88-b91d-40d21cdf6c6d
 - [Activate High throughput mode for API triggered campaigns](help/using/campaigns/api-triggered-high-throughput.md) - Oct 27
 - [Set quiet hours](help/using/conflict-prioritization/quiet-hours.md) - Oct 22
 - [Journey Optimizer Experimentation Accelerator](help/using/content-management/experiment-accelerator-gs.md) - Oct 24
-- [Convert images to HTML templates with the image to HTML converter](help/using/email/image-to-html.md) - Oct 30
+- [Convert images to HTML templates with the image to HTML converter](help/using/content-management/image-to-html.md) - Oct 30
 - [Create decisions policies](help/using/experience-decisioning/create-decision-policy.md) - Oct 7
 - [Use decision policies in messages](help/using/experience-decisioning/use-decision-policy.md) - Oct 9
 - [Configure your Channel configuration](help/using/orchestrated/channel-config.md) - Oct 14

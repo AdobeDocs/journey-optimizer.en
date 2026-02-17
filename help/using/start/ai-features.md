@@ -273,7 +273,7 @@ Browse Journey Optimizer playbooks for common scenarios like:
 
 Transform static image designs (JPEG, PNG) into editable HTML email templates using AI-powered conversion technology.
 
-[Learn more about Image to HTML](../email/image-to-html.md)
+[Learn more about Image to HTML](../content-management/image-to-html.md)
 
 ### GenStudio for Performance Marketing
 

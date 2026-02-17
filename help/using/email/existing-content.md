@@ -24,7 +24,7 @@ exl-id: 52011299-0c65-49c3-9edd-ba7bed5d7205
 
 >[!TIP]
 >
->If you have image designs (JPEG or PNG) instead of HTML files, you can use the [image to HTML converter](image-to-html.md) to automatically convert them into editable HTML email templates using AI.
+>If you have image designs (JPEG or PNG) instead of HTML files, you can use the [image to HTML converter](../content-management/image-to-html.md) to automatically convert them into editable HTML email templates using AI.
 
 To import a file containing HTML content, follow the steps below:
 
