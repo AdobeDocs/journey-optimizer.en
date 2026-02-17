@@ -46,8 +46,9 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <li>Better deliverability – Spread sends over time to help maintain a strong sender reputation and reduce the risk of being flagged as spam.</li>
 <li>Load control – Avoid overwhelming downstream systems (e.g. call centers, landing pages) by limiting how many messages go out at once.</li>
 <li>High-volume and time-sensitive use cases – Suited to large audiences or when you need to control timing (e.g. call center capacity, ramp-up, or time-bound offers).</li>
-<p>In campaigns, this capability is available to all environments (General Availability). In journeys, this capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </ul>
+<p>In campaigns, this capability is available to all environments (General Availability).</p>
+<p>In journeys, this capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </td>
 </tr>
 </tbody>
