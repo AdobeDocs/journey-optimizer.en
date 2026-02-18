@@ -262,11 +262,14 @@ Improvements coming with this release are listed below.
 * **Experience event usage in journey expressions** - Starting April 1, 2026, the use of experience event attributes in journey expressions will no longer be supported for organizations that have not used this capability in the last 90 days. This capability has already been unavailable for new customer organizations since July 8, 2025. For alternatives, see [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md).
 
 
-#### Email Designer
+#### Content Templates
 
 * **Use themes to convert images to email templates** - When converting an image to an email template in Journey Optimizer, you can now use a theme as input so the generated HTML follows your brand parameters. Styling such as background color, button color, fonts, line spacing, margins, and padding is applied automatically, reducing manual design work and delivering a template that is ready to use with minimal edits. [Read more](../content-management/image-to-html.md)
 
   Availability date: February 13, 2026.
+
+
+#### Email Designer
 
 * **Update brands with new color tab** - Brand guidelines help ensure your brand is presented consistently across all touchpoints. The new Colors section defines the standards for your brand's color system, outlining how colors are selected, organized, and applied across experiences. It ensures consistent use of primary, secondary, accent, and neutral colors to support a cohesive, accessible, and recognizable brand identity.
 
@@ -282,7 +285,6 @@ Improvements coming with this release are listed below.
 
   **Note**: This capability is only available for a set of organizations (<strong>Limited Availability</strong>). To gain access, contact your Adobe representative.
 
-
 * **Experience Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Experience Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
 
 
@@ -292,12 +294,6 @@ Improvements coming with this release are listed below.
 
   Availability date: February 12, 2026.
 
-
-#### Journeys
-
-* **Multiple inbound actions in journeys** - To simplify your journey orchestration, you can now define several inbound actions in a single journey. Previously available in campaigns, this capability enables you to deliver multiple code-based experiences, in-app messages, content cards, or web actions to different locations at the same time, each action containing specific content.
-
-  **Note**: Previously released in Limited Availability, this capability is now available to all environments (General Availability).
 
 #### SMS
 
