@@ -10,7 +10,9 @@ version: Journey Orchestration
 
 >[!CAUTION]
 >
->Starting July 8 2025, in new customer organizations, creating expressions using experience events is no longer supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for creating expressions. Alternative approaches and best practices for creating expressions/logic with experience events are referenced below.
+>Starting July 8 2025, in new customer organizations, creating expressions using experience events is no longer supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for creating expressions.
+>
+>Starting April 1, 2026, the use of experience event attributes in journey expressions will no longer be supported for organizations that have not used this capability in the last 90 days. Alternative approaches and best practices for creating expressions/logic with experience events are referenced below.
 >
 >Need more details? [Read out the FAQ](#faq-ee).
 
@@ -123,9 +125,9 @@ Learn more:
 
 ## Frequently Asked Questions {#faq-ee}
 
-You will find below Frequently Asked Questions about Experience event lookup in journeys.
+This FAQ focuses on the timeline for retiring experience event usage in journey expressions and who is impacted. For guidance on alternative approaches, see the use cases and best practices above.
 
-Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with the [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 +++What specific capabilities are impacted? 
 
@@ -147,9 +149,9 @@ Only the lookup of experience events in the expression editor is impacted. The f
 
 +++
 
-+++Are my existing Adobe Organization impacted by this update? 
++++Are my existing Adobe Organization impacted by this update?
 
-Your Adobe Organization are only affected if you were not already using experience event lookup. If you are already utilizing experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md), your Adobe Organization continues to have support for experience event lookup. 
+Starting July 8, 2025, new customer organizations cannot create expressions using experience event attributes. Starting April 1, 2026, organizations that have not accessed experience events via journey expressions in the last 90 days will no longer have access to this capability.
 
 +++
 
