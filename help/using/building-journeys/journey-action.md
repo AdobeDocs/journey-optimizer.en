@@ -18,10 +18,6 @@ version: Journey Orchestration
 >title="Action activity"
 >abstract="The generic **Action** activity lets you configure a single native channel action and multiple inbound activities with the ability to add optimization to any built-in channel action."
 
->[!AVAILABILITY]
->
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
-
 [!DNL Journey Optimizer] comes with a new generic **Action** activity that allows to configure a single built-in channel action, and also multiple inbound activities.
 
 It allows for:
