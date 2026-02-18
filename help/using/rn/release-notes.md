@@ -150,7 +150,7 @@ The features and improvements below are planned for release later in February. R
 <td>
 <p>You can now migrate subdomains using the CNAME delegation mode to custom delegation directly from the interface, so you can meet stricter security policies in line with your company's guidelines without re-creating channel configurations.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: February 18, 2026</p>
+<p>Availability date: February 20, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -190,7 +190,7 @@ The features and improvements below are planned for release later in February. R
 </ul>
 <p>In campaigns, this capability is available to all environments (General Availability).</p>
 <p>In journeys, this capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: February 18, 2026</p>
+<p>Availability date: February 20, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -230,7 +230,7 @@ The features and improvements below are planned for release later in February. R
 <li>The ability to add both experimentation and multilingual options to any action.</li>
 </ul>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: February 18, 2026</p>
+<p>Availability date: February 20, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -240,11 +240,11 @@ The features and improvements below are planned for release later in February. R
 
 * **Experience Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Experience Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
 
-  Availability date: February 18, 2026.
+  Availability date: February 20, 2026.
 
 * **Multiple inbound actions in journeys (GA)** - Journey Optimizer now supports multiple inbound actions in journeys (General Availability), enabling more flexible journey design and event handling.
 
-  Availability date: February 18, 2026.
+  Availability date: February 20, 2026.
 
 * **Integration of custom Firefly models and third-party image generation models** - Enable seamless integration of standard and custom Firefly models, along with approved third-party image models (e.g., NanoBanana), to provide greater flexibility, control, and brand alignment when generating images. This allows you to select the best model for each use case: standard Firefly for general needs, custom Firefly for on-brand generation, or approved third-party models for specialized or experimental scenarios.
 
