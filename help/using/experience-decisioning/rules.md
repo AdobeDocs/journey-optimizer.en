@@ -86,11 +86,7 @@ To create a rule, follow these steps:
     * **[!UICONTROL Decision item]** - The rule can be applied on a [decision item](#decision-rules) in the context of Decisioning;
     * **[!UICONTROL Targeting]** - The rule can be used when building [targeting](#targeting-rules) rules, either as part of [content optimization](../content-management/optimization-targeting.md) in a campaign or a journey, either in the [Optimize journey activity](../building-journeys/optimize.md#targeting).
 
-1. If you create a **[!UICONTROL Decision item]** rule, you can select **[!UICONTROL Enable dataset lookup]** to use data from Adobe Experience Platform to enrich your decision logic with external data. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing.
-
-    >[!AVAILABILITY]
-    >
-    >This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access. [Learn how to use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
+1. If you create a **[!UICONTROL Decision item]** rule, you can select **[!UICONTROL Enable dataset lookup]** to use data from Adobe Experience Platform to enrich your decision logic with external data. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing. [Learn how to use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
 
 1. The rule creation screen opens. Name your rule and provide a description.
 

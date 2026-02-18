@@ -117,13 +117,9 @@ Capping is used as a constraint to define the maximum number of times an offer i
 >
 >The capping counter value can take up to 3 seconds to update. For example, let's say you are displaying a web banner showcasing an offer on your website. If a given user browses to the next page of your website in less than 3 seconds, the counter value will not be incremented for that user.
 
-When configuring capping rules, you can reference attributes stored in Adobe Experience Platform datasets to define thresholds. To use a dataset, select it in the **[!UICONTROL Dataset]** section. 
+When configuring capping rules, you can reference attributes stored in Adobe Experience Platform datasets to define thresholds. To use a dataset, select it in the **[!UICONTROL Dataset]** section. [Learn how to use Adobe Experience Platform data for Decisioning](../experience-decisioning/aep-data-exd.md)
 
 ![](assets/exd-lookup-capping.png)
-
->[!NOTE]
->
->This capability is currently available as a Limited Availability to all users. Detailed information on how to use it is available in this section: [Use Adobe Experience Platform data for Decisioning](../experience-decisioning/aep-data-exd.md)
 
 To set capping rules for the decision item, click the **[!UICONTROL Create capping]** button then follow the steps detailed below.
 
