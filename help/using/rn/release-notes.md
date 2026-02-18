@@ -21,17 +21,17 @@ Because of this model, release notes are updated between monthly releases. For f
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## February '26 pre-release notes {#feb-26-01-rn}
+## February '26 release notes {#feb-26-01-rn}
 
-**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
+<!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
-**Release date**: February 17-18, 2026
+<!--**Release date**: February 17-18, 2026-->
 
 ### New capabilities {#feb-26-01-features}
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Wave sending of outbound messages</strong><br/></th>
@@ -52,9 +52,9 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Migrate subdomains to custom delegation</strong><br/></th>
@@ -68,7 +68,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
@@ -135,7 +135,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-<table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Action activity in journeys</strong><br/></th>
@@ -155,7 +155,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </td>
 </tr>
 </tbody>
-</table>
+</table-->
 
 <table>
 <thead>
