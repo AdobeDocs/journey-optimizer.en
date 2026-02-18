@@ -60,9 +60,7 @@ To create a ranking formula, follow the steps below.
     >
     >The nesting depth in a ranking formula is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string. A rule string can be up to 8KB in size for UTF-8 encoded characters. This is equivalent to 8,000 ASCII characters (1 byte each), or 2,000–4,000 non-ASCII characters (2–4 bytes each). [Learn more about Decisioning guardrails & limitations](../decisioning-guardrails.md#ranking-formulas)
 
-1. You can also use data from Adobe Experience Platform to dynamically adjust the ranking logic to reflect real-world conditions. This is especially useful for attributes that frequently change, such as product availability or real-time pricing.
-   
-    This capability is currently available to all customers as a public beta. Please contact your account representative if you would like access. [Learn how to use Adobe Experience Platform data for decisioning](../aep-data-exd.md)
+1. You can also use data from Adobe Experience Platform to dynamically adjust the ranking logic to reflect real-world conditions. This is especially useful for attributes that frequently change, such as product availability or real-time pricing. [Learn how to use Adobe Experience Platform data for decisioning](../aep-data-exd.md)
 
 <!--## Select an ELS dataset {#els-dataset}
 
