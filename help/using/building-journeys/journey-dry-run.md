@@ -131,13 +131,13 @@ Journey Dry run generates **stepEvents**. These stepEvents have a specific flag 
 
 ![Journey dry run schema attributes](assets/dry-run-attributes.png)
 
-* `_experience.journeyOrchestration.stepEvents.inDryRun` returns `true` if the Dry run is activated, and `false` otherwise 
-* `_experience.journeyOrchestration.stepEvents.dryRunID` returns the ID of a dry run instance
+* `_experience.journeyOrchestration.stepEvents.inDryRun` returns `true` when the journey is in Dry run mode, and `null` for test or live journeys (non–dry run).
+* `_experience.journeyOrchestration.stepEvents.dryRunID` returns the ID of the dry run instance when in Dry run mode; for test or live journeys, it is `null`.
 
 
 If you export stepEvent data to **external systems**, you can filter Dry run executions using the `inDryRun` flag.
 
-When analyzing **journey reporting metrics** using [!DNL Adobe Experience Platform] Query service, Dry Run-generated step events must be excluded. To perform this, set the `inDryRun` flag to `false`.
+When analyzing **journey reporting metrics** using [!DNL Adobe Experience Platform] Query service, Dry Run-generated step events must be excluded. To do this, exclude step events where `inDryRun` is `true` (i.e. include only events where `inDryRun` is `null` or `false`).
 
 ## How-to video {#dry-run-video}
 

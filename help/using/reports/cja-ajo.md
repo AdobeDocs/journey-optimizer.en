@@ -28,16 +28,20 @@ After creating your journey in [!DNL Journey Optimizer], you can import your cus
 
 Before using [!DNL Customer Journey Analytics] for your journeys, you must first configure this integration:
 
-1. [Create a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html) in [!DNL Customer Journey Analytics] with the **[!UICONTROL Dataset]** you want to send to Adobe Experience Platform. 
+1. [Create a connection](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html){target="_blank"} in [!DNL Customer Journey Analytics] with the **[!UICONTROL Dataset]** you want to send to Adobe Experience Platform. 
 
     The following [!DNL Journey Optimizer] can be configured:
     * [Journey Step Event](../data/datasets-query-examples.md#journey-step-event): allows you to view who enters your journeys and how far they get. 
     * [Message Feedback/Tracking datasets](../data/datasets-query-examples.md#message-feedback-event-dataset): allows you to view delivery information about your messages sent through [!DNL Journey Optimizer].
     * [Entity and Journey datasets](../data/datasets-query-examples.md#entity-dataset): allows you to search Friendly names and use them in your reporting. 
 
-1. [Create a data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html) to configure the dimensions and metrics you want to use for your report.
+1. [Create a data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html){target="_blank"} to configure the dimensions and metrics you want to use for your report.
 
-    You can create Journey Optimizer specific metrics to better reflect your journeys' data. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/ajo.html#configure-the-data-view-to-accommodate-journey-optimizer-dimensions-and-metrics)
+    You can create Journey Optimizer specific metrics to better reflect your journeys' data. [Learn more](https://experienceleague.adobe.com/docs/analytics-platform/using/integrations/ajo.html#configure-the-data-view-to-accommodate-journey-optimizer-dimensions-and-metrics){target="_blank"}
+
+>[!NOTE]
+>
+>If multiple connections exist for your sandbox, confirm that the [data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html){target="_blank"} references the [connection](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/manage-connections){target="_blank"} flagged **[!UICONTROL Use in CJA]**. Otherwise, the [**Analyze in CJA** button](report-cja-manage.md#analyze) may be disabled in [!DNL Journey Optimizer].
 
 Using [!DNL Journey Optimizer] with [!DNL Customer Journey Analytics] might lead to some discrepancy in reporting data caused by:
 

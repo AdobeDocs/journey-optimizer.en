@@ -29,7 +29,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <p>The image to HTML converter is an AI-powered feature that converts static image designs into fully customizable, modular HTML email content templates. This no-code tool enables marketers to transform visual designs into responsive, editable email templates without requiring technical expertise—perfect for platform migration, rapid template creation, and building reusable template libraries.</p>
 <p><img src="../email/assets/email_designer_converted_img.png"/></p>
 <p>This capability is available in Limited Availability. Contact your Adobe representative to gain access.</p>
-<p>For more information, refer to the <a href="../email/image-to-html.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../content-management/image-to-html.md">detailed documentation</a>.</p>
 <p>Availability date: Oct 30, 2025</p>
 </td>
 </tr>

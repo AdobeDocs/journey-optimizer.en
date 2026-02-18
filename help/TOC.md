@@ -16,6 +16,7 @@ solution: Journey Optimizer
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
+    + [2026](using/rn/release-notes-2026.md)
     + [2025](using/rn/release-notes-2025.md)
     + [2024](using/rn/release-notes-2024.md)
     + [2023](using/rn/release-notes-2023.md)
@@ -267,7 +268,6 @@ solution: Journey Optimizer
         + [Import your content](using/email/existing-content.md)
         + [Code your own content](using/email/code-content.md)
         + [Use email templates](using/email/use-email-templates.md)
-        + [Convert images to HTML templates](using/email/image-to-html.md)
         + [Leverage email themes](using/email/apply-email-themes.md)
         + [Attach PDF files to your emails](using/email/pdf-attachments.md)
       + Design your content {#add-content}
@@ -309,13 +309,12 @@ solution: Journey Optimizer
     + [Get started with push notifications](using/push/get-started-push.md)
     + [Create a push notification](using/push/create-push.md)
     + [Design your push notification](using/push/design-push.md)
-    + [Design your Web push notification](using/push/design-push-web.md)
     + [Check & send your push notification](using/push/send-push.md)
     + Configure push notifications {#push-config}
       + [Configure push notifications](/help/rp_landing_pages/push-config-landing-page.md)
       + [Push Notification flow](using/push/push-gs.md)
       + [Configure push notification channel](using/push/push-configuration.md)
-      + [Configure Web push notification channel](using/push/push-configuration-web.md)
+      + [Configure web push notification channel](using/push/push-configuration-web.md)
       + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
   + SMS / MMS / RCS channel {#sms}
     + [SMS / MMS / RCS channel](/help/rp_landing_pages/sms-landing-page.md)
@@ -452,6 +451,7 @@ solution: Journey Optimizer
     + [Get started with content templates](using/content-management/content-templates.md)
     + [Access & manage templates](using/content-management/access-content-templates.md)
     + [Create content templates](using/content-management/create-content-templates.md)
+    + [Convert images to HTML templates](using/content-management/image-to-html.md)
     + [Lock content in email templates](using/content-management/content-locking.md)
     + [Test content templates](using/content-management/test-content-templates.md)
     + [Use content templates](using/content-management/use-content-templates.md)

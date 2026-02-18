@@ -11,7 +11,7 @@ exl-id: 3ec084ca-af9e-4b5e-b66f-ec390328a9d6
 
 The Decisioning Migration Service API enables you to migrate Decision management objects from one sandbox to another. The migration process runs as asynchronous workflows that include dependency analysis, execution, and optional rollback capabilities.
 
-This API allows you to seamlessly transition your decisioning content between environments (e.g., from development to staging, or staging to production) while maintaining data integrity and relationships.
+This API allows you to seamlessly transition your decisioning content between environments <!--(e.g., from development to staging, or staging to production) -->while maintaining data integrity and relationships.
 
 To learn about the benefits and capabilities of Decisioning compared to Decision management, refer to [this page](migrate-to-decisioning.md).
 
@@ -60,12 +60,12 @@ For more information about sandbox management, refer to [Use and assign sandboxe
 
 ## API basics {#api-basics}
 
-### Base URLs {#base-urls}
+### Base URL {#base-url}
 
-Use the following base URLs depending on your environment:
+Use the following base URL:
 
 * **Production**: `https://decisioning-migration.adobe.io`
-* **Staging**: `https://decisioning-migration-stage.adobe.io`
+<!--* **Staging**: `https://decisioning-migration-stage.adobe.io`-->
 
 ### Authentication {#authentication}
 
@@ -87,8 +87,8 @@ A workflow has the following properties:
 * `status` - Current workflow status: `New`, `Running`, `Completed`, or `Failed`
 * `result` - Workflow output when completed (includes migration results and warnings)
 * `errors` - Structured error details when failed
-* `_etag` - Version identifier used for delete operations (service users only)
 * `_links.self` - Workflow URL for retrieving status
+<!--* `_etag` - Version identifier used for delete operations (service users only)-->
 
 ## Migration workflow {#migration-workflow}
 
@@ -348,17 +348,15 @@ When migrating from Decision management to Decisioning, entities are mapped as f
 
 ## Workflow cleanup {#cleanup}
 
-Workflow resources can be deleted by service users only. Delete operations require an `If-Match` header with the workflow's `_etag` value.
+<!--Workflow resources can be deleted by service users only. Delete operations require an `If-Match` header with the workflow's `_etag` value.
 
 **Available delete operations:**
 
 * `DELETE /workflows/generate-dependencies/{id}`
 * `DELETE /workflows/migration/{id}`
-* `DELETE /workflows/rollback/{id}`
+* `DELETE /workflows/rollback/{id}`-->
 
->[!NOTE]
->
->Workflow deletion is only available to service accounts with appropriate permissions. If you need to delete a workflow resource, contact your system administrator.
+Workflow deletion is not publicly available. If you need to delete a workflow resource, contact your system administrator.
 
 ## Related topics {#related-topics}
 

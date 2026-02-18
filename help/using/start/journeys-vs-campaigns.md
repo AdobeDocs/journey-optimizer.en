@@ -2,8 +2,9 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Journeys vs Campaigns - Choose the right approach
-description: Compare journeys, campaigns, and orchestrated campaigns to choose the right approach for your marketing needs in Adobe Journey Optimizer
+description: Compare Journeys, Action Campaigns, API-triggered Campaigns, and Orchestrated Campaigns to choose the right approach for your marketing needs in Adobe Journey Optimizer.
 feature: Journeys, Campaigns, Get Started, Overview
+topic: Content Management
 role: User
 level: Beginner
 keywords: journey, campaign, orchestrated, comparison, choose, decision, workflow, real-time, batch, orchestration, multi-step, scheduled, API-triggered, event-driven
@@ -13,9 +14,9 @@ exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
 ---
 # Journeys vs Campaigns: Choose the right approach {#journeys-vs-campaigns}
 
-Adobe Journey Optimizer offers three powerful approaches to reach and engage your customers. Understanding when to use each is key to building effective marketing experiences.
+[!DNL Adobe Journey Optimizer] offers four main ways to reach and engage your customers: **Journeys**, **Action Campaigns**, **API-triggered Campaigns**, and **Orchestrated Campaigns**. Picking the right one depends on whether you need real-time 1:1 orchestration, scheduled broadcasts, event-driven messages, or complex batch workflows.
 
-This guide helps you choose between **Journeys**, **Action Campaigns**, **API-triggered Campaigns**, and **Orchestrated Campaigns** based on your specific marketing needs.
+This guide helps you choose based on execution style, data needs, and use case—with a quick comparison, decision tree, and concrete examples.
 
 ## Quick comparison overview {#quick-overview}
 
@@ -25,6 +26,10 @@ This guide helps you choose between **Journeys**, **Action Campaigns**, **API-tr
 | **Action Campaigns** | Scheduled or recurring broadcasts to audiences | Batch execution - audience processed together at send time |
 | **API-triggered Campaigns** | Event-driven or transactional messages from external systems | On-demand execution - triggered by API call with payload |
 | **Orchestrated Campaigns** | Complex batch workflows with multi-entity segmentation | Batch canvas - all profiles processed together |
+
+>[!TIP]
+>
+>**Quick rule of thumb:** Need each customer to move at their own pace with real-time logic? Use **Journeys**. Sending one message to an audience on a schedule? Use **Action Campaigns**. Triggering from an external system via API? Use **API-triggered Campaigns**. Need multi-entity data, exact counts, or a batch canvas? Use **Orchestrated Campaigns**.
 
 ## Detailed comparison {#detailed-comparison}
 
@@ -49,7 +54,7 @@ Use this comprehensive table to understand the key differences:
 
 ## Decision guide {#decision-guide}
 
-Follow this decision tree to choose the right approach:
+Follow this decision tree to choose the right approach. Many brands use more than one type; pick the best fit for each use case.
 
 ### Step 1: What's your execution requirement?
 
@@ -82,14 +87,14 @@ Follow this decision tree to choose the right approach:
 | Your need | Recommended approach | Why |
 |-----------|---------------------|-----|
 | Welcome new customers with multi-step onboarding | Journeys | Real-time entry, multiple touchpoints, conditional paths |
-| Send monthly newsletter to subscribers | Action Campaign | Simple scheduled message to audience |
+| Send monthly newsletter to subscribers | Action Campaigns | Simple scheduled message to audience |
 | Cart abandonment with reminder sequence | Journeys | Real-time trigger, wait times, conditional follow-up |
-| Promotional announcement to all customers | Action Campaign | One-time message, immediate delivery |
+| Promotional announcement to all customers | Action Campaigns | One-time message, immediate delivery |
 | Re-engage inactive users based on behavior | Journeys | Triggered by audience qualification, personalized path |
 | Flash sale triggered by business event | Journeys (Business Event) | Real-time trigger affecting multiple customers |
-| Seasonal promotion with product catalog integration | Orchestrated Campaign | Multi-entity data, complex segmentation, exact counts |
-| API-triggered transactional message | API-triggered Campaign | External system trigger, immediate delivery |
-| Multi-level sending per booking | Orchestrated Campaign | Multi-entity relationships, one message per booking |
+| Seasonal promotion with product catalog integration | Orchestrated Campaigns | Multi-entity data, complex segmentation, exact counts |
+| API-triggered transactional message | API-triggered Campaigns | External system trigger, immediate delivery |
+| Multi-level sending per booking | Orchestrated Campaigns | Multi-entity relationships, one message per booking |
 
 ## Key distinctions explained {#key-distinctions}
 
@@ -224,12 +229,14 @@ Combines workflow complexity with batch campaign execution.
 
 +++ Can I combine journeys and campaigns in my marketing strategy?
 
-Absolutely! Most organizations use all three approaches for different scenarios:
+Yes. Many organizations use all four approaches for different scenarios:
 
-* Journeys for behavioral, real-time engagement
-* Action Campaigns for scheduled broadcast communications
-* API-triggered Campaigns for transactional messages
-* Orchestrated Campaigns for complex, data-intensive batch campaigns
+* **Journeys** for behavioral, real-time engagement
+* **Action Campaigns** for scheduled broadcast communications
+* **API-triggered Campaigns** for transactional messages
+* **Orchestrated Campaigns** for complex, data-intensive batch campaigns
+
+Use the right tool for each use case rather than forcing one approach for everything.
 
 +++
 
@@ -247,17 +254,17 @@ Action Campaigns are typically the simplest (single message to audience), follow
 
 +++ Which scales better for large audiences?
 
-All three can scale well, but:
+All four can scale well; the right choice depends on your pattern:
 
-* **Read Audience Journeys** and **Action Campaigns** are optimized for large batch audiences
-* **Orchestrated Campaigns** excel at complex segmentation with large datasets
-* **Unitary Journeys** process profiles individually, so scale depends on event volume
+* **Read Audience Journeys** and **Action Campaigns** are optimized for large batch audiences (one message or flow to many profiles at once).
+* **Orchestrated Campaigns** excel at complex segmentation with large datasets and multi-entity data.
+* **Unitary (event-based) Journeys** process profiles individually as events occur, so scale depends on event volume and throughput.
 
 +++
 
 +++ Can I use the same audience across journeys and campaigns?
 
-Yes, audiences created in Adobe Experience Platform can be used across all three approaches.
+Yes. Audiences created in [!DNL Adobe Experience Platform] can be used in Journeys, Action Campaigns, and Orchestrated Campaigns (where audience logic can also be built on-demand in the canvas). API-triggered Campaigns are payload-driven and do not use pre-built audiences the same way.
 
 +++
 
@@ -265,12 +272,13 @@ Yes, audiences created in Adobe Experience Platform can be used across all three
 
 Ready to start building? Explore the detailed documentation for your chosen approach:
 
-* **[Get started with Journeys](../building-journeys/journey.md)** - Learn about journey types, designer, and workflow
-* **[Get started with Campaigns](../campaigns/get-started-with-campaigns.md)** - Explore Action and API-triggered campaigns
-* **[Get started with Orchestrated Campaigns](../orchestrated/gs-orchestrated-campaigns.md)** - Discover batch canvas workflows
+* **[Get started with Journeys](../building-journeys/journey.md)** – Journey types, designer, and workflow
+* **[Get started with Campaigns](../campaigns/get-started-with-campaigns.md)** – Action and API-triggered campaigns
+* **[Get started with Orchestrated Campaigns](../orchestrated/gs-orchestrated-campaigns.md)** – Batch canvas workflows
 
-**Need more help deciding?**
-* [Journey types comparison](../building-journeys/journey.md#journey-types-comparison)
-* [Campaign types comparison](../campaigns/get-started-with-campaigns.md#campaign-types)
-* [Journey FAQ](../building-journeys/journey-faq.md)
-* [Orchestrated Campaigns FAQ](../orchestrated/orchestrated-campaigns-faq.md)
+>[!MORELIKETHIS]
+>
+>* [Journey types comparison](../building-journeys/journey.md#journey-types-comparison)
+>* [Campaign types comparison](../campaigns/get-started-with-campaigns.md#campaign-types)
+>* [Journey FAQ](../building-journeys/journey-faq.md)
+>* [Orchestrated Campaigns FAQ](../orchestrated/orchestrated-campaigns-faq.md)

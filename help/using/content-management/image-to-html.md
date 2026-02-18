@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Convert images to HTML templates with the image to HTML converter
+title: Convert images to HTML templates
 description: Learn how to use the AI-powered image to HTML converter to convert image designs into editable HTML email templates
 feature: Email Design
 topic: Content Management, Artificial Intelligence
@@ -11,107 +11,102 @@ badge: label="Limited availability" type="Informative"
 keywords: email, template, image, HTML, AI, design, converter
 exl-id: d13467b7-2f3c-4707-a7e0-9b46cb6cafb1
 ---
-# Convert images to HTML templates with the image to HTML converter {#image-to-html}
-
-## Overview {#overview}
-
-The image to HTML converter is an innovative AI-powered feature available in the **Content Templates** menu that dramatically speeds up email creation by converting static image designs into fully customizable, modular HTML email content templates. This no-code tool enables marketers to transform visual designs from graphic designers or design tools into responsive, editable email templates that can be saved to the Content Templates library and then reused across multiple journeys and campaigns—without requiring technical expertise.
+# Convert images to HTML templates {#image-to-html}
 
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
-By leveraging generative AI technology, the image to HTML converter analyzes the layout, typography, colors, and visual elements in your image and generates clean, modular HTML code that maintains design fidelity while ensuring full editability and compatibility with the Email Designer. This eliminates the manual, time-consuming process of converting mockups to HTML and reduces dependency on development resources.
+[!DNL Journey Optimizer] helps you dramatically speed up email creation by converting static image designs into fully customizable, modular HTML email content templates.
 
-**Key benefits:**
+By leveraging generative AI technology, an integrated tool analyzes the layout, typography, colors, and visual elements in your image and generates clean, modular HTML code that maintains design fidelity while ensuring full editability with the [Email Designer](../email/get-started-email-design.md). 
 
-* **Design to HTML in minutes**: AI-powered, no-code conversion transforms static images into editable, modular templates in minutes, dramatically reducing template creation time
-* **Empowers non-technical users**: Reduces dependency on design or development teams — marketers can generate and customize templates with minimal technical knowledge
-* **Simplified platform migration**: Convert external templates or designs from other platforms into AJO-ready HTML effortlessly
-* **Build a reusable template library**: Create a scalable, brand-consistent template library that can be used across multiple journeys and campaigns
-* **Design fidelity**: Maintain visual consistency with your original design while creating fully editable content
-* **Email compatibility**: Generate HTML that works seamlessly with the Email Designer and across email clients
+This no-code capability enables marketers to transform visual assets from graphic designers or design tools into responsive, editable email templates that can be saved and reused across multiple journeys and campaigns—without requiring technical expertise.
 
-## Common use cases {#use-cases}
+The main key benefits are as follows:
+
+* **Faster than hand-coding** - The converter turns images into editable HTML in minutes, so you can skip the manual time-consuming mockup-to-HTML workflow.
+* **No technical skills needed** - Marketers can produce and adjust templates without design or development support.
+* **Reusable across campaigns** - Save templates to your library and use them in any journey or campaign.
+* **Stays true to the design** - Output matches your layout and styling while being fully compatible with the Email Designer.
+
+<!--* **Design fidelity**: Maintain visual consistency with your original design while creating fully editable content
+* **Email compatibility**: Generate HTML that works seamlessly with the Email Designer and across email clients-->
+
++++ Common use cases
 
 The image to HTML converter is ideal for:
 
-* **Platform migration**: Migrating from another email marketing platform? Convert your existing email designs into AJO-ready HTML templates without rebuilding from scratch
-* **Design mockup conversion**: Transform design mockups from tools like Photoshop, Figma, or other design software into functional email templates
-* **Quick template creation**: Generate email templates rapidly for time-sensitive campaigns without waiting for developer resources
-* **Building template libraries**: Create a comprehensive library of brand-consistent templates that non-technical team members can customize and deploy
-* **Reducing technical dependencies**: Enable marketers to create and iterate on email templates independently, speeding up campaign execution
+* **Platform migration**: Migrating from another email marketing platform? Convert your existing email designs into [!DNL Journey Optimizer]-ready HTML templates without rebuilding from scratch.
+* **Design mockup conversion**: Transform design mockups from tools like Photoshop, Figma, or other design software into functional email templates.
+* **Quick template creation**: Generate email templates rapidly for time-sensitive campaigns without waiting for developer resources.
+* **Building template libraries**: Create a comprehensive library of brand-consistent templates that non-technical team members can customize and deploy.
+* **Reducing technical dependencies**: Enable marketers to create and iterate on email templates independently, speeding up campaign execution.
 
-## Prerequisites {#prerequisites}
++++
 
-Before using the image to HTML converter, ensure you have:
+## Convert an image to an HTML template {#convert-image}
 
-* Access to Adobe Journey Optimizer with the Email Designer
-* An image file in JPEG or PNG format containing your email design
-* Limited Availability access to the image to HTML converter feature (contact your Adobe representative)
+To convert an image design into a fully customizable HTML email template, follow the steps below.
 
->[!NOTE]
->
->For best results, use high-quality images with clear visual elements and readable text. Images should ideally be between 600-800 pixels wide to match standard email dimensions.
+1. Ensure you have an image file in JPEG or PNG format containing your email design.
 
-## Convert an image to HTML template {#convert-image}
+    >[!NOTE]
+    >
+    >For best results, use high-quality images with clear visual elements and readable text. Images should ideally be between 600-800 pixels wide to match standard email dimensions.
 
-To convert an image design into a fully customizable HTML email template, follow these steps:
-
-1. Access the Content Templates list by selecting **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** from the left menu.
+1. Access the content template list by selecting **[!UICONTROL Content Management]** > **[!UICONTROL Content templates]** from the left menu.
 
 1. Click **[!UICONTROL Create template]**.
 
 1. Fill in the template details and select **[!UICONTROL Email]** as the channel and click **[!UICONTROL Create]**.
 
-1. In the right section, in the **[!UICONTROL Convert image to template]** section, click the **[!UICONTROL Upload image]** button to select your image file.
+1. In the **[!UICONTROL Convert image to template]** section, perform the following steps:
 
-    ![](assets/email_designer_convert_img.png)
+   * (Optional) If your organization has brand themes defined in Journey Optimizer, you can select a theme as input so that the generated HTML is styled according to your brand theme parameters. [Learn more about themes](../email/apply-email-themes.md)
+
+        Styling such as background color, button color, fonts, line spacing, margins, and padding will be applied to the generated template, reducing additional design work and producing a template that is ready to use with minimal edits.
+
+    * To be able to upload an image, make sure it does not contain any personally identifiable information (PII) or other sensitive data, and check the corresponding option to acknowledge that you have reviewed the file.
+
+   * Click the **[!UICONTROL Upload image]** button to select your image file.
+
+        ![](../email/assets/email_designer_convert_img.png)
     
+        >[!CAUTION]
+        >
+        >When you upload an image for conversion, all content currently added in the email will be deleted and replaced with the generated template.
 
-    >[!CAUTION]
-    >
-    >When you upload an image for conversion, **all content currently added in the email will be deleted and replaced** with the generated template. If you have existing content in your email, make sure to save it before proceeding with the image conversion.
 
-
-1. Choose the image and click **[!UICONTROL Open]** to start the AI-powered conversion process.
+1. After selecting the image, click **[!UICONTROL Open]** to start the AI-powered conversion process.
 
     >[!NOTE]
     >
-    >The generation process can take up to 5 minutes depending on the complexity and size of your image design. The AI processing happens in the background, so you can navigate away from this screen and work on other tasks while the conversion is in progress. You don't need to keep the screen open.
+    >The generation process can take up to 5 minutes depending on the complexity and size of your image design. You can navigate away from this screen and work on other tasks while the conversion is in progress.
 
-1. Once the conversion is complete, your content template will be automatically saved as a draft. You can then review and edit the generated HTML template in the Email Designer canvas.
+1. Once the conversion is complete, your content template is automatically saved as a draft.
 
-    ![](assets/email_designer_converted_img.png)
+    ![](../email/assets/email_designer_converted_img.png)
 
+1. Click **[!UICONTROL Edit email body]**. The converted template opens in the [Email Designer](../email/get-started-email-design.md) with full editing capabilities. You can now:
 
-1. The converted template opens in the Email Designer with full editing capabilities. You can now:
-
-    * Edit text content and apply personalization
+    * Review, edit text content and apply personalization
     * Modify images and add links
     * Adjust colors, fonts, and styling
     * Add, remove, or rearrange content components
     * Leverage all Email Designer features as with any other template
 
-    ![](assets/email_designer_html_components.png)
+    ![](../email/assets/email_designer_html_components.png)
 
 1. Make any necessary adjustments to refine the template and match your brand guidelines.
 
-1. Once satisfied with your template, click **[!UICONTROL Save]** to save the content template.
+1. Once satisfied with your template, click **[!UICONTROL Save]**.
 
-1. Your template is now available in the Content Templates library and can be used when creating emails in journeys or campaigns. [Learn how to use content templates](use-email-templates.md)
-
-## Use your converted template in emails {#use-template}
-
-Once you've created and saved your content template, you can use it when designing emails in journeys or campaigns:
-
-When creating an email in a journey or campaign, access the Email Designer from the **[!UICONTROL Edit content]** screen.
-
-Learn more about [working with email templates](use-email-templates.md) and [creating content templates](../content-management/content-templates.md).
+Your template is now available in the content template library and can be used when creating emails in journeys or campaigns. [Learn how to use content templates](../email/use-email-templates.md)
 
 ## Best practices {#best-practices}
 
-To achieve optimal results when using the image to HTML converter, follow these recommendations:
+To achieve optimal results when converting images to HTML content templates, follow these recommendations.
 
 **Before you start**
 
@@ -143,9 +138,9 @@ To achieve optimal results when using the image to HTML converter, follow these 
 * **Personalization**: Add dynamic content and personalization tokens as required
 * **Accessibility**: Review and enhance accessibility features if needed
 
-## Limitations and considerations {#limitations}
+## Guardrails and recommendations {#limitations}
 
-Be aware of the following limitations when using the Image to HTML converter:
+Be aware of the following limitations when converting images to HTML content templates.
 
 * **AI interpretation**: The AI generates HTML based on visual interpretation of your image. Complex or unusual designs may require manual adjustments after conversion.
 
@@ -209,7 +204,7 @@ The image to HTML converter is available in Limited Availability. You need Limit
 
 +++Can I reuse converted templates across multiple campaigns?
 
-Yes! Templates created with the image to HTML converter are automatically saved to the Content Templates library. You can access and reuse them in any email across your journeys and campaigns. [Learn more](../content-management/content-templates.md)
+Yes! Templates created with the image to HTML converter are automatically saved to the Content Templates library. You can access and reuse them in any email across your journeys and campaigns. [Learn more](content-templates.md)
 
 +++
 
@@ -221,9 +216,10 @@ Yes! The image to HTML converter is ideal for migrating from other email marketi
 
 ## Related topics {#related-topics}
 
-* [Get started with content templates](../content-management/content-templates.md)
-* [Create content templates](../content-management/create-content-templates.md)
-* [Use email templates](use-email-templates.md)
-* [Get started with email design](get-started-email-design.md)
-* [Import your email content](existing-content.md)
-* [Design content from scratch](content-from-scratch.md)
+* [Get started with content templates](content-templates.md)
+* [Create content templates](create-content-templates.md)
+* [Use email templates](../email/use-email-templates.md)
+* [Leverage email themes](../email/apply-email-themes.md)
+* [Get started with email design](../email/get-started-email-design.md)
+* [Import your email content](../email/existing-content.md)
+* [Design content from scratch](../email/content-from-scratch.md)
