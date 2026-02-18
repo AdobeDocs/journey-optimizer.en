@@ -55,13 +55,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Web Push notifications channel</strong><br/></th>
+<th><strong>Web push notifications channel</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer now supports <strong>Web Push notifications</strong>, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both <strong>mobile and desktop browsers</strong>, enabling you to reach customers directly on their devices without requiring an app. This enhancement allows you to engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
+<p>Adobe Journey Optimizer now supports <strong>Web push notifications</strong>, expanding the push channel beyond mobile. You can seamlessly deliver notifications to both <strong>mobile and desktop browsers</strong>, enabling you to reach customers directly on their devices without requiring an app. This enhancement allows you to engage users with timely, personalized messages in real time, leveraging the same authoring workflows and targeting capabilities already available for mobile push.</p>
 <p><img src="assets/do-not-localize/web-push.gif"/></p>
 <p>Previously released in Beta, this capability will be available to all environments (General Availability).</p>
 <p>For more information, refer to the <a href="../push/push-configuration-web.md">detailed documentation</a>.</p>
@@ -142,7 +142,7 @@ The features and improvements below are planned for release later in February. R
 <table>
 <thead>
 <tr>
-<th><strong>Journey Agent: Channel Content Create</strong><br/></th>
+<th><strong>Journey Agent: Channel content creation</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -222,7 +222,7 @@ The features and improvements below are planned for release later in February. R
 <table>
 <thead>
 <tr>
-<th><strong>AI models Monitoring</strong><br/></th>
+<th><strong>AI model monitoring</strong><br/></th>
 </tr>
 </thead>
 <tbody>
