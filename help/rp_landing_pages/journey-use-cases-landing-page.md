@@ -28,7 +28,7 @@ Explore practical examples and strategies to maximize Adobe Journey Optimizer ca
 
 Experience event lookup
 
-Use experience events to manage opt-outs, personalize content, and address common challenges in journey orchestration.
+Use experience event alternatives to manage opt-outs, personalize content, and address common challenges in journey orchestration.
 
 [Learn more](../using/building-journeys/exp-event-lookup.md)
 :::
