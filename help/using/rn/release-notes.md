@@ -30,39 +30,9 @@ The [New capabilities](#feb-26-01-features) and [Improvements](#feb-26-01-improv
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
 
 <!--**Release date**: February 17-18, 2026-->
->
+
 ### New capabilities {#feb-26-01-features}
 
-<table>
-<thead>
-<tr>
-<th><strong>Migrate subdomains to custom delegation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now migrate subdomains using the CNAME delegation mode to custom delegation directly from the interface, so you can meet stricter security policies in line with your company's guidelines without re-creating channel configurations.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Agent: Channel Content Create</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Powered by <strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now also generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in <strong>Content Designer</strong> for in-context editing.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <!--
 <table>
@@ -93,6 +63,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <td>
 <p>Journey Optimizer now allows you to monitor the health, training status, and performance of your Decisioning AI models. This allows you to verify training success, troubleshoot failures, and understand impact on your outcomes in order to select the best offers for each customer using AI. Note that this capability is available for <strong>Decisioning</strong> only (not for legacy Decision Management models).</p>
 <p>This capability is currently available for <strong>personalized optimization</strong> models only (not auto-optimization).</p>
+<p>Availability date: February 17, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -130,65 +101,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><img src="assets/do-not-localize/content-decision.gif"/></p>
 <p>For more information, refer to the <a href="../building-journeys/content-decision.md">detailed documentation</a>.</p>
-<p>Availability date: February 11, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Self-service migration tooling APIs</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Migration tooling APIs are now available to programmatically migrate <strong>Decision management</strong> entities to <strong>Decisioning</strong>, featuring:</p>
-<ul>
-<li>Flexible migration scopes (sandbox, offer, or decision level)</li>
-<li>Automated dependency analysis and validation</li>
-<li>Rollback support for completed migrations</li>
-<li>Detailed migration reports with object mappings</li>
-</ul>
-<p>For more information, refer to the <a href="../experience-decisioning/decisioning-migration-api.md">detailed documentation</a>.</p>
-<p>Availability date: February 3, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom action monitoring</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Gain deeper insight into the health and performance of your <strong>custom action endpoints</strong> with a new <strong>monitoring dashboard</strong> and enriched <strong>journey step event data</strong>. Track successful calls, errors, throughput, response times, and queue wait times to quickly understand when, where, and why anomalies occur.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>For more information, refer to the <a href="../action/reporting.md">detailed documentation</a>.</p>
-<p>Availability date: February 3, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in SMS channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now personalize and optimize the content of your <strong>SMS messages</strong> with <strong>Decisioning</strong>. Use <strong>Priority Scores</strong>, <strong>Formulas</strong>, or <strong>AI Models</strong> to display the best content to your customers.</p>
-<p>For more information, refer to the <a href="../experience-decisioning/create-decision.md">detailed documentation</a>.</p>
-<p>Availability date: February 2, 2026</p>
+<p>Availability date: February 10, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -206,12 +119,7 @@ Improvements coming with this release are listed below.
 
 * **Use themes to convert images to email templates** - When converting an image to an email template in Journey Optimizer, you can now use a theme as input so the generated HTML follows your brand parameters. Styling such as background color, button color, fonts, line spacing, margins, and padding is applied automatically, reducing manual design work and delivering a template that is ready to use with minimal edits. [Read more](../content-management/image-to-html.md)
 
-  Availability date: February 13, 2026.
-
-
-#### Email Designer
-
-* **Update brands with new color tab** - Brand guidelines help ensure your brand is presented consistently across all touchpoints. The new Colors section defines the standards for your brand's color system, outlining how colors are selected, organized, and applied across experiences. It ensures consistent use of primary, secondary, accent, and neutral colors to support a cohesive, accessible, and recognizable brand identity.
+  Availability date: February 17, 2026.
 
 
 #### Experience Decisioning
@@ -221,24 +129,48 @@ Improvements coming with this release are listed below.
   **Note**: This capability is only available for a set of organizations (<strong>Limited Availability</strong>). To gain access, contact your Adobe representative.
 
 
-* **Experience Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Experience Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
-
-
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies. [Read more](../experience-decisioning/fragments-decision-policies.md)
 
   **Note**: Previously released in Limited Availability, this capability is now available to all environments (General Availability).
 
   Availability date: February 12, 2026.
 
-#### SMS
-
-* **SMS Webhooks** - <strong>Webhooks</strong> are now supported across all SMS providers. You can configure each webhook based on its intended purpose: <strong>Inbound webhooks</strong> to capture incoming messages and <strong>Feedback webhooks</strong> to receive delivery receipts, status updates, and other message-related events. [Read more](../sms/sms-webhook.md)
-
-  Availability date: February 2, 2026.
-
 ## Coming soon {#coming-soon}
 
-The features and improvements below are planned for release later in February 2026. Release dates and scope may change without prior notice.
+The features and improvements below are planned for release later in February. Release dates and scope may change without prior notice.
+
+<table>
+<thead>
+<tr>
+<th><strong>Migrate subdomains to custom delegation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now migrate subdomains using the CNAME delegation mode to custom delegation directly from the interface, so you can meet stricter security policies in line with your company's guidelines without re-creating channel configurations.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Availability date: February 18, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Agent: Channel Content Create</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Powered by <strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now also generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in <strong>Content Designer</strong> for in-context editing.</p>
+<p>Availability date: February 20, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -295,7 +227,7 @@ The features and improvements below are planned for release later in February 20
 <li>A simplified native action configuration within the journey canvas.</li>
 <li>The capacity to create multi-action inbound action groups.</li>
 <li>The ability to add optimization to any built-in channel action.</li>
-<li>The ability to add both experimentation and multilingual> options to any action.</li>
+<li>The ability to add both experimentation and multilingual options to any action.</li>
 </ul>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p>Availability date: February 18, 2026</p>
@@ -306,8 +238,16 @@ The features and improvements below are planned for release later in February 20
 
 ### Improvements {#coming-soon-improv}
 
-* **Integration of custom Firefly models and third-party image generation models** - Enable seamless integration of standard and custom Firefly models, along with approved third-party image models (e.g., NanoBanana), to provide greater flexibility, control, and brand alignment when generating images. This allows you to select the best model for each use case: standard Firefly for general needs, custom Firefly for on-brand generation, or approved third-party models for specialized or experimental scenarios.
+* **Experience Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Experience Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
 
   Availability date: February 18, 2026.
+
+* **Multiple inbound actions in journeys (GA)** - Journey Optimizer now supports multiple inbound actions in journeys (General Availability), enabling more flexible journey design and event handling.
+
+  Availability date: February 18, 2026.
+
+* **Integration of custom Firefly models and third-party image generation models** - Enable seamless integration of standard and custom Firefly models, along with approved third-party image models (e.g., NanoBanana), to provide greater flexibility, control, and brand alignment when generating images. This allows you to select the best model for each use case: standard Firefly for general needs, custom Firefly for on-brand generation, or approved third-party models for specialized or experimental scenarios.
+
+  Availability date: February 20, 2026.
 
 
