@@ -15,6 +15,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## February 2026 {#february-2026}
 
+* The **Experience event lookup in journeys** documentation has been updated with the deprecation timeline: starting April 1, 2026, organizations that have not used experience event attributes in journey expressions in the last 90 days will no longer have access to this capability. The FAQ now focuses on the retirement timeline and who is impacted, and the Experience event schema page has been aligned with a direct link to alternative approaches. [Read more](../building-journeys/exp-event-lookup.md)
+
+* The **Decisioning** documentation has been updated for **dataset lookup** with Adobe Experience Platform data: the supported channels guardrail now states that dataset lookup works for all channels where Decisioning is available (code-based experience, Email, Push, SMS, and the Content Decision activity in journeys). Limited Availability and public beta notes have been removed from the decision rules, ranking formulas, and decision items pages. [Read more](../experience-decisioning/aep-data-exd.md)
+
 * The External systems integration page has been updated with links to custom data sources and custom actions, and clarifies that the egress proxy provides a static IP for outbound calls from **Custom actions** to your external systems. [Read more](../configuration/external-systems.md)
 
 * The Journey Dry run documentation has been clarified: the step event attributes `inDryRun` and `dryRunID` now document that they return `true`/instance ID when in Dry run mode and `null` for test or live journeys. Guidance for excluding Dry run step events in reporting queries has been updated accordingly. [Read more](../building-journeys/journey-dry-run.md)
