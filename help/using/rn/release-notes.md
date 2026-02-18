@@ -23,6 +23,8 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ## February '26 release notes {#feb-26-01-rn}
 
+The [New capabilities](#feb-26-01-features) and [Improvements](#feb-26-01-improv) sections cover capabilities already available. The [Coming soon](#coming-soon) section lists features and improvements scheduled for release later in February.
+
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
@@ -233,6 +235,8 @@ Improvements coming with this release are listed below.
   Availability date: February 2, 2026.
 
 ## Coming soon {#coming-soon}
+
+The features and improvements below are planned for release later in February 2026. Release dates and scope may change without prior notice.
 
 <table>
 <thead>
