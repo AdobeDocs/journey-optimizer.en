@@ -190,7 +190,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## October 2025 {#october-2025}
 
-* You can now convert images to HTML templates using the image to HTML converter. [Read more](../email/image-to-html.md)
+* You can now convert images to HTML templates using the image to HTML converter. [Read more](../content-management/image-to-html.md)
 
 * Information about the Adobe Journey Optimizer release cycle is now available. [Read more](releases.md)
 
