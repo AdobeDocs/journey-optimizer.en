@@ -9,6 +9,7 @@ role: Admin
 level: Intermediate
 keywords: subdomain, delegation, migration, CNAME, custom delegation
 badge: label="Limited availability" type="Informative"
+exl-id: f74139cf-640f-4b7b-a0b1-6eae9c75e7e4
 ---
 # Migrate an email subdomain from CNAME to custom delegation {#migrate-cname-to-custom}
 
