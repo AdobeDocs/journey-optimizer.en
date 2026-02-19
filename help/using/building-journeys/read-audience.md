@@ -13,7 +13,7 @@ version: Journey Orchestration
 ---
 # Use an audience in a journey {#segment-trigger-activity}
 
-Use the Read Audience activity to start journeys with defined audiences.
+Use the Read Audience activity to start journeys with defined audiences. You choose the audience and when it runs; then use conditions, timers, and actions to personalize each profile's path.
 
 ## About the Read Audience activity {#about-segment-trigger-activity}
 
@@ -47,15 +47,30 @@ For example, the `Luma app opening and checkout` audience created in the [Build 
 
 ## Configure the activity {#configuring-segment-trigger-activity}
 
-The steps to configure the Read Audience activity are as follows.
+You will set: **Audience** (mandatory), **Namespace** (mandatory), **Reading rate** (mandatory, default 5,000/s), and **Schedule** (when the journey runs). Optionally add a **Label** and **Supplemental identifier**. The steps below walk you through each setting.
 
-### Add a Read audience activity and select the audience
+### Add activity and select audience {#add-activity-and-select-audience}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_label"
+>title="Label"
+>abstract="Optional label to identify this activity in reporting and test mode logs."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_audience"
+>title="Audience"
+>abstract="Select the [!DNL Adobe Experience Platform] audience whose profiles will enter this journey."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_namespace"
+>title="Namespace"
+>abstract="Choose which identity (e.g. email, ECID) is used to identify individuals entering the journey. Pick the top option in the list for best compatibility with Business Rules and Capping."
 
 1. Unfold the **[!UICONTROL Orchestration]** category and drop a **[!UICONTROL Read Audience]** activity into your canvas.
 
     The activity must be positioned as the first step of a journey.
 
-1. Add a **[!UICONTROL Label]** to the activity (optional).
+1. Add a **[!UICONTROL Label]** to the activity (optional). An optional label helps you identify the activity in reporting and in test mode logs.
 
 1. In the **[!UICONTROL Audience]** field, choose the [!DNL Adobe Experience Platform] audience that will enter the journey, then click **[!UICONTROL Save]**. You can select any [!DNL Adobe Experience Platform] audience generated using [segment definitions](../audience/creating-a-segment-definition.md).
 
@@ -85,6 +100,17 @@ The steps to configure the Read Audience activity are as follows.
     >
     >Individuals belonging to an audience that does not have the selected identity (namespace) among their different identities cannot enter the journey. You can only select a people-based identity namespace. If you have defined a namespace for a lookup table (for example: ProductID namespace for a Product lookup), it will not be available in the **Namespace** dropdown list.
 
+### Supplemental identifier {#read-audience-supplemental-id}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_parameters_supplemental_identifier"
+>title="Use supplemental identifier"
+>abstract="Optional secondary identifier (e.g. order ID) for journey context. Select the field and its namespace."
+
+You can optionally enable **Use a supplemental identifier** to run the journey in the context of a secondary identifier (for example, an order ID or booking ID) in addition to the profile ID. This allows multiple entrances of the same profile when the supplemental identifier differs.
+
+[Learn how to use supplemental identifiers in journeys](supplemental-identifier.md). For Read audience journeys, the supplemental identifier must be a profile attribute; the reading rate is limited to 500 profiles per second when supplemental ID is used.
+
 ### Guardrails and recommendations {#must-read}
 
 * Only one **[!UICONTROL Read Audience]** activity can be used in a journey, and it has to be the first activity in the canvas.
@@ -113,9 +139,16 @@ Guardrails related to the **Read Audience** activity are listed in [this page](.
 >
 >[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to [!DNL Adobe Journey Optimizer].
 
-### Manage profiles entry in the journey
+**Next:** Set the [reading rate](#profile-entry-and-reading-rate) and [schedule](#schedule), then [test and publish](#testing-publishing).
 
-Set the **[!UICONTROL Reading rate]**. This is the maximum number of profiles that can enter the journey per second. This rate applies only to this activity and no others in the journey. If you want to define a throttling rate on custom actions, for example, you need to use the throttling API. Refer to this [page](../configuration/throttling.md).
+### Profile entry and reading rate {#profile-entry-and-reading-rate}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_read_segment_reading_rate"
+>title="Reading rate"
+>abstract="Maximum profiles entering the journey per second (500–20,000). Default is 5,000."
+
+Set the **[!UICONTROL Reading rate]** (mandatory). This is the maximum number of profiles that can enter the journey per second. This rate applies only to this activity and no others in the journey. If you want to define a throttling rate on custom actions, for example, you need to use the throttling API. Refer to this [page](../configuration/throttling.md).
 
 This value is stored in the journey version payload. The default value is 5,000 profiles per second. You can modify this value from 500 to 20,000 profiles per second.
 
@@ -128,37 +161,37 @@ This value is stored in the journey version payload. The default value is 5,000 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_start_date"
 >title="Start date / time"
->abstract="Define the date and time you want to trigger this journey."
+>abstract="When to start this journey."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_until"
 >title="Repeat until"
->abstract="Define the end date of recurring."
+>abstract="End date for recurring runs."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_every"
 >title="Repeat every"
->abstract="Define a frequency of recurring scheduler."
+>abstract="How often the journey runs (e.g. daily, weekly)."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_incremental_read"
 >title="Incremental read"
->abstract="Only allow new profiles since last read to enter the journey."
+>abstract="After the first run, only new profiles added to the audience enter the journey."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_force_reentrance"
 >title="Force reentrance"
->abstract="Drop all journey participants before each audience read."
+>abstract="Clear all participants from the journey before each new audience read."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience"
 >title="Trigger after batch audience evaluation"
->abstract="Toggle on this option to trigger journey execution after a fresh evaluation of the batch audience."
+>abstract="Run the journey only after the batch audience has been freshly evaluated."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
 >title="Wait time for fresh audience evaluation"
->abstract="Specify the time duration the journey will wait for the batch audience to be freshly evaluated. Wait period is limited to integer values, can be specified in minutes or hours, and must be between 1 and 6 hours."
+>abstract="How long the journey waits for fresh audience data (1–6 hours, in minutes or hours)."
 
 By default, journeys are configured to run once. To define a specific date/time and frequency at which the journey should run, follow the steps below.
 
@@ -254,13 +287,11 @@ Once the tests are successful, you can publish your journey (see [Publishing the
 >
 >For recurring audience-based journeys, the journey will automatically close once its last occurrence is executed. If no end date/time has been specified, you will have to close the journey to new entrances manually to end it.
 
-## Audience targeting in audience-based journeys
+## Audience targeting in journeys
 
-Audience-based journeys always start with a **Read Audience** activity to retrieve individuals belonging to an [!DNL Adobe Experience Platform] audience.
+Audience-based journeys always start with a **Read Audience** activity to retrieve individuals belonging to an [!DNL Adobe Experience Platform] audience. Those profiles are read once or on a recurring schedule.
 
-The audience belonging to the audience is retrieved once or on a regular basis.
-
-After entering the journey, you can create audience orchestration use cases, making individuals from the initial audience flow into different branches of the journey.
+After they enter the journey, you orchestrate them using **Condition** activities: segment by attributes or behavior, exclude part of the population, or merge branches back together (union). The sections below describe each pattern.
 
 **Segmentation**
 
@@ -333,7 +364,7 @@ If the issue persists after these checks, see [Timing and data propagation](#tim
 
 * **Add a Wait activity**: For streaming audiences with recently ingested data, consider adding a **Wait** activity at the beginning of the journey to allow time for data propagation and profile qualification. [Learn more about the Wait activity](wait-activity.md)
 
-### Data validation and monitoring {#data-validation-and-monitoring}
+### Data validation {#data-validation-and-monitoring}
 
 * **Check segmentation job status**: Monitor batch segmentation job completion times in the [!DNL Adobe Experience Platform] [monitoring dashboard](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html){target="_blank"}. Use it to verify when audience data is ready.
 
@@ -346,7 +377,7 @@ If the issue persists after these checks, see [Timing and data propagation](#tim
 
 * **Validate namespace configuration**: Ensure the namespace selected in the **Read Audience** activity matches the primary identity used by profiles in your audience. Profiles without the selected namespace will not enter the journey. Learn more about [identity namespaces](../event/about-creating.md#select-the-namespace).
 
-### Best practices to prevent audience mismatches
+### Best practices
 
 * **Schedule journeys after segmentation**: For batch audiences, schedule journey execution at least 2-3 hours after the typical batch segmentation job completion time. [Learn more about journey scheduling](#schedule)
 
@@ -370,7 +401,9 @@ Unsuccessful **Read Audience** triggers are captured and displayed in **Alerts**
 
 * [Build audiences](../audience/about-audiences.md)
 * [Audience Qualification activity](audience-qualification-events.md)
+* [Use supplemental identifiers in journeys](supplemental-identifier.md)
 * [Journey properties and guardrails](../start/guardrails.md#read-segment-g)
+* [Journey processing rates and entry management](entry-management.md)
 * [Test a journey](testing-the-journey.md)
 * [Publish a journey](../building-journeys/publish-journey.md)
 
