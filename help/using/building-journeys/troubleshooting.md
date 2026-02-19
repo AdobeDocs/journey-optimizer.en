@@ -43,7 +43,7 @@ The system detects two kinds of issues: **errors** and **warnings**. Errors bloc
 
 <!--Most of the time, errors detected by the system are linked to errors visible on the activities but they can also relate to other issues. In all cases, check alerts and resolve the issue using to the error description. If you cannot identify the issue, use the **[!UICONTROL Copy details]** button to store the alerts, and send them to your administrator.-->
 
-Errors and warnings that are global to the journey appear first in the list. Error and warnings related to specific activities are listed after, by activity order or appearance in the journey from left to right. At the bottom of the list of alerts, the **[!UICONTROL Copy details]** button lets you copy technical information about the journey which are useful to troubleshoot the issues.
+Errors and warnings that are global to the journey appear first in the list. Error and warnings related to specific activities are listed after, by activity order or appearance in the journey from left to right. At the bottom of the list of alerts, the **[!UICONTROL Copy details]** button lets you copy technical information about the journey which are useful to troubleshoot the issues. For the list of copied fields (including pause and resume information), see [Copy technical details](journey-properties.md#access-properties) in journey properties.
 
 ## Add an alternative path {#canvas-add-path}
 
