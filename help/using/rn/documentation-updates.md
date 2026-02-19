@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## February 2026 {#february-2026}
 
+* The **Create decision policies** and **Use decision policies in messages** documentation has been updated for Email: a note now explains that when the same offer can be selected by more than one decision policy in the email body, the engine deduplicates offers (each placement receives a different offer). To display the same offer in multiple placements (for example, header and footer), use **Reuse decision output**. [Read more](../experience-decisioning/create-decision-policy.md)
+
 * The Decision items page has been updated with information on Push channel and Custom event capping. [Read more](../experience-decisioning/items.md#capping)
 
 * The **Experience event lookup in journeys** documentation has been updated with the deprecation timeline: starting April 1, 2026, organizations that have not used experience event attributes in journey expressions in the last 90 days will no longer have access to this capability. The FAQ now focuses on the retirement timeline and who is impacted, and the Experience event schema page has been aligned with a direct link to alternative approaches. [Read more](../building-journeys/exp-event-lookup.md)

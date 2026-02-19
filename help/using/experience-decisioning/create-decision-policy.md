@@ -107,7 +107,9 @@ For code-based experiences, you can add a new decision policy using either the *
 
     >[!NOTE]
     >
-    >The **[!UICONTROL Reuse decision output]** allows you to reuse a decision policy that has already been created within this email.
+    >The **[!UICONTROL Reuse decision output]** option lets you reuse a decision policy that has already been created in this email. It is particularly helpful when you want to show the same offer in multiple locations (for example, header and footer).
+    >
+    >When the same offer can be selected by more than one decision policy in the email body, the engine deduplicates offers: each placement receives a different offer, so the same offer will not appear in both places. To display the same offer in multiple placements, use **[!UICONTROL Reuse decision output]** to reuse the output of an existing decision policy in this email.
 
 >[!TAB SMS]
 
