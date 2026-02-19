@@ -55,6 +55,24 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Migrate subdomains to custom delegation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now migrate subdomains using the CNAME delegation mode to custom delegation directly from the interface, so you can meet stricter security policies in line with your company's guidelines without re-creating channel configurations.</p>
+<p><img src="assets/do-not-localize/subdomain-migration.gif"/></p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Availability date: February 19, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Web push notifications channel</strong><br/></th>
 </tr>
 </thead>
@@ -121,23 +139,6 @@ Improvements coming with this release are listed below.
 ## Coming soon {#coming-soon}
 
 The features and improvements below are planned for release later in February. Release dates and scope may change without prior notice.
-
-<table>
-<thead>
-<tr>
-<th><strong>Migrate subdomains to custom delegation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now migrate subdomains using the CNAME delegation mode to custom delegation directly from the interface, so you can meet stricter security policies in line with your company's guidelines without re-creating channel configurations.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: February 20, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>

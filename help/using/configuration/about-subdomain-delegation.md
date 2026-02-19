@@ -86,7 +86,7 @@ The custom delegation method enables you to fully own controlling and maintainin
 
 In this case, you completely own and manage our own subdomains and have full control over the certificates which are generated as part of this process.
 
-Learn how to set up a custom domain in [this section](delegate-custom-subdomain.md).
+Learn how to [set up a custom subdomain](delegate-custom-subdomain.md). If your subdomain currently uses CNAME, you can also [migrate from CNAME to custom delegation](custom-subdomain-migration.md).
 
 ## Comparing the configuration methods
 

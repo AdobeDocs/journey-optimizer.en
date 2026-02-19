@@ -17,7 +17,11 @@ exl-id: 34af1329-f0c8-4fcd-a284-f8f4214611d4
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
-As an alternative to the [Fully delegated](about-subdomain-delegation.md#full-subdomain-delegation) and [CNAME set up](about-subdomain-delegation.md#subdomain-delegation-methods) methods, the **Custom delegation** method allows you to take the ownership of your subdomains within Journey Optimizer ans to have full control over the generated certificates.
+As an alternative to the [Fully delegated](about-subdomain-delegation.md#full-subdomain-delegation) and [CNAME set up](about-subdomain-delegation.md#subdomain-delegation-methods) methods, the **Custom delegation** method allows you to take the ownership of your subdomains within Journey Optimizer and to have full control over the generated certificates.
+
+>[!NOTE]
+>
+>If your subdomain is currently set up with CNAME, you can also migrate it to custom delegation. [Learn more](custom-subdomain-migration.md)
 
 As part of this process, Adobe needs to make sure that your DNS is accordingly configured for delivering, rendering and tracking messages. This is why you will be required to [upload the SSL certificate](#upload-ssl-certificate) obtained from the Certificate Authority and complete the [Feedback Loop steps](#feedback-loop-steps) by verifying domain ownership and reporting email address.
 
@@ -141,6 +145,8 @@ To set up a custom subdomain, follow the steps below.
 1. If everything is configured properly, check the box "I have completed...".
 
     ![](assets/subdomain-custom-feedback-loop.png){width="85%"}
+
+## Copy the SSL CDN URL validation record {#copy-ssl-cdn-url-record}
 
 1. Click **[!UICONTROL Continue]** and wait until Adobe verifies that the records are generated without errors on your hosting solution. This process can take up to 2 minutes.
 

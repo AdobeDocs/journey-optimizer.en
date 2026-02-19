@@ -861,6 +861,7 @@ solution: Journey Optimizer
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
     + [Set up a custom subdomain](using/configuration/delegate-custom-subdomain.md)
+    + [Migrate from CNAME to custom delegation](using/configuration/custom-subdomain-migration.md)
     + [Set up DMARC record](using/configuration/dmarc-record.md)
     + [Add a Google TXT record](using/configuration/google-txt.md)
     + [Access & edit PTR records](using/configuration/ptr-records.md)
