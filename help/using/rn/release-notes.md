@@ -64,6 +64,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>You can now migrate subdomains using the CNAME delegation mode to custom delegation directly from the interface, so you can meet stricter security policies in line with your company's guidelines without re-creating channel configurations.</p>
 <p><img src="assets/do-not-localize/subdomain-migration.gif"/></p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../configuration/custom-subdomain-migration.md">detailed documentation</a>.</p>
 <p>Availability date: February 19, 2026</p>
 </td>
 </tr>
