@@ -7,7 +7,7 @@ feature: Journeys, Activities, Audiences
 topic: Content Management
 role: User
 level: Intermediate
-keywords: activity, journey, read, audience, platform
+keywords: activity, journey, read audience, audience, segment, batch, entry point, trigger, schedule, Audience Qualification
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 version: Journey Orchestration
 ---
@@ -15,22 +15,31 @@ version: Journey Orchestration
 
 Use the Read Audience activity to start journeys with defined audiences.
 
-## About the Read Audience activity {#about-segment-trigger-actvitiy}
+## About the Read Audience activity {#about-segment-trigger-activity}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment"
 >title="Read Audience activity"
->abstract="The Read Audience activity allows you to make all individuals belonging to an [!DNL Adobe Experience Platform] audience enter a journey. Entrance into a journey can be executed either once, or on a regular basis."
+>abstract="Add all qualified profiles from a selected [!DNL Adobe Experience Platform] audience to this journey. Run once or on a schedule."
 
-Use the **Read Audience** activity to make all individuals of an audience enter the journey. Entrance into a journey can be executed either once, or on a regular basis.
+The **Read Audience** activity is the journey entry-point activity that adds all profiles from a selected [!DNL Adobe Experience Platform] audience to a journey. You can run the entrance once or on a recurring schedule. In APIs and technical references this activity is also referred to as segment-trigger or audience-based journey entry.
 
-Let's take as an example the "Luma app opening and checkout" audience created in the [Build audiences](../audience/about-audiences.md) use case. With the Read Audience activity, you can make all individuals belonging to this audience enter a journey. They will flow into individualized journeys that leverage all journey functionalities: conditions, timers, events, actions.
+**When to use Read Audience vs Audience Qualification**
+
+| Use **Read Audience** when | Use **[Audience Qualification](audience-qualification-events.md)** when |
+|----------------------------|-----------------------------------------------------------------------|
+| You want to run a journey once or on a schedule (batch). | You need profiles to enter the journey in real time as they qualify. |
+| Your audience is batch-evaluated (e.g. daily snapshot). | Your audience is streaming or event-based. |
+| You are okay with a delay between audience evaluation and journey entry. | You need immediate entry when a profile qualifies. |
+
+**Key limits:** One Read Audience per journey (must be the first activity); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and recommendations](#must-read).
+
+**Prerequisites:** An [!DNL Adobe Experience Platform] audience that is built and evaluated (Realized status), a people-based identity namespace selected for the journey, and—for recurring runs—understanding of [scheduling and throughput limits](#must-read).
+
+For example, the `Luma app opening and checkout` audience created in the [Build audiences](../audience/about-audiences.md) use case can be used as the entry point. All qualified profiles enter the journey and progress through individualized paths using conditions, timers, events, and actions.
 
 ➡️ [Discover this feature in video](#video)
 
->[!NOTE]
->
->When a Read Audience activity executes, the system generates internal events (called `segmentExportJob` events) to track the lifecycle of the audience export operation. These events are recorded at the activity level, not per individual profile, and can be queried for monitoring and troubleshooting purposes. Learn more about [querying Read Audience events](../reports/query-examples.md#read-segment-queries).
 
 >[!CAUTION]
 >
@@ -287,11 +296,34 @@ For example, after following a different experience during ten days in a journey
 
 ![Journey paths merging back together after segmentation using union](assets/read-segment-audience3.png)
 
-## Troubleshooting audience count mismatches {#audience-count-mismatch}
+## Troubleshooting {#audience-count-mismatch}
 
-If you notice discrepancies between estimated audience counts, qualified profiles, and actual profiles entering your journey, consider the following:
+This section helps you resolve **audience count mismatches** (fewer or more profiles entering than expected), **zero profiles processed** (Read Audience alert or no entries), and **delayed or missing entries** (timing and data propagation).
 
-### Timing and data propagation
+>[!NOTE]
+>
+>When a Read Audience activity executes, the system generates internal events (called `segmentExportJob` events) to track the lifecycle of the audience export operation. These events are recorded at the activity level, not per individual profile, and can be queried for monitoring and troubleshooting purposes. Learn more about [querying Read Audience events](../reports/query-examples.md#read-segment-queries).
+
+**Find your issue:**
+
+| Symptom | Go to |
+|---------|--------|
+| Fewer (or more) profiles entered than the audience size | [Timing and data propagation](#timing-and-data-propagation), [Data validation and monitoring](#data-validation-and-monitoring) |
+| Read Audience processed zero profiles; alert fired | [Zero profiles processed](#zero-profiles-processed) |
+| Entries delayed or missing for batch audiences | [Timing and data propagation](#timing-and-data-propagation) |
+| Need to verify segment job status or namespace | [Data validation and monitoring](#data-validation-and-monitoring) |
+
+### Zero profiles processed {#zero-profiles-processed}
+
+If the **Read Audience** activity has not processed any profile (e.g. you see the [Read Audience alert](../reports/alerts.md#alert-read-audiences)):
+
+1. **Check if the audience is empty** – In [!DNL Adobe Experience Platform], verify the audience size and that profiles are in **Realized** status. An empty or not-yet-evaluated audience will result in zero entries.
+2. **Check namespace** – The namespace selected in the Read Audience activity must be present on the profiles in your audience. Profiles without that identity cannot enter the journey. [Learn more about namespaces](../event/about-creating.md#select-the-namespace).
+3. **Review Alerts and retries** – Failures are reported in **Alerts**. The system retries export job creation every 10 minutes for up to 1 hour. [Learn more about retries and alerts](#read-audience-retry).
+
+If the issue persists after these checks, see [Timing and data propagation](#timing-and-data-propagation) and [Data validation and monitoring](#data-validation-and-monitoring) for batch and configuration causes.
+
+### Timing and data propagation {#timing-and-data-propagation}
 
 * **Batch segmentation job completion**: For batch audiences, ensure that the daily batch segmentation job has completed and snapshots are updated before the journey runs. Batch audiences become ready for use approximately **2 hours** after segmentation job completion. Learn more about [audience evaluation methods](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html#evaluate-segments){target="_blank"}.
 
@@ -301,7 +333,7 @@ If you notice discrepancies between estimated audience counts, qualified profile
 
 * **Add a Wait activity**: For streaming audiences with recently ingested data, consider adding a **Wait** activity at the beginning of the journey to allow time for data propagation and profile qualification. [Learn more about the Wait activity](wait-activity.md)
 
-### Data validation and monitoring
+### Data validation and monitoring {#data-validation-and-monitoring}
 
 * **Check segmentation job status**: Monitor batch segmentation job completion times in the [!DNL Adobe Experience Platform] [monitoring dashboard](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html){target="_blank"}. Use it to verify when audience data is ready.
 
@@ -314,7 +346,7 @@ If you notice discrepancies between estimated audience counts, qualified profile
 
 * **Validate namespace configuration**: Ensure the namespace selected in the **Read Audience** activity matches the primary identity used by profiles in your audience. Profiles without the selected namespace will not enter the journey. Learn more about [identity namespaces](../event/about-creating.md#select-the-namespace).
 
-### Best practices to prevent mismatches
+### Best practices to prevent audience mismatches
 
 * **Schedule journeys after segmentation**: For batch audiences, schedule journey execution at least 2-3 hours after the typical batch segmentation job completion time. [Learn more about journey scheduling](#schedule)
 
@@ -324,7 +356,9 @@ If you notice discrepancies between estimated audience counts, qualified profile
 
 * **Monitor regularly**: Set up regular monitoring of audience sizes and journey entry metrics to detect discrepancies early. Learn more about [journey processing rates and entry management](entry-management.md).
 
-If count mismatches persist after following these steps, contact Adobe support with details about your audience, journey configuration, and observed discrepancies.
+### When to contact support
+
+If count mismatches or zero-profile runs persist after following the steps above, contact Adobe support. Have ready: audience name/ID, journey name/ID, scheduled run time(s), sandbox, and a short description of the discrepancy (e.g. "Audience shows 10K realized, only 2K entered the journey on [date]").
 
 ## Retries {#read-audience-retry}
 
