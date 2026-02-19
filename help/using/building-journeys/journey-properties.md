@@ -44,6 +44,7 @@ You can:
 The **Copy technical details** option allows you to copy technical information about the journey which the support team can use to troubleshoot. The following information is copied:
 
 **General**
+
 * `JourneyVersion UID` – Unique identifier of this version of the journey
 * `OrgID` – Your organization's (IMS) identifier
 * `orgName` – Your organization's name
@@ -52,6 +53,7 @@ The **Copy technical details** option allows you to copy technical information a
 * `lastDeployedAt` – Date and time of the last publication
 
 **Pause and resume** (included when the journey has been paused at least once)
+
 * `lastPausedAt` – Date and time of the last time the journey was paused
 * `lastPausedBy` – Display name of the user who performed the last pause
 * `lastPausedById` – Internal identifier of the user who performed the last pause
@@ -60,6 +62,7 @@ The **Copy technical details** option allows you to copy technical information a
 * `lastResumedById` – Internal identifier of the user who performed the last resume
 
 **Paused journey settings** (in `pausedJourneySettings`, when the journey is or has been paused)
+
 * `pauseBehavior` – What happens to profiles in the journey when it is paused (for example, discard them or keep them in place)
 * `maxPauseDurationInMinutes` – Maximum pause duration in minutes, after which the journey auto-resumes (for example, 20160 = 14 days)
 * `transitionStateForAutoResume` – State applied when the journey auto-resumes at the end of the pause period (for example, stop or continue)
