@@ -130,14 +130,26 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
     * **[!UICONTROL Decision event]** (default value): Maximum number of times an offer can be presented.
     * **[!UICONTROL Impression]** (inbound channels only): Maximum number of times the offer can be displayed to a user.
     * **[!UICONTROL Clicks]**: Maximum number of times the decision item can be clicked by a user.
-    * **[!UICONTROL Custom event]**: You can define a custom event that will be used to cap the number of times the item is sent. For example, you can cap on the number of redemptions until they equal 10,000, or until a given profile has redeemed 1 time. To do so, use [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} schemas to build a custom event rule.
+    * **[!UICONTROL Custom event]**: Cap based on business or behavioral experience events that you track in Adobe Experience Platform—for example, redemptions, purchases, or cart checkouts. Custom event capping uses [Adobe Experience Platform XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"} experience events that you ingest. In the dropdown, you map the specific experience event that should drive the cap so the capping counter increments each time that event is received. Capping by channel delivery events such as email send is not supported: Custom Event applies only to experience events you ingest, not to delivery or send events.
 
-    >[!NOTE]
-    >
-    >For all capping events except decision event, the decision management feedback may not be automatically collected, which could result in the capping counter not being correctly incremented. To make sure each capping event is tracked and accounted for in the capping counter, ensure that the schema used to collect experience events includes the correct field group for that event. Detailed information on data collection is available in Journey Optimizer Decision management documentation:
-    >* [Decision management data collection](data-collection/data-collection.md)
-    >* [Configure data collection](data-collection/schema-requirement.md)
+    +++Capping for the Push channel
 
+    Standard **[!UICONTROL Clicks]** and **[!UICONTROL Impression]** capping are not supported for the Push channel. To cap offers delivered via Push, use **[!UICONTROL Custom event]** capping and set the event type to **Push Tracking Application Opened** or **Push Tracking Custom Action**.
+
+    For push notifications, tracking events from the mobile channel include the Experience Cloud ID (ECID). It is recommended to use ECID in the Campaign or Journey configuration to maintain identity consistency and ensure capping works as expected.
+
+    ![](assets/push-capping.png)
+
+    +++
+
+    +++Tracking capping events (schema and data collection)
+
+    For all capping events except decision event, the decision management feedback may not be automatically collected, which could result in the capping counter not being correctly incremented. To make sure each capping event is tracked and accounted for in the capping counter, ensure that the schema used to collect experience events includes the correct field group for that event. Detailed information on data collection is available in Journey Optimizer Decision management documentation:
+    * [Decision management data collection](data-collection/data-collection.md)
+    * [Configure data collection](data-collection/schema-requirement.md)
+
+    +++
+    
 1. Choose the capping type:
 
     * Select **[!UICONTROL In total]** to define how many times the item can be proposed across the combined target audience, meaning across all users. For example, if you are an electronics retailer having a 'TV doorbuster deal', you want the offer to be only returned 200 times across all profiles.
