@@ -64,6 +64,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>You can now migrate subdomains using the CNAME delegation mode to custom delegation directly from the interface, so you can meet stricter security policies in line with your company's guidelines without re-creating channel configurations.</p>
 <p><img src="assets/do-not-localize/subdomain-migration.gif"/></p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../configuration/custom-subdomain-migration.md">detailed documentation</a>.</p>
 <p>Availability date: February 19, 2026</p>
 </td>
 </tr>
@@ -103,6 +104,29 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p><img src="assets/do-not-localize/content-decision.gif"/></p>
 <p>For more information, refer to the <a href="../building-journeys/content-decision.md">detailed documentation</a>.</p>
 <p>Availability date: February 10, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Self-service migration tooling APIs</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Migration tooling APIs are now available to programmatically migrate <strong>Decision management</strong> entities to <strong>Decisioning</strong>, featuring:</p>
+<ul>
+<li>Flexible migration scopes (sandbox, offer, or decision level)</li>
+<li>Automated dependency analysis and validation</li>
+<li>Rollback support for completed migrations</li>
+<li>Detailed migration reports with object mappings</li>
+</ul>
+<p>For more information, refer to the <a href="../experience-decisioning/decisioning-migration-api.md">detailed documentation</a>.</p>
+<p>Availability date: February 3, 2026</p>
 </td>
 </tr>
 </tbody>

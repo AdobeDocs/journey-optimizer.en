@@ -102,11 +102,6 @@ You will set: **Audience** (mandatory), **Namespace** (mandatory), **Reading rat
 
 ### Supplemental identifier {#read-audience-supplemental-id}
 
->[!CONTEXTUALHELP]
->id="ajo_journey_parameters_supplemental_identifier"
->title="Use supplemental identifier"
->abstract="Optional secondary identifier (e.g. order ID) for journey context. Select the field and its namespace."
-
 You can optionally enable **Use a supplemental identifier** to run the journey in the context of a secondary identifier (for example, an order ID or booking ID) in addition to the profile ID. This allows multiple entrances of the same profile when the supplemental identifier differs.
 
 [Learn how to use supplemental identifiers in journeys](supplemental-identifier.md). For Read audience journeys, the supplemental identifier must be a profile attribute; the reading rate is limited to 500 profiles per second when supplemental ID is used.
@@ -147,12 +142,12 @@ This value is stored in the journey version payload. The default value is 5,000 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_start_date"
 >title="Start date / time"
->abstract="When to start this journey."
+>abstract="Define when to start this journey."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_until"
 >title="Repeat until"
->abstract="End date for recurring runs."
+>abstract="Define the end date for recurring runs."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_every"
