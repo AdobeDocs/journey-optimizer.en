@@ -45,6 +45,26 @@ The image to HTML converter is ideal for:
 
 +++
 
+## Guardrails and recommendations {#limitations}
+
+Be aware of the following limitations when converting images to HTML content templates.
+
+* **AI interpretation**: The AI generates HTML based on visual interpretation of your image. Complex or unusual designs may require manual adjustments after conversion.
+
+* **Text accuracy**: While the AI attempts to recognize and reproduce text accurately, always verify text content and make corrections as needed.
+
+* **Dynamic content**: The conversion process creates static HTML based on your image. You'll need to add personalization, dynamic content, and tracking manually after conversion.
+
+* **Complex layouts**: Highly complex designs with intricate layering, unusual shapes, or non-standard elements may not convert perfectly. Simpler designs generally yield better results.
+
+* **Processing time**: The conversion process can take up to 5 minutes depending on the complexity and size of your image. The AI processing happens in the background, allowing you to work on other tasks without keeping the screen open. The template is automatically saved as a draft once the conversion is complete.
+
+* **Limited Availability**: As a Limited Availability feature, the image to HTML convertor is continuously being improved. Functionality and accuracy may vary, and your feedback helps enhance the feature.
+
+>[!NOTE]
+>
+>The image to HTML converter is designed to provide a strong starting point for email creation. The generated HTML should be reviewed and refined using the Email Designer to ensure it meets your exact requirements.
+
 ## Convert an image to an HTML template {#convert-image}
 
 To convert an image design into a fully customizable HTML email template, follow the steps below.
@@ -108,12 +128,14 @@ Your template is now available in the content template library and can be used w
 
 To achieve optimal results when converting images to HTML content templates, follow these recommendations.
 
-**Before you start**
++++Before you start
 
 * **Save existing content**: Converting an image to HTML will replace all existing content in your email. Always save your current work before using this feature.
 * **Plan your workflow**: Use the image to HTML converter at the beginning of your email creation process, or ensure you're ready to replace all current content.
 
-**Image preparation**
++++
+
++++Image preparation
 
 * **Resolution**: Use high-resolution images (at least 1200px wide) for better text recognition and element detection
 * **Clarity**: Ensure text is clearly readable and visual elements are well-defined
@@ -121,7 +143,9 @@ To achieve optimal results when converting images to HTML content templates, fol
 * **File format**: Use JPEG or PNG format - avoid compressed or low-quality images
 * **Complete design**: Include the full email design in a single image, from header to footer
 
-**Design considerations**
++++
+
++++Design considerations
 
 * **Simple layouts**: Simpler, well-structured layouts convert more accurately than highly complex designs
 * **Standard elements**: Use common email design patterns (header, body sections, CTAs, footer)
@@ -129,7 +153,9 @@ To achieve optimal results when converting images to HTML content templates, fol
 * **Web-safe fonts**: Designs using common web-safe fonts will have better fidelity
 * **Avoid overlapping elements**: Keep design elements clearly separated for better structure recognition
 
-**After conversion**
++++
+
++++After conversion
 
 * **Review your draft**: Once conversion is complete, your template is automatically saved as a draft. Take time to carefully review the generated HTML for accuracy
 * **Test thoroughly**: Test the email across different email clients and devices
@@ -138,25 +164,7 @@ To achieve optimal results when converting images to HTML content templates, fol
 * **Personalization**: Add dynamic content and personalization tokens as required
 * **Accessibility**: Review and enhance accessibility features if needed
 
-## Guardrails and recommendations {#limitations}
-
-Be aware of the following limitations when converting images to HTML content templates.
-
-* **AI interpretation**: The AI generates HTML based on visual interpretation of your image. Complex or unusual designs may require manual adjustments after conversion.
-
-* **Text accuracy**: While the AI attempts to recognize and reproduce text accurately, always verify text content and make corrections as needed.
-
-* **Dynamic content**: The conversion process creates static HTML based on your image. You'll need to add personalization, dynamic content, and tracking manually after conversion.
-
-* **Complex layouts**: Highly complex designs with intricate layering, unusual shapes, or non-standard elements may not convert perfectly. Simpler designs generally yield better results.
-
-* **Processing time**: The conversion process can take up to 5 minutes depending on the complexity and size of your image. The AI processing happens in the background, allowing you to work on other tasks without keeping the screen open. The template is automatically saved as a draft once the conversion is complete.
-
-* **Limited Availability**: As a Limited Availability feature, the image to HTML convertor is continuously being improved. Functionality and accuracy may vary, and your feedback helps enhance the feature.
-
->[!NOTE]
->
->The image to HTML converter is designed to provide a strong starting point for email creation. The generated HTML should be reviewed and refined using the Email Designer to ensure it meets your exact requirements.
++++
 
 ## Frequently asked questions {#faq}
 
