@@ -34,7 +34,7 @@ The following types of conditions are available:
 * [Date condition](#date_condition)
 * [Profile cap](#profile_cap)
 
-You can also base a condition on audience membership.
+You can also base a condition on audience membership. See these sections:
 
 * [Use an audience in a condition](#using-a-segment) – Add paths based on whether profiles belong to an audience.
 * [Build and target audiences](../audience/about-audiences.md) – Create and manage audiences in the Audiences menu.
