@@ -33,6 +33,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The SMS webhook documentation has been updated: Twilio webhook content has been removed. [Read more](../sms/sms-webhook.md)
 
+* The **Convert images to content templates** documentation has been enhanced with expanded guardrails and recommendations, common use cases, and clearer guidance for converting image designs into editable HTML content templates. It also mentions the fact that you can now use a theme as input for the conversion. [Read more](../content-management/image-to-html.md)
+
 * The Decisioning migration API documentation has been updated. [Read more](../experience-decisioning/decisioning-migration-api.md)
 
 * The **Content Decision** activity is now generally available. The Content Decision activity page has been updated with a section on Decisioning data available in step events. [Read more](../building-journeys/content-decision.md)
