@@ -142,6 +142,7 @@ Before that, verify the following:
     MIIDXTCCAkWgAwIBAgIJALc3... (base64 encoded data)
     -----END CERTIFICATE-----
     ```
+
 1. Check the box "I confirm that I have uploaded the SSL certificate".
 
 ## Complete feedback loop {#feedback-loop}
