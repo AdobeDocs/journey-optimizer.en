@@ -116,6 +116,12 @@ Improvements coming with this release are listed below.
 
 * **Experience event usage in journey expressions** - Starting April 1, 2026, the use of experience event attributes in journey expressions will no longer be supported for organizations that have not used this capability in the last 90 days. This capability has already been unavailable for new customer organizations since July 8, 2025. For alternatives, see [Experience event lookup in journeys](../building-journeys/exp-event-lookup.md).
 
+#### Email Designer
+
+* **Text indentation** - You can now apply customizable left indentation to the first line of paragraphs in text components directly from the properties panel. <!--The new **Indentation** control lets you define indentation in pixels or percentage via a numeric input or slider, with live preview on the canvas. -->This improves readability for long-form content such as editorials and articles.
+
+  Availability date: February 18, 2026.
+
 #### Content Templates
 
 * **Use themes to convert images to email templates** - When converting an image to an email template in Journey Optimizer, you can now use a theme as input so the generated HTML follows your brand parameters. Styling such as background color, button color, fonts, line spacing, margins, and padding is applied automatically, reducing manual design work and delivering a template that is ready to use with minimal edits. [Read more](../content-management/image-to-html.md)
