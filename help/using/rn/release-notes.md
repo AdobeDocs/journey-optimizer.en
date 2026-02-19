@@ -242,10 +242,6 @@ The features and improvements below are planned for release later in February. R
 
   Availability date: February 20, 2026.
 
-* **Multiple inbound actions in journeys (GA)** - Journey Optimizer now supports multiple inbound actions in journeys (General Availability), enabling more flexible journey design and event handling.
-
-  Availability date: February 20, 2026.
-
 * **Integration of custom Firefly models and third-party image generation models** - Enable seamless integration of standard and custom Firefly models, along with approved third-party image models (e.g., NanoBanana), to provide greater flexibility, control, and brand alignment when generating images. This allows you to select the best model for each use case: standard Firefly for general needs, custom Firefly for on-brand generation, or approved third-party models for specialized or experimental scenarios.
 
   Availability date: February 20, 2026.
