@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: waves, batches, schedule, campaign, journey, deliverability
+exl-id: 6d53d817-78f6-4d00-8ff0-8a848c618435
 ---
 # Send using waves in campaigns {#send-using-waves}
 
