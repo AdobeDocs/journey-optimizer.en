@@ -36,8 +36,6 @@ For example, if you schedule a campaign to send at 9 AM using profile timezone, 
 
 >[!AVAILABILITY]
 >
->This feature is in Limited Availability. Contact your Adobe representative to gain access.
->
 >Scheduling using profile time zones is available for these outbound channels only: Email, Push, SMS, WhatsApp, and LINE.
 
 To enable profile timezone scheduling:
@@ -56,7 +54,9 @@ The campaign remains in **Live** status while messages are being delivered acros
 
 **Supported time zone identifiers:**
 
-Journey Optimizer validates the `profile.timeZone` value against standard IANA time zone identifiers. Identifiers are case-sensitive and must match the official IANA naming. Offsets can change over time due to daylight-saving rules and historical updates. Refer to the [IANA Time Zone Database](https://www.iana.org/time-zones){_blank} for the official list of identifiers.
+The `profile.timeZone` format can be either IANA naming or defined as UTC offsets. IANA naming is the preferred format, as it automatically adjusts for daylight-saving rules.
+
+For IANA naming, the identifiers are case-sensitive and must match the official IANA naming. Offsets can change over time due to daylight-saving rules and historical updates. Refer to the [IANA Time Zone Database](https://www.iana.org/time-zones){_blank} for the official list of identifiers.
 
 ## Set an execution frequency
 
