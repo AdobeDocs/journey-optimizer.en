@@ -17,8 +17,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 <!--**Release date**: January 27-28, 2026-->
 
-The [Features](#jan-26-01-features) and [Improvements](#jan-26-01-improv) sections cover capabilities already available, while [Coming soon](#jan-26-01-coming-soon) lists items scheduled for a later availability date.
-
 ### New capabilities {#jan-26-01-features}
 
 
