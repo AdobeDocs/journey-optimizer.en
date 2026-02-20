@@ -4,7 +4,7 @@ product: journey optimizer
 title: Send using waves
 description: Schedule outbound campaign messages to be delivered in controlled batches over time. Wave sending supports deliverability and helps maintain sender reputation.
 feature: Campaigns
-topic: Campaign scheduling
+topic: Content Management
 role: User
 level: Intermediate
 keywords: waves, batches, schedule, campaign, journey, deliverability
