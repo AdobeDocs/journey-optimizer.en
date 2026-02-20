@@ -212,10 +212,6 @@ The following example lets you calculate the total sum of prices for products in
 
 ## Execution Metadata {#execution-metadata}
 
->[!AVAILABILITY]
->
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
-
 The `executionMetadata` helper allows to dynamically capture and store custom key-value pairs into the message execution context.
 
 **Syntax**
