@@ -53,6 +53,7 @@ solution: Journey Optimizer
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
+    + [Send using waves in journeys](using/building-journeys/send-using-waves.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
@@ -144,6 +145,7 @@ solution: Journey Optimizer
     + [Edit the campaign content](using/campaigns/campaign-content.md)
     + [Define the campaign audience](using/campaigns/campaign-audience.md)
     + [Schedule the campaign](using/campaigns/campaign-schedule.md)
+    + [Send using waves](using/campaigns/send-using-waves.md)
     + [Review & activate an Action campaign](using/campaigns/review-activate-campaign.md)
   + API triggered campaigns {#api-triggered-campaigns}
     + [API triggered campaigns](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)

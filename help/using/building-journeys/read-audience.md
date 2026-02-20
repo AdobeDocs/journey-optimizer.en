@@ -202,6 +202,10 @@ By default, journeys are configured to run once. To define a specific date/time 
 
     ![Scheduler type dropdown with frequency options: once, daily, weekly, monthly](assets/read-segment-schedule-list.png)
 
+>[!TIP]
+>
+>To deliver outbound messages in batches over time instead of all at once, you can configure wave sending in the journey schedule. [Learn how to send using waves in journeys](send-using-waves.md)
+
 For recurring journeys, specific options are available to help you manage the entry of profiles into the journey. Expand the sections below for more information on each option.
 
 ![Read audience recurring options: Incremental read, Force reentrance, Trigger after batch](assets/read-audience-options.png)

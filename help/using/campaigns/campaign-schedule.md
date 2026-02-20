@@ -91,6 +91,12 @@ To set rate control, enable the **[!UICONTROL Throttle delivery]** option in the
 >
 >When setting a delivery rate, the maximum timeframe for which campaign audience can execute is 12 hours. If the delivery rate is set to a value which does not allow all the audience to be sent the message in the 12 hour timeframe, then the remaining profiles would be excluded from the campaign. You can see the count of these excluded profiles in the campaign report.
 
+## Send using waves
+
+To deliver your campaign message in batches over time instead of all at once, you can use wave sending. This helps balance load, support deliverability, and avoid overwhelming downstream systems (for example, call centers or landing pages). You define the number of waves, their size (by percentage or absolute number), and the schedule for each wave.
+
+[Learn how to send using waves](send-using-waves.md).
+
 ## Next steps {#next}
 
 Once your campaign schedule is ready, you can review and activate the campaign. [Learn more](review-activate-campaign.md)

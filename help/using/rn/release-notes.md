@@ -55,6 +55,32 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Wave sending of outbound messages</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now schedule messages from Journey Optimizer campaigns or journeys to be delivered in controlled batches over time.</p>
+<p>Wave sending offers the following benefits:</p>
+<ul>
+<li>Better deliverability – Spread sends over time to help maintain a strong sender reputation and reduce the risk of being flagged as spam.</li>
+<li>Load control – Avoid overwhelming downstream systems (e.g. call centers, landing pages) by limiting how many messages go out at once.</li>
+<li>High-volume and time-sensitive use cases – Suited to large audiences or when you need to control timing (e.g. call center capacity, ramp-up, or time-bound offers).</li>
+</ul>
+<p><img src="assets/do-not-localize/waves.gif"/></p>
+<p>In <strong>campaigns</strong>, this capability is available to all environments (General Availability). For more information, refer to the <a href="../campaigns/send-using-waves.md">detailed documentation</a>.</p>
+
+<p>In <strong>journeys</strong>, this capability is only available for a set of organizations (Limited Availability) – To gain access, contact your Adobe representative. For more information, refer to the <a href="../building-journeys/send-using-waves.md">detailed documentation</a>.</p>
+<p>Availability date: February 19, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Migrate subdomains to custom delegation</strong><br/></th>
 </tr>
 </thead>
@@ -186,29 +212,6 @@ The features and improvements below are planned for release later in February. R
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Wave sending of outbound messages</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now schedule outbound messages from Journey Optimizer campaigns or journeys to be delivered in controlled batches over time.</p>
-<p>Wave sending offers the following benefits:</p>
-<ul>
-<li>Better deliverability – Spread sends over time to help maintain a strong sender reputation and reduce the risk of being flagged as spam.</li>
-<li>Load control – Avoid overwhelming downstream systems (e.g. call centers, landing pages) by limiting how many messages go out at once.</li>
-<li>High-volume and time-sensitive use cases – Suited to large audiences or when you need to control timing (e.g. call center capacity, ramp-up, or time-bound offers).</li>
-</ul>
-<p>In campaigns, this capability is available to all environments (General Availability).</p>
-<p>In journeys, this capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: February 20, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
