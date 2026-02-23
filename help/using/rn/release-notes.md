@@ -299,7 +299,7 @@ The features and improvements below are planned for release later in February. R
 <li>The ability to add both experimentation and multilingual options to any action.</li>
 </ul>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: February 20, 2026</p>
+<p>Availability date: early March, 2026</p>
 </td>
 </tr>
 </tbody>
