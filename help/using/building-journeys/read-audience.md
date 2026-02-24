@@ -388,7 +388,7 @@ If the issue persists after these checks, see [Timing and data propagation](#tim
 
 ### When to contact support
 
-If count mismatches or zero-profile runs persist after following the steps above, contact Adobe support. Have ready: audience name/ID, journey name/ID, scheduled run time(s), sandbox, and a short description of the discrepancy (e.g. "Audience shows 10K realized, only 2K entered the journey on [date]").
+If count mismatches or zero-profile runs persist after following the steps above, [contact Adobe support](../start/user-interface.md#support-ticket-guidelines). Have ready: audience name/ID, journey name/ID, scheduled run time(s), sandbox, and a short description of the discrepancy (e.g. "Audience shows 10K realized, only 2K entered the journey on [date]").
 
 ## Retries {#read-audience-retry}
 

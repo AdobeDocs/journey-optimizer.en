@@ -14,6 +14,8 @@ The following is a list of troubleshooting articles for Adobe Journey Optimizer.
 
 See also the [Adobe Experience Platform FAQ and Troubleshooting documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/troubleshooting){target="_blank"}.
 
+When contacting Adobe support for unresolved issues, include environment details, impact level, replication steps, logs or screenshots, and relevant IDs. [Learn what to include in support tickets](user-interface.md#support-ticket-guidelines).
+
 ## Email channel {#ajo-troubleshooting-email}
 
 +++ How to prevent email formatting issues in Adobe Journey Optimizer using themes?

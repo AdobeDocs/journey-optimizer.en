@@ -93,7 +93,7 @@ If you encounter persistent transition issues:
 1. Verify the journey start date is current
 1. Deactivate and reactivate test mode
 1. If the issue persists, consider duplicating the affected journey nodes and reconnecting them
-1. For unresolved cases, contact support with journey logs, the impacted profile IDs, and details about the null transition
+1. For unresolved cases, [contact support](../start/user-interface.md#support-ticket-guidelines) with journey logs, the impacted profile IDs, and details about the null transition
 
 >[!NOTE]
 >
@@ -203,4 +203,4 @@ If the metrics displayed in the **Overview** dashboard do not match the actual n
 * Check that you have the appropriate access permissions to view all journeys in your organization.
 * Allow up to 30 minutes for metrics to refresh after making changes to your journeys.
 
-If discrepancies persist, contact Adobe Support with screenshots of both the Overview and Browse tabs for investigation.
+If discrepancies persist, [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with screenshots of both the Overview and Browse tabs for investigation.

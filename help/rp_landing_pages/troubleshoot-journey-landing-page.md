@@ -102,6 +102,16 @@ Validate and debug custom actions using the **Send test request** feature to ens
 [Validate custom actions](../using/action/troubleshoot-custom-action.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/help.svg)
+
+Support Ticket Guidelines
+
+Learn what to include when contacting Adobe support—environment details, impact level, replication steps, logs or screenshots, and relevant IDs—to expedite resolution.
+
+[Support ticket guidelines](../using/start/user-interface.md#support-ticket-guidelines)
+:::
+
 ::::
 
 ## Additional resources

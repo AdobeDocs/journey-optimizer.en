@@ -133,11 +133,7 @@ When encountering an error code, follow this systematic approach:
 
 6. **Retry when appropriate**: For 500-series errors, a simple retry after a few minutes often resolves transient issues.
 
-7. **Escalate when needed**: If the error persists after following resolution steps, contact Adobe Support with:
-   * Complete error code
-   * Request ID (if available)
-   * Steps to reproduce
-   * Relevant configuration details
+7. **Escalate when needed**: If the error persists after following resolution steps, [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with the complete error code, request ID (if available), steps to reproduce, and relevant configuration details.
 
 ## Best practices to avoid common errors {#best-practices}
 
@@ -182,7 +178,7 @@ If you encounter persistent errors that cannot be resolved using this guide:
 2. **Check system status**: Visit [Adobe Status](https://status.adobe.com/){target="_blank"} for known service issues
 3. **Search documentation**: Review [Adobe Experience League](https://experienceleague.adobe.com/docs/journey-optimizer.html){target="_blank"} for solutions
 4. **Engage community**: Post questions in the [[!DNL Adobe Journey Optimizer] Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
-5. **Contact Adobe Support**: Submit a support ticket with all relevant details
+5. **Contact Adobe Support**: [Submit a support ticket](../start/user-interface.md#support-ticket-guidelines) with all relevant details
 
 >[!NOTE]
 >

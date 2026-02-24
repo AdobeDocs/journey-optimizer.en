@@ -97,7 +97,19 @@ Click the **Help** icon to:
 * Contact Adobe support
 * Share feedback
 
+Contextual help displays guidance relevant to the screen you are viewing and links directly to the corresponding documentation, so you can get the right information without leaving your workflow.
+
 ![Contextual help example](assets/do-not-localize/Context-help.gif)
+
+### Support ticket guidelines {#support-ticket-guidelines}
+
+When contacting Adobe support, include the following to help expedite root cause analysis and resolution:
+
+* **Environment details** – Sandbox name, organization ID, and product area (e.g., Journeys, Campaigns, Decisioning)
+* **Impact level** – Severity of the issue (e.g., production blocked, limited functionality, cosmetic)
+* **Replication steps** – Clear, step-by-step instructions to reproduce the issue
+* **Logs or screenshots** – Relevant error messages, request IDs, or screenshots that illustrate the problem
+* **Relevant IDs** – Journey ID, campaign ID, audience ID, or other object identifiers related to the issue
 
 ### Notifications {#notifications}
 
