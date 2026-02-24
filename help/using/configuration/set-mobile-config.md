@@ -23,9 +23,9 @@ exl-id: 846e0d11-798b-4f3b-80db-848a17d32830
 >abstract="Adobe Experience Platform Assurance is embedded into this workflow to help you inspect your SDK implementation, as well as simulate and validate application events."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance Overview"
 
-This set up facilitates the expeditious configuration of marketing channels, ensuring all required resources are readily available within Experience Platform, Journey Optimizer, and Data Collection. This enables your marketing team to start with campaign and journey creation.
+**Guided Channel Setup** is a streamlined workflow in Adobe Journey Optimizer that helps you quickly configure mobile and web marketing channels. It lives under **Administration** > **Channels** > **Channel configuration** and automates the creation of essential resources—such as tag properties, datastreams, and channel configurations—across Adobe Experience Platform, Journey Optimizer, and Data Collection. Instead of manually configuring each component, you follow a guided flow that sets everything up for you, so your marketing team can start creating In-app messages, push notifications, and web experiences without delay.
 
-The Guided Channel setup supports the following platforms and channels.
+The Guided Channel Setup supports the following platforms and channels.
 
 * Platforms and SDKs:
 
