@@ -9,4 +9,5 @@
 {"timestamp": "2026-01-26T14:41:51.421784+00:00", "agent": "draft-page-generator", "version": "2.0.0", "user": "Marie Lemaitre", "action": "start", "status": "started"}
 {"timestamp": "2026-01-26T14:59:21.960668+00:00", "agent": "draft-page-generator", "version": "2.0.0", "user": "Marie Lemaitre", "action": "complete", "status": "success", "page": "help/using/loyalty-challenges/access-loyalty-challenges.md", "sources": "jira"}
 {"timestamp":"2026-02-04T11:06:27Z","agent":"feedback-agent","version":"1.1.0","user":"Alice Simonet","action":"start","status":"started"}
-{"timestamp":"2026-02-12T14:05:00Z","agent":"content-updater","version":"1.0.0","user":"Marie Lemaitre","action":"start","status":"started"}
+{"timestamp":"2026-02-12T14:05:00Z","agent":"content-updater","version":"1.0.0","user":"Marie Lemaitre","action":"start","status":"started"}{"timestamp":"2026-02-24T10:24:42Z","agent":"upgrade-agents","version":"1.0.0","repo":"journey-optimizer.en","action":"start","status":"started"}
+{"timestamp":"2026-02-24T10:24:45Z","agent":"upgrade-agents","version":"1.0.0","repo":"journey-optimizer.en","action":"complete","status":"error","error":"Cursor Agents not installed"}

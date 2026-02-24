@@ -103,7 +103,7 @@ Validate and debug custom actions using the **Send test request** feature to ens
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/help.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/question.svg)
 
 Support Ticket Guidelines
 
