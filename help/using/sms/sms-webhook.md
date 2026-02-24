@@ -10,6 +10,17 @@ exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
 ---
 # Create Webhook {#webhook}
 
+>[!CONTEXTUALHELP]
+>id="ajo_channels_sms_webhook_settings_create"
+>title="Create an SMS Webhook"
+>abstract="You can configure Webhooks to capture inbound responses for managing opt-in and opt-out consent, and to receive delivery reports including read receipts where available."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_flow_type"
+>title="Choose your Webhook Type"
+>abstract="When setting up a webhook, choose **Inbound** to capture consent responses and user preferences, or **[!UICONTROL Feedback]** to track delivery and engagement events for reporting and analysis."
+
 >[!BEGINSHADEBOX]
 
 If opt-in or opt-out keywords are not provided, standard consent messages are used to honor user privacy. Adding custom keywords automatically overrides the defaults.
