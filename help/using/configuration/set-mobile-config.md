@@ -110,15 +110,20 @@ Note that for each platform that you would like to setup, it is required to crea
 
 * If you are using the Existing configuration option, please ensure that you are using the following Adobe Experience Platform Mobile SDK extension versions. For more details on the SDK setup including the required dependencies and initialization code, please refer to the [following documentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks).
   
-  For Android
+>[!BEGINTABS]
 
-    * Mobile Core v3.1.0 or later
-    * Adobe Journey Optimizer v3.1.0 or later
+>[!TAB For iOS]
 
-  For iOS
+* Mobile Core v5.2.0 or later
+* Adobe Journey Optimizer v5.1.1 or later
 
-    * Mobile Core v5.2.0 or later
-    * Adobe Journey Optimizer v5.1.1 or later
+>[!TAB For Android]
+
+* Mobile Core v3.1.0 or later
+* Adobe Journey Optimizer v3.1.0 or later
+
+>[!ENDTABS]
+
 
 ## Auto-created resources {#auto-create-resources}
 
