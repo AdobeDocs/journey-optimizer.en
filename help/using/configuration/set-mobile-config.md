@@ -117,10 +117,12 @@ Note that for each platform that you would like to setup, it is required to crea
 * Mobile Core v5.2.0 or later
 * Adobe Journey Optimizer v5.1.1 or later
 
+
 >[!TAB For Android]
 
 * Mobile Core v3.1.0 or later
 * Adobe Journey Optimizer v3.1.0 or later
+
 
 >[!ENDTABS]
 
@@ -129,7 +131,7 @@ Note that for each platform that you would like to setup, it is required to crea
 
 The Guided Channel Setup simplifies the rapid configuration of marketing channels, making all essential resources readily available in the Experience Platform, Journey Optimizer, and Data Collection apps. This allows your marketing team to quickly start creating campaigns and journeys. Below is a list of the resources that are auto generated and configured as a part of the Guided Channel Setup.
 
-Browse through the tabs below to access the comprehensive lists of all the resources that are auto generated:
+Browse the tabs below to access the comprehensive lists of all the resources that are auto generated:
 
 >[!BEGINTABS]
 
