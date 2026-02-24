@@ -28,25 +28,25 @@ exl-id: 846e0d11-798b-4f3b-80db-848a17d32830
 The Guided Channel Setup supports the following platforms and channels.
 
 >[!BEGINTABS]
->
+
 >[!TAB iOS]
->
->**SDK:** Swift by Apple
->
->**Channels:** Mobile In-App, Mobile Push Message
->
+
+**SDK:** Swift by Apple
+
+**Channels:** Mobile In-App, Mobile Push Message
+
 >[!TAB Android]
->
->**SDK:** Kotlin
->
->**Channels:** Mobile In-App, Mobile Push Message
->
+
+**SDK:** Kotlin
+
+**Channels:** Mobile In-App, Mobile Push Message
+
 >[!TAB Web]
->
->**SDK:** Javascript
->
->**Channels:** Web Basic
->
+
+**SDK:** Javascript
+
+**Channels:** Web Basic
+
 >[!ENDTABS]
 
 Note that for each platform that you would like to setup, it is required to create a separate configuration. This is because each app requires a unique Channel Configuration, and this provides the flexibility to determine which channels you would like for each platform.
