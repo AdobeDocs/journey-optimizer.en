@@ -209,8 +209,7 @@ solution: Journey Optimizer
       + [Engage customers by browsing activity](using/orchestrated/engage-customers-uc.md)
       + [Notify users about product availability](using/orchestrated/product-availability-uc.md)
 + Conflict & prioritization {#conflict-prioritization}
-  + [Conflict management & prioritization](/help/rp_landing_pages/conflict-prioritization-landing-page.md)
-  + [Get started with conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
+  + [Conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
   + [Identify potential conflicts](using/conflict-prioritization/conflicts.md)
   + [Assign priority scores](using/conflict-prioritization/priority-scores.md)
   + Set message & journey capping rules {#capping-rules}
@@ -855,7 +854,6 @@ solution: Journey Optimizer
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + [Export message content](using/configuration/message-export.md)
   + Guided channel setup {#guided-setup}
-    + [Guided channel setup](/help/rp_landing_pages/guided-setup-landing-page.md)
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
     + [Create a channel set up](using/configuration/create-channel-set-up.md)
   + Delegate email subdomains {#delegate-subdomains}
@@ -924,7 +922,6 @@ solution: Journey Optimizer
     + [Campaign v7/v8 action in journeys](using/action/acc-action.md)
     + [Marketo Engage action in journeys](using/action/marketo-engage.md)
   + Sandboxes management {#sandbox}
-    + [Sandboxes management](/help/rp_landing_pages/sandbox-landing-page.md)
     + [Use and assign sandboxes](using/administration/sandboxes.md)
     + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)

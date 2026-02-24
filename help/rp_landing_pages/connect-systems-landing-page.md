@@ -60,7 +60,7 @@ Sandboxes Management in Adobe Journey Optimizer
 
 Effectively manage virtual environments, roles, and workflows with sandboxes in Adobe Journey Optimizer.
 
-[Manage your sandboxes](sandbox-landing-page.md)
+[Manage your sandboxes](../using/administration/sandboxes.md)
 :::
 
 :::
