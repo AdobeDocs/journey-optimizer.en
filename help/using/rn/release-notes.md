@@ -276,9 +276,9 @@ The features and improvements below are planned for release later in February. R
 <tbody>
 <tr>
 <td>
-<p>You can now use <strong>ranking formulas</strong> and <strong>AI models</strong> to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
+<p>You can now use <strong>ranking formulas</strong> <!--and <strong>AI models</strong> -->to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: February 24, 2026</p>
+<p>Availability date: early March, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -318,7 +318,7 @@ The features and improvements below are planned for release later in February. R
 <td>
 <p>Journey Optimizer now allows you to monitor the health, training status, and performance of your Decisioning AI models. This allows you to verify training success, troubleshoot failures, and understand impact on your outcomes in order to select the best offers for each customer using AI. Note that this capability is available for <strong>Decisioning</strong> only (not for legacy Decision Management models).</p>
 <p>This capability is currently available for <strong>personalized optimization</strong> models only (not auto-optimization).</p>
-<p>Availability date: February 20, 2026</p>
+<p>Availability date: early March, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -326,9 +326,9 @@ The features and improvements below are planned for release later in February. R
 
 ### Improvements {#coming-soon-improv}
 
-* **Experience Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Experience Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
+<!--* **Experience Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Experience Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
 
-  Availability date: February 20, 2026.
+  Availability date: early March, 2026.-->
 
 * **Integration of custom Firefly models and third-party image generation models** - Enable seamless integration of standard and custom Firefly models, along with approved third-party image models (e.g., NanoBanana), to provide greater flexibility, control, and brand alignment when generating images. This allows you to select the best model for each use case: standard Firefly for general needs, custom Firefly for on-brand generation, or approved third-party models for specialized or experimental scenarios.
 
