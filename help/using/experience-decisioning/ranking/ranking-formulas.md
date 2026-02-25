@@ -123,7 +123,7 @@ To define criteria directly from the interface, follow the steps below.
 
 1. Click **[!UICONTROL Create]** to complete your ranking formula. You can now select it from the list to view its details, and edit or delete it. It is ready to be used in a [selection strategy](../selection-strategies.md) to rank eligible decision items.
 
-### Ranking formula example
+### Ranking formula example {#ranking-formula-example}
 
 Consider the example below:
 

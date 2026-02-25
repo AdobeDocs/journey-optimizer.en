@@ -218,6 +218,9 @@ solution: Journey Optimizer
     + [Manage journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
     + [Set frequency capping by channel and type](using/conflict-prioritization/channel-capping.md)
     + [Set quiet hours](using/conflict-prioritization/quiet-hours.md)
+  + Journey arbitration {#journey-arbitration}
+    + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
+    + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
 + Test & approve {#test}
   + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
