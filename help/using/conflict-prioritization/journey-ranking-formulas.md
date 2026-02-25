@@ -6,6 +6,7 @@ role: User
 level: Intermediate
 version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
+exl-id: b172e0e1-b78e-4d96-ab88-254507b55f48
 ---
 # Use formulas to rank journeys {#journey-ranking-formulas}
 
@@ -188,4 +189,3 @@ Reporting for journey arbitration helps you understand how rule sets and ranking
 * **Cross-journey view** – Time-based view of profiles across journeys (e.g. journey enters, failures, exclusions) to see the impact of capping and ranking.
 
 Use these reports to validate that your formulas and caps are behaving as intended and to tune ranking logic over time.-->
-
