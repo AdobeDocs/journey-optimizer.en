@@ -52,6 +52,33 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </table>
 -->
 
+
+<table>
+<thead>
+<tr>
+<th><strong>Action activity in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer supports a new generic <strong>Action activity</strong> that enables you to configure both single actions and multi-action inbound action groups, allowing for streamlined action configuration within the journey canvas. In particular, this new feature allows for:</p>
+<ul>
+<li>A simplified native action configuration within the journey canvas.</li>
+<li>The capacity to create multi-action inbound action groups.</li>
+<li>The ability to add optimization to any built-in channel action.</li>
+<li>The ability to add both experimentation and multilingual options to any action.</li>
+</ul>
+<p><img src="assets/do-not-localize/action-activity.gif"/></p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>For more information, refer to the <a href="../building-journeys/journey-action.md">detailed documentation</a>.</p>
+<p>Availability date: February 20, 2026</p>
+<p><strong>Note:</strong> All native channels are now accessible through the Action journey activity. Legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 <table>
 <thead>
 <tr>
@@ -253,6 +280,24 @@ The features and improvements below are planned for release later in February. R
 <table>
 <thead>
 <tr>
+<th><strong>Journey arbitration</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now use <strong>ranking formulas</strong> to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
+<!--p><img src="assets/do-not-localize/journey-arbitration-formulas.gif"/></p-->
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Availability date: February 25, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey Agent: Channel content creation</strong><br/></th>
 </tr>
 </thead>
@@ -260,47 +305,6 @@ The features and improvements below are planned for release later in February. R
 <tr>
 <td>
 <p>Powered by <strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now also generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in <strong>Content Designer</strong> for in-context editing.</p>
-<p>Availability date: early March, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey arbitration</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now use <strong>ranking formulas</strong> <!--and <strong>AI models</strong> -->to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: early March, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Action activity in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer supports a new generic <strong>Action activity</strong> that enables you to configure both single actions and multi-action inbound action groups, allowing for streamlined action configuration within the journey canvas. In particular, this new feature allows for:</p>
-<ul>
-<li>A simplified native action configuration within the journey canvas.</li>
-<li>The capacity to create multi-action inbound action groups.</li>
-<li>The ability to add optimization to any built-in channel action.</li>
-<li>The ability to add both experimentation and multilingual options to any action.</li>
-</ul>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p>Availability date: early March, 2026</p>
 </td>
 </tr>

@@ -28,7 +28,9 @@ It allows for:
 
 >[!NOTE]
 >
->You can also set up custom actions to send your messages in [!DNL Journey Optimizer]. [Learn more](#recommendation)
+>All native channels are now accessible through the Action journey activity. Legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+
+You can also set up custom actions to send your messages in [!DNL Journey Optimizer]. [Learn more](#recommendation)
 
 ## Add an action to a journey  {#add-action}
 

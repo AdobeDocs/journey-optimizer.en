@@ -27,6 +27,8 @@ To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** ac
 
 1. Open your journey, then drag and drop an **[!UICONTROL Email]** activity from the **[!UICONTROL Actions]** section of the palette.
 
+    <!--You can also use the **[!UICONTROL Action]** activity to add email to a journey—select the Email channel when configuring the action. The **[!UICONTROL Email]** activity will soon be deprecated. [Learn more about the Action activity](../building-journeys/journey-action.md).-->
+
 1. Provide basic information on your message (label, description, category).
 
 1. Choose or create the [email configuration](email-settings.md).
