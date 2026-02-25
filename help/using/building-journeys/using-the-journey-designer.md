@@ -96,7 +96,7 @@ The other activities allow you to add conditions to your journey to define sever
 
 Actions are what you want to happen as result of some kind of trigger, like sending a message. It is the piece of journey that the customer experiences. This could be an email, SMS or Push message, or a third-party action, such as a Slack message.
 
-The channel action activities allows you to include a message designed in [!DNL Journey Optimizer]. [Learn more about the channel action activities](journeys-message.md)
+The channel action activities allows you to include a message designed in [!DNL Journey Optimizer]. [Learn more about the channel action activities](journey-action.md)
 
 From the action activities, use custom actions to send messages with third-party systems. [Learn more about custom actions](about-journey-activities.md#action-activities).
 

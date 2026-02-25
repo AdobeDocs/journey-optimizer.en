@@ -24,7 +24,7 @@ The Campaign Standard transactional message and its associated event must be pub
 
 * You cannot use a Campaign Standard action with an Audience qualification or Read audience activity.
 
-* A journey cannot use both [built-in channel actions](../building-journeys/journeys-message.md) and [Campaign Standard actions](../building-journeys/using-adobe-campaign-standard.md).
+* A journey cannot use both [built-in channel actions](../building-journeys/journey-action.md) and [Campaign Standard actions](../building-journeys/using-adobe-campaign-standard.md).
 
 ## Configure the action {#configure-action}
 

@@ -18,13 +18,15 @@ version: Journey Orchestration
 >title="Built-in channel action"
 >abstract="Journey Optimizer comes with built-in channel action capabilities. You can simply add, to your journey, a message (email, text message (SMS/MMS), push, direct mail) or an inbound experience (In-app, web, code-based experience, content card) activity, and define settings and content. It is then executed and sent in the context of the journey."
 
-[!DNL Journey Optimizer] comes with built-in channel action capabilities which are used to send messages: when a profile enters this activity, a message is sent to them. 
+[!DNL Journey Optimizer] comes with built-in channel action capabilities which are used to send messages. To add a built-in channel action to your journey, drag and drop a channel activity, and define its settings and content. It is then executed and sent in the context of the journey.
 
-To add a built-in channel action to your journey, drag and drop a channel activity, and define its settings and content. It is then executed and sent in the context of the journey.
+All native channels are now also accessible through the **Action** activity, which is the recommended way to add a built-in channel action to your journey. [Learn more](journey-action.md)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->You can also set up custom actions to send your messages in [!DNL Journey Optimizer] . [Learn more](#recommendation)
+>Legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+
+You can also set up custom actions to send your messages in [!DNL Journey Optimizer]. [Learn more](#recommendation)
 
 ## Add a message in a journey  {#add-msg-in-journey}
 

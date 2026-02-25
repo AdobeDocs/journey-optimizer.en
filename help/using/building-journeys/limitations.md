@@ -45,7 +45,7 @@ Here are limitations related to the use of journeys.
 
 ## Reaction events limitations {#reaction-limitations}
 
-* **[!UICONTROL Reaction]** activities must be placed immediately after a [channel action activity](../building-journeys/journeys-message.md) in the journey canvas. Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected. Learn more in [this section](../building-journeys/reaction-events.md).
+* **[!UICONTROL Reaction]** activities must be placed immediately after a [channel action activity](../building-journeys/journey-action.md) in the journey canvas. Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected. Learn more in [this section](../building-journeys/reaction-events.md).
 
 ## Data sources limitations {#data-sources-limitations}
 

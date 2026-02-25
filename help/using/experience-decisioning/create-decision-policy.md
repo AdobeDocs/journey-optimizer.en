@@ -43,7 +43,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
 
 ## Add a decision policy {#add}
 
-To add a decision policy in your message, open a journey or campaign,and select a [channel action](../building-journeys/journeys-message.md).
+Open a journey or campaign, select a [channel action](../building-journeys/journey-action.md) and edit the content of your message.
 
 Edit the content of your message and browse the tabs below for more information on how to add the decision policy based on the selected channel.
 

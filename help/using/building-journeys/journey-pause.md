@@ -80,7 +80,7 @@ When a journey is paused, profile management and activity execution depends on t
 | [Wait](wait-activity.md)             | Same behavior as in a live journey | 
 | [Condition](condition-activity.md)  | Same behavior as in a live journey |
 | [Content Decision](content-decision.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
-| [Channel Action](journeys-message.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
+| [Channel Action](journey-action.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Update Profile](update-profiles.md) & [Jump](jump.md) | Profiles are parked or discarded based on what the user has chosen when the journey has been paused  |
 | [External Data Source](../datasource/external-data-sources.md)  | Same behavior as in a live journey |

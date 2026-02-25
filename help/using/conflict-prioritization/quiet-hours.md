@@ -127,7 +127,7 @@ Once your rule is saved and the rule set is activated, you can apply it to actio
 
 >[!TAB Apply Quiet hours channel actions in journeys]
 
-1. Open your journey, select a [channel action](../building-journeys/journeys-message.md) and edit the content of your message.
+1. Open your journey, select a [channel action](../building-journeys/journey-action.md) and edit the content of your message.
 1. Click the **[!UICONTROL Add Business Rule]** button and select the rule set containing the Quiet hours rule.
 
    ![](assets/quiet-hours-apply.png)

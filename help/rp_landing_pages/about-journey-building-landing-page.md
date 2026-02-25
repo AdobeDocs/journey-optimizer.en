@@ -8,7 +8,7 @@ exl-id: 9342ef70-43a7-4763-9ae0-bb95b8b7f7f1
 ---
 # Activities{#section-overview}
 
-Activities in Adobe Journey Optimizer are the building blocks that bring your customer journeys to life by enabling you to trigger events, make decisions, and take meaningful actions across channels. Whether it's listening for a purchase event, sending a personalized email, or updating a profile in real time, activities let you customize every step of the journey. Each type of activity- like Event, Orchestration, or Action- plays a unique role, working together to create seamless, engaging experiences. As you explore these tools, you’ll discover how to use triggers, conditions, and actions to craft journeys that are as dynamic as your customers’ needs.
+Activities in Adobe Journey Optimizer are the building blocks that bring your customer journeys to life by enabling you to trigger events, make decisions, and take meaningful actions across channels. Whether it's listening for a purchase event, sending a personalized email, or updating a profile in real time, activities let you customize every step of the journey. Each type of activity- like Event, Orchestration, or Action- plays a unique role, working together to create seamless, engaging experiences. As you explore these tools, you'll discover how to use triggers, conditions, and actions to craft journeys that are as dynamic as your customers' needs.
 
 ## Activities in Adobe Journey Optimizer
 
@@ -79,7 +79,7 @@ Control timing in journeys with duration or custom waits to pause execution.
 ## Additional Resources
 
 - **[Using an Audience in a Journey](../using/building-journeys/read-audience.md)** - Enable individuals from Adobe Experience Platform audiences to enter journeys dynamically.
-- **[Built-in Channel Actions](../using/building-journeys/journeys-message.md)** - Send messages via email, SMS, or push notifications using Journey Optimizer's built-in capabilities.
+- **[Built-in Channel Actions](../using/building-journeys/journey-action.md)** - Use journeys to deliver messages or experiences via email, SMS, push notifications, In-app, Web, Code-based experiences, or Content Cards using Journey Optimizer's built-in capabilities.
 - **[Using Custom Actions](../using/building-journeys/using-custom-actions.md)** - Integrate third-party systems using REST APIs with dynamic paths, headers, and query parameters.
 - **[Content Decision Activity](../using/building-journeys/content-decision.md)** - Deliver personalized offers in journeys using decision policies and content strategies.
 - **[Adobe Campaign Standard Actions](../using/building-journeys/using-adobe-campaign-standard.md)** - Send transactional emails, SMS, and push notifications using Adobe Campaign Standard integration.

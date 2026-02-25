@@ -148,7 +148,7 @@ exl-id: 7962189b-4135-4f88-b91d-40d21cdf6c6d
 - [Use the Action journey activity](help/using/building-journeys/journey-action.md) - Oct 14
 - [Pause a journey](help/using/building-journeys/journey-pause.md) - Oct 13
 - [Get started with journeys](help/using/building-journeys/journey.md) - Oct 27
-- [Add a built-in channel action to a journey](help/using/building-journeys/journeys-message.md) - Oct 29
+- [Add a built-in channel action to a journey](help/using/building-journeys/journey-action.md) - Oct 29
 - [Optimize activity](help/using/building-journeys/optimize.md) - Oct 22
 - [Use an audience in a journey](help/using/building-journeys/read-audience.md) - Oct 17
 - [Send time optimization](help/using/building-journeys/send-time-optimization.md) - Oct 28

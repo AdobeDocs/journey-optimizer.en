@@ -76,5 +76,5 @@ The following pictorial shows the various steps, end-to-end, involved in configu
 * [Configure push channel](push-configuration.md)
 * [Push notification report](../reports/journey-global-report-cja-push.md)
 * [Create a push notification](create-push.md)
-* [Add a message in a journey](../building-journeys/journeys-message.md)
+* [Add a message in a journey](../building-journeys/journey-action.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)

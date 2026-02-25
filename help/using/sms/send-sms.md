@@ -70,4 +70,4 @@ When your text message is ready, complete the configuration of your [journey](..
 * [Configure SMS channel](sms-configuration.md)
 * [SMS/MMS reports](../reports/journey-global-report-cja-sms.md)
 * [Create a text message](create-sms.md)
-* [Add a message in a journey](../building-journeys/journeys-message.md)
+* [Add a message in a journey](../building-journeys/journey-action.md)

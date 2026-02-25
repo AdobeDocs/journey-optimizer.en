@@ -139,7 +139,7 @@ Note that after setting up your language preferences, you will no longer have th
 
 After setting up your multilingual content, you are ready to craft your campaign or journey and customize the content for each of your selected locales.
 
-1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journeys-message.md) according to your requirements.
+1. Begin by creating and configuring your Email, SMS or Push notification [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-action.md) according to your requirements.
 
     >[!IMPORTANT]
     >

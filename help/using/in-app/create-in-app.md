@@ -25,23 +25,31 @@ Note that In-app messages are not impacted by the user's choice to opt-in or opt
 
 To add an In-app message in a journey, follow these steps:
 
-1. Open your journey, then drag and drop an **[!UICONTROL In-app]** activity from the **[!UICONTROL Actions]** section of the palette.
+1. Open your [journey](../building-journeys/journey-gs.md), then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
-    When a profile reaches the end of their journey, any in-app messages displayed to them will automatically expire. For that reason, a Wait activity is automatically added after your In-app activity to ensure proper timing.
+    >[!IMPORTANT]
+    >
+    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+
+1. Select **[!UICONTROL In-app]** as the action type.
 
     ![](assets/in_app_journey_1.png)
 
-1. Enter a **[!UICONTROL Label]** and **[!UICONTROL Description]** for your message.
+    >[!NOTE]
+    >
+    >When a profile reaches the end of their journey, any in-app messages displayed to them will automatically expire. For that reason, a 3-days **Wait** activity is automatically added after your In-app action to ensure proper timing. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
 
-1. Choose your [In-app configuration](inapp-configuration.md#channel-prerequisites) to use.
+1. Enter a **[!UICONTROL Label]** to identify your action in the journey canvas.
+
+1. Click the **[!UICONTROL Configure action]** button.
+
+1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the in-app configuration to use. [Learn more](inapp-configuration.md#channel-prerequisites)
 
     ![](assets/in_app_journey_2.png)
 
-1. You can now start designing your content with the **[!UICONTROL Edit content]** button. [Learn more](design-in-app.md)
+1. Select the **[!UICONTROL Edit content]** button and create your content as desired. [Learn more](design-in-app.md)
 
-1. Click **[!UICONTROL Edit triggers]** to choose the event(s) and criteria that will trigger your message. Rule builders enable users to specify criteria and values that, when met, trigger a set of actions, such as sending an in-app message.
-
-    ![](assets/in_app_journey_4.png)
+1. Click **[!UICONTROL Edit triggers]** to choose the event(s) and criteria that will trigger your message. Rule builders enable users to specify criteria and values that, when met, trigger a set of actions, such as sending an in-app message. [Learn more](design-in-app.md)
 
     1. Click the event drop-down to change your Trigger if needed.
         
@@ -106,12 +114,12 @@ To add an In-app message in a journey, follow these steps:
         * **[!UICONTROL Show every time]**: Always show the message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur.
         * **[!UICONTROL Show once]**: This message appears only once per user session and stays visible across all windows or activities until closed. To limit it to a certain screen or make it dismiss automatically, use custom logic with the messaging delegate.
         * **[!UICONTROL Show until click through]**: Show this message when the events selected in the **[!UICONTROL Mobile app trigger]** drop-down occur until an interact event is sent by the SDK with an action of "clicked".
-    
-1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 
-1. Once your In-app message is ready, finalize the configuration and publish your journey to activate it.
+1. You can add one or more inbound actions to your in-app message by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
 
-For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
+1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
+
+For more information on how to create, configure and publish a journey, refer to [this page](../building-journeys/journey-gs.md).
 
 >[!NOTE]
 >
@@ -221,6 +229,8 @@ To add an In-app message in a campaign, follow these steps:
 1. You can now start designing your content with the **[!UICONTROL Edit content]** button. [Learn more](design-in-app.md)
 
     ![](assets/in_app_create_4.png)
+
+For more information on how to create, configure and activate a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
 

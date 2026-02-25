@@ -22,7 +22,7 @@ In this example, the **[!UICONTROL Consent and Preference Details]** field group
 To configure this journey, follow these steps:
 
 1. Create a journey that starts with a **[!UICONTROL Read]** activity. Learn more in [Create your first journey](journey-gs.md).
-1. Add an **[!UICONTROL Email]** action activity to the journey. Learn how to [Work with channel actions](journeys-message.md).
+1. Add an **[!UICONTROL Email]** action activity to the journey. Learn how to [Work with channel actions](journey-action.md).
 1. In the **[!UICONTROL Email parameters]** section of the **[!UICONTROL Email]** activity settings, replace the default email address (`PersonalEmail.adress`) with the email address of the list subscribers:
 
    1. Click the **[!UICONTROL Enable parameter override]** icon at the right of the **[!UICONTROL Address]** field, then click the **[!UICONTROL Edit]** icon.

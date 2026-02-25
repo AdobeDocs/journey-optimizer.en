@@ -373,7 +373,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * A new page is now available to detail the journey dashboard and filtering user interface. [Read more](../building-journeys/journey-ui.md)
 * Documentation for **[!UICONTROL Send-Time optimization]** and its related FAQ have been updated, improved and moved to a new dedicated page. [Read more](../building-journeys/send-time-optimization.md)
 * New guardrails have been added for journey events. [Read more](../start/guardrails.md#events-g)
-* The built-in channel actions page has been reorganized. [Read more](../building-journeys/journeys-message.md)
+* The built-in channel actions page has been reorganized. [Read more](../building-journeys/journey-action.md)
 * Guardrails & limitations have been added in the Decisioning and Decision management sections.
     * [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
     * [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
@@ -549,7 +549,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * All new features and improvements coming with [!DNL Journey Optimizer] September '23 release have been detailed in the documentation. [Read more](release-notes.md)
 * A new page has been added with scaling best practices and real-time stitching guidance. [Read more](../start/best-practices.md)
-* A Frequently-Asked-Questions section has been added for Send-Time Optimization. [Read more](../building-journeys/journeys-message.md#faq-send-time)
+* A Frequently-Asked-Questions section has been added for Send-Time Optimization. [Read more](../building-journeys/send-time-optimization.md#faq-send-time)
 * A note has been added for the audience qualification activity. It may take up to 10 minutes to be active and listen to profiles entering or exiting the audience. [Read more](../building-journeys/audience-qualification-events.md#batch-speed-segment-qualification)
 * A list of limitations to be aware of when creating decision rules has been added to the Decision management documentation. [Read more](../offers/offer-library/creating-decision-rules.md)
 * Links to access control documentation have been updated. [Read more](../administration/permissions.md)
@@ -662,7 +662,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Added a new page about Journey Optimizer integrations. [Read more](../integrations/ajo-integrations.md)
 * Added a recommendation about the length of mirror pages URLs. [Read more](../email/message-tracking.md)
 * A new subsection in the email settings configuration has been added on the reply to email address, including recommendations to ensure proper reply management. [Read more](../email/email-settings.md#send-to-suppressed-email-addresses)
-* Added a section on how to modify the content of a message in a live journey. [Read more](../building-journeys/journeys-message.md#update-live-content)
+* Added a section on how to modify the content of a message in a live journey. [Read more](../building-journeys/journey-action.md#update-live-content)
 
 ## October 2022 {#october-2022}
 

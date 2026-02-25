@@ -37,7 +37,7 @@ Orchestration activities are conditions that help determine the next step in the
 
 From the palette, on the left-hand side of the screen, the following orchestration activities are available:
 
-<!--* [Optimize](optimize.md)-->
+* [Optimize](optimize.md)
 * [Read Audience](read-audience.md)
 * [Wait](wait-activity.md)
 * [Content decision](content-decision.md)
@@ -51,7 +51,7 @@ Actions are what you want to happen as a result of some kind of trigger, like se
 
 From the palette on the left side of the screen, below **[!UICONTROL Events]** and **[!UICONTROL Orchestration]**, you can find the **[!UICONTROL Actions]** category. The following action activities are available:
 
-* [Built-in channel actions](../building-journeys/journeys-message.md)
+* [Built-in channel actions](../building-journeys/journey-action.md) available from the **Action** activity
 * [Custom actions](../building-journeys/using-custom-actions.md)
 * [Jump](../building-journeys/jump.md)
 
@@ -105,7 +105,7 @@ In some particular contexts, you can override the values of these parameters for
 
 ### Add an alternative path
 
-When an error occurs in an action or a condition, the journey of an individual stops. The only way to make it continue is to check the box **[!UICONTROL Add an alternative path in case of a timeout or an error]**. See [this section](../building-journeys/using-the-journey-designer.md#paths).
+When an error occurs in an action or a condition, the journey of an individual stops. The only way to make it continue is to check the box **[!UICONTROL Add an alternative path in case of a timeout or an error]**. See [this section](../building-journeys/using-the-journey-designer.md#paths)
 
 ![Add an alternative path option in the Condition activity properties](assets/journey42.png)
 
@@ -115,4 +115,4 @@ Before testing and publishing your journey, verify that all the activities are p
 
 Learn how to troubleshoot errors in activities and in the journey [on this page](troubleshooting.md).
 
-See also **[Monitoring & troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)**.
+See also [Monitoring & troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)
