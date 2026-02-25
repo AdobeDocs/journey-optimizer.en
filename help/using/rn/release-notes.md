@@ -238,7 +238,7 @@ Improvements coming with this release are listed below.
 
   Availability date: February 17, 2026.
 
-* **Text mode for fragments** - You can now create and manage text versions of your fragments, supporting workflows that rely on plain text content and providing the same flexibility as in email content. <!--[Read more](../content-management/create-fragments.md)-->
+<!--* **Text mode for fragments** - You can now create and manage text versions of your fragments, supporting workflows that rely on plain text content and providing the same flexibility as in email content. [Read more](../content-management/create-fragments.md)-->
 
 #### Email Designer
 
