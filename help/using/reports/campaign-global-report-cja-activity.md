@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Campaign report
+title: Campaign Live activity report
 description: Learn how to use Live activity data from the Campaign report
 feature: Reporting
 topic: Content Management
@@ -31,11 +31,11 @@ The **[!UICONTROL Sending Statistics]** table provides a detailed overview of ke
 
 * **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied.
 
-* **[!UICONTROL Sends]**: Total number of live activity attempted to be sent to targeted profiles.
+* **[!UICONTROL Sends]**: Total number of live activity events attempted to be sent to targeted profiles.
 
-* **[!UICONTROL Delivered]**: Number of live activity successfully delivered to devices, relative to the total number of attempted sends.
+* **[!UICONTROL Delivered]**: Number of live activity events successfully delivered to devices, relative to the total number of attempted sends.
 
-* **[!UICONTROL Send errors]**: Total number of live activity that could not be sent due to errors (for example, invalid tokens or connectivity issues).
+* **[!UICONTROL Send errors]**: Total number of live activity events that could not be sent due to errors (for example, invalid tokens or connectivity issues).
 
 * **[!UICONTROL Send exclusions]**: Number of profiles excluded from sending by Adobe Journey Optimizer (for example, due to opt-out status or eligibility rules).
 
