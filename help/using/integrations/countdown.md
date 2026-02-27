@@ -19,7 +19,7 @@ For example, as a marketer for a retail brand, you're running a 48-hour flash sa
 * Recipients who open 24 hours later see "23 hours remaining"  
 * Recipients who open after the sale ends see "Sale ended"
 
-For more information on how to create your Dynamic Media in Adobe Experience manager, refer [to this document](assets/do-not-localize/Dynamic%20Media%20Templates.pdf).
+For more information on how to create your Dynamic Media in Adobe Experience manager, refer [to this document](assets/do-not-localize/countdown.pdf).
 
 
 1. In **[!DNL Adobe Experience Manager]**, create a Dynamic Media template and add a countdown timer component to it.
