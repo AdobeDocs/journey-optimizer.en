@@ -12,17 +12,6 @@ exl-id: c9766603-df19-4efd-8319-27e9764254b4
 ---
 # Get started with Live activity {#get-started-mobile-live}
 
->[!BEGINSHADEBOX]
-
-* **[Get started with Live activity](get-started-mobile-live.md)**
-* [Live activity configuration](mobile-live-configuration.md)
-* [Live Activity integration with Adobe Experience Platform Mobile SDK](mobile-live-configuration-sdk.md)
-* [Create a Live activity](create-mobile-live.md)
-* [Frequently asked questions](mobile-live-faq.md)
-* [Live activity campaign report](../reports/campaign-global-report-cja-activity.md)
-
->[!ENDSHADEBOX]
-
 >[!AVAILABILITY]
 >
 >Live activity in Journey Optimizer is only compatible with iOS.

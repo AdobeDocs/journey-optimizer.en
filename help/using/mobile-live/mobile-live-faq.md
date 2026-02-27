@@ -12,17 +12,6 @@ exl-id: e7e994ca-aa0c-4e86-8710-c87430b74188
 ---
 # Frequently asked questions {#mobile-live-faq}
 
->[!BEGINSHADEBOX]
-
-* [Get started with Live activity](get-started-mobile-live.md)
-* [Live activity configuration](mobile-live-configuration.md)
-* [Live Activity integration with Adobe Experience Platform Mobile SDK](mobile-live-configuration-sdk.md)
-* [Create a Live activity](create-mobile-live.md)
-* **[Frequently asked questions](mobile-live-faq.md)**
-* [Live activity campaign report](../reports/campaign-global-report-cja-activity.md)
-
->[!ENDSHADEBOX]
-
 ## General Questions
 
 +++What is the difference between a Live Activity and a push notification?
@@ -118,6 +107,24 @@ Yes. The `ActivityConfiguration` has separate closures for Lock Screen content a
 No. When you register a Live Activity type with `Messaging.registerLiveActivity()`, the SDK automatically collects and manages push tokens for you.
 +++
 
++++Are there limits on remote starts of Live Activities?
+
+Yes. Remote starts via `ActivityKit` are subject to system-enforced limits. If you attempt multiple start requests in quick succession, iOS may reject further starts due to Live Activity quotas or budget constraints. After about 5 consecutive start attempts, subsequent requests begin failing until a brief cooldown period passes.
+
++++
+
++++What is the budget for high-priority updates?
+
+Apple does not specify an exact numerical cap for high-priority `(priority: 10)` Live Activity updates. The system maintains a dynamic internal budget that limits how frequently such updates can be sent. If too many high-priority updates are issued in a short span, iOS may throttle or delay subsequent ones.
+
+To minimize throttling: 
+
+* **Balance priority levels**: Combine both standard `(priority: 5)` and high `(priority: 10)` updates depending on importance.
+* **Use high priority sparingly**: Reserve high priority for time-critical updates, such as delivery progress, order status, or live sports scores.
+* **Support frequent updates**: Include `NSSupportsLiveActivitiesFrequentUpdates` in your app's `Info.plist` and set it to **YES** if you need frequent updates.
+
++++
+
 ### Marketer Questions
 
 +++Can I personalize Live Activity content for each user in a broadcast campaign?
@@ -137,7 +144,7 @@ The API call triggers the Live Activity immediately. However, you can schedule y
 
 +++What happens if I send a "start" event for a Live Activity that already exists?
 
-When remotely starting Live Activities through Adobe’s Execution APIs:
+When remotely starting Live Activities through Adobe's Execution APIs:
 
 * You can include an `x-request-id` header in your request. Ideally, there should be a one-to-one relationship between each `liveActivityID` and its corresponding `x-request-id`. This ensures that if multiple requests are made with the same `x-request-id` and `liveActivityID` combination, only one Live Activity will be started on the device, and duplicate requests will be ignored.
 
@@ -230,6 +237,7 @@ Common causes:
 * `content-state` fields don't match your `ContentState` struct.
 * The Live Activity has already ended.
 * Network connectivity issues on the device.
+* The epoch time used as timestamp is not up-to-date.
 
 +++
 
@@ -254,7 +262,7 @@ You need to send an "end" event for each active Live Activity. Track which Live 
 
 +++
 
-+++My widget shows “No data” even though I sent an update. What could be the issue?
++++My widget shows "No data" even though I sent an update. What could be the issue?
 
 * Verify your widget implementation properly accesses `context.state` and `context.attributes`.
 * Check that default values or error states are handled in your widget interface.

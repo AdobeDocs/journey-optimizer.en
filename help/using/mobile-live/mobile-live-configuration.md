@@ -12,17 +12,6 @@ exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
 ---
 # Get started with Live activity configuration {#mobile-live-config}
 
->[!BEGINSHADEBOX]
-
-* [Get started with Live activity](get-started-mobile-live.md)
-* **[Live activity configuration](mobile-live-configuration.md)**
-* [Live Activity integration with Adobe Experience Platform Mobile SDK](mobile-live-configuration-sdk.md)
-* [Create a Live activity](create-mobile-live.md)
-* [Frequently asked questions](mobile-live-faq.md)
-* [Live activity campaign report](../reports/campaign-global-report-cja-activity.md)
-
->[!ENDSHADEBOX]
-
 Before sending your Live activity, you must configure your Adobe Journey Optimizer environment. To perform this:
 
 ## Step 1: Add your app push credentials in Journey Optimizer (optional){#push-credentials-launch}

@@ -43,21 +43,43 @@ The **[!UICONTROL Sending Statistics]** table provides a detailed overview of ke
 
 ## Live activity lifecycle {#lifecycle}
 
-![](assets/activity-lifecycle.png)
-
 The **[!UICONTROL Live activity lifecycle]** table offers a comprehensive view of how your Live activities progress over time. It provides visibility into key events such as when activities are started, updated, or ended, helping you better understand user engagement and the overall lifecycle of your Live activity campaigns.
 
-+++ Learn more about Live activity lifecycle metrics
+The reporting differs depending on whether you are using Transactional or Marketing campaigns.
 
-* **[!UICONTROL Remote starts]**: Number of Live activities initiated remotely, typically triggered by the server or backend system.
+### Transactional Live activities
 
-* **[!UICONTROL Local starts]**: Number of Live activities started locally on a user's device, often resulting from user interaction or client-side triggers.
+![](assets/activity-lifecycle.png)
 
-**[!UICONTROL Updates]**: Total number of Live activity updates sent to devices. Updates can include status changes, new content, or progress notifications.
+For Transactional campaign, the Live activities campaign report shows all lifecycle events including remote starts, local starts, updates, and ends.
 
-**[!UICONTROL Ends]**: Number of Live activities that have been ended, either automatically upon completion or manually through a defined trigger or timeout.
++++ Learn more about Live activity lifecycle metrics with Transactional campaigns
 
-**[!UICONTROL Totals count]**: Overall total of all Live activity lifecycle events, including starts, updates, and ends, providing a complete measure of Live activity volume.
+* **[!UICONTROL Remote starts]**: Total number of Live activities start events initiated remotely, typically triggered by the server or backend systems.
+
+* **[!UICONTROL Local starts]**: Total number of Live activities start events initiated locally on a user's device, often resulting from user interaction or client-side triggers.
+
+* **[!UICONTROL Updates]**: Total number of Live activity updates sent to devices. Updates can include status changes, new content, or progress notifications.
+
+* **[!UICONTROL Ends]**: Total number of Live activities end events sent to devices.
+
+* **[!UICONTROL Totals count]**: Overall total of all Live activity lifecycle events, including starts, updates, and ends, providing a complete measure of Live activity volume.
+
++++
+
+### Marketing Live activities
+
+![](assets/activity-lifecycle-broadcast.png)
+
+Marketing campaigns use Live activities for broadcast use cases, sending updates to multiple devices simultaneously.
+
+For iOS Live activities in Marketing campaigns, the report shows only **[!UICONTROL Remote Starts]** events and **[!UICONTROL Remote starts errors]** at start. **[!UICONTROL Updates]** and **[!UICONTROL Ends]** events are not tracked because APNs distributes updates to all devices without providing feedback. To view **[!UICONTROL Updates]** and **[!UICONTROL Ends]** events, use [Apple's Push Notification console](https://developer.apple.com/notifications/push-notifications-console/).
+
++++ Learn more about Live activity lifecycle metrics with Marketing campaigns
+
+* **[!UICONTROL Remote starts]**: Total number of Live activities start events initiated remotely, typically triggered by the server or backend systems.
+
+* **[!UICONTROL Remote starts errors]**: Total number of errors that occurred when attempting to start Live activities remotely (for example, invalid tokens or connectivity issues).
 
 +++
 

@@ -12,17 +12,6 @@ exl-id: 02ca7c8e-105a-4e77-9aad-2381904255d0
 ---
 # Live Activity integration with Adobe Experience Platform Mobile SDK {#mobile-live-config-sdk}
 
->[!BEGINSHADEBOX]
-
-* [Get started with Live activity](get-started-mobile-live.md)
-* [Live activity configuration](mobile-live-configuration.md)
-* **[Live Activity integration with Adobe Experience Platform Mobile SDK](mobile-live-configuration-sdk.md)**
-* [Create a Live activity](create-mobile-live.md)
-* [Frequently asked questions](mobile-live-faq.md)
-* [Live activity campaign report](../reports/campaign-global-report-cja-activity.md)
-
-
->[!ENDSHADEBOX]
 
 The Adobe Experience Platform Mobile SDK provides built-in support for Apple's Live activities. This allows your app to display real-time, dynamic updates directly on the Lock Screen and Dynamic Island without opening the app.
 
