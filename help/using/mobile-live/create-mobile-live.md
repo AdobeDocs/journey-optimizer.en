@@ -48,7 +48,7 @@ After configuring your mobile configuration and implement your Adobe Experience 
 
 1. Once configured, click **[!UICONTROL Review to activate]**, then click **[!UICONTROL Activate]**.
 
-1. After the campaign is activated, use the provided **cURL request** as a template to trigger Live Activity start, update, or end events. Update the sample payload with your specific data before execution.
+1. After the campaign is activated, use the provided **cURL request** as a template to trigger Live activity start, update, or end events. Update the sample payload with your specific data before execution.
 
     Ensure that you also copy the **[!UICONTROL Campaign ID]** identifiers to include in your payload.
 
@@ -151,6 +151,6 @@ After designing your Live activity, you can track measuring the impact of your L
 
 ## How-to video
 
-Discover how to configure iOS Live Activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
+Discover how to configure iOS Live activity with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479864)

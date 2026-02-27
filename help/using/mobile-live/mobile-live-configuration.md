@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure the Live activity channel
-description: Learn how to configure your environment to send Live activities with Journey Optimizer
+description: Learn how to configure your environment to send Live activity with Journey Optimizer
 feature: Channel Configuration
 role: Admin
 level: Intermediate
@@ -18,7 +18,7 @@ Before sending your Live activity, you must configure your Adobe Journey Optimiz
 
 The mobile app push credential registration is required to authorize Adobe to send push notifications on your behalf. 
 
-Step 1 is optional if your push credentials have already been configured, as these can be reused for the Live Activity channel configuration. If no credentials are defined, you must create new push credentials for your app. Refer to the steps detailed below:
+Step 1 is optional if your push credentials have already been configured, as these can be reused for the Live activity channel configuration. If no credentials are defined, you must create new push credentials for your app. Refer to the steps detailed below:
 
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]** menu.
 
@@ -50,7 +50,7 @@ Step 1 is optional if your push credentials have already been configured, as the
 
     ![](assets/config-1.png)
 
-1. Enter a name and a description (optional) for the configuration, then select the WhatsApp channel.
+1. Enter a name and a description (optional) for the configuration, then select the Live activity channel.
 
     >[!NOTE]
     >

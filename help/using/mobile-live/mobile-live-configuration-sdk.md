@@ -10,10 +10,10 @@ hide: yes
 hidefromtoc: yes
 exl-id: 02ca7c8e-105a-4e77-9aad-2381904255d0
 ---
-# Live Activity integration with Adobe Experience Platform Mobile SDK {#mobile-live-config-sdk}
+# Live activity integration with Adobe Experience Platform Mobile SDK {#mobile-live-config-sdk}
 
 
-The Adobe Experience Platform Mobile SDK provides built-in support for Apple's Live activities. This allows your app to display real-time, dynamic updates directly on the Lock Screen and Dynamic Island without opening the app.
+The Adobe Experience Platform Mobile SDK provides built-in support for Apple's Live activity. This allows your app to display real-time, dynamic updates directly on the Lock Screen and Dynamic Island without opening the app.
 
 1. [Import required modules](#import)
 
@@ -23,7 +23,7 @@ The Adobe Experience Platform Mobile SDK provides built-in support for Apple's L
 
     Conform to `LiveActivityAttributes`, include `LiveActivityData` and a `ContentState` attributes.
 
-1. [Register Live activities](#register)
+1. [Register Live activity](#register)
 
     Use `Messaging.registerLiveActivity()` after SDK initialization.
 
@@ -33,7 +33,7 @@ The Adobe Experience Platform Mobile SDK provides built-in support for Apple's L
 
 1. [Start a Live activity locally (optional)](#local)
 
-    Live activities can be initiated either remotely through Journey Optimizer or locally within the application code.
+    Live activity can be initiated either remotely through Journey Optimizer or locally within the application code.
 
 1. [Add debug support (optional)](#debug)
     
@@ -52,6 +52,7 @@ Verify that the following minimum versions are installed to ensure correct confi
 * **Xcode:** 14.0 or later
 * **Swift:** 5.7 or later
 * **Dependencies:** AEPCore, AEPMessaging, AEPMessagingLiveActivity, ActivityKit
+* **AEP Mobile SDK version**: iOS Messaging 5.11.0 or later
 
 >[!ENDSHADEBOX]
 
@@ -79,7 +80,7 @@ The key components include:
 
 * **`ContentState`** which defines dynamic data that can be updated during the Live activity lifecycle. It must conform to `Codable` and `Hashable`.
 
-* `LiveActivityOrigin` enumeration specifies whether an activity was initiated locally within the app or remotely via a push-to-start notification, supported in iOS 17.2 and later. This value allows the SDK to differentiate between locally initiated and remotely triggered Live activities during data collection.
+* `LiveActivityOrigin` enumeration specifies whether an activity was initiated locally within the app or remotely via a push-to-start notification, supported in iOS 17.2 and later. This value allows the SDK to differentiate between locally initiated and remotely triggered Live activity during data collection.
 
 **Examples**
 
@@ -106,15 +107,15 @@ public struct LiveActivityData: Codable {
     /// Unique identifier for broadcast Live activity channels
     public let channelID: String?
      
-    /// Unique identifier for individual Live activities
+    /// Unique identifier for individual Live activity
     public let liveActivityID: String?
      
     /// Indicates local vs remote creation
     public let origin: LiveActivityOrigin?
      
     // Initializers
-    public init(channelID: String)        // For broadcast Live activities
-    public init(liveActivityID: String)   // For individual Live activities
+    public init(channelID: String)        // For broadcast Live activity
+    public init(liveActivityID: String)   // For individual Live activity
 }
 ```
 
@@ -128,7 +129,7 @@ if #available(iOS 16.1, *) {
 }
 ```
 
-## Step 3: Register Live activities {#register}
+## Step 3: Register Live activity {#register}
 
 Register your Live activity types in your `AppDelegate` after SDK initialization, this allows you to:
 
@@ -146,7 +147,7 @@ if #available(iOS 16.1, *) {
 
 ## Step 4: Create Live activity widgets {#widgets}
 
-Live activities are displayed through widgets, you need to create a widget bundle and configuration:
+Live activity is displayed through widgets, you need to create a widget bundle and configuration:
 
 **Example for a food delivery Live activity:**
 
@@ -185,7 +186,7 @@ struct FoodDeliveryLiveActivityWidget: Widget {
 
 ## Step 5: Start a Live activity locally (optional) {#local}
 
-While Journey Optimizer can remotely start Live activities, you can also start them locally:
+While Journey Optimizer can remotely start Live activity, you can also start it locally:
 
 **Example for a food delivery Live activity:**
 
