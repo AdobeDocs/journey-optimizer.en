@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create the text version of an email
+title: Manage the text version of an email
 description: Learn how to create the text version of an email
 feature: Email Design
 topic: Content Management
@@ -10,29 +10,37 @@ level: Intermediate
 keywords: text, email, version, plain, editor
 exl-id: 4bb36810-65fb-4a9b-9bea-e56ed2c1eea3
 ---
-# Create the text version of an email {#text-version-email}
+# Manage the text version of an email {#text-version-email}
 
-It is recommended to create a text version of your email body, which is used when HTML content cannot be displayed. 
+It is recommended to create a text version of your email body, which is used when HTML content cannot be displayed.
+
+From a security standpoint, offering a plain text version is important because HTML emails can carry risks such as malicious scripts, tracking pixels, or phishing attempts that rely on rich formatting and links. Plain text reduces the attack surface and is often preferred by security-conscious recipients or corporate email systems that restrict or strip HTML. Providing both versions lets recipients choose the format that fits their security and privacy requirements.
+
+## Access the default text version {#plain-text-default}
 
 By default, the Email Designer creates a **[!UICONTROL Plain text]** version of your email, including personalization fields. This  version is automatically generated and synchronized with the HTML version of your content.
+
+To access the default text version, select the **[!UICONTROL Plain text]** icon from your email content.
+
+![](assets/text_version_3.png)
+
+## Use a custom text version {#plain-text-default-custom}
 
 If you prefer using a different content for the plain text version, follow the steps below:
 
 1. From your email, select the **[!UICONTROL Plain text]** icon.
 
-    ![](assets/text_version_3.png)
-
 1. Use the **[!UICONTROL Sync with HTML]** toggle to disable synchronization. Click the check mark to confirm your choice.
 
     ![](assets/text_version_2.png)
 
-1. You can then edit the plain text version as desired.
+1. You can then edit the custom plain text version as desired.
 
 >[!CAUTION]
 >
 > * When synchronization is disabled, changes made in **[!UICONTROL Plain text]** view are not reflected in HTML view.
 >
->* If you re-enable the **[!UICONTROL Sync with HTML]** option  after updating your plain text content, your changes will be lost, and replaced with text content generated from the HTML version.
+> * If you re-enable the **[!UICONTROL Sync with HTML]** option  after updating your plain text content, your changes will be lost, and replaced with text content generated from the HTML version.
 
 ## When to use custom plain text versions {#when-to-use}
 

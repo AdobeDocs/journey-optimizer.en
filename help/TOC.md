@@ -280,7 +280,7 @@ solution: Journey Optimizer
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
-        + [Generate text version](using/email/text-version-email.md)
+        + [Manage the text version](using/email/text-version-email.md)
         + [Add metadata](using/email/email-metadata.md)
       + Edit style {#edit-style}
         + [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)
