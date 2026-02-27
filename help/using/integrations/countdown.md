@@ -8,6 +8,7 @@ role: User
 level: Beginner
 hide: yes
 hidefromtoc: yes
+exl-id: 4c1d39c4-3154-4bec-ac3c-c2ead7164d69
 ---
 # Insert countdown timer {#countdown}
 
@@ -56,4 +57,3 @@ For more information on how to create your Dynamic Media in Adobe Experience man
 1. Click **[!UICONTROL Preview]** to view the timer with real-time countdown updates and verify your configuration.
 
 When recipients open the email, they see the accurate time remaining for your flash sale. If they reopen the email later, the countdown automatically updates to reflect the current time remaining. After the end date, the default message appears automatically.
-
