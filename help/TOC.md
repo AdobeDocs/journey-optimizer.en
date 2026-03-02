@@ -480,6 +480,7 @@ solution: Journey Optimizer
     + [Work with Adobe Express](using/integrations/express.md)
     + [Work with Experience Manager templates](using/integrations/aem-templates.md)
     + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+    + [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
     + [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
