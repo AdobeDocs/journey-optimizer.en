@@ -9,6 +9,7 @@ topic: Integrations
 role: User
 level: Intermediate
 version: Journey Orchestration
+exl-id: c4df41a2-d740-437c-acc3-957508c4a1c0
 ---
 # Supported functions in the expression editor {#personalization-editor-supported-functions}
 
