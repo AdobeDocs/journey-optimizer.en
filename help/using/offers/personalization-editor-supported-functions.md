@@ -25,9 +25,9 @@ The Offer Decisioning backend supports only a **subset** of the functions availa
 
 +++ Operators
 
-* `+` `-` `*` `/` `%` (arithmetic)
-* `and` `or` `!` (logical)
-* `=` `!=` `>` `>=` `<` `<=` (comparison)
+* Arithmetic: `+` `-` `*` `/` `%`
+* Logical: `and` `or` `!`
+* Comparison: `=` `!=` `>` `>=` `<` `<=`
 
 +++
 
