@@ -3,8 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Access Adobe Experience Manager Content Advisor
 description: Learn how to access and use Adobe Experience Manager Content Advisor to discover assets and content fragments using AI-powered semantic search in Adobe Journey Optimizer.
-feature: Content Management
-topic: Content Management
 role: User
 level: Beginner, Intermediate
 hide: yes
