@@ -6,6 +6,7 @@ description: Learn how to create and manage your generative models
 topic: Content Management
 role: User
 level: Beginner, Intermediate
+exl-id: 9ef6b02c-0a17-4b46-bcd3-8e922eef059a
 ---
 # Create and manage generative models {#generative-models}
 
