@@ -55,6 +55,7 @@ Learn how to craft effective prompts and configure image settings to generate vi
 
 1. Tailor your prompt with the **[!UICONTROL Image settings]** option:
 
+    * **[!UICONTROL Generative model]**: Select from the ready-to-use **[!UICONTROL Adobe model]**, the **[!UICONTROL Partner model]** for specialized capabilities, or **[!UICONTROL Custom models]** trained on your brand assets. [Learn more](generative-models.md) 
     * **[!UICONTROL Aspect ratio]**: This determines the width and height of the asset. You have the option to choose from common ratios such as 16:9, 4:3, 3:2, or 1:1, or you can enter a custom size.
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
@@ -142,6 +143,7 @@ After accessing AI Assistant, you can adjust the generation settings to create i
 
 1. Choose your **[!UICONTROL Image settings]**:
 
+    * **[!UICONTROL Generative model]**: Select from the ready-to-use **[!UICONTROL Adobe model]**, the **[!UICONTROL Partner model]** for specialized capabilities, or **[!UICONTROL Custom models]** trained on your brand assets. [Learn more](generative-models.md) 
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
     * **[!UICONTROL Color & tone]**: The overall appearance of the colors within an image and the mood or atmosphere it conveys.
