@@ -24,6 +24,8 @@ version: Journey Orchestration
 
 Ranking formulas are expressed in **PQL syntax** and can leverage profile attributes, context data and offer attributes. For more on how to use the PQL syntax, refer to the [dedicated documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
 
+In Decision management, only a subset of functions is supported in ranking formulas. See [Supported functions in the expression editor](../personalization-editor-supported-functions.md) for the list.
+
 Once a ranking formula has been created, you can assign it to a placement in a decision. For more on this, see [Configure offers selection in decisions](../offer-activities/configure-offer-selection.md).
 
 ## Create a ranking formula {#create-ranking-formula}

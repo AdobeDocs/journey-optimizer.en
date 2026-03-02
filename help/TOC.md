@@ -689,6 +689,7 @@ solution: Journey Optimizer
       + [Get started with Decision management](/help/rp_landing_pages/get-started-decision-landing-page.md)
       + [About Decision management](using/offers/get-started/starting-offer-decisioning.md)
       + [Decision management guardrails & limitations](using/offers/decision-management-guardrails.md)
+      + [Supported functions in the expression editor](using/offers/personalization-editor-supported-functions.md)
       + [User interface](using/offers/get-started/user-interface.md)
       + [Key steps to create & manage offers](using/offers/offer-library/key-steps.md)
       + [Leverage Custom upload audiences for decisioning](using/offers/custom-upload-decisioning.md)
