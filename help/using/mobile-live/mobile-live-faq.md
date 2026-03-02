@@ -55,6 +55,12 @@ Apple limits Live activity to **8 hours of active updates**. After that, the sys
 
 +++
 
++++ What are the rate limits?
+
+Campaigns have a default rate limit of 500 transactional messages per second across all channels, including iOS Live activities. This limit applies to all channels combined, and there is no separate rate limit specifically for iOS Live activities.
+
++++
+
 ### Developer Questions
 
 +++Do I need to create a separate widget extension for Live activity?
