@@ -23,6 +23,8 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ## March '26 updates {#march-26-rn}
 
+### New capabilities {#march-26-features}
+
 <!--
 <table>
 <thead>
@@ -61,6 +63,15 @@ Because of this model, release notes are updated between monthly releases. For f
 </tr>
 </tbody>
 </table>
+
+### Improvements {#march-26-improv}
+
+#### Configuration
+
+* **Change in AJO Secondary Recipient Feedback Event Dataset** - The AJO Email BCC Feedback Event Dataset is being renamed to AJO Secondary Recipient Feedback Event Dataset. 
+  * **Existing users**: Only the display name changes. The underlying table name remains unchanged.
+  * **New users and new sandboxes**: Both the display name and table name use the new name.
+  * **Existing users/organizations with new sandboxes**: Both the display name and table name change to the new name.
 
 ## February '26 release notes {#feb-26-01-rn}
 
