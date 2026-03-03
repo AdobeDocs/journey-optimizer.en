@@ -71,6 +71,6 @@ To leverage a Custom upload audience's attributes for personalization, you first
 
 Once the audience is added as a constraint, you can use its attributes to personalize the representation content. To do so, access the **Profile Attributes** tab and search for the Custom upload audience. Select the relevant attributes from the audience to personalize the offer content.
 
-In Decision management, only certain functions are supported when personalizing content—see [Supported functions in the expression editor](personalization-editor-supported-functions.md).
+In Decision management, only certain functions are supported when personalizing content—see [Supported functions in the personalization editor](offer-library/personalization-editor-supported-functions.md).
 
 ![Profile attributes personalization interface](assets/csv-perso.png)

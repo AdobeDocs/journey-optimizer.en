@@ -31,10 +31,6 @@ Here is a list of limitations to be aware of when working with decision rules:
 * When creating a decision rule, looking back into a previous period of time is not supported. For instance, if you specify an experience event that occurred within the last month as a component of the rule. Any attempt to include a lookback period during rule creation will trigger an error when saving it.
 <!--* Decision requests that use the hub profile will look at the last 100 experience events on the profile to evaluate rules that reference historical experience events.-->
 
->[!NOTE]
->
->In Decision management, only a subset of expression functions is supported. When your rule uses expressions or profile attributes, see [Supported functions in the expression editor](../personalization-editor-supported-functions.md) for the list of supported functions.
-
 ## Create a decision rule {#create}
 
 The list of created decision rules is accessible in the **[!UICONTROL Components]** menu.

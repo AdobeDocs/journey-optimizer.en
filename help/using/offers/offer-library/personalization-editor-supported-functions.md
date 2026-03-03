@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer, Experience Platform
 product: Journey Optimizer
-title: Supported functions in the expression editor
-description: Learn which personalization editor functions are supported in Decision management (Offer Decisioning).
+title: Supported functions in the personalization editor
+description: Learn which personalization editor functions are supported when personalizing offer content in Decision management (Offer Decisioning).
 badge: label="Legacy" type="Informative"
 feature: Decision Management
 topic: Integrations
@@ -11,15 +11,15 @@ level: Intermediate
 version: Journey Orchestration
 exl-id: c4df41a2-d740-437c-acc3-957508c4a1c0
 ---
-# Supported functions in the expression editor {#personalization-editor-supported-functions}
+# Supported functions in the personalization editor {#personalization-editor-supported-functions}
 
-In Decision management, you build expressions using the personalization editor. You use this editor in particular when:
+In Decision management, you use the **personalization editor** when you [add representations](add-representations.md) and personalize **offer content** (images, text, links in your offers).
 
-* **Defining offer content** – when you [add representations](offer-library/add-representations.md) and personalize the offer content (images, text, links)
-* **Creating decision rules** – when you [define eligibility](offer-library/creating-decision-rules.md) for offers
-* **Building ranking formulas** – when you [create ranking formulas](ranking/create-ranking-formulas.md) to order offers
+The Offer Decisioning backend supports only a **subset** of the functions available in the personalization editor when personalizing that content. This page lists every function you can safely use in the editor for offer content. Expand each section to see the supported operators, helpers, and functions.
 
-The Offer Decisioning backend supports only a **subset** of the functions available in the personalization editor. This page lists every function you can safely use. Expand each section to see the supported operators, helpers, and functions.
+>[!NOTE]
+>
+>This function list applies **only to personalizing offer content** (representations). Decision rules and ranking formulas use different editors and are not limited to this subset.
 
 ## Supported functions list {#supported-functions-list}
 
@@ -218,4 +218,4 @@ The Offer Decisioning backend supports only a **subset** of the functions availa
 
 >[!NOTE]
 >
->If you use a function that is not in the list above, the expression may fail at runtime or produce unexpected results. For the full set of functions available in [!DNL Journey Optimizer] personalization, see [Helper functions list](../personalization/functions/functions.md). Only the subset documented on this page is supported in Offer Decisioning.
+>If you use a function that is not in the list above when personalizing offer content, the expression may fail at runtime or produce unexpected results. For the full set of functions available in [!DNL Journey Optimizer] personalization, see [Helper functions list](../../personalization/functions/functions.md). Only the subset documented on this page is supported for personalizing content in Offer Decisioning.
