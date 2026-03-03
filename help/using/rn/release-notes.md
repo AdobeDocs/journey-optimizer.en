@@ -25,17 +25,16 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ### New capabilities {#march-26-features}
 
-<!--
 <table>
 <thead>
 <tr>
-<th><strong>Live Activities for iOS</strong><br/></th>
+<th><strong>Live Activity for iOS</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Bring real-time experiences directly to your customers' Lock Screens and Dynamic Island with iOS Live Activities in Adobe Journey Optimizer. Deliver live updates, from order tracking and flight status to event countdowns, live scores and delivery progress, without requiring users to open your app. Keep your audience informed and engaged at exactly the right moment, right where they are.</p>
+<p>Bring real-time experiences directly to your customers' Lock Screens and Dynamic Island with iOS Live Activity in Adobe Journey Optimizer. Deliver live updates, from order tracking and flight status to event countdowns, live scores and delivery progress, without requiring users to open your app. Keep your audience informed and engaged at exactly the right moment, right where they are.</p>
 <p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
 <p>For more information, refer to the <a href="../mobile-live/get-started-mobile-live.md">detailed documentation</a>.</p>
 <p>Availability date: March 3, 2026</p>
@@ -43,7 +42,6 @@ Because of this model, release notes are updated between monthly releases. For f
 </tr>
 </tbody>
 </table>
--->
 
 <table>
 <thead>

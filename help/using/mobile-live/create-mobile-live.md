@@ -6,8 +6,6 @@ description: Learn how to create a Live activity in Journey Optimizer
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
 exl-id: 9864a136-e129-4279-bb09-081b72f584df
 ---
 # Create a Live activity {#create-mobile-live}
