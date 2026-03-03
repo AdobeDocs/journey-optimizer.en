@@ -888,7 +888,8 @@ solution: Journey Optimizer
     + [Retries](using/configuration/retries.md)
     + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
-  + [Support for archiving](using/configuration/archiving-support.md)
+  + [Support for email archiving](using/configuration/archiving-support.md)
+  + [Add a CC field to emails](using/configuration/cc-email-field.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
 + Journey configuration {#configure-journeys}

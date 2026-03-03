@@ -94,10 +94,18 @@ You can send an identical copy (or blind carbon copy) of emails sent by [!DNL Jo
 To do this, enable the **[!UICONTROL BCC email]** optional feature at the channel configuration level. [Learn more](../configuration/archiving-support.md#bcc-email)
 
 ![](assets/preset-bcc.png)
+<!--replace screenshot-->
 
 Additionally, when defining the **[!UICONTROL Bcc email]** address, make sure to use a subdomain that has a valid MX record configuration, otherwise the email configuration processing will fail.
 
 If you get an error upon submitting the email configuration, it means that the MX record is not configured for the subdomain of the address you entered. Contact your administrator for configuring the corresponding MX record or use another address with a valid MX record configuration.
+
+<!--
+## CC email {#cc-email}
+
+You can add a visible CC (carbon copy) recipient to emails sent by [!DNL Journey Optimizer], so that an additional address receives a copy and is visible to the primary recipient. The CC field is optional and supports personalization. [Learn more](../configuration/cc-email-field.md)
+
+-->
 
 ## Sending to suppressed email addresses {#send-to-suppressed-email-addresses}
 

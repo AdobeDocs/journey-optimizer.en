@@ -35,7 +35,7 @@ You can send blind carbon copy (BCC) of an email sent by [!DNL Journey Optimizer
 
 ### Enable BCC email {#enable-bcc}
 
-To enable the **[!UICONTROL BCC email]** option, enter the email address of your choice in the dedicated field of the [channel configuration](channel-surfaces.md) (i.e. message preset). You can specify any external address in correct format, except an email address defined on a subdomain delegated to Adobe. For example, if you delegated the *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* is prohibited.
+To enable the **[!UICONTROL BCC email]** option, enter the email address of your choice in the dedicated field of the [channel configuration](channel-surfaces.md). You can specify any external address in correct format, except an email address defined on a subdomain delegated to Adobe. For example, if you delegated the *marketing.luma.com* subdomain to Adobe, any address like *abc@marketing.luma.com* is prohibited.
 
 >[!CAUTION]
 >

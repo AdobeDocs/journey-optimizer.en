@@ -84,6 +84,10 @@ Once you have added one or more dynamic subdomains to a configuration, the follo
 
 You can also use personalization for all the header parameters defined in a configuration.
 
+>[!NOTE]
+>
+>When [editing an email configuration](../configuration/channel-surfaces.md#edit-channel-surface), you cannot add new [profile attributes](../personalization/personalization-build-expressions.md#sources) to header parameters. You must create a new channel configuration.
+
 For example, if you have multiple brands, you can create a single configuration and use personalized values for your email headers. This allows you to make sure that all emails sent from your different brands are addressed to each of your customers with the correct **From** names and emails. Similarly, when your recipients hit the **Reply** button in their email client software, you want the **Reply to** names and emails correspond to the correct brand for the right user.
 
 To use personalized variables for your configuration header parameters, follow the steps below.
