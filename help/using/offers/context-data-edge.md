@@ -33,6 +33,7 @@ To go further, you can also leverage context data into **ranking formulas**, or 
 
 * [Ranking formulas - Boost offers based on context data](../offers/ranking/create-ranking-formulas.md#context-data)
 * [Personalize representations based on context data](../offers/offer-library/add-representations.md#context-data)
+* [Supported functions in the personalization editor](offer-library/personalization-editor-supported-functions.md) (when personalizing offer content in Decision management)
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## February 2026 {#february-2026}
 
-* The datasets Time-to-live (TTL) guardrails documentation has been updated to align the Impacted datasets table with TTL applicability: record-type datasets have been removed, as TTL applies only to time-series datasets. [Read more](../data/datasets-ttl.md)
+* A new page is now available for Decision management. It lists all operators, helpers, and functions supported when personalizing offer content (representations) with the personalization editor. Use this list to avoid runtime errors. Only the documented functions are supported when personalizing content in Offer Decisioning. [Read more](../offers/offer-library/personalization-editor-supported-functions.md)
 
 * The **Create decision policies** and **Use decision policies in messages** documentation has been updated for Email: a note now explains that when the same offer can be selected by more than one decision policy in the email body, the engine deduplicates offers (each placement receives a different offer). To display the same offer in multiple placements (for example, header and footer), use **Reuse decision output**. [Read more](../experience-decisioning/create-decision-policy.md)
 

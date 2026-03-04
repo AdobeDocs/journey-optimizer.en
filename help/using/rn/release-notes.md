@@ -21,6 +21,74 @@ Because of this model, release notes are updated between monthly releases. For f
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+## March '26 updates {#march-26-rn}
+
+### New capabilities {#march-26-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Agent: Channel content create</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Powered by <strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now also generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in <strong>Content Designer</strong> for in-context editing.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html">detailed documentation</a>.</p>
+<p>Availability date: March 4, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Live Activity for iOS</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Bring real-time experiences directly to your customers' Lock Screens and Dynamic Island with iOS Live Activity in Adobe Journey Optimizer. Deliver live updates, from order tracking and flight status to event countdowns, live scores and delivery progress, without requiring users to open your app. Keep your audience informed and engaged at exactly the right moment, right where they are.</p>
+<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
+<p>For more information, refer to the <a href="../mobile-live/get-started-mobile-live.md">detailed documentation</a>.</p>
+<p>Availability date: March 3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Integration of custom Firefly models and third-party image generation models</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Enable seamless integration of standard and custom Firefly models, along with approved third-party image models, to provide greater flexibility, control, and brand alignment when generating images.</p>
+<p>Choose the right model for your needs:</p>
+<ul><li> <strong>Adobe model</strong> (powered by Firefly Image Model 4) for immediate image generation without additional setup</li><li> <strong>Partner model</strong> (powered by Gemini 2.5 Flash) for specialized capabilities</li><li><strong>Custom models</strong> (brand-specific models trained on your own assets) for on-brand generation that aligns precisely with your brand identity, style, and visual guidelines.</li></ul>
+<p>For more information, refer to the <a href="../content-management/generative-models.md">detailed documentation</a>.</p>
+<p>Availability date: March 2, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Improvements {#march-26-improv}
+
+#### Configuration
+
+* **Change in AJO Secondary Recipient Feedback Event Dataset** - The AJO Email BCC Feedback Event Dataset is being renamed to AJO Secondary Recipient Feedback Event Dataset. 
+  * **Existing users**: Only the display name changes. The underlying table name remains unchanged.
+  * **New users and new sandboxes**: Both the display name and table name use the new name.
+  * **Existing users/organizations with new sandboxes**: Both the display name and table name change to the new name.
+
 ## February '26 release notes {#feb-26-01-rn}
 
 The [New capabilities](#feb-26-01-features) and [Improvements](#feb-26-01-improv) sections cover capabilities already available. The [Coming soon](#coming-soon) section lists features and improvements scheduled for release later in February.
@@ -33,24 +101,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 ### New capabilities {#feb-26-01-features}
 
-
-<!--
-<table>
-<thead>
-<tr>
-<th><strong>Mobile Live Activities</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Live Activities</strong> provide real-time updates and interactive experiences within mobile apps, allowing users to stay informed about ongoing events or tasks directly on their device's screen. This feature enhances engagement by delivering live information, such as progress tracking, event updates, or interactive content, without requiring users to open the app.</p>
-<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
-</td>
-</tr>
-</tbody>
-</table>
--->
 
 <table>
 <thead>
@@ -298,22 +348,6 @@ The features and improvements below are planned for release later in February. R
 <table>
 <thead>
 <tr>
-<th><strong>Journey Agent: Channel content creation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Powered by <strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now also generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in <strong>Content Designer</strong> for in-context editing.</p>
-<p>Availability date: early March, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>AI model monitoring</strong><br/></th>
 </tr>
 </thead>
@@ -334,6 +368,3 @@ The features and improvements below are planned for release later in February. R
 
   Availability date: February 18, 2026
 
-* **Integration of custom Firefly models and third-party image generation models** - Enable seamless integration of standard and custom Firefly models, along with approved third-party image models (e.g., NanoBanana), to provide greater flexibility, control, and brand alignment when generating images. This allows you to select the best model for each use case: standard Firefly for general needs, custom Firefly for on-brand generation, or approved third-party models for specialized or experimental scenarios.
-
-  Availability date: early March, 2026.
