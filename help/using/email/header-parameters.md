@@ -17,6 +17,8 @@ When configuring a new [email channel configuration](email-settings.md), in the 
 >[!NOTE]
 >
 >For increased control over your email settings, you can personalize the header parameters. [Learn more](../email/surface-personalization.md#personalize-header)
+>
+>When [editing an email configuration](../configuration/channel-surfaces.md#edit-channel-surface), you cannot add new [profile attributes](../personalization/personalization-build-expressions.md#sources) to header parameters. You must create a new channel configuration.
 
 * **[!UICONTROL From name]**: The name of the sender, such as your brand's name.
 * **[!UICONTROL From email prefix]**: The email address you want to use for your communications.

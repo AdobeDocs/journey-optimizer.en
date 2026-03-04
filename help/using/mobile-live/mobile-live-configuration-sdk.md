@@ -6,8 +6,6 @@ description: Learn how to configure your Adobe Experience Platform Mobile SDK in
 feature: Channel Configuration
 role: Admin
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 exl-id: 02ca7c8e-105a-4e77-9aad-2381904255d0
 ---
 # Live activity integration with Adobe Experience Platform Mobile SDK {#mobile-live-config-sdk}
@@ -227,3 +225,13 @@ extension FoodDeliveryLiveActivityAttributes: LiveActivityAssuranceDebuggable {
     }
 }
 ```
+
+## Additional resources
+
+For comprehensive SDK documentation and implementation details:
+
+* [Live Activities Developer Guide](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities)
+* [API Reference](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/api-reference/)
+* [Live Activity Tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/tutorial/)
+* [Public Classes](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/public-classes/live-activity-attributes/)
+s

@@ -160,6 +160,8 @@ To edit a channel configuration, follow the steps below.
 >[!NOTE]
 >
 >You cannot edit the **[!UICONTROL Push notification settings]**. If a channel configuration is only configured for the Push notification channel, it is not editable.
+>
+>When editing an email configuration, you cannot add new [profile attributes](../personalization/personalization-build-expressions.md#sources) to header parameters. You must create a [new channel configuration](#create-channel-surface).
 
 1. From the list, click a channel configuration name to open it.
 

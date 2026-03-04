@@ -6,8 +6,6 @@ description: Live activity FAQ
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
 exl-id: e7e994ca-aa0c-4e86-8710-c87430b74188
 ---
 # Frequently asked questions {#mobile-live-faq}
@@ -52,6 +50,12 @@ No. Live activity can be started, updated, and ended remotely even when the app 
 +++How long can a Live activity remain active?
 
 Apple limits Live activity to **8 hours of active updates**. After that, the system automatically ends the activity, though it may remain visible in a static state for up to **12 additional hours** before removal. You can also end a Live activity sooner by setting a `dismissalDate` or explicitly calling `activity.end()` in your app.
+
++++
+
++++ What are the rate limits?
+
+Campaigns have a default rate limit of 500 transactional messages per second across all channels, including iOS Live activities. This limit applies to all channels combined, and there is no separate rate limit specifically for iOS Live activities.
 
 +++
 

@@ -6,8 +6,6 @@ description: Learn how to send Live activity in Journey Optimizer
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
 exl-id: c9766603-df19-4efd-8319-27e9764254b4
 ---
 # Get started with Live activity {#get-started-mobile-live}

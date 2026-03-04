@@ -480,6 +480,7 @@ solution: Journey Optimizer
     + [Work with Adobe Express](using/integrations/express.md)
     + [Work with Experience Manager templates](using/integrations/aem-templates.md)
     + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+    + [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
     + [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
@@ -497,6 +498,7 @@ solution: Journey Optimizer
       + [Brands](/help/rp_landing_pages/brands-landing-page.md)
       + [Create & manage your Brands](using/content-management/brands.md)
       + [Personalize your Brands](using/content-management/brands-personalize.md)
+      + [Create & manage generative models](using/content-management/generative-models.md)
       + [Evaluate your content](using/content-management/brands-score.md)
   + Multilingual content {#content-multilingual}
     + [Multilingual content](/help/rp_landing_pages/content-multilingual-landing-page.md)
@@ -712,6 +714,7 @@ solution: Journey Optimizer
         + [Configure offers](/help/rp_landing_pages/configure-offers-landing-page.md)
         + [Create personalized offers](using/offers/offer-library/creating-personalized-offers.md)
         + [Add representations](using/offers/offer-library/add-representations.md)
+        + [Supported functions in the personalization editor](using/offers/offer-library/personalization-editor-supported-functions.md)
         + [Add constraints](using/offers/offer-library/add-constraints.md)
       + [Create fallback offers](using/offers/offer-library/creating-fallback-offers.md)
       + [Create collections](using/offers/offer-library/creating-collections.md)
@@ -885,7 +888,8 @@ solution: Journey Optimizer
     + [Retries](using/configuration/retries.md)
     + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
-  + [Support for archiving](using/configuration/archiving-support.md)
+  + [Support for email archiving](using/configuration/archiving-support.md)
+  + [Add a CC field to emails](using/configuration/cc-email-field.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
 + Journey configuration {#configure-journeys}
