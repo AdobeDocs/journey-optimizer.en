@@ -66,7 +66,19 @@ By creating custom Firefly model providers, you can expand your AI capabilities 
 
 1. Enter your **[!UICONTROL Model ID]**.
 
-    To find your Firefly model ID, access the Firefly website and navigate to your trained models. The unique identifier is available in the model's management section once published. For more information, refer to the [Firefly custom models documentation](https://helpx.adobe.com/firefly/web/work-with-enterprise-features/train-custom-models/manage-custom-models.html). 
+    +++ Find your Firefly model ID
+
+    1. Access the Firefly website and navigate to your trained models.
+    1. Access the [Preview & test](https://helpx.adobe.com/firefly/web/work-with-enterprise-features/train-custom-models/train-firefly-custom-models.html#preview-and-test) menu.
+    1. In the URL, locate the value after `customModelId=`. Copy this value to use as your model ID.
+
+    For more information, refer to the [Firefly custom models documentation](https://helpx.adobe.com/firefly/web/work-with-enterprise-features/train-custom-models/manage-custom-models.html). 
+    
+    ![](assets/gen-model-manage-10.png){zoomable="yes"}
+
+    +++
+
+    </br>
 
     ![](assets/gen-model-manage-5.png){zoomable="yes"}
 
