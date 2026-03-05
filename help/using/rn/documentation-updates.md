@@ -13,6 +13,10 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## March 2026 {#march-2026}
+
+* The **Datasets Time-to-live (TTL) guardrails** documentation has been enhanced with a new FAQ entry to clearly identify which datasets are subject to TTL. TTL applies exclusively to time-series datasets — record-type datasets such as entity datasets, classification datasets, and decision object repositories are not subject to TTL and will not be impacted by the guardrail rollout. [Read more](../data/datasets-ttl.md)
+
 ## February 2026 {#february-2026}
 
 * A new page is now available for Decision management. It lists all operators, helpers, and functions supported when personalizing offer content (representations) with the personalization editor. Use this list to avoid runtime errors. Only the documented functions are supported when personalizing content in Offer Decisioning. [Read more](../offers/offer-library/personalization-editor-supported-functions.md)
