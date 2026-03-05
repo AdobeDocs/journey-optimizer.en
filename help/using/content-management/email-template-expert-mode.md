@@ -55,7 +55,7 @@ When you use the advanced HTML editor, the following guardrails are in place to 
     >
     >This warning appears only the first time you open the advanced HTML editor and resets each month.
 
-    ![](assets/email-template-expert-mode-warning.png)
+    ![](assets/email-template-expert-mode-warning.png){zoomable="yes"}
 
 1. The advanced HTML editor is displayed.
 
@@ -69,7 +69,7 @@ When you use the advanced HTML editor, the following guardrails are in place to 
 
 1. Saving is not available in advanced HTML view. Switch back to Desktop view to save your changes.
 
-    <![](assets/email-template-expert-mode-save.png)
+    ![](assets/email-template-expert-mode-save.png){zoomable="yes"}
 
     >[!NOTE]
     >
