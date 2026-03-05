@@ -14,7 +14,7 @@ exl-id: 0da96e32-52ad-4cc3-bac4-844b1f39ed16
 
 A landing page is a standalone web page that a user is directed to after clicking through from an email, a website, an ad, or any other digital location.
 
-[!DNL Journey Optimizer] allows you to create and design landing pages to direct your users to online forms where they can opt in or opt out from receiving your communications, or subscribe to a specific service such as a newsletter.
+[!DNL Journey Optimizer] allows you to create and design landing pages to direct your users to online forms where they can opt in or opt out from receiving your communications or a specific service such as a newsletter.
 
 ➡️ [Learn more about configuring subscriptions and creating landing pages in this video](#video)
 
@@ -22,8 +22,7 @@ A landing page is a standalone web page that a user is directed to after clickin
 
 Use landing pages when you want to:
 
-* Let customers **opt in or opt out** of marketing communications from a link in an email or campaign
-* Allow customers to **subscribe or unsubscribe** from a specific service or newsletter
+* Let customers **opt in or opt out** of marketing communications or a specific service or newsletter, from a link in an email or campaign
 * **Collect consent** before sending communications, and confirm the action with an automated email
 * Redirect users to a **dedicated web form** without building an external page outside of [!DNL Journey Optimizer]
 
@@ -31,25 +30,23 @@ Use landing pages when you want to:
 
 Before creating a landing page, complete these setup steps:
 
-1. **Configure a subdomain** — Set up a subdomain dedicated to hosting your landing pages. [Configure landing page subdomains](lp-subdomains.md)
-1. **Create a landing page preset** — A preset defines the subdomain and other settings applied to your landing pages. [Create a preset](lp-presets.md#lp-create-preset)
-1. **Create a subscription list** (for subscription use cases) — Required if you want customers to subscribe to or unsubscribe from a specific service. [Create a subscription list](subscription-list.md)
+1. [**Configure a subdomain**](lp-subdomains.md) — Set up a subdomain dedicated to hosting your landing pages.
+1. [**Create a landing page preset**](lp-presets.md#lp-create-preset) — A preset defines the subdomain and other settings applied to your landing pages.
+1. [**Create a subscription list**](subscription-list.md) (for subscription use cases) — Required if you want customers to subscribe to or unsubscribe from a specific service.
 
 ## How it works {#how-it-works}
 
 Creating and deploying a landing page follows this sequence:
 
-1. **Create and configure** your landing page — Select a preset, set up the primary page, and add any required subpages. [Create a landing page](create-lp.md)
-1. **Design the page** — Build the page content and form using [!DNL Journey Optimizer]'s drag-and-drop editor. [Design a landing page](design-lp.md)
-1. **Test and publish** — Preview the page, test form behavior, then publish to make it live. [Manage your landing pages](manage-lp.md)
-1. **Link in a message or journey** — Add the landing page URL to an email, campaign, or journey action so customers can reach it.
+1. [**Create and configure your landing page**](create-lp.md) — Select a preset, set up the primary page, and add any required subpages.
+1. [**Design the page**](design-lp.md) — Build the page content and form using [!DNL Journey Optimizer]'s drag-and-drop editor.
+1. [**Test and publish**](manage-lp.md) — Preview the page, test form behavior, then publish to make it live.
+1. [**Link in a message or journey**](../email/message-tracking.md#insert-links) — Add the landing page URL to an email, campaign, or journey action so customers can reach it.
 
 ## Key capabilities {#capabilities}
 
 * Leverage [!DNL Journey Optimizer] content design capabilities to easily build **responsive landing pages**.
-* Set up **opt-in and opt-out flows** quickly and seamlessly.
-* Create subscription lists to enable users to **subscribe to a service**. [Read more](lp-use-cases.md#subscription-to-a-service)
-* Provide your recipients with the **capability to unsubscribe** from receiving your communications. [Read more](lp-use-cases.md#opt-out)
+* Set up **opt-in and opt-out flows** quickly and seamlessly, including subscription lists to let users opt in or opt out of a specific service. [Read more](lp-use-cases.md#subscription-to-a-service)
 * Send a **confirmation email** upon opt-in or opt-out. [Read more](lp-use-cases.md#send-confirmation-email)
 
 <table style="table-layout:fixed"><tr style="border: 0;">
@@ -91,6 +88,6 @@ Creating and deploying a landing page follows this sequence:
 
 ## How-to video{#video}
 
-The video below shows how to create a subscription list, set up landing pages to offer subscriptions to or un-subscriptions from a service, integrate the (un)subscription option to a message and configure relevant journeys.
+The video below shows how to create a subscription list, set up landing pages to opt in to or opt out from a service, integrate the opt-in/opt-out option to a message and configure relevant journeys.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341280?quality=12&learn=on)
