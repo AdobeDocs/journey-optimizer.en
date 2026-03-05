@@ -20,7 +20,7 @@ For example, as a marketer for a retail brand, you're running a 48-hour flash sa
 * Recipients who open 24 hours later see "23 hours remaining"  
 * Recipients who open after the sale ends see "Sale ended"
 
-For more information on how to create your Dynamic Media in Adobe Experience manager, refer [to this document](assets/do-not-localize/countdown.pdf).
+For more information on how to add countdown timers to your Dynamic Media template in Adobe Experience Manager, refer [to this document](assets/do-not-localize/countdown.pdf).
 
 
 1. In **[!DNL Adobe Experience Manager]**, create a Dynamic Media template and add a countdown timer component to it.
@@ -29,9 +29,9 @@ For more information on how to create your Dynamic Media in Adobe Experience man
 
 1. In **[!DNL Journey Optimizer]**, create a new campaign or open an existing one, then access the Email Designer.
 
-1. Drag and drop an **[!UICONTROL HTML component]** into your email content.
+1. Drag and drop an **HTML** or **Asset** component into your email content.
 
-1. Select **[!UICONTROL Show the source code]** to edit the HTML directly.
+1. Hover over the component and click **[!UICONTROL Show the source code]** (for HTML components) or **[!UICONTROL Browse]** (for Asset components).
 
     ![](assets/timer-2.png)
 
@@ -45,9 +45,10 @@ For more information on how to create your Dynamic Media in Adobe Experience man
 
     ![](assets/timer-4.png)
 
-1. Select the asset in the Email Designer, then access the **[!UICONTROL Styles]** menu.
+1. Select the asset in the Email Designer, then access the **[!UICONTROL Settings]** menu.
 
-    Configure the following settings:
+    Configure the following:
+
     * **Banner text**: The text displayed with your timer
     * **End time**: The date and time when the countdown expires. Enter the time in GMT (Greenwich Mean Time) only. The system does not accept other time zones.
     * **Fallback text**: The message shown after the timer ends

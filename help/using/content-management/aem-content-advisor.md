@@ -132,11 +132,11 @@ To access Adobe Experience Manager Content Advisor in Journey Optimizer, follow 
 
 1. In the Personalization Editor, choose your content entry point:
 
-    * To add an asset, click **[!UICONTROL Assets]** then **[!UICONTROL Open Asset Selector]**.
+    * To add an asset, click **[!UICONTROL Assets]** then **[!UICONTROL Open AEM Content Advisor]**.
 
         ![](assets/content-advisor-11.png){zoomable="yes"}
 
-    * To add an Adobe Experience Manager Content Fragment, click **[!UICONTROL AEM Content Fragment]** then **[!UICONTROL Open AEM CF Selector]**.
+    * To add an Adobe Experience Manager Content Fragment, click **[!UICONTROL AEM Content Fragment]** then **[!UICONTROL Open AEM Content Advisor]**.
 
         ![](assets/content-advisor-12.png){zoomable="yes"}
 
