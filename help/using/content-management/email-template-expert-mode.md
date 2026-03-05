@@ -9,6 +9,7 @@ role: User
 hidefromtoc: yes
 hide: yes
 level: Experienced
+exl-id: 0c586565-0c65-435f-986d-cd08b59de159
 ---
 # Edit email templates with the advanced HTML editor {#email-template-expert-mode}
 
