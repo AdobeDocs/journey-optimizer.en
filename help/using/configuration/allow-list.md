@@ -4,7 +4,6 @@ product: journey optimizer
 title: Set up an allowed list
 description: Learn how to set up and manage an allowed list in Journey Optimizer to restrict email sending to trusted addresses and domains at the sandbox level.
 feature: Deliverability
-topic: Deliverability
 role: Admin
 level: Intermediate
 keywords: allowed list, safe list, email, deliverability, sandbox, domains, suppression, configuration
