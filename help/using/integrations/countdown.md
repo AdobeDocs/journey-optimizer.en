@@ -18,7 +18,7 @@ For example, as a marketer for a retail brand, you're running a 48-hour flash sa
 
 * Recipients who open immediately see "47 hours remaining"
 * Recipients who open 24 hours later see "23 hours remaining"  
-* Recipients who open after the sale ends see "Sale ended"
+* Recipients who open after the sale ends see "Time's up!"
 
 For more information on how to add countdown timers to your Dynamic Media template in Adobe Experience Manager, refer [to this document](assets/do-not-localize/countdown.pdf).
 
@@ -39,13 +39,17 @@ For more information on how to add countdown timers to your Dynamic Media templa
 
     ![](assets/timer-3.png)
 
+1. Enable the pills experience by toggling Pills to On. This improves readability by hiding long attribute paths.
+
+    ![](assets/timer-6.png)
+
 1. In the **[!UICONTROL Custom attributes]** menu, configure any customizable URL parameters as needed for your template.
 
     Click **[!UICONTROL Save]** when finished.
 
     ![](assets/timer-4.png)
 
-1. Select the asset in the Email Designer, then access the **[!UICONTROL Settings]** menu.
+1. Alternatively, you can also access the parameters of the Dynamic Media template by selecting the asset in the Email Designer, then accessing the **[!UICONTROL Settings]** menu.
 
     Configure the following:
 
