@@ -78,6 +78,32 @@ You can monitor all the approval and change requests that have been submitted fo
 
 ![Approval requests audit trail](assets/monitor-requests.png)
 
+## Frequently asked questions {#faq}
+
++++Do I need to create an approval policy for every campaign or journey?
+
+No. Approval policies are conditional. You only need to create a policy if you want to enforce review for a specific set of campaigns or journeys (e.g., all scheduled campaigns created by a specific team). If no policy applies to a campaign or journey, the creator can publish directly without requesting approval.
+
++++
+
++++What happens if the approver is unavailable?
+
+The request stays "In Review" until an approver acts on it. You can cancel the request (returning the item to "Draft") and resubmit once the right approver is available. Admins can also update the approval policy to add additional approvers.
+
++++
+
++++Can I edit a campaign or journey while it is pending approval?
+
+No. Once submitted for approval, the campaign or journey is in a locked "In Review" state. To make changes, the creator or an approver must cancel the request first. The item returns to "Draft" and can be edited before resubmitting.
+
++++
+
++++I don't see the Approve & publish permission in the drop-down — what should I check?
+
+Ensure you are adding the correct resource first. The **Approve & publish Campaigns** permission requires the **Campaigns** resource to be added to the role, and **Approve & publish Journeys** requires the **Journeys** resource. Both must be added separately. [Learn how to assign approval-related permissions](#prerequisites)
+
++++
+
 ## Additional resources
 
 * **[Create approval policies](approval-policies.md)** - Learn how to set up approval policies to enforce review workflows for campaigns and journeys.
