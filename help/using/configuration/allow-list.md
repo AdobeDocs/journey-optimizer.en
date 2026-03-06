@@ -1,36 +1,34 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Allowed list
-description: Learn how to use the allowed list
+title: Set up an allowed list
+description: Learn how to set up and manage an allowed list in Journey Optimizer to restrict email sending to trusted addresses and domains at the sandbox level.
 feature: Deliverability
-topic: Content Management
+topic: Deliverability
 role: Admin
-level: Experienced
-keywords: allowed list, list, safe, configuration
+level: Intermediate
+keywords: allowed list, safe list, email, deliverability, sandbox, domains, suppression, configuration
 exl-id: 70ab8f57-c132-4de1-847b-11f0ab14f422
 ---
 # Set up an allowed list {#allow-list}
 
-It is possible to define a specific sending-safe list at the [sandbox](../administration/sandboxes.md) level.
-
-This allowed list enables you to specify individual email addresses or domains that will be the only recipients or domains authorized to receive the emails you are sending from a specific sandbox.
+The allowed list is a sending-safe list you can define at the [sandbox](../administration/sandboxes.md) level. It restricts email sending to specific addresses or domains, ensuring that only explicitly listed recipients can receive messages from a given sandbox.
 
 >[!CAUTION]
 >
 >This feature only applies to the email channel. It is available on production and non-production sandboxes.
 
-For example, on a non-production instance, where mistakes can occur, the allowed list ensures you have no risk of sending out unwanted messages to real customer addresses, and therefore provides a secured environment for testing purpose.
+On non-production sandboxes, where accidental sends can occur, the allowed list prevents unwanted messages from reaching real customer addresses, providing a secure environment for testing purposes.
 
-Also, when the allowed list is active but empty, no mail will go out. Hence if you encounter some major issue, you can use this feature to stop  all outgoing communications from [!DNL Journey Optimizer] until you fix the problem. Learn more about the [allowed list logic](#logic).
+When the allowed list is active but empty, no emails are sent. This makes it a useful emergency brake: if a critical issue arises, you can activate an empty allowed list to halt all outgoing communications from [!DNL Journey Optimizer] until the problem is resolved. Learn more about the [allowed list logic](#logic).
 
-In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
+You can also use the Journey Optimizer **Suppression REST API** to manage outgoing messages programmatically through suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
 ## Access the allowed list {#access-allowed-list}
 
 To access the detailed list of allowed email addresses and domains, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]**, and select **[!UICONTROL Allowed list]**.
 
-![](assets/allow-list-access.png)
+![Allowed list page showing the list of allowed email addresses and domains](assets/allow-list-access.png)
 
 >[!CAUTION]
 >
@@ -42,21 +40,21 @@ Use the **[!UICONTROL Delete]** button to permanently remove an entry.
 
 You can search on the email addresses or domains, and filter on the **[!UICONTROL Address type]**. Once selected, you can clear the filter displayed on top of the list.
 
-![](assets/allowed-list-filtering-example.png)
+![Allowed list filtered by address type](assets/allowed-list-filtering-example.png)
 
 ## Activate the allowed list {#enable-allow-list}
 
 To activate the allowed list, follow the steps below.
 
-1. Access the  **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]** menu.
+1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]** menu.
 
 1. Select the toggle button.
 
-    ![](assets/allow-list-edit.png)
+    ![Toggle button to activate the allowed list](assets/allow-list-edit.png)
 
 1. Select **[!UICONTROL Activate allowed list]**. The allowed list is now active.
 
-    ![](assets/allow-list-enable.png)
+    ![Confirmation that the allowed list is now active](assets/allow-list-enable.png)
 
     >[!NOTE]
     >
@@ -72,15 +70,15 @@ The allowed list logic applies when the feature is active. Learn more in [this s
 
 To deactivate the allowed list, follow the steps below.
 
-1. Access the  **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]** menu.
+1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Email configuration]** > **[!UICONTROL Allow list]** menu.
 
 1. Select the toggle button.
 
-    ![](assets/allow-list-edit-active.png)
+    ![Toggle button to deactivate the allowed list](assets/allow-list-edit-active.png)
 
 1. Select **[!UICONTROL Deactivate allowed list]**. The allowed list is no longer active.
 
-    ![](assets/allow-list-deactivate.png)
+    ![Confirmation that the allowed list is now inactive](assets/allow-list-deactivate.png)
 
     >[!NOTE]
     >
@@ -118,7 +116,7 @@ To do this, follow the steps below.
 
 1. Select the **[!UICONTROL Add email or domain]** button.
 
-    ![](assets/allowed-list-add-email.png)
+    ![Add email or domain button on the allowed list page](assets/allowed-list-add-email.png)
 
 1. Choose the address type: **[!UICONTROL Email address]** or **[!UICONTROL Domain address]**.
 
@@ -130,11 +128,11 @@ To do this, follow the steps below.
 
 1. Specify a reason if needed.
 
-    ![](assets/allowed-list-add-email-address.png)
+    ![Form to add an email address or domain to the allowed list, with an optional reason field](assets/allowed-list-add-email-address.png)
 
     >[!NOTE]
     >
-    >All ASCII characters comprised between 32 and 126 are allowed in the **[!UICONTROL Reason]** field. The full list can be found on [this page](https://en.wikipedia.org/wiki/ASCII#Printable_characters){target="_blank"} for example. 
+    >All ASCII characters in the range 32 to 126 are allowed in the **[!UICONTROL Reason]** field. The full list can be found on [this page](https://en.wikipedia.org/wiki/ASCII#Printable_characters){target="_blank"} for example. 
 
 1. Click **[!UICONTROL Submit]**.
 
@@ -142,7 +140,7 @@ To do this, follow the steps below.
 
 To populate the allowed list, you can also call the suppression API with the `ALLOWED` value for the `listType` attribute. For example:
 
-![](assets/allow-list-api.png)
+![Example API call to add an entry to the allowed list using the suppression API](assets/allow-list-api.png)
 
 You can perform the **Add**, **Delete** and **Get** operations.
 
@@ -154,11 +152,11 @@ To export the allowed list as a CSV file, follow the steps below:
 
 1. Select the **[!UICONTROL Download CSV]** button.
 
-    ![](assets/allowed-list-download-csv.png)
+    ![Download CSV button on the allowed list page](assets/allowed-list-download-csv.png)
 
 1. Wait until the file is generated.
 
-    ![](assets/allowed-list-download-generate.png)
+    ![Notification indicating the CSV file is being generated](assets/allowed-list-download-generate.png)
 
     >[!NOTE]
     >
@@ -170,7 +168,7 @@ To export the allowed list as a CSV file, follow the steps below:
 
 1. Click the notification itself to download the file.
 
-    ![](assets/allowed-list-download-notification.png)
+    ![Notification with a download link for the generated CSV file](assets/allowed-list-download-notification.png)
 
     >[!NOTE]
     >
