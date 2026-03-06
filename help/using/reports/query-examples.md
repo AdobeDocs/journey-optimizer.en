@@ -13,6 +13,32 @@ exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
 
 This section provides commonly used examples to query Journey Step Events in Data Lake. Before diving into specific use cases, it's important to understand the key identifiers used in journey event data.
 
+## Prerequisites {#prerequisites}
+
+Before running any query on this page, ensure the following:
+
+* **Access to Adobe Experience Platform Query Service** — You must have access to [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"} in your Adobe Experience Platform sandbox.
+* **Dataset available** — Queries target the `journey_step_events` dataset. Verify the dataset exists and contains data in your sandbox via **Experience Platform > Datasets**.
+* **Correct journey version ID** — Most queries require a `journeyVersionID`. Find it in Journey Optimizer under **Journeys > [your journey] > Properties**, or use `journeyVersionName` to locate it in the dataset first.
+* **Schema field values** — Make sure that the fields used in your queries have associated values in the corresponding schema. Empty fields return no results without errors.
+
+>[!TIP]
+>
+>**New to Query Service?** Open [Adobe Experience Platform](https://experience.adobe.com/), navigate to **Query Service > Queries**, paste any example below, replace the placeholder values (e.g. `<journeyVersionID>`, `<last x hours>`), and select **Run**.
+
+## Find the right query {#find-query}
+
+| I want to… | Go to |
+|---|---|
+| Count profiles that entered a journey | [Basic use cases](#common-queries) |
+| Debug a specific profile's journey path | [Profile-based queries](#profile-based-queries) |
+| Investigate Read Audience execution or errors | [Read Audience queries](#read-segment-queries) |
+| Troubleshoot message or action errors | [Message & Action errors](#message-action-errors) |
+| Analyze Audience Qualification discards | [Audience Qualification queries](#segment-qualification-queries) |
+| Debug external or business events | [Event-based queries](#event-based-queries) |
+| Monitor custom action endpoint performance | [Custom Action queries](#query-custom-action) |
+| Track Engageable Profiles and license usage | [Engageable Profiles queries](#engageable-profiles-queries) |
+
 Make sure that the fields used in your queries have associated values in the corresponding schema.
 
 ## Understanding key identifiers {#key-identifiers}
