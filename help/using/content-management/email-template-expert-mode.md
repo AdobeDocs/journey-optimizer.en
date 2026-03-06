@@ -74,3 +74,8 @@ When you use the advanced HTML editor, the following guardrails are in place to 
     >[!NOTE]
     >
     >Content can only be saved in Desktop view for content compatibility reasons. Your edits are preserved when you switch views.
+
+1. Content simulation is not available in advanced HTML view. To simulate your content, switch to Desktop view.
+
+    ![](assets/email-template-expert-mode-simulate.png){zoomable="yes"}
+
