@@ -1,15 +1,7 @@
 .DS_Store
 *.bak
-.DS_Store
-help/using/.DS_Store
 help/using/.DS_Store
 .vscode
 .cursor/mcp.json
-.cursor-agents
-.cursor-agents
 usage-agents.log
-.cursor-agents
-usage-agents.log
-.cursor-agents
-.cursor-agents
-.cursor-agents
+# .cursor-agents is a submodule - do not ignore so git can track it
