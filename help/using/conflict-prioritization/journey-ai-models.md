@@ -18,15 +18,14 @@ exl-id: 3e7c3069-b022-4709-936d-acaad56b5882
 
 [!DNL Adobe Journey Optimizer] helps you control which journeys a profile can enter when they qualify for more than the system allows. To do so, you can use [rule sets](rule-sets.md) to define caps on journey entry or concurrency. When a profile is eligible for more journeys than the cap allows, the priority assigned to each journey determines which journeys are selected.
 
-Instead of using priority or ranking formulas, you can use **AI models** to dynamically rank journeys based on trained model scores. You can create AI models from the **[!UICONTROL Orchestration ranking]** section in the UI and use them in rule sets to apply them to journeys.
-
-For an overview of AI model types available in [!DNL Journey Optimizer], see [Get started with AI models](../experience-decisioning/ranking/ai-models.md#ai-model-types) in the Decisioning section.
+Instead of using priority, you can also use **AI models** in your ranking formulas to dynamically rank journeys based on trained model scores. 
 
 ## Create an AI model {#create-ai-model}
 
+<!--Do you need specific permissions to create AI models?
 >[!CAUTION]
 >
->To create, edit, or delete AI models, you must have the **Manage Ranking Strategies** permission. [Learn more](../administration/high-low-permissions.md#manage-ranking-strategies)
+>To create, edit, or delete AI models, you must have the **Manage Ranking Strategies** permission. [Learn more](../administration/high-low-permissions.md#manage-ranking-strategies)-->
 
 To create an AI model for journey ranking, follow the steps below.
 
@@ -50,7 +49,11 @@ To create an AI model for journey ranking, follow the steps below.
     * **[!UICONTROL Auto-optimization]** optimizes based on past performance. [Learn more](../experience-decisioning/ranking/auto-optimization-model.md)
     * **[!UICONTROL Personalized optimization]** optimizes and personalizes based on audiences and performance. [Learn more](../experience-decisioning/ranking/personalized-optimization-model.md)-->
 
-1. The **[!UICONTROL Optimization metric]** section provides information on the conversion event used by the AI model. [!DNL Journey Optimizer] ranks based on the **conversion rate** (Conversion rate = Total number of conversion events / Total number of impression events). The conversion rate is calculated using:
+1. In the **[!UICONTROL Optimization metric]**, all metrics from your default [!DNL Customer Journey Analytics] [data view](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} display in the list. Select the metric that you want to optimize your model on.
+
+    ![AI model details pane with name and description fields](assets/journey-model-metrics.png){width="80%"}
+
+    [!DNL Journey Optimizer] ranks based on the **conversion rate** (Conversion rate = Total number of conversion events / Total number of impression events). The conversion rate is calculated using:
 
     * **Impression events** (items that are displayed)
     * **Conversion events** (items that result in clicks or conversions)
@@ -69,17 +72,31 @@ To create an AI model for journey ranking, follow the steps below.
 
     >[!NOTE]
     >
-    >You can select up to 5 audiences.
+    >You can select up to 50 audiences.
 
 1. Save and activate the AI model.
 
-The AI model is now available when you configure a rule set.
+The AI model is now available for selection when you create a ranking formula.
+
+## Select an AI model for a ranking formula {#select-ai-model-for-ranking-formula}
+
+You can now set the AI model as a reference to build a ranking formula. Follow the steps below.
+
+1. Create a ranking formula. [Learn how](journey-ranking-formulas.md#create-journey-ranking-formula)
+
+1. Use the **[!UICONTROL Select AI model]** button to select the AI model you want to use.
+
+    ![Journey ranking formula details pane with AI model selection](assets/journey-formula-ai-model.png){width="80%"}
+
+1. In at least one of the **[!UICONTROL Criterion]** sections, define a condition and select **[!UICONTROL AI model score]** as the ranking method. For example, if the journey has a "Promo" tag, the ranking score is the AI model score.
+
+    ![Ranking formula: Promo tag uses AI model score](assets/journey-formula-ex-2.png){width="60%"}
+
+1. Click **[!UICONTROL Create]** to complete your ranking formula.
 
 ## Assign the AI model to a rule set {#assign-ai-model-to-ruleset}
 
-To use an AI model to rank your journeys, you need to use it in a formula and assign this formula to a rule set.
-
-1. Create a ranking formula using the AI model you created. [Learn how](journey-ranking-formulas.md#create-journey-ranking-formula)
+To use an AI model to rank your journeys, you need to assign the formula referencing this AI model to a rule set.
 
 1. From the **[!UICONTROL Business rules]** menu, create a rule set you want to use for journey arbitration. [Learn how](rule-sets.md#Create)
 
@@ -87,7 +104,7 @@ To use an AI model to rank your journeys, you need to use it in a formula and as
 
 1. In the rule set properties, set the **[!UICONTROL Ranking method]** to **[!UICONTROL Formula]** (instead of **[!UICONTROL Priority]**).
 
-1. Select the formula that using the AI model that you created from the drop-down list.
+1. Select the formula that uses the AI model that you created from the drop-down list.
 
 1. Create the journey capping rules you want to add to the rule set. [Learn how](journey-capping.md#create-rule)
 

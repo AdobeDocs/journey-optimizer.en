@@ -45,7 +45,7 @@ To create a ranking formula for your journeys, follow the steps below.
     <!--
     Selecting a formula entity specifies which type of item—such as journeys or other entities—the ranking formula will apply to. This determines the context in which the formula operates, allowing you to define rules that influence how those items are ranked.-->
 
-1. Optionally, click **[!UICONTROL Select AI model]** to set the model that will be used as a reference to build your ranking formula.
+1. Optionally, click **[!UICONTROL Select AI model]** to set the model that will be used as a reference to build your ranking formula. [Learn more](journey-ai-models.md)
 
 <!--
     >[!NOTE]
