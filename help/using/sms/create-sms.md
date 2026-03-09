@@ -145,9 +145,9 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](#sms-mms-test).
 
-## Personalize with Experience Decisioning {#decisioning-sms}
+## Personalize with Decisioning {#decisioning-sms}
 
-You can personalize and optimize the content of your SMS messages with **Experience Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
+You can personalize and optimize the content of your SMS messages with **Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
 
 For more information on how to create and use decision policies in SMS messages, refer to [this section](../experience-decisioning/create-decision.md).
 

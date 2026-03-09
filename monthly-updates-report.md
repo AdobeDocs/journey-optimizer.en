@@ -95,7 +95,7 @@ exl-id: 7962189b-4135-4f88-b91d-40d21cdf6c6d
 - [Create and manage decision items collections](help/using/experience-decisioning/collections.md) - Nov 7
 - [Context data](help/using/experience-decisioning/context-data.md) - Nov 7
 - [Get started with decision policies](help/using/experience-decisioning/create-decision.md) - Nov 7
-- [Get started with Experience Decisioning](help/using/experience-decisioning/gs-experience-decisioning.md) - Nov 7
+- [Get started with Decisioning](help/using/experience-decisioning/gs-experience-decisioning.md) - Nov 7
 - [Decision items](help/using/experience-decisioning/items.md) - Nov 7
 - [Decisioning ranking methods](help/using/experience-decisioning/ranking/ranking.md) - Nov 7
 - [Build rules](help/using/experience-decisioning/rules.md) - Nov 7

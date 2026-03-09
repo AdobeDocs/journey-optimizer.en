@@ -314,7 +314,7 @@ Improvements coming with this release are listed below.
 
   Availability date: February 18, 2026.
 
-#### Experience Decisioning
+#### Decisioning
 
 * **Edge inbound support for using Adobe Experience Platform data in Decisioning** - Using Adobe Experience Platform data in Decisioning now supports edge inbound use cases, in addition to email and custom actions in journeys. [Read more](../experience-decisioning/aep-data-exd.md)
 
@@ -364,7 +364,7 @@ The features and improvements below are planned for release later in February. R
 
 ### Improvements {#coming-soon-improv}
 
-* **Experience Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Experience Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
+* **Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
 
   Availability date: February 18, 2026
 

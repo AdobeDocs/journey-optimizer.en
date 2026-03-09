@@ -30,7 +30,7 @@ For more information on Custom upload audiences, refer to the sections:
 
 ## Must-read {#must-read}
 
-* **Decision Management only** - This functionality is supported in Decision Management only, not in Decisioning (formerly known as "Experience Decisioning").
+* **Decision Management only** - This functionality is supported in Decision Management only, not in Decisioning.
 * **Decisioning API (Hub) only** - It is available exclusively through Decisioning API (Hub) requests and is not supported by Edge Decisioning API or batch decisioning.
 * **Required API flag for enrichment data** - When using a Custom upload (CSV) audience and you want to retrieve enrichment data in the offer decision response, you must include `"xdm:enrichedAudience": true` in your API request payload. Without this flag, enrichment attributes from the CSV-uploaded audience will not be returned. [Learn more about the Decisioning API](api-reference/offer-delivery-api/decisioning-api.md)
 

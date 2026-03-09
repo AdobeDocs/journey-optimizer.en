@@ -37,7 +37,7 @@ Follow these core steps to start building experiences:
 
     ![](../assets/perso_ee2.png)
     
-1. **Add offers and decisioning**. Deliver the best offer to each customer at the right time using AI-powered decisioning. Use Decisioning to personalize push, SMS, and other channels. Learn about [Decision Management](../../offers/get-started/starting-offer-decisioning.md) and [Experience Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
+1. **Add offers and decisioning**. Deliver the best offer to each customer at the right time using AI-powered decisioning. Use Decisioning to personalize push, SMS, and other channels. Learn about [Decision Management](../../offers/get-started/starting-offer-decisioning.md) and [Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
     ![](../assets/offers-e2e-offers-displayed.png)
     
