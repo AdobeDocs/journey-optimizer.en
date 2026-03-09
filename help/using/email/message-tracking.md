@@ -61,7 +61,7 @@ To insert links into your email content, follow the steps below:
 
     * Select **[!UICONTROL External link]** to insert a link to an external URL.
 
-    * Select **[!UICONTROL Landing page]** to insert a link to a landing page. [Learn more](../landing-pages/get-started-lp.md)
+    * Select **[!UICONTROL Landing page]** to insert a link to a landing page. [Learn more](../landing-pages/create-lp.md)
 
     * Select **[!UICONTROL One click Opt-out]** to insert a link to enable users to quickly unsubscribe from your communications without the need to confirm opting out. [Learn more](email-opt-out.md#one-click-opt-out).
 

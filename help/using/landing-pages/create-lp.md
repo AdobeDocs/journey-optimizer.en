@@ -18,6 +18,10 @@ The main steps to create landing pages are as follows:
 
 ![](assets/lp-creation-process.png)
 
+>[!NOTE]
+>
+>Before creating your first landing page, complete the [configure landing pages](../../rp_landing_pages/lp-configuration-landing-page.md) setup. This includes configuring a subdomain to host your landing pages and defining at least one preset that specifies the subdomain and other channel settings. You will need to select a preset when you create the landing page.
+
 ## Create a landing page {#create-landing-page}
 
 >[!CONTEXTUALHELP]

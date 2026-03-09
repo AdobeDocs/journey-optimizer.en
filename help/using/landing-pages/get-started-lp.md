@@ -18,37 +18,6 @@ A landing page is a standalone web page that a user is directed to after clickin
 
 ➡️ [Learn more about configuring subscriptions and creating landing pages in this video](#video)
 
-## When to use landing pages {#when-to-use}
-
-Use landing pages when you want to:
-
-* Let customers **opt in or opt out** of marketing communications or a specific service or newsletter, from a link in an email or campaign
-* **Collect consent** before sending communications, and confirm the action with an automated email
-* Redirect users to a **dedicated web form** without building an external page outside of [!DNL Journey Optimizer]
-
-## Before you start {#prerequisites}
-
-Before creating a landing page, complete these setup steps:
-
-1. [**Configure a subdomain**](lp-subdomains.md) — Set up a subdomain dedicated to hosting your landing pages.
-1. [**Create a landing page preset**](lp-presets.md#lp-create-preset) — A preset defines the subdomain and other settings applied to your landing pages.
-1. [**Create a subscription list**](subscription-list.md) (for subscription use cases) — Required if you want customers to subscribe to or unsubscribe from a specific service.
-
-## How it works {#how-it-works}
-
-Creating and deploying a landing page follows this sequence:
-
-1. [**Create and configure your landing page**](create-lp.md) — Select a preset, set up the primary page, and add any required subpages.
-1. [**Design the page**](design-lp.md) — Build the page content and form using [!DNL Journey Optimizer]'s drag-and-drop editor.
-1. [**Test and publish**](manage-lp.md) — Preview the page, test form behavior, then publish to make it live.
-1. [**Link in a message or journey**](../email/message-tracking.md#insert-links) — Add the landing page URL to an email, campaign, or journey action so customers can reach it.
-
-## Key capabilities {#capabilities}
-
-* Leverage [!DNL Journey Optimizer] content design capabilities to easily build **responsive landing pages**.
-* Set up **opt-in and opt-out flows** quickly and seamlessly, including subscription lists to let users opt in or opt out of a specific service. [Read more](lp-use-cases.md#subscription-to-a-service)
-* Send a **confirmation email** upon opt-in or opt-out. [Read more](lp-use-cases.md#send-confirmation-email)
-
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="create-lp.md">
@@ -85,6 +54,32 @@ Creating and deploying a landing page follows this sequence:
 <p>
 </td>
 </tr></table>
+
+## When to use landing pages {#when-to-use}
+
+Use landing pages when you want to:
+
+* Let customers **opt in or opt out** of marketing communications or a specific service or newsletter from a link in an email or campaign—including subscription lists for targeted services. [Read more](lp-use-cases.md#subscription-to-a-service)
+* **Collect consent** before sending communications and send a **confirmation email** upon opt-in or opt-out. [Read more](lp-use-cases.md#send-confirmation-email)
+* Redirect users to a **dedicated web form** without building an external page outside of [!DNL Journey Optimizer]
+* Build **responsive landing pages** using [!DNL Journey Optimizer]'s content design capabilities
+
+## Before you start {#prerequisites}
+
+Before creating a landing page, complete these setup steps:
+
+1. [**Configure a subdomain**](lp-subdomains.md) — Set up a subdomain dedicated to hosting your landing pages.
+1. [**Create a landing page preset**](lp-presets.md#lp-create-preset) — A preset defines the subdomain and other settings applied to your landing pages.
+1. [**Create a subscription list**](subscription-list.md) (for subscription use cases) — Required if you want customers to subscribe to or unsubscribe from a specific service.
+
+## How it works {#how-it-works}
+
+Creating and deploying a landing page follows this sequence:
+
+1. [**Create and configure your landing page**](create-lp.md) — Select a preset, set up the primary page, and add any required subpages.
+1. [**Design the page**](design-lp.md) — Build the page content and form using [!DNL Journey Optimizer]'s drag-and-drop editor.
+1. [**Test**](create-lp.md#test-landing-page) and [**publish**](create-lp.md#publish-landing-page) your landing page — Preview the page, test form behavior, then publish to make it live.
+1. [**Link in a message or journey**](../email/message-tracking.md#insert-links) — Add the landing page URL to an email, campaign, or journey action so customers can reach it.
 
 ## How-to video{#video}
 

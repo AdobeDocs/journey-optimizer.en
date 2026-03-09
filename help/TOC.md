@@ -433,7 +433,6 @@ solution: Journey Optimizer
       + [Cart abandonment email](using/personalization/personalization-use-case-helper-functions.md)
       + [Health plan prescriptions email](using/personalization/perso-uc-plan-prescriptions.md)
   + Landing pages {#landing-pages}
-    + [Landing pages](/help/rp_landing_pages/landing-pages-landing-page.md)
     + [Get started with landing pages](using/landing-pages/get-started-lp.md)
     + [Create a landing page](using/landing-pages/create-lp.md)
     + [Manage your landing pages](using/landing-pages/manage-lp.md)
