@@ -30,7 +30,7 @@ Create Landing Pages
 
 Discover tools and tutorials for creating, managing, and optimizing landing pages for marketing campaigns.
 
-[Learn About Landing Pages](landing-pages-landing-page.md)
+[Learn About Landing Pages](../using/landing-pages/get-started-lp.md)
 :::
 
 :::
