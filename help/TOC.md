@@ -666,6 +666,7 @@ solution: Journey Optimizer
         + [Auto-optimization model](using/experience-decisioning/ranking/auto-optimization-model.md)
         + [Personalized optimization model](using/experience-decisioning/ranking/personalized-optimization-model.md)
         + [Create AI models](using/experience-decisioning/ranking/create-ai-models.md)
+        + [Monitor your AI models' performance](using/experience-decisioning/ranking/ai-model-observability.md)
     + [Work with placements](using/experience-decisioning/placements.md)
     + Use Adobe Experience Platform data {#aep-data}
       + [Use Adobe Experience Platform data](/help/rp_landing_pages/aep-data-landing-page.md)

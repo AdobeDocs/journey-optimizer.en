@@ -51,3 +51,5 @@ The main steps to be able to create and use AI models are as follows:
     >Ranking models require feedback events to be sent in as experience events in order to be collected. [Learn more about Decisioning data collection](../data-collection/data-collection.md)
 
 1. Assign the AI model to a selection strategy to rank eligible offers. [Learn more](../selection-strategies.md#select-ranking-method)
+
+1. Monitor your AI model's training status and performance. [Learn more](ai-model-observability.md)
