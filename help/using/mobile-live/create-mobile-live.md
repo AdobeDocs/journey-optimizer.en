@@ -147,6 +147,10 @@ After configuring your mobile configuration and implement your Adobe Experience 
 
 After designing your Live activity, you can track measuring the impact of your Live activity with [built-in reports](../reports/campaign-global-report-cja-activity.md).
 
+>[!TIP]
+>
+>If your Live Activity is not appearing or updating as expected, see [Troubleshoot Live Activities](troubleshoot-mobile-live.md) for step-by-step debugging guidance.
+
 ## How-to video
 
 Discover how to configure iOS Live activity with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.

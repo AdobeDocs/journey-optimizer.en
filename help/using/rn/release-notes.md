@@ -28,6 +28,44 @@ Because of this model, release notes are updated between monthly releases. For f
 <table>
 <thead>
 <tr>
+<th><strong>Advanced HTML editor for email templates</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Advanced HTML mode for email content templates lets you edit the HTML source of your content in the Email Designer, add advanced expressions (such as conditions) in the source, and toggle between HTML view and Desktop view without losing your changes.</p>
+<p>This capability is available in content templates for the Email channel only. It is currently in Limited Availability—contact your Adobe representative to gain access.</p>
+<p><img src="assets/do-not-localize/expert-mode.gif"/></p>
+<p>For more information, refer to the <a href="../content-management/email-template-expert-mode.md">detailed documentation</a>.</p>
+<p>Availability date: March 10, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>AI model monitoring</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now allows you to monitor the health, training status, and performance of your Decisioning AI models. This allows you to verify training success, troubleshoot failures, and understand impact on your outcomes in order to select the best offers for each customer using AI. Note that this capability is available for <strong>Decisioning</strong> only (not for legacy Decision Management models).</p>
+<p>This capability is currently available for <strong>personalized optimization</strong> models only (not auto-optimization).</p>
+<p><img src="assets/do-not-localize/ai-model-observability.gif"/></p>
+<p>For more information, refer to the <a href="../experience-decisioning/ranking/ai-model-observability.md">detailed documentation</a>.</p>
+<p>Availability date: March 9, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey Agent: Channel content create</strong><br/></th>
 </tr>
 </thead>
@@ -344,23 +382,6 @@ Improvements coming with this release are listed below.
 ## Coming soon {#coming-soon}
 
 The features and improvements below are planned for release later in February. Release dates and scope may change without prior notice.
-
-<table>
-<thead>
-<tr>
-<th><strong>AI model monitoring</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now allows you to monitor the health, training status, and performance of your Decisioning AI models. This allows you to verify training success, troubleshoot failures, and understand impact on your outcomes in order to select the best offers for each customer using AI. Note that this capability is available for <strong>Decisioning</strong> only (not for legacy Decision Management models).</p>
-<p>This capability is currently available for <strong>personalized optimization</strong> models only (not auto-optimization).</p>
-<p>Availability date: early March, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 ### Improvements {#coming-soon-improv}
 

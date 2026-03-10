@@ -399,10 +399,11 @@ solution: Journey Optimizer
   + Live activity {#live-activity}
     + [Get started with Live activity](using/mobile-live/get-started-mobile-live.md)
     + [Create a Live activity](using/mobile-live/create-mobile-live.md)
+    + [Troubleshoot Live activity](using/mobile-live/troubleshoot-mobile-live.md)
     + [FAQ](using/mobile-live/mobile-live-faq.md)
-    + Configure content card channel {#configure}
+    + Configure Live activity channel {#configure}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
-      + [Configure Live Activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
+      + [Configure Live activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
@@ -666,6 +667,7 @@ solution: Journey Optimizer
         + [Auto-optimization model](using/experience-decisioning/ranking/auto-optimization-model.md)
         + [Personalized optimization model](using/experience-decisioning/ranking/personalized-optimization-model.md)
         + [Create AI models](using/experience-decisioning/ranking/create-ai-models.md)
+        + [Monitor your AI models' performance](using/experience-decisioning/ranking/ai-model-observability.md)
     + [Work with placements](using/experience-decisioning/placements.md)
     + Use Adobe Experience Platform data {#aep-data}
       + [Use Adobe Experience Platform data](/help/rp_landing_pages/aep-data-landing-page.md)

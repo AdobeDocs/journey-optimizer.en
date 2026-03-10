@@ -234,4 +234,7 @@ For comprehensive SDK documentation and implementation details:
 * [API Reference](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/api-reference/)
 * [Live Activity Tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/tutorial/)
 * [Public Classes](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/public-classes/live-activity-attributes/)
-s
+
+>[!TIP]
+>
+>If you are experiencing issues with token registration, payload alignment, or Live Activity delivery, see [Troubleshoot Live Activities](troubleshoot-mobile-live.md) for detailed debugging guidance.

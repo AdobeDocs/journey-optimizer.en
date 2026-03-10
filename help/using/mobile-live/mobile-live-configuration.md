@@ -79,3 +79,7 @@ Step 1 is optional if your push credentials have already been configured, as the
 You can now start integration with Adobe Experience Platform Mobile SDK to enable real-time, dynamic updates on the Lock Screen and Dynamic Island. 
 
 ➡️ [Learn more on Adobe Experience Platform Mobile SDK integration](mobile-live-configuration-sdk.md)
+
+>[!TIP]
+>
+>If you encounter issues with Live Activity configuration or delivery, see [Troubleshoot Live Activities](troubleshoot-mobile-live.md) for debugging steps.
