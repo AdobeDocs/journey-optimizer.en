@@ -18,6 +18,15 @@ A landing page is a standalone web page that a user is directed to after clickin
 
 ➡️ [Learn more about configuring subscriptions and creating landing pages in this video](#video)
 
+## When to use landing pages {#when-to-use}
+
+Use landing pages when you want to:
+
+* Let customers **opt in or opt out** of marketing communications or a specific service or newsletter from a link in an email or campaign—including subscription lists for targeted services. [Read more](lp-use-cases.md#subscription-to-a-service)
+* **Collect consent** before sending communications and send a **confirmation email** upon opt-in or opt-out. [Read more](lp-use-cases.md#send-confirmation-email)
+* Redirect users to a **dedicated web form** without building an external page outside of [!DNL Journey Optimizer]
+* Build **responsive landing pages** using [!DNL Journey Optimizer]'s content design capabilities
+
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="create-lp.md">
@@ -54,15 +63,6 @@ A landing page is a standalone web page that a user is directed to after clickin
 <p>
 </td>
 </tr></table>
-
-## When to use landing pages {#when-to-use}
-
-Use landing pages when you want to:
-
-* Let customers **opt in or opt out** of marketing communications or a specific service or newsletter from a link in an email or campaign—including subscription lists for targeted services. [Read more](lp-use-cases.md#subscription-to-a-service)
-* **Collect consent** before sending communications and send a **confirmation email** upon opt-in or opt-out. [Read more](lp-use-cases.md#send-confirmation-email)
-* Redirect users to a **dedicated web form** without building an external page outside of [!DNL Journey Optimizer]
-* Build **responsive landing pages** using [!DNL Journey Optimizer]'s content design capabilities
 
 ## Before you start {#prerequisites}
 
