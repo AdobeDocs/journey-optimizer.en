@@ -233,6 +233,10 @@ No. You can use the same campaign and change the `event` field in the payload. H
 
 ### Troubleshooting Questions
 
+>[!TIP]
+>
+>For comprehensive troubleshooting guidance, see [Troubleshoot Live Activities](troubleshoot-mobile-live.md).
+
 +++My Live activity starts but does not update. What could be the issue?
 
 Common causes:

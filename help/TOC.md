@@ -399,6 +399,7 @@ solution: Journey Optimizer
   + Live activity {#live-activity}
     + [Get started with Live activity](using/mobile-live/get-started-mobile-live.md)
     + [Create a Live activity](using/mobile-live/create-mobile-live.md)
+    + [Troubleshoot Live activity](using/mobile-live/troubleshoot-mobile-live.md)
     + [FAQ](using/mobile-live/mobile-live-faq.md)
     + Configure content card channel {#configure}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
