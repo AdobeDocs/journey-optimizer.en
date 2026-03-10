@@ -8,6 +8,7 @@ topic: Artificial Intelligence
 role: User
 level: Intermediate
 version: Journey Orchestration
+exl-id: 90e71c42-94f3-4cc5-bd6e-1df29def4d39
 ---
 # Monitor your AI models {#ai-model-observability}
 
