@@ -5,8 +5,6 @@ title: Troubleshoot Live Activities
 description: Learn how to troubleshoot Live Activities in Journey Optimizer for both unitary and broadcast use cases, including profile token issues, campaign configuration, and delivery failures
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 ---
 
 # Troubleshoot Live Activities {#troubleshoot-mobile-live}
