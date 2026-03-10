@@ -204,3 +204,9 @@ If the metrics displayed in the **Overview** dashboard do not match the actual n
 * Allow up to 30 minutes for metrics to refresh after making changes to your journeys.
 
 If discrepancies persist, [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with screenshots of both the Overview and Browse tabs for investigation.
+
+## Tracking parameters showing empty placeholders in closed journeys {#tracking-parameters-closed-journeys}
+
+If tracking URLs in sent emails contain empty placeholders such as `cid=em-acou-adob{}`, this may indicate that a context field such as `context.system.source.actionId` could not be resolved. This typically happens when a journey was closed and has not been republished after a relevant product change — only republished journeys correctly populate these context fields in tracking URLs.
+
+To resolve this, either republish the journey ([create a new version and publish it](publish-journey.md#journey-create-new-version)), or remove the reference to the affected context field from the [URL tracking parameters](../email/url-tracking.md) in the channel configuration or email content.
