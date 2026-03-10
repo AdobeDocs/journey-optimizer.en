@@ -67,15 +67,14 @@ When you use the advanced HTML editor, the following guardrails are in place to 
     >
     >Make sure to enter correct HTML and CSS code as there is no syntax validation process and no support is provided by [!DNL Adobe]. [Learn more](#guardrails)
 
-1. Saving is not available in advanced HTML view. Switch back to Desktop view to save your changes.
+1. Content simulation and saving are not available in advanced HTML view for compatibility reasons. Switch back to Desktop view to preview your content and save your changes.
 
     ![](assets/email-template-expert-mode-save.png){zoomable="yes"}
 
     >[!NOTE]
     >
-    >Content can only be saved in Desktop view for content compatibility reasons. Your edits are preserved when you switch views.
+    ><!--Content can only be saved in Desktop view for content compatibility reasons. -->Your edits are preserved when you switch views.
+<!--
+1. Content simulation is not available in advanced HTML view. To preview your content, switch to Desktop view.
 
-1. Content simulation is not available in advanced HTML view. To simulate your content, switch to Desktop view.
-
-    ![](assets/email-template-expert-mode-simulate.png){zoomable="yes"}
-
+    ![](assets/email-template-expert-mode-simulate.png){zoomable="yes"}-->
