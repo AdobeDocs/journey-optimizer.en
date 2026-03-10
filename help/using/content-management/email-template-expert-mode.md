@@ -6,8 +6,6 @@ description: Use Expert Mode to view and edit the HTML source of email content i
 feature: Templates
 topic: Content Management
 role: User
-hidefromtoc: yes
-hide: yes
 level: Experienced
 exl-id: 0c586565-0c65-435f-986d-cd08b59de159
 ---
