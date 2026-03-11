@@ -41,21 +41,27 @@ AI Assistant supports generation **in multiple languages** enabling you to reach
     <tr style="border: 0;background-color: #FFFFFF;">
       <td>
         <ul>
-          <li>French</li>
-          <li>Spanish</li>
-          <li>German</li>
-          <li>Italian</li>
+          <li>Chinese (Hong Kong)</li>
+          <li>Chinese (Simplified)</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Dutch</li>
         </ul>
       </td>
       <td>
         <ul>
+          <li>French</li>
+          <li>German</li>
+          <li>Italian</li>
           <li>Japanese</li>
-          <li>Swedish</li>
-          <li>Dutch</li>
-          <li>Norwegian</li>
         </ul>
       </td>
       <td>
+        <ul>
+          <li>Norwegian</li>
+          <li>Portuguese</li>
+          <li>Spanish</li>
+          <li>Swedish</li>
+        </ul>
       </td>
     </tr>
   </tbody>
