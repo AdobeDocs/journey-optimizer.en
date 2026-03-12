@@ -63,7 +63,7 @@ After you have configured the fragment's properties, the Email Designer or the p
 >
 >When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
 
-* For visual fragments, edit your content as needed, the same way you would do for any email inside a journey or a campaign. [Learn more](../email/get-started-email-design.md)
+* For visual fragments, edit your content as needed, the same way you would do for any email inside a journey or a campaign. [Learn more](../email/get-started-email-design.md) 
 
     ![](assets/fragment-designer.png)
 
@@ -90,10 +90,6 @@ When your content is ready, click the **[!UICONTROL Save]** button.
 >Visual fragments cannot exceed 100KB. Expression fragments cannot exceed 200KB.
     
 The fragment is created and added to the fragment list with the **[!UICONTROL Draft]** status. You can preview it and publish it to make it available in journeys and campaigns.
-
-### Text mode for visual fragments {#text-mode}
-
-You can create and manage a text version of your visual fragment, with the same flexibility as in email content. Select the **[!UICONTROL Plain text]** icon in the fragment editor to switch to text mode and edit the plain text content. This supports workflows that rely on plain text emails or require parity between HTML and text. [Learn how to manage the text version](../email/text-version-email.md)
 
 ## Preview and publish the fragment {#publish}
 
