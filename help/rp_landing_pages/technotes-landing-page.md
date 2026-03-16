@@ -2,13 +2,13 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Technotes
-description: Technotes
+description: Learn about the statistical methodologies behind Journey Optimizer experimentation, including confidence sequences, lift calculations, and conversion rates.
 redpen-status: CREATED_||_2025-08-12_00-43-53
 exl-id: 853c6c96-2dab-495f-946a-1b03c50632a2
 ---
 # Technotes{#section-overview}
 
-Technotes in Adobe Journey Optimizer provide a behind-the-scenes look at the advanced statistical methodologies that power experimentation and reporting. Whether you're exploring how experiments are continuously monitored with Confidence Sequences or understanding how metrics like conversion rates and lift are calculated, these guides help you make data-driven decisions with confidence. Each topic builds on key concepts like error rates and hypothesis testing, offering both foundational knowledge and deep dives into Adobe's unique approaches. By mastering these tools, you’ll unlock insights to optimize campaigns and confidently declare the best-performing strategies for your audience.
+These technical notes explain the statistical methods used in Adobe Journey Optimizer experimentation and reporting. Use them to understand how experiments are monitored, how metrics like lift and conversion rate are computed, and how to interpret results with confidence.
 
 ## Technotes
 
