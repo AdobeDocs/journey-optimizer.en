@@ -256,16 +256,12 @@ Two types of alerts can happen:
 
 >[!CAUTION]
 >
->To publish landing pages, users must have the **[!UICONTROL Publish Messages]** permission. 
-
+>* To publish landing pages, you must have the **[!UICONTROL Publish Messages]** permission.
+>* Before publishing, check and resolve all alerts. [Learn more](#check-alerts)
 
 Once your landing page is ready, you can publish it to make it available for use in a message.
 
 ![](assets/lp_publish.png)
-
->[!CAUTION]
->
->Before publishing, check and resolve alerts. [Learn more](#check-alerts)
 
 Once your landing page is published, it is added to the landing page list with the **[!UICONTROL Published]** status.
 
