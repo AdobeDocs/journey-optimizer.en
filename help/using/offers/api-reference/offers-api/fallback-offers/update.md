@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Update a fallback offer
 description: A fallback offer is sent to customers if they are not eligible for other offers
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 7ff69887-620f-4bc0-b8ff-5144ff30696c
 version: Journey Orchestration
 ---
 # Update a fallback offer {#update-fallback-offer}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can modify or update a fallback offer in your container by making a PATCH request to the [!DNL Offer Library] API.
 

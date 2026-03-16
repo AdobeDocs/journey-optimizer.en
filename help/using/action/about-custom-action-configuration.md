@@ -169,7 +169,13 @@ You can define the payload parameter as detailed below:
 
     ![](assets/null-values.png){width="70%" align="left"}
 
-1. In the **[!UICONTROL Response]** section, paste an example of the payload returned by the call. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md). 
+1. In the **[!UICONTROL Response]** section, paste an example of the payload returned when the call succeeds. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md). 
+
+    ![](assets/response-values.png){width="70%" align="left"}
+
+1. (Optional) Select **[!UICONTROL Define a failure response payload]** to enable the error response payload field. When enabled, use the **[!UICONTROL Error Response]** section to paste an example of the payload returned when the call fails. The same requirements apply as for the response payload (field types and format). Learn how to leverage the failure response payload in journeys [here](../action/action-response.md).
+
+    ![](assets/response-values.png){width="70%" align="left"}
 
 >[!NOTE]
 >
@@ -178,7 +184,7 @@ You can define the payload parameter as detailed below:
 
 ![](assets/customactionpayloadmessage2.png)
 
-In the field configuration, you must: 
+In these field configuration, you must: 
 
 * Select the parameter type, e.g.: string, integer, etc.
 
@@ -195,9 +201,207 @@ In the field configuration, you must:
 >If you configure optional parameters while allowing Null values, parameters not filled in by a journey practitioner are sent as Null.
 >
 
+<!--
+## Comprehensive JSON examples {#json-examples}
 
-* [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
+This section provides complete JSON examples demonstrating all supported parameter types and configurations for custom actions.
 
+### Example 1: Basic parameter types
+
+This example shows how to use different data types in your custom action payload:
+
+```json
+{
+  "requestData": {
+    "userId": "@{profile.person.name.firstName}",
+    "accountId": "ABC123",
+    "age": "@{profile.person.age}",
+    "isActive": true,
+    "loyaltyScore": "@{profile.customField.score}"
+  }
+}
+```
+
+In the action configuration:
+* `userId` - Variable parameter (String) - Maps to profile firstName
+* `accountId` - Constant parameter (String) - Always sends "ABC123"
+* `age` - Variable parameter (Integer) - Maps to profile age
+* `isActive` - Constant parameter (Boolean) - Always sends true
+* `loyaltyScore` - Variable parameter (Decimal) - Maps to custom profile field
+
+### Example 2: Using system constants and journey context
+
+You can reference journey-specific information and system values:
+
+```json
+{
+  "metadata": {
+    "sandboxName": "prod",
+    "executionTimestamp": "@{journey.startTime}",
+    "journeyId": "@{journey.id}",
+    "journeyName": "@{journey.name}",
+    "journeyVersion": "@{journey.version}",
+    "stepId": "@{journey.stepId}",
+    "profileId": "@{profile.identityMap.ECID[0].id}"
+  }
+}
+```
+
+**Available journey context variables:**
+
+>[!NOTE]
+>
+>Journey context variables syntax is being verified with Product team. The actual field names may be: journeyUID, journeyVersionName, journeyVersion, currentNodeId, currentNodeName based on Journey Properties documentation.
+
+* `@{journey.id}` - Unique identifier of the journey
+* `@{journey.name}` - Name of the journey
+* `@{journey.version}` - Version number of the journey
+* `@{journey.startTime}` - Timestamp when the journey started for this profile (verification needed)
+* `@{journey.stepId}` - Current step identifier
+* `@{journey.stepName}` - Name of the current step
+
+### Example 3: Optional and required parameters
+
+Configure parameters that journey practitioners can optionally fill:
+
+```json
+{
+  "customer": {
+    "email": "@{profile.personalEmail.address}",
+    "mobilePhone": "@{profile.mobilePhone.number}",
+    "preferredLanguage": "@{profile.preferredLanguage}"
+  }
+}
+```
+
+In the action configuration UI:
+* Set `email` as **required** (do not check "Is optional")
+* Set `mobilePhone` as **optional** (check "Is optional")
+* Set `preferredLanguage` as **optional** with default value
+
+>[!TIP]
+>
+>When a parameter is marked as optional and not filled by the journey practitioner, it will either be omitted from the payload or sent as null (if "Allow NULL values" is enabled).
+
+### Example 4: Working with arrays and collections
+
+Pass collections of data to your custom actions:
+
+```json
+{
+  "products": [
+    {
+      "id": "@{product1.id}",
+      "name": "@{product1.name}",
+      "price": "@{product1.price}"
+    },
+    {
+      "id": "@{product2.id}",
+      "name": "@{product2.name}",
+      "price": "@{product2.price}"
+    }
+  ],
+  "tags": ["premium", "loyalty", "vip"],
+  "categoryIds": ["CAT001", "CAT002"]
+}
+```
+
+>[!NOTE]
+>
+>Learn more about passing collections in custom actions on [this page](../building-journeys/collections.md).
+
+### Example 5: Nested objects and complex structures
+
+Build hierarchical data structures:
+
+```json
+{
+  "customer": {
+    "personalInfo": {
+      "firstName": "@{profile.person.name.firstName}",
+      "lastName": "@{profile.person.name.lastName}",
+      "email": "@{profile.personalEmail.address}"
+    },
+    "address": {
+      "street": "@{profile.homeAddress.street1}",
+      "city": "@{profile.homeAddress.city}",
+      "postalCode": "@{profile.homeAddress.postalCode}",
+      "country": "@{profile.homeAddress.country}"
+    },
+    "preferences": {
+      "language": "@{profile.preferredLanguage}",
+      "timezone": "@{profile.timeZone}",
+      "emailOptIn": "@{profile.consents.marketing.email.val}"
+    }
+  },
+  "context": {
+    "channel": "email",
+    "campaignId": "CAMPAIGN_2025_Q1",
+    "segment": "@{segmentMembership.status}"
+  }
+}
+```
+
+### Example 6: Complete real-world custom action
+
+A comprehensive example integrating multiple concepts:
+
+```json
+{
+  "event": {
+    "eventType": "journey.action.triggered",
+    "eventId": "@{journey.stepId}",
+    "timestamp": "@{journey.stepTimestamp}",
+    "eventSource": "Adobe Journey Optimizer"
+  },
+  "profile": {
+    "id": "@{profile.identityMap.ECID[0].id}",
+    "email": "@{profile.personalEmail.address}",
+    "firstName": "@{profile.person.name.firstName}",
+    "lastName": "@{profile.person.name.lastName}",
+    "loyaltyTier": "@{profile.loyaltyTier}",
+    "lifetimeValue": "@{profile.lifetimeValue}"
+  },
+  "journey": {
+    "id": "@{journey.id}",
+    "name": "@{journey.name}",
+    "version": "@{journey.version}",
+    "step": "@{journey.stepName}"
+  },
+  "customData": {
+    "offerName": "@{decisioning.offerName}",
+    "offerPlacement": "@{decisioning.placementName}",
+    "specialPromotion": "WINTER2025"
+  },
+  "system": {
+    "sandbox": "prod",
+    "dataStreamId": "YOUR_DATASTREAM_ID",
+    "imsOrgId": "@{imsOrgId}"
+  }
+}
+```
+
+**Configuration tips for this example:**
+* Mix of constant values (`eventSource`, `specialPromotion`, `sandbox`) and variable parameters
+* Uses journey context for tracking and debugging
+* Includes profile data for personalization in the third-party system
+* Adds decisioning context when using offers
+* System metadata for routing and organization-level tracking
+
+### Tips for configuring constants
+
+**Sandbox name:** Use a constant parameter set to your environment name (e.g., "prod", "dev", "stage")
+
+**Execution timestamp:** Use `@{journey.startTime}` or create a variable parameter that journey practitioners can map to `#{nowWithDelta()}` function
+
+**API version:** Use a constant for API version numbers to ensure consistency across journeys
+
+**Authentication tokens:** Never put authentication tokens in the payload - use the Authentication section of the custom action configuration instead
+
+>[!CAUTION]
+>
+>Field names in the payload cannot contain a dot `.` character, nor start with a `$` character. Ensure your JSON structure follows these naming conventions.
+-->
 
 ## Additional resources
 

@@ -75,5 +75,5 @@ An IP warmup campaign can only be used in one IP warmup plan. However, the same 
 
 >[!NOTE]
 >
->When a live campaign is used in an IP warmup plan, after the plan is [marked as completed](ip-warmup-execution.md#mark-as-completed), the status of that campaign changes to **[!UICONTROL Stopped]**.
+>When a live campaign is used in an IP warmup plan, after the plan is [marked as completed](ip-warmup-execution.md#mark-as-completed), the [status](../campaigns/manage-campaigns.md#statuses) of that campaign changes to **[!UICONTROL Stopped]**.
 

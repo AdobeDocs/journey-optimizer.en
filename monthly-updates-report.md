@@ -5,13 +5,38 @@ title: Monthly Documentation Updates Report
 description: List of new and updated documentation pages
 hide: yes
 hidefromtoc: yes
+exl-id: 7962189b-4135-4f88-b91d-40d21cdf6c6d
 ---
-
 # Monthly Documentation Updates Report
 
-*Report generated for November 3 - December 11, 2024*
+## Report: December 11, 2024 - January 6, 2026
 
-## New Pages
+### New Pages
+
+- [Get started with tracking](help/using/start/get-started-tracking.md) - Dec 19
+
+### Updated Pages
+
+- [Journey Optimizer guardrails and limitations](help/using/start/guardrails.md) - Jan 6
+- [Direct mail configuration](help/using/direct-mail/direct-mail-configuration.md) - Jan 5
+- [Personalization syntax](help/using/personalization/personalization-syntax.md) - Jan 5
+- [Get started with journeys](help/using/building-journeys/journey.md) - Jan 2
+- [Get started with campaigns](help/using/campaigns/get-started-with-campaigns.md) - Jan 2
+- [Manage campaigns](help/using/campaigns/manage-campaigns.md) - Jan 2
+- [Delegate a subdomain](help/using/configuration/delegate-subdomain.md) - Jan 2
+- [Configure Google TXT record](help/using/configuration/google-txt.md) - Jan 2
+- [Get started with tracking](help/using/start/get-started-tracking.md) - Dec 23
+- [Step event field list](help/using/reports/sharing-field-list.md) - Dec 23
+- [Send proofs](help/using/content-management/proofs.md) - Dec 23
+- [Work with channel capping rule sets](help/using/conflict-prioritization/channel-capping.md) - Dec 23
+- [Use custom upload audiences for decisioning](help/using/offers/custom-upload-decisioning.md) - Dec 23
+- [Get started with communication channels](help/using/channels/gs-channels.md) - Dec 22
+- [Release notes 2025](help/using/rn/release-notes-2025.md) - Dec 18
+- [Work with AEM fragments](help/using/integrations/aem-fragments.md) - Dec 18
+
+## Previous Report: November 3 - December 11, 2024
+
+### New Pages
 
 - [Journey entry and exit criteria guide](help/using/building-journeys/entry-exit-criteria-guide.md) - Dec 11
 - [Journey use cases](help/using/building-journeys/jo-use-cases.md) - Dec 11
@@ -22,7 +47,7 @@ hidefromtoc: yes
 - [Publish and manage code-based experiences](help/using/code-based/publish-code-based.md) - Nov 22
 - [Test code-based experiences](help/using/code-based/test-code-based.md) - Nov 22
 
-## Updated Pages
+### Updated Pages
 
 - [Lookup Adobe Experience Platform data for personalization](help/using/data/lookup-aep-data.md) - Dec 10
 - [Mobile application configuration](help/using/configuration/set-mobile-config.md) - Dec 6
@@ -70,7 +95,7 @@ hidefromtoc: yes
 - [Create and manage decision items collections](help/using/experience-decisioning/collections.md) - Nov 7
 - [Context data](help/using/experience-decisioning/context-data.md) - Nov 7
 - [Get started with decision policies](help/using/experience-decisioning/create-decision.md) - Nov 7
-- [Get started with Experience Decisioning](help/using/experience-decisioning/gs-experience-decisioning.md) - Nov 7
+- [Get started with Decisioning](help/using/experience-decisioning/gs-experience-decisioning.md) - Nov 7
 - [Decision items](help/using/experience-decisioning/items.md) - Nov 7
 - [Decisioning ranking methods](help/using/experience-decisioning/ranking/ranking.md) - Nov 7
 - [Build rules](help/using/experience-decisioning/rules.md) - Nov 7
@@ -82,7 +107,7 @@ hidefromtoc: yes
 - [Create placements](help/using/offers/offer-library/creating-placements.md) - Nov 5
 - [Create ranking strategies](help/using/offers/ranking/create-ranking-strategies.md) - Nov 5
 
-## Previous Report: October 1 - November 3, 2025
+## Previous Report: October 1 - November 3, 2024
 
 ### New Pages
 
@@ -94,15 +119,12 @@ hidefromtoc: yes
 - [Activate High throughput mode for API triggered campaigns](help/using/campaigns/api-triggered-high-throughput.md) - Oct 27
 - [Set quiet hours](help/using/conflict-prioritization/quiet-hours.md) - Oct 22
 - [Journey Optimizer Experimentation Accelerator](help/using/content-management/experiment-accelerator-gs.md) - Oct 24
-- [Convert images to HTML templates with the image to HTML converter](help/using/email/image-to-html.md) - Oct 30
+- [Convert images to HTML templates with the image to HTML converter](help/using/content-management/image-to-html.md) - Oct 30
 - [Create decisions policies](help/using/experience-decisioning/create-decision-policy.md) - Oct 7
 - [Use decision policies in messages](help/using/experience-decisioning/use-decision-policy.md) - Oct 9
 - [Configure your Channel configuration](help/using/orchestrated/channel-config.md) - Oct 14
-- [Design a push notification](help/using/push/design-push-web.md) - Oct 14
-- [Push notification configuration](help/using/push/push-configuration-web.md) - Oct 14
 - [Work with journey step events](help/using/reports/journey-step-events-overview.md) - Oct 21
 - [Adobe Journey Optimizer release cycle](help/using/rn/releases.md) - Oct 28
-- [Design message content](help/using/start/message-content-design.md) - Oct 18
 
 ### Updated Pages
 
@@ -126,7 +148,7 @@ hidefromtoc: yes
 - [Use the Action journey activity](help/using/building-journeys/journey-action.md) - Oct 14
 - [Pause a journey](help/using/building-journeys/journey-pause.md) - Oct 13
 - [Get started with journeys](help/using/building-journeys/journey.md) - Oct 27
-- [Add a built-in channel action to a journey](help/using/building-journeys/journeys-message.md) - Oct 29
+- [Add a built-in channel action to a journey](help/using/building-journeys/journey-action.md) - Oct 29
 - [Optimize activity](help/using/building-journeys/optimize.md) - Oct 22
 - [Use an audience in a journey](help/using/building-journeys/read-audience.md) - Oct 17
 - [Send time optimization](help/using/building-journeys/send-time-optimization.md) - Oct 28
@@ -137,11 +159,11 @@ hidefromtoc: yes
 - [Define the API triggered campaign properties](help/using/campaigns/api-triggered-campaign-properties.md) - Oct 23
 - [Work with API triggered campaigns ](help/using/campaigns/api-triggered-campaigns.md) - Oct 29
 - [Configure the campaign action](help/using/campaigns/campaign-action.md) - Oct 29
-- [Optimization in campaigns and journeys](help/using/campaigns/campaigns-message-optimization.md) - Oct 22
+- [Optimization in campaigns and journeys](help/using/content-management/gs-message-optimization.md) - Oct 22
 - [Create an Action campaign](help/using/campaigns/create-campaign.md) - Oct 29
 - [Get started with campaigns](help/using/campaigns/get-started-with-campaigns.md) - Oct 29
 - [Access & manage campaigns](help/using/campaigns/manage-campaigns.md) - Oct 23
-- [Quiet Hours](help/using/campaigns/quiet-hours.md) - Oct 31
+- [Quiet Hours](help/using/conflict-prioritization/quiet-hours.md) - Oct 31
 - [Review and activate a campaign](help/using/campaigns/trigger-campaigns.md) - Oct 23
 - [Get started with communication channels in [!DNL Adobe Journey Optimizer]](help/using/channels/gs-channels.md) - Nov 3
 - [Integrate Journey Optimizer with external systems](help/using/configuration/external-systems.md) - Oct 28

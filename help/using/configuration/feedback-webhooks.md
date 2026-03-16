@@ -7,8 +7,8 @@ feature: Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
+exl-id: a46f29a4-5115-4feb-8b2c-751765be2b36
 ---
-
 # Create feedback webhooks for API triggered campaigns {#webhooks}
 
 Feedback webhooks allow you to receive real-time status updates for messages sent through transactional API triggered campaigns. By configuring a webhook, you can automatically receive delivery outcomes directly to your systems, enabling monitoring, logging, and automated processing.  

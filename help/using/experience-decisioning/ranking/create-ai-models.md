@@ -18,6 +18,10 @@ version: Journey Orchestration
 >
 >To create, edit, or delete AI models, you must have the **Manage Ranking Strategies** permission. [Learn more](../../administration/high-low-permissions.md#manage-ranking-strategies)
 
+## Access AI models {#access-ai-models}
+
+To access the list of AI models, go to **[!UICONTROL Decisioning]** > **[!UICONTROL Strategy setup]** and select **[!UICONTROL AI models]**. All AI models created in your instance are listed there.
+
 ## Create an AI model {#create-ranking-strategy}
 
 >[!CONTEXTUALHELP]
@@ -33,7 +37,7 @@ To create an AI model, follow the steps below:
 
     ![](../assets/ai-model-list.png)
 
-    All the AI models created so far are listed.
+    All the AI models created so far on your instance are listed there.
 
 1. Click the **[!UICONTROL Create AI model]** button.
 
@@ -96,7 +100,7 @@ To create an AI model, follow the steps below:
     >
     >You can select up to 5 audiences.
 
-1. Save and activate the AI model.
+1. Save and activate the AI model. Once your model is live, you can [monitor its training status and performance](ai-model-observability.md).
 
 <!--At this point, you must have:
 

@@ -61,7 +61,7 @@ To insert links into your email content, follow the steps below:
 
     * Select **[!UICONTROL External link]** to insert a link to an external URL.
 
-    * Select **[!UICONTROL Landing page]** to insert a link to a landing page. [Learn more](../landing-pages/get-started-lp.md)
+    * Select **[!UICONTROL Landing page]** to insert a link to a landing page. [Learn more](../landing-pages/create-lp.md)
 
     * Select **[!UICONTROL One click Opt-out]** to insert a link to enable users to quickly unsubscribe from your communications without the need to confirm opting out. [Learn more](email-opt-out.md#one-click-opt-out).
 
@@ -90,6 +90,10 @@ To insert links into your email content, follow the steps below:
 >Marketing-type email messages must include an [opt-out link](../privacy/opt-out.md#opt-out-decision-management), which is not required for transactional messages. The message category (**[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**) is defined in the [channel configuration](email-settings.md#email-type) when creating the message.
 
 Once the message is sent, the retention period for a link is **25 months**. After that delay, the link is no longer available.
+
+>[!CAUTION]
+>
+>When both the **label** and **URL** of a button are made editable in a [customizable fragment](../content-management/customizable-fragments.md), tracking reports show the URL instead of the button label.
 
 ## Link to a mirror page {#mirror-page}
 

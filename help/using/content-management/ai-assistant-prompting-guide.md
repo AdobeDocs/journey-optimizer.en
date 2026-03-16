@@ -6,6 +6,7 @@ description: Learn how to craft effective prompts for AI-powered content generat
 topic: Artificial Intelligence
 role: User
 level: Intermediate
+exl-id: f931372e-6cf2-4f27-b12a-ed5ca0c1b87b
 ---
 # AI Assistant prompt best practices {#ai-assistant-prompting-guide}
 

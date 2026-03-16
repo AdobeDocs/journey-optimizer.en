@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Get started with Decision management events {#monitor-offer-events}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 Each time Decision management makes a decision for a given profile, information related to these events are automatically sent to Adobe Experience Platform. 
 
 This allows you yo gain insights on your decisions, for example, to know which offer was presented to a given profile. You can export these data to analyze them into your own reporting system, or leverage Adobe Experience Platform [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html) in combination with other tools for enhanced analysis and reporting purposes.

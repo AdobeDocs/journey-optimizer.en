@@ -136,7 +136,7 @@ While collections in custom actions provide flexibility for passing dynamic data
 
 * **Support for Nested Arrays in Custom Actions**
 
-   Adobe Journey Optimizer supports nested arrays of objects in custom action **response payloads**, but this support is limited in **request payloads**.
+   [!DNL Adobe Journey Optimizer] supports nested arrays of objects in custom action **response payloads**, but this support is limited in **request payloads**.
 
    In request payloads, nested arrays are only supported when they contain a fixed number of items, as defined in the custom action configuration. For example, if a nested array always includes exactly three items, it can be configured as a constant. When the number of items needs to be dynamic, only non-nested arrays (arrays at the bottom level) can be defined as variables.
 
@@ -225,5 +225,5 @@ Browse the sections below to learn more about configuring, using and troubleshoo
 * [Configure your custom actions](../action/about-custom-action-configuration.md) - Learn how to create and configure a custom action
 * [Use custom actions](../building-journeys/using-custom-actions.md) - Learn how to use custom actions in your journeys
 * [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
-<!--* [Iterate over contextual data](../personalization/iterate-contextual-data.md#arrays-in-journeys) - Learn how to work with arrays in Journey expressions and iterate over custom action responses, event data, and dataset lookups in message personalization-->
+* [Iterate over contextual data](../personalization/iterate-contextual-data.md#arrays-in-journeys) - Learn how to work with arrays in Journey expressions and iterate over custom action responses, event data, and dataset lookups in message personalization
 

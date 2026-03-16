@@ -122,6 +122,10 @@ To apply a rule set to a message, follow these steps:
 
 When testing frequency rules, it is recommended to use a newly created [test profile](../audience/creating-test-profiles.md), because once a profile's frequency cap is reached, there is no way to reset the counter until the next period. Deactivating a rule will allow capped profiles to receive messages, but it will not remove or delete any counter increments.
 
+>[!CAUTION]
+>
+>Frequency capping rules also apply when sending [proofs](../content-management/proofs.md). If a test profile has already reached the frequency cap limit, proofs will show as finished but no email will be delivered.
+
 <!--add a new section for default priority namespace.-->
 
 <!--
@@ -145,7 +149,7 @@ You can combine several message frequency rules, such as described in the exampl
 
 1. Save and [activate](#activate-rule) the rule.
 
-1. [Create a message](../building-journeys/journeys-message.md) for every channel you want to communicate through and select the **[!UICONTROL Marketing]** category for each message. [Learn how to apply a frequency rule](#apply-frequency-rule)
+1. [Create a message](../building-journeys/journey-action.md) for every channel you want to communicate through and select the **[!UICONTROL Marketing]** category for each message. [Learn how to apply a frequency rule](#apply-frequency-rule)
 
    ![](assets/journey-message-category.png)
 

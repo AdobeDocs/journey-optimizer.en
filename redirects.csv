@@ -1,4 +1,5 @@
 source,dest
+https://experienceleague.adobe.com/docs/journey-optimizer/using/email/image-to-html.html,https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/image-to-html.html
 https://experienceleague.adobe.com/docs/journey-optimizer/using/cjm-home.html,https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html
 https://experienceleague.adobe.com/docs/customer-journey-management/using/cjm-home.html,https://experienceleague.adobe.com/docs/journey-optimizer/using/ajo-home.html
 https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/managing-offers-in-the-offer-library/creating-placements.html,https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/create-components/creating-placements.html
@@ -313,4 +314,8 @@ https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/conten
 https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration,https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channel-report/reporting-configuration
 https://experienceleague.adobe.com/docs/journey-optimizer/using/channel-report/report-gs-cja,https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/report-gs-cja
 https://experienceleague.adobe.com/docs/journey-optimizer/using/experience-decisioning/create-decision.html,https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/create-decision
+https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/campaigns-message-optimization,https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/gs-message-optimization
+https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/campaigns-message-optimization.md,https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/gs-message-optimization
+https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/campaigns-message-optimization.html,https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/gs-message-optimization
+
 

@@ -89,11 +89,11 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
     
     **Troubleshooting**: Ensure at least one journey is live and configured for the segment, verify segment IDs.
 
-* **JOURNEY_INSTANCE_ID_NOT_CREATE**: The system failed to create a journey instance for the customer.
+* **JOURNEY_INSTANCE_ID_NOT_CREATED**: The system failed to create a journey instance for the customer.
 
     **Common causes**: Duplicate events, high event volume, system resource constraints.
     
-    **Troubleshooting**: Implement deduplication, avoid traffic spikes, optimize journey design, contact support if persistent.
+    **Troubleshooting**: Implement deduplication, avoid traffic spikes, optimize journey design, [contact support](../start/user-interface.md#support-ticket-guidelines) if persistent.
 
 * **EVENT_WITH_NO_JOURNEY**: An event was received but no active journey is configured to respond to it
 

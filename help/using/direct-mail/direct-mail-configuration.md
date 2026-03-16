@@ -55,6 +55,11 @@ Before being able to generate this file, you need to create:
 >title="Choose the AWS region"
 >abstract="Select the geographic region of the AWS server where you want to export your direct mail files. As a general practice, it is preferred to choose the closest region to your direct mail provider's location."
 
+>[!CONTEXTUALHELP]
+>id="ajo_dm_file_routing_frequency"
+>title="Choose the AWS region"
+>abstract="If your file routing configuration is going to be sent using journeys, you can specify the frequency at which the file is going to be sent the server."
+
 >[!NOTE]
 >
 >Currently Amazon S3, SFTP, Azure, and Data Landing Zone are supported in [!DNL Journey Optimizer].
@@ -109,6 +114,10 @@ If you selected **[!UICONTROL SFTP]** as the **[!UICONTROL Server type]**, fill 
 
 ![](assets/file-routing-config-sftp-detail.png)
 
+>[!TIP]
+>
+>When using SSH key authentication, the key must be a **Base64-encoded OpenSSH** private key. If it is a PPK-format file, use the PuTTY tool to convert it to OpenSSH format. For detailed instructions, see [this section](#ssh-key-generation).
+
 >[!NOTE]
 >
 >To specify a path on the server for saving the file, update the direct mail campaign's **[!UICONTROL Filename]** field to include the desired path. [Learn more](create-direct-mail.md#extraction-file)
@@ -145,9 +154,43 @@ All customers of [!DNL Adobe Experience Platform] are provisioned with one Data 
 
 To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG encryption key]** field.
 
+If your file routing configuration is going to be sent using journeys, you can specify the frequency at which the file is going to be sent the server.
+
+![](assets/file-routing-journey.png)
+
 Once you filled in the details for your server type, select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
 
 You can also select **[!UICONTROL Save as draft]** to create the file routing configuration, but you will not be able to select it in a configuration until it is **[!UICONTROL Active]**.
+
+### Generate SSH key for SFTP authentication {#ssh-key-generation}
+
+If you are using SFTP with SSH key authentication, you must have a Base64-encoded OpenSSH private key. If the key is not properly formatted, you may encounter connection errors when configuring your file routing.
+
++++Generate a Base64-encoded OpenSSH private key
+
+1. In PuTTYgen, generate your key pair. RSA with 2048 bits or higher is recommended.
+1. Select **Conversions** > **Export OpenSSH key** from the menu.
+1. When prompted, choose to save the private key **without passphrase protection**.
+1. In the save dialog, select **All files (*.*)** as the file type to ensure the key is saved as plain text and not as a .ppk file.
+1. Open the saved file with a text editor and verify its format:
+   * The file must start with `-----BEGIN RSA PRIVATE KEY-----` (five dashes before and after).
+   * There should be no wording indicating encryption.
+   * The file must end with `-----END RSA PRIVATE KEY-----` (five dashes before and after).
+1. Copy the **entire file content** (including the `-----BEGIN/END RSA PRIVATE KEY-----` markers) and encode it to Base64 using a tool such as [Base64 Encode and Decode](https://www.base64encode.org/).
+
+   >[!NOTE]
+   >
+   >In the Base64 encoding output, remove any MIME formatting. The encoded key must be a single continuous string.
+
+1. You can now paste the Base64-encoded SSH key into the dedicated field in Journey Optimizer.
+
+>[!CAUTION]
+>
+>After Base64 encoding, the key will no longer contain the `-----BEGIN/END RSA PRIVATE KEY-----` markers and must not include any line breaks. The corresponding public key must be added to your SFTP server's authorized keys file.
+
+For more information on connecting your SFTP account to Experience Platform, refer to [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/sftp).
+
++++
 
 ## Create a direct mail configuration {#direct-mail-surface}
 

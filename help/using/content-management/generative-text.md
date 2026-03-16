@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
+exl-id: 9dd3970c-cf24-424c-b734-f30571374942
 ---
 # Generate text with AI Assistant {#generative-text}
 
@@ -205,4 +206,3 @@ After generating text variations for your mobile messages, you can fine-tune the
 1. Insert personalization fields to customize your content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
 When you have defined your content, audience and schedule, you are ready to prepare your mobile campaign. [Learn more](../campaigns/review-activate-campaign.md)
-

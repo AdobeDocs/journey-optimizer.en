@@ -18,7 +18,7 @@ version: Journey Orchestration
 >title="Design your journey"
 >abstract="The journey interface allows you to easily drag and drop activities from the palette into the canvas. You can also double-click on an activity to add it in the canvas at the next step available."
 
-Adobe Journey Optimizer includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. Note that you can also double-click on an activity to add it in the canvas, at the next available step. 
+[!DNL Adobe Journey Optimizer] includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. Note that you can also double-click on an activity to add it in the canvas, at the next available step. 
 
 Events, orchestration and action activities have a specific role and place in the process. The activities are sequenced: when an activity is finished, the flow continues and processes the next activity, and so on. 
 
@@ -66,7 +66,7 @@ There are two possibilities:
 
 1. **Start with an event**: when a journey is set to listen to events, individuals enter the journey **unitarily** in real-time. Messages included in your journey are sent to the person currently flowing into the journey. [Learn more about events](../event/about-events.md)
 
-1. **Start with a Read Audience**: you can set your journey to listen to Adobe Experience Platform audiences. In this case, all individuals belonging to the specified audience enter the journey. Messages included in your journey are sent to the individuals belonging to the audience. Learn more about [read audience](read-audience.md). For more information on how to generate and target audiences in Journey Optimizer, refer to [this section](../audience/about-audiences.md).
+1. **Start with a Read Audience**: you can set your journey to listen to [!DNL Adobe Experience Platform] audiences. In this case, all individuals belonging to the specified audience enter the journey. Messages included in your journey are sent to the individuals belonging to the audience. Learn more about [read audience](read-audience.md). For more information on how to generate and target audiences in Journey Optimizer, refer to [this section](../audience/about-audiences.md).
 
 ## Define the next steps{#define-next-steps}
 
@@ -82,13 +82,13 @@ You can add **several events** in your journey, as long as they use the same nam
 
 You can also add a **Reaction** event after a message to react to tracking data related to the message. This allows you, for example, to send another message if the individual opened the previous message or clicked inside it. [Learn more about reaction events](reaction-events.md).
 
-Use **Audience Qualification** event activity to make individuals enter or move forward in a journey based on Adobe Experience Platform audience entrances and exits. You can make all new silver customers enter a journey and send personalized messages. Learn more in this [section](audience-qualification-events.md).
+Use **Audience Qualification** event activity to make individuals enter or move forward in a journey based on [!DNL Adobe Experience Platform] audience entrances and exits. You can make all new silver customers enter a journey and send personalized messages. Learn more in this [section](audience-qualification-events.md).
 
 ### Orchestration{#jo-orch}
 
 Orchestration activities are different conditions that help determine the next step in the journey.
 
-From the orchestration activities, use the **Read Audience** activity to set your journey to listen to an Adobe Experience Platform audience. [Learn more about the Read Audience activity](read-audience.md).
+From the orchestration activities, use the **Read Audience** activity to set your journey to listen to an [!DNL Adobe Experience Platform] audience. [Learn more about the Read Audience activity](read-audience.md).
 
 The other activities allow you to add conditions to your journey to define several paths, set a waiting time before executing the next activity, or end your journey. [Learn more about orchestration activities](about-journey-activities.md#orchestration-activities).
 
@@ -96,7 +96,7 @@ The other activities allow you to add conditions to your journey to define sever
 
 Actions are what you want to happen as result of some kind of trigger, like sending a message. It is the piece of journey that the customer experiences. This could be an email, SMS or Push message, or a third-party action, such as a Slack message.
 
-The channel action activities allows you to include a message designed in [!DNL Journey Optimizer]. [Learn more about the channel action activities](journeys-message.md)
+The channel action activities allows you to include a message designed in [!DNL Journey Optimizer]. [Learn more about the channel action activities](journey-action.md)
 
 From the action activities, use custom actions to send messages with third-party systems. [Learn more about custom actions](about-journey-activities.md#action-activities).
 

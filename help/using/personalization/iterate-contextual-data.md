@@ -8,6 +8,7 @@ topic: Personalization
 role: Developer
 level: Intermediate
 keywords: expression, editor, handlebars, iteration, arrays, context, personalization
+exl-id: 1a7c490f-6490-4785-a44d-bddd5482754d
 ---
 # Iterate over contextual data {#personalization-contexts}
 
@@ -1036,4 +1037,3 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 **Personalization use cases:** [Cart abandonment email](personalization-use-case-helper-functions.md) | [Order status notification](personalization-use-case.md)
 
 **Message design:** [Get started with email design](../email/get-started-email-design.md) | [Create push notifications](../push/create-push.md) | [Create SMS messages](../sms/create-sms.md) | [Preview and test your content](../content-management/preview-test.md)
-

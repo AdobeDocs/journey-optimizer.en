@@ -25,6 +25,8 @@ In order to ensure optimal deliverability and successful delivery of emails to G
 >
 > This operation can only be performed once a subdomain has the **[!UICONTROL Success]** status. For more on subdomains' statuses, refer to [this section](delegate-subdomain.md#access-delegated-subdomains).
 
+## Add a Google TXT record {#add-google-txt-record}
+
 To add a Google TXT record to your subdomain, follow these steps:
 
 1. Open the subdomain from the **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** menu.
@@ -34,3 +36,17 @@ To add a Google TXT record to your subdomain, follow these steps:
     ![](assets/subdomain-google-txt.png)
     
 1. Once the TXT record is added, you need to have it verified by Google. To do this, navigate to [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}<!--G Suite Admin tools-->, then launch the verification step.
+
+## Update a Google TXT record {#update-google-txt-record}
+
+To update an existing Google TXT record, follow these steps:
+
+1. Open the subdomain from the **[!UICONTROL Subdomains]** menu.
+
+1. Clear the existing value in the **[!UICONTROL Google txt record]** field and click **[!UICONTROL Save]**. This step replaces the previous Google TXT record value with an empty string.
+
+1. Now reopen the same subdomain and enter the new verification code.
+
+1. Click **[!UICONTROL Save]** again.
+
+1. Verify the updated record through [Google Workspace](https://support.google.com/a/answer/183895){target="_blank"}.

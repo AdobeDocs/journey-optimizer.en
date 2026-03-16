@@ -121,9 +121,15 @@ To further personalize your endpoints<!-- (**[!UICONTROL Mailto (unsubscribe)]**
 
 >[!AVAILABILITY]
 >
->For the **[!UICONTROL Mailto (unsubscribe)]** option, this capability is available in Limited Availability. Contact your Adobe representative to gain access. In this case, you need to use the new query parameters described in the **Mailto (unsubscribe) with custom attributes (Limited Availability)** section [below](#configure-decrypt-api).
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+>
+>For the **[!UICONTROL Mailto (unsubscribe)]** option, you need to use the new query parameters described in the **Mailto (unsubscribe) with custom attributes (Limited Availability)** section [below](#configure-decrypt-api).
 
 To define custom attributes for your endpoints, use the **[!UICONTROL URL tracking parameters]** section. All the URL tracking parameters you define in the corresponding section will be appended to the end of your custom endpoints, in addition to the default parameters. [Learn how to set custom URL tracking](url-tracking.md)
+
+>[!NOTE]
+>
+>The order of UTM parameters appended to the URL is random and cannot be controlled. If your system requires parameters in a specific order, you will need to parse and reorder them on your side.
 
 ### Configure the decrypt API {#configure-decrypt-api}
 

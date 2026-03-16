@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Delete collection qualifiers
 description: Collection qualifiers allow you to better organize and sort through your offers.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: cc67519e-7a80-49c7-8c8b-c777be633026
 version: Journey Orchestration
 ---
 # Delete a collection qualifier {#delete-tag}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 It may occasionally be necessary to remove (DELETE) a collection qualifier (previously known as "tag"). Only collection qualifiers that you create in the tenant container may be deleted. This is done by performing a DELETE request to the [!DNL Offer Library] API using the $id of the collection qualifier you wish to delete.
 

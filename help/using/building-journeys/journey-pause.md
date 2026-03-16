@@ -80,7 +80,7 @@ When a journey is paused, profile management and activity execution depends on t
 | [Wait](wait-activity.md)             | Same behavior as in a live journey | 
 | [Condition](condition-activity.md)  | Same behavior as in a live journey |
 | [Content Decision](content-decision.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
-| [Channel Action](journeys-message.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
+| [Channel Action](journey-action.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Update Profile](update-profiles.md) & [Jump](jump.md) | Profiles are parked or discarded based on what the user has chosen when the journey has been paused  |
 | [External Data Source](../datasource/external-data-sources.md)  | Same behavior as in a live journey |
@@ -148,6 +148,7 @@ Be aware that profile exclusions for profiles currently in the journey and for n
 ## Guardrails and limitations {#journey-pause-guardrails}
 
 * A journey version can be paused for up to **14 days**, with a maximum of **10 million profiles** allowed in paused journeys across your organization.
+    This limit counts the total number of profiles held across all paused journeys, not distinct profiles. For example, if the same 5M profiles are held in two paused journeys, the 10M limit is reached.
     This limit is checked every 30 minutes. This means you might temporarily exceed the 10 million threshold, but once the system detects it, any additional profiles will be automatically discarded.
     
     If you resume journeys to bring the number of held profiles back under the limit, the journey resumes immediately — but it can take up to 30 minutes for the profile count to update. During that time, the system may still consider those profiles as paused.
@@ -195,7 +196,7 @@ When you resume this journey:
 
 ## Troubleshoot profile discards in paused journeys {#discards-troubleshoot}
 
-You can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened.
+You can use the [[!DNL Adobe Experience Platform] Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to query step events, which can provide more information about profile discards, depending on when they happened.
 
 * For discards happening before the profile enters the journey, use the following code:
 

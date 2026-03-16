@@ -27,7 +27,7 @@ where:
 
 ## Syntax general rules {#general-rules}
 
-* Identifiers may be any unicode character except for the following: 
+* Identifiers may be any unicode character except for the following special characters, which are reserved for the Handlebars syntax:
 
     ```
     Whitespace ! " # % & ' ( ) * + , . / ; < = > @ [ \ ] ^ ` { | } ~
@@ -41,9 +41,29 @@ where:
 
     Suppose the value of the field `profile.person.name` is "Mark & Mary". The syntax `{{profile.person.name}}` will display `Mark &amp; Mary`, while `{{{profile.person.name}}}` will show `Mark & Mary`.
 
-* Regarding literal functions arguments, the templating language parser does not support single unescaped backslash (`\`) symbol. This character must be escaped with an additionnal backslash (`\`) symbol. Example :
+* Regarding literal functions arguments, the templating language parser does not support single unescaped backslash (`\`) symbol. This character must be escaped with an additional backslash (`\`) symbol. Example:
 
     `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}` 
+
+## Reserved keywords {#reserved-keywords}
+
+Certain keywords are reserved in Profile Query Language (PQL) and cannot be used directly as field or variable names in personalization expressions. If your XDM schema contains fields with names that match reserved keywords, you must escape them using backticks (`` ` ``) to reference them in your expressions.
+
+**Reserved keywords include:**
+
+* `next`
+* `last`
+* `this`
+
+**Example:**
+
+If your profile schema has a field named `next`, you must wrap it in backticks:
+
+```
+{{profile.person.`next`.name}}
+```
+
+Without the backticks, the personalization editor will fail validation with an error.
 
 ## Available namespaces {#namespaces}
 
@@ -110,7 +130,7 @@ where:
 
     +++
 
-## Helpers{#helpers-all}
+## Helpers {#helpers-all}
 
 A Handlebars helper is a simple identifier that may be followed by parameters. Each parameter is a Handlebars expression. These helpers can be accessed from any context in a template.
 
@@ -118,7 +138,7 @@ These block helpers are identified by a `#` preceding the helper name and requir
 
 Blocks are expressions that have a block opening (`{{# }}`) and closing (`{{/}}`).
 
-For more information on helper functions, refer [this section](functions/helpers.md).
+    For more information on helper functions, refer to [this section](functions/helpers.md).
 
 ## Literal types {#literal-types}
 

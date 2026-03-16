@@ -32,6 +32,8 @@ You can set two types of **Wait** activity:
 
 ## Recommendations {#wait-recommendations}
 
+Use these recommendations to keep waits predictable and safe.
+
 ### Multiple Wait activities {#multiple-wait-activities}
 
 When using multiple **Wait** activities in a journey, be aware that the [global timeout](journey-properties.md#global_timeout) for journeys is 91 days, meaning that profiles are always drop out of the journey maximum 91 days after they entered it. Learn more on [this page](journey-properties.md#global_timeout).
@@ -51,6 +53,8 @@ In test mode, the **[!UICONTROL Wait time in test]** parameter allows you to def
 If you want to show an [in-app message](../in-app/create-in-app.md) shortly after sending a [push notification](../../rp_landing_pages/push-landing-page.md), use a **Wait** activity to allow the in-app message payload time to propagate. Typically a 5–15 minute wait is recommended, but exact times can vary depending on payload complexity and personalization needs.
 
 ## Configuration {#wait-configuration}
+
+Configure wait duration and timing here.
 
 ### Duration wait {#duration}
 
@@ -78,21 +82,18 @@ The expression in the editor should provide a `dateTimeOnly` format. Refer to [t
 Best practice is to use custom dates that are specific to your profiles, and avoid using the same date for all. For example, do not define `toDateTimeOnly('2024-01-01T01:11:00Z')` but rather `toDateTimeOnly(@event{Event.productDeliveryDate})` which is specific to each profile. Be aware that using fixed dates can cause issues on your journey execution. Learn more about the impact of Wait activities on journey processing rate in [this section](entry-management.md#wait-activities-impact). 
 
 
->[!NOTE]
->
->You can leverage a `dateTimeOnly` expression or use a function to convert to a `dateTimeOnly`. For example: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, the field in the event being of the form 2023-08-12T09:46:06Z.
->
->The **time zone** is expected in the properties of your journey. As a result, from the user interface, it is not possible to directly point at a full ISO-8601 timestamp mixing time and time zone offset like 2023-08-12T09:46:06.982-05. [Learn more](../building-journeys/timezone-management.md).
-
 >[!CAUTION]
 >
->When creating a custom wait expression with `toDateTimeOnly()`, avoid appending 'Z' or any time zone offset (e.g., '-05:00') in the expression result. The expression must use valid ISO date/time syntax that references the journey's configured time zone without explicit time zone designators.
+>When working with `dateTimeOnly` expressions, keep the following in mind:
 >
->**Correct example:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))`
+>* You can use a `dateTimeOnly` expression directly, or convert to it using a function — for example: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})` where the field value is in the form `2023-08-12T09:46:06Z`.
+>* The **time zone** is defined in the journey properties. As a result, it is not possible from the UI to point at a full ISO-8601 timestamp that mixes time and time zone offset, such as `2023-08-12T09:46:06.982-05`. [Learn more](../building-journeys/timezone-management.md)
+>* When building a custom wait expression with `toDateTimeOnly()`, do **not** append `Z` or a time zone offset (e.g., `-05:00`). The expression must reference the journey's configured time zone without explicit time zone designators — otherwise profiles may get stuck in the wait activity.
 >
->**Incorrect example:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (contains 'Z')
->
->Using unsupported time zone designators can cause profiles to remain stuck in the wait activity instead of advancing as expected.
+>| | Example |
+>|---|---|
+>| **Correct** | `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))` |
+>| **Incorrect** | `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (contains `Z`) |
 
 To validate that the wait activity works as expected, you can use step events. [Learn more](../reports/query-examples.md#common-queries).
 

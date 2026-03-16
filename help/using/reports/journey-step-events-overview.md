@@ -7,6 +7,7 @@ feature: Journeys, Reporting
 role: Developer, Admin, User
 level: Intermediate, Experienced
 keywords: journey, step events, analytics, reporting, monitoring, XDM
+exl-id: 2e7c5ea5-d8c5-416d-ab88-d2bc02043558
 ---
 # Work with journey step events {#work-with-journey-step-events}
 
@@ -26,7 +27,7 @@ There are two main types of journey step events:
 Journey step events are generated automatically for various journey activities:
 
 - **Entry events**: When a profile [enters a journey](../building-journeys/entry-management.md)
-- **Action execution**: When [messages are sent](../building-journeys/journeys-message.md) or [custom actions](../building-journeys/using-custom-actions.md) are performed  
+- **Action execution**: When [messages are sent](../building-journeys/journey-action.md) or [custom actions](../building-journeys/using-custom-actions.md) are performed  
 - **Condition evaluation**: When profiles pass through [conditions](../building-journeys/condition-activity.md) and decision points
 - **Wait activities**: When profiles enter and exit [wait nodes](../building-journeys/wait-activity.md)
 - **Exit events**: When profiles complete or [exit a journey](../building-journeys/end-journey.md)

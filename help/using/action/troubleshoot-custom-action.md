@@ -20,6 +20,11 @@ As an administrator, use the **[!UICONTROL Send test request]** capability to va
 
 Use this capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
 
+>[!NOTE]
+>
+>If your organization has the IP (egress) proxy enabled, the **[!UICONTROL Send test request]** call bypasses it. To confirm proxy routing, run a test or live journey. Learn more about the IP (egress) proxy and enablement in [Integrate with external systems](../configuration/external-systems.md#faq).
+
+
 ## Prerequisites {#troubleshoot-custom-action-prereq}
 
 To use the **[!UICONTROL Send test request]** capability, a **custom action** must be pre-configured with a URL, headers, and authentication settings.
@@ -82,6 +87,20 @@ If the request fails, you can check:
 * The request method (GET vs. POST) and corresponding payload.
 * The API endpoint and headers defined in the custom action.
 * Use the response data to identify potential misconfigurations.
+
+## Handling discard events and idle-timeouts {#handling-discard-events-and-idle-timeouts}
+
+When a custom action in one journey triggers an event that is intended to start a **second journey**, ensure the second journey is in a valid state and the event is recognized. If the event does not meet the second journey's entry conditions, the event can be **discarded** and appear in logs with codes such as `notSuitableInitialEvent`. Idle timeouts may occur if the second journey is not ready, leading to discard events in the logs.
+
+**Common causes:**
+
+* **Event qualification not met** – The second journey uses a rule-based event with a qualification condition (for example, a required field must be non-empty, such as `isNotEmpty` on a specific field). If the event payload does not satisfy that condition (for example, the field is empty or missing), the event is **received but discarded** and the second journey is not triggered. This is expected behavior; the documentation and logs confirm that if the qualification condition is not met, the event will be discarded and the journey will not be triggered for that profile. Verify that the payload sent by the custom action includes all fields and values required by the second journey's event configuration. Learn how to [configure rule-based events](../event/about-creating.md) and [troubleshoot event reception](../building-journeys/troubleshooting-execution.md#checking-if-people-enter-the-journey) in journey execution.
+
+* **Second journey not ready** – Idle timeouts may occur if the second journey is not yet active (for example, not in test mode or not live), or if there is a timing gap between the custom action firing and the second journey being ready to receive. Ensure the target journey is published or in test mode before the custom action is triggered.
+
+* **Diagnosing discard events** – If you see discard events in logs, check journey logs and Splunk traces to confirm whether the event was received but discarded due to qualification (payload did not meet the rule) or timing. Ensure the second journey's start date and configuration are correct and that the journey is within its active date window.
+
+To avoid discard events when chaining journeys via custom actions, validate the event payload against the second journey's event rule and confirm the target journey is live or in test and within its active date window.
 
 ## Additional resources
 

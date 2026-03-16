@@ -78,7 +78,7 @@ To create a form preset, follow the steps below.
 
     >[!NOTE]
     >
-    >Currently only [!DNL Adobe Experience Platform] datasets are available for selection. One dataset can be selected at a time. [Learn more on datasets](../data/get-started-datasets.md)
+    >Currently only **Profile-enabled** and **Non-Profile-enabled** [!DNL Adobe Experience Platform] datasets are available for selection. One dataset can be selected at a time. System datasets cannot be used for saving form data. [Learn more on datasets](../data/get-started-datasets.md)
 
 1. Click **[!UICONTROL Publish]**. Your preset is now ready to be used in a form.
 

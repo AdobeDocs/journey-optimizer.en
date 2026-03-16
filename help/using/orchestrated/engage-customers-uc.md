@@ -5,6 +5,7 @@ title: Engage customers by browsing activity
 description: Engage customers by browsing activity
 feature: Use Cases
 version: Campaign Orchestration
+exl-id: 915ebafe-935b-49b6-8b8c-0e7a8bf546a4
 ---
 # Engage customers by browsing activity {#engage-customers-uc}
 
@@ -17,7 +18,7 @@ Note that this use case starts with an audience that already exists in Experienc
 * **Recipients**: used as the targeting dimension, with fields: `email`, `churnprop`
 * **Wishlist**: with fields: `description`, `priceref`, `imageurl`
 
-➡️ [Learn how to configure model-based schemas](gs-schemas.md)
+➡️ [Learn how to configure relational schemas](gs-schemas.md)
 
 >[!ENDSHADEBOX]
 

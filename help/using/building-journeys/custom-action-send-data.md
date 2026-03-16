@@ -10,9 +10,9 @@ level: Intermediate, Experienced
 keywords: journey, use case
 version: Journey Orchestration
 ---
-# Use case: create a custom action to send data to Adobe Experience Platform{#send-data-to-aep}
+# Use case: create a custom action to send data to [!DNL Adobe Experience Platform]{#send-data-to-aep}
 
-If you recently moved to another email service provider, IP address, or email domain or subdomain, you need to establish your reputation as a sender. Otherwise, your deliveries might be blocked or moved to the spam folder of the recipients' mailbox. Learn how to increase your email reputation with IP warming in the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"}.
+If you recently moved to another email service provider, IP address, or email domain or subdomain, establish your reputation as a sender. Otherwise, deliveries might be blocked or moved to recipients' spam folders. For guidance, see the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"}.
 
 To warm up your IP, you can gradually ramp up the number of your deliveries. Read more about [optimizing deliverability in Journey Optimizer](../reports/deliverability.md).
 

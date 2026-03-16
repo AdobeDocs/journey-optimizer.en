@@ -14,7 +14,7 @@ As a **Marketer** or **Business Practitioner**, you design customer journeys to 
 
 ## Get started with the essentials
 
-Journey Optimizer brings together real-time customer insights, modern omnichannel orchestration, and intelligent decisioning in a single application. Create personalized, connected customer experiences across email, SMS, push, in-app, web, content cards, and more.
+Journey Optimizer brings together real-time customer insights, modern omnichannel orchestration, and intelligent decisioning in a single application. Create personalized, connected customer experiences across email, SMS, push, web push, in-app, web, direct mail, content cards, and more.
 
 Journey Optimizer offers two powerful orchestration approaches:
 
@@ -27,7 +27,7 @@ Follow these core steps to start building experiences:
 
 1. **Create audiences**. Build audiences through segment definitions, upload CSV files, or use audience composition. Journey Optimizer offers multiple ways to target the right customers. Learn more about [audiences](../../audience/about-audiences.md) and [creating segment definitions](../../audience/creating-a-segment-definition.md).
 
-1. **Design content**. Create compelling messages across all channels including email, SMS, push, in-app, web, and content cards:
+1. **Design content**. Create compelling messages across all channels including email, SMS, push, web push, in-app, web, direct mail, and content cards:
    * Use the **AI Assistant** to generate email content, subject lines, and images based on your brand guidelines. [Learn about AI content generation](../../content-management/gs-generative.md)
    * **Personalize messages** with customer data, dynamic content, and conditional logic. [Learn about personalization](../../personalization/personalize.md)
    * **Iterate over contextual data** to display dynamic lists from events, custom actions, and dataset lookups. [Learn about iterating contextual data](../../personalization/iterate-contextual-data.md)
@@ -37,7 +37,7 @@ Follow these core steps to start building experiences:
 
     ![](../assets/perso_ee2.png)
     
-1. **Add offers and decisioning**. Deliver the best offer to each customer at the right time using AI-powered decisioning. Learn about [Decision Management](../../offers/get-started/starting-offer-decisioning.md) and [Experience Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
+1. **Add offers and decisioning**. Deliver the best offer to each customer at the right time using AI-powered decisioning. Use Decisioning to personalize push, SMS, and other channels. Learn about [Decision Management](../../offers/get-started/starting-offer-decisioning.md) and [Decisioning](../../experience-decisioning/gs-experience-decisioning.md).
 
     ![](../assets/offers-e2e-offers-displayed.png)
     
@@ -50,12 +50,15 @@ Follow these core steps to start building experiences:
    
    Learn how to [test and validate messages](../../content-management/preview-test.md).
 
-1. **Build customer journeys**. Create real-time, personalized experiences using the journey canvas:
+1. **Build customer journeys**. Create real-time, personalized experiences using the journey canvas. Use **Journey Agent** in AI Assistant to create journeys from natural language prompts. [Learn about Journey Agent](../ai-features.md#journey-agent)
 
     * Trigger journeys with **events** (customer actions) or **audiences** (batch sends)
     * Add **conditions** to create personalized paths based on customer data
+    * Use the unified **Action activity** for all channel actions (email, push, SMS, and more). [Learn about the Action activity](../../building-journeys/journey-action.md)
+    * Add the **Content decision activity** to integrate personalized offers directly into your journey flow. [Learn about the Content decision activity](../../building-journeys/content-decision.md)
     * Use **wait activities** to create perfect timing between messages
     * Send messages across **multiple channels** within one journey
+    * Use **wave sending** to deliver messages in controlled batches (Limited Availability for journeys)
     * Apply **A/B testing** and optimize send times to maximize engagement
     * Use **dataset lookup** to enrich journeys with real-time data from Adobe Experience Platform. [Learn about dataset lookup](../../building-journeys/dataset-lookup.md)
     * Leverage **supplemental identifiers** to allow the same profile to enter multiple journey instances (e.g., different orders or bookings). [Learn about supplemental identifiers](../../building-journeys/supplemental-identifier.md)
@@ -72,6 +75,7 @@ Follow these core steps to start building experiences:
     * Design **multi-step workflows** for seasonal promotions, product launches, loyalty offers, or account-based marketing
     * Schedule campaigns to run immediately, at specific times, or on recurring schedules (daily, weekly, monthly)
     * Process audiences in **batch mode** where all profiles progress together through the workflow
+    * Use **wave sending** to deliver messages in controlled batches for better deliverability and load control
 
     Learn how to [get started with Orchestrated campaigns](../../orchestrated/gs-orchestrated-campaigns.md) and understand when to [use campaigns vs journeys](../../orchestrated/orchestrated-campaigns-faq.md).
 
@@ -80,7 +84,8 @@ Follow these core steps to start building experiences:
    * Analyze **message delivery** rates and engagement metrics
    * Use **reporting dashboards** with Customer Journey Analytics integration
    * Track **conversion** and business impact
-   * Manage **message frequency and prioritization** with conflict management rules to prevent over-communication. [Learn about conflict management](../../conflict-prioritization/gs-conflict-prioritization.md)
+   * Manage **message frequency and prioritization** with conflict management rules to prevent over-communication
+   * Use **quiet hours** (time-based exclusions) to avoid sending during specific periods. [Learn about conflict management](../../conflict-prioritization/gs-conflict-prioritization.md) and [quiet hours](../../conflict-prioritization/quiet-hours.md)
    
    Learn how to [monitor performance](../../reports/report-gs-cja.md).
 
@@ -105,7 +110,7 @@ Follow these core steps to start building experiences:
 
 ### Campaign orchestration
 
-* **Choose the right approach**: Use Journeys for real-time, behavior-triggered experiences; use Orchestrated campaigns for scheduled, batch campaigns
+* **Choose the right approach**: [Compare journey types](../../building-journeys/journey.md#journey-types) for real-time, behavior-triggered experiences or [campaign types](../../campaigns/get-started-with-campaigns.md#campaign-types) for scheduled, batch campaigns
 * **Define clear campaign objectives**: Establish goals before designing multi-step workflows
 * **Start with pilot audiences**: Validate counts and segmentation logic before scaling
 * **Leverage relational data**: Use multi-entity segmentation to connect customer data with accounts, purchases, subscriptions for precise targeting

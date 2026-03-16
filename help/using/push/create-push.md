@@ -16,6 +16,8 @@ exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
 >title="Push message creation"
 >abstract="Add your push message and start personalizing it with the personalization editor."
 
+You can create push notifications for mobile devices (iOS and Android) and web browsers. This page guides you through the process of setting up a push notification in a journey or campaign.
+
 ## Create the push notification in a journey or campaign {#create}
 
 To create a push notification, follow the steps below:
@@ -24,27 +26,43 @@ To create a push notification, follow the steps below:
 
 >[!TAB Add a Push to a Journey]
 
-1. Open your journey then drag and drop a Push activity from the Actions section of the palette.
+1. Open your journey then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+
+    >[!IMPORTANT]
+    >
+    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+
+1. Select **[!UICONTROL Push]** as the action type.
 
     ![](assets/push_create_1.png)
 
-1. Provide basic information on your message (label, description, category), then choose the message configuration to use.
+1. Enter a **[!UICONTROL Label]** to identify your action in the journey canvas.
+
+1. Click the **[!UICONTROL Configure action]** button.
+
+1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the push configuration to use. [Learn more](push-configuration.md)
 
     ![](assets/push_create_2.png)
 
+1. Additionally:
+
+    * You can apply capping rules to your push action by selecting a rule set in the **[!UICONTROL Business rules]** drop-down list. [Learn more](../conflict-prioritization/channel-capping.md)
+
+    * You can use the **[!DNL Send time optimization]** option to predict the best time to send the message to maximize engagement based on historical open and click rates. [Learn how](../building-journeys/send-time-optimization.md)
+
+1. Use the **[!UICONTROL Rapid delivery mode]** to send your push notification in large volumes. [Learn how](#rapid-delivery)
+
+1. Select the **[!UICONTROL Edit content]** button and create your content as desired. [Learn more](design-push.md)
+
+1. Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. [Learn how](send-push.md)
+
+1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
+
     >[!NOTE]
     >
-    >If you are sending a push notification from a journey, you can leverage Adobe Journey Optimizer's Send-Time Optimization feature to predict the best time to send the message to maximize engagement based on historical open and click rates. [Learn how to work with Send-Time Optimization](../building-journeys/send-time-optimization.md)  
+    >To track the behavior of your recipients through push openings and/or interactions, make sure that the dedicated options in the tracking section are enabled in the [email activity](../building-journeys/journey-action.md).
 
-    For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md)
-
-1. From the journey configuration screen, click the **[!UICONTROL Edit content]** button to configure the push content. [Design a push notification](design-push.md)
-
-1. Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content.
-
-1. When your push is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) to send it.
-
-    To track the behavior of your recipients through push openings and/or interactions, make sure that the dedicated options in the tracking section are enabled in the [email activity](../building-journeys/journeys-message.md).
+For more information on how to create, configure and publish a journey, refer to [this page](../building-journeys/journey-gs.md).
 
 >[!TAB Add a Push to a Campaign]
 
@@ -64,7 +82,7 @@ To create a push notification, follow the steps below:
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL Push notification]** and select or create a new configuration.
 
-    Learn more about Push configuration on [this page](push-configuration.md).
+    Learn more about Push configuration for mobile on [this page](push-configuration.md) and for web on [this page](push-configuration-web.md).
 
     ![](assets/push_create_3.png)
 
@@ -81,18 +99,20 @@ To create a push notification, follow the steps below:
 
 1. From the campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the push content. [Design a push notification](design-push.md)
 
-1. Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content.
+1. Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. [Learn how](send-push.md)
 
 1. When your push is ready, complete the configuration of your [campaign](../campaigns/create-campaign.md) to send it.
 
     To track the behavior of your recipients through push openings and/or interactions, make sure that the dedicated options in the tracking section are enabled in the [campaign](../campaigns/create-campaign.md).
+
+For more information on how to create, configure and activate a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
 
 **Related topics**
 
 * [Configure push channel](push-gs.md)
-* [Add a message in a journey](../building-journeys/journeys-message.md)
+* [Add a message in a journey](../building-journeys/journey-action.md)
 
 ## Rapid delivery mode {#rapid-delivery}
 

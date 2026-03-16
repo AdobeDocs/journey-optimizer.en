@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Add representations to an offer {#add-representations}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_representation"
 >title="Representations"
@@ -63,6 +67,8 @@ You can add different types of content to a representation.
 >[!NOTE]
 >
 >Only content corresponding to the placement's content type is available for use.
+>
+>When you use the personalization editor in Decision management, only a subset of functions is supported—see [Supported functions in the personalization editor](personalization-editor-supported-functions.md).
 
 ### Add images {#images}
 
@@ -98,13 +104,13 @@ To reuse your content in a representation, browse the **Asset Library** as descr
 
 To add content from an external public location, select **[!UICONTROL URL]**, then enter the URL address of the content to add.
 
-You can personalize URLs using the personalization editor. Learn more about [personalization](../../personalization/personalize.md#use-expression-editor).
+You can personalize URLs using the personalization editor. Learn more about [personalization](../../personalization/personalize.md#use-expression-editor). In Decision management, only certain functions are supported—see [Supported functions in the personalization editor](personalization-editor-supported-functions.md).
 
 ![](../assets/offer-content-url.png)
 
 For example, you want to personalize the image that is shown as an offer. You want users who favor city vacations to see the NYC skyline and users who favor beach vacations to see the Hawaii northshore.
 
-Use the personalization editor to retrieve Profile attributes stored in Adobe Experience Platform using union schemas. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"}
+Use the personalization editor to retrieve Profile attributes stored in Adobe Experience Platform using union schemas. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schemas-overview.html){target="_blank"} For supported functions in Decision management, see [Supported functions in the personalization editor](personalization-editor-supported-functions.md).
 
 ![](../assets/offer-content-url-personalization.png)
 
@@ -126,7 +132,7 @@ You can also insert text-type content when selecting a compatible placement.
 
     ![](../assets/offer-text-content.png)
 
-    You can personalize your content using the personalization editor. Learn more about [personalization](../../personalization/personalize.md#use-expression-editor).
+    You can personalize your content using the personalization editor. Learn more about [personalization](../../personalization/personalize.md#use-expression-editor). In Decision management, only certain functions are supported—see [Supported functions in the personalization editor](personalization-editor-supported-functions.md).
 
     ![](../assets/offer-personalization.png)
 

@@ -148,7 +148,7 @@ The **[!UICONTROL Event overview]** table shows how many profiles meet your even
 
 If you set up **[!UICONTROL Targeting rules]** for your content, the **[!UICONTROL Targeting overview]** table provides a detailed view of key engagement metrics, showing how the targeted profiles for each rule interacted with your content.
 
-➡️ [Learn more on Targeting rules](../campaigns/campaigns-message-optimization.md)
+➡️ [Learn more on Targeting rules](../content-management/optimization-targeting.md)
 
 +++ Learn more about Targeting overview metrics
 

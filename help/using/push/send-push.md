@@ -15,7 +15,7 @@ exl-id: aad4e08a-3369-454d-9e32-974347a3b393
 
 Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. If you inserted personalized content, you can check how this content is displayed in the message.
 
-To do this, click **[!UICONTROL Simulate content]**. You can then select the type of device to preview content: **[!UICONTROL iOS]** or **[!UICONTROL Android]**.
+To do this, click **[!UICONTROL Simulate content]**. You can then select the type of device to preview content: **[!UICONTROL iOS]**, **[!UICONTROL Android]**, or **[!UICONTROL Web]**.
 
 ![](assets/push_preview_3.png)
 
@@ -52,9 +52,10 @@ When your push message is ready, complete the configuration of your [journey](..
 
 **Related topics**
 
-* [Configure push channel](push-configuration.md)
+* [Configure push channel for mobile](push-configuration.md)
+* [Configure push channel for web](push-configuration-web.md)
 * [Push notification report](../reports/journey-global-report-cja-push.md)
 * [Create a push notification](create-push.md)
-* [Add a message in a journey](../building-journeys/journeys-message.md)
+* [Add a message in a journey](../building-journeys/journey-action.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)
 

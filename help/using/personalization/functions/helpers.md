@@ -212,10 +212,6 @@ The following example lets you calculate the total sum of prices for products in
 
 ## Execution Metadata {#execution-metadata}
 
->[!AVAILABILITY]
->
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
-
 The `executionMetadata` helper allows to dynamically capture and store custom key-value pairs into the message execution context.
 
 **Syntax**
@@ -263,11 +259,11 @@ Upon runtime, the metadata value is added to the existing **[!UICONTROL Message 
 >
 >Learn more on datasets in [this section](../../data/get-started-datasets.md).
 
-**Limitation**
+**Limitations**
 
-There is an upper limit of 2kb on the key value pairs per action.
+There is an upper limit of 2kb on the key value pairs per action. If the 2Kb limit is exceeded, the message is still delivered, but any of the key value pairs can be truncated.
 
-If the 2Kb limit is exceeded, the message is still delivered, but any of the key value pairs can be truncated.
+Metadata is not captured for profiles excluded from the action. When a profile is excluded from receiving a message, no metadata entry is created for that profile in the dataset.
 
 **Example**
 

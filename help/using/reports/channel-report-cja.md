@@ -20,6 +20,7 @@ The report page is displayed with the following tabs:
 * [Journeys](#journey)
 * [Campaigns](#campaign)
 * [Channels](#channel)
+* [Rule sets](#rule-sets)
 
 To learn more about Customer Journey Analytics Workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
@@ -126,3 +127,27 @@ The **[!UICONTROL Outbound errors]** table empowers you to pinpoint the precise 
 ![](assets/cja-channels-outbound-excluded.png)
 
 The **[!UICONTROL Outbound exclusions]** table present a comprehensive view of the different factors that resulted in the exclusion of user profiles from the targeted audience, resulting in the message not being received.
+
+## Journey Capping and Conflicts {#rule-sets}
+
+The **[!UICONTROL Journey Capping and Conflicts]** table provides insights into how journey arbitration rule sets are performing, showing journey entrances and exclusions based on the capping rules and priority scores applied to your journeys.
+
++++ Learn more about Rule sets metrics
+
+The **[!UICONTROL Journey Entries by Rule Set]** column shows the number of profiles that entered the journey. There are three types of entrances:
+
+* ****[!UICONTROL No conflict]****: The profile entered the journey without any rule set conflicts. No active rule sets prevented this entry, and the journey entry occurred regardless of arbitration rules.
+
+* **Higher priority**: The profile entered the journey due to its higher priority than other competing journeys. Even though there was a conflict (the profile qualified for multiple journeys), this journey was selected due to its higher priority score.
+
+* **Not enforced**: The profile entered the journey, but the rule set was not active or not applied to this journey entry at the time of entry. 
+
+The **[!UICONTROL Exclusions]** column shows the number of profiles that were excluded from entering the journey. Profiles can be excluded for two reasons:
+
+* **Cap reached**: The profile has reached the maximum number of journey entries or concurrent journeys allowed by the capping rule.
+
+* **Lower priority**: The cap has not been reached, but other higher priority journeys meet the constraints. The profile was excluded from this journey and entered a higher priority journey instead.
+
++++
+
+➡️ [Learn more about journey capping & arbitration](../conflict-prioritization/journey-capping.md)

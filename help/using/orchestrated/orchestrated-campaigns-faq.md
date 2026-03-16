@@ -135,9 +135,17 @@ Yes. Campaign orchestration is natively integrated with:
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
 * **Federated Audience Composition (FAC)**: Available as an add-on.  -->
 
++++ Can I revert a live orchestrated campaign back to draft?
+
+Yes, in specific situations. The **[!UICONTROL Back to draft]** option is designed as a recovery mechanism to unpublish and revert a campaign to draft status.
+
+This option is available for scheduled campaigns awaiting execution, or for live campaigns with execution errors. [Learn how to revert a live campaign back to draft](start-monitor-campaigns.md#back-to-draft)
+
++++
+
 +++ Which channels are supported?
 
-You can create Orchestrated campaigns to send **emails**, **SMS**, and **push notifications**.  
+You can create Orchestrated campaigns to send **emails**, **SMS**, **push notifications** and **direct mails**.  
 
 **Learn more**
 
@@ -148,7 +156,7 @@ You can create Orchestrated campaigns to send **emails**, **SMS**, and **push no
 
 +++ Can multiple communications and different channels be launched within the same Orchestrated campaign?
 
-Yes, Orchestrated campaigns supports cross-channel orchestration. You can combine email, SMS, and push notification activities into a multi-step campaign canvas to create comprehensive customer experiences.
+Yes, Orchestrated campaigns supports cross-channel orchestration. You can combine email, SMS, push notification, and direct mail activities into a multi-step campaign canvas to create comprehensive customer experiences.
 
 **Learn more**
 
@@ -181,7 +189,7 @@ No, the content designer, including the Email Designer, is common across all Jou
 
 +++ How are the different channels connected in Orchestrated campaigns?
 
-The channel component & runtime are common to all Journey Optimizer campaigns, however, supported channels differ. Orchestrated campaigns support email, SMS, and push notifications.
+The channel component & runtime are common to all Journey Optimizer campaigns, however, supported channels differ. Orchestrated campaigns support email, SMS, push notifications, and direct mail.
 
 **Learn more**
 
@@ -193,7 +201,7 @@ The channel component & runtime are common to all Journey Optimizer campaigns, h
 
 +++ Can Orchestrated campaigns connect with outbound channels (web, inApp)?
 
-No, inbound channels like web and in-app are not supported in Orchestrated campaigns. Only outbound channels (email, SMS, and push notifications) are supported.
+No, inbound channels like web and in-app are not supported in Orchestrated campaigns. Only outbound channels (email, SMS, push notifications, and direct mail) are supported.
 
 **Learn more**
 
@@ -351,7 +359,7 @@ Yes, you can enrich data from the relational store and from Adobe Experience Pla
 
 +++ Must all filters be defined via audiences, or can some type of filter be configured?
 
-Orchestrated campaigns support Predefined Filters: you can define and save a query as a filter, and add it to your favorites to be reused in further segmentation tasks.
+Orchestrated campaigns support predefined filters: you can define and save a query as a filter, add it to your favorites, and reuse it in further segmentation tasks. Predefined filters can include parameters so you can enter values at time of use. [Learn how to work with predefined filters](predefined-filters.md).
 
 **Learn more**
 

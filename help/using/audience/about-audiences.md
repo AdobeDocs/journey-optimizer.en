@@ -22,7 +22,7 @@ exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
 >title="Select the campaign audience"
 >abstract="This list displays all available Adobe Experience Platform audiences. Select the audience to target with your campaign. The message configured in the campaign will be sent to all the individuals belonging to the selected audience. [Learn more about audiences](../audience/about-audiences.md)"
 
-Audiences are collections of people who share similar behaviors and/or characteristics. They are centrally configured and maintained on Adobe Experience Platform using the Adobe Experience Platform Segmentation Service and readily accessible within Journey Optimizer to be activated in your journeys and campaigns.
+Audiences are collections of people who share similar behaviors and/or characteristics. They are centrally configured and maintained on Adobe Experience Platform using the Adobe Experience Platform Segmentation Service and readily accessible within Journey Optimizer to be activated in your journeys and campaigns. 
 
 Adobe Journey Optimizer provides robust tools for creating, managing, and enriching audiences to enhance marketing efforts. When combined with Adobe Real-Time Customer Data Platform, Journey Optimizer lets you layer in audiences for more complex segmentation and bidirectionally share audiences with other Adobe Experience Cloud solutions.
 
@@ -57,7 +57,7 @@ Audiences can be generated using different methods:
 * **Segment definitions**: Create a new audience definition using Adobe Experience Platform Segmentation Service. Audiences are generated from segment definitions and refreshed at different times depending on their evaluation type:
 
     * Streaming Segmentation: Audiences are updated in real time as new data flows in, ensuring continuous relevance based on user activity.
-    * Batch Segmentation: Audiences are refreshed every 24 hours, capturing a snapshot of profiles at a fixed interval.
+    * Batch Segmentation: Audiences are refreshed every 24 hours, capturing a snapshot of profiles at a fixed interval. When used in journeys, newly qualified segment members may not appear until the next snapshot. [Learn more about timing](../building-journeys/audience-qualification-events.md#timing-segment-membership).
     * Edge Segmentation: Audiences are evaluated instantaneously on the edge, allowing for real-time personalization.
 
     [Learn how to build segment definitions](creating-a-segment-definition.md) 

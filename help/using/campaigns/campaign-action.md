@@ -37,7 +37,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 1. **Leverage Optimization**
 
-    Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting. These different options and the steps to follow are detailed in [this section](campaigns-message-optimization.md).
+    Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting. These different options and the steps to follow are detailed in [this section](../content-management/gs-message-optimization.md).
 <!--
 1. **Create a content experiment**
 

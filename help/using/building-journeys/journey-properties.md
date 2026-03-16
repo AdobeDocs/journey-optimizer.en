@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Define your journey's properties
-description: Learn how to set properties of your journey with Adobe Journey Optimizer
+description: Learn how to set properties of your journey with [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started
 topic: Content Management
 role: User
@@ -26,7 +26,7 @@ From this section, define the name of the journey, add a description, and set yo
 
 You can:
 
-* Assign Adobe Experience Platform Unified Tags to your journey, to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
+* Assign [!DNL Adobe Experience Platform] Unified Tags to your journey, to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
 * Select your journey metrics. [Learn how to configure and track your journey metrics](success-metrics.md)
 * Manage [entrance and reentrance](#entrance). Profile entrance management depends on the type of journey. Details are available on [this page](entry-management.md)
 * Manage [access to data](#manage-access)
@@ -81,7 +81,7 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 
 ## Journey and profile timezones {#timezone}
 
-The timezone is defined at journey level. You can enter a fixed time zone or use Adobe Experience Platform profiles to define the journey time zone. If a time zone is defined in Adobe Experience Platform profile, it can be retrieved in the journey.
+The timezone is defined at journey level. You can enter a fixed time zone or use [!DNL Adobe Experience Platform] profiles to define the journey time zone. If a time zone is defined in [!DNL Adobe Experience Platform] profile, it can be retrieved in the journey.
 
 [Learn more about timezone management](../building-journeys/timezone-management.md)
 
@@ -102,6 +102,8 @@ By default, profiles can enter your journey as soon as it is published, and can 
 If needed, you can define custom **Start date** and **End date**. This allows profiles to enter your journey on a specific date, and exit automatically when the end date is reached. 
 
 ## Timeout {#timeout}
+
+Timeout settings control how long a journey waits for activity execution and how long profiles can remain in a journey.
 
 ### Timeout in journey activities {#timeout_and_error}
 
@@ -124,13 +126,17 @@ In addition to the [timeout](#timeout_and_error) used in journey activities, a g
 
 This global timeout stops the progress of individuals in the journey **91 days** after they enter. This means that an individual's journey cannot last longer than 91 days. After this timeout period, the individual's data is deleted. Individuals still flowing in the journey at the end of the timeout period will be stopped and they will not be taken into account in reporting. You could therefore see more people entering the journey than exiting.
 
+>[!NOTE]
+>
+>The exact definition of when a journey is considered "finished" varies by journey type. [See detailed criteria](end-journey.md#journey-finished-definition).
+
 Due to the 91-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago.
 
 An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
 
 #### Time-to-Live (TTL) and data rentention FAQ {#timeout-faq}
 
-Starting Adobe Journey Optimizer June 2024 release, the journey global timeout has moved from 30 to 91 days. Impacts are listed in the FAQ below:
+Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global timeout has moved from 30 to 91 days. Impacts are listed in the FAQ below:
 
 **For Unitary Journeys**
 
@@ -240,15 +246,15 @@ Starting Adobe Journey Optimizer June 2024 release, the journey global timeout h
 
 ## Merge policies {#merge-policies}
 
-Adobe Journey Optimizer uses merge policies while retrieving profile data from Adobe Experience Platform. Depending on the journey type, different merge policies are used:
+[!DNL Adobe Journey Optimizer] uses merge policies while retrieving profile data from [!DNL Adobe Experience Platform]. Depending on the journey type, different merge policies are used:
 
 * In Read audience or audience qualification journeys: the merge policy from the audience is used
 * In Unitary event journeys: the default merge policy is used
 * In Business event journeys: the merge policy from the targeted audience in the following Read audience activity is used
 
-Adobe Journey Optimizer applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalization, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalization.
+[!DNL Adobe Journey Optimizer] applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalization, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalization.
 
-To learn more about merge policies, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
+To learn more about merge policies, refer to [[!DNL Adobe Experience Platform] documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/merge-policies/overview){target="_blank"}.
 
 >[!NOTE]
 >
@@ -339,7 +345,12 @@ The following guardrails apply when using the [Profile Attribute–Based Exit Cr
 
 ## Journey schedule {#schedule}
 
-The **[!UICONTROL Schedule]** section is only available when a **[!UICONTROL Read Audience]** activity has been dropped in the canvas. It allows you to define a specific date/time and frequency at which the journey should run. [Learn how to schedule a Read-audience journey](../building-journeys/read-audience.md)
+The **[!UICONTROL Schedule]** section is only available when a **[!UICONTROL Read Audience]** activity has been dropped in the canvas. It allows you to define a specific date/time and frequency at which the journey should run. [Learn how to schedule a Read-audience journey](read-audience.md#schedule)
+
+>[!TIP]
+>
+>When scheduling the journey, you can also configure wave sending to deliver journey actions in batches over time. [Learn how to send using waves in journeys](send-using-waves.md)
+
 
 ## Conflict management {#conflict}
 

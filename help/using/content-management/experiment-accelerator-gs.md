@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: content, experiment, multiple, audience, treatment
+exl-id: 8913889e-3c8d-414f-8300-16fc1bd30607
 ---
 # Get started with the Journey Optimizer Experimentation Accelerator {#content-experiment}
 

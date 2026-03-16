@@ -10,9 +10,9 @@ exl-id: bb52f400-6289-4a7f-a34f-98eb5d27c76a
 ---
 # Get started with direct mail {#create-direct}
 
-Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers. 
+Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers.
 
-When creating a direct mail campaign, Journey Optimizer automatically generates a file containing all the targeted profiles and selected data, such as postal addresses and profile attributes. This file is sent to the server of your choice so that it is accessible by your chosen third-party direct mail provider, who will handle the actual mailing process for you.
+When creating a direct mail campaign or journey, Journey Optimizer automatically generates a file containing all the targeted profiles and selected data, such as postal addresses and profile attributes. This file is sent to the server of your choice so that it is accessible by your chosen third-party direct mail provider, who will handle the actual mailing process for you.
 
 You will need to work with your chosen third-party direct mail provider to obtain any required consents from you customers, if applicable, so that your customers can receive mail from you.
 
@@ -24,7 +24,7 @@ The main steps to send direct mail messages are as follows:
 
 >[!AVAILABILITY]
 >
->Direct mail messages can only be created in the context of scheduled campaigns. They are not available for use in orchestrated and API-triggered campaigns or in journeys.
+>Direct mail messages can be created in the context of journeys and campaigns. They are not available for use in API-triggered campaigns.
 
 ![](../rn/assets/do-not-localize/gif-dm.gif)
 
@@ -32,8 +32,11 @@ The main steps to send direct mail messages are as follows:
 
 * **[Create direct mail](create-direct-mail.md)** - Learn how to create direct mail deliveries and configure extraction files for offline channels.
 * **[Configure direct mail channel](direct-mail-configuration.md)** - Set up direct mail surfaces and file routing configurations.
-* **[Direct mail in journeys](direct-mail-journeys.md)** - Discover how to use direct mail actions within customer journeys.
 * **[Test and send direct mail](test-send-direct-mail.md)** - Learn how to test, validate, and publish your direct mail deliveries.
 * **[Direct mail tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Explore step-by-step video tutorials on direct mail features and best practices.
 
+## How-to video
 
+Learn how to leverage the Direct Mail channel in Adobe Journey Optimizer to automate and schedule direct mail deliveries within your journeys.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479162?quality=12)

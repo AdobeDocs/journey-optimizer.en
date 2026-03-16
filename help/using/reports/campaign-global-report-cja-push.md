@@ -27,7 +27,7 @@ The **[!UICONTROL Sending Statistics]** table provides a comprehensive summary o
 
 +++ Learn more about Sending Statistics metrics
 
-* **[!UICONTROL Targeted]**: Total number of push notifications processed during the analysis.
+* **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied. In journeys with re-entrance enabled, a profile may be targeted multiple times.
 
 * **[!UICONTROL Sends]**: Total number of sends for the push notification.
 

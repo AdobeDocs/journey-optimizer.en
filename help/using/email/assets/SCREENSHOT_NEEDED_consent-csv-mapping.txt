@@ -1,0 +1,23 @@
+SCREENSHOT NEEDED: consent-csv-mapping.png
+
+For DOCAC-8403 - Opt-in/opt-out profiles from a file
+
+Location: email-opt-out.md, section "Manage opt-in/opt-out from a file"
+
+Description:
+Screenshot showing the CSV to XDM schema mapping interface in Adobe Experience Platform Workflows.
+
+The screenshot should show:
+1. The "Map CSV to XDM schema" workflow interface
+2. CSV columns on the left side (email, firstname, lastname, consent)
+3. XDM schema fields on the right side with mappings:
+   - email → personalEmail.address (or similar identity field)
+   - consent → consents.marketing.email.val
+   - firstname → person.name.firstName (optional)
+   - lastname → person.name.lastName (optional)
+4. The mapping interface with dropdown selectors or field mapping UI
+
+This screenshot will help users understand how to correctly map their CSV columns to the appropriate consent fields in the XDM schema.
+
+Alternative: If a real screenshot is not available, consider using a similar screenshot from the test profiles CSV upload process (test-profiles-19.png) as a reference and creating a new one specific to consent mapping.
+

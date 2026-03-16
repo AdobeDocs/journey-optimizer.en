@@ -11,10 +11,9 @@ exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 ---
 # Guardrails and limitations {#limitations}
 
-Below you will find additional guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
+Below you will find guardrails and limitations when using [!DNL Adobe Journey Optimizer]. 
 
 Entitlements, product limitations and performance guardrails are listed in [Adobe Journey Optimizer product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. 
-
 
 >[!CAUTION]
 >
@@ -22,12 +21,13 @@ Entitlements, product limitations and performance guardrails are listed in [Adob
 >
 >* See also [Guardrails for Data Ingestion in Real-time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"} 
 
+## System & Platform {#system-platform}
 
-## Supported browsers {#browsers}
+### Supported browsers {#browsers}
 
 Adobe [!DNL Journey Optimizer] interface is designed to work optimally in the latest version of Google Chrome. You might have trouble using certain features on older versions or other browsers.
 
-## Datasets guardrails {#datasets-guardrails}
+### Datasets guardrails {#datasets-guardrails}
 
 As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
 
@@ -36,12 +36,13 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 
 This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
 
-## Channels guardrails {#channel-guardrails}
+## Channels & Messaging {#channel-guardrails}
+
+This section covers guardrails for all communication channels including email, SMS, inbound channels (web, in-app, code-based, content cards), and transactional messages.
 
 >[!NOTE]
 >
 >In rare circumstances, temporary outages in a specific region can result in valid profiles being excluded from journeys, or mails wrongly marked as bounces. Once services are restored, re-check journey logs, verify consent profile fields, and re-publish the journey if needed. In the case of an ISP outage, learn how to remove profiles from the suppression list in [this section](../configuration/manage-suppression-list.md#remove-from-suppression-list).
->
 
 ### Email guardrails {#message-guardrails}
 
@@ -91,6 +92,10 @@ The following guardrails apply to the [SMS channel](../sms/get-started-sms.md):
 
 * Journey Optimizer supports a peak volume of 5,000 inbound requests per second. This guardrail applies to all inbound requests, which can originate from any of the Journey Optimizer supported inbound channels ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)).
 
+    Journey Optimizer inbound channels target new profiles that might have not been engaged before on other channels. This will increase your total [Engageable Profiles](../audience/license-usage.md) count, which may have cost implications if the contractual number of Engageable Profiles you purchased is exceeded.
+
+    Licence metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of Engageable Profiles in the [license usage dashboard](../audience/license-usage.md).
+
 * Journey Optimizer supports a maximum of 500 active inbound actions at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
 
 #### Profile management with inbound channels {#profile-management-inbound}
@@ -111,7 +116,11 @@ Adobe recommends setting the TTL value to 14 days to match the current Edge prof
 
 Journey Optimizer supports a peak volume of 500 transactional messages per second in campaigns.
 
-## Landing pages guardrails {#lp-guardrails}
+## Content & Assets {#content-assets}
+
+This section covers guardrails for content creation and management, including landing pages, subdomains, and fragments.
+
+### Landing pages guardrails {#lp-guardrails}
 
 The following guardrails apply to the [landing pages](../landing-pages/get-started-lp.md):
 
@@ -120,11 +129,11 @@ The following guardrails apply to the [landing pages](../landing-pages/get-start
 * You cannot add a preheader to a landing page.
 * You cannot select the **Code your own** option when designing a landing primary page.
 
-## Subdomains guardrails {#subdomain-guardrails}
+### Subdomains guardrails {#subdomain-guardrails}
 
 The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
 
-## Fragments guardrails {#fragments-guardrails}
+### Fragments guardrails {#fragments-guardrails}
 
 The following guardrails apply to the [fragments](../content-management/fragments.md):
 
@@ -137,7 +146,11 @@ The following guardrails apply to the [fragments](../content-management/fragment
 * Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
 * When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
 
-## Audience and profile guardrails {#audience}
+## Audiences & Profiles {#audiences-profiles}
+
+This section covers guardrails for audience management, profile handling, and engageable profile considerations.
+
+### Audience and profile guardrails {#audience}
 
 * You can publish up to 10 audience compositions in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
 
@@ -147,14 +160,18 @@ The following guardrails apply to the [fragments](../content-management/fragment
 
 * When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
 
-## Decisioning & Decision management guardrails {#decisioning-guardrails}
+## Decision Management {#decision-management}
 
-Guardrails and limitations to keep in mind when working with Decisioning or Decision Management are detailed in these the Decisioning & Decision management sections:
+### Decisioning & Decision management guardrails {#decisioning-guardrails}
+
+Guardrails and limitations to keep in mind when working with Decisioning or Decision management are detailed in these the Decisioning & Decision management sections:
 
 * [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
 * [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
 
-## Journey guardrails {#journeys-guardrails}
+## Journeys {#journeys-guardrails}
+
+This section covers guardrails and limitations for journeys, including general journey limitations, journey components (actions, events, data sources), journey activities, and specific features like custom actions and expression editor.
 
 ### General journey guardrails {#journeys-guardrails-journeys}
 
@@ -164,6 +181,34 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 * When using an audience qualification in a journey, that audience qualification activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.
 * A journey instance for a profile has a maximum size of 1MB. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (eg: below 800 KB) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
 * In addition to the timeout used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. This global timeout stops the progress of individuals in the journey 91 days after they enter. [Read more](../building-journeys/journey-properties.md#global_timeout)
+
+
+#### Journey payload size validation {#journey-payload-size}
+
+When you save or publish a journey, Journey Optimizer validates the total journey payload size to preserve stability and performance.
+
+**Default configuration**
+
+* **Default maximum request size**: 2 MB (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
+* **Warning threshold**: 90% of the maximum limit.
+* **Error threshold**: 100% of the maximum limit. Saving or publishing is blocked and the request returns **HTTP 413 Request Entity Too Large**.
+
+**User experience scenarios**
+
+* **Payload < 90% of limit**: Journey saves and publishes successfully. No warnings or errors are displayed.
+* **Payload 90-99% of limit**: Journey saves and publishes successfully, with a warning to optimize. Warning message: **Warning**: Journey payload size is close to the limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes).
+* **Payload >= 100% of limit**: Journey save or publish is blocked with an error. Error message: **Error**: Journey payload size exceeds limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes).
+
+**Error response details**
+
+If the request exceeds the maximum allowed size, the response includes **Request Entity Too Large**. The journey payload exceeds the maximum allowed size. Review the error details and optimize your journey.
+
+**Troubleshooting and recommendations**
+
+* Review the largest node highlighted in the warning or error.
+* Simplify conditions, reduce data mappings, and remove unnecessary steps or parameters.
+* Consider splitting the journey into smaller journeys if needed.
+* If you believe your organization needs a higher limit, contact your Adobe representative.
 
 ### Select package limitations for unitary journeys {#select-package-limitations}
 
@@ -228,7 +273,7 @@ The following guardrails apply to the [Events](../event/about-events.md) in your
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
 * Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
-* Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, bu is not recommended as it can cause downstream challenges based on the actions used.
+* Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch, events inserted via **Query Service**, or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but is not recommended as it can cause downstream challenges based on the actions used.
 
 ### Data sources {#data-sources-g}
 
@@ -281,7 +326,8 @@ Learn more about journey processing rates and throughput limits in [this section
 The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
 
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
-* Campaign activities cannot be used with the other channels activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* **[!UICONTROL Campaign v7/v8]** activities can be used alongside native channel activities in the same journey.
 
 #### In-app activity {#in-app-activity-limitations}
 
@@ -291,7 +337,7 @@ The following guardrails apply to the **[!UICONTROL In-app message]** action. Le
 
 * Personalization can only contain profile attributes.
 
-* The In-app activity cannot be used with Adobe Campaign activities.
+* The In-app activity cannot be used with **[!UICONTROL Campaign Standard]** activities.
 
 * In-app display is tied to the journey lifespan, meaning that when the journey ends for a profile, all In-app messages within that journey will cease to be displayed for that profile.  Consequently, it is not possible to stop an In-app message directly from a journey activity. Instead, you must end the entire journey to stop the In-app messages from being displayed to the profile.
 
@@ -327,6 +373,8 @@ See also [this page](../building-journeys/read-audience.md#must-read).
 
 Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed on [this page](../building-journeys/update-profiles.md).
 
-## Campaign Orchestration guardrails {#orchestration-guardrails}
+## Campaign Orchestration {#campaign-orchestration}
+
+### Campaign Orchestration guardrails {#orchestration-guardrails}
 
 Guardrails and limitations to keep in mind when working with Campaign Orchestration are detailed in this section: [Guardrails & limitations](../orchestrated/guardrails.md).

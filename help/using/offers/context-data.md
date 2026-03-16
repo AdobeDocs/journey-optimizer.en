@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # Get started with context data {#context-data}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+
 Data sent as part of the decisioning request is considered as context data. You can leverage context data in the decisioning engine, for example to design a decision rule that requires the current weather to be ≥80 degrees at the time the decision request is made.
 
 Context data is defined differently between **Decisioning** and **Edge Decisioning** API requests. For both types of requests, context data can be used in eligibility rules or in ranking formulas, but only Edge Decisioning API requests can use context data to personalize content. 

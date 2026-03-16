@@ -13,7 +13,7 @@ version: Journey Orchestration
 ---
 # Send a message with Campaign v7/v8 {#campaign-v7-v8-use-case}
 
-This use case explains all the steps required to send an email using the integration with Adobe Campaign v7 and Adobe Campaign v8.
+This use case explains all the steps required to send an email using the integration with [!DNL Adobe Campaign] v7 and [!DNL Adobe Campaign] v8.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ To learn more about the Campaign integration, refer to these pages:
 * [Creating a Campaign action](../action/acc-action.md)
 * [Using the action in a journey](../building-journeys/using-adobe-campaign-v7-v8.md).
 
-**Adobe Campaign**
+**[!DNL Adobe Campaign]**
 
 Your Campaign instance must be provisioned for this integration. The Transactional Messaging feature must be configured.
 
@@ -34,7 +34,7 @@ Your Campaign instance must be provisioned for this integration. The Transaction
 
 1. Under **Administration** > **Platform** > **Enumerations**, select the **Event type** (eventType) enumeration. Create a new event type ("journey-event", in our example). Use the internal name of the event type when writing the JSON file later. 
 
-    ![Configure an event in Adobe Journey Optimizer with schema and field selection](assets/accintegration-uc-1.png)
+    ![Configure an event in [!DNL Adobe Journey Optimizer] with schema and field selection](assets/accintegration-uc-1.png)
 
 1. Disconnect and reconnect to the instance for the creation to take effect.
 
@@ -42,7 +42,7 @@ Your Campaign instance must be provisioned for this integration. The Transaction
 
     ![Event configuration showing namespace and profile identifier settings](assets/accintegration-uc-2.png)
 
-1. Design your template. In this example, personalization is applied to the profile's first name and the order number. The first name is in the Adobe Experience Platform data source, and the order number is a field from the Journey Optimizer event. Ensure you use the correct field names in Campaign. 
+1. Design your template. In this example, personalization is applied to the profile's first name and the order number. The first name is in the [!DNL Adobe Experience Platform] data source, and the order number is a field from the Journey Optimizer event. Ensure you use the correct field names in Campaign. 
 
     ![Event payload preview showing JSON structure with profile and event data](assets/accintegration-uc-3.png)
 
@@ -72,11 +72,11 @@ Your Campaign instance must be provisioned for this integration. The Transaction
 
 1. Create an event. Include the "purchaseOrderNumber" field.
 
-    ![Custom action configuration screen for Adobe Campaign Classic integration](assets/accintegration-uc-5.png)
+    ![Custom action configuration screen for [!DNL Adobe Campaign] Classic integration](assets/accintegration-uc-5.png)
 
-1. Create an action in Journey Optimizer corresponding to your Campaign template. In the **Action type** drop-down, select **Adobe Campaign Classic**. 
+1. Create an action in Journey Optimizer corresponding to your Campaign template. In the **Action type** drop-down, select **[!DNL Adobe Campaign] Classic**. 
 
-    ![Action type selection showing Adobe Campaign Classic option](assets/accintegration-uc-6.png)
+    ![Action type selection showing [!DNL Adobe Campaign] Classic option](assets/accintegration-uc-6.png)
 
 1. Click the **Payload field** and paste the JSON created earlier.
 

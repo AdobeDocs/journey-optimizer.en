@@ -76,7 +76,7 @@ Comprehensive Guide to Journeys
 
 Design, orchestrate, manage, and optimize personalized customer journeys with this in-depth guide.
 
-[Explore Journeys](./rp_landing_pages/orchestrate-journeys-landing-page.md)
+[Explore Journeys](using/building-journeys/journey.md)
 :::
 
 :::
@@ -86,7 +86,7 @@ Understanding and Managing Campaigns
 
 Detailed guidance on creating, managing, and optimizing various campaign types for effective targeting.
 
-[Learn About Campaigns](./rp_landing_pages/campaigns-landing-page.md)
+[Learn About Campaigns](using/campaigns/get-started-with-campaigns.md)
 :::
 
 :::
@@ -106,7 +106,7 @@ Conflict Management and Prioritization
 
 Learn how to prioritize and manage communication conflicts across campaigns and journeys effectively.
 
-[Learn Conflict Management](./rp_landing_pages/conflict-prioritization-landing-page.md)
+[Learn Conflict Management](./using/conflict-prioritization/gs-conflict-prioritization.md)
 :::
 
 ::::

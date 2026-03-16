@@ -6,6 +6,7 @@ description: Learn how Adobe Journey Optimizer works with Adobe Experience Platf
 feature: Get Started
 role: Admin, Developer, User
 level: Beginner
+exl-id: 9df179a0-a5f6-4dbd-a9db-a103731b1854
 ---
 # Understanding Journey Optimizer {#understanding-ajo}
 

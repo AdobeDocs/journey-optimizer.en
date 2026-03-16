@@ -12,9 +12,11 @@ version: Journey Orchestration
 ---
 # Use case: limit throughput with External Data Sources & Custom Actions{#limit-throughput}
 
+Use this use case to throttle journey processing when external systems must handle a capped number of requests per second.
+
 ## Description of the use case
 
-Adobe Journey Optimizer allows practitioners to send API calls to external systems through the use of Custom Actions and Data Sources.
+[!DNL Adobe Journey Optimizer] allows practitioners to send API calls to external systems through the use of Custom Actions and Data Sources.
 
 This can be done with :
 

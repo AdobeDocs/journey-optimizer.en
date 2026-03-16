@@ -12,7 +12,13 @@ version: Journey Orchestration
 ---
 # Decision management guardrails & limitations {#decision-management-guardrails}
 
-To ensure optimal use of Decision management, keep the following guardrails and limitations in mind.
+>[!IMPORTANT]
+>
+>This page covers guardrails for the legacy **Decision Management** capability. If you are using **Decisioning** — [!DNL Adobe Journey Optimizer]'s current decisioning capability available via code-based experience and email channels — refer to [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md) instead.
+>
+>Not sure which capability you are using? [Learn about Decisioning](../experience-decisioning/gs-experience-decisioning.md).
+
+This page applies to users still working with the legacy Decision Management system. To ensure optimal use, keep the following guardrails and limitations in mind.
 
 The complete list of [!DNL Journey Optimizer] guardrails & limitations is available in [this section](../start/guardrails.md).
 

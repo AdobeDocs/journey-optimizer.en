@@ -32,19 +32,31 @@ Browse the tabs below to learn how to add a text message (SMS/MMS/RCS) in a camp
 
 >[!TAB Add a text message to a Journey]
 
-1. Open your journey then drag and drop an SMS activity from the **Actions** section of the palette.
+1. Open your journey then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+
+    >[!IMPORTANT]
+    >
+    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+
+1. Select **[!UICONTROL SMS]** as the action type.
 
     ![](assets/sms_create_1.png)
 
-1. Provide basic information on your message (label, description, category), then choose the message configuration to use.
+1. Enter a **[!UICONTROL Label]** to identify your action in the journey canvas.
+
+1. Click the **[!UICONTROL Configure action]** button.
+
+1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the SMS configuration to use. [Learn more](sms-configuration.md)
 
     ![](assets/sms_create_2.png)
 
-    For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md)
+1. Additionally, you can apply capping rules to your SMS action by selecting a rule set in the **[!UICONTROL Business rules]** drop-down list. [Learn more](../conflict-prioritization/channel-capping.md)
 
-    The **[!UICONTROL configuration]** field is pre-filled, by default, with the last configuration used for that channel by the user.
+1. Select the **[!UICONTROL Edit content]** button and create your content as desired. [Learn more](#sms-content)
 
-You can now start designing the content of your SMS message from the **[!UICONTROL Edit content]** button, as detailed below.
+1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
+
+For more information on how to create, configure and publish a journey, refer to [this page](../building-journeys/journey-gs.md).
 
 >[!TAB Add a text message to a Campaign]
 
@@ -82,6 +94,8 @@ You can now start designing the content of your SMS message from the **[!UICONTR
     * Month
     
 You can now start designing the content of your text message from the **[!UICONTROL Edit content]** button, as detailed below.
+
+For more information on how to create, configure and activate a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
 
@@ -131,6 +145,12 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](#sms-mms-test).
 
+## Personalize with Decisioning {#decisioning-sms}
+
+You can personalize and optimize the content of your SMS messages with **Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
+
+For more information on how to create and use decision policies in SMS messages, refer to [this section](../experience-decisioning/create-decision.md).
+
 ## Define your MMS content{#mms-content}
 
 You can enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of media such as videos, pictures, audio clips and GIFs, and more. Additionally, MMS allows for up to 1600 characters of text in your message.
@@ -172,5 +192,5 @@ Once sent, you can measure the impact of your SMS within the Campaign or Journey
 * [Preview, test and send your text message](send-sms.md)
 * [Configure SMS channel](sms-configuration.md)
 * [SMS/MMS reports](../reports/journey-global-report-cja-sms.md)
-* [Add a message in a journey](../building-journeys/journeys-message.md)
+* [Add a message in a journey](../building-journeys/journey-action.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)

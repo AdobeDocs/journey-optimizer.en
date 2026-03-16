@@ -40,7 +40,7 @@ Guided Channel Setup
 
 Configure mobile and web channels efficiently with step-by-step instructions and resources provided during the setup process.
 
-[Explore Guided Channel Setup](guided-setup-landing-page.md)
+[Explore Guided Channel Setup](../using/configuration/set-mobile-config.md)
 :::
 
 :::

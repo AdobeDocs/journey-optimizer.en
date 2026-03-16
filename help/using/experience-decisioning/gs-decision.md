@@ -31,9 +31,13 @@ Our next-generation decision framework, designed to unify existing Journey Optim
 * Updated decision policy and selection strategy configuration: Allow reusability of decision components
 * Experimentation capabilities: Test decision logic against other content components to measure performance
 
-Decisioning is currently supported in the Code-based experience channel. 
+Decisioning is available to all customers for the **Code-based Experience**, **Push notification**, and **SMS** channels. Decisioning for the **Email** channel is available in Limited Availability. To request access to Email decisioning, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
-➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md) 
+➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md)
+
+>[!NOTE]
+>
+>To migrate from Decision management to Decisioning, refer to the [migration documentation](../experience-decisioning/migrate-to-decisioning.md) and [Migration API guide](../experience-decisioning/decisioning-migration-api.md).
 
 ## Decision management {#decision-management}
 

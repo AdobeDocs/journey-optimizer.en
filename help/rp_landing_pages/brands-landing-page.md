@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Brands
-description: Brands
+description: Learn to create, manage, and personalize brand guidelines in Journey Optimizer to ensure consistent, on-brand content across all your campaigns.
 redpen-status: CREATED_||_2025-08-12_00-41-41
 exl-id: f1e3cb9d-83a8-48af-9121-4ebc56dce251
 ---
@@ -31,6 +31,26 @@ Evaluate Your Brand Alignment Score
 Understand and utilize the Brand Alignment feature to validate content adherence to brand guidelines and improve consistency.
 
 [Learn about Brand Alignment](../using/content-management/brands-score.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+Personalize Your Brands
+
+Learn how to set default brand preferences and tailor brand guidelines for seamless integration with AI-generated content.
+
+[Personalize your brands](../using/content-management/brands-personalize.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+
+Create and Manage Generative Models
+
+Discover how to create and manage custom generative AI models trained on your brand guidelines for consistent content generation.
+
+[Manage generative models](../using/content-management/generative-models.md)
 :::
 
 ::::

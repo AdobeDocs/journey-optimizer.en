@@ -78,7 +78,13 @@ After creating and configuring your API credential, you now need to create your 
 >
 >Without specified opt-in or opt-out keywords, standard consent messages are not enabled.
 
-Once your WhatsApp API credentials have been successfully created, you can now configure Webhooks to capture inbound responses for managing opt-in and opt-out consent, and to receive delivery reports such including read receipts where available.
+Once your WhatsApp API credentials have been successfully created, you can now configure Webhooks to:
+
+* **Capture inbound responses** for managing opt-in and opt-out consent
+* **Receive delivery reports** such as read receipts (where available) and message delivery status
+* **Enable tracking events** for analytics and reporting in Adobe Experience Platform datasets
+
+Webhooks act as the communication bridge between Meta's WhatsApp Business Platform and Adobe Journey Optimizer, allowing you to receive real-time notifications about message events and user interactions.
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL WhatsApp Webhooks]** menu under **[!UICONTROL WhatsApp settings]**, and click the **[!UICONTROL Create Webhook]** button.
 
@@ -95,6 +101,7 @@ Once your WhatsApp API credentials have been successfully created, you can now c
     * **[!UICONTROL Opt-in Keywords]**
     * **[!UICONTROL Opt-out Keywords]**
     * **[!UICONTROL Help Keywords]**
+    * **[!UICONTROL Default]** - Fallback category for all inbound messages that do not match other keywords. Use this category to enable tracking events (opens, delivery reports) in Adobe Experience Platform datasets.
 
 1. Enter your **[!UICONTROL Keywords]** and click ![add](assets/do-not-localize/Smock_AddCircle_18_N.svg).
 

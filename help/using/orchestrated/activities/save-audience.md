@@ -53,6 +53,9 @@ The content of the saved audience is then available in the detail view of the au
 
  ![](../assets/save-audience-4.png)
 
+>[!NOTE]
+>
+>If your audience definition uses Experience Platform schema attributes labeled with data usage (DULE), those labels are automatically inherited by the saved audience. You do not need to reapply them. [Learn more on Data Governance](../../action/action-privacy.md)
 
 ## Example {#save-audience-example}
 

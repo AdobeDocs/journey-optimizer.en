@@ -64,7 +64,7 @@ Click **[!UICONTROL Add a path]** if you want to define several conditions. For 
 
 Note that the design of journeys has functional impacts. When several paths are defined after a condition, only the first eligible path will be executed. It means that you can vary the prioritization of paths by placing them above or below one another.
 
-Let's take the example of a first path's condition "The person is a VIP" and a second path's condition "The person is a male". If a person meeting both conditions (a male who is a VIP) passes this step, the first path will be chosen even if this person is also eligible to the second one, because the first path is "above". To change this priority, move your activities in another vertical order.
+Let's take two path conditions: "The person is a VIP" and "The person is a male." If a person meets both conditions, the first path is chosen because it is above the second. To change this priority, move your activities to a different vertical order.
 
 ![Path prioritization example showing VIP condition above male condition](assets/journey48.png)
 
@@ -81,7 +81,7 @@ The simple mode allows you to perform simple queries based on a combination of f
 
 ![Simple expression editor with drag-and-drop fields and logical operators](assets/journey64.png){width=80%}
 
-If you are using the [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Using audience in conditions](../building-journeys/condition-activity.md#using-a-segment).
+If you are using the [[!DNL Adobe Experience Platform] Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Using audience in conditions](../building-journeys/condition-activity.md#using-a-segment).
 
 >[!NOTE]
 >
@@ -182,7 +182,7 @@ To use an audience in a journey condition, follow these steps:
 
 1. On the left side, unfold **[!UICONTROL Audiences]** node. Drag and drop the audience you want to use for your condition. By default, the condition on the audience is true.
 
-   ![Audiences node in expression editor for selecting Adobe Experience Platform audiences](assets/segment4.png){width=80%}
+   ![Audiences node in expression editor for selecting [!DNL Adobe Experience Platform] audiences](assets/segment4.png){width=80%}
 
    >[!NOTE]
    >

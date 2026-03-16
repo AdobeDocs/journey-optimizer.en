@@ -41,11 +41,11 @@ Here are limitations related to the use of journeys.
 
 ## Events limitations {#events-limitations}
 
-* For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
+* For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into [!DNL Adobe Experience Platform]. This limitation does not apply to rule-based events.
 
 ## Reaction events limitations {#reaction-limitations}
 
-* **[!UICONTROL Reaction]** activities must be placed immediately after a [channel action activity](../building-journeys/journeys-message.md) in the journey canvas. Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected. Learn more in [this section](../building-journeys/reaction-events.md).
+* **[!UICONTROL Reaction]** activities must be placed immediately after a [channel action activity](../building-journeys/journey-action.md) in the journey canvas. Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected. Learn more in [this section](../building-journeys/reaction-events.md).
 
 ## Data sources limitations {#data-sources-limitations}
 
@@ -53,13 +53,13 @@ Here are limitations related to the use of journeys.
 
 ## Journeys starting at the same time as a profile creation {#journeys-limitation-profile-creation}
 
-There is a delay associated to API based profile creation/update in Adobe Experience Platform. The Service Level Target (SLT) in terms of latency is < 1 min from ingestion to Unified Profile for 95th percentile of requests, at a volume of 20K Requests per second (RPS).
+There is a delay associated to API based profile creation/update in [!DNL Adobe Experience Platform]. The Service Level Target (SLT) in terms of latency is < 1 min from ingestion to Unified Profile for 95th percentile of requests, at a volume of 20K Requests per second (RPS).
 
 If a Journey is triggered simultaneously to a profile creation and immediately checks/retrieves information from Profile Service, it might not work properly.
 
 You can choose from one of these two solutions:
 
-* Add a wait activity after the first event, to give Adobe Experience Platform the time it needs to perform the ingestion to Profile Service.
+* Add a wait activity after the first event, to give [!DNL Adobe Experience Platform] the time it needs to perform the ingestion to Profile Service.
 
 * Set up a journey that does not immediately leverage the profile. For example, if the journey is designed to confirm an account creation, the experience event could contain information needed to send the first confirmation message (first name, last name, email address, etc). 
 

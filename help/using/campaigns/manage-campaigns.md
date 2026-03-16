@@ -23,7 +23,23 @@ exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
 >title="Action"
 >abstract="This sections lists all the actions used inside the Orchestrated campaign."
 
-Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [types of campaigns](get-started-with-campaigns.md#get-started-campaigns). Available types depend on your license agreement and your permissions.
+Learn how to access, organize, and manage your campaigns in Adobe Journey Optimizer. This guide covers everything from finding campaigns to understanding statuses, performing common operations, and maintaining your campaign workspace.
+
+>[!BEGINSHADEBOX]
+
+**Jump directly to what you need:**
+
+* **Create a new campaign** - [Choose your campaign type](get-started-with-campaigns.md#campaign-types) | [Create Action campaign](create-campaign.md) | [Create API-triggered campaign](api-triggered-campaigns.md) | [Create Orchestrated campaign](../orchestrated/gs-orchestrated-campaigns.md)
+* **Find existing campaigns** - [Search and filter](#access)
+* **View campaign performance** - [Campaign reports](../reports/campaign-global-report-cja.md)
+* **Schedule campaigns** - [Use the calendar](#calendar)
+* **Manage conflicts** - [Conflict management guide](../conflict-prioritization/gs-conflict-prioritization.md)
+
+>[!ENDSHADEBOX]
+
+## Access and browse campaigns {#access}
+
+Campaigns are accessible from the **[!UICONTROL Campaigns]** menu. Use the tabs to browse campaigns by type: **Action** campaigns, **API-triggered** campaigns, and **Orchestrated** campaigns. Learn more about the [types of campaigns](get-started-with-campaigns.md#campaign-types). Available types depend on your license agreement and your permissions.
 
 >[!BEGINTABS]
 
@@ -47,77 +63,63 @@ By default, the list shows all campaigns with the **[!UICONTROL Draft]**, **[!UI
 
 Select the **[!UICONTROL Orchestration]** tab to access the list of Orchestrated campaigns.
 
-![image showing the Orchestrated campaigns inventory](assets/inventory.png){zoomable="yes"}{zoomable="yes"}
+![image showing the Orchestrated campaigns inventory](assets/inventory.png){zoomable="yes"}
 
-Each Orchestrated campaign in the list displays information such as the campaign's  current [status](#status), the associated channel and tags, or the last time it was modified. You can customize the displayed columns by clicking the ![Configure layout button](assets/do-not-localize/inventory-configure-layout.svg) button.
+Each Orchestrated campaign in the list displays information such as the campaign's current [status](#statuses), the associated channel and tags, or the last time it was modified. You can customize the displayed columns by clicking the ![Configure layout button](assets/do-not-localize/inventory-configure-layout.svg) button.
 
 >[!ENDTABS]
+
+### Search and filter campaigns {#search-filter}
 
 In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter campaigns to display only those associated to a given channel or tag, or those created during a specific date range.
 
-The ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button in the campaigns inventory allows you to perform various operations detailed below.
+## Campaign operations {#operations}
+
+The ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button in the campaigns inventory allows you to perform various operations.
 
 ![image showing the campaigns inventory](assets/inventory-actions.png)
 
-* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Access reports to measure and visualize the impact and performances of your campaigns. Learn more about [campaign reports](../reports/campaign-global-report-cja.md).
-* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign. Learn how to [use tags in your campaigns](../start/search-filter-categorize.md#add-tags)
-* **[!UICONTROL Duplicate]** - Use this option to duplicate a campaign, for example to execute an Orchestrated campaign that has been stopped. [Learn more](#duplicate-a-campaign)
-* **[!UICONTROL Delete]** - Use this option to delete a campaign. [Learn more](#delete-a-campaign)
-* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling schedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns. Learn more about [campaign archival](#archive-a-campaign).
+### Available actions
 
-For Action and API triggered campaigns, the additional actions below are available:
+**For all campaign types:**
 
-* **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. Learn how to [export objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
+* **[!UICONTROL View all time report]** / **[!UICONTROL View last 24 hours report]** - Access reports to measure and visualize the impact and performances of your campaigns. [Learn more about campaign reports →](../reports/campaign-global-report-cja.md)
+* **[!UICONTROL Edit tags]** - Edit the tags associated to the campaign. [Learn how to use tags →](../start/search-filter-categorize.md#add-tags)
+* **[!UICONTROL Duplicate]** - Use this option to duplicate a campaign, for example to execute an Orchestrated campaign that has been stopped. [Learn more about duplicating →](#duplicate-a-campaign)
+* **[!UICONTROL Delete]** - Use this option to delete a campaign. [Learn more about deleting →](#delete-a-campaign)
+* **[!UICONTROL Archive]** - Archive the campaign. All archived campaigns are deleted on a rolling schedule 30 days after their last modified date. This action is available for all campaigns except for **[!UICONTROL Draft]** campaigns. [Learn more about archiving →](#archive-a-campaign)
+
+**For Action and API triggered campaigns only:**
+
+* **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - If a new version of the campaign has been created and has not been activated yet, you can access its draft version using this action.
 
-## Campaign lifecycle {#statuses}
+**For Orchestrated campaigns only:**
 
-In Adobe Journey Optimizer, each campaign moves through a lifecycle that is reflected by its status in the interface. The available statuses vary depending on the type of campaign — Action, API triggered, or Orchestrated. Use the tabs below to explore the lifecycle and statuses specific to each campaign type.
+* **[!UICONTROL Back to draft]** - Unpublish and revert a campaign to draft status for error recovery. This action is available when a scheduled campaign has not yet started, or when a live campaign encounters an error before any executions are completed. [Learn more about reverting campaigns →](../orchestrated/start-monitor-campaigns.md#back-to-draft)
 
->[!BEGINTABS]
+## Understanding campaign status {#statuses}
 
->[!TAB Action campaigns]
+Each campaign moves through a lifecycle that is reflected by its status in the interface. Understanding these statuses helps you know what actions are available and what to do next.
 
-* **[!UICONTROL Draft]**: The campaign is being edited, it has not been activated.
-* **[!UICONTROL Scheduled]**: The campaign is configured to be activated on a specific start date.
-* **[!UICONTROL Live]**: The campaign has been activated.
-* **[!UICONTROL In review]**: The campaign has been submitted for approval in order to be published. [Learn how to work with approvals](../test-approve/gs-approval.md)
-* **[!UICONTROL Stopped]**: The campaign has been stopped manually. You cannot activate or reuse it anymore. [Learn how to stop a campaign](manage-campaigns.md#stop)
-* **[!UICONTROL Completed]**: The campaign is complete. This status is automatically assigned 3 days after a campaign has been activated, or at the campaign's end date if it has a recurring execution.
-* **[!UICONTROL Failed]**: The campaign execution has failed. Check the logs to identify the issue.
-* **[!UICONTROL Archived]**: The campaign has been archived. [Learn how to archive campaigns](manage-campaigns.md#archive)
-
->[!NOTE]
->
->The "Open draft version" icon next to a **[!UICONTROL Live]** or **[!UICONTROL Scheduled]** status indicates that a new version of an Action or API triggered campaign has been created and has not been activated yet.
-
->[!TAB API triggered campaigns]
-
-* **[!UICONTROL Draft]**: The campaign is being edited, it has not been activated.
-* **[!UICONTROL Scheduled]**: The campaign is configured to be activated on a specific start date.
-* **[!UICONTROL Live]**: The campaign has been activated.
-* **[!UICONTROL In review]**: The campaign has been submitted for approval in order to be published. [Learn how to work with approvals](../test-approve/gs-approval.md)
-* **[!UICONTROL Stopped]**: The campaign has been stopped manually. You cannot activate or reuse it anymore. [Learn how to stop a campaign](manage-campaigns.md#stop)
-* **[!UICONTROL Completed]**: The campaign is complete. This status is automatically assigned 3 days after a campaign has been activated, or at the campaign's end date if it has a recurring execution.
-* **[!UICONTROL Failed]**: The campaign execution has failed. Check the logs to identify the issue.
-* **[!UICONTROL Archived]**: The campaign has been archived. [Learn how to archive campaigns](manage-campaigns.md#archive)
+| Status | Action campaigns | API-triggered campaigns | Orchestrated campaigns | What it means | Next actions |
+|--------|:----------------:|:-----------------------:|:----------------------:|---------------|--------------|
+| **[!UICONTROL Draft]** | ✅ | ✅ | ✅ | Being edited, not activated | Continue editing or [activate campaign](review-activate-campaign.md) |
+| **[!UICONTROL Scheduled]** | ✅ | ✅ | ✅ | Configured for specific start date | Wait for launch, [modify if needed](#modify), or [view in calendar](#calendar) |
+| **[!UICONTROL Live]** | ✅ | ✅ | ✅ | Activated and running | [Monitor performance](../reports/campaign-global-report-cja.md), [create new version](#modify) if needed. For Orchestrated campaigns: [revert to draft](../orchestrated/start-monitor-campaigns.md#back-to-draft) for scheduled campaigns not yet started or campaigns with execution errors before any messages are sent |
+| **[!UICONTROL In review]** | ✅ | ✅ | — | Submitted for approval | Wait for [approval](../test-approve/gs-approval.md) or modify |
+| **[!UICONTROL Stopped]** | ✅ | ✅ | ✅ | Manually stopped, cannot reactivate | [Duplicate to reuse](#duplicate-a-campaign) |
+| **[!UICONTROL Completed]** | ✅ | ✅ | ✅ | Execution complete (auto-assigned 3 days after activation or at end date for recurring) | [View reports](../reports/campaign-global-report-cja.md), [archive](#archive-a-campaign), or [duplicate](#duplicate-a-campaign) |
+| **[!UICONTROL Failed]** | ✅ | ✅ | — | Execution failed | Check logs, fix issues, [duplicate to retry](#duplicate-a-campaign) |
+| **[!UICONTROL Archived]** | ✅ | ✅ | ✅ | Archived (auto-deleted after 30 days) | [Retrieve using filter](#access) if needed |
+| **[!UICONTROL Closed]** | — | — | ✅ | Recurring campaign closed, no new entries allowed (continues until all activities complete) | Wait for completion |
+| **[!UICONTROL Publishing]** | — | — | ✅ | Being published | Wait for publishing to complete |
 
 >[!NOTE]
 >
->The "Open draft version" icon next to a **[!UICONTROL Live]** or **[!UICONTROL Scheduled]** status indicates that a new version of an Action or API triggered campaign has been created and has not been activated yet.
+>For Action and API-triggered campaigns, the "Open draft version" icon next to a **[!UICONTROL Live]** or **[!UICONTROL Scheduled]** status indicates that a new version has been created and has not been activated yet.
 
->[!TAB Orchestrated campaigns]
-
-* **[!UICONTROL Draft]**: The Orchestrated campaign has been created. It has not been published yet.
-* **[!UICONTROL Publishing]**: The Orchestrated campaign is being published.
-* **[!UICONTROL Live]**: The Orchestrated campaign has been published and is being executed.
-* **[!UICONTROL Scheduled]**: The Orchestrated campaign execution has been scheduled.
-* **[!UICONTROL Completed]**: The Orchestrated campaign execution is complete. The Completed status is assigned automatically up to 3 days after a campaign has completed messages sending without error.
-* **[!UICONTROL Closed]**: This status displays when a recurring campaign has been closed. The campaign continues its execution until all its activities have been completed, but no more profiles can enter the campaign.
-* **[!UICONTROL Archived]**: The Orchestrated campaign has been archived. All archived campaigns are deleted on a rolling reschedule 30 days after last modified date. You may duplicate an archived campaign if necessary to continue working on it.
-* **[!UICONTROL Stopped]**: The Orchestrated campaign execution has been stopped. To start the campaign again, you need to duplicate it. 
-
->[!ENDTABS]
+### Error indicators
 
 When an error occurs within one of your campaigns, a warning icon appears alongside the campaign's status. Click on it to display information regarding the alert. These alerts may occur in various situations, such as when the campaign message has not been published or if the chosen configuration is incorrect.
 
@@ -136,6 +138,8 @@ When an error occurs within one of your campaigns, a warning icon appears alongs
 
 In addition to the campaigns list, [!DNL Journey Optimizer] provides a calendar view of your campaigns, offering a clear visual representation of their schedules.
 
+### How the calendar works
+
 How campaigns are represented:
 
 * By default, the calendar grid shows all live and scheduled campaigns for the selected week. Additional filter options can show completed, stopped and finished activations or activations of a certain type or channel.
@@ -144,7 +148,7 @@ How campaigns are represented:
 * If no start time is specified, the closest manual activation time is used to position it in the calendar.
 * Campaigns are displayed as 1-hour timespans, but this does not reflect actual send or completion time.
 
-To navigate in your Campaigns calendar:
+### Navigate the calendar
 
 1. Click the ![calendar](assets/do-not-localize/Smock_Calendar_18_N.svg) icon to access your Campaigns calendar.
 
@@ -184,7 +188,7 @@ To navigate in your Campaigns calendar:
 
 ## Modify and stop recurring Action campaigns {#modify}
 
-### Modify an Action campaign
+### Modify an Action campaign {#modify-an-action-campaign}
 
 To modify and create a new version of a recurring Action campaign, follow these steps:
 
@@ -204,6 +208,13 @@ To modify and create a new version of a recurring Action campaign, follow these 
     >
     >Activating the draft will replace the live version of the campaign.
 
+**Related topics:**
+* [Campaign properties](campaign-properties.md)
+* [Campaign actions](campaign-action.md)
+* [Campaign content](campaign-content.md)
+* [Campaign audience](campaign-audience.md)
+* [Campaign schedule](campaign-schedule.md)
+
 ### Stop an Action campaign {#stop}
 
 To stop a recurring campaign, open it then click the **[!UICONTROL Stop campaign]** button.
@@ -214,7 +225,7 @@ To stop a recurring campaign, open it then click the **[!UICONTROL Stop campaign
 >
 >Stopping a campaign will not stop an ongoing sending but it will stop a scheduled sending or the next occurrences if sending is already ongoing.
 
-## Archive a campaign {#archive}
+## Archive a campaign {#archive-a-campaign}
 
 With time, the list of campaigns keeps growing and eventually makes it more difficult to browse completed and stopped campaigns.
 
@@ -224,10 +235,9 @@ To prevent this, you can archive completed and stopped campaigns that you do not
 
 Archived campaigns can then be retrieved using the dedicated filter in the list.
 
+## Delete a campaign {#delete-a-campaign}
 
-## Delete a campaign {#delete}
-
-To delete a campaign, use the ellipsis  ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Delete]**.
+To delete a campaign, use the ellipsis ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Delete]**.
 
 ![](assets/delete-a-campaign.png){width="70%" align="left"}
  
@@ -235,11 +245,22 @@ To delete a campaign, use the ellipsis  ![image showing the More actions button]
 >
 >This option is available for **[!UICONTROL Draft]** campaigns only.
 
+## Duplicate a campaign {#duplicate-a-campaign}
 
-## Duplicate a campaign {#duplicate}
-
-To duplicate a campaign, for example if it has been stopped, use the ellipsis  ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Duplicate]**.
+To duplicate a campaign, for example if it has been stopped, use the ellipsis ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Duplicate]**.
  
 Enter the name of the campaign and confirm.
 
 The campaign is created and added to the campaign list.
+
+## Additional resources
+
+* **Getting started** - [Get started with campaigns](get-started-with-campaigns.md) | [Create your first Action campaign](create-campaign.md) | [API-triggered campaigns guide](api-triggered-campaigns.md) | [Orchestrated campaigns guide](../orchestrated/gs-orchestrated-campaigns.md)
+
+* **Campaign configuration** - [Campaign properties](campaign-properties.md) | [Campaign actions and channels](campaign-action.md) | [Campaign content design](campaign-content.md) | [Campaign audience selection](campaign-audience.md) | [Campaign scheduling](campaign-schedule.md)
+
+* **Advanced features** - [Approval workflows](../test-approve/gs-approval.md) | [Conflict management & prioritization](../conflict-prioritization/gs-conflict-prioritization.md) | [Frequency capping by channel](../conflict-prioritization/channel-capping.md) | [Priority scores](../conflict-prioritization/priority-scores.md) | [Export campaigns to other sandboxes](../configuration/copy-objects-to-sandbox.md)
+
+* **Monitoring & optimization** - [Campaign reports (CJA)](../reports/campaign-global-report-cja.md) | [Set up alerts](../reports/alerts.md)
+
+* **Organization** - [Work with tags](../start/search-filter-categorize.md) | [Manage permissions](../administration/ootb-product-profiles.md)

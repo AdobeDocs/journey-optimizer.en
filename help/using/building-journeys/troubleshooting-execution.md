@@ -25,7 +25,7 @@ The starting point of a journey is always an event. You can perform tests using 
 
 You can check if the API call you send through these tools is sent correctly or not. If you get an error back, it means that your call has an issue. Check the payload again, the header (and especially the organization ID) and the destination URL. You can ask your administrator what is the right URL to hit.
 
-Events are not pushed directly from the source to journeys. Indeed, journeys rely on Adobe Experience Platform's streaming ingestion APIs. As a result, in case of event related issues, you can refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} for Streaming ingestion APIs troubleshooting.
+Events are not pushed directly from the source to journeys. Indeed, journeys rely on [!DNL Adobe Experience Platform]'s streaming ingestion APIs. As a result, in case of event related issues, you can refer to [[!DNL Adobe Experience Platform] documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html){target="_blank"} for Streaming ingestion APIs troubleshooting.
 
 If your journey fails to enable test mode with error `ERR_MODEL_RULES_16`, ensure the event used includes an [identity namespace](../audience/get-started-identity.md) when using a channel action.
 
@@ -51,8 +51,18 @@ You can start troubleshooting with the questions below:
     Content-type - application/json
     ```
 
+* **Event condition and schema data types** - Ensure the data types used in your event condition (rule) match the event schema. Mismatched types (for example, string vs. integer) cause rule evaluation to fail and events to be dropped. See [Verify event identity](#verify-event-identity-and-rule-data-types).
+
+* **Event discarded – qualification condition not met** - For rule-based events, if the **qualification condition** is not satisfied by the event payload (for example, a required field is empty or missing, or a condition such as `isNotEmpty` on a field fails), the event is **received but discarded** and the journey is not triggered. Logs and Splunk traces can show that the event was received but discarded because it did not meet the qualification condition, with discard codes such as `notSuitableInitialEvent`. This is expected behavior: if the qualification condition is not met, the event will be discarded and the journey will not be triggered for that profile. Verify your event payload contains the expected fields and values, and that the rule in the event configuration matches the data you send. If the event is triggered by a **custom action** from another journey, see [Handling discard events and idle-timeouts](../action/troubleshoot-custom-action.md#handling-discard-events-and-idle-timeouts) in custom action troubleshooting.
+
 >
 >**For Audience Qualification journeys with streaming audiences**: If you're using an Audience Qualification activity as the journey entry point, be aware that not all profiles qualifying for the audience will necessarily enter the journey due to timing factors, quick exits from the audience, or if profiles were already in the audience before publishing. Learn more about [streaming audience qualification timing considerations](audience-qualification-events.md#streaming-entry-caveats).
+
+### Verify event identity {#verify-event-identity-and-rule-data-types}
+
+When configuring an event-based journey, confirm that the payload's identity field matches the [namespace selected in the event](../event/about-creating.md#select-the-namespace). If the event includes fields for profile matching, verify the **letter case** and **data type** in the event condition exactly match the inbound data. For example, if the event schema defines `roStatus` as a string, the journey rule must also evaluate it as a string. Mismatched data types (for example, string vs. integer) cause rule evaluation to fail and valid events to be dropped. Similarly, if the event has a **qualification condition** (for example, a field must be non-empty), events that do not satisfy that condition are **discarded** and do not trigger the journey; logs may show discard codes such as `notSuitableInitialEvent`.
+
+To validate your event condition in [!DNL Journey Optimizer], use the payload preview in the event configuration and ensure the types and values in the rule match the payload structure. Learn how to [preview the payload](../event/about-creating.md#preview-the-payload) and [configure rule-based events](../event/about-creating.md).
 
 ## Troubleshoot test mode transitions {#troubleshooting-test-transitions}
 
@@ -67,7 +77,7 @@ If test profiles enter the journey but do not advance past the initial step, che
     * Ensure the current time falls within the journey's active date window
     * If necessary, update the journey properties to adjust the start date
 
-* **Test profile configuration** - Confirm that the profile is correctly flagged as a test profile in Adobe Experience Platform. See [how to create test profiles](../audience/creating-test-profiles.md) for more information.
+* **Test profile configuration** - Confirm that the profile is correctly flagged as a test profile in [!DNL Adobe Experience Platform]. See [how to create test profiles](../audience/creating-test-profiles.md) for more information.
 
 * **Identity namespace** - Ensure the identity namespace used in the event configuration matches the namespace of your test profile.
 
@@ -83,7 +93,7 @@ If you encounter persistent transition issues:
 1. Verify the journey start date is current
 1. Deactivate and reactivate test mode
 1. If the issue persists, consider duplicating the affected journey nodes and reconnecting them
-1. For unresolved cases, contact support with journey logs, the impacted profile IDs, and details about the null transition
+1. For unresolved cases, [contact support](../start/user-interface.md#support-ticket-guidelines) with journey logs, the impacted profile IDs, and details about the null transition
 
 >[!NOTE]
 >
@@ -109,6 +119,8 @@ In case of a message sent via a custom action, the only thing that can be checke
 
 ## Understanding duplicate entries in Journey Step Events {#duplicate-step-events}
 
+Use this section to understand why duplicate rows can appear in Journey Step Events.
+
 ### Why do I see multiple entries with the same journey instance, profile, node, and request IDs?
 
 When querying Journey Step Events data, you may occasionally observe what appears to be duplicate log entries for the same journey execution. These entries share identical values for:
@@ -122,7 +134,7 @@ However, these entries have **different `_id` values**, which is the key indicat
 
 ### What causes this behavior?
 
-This occurs due to backend auto-scaling operations (also called "rebalancing") in Adobe Journey Optimizer's microservices architecture. During periods of high load or system optimization:
+This occurs due to backend auto-scaling operations (also called "rebalancing") in [!DNL Adobe Journey Optimizer]'s microservices architecture. During periods of high load or system optimization:
 
 1. A journey step event begins processing and is logged to the Journey Step Events dataset
 2. An auto-scaling operation redistributes workload across service instances
@@ -132,7 +144,7 @@ This is an expected system behavior and is **working as designed**.
 
 ### Is there any impact on journey execution or message delivery?
 
-**No.** The impact is limited to logging only. Adobe Journey Optimizer has built-in deduplication mechanisms at the message execution layer that ensure:
+**No.** The impact is limited to logging only. [!DNL Adobe Journey Optimizer] has built-in deduplication mechanisms at the message execution layer that ensure:
 
 * Only one message (email, SMS, push notification, etc.) is sent to each profile
 * Actions are executed only once
@@ -191,4 +203,10 @@ If the metrics displayed in the **Overview** dashboard do not match the actual n
 * Check that you have the appropriate access permissions to view all journeys in your organization.
 * Allow up to 30 minutes for metrics to refresh after making changes to your journeys.
 
-If discrepancies persist, contact Adobe Support with screenshots of both the Overview and Browse tabs for investigation.
+If discrepancies persist, [contact Adobe Support](../start/user-interface.md#support-ticket-guidelines) with screenshots of both the Overview and Browse tabs for investigation.
+
+## Tracking parameters showing empty placeholders in closed journeys {#tracking-parameters-closed-journeys}
+
+If tracking URLs in sent emails contain empty placeholders such as `cid=em-acou-adob{}`, this may indicate that a context field such as `context.system.source.actionId` could not be resolved. This typically happens when a journey was closed and has not been republished after a relevant product change — only republished journeys correctly populate these context fields in tracking URLs.
+
+To resolve this, either republish the journey ([create a new version and publish it](publish-journey.md#journey-create-new-version)), or remove the reference to the affected context field from the [URL tracking parameters](../email/url-tracking.md) in the channel configuration or email content.

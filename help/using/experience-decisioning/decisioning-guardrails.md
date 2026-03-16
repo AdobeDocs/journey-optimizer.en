@@ -21,19 +21,27 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | Code-based experience API request with decision policy not using Edge segmentation | 5000 |
 | Max number of Surface URIs per Edge decisioning request | 30 |
 
+## Decision items {#decision-items}
+
+| Guardrail | Limit |
+| ------- | ------- |
+| Total decision items | 10K |
+| Max size of items including attributes (1KB), max of 30 attributes | 1KB |
+| Frequency rules - Max number of capping rules per decision item | 10 |
+
 ## Item collections {#item-collections}
 
 | Guardrail | Limit |
 | ------- | ------- |
 | Items collections | 10K |
-| Total offer items per item collection | 500 |
+| Total decision items per collection | 500 |
 
 ## Decision policy {#decision-policy}
 
 | Guardrail | Limit |
 | ------- | ------- |
 | Number of selection strategies and manual items per decision policy | 10 |
-| Max offer items returned per decision policy | 30 |
+| Max decision items returned per decision policy | 30 |
 
 ## Eligibility rules {#eligibility-rules}
 
@@ -58,11 +66,9 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 
 | Guardrail | Limit |
 | ------- | ------- |
-| Number of custom attributes per Offers catalog schema | 100 |
-| Total Offer Items | 10K |
+| Number of custom attributes per items catalog schema | 100 |
 | Total Placements | 1K |
 | AI Ranking Model | 5 |
-| Frequency rules - Max number of capping rules per offer | 10 |
 
 ## Configurations {#configurations}
 

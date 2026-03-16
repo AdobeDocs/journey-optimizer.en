@@ -46,7 +46,7 @@ Once you have created an email, you can start designing your email content.
 
     * **Import existing HTML content** from a file or a .zip folder. Learn how to import an email content in [this section](existing-content.md).
 
-    * **Convert image designs to HTML templates** using the AI-powered image to HTML converter. Learn how to transform static images into editable email templates in [this section](image-to-html.md).
+    * **Convert image designs to HTML templates** using the AI-powered image to HTML converter. Learn how to transform static images into editable email templates in [this section](../content-management/image-to-html.md).
 
     * **Select an existing content** from a list of built-in or custom templates. Learn how to work with email templates in [this section](../email/use-email-templates.md).
 
@@ -55,6 +55,8 @@ Once you have created an email, you can start designing your email content.
 1. Once your email content has been defined and personalized, you can export your content for validation or for later use. Click **[!UICONTROL Export HTML]** to save on your computer a zip file which will include your HTML and assets.
 
    ![](assets/email_designer_export.png)
+
+1. You can also validate your content quality to identify potential issues with readability, content cohesiveness, and effectiveness. [Learn more about content quality validation](../content-management/brands-score.md#validate-quality)
 
 ## Email design best practices {#best-practices}
 

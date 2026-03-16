@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Create a collection qualifier
 description: Collection qualifiers allow you to better organize and sort through your offers.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -12,6 +13,11 @@ version: Journey Orchestration
 ---
 
 # Create a collection qualifier {#create-tag}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can create a collection qualifier (previously known as "tag") by making a POST request to the Offer Library API.
 

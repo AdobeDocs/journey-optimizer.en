@@ -4,6 +4,7 @@ product: journey optimizer
 title: Configure your Channel configuration
 description: Learn how to configure your Channel configuration
 version: Campaign Orchestration
+exl-id: 6793e9b8-06ca-403b-8cb0-3bcaef089837
 ---
 # Configure your Channel configuration {#channel-configuration}
 
@@ -60,3 +61,25 @@ To configure you channel configuration:
 1. Once configured, click **[!UICONTROL Submit]**.
 
 Your channel is now ready to use with **Orchestrated Campaigns**, and messages will be delivered according to the selected target dimension.
+
+## URL tracking parameters {#url-tracking}
+
+When configuring your channel configuration, you can define URL tracking parameters to monitor the performance of your email campaigns by appending metadata to your tracked links - for analytics and reporting purposes.
+
+To do this, contextual attributes specific to orchestrated campaigns are available using the `{{context.system.source.*}}` syntax:
+
+* **`context.system.source.id`**: Orchestrated campaign ID
+* **`context.system.source.name`**: Orchestrated campaign name
+* **`context.system.source.versionId`**: Orchestrated campaign version ID
+* **`context.system.source.actionId`**: Channel action node ID
+* **`context.system.source.actionName`**: Channel action node name
+* **`context.system.source.channel`**: Channel type (Email, SMS, Push)
+* **`context.system.IdentityNamespace`**: Identity namespace used
+
+For example:
+  
+```
+www.YourLandingURL.com?utm_source=AJO&utm_campaign={{context.system.source.id}}&utm_content={{context.system.source.actionName}}
+```
+
+Learn more about URL tracking parameters in [this section](../email/url-tracking.md).

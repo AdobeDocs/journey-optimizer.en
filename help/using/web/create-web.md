@@ -40,7 +40,13 @@ To add a **Web** activity to a journey, follow these steps:
 
 1. Start your journey with an [Event](../building-journeys/general-events.md) or a [Read Audience](../building-journeys/read-audience.md) activity.
 
-1. Drag and drop a **[!UICONTROL Web]** activity from the **[!UICONTROL Actions]** section of the palette.
+1. Drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+
+    >[!IMPORTANT]
+    >
+    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+
+1. Select **[!UICONTROL Web]** as the action type.
 
    ![](assets/web-activity-journey.png)
 
@@ -48,19 +54,21 @@ To add a **Web** activity to a journey, follow these steps:
     >
     >As **Web** is an inbound experience activity, it comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
 
-1. Enter a **[!UICONTROL Label]** and **[!UICONTROL Description]** for your message.
+1. Enter a **[!UICONTROL Label]** to identify your action in the journey canvas.
 
-1. Select or create the [Web configuration](web-configuration.md) to use.
+1. Click the **[!UICONTROL Configure action]** button.
+
+1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the [Web configuration](web-configuration.md) to use.
 
     ![](assets/web-activity-configuration.png)
 
+1. You can add one or more inbound actions to your web experience by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
+
+1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
+
 1. Select the **[!UICONTROL Edit content]** button and edit your content as desired. [Learn more](#edit-web-content)
 
-1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
-
-1. Once your web experience is ready, finalize the configuration and publish your journey to activate it. [Learn more](../building-journeys/publish-journey.md)
-
-For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
+For more information on how to create, configure and publish a journey, refer to [this page](../building-journeys/journey-gs.md).
 
 >[!TAB Create a web campaign]
 
@@ -225,13 +233,13 @@ Once you defined your web campaign settings and you edited your content as desir
     >
     >Learn more about activating campaigns in [this section](../campaigns/review-activate-campaign.md).
 
-Your web campaign takes the **[!UICONTROL Live]** status and is now visible to the selected audience. Each recipient of your campaign can see the modifications you added to your website.
+Your web campaign takes the **[!UICONTROL Live]** [status](../campaigns/manage-campaigns.md#statuses) and is now visible to the selected audience. Each recipient of your campaign can see the modifications you added to your website.
 
 >[!NOTE]
 >
 >After you click **[!UICONTROL Activate]**, it can take up to 15 minutes for web campaigns changes to be available live on your website.
 >
->If you defined a schedule for your web campaign, it has the **[!UICONTROL Scheduled]** status until the start date and time are reached.
+>If you defined a schedule for your web campaign, it has the **[!UICONTROL Scheduled]** [status](../campaigns/manage-campaigns.md#statuses) until the start date and time are reached.
 
 Once your experience is live, you can monitor your web journeys and campaigns. [Learn more](monitor-web-experiences.md)
 

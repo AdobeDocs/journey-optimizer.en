@@ -12,6 +12,8 @@ exl-id: 14f80d5d-0840-4b79-9922-6d557a7e1247
 ---
 # Use and assign sandboxes {#sandboxes}
 
+**Sandboxes** are virtual environments that partition your Adobe Journey Optimizer instance into separate, isolated workspaces—for development, testing, or production. You'll find sandbox management under **Administration** > **Channels** > **Connect your systems and environments** (or via the sandbox switcher in the top-right of the interface). Sandboxes help you experiment safely, assign different access per role, and keep content organized. This page covers how to use and assign sandboxes, configure content access, and—in the [Export objects to another sandbox](../configuration/copy-objects-to-sandbox.md) article—how to copy journeys and templates between sandboxes.
+
 ## Use sandboxes {#using-sandbox}
 
 [!DNL Journey Optimizer] allows you to partition your instance into separate virtual environments called sandboxes. Sandboxes are assigned through roles in Permissions. [Learn how to assign sandboxes](permissions.md#create-product-profile).

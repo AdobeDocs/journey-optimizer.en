@@ -8,11 +8,13 @@ role: User
 level: Intermediate
 exl-id: f8acb987-5c6e-4545-93b9-fdfc0d74db57
 ---
-# Troubleshooting articles {#ajo-troubleshooting}
+# Troubleshooting FAQ {#ajo-troubleshooting}
 
 The following is a list of troubleshooting articles for Adobe Journey Optimizer. Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
 
 See also the [Adobe Experience Platform FAQ and Troubleshooting documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/troubleshooting){target="_blank"}.
+
+When contacting Adobe support for unresolved issues, include environment details, impact level, replication steps, logs or screenshots, and relevant IDs. [Learn what to include in support tickets](user-interface.md#support-ticket-guidelines).
 
 ## Email channel {#ajo-troubleshooting-email}
 
@@ -224,13 +226,11 @@ See also the [Adobe Real-Time CDP Profile documentation](https://experienceleagu
 
 +++ Why has the Engageable Profiles count increased significantly in a short period? 
 
-The **Engageable Profiles** metric reflects the number of unique profiles engaged by journeys or campaigns over the past 12 months. A sudden increase may result from large audiences being targeted or changes in datasets. To manage this, review the **profile counting logic**, investigate journeys targeting large audiences, **filter audiences** at the journey level, reduce the **addressable audience size**, and monitor **dataset changes**.
+The **Engageable Profiles** metric reflects the number of unique profiles engaged by journeys or campaigns over the past 12 months. A sudden increase may result from journeys or campaigns targeting large audiences that haven't been engaged recently, or from changes in datasets enabled for Profile Service.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26161){target="_blank"} to learn steps to resolve this issue.
+To investigate and resolve this issue, you need to understand the profile counting logic, investigate journeys and campaigns targeting large audiences, filter audiences appropriately, monitor dataset changes, and potentially reduce your addressable audience size. 
 
-Monitor your organization's license usage and engageable profiles using the [License Usage Dashboard](../audience/license-usage.md)
-
-See also the [Adobe Experience Platform Query Service overview](https://experienceleague.adobe.com/en/docs/experience-platform/query/home){target="_blank"}.
+Learn how to troubleshoot and resolve Engageable Profiles increases and monitor your organization's license usage in the [License Usage Dashboard documentation](../audience/license-usage.md#troubleshooting-engageable-profiles).
 
 +++
 

@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Update decisions
 description: A decision contains the logic that informs the selection of an offer.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 98c5ccf9-2a7f-4129-a520-d0671a86e13d
 version: Journey Orchestration
 ---
 # Update a decision {#update-decision}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can modify or update a decision by making a PATCH request to the [!DNL Offer Library] API.
 

@@ -63,13 +63,13 @@ Your code-based journey takes the **[!UICONTROL Live]** status and is now visibl
     >
     >Learn more about activating campaigns in [this section](../campaigns/review-activate-campaign.md).
 
-Your code-based campaign takes the **[!UICONTROL Live]** status and is now visible to the selected audience. Each recipient of your campaign can see the modifications you added to your content.
+Your code-based campaign takes the **[!UICONTROL Live]** [status](../campaigns/manage-campaigns.md#statuses) and is now visible to the selected audience. Each recipient of your campaign can see the modifications you added to your content.
 
 >[!NOTE]
 >
 >After you click **[!UICONTROL Activate]**, it can take up to 15 minutes for your changes to be available live.
 >
->If you defined a schedule for your code-based campaign, it has the **[!UICONTROL Scheduled]** status until the start date and time are reached.
+>If you defined a schedule for your code-based campaign, it has the **[!UICONTROL Scheduled]** [status](../campaigns/manage-campaigns.md#statuses) until the start date and time are reached.
 
 ## Stop a code-based journey or campaign {#stop-code-based-experience}
 

@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Update personalized offers
 description: A personalized offer is a customizable marketing message based on eligibility rules and constraints.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 9d8f2df6-aa04-4e66-8555-d51c2e409063
 version: Journey Orchestration
 ---
 # Update a personalized offer {#update-personalized-offer}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 You can modify or update a personalized offer by making a PATCH request to the [!DNL Offer Library] API
 

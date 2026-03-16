@@ -16,9 +16,21 @@ Once you started creating your email content in [!DNL Journey Optimizer], you ca
 
 You can either apply your changes to the email body, to a structure component or to a content component.
 
-![](assets/email_designer_content_components_styles.png)
+Select any element in your email and click the **[!UICONTROL Styles]** tab. All the styling options for the selected element are displayed in the right pane.
 
-Follow the links below to discover how to adjust some of the style settings in your email.
+![](assets/email_designer_styles.png)
+
+For example, if you select a text component:
+
+* You can adjust the **[!UICONTROL Background color]** and **[!UICONTROL Font color]** of that paragraph;
+* You can update the **[!UICONTROL Text]** parameters such as font family, size, height, alignement, etc., and manage the spacing before the first character on a line by using the **[!UICONTROL Indentation]** setting;
+* You can also adjust options like the **[!UICONTROL Border]**, **[!UICONTROL Margin]** and **[!UICONTROL Padding]** of the text component.
+
+If you are using a default [content template](use-email-templates.md) or if you applied a theme to your email, you can only adjust a few style settings to match the selected theme. [Learn more on themes](apply-email-themes.md)
+
+![](assets/email_designer_styles_theme.png)
+
+Follow the links below to discover how to adjust some of the specific style settings in your email.
 
 * Learn how to [personalize your email background](backgrounds.md)
 * Learn how to [manage vertical alignment and padding](alignment-and-padding.md)

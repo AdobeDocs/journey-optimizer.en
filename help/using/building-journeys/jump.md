@@ -50,6 +50,8 @@ In journey B, the first event is triggered internally via the **[!UICONTROL Jump
 
 ## Best practices and limitations {#jump-limitations}
 
+Use these guidelines to keep Jump activity behavior predictable and safe.
+
 ### Authoring {#jump-limitations-authoring}
 
 * The **[!UICONTROL Jump]** activity is only available in journeys that use a namespace.

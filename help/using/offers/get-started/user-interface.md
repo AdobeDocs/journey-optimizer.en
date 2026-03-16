@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Offer Library User Interface {#user-interface}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 The **[!UICONTROL Decision management]** section in the left rail provides two menus that give you access to decision management capabilities: 
 
 Use the **[!UICONTROL Offers]** menu to manage and deliver your offers:

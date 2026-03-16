@@ -28,7 +28,7 @@ Once that the file content is ready to be sent, close the simulate screen then c
 >
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your Direct mail campaign. [Learn more](../test-approve/gs-approval.md)
 
-Before activating the direct mail campaign, make sure that the campaign and the extraction file are configured properly. To do this, check alerts in the upper section of the editor. Some of them are simple warnings, but others can prevent you from sending the message. Two types of alerts can happen: warnings and errors.
+Before activating the direct mail campaign, make sure that the campaign or journey and the extraction file are configured properly. To do this, check alerts in the upper section of the editor. Some of them are simple warnings, but others can prevent you from sending the message. Two types of alerts can happen: warnings and errors.
 
 * **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your SMS message is empty.
 
@@ -36,14 +36,15 @@ Before activating the direct mail campaign, make sure that the campaign and the 
 
 ![](assets/direct-mail-review.png){width="800" align="center"}
 
-When your direct mail campaign is ready, click the **[!UICONTROL Activate]** button. When the campaign starts, the extraction file is automatically generated and exported to the server specified in your [file routing configuration](../direct-mail/direct-mail-configuration.md).
+When your direct mail campaign is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
 
 >[!NOTE]
 >
 >The exported file by default ends with a newline. This ensures compatibility with standard data-processing tools.
 
-
-Once sent, you can measure the impact of your direct mail campaign within the Campaign reports. For more about direct mail reporting, refer to [this section](../reports/campaign-global-report-cja-direct.md).
+Once sent, you can measure the impact of your direct mail campaign or journey within the reports. For more about direct mail reporting, refer to these sections:
+* [Direct mail campaign report](../reports/campaign-global-report-cja-direct.md)
+* [Direct mail journey report](../reports/journey-global-report-cja-direct.md)
 
 ## Manage consent for direct mail {#dm-consent-management}
 

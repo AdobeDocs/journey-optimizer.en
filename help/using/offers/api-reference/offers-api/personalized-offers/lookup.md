@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Look up a personalized offer
 description: A personalized offer is a customizable marketing message based on eligibility rules and constraints.
 feature: Decision Management, API
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 2e30b155-688b-432b-a703-d09de12ebdfd
 version: Journey Orchestration
 ---
 # Look up a personalized offer {#look-up-personalized-offer}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 A personalized offer is a customizable marketing message based on eligibility rules and constraints.
 

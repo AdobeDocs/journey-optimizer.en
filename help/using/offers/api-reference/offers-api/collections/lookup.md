@@ -4,6 +4,7 @@ product: Journey Optimizer
 title: Look up a collection
 description: Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 feature: Decision Management, API, Collections
+badge: label="Legacy" type="Informative"
 topic: Integrations
 role: Developer
 level: Experienced
@@ -11,6 +12,11 @@ exl-id: 723daab2-5590-4c44-acb6-93a77f2e7877
 version: Journey Orchestration
 ---
 # Look up a collection {#look-up-collection}
+
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../../../experience-decisioning/gs-experience-decisioning.md)
+
 
 Collections are subsets of offers based on predefined conditions defined by a marketer, such as category of the offer.
 

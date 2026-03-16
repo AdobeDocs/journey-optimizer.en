@@ -9,6 +9,7 @@ role: Developer
 level: Intermediate
 keywords: expression, editor
 mini-toc-levels: 1
+badge: label="Limited Availability" type="Informative"
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 ---
 # Use Adobe Experience Platform data {#aep-data}
@@ -19,6 +20,10 @@ exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 >abstract="Enabling a dataset for lookup allows you to leverage its data within Journey Optimizer personalization, Decisioning and journey orchestration capabilities."
 
 [!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] data with personalization, Decisioning, and journey orchestration capabilities. To do this, record-based datasets needed for lookup personalization must first be enabled for the lookup service as described below.
+
+>[!NOTE]
+>
+>The data lookup capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
 
 Learn more on how to access and work with datasets in this section : [Get started with datasets](../data/get-started-datasets.md)
 
@@ -35,6 +40,8 @@ Before you begin, please review the following restrictions and guidelines:
 * **Schema type** – Datasets must be associated with a schema that is **NOT** of Profile or Event type.
 
 * **Keep the lookup toggle on** - Avoid repeatedly turning datasets on and off. Doing so can lead to unexpected indexing behavior. The best practice is to leave the dataset enabled for as long as you plan to use it for lookups.
+
+* **Edge activation region** - Datasets enabled for lookup are available for inbound edge-based activation only in the region where the dataset's sandbox resides (for example, NLD2 or VA7). You can see the sandbox region in the UI next to the sandbox name.
 
 * **Batch of data deletion** - Removing a batch of data from your dataset completely removes all matching keys from the lookup service. For example:
 

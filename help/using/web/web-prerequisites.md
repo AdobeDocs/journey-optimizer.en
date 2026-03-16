@@ -19,9 +19,11 @@ To be able to access and author web pages in the [!DNL Journey Optimizer] user i
 
 * To enable reporting for the web channel, you need to make sure the dataset used in your web implementation datastream is also included in your reporting configuration. [Learn more](#experiment-prerequisites)
 
->[!NOTE]
+>[!IMPORTANT]
 >
->When targeting pseudonymous profiles (unauthenticated visitors) with your web pages, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](../start/guardrails.md#profile-management-inbound)
+>* [!DNL Journey Optimizer] web campaigns target new profiles that have not been engaged before on other channels. This increases your total [Engageable Profiles](../audience/license-usage.md) count, which may have cost implications if the contractual number of Engageable Profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of Engageable Profiles in the [license usage dashboard](../audience/license-usage.md).
+>
+>* When targeting pseudonymous profiles (unauthenticated visitors) with your web pages, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](../start/guardrails.md#profile-management-inbound)
 
 ## Implementation prerequisites {#implementation-prerequisites}
 
@@ -134,17 +136,14 @@ In other words, when configuring reporting, if you add a dataset that is not pre
 
 Learn how to add datasets for reporting in [this section](../reports/reporting-configuration.md#add-datasets).
 
->[!NOTE]
->
->The dataset is used read-only by the [!DNL Journey Optimizer] reporting system and doesn't affect data collection or data ingestion.
-
 If you are **not** using the following pre-defined [field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} for your dataset schema: `AEP Web SDK ExperienceEvent` and `Consumer Experience Event` (as defined on [this page](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html#add-field-groups){target="_blank"}), make sure to add the following field groups: `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details`, and `Web Details`. These are needed by [!DNL Journey Optimizer] reporting as they are tracking which campaigns and journeys each profile is participating in.
 
 [Learn more about reporting configuration](../reports/reporting-configuration.md)
 
 >[!NOTE]
 >
->Adding these field groups doesn't impact the normal data collection. It is additive only for the pages where a campaign or journey is running, leaving all the other tracking untouched.
+>* The dataset is used read-only by the [!DNL Journey Optimizer] reporting system and doesn't affect data collection or data ingestion.
+>* Adding the required field groups is additive only — it applies to pages where a campaign or journey is running and leaves all other tracking untouched.
 
 ## Branded domains for assets {#branded-domains-for-assets}
 

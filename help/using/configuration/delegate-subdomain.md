@@ -120,6 +120,10 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
     Capital letters are not allowed in subdomains. TBC by PM
 -->
 
+    >[!NOTE]
+    >
+    >After creating a new subdomain with your DNS provider, allow 24-48 hours for DNS propagation before attempting delegation to Adobe.
+
 1. Set up **[!UICONTROL DMARC record]** in the dedicated section. If the subdomain has an existing [DMARC record](dmarc-record.md), and if it is fetched by [!DNL Journey Optimizer], you can use the same values or change them as needed. If you do not add any values, the default values will be used. [Learn how to manage DMARC record](dmarc-record.md#set-up-dmarc)
 
     ![](assets/dmarc-record-found.png)
@@ -190,11 +194,7 @@ To complete your subdomain delegation, follow the steps below.
 
     <!--![](assets/subdomain-processing.png)-->
 
-1. Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take up to 3 hours. [Learn more](#subdomain-validation).
-
-    >[!NOTE]
-    >
-    >Make sure that all the records are properly created before proceeding.
+1. Before being able to use that subdomain to send messages, make sure that all DNS records are properly created, then wait until Adobe performs the required checks, which can take up to 3 hours. [Learn more](#subdomain-validation).
 
 ### Subdomain validation {#subdomain-validation}
 

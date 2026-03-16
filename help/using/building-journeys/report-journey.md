@@ -48,7 +48,7 @@ For each activity within every journey in Live or [Dry run mode](journey-dry-run
 
 If you do not see expected data in your journey reports, consider the following:
 
-* **Journey name synchronization**: Verify that the journey name in Adobe Journey Optimizer matches the name stored in the reporting dataset. A mismatch between these names can prevent reporting data from appearing correctly.
+* **Journey name synchronization**: Verify that the journey name in [!DNL Adobe Journey Optimizer] matches the name stored in the reporting dataset. A mismatch between these names can prevent reporting data from appearing correctly.
 
 * **Data refresh timing**: After updating a journey name or configuration, allow sufficient time for the data to refresh. Reporting data typically appears within a few minutes, but in some cases may take longer.
 
@@ -56,7 +56,7 @@ If you do not see expected data in your journey reports, consider the following:
 
 * **Journey status**: Reporting data is only available for published journeys or journeys running in [Dry run mode](journey-dry-run.md). Draft journeys do not generate reporting data.
 
-If issues persist after verifying these items, contact your Adobe administrator or Adobe support for assistance.
+If issues persist after verifying these items, contact your Adobe administrator or [Adobe support](../start/user-interface.md#support-ticket-guidelines) for assistance.
 
 >[!MORELIKETHIS]
 >

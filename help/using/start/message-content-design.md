@@ -10,6 +10,7 @@ level: Beginner, Intermediate
 hide: yes
 hidefromtoc: yes
 keywords: content, design, email, push, sms, personalization, templates
+exl-id: a5700c92-1f6a-4c78-9c8e-81f8fd2fe8e3
 ---
 # Design message content{#section-overview}
 
@@ -97,4 +98,3 @@ Create reusable content with templates, save content blocks as visual and expres
 - **[Asset Management](../integrations/assets.md)** - Leverage Adobe Experience Manager Assets Essentials to enrich your messages, manage brand assets, and maintain a centralized content library.
 - **[Adobe Stock Integration](../integrations/stock.md)** - Access millions of royalty-free photos, videos, and illustrations directly within Journey Optimizer to enhance your content design.
 - **[Multilingual Content](../content-management/multilingual-gs.md)** - Create and manage multilingual campaigns and journeys to reach audiences in multiple languages with localized content variations.
-

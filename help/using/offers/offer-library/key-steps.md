@@ -13,6 +13,10 @@ version: Journey Orchestration
 ---
 # Key steps to create & manage offers {#key-steps-to-manage-offers}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
+
 The main steps to create, configure and manage offers, as well as use them in a decision, are presented below.
 
 ![](../assets/offer-create-manage-process.png)
@@ -67,7 +71,7 @@ Before starting to create offers, you must define several components that you wi
 
 ## Create and manage offers {#create-and-manage-offers}
 
-1. [Create offers](creating-personalized-offers.md), and configure their content and properties.
+1. [Create offers](creating-personalized-offers.md), and configure their content and properties. When you personalize offer content (representations), only certain functions are supported—see [Supported functions in the personalization editor](personalization-editor-supported-functions.md).
 
 1. [Create fallback offers](creating-fallback-offers.md), which are the last resort offers to display if customers are not eligible for any of the selected offers.
 

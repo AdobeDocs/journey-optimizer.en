@@ -18,6 +18,10 @@ The main steps to create landing pages are as follows:
 
 ![](assets/lp-creation-process.png)
 
+>[!NOTE]
+>
+>Before creating your first landing page, complete the [configure landing pages](../../rp_landing_pages/lp-configuration-landing-page.md) setup. This includes configuring a subdomain to host your landing pages and defining at least one preset that specifies the subdomain and other channel settings. You will need to select a preset when you create the landing page.
+
 ## Create a landing page {#create-landing-page}
 
 >[!CONTEXTUALHELP]
@@ -252,16 +256,12 @@ Two types of alerts can happen:
 
 >[!CAUTION]
 >
->To publish landing pages, users must have the **[!UICONTROL Publish Messages]** permission. 
-
+>* To publish landing pages, you must have the **[!UICONTROL Publish Messages]** permission.
+>* Before publishing, check and resolve all alerts. [Learn more](#check-alerts)
 
 Once your landing page is ready, you can publish it to make it available for use in a message.
 
 ![](assets/lp_publish.png)
-
->[!CAUTION]
->
->Before publishing, check and resolve alerts. [Learn more](#check-alerts)
 
 Once your landing page is published, it is added to the landing page list with the **[!UICONTROL Published]** status.
 

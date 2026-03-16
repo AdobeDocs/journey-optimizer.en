@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Create your first journey
-description: Key steps to build your first journey with Adobe Journey Optimizer
+description: Key steps to build your first journey with [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started
 topic: Content Management
 role: User
@@ -16,14 +16,14 @@ version: Journey Orchestration
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card2"
 >title="Create journeys"
->abstract="Use **Adobe Journey Optimizer** to build real-time orchestration use cases using contextual data stored in events or data sources."
+>abstract="Use **[!DNL Adobe Journey Optimizer]** to build real-time orchestration use cases using contextual data stored in events or data sources."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_create"
 >title="Journeys"
 >abstract="Design customer journeys to deliver personalized, contextual experiences. Journey Optimizer allows you to build real-time orchestration use cases with contextual data stored in events or data sources. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
 
-Adobe Journey Optimizer includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. The journey user interface is detailed on [this page](journey-ui.md).
+[!DNL Adobe Journey Optimizer] includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. The journey user interface is detailed on [this page](journey-ui.md).
 
 ![sample of journey canvas](assets/journey38.png)
 
@@ -50,7 +50,7 @@ Before starting to build your journey, ensure the relevant configuration steps a
 
 <!--   ![](assets/jo-datasource.png)  -->
 
-* Journey Optimizer comes with [built-in message](../building-journeys/journeys-message.md) capabilities. If you are using a third-party system to send your messages, you can **create a custom action**. Learn more in this [section](../action/action.md). 
+* Journey Optimizer comes with [built-in message](../building-journeys/journey-action.md) capabilities. If you are using a third-party system to send your messages, you can **create a custom action**. Learn more in this [section](../action/action.md). 
 
 <!--    ![](assets/custom2.png)  -->
 

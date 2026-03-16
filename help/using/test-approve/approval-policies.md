@@ -1,6 +1,6 @@
 ---
 title: Create & manage approval policies
-description: Learn how create and manage approval policies.
+description: Learn how to create and manage approval policies.
 role: User
 level: Beginner
 feature: Approval
@@ -33,6 +33,11 @@ You can target approval policies using flexible criteria such as tags, campaign/
 >title="New approval policy"
 >abstract="In this screen, enter the name and select the context for the approval policy, then build the conditions to determine who can initiate the approval request and who can validate it."
 
+>[!CONTEXTUALHELP]
+>id="ajo_approval_policy_self_approval"
+>title="Block Self-Approval"
+>abstract="Enable this option to prevent users from approving their own approval requests, even when they belong to a user group or role that has been designated as a reviewer."
+
 To create an approval policy, follow these steps:
 
 1. From the **[!UICONTROL Administration]** menu in [!DNL Journey Optimizer], access **[!UICONTROL Permissions]** then **[!UICONTROL Policies]**.
@@ -45,11 +50,9 @@ To create an approval policy, follow these steps:
 
 1. Select whether the policy will apply to **[!UICONTROL Journeys]** or **[!UICONTROL Campaigns]**.
 
-<!--
 1. Enable the **[!UICONTROL Block self-approval]** to prevent Journey/Campaign creators from approving their own objects.
 
-    ![](assets/policy_create_2.png)
--->
+    ![Approval policy details form](assets/policy_create_2.png)
 
 You can now refine the conditions to specify who can initiate the approval request and who can validate it.
 
@@ -60,10 +63,10 @@ Approval policies offer flexible targeting options to match your governance need
 * **Campaign/Journey names**: Target specific objects by name
 * **Tags**: Apply policies to all campaigns or journeys with a specific tag
 * **Channel types**: Require approval for specific actions (email, SMS, push, etc.)
-* **Campaign types**: Set different rules for scheduled vs. API triggered campaigns
+* **Campaign types**: Set different rules for [Action vs. API-triggered campaigns](../campaigns/get-started-with-campaigns.md#campaign-types)
 * **Requestors**: Define policies based on who creates the campaign or journey
 
-To define the conditions associated to an approval policy, follow these steps:
+To define the conditions associated with an approval policy, follow these steps:
 
 1. Access your **[!UICONTROL Approval policy]**.
 

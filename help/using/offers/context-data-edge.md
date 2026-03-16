@@ -12,6 +12,10 @@ version: Journey Orchestration
 ---
 # Context data & Edge Decisioning requests {#edge}
 
+>[!TIP]
+>
+>Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../experience-decisioning/gs-experience-decisioning.md)
+
 This section guides you through passing context data in Edge Decisioning requests and using them in eligibility rules. We will explore an end-to-end use case that demonstrates how to deliver personalized offers based on the type of device customers are using. 
 
 This use case involves several key steps:
@@ -29,6 +33,7 @@ To go further, you can also leverage context data into **ranking formulas**, or 
 
 * [Ranking formulas - Boost offers based on context data](../offers/ranking/create-ranking-formulas.md#context-data)
 * [Personalize representations based on context data](../offers/offer-library/add-representations.md#context-data)
+* [Supported functions in the personalization editor](offer-library/personalization-editor-supported-functions.md) (when personalizing offer content in Decision management)
 
 >[!ENDSHADEBOX]
 
