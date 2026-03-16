@@ -68,17 +68,13 @@ Select the **[!UICONTROL Custom distribution]** option to define the size of eac
 
 ![](assets/campaign-wave-percentage.png){width="80%"}
 
->[!NOTE]
->
->The total across all waves must equal 100%. If this is not the case, a warning message is displayed.<!--are the waves actually sent or does the system prevent user from saving the campaign?-->
-
 Select **[!UICONTROL Numbers]** to define the size of each wave as an absolute number of profiles (for example, 10,000; 50,000).
 
 ![](assets/campaign-wave-numbers.png){width="80%"}
 
 >[!NOTE]
->
->When using numbers, the system does not validate that the sum covers the entire audience—you must ensure that your wave sizes cover the audience you intend to send to. Learn more in the [Frequently asked questions](#faq).
+>* When using percentages, all waves must total 100%. A warning is displayed if this is not the case.
+>* When using numbers, the system does not validate coverage — ensure your wave sizes cover the intended audience. [Learn more](#faq)
 
 ### Custom schedule {#custom-schedule}
 
