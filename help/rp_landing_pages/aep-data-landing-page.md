@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Use Adobe Experience Platform data
-description: Use Adobe Experience Platform data
+description: Learn to leverage Adobe Experience Platform context data and datasets in Journey Optimizer Decisioning to build smarter, personalized decision rules.
 redpen-status: CREATED_||_2025-08-11_20-56-30
 exl-id: 54df881d-f204-4979-89ce-45de2eb7b822
 ---
