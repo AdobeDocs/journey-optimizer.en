@@ -48,3 +48,9 @@ Complete the steps below to configure and implement Live activity in your applic
 1. **[Track your campaigns](../reports/campaign-global-report-cja-activity.md)**
 
     Start measuring the impact of your Live activity with built-in reports.
+
+## How-to video
+
+Discover how to configure iOS Live Activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479864/?learn=on)
