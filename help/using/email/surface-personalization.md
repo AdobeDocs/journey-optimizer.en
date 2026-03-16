@@ -86,15 +86,12 @@ You can also use personalization for all the header parameters defined in a conf
 
 >[!NOTE]
 >
->When [editing an email configuration](../configuration/channel-surfaces.md#edit-channel-surface), you cannot add new [profile attributes](../personalization/personalization-build-expressions.md#sources) to header parameters. You must create a new channel configuration.
+>* All **[!UICONTROL Header parameters]** fields can be personalized, except the **[!UICONTROL Error email prefix]** field.
+>* When [editing an email configuration](../configuration/channel-surfaces.md#edit-channel-surface), you cannot add new [profile attributes](../personalization/personalization-build-expressions.md#sources) to header parameters — you must create a new channel configuration instead.
 
 For example, if you have multiple brands, you can create a single configuration and use personalized values for your email headers. This allows you to make sure that all emails sent from your different brands are addressed to each of your customers with the correct **From** names and emails. Similarly, when your recipients hit the **Reply** button in their email client software, you want the **Reply to** names and emails correspond to the correct brand for the right user.
 
 To use personalized variables for your configuration header parameters, follow the steps below.
-
->[!NOTE]
->
->You can personalize all **[!UICONTROL Header parameters]** fields, except the **[!UICONTROL Error email prefix]** field.
 
 1. Define your header parameters as you would usually do. [Learn how](email-settings.md#email-header)
 

@@ -147,17 +147,14 @@ Once this option is enabled, although a customer marked your marketing email as 
 
 A seed list in [!DNL Journey Optimizer] enables you to automatically include specific email seed addresses in your deliveries. [Learn more](../configuration/seed-lists.md)
 
->[!CAUTION]
+>[!NOTE]
 >
->Currently this feature only applies to the email channel.
+>* This feature currently applies to the email channel only.
+>* Only one seed list can be selected at a time.
 
 Select the list that is relevant to you in the **[!UICONTROL Seed list]** section. Learn how to create a seed list in [this section](../configuration/seed-lists.md#create-seed-list).
 
 ![](../configuration/assets/seed-list-surface.png){width="80%"}
-
->[!NOTE]
->
->Only one seed list can be selected at a time.
 
 When the current configuration is used in a campaign or journey, the email addresses on the selected seed list are included at the delivery execution time, meaning they will receive a copy of the delivery for assurance purposes.
 

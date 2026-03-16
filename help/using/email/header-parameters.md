@@ -80,12 +80,9 @@ You need to provide:
 
 >[!NOTE]
 >
->There can be only one forward email address per subdomain. Consequently, if multiple configurations use the same subdomain, the same forward email address must be used for all of them.
+>* There can be only one forward email address per subdomain — if multiple configurations use the same subdomain, the same forward email address must be used for all of them.
+>* If forwarding is not enabled, emails sent directly to the **From email** address are discarded by default.
 
 The forward email address is set up by Adobe. This can take 3 to 4 days.
 
 Once done, all messages received on the **[!UICONTROL Reply to email]** and **Error email** adresses, as well as all emails sent to the **From email** address, are forwarded to the specific email address you provided.
-
->[!NOTE]
->
->By default, if forwarding is not enabled, emails sent directly to the **From email** address are discarded.
