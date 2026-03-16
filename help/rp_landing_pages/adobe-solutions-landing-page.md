@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Send with Adobe solutions
-description: Send with Adobe solutions
+description: Learn to send messages through Adobe Campaign Standard, Campaign v7/v8, and Marketo Engage from Journey Optimizer journeys using custom actions.
 redpen-status: CREATED_||_2025-08-11_21-17-09
 exl-id: a8d34150-32f1-4c58-8728-ba73b7e90ec4
 ---
@@ -20,7 +20,7 @@ Integrate Adobe Journey Optimizer with Adobe Campaign Standard
 
 Learn how to integrate Adobe Journey Optimizer with Adobe Campaign Standard to enable transactional messaging capabilities like Email, Push, and SMS.
 
-[Read the tutorial](../using/action/acs-action.md)
+[Integrate with Campaign Standard](../using/action/acs-action.md)
 :::
 
 :::
@@ -30,7 +30,7 @@ Integrate Adobe Journey Optimizer with Adobe Campaign v7/v8
 
 Discover how to connect Adobe Journey Optimizer with Adobe Campaign v7/v8 for transactional messaging through emails, SMS, and push notifications.
 
-[Read the tutorial](../using/action/acc-action.md)
+[Integrate with Campaign v7/v8](../using/action/acc-action.md)
 :::
 
 :::
@@ -40,7 +40,7 @@ Integrate Adobe Journey Optimizer with Marketo Engage
 
 Set up a custom Marketo Engage action to synchronize data and personalize marketing within Adobe Journey Optimizer.
 
-[Read the tutorial](../using/action/marketo-engage.md)
+[Integrate with Marketo Engage](../using/action/marketo-engage.md)
 :::
 
 ::::
