@@ -5,3 +5,4 @@ help/using/.DS_Store
 .cursor/mcp.json
 usage-agents.log
 # .cursor-agents is a submodule - do not ignore so git can track it
+.cursor-agents
