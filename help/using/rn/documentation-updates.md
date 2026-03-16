@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## March 2026 {#march-2026}
 
+* The **Adobe Experience Platform data source** documentation has been updated with a note that only XDM Individual Profile-based schemas are supported in the Data Source configuration. [Read more](../datasource/adobe-experience-platform-data-source.md)
+
 * The **Datasets Time-to-live (TTL) guardrails** documentation has been enhanced with a new FAQ entry to clearly identify which datasets are subject to TTL. TTL applies exclusively to time-series datasets — record-type datasets such as entity datasets, classification datasets, and decision object repositories are not subject to TTL and will not be impacted by the guardrail rollout. [Read more](../data/datasets-ttl.md)
 
 ## February 2026 {#february-2026}

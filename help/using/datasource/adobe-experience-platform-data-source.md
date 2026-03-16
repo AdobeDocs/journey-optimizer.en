@@ -23,11 +23,9 @@ To allow the connection to the Real-time Customer Profile Service, we must use a
 
 You can edit the pre-configured field group named "ProfileFieldGroup", add new ones and remove the ones that are not used in any draft or live journeys. [Learn more](../datasource/configure-data-sources.md#define-field-groups).
 
-
 >[!CAUTION]
 >
 >Using experience events in journey expressions/conditions is not supported. If your use case requires the use of experience events, consider alternative methods. [Learn more](../building-journeys/exp-event-lookup.md)
-
 
 Main steps to add field groups to the built-in data source are detailed below:
 
@@ -42,8 +40,12 @@ Main steps to add field groups to the built-in data source are detailed below:
     ![](assets/journey24.png)
 
 1. Select a schema from the **[!UICONTROL Schema]** drop-down. Schema creation is performed in Adobe Experience Platform, not performed in Adobe Journey Optimizer.
-1. Select the fields to use, and save your changes.
 
+    >[!NOTE]
+    >
+    >Only XDM Individual Profile-based schemas are supported in the [!DNL Journey Optimizer] Data Source configuration. For more information, see [XDM Individual Profile class](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/individual-profile){target="_blank"}.
+
+1. Select the fields to use, and save your changes.
 
 >[!TIP]
 >
