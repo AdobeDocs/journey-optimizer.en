@@ -56,7 +56,27 @@ The fragment ID and reference key will be selected from the decision item's **[!
 
 >[!WARNING]
 >
->If the fragment key is incorrect or if the fragment content is not valid, rendering will fail causing error in the Edge call.
+>If the fragment key is incorrect or if the fragment content is not valid, rendering may fail and cause an error in the Edge call.
+>
+>To avoid failures when a fragment is temporarily unavailable, set `required=false` so the fragment is skipped instead. [Learn more](#optional-fragments).
+
+## Make a fragment optional {#optional-fragments}
+
+When campaigns reference fragments attached to decision items, there can be short synchronization delays before updated fragments are available on Edge. You can control whether a missing fragment causes the campaign to fail or to continue rendering.
+
+In the [personalization editor](../personalization/personalize.md), use the `required` flag on the fragment:
+
+* **`required=false`** (optional fragment): If the fragment is available, it renders normally. If it is temporarily unavailable on Edge, it is skipped, the campaign continues rendering other content, and no rendering error is returned.
+* **`required=true`** or omitted (default): The fragment is treated as mandatory. A missing or invalid fragment may cause campaign rendering to fail.
+
+**Example:**
+
+```
+{% let fragmentId = get(item._experience.decisioning.offeritem.contentReferencesMap, "placement1").id %}
+{fragment id = fragmentId required=false}
+```
+
+If your decision policy qualifies two offers and each has a fragment—for example, "20% off" and "30% off"—and one fragment is temporarily unavailable, with `required=false` the system renders the available offer and skips the other fragment instead of failing the campaign. This improves reliability when content is still synchronizing.
 
 ## Guardrails when using fragments {#fragments-guardrails}
 
