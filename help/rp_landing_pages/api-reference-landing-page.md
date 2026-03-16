@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: API Reference
-description: API Reference
+description: Learn to use the Offer Library API and delivery APIs to integrate Decision Management into your workflows and deliver personalized offers at scale.
 redpen-status: CREATED_||_2025-08-11_21-04-46
 badge: label="Legacy" type="Informative"
 exl-id: 0b5e61d7-14a1-446e-8cb0-8861295d6e94
@@ -35,7 +35,17 @@ Deliver Offers Using Adobe Journey Optimizer APIs
 
 Explore comprehensive resources on implementing Decisioning, Edge Decisioning, and Batch Decisioning APIs to deliver personalized offers.
 
-[Explore the section](offer-delivery-api-landing-page.md)
+[Explore delivery APIs](offer-delivery-api-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Create and Manage Offers Using APIs
+
+Access API references for managing placements, decision rules, collection qualifiers, personalized offers, collections, fallback offers, and decisions.
+
+[Browse the Offer Library API](../using/offers/api-reference/getting-started.md)
 :::
 
 ::::
