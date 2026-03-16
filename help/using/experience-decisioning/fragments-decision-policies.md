@@ -62,12 +62,12 @@ The fragment ID and reference key will be selected from the decision item's **[!
 
 ## Make a fragment optional {#optional-fragments}
 
-When campaigns reference fragments attached to decision items, there can be short synchronization delays before updated fragments are available on Edge. You can control whether a missing fragment causes the campaign to fail or to continue rendering.
+When journeys or campaigns reference fragments attached to decision items, there can be short synchronization delays before updated fragments are available on Edge. You can control whether a missing fragment causes the journey or campaign to fail or to continue rendering.
 
 In the [personalization editor](../personalization/personalize.md), use the `required` flag on the fragment:
 
-* **`required=false`** (optional fragment): If the fragment is available, it renders normally. If it is temporarily unavailable on Edge, it is skipped, the campaign continues rendering other content, and no rendering error is returned.
-* **`required=true`** or omitted (default): The fragment is treated as mandatory. A missing or invalid fragment may cause campaign rendering to fail.
+* **`required=false`** (optional fragment): If the fragment is available, it renders normally. If it is temporarily unavailable on Edge, it is skipped, the journey or campaign continues rendering other content, and no rendering error is returned.
+* **`required=true`** or omitted (default): The fragment is treated as mandatory. A missing or invalid fragment may cause journey or campaign rendering to fail.
 
 **Example:**
 
@@ -76,7 +76,7 @@ In the [personalization editor](../personalization/personalize.md), use the `req
 {fragment id = fragmentId required=false}
 ```
 
-If your decision policy qualifies two offers and each has a fragment—for example, "20% off" and "30% off"—and one fragment is temporarily unavailable, with `required=false` the system renders the available offer and skips the other fragment instead of failing the campaign. This improves reliability when content is still synchronizing.
+If your decision policy qualifies two offers and each has a fragment—for example, "20% off" and "30% off"—and one fragment is temporarily unavailable, with `required=false` the system renders the available offer and skips the other fragment instead of failing the journey or campaign. This improves reliability when content is still synchronizing.
 
 ## Guardrails when using fragments {#fragments-guardrails}
 
