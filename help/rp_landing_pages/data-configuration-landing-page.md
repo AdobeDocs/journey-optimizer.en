@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Data configuration
-description: Data configuration
+description: Learn to configure relational schemas, datasets, targeting dimensions, and channel settings to power orchestrated campaigns in Journey Optimizer.
 redpen-status: CREATED_||_2025-08-11_20-24-01
 exl-id: e1c20d14-4d0e-4ef9-9745-ca8ffe706f0b
 ---
@@ -31,6 +31,16 @@ How to Configure a Targeting Dimension
 Step-by-step guide to map relational schemas to customer profiles and configure channels for targeted communication in orchestrated campaigns.
 
 [Learn to Configure Targeting Dimensions](../using/orchestrated/target-dimension.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+Configure a Channel Configuration
+
+Learn how to set up and configure channel configurations for use in orchestrated campaigns, including email and other supported channels.
+
+[Configure a channel](../using/orchestrated/channel-config.md)
 :::
 
 ::::
