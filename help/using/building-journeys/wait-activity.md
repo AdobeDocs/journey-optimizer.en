@@ -82,21 +82,15 @@ The expression in the editor should provide a `dateTimeOnly` format. Refer to [t
 Best practice is to use custom dates that are specific to your profiles, and avoid using the same date for all. For example, do not define `toDateTimeOnly('2024-01-01T01:11:00Z')` but rather `toDateTimeOnly(@event{Event.productDeliveryDate})` which is specific to each profile. Be aware that using fixed dates can cause issues on your journey execution. Learn more about the impact of Wait activities on journey processing rate in [this section](entry-management.md#wait-activities-impact). 
 
 
->[!NOTE]
->
->You can leverage a `dateTimeOnly` expression or use a function to convert to a `dateTimeOnly`. For example: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, the field in the event being of the form 2023-08-12T09:46:06Z.
->
->The **time zone** is expected in the properties of your journey. As a result, from the user interface, it is not possible to directly point at a full ISO-8601 timestamp mixing time and time zone offset like 2023-08-12T09:46:06.982-05. [Learn more](../building-journeys/timezone-management.md).
-
 >[!CAUTION]
 >
->When creating a custom wait expression with `toDateTimeOnly()`, avoid appending 'Z' or any time zone offset (e.g., '-05:00') in the expression result. The expression must use valid ISO date/time syntax that references the journey's configured time zone without explicit time zone designators.
+>You can leverage a `dateTimeOnly` expression or use a function to convert to a `dateTimeOnly`. For example: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, the field in the event being of the form 2023-08-12T09:46:06Z. The **time zone** is expected in the properties of your journey, so it is not possible from the UI to directly point at a full ISO-8601 timestamp mixing time and time zone offset like 2023-08-12T09:46:06.982-05. [Learn more](../building-journeys/timezone-management.md).
+>
+>When creating a custom wait expression with `toDateTimeOnly()`, avoid appending 'Z' or any time zone offset (e.g., '-05:00') in the result. The expression must use valid ISO date/time syntax referencing the journey's configured time zone without explicit time zone designators — otherwise, profiles may remain stuck in the wait activity.
 >
 >**Correct example:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))`
 >
 >**Incorrect example:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (contains 'Z')
->
->Using unsupported time zone designators can cause profiles to remain stuck in the wait activity instead of advancing as expected.
 
 To validate that the wait activity works as expected, you can use step events. [Learn more](../reports/query-examples.md#common-queries).
 
