@@ -228,17 +228,14 @@ With this function, you can append contextual information to any native action f
 
 >[!NOTE]
 >
->The Execution Metadata function is not supported by [custom actions](../../action/action.md).
+>* The Execution Metadata function is not supported by [custom actions](../../action/action.md).
+>* The Execution Metadata function is not visible when the content itself is displayed.
 
 For instance, you can use the Execution Metadata helper to append a specific ID to each delivery sent to each profile. This information is generated during runtime and the enriched execution metadata can then be exported for downstream reconciliation with an external reporting platform.
 
 **How it works**
 
-Select any element from your channel content inside a campaign or a journey and, using the personalization editor, add the `executionMetadata` helper to this element. 
-
->[!NOTE]
->
->The Execution Metadata function is not visible when the content itself is displayed.
+Select any element from your channel content inside a campaign or a journey and, using the personalization editor, add the `executionMetadata` helper to this element.
 
 
 Upon runtime, the metadata value is added to the existing **[!UICONTROL Message Feedback Event Dataset]** with the following schema addition:
