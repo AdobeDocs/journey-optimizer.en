@@ -171,19 +171,13 @@ To edit a channel configuration, follow the steps below.
 
     >[!NOTE]
     >
-    >If a channel configuration has the **[!UICONTROL Active]** status, the **[!UICONTROL Name]**, **[!UICONTROL Select channel]** and **[!UICONTROL Subdomain]** fields are greyed out and cannot be edited.
+    >* When the configuration has **[!UICONTROL Active]** status, the **[!UICONTROL Name]**, **[!UICONTROL Select channel]** and **[!UICONTROL Subdomain]** fields are read-only and cannot be modified.
+    >* You can save your changes as a draft at any time and resume the update later.
+    >* Edits limited to the **[!UICONTROL Description]**, **[!UICONTROL Email type]** and/or **[!UICONTROL Email retry parameters]** fields take effect instantly, with no processing delay.
 
 1. Click **[!UICONTROL Submit]** to confirm your changes.
 
-    >[!NOTE]
-    >
-    >You can also save the channel configuration as draft and resume update later on.
-
 Once the changes are submitted, the channel configuration will go through a validation cycle similar to the one in place when [creating a channel configuration](#create-channel-surface). The edition processing time can take up to **3 hours**.
-
->[!NOTE]
->
->If you only edit the **[!UICONTROL Description]**, **[!UICONTROL Email type]** and/or **[!UICONTROL Email retry parameters]** fields, the update is instantaneous.
 
 ### Update details {#update-details}
 

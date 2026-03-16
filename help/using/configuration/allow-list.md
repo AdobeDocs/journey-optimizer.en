@@ -57,13 +57,10 @@ To activate the allowed list, follow the steps below.
 
     >[!NOTE]
     >
-    >After you activate the allowed list, there is a 10-minute delay before it takes effect in your journeys and campaigns. Similarly, updates to both the allowed list and suppression list can take up to 10 minutes to reflect.
+    >* After activation, there is a 10-minute delay before the allowed list takes effect in journeys and campaigns. Updates to both the allowed list and suppression list can also take up to 10 minutes to reflect.
+    >* When active, the allowed list is enforced not only in live journeys, but also when testing messages with [proofs](../content-management/proofs.md) and journeys in [test mode](../building-journeys/testing-the-journey.md).
 
 The allowed list logic applies when the feature is active. Learn more in [this section](#logic).
-
->[!NOTE]
->
->When activated, the allowed list feature is honored when executing journeys, but also when testing messages with [proofs](../content-management/proofs.md) and testing journeys using the [test mode](../building-journeys/testing-the-journey.md).
 
 ## Deactivate the allowed list {#deactivate-allow-list}
 

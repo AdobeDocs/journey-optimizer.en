@@ -39,13 +39,8 @@ To enable the **[!UICONTROL BCC email]** option, enter the email address of your
 
 >[!CAUTION]
 >
->You can only define one BCC email address. Make sure the BCC address has enough reception capacity to store all the emails that are sent using the current channel configuration.
->
->More recommendations are listed in [this section](#bcc-recommendations-limitations).
-
->[!NOTE]
->
->If you have purchased the Healthcare Shield add-on offering, you must ensure that your BCC addresse's ISP supports the TLS 1.2 protocol.
+>* You can only define one BCC email address. Make sure it has enough reception capacity to store all emails sent using the current channel configuration. More recommendations are listed in [this section](#bcc-recommendations-limitations).
+>* If you have purchased the Healthcare Shield add-on offering, ensure that your BCC address's ISP supports the TLS 1.2 protocol.
 
 ![](assets/preset-bcc.png)
 

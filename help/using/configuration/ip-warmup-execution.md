@@ -44,37 +44,25 @@ To define the phases of your IP warmup plan, you need to select a campaign for e
 
 1. Select the campaign you want to associate with the first phase of the IP warmup plan.
 
-    >[!NOTE]
-    >
-    >You cannot select a campaign that is already in use in another IP warmup plan. However, the same campaign can be used in one or more phases of the same IP warmup plan.
-
     ![](assets/ip-warmup-plan-select-campaign.png)
 
     >[!IMPORTANT]
     >
-    >* Only the campaigns with the **[!UICONTROL IP warmup plan activation]** option enabled are available for selection. [Learn more](#create-ip-warmup-campaign)
-    >
+    >* Only campaigns with the **[!UICONTROL IP warmup plan activation]** option enabled are available for selection. [Learn more](#create-ip-warmup-campaign)
     >* Only campaigns that use the same configuration as the selected IP warmup plan are available for selection.
+    >* A campaign already in use in another IP warmup plan cannot be selected. The same campaign can be used in multiple phases of the same plan.
 
-1. Once a campaign is selected for the current phase, the sections to exclude profiles, campaign audiences and domain groups are displayed.
-
-    >[!NOTE]
-    >
-    >Once a run is activated, exclusions cannot be modified anymore unless you [split the run](#split-phase) to a new phase.
+1. Once a campaign is selected for the current phase, the sections to exclude profiles, campaign audiences and domain groups are displayed. Note that once a run is activated, exclusions cannot be modified anymore unless you [split the run](#split-phase) to a new phase.
 
     1. From the **[!UICONTROL Domain groups excluded]** section, select the domains you want to exclude from that phase.
 
         >[!NOTE]
         >
-        >Domain exclusion requires an unexecuted phase, so you might need [split a running phase](#split-phase) to add exclusions.
+        >Domain exclusion requires an unexecuted phase, so you might need to [split a running phase](#split-phase) to add exclusions. Also, you can only exclude a custom domain group that was added to the [IP warmup plan template](ip-warmup-plan.md#prepare-file) — if not, update the template with the custom domain group and [re-upload the plan](#re-upload-plan).
 
         ![](assets/ip-warmup-plan-exclude-domains.png)
 
         For example, after running IP warmup for some days, you realize that your ISP reputation with a domain (for example, Adobe) is not good and you wish to resolve it without stopping your IP warmup plan. In such a case, you can exclude the Adobe domain group.
-
-        >[!NOTE]
-        >
-        >You can only exclude a custom domain group that was added to the [IP warmup plan template](ip-warmup-plan.md#prepare-file). If this is not the case, update the template with the custom domain group you want to exclude and [re-upload the plan](#re-upload-plan).
 
         >[!CAUTION]
         >
@@ -97,11 +85,7 @@ To define the phases of your IP warmup plan, you need to select a campaign for e
         1. From the **Schemas** menu, select the **AJO Message Feedback Event Schema**, and navigate to the **_messageID** field. Select **Add relationship** and choose **AJO Entity Record Schema** as the **Reference schema** and your previously created namespace as the **Reference Identity namespace**.
         +++
 
-    1. In the **[!UICONTROL Profiles targeted in previous runs]** section, you can see that the profiles from the previous runs of that phase are always excluded. For example, if in Run #1 a profile got covered in the first 4800 people being targeted, the system will automatically ensure that the same profile doesn't receive the email in Run #2.
-
-        >[!NOTE]
-        >
-        >This section is not editable.
+    1. In the **[!UICONTROL Profiles targeted in previous runs]** section, you can see that the profiles from the previous runs of that phase are always excluded (this section is read-only). For example, if in Run #1 a profile got covered in the first 4800 people being targeted, the system will automatically ensure that the same profile doesn't receive the email in Run #2.
 
 1. If needed, you can replace the campaign using the **[!UICONTROL Replace]** button. You can also **[!UICONTROL Clear]** the selected campaign using the **[!UICONTROL Clear]** button. This action will not only clear the campaign but also the other phase-level properties (domain groups excludes, Campaign, Journey Exclusion, and others. After clearing, you can choose a new campaign either immediately or at a later time.
 
@@ -119,13 +103,9 @@ To define the phases of your IP warmup plan, you need to select a campaign for e
 
     >[!CAUTION]
     >
-    >You cannot undo the **[!UICONTROL Delete phase]** action.
+    >You cannot undo the **[!UICONTROL Delete phase]** action. If you delete all phases, it is recommended to re-upload the plan. [Learn more](#re-upload-plan)
 
     ![](assets/ip-warmup-plan-delete-phase.png)
-
-    >[!NOTE]
-    >
-    >If you delete all the phases from the IP warmup plan, it is recommended to re-upload a plan. [Learn more](#re-upload-plan)
 
 ## Define the runs {#define-runs}
 
@@ -164,27 +144,19 @@ After defining the phases of your IP warmup plan, you need to configure the indi
 
     >[!NOTE]
     >
-    >Retries happen every 30 minutes until the end of the defined time window.
+    >Retries happen every 30 minutes until the end of the defined time window. If no time window is specified, the run is attempted at the send time and will fail if the audience evaluation is not completed.
 
     ![](assets/ip-warmup-plan-retry-run-time.png)
 
     For example, if you set a send time on a given day at 9am, and select 120 minutes as the retry run time, this allows a window of opportunity of 2 hours (9am - 11am) for the run to be performed for any unexpected delays in the audience evaluation.
 
-    >[!NOTE]
-    >
-    >If no time window is specified, the run is attempted at the send time and will fail if the audience evaluation is not completed.
-
 1. If needed, select **[!UICONTROL Edit run]** from the More actions icon. There you can update the numbers of addresses in each column. You can also update the **[!UICONTROL Last engaged]** field to target only the users engaged with your brand over the last 20 days for example.
 
     >[!NOTE]
     >
-    >It is recommended to modify these numbers in consultation with your deliverability expert.
+    >It is recommended to modify these numbers in consultation with your deliverability expert. To disable the engagement period for a run, enter 0 in the **[!UICONTROL Last engaged]** field.
 
     ![](assets/ip-warmup-plan-edit-run.png)
-
-    >[!NOTE]
-    >
-    >If you do not want to apply any engagement period to a run, enter 0 in the **[!UICONTROL Last engaged]** field.
 
 1. Select the **[!UICONTROL Cancel activated runs in case of errors]** option to cancel a run if the qualified profiles are less than the targeted profiles once the audience has been evaluated for that run.
 

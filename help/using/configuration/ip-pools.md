@@ -48,13 +48,9 @@ To create an IP pool, follow these steps:
     >
     >The name must begin with a letter (A-Z) and include only alpha-numeric characters or special characters ( _, ., - ).
 
-1. Select the IP addresses to include in the pool from the drop-down list, then click **[!UICONTROL Submit]**.
+1. Select the IP addresses to include in the pool from the drop-down list, then click **[!UICONTROL Submit]**. All IP addresses provisioned with your instance are available in the list.
 
-    ![](assets/ip-pool-config.png) 
-
-    >[!NOTE]
-    >
-    >All the IP addresses provisioned with your instance are available in the list.
+    ![](assets/ip-pool-config.png)
 
 When selecting IPs, you can see from the list the PTR records associated with the IPs. This allows you to verify the branding information for each IP when creating an IP pool, and to select IPs with the same branding information for example. [Learn more about PTR records](ptr-records.md)
 
@@ -76,17 +72,13 @@ To edit an IP pool, follow the steps below.
 
 1. From the list, click the IP pool name to open it.
 
-1. Edit its properties as desired. You can modify the description, and add or remove IP addresses.
-
-    >[!NOTE]
-    >
-    >The IP pool name is not editable. If you want to modify it, you need to delete the IP pool and create another one with the name of your choice.
+1. Edit its properties as desired. You can modify the description and add or remove IP addresses. Note that the IP pool name is not editable — to rename it, delete the pool and create a new one.
 
     ![](assets/ip-pool-edit.png)
 
     >[!CAUTION]
     >
-    >Proceed with extra care when considering deleting an IP, as this will put additionnal load on the other IPs and may have severe impacts on your deliverability. In case of any doubt, contact a deliverability expert.
+    >Proceed with extra care when considering deleting an IP, as this will put additional load on the other IPs and may have severe impacts on your deliverability. In case of any doubt, contact a deliverability expert.
 
 1. Save your changes.
 
@@ -97,18 +89,12 @@ The update is effective immediately or asynchronously, depending on the IP pool 
 
 >[!NOTE]
 >
->When [creating a channel configuration](channel-surfaces.md#create-channel-surface), if you select an IP pool which is under edition (**[!UICONTROL Processing]** status) and has never been associated with the subdomain selected for that configuration, you cannot proceed with configuration creation. [Learn more](channel-surfaces.md#create-channel-surface)
+>* When [creating a channel configuration](channel-surfaces.md#create-channel-surface), if you select an IP pool in **[!UICONTROL Processing]** status that has never been associated with the selected subdomain, you cannot proceed with configuration creation. [Learn more](channel-surfaces.md#create-channel-surface)
+>* Once an IP pool is updated successfully, allow a few minutes before it takes effect for real-time messages, or wait until the next batch job for batch messages.
 
 To check the IP pool update status, click the **[!UICONTROL More actions]** button and select **[!UICONTROL Recent updates]**.
 
 ![](assets/ip-pool-recent-update.png)
-
->[!NOTE]
->
->Once an IP Pool is updated successfully, you may have to wait:
->
->* a few minutes before it is consumed by the unitary messages,
->* until the next batch for the IP pool to be effective in batch messages.
 
 You can also use the **[!UICONTROL Delete]** button to delete an IP pool. Note that you cannot delete an IP pool that has been associated to a channel configuration.
 
