@@ -68,6 +68,28 @@ Use these guidelines to keep Jump activity behavior predictable and safe.
 * When the **[!UICONTROL Jump]** activity is executed, the latest version of the target journey is triggered.
 * A unique individual can only be present once in the same journey. As a result, if the individual pushed from the origin journey is already in the target journey, the individual will not enter the target journey. No error will be reported on the **[!UICONTROL Jump]** activity because this is normal behavior.
 
+## Design strategy: bite-sized sub-journeys {#jump-strategy}
+
+Complex customer journeys can quickly become difficult to build and maintain, especially as additional channels or touchpoints are introduced. Even a journey with a handful of milestones can expose 20 or more unique paths a customer can take, and that complexity grows exponentially with each addition.
+
+A practical approach to managing this is to break large journeys into smaller, focused sub-journeys — one per business phase or milestone — and connect them using the **[!UICONTROL Jump]** activity. This keeps each journey readable, testable, and independently maintainable.
+
+**Step 1 — Visualize the end-to-end journey**
+
+Map the full customer journey and identify its high-level phases. For example, a loyalty onboarding journey might include three distinct phases: download the mobile app, make a first transaction, make a second transaction.
+
+**Step 2 — Annotate phases and define sub-journeys**
+
+Mark the boundary of each phase and define its business objective. Each phase becomes a candidate sub-journey with a clear entry condition and goal.
+
+**Step 3 — Build and connect sub-journeys**
+
+Build each phase as a separate journey in Journey Optimizer, then use **[!UICONTROL Jump]** activities to pass profiles from one sub-journey to the next. The result is a set of simpler, reusable journeys that combine to produce the full end-to-end experience — with less risk of introducing errors.
+
+>[!TIP]
+>
+>For a detailed walkthrough of this approach, see [Best practices for advanced journeys in Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
+
 ## Configuring the Jump activity {#jump-configure}
 
 1. Design your **origin journey**.

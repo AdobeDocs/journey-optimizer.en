@@ -80,6 +80,10 @@ You can then start designing your journey.
 
 The omnichannel journey designer helps you build multi-step journeys with targeted audiences, updates based on real-time customer or business interactions, and omnichannel messages using an intuitive drag-and-drop interface.
 
+>[!TIP]
+>
+>For journeys with multiple phases or many touchpoints, consider breaking the end-to-end flow into smaller, focused sub-journeys connected with the **[!UICONTROL Jump]** activity. This approach reduces complexity and makes each sub-journey easier to test and maintain independently. Learn more in [Design strategy: bite-sized sub-journeys](jump.md#jump-strategy).
+
 ![Journey designer interface with activities palette and canvas](assets/journey38.png)
 
 1. Start by drag and dropping an event or a **Read Audience** activity from the palette into the canvas. To learn more about journey design, refer to [this section](using-the-journey-designer.md).
