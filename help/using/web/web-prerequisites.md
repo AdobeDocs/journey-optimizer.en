@@ -136,17 +136,14 @@ In other words, when configuring reporting, if you add a dataset that is not pre
 
 Learn how to add datasets for reporting in [this section](../reports/reporting-configuration.md#add-datasets).
 
->[!NOTE]
->
->The dataset is used read-only by the [!DNL Journey Optimizer] reporting system and doesn't affect data collection or data ingestion.
-
 If you are **not** using the following pre-defined [field groups](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#field-group){target="_blank"} for your dataset schema: `AEP Web SDK ExperienceEvent` and `Consumer Experience Event` (as defined on [this page](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html#add-field-groups){target="_blank"}), make sure to add the following field groups: `Experience Event - Proposition Interactions`, `Application Details`, `Commerce Details`, and `Web Details`. These are needed by [!DNL Journey Optimizer] reporting as they are tracking which campaigns and journeys each profile is participating in.
 
 [Learn more about reporting configuration](../reports/reporting-configuration.md)
 
 >[!NOTE]
 >
->Adding these field groups doesn't impact the normal data collection. It is additive only for the pages where a campaign or journey is running, leaving all the other tracking untouched.
+>* The dataset is used read-only by the [!DNL Journey Optimizer] reporting system and doesn't affect data collection or data ingestion.
+>* Adding the required field groups is additive only — it applies to pages where a campaign or journey is running and leaves all other tracking untouched.
 
 ## Branded domains for assets {#branded-domains-for-assets}
 
