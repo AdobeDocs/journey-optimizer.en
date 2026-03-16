@@ -13,10 +13,6 @@ exl-id: 1aaff17f-aa08-4f10-903c-8335a86ac6eb
 ---
 # Send using waves in journeys {#send-using-waves-journeys}
 
->[!AVAILABILITY]
->
->This feature is in Limited Availability. Contact your Adobe representative to gain access.
-
 You can deliver outbound messages from a journey in batches (waves) over time instead of all at once. Wave sending helps balance load, avoid overwhelming downstream systems (such as call centers or landing pages), and support deliverability and sender reputation—especially for high-volume read audience journeys.
 
 <!--

@@ -120,6 +120,14 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ### Improvements {#march-26-improv}
 
+#### Journeys
+
+* **Wave sending of outbound messages in journeys** - You can now schedule messages from Journey Optimizer journeys to be delivered in controlled batches over time. [Learn more](../building-journeys/send-using-waves.md)
+
+  Previously released in Limited Availability for use in journeys, this capability is now available to all environments (General Availability).
+
+  Availability date: March 16, 2026
+
 #### Configuration
 
 * **Change in AJO Secondary Recipient Feedback Event Dataset** - The AJO Email BCC Feedback Event Dataset is being renamed to AJO Secondary Recipient Feedback Event Dataset. 
