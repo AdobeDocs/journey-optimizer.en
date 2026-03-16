@@ -84,13 +84,16 @@ Best practice is to use custom dates that are specific to your profiles, and avo
 
 >[!CAUTION]
 >
->You can leverage a `dateTimeOnly` expression or use a function to convert to a `dateTimeOnly`. For example: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})`, the field in the event being of the form 2023-08-12T09:46:06Z. The **time zone** is expected in the properties of your journey, so it is not possible from the UI to directly point at a full ISO-8601 timestamp mixing time and time zone offset like 2023-08-12T09:46:06.982-05. [Learn more](../building-journeys/timezone-management.md).
+>When working with `dateTimeOnly` expressions, keep the following in mind:
 >
->When creating a custom wait expression with `toDateTimeOnly()`, avoid appending 'Z' or any time zone offset (e.g., '-05:00') in the result. The expression must use valid ISO date/time syntax referencing the journey's configured time zone without explicit time zone designators — otherwise, profiles may remain stuck in the wait activity.
+>* You can use a `dateTimeOnly` expression directly, or convert to it using a function — for example: `toDateTimeOnly(@event{Event.offerOpened.activity.endTime})` where the field value is in the form `2023-08-12T09:46:06Z`.
+>* The **time zone** is defined in the journey properties. As a result, it is not possible from the UI to point at a full ISO-8601 timestamp that mixes time and time zone offset, such as `2023-08-12T09:46:06.982-05`. [Learn more](../building-journeys/timezone-management.md)
+>* When building a custom wait expression with `toDateTimeOnly()`, do **not** append `Z` or a time zone offset (e.g., `-05:00`). The expression must reference the journey's configured time zone without explicit time zone designators — otherwise profiles may get stuck in the wait activity.
 >
->**Correct example:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))`
->
->**Incorrect example:** `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (contains 'Z')
+>| | Example |
+>|---|---|
+>| **Correct** | `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00"))` |
+>| **Incorrect** | `toDateTimeOnly(concat(toString(toDateOnly(nowWithDelta(2, "days"))),"T10:00:00Z"))` ❌ (contains `Z`) |
 
 To validate that the wait activity works as expected, you can use step events. [Learn more](../reports/query-examples.md#common-queries).
 
