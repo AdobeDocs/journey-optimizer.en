@@ -13,7 +13,7 @@ version: Journey Orchestration
 ---
 # Use an audience in a journey {#segment-trigger-activity}
 
-Use the Read Audience activity to start journeys with defined audiences. You choose the audience and when it runs; then use conditions, timers, and actions to personalize each profile's path.
+Use the Read Audience activity to start journeys with defined audiences. You choose the audience and when it runs; then use [conditions to segment, exclude, or merge branches](#audience-targeting-in-journeys), timers, and actions to personalize each profile's path.
 
 ## About the Read Audience activity {#about-segment-trigger-activity}
 
@@ -32,7 +32,7 @@ The **Read Audience** activity is the journey entry-point activity that adds all
 | Your audience is batch-evaluated (e.g. daily snapshot). | Your audience is streaming or event-based. |
 | You are okay with a delay between audience evaluation and journey entry. | You need immediate entry when a profile qualifies. |
 
-**Key limits:** One Read Audience per journey (must be the first activity); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and recommendations](#must-read).
+**Key limits:** One Read Audience per journey (must be the first activity, or the second after a Business Event); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and recommendations](#must-read).
 
 **Prerequisites:** An [!DNL Adobe Experience Platform] audience that is built and evaluated (Realized status), a people-based identity namespace selected for the journey, and—for recurring runs—understanding of [scheduling and throughput limits](#must-read).
 
@@ -108,7 +108,7 @@ You can optionally enable **Use a supplemental identifier** to run the journey i
 
 ### Guardrails and recommendations {#must-read}
 
-* Only one **[!UICONTROL Read Audience]** activity can be used in a journey, and it has to be the first activity in the canvas.
+* Only one **[!UICONTROL Read Audience]** activity can be used in a journey. It must be the first activity in the canvas, except in journeys that start with a **Business Event** activity, in which case it is the second activity.
 
 * The **[!UICONTROL Read audience]** activity can target only one audience. If multiple audiences are required, consider merging those audiences into a single one before use. [Learn how to combine audiences using composition workflows](../audience/get-started-audience-orchestration.md)
 
@@ -286,11 +286,15 @@ Once the tests are successful, you can publish your journey (see [Publishing the
 >
 >For recurring audience-based journeys, the journey will automatically close once its last occurrence is executed. If no end date/time has been specified, you will have to close the journey to new entrances manually to end it.
 
-## Audience targeting in journeys
+## Audience targeting in journeys {#audience-targeting-in-journeys}
 
 Audience-based journeys always start with a **Read Audience** activity to retrieve individuals belonging to an [!DNL Adobe Experience Platform] audience. Those profiles are read once or on a recurring schedule.
 
 After they enter the journey, you orchestrate them using **Condition** activities: segment by attributes or behavior, exclude part of the population, or merge branches back together (union). The sections below describe each pattern.
+
+>[!NOTE]
+>
+>The [**Optimize** activity](optimize.md) provides an alternative for advanced path routing including experimentation and targeting rules. It is currently in Limited Availability — contact your Adobe representative to learn more.
 
 **Segmentation**
 

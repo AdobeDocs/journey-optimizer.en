@@ -34,7 +34,11 @@ The following types of conditions are available:
 * [Date condition](#date_condition)
 * [Profile cap](#profile_cap)
 
-You can also use an audience in a journey condition. [Learn more](#using-a-segment). For more information on how to generate and target audiences, refer to [this section](../audience/about-audiences.md)
+You can also use audiences directly in journey conditions. See:
+
+* [Using an audience in a condition](#using-a-segment) — filter which profiles take a given path based on audience membership
+* [Build and manage audiences](../audience/about-audiences.md) — learn how to create, evaluate, and target audiences in [!DNL Adobe Experience Platform]
+* [Audience targeting patterns in journeys](read-audience.md#audience-targeting-in-journeys) — segment, exclude, or merge audience branches after a Read Audience entry
 
 >[!NOTE]
 >
