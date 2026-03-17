@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## March 2026 {#march-2026}
 
+* The **Add links & track messages** documentation has been updated with guidance on how tracking identifiers (urlID) are generated: a unique urlID is only assigned when both the URL and the label are unique. To track the same URL across multiple emails (or multiple times in one email), users must use a unique label for each similar URL; otherwise, [!DNL Journey Optimizer] cannot determine which link was clicked. [Read more](../email/message-tracking.md#insert-links)
+
 * The **Create test profiles** documentation has been updated with an important note about identity descriptor requirements: when a dataset is deleted and recreated, the schema must retain the correct identity descriptor on the primary identity field. Without it, ingested profiles will not be flagged as `testProfile = true` even if ingestion completes successfully. A troubleshooting checklist has been added. [Read more](../audience/creating-test-profiles.md)
 
 * The **Read Audience** activity documentation has been updated to clarify that a **Business Event** activity is an exception to the rule that Read Audience must be the first activity in a journey. A note has also been added referencing the **Optimize** activity as an advanced alternative for controlling audience targeting. [Read more](../building-journeys/read-audience.md)
