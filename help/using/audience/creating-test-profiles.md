@@ -63,6 +63,15 @@ To **create a schema**, follow these steps:
 >
 >For more information on schema creation, refer to the [XDM documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
 
+>[!IMPORTANT]
+>
+>When creating or replacing a dataset for test profile ingestion, ensure that the schema has the correct identity descriptor applied to the primary identity field (e.g., `/personID`) for the intended namespace. If the identity descriptor is missing or incorrectly configured, profiles ingested into this dataset may not be flagged as test profiles (`testProfile = true`), even if the ingestion process completes successfully.
+>
+>If your test profiles are not flagged correctly after ingestion:
+>1. Review the schema associated with your dataset.
+>1. Confirm that the primary identity field has the correct identity descriptor for your namespace (see steps 6–7 above).
+>1. If the descriptor is missing, update the schema to add the identity descriptor and re-ingest your data.
+
 ### Create a dataset
 
 Then you need to **create the dataset** in which the profiles will be imported. Follow these steps:
