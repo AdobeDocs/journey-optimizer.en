@@ -47,6 +47,15 @@ When enabled, these options track the behavior of the recipients of your message
 
 When [tracking is enabled](#enable-tracking), all links included in the message content are tracked.
 
+A unique tracking identifier (urlID) is only generated when both the **URL** and the **label** are unique. Links that share the same URL and have the same effective label (including when the label is blank) reuse the same urlID, which means you cannot tell which link was clicked. To track the same URL across multiple emails (or multiple times in one email), use a unique label for each similar URL; otherwise, [!DNL Journey Optimizer] will not be able to track which link was clicked. You can set distinct labels in the Email Designer or, for HTML, via the `data-label` attribute.
+
+| URL | Tag | Label | urlID behavior |
+|-----|-----|-------|----------------|
+| www.example.com | First | (blank) | Gets a urlID (e.g. A) |
+| www.example.com | Second | (blank) | Reuses urlID A — cannot tell which link was clicked |
+| www.example.com | Third | First Label | Gets a urlID (e.g. B) |
+| www.example.com | Fourth | Second Label | Gets a urlID (e.g. C) |
+
 >[!NOTE]
 >
 >Links from fragments used in an email are also tracked. [Learn more on fragments](../content-management/fragments.md)
