@@ -198,6 +198,7 @@ solution: Journey Optimizer
       + [Deduplication](using/orchestrated/activities/deduplication.md)
       + [Enrichment](using/orchestrated/activities/enrichment.md)
       + [Fork](using/orchestrated/activities/fork.md)
+      + [Incremental query](using/orchestrated/activities/incremental-query.md)
       + [Read audience](using/orchestrated/activities/read-audience.md)
       + [Reconciliation](using/orchestrated/activities/reconciliation.md)
       + [Save audience](using/orchestrated/activities/save-audience.md)
