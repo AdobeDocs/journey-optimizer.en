@@ -56,6 +56,6 @@ When your push message is ready, complete the configuration of your [journey](..
 * [Configure push channel for web](push-configuration-web.md)
 * [Push notification report](../reports/journey-global-report-cja-push.md)
 * [Create a push notification](create-push.md)
-* [Add a message in a journey](../building-journeys/journeys-message.md)
+* [Add a message in a journey](../building-journeys/journey-action.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)
 

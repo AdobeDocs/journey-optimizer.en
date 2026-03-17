@@ -19,6 +19,10 @@ exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
 
 Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey.
 
+>[!IMPORTANT]
+>
+>For event requirements and limitations (streaming, Query Service, batch ingestion), see [Journey guardrails - Events](../start/guardrails.md#events-g).
+
 In the event configuration, you configure the events expected in the journeys. The incoming events' data is normalized following Adobe Experience Data Model (XDM). Events come from Streaming Ingestion APIs for authenticated and unauthenticated events (such as Adobe Mobile SDK events). You can use multiple events (in different steps of a journey) and several journeys can use the same event.
 
 Event configuration is **mandatory** and must be performed by a Data engineer.
@@ -54,7 +58,7 @@ For **unitary** events, there are two types of event ID:
 
 >[!NOTE]
 >
->Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, please build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but can cause downstream challenges based on the actions used. This data does not necessarily need to go to the Real-Time Profile. If you would like to use the events for segmentation, we recommend you enable the dataset for profile.
+>Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch, events inserted via **Query Service**, or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, please build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but can cause downstream challenges based on the actions used. This data does not necessarily need to go to the Real-Time Profile. If you would like to use the events for segmentation, we recommend you enable the dataset for profile.
 
 ## Data cycle {#data-cycle}
 

@@ -57,7 +57,7 @@ Audiences can be generated using different methods:
 * **Segment definitions**: Create a new audience definition using Adobe Experience Platform Segmentation Service. Audiences are generated from segment definitions and refreshed at different times depending on their evaluation type:
 
     * Streaming Segmentation: Audiences are updated in real time as new data flows in, ensuring continuous relevance based on user activity.
-    * Batch Segmentation: Audiences are refreshed every 24 hours, capturing a snapshot of profiles at a fixed interval.
+    * Batch Segmentation: Audiences are refreshed every 24 hours, capturing a snapshot of profiles at a fixed interval. When used in journeys, newly qualified segment members may not appear until the next snapshot. [Learn more about timing](../building-journeys/audience-qualification-events.md#timing-segment-membership).
     * Edge Segmentation: Audiences are evaluated instantaneously on the edge, allowing for real-time personalization.
 
     [Learn how to build segment definitions](creating-a-segment-definition.md) 

@@ -223,7 +223,7 @@ Yes. Journey Optimizer includes **built-in channel actions** that allow you to s
 
 For channels not natively supported, you can use **custom actions** to integrate with external messaging platforms and send messages through any third-party channel.
 
-Learn more about [messages in journeys](journeys-message.md) and [custom actions](using-custom-actions.md).
+Learn more about [messages in journeys](journey-action.md) and [custom actions](using-custom-actions.md).
 
 +++
 
@@ -259,7 +259,7 @@ Create a **unitary event-triggered journey**:
 
 The journey will automatically trigger whenever a purchase event is received, sending the confirmation email in real-time.
 
-Learn more about [event configuration](../event/about-events.md) and [email actions](journeys-message.md).
+Learn more about [event configuration](../event/about-events.md) and [email actions](journey-action.md).
 
 +++
 
@@ -294,7 +294,7 @@ Create an event-triggered journey using a **[!UICONTROL Reaction]** event with a
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Reaction]** events must be placed immediately after [channel actions](journeys-message.md). Do not place **[!UICONTROL Wait]** activities between the channel action and the **[!UICONTROL Reaction]** activity.
+>**[!UICONTROL Reaction]** events must be placed immediately after [channel actions](journey-action.md). Do not place **[!UICONTROL Wait]** activities between the channel action and the **[!UICONTROL Reaction]** activity.
 
 Learn more about [journey use cases](jo-use-cases.md) and [reaction events](reaction-events.md).
 
@@ -600,7 +600,7 @@ Yes. Use a **[Condition activity](condition-activity.md)** to route profiles bas
 * Use [channel surfaces](../configuration/channel-surfaces.md) to manage channel configurations
 * Test all paths to ensure proper message delivery
 
-Learn more about [conditions](condition-activity.md), [message actions](journeys-message.md), and [channel selection](../channels/gs-channels.md).
+Learn more about [conditions](condition-activity.md), [message actions](journey-action.md), and [channel selection](../channels/gs-channels.md).
 
 +++
 
@@ -926,7 +926,7 @@ Learn more about [journey design](using-the-journey-designer.md) and [guardrails
 * Use [test mode](testing-the-journey.md) and [dry run](journey-dry-run.md) to validate performance before publishing
 * Minimize external API calls through [custom actions](using-custom-actions.md) to avoid latency and dependency on third-party systems
 * Store frequently used data in [!DNL Adobe Experience Platform] using [dataset lookup](dataset-lookup.md) instead of doing external calls, when possible
-* Review and optimize [message delivery](journeys-message.md) performance
+* Review and optimize [message delivery](journey-action.md) performance
 
 Learn more about [guardrails and limitations](../start/guardrails.md).
 

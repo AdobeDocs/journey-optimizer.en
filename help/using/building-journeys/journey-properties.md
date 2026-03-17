@@ -371,7 +371,12 @@ The following guardrails apply when using the [Profile Attribute–Based Exit Cr
 
 ## Journey schedule {#schedule}
 
-The **[!UICONTROL Schedule]** section is only available when a **[!UICONTROL Read Audience]** activity has been dropped in the canvas. It allows you to define a specific date/time and frequency at which the journey should run. [Learn how to schedule a Read-audience journey](../building-journeys/read-audience.md)
+The **[!UICONTROL Schedule]** section is only available when a **[!UICONTROL Read Audience]** activity has been dropped in the canvas. It allows you to define a specific date/time and frequency at which the journey should run. [Learn how to schedule a Read-audience journey](read-audience.md#schedule)
+
+>[!TIP]
+>
+>When scheduling the journey, you can also configure wave sending to deliver journey actions in batches over time. [Learn how to send using waves in journeys](send-using-waves.md)
+
 
 ## Conflict management {#conflict}
 

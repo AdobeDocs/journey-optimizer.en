@@ -48,6 +48,10 @@ The following predefined values are available through the personalization editor
 
 * **Source action id**: ID of the Email action added to the journey or campaign.
 
+  >[!NOTE]
+  >
+  >Journeys that were closed or not republished after a product change may fail to populate `context.system.source.actionId` in tracking URLs, resulting in empty placeholders (for example, `cid=em-acou-adob{}`). To ensure tracking parameters are correctly populated, [republish the affected journey](../building-journeys/publish-journey.md#journey-create-new-version) or remove the reference to this context field for closed journeys. Learn more in [Troubleshoot your live journey execution](../building-journeys/troubleshooting-execution.md#tracking-parameters-closed-journeys).
+
 * **Source action name**: name of the Email action added to the journey or campaign.
 
 * **Source id**: ID of the journey or campaign the email was sent with.

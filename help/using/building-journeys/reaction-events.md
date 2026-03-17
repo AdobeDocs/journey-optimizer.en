@@ -34,7 +34,7 @@ You can use the **[!UICONTROL Reaction]** activity to perform an action when the
 
 Follow these steps to configure the reaction events:
 
-1. Place a **[!UICONTROL Reaction]** activity **immediately** after a [channel action activity](journeys-message.md) on the journey canvas.
+1. Place a **[!UICONTROL Reaction]** activity **immediately** after a [channel action activity](journey-action.md) on the journey canvas.
 1. Add a **[!UICONTROL Label]** to the reaction. This step is optional.
 1. From the drop-down list, select the action activity you want to react to. You can select any action activity positioned in the previous steps of the path.
 1. Depending on the action you selected, choose what you want to react to. 
@@ -42,7 +42,7 @@ Follow these steps to configure the reaction events:
 
 ## Guardrails and limitations {#guardrails-limitations}
 
-* A **[!UICONTROL Reaction]** activity must be placed **immediately** after a [channel action activity](journeys-message.md) in the journey canvas. 
+* A **[!UICONTROL Reaction]** activity must be placed **immediately** after a [channel action activity](journey-action.md) in the journey canvas. 
 * You cannot use a **[!UICONTROL Reaction]** activity if there is no channel action activity before it.
 * Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected.
 * Reaction events can only track messages sent within the same journey. They cannot track messages that take place in a different journey.

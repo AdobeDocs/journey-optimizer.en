@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use the Action journey activity
-description: Learn how to add a generic Action activity to configure single actions and multi-action inbound action groups within the journey canvas.
+title: Use the Action activity
+description: Learn how to add a generic Action activity to configure single actions and multi-action inbound action groups within the journey canvas, and how to add built-in channel actions.
 feature: Journeys, Activities, Channels Activity
 topic: Content Management
 role: User
@@ -16,23 +16,29 @@ version: Journey Orchestration
 >[!CONTEXTUALHELP]
 >id="ajo_action_activity"
 >title="Action activity"
->abstract="The generic **Action** activity lets you configure a single native channel action and multiple inbound activities with the ability to add optimization to any built-in channel action."
+>abstract="The **Action** activity lets you configure a single native channel action and multiple inbound activities with the ability to add optimization to any built-in channel action."
 
 [!DNL Journey Optimizer] comes with a new generic **Action** activity that allows to configure a single built-in channel action, and also multiple inbound activities.
 
-It allows for:
+The Action activity offers:
 
 * A simplified native action configuration within the journey canvas.
 * The capacity to create multi-action inbound action groups.
 * The ability to add optimization to any built-in channel action.
 
->[!NOTE]
+To add a built-in channel action to your journey, use the **Action** activity. This unified activity consolidates all channel actions (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) into a single activity type, replacing the previous individual channel activities.
+
+>[!IMPORTANT]
 >
->You can also set up custom actions to send your messages in [!DNL Journey Optimizer]. [Learn more](#recommendation)
+>All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
 
-## Add an action to a journey  {#add-action}
+You can also set up custom actions to send your messages in [!DNL Journey Optimizer]. [Learn more](#recommendation)
 
-To add a built-in channel action to a journey, follow the steps below.
+## Add a built-in channel action to a journey  {#add-action}
+
+To add a built-in channel action to your journey using the **[!UICONTROL Action]** activity, follow the steps below.
+
+For more information on the channels available in journeys, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
 
 1. Start your journey with an [Event](general-events.md) or a [Read Audience](read-audience.md) activity.
 
@@ -54,7 +60,92 @@ To add a built-in channel action to a journey, follow the steps below.
 
 1. If you selected an inbound channel, you can add multiple actions. [Learn more](#multi-action)
 
-1. Configure your activity according to the selected channel. Learn how to configure built-in channel actions in [this section](journeys-message.md).
+1. Configure your activity according to the selected channel. Detailed configuration guidelines are available in the links below.
+   
+   * Learn the detailed steps to create your outbound action as follows:
+
+      <table style="table-layout:fixed">
+      <tr style="border: 0;">
+      <td>
+      <a href="../email/create-email.md">
+      <img alt="Lead" src="../assets/do-not-localize/email.jpg">
+      </a>
+      <div><a href="../email/create-email.md"><strong>Create emails</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../push/create-push.md">
+      <img alt="Infrequent" src="../assets/do-not-localize/push.jpg">
+      </a>
+      <div>
+      <a href="../push/create-push.md"><strong>Create push notifications<strong></a>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../sms/create-sms.md">
+      <img alt="Validation" src="../assets/do-not-localize/sms.jpg">
+      </a>
+      <div>
+      <a href="../sms/create-sms.md"><strong>Create text messages (SMS/MMS)</strong></a>
+      </div>
+      <p>
+      </td>
+      </tr>
+      </table>
+
+   * Learn the detailed steps to create your inbound action as follows:
+
+      <table style="table-layout:fixed">
+      <tr style="border: 0;">
+      <td>
+      <a href="../in-app/create-in-app.md">
+      <img alt="Lead" src="../assets/do-not-localize/in-app.jpg">
+      </a>
+      <div><a href="../in-app/create-in-app.md"><strong>Create In-app messages</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../web/create-web.md">
+      <img alt="Lead" src="../assets/do-not-localize/web-create.jpg">
+      </a>
+      <div><a href="../web/create-web.md"><strong>Create web experiences</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../content-card/create-content-card.md">
+      <img alt="Lead" src="../assets/do-not-localize/sms-config.jpg">
+      </a>
+      <div><a href="../content-card/create-content-card.md"><strong>Create content cards</strong>
+      </div>
+      <p>
+      </td>
+      <td>
+      <a href="../code-based/create-code-based.md">
+      <img alt="Infrequent" src="../assets/do-not-localize/web-design.jpg">
+      </a>
+      <div>
+      <a href="../code-based/create-code-based.md"><strong>Create code-based experiences<strong></a>
+      </div>
+      <p>
+      </td>
+      </tr>
+      </table>
+
+   >[!NOTE]
+   >
+   >* Each inbound experience action comes with a 3-days **Wait** activity. [Learn more](wait-activity.md#auto-wait-node)
+   >
+   >* For emails and push notifications, you can enable Send-Time Optimization. [Learn more](send-time-optimization.md)
+
+1. Depending on the activity, you can display advanced parameters specific to the selected channel, and override some default values such as the execution address. [Learn more](about-journey-activities.md#advanced-parameters)
+
+   >[!NOTE]
+   >
+   >If the advanced parameters are hidden, click the **[!UICONTROL Show read-only fields]** button on top of the right pane.
 
 1. Use the **[!UICONTROL Optimization]** section to run content experiments, leverage targeting rules, or use advanced combinations of both experimentation and targeting.
 
@@ -170,7 +261,32 @@ To define several inbound actions in a single journey action node, follow the st
 1. Proceed similarly to add more actions. You can add up to 10 inbound actions in a journey action group.
 
 Once the journey is [live](publish-journey.md), all actions are activated simultaneously.
-<!--
-## Next steps {#next}
 
-Once your action is configured, you can design its content. [Learn more]-->
+## Update a live content {#update-live-content}
+
+You can update the content of a built-in channel action in a live journey.
+
+Any changes made to the content are not reflected in the journey until you save the action's properties. [Learn more](about-journey-activities.md#advanced-parameters)
+
+To do this, open your live journey, select the channel activity and click **Edit content**.
+
+![Edit channel activity button in live journey](assets/email-action-edit-content.png)
+
+However, you cannot change the attributes used in personalization, whether they are profile attributes or contextual data (from event or journey properties).
+
+* If you modified contextual data, the following error message will be displayed: `ERR_AUTHORING_JOURNEYVERSION_201`
+
+* If you modified profile attributes, the following error message will be displayed: `ERR_AUTHORING_JOURNEYVERSION_202`
+
+Note that for the In-app activity, any changes can be made to the content while the journey is live, but In-app triggers cannot be modified.
+
+## Send with custom actions {#recommendation}
+
+Instead of using the built-in message capabilities, you can use custom actions to configure connection of a third-party system to send messages or API calls.
+
+* If you are using a third-party system to send your messages, you can create a custom action. [Learn more](../action/action.md)
+
+* If you are working with Adobe Campaign, refer to these sections:
+
+   * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
+   * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)

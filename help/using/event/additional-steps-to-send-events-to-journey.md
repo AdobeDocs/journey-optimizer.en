@@ -17,6 +17,10 @@ To configure events to be sent to **[!UICONTROL Streaming Ingestion APIs]** and 
 1. Get the inlet URL from Adobe Experience Platform APIs. Learn more in [Streaming Ingestion APIs overview](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html){target="_blank"}.
 1. Copy the payload from the payload preview in the **[!UICONTROL Event]** menu. Learn more on [this page](../event/about-creating.md#define-the-payload-fields).
 
+>[!IMPORTANT]
+>
+>For event requirements and limitations (streaming, Query Service, batch ingestion), see [Journey guardrails - Events](../start/guardrails.md#events-g).
+
 You then need to configure the data system that pushes events to Streaming Ingestion APIs using the payload you copied:
 
 1. Set up a POST API call to the Streaming Ingestion APIs URL (called an inlet).

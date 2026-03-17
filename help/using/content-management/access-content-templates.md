@@ -10,6 +10,14 @@ exl-id: ef6110c4-1aa6-4835-b0b0-b3c4fe0e7024
 ---
 # Access and manage content templates {#access-manage-templates}
 
+## Prerequisites {#prerequisites}
+
+To access and manage content templates, ensure the following:
+
+* **Content Templates permission** — Your role must include the **[!UICONTROL Manage content templates]** permission (under the **Content Management** resource). Without it, the **Content Templates** menu is not visible in the left navigation. [Learn how to manage permissions](../administration/permissions.md)
+* **Sandbox scope** — Content templates are sandbox-specific. Templates created in one sandbox are not available in another. Ensure you are in the correct sandbox before searching for a template.
+* **HTML templates (deprecated)** — Starting March 2025, HTML-type content templates are deprecated. Existing HTML templates remain accessible but new ones cannot be created.
+
 ## Access content templates {#access}
 
 To access the content template list, select **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** from the left menu.
@@ -102,6 +110,26 @@ Select the **[!UICONTROL Grid view]** mode to display each template as a thumbna
 >Proper thumbnails can only be generated for HTML-type email content templates.
 
 When you update content, wait a few seconds for the changes to reflect in the thumbnail.
+
+## Troubleshooting {#troubleshooting}
+
++++I can't see the Content Templates menu in the left navigation
+
+Your role is missing the **Manage content templates** permission. Ask your administrator to add the **Content Management** resource with the **Manage content templates** permission to your role. [Learn more](../administration/permissions.md)
+
++++
+
++++A template I created is not showing in the list
+
+Check that you are in the correct sandbox — templates are sandbox-specific. Also verify whether a folder is selected in the left pane; when a folder is selected, only templates within that folder are displayed. Click **[!UICONTROL All content templates]** to display all templates regardless of folder.
+
++++
+
++++I edited a template but my campaign or journey content did not update
+
+Editing or deleting a template does not retroactively update campaigns or journeys that were built using it. Content is copied at the time of use. To update existing content, edit the campaign or journey directly.
+
++++
 
 ## Export content templates to another sandbox {#export}
 

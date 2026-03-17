@@ -39,6 +39,8 @@ Follow these steps to set up the data foundation for Journey Optimizer:
 
 1. **Configure computed attributes** (optional). Create derived attributes from profile data to simplify segmentation and personalization. Computed attributes automatically calculate complex metrics like "total purchases in last 90 days" or "average order value". Learn about [computed attributes](../../audience/computed-attributes.md).
 
+1. **Message export datasets** (optional). When message export is enabled at the channel configuration level, sent email and SMS content is automatically exported to a dedicated Experience Platform dataset for compliance, archiving, or downstream analysis. Learn about [message export](../../configuration/message-export.md).
+
 In addition, to be able to send messages in journeys, you must configure **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** and **[!UICONTROL Actions]**. Learn more [in this section](../../configuration/about-data-sources-events-actions.md).
 
 ![](../assets/admin-menu.png)

@@ -43,6 +43,39 @@ For each data source, you define the information to retrieve using field groups.
 >
 >Schema relationships are not supported for data sources.
 
+## Choose your data access strategy {#data-access-strategy}
+
+Before configuring a data source, consider which approach best fits your use case. Three options are available, each with different trade-offs in terms of persistence, profile enrichment, and reusability. For a detailed discussion of these options, see [Best practices for advanced journeys in Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
+
+**Option 1 — Access external data via Custom Actions (no Data Lake)**
+
+Connect directly to an external API at journey runtime without persisting data in the Experience Platform Data Lake. Best suited when:
+
+* The data is only useful within the journey context and not needed elsewhere.
+* The external system is accessible through an API endpoint that returns the attributes needed.
+
+Learn more about [custom actions](../action/action.md) and [custom action responses](../action/action-response.md).
+
+**Option 2 — Dataset in Data Lake, not enabled for Profile**
+
+Ingest data into a dataset to trigger and personalize journeys based on contextual event data, without contributing to the Real-Time Customer Profile. Best suited when:
+
+* Records contain an identity field usable to access profiles already stored in Experience Platform.
+* The data is not needed for audience creation or identity stitching outside of Journey Optimizer.
+
+**Option 3 — Profile-enabled dataset in Data Lake**
+
+Ingest data into a profile-enabled dataset to create audiences, enrich identity graphs, and leverage data across multiple journeys and RT-CDP destinations. Best suited when:
+
+* The data is useful for audience definitions used in channels beyond Journey Optimizer.
+* The data contains multiple identities that contribute to richer, stitched profile fragments.
+
+| | Data persisted in Data Lake | Dataset enabled for Profile |
+| --- | --- | --- |
+| **Option 1** — External data via Custom Actions | No | No |
+| **Option 2** — Dataset not enabled for Profile | Yes | No |
+| **Option 3** — Profile-enabled dataset | Yes | Yes |
+
 For more information on how to configure an Adobe Experience Platform Data Source and an external data source and how to find and use data in a journey, watch this [tutorial video](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/journey-configuration/configure-data-sources.html){target="_blank"}.
 
 ## How-to video {#video}

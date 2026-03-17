@@ -47,9 +47,13 @@ Once you've added a decision policy to your content, you can use attributes from
    >
    >If the insertion option doesn't appear, a decision policy might already be configured for the parent component.
 
-3. If no placement has been assigned yet to the component, select one from the list and click **[!UICONTROL Assign]**.  
+3. If no placement has been assigned yet to the component, select one from the list and click **[!UICONTROL Assign]**.
 
    ![](assets/decision-policy-placement.png)
+
+   >[!NOTE]
+   >
+   >If you use multiple decision policies in the same email (for example, one for the header and one for the footer), the same offer is deduplicated across placements: each area receives a different offer. To show the same offer in multiple areas, use **[!UICONTROL Reuse decision output]** when adding a decision policy. [Learn how to create decision policies](create-decision-policy.md).
 
 >[!TAB SMS]
 

@@ -71,7 +71,7 @@ Before starting to create offers, you must define several components that you wi
 
 ## Create and manage offers {#create-and-manage-offers}
 
-1. [Create offers](creating-personalized-offers.md), and configure their content and properties.
+1. [Create offers](creating-personalized-offers.md), and configure their content and properties. When you personalize offer content (representations), only certain functions are supported—see [Supported functions in the personalization editor](personalization-editor-supported-functions.md).
 
 1. [Create fallback offers](creating-fallback-offers.md), which are the last resort offers to display if customers are not eligible for any of the selected offers.
 

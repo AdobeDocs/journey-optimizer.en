@@ -88,15 +88,13 @@ The payload definition allows you to choose the information the system expects t
 
     >[!NOTE]
     >
-    >For system-generated events, make sure that you have added the "orchestration" field group to the XDM schema. This will ensure that your schema contains all the required information to work with [!DNL Journey Optimizer].
+    >For system-generated events:
+    >* Make sure you have added the `orchestration` field group to the XDM schema — this ensures your schema contains all the information required to work with [!DNL Journey Optimizer].
+    >* The **[!UICONTROL eventID]** field is automatically added to the list of selected fields so that [!DNL Journey Optimizer] can identify the event. The system pushing the event should not generate an ID — use the one available in the payload preview instead. [Learn more](../event/about-creating.md#preview-the-payload)
 
     ![](assets/journey9.png)
 
 1. Select the fields that you expect to receive from the event. These are the fields which the business user will leverage in the journey. They must also include the key that will be used to identify the person associated to the event (see [this section](../event/about-creating.md#define-the-event-key)).
-
-    >[!NOTE]
-    >
-    >For system-generated events, the **[!UICONTROL eventID]** field is automatically added in the list of fields selected so that [!DNL Journey Optimizer] can identify the event. The system pushing the event should not generate an ID, it should use the one available in the payload preview. See [this section](../event/about-creating.md#preview-the-payload).
 
 1. When you are done selecting the needed fields, click **[!UICONTROL Ok]** or press **[!UICONTROL Enter]**.
 

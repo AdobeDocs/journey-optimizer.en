@@ -96,11 +96,7 @@ To edit a PTR record with a subdomain that is delegated to Adobe using the [CNAM
     >   * Check on the DNS provider if the forward DNS record was successfully created.
     >   * Records across the DNS may not synchronize immediately. Wait for a few minutes, and try again.
 
-1. Click **[!UICONTROL Save]** to confirm your changes.
-
->[!NOTE]
->
->You cannot modify the **[!UICONTROL IP]** and **[!UICONTROL PTR record]** fields.
+1. Click **[!UICONTROL Save]** to confirm your changes. Note that the **[!UICONTROL IP]** and **[!UICONTROL PTR record]** fields cannot be modified.
 
 ## Check PTR record update details {#check-ptr-record-update}
 

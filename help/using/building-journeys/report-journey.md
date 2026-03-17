@@ -56,7 +56,7 @@ If you do not see expected data in your journey reports, consider the following:
 
 * **Journey status**: Reporting data is only available for published journeys or journeys running in [Dry run mode](journey-dry-run.md). Draft journeys do not generate reporting data.
 
-If issues persist after verifying these items, contact your Adobe administrator or Adobe support for assistance.
+If issues persist after verifying these items, contact your Adobe administrator or [Adobe support](../start/user-interface.md#support-ticket-guidelines) for assistance.
 
 >[!MORELIKETHIS]
 >

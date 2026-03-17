@@ -98,6 +98,10 @@ When using Audience Qualification for a batch audience, note that a peak of entr
 
 Moreover, if the batch audience is newly created and immediately used in a journey, the first batch of calculation can drive many entries. Plan for this spike.
 
+### Timing of Segment Membership Updates {#timing-segment-membership}
+
+When using batch snapshots in a journey, any new segment memberships may only be reflected in subsequent snapshots. If immediate or same-day segment additions are essential, consider streaming segmentation or verifying that segment updates are captured by the next snapshot.
+
 ### Streamed audiences {#streamed-speed-segment-qualification}
 
 When using Audience Qualification for streamed audiences, there is less risk of large entrance and exit peaks because evaluation is continuous. If the audience definition qualifies many customers at once, a peak can still occur.

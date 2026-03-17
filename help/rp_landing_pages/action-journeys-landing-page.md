@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Action configuration
-description: Action configuration
+description: Learn to configure custom actions in Journey Optimizer to connect journeys with third-party systems via API calls, responses, monitoring, and governance.
 redpen-status: CREATED_||_2025-08-11_21-11-53
 exl-id: 4ce42dab-7e8f-454d-8f34-e713312ad7c5
 ---
@@ -20,7 +20,7 @@ Get Started with Custom Actions
 
 Learn how to configure and use custom actions in Adobe Journey Optimizer to deliver personalized, real-time customer experiences.
 
-[Start configuring custom actions](../using/action/action.md)
+[Get started with custom actions](../using/action/action.md)
 :::
 
 :::
@@ -30,7 +30,7 @@ How to Configure Custom Actions
 
 Step-by-step tutorial for setting up custom actions, including security protocols, endpoint configuration, and best practices.
 
-[Follow the configuration guide](../using/action/about-custom-action-configuration.md)
+[Configure a custom action](../using/action/about-custom-action-configuration.md)
 :::
 
 :::
@@ -41,6 +41,16 @@ Using API Call Responses in Custom Actions
 Discover how to use API call responses in custom actions to orchestrate journeys, handle errors, and test implementations.
 
 [Explore API call responses](../using/action/action-response.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+Monitor Your Custom Actions
+
+Track the performance and execution of custom actions in your journeys using built-in monitoring and reporting capabilities.
+
+[Monitor custom actions](../using/action/reporting.md)
 :::
 
 ::::

@@ -12,15 +12,21 @@ exl-id: 5fb79300-08c6-4c06-a77c-d0420aafca31
 ---
 # Code your own content {#code-content}
 
-Use the **[!UICONTROL Code your own]** mode to import raw HTML and/or code your email content. This method requires HTML skills.
+**[!UICONTROL Code your own]** lets you write or paste raw HTML to build email content directly in the [!DNL Journey Optimizer] Email Designer. Use this mode when you need full control over markup or when importing existing HTML.
+
+You must have HTML skills, and once you choose this mode, you stay in the code editor—you cannot switch to the visual editor.
 
 ➡️ [Discover this feature in video](#video)
 
->[!CAUTION]
+>[!NOTE]
 >
-> Images from [Adobe Experience Manager Assets](../integrations/assets.md) cannot be referenced when using this method. The images referenced in your HTML code must be stored into a public location. 
+>**[!UICONTROL Code your own]** is not the same as the advanced HTML editor in content templates. The advanced HTML editor lets you toggle between HTML view and the visual (Desktop) view at any time—not the code editor. [Learn more about the advanced HTML editor](../content-management/email-template-expert-mode.md).
 
-1. From the Email Designer home page, select **[!UICONTROL Code your own]**.
+## Use the code editor {#use-code-editor}
+
+To create or edit email content using the code editor, follow these steps.
+
+1. From the [Email Designer](get-started-email-design.md) home page, select **[!UICONTROL Code your own]**.
 
     ![](assets/code-your-own.png)
 
@@ -49,6 +55,10 @@ Use the **[!UICONTROL Code your own]** mode to import raw HTML and/or code your 
 1. Once your code is ready, click **[!UICONTROL Save]** then go back to the message creation screen to finalize your message.
 
     ![](assets/code-editor-save.png)
+
+>[!CAUTION]
+>
+>Images from [Adobe Experience Manager Assets](../integrations/assets.md) cannot be referenced when using the Code your own method. Store images referenced in your HTML code into a public location.
 
 ## Date and time function limitations {#date-time-limitations}
 
@@ -84,4 +94,4 @@ If you need to perform date calculations in your email content:
 
 * **Use computed attributes** - Create [computed attributes](../audience/computed-attributes.md) that perform complex date calculations, making the results available as profile attributes.
 
-Learn more about [Date Time Functions in personalization](../personalization/functions/dates.md).
+See [Date and time functions](../personalization/functions/dates.md) for the full list of supported functions.

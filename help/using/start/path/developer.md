@@ -79,7 +79,7 @@ For web-based implementations, the Web SDK is your primary integration point:
 
 1. **Configure datastreams**: Create and configure a datastream in [!DNL Adobe Experience Platform Data Collection] with Journey Optimizer enabled. Learn more in the [datastreams documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}.
 
-1. **Enable web push notifications** (optional): Configure the [pushNotifications property](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications){target="_blank"} in your Web SDK configuration and use the [sendPushSubscription command](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription){target="_blank"} to register push subscriptions.
+1. **Enable web push notifications** (optional): Web push notifications are now generally available. Configure the [pushNotifications property](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications){target="_blank"} in your Web SDK configuration and use the [sendPushSubscription command](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription){target="_blank"} to register push subscriptions. [Learn about web push configuration](../../push/push-configuration-web.md).
 
 ### Implement code-based experiences (Web SDK)
 
@@ -157,9 +157,11 @@ Custom actions allow journeys to call your APIs. As a developer, you'll build th
 
 1. **Understand custom action capabilities**: Custom actions can connect to third-party systems like Epsilon, Slack, Firebase, or your own services. Learn more about [custom actions](../../action/action.md).
 
-1. **Work with action configurations**: Your [Administrator](administrator.md) or [Data Engineer](data-engineer.md) will configure the custom action in Journey Optimizer, defining the API endpoint URL, authentication method, and parameters. You'll provide them with your API specification. Learn about [custom action configuration](../../action/about-custom-action-configuration.md).
+1. **Work with action configurations**: Your [Administrator](administrator.md) or [Data Engineer](data-engineer.md) will configure the custom action in Journey Optimizer, defining the API endpoint URL, authentication method, and parameters. You'll provide them with your API specification. Learn about [custom action configuration](../../action/about-custom-action-configuration.md). You can define an optional **error response payload** for richer fallback logic in timeout/error branches.
 
 1. **Return actionable data**: Design your API to return data that can be used in subsequent journey steps. Learn about [action responses](../../action/action-response.md).
+
+1. **Monitor custom action health**: Use the custom action monitoring dashboard to track successful calls, errors, throughput, response times, and queue wait times. Learn about [custom action reporting](../../action/reporting.md).
 
 1. **Implement rate limiting**: Ensure your endpoints can handle the expected volume. Journey Optimizer applies a 5000 calls/second limit, but your system should be resilient. Learn about [capping and throttling](../../configuration/external-systems.md).
 
@@ -178,6 +180,10 @@ Journey Optimizer provides comprehensive REST APIs for programmatic access:
 1. **API-triggered campaigns**: Build transactional messaging with API-triggered campaigns. For high-volume scenarios (up to 5000 TPS), explore [High Throughput mode](../../campaigns/api-triggered-high-throughput.md) (requires add-on license).
 
 1. **Decision Management APIs**: Use specialized APIs for offer management and decisioning. Learn more in the [Decision Management API guide](../../offers/api-reference/getting-started.md).
+
+1. **Decisioning migration APIs**: Programmatically migrate Decision Management entities to Decisioning with flexible scopes, automated validation, and rollback support. Learn more in the [Decisioning migration API guide](../../experience-decisioning/decisioning-migration-api.md).
+
+1. **SMS Webhooks**: Configure inbound webhooks to capture incoming messages and feedback webhooks to receive delivery receipts and status updates. [Learn more](../../sms/sms-webhook.md).
 
 ## Testing and debugging {#testing}
 

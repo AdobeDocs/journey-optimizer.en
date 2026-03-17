@@ -40,7 +40,7 @@ Before starting with campaigns, check the following prerequisites listed [in thi
 1. [Configure the campaign action](campaign-action.md)
 1. [Edit the Action campaign content](campaign-content.md)
 1. [Define the Action campaign audience](campaign-audience.md)
-1. [Schedule the Action campaign](campaign-schedule.md)
+1. [Schedule the Action campaign](campaign-schedule.md). Optionally, [send using waves](send-using-waves.md) to deliver the message in batches over time.
 1. [Review & activate the Action campaign](review-activate-campaign.md)
 
 Learn more about the [complete campaign creation workflow with type-specific guides →](get-started-with-campaigns.md#workflow)

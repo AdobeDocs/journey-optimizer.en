@@ -17,6 +17,8 @@ When configuring a new [email channel configuration](email-settings.md), in the 
 >[!NOTE]
 >
 >For increased control over your email settings, you can personalize the header parameters. [Learn more](../email/surface-personalization.md#personalize-header)
+>
+>When [editing an email configuration](../configuration/channel-surfaces.md#edit-channel-surface), you cannot add new [profile attributes](../personalization/personalization-build-expressions.md#sources) to header parameters. You must create a new channel configuration.
 
 * **[!UICONTROL From name]**: The name of the sender, such as your brand's name.
 * **[!UICONTROL From email prefix]**: The email address you want to use for your communications.
@@ -78,12 +80,9 @@ You need to provide:
 
 >[!NOTE]
 >
->There can be only one forward email address per subdomain. Consequently, if multiple configurations use the same subdomain, the same forward email address must be used for all of them.
+>* There can be only one forward email address per subdomain — if multiple configurations use the same subdomain, the same forward email address must be used for all of them.
+>* If forwarding is not enabled, emails sent directly to the **From email** address are discarded by default.
 
 The forward email address is set up by Adobe. This can take 3 to 4 days.
 
 Once done, all messages received on the **[!UICONTROL Reply to email]** and **Error email** adresses, as well as all emails sent to the **From email** address, are forwarded to the specific email address you provided.
-
->[!NOTE]
->
->By default, if forwarding is not enabled, emails sent directly to the **From email** address are discarded.

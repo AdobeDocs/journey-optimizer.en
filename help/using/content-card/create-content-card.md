@@ -19,13 +19,25 @@ exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
 
 To add a Content card to a journey, follow these steps:
 
-1. Open your journey, then drag and drop a **[!UICONTROL Card]** activity from the **[!UICONTROL Actions]** section of the palette.
+1. Open your [journey](../building-journeys/journey-gs.md), then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+
+    >[!IMPORTANT]
+    >
+    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+
+1. Select **[!UICONTROL Card]** as the action type.
 
     ![](assets/content-card-jo-1.png)
 
-1. Enter a **[!UICONTROL Label]** and **[!UICONTROL Description]** for your message.
+    >[!NOTE]
+    >
+    >As **Card** is an inbound experience activity, it comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
 
-1. Choose your [Content card configuration](content-card-configuration.md) to use.
+1. Enter a **[!UICONTROL Label]** to identify your action in the journey canvas.
+
+1. Click the **[!UICONTROL Configure action]** button.
+
+1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the content card configuration to use. [Learn more](content-card-configuration.md)
 
     ![](assets/content-card-jo-2.png)
 
@@ -80,11 +92,11 @@ To add a Content card to a journey, follow these steps:
         
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
-1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
+1. You can add one or more inbound actions to your content card by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
 
-1. Once your Content card is ready, finalize the configuration and publish your journey to activate it.
+1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 
-For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
+For more information on how to create, configure and publish a journey, refer to [this page](../building-journeys/journey-gs.md).
 
 >[!TAB Add Content cards to a campaign]
 

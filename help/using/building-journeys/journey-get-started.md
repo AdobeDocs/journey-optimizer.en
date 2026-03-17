@@ -59,7 +59,7 @@ Leverage **contextual data** from events, information from [!DNL Adobe Experienc
 
 Use **built-in channel actions** to send messages designed in [!DNL Journey Optimizer] across email, push, SMS/MMS, and more.
 
-[Send messages in journeys](journeys-message.md)
+[Send messages in journeys](journey-action.md)
 :::
 
 :::
@@ -98,7 +98,7 @@ Test your journeys before publishing, monitor their performance, and optimize de
 
 From within the journey designer, marketers can send real-time triggered 1:1 messages through any channel when an event occurs. For example, when a customer subscribes to a service, it can [trigger a welcome email](message-to-subscribers-uc.md), encouraging them to log into the app for the first time and set their preferences. Actions like completing the purchase, opening the email, and logging into the app can be used to advance new customers through their journeys.
 
-The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journeys-message.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
+The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journey-action.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
 
 
 :::: landing-cards-container

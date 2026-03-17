@@ -25,7 +25,13 @@ To add a **code-based experience** activity to a journey, follow these steps:
 
 1. Start your journey with an [Event](../building-journeys/general-events.md) or a [Read Audience](../building-journeys/read-audience.md) activity.
 
-1. Drag and drop a **[!UICONTROL Code-based experience]** activity from the **[!UICONTROL Actions]** section of the palette.
+1. Drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+
+    >[!IMPORTANT]
+    >
+    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+
+1. Select **[!UICONTROL Code-based experience]** as the action type.
 
    ![](assets/code-based-activity-journey.png)
 
@@ -33,9 +39,11 @@ To add a **code-based experience** activity to a journey, follow these steps:
     >
     >As **Code-based experience** is an inbound experience activity, it comes with a 3-days **Wait** activity. [Learn more](../building-journeys/wait-activity.md#auto-wait-node)
 
-1. Enter a **[!UICONTROL Label]** and **[!UICONTROL Description]** for your message.
+1. Enter a **[!UICONTROL Label]** to identify your action in the journey canvas.
 
-1. Select or create the code-based experience configuration to use. [Learn more](code-based-configuration.md)
+1. Click the **[!UICONTROL Configure action]** button.
+
+1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the code-based experience configuration to use. [Learn more](code-based-configuration.md)
 
     ![](assets/code-based-activity-config.png)
 
@@ -47,11 +55,11 @@ To add a **code-based experience** activity to a journey, follow these steps:
 
     You can also use an existing content template as a basis for your code content. Note that the templates available to choose are scoped to either HTML or JSON based on the channel configuration that has been chosen beforehand. [Learn how to use content templates](../content-management/use-content-templates.md)
 
-1. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
+1. You can add one or more inbound actions to your code-based experience by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
 
-1. Once your code-based experience is ready, finalize the configuration and publish your journey to activate it. [Learn more](../building-journeys/publish-journey.md)
+1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
 
-For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
+For more information on how to create, configure and publish a journey, refer to [this page](../building-journeys/journey-gs.md).
 
 >[!TAB Create a code-based experience campaign]
 
@@ -79,7 +87,7 @@ To start building your **code-based experience** through a campaign, follow the 
 
     <!--![](assets/code-based-campaign-edit-content.png)-->
 
-For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
+For more information on how to create, configure and activate a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 ➡️ [Learn how to create a code-based experience campaign in this video](#video)
 

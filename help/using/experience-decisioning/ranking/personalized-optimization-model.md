@@ -74,4 +74,4 @@ Cold-start problem occurs when there isn't enough data to make recommendation. F
 
 ## Re-training {#re-training}
 
-Models will be re-trained to learn latest feature interactions and mitigate model performance degradation weekly.
+Models will be re-trained to learn latest feature interactions and mitigate model performance degradation weekly. To monitor training status and model performance, see [AI model monitoring](ai-model-observability.md).

@@ -2,26 +2,13 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure the Live activity channel
-description: Learn how to configure your environment to send Live activities with Journey Optimizer
+description: Learn how to configure your environment to send Live activity with Journey Optimizer
 feature: Channel Configuration
 role: Admin
 level: Intermediate
-hide: yes
-hidefromtoc: yes
 exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
 ---
 # Get started with Live activity configuration {#mobile-live-config}
-
->[!BEGINSHADEBOX]
-
-* [Get started with Live activity](get-started-mobile-live.md)
-* **[Live activity configuration](mobile-live-configuration.md)**
-* [Live Activity integration with Adobe Experience Platform Mobile SDK](mobile-live-configuration-sdk.md)
-* [Create a Live activity](create-mobile-live.md)
-* [Frequently asked questions](mobile-live-faq.md)
-* [Live activity campaign report](../reports/campaign-global-report-cja-activity.md)
-
->[!ENDSHADEBOX]
 
 Before sending your Live activity, you must configure your Adobe Journey Optimizer environment. To perform this:
 
@@ -29,7 +16,7 @@ Before sending your Live activity, you must configure your Adobe Journey Optimiz
 
 The mobile app push credential registration is required to authorize Adobe to send push notifications on your behalf. 
 
-Step 1 is optional if your push credentials have already been configured, as these can be reused for the Live Activity channel configuration. If no credentials are defined, you must create new push credentials for your app. Refer to the steps detailed below:
+Step 1 is optional if your push credentials have already been configured, as these can be reused for the Live activity channel configuration. If no credentials are defined, you must create new push credentials for your app. Refer to the steps detailed below:
 
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]** menu.
 
@@ -61,7 +48,7 @@ Step 1 is optional if your push credentials have already been configured, as the
 
     ![](assets/config-1.png)
 
-1. Enter a name and a description (optional) for the configuration, then select the WhatsApp channel.
+1. Enter a name and a description (optional) for the configuration, then select the Live activity channel.
 
     >[!NOTE]
     >
@@ -92,3 +79,7 @@ Step 1 is optional if your push credentials have already been configured, as the
 You can now start integration with Adobe Experience Platform Mobile SDK to enable real-time, dynamic updates on the Lock Screen and Dynamic Island. 
 
 ➡️ [Learn more on Adobe Experience Platform Mobile SDK integration](mobile-live-configuration-sdk.md)
+
+>[!TIP]
+>
+>If you encounter issues with Live Activity configuration or delivery, see [Troubleshoot Live Activities](troubleshoot-mobile-live.md) for debugging steps.

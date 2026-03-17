@@ -51,7 +51,7 @@ Conflict Management and Prioritization
 
 Learn how to prioritize and manage communication conflicts across campaigns and journeys effectively.
 
-[Learn Conflict Management](conflict-prioritization-landing-page.md)
+[Learn Conflict Management](../using/conflict-prioritization/gs-conflict-prioritization.md)
 :::
 
 ::::
