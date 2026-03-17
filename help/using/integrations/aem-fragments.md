@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 ---
-# # Work with Adobe Experience Manager Content Fragments {#aem-fragments}
+# Work with Adobe Experience Manager Content Fragments {#aem-fragments}
 
 The integration between Adobe Experience Manager and Journey Optimizer follows this data flow:
 
