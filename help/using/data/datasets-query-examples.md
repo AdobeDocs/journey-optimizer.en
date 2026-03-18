@@ -19,7 +19,7 @@ In this page, you will find the list of Adobe Journey Optimizer datasets and rel
 * [Push Tracking Experience Event Dataset](#push-tracking-experience-event-dataset)
 * [Journey Step Event](#journey-step-event)
 * [Decisioning Event Dataset](#ode-decisionevents)
-* [BCC Feedback Event Dataset](#bcc-feedback-event-dataset)
+* [Secondary recipient feedback event dataset (BCC)](#bcc-feedback-event-dataset)
 * [Entity Dataset](#entity-dataset)
 
 To view the complete list of fields and attributes for each schema, consult the [Journey Optimizer schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html){target="_blank"}.
@@ -330,11 +330,11 @@ select value.marketing.email.val FROM (
 ```
 -->
 
-## BCC Feedback Event Dataset{#bcc-feedback-event-dataset}
+## Secondary recipient feedback event dataset (BCC){#bcc-feedback-event-dataset}
 
-_Name in the interface: AJO BCC Feedback Event Dataset (system dataset)_
+_Name in the interface: AJO Secondary Recipient Feedback Event Dataset (system dataset). In Query Service, the dataset table may still be named `ajo_bcc_feedback_event_dataset`._
 
-Dataset to store information for BCC Messages.
+Dataset for email BCC (secondary recipient) messages when BCC archiving is enabled.
 
 Query for all BCC messages within 2 days (for a particular campaign):
 
