@@ -431,6 +431,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Configure email settings** page has been divided into several sub-pages for improved readability, including new standalone pages dedicated to [List unsubscribe](../email/list-unsubscribe.md), [Header parameters](../email/header-parameters.md) and [URL tracking](../email/url-tracking.md).
 
++++ 2024
+
 ## December 2024 {#nov-2024}
 
 * A note has been added to help troubleshoot a potential error message when making an API call to enable datasets for personalization using Adobe Experience Platform data. [Read more](../personalization/aep-data-perso.md)
@@ -551,6 +553,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Update the **duration** parameter in the `toString` function. [Read more](../building-journeys/functions/conversion-functions.md#toString)
 * For some external data sources use-cases, usage of custom actions is recommended.
 * Event field syntax has been updated. The following syntax is deprecated `@(my_event.myfield}` and replaced by `@event{my_event.myfield}`. [Read more](../building-journeys/expression/field-references.md)
+
++++
 
 +++ 2023
 
