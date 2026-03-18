@@ -394,7 +394,7 @@ Improvements coming with this release are listed below.
 
   Availability date: February 2, 2026.
 
-## Coming soon {#coming-soon}
+<!--## Coming soon {#coming-soon}
 
 The features and improvements below are planned for release later in February. Release dates and scope may change without prior notice.
 
@@ -403,4 +403,5 @@ The features and improvements below are planned for release later in February. R
 * **Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
 
   Availability date: February 18, 2026
+-->
 
