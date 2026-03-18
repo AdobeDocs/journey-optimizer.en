@@ -106,7 +106,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
         * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-In keyword.
 
-    +++
+        +++
 
     * +++ Opt-Out
 
@@ -118,7 +118,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
         * Enable **[!UICONTROL Fuzzy Logic]** to detect similar keywords to configured Opt-Out keywords. If a user's response is close but not exact, the message entered in the **[!UICONTROL Fuzzy Auto Response]** field is sent. Typically, this message indicates the opt-out did not occur and specifies the exact keyword needed to unsubscribe.
 
-    +++
+        +++
 
     * +++ Double Opt-In
 
@@ -136,7 +136,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
         * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches a Help keyword.
 
-    +++
+        +++
 
     * +++ Custom
 
@@ -144,7 +144,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
         * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 
-    +++
+        +++
 
 1. Enter a **[!UICONTROL Default Reply Message]**. This message is automatically sent when a user's response does not match any configured keyword.
 
@@ -207,7 +207,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
         * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-In keyword.
 
-    +++
+        +++
 
     * +++ Opt-Out
 
@@ -219,7 +219,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
         * Enable **[!UICONTROL Fuzzy Logic]** to detect similar keywords to configured Opt-Out keywords. If a user's response is close but not exact, the message entered in the **[!UICONTROL Fuzzy Auto Response]** field is sent. Typically, this message indicates the opt-out did not occur and specifies the exact keyword needed to unsubscribe.
 
-    +++
+        +++
 
     * +++ Double Opt-In
 
@@ -227,7 +227,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
         * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a double opt-in keyword is matched. This message instructs the user to enter an Opt-In keyword to complete the opt-in process.
 
-    +++
+        +++
 
     * +++ Help
 
@@ -237,7 +237,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
         * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches a Help keyword.
 
-    +++
+        +++
 
     * +++ Custom
 
@@ -245,7 +245,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
         * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 
-    +++
+        +++
 
 1. Enter a **[!UICONTROL Default Reply Message]**. This message is automatically sent when a user's response does not match any configured keyword.
 
@@ -315,7 +315,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
         * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-In keyword.
 
-    +++
+        +++
 
     * +++ Opt-Out
 
@@ -327,7 +327,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
         * Enable **[!UICONTROL Fuzzy Logic]** to detect similar keywords to configured Opt-Out keywords. If a user's response is close but not exact, the message entered in the **[!UICONTROL Fuzzy Auto Response]** field is sent. Typically, this message indicates the opt-out did not occur and specifies the exact keyword needed to unsubscribe.
 
-    +++
+        +++
 
     * +++ Double Opt-In
 
@@ -335,7 +335,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
         * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a double opt-in keyword is matched. This message instructs the user to enter an Opt-In keyword to complete the opt-in process.
 
-    +++
+        +++
 
     * +++ Help
 
@@ -345,7 +345,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
         * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches a Help keyword.
 
-    +++
+        +++
 
     * +++ Custom
 
@@ -353,7 +353,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
         * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 
-    +++
+        +++
 
 1. Enter a **[!UICONTROL Default Reply Message]**. This message is automatically sent when a user's response does not match any configured keyword.
 
