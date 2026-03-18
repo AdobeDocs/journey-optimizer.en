@@ -359,15 +359,17 @@ The following guardrails apply to the [Read Audience](../building-journeys/read-
 
 * Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
 * At journey entry, profiles use attribute values from the batch audience snapshot. However, when a profile reaches a **Wait** activity, the journey automatically refreshes profile attributes by fetching the latest data from Unified Profile Service (UPS). This means profile attributes may change during journey execution.
-* For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system but please avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time by spreading them over time, for example 5 to 10 minutes apart. Learn more about journey processing rates in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 * The **Read Audience** activity cannot be used with Adobe Campaign activities.
-* The **Read Audience** activity can only be used as a first activity in a journey, of after a business event activity.
+* The **Read Audience** activity can only be used as a first activity in a journey, or after a business event activity.
 * A journey can only have one **Read Audience** activity.
-* See also recommendations about how to use the **Read Audience** activity on [this page](../building-journeys/read-audience.md).
+* The **Read Audience** activity can target only one audience per journey. If multiple audiences are required, merge them into a single audience first. [Learn how to combine audiences using composition workflows](../audience/get-started-audience-orchestration.md).
+* Each organization can run up to five **Read Audience** instances concurrently (scheduled or business-event triggered), across all sandboxes and journeys. Avoid having more than five journeys with **Read Audience** starting at the exact same time; spread them 5 to 10 minutes apart. Learn more about journey processing rates in [this section](../building-journeys/entry-management.md#journey-processing-rate).
+* Sandbox throughput: the system manages processing per sandbox with a maximum of 20,000 profiles per second shared across all **Read Audience** activities. Individual activities can be configured from 500 to 20,000 profiles per second. If sandbox limits are reached, jobs may be queued.
+* Job processing timeout: **Read Audience** jobs that cannot be processed within 12 hours are automatically cleaned up and will not execute.
 * Retries are applied by default on audience-triggered journeys (starting with a **Read Audience** or a **Business Event**) while retrieving the export job. If an error occurs during the export job creation, retries will be made every 10mn, for 1 hour max. After that, we will consider it as a failure. Those types of journeys can therefore be executed up to 1 hour after the scheduled time.
 * For journeys using supplemental IDs, the reading rate of the read audience activity for each journey instance is limited to a maximum of 500 profiles per second.
 
-See also [this page](../building-journeys/read-audience.md#must-read).
+See also [recommendations and configuration](../building-journeys/read-audience.md#must-read) for the Read Audience activity.
 
 #### Update profile activity {#update-profile-g}
 

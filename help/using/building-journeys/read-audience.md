@@ -13,7 +13,7 @@ version: Journey Orchestration
 ---
 # Use an audience in a journey {#segment-trigger-activity}
 
-Use the Read Audience activity to start journeys with defined audiences. You choose the audience and when it runs; then use [conditions to segment, exclude, or merge branches](#audience-targeting-in-journeys), timers, and actions to personalize each profile's path.
+Use the Read Audience activity to start journeys with defined audiences. You choose the audience and when it runs; then use [conditions](#audience-targeting-in-journeys), timers, and actions to personalize each profile's path.
 
 ## About the Read Audience activity {#about-segment-trigger-activity}
 
@@ -32,9 +32,9 @@ The **Read Audience** activity is the journey entry-point activity that adds all
 | Your audience is batch-evaluated (e.g. daily snapshot). | Your audience is streaming or event-based. |
 | You are okay with a delay between audience evaluation and journey entry. | You need immediate entry when a profile qualifies. |
 
-**Key limits:** One Read Audience per journey (must be the first activity, or the second after a Business Event); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and recommendations](#must-read).
+**Key limits:** One Read Audience per journey (must be the first activity); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and limitations](../start/guardrails.md#read-segment-g).
 
-**Prerequisites:** An [!DNL Adobe Experience Platform] audience that is built and evaluated (Realized status), a people-based identity namespace selected for the journey, and—for recurring runs—understanding of [scheduling and throughput limits](#must-read).
+**Prerequisites:** An [!DNL Adobe Experience Platform] audience that is built and evaluated (Realized status), a people-based identity namespace selected for the journey, and—for recurring runs—understanding of [scheduling and throughput limits](../start/guardrails.md#read-segment-g).
 
 For example, the `Luma app opening and checkout` audience created in the [Build audiences](../audience/about-audiences.md) use case can be used as the entry point. All qualified profiles enter the journey and progress through individualized paths using conditions, timers, events, and actions.
 
@@ -108,27 +108,13 @@ You can optionally enable **Use a supplemental identifier** to run the journey i
 
 ### Guardrails and recommendations {#must-read}
 
-* Only one **[!UICONTROL Read Audience]** activity can be used in a journey. It must be the first activity in the canvas, except in journeys that start with a **Business Event** activity, in which case it is the second activity.
+All guardrails and limitations for the **Read Audience** activity (concurrency, throughput, one audience per activity, job timeout, retries, and more) are listed in [Guardrails and limitations](../start/guardrails.md#read-segment-g).
 
-* The **[!UICONTROL Read audience]** activity can target only one audience. If multiple audiences are required, consider merging those audiences into a single one before use. [Learn how to combine audiences using composition workflows](../audience/get-started-audience-orchestration.md)
+**Recommendations**
 
-* For journeys using a **Read Audience** activity, there is a maximum number of journeys that can start at the exact same time. Retries will be performed by the system. However, avoid having more than five journeys (with **Read Audience**, scheduled or starting "as soon as possible") starting at the exact same time. Best practice is to spread them over time, for example 5 to 10 minutes apart.
-
-* Experience event field groups can not be used in journeys starting with a **Read audience** activity, an **[Audience qualification](audience-qualification-events.md)** activity, or a business event activity.
-
-* As a best practice, we recommend you only use batch audiences in a **Read audience** activity. This will provide reliable and consistent count for the audiences used in a journey. Read audience is designed for batch use cases. If your use case needs real time data please use **[Audience qualification](audience-qualification-events.md)** activity.
-
+* As a best practice, use batch audiences in a **Read audience** activity for reliable and consistent counts. Read audience is designed for batch use cases. If your use case needs real-time data, use the [Audience qualification](audience-qualification-events.md) activity instead.
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
-
-* Concurrent Read Audience Limit per Organization: Each organization can run up to five Read Audience instances concurrently. This includes both scheduled runs and those triggered by business events. The limit applies across all sandboxes and journeys. This limit is enforced to ensure fair and balanced resource allocation across all organizations.
-
-* Sandbox throughput management: The system dynamically manages processing throughput per sandbox with a maximum limit of 20,000 profiles per second shared across all Read Audience activities. Individual Read Audience activities can be configured with a minimum rate of 500 profiles per second. If sandbox-level throughput limits are reached, jobs may be queued to ensure fair resource allocation.
-
-* Job processing timeout: Read Audience jobs that cannot be processed within 12 hours due to guardrail limits will be automatically cleaned up and will never execute. This prevents job accumulation and ensures system stability.
-
-* When using batch segments, ensure your ingestion and daily snapshot updates complete well before the journey starts. Consider an additional wait period if segments must reflect data ingested the same day. If immediate profile freshness is critical, use an event-based or streaming approach instead of a daily batch approach. Alternatively, insert a waiting mechanism to allow updated data to propagate before the journey evaluation.
-
-Guardrails related to the **Read Audience** activity are listed in [this page](../start/guardrails.md#read-segment-g).
+* When using batch segments, ensure ingestion and daily snapshot updates complete well before the journey starts. Consider an additional wait period if segments must reflect data ingested the same day. If immediate profile freshness is critical, use an event-based or streaming approach, or add a **Wait** activity to allow updated data to propagate before evaluation.
 
 >[!CAUTION]
 >
@@ -201,10 +187,6 @@ By default, journeys are configured to run once. To define a specific date/time 
 1. The journey's properties display. In the **[!UICONTROL Scheduler type]** drop-down list, select the frequency at which you want the journey to run.
 
     ![Scheduler type dropdown with frequency options: once, daily, weekly, monthly](assets/read-segment-schedule-list.png)
-
->[!TIP]
->
->To deliver outbound messages in batches over time instead of all at once, you can configure wave sending in the journey schedule. [Learn how to send using waves in journeys](send-using-waves.md)
 
 For recurring journeys, specific options are available to help you manage the entry of profiles into the journey. Expand the sections below for more information on each option.
 
@@ -291,10 +273,6 @@ Once the tests are successful, you can publish your journey (see [Publishing the
 Audience-based journeys always start with a **Read Audience** activity to retrieve individuals belonging to an [!DNL Adobe Experience Platform] audience. Those profiles are read once or on a recurring schedule.
 
 After they enter the journey, you orchestrate them using **Condition** activities: segment by attributes or behavior, exclude part of the population, or merge branches back together (union). The sections below describe each pattern.
-
->[!NOTE]
->
->The [**Optimize** activity](optimize.md) provides an alternative for advanced path routing including experimentation and targeting rules. It is currently in Limited Availability — contact your Adobe representative to learn more.
 
 **Segmentation**
 
@@ -392,7 +370,7 @@ If the issue persists after these checks, see [Timing and data propagation](#tim
 
 ### When to contact support
 
-If count mismatches or zero-profile runs persist after following the steps above, [contact Adobe support](../start/user-interface.md#support-ticket-guidelines). Have ready: audience name/ID, journey name/ID, scheduled run time(s), sandbox, and a short description of the discrepancy (e.g. "Audience shows 10K realized, only 2K entered the journey on [date]").
+If count mismatches or zero-profile runs persist after following the steps above, contact Adobe support. Have ready: audience name/ID, journey name/ID, scheduled run time(s), sandbox, and a short description of the discrepancy (e.g. "Audience shows 10K realized, only 2K entered the journey on [date]").
 
 ## Retries {#read-audience-retry}
 
@@ -400,12 +378,14 @@ Retries are applied by default on audience-triggered journeys (starting with a *
 
 Unsuccessful **Read Audience** triggers are captured and displayed in **Alerts**. The **Read Audience alert** warns you if a **Read Audience** activity has not processed any profile 10 minutes after the scheduled execution time. This failure can be caused by technical issues or an empty audience. If the failure is due to technical issues, retries can still occur depending on the issue type. For example, if export job creation fails, we retry every 10 minutes for up to 1 hour. [Learn more](../reports/alerts.md#alert-read-audiences)
 
+For the full list of Read Audience guardrails (including retry and throughput limits), see [Guardrails and limitations](../start/guardrails.md#read-segment-g).
+
 ## Related topics
 
 * [Build audiences](../audience/about-audiences.md)
 * [Audience Qualification activity](audience-qualification-events.md)
 * [Use supplemental identifiers in journeys](supplemental-identifier.md)
-* [Journey properties and guardrails](../start/guardrails.md#read-segment-g)
+* [Guardrails and limitations](../start/guardrails.md#read-segment-g)
 * [Journey processing rates and entry management](entry-management.md)
 * [Test a journey](testing-the-journey.md)
 * [Publish a journey](../building-journeys/publish-journey.md)
