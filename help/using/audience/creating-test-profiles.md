@@ -38,7 +38,7 @@ To **create a schema**, follow these steps:
     ![Schemas menu with Create schema button](assets/test-profiles-0.png)
 
 1. Select **[!UICONTROL Standard]** as the schema creation option.
-1. Select a schema type, for example **[!UICONTROL Individual Profile]**, and click **Next**.
+1. Select a schema type, for example **Individual Profile**, and click **Next**.
     ![Schema type selection showing Individual Profile option](assets/test-profiles-1.png)
 1. Enter a name for your schema and click **Finish**.
     ![Name and save schema dialog](assets/test-profiles-1-bis.png)

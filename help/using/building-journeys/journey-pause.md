@@ -110,7 +110,7 @@ To resume a paused journey, and start listening to journey events again, follow 
 
 From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
 
-<!-- DOCAC-14191 ## View when a journey was paused or resumed {#view-pause-resume-info}
+## View when a journey was paused or resumed {#view-pause-resume-info}
 
 To see when a journey was last paused or resumed, and by whom, open the journey and go to its **properties** (click the pencil icon next to the journey name). Use the **Copy technical details** button to copy technical information that includes:
 
@@ -118,7 +118,7 @@ To see when a journey was last paused or resumed, and by whom, open the journey 
 * The display name and identifier of the user who performed the last pause and the last resume
 * Paused journey settings (pause behavior, max pause duration, auto-resume state, pause ID)
 
-This information is useful for troubleshooting, auditing, or sharing with support. For the complete list of copied fields, see [Access the properties of a journey](journey-properties.md#access-properties).--> 
+This information is useful for troubleshooting, auditing, or sharing with support. For the complete list of copied fields, see [Access the properties of a journey](journey-properties.md#access-properties).
 
 ## Apply an exit criteria in a paused journey {#journey-exit-criteria}
 

@@ -52,7 +52,7 @@ The **Copy technical details** option allows you to copy technical information a
 * `lastDeployedBy` – User who last published the journey
 * `lastDeployedAt` – Date and time of the last publication
 
-<!--DOCAC-14191 
+
 **Pause and resume** (included when the journey has been paused at least once)
 
 * `lastPausedAt` – Date and time of the last time the journey was paused
@@ -67,7 +67,7 @@ The **Copy technical details** option allows you to copy technical information a
 * `pauseBehavior` – What happens to profiles in the journey when it is paused (for example, discard them or keep them in place)
 * `maxPauseDurationInMinutes` – Maximum pause duration in minutes, after which the journey auto-resumes (for example, 20160 = 14 days)
 * `transitionStateForAutoResume` – State applied when the journey auto-resumes at the end of the pause period (for example, stop or continue)
-* `pauseId` – Unique identifier for the current pause instance -->
+* `pauseId` – Unique identifier for the current pause instance
 
 Learn more about technical fields related to a journey for a given profile, and how to use them [on this page](expression/journey-properties.md).
 
