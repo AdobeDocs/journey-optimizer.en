@@ -205,24 +205,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Carbon copy (CC) support for email</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now add <strong>carbon copy (CC) recipients</strong> to outbound email messages sent through Journey Optimizer. Use this capability to send copies of customer communications to internal teams or compliance addresses for archiving and oversight purposes.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: March 2, 2026</p>
-<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14051">DOCAC-14051</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Native channel action activities deprecated</strong><br/></th>
 </tr>
 </thead>
