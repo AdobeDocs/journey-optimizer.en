@@ -126,7 +126,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
         * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a double opt-in keyword is matched. This message instructs the user to enter an Opt-In keyword to complete the opt-in process.
 
-    +++
+        +++
 
     * +++ Help
 
