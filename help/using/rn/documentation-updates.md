@@ -41,6 +41,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Datasets Time-to-live (TTL) guardrails** documentation has been enhanced with a new FAQ entry to clearly identify which datasets are subject to TTL. TTL applies exclusively to time-series datasets — record-type datasets such as entity datasets, classification datasets, and decision object repositories are not subject to TTL and will not be impacted by the guardrail rollout. [Read more](../data/datasets-ttl.md)
 
+* The **Journey properties** and **Pause a journey** documentation have been updated to document the new pause and resume fields now available in the journey technical details. The **Copy technical details** button now includes `lastPausedAt`, `lastPausedBy`, `lastPausedById`, `lastResumedAt`, `lastResumedBy`, and `lastResumedById`, in addition to the existing `pausedJourneySettings` block. A new section has also been added to the **Pause a journey** page explaining how to view pause and resume timestamps directly from journey properties. [Read more](../building-journeys/journey-properties.md)
+
 ## February 2026 {#february-2026}
 
 * A new page is now available for Decision management. It lists all operators, helpers, and functions supported when personalizing offer content (representations) with the personalization editor. Use this list to avoid runtime errors. Only the documented functions are supported when personalizing content in Offer Decisioning. [Read more](../offers/offer-library/personalization-editor-supported-functions.md)

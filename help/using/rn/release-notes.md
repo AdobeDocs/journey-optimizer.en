@@ -128,12 +128,19 @@ Because of this model, release notes are updated between monthly releases. For f
 
   Availability date: March 16, 2026
 
+* **Pause and resume details in journey technical details** - The journey **technical details** now include additional pause and resume information: the date and time of the last pause and resume, the display name and internal identifier of the user who performed each action, and a full set of paused journey settings such as pause behavior, maximum pause duration, and auto-resume state. [Learn more](../building-journeys/journey-properties.md)
+
+  Availability date: March 2, 2026
+
+
 #### Configuration
 
 * **Change in AJO Secondary Recipient Feedback Event Dataset** - The AJO Email BCC Feedback Event Dataset is being renamed to AJO Secondary Recipient Feedback Event Dataset. 
   * **Existing users**: Only the display name changes. The underlying table name remains unchanged.
   * **New users and new sandboxes**: Both the display name and table name use the new name.
   * **Existing users/organizations with new sandboxes**: Both the display name and table name change to the new name.
+
+    Availability date: March 2, 2026
 
 ## February '26 release notes {#feb-26-01-rn}
 
