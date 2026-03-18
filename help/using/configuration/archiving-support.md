@@ -78,11 +78,11 @@ However, the BCC address gets picked up for sending communications following the
 
 ### GDPR compliance {#gdpr-compliance}
 
-Regulations such as GDPR state that Data Subjects should be able to modify their consent at any time. Because the BCC emails you are sending with Journey Optimizer include securely personally identifiable information (PII), you must edit the **[!UICONTROL CJM Secondary Recipient Feedback Event Schema]** to be able to manage these PII in compliance with GDPR and similar regulations.
+Regulations such as GDPR state that Data Subjects should be able to modify their consent at any time. Because the BCC emails you are sending with Journey Optimizer include securely personally identifiable information (PII), you must edit the **[!UICONTROL AJO Secondary Recipient Feedback Event Schema]** to be able to manage these PII in compliance with GDPR and similar regulations.
 
 To do this, follow the steps below.
 
-1. Go to **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** and select **[!UICONTROL CJM Secondary Recipient Feedback Event Schema]**.
+1. Go to **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** and select **[!UICONTROL AJO Secondary Recipient Feedback Event Schema]**.
 
     ![](assets/preset-bcc-schema.png)
 
