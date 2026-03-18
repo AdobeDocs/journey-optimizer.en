@@ -224,7 +224,7 @@ Improvements coming with this release are listed below.
 
 #### Journeys
 
-* **Dataset lookup support in journeys** - You can now look up data from Adobe Experience Platform datasets directly within journey conditions, expressions, and actions, enriching personalization with catalog data, reference tables, and other structured datasets. Previously released in Limited Availability, this capability is now available to all environments (General Availability).
+* **Dataset lookup support in journeys** -A new activity in journeys, Dataset lookup, allows you to to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely. Previously released in Limited Availability, this capability is now available to all environments (General Availability).
   Documentation JIRA task: [DOCAC-14351](https://jira.corp.adobe.com/browse/DOCAC-14351)
 
 * **Journey Arbitration - AI Models** - In addition to ranking formulas, AI models can now be used with Journey Arbitration to automatically rank and prioritize journey entry for customers, using machine learning to determine the most relevant journey for each profile based on historical behavior and contextual signals. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
