@@ -255,7 +255,7 @@ Improvements coming with this release are listed below.
 
 #### Decisioning
 
-* **Expression Fragment Reference change feed support in Edge Decisioning** - Expression fragments used in Edge Decisioning now support the change feed mechanism, ensuring that updates to expression fragments are propagated in near real time to edge nodes.
+* **Expression Fragment Reference change feed support in Edge Decisioning** - This enhancement allows changes in fragment references to automatically be reflected in all items that reference fragments, without needing to refresh anything manually (republishing the campaign or decision policy).
   Documentation JIRA task: [DOCAC-14350](https://jira.corp.adobe.com/browse/DOCAC-14350)
 
 * **Optional fragments in decision items** - Fragments attached to decision items can now be configured as optional, providing greater flexibility in content composition when not all decision item renderings require a specific fragment.
