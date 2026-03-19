@@ -84,7 +84,7 @@ To do this, follow the steps below.
 
 1. Go to **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** and select **[!UICONTROL AJO Secondary Recipient Feedback Event Schema]**.
 
-    ![](assets/preset-bcc-schema.png)
+    <!--<![](assets/preset-bcc-schema.png)-->
 
 1. Click to expand **[!UICONTROL _experience]**, **[!UICONTROL customerJourneyManagment]** then **[!UICONTROL secondaryRecipientDetail]**.
 
@@ -96,7 +96,7 @@ To do this, follow the steps below.
 
 1. Select a namespace from the drop-down list.
 
-    ![](assets/preset-bcc-schema-identity.png)
+    <!--<![](assets/preset-bcc-schema-identity.png)-->
 
 1. Click **[!UICONTROL Apply]**.
 
