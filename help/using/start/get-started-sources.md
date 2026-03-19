@@ -89,6 +89,10 @@ Adobe Journey Optimizer uses the sources framework from Adobe Experience Platfor
 
 Once configured, sources run automatically in the background, keeping your customer data fresh and ready for use in journeys.
 
+>[!NOTE]
+>
+>**Data ingestion for Orchestrated campaigns** - For file-based Change Data Capture sources used with Orchestrated campaigns, the `_change_request_type` field is required. Supported values are `u` (upsert) or `d` (delete). These values must be lowercase `u` and `d`, not uppercase `U` and `D`. [Learn more on Orchestrated campaigns guardrails & limitations](../orchestrated/guardrails.md)
+
 ## Learn more {#learn-more}
 
 ![](assets/sources-home.png)
