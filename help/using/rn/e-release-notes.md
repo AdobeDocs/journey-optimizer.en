@@ -12,6 +12,7 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 [!DNL Adobe Journey Optimizer] continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated at the end of each month in the [release notes](release-notes.md). 
 
+<!--
 ## March '26 pre-release notes {#march-26-rn}
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
@@ -303,6 +304,8 @@ Improvements coming with this release are listed below.
 
 * **Target dimension simplification in Orchestrated Campaigns** - You can now easily select or automatically deduce the right targeting and secondary dimensions in Orchestrated campaigns for accurate, efficient audience activation.
   Documentation JIRA task: [DOCAC-13554](https://jira.corp.adobe.com/browse/DOCAC-13554)
+
+-->
 
 <!--
 ## February '26 pre-release notes {#feb-26-01-rn}
