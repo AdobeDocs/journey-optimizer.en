@@ -34,13 +34,11 @@ The main steps to create a journey are detailed on this page. They are streamlin
 In this guide, you will:
 
 * Define a journey entry point — an audience segment or a real-time event
-* Add message actions across channels (email, push, or SMS)
+* Add message actions across channels — email, push, SMS, in-app, web, code-based experience, content card, and more. [See supported channels](journey-action.md)
 * Test your journey with test profiles before activation
 * Publish your journey and monitor its performance
 
-Build multi-step customer journeys to initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Target audiences are defined based on behavior, contextual data, and business events. Prerequisites depend on your use case and the [type of journey](entry-management.md#types-of-journeys) you are building.
-
-Learn more about how profiles flow through journeys and journey processing rates in [this section](entry-management.md#journey-processing-rate).
+Build multi-step customer journeys to initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals.
 
 <!--
 >[!TIP]
@@ -64,11 +62,9 @@ The following elements are optional, but may be required depending on your use c
 
 >[!NOTE]
 >
->If you are a data engineer responsible for the technical setup (events, data sources, and actions), refer to [this section](../configuration/about-data-sources-events-actions.md).
-
->[!NOTE]
+>* If you are a data engineer responsible for the technical setup (events, data sources, and actions), refer to [this section](../configuration/about-data-sources-events-actions.md).
 >
->Journey guardrails and limitations are detailed on [this page](../start/guardrails.md).
+>* Journey guardrails and limitations are detailed on [this page](../start/guardrails.md).
 
 ## Create a journey {#jo-build}
 
@@ -82,7 +78,7 @@ To create a multi-step journey, follow these steps:
 
    >[!TIP]
    >
-   >**Which journey type should I choose?** If you are new to Journey Optimizer, start with an audience-based journey using a **[!UICONTROL Read Audience]** activity — it requires no prior event configuration and is the easiest way to get familiar with the canvas. For real-time, event-triggered experiences (for example, reacting to a purchase or a form submission), configure an event first and use an event-based entry. Learn more about [journey types](entry-management.md#types-of-journeys).
+   >**Which journey type should I choose?** If you are new to Journey Optimizer, start with an audience-based journey using a **[!UICONTROL Read Audience]** activity — it requires no prior event configuration and is the easiest way to get familiar with the canvas. For real-time, event-triggered experiences (for example, reacting to a purchase or a form submission), configure an event first and use an event-based entry. Ready to go deeper? [Discover all journey types and their entry rules](entry-management.md#types-of-journeys).
 
     ![Journey properties panel with settings and configuration options](assets/jo-properties.png)
 
@@ -134,19 +130,19 @@ Not sure where to start? Here are three typical scenarios where journeys deliver
   <tr style="border: 0;">
     <td>
       <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">
-        <img src="../assets/do-not-localize/icon-quick-start.svg">
+        <img src="../assets/do-not-localize/icon-quick-start.svg" width="35px">
       </a>
       <div><strong>Welcome series</strong><br/>Automatically onboard new users with a sequence of messages after sign-up, guiding them through your product or service.</div>
     </td>
     <td>
       <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">
-        <img src="../assets/do-not-localize/icon-campaign.svg">
+        <img src="../assets/do-not-localize/icon-campaign.svg" width="35px">
       </a>
       <div><strong>Cart abandonment</strong><br/>Re-engage customers who left without completing a purchase by sending a timely reminder with personalized content.</div>
     </td>
     <td>
       <a href="jo-use-cases.md">
-        <img src="../assets/do-not-localize/icon-content.svg">
+        <img src="../assets/do-not-localize/icon-content.svg" width="35px">
       </a>
       <div><strong>Re-engagement</strong><br/>Win back inactive users with targeted offers or updates based on their last known behavior.</div>
     </td>
@@ -160,6 +156,7 @@ Not sure where to start? Here are three typical scenarios where journeys deliver
 
 ## Additional resources
 
+* **[Journey types and profile entry](entry-management.md)** - Understand all journey types (unitary event, business event, read audience, audience qualification) and how profiles enter, re-enter, and flow through journeys.
 * **[Journey designer overview](using-the-journey-designer.md)** - Master the journey canvas interface to design and orchestrate customer journeys.
 * **[Journey activities](about-journey-activities.md)** - Discover all available activities including events, actions, and orchestration components.
 * **[Testing journeys](testing-the-journey.md)** - Learn how to test your journeys using test mode before publishing to production.
