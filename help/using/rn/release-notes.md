@@ -189,7 +189,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>Use the new Optimize node to target specific audiences or run A/B tests to determine the best path to meet your business-centric KPIs.
 This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
 </p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../building-journeys/optimize.md">Learn more</a></p>
 </td>
 </tr>
 </tbody>
@@ -274,7 +274,7 @@ Existing journeys using legacy channel activities will continue to function with
 <tr>
 <td>
 <p>You can now create <strong>custom forms</strong> in landing pages to collect specific subscriber data beyond standard opt-in fields. Define your own form fields, validation rules, and submission behaviors to support a wider range of subscription and profile enrichment use cases.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../landing-pages/lp-forms.md">Learn more</a></p>
 </td>
 </tr>
 </tbody>
@@ -305,7 +305,7 @@ Existing journeys using legacy channel activities will continue to function with
 <tr>
 <td>
 <p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../content-management/image-to-html.md">Learn more</a></p>
 </td>
 </tr>
 </tbody>
@@ -409,7 +409,7 @@ Improvements coming with this release are listed below.
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders, enabling structured navigation and easier management for teams working with large volumes of content. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
-* **AJO Secondary Recipient Feedback Event Dataset rename** - The AJO Email BCC Feedback Event Dataset has been renamed to AJO Secondary Recipient Feedback Event Dataset. The impact varies depending on your situation:
+* **AJO Secondary Recipient Feedback Event Dataset rename** - The `AJO Email BCC Feedback Event` Dataset has been renamed to `AJO Secondary Recipient Feedback Event` Dataset. The impact varies depending on your situation:
 
   * **Existing users**: Only the display name is updated. The underlying table name remains unchanged.
   * **New users and sandboxes**: Both the display name and the table name reflect the new name.
