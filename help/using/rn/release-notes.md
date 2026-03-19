@@ -226,7 +226,8 @@ Existing journeys using legacy channel activities will continue to function with
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Message Inbox</strong> is now available in Adobe Journey Optimizer, providing a centralized view of received in-app, push, and SMS messages. Recipients can access and interact with all their messages in one place, enabling richer engagement and re-engagement scenarios.</p>
+<p>A new <strong>Message inbox</strong> is now available in Adobe Journey Optimizer, providing a centralized view of received in-app, push, and SMS messages. Recipients can access and interact with all their messages in one place, enabling richer engagement and re-engagement scenarios.</p>
+<p>Availability date: March 31, 2026</p>
 </td>
 </tr>
 </tbody>
