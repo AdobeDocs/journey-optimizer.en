@@ -187,22 +187,6 @@ Existing journeys using legacy channel activities will continue to function with
 <table>
 <thead>
 <tr>
-<th><strong>Message inbox</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new <strong>Message inbox</strong> is now available in Adobe Journey Optimizer, providing a centralized view of received in-app, push, and SMS messages. Recipients can access and interact with all their messages in one place, enabling richer engagement and re-engagement scenarios.</p>
-<p>Availability date: March 31, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Convert images to email content templates</strong><br/></th>
 </tr>
 </thead>
@@ -211,6 +195,22 @@ Existing journeys using legacy channel activities will continue to function with
 <td>
 <p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../content-management/image-to-html.md">Learn more</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Message inbox</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A new <strong>Message inbox</strong> is now available in Adobe Journey Optimizer, providing a centralized view of received in-app, push, and SMS messages. Recipients can access and interact with all their messages in one place, enabling richer engagement and re-engagement scenarios.</p>
+<p>Availability date: March 31, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -314,17 +314,6 @@ Existing journeys using legacy channel activities will continue to function with
 
 Improvements coming with this release are listed below.
 
-#### Journeys
-
-* **Wave sending of outbound messages in journeys** - You can now schedule messages from Journey Optimizer journeys to be delivered in controlled batches over time. [Learn more](../building-journeys/send-using-waves.md)
-
-  Previously released in Limited Availability for use in journeys, this capability is now available to all environments (General Availability).
-
-  Availability date: March 16, 2026
-
-* **Pause and resume details in journey technical details** - The journey **technical details** now include additional pause and resume information: the date and time of the last pause and resume, the display name and internal identifier of the user who performed each action, and a full set of paused journey settings such as pause behavior, maximum pause duration, and auto-resume state. [Learn more](../building-journeys/journey-properties.md)
-
-  Availability date: March 2, 2026
 
 #### Reporting
 
@@ -363,6 +352,19 @@ Improvements coming with this release are listed below.
 * **Global variables in Orchestrated Campaigns** - Orchestrated Campaigns now support global variables that can be defined once and reused across all activities within a workflow, simplifying configuration and ensuring consistency in dynamic values, expressions, and content personalization.
 
 * **Target dimension simplification in Orchestrated Campaigns** - You can now easily select or automatically deduce the right targeting and secondary dimensions in Orchestrated campaigns for accurate, efficient audience activation.
+
+#### Journeys
+
+* **Wave sending of outbound messages in journeys** - You can now schedule messages from Journey Optimizer journeys to be delivered in controlled batches over time. [Learn more](../building-journeys/send-using-waves.md)
+
+  Previously released in Limited Availability for use in journeys, this capability is now available to all environments (General Availability).
+
+  Availability date: March 16, 2026
+
+* **Pause and resume details in journey technical details** - The journey **technical details** now include additional pause and resume information: the date and time of the last pause and resume, the display name and internal identifier of the user who performed each action, and a full set of paused journey settings such as pause behavior, maximum pause duration, and auto-resume state. [Learn more](../building-journeys/journey-properties.md)
+
+  Availability date: March 2, 2026
+
 
 ## February '26 release notes {#feb-26-01-rn}
 
