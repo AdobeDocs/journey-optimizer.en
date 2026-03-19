@@ -42,7 +42,8 @@ Build multi-step customer journeys to initiate a sequence of interactions, offer
 
 Learn more about how profiles flow through journeys and journey processing rates in [this section](entry-management.md#journey-processing-rate).
 
-<!-->[!TIP]
+<!--
+>[!TIP]
 >
 >Not sure whether to use a journey or a campaign? [Learn how to choose the right approach](../start/journeys-vs-campaigns.md).
 -->
