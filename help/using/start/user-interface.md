@@ -347,3 +347,13 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_orchestration_incrementalquery_history"
 >title="History in days"
 >abstract="This setting controls how long that list is retained. A value of 0 means indefinite retention; no records are removed."
+
+>[!CONTEXTUALHELP]
+>id="ajo_inbox_location"
+>title="Location on page"
+>abstract="."
+
+>[!CONTEXTUALHELP]
+>id="ajo_inbox_app_id"
+>title="App ID"
+>abstract="."

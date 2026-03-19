@@ -24,6 +24,11 @@ version: Campaign Orchestration
 >title="Push activity"
 >abstract="The Push activity lets you send Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring Orchestrated campaigns, automating the sending of Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_target"
+>title="Target"
+>abstract="Placeholder for Target section"
+
 <!--
 UNUSED IDs in BJ
 
@@ -59,6 +64,11 @@ By using channel activities, you can create comprehensive and personalized campa
 >Only SMS, Push, Email and Direct mail channels are supported in Orchestrated campaigns.
 
 ## Add a channel activity and define its properties {#add}
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_category"
+>title="Target"
+>abstract="Placeholder for Category field"
 
 >[!PREREQUISITES]
 >
