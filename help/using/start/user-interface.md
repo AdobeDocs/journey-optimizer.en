@@ -357,8 +357,3 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_inbox_app_id"
 >title="App ID"
 >abstract="."
-
->[!CONTEXTUALHELP]
->id="ajo_inbox_location"
->title="Location or path inside the app"
->abstract="."
