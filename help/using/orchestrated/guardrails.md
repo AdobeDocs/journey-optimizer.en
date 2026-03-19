@@ -29,13 +29,13 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 * Relational schemas cannot be enabled for Adobe Experience Platform **Profiles**. Only Standard XDM schemas are supported for Adobe Experience Platform **Profiles**. Relational schemas can be enabled for Orchestrated Campaigns or Action Campaigns. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile) 
 
-### Data Ingestion
+### Data Ingestion {#data-ingestion}
 
 * Profile + relational data ingestion is required.
 
 * All ingestion must occur via **Change Data Capture** sources:
 
-    * For **File-based**: `_change_request_type` field is required. Values supported are `U` (upsert) or `D` (delete).
+    * For **File-based**: `_change_request_type` field is required. Values supported are `u` (upsert) or `d` (delete). These values must be lowercase `u` and `d`, not uppercase `U` and `D`.
 
     * For **Cloud-based**: Table logging must be enabled.
 
