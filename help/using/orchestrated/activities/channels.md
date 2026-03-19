@@ -65,6 +65,11 @@ By using channel activities, you can create comprehensive and personalized campa
 
 ## Add a channel activity and define its properties {#add}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_category"
+>title="Target"
+>abstract="Placeholder for Category field"
+
 >[!PREREQUISITES]
 >
 >Before adding a channel activity, define the target audience using a [Build audience](build-audience.md) or a [Read audience](read-audience.md) activity.
