@@ -41,7 +41,33 @@ You can:
 >
 >For live journeys, this screen displays only the publication date and the name of the user who published the journey.
 
-The **Copy technical details** option allows you to copy technical information about the journey which the support team can use to troubleshoot. The following information is copied: `JourneyVersion UID`, `OrgID`, `orgName`, `sandboxName`, `lastDeployedBy`, `lastDeployedAt`. 
+The **Copy technical details** option allows you to copy technical information about the journey which the support team can use to troubleshoot. The following information is copied:
+
+**General**
+
+* `JourneyVersion UID` – Unique identifier of this version of the journey
+* `OrgID` – Your organization's (IMS) identifier
+* `orgName` – Your organization's name
+* `sandboxName` – Name of the sandbox where the journey runs
+* `lastDeployedBy` – User who last published the journey
+* `lastDeployedAt` – Date and time of the last publication
+
+
+**Pause and resume** (included when the journey has been paused at least once)
+
+* `lastPausedAt` – Date and time of the last time the journey was paused
+* `lastPausedBy` – Display name of the user who performed the last pause
+* `lastPausedById` – Internal identifier of the user who performed the last pause
+* `lastResumedAt` – Date and time of the last time the journey was resumed
+* `lastResumedBy` – Display name of the user who performed the last resume
+* `lastResumedById` – Internal identifier of the user who performed the last resume
+
+**Paused journey settings** (in `pausedJourneySettings`, when the journey is or has been paused)
+
+* `pauseBehavior` – What happens to profiles in the journey when it is paused (for example, discard them or keep them in place)
+* `maxPauseDurationInMinutes` – Maximum pause duration in minutes, after which the journey auto-resumes (for example, 20160 = 14 days)
+* `transitionStateForAutoResume` – State applied when the journey auto-resumes at the end of the pause period (for example, stop or continue)
+* `pauseId` – Unique identifier for the current pause instance
 
 Learn more about technical fields related to a journey for a given profile, and how to use them [on this page](expression/journey-properties.md).
 

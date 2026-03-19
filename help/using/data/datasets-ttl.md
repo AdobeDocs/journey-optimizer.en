@@ -29,7 +29,7 @@ The table below lists all impacted datasets and their respective Time-To-Live in
 |AJO Push Tracking Experience Event Dataset|13 months|90 days|
 |AJO Surfaces Dataset|13 months|n/a|
 |AJO Inbound Activity Event Dataset|13 months|90 days|
-|AJO Email BCC Feedback Event Dataset|13 months|n/a|
+|AJO Secondary Recipient Feedback Event Dataset|13 months|n/a|
 |Entity Event Dataset|13 months|n/a|
 |Journey Step Events|13 months|n/a|
 |ODE DecisionEvents - prod decisioning|13 months|n/a|

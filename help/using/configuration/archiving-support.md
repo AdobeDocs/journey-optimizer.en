@@ -78,11 +78,11 @@ However, the BCC address gets picked up for sending communications following the
 
 ### GDPR compliance {#gdpr-compliance}
 
-Regulations such as GDPR state that Data Subjects should be able to modify their consent at any time. Because the BCC emails you are sending with Journey Optimizer include securely personally identifiable information (PII), you must edit the **[!UICONTROL CJM Email BCC Feedback Event Schema]** to be able to manage these PII in compliance with GDPR and similar regulations.
+Regulations such as GDPR state that Data Subjects should be able to modify their consent at any time. Because the BCC emails you are sending with Journey Optimizer include securely personally identifiable information (PII), you must edit the **[!UICONTROL AJO Secondary Recipient Feedback Event Schema]** to be able to manage these PII in compliance with GDPR and similar regulations.
 
 To do this, follow the steps below.
 
-1. Go to **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** and select **[!UICONTROL CJM Email BCC Feedback Event Schema]**.
+1. Go to **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** and select **[!UICONTROL AJO Secondary Recipient Feedback Event Schema]**.
 
     ![](assets/preset-bcc-schema.png)
 
@@ -106,7 +106,7 @@ To do this, follow the steps below.
 
 ### BCC reporting data {#bcc-reporting}
 
-Reporting as such on BCC is not available in the journey and message reports. However, information is stored on a system dataset called **[!UICONTROL AJO BCC Feedback Event Dataset]**. You can run queries against this dataset to find useful information for debugging purpose for example.
+Reporting as such on BCC is not available in the journey and message reports. However, information is stored on a system dataset called **[!UICONTROL AJO Secondary Recipient Feedback Event Dataset]**. You can run queries against this dataset to find useful information for debugging purpose for example.
 
 To access this dataset through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more about how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
 
@@ -219,7 +219,7 @@ When your email BCC copies are archived on an external system for example, you c
 
 Every email message now contains a header called `x-message-profile-id`. This header's value is different for each profile: it is unique to each sent email and to its corresponding BCC email copy.
 
-The `x-message-profile-id` header is also stored in the following system datasets: [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) (sent emails) and [AJO BCC Feedback Event Dataset](#bcc-reporting) (BCC copies). You can query these datasets to reconcile the BCC copy and the corresponding actual email.
+The `x-message-profile-id` header is also stored in the following system datasets: [AJO Message Feedback Event Dataset](../data/datasets-query-examples.md#message-feedback-event-dataset) (sent emails) and [AJO Secondary Recipient Feedback Event Dataset](#bcc-reporting) (BCC copies). You can query these datasets to reconcile the BCC copy and the corresponding actual email.
 
 * To access these datasets through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more about how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
 
