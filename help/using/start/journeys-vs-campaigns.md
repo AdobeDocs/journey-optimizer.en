@@ -14,7 +14,7 @@ exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
 ---
 # Journeys vs Campaigns: Choose the right approach {#journeys-vs-campaigns}
 
-[!DNL Adobe Journey Optimizer] offers four main ways to reach and engage your customers: **Journeys**, **Action Campaigns**, **API-triggered Campaigns**, and **Orchestrated Campaigns**. Picking the right one depends on whether you need real-time 1:1 orchestration, scheduled broadcasts, event-driven messages, or complex batch workflows.
+[!DNL Adobe Journey Optimizer] offers two main ways to reach and engage your customers: **Journeys** and **Campaigns**. Journeys are designed for real-time, multi-step orchestration driven by customer behavior, while campaigns are better suited for one-time or scheduled broadcasts to a defined audience. Once you have decided on a campaign, you can then choose the campaign type that best fits your use case.
 
 This guide helps you choose based on execution style, data needs, and use case—with a quick comparison, decision tree, and concrete examples.
 
