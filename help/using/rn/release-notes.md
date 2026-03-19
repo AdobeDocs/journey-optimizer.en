@@ -370,10 +370,11 @@ Improvements coming with this release are listed below.
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders, enabling structured navigation and easier management for teams working with large volumes of content. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
-* **Change in AJO Secondary Recipient Feedback Event Dataset** - The AJO Email BCC Feedback Event Dataset is being renamed to AJO Secondary Recipient Feedback Event Dataset.
-  * **Existing users**: Only the display name changes. The underlying table name remains unchanged.
-  * **New users and new sandboxes**: Both the display name and table name use the new name.
-  * **Existing users/organizations with new sandboxes**: Both the display name and table name change to the new name.
+* **AJO Secondary Recipient Feedback Event Dataset rename** - The AJO Email BCC Feedback Event Dataset has been renamed to AJO Secondary Recipient Feedback Event Dataset. The impact varies depending on your situation:
+
+  * **Existing users**: Only the display name is updated. The underlying table name remains unchanged.
+  * **New users and sandboxes**: Both the display name and the table name reflect the new name.
+  * **Existing users with new sandboxes**: Both the display name and the table name are updated to the new name.
 
   Availability date: March 2, 2026
 
@@ -385,7 +386,7 @@ Improvements coming with this release are listed below.
 
 ## February '26 release notes {#feb-26-01-rn}
 
-The [New capabilities](#feb-26-01-features) and [Improvements](#feb-26-01-improv) sections cover capabilities already available. The [Coming soon](#coming-soon) section lists features and improvements scheduled for release later in February.
+The [New capabilities](#feb-26-01-features) and [Improvements](#feb-26-01-improv) sections cover capabilities already available. <!--The [Coming soon](#coming-soon) section lists features and improvements scheduled for release later in February.-->
 
 <!--**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
