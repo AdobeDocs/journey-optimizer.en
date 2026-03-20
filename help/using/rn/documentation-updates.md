@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## March 2026 {#march-2026}
 
+* The **Update Profile** activity documentation has been updated to reflect support for updating multiple profile attributes in a single action. Up to five field/value pairs can now be configured using the **Update another field** button. Key concepts and the step-by-step procedure have been updated accordingly. [Read more](../building-journeys/update-profiles.md)
+
 * The **Read Audience** activity and **Journey properties** documentation have been updated to clarify the 91-day journey lifecycle for always-on recurring journeys. The schedule section now explicitly confirms that recurring journeys with no end date remain Live past 91 days, and the global timeout FAQ has been expanded to distinguish the 91-day profile TTL from the 91-day reporting window. [Read more](../building-journeys/read-audience.md#schedule)
 
 * The **Dataset lookup** activity documentation has been updated to clarify that the lookup key must be configured in advanced mode for the `@datasetLookup{}` syntax to work in downstream condition activities. A troubleshooting section has been added with guidance on resolving the "Dataset lookup not found" error. [Read more](../building-journeys/dataset-lookup.md#troubleshooting)
