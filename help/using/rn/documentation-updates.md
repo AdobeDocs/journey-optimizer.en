@@ -15,7 +15,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## March 2026 {#march-2026}
 
-* The **Update Profile** activity documentation has been updated to reflect support for updating multiple profile attributes in a single action. Up to five field/value pairs can now be configured using the **Update another field** button. Key concepts and the step-by-step procedure have been updated accordingly. [Read more](../building-journeys/update-profiles.md)
+* The **Update Profile** activity documentation has been updated to document support for updating up to five profile attributes in a single action. [Read more](../building-journeys/update-profiles.md)
 
 * The **Read Audience** activity and **Journey properties** documentation have been updated to clarify the 91-day journey lifecycle for always-on recurring journeys. The schedule section now explicitly confirms that recurring journeys with no end date remain Live past 91 days, and the global timeout FAQ has been expanded to distinguish the 91-day profile TTL from the 91-day reporting window. [Read more](../building-journeys/read-audience.md#schedule)
 
