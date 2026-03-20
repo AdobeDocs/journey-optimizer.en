@@ -268,6 +268,22 @@ Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global ti
       <p>The profile will have a TTL of 91 days, matching the TTL of the newly republished journey version. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Will my always-on recurring Read Audience journey stop after 91 days?</p>
+    </td>
+    <td>
+      <p>No. A recurring Read Audience journey with no end date remains <strong>Live</strong> as long as it is published. It moves to <strong>Finished</strong> status only 91 days after the execution of its <strong>last occurrence</strong>. The 91-day global timeout applies to individual profiles flowing through the journey (maximum active duration per profile), not to the journey's Live status.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What is the difference between the 91-day journey timeout and the 91-day reporting window?</p>
+    </td>
+    <td>
+      <p>These are two separate concepts. The <strong>journey global timeout</strong> (91 days) is the maximum time an individual profile can remain active within a journey — after 91 days, the profile is exited and its data deleted. The <strong>reporting window</strong> (approximately 91 days) is a display limit in the UI: performance data older than ~91 days is no longer visible in reporting, but the journey itself continues to run and new profiles continue to enter.</p>
+    </td>
+  </tr>
 </table>
 
 ## Merge policies {#merge-policies}
