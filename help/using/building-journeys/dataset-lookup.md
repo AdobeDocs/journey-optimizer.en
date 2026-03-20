@@ -87,7 +87,11 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
    * Keys can be expressions derived from the journey context, such as SKUs, email IDs, or other identifiers. Example: `@profile.email` or `list(@event{purchase_event.products.sku})`.
 
    * Only **strings** or **lists of strings** are supported.
-   
+
+   >[!IMPORTANT]
+   >
+   >You must define the lookup key using **advanced mode**. If you use simple mode to set the key, the dataset lookup activity output will not be available as a context attribute in downstream activities, and the `@datasetLookup{}` syntax will fail with a "Dataset lookup not found" error in condition activities.
+
    +++Example
    
    ![Expression editor with dataset field lookup and string functions](assets/aep-data-strings.png)
@@ -185,3 +189,15 @@ The data retrieved by the **[!UICONTROL Dataset lookup]** activity is stored in 
    ```
    {{context.journey.datasetLookup.1482319411.entity.loyaltyMember.loyaltyTier}}
    ```
+
++++
+
+## Troubleshooting {#troubleshooting}
+
+### "Dataset lookup not found" error in condition activity {#troubleshooting-not-found}
+
+**Symptom:** The `@datasetLookup{}` syntax in a condition activity's advanced expression editor returns a "Dataset lookup not found" error, even though the dataset lookup activity is correctly configured in the journey.
+
+**Cause:** The lookup key in the dataset lookup activity was set using simple mode. When the key is not defined in advanced mode, the activity output is not exposed as a context attribute in downstream activities.
+
+**Fix:** Open the dataset lookup activity, locate the **[!UICONTROL Lookup key(s)]** field, and switch to **advanced mode** to redefine the key expression. Save the activity and republish the journey.

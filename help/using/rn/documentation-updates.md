@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## March 2026 {#march-2026}
 
+* The **Dataset lookup** activity documentation has been updated to clarify that the lookup key must be configured in advanced mode for the `@datasetLookup{}` syntax to work in downstream condition activities. A troubleshooting section has been added with guidance on resolving the "Dataset lookup not found" error. [Read more](../building-journeys/dataset-lookup.md#troubleshooting)
+
 * The **Date Time functions** documentation has been updated with a new example showing how to format a timestamp from a context event attribute, including the `toDateTime()` requirement, backtick syntax for numeric event IDs, and a common error callout for the PQL "mismatched input" error. [Read more](../personalization/functions/dates.md#format-date)
 
 * The **Orchestrated campaigns guardrails and limitations** and **Get started with Sources connectors** documentation have been updated to clarify that for file-based Change Data Capture, the `_change_request_type` field is required and its values must be lowercase `u` (upsert) or `d` (delete), not uppercase. [Read more](../orchestrated/guardrails.md)
