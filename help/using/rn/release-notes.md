@@ -166,24 +166,6 @@ Existing journeys using legacy channel activities will continue to function with
 </tbody>
 </table>
 
-
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom forms in landing pages</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now create <strong>custom forms</strong> in landing pages to collect specific subscriber data beyond standard opt-in fields. Define your own form fields, validation rules, and submission behaviors to support a wider range of subscription and profile enrichment use cases.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../landing-pages/lp-forms.md">Learn more</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
 <table>
 <thead>
 <tr>
