@@ -29,6 +29,8 @@ Use the **[!UICONTROL Update Profile]** action activity to update an existing [!
 * The update request sent to [!DNL Adobe Experience Platform] is immediate/within a second. It will take normally a few seconds but sometimes more with no guarantee. As a result, for example, if an action is using "field 1" updated by an **Update Profile** action positioned right before, you should not expect that "field 1" will be updated in the action.
 * The **Update profile** activity does not support XDM fields that are defined as enumerations or suggested values.
 * The **[!UICONTROL Update profile]** activity only updates the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, not the Data Lake.
+* Up to five fields can be updated in a single **Update Profile** action. To add new field/value pairs in the UI, click the **[!UICONTROL Update another field]** button.
+* It is more performant to group multiple profile attributes into a smaller number of **Update Profile** actions than it is to create a separate **Update Profile** action for each profile attribute update.
 
 ## Dataset selection {#dataset-selection}
 
@@ -46,9 +48,9 @@ Additionally, the **Update Profile** activity configuration does not require an 
 
 1. Select a schema from the list.
 
-1. Click on **Field** to select the field you want to update. Only one field can be selected.
+1. Click on **[!UICONTROL Field]** to select the field you want to update.
 
-   ![Profile update configuration panel with field selection dropdown](assets/profileupdate2.png)
+   ![Profile update configuration panel with field selection dropdown and Update another field button](assets/profileupdate2.png)
 
 1. Select a dataset from the list. 
 
@@ -56,7 +58,7 @@ Additionally, the **Update Profile** activity configuration does not require an 
    >
    >The **Update Profile** action updates the profile data in realtime, but it does not update datasets. The dataset selection is needed as the profile is a record related to a dataset.
 
-1. Click on the **Value** field to define the value you want to use:
+1. Click on the **[!UICONTROL Value]** field to define the value you want to use:
 
    * Using the simple expression editor, you can select a field from a data source or from the incoming event.
 
@@ -66,9 +68,11 @@ Additionally, the **Update Profile** activity configuration does not require an 
 
       ![Advanced mode expression editor for complex profile updates](assets/profileupdate3.png)
 
+1. To update additional profile attributes in the same action, click **[!UICONTROL Update another field]** and repeat the field and value selection. You can add up to five field/value pairs in a single **Update Profile** action.
+
 The **Update Profile** is now configured.
 
-![Profile update activity in journey with fields configuration](assets/profileupdate1.png)
+![Profile update activity in journey with multiple fields configuration](assets/profileupdate1.png)
 
 
 ## Using the test mode {#using-the-test-mode}
