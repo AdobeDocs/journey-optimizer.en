@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## March 2026 {#march-2026}
 
+* The **Date Time functions** documentation has been updated with a new example showing how to format a timestamp from a context event attribute, including the `toDateTime()` requirement, backtick syntax for numeric event IDs, and a common error callout for the PQL "mismatched input" error. [Read more](../personalization/functions/dates.md#format-date)
+
 * The **Orchestrated campaigns guardrails and limitations** and **Get started with Sources connectors** documentation have been updated to clarify that for file-based Change Data Capture, the `_change_request_type` field is required and its values must be lowercase `u` (upsert) or `d` (delete), not uppercase. [Read more](../orchestrated/guardrails.md)
 
 * The **Add links & track messages** documentation has been updated with guidance on how tracking identifiers (urlID) are generated: a unique urlID is only assigned when both the URL and the label are unique. To track the same URL across multiple emails (or multiple times in one email), users must use a unique label for each similar URL; otherwise, [!DNL Journey Optimizer] cannot determine which link was clicked. [Read more](../email/message-tracking.md#track-across-multiple-emails)

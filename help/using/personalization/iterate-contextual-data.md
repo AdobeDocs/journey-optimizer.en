@@ -63,6 +63,16 @@ context.journey.events.<event_ID>.<fieldPath>
 * `<event_ID>`: The unique ID of your event as configured in the journey
 * `<fieldPath>`: The path to the field or array within your event schema
 
+>[!NOTE]
+>
+>**Numeric event IDs require backticks.** If your event ID is a number (for example, `1697323153`), wrap it in backticks (`` ` ``) in your expression path. Without backticks, the PQL parser raises a syntax error.
+>
+>```handlebars
+>context.journey.events.`1697323153`.fieldName
+>```
+>
+>For more details and a complete example including date formatting from event timestamps, see [Formatting a timestamp from a context event](../personalization/functions/dates.md#format-date).
+
 ### Example: Cart items from an event
 
 If your [event schema](../event/experience-event-schema.md) includes a `productListItems` array (standard [XDM format](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}), you can display cart contents as detailed in the sample below.
