@@ -79,7 +79,7 @@ For more information on how to turn an existing profile into a test profile, ref
 * The action only updates existing fields — it does not create new profile fields.
 * XDM fields defined as enumerations or suggested values are not supported.
 * You cannot use the **[!UICONTROL Update Profile]** action to generate [experience events](../event/about-events.md), such as a purchase.
-* Like any other action, you can define an [alternative path in case of error or timeout](using-the-journey-designer.md#paths). [Two actions cannot be placed in parallel](limitations.md#action-limitations).
+* Like any other action, you can define an [alternative path in case of error or timeout](using-the-journey-designer.md#paths). Two actions cannot be placed in parallel.
 * Profile updates are not guaranteed to be immediately available downstream in the same journey. Avoid placing an action that reads a field directly after the **[!UICONTROL Update Profile]** action that writes it, as the updated value may not yet be reflected.
 * The **[!UICONTROL Update profile]** activity only updates the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, not the Data Lake.
 * Up to five field/value pairs can be updated in a single **[!UICONTROL Update Profile]** action. Use the **[!UICONTROL Update another field]** button to add more pairs.
