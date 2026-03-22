@@ -18,25 +18,13 @@ version: Journey Orchestration
 >title="Update Profile activity"
 >abstract="The Update Profile action activity allows you to update an existing [!DNL Adobe Experience Platform] profile with information coming from the event, a datasource or using a specific value."
 
-Use the **[!UICONTROL Update Profile]** action activity to enrich or correct an existing [!DNL Adobe Experience Platform] profile as a customer progresses through a journey. You can set field values sourced from a journey event, a configured datasource, or a static value — enabling you to keep profile data accurate and actionable without leaving the journey canvas.
-
-## Key concepts {#key-concepts}
-
-* The **[!UICONTROL Update Profile]** action can only be used in journeys that have a [namespace](../event/about-creating.md#select-the-namespace).
-* The action only updates existing fields — it does not create new profile fields.
-* XDM fields defined as enumerations or suggested values are not supported.
-* You cannot use the **[!UICONTROL Update Profile]** action to generate experience events, such as a purchase.
-* Like any other action, you can define an [alternative path in case of error or timeout](using-the-journey-designer.md#paths). Two actions cannot be placed in parallel.
-* Profile updates are not guaranteed to be immediately available downstream in the same journey. Avoid placing an action that reads a field directly after the **[!UICONTROL Update Profile]** action that writes it, as the updated value may not yet be reflected.
-* The **[!UICONTROL Update profile]** activity only updates the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, not the Data Lake.
-* Up to five field/value pairs can be updated in a single **[!UICONTROL Update Profile]** action. Use the **[!UICONTROL Update another field]** button to add more pairs.
-* For better performance, group multiple attribute updates into a single **[!UICONTROL Update Profile]** action rather than using one action per attribute.
+Use the **[!UICONTROL Update Profile]** action activity to enrich or correct an existing [!DNL Adobe Experience Platform] profile as a customer progresses through a journey. You can set field values sourced from a journey event, a configured datasource, or a static value — enabling you to keep profile data accurate and actionable without leaving the journey canvas. Before configuring this activity, review the [guardrails and limitations](#guardrails) that apply.
 
 ## Dataset selection {#dataset-selection}
 
-The **[!UICONTROL Update Profile]** activity requires a dedicated dataset to store updates. Since this activity only updates the Profile store (not the Datalake), all updates should be saved in a profile-enabled dataset specifically designated for **[!UICONTROL Update Profile]** actions. Using a dataset used for batch or streaming ingestion will result in newly onboarded data overwriting the changes made by the **[!UICONTROL Update Profile]** action.
+The **[!UICONTROL Update Profile]** activity requires a dedicated dataset to store updates. Since this activity only updates the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"} (not the Datalake), all updates should be saved in a [profile-enabled dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile){target="_blank"} specifically designated for **[!UICONTROL Update Profile]** actions. Using a dataset used for batch or streaming ingestion will result in newly onboarded data overwriting the changes made by the **[!UICONTROL Update Profile]** action.
 
-Additionally, the **[!UICONTROL Update Profile]** activity configuration does not require an identity namespace. As such, ensure that the selected dataset uses the same **[!UICONTROL Identity namespace]** that was used by the action that launched the journey as it is this namespace these updates will use. The identity map can also be used by the selected dataset. Failure to select a dataset with the correct namespace or one that uses identity map will cause the **[!UICONTROL Update Profile]** activity to fail.
+Additionally, the **[!UICONTROL Update Profile]** activity configuration does not require an [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}. As such, ensure that the selected dataset uses the same **[!UICONTROL Identity namespace]** that was used by the action that launched the journey as it is this namespace these updates will use. The identity map can also be used by the selected dataset. Failure to select a dataset with the correct identity namespace or one that uses identity map will cause the **[!UICONTROL Update Profile]** activity to fail.
 
 ## Configure the Update Profile activity {#use-profile-update}
 
@@ -70,7 +58,7 @@ Follow the steps below to configure the **[!UICONTROL Update Profile]** activity
 
       ![Advanced mode expression editor for complex profile updates](assets/profileupdate3.png)
 
-1. To update additional profile attributes in the same action, click **[!UICONTROL Update another field]** and repeat the field and value selection. You can add up to five field/value pairs in a single **[!UICONTROL Update Profile]** action.
+1. To update additional profile attributes in the same action, click **[!UICONTROL Update another field]** and repeat the field and value selection. You can add up to five field/value pairs in a single **[!UICONTROL Update Profile]** action. See [Guardrails and limitations](#guardrails).
 
 The **[!UICONTROL Update Profile]** activity is now configured.
 
@@ -84,3 +72,15 @@ Be aware that in [test mode](testing-the-journey.md), profile updates take effec
 Only test profiles can enter a journey in test mode. You can either create a new test profile or convert an existing profile into a test profile. In [!DNL Adobe Experience Platform], profile attributes can be updated via a CSV file import or API calls. A quicker alternative is to use an **[!UICONTROL Update Profile]** activity within the journey itself to set the test profile boolean field to true.
 
 For more information on how to turn an existing profile into a test profile, refer to this [section](../audience/creating-test-profiles.md#create-test-profiles-csv).
+
+## Guardrails and limitations {#guardrails}
+
+* The **[!UICONTROL Update Profile]** action can only be used in journeys that have a [namespace](../event/about-creating.md#select-the-namespace).
+* The action only updates existing fields — it does not create new profile fields.
+* XDM fields defined as enumerations or suggested values are not supported.
+* You cannot use the **[!UICONTROL Update Profile]** action to generate [experience events](../event/about-events.md), such as a purchase.
+* Like any other action, you can define an [alternative path in case of error or timeout](using-the-journey-designer.md#paths). [Two actions cannot be placed in parallel](limitations.md#action-limitations).
+* Profile updates are not guaranteed to be immediately available downstream in the same journey. Avoid placing an action that reads a field directly after the **[!UICONTROL Update Profile]** action that writes it, as the updated value may not yet be reflected.
+* The **[!UICONTROL Update profile]** activity only updates the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}, not the Data Lake.
+* Up to five field/value pairs can be updated in a single **[!UICONTROL Update Profile]** action. Use the **[!UICONTROL Update another field]** button to add more pairs.
+* For better performance, group multiple attribute updates into a single **[!UICONTROL Update Profile]** action rather than using one action per attribute.

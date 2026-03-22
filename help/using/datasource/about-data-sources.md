@@ -65,7 +65,7 @@ Ingest data into a dataset to trigger and personalize journeys based on contextu
 
 **Option 3 — Profile-enabled dataset in Data Lake**
 
-Ingest data into a profile-enabled dataset to create audiences, enrich identity graphs, and leverage data across multiple journeys and RT-CDP destinations. Best suited when:
+Ingest data into a [profile-enabled dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile){target="_blank"} to create audiences, enrich identity graphs, and leverage data across multiple journeys and RT-CDP destinations. Best suited when:
 
 * The data is useful for audience definitions used in channels beyond Journey Optimizer.
 * The data contains multiple identities that contribute to richer, stitched profile fragments.
