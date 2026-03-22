@@ -22,7 +22,11 @@ Use the **[!UICONTROL Update Profile]** action activity to enrich or correct an 
 
 ## Dataset selection {#dataset-selection}
 
-The **[!UICONTROL Update Profile]** activity requires a dedicated dataset to store updates. Since this activity only updates the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"} (not the Datalake), all updates should be saved in a [profile-enabled dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile){target="_blank"} specifically designated for **[!UICONTROL Update Profile]** actions. Using a dataset used for batch or streaming ingestion will result in newly onboarded data overwriting the changes made by the **[!UICONTROL Update Profile]** action.
+The **[!UICONTROL Update Profile]** activity requires a dedicated dataset to store updates. Since this activity only updates the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"} (not the Datalake), all updates should be saved in a [profile-enabled dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile){target="_blank"} specifically designated for **[!UICONTROL Update Profile]** actions.
+
+>[!CAUTION]
+>
+>Do not use a dataset that is also used for batch or streaming ingestion. Other ingestion runs will overwrite the changes made by the **[!UICONTROL Update Profile]** action, causing profile attributes to disappear or revert to their previous values. If you observe this behavior, verify in Adobe Experience Platform that no other ingestion is writing to the same dataset. For troubleshooting steps, see [Resolving profile update failures in Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26352){target="_blank"}.
 
 Additionally, the **[!UICONTROL Update Profile]** activity configuration does not require an [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}. As such, ensure that the selected dataset uses the same **[!UICONTROL Identity namespace]** that was used by the action that launched the journey as it is this namespace these updates will use. The identity map can also be used by the selected dataset. Failure to select a dataset with the correct identity namespace or one that uses identity map will cause the **[!UICONTROL Update Profile]** activity to fail.
 
@@ -30,13 +34,17 @@ Additionally, the **[!UICONTROL Update Profile]** activity configuration does no
 
 Follow the steps below to configure the **[!UICONTROL Update Profile]** activity in your journey.
 
-1. Design your journey by starting with an event. See this [section](../building-journeys/journey.md).
+1. Start designing your journey. Learn more in [Create your first journey](../building-journeys/journey-gs.md).
 
 1. In the **[!UICONTROL Action]** section of the palette, drop the **[!UICONTROL Update Profile]** activity into the canvas.
 
    ![Update Profile activity in journey palette under Actions](assets/profileupdate0.png)
 
 1. Select a schema from the list.
+
+   >[!NOTE]
+   >
+   >Only fields that already exist in the selected XDM Profile schema are available for selection. If the field you need is not listed, add it to the schema in Adobe Experience Platform first.
 
 1. Click on **[!UICONTROL Field]** to select the field you want to update.
 
@@ -77,7 +85,7 @@ For more information on how to turn an existing profile into a test profile, ref
 
 * The **[!UICONTROL Update Profile]** action can only be used in journeys that have a [namespace](../event/about-creating.md#select-the-namespace).
 * The action only updates existing fields — it does not create new profile fields.
-* XDM fields defined as enumerations or suggested values are not supported.
+* The action only supports simple field types (string, number, boolean). XDM fields defined as enumerations, suggested values, object arrays, or complex collections (e.g. product lists) are not supported.
 * You cannot use the **[!UICONTROL Update Profile]** action to generate [experience events](../event/about-events.md), such as a purchase.
 * Like any other action, you can define an [alternative path in case of error or timeout](using-the-journey-designer.md#paths). Two actions cannot be placed in parallel.
 * Profile updates are not guaranteed to be immediately available downstream in the same journey. Avoid placing an action that reads a field directly after the **[!UICONTROL Update Profile]** action that writes it, as the updated value may not yet be reflected.
