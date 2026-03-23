@@ -23,7 +23,7 @@ This page gives you a practical starting point to understand:
 Use this guide together with your data engineers, administrators, and marketers so everyone shares a common picture of how data flows into and out of Journey Optimizer.
 
 >[!TIP]
->New to Journey Optimizer? Start with the [Get started guide](../start/get-started.md) to understand the overall product, or watch the [Set up data overview tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"} for a practical, beginner-friendly introduction to data setup in Journey Optimizer.
+>New to data management in Journey Optimizer? Watch the [Set up data overview tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"} for a practical, beginner-friendly walkthrough of schemas, datasets, and sources.
 
 ## How Journey Optimizer uses Adobe Experience Platform data {#aep-data}
 
@@ -127,12 +127,11 @@ Configure source connectors for your enterprise systems — such as Adobe Analyt
 
 ### 5. Configure data sources in Journey Optimizer {#configure-data-sources}
 
-In the Journey Optimizer UI:
+Data sources are a Journey Optimizer-specific concept: they are not where your data lives, but where you declare which fields Journey Optimizer is allowed to read during journey and message execution. Before a journey can evaluate a condition like "is the customer a loyalty member?" or personalize a message with a first name, the relevant profile fields must be exposed through a data source configuration.
 
-1. Open the **[!UICONTROL Configurations]** area.
-1. Configure the built-in [Adobe Experience Platform data source](../datasource/adobe-experience-platform-data-source.md).
-1. Optionally configure [external or custom data sources](../datasource/external-data-sources.md).
-1. Select which fields should be available for journey conditions, message personalization, and decisioning.
+Journey Optimizer includes a built-in [Adobe Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) that gives direct access to Real-Time Customer Profile attributes and events. This covers the vast majority of use cases: reading profile attributes for personalization, using event history to drive journey logic, or checking consent and preference fields. You can also configure [external data sources](../datasource/external-data-sources.md) to call third-party APIs at journey runtime — for example, to retrieve a real-time loyalty score, a product recommendation, or a store inventory level that is not stored in Adobe Experience Platform.
+
+Configuring data sources is an administrative task that unlocks the full data layer for journey authors and marketers. Once a field is exposed through a data source, it becomes available in the journey condition builder, in message personalization editors, and in offer decisioning rules — without requiring any additional engineering work at journey-build time.
 
 ➡️ [Learn more about data source configuration](../datasource/about-data-sources.md)
 
