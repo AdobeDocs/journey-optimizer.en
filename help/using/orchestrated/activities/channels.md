@@ -82,18 +82,18 @@ By using channel activities, you can create comprehensive and personalized campa
 
 1. In the **[!UICONTROL Target]** section, configure the target of the delivery:
 
+    * Select the **[!UICONTROL Target dimension]** for this send from the drop-down list.
+
+    * When a secondary dimension applies (related tables linked to each profile), choose how many messages to send:
+
+       * **[!UICONTROL One message per profile]**: Send one message per profile, even when several rows from the secondary dimension exist.
+       * **[!UICONTROL One message per secondary dimension]**: Send one message per qualifying row from the secondary dimension. When several rows match the same profile, that profile can receive multiple messages.
+
+       **Example** – Suppose a "flights" table is linked to your recipients table and you want each profile to receive one message per flight that applies to them. Select **[!UICONTROL One message per secondary dimension]**. Use **[!UICONTROL One message per profile]** when you only want **one** message per profile regardless of how many related flight rows qualify.
+
     ![image showing the Target section with secondary dimension options](../assets/secondary-dimension.png)
 
-    1. From the drop-down list, select the **[!UICONTROL Target dimension]** for this send.
-
-    1. When a **[!UICONTROL Secondary dimension]** applies (related tables linked to each profile), choose how many messages to send.
-
-       * **[!UICONTROL One message per profile]**: one message per profile, even when several rows from the secondary dimension exist.
-       * **[!UICONTROL One message per secondary dimension]**: one message per qualifying row from the secondary dimension. When several rows match the same profile, that profile can receive multiple messages.
-
-       **Example** – One traveler (**profile**) is linked to a **flights** table; **flights** can link to further tables such as **flight details**. To email the traveler once per qualifying flight (for example flights whose number starts with a given prefix), build the audience as usual, add an **[!UICONTROL Email]** activity, set **[!UICONTROL One message per secondary dimension]**, and use a **channel configuration** whose **[!UICONTROL Secondary Dimension]** is the table you want one message per row for (**flights** vs **flight details**, depending on your use case). Use **[!UICONTROL One message per profile]** when you only want **one** message per profile regardless of how many related rows qualify.
-
-    For **[!UICONTROL Targeting dimension]**, **[!UICONTROL Profile targeting dimension]**, and **[!UICONTROL Secondary dimension]**, see [Targeting dimension, secondary dimension, and profile targeting dimension](../target-dimension.md#dimension-concepts). For **[!UICONTROL Target + Secondary Dimension]** setup, see [Configure your Channel configuration](../channel-config.md). For segmentation on the canvas, see [Build audience](build-audience.md) and [Change dimension](change-dimension.md).
+    For more information on targeting dimensions and how to configure them, refer to this page: [Configure a Targeting dimension](../target-dimension.md)
 
 1. Click **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]**, or **[!UICONTROL Edit direct mail]** depending on the chosen channel to create the message as usual, then return to the **right rail** to finish **[!UICONTROL Actions]**.
 
