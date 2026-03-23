@@ -91,7 +91,7 @@ By using channel activities, you can create comprehensive and personalized campa
 
     ![image showing the Target section with secondary dimension options](../assets/secondary-dimension.png)
 
-    **Example** – Suppose a "flights" table is linked to your recipients table and you want each profile to receive one message per flight that applies to them. Select **[!UICONTROL One message per secondary dimension]**. Use **[!UICONTROL One message per profile]** when you only want **one** message per profile regardless of how many related flight rows qualify.
+    **Example** – Suppose a "flights" table is linked to your recipients table and you want each profile to receive one message per flight that applies to them. Select **[!UICONTROL One message per secondary dimension]**. Use **[!UICONTROL One message per profile]** when you only want one message per profile regardless of how many related flight rows qualify.
 
     For more information on targeting dimensions and how to configure them, refer to this page: [Configure a Targeting dimension](../target-dimension.md)
 
