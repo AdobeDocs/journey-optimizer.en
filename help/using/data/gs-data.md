@@ -34,6 +34,8 @@ Schemas and datasets live in Adobe Experience Platform. Identities and the [Real
 >[!TIP]
 >Think of Adobe Experience Platform as your central data layer, and Journey Optimizer as an application that orchestrates journeys and messages using that shared data foundation.
 
+➡️ [Learn more about Journey Optimizer architecture](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/essentials/understanding-ajo#architecture-details){target="_blank"}
+
 ## Key data concepts in Journey Optimizer {#key-concepts}
 
 When you work with data in Journey Optimizer, you will encounter several related concepts. The table below gives you a quick overview; the sections that follow explain each concept in more detail.
@@ -97,7 +99,7 @@ A lookup dataset lets Journey Optimizer retrieve reference or transactional data
 Before marketers start building journeys and campaigns, your organization should complete a set of data readiness steps. This ensures that Journey Optimizer can use the right data, at the right time, and in a compliant way.
 
 >[!NOTE]
->The steps below involve multiple roles: data engineers, administrators, and marketers. Use this checklist as a shared plan to prepare your environment.
+>The steps below involve multiple roles: data engineers, administrators, and marketers. Use this checklist as a shared plan to prepare your environment. Steps 1–4 are completed in Adobe Experience Platform; Steps 5–6 are configured in Journey Optimizer.
 
 ### 1. Define your identity strategy {#identity-strategy}
 
