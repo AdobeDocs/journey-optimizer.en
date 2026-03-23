@@ -27,7 +27,7 @@ version: Campaign Orchestration
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_target"
 >title="Target"
->abstract="Placeholder for Target section"
+>abstract="The **[!UICONTROL Target]** section sets the target of the delivery for this channel activity. Use **[!UICONTROL Target dimension]** to select which target dimension applies to this send. Then choose **[!UICONTROL One message per profile]** to send a single message per person, or **[!UICONTROL One message per secondary dimension]** to send one message per qualifying secondary dimension — for example, one email per flight when the same traveler has several matching flights."
 
 <!--
 UNUSED IDs in BJ
@@ -49,7 +49,7 @@ UNUSED IDs in BJ
 >title="Direct mail activity"
 >abstract="The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
-[!DNL Adobe Journey Optimizer] allows you to automate and execute marketing campaigns across channels - email, SMS, push notifications and direct mail. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns. These campaigns can trigger actions based on customer behavior and data.
+[!DNL Adobe Journey Optimizer] allows you to automate and execute **marketing** campaigns across channels—email, SMS, push notifications, and direct mail. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns. These campaigns can trigger actions based on customer behavior and data.
 
 For example:
 
@@ -78,19 +78,34 @@ By using channel activities, you can create comprehensive and personalized campa
 
     ![image showing the canvas with available activities](../assets/channel-add.png)
 
-1. Select the activity and click **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]**, or **[!UICONTROL Edit direct mail]** depending on the chosen channel.
+1. In the right rail, use the **[!UICONTROL Category]** field to choose **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** for this message. Transactional messages do not require opt-in and are suited for time-sensitive communications such as disruptions, emergencies, or cancellations.
 
-    ![image showing the canvas with an Email activity](../assets/channel-edit.png)
+1. In the **[!UICONTROL Target]** section, configure the target of the delivery:
 
-1. In the **[!UICONTROL Properties]** tab, enter a description then switch to the **[!UICONTROL Actions]** tab to configure the activity.
+    ![image showing the Target section with secondary dimension options](../assets/secondary-dimension.png)
+
+    1. From the drop-down list, select the **[!UICONTROL Target dimension]** for this send.
+
+    1. When a **[!UICONTROL Secondary dimension]** applies (related tables linked to each profile), choose how many messages to send.
+
+       * **[!UICONTROL One message per profile]**: one message per profile, even when several rows from the secondary dimension exist.
+       * **[!UICONTROL One message per secondary dimension]**: one message per qualifying row from the secondary dimension. When several rows match the same profile, that profile can receive multiple messages.
+
+       **Example** – One traveler (**profile**) is linked to a **flights** table; **flights** can link to further tables such as **flight details**. To email the traveler once per qualifying flight (for example flights whose number starts with a given prefix), build the audience as usual, add an **[!UICONTROL Email]** activity, set **[!UICONTROL One message per secondary dimension]**, and use a **channel configuration** whose **[!UICONTROL Secondary Dimension]** is the table you want one message per row for (**flights** vs **flight details**, depending on your use case). Use **[!UICONTROL One message per profile]** when you only want **one** message per profile regardless of how many related rows qualify.
+
+    For **[!UICONTROL Targeting dimension]**, **[!UICONTROL Profile targeting dimension]**, and **[!UICONTROL Secondary dimension]**, see [Targeting dimension, secondary dimension, and profile targeting dimension](../target-dimension.md#dimension-concepts). For **[!UICONTROL Target + Secondary Dimension]** setup, see [Configure your Channel configuration](../channel-config.md). For segmentation on the canvas, see [Build audience](build-audience.md) and [Change dimension](change-dimension.md).
+
+1. Click **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]**, or **[!UICONTROL Edit direct mail]** depending on the chosen channel to create the message as usual, then return to the **right rail** to finish **[!UICONTROL Actions]**.
 
 ## Set up the channel configuration and settings {#configuration}
 
-Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
+In the **right rail**, use the **[!UICONTROL Actions]** section to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
 1. **Select a channel configuration**
 
     A configuration is defined by a [System Administrator](../../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../../configuration/channel-surfaces.md)
+
+    For **multi-entity** sends, the administrator must create a configuration that uses **[!UICONTROL Target + Secondary Dimension]** and the correct **[!UICONTROL Secondary Dimension]** (linked table) in [Configure your Channel configuration for Orchestrated campaigns](../channel-config.md). When you configure **[!UICONTROL Target]** on the activity, the **list of channel configurations is filtered**: you only see options **compatible** with your selected **[!UICONTROL Target dimension]** and, when applicable, **[!UICONTROL One message per secondary dimension]** (typically configurations built for **primary + secondary** delivery—not only primary).
 
     ![image showing the Actions section](../assets/channel-actions.png)
 
@@ -165,13 +180,13 @@ Once the content is created, use the **[!UICONTROL Simulate Content]** button to
 
 ![image showing the Simulate Content button](../assets/channel-simulate.png)
 
-## Confirm message sending
+## Confirm message sending {#confirm-message-sending}
 
-By default, for non-recurring orchestrated campaigns, message delivery is paused until you explicitly approve the send. After publishing the campaign, confirm the send request from the channel activity's properties pane.
+By default, for non-recurring orchestrated campaigns, message delivery is paused until you explicitly approve the send. After publishing the campaign, confirm the send request from **[!UICONTROL Properties]** in the **right rail** while the channel activity is selected.
 
 ![image showing the Confirm button](../assets/confirm-sending.png)
 
-Sending confirmation can be disabled before publishing the orchestrated campaign. To do so, select the channel activity in the canvas to display its properties, and turn on **[!UICONTROL Send without confirmation]**.
+Sending confirmation can be disabled before publishing the orchestrated campaign. To do so, select the channel activity on the canvas, go to **[!UICONTROL Properties]** in the **right rail**, and turn on **[!UICONTROL Send without confirmation]**.
 
 ![image showing the Send without confirmation button](../assets/send-without-confirmation.png)
 

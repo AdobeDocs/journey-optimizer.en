@@ -32,9 +32,11 @@ To configure you channel configuration:
 
      * **[!UICONTROL Target Dimension]**: send to the primary entity e.g., recipient.
 
-     * **[!UICONTROL Target + Secondary Dimension]**: send using both primary and secondary entities e.g., recipient + contract.
+     * **[!UICONTROL Target + Secondary Dimension]**: send using both primary and secondary entities e.g., recipient + contract, or recipient + flights.
 
-1. Select from the drop-down your [previously created Target Dimension](#targeting-dimension).
+          Choose this option to support multi-entity Orchestrated campaigns where one profile can receive several messages—one per qualifying row in the linked table you select as[!UICONTROL Secondary Dimension] (for example **flights** linked to **recipients**, or **flight details** linked to **flights**, depending on your data model).
+
+1. Select from the drop-down your [previously created Target Dimension](target-dimension.md#targeting-dimension).
 
      ![](assets/target-dimension-4.png)
 

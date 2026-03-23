@@ -23,6 +23,10 @@ As a marketer, you can enhance audience targeting by shifting from one data enti
 
 To achieve this, use the **[!UICONTROL Change dimension]** activity. It allows you to adjust the targeting dimension during the Orchestrated campaign.
 
+>[!NOTE]
+>
+>For many **multi-entity** scenarios, an explicit **[!UICONTROL Change dimension]** is optional. When the relationship path allows it, you can connect a **[!UICONTROL Build audience]** activity directly to a channel activity and set the **[!UICONTROL One message per secondary dimension]** option. See [Add a channel activity and define its properties](channels.md#add).  The product can infer viable primary and **secondary** dimensions from targetable schemas linked to your query. Add **[!UICONTROL Change dimension]** when you need a deliberate switch of axis in the workflow.
+
 <!--
 >[!IMPORTANT]
 >
@@ -36,8 +40,7 @@ Follow these steps to configure the **[!UICONTROL Change dimension]** activity:
 
    ![](../assets/orchestrated-change-dimension.png)
 
-1. Define the **[!UICONTROL New target dimension]**. During dimension change, all records are kept. 
-
+1. Define the **[!UICONTROL New target dimension]**. During dimension change, all records are kept.
 
 ## Example {#example}
 
