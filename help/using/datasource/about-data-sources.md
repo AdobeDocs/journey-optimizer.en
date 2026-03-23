@@ -17,6 +17,9 @@ exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
 >title="About data sources"
 >abstract="The data source configuration is always performed by a technical user. The data source configuration allows you to define a connection to a system to retrieve additional information that will be used in your journeys, for: condition definition, parameter and personalization data in actions, custom wait definition, time zone definition."
 
+>[!TIP]
+>New to data management in Journey Optimizer? Start with the [Get started with data management](../data/gs-data.md) overview to understand schemas, datasets, identities, and how data flows before configuring data sources.
+
 The data source configuration allows you to define a connection to a system to retrieve additional information that will be used in your journeys, for:
 
 * [condition definition](../building-journeys/condition-activity.md)

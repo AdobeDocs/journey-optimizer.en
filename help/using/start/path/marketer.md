@@ -21,7 +21,7 @@ Journey Optimizer offers two powerful orchestration approaches:
 * **Journeys**: Real-time, one-to-one engagement where each customer moves through at their own pace, triggered by behavior or events
 * **Orchestrated Campaigns**: Complex, multi-step batch campaigns at scale where audiences progress together through workflows—perfect for brand-initiated campaigns like seasonal promotions, product launches, or account-based communications
 
-Work with your [Administrators](administrator.md) to gain access and with [Data Engineers](data-engineer.md) to set up audiences, data, and relational schemas for advanced segmentation.
+Work with your [Administrators](administrator.md) to gain access and with [Data Engineers](data-engineer.md) to set up audiences, data, and relational schemas for advanced segmentation. See the [Get started with data management](../../data/gs-data.md) overview to understand what data setup is needed before you can build journeys and campaigns.
 
 Follow these core steps to start building experiences:
 

@@ -32,6 +32,7 @@ Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a h
 
 >[!MORELIKETHIS]
 >
+>* [Get started with data management in Journey Optimizer](../data/gs-data.md)
 >* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
 >* [Default guardrails for Real-Time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}
 >* ​[Data Ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home){target="_blank"}
