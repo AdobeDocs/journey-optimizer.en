@@ -105,7 +105,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
     A configuration is defined by a [System Administrator](../../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../../configuration/channel-surfaces.md)
 
-    For **multi-entity** sends, the administrator must create a configuration that uses **[!UICONTROL Target + Secondary Dimension]** and the correct **[!UICONTROL Secondary Dimension]** (linked table) in [Configure your Channel configuration for Orchestrated campaigns](../channel-config.md). When you configure **[!UICONTROL Target]** on the activity, the **list of channel configurations is filtered**: you only see options **compatible** with your selected **[!UICONTROL Target dimension]** and, when applicable, **[!UICONTROL One message per secondary dimension]** (typically configurations built for **primary + secondary** delivery—not only primary).
+    The list of channel configurations is filtered according to the target you set for the delivery in the properties pane when selecting it from the canvas. Only configurations that are compatible with that target appear.
 
     ![image showing the Actions section](../assets/channel-actions.png)
 
@@ -142,7 +142,6 @@ For more information on performance when using Rapid delivery mode, refer to [Ad
 When your channel activity has been configured, select the **[!UICONTROL Content]** tab to define its content.
 
 ## Define the content {#content}
-
 
 ### Create the message content
 
