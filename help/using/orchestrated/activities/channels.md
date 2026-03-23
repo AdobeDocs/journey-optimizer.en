@@ -99,7 +99,7 @@ By using channel activities, you can create comprehensive and personalized campa
 
 ## Set up the channel configuration and settings {#configuration}
 
-In the **right rail**, use the **[!UICONTROL Actions]** section to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
+Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
 1. **Select a channel configuration**
 
