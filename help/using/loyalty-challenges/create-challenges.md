@@ -29,7 +29,7 @@ exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
 
 >[!AVAILABILITY]
 >
->This feature is currently in **private beta**. Learn more about [availability labels](../rn/releases.md#availability-labels).
+>This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 This page covers the complete process of creating a loyalty challenge, from selecting the challenge type and configuring its properties to generating and publishing the journey that will deliver the challenge to your customers.
 

@@ -23,7 +23,7 @@ exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
 
 >[!NOTE]
 >
->The data lookup capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
+>The data lookup capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 Learn more on how to access and work with datasets in this section : [Get started with datasets](../data/get-started-datasets.md)
 

@@ -17,7 +17,7 @@ Once you've added a decision policy to your content, you can use attributes from
 >
 >Decision policies are available to all customers for the **Code-based Experience**, **SMS**, and **Push notification** channels.
 >
->Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
+>Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Insert the decision policy code {#insert}
 
