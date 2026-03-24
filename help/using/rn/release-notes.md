@@ -36,13 +36,13 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Transactional messages in Orchestrated Campaigns</strong><br/></th>
+<th><strong>Transactional Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Orchestrated Campaigns now support <strong>transactional messaging</strong>, enabling you to trigger real-time, event-driven messages—such as order confirmations, booking notifications, and account updates—directly within your campaign workflow.</p>
+<p>Orchestrated campaigns can now be designated as <strong>transactional</strong>. This allows for the delivery of transactional messages triggered by specific actions performed by individuals, such as password reset requests or cart purchases. By assigning this category, transactional channel configurations are applied, and business rules are bypassed.</p>
 </td>
 </tr>
 </tbody>
@@ -51,7 +51,7 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Trigger orchestrated campaigns using API</strong><br/></th>
+<th><strong>Trigger Orchestrated campaigns using API</strong><br/></th>
 </tr>
 </thead>
 <tbody>
