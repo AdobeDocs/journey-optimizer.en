@@ -131,10 +131,6 @@ Once your content is ready, review and publish your campaign or journey:
 
 For code-based experiences, as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.
 
->[!NOTE]
->
->You currently can't simulate decision-based content for [Code-based experience](../code-based/create-code-based.md) campaigns or journeys. A workaround is available [here](../code-based/code-based-decisioning-implementations.md).
-
 ## Use reporting dashboards
 
 To see how your decisions are performing, you can view out-of-the-box decisioning metrics in the campaign or journey report, or build custom Customer Journey Analytics dashboards to measure performance and gain insights into how your decision policies and offers are delivered and engaged with. [Learn more about Decisioning reporting](cja-reporting.md).
