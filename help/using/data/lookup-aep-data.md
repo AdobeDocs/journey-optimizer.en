@@ -51,8 +51,6 @@ Before you begin, please review the following restrictions and guidelines:
 
   If you delete **Batch 1**, Sku1, Sku2, and Sku3 are removed from the lookup store. The resulting lookup data will then contain: Sku4, Sku5, Sku6, Sku7, Sku8, Sku9, Sku10.
 
-* **No chained lookups** - Dataset lookups cannot be chained together. In other words, you cannot use the result of one lookup as a variable to then become the key to perform a second lookup.
-
 ### Entitlement for lookup service
 
 | Feature Component | Limits | Notes |
