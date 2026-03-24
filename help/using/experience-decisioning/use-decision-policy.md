@@ -120,7 +120,7 @@ To add an attribute, click the **`+`** icon next to the attribute. You can add a
 
 ## Preview & test your content
 
-After building your content, preview and test it before activating your journey or campaign. Decision items render based on selected profiles in the simulation interface. [Learn how to preview and test content](../content-management/preview-test.md).  
+After building your content, preview and test it before activating your journey or campaign. Decision items render based on selected profiles in the simulation interface. [Learn how to preview and test content](../content-management/preview-test.md).
 
 ## Next steps {#final-steps}
 

@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## March 2026 {#march-2026}
 
+* Documentation for **previewing code-based experiences with Experience Decisioning** now clarifies that **[!UICONTROL Simulate content]** is content preview only. Context data from live Edge requests is not simulated in authoring preview. [Read more](../code-based/test-code-based.md#preview-code-based)
+
 * The **Use Adobe Experience Platform data** documentation has been updated: the guardrails no longer state that dataset lookups cannot be chained, reflecting current product behavior. [Read more](../data/lookup-aep-data.md)
 
 * The **Update Profile** activity documentation has been updated to document support for updating up to five profile attributes in a single action. [Read more](../building-journeys/update-profiles.md)

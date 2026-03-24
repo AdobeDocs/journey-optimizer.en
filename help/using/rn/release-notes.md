@@ -577,7 +577,7 @@ Improvements coming with this release are listed below.
 
   This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
-* **Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
+* **Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live. [Read more](../code-based/test-code-based.md#preview-code-based)
 
   Availability date: February 18, 2026
 

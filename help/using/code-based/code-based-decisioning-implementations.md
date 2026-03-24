@@ -19,8 +19,6 @@ When using Decisioning in code-based experiences, consider adding the following 
 
 ## Testing code-based experiences using decisions {#code-based-test-decisions}
 
-You can preview decision items from the user interface when building a [code-based experience](create-code-based.md) campaign or journey: use **[!UICONTROL Simulate content]** and select test profiles to see which decision items qualify. [Learn more](test-code-based.md#preview-code-based).
-
 When testing [code-based experience](create-code-based.md) with decisioning, the `dryRun` flag can be used to suppress feedback events for both reporting and capping counters.
 
 After publishing your campaign, add the `dryRun` flag into the XDM event `data` block in your client implementation:
