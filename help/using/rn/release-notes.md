@@ -313,8 +313,6 @@ Improvements coming with this release are listed below.
 
 #### Decisioning
 
-* **Expression fragment reference change feed in Edge Decisioning** - This enhancement allows changes in fragment references to automatically be reflected in all items that reference fragments, without needing to refresh anything manually (republishing the campaign or decision policy).
-
 * **Optional fragments in decision items** - When using fragments in decision items, you can now make a fragment optional so that if it is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing.
 
 #### Configuration
