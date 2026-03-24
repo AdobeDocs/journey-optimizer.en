@@ -110,7 +110,9 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <p>Use the new Optimize node to target specific audiences or run A/B tests to determine the best path to meet your business-centric KPIs.
 This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
 </p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../building-journeys/optimize.md">Learn more</a></p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>With general availability, this release introduces <strong>experiment type</strong> selection (A/B or multi-armed bandit) and <strong>Scale the winner</strong> for unitary journeys.</p>
+<p>For more information, refer to the <a href="../building-journeys/optimize.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -141,8 +143,8 @@ This tool allows you to test and vary, and customize communications, sequencing,
 <tr>
 <td>
 <p>Following the General Availability of the <strong>Action activity</strong> in February 2026, legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) in the journey canvas are now deprecated.</p>
-<p>You now use a single <strong>Action activity</strong> to configure all channel actions, replacing the need for separate channel-specific nodes.</p>
-Existing journeys using legacy channel activities will continue to function without any changes or migration required.
+<p>You now use a single <strong>Action activity</strong> to configure all channel actions, replacing the need for separate channel-specific nodes.
+Existing journeys using legacy channel activities will continue to function without any changes or migration required.</p>
 <p>For more information, refer to the <a href="../building-journeys/journey-action.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -335,6 +337,12 @@ Improvements coming with this release are listed below.
 * **Target dimension simplification in Orchestrated Campaigns** - You can now easily select or automatically deduce the right targeting and secondary dimensions in Orchestrated campaigns for accurate, efficient audience activation.
 
 #### Journeys
+
+* **Experiment type** - You can now choose between A/B experiment (fixed split at the start) or Multi-armed bandit (automatic split with weekly weight updates) when configuring a path experiment.
+
+* **Path experimentation: Scale the Winner** - You can now automatically or manually roll out the winning path of an experiment to your full audience. Once a winner is determined, you can amplify its reach and effectiveness without constantly monitoring the experiment.
+  
+  This capability is available only in unitary journeys (event-triggered and Audience qualifications). It is not available for Read audience journeys.
 
 * **Wave sending of outbound messages in journeys** - You can now schedule messages from Journey Optimizer journeys to be delivered in controlled batches over time. [Learn more](../building-journeys/send-using-waves.md)
 
