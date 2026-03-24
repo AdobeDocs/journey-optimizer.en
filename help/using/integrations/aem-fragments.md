@@ -10,9 +10,13 @@ exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 ---
 # Work with Adobe Experience Manager Content Fragments {#aem-fragments}
 
+>[!AVAILABILITY]
+>
+>This integration applies to **Adobe Experience Manager as a Cloud Service Sites**, for **Content Fragments** only. Journey Optimizer reads fragments from the **Publish** tier (not Author). 
+
 The integration between Adobe Experience Manager and Journey Optimizer follows this data flow:
 
-1. **[Configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration)**: To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first configure the Dispatcher. This is a prerequisite for the integration.
+1. **[Configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration){target="_blank"}**: To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first configure the Dispatcher. This is a prerequisite for the integration. 
 
 1. **[Create and author](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing#creating-a-content-fragment)**: Content is created and configured in Adobe Experience Manager as Content Fragments.
 
@@ -34,7 +38,7 @@ When a Content Fragment is published in Adobe Experience Manager, an event is se
 
 >[!IMPORTANT]
 >
->To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first [configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration).
+>To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first [configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration){target="_blank"}.
 
 Before using your Content fragment in Journey Optimizer, you need to create a tag specifically for Journey Optimizer:
 
@@ -103,11 +107,27 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_6.png)
 
+1. To surface an image URL that is stored in a Content Fragment attribute, e.g. a path or URL field from the fragment model, insert it in your HTML with an `<img>` tag and the fragment attribute as the source, for example:
+
+    ```html
+    <img src="[insert your AEM Content Fragment attribute here]">
+    ```
+
+    >[!NOTE]
+    >
+    >Relative image URLs from Adobe Experience Manager are not supported, use **absolute** URLs.
+
 1. Select **Pills: Off** to enable the pills experience to improve readability by hiding long attribute paths. 
 
     ![](assets/aem_campaign_10.png)
 
+1. To use **personalization placeholders** authored in Adobe Experience Manager inside your fragment text, define them in the Content Fragment in Adobe Experience Manager as follows: `{{name}}`. 
+
+    In Journey Optimizer, those tokens are placeholders. With the **pills** experience on, they appear in the **[!UICONTROL AEM Content Fragment]** section of the right rail alongside fragment fields.
+
 1. To enable real-time personalization, all placeholders used within a **[!UICONTROL Content fragment]** must be explicitly declared by the user as parameters in the fragment helper tag. You can map these placeholders to profile attributes, contextual attributes, static strings, or predefined variables using the following methods:
+
+    You can map these placeholders using the following methods:
 
     1. **Profile or Contextual Attribute Mapping**: Assign the placeholder to a profile or contextual attribute, e.g. name = profile.person.name.firstName.
 
@@ -129,4 +149,4 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
 Once you have performed your tests and validated the content, you can [send your campaign](../campaigns/review-activate-campaign.md) or [publish your journey](../building-journeys/publishing-the-journey.md) to your audience.
 
-Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references).
+Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references){target="_blank"}. 
