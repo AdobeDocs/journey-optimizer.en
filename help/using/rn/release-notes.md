@@ -77,6 +77,7 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <p>Following the General Availability of the <strong>Action activity</strong> in February 2026, legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) in the journey canvas are now deprecated.</p>
 <p>You now use a single <strong>Action activity</strong> to configure all channel actions, replacing the need for separate channel-specific nodes.
 Existing journeys using legacy channel activities will continue to function without any changes or migration required.</p>
+<p><img src="assets/do-not-localize/action-activity.gif"></p>
 <p>For more information, refer to the <a href="../building-journeys/journey-action.md">detailed documentation</a>.</p>
 </td>
 </tr>
