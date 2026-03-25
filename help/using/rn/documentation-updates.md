@@ -15,6 +15,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## March 2026 {#march-2026}
 
+* Documentation for **previewing code-based experiences with Experience Decisioning** now clarifies that **[!UICONTROL Simulate content]** is content preview only. Context data from live Edge requests is not simulated in authoring preview. [Read more](../code-based/test-code-based.md#preview-code-based)
+
+* The **Use Adobe Experience Platform data** documentation has been updated: the guardrails no longer state that dataset lookups cannot be chained, reflecting current product behavior. [Read more](../data/lookup-aep-data.md)
+
 * The **Update Profile** activity documentation has been updated to document support for updating up to five profile attributes in a single action. [Read more](../building-journeys/update-profiles.md)
 
 * The **Read Audience** activity and **Journey properties** documentation have been updated to clarify the 91-day journey lifecycle for always-on recurring journeys. The schedule section now explicitly confirms that recurring journeys with no end date remain Live past 91 days, and the global timeout FAQ has been expanded to distinguish the 91-day profile TTL from the 91-day reporting window. [Read more](../building-journeys/read-audience.md#schedule)

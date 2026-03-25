@@ -36,13 +36,13 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Transactional messages in Orchestrated Campaigns</strong><br/></th>
+<th><strong>Transactional Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Orchestrated Campaigns now support <strong>transactional messaging</strong>, enabling you to trigger real-time, event-driven messages—such as order confirmations, booking notifications, and account updates—directly within your campaign workflow.</p>
+<p>Orchestrated campaigns can now be designated as <strong>transactional</strong>. This allows for the delivery of transactional messages triggered by specific actions performed by individuals, such as password reset requests or cart purchases. By assigning this category, transactional channel configurations are applied, and business rules are bypassed.</p>
 </td>
 </tr>
 </tbody>
@@ -51,7 +51,7 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Trigger orchestrated campaigns using API</strong><br/></th>
+<th><strong>Trigger Orchestrated campaigns using API</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -81,7 +81,7 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>URL parameters encryption</strong><br/></th>
+<th><strong>URL parameter encryption</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -110,7 +110,9 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <p>Use the new Optimize node to target specific audiences or run A/B tests to determine the best path to meet your business-centric KPIs.
 This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
 </p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../building-journeys/optimize.md">Learn more</a></p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>With general availability, this release introduces <strong>experiment type</strong> selection (A/B or multi-armed bandit) and <strong>Scale the winner</strong> for unitary journeys.</p>
+<p>For more information, refer to the <a href="../building-journeys/optimize.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -141,8 +143,8 @@ This tool allows you to test and vary, and customize communications, sequencing,
 <tr>
 <td>
 <p>Following the General Availability of the <strong>Action activity</strong> in February 2026, legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) in the journey canvas are now deprecated.</p>
-<p>You now use a single <strong>Action activity</strong> to configure all channel actions, replacing the need for separate channel-specific nodes.</p>
-Existing journeys using legacy channel activities will continue to function without any changes or migration required.
+<p>You now use a single <strong>Action activity</strong> to configure all channel actions, replacing the need for separate channel-specific nodes.
+Existing journeys using legacy channel activities will continue to function without any changes or migration required.</p>
 <p>For more information, refer to the <a href="../building-journeys/journey-action.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -299,9 +301,10 @@ Improvements coming with this release are listed below.
 
 #### Reporting
 
-* **Exclude bot clicks for email and SMS reporting** - Email and SMS reporting now automatically filters out bot clicks from click metrics, providing more accurate engagement data and preventing automated traffic from inflating your performance figures.
-
 * **Send-Time Optimization: updated controls location and new lift report** - Send-Time Optimization (STO) controls have been relocated to the Action configuration menu. Additionally, a new lift report is now available in Journeys reports to measure the impact of STO on your campaign performance metrics.
+
+<!--
+* **Exclude bot clicks for email and SMS reporting** - Email and SMS reporting now automatically filters out bot clicks from click metrics, providing more accurate engagement data and preventing automated traffic from inflating your performance figures.
 
 #### Email Designer
 
@@ -309,11 +312,9 @@ Improvements coming with this release are listed below.
 
 * **Text mode support in fragments** - To support text-based email workflows, you can now create and manage text versions of your visual fragments for optimal use in the plain text version of emails that include that fragment.
 
-  **Caution:** When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered—both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.
+  **Caution:** When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered—both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.-->
 
 #### Decisioning
-
-* **Expression fragment reference change feed in Edge Decisioning** - This enhancement allows changes in fragment references to automatically be reflected in all items that reference fragments, without needing to refresh anything manually (republishing the campaign or decision policy).
 
 * **Optional fragments in decision items** - When using fragments in decision items, you can now make a fragment optional so that if it is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing.
 
@@ -336,6 +337,12 @@ Improvements coming with this release are listed below.
 * **Target dimension simplification in Orchestrated Campaigns** - You can now easily select or automatically deduce the right targeting and secondary dimensions in Orchestrated campaigns for accurate, efficient audience activation.
 
 #### Journeys
+
+* **Experiment type** - You can now choose between A/B experiment (fixed split at the start) or Multi-armed bandit (automatic split with weekly weight updates) when configuring a path experiment.
+
+* **Path experimentation: Scale the Winner** - You can now automatically or manually roll out the winning path of an experiment to your full audience. Once a winner is determined, you can amplify its reach and effectiveness without constantly monitoring the experiment.
+  
+  This capability is available only in unitary journeys (event-triggered and Audience qualifications). It is not available for Read audience journeys.
 
 * **Wave sending of outbound messages in journeys** - You can now schedule messages from Journey Optimizer journeys to be delivered in controlled batches over time. [Learn more](../building-journeys/send-using-waves.md)
 
@@ -579,6 +586,9 @@ Improvements coming with this release are listed below.
 
   This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
+* **Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live. [Read more](../code-based/test-code-based.md#preview-code-based)
+
+  Availability date: February 18, 2026
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies. [Read more](../experience-decisioning/fragments-decision-policies.md)
 
@@ -603,11 +613,5 @@ Improvements coming with this release are listed below.
 <!--## Coming soon {#coming-soon}
 
 The features and improvements below are planned for release later in February. Release dates and scope may change without prior notice.
-
-### Improvements {#coming-soon-improv}
-
-* **Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live.
-
-  Availability date: February 18, 2026
 -->
 

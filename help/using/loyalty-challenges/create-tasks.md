@@ -29,7 +29,7 @@ exl-id: c1e49173-69cc-4729-9f9a-afea2ccff3fa
 
 >[!AVAILABILITY]
 >
->This feature is currently in **private beta**. Learn more about [availability labels](../rn/releases.md#availability-labels).
+>This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 Tasks define the specific actions or milestones that customers must complete to earn rewards in a loyalty challenge. You can configure task types, quantities, and product requirements to create engaging and personalized loyalty experiences.
 

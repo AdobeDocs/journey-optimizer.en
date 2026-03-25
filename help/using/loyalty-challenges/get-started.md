@@ -29,7 +29,7 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 
 >[!AVAILABILITY]
 >
->This feature is currently in **private beta**. Learn more about [availability labels](../rn/releases.md#availability-labels).
+>This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Overview {#overview}
 

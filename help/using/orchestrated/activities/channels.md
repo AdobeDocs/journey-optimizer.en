@@ -67,8 +67,8 @@ By using channel activities, you can create comprehensive and personalized campa
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_category"
->title="Target"
->abstract="Placeholder for Category field"
+>title="Category"
+>abstract="Choose Marketing or Transactional for this channel activity. Marketing messages use marketing channel configurations and follow your standard business rules. Transactional messages are for operational communications — often triggered by an individual's action (for example, a password reset or purchase confirmation) or for time-sensitive notices such as disruptions or cancellations. They use transactional channel configurations, business rules are bypassed, and opt-in is not required."
 
 >[!PREREQUISITES]
 >
