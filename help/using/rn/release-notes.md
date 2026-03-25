@@ -259,7 +259,7 @@ Improvements coming with this release are listed below.
 The features and improvements below are planned for release later in March/early April. Release dates and scope are **subject to change without prior notice**.
 
 
-### Features 
+### Capabilities 
 
 
 <table>
