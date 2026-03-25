@@ -73,7 +73,7 @@ A source connector (also known as a **source**) helps you ingest data from multi
 
 ### Data source (Journey Optimizer) {#data-source}
 
-A data source in Journey Optimizer defines which fields from Adobe Experience Platform (or external APIs) are exposed inside journeys and messages. Configured in the Journey Optimizer UI, data sources typically include the built-in Adobe Experience Platform data source (exposing Real-Time Customer Profile attributes and events) and optional external or custom data sources called at journey runtime for additional enrichment. They are used for journey conditions, custom actions, and message personalization.
+A data source in Journey Optimizer defines which fields from Adobe Experience Platform (or external APIs) are exposed inside journeys and messages. Configured in the Journey Optimizer UI, data sources typically include the built-in Adobe Experience Platform data source (exposing Real-Time Customer Profile attributes) and optional external or custom data sources called at journey runtime for additional enrichment. They are used for journey conditions, custom actions, and message personalization.
 
 ➡️ [Learn more about data sources](../datasource/about-data-sources.md)
 
