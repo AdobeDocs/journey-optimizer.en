@@ -131,7 +131,10 @@ Configure source connectors for your enterprise systems — such as Adobe Analyt
 
 Data sources are a Journey Optimizer-specific concept: they are not where your data lives, but where you declare which fields Journey Optimizer is allowed to read during journey and message execution. Before a journey can evaluate a condition like "is the customer a loyalty member?" or personalize a message with a first name, the relevant profile fields must be exposed through a data source configuration.
 
-Journey Optimizer includes a built-in [Adobe Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) that gives direct access to Real-Time Customer Profile attributes and events. This covers the vast majority of use cases: reading profile attributes for personalization, using event history to drive journey logic, or checking consent and preference fields. You can also configure [external data sources](../datasource/external-data-sources.md) to call third-party APIs at journey runtime — for example, to retrieve a real-time loyalty score, a product recommendation, or a store inventory level that is not stored in Adobe Experience Platform.
+Journey Optimizer includes a built-in [Adobe Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) that gives direct access to Real-Time Customer Profile attributes. This covers the vast majority of use cases: reading profile attributes for personalization or checking consent and preference fields. You can also configure [external data sources](../datasource/external-data-sources.md) to call third-party APIs at journey runtime — for example, to retrieve a real-time loyalty score, a product recommendation, or a store inventory level that is not stored in Adobe Experience Platform.
+
+>[!NOTE]
+>Direct access to experience event data via the built-in Adobe Experience Platform data source is deprecated and being progressively disabled. [Learn more](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/journey-use-cases/exp-event-lookup){target="_blank"}.
 
 Configuring data sources is an administrative task that unlocks the full data layer for journey authors and marketers. Once a field is exposed through a data source, it becomes available in the journey condition builder, in message personalization editors, and in offer decisioning rules — without requiring any additional engineering work at journey-build time.
 
@@ -154,7 +157,7 @@ Some product guardrails and limitations can influence how you design your data m
 
 Journey Optimizer creates several system-generated datasets for tracking, feedback, and journey step events. As of February 2025, a time-to-live (TTL) guardrail is being rolled out to some of these datasets, which may affect how long data is retained for analysis and troubleshooting.
 
-➡️ [Learn more about datasets](get-started-datasets.md)
+➡️ [Learn more about dataset TTL guardrails](datasets-ttl.md)
 
 ### Streaming segmentation and Journey Optimizer events {#streaming-segmentation}
 
