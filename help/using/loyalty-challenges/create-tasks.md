@@ -104,7 +104,7 @@ Available attributes for **Spend** activities:
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_task_eligible_items_exclusion"
 >title="Eligible items & exclusions"
->abstract="Control which purchases count for Purchase and Spend tasks. In the first field, type comma-separated item IDs, categories, or destination IDs to allow only those. Leave it empty so all purchases count, or type an asterisk to mean all purchases. In the second field, list items or categories that should never count—such as gift cards or clearance."
+>abstract="For both **Purchase** and **Spend** activities, you can use the **[!UICONTROL Eligible items & exclusions]** attribute to define which items and groups are eligible and which are excluded. This allows you to target specific products, categories, or locations to align with your challenge goals. For example, you can limit a spending task to specific product categories, or exclude gift cards or promotional items from counting toward task completion."
 
 <!-- SCREENSHOT: Eligible items & exclusions popup showing the two sections: "Eligible task purchases are limited to the following" and "The following are excluded from this task" with text input fields -->
 

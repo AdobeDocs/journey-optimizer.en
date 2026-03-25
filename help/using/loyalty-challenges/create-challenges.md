@@ -256,7 +256,7 @@ After completing the messaging configuration, define which customers are eligibl
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_audience"
 >title="Audience"
->abstract="On the Audience tab, choose who can participate in the challenge. Select Select audience, pick your target audience from the available Adobe Experience Platform audiences in the dialog, then select Add audience. Only members of that audience are eligible. Audiences are defined in Experience Platform—use an existing audience or create one there before you finish this step."
+>abstract="On the Audience tab, choose who can participate in the challenge from the available Adobe Experience Platform audiences."
 
 Define which customers can participate in your loyalty challenge.
 
