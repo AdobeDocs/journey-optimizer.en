@@ -18,19 +18,17 @@ version: Journey Orchestration
 >title="Action activity"
 >abstract="The **Action** activity lets you configure a single native channel action and multiple inbound activities with the ability to add optimization to any built-in channel action."
 
-[!DNL Journey Optimizer] comes with a new generic **Action** activity that allows to configure a single built-in channel action, and also multiple inbound activities.
+The **Action** activity is the single entry point for all channel actions in the journey canvas. It replaces the previous individual built-in channel activities and consolidates Email, Push, SMS, In-app, Web, Code-based experience, and Content Card into one unified activity type.
 
-The Action activity offers:
+Use it to:
 
-* A simplified native action configuration within the journey canvas.
-* The capacity to create multi-action inbound action groups.
-* The ability to add optimization to any built-in channel action.
-
-To add a built-in channel action to your journey, use the **Action** activity. This unified activity consolidates all channel actions (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) into a single activity type, replacing the previous individual channel activities.
+* Configure any built-in channel action from a single, streamlined interface.
+* Build multi-action inbound action groups.
+* Apply optimization to any channel action.
 
 >[!IMPORTANT]
 >
->All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+>Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 You can also set up custom actions to send your messages in [!DNL Journey Optimizer]. [Learn more](#recommendation)
 
@@ -38,7 +36,9 @@ You can also set up custom actions to send your messages in [!DNL Journey Optimi
 
 To add a built-in channel action to your journey using the **[!UICONTROL Action]** activity, follow the steps below.
 
-For more information on the channels available in journeys, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
+>[!NOTE]
+>
+>For more information on the channels available in journeys, refer to the table in this section: [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
 
 1. Start your journey with an [Event](general-events.md) or a [Read Audience](read-audience.md) activity.
 

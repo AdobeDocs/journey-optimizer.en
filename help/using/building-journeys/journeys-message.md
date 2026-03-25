@@ -8,6 +8,8 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: journey, message, push, sms, email, in-app, web, content card, code-based experience
+hide: yes
+hidefromtoc: yes
 exl-id: 4db07a9e-c3dd-4873-8bd9-ac34c860694c
 version: Journey Orchestration
 ---
