@@ -1,0 +1,1566 @@
+---
+solution: Journey Optimizer
+product: journey optimizer
+title: Vendor Integration Documentation
+description: Use Adobe Journey Optimizer Integrations with any external platform that exposes a valid API—plus engineering-tested vendor patterns for confidence when you design your setup.
+feature: Integrations
+topic: Content Management
+role: User
+level: Intermediate
+keywords: integration, vendor, third-party
+---
+
+# Vendor integration documentation {#vendor-integration}
+
+You can use **Integrations** in Adobe Journey Optimizer to call **external systems over HTTP** when each system exposes an **API endpoint** that suits your use case and is compatible with how Integrations issues requests and consumes responses. For complete workflow, see [Work with Integrations](external-sources.md).
+
+The list of third-party solutions described is illustrative, not exhaustive. Other platforms may be used where they satisfy product requirements. The sections that follow are intended as reference patterns to support implementation of comparable integrations.
+
+
+## Operational guardrails {#operational-guardrails}
+
+Apply the following when you configure any integration in this guide or a similar vendor:
+
+* **Response format:** Integrations map fields from **JSON** responses. Design calls so the API returns JSON suitable for mapping at authoring time.
+* **Payload and fields:** Request and map only the attributes you need. Smaller responses reduce latency and limit exposure of sensitive data.
+* **Endpoint shape:** Prefer stable, **single-resource** retrieval (for example one entry, product, or member) over broad list or pagination endpoints when the product expects targeted lookups. See [Limitations & exclusions](#limitations-exclusions) and [Work with Integrations](external-sources.md).
+* **Volume and reliability:** Respect the vendor's **rate limits**; configure **timeout**, **retry**, and **cache** policy for your channel (for example batch email vs transactional sends) and validate under load.
+* **Security:** Store and rotate tokens, API keys, and OAuth credentials according to your organization's policies. Do not embed secrets in message content.
+
+## Contentful {#contentful}
+
+### Vendor overview
+
+Contentful is a headless CMS for structured entries and assets over REST or GraphQL, so Journey Optimizer can pull content at send or open time.
+
+### Use cases
+
+* Localized hero blocks, alt text, and CTAs in email.
+* Product or promo entries in dynamic modules.
+* Entry-by-ID retrieval for personalized messaging.
+
+### Prerequisites
+
+* Contentful space with Delivery API access and a read-oriented API key.
+* Clear content types and field IDs; admin access in Journey Optimizer to create integrations.
+
+### Configuration steps
+
+Use the workflow in [Work with Integrations](external-sources.md): **[!UICONTROL Configurations]** > **[!UICONTROL Manage]** > create integration, set URL and **GET**, add the bearer token, supply path variables (space, environment, entry, locale as needed), paste sample JSON, map fields, configure policy, then test and activate.
+
+### Content Delivery API (entry)
+
+Sample integration fields (align with the [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/){target="_blank"} for your space and environment):
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://cdn.contentful.com/spaces/{{spaceID}}/entries/environments/{{environment_id}}` |
+| Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
+| Policy | Configure policy level details as per your need. |
+| **HTTP method** | `GET` |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `spaceID` | `spaceID` | `<YOUR_SPACE_ID>` |
+| `environment_id` | `environment_id` | `<YOUR_ENV_ID>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | `access_token` | `<YOUR_API_KEY>` | Query Parameter |
+
+
+### Limitations & exclusions
+
+* Broad listing or paginated Contentful APIs are a poor fit for this pattern—prefer retrieval calls that target a specific entry or asset.
+* Write-back or two-way synchronization is outside the scope of this example.
+
+## Stensul {#stensul}
+
+### Vendor overview
+
+Stensul is an email creation platform for approved templates; Journey Optimizer can consume template metadata and structured regions through its API.
+
+### Use cases
+
+* Import approved templates and map regions to profile attributes.
+* Reuse governed blocks for scalable campaign builds.
+
+### Prerequisites
+
+* Stensul account with API access and published templates with defined tokens.
+* Admin access in Journey Optimizer to create integrations.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Register the templates endpoint, authenticate per Stensul (API key or OAuth), define path variables such as template ID, paste sample JSON, map fields, and activate after a successful test.
+
+### Stensul Templates API
+
+Example pattern: `https://api.stensul.com/v1/templates/{template_id}`. See Stensul's API documentation for authentication and response shape.
+
+### Limitations & exclusions
+
+* In-place WYSIWYG editing of Stensul templates inside Journey Optimizer is not covered here.
+* Large or complex HTML in template payloads may require security review and sanitization.
+
+## AccuWeather {#accuweather}
+
+### Vendor overview
+
+AccuWeather exposes forecast and location REST APIs so messages can include weather-aware snippets.
+
+### Use cases
+
+* Short forecasts in email or push.
+* Tailoring based on forecast values tied to profile or context.
+
+### Prerequisites
+
+* API subscription and key; location key or a city search flow.
+* Admin access in Journey Optimizer to create integrations.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Use **GET** unless your subscription requires otherwise, attach the `apiKey` query parameter (or as documented), map `locationKey` and other variables from profile/context, paste sample JSON, map fields, then test.
+
+### Daily Forecasts API
+
+Sample integration fields. Details and tiers are described in [AccuWeather APIs](https://developer.accuweather.com/apis){target="_blank"}. You often resolve `locationKey` with a separate locations search call (for example `.../locations/v1/cities/search?q={{cityName}}`).
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://dataservice.accuweather.com/forecasts/v1/daily/{{days}}day/{{locationKey}}` |
+| **HTTP method** | `GET` |
+| Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
+| Policy | Configure policy level details as per your need. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `days` | `days` | `15` |
+| `locationKey` | `locationKey` | `<desired_location_key>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `format` | `format` | Variable | json | No (off) |
+| `language` | `language` | Variable | en-US | No (off) |
+| `details` | `details` | Variable | False | No (off) |
+| `metric` | `metric` | Variable | False | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | `apiKey` | `<YOUR_API_KEY>` | Query parameter |
+
+### Limitations & exclusions
+
+* Confirm the JSON response shape for your AccuWeather subscription tier; Integrations maps fields from JSON responses.
+* Observe AccuWeather rate limits and recommended caching.
+* Resolving `locationKey` often requires a separate geolocation or city-search request before forecast calls.
+
+## Sitecore {#sitecore}
+
+### Vendor overview
+
+Sitecore Content Hub and related cloud APIs support DAM-style download and metadata flows; the wiki pattern centers on a download order by ID.
+
+### Use cases
+
+* Asset or download metadata in email content.
+* Alignment with DAM workflows managed in Sitecore.
+
+### Prerequisites
+
+* Tenant URL and credentials (bearer or token per your API surface).
+* Admin access in Journey Optimizer to create integrations.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Configure **GET** on your download-order path, set authorization headers per Sitecore, map `id` from context, paste sample JSON, map fields, and tune timeouts for asset latency.
+
+### ContentHub – Retrieve a download order with a specific ID
+
+Use the following fields when you configure this sample call in Journey Optimizer. Confirm hostname and API version for your product (Content Hub, XM Cloud, and so on) in [Sitecore documentation](https://doc.sitecore.com/){target="_blank"}.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://xmapps-api.sitecorecloud.io/api/v1/downloadorders/{{id}}` |
+| **HTTP method** | `GET` |
+| Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
+| Policy | Configure policy level details as per your need. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `id` | `id` | `<id_of_download_order>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+| Authorization | Authorization | Constant | Bearer `<token>` | Yes (on) |
+| If-Modified-Since | If-Modified-Since | Variable | 2019-08-24T14:15:22Z | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | X-Auth-Token | `<token>` | Header |
+
+### Limitations & exclusions
+
+* Hostnames and paths vary by Sitecore product—use only endpoints your tenant exposes.
+* OAuth access tokens, refresh, and lifetimes must follow Sitecore security policy.
+
+## Bynder {#bynder}
+
+### Vendor overview
+
+Bynder is a DAM with REST APIs; integrations commonly use OAuth 2.0 for read-only metadata or asset URLs.
+
+### Use cases
+
+* Pull asset metadata or delivery URLs into messages.
+* Keep creative approved in Bynder aligned with journeys.
+
+### Prerequisites
+
+* Portal domain and OAuth client (or approved token approach).
+* Scopes for read-only access; admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Configure **GET** on the chosen endpoint (the wiki used a users listing pattern as an example), complete OAuth per [Bynder](https://developer.bynder.com/){target="_blank"}, avoid pulling unnecessary pages of data, map fields, test, then activate.
+
+### Retrieve Users
+
+Sample integration fields. See [Bynder API documentation](https://developer.bynder.com/){target="_blank"} for OAuth 2.0 payload details.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://{{your-bynder-domain}}/api/v4/users/` |
+| **HTTP method** | `GET` |
+| Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
+| Policy | Configure policy level details as per your need. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `your-bynder-domain` | `your-bynder-domain` | `<your-bynder-domain>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+| Authorization | Authorization | Constant | Bearer `<token>` | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `includeInActive` | `includeInActive` | Variable | False | No (off) |
+| `limit` | `limit` | Variable | 100 | No (off) |
+| `page` | `page` | Variable | 1 | No (off) |
+
+**Authentication**
+
+| Type | Payload |
+| --- | --- |
+| OAuth 2.0 | OAuth 2.0 payload (see Bynder documentation) |
+
+```
+{
+    "type": "oauth2",
+    "endpoint": {
+        "uri": ""
+    },
+    "method": "get",
+    "response": {
+        "type": "json"
+    },
+    "request": {
+        "header": [
+            {
+                "key": "client_id",
+                "value": ""
+            },
+            {
+                "key": "client_secret",
+                "value": ""
+            }
+        ],
+        "queryParams": [
+            {
+                "key": "grant_type",
+                "value": ""
+            },
+            {
+                "key": "scope",
+                "value": ""
+            }
+        ],
+        "payload": {
+            "type": "json",
+            "content": {}
+        }
+    },
+    "credentialPaths": [
+        "header.client_id",
+        "header.client_secret",
+        "queryParam.scope"
+    ],
+    "tokenPath": "message.token",
+    "policy": {
+        "timeoutInMilliseconds": 30000,
+        "cache": {
+            "enabled": true,
+            "ttlInSeconds": 300
+        },
+        "retry": {
+            "enabled": false
+        }
+    },
+    "locationConfig": {
+        "key": "x-token",
+        "location": "query"
+    }
+}
+```
+
+
+### Limitations & exclusions
+
+* Pagination and OAuth token refresh must follow Bynder's API rules.
+* Large paginated responses: map only the fields required for personalization.
+
+## Voucherify {#voucherify}
+
+### Vendor overview
+
+Voucherify provides promotions and loyalty REST APIs (campaigns, vouchers, loyalty programs).
+
+### Use cases
+
+* Read loyalty or promotion state for offers in content.
+* Show tier or balance where appropriate.
+
+### Prerequisites
+
+* Application ID and secret (per region/cluster); clarity on which loyalty or campaign endpoints you call.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Set base URL for your cluster, add required headers (`X-APP-ID`, `X-APP-TOKEN`), constrain list endpoints with filters or IDs, paste sample JSON, map fields, test, activate.
+
+### Loyalties — List Members
+
+Sample integration fields. Full reference: [Voucherify API](https://docs.voucherify.io/reference/introduction){target="_blank"}.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://{{cluster}}.voucherify.io/v1/loyalties/{{campaignId}}/members` |
+| **HTTP method** | `GET` |
+| Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
+| Policy | Configure policy level details as per your need. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `cluster` | `cluster` | `<your_cluster>` |
+| `campaignId` | `campaignId` | `<loyalty_campaign_Id>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+| X-APP-ID | X-APP-ID | Constant | `<YOUR-APP-ID>` | Yes (on) |
+| X-Voucherify-Channel | X-Voucherify-Channel | Constant | Voucherify Documentation | No (off) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `limit` | `limit` | Variable | 10 | No (off) |
+| `page` | `page` | Variable | 1 | No (off) |
+| `customer` | `customer` | Variable | `<customer_identifier>` | No (off) |
+| `created_at` | `created_at` | Variable | `<iso8601_date>` | No (off) |
+| `updated_at` | `updated_at` | Variable | `<iso8601_date>` | No (off) |
+| `order` | `order` | Variable | `<sort_field>` | No (off) |
+| `code` | `code` | Variable | `<loyalty_card_code>` | No (off) |
+| `ids` | `ids` | Variable | `<array_of_ids>` | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | X-APP-TOKEN | `<YOUR-APP-TOKEN>` | Header |
+
+### Limitations & exclusions
+
+* Avoid exposing internal promotion or campaign identifiers in customer-facing errors or message content.
+* Application-level rate limits apply—configure retries and caching per Voucherify guidance.
+
+## Marigold {#marigold}
+
+### Vendor overview
+
+Marigold exposes loyalty and engagement APIs; hosts differ by geography (EU vs US module hostnames).
+
+### Use cases
+
+* Enrich messages with loyalty or preference data from Marigold programs.
+
+### Prerequisites
+
+* Base URL and credentials from your contract; least-privilege API user when possible.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Point to the Marigold host for your region, set authentication (the wiki example uses `X-Api-Key` with key and secret), paste sample JSON, map fields, test, activate.
+
+### Engage API — Get Content
+
+Base host depends on region (for example `https://{{customername}}.module.slgnt.eu` or `https://{{customername}}.module.slgnt.us`). Confirm paths with Marigold for your deployment.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://{{customername}}.module.slgnt.{{locale}}/Portal/Api/organizations/{{organization}}/content/{{api_name}}` |
+| **HTTP method** | `GET` |
+| Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
+| Policy | Configure policy level details as per your need. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `customername` | `customername` | `<your_name>` |
+| `locale` | `locale` | `eu` / `us` |
+| `organization` | `organization` | `<your_organization>` |
+| `api_name` | `api_name` | `<api_name>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | X-Api-Key | `<apiKey>:<apiSecret>` | Header |
+
+### Limitations & exclusions
+
+* Endpoints vary by Marigold product—validate with Marigold support for your deployment.
+* Personal data in responses must comply with your DPA and retention policies.
+
+## Adobe Target Recommendations {#adobe-target-recommendations}
+
+### Vendor overview
+
+Adobe Target includes Recommendations and delivery APIs for server-side or integrated experiences, subject to entitlements.
+
+### Use cases
+
+* Inject recommendations into Journey Optimizer-authored experiences.
+* Align keys with profile or Experience Platform context.
+
+### Prerequisites
+
+* Target with Recommendations; IMS org and supported authentication.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Delivery calls are often **POST** with a JSON body. Configure OAuth per [Target authentication](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/configure-authentication){target="_blank"}, paste a sample response, map fields, test under expected volume.
+
+### Target Delivery API – Retrieve Target Offers
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://{{client}}.tt.omtrdc.net/rest/v1/delivery` |
+| Policy | Configure policy level details as per your need. |
+| **HTTP method** | `POST` |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `client` | `client` | `<client_name>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+
+
+**Query Parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| client | client | Variable | `<customer_client_code>` | Yes (on) |
+| sessionId | sessionId | Variable | ` <session_identifier>` | Yes (on) |
+
+**Authentication**
+
+Refer https://experienceleague.adobe.com/en/docs/target-dev/developer/api/configure-authentication and add JSON to Payload
+
+**Request Payload** 
+
+```Sample Request Payload JSON
+{
+  "id": {
+    "tntId": "<YOUR_TENANT_ID>"
+  },
+  "context": {
+    "channel": "web",
+    "address": {
+      "url": "https://example.com/store.html"
+    },
+    "screen": {
+      "width": 1200,
+      "height": 1400
+    }
+  },
+  "experienceCloud": {
+    "analytics": {
+      "logging": "server_side",
+      "supplementalDataId": "<supDataId>",
+      "trackingServer": "sstats.adobe.com"
+    }
+  },
+  "execute": {
+    "pageLoad": {
+      "parameters": {
+        "pageType": "checkout",
+        "preferredCurrency": "$"
+      }
+    },
+    "mboxes": [
+      {
+        "index": 1,
+        "name": "orderConfirmPage"
+      }
+    ]
+  },
+  "prefetch": {
+    "views": [
+      {
+        "parameters": {
+          "ad": "view"
+        }
+      }
+    ],
+    "mboxes": {
+      "index": 1,
+      "name": "SummerOffer"
+    }
+  }
+}
+
+```
+
+### Limitations & exclusions
+
+* Recommendation and delivery APIs require specific parameters (for example mbox or product identifiers)—follow Adobe Target documentation.
+* Tune latency and caching for your send volume and use case.
+
+## Aprimo {#aprimo}
+
+### Vendor overview
+
+Aprimo combines marketing operations and DAM APIs for records, assets, and metadata.
+
+### Use cases
+
+* Approved record or asset fields in dynamic content.
+* Governed DAM workflows in regulated industries.
+
+### Prerequisites
+
+* Tenant URL and credentials (OAuth or API key per your setup).
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Use **GET** on the record path you need, send required headers such as `API-VERSION`, paste sample JSON (HAL or JSON as returned), map a minimal field set, test, activate.
+
+### DAM API – Get Records with Select Headers
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://productstrategy1.dam.aprimo.com/api/core/record/{{recordID}}` |
+| **HTTP method** | `GET` |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `recordId` | `recordId` | `<record_identifier>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+| API-VERSION | API-VERSION | Constant | 1 | Yes (on) |
+| Accept | Accept | Constant | application/hal+json OR application/json | No (off) |
+| select-record | select-record | Variable | `<selection_type>` | No (off) |
+| select-record-fields | select-record-fields | Variable | `<field_list>` | No (off) |
+| select-field | select-field | Variable | `<field_selection>` | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | Authorization | Bearer `<token>` | Header |
+
+### Limitations & exclusions
+
+* Aprimo field-level security must align with the attributes you map in Journey Optimizer.
+* Large HAL or JSON payloads: restrict mapped fields to the minimum required set.
+
+## Talon.One {#talon-one}
+
+### Vendor overview
+
+Talon.One is a promotion and loyalty rules engine with REST APIs for sessions, effects, and profiles.
+
+### Use cases
+
+* Cart- or profile-level promotions in personalized content.
+* Loyalty progress or rewards display.
+
+### Prerequisites
+
+* API key and deployment-specific base URL; identifiers for application or campaign scope.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Use **GET** on the profile or achievement path you need, set `Authorization: ApiKey-v1 <key>` as documented, paste sample JSON, map fields, test, activate.
+
+### Achievements API – List customer's achievement history
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://{{your-deployment}}.talon.one/v1/customer_profiles/{{integrationId}}/achievements/{{achievementId}}` |
+| **HTTP method** | `GET` |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `your-deployment` | `your-deployment` | `<your_deployment>` |
+| `integrationId` | `integrationId` | `<integrationId>` |
+| `achievementId` | `achievementId` | `<achievementId>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `progressStatus` | `progressStatus` | Variable | inprogress / completed / expired | No (off) |
+| `startDate` | `startDate` | Variable | 2024-05-29T15:04:05+07:00 | No (off) |
+| `endDate` | `endDate` | Variable | 2024-05-29T15:04:05+07:00 | No (off) |
+| `pageSize` | `pageSize` | Variable | `<default_page_size>` | No (off) |
+| `skip` | `skip` | Variable | `<items_to_skip>` | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | Authorization | ApiKey-v1 `<YOUR_API_KEY>` | Header |
+
+### Limitations & exclusions
+
+* Session-heavy flows may require careful mapping to the Integrations request model.
+* Observe Talon.One rate limits and idempotency guidance.
+
+## Antavo {#antavo}
+
+### Vendor overview
+
+Antavo is an enterprise loyalty platform with REST APIs for members, rewards, and events.
+
+### Use cases
+
+* Points, tier, or rewards in email or push.
+* Offers driven by loyalty state.
+
+### Prerequisites
+
+* Stack URL and API credentials; program or shop identifiers as required.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Configure **GET** with the vendor's authentication (for example API key in query), avoid exposing PII against policy, paste sample JSON, map fields, test, activate.
+
+### Display API – List all offers available for the customer
+
+Sample integration fields use the **staging** host; production uses your Antavo stack hostname. See [Antavo documentation](https://antavo.com/docs/){target="_blank"}.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://api.staging.antavo.com/customers/{{customer_id}}/activities/offers` |
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `customer_id` | `customer_id` | `<customer_id>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+| Accept | Accept | Constant | application/json | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | `api_key` | `<YOUR_API_KEY>` | Query parameter |
+
+### Limitations & exclusions
+
+* Customer PII must be handled under Antavo agreements and your privacy policies.
+* Confirm API versions and stable endpoints with Antavo for your environment.
+
+## Salesforce Loyalty {#salesforce-loyalty}
+
+### Vendor overview
+
+Salesforce Loyalty Management exposes REST APIs on the Salesforce platform for members, programs, and transactions.
+
+### Use cases
+
+* Surface tier, points, or benefits in journeys.
+* Align messaging with CRM and loyalty data.
+
+### Prerequisites
+
+* Salesforce instance, connected app or integration user, and OAuth appropriate to your org.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Use the loyalty integration endpoint your team approves, complete Salesforce OAuth, paste sample JSON, map fields, respect composite API limits, test, activate.
+
+### Loyal Management Integrations API – Retrieve member profile details
+
+Use the Loyalty Management **member profile** GET operation documented for your org's API version; paths include program and member identifiers. See [Salesforce developers](https://developer.salesforce.com/){target="_blank"}.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://{{your-instance}}.my.salesforce.com/services/data/{{version}}/connect/loyalty/management/members` |
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `your-instance` | `your-instance` | `<your_instance>` |
+| `version` | `version` | `version` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+| Accept | Accept | Constant | application/json | No (off) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `membershipNumber` | `membershipNumber` | Variable | `<membership_number>` | No (off) * |
+| `membershipId` | `membershipId` | Variable | `<membership_id>` | No (off) * |
+| `posMemId` | `posMemId` | Variable | `<pos_mem_id>` | No (off) * |
+
+\* At least one of the three is required.
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | Authorization | `<access_token>` | Header |
+
+### Limitations & exclusions
+
+* Salesforce API limits and OAuth token refresh must be designed into your integration.
+* Field-level security and sharing rules govern which fields appear in API responses.
+
+## Epsilon (Epsilon3) {#epsilon}
+
+### Vendor overview
+
+Epsilon exposes APIs per enterprise agreement; base URLs and auth come from your account team (the wiki used an Events API example).
+
+### Use cases
+
+* Loyalty or offer attributes when exposed through supported JSON APIs.
+
+### Prerequisites
+
+* Credentials and endpoints from Epsilon; admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Do not guess public URLs—use the specification from Epsilon, paste sample JSON, map fields, test, activate.
+
+### Events API – Get Events
+
+Example pattern from the wiki: `https://{your-instance}.epsilon3.io/api/v1/planning/events` with `start` and `end` query parameters and header-based API key. Confirm with Epsilon before production.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://{{your-instance}}.epsilon3.io/api/v1/planning/events` |
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `your-instance` | `your-instance` | `<your_instance>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `start` | `start` | Variable | 2019-08-24T14:15:22Z | Yes (on) * |
+| `end` | `end` | Variable | 2019-08-24T14:15:22Z | Yes (on) * |
+| `eventType` | `eventType` | Variable | scheduled / unscheduled | No (off) |
+| `exclude_recurrences` | `exclude_recurrences` | Variable | true / false | No (off) |
+
+\* Optional for `eventType` = `unscheduled`, and for `exclude_recurrences` = `true`.
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | `<your_username>` | `<EPSILON3_API_KEY>` | Header |
+
+### Limitations & exclusions
+
+* Endpoints and hosts are customer-specific—do not deploy without documentation from your Epsilon account team.
+
+## Trustpilot {#trustpilot}
+
+### Vendor overview
+
+Trustpilot provides APIs for business and review summary data where your use case and contract allow.
+
+### Use cases
+
+* Review counts or ratings in marketing content compliant with Trustpilot terms.
+
+### Prerequisites
+
+* API key and approved use case; business identifiers for queries.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Configure **GET** with required query authentication, map identifiers from profile or context, paste sample JSON, map fields, test, activate.
+
+### List Categories
+
+Use the categories listing operation from [Trustpilot developers](https://developers.trustpilot.com/){target="_blank"} for your integration pattern; parameters vary by resource.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://api.trustpilot.com/v1/categories` |
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `country` | `country` | Variable | `<iso_country_code>` | No (off) |
+| `locale` | `locale` | Variable | `<locale_code>` | No (off) |
+| `parentId` | `parentId` | Variable | `<parent_category_id>` | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | apiKey | `<your_api_key>` | Header |
+
+### Limitations & exclusions
+
+* Use of Trustpilot data must comply with Trustpilot branding and data-use policies.
+* Rate limits apply to review summary and related endpoints.
+
+## ShipStation {#shipstation}
+
+### Vendor overview
+
+ShipStation offers shipping and order APIs for carriers, labels, and tracking.
+
+### Use cases
+
+* Order status, tracking links, or delivery ETAs in transactional messages.
+
+### Prerequisites
+
+* API key and secret (Basic auth per ShipStation docs).
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Target the resource you need (orders vs shipments), authenticate per [ShipStation API](https://www.shipstation.com/docs/api/){target="_blank"}, paste sample JSON, map fields, test, activate.
+
+### Get Timer
+
+The wiki used a **Get Timer** example call pattern for ShipStation automation timing—use the exact path and auth from your ShipStation integration guide when reproducing it in Journey Optimizer.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://dashboard.sendtric.com/api/v1/timers/{{id}}` |
+| **HTTP method** | `POST` |
+| **Policy** | Configure policy level details as per your need. |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | apiKey | `<your_api_key>` | Header |
+
+**Requet payload**
+
+```Sample Request Payload
+
+{
+    "external_batch_id": "se-28529731",
+    "batch_notes": "This is my batch",
+    "shipment_ids": [
+      "se-28529731"
+    ],
+    "rate_ids": [
+      "se-28529731"
+    ]
+}
+```
+
+### Limitations & exclusions
+
+* Do not expose ShipStation API keys in message content; keep credentials in the integration configuration only.
+* Paginated list endpoints may be a poor fit for Integrations—prefer single-resource GETs when possible.
+
+## RevenueCat {#revenuecat}
+
+### Vendor overview
+
+RevenueCat provides subscription status and entitlements APIs for apps.
+
+### Use cases
+
+* Reflect subscription state in lifecycle campaigns where policy allows.
+
+### Prerequisites
+
+* Secret API key and app identifiers; stable mapping between profiles and RevenueCat customer IDs.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Call the REST **GET** the wiki modeled, authenticate with the secret key header, paste sample JSON, map fields, test, activate.
+
+### Get a Product
+
+Example pattern from the internal wiki: use RevenueCat's **Get a Product** (or equivalent product/entitlement GET) from [RevenueCat docs](https://docs.revenuecat.com/){target="_blank"} with your project's base URL and version.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://api.revenuecat.com/projects/{{project_id}}/products/{{product_id}}` |
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `project_id` | `project_id` | `<project_id>` |
+| `product_id` | `product_id` | `<product_id>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `country` | `country` | Variable | `<iso_country_code>` | No (off) |
+| `locale` | `locale` | Variable | `<locale_code>` | No (off) |
+| `parentId` | `parentId` | Variable | `<parent_category_id>` | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | Authorization | `Bearer <token>` | Header |
+
+### Limitations & exclusions
+
+* Protect secret API keys and follow your rotation policies.
+* Subscription and entitlement data is sensitive—meet privacy and consent requirements.
+
+## Salsify {#salsify}
+
+### Vendor overview
+
+Salsify is a PIM with APIs for products, channels, and digital assets.
+
+### Use cases
+
+* Product attributes or media URLs in email.
+* Messaging aligned with syndicated catalog data.
+
+### Prerequisites
+
+* API token and organization context; product IDs resolvable from profile or context.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Prefer single-product retrieval over bulk catalog calls, set bearer auth, paste sample JSON, map fields, test, activate.
+
+### Retrieve a download order with a specific ID
+
+The wiki reused a download-order style path for Salsify; your tenant may instead use `https://app.salsify.com/api/v1/orgs/{org_id}/products/{salsify_id}` or similar. Confirm in [Salsify developers](https://developers.salsify.com/){target="_blank"}.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://app.salsify.com/api/v1/orgs/{{org_id}}/products/{{salsify_id}}` |
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `org_id` | `org_id` | `<org_id>` |
+| `salsify_id` | `salsify_id` | `<salsify_id>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type (default param) | Content-Type | Constant | application/json | Yes (on) |
+| Authorization | Authorization | Constant | `Bearer <YOUR_TOKEN_HERE>` | Yes (on) |
+| If-Modified-Since | If-Modified-Since | Variable | 2019-08-24T14:15:22Z | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | `apiKey` | `<your_api_key>` | Header |
+
+### Limitations & exclusions
+
+* Very large catalogs: avoid bulk list endpoints if Integrations expects per-entity retrieval.
+* Attribute visibility can be limited by Salsify role permissions.
+
+## Contentstack {#contentstack}
+
+### Vendor overview
+
+Contentstack is a headless CMS; REST delivery is typical for JSON field mapping in Journey Optimizer.
+
+### Use cases
+
+* Entries for banners or promos with locale-aware parameters.
+
+### Prerequisites
+
+* Stack API key, delivery token, environment name, and content type UIDs.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Add both `api_key` and `access_token` headers as Contentstack requires, include the `environment` query parameter, paste sample JSON, map fields, test, activate.
+
+### Retrieve a single entry
+
+Sample integration fields. See [Contentstack Content Delivery API](https://www.contentstack.com/docs/developers/apis/content-delivery-api/){target="_blank"}.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://cdn.contentstack.io/v3/content_types/{{content_type_uid}}/entries/{{entry_uid}}` |
+| **HTTP method** | `GET` |
+| Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
+| Policy | Configure policy level details as per your need. |
+| Headers | No extra headers needed. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `content_type_uid` | Content Type UID | `<your_content_type_uid>` |
+| `entry_uid` | Entry UID | `<your_entry_uid>` |
+
+**Authentication**
+
+| Key name | Key value | Add to |
+| --- | --- | --- |
+| `api_key` | `<YOUR_STACK_API_KEY>` | Header |
+| `access_token` | `<YOUR_DELIVERY_TOKEN>` | Header |
+
+Contentstack expects **both** keys as headers for delivery requests.
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `environment` | Environment Name | Variable | `<your_environment_name>` | Yes (on) |
+
+### Limitations & exclusions
+
+* This pattern uses REST JSON for field mapping; GraphQL delivery follows a different integration path.
+* Use production-appropriate delivery tokens; preview and published flows are not interchangeable.
+
+## Capillary {#capillary}
+
+### Vendor overview
+
+Capillary provides loyalty and engagement APIs common in retail stacks.
+
+### Use cases
+
+* Points, tier, or offers inside personalized journeys.
+
+### Prerequisites
+
+* API host and authentication (often signed requests—follow Capillary docs).
+* Program identifiers for your endpoint.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Configure headers such as `CAP-API-ACCESS-TOKEN` as required, paste sample JSON, map fields, test, activate.
+
+### Get specific reward
+
+Example from the wiki: `https://ushc.intouch.capillarytech.com/api/v3/rewards/{reward_id}` (host varies by region). Validate the host and auth scheme with [Capillary](https://capillarytech.com/){target="_blank"}.
+
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://ushc.intouch.capillarytech.com/api/v3/rewards/{{reward_id}}` |
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `reward_id` | Reward ID | `<your_reward_id>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type | Content-Type | Constant | application/json | Yes (on) |
+| CAP-API-ACCESS-TOKEN | Access Token | Constant | `<YOUR_ACCESS_TOKEN>` | Yes (on) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | CAP-API-ACCESS-TOKEN | `<YOUR_ACCESS_TOKEN>` | Header |
+
+### Limitations & exclusions
+
+* Authentication schemes and regional hosts vary by deployment—confirm with Capillary for your stack.
+
+## Akeneo {#akeneo}
+
+### Vendor overview
+
+Akeneo PIM exposes REST APIs for products, attributes, and media.
+
+### Use cases
+
+* Governed product data in email modules.
+* Channel-specific attributes in journeys.
+
+### Prerequisites
+
+* PIM base URL and OAuth client; product UUID or identifier strategy.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Use **GET** with bearer token, request only needed attribute options in query flags, paste sample JSON, map a minimal attribute set, test, activate.
+
+### Get specific product
+
+Example pattern: `https://{pim-host}/api/rest/v1/products-uuid/{uuid}` with `Accept: application/json`. See [Akeneo API](https://api.akeneo.com/){target="_blank"}.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://{{your-akeneo-domain}}.com/api/rest/v1/products-uuid/{{uuidProduct}}` |
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `uuidProduct` | UUID | `<product_uuid>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Authorization | Authorization | Constant | `Bearer <YOUR_TOKEN>` | Yes (on) |
+| Accept | Accept | Constant | application/json | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `with_attribute_options` | Include Attribute Options | Variable | false | No (off) |
+| `with_quality_scores` | Include Quality Scores | Variable | false | No (off) |
+| `with_completenesses` | Include Completenesses | Variable | false | No (off) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | Authorization | `Bearer <YOUR_ACCESS_TOKEN>` | Header |
+
+### Limitations & exclusions
+
+* PIM responses can be large—map only the attributes required for personalization.
+* Write operations are outside the scope of typical read-only personalization examples.
+
+## Magnolia {#magnolia}
+
+### Vendor overview
+
+Magnolia offers headless and REST delivery endpoints depending on deployment.
+
+### Use cases
+
+* Content nodes or fragments for marketing modules.
+
+### Prerequisites
+
+* Instance URL and token or basic auth; workspace and paths for delivery.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Use the public delivery URL pattern your modules expose, authenticate per Magnolia guidance (anonymous delivery vs token for protected content), paste sample JSON, map fields, test, activate.
+
+### Magnolia REST delivery
+
+Example pattern from the wiki: `https://{domain}/magnoliaAuthor/.rest/delivery/...` or public delivery tours-style URLs—your paths depend on installed modules. See [Magnolia documentation](https://docs.magnolia-cms.com/){target="_blank"}.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `http://{{your-domain}}/magnoliaAuthor/.rest/delivery/<myEndpoint>/travel/@nodes`|
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Content-Type | Content-Type | Constant | application/json | Yes (on) |
+| Accept | Accept | Constant | application/json | Yes (on) |
+
+**Authentication**
+
+| Type | API key name | API key value | Location |
+| --- | --- | --- | --- |
+| API Key | Authorization | `<bearer_token>` | Header |
+
+Note: Delivery API is to use the rest-anonymous role for content that doesn't require a login. For secure access to protected data, a more robust method like API tokens or OAuth 2.0 is preferred
+
+### Limitations & exclusions
+
+* REST delivery URLs depend on installed Magnolia modules and configuration.
+
+## Bazaarvoice {#bazaarvoice}
+
+### Vendor overview
+
+Bazaarvoice provides ratings, reviews, and UGC APIs.
+
+### Use cases
+
+* Review summaries or ratings in email when policy allows.
+
+### Prerequisites
+
+* API passkey and client identifiers from your contract.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Use **GET** with `passkey` as a query parameter on the Conversations API, set `Accept: application/json`, paste sample JSON, map fields, test, activate.
+
+### Conversations API – products feed
+
+Example entry point from the wiki: `https://api.bazaarvoice.com/data/products.json` with version and filter query parameters. See [Bazaarvoice developer](https://developer.bazaarvoice.com/){target="_blank"}.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://api.bazaarvoice.com/data/products.json`|
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Accept | Accept | Constant | application/json | Yes (on) |
+
+**Authentication**
+
+| Type | Key value | Location |
+| --- | --- | --- |
+| passkey | `<YOUR_ACCESS_TOKEN>` | Query parameter |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `apiversion` | apiversionNumber | Constant | 5.4 | Yes (on) |
+| `filter` | `filter` | Variable | Id:47950830 | No (off) |
+| `stats` | `stats` | Variable | all | No (off) |
+
+### Limitations & exclusions
+
+* Display of ratings and reviews must follow Bazaarvoice content policies.
+* Rate limits and caching rules apply per API key.
+
+## OneTrust {#onetrust}
+
+### Vendor overview
+
+OneTrust exposes privacy and consent APIs (product-specific URLs and schemas).
+
+### Use cases
+
+* Read consent or preference signals for conditional content where architecture and legal review allow.
+
+### Prerequisites
+
+* API credentials and regional base URL; legal approval for fields used in messaging.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Use the published schema or preference-center path your subscription documents, complete OAuth if required, paste sample JSON, map fields, test, activate.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://customer.my.onetrust.com/api/consentmanager/v2/preferencecenters/{{preferencecenterid}}/schema`|
+| **HTTP method** | `GET` |
+| **Policy** | Configure policy level details as per your need. |
+| **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
+| **Authentication** | Oauth |
+
+**Path Parameters**
+
+| Parameter | Name | Value |
+| --- | --- | --- |
+| `preferencecenterid` | `preferencecenterid` | `<pref-id>` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Accept | Accept | Constant | application/json | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `state` | `state` | constant | PUBLISHED | Yes |
+
+### Preference center schema (published)
+
+Example pattern (fragment from the wiki): `https://{tenant}.my.onetrust.com/api/consentmanager/v2/preferencecenters/{preferencecenterid}/schema?state=PUBLISHED`. Confirm the exact path in [OneTrust Developer](https://developer.onetrust.com/){target="_blank"}.
+
+### Limitations & exclusions
+
+* Consent and preference data are highly regulated—coordinate with privacy and legal teams.
+* API paths and payloads differ by OneTrust product—use documentation for your subscription.
+
+## Meta {#meta}
+
+### Vendor overview
+
+Meta Graph and Marketing APIs expose catalog and campaign objects for authorized business integrations.
+
+### Use cases
+
+* Enrich content with attributes from Meta where tokens and policies allow.
+
+### Prerequisites
+
+* System user or app token with correct permissions; Business Manager alignment.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Graph calls are often **GET** with a versioned path; handle token expiry, paste sample JSON, map fields, test, activate.
+
+### Graph API – catalog products
+
+Sample integration fields. See [Graph API](https://developers.facebook.com/docs/graph-api){target="_blank"} for versioning and access tokens.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://graph.facebook.com/{{API_VERSION}}/{{PRODUCT_CATALOG_ID}}/products` |
+| **HTTP method** | `GET` |
+| Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
+| Policy | Configure policy level details as per your need. |
+| Authentication | Oauth |
+
+**Path parameters**
+
+| Path parameter | Name | Default value |
+| --- | --- | --- |
+| `API_VERSION` | `API_VERSION` | `v19.0` |
+| `PRODUCT_CATALOG_ID` | `PRODUCT_CATALOG_ID` | `12345` |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Accept | Accept | Constant | application/json | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `fields` | `fields` | Variable | id | No |
+| `filter` | `filter` | Variable | — | No |
+
+### Limitations & exclusions
+
+* Short-lived access tokens require a renewal or long-lived strategy suited to server-side integrations.
+* Comply with Meta Platform Terms; do not log tokens or other secrets in message payloads.
+
+## Databricks {#databricks}
+
+### Vendor overview
+
+Databricks provides SQL and REST APIs over lakehouse data; the wiki mixed statement execution guidance with a **jobs/get** sample.
+
+### Use cases
+
+* Small, denormalized attributes from governed tables for personalization (strict least privilege).
+
+### Prerequisites
+
+* Workspace host, token or OAuth per org policy; service principal with minimal scope.
+* Admin access in Journey Optimizer.
+
+### Configuration steps
+
+Follow [Work with Integrations](external-sources.md). Prefer narrow read paths; if you use **POST** statement execution, include the JSON body the API requires, paste a sample success response for mapping, test latency carefully, activate.
+
+### REST API – Get job (example)
+
+The wiki used this **GET** job example; for SQL-driven personalization, prefer the [statement execution API](https://docs.databricks.com/api/workspace/statementexecution){target="_blank"} pattern your workspace supports.
+
+| Field | Value |
+| --- | --- |
+| **URL** | `https://<databricks-instance>/api/2.0/jobs/get` |
+| **HTTP method** | `GET` |
+| Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
+| Policy | Configure policy level details as per your need. |
+| Authentication | Oauth |
+
+**Headers**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| Accept | Accept | Constant | application/json | Yes (on) |
+
+**Query parameters**
+
+| Parameter | Name | Type | Value | Mandatory |
+| --- | --- | --- | --- | --- |
+| `job_id` | `job_id` | Variable | `12` | Yes |
+
+
