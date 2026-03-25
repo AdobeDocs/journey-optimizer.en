@@ -33,6 +33,11 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 
 ## Overview {#overview}
 
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_inventory"
+>title="Loyalty challenges"
+>abstract="Loyalty challenges are gamified programs that reward customers for completing tasks. Learn what they are, how Standard, Streak, and Sequential challenges differ, and what you can configure before you create a challenge."
+
 Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends.
 
 With Loyalty Challenges, you can:

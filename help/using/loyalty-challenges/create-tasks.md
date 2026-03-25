@@ -37,6 +37,11 @@ Each task represents a measurable action that contributes toward challenge compl
 
 ## Create a task {#create-task}
 
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_task_create"
+>title="Create a task"
+>abstract="Select a customer activity (Purchase or Spend), then configure activity-specific attributes: quantities or amounts, eligible items and exclusions, and optional limits such as minimum spend or maximum transactions. In the Properties pane, set the task name and description."
+
 You can create tasks from two entry points. The configuration process is the same regardless of where you start.
 
 >[!BEGINTABS]
@@ -95,6 +100,11 @@ Available attributes for **Spend** activities:
 >[!ENDTABS]
 
 ## Define eligible items and exclusions {#eligible-items-exclusions}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_task_eligible_items_exclusion"
+>title="Eligible items & exclusions"
+>abstract="Control which purchases count for Purchase and Spend tasks. In the first field, type comma-separated item IDs, categories, or destination IDs to allow only those. Leave it empty so all purchases count, or type an asterisk to mean all purchases. In the second field, list items or categories that should never count—such as gift cards or clearance."
 
 <!-- SCREENSHOT: Eligible items & exclusions popup showing the two sections: "Eligible task purchases are limited to the following" and "The following are excluded from this task" with text input fields -->
 
