@@ -234,7 +234,6 @@ Improvements coming with this release are listed below.
 
   Availability date: March 2, 2026
 
-<!--#### Orchestrated campaigns-->
 
 #### Journeys
 
