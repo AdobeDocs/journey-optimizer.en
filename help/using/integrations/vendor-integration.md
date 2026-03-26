@@ -59,9 +59,30 @@ The following limitations and exclusions apply:
 
 ### Configuration steps
 
-Use the workflow in [Work with Integrations](external-sources.md): **[!UICONTROL Configurations]** > **[!UICONTROL Manage]** > create integration, set URL and **GET**, add the bearer token, supply path variables (space, environment, entry, locale as needed), paste sample JSON, map fields, configure policy, then test and activate.
+In AJO, navigate to Configurations → Manage → Create Integration.
 
-+++ Content Delivery API (entry)
+Provide a name (no spaces).
+
+Configure the endpoint using the Contentful Content Delivery API (CDA) URL:
+
+https://cdn.contentful.com/spaces/{space_id}/environments/{environment_id}/entries/{entry_id}
+
+Select HTTP method: GET.
+
+Add authentication header:
+Authorization: Bearer <CONTENTFUL_DELIVERY_TOKEN>
+
+Add path variables if required (e.g., entry ID, locale).
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization.
+
+Configure timeout and caching as needed.
+
+Test connection and activate.
+
++++ Sample integration fields
 
 Sample integration fields (align with the [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/){target="_blank"} for your space and environment):
 
@@ -114,7 +135,23 @@ The following limitations and exclusions apply:
 
 ### Configuration steps
 
-Follow [Work with Integrations](external-sources.md). Register the templates endpoint, authenticate per Stensul (API key or OAuth), define path variables such as template ID, paste sample JSON, map fields, and activate after a successful test.
+In AJO, navigate to Configurations → Manage → Create Integration.
+
+Provide integration name.
+
+Configure the endpoint using the Stensul Templates API URL (example pattern):
+
+https://api.stensul.com/v1/templates/{template_id}
+
+Configure authentication (API key or OAuth per Stensul API documentation).
+
+Define path variables (e.g., template ID).
+
+Paste a sample JSON response for field detection.
+
+Map required template fields to AJO personalization fields.
+
+Test connection and activate.
 
 ### Stensul Templates API
 
@@ -144,8 +181,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Use **GET** unless your subscription requires otherwise, attach the `apiKey` query parameter (or as documented), map `locationKey` and other variables from profile/context, paste sample JSON, map fields, then test.
 
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
 
-+++Daily Forecasts API
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Daily Forecasts API. Example URL pattern:
+
+https://dataservice.accuweather.com/forecasts/v1/daily/{days}day/{locationKey}
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++Sample integration fields
 
 Sample integration fields. Details and tiers are described in [AccuWeather APIs](https://developer.accuweather.com/apis){target="_blank"}. You often resolve `locationKey` with a separate locations search call (for example `.../locations/v1/cities/search?q={{cityName}}`).
 
@@ -209,7 +267,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Configure **GET** on your download-order path, set authorization headers per Sitecore, map `id` from context, paste sample JSON, map fields, and tune timeouts for asset latency.
 
-+++ ContentHub – Retrieve a download order with a specific ID
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Content Hub API (example: download order by ID). Example URL pattern:
+
+https://xmapps-api.sitecorecloud.io/api/v1/downloadorders/{id}
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Use the following fields when you configure this sample call in Journey Optimizer. Confirm hostname and API version for your product (Content Hub, XM Cloud, and so on) in [Sitecore documentation](https://doc.sitecore.com/){target="_blank"}.
 
@@ -265,7 +345,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Configure **GET** on the chosen endpoint (one common pattern is a users listing), complete OAuth per [Bynder](https://developer.bynder.com/){target="_blank"}, avoid pulling unnecessary pages of data, map fields, test, then activate.
 
-+++ Retrieve Users
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Bynder API v4 (example: users listing pattern). Example URL pattern:
+
+https://{your-bynder-domain}/api/v4/users/
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Sample integration fields. See [Bynder API documentation](https://developer.bynder.com/){target="_blank"} for OAuth 2.0 payload details.
 
@@ -387,7 +489,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Set base URL for your cluster, add required headers (`X-APP-ID`, `X-APP-TOKEN`), constrain list endpoints with filters or IDs, paste sample JSON, map fields, test, activate.
 
-+++ Loyalties — List Members
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Loyalty / REST APIs. Example URL pattern:
+
+Per Voucherify OpenAPI base URL for your region
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Sample integration fields. Full reference: [Voucherify API](https://docs.voucherify.io/reference/introduction){target="_blank"}.
 
@@ -456,7 +580,34 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Point to the Marigold host for your region, set authentication (the sample below uses `X-Api-Key` with key and secret), paste sample JSON, map fields, test, activate.
 
-+++ Engage API — Get Content
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Marigold REST API (endpoint per your integration guide). Example URL pattern:
+
+Use the base URL and path provided in your Marigold API documentation
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
+Marigold uses 2 endpoints based on the geographical area for which the customer instance is active:
+
+Europe – https://{{customername}}.module.slgnt.eu
+USA – https://{{customername}}.module.slgnt.us
+
++++ Sample integration fields
 
 Base host depends on region (for example `https://{{customername}}.module.slgnt.eu` or `https://{{customername}}.module.slgnt.us`). Confirm paths with Marigold for your deployment.
 
@@ -513,7 +664,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Delivery calls are often **POST** with a JSON body. Configure OAuth per [Target authentication](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/configure-authentication){target="_blank"}, paste a sample response, map fields, test under expected volume.
 
-+++ Target Delivery API – Retrieve Target Offers
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Target Recommendations / delivery APIs (per Adobe documentation for your integration pattern). Example URL pattern:
+
+See Adobe Target Recommendations API documentation for your use case
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 | Field | Value |
 | --- | --- |
@@ -532,7 +705,6 @@ Follow [Work with Integrations](external-sources.md). Delivery calls are often *
 | Parameter | Name | Type | Value | Mandatory |
 | --- | --- | --- | --- | --- |
 | Content-Type (default) | Content-Type | Constant | application/json | Yes (on) |
-
 
 **Query parameters**
 
@@ -625,7 +797,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Use **GET** on the record path you need, send required headers such as `API-VERSION`, paste sample JSON (HAL or JSON as returned), map a minimal field set, test, activate.
 
-+++ DAM API – Get Records with Select Headers
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Aprimo DAM / Records API. Example URL pattern:
+
+Per Aprimo API base URL and resource path for your tenant
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 | Field | Value |
 | --- | --- |
@@ -680,7 +874,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Use **GET** on the profile or achievement path you need, set `Authorization: ApiKey-v1 <key>` as documented, paste sample JSON, map fields, test, activate.
 
-+++ Achievements API – List customer's achievement history
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Talon.One Integration API. Example URL pattern:
+
+https://{your-domain}.talon.one/v1/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 | Field | Value |
 | --- | --- |
@@ -742,7 +958,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Configure **GET** with the vendor's authentication (for example API key in query), avoid exposing PII against policy, paste sample JSON, map fields, test, activate.
 
-+++ Display API – List all offers available for the customer
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Antavo Enterprise API. Example URL pattern:
+
+Per Antavo stack base URL documented in your tenant
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Sample integration fields use the **staging** host; production uses your Antavo stack hostname. See [Antavo documentation](https://antavo.com/docs/){target="_blank"}.
 
@@ -797,7 +1035,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Use the loyalty integration endpoint your team approves, complete Salesforce OAuth, paste sample JSON, map fields, respect composite API limits, test, activate.
 
-+++ Loyal Management Integrations API – Retrieve member profile details
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Salesforce Loyalty Management REST. Example URL pattern:
+
+https://{instance}.salesforce.com/services/data/vXX.X/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Use the Loyalty Management **member profile** GET operation documented for your org's API version; paths include program and member identifiers. See [Salesforce developers](https://developer.salesforce.com/){target="_blank"}.
 
@@ -860,7 +1120,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Do not guess public URLs—use the specification from Epsilon, paste sample JSON, map fields, test, activate.
 
-+++ Events API – Get Events
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Epsilon API (per your integration specification). Example URL pattern:
+
+Provided by Epsilon for your program
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Example pattern: `https://{your-instance}.epsilon3.io/api/v1/planning/events` with `start` and `end` query parameters and header-based API key. Confirm with Epsilon before production.
 
@@ -924,7 +1206,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Configure **GET** with required query authentication, map identifiers from profile or context, paste sample JSON, map fields, test, activate.
 
-+++ List Categories
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Trustpilot APIs. Example URL pattern:
+
+https://api.trustpilot.com/v1/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Use the categories listing operation from [Trustpilot developers](https://developers.trustpilot.com/){target="_blank"} for your integration pattern; parameters vary by resource.
 
@@ -979,7 +1283,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Target the resource you need (orders vs shipments), authenticate per [ShipStation API](https://www.shipstation.com/docs/api/){target="_blank"}, paste sample JSON, map fields, test, activate.
 
-+++ Get Timer
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the ShipStation REST API. Example URL pattern:
+
+https://ssapi.shipstation.com/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 The following **Get Timer** example illustrates one ShipStation automation timing call—use the exact path and auth from your ShipStation integration guide when reproducing it in Journey Optimizer.
 
@@ -1041,7 +1367,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Call the REST **GET** modeled below, authenticate with the secret key header, paste sample JSON, map fields, test, activate.
 
-+++ Get a Product
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the RevenueCat REST API. Example URL pattern:
+
+https://api.revenuecat.com/v1/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Example pattern: use RevenueCat's **Get a Product** (or equivalent product/entitlement GET) from [RevenueCat docs](https://docs.revenuecat.com/){target="_blank"} with your project's base URL and version.
 
@@ -1104,7 +1452,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Prefer single-product retrieval over bulk catalog calls, set bearer auth, paste sample JSON, map fields, test, activate.
 
-+++ Retrieve a download order with a specific ID
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Salsify Product API. Example URL pattern:
+
+https://api.salsify.com/v1/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Some older references reused a download-order style path for Salsify; your tenant may instead use `https://app.salsify.com/api/v1/orgs/{org_id}/products/{salsify_id}` or similar. Confirm in [Salsify developers](https://developers.salsify.com/){target="_blank"}.
 
@@ -1160,7 +1530,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Add both `api_key` and `access_token` headers as Contentstack requires, include the `environment` query parameter, paste sample JSON, map fields, test, activate.
 
-+++ Retrieve a single entry
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Content Delivery API. Example URL pattern:
+
+https://cdn.contentstack.io/v3/content_types/{content_type_uid}/entries/{entry_uid}
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Sample integration fields. See [Contentstack Content Delivery API](https://www.contentstack.com/docs/developers/apis/content-delivery-api/){target="_blank"}.
 
@@ -1217,7 +1609,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Configure headers such as `CAP-API-ACCESS-TOKEN` as required, paste sample JSON, map fields, test, activate.
 
-+++ Get specific reward
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Capillary APIs. Example URL pattern:
+
+Per Capillary integration guide for your region
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Example: `https://ushc.intouch.capillarytech.com/api/v3/rewards/{reward_id}` (host varies by region). Validate the host and auth scheme with [Capillary](https://capillarytech.com/){target="_blank"}.
 
@@ -1273,7 +1687,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Use **GET** with bearer token, request only needed attribute options in query flags, paste sample JSON, map a minimal attribute set, test, activate.
 
-+++ Get specific product
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Akeneo REST API. Example URL pattern:
+
+https://{pim-host}/api/rest/v1/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Example pattern: `https://{pim-host}/api/rest/v1/products-uuid/{uuid}` with `Accept: application/json`. See [Akeneo API](https://api.akeneo.com/){target="_blank"}.
 
@@ -1334,7 +1770,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Use the public delivery URL pattern your modules expose, authenticate per Magnolia guidance (anonymous delivery vs token for protected content), paste sample JSON, map fields, test, activate.
 
-+++ Magnolia REST delivery
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Magnolia REST (delivery). Example URL pattern:
+
+https://{author-or-public}/.rest/delivery/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Example pattern: `https://{domain}/magnoliaAuthor/.rest/delivery/...` or public delivery tours-style URLs—your paths depend on installed modules. See [Magnolia documentation](https://docs.magnolia-cms.com/){target="_blank"}.
 
@@ -1384,7 +1842,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Use **GET** with `passkey` as a query parameter on the Conversations API, set `Accept: application/json`, paste sample JSON, map fields, test, activate.
 
-+++ Conversations API – products feed
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Bazaarvoice Conversations API. Example URL pattern:
+
+https://api.bazaarvoice.com/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Example entry point: `https://api.bazaarvoice.com/data/products.json` with version and filter query parameters. See [Bazaarvoice developer](https://developer.bazaarvoice.com/){target="_blank"}.
 
@@ -1439,6 +1919,30 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Use the published schema or preference-center path your subscription documents, complete OAuth if required, paste sample JSON, map fields, test, activate.
 
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the OneTrust API. Example URL pattern:
+
+Per OneTrust developer portal base URL
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
+
 | Field | Value |
 | --- | --- |
 | **URL** | `https://customer.my.onetrust.com/api/consentmanager/v2/preferencecenters/{{preferencecenterid}}/schema` |
@@ -1464,6 +1968,8 @@ Follow [Work with Integrations](external-sources.md). Use the published schema o
 | Parameter | Name | Type | Value | Mandatory |
 | --- | --- | --- | --- | --- |
 | `state` | `state` | constant | PUBLISHED | Yes |
+
++++
 
 ### Preference center schema (published)
 
@@ -1491,7 +1997,29 @@ The following limitations and exclusions apply:
 
 Follow [Work with Integrations](external-sources.md). Graph calls are often **GET** with a versioned path; handle token expiry, paste sample JSON, map fields, test, activate.
 
-+++ Graph API – catalog products
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Meta Graph API. Example URL pattern:
+
+https://graph.facebook.com/vXX.X/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++ Sample integration fields
 
 Sample integration fields. See [Graph API](https://developers.facebook.com/docs/graph-api){target="_blank"} for versioning and access tokens.
 
@@ -1542,7 +2070,29 @@ The following prerequisites apply:
 
 Follow [Work with Integrations](external-sources.md). Prefer narrow read paths; if you use **POST** statement execution, include the JSON body the API requires, paste a sample success response for mapping, test latency carefully, activate.
 
-+++REST API – Get job
+In AJO, navigate to Configurations &rarr; Manage &rarr; Create Integration.
+
+Provide an integration name (no spaces).
+
+Configure the endpoint using the Databricks SQL Statement Execution API. Example URL pattern:
+
+https://{workspace-host}/api/2.0/sql/statements/...
+
+Select the HTTP method shown in the configuration table below (typically GET unless otherwise specified).
+
+Add authentication (headers, query parameters, or OAuth) exactly as described in the table and in the vendor&rsquo;s documentation.
+
+Define path, query, and header parameters using variables that map to profile or contextual data where needed.
+
+Paste a sample JSON response to detect and map fields.
+
+Select required fields for personalization in the response payload mapping.
+
+Configure timeout, retry, and caching policy as appropriate for your volume.
+
+Test the connection and activate the integration.
+
++++Sample integration fields
 
 The **GET** job example below is illustrative; for SQL-driven personalization, prefer the [statement execution API](https://docs.databricks.com/api/workspace/statementexecution){target="_blank"} pattern your workspace supports.
 
