@@ -24,8 +24,29 @@ Use landing pages when you want to:
 
 * Let customers **opt in or opt out** of marketing communications or a specific service or newsletter from a link in an email or campaign—including subscription lists for targeted services. [Read more](lp-use-cases.md#subscription-to-a-service)
 * **Collect consent** before sending communications and send a **confirmation email** upon opt-in or opt-out. [Read more](lp-use-cases.md#send-confirmation-email)
+* **Capture or update profile data** using forms on **[!UICONTROL Data Capture]** landing pages—for progressive profiling, preferences, registrations, and similar scenarios. [Read more](#data-capture-lp)
 * Redirect users to a **dedicated web form** without building an external page outside of [!DNL Journey Optimizer]
 * Build **responsive landing pages** using [!DNL Journey Optimizer]'s content design capabilities
+
+### Data capture with landing pages {#data-capture-lp}
+
+**[!UICONTROL Data Capture]** landing pages let you embed published forms so visitors can submit attributes that are written to your [!DNL Adobe Experience Platform] dataset through the streaming connection configured in your form preset. [Learn how to create and embed forms in a landing page](lp-forms.md)
+
+>[!NOTE]
+>
+>Data capture through landing page forms is supported for **known profiles** (existing profiles identified in [!DNL Adobe Experience Platform]). The landing page should be opened from a **personalized link** (for example from an email campaign) so the profile identity can be resolved when the page loads.
+
+The following are example use cases:
+
+1. **Progressive profile enrichment** — Collect additional attributes from known customers—such as phone number, date of birth, or location—through a personalized landing page to enrich their existing [!DNL Experience Platform] profile for segmentation and personalization.
+
+2. **Preference center update** — Allow known subscribers to manage their communication preferences (channel, topic interests) via a landing page, with changes typically reflected in their [!DNL Experience Platform] profile within about 15 minutes.
+
+3. **Event or webinar registration** — Capture event-specific data from known profiles on a registration page, update the profile with registration attributes, and trigger a confirmation journey.
+
+4. **Loyalty or program enrollment** — Let existing customers enroll in loyalty programs or membership tiers by submitting additional details through a landing page, enriching the profile for downstream targeting.
+
+5. **Competition or contest entry** — Let known customers enter competitions or sweepstakes via a landing page form; capture entry-specific details (answers, preferences, or declarations) and write them to the profile to support eligibility, winner selection, and follow-up journeys.
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
@@ -45,11 +66,11 @@ Use landing pages when you want to:
 </div>
 <p></td>
 <td>
-<a href="design-lp.md">
-<img alt="Validation" src="../assets/do-not-localize/lp-design.jpg">
+<a href="lp-forms.md">
+<img alt="Forms list for landing pages in Journey Optimizer" src="../assets/do-not-localize/lp-design.jpg">
 </a>
 <div>
-<a href="design-lp.md"><strong>Design landing pages</strong></a>
+<a href="lp-forms.md"><strong>Use forms in your landing pages</strong></a>
 </div>
 <p>
 </td>
@@ -68,18 +89,19 @@ Use landing pages when you want to:
 
 Before creating a landing page, complete these setup steps:
 
-1. [**Configure a subdomain**](lp-subdomains.md) — Set up a subdomain dedicated to hosting your landing pages.
-1. [**Create a landing page preset**](lp-presets.md#lp-create-preset) — A preset defines the subdomain and other settings applied to your landing pages.
-1. [**Create a subscription list**](subscription-list.md) (for subscription use cases) — Required if you want customers to subscribe to or unsubscribe from a specific service.
+1. **Configure a subdomain** — Set up a subdomain dedicated to hosting your landing pages. [Learn more](lp-subdomains.md)
+1. **Create a landing page preset** — A preset defines the subdomain and other settings applied to your landing pages. [Learn more](lp-presets.md#lp-create-preset)
+1. **Create a subscription list** (for subscription use cases) — Required if you want customers to subscribe to or unsubscribe from a specific service. [Learn more](subscription-list.md)
+1. **Create a form** (for data capture use cases) — Required when you want to embed a form on a **[!UICONTROL Data Capture]** landing page and send submissions to [!DNL Experience Platform]. [Learn more](lp-forms.md)
 
 ## How it works {#how-it-works}
 
 Creating and deploying a landing page follows this sequence:
 
-1. [**Create and configure your landing page**](create-lp.md) — Select a preset, set up the primary page, and add any required subpages.
-1. [**Design the page**](design-lp.md) — Build the page content and form using [!DNL Journey Optimizer]'s drag-and-drop editor.
-1. [**Test**](create-lp.md#test-landing-page) and [**publish**](create-lp.md#publish-landing-page) your landing page — Preview the page, test form behavior, then publish to make it live.
-1. [**Link in a message or journey**](../email/message-tracking.md#insert-links) — Add the landing page URL to an email, campaign, or journey action so customers can reach it.
+1. **Create and configure your landing page** — Select a preset, set up the primary page, and add any required subpages. [Learn more](create-lp.md#create-landing-page)
+1. **Design the page** — Build the page content and form using [!DNL Journey Optimizer]'s drag-and-drop editor. [Learn more](design-lp.md)
+1. **Test and publish your landing page** — Preview the page, test form behavior, then publish to make it live. [Learn more](create-lp.md#test-landing-page)
+1. **Link in a message or journey** — Add the landing page URL to an email, campaign, or journey action so customers can reach it. [Learn more](../email/message-tracking.md#insert-links)
 
 ## How-to video{#video}
 
