@@ -155,7 +155,7 @@ Existing journeys using legacy channel activities will continue to function with
 <tbody>
 <tr>
 <td>
-<p>Bring real-time experiences directly to your customers' Lock Screens and Dynamic Island with iOS Live Activity in Adobe Journey Optimizer. Deliver live updates, from order tracking and flight status to event countdowns, live scores and delivery progress, without requiring users to open your app. Keep your audience informed and engaged at exactly the right moment, right where they are.</p>
+<p>Bring real-time experiences directly to your customers' Lock Screens and Dynamic Island with <strong>iOS Live Activity</strong> in Adobe Journey Optimizer. Deliver live updates, from order tracking and flight status to event countdowns, live scores and delivery progress, without requiring users to open your app. Keep your audience informed and engaged at exactly the right moment, right where they are.</p>
 <p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
 <p>For more information, refer to the <a href="../mobile-live/get-started-mobile-live.md">detailed documentation</a>.</p>
 <p>Availability date: March 3, 2026</p>
@@ -175,7 +175,7 @@ Existing journeys using legacy channel activities will continue to function with
 <td>
 <p>Powered by <strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now also generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in <strong>Content Designer</strong> for in-context editing.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>For more information, refer to the <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html" target="_blank">detailed documentation</a>.</p>
 <p>Availability date: March 4, 2026</p>
 </td>
 </tr>
@@ -266,23 +266,6 @@ The features and improvements below are planned for release later in March/early
 <table>
 <thead>
 <tr>
-<th><strong>Trigger Orchestrated campaigns using a signal</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Orchestrated campaigns can now be triggered via an <strong>API signal</strong>. To set this up, configure the target campaign as <strong>Triggered by a signal</strong>, publish it, then fire it using an API call. Any parameters included in the API call are available as variables within the running campaign. Note that signal-triggered orchestrated campaigns remain <strong>batch</strong> campaigns and are distinct from API-triggered campaigns.</p>
-<p><img src="assets/do-not-localize/oc-triggered.gif"></p>
-<p>Availability date: April, 1 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Convert images to email content templates</strong><br/></th>
 </tr>
 </thead>
@@ -292,6 +275,23 @@ The features and improvements below are planned for release later in March/early
 <p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../content-management/image-to-html.md">Learn more</a></p>
 <p>Availability date: March 26, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Transactional category in Orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>In Orchestrated campaigns, you can now set a channel activity to the <strong>Transactional</strong> category. This applies transactional channel configurations to that activity and is useful when business rules should not apply or when customers' opt-in is not required.</p>
+<p><img src="assets/do-not-localize/oc-transactional.gif"></p>
+<p>Availability date: March 26, 2026 - This capability will be gradually rolled out to all regions over the next few days.</p>
 </td>
 </tr>
 </tbody>
@@ -321,23 +321,6 @@ The features and improvements below are planned for release later in March/early
 <table>
 <thead>
 <tr>
-<th><strong>Transactional category in Orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>In Orchestrated campaigns, you can now set a channel activity to the <strong>Transactional</strong> category. This applies transactional channel configurations to that activity and is useful when business rules should not apply or when customers' opt-in is not required.</p>
-<p><img src="assets/do-not-localize/oc-transactional.gif"></p>
-<p>Availability date: March 26, 2026 - This capability will be gradually rolled out to all regions over the next few days.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Inbox</strong><br/></th>
 </tr>
 </thead>
@@ -346,6 +329,23 @@ The features and improvements below are planned for release later in March/early
 <td>
 <p><strong>Inbox</strong> is a mobile functionality, available with Content Cards, that enables customers to create a centralized location within their app or website to display messages sent to their users. This extends the lifetime of marketing communications by ensuring messages remain accessible even after they are dismissed.</p>
 <p>Availability date: March 31, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Trigger Orchestrated campaigns using a signal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Orchestrated campaigns can now be triggered via an <strong>API signal</strong>. To set this up, configure the target campaign as <strong>Triggered by a signal</strong>, publish it, then fire it using an API call. Any parameters included in the API call are available as variables within the running campaign. Note that signal-triggered orchestrated campaigns remain <strong>batch</strong> campaigns and are distinct from API-triggered campaigns.</p>
+<p><img src="assets/do-not-localize/oc-triggered.gif"></p>
+<p>Availability date: April 1, 2026</p>
 </td>
 </tr>
 </tbody>
