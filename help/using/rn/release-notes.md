@@ -118,7 +118,7 @@ Existing journeys using legacy channel activities will continue to function with
 <tr>
 <td>
 <p>Advanced HTML mode for email content templates lets you edit the HTML source of your content in the Email Designer, add advanced expressions (such as conditions) in the source, and toggle between HTML view and Desktop view without losing your changes.</p>
-<p>This capability is available in content templates for the Email channel only. It is currently in Limited Availability—contact your Adobe representative to gain access.</p>
+<p>This capability is available in content templates for the Email channel only. It is currently in Limited Availability — contact your Adobe representative to gain access.</p>
 <p><img src="assets/do-not-localize/expert-mode.gif"/></p>
 <p>For more information, refer to the <a href="../content-management/email-template-expert-mode.md">detailed documentation</a>.</p>
 <p>Availability date: March 10, 2026</p>
