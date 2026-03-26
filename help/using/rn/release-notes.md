@@ -60,7 +60,8 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>A new activity in journeys, Dataset lookup, allows you to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely. Previously released in Limited Availability, this capability is now available to all environments (General Availability). </p>
+<p>The <strong>Dataset lookup</strong> activity in journeys lets you dynamically retrieve data from Adobe Experience Platform record datasets at runtime — giving you access to information that is not part of the profile or event payload, so customer interactions stay relevant and timely.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). </p>
 <p><img src="../building-journeys/assets/aep-data-activity.png"></p>
 <p>For more information, refer to the <a href="../building-journeys/dataset-lookup.md">detailed documentation</a>.</p>
 </td>
@@ -271,7 +272,7 @@ The features and improvements below are planned for release later in March/early
 <tbody>
 <tr>
 <td>
-<p>You can now trigger an orchestrated campaign via a signal sent via APIs. Configure the target campaign as "Triggered by a signal" and publish it. Then use an API call to fire the campaign. The API call can include parameters that will be available as variables in the triggered campaign. Note: An orchestrated campaign started by a signal is still a **batch** campaign and is not the same as API-triggered campaigns.</p>
+<p>Orchestrated campaigns can now be triggered via an <strong>API signal</strong>. To set this up, configure the target campaign as <strong>Triggered by a signal</strong>, publish it, then fire it using an API call. Any parameters included in the API call are available as variables within the running campaign. Note that signal-triggered orchestrated campaigns remain <strong>batch</strong> campaigns and are distinct from API-triggered campaigns.</p>
 <p><img src="assets/do-not-localize/oc-triggered.gif"></p>
 <p>Availability date: April, 1 2026</p>
 </td>
