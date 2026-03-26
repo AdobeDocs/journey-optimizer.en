@@ -60,7 +60,7 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>The <strong>Dataset lookup</strong> activity in journeys lets you dynamically retrieve data from Adobe Experience Platform record datasets at runtime — giving you access to information that is not part of the profile or event payload, so customer interactions stay relevant and timely.</p>
+<p>A new <strong>Dataset lookup</strong> activity in journeys lets you dynamically retrieve data from Adobe Experience Platform record datasets at runtime — giving you access to information that is not part of the profile or event payload, so customer interactions stay relevant and timely.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). </p>
 <p><img src="../building-journeys/assets/aep-data-activity.png"></p>
 <p>For more information, refer to the <a href="../building-journeys/dataset-lookup.md">detailed documentation</a>.</p>
