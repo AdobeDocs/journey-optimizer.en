@@ -291,7 +291,7 @@ The features and improvements below are planned for release later in March/early
 <td>
 <p>In Orchestrated campaigns, you can now set a channel activity to the <strong>Transactional</strong> category. This applies transactional channel configurations to that activity and is useful when business rules should not apply or when customers' opt-in is not required.</p>
 <p><img src="assets/do-not-localize/oc-transactional.gif"></p>
-<p>Availability date: March 26, 2026 - This capability will be gradually rolled out to all regions over the next few days.</p>
+<p>Availability date: March 31, 2026</p>
 </td>
 </tr>
 </tbody>
