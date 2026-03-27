@@ -43,9 +43,6 @@ Keep the following in mind when using Content Fragments from [!DNL Adobe Experie
     * After you republish a modified fragment in [!DNL Adobe Experience Manager], [!DNL Journey Optimizer] listens for the event and updates the cache.
     * Proofs always reflect the **most recently published** version; you cannot lock a historical version for proofing.
 
-* **User access**
-    * Limit how many users can publish Content Fragments in [!DNL Adobe Experience Manager] to reduce the risk of accidental errors.
-
 ## Troubleshooting {#troubleshooting}
 
 If you encounter issues when working with Adobe Experience Manager Content Fragments in Journey Optimizer, refer to the following common problems and resolutions:
