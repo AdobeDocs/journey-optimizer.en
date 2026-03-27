@@ -57,7 +57,7 @@ The following limitations and exclusions apply:
 * Broad listing or paginated Contentful APIs are a poor fit for this pattern—prefer retrieval calls that target a specific entry or asset.
 * Write-back or two-way synchronization is outside the scope of this example.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -80,12 +80,14 @@ The following limitations and exclusions apply:
 
 1. Test connection and activate.
 
+The table below lists example values for this integration request.
+
 +++ Sample integration fields
 
 Sample integration fields (align with the [Content Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/){target="_blank"} for your space and environment):
 
 | Field | Value |
-| --- | --- |
+| -- | -- |
 | **URL** | `https://cdn.contentful.com/spaces/{{spaceID}}/entries/environments/{{environment_id}}` |
 | Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
 | Policy | Configure policy level details as per your need. |
@@ -131,7 +133,7 @@ The following limitations and exclusions apply:
 * In-place WYSIWYG editing of Stensul templates inside Journey Optimizer is not covered here.
 * Large or complex HTML in template payloads may require security review and sanitization.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -169,7 +171,7 @@ The following limitations and exclusions apply:
 * Observe AccuWeather rate limits and recommended caching.
 * Resolving `locationKey` often requires a separate geolocation or city-search request before forecast calls.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Use **GET** unless your subscription requires otherwise, attach the `apiKey` query parameter (or as documented), map `locationKey` and other variables from profile/context, paste sample JSON, map fields, then test.
 
@@ -193,6 +195,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++Sample integration fields
 
@@ -254,7 +258,7 @@ The following limitations and exclusions apply:
 * Hostnames and paths vary by Sitecore product—use only endpoints your tenant exposes.
 * OAuth access tokens, refresh, and lifetimes must follow Sitecore security policy.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Configure **GET** on your download-order path, set authorization headers per Sitecore, map `id` from context, paste sample JSON, map fields, and tune timeouts for asset latency.
 
@@ -278,6 +282,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -331,7 +337,7 @@ The following limitations and exclusions apply:
 * Pagination and OAuth token refresh must follow Bynder's API rules.
 * Large paginated responses: map only the fields required for personalization.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Configure **GET** on the chosen endpoint (one common pattern is a users listing), complete OAuth per [Bynder](https://developer.bynder.com/){target="_blank"}, avoid pulling unnecessary pages of data, map fields, test, then activate.
 
@@ -355,6 +361,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -474,7 +482,7 @@ The following limitations and exclusions apply:
 * Avoid exposing internal promotion or campaign identifiers in customer-facing errors or message content.
 * Application-level rate limits apply—configure retries and caching per Voucherify guidance.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Set base URL for your cluster, add required headers (`X-APP-ID`, `X-APP-TOKEN`), constrain list endpoints with filters or IDs, paste sample JSON, map fields, test, activate.
 
@@ -499,6 +507,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -565,7 +575,7 @@ The following limitations and exclusions apply:
 * Endpoints vary by Marigold product—validate with Marigold support for your deployment.
 * Personal data in responses must comply with your DPA and retention policies.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Point to the Marigold host for your region, set authentication (the sample below uses `X-Api-Key` with key and secret), paste sample JSON, map fields, test, activate.
 
@@ -595,6 +605,8 @@ The following limitations and exclusions apply:
 
 1. Europe – https://{{customername}}.module.slgnt.eu
    USA – https://{{customername}}.module.slgnt.us
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -649,7 +661,7 @@ The following limitations and exclusions apply:
 * Recommendation and delivery APIs require specific parameters (for example mbox or product identifiers)—follow Adobe Target documentation.
 * Tune latency and caching for your send volume and use case.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Delivery calls are often **POST** with a JSON body. Configure OAuth per [Target authentication](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/configure-authentication){target="_blank"}, paste a sample response, map fields, test under expected volume.
 
@@ -674,6 +686,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -782,7 +796,7 @@ The following limitations and exclusions apply:
 * Aprimo field-level security must align with the attributes you map in Journey Optimizer.
 * Large HAL or JSON payloads: restrict mapped fields to the minimum required set.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Use **GET** on the record path you need, send required headers such as `API-VERSION`, paste sample JSON (HAL or JSON as returned), map a minimal field set, test, activate.
 
@@ -807,6 +821,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -859,7 +875,7 @@ The following limitations and exclusions apply:
 * Session-heavy flows may require careful mapping to the Integrations request model.
 * Observe Talon.One rate limits and idempotency guidance.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Use **GET** on the profile or achievement path you need, set `Authorization: ApiKey-v1 <key>` as documented, paste sample JSON, map fields, test, activate.
 
@@ -883,6 +899,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -942,7 +960,7 @@ The following limitations and exclusions apply:
 * Customer PII must be handled under Antavo agreements and your privacy policies.
 * Confirm API versions and stable endpoints with Antavo for your environment.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Configure **GET** with the vendor's authentication (for example API key in query), avoid exposing PII against policy, paste sample JSON, map fields, test, activate.
 
@@ -967,6 +985,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1019,7 +1039,7 @@ The following limitations and exclusions apply:
 * Salesforce API limits and OAuth token refresh must be designed into your integration.
 * Field-level security and sharing rules govern which fields appear in API responses.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Use the loyalty integration endpoint your team approves, complete Salesforce OAuth, paste sample JSON, map fields, respect composite API limits, test, activate.
 
@@ -1043,6 +1063,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1103,7 +1125,7 @@ The following limitations and exclusions apply:
 
 * Endpoints and hosts are customer-specific—do not deploy without documentation from your Epsilon account team.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Do not guess public URLs—use the specification from Epsilon, paste sample JSON, map fields, test, activate.
 
@@ -1128,6 +1150,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1189,7 +1213,7 @@ The following limitations and exclusions apply:
 * Use of Trustpilot data must comply with Trustpilot branding and data-use policies.
 * Rate limits apply to review summary and related endpoints.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Configure **GET** with required query authentication, map identifiers from profile or context, paste sample JSON, map fields, test, activate.
 
@@ -1213,6 +1237,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1265,7 +1291,7 @@ The following limitations and exclusions apply:
 * Do not expose ShipStation API keys in message content; keep credentials in the integration configuration only.
 * Paginated list endpoints may be a poor fit for Integrations—prefer single-resource GETs when possible.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Target the resource you need (orders vs shipments), authenticate per [ShipStation API](https://www.shipstation.com/docs/api/){target="_blank"}, paste sample JSON, map fields, test, activate.
 
@@ -1289,6 +1315,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1348,7 +1376,7 @@ The following limitations and exclusions apply:
 * Protect secret API keys and follow your rotation policies.
 * Subscription and entitlement data is sensitive—meet privacy and consent requirements.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Call the REST **GET** modeled below, authenticate with the secret key header, paste sample JSON, map fields, test, activate.
 
@@ -1372,6 +1400,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1432,7 +1462,7 @@ The following limitations and exclusions apply:
 * Very large catalogs: avoid bulk list endpoints if Integrations expects per-entity retrieval.
 * Attribute visibility can be limited by Salsify role permissions.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Prefer single-product retrieval over bulk catalog calls, set bearer auth, paste sample JSON, map fields, test, activate.
 
@@ -1456,6 +1486,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1509,7 +1541,7 @@ The following limitations and exclusions apply:
 * This pattern uses REST JSON for field mapping; GraphQL delivery follows a different integration path.
 * Use production-appropriate delivery tokens; preview and published flows are not interchangeable.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Add both `api_key` and `access_token` headers as Contentstack requires, include the `environment` query parameter, paste sample JSON, map fields, test, activate.
 
@@ -1533,6 +1565,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1587,7 +1621,7 @@ The following limitations and exclusions apply:
 
 * Authentication schemes and regional hosts vary by deployment—confirm with Capillary for your stack.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Configure headers such as `CAP-API-ACCESS-TOKEN` as required, paste sample JSON, map fields, test, activate.
 
@@ -1612,6 +1646,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1665,7 +1701,7 @@ The following limitations and exclusions apply:
 * PIM responses can be large—map only the attributes required for personalization.
 * Write operations are outside the scope of typical read-only personalization examples.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Use **GET** with bearer token, request only needed attribute options in query flags, paste sample JSON, map a minimal attribute set, test, activate.
 
@@ -1689,6 +1725,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1747,7 +1785,7 @@ The following limitations and exclusions apply:
 
 * REST delivery URLs depend on installed Magnolia modules and configuration.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Use the public delivery URL pattern your modules expose, authenticate per Magnolia guidance (anonymous delivery vs token for protected content), paste sample JSON, map fields, test, activate.
 
@@ -1771,6 +1809,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1818,7 +1858,7 @@ The following limitations and exclusions apply:
 * Display of ratings and reviews must follow Bazaarvoice content policies.
 * Rate limits and caching rules apply per API key.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Use **GET** with `passkey` as a query parameter on the Conversations API, set `Accept: application/json`, paste sample JSON, map fields, test, activate.
 
@@ -1842,6 +1882,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1894,7 +1936,7 @@ The following limitations and exclusions apply:
 * Consent and preference data are highly regulated—coordinate with privacy and legal teams.
 * API paths and payloads differ by OneTrust product—use documentation for your subscription.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Use the published schema or preference-center path your subscription documents, complete OAuth if required, paste sample JSON, map fields, test, activate.
 
@@ -1919,6 +1961,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -1972,7 +2016,7 @@ The following limitations and exclusions apply:
 * Short-lived access tokens require a renewal or long-lived strategy suited to server-side integrations.
 * Comply with Meta Platform Terms; do not log tokens or other secrets in message payloads.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Graph calls are often **GET** with a versioned path; handle token expiry, paste sample JSON, map fields, test, activate.
 
@@ -1996,6 +2040,8 @@ The following limitations and exclusions apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++ Sample integration fields
 
@@ -2044,7 +2090,7 @@ The following prerequisites apply:
 * Workspace host, token or OAuth per org policy; service principal with minimal scope.
 * Admin access in Journey Optimizer.
 
-### Configuration steps
+Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
 1. Follow [Work with Integrations](external-sources.md). Prefer narrow read paths; if you use **POST** statement execution, include the JSON body the API requires, paste a sample success response for mapping, test latency carefully, activate.
 
@@ -2068,6 +2114,8 @@ The following prerequisites apply:
 1. Configure timeout, retry, and caching policies based on expected volume.
 
 1. Test the connection, then activate the integration.
+
+The table below lists example values for this integration request.
 
 +++Sample integration fields
 
