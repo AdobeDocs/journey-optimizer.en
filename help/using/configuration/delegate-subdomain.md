@@ -33,6 +33,7 @@ You can either:
 
 * Fully delegate a subdomain - [Learn how](#set-up-subdomain)
 * Create a subdomain using CNAMEs to point to Adobe-specific records - [Learn how](#set-up-subdomain)
+* Delegate a custom subdomain - [Learn how](delegate-custom-subdomain.md)
 
 The **full subdomain delegation** is the recommended method. Learn more about the differences between the different subdomain configuration methods in [this section](about-subdomain-delegation.md#subdomain-delegation-methods).
 

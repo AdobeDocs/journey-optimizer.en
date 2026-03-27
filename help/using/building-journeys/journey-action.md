@@ -18,7 +18,9 @@ version: Journey Orchestration
 >title="Action activity"
 >abstract="The **Action** activity lets you configure a single native channel action and multiple inbound activities with the ability to add optimization to any built-in channel action."
 
-The **Action** activity is the single entry point for all channel actions in the journey canvas. It replaces the previous individual built-in channel activities and consolidates Email, Push, SMS, In-app, Web, Code-based experience, and Content Card into one unified activity type.
+The **Action** activity is the single entry point for all channel actions in the journey canvas.
+
+It replaces the previous individual built-in channel activities and consolidates Email, Push, SMS, In-app, Web, Code-based experience, and Content Card into one unified activity type.
 
 Use it to:
 
@@ -26,11 +28,21 @@ Use it to:
 * Build multi-action inbound action groups.
 * Apply optimization to any channel action.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
+>You can also set up custom actions to send your messages in [!DNL Journey Optimizer]. [Learn more](#recommendation)
 
-You can also set up custom actions to send your messages in [!DNL Journey Optimizer]. [Learn more](#recommendation)
+## About legacy channel activities
+
+Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are **deprecated as of the March 2026 release**.
+
+Existing journeys using these activities continue to work without any changes—no migration is required.
+
+Legacy native channel activities are also preserved in these cases:
+
+* **Duplicate a journey** — The duplicated journey continues to use legacy activities. You can edit and publish it as is; no migration is required.
+* **Create a new journey version** — The new version continues to use legacy activities. You can edit and publish it as is; no migration is required.
+* **Copy and paste legacy activities in a journey** — Pasted activities remain legacy activities. You can edit and publish them as is; no migration is required.
 
 ## Add a built-in channel action to a journey  {#add-action}
 

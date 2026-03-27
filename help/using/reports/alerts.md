@@ -78,7 +78,7 @@ Detect issues with email deliverability setup:
 
 * [AJO Domain DNS record missing](#alert-dns-record-missing) – Identifies missing or misconfigured DNS records
 * [AJO channel configuration failure](#alert-channel-config-failure) – Detects email configuration issues (SPF, DKIM, MX records)
-* [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) – Warns when Resource or Tracking certificates on a custom delegation subdomain are expiring soon or have expired
+* [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal-unsuccessful) – Warns when Resource or Tracking certificates on a custom delegation subdomain are expiring soon or have expired
 
 >[!ENDTABS]
 
