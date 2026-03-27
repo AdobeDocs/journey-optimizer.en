@@ -92,15 +92,15 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Native channel action activities deprecated</strong><br/></th>
+<th><strong>Action activity replaces channel-specific journey activities</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>Following the General Availability of the <strong>Action activity</strong> in February 2026, legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) in the journey canvas are now deprecated.</p>
-<p>You now use a single <strong>Action activity</strong> to configure all channel actions, replacing the need for separate channel-specific nodes.
-Existing journeys using legacy channel activities will continue to function without any changes or migration required.</p>
+<p>You now use a single <strong>Action activity</strong> to configure all channel actions, replacing the need for separate channel-specific nodes.</p>
+<p>Existing journeys using legacy channel activities continue to function without any changes or migration required.</p>
 <p><img src="assets/do-not-localize/action-activity.gif"></p>
 <p>For more information, refer to the <a href="../building-journeys/journey-action.md">detailed documentation</a>.</p>
 </td>
@@ -248,6 +248,10 @@ Improvements coming with this release are listed below.
 
 <!--* **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders, enabling structured navigation and easier management for teams working with large volumes of content. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.-->
 
+* **AJO domain certificates renewal unsuccessful** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, when a domain certificate used for email deliverability is nearing expiration or has already expired. [Read more](../reports/alerts.md#alert-certificates-renewal-unsuccessful)
+
+  Availability date: March 26, 2026
+
 * **AJO Secondary Recipient Feedback Event Dataset rename** - The `AJO Email BCC Feedback Event` Dataset has been renamed to `AJO Secondary Recipient Feedback Event` Dataset. The impact varies depending on your situation:
 
   * **Existing users**: Only the display name is updated. The underlying table name remains unchanged.
@@ -276,9 +280,7 @@ Improvements coming with this release are listed below.
 
 The features and improvements below are planned for release later in March/early April. Release dates and scope are **subject to change without prior notice**.
 
-
 ### Capabilities 
-
 
 <table>
 <thead>
@@ -291,6 +293,7 @@ The features and improvements below are planned for release later in March/early
 <td>
 <p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../content-management/image-to-html.md">Learn more</a></p>
+<p><img src="assets/do-not-localize/image-converter.gif"></p>
 <p>Availability date: March 30, 2026</p>
 </td>
 </tr>
@@ -364,6 +367,8 @@ The features and improvements below are planned for release later in March/early
 This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
 </p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../building-journeys/optimize.md">Learn more</a></p>
+<p><img src="assets/do-not-localize/optimize.gif"></p>
+<p>As part of the General Availability, this release introduces <strong>experiment type</strong> selection (A/B or multi-armed bandit) and <strong>Scale the winner</strong> for unitary journeys.</p>
 <p>Availability date: April 3, 2026</p>
 </td>
 </tr>
@@ -389,4 +394,16 @@ This tool allows you to test and vary, and customize communications, sequencing,
 </tbody>
 </table>
 
-<!--WAITING RELEASE DATE CONFIRMATION * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.-->
+<!--
+WAITING RELEASE DATE CONFIRMATION
+* **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.
+
+<--
+TO ADD when Path optimization is GA:
+
+* **Experiment type** - You can now choose between A/B experiment (fixed split at the start) or Multi-armed bandit (automatic split with weekly weight updates) when configuring a path experiment.
+
+* **Path experimentation: Scale the Winner** - You can now automatically or manually roll out the winning path of an experiment to your full audience. Once a winner is determined, you can amplify its reach and effectiveness without constantly monitoring the experiment.
+This capability is available only in unitary journeys (event-triggered and Audience qualifications). It is not available for Read audience journeys.
+
+-->
