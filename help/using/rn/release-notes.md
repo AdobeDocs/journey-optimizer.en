@@ -274,7 +274,7 @@ The features and improvements below are planned for release later in March/early
 <td>
 <p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../content-management/image-to-html.md">Learn more</a></p>
-<p>Availability date: March 26, 2026</p>
+<p>Availability date: March 30, 2026</p>
 </td>
 </tr>
 </tbody>
