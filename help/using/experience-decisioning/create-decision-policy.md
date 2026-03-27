@@ -33,11 +33,13 @@ To present the best dynamic offer and experience to your customers, add a decisi
 1. [Set up a strategy sequence](#strategy) - Select the items to return with the decision policy.
 1. [Select fallback offers](#fallback) (optional) - Select items to display if no items or selection strategies are qualified.
 1. [Review and save](#review) the selection strategy
-1. [Assign a placement](#placement) (Email channel only)
+1. [Assign a placement](#placement) (Email channel)
 
 >[!AVAILABILITY]
 >
->Decision policies are available for the **Code-based Experience**, **Push notification**, **SMS**, and **Email** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Push notification** and SMS channels.
+>
+>Decisioning for the Email channel is available in Limited Availability. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Add a decision policy {#add}
 
@@ -108,16 +110,6 @@ For code-based experiences, you can add a new decision policy using either the *
     >The **[!UICONTROL Reuse decision output]** option lets you reuse a decision policy that has already been created in this email. It is particularly helpful when you want to show the same offer in multiple locations (for example, header and footer).
     >
     >When the same offer can be selected by more than one decision policy in the email body, the engine deduplicates offers: each placement receives a different offer, so the same offer will not appear in both places. To display the same offer in multiple placements, use **[!UICONTROL Reuse decision output]** to reuse the output of an existing decision policy in this email.
-
-    +++
-
-You can also add decision policies when using the **[!UICONTROL Code your own]** mode in the Email Designer. To do so, navigate to **[!UICONTROL Decision policies]** to insert the decision policy code. [Learn how to code your own email content](../email/code-content.md).
-
-![](assets/decision-policy-add-code-your-own.png)
-
->[!NOTE]
->
->In **[!UICONTROL Code your own]** mode, you can only return one decision item per policy, because the **[!UICONTROL Repeat Grid]** component is not available.
 
 >[!TAB SMS]
 
