@@ -22,7 +22,9 @@ To create an Orchestrated campaign, follow these steps:
 
 1. Browse to the **[!UICONTROL Campaigns]** menu and select the **[!UICONTROL Orchestration]** tab.
 
-1. Click the **[!UICONTROL Create campaign]** button and select the **[!UICONTROL Orchestration - Marketing]** campaign type.
+1. Click the **[!UICONTROL Create campaign]** button and select the **[!UICONTROL Orchestration - Marketing and transactional]** campaign type.
+
+    You will choose whether each message is marketing or transactional when you add a [channel activity](../orchestrated/activities/channels.md).
 
      ![](assets/create-modal.png)
 

@@ -49,7 +49,7 @@ UNUSED IDs in BJ
 >title="Direct mail activity"
 >abstract="The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
-[!DNL Adobe Journey Optimizer] allows you to automate and execute marketing campaigns across channels - email, SMS, push notifications and direct mail. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns. These campaigns can trigger actions based on customer behavior and data.
+[!DNL Adobe Journey Optimizer] allows you to automate and execute campaigns across channels—email, SMS, push notifications, and direct mail—for both marketing and transactional messages. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns. These campaigns can trigger actions based on customer behavior and data.
 
 For example:
 
@@ -77,6 +77,8 @@ By using channel activities, you can create comprehensive and personalized campa
 1. Add a channel activity into the canvas. Available channel activities are **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push]** and **[!UICONTROL Direct mail]**.
 
     ![image showing the canvas with available activities](../assets/channel-add.png)
+
+1. In the right rail, use the **[!UICONTROL Category]** field to choose **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** for this message. Transactional messages do not require opt-in and are suited for time-sensitive communications such as disruptions, emergencies, or cancellations.
 
 1. Select the activity and click **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]**, or **[!UICONTROL Edit direct mail]** depending on the chosen channel.
 

@@ -201,6 +201,23 @@ Existing journeys using legacy channel activities will continue to function with
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Transactional category in Orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>In Orchestrated campaigns, you can now set a channel activity to the <strong>Transactional</strong> category. This applies transactional channel configurations to that activity and is useful when business rules should not apply or when customers' opt-in is not required.</p>
+<p><img src="assets/do-not-localize/oc-transactional.gif"></p>
+<p>For more information, refer to the <a href="../orchestrated/activities/channels.md#add">detailed documentation</a>.</p>
+<p>This capability will be gradually rolled out to all regions over the next few days.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Improvements {#march-26-improv}
 
@@ -275,23 +292,6 @@ The features and improvements below are planned for release later in March/early
 <p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../content-management/image-to-html.md">Learn more</a></p>
 <p>Availability date: March 30, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Transactional category in Orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>In Orchestrated campaigns, you can now set a channel activity to the <strong>Transactional</strong> category. This applies transactional channel configurations to that activity and is useful when business rules should not apply or when customers' opt-in is not required.</p>
-<p><img src="assets/do-not-localize/oc-transactional.gif"></p>
-<p>Availability date: March 31, 2026</p>
 </td>
 </tr>
 </tbody>
