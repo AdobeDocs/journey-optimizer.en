@@ -204,6 +204,23 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
+<th><strong>Trigger Orchestrated campaigns using a signal</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Orchestrated campaigns can now be triggered via an <strong>API signal</strong>. To set this up, configure the target campaign as <strong>Triggered by a signal</strong>, publish it, then fire it using an API call. Any parameters included in the API call are available as variables within the running campaign. Note that signal-triggered orchestrated campaigns remain <strong>batch</strong> campaigns and are distinct from API-triggered campaigns.</p>
+<p><img src="assets/do-not-localize/oc-triggered.gif"></p>
+<p>For more information, refer to the <a href="../orchestrated/trigger-orchestrated-campaign.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Transactional category in Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -332,23 +349,6 @@ The features and improvements below are planned for release later in March/early
 <td>
 <p><strong>Inbox</strong> is a mobile functionality, available with Content Cards, that enables customers to create a centralized location within their app or website to display messages sent to their users. This extends the lifetime of marketing communications by ensuring messages remain accessible even after they are dismissed.</p>
 <p>Availability date: March 31, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Trigger Orchestrated campaigns using a signal</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Orchestrated campaigns can now be triggered via an <strong>API signal</strong>. To set this up, configure the target campaign as <strong>Triggered by a signal</strong>, publish it, then fire it using an API call. Any parameters included in the API call are available as variables within the running campaign. Note that signal-triggered orchestrated campaigns remain <strong>batch</strong> campaigns and are distinct from API-triggered campaigns.</p>
-<p><img src="assets/do-not-localize/oc-triggered.gif"></p>
-<p>Availability date: April 1, 2026</p>
 </td>
 </tr>
 </tbody>

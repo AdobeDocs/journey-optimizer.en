@@ -64,6 +64,8 @@ To create an Orchestrated campaign, follow these steps:
 
 By default, Orchestrated campaigns start when activated manually and end once their associated activites have been executed. If you prefer to delay execution or run the campaign on a recurring basis, you can define a schedule for the campaign.
 
+You can also start the campaign when it receives a signal from an external system or application instead of running on a schedule. [Learn how to trigger an Orchestrated campaign using a signal](trigger-orchestrated-campaign.md).
+
 Consider the following best practices when scheduling Orchestrated campaigns to ensure optimal performance and expected behavior:
 
 * Do not schedule an Orchestrated campaign to run more than every 15 minutes as it may impede overall system performance and create blocks in the database.

@@ -208,6 +208,8 @@ solution: Journey Optimizer
       + [Send wishlist item updates](using/orchestrated/wishlist-uc.md)
       + [Engage customers by browsing activity](using/orchestrated/engage-customers-uc.md)
       + [Notify users about product availability](using/orchestrated/product-availability-uc.md)
+    + Advanced operations {#orchestrated-advanced}
+      + [Trigger Orchestrated campaigns using a signal](using/orchestrated/trigger-orchestrated-campaign.md)
 + Conflict & prioritization {#conflict-prioritization}
   + [Conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
   + [Identify potential conflicts](using/conflict-prioritization/conflicts.md)
