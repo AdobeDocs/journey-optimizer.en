@@ -1,22 +1,22 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Troubleshoot Live Activities
-description: Learn how to troubleshoot Live Activities in Journey Optimizer for both unitary and broadcast use cases, including profile token issues, campaign configuration, and delivery failures
+title: Troubleshoot Live activities
+description: Learn how to troubleshoot Live activities in Journey Optimizer for both unitary and broadcast use cases, including profile token issues, campaign configuration, and delivery failures
 role: User
 level: Intermediate
 exl-id: f0f83bd2-7c2b-4d9b-b455-e1df12dfa175
 ---
-# Troubleshoot Live Activities {#troubleshoot-mobile-live}
+# Troubleshoot Live activities {#troubleshoot-mobile-live}
 
-Live Activities in Adobe Journey Optimizer enable real-time, dynamic updates on iOS lock screens and Dynamic Islands. They can only be triggered and managed through API Triggered Campaigns.
+Live activities in Adobe Journey Optimizer enable real-time, dynamic updates on iOS lock screens and Dynamic Islands. They can only be triggered and managed through API Triggered Campaigns.
 
 **Use case types:**
 
 * **Unitary**: Individually targeted, transactional (API-triggered Transactional campaigns)
 * **Broadcast**: Audience-targeted, mass delivery (API-triggered Marketing campaigns)
 
-A frequent challenge with Live Activities is when the API call to trigger or update a Live Activity returns a **successful response (200 OK)**, but the Live Activity fails to appear or update on the user's device. This disconnect between API confirmation and actual device behavior can occur at multiple points in the delivery pipeline. This guide provides a systematic troubleshooting approach to identify where the delivery is failing, examining each stage from API request validation through device rendering.
+A frequent challenge with Live activities is when the API call to trigger or update a Live activity returns a **successful response (200 OK)**, but the Live activity fails to appear or update on the user's device. This disconnect between API confirmation and actual device behavior can occur at multiple points in the delivery pipeline. This guide provides a systematic troubleshooting approach to identify where the delivery is failing, examining each stage from API request validation through device rendering.
 
 ## Prerequisites
 
@@ -29,11 +29,11 @@ Before troubleshooting, ensure you have:
   * Edge Network requests and responses
   * Profile qualification events
   * Push token registration
-  * Live Activity lifecycle events
+  * Live activity lifecycle events
 
   Learn how to set up Assurance in the [Adobe Experience Platform Assurance documentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/assurance).
 
-  **Note**: For iOS Live Activity, ensure your app is running on a physical iOS device (iOS 16.1 or later) or Xcode Simulator (iOS 16.1 or later).
+  **Note**: For iOS Live activity, ensure your app is running on a physical iOS device (iOS 16.1 or later) or Xcode Simulator (iOS 16.1 or later).
 
   +++
 
@@ -44,15 +44,15 @@ Before troubleshooting, ensure you have:
   * Campaign name
   * Campaign ID found in the URL or campaign properties
   * Campaign version if applicable
-  * Surface configuration, iOS app surface used for Live Activity
+  * Surface configuration, iOS app surface used for Live activity
 
   +++
 
 * +++ Collect API request information
 
-  When making the API call to trigger the Live Activity, save:
+  When making the API call to trigger the Live activity, save:
 
-  * API request payload, including profile identifiers and Live Activity data
+  * API request payload, including profile identifiers and Live activity data
   * API response including status code, message ID, request ID
   * Timestamp of when the API was called
   * Endpoint used, e.g., `/campaign/{CAMPAIGN_ID}/execute`
@@ -88,13 +88,13 @@ Before troubleshooting, ensure you have:
 
 [!BADGE Applies to both unitary and broadcast use cases]{type=Positive}
 
-The API returns HTTP 200, but the Live Activity does not appear. Common causes:
+The API returns HTTP 200, but the Live activity does not appear. Common causes:
 
 * Profile does not exist in Adobe Experience Platform.
-* Live Activity push token has not been synced to the profile.
-* Live Activity push details are synced but contain incorrect configuration, e.g. wrong `appId` or `attributeType`.
+* Live activity push token has not been synced to the profile.
+* Live activity push details are synced but contain incorrect configuration, e.g. wrong `appId` or `attributeType`.
 
-**Note for broadcast use cases**: If some profiles in your audience are missing tokens, only those profiles will fail to receive the Live Activity. Sample several profiles from your audience to diagnose token issues. This applies only to remote start events, not update or end events.
+**Note for broadcast use cases**: If some profiles in your audience are missing tokens, only those profiles will fail to receive the Live activity. Sample several profiles from your audience to diagnose token issues. This applies only to remote start events, not update or end events.
 
 #### Pre-checks
 
@@ -104,7 +104,7 @@ The API returns HTTP 200, but the Live Activity does not appear. Common causes:
    * `ActivityAttributes` properly implemented.
 * Mobile SDK Integration: 
    * Adobe Experience Platform Mobile SDK (messaging SDK 5.11.0+)
-   * `Messaging.registerLiveActivities` implemented and called with Live Activity push token.
+   * `Messaging.registerLiveActivities` implemented and called with Live activity push token.
 
 #### Debugging steps
 
@@ -117,7 +117,7 @@ The API returns HTTP 200, but the Live Activity does not appear. Common causes:
   
       +++
 
-1. +++ Check if Live Activity push token is synced
+1. +++ Check if Live activity push token is synced
 
     You can use Assurance to verify token registration:
 
@@ -177,7 +177,7 @@ The API returns HTTP 200, but the Live Activity does not appear. Common causes:
 
 [!BADGE Applies to both unitary and broadcast use cases]{type=Positive}
 
-Profile exists with valid tokens, but Live Activity does not appear. This can be caused by:
+Profile exists with valid tokens, but Live activity does not appear. This can be caused by:
 
 * Wrong surface or channel configuration.
 * Incorrect API payload structure.
@@ -188,7 +188,7 @@ Profile exists with valid tokens, but Live Activity does not appear. This can be
 
 #### Pre-checks
 
-* Campaign is **API-triggered Transactional** (unitary) or **API-triggered Marketing** (broadcast) and **High Throughput** option must be **not** be enabled since it is incompatible with Live Activity.
+* Campaign is **API-triggered Transactional** (unitary) or **API-triggered Marketing** (broadcast) and **High Throughput** option must be **not** be enabled since it is incompatible with Live activity.
 * Ensure that profile exists and tokens are synced correctly using the [above scenario](#profile-issue).
 
 #### Debugging steps
@@ -258,8 +258,8 @@ Profile exists with valid tokens, but Live Activity does not appear. This can be
 
    * Optional field containing Unix epoch time (seconds).
    * **Only relevant when `event: "end"`**.
-   * Specifies when the Live Activity should automatically be removed from the device.
-   * If not provided on end event, Live Activity remains visible until user dismisses it.
+   * Specifies when the Live activity should automatically be removed from the device.
+   * If not provided on end event, Live activity remains visible until user dismisses it.
    * Must be a future timestamp (later than `timestamp`).
 
       +++
@@ -325,8 +325,8 @@ Profile exists with valid tokens, but Live Activity does not appear. This can be
 
    | Issue | Impact | Fix |
    |-------|--------|-----|
-   | Missing `liveActivityData` in attributes | Live Activity will not start | Always include `liveActivityData` object in start event |
-   | Missing required field in start event | Live Activity will not start | Add all fields from iOS struct |
+   | Missing `liveActivityData` in attributes | Live activity will not start | Always include `liveActivityData` object in start event |
+   | Missing required field in start event | Live activity will not start | Add all fields from iOS struct |
    | Wrong field name (typo/case) | Field ignored or parsing error | Match iOS field names exactly |
    | Wrong data type | Parsing error | Match iOS data types |
    | Missing nested object | Incomplete data | Include all nested structures |
@@ -342,15 +342,15 @@ Profile exists with valid tokens, but Live Activity does not appear. This can be
    Verify API execution and payload delivery using Assurance:
 
    1. Open your Assurance session.
-   1. Execute the API call to trigger the Live Activity.
+   1. Execute the API call to trigger the Live activity.
    1. In the **Event List**, check for:
       * Campaign execution events.
-      * Live Activity delivery events.
+      * Live activity delivery events.
       * Payload validation error events.
    1. Review event payloads to verify:
       * Payload was processed correctly.
       * No validation errors occurred.
-      * Live Activity was sent to APNs.
+      * Live activity was sent to APNs.
 
       +++
 
@@ -360,11 +360,11 @@ Profile exists with valid tokens, but Live Activity does not appear. This can be
 
 In this scenario, all previous checks have passed:
 
-* Profile exists with [valid Live Activity push tokens](#profile-issue)
+* Profile exists with [valid Live activity push tokens](#profile-issue)
 * Campaign is correctly [configured with proper payload](#payload-issues)
 * [Update tokens are synced](#token-not-synced) (for update/end events, unitary use case only)
 
-But the Live Activity still does not appear, update, or end as expected. The issue may be at the Adobe delivery system level or with the push notification service provider (APNs).
+But the Live activity still does not appear, update, or end as expected. The issue may be at the Adobe delivery system level or with the push notification service provider (APNs).
 
 **Note for broadcast use cases**: Reports show metrics across all audience members. Some profiles may succeed while others fail.
 
@@ -385,7 +385,7 @@ But the Live Activity still does not appear, update, or end as expected. The iss
 
 1. +++ Check campaign reports
 
-   1. Navigate to your **Live Activity Campaign**.
+   1. Navigate to your **Live activity Campaign**.
    1. Click the **Reports** button.
    1. Select **View all time report**.
    1. Review the following sections:
@@ -404,7 +404,7 @@ But the Live Activity still does not appear, update, or end as expected. The iss
 
           | Common Error | Meaning | Resolution |
           |-|-|-|
-          | Invalid token | Push token is invalid or expired | Re-register Live Activity tokens from device |
+          | Invalid token | Push token is invalid or expired | Re-register Live activity tokens from device |
           | Token not found | No valid token associated with profile | Verify `liveActivityPushNotificationDetails` exists |
           | APNs rejected | Apple Push Notification service rejected the push | Check APNs certificate, bundle ID, environment |
           | Network timeout | Unable to reach APNs | Transient issue; retry the API call |
@@ -427,13 +427,13 @@ But the Live Activity still does not appear, update, or end as expected. The iss
    1. Search for and open the profile.
    1. Select the **Events** tab.
    1. Filter or search for events with `eventType = "message.feedback"`.
-   1. Look for feedback events matching your Live Activity's `liveActivityID` and `event` type.
+   1. Look for feedback events matching your Live activity's `liveActivityID` and `event` type.
    1. Review the following key fields:
 
       | Field | Possible Values | What it means |
       |-|-|-|
       | `feedbackStatus` | `sent`, `error`, `denylist` | Delivery outcome from service provider |
-      | `serviceProvider` | `apns/apnsSandbox` | Should be APNs for iOS Live Activities |
+      | `serviceProvider` | `apns/apnsSandbox` | Should be APNs for iOS Live activities |
       | `errorCode` | Numeric code or `null` | APNs-specific error code if failed |
       | `errorMessage` | Error description or `null` | Human-readable error message |
 
@@ -447,11 +447,11 @@ But the Live Activity still does not appear, update, or end as expected. The iss
 
       +++
 
-1. +++ Verify Live Activity delivery to APNs in Assurance
+1. +++ Verify Live activity delivery to APNs in Assurance
 
    1. Open your Assurance session, it must be active during the API call.
    1. Execute the API call (start, update, or end).
-   1. In the **Event List**, look for Live Activity delivery events.
+   1. In the **Event List**, look for Live activity delivery events.
    1. Search for events related to APNs push delivery.
    1. Check for the following indicators:
       * **Push request to APNs**: Confirms Adobe sent the push to Apple's servers
@@ -464,14 +464,14 @@ But the Live Activity still does not appear, update, or end as expected. The iss
       | APNs certificate expired | Authentication error | Renew and upload new APNs certificate |
       | Wrong environment (dev vs prod) | Token mismatch error | Ensure certificate matches app build type |
       | Bundle ID mismatch | Invalid bundle identifier | Verify certificate bundle ID matches app |
-      | Token expired | InvalidToken error from APNs | Re-register Live Activity tokens |
+      | Token expired | InvalidToken error from APNs | Re-register Live activity tokens |
       | Rate limiting | Too many requests | Reduce API call frequency |
 
       +++
   
 1. +++ Proceed to additional diagnostic checks
 
-   1. Check Live Activity Lifecycle metrics in Campaign Report.
+   1. Check Live activity Lifecycle metrics in Campaign Report.
 
       In the campaign report, review the **Live activity lifecycle** section:
 
@@ -480,13 +480,13 @@ But the Live Activity still does not appear, update, or end as expected. The iss
       | Remote starts | Should show count of API-triggered starts |
       | Updates | Should show count of update events |
       | Ends | Should show count of end events |
-      | Totals count | Overall Live Activity event volume |
+      | Totals count | Overall Live activity event volume |
 
       If these metrics are zero or do not match your API calls, there is a delivery issue between Adobe and APNs.
 
-   1. If Adobe shows successful delivery but device does not show the Live Activity:
+   1. If Adobe shows successful delivery but device does not show the Live activity:
 
-      * Check iOS device logs for Live Activity errors.
+      * Check iOS device logs for Live activity errors.
       * Verify app is in foreground or background (not terminated).
       * Confirm device has network connectivity.
       * Test on multiple devices to rule out device-specific issues.
@@ -515,32 +515,32 @@ But the Live Activity still does not appear, update, or end as expected. The iss
 
 ## Unitary-specific scenarios
 
-### Live Activity update token not synced{#token-not-synced}
+### Live activity update token not synced{#token-not-synced}
 
-The Live Activity starts successfully on the device, but subsequent `update` or `end` API calls (returning HTTP 200) fail to update or dismiss the Live Activity. This occurs when the **Live Activity update token** is not properly synced to Adobe's system.
+The Live activity starts successfully on the device, but subsequent `update` or `end` API calls (returning HTTP 200) fail to update or dismiss the Live activity. This occurs when the **Live activity update token** is not properly synced to Adobe's system.
 
 **Understanding update tokens**
 
-When a Live Activity starts on a device, iOS generates a unique update token for that specific Live Activity instance. This token is required for:
+When a Live activity starts on a device, iOS generates a unique update token for that specific Live activity instance. This token is required for:
 
-* Sending updates to the Live Activity
-* Ending the Live Activity remotely
+* Sending updates to the Live activity
+* Ending the Live activity remotely
 
-Each Live Activity instance has its own unique update token. Adobe needs this token to deliver update and end events.
+Each Live activity instance has its own unique update token. Adobe needs this token to deliver update and end events.
 
 **Expected behavior**
 
 For update and end events to work, the following must occur:
 
-1. Live Activity starts successfully on the device.
-1. Device generates an update token for that Live Activity instance.
+1. Live activity starts successfully on the device.
+1. Device generates an update token for that Live activity instance.
 1. Mobile SDK captures and sends the update token to Adobe.
 1. Update token is synced and stored in Adobe's system.
 1. Subsequent API calls for update/end use this token for delivery.
 
 **Pre-checks:**
 
-* **User Permission**: The first time a Live Activity starts on a device, iOS displays a system prompt: "Allow [App Name] to provide Live Activity updates?" The user **must tap "Allow"** for update tokens to be generated and synced. If the user taps "Do not Allow", no update tokens are created and update/end requests will fail. This is a one-time permission per app.
+* **User Permission**: The first time a Live activity starts on a device, iOS displays a system prompt: "Allow [App Name] to provide Live activity updates?" The user **must tap "Allow"** for update tokens to be generated and synced. If the user taps "Do not Allow", no update tokens are created and update/end requests will fail. This is a one-time permission per app.
 * **Profile and Campaign Validation**: Complete [Scenario 1](#profile-issue) and [Scenario 2](#payload-issues) checks to ensure profile, tokens, and campaign configuration are correct.
 
 #### Debugging steps
@@ -548,19 +548,19 @@ For update and end events to work, the following must occur:
 1. +++ Verify update token sync in Assurance
 
    1. Open your Assurance session.
-   1. Ensure the session was active when the Live Activity started on the device.
+   1. Ensure the session was active when the Live activity started on the device.
    1. Filter or search for events with `eventType = "liveActivity.updateToken"`.
    1. Select the event and inspect the payload:
   
       * Verify the `token` field contains a valid update token string.
-      * Check the `liveActivityID` matches your Live Activity instance.
+      * Check the `liveActivityID` matches your Live activity instance.
       * Confirm the `activityType` matches your `attributes-type`.
 
    1. If event is not found:
 
       * The update token was not generated or captured by the SDK.
-      * Check if user granted Live Activity permissions.
-      * Verify the Live Activity actually started successfully on the device.
+      * Check if user granted Live activity permissions.
+      * Verify the Live activity actually started successfully on the device.
       * Confirm the mobile SDK is properly integrated to capture update tokens.
 
    1. If event is found, proceed to Step 2.
@@ -575,7 +575,7 @@ For update and end events to work, the following must occur:
    1. Look for `liveActivity.updateToken` events.
    1. Check the event details:
 
-      * Verify the timestamp is recent (matches when Live Activity started).
+      * Verify the timestamp is recent (matches when Live activity started).
       * Confirm the `token` and `liveActivityID` are present.
       * Ensure the `activityType` is correct.
 
@@ -589,10 +589,10 @@ For update and end events to work, the following must occur:
 
       +++
 
-3. +++ Check Live Activity delivery events in Assurance
+3. +++ Check Live activity delivery events in Assurance
 
    1. In your Assurance session, execute an update or end API call.
-   1. In the **Event List**, look for Live Activity delivery events (APNs push events).
+   1. In the **Event List**, look for Live activity delivery events (APNs push events).
    1. Check for events indicating:
       * Push notification sent to APNs.
       * Response from APNs (success or error).
@@ -607,16 +607,16 @@ For update and end events to work, the following must occur:
 
 ### Broadcast campaign configuration and payload issues{#broadcast-config}
 
-This section covers troubleshooting scenarios specific to broadcast Live Activities, which require different debugging approaches than unitary campaigns.
+This section covers troubleshooting scenarios specific to broadcast Live activities, which require different debugging approaches than unitary campaigns.
 
-When profiles have valid tokens but the Live Activity does not appear, update, or behave as expected for audience members, the issue typically stems from one of the following:
+When profiles have valid tokens but the Live activity does not appear, update, or behave as expected for audience members, the issue typically stems from one of the following:
 
 * The campaign is not configured as API-triggered Marketing.
 * The API payload uses an incorrect broadcast structure (missing `audience` or `input-push-channel`).
 * The `content-state` and `attributes` fields do not match the iOS `ActivityAttributes` implementation.
 * The `input-push-channel` was not created correctly on the Apple Developer Portal.
 
-This troubleshooting scenario applies to all Live Activity events in broadcast campaigns: `start`, `update`, and `end`.
+This troubleshooting scenario applies to all Live activity events in broadcast campaigns: `start`, `update`, and `end`.
 
 **Pre-checks:**
 
@@ -684,16 +684,16 @@ This troubleshooting scenario applies to all Live Activity events in broadcast c
    **Critical broadcast-specific fields:**
 
    * **`input-push-channel`**:
-     * Required for all broadcast Live Activities.
+     * Required for all broadcast Live activities.
      * Serves as a unique identifier for this specific broadcast instance.
-     * All profiles in the audience receive Live Activities linked to this channel.
+     * All profiles in the audience receive Live activities linked to this channel.
      * Must match the `channelID` in `liveActivityData.channelID` (see Step 3).
      * Must be created for the `appID` on the Apple Developer Portal by the client.
-     * Only channels created for the specific `appID` can be used for broadcasting Live Activity on that app.
+     * Only channels created for the specific `appID` can be used for broadcasting Live activity on that app.
 
    * **`audience.id`**:
      * Must reference a valid audience segment created in Adobe Experience Platform.
-     * All profiles in this audience are targeted for the Live Activity.
+     * All profiles in this audience are targeted for the Live activity.
      * The audience must be activated and contain profiles with valid `liveActivityPushNotificationDetails`.
 
    **Always use the latest timestamp:**
@@ -766,7 +766,7 @@ This troubleshooting scenario applies to all Live Activity events in broadcast c
 
    * The `input-push-channel` value at the root of `aps` must exactly match the `channelID` in `liveActivityData`.
    * In the example above, both values are `"FEt0NgvLEfEAAOqA6AXdIQ=="`.
-   * This matching links the broadcast instance to the Live Activity data.
+   * This matching links the broadcast instance to the Live activity data.
    * A mismatch causes delivery failures.
 
    **Key validation points:**
@@ -783,10 +783,10 @@ This troubleshooting scenario applies to all Live Activity events in broadcast c
    | Issue | Impact | Fix |
    |-|-|-|
    | Missing `input-push-channel` | Broadcast will not work | Add unique channel ID for each broadcast |
-   | `input-push-channel` does not match `channelID` | Live Activity will not start | Ensure both values are identical |
-   | Different `input-push-channel` for update/end | Update/end will not reach the Live Activities | Use same channel ID throughout lifecycle |
-   | Missing `liveActivityData.channelID` | Live Activity will not link to broadcast | Include `channelID` in attributes for start event |
-   | Missing required field in start event | Live Activity will not start | Add all fields from iOS struct |
+   | `input-push-channel` does not match `channelID` | Live activity will not start | Ensure both values are identical |
+   | Different `input-push-channel` for update/end | Update/end will not reach the Live activities | Use same channel ID throughout lifecycle |
+   | Missing `liveActivityData.channelID` | Live activity will not link to broadcast | Include `channelID` in attributes for start event |
+   | Missing required field in start event | Live activity will not start | Add all fields from iOS struct |
    | Wrong field name (typo/case) | Field ignored or parsing error | Match iOS field names exactly |
    | Stale timestamp on update/end | Update/end ignored by devices | Always generate fresh timestamp |
 
@@ -800,23 +800,23 @@ This troubleshooting scenario applies to all Live Activity events in broadcast c
    1. Execute the broadcast API call.
    1. In the **Event List**, look for:
       * Campaign execution events.
-      * Live Activity delivery events.
+      * Live activity delivery events.
       * Error events indicating payload validation failures.
    1. Inspect event payloads to confirm:
       * The payload was processed correctly.
       * The `input-push-channel` is present.
       * No validation errors occurred.
-      * Live Activities were sent to APNs for audience members.
+      * Live activities were sent to APNs for audience members.
 
       +++
 
 ### Profile not in audience or stale audience snapshot
 
-In this scenario, the campaign and payload are correctly configured, but specific profiles are not receiving the Live Activity. This typically occurs when:
+In this scenario, the campaign and payload are correctly configured, but specific profiles are not receiving the Live activity. This typically occurs when:
 
 * The profile is not a member of the audience linked to the campaign.
 * The audience is a batch audience and contains an outdated snapshot of profile data.
-* The profile's Live Activity tokens were added recently but have not been reflected in the audience snapshot yet.
+* The profile's Live activity tokens were added recently but have not been reflected in the audience snapshot yet.
 
 This troubleshooting scenario applies specifically to broadcast campaigns using audience-based targeting.
 
@@ -840,7 +840,7 @@ Adobe Experience Platform uses different audience evaluation methods that determ
 
 1. +++ Verify profile is in audience
 
-   First, confirm whether the profile that should receive the Live Activity is actually part of the audience.
+   First, confirm whether the profile that should receive the Live activity is actually part of the audience.
 
    1. Navigate to **Audiences** in Adobe Experience Platform.
    1. Search for and open the audience using the `audience.id` from your campaign.
@@ -871,7 +871,7 @@ Adobe Experience Platform uses different audience evaluation methods that determ
    1. **Understand batch audience limitations:**
       * Batch audiences are evaluated once per day (typically overnight).
       * The audience snapshot may be up to 24 hours old.
-      * If a profile recently registered Live Activity tokens, those tokens may not be in the current snapshot.
+      * If a profile recently registered Live activity tokens, those tokens may not be in the current snapshot.
       * Updates to profiles will not be reflected until the next batch evaluation.
 
    1. **Check when last evaluation occurred:**

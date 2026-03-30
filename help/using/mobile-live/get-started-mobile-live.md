@@ -1,30 +1,30 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with Live activity
-description: Learn how to send Live activity in Journey Optimizer
+title: Get started with Live activities
+description: Learn how to send Live activities in Journey Optimizer
 topic: Content Management
 role: User
 level: Beginner
 exl-id: c9766603-df19-4efd-8319-27e9764254b4
 ---
-# Get started with Live activity {#get-started-mobile-live}
+# Get started with Live activities {#get-started-mobile-live}
 
 
-Live Activities are persistent, glanceable UI elements displayed on the device lock screen. They let your app present real-time, up-to-date information — keeping users informed throughout an ongoing event without requiring them to open the app or receive repeated push notifications.
+Live activities are persistent, glanceable UI elements displayed on the device lock screen. They let your app present real-time, up-to-date information — keeping users informed throughout an ongoing event without requiring them to open the app or receive repeated push notifications.
 
 >[!AVAILABILITY]
 >
->Live activity in Adobe Journey Optimizer is only compatible with Apple iOS.
+>Live activities in Adobe Journey Optimizer are only compatible with Apple iOS.
 
-Unlike traditional push notifications, Live Activities represent **state-based engagement**: instead of delivering one-time alerts, they maintain a continuous, contextual presence that updates dynamically as events evolve.
+Unlike traditional push notifications, Live activities represent **state-based engagement**: instead of delivering one-time alerts, they maintain a continuous, contextual presence that updates dynamically as events evolve.
 
 
 ![](assets/do-not-localize/live-activity.jpeg){width="30%" align="left"}
 
-With Adobe Journey Optimizer, you can remotely **start**, **update**, and **end** Live Activities programmatically through API-triggered campaigns — supporting both individual and audience-based use cases at scale.
+With Adobe Journey Optimizer, you can remotely **start**, **update**, and **end** Live activities programmatically through API-triggered campaigns — supporting both individual and audience-based use cases at scale.
 
-Live activity can **only** be initiated via **API-triggered** campaigns, allowing you to provide custom payloads and perform all personalization through your own payload.
+Live activities can **only** be initiated via **API-triggered** campaigns, allowing you to provide custom payloads and perform all personalization through your own payload.
 The appropriate **API-triggered** campaign type must be selected based on the intended Live activity use case:
 
 * Select **API-triggered Marketing** for broadcast use cases — audience-based updates sent at scale:
@@ -41,7 +41,7 @@ The appropriate **API-triggered** campaign type must be selected based on the in
 
 ## Key benefits
 
-Live Activities shift mobile engagement from notification-based to state-based, enabling brands to:
+Live activities shift mobile engagement from notification-based to state-based, enabling brands to:
 
 * Maintain a **continuous presence** on the Lock Screen throughout high-value events
 * **Update information dynamically** without overwhelming users with repeated notifications
@@ -50,7 +50,7 @@ Live Activities shift mobile engagement from notification-based to state-based, 
 
 ## Quick start guide
 
-Complete the steps below to configure and implement Live activity in your application:
+Complete the steps below to configure and implement Live activities in your application:
 
 1. **[Configure Adobe Journey Optimizer](mobile-live-configuration.md)**
     
@@ -60,9 +60,9 @@ Complete the steps below to configure and implement Live activity in your applic
 
     Integrate with Adobe Experience Platform Mobile SDK to enable real-time, dynamic updates on the Lock Screen and Dynamic Island. 
 
-1. **[Create Live activity in Journey Optimizer](create-mobile-live.md)**
+1. **[Create a Live activity in Journey Optimizer](create-mobile-live.md)**
 
-    Use API-triggered campaigns in Journey Optimizer to start your Live activity. 
+    Use API-triggered campaigns in Journey Optimizer to start your Live activity.
 
 1. **[Track your campaigns](../reports/campaign-global-report-cja-activity.md)**
 
@@ -70,6 +70,6 @@ Complete the steps below to configure and implement Live activity in your applic
 
 ## How-to video
 
-Discover how to configure iOS Live Activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
+Discover how to configure iOS Live activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479864/?learn=on)

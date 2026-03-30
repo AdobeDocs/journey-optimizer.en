@@ -46,7 +46,7 @@ To be able to send messages, you need to go through the configuration steps list
     <div align="center"><a href="../content-card/content-card-configuration-prereq.md"><strong>Content cards</strong></a></div></td>
     </tr></table>
 
-    For additional channels, refer to: [iOS Live Activity](../mobile-live/mobile-live-configuration.md), [WhatsApp](../whatsapp/whatsapp-configuration.md), and [LINE](../line/line-configuration.md).
+    For additional channels, refer to: [iOS Live activities](../mobile-live/mobile-live-configuration.md), [WhatsApp](../whatsapp/whatsapp-configuration.md), and [LINE](../line/line-configuration.md).
 
     >[!NOTE]
     >
@@ -77,7 +77,7 @@ To be able to send messages, you need to go through the configuration steps list
 * **[IP warmup](ip-warmup-gs.md)** - Discover best practices for IP address warmup to improve email deliverability and sender reputation.
 * **[Manage suppression list](manage-suppression-list.md)** - Learn how to manage suppression lists to handle bounces and maintain list hygiene.
 * **[Configure mobile apps](set-mobile-config.md)** - Set up mobile app configurations for push notifications and in-app messaging.
-* **[Configure iOS Live Activity](../mobile-live/mobile-live-configuration.md)** - Set up your environment to send Live Activities to the iPhone Lock Screen and Dynamic Island.
+* **[Configure iOS Live activities](../mobile-live/mobile-live-configuration.md)** - Set up your environment to send Live activities to the iPhone Lock Screen and Dynamic Island.
 * **[Configure WhatsApp](../whatsapp/whatsapp-configuration.md)** - Set up WhatsApp messaging via Meta's Cloud API for campaigns and journeys.
 * **[Configure LINE](../line/line-configuration.md)** - Set up LINE messaging for campaigns and journeys.
 * **[Configuration tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/configuration/channel-configuration/configure-channels){target="_blank"}** - Explore step-by-step video tutorials on channel configuration and best practices.

@@ -43,11 +43,11 @@ Learn how to create, configure, and send push notifications for iOS and Android,
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
 
-iOS Live Activity
+iOS Live activities
 
-Deliver persistent, real-time updates directly on the iPhone Lock Screen and Dynamic Island. Power Live Activities from API-triggered campaigns for individual use cases (order tracking, ride status) or broadcast use cases (sports scores, flight status).
+Deliver persistent, real-time updates directly on the iPhone Lock Screen and Dynamic Island. Power Live activities from API-triggered campaigns for individual use cases (order tracking, ride status) or broadcast use cases (sports scores, flight status).
 
-[Learn more about iOS Live Activity](../mobile-live/get-started-mobile-live.md)
+[Learn more about iOS Live activities](../mobile-live/get-started-mobile-live.md)
 :::
 
 :::
@@ -156,7 +156,7 @@ The table below shows the availability of each channel across different journeys
 | Email                | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Push notification    | ✅ | ✅ | ✅ | ✅ | ✅ |
-| iOS Live Activity    | — | — | — | ✅ | — |
+| iOS Live activities  | — | — | — | ✅ | — |
 | In-app               | ✅ | ✅ | — | — | — |
 | Direct mail          | ✅ | ✅ | — | — | ✅ |
 | Web                  | ✅ | ✅ | — | — | — |

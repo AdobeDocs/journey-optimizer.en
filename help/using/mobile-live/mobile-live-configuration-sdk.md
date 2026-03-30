@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Configure the Live activity channel
+title: Configure the Live activities channel
 description: Learn how to configure your Adobe Experience Platform Mobile SDK integration
 feature: Channel Configuration
 role: Admin
@@ -11,7 +11,7 @@ exl-id: 02ca7c8e-105a-4e77-9aad-2381904255d0
 # Live activity integration with Adobe Experience Platform Mobile SDK {#mobile-live-config-sdk}
 
 
-The Adobe Experience Platform Mobile SDK provides built-in support for Apple's Live activity. This allows your app to display real-time, dynamic updates directly on the Lock Screen and Dynamic Island without opening the app.
+The Adobe Experience Platform Mobile SDK provides built-in support for Apple's Live activities. This allows your app to display real-time, dynamic updates directly on the Lock Screen and Dynamic Island without opening the app.
 
 1. [Import required modules](#import)
 
@@ -145,7 +145,7 @@ if #available(iOS 16.1, *) {
 
 ## Step 4: Create Live activity widgets {#widgets}
 
-Live activity is displayed through widgets, you need to create a widget bundle and configuration:
+A Live activity is displayed through widgets. You need to create a widget bundle and configuration:
 
 **Example for a food delivery Live activity:**
 
@@ -184,7 +184,7 @@ struct FoodDeliveryLiveActivityWidget: Widget {
 
 ## Step 5: Start a Live activity locally (optional) {#local}
 
-While Journey Optimizer can remotely start Live activity, you can also start it locally:
+While Journey Optimizer can remotely start Live activities, you can also start them locally:
 
 **Example for a food delivery Live activity:**
 
@@ -230,11 +230,11 @@ extension FoodDeliveryLiveActivityAttributes: LiveActivityAssuranceDebuggable {
 
 For comprehensive SDK documentation and implementation details:
 
-* [Live Activities Developer Guide](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities)
+* [Live activities Developer Guide](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities)
 * [API Reference](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/api-reference/)
-* [Live Activity Tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/tutorial/)
+* [Live activity Tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/tutorial/)
 * [Public Classes](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/public-classes/live-activity-attributes/)
 
 >[!TIP]
 >
->If you are experiencing issues with token registration, payload alignment, or Live Activity delivery, see [Troubleshoot Live Activities](troubleshoot-mobile-live.md) for detailed debugging guidance.
+>If you are experiencing issues with token registration, payload alignment, or Live activity delivery, see [Troubleshoot Live activities](troubleshoot-mobile-live.md) for detailed debugging guidance.
