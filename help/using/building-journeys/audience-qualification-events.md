@@ -112,13 +112,17 @@ See the [[!DNL Adobe Experience Platform] streaming segmentation documentation](
 
 >[!NOTE]
 >
->For streaming segmentation, newly ingested data may take up to **2 hours** to propagate fully within [!DNL Adobe Experience Platform] for real-time use. Audiences that rely on day-based or time-based conditions (e.g., "events that occurred today") may experience additional complexity in qualification timing. If your journey depends on immediate audience qualification, consider adding a short [Wait activity](wait-activity.md) at the beginning. You can also allow buffer time to ensure accurate qualification.
+>Propagation timing for streaming segment membership depends on how the membership is evaluated and where it is used in the journey:
+>
+>* **Audience Qualification node + streaming segment:** When a profile qualifies for a streaming segment at the Edge, that membership is projected from Edge to Hub before the journey can act on it. This Edge-to-Hub propagation typically takes **15 to 30 minutes** (per the UPS SLT). Additional journey processing time is usually under 5 minutes unless the system is under heavy load. If profiles are not entering an Audience Qualification journey as expected, allow for this propagation window before investigating further. For use cases requiring true real-time entry, consider a unitary event trigger instead.
+>* **`inAudience()` in a condition node — before a Wait activity (or in a Read Audience journey):** When segment membership is evaluated in a condition expression in this context, AJO reads from the batch projection of the profile. Data freshness in this projection carries an SLT of up to **2 hours** after ingestion. Audiences that rely on day-based or time-based conditions may experience additional delay. Add a short [Wait activity](wait-activity.md) at the start of the journey, or allow buffer time to ensure the latest segment membership is reflected.
+>* **`inAudience()` in a condition node — after a Wait activity (or in a unitary event journey):** In this context, segment membership is read from the streaming (unitary) projection. For expected latency, refer to the [Adobe Experience Platform streaming ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/streaming/overview){target="_blank"}. This path is generally more responsive to recent profile changes.
 
 #### Why not all qualified profiles may enter the journey {#streaming-entry-caveats}
 
 When using streaming audiences with the **Audience Qualification** activity, not all profiles that qualify for the audience will necessarily enter the journey. This behavior can occur for the following reasons:
 
-* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter.
+* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter. Similarly, when a streaming segment uses a **time-based condition** (for example, "event in the next 8 hours"), profiles that already met that condition before the segment was created are **not retroactively evaluated** — only profiles whose data changes after segment activation are assessed against the condition.
 
 * **Journey activation time**: When you publish a journey, the **Audience Qualification** activity takes up to **10 minutes** to become active and start listening for profile entries and exits. [Learn more about journey activation](#configure-segment-qualification).
 
