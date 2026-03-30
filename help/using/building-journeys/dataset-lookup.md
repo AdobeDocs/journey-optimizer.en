@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 version: Journey Orchestration
+badge: label="Limited Availability" type="Informative"
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
 ---
 # Use [!DNL Adobe Experience Platform] data in journeys {#datalookup}
@@ -18,6 +19,10 @@ exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
 >abstract="The **[!UICONTROL Dataset lookup]** activity allows you to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
 
 The **[!UICONTROL Dataset lookup]** activity allows you to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
+
+>[!AVAILABILITY]
+>
+>This feature is currently available to all customers as a limited availability release.
 
 Key Benefits:
 
