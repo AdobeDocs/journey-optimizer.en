@@ -8,8 +8,8 @@ topic: Content Management
 role: Developer
 level: Intermediate
 version: Campaign Orchestration
+exl-id: d1fd072d-b143-4752-822f-23f98684ba80
 ---
-
 # Trigger Orchestrated campaigns using a signal {#trigger-signal}
 
 You can trigger an Orchestrated campaign by sending it a signal instead of running it on a schedule. The signal is sent via an API call from an external system or application. When using a signal, you can pass parameters. They are then made available in the orchestrated campaign as event variables in the execution context — for use in targeting, conditions, or expressions.
