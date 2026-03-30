@@ -20,24 +20,20 @@ Live activities are persistent, glanceable UI elements displayed on the device l
 Unlike traditional push notifications, Live activities represent **state-based engagement**: instead of delivering one-time alerts, they maintain a continuous, contextual presence that updates dynamically as events evolve.
 
 
-![](assets/do-not-localize/live-activity.jpeg){width="30%" align="left"}
-
-With Adobe Journey Optimizer, you can remotely **start**, **update**, and **end** Live activities programmatically through API-triggered campaigns — supporting both individual and audience-based use cases at scale.
-
-Live activities can **only** be initiated via **API-triggered** campaigns, allowing you to provide custom payloads and perform all personalization through your own payload.
-The appropriate **API-triggered** campaign type must be selected based on the intended Live activity use case:
-
-* Select **API-triggered Marketing** for broadcast use cases — audience-based updates sent at scale:
-
-    * Sports scores and live event countdowns
-    * Flight status updates for all passengers on a route
-    * Shared experiences across a user segment
-
-* Select **API-triggered Transactional** for individual use cases — 1:1 real-time updates per user:
-
-    * Order tracking and delivery progress
-    * Ride or service status updates
-    * Real-time booking and appointment confirmations
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<img alt="iOS Live activities on Lock Screen and Dynamic Island" src="assets/do-not-localize/live-activity.jpeg">
+</td>
+<td>
+<p>With Adobe Journey Optimizer, you can remotely <strong>start</strong>, <strong>update</strong>, and <strong>end</strong> Live activities programmatically through API-triggered campaigns — supporting both individual and audience-based use cases at scale.</p>
+<p>Live activities can <strong>only</strong> be initiated via <strong>API-triggered</strong> campaigns, allowing you to provide custom payloads and perform all personalization through your own payload. The appropriate campaign type must be selected based on the intended Live activity use case:</p>
+<ul>
+<li><strong>API-triggered Marketing</strong> — broadcast use cases, audience-based updates sent at scale: sports scores and live event countdowns, flight status updates, shared experiences across a user segment.</li>
+<li><strong>API-triggered Transactional</strong> — individual use cases, 1:1 real-time updates per user: order tracking and delivery progress, ride or service status updates, real-time booking and appointment confirmations.</li>
+</ul>
+</td>
+</tr>
+</table>
 
 ## Key benefits
 
