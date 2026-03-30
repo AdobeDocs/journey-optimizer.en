@@ -20,7 +20,7 @@ Live Activities are persistent, glanceable UI elements displayed on the device l
 Unlike traditional push notifications, Live Activities represent **state-based engagement**: instead of delivering one-time alerts, they maintain a continuous, contextual presence that updates dynamically as events evolve.
 
 
-![](assets/do-not-localize/live-activity.jpeg){width="50%" align="left"}
+![](assets/do-not-localize/live-activity.jpeg){width="30%" align="left"}
 
 With Adobe Journey Optimizer, you can remotely **start**, **update**, and **end** Live Activities programmatically through API-triggered campaigns — supporting both individual and audience-based use cases at scale.
 
