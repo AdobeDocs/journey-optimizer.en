@@ -86,7 +86,6 @@ solution: Journey Optimizer
     + [Wait](using/building-journeys/wait-activity.md)
     + [Content decision](using/building-journeys/content-decision.md)
     + [Dataset lookup](using/building-journeys/dataset-lookup.md)
-    + [Built-in channel actions](using/building-journeys/journeys-message.md)
     + [Action](using/building-journeys/journey-action.md)
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
