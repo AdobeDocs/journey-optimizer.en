@@ -397,10 +397,10 @@ solution: Journey Optimizer
     + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
     + [Create a LINE message](using/line/create-line.md)
     + [Check and send your LINE messages](using/line/send-line.md)
-  + Live activity {#live-activity}
-    + [Get started with Live activity](using/mobile-live/get-started-mobile-live.md)
+  + Live activities {#live-activity}
+    + [Get started with Live activities](using/mobile-live/get-started-mobile-live.md)
     + [Create a Live activity](using/mobile-live/create-mobile-live.md)
-    + [Troubleshoot Live activity](using/mobile-live/troubleshoot-mobile-live.md)
+    + [Troubleshoot Live activities](using/mobile-live/troubleshoot-mobile-live.md)
     + [FAQ](using/mobile-live/mobile-live-faq.md)
     + Configure Live activity channel {#configure}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
