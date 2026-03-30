@@ -114,7 +114,7 @@ All guardrails and limitations for the **Read Audience** activity (concurrency, 
 
 * As a best practice, use batch audiences in a **Read audience** activity for reliable and consistent counts. Read audience is designed for batch use cases. If your use case needs real-time data, use the [Audience qualification](audience-qualification-events.md) activity instead.
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
-* When using batch segments, ensure ingestion and daily snapshot updates complete well before the journey starts. Consider an additional wait period if segments must reflect data ingested the same day. If immediate profile freshness is critical, use an event-based or streaming approach, or add a **Wait** activity to allow updated data to propagate before evaluation.
+* For information about audience snapshot timing, batch segmentation completion windows, and how to ensure your journey always runs on the freshest data, see [Timing and data propagation](#timing-and-data-propagation). For recurring journeys, consider enabling the **[!UICONTROL Trigger after batch audience evaluation]** option to automatically delay execution until the latest audience snapshot is ready. [Learn more](#schedule).
 
 >[!CAUTION]
 >
