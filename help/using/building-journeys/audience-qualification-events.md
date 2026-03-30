@@ -122,7 +122,7 @@ See the [[!DNL Adobe Experience Platform] streaming segmentation documentation](
 
 When using streaming audiences with the **Audience Qualification** activity, not all profiles that qualify for the audience will necessarily enter the journey. This behavior can occur for the following reasons:
 
-* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter.
+* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter. Similarly, when a streaming segment uses a **time-based condition** (for example, "event in the next 8 hours"), profiles that already met that condition before the segment was created are **not retroactively evaluated** — only profiles whose data changes after segment activation are assessed against the condition.
 
 * **Journey activation time**: When you publish a journey, the **Audience Qualification** activity takes up to **10 minutes** to become active and start listening for profile entries and exits. [Learn more about journey activation](#configure-segment-qualification).
 
