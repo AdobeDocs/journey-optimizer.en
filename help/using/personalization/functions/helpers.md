@@ -313,11 +313,11 @@ This helper encrypts sensitive data and stores the result in a template variable
 
 You can apply the helper to one parameter, several, or all parameters in a link, depending on your URL design and length constraints.
 
-- **Input**: `dataPath` (data reference that must resolve to a string), `keyName` (encryption key identifier), `version` (optional key version), `result` (variable name for encrypted output)
-- **Output**: Makes the encrypted value available in the specified `result` variable.
-- **Result format**: The result variable contains a dot-separated string: `keyName.version.nonce.authTag.cipherText` (all segments except `keyName` and `version` are URL-safe Base64 encoded without padding).
-- **Static key requirements**: The `keyName` and `version` must be static string literals (dynamic references are not supported).
-- **Default version**: The `version` parameter is optional; if omitted, the encryption key service resolves the default version
+* **Input**: `dataPath` (data reference that must resolve to a string), `keyName` (encryption key identifier), `version` (optional key version), `result` (variable name for encrypted output)
+* **Output**: Makes the encrypted value available in the specified `result` variable.
+* **Result format**: The result variable contains a dot-separated string: `keyName.version.nonce.authTag.cipherText` (all segments except `keyName` and `version` are URL-safe Base64 encoded without padding).
+* **Static key requirements**: The `keyName` and `version` must be static string literals (dynamic references are not supported).
+* **Default version**: The `version` parameter is optional; if omitted, the encryption key service resolves the default version
 
 **Examples**
 
