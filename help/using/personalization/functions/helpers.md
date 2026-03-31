@@ -295,7 +295,7 @@ This helper allows you to protect sensitive profile data (PII) before including 
 
 **Prerequisite**
 
-An administrator must create at least one active key in the sandbox-level key registry. [Learn how to create and manage keys](../url-parameter-encryption.md)
+An administrator must create at least one active key in the sandbox-level key registry. [Learn how to create and manage keys](../url-parameter-encryption.md#create-keys)
 
 >[!NOTE]
 >
