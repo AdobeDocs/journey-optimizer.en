@@ -277,3 +277,48 @@ In this example, assuming `profile.person.name.firstName` = "Alex", the resultin
 }
 ```
 
+## URL parameter encryption {#url-parameter-encryption-helper}
+
+>[!AVAILABILITY]
+>
+>This feature is available in Limited Availability. Contact your Adobe representative to gain access.
+>
+>This capability is currently only available for the Email channel.
+
+The `EncryptParam` helper lets you encrypt any expression value at render time—commonly a profile attribute, a token, or even a stringified JSON structure you build in the expression—before it is written into a query parameter on tracking links or landing pages.
+
+Values that would appear as plain text in the URL (including PII or other sensitive data) are not readable when the link is inspected or forwarded. Only the values you wrap with this helper are encrypted; the rest of the URL is unchanged.
+
+You can apply the helper to one parameter, several, or all parameters in a link, depending on your URL design and length constraints.
+
+**Prerequisites**
+
+* URL parameter encryption must be enabled for your organization (Limited Availability). Contact your Adobe representative to gain access.
+* An administrator must create at least one active key in the sandbox-level key registry. [Learn how to create and manage keys](../url-parameter-encryption.md)
+
+**How it works**
+
+1. From the helper list, select the `EncryptParam` helper.
+
+1. Pass `data`: the value or expression to encrypt (for example `profile` fields, a variable, or a composed string token).
+
+1. Pass `key`: an active key identifier from your sandbox key registry.
+
+>[!NOTE]
+>
+>Using a revoked or otherwise non-active key should cause the personalization to fail at render time so a message is not sent with an invalid key.
+
+**Example**
+
+Suppose you define or compute a value (for example a variable `stringToken` that holds a JSON payload or concatenated identifiers) that must not appear as plain text in the `token` query parameter. A final URL can follow this pattern—replace `stringToken` with your expression and `encrypt-key` with an active key ID from the key registry:
+
+```text
+https://example.com/verify?token={{encrypt data=stringToken key="encrypt-key"}}
+```
+
+**Guardrails**
+
+Decryption is handled outside [!DNL Journey Optimizer] on your landing pages, apps, or APIs. Plan key lifecycle and rotation with your security team so historical payloads can still be decrypted where needed.
+
+Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
+
