@@ -32,6 +32,28 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 
 **Release date**: March 24-25, 2026
 
+<table>
+<thead>
+<tr>
+<th><strong>URL parameter encryption</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>URL parameters in tracking links and landing pages can now be encrypted, providing an additional layer of security for sensitive parameter data.</p>
+<ul>
+<li>Register and manage encryption keys in a dedicated <strong>Administration</strong> registry.</li>
+<li>Use the new encryption helper in expressions to encrypt sensitive data in tracking links and landing page URLs for the query parameters you want to protect at render time.</li>
+</ul>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a>.</p>
+<p>Availability date: March 31, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### New capabilities {#march-26-features}
 
 <table>
@@ -315,27 +337,6 @@ The features and improvements below are planned for release later in March/early
 <p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../content-management/image-to-html.md">Learn more</a></p>
 <p><img src="assets/do-not-localize/image-converter.gif"></p>
-<p>Availability date: March 31, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>URL parameter encryption</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>URL parameters in tracking links and landing pages can now be encrypted, providing an additional layer of security for sensitive parameter data.</p>
-<ul>
-<li>Register and manage encryption keys in a dedicated <strong>Administration</strong> registry.</li>
-<li>Use the new encryption helper in expressions to encrypt sensitive data in tracking links and landing page URLs for the query parameters you want to protect at render time.</li>
-</ul>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>Availability date: March 31, 2026</p>
 </td>
 </tr>
