@@ -47,7 +47,7 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <li>Use the new encryption helper in expressions to encrypt sensitive data in tracking links and landing page URLs for the query parameters you want to protect at render time.</li>
 </ul>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../personalization/url-parameter-encryption.md">detailed documentation</a>.</p>
 <p>Availability date: March 31, 2026</p>
 </td>
 </tr>
