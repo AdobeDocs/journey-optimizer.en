@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Encrypt URL parameters in tracking
+title: Encrypt URL parameters
 description: Learn how to encrypt sensitive URL query parameters so PII is not exposed in plain text on Journey Optimizer tracking links and landing pages.
 feature: Personalization
 topic: Personalization
@@ -11,7 +11,7 @@ badge: label="Limited availability" type="Informative"
 keywords: encryption, URL, tracking, landing page, key registry, personalization, security, privacy, sandbox
 exl-id: 82e2b6e4-769f-4bdc-b2e2-19352fbaec8e
 ---
-# Encrypt URL parameters in tracking {#url-parameter-encryption}
+# Encrypt URL parameters {#url-parameter-encryption}
 
 >[!AVAILABILITY]
 >
@@ -30,7 +30,7 @@ You encrypt only the query parameters you choose, using keys that administrators
 ### How it works {#how-it-works}
 
 * **Administrators** use the key registry to [create keys](#create-keys) and [manage keys](#manage-keys) in accordance with your organization's security policies.
-* **Marketers** insert the encryption helper in the personalization editor and pass the value to protect plus an active key identifier from the registry. For syntax and options, see [URL parameter encryption](functions/helpers.md#url-parameter-encryption-helper).
+* **Marketers** insert the `Encrypt` helper in the personalization editor and pass the value to protect plus an active key identifier from the registry. For syntax and options, see [this section](functions/helpers.md#url-parameter-encryption-helper).
 
 >[!IMPORTANT]
 >
