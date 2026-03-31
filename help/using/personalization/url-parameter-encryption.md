@@ -9,8 +9,8 @@ role: Admin
 level: Intermediate
 badge: label="Limited availability" type="Informative"
 keywords: encryption, URL, tracking, landing page, key registry, personalization, security, privacy, sandbox
+exl-id: 82e2b6e4-769f-4bdc-b2e2-19352fbaec8e
 ---
-
 # Encrypt URL parameters in tracking {#url-parameter-encryption}
 
 >[!AVAILABILITY]
@@ -90,6 +90,3 @@ To manage keys, follow the steps below.
     >[!NOTE]
     >
     >Only active keys should be selected to encrypt new values in the personalization editor. Do not use revoked keys for new content.
-
-
-
