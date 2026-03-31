@@ -109,7 +109,7 @@ When using the `inAudience` function in your journeys, be aware of the following
 
 When using `inAudience()` in a condition node, segment membership evaluation timing varies depending on where the condition appears in the journey:
 
-* **Before a Wait activity (or in a Read Audience journey):** AJO reads from the batch projection of the profile. Data freshness in this projection carries an SLT of up to **2 hours** after ingestion. Audiences that rely on day-based or time-based conditions may experience additional delay. Add a short [Wait activity](wait-activity.md) at the start of the journey, or allow buffer time to ensure the latest segment membership is reflected.
+* **Before a Wait activity (or in a Read Audience journey):** AJO reads from the batch projection of the profile. Data freshness in this projection carries an SLT of up to **2 hours** after ingestion. Audiences that rely on day-based or time-based conditions may experience additional delay. Add a short [Wait activity](../wait-activity.md) at the start of the journey, or allow buffer time to ensure the latest segment membership is reflected.
 * **After a Wait activity (or in a unitary event journey):** Segment membership is read from the streaming (unitary) projection. For expected latency, refer to the [Adobe Experience Platform streaming ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/streaming/overview){target="_blank"}. This path is generally more responsive to recent profile changes.
 
 ## Related topics
