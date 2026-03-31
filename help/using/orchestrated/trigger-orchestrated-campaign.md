@@ -21,6 +21,10 @@ End-to-end process to trigger an Orchestrated campaign using a signal:
 1. [Build and test the campaign](#build-and-test-the-campaign-build-and-test)
 1. [Publish and trigger the campaign](#publish-and-trigger-the-campaign-publish)
 
+>[!NOTE]
+>
+>To trigger an Orchestrated campaign using a signal, you need the **[!DNL Publish orchestrated campaigns]** permission (`orchestrated-campaign.publish`). See [Built-in permissions](../administration/ootb-permissions.md).
+
 ## Schedule the campaign to be triggered by a signal {#configure-signal}
 
 To set an orchestrated campaign to start on a signal instead of a schedule, follow these steps:
