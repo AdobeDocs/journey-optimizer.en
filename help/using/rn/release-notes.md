@@ -315,7 +315,7 @@ The features and improvements below are planned for release later in March/early
 <p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../content-management/image-to-html.md">Learn more</a></p>
 <p><img src="assets/do-not-localize/image-converter.gif"></p>
-<p>Availability date: March 30, 2026</p>
+<p>Availability date: March 31, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -352,7 +352,7 @@ The features and improvements below are planned for release later in March/early
 <tr>
 <td>
 <p><strong>Inbox</strong> is a mobile functionality, available with Content Cards, that enables customers to create a centralized location within their app or website to display messages sent to their users. This extends the lifetime of marketing communications by ensuring messages remain accessible even after they are dismissed.</p>
-<p>Availability date: March 31, 2026</p>
+<p>Availability date: April 1, 2026</p>
 </td>
 </tr>
 </tbody>
