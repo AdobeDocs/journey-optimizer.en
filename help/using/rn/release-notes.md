@@ -281,12 +281,19 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 
 Improvements coming with this release are listed below.
 
+#### Personalization
+
+* **Complete/base URL personalization** - You can personalize destination URLs using profile attributes (for example, for the domain or path). To enable this capability, provide Adobe with your list of accepted domains. [Read more](../personalization/personalization-build-expressions.md#where)
+
+  Previously released in Limited Availability for use in journeys, this capability is now available to all environments (General Availability).
+
+  Availability date: April 1, 2026
+
 #### Reporting
 
 * **Send-Time Optimization: updated controls location and new lift report** - Send-Time Optimization (STO) controls have been relocated to the Action configuration menu. Additionally, a new lift report is now available in Journeys reports to measure the impact of STO on your campaign performance metrics. [Read more](../reports/channel-report-cja.md#optimization-models)
   
   Availability date: March 27, 2026
-
 
 <!--
 
