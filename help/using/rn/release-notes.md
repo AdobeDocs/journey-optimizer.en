@@ -354,7 +354,7 @@ The features and improvements below are planned for release later in March/early
 <tr>
 <td>
 <p><strong>Inbox</strong> is a mobile functionality, available with Content Cards, that enables customers to create a centralized location within their app or website to display messages sent to their users. This extends the lifetime of marketing communications by ensuring messages remain accessible even after they are dismissed.</p>
-<p>Availability date: April 1, 2026</p>
+<p>Availability date: April 3, 2026</p>
 </td>
 </tr>
 </tbody>
