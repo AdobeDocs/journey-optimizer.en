@@ -21,7 +21,7 @@ Adobe Journey Optimizer enables brands to deliver connected, contextual, and per
 Journey Optimizer offers two orchestration approaches to meet different marketing needs:
 
 * **Journeys**: Best for real-time, one-to-one engagement where each customer moves through at their own pace, triggered by behavior or events
-* **Orchestrated Campaigns**: Best for batch, one-to-many campaigns where audiences progress together through multi-step workflows on a schedule—ideal for seasonal promotions, product launches, and account-based communications
+* **Orchestrated campaigns**: Best for batch, one-to-many campaigns where audiences progress together through multi-step workflows on a schedule—ideal for seasonal promotions, product launches, and account-based communications
 
 This unified experience allows you to implement entire use cases in one place, from defining audiences and designing journeys to creating personalized content and analyzing results. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
 

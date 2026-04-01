@@ -10,7 +10,7 @@ hidefromtoc: yes
 ---
 # Campaigns{#section-overview}
 
-Campaigns in Adobe Journey Optimizer empower you to deliver personalized, timely, and impactful messages across channels, helping you engage your audience more effectively. Whether you're planning a one-time promotional email, automating real-time transactional messages, or orchestrating complex multistep journeys, there's a campaign type tailored to your needs. This section introduces you to the three main campaign types: Action Campaigns, API Triggered Campaigns, and Orchestrated Campaigns, highlighting their unique strengths and use cases. You'll also learn about the essential building blocks like permissions, audience setup, and channel configurations, ensuring you have everything in place to create and manage campaigns that resonate with your customers.
+Campaigns in Adobe Journey Optimizer empower you to deliver personalized, timely, and impactful messages across channels, helping you engage your audience more effectively. Whether you're planning a one-time promotional email, automating real-time transactional messages, or orchestrating complex multistep journeys, there's a campaign type tailored to your needs. This section introduces you to the three main campaign types: Action campaigns, API Triggered Campaigns, and Orchestrated campaigns, highlighting their unique strengths and use cases. You'll also learn about the essential building blocks like permissions, audience setup, and channel configurations, ensuring you have everything in place to create and manage campaigns that resonate with your customers.
 
 ## Campaigns Overview
 
@@ -38,7 +38,7 @@ Discover how to access, manage, modify, or archive campaigns, and explore the ca
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
-Action Campaigns
+Action campaigns
 
 Step-by-step guidance to create, customize, and activate Action campaigns for batch communications.
 
@@ -58,7 +58,7 @@ Comprehensive guidance for developers on creating and managing real-time API-tri
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
-Orchestrated Campaigns
+Orchestrated campaigns
 
 Detailed instructions for designing, launching, and managing sophisticated multistep marketing campaigns.
 

@@ -146,9 +146,9 @@ solution: Journey Optimizer
     + [Schedule the campaign](using/campaigns/campaign-schedule.md)
     + [Send using waves](using/campaigns/send-using-waves.md)
     + [Review & activate an Action campaign](using/campaigns/review-activate-campaign.md)
-  + API triggered campaigns {#api-triggered-campaigns}
-    + [API triggered campaigns](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
-    + [Work with API triggered campaigns](using/campaigns/api-triggered-campaigns.md)
+  + API-triggered campaigns {#api-triggered-campaigns}
+    + [API-triggered campaigns](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
+    + [Work with API-triggered campaigns](using/campaigns/api-triggered-campaigns.md)
     + [Define the campaign properties](using/campaigns/api-triggered-campaign-properties.md)
     + [Configure the campaign action](using/campaigns/api-triggered-campaign-action.md)
     + [Edit the campaign content](using/campaigns/api-triggered-campaign-content.md)
@@ -156,7 +156,7 @@ solution: Journey Optimizer
     + [Schedule the campaign](using/campaigns/api-triggered-campaign-schedule.md)
     + [Review & activate the campaign](using/campaigns/review-activate-api-triggered-campaign.md)
     + [Trigger the campaign execution](using/campaigns/trigger-campaigns.md)
-    + [Activate High throughput mode for API triggered campaigns](using/campaigns/api-triggered-high-throughput.md)
+    + [Activate High throughput mode for API-triggered campaigns](using/campaigns/api-triggered-high-throughput.md)
   + Orchestrated campaigns {#orchestrated-campaigns}
     + [Orchestrated campaigns](/help/rp_landing_pages/orchestrated-campaigns-landing-page.md)
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)

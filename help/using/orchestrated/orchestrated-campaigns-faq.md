@@ -67,7 +67,7 @@ To access Campaign Orchestration, your license must include either the **Journey
 * **Orchestrated campaigns**: Best for **batch, one-to-many** campaigns. Audiences progress in bulk, on a schedule.  
 * **Journeys**: Best for **real-time, one-to-one** engagement. Each customer moves through the journey at their own pace, triggered by behavior or events.  
 
-**Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated Campaigns for planned, calendar-based initiatives.
+**Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated campaigns for planned, calendar-based initiatives.
 
 **Learn more**
 
