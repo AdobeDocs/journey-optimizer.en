@@ -24,7 +24,7 @@ To access the default text version, select the **[!UICONTROL Plain text]** icon 
 
 ![](assets/text_version_3.png)
 
-## Use a custom text version {#plain-text-default-custom}
+## Use a custom text version {#plain-text-custom}
 
 If you prefer using a different content for the plain text version, follow the steps below:
 
