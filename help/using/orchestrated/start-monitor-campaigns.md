@@ -44,7 +44,7 @@ The **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolba
 
 You can also quickly identify failed activities using the [visual status indicators](#activities) displayed directly on each activity. For detailed troubleshooting, open the [campaign's logs](#logs-tasks), which provide in-depth information about the error and its context.
 
-If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities](activities/channels.md)
+If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities and simulate content](activities/channels.md#simulate-content-test-profiles).
 
 Once validated, the campaign can be published.
 

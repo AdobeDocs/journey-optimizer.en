@@ -161,11 +161,17 @@ When you access the personalization editor from an Orchestrated campaign, two ma
 
 For a detailed overview of how to use the personalization editor, refer to [Get started with personalization](../../personalization/personalize.md).
 
-### Check and test your content
+### Check and test your content {#simulate-content-test-profiles}
 
 Once the content is created, use the **[!UICONTROL Simulate Content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
 
 ![image showing the Simulate Content button](../assets/channel-simulate.png)
+
+When you simulate content with **test profiles** in an Orchestrated campaign, two important constraints apply:
+
+* **Execution must have reached the channel activity in test** - Run the campaign in test using the **[!UICONTROL Start]** button so the workflow reaches the channel activity you want to simulate. In test mode, the workflow pauses at the channel activity, so a channel activity that comes after another channel activity is never reached. You cannot use **[!UICONTROL Simulate Content]** for those downstream channel activities. See [Test your campaign before publishing](../start-monitor-campaigns.md#test).
+
+* **The test profile must match the channel activity target** - Use a test profile that belongs to the audience targeted by that channel activity. If the profile is not in that audience, selecting it will not render a preview of your content. See [Select test profiles](../../content-management/test-profiles.md).
 
 ## Confirm message sending
 
