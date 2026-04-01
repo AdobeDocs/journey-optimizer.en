@@ -32,6 +32,8 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 
 **Release date**: March 24-25, 2026
 
+### New capabilities {#march-26-features}
+
 <table>
 <thead>
 <tr>
@@ -73,9 +75,6 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 </tr>
 </tbody>
 </table>
-
-### New capabilities {#march-26-features}
-
 <table>
 <thead>
 <tr>
