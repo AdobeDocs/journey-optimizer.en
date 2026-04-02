@@ -70,11 +70,15 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_2.png)
 
-1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM CF selector]**.
+1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM Content advisor]**.
 
-    ![](assets/aem_campaign_3.png)
+    ![](assets/cf-variation-1.png)
 
-1. Select a **[!UICONTROL Content Fragment]** from the available list to import into your Journey Optimizer content. 
+1. Browse the list and select a **[!UICONTROL Content Fragment]** to import into your Journey Optimizer content.
+
+    >[!NOTE]
+    >
+    > If the fragment has one or more **published** variations, a **[!UICONTROL Variation]** dropdown appears in the selector. If no **[!UICONTROL Variation]** is selected, the **Main** variation is used automatically. Learn more in [Working with Content Fragment variations](#aem-variations).
 
 1. Click **[!UICONTROL Show filters]** to fine tune your Content Fragments list. 
 
@@ -82,7 +86,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_4.png)
 
-1. After selecting your **[!UICONTROL Content Fragment]**, click **[!UICONTROL Select]** to open it.
+1. After selecting your **[!UICONTROL Content Fragment]**, click **[!UICONTROL Select]** to add it.
 
     ![](assets/aem_campaign_5.png)
 
@@ -125,9 +129,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     In Journey Optimizer, those tokens are placeholders. With the **pills** experience on, they appear in the **[!UICONTROL AEM Content Fragment]** section of the right rail alongside fragment fields.
 
-1. To enable real-time personalization, all placeholders used within a **[!UICONTROL Content fragment]** must be explicitly declared by the user as parameters in the fragment helper tag. You can map these placeholders to profile attributes, contextual attributes, static strings, or predefined variables using the following methods:
-
-    You can map these placeholders using the following methods:
+1. To enable real-time personalization, all placeholders used within a **[!UICONTROL Content fragment]** must be explicitly declared by the user as parameters in the fragment helper tag. Map those placeholders to profile attributes, contextual attributes, static strings, or predefined variables as follows:
 
     1. **Profile or Contextual Attribute Mapping**: Assign the placeholder to a profile or contextual attribute, e.g. name = profile.person.name.firstName.
 
@@ -144,9 +146,57 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_9.png){zoomable="yes"}
 
-
 1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
+
+    Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM Content advisor]**.
 
 Once you have performed your tests and validated the content, you can [send your campaign](../campaigns/review-activate-campaign.md) or [publish your journey](../building-journeys/publishing-the-journey.md) to your audience.
 
 Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references){target="_blank"}. 
+
+## Working with Content Fragment variations {#aem-variations}
+
+In Adobe Experience Manager, each Content Fragment is made up of the following:
+
+* **Main**: the core content of the fragment which always exists, cannot be deleted, and is the basis for all variations.
+* **Variations**: one or more permutations of **Main** that authors create for specific channels or scenarios. Variations live inside the fragment not as separate assets and can be compared and synchronized with **Main**.
+
+➡️ [Learn more in Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/content-fragments/content-fragments-variations)
+
+Examples of variation use cases:
+
+* A short version of copy for a push notification and a longer version for email.
+* Regional tone adjustments without creating a separate fragment.
+* Channel-specific messaging (for example web compared to mobile).
+
+Journey Optimizer lets you choose which variation to use when you insert a fragment, so different campaigns or journeys can rely on different renditions of the same source content in Adobe Experience Manager without duplicating fragments.
+
+To select a variation:
+
+1. Open a [campaign](../campaigns/create-campaign.md) or [journey](../building-journeys/journey-gs.md). 
+
+1. Click ![Personalization icon](assets/do-not-localize/Smock_PersonalizationField_18_N.svg) in any text field, or open the HTML source from an HTML content component.
+
+1. From **[!UICONTROL AEM Content Fragment]**, click **[!UICONTROL Open AEM Content advisor]**.
+
+    ![](assets/cf-variation-1.png)
+
+1. If needed, click **[!UICONTROL Customize table]** option to add columns, for example **[!UICONTROL Language]**, so fragments that include variations are easier to spot in the list.
+
+    ![](assets/cf-variation-2.png)
+
+1. Select your **[!UICONTROL Content Fragment]**.
+
+1. Click the ![information icon](assets/do-not-localize/info-icon.svg) to open **[!UICONTROL Details]** menu. If the fragment has one or more published variations, a **[!UICONTROL Variation]** dropdown appears next to the fragment details.
+
+    ![](assets/cf-variation-4.png)
+
+1. From the **[!UICONTROL Quick details]** menu, click **[!UICONTROL Explore references]** to open related options in Adobe Experience Manager for variation details, preview, and proof when available.
+
+1. Chooseyoure variation, then click **[!UICONTROL Select]**.
+
+    >[!NOTE]
+    >
+    > If you do not select a variation, or if the fragment was added before variation support was available, Journey Optimizer uses the **Main** variation automatically at delivery time.
+
+After you insert a fragment with a variation, republishing it in Adobe Experience Manager updates every **referenced variation** in active campaigns or journeys automatically. Previews and proofs still use the variation you chose, with the latest published content for that variation.

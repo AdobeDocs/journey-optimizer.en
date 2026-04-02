@@ -14,12 +14,11 @@ level: Beginner
 Keep the following in mind when using Content Fragments from [!DNL Adobe Experience Manager] in [!DNL Journey Optimizer]:
 
 * **Content fragment types**
-    * Simple Content Fragments and nested Content Fragments are supported.
-    * Content Fragment variations are not supported.
+    * Simple Content Fragments, nested Content Fragments, and **Content Fragment variations** are supported. Choose the variation when you insert the fragment in [!DNL Journey Optimizer]. If you do not select a variation, the **Main** variation (the fragment's primary content in [!DNL Adobe Experience Manager]) is used.
 
 * **Multilingual content**
-    * Only a manual flow is supported: each language variant must be authored, tagged, and published in [!DNL Adobe Experience Manager], then selected separately in [!DNL Journey Optimizer].
-    * There is no automatic language resolution or fallback.
+    * Each variation must be authored, tagged, and published in [!DNL Adobe Experience Manager]. In [!DNL Journey Optimizer], select the fragment variation that matches each message language or locale.
+    * There is no automatic language resolution or fallback between variations.
 
 * **Repository access**
     * [!DNL Journey Optimizer] integrates with the [!DNL Adobe Experience Manager] **Publish** tier only (Sites, Content Fragments). Content Fragments are available through a public, unauthenticated endpoint.
@@ -35,11 +34,12 @@ Keep the following in mind when using Content Fragments from [!DNL Adobe Experie
 
 * **Updates and versioning**
     * Updates require manual republication from [!DNL Adobe Experience Manager]. There is no automatic version reconciliation.
+    * When a Content Fragment is published or republished in [!DNL Adobe Experience Manager], [!DNL Journey Optimizer] updates that fragment and refreshes **all variations of that fragment that are referenced** in active campaigns or journeys.
     * The [!DNL Adobe Experience Manager] [publish action](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/manage-publication) can be delayed. When it completes, [!DNL Journey Optimizer] receives an event and refreshes the content.
     * After a successful update, changes are typically available within about **5 minutes** for unitary journeys and in the **next batch** for batch use cases.
 
 * **Caching and proofing**
-    * When a fragment is first added to a campaign or journey, [!DNL Journey Optimizer] caches it. If you select a fragment that was already used elsewhere through **[!UICONTROL Open AEM CF selector]**, it is loaded from the [!DNL Journey Optimizer] cache.
+    * When a fragment is first added to a campaign or journey, [!DNL Journey Optimizer] caches it. If you select a fragment that was already used elsewhere through **[!UICONTROL Open AEM Content advisor]**, it is loaded from the [!DNL Journey Optimizer] cache.
     * After you republish a modified fragment in [!DNL Adobe Experience Manager], [!DNL Journey Optimizer] listens for the event and updates the cache.
     * Proofs always reflect the **most recently published** version; you cannot lock a historical version for proofing.
 
