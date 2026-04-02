@@ -47,12 +47,6 @@ Legacy native channel activities are also preserved in these cases:
 ## Add a built-in channel action to a journey  {#add-action}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_action_auto_wait"
->title="About the automatic wait node"
->abstract="A **Wait** node is automatically inserted after this inbound action. It is set to 3 days by default, ensuring profiles remain in the journey long enough to view the message or experience. You can update the wait duration or remove this node if your use case requires it."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
-
->[!CONTEXTUALHELP]
 >id="ajo_journey_action_optimization"
 >title="Optimization"
 >abstract="Add optimization to your channel action to run content experiments, apply targeting rules, or combine both experimentation and targeting. These options allow you to test variants and deliver the most effective content to each audience member."
@@ -66,11 +60,6 @@ Legacy native channel activities are also preserved in these cases:
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/multilingual/multilingual-gs" text="Get started with multilingual content"
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
->[!CONTEXTUALHELP]
->id="ajo_journey_action_timeout"
->title="Timeout or error"
->abstract="Enable this option to add an alternative path in the journey when the action times out or returns an error. This ensures that profiles continue through a fallback path rather than stopping at this step."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 To add a built-in channel action to your journey using the **[!UICONTROL Action]** activity, follow the steps below.
 
