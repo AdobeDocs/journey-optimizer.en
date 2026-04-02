@@ -27,11 +27,11 @@ Because of this model, release notes are updated between monthly releases. For f
 
 #### Integrations
 
-* **AEM Content Fragment context in the Personalization Editor** - When you work with an Adobe Experience Manager Content Fragment in a message, that fragment stays active as you move between text fields and content blocks, so you can add more fragment fields without reopening **Open AEM Content advisor** each time. [Read more](../integrations/aem-fragments.md)
+* **Adobe Experience Manager Content Fragment context while authoring** - Your Content Fragment selection stays active as you move between text fields and content blocks, so you can add more fragment fields without reopening **Open AEM Content advisor** each time. [Read more](../integrations/aem-fragments.md)
 
   Availability date: April 1, 2026
 
-* **AEM Content Fragment locales and variations** - You can select **Content Fragment variations** (for example language or channel variants) when inserting Adobe Experience Manager Content Fragments, with improved handling for locale and multilingual scenarios. [Read more](../integrations/aem-fragments.md#aem-variations)
+* **Adobe Experience Manager variations** - You can select **Content Fragment variations** (for example language or channel variants) when inserting Adobe Experience Manager Content Fragments, with improved handling for locale and multilingual scenarios. [Read more](../integrations/aem-fragments.md#aem-variations)
 
   Availability date: April 1, 2026
 
