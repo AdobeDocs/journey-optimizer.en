@@ -19,6 +19,12 @@ exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
 
 ## Add an email action {#email-action}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_email"
+>title="Email action"
+>abstract="Configure an email channel action for your journey. Add a label to identify the activity, then click **Configure action** to select the email configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules, the **Multilingual** section to deliver content in multiple languages, and the **Timeout or error** section to add an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** action to a journey or a campaign. Then follow the steps below, according to your case.
 
 >[!BEGINTABS]

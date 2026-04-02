@@ -9,6 +9,12 @@ exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
 ---
 # Create code-based experiences {#create-code-based}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_code_based"
+>title="Code-based experience action"
+>abstract="Configure a code-based experience inbound action for your journey. Add a label to identify the activity, then click **Configure action** to select the code-based configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default) to ensure profiles have time to view the experience."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 In [!DNL Journey Optimizer], you can create code-based experiences in a journey or a campaign.
 
 ## Add a code-based experience through a journey or a campaign {#create-code-based-experience}

@@ -43,6 +43,12 @@ The following call-to-action option is available for your WhatsApp messages:
 
 ## Add a WhatsApp message {#create-whatsapp-journey-campaign}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_whatsapp"
+>title="WhatsApp action"
+>abstract="Configure a WhatsApp channel action for your journey. Add a label to identify the activity, then click **Configure action** to select the WhatsApp configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules, the **Multilingual** section to deliver content in multiple languages, and the **Timeout or error** section to add an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 Browse the tabs below to learn how to add a WhatsApp message in a campaign or a journey.
 
 >[!BEGINTABS]

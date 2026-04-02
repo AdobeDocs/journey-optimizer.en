@@ -9,6 +9,12 @@ exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
 ---
 # Create content cards {#create-content-card}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_content_card"
+>title="Content Card action"
+>abstract="Configure a content card inbound action for your journey. Add a label to identify the activity, then click **Configure action** to select the content card configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default) to ensure profiles have time to view the content card."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 >[!IMPORTANT]
 >
 >By default, the close button hides the card. To add more functionality, you can manually define dismissal or disqualification rules.

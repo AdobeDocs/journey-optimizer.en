@@ -26,6 +26,12 @@ In accordance with the industry standards and regulations, all SMS/MMS marketing
 
 ## Add a text message {#create-sms-journey-campaign}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_sms"
+>title="SMS action"
+>abstract="Configure an SMS or MMS channel action for your journey. Add a label to identify the activity, then click **Configure action** to select the SMS configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules, the **Multilingual** section to deliver content in multiple languages, and the **Timeout or error** section to add an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 Browse the tabs below to learn how to add a text message (SMS/MMS/RCS) in a campaign or a journey.
 
 >[!BEGINTABS]

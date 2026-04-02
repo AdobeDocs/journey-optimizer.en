@@ -10,6 +10,12 @@ exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
 ---
 # Create web experiences {#create-web}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_web"
+>title="Web action"
+>abstract="Configure a web experience inbound action for your journey. Add a label to identify the activity, then click **Configure action** to select the web configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default) to ensure profiles have time to view the web experience."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 [!DNL Journey Optimizer] allows you to personalize the web experience you deliver to your customers through inbound journeys or campaigns.
 
 ## Define a web experience through a journey or a campaign {#create-web-experience}

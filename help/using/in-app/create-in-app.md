@@ -15,6 +15,12 @@ exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
 >title="Manage In-app Triggers"
 >abstract="Efficiently control your Triggers by selecting the specific events and criteria that will activate your messages. With the Rule builder, users can define precise conditions and values. When these conditions are met, they initiate a series of actions, including the delivery of in-app messages."
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_in_app"
+>title="In-app message action"
+>abstract="Configure an in-app message inbound action for your journey. Add a label to identify the activity, then click **Configure action** to select the in-app configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default) to ensure profiles have time to view the in-app message."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 You can add an In-app message in a campaign or in a journey. Follow the steps detailed below to create an In-app message in both contexts.
 
 Note that In-app messages are not impacted by the user's choice to opt-in or opt-out of push notifications at the operating system.

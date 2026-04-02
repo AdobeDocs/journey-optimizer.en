@@ -111,8 +111,8 @@ Example: If a profile qualifies for a "silver customer" audience at journey star
 ## Automatic wait node  {#auto-wait-node}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_auto_wait_node "
+>id="ajo_journey_auto_wait_node"
 >title="About the automatic wait node"
->abstract="A **Wait** activity is automatically added after this activity. It is set for 3 days. You can remove it or configure it as needed."
+>abstract="A **Wait** node is automatically inserted after this inbound action. It is set to 3 days by default, ensuring profiles remain in the journey long enough to view the message or experience. You can update the wait duration or remove this node if your use case requires it."
 
 Each inbound experience activity (In-app message, Code-based experience, or Card) comes with a 3-days **Wait** activity. As inbound messages automatically end when a profile reach out the end of the journey, we assume that you want your users to see it at least for 3 days. You can remove this **Wait** activity, or change its configuration if needed.

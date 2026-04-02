@@ -13,6 +13,12 @@ exl-id: a93d4dc9-f0e9-400c-b9a4-6cdac84390fd
 
 ## Add a LINE message {#create-line-journey-campaign}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_line"
+>title="LINE action"
+>abstract="Configure a LINE channel action for your journey. Add a label to identify the activity, then click **Configure action** to select the LINE configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules, the **Multilingual** section to deliver content in multiple languages, and the **Timeout or error** section to add an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 Browse the tabs below to learn how to add a LINE message in a campaign or a journey.
 
 >[!BEGINTABS]

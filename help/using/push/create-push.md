@@ -12,6 +12,13 @@ exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
 # Create a push notification {#create-push-notification}
 
 >[!CONTEXTUALHELP]
+>id="ajo_journey_action_push"
+>title="Push notification action"
+>abstract="Configure a push notification channel action for your journey. Add a label to identify the activity, then click **Configure action** to select the push configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules, the **Multilingual** section to deliver content in multiple languages, and the **Timeout or error** section to add an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
+
+>[!CONTEXTUALHELP]
 >id="ajo_message_push"
 >title="Push message creation"
 >abstract="Add your push message and start personalizing it with the personalization editor."
