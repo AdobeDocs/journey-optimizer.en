@@ -29,7 +29,7 @@ Simply copy-paste the code block below into the decision policy code. Replace `v
 
 ```
 {% let variable =  get(item._experience.decisioning.offeritem.contentReferencesMap, "placement").id %}
-{{fragment id = variable}}
+{{fragment id = variable required=false}}
 ```
 
 >[!TAB Follow the detailed steps]
@@ -58,38 +58,11 @@ The fragment ID and reference key will be selected from the decision item's **[!
 >
 >If the fragment key is incorrect or if the fragment content is not valid, rendering may fail and cause an error in the Edge call.
 >
->To avoid failures when a fragment is temporarily unavailable, set `required=false` so the fragment is skipped instead. [Learn more](#optional-fragments).
-
-## Make a fragment optional {#optional-fragments}
-
-When journeys or campaigns reference fragments attached to decision items, there can be short synchronization delays before updated fragments are available on Edge. To avoid failures when a fragment is temporarily unavailable, <!--fragments ar enow optional by default-->you can make fragments optional so that they are skipped instead of causing the journey or campaign to fail.
-
-<!--By default, fragments are now marked as optional through the `required` flag. This means that if the fragment is temporarily unavailable on Edge, it is skipped instead of causing the journey or campaign to fail. If the fragment is available, it renders normally.-->
-
-To make a fragment optional in the [personalization editor](../personalization/personalize.md), use the `required` flag on the fragment:
-
-* **`required=false`** (optional fragment): If the fragment is available, it renders normally. If it is temporarily unavailable on Edge, it is skipped, the journey or campaign continues rendering other content, and no rendering error is returned.
-* **`required=true`** or omitted (default): The fragment is treated as mandatory. A missing or invalid fragment may cause journey or campaign rendering to fail.
-
-**Example:**
-
-```
-{{#each decisionPolicy.13e1d23d-b8a7-4f71-a32e-d833c51361e0.items as |item|}}
-{% let fragmentId = get(item._experience.decisioning.offeritem.contentReferencesMap, "placement1").id %}
-{{fragment id = fragmentId required=false}}
-{{/each}}
-```
-
-If your decision policy qualifies for two offers and each has a fragment—for example, "20% off" and "30% off"—and the second fragment is temporarily unavailable, with `required=false` the system renders the available offer (20% off) and skips the other fragment (30% off) instead of failing the journey or campaign. This improves reliability when content is still synchronizing.
-
-<!--
->[!NOTE]
->
->You can still mark a fragment as mandatory by using the `required` flag. Be aware that a missing or invalid fragment may cause journey or campaign rendering to fail.-->
+>To avoid failures when a fragment is temporarily unavailable, the `required=false` flag is used so the fragment is skipped instead. [Learn more](#temporary-unavailable-fragments)
 
 ## Guardrails when using fragments {#fragments-guardrails}
 
-**Decision item and context attributes**
+### Decision item and context attributes {#context-attributes}
 
 Decision item attributes and contextal attribute are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
 
@@ -110,7 +83,7 @@ Let's say you want to use the *sport* variable in your fragment.
     {{/each}}
     ```
 
-**Decision item fragment content validation**
+### Decision item fragment content validation {#fragment-content-validation}
 
 * Due to the dynamic nature of these fragments, when used in a campaign, the message validation during the campaign content creation is skipped for fragments that are referenced in decision items.
 
@@ -119,3 +92,19 @@ Let's say you want to use the *sport* variable in your fragment.
 * For JSON-type expression fragments, the content is syntactically validated upon saving the fragment. Validation errors are displayed as alerts.
 
 At runtime, the campaign content (including fragment content from decision items) is validated. In case of a validation failure, the campaign will not get rendered.
+
+### Temporarily unavailable fragments are skipped {#temporary-unavailable-fragments}
+
+When journeys or campaigns reference fragments attached to decision items, there can be short synchronization delays before updated fragments are available on Edge.
+
+To avoid failures when a fragment is temporarily unavailable, fragments now have the `required` flag set to `false` by default so that they are skipped instead of causing the journey or campaign to fail.
+
+This means that if the fragment is temporarily unavailable on Edge, it is simply ignored. If the fragment is available, it renders normally.
+
+**Example**
+
+If your decision policy qualifies for two offers and each has a fragment—for example, "20% off" and "30% off"—and the second fragment is temporarily unavailable, with `required=false` the system renders the available offer (20% off) and skips the other fragment (30% off) instead of failing the journey or campaign. This improves reliability when content is still synchronizing.
+
+>[!NOTE]
+>
+>You can still mark a fragment as mandatory by setting the `required` flag to `true`. However, if a fragment is temporarily missing, it may cause journey or campaign rendering to fail.
