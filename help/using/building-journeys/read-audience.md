@@ -64,7 +64,7 @@ You will set: **Audience** (mandatory), **Namespace** (mandatory), **Reading rat
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_namespace"
 >title="Namespace"
->abstract="Choose which identity (e.g. email, ECID) is used to identify individuals entering the journey. Pick the top option in the list for best compatibility with Business Rules and Capping."
+>abstract="Choose which identity (e.g. email, ECID) is used to identify individuals entering the journey. By default, the field is pre-filled with the last used namespace."
 
 1. Unfold the **[!UICONTROL Orchestration]** category and drop a **[!UICONTROL Read Audience]** activity into your canvas.
 
