@@ -13,7 +13,7 @@ If your decision policy contains decision items including fragments, you can lev
 
 >[!AVAILABILITY]
 >
->This capability is currently only available for the **Code-based experience** channel.
+>This feature is available in Limited Availability for the **Code-based experience** and **Email** channels. To request access, contact your Adobe representative.
 
 For example, let's say you want to display different contents for several mobile device models. Make sure you added fragments corresponding to those devices to the decision item that you are using in the decision policy. [Learn how](items.md#attributes).
 

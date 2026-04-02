@@ -42,23 +42,11 @@ Start by defining the decision item's standard and custom attributes :
     
 1. The **Tags** field allows you to assign Adobe Experience Platform Unified Tags to your decision items. This allows you to easily classify them and improve search. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
 
-1. Use fragments to add multiple contents to the decision item - for example, if you want to display different contents for several mobile device models. [Learn more on fragments](../content-management/fragments.md)
+1. Use [fragments](../content-management/fragments.md) to add multiple contents to the decision item - for example, if you want to display different contents for several mobile device models. You can then leverage these fragments in your decision policies. [Learn how](fragments-decision-policies.md)
 
     >[!AVAILABILITY]
     >
-    >This capability is currently only available for the Code-based experience channel.
-
-    In the **[!UICONTROL Fragments]** section, select the published fragments you want to use and assign them a reference key. You can then leverage these fragments in you decision policies. [Learn how](fragments-decision-policies.md)
-
-    ![](assets/item-fragments.png){width=70%}
-
-    You can only select published fragments and add up to six fragments in a decision item.
-
-    >[!WARNING]
-    >
-    >Currently only [expression fragments](../personalization/use-expression-fragments.md) are supported.
-    >
-    >Nested fragments (fragments referencing other fragments) cannot be used. The decision item's [approval](#approve) will fail if you add such a fragment.
+    >This feature is available in Limited Availability for the **Code-based experience** and **Email** channels. To request access, contact your Adobe representative.
 
     When using these fragments in your decision policies, you can make a fragment optional so that it is skipped if temporarily unavailable on Edge. [Learn how](fragments-decision-policies.md#optional-fragments)
 

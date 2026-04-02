@@ -241,12 +241,14 @@ Improvements coming with this release are listed below.
 * **Decisioning preview in Code-based Experience channel** - You can now preview decision items when configuring Decisioning with the Code-based Experience channel. Preview is available directly in the authoring interface before going live. [Read more](../code-based/test-code-based.md#preview-code-based)
 
   Availability date: February 18, 2026
+  
+<!--THIS WAS FINALLY NOT RELEASED IN FEBRUARY
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies. [Read more](../experience-decisioning/fragments-decision-policies.md)
 
   Previously released in Limited Availability, this capability is now available to all environments (General Availability).
 
-  Availability date: February 12, 2026.
+  Availability date: February 12, 2026.-->
 
 #### Personalization
 
