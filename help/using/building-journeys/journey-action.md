@@ -51,14 +51,13 @@ Legacy native channel activities are also preserved in these cases:
 >title="Optimization"
 >abstract="Add optimization to your channel action to run content experiments, apply targeting rules, or combine both experimentation and targeting. These options allow you to test variants and deliver the most effective content to each audience member."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment" text="Get started with content experiments"
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_multilingual"
 >title="Multilingual"
 >abstract="Add multilingual settings to deliver your channel action content in multiple languages within a single journey. Select a language settings configuration to define the supported locales and the default language for this action."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/multilingual/multilingual-gs" text="Get started with multilingual content"
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 
 To add a built-in channel action to your journey using the **[!UICONTROL Action]** activity, follow the steps below.
