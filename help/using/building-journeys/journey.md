@@ -11,7 +11,14 @@ exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
 ---
 
-# Get started with journeys{#jo-general-principle}
+# Get started with journeys {#jo-general-principle}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_canvas"
+>title="Create a journey"
+>abstract="Use the drag-and-drop canvas to orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs" text="Create your first journey"
+
 
 [!DNL Adobe Journey Optimizer] empowers you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
 
