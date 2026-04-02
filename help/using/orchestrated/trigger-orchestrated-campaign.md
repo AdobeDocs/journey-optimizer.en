@@ -14,6 +14,8 @@ exl-id: d1fd072d-b143-4752-822f-23f98684ba80
 
 You can trigger an Orchestrated campaign by sending it a signal instead of running it on a schedule. The signal is sent via an API call from an external system or application. When using a signal, you can pass parameters. They are then made available in the orchestrated campaign as event variables in the execution context — for use in targeting, conditions, or expressions.
 
+For the full REST specification of the trigger endpoint (paths, headers, body, responses, and errors), see [Trigger Orchestrated campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} in the Adobe Journey Optimizer API documentation.
+
 End-to-end process to trigger an Orchestrated campaign using a signal:
 
 1. [Schedule the campaign to be triggered by a signal](#set-an-orchestrated-campaign-to-wait-for-a-signal-configure-signal)
@@ -96,7 +98,7 @@ Build your campaign on the canvas, then optionally test it in draft by triggerin
 
 1. Click **[!UICONTROL Start]** to start the campaign.
 
-1. Send the trigger API call using the sample request you have copied from the scheduler. <!--For the complete API reference, refer to the [Journey Optimizer API documentation](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}.-->
+1. Send the trigger API call using the sample request you have copied from the scheduler. See [Trigger Orchestrated campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} for request and response details.
 
 When you are satisfied with the test results, [publish the campaign](#publish).
 
@@ -112,7 +114,7 @@ After you have [built and tested the campaign](#build-and-test), publish the cam
 
    ![Copy API request in schedule configuration](assets/triggered-oc-copy.png)
 
-1. Call the trigger API from your system.
+1. Call the trigger API from your system. Refer to [Trigger Orchestrated campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} for the live endpoint specification.
 
    >[!IMPORTANT]
    >
