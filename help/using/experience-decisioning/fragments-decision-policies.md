@@ -60,7 +60,7 @@ The fragment ID and reference key will be selected from the decision item's **[!
 >
 >To avoid failures when a fragment is temporarily unavailable, the `required=false` flag is used so the fragment is skipped instead. [Learn more](#temporary-unavailable-fragments)
 
-## Guardrails when using fragments {#fragments-guardrails}
+## Usage and guardrails {#fragments-guardrails}
 
 ### Decision item and context attributes {#context-attributes}
 
