@@ -16,7 +16,7 @@ version: Journey Orchestration
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties"
 >title="Journey properties"
->abstract="This section shows the journey properties. By default, read-only parameters are hidden. Available settings depend on the status of the journey, your permissions and product configuration."
+>abstract="Configure global settings for this journey, including name, tags, entrance rules, time zone, dates, timeout, and conflict management. Read-only parameters are hidden by default. Available options vary based on journey status, your permissions, and product configuration."
 
 ## Access the properties of a journey {#access-properties}
 
@@ -286,13 +286,18 @@ Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global ti
   </tr>
 </table>
 
-## Merge policies {#merge-policies}
+## Merge policy {#merge-policies}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_merge_policy"
+>title="Merge policy"
+>abstract="The merge policy is automatically retrieved based on your selected event or audience. This merge policy is used in through entire journey."
 
 [!DNL Adobe Journey Optimizer] uses merge policies while retrieving profile data from [!DNL Adobe Experience Platform]. Depending on the journey type, different merge policies are used:
 
-* In Read audience or audience qualification journeys: the merge policy from the audience is used
-* In Unitary event journeys: the default merge policy is used
-* In Business event journeys: the merge policy from the targeted audience in the following Read audience activity is used
+* In **[Read audience](read-audience.md)** or **[Audience qualification](audience-qualification-events.md)** journeys: the merge policy from the audience is used
+* In **[Unitary event](../event/about-events.md)** journeys: the default merge policy is used
+* In **[Business event](../event/about-creating-business.md)** journeys: the merge policy from the targeted audience in the following Read audience activity is used
 
 [!DNL Adobe Journey Optimizer] applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalization, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalization.
 
