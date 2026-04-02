@@ -62,7 +62,9 @@ The fragment ID and reference key will be selected from the decision item's **[!
 
 ## Make a fragment optional {#optional-fragments}
 
-When journeys or campaigns reference fragments attached to decision items, there can be short synchronization delays before updated fragments are available on Edge. To avoid failures when a fragment is temporarily unavailable, you can make fragments optional so that they are skipped instead of causing the journey or campaign to fail.
+When journeys or campaigns reference fragments attached to decision items, there can be short synchronization delays before updated fragments are available on Edge. To avoid failures when a fragment is temporarily unavailable, <!--fragments ar enow optional by default-->you can make fragments optional so that they are skipped instead of causing the journey or campaign to fail.
+
+<!--By default, fragments are now marked as optional through the `required` flag. This means that if the fragment is temporarily unavailable on Edge, it is skipped instead of causing the journey or campaign to fail. If the fragment is available, it renders normally.-->
 
 To make a fragment optional in the [personalization editor](../personalization/personalize.md), use the `required` flag on the fragment:
 
@@ -72,11 +74,18 @@ To make a fragment optional in the [personalization editor](../personalization/p
 **Example:**
 
 ```
+{{#each decisionPolicy.13e1d23d-b8a7-4f71-a32e-d833c51361e0.items as |item|}}
 {% let fragmentId = get(item._experience.decisioning.offeritem.contentReferencesMap, "placement1").id %}
-{fragment id = fragmentId required=false}
+{{fragment id = fragmentId required=false}}
+{{/each}}
 ```
 
 If your decision policy qualifies for two offers and each has a fragment—for example, "20% off" and "30% off"—and the second fragment is temporarily unavailable, with `required=false` the system renders the available offer (20% off) and skips the other fragment (30% off) instead of failing the journey or campaign. This improves reliability when content is still synchronizing.
+
+<!--
+>[!NOTE]
+>
+>You can still mark a fragment as mandatory by using the `required` flag. Be aware that a missing or invalid fragment may cause journey or campaign rendering to fail.-->
 
 ## Guardrails when using fragments {#fragments-guardrails}
 
