@@ -57,7 +57,7 @@ Legacy native channel activities are also preserved in these cases:
 >id="ajo_journey_action_multilingual"
 >title="Multilingual"
 >abstract="Add multilingual settings to deliver your channel action content in multiple languages within a single journey. Select a language settings configuration to define the supported locales and the default language for this action."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/multilingual/multilingual-gs" text="Get started with multilingual content"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-multilingual/multilingual-gs" text="Get started with multilingual content"
 
 
 To add a built-in channel action to your journey using the **[!UICONTROL Action]** activity, follow the steps below.
