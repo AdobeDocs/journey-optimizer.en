@@ -84,7 +84,7 @@ To do this, follow the steps below.
 
 1. Go to **[!UICONTROL Data management]** > **[!UICONTROL Schemas]** > **[!UICONTROL Browse]** and select **[!UICONTROL AJO Secondary Recipient Feedback Event Schema]**.
 
-    ![](assets/preset-bcc-schema.png)
+    ![](assets/preset-bcc-schema.png){width="95%"}
 
 1. Click to expand **[!UICONTROL _experience]**, **[!UICONTROL customerJourneyManagment]** then **[!UICONTROL secondaryRecipientDetail]**.
 
@@ -96,7 +96,7 @@ To do this, follow the steps below.
 
 1. Select a namespace from the drop-down list.
 
-    ![](assets/preset-bcc-schema-identity.png)
+    ![](assets/preset-bcc-schema-identity.png){width="85%"}
 
 1. Click **[!UICONTROL Apply]**.
 
@@ -110,11 +110,11 @@ Reporting as such on BCC is not available in the journey and message reports. Ho
 
 To access this dataset through the user interface, select **[!UICONTROL Data management]** > **[!UICONTROL Datasets]** > **[!UICONTROL Browse]**. Learn more about how to access datasets in [this section](../data/get-started-datasets.md#access-datasets).
 
-<!--![](assets/preset-bcc-dataset.png)-->
+![](assets/preset-bcc-dataset.png){width="85%"}
 
 To run queries against this dataset, you can use the Query Editor provided by the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"}. To access it, select **[!UICONTROL Data management]** > **[!UICONTROL Queries]** and click **[!UICONTROL Create query]**. [Learn more](../data/get-started-queries.md)
 
-![](assets/preset-bcc-queries.png)
+![](assets/preset-bcc-queries.png){width="100%"}
 
 Depending on what information you are looking for, you can run the following queries.
 
@@ -139,7 +139,7 @@ Depending on what information you are looking for, you can run the following que
     >
     >To get the `<journey version id>`parameter, select the corresponding journey version from the **[!UICONTROL Journey management]** > **[!UICONTROL Journeys]** menu. The journey version ID is displayed at the end of the URL displayed in your web browser. [Learn more about journey versions](../building-journeys/publish-journey.md#journey-versions)
     >
-    >![](assets/preset-bcc-action-id.png)
+    >![](assets/preset-bcc-action-id.png){width="85%"}
 
 1. Run this query to fetch all message feedback events (especially feedback status) generated for a particular message targeted to a specific user within the last 2 days:
 

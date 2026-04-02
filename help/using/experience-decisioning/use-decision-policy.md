@@ -17,7 +17,7 @@ Once you've added a decision policy to your content, you can use attributes from
 >
 >Decision policies are available to all customers for the **Code-based Experience**, **SMS**, and **Push notification** channels.
 >
->Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
+>Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Insert the decision policy code {#insert}
 
@@ -120,7 +120,7 @@ To add an attribute, click the **`+`** icon next to the attribute. You can add a
 
 ## Preview & test your content
 
-After building your content, preview and test it before activating your journey or campaign. Decision items render based on selected profiles in the simulation interface. [Learn how to preview and test content](../content-management/preview-test.md).  
+After building your content, preview and test it before activating your journey or campaign. Decision items render based on selected profiles in the simulation interface. [Learn how to preview and test content](../content-management/preview-test.md).
 
 ## Next steps {#final-steps}
 
@@ -130,10 +130,6 @@ Once your content is ready, review and publish your campaign or journey:
 * [Review and activate a campaign](../campaigns/review-activate-campaign.md)
 
 For code-based experiences, as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.
-
->[!NOTE]
->
->You currently can't simulate decision-based content for [Code-based experience](../code-based/create-code-based.md) campaigns or journeys. A workaround is available [here](../code-based/code-based-decisioning-implementations.md).
 
 ## Use reporting dashboards
 

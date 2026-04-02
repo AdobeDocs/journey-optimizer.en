@@ -448,8 +448,11 @@ Helpers are detailed on [this page](helpers.md).
     <tr>
         <td><a href="helpers.md#let">Let</a></td><td>This function allows an expression to be stored as a variable to be used later in a query</td>
     </tr>
-   <tr>
+    <tr>
         <td><a href="helpers.md#unless">Unless</a></td><td>This function is used to define a conditional block - if the expression evaluation returns false, the block is rendered</td>
+    </tr>
+    <tr>
+        <td><a href="helpers.md#url-parameter-encryption-helper">Encrypt</a></td><td>Encrypts expression values for URL query parameters at render time using an active key from the sandbox registry </td>
     </tr>
     <tr>
         <td><a href="helpers.md#with">With</a></td><td>This function is used to change the evaluation token of template-part</td>

@@ -478,6 +478,29 @@ Output: `sun`, `mon`, `tue`, etc.
 
 +++
 
++++Formatting a timestamp from a context event
+
+When using a timestamp from a journey event context attribute, two requirements apply:
+
+* **Wrap the timestamp with `toDateTime()`** — context event timestamps are not automatically recognized as date-time values by `formatDate()`.
+* **Wrap numeric event IDs in backticks** — if your event ID is a number (for example, `1697323153`), it must be escaped with backticks in the expression path, otherwise the editor raises a PQL syntax error.
+* **Use `{% let %}` assignment syntax** — inline `{%= %}` syntax does not support this pattern. Assign the result to a variable first, then render it with `{{varName}}`.
+
+```handlebars
+{% let appointmentDate = formatDate(toDateTime(context.journey.events.`1697323153`.timestamp), "dd/MM/yyyy HH:mm") %}
+{{appointmentDate}}
+```
+
+Output (example): `18/03/2026 14:30`
+
++++
+
+>[!CAUTION]
+>
+>**Common error: "mismatched input '(' expecting \<EOF\>"**
+>
+>This PQL syntax error occurs when using `formatDate()` with a context event timestamp inline (`{%= formatDate(...) %}`). The most common causes are a numeric event ID that is not wrapped in backticks (`` ` ``), or a timestamp field passed directly to `formatDate()` without first wrapping it in `toDateTime()`. To fix both issues, use the `{% let %}` assignment pattern shown in the example above.
+
 ### Pattern characters {#pattern-characters}
 
 Some pattern letters may look similar but represent different concepts.

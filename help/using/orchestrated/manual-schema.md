@@ -108,7 +108,7 @@ After creating and saving attributes, you can link the schema with other relatio
 
 ## Link schemas {#link-schema}
 
-Creating a relationship between two schemas lets you enhance Orchestrated Campaigns with data beyond the primary profile schema.
+Creating a relationship between two schemas lets you enhance Orchestrated campaigns with data beyond the primary profile schema.
 
 1. From your newly created schema, select the attribute you want to use as the link and click **[!UICONTROL Add relationship]**.
 
@@ -126,7 +126,7 @@ Creating a relationship between two schemas lets you enhance Orchestrated Campai
 
 ## Create a dataset for the schema {#dataset}
 
-After defining your schema, you can now create a dataset based on it. The dataset stores your ingested data and must be enabled for Orchestrated Campaigns to be accessible.
+After defining your schema, you can now create a dataset based on it. The dataset stores your ingested data and must be enabled for Orchestrated campaigns to be accessible.
 
 1. Navigate to the **[!UICONTROL Data Management]** > **[!UICONTROL Datasets]** menu and click **[!UICONTROL Create dataset]**.
 
@@ -140,23 +140,23 @@ After defining your schema, you can now create a dataset based on it. The datase
 
 1. Enter a **[!UICONTROL Name]** for your **[!UICONTROL Dataset]** and click **[!UICONTROL Finish]**.
 
-You now need to enable your Dataset for Orchestrated Campaigns.
+You now need to enable your Dataset for Orchestrated campaigns.
 
-## Enable Dataset for Orchestrated Campaigns {#enable}
+## Enable Dataset for Orchestrated campaigns {#enable}
 
 >[!CONTEXTUALHELP]
 >id="ajo_oc_enable_dataset_for_oc"
->title="Orchestrated Campaigns"
->abstract="After creating your dataset, you need to explicitly enable it for Orchestrated Campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer." 
+>title="Orchestrated campaigns"
+>abstract="After creating your dataset, you need to explicitly enable it for Orchestrated campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer." 
 
 
-After creating your dataset, you need to explicitly enable it for Orchestrated Campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer.
+After creating your dataset, you need to explicitly enable it for Orchestrated campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer.
 
 Refer to [Adobe Developer documentation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset/#tag/DatasetEnablement) to validate or enable Orchestrated Campaign Extension on Dataset.
 
 1. Locate your dataset in the **[!UICONTROL Datasets]** list.
 
-1. From the **[!UICONTROL Datasets]** settings, enable the **Orchestrated Campaigns** option to mark the dataset available for use in your Orchestrated Campaigns.
+1. From the **[!UICONTROL Datasets]** settings, enable the **Orchestrated campaigns** option to mark the dataset available for use in your Orchestrated campaigns.
 
     ![](assets/schema_manual_7.png){zoomable="yes"}
 

@@ -52,7 +52,7 @@ Journey Optimizer provides pre-configured alert rules that monitor specific aspe
 
 Navigate to **[!UICONTROL Administration]** > **[!UICONTROL Alerts]** in the left menu. The **Browse** tab displays all pre-configured alerts available for Journey Optimizer.
 
-![](assets/updated-alerts-list.png){width=50%}
+![](assets/updated-alerts-list.png){width=60%}
 
 ### Alert categories
 
@@ -78,7 +78,7 @@ Detect issues with email deliverability setup:
 
 * [AJO Domain DNS record missing](#alert-dns-record-missing) – Identifies missing or misconfigured DNS records
 * [AJO channel configuration failure](#alert-channel-config-failure) – Detects email configuration issues (SPF, DKIM, MX records)
-<!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
+* [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal-unsuccessful) – Warns when Resource or Tracking certificates on a custom delegation subdomain are expiring soon or have expired
 
 >[!ENDTABS]
 
@@ -310,7 +310,7 @@ If the changes do not resolve the issue, the same alert will be triggered again 
 
 This alert is triggered in case the system audit detects email channel configuration issues. These issues may include misconfigured channel settings, invalid DNS configuration, suppression list issue, IP inconsistency, or any other errors that can impact email delivery.
 
-If you receive such an alert, the resolution steps are listed below:
+If you receive such an alert, the resolution steps are listed below.
 
 1. Click the alert to be directed to the impacted [email channel configuration](../email/get-started-email-config.md) in the [!DNL Journey Optimizer] interface.
 
@@ -343,9 +343,29 @@ When resolving email configuration issues, keep in mind the best practices liste
 * Act promptly - Address configuration failures as soon as they are detected to avoid disruptions in email delivery.
 * Check all configurations - If the alert indicates multiple impacted email configurations, review and fix each of them.
 
-<!--### AJO domain certificates renewal unsuccessful {#alert-certificates-renewal}
+### AJO domain certificates renewal unsuccessful {#alert-certificates-renewal-unsuccessful}
 
-This alert warns you if a domain certificate (CDN, tracking URL) renewal failed for a specific Journey Optimizer subdomain.-->
+>[!IMPORTANT]
+>
+>This alert applies only to channel configurations using the [custom subdomain](../configuration/delegate-custom-subdomain.md) delegation type. 
+
+This alert notifies you when a Resource or Tracking domain certificate on a custom delegation subdomain is expiring within 30 days or has already expired. Without valid certificates, email deliverability and link tracking may be disrupted.
+
+>[!NOTE]
+>
+>The check runs **weekly**.
+
+If this alert is triggered, follow the steps below to investigate and resolve the issue.
+
+1. Click the alert to open the impacted [subdomain](../configuration/delegate-subdomain.md) in [!DNL Journey Optimizer].
+
+1. Review the details to see whether certificate renewal is needed.
+
+   * If the expiry date is in the future, plan remediation—the alert can provide up to 30 days of warning.
+   * If the certificate has already expired, take immediate action.
+   * If the issue is not resolved, the same alert is triggered again the following week.
+
+1. In your DNS hosting solution, verify that all records required for the subdomain delegation still match the values shown in [!DNL Journey Optimizer], including records used for SSL validation.
 
 ## Manage alerts {#manage-alerts}
 

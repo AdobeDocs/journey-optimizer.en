@@ -345,6 +345,8 @@ When migrating from Decision management to Decisioning, entities are mapped as f
 | Campaign | Campaign *(basic content only)* |
 | Placement | Surface + Channel configuration |
 | Tag | Unified tag |
+| Offer attributes | `migratedofferattributes` field in the Personalized offer item schema |
+| Context attributes | `migratedcontextattributes` field in the schema attached to the dataset provided during migration |
 
 ## Workflow cleanup {#cleanup}
 

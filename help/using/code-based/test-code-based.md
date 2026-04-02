@@ -32,10 +32,11 @@ To display a preview of your modified code-based experience, follow the steps be
 
 Detailed information on how to select test profiles and preview your content is available in [this section](../content-management/preview.md).
 
+When your code-based experience uses [Experience Decisioning](../experience-decisioning/gs-experience-decisioning.md), you can preview the decision items that will be delivered: select one or more test profiles in **[!UICONTROL Simulate content]** and the preview displays the decision items that qualify for each profile.
+
 >[!NOTE]
 >
->Currently you cannot simulate content from the user interface in a code-based experience campaign or journey using [Decisioning](../experience-decisioning/gs-experience-decisioning.md). A workaround is available in [this section](../experience-decisioning/create-decision.md#test-and-publish).
-
+>This preview is **content preview** only: it shows which decision items qualify for the selected test profile and how authored content renders. **Context data** sent in live Edge requests (for example, data used in decision criteria or referenced in your client implementation) is not simulated in **[!UICONTROL Simulate content]** preview.
 
 ## Preview on device {#preview-on-device}
 

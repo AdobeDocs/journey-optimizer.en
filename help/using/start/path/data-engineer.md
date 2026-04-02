@@ -16,6 +16,10 @@ As a **Data Architect** or **Data Engineer**, you set up and maintain the custom
 >
 >Learn more about **data ingestion** in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
+>[!TIP]
+>
+>New to data in Journey Optimizer? Start with the [Get started with data management](../../data/gs-data.md) overview to understand schemas, datasets, identities, the profile fragment model, and the full data readiness checklist before diving into configuration.
+
 ## Essential data configuration steps
 
 Follow these steps to set up the data foundation for Journey Optimizer:
