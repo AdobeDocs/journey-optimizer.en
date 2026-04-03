@@ -5,6 +5,7 @@ feature: Email Design
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
+exl-id: 0c2f95ce-28a0-480c-9829-b7e4975b6340
 ---
 # Optimize email text for AI inboxes {#email-text-optimizer}
 
