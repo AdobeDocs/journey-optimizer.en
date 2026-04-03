@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: AI Assistant for personalization expressions
-description: Learn how to use AI Assistant in the Journey Optimizer personalization editor to create, refine, and explain personalization expressions from natural language.
+title: Generate personalization with AI
+description: Learn how to generate personalization with AI in the Journey Optimizer Personalization Editor—create, refine, and explain expressions from natural language with AI Assistant.
 feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Intermediate
 mini-toc-levels: 1
 ---
-# AI Assistant for personalization expressions {#generative-personalization-expressions}
+# Generate personalization with AI {#generative-personalization-expressions}
 
 >[!IMPORTANT]
 >
@@ -18,15 +18,15 @@ mini-toc-levels: 1
 >
 >You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
-**AI Assistant for personalization expressions** helps you generate, edit, and understand personalization scripts in the **[!UICONTROL Personalization Editor]** using natural language. It reduces friction with syntax and schema discovery, supports multi-turn clarification, and shows **[!UICONTROL Reasoning]** so you can see how a suggestion was built before you insert it.
+In the [!UICONTROL Personalization Editor], [!UICONTROL AI Assistant] helps you work in natural language: you can draft or adjust personalization expressions, ask for changes to a selection, or get a concise explanation of existing code. The assistant supports multi-turn clarification and shows [!UICONTROL Reasoning] so you can review how a suggestion was built before you insert it, with less friction around syntax and schema discovery.
 
-Use it together with manual authoring and the expression reference—see [Add personalization](../personalization/personalization-build-expressions.md) and [Personalization syntax](../personalization/personalization-syntax.md).
+For more information on personalization in [!DNL Journey Optimizer], see [Get started with personalization](../personalization/personalize.md).
 
 For org-level AI access and agreements, see [Get started with AI Assistant](gs-generative.md). For prompt ideas, see [AI prompt best practices](ai-assistant-prompting-guide.md).
 
 ## Where it is available {#where-available}
 
-AI Assistant for personalization expressions is available **inside the Personalization Editor** (for example subject line, body, and other fields where the editor opens). It applies to authoring flows where Journey Optimizer uses the editor, such as **campaigns**, **API-triggered campaigns**, and **journeys**, across **native channels** that support the editor.
+You use [!UICONTROL AI Assistant] in the [!UICONTROL Personalization Editor] wherever that editor is available—for example in the subject line, body, and other fields that open it. It applies to authoring flows where Journey Optimizer uses the editor, such as **campaigns**, **API-triggered campaigns**, and **journeys**, across **native channels** that support the editor.
 
 Depending on your release, language support may start with **English** only; additional languages may follow.
 
