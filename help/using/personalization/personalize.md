@@ -25,9 +25,13 @@ Using the **personalization editor**, you can select, arrange, customize and val
 
 Journey Optimizer employs an inline personalization syntax based on Handlebars which allows you to create expressions with contents enclosed by double curly braces **`{{}}`**.
 
-When processing the message, Journey Optimizer replaces the expression with the data contained in the Experience Platform dataset. For example, `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` dynamically becomes `Hello John Doe`.
+When processing the message, Journey Optimizer replaces the expression with the data contained in the Experience Platform dataset. For example, `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` dynamically becomes `Hello John Doe`. Using this syntax, you can personalize messages across multiple fields, including email subject lines, message bodies, push notifications, or URLs.
 
-Using this syntax, you can personalize messages across multiple fields, including email subject lines, message bodies, push notifications, or URLs. 
+## Generate personalization expressions with AI {#ai-personalization-expressions}
+
+In the **[!UICONTROL Personalization Editor]**, **[!UICONTROL AI Assistant]** helps you create, edit, and understand personalization expressions from natural language. You can ask for new logic, refine a selection, or get a short explanation of existing code, then review **[!UICONTROL Reasoning]** and insert the suggestion when it matches your intent. Availability and language support depend on your organization and release.
+
+➡️ [Learn how to generate personalization expressions with AI](../content-management/generative-personalization-expressions.md)
 
 ## Data used for personalization
 
