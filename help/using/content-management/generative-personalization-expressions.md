@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Generate personalization with AI
-description: Learn how to generate personalization with AI in the Journey Optimizer Personalization Editor—create, refine, and explain expressions from natural language with AI Assistant.
+title: AI Assistant for Personalization Expressions
+description: Learn how to use AI Assistant in the Journey Optimizer Personalization Editor to generate new expressions from natural language, explain or fix existing code, and refine selections.
 feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Intermediate
 mini-toc-levels: 1
 ---
-# Generate personalization with AI {#generative-personalization-expressions}
+# AI Assistant for Personalization Expressions{#generative-personalization-expressions}
 
 >[!IMPORTANT]
 >
@@ -18,65 +18,54 @@ mini-toc-levels: 1
 >
 >You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
 
-In the [!UICONTROL Personalization Editor], [!UICONTROL AI Assistant] helps you work in natural language: you can draft or adjust personalization expressions, ask for changes to a selection, or get a concise explanation of existing code. The assistant supports multi-turn clarification and shows [!UICONTROL Reasoning] so you can review how a suggestion was built before you insert it, with less friction around syntax and schema discovery.
+## Overview {#where-available}
 
-For more information on personalization in [!DNL Journey Optimizer], see [Get started with personalization](../personalization/personalize.md).
+In the [!UICONTROL Personalization Editor], [!UICONTROL AI Assistant] helps you generate new personalization from plain language, explain what existing expressions do, and fix issues in selected code, so that you spend less time on syntax and manual field discovery. You can also iterate on a selection or ask for other changes in conversation.
 
-For org-level AI access and agreements, see [Get started with AI Assistant](gs-generative.md). For prompt ideas, see [AI prompt best practices](ai-assistant-prompting-guide.md).
+* For broader AI Assistant setup and languages, see [Get started with AI Assistant](gs-generative.md).
+* For more information on personalization in [!DNL Journey Optimizer], see [Get started with personalization](../personalization/personalize.md).
+* For prompt ideas, see [AI prompt best practices](ai-assistant-prompting-guide.md).
 
-## Where it is available {#where-available}
+You use [!UICONTROL AI Assistant] in the [!UICONTROL Personalization Editor] wherever that editor is available — for example in the subject line, body, and other fields that open it. For where and how to open the editor, see [Add personalization](../personalization/personalization-build-expressions.md#where).
 
-You use [!UICONTROL AI Assistant] in the [!UICONTROL Personalization Editor] wherever that editor is available—for example in the subject line, body, and other fields that open it. It applies to authoring flows where Journey Optimizer uses the editor, such as **campaigns**, **API-triggered campaigns**, and **journeys**, across **native channels** that support the editor.
+Depending on your campaign or journey context and release, the assistant can work with data and constructs the [!UICONTROL Personalization Editor] already exposes — for example **profile** attributes, **segment** membership, **journey** and **system** context, **helper** functions, and related personalization sources.
 
-Depending on your release, language support may start with **English** only; additional languages may follow.
+## Generate personalization expressions {#generate}
 
-## Open the assistant {#access-configure}
+These steps cover generating personalization expressions from scratch. To work with code already in the editor, see [Edit, fix or explain existing code](#edit-existing).
 
-1. In your message or content, use **[!UICONTROL Add personalization]** (or equivalent) to open the **[!UICONTROL Personalization Editor]**.
+1. In your message or content open the **[!UICONTROL Personalization Editor]** and click the **[!UICONTROL AI Assistant]** button.
 
-1. Open **[!UICONTROL AI Assistant]** from the editor to use the assistant in context with your expression work.
+    ![](assets/ai-perso-access.png)
 
-1. Optional: Switch between the assistant and **raw code** view when you need to edit the script directly. Returning to the assistant typically keeps your working context until you close the editor, depending on your session.
+1. In the text field, describe the personalization expression you want in plain language — for example which profile attributes, segments, or logic you need, then click **[!UICONTROL Generate]**.
 
-    ![Personalization editor with AI Assistant available for expressions](assets/perso-expressions-genai-1.png){zoomable="yes"}
+    You can also use ready-to-use prompts from the **[!UICONTROL Quick Prompts]** section. Example: Personalized Greeting, Generate Promo Code.
 
-## Describe what you need {#generate-content}
+    ![](assets/ai-perso-generate.png)
 
-1. In the **[!UICONTROL Prompt]** field, describe the personalization you want in plain language—for example which profile attributes, segments, or logic you need.
+1. You can keep discussing with the assistant in a multi-turn conversation: it keeps context from your prompts so you can refine the same expression step by step. To start over, click the **[!UICONTROL New session]**.
 
-1. Use **multi-turn** conversation when the assistant asks clarifying questions (for example to disambiguate fields or confirm test values).
+    ![](assets/ai-perso-question.png)
 
-1. Review **[!UICONTROL Reasoning]** to see how the assistant built the logic and which variables or functions it used. Attributes you cannot access (per field-level access controls) are not exposed in reasoning or in the suggested code, consistent with the editor.
+1. To implement the output in your personalization expression, click **[!UICONTROL Apply]**. You can also copy the output and paste it where you need it using the ![Copy icon](../orchestrated/assets/do-not-localize/activity-copy.svg) icon.
 
-1. If several schema fields match your request, pick from the suggested options when the assistant lists **variable disambiguation** choices.
+## Edit, fix or explain existing code {#edit-existing}
 
-1. When the suggestion is ready, use **[!UICONTROL Insert]** or **[!UICONTROL Replace]** (or equivalent) to place code in the editor—**append** or **replace** the current selection depending on what you choose.
-
-1. You can **cancel** an in-progress generation when the UI provides that option.
-
-## Edit or explain existing code {#edit-existing}
+You can select an existing personalization expression and use AI Assistant to fix personalization issues, explain what the code does, or ask for other changes.
 
 1. Select existing personalization code in the editor.
 
-1. Use **[!UICONTROL Edit with AI]** (or equivalent) so the assistant uses your selection as context.
+1. Right-click the selection and choose **[!UICONTROL Edit with AI Assistant]** so the assistant uses your selection as context.
 
-1. Ask the assistant to **refactor**, **simplify**, or **explain** the snippet. Explanations help you validate logic written by you or by the assistant.
+    ![](assets/ai-perso-right-click.png)
 
-## Validate before send {#refine-finalize}
+1. **[!UICONTROL AI Assistant]** opens. In **[!UICONTROL Quick Commands]**, click **[!UICONTROL Explain]** or **[!UICONTROL Fix]**, or use the text field to ask for other changes and start a conversation.
 
-1. Always validate outputs with the editor and **simulation / proofing** flows before production sends. [Learn more about personalization](../personalization/personalize.md).
+    ![](assets/ai-perso-edit.png)
 
-1. The assistant may suggest code that still requires review for your audience, brand, and compliance rules.
+1. When you use **[!UICONTROL Fix]**, click **[!UICONTROL Show fix details]** in the discussion to show an explanation of the fix and a line-by-line before and after preview.
 
-1. For advanced helpers and edge cases, continue to rely on [Personalization syntax](../personalization/personalization-syntax.md) and [Add personalization](../personalization/personalization-build-expressions.md).
+    ![](assets/ai-perso-fix.png)
 
->[!NOTE]
->
->Capabilities such as integrations, saved expressions, or offer decisioning may not be in scope for every release. If a request is not supported, the assistant should indicate that limitation.
-
-## See also {#see-also}
-
-* [Get started with AI Assistant](gs-generative.md)
-* [Generate text with AI](generative-text.md)
-* [Generate images with AI](generative-image.md)
-* [Add personalization](../personalization/personalization-build-expressions.md)
+1. As when you generate a personalization expression, click **[!UICONTROL Apply]** to implement the assistant output in your expression. For example, if you asked for an explanation of the code, applying can add comments in the expression that describe what it does.

@@ -16,8 +16,6 @@ Personalization in [!DNL Journey Optimizer] is based on the templating syntax ca
 
 It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions.
 
-If you prefer to describe what you need in plain language, use **[!UICONTROL AI Assistant]** in the personalization editor to propose or adjust expressions, then review and finalize them against this syntax. [Learn how to generate personalization with AI](../content-management/generative-personalization-expressions.md).
-
 Simple expression sample:
 
 `{{profile.person.name}}`
