@@ -23,6 +23,27 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ## April '26 updates {#april-26-rn}
 
+### New capabilities {#april-26-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Optimize email text for AI inboxes</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now includes a new capability that ensures your emails are optimally structured for AI-powered inboxes such as Apple Intelligence and Google Gemini in Gmail.</p>
+<p>As AI assistants increasingly control how recipients read and act on email, this feature helps you author content that performs well across downstream AI tasks including summarization, triage, prioritization, and intent extraction.</p>
+<p><img src="assets/do-not-localize/text-optimizer.gif"></p>
+<p>For more information, refer to the <a href="../content-management/llm-email-optimizer.md">detailed documentation</a>.</p>
+<p>Availability date: April 3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#april-26-improv}
 
 #### Adobe Experience Manager Integrations
@@ -47,25 +68,6 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 **Release date**: March 24-25, 2026
 
 ### New capabilities {#march-26-features}
-
-<table>
-<thead>
-<tr>
-<th><strong>Optimize email text for AI inboxes</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer now includes a new capability that ensures your emails are optimally structured for AI-powered inboxes such as Apple Intelligence and Google Gemini in Gmail.</p>
-<p>As AI assistants increasingly control how recipients read and act on email, this feature helps you author content that performs well across downstream AI tasks including summarization, triage, prioritization, and intent extraction.</p>
-<p><img src="assets/do-not-localize/text-optimizer.gif"></p>
-<p>For more information, refer to the <a href="../content-management/llm-email-optimizer.md">detailed documentation</a>.</p>
-<p>Availability date: April 3, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -394,7 +396,7 @@ The features and improvements below are planned for release later in March/early
 <tr>
 <td>
 <p><strong>Inbox</strong> is a mobile functionality, available with Content Cards, that enables customers to create a centralized location within their app or website to display messages sent to their users. This extends the lifetime of marketing communications by ensuring messages remain accessible even after they are dismissed.</p>
-<p>Availability date: April 3, 2026</p>
+<p>Availability date: April 7, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -415,7 +417,7 @@ This tool allows you to test and vary, and customize communications, sequencing,
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../building-journeys/optimize.md">Learn more</a></p>
 <p><img src="assets/do-not-localize/optimize.gif"></p>
 <p>As part of the General Availability, this release introduces <strong>experiment type</strong> selection (A/B or multi-armed bandit) and <strong>Scale the winner</strong> for unitary journeys.</p>
-<p>Availability date: April 3, 2026</p>
+<p>Availability date: April 7, 2026</p>
 </td>
 </tr>
 </tbody>
