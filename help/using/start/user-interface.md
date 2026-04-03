@@ -332,3 +332,28 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_channels_feedback_webhook_settings_header_parameters"
 >title="Header Parameters"
 >abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_incrementalquery"
+>title="Incremental query"
+>abstract="The Incremental query is a Targeting activity that runs a database query every time the Orchestrated campaign runs. It returns only new records and excludes anyone already included in a previous run, so you avoid re-targeting the same people or re-exporting the same rows."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_incrementalquery_processeddata"
+>title="Processed data"
+>abstract="Under Processed data, choose how to exclude records from earlier runs. With Exclude results of previous execution, the activity keeps a list of records returned in prior runs; each run excludes those and returns only new ones. With the Use a date field option, the activity uses a selected date field instead of tracking individual IDs, and each run returns only rows whose date is after the last execution."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_incrementalquery_history"
+>title="History in days"
+>abstract="This setting controls how long that list is retained. A value of 0 means indefinite retention; no records are removed."
+
+>[!CONTEXTUALHELP]
+>id="ajo_inbox_location"
+>title="Location on page"
+>abstract="."
+
+>[!CONTEXTUALHELP]
+>id="ajo_inbox_app_id"
+>title="App ID"
+>abstract="."

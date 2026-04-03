@@ -86,7 +86,6 @@ solution: Journey Optimizer
     + [Wait](using/building-journeys/wait-activity.md)
     + [Content decision](using/building-journeys/content-decision.md)
     + [Dataset lookup](using/building-journeys/dataset-lookup.md)
-    + [Built-in channel actions](using/building-journeys/journeys-message.md)
     + [Action](using/building-journeys/journey-action.md)
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
@@ -147,9 +146,9 @@ solution: Journey Optimizer
     + [Schedule the campaign](using/campaigns/campaign-schedule.md)
     + [Send using waves](using/campaigns/send-using-waves.md)
     + [Review & activate an Action campaign](using/campaigns/review-activate-campaign.md)
-  + API triggered campaigns {#api-triggered-campaigns}
-    + [API triggered campaigns](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
-    + [Work with API triggered campaigns](using/campaigns/api-triggered-campaigns.md)
+  + API-triggered campaigns {#api-triggered-campaigns}
+    + [API-triggered campaigns](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
+    + [Work with API-triggered campaigns](using/campaigns/api-triggered-campaigns.md)
     + [Define the campaign properties](using/campaigns/api-triggered-campaign-properties.md)
     + [Configure the campaign action](using/campaigns/api-triggered-campaign-action.md)
     + [Edit the campaign content](using/campaigns/api-triggered-campaign-content.md)
@@ -157,7 +156,7 @@ solution: Journey Optimizer
     + [Schedule the campaign](using/campaigns/api-triggered-campaign-schedule.md)
     + [Review & activate the campaign](using/campaigns/review-activate-api-triggered-campaign.md)
     + [Trigger the campaign execution](using/campaigns/trigger-campaigns.md)
-    + [Activate High throughput mode for API triggered campaigns](using/campaigns/api-triggered-high-throughput.md)
+    + [Activate High throughput mode for API-triggered campaigns](using/campaigns/api-triggered-high-throughput.md)
   + Orchestrated campaigns {#orchestrated-campaigns}
     + [Orchestrated campaigns](/help/rp_landing_pages/orchestrated-campaigns-landing-page.md)
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
@@ -208,6 +207,8 @@ solution: Journey Optimizer
       + [Send wishlist item updates](using/orchestrated/wishlist-uc.md)
       + [Engage customers by browsing activity](using/orchestrated/engage-customers-uc.md)
       + [Notify users about product availability](using/orchestrated/product-availability-uc.md)
+    + Advanced operations {#orchestrated-advanced}
+      + [Trigger Orchestrated campaigns using a signal](using/orchestrated/trigger-orchestrated-campaign.md)
 + Conflict & prioritization {#conflict-prioritization}
   + [Conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
   + [Identify potential conflicts](using/conflict-prioritization/conflicts.md)
@@ -396,10 +397,10 @@ solution: Journey Optimizer
     + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
     + [Create a LINE message](using/line/create-line.md)
     + [Check and send your LINE messages](using/line/send-line.md)
-  + Live activity {#live-activity}
-    + [Get started with Live activity](using/mobile-live/get-started-mobile-live.md)
+  + Live activities {#live-activity}
+    + [Get started with Live activities](using/mobile-live/get-started-mobile-live.md)
     + [Create a Live activity](using/mobile-live/create-mobile-live.md)
-    + [Troubleshoot Live activity](using/mobile-live/troubleshoot-mobile-live.md)
+    + [Troubleshoot Live activities](using/mobile-live/troubleshoot-mobile-live.md)
     + [FAQ](using/mobile-live/mobile-live-faq.md)
     + Configure Live activity channel {#configure}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
@@ -413,7 +414,9 @@ solution: Journey Optimizer
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Iterate over contextual data](using/personalization/iterate-contextual-data.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md)
-    + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
+    + Use Adobe Experience Platform data for personalization {#aep-data-perso}
+      + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
+      + [Encrypt URL parameters in tracking links](using/personalization/url-parameter-encryption.md)
     + Helper functions list {#functions}
       + [Helper functions list](/help/rp_landing_pages/functions-landing-page.md)
       + [Get started with helper functions](using/personalization/functions/functions.md)

@@ -22,7 +22,9 @@ To create an Orchestrated campaign, follow these steps:
 
 1. Browse to the **[!UICONTROL Campaigns]** menu and select the **[!UICONTROL Orchestration]** tab.
 
-1. Click the **[!UICONTROL Create campaign]** button and select the **[!UICONTROL Orchestration - Marketing]** campaign type.
+1. Click the **[!UICONTROL Create campaign]** button and select the **[!UICONTROL Orchestration - Marketing and transactional]** campaign type.
+
+    You will choose whether each message is marketing or transactional when you add a [channel activity](../orchestrated/activities/channels.md).
 
      ![](assets/create-modal.png)
 
@@ -67,6 +69,10 @@ Consider the following best practices when scheduling Orchestrated campaigns to 
 * Do not schedule an Orchestrated campaign to run more than every 15 minutes as it may impede overall system performance and create blocks in the database.
 * If you want to send a one-shot message in your Orchestrated campaign, you can set it to run **Once**. 
 * If you want to send a recurring message in your Orchestrated campaign, you need to use a **Scheduling** options and set the execution frequency. The recurring delivery activity does not allow you to define a schedule.
+
+>[!NOTE]
+>
+>You can also start the campaign when it receives a signal from an external system or application instead of running on a schedule. [Learn how to trigger an Orchestrated campaign using a signal](trigger-orchestrated-campaign.md).
 
 To configure the campaign schedule, follow these steps:
 

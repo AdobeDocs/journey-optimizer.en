@@ -17,6 +17,9 @@ exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
 >title="About data sources"
 >abstract="The data source configuration is always performed by a technical user. The data source configuration allows you to define a connection to a system to retrieve additional information that will be used in your journeys, for: condition definition, parameter and personalization data in actions, custom wait definition, time zone definition."
 
+>[!TIP]
+>New to data management in Journey Optimizer? Start with the [Get started with data management](../data/gs-data.md) overview to understand schemas, datasets, identities, and how data flows before configuring data sources.
+
 The data source configuration allows you to define a connection to a system to retrieve additional information that will be used in your journeys, for:
 
 * [condition definition](../building-journeys/condition-activity.md)
@@ -65,7 +68,7 @@ Ingest data into a dataset to trigger and personalize journeys based on contextu
 
 **Option 3 — Profile-enabled dataset in Data Lake**
 
-Ingest data into a profile-enabled dataset to create audiences, enrich identity graphs, and leverage data across multiple journeys and RT-CDP destinations. Best suited when:
+Ingest data into a [profile-enabled dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile){target="_blank"} to create audiences, enrich identity graphs, and leverage data across multiple journeys and RT-CDP destinations. Best suited when:
 
 * The data is useful for audience definitions used in channels beyond Journey Optimizer.
 * The data contains multiple identities that contribute to richer, stitched profile fragments.

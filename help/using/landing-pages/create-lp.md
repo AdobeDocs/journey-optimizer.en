@@ -47,7 +47,7 @@ To create a landing page, you must select a preset, then configure the primary p
 
 1. Add a title. You can add a description if needed.
 
-    ![](assets/lp_create-lp-details.png)
+    ![](assets/lp_create-lp-details.png){width=75%}
 
 1. To assign custom or core data usage labels to the landing page, select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
@@ -55,7 +55,12 @@ To create a landing page, you must select a preset, then configure the primary p
 
 1. Select a preset. Learn how to create landing page presets in [this section](../landing-pages/lp-presets.md#lp-create-preset).
 
-    ![](assets/lp_create-lp-presets.png)
+1. Select the type of landing page you want to create.
+
+    ![](assets/lp_create-lp-data-capture.png){width=60%}
+
+    * **[!UICONTROL Subscription/Unsubscription]**: Use this type to create a landing page for subscription or unsubscription use cases. [Learn more](lp-use-cases.md#subscription-to-a-service)
+    * **[!UICONTROL Data Capture]**: Use this type to create a landing page for data capture use cases. [Learn more](get-started-lp.md#data-capture-lp)
 
 1. Click **[!UICONTROL Create]**.
 

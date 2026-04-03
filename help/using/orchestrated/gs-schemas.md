@@ -27,7 +27,7 @@ It describes:
 * The attributes of those entities (e.g., Customer Name, Campaign Start Date)
 * The relationships between entities (e.g., Customers belong to Segments, Campaigns target Segments)
 
-A data model is logical and conceptual, not tied to a physical implementation in Orchestrated Campaign
+A data model is logical and conceptual, not tied to a physical implementation in Orchestrated campaign
 
 In a **relational data model**, data is organized into tables relating to other tables.
 
@@ -68,7 +68,7 @@ To ingest data and create relational schema, follow these steps:
 
 1. [Enable Orchestrated campaigns](manual-schema.md#enable)
 
-    The dataset stores your ingested data and must be enabled for Orchestrated Campaigns to ensure it is accessible in Adobe Journey Optimizer.
+    The dataset stores your ingested data and must be enabled for Orchestrated campaigns to ensure it is accessible in Adobe Journey Optimizer.
 
 1. [Ingest Data](ingest-data.md)
 

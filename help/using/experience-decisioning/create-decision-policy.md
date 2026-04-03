@@ -39,7 +39,7 @@ To present the best dynamic offer and experience to your customers, add a decisi
 >
 >Decision policies are available to all customers for the **Code-based Experience**, **Push notification** and SMS channels.
 >
->Decisioning for the Email channel is available in Limited Availability. To request access, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
+>Decisioning for the Email channel is available in Limited Availability. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Add a decision policy {#add}
 

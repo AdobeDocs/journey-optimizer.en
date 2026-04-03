@@ -31,36 +31,40 @@ The main steps to create a journey are detailed on this page. They are streamlin
 
 ![journey creation steps: create, design, test, and publish](assets/journey-creation-process.png)
 
+In this guide, you will:
 
-Build multi-step customer journeys to initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Target audiences are defined based on behavior, contextual data, and business events. Prerequisites depend on your use case and the [type of journey](entry-management.md#types-of-journeys) you are building.
+* Define a journey entry point — an audience segment or a real-time event
+* Add message actions across channels — email, push, SMS, in-app, web, code-based experience, content card, and more. [See supported channels](journey-action.md)
+* Test your journey with test profiles before activation
+* Publish your journey and monitor its performance
 
-Learn more about how profiles flow through journeys and journey processing rates in [this section](entry-management.md#journey-processing-rate).
+Build multi-step customer journeys to initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals.
 
-Before starting to build your journey, ensure the relevant configuration steps are completed:
+<!--
+>[!TIP]
+>
+>Not sure whether to use a journey or a campaign? [Learn how to choose the right approach](../start/journeys-vs-campaigns.md).
+-->
 
-* If you want to trigger your journeys individually when an event is received, **configure an event**. Define the expected information and how to process it. [Read more](../event/about-events.md).
+## Before you start {#prerequisites}
 
-<!--   ![](assets/jo-event7bis.png)  -->
- 
-* Your journey can also listen to Adobe Experience Platform audiences to send messages in batches to a specified set of profiles. For this, **create audiences**. [Read more](../audience/about-audiences.md).
+What you need to configure before building depends on how your journey is triggered. Most journeys start from one of these two entry points:
 
-<!--   ![](assets/segment2.png)  -->
+* **Audience-based entry** — The journey runs for a defined set of profiles at a scheduled time. [Create an audience](../audience/about-audiences.md) in Adobe Experience Platform before building your journey. This is the recommended starting point if you are new to Journey Optimizer.
 
-* Define a connection to a system to retrieve additional information that will be used in your journeys, for example, in your conditions. This connection relies on a **data source**. [Read more](../datasource/about-data-sources.md).
+* **Event-based entry** — The journey is triggered in real time when an individual performs an action, such as a purchase or a sign-up. [Configure an event](../event/about-events.md) to define the trigger and the data it carries.
 
-<!--   ![](assets/jo-datasource.png)  -->
+The following elements are optional, but may be required depending on your use case:
 
-* Journey Optimizer comes with [built-in message](../building-journeys/journey-action.md) capabilities. If you are using a third-party system to send your messages, you can **create a custom action**. Learn more in this [section](../action/action.md). 
+* **Data source** — To enrich journey conditions or personalization with data from an external system, set up a [data source](../datasource/about-data-sources.md).
 
-<!--    ![](assets/custom2.png)  -->
-
-
-As a data engineer, steps to configure your journeys, including Data Sources, Events and Actions are detailed in [this section](../configuration/about-data-sources-events-actions.md).
-
+* **Custom action** — If you deliver messages through a third-party system rather than the built-in channels, configure a [custom action](../action/action.md).
 
 >[!NOTE]
 >
->Journey guardrails and limitations are detailed on [this page](../start/guardrails.md)
+>* If you are a data engineer responsible for the technical setup (events, data sources, and actions), refer to [this section](../configuration/about-data-sources-events-actions.md).
+>
+>* Journey guardrails and limitations are detailed on [this page](../start/guardrails.md).
 
 ## Create a journey {#jo-build}
 
@@ -72,25 +76,33 @@ To create a multi-step journey, follow these steps:
 
 1. Edit the journey's configuration pane to define the name of the journey and set its properties. Learn how to set your journey's properties on [this page](journey-properties.md).
 
+   >[!TIP]
+   >
+   >**Which journey type should I choose?** If you are new to Journey Optimizer, start with an audience-based journey using a **[!UICONTROL Read Audience]** activity — it requires no prior event configuration and is the easiest way to get familiar with the canvas. For real-time, event-triggered experiences (for example, reacting to a purchase or a form submission), configure an event first and use an event-based entry. Ready to go deeper? [Discover all journey types and their entry rules](entry-management.md#types-of-journeys).
+
     ![Journey properties panel with settings and configuration options](assets/jo-properties.png)
 
 You can then start designing your journey.
 
 ## Design the journey {#jo-design}
 
-The omnichannel journey designer helps you build multi-step journeys with targeted audiences, updates based on real-time customer or business interactions, and omnichannel messages using an intuitive drag-and-drop interface.
-
->[!TIP]
->
->For journeys with multiple phases or many touchpoints, consider breaking the end-to-end flow into smaller, focused sub-journeys connected with the **[!UICONTROL Jump]** activity. This approach reduces complexity and makes each sub-journey easier to test and maintain independently. Learn more in [Design strategy: bite-sized sub-journeys](jump.md#jump-strategy).
+The journey designer lets you build multi-step journeys using an intuitive drag-and-drop interface. Activities in the left palette are organized into three categories: **Events**, **Orchestration**, and **Actions**. For a full overview of the canvas and its controls, refer to [this page](using-the-journey-designer.md).
 
 ![Journey designer interface with activities palette and canvas](assets/journey38.png)
 
-1. Start by drag and dropping an event or a **Read Audience** activity from the palette into the canvas. To learn more about journey design, refer to [this section](using-the-journey-designer.md).
+Follow these steps to design your journey:
+
+1. **Add an entry point** — Drag an event or a **[!UICONTROL Read Audience]** activity from the palette onto the canvas. This defines how profiles enter the journey: individually in real time (event-based) or all at once from a defined audience (audience-based).
 
     ![Read Audience activity configuration for selecting target audience](assets/read-segment.png)
 
-1. Drag and drop an event or a **Read Audience** activity from the palette into the canvas. To learn more about journey design, refer to [this section](using-the-journey-designer.md).
+1. **Add message actions** — From the **[!UICONTROL Actions]** section of the palette, drag a channel action onto the canvas to send messages to profiles flowing through the journey. Actions are available for email, push notifications, SMS, and more.
+
+1. **Add orchestration activities** — Use a **[!UICONTROL Condition]** activity to branch the journey into multiple paths based on profile attributes or behavior. Use a **[!UICONTROL Wait]** activity to introduce a time delay between steps.
+
+>[!TIP]
+>
+>For journeys with multiple phases or many touchpoints, consider breaking the end-to-end flow into smaller sub-journeys connected with the **[!UICONTROL Jump]** activity. This reduces complexity and makes each sub-journey easier to test independently. Learn more in [Design strategy: bite-sized sub-journeys](jump.md#jump-strategy).
 
 ## Test the journey {#jo-test}
 
@@ -110,8 +122,41 @@ Once published, you can monitor your journey using the dedicated reporting tools
 
 Learn more about journey reports in this [section](../reports/live-report.md).
 
+## Common use cases {#use-cases}
+
+Not sure where to start? Here are three typical scenarios where journeys deliver the most value:
+
+<table style="table-layout:fixed">
+  <tr style="border: 0;">
+    <td>
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank">
+        <img src="../assets/do-not-localize/icon-quick-start.svg" width="35px">
+      </a>
+      <div><strong>Welcome series</strong><br/>Automatically onboard new users with a sequence of messages after sign-up, guiding them through your product or service.</div>
+    </td>
+    <td>
+      <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank">
+        <img src="../assets/do-not-localize/icon-campaign.svg" width="35px">
+      </a>
+      <div><strong>Cart abandonment</strong><br/>Re-engage customers who left without completing a purchase by sending a timely reminder with personalized content.</div>
+    </td>
+    <td>
+      <a href="jo-use-cases.md">
+        <img src="../assets/do-not-localize/icon-content.svg" width="35px">
+      </a>
+      <div><strong>Re-engagement</strong><br/>Win back inactive users with targeted offers or updates based on their last known behavior.</div>
+    </td>
+  </tr>
+  <tr style="border: 0;">
+    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/customer-onboarding" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/use-cases/abandoned-cart" target="_blank"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
+    <td align="center"><a href="jo-use-cases.md"><img src="../assets/do-not-localize/learn-more-button.svg"></a></td>
+  </tr>
+</table>
+
 ## Additional resources
 
+* **[Journey types and profile entry](entry-management.md)** - Understand all journey types (unitary event, business event, read audience, audience qualification) and how profiles enter, re-enter, and flow through journeys.
 * **[Journey designer overview](using-the-journey-designer.md)** - Master the journey canvas interface to design and orchestrate customer journeys.
 * **[Journey activities](about-journey-activities.md)** - Discover all available activities including events, actions, and orchestration components.
 * **[Testing journeys](testing-the-journey.md)** - Learn how to test your journeys using test mode before publishing to production.
@@ -120,6 +165,3 @@ Learn more about journey reports in this [section](../reports/live-report.md).
 * **[Troubleshooting journeys](troubleshooting.md)** - Find solutions to common journey issues and best practices for debugging.
 * **[Journey tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Explore step-by-step video tutorials on journey building and best practices.
 
->[!NOTE]
->
->If you need to modify a **live** journey, [create a new version](journey-ui.md#journey-filter) of your journey.

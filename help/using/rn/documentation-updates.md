@@ -15,9 +15,47 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## March 2026 {#march-2026}
 
+* Documentation for **previewing code-based experiences with Experience Decisioning** now clarifies that **[!UICONTROL Simulate content]** is content preview only. Context data from live Edge requests is not simulated in authoring preview. [Read more](../code-based/test-code-based.md#preview-code-based)
+
+* The **Use Adobe Experience Platform data** documentation has been updated: the guardrails no longer state that dataset lookups cannot be chained, reflecting current product behavior. [Read more](../data/lookup-aep-data.md)
+
+* The **Update Profile** activity documentation has been updated to document support for updating up to five profile attributes in a single action. [Read more](../building-journeys/update-profiles.md)
+
+* The **Read Audience** activity and **Journey properties** documentation have been updated to clarify the 91-day journey lifecycle for always-on recurring journeys. The schedule section now explicitly confirms that recurring journeys with no end date remain Live past 91 days, and the global timeout FAQ has been expanded to distinguish the 91-day profile TTL from the 91-day reporting window. [Read more](../building-journeys/read-audience.md#schedule)
+
+* The **Dataset lookup** activity documentation has been updated to clarify that the lookup key must be configured in advanced mode for the `@datasetLookup{}` syntax to work in downstream condition activities. A troubleshooting section has been added with guidance on resolving the "Dataset lookup not found" error. [Read more](../building-journeys/dataset-lookup.md#troubleshooting)
+
+* The **Date Time functions** documentation has been updated with a new example showing how to format a timestamp from a context event attribute, including the `toDateTime()` requirement, backtick syntax for numeric event IDs, and a common error callout for the PQL "mismatched input" error. [Read more](../personalization/functions/dates.md#format-date)
+
+* The **Orchestrated campaigns guardrails and limitations** and **Get started with Sources connectors** documentation have been updated to clarify that for file-based Change Data Capture, the `_change_request_type` field is required and its values must be lowercase `u` (upsert) or `d` (delete), not uppercase. [Read more](../orchestrated/guardrails.md)
+
+* The **Add links & track messages** documentation has been updated with guidance on how tracking identifiers (urlID) are generated: a unique urlID is only assigned when both the URL and the label are unique. To track the same URL across multiple emails (or multiple times in one email), users must use a unique label for each similar URL; otherwise, [!DNL Journey Optimizer] cannot determine which link was clicked. [Read more](../email/message-tracking.md#track-across-multiple-emails)
+
+* The **Create test profiles** documentation has been updated with an important note about identity descriptor requirements: when a dataset is deleted and recreated, the schema must retain the correct identity descriptor on the primary identity field. Without it, ingested profiles will not be flagged as `testProfile = true` even if ingestion completes successfully. A troubleshooting checklist has been added. [Read more](../audience/creating-test-profiles.md)
+
+* The **Read Audience** activity documentation has been updated to clarify that a **Business Event** activity is an exception to the rule that Read Audience must be the first activity in a journey. A note has also been added referencing the **Optimize** activity as an advanced alternative for controlling audience targeting. [Read more](../building-journeys/read-audience.md)
+
+* **Send using waves** in journeys is now generally available. The Limited Availability flag has been removed from the documentation. [Read more](../building-journeys/send-using-waves.md)
+
+* The **Jump** activity documentation has been enriched with a new design strategy section — **Bite-sized sub-journeys** — explaining how to break complex end-to-end flows into smaller, focused sub-journeys connected via the Jump activity. [Read more](../building-journeys/jump.md#jump-strategy)
+
+* The **Tags** documentation has been updated with guidance on using tag categories as an alternative to complex naming conventions. A new section explains how to set up tag categories for scalable journey management. [Read more](../building-journeys/tags.md)
+
+* The **About data sources** documentation now includes a new section helping practitioners choose between three data access strategies: accessing external data via custom actions, using a dataset not enabled for Profile, or using a profile-enabled dataset. Each option is described with trade-offs and recommended use cases. [Read more](../datasource/about-data-sources.md#data-access-strategy)
+
+* The **Push notification design** documentation has been updated with a note clarifying the behavior of universal links on iOS: if the notification URL is registered as a universal link, the associated app will open regardless of the chosen Web URL action. Guidance has been added on how to force a browser open. [Read more](../push/design-push.md)
+
+* A new **Monitor your AI models** page is now available in the Decisioning documentation. It explains how to track the health, training status, and performance of personalized optimization models directly in [!DNL Journey Optimizer]. [Read more](../experience-decisioning/ranking/ai-model-observability.md)
+
+* The **advanced HTML editor** (expert mode) for email templates is now available in Limited Availability. The documentation page is now publicly accessible. This capability lets you view and edit the raw HTML source of email content templates directly from the Email Designer. [Read more](../content-management/email-template-expert-mode.md)
+
+* The **URL tracking** and **Journey troubleshooting** documentation have been updated to document the behavior of `context.system.source.actionId` in closed journeys. Closed or un-republished journeys may produce empty `{}` placeholders in tracking URLs. Guidance has been added on how to resolve the issue by republishing the journey or removing the affected parameter. [Read more](../email/url-tracking.md)
+
 * The **Adobe Experience Platform data source** documentation has been updated with a note that only XDM Individual Profile-based schemas are supported in the Data Source configuration. [Read more](../datasource/adobe-experience-platform-data-source.md)
 
 * The **Datasets Time-to-live (TTL) guardrails** documentation has been enhanced with a new FAQ entry to clearly identify which datasets are subject to TTL. TTL applies exclusively to time-series datasets — record-type datasets such as entity datasets, classification datasets, and decision object repositories are not subject to TTL and will not be impacted by the guardrail rollout. [Read more](../data/datasets-ttl.md)
+
+* The **Journey properties** and **Pause a journey** documentation have been updated to document the new pause and resume fields now available in the journey technical details. The **Copy technical details** button now includes `lastPausedAt`, `lastPausedBy`, `lastPausedById`, `lastResumedAt`, `lastResumedBy`, and `lastResumedById`, in addition to the existing `pausedJourneySettings` block. A new section has also been added to the **Pause a journey** page explaining how to view pause and resume timestamps directly from journey properties. [Read more](../building-journeys/journey-properties.md)
 
 ## February 2026 {#february-2026}
 
@@ -407,6 +445,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Configure email settings** page has been divided into several sub-pages for improved readability, including new standalone pages dedicated to [List unsubscribe](../email/list-unsubscribe.md), [Header parameters](../email/header-parameters.md) and [URL tracking](../email/url-tracking.md).
 
++++ 2024
+
 ## December 2024 {#nov-2024}
 
 * A note has been added to help troubleshoot a potential error message when making an API call to enable datasets for personalization using Adobe Experience Platform data. [Read more](../personalization/aep-data-perso.md)
@@ -527,6 +567,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Update the **duration** parameter in the `toString` function. [Read more](../building-journeys/functions/conversion-functions.md#toString)
 * For some external data sources use-cases, usage of custom actions is recommended.
 * Event field syntax has been updated. The following syntax is deprecated `@(my_event.myfield}` and replaced by `@event{my_event.myfield}`. [Read more](../building-journeys/expression/field-references.md)
+
++++
 
 +++ 2023
 

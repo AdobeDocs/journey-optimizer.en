@@ -105,6 +105,13 @@ When using the `inAudience` function in your journeys, be aware of the following
 * When using multiple audiences with the `inAudience` function, inconsistencies with merge policies can cause errors or alerts
 * Refer to [Journey properties](../journey-properties.md) for more information on merge policy behavior
 
+**Propagation timing:** {#propagation-timing}
+
+When using `inAudience()` in a condition node, segment membership evaluation timing varies depending on where the condition appears in the journey:
+
+* **In a Read Audience journey, before a Wait activity:** Journey Optimizer reads from the batch projection of the profile. Data in this projection is refreshed within **2 hours** after ingestion. Audiences that rely on day-based or time-based conditions may experience additional delay. Add a short [Wait activity](../wait-activity.md) at the start of the journey, or allow buffer time to ensure the latest segment membership is reflected.
+* **In a unitary event journey, or after a Wait activity:** Segment membership is read from the streaming (unitary) projection. Data is typically available within **15 minutes**. For more details, refer to the [Adobe Experience Platform streaming ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/streaming/overview){target="_blank"}.
+
 ## Related topics
 
 Learn more about using audiences in Adobe Journey Optimizer:

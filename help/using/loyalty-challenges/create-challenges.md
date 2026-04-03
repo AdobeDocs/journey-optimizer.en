@@ -29,7 +29,7 @@ exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
 
 >[!AVAILABILITY]
 >
->This feature is currently in **private beta**. Learn more about [availability labels](../rn/releases.md#availability-labels).
+>This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 This page covers the complete process of creating a loyalty challenge, from selecting the challenge type and configuring its properties to generating and publishing the journey that will deliver the challenge to your customers.
 
@@ -60,6 +60,11 @@ In the **[!UICONTROL Structure]** tab, define how your challenge is organized: i
 
 ### Define the challenge properties and use custom metadata {#properties}
 
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_properties"
+>title="Challenge properties"
+>abstract="In the Challenge properties pane, set the challenge name and description and add custom key/value metadata for tracking or external integrations."
+
 1. In the **[!UICONTROL Challenge properties]** pane, define global settings for the challenge:
 
    * **[!UICONTROL Name]**: Enter a descriptive name for your challenge. This name appears in the challenges inventory.
@@ -70,6 +75,11 @@ In the **[!UICONTROL Structure]** tab, define how your challenge is organized: i
    ![](assets/challenge-create-properties.png)
 
 ### Schedule the challenge {#schedule}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_schedule"
+>title="Challenge schedule"
+>abstract="Use the schedule to define when the challenge is live: set the start date and time when it becomes available to customers, and the end date and time when it stops accepting completions. Pick a time zone, and choose when customers can complete tasks in the **[!UICONTROL Task completion window section]**."
 
 Configure when your challenge runs:
 
@@ -90,6 +100,11 @@ Configure when your challenge runs:
 The challenge schedule is now configured. Next, add the tasks that customers need to complete.
 
 ### Add tasks {#add-tasks}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_tasks"
+>title="Tasks"
+>abstract="Select tasks to perform to complete the challenge. Next, configure how the challenge is completed - the available options depend on your challenge type (Standard, Streak, or Sequential)."
 
 Tasks define the specific actions customers must complete to earn rewards. You can configure task types (purchase, spend), quantities, product filters, and other attributes.
 
@@ -141,6 +156,11 @@ After adding tasks to your challenge, configure the rewards customers will earn 
 
 ### Configure rewards {#rewards}
 
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_rewards"
+>title="Rewards"
+>abstract="Choose when customers earn points: when they complete the whole challenge, or at task milestones as they progress. Select your reward provider (your loyalty solution that manages points and rewards), then set amounts: a single total for full completion, or per-task values for milestones, turning rewards on only for the tasks you want to pay out."
+
 Rewards are the loyalty points or benefits customers receive for completing challenges.
 
 To configure when and how rewards are delivered:
@@ -185,6 +205,11 @@ After configuring the challenge structure with tasks and rewards, design the con
 
 ## Configure content cards {#configure-content-cards}
 
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_content"
+>title="Content"
+>abstract="Configure the content card that represents your challenge on customer devices and shows challenge information, progress, and rewards. Enter a name for the card, select a channel configuration so delivery uses the right technical settings (for example headers, subdomain, or mobile apps), then select Edit content to design and personalize the card experience."
+
 Content cards visually represent your challenge on customer devices, displaying challenge information, progress, and rewards. [Learn more about content cards](../content-card/create-content-card.md).
 
 To configure content cards for your challenge:
@@ -200,6 +225,11 @@ To configure content cards for your challenge:
 After configuring the content card, set up messaging to engage customers throughout the challenge lifecycle.
 
 ### Configure messaging {#configure-messaging}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_messaging"
+>title="Messaging"
+>abstract="Messaging helps engagement across the challenge lifecycle. On the Messaging tab, add messages for each stage: Launch (when the challenge starts), In-progress (reminders and progress updates), and Completion (celebrate success and confirm rewards). For each stage, add a message, choose the channel, select a channel configuration, then select Edit to design the message content."
 
 Set up multi-channel messages to engage customers at key stages of the challenge lifecycle. Messaging is optional but recommended to maximize customer engagement.
 
@@ -222,6 +252,11 @@ Learn how to create messages for specific channels in these sections: [In-app me
 After completing the messaging configuration, define which customers are eligible to participate in the challenge.
 
 ## Select the challenge audience {#audience}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_challenge_audience"
+>title="Audience"
+>abstract="On the Audience tab, choose who can participate in the challenge from the available Adobe Experience Platform audiences."
 
 Define which customers can participate in your loyalty challenge.
 

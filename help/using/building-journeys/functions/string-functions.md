@@ -315,6 +315,10 @@ Returns true.
 
 Returns false.
 
+`isEmpty(<null>)`
+
+Returns false.
+
 +++
 
 ## isNotEmpty {#isNotEmpty}

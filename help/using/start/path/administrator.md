@@ -96,7 +96,7 @@ Your administrative work enables all teams to succeed:
 
 >[!TAB Support Data Engineers]
 
-Collaborate with [Data Engineers](data-engineer.md) on data management and access:
+Collaborate with [Data Engineers](data-engineer.md) on data management and access. Review the [Get started with data management](../../data/gs-data.md) overview to understand the schemas, datasets, and data sources your data engineers need to configure.
 
 * Grant permissions for data management and schema creation
 * Approve sandbox access for development and testing

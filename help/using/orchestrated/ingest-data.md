@@ -105,7 +105,7 @@ This example demonstrates how to configure a data flow that ingests structured d
 
     >[!IMPORTANT]
     >
-    > For **file-based sources only**, each row in the data file must include a `_change_request_type` column with values `U` (upsert) or `D` (delete). Without this column, the system will not recognize the data as supporting change tracking, and the Orchestrated Campaign toggle will not appear, preventing the dataset from being selected for targeting.
+    > For **file-based sources only**, each row in the data file must include a `_change_request_type` column with values `U` (upsert) or `D` (delete). Without this column, the system will not recognize the data as supporting change tracking, and the Orchestrated campaign toggle will not appear, preventing the dataset from being selected for targeting.
 
     ![](assets/S3_config_6.png)
 

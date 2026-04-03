@@ -80,6 +80,7 @@ See [Adobe Journey Optimizer blueprints](https://experienceleague.adobe.com/en/d
 >[!MORELIKETHIS]
 >
 >* [Key steps to start](quick-start.md)
+>* [Get started with data management](../data/gs-data.md)
 >* [Design journeys and send messages](../building-journeys/journey-gs.md)
 >* [Live reports](../reports/live-report.md)
 >* [Introduction to Journey Optimizer tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction){target="_blank"}
