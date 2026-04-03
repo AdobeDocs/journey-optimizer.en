@@ -234,6 +234,7 @@ solution: Journey Optimizer
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
     + [Auto-generation of content variants](using/test-approve/simulate-sample-input-generated.md)
     + [Email Spam report](using/content-management/spam-report.md)
+    + [LLM email optimizer](using/content-management/llm-email-optimizer.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
     + [Get started with approvals](using/test-approve/gs-approval.md)
