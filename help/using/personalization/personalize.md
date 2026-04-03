@@ -27,12 +27,6 @@ Journey Optimizer employs an inline personalization syntax based on Handlebars w
 
 When processing the message, Journey Optimizer replaces the expression with the data contained in the Experience Platform dataset. For example, `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` dynamically becomes `Hello John Doe`. Using this syntax, you can personalize messages across multiple fields, including email subject lines, message bodies, push notifications, or URLs.
 
-## AI Assistant in the Personalization Editor {#ai-personalization-expressions}
-
-In the **[!UICONTROL Personalization Editor]**, **[!UICONTROL AI Assistant]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
-
-➡️ [Learn how to work with AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
-
 ## Data used for personalization
 
 Personalization is based on the profile data that are managed by the **XDM Individual Profile** schema defined in Adobe Experience Platform. The **XDM Individual Profile** schema is the only schema you can use to personalize content in [!DNL Journey Optimizer]. Learn more in [Adobe Experience Platform Data Model (XDM) documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
@@ -50,6 +44,14 @@ This playground provides a simulated environment to write and test personalizati
 ![personalization playground](assets/playground.png)
 
 ➡️ [Access the personalization playground](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
+
+## AI Assistant in the Personalization Editor {#ai-personalization-expressions}
+
+In the **[!UICONTROL Personalization Editor]**, **[!UICONTROL AI Assistant]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
+
+![](../content-management/assets/ai-perso-generate.png)
+
+➡️ [Learn how to work with AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
 
 ## Let's dive deeper
 

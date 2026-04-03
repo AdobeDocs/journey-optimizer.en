@@ -48,6 +48,10 @@ These steps cover generating personalization expressions from scratch. To work w
 
     ![](assets/ai-perso-question.png)
 
+1. After you generate an expression, click the **[!UICONTROL Show previews for sample profiles]** button to preview the output by impersonating a sample profile, and to see the associated payload as JSON.
+
+    ![](assets/ai-perso-preview.png)
+
 1. To implement the output in your personalization expression, click **[!UICONTROL Apply]**. You can also copy the output and paste it where you need it using the ![Copy icon](../orchestrated/assets/do-not-localize/activity-copy.svg) icon.
 
 ## Edit, fix or explain existing code {#edit-existing}
