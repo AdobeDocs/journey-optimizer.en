@@ -31,7 +31,7 @@ When processing the message, Journey Optimizer replaces the expression with the 
 
 In the **[!UICONTROL Personalization Editor]**, **[!UICONTROL AI Assistant]** helps you create, edit, and understand personalization expressions from natural language. You can ask for new logic, refine a selection, or get a short explanation of existing code, then review **[!UICONTROL Reasoning]** and insert the suggestion when it matches your intent. Availability and language support depend on your organization and release.
 
-➡️ [Generate personalization with AI](../content-management/generative-personalization-expressions.md)
+➡️ [Learn how to generate personalization with AI](../content-management/generative-personalization-expressions.md)
 
 ## Data used for personalization
 
