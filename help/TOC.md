@@ -234,6 +234,7 @@ solution: Journey Optimizer
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
     + [Auto-generation of content variants](using/test-approve/simulate-sample-input-generated.md)
     + [Email Spam report](using/content-management/spam-report.md)
+    + [LLM email optimizer](using/content-management/llm-email-optimizer.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
     + [Get started with approvals](using/test-approve/gs-approval.md)
@@ -483,7 +484,10 @@ solution: Journey Optimizer
     + [Work with Adobe Stock](using/integrations/stock.md)
     + [Work with Adobe Express](using/integrations/express.md)
     + [Work with Experience Manager templates](using/integrations/aem-templates.md)
-    + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+    + Experience Manager Content Fragments {#aem}
+      + [Get started with Experience Manager Content Fragments](using/integrations/aem-fragments-gs.md)
+      + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+      + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
     + [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
     + [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)

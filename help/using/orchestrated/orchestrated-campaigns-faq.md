@@ -137,7 +137,7 @@ Yes. Campaign orchestration is natively integrated with:
 
 +++ How do I test a signal-triggered orchestrated campaign before publishing?
 
-While the campaign is in **Draft**, you can test it by defining **parameters** in the schedule and providing **test values** for each. Start the workflow, then call the trigger API—using the sample request from the schedule configuration or your own request with the same endpoint—to run the campaign with those test values. [Learn how to complete and test a signal-triggered campaign](trigger-orchestrated-campaign.md#build-and-test). For the trigger API reference, see [Trigger Orchestrated campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"}.
+While the campaign is in **Draft**, you can test it by defining **parameters** in the schedule and providing **test values** for each. Start the workflow, then call the trigger API (using the sample request from the schedule configuration or your own request with the same endpoint) to run the campaign with those test values. [Learn how to complete and test a signal-triggered campaign](trigger-orchestrated-campaign.md#build-and-test).
 
 +++
 
