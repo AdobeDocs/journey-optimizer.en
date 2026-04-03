@@ -161,13 +161,13 @@ In Adobe Experience Manager, each Content Fragment is made up of the following:
 * **Main**: the core content of the fragment which always exists, cannot be deleted, and is the basis for all variations.
 * **Variations**: one or more permutations of **Main** that authors create for specific channels or scenarios. Variations live inside the fragment not as separate assets and can be compared and synchronized with **Main**.
 
-➡️ [Learn more in Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/content-fragments/content-fragments-variations)
-
 Examples of variation use cases:
 
 * A short version of copy for a push notification and a longer version for email.
 * Regional tone adjustments without creating a separate fragment.
 * Channel-specific messaging (for example web compared to mobile).
+
+➡️ [Learn more in Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/content-fragments/content-fragments-variations)
 
 Journey Optimizer lets you choose which variation to use when you insert a fragment, so different campaigns or journeys can rely on different renditions of the same source content in Adobe Experience Manager without duplicating fragments.
 
