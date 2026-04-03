@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: AEM Content Fragments: considerations and troubleshooting
+title: Adobe Experience Manager Content Fragments considerations and troubleshooting
 description: Considerations and common issues for AEM Content Fragments in Journey Optimizer.
 topic: Content Management
 role: User
@@ -55,7 +55,7 @@ If you encounter issues when working with Adobe Experience Manager Content Fragm
 | **Proof displays unexpected content** | Proof uses the latest published version from Adobe Experience Manager | Proofs always reflect the most recent publication of the Content Fragment in Adobe Experience Manager. If you made recent changes in Adobe Experience Manager, republish the fragment and refresh your proof. |
 | **Access denied (CPES) error** | User role not authorized to access certain attributes | Contact your system administrator to verify that your role has the appropriate permissions for the profile or contextual attributes used in personalization. |
 | **Fragment displays blank or missing content** | Missing required personalization parameters or fallback values | Ensure all required parameters are provided and consider adding fallback values for optional attributes. |
-| **Image does not render or appears broken** | Image URL in the Content Fragment is a relative path or not reachable from the channel | Use **absolute** URLs (`https://...`) for image fields. Relative paths from AEM are not supported. Confirm the URL in a browser or message preview. |
+| **Image does not render or appears broken** | Image URL in the Content Fragment is a relative path or not reachable from the channel | Use **absolute** URLs (`https://...`) for image fields. Relative paths from Adobe Experience Manager are not supported. Confirm the URL in a browser or message preview. |
 | **Experience League AEM link returns 404** | Stale bookmark, preview build, or unpublished AEM help page | Open the [Content Fragments with Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer){target="_blank"} topic from the live Experience Manager documentation and navigate from the on-page table of contents, or search for the section name (for example **Dispatcher Configuration**). |
 
 If the issue persists, contact your Adobe representative with details about your Content Fragment ID, campaign or journey ID, and any error messages displayed.
