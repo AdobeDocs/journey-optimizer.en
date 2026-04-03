@@ -70,9 +70,9 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_2.png)
 
-1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM Content advisor]**.
+1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM CF selector]**.
 
-    ![](assets/cf-variation-1.png)
+    ![](assets/aem_campaign_3.png)
 
 1. Browse the list and select a **[!UICONTROL Content Fragment]** to import into your Journey Optimizer content.
 
@@ -148,7 +148,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
 1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
 
-    Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM Content advisor]**.
+    <!--Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM CF selector]**.-->
 
 Once you have performed your tests and validated the content, you can [send your campaign](../campaigns/review-activate-campaign.md) or [publish your journey](../building-journeys/publishing-the-journey.md) to your audience.
 
@@ -177,11 +177,11 @@ To select a variation:
 
 1. Click ![Personalization icon](assets/do-not-localize/Smock_PersonalizationField_18_N.svg) in any text field, or open the HTML source from an HTML content component.
 
-1. From **[!UICONTROL AEM Content Fragment]**, click **[!UICONTROL Open AEM Content advisor]**.
+1. From **[!UICONTROL AEM Content Fragment]**, click **[!UICONTROL Open CF selector]**.
 
-    ![](assets/cf-variation-1.png)
+    ![](assets/aem_campaign_3.png)
 
-1. If needed, click **[!UICONTROL Customize table]** option to add columns, for example **[!UICONTROL Language]**, so fragments that include variations are easier to spot in the list.
+1. To select a locale-specific Adobe Experience Manager Content Fragment in table view, use **[!UICONTROL Customize table]** to add the **[!UICONTROL Language]** column. Locale values are displayed in the table, enabling you to identify and select the appropriate fragment.
 
     ![](assets/cf-variation-2.png)
 
@@ -189,11 +189,11 @@ To select a variation:
 
 1. Click the ![information icon](assets/do-not-localize/info-icon.svg) to open **[!UICONTROL Details]** menu. If the fragment has one or more published variations, a **[!UICONTROL Variation]** dropdown appears next to the fragment details.
 
-    ![](assets/cf-variation-4.png)
+    ![](assets/cf-variation-5.png)
 
 1. From the **[!UICONTROL Quick details]** menu, click **[!UICONTROL Explore references]** to open related options in Adobe Experience Manager for variation details, preview, and proof when available.
 
-1. Chooseyoure variation, then click **[!UICONTROL Select]**.
+1. Choose your variation, then click **[!UICONTROL Select]**.
 
     >[!NOTE]
     >

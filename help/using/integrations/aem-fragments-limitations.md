@@ -39,7 +39,7 @@ Keep the following in mind when using Content Fragments from [!DNL Adobe Experie
     * After a successful update, changes are typically available within about **5 minutes** for unitary journeys and in the **next batch** for batch use cases.
 
 * **Caching and proofing**
-    * When a fragment is first added to a campaign or journey, [!DNL Journey Optimizer] caches it. If you select a fragment that was already used elsewhere through **[!UICONTROL Open AEM Content advisor]**, it is loaded from the [!DNL Journey Optimizer] cache.
+    * When a fragment is first added to a campaign or journey, [!DNL Journey Optimizer] caches it. If you select a fragment that was already used elsewhere through **[!UICONTROL Open AEM CF selector]**, it is loaded from the [!DNL Journey Optimizer] cache.
     * After you republish a modified fragment in [!DNL Adobe Experience Manager], [!DNL Journey Optimizer] listens for the event and updates the cache.
     * Proofs always reflect the **most recently published** version; you cannot lock a historical version for proofing.
 
