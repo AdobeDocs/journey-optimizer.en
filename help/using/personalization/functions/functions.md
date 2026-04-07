@@ -440,6 +440,9 @@ Helpers are detailed on [this page](helpers.md).
         <td><a href="helpers.md#each">Each</a></td><td>This function is used to iterate over an array</td>
     </tr>
     <tr>
+        <td><a href="helpers.md#dataset-lookup">Dataset lookup</a></td><td>This helper retrieves fields from Adobe Experience Platform record datasets at render time using a lookup key</td>
+    </tr>
+    <tr>
         <td><a href="helpers.md#execution-metadata">Execution Metadata</a></td><td>This helper captures custom key–value metadata during message rendering so that it can be stored in the runtime execution metadata object</td>
     </tr>
     <tr>
