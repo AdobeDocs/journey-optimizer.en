@@ -386,6 +386,11 @@ solution: Journey Optimizer
       + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
     + [Create content cards](using/content-card/create-content-card.md)
     + [Design content cards](using/content-card/design-content-card.md)
+  + Inbox {#inbox}
+    + [Get started with Inbox](using/inbox/inbox-gs.md)
+    + [Configure Inbox channel in Journey Optimizer](using/inbox/inbox-configuration.md)
+    + [Create your Inbox](using/inbox/inbox-create.md)
+    + [Design your Inbox](using/inbox/inbox-design.md)
   + WhatsApp {#whatsapp}
     + [WhatsApp](/help/rp_landing_pages/whatsapp-landing-page.md)
     + [Get started with WhatsApp messages](using/whatsapp/get-started-whatsapp.md)
@@ -884,9 +889,8 @@ solution: Journey Optimizer
     + [Access & edit PTR records](using/configuration/ptr-records.md)
     + [Create IP pools](using/configuration/ip-pools.md)
   + Implement an IP warmup plan {#implement-ip-warmup-plan}
-    + [Implement an IP warmup plan](/help/rp_landing_pages/implement-ip-warmup-plan-landing-page.md)
-    + [IP warmup deliverability guide](using/configuration/ip-warmup-deliverability-guide.md)
     + [Get started with IP warmup plans](using/configuration/ip-warmup-gs.md)
+    + [IP warmup deliverability guide](using/configuration/ip-warmup-deliverability-guide.md)
     + [Create IP warmup campaigns](using/configuration/ip-warmup-campaign.md)
     + [Create an an IP warmup plan](using/configuration/ip-warmup-plan.md)
     + [Run the IP warmup plan](using/configuration/ip-warmup-execution.md)
