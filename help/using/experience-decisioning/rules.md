@@ -46,8 +46,8 @@ Many times, they are a combination of multiple attributes, in addition to custom
 
 You can use these rules either:
 
-* When creating [content optimization targeting](../content-management/optimization-targeting.md) in journeys or campaigns;
-* When building [journey path optimization](../building-journeys/optimize.md#targeting).
+* When creating [content optimization targeting](../campaigns/campaigns-message-optimization.md#targeting) in journeys or campaigns;
+* When building [journey path optimization](../building-journeys/path-targeting.md).
 
 ➡️ [Discover this feature in video](#video)
 
@@ -84,7 +84,7 @@ To create a rule, follow these steps:
     ![](assets/rules-select-entity.png){width=90%}
 
     * **[!UICONTROL Decision item]** - The rule can be applied on a [decision item](#decision-rules) in the context of Decisioning;
-    * **[!UICONTROL Targeting]** - The rule can be used when building [targeting](#targeting-rules) rules, either as part of [content optimization](../content-management/optimization-targeting.md) in a campaign or a journey, either in the [Optimize journey activity](../building-journeys/optimize.md#targeting).
+    * **[!UICONTROL Targeting]** - The rule can be used when building [targeting](#targeting-rules) rules, either as part of [content optimization](../campaigns/campaigns-message-optimization.md#targeting) in a campaign or a journey, either in the [Optimize journey activity](../building-journeys/path-targeting.md).
 
 1. If you create a **[!UICONTROL Decision item]** rule, you can select **[!UICONTROL Enable dataset lookup]** to use data from Adobe Experience Platform to enrich your decision logic with external data. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing. [Learn how to use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
 

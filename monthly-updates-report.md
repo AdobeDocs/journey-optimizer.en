@@ -142,7 +142,7 @@ exl-id: 7962189b-4135-4f88-b91d-40d21cdf6c6d
 - [Get Started with Profiles in Journey Optimizer](help/using/audience/get-started-profiles.md) - Oct 22
 - [Get started with journey activities](help/using/building-journeys/about-journey-activities.md) - Oct 27
 - [Pass collections into custom action parameters](help/using/building-journeys/collections.md) - Oct 13
-- [Condition activity](help/using/building-journeys/condition-activity.md) - Oct 24
+- [Conditions / Optimize (Condition method)](help/using/building-journeys/conditions.md) - Oct 24
 - [Use Adobe Experience Platform data in journeys](help/using/building-journeys/dataset-lookup.md) - Oct 28
 - [Experience events lookup in journeys](help/using/building-journeys/exp-event-lookup.md) - Oct 28
 - [Use the Action journey activity](help/using/building-journeys/journey-action.md) - Oct 14

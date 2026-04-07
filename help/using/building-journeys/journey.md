@@ -100,7 +100,7 @@ Use built-in channel actions for email, push, SMS/MMS, in-app, web, and more—a
 
 Branch your journey based on profile attributes, audience membership, or real-time events.
 
-[Use conditions](condition-activity.md)
+[Use conditions](conditions.md)
 :::
 
 :::

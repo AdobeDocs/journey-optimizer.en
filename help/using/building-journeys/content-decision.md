@@ -23,7 +23,7 @@ To leverage this capability, create a journey where you add a [content decision 
 
 You can then use the output of the content decision activity in:
 
-* a [condition activity](#add-condition-activity), to move profiles to specific paths based on the offers retrieved;
+* an [Optimize activity with a condition](#add-condition-activity), to move profiles to specific paths based on the offers retrieved;
 
 * a [custom action](#add-custom-action), where you can send those offers to external systems.
 
@@ -75,15 +75,15 @@ You are now ready to leverage the output of this content decision activity in yo
 
 ## Use the output of the content decision activity {#use-content-decision-output}
 
-The output of a content decision can be used in multiple journey activities. For example, you can use a [condition activity](#add-condition-activity) to move profiles to specific branches of your journey, based on the number of offers retrieved for them.
+The output of a content decision can be used in multiple journey activities. For example, you can use an [Optimize activity with a condition](#add-condition-activity) to move profiles to specific branches of your journey, based on the number of offers retrieved for them.
 
 You can also add a [custom action](#add-custom-action) to your journey in order to share the offers from the content decision activity to an external system.
 
-### In a condition activity {#add-condition-activity}
+### In an Optimize activity (Condition method) {#add-condition-activity}
 
-To leverage the output of a content decision activity, you can add a condition to your journey, where you define expressions to move profiles to specific paths, using data from those offers. Follow the steps below.
+To leverage the output of a content decision activity, add an **[!UICONTROL Optimize]** activity, choose the **[!UICONTROL Condition]** method, and define expressions to move profiles to specific paths using data from those offers. Follow the steps below. For more condition types and options, see [Conditions](conditions.md).
 
-1. From the **[!UICONTROL Orchestration]** category, drop a **[!UICONTROL Condition]** activity into your canvas. [Learn more](condition-activity.md#add-condition-activity)
+1. From the **[!UICONTROL Orchestration]** category, drop an **[!UICONTROL Optimize]** activity into your canvas. [Learn more](optimize.md)
 
 1. (optional) Rename **[!UICONTROL Path1]**, which corresponds to the first expression you define, to a more relevant label.
 

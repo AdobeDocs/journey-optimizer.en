@@ -10,6 +10,8 @@ level: Intermediate
 keywords: activity, condition, canvas, journey
 exl-id: 02de069c-3009-4105-aa98-c49959d3efda
 version: Journey Orchestration
+hidefromtoc: yes
+hide: yes
 ---
 # Condition activity {#condition-activity}
 

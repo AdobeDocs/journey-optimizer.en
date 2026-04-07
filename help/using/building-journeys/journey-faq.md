@@ -213,7 +213,7 @@ You can add conditions using the **Condition activity** from the orchestration p
 * Split the journey into multiple paths based on profile attributes, audience membership, events, or contextual data
 * Define timeout paths for profiles that don't meet the condition within a specified time
 
-Learn more about [conditions](condition-activity.md).
+Learn more about [conditions](conditions.md).
 
 +++
 
@@ -311,7 +311,7 @@ Use a **Condition activity** with audience membership or profile attributes:
    * **Path 3**: New customers (total purchases < $100)
 3. Add different messages or offers for each path
 
-Learn more about [conditions](condition-activity.md) and [audience qualification](audience-qualification-events.md).
+Learn more about [conditions](optimize.md#conditions) and [audience qualification](audience-qualification-events.md).
 
 +++
 
@@ -582,9 +582,9 @@ Learn more about [personalization](../personalization/personalize.md).
 
 +++ Can I send different messages based on preferred channel?
 
-Yes. Use a **[Condition activity](condition-activity.md)** to route profiles based on their preferred channel:
+Yes. Use an **[Optimize activity](conditions.md)** to route profiles based on their preferred channel:
 
-1. Add a [Condition activity](condition-activity.md) in your journey
+1. Add an [Optimize activity](optimize.md) in your journey
 2. Create a path for each channel by checking the preferred channel profile attribute (e.g., `profile.preferredChannel`)
 3. Configure channel-specific paths:
    * **Email path**: Add an [email action](../email/create-email.md) with email-optimized content
@@ -600,7 +600,7 @@ Yes. Use a **[Condition activity](condition-activity.md)** to route profiles bas
 * Use [channel surfaces](../configuration/channel-surfaces.md) to manage channel configurations
 * Test all paths to ensure proper message delivery
 
-Learn more about [conditions](condition-activity.md), [message actions](journey-action.md), and [channel selection](../channels/gs-channels.md).
+Learn more about [conditions](conditions.md), [message actions](journeys-message.md), and [channel selection](../channels/gs-channels.md).
 
 +++
 
@@ -616,7 +616,7 @@ Yes, there are several ways to exclude customers:
 
 **Within the journey**:
 
-* Add a [Condition activity](condition-activity.md) early in the journey to exit unwanted profiles
+* Add an [Optimize activity](conditions.md) early in the journey to exit unwanted profiles
 * Check for exclusion attributes (e.g., VIP status, test accounts)
 * Use [audience qualification](audience-qualification-events.md) to identify profiles to exclude
 
@@ -832,7 +832,7 @@ Learn more about [merge policies](../audience/get-started-profiles.md) and [iden
 * Wait for a period, then use a Condition to check if something happened during the wait
 * Example: Wait 7 days, then check if customer made a purchase
 
-Learn more about [conditions](condition-activity.md) and [wait activities](wait-activity.md).
+Learn more about [conditions](optimize.md#conditions) and [wait activities](wait-activity.md).
 
 +++
 
@@ -912,7 +912,7 @@ Learn more about [journey design](using-the-journey-designer.md) and [guardrails
 * Use [audience-based entry](read-audience.md) for batch communications instead of individual events
 * Implement appropriate [wait times](wait-activity.md) to spread message volume
 * Leverage [capping rules](../conflict-prioritization/journey-capping.md) to prevent system overload
-* Optimize [condition logic](condition-activity.md) to reduce processing complexity
+* Optimize [condition logic](conditions.md) to reduce processing complexity
 
 **Monitoring**:
 

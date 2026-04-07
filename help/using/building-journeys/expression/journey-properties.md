@@ -12,7 +12,7 @@ version: Journey Orchestration
 ---
 # Journey properties attributes {#journey-properties}
 
-In the [simple expression editor](../condition-activity.md#about_condition), and in the [advanced expression editor](../expression/expressionadvanced.md), below the **Event** and **Data source** categories, you can access the **Journey Properties** category. This category contains technical fields related to the journey for a given profile. This is the information retrieved by the system from live journeys, such as the journey ID, or the specific errors encountered.
+In the [simple expression editor](../conditions.md#about_condition), and in the [advanced expression editor](../expression/expressionadvanced.md), below the **Event** and **Data source** categories, you can access the **Journey Properties** category. This category contains technical fields related to the journey for a given profile. This is the information retrieved by the system from live journeys, such as the journey ID, or the specific errors encountered.
 
 ![](../assets/journey-properties.png)
 

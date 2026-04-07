@@ -173,7 +173,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new section has been added to the Wait activity documentation explaining how profiles parked at a Wait activity in Read Audience journeys automatically refresh their attributes from the Unified Profile Service (UPS). This clarifies that profile data may change during journey execution after a wait node, which can produce unexpected results if you expect consistent snapshot data throughout the journey. [Read more](../building-journeys/wait-activity.md#profile-refresh)
 
-* A caution note has been added to the Path Experimentation section warning users not to edit the metadata of a path experiment once it has been published, as this will disrupt the calculation and reporting of experiment results. [Read more](../building-journeys/optimize.md#experimentation)
+* A caution note has been added to the Path Experimentation section warning users not to edit the metadata of a path experiment once it has been published, as this will disrupt the calculation and reporting of experiment results. [Read more](../building-journeys/path-experimentation.md)
 
 * A note has been added to the Create a form preset section to specify the requirements for streaming connections to display in the selection drop-down list. [Read more](../landing-pages/lp-forms.md#create-form-preset)
 
@@ -262,7 +262,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new section was added to the [Decision management guardrails & limitations](../offers/decision-management-guardrails.md#configurations) and [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md#configurations) pages to specify the maximum number of supported configurations (20,000), corresponding to the total number of capping rules that exist in your sandbox.
 
-* Added a note in the journey's Condition activity section to document that condition evaluation will fail for profiles containing more than two cross-device identities. [Read more](../building-journeys/condition-activity.md)
+* Added a note in the journey's Condition activity section to document that condition evaluation will fail for profiles containing more than two cross-device identities. [Read more](../building-journeys/conditions.md)
 
 * A new page was added to describe how you can use consent policies to honor your customers' preferences based on their choices, while respecting their consent. [Read more](../action/preference-center.md)
 
@@ -652,7 +652,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * All new features and improvements coming with [!DNL Journey Optimizer] April '23 release have been detailed in the documentation. [Read more](release-notes.md)
 * A note has been added to specify that built-in actions cannot be removed. [Read more](../start/guardrails.md#custom-actions-g)
 * Information has been added on serviceEvents as well as a query example to check the details of a serviceEvent. [Read more](../reports/query-examples.md#common-queries) 
-* A note has been added to specify that you cannot perform queries on time series. [Read more](../building-journeys/condition-activity.md)
+* A note has been added to specify that you cannot perform queries on time series. [Read more](../building-journeys/conditions.md)
 * Adobe Experience Manager Assets Essentials and Adobe Stock have been added to the multi-solution integration page. [Read more](../integrations/ajo-integrations.md)
 * The warning on multi-level email subdomains not being allowed has been removed as they are now supported. [Read more](../configuration/delegate-subdomain.md)
 * A note has been added to specify that, if changes are made to an offer decision which is being used in a journey's message, you need to unpublish the journey and republish it. [Read more](../building-journeys/publish-journey.md)
@@ -670,7 +670,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * A guardrail has been added for read audience journeys with incremental read. You cannot create a new version, you need to duplicate the journey. [Read more](../start/guardrails.md#journey-versions-g)
 * The use case on how to limit throughput put has been updated with information on throttling capabilities. [Read more](../building-journeys/limit-throughput.md)
 * A note has been added to specify that scalar arrays are not supported in response payload definition. [Read more](../datasource/external-data-sources.md)
-* The section on profile cap conditions has been updated. [Read more](../building-journeys/condition-activity.md#profile_cap)
+* The section on profile cap conditions has been updated. [Read more](../building-journeys/conditions.md#profile_cap)
 
 ## February 2023 {#feb-2023}
 
@@ -729,7 +729,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * Added a best practice related to the use of wait activities in recurring read audience journeys. [Read more](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
 * Added new step event query examples as well as information on the difference between id, instanceid and profileid. [Read more](../reports/query-examples.md).
 * Updated the pages related to the [toDateOnly](../building-journeys/functions/conversion-functions.md#toDateOnly) and [toString](../building-journeys/functions/conversion-functions.md#toString) functions.
-* Added details on the time condition parameters. [Read more](../building-journeys/condition-activity.md#time_condition)
+* Added details on the time condition parameters. [Read more](../building-journeys/conditions.md#time_condition)
 * Added information on built-in datasets. [Read more](../data/get-started-datasets.md#access-datasets)
 * The Global report and Live report sections have been improved and reorganized. [Read more](../reports/report-gs-cja.md)
 * A list of every reporting metric available in Adobe Journey Optimizer has been added.
@@ -753,7 +753,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * In the journey properties, the **Profile Time zone** option is now disabled by default. [Read more](../building-journeys/timezone-management.md#timezone-from-profiles)
 * In the **Wait** activity, the **Fixed date** option is no longer available. [Read more](../building-journeys/wait-activity.md)
 * Added more information on the **Incremental read** option in the **Read audience** activity. [Read more](../building-journeys/read-audience.md#configuring-segment-trigger-activity)
-* Added recommendations on the **Profile cap** condition type. [Read more](../building-journeys/condition-activity.md#profile_cap)
+* Added recommendations on the **Profile cap** condition type. [Read more](../building-journeys/conditions.md#profile_cap)
 * Added a limitation on business events. [Read more](../start/guardrails.md#events-g)
 
 ## June 2022 {#june-2022}

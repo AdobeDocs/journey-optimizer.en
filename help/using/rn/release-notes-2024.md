@@ -624,7 +624,7 @@ This release brings the improvements listed below.
 
 **Journeys**
 
-* In the **Condition** activity, by default, the **[!UICONTROL Time condition]** is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)
+* In the **Condition** activity, by default, the **[!UICONTROL Time condition]** is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/conditions.md#time_condition)
 * When building your journeys, alerts are now displayed from the **Alerts** button, to align with other alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#activity-errors)
 * Zoom options in the journey toolbar have been improved: the zoom percentage is now visible and you can now more easily reset the zoom value.
 
