@@ -53,9 +53,8 @@ The following table shows the valid values which comprise the *Content-Type* and
 
 ### API format
 
-```https
 POST /{ENDPOINT_PATH}/decisions
-```
+
 
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
@@ -63,7 +62,6 @@ POST /{ENDPOINT_PATH}/decisions
 
 ### Request
 
-```shell
 curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
 -H 'Accept: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-response;version=1.0"' \
 -H 'Content-Type: application/vnd.adobe.xdm+json; schema="https://ns.adobe.com/experience/offer-management/decision-request;version=1.0"' \
@@ -111,7 +109,7 @@ curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
         }
     }
 }' 
-```
+
 
 | Property | Description | Example |
 | -------- | ----------- | ------- |
@@ -138,7 +136,6 @@ curl -X POST 'https://platform.adobe.io/data/core/ods/decisions' \
 
 A successful response returns information on your proposition, including its unique `xdm:propositionId`.
 
-```json
 {
   "xdm:propositionId": "5d0ffb5e-dfc6-4280-99b6-0bf3131cb8b8",
   "xdm:propositions": [
@@ -188,7 +185,7 @@ A successful response returns information on your proposition, including its uni
   ],
   "ode:createDate": 1566497582038
 }
-```
+
 
 | Property | Description | Example |
 | -------- | ----------- | ------- |
@@ -219,7 +216,9 @@ The table below lists all codes that can be returned in the response:
 |500|Internal server error. The server encountered an unexpected condition which prevented it from fulfilling the request.|
 |503|Service unavailable due to server overload. The server is currently unable to handle the request due to a temporary overloading.|
 
-<!-- ## Tutorial video {#video}
+
+<!--
+ ## Tutorial video {#video}
 
 The following video is intended to support your understanding of the components of Decision Management.
 
@@ -227,7 +226,9 @@ The following video is intended to support your understanding of the components 
 >
 >This video applies to the Offer Decisioning application service built on Adobe Experience Platform. However, it provides generic guidance to use Offer in the context of Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12) -->
+>[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12) 
+-->
+
 
 ## Next steps {#next-steps}
 

@@ -69,11 +69,13 @@ For more information on how to create, configure and publish a journey, refer to
 
     ![](assets/email_campaign.png)
 
+
 <!--
 From the **[!UICONTROL Action]** section, specify if you want to track how your recipients react to your delivery: you can track email opens, and/or clicks on links and buttons in your email.
 
 ![](assets/email_campaign_tracking.png)
 -->
+
 For more information on how to create, configure and activate a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
@@ -189,8 +191,8 @@ When your email is ready, complete the configuration of your [journey](../buildi
 >
 >To track the behavior of your recipients through email openings and/or interactions, make sure that the dedicated options in the **[!UICONTROL Tracking]** section are enabled in the journey's [email activity](../building-journeys/journey-action.md) or in the email [campaign](../campaigns/create-campaign.md).<!--to move?-->
 
-<!--
 
+<!--
 ## Define your email content {#email-content}
 
 Use [!DNL Journey Optimizer] Email Designer to [design your email from scratch](../email/content-from-scratch.md). If you have an existing content, you can [import it in the Email Designer](../email/existing-content.md), or [code your own content](../email/code-content.md) in [!DNL Journey Optimizer]. 
@@ -214,6 +216,6 @@ Control the rendering of your email, and check personalization settings with tes
 ![](assets/messages-simple-preview.png)
 
 You must also check alerts in the upper section of the editor.  Some of them are simple warnings, but others can prevent you from using the message. 
-
 -->
+
 

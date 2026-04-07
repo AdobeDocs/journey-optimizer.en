@@ -141,8 +141,11 @@ To do so:
 ## Add rich text to a customizable fragment {#rich-text}
 
 Rich text such as line breaks, bold, italics etc., can be added to a customizable fragment by using HTML components. To do so, follow the steps below.
+
 <!--
-➡️ [Learn how to add and use rich text in a customizable fragment in this video](#video)-->
+➡️ [Learn how to add and use rich text in a customizable fragment in this video](#video)
+-->
+
 
 ### Create a fragment including rich text {#add-rich-text}
 
@@ -187,6 +190,7 @@ When adding the fragment to your email, you can now edit the rich text content a
 1. In the personalization editor that opens, update the <!--CSS-->styling and/or content as wanted by adding or removing elements of the editable field.
 
     ![](assets/fragment-rich-editable-fields-update-styling.png)
+
 
 <!--
 ## How-to video {#video}

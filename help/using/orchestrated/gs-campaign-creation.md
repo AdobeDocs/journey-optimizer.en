@@ -11,13 +11,16 @@ version: Campaign Orchestration
 
 This page walks you through the essential steps to build and launch an Orchestrated campaign—from setup and design to monitoring and reporting.
 
+
 <!--
 <table style="table-layout:fixed"><tr style="border: 0; text-align: center;" >
 <td><a href="#create"><img alt="Create & schedule your campaign" src="../../channels/assets/do-not-localize/email.png"></a><br/><a href="#create"><strong>Create & schedule your campaign</strong></a></td>
 <td><a href="#orchestrate"><img alt="Orchestrate campaign activities" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="#orchestrate"><strong>Orchestrate campaign activities</strong></a></td>
 <td><a href="#start"><img alt="Start & monitor your campaign" src="../../channels/assets/do-not-localize/push.png"></a><a href="#start"><strong>Start & monitor your campaign</strong></a></td>
 <td><a href="#report"><img alt="Analyze & report on results" src="../../channels/assets/do-not-localize/push.png"></a><a href="#report"><strong>Analyze & report on results</strong></a></td>
-</tr></table>-->
+</tr></table>
+-->
+
 
 >[!IMPORTANT]
 >

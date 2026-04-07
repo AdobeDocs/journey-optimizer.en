@@ -86,10 +86,13 @@ You can:
 >abstract="To fully delegate a new subdomain to Adobe, you need to copy-paste the Adobe nameserver information displayed in the Journey Optimizer interface into your domain-hosting solution to generate the matching DNS records. To delegate a subdomain using CNAMEs, you also need to copy-paste the SSL CDN URL validation record. Once the checks are successful, the subdomain is ready to be used to deliver messages."
 
 To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
+
 <!--
 >[!NOTE]
 >
->This section describes how to set up a subdomain using the full delegation. The custom delegation method is detailed in [this section](#setup-custom-subdomain).-->
+>This section describes how to set up a subdomain using the full delegation. The custom delegation method is detailed in [this section](#setup-custom-subdomain).
+-->
+
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** menu, then click **[!UICONTROL Set up subdomain]**.
 
@@ -112,7 +115,9 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
     ![](assets/subdomain-name.png)
 
-<!-- >[!CAUTION]
+
+<!--
+ >[!CAUTION]
     >
     >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
     >
@@ -120,6 +125,7 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
     Capital letters are not allowed in subdomains. TBC by PM
 -->
+
 
     >[!NOTE]
     >
@@ -180,10 +186,13 @@ To set up a subdomain using CNAMEs, follow the steps below.
 To complete your subdomain delegation, follow the steps below.
 
 1. Click **[!UICONTROL Submit]**.
+
 <!--
     >[!NOTE]
     >
-    >If an error occurs while trying to submit a custom subdomain, refer to [this section](delegate-custom-subdomain.md#check-list).-->
+    >If an error occurs while trying to submit a custom subdomain, refer to [this section](delegate-custom-subdomain.md#check-list).
+-->
+
 
 1. You can create the records and submit the subdomain configuration later on using the **[!UICONTROL Save as draft]** button.
 

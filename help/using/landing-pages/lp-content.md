@@ -248,6 +248,7 @@ the message corresponding to the selected checkbox is displayed upon submitting 
 >
 >If a user selects the two checkboxes, both texts will display.
 
+
 <!--
 ## Use landing page additional data {#use-additional-data}
 

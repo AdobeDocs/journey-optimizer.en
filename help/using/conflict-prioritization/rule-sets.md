@@ -65,11 +65,15 @@ In addition to this "Global Default Rule Set" rule set, you can create **rule se
 >title="Select the message rule category"
 >abstract="When activated and applied to a message, all the frequency rules matching the selected category will be automatically applied to this message. Currently only the Marketing category is available."
 
-<!--NOT USED?
+
+<!--
+NOT USED?
 [!CONTEXTUALHELP]
 >id="ajo_rule_sets_capping"
 >title="Set the capping for your rule"
->abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."-->
+>abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."
+-->
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_type"

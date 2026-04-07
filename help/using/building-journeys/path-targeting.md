@@ -25,13 +25,17 @@ Targeting rules allow you to determine specific rules or qualifications that mus
 
 Unlike experimentation, which is a random assignment of a given path, targeting is deterministic in terms of ensuring the right audience or profile enters the specified path.
 
-<!--With targeting, specific rules can be defined based on:
+
+<!--
+With targeting, specific rules can be defined based on:
 
 * **User profile attributes** such as location (eg. geo-targeting), age, or preferences. For example, users in the US receive a "Golden Gate" promotion, while users in France receive an "Eiffel Tower" promotion.
 
 * **Contextual data** such as device type (eg. device-targeting), time of day, or session details. For example, desktop users receive desktop-optimized content, while mobile users receive mobile-optimized content.
 
-* **Audiences** which can be used to include or exclude profiles that have a particular audience membership.-->
+* **Audiences** which can be used to include or exclude profiles that have a particular audience membership.
+-->
+
 
 To set up targeting in a journey, follow the steps below.
 

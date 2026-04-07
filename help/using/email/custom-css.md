@@ -69,7 +69,6 @@ You can input any valid CSS string in the **[!UICONTROL Add custom CSS]** text a
 
 Below are examples of valid CSS.
 
-```css
 .acr-component[data-component-id="form"] {
   display: flex;
   justify-content: center;
@@ -124,15 +123,14 @@ Below are examples of valid CSS.
 .is-invalid ~ .spectrum-HelpText {
   display: flex !important;
 }
-```
 
-```css
+
 @media only screen and (min-width: 600px) {
   .acr-paragraph-1 {
     width: 100% !important;
   }
 }
-```
+
 
 +++
 
@@ -143,7 +141,6 @@ If invalid CSS is entered, an error message is displayed, indicating that the CS
  
 Using `<style>` tags is not accepted:
 
-```html
 <style type="text/css">
   .acr-Form {
     width: 100%;
@@ -154,14 +151,12 @@ Using `<style>` tags is not accepted:
   }
 </style>
 
-```
  
 Invalid syntax such as missing braces is not accepted:
 
-```css
 body {
   background: red;
-```
+
 
 +++
 
@@ -171,7 +166,6 @@ Your custom CSS is added to the end of the `<head>` section as part of a `<style
 
 +++ See sample 
 
-```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -202,7 +196,7 @@ Your custom CSS is added to the end of the `<head>` section as part of a `<style
     <!-- Minimal content -->
   </body>
 </html>
-```
+
 
 +++
 
@@ -217,8 +211,11 @@ If you want to use custom CSS with content imported into the Email Designer, con
 
 * If importing content created with the Email Designer including CSS applied through the **[!UICONTROL Add custom CSS]** option, the CSS previously applied will be visible and editable from the same option.
 
+
 <!--
-* If importing content created with the Email Designer with CSS applied externally, the CSS code previously applied cannot be accessed within the **[!UICONTROL Add custom CSS]** pop-up window, but you can still override it with new custom CSS.-->
+* If importing content created with the Email Designer with CSS applied externally, the CSS code previously applied cannot be accessed within the **[!UICONTROL Add custom CSS]** pop-up window, but you can still override it with new custom CSS.
+-->
+
 
 ## Troubleshooting {#troubleshooting}
 
@@ -232,9 +229,8 @@ If your custom CSS is not applied, consider the options below.
 
   +++ For example:
 
-  ```html
   <style data-name="global-custom" type="text/css" data-disabled="true"> body: { color: red; } </style>
-  ```
+
 
   +++
 
@@ -246,10 +242,9 @@ If your custom CSS is not applied, consider the options below.
   
     +++ For example:
 
-    ```css
     .acr-Form {
       background: red !important;
     }
-    ```
+
 
     +++

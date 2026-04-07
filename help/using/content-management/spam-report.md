@@ -25,11 +25,13 @@ To access the **[!UICONTROL Spam report]**, follow the steps below.
 
     ![](assets/spam-report-button.png)
 
+
 <!--
     You can also open the [Email Designer](../email/content-from-scratch.md), click the **[!UICONTROL More]** button and select **[!UICONTROL Check spam score]** from the menu.
 
     ![](assets/spam-report-check-score.png)
 -->
+
 
 1. An anti-spam checking is automatically performed and the **[!UICONTROL Spam report]** window displays the results. It shows how your content is doing in terms of body layout, structure, image size, spam trigger words if any, etc.
 
@@ -50,7 +52,9 @@ To access the **[!UICONTROL Spam report]**, follow the steps below.
 
     ![](assets/spam-report-low-score.png)
 
-<!--You can also check the message's alerts for warnings on potential risk of spam detection. Follow the steps below.
+
+<!--
+You can also check the message's alerts for warnings on potential risk of spam detection. Follow the steps below.
 
 1. Click the **[!UICONTROL Alerts]** button on top right of the screen. [Learn more about email alerts](../email/create-email.md#check-email-alerts)
 
@@ -58,3 +62,4 @@ To access the **[!UICONTROL Spam report]**, follow the steps below.
 
     ![](assets/spam-report-alert.png)
 -->
+

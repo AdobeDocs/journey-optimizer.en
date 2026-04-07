@@ -130,12 +130,15 @@ Before that, verify the following:
 
 * If you haven't already done so, follow the steps to [generate, download and send the CSR](#send-csr-to-ca).
 
+
 <!--
     * Click **[!UICONTROL Regenerate CSR]** and fill the form to generate the Certificate Signing Request.
 
     * Click **[!UICONTROL Download CSR]** to save the form to your local computer.
 
-    * Send the CSR to the Certificate Authority to get your SSL certificate.-->
+    * Send the CSR to the Certificate Authority to get your SSL certificate.
+-->
+
 
 1. Once you have retrieved your SSL certificate, click **[!UICONTROL Upload certificate]**.
 
@@ -143,11 +146,10 @@ Before that, verify the following:
 
 1. Upload the SSL certificate to [!DNL Journey Optimizer] in .pem format with the complete certificate chain. Here is a sample of a .pem file format:
 
-    ```
     -----BEGIN CERTIFICATE-----
     MIIDXTCCAkWgAwIBAgIJALc3... (base64 encoded data)
     -----END CERTIFICATE-----
-    ```
+
 
 1. Check the box "I confirm that I have uploaded the SSL certificate".
 

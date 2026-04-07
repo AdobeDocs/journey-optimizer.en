@@ -35,8 +35,11 @@ To prevent these issues, [!DNL Journey Optimizer] rewrites the plain text so tha
 
 ## Recommended use cases {#use-cases}
 
+
 <!--
-* **Critical details only in images** — Offers, promo codes, or deadlines shown in banners or graphics are invisible in plain text. Use the optimizer (and manual edits) so the same facts appear as text, improving extraction by AI summaries and text-only clients.-->
+* **Critical details only in images** — Offers, promo codes, or deadlines shown in banners or graphics are invisible in plain text. Use the optimizer (and manual edits) so the same facts appear as text, improving extraction by AI summaries and text-only clients.
+-->
+
 
 * **Dense or fragmented auto-generated text** — When default plain text is hard to scan, optimization can produce a clearer linear narrative with explicit offers and links.
 

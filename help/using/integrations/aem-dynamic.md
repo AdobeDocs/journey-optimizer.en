@@ -35,6 +35,7 @@ Enhance and optimize your content for any screen or browser by inserting dynamic
 
 Dynamic media integration with Adobe Journey Optimizer is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
 
+
 <!--
 >[!AVAILABILITY]
 >
@@ -45,6 +46,7 @@ Dynamic media integration with Adobe Journey Optimizer is available for both Dyn
 >* For Dynamic Media with Open API: Use the `.avif` format. This format includes built-in fallback mechanisms to deliver a compatible format when necessary.
 >
 -->
+
 
 To add an Adobe Experience Manager asset in your HTML content, follow these steps:
 
@@ -191,6 +193,7 @@ You can insert your dynamic template directly into your content using the HTML c
 
 Once you have performed your tests and validated the content, you can send your message to your audience. 
 
+
 <!--
 ## Personalization with Text Overlay
 
@@ -243,8 +246,8 @@ Enable conditional content in your dynamic media to better target your audience 
 1. Select your **[!UICONTROL Component]** and access the **[!UICONTROL Settings]** menu.
 
 1. In the **[!UICONTROL Custom Attributes]** menu, populate the Dynamic Media text and personalization fields to customize the content for your audience.
-
 -->
+
 
 ## How-to video {#video}
 

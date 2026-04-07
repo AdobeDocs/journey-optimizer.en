@@ -40,8 +40,11 @@ Provided no other delivery was attempted and successful between those two emails
 >id="ajo_admin_suppression_list_bounces"
 >title="Update the retry threshold"
 >abstract="If the default value does not suit your needs, you can modify the allowed number of consecutive soft bounces. When the retry counter reaches the error threshold for a specific email address, this address is added to the suppression list."
+
 <!--
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/suppression-list.html" text="Understand the suppresion list"-->
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/reporting/deliverability/suppression-list.html" text="Understand the suppresion list"
+-->
+
 
 In case the default value of 5 does not suit your needs, you can modify the error threshold following the steps below.
 

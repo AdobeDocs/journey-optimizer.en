@@ -234,8 +234,8 @@ For example, if a journey is scheduled for 6 PM daily, you can specify a number 
 
 +++
 
-<!--
 
+<!--
 ### Segment filters {#segment-filters}
 
 [!CONTEXTUALHELP]
@@ -250,8 +250,8 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 **Segment membership**: choose whether you want to listen to segment entrances or exits. 
 
 **Lookback window**: define when you want to start to listen to entrances or exits. This lookback window is expressed in hours, starting from the moment the journey is triggered.  If you set this duration to 0, the journey will target all members of the segment. For recurring journeys, it will take into account all entrances/exits since the last time the journey was triggered.
-
 -->
+
 
 ## Test and publish the journey {#testing-publishing}
 

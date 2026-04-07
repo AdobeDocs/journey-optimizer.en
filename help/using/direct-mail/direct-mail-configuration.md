@@ -200,11 +200,14 @@ For more information on connecting your SFTP account to Experience Platform, ref
 >abstract="A direct mail configuration contains the settings for the formatting of the file which contains the targeted audience data and will be used by the mail provider. You must also define where the file will be exported by selecting the file routing configuration."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/direct-mail-configuration#file-routing-configuration" text="Configure file routing"
 
+
 <!--
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_sort"
 >title="Define the sort order"
->abstract="If you select this option, the sort will be by profile ID, ascending or descending. If you unselect it, the sorting configuration defined when creating the direct mail message within a journey or a campaign."-->
+>abstract="If you select this option, the sort will be by profile ID, ascending or descending. If you unselect it, the sorting configuration defined when creating the direct mail message within a journey or a campaign."
+-->
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_split"
@@ -263,6 +266,7 @@ You can now [create a direct mail message](../direct-mail/create-direct-mail.md)
 >
 >Duplicate rows where all the values in the row are the same are automatically removed from the file.
 
+
 <!--
     In the **[!UICONTROL Insertion]** section, you can choose to automatically remove duplicate rows.
 
@@ -275,5 +279,4 @@ You can now [create a direct mail message](../direct-mail/create-direct-mail.md)
     >[!NOTE]
     >
     >NOTE You can set any number between 1 and 200,000 records, meaning each file must contain at least 1 row and no more than 200,000 rows.
-
 -->

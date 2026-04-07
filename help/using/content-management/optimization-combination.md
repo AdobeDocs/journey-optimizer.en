@@ -44,8 +44,10 @@ To combine both targeting and experiments in a journey or campaign, follow the s
 
 Once the journey/campaign is live, users from each targeted group are randomly assigned the different content variations defined for the group they belong to.
 
+
 <!--
 ## Reporting on Message optimization
 
 E.g. explaining how a marketer can look at the report to determine which treatment (e.g. which message content) is performing the best for the targeting audience
 -->
+

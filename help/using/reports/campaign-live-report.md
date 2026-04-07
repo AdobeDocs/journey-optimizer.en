@@ -55,11 +55,13 @@ The **[!UICONTROL Campaign's Statistics]** KPIs serve as a comprehensive dashboa
 
 +++
 
+
 <!--
 ### Experimentation tab (#experimentation-live)
 
 From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Experimentation]** tab details the main information relative to how each variant is performing and if there is was winner during the test.
 -->
+
 
 ## Email tab {#email-live}
 

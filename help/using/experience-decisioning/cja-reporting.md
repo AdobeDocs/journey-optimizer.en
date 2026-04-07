@@ -15,9 +15,13 @@ version: Journey Orchestration
 
 Once journeys or campaigns with selection strategies are live, you can access dedicated reports to monitor Decisioning Key Performance Indicators (KPIs).
 
-<!--Once code-based experiences are live, you can access dedicated reports to monitor Key Performance Indicators (KPIs) as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your campaign.
 
-This encompasses details related to the decision items performances and how users interacted with them. [Learn how to work with Code-based experience reports](../reports/campaign-global-report-cja-code.md)-->
+<!--
+Once code-based experiences are live, you can access dedicated reports to monitor Key Performance Indicators (KPIs) as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your campaign.
+
+This encompasses details related to the decision items performances and how users interacted with them. [Learn how to work with Code-based experience reports](../reports/campaign-global-report-cja-code.md)
+-->
+
 
 ![](../reports/assets/cja-decisioning-kpis.png)
 

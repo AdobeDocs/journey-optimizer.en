@@ -94,6 +94,7 @@ By creating custom Firefly model providers, you can expand your AI capabilities 
 
      ![](assets/gen-model-manage-8.png){zoomable="yes"}
 
+
 <!--
 1. Once the connection test is successful, choose whether to enable the model for selected brands.
 
@@ -101,6 +102,7 @@ By creating custom Firefly model providers, you can expand your AI capabilities 
 
     If disabled, select which brands this model should be applied to.
 -->
+
 
 Once configured, you can select any of your custom generative models when creating images in your content. [Learn more about generating images](generative-image.md).
 

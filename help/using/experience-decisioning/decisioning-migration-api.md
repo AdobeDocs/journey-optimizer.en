@@ -104,15 +104,13 @@ Use the following API call to create a dependency analysis workflow.
 
 **API format**
 
-```http
 POST /workflows/generate-dependencies
-```
+
 
 **Sandbox-level dependency (recommended first)**
 
 Start with a sandbox-level analysis to get a complete view of all dependencies:
 
-```shell
 curl --request POST \
   --url "https://decisioning-migration.adobe.io/workflows/generate-dependencies" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
@@ -124,7 +122,7 @@ curl --request POST \
     "targetSandboxDetails": { "sandboxName": "<TARGET_SANDBOX_NAME>" },
     "requestLevel": "sandbox"
   }'
-```
+
 
 **Offer-level dependency**
 
@@ -140,18 +138,16 @@ Poll the dependency workflow to check when the analysis is complete.
 
 **API format**
 
-```http
 GET /workflows/generate-dependencies/{id}
-```
+
 
 **Request**
 
-```shell
 curl --request GET \
   --url "https://decisioning-migration.adobe.io/workflows/generate-dependencies/<WORKFLOW_ID>" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>"
-```
+
 
 When the `status` field shows `Completed`, the dependency analysis is ready. Use the workflow output to build your migration dependency mappings:
 
@@ -170,15 +166,13 @@ Use the dependency mappings from Step 1 to configure and execute your migration.
 
 **API format**
 
-```http
 POST /workflows/migration
-```
+
 
 **Sandbox-level migration**
 
 To migrate all decisioning objects from one sandbox to another:
 
-```shell
 curl --request POST \
   --url "https://decisioning-migration.adobe.io/workflows/migration" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
@@ -206,23 +200,21 @@ curl --request POST \
     },
     "requestLevel": "sandbox"
   }'
-```
+
 
 **Offer-level migration**
 
 To migrate specific offers only, use `requestLevel: "offer"` and add an `offersList` array:
 
-```json
 "offersList": ["offer-id-1", "offer-id-2"]
-```
+
 
 **Decision-level migration**
 
 To migrate specific decisions only, use `requestLevel: "decision"` and add a `decisionsList` array:
 
-```json
 "decisionsList": ["decision-id-1", "decision-id-2"]
-```
+
 
 #### Monitor migration status {#poll-migration-status}
 
@@ -230,18 +222,16 @@ Poll the migration workflow to track its progress.
 
 **API format**
 
-```http
 GET /workflows/migration/{id}
-```
+
 
 **Request**
 
-```shell
 curl --request GET \
   --url "https://decisioning-migration.adobe.io/workflows/migration/<WORKFLOW_ID>" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>"
-```
+
 
 **Migration results**
 
@@ -271,13 +261,12 @@ After the migration completes successfully, verify that all objects were migrate
 
 If your migration created a datastream, you can test offer delivery using the following example:
 
-```shell
 curl --request POST \
   --url "https://edge.adobedc.net/ee/or2/v1/interact?configId=<DATASTREAM_ID>" \
   --header "Content-Type: application/json" \
   --header "x-request-id: <uuid>" \
   --data '{ "events": [ ... ] }'
-```
+
 
 ## Rollback a migration {#rollback}
 
@@ -289,20 +278,18 @@ Initiate a rollback by creating a rollback workflow that references the migratio
 
 **API format**
 
-```http
 POST /workflows/rollback
-```
+
 
 **Request**
 
-```shell
 curl --request POST \
   --url "https://decisioning-migration.adobe.io/workflows/rollback" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
   --header "Content-Type: application/json" \
   --data '{ "rollbackWorkflowId": "<MIGRATION_WORKFLOW_ID>" }'
-```
+
 
 Replace `<MIGRATION_WORKFLOW_ID>` with the ID of the migration workflow you want to roll back.
 
@@ -312,18 +299,16 @@ Poll the rollback workflow to track its progress.
 
 **API format**
 
-```http
 GET /workflows/rollback/{rollbackWorkflowId}
-```
+
 
 **Request**
 
-```shell
 curl --request GET \
   --url "https://decisioning-migration.adobe.io/workflows/rollback/<ROLLBACK_WORKFLOW_ID>" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>"
-```
+
 
 ## Handle concurrent workflows {#handle-concurrency}
 
@@ -350,13 +335,17 @@ When migrating from Decision management to Decisioning, entities are mapped as f
 
 ## Workflow cleanup {#cleanup}
 
-<!--Workflow resources can be deleted by service users only. Delete operations require an `If-Match` header with the workflow's `_etag` value.
+
+<!--
+Workflow resources can be deleted by service users only. Delete operations require an `If-Match` header with the workflow's `_etag` value.
 
 **Available delete operations:**
 
 * `DELETE /workflows/generate-dependencies/{id}`
 * `DELETE /workflows/migration/{id}`
-* `DELETE /workflows/rollback/{id}`-->
+* `DELETE /workflows/rollback/{id}`
+-->
+
 
 Workflow deletion is not publicly available. If you need to delete a workflow resource, contact your system administrator.
 
