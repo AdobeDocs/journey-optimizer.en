@@ -44,6 +44,25 @@ Because of this model, release notes are updated between monthly releases. For f
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning support in email channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now use <strong>Decisioning</strong> to personalize and optimize the content of your email messages. Leverage Priority Scores, Formulas, or AI Models to display the most relevant offers and content to each recipient.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). With this General Availability release, mirror pages are now supported.</p>
+<p><img src="assets/do-not-localize/exd-email.gif"></p>
+<p>For more information, refer to the <a href="../experience-decisioning/create-decision-policy.md">detailed documentation</a>.</p>
+<p>Availability date: April 6, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#april-26-improv}
 
 #### Adobe Experience Manager Integrations
@@ -379,7 +398,6 @@ Improvements coming with this release are listed below.
 
   Availability date: March 2, 2026
 
-
 ## Coming soon {#coming-soon}
 
 The features and improvements below are planned for release later in March/early April. Release dates and scope are **subject to change without prior notice**.
@@ -423,25 +441,7 @@ This tool allows you to test and vary, and customize communications, sequencing,
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in email channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now use <strong>Decisioning</strong> to personalize and optimize the content of your email messages. Leverage Priority Scores, Formulas, or AI Models to display the most relevant offers and content to each recipient.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). With this General Availability release, mirror pages are now supported.</p>
-<p><img src="assets/do-not-localize/exd-email.gif"></p>
-<!--<p>For more information, refer to the <a href="../experience-decisioning/create-decision-policy.md">detailed documentation</a>.</p>-->
-<p>Availability date: April 3, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
+<!--WAITING RELEASE DATE CONFIRMATION * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.-->
 <!--
 WAITING RELEASE DATE CONFIRMATION
 * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.

@@ -53,7 +53,7 @@ Learn to delegate and configure email subdomains to optimize deliverability and 
 [Delegate email subdomains](delegate-subdomains-landing-page.md)
 :::
 
-:::
+<!--:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Implement an IP Warmup Plan
@@ -61,7 +61,7 @@ Implement an IP Warmup Plan
 Create and execute IP warmup plans to establish sender reputation and enhance email deliverability.
 
 [Learn about IP warmup plans](implement-ip-warmup-plan-landing-page.md)
-:::
+:::-->
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
