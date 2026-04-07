@@ -66,7 +66,7 @@ Implement an IP Warmup Plan
 
 Create and execute IP warmup plans to establish sender reputation and enhance email deliverability.
 
-[Learn about IP warmup plans](ip-warmup-gs.md)
+[Learn about IP warmup plans](../using/configuration/ip-warmup-gs.md)
 :::
 
 :::
