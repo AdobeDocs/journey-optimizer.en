@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: experimentation, experiment, journey, path, optimization, A/B testing, multi-armed bandit, scale the winner
+exl-id: 7241ade3-577c-4bb3-b0c3-017133871ca5
 ---
 # Use path experimentation {#experimentation}
 

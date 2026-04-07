@@ -8,8 +8,8 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: targeting, rules, journey, path, optimization, personalization
+exl-id: b30ce5c9-a0e2-4601-97a3-5bec648368e4
 ---
-
 # Leverage path targeting {#targeting}
 
 >[!CONTEXTUALHELP]
@@ -134,4 +134,3 @@ Customers who have recently purchased can go into a short "Thank you + Cross-sel
 ![Purchase history targeting with cross-sell path for buyers and nurture path for non-buyers](assets/journey-optimize-targeting-uc-purchase.png)
 
 +++
-
