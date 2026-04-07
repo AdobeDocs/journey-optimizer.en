@@ -5,6 +5,7 @@ feature: Content Cards
 topic: Content Management
 role: User
 level: Beginner
+exl-id: 0ab71b21-0085-4a93-b319-3c960bd8f7dd
 ---
 # Design an Inbox {#inbox-design}
 

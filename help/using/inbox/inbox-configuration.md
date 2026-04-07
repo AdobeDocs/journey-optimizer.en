@@ -5,6 +5,7 @@ feature: Channel Configuration, Content Cards
 topic: Content Management
 role: Admin
 level: Experienced
+exl-id: d308ab4a-843c-4729-ad18-97d89c708357
 ---
 # Configure Inbox {#inbox-configuration}
 

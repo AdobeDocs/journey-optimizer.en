@@ -5,6 +5,7 @@ feature: Content Cards
 topic: Content Management
 role: User
 level: Beginner
+exl-id: 60190d0b-d8e7-4a78-9924-d948f2769f6c
 ---
 # Get started with Inbox {#inbox-gs}
 

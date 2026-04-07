@@ -5,6 +5,7 @@ feature: Content Cards
 topic: Content Management
 role: User
 level: Beginner
+exl-id: 7d650278-4a62-4666-b8d7-f0b79ec527ea
 ---
 # Create an Inbox {#inbox-create}
 
