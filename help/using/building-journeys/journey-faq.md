@@ -600,7 +600,7 @@ Yes. Use an **[Optimize activity](conditions.md)** to route profiles based on th
 * Use [channel surfaces](../configuration/channel-surfaces.md) to manage channel configurations
 * Test all paths to ensure proper message delivery
 
-Learn more about [conditions](conditions.md), [message actions](journeys-message.md), and [channel selection](../channels/gs-channels.md).
+Learn more about [conditions](conditions.md), [message actions](journey-action.md), and [channel selection](../channels/gs-channels.md).
 
 +++
 
