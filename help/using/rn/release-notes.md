@@ -93,6 +93,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
   Availability date: April 3, 2026
 
+
 ## March '26 release notes {#march-26-rn}
 
 The [New capabilities](#march-26-features) and [Improvements](#march-26-improv) sections cover capabilities already available. The [Coming soon](#coming-soon) section lists features and improvements scheduled for release later in March.
@@ -434,6 +435,12 @@ Improvements coming with this release are listed below.
 
   Availability date: March 2, 2026
 
+#### Decisioning
+
+* **Decisioning migration — offer and context attributes** - The Migration API entity mapping now lists **offer attributes** (`migratedofferattributes` on the Personalized offer item schema) and **context attributes** (`migratedcontextattributes` on the migration dataset schema). [Read more](../experience-decisioning/decisioning-migration-api.md#entity-mapping)
+
+  Availability date: March 31, 2026
+  
 ## Coming soon {#coming-soon}
 
 The features and improvements below are planned for release later in March/early April. Release dates and scope are **subject to change without prior notice**.
@@ -441,14 +448,13 @@ The features and improvements below are planned for release later in March/early
 <table>
 <thead>
 <tr>
-<th><strong>Journey path optimization</strong><br/></th>
+<th><strong>Journey path experimentation</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Use the new Optimize node to target specific audiences or run A/B tests to determine the best path to meet your business-centric KPIs.
-This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
+<p>Use the new <strong>Optimize</strong> node to run A/B tests or multi-armed bandit experiments to determine the best path to meet your business-centric KPIs. This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
 </p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../building-journeys/optimize.md">Learn more</a></p>
 <p><img src="assets/do-not-localize/optimize.gif"></p>
