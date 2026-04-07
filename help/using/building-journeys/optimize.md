@@ -28,13 +28,13 @@ The **Optimize** activity lets you define how individuals progress through your 
 
 ![Optimize button in journey activity palette](assets/journey-optimize.png)
 
-## What is a journey path?
+## What is a journey path? {#journey-path}
 
 A journey **path** can consist of any of the following: sequencing of communications, time in between them, number of communications, or any combination of these three variables.
 
 For example, one path could contain one email, another could contain two SMS messages, and a third could contain an email, a Wait node of two hours, and then an SMS message.
 
-## Three ways to optimize your journeys
+## Three ways to optimize your journeys {#optimization-methods}
 
 Through the **Optimize** activity, you can perform the following actions on your journey paths:
 
@@ -48,11 +48,11 @@ Through the **Optimize** activity, you can perform the following actions on your
 
 * [Apply conditions](conditions.md) - Create conditional paths based on specific criteria such as data sources, time, date, percentage splits, or profile caps. This is the equivalent of the former Condition activity.
 
-## How it works
+## How it works {#how-it-works}
 
 Once the journey is live, profiles are evaluated against the defined criteria, and based on matching criteria, they are sent down the appropriate path from the journey.
 
-## Next steps
+## Next steps {#next-steps}
 
 Select the optimization method that best fits your use case:
 
