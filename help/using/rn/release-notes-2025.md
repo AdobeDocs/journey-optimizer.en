@@ -93,7 +93,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>RCS Basic Messaging</strong><br/></th>
@@ -110,14 +111,19 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <li><strong>Fallback to SMS:</strong> Automatic fallback to SMS when the recipient's device does not support RCS or is temporarily unreachable via RCS.</li>
 <li><strong>Basic message composition:</strong> Send basic text-based RCS messages.</li>
 </ul>
+-->
 <!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-<!--/td>
+<!-- 
+<p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+<!--
+</td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Direct mail channel in Orchestrated campaigns</strong><br/></th>
@@ -127,14 +133,18 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>Direct mail channel is now available in orchestrated campaigns. The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data.</p>
+-->
 <!--img src="assets/do-not-localize/FILE.gif"-->
 <!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-<!--/td>
+<!--
+</td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Direct Mail channel in journeys</strong><br/></th>
@@ -150,9 +160,11 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <!--/td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>New source connectors for loyalty apps</strong><br/></th>
@@ -167,9 +179,11 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Decisioning support in email channel</strong><br/></th>
@@ -186,7 +200,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 <table>
 <thead>
@@ -664,7 +679,8 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Use Adobe Experience Platform data for personalization</strong><br/></th>
@@ -685,9 +701,11 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Use Decisioning in email channel</strong><br/></th>
@@ -703,7 +721,8 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 <table>
 <thead>
@@ -1350,8 +1369,10 @@ New capabilities coming with this release are detailed below.
 <p>With the integration of Adobe Experience Manager and Adobe Journey Optimizer, you can now effortlessly use Adobe Experience Manager Content Fragments within your Journey Optimizer content. This seamless connection makes it easier to access and use your AEM content directly in Journey Optimizer.</p>
 <p>Previously available for a limited set of organizations (LA), this capability is now GA with the following enhancement: you can now define placeholders and map personalization values within the fragment signature using the Editor mode.</p>
 <ul>
-<!--li>Create offers by directly selecting an AEM Content Fragment.</li>
-<li>Define placeholders and map personalization values within the fragment signature using the Editor mode.</li-->
+<!--
+li>Create offers by directly selecting an AEM Content Fragment.</li>
+<li>Define placeholders and map personalization values within the fragment signature using the Editor mode.</li>
+-->
 </ul>
 </br>
 <img src="assets/do-not-localize/content-fragment.gif">
@@ -1414,7 +1435,7 @@ New capabilities coming with this release are detailed below.
 <tbody>
 <tr>
 <td>
-<!--p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p-->
+<!--p>Previously available in beta, content variations simulation is now generally available (GA). It allows you to preview different variations of your content using sample input data uploaded from a CSV or JSON file or added manually. All the attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.</p>-->
 <p>Previously released in Limited Availability, this capability is now available to all environments. With this General Availability release, the feature now includes support for multilingual content and content experiments, enabling you to test variations across different languages and treatments. Additionally, it now supports contextual attributes (in addition to profile attributes), allowing for even more dynamic and situational content testing.</p>
 <img src="assets/do-not-localize/variants.gif">
 <p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
@@ -1539,19 +1560,23 @@ Improvements coming with this release are listed below.
 <!--
 * **Decisioning - Leverage Adobe Experience Platform datasets** 
   
-  Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.-->
+  Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.
+-->
 
 * **Right rail in campaigns list** - Availability date: May 20, 2025
 
   In the campaign list, selecting a campaign now opens a pane displaying its details.
 
-<!--* **Form fields in code-based experience content**
+<!--
+* **Form fields in code-based experience content**
 
-  In content templates, you can now define specific JSON or HTML fields which enable non-technical users to easily edit content in code-based experiences without the need to manipulate code.-->
+  In content templates, you can now define specific JSON or HTML fields which enable non-technical users to easily edit content in code-based experiences without the need to manipulate code.
+-->
 
-<!--* **Subdomains - 'Custom delegation' method**  
+<!--
+* **Subdomains - 'Custom delegation' method**  
   In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
-  -->
+-->
 
 
 
@@ -1581,7 +1606,8 @@ New capabilities coming with this release are listed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Adobe Experience Manager as a Cloud Service integration</strong><br/></th>
@@ -1595,9 +1621,11 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Simulate content variations (General Availability)</strong><br/></th>
@@ -1612,7 +1640,8 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
 <table>
 <thead>
@@ -1631,7 +1660,8 @@ New capabilities coming with this release are listed below.
 </table>
 
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Custom SMS provider (General Availability)</strong><br/></th>
@@ -1644,7 +1674,8 @@ New capabilities coming with this release are listed below.
 <p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p></td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 
 <table>
@@ -1668,7 +1699,8 @@ New capabilities coming with this release are listed below.
 
 
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Calendar view for campaign and journey inventory (Limited Availability)</strong><br/></th>
@@ -1682,7 +1714,8 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
 <table>
 <thead>
@@ -1719,7 +1752,8 @@ New capabilities coming with this release are listed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Themes in the Email Designer (Beta)</strong><br/></th>
@@ -1736,7 +1770,8 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 <table>
 <thead>
@@ -1825,21 +1860,25 @@ New capabilities coming with this release are listed below.
     >
     >This improvement is only available for a set of organizations (Limited Availability).
 
-<!--- **Folders for content templates and fragments** - Availability date: May 5, 2025
+<!--
+**Folders for content templates and fragments** - Availability date: May 5, 2025
 
   Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy.
 
 
 
-<!--- **Right rail in campaigns list**  
+**Right rail in campaigns list**  
 
-  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.-->
+  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.
+-->
 
-<!--**Playbooks**
+<!--
+**Playbooks**
 
 - **Create your own playbooks (Beta)**
   
-  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.-->
+  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.
+-->
 
 
 
@@ -1849,7 +1888,8 @@ New capabilities coming with this release are listed below.
 
 New capabilities coming with this release are detailed below.
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Integration with Adobe Express (Limited Availability)</strong><br/></th>
@@ -1866,10 +1906,12 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Journey metrics</strong><br/></th>
@@ -1884,9 +1926,11 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
-<!-- table>
+<!-- 
+<table>
 <thead>
 <tr>
 <th><strong>Calendar view for journeys (Limited Availability)</strong><br/></th>
@@ -1901,7 +1945,8 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 <table>
 <thead>
@@ -1963,7 +2008,8 @@ New capabilities coming with this release are detailed below.
 </table>
 </table>
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>LINE channel (Limited Availability)</strong><br/></th>
@@ -1978,7 +2024,8 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 
 ### Improvements {#25-03-improv}
@@ -2027,9 +2074,11 @@ HTML type content templates are now deprecated. Note that you can still use exis
 
 You can now leverage custom consent policies through marketing actions in transactional email channel configurations. [Learn more](../action/consent.md#surface-marketing-actions)
 
-<!--**Deliverability**
+<!--
+**Deliverability**
 
-You can now choose to have your emails relayed to your SMTP servers instead of being sent directly from Journey Optimizer to ISPs. This allows you to route final email deliveries through your own Mail Transfer Agents and IPs, or to perform final validations on the emails before sending them to your recipients. The SMTP relay capacity is available on demand - contact your Adobe representative.-->
+You can now choose to have your emails relayed to your SMTP servers instead of being sent directly from Journey Optimizer to ISPs. This allows you to route final email deliveries through your own Mail Transfer Agents and IPs, or to perform final validations on the emails before sending them to your recipients. The SMTP relay capacity is available on demand - contact your Adobe representative.
+-->
 
 
 
@@ -2107,7 +2156,7 @@ New capabilities coming with this release are detailed below.
 <td>
 <p>You can now validate a custom action configuration by making real API calls directly from Adobe Journey Optimizer. This new capability helps you troubleshoot your custom actions before or after using them in a journey. </p>
 <p>For more information, refer to the <a href="../action/troubleshoot-custom-action.md">detailed documentation</a>.</p>
-<!--p> This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p-->
+<!--p> This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>-->
 </td>
 </tr>
 </tbody>

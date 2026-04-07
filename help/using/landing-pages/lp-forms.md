@@ -40,11 +40,13 @@ When creating a preset:
     * **Target connection** – where the data is stored or consumed.
     * **Source flow** – the pipeline that moves data from the source connection into [!DNL Experience Platform], handling mapping, transformation, and validation.
 
+
 <!--
 >[!NOTE]
 >
 > To access and edit form presets, you must have the **[!UICONTROL Manage form presets]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).TBC
 -->
+
 
 To create a form preset, follow the steps below.
 

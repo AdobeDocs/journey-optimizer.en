@@ -29,9 +29,11 @@ This time zone will be used for every activity of the journey containing a time 
 * [Date condition](../building-journeys/conditions.md#date_condition)
 * [Custom wait](../building-journeys/wait-activity.md#custom)
 
+
 <!--
 * [Fixed date wait](../building-journeys/wait-activity.md#fixed_date)
 -->
+
 
 You can select a [fixed time zone](#fixed-timezone) or choose to use the time zone [defined in the user profile](#timezone-from-profiles).
 

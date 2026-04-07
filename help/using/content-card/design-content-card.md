@@ -71,6 +71,7 @@ Add buttons for users to interact with your content cards.
 
 1. In the **[!UICONTROL Target]** field, enter the web URL or deeplink where users will be directed after interacting with the button.
 
+
 <!--
 +++More options with advanced formatting
 
@@ -83,6 +84,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 
 +++
 -->
+
 
 ### Dismiss button {#close-button}
 
@@ -98,6 +100,7 @@ You can select from the following styles:
 
 
 
+
 <!--
 +++More options with advanced formatting
 
@@ -109,6 +112,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 * the **[!UICONTROL Alignment]**
 +++
 -->
+
 
 
 

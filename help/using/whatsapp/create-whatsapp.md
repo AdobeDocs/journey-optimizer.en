@@ -108,9 +108,11 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 
 1. From the journey or campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the WhatsApp message content.
 
+
 <!--
 1. Select **[!UICONTROL Template message]**.
 -->
+
 
 1. Choose your **Template category**:
 
@@ -141,6 +143,7 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
 Once you have performed your tests and validated the content, you can [send your WhatsApp message](send-whatsapp.md) to your audience and monitor its performance through [reporting](../reports/campaign-global-report-cja.md). 
+
 
 <!--
 * **[!UICONTROL Template message]**: Predefined message imported from Meta into Journey Optimizer. These are intended for sending notifications, alerts, or updates to your customers.
@@ -181,6 +184,7 @@ Once you have performed your tests and validated the content, you can send your 
 
 >[!ENDTABS]
 -->
+
 
 
 ## How-to video {#video}

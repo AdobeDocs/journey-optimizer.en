@@ -85,9 +85,13 @@ Adobe recommends the following minimum thresholds to ensure effective model perf
 * 1,000 impressions per offer/item per week
 * 100 conversion events per offer/item per week
 
-<!--**Absolute minimums (per 30 days):**
+
+<!--
+**Absolute minimums (per 30 days):**
 * At least **250 impressions** per offer/item  
-* At least **25 conversion events** per offer/item-->
+* At least **25 conversion events** per offer/item
+-->
+
 
 By default, the system will not attempt to build personalized models for offers/items with fewer than 1,000 impressions or 50 conversion events.
 

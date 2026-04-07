@@ -16,11 +16,15 @@ version: Journey Orchestration
 
 This feature enables you to create different **AI models** based on your business goals. Using these different goal-based strategies in a decision, the trained model system will help you understand how the different AI models are impacting your goals.
 
-<!--For example, you can select an AI model for the email channel and another one for the push channel. For each channel, the trained model system will leverage multiple data points to determine which offer should be presented first for a given decision policy?, rather than taking into account the offers' priority scores or a [ranking formula](create-ranking-formulas.md).
+
+<!--
+For example, you can select an AI model for the email channel and another one for the push channel. For each channel, the trained model system will leverage multiple data points to determine which offer should be presented first for a given decision policy?, rather than taking into account the offers' priority scores or a [ranking formula](create-ranking-formulas.md).
 
 >[!IMPORTANT]
 >
->For now, ranking models are not supported in Journey Optimizer authored channels.-->
+>For now, ranking models are not supported in Journey Optimizer authored channels.
+-->
+
 
 ## AI model types {#ai-model-types}
 

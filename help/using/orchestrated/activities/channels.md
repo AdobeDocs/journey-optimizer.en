@@ -29,6 +29,7 @@ version: Campaign Orchestration
 >title="Target"
 >abstract="Placeholder for Target section"
 
+
 <!--
 UNUSED IDs in BJ
 
@@ -41,8 +42,8 @@ UNUSED IDs in BJ
 >id="ajo_orchestration_push_android"
 >title="Push Android activity"
 >abstract="The Push Android activity lets you send Android Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring messages, automating the sending of Android Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
-
 -->
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_directmail"
@@ -221,7 +222,6 @@ Here is a cross-channel Orchestrated campaign example with a segmentation and tw
 
 ![](../assets/workflow-channel-example.png)
 
-<!--
 description, which use case you can perform (common other activities that you can link before of after the activity)
 
 how to add and configure the activity
@@ -229,13 +229,11 @@ how to add and configure the activity
 example of a configured activity within a workflow
 The Email delivery activity allows you to configure the sending an email in a workflow. 
 
--->
+You can also create a recurring Orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
 
-<!--You can also create a recurring Orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
+![](../assets/workflow-channel-example2.png)
 
-![](../assets/workflow-channel-example2.png)-->
-
-<!-- Scheduled emails available?
+Scheduled emails available?
 
 This can be a single send email and sent just once, or it can be a recurring email.
 * Single send emails are standard emails, sent once.
@@ -244,8 +242,6 @@ This can be a single send email and sent just once, or it can be a recurring ema
 When linked to a scheduler, you can define recurring emails.
 Email recipients are defined upstream of the activity in the same workflow, via an Audience targeting activity.
 
+The message preparation is triggered according to the workflow execution parameters. From the message dashboard, you can select whether to request or not a manual confirmation to send the message (required by default). You can start the workflow manually or place a scheduler activity in the workflow to automate execution.
 -->
-
-
-<!--The message preparation is triggered according to the workflow execution parameters. From the message dashboard, you can select whether to request or not a manual confirmation to send the message (required by default). You can start the workflow manually or place a scheduler activity in the workflow to automate execution.-->
 

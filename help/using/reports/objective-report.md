@@ -24,9 +24,11 @@ For a detailed list of every metric available in Adobe Journey Optimizer, refer 
 
 ### Delivery {#delivery-global-objectives}
 
+
 <!--
 ![](assets/campaign_report_global_1.png)
 -->
+
 
 The **[!UICONTROL Campaign's Statistics]** widget details the main information relative to your campaign:
 
@@ -54,9 +56,11 @@ With the **[!UICONTROL Campaign objective]** widget, you can also choose to comp
 
 ### Experimentation report {#experimentation-global-objectives}
 
+
 <!--
 ![](assets/experimentation_report_3.png)
 -->
+
 
 The **[!UICONTROL Experimentation]** tab provides key insights into the performance of each variant, and identifies the most successful one.
 

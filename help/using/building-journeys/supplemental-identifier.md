@@ -135,13 +135,17 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
     
         After applying the non-person identity namespace to a schema, you must create a new field group in order to use the supplemental identifier. Existing entities cannot be refreshed to recognize the new identifier.
 
-<!--1. **Add the supplemental ID field to the data source**
+
+<!--
+1. **Add the supplemental ID field to the data source**
 
     1. Navigate to the **[!UICONTROL Configuration]** / **[!UICONTROL Data Sources]** menu, then locate the "ExperiencePlatformDataSource" data source.
 
         ![Data source configuration with supplemental identifier mapping](assets/supplemental-ID-data-source.png)
 
-    1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).-->
+    1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).
+-->
+
 
 1. **Add and configure a Read audience activity in the journey**
 
@@ -175,23 +179,20 @@ In an object array with the supplemental ID as `bookingNum` and an attribute at 
     
 * The following expression in the condition activity will iterate through the object array and check whether the value of `bookingCountry` is equal to "FR":
 
-  ```
   @event{<event_name>.<object_path>.<object_array_name>.all(currentEventField.<attribute_path>.bookingNum==${supplementalId}).at(0).<attribute_path>.bookingCountry}=="FR"
-  ```
+
 
 * The following expression in the email personalization editor will iterate through the object array, pull out the `bookingCountry` applicable to the current journey instance, and display it in the content:
 
-  ```
   {{#each context.journey.events.<event_ID>.<object_path>.<object_array_name> as |l|}} 
 
   {%#if l.<attribute_path>.bookingNum = context.journey.technicalProperties.supplementalId%} {{l.<attribute_path>.bookingCountry}}  {%/if%}
 
   {{/each}}
-  ```
+
       
 * Example of the event used to trigger the journey:
 
-  ```
   "bookingList": [
         {
             "bookingInfo": {
@@ -206,7 +207,7 @@ In an object array with the supplemental ID as `bookingNum` and an attribute at 
             }
         }
     ]
-  ```
+
 
 +++
 

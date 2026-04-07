@@ -71,10 +71,14 @@ exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 >title="Add profile limit"
 >abstract="Toggle this option on to specify a maximum number of profiles to include in the composition."
 
-<!-- [!CONTEXTUALHELP]
+
+<!--
+ [!CONTEXTUALHELP]
 >id="ajo_ao_control_group_text"
 >title="Control Group"
->abstract="Use control groups to isolate a portion of the profiles. This allows you to measure the impact of a marketing activity and make a comparison with the behavior of the rest of the population."-->
+>abstract="Use control groups to isolate a portion of the profiles. This allows you to measure the impact of a marketing activity and make a comparison with the behavior of the rest of the population."
+-->
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_split"

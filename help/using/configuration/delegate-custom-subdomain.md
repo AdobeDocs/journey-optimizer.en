@@ -105,17 +105,18 @@ To set up a custom subdomain, follow the steps below.
 
 1. Once retrieved, click **[!UICONTROL Upload SSL certificate]** and upload the certificate to [!DNL Journey Optimizer] in .pem format with the complete certificate chain. Here is a sample of a .pem file format:
 
-    ```
     -----BEGIN CERTIFICATE-----
     MIIDXTCCAkWgAwIBAgIJALc3... (base64 encoded data)
     -----END CERTIFICATE-----
-    ```
+
+
 
 <!--
 >[!CAUTION]
 >
 >Both Data and CDN subdomains must be included in the same certificate.
 -->
+
 
 ## Complete the Feedback Loop steps {#feedback-loop-steps}
 

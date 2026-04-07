@@ -51,17 +51,21 @@ To export an Adobe Experience Manager template to Adobe Journey Optimizer, follo
 
 1. From your Adobe Experience Manager homepage, select **[!UICONTROL Outbound Marketing]**.
 
+
 <!--
     ![](assets/aem-outbound-menu.png)
 -->
+
 
 1. From your content library, you can use previously configured templates or create one from scratch. [Learn more](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/managing-pages.html#creating-a-new-page)
 
 1. By incorporating Journey Optimizer personalization syntax into your template, you can enhance its customization capabilities. [Learn more](../personalization/personalization-syntax.md)
 
+
 <!--
     ![](assets/aem_ajo_4.png)
 -->
+
 
 1. Select the template you want to export to Journey Optimizer and click **[!UICONTROL Send to]** from the advanced menu. 
 
@@ -69,9 +73,11 @@ To export an Adobe Experience Manager template to Adobe Journey Optimizer, follo
 
 1. Enter the **[!UICONTROL Name]** of the Content template and select the target **[!UICONTROL Sandbox]**.
 
+
 <!--
    ![](assets/aem-send-template-settings.png)
 -->
+
 
 1. After you have clicked the **[!UICONTROL Send]** button, the export process will begin. Once the export is complete, you will see the following message in the user interface: "Template "XX" sent successfully to AJO".
 
@@ -83,15 +89,19 @@ Once the Experience Manager template is available in Journey Optimizer as a cont
 
 1. In Journey Optimizer, from the **[!UICONTROL Content template]** menu, access your imported template.
 
+
 <!--
     ![](assets/aem_ajo_1.png)
 -->
 
+
 1. By clicking the **[!UICONTROL Alert]** button, you can quickly check if any important settings are missing. This will help ensure that your messages are properly configured and prevent any potential errors or issues.
+
 
 <!--
     ![](assets/aem_ajo_2.png)
 -->
+
 
 1. In the **[!UICONTROL Template properties]** window, click the **[!UICONTROL Manage access]** button to assign custom or core data usage labels to your template. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
@@ -105,30 +115,38 @@ Once the Experience Manager template is available in Journey Optimizer as a cont
 
 1. Once your content has been defined, you can use it when creating new email by browsing the **[!UICONTROL Saved templates]** collection. Then, select **[!UICONTROL Use this template]**.
 
+
 <!--
     ![](assets/aem_ajo_3.png)
 -->
 
+
 1. You can now edit and personalize your content. For more information on how to build your email content, refer to this [page](../email/content-from-scratch.md).
+
 
 <!--
     ![](assets/aem_ajo_5.png)
 -->
 
+
 1. If you added personalized content to your Experience Manager template, click **[!UICONTROL Simulate Content]** to preview how it will appear in the message using test profiles. 
 
     [Learn more about preview and test profiles](../content-management/preview-test.md)
+
 
 <!--
     ![](assets/aem_ajo_6.png)
 -->
 
+
 1. When viewing the message preview, any personalized elements are automatically replaced with the corresponding data from the selected test profile. 
 
     If needed, additional test profiles can be added through the **[!UICONTROL Manage test profiles]** button.
 
+
 <!--
     ![](assets/aem_ajo_7.png)
 -->
+
 
 When your email is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md), and activate it to send the message.

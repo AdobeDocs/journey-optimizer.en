@@ -32,8 +32,10 @@ Each time one of these objects is modified in the Offer Library, a new export jo
 >
 >This feature is enabled by default. You can start using it without any additional activation steps. Once enabled, export jobs will be automated and will require no action from your side.
 
+
 <!--
 >[!NOTE]
 >
 >This feature is not enabled by default. If you want to use it, reach out to your Adobe contact to have it activated for your catalog. Once it is enabled, export jobs will be automated and will require no action from your side.
 -->
+

@@ -35,6 +35,7 @@ Before starting to create offers, you must define several components that you wi
 
 1. If you want to define rules that will determine which offer should be presented first for a given placement (rather than taking into account the offers' priority scores), you can [create a ranking formula](../ranking/create-ranking-formulas.md).
 
+
 <!--
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -69,6 +70,7 @@ Before starting to create offers, you must define several components that you wi
 </table>
 -->
 
+
 ## Create and manage offers {#create-and-manage-offers}
 
 1. [Create offers](creating-personalized-offers.md), and configure their content and properties. When you personalize offer content (representations), only certain functions are supported—see [Supported functions in the personalization editor](personalization-editor-supported-functions.md).
@@ -76,6 +78,7 @@ Before starting to create offers, you must define several components that you wi
 1. [Create fallback offers](creating-fallback-offers.md), which are the last resort offers to display if customers are not eligible for any of the selected offers.
 
 1. [Create a collection](creating-collections.md) to include the personalized offers you created and use them in a decision.
+
 
 <!--
 <table style="table-layout:fixed">
@@ -105,6 +108,7 @@ Before starting to create offers, you must define several components that you wi
 </table>
 -->
 
+
 ## Create and configure decisions {#create-and-configure-decisions}
 
 1. [Create a decision](../offer-activities/create-offer-activities.md) that will combine placements with the personalized offers and the fallback offers. This combination will be used by the decisioning engine to find the best offer for a specific profile. 
@@ -112,6 +116,7 @@ Before starting to create offers, you must define several components that you wi
 1. [Configure the decision](../offer-activities/create-offer-activities.md#add-decision-scopes). To do so, select the placements, and for each placement, select a collection and a fallback.
 
 1. If needed, you can [assign a ranking formula](../offer-activities/configure-offer-selection.md#assign-ranking-formula) or [AI ranking](../offer-activities/configure-offer-selection.md#use-ranking-strategy) to a placement when configuring the decision.
+
 
 <!--
 <table style="table-layout:fixed">

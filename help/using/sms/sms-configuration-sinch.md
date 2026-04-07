@@ -126,6 +126,7 @@ RCS (Rich Communication Services) messaging is supported in Journey Optimizer th
 
 Note that messages automatically fall back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 
+
 <!--
 ### Basic RCS Messages
 
@@ -149,6 +150,7 @@ Note that messages automatically fall back to SMS when the profile's device does
 
     Your messages automatically falls back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 -->
+
 
 ### RCS Multimedia Messages
 

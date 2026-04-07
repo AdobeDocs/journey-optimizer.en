@@ -81,11 +81,15 @@ To create an AI model, follow the steps below:
 
     ![](../assets/ai-ranking-save-activate.png)
 
-<!--At this point, you must have:
+
+<!--
+At this point, you must have:
 
 * created the AI model,
 * defined which type of event you want to capture - offer displayed (impression) and/or offer clicked (conversion),
-* and in which dataset you want to collect the event data.-->
+* and in which dataset you want to collect the event data.
+-->
+
 
 Now each time an offer is displayed and/or clicked, you want the corresponding event to be automatically captured by the **[!UICONTROL Experience Event - Proposition Interactions]** field group using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} or Mobile SDK.
 

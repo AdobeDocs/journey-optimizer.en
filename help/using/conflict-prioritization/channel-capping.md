@@ -128,6 +128,7 @@ When testing frequency rules, it is recommended to use a newly created [test pro
 
 <!--add a new section for default priority namespace.-->
 
+
 <!--
 ## Example: combine several rules {#frequency-rule-example}
 
@@ -155,7 +156,9 @@ You can combine several message frequency rules, such as described in the exampl
 
 In this scenario, an individual profile:
 * can receive up to 12 marketing messages per month;
-* but will be excluded from marketing push notifications after they have received 4 push notifications.-->
+* but will be excluded from marketing push notifications after they have received 4 push notifications.
+-->
+
 
 ## How-to video {#video}
 

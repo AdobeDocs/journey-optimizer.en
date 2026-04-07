@@ -146,6 +146,7 @@ The Gini index for each model arm is computed differently depending on whether t
 Typically, online measures of model quality, such as lift and lift significance, are considered the "gold standard" method for measuring model quality. Gini indices are reported to provide an additional data point for customer data science teams evaluating decisioning models.
 +++
 
+
 <!--
 ## Understanding statuses and errors {#statuses-errors}
 
@@ -154,7 +155,9 @@ Typically, online measures of model quality, such as lift and lift significance,
 * **In progress** – A training job is running. Some metrics may be temporarily unavailable until it finishes.
 * **Pending** – No result yet (for example, model recently activated or settings recently changed).
 
-If no model has been successfully deployed yet, the "currently deployed model" section and some performance fields will be empty or show the initial-state messaging.-->
+If no model has been successfully deployed yet, the "currently deployed model" section and some performance fields will be empty or show the initial-state messaging.
+-->
+
 
 ## How-to video {#video}
 

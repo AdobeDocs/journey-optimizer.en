@@ -58,6 +58,7 @@ Before being able to add a dataset to the reporting configuration, you must crea
 >
 >Learn more about XDM schemas and fields groups in the [XDM System overview documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
 
+
 <!--
 ## Objectives corresponding to each field group {#objective-list}
 
@@ -69,6 +70,7 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
 | Application Details | (Unique) App Launches<br>First App Launches<br>(Unique) App Installs<br>(Unique) App Upgrades |
 | Web Details | (Unique) Page Views |
 -->
+
 
 ## Add datasets {#add-datasets}
 
@@ -121,6 +123,7 @@ The table below shows which metrics will be added to the **[!UICONTROL Objective
     >If you selected a dataset which is not event-type, you will not be able to proceed.
 
 
+
 <!--
 When building your campaign reports, you can now see the metrics corresponding to the field groups used in the datasets you added. Go to the **[!UICONTROL Objectives]** tab and select the metrics of your choice to better fine-tune your reports. [Learn more](content-experiment.md#objectives-global)
 
@@ -137,3 +140,4 @@ Understand how to configure Experience Platform reporting data sources.
 
 >[!VIDEO]()
 -->
+

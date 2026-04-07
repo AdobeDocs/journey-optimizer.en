@@ -111,11 +111,13 @@ Webhooks act as the communication bridge between Meta's WhatsApp Business Platfo
 
     ![](assets/webhook-4.png)
 
+
 <!--
 1. Click **[!UICONTROL View payload editor]** to validate and customize your request payloads. 
     
     You can dynamically personalize your payload using profile attributes, and ensure accurate data is sent for processing and response generation with the help of built-in helper functions.
 -->
+
 1. Click ![add](assets/do-not-localize/Smock_AddCircle_18_N.svg) to add additional **[!UICONTROL Inbound keyword]**.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your WhatsApp Webhook.

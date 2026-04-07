@@ -139,21 +139,26 @@ To configure a new subdomain, follow the steps below:
 
     Note that the subdomain will be marked as **[!UICONTROL Failed]** if you fail to create the validation record on your hosting solution.
 
+
 <!--
 Only a subdomain with the **[!UICONTROL Success]** status can be set as default.
 You cannot delete a subdomain with the **[!UICONTROL Processing]** status.
 -->
 
+
 ## Undelegate a subdomain {#undelegate-subdomain}
 
 If you wish to undelegate a web subdomain, reach out to your Adobe representative with the subdomain you want to undelegate.
+
 
 <!--
 1. Deactivate all the channel configurations associated with the subdomain. [Learn how](../configuration/channel-surfaces.md#deactivate-a-surface)
 
 1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/manage-campaigns.md#stop)
 
-1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)-->
+1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)
+-->
+
 
 If the web subdomain was a [new delegated subdomain](#web-configure-new-subdomain), you can delete the CNAME DNS record that you created for the web subdomain from your hosting solution (but do not delete the original email subdomain if any).
 

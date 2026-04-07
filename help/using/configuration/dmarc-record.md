@@ -189,12 +189,16 @@ DNS changes take time to propagate across the internet, typically between a few 
 
 Allow sufficient time for the DNS records to propagate before attempting to verify your DMARC setup. If you continue to experience issues after 48 hours, verify that the DNS records were correctly added to your hosting solution.
 
-<!--The DMARC reporting interval is specified in the DMARC policy published in the DNS (Domain Name System) records for a domain. The reporting interval can be set to daily, weekly, or another specified frequency, depending on the domain owner's preferences.
-
-The default value (24 hours) is generally the email providers' expectation.-->
 
 <!--
+The DMARC reporting interval is specified in the DMARC policy published in the DNS (Domain Name System) records for a domain. The reporting interval can be set to daily, weekly, or another specified frequency, depending on the domain owner's preferences.
 
+The default value (24 hours) is generally the email providers' expectation.
+-->
+
+
+
+<!--
 ## What are the benefits of DMARC? {#dmarc-benefits}
 
 The key benefits or DMARC are as folllows:
@@ -213,4 +217,6 @@ The key benefits or DMARC are as folllows:
 
 * It offers reporting on which messages fail SPF and/or DKIM, enabling senders to gain visibility.
 
-* This increased visibility allows for steps to be taken to mitigate further errors. It gives senders a degree of control over what happens with mail that does not pass either of these authentication methods.-->
+* This increased visibility allows for steps to be taken to mitigate further errors. It gives senders a degree of control over what happens with mail that does not pass either of these authentication methods.
+-->
+

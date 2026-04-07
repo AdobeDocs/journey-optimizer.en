@@ -62,7 +62,9 @@ To create a ranking formula, follow the steps below.
 
 1. You can also use data from Adobe Experience Platform to dynamically adjust the ranking logic to reflect real-world conditions. This is especially useful for attributes that frequently change, such as product availability or real-time pricing. [Learn how to use Adobe Experience Platform data for decisioning](../aep-data-exd.md)
 
-<!--## Select an ELS dataset {#els-dataset}
+
+<!--
+## Select an ELS dataset {#els-dataset}
 
 Journey Optimizer allows you to leverage data from Adobe Experience Platform. [Learn more](../data/aep-data-perso.md)
 
@@ -76,7 +78,9 @@ To leverage data from an AEP dataset, follow the steps below.
     >
     >This action is mandatory.
 
-![](../assets/formula-els-settings.png){width="80%"-->
+![](../assets/formula-els-settings.png){width="80%"
+-->
+
 
 ## Define criteria using the formula builder {#ranking-select-criteria}
 
@@ -173,9 +177,8 @@ If the profile lives in the city corresponding to the offer, then double the pri
 
 **Ranking formula:**
 
-```
 if( offer.characteristics.get("city") = homeAddress.city, offer.rank.priority * 2, offer.rank.priority)
-```
+
 
 +++
 
@@ -183,9 +186,8 @@ if( offer.characteristics.get("city") = homeAddress.city, offer.rank.priority * 
 
 **Ranking formula:**
 
-```
 if( offer.selectionConstraint.endDate occurs <= 24 hours after now, offer.rank.priority * 3, offer.rank.priority)
-```
+
 
 +++
 
@@ -199,7 +201,6 @@ In this example, the instance tenant is *_salesvelocity* and the profile schema 
 
 Given this, for a profile such as:
 
-```
 {"_salesvelocity": {"individualScoring": [
                     {"core": {
                             "category":"insurance",
@@ -215,7 +216,7 @@ Given this, for a profile such as:
                         }}
                     ]}
 }
-```
+
 
 +++
 
@@ -223,11 +224,9 @@ Given this, for a profile such as:
 
 In this example, the system always tries to show a ZIP-matching offer first, and falls back to a general offer if no match is found, avoiding showing offers meant for other ZIP codes.
 
-``` pql
 
 if( offer._luma.offerDetails.zipCode = _luma.zipCode,luma.annualIncome / 1000 + 10000, if( not offer.luma.offerDetails.zipCode,_luma.annualIncome / 1000, -9999) )
 
-```
 
 What the formula does:
 
@@ -247,7 +246,6 @@ What the formula does:
 
 Note that when using the **Decisioning** API, the context data is added to the profile element in the request body, such as in the example below:
 
-```
 "xdm:profiles": [
 {
     "xdm:identityMap": {
@@ -267,7 +265,7 @@ Note that when using the **Decisioning** API, the context data is added to the p
     ]
     
 }],
-```
+
 
 +++
 
