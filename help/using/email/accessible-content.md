@@ -160,13 +160,15 @@ When creating designs, include the `lang` (language) and `dir` (text direction) 
 
     Example for English: 
 
+    ```
     <body lang="en">
-
+    ```
 
     Example for French: 
 
+    ```
     <body lang="fr">
-
+    ```
 
     +++
 
@@ -176,13 +178,15 @@ When creating designs, include the `lang` (language) and `dir` (text direction) 
 
     Example for English (left-to-right): 
 
+    ```
     <body lang="en" dir="ltr">
-
+    ```
 
     Example for Arabic (right-to-left): 
 
+    ```
     <body lang="ar" dir="rtl">
-
+    ```
 
     +++
 
@@ -200,6 +204,7 @@ Add `role="presentation"` (or `role="none"`) to layout tables to ensure assistiv
 
 +++Example – Layout table (with `role="presentation"`)
 
+```
 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"> 
 
   <tr> 
@@ -215,7 +220,7 @@ Add `role="presentation"` (or `role="none"`) to layout tables to ensure assistiv
   </tr> 
 
 </table>
-
+```
 
 The screen readers read: 
 "Hello World. Welcome to our newsletter." *(No mention of rows, columns, or table)*
@@ -224,6 +229,7 @@ The screen readers read:
 
 +++Example – Data table (without `role="presentation"`)
 
+```
 <table border="1" cellpadding="5" cellspacing="0"> 
 
   <tr> 
@@ -251,7 +257,7 @@ The screen readers read:
   </tr> 
 
 </table> 
-
+```
 
 The screen readers read: 
 "Table with 2 columns and 3 rows." 
@@ -276,12 +282,14 @@ Use the Email Designer to [add a link](message-tracking.md#insert-links) to your
 
 +++Example – Good link (descriptive): 
 
+```
 <p>Learn more in the  
 
 <a href="https://adobe.com/release-notes">August release notes</a>. 
 
 </p>
 
+```
 
 The screen readers read: 
 "Link, August release notes."
@@ -290,25 +298,24 @@ The screen readers read:
 
 +++Example – Bad link (not descriptive)
 
+```
 <p>Learn more about our new features.  
 
   <a href="https://adobe.com/release-notes">Click here</a>. 
 
 </p>
 
+```
 
 The screen readers read: 
 "Link, click here." *(Provides no context out of reading order)*
 
 +++
 
-
 <!--
 >[!TIP]
 >
->Always ensure link text is discernible (visible) and descriptive (clear about purpose). Avoid vague labels like 'here' or 'more'.
--->
-
+>Always ensure link text is discernible (visible) and descriptive (clear about purpose). Avoid vague labels like 'here' or 'more'.-->
 
 ## Provide keyboard navigation and focus support {#keyboard}
 
@@ -328,6 +335,7 @@ Providing keyboard navigation and focus support allows people who cannot use a m
 
         +++Example (CSS)
 
+        ```
 
         [tabindex="0"] : focus { 
 
@@ -337,6 +345,7 @@ Providing keyboard navigation and focus support allows people who cannot use a m
 
         }
 
+        ```
 
         +++
 

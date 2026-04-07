@@ -20,13 +20,9 @@ exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
 ➡️ [Discover Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction.html){target="_blank"} (video)
 
 
+<!-- Use [!DNL Adobe Journey Optimizer] to build multi-step customer journeys that initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Learn how to build journeys in [this section](../building-journeys/journey-gs.md).
 
-<!--
- Use [!DNL Adobe Journey Optimizer] to build multi-step customer journeys that initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Learn how to build journeys in [this section](../building-journeys/journey-gs.md).
-
-You can also create audience-based campaigns to send messages.
--->
-
+You can also create audience-based campaigns to send messages.-->
 
 
 ## Use cases {#use-cases}

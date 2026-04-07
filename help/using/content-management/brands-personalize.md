@@ -248,7 +248,6 @@ To personalize your **[!UICONTROL Visual content]**:
 
 You can now further personalize your brand or [publish your brand](brands.md#create-brand-kit).
 
-
 <!--
 ## Colors {#colors}
 
@@ -346,5 +345,5 @@ To personalize your **[!UICONTROL Colors]**:
 1. Click **[!UICONTROL Add group]** to define additional colors for your brand or to add a color scale group.
 
 You can now further personalize your brand or [publish your brand](brands.md#create-brand-kit).
--->
 
+-->

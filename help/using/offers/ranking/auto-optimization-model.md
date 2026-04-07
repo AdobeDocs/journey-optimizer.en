@@ -61,13 +61,11 @@ Eventually, if one offer (e.g. Offer 1) is a clear winner, its posterior reward 
 
 **Figure 1**: *For every decision, we sample a point from the posterior reward distributions. The offer with highest sample value (conversion rate) will be chosen. In the initial phase, all offers have uniform distribution since we do not have any evidence about the conversion rates of the offers from the data. As we collect more samples, the posterior distributions get narrower and more accurate. Ultimately, the offer with highest conversion rate will be chosen every time.*
 
-
 <!--
 ![](../assets/ai-ranking-thompson-sampling-initial.png)
 ![](../assets/ai-ranking-thompson-sampling-intermediate.png)
 ![](../assets/ai-ranking-thompson-sampling-ultimate.png)
 -->
-
 
 +++**Technical Details**
 

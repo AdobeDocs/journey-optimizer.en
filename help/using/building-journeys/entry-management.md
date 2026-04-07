@@ -75,29 +75,22 @@ In **Unitary event** and **Audience qualification** journeys, you can enable or 
 
 By default, journeys allow reentrance. When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. It allows you to define the time to wait before allowing a profile to enter the journey again. This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 91 days ([global timeout](journey-properties.md#global_timeout)).
 
-
 <!--
 When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. 
 -->
-
 
 ![Re-entrance settings toggle in journey properties](assets/journey-re-entrance.png)
 
 After the reentrance period, profiles can reenter the journey. To avoid this, and fully disable reentrance for those profiles, you can add a condition to test if the profile entered already or not, using profile or audience data.
 
-
 <!--
-Due to the 30-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago. 
--->
-
+Due to the 30-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago. -->
 
 ## Business journeys {#entry-business}
-
 
 <!--
 Business events follow reentrance rules in the same way as for unitary events. If a journey allows reentrance, the next business event will be processed.
 -->
-
 
 In **Business journeys**, to allow multiple business event executions, activate the corresponding option in the **[!UICONTROL Execution]** section of the journey properties.
 
@@ -119,11 +112,9 @@ For more information, refer to this [section](../event/about-creating-business.m
 
 Several options are available for recurring Read audience journeys. For more information, refer to the [Use an audience in a journey](../building-journeys/read-audience.md) section.
 
-
 <!--
 After 91 days, a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only (i.e. journey timeout default value) as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 30 day timeout. 
 -->
-
 
 ## Related topics
 

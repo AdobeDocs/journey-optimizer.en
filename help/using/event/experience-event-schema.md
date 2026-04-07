@@ -55,7 +55,6 @@ Any XDM schema that will be used for [!DNL Journey Optimizer] events should meet
 
    ![](assets/schema8.png)
 
-
 <!--
 ## Leverage schema relationships{#leverage_schema_relationships}
 
@@ -136,4 +135,3 @@ The linked fields are available when configuring the action parameters of a jour
 
 To learn how to use custom actions, refer to this [page](../building-journeys/using-custom-actions.md).
 -->
-

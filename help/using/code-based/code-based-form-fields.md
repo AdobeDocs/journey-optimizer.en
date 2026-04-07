@@ -67,15 +67,12 @@ To make some of your JSON or HTML code editable, start by creating a code-based 
     |Declare an editable field with a **default value**. When adding the template to your content, this default value will be used if you don't customize it.|Add the default value between the inline tags.|`{{#inline "editableFieldID"}}default_value{{/inline}}`|
     |Define a **label** for the editable field. This label will display in the code editor when editing the template's fields.|`name="title"`|`{{#inline "editableFieldID" name="title"}}default_value{{/inline}}`|
 
-    
-<!--
+    <!--
     | Action | Parameter| Example |
     | ------- | ------- | ------- |
     |Declare an editable field containing an **image source** that needs to be published.|`assetType="image"`|`{{#inline "editableFieldID" assetType="image"}}default_value{{/inline}}`|
     |Declare an editable field containing an **URL** that needs to be tracked.br/>Note that out-of-the-box "Mirror page URL" and "Unsubscribe link" predefined blocks cannot become editable fields.>|`assetType="url"`|`{{#inline "editableFieldID" assetType="url"}}default_value{{/inline}}`|
-    
--->
-
+    -->
 
 1. Click **[!UICONTROL Preview form fields]** to check how the editable form fields will display in the code-based experiences applying this template.
 
@@ -127,6 +124,7 @@ Below are a few examples of JSON and HTML templates, some of them including deci
 
 **JSON template:**
 
+```
 {{#inline "title" name="Title"}}Best gear for winter is here for you!{{/inline}} 
 {{#inline "description" name="Description"}}Add description{{/inline}} 
 {{#inline "imgURL" name="Image Link"}}Add link{{/inline}} 
@@ -139,7 +137,7 @@ Below are a few examples of JSON and HTML templates, some of them including deci
   "number_of_items": {{{number_of_items}}}, 
   "code": "DEFAULT"
 }
-
+```
 
 >[!NOTE]
 >
@@ -150,6 +148,7 @@ Below are a few examples of JSON and HTML templates, some of them including deci
 
 **JSON template with decisioning:**
 
+```
 { 
 "offer": [ 
 {{#each decisionPolicy.fff709b7-7fef-4e4e-83d7-594fbcf196c1.items as |item|}} 
@@ -164,7 +163,7 @@ Below are a few examples of JSON and HTML templates, some of them including deci
 {{/each}}
 ] 
 }
-
+```
 
 >[!NOTE]
 >
@@ -172,15 +171,17 @@ Below are a few examples of JSON and HTML templates, some of them including deci
 
 **HTML template:**
 
+```
 {{#inline "title" name="Title"}}Please enter title here{{/inline}} 
 {{#inline "imgSrc" name="Image link"}}{{/inline}} 
 
 <div class="TopRibbon__content"><img style="padding: 5px 10px;" class="TopRibbon__image" src="{{{imgSrc}}}" />{{{title}}}</div> 
 <style> .theme-luma .TopRibbon { background-color: #200098; }</style>
-
+```
 
 **HTML template with decisioning:**
 
+```
 {{#each decisionPolicy.f112884a-5654-43ad-9d6d-dbd32ae23ee6.items as |item|}} 
 {{#inline "title" name="Title"}}Title is: {{item._mobiledx.Title1}}{{/inline}} 
 
@@ -188,7 +189,7 @@ Below are a few examples of JSON and HTML templates, some of them including deci
 <style> .theme-luma .TopRibbon { background-color: #200098; }</style> 
 
 {{/each}}
-
+```
 
 ## Edit form fields in a code-based experience {#edit-form-fields}
 

@@ -97,16 +97,13 @@ To import files to **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Ser
 
     ![](assets/media_library_13.png)
 
-    
-<!--
+    <!--
     After adding your asset to your email, use the **[!UICONTROL Find similar Stock photos]** option to locate Stock photos that match the content, color, and composition of your image. [Learn more about Adobe Stock](stock.md).
 
     Note that this option is available for licensed/unlicensed Stock images and images from your Assets folder. 
 
     ![](assets/media_library_14.png)
-    
--->
-
+    -->
 
 
 ## Frequently Asked Questions {#faq-assets}

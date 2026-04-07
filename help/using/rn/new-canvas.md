@@ -74,9 +74,7 @@ For each activity within every live journey using the new model, you have access
 
 ![](assets/new-canvas6bis.png)
 
-
-<!--
-`
+<!--`
 With every live journey on the new model, you will be able to see two types of "last 24 hours" reporting information:
 
 * On a **new insert**, you will see:
@@ -87,9 +85,6 @@ With every live journey on the new model, you will be able to see two types of "
 * **On each activity**, you will see the number of profiles who entered that activity and the number who exited because of an error:
     ![](assets/new-canvas8.png)
 -->
-
-
 <!--
 Please note that you may see differences between the number of exported profiles and the number of profiles flowing through the journey. The exported profiles count only provides information about the last export job being made while the number of profiles entering an activity only contains profiles who did it in the last 24 hours. This can especially be visible on recurring daily journeys as there could be a data overlap between two days.
 -->
-

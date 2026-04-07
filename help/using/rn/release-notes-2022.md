@@ -19,8 +19,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 
 ## October 2022 Release {#oct-2022-release}
 
-
 <!--
+
 ### New capability{#oct-2022-features}
 
 <table>
@@ -38,8 +38,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tr>
 </tbody>
 </table>
--->
 
+-->
 
 ### Improvements {#oct-2022-improvements}
 
@@ -177,16 +177,14 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>As a Journey Optimizer user, you can now access system alerts through the user interface to get notified when journeys do not work as expected. You can view the available alerts and subscribe to them. The first alert available with this release will warn you if a Read Audience activity has not processed any profile during the defined time frame. More will come now that this workflow is unlocked.</p>
-<!--p>For more information, refer to the <a href="../reports/alerts.md">detailed documentation</a>.</p>-->
+<!--p>For more information, refer to the <a href="../reports/alerts.md">detailed documentation</a>.</p-->
 </td>
 </tr>
 </tbody>
 </table>
 
 
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Data Hygiene</strong><br/></th>
@@ -202,9 +200,7 @@ table>
 </td>
 </tr>
 </tbody>
-</table
--->
-
+</table-->
 
 ### Improvements{#sept-2022-improvements}
 
@@ -283,9 +279,7 @@ table>
 </tbody>
 </table>
 
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>New Dynamic Expression Builder</strong><br/></th>
@@ -300,9 +294,7 @@ table>
 </td>
 </tr>
 </tbody>
-</table
--->
-
+</table-->
 
 
 ### Improvements
@@ -474,9 +466,7 @@ table>
 </tbody>
 </table>
 
-
-<!--
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Automatically use the best performing offer in your decisions</strong><br/></th>
@@ -492,9 +482,7 @@ table>
 </td>
 </tr>
 </tbody>
-</table>
--->
-
+</table>-->
 
 <table>
 <thead>
@@ -574,9 +562,7 @@ table>
 </tbody>
 </table>
 
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Attribute-based Access Control (ABAC)</strong><br/></th>
@@ -591,9 +577,7 @@ table>
 </td>
 </tr>
 </tbody>
-</table
--->
-
+</table-->
 
 <table>
 <thead>
@@ -664,7 +648,6 @@ table>
 
 As an Adobe Campaign Standard customer, you can now send emails, push notifications and SMS using Journey Optimizer. Use the new built-in actions to leverage Campaign Standard Transactional Messaging capabilities into Journey Optimizer.  [Learn more](../action/acs-action.md)
 
-
 <!--
 ### Fixes
 
@@ -672,7 +655,6 @@ As an Adobe Campaign Standard customer, you can now send emails, push notificati
 * Fixed an error on business events which could block the journey publication. CJM-25931
 * Fixed an issue which could prevent images in Email Designer templates from being displayed. PLATIR-18176, CJM-25008
 -->
-
 
 ## March 2022 Release {#march-2022-release}
 
@@ -734,9 +716,7 @@ As an Adobe Campaign Standard customer, you can now send emails, push notificati
 </table>
 
 
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>API Developer Site and Suppression API</strong><br/></th>
@@ -753,9 +733,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 </td>
 </tr>
 </tbody>
-</table
--->
-
+</table-->
 
 <table>
 <thead>

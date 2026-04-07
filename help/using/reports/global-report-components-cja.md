@@ -249,7 +249,6 @@ The tables below give you the list of metrics used in reports and their definiti
   </tbody> 
 </table>
 
-
 <!--
 ## Experimentation metrics {#experimentation-metrics}
 <table> 
@@ -334,7 +333,6 @@ The tables below give you the list of metrics used in reports and their definiti
 </tbody> 
 </table>
 -->
-
 
 ## In-app metrics {#inapp-metrics}
 

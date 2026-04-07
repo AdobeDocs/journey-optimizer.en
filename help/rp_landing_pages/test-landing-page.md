@@ -127,9 +127,7 @@ Testing and approval processes serve as essential quality gates that protect you
 
 * **Save time and resources** - Detect issues early in the development cycle when fixes are cheaper and faster, preventing costly post-launch corrections or customer service escalations.
 
-
-<!--
-## Testing capabilities overview
+<!--## Testing capabilities overview
 
 **Testing types available:**
 
@@ -162,9 +160,8 @@ Testing and approval processes serve as essential quality gates that protect you
 2. During development: Preview with [test profiles](#choose-your-testing-approach), validate with [sample input data](#choose-your-testing-approach)
 3. Pre-launch: Run [technical tests](#2-technical-validation) (rendering, spam), check [conflicts](#test--approve-content), submit for [approval](#test--approve-content)
 4. Post-launch: Monitor with live reports (see [Monitoring & Troubleshooting](#test--approve-content)), iterate based on results
+
 -->
-
-
 
 <!--
 ## Decision tree for testing method selection
@@ -204,8 +201,8 @@ Use this decision tree to quickly identify the right testing tools for your spec
 * Before launch → [Rendering tests](#2-technical-validation), [spam checks](#2-technical-validation), [conflict detection](#test--approve-content), [approvals](#test--approve-content)
 * After launch → [Live reports](../using/building-journeys/report-journey.md) and [monitoring](#test--approve-content)
 +++
--->
 
+-->
 
 ## Choose your testing approach
 

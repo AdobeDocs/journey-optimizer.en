@@ -471,8 +471,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * The Control access section has been updated with permissions related to AI Assistant Content Generator. [Read more](../administration/high-low-permissions.md#ai-orchestrated-campaign)
 * A video about AI Assistant Content Generator for email generation has been added. [Read more](../content-management/generative-full-content.md#video)
 
-
 <!--
+
 ## August 2024 {#aug-2024}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] August '24 release have been detailed in the documentation. [Read more](release-notes.md)
@@ -909,4 +909,3 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 +++
 -->
-

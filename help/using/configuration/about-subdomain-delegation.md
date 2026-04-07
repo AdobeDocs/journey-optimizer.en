@@ -91,14 +91,11 @@ Learn how to [set up a custom subdomain](delegate-custom-subdomain.md). If your 
 ## Comparing the configuration methods
 
 The table below provides a summary of how these methods work, as well as the implied level of effort:
-
 <!--
 | Configuration method | How it works | Level of effort |
 |---|---|---|
 | **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Journey Optimizer.<br/><br/>In this setup, Adobe is fully responsible for managing the subdomain and all the DNS records. | Low |
-| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Journey Optimizer DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
--->
-
+| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Journey Optimizer DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |-->
 
 
 | Configuration method | How it works | Level of effort |

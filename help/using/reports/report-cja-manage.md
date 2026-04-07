@@ -171,9 +171,7 @@ Use the Insight builder tool to easily create tables and visualizations from you
 
 You can now analyze your data using your customized table and visualization tools.
 
-
-<!--
-## Create a down-funnel metric {#down-funnel}
+<!--## Create a down-funnel metric {#down-funnel}
 
 1. Create a new journey or open an existing one. [Learn more about journey creation](../building-journeys/journey-gs.md)
 
@@ -183,7 +181,6 @@ c. In the metric selector, choose whichever conversion metric seems appropriate 
 
 d. Open the report for the journey that you added the metric to and ensure that the metric has been added to the table alongside all the other pre-configured metrics.
 -->
-
 
 ## Create an Audience from reporting data {#create-audience}
 

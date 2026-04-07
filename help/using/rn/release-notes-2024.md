@@ -344,14 +344,12 @@ This release comes with the improvements listed below.
 
 ## September '24 release {#24-9-rn}
 
-
 <!--
 >[!CAUTION]
 >
 >**Early release notes below are subject to change without prior notice until the release date**. Links, screens and updated documentation are published at the release date.
 >
 -->
-
 
 **Release date**: September 24-26, 2024
 
@@ -395,9 +393,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
-<!--
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Email Content Locking</strong><br/></th>
@@ -412,9 +408,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table>
--->
-
+</table>-->
 
 <table>
 <thead>
@@ -519,11 +513,8 @@ You can now export content templates and fragments between sandboxes. [Learn mor
 
 * **IP warmup plans** - This capability is now available to all customers, including organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings. [Learn more](../configuration/ip-warmup-gs.md)
 
-
 <!--
-![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
--->
-
+![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.-->
 
 
 
@@ -534,7 +525,6 @@ You can now export content templates and fragments between sandboxes. [Learn mor
 ### New capabilities {#8-features}
 
 This release brings the new capabilities detailed below.
-
 
 <!--
 <table>
@@ -553,9 +543,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table
--->
-
+</table-->
 
 <table>
 <thead>
@@ -801,9 +789,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Extended personalization data - Beta</strong><br/></th>
@@ -817,9 +803,7 @@ table>
 </td>
 </tr>
 </tbody>
-</table
--->
-
+</table-->
 
 ### Improvements {#june24-improvements}
 
@@ -933,9 +917,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>IP Warmup Workflow</strong><br/></th>
@@ -949,13 +931,9 @@ table>
 </td>
 </tr>
 </tbody>
-</table
--->
+</table-->
 
-
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Business rules - Beta</strong><br/></th>
@@ -970,14 +948,10 @@ table>
 </td>
 </tr>
 </tbody>
-</table
--->
+</table-->
 
 
-
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Extended personalization data - Beta</strong><br/></th>
@@ -991,9 +965,7 @@ table>
 </td>
 </tr>
 </tbody>
-</table
--->
-
+</table-->
 
 ### Improvements {#e-improvements}
 
@@ -1010,23 +982,17 @@ From beta to this release, the following improvements have been added:
 * **Reporting** - You can now create custom reporting dashboards of Experience Decisioning campaigns using [!DNL Customer Journey Analytics]. [Read more](../experience-decisioning/cja-reporting.md)
 
 
-
-<!--
-**Decision Management**
+<!--**Decision Management**
 
 * **Multi-rule support** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent.
-* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. 
--->
-
+* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
 
 
 **Email channel**
 
-
 <!--
 * **List-unsubscribe** - Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. Refer to the following pages: [Email opt-out management](../email/email-opt-out.md#unsubscribe-header) and [Configure email settings](../email/email-settings.md#list-unsubscribe)
 -->
-
 
 * **Spam scoring** (Beta) - You can now check your content spam scoring in a dedicated Spam report. Using SpamAssassin, Adobe Journey Optimizer can now test your email content and give it a score to indicate if ISPs or Mailbox providers will consider it as a spam or not. [Read more](../content-management/spam-report.md)
 
@@ -1034,21 +1000,14 @@ From beta to this release, the following improvements have been added:
    >
    >This capability is currently in beta version and only available to beta customers. To join the beta program, contact your Adobe representative.
 
-
 <!--
 **Audiences**
 
-* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
--->
+* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.-->
 
+<!--**Personalization**
 
-
-<!--
-**Personalization**
-
-* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)
--->
-
+* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)-->
 
 **Journeys**
 
@@ -1107,9 +1066,7 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-
-<!--
- table>
+<!-- table>
 <thead>
 <tr>
 <th><strong>AI Assistant - Experience Variant Generation - Beta</strong><br/></th>
@@ -1122,14 +1079,10 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table
--->
+</table-->
 
 
-
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Email Surface Personalization - Private beta </strong><br/></th>
@@ -1142,20 +1095,15 @@ table>
 </td>
 </tr>
 </tbody>
-</table
--->
-
+</table-->
 
 ### Improvements {#apr-improvements}
 
 This release comes with the improvements listed below.
 
-
 <!--
 * **Expression Fragments supported for Web and In-App**: Expression fragments are now available for the Web and In-app channels. 
 -->
-
-
 
 
 <!--
@@ -1163,12 +1111,9 @@ This release comes with the improvements listed below.
 -->
 
 
-
-
 <!--
 * **List-Unsubscribe updates**: Following on the recent Gmail and Yahoo announcements for bulk senders, Journey Optimizer supports the "post/1-click" List-Unsubscribe option. 
 -->
-
 
 **Configuration**
 
@@ -1317,13 +1262,9 @@ Previously available as Beta, the following improvements are now available to al
 
 * In addition to Email and Push, you can now create Frequency rules for SMS and Direct Mail channels. Frequency rules automatically exclude over-solicited profiles from messages and actions when the frequency cap is reached. [Read more](../conflict-prioritization/rule-sets.md) 
 
+<!--**Decision management**
 
-<!--
-**Decision management**
-
-* **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.
--->
-
+* **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.-->
 
 
 ## January '24 release {#jan-2024}

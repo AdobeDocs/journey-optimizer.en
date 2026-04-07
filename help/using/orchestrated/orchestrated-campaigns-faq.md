@@ -126,7 +126,6 @@ Yes. In Campaign Orchestration a recipient profile known as the 'People Entity' 
 
 +++
 
-
 <!--
 ## Do Orchestrated campaigns integrate with other Adobe solutions? {#integrations}
 
@@ -134,9 +133,7 @@ Yes. Campaign orchestration is natively integrated with:
 
 * **Customer Journey Analytics**: Campaign orchestration reports are available.  
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
-* **Federated Audience Composition (FAC)**: Available as an add-on.  
--->
-
+* **Federated Audience Composition (FAC)**: Available as an add-on.  -->
 
 +++ How do I test a signal-triggered orchestrated campaign before publishing?
 
@@ -298,7 +295,6 @@ Objects created in Orchestrated campaigns (e.g., audiences, workflows) are tied 
 
 +++
 
-
 <!--
 ## Are there recommended practices for running campaigns at scale? {#scale}
 
@@ -310,7 +306,6 @@ Yes, follow the best practices below:
 * Establish a **monitoring routine**—track delivery logs, error rates, and opt-outs after each send.  
 * Run **post-campaign analysis** in Customer Journey Analytics to refine targeting and orchestration for the next cycle.  
 -->
-
 
 +++ What is the relationship between Recipient and Profile Entities?
 

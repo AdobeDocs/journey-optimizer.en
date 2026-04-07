@@ -14,13 +14,10 @@ exl-id: 6d53d817-78f6-4d00-8ff0-8a848c618435
 
 You can divide the delivery of outbound campaign messages into several batches (waves) and schedule them over time. Wave sending helps balance load, avoid overwhelming downstream systems (such as call centers or landing pages), and support deliverability and sender reputation—especially for high-volume sends.
 
-
 <!--
 >[!CAUTION]
 >
->Wave sending applies to **outbound** actions only (Email, SMS, Push, Direct mail).
--->
-
+>Wave sending applies to **outbound** actions only (Email, SMS, Push, Direct mail).-->
 
 Journey Optimizer lets you define the number of waves, their size (as a percentage of the audience or as absolute numbers), and when each wave runs.
 

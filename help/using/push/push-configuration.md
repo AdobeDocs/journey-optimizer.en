@@ -27,15 +27,12 @@ Before creating a mobile application, you first need to make sure that you have 
 >
 >Push configuration must be performed by an expert user. Depending on your implementation model and personas involved in this implementation, you might need to assign the full set of permissions to a single product profile or share permissions between the app developer and the **Adobe Journey Optimizer** administrator. Learn more about **Tags** permissions in [this documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
 
-
-<!--
-ou need to your have access to perform following roles :
+<!--ou need to your have access to perform following roles :
 
 * Manage Datastreams
 * Manage Client-side Properties
 * Manage App Configurations
 -->
-
 
 To assign **Property** and **Company** rights, follow the steps below:
 
@@ -129,11 +126,8 @@ Adobe Experience Platform Mobile SDK provides client-side integration APIs for y
 
 By the end of this, you should have also created and configured a mobile property in [!DNL Adobe Experience Platform Data Collection]. You will typically create a mobile property for each mobile application you want to manage. Learn how to create and configure a mobile property in [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
 
-
-<!--
-To enable **Web push notifications**, ensure that the [pushNotifications property](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications) is properly configured within the Web SDK. Then, use [the sendPushSubscription command](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription) to register push subscriptions with Adobe Experience Platform.
+<!--To enable **Web push notifications**, ensure that the [pushNotifications property](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications) is properly configured within the Web SDK. Then, use [the sendPushSubscription command](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription) to register push subscriptions with Adobe Experience Platform.
 -->
-
 
 ## Step 1: Add your app push credentials in Journey Optimizer {#push-credentials-launch}
 
@@ -181,7 +175,6 @@ The mobile app push credential registration is required to authorize Adobe to se
 
         1. Drag and drop the FCM push credentials. For more details on how to get the push credentials refer to [Google Documentation](https://firebase.google.com/docs/admin/setup#initialize-sdk){target="_blank"}.
 
-
 <!--
     * **For Web**
 
@@ -190,11 +183,9 @@ The mobile app push credential registration is required to authorize Adobe to se
         1. Provide the **[!UICONTROL App ID]**.
 
         1. Enter your **[!UICONTROL VAPID public key]** and **[!UICONTROL private key]**.
--->
-       
+-->       
 
 1. Click **[!UICONTROL Submit]** to create your app configuration.
-
 
 <!--
 ## Step 2: Set up a mobile property in Adobe Experience Platform Launch {#launch-property}
@@ -213,7 +204,6 @@ To get the SDKs needed for push notification to work you will need the following
 
 Learn more about [!DNL Adobe Experience Platform Launch] extensions in [Adobe Experience Platform Launch documentation](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/configure-launch/launch-add-extensions.html).
 -->
-
 
 ## Step 2: Create a channel configuration for push{#message-preset}
 
@@ -253,9 +243,7 @@ The **Adobe Journey Optimizer extension** for Adobe Experience Platform Mobile S
 Learn how to setup Journey Optimizer extension in [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/){target="_blank"}.
 
 
-
-<!--
- 
+<!-- 
 **[!UICONTROL Edge configuration]** is used by **[!UICONTROL Edge]** extension to send custom data from mobile device to [!DNL Adobe Experience Platform]. 
 To configure [!DNL Adobe Experience Platform], you must provide the **[!UICONTROL Sandbox]** name and **[!UICONTROL Event Dataset]**.
 
@@ -301,7 +289,6 @@ To configure **[!UICONTROL Adobe Experience Platform Edge Extension]** to send c
 To configure **[!UICONTROL Adobe Experience Platform Messaging]** extension to send push profile and push interactions to the correct datasets, follow the same steps as above. Use **[!UICONTROL Sandbox]**, **[!UICONTROL Event dataset]** and **[!UICONTROL Profile Dataset]** created in the [Adobe Experience Platform setup](#edge-configuration).
 -->
 
-
 <!--
 ## Step 4: Publish the Property {#publish-property}
 
@@ -313,9 +300,10 @@ To publish your property, refer to the steps detailed in [Adobe Experience Platf
 
 To configure the `ProfileDataSource`, use the `ProfileDCInletURL` from [!DNL Adobe Experience Platform] setup and add the following in the mobile app:
 
+```
     MobileCore.updateConfiguration(
     mutableMapOf("messaging.dccs" to <ProfileDCSInletURL>)
-
+```
 
 -->
 
@@ -323,11 +311,9 @@ To configure the `ProfileDataSource`, use the `ProfileDCInletURL` from [!DNL Ado
 
 After configuring your mobile app in both Adobe Experience Platform and in [!DNL Adobe Experience Platform Data Collection], you can now test it before sending push notifications to your profiles. In this use case, we create a journey to target our mobile app and set an event which triggers the push notification.
 
-
 <!--
 You can use a test mobile app for this use case. For more on this, refer to this [page](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=CJM&title=Details+of+setting+the+mobile+test+app) (internal use only).
 -->
-
 
 For this journey to work, you need to create an XDM schema. For more information, refer to [XDM documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schemas-and-data-ingestion){target="_blank"}.
 

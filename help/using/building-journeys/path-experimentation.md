@@ -58,12 +58,9 @@ Let's say you want to compare three paths:
     >
     >Switching on the toggle bar will automatically take 10% of your population. You can adjust this percentage if needed.
 
-    
-<!--
+    <!--
     DOES THIS APPLY TO PATH EXPERIMENT?
-    IMPORTANT: When a holdout group is used in an action for path experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.
--->
-
+    IMPORTANT: When a holdout group is used in an action for path experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.-->
 
 1. You can allocate a precise percentage to each **[!UICONTROL Treatment]**, or simply switch on the **[!UICONTROL Distribute evenly]** toggle bar.
 
@@ -87,8 +84,8 @@ Let's say you want to compare three paths:
 
 1. [Publish](publish-journey.md) your journey.
 
-
 <!--
+
     Select a channel action and use the **[!UICONTROL Edit content]** button to access the design tools.
 
     ![Edit content button in channel action activity](assets/journey-optimize-experiment-edit-content.png){width=70%}
@@ -96,22 +93,19 @@ Let's say you want to compare three paths:
     From there, using the left pane you can navigate between the different contents for each action in your experiment. Select each content and design it as needed.
 
     ![Content selection panel showing treatments for experiment](assets/journey-optimize-experiment-content.png){width=100%}
--->
 
+-->
 
 Once the journey is live, users are randomly assigned to go down different paths. [!DNL Journey Optimizer] tracks which path performs best and provides actionable insights.
 
 Follow the success of your journey with the Journey Path Experiment report. [Learn more](../reports/journey-global-report-cja-experimentation.md)
 
-
-<!--
-REMOVED WITH GA
+<!--REMOVED WITH GA
 
 >[!CAUTION]
 >
 >Do not edit the metadata of a path experiment once it has been published. Editing the metadata will disrupt the calculation and reporting of experiment results.
 -->
-
 
 ## Experiment use cases {#uc-experiment}
 

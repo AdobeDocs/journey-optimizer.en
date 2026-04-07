@@ -106,18 +106,16 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
 1. Choose the desired fields from your **[!UICONTROL Fragment]** to add to your content.
 
-    
-<!--
-    Note that if you choose to copy the value, any future updates to the Content Fragment will not be reflected in your campaign or journey. However, using dynamic placeholders ensures real-time updates.
--->
-
+    <!--
+    Note that if you choose to copy the value, any future updates to the Content Fragment will not be reflected in your campaign or journey. However, using dynamic placeholders ensures real-time updates.-->
 
     ![](assets/aem_campaign_6.png)
 
 1. To surface an image URL that is stored in a Content Fragment attribute, e.g. a path or URL field from the fragment model, insert it in your HTML with an `<img>` tag and the fragment attribute as the source, for example:
 
+    ```html
     <img src="[insert your AEM Content Fragment attribute here]">
-
+    ```
 
     >[!NOTE]
     >
@@ -140,8 +138,9 @@ After creating and personalizing your AEM Content Fragments, you can now import 
     1. **Variable Mapping**: Reference a variable declared earlier within the same HTML, e.g. name = 'variableName'.
     In this case, ensure **_variableName_** is declared before adding the fragment ID, using following syntax:
 
+        ```html
         {% let variableName = attribute name %} 
-
+        ```
 
     In the example below, the **_month_** placeholder is mapped to the **_profile.person.birthDate_** attribute within the fragment.
 

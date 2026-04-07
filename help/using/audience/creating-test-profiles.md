@@ -118,9 +118,7 @@ After selecting the identity namespace and providing the CSV file based on the f
 >
 >Test profiles may override existing profiles. Before executing the use case make sure the CSV contains test profiles only and that it is executed against the correct sandbox.
 
-
-<!--
- Removed as asked in DOCAC-13605 AJO Test Profiles Using a Journey should be removed
+<!-- Removed as asked in DOCAC-13605 AJO Test Profiles Using a Journey should be removed
 ## Turn a profile into a test profile{#turning-profile-into-test}
 
 You can turn an existing profile into a test profile: you can update profiles attributes in the same way as when you create a profile. 
@@ -158,7 +156,6 @@ Your journey will be composed of a **[!UICONTROL Read Audience]** and an **[!UIC
     >
     > For more information on the **[!UICONTROL Update Profile]** activity, refer to [this section](../building-journeys/update-profiles.md).
 -->
-
 
 ## Create test profiles using a CSV file {#create-test-profiles-csv}
 
@@ -202,6 +199,7 @@ You can also update an existing profile to change its `testProfile` flag to `tru
 
 Here is an example of an API call to create a test profile:
 
+```bash
 curl -X POST \
 'https://dcs.adobedc.net/collection/xxxxxxxxxxxxxx' \
 -H 'Cache-Control: no-cache' \
@@ -241,7 +239,7 @@ curl -X POST \
 }
 }
 }'
-
+```
 
 ## How-to video {#video}
 
