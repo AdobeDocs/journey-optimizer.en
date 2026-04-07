@@ -8,7 +8,13 @@ exl-id: 4cd5f097-1c17-4cc5-90c4-bc540dc6acf4
 ---
 # Channel configuration{#section-overview}
 
-Channel configuration in Adobe Journey Optimizer empowers you to manage how messages are delivered across various channels like email, SMS, push notifications, and web ensuring tailored and effective communication. Whether you're setting up technical parameters, configuring subdomains, or optimizing email deliverability with IP warmup plans, each step is designed to enhance message performance and compliance. You'll also find tools to monitor email reputation, manage suppression lists, and even archive messages for auditing purposes. Dive deeper into the topics ahead to discover how these configurations work together, helping you create seamless, impactful customer experiences.
+Channel configuration in Adobe Journey Optimizer empowers you to manage how messages are delivered across various channels like email, SMS, push notifications, and web ensuring tailored and effective communication.
+
+Whether you're setting up technical parameters, configuring subdomains, or optimizing email deliverability with IP warmup plans, each step is designed to enhance message performance and compliance.
+
+You'll also find tools to monitor email reputation, manage suppression lists, and even archive messages for auditing purposes.
+
+Dive deeper into the topics ahead to discover how these configurations work together, helping you create seamless, impactful customer experiences.
 
 ## Channel Configuration
 
@@ -53,15 +59,15 @@ Learn to delegate and configure email subdomains to optimize deliverability and 
 [Delegate email subdomains](delegate-subdomains-landing-page.md)
 :::
 
-<!--:::
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
 Implement an IP Warmup Plan
 
 Create and execute IP warmup plans to establish sender reputation and enhance email deliverability.
 
-[Learn about IP warmup plans](implement-ip-warmup-plan-landing-page.md)
-:::-->
+[Learn about IP warmup plans](ip-warmup-gs.md)
+:::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
