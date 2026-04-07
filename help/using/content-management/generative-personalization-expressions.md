@@ -30,6 +30,10 @@ You use [!UICONTROL AI Assistant] in the [!UICONTROL Personalization Editor] whe
 
 Depending on your campaign or journey context, the assistant can work with data and constructs the [!UICONTROL Personalization Editor] already exposes — for example profile attributes, segment membership, helper functions, and related personalization sources.
 
+>[!NOTE]
+>
+>The assistant keeps context from your prompts only while [!UICONTROL AI Assistant] stays open in that editor session. If you close the assistant or the [!UICONTROL Personalization Editor], the conversation is not saved; the next time you open the assistant, you start a new conversation.
+
 ## Generate personalization expressions {#generate}
 
 These steps cover generating personalization expressions from scratch. To work with code already in the editor, see [Edit, fix or explain existing code](#edit-existing).
@@ -48,7 +52,7 @@ These steps cover generating personalization expressions from scratch. To work w
 
     ![](assets/ai-perso-question.png)
 
-1. After you generate an expression, click the **[!UICONTROL Show previews for sample profiles]** button to preview the output by impersonating a sample profile, and to see the associated payload as JSON.
+1. After you generate an expression, click **[!UICONTROL Show previews for sample profiles]** to see how the expression evaluates with sample data and to view the associated payload as JSON. For this check, the assistant generates a limited set of synthetic sample profiles, they are not saved or stored in your Organization.
 
     ![](assets/ai-perso-preview-button.png)
 
@@ -58,6 +62,10 @@ These steps cover generating personalization expressions from scratch. To work w
 
     +++
 
+    >[!NOTE]
+    >
+    >This control is for a quick check of your personalization code in the editor — not a full message preview of your content. For complete validation of the experience, use your usual simulation flow. [Learn how to preview & test your content](../content-management/preview-test.md)
+    
 1. To implement the output in your personalization expression, click **[!UICONTROL Apply]**. You can also copy the output and paste it where you need it using the ![Copy icon](../orchestrated/assets/do-not-localize/activity-copy.svg) icon.
 
 ## Edit, fix or explain existing code {#edit-existing}
