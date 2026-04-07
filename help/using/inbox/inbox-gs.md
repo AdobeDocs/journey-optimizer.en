@@ -36,3 +36,9 @@ Follow these steps to configure and use Inbox:
 1. [Create your Content card and link it to your Inbox](../content-card/create-content-card.md)
 
    Author the card content in the designer, finish Inbox-specific options, then activate your campaign so messages reach the inbox.
+
+## Additional ressources
+
+* [Fetch and Display Inbox](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/inbox-ui/Android/tutorial/displaying-inbox/): Load Journey Optimizer inbox messages and render the Inbox UI on Android (Adobe Developer documentation).
+* [Customizing Inbox](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/inbox-ui/Android/tutorial/customizing-inbox/): Adjust inbox layout, styling, and interaction behavior for your Android app (Adobe Developer documentation).
+* [Listening to Inbox Events](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/inbox-ui/Android/tutorial/listening-inbox-events/): Subscribe to inbox callbacks for user actions and lifecycle updates on Android (Adobe Developer documentation).
