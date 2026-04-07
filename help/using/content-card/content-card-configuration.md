@@ -56,7 +56,7 @@ The tables below list some surface URI definition examples for various devices.
 
 ## Create a content card configuration {#create-config}
 
-1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel configurations]** menu, then click **[!UICONTROL Create channel configuration]**.
+1. Access the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu, then click **[!UICONTROL Create channel configuration]**.
 
     ![](assets/content_card_config_1.png)
 

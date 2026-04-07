@@ -124,6 +124,10 @@ To start building your content cards through a campaign, follow the steps below.
 
 1. Select or create a new [Content card configuration](content-card-configuration.md).
 
+1. Select an [Inbox configuration](../inbox/inbox-configuration.md) that defines the inbox surface for this **Content card**.
+
+    ![](assets/content-card-create-2.png)
+
 1. To test the content of your message, click **[!UICONTROL Create experiment]**. This allows you to test multiple variables of a delivery on sample populations to determine which treatment has the greatest impact on the targeted audience. [Learn more about content experiment](../content-management/content-experiment.md).
 
 1. Enable the **[!UICONTROL Enable additional delivery rules]** option then select **[!UICONTROL Edit rules]** to define when your message should be shown, dismissed, or permanently hidden. 

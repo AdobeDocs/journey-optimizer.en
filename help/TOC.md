@@ -386,6 +386,11 @@ solution: Journey Optimizer
       + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
     + [Create content cards](using/content-card/create-content-card.md)
     + [Design content cards](using/content-card/design-content-card.md)
+  + Inbox {#inbox}
+    + [Get started with Inbox](using/inbox/inbox-gs.md)
+    + [Configure Inbox channel in Journey Optimizer](using/inbox/inbox-configuration.md)
+    + [Create your Inbox](using/inbox/inbox-create.md)
+    + [Design your Inbox](using/inbox/inbox-design.md)
   + WhatsApp {#whatsapp}
     + [WhatsApp](/help/rp_landing_pages/whatsapp-landing-page.md)
     + [Get started with WhatsApp messages](using/whatsapp/get-started-whatsapp.md)
