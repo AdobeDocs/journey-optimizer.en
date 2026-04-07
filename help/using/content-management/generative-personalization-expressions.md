@@ -38,7 +38,9 @@ Depending on your campaign or journey context, the assistant can work with data 
 
 These steps cover generating personalization expressions from scratch. To work with code already in the editor, see [Edit, fix or explain existing code](#edit-existing).
 
-1. In your message or content open the **[!UICONTROL Personalization Editor]** and click the **[!UICONTROL AI Assistant]** button.
+1. In your message or content, open the **[!UICONTROL Personalization Editor]**.
+
+1. Place your cursor in the editor where you want generated personalization code to be inserted, then click the **[!UICONTROL AI Assistant]** button.
 
     ![](assets/ai-perso-access.png)
 
@@ -52,7 +54,9 @@ These steps cover generating personalization expressions from scratch. To work w
 
     ![](assets/ai-perso-question.png)
 
-1. After you generate an expression, click **[!UICONTROL Show previews for sample profiles]** to see how the expression evaluates with sample data and to view the associated payload as JSON. For this check, the assistant generates a limited set of synthetic sample profiles, they are not saved or stored in your Organization.
+1. After you generate an expression, click **[!UICONTROL Show previews for sample profiles]** to see how the expression evaluates with sample data and to view the associated payload as JSON. For this check, the assistant generates a limited set of synthetic sample profiles; they are not saved or stored in your organization.
+
+    If you need more sample profiles, type **Preview** in the discussion with the assistant so it can generate additional preview profiles.
 
     ![](assets/ai-perso-preview-button.png)
 
@@ -65,8 +69,10 @@ These steps cover generating personalization expressions from scratch. To work w
     >[!NOTE]
     >
     >This control is for a quick check of your personalization code in the editor — not a full message preview of your content. For complete validation of the experience, use your usual simulation flow. [Learn how to preview & test your content](../content-management/preview-test.md)
-    
-1. To implement the output in your personalization expression, click **[!UICONTROL Apply]**. You can also copy the output and paste it where you need it using the ![Copy icon](../orchestrated/assets/do-not-localize/activity-copy.svg) icon.
+
+1. To implement the output in your personalization expression, click **[!UICONTROL Apply]**. The assistant output is inserted at the cursor location in the personalization editor. To replace code that is already there instead, select that code in the editor first, then use **[!UICONTROL Edit with AI Assistant]** (see [Edit, fix or explain existing code](#edit-existing)).
+
+    You can also copy the output and paste it where you need it using the ![Copy icon](../orchestrated/assets/do-not-localize/activity-copy.svg) icon.
 
 ## Edit, fix or explain existing code {#edit-existing}
 
@@ -86,4 +92,4 @@ You can select an existing personalization expression and use AI Assistant to fi
 
     ![](assets/ai-perso-fix.png)
 
-1. As when you generate a personalization expression, click **[!UICONTROL Apply]** to implement the assistant output in your expression. For example, if you asked for an explanation of the code, applying can add comments in the expression that describe what it does.
+1. As when you generate a personalization expression, click **[!UICONTROL Apply]** to implement the assistant output. It replaces the code you had selected in the personalization editor. For example, if you asked for an explanation of the code, applying will add comments in the expression that describe what it does.
