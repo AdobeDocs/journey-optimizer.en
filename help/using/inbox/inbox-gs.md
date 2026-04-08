@@ -16,7 +16,7 @@ Inbox builds on the Content Cards channel and adds:
 * **Persistent messaging**: Content stays in the inbox until you remove it or it expires, so users can return to it after closing a notification or leaving the app.
 * **Centralized location**: A single mailbox in your app or site for relevant marketing messages.
 * **Flexible implementation**: Use the ready-made inbox container or tailor the experience in your own UI.
-* **Cross-device sync**: Read status and engagement stay aligned across a user's devices.
+* **Read-Status**: Messages can be marked as read or unread on the device where they're opened.
 
 ## Quick start guide
 
