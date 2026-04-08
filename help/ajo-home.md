@@ -48,7 +48,7 @@ Quiet hours let you define time-based exclusions for Email, SMS, Push, and Whats
 
 ## Start Exploring {#section-explore}
 
-:::: landing-cards-container
+::::landing-cards-container
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
