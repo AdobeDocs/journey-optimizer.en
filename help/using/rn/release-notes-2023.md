@@ -285,7 +285,7 @@ This release brings the new capabilities listed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 

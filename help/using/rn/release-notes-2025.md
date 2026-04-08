@@ -111,11 +111,11 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <li><strong>Basic message composition:</strong> Send basic text-based RCS messages.</li>
 </ul>
 <!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.-->
 <!--/td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <!--table>
 <thead>
@@ -128,11 +128,11 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <td>
 <p>Direct mail channel is now available in orchestrated campaigns. The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data.</p>
 <!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.-->
 <!--/td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <!--table>
 <thead>
@@ -146,11 +146,11 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <p>Previously limited to Campaigns, Direct Mail channel is now available on the journey canvas, enabling you to incorporate Direct Mail into your journeys. Direct Mail can now be used in both batch and 1:1 journey scenarios, with support for file extraction configuration and time-based frequency settings.</p>
 <p> Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.-->
 <!--/td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <!--<table>
 <thead>
@@ -186,7 +186,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -685,7 +685,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <!--table>
 <thead>
@@ -703,7 +703,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -1595,7 +1595,7 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <!--<table>
 <thead>
@@ -1644,7 +1644,7 @@ New capabilities coming with this release are listed below.
 <p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p></td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 <table>
@@ -1736,7 +1736,7 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -1825,21 +1825,25 @@ New capabilities coming with this release are listed below.
     >
     >This improvement is only available for a set of organizations (Limited Availability).
 
-<!--- **Folders for content templates and fragments** - Availability date: May 5, 2025
+<!--
+**Folders for content templates and fragments** - Availability date: May 5, 2025
 
   Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy.
 
 
 
-<!--- **Right rail in campaigns list**  
+**Right rail in campaigns list**  
 
-  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.-->
+  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.
+-->
 
-<!--**Playbooks**
+<!--
+**Playbooks**
 
 - **Create your own playbooks (Beta)**
   
-  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.-->
+  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.
+-->
 
 
 
@@ -1866,7 +1870,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 <!--table>
@@ -1884,7 +1888,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <!-- table>
 <thead>
@@ -1901,7 +1905,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -1978,7 +1982,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 ### Improvements {#25-03-improv}

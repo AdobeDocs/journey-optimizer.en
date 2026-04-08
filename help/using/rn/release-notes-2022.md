@@ -200,7 +200,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements{#sept-2022-improvements}
 
@@ -294,7 +294,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 ### Improvements
@@ -577,7 +577,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -733,7 +733,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>

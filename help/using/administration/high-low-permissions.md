@@ -170,9 +170,11 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
       * campaign.read
       * campaign.write
       * campaign.delete
-      <!--* experiments.read
+      <!--
+      * experiments.read
       * experiments.write
-      * experiments.delete-->
+      * experiments.delete
+      -->
 
   +++
 
@@ -184,7 +186,9 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
       * campaign-read
       * campaign-publish
-      <!--* experiments.activate-->
+      <!--
+      * experiments.activate
+      -->
 
   +++
 
@@ -195,8 +199,10 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
     * Journey Optimizer specific:
       * campaign.read
       * campaign-report.read
-      <!--* experiments.read
-      * experiments_report.read-->
+      <!--
+      * experiments.read
+      * experiments_report.read
+      -->
 
   +++
 

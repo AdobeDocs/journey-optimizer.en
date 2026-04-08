@@ -543,7 +543,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -803,7 +803,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements {#june24-improvements}
 
@@ -931,7 +931,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <!--table>
 <thead>
@@ -948,7 +948,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 <!--table>
@@ -965,7 +965,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements {#e-improvements}
 
@@ -1079,7 +1079,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 <!--table>
@@ -1095,7 +1095,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements {#apr-improvements}
 

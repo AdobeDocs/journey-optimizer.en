@@ -76,11 +76,13 @@ Let's say you want to target your customers through journeys and campaigns based
 
     ![](assets/profile-preference-attributes.png){width=80%}
 
-<!--The corresponding profile dataset is updated as follows:
+<!--
+The corresponding profile dataset is updated as follows:
 
 |Attribute = Email id | Attribute = Offers_Push | Attribute = Newsletters_Email |
 |---------|----------|---------|
-| john.black@lumamail.com | Y | N |-->
+| john.black@lumamail.com | Y | N |
+-->
 
     >[!NOTE]
     >
@@ -96,11 +98,13 @@ Let's say you want to target your customers through journeys and campaigns based
 
 1. Choose the **[!UICONTROL Consent policy]** type and configure a condition as follows. [Learn how to configure consent policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"}
 
-<!--Consent policies are comprised of two logical components:
+<!--
+Consent policies are comprised of two logical components:
 
 * **If**: The condition that will trigger the policy check, based on a certain marketing action (email, SMS, push, custom action, etc.) being performed, the presence of certain data usage labels, or a combination of the two.
 
-* **Then**: The consent attribute must be present for a profile to be included in the action that triggered the policy. More than one field can also be selected.-->
+* **Then**: The consent attribute must be present for a profile to be included in the action that triggered the policy. More than one field can also be selected.
+-->
 
     For example, to send communications only to your customers who have not opted out from receiving email newsletters, create a custom policy and define the following condition:
 
