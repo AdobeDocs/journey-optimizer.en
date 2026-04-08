@@ -106,9 +106,11 @@ When building code-based experiences for web pages or mobile apps, you can previ
 
 1. Preview links are generated for the selected test profile and, if you are using [Content Experiment](../content-management/content-experiment.md) in your journey or campaign, for the selected treatment.
 
-   <!--If you have modified the content or selected a different treatment or test profile, scroll down to the bottom of the **[!UICONTROL Preview on device]** pop-up and click **[!UICONTROL Refresh preview link]** to reflect the current state.
+   <!--
+If you have modified the content or selected a different treatment or test profile, scroll down to the bottom of the **[!UICONTROL Preview on device]** pop-up and click **[!UICONTROL Refresh preview link]** to reflect the current state.
 
-   ![](assets/preview-on-device-refresh.png)-->
+   ![](assets/preview-on-device-refresh.png)
+-->
    
    <!--When creating a content experiment, you need to select a given treatment and click the **[!UICONTROL Simulate content]** button to obtain the link corresponding to that treatment, then select another treatment, click the **[!UICONTROL Simulate content]** button to obtain a new preview link, and so on.-->
 

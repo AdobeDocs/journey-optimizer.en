@@ -242,13 +242,15 @@ Improvements coming with this release are listed below.
 
   Availability date: February 18, 2026
   
-<!--THIS WAS FINALLY NOT RELEASED IN FEBRUARY
+<!--
+THIS WAS FINALLY NOT RELEASED IN FEBRUARY
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies. [Read more](../experience-decisioning/fragments-decision-policies.md)
 
   Previously released in Limited Availability, this capability is now available to all environments (General Availability).
 
-  Availability date: February 12, 2026.-->
+  Availability date: February 12, 2026.
+-->
 
 #### Personalization
 

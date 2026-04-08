@@ -47,7 +47,8 @@ Before being able to use the URL parameter encryption helper, you need to create
 <!--
 >[!IMPORTANT]
 >
->To access and manage keys, you you must have the **View Key Registry** and **Manage Key Registry** permissions granted. [Learn more](../administration/high-low-permissions.md)-->
+>To access and manage keys, you you must have the **View Key Registry** and **Manage Key Registry** permissions granted. [Learn more](../administration/high-low-permissions.md)
+-->
 
 1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Configurations]**.
 

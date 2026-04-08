@@ -103,7 +103,8 @@ To import files to **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Ser
     Note that this option is available for licensed/unlicensed Stock images and images from your Assets folder. 
 
     ![](assets/media_library_14.png)
-    -->
+    
+-->
 
 
 ## Frequently Asked Questions {#faq-assets}

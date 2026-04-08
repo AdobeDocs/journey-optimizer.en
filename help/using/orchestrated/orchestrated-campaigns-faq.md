@@ -133,7 +133,8 @@ Yes. Campaign orchestration is natively integrated with:
 
 * **Customer Journey Analytics**: Campaign orchestration reports are available.  
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
-* **Federated Audience Composition (FAC)**: Available as an add-on.  -->
+* **Federated Audience Composition (FAC)**: Available as an add-on.  
+-->
 
 +++ How do I test a signal-triggered orchestrated campaign before publishing?
 

@@ -122,9 +122,11 @@ Because of this model, release notes are updated between monthly releases. For f
 
   Availability date: April 7, 2026
 
-<!--* **Adobe Experience Manager Content Fragment context while authoring** - Your Content Fragment selection stays active as you move between text fields and content blocks, so you can add more fragment fields without reopening **Open AEM Content advisor** each time. [Read more](../integrations/aem-fragments.md)
+<!--
+* **Adobe Experience Manager Content Fragment context while authoring** - Your Content Fragment selection stays active as you move between text fields and content blocks, so you can add more fragment fields without reopening **Open AEM Content advisor** each time. [Read more](../integrations/aem-fragments.md)
 
-  Availability date: April 1, 2026-->
+  Availability date: April 1, 2026
+-->
 
 #### Adobe Experience Manager Integrations
 
@@ -140,7 +142,8 @@ The [New capabilities](#march-26-features) and [Improvements](#march-26-improv) 
 <!--
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+-->
 
 **Release date**: March 24-25, 2026
 
@@ -426,8 +429,6 @@ Improvements coming with this release are listed below.
   Availability date: March 27, 2026
 
 <!--
-
-
 * **Exclude bot clicks for email and SMS reporting** - Email and SMS reporting now automatically filters out bot clicks from click metrics, providing more accurate engagement data and preventing automated traffic from inflating your performance figures.
 
 #### Email Designer
@@ -436,7 +437,8 @@ Improvements coming with this release are listed below.
 
 * **Text mode support in fragments** - To support text-based email workflows, you can now create and manage text versions of your visual fragments for optimal use in the plain text version of emails that include that fragment.
 
-  **Caution:** When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered—both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.-->
+  **Caution:** When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered—both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.
+-->
 <!--
 #### Decisioning
 
@@ -480,7 +482,8 @@ Improvements coming with this release are listed below.
 
   Availability date: March 31, 2026
   
-<!--## Coming soon {#coming-soon}
+<!--
+## Coming soon {#coming-soon}
 
 The features and improvements below are planned for release later in March/early April. Release dates and scope are **subject to change without prior notice**.
 

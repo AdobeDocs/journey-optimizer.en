@@ -218,7 +218,8 @@ If you want to use custom CSS with content imported into the Email Designer, con
 * If importing content created with the Email Designer including CSS applied through the **[!UICONTROL Add custom CSS]** option, the CSS previously applied will be visible and editable from the same option.
 
 <!--
-* If importing content created with the Email Designer with CSS applied externally, the CSS code previously applied cannot be accessed within the **[!UICONTROL Add custom CSS]** pop-up window, but you can still override it with new custom CSS.-->
+* If importing content created with the Email Designer with CSS applied externally, the CSS code previously applied cannot be accessed within the **[!UICONTROL Add custom CSS]** pop-up window, but you can still override it with new custom CSS.
+-->
 
 ## Troubleshooting {#troubleshooting}
 
