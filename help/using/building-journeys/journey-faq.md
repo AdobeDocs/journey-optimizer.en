@@ -547,9 +547,11 @@ Learn more about [journey live reporting](report-journey.md).
 * **Journey not published**: The journey is still in draft mode
   Solution: Publish the journey to activate it
   
- <!-- 
+ <!--
+ 
 * **Message not approved**: Message content requires approval before sending
-  Solution: Submit for approval or check approval status-->
+  Solution: Submit for approval or check approval status
+-->
   
 * **Channel configuration issue**: Email/SMS configuration is incorrect
   Solution: Verify channel configurations and authentication

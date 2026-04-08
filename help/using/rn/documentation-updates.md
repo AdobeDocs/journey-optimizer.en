@@ -474,7 +474,6 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 +++
 
 <!--
-
 ## August 2024 {#aug-2024}
 
 * All new features and improvements coming with [!DNL Journey Optimizer] August '24 release have been detailed in the documentation. [Read more](release-notes.md)
