@@ -5,7 +5,7 @@ title: Manage your customers' preferences
 description: Learn how to manage users' preferences through the use of consent policies
 feature: Journeys, Privacy, Consent Management, Landing Pages
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 keywords: policies, governance, platform, consent, healthcare shield
 exl-id: a3e68015-c8f8-4b01-8171-f39d70b7e59d

@@ -22,65 +22,65 @@ A frequent challenge with Live activities is when the API call to trigger or upd
 
 Before troubleshooting, ensure you have:
 
-* +++ Set up an Assurance session
++++ Set up an Assurance session
 
-  Set up an **Assurance session** to capture SDK events and inspect the delivery pipeline. Assurance provides visibility into:
+Set up an **Assurance session** to capture SDK events and inspect the delivery pipeline. Assurance provides visibility into:
 
-  * Edge Network requests and responses
-  * Profile qualification events
-  * Push token registration
-  * Live activity lifecycle events
+* Edge Network requests and responses
+* Profile qualification events
+* Push token registration
+* Live activity lifecycle events
 
-  Learn how to set up Assurance in the [Adobe Experience Platform Assurance documentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/assurance).
+Learn how to set up Assurance in the [Adobe Experience Platform Assurance documentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/assurance).
 
-  **Note**: For iOS Live activity, ensure your app is running on a physical iOS device (iOS 16.1 or later) or Xcode Simulator (iOS 16.1 or later).
+**Note**: For iOS Live activity, ensure your app is running on a physical iOS device (iOS 16.1 or later) or Xcode Simulator (iOS 16.1 or later).
 
-  +++
++++
 
-* +++ Gather API Triggered Campaign details
++++ Gather API Triggered Campaign details
 
-  Navigate to your API Triggered Campaign in Journey Optimizer and retrieve:
+Navigate to your API Triggered Campaign in Journey Optimizer and retrieve:
 
-  * Campaign name
-  * Campaign ID found in the URL or campaign properties
-  * Campaign version if applicable
-  * Surface configuration, iOS app surface used for Live activity
+* Campaign name
+* Campaign ID found in the URL or campaign properties
+* Campaign version if applicable
+* Surface configuration, iOS app surface used for Live activity
 
-  +++
++++
 
-* +++ Collect API request information
++++ Collect API request information
 
-  When making the API call to trigger the Live activity, save:
+When making the API call to trigger the Live activity, save:
 
-  * API request payload, including profile identifiers and Live activity data
-  * API response including status code, message ID, request ID
-  * Timestamp of when the API was called
-  * Endpoint used, e.g., `/campaign/{CAMPAIGN_ID}/execute`
+* API request payload, including profile identifiers and Live activity data
+* API response including status code, message ID, request ID
+* Timestamp of when the API was called
+* Endpoint used, e.g., `/campaign/{CAMPAIGN_ID}/execute`
 
-  +++
++++
 
-* +++ Identify the test profile
++++ Identify the test profile
 
-  From your API request, retrieve:
+From your API request, retrieve:
 
-  * Profile namespace, e.g., ECID, email, customer ID
-  * Profile ID used in the API call
+* Profile namespace, e.g., ECID, email, customer ID
+* Profile ID used in the API call
 
-  Ensure you can look up this profile in Adobe Experience Platform. Learn how to [look up a profile in the Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide.html).
+Ensure you can look up this profile in Adobe Experience Platform. Learn how to [look up a profile in the Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide.html).
 
-  +++
++++
 
-* +++ Device and app information
++++ Device and app information
 
-  Collect the following from your test device:
+Collect the following from your test device:
 
-  * Device model, e.g., iPhone 14 Pro
-  * iOS version
-  * App bundle identifier
-  * APNs push token
-  * Network connectivity status at the time of testing
+* Device model, e.g., iPhone 14 Pro
+* iOS version
+* App bundle identifier
+* APNs push token
+* Network connectivity status at the time of testing
 
-  +++
++++
 
 ## Common scenarios
 
@@ -193,166 +193,166 @@ Profile exists with valid tokens, but Live activity does not appear. This can be
 
 #### Debugging steps
 
-1. +++ Verify campaign surface configuration
++++ 1. Verify campaign surface configuration
 
-   1. In Journey Optimizer, open your **Campaign** and navigate to the **Actions** menu.
-   1. Check your **Live activity configuration**. The surface must be configured for the iOS app with a bundle identifier that matches the `appId` in your profile's `liveActivityPushNotificationDetails`. For example, if your profile has `"appId": "com.example.myapp"`, the surface must target that same app.
-   1. Check that the **Activity type** in your campaign configuration matches exactly the `attributeType` in your profile's `liveActivityPushNotificationDetails`. For example, if your profile has `"attributeType": "FoodDeliveryLiveActivityAttributes"`, the campaign must specify this same Activity type.
+1. In Journey Optimizer, open your **Campaign** and navigate to the **Actions** menu.
+1. Check your **Live activity configuration**. The surface must be configured for the iOS app with a bundle identifier that matches the `appId` in your profile's `liveActivityPushNotificationDetails`. For example, if your profile has `"appId": "com.example.myapp"`, the surface must target that same app.
+1. Check that the **Activity type** in your campaign configuration matches exactly the `attributeType` in your profile's `liveActivityPushNotificationDetails`. For example, if your profile has `"attributeType": "FoodDeliveryLiveActivityAttributes"`, the campaign must specify this same Activity type.
 
-      +++
++++
 
-1. +++Validate API payload structure
-  
-   When executing the campaign via API, ensure the payload follows the correct structure.
++++ 2. Validate API payload structure
 
-   **Unitary payload:**
+When executing the campaign via API, ensure the payload follows the correct structure.
 
-   ```json
-   {
-     "campaignId": "your-campaign-id",
-     "recipients": [{
-       "type": "aep",
-       "userId": "user@example.com",
-       "namespace": "email",
-       "context": {
-         "requestPayload": {
-           "aps": {
-             "content-available": 1,
-             "timestamp": 1756984054,
-             "event": "start",
-             "attributes-type": "FoodDeliveryLiveActivityAttributes",
-             "content-state": { ... },
-             "attributes": { ... }
-           }
+**Unitary payload:**
+
+```json
+{
+   "campaignId": "your-campaign-id",
+   "recipients": [{
+      "type": "aep",
+      "userId": "user@example.com",
+      "namespace": "email",
+      "context": {
+      "requestPayload": {
+         "aps": {
+            "content-available": 1,
+            "timestamp": 1756984054,
+            "event": "start",
+            "attributes-type": "FoodDeliveryLiveActivityAttributes",
+            "content-state": { ... },
+            "attributes": { ... }
          }
-       }
-     }]
+      }
+      }
+   }]
+}
+```
+
+**Common payload issues:**
+
+| Field | Requirement | Common Issue |
+|-|-|-|
+| `attributes-type` | Must match campaign Activity type and profile `attributeType` | Mismatch or typo |
+| `campaignId` | Must match the activated campaign ID | Wrong or missing campaign ID |
+| `content-available` | Must be `1` | Missing or wrong value |
+| `event` | Must be `"start"`, `"update"`, or `"end"` | Invalid event type |
+| `timestamp` | Must always be the current/latest Unix epoch time in seconds | Using old/cached timestamp |
+| `userId` / `namespace` | Must match an existing profile in AEP | Profile identifier mismatch |
+
+**Critical: Always use the latest timestamp**
+
+* The `timestamp` field must **always** be the **current Unix epoch time** (in seconds) at the moment each API call is made.
+* This applies to **all event types**: `start`, `update`, and **especially `end`**.
+* **Impact on updates/end requests**: Using a stale or old timestamp will cause update and end requests to fail or be ignored by the device.
+* Do **NOT** reuse timestamps from previous requests or use cached values.
+* Generate a fresh timestamp for every API call.
+
+**Optional fields (all event types):**
+
+* `requestId`: Unique identifier for tracking (recommended).
+* `alert`: Object with `title` and `body` for notification (useful for drawing attention to updates).
+
+**About `dismissal-date`:**
+
+* Optional field containing Unix epoch time (seconds).
+* **Only relevant when `event: "end"`**.
+* Specifies when the Live activity should automatically be removed from the device.
+* If not provided on end event, Live activity remains visible until user dismisses it.
+* Must be a future timestamp (later than `timestamp`).
+
++++
+
++++ 3. Align payload with iOS implementation
+
+Ensure your API payload matches your iOS app's `ActivityAttributes` implementation. The Adobe SDK's `LiveActivityAttributes` protocol extends iOS `ActivityAttributes` and requires a `liveActivityData` property.
+
+**Validate the mapping:**
+
+1. Your `ActivityAttributes` must implement Adobe's `LiveActivityAttributes` protocol. Example:
+
+   ```swift
+   struct FoodDeliveryLiveActivityAttributes: LiveActivityAttributes {
+      public struct ContentState: Codable, Hashable {
+         var orderStatus: String
+         var estimatedDeliveryTime: String
+      }
+      
+      // Adobe SDK requirement
+      var liveActivityData: LiveActivityData
+      
+      // Your custom attributes
+      var restaurantName: String
    }
    ```
 
-   **Common payload issues:**
+   **Note** that the `liveActivityData` field is required by Adobe SDK and must be included in all implementations.
 
-   | Field | Requirement | Common Issue |
-   |-|-|-|
-   | `attributes-type` | Must match campaign Activity type and profile `attributeType` | Mismatch or typo |
-   | `campaignId` | Must match the activated campaign ID | Wrong or missing campaign ID |
-   | `content-available` | Must be `1` | Missing or wrong value |
-   | `event` | Must be `"start"`, `"update"`, or `"end"` | Invalid event type |
-   | `timestamp` | Must always be the current/latest Unix epoch time in seconds | Using old/cached timestamp |
-   | `userId` / `namespace` | Must match an existing profile in AEP | Profile identifier mismatch |
+1. Your API payload must mirror the iOS structure:
 
-   **Critical: Always use the latest timestamp**
-
-   * The `timestamp` field must **always** be the **current Unix epoch time** (in seconds) at the moment each API call is made.
-   * This applies to **all event types**: `start`, `update`, and **especially `end`**.
-   * **Impact on updates/end requests**: Using a stale or old timestamp will cause update and end requests to fail or be ignored by the device.
-   * Do **NOT** reuse timestamps from previous requests or use cached values.
-   * Generate a fresh timestamp for every API call.
-
-   **Optional fields (all event types):**
-
-   * `requestId`: Unique identifier for tracking (recommended).
-   * `alert`: Object with `title` and `body` for notification (useful for drawing attention to updates).
-
-   **About `dismissal-date`:**
-
-   * Optional field containing Unix epoch time (seconds).
-   * **Only relevant when `event: "end"`**.
-   * Specifies when the Live activity should automatically be removed from the device.
-   * If not provided on end event, Live activity remains visible until user dismisses it.
-   * Must be a future timestamp (later than `timestamp`).
-
-      +++
-
-1. +++ Align payload with iOS implementation
-
-   Ensure your API payload matches your iOS app's `ActivityAttributes` implementation. The Adobe SDK's `LiveActivityAttributes` protocol extends iOS `ActivityAttributes` and requires a `liveActivityData` property.
-
-   **Validate the mapping:**
-
-   1. Your `ActivityAttributes` must implement Adobe's `LiveActivityAttributes` protocol. Example:
-
-      ```swift
-      struct FoodDeliveryLiveActivityAttributes: LiveActivityAttributes {
-       public struct ContentState: Codable, Hashable {
-           var orderStatus: String
-           var estimatedDeliveryTime: String
-       }
-       
-       // Adobe SDK requirement
-       var liveActivityData: LiveActivityData
-       
-       // Your custom attributes
-       var restaurantName: String
+   ```json
+   {
+      "aps": {
+         "event": "start",
+         "timestamp": 1756984054,
+         "attributes-type": "FoodDeliveryLiveActivityAttributes",
+         "content-state": {
+         "orderStatus": "Preparing",
+         "estimatedDeliveryTime": "20 mins"
+      },
+      "attributes": {
+         "liveActivityData": {
+         "liveActivityID": "order-12345"
+         },
+         "restaurantName": "Pizza Palace"
       }
-      ```
-
-      **Note** that the `liveActivityData` field is required by Adobe SDK and must be included in all implementations.
-
-   1. Your API payload must mirror the iOS structure:
-
-      ```json
-      {
-        "aps": {
-           "event": "start",
-           "timestamp": 1756984054,
-           "attributes-type": "FoodDeliveryLiveActivityAttributes",
-           "content-state": {
-           "orderStatus": "Preparing",
-           "estimatedDeliveryTime": "20 mins"
-        },
-        "attributes": {
-          "liveActivityData": {
-            "liveActivityID": "order-12345"
-          },
-          "restaurantName": "Pizza Palace"
-        }
-        }
       }
-      ```
+   }
+   ```
 
-   **Validation checklist:**
+**Validation checklist:**
 
-   * Include all `ContentState` fields in `content-state` (required for all event types).
-   * Include all `LiveActivityAttributes` fields in `attributes` (start events only), including:
-     * `liveActivityData` (required; typically contains `liveActivityID` or similar identifier)
-     * All custom fields from your struct
-   * Match field names exactly (case-sensitive).
-   * Match data types (String, Int, Bool, nested objects).
-   * Preserve nested object structure.
+* Include all `ContentState` fields in `content-state` (required for all event types).
+* Include all `LiveActivityAttributes` fields in `attributes` (start events only), including:
+   * `liveActivityData` (required; typically contains `liveActivityID` or similar identifier)
+   * All custom fields from your struct
+* Match field names exactly (case-sensitive).
+* Match data types (String, Int, Bool, nested objects).
+* Preserve nested object structure.
 
-   **Common mistakes:**
+**Common mistakes:**
 
-   | Issue | Impact | Fix |
-   |-------|--------|-----|
-   | Missing `liveActivityData` in attributes | Live activity will not start | Always include `liveActivityData` object in start event |
-   | Missing required field in start event | Live activity will not start | Add all fields from iOS struct |
-   | Wrong field name (typo/case) | Field ignored or parsing error | Match iOS field names exactly |
-   | Wrong data type | Parsing error | Match iOS data types |
-   | Missing nested object | Incomplete data | Include all nested structures |
-   | Including `attributes` in update/end | Unnecessary, but usually ignored | Only include `attributes` in start event |
-   | Stale timestamp on update/end | Update/end ignored by device | Always generate fresh timestamp |
+| Issue | Impact | Fix |
+|-------|--------|-----|
+| Missing `liveActivityData` in attributes | Live activity will not start | Always include `liveActivityData` object in start event |
+| Missing required field in start event | Live activity will not start | Add all fields from iOS struct |
+| Wrong field name (typo/case) | Field ignored or parsing error | Match iOS field names exactly |
+| Wrong data type | Parsing error | Match iOS data types |
+| Missing nested object | Incomplete data | Include all nested structures |
+| Including `attributes` in update/end | Unnecessary, but usually ignored | Only include `attributes` in start event |
+| Stale timestamp on update/end | Update/end ignored by device | Always generate fresh timestamp |
 
-   For more examples, refer to [Create Live activity page](create-mobile-live.md).
+For more examples, refer to [Create Live activity page](create-mobile-live.md).
 
-      +++
++++
 
-1. +++ Test with Assurance
++++ 4. Test with Assurance
 
-   Verify API execution and payload delivery using Assurance:
+Verify API execution and payload delivery using Assurance:
 
-   1. Open your Assurance session.
-   1. Execute the API call to trigger the Live activity.
-   1. In the **Event List**, check for:
-      * Campaign execution events.
-      * Live activity delivery events.
-      * Payload validation error events.
-   1. Review event payloads to verify:
-      * Payload was processed correctly.
-      * No validation errors occurred.
-      * Live activity was sent to APNs.
+1. Open your Assurance session.
+1. Execute the API call to trigger the Live activity.
+1. In the **Event List**, check for:
+   * Campaign execution events.
+   * Live activity delivery events.
+   * Payload validation error events.
+1. Review event payloads to verify:
+   * Payload was processed correctly.
+   * No validation errors occurred.
+   * Live activity was sent to APNs.
 
-      +++
++++
 
 ### Delivery failures and error analysis
 
@@ -383,135 +383,135 @@ But the Live activity still does not appear, update, or end as expected. The iss
 
 #### Debugging steps
 
-1. +++ Check campaign reports
++++ 1. Check campaign reports
 
-   1. Navigate to your **Live activity Campaign**.
-   1. Click the **Reports** button.
-   1. Select **View all time report**.
-   1. Review the following sections:
+1. Navigate to your **Live activity Campaign**.
+1. Click the **Reports** button.
+1. Select **View all time report**.
+1. Review the following sections:
 
-      1. Check the **Sending Statistics** metrics to understand delivery success:
+   1. Check the **Sending Statistics** metrics to understand delivery success:
 
-          | Metric | What it means | What to look for |
-          |-|-|-|
-          | Targeted | Number of profiles qualified for the audience | Should include your test profile |
-          | Sends | Total push notifications attempted | Should match your API calls |
-          | Delivered | Successfully delivered to devices | Compare with Sends to see success rate |
-          | Send errors | Push notifications that failed to send | High numbers|
-          | Send exclusions | Profiles excluded by Adobe Journey Optimizer | Check if your profile was excluded |
+         | Metric | What it means | What to look for |
+         |-|-|-|
+         | Targeted | Number of profiles qualified for the audience | Should include your test profile |
+         | Sends | Total push notifications attempted | Should match your API calls |
+         | Delivered | Successfully delivered to devices | Compare with Sends to see success rate |
+         | Send errors | Push notifications that failed to send | High numbers|
+         | Send exclusions | Profiles excluded by Adobe Journey Optimizer | Check if your profile was excluded |
 
-      1. If Send errors > 0, check the **Error Reasons** table for specific error codes and messages:
+   1. If Send errors > 0, check the **Error Reasons** table for specific error codes and messages:
 
-          | Common Error | Meaning | Resolution |
-          |-|-|-|
-          | Invalid token | Push token is invalid or expired | Re-register Live activity tokens from device |
-          | Token not found | No valid token associated with profile | Verify `liveActivityPushNotificationDetails` exists |
-          | APNs rejected | Apple Push Notification service rejected the push | Check APNs certificate, bundle ID, environment |
-          | Network timeout | Unable to reach APNs | Transient issue; retry the API call |
+         | Common Error | Meaning | Resolution |
+         |-|-|-|
+         | Invalid token | Push token is invalid or expired | Re-register Live activity tokens from device |
+         | Token not found | No valid token associated with profile | Verify `liveActivityPushNotificationDetails` exists |
+         | APNs rejected | Apple Push Notification service rejected the push | Check APNs certificate, bundle ID, environment |
+         | Network timeout | Unable to reach APNs | Transient issue; retry the API call |
 
-      1. If **Send exclusions** > 0, check the **Excluded Reasons** table:
+   1. If **Send exclusions** > 0, check the **Excluded Reasons** table:
 
-          | Common Exclusion | Meaning | Resolution |
-          |-|-|-|
-          | Profile opted out | User has opted out of notifications | Check profile consent status |
-          | Token denylisted | Token marked as invalid | Re-register token or check denylist status |
-          | Profile not eligible | Profile does not meet campaign criteria | Review campaign audience rules |
+         | Common Exclusion | Meaning | Resolution |
+         |-|-|-|
+         | Profile opted out | User has opted out of notifications | Check profile consent status |
+         | Token denylisted | Token marked as invalid | Re-register token or check denylist status |
+         | Profile not eligible | Profile does not meet campaign criteria | Review campaign audience rules |
 
-   Learn more in the [Live activity campaign report page](../reports/campaign-global-report-cja-activity.md).
+Learn more in the [Live activity campaign report page](../reports/campaign-global-report-cja-activity.md).
+
++++
+
++++ 2. Check message feedback events in profile
+
+1. Navigate to **Customer** > **Profiles** in Journey Optimizer.
+1. Search for and open the profile.
+1. Select the **Events** tab.
+1. Filter or search for events with `eventType = "message.feedback"`.
+1. Look for feedback events matching your Live activity's `liveActivityID` and `event` type.
+1. Review the following key fields:
+
+   | Field | Possible Values | What it means |
+   |---|---|---|
+   | `feedbackStatus` | `sent`, `error`, `denylist` | Delivery outcome from service provider |
+   | `serviceProvider` | `apns/apnsSandbox` | Should be APNs for iOS Live activities |
+   | `errorCode` | Numeric code or `null` | APNs-specific error code if failed |
+   | `errorMessage` | Error description or `null` | Human-readable error message |
+
+1. **If `feedbackStatus: "error"`:**
+   * Check the `errorCode` and `errorMessage` for specific APNs errors
+   * Common APNs errors include expired token, invalid certificate, wrong bundle ID
+
+1. **If no feedback event found:**
+   * The push notification may not have been attempted
+   * Check if profile was excluded in Campaign Reports as detailed in Step 1 above.
+
++++
+
++++ 3. Verify Live activity delivery to APNs in Assurance
+
+1. Open your Assurance session, it must be active during the API call.
+1. Execute the API call (start, update, or end).
+1. In the **Event List**, look for Live activity delivery events.
+1. Search for events related to APNs push delivery.
+1. Check for the following indicators:
+   * **Push request to APNs**: Confirms Adobe sent the push to Apple's servers
+   * **APNs response**: Shows whether APNs accepted or rejected the push
+   * **Delivery status**: Success or failure indication
+1. If issues are found, refer to the following common APNs delivery issues:
+
+   | Issue | Symptom in Assurance | Resolution |
+   |-|-|-|
+   | APNs certificate expired | Authentication error | Renew and upload new APNs certificate |
+   | Wrong environment (dev vs prod) | Token mismatch error | Ensure certificate matches app build type |
+   | Bundle ID mismatch | Invalid bundle identifier | Verify certificate bundle ID matches app |
+   | Token expired | InvalidToken error from APNs | Re-register Live activity tokens |
+   | Rate limiting | Too many requests | Reduce API call frequency |
+
++++
   
-      +++
++++ 4. Proceed to additional diagnostic checks
 
-1. +++ Check message feedback events in profile
+1. Check Live activity Lifecycle metrics in Campaign Report.
 
-   1. Navigate to **Customer** > **Profiles** in Journey Optimizer.
-   1. Search for and open the profile.
-   1. Select the **Events** tab.
-   1. Filter or search for events with `eventType = "message.feedback"`.
-   1. Look for feedback events matching your Live activity's `liveActivityID` and `event` type.
-   1. Review the following key fields:
+   In the campaign report, review the **Live activity lifecycle** section:
 
-      | Field | Possible Values | What it means |
-      |-|-|-|
-      | `feedbackStatus` | `sent`, `error`, `denylist` | Delivery outcome from service provider |
-      | `serviceProvider` | `apns/apnsSandbox` | Should be APNs for iOS Live activities |
-      | `errorCode` | Numeric code or `null` | APNs-specific error code if failed |
-      | `errorMessage` | Error description or `null` | Human-readable error message |
+   | Metric | What to check |
+   |-|-|
+   | Remote starts | Should show count of API-triggered starts |
+   | Updates | Should show count of update events |
+   | Ends | Should show count of end events |
+   | Totals count | Overall Live activity event volume |
 
-   1. **If `feedbackStatus: "error"`:**
-      * Check the `errorCode` and `errorMessage` for specific APNs errors
-      * Common APNs errors include expired token, invalid certificate, wrong bundle ID
+   If these metrics are zero or do not match your API calls, there is a delivery issue between Adobe and APNs.
 
-   1. **If no feedback event found:**
-      * The push notification may not have been attempted
-      * Check if profile was excluded in Campaign Reports as detailed in Step 1 above.
+1. If Adobe shows successful delivery but device does not show the Live activity:
 
-      +++
+   * Check iOS device logs for Live activity errors.
+   * Verify app is in foreground or background (not terminated).
+   * Confirm device has network connectivity.
+   * Test on multiple devices to rule out device-specific issues.
+   * Verify iOS version is 16.1 or later.
 
-1. +++ Verify Live activity delivery to APNs in Assurance
++++
 
-   1. Open your Assurance session, it must be active during the API call.
-   1. Execute the API call (start, update, or end).
-   1. In the **Event List**, look for Live activity delivery events.
-   1. Search for events related to APNs push delivery.
-   1. Check for the following indicators:
-      * **Push request to APNs**: Confirms Adobe sent the push to Apple's servers
-      * **APNs response**: Shows whether APNs accepted or rejected the push
-      * **Delivery status**: Success or failure indication
-   1. If issues are found, refer to the following common APNs delivery issues:
++++ 5. Escalation to Adobe Support
 
-      | Issue | Symptom in Assurance | Resolution |
-      |-|-|-|
-      | APNs certificate expired | Authentication error | Renew and upload new APNs certificate |
-      | Wrong environment (dev vs prod) | Token mismatch error | Ensure certificate matches app build type |
-      | Bundle ID mismatch | Invalid bundle identifier | Verify certificate bundle ID matches app |
-      | Token expired | InvalidToken error from APNs | Re-register Live activity tokens |
-      | Rate limiting | Too many requests | Reduce API call frequency |
+If you have completed all steps and the issue remains unresolved, contact Adobe Customer Care with:
 
-      +++
-  
-1. +++ Proceed to additional diagnostic checks
+**Required information:**
 
-   1. Check Live activity Lifecycle metrics in Campaign Report.
-
-      In the campaign report, review the **Live activity lifecycle** section:
-
-      | Metric | What to check |
-      |-|-|
-      | Remote starts | Should show count of API-triggered starts |
-      | Updates | Should show count of update events |
-      | Ends | Should show count of end events |
-      | Totals count | Overall Live activity event volume |
-
-      If these metrics are zero or do not match your API calls, there is a delivery issue between Adobe and APNs.
-
-   1. If Adobe shows successful delivery but device does not show the Live activity:
-
-      * Check iOS device logs for Live activity errors.
-      * Verify app is in foreground or background (not terminated).
-      * Confirm device has network connectivity.
-      * Test on multiple devices to rule out device-specific issues.
-      * Verify iOS version is 16.1 or later.
-
-      +++
-
-1. +++ Escalation to Adobe Support
-
-    If you have completed all steps and the issue remains unresolved, contact Adobe Customer Care with:
-
-   **Required information:**
-
-    * Campaign ID and name
-    * Profile namespace and ID
-      * `liveActivityID` from API payload
-    * Timestamps of API calls
-    * Screenshots of:
-      * Campaign Reports (Sending Statistics, Error Reasons, Excluded Reasons)
-      * Profile Events (`liveActivity.updateToken`, `message.feedback`)
-      * Assurance session showing delivery events
-    * Complete API request payload
-    * APNs certificate details (expiration, environment, bundle ID)
+* Campaign ID and name
+* Profile namespace and ID
+* `liveActivityID` from API payload
+* Timestamps of API calls
+* Screenshots of:
+* Campaign Reports (Sending Statistics, Error Reasons, Excluded Reasons)
+* Profile Events (`liveActivity.updateToken`, `message.feedback`)
+* Assurance session showing delivery events
+* Complete API request payload
+* APNs certificate details (expiration, environment, bundle ID)
     
-      +++
++++
 
 ## Unitary-specific scenarios
 
@@ -545,63 +545,63 @@ For update and end events to work, the following must occur:
 
 #### Debugging steps
 
-1. +++ Verify update token sync in Assurance
++++ Verify update token sync in Assurance
 
-   1. Open your Assurance session.
-   1. Ensure the session was active when the Live activity started on the device.
-   1. Filter or search for events with `eventType = "liveActivity.updateToken"`.
-   1. Select the event and inspect the payload:
-  
-      * Verify the `token` field contains a valid update token string.
-      * Check the `liveActivityID` matches your Live activity instance.
-      * Confirm the `activityType` matches your `attributes-type`.
+1. Open your Assurance session.
+1. Ensure the session was active when the Live activity started on the device.
+1. Filter or search for events with `eventType = "liveActivity.updateToken"`.
+1. Select the event and inspect the payload:
 
-   1. If event is not found:
+   * Verify the `token` field contains a valid update token string.
+   * Check the `liveActivityID` matches your Live activity instance.
+   * Confirm the `activityType` matches your `attributes-type`.
 
-      * The update token was not generated or captured by the SDK.
-      * Check if user granted Live activity permissions.
-      * Verify the Live activity actually started successfully on the device.
-      * Confirm the mobile SDK is properly integrated to capture update tokens.
+1. If event is not found:
 
-   1. If event is found, proceed to Step 2.
+   * The update token was not generated or captured by the SDK.
+   * Check if user granted Live activity permissions.
+   * Verify the Live activity actually started successfully on the device.
+   * Confirm the mobile SDK is properly integrated to capture update tokens.
 
-      +++
+1. If event is found, proceed to Step 2.
 
-2. +++ Verify update token in profile events
++++
 
-   1. Navigate to **Customer** > **Profiles** in Journey Optimizer.
-   1. Search for and open the profile.
-   1. Select the **Events** tab.
-   1. Look for `liveActivity.updateToken` events.
-   1. Check the event details:
++++ 2. Verify update token in profile events
 
-      * Verify the timestamp is recent (matches when Live activity started).
-      * Confirm the `token` and `liveActivityID` are present.
-      * Ensure the `activityType` is correct.
+1. Navigate to **Customer** > **Profiles** in Journey Optimizer.
+1. Search for and open the profile.
+1. Select the **Events** tab.
+1. Look for `liveActivity.updateToken` events.
+1. Check the event details:
 
-   1. If event is not found in profile:
+   * Verify the timestamp is recent (matches when Live activity started).
+   * Confirm the `token` and `liveActivityID` are present.
+   * Ensure the `activityType` is correct.
 
-      * The update token event may not have been ingested to the profile yet.
-      * Wait 5-10 minutes and re-check.
-      * If still missing after 15 minutes, there may be an event ingestion issue.
+1. If event is not found in profile:
 
-   1. If event is found, the update token has been synced. You can proceed to Step 3.
+   * The update token event may not have been ingested to the profile yet.
+   * Wait 5-10 minutes and re-check.
+   * If still missing after 15 minutes, there may be an event ingestion issue.
 
-      +++
+1. If event is found, the update token has been synced. You can proceed to Step 3.
 
-3. +++ Check Live activity delivery events in Assurance
++++
 
-   1. In your Assurance session, execute an update or end API call.
-   1. In the **Event List**, look for Live activity delivery events (APNs push events).
-   1. Check for events indicating:
-      * Push notification sent to APNs.
-      * Response from APNs (success or error).
-      * Delivery confirmation.
-   1. If APNs delivery event is present: The push notification was sent. If the device still does not update, the issue may be on the device side (app not handling the push, network issues, etc.).
-   1. If APNs delivery event is missing: The update token may not be properly stored or associated with the profile in Adobe's system.
-   1. If error events are present: Inspect the error details for specific failure reasons (invalid token, APNs rejected, etc.).
++++ 3. Check Live activity delivery events in Assurance
 
-      +++
+1. In your Assurance session, execute an update or end API call.
+1. In the **Event List**, look for Live activity delivery events (APNs push events).
+1. Check for events indicating:
+   * Push notification sent to APNs.
+   * Response from APNs (success or error).
+   * Delivery confirmation.
+1. If APNs delivery event is present: The push notification was sent. If the device still does not update, the issue may be on the device side (app not handling the push, network issues, etc.).
+1. If APNs delivery event is missing: The update token may not be properly stored or associated with the profile in Adobe's system.
+1. If error events are present: Inspect the error details for specific failure reasons (invalid token, APNs rejected, etc.).
+
++++
 
 ## Broadcast-specific scenarios
 
@@ -627,188 +627,188 @@ This troubleshooting scenario applies to all Live activity events in broadcast c
 
 #### Debugging steps
 
-1. +++ Verify campaign audience configuration
++++ 1. Verify campaign audience configuration
 
-   1. Open your **API Triggered Marketing Campaign** in Journey Optimizer.
-   1. Navigate to the **Audience** section and verify:
-      * An audience is selected for the campaign.
-      * The audience ID matches the one used in your API payload.
-      * The audience contains the expected profiles.
-   1. Navigate to the **Actions** section.
-   1. Check the **Live activity configuration**:
-      * The configuration must be set for the iOS app with the correct bundle identifier.
-      * The Activity type must match the `attributes-type` in your API payload. For example, if your payload contains `"attributes-type": "AirplaneTrackingAttributes"`, the campaign must specify this same Activity type.
+1. Open your **API Triggered Marketing Campaign** in Journey Optimizer.
+1. Navigate to the **Audience** section and verify:
+   * An audience is selected for the campaign.
+   * The audience ID matches the one used in your API payload.
+   * The audience contains the expected profiles.
+1. Navigate to the **Actions** section.
+1. Check the **Live activity configuration**:
+   * The configuration must be set for the iOS app with the correct bundle identifier.
+   * The Activity type must match the `attributes-type` in your API payload. For example, if your payload contains `"attributes-type": "AirplaneTrackingAttributes"`, the campaign must specify this same Activity type.
 
-      +++
++++
 
-1. +++ Validate broadcast API payload structure
++++ 2. Validate broadcast API payload structure
 
-   The broadcast payload structure differs from unitary campaigns. Verify that your payload follows the correct broadcast format.
+The broadcast payload structure differs from unitary campaigns. Verify that your payload follows the correct broadcast format.
 
-   **Required fields for broadcast:**
+**Required fields for broadcast:**
 
-   ```json
-   {
-     "campaignId": "878a11d4-b519-47bd-8313-fecfee19857b",
-     "audience": {
-       "id": "8c3dbdea-2957-401f-acf0-3966fba1601e"
-     },
-     "context": {
-       "requestPayload": {
-         "aps": {
-           "input-push-channel": "FEt0NgvLEfEAAOqA6AXdIQ==",
-           "content-available": 1,
-           "timestamp": 1771829292,
-           "event": "update",
-           "attributes-type": "AirplaneTrackingAttributes",
-           "content-state": { ... },
-           "attributes": { ... }
-         }
-       }
-     }
+```json
+{
+   "campaignId": "878a11d4-b519-47bd-8313-fecfee19857b",
+   "audience": {
+      "id": "8c3dbdea-2957-401f-acf0-3966fba1601e"
+   },
+   "context": {
+      "requestPayload": {
+      "aps": {
+         "input-push-channel": "FEt0NgvLEfEAAOqA6AXdIQ==",
+         "content-available": 1,
+         "timestamp": 1771829292,
+         "event": "update",
+         "attributes-type": "AirplaneTrackingAttributes",
+         "content-state": { ... },
+         "attributes": { ... }
+      }
+      }
+   }
+}
+```
+
+**Common payload issues:**
+
+| Field | Requirement | Common Issue |
+|-|-|-|
+| `campaignId` | Must match the activated Marketing campaign ID | Wrong campaign ID or using Transactional campaign |
+| `audience.id` | Must match an existing audience in AEP | Wrong audience ID or audience does not exist |
+| `input-push-channel` | Required for broadcast - Unique identifier for this broadcast instance | Missing or does not match `channelID` in `liveActivityData` |
+| `timestamp` | Must always be the current/latest Unix epoch time in seconds | Using old/cached timestamp |
+| `event` | Must be `"start"`, `"update"`, or `"end"` | Invalid event type |
+| `attributes-type` | Must match campaign Activity type | Mismatch or typo |
+| `content-available` | Must be `1` | Missing or wrong value |
+
+**Critical broadcast-specific fields:**
+
+* **`input-push-channel`**:
+   * Required for all broadcast Live activities.
+   * Serves as a unique identifier for this specific broadcast instance.
+   * All profiles in the audience receive Live activities linked to this channel.
+   * Must match the `channelID` in `liveActivityData.channelID` (see Step 3).
+   * Must be created for the `appID` on the Apple Developer Portal by the client.
+   * Only channels created for the specific `appID` can be used for broadcasting Live activity on that app.
+
+* **`audience.id`**:
+   * Must reference a valid audience segment created in Adobe Experience Platform.
+   * All profiles in this audience are targeted for the Live activity.
+   * The audience must be activated and contain profiles with valid `liveActivityPushNotificationDetails`.
+
+**Always use the latest timestamp:**
+
+* The `timestamp` field must always be the current Unix epoch time (in seconds) for every API call.
+* This requirement applies to all event types: `start`, `update`, and `end`.
+* **Critical for updates/end**: Using stale timestamps causes update and end requests to fail.
+* Generate a fresh timestamp for every broadcast API call.
+
+**Optional fields:**
+
+* `dismissal-date`: Unix epoch time for auto-dismissal (only relevant for `end` events)
+* `alert`: Object with `title` and `body` for notification
+
+Refer to the [Adobe Journey Optimizer Messaging API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging) for complete API specifications.
+
++++
+
++++ 3. Align content-state, attributes, and input-push-channel with iOS implementation
+
+Ensure that the payload fields match your iOS app's `ActivityAttributes` implementation, and that the `input-push-channel` matches the `channelID` in `liveActivityData`.
+
+   1. Review your iOS ActivityAttributes definition.
+
+   Your custom `ActivityAttributes` struct must implement Adobe's `LiveActivityAttributes` protocol:
+
+   ```swift
+   struct AirplaneTrackingAttributes: LiveActivityAttributes {
+      public struct ContentState: Codable, Hashable {
+         var journeyProgress: Int
+      }
+      
+      // Adobe SDK requirement
+      var liveActivityData: LiveActivityData
+      
+      // Your custom attributes
+      var arrivalAirport: String
+      var departureAirport: String
+      var arrivalTerminal: String
    }
    ```
 
-   **Common payload issues:**
-
-   | Field | Requirement | Common Issue |
-   |-|-|-|
-   | `campaignId` | Must match the activated Marketing campaign ID | Wrong campaign ID or using Transactional campaign |
-   | `audience.id` | Must match an existing audience in AEP | Wrong audience ID or audience does not exist |
-   | `input-push-channel` | Required for broadcast - Unique identifier for this broadcast instance | Missing or does not match `channelID` in `liveActivityData` |
-   | `timestamp` | Must always be the current/latest Unix epoch time in seconds | Using old/cached timestamp |
-   | `event` | Must be `"start"`, `"update"`, or `"end"` | Invalid event type |
-   | `attributes-type` | Must match campaign Activity type | Mismatch or typo |
-   | `content-available` | Must be `1` | Missing or wrong value |
-
-   **Critical broadcast-specific fields:**
-
-   * **`input-push-channel`**:
-     * Required for all broadcast Live activities.
-     * Serves as a unique identifier for this specific broadcast instance.
-     * All profiles in the audience receive Live activities linked to this channel.
-     * Must match the `channelID` in `liveActivityData.channelID` (see Step 3).
-     * Must be created for the `appID` on the Apple Developer Portal by the client.
-     * Only channels created for the specific `appID` can be used for broadcasting Live activity on that app.
-
-   * **`audience.id`**:
-     * Must reference a valid audience segment created in Adobe Experience Platform.
-     * All profiles in this audience are targeted for the Live activity.
-     * The audience must be activated and contain profiles with valid `liveActivityPushNotificationDetails`.
-
-   **Always use the latest timestamp:**
-
-   * The `timestamp` field must always be the current Unix epoch time (in seconds) for every API call.
-   * This requirement applies to all event types: `start`, `update`, and `end`.
-   * **Critical for updates/end**: Using stale timestamps causes update and end requests to fail.
-   * Generate a fresh timestamp for every broadcast API call.
-
-   **Optional fields:**
-
-   * `dismissal-date`: Unix epoch time for auto-dismissal (only relevant for `end` events)
-   * `alert`: Object with `title` and `body` for notification
-
-   Refer to the [Adobe Journey Optimizer Messaging API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging) for complete API specifications.
+   1. Map iOS fields to broadcast API payload.
    
-      +++
+   For all events, include both `attributes` and `content-state`:
 
-1. +++ Align content-state, attributes, and input-push-channel with iOS implementation
-
-   Ensure that the payload fields match your iOS app's `ActivityAttributes` implementation, and that the `input-push-channel` matches the `channelID` in `liveActivityData`.
-
-    1. Review your iOS ActivityAttributes definition.
-
-      Your custom `ActivityAttributes` struct must implement Adobe's `LiveActivityAttributes` protocol:
-
-      ```swift
-      struct AirplaneTrackingAttributes: LiveActivityAttributes {
-       public struct ContentState: Codable, Hashable {
-           var journeyProgress: Int
-       }
-       
-       // Adobe SDK requirement
-       var liveActivityData: LiveActivityData
-       
-       // Your custom attributes
-       var arrivalAirport: String
-       var departureAirport: String
-       var arrivalTerminal: String
-      }
-      ```
-
-    1. Map iOS fields to broadcast API payload.
-      
-      For all events, include both `attributes` and `content-state`:
-
-      ```json
-            {
-            "aps": {
-             "input-push-channel": "FEt0NgvLEfEAAOqA6AXdIQ==",
-             "event": "start",
-             "timestamp": 1771829292,
-             "attributes-type": "AirplaneTrackingAttributes",
-             "content-state": {
-               "journeyProgress": 0
-             },
-             "attributes": {
-               "arrivalAirport": "DEL",
-               "departureAirport": "MUM",
-               "arrivalTerminal": "T1",
-               "liveActivityData": {
-                 "channelID": "FEt0NgvLEfEAAOqA6AXdIQ=="
-               }
-             }
+   ```json
+         {
+         "aps": {
+            "input-push-channel": "FEt0NgvLEfEAAOqA6AXdIQ==",
+            "event": "start",
+            "timestamp": 1771829292,
+            "attributes-type": "AirplaneTrackingAttributes",
+            "content-state": {
+            "journeyProgress": 0
+            },
+            "attributes": {
+            "arrivalAirport": "DEL",
+            "departureAirport": "MUM",
+            "arrivalTerminal": "T1",
+            "liveActivityData": {
+               "channelID": "FEt0NgvLEfEAAOqA6AXdIQ=="
             }
             }
-      ```
+         }
+         }
+   ```
 
-   **Critical: `input-push-channel` must match `channelID`**
+**Critical: `input-push-channel` must match `channelID`**
 
-   * The `input-push-channel` value at the root of `aps` must exactly match the `channelID` in `liveActivityData`.
-   * In the example above, both values are `"FEt0NgvLEfEAAOqA6AXdIQ=="`.
-   * This matching links the broadcast instance to the Live activity data.
-   * A mismatch causes delivery failures.
+* The `input-push-channel` value at the root of `aps` must exactly match the `channelID` in `liveActivityData`.
+* In the example above, both values are `"FEt0NgvLEfEAAOqA6AXdIQ=="`.
+* This matching links the broadcast instance to the Live activity data.
+* A mismatch causes delivery failures.
 
-   **Key validation points:**
+**Key validation points:**
 
-   * Include all `ContentState` fields in `content-state` for all event types.
-   * Include all custom `LiveActivityAttributes` fields in `attributes` for start events only.
-   * For start events, `liveActivityData.channelID` must match `input-push-channel`.
-   * Field names are case-sensitive and must match exactly.
-   * Data types must match (String, Int, Bool, nested objects, etc.).
-   * For update/end events, use the same `input-push-channel` as the original start event.
+* Include all `ContentState` fields in `content-state` for all event types.
+* Include all custom `LiveActivityAttributes` fields in `attributes` for start events only.
+* For start events, `liveActivityData.channelID` must match `input-push-channel`.
+* Field names are case-sensitive and must match exactly.
+* Data types must match (String, Int, Bool, nested objects, etc.).
+* For update/end events, use the same `input-push-channel` as the original start event.
 
-   **Common mistakes:**
+**Common mistakes:**
 
-   | Issue | Impact | Fix |
-   |-|-|-|
-   | Missing `input-push-channel` | Broadcast will not work | Add unique channel ID for each broadcast |
-   | `input-push-channel` does not match `channelID` | Live activity will not start | Ensure both values are identical |
-   | Different `input-push-channel` for update/end | Update/end will not reach the Live activities | Use same channel ID throughout lifecycle |
-   | Missing `liveActivityData.channelID` | Live activity will not link to broadcast | Include `channelID` in attributes for start event |
-   | Missing required field in start event | Live activity will not start | Add all fields from iOS struct |
-   | Wrong field name (typo/case) | Field ignored or parsing error | Match iOS field names exactly |
-   | Stale timestamp on update/end | Update/end ignored by devices | Always generate fresh timestamp |
+| Issue | Impact | Fix |
+|-|-|-|
+| Missing `input-push-channel` | Broadcast will not work | Add unique channel ID for each broadcast |
+| `input-push-channel` does not match `channelID` | Live activity will not start | Ensure both values are identical |
+| Different `input-push-channel` for update/end | Update/end will not reach the Live activities | Use same channel ID throughout lifecycle |
+| Missing `liveActivityData.channelID` | Live activity will not link to broadcast | Include `channelID` in attributes for start event |
+| Missing required field in start event | Live activity will not start | Add all fields from iOS struct |
+| Wrong field name (typo/case) | Field ignored or parsing error | Match iOS field names exactly |
+| Stale timestamp on update/end | Update/end ignored by devices | Always generate fresh timestamp |
 
-      +++
++++
 
-1. +++ Test with Assurance
++++ 4. Test with Assurance
 
-   Verify API execution and payload delivery using Assurance:
+Verify API execution and payload delivery using Assurance:
 
-   1. Open your Assurance session on a test device that is part of the audience.
-   1. Execute the broadcast API call.
-   1. In the **Event List**, look for:
-      * Campaign execution events.
-      * Live activity delivery events.
-      * Error events indicating payload validation failures.
-   1. Inspect event payloads to confirm:
-      * The payload was processed correctly.
-      * The `input-push-channel` is present.
-      * No validation errors occurred.
-      * Live activities were sent to APNs for audience members.
+1. Open your Assurance session on a test device that is part of the audience.
+1. Execute the broadcast API call.
+1. In the **Event List**, look for:
+   * Campaign execution events.
+   * Live activity delivery events.
+   * Error events indicating payload validation failures.
+1. Inspect event payloads to confirm:
+   * The payload was processed correctly.
+   * The `input-push-channel` is present.
+   * No validation errors occurred.
+   * Live activities were sent to APNs for audience members.
 
-      +++
++++
 
 ### Profile not in audience or stale audience snapshot
 
@@ -838,77 +838,77 @@ Adobe Experience Platform uses different audience evaluation methods that determ
 
 #### Debugging steps
 
-1. +++ Verify profile is in audience
++++ 1. Verify profile is in audience
 
-   First, confirm whether the profile that should receive the Live activity is actually part of the audience.
+First, confirm whether the profile that should receive the Live activity is actually part of the audience.
 
-   1. Navigate to **Audiences** in Adobe Experience Platform.
-   1. Search for and open the audience using the `audience.id` from your campaign.
-   1. Click **Browse** or **Sample profiles** to view audience members.
-   1. Search for your test profile using the namespace and identity value.
-   1. **If profile is not found in the audience:**
-      * The profile does not meet the audience criteria or segment rules.
-      * Review the audience definition to understand the membership requirements.
-      * Update the profile data or audience definition to include the profile.
-      * Wait for audience evaluation to complete (see Step 2).
-   1. **If profile is found in the audience:** Proceed to Step 2 to check data freshness.
+1. Navigate to **Audiences** in Adobe Experience Platform.
+1. Search for and open the audience using the `audience.id` from your campaign.
+1. Click **Browse** or **Sample profiles** to view audience members.
+1. Search for your test profile using the namespace and identity value.
+1. **If profile is not found in the audience:**
+   * The profile does not meet the audience criteria or segment rules.
+   * Review the audience definition to understand the membership requirements.
+   * Update the profile data or audience definition to include the profile.
+   * Wait for audience evaluation to complete (see Step 2).
+1. **If profile is found in the audience:** Proceed to Step 2 to check data freshness.
 
-      +++
++++
 
-2. +++ Check audience evaluation type and schedule
++++ 2. Check audience evaluation type and schedule
 
-   Identify whether the audience uses batch or streaming evaluation, as this determines data freshness.
+Identify whether the audience uses batch or streaming evaluation, as this determines data freshness.
 
-   1. On the **Audience details** page, check the **Evaluation method**:
-      * **Batch**: Evaluated once daily on a schedule.
-      * **Streaming**: Evaluated in real-time when profile updates occur.
-      * **Edge**: Evaluated at edge locations in real-time.
+1. On the **Audience details** page, check the **Evaluation method**:
+   * **Batch**: Evaluated once daily on a schedule.
+   * **Streaming**: Evaluated in real-time when profile updates occur.
+   * **Edge**: Evaluated at edge locations in real-time.
 
-   Follow the appropriate troubleshooting steps based on the evaluation method:
+Follow the appropriate troubleshooting steps based on the evaluation method:
 
-   **If the audience uses Batch evaluation:**
+**If the audience uses Batch evaluation:**
 
-   1. **Understand batch audience limitations:**
-      * Batch audiences are evaluated once per day (typically overnight).
-      * The audience snapshot may be up to 24 hours old.
-      * If a profile recently registered Live activity tokens, those tokens may not be in the current snapshot.
-      * Updates to profiles will not be reflected until the next batch evaluation.
+1. **Understand batch audience limitations:**
+   * Batch audiences are evaluated once per day (typically overnight).
+   * The audience snapshot may be up to 24 hours old.
+   * If a profile recently registered Live activity tokens, those tokens may not be in the current snapshot.
+   * Updates to profiles will not be reflected until the next batch evaluation.
 
-   1. **Check when last evaluation occurred:**
-      * In the audience details, look for the **Last evaluation** timestamp.
-      * If the profile's `liveActivityPushNotificationDetails` were updated after this timestamp, the audience has stale data.
+1. **Check when last evaluation occurred:**
+   * In the audience details, look for the **Last evaluation** timestamp.
+   * If the profile's `liveActivityPushNotificationDetails` were updated after this timestamp, the audience has stale data.
 
-   1. **Resolve stale data:**
-      1. **Option 1: Wait for scheduled batch evaluation**
-         * The next batch evaluation will include the updated profile data.
-         * This happens automatically once per day.
-         * Best for non-urgent scenarios.
+1. **Resolve stale data:**
+   1. **Option 1: Wait for scheduled batch evaluation**
+      * The next batch evaluation will include the updated profile data.
+      * This happens automatically once per day.
+      * Best for non-urgent scenarios.
 
-      1. **Option 2: Trigger on-demand audience evaluation**
-         1. Navigate to **Audiences** in AEP.
-         1. Select your audience.
-         1. Click **Evaluate now** or **Activate on demand**.
-         1. Wait for evaluation to complete (this can take several minutes to hours depending on audience size).
-         1. Verify that the profile now has updated data in the audience snapshot.
-         1. Retry the broadcast API call.
+   1. **Option 2: Trigger on-demand audience evaluation**
+      1. Navigate to **Audiences** in AEP.
+      1. Select your audience.
+      1. Click **Evaluate now** or **Activate on demand**.
+      1. Wait for evaluation to complete (this can take several minutes to hours depending on audience size).
+      1. Verify that the profile now has updated data in the audience snapshot.
+      1. Retry the broadcast API call.
 
-   **If the audience uses Streaming evaluation:**
+**If the audience uses Streaming evaluation:**
 
-   1. **Understand streaming audience behavior:**
-      * Streaming audiences evaluate in real-time when profile updates occur.
-      * **New profiles**: Qualify shortly after creation if they meet segment criteria.
-      * **Updated profiles**: Qualify or disqualify shortly after being updated.
-      * **Existing unchanged profiles**: Are not re-evaluated unless an update occurs.
+1. **Understand streaming audience behavior:**
+   * Streaming audiences evaluate in real-time when profile updates occur.
+   * **New profiles**: Qualify shortly after creation if they meet segment criteria.
+   * **Updated profiles**: Qualify or disqualify shortly after being updated.
+   * **Existing unchanged profiles**: Are not re-evaluated unless an update occurs.
 
-   1. **Identify the issue:**
-      * If a profile already exists and meets the segment criteria, but no update occurs on that profile, it may not be added to a newly created streaming audience.
-      * The profile must receive an update (any attribute change) to trigger re-evaluation.
+1. **Identify the issue:**
+   * If a profile already exists and meets the segment criteria, but no update occurs on that profile, it may not be added to a newly created streaming audience.
+   * The profile must receive an update (any attribute change) to trigger re-evaluation.
 
-   1. **Resolve the issue:**
-      * **For new profiles**: They automatically qualify if criteria are met. No action needed.
-      * **For existing profiles without recent updates:**
-         * Make a minor update to the profile (e.g., update a timestamp field).
-         * This triggers streaming evaluation and adds the profile to the audience.
-         * Alternative: Use a batch audience or edge audience for existing profiles.
+1. **Resolve the issue:**
+   * **For new profiles**: They automatically qualify if criteria are met. No action needed.
+   * **For existing profiles without recent updates:**
+      * Make a minor update to the profile (e.g., update a timestamp field).
+      * This triggers streaming evaluation and adds the profile to the audience.
+      * Alternative: Use a batch audience or edge audience for existing profiles.
 
-      +++
++++
