@@ -72,7 +72,8 @@ To make some of your JSON or HTML code editable, start by creating a code-based 
     | ------- | ------- | ------- |
     |Declare an editable field containing an **image source** that needs to be published.|`assetType="image"`|`{{#inline "editableFieldID" assetType="image"}}default_value{{/inline}}`|
     |Declare an editable field containing an **URL** that needs to be tracked.br/>Note that out-of-the-box "Mirror page URL" and "Unsubscribe link" predefined blocks cannot become editable fields.>|`assetType="url"`|`{{#inline "editableFieldID" assetType="url"}}default_value{{/inline}}`|
-    -->
+    
+-->
 
 1. Click **[!UICONTROL Preview form fields]** to check how the editable form fields will display in the code-based experiences applying this template.
 

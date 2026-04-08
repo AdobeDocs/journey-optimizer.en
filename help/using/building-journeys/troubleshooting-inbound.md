@@ -17,7 +17,8 @@ Inbound actions, such as In-app, web, and code-based experiences, are critical c
 
 This guide provides a step-by-step process to debug issues related to inbound actions in a journey, in order to help you identify and resolve them independently before reaching out to support.
 
-<!--This guide addresses the two most common scenarios with inbound actions in a journey. They are as follows:
+<!--
+This guide addresses the two most common scenarios with inbound actions in a journey. They are as follows:
 
 * A profile enters the inbound step, but the user does not receive the expected inbound content.
 * A user continues to receive inbound content even after the profile exits the journey.
@@ -207,11 +208,9 @@ However, when a profile exits a journey, it should no longer qualify for the **j
 Go through the same debugging steps as for [Scenario 1](#debugging-steps) to check whether the Hub profile, Edge profile and Edge Network delivery server correctly reflect the segment membership status of the relevant **joai** segment, and whether the client is no longer receiving the inbound content.
 
 <!--
-
 ## Reference Section {#reference-section}
 
 - [Assurance Setup Guide](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance)
 - [[!DNL Adobe Experience Platform] Documentation](https://experienceleague.adobe.com/docs/experience-platform/home.html)
 - [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html)
-
 -->

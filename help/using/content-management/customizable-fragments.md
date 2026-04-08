@@ -142,7 +142,8 @@ To do so:
 
 Rich text such as line breaks, bold, italics etc., can be added to a customizable fragment by using HTML components. To do so, follow the steps below.
 <!--
-➡️ [Learn how to add and use rich text in a customizable fragment in this video](#video)-->
+➡️ [Learn how to add and use rich text in a customizable fragment in this video](#video)
+-->
 
 ### Create a fragment including rich text {#add-rich-text}
 

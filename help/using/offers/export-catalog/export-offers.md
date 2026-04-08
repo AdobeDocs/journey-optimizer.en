@@ -102,6 +102,8 @@ Here is the list of all the fields that can be used in the **[!UICONTROL Decisio
 **Type:** array
 **Required:** "_type", "_dc" <!--TBC?-->
 
++++
+
 * **_experience > decisioning > contents > components > Content Component Type**
 
     **Field:** _type
