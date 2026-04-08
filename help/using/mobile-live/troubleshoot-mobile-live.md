@@ -108,70 +108,70 @@ The API returns HTTP 200, but the Live activity does not appear. Common causes:
 
 #### Debugging steps
 
-1. +++ Verify profile exists in Adobe Experience Platform
++++ 1. Verify profile exists in Adobe Experience Platform
 
-   1. In Journey Optimizer, navigate to **Customer** `>` **Profiles**.
-   1. Search using namespace and identity value from API request.
-   1. If profile is not found, the profile does not exist or ingestion is not completed. Create the profile or wait for ingestion before triggering the Live activity.
-   1. If profile is found, proceed to step 2 below to check if the push token is synced.
-  
-      +++
+1. In Journey Optimizer, navigate to **Customer** `>` **Profiles**.
+1. Search using namespace and identity value from API request.
+1. If profile is not found, the profile does not exist or ingestion is not completed. Create the profile or wait for ingestion before triggering the Live activity.
+1. If profile is found, proceed to step 2 below to check if the push token is synced.
 
-1. +++ Check if Live activity push token is synced
++++
 
-    You can use Assurance to verify token registration:
++++ 2. Check if Live activity push token is synced
 
-    1. In Assurance, from the **Events** list, filter or search for events `eventType = "liveActivity.pushToStart"`.
-    1. Select the **Event** and inspect the payload.
-    1. Check that the token, appId, and attributeType values are present.
-    1. Confirm if the event was successfully sent.
+You can use Assurance to verify token registration:
 
-    You can also check in Adobe Experience Platform profile.
+1. In Assurance, from the **Events** list, filter or search for events `eventType = "liveActivity.pushToStart"`.
+1. Select the **Event** and inspect the payload.
+1. Check that the token, appId, and attributeType values are present.
+1. Confirm if the event was successfully sent.
 
-    1. In Adobe Experience Platform, from your **Profile**, access the **Events** tab.
-    1. Search for `liveActivity.pushToStart` events.
-    1. Check the even timestamp and payload.
-  
-    If no events are found, your mobile app is not calling `Messaging.registerLiveActivity` correctly. You need to fix the SDK integration.
-  
-      +++
+You can also check in Adobe Experience Platform profile.
 
-1. +++ Validate token details on profile
+1. In Adobe Experience Platform, from your **Profile**, access the **Events** tab.
+1. Search for `liveActivity.pushToStart` events.
+1. Check the even timestamp and payload.
 
-    1. From your **Profile**, access the **Attributes** tab.
-    1. Locate `liveActivityPushNotificationDetails`.
-    1. Verify the token configuration:
+If no events are found, your mobile app is not calling `Messaging.registerLiveActivity` correctly. You need to fix the SDK integration.
 
-        ```json
-        {
-          "liveActivityPushNotificationDetails": [
-            {
-              "appId": "com.example.myapp",
-              "token": "abc123def456...",
-              "platform": "apns",
-              "denylisted": false,
-              "attributeType": "OrderTrackingAttributes",
-              "identity": {}
-            }
-          ]
-        }
-        ```
++++
 
-   **Validate each field:**
++++ 3. Validate token details on profile
 
-   | Field | Requirement | Common Issue |
-   |-|-|-|
-   | `appId` | Must exactly match iOS bundle identifier | Mismatch between dev/prod bundle IDs |
-   | `attributeType` | Must exactly match Swift `ActivityAttributes` struct name (case-sensitive) | Typo or incorrect struct name |
-   | `platform` | Must be `"apns"` or `"apnsSandbox"` | Wrong platform value |
-   | `denylisted` | Must be `false` | Token marked as invalid or user opted out |
-   | `token` | Valid APNs push token | Token expired or app reinstalled |
+1. From your **Profile**, access the **Attributes** tab.
+1. Locate `liveActivityPushNotificationDetails`.
+1. Verify the token configuration:
 
-   If any field is incorrect: Update the mobile app, re-register using `Messaging.registerLiveActivities`, wait 5-10 minutes, then re-check.
+   ```json
+   {
+      "liveActivityPushNotificationDetails": [
+      {
+         "appId": "com.example.myapp",
+         "token": "abc123def456...",
+         "platform": "apns",
+         "denylisted": false,
+         "attributeType": "OrderTrackingAttributes",
+         "identity": {}
+      }
+      ]
+   }
+   ```
 
-   If `liveActivityPushNotificationDetails` is missing: Token has not synced yet. Wait 5-10 minutes after seeing the `liveActivity.pushToStart` event in Assurance.
-  
-      +++
+**Validate each field:**
+
+| Field | Requirement | Common Issue |
+|-|-|-|
+| `appId` | Must exactly match iOS bundle identifier | Mismatch between dev/prod bundle IDs |
+| `attributeType` | Must exactly match Swift `ActivityAttributes` struct name (case-sensitive) | Typo or incorrect struct name |
+| `platform` | Must be `"apns"` or `"apnsSandbox"` | Wrong platform value |
+| `denylisted` | Must be `false` | Token marked as invalid or user opted out |
+| `token` | Valid APNs push token | Token expired or app reinstalled |
+
+If any field is incorrect: Update the mobile app, re-register using `Messaging.registerLiveActivities`, wait 5-10 minutes, then re-check.
+
+If `liveActivityPushNotificationDetails` is missing: Token has not synced yet. Wait 5-10 minutes after seeing the `liveActivity.pushToStart` event in Assurance.
+
++++
 
 ### Campaign configuration and payload issues {#payload-issues}
 
