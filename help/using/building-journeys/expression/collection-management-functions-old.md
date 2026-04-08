@@ -17,6 +17,7 @@ The expression language also introduces a set of functions to query collections.
 
 These functions are explained below. In the following example, let's use the event payload containing a collection:
 
+```json
                 { 
    "_experience":{ 
       "campaign":{ 
@@ -54,14 +55,15 @@ These functions are explained below. In the following example, let's use the eve
    },
    "timestamp":"1536160728"
 }
-
+```
 
 **The function "all(`<condition>`)"**
 
 The **[!UICONTROL all]** function enables the definition of a filter on a given collection by using a boolean expression.
 
+   ```json
    <listExpression>.all(<condition>)
-
+   ```
 
 For example, among all the app users, you can get the ones using IOS 13 (boolean expression "app used == IOS 13"). The result of this function is the filtered list containing items matching the boolean expression (example: app user 1, app user 34, app user 432).
 
@@ -78,8 +80,9 @@ In a Data Source Condition activity you can check if the result of the **[!UICON
 
 We want to check if a user has installed a specific version of an application. For this we get all the push notification tokens associated with mobile applications for which the version is 1.0. Then, we perform a condition with the **[!UICONTROL count]** function to check that the returned list of tokens contains at least one element.
 
+   ```json
    count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all(currentEventField.application.version == "1.0").token}) > 0
-
+   ```
 
 The result is true.
 
@@ -87,15 +90,17 @@ The result is true.
 
 Here we use the **[!UICONTROL count]** function to check if there are push notification tokens in the collection.
 
+   ```json
    count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) > 0
-
+   ```
 
 The result will be true.
 
 <!--Alternatively, you can check if there is no token in the collection:
 
+   ```json
    count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) == 0
-
+   ```
 
 The result will be false.
 
@@ -118,8 +123,10 @@ earlier timestamp) in order to only consider prior events.-->
    >
    >When the filtering condition in the **all()** function is empty, the filter will return all the elements in the list. **However, in order to count the number of elements of a collection, the all function is not required.**
 
-   count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.token})
 
+   ```json
+   count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.token})
+   ```
 
    The result of the expression is **3**.
 
@@ -127,10 +134,11 @@ earlier timestamp) in order to only consider prior events.-->
 
 Here we check if an individual has not received any communication within the last 24 hours. We filter the collection of experience events retrieved from the ExperiencePlatform datasource, using two expressions based on two elements of the collection. In particular, the timestamp of the event is compared to the dateTime returned by the **[!UICONTROL nowWithDelta]** function.
 
+```json
 count(#{ExperiencePlatform.MarltonExperience.experienceevent.all(
    currentDataPackField.directMarketing.sends.value > 0 and
    currentDataPackField.timestamp > nowWithDelta(-1, "days")).timestamp}) == 0
-
+```
 
 The result will be true if there is no experience event matching the two conditions.
 
@@ -138,16 +146,15 @@ The result will be true if there is no experience event matching the two conditi
 
 Here we want to check if an individual has launched at least once an application in the last 7 days, in order for instance to trigger a push notification inviting them to start a tutorial.
 
+```json
 count(
  #{ExperiencePlatform.AnalyticsData.experienceevent.all(
  nowWithDelta(-7,"days") <= currentDataPackField.timestamp
  and currentDataPackField.application.firstLaunches.value > 0
 )._id}) > 0
+```
 
-
-
-<!--
-**"All + Count" example 4:** here we use the count function in a boolean expression to see if there is push notification tokens in the collection.
+<!--**"All + Count" example 4:** here we use the count function in a boolean expression to see if there is push notification tokens in the collection.
 
 `count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().application.name}) > 0`
 
@@ -161,9 +168,7 @@ Alternatively, you can check if there is NO token in the collection:
 
 The result will be:
 
-`false`
--->
-
+`false`-->
 
 >[!NOTE]
 >
@@ -183,8 +188,9 @@ _`<listExpression>.last(<condition>)`_
 
 This expression returns the first push notification token associated with mobile applications for which the version is 1.0.
 
+   ```json
    @event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.first(currentEventField.application.version == "1.0").token
-
+   ```
 
 The result is "token_1".
 
@@ -192,8 +198,9 @@ The result is "token_1".
 
 This expression returns the last push notification token associated with mobile applications for which the version is 1.0.
 
+   ```json
    @event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.last(currentEventField.application.version == "1.0").token}
-
+   ```
 
    The result is "token_2".
 
@@ -208,9 +215,10 @@ This expression returns the last push notification token associated with mobile 
 
 We check whether the first (most recent) Adobe Analytics event with a non-zero value for DMA ID has a value equal to 602.
 
+   ```json
    #{ExperiencePlatform.AnalyticsProd_EvarsProps.experienceevent.first(
    currentDataPackField.placeContext.geo.dmaID > 0).placeContext.geo.dmaID} == 602
-
+   ```
 
 **The function "at(`<index>`)"**
 
@@ -223,8 +231,9 @@ _`<listExpression>`.at(`<index>`)_
 
 This expression returns the second push notification token of the list.
 
+   ```json
    @event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.at(1).token}
-
+   ```
 
 The result is "token_2".
 
@@ -232,12 +241,14 @@ The result is "token_2".
 
 This expression returns the product names based on the SKU value. The list of these products is included in the events list, with the condition being the event ID.
 
+```json
 #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.all(currentDataPackField._aepgdcdevenablement2.purchase_event.receipt_nbr == "10-337-4016"). 
 _aepgdcdevenablement2.purchase_event.productListItems.all(currentDataPackField.SKU == "AB17 1234 1775 19DT B4DR 8HDK 762").name}
-
+```
 
 This expression retrieves the name of the last product in the product list of a commerce event where the event type is 'productListAdds' and the total price is greater than or equal to 150.
 
+```json
  #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.last(
 currentDataPackField.eventType == "commerce.productListAdds").productListItems.last(currentDataPackField.priceTotal >= 150).name}
-
+```

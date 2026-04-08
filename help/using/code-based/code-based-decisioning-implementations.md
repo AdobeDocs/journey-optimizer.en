@@ -23,6 +23,7 @@ When testing [code-based experience](create-code-based.md) with decisioning, the
 
 After publishing your campaign, add the `dryRun` flag into the XDM event `data` block in your client implementation:
 
+```
 {
     "data": {
         "__adobe": {
@@ -32,15 +33,12 @@ After publishing your campaign, add the `dryRun` flag into the XDM event `data` 
         }
     }
 }
-
-
+```
 
 <!--
 >[!CAUTION]
 >
->Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.
--->
-
+>Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.-->
 
 ## Deduplication of decision items in code-based implementations {#code-based-decisioning-deduplication}
 
@@ -66,6 +64,7 @@ By default, the deduplication flag is set to `true`.
 
 In a Konductor request, you can pass the deduplication flag if you want unique elements in the response. In that case, set it to `false`.
 
+```
 {
     "data": {
         "__adobe": {
@@ -75,10 +74,11 @@ In a Konductor request, you can pass the deduplication flag if you want unique e
         }
     }
 }
-
+```
 
 +++Decisioning sample request
 
+```
 curl --location 'https://edge-int.adobedc.net/ee/v1/interact?configId=2f21d344-b69f-4a4f-98e8-000282fc9552' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -115,7 +115,7 @@ curl --location 'https://edge-int.adobedc.net/ee/v1/interact?configId=2f21d344-b
         }
     ]
 }'
-
+```
 
 +++
 
@@ -137,6 +137,7 @@ Let's say you have the same decision policy with header and footer placement in 
 
 +++Decisioning sample response (`allowDuplicateDecisionItems` = `true`)
 
+```
 {
     "requestId": "b40170e9-7d31-4242-adcc-18063d6b1d9e",
     "handle": [
@@ -206,12 +207,13 @@ Let's say you have the same decision policy with header and footer placement in 
         }
     ]
 }
-
+```
 
 +++
 
 +++Decisioning sample response (`allowDuplicateDecisionItems` = `false`)
 
+```
 {
     "requestId": "b40170e9-7d31-4242-adcc-18063d6b1d9e",
     "handle": [
@@ -281,7 +283,7 @@ Let's say you have the same decision policy with header and footer placement in 
         }       
     ]
 }
-
+```
 
 +++
 

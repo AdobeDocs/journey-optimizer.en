@@ -170,13 +170,9 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
       * campaign.read
       * campaign.write
       * campaign.delete
-      
-<!--
-* experiments.read
+      <!--* experiments.read
       * experiments.write
-      * experiments.delete
--->
-
+      * experiments.delete-->
 
   +++
 
@@ -199,12 +195,8 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
     * Journey Optimizer specific:
       * campaign.read
       * campaign-report.read
-      
-<!--
-* experiments.read
-      * experiments_report.read
--->
-
+      <!--* experiments.read
+      * experiments_report.read-->
 
   +++
 
@@ -291,7 +283,6 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
 ## Channel configurations resource {#administration-permissions} 
 
-
 <!--
 * **[!DNL Manage Experience decisions]** high-level permission allows users to read, create, edit, and delete Decisioning entities.
 
@@ -313,7 +304,6 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
     * Decisionpolicy.delete
   +++
 -->
-
 
 * **[!DNL Manage file routing]** high-level permission allows users to create, edit and delete file routing configurations.
 
@@ -482,7 +472,6 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
-
 <!--
 ### [!DNL View channel configuration] permission {#view-channel-surface}
 
@@ -494,7 +483,6 @@ The **[!DNL View channel configuration]** high-level permission allows users to 
 * IP_pools.read
 * mobile_setting.read (from Adobe Experience Platform Data Collection)
 -->
-
 
 
 * **[!DNL View suppression list]** high-level permission allows users to view the suppression list content and settings.
@@ -510,7 +498,6 @@ The **[!DNL View channel configuration]** high-level permission allows users to 
 
   +++
 
-
 <!--
 ### Manage web subdomain permission {#web-subdomain}
 
@@ -518,7 +505,6 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
 
   +++ This permission includes the following low-level permissions: 
 -->
-
 
 ## AI assistance resource {#ai-permissions} 
 

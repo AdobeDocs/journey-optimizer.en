@@ -26,7 +26,6 @@ To avoid being marked as spam, you can progressively increase the volume sent us
 >
 >This capability can only be enabled on production-type sandboxes.
 
-
 <!--
 Benefits
 
@@ -38,7 +37,6 @@ Benefits
 
 * There is an expectation that with this, it will ease around 30% of effort and will be much better experience for consultant/partner/practitioner - right from planning to execution to reporting
 -->
-
 
 The key steps to implement an IP warmup plan are as follows:
 

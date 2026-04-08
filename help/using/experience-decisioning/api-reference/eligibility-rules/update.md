@@ -18,8 +18,8 @@ For more information on JSON PUT, including available operations, see the offici
 
 The following table shows the valid values which comprise the Content-Type fields in the request header:
 
-| Header name | Value | 
-| --------- | ----------- | 
+| Header name | Value |
+| --------- | ----------- |
 | Content-Type | `application/json` |
 
 **API format**

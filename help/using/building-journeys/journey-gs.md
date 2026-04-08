@@ -40,13 +40,11 @@ In this guide, you will:
 
 Build multi-step customer journeys to initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals.
 
-
 <!--
 >[!TIP]
 >
 >Not sure whether to use a journey or a campaign? [Learn how to choose the right approach](../start/journeys-vs-campaigns.md).
 -->
-
 
 ## Before you start {#prerequisites}
 

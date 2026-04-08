@@ -39,18 +39,20 @@ If you have a client-side implementation, you can use one of the AEP client SDKs
 
 1. You need to use the `sendEvent` command and specify the [surface URI](code-based-surface.md)<!--( or location/path)--> to fetch personalization content.
 
+    ```javascript
     alloy("sendEvent", {
     renderDecisions: true,
     personalization: {
         surfaces: ["#sample-json-content"],
     },
     }).then(applyPersonalization("#sample-json-content"));
-
+    ```
 
 1. Code-based experience items should be manually applied by the implementation code (using the [`applyPersonalization`](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/ajo/personalization-client-side/public/script.js){target="_blank"} method) to update the DOM based on the decision.
 
 1. For code-based experience journeys and campaigns, display events must manually be sent to indicate when the content has been displayed. This is done via the `sendEvent` command.
 
+    ```javascript
     function sendDisplayEvent(decision) {
       const { id, scope, scopeDetails = {} } = decision;
 
@@ -72,10 +74,11 @@ If you have a client-side implementation, you can use one of the AEP client SDKs
         },
       });
     }
-
+    ```
 
 1. For code-based experience journeys and campaigns, interaction events must manually be sent to indicate when a user has interacted with the content. This is done via the `sendEvent` command.
 
+    ```javascript
     function sendInteractEvent(label, proposition) {
       const { id, scope, scopeDetails = {} } = proposition;
 
@@ -105,7 +108,7 @@ If you have a client-side implementation, you can use one of the AEP client SDKs
         },
       });
     }
-
+    ```
 
     >[!IMPORTANT]
     >
@@ -151,6 +154,7 @@ The steps below describe the process of fetching the content published on the ed
 1. The web page is requested and any cookies previously stored by the browser prefixed with `kndctr_` are included.
 1. When the page is requested from the app server, an event is sent to the [interactive data collection endpoint](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html) to fetch personalization content. This sample app makes use of some helper methods to simplify building and sending requests to the API (see [aepEdgeClient.js](https://github.com/adobe/alloy-samples/blob/ac83b6927d007dc456caad2c6ce0b324c99c26c9/common/aepEdgeClient.js){target="_blank"}). But the request is simply a `POST` with a payload that contains an event and query. The cookies (if available) from the prior step are included with the request in the `meta>state>entries` array.
 
+      ```javascript
       fetch(
         "https://edge.adobedc.net/ee/v2/interact?dataStreamId=abc&requestId=123",
         {
@@ -227,12 +231,13 @@ The steps below describe the process of fetching the content published on the ed
           method: "POST",
         }
       ).then((res) => res.json());
-
+      ```
 
 1. The JSON experience from the code-based experience journeys and campaign is read from the response and used when producing the HTML response.
 
 1. For code-based experience journeys and campaigns, display events must manually be sent in the implementation to indicate when the journey or campaign content has been displayed. In this example, the notification is sent server-side during the request lifecycle.
 
+    ```javascript
     function sendDisplayEvent(aepEdgeClient, req, propositions, cookieEntries) {
       const address = getAddress(req);
 
@@ -275,7 +280,7 @@ The steps below describe the process of fetching the content published on the ed
         }
       );
     }
-
+    ```
 
 1. When the HTML response is returned, the identity and cluster cookies are set on the response by the application server.
 
@@ -320,6 +325,7 @@ When directly using the Edge Network API for code-based experiences (not using W
 
     **Example:**
 
+    ```bash
     curl -v 'https://edge.adobedc.net/ee/v1/interact?configId={DATASTREAM_ID}&requestId={REQUEST_ID}' \
     --header 'Content-Type: application/json' \
     --header 'x-adobe-aep-validation-token: {ASSURANCE_SESSION_ID}' \
@@ -342,10 +348,9 @@ When directly using the Edge Network API for code-based experiences (not using W
             }
         ]
     }'
-
+    ```
 
 1. Once configured, open your Assurance session and select the **[!UICONTROL Edge Delivery]** view to see Edge Network API requests and responses in real-time, including request payloads, response content, personalization propositions, and error messages.
-
 
 
 <!--
@@ -357,6 +362,4 @@ To help you get started with implementing code-based experiences, refer to the c
 
 * **Web SDK implementation**: Learn how to configure the Web SDK for decisioning and code-based experiences in [these tutorials](code-based-decisioning-implementations.md#tutorials).
 
-* **Decisioning implementation**: To learn how to implement decisioning capabilities on a code-based campaign, follow [this use case tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-uc){target="_blank"}.
--->
-
+* **Decisioning implementation**: To learn how to implement decisioning capabilities on a code-based campaign, follow [this use case tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-uc){target="_blank"}.-->

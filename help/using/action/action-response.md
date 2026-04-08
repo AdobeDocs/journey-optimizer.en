@@ -14,39 +14,36 @@ exl-id: d88daa58-20af-4dac-ae5d-4c10c1db6956
 
 You can leverage API call responses in custom actions and orchestrate your journeys based on these responses.
 
-
 <!--
 You can now leverage API call responses in custom actions and orchestrate your journeys based on these responses.
 
 This capability was previously only available when using data sources. You can now use it with custom actions. 
 -->
 
-
 ## Important notes{#custom-action-enhancements-notes}
-
 
 <!--
 * Custom actions should only be used with private or internal endpoints, and used with an appropriate capping or throttling limit. See [this page](../configuration/external-systems.md). 
 -->
 
-
 * Scalar arrays are supported in response payload:
 
+    ```
     "dummyScalarArray": [
     "val1",
     "val2"
     ]
-
+    ```
 
 * Heterogeneous arrays are not supported in response payload:
 
+    ```
     "dummyRandomArray": [
     20,
     "aafw",
     false
     ]
-
-
+    ```
 
 <!--
 ## Best practices{#custom-action-enhancements-best-practices}
@@ -59,8 +56,6 @@ You should not target public endpoints with custom actions for various reasons:
 * Profile data can be sent through custom actions, so targeting a public endpoint could lead to inadvertently sharing personal information externally.
 * You have no control on the data being returned by public endpoints. If an endpoint changes its API or starts sending incorrect information, those will be made available in communications sent, with potential negative impacts.
 -->
-
-
 
 <!--
 ## Define the custom action {#define-custom-action}
@@ -89,7 +84,6 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 ![](assets/action-response2.png){width="70%" align="left"}
 -->
 
-
 ## Configure the custom action {#config-response}
 
 1. Create the custom action. Refer to [this page](../action/about-custom-action-configuration.md).
@@ -100,11 +94,12 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 1. Paste an example of the payload returned by the call. Verify that the field types are correct (string, integer, etc.). Here is an example of response payload captured during the call. Our local endpoint sends the number of loyalty points and the status of a profile. 
 
+    ```
     {
     "customerID" : "xY12hye",    
     "status":"gold",
     "points": 1290 }
-
+    ```
 
     ![](assets/action-response4.png){width="80%" align="left"}
 
@@ -112,10 +107,11 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 1. (Optional) Enable an error response payload to capture the format returned when the call fails, then paste an example payload. To do this, select **Define a failure response payload** in the custom action configuration. Learn more about configuring the payload fields in [Configure a custom action](../action/about-custom-action-configuration.md).
 
+    ```
     {
     "errorResponse" : "customer not found"
     }
-
+    ```
 
     The error response payload is only available if you enable it in the custom action configuration.
 
@@ -156,13 +152,15 @@ For example, you can add a condition to check the number of loyalty points. When
 1. In the timeout and error branch, add a condition and leverage the built-in **jo_status_code** field. In our example, we're using the 
 **http_400** error type. See [this section](#error-status).
 
+    ```
     @action{ActionLoyalty.jo_status_code} == "http_400"
-
+    ```
 
     If an error response payload has been defined, you can also target its fields, for example:
 
+    ```
     @action{ActionLoyalty.errorResponse.errorResponse} == "customer not found"
-
+    ```
 
     ![](assets/action-response7.png)
 
@@ -199,30 +197,34 @@ If an error response payload has been configured for the custom action, its fiel
 
 Here is the syntax:
 
+```json
 #@action{myAction.myField} 
-
+```
 
 Here are a few examples:
 
+```json
  // action response field
  @action{<action name>.<path to the field>}
  @action{ActionLoyalty.status}
+```
 
-
+```json
  // action response field
  @action{<action name>.<path to the field>, defaultValue: <default value expression>}
  @action{ActionLoyalty.points, defaultValue: 0}
  @action{ActionLoyalty.points, defaultValue: @event{myEvent.newPoints}}
-
+```
 
 While manipulating collections in a custom action response, you can rely on `currentActionField` to access the current item:
 
+```json
 count(
 @action{MyAction.MyCollection.all(
 currentActionField.description == "abc"
 )}
 )
-
+```
 
 ### Using custom action responses in native channels {#response-in-channels}
 

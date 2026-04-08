@@ -15,13 +15,10 @@ exl-id: 1aaff17f-aa08-4f10-903c-8335a86ac6eb
 
 You can deliver outbound messages from a journey in batches (waves) over time instead of all at once. Wave sending helps balance load, avoid overwhelming downstream systems (such as call centers or landing pages), and support deliverability and sender reputation—especially for high-volume read audience journeys.
 
-
 <!--
 >[!CAUTION]
 >
->Wave sending is available for read audience journeys only and applies to **outbound** actions only (Email, SMS, Push, Direct mail).
--->
-
+>Wave sending is available for read audience journeys only and applies to **outbound** actions only (Email, SMS, Push, Direct mail).-->
 
 You configure it at the journey level when you define how the audience enters and how actions are scheduled. You define the number of waves, their size (as a percentage of the audience or as absolute numbers), and when each wave runs.
 

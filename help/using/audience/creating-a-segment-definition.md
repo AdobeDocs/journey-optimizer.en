@@ -108,17 +108,13 @@ If you know the evaluation method you want to use, select it using the drop-down
 
 ![](assets/evaluation-methods.png)
 
-
-<!--
-The determination between batch segmentation and streaming segmentation is made by the system for each audience, based on the complexity and the cost of evaluating the segment definition rule. You can view the evaluation method for each audience in the **[!UICONTROL Evaluation method]** column of the audience list.
+<!--The determination between batch segmentation and streaming segmentation is made by the system for each audience, based on the complexity and the cost of evaluating the segment definition rule. You can view the evaluation method for each audience in the **[!UICONTROL Evaluation method]** column of the audience list.
     
 ![](assets/evaluation-method.png)
 
 >[!NOTE]
 >
->If the **[!UICONTROL Evaluation method]** column does not display, you  need to add it using configuration button on the top right of the list.
--->
-
+>If the **[!UICONTROL Evaluation method]** column does not display, you  need to add it using configuration button on the top right of the list.-->
 
 After you have first defined an audience, profiles are added to the audience when they qualify. Backfilling the audience from prior data can take up to 24&nbsp;hours. After the audience has been backfilled, the audience is continuously kept up-to-date and is always ready for targeting.
 

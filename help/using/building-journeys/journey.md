@@ -48,12 +48,8 @@ Use [!DNL Journey Optimizer] to:
 * Use **Action and API-triggered campaigns** for simple, scheduled or triggered message delivery to audiences
 * Use **Orchestrated campaigns** for complex batch workflows requiring multi-entity segmentation and exact pre-send counts
 
-
-<!--
- waiting for DOCAC-13912
-➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability
--->
-
+<!-- waiting for DOCAC-13912
+➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability-->
 
 ## Choose your journey type {#journey-types}
 
@@ -64,12 +60,8 @@ Use [!DNL Journey Optimizer] to:
 * **Audience Qualification journeys**: Real-time responses to audience membership changes (VIP upgrades, re-engagement)
 * **Business event journeys**: Business conditions affecting multiple customers (inventory alerts, flash sales)
 
-
-<!--
- waiting for DOCAC-13912 
-➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix 
--->
-
+<!-- waiting for DOCAC-13912 
+➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix -->
 
 ## Build with the journey designer {#journey-designer}
 
@@ -381,16 +373,13 @@ Get a visual introduction to journey components and learn the basics of building
 
 +++
 
-
-<!--
- Waiting for DOCAC-13912
+<!-- Waiting for DOCAC-13912
 +++ Which journey type should I use?
 
 Use the [decision guide](#decision-guide) or [comparison table](#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.
 
 +++
 -->
-
 
 +++ Can I edit a live journey?
 

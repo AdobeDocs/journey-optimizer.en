@@ -179,6 +179,7 @@ In this section, you can set your different locales for managing your multilingu
         * In the **[!UICONTROL Action Type]** field, select "Attach Data".
         * In the JSON payload section, make sure that the attribute used to retrieve the language to use (in the example below "language") matches the name of the attribute specified in the schema where your data collection datastream is flowing into.
 
+            ```JSON
 
             {
                 "xdm":{
@@ -190,6 +191,7 @@ In this section, you can set your different locales for managing your multilingu
                 }
             }
 
+            ```
             
         * Click the **[!UICONTROL Keep changes]** button to confirm and save your rule.
 
@@ -201,7 +203,6 @@ In this section, you can set your different locales for managing your multilingu
 
 Note that after setting up your language preferences, you will no longer have the option to edit them.
 
-
 <!--
 1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.
 
@@ -210,7 +211,6 @@ Note that after setting up your language preferences, you will no longer have th
 
 1. Select your **[!UICONTROL Locales dictionary]** and add as many as needed.
 -->
-
 
 ## Create a multilingual content {#create-multilingual-campaign}
 
@@ -365,12 +365,12 @@ Note that if this option is disabled, once the translation is finished by your p
 
     ![](assets/translation_review_9.png)
 
-
 <!--
 # Create a multilingual journey {#create-multilingual-journey}
 
 1. Create your journey with a Delivery and personalize your content as needed.
 1. From your delivery action, click Edit content.
 1. Click Add languages.
--->
 
+
+-->

@@ -18,12 +18,8 @@ Privacy requests can be created and managed from the **[!UICONTROL Requests]** m
 
 For more information on Privacy Service and how to create and manage privacy requests, refer to the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}.
 
-
-<!--
-* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
-* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)
--->
-
+<!--* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)-->
 
 ## Manage individual data privacy requests that you can send to Adobe Journey Optimizer {#data-privacy-requests}
 
@@ -71,6 +67,7 @@ To make requests to Access and Delete data for Adobe Journey Optimizer, you must
 
 ### Required field values in Journey Optimizer for API requests
 
+```json
 "companyContexts":
     "namespace": imsOrgID
     "value": <Your Adobe Organization ID Value>
@@ -91,7 +88,7 @@ To make requests to Access and Delete data for Adobe Journey Optimizer, you must
 
 "regulation":
     gdpr, ccpa, pdpa, lgpd_bra, or nzpa_nzl (which is the privacy regulation that applies to the request)
-
+```
 
 
 ### GDPR Access request example:
@@ -102,6 +99,7 @@ From the UI:
 
 Through the API:
 
+```json
 // JSON Request
 {
    "companyContexts":[
@@ -134,8 +132,9 @@ Through the API:
    ],
    "regulation":"gdpr"
 }
+```
 
-
+```json
 // JSON Response
 {
     "requestId": "17163122360480365RX-705",
@@ -170,7 +169,7 @@ Through the API:
         }
     ]
 }
-
+```
 
 ### GDPR Delete request example:
 
@@ -180,6 +179,7 @@ From the UI:
 
 Through the API:
 
+```json
 // JSON Request
 {
   "companyContexts": [
@@ -212,8 +212,9 @@ Through the API:
   ],
   "regulation": "gdpr"
 }
+```
 
-
+```json
 // JSON Response
 {
     "requestId": "17163122360480365RX-705",
@@ -248,4 +249,4 @@ Through the API:
         }
     ]
 }
-
+```

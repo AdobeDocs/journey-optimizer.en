@@ -25,12 +25,10 @@ You can set two types of **Wait** activity:
 * A wait based on a relative duration. [Learn more](#duration) 
 * A custom date, using functions to calculate it. [Learn more](#custom) 
 
-
 <!--
 * [Email send time optimization](#email_send_time_optimization)
 * [Fixed date](#fixed_date) 
 -->
-
 
 ## Recommendations {#wait-recommendations}
 
@@ -64,15 +62,14 @@ Select the **Duration** type to set the relative duration of the wait before the
 
 ![Define the wait duration](assets/journey55.png)
 
-
 <!--
 ## Fixed date wait{#fixed_date}
 
 Select the date for the execution of the next activity.
 
 ![Wait activity configuration panel with duration and fixed date options](assets/journey56.png)
--->
 
+-->
 
 ### Custom wait {#custom}
 

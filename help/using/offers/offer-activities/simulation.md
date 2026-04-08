@@ -42,11 +42,9 @@ To access this feature, select the **[!UICONTROL Simulation]** tab from the **[!
 >
 >As simulation does not generate any decision event, the [capping](../offer-library/add-constraints.md#capping) count is not impacted.
 
-
 <!--
 ➡️ [Discover this feature in video](#video)
 -->
-
 
 ## Select test profiles {#select-test-profiles}
 
@@ -158,7 +156,6 @@ To edit the default settings for your simulations, follow the steps below.
 >
 >Currently for simulation data you can only use the **[!UICONTROL Hub]** API.
 
-
 <!--
 In the **[!UICONTROL API for simulation]** section, select the API you want to use: **[!UICONTROL Hub]** or **[!UICONTROL Edge]**.
 Hub and Edge are two different end points for simulation data.
@@ -172,7 +169,6 @@ In the **[!UICONTROL Context data]** section, you can add as many elements as ne
 Context data allows the user to add contextual data that could affect the simulation score.
 For instance, let's say the customer has an offer for a discount on ice cream. In the rules for that offer, it can have logic that would rank it higher when the temperature is above 80 degrees. In simulation, the user could add context data: temperature=65 and that offer would rank lower, of they could add temperature=95 and that would rank higher.
 -->
-
 
 ## View simulation results {#simulation-results}
 

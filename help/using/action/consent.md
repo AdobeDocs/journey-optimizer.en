@@ -92,14 +92,12 @@ In a journey, if a profile is excluded by a consent policy in a custom action, t
 
 Before refreshing policies in a custom action positioned in a journey, make sure your journey has no error. 
 
-
 <!--
 There are two types of latency regarding the use of consent policies:
 
 * **User latency**: the delay from the time a profile changes a consent settings to the moment it is applied in Experience Platform. This can take up to 48h. 
 * **Consent policy latency**: the delay from the time a consent policy is created or updated to the moment it is applied. This can take up to 6 hours
 -->
-
 
 ### Leverage consent policies when configuring a custom action{#consent-custom-action}
 
@@ -133,7 +131,6 @@ Click the **Refresh policies** button, at the bottom of the screen, to update an
 
 ![](assets/consent5.png)
 
-
 <!--
 The following data is taken into account for consent:
 
@@ -145,6 +142,5 @@ The following data is taken into account for consent:
 >
 >Please note that there can be a latency when updating the list of policies applied, refer to this [this section](../action/consent.md#important-notes).
 -->
-
 
 The other steps for configuring a custom action in a journey are detailed in [this section](../building-journeys/using-custom-actions.md).

@@ -568,7 +568,6 @@ The **[!UICONTROL SMS - Excluded Reasons]** graphs and table visually depict the
 
 Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion reasons.
 
-
 <!--
 ### SMS - Clicks by links {#sms-clicks}
 
@@ -576,7 +575,6 @@ Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion 
 
 The **[!UICONTROL SMS - Clicks by links]** widget offers essential insights into your visitors' engagement with the URLs included in your messages, providing valuable information about which links attract the most interaction within the last 24 hours.
 -->
-
 
 ## In-app tab {#in-app-live}
 

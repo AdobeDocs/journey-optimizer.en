@@ -27,15 +27,12 @@ Before creating a mobile application, you first need to make sure that you have 
 >
 >Push configuration must be performed by an expert user. Depending on your implementation model and personas involved in this implementation, you might need to assign the full set of permissions to a single product profile or share permissions between the app developer and the **Adobe Journey Optimizer** administrator. Learn more about **Tags** permissions in [this documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html){target="_blank"}.
 
-
-<!--
-ou need to your have access to perform following roles :
+<!--ou need to your have access to perform following roles :
 
 * Manage Datastreams
 * Manage Client-side Properties
 * Manage App Configurations
 -->
-
 
 To assign **Property** and **Company** rights, follow the steps below:
 

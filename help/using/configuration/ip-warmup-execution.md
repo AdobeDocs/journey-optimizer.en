@@ -34,13 +34,9 @@ Each phase is composed of several runs, to which you assign a single campaign.
 >title="Define the phases of your plan"
 >abstract="Each phase is composed of several runs, to which you assign a single campaign."
 
+<!--You need to associate the campaign and audience at phase level and turns on some settings as needed for all runs associated with a single creative/campaign
 
-<!--
-You need to associate the campaign and audience at phase level and turns on some settings as needed for all runs associated with a single creative/campaign
-
-At phase level, system ensures that previously targeted + new profiles are picked up AND at iteration level, system ensures that each run is having unique profiles and the count matches what is stated in plan
--->
-
+At phase level, system ensures that previously targeted + new profiles are picked up AND at iteration level, system ensures that each run is having unique profiles and the count matches what is stated in plan-->
 
 <!--![](assets/ip-warmup-plan-phase-1.png)-->
 
@@ -301,13 +297,11 @@ Follow the steps [above](#define-phases) to define the new phase.
 
 * You can also exclude the previous campaign, or a domain that is not performing well. Learn how in [this section](#define-phases).
 
-
 <!--
 You do not have to decide the campaign upfront. You can do a split later. It's a work in progress plan: you activate one run at a time with a campaign and you always have the flexibility to modify it while working on it.
 
 But need to explain in which case you want to modify campaigns, provide examples
 -->
-
 
 ### Re-upload an IP warmup plan {#re-upload-plan}
 

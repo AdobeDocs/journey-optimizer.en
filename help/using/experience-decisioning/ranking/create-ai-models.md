@@ -102,26 +102,19 @@ To create an AI model, follow the steps below:
 
 1. Save and activate the AI model. Once your model is live, you can [monitor its training status and performance](ai-model-observability.md).
 
-
-<!--
-At this point, you must have:
+<!--At this point, you must have:
 
 * created the AI model,
 * defined which type of event you want to capture - offer displayed (impression) and/or offer clicked (conversion),
-* and in which dataset you want to collect the event data.
--->
-
+* and in which dataset you want to collect the event data.-->
 
 Now each time an offer is displayed and/or clicked, you want the corresponding event to be automatically captured by the **[!UICONTROL Experience Event - Proposition Interactions]** field group using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} or Mobile SDK.
 
 To be able to send in event types (offer displayed or offer clicked), you must set the correct value for each event type in an experience event that is sent into Adobe Experience Platform. [Learn how](../data-collection/schema-requirement.md)
-
 
 <!--
 ## How-to video {#video}
 
 Learn how to create a personalized optimization model and how to apply it to a decision.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419954?quality=12)
--->
-
+>[!VIDEO](https://video.tv.adobe.com/v/3419954?quality=12)-->

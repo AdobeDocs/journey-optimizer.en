@@ -159,13 +159,9 @@ Below is the full example of a journey using a content decision activity combine
 
 Once the journey is [activated](publish-journey.md):
 
+<!--* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
 
-<!--
-* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
-
-* If no offer is returned for a profile, they are excluded from the custom action.
--->
-
+* If no offer is returned for a profile, they are excluded from the custom action.-->
 
 1. Every time a profile qualifies for that audience, it enters the journey.
 
@@ -190,6 +186,7 @@ For each content decision activity, the step event includes decisioning data at 
 
 **Example of decisioning data in a step event:**
 
+```json
 "decisioning": {
   "exdRequestID": "8079d2bb-a8b2-4ecf-b9e7-32923dd6ad4e",
   "propositions": [
@@ -229,4 +226,4 @@ For each content decision activity, the step event includes decisioning data at 
     "decision": 1
   }
 }
-
+```

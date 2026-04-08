@@ -211,7 +211,7 @@ The `bottomN` function sorts an array in ascending order based on the given nume
 ```
 
 | Argument | Description |
-| --------- | ----------- | 
+| --------- | ----------- |
 | `{ARRAY}` | The array or list that is to be sorted. |
 | `{VALUE}` | The property in which to sort the array or list. |
 | `{AMOUNT}` | The number of items to be returned. |

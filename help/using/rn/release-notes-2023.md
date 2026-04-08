@@ -68,13 +68,10 @@ This release comes with the improvements listed below.
 >
 >These capabilities are currently available as a beta.
 
-
 <!--
 **Spam scoring for emails**
 
-* When simulating an email content, a new option enables you to check how your content performs against inboxes spam filtering. This feature is currently proposed to a set of customers only (Limited Availability), and available for the Email channel.
--->
- 
+* When simulating an email content, a new option enables you to check how your content performs against inboxes spam filtering. This feature is currently proposed to a set of customers only (Limited Availability), and available for the Email channel.--> 
 
 **Campaigns**
 
@@ -89,13 +86,10 @@ This release comes with the improvements listed below.
    * the **Reentrance wait period** in [journey properties](../building-journeys/journey-properties.md#entrance)
    * the **Wait for** field in the timeout definition of [event activities](../building-journeys/general-events.md#events-specific-time).
 
-
 <!--
 **Consent in channel configuration**
 
-* You can now select a marketing action at the channel configuration level. When used in a surface, all consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers.
--->
-
+* You can now select a marketing action at the channel configuration level. When used in a surface, all consent policies associated with that marketing action are leveraged in order to respect the preferences of your customers.-->
 
 **Decision management**
 
@@ -205,11 +199,9 @@ This release comes with the improvements listed below.
 * When duplicating a journey, you can now define the name of the journey copy. [Learn more](../building-journeys/journey-gs.md#duplicate-a-journey)
 
 * Support of custom action responses is now GA. This capability allows you to leverage API call responses in custom actions and orchestrate your journey based on these responses. In addition, a [new capping guardrail](../start/guardrails.md#custom-actions-g) has been added to automatically limit custom action calls. [Learn more](../action/action-response.md)
-
 <!--
 * The maximum duration that you can define in the Wait activity is now 29 days instead of 30.
 -->
-
 
 **Email channel**
 
@@ -233,13 +225,9 @@ This release comes with the improvements listed below.
 
 * A new option for Assets allows you to choose the repository for your Assets in Journey Optimizer. You can opt for either an Assets Essentials repository or an Assets as a Cloud Service repository, provided you own this solution. [Learn more](../integrations/assets.md)
 
+<!--**Decision management**
 
-<!--
-**Decision management**
-
-Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.    
--->
-
+Enhancements have been made to the audience picker in journeys or campaigns, with the addition of new columns displaying the origin and update frequency of audiences.    -->
 
 ## August '23 release {#aug-rn-2023}
 
@@ -282,9 +270,7 @@ This release brings the new capabilities listed below.
 </table>
 
 
-
-<!--
-table>
+<!--table>
 <thead>
 <tr>
 <th><strong>Generate text and images with the Content assistant</strong><br/></th>
@@ -299,9 +285,7 @@ table>
 </td>
 </tr>
 </tbody>
-</table
--->
-
+</table-->
 
 
 
@@ -309,21 +293,14 @@ table>
 
 This release comes with the improvements listed below.
 
-
 <!--
 **APIs**
 
-A new API to create and manage Content Fragments is now available. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/content-templates/#tag/Content-fragment-API){target="_blank"}.
--->
+A new API to create and manage Content Fragments is now available. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/content-templates/#tag/Content-fragment-API){target="_blank"}.-->
 
+<!--**Email channel**
 
-
-<!--
-**Email channel**
-
-A new option is available in the email surface settings to include email addresses suppressed due to spam complaint in your transactional messages audiences. Even if they marked marketing messages as spam, these profiles can then receive transactional messages, such as password reset or account statements. This option is disabled by default.
--->
-
+A new option is available in the email surface settings to include email addresses suppressed due to spam complaint in your transactional messages audiences. Even if they marked marketing messages as spam, these profiles can then receive transactional messages, such as password reset or account statements. This option is disabled by default.-->
 
 **Journeys**
 
@@ -484,7 +461,6 @@ Journey Optimizer datasets export to Cloud Storage Destinations is now available
 </tbody>
 </table>
 
-
 <!--
 ### Improvements {#june-2023-improvements}
 
@@ -497,8 +473,6 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.
 -->
-
-
 
 <!--
 ## June 2023 early release notes {#june-rn-2023}
@@ -515,8 +489,7 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 * You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.     
 
 * A new type of system alert has been introduced. You can now get notified when a custom action fails.
--->
- 
+--> 
 
 ## May '23 release {#may-rn-2023}
 
@@ -541,7 +514,6 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 </tbody>
 </table>
 
-
 <!--
 <table>
 <thead>
@@ -560,7 +532,6 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 </tbody>
 </table>
 -->
-
 
 
 <table>
@@ -648,13 +619,11 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 * Added new message trigger rules for Adobe Places Service. [Read more](../in-app/inapp-configuration.md)
 * Added new Adobe Experience Platform Assurance capabilities to capture device events to add as trigger rules.
 
-
 <!--
 **Journeys**
 
 * You can now leverage API call responses in custom actions and orchestrate your journey based on these responses.
 -->
-
 
 **Campaigns**
 
@@ -677,13 +646,9 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 ## April '23 release {#apr-rn-2023}
 
+<!--Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added on this page.
 
-<!--
-Information below is subject to change without prior notice until the release availability date. Updated documentation will be published at the release date, and direct links will be added on this page.
-
-**Release date**: April 27, 2023
--->
-
+**Release date**: April 27, 2023-->
 
 ### New capabilities{#apr-2023-features}
 
@@ -825,9 +790,7 @@ Information below is subject to change without prior notice until the release av
 * A guardrail has been added to the test mode to only listen to events sent through the interface. Events send through an external tool are not taken into account. [Learn more](../building-journeys/testing-the-journey.md)
 
 
-
-<!--
- 
+<!-- 
 * When adding an Email, SMS or Push action in a journey, the surface is now pre-filled, by default, with the last used surface for that channel.
 * A new type of system alert has been introduced. You can now get notified when a custom action fails. [Learn more](../reports/alerts.md)
 * Timeout and error management has been improved in journeys. Timeout and error paths are now always added on the canvas. A new toolbar button is available to show/hide these paths. [Learn more](../building-journeys/journey-gs.md#timeout_and_error)
@@ -835,7 +798,6 @@ Information below is subject to change without prior notice until the release av
     * Use the **Overview** tab to access a new dashboard which displays key metrics related to your journeys.
     * Use the **Browse** tab to access list of all journeys.
 -->
-
 
 **Decision management**
 
@@ -899,8 +861,8 @@ Information below is subject to change without prior notice until the release av
 </tbody>
 </table>
 
-
 <!--
+
 <table>
 <thead>
 <tr>
@@ -948,8 +910,8 @@ Note that each widget can be resized and deleted as needed.
 </tr>
 </tbody>
 </table>
--->
 
+-->
 
 ### Improvements {#feb-2023-improvements}
 
@@ -959,8 +921,8 @@ Note that each widget can be resized and deleted as needed.
 
 * Improvements have been made for **journey start and end dates**. If you have not specified a start date, it is now automatically added at publication time. For **Read audience** journeys, you can now add an end date. This allows profiles to exit automatically when the date is reached. [Learn more](../building-journeys/journey-gs.md#dates)
 
-
 <!--
+
 * The Journey canvas has been enhanced for a simpler and improved user experience. At the end of each path in the canvas, the empty placeholders have been removed. You can now simply add your activities by dragging them anywhere between nodes. [Learn more](../building-journeys/using-the-journey-designer.md)
 
 * Timeout and error management has been improved in journeys. Timeout and error paths are now always added on the canvas. A new toolbar button is available to show/hide these paths. [Learn more](../building-journeys/journey-gs.md#timeout_and_error)
@@ -971,7 +933,6 @@ Note that each widget can be resized and deleted as needed.
     * Use the **Overview** tab to access a new dashboard which displays key metrics related to your journeys.
     * Use the **Browse** tab to access list of all journeys.
 -->
-
 
 
 **Administration**

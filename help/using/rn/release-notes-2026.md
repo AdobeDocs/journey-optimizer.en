@@ -216,11 +216,9 @@ Improvements coming with this release are listed below.
 
 #### Content Management
 
-
 <!--
 * **Update brands with new color tab** - Brand guidelines help ensure your brand is presented consistently across all touchpoints. The new <strong>Colors</strong> section defines the standards for your brand's color system, outlining how colors are selected, organized, and applied across experiences. It ensures consistent use of primary, secondary, accent, and neutral colors to support a cohesive, accessible, and recognizable brand identity. [Read more](../content-management/brands.md)
 -->
-
 
 * **Use themes to convert images to email templates** - When converting an image to an email template in Journey Optimizer, you can now use a theme as input so the generated HTML follows your brand parameters. Styling such as background color, button color, fonts, line spacing, margins, and padding is applied automatically, reducing manual design work and delivering a template that is ready to use with minimal edits. [Read more](../content-management/image-to-html.md)
 
@@ -244,17 +242,13 @@ Improvements coming with this release are listed below.
 
   Availability date: February 18, 2026
   
-
-<!--
-THIS WAS FINALLY NOT RELEASED IN FEBRUARY
+<!--THIS WAS FINALLY NOT RELEASED IN FEBRUARY
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience campaigns through decision policies. [Read more](../experience-decisioning/fragments-decision-policies.md)
 
   Previously released in Limited Availability, this capability is now available to all environments (General Availability).
 
-  Availability date: February 12, 2026.
--->
-
+  Availability date: February 12, 2026.-->
 
 #### Personalization
 

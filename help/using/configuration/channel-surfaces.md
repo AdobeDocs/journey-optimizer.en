@@ -34,11 +34,9 @@ Once channel configurations have been configured, you will be able to select the
 
 You can also use the guided channel setup to automate and validate channel setup in a unified experience, speeding up the process of getting started with Journey Optimizer. [Learn more](set-mobile-config.md)
 
-
 <!--
 ➡️ [Learn how to create and use email configurations in this video](#video-presets)
 -->
-
 
 ## Create a channel configuration {#create-channel-surface}
 

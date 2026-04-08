@@ -56,11 +56,9 @@ Review these notes before running tests in your journey.
 * **Test datasets** - Events triggered in test mode are stored in dedicated datasets labeled as follows: `JOtestmode - <schema of your event>`
 * **Shared infrastructure** - Test Mode runs on the same infrastructure as production. During high traffic periods, you may notice delays in email sends or event processing. In this case, check platform traffic dashboards or retry your tests during off-peak hours.
 
-
 <!--
 * Fields from related entities are hidden from the test mode.
 -->
-
 
 ## Activate the test mode
 

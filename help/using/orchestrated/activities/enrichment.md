@@ -114,7 +114,6 @@ Finally, apply filters to ensure only relevant records are included:
 1. Click **[!UICONTROL Confirm]**.
 
 
-
 <!--
 #### Define the sorting{#collection-sorting}
 
@@ -265,4 +264,5 @@ If you want to to view only offers from the enrichment activity, set the number 
 >[!NOTE]
 >
 >If you choose to have more than one offer in the **[!UICONTROL Enrichment]** activity at the **[!UICONTROL Number of offers to keep]** option, all the offers are displayed when clicking on the **[!UICONTROL Propositions]** icon.
+
 -->

@@ -48,7 +48,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
     +++ List of SMS credentials for configuration
 
     |Configuration fields|Description|
-    |---|---|    
+    |---|---|
     |SMS vendor|Sinch|
     |Name|Choose a name for your API Credential.|
     |Service ID and API Token|Access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.|
@@ -126,7 +126,6 @@ RCS (Rich Communication Services) messaging is supported in Journey Optimizer th
 
 Note that messages automatically fall back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 
-
 <!--
 ### Basic RCS Messages
 
@@ -150,7 +149,6 @@ Note that messages automatically fall back to SMS when the profile's device does
 
     Your messages automatically falls back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 -->
-
 
 ### RCS Multimedia Messages
 
