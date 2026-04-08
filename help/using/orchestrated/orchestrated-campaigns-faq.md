@@ -325,13 +325,13 @@ Segmentation is performed on Recipients while sending against the Adobe Experien
 
 Answering 'Yes' suggests the best data store - but always confirm the best approach based on your use case and constraints with your Adobe representative.
 
-|Relational Store | Real-Time Customer Profile | 
+|Relational Store | Real-Time Customer Profile |
 |---------|----------|
-| Is the source the data relational already? | Is the source of the data streaming? | 
-| Do you plan to ingest data as-it for marketing use cases? | Is data freshness a major requirement? | 
-| Is there a large volume of historical data (`>` 2 months) that is needed for marketing activation use cases? | Are there scenarios where in-the-moment action or decision require data? | 
-| Are there ad-hoc needs for audience creation, evaluation, and activation? | Can the behavioral data be limited to `<` 90 days using pre-computed aggregates?| 
-|  | Is data needed for personalizing messages in real-time?| 
+| Is the source the data relational already? | Is the source of the data streaming? |
+| Do you plan to ingest data as-it for marketing use cases? | Is data freshness a major requirement? |
+| Is there a large volume of historical data (`>` 2 months) that is needed for marketing activation use cases? | Are there scenarios where in-the-moment action or decision require data? |
+| Are there ad-hoc needs for audience creation, evaluation, and activation? | Can the behavioral data be limited to `<` 90 days using pre-computed aggregates?|
+|  | Is data needed for personalizing messages in real-time?|
 
 **Learn more**
 

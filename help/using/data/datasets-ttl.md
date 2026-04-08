@@ -130,6 +130,8 @@ Customers who require longer retention should consider exporting relevant data f
 
 Yes, impacted customers will be notified in advance, and the product team will work with them to ensure a smooth transition.
 
++++
+
 +++Can I delete Journey Optimizer system-generated datasets?
 
 Journey Optimizer system-generated datasets are protected and cannot be deleted through the standard Adobe Experience Platform UI. These datasets are essential for Journey Optimizer functionality and are managed by the system.

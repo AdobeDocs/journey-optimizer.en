@@ -383,6 +383,8 @@ FROM journey_step_event
 WHERE _experience.journeyOrchestration.serviceType is not null;
 ```
 
++++
+
 ## Message/Action Errors {#message-action-errors}
 
 +++List of each error encountered in journeys
