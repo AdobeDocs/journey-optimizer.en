@@ -304,7 +304,6 @@ Improvements coming with this release are listed below.
 
 * **Target dimension simplification in Orchestrated Campaigns** - You can now easily select or automatically deduce the right targeting and secondary dimensions in Orchestrated campaigns for accurate, efficient audience activation.
   Documentation JIRA task: [DOCAC-13554](https://jira.corp.adobe.com/browse/DOCAC-13554)
-
 -->
 
 <!--
@@ -559,7 +558,6 @@ Improvements coming with this release are listed below.
 * **SMS Webhooks** - <strong>Webhooks</strong> are now supported across all SMS providers. You can configure each webhook based on its intended purpose: <strong>Inbound webhooks</strong> to capture incoming messages and <strong>Feedback webhooks</strong> to receive delivery receipts, status updates, and other message-related events. [Read more](../sms/sms-webhook.md)
 
   Availability date: February 2, 2026.
-
 -->
 <!--
 ## January '26 pre-release notes {#jan-26-01-rn}

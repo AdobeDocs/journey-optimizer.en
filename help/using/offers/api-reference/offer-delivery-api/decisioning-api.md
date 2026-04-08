@@ -219,7 +219,8 @@ The table below lists all codes that can be returned in the response:
 |500|Internal server error. The server encountered an unexpected condition which prevented it from fulfilling the request.|
 |503|Service unavailable due to server overload. The server is currently unable to handle the request due to a temporary overloading.|
 
-<!-- 
+<!--
+ 
 ## Tutorial video {#video}
 
 The following video is intended to support your understanding of the components of Decision Management.

@@ -267,7 +267,6 @@ The best practices for designing accesible content in dark mode are listed in [t
 * Use the [Email rendering](../content-management/rendering.md) option that leverages Litmus to simulate your designs across major email clients (Apple Mail, Gmail, Outlook) and see how colors and images behave in dark mode.
 
 <!--
-
 ## Email clients supporting dark mode {#supporting-email-clients}
 
 Below is a list of the main email clients supporting dark mode using the with the `@media (prefers-color-scheme: dark)` query.
@@ -331,5 +330,4 @@ Other email clients do not support dark mode at all:
 | Mail.ru |
 | WEB.DE Desktop Webmail |
 | T-online.de |
-
 -->

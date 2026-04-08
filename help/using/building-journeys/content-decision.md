@@ -159,9 +159,11 @@ Below is the full example of a journey using a content decision activity combine
 
 Once the journey is [activated](publish-journey.md):
 
-<!--* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
+<!--
+* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
 
-* If no offer is returned for a profile, they are excluded from the custom action.-->
+* If no offer is returned for a profile, they are excluded from the custom action.
+-->
 
 1. Every time a profile qualifies for that audience, it enters the journey.
 

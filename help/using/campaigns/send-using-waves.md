@@ -17,7 +17,8 @@ You can divide the delivery of outbound campaign messages into several batches (
 <!--
 >[!CAUTION]
 >
->Wave sending applies to **outbound** actions only (Email, SMS, Push, Direct mail).-->
+>Wave sending applies to **outbound** actions only (Email, SMS, Push, Direct mail).
+-->
 
 Journey Optimizer lets you define the number of waves, their size (as a percentage of the audience or as absolute numbers), and when each wave runs.
 

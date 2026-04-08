@@ -108,7 +108,8 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     <!--
     Note that if you choose to copy the value, any future updates to the Content Fragment will not be reflected in your campaign or journey. However, using dynamic placeholders ensures real-time updates.
-    -->
+    
+-->
 
     ![](assets/aem_campaign_6.png)
 
