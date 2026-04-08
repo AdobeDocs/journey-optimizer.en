@@ -8,7 +8,7 @@ topic: Administration
 role: User
 level: Beginner
 keywords: tracking, monitor, analytics, reporting, deliverability
-
+exl-id: d5e7adb7-8473-4c29-8ae6-ba979aef97f3
 ---
 # Get started with tracking in Journey Optimizer {#get-started-tracking}
 
@@ -292,4 +292,3 @@ Set up proactive monitoring to receive real-time notifications about critical ev
 * **Enable audit logs** - Activate audit logging to track all actions on resources for compliance and troubleshooting. [Learn more](../privacy/audit-logs.md)
 
 * **Monitor integrations** - Track custom action performance and external system connectivity to identify integration issues early. [Learn more](../action/reporting.md)
-

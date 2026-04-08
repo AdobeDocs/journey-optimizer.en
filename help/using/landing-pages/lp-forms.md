@@ -1,23 +1,18 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create and use forms for you landing pages
-description: Learn how to create and use forms for you landing pages in Journey Optimizer
+title: Create and use forms for your landing pages
+description: Learn how to create and use forms for your landing pages in Journey Optimizer
 feature: Landing Pages
 topic: Content Management
 role: User
 level: Beginner
 keywords: landing, landing page, creation, page, form
-badge: label="Limited availability" type="Informative"
 exl-id: c688ac5e-eb09-445b-a3f0-1627b40cddc8
 ---
 # Use forms in your landing pages {#lp-forms}
 
->[!AVAILABILITY]
->
->This capability is currently in Limited Availability for customers in the United States and Australia. Contact your Adobe representative to gain access.
-
-To capture profile data with your [!DNL Journey Optimizer] landing pages and enrich your [!DNL Experience Platform] datasets, you can leverage forms in your landing pages.
+To capture profile data with your [!DNL Journey Optimizer] landing pages and enrich your [!DNL Experience Platform] datasets, you can leverage forms in your landing pages. For an overview of data capture scenarios and requirements, see [Data capture with landing pages](get-started-lp.md#data-capture-lp).
 
 ## Create a form preset {#create-form-preset}
 
@@ -78,7 +73,7 @@ To create a form preset, follow the steps below.
 
     >[!NOTE]
     >
-    >Currently only [!DNL Adobe Experience Platform] datasets are available for selection. One dataset can be selected at a time. [Learn more on datasets](../data/get-started-datasets.md)
+    >Currently only **Profile-enabled** and **Non-Profile-enabled** [!DNL Adobe Experience Platform] datasets are available for selection. One dataset can be selected at a time. System datasets cannot be used for saving form data. [Learn more on datasets](../data/get-started-datasets.md)
 
 1. Click **[!UICONTROL Publish]**. Your preset is now ready to be used in a form.
 
@@ -264,7 +259,7 @@ You can now embed this form into a landing page in order to capture data corresp
 
     >[!NOTE]
     >
-    >You can update the selected form using the **[!UICONTROL Edit form]** button. The form opens in a new tab. The steps to edit the form content are detailed in [this section](#create-form).
+    >You can update the selected form using the **[!UICONTROL Edit form]** button. The form opens in a new tab. The steps to edit the form content are detailed in [this section](#edit-form).
 
 1. In the **[!UICONTROL Follow up type]** section, configure what happens when a user fills out the form:
 
@@ -276,8 +271,65 @@ You can now embed this form into a landing page in order to capture data corresp
 
 1. Save and test your landing page. [Learn how](create-lp.md#test-landing-page)
 
-Once your landing page is [published](create-lp.md#publish-landing-page) and used in a journey, when users fills in the form, the information entered is ingested into the selected dataset.
+Once your landing page is [published](create-lp.md#publish-landing-page) and used in a journey, when users fills in the form, the information entered is ingested into the selected dataset. Allow up to 15 minutes for the data to be processed and available for use.
 
 >[!NOTE]
 >
 >If you unpublish a form that is used in a landing page, edit this form and publish it again, the landing page is always using the latest published version of the form.
+
+## Frequently asked questions {#lp-forms-faq}
+
++++What type of landing page do I need to use a form?
+
+When creating a landing page, select **[!UICONTROL Data Capture]** as the landing page type. This is the only landing page type that supports embedding a form for data collection.
+
++++
+
++++Can I use any dataset with a form preset?
+
+Only **Profile-enabled** and **Non-Profile-enabled** [!DNL Adobe Experience Platform] datasets are available for selection. System datasets cannot be used to save form data, and only one dataset can be selected per preset.
+
++++
+
++++Can I reuse the same dataset or streaming connection across multiple form presets?
+
+Yes. The same dataset or streaming connection can be reused across multiple presets. You can also set up multiple presets using different combinations of datasets and streaming connections to support different data capture scenarios.
+
++++
+
++++Can I use a draft form in a landing page?
+
+No. Only **published** forms can be selected and embedded in a landing page.
+
++++
+
++++If I edit and republish a form that is already embedded in a live landing page, which version does the landing page use?
+
+The landing page always uses the **latest published version** of the form. Draft changes do not take effect until the updated form is published.
+
++++
+
++++Can I redirect users to different pages based on how they filled out the form?
+
+Yes. You can configure a **[!UICONTROL Conditional redirect]** on the Thank you page and define rules to show different follow-up actions based on form responses—for example, redirecting visitors in one country to one page and visitors in another country to a different page, with a default fallback for everyone else. [Learn more](#thank-you-page)
+
++++
+
++++Can form fields be pre-filled with existing profile data?
+
+Yes. When configuring a field, you can enable the **[!UICONTROL Prefilled Enabled]** option so the field is automatically populated from the known profile's information when it is available.
+
++++
+
++++Can I make a field mandatory so users cannot skip it?
+
+Yes. In the **[!UICONTROL Field behaviors]** section of a field's configuration, select **[!UICONTROL Required]**. Users cannot submit the form until all required fields are completed.
+
++++
+
++++Where does form submission data go after a user submits the form?
+
+When the form is submitted, data is sent to the **streaming connection** defined in the form preset. It is then pushed into the linked **[!DNL Experience Platform] dataset** through an automatically generated source flow that handles mapping, transformation, and validation.
+
++++
+

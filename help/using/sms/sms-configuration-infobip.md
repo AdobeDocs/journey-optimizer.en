@@ -22,7 +22,16 @@ If opt-in or opt-out keywords are not provided, standard consent messages are us
 
 >[!ENDSHADEBOX]
 
-## Configure API credentials for SMS
+By integrating Infobip with Adobe Journey Optimizer, you can deliver text messages to your profiles as part of your journeys and campaigns.
+
+To configure Infobip as your SMS provider, follow the steps below:
+
+1. [Create API Credential](#api-credential)
+1. [Create Webhook](sms-webhook.md)
+1. [Create Channel configuration](sms-configuration-surface.md)
+1. [Create Journey or Campaign with SMS channel action](create-sms.md)
+
+## Configure API credentials for SMS {#api-credential}
 
 To configure Infobip with Journey Optimizer, follow these steps:
 
@@ -37,14 +46,14 @@ To configure Infobip with Journey Optimizer, follow these steps:
     |SMS vendor|Infobip|
     |Name|Choose a name for your API Credential.|
     |API base URL and API key| Access your web interface homepage or the API key management page to find your credentials. For regional or alternate domain endpoints, e.g. `api-ny2.infobip.com`, specify the complete base URL and verify your authorization token with Infobip support. </br>Learn more in [Infobip Documentation](https://www.infobip.com/docs/api){target="_blank"}|
-    |Opt-In Keywords|Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
-    |Opt-In Message| Enter the custom response that is automatically sent as your Opt-In Message.|
-    |Opt-Out Keywords| Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
-    |Opt-Out Message|Enter the custom response that is automatically sent as your Opt-Out Message.|
-    |Help Keywords| Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
-    |Help Message|Enter the custom response that is automatically sent as your **Help Message**.|
-    |Double Opt-In Keywords|Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more about the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
-    |Double Opt-In Message|Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
+    |Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
+    |Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the custom response that is automatically sent as your Opt-In Message.|
+    |Opt-Out Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
+    |Opt-Out Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your Opt-Out Message.|
+    |Help Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
+    |Help Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your **Help Message**.|
+    |Double Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more about the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
+    |Double Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
     |Principal Entity ID|Enter your assigned DLT principal entity ID.|
     |Content Template ID|Enter your registered DLT content template ID.|
     |Validity Period| Enter the message validity period in hours. In the event that messages cannot be delivered within this timeframe, the system will make additional attempts to resend them. The default validity period is set to 48 hours.|
@@ -99,4 +108,4 @@ To configure RCS with Infobip:
 
     [Create a new API credential](sms-configuration-custom.md#api-credential) within Journey Optimizer, selecting "Custom" as the SMS provider. Use the appropriate RCS endpoint authentication method, base URL, and headers.
 
-After creating and configuring your API credential, you now need to create a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create [your Webhook](sms-webhook.md) and a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)

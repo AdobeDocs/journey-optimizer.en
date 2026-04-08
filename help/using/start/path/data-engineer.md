@@ -16,6 +16,10 @@ As a **Data Architect** or **Data Engineer**, you set up and maintain the custom
 >
 >Learn more about **data ingestion** in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
+>[!TIP]
+>
+>New to data in Journey Optimizer? Start with the [Get started with data management](../../data/gs-data.md) overview to understand schemas, datasets, identities, the profile fragment model, and the full data readiness checklist before diving into configuration.
+
 ## Essential data configuration steps
 
 Follow these steps to set up the data foundation for Journey Optimizer:
@@ -38,6 +42,8 @@ Follow these steps to set up the data foundation for Journey Optimizer:
 1. **Create test profiles**. Test profiles are required when using the [test mode](../../building-journeys/testing-the-journey.md) in a journey, and to [preview and test your messages](../../content-management/preview-test.md) before sending. Steps to create test profiles are detailed [on this page](../../audience/creating-test-profiles.md).
 
 1. **Configure computed attributes** (optional). Create derived attributes from profile data to simplify segmentation and personalization. Computed attributes automatically calculate complex metrics like "total purchases in last 90 days" or "average order value". Learn about [computed attributes](../../audience/computed-attributes.md).
+
+1. **Message export datasets** (optional). When message export is enabled at the channel configuration level, sent email and SMS content is automatically exported to a dedicated Experience Platform dataset for compliance, archiving, or downstream analysis. Learn about [message export](../../configuration/message-export.md).
 
 In addition, to be able to send messages in journeys, you must configure **[!UICONTROL Data Sources]**, **[!UICONTROL Events]** and **[!UICONTROL Actions]**. Learn more [in this section](../../configuration/about-data-sources-events-actions.md).
 

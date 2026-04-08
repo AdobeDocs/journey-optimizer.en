@@ -44,9 +44,11 @@ To enable [Marketers](marketer.md) to create and send messages, access the **ADM
 
 Follow these steps:
 
-1. **Set up channel configurations**. Define all the technical parameters required for email, SMS, push notifications, and other channels:
+1. **Set up channel configurations**. Define all the technical parameters required for email, SMS, push notifications, web push, direct mail, and other channels:
 
     * Define **push notification settings** in both [!DNL Adobe Experience Platform] and Adobe Experience Platform Data Collection. [Learn more](../../push/push-gs.md)
+
+    * Configure **web push notifications** to deliver notifications to mobile and desktop browsers. [Learn more](../../push/push-configuration-web.md)
 
     * Create **channel configurations** to configure all the technical parameters required for email, SMS, push, in-app, web, and other channels. [Learn more](../../configuration/channel-surfaces.md)
 
@@ -54,7 +56,9 @@ Follow these steps:
 
     * Manage the number of days during which **retries** are performed before sending email addresses to the suppression list. [Learn more](../../configuration/manage-suppression-list.md)
 
-1. **Delegate subdomains**: for any new subdomain to be used in Journey Optimizer, the first step will be to delegate it. [Learn more](../../configuration/about-subdomain-delegation.md)
+    * Enable **message export** at the channel configuration level to archive sent email and SMS content when required (add-on offering). [Learn more](../../configuration/message-export.md)
+
+1. **Delegate subdomains**: for any new subdomain to be used in Journey Optimizer, the first step will be to delegate it. [Learn more](../../configuration/about-subdomain-delegation.md). You can migrate subdomains from CNAME to custom delegation when needed. [Learn more](../../configuration/custom-subdomain-migration.md)
 
     ![](../assets/subdomain.png)
 
@@ -82,6 +86,8 @@ As your organization's needs grow, consider these advanced capabilities:
 
 * **IP warmup plans**: Gradually increase email sending volumes to build sender reputation with email providers. [Learn more](../../configuration/ip-warmup-gs.md)
 
+* **Quiet hours**: Configure rule sets for time-based exclusions when messages should not be sent during specific periods. [Learn more](../../conflict-prioritization/quiet-hours.md)
+
 ## Collaborate across roles
 
 Your administrative work enables all teams to succeed:
@@ -90,7 +96,7 @@ Your administrative work enables all teams to succeed:
 
 >[!TAB Support Data Engineers]
 
-Collaborate with [Data Engineers](data-engineer.md) on data management and access:
+Collaborate with [Data Engineers](data-engineer.md) on data management and access. Review the [Get started with data management](../../data/gs-data.md) overview to understand the schemas, datasets, and data sources your data engineers need to configure.
 
 * Grant permissions for data management and schema creation
 * Approve sandbox access for development and testing

@@ -94,10 +94,18 @@ You can send an identical copy (or blind carbon copy) of emails sent by [!DNL Jo
 To do this, enable the **[!UICONTROL BCC email]** optional feature at the channel configuration level. [Learn more](../configuration/archiving-support.md#bcc-email)
 
 ![](assets/preset-bcc.png)
+<!--replace screenshot-->
 
 Additionally, when defining the **[!UICONTROL Bcc email]** address, make sure to use a subdomain that has a valid MX record configuration, otherwise the email configuration processing will fail.
 
 If you get an error upon submitting the email configuration, it means that the MX record is not configured for the subdomain of the address you entered. Contact your administrator for configuring the corresponding MX record or use another address with a valid MX record configuration.
+
+<!--
+## CC email {#cc-email}
+
+You can add a visible CC (carbon copy) recipient to emails sent by [!DNL Journey Optimizer], so that an additional address receives a copy and is visible to the primary recipient. The CC field is optional and supports personalization. [Learn more](../configuration/cc-email-field.md)
+
+-->
 
 ## Sending to suppressed email addresses {#send-to-suppressed-email-addresses}
 
@@ -139,17 +147,14 @@ Once this option is enabled, although a customer marked your marketing email as 
 
 A seed list in [!DNL Journey Optimizer] enables you to automatically include specific email seed addresses in your deliveries. [Learn more](../configuration/seed-lists.md)
 
->[!CAUTION]
+>[!NOTE]
 >
->Currently this feature only applies to the email channel.
+>* This feature currently applies to the email channel only.
+>* Only one seed list can be selected at a time.
 
 Select the list that is relevant to you in the **[!UICONTROL Seed list]** section. Learn how to create a seed list in [this section](../configuration/seed-lists.md#create-seed-list).
 
 ![](../configuration/assets/seed-list-surface.png){width="80%"}
-
->[!NOTE]
->
->Only one seed list can be selected at a time.
 
 When the current configuration is used in a campaign or journey, the email addresses on the selected seed list are included at the delivery execution time, meaning they will receive a copy of the delivery for assurance purposes.
 

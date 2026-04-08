@@ -29,7 +29,7 @@ The **[!UICONTROL Sending Statistics]** table provides a comprehensive summary o
 
 * **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
 
-* **[!UICONTROL Targeted]**: Total number of direct mail messages processed during the sending process.
+* **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied. In journeys with re-entrance enabled, a profile may be targeted multiple times.
 
 * **[!UICONTROL Sends]**: Total number of sends for your direct mail messages.
 

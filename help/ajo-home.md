@@ -106,7 +106,7 @@ Conflict Management and Prioritization
 
 Learn how to prioritize and manage communication conflicts across campaigns and journeys effectively.
 
-[Learn Conflict Management](./rp_landing_pages/conflict-prioritization-landing-page.md)
+[Learn Conflict Management](./using/conflict-prioritization/gs-conflict-prioritization.md)
 :::
 
 ::::
@@ -137,5 +137,7 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 </td>
 </tr></table>
 
-<!--table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
-<b>Stay informed and elevate your Adobe Journey Optimizer experience!</b><br/>Sign up for our quarterly newsletter. Gain exclusive access to the latest product updates, captivating stories, real-world use cases, valuable tips, and more – all delivered directly to your inbox every quarter. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Sign up today!</a></td></tr></table-->
+<!--
+table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
+<b>Stay informed and elevate your Adobe Journey Optimizer experience!</b><br/>Sign up for our quarterly newsletter. Gain exclusive access to the latest product updates, captivating stories, real-world use cases, valuable tips, and more – all delivered directly to your inbox every quarter. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Sign up today!</a></td></tr></table
+-->

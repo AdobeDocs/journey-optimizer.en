@@ -26,6 +26,10 @@ When configuring a new [email channel configuration](email-settings.md), you can
 
 The parameters defined in the corresponding section will be appended to the end of the URLs included in your email message content. You can then capture these parameters in web analytics tools such as Adobe Analytics or Google Analytics, and create various performance reports.
 
+>[!NOTE]
+>
+>The order of URL tracking parameters appended to the URL is random and cannot be controlled. If your system requires parameters in a specific order, you will need to parse and reorder them on your side.
+
 You can add up to 10 tracking parameters using the **[!UICONTROL Add new parameter]** button.
 
 ![](assets/preset-url-tracking.png){width="80%"}
@@ -43,6 +47,10 @@ The following predefined values are available through the personalization editor
 * **Offer id**: ID of the offer used in the email.
 
 * **Source action id**: ID of the Email action added to the journey or campaign.
+
+  >[!NOTE]
+  >
+  >Journeys that were closed or not republished after a product change may fail to populate `context.system.source.actionId` in tracking URLs, resulting in empty placeholders (for example, `cid=em-acou-adob{}`). To ensure tracking parameters are correctly populated, [republish the affected journey](../building-journeys/publish-journey.md#journey-create-new-version) or remove the reference to this context field for closed journeys. Learn more in [Troubleshoot your live journey execution](../building-journeys/troubleshooting-execution.md#tracking-parameters-closed-journeys).
 
 * **Source action name**: name of the Email action added to the journey or campaign.
 

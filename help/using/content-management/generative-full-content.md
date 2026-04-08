@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Artificial Intelligence
 role: User
 level: Beginner
+exl-id: 9f395b3d-8414-4e88-b849-6d9af9640b32
 ---
 # Generate full content with AI Assistant {#generative-full-content}
 
@@ -60,6 +61,7 @@ With AI Assistant open, you can now configure the generation settings to create 
 
 1. Choose your **[!UICONTROL Image settings]**:
 
+    * **[!UICONTROL Generative model]**: Select from available built-in models, custom Firefly models trained on your brand assets, or third-party image generation providers to create images that align with your specific needs and brand requirements. [Learn more](generative-models.md). For **Gemini** with **text overlays** on images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
     * **[!UICONTROL Color & tone]**: The overall appearance of the colors within an image and the mood or atmosphere it conveys.
@@ -166,6 +168,7 @@ Once you have accessed AI Assistant for push notifications, you can configure th
 
 1. Choose your **[!UICONTROL Image settings]**:
 
+    * **[!UICONTROL Generative model]**: Select from available built-in models, custom Firefly models trained on your brand assets, or third-party image generation providers to create images that align with your specific needs and brand requirements. [Learn more](generative-models.md). For **Gemini** with **text overlays** on images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
     * **[!UICONTROL Color & tone]**: The overall appearance of the colors within an image and the mood or atmosphere it conveys.

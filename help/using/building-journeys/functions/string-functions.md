@@ -7,6 +7,7 @@ role: Developer
 level: Experienced
 keywords: string, functions, expression, journey, text, manipulation
 version: Journey Orchestration
+exl-id: 8186c564-56fa-417a-afd3-8e479e5b23b9
 ---
 # String functions {#string-functions}
 
@@ -311,6 +312,10 @@ Returns a boolean.
 Returns true.
 
 `isEmpty("Hello World")`
+
+Returns false.
+
+`isEmpty(<null>)`
 
 Returns false.
 
@@ -866,4 +871,3 @@ Returns a string.
 Returns "79e70b7f-8a85-400b-97a1-9f9826121553".
 
 +++
-

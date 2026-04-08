@@ -14,6 +14,11 @@ version: Campaign Orchestration
 >title="AND-join activity"
 >abstract="The **And-join** activity allows you to synchronize multiple execution branches of an Orchestrated campaign. It is triggered once all of the preceding activities have finished. This allows you to make sure that certain activities are finished before continuing to execute the Orchestrated campaign."
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_join"
+>title="Join activity"
+>abstract="Placeholder for Join activity."
+
 The **[!UICONTROL And-join]** activity is a **[!UICONTROL Flow control]** activity. It allows you to synchronize multiple execution branches of an Orchestrated campaign.
 
 This activity only triggers its outbound transition once all the inbound transitions are activated, in other words, once all of the preceding activities have finished. This allows you to make sure that certain activities have finished before continuing to execute the Orchestrated campaign.

@@ -24,3 +24,9 @@ The **Identities** menu in [!DNL Adobe Journey Optimizer] allows users to effici
 It provides an **Identity Graph**, which is a map of relationships between different identities for a particular customer. This graph offers a visual representation of how a customer interacts with a brand across different channels. All customer identity graphs are collectively managed and updated by Adobe Experience Platform Identity Service in response to customer activity.
 
 Detailed information on working with identities is available in the [Identity Service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html){target="_blank"}.
+
+>[!MORELIKETHIS]
+>
+>* [Get started with data management in Journey Optimizer](../data/gs-data.md)
+>* [Get started with profiles](get-started-profiles.md)
+>* [Identity Service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html){target="_blank"}

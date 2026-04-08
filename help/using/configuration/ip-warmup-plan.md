@@ -117,9 +117,7 @@ For example, if you add the custom domain Roadrunner, you want the following sub
 
 ![](assets/ip-warmup-sample-file-custom.png)
 
->[!NOTE]
->
->If you do not need custom domains, leave the **[!UICONTROL Custom Domain Group]** tab empty.
+If you do not need custom domains, leave the **[!UICONTROL Custom Domain Group]** tab empty.
 
 ### OOTB Domain Groups tab {#ootb-domain-groups-tab}
 
@@ -245,15 +243,12 @@ Each domain now displays in a different column on the same row.
 
 1. To delete an IP warmup plan, select the **[!UICONTROL Delete]** icon next to the name of a plan and confirm deletion.
 
-    >[!NOTE]
-    >
-    >Only plans with the **Not started** status can be deleted.
-
-    ![](assets/ip-warmup-delete-plan.png)
-
     >[!CAUTION]
     >
-    >The selected IP warmup plan will be permanently deleted.
+    >* Only plans with the **Not started** status can be deleted.
+    >* The selected IP warmup plan will be permanently deleted.
+
+    ![](assets/ip-warmup-delete-plan.png)
 
 ## Create an IP warmup plan {#create-ip-warmup-plan}
 

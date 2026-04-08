@@ -10,9 +10,9 @@ level: Intermediate, Experienced
 keywords: journey, use case
 version: Journey Orchestration
 ---
-# Use case: create a custom action to send data to Adobe Experience Platform{#send-data-to-aep}
+# Use case: create a custom action to send data to [!DNL Adobe Experience Platform]{#send-data-to-aep}
 
-If you recently moved to another email service provider, IP address, or email domain or subdomain, you need to establish your reputation as a sender. Otherwise, your deliveries might be blocked or moved to the spam folder of the recipients' mailbox. Learn how to increase your email reputation with IP warming in the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"}.
+If you recently moved to another email service provider, IP address, or email domain or subdomain, establish your reputation as a sender. Otherwise, deliveries might be blocked or moved to recipients' spam folders. For guidance, see the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"}.
 
 To warm up your IP, you can gradually ramp up the number of your deliveries. Read more about [optimizing deliverability in Journey Optimizer](../reports/deliverability.md).
 
@@ -20,11 +20,11 @@ The purpose of this use case is to create a journey to ramp up your email delive
 
 1. Create a journey. [Read more](journey-gs.md).
 
-1. Add a **[!UICONTROL Condition]** activity to the journey. [Read more](condition-activity.md).
+1. Add an **[!UICONTROL Optimize]** activity to the journey. [Read more](optimize.md).
 
 1. In the **[!UICONTROL Condition]** activity settings, set the maximum number of recipients for your delivery:
 
-   1. In the **[!UICONTROL Condition]** activity settings, set the **[!UICONTROL Type]** field to **[!UICONTROL Profile cap]**. [Read more](condition-activity.md#profile_cap).
+   1. In the **[!UICONTROL Optimize]** activity settings, select **[!UICONTROL Conditions]** method and set the **[!UICONTROL Type]** field to **[!UICONTROL Profile cap]**. [Read more](conditions.md#profile_cap).
 
    1. Set the **[!UICONTROL Limit]** field to the maximum number of recipients for this delivery.
 

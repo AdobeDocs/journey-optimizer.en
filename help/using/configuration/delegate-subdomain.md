@@ -33,6 +33,7 @@ You can either:
 
 * Fully delegate a subdomain - [Learn how](#set-up-subdomain)
 * Create a subdomain using CNAMEs to point to Adobe-specific records - [Learn how](#set-up-subdomain)
+* Delegate a custom subdomain - [Learn how](delegate-custom-subdomain.md)
 
 The **full subdomain delegation** is the recommended method. Learn more about the differences between the different subdomain configuration methods in [this section](about-subdomain-delegation.md#subdomain-delegation-methods).
 
@@ -194,11 +195,7 @@ To complete your subdomain delegation, follow the steps below.
 
     <!--![](assets/subdomain-processing.png)-->
 
-1. Before being able to use that subdomain to send messages, you must wait until Adobe performs the required checks, which can take up to 3 hours. [Learn more](#subdomain-validation).
-
-    >[!NOTE]
-    >
-    >Make sure that all the records are properly created before proceeding.
+1. Before being able to use that subdomain to send messages, make sure that all DNS records are properly created, then wait until Adobe performs the required checks, which can take up to 3 hours. [Learn more](#subdomain-validation).
 
 ### Subdomain validation {#subdomain-validation}
 

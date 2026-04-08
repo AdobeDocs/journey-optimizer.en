@@ -20,26 +20,18 @@ This change is being rolled out to **existing customer sandboxes** in a subseque
 
 ## Impacted datasets {#datasets}
 
-The table below lists all impacted datasets and their respective Time-To-Live in the data lake and the profile store.
+The table below lists all impacted datasets and their respective Time-To-Live in the data lake and the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
 
 |Dataset|Data Lake TTL|Profile Store TTL|
 |------|-----|-----|
 |AJO Message Feedback Event Dataset|13 months|90 days|
 |AJO Email Tracking Experience Event Dataset|13 months|90 days|
 |AJO Push Tracking Experience Event Dataset|13 months|90 days|
-|AJO Entity Dataset|13 months|90 days|
 |AJO Surfaces Dataset|13 months|n/a|
 |AJO Inbound Activity Event Dataset|13 months|90 days|
-|AJO Classification Dataset|13 months|n/a|
-|AJO Email BCC Feedback Event Dataset|13 months|n/a|
+|AJO Secondary Recipient Feedback Event Dataset|13 months|n/a|
 |Entity Event Dataset|13 months|n/a|
-|Journeys|13 months|n/a|
 |Journey Step Events|13 months|n/a|
-|Decision Object Repository - Personalized Offers|13 months|n/a|
-|Decision Object Repository - Fallback Offers|13 months|n/a|
-|Decision Object Repository - Placements|13 months|n/a|
-|Decision Object Repository - Activities|13 months|n/a|
-|Experience Decisioning Object Repository - Personalized Offer Items|13 months|n/a|
 |ODE DecisionEvents - prod decisioning|13 months|n/a|
 
 ## Frequently Asked Questions {#faq}
@@ -47,6 +39,12 @@ The table below lists all impacted datasets and their respective Time-To-Live in
 You will find below Frequently Asked Questions about datasets Time-to-live (TTL).
 
 Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+
++++Which types of datasets are subject to TTL?
+
+TTL applies only to time-series datasets. Record-type datasets (such as entity datasets, classification datasets, and decision object repositories) are not subject to TTL and therefore do not appear in the Impacted datasets table above.
+
++++
 
 +++Will this change apply to production sandboxes only or will it apply to dev sandboxes as well?
 

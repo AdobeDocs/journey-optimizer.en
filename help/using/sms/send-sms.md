@@ -39,18 +39,23 @@ Note that the character count does not reflect variations introduced by dynamic 
 
 ## Validate your content {#sms-validate}
 
+>[!NOTE]
+>
+> To improve your deliverability, use the phone numbers in the formats supported by the provider. For example, Twilio and Sinch only support phone numbers in E.164 format.
+
 You must check alerts in the upper section of the editor. Some of them are simple warnings, but others can prevent you from sending the message. Two types of alerts can happen: warnings and errors.
 
 ![](assets/sms-alert-button.png)
 
-* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your text message is empty.
+* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your text message is empty or if character limits may be exceeded with dynamic content.
+
+    **Character limits:** 160 characters per segment (GSM 7-bit), 70 for Unicode/emojis, up to 1500 characters total.
 
 * **Errors** prevent you from testing or activating the journey, or publishing the campaign, as long as they are not resolved. For example, an error message warns you when the subject line is missing.
 
+The alert **"The SMS text character limit has been exceeded"** may appear even when your simulated message is shorter because validation calculates the **maximum possible length** by evaluating all conditional branches, personalization fields, and dynamic content at their longest.
 
->[!NOTE]
->
-> To improve your deliverability, use the phone numbers in the formats supported by the provider. For example, Twilio and Sinch only support phone numbers in E.164 format.
+Validation calculates maximum length for all possible profile data, while simulation shows actual output for one test profile.
 
 ## Send your text messages {#sms-send}
 
@@ -65,4 +70,4 @@ When your text message is ready, complete the configuration of your [journey](..
 * [Configure SMS channel](sms-configuration.md)
 * [SMS/MMS reports](../reports/journey-global-report-cja-sms.md)
 * [Create a text message](create-sms.md)
-* [Add a message in a journey](../building-journeys/journeys-message.md)
+* [Add a message in a journey](../building-journeys/journey-action.md)

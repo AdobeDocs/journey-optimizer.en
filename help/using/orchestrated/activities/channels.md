@@ -24,6 +24,11 @@ version: Campaign Orchestration
 >title="Push activity"
 >abstract="The Push activity lets you send Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring Orchestrated campaigns, automating the sending of Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_target"
+>title="Target"
+>abstract="Placeholder for Target section"
+
 <!--
 UNUSED IDs in BJ
 
@@ -44,7 +49,7 @@ UNUSED IDs in BJ
 >title="Direct mail activity"
 >abstract="The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
-[!DNL Adobe Journey Optimizer] allows you to automate and execute marketing campaigns across channels - email, SMS, push notifications and direct mail. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns. These campaigns can trigger actions based on customer behavior and data.
+[!DNL Adobe Journey Optimizer] allows you to automate and execute campaigns across channels—email, SMS, push notifications, and direct mail—for both marketing and transactional messages. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns. These campaigns can trigger actions based on customer behavior and data.
 
 For example:
 
@@ -60,6 +65,11 @@ By using channel activities, you can create comprehensive and personalized campa
 
 ## Add a channel activity and define its properties {#add}
 
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_category"
+>title="Category"
+>abstract="Choose Marketing or Transactional for this channel activity. Marketing messages use marketing channel configurations and follow your standard business rules. Transactional messages are for operational communications — often triggered by an individual's action (for example, a password reset or purchase confirmation) or for time-sensitive notices such as disruptions or cancellations. They use transactional channel configurations, business rules are bypassed, and opt-in is not required."
+
 >[!PREREQUISITES]
 >
 >Before adding a channel activity, define the target audience using a [Build audience](build-audience.md) or a [Read audience](read-audience.md) activity.
@@ -67,6 +77,8 @@ By using channel activities, you can create comprehensive and personalized campa
 1. Add a channel activity into the canvas. Available channel activities are **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push]** and **[!UICONTROL Direct mail]**.
 
     ![image showing the canvas with available activities](../assets/channel-add.png)
+
+1. In the right rail, use the **[!UICONTROL Category]** field to choose **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** for this message. Transactional messages do not require opt-in and are suited for time-sensitive communications such as disruptions, emergencies, or cancellations.
 
 1. Select the activity and click **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]**, or **[!UICONTROL Edit direct mail]** depending on the chosen channel.
 
@@ -149,11 +161,17 @@ When you access the personalization editor from an Orchestrated campaign, two ma
 
 For a detailed overview of how to use the personalization editor, refer to [Get started with personalization](../../personalization/personalize.md).
 
-### Check and test your content
+### Check and test your content {#simulate-content-test-profiles}
 
 Once the content is created, use the **[!UICONTROL Simulate Content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
 
 ![image showing the Simulate Content button](../assets/channel-simulate.png)
+
+When you simulate content with **test profiles** in an Orchestrated campaign, two important constraints apply:
+
+* **Execution must have reached the channel activity in test** - Run the campaign in test using the **[!UICONTROL Start]** button so the workflow reaches the channel activity you want to simulate. In test mode, the workflow pauses at the channel activity, so a channel activity that comes after another channel activity is never reached. You cannot use **[!UICONTROL Simulate Content]** for those downstream channel activities. See [Test your campaign before publishing](../start-monitor-campaigns.md#test).
+
+* **The test profile must match the channel activity target** - Use a test profile that belongs to the audience targeted by that channel activity. If the profile is not in that audience, selecting it will not render a preview of your content. See [Select test profiles](../../content-management/test-profiles.md).
 
 ## Confirm message sending
 

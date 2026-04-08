@@ -79,6 +79,8 @@ To create an **offer**, follow these steps:
 
 1. Add representations to define where your offer will display in the message. [Learn more](add-representations.md)
 
+    When personalizing representation content, only certain functions are supported—see [Supported functions in the personalization editor](personalization-editor-supported-functions.md).
+
     ![](../assets/channel-placement.png)
 
     >[!CAUTION]

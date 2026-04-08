@@ -10,7 +10,16 @@ exl-id: d6f74566-c913-4727-83b9-473a798a0158
 ---
 # Configure Twilio provider {#sms-configuration-twilio}
 
-## Configure API credential for SMS/MMS
+By integrating Twilio with Adobe Journey Optimizer, you can deliver text messages to your profiles as part of your journeys and campaigns.
+
+To configure Twilio as your SMS provider, follow the steps below:
+
+1. [Create API Credential](#api-credential)
+1. [Create Webhook](sms-webhook.md)
+1. [Create Channel configuration](sms-configuration-surface.md)
+1. [Create Journey or Campaign with SMS channel action](create-sms.md)
+
+## Configure API credential for SMS/MMS {#api-credential}
 
 To configure Twilio with Journey Optimizer, you need to create new API credentials for Twilio:
 

@@ -1,177 +1,136 @@
 ---
 title: Use decision policies in messages
-description: Learn how to use decisions policies in your messages.
+description: Learn how to use decision policies in your messages.
 feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
+exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
 ---
 # Use decision policies in messages {#create-decision}
 
-Once a decision policy has been created, the policy and the attributes linked to the returned decision items can be used in your content for personalization. To do so, the code associated to the decision policy must first be inserted into your content. Once done, you can leverage its attributes for personalization.
-
-## Insert the decision policy code {#insert-code}
-
->[!BEGINTABS]
-
->[!TAB Code-based experience]
-
-1. Open the personalization editor and access the **[!UICONTROL Decision policies]** menu.
-
-1. Select **[!UICONTROL Insert policy]** to add the code corresponding to the decision policy.
-
-    ![](assets/decision-code-based-add-decision.png)
-
-    >[!NOTE]
-    >
-    >If the code insertion button does not display, a decision policy may already have been configured for the parent component.
-
-1. The code for the decision policy is added. This sequence will be repeated the number of times you want the decision policy to be returned. For example, if you chose to return back 2 items when [creating the decision](#add-decision), the same sequence will be repeated twice.
-
->[!TAB Email]
-
-1. Open the personalization editor and access the **[!UICONTROL Decision policy]** menu.
-
-1. Select **[!UICONTROL Insert syntax]** to add the code corresponding to the decision policy.
-
-    ![](assets/decision-policy-add.png)
-
-    >[!NOTE]
-    >
-    >If the code insertion button does not display, a decision policy may already have been configured for the parent component.
-    
-1. If no placement has been associated to the component beforehand, select one from the list and click **[!UICONTROL Assign]**.
-
-    ![](assets/decision-policy-placement.png)
-
->[!ENDTABS]
-
-Once the code for the decision policy is added, this sequence will be repeated the number of times you want the decision policy to be returned. For example, if you chose to return back 2 items when [creating the decision](#add-decision), the same sequence will be repeated twice.
-
-## Leverage decision items attributes {#attributes}
-
-Now you can add all the decision attributes you want inside that code. The available attributes are stored in the **[!UICONTROL Offers]** catalog's schema. Custom attributes are stored in the **`_<imsOrg`>** folder and standard attributes in the **`_experience`** folder. [Learn more about the Offers catalog's schema](catalogs.md)
-
-![](assets/decision-code-based-decision-attributes.png)
-
->[!NOTE]
->
->For decision policy Item tracking, the `trackingToken` attribute needs to be added as following for decision policy content:
->`trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
-
-To add an attribute, click the '+' icon next to it. You can add as many attributes as you want to the code.
-
-![](assets/decision-code-based-add-decision-attributes.png)
-
-Make sure you wrap the `#each` loop inside a pair of square brackets `[ ]`, and add a comma right before the closing `/each`.
-
-![](assets/decision-code-based-wrap-code.png)
-
-You can also add any other attribute available in the personalization editor, such as profile attributes.
-
-![](assets/decision-code-based-decision-profile-attribute.png)
-
-## Leverage fragments (Code-based experience) {#fragments}
-
-If your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn more on fragments](../content-management/fragments.md)
+Once you've added a decision policy to your content, you can use attributes from returned decision items for personalization. To do so, first insert the decision policy code into your content.
 
 >[!CAUTION]
 >
->This capability is currently only available for the Code-based experience channel.
->
->Currently only [expression fragments](../personalization/use-expression-fragments.md) can be used. Nested fragments (fragments referencing other fragments) are not supported.
+>Decision policies are available to all customers for the **Code-based Experience**, **SMS**, **Push notification**, and **Email** channels.
 
-For example, let's say you want to display different contents for several mobile device models. Make sure you added fragments corresponding to those devices to the decision item that you are using in the decision policy. [Learn how](items.md#attributes).
-
-![](assets/item-fragments.png){width=70%}
-
-Once done, you can use either one of the following methods:
+## Insert the decision policy code {#insert}
 
 >[!BEGINTABS]
 
->[!TAB Directly insert the code]
+>[!TAB Code-based Experience]
 
-Simply copy-paste the code block below into the decision policy code. Replace `variable` with the fragment ID and `placement` with the fragment reference key:
+1. Edit your code-based experience and navigate to **[!UICONTROL Decision policy]**.
 
-```
-{% let variable =  get(item._experience.decisioning.offeritem.contentReferencesMap, "placement").id %}
-{{fragment id = variable}}
-```
+2. Select **[!UICONTROL Insert policy]** to add the decision policy code.  
 
->[!TAB Follow the detailed steps]
-
-1. Navigate to the **[!UICONTROL Helper functions]** and add the **Let** function `{% let variable = expression %} {{variable}}` to the code pane, where you can declare the variable for your fragment.
-
-    ![](assets/decision-let-function.png)
-
-1. Use the **Map** > **Get** function `{%= get(map, string) %}` to build your expression. The map is the fragment referenced in the decision item and the string can be the device model you entered in the decision item as the **[!UICONTROL Fragment reference key]**.
-
-    ![](assets/decision-map-function.png)
-
-1. You can also use a contextual attribute which would contain this device model ID.
-
-    ![](assets/decision-contextual-attribute.png)
-
-1. Add the variable that you chose for your fragment as the fragment ID.
-
-    ![](assets/decision-fragment-id.png)
-
->[!ENDTABS]
-
-The fragment ID and reference key will be selected from the decision item's **[!UICONTROL Fragments]** section.
-
->[!WARNING]
->
->If the fragment key is incorrect or if the fragment content is not valid, rendering will fail causing error in the Edge call.
-
-### Guardrails when using fragments {#fragments-guardrails}
-
-**Decision item and context attributes**
-
-Decision item attributes and contextual attributes are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
-
-Let's say you want to use the *sport* variable in your fragment.
-
-1. Reference this variable in the fragment, for example:
-
-    ```
-    Elevate your practice with new {{sport}} gear!
-    ```
-
-1. Define the variable with the **Let** function within the decision policy block. In the example below, *sport* is defined with the decision item attribute:
-
-    ```
-    {#each decisionPolicy.13e1d23d-b8a7-4f71-a32e-d833c51361e0.items as |item|}}
-    {% let sport = item._cjmstage.value %}
-    {{fragment id = get(item._experience.decisioning.offeritem.contentReferencesMap, "placement1").id }}
-    {{/each}}
-    ```
-
-**Decision item fragment content validation**
-
-* Due to the dynamic nature of these fragments, when used in a campaign, the message validation during the campaign content creation is skipped for fragments that are referenced in decision items.
-
-* The validation of the fragment content happens only during the fragment creation and publication.
-
-* In case of JSON fragments, the validity of the JSON object is not ensured. Make sure that the expression fragment content is a valid JSON so that it can be used in decision items.
-
-At runtime, the campaign content (including fragment content from decision items) is validated. In case of a validation failure, the campaign will not get rendered.
-
-## Next steps {#final-steps}
-
-Once that your content is ready, review and publish your campaign or journey:
-
-* [Publish a journey](../building-journeys/publish-journey.md)
-* [Review activate a campaign](../campaigns/review-activate-campaign.md)
-* [Publish and activate a code-based experience](../code-based/publish-code-based.md)
-
-For code-based experiences, as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.
+   ![](assets/decision-code-based-add-decision.png)
 
 >[!NOTE]
 >
->Currently you cannot simulate content from the user interface in a [code-based experience](../code-based/create-code-based.md) campaign or journey using decisions. A workaround is available in [this section](../code-based/code-based-decisioning-implementations.md).
+>For code-based experiences, if your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn how to leverage fragments](fragments-decision-policies.md)
 
-To see how your decisions are performing, you can create custom [Customer Journey Analytics reporting dashboards](cja-reporting.md).
+>[!TAB Email]
 
+1. Open the **Personalization Editor** and navigate to **[!UICONTROL Decision policies]**.
+
+2. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
+
+   ![](assets/decision-policy-add.png)
+
+   >[!NOTE]
+   >
+   >If the insertion option doesn't appear, a decision policy might already be configured for the parent component.
+
+3. If no placement has been assigned yet to the component, select one from the list and click **[!UICONTROL Assign]**.
+
+   ![](assets/decision-policy-placement.png)
+
+   >[!NOTE]
+   >
+   >If you use multiple decision policies in the same email (for example, one for the header and one for the footer), the same offer is deduplicated across placements: it is not rendered twice. The second decision policy will not return any content and will display a blank space, unless you have configured a fallback offer, in which case the fallback will be displayed instead.
+
+>[!TAB SMS]
+
+1. Open the **Personalization Editor** and navigate to **[!UICONTROL Decision policies]**.
+
+2. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
+
+   ![](assets/decision-policy-add-sms-insert-syntax.png)
+
+>[!TAB Push]
+
+1. Open the **Personalization Editor** and navigate to **[!UICONTROL Decision policies]**.
+
+2. Select **[!UICONTROL Insert syntax]** to add the code for your decision policy.
+
+   ![](assets/decision-policy-add-push-insert-syntax.png)
+
+>[!IMPORTANT]
+>
+>Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes/){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions/){target="_blank"}.
+
+>[!ENDTABS]
+
+The decision policy code is added. You can now use attributes from the returned decision items to personalize your content.
+
+>[!NOTE]
+>
+>For code-based experience and email channels, repeat this sequence once per decision item you want returned. For example, if you chose to return 2 items when [creating the decision](create-decision-policy.md), repeat the sequence twice. For SMS and Push channels, only one decision item can be returned.
+
+## Personalize with decision item attributes {#attributes}
+
+After you've added the code for a decision policy in your content, all attributes from the returned decision items become available for personalization. [Learn how to work with personalization](../personalization/personalize.md).
+
+Attributes are stored in the "Offers" [catalog schema](catalogs.md). They display in the following folders from the personalization editor:
+* **Custom attributes**: `_\<imsOrg\>` folder 
+* **Standard attributes**: `_experience` folder
+
+Decision item attributes and contextual attributes are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
+
+![](assets/decision-code-based-decision-attributes.png)
+
+To add an attribute, click the **`+`** icon next to the attribute. You can add as many attributes as needed. You can also include other personalization attributes, such as profile data.
+
+* For **Email** and **Code-based** channels, wrap the attributes within the `#each` loop using square brackets `[ ]`, and add a comma before the closing `/each` tag.
+
+   +++See example
+
+   ![](assets/decision-code-based-wrap-code.png)
+
+   +++
+
+* For **SMS** and **Push** channels, make sure you insert attributes after the syntax code for the decision policy. This syntax should always be kept at line 1.
+
+   +++See example
+
+   ![](assets/decision-added-sms.png)
+
+   +++
+
+   >[!NOTE]
+   >If you insert an image asset attribute in SMS or Push content (for example, in the title or body), the attribute value displays as a URL. The image itself is not rendered in those fields.
+
+* To enable decision item tracking, add the `trackingToken` attribute: `trackingToken: {{item._experience.decisioning.decisionitem.trackingToken}}`
+
+## Preview & test your content
+
+After building your content, preview and test it before activating your journey or campaign. Decision items render based on selected profiles in the simulation interface. [Learn how to preview and test content](../content-management/preview-test.md).
+
+## Next steps {#final-steps}
+
+Once your content is ready, review and publish your campaign or journey:
+
+* [Publish a journey](../building-journeys/publish-journey.md)
+* [Review and activate a campaign](../campaigns/review-activate-campaign.md)
+
+For code-based experiences, as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.
+
+## Use reporting dashboards
+
+To see how your decisions are performing, you can view out-of-the-box decisioning metrics in the campaign or journey report, or build custom Customer Journey Analytics dashboards to measure performance and gain insights into how your decision policies and offers are delivered and engaged with. [Learn more about Decisioning reporting](cja-reporting.md).
+
+![](../reports/assets/cja-decisioning-item-performance.png)

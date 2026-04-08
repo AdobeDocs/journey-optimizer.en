@@ -18,6 +18,13 @@ When using the Sinch provider with Journey Optimizer, you can find three distinc
 
 * **RCS Configuration**: Set up your Sinch API credentials to send RCS messages seamlessly.
 
+To configure your Sinch provider, follow the steps below:
+
+1. [Create API Credential](#create-api)
+1. [Create Webhook](sms-webhook.md)
+1. [Create Channel configuration](sms-configuration-surface.md)
+1. [Create Journey or Campaign with SMS channel action](create-sms.md)
+
 ## Configure API credentials for SMS{#create-api}
 
 >[!BEGINSHADEBOX]
@@ -45,14 +52,14 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
     |SMS vendor|Sinch|
     |Name|Choose a name for your API Credential.|
     |Service ID and API Token|Access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.|
-    |Opt-In Keywords|Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
-    |Opt-In Message| Enter the custom response that is automatically sent as your Opt-In Message.|
-    |Opt-Out Keywords| Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
-    |Opt-Out Message|Enter the custom response that is automatically sent as your Opt-Out Message.|
-    |Help Keywords| Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
-    |Help Message|Enter the custom response that is automatically sent as your **Help Message**.|
-    |Double Opt-In Keywords|Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more about the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
-    |Double Opt-In Message|Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
+    |Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
+    |Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the custom response that is automatically sent as your Opt-In Message.|
+    |Opt-Out Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
+    |Opt-Out Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your Opt-Out Message.|
+    |Help Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
+    |Help Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your **Help Message**.|
+    |Double Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more about the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
+    |Double Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
     |Inbound Number|Add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.|
     |Custom Inbound Keywords|Define unique, non consent related keywords for batch-based actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a batched segment qualification within the journey and deliver a customized response or action.|
     |Default Inbound Reply Message|Enter the default reply that is sent when an end user sends an inbound SMS that does not match any of the defined keywords.|
@@ -80,7 +87,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
     ![](assets/verify-connection.png)
 
-After creating and configuring your API credential, you now need to create a channel configuration for SMS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create [your Webhook](sms-webhook.md) and a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)
 
 ## Configure API credentials for MMS{#sinch-mms}
 
@@ -109,8 +116,7 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
 
 1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
-After creating and configuring your API credential, you now need to create a channel configuration for MMS messages. [Learn more](sms-configuration-surface.md)
-
+After creating and configuring your API credential, you now need to create [your Webhook](sms-webhook.md) and a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)
 
 ## Configure API credential for RCS
 

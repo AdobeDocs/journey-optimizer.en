@@ -1,6 +1,6 @@
 ---
 title: Create & manage approval policies
-description: Learn how create and manage approval policies.
+description: Learn how to create and manage approval policies.
 role: User
 level: Beginner
 feature: Approval
@@ -52,7 +52,7 @@ To create an approval policy, follow these steps:
 
 1. Enable the **[!UICONTROL Block self-approval]** to prevent Journey/Campaign creators from approving their own objects.
 
-    ![](assets/policy_create_2.png)
+    ![Approval policy details form](assets/policy_create_2.png)
 
 You can now refine the conditions to specify who can initiate the approval request and who can validate it.
 
@@ -66,7 +66,7 @@ Approval policies offer flexible targeting options to match your governance need
 * **Campaign types**: Set different rules for [Action vs. API-triggered campaigns](../campaigns/get-started-with-campaigns.md#campaign-types)
 * **Requestors**: Define policies based on who creates the campaign or journey
 
-To define the conditions associated to an approval policy, follow these steps:
+To define the conditions associated with an approval policy, follow these steps:
 
 1. Access your **[!UICONTROL Approval policy]**.
 

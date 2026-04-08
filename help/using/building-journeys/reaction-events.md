@@ -16,11 +16,11 @@ version: Journey Orchestration
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_reaction"
 >title="Reaction events"
->abstract="This activity allows you to react to tracking data related to a message sent within the same journey. We capture this information in real-time at the moment it is shared with Adobe Experience Platform."
+>abstract="This activity allows you to react to tracking data related to a message sent within the same journey. We capture this information in real-time at the moment it is shared with [!DNL Adobe Experience Platform]."
 
 ## Overview {#overview}
 
-Among the different event activities available in the palette, you will find the built-in **[!UICONTROL Reactions]** event. This activity allows you to react to tracking data related to a message sent within the same journey. We capture this information in real-time at the moment it is shared with Adobe Experience Platform. 
+Among the different event activities available in the palette, you will find the built-in **[!UICONTROL Reactions]** event. This activity allows you to react to tracking data related to a message sent within the same journey. We capture this information in real-time at the moment it is shared with [!DNL Adobe Experience Platform]. 
 
 You can react to clicked or opened messages. For example, you can send another message if an individual opened the previous email or clicked inside it, or send a different follow-up message if they did not engage with your communication.
 
@@ -34,7 +34,7 @@ You can use the **[!UICONTROL Reaction]** activity to perform an action when the
 
 Follow these steps to configure the reaction events:
 
-1. Place a **[!UICONTROL Reaction]** activity **immediately** after a [channel action activity](journeys-message.md) on the journey canvas.
+1. Place a **[!UICONTROL Reaction]** activity **immediately** after a [channel action activity](journey-action.md) on the journey canvas.
 1. Add a **[!UICONTROL Label]** to the reaction. This step is optional.
 1. From the drop-down list, select the action activity you want to react to. You can select any action activity positioned in the previous steps of the path.
 1. Depending on the action you selected, choose what you want to react to. 
@@ -42,7 +42,7 @@ Follow these steps to configure the reaction events:
 
 ## Guardrails and limitations {#guardrails-limitations}
 
-* A **[!UICONTROL Reaction]** activity must be placed **immediately** after a [channel action activity](journeys-message.md) in the journey canvas. 
+* A **[!UICONTROL Reaction]** activity must be placed **immediately** after a [channel action activity](journey-action.md) in the journey canvas. 
 * You cannot use a **[!UICONTROL Reaction]** activity if there is no channel action activity before it.
 * Placing a **[!UICONTROL Wait]** activity or any other activity between the channel action and the **[!UICONTROL Reaction]** activity is not supported and may result in the Reaction not working as expected.
 * Reaction events can only track messages sent within the same journey. They cannot track messages that take place in a different journey.

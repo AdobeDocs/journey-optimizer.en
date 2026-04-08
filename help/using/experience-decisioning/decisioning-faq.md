@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Intermediate
 version: Journey Orchestration
-
+exl-id: 7bb72527-d4e1-49f8-b2c3-c943d65903f2
 ---
 # Decisioning Frequently Asked Questions {#decisioning-faq}
 

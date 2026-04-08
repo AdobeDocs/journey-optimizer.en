@@ -16,13 +16,13 @@ solution: Journey Optimizer
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
+    + [2026](using/rn/release-notes-2026.md)
     + [2025](using/rn/release-notes-2025.md)
     + [2024](using/rn/release-notes-2024.md)
     + [2023](using/rn/release-notes-2023.md)
     + [2022](using/rn/release-notes-2022.md)
     + [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
-  + [Monthly updates report](../monthly-updates-report.md)
   + [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
   + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
@@ -52,6 +52,7 @@ solution: Journey Optimizer
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
+    + [Send using waves in journeys](using/building-journeys/send-using-waves.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
@@ -77,15 +78,16 @@ solution: Journey Optimizer
     + [General events](using/building-journeys/general-events.md)
     + [Reaction events](using/building-journeys/reaction-events.md)
     + [Audience qualification](using/building-journeys/audience-qualification-events.md)
-    + [Optimize](using/building-journeys/optimize.md)
-    + [Conditions](using/building-journeys/conditions.md)
-    + [Condition](using/building-journeys/condition-activity.md)
+    + Optimize {#optimize-activity}
+      + [Get started with the Optimize activity](using/building-journeys/optimize.md)
+      + [Path experimentation](using/building-journeys/path-experimentation.md)
+      + [Path targeting](using/building-journeys/path-targeting.md)
+      + [Conditions](using/building-journeys/conditions.md)
     + [Read audience](using/building-journeys/read-audience.md)
     + [Wait](using/building-journeys/wait-activity.md)
     + [Content decision](using/building-journeys/content-decision.md)
     + [Dataset lookup](using/building-journeys/dataset-lookup.md)
     + [Action](using/building-journeys/journey-action.md)
-    + [Built-in channel actions](using/building-journeys/journeys-message.md)
     + [Jump](using/building-journeys/jump.md)
     + [Update profile](using/building-journeys/update-profiles.md)
     + [Custom actions](using/building-journeys/using-custom-actions.md)
@@ -126,11 +128,15 @@ solution: Journey Optimizer
     + [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
++ Loyalty challenges {#loyalty-challenges}
+  + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
+  + [Create challenges](using/loyalty-challenges/create-challenges.md)
+  + [Create tasks](using/loyalty-challenges/create-tasks.md)
 + Campaigns {#campaigns}
   + [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
   + [Access & manage campaigns](using/campaigns/manage-campaigns.md)
-  + [Quiet Hours](using/campaigns/quiet-hours.md)
   + Action campaigns {#action-campaigns}
     + [Action campaigns](/help/rp_landing_pages/action-campaigns-landing-page.md)
     + [Work with Action campaigns](using/campaigns/create-campaign.md)
@@ -139,10 +145,11 @@ solution: Journey Optimizer
     + [Edit the campaign content](using/campaigns/campaign-content.md)
     + [Define the campaign audience](using/campaigns/campaign-audience.md)
     + [Schedule the campaign](using/campaigns/campaign-schedule.md)
+    + [Send using waves](using/campaigns/send-using-waves.md)
     + [Review & activate an Action campaign](using/campaigns/review-activate-campaign.md)
-  + API triggered campaigns {#api-triggered-campaigns}
-    + [API triggered campaigns](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
-    + [Work with API triggered campaigns](using/campaigns/api-triggered-campaigns.md)
+  + API-triggered campaigns {#api-triggered-campaigns}
+    + [API-triggered campaigns](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
+    + [Work with API-triggered campaigns](using/campaigns/api-triggered-campaigns.md)
     + [Define the campaign properties](using/campaigns/api-triggered-campaign-properties.md)
     + [Configure the campaign action](using/campaigns/api-triggered-campaign-action.md)
     + [Edit the campaign content](using/campaigns/api-triggered-campaign-content.md)
@@ -150,7 +157,7 @@ solution: Journey Optimizer
     + [Schedule the campaign](using/campaigns/api-triggered-campaign-schedule.md)
     + [Review & activate the campaign](using/campaigns/review-activate-api-triggered-campaign.md)
     + [Trigger the campaign execution](using/campaigns/trigger-campaigns.md)
-    + [Activate High throughput mode for API triggered campaigns](using/campaigns/api-triggered-high-throughput.md)
+    + [Activate High throughput mode for API-triggered campaigns](using/campaigns/api-triggered-high-throughput.md)
   + Orchestrated campaigns {#orchestrated-campaigns}
     + [Orchestrated campaigns](/help/rp_landing_pages/orchestrated-campaigns-landing-page.md)
     + [Get started with Orchestrated campaigns](using/orchestrated/gs-orchestrated-campaigns.md)
@@ -201,9 +208,10 @@ solution: Journey Optimizer
       + [Send wishlist item updates](using/orchestrated/wishlist-uc.md)
       + [Engage customers by browsing activity](using/orchestrated/engage-customers-uc.md)
       + [Notify users about product availability](using/orchestrated/product-availability-uc.md)
+    + Advanced operations {#orchestrated-advanced}
+      + [Trigger Orchestrated campaigns using a signal](using/orchestrated/trigger-orchestrated-campaign.md)
 + Conflict & prioritization {#conflict-prioritization}
-  + [Conflict management & prioritization](/help/rp_landing_pages/conflict-prioritization-landing-page.md)
-  + [Get started with conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
+  + [Conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
   + [Identify potential conflicts](using/conflict-prioritization/conflicts.md)
   + [Assign priority scores](using/conflict-prioritization/priority-scores.md)
   + Set message & journey capping rules {#capping-rules}
@@ -212,6 +220,9 @@ solution: Journey Optimizer
     + [Manage journey capping & arbitration](using/conflict-prioritization/journey-capping.md)
     + [Set frequency capping by channel and type](using/conflict-prioritization/channel-capping.md)
     + [Set quiet hours](using/conflict-prioritization/quiet-hours.md)
+  + Journey arbitration {#journey-arbitration}
+    + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
+    + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
 + Test & approve {#test}
   + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
@@ -224,6 +235,7 @@ solution: Journey Optimizer
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
     + [Auto-generation of content variants](using/test-approve/simulate-sample-input-generated.md)
     + [Email Spam report](using/content-management/spam-report.md)
+    + [LLM email optimizer](using/content-management/llm-email-optimizer.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
     + [Get started with approvals](using/test-approve/gs-approval.md)
@@ -263,7 +275,6 @@ solution: Journey Optimizer
         + [Import your content](using/email/existing-content.md)
         + [Code your own content](using/email/code-content.md)
         + [Use email templates](using/email/use-email-templates.md)
-        + [Convert images to HTML templates](using/email/image-to-html.md)
         + [Leverage email themes](using/email/apply-email-themes.md)
         + [Attach PDF files to your emails](using/email/pdf-attachments.md)
       + Design your content {#add-content}
@@ -272,7 +283,7 @@ solution: Journey Optimizer
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
-        + [Generate text version](using/email/text-version-email.md)
+        + [Manage the text version](using/email/text-version-email.md)
         + [Add metadata](using/email/email-metadata.md)
       + Edit style {#edit-style}
         + [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)
@@ -321,12 +332,12 @@ solution: Journey Optimizer
     + [Set up SMS subdomains](using/sms/sms-subdomains.md)
     + [Best practices for SMS cost optimization](using/sms/sms-cost-optimization.md)
     + Configure SMS / MMS / RCS channel {#configure-sms}
-      + [Configure SMS / MMS / RCS channel](/help/rp_landing_pages/configure-sms-landing-page.md)
       + [Get started with SMS / MMS / RCS configuration](using/sms/sms-configuration.md)
       + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
       + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
       + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
       + [Configure a custom provider](using/sms/sms-configuration-custom.md)
+      + [Create Webhook](using/sms/sms-webhook.md)
       + [Create a SMS / MMS / RCS configuration](using/sms/sms-configuration-surface.md)
   + Direct mail {#direct-mail}
     + [Direct mail](/help/rp_landing_pages/direct-mail-landing-page.md)
@@ -334,7 +345,6 @@ solution: Journey Optimizer
     + [Create a direct mail](using/direct-mail/create-direct-mail.md)
     + [Check & send a direct mail message](using/direct-mail/test-send-direct-mail.md)
     + [Configure direct mail](using/direct-mail/direct-mail-configuration.md)
-    + [Send direct mail messages with journeys](using/direct-mail/direct-mail-journeys.md)
   + Web channel {#web}
     + [Web channel](/help/rp_landing_pages/web-landing-page.md)
     + [Get started with web channel](using/web/get-started-web.md)
@@ -377,6 +387,11 @@ solution: Journey Optimizer
       + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
     + [Create content cards](using/content-card/create-content-card.md)
     + [Design content cards](using/content-card/design-content-card.md)
+  + Inbox {#inbox}
+    + [Get started with Inbox](using/inbox/inbox-gs.md)
+    + [Configure Inbox channel in Journey Optimizer](using/inbox/inbox-configuration.md)
+    + [Create your Inbox](using/inbox/inbox-create.md)
+    + [Design your Inbox](using/inbox/inbox-design.md)
   + WhatsApp {#whatsapp}
     + [WhatsApp](/help/rp_landing_pages/whatsapp-landing-page.md)
     + [Get started with WhatsApp messages](using/whatsapp/get-started-whatsapp.md)
@@ -389,13 +404,14 @@ solution: Journey Optimizer
     + [Configure LINE channel in Journey Optimizer](using/line/line-configuration.md)
     + [Create a LINE message](using/line/create-line.md)
     + [Check and send your LINE messages](using/line/send-line.md)
-  + Live activity {#live-activity}
-    + [Get started with Live activity](using/mobile-live/get-started-mobile-live.md)
+  + Live activities {#live-activity}
+    + [Get started with Live activities](using/mobile-live/get-started-mobile-live.md)
     + [Create a Live activity](using/mobile-live/create-mobile-live.md)
+    + [Troubleshoot Live activities](using/mobile-live/troubleshoot-mobile-live.md)
     + [FAQ](using/mobile-live/mobile-live-faq.md)
-    + Configure content card channel {#configure}
+    + Configure Live activity channel {#configure}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
-      + [Configure Live Activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
+      + [Configure Live activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
@@ -405,7 +421,9 @@ solution: Journey Optimizer
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Iterate over contextual data](using/personalization/iterate-contextual-data.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md)
-    + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
+    + Use Adobe Experience Platform data for personalization {#aep-data-perso}
+      + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
+      + [Encrypt URL parameters in tracking links](using/personalization/url-parameter-encryption.md)
     + Helper functions list {#functions}
       + [Helper functions list](/help/rp_landing_pages/functions-landing-page.md)
       + [Get started with helper functions](using/personalization/functions/functions.md)
@@ -426,7 +444,6 @@ solution: Journey Optimizer
       + [Cart abandonment email](using/personalization/personalization-use-case-helper-functions.md)
       + [Health plan prescriptions email](using/personalization/perso-uc-plan-prescriptions.md)
   + Landing pages {#landing-pages}
-    + [Landing pages](/help/rp_landing_pages/landing-pages-landing-page.md)
     + [Get started with landing pages](using/landing-pages/get-started-lp.md)
     + [Create a landing page](using/landing-pages/create-lp.md)
     + [Manage your landing pages](using/landing-pages/manage-lp.md)
@@ -448,7 +465,9 @@ solution: Journey Optimizer
     + [Get started with content templates](using/content-management/content-templates.md)
     + [Access & manage templates](using/content-management/access-content-templates.md)
     + [Create content templates](using/content-management/create-content-templates.md)
+    + [Convert images to email templates](using/content-management/image-to-html.md)
     + [Lock content in email templates](using/content-management/content-locking.md)
+    + [Edit email templates in expert mode](using/content-management/email-template-expert-mode.md)
     + [Test content templates](using/content-management/test-content-templates.md)
     + [Use content templates](using/content-management/use-content-templates.md)
   + Reusable content fragments {#fragments}
@@ -471,7 +490,12 @@ solution: Journey Optimizer
     + [Work with Adobe Stock](using/integrations/stock.md)
     + [Work with Adobe Express](using/integrations/express.md)
     + [Work with Experience Manager templates](using/integrations/aem-templates.md)
-    + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+    + Experience Manager Content Fragments {#aem}
+      + [Get started with Experience Manager Content Fragments](using/integrations/aem-fragments-gs.md)
+      + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+      + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
+    + [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
+    + [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
     + [Work with Integrations](using/integrations/external-sources.md)
@@ -488,7 +512,8 @@ solution: Journey Optimizer
       + [Brands](/help/rp_landing_pages/brands-landing-page.md)
       + [Create & manage your Brands](using/content-management/brands.md)
       + [Personalize your Brands](using/content-management/brands-personalize.md)
-      + [Evaluate your Brand alignment score](using/content-management/brands-score.md)
+      + [Create & manage generative models](using/content-management/generative-models.md)
+      + [Evaluate your content](using/content-management/brands-score.md)
   + Multilingual content {#content-multilingual}
     + [Multilingual content](/help/rp_landing_pages/content-multilingual-landing-page.md)
     + [Get started with multilingual content](using/content-management/multilingual-gs.md)
@@ -598,7 +623,9 @@ solution: Journey Optimizer
     + [Get started with Decisioning](using/experience-decisioning/gs-experience-decisioning.md)
     + [Decisioning guardrails & limitations](using/experience-decisioning/decisioning-guardrails.md)
     + [Decisioning FAQ](using/experience-decisioning/decisioning-faq.md)
-    + [Migrate from Decision management to Decisioning](using/experience-decisioning/migrate-to-decisioning.md)
+    + Migrate to Decisioning {#migrate-to-decisioning}
+      + [Benefits of migrating to Decisioning](using/experience-decisioning/migrate-to-decisioning.md)
+      + [Decisioning Migration API](using/experience-decisioning/decisioning-migration-api.md)
     + API reference {#experience-decisioning-api-reference}
       + [API reference](/help/rp_landing_pages/experience-decisioning-api-reference-landing-page.md)
       + [Get started with Decisioning APIs](using/experience-decisioning/api-reference/getting-started.md)
@@ -653,6 +680,7 @@ solution: Journey Optimizer
         + [Auto-optimization model](using/experience-decisioning/ranking/auto-optimization-model.md)
         + [Personalized optimization model](using/experience-decisioning/ranking/personalized-optimization-model.md)
         + [Create AI models](using/experience-decisioning/ranking/create-ai-models.md)
+        + [Monitor your AI models' performance](using/experience-decisioning/ranking/ai-model-observability.md)
     + [Work with placements](using/experience-decisioning/placements.md)
     + Use Adobe Experience Platform data {#aep-data}
       + [Use Adobe Experience Platform data](/help/rp_landing_pages/aep-data-landing-page.md)
@@ -663,6 +691,7 @@ solution: Journey Optimizer
       + [Get started with decision policies](using/experience-decisioning/create-decision.md)
       + [Create decision policies](using/experience-decisioning/create-decision-policy.md)
       + [Use decision policies in messages](using/experience-decisioning/use-decision-policy.md)
+      + [Leverage fragments in decision policies](using/experience-decisioning/fragments-decision-policies.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
     + [Decisioning use case](using/experience-decisioning/experience-decisioning-uc.md)
     + Collect event data {#experience-decisioning-collect-event-data}
@@ -700,6 +729,7 @@ solution: Journey Optimizer
         + [Configure offers](/help/rp_landing_pages/configure-offers-landing-page.md)
         + [Create personalized offers](using/offers/offer-library/creating-personalized-offers.md)
         + [Add representations](using/offers/offer-library/add-representations.md)
+        + [Supported functions in the personalization editor](using/offers/offer-library/personalization-editor-supported-functions.md)
         + [Add constraints](using/offers/offer-library/add-constraints.md)
       + [Create fallback offers](using/offers/offer-library/creating-fallback-offers.md)
       + [Create collections](using/offers/offer-library/creating-collections.md)
@@ -846,7 +876,6 @@ solution: Journey Optimizer
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + [Export message content](using/configuration/message-export.md)
   + Guided channel setup {#guided-setup}
-    + [Guided channel setup](/help/rp_landing_pages/guided-setup-landing-page.md)
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
     + [Create a channel set up](using/configuration/create-channel-set-up.md)
   + Delegate email subdomains {#delegate-subdomains}
@@ -854,14 +883,14 @@ solution: Journey Optimizer
     + [Get started with subdomain delegation](using/configuration/about-subdomain-delegation.md)
     + [Delegate a subdomain](using/configuration/delegate-subdomain.md)
     + [Set up a custom subdomain](using/configuration/delegate-custom-subdomain.md)
+    + [Migrate from CNAME to custom delegation](using/configuration/custom-subdomain-migration.md)
     + [Set up DMARC record](using/configuration/dmarc-record.md)
     + [Add a Google TXT record](using/configuration/google-txt.md)
     + [Access & edit PTR records](using/configuration/ptr-records.md)
     + [Create IP pools](using/configuration/ip-pools.md)
   + Implement an IP warmup plan {#implement-ip-warmup-plan}
-    + [Implement an IP warmup plan](/help/rp_landing_pages/implement-ip-warmup-plan-landing-page.md)
-    + [IP warmup deliverability guide](using/configuration/ip-warmup-deliverability-guide.md)
     + [Get started with IP warmup plans](using/configuration/ip-warmup-gs.md)
+    + [IP warmup deliverability guide](using/configuration/ip-warmup-deliverability-guide.md)
     + [Create IP warmup campaigns](using/configuration/ip-warmup-campaign.md)
     + [Create an an IP warmup plan](using/configuration/ip-warmup-plan.md)
     + [Run the IP warmup plan](using/configuration/ip-warmup-execution.md)
@@ -873,7 +902,8 @@ solution: Journey Optimizer
     + [Retries](using/configuration/retries.md)
     + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
-  + [Support for archiving](using/configuration/archiving-support.md)
+  + [Support for email archiving](using/configuration/archiving-support.md)
+  + [Add a CC field to emails](using/configuration/cc-email-field.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
 + Journey configuration {#configure-journeys}
@@ -914,7 +944,6 @@ solution: Journey Optimizer
     + [Campaign v7/v8 action in journeys](using/action/acc-action.md)
     + [Marketo Engage action in journeys](using/action/marketo-engage.md)
   + Sandboxes management {#sandbox}
-    + [Sandboxes management](/help/rp_landing_pages/sandbox-landing-page.md)
     + [Use and assign sandboxes](using/administration/sandboxes.md)
     + [Export objects to another sandbox](using/configuration/copy-objects-to-sandbox.md)
   + [Configure the Sources connector](using/start/get-started-sources.md)

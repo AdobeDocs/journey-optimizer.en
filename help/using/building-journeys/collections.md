@@ -136,7 +136,7 @@ While collections in custom actions provide flexibility for passing dynamic data
 
 * **Support for Nested Arrays in Custom Actions**
 
-   Adobe Journey Optimizer supports nested arrays of objects in custom action **response payloads**, but this support is limited in **request payloads**.
+   [!DNL Adobe Journey Optimizer] supports nested arrays of objects in custom action **response payloads**, but this support is limited in **request payloads**.
 
    In request payloads, nested arrays are only supported when they contain a fixed number of items, as defined in the custom action configuration. For example, if a nested array always includes exactly three items, it can be configured as a constant. When the number of items needs to be dynamic, only non-nested arrays (arrays at the bottom level) can be defined as variables.
 

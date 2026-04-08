@@ -13,7 +13,7 @@ version: Journey Orchestration
 
 ## Decisioning reporting {#campaigns}
 
-Once code-based experiences or emails with selection strategies are live, you can access dedicated reports to monitor Decisioning Key Performance Indicators (KPIs).
+Once journeys or campaigns with selection strategies are live, you can access dedicated reports to monitor Decisioning Key Performance Indicators (KPIs).
 
 <!--Once code-based experiences are live, you can access dedicated reports to monitor Key Performance Indicators (KPIs) as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your campaign.
 

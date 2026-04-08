@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: User Interface
-description: Learn how to navigate the Adobe Journey Optimizer interface
+title: Navigate the interface
+description: Learn how to navigate the Adobe Journey Optimizer interface and access key features including the top bar, home page, and left navigation.
 feature: Overview, Get Started
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
 ---
-# Navigate the Interface {#user-interface}
+# Navigate the interface {#user-interface}
 
 To access Adobe Journey Optimizer, sign in to [Adobe Experience Cloud](https://experience.adobe.com) with your Adobe ID, then select [!DNL Journey Optimizer].
 
@@ -18,90 +18,52 @@ To access Adobe Journey Optimizer, sign in to [Adobe Experience Cloud](https://e
 >* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
 >* This documentation is updated frequently. Some screenshots may differ slightly from your interface.
 
-## Quick Tour {#quick-tour}
+## Quick tour {#quick-tour}
 
 The Journey Optimizer interface consists of four main areas:
 
-![](assets/ajo-home.png)
+![Journey Optimizer home page showing left navigation, top bar, main workspace, and home page areas](assets/ajo-home.png)
 
 1. **Left navigation** - Access all capabilities and features organized by function
 2. **Top bar** - Universal search, help, notifications, and settings
 3. **Home page** - Quick access to recent items and helpful resources
 4. **Main workspace** - Where you create and manage your content
 
-## Left Navigation {#left-nav}
+**Tip:** New users can start from the **Home** page to access recent items and use cases, or use the **Help** icon in the top bar for contextual guidance.
 
-The left navigation organizes Journey Optimizer capabilities into functional categories. Available menu items depend on your permissions and license.
+## Top bar features {#top-bar}
 
-### Main Sections {#main-sections}
+### Universal search {#search}
 
-**Home** - Your starting point with quick access to recently created items and helpful resources
+Use the search icon to quickly find journeys, campaigns, assets, and other objects across Journey Optimizer. Type keywords to see relevant results from all areas of the platform. [Learn more about universal search](search-filter-categorize.md#unified-search).
 
-**Journey Management** - Create and manage customer experiences
-* **Campaigns** - Create one-time or scheduled messages to specific audiences. [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
-* **Journeys** - Build multi-step, cross-channel customer experiences. [Create your first journey](../building-journeys/journey-gs.md)
-* **Reports** - Analyze performance with integrated Customer Journey Analytics reporting. [View reporting documentation](../reports/campaign-global-report-cja.md)
-
-**Decision Management** - Manage personalized offers. [Learn about decision management](../offers/get-started/starting-offer-decisioning.md)
-* **Offers** - Create and manage personalized offers
-* **Components** - Set up placements, rules, and tags for offers
-
-**Content Management** - Create and organize content
-* **Assets** - Centralized repository for images and media. [Manage assets](../integrations/assets.md)
-* **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
-* **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
-* **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
-* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ai-features.md#playbooks)
-
-**Data Management** - Manage your data foundation. [Learn about schemas and datasets](../data/get-started-schemas.md)
-* **Schemas** - Define data structure
-* **Datasets** - Store and manage data collections
-* **Queries** - Write and execute queries
-* **Monitoring** - Track data ingestion
-
-**Connections** - Integrate with other systems
-* **Sources** - Ingest data from external systems. [Configure sources](get-started-sources.md)
-* **Destinations** - Export data to cloud storage. [Set up destinations](../data/export-datasets.md)
-
-**Customer** - Manage audiences and profiles
-* **Audiences** - Create and manage customer segments. [Work with audiences](../audience/about-audiences.md)
-* **Subscription lists** - Manage opt-in lists. [Manage subscriptions](../landing-pages/subscription-list.md)
-* **Profiles** - View unified customer profiles. [Explore profiles](../audience/get-started-profiles.md)
-* **Identities** - Manage identity resolution. [Learn about identities](../audience/get-started-identity.md)
-
-**Privacy** - Control privacy and compliance. [Privacy overview](../privacy/get-started-privacy.md)
-* **Policies** - Define data governance policies
-* **Requests** - Handle privacy requests (GDPR, CCPA)
-* **Audit** - Review activity logs. [View audit logs](../privacy/audit-logs.md)
-* **Data Lifecycle** - Configure data retention
-
-**Administration** - Configure system settings. [Access control overview](../administration/permissions-overview.md)
-* **Configurations** - Set up events, data sources, and actions. [Configure channels](../configuration/get-started-configuration.md)
-* **Business rules** - Control message frequency and journey entry. [Set up business rules](../conflict-prioritization/rule-sets.md)
-* **Alerts** - View and manage system alerts. [Monitor alerts](../reports/alerts.md)
-* **Sandboxes** - Manage environments and copy objects between sandboxes. [Work with sandboxes](../administration/sandboxes.md)
-* **Channels** - Configure channel settings and deliverability. [Set up channel configurations](../configuration/channel-surfaces.md) | [Get started with configuration](../configuration/get-started-configuration.md)
-* **Tags** - Organize and categorize content. [Work with unified tags](search-filter-categorize.md#tags)
-
-## Top Bar Features {#top-bar}
-
-### Universal Search {#search}
-
-Use the search icon to quickly find journeys, campaigns, assets, and other objects across Journey Optimizer. Type keywords to see relevant results from all areas of the platform.
-
-### Help & Support {#help}
+### Help & support {#help}
 
 Click the **Help** icon to:
+
 * Search help articles and videos
 * Access contextual help for the current page
 * Contact Adobe support
 * Share feedback
 
+Contextual help displays guidance relevant to the screen you are viewing and links directly to the corresponding documentation, so you can get the right information without leaving your workflow.
+
 ![Contextual help example](assets/do-not-localize/Context-help.gif)
 
-### Notifications {#notifications}
+#### Support ticket guidelines {#support-ticket-guidelines}
+
+When contacting Adobe support, include the following to help expedite root cause analysis and resolution:
+
+* **Environment details** – Sandbox name, organization ID, and product area (e.g., Journeys, Campaigns, Decisioning)
+* **Impact level** – Severity of the issue (e.g., production blocked, limited functionality, cosmetic)
+* **Replication steps** – Clear, step-by-step instructions to reproduce the issue
+* **Logs or screenshots** – Relevant error messages, request IDs, or screenshots that illustrate the problem
+* **Relevant IDs** – Journey ID, campaign ID, audience ID, or other object identifiers related to the issue
+
+### Notifications {#in-product-uc}
 
 Enable in-product and email notifications to stay informed about:
+
 * **Alerts** - System failures and performance issues
 * **Approvals** - Requests requiring your review
 * **New releases** - Product updates and new features
@@ -114,18 +76,20 @@ To configure notifications:
 
 ![Notification preferences](../rn/assets/do-not-localize/pulse-notif.png){width="60%" align="center"}
 
-### Language Preferences {#language}
+### Language preferences {#language}
 
 The interface is available in English, French, German, Italian, Spanish, Portuguese (Brazilian), Japanese, Korean, Traditional Chinese, and Simplified Chinese.
 
 To change your language:
 
-1. Click **Preferences** in your profile menu
+1. Click **[!UICONTROL Preferences]** in your profile menu
 2. Select your preferred language
 3. Optionally select a second language as fallback
 4. Click **Save**
 
-## Home Page {#home-page}
+Keyboard shortcuts and accessibility features are available. [Learn more](accessibility.md)
+
+## Home page {#home-page}
 
 The home page provides:
 
@@ -133,7 +97,7 @@ The home page provides:
 * **Use cases** - Pre-built scenarios to help you get started quickly (create test profiles, send birthday messages, etc.)
 * **Resources** - Links to documentation, tutorials, and support
 
-### In-Product Use Cases {#use-cases}
+### Use cases and quick-start workflows {#use-cases}
 
 Quick-start workflows help you accomplish common tasks:
 
@@ -144,16 +108,90 @@ Quick-start workflows help you accomplish common tasks:
 
 Click **[!UICONTROL View details]** to learn more about each use case, or **[!UICONTROL Begin]** to start.
 
-## AI Assistant {#ai-assistant}
+## Left navigation {#left-nav}
+
+The left navigation organizes Journey Optimizer capabilities into functional categories. Available menu items depend on your permissions and license.
+
+| Section | Purpose |
+|---------|---------|
+| Journey Management | Campaigns, journeys, reports |
+| Decision Management | Offers and personalization |
+| Content Management | Assets, templates, fragments, landing pages |
+| Data Management | Schemas, datasets, queries |
+| Connections | Sources and destinations |
+| Customer | Audiences, profiles, identities |
+| Privacy | Policies, requests, audit |
+| Administration | Configurations, channels, sandboxes |
+
+### Main sections {#main-sections}
+
+**Home** - Your starting point with quick access to recently created items and helpful resources
+
+**Journey Management** - Create and manage customer experiences
+
+* **Campaigns** - Create one-time or scheduled messages to specific audiences. [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
+* **Journeys** - Build multi-step, cross-channel customer experiences. [Create your first journey](../building-journeys/journey-gs.md)
+* **Reports** - Analyze performance with integrated Customer Journey Analytics reporting. [View reporting documentation](../reports/campaign-global-report-cja.md)
+
+**Decision Management** - Manage personalized offers. [Learn about decision management](../offers/get-started/starting-offer-decisioning.md)
+
+* **Offers** - Create and manage personalized offers
+* **Components** - Set up placements, rules, and tags for offers
+
+**Content Management** - Create and organize content
+
+* **Assets** - Centralized repository for images and media. [Manage assets](../integrations/assets.md)
+* **Content templates** - Reusable message templates for campaigns and journeys. [Create templates](../content-management/content-templates.md)
+* **Fragments** - Content blocks that can be used across multiple messages. [Work with fragments](../content-management/fragments.md)
+* **Landing pages** - Web forms for subscriptions and preferences. [Design landing pages](../landing-pages/get-started-lp.md)
+* **Use Case Playbooks** - Pre-built workflows for common marketing scenarios. [Explore playbooks](ai-features.md#playbooks)
+
+**Data Management** - Manage your data foundation. [Learn about schemas and datasets](../data/get-started-schemas.md)
+
+* **Schemas** - Define data structure
+* **Datasets** - Store and manage data collections
+* **Queries** - Write and execute queries
+* **Monitoring** - Track data ingestion
+
+**Connections** - Integrate with other systems
+
+* **Sources** - Ingest data from external systems. [Configure sources](get-started-sources.md)
+* **Destinations** - Export data to cloud storage. [Set up destinations](../data/export-datasets.md)
+
+**Customer** - Manage audiences and profiles
+
+* **Audiences** - Create and manage customer segments. [Work with audiences](../audience/about-audiences.md)
+* **Subscription lists** - Manage opt-in lists. [Manage subscriptions](../landing-pages/subscription-list.md)
+* **Profiles** - View unified customer profiles. [Explore profiles](../audience/get-started-profiles.md)
+* **Identities** - Manage identity resolution. [Learn about identities](../audience/get-started-identity.md)
+
+**Privacy** - Control privacy and compliance. [Privacy overview](../privacy/get-started-privacy.md)
+
+* **Policies** - Define data governance policies
+* **Requests** - Handle privacy requests (GDPR, CCPA)
+* **Audit** - Review activity logs. [View audit logs](../privacy/audit-logs.md)
+* **Data Lifecycle** - Configure data retention
+
+**Administration** - Configure system settings. [Access control overview](../administration/permissions-overview.md)
+
+* **Configurations** - Set up events, data sources, and actions. [Configure channels](../configuration/get-started-configuration.md)
+* **Business rules** - Control message frequency and journey entry. [Set up business rules](../conflict-prioritization/rule-sets.md)
+* **Alerts** - View and manage system alerts. [Monitor alerts](../reports/alerts.md)
+* **Sandboxes** - Manage environments and copy objects between sandboxes. [Work with sandboxes](../administration/sandboxes.md)
+* **Channels** - Configure channel settings and deliverability. [Set up channel configurations](../configuration/channel-surfaces.md) | [Get started with configuration](../configuration/get-started-configuration.md)
+* **Tags** - Organize and categorize content. [Work with unified tags](search-filter-categorize.md#tags)
+
+## AI assistant {#ai-assistant}
 
 AI Assistant provides instant help and operational insights. Click the AI Assistant icon in the top bar to:
+
 * Get answers about product features
 * Receive operational insights about your journeys
 * Navigate concepts and best practices
 
 [Learn more about AI Assistant](ai-features.md#ai-assistant)
 
-## Related Topics {#related-topics}
+## Related topics {#related-topics}
 
 * [Choose your learning path by role](quick-start.md)
 * [Search, filter, and categorize content](search-filter-categorize.md)
@@ -201,13 +239,13 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_jo_camppaign_ovv_1"
+>id="ajo_oc_jo_campaign_ovv_1"
 >title="Guided UI to create and send a campaign"
->abstract="Set one or multiple actions with a channel, choose an audience, set a content, define a schedule and you are ready to send"
+>abstract="Set one or multiple actions with a channel, choose an audience, set the content, define a schedule and you are ready to send"
 
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_jo_camppaign_ovv_2"
+>id="ajo_oc_jo_campaign_ovv_2"
 >title="Available channels"
 >abstract="Email, SMS, Push notifications, In-app, Web, Code-based experiences"
 
@@ -216,22 +254,22 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_camppaign_ovv_1"
+>id="ajo_oc_api_campaign_ovv_1"
 >title="Transactional API triggered campaigns"
 >abstract="Trigger real-time messages through API calls"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_camppaign_ovv_2"
+>id="ajo_oc_api_campaign_ovv_2"
 >title="Marketing messages"
 >abstract="Promotional content (requires opt-in, subject to business rules)"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_camppaign_ovv_3"
+>id="ajo_oc_api_campaign_ovv_3"
 >title="Transactional messages"
 >abstract="Service-related content (confirmation, alerts, not subject to marketing consent)"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_camppaign_ovv_4"
+>id="ajo_oc_api_campaign_ovv_4"
 >title="Available channels"
 >abstract="Email, SMS, Push notifications"
 
@@ -294,3 +332,28 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_channels_feedback_webhook_settings_header_parameters"
 >title="Header Parameters"
 >abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_incrementalquery"
+>title="Incremental query"
+>abstract="The Incremental query is a Targeting activity that runs a database query every time the Orchestrated campaign runs. It returns only new records and excludes anyone already included in a previous run, so you avoid re-targeting the same people or re-exporting the same rows."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_incrementalquery_processeddata"
+>title="Processed data"
+>abstract="Under Processed data, choose how to exclude records from earlier runs. With Exclude results of previous execution, the activity keeps a list of records returned in prior runs; each run excludes those and returns only new ones. With the Use a date field option, the activity uses a selected date field instead of tracking individual IDs, and each run returns only rows whose date is after the last execution."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_incrementalquery_history"
+>title="History in days"
+>abstract="This setting controls how long that list is retained. A value of 0 means indefinite retention; no records are removed."
+
+>[!CONTEXTUALHELP]
+>id="ajo_inbox_location"
+>title="Location on page"
+>abstract="."
+
+>[!CONTEXTUALHELP]
+>id="ajo_inbox_app_id"
+>title="App ID"
+>abstract="."

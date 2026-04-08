@@ -6,6 +6,7 @@ topic: Integrations
 role: Developer
 level: Experienced
 version: Journey Orchestration
+exl-id: 74e090e1-4dbe-484b-a482-ef43e082e7b1
 ---
 # Update an exd placement {#update-exd-placement}
 

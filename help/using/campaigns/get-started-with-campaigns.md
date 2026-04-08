@@ -56,7 +56,7 @@ exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_orchestration"
 >title="Campaigns"
->abstract="Create your segmentation flow, craft your cross channel messages and plan your campaigns. Supported channels: Email, SMS, Push notification."
+>abstract="Create your segmentation flow, craft your cross channel messages and plan your campaigns. Supported channels: Email, SMS, Push notifications, Direct mail."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_scheduled_marketing"
@@ -66,7 +66,7 @@ exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_scheduled_transactional"
 >title="Campaigns"
->abstract="Deliver single or recurring outbound transactional actions."
+>abstract="Deliver single or recurring outbound transactional actions. Supported channels: Email, SMS, Push notifications."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_api_marketing"
@@ -208,7 +208,7 @@ Set up the foundation of your campaign:
 2. **Select campaign type** (Action, API-triggered, or Orchestrated)
 3. **Choose your audience** 
 4. **Set priority** if using conflict management
-5. **Configure schedule** (for Action campaigns) or API details (for API-triggered)
+5. **Configure schedule** (for Action campaigns) or API details (for API-triggered). For Action campaigns, you can also [send using waves](send-using-waves.md) to deliver the message in batches over time.
 
 **Type-specific guides:** [Action campaign properties](campaign-properties.md) | [API-triggered campaign properties](api-triggered-campaign-properties.md) | [Orchestrated campaign setup](../orchestrated/create-orchestrated-campaign.md)
 
@@ -331,7 +331,7 @@ Implement review and approval processes before campaigns go live, ensuring quali
 
 Respect customer preferences by avoiding message delivery during specified time windows. (Action & API-triggered campaigns)
 
-[Configure quiet hours](quiet-hours.md)
+[Configure quiet hours](../conflict-prioritization/quiet-hours.md)
 :::
 
 :::

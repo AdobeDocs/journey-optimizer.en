@@ -7,6 +7,7 @@ role: Developer
 level: Experienced
 keywords: list, functions, expression, journey, array, collection
 version: Journey Orchestration
+exl-id: b17245ba-4ffa-4f5b-914e-4c0972e9c7c4
 ---
 # List functions {#list-functions}
 
@@ -728,4 +729,3 @@ Returns `[3, 2, 1]`.
 Returns the listObject ordered by SKU attribute (ascending order)
 
 +++
-

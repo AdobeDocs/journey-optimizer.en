@@ -127,6 +127,10 @@ To further personalize your endpoints<!-- (**[!UICONTROL Mailto (unsubscribe)]**
 
 To define custom attributes for your endpoints, use the **[!UICONTROL URL tracking parameters]** section. All the URL tracking parameters you define in the corresponding section will be appended to the end of your custom endpoints, in addition to the default parameters. [Learn how to set custom URL tracking](url-tracking.md)
 
+>[!NOTE]
+>
+>The order of UTM parameters appended to the URL is random and cannot be controlled. If your system requires parameters in a specific order, you will need to parse and reorder them on your side.
+
 ### Configure the decrypt API {#configure-decrypt-api}
 
 When your recipients click a custom unsubscribe link, the parameters appended to the consent update event are sent to the endpoint in an encrypted manner. Thus, the external consent system needs to implement a specific API through [Adobe Developer](https://developer.adobe.com){target="_blank"} to decrypt the parameters sent by Adobe.

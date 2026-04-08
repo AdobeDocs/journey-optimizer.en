@@ -30,11 +30,11 @@ To generate variations for your content and preview them, follow these steps:
 
 1. Open your content and select **[!UICONTROL Simulate content]** / **[!UICONTROL Simulate content variations]**.
 
-    ![](assets/simulate-sample.png)
+    ![Simulate content variations option](assets/simulate-sample.png)
  
 2. Click the **[!UICONTROL Generate]** button.
 
-    ![](assets/simulate-generate-variant.png)
+    ![Generate variants button](assets/simulate-generate-variant.png)
 
 3. [!DNL Journey Optimizer] automatically generates variants based on detected attributes.  
 

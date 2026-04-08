@@ -43,6 +43,19 @@ When enabled, these options track the behavior of the recipients of your message
 * The **[!UICONTROL Email opens]** metric checks how many messages have been opened.
 * The **[!UICONTROL Click on email]** metric calculates the number of clicks on links in an email.
 
+### Track across multiple emails {#track-across-multiple-emails}
+
+A unique tracking identifier (urlID) is only generated when both the **URL** and the **label** are unique. Links that share the same URL and have the same effective label (including when the label is blank) reuse the same urlID, which means you cannot tell which link was clicked.
+
+To track the same URL across multiple emails (or multiple times in one email), use a unique label for each similar URL; otherwise, [!DNL Journey Optimizer] will not be able to track which link was clicked. You can set distinct labels in the Email Designer or, for HTML, via the `data-label` attribute.
+
+| URL | Tag | Label | urlID behavior |
+|-----|-----|-------|----------------|
+| www.example.com | First | (blank) | Gets a urlID (e.g. A) |
+| www.example.com | Second | (blank) | Reuses urlID A — cannot tell which link was clicked |
+| www.example.com | Third | First Label | Gets a urlID (e.g. B) |
+| www.example.com | Fourth | Second Label | Gets a urlID (e.g. C) |
+
 ## Insert links {#insert-links}
 
 When [tracking is enabled](#enable-tracking), all links included in the message content are tracked.
@@ -61,7 +74,7 @@ To insert links into your email content, follow the steps below:
 
     * Select **[!UICONTROL External link]** to insert a link to an external URL.
 
-    * Select **[!UICONTROL Landing page]** to insert a link to a landing page. [Learn more](../landing-pages/get-started-lp.md)
+    * Select **[!UICONTROL Landing page]** to insert a link to a landing page. [Learn more](../landing-pages/create-lp.md)
 
     * Select **[!UICONTROL One click Opt-out]** to insert a link to enable users to quickly unsubscribe from your communications without the need to confirm opting out. [Learn more](email-opt-out.md#one-click-opt-out).
 

@@ -18,6 +18,10 @@ The main steps to create landing pages are as follows:
 
 ![](assets/lp-creation-process.png)
 
+>[!NOTE]
+>
+>Before creating your first landing page, complete the [configure landing pages](../../rp_landing_pages/lp-configuration-landing-page.md) setup. This includes configuring a subdomain to host your landing pages and defining at least one preset that specifies the subdomain and other channel settings. You will need to select a preset when you create the landing page.
+
 ## Create a landing page {#create-landing-page}
 
 >[!CONTEXTUALHELP]
@@ -43,7 +47,7 @@ To create a landing page, you must select a preset, then configure the primary p
 
 1. Add a title. You can add a description if needed.
 
-    ![](assets/lp_create-lp-details.png)
+    ![](assets/lp_create-lp-details.png){width=75%}
 
 1. To assign custom or core data usage labels to the landing page, select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
@@ -51,7 +55,12 @@ To create a landing page, you must select a preset, then configure the primary p
 
 1. Select a preset. Learn how to create landing page presets in [this section](../landing-pages/lp-presets.md#lp-create-preset).
 
-    ![](assets/lp_create-lp-presets.png)
+1. Select the type of landing page you want to create.
+
+    ![](assets/lp_create-lp-data-capture.png){width=60%}
+
+    * **[!UICONTROL Subscription/Unsubscription]**: Use this type to create a landing page for subscription or unsubscription use cases. [Learn more](lp-use-cases.md#subscription-to-a-service)
+    * **[!UICONTROL Data Capture]**: Use this type to create a landing page for data capture use cases. [Learn more](get-started-lp.md#data-capture-lp)
 
 1. Click **[!UICONTROL Create]**.
 
@@ -252,16 +261,12 @@ Two types of alerts can happen:
 
 >[!CAUTION]
 >
->To publish landing pages, users must have the **[!UICONTROL Publish Messages]** permission. 
-
+>* To publish landing pages, you must have the **[!UICONTROL Publish Messages]** permission.
+>* Before publishing, check and resolve all alerts. [Learn more](#check-alerts)
 
 Once your landing page is ready, you can publish it to make it available for use in a message.
 
 ![](assets/lp_publish.png)
-
->[!CAUTION]
->
->Before publishing, check and resolve alerts. [Learn more](#check-alerts)
 
 Once your landing page is published, it is added to the landing page list with the **[!UICONTROL Published]** status.
 

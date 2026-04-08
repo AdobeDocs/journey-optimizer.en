@@ -6,8 +6,8 @@ topic: Integrations
 role: User
 level: Experienced
 version: Journey Orchestration
+exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
 ---
-
 # Create decision policies {#create-decision}
 
 >[!CONTEXTUALHELP]
@@ -28,64 +28,162 @@ version: Journey Orchestration
 
 To present the best dynamic offer and experience to your customers, add a decision policy to your content in a campaign or journey then configure the items to return and the selection strategy to use. To do so, follow the steps below:
 
-1. [Add a decision policy](#add) - From the Personalization editor or the Email Designer.
-1. [Configure the decision policy](#configurre) - Add a name and specify the number of items to return.
+1. [Add a decision policy](#add)
+1. [Configure the decision policy](#configure) - Add a name and specify the number of items to return for the email channel.
 1. [Set up a strategy sequence](#strategy) - Select the items to return with the decision policy.
 1. [Select fallback offers](#fallback) (optional) - Select items to display if no items or selection strategies are qualified.
 1. [Review and save](#review) the selection strategy
+1. [Assign a placement](#placement) (Email channel only)
 
 >[!AVAILABILITY]
 >
->For now, decision policies are available to all customers for the **Code-based Experience** channel. They are available for the **Email** channel as a Limited Availibility. Contact your Adobe representative to gain access.
+>Decision policies are available for the **Code-based Experience**, **Push notification**, **SMS**, and **Email** channels.
 
 ## Add a decision policy {#add}
 
-1. Open a journey or campaign, select a [channel action](../building-journeys/journeys-message.md) and edit the content of your message.
+Open a journey or campaign, select a [channel action](../building-journeys/journey-action.md) and edit the content of your message.
 
-1. For emails, toggle the **[!UICONTROL Enable decisioning]** option.
+Edit the content of your message and browse the tabs below for more information on how to add the decision policy based on the selected channel.
+
+>[!BEGINTABS]
+
+>[!TAB Code-based Experience]
+
+For code-based experiences, you can add a new decision policy using either the **code editor**, or the **Decisioning** menu available in the properties pane.
+
++++Add a decision policy from the code editor
+
+1. Open the code editor editor using the **[!UICONTROL Edit code]** button.
+
+1. Navigate to the **[!UICONTROL Decision policy]** menu then click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-add-code-editor.png)
+
++++
+
++++Add a decison policy from the Decisioning menu
+
+1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
+
+1. Click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-add-code.png)
+
++++
+
+>[!TAB Email]
+
+1. Toggle the **[!UICONTROL Enable decisioning]** option.
 
     ![](assets/decision-policy-enable.png)
 
     >[!IMPORTANT]
     >
     >Enabling decisioning clears existing email content. If you have already designed your email, be sure to save your content as a template beforehand.
+
+1. Add a new decision policy, using either the **personalization editor** or the **Decisioning** menu available in the Email designer.
+
+    +++Add a decision policy from the Personalization editor
+
+    1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon available in the subject line field or in any field in the email body where you can add personalization.
+
+    1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
+
+        ![](assets/decision-policy-add-email-editor.png)
+
+    +++
+
+    +++Add a decison policy from the Decisioning menu
+
+    1. Open the Email Designer and select any component in the email structure.
+
+    1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
+
+    1. Click the **[!UICONTROL Add new policy]** button.
+
+        ![](assets/decision-policy-add-email-add.png)
+
+    >[!NOTE]
     >
-    >Note that any decision policy configured within the email will not be saved in the template. If you apply the template to another email, you need to re-configure the policy.
-
-1. Open the **personalization editor** to create the decision policy. For emails, you can also use a dedicated menu in the **Email designer** to create a decision policy. Expand the sections below to explore the two methods.
-
-    +++Create a decision policy from the Personalization editor
-
-    1. Open the personalization editor and select **[!UICONTROL Decision policy]**.
-    1. Click the **[!UICONTROL Add decision policy]** button to create a new policy.
-
-        ![](assets/decision-code-based-create.png)
+    >The **[!UICONTROL Reuse decision output]** option lets you reuse a decision policy that has already been created in this email. It is particularly helpful when you want to show the same offer in multiple locations (for example, header and footer).
+    >
+    >When the same offer can be selected by more than one decision policy in the email body, the engine deduplicates offers: each placement receives a different offer, so the same offer will not appear in both places. To display the same offer in multiple placements, use **[!UICONTROL Reuse decision output]** to reuse the output of an existing decision policy in this email.
 
     +++
+
+You can also add decision policies when using the **[!UICONTROL Code your own]** mode in the Email Designer. To do so, navigate to **[!UICONTROL Decision policies]** to insert the decision policy code. [Learn how to code your own email content](../email/code-content.md).
+
+![](assets/decision-policy-add-code-your-own.png)
+
+>[!NOTE]
+>
+>In **[!UICONTROL Code your own]** mode, you can only return one decision item per policy, because the **[!UICONTROL Repeat Grid]** component is not available.
+
+>[!TAB SMS]
+
+For SMS, you can add a new decision policy using either the **personalization editor**, or the **Decisioning** menu available in the properties pane.
+
++++Add a decision policy from the personalization editor
+
+1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
+1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-add-sms-editor.png)
+
++++
+
++++Add a decison policy from the Decisioning menu
+
+1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
+
+1. Click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-add-sms.png)
+
+>[!TAB Push notification]
+
+For Push notifications, you can add a new decision policy using either the **personalization editor**, or the **Decisioning** menu available in the properties pane.
+
++++Add a decision policy from the personalization editor
+
+1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
+1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-add-push.png)
+
++++
     
-    +++Create a decison policy from the Email Designer
++++Add a decison policy from the Decisioning menu
 
-    Select a component in your email content, click the **[!UICONTROL Decisioning]** icon in the toolbar or the properties pane then select **[!UICONTROL Add new policy]**.
-    
-    The **[!UICONTROL Reuse decision output]** allows you to reuse a decision policy that has already been created within this email.
+1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
 
-    ![](assets/decision-policy-email-designer.png)
+1. Click the **[!UICONTROL Add decision policy]** button.
 
-    +++
+    ![](assets/decision-policy-add-push-menu.png)
+
+>[!IMPORTANT]
+>
+>Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes/){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions/){target="_blank"}.
+
+>[!ENDTABS]
 
 ## Configure the decision policy {#configure}
 
-After you have added a new decision policy into your content, the decision policy configuration screen opens. 
+After you have added a new decision policy into your content, the decision policy configuration screen opens. Follow these steps to configure the decision policy:
 
 1. Provide a name for the decision policy and select a catalog (currently limited to the default **[!UICONTROL Offers]** catalog).
 
-1. Select the number of items to return. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration.
-
     ![](assets/decision-code-based-details.png)
 
-    For the Email channel, the **[!UICONTROL Number of items]** field is set to 1 by default and cannot be modified unless the decision policy is added from within a **[!UICONTROL Repeat Grid]** component. Expand the section below for more details:
+1. The **[!UICONTROL Number of items]** field allows you to define the number of decision items to return with decision policy. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration.
 
-    +++Return multiple decision items in emails using a **[!UICONTROL Repeat Grid]** component
+    >[!NOTE]
+    >
+    >This option is available for the Email and Code-based experience channels only. For all other channels, only 1 decision item can be returned per action.
+
+    To return multiple items for the Email channel, you need to add the decision policy within a **[!UICONTROL Repeat Grid]** component. Expand the section below for more details:
+
+    +++Return multiple decision items in emails
 
     1. Drag a **[!UICONTROL Repeat Grid]** component in your email and configure it as desired using the **[!UICONTROL Settings]** pane. 
 
@@ -214,7 +312,7 @@ You can edit or delete a decision policy at any time using the ellipsis button i
 
 ![](assets/decision-policy-edit.png)
 
->[!TAB Edit or delete a policy from the component's properties]
+>[!TAB Edit or delete a policy from the Decisioning menu]
 
 ![](assets/decision-policy-edit-properties.png)
 
@@ -228,7 +326,6 @@ For emails, you need to define a placement for the component associated to the d
 
 ## Next steps {#next-steps}
 
-Now that you understand how to create a decision policy, you’re ready to use it into [!DNL Journey Optimizer] channels to deliver offers.
+Now that you understand how to create a decision policy, you're ready to use it into [!DNL Journey Optimizer] channels to deliver offers.
 
 ➡️ [Learn how to use decision policies in messages](../experience-decisioning/use-decision-policy.md)
-

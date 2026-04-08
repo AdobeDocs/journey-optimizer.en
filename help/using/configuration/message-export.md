@@ -46,7 +46,9 @@ The onboarding process for the Message Export feature consists of two steps:
 
 ### Set up the export dataflow {#set-up-export-dataflow}
 
-Before being able to export your data, you must set up the export process by defining the [!DNL Experience Platform] destination and the dataset that will be used. Follow the steps below.
+Before being able to export your data, set up the export process by defining the [!DNL Experience Platform] destination and the dataset export flow.
+
+For detailed steps, supported cloud destinations, required permissions, and more information, see [this section](../data/export-datasets.md#export-datasets).
 
 >[!NOTE]
 >

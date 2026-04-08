@@ -1,13 +1,14 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use Adobe Experience Platform data in journeys
-description: Learn how to use the Dataset Lookup Activity in Adobe Journey Optimizer to enrich customer journeys with external data from Adobe Experience Platform.
+title: Use [!DNL Adobe Experience Platform] data in journeys
+description: Learn how to use the Dataset Lookup Activity in [!DNL Adobe Journey Optimizer] to enrich customer journeys with external data from [!DNL Adobe Experience Platform].
 feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
 version: Journey Orchestration
+badge: label="Limited Availability" type="Informative"
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
 ---
 # Use [!DNL Adobe Experience Platform] data in journeys {#datalookup}
@@ -15,9 +16,13 @@ exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dataset_lookup"
 >title="Dataset lookup activity"
->abstract="The **[!UICONTROL Dataset lookup]** activity allows you to to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
+>abstract="The **[!UICONTROL Dataset lookup]** activity allows you to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
 
-The **[!UICONTROL Dataset lookup]** activity allows you to to dynamically retrieve data from Adobe Experience Platform record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
+The **[!UICONTROL Dataset lookup]** activity allows you to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
+
+>[!AVAILABILITY]
+>
+>This feature is currently available to all customers as a limited availability release.
 
 Key Benefits:
 
@@ -25,15 +30,13 @@ Key Benefits:
 * **Dynamic decision-making**: Use external data to drive journey logic and actions.
 * **Enhanced data Access**: Retrieve product metadata, pricing tables, or relational data tied to specific keys.
 
->[!AVAILABILITY]
->
->This activity is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 ## Must-read {#must-read}
+
+Review these requirements before you configure dataset lookups.
 
 ### Dataset enablement
 
-The dataset must be enabled for lookup in Adobe Experience Platform. Detailed information are available in this section: [Use Adobe Experience Platform data](../data/lookup-aep-data.md). 
+The dataset must be enabled for lookup in [!DNL Adobe Experience Platform]. Detailed information is available in this section: [Use [!DNL Adobe Experience Platform] data](../data/lookup-aep-data.md).
 
 ### Limits & restrictions
 
@@ -57,7 +60,7 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
 
 1. Unfold the **[!UICONTROL Orchestration]** category and drop a **[!UICONTROL Dataset lookup]** activity into your canvas.
 
-   ![Adobe Experience Platform dataset lookup activity in journey](assets/aep-data-activity.png)
+   ![[!DNL Adobe Experience Platform] dataset lookup activity in journey](assets/aep-data-activity.png)
 
 1. Add a label and description.
 
@@ -84,7 +87,11 @@ To configure the **[!UICONTROL Dataset lookup]** activity, follow these steps:
    * Keys can be expressions derived from the journey context, such as SKUs, email IDs, or other identifiers. Example: `@profile.email` or `list(@event{purchase_event.products.sku})`.
 
    * Only **strings** or **lists of strings** are supported.
-   
+
+   >[!IMPORTANT]
+   >
+   >You must define the lookup key using **advanced mode**. If you use simple mode to set the key, the dataset lookup activity output will not be available as a context attribute in downstream activities, and the `@datasetLookup{}` syntax will fail with a "Dataset lookup not found" error in condition activities.
+
    +++Example
    
    ![Expression editor with dataset field lookup and string functions](assets/aep-data-strings.png)
@@ -182,3 +189,15 @@ The data retrieved by the **[!UICONTROL Dataset lookup]** activity is stored in 
    ```
    {{context.journey.datasetLookup.1482319411.entity.loyaltyMember.loyaltyTier}}
    ```
+
++++
+
+## Troubleshooting {#troubleshooting}
+
+### "Dataset lookup not found" error in condition activity {#troubleshooting-not-found}
+
+**Symptom:** The `@datasetLookup{}` syntax in a condition activity's advanced expression editor returns a "Dataset lookup not found" error, even though the dataset lookup activity is correctly configured in the journey.
+
+**Cause:** The lookup key in the dataset lookup activity was set using simple mode. When the key is not defined in advanced mode, the activity output is not exposed as a context attribute in downstream activities.
+
+**Fix:** Open the dataset lookup activity, locate the **[!UICONTROL Lookup key(s)]** field, and switch to **advanced mode** to redefine the key expression. Save the activity and republish the journey.

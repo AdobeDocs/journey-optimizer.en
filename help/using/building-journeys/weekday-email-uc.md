@@ -2,17 +2,18 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Send emails only on weekdays
-description: Learn how to configure a journey to send emails only on weekdays in Adobe Journey Optimizer
+description: Learn how to configure a journey to send emails only on weekdays in [!DNL Adobe Journey Optimizer]
 feature: Journeys, Use Cases, Email
 topic: Content Management
 role: User
 level: Intermediate
 keywords: journey, use case, weekdays, condition, email, scheduling
 version: Journey Orchestration
+exl-id: 2f313e59-ee50-473c-9346-8859889346ec
 ---
 # Send emails only on weekdays {#send-emails-only-on-weekdays}
 
-This use case demonstrates how to configure a journey in Adobe Journey Optimizer that sends emails only on weekdays (Monday through Friday). For profiles that enter the journey on weekends (Saturday or Sunday), emails are automatically queued and sent on Monday at a specified time. This ensures optimal engagement by delivering messages during the workweek.
+This use case demonstrates how to configure a journey in [!DNL Adobe Journey Optimizer] that sends emails only on weekdays (Monday through Friday). For profiles that enter the journey on weekends (Saturday or Sunday), emails are automatically queued and sent on Monday at a specified time. This ensures optimal engagement by delivering messages during the workweek.
 
 ## Use case overview
 
@@ -26,14 +27,15 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 
 >[!NOTE]
 >
->To implement this use case, you need an active Adobe Journey Optimizer instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](condition-activity.md) and [expressions](expression/expressionadvanced.md).
-
+>To implement this use case, you need an active Adobe Journey Optimizer instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](conditions.md) and [expressions](expression/expressionadvanced.md).
 
 ## Implementation steps
 
+Use these steps to build the weekday-only email flow.
+
 ### Step 1: Create your journey
 
-1. Navigate to **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]** in Adobe Journey Optimizer.
+1. Navigate to **[!UICONTROL Journey Management]** > **[!UICONTROL Journeys]** in [!DNL Adobe Journey Optimizer].
 
 1. Click **[!UICONTROL Create Journey]** to [create a new journey](journey-gs.md).
 
@@ -47,7 +49,7 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 
 Right after the journey start, add a **[!UICONTROL Condition]** activity to check if the current day is Saturday or Sunday. This will branch the workflow accordingly.
 
-1. Drag and drop a [**[!UICONTROL Condition]** activity](condition-activity.md) onto the canvas after your entry point.
+1. Drag and drop an [**[!UICONTROL Optimize]** activity](optimize.md) onto the canvas after your entry point.
 
 1. Click on the **[!UICONTROL Condition]** activity to open its configuration panel.
 
@@ -143,7 +145,7 @@ This ensures that all emails are sent on weekdays only, with weekend entries aut
 
 ### Step 6: Test your journey
 
-Before publishing, thoroughly test your journey logic in Adobe Journey Optimizer's Test Mode to confirm everything works as expected:
+Before publishing, thoroughly test your journey logic in [!DNL Adobe Journey Optimizer]'s Test Mode to confirm everything works as expected:
 
 1. Click the **[!UICONTROL Test]** button in the top right corner.
 
@@ -177,7 +179,7 @@ Once testing is complete:
 
 ## Related topics
 
-* [Condition activities](condition-activity.md) - Learn how to create different paths in your journey
+* [Optimize activities](optimize.md) - Learn how to create different paths in your journey
 * [Use conditions in a journey](conditions.md) - Detailed guide on journey conditions
 * [Wait activity](wait-activity.md) - Configure wait durations and formulas
 * [Date functions](functions/date-functions.md) - Complete reference for date and time functions

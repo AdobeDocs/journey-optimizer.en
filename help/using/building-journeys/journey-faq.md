@@ -2,24 +2,24 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Orchestration - Frequently Asked Questions
-description: Frequently Asked Questions about Journey Orchestration in Adobe Journey Optimizer
+description: Frequently Asked Questions about Journey Orchestration in [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started
 topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: journey, questions, answers, troubleshoot, help, guide, orchestration
 version: Journey Orchestration
+exl-id: cac9fc24-b78e-48d9-9c0c-f43181246f6f
 ---
-
 # Journey Orchestration - Frequently Asked Questions {#faq-journeys}
 
-Find answers to common questions about Journey Orchestration in Adobe Journey Optimizer.
+Find answers to common questions about Journey Orchestration in [!DNL Adobe Journey Optimizer].
 
-Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
+Need more details? Use the feedback options at the bottom of this page to raise your question. You can also connect with the [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
 ## General concepts
 
-+++ What is a journey in Adobe Journey Optimizer?
++++ What is a journey in [!DNL Adobe Journey Optimizer]?
 
 A journey is a multi-step orchestration that allows you to design and execute real-time customer experiences across multiple channels. Journeys combine events, orchestration activities, actions, and messages to create personalized, contextual experiences based on customer behavior and business events.
 
@@ -29,10 +29,10 @@ Learn more about [journeys](journey.md).
 
 +++ What are the different types of journeys?
 
-Adobe Journey Optimizer supports four types of journeys:
+[!DNL Adobe Journey Optimizer] supports four types of journeys:
 
 * **Unitary journeys**: Triggered individually by an event (e.g., a purchase, app sign-in). Profiles enter the journey one at a time when the event occurs.
-* **Read Audience journeys**: Start with an audience from Adobe Experience Platform and send messages in batch to all profiles in that audience.
+* **Read Audience journeys**: Start with an audience from [!DNL Adobe Experience Platform] and send messages in batch to all profiles in that audience.
 * **Audience Qualification journeys**: Triggered when profiles qualify for (or exit from) a specific audience segment. Profiles enter the journey as they meet the audience criteria.
 * **Business event journeys**: Triggered by business events (e.g., stock updates, weather alerts) that affect multiple profiles simultaneously.
 
@@ -50,7 +50,7 @@ Learn more about [journey types](entry-management.md#types-of-journeys).
 * **[API-triggered campaigns](../campaigns/api-triggered-campaigns.md)**: Campaigns triggered via API calls, enabling integration with external systems to send messages based on real-time events or business logic.
 * **[Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)**: Multi-step, audience-based campaigns built on a canvas that can include conditions, wait times, and multiple actions to create scheduled, coordinated experiences.
 
-**Best practice**: Use [journeys](journey.md) for complex, event-triggered engagement with advanced orchestration; [action campaigns](../campaigns/create-campaign.md) for scheduled, audience-based communications; [API-triggered campaigns](../campaigns/api-triggered-campaigns.md) for programmatic triggering from external systems; and [orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) for multi-step communications with campaign-specific requirements.
+**Best practice**: Use [journeys](journey.md) for complex, event-triggered engagement with advanced orchestration. Use [action campaigns](../campaigns/create-campaign.md) for scheduled, audience-based communications. Use [API-triggered campaigns](../campaigns/api-triggered-campaigns.md) for programmatic triggering from external systems. Use [orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) for multi-step communications with campaign-specific requirements.
 
 +++
 
@@ -70,7 +70,7 @@ Learn more about [journey activities](about-journey-activities.md).
 
 +++ What types of audiences are supported in journeys and what are their limitations?
 
-Adobe Journey Optimizer supports four types of audiences, each with different characteristics and guardrails:
+[!DNL Adobe Journey Optimizer] supports four types of audiences, each with different characteristics and guardrails:
 
 **1. Streaming audiences**
 
@@ -104,11 +104,11 @@ Adobe Journey Optimizer supports four types of audiences, each with different ch
   * CSV file size limits apply (check product documentation for current limits)
   * Audience members are static until refreshed with new upload
   * Identity namespace must match journey namespace
-  * Profiles must exist in Adobe Experience Platform
+  * Profiles must exist in [!DNL Adobe Experience Platform]
 
 **4. Federated Audience Composition (FAC) audiences**
 
-* **Description**: Audiences created using federated data, allowing you to query and compose audiences from external data warehouses without copying data into Adobe Experience Platform
+* **Description**: Audiences created using federated data, allowing you to query and compose audiences from external data warehouses without copying data into [!DNL Adobe Experience Platform]
 * **Evaluation**: Static composition updated when the federated audience composition is executed
 * **Journey usage**: Supported in Read Audience and Condition activities; **not supported** in Audience Qualification journeys (similar to upload audiences from a backend perspective)
 * **Best for**: Enterprise data warehouse integration, audience composition using external data sources, scenarios requiring data to remain in external systems
@@ -181,7 +181,7 @@ Follow the [step-by-step guide](journey-gs.md).
 Prerequisites depend on your journey type:
 
 * **Event-triggered journeys**: Configure events to define when profiles should enter the journey
-* **Audience-based journeys**: Create audiences in Adobe Experience Platform
+* **Audience-based journeys**: Create audiences in [!DNL Adobe Experience Platform]
 * **Data enrichment**: Set up data sources to retrieve additional information
 * **Third-party integrations**: Configure custom actions if using external systems
 
@@ -196,7 +196,7 @@ Yes, there are several approaches to leverage external data:
 **Best practices**:
 
 * **Custom actions**: Call external APIs through custom actions to retrieve or send data to third-party systems. This is the recommended approach for real-time interactions with external systems.
-* **Dataset lookup**: If you can load data from external systems into Adobe Experience Platform, use the dataset lookup feature to retrieve information stored in Experience Platform datasets.
+* **Dataset lookup**: If you can load data from external systems into [!DNL Adobe Experience Platform], use the dataset lookup feature to retrieve information stored in Experience Platform datasets.
 * **External data sources**: Configure external data sources to retrieve information from third-party API services (less recommended than the above approaches).
 
 These options allow you to enrich the customer experience with data from your CRM, loyalty systems, weather services, or other external platforms.
@@ -213,7 +213,7 @@ You can add conditions using the **Condition activity** from the orchestration p
 * Split the journey into multiple paths based on profile attributes, audience membership, events, or contextual data
 * Define timeout paths for profiles that don't meet the condition within a specified time
 
-Learn more about [conditions](condition-activity.md).
+Learn more about [conditions](conditions.md).
 
 +++
 
@@ -223,7 +223,7 @@ Yes. Journey Optimizer includes **built-in channel actions** that allow you to s
 
 For channels not natively supported, you can use **custom actions** to integrate with external messaging platforms and send messages through any third-party channel.
 
-Learn more about [messages in journeys](journeys-message.md) and [custom actions](using-custom-actions.md).
+Learn more about [messages in journeys](journey-action.md) and [custom actions](using-custom-actions.md).
 
 +++
 
@@ -241,7 +241,7 @@ Learn more about [wait activities](wait-activity.md).
 
 +++ Can I update profile information within a journey?
 
-Yes. Use the **Update Profile** activity to modify profile attributes in Adobe Experience Platform based on journey events or conditions. This is useful for updating loyalty points, recording journey milestones, changing preference settings, or tracking customer engagement scores.
+Yes. Use the **Update Profile** activity to modify profile attributes in [!DNL Adobe Experience Platform] based on journey events or conditions. This is useful for updating loyalty points, recording journey milestones, changing preference settings, or tracking customer engagement scores.
 
 Learn more about [profile updates](update-profiles.md).
 
@@ -259,7 +259,7 @@ Create a **unitary event-triggered journey**:
 
 The journey will automatically trigger whenever a purchase event is received, sending the confirmation email in real-time.
 
-Learn more about [event configuration](../event/about-events.md) and [email actions](journeys-message.md).
+Learn more about [event configuration](../event/about-events.md) and [email actions](journey-action.md).
 
 +++
 
@@ -294,7 +294,7 @@ Create an event-triggered journey using a **[!UICONTROL Reaction]** event with a
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Reaction]** events must be placed immediately after [channel actions](journeys-message.md). Do not place **[!UICONTROL Wait]** activities between the channel action and the **[!UICONTROL Reaction]** activity.
+>**[!UICONTROL Reaction]** events must be placed immediately after [channel actions](journey-action.md). Do not place **[!UICONTROL Wait]** activities between the channel action and the **[!UICONTROL Reaction]** activity.
 
 Learn more about [journey use cases](jo-use-cases.md) and [reaction events](reaction-events.md).
 
@@ -311,7 +311,7 @@ Use a **Condition activity** with audience membership or profile attributes:
    * **Path 3**: New customers (total purchases < $100)
 3. Add different messages or offers for each path
 
-Learn more about [conditions](condition-activity.md) and [audience qualification](audience-qualification-events.md).
+Learn more about [conditions](optimize.md#conditions) and [audience qualification](audience-qualification-events.md).
 
 +++
 
@@ -462,7 +462,7 @@ Common reasons profiles may not enter a journey:
 * **Journey not published**: The journey is in draft status
 * **Invalid namespace**: The journey namespace doesn't match the profile identity
 * **Journey closed**: The journey is no longer accepting new entrances
-* **Streaming audience qualification timing**: For journeys using Audience Qualification with streaming audiences, profiles may not enter if they were already in the audience before the journey was published, or if the journey hasn't completed its activation period (up to 10 minutes after publishing)
+* **Streaming audience qualification timing**: For journeys using Audience Qualification with streaming audiences, profiles may not enter if they were already in the audience before the journey was published. They can also be delayed if the journey has not completed its activation period (up to 10 minutes after publishing).
 
 Learn more about [entry management](entry-management.md) and [streaming audience qualification timing considerations](audience-qualification-events.md#streaming-entry-caveats).
 
@@ -582,9 +582,9 @@ Learn more about [personalization](../personalization/personalize.md).
 
 +++ Can I send different messages based on preferred channel?
 
-Yes. Use a **[Condition activity](condition-activity.md)** to route profiles based on their preferred channel:
+Yes. Use an **[Optimize activity](conditions.md)** to route profiles based on their preferred channel:
 
-1. Add a [Condition activity](condition-activity.md) in your journey
+1. Add an [Optimize activity](optimize.md) in your journey
 2. Create a path for each channel by checking the preferred channel profile attribute (e.g., `profile.preferredChannel`)
 3. Configure channel-specific paths:
    * **Email path**: Add an [email action](../email/create-email.md) with email-optimized content
@@ -600,7 +600,7 @@ Yes. Use a **[Condition activity](condition-activity.md)** to route profiles bas
 * Use [channel surfaces](../configuration/channel-surfaces.md) to manage channel configurations
 * Test all paths to ensure proper message delivery
 
-Learn more about [conditions](condition-activity.md), [message actions](journeys-message.md), and [channel selection](../channels/gs-channels.md).
+Learn more about [conditions](conditions.md), [message actions](journey-action.md), and [channel selection](../channels/gs-channels.md).
 
 +++
 
@@ -616,7 +616,7 @@ Yes, there are several ways to exclude customers:
 
 **Within the journey**:
 
-* Add a [Condition activity](condition-activity.md) early in the journey to exit unwanted profiles
+* Add an [Optimize activity](conditions.md) early in the journey to exit unwanted profiles
 * Check for exclusion attributes (e.g., VIP status, test accounts)
 * Use [audience qualification](audience-qualification-events.md) to identify profiles to exclude
 
@@ -693,12 +693,12 @@ Learn more about [custom actions](using-custom-actions.md).
 
 +++
 
-+++ How can I use Adobe Campaign with journeys?
++++ How can I use [!DNL Adobe Campaign] with journeys?
 
-Journey Optimizer integrates natively with Adobe Campaign to leverage its advanced capabilities:
+Journey Optimizer integrates natively with [!DNL Adobe Campaign] to leverage its advanced capabilities:
 
-* **Adobe Campaign Standard**: Use Campaign Standard actions to send transactional messages
-* **Adobe Campaign v7/v8**: Trigger Campaign workflows and use Campaign's delivery infrastructure
+* **[!DNL Adobe Campaign] Standard**: Use Campaign Standard actions to send transactional messages
+* **[!DNL Adobe Campaign] v7/v8**: Trigger Campaign workflows and use Campaign's delivery infrastructure
 
 **Best practice**: Use this integration if you have existing Campaign templates, data models, or require Campaign-specific features.
 
@@ -796,7 +796,7 @@ Learn more about [business events](general-events.md).
 
 +++ What are merge policies and how do they affect journeys?
 
-**Merge policies** determine how Adobe Experience Platform combines data from multiple sources to create a unified profile view. They define rules for data prioritization and identity stitching when profile fragments exist across different datasets.
+**Merge policies** determine how [!DNL Adobe Experience Platform] combines data from multiple sources to create a unified profile view. They define rules for data prioritization and identity stitching when profile fragments exist across different datasets.
 
 **Impact on journeys**:
 
@@ -832,7 +832,7 @@ Learn more about [merge policies](../audience/get-started-profiles.md) and [iden
 * Wait for a period, then use a Condition to check if something happened during the wait
 * Example: Wait 7 days, then check if customer made a purchase
 
-Learn more about [conditions](condition-activity.md) and [wait activities](wait-activity.md).
+Learn more about [conditions](optimize.md#conditions) and [wait activities](wait-activity.md).
 
 +++
 
@@ -912,7 +912,7 @@ Learn more about [journey design](using-the-journey-designer.md) and [guardrails
 * Use [audience-based entry](read-audience.md) for batch communications instead of individual events
 * Implement appropriate [wait times](wait-activity.md) to spread message volume
 * Leverage [capping rules](../conflict-prioritization/journey-capping.md) to prevent system overload
-* Optimize [condition logic](condition-activity.md) to reduce processing complexity
+* Optimize [condition logic](conditions.md) to reduce processing complexity
 
 **Monitoring**:
 
@@ -925,8 +925,8 @@ Learn more about [journey design](using-the-journey-designer.md) and [guardrails
 
 * Use [test mode](testing-the-journey.md) and [dry run](journey-dry-run.md) to validate performance before publishing
 * Minimize external API calls through [custom actions](using-custom-actions.md) to avoid latency and dependency on third-party systems
-* Store frequently used data in Adobe Experience Platform using [dataset lookup](dataset-lookup.md) instead of doing external calls, when possible
-* Review and optimize [message delivery](journeys-message.md) performance
+* Store frequently used data in [!DNL Adobe Experience Platform] using [dataset lookup](dataset-lookup.md) instead of doing external calls, when possible
+* Review and optimize [message delivery](journey-action.md) performance
 
 Learn more about [guardrails and limitations](../start/guardrails.md).
 

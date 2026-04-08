@@ -7,6 +7,7 @@ role: Developer
 level: Experienced
 keywords: conversion, functions, expression, journey, type, cast
 version: Journey Orchestration
+exl-id: f1267c9e-200c-43ae-8b98-3c5951a2f2d7
 ---
 # Conversion functions {#conversion-functions}
 
@@ -22,6 +23,30 @@ Use conversion functions when you need to:
 * Process data from external sources that may have different type formats
 
 Each conversion function handles type-specific rules and edge cases automatically, making data transformation more reliable and predictable in your journey expressions.
+
+## Quick reference {#quick-reference}
+
+| Goal | Function |
+|------|----------|
+| Convert a string or epoch to a date **with** timezone | [toDateTime](#toDateTime) |
+| Convert a string or date to a datetime **without** timezone | [toDateTimeOnly](#toDateTimeOnly) |
+| Extract a date only (year-month-day, no time) | [toDateOnly](#toDateOnly) |
+| Convert to a whole number | [toInteger](#toInteger) |
+| Convert to a decimal number | [toDecimal](#toDecimal) |
+| Convert to true/false | [toBool](#toBool) |
+| Convert any value to a string | [toString](#toString) |
+| Convert to a duration (ISO-8601, e.g. PT10H) | [toDuration](#toDuration) |
+
+>[!TIP]
+>
+>**toDateTime vs. toDateTimeOnly:** Use `toDateTime` when timezone matters (e.g., scheduling messages, comparing event timestamps across regions). Use `toDateTimeOnly` when only the local date-time is relevant and timezone can be ignored (e.g., comparing calendar dates in a condition).
+
+## Common pitfalls {#pitfalls}
+
+* **Timezone must be a string constant** — The timezone argument in `toDateTime` cannot be a field reference or a dynamic expression. Always pass a literal string such as `"UTC"` or `"Europe/Paris"`.
+* **ISO-8601 format required for string inputs** — When passing a string to `toDateTime` or `toDateTimeOnly`, ensure it follows ISO-8601 format (e.g., `"2023-08-18T23:17:59.123Z"`). Malformed strings return null without an error.
+* **Epoch values are in milliseconds** — `toDateTime(1560762190189)` expects milliseconds. If your source provides Unix timestamps in seconds, multiply by 1000 first (e.g., `toDateTime(myField * 1000)`).
+* **toBool with unexpected strings** — `toBool` returns `true` only if the string value is exactly `"true"`. Any other string (including `"1"`, `"yes"`, `"TRUE"`) returns `false`.
 
 ## toBool {#toBool}
 
@@ -424,4 +449,3 @@ Returns the string representation of the given dateOnly field (XDM Date field), 
 Returns "PT1.52S".
 
 +++
-

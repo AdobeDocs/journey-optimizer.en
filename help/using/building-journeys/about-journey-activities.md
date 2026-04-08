@@ -13,13 +13,13 @@ version: Journey Orchestration
 ---
 # Get started with journey activities {#about-journey-activities}
 
-Combine the different event, orchestration and action activities to build your multi-step cross-channel scenarios.
+Combine event, orchestration, and action activities to build multi-step, cross-channel scenarios.
 
 ## Event activities {#event-activities}
 
-Personalized journeys are triggered by events, such as an online purchase. Once a profile enters a journey, they move through as an individual, and no two individuals move along at the same rate or along the same path. When you start your journey with an event, the journey triggers when the event is received. Each person in the journey then follows, individually, the next steps defined in your journey.
+Personalized journeys start with events such as an online purchase. Once a profile enters a journey, it moves through it on its own. Each profile can take a different path and pace. When you start with an event, the journey triggers when the event arrives. Each profile then follows the steps defined in your journey.
 
-Events configured by the technical user (see [this page](../event/about-events.md)) are all displayed in the first category of the palette, on the left side of the screen. The following event activities are available:
+Events configured by the technical user (see [this page](../event/about-events.md)) appear in the first category of the palette. This category is on the left side of the screen. The following event activities are available:
 
 * [General events](../building-journeys/general-events.md)
 * [Reaction](../building-journeys/reaction-events.md)
@@ -33,11 +33,11 @@ To start your journey, drag and drop an event activity. You can also double-clic
 
 ## Orchestration activities {#orchestration-activities}
 
-Orchestration activities are different conditions that help determine the next step in the journey. These conditions can include whether the person has an open support case, the weather forecast at their current location, whether they completed a purchase, or whether they reached 10,000 loyalty points.
+Orchestration activities are conditions that help determine the next step in the journey. These conditions can include whether the person has an open support case or completed a purchase. They can also include the local weather forecast or whether the person reached 10,000 loyalty points.
 
 From the palette, on the left-hand side of the screen, the following orchestration activities are available:
 
-<!--* [Optimize](optimize.md)-->
+* [Optimize](optimize.md)
 * [Read Audience](read-audience.md)
 * [Wait](wait-activity.md)
 * [Content decision](content-decision.md)
@@ -49,9 +49,9 @@ From the palette, on the left-hand side of the screen, the following orchestrati
 
 Actions are what you want to happen as a result of some kind of trigger, like sending a message. It is the piece of the journey that the customer experiences.
 
-From the palette, on the left-hand side of the screen, below **[!UICONTROL Events]** and **[!UICONTROL Orchestration]**, you can find the **[!UICONTROL Actions]** category. The following action activities are available:
+From the palette on the left side of the screen, below **[!UICONTROL Events]** and **[!UICONTROL Orchestration]**, you can find the **[!UICONTROL Actions]** category. The following action activities are available:
 
-* [Built-in channel actions](../building-journeys/journeys-message.md)
+* [Built-in channel actions](../building-journeys/journey-action.md) available from the **Action** activity
 * [Custom actions](../building-journeys/using-custom-actions.md)
 * [Jump](../building-journeys/jump.md)
 
@@ -63,13 +63,15 @@ You can also set up specific actions to send messages:
 
 * If you are using a third-party system to send messages, you can create a specific custom action. [Learn more](../action/action.md)
 
-* If you are working with Campaign and Journey Optimizer, refer to these sections:
+* If you are working with [!DNL Adobe Campaign] and [!DNL Adobe Journey Optimizer], refer to these sections:
 
-   * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
-   * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)
-   * [[!DNL Journey Optimizer] and Marketo Engage](../action/marketo-engage.md)
+   * [[!DNL Adobe Journey Optimizer] and [!DNL Adobe Campaign] v7/v8](../action/acc-action.md)
+   * [[!DNL Adobe Journey Optimizer] and [!DNL Adobe Campaign] Standard](../action/acs-action.md)
+   * [[!DNL Adobe Journey Optimizer] and [!DNL Adobe Marketo Engage]](../action/marketo-engage.md)
 
 ## Best practices {#best-practices}
+
+Use these recommendations to keep journeys readable, consistent, and easy to troubleshoot.
 
 ### Add a label
 
@@ -103,7 +105,7 @@ In some particular contexts, you can override the values of these parameters for
 
 ### Add an alternative path
 
-When an error occurs in an action or a condition, the journey of an individual stops. The only way to make it continue is to check the box **[!UICONTROL Add an alternative path in case of a timeout or an error]**. See [this section](../building-journeys/using-the-journey-designer.md#paths).
+When an error occurs in an action or a condition, the journey of an individual stops. The only way to make it continue is to check the box **[!UICONTROL Add an alternative path in case of a timeout or an error]**. See [this section](../building-journeys/using-the-journey-designer.md#paths)
 
 ![Add an alternative path option in the Condition activity properties](assets/journey42.png)
 
@@ -113,4 +115,4 @@ Before testing and publishing your journey, verify that all the activities are p
 
 Learn how to troubleshoot errors in activities and in the journey [on this page](troubleshooting.md).
 
-See also **[Monitoring & troubleshooting](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)**.
+See also [Monitoring & troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)

@@ -4,8 +4,8 @@ product: journey optimizer
 title: Work with predefined filters
 description: Learn how to save, apply, and manage predefined filters in orchestrated campaigns
 version: Campaign Orchestration
+exl-id: fc508eb7-5b7a-4736-967b-523639eeb096
 ---
-
 # Work with predefined filters {#predefined-filters}
 
 Predefined filters are saved rules that you can reuse in the rule builder. Use them to avoid rebuilding common queries and to standardize targeting logic across orchestrated campaigns.

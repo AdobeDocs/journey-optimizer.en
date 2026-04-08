@@ -118,7 +118,7 @@ When adding the fragment to their email content, users can now override the vari
 
 * For HTML components, the variable displays in the list of editable fields in the Email Designer. [Learn how to customize editable fields in a visual fragment](../email/use-visual-fragments.md#customize-fields)
 
-### Editable expression fragment example {#example}
+### Example: customizable expression fragment {#example}
 
 In the example below, we are creating an expression fragment presenting new sports collections. By default, the fragment  displays this content: *Looking for more? Don't miss our latest sports collection!*
 
@@ -140,9 +140,9 @@ To do so:
 
 ## Add rich text to a customizable fragment {#rich-text}
 
-Rich text such as line breaks, bold, italics etc., can be added to an editable fragment by using HTML components. To do so, follow the steps below.
+Rich text such as line breaks, bold, italics etc., can be added to a customizable fragment by using HTML components. To do so, follow the steps below.
 <!--
-➡️ [Learn how to add and use rich text to an editable fragment in this video](#video)-->
+➡️ [Learn how to add and use rich text in a customizable fragment in this video](#video)-->
 
 ### Create a fragment including rich text {#add-rich-text}
 
@@ -170,9 +170,9 @@ Rich text such as line breaks, bold, italics etc., can be added to an editable f
 
 1. Save and [publish](create-fragments.md#publish) the fragment.
 
-### Use rich text editable fragments {#use-rich-text}
+### Use rich text in customizable fragments {#use-rich-text}
 
-When adding the fragment to their email content, users can now edit the rich text content and styling that you created. To use rich text editable fragments as a marketer, follow the steps below.
+When adding the fragment to your email, you can now edit the rich text content and styling that you created. As a marketer, follow the steps below.
 
 1. [Create an email](../email/create-email.md) in a campaign or a journey, then add the fragment with rich text that was [created](#add-rich-text).
 

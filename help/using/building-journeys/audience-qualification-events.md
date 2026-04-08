@@ -15,12 +15,12 @@ version: Journey Orchestration
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification"
->title="Audience qualification events"
->abstract="This activity allows your journey to listen to the entrances and exits of profiles in Adobe Experience Platform audiences in order to make individuals enter or move forward in a journey."
+>title="Audience qualification"
+>abstract="Trigger journey entry or continuation when a profile qualifies for or exits an [!DNL Adobe Experience Platform] audience. Recommended for streaming audiences; use a Read Audience activity for batch scenarios."
 
 ## About audience qualification events{#about-segment-qualification}
 
-This activity allows your journey to listen to the entrances and exits of profiles in Adobe Experience Platform audiences in order to make individuals enter or move forward in a journey. For more information about audience creation, refer to this [section](../audience/about-audiences.md).
+This activity listens to entrances and exits of profiles in [!DNL Adobe Experience Platform] audiences. It can make individuals enter a journey or move forward. For more information about audience creation, refer to this [section](../audience/about-audiences.md).
 
 Let's say you have a "silver customer" audience. With this activity, you can make all new silver customers enter a journey and send them a series of personalized messages.
 
@@ -37,6 +37,33 @@ This type of event can be positioned as the first step or later in the journey.
 ## Configure the activity {#configure-segment-qualification}
 
 To configure the **[!UICONTROL Audience Qualification]** activity, follow these steps:
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_label"
+>title="Label"
+>abstract="Add an optional label to identify this activity in reporting and test mode logs."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_audience"
+>title="Audience"
+>abstract="Select the [!DNL Adobe Experience Platform] audience to leverage. The journey listens for profile entrances and exits from this audience."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_behavior"
+>title="Behavior"
+>abstract="Choose whether to listen to audience entrances, exits, or both."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_identity"
+>title="Identity type"
+>abstract="Select the identity type used to identify individuals. Only people-based identity namespaces are available."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_merge_policy"
+>title="Merge policy"
+>abstract="The merge policy is automatically retrieved from your selected audience and applied throughout the entire journey."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties#merge-policies" text="Learn more about merge policies"
+
 
 1. Unfold the **[!UICONTROL Events]** category and drop an **[!UICONTROL Audience Qualification]** activity into your canvas.
 
@@ -62,13 +89,15 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 
    >[!NOTE]
    >
-   >**[!UICONTROL Enter]** and **[!UICONTROL Exit]** correspond to the **Realized** and **Exited** audience participation statuses from Adobe Experience Platform. For more on how to evaluate an audience, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}. 
+   >**[!UICONTROL Enter]** and **[!UICONTROL Exit]** correspond to the **Realized** and **Exited** audience participation statuses from [!DNL Adobe Experience Platform].
+   >See the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
 
 1. Select a namespace. This is only needed if the event is positioned as the first step of the journey. By default, the field is pre-filled with the last used namespace.
 
     >[!NOTE]
     >
-    >You can only select a people-based identity namespace. If you have defined a namespace for a lookup table (for example: ProductID namespace for a Product lookup), it will not be available in the **Namespace** dropdown list.
+    >You can only select a people-based identity namespace.
+    >Lookup table namespaces (for example, ProductID for a Product lookup) are not available in the **Namespace** dropdown list.
 
    ![Namespace selection for audience qualification identity](assets/segment7.png)
 
@@ -80,51 +109,57 @@ The payload contains the following context information, which you can use in con
 
 When using the expression editor in a condition or action that follows an **[!UICONTROL Audience Qualification]** activity, you have access to the **[!UICONTROL AudienceQualification]** node. You can choose between the **[!UICONTROL Last qualification time]** and the **[!UICONTROL status]** (enter or exit).
 
-See [Condition activity](../building-journeys/condition-activity.md#about_condition).
+See [Conditions](../building-journeys/conditions.md#about_condition).
 
-A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This time interval corresponds to the cache refresh interval of the dedicated service. Therefore, you must wait ten minutes before using this journey.
+A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This interval matches the cache refresh interval of the dedicated service. Wait ten minutes before using this journey.
 
 ## Best practices {#best-practices-segments}
 
-The **[!UICONTROL Audience Qualification]** activity enables the immediate entrance into journeys of individuals getting qualified or disqualified from an Adobe Experience Platform audience.
+The **[!UICONTROL Audience Qualification]** activity enables immediate entry into journeys for individuals qualifying or disqualifying from an [!DNL Adobe Experience Platform] audience.
 
-The reception speed of this information is high. Measurements show a speed of 10,000 events received per second. As a result, ensure you understand how peaks of entrance might happen, how to avoid them, and how to make your journey ready for them. Learn more about journey processing rates and throughput limits in [this section](entry-management.md#journey-processing-rate).
+The reception speed of this information is high. Measurements show 10,000 events received per second. Plan for entry spikes, avoid them when possible, and prepare your journey to handle them. Learn more about journey processing rates and throughput limits in [this section](entry-management.md#journey-processing-rate).
 
 ### Batch audiences {#batch-speed-segment-qualification}
 
-When using Audience Qualification for a batch audience, note that a peak of entrance occurs at the time of the daily calculation. The size of the peak depends on the number of individuals entering (or exiting) the audience daily.
+When using Audience Qualification for a batch audience, note that a peak of entrance occurs at the time of the daily calculation. The size of the peak depends on how many individuals enter or exit the audience each day.
 
-Moreover, if the batch audience is newly created and immediately used in a journey, the first batch of calculation might cause a very large number of individuals to enter the journey.
+Moreover, if the batch audience is newly created and immediately used in a journey, the first batch of calculation can drive many entries. Plan for this spike.
+
+### Timing of Segment Membership Updates {#timing-segment-membership}
+
+When using batch snapshots in a journey, any new segment memberships may only be reflected in subsequent snapshots. If immediate or same-day segment additions are essential, consider streaming segmentation or verifying that segment updates are captured by the next snapshot.
 
 ### Streamed audiences {#streamed-speed-segment-qualification}
 
-When using Audience Qualification for streamed audiences, there is less risk of large peaks of entrances/exits due to the continuous evaluation of the audience. However, if the audience definition leads to a large volume of customers qualifying simultaneously, a peak might still occur.
+When using Audience Qualification for streamed audiences, there is less risk of large entrance and exit peaks because evaluation is continuous. If the audience definition qualifies many customers at once, a peak can still occur.
 
-Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules rather than send events. [Learn more](../audience/about-audiences.md)
+Avoid using open and send events with streaming segmentation. Instead, use real user-activity signals like clicks, purchases, or beacon data. For frequency or suppression logic, use business rules instead of send events. [Learn more](../audience/about-audiences.md)
 
-For more information on streaming segmentation, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
+See the [[!DNL Adobe Experience Platform] streaming segmentation documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/streaming-segmentation){target="_blank"}.
 
 >[!NOTE]
 >
->For streaming segmentation, newly ingested data may take up to **2 hours** to propagate fully within Adobe Experience Platform for real-time use. Audiences that rely on day-based or time-based conditions (e.g., "events that occurred today") may experience additional complexity in qualification timing. If your journey depends on immediate audience qualification, consider adding a short [Wait activity](wait-activity.md) at the beginning or allow buffer time to ensure accurate qualification.
+>Propagation timing for streaming segment membership depends on how the membership is evaluated and where it is used in the journey:
+>
+>* **Audience Qualification node + streaming segment:** When a profile qualifies for a streaming segment at the Edge, that membership is projected from Edge to Hub before the journey can act on it. This Edge-to-Hub propagation typically takes **15 to 30 minutes**. If profiles are not entering an Audience Qualification journey as expected, allow for this propagation window (by adding a wait activity if appropriate) before investigating further. For use cases requiring true real-time entry, consider a unitary event trigger instead.
 
 #### Why not all qualified profiles may enter the journey {#streaming-entry-caveats}
 
-When using streaming audiences with the **Audience Qualification** activity, not all profiles that qualify for the audience will necessarily enter the journey. This behavior can occur due to:
+When using streaming audiences with the **Audience Qualification** activity, not all profiles that qualify for the audience will necessarily enter the journey. This behavior can occur for the following reasons:
 
-* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter.
+* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter. Similarly, when a streaming segment uses a **time-based condition** (for example, "event in the next 8 hours"), profiles that already met that condition before the segment was created are **not retroactively evaluated** — only profiles whose data changes after segment activation are assessed against the condition.
 
 * **Journey activation time**: When you publish a journey, the **Audience Qualification** activity takes up to **10 minutes** to become active and start listening for profile entries and exits. [Learn more about journey activation](#configure-segment-qualification).
 
 * **Quick exits from audience**: If a profile qualifies for the audience but exits before the journey entry is triggered, that profile may not enter the journey.
 
-* **Timing between qualification and journey processing**: Due to the distributed nature of Adobe Experience Platform, there may be timing gaps between when a profile qualifies for an audience and when the journey processes that qualification event.
+* **Timing between qualification and journey processing**: Due to the distributed nature of [!DNL Adobe Experience Platform], there may be timing gaps. A profile can qualify before the journey processes the qualification event.
 
 **Recommendations:**
 
 * After publishing a journey, wait at least 10 minutes before sending events or data that will trigger profile qualification. This ensures the journey is fully activated and ready to process entries.
 
-* For critical use cases where you need to ensure all qualified profiles enter, consider using a [Read Audience](read-audience.md) activity instead, which processes all profiles in an audience at a specific time.
+* For critical use cases where you need to ensure all qualified profiles enter, consider using a [Read Audience](read-audience.md) activity instead. It processes all profiles in an audience at a specific time.
 
 * Monitor your journey's [entry rate and throughput](entry-management.md#profile-entrance-rate) to understand profile flow patterns.
 
@@ -136,7 +171,7 @@ Here are a few best practices to avoid overloading systems leveraged in journeys
 
 * Do not use a batch audience immediately after its creation in an **[!UICONTROL Audience Qualification]** activity. This avoids the first calculation peak. A yellow warning appears in the journey canvas if you are about to use an audience that has never been calculated.
 
-   ![Error message when audience not found in Adobe Experience Platform](assets/segment-error.png)
+   ![Error message when audience not found in [!DNL Adobe Experience Platform]](assets/segment-error.png)
 
 * Put in place a capping rule for data sources and actions used in journeys to avoid overloading them. Learn more in [Journey Orchestration documentation](https://experienceleague.adobe.com/docs/journeys/using/working-with-apis/capping.html){target="_blank"}. Note that the capping rule has no retry. If you need to retry, use an alternative path in the journey by checking the box **[!UICONTROL Add an alternative path in case of a timeout or an error]** in conditions or actions.
 
@@ -155,10 +190,10 @@ Follow the guardrails and recommendations below to build Audience Qualification 
 
    However, if you want to use batch ingestion-based attributes in your streaming audience or a batch audience for an Audience Qualification journey, consider the time span for audience evaluation/activation. A batch audience or streaming audience using batch-ingested attributes becomes ready for use in the **Audience Qualification** activity approximately **2 hours** after the completion of your segmentation job. This job runs once a day at the time defined by your Adobe Organization administrator.
 
-* Adobe Experience Platform audiences are calculated either once a day (**batch** audiences) or in real-time (for **streamed** audiences, using the High Frequency Audiences option of Adobe Experience Platform).
+* [!DNL Adobe Experience Platform] audiences are calculated either once a day (**batch** audiences) or in real-time (for **streamed** audiences, using the High Frequency Audiences option of [!DNL Adobe Experience Platform]).
 
    * If the selected audience is streamed, individuals belonging to this audience potentially enter the journey in real-time.
-   * If the audience is batch, people newly qualified for this audience will potentially enter the journey when the audience calculation is executed on Adobe Experience Platform.
+   * If the audience is batch, people newly qualified for this audience will potentially enter the journey when the audience calculation is executed on [!DNL Adobe Experience Platform].
 
    As a best practice, use streaming audiences in a **Audience Qualification** activity. For batch use cases, please use a **[Read audience](read-audience.md)** activity.
 
@@ -174,7 +209,7 @@ Follow the guardrails and recommendations below to build Audience Qualification 
 
 >[!CAUTION]
 >
->[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to Adobe Journey Optimizer.
+>[Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html){target="_blank"} also apply to [!DNL Adobe Journey Optimizer].
 
 
 

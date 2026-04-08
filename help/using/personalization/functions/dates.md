@@ -402,21 +402,104 @@ The `formatDate` function is used to format a date time value. The format should
 {%= formatDate(datetime, format) %}
 ```
 
-Where the first string is the date attribute and the second value is how you would like the date to be converted and displayed.
+Where the first parameter is the date-time attribute and the second value is how you would like the date to be converted and displayed.
 
 >[!NOTE]
+>
+> The `formatDate` function requires a **date-time field type** as input, not a string. If your field is stored as a string type in your XDM schema, you must first convert it to date-time using a conversion function like `stringToDate()` or `toDateTime()`. See the examples below.
 >
 > If a date pattern is invalid the date will fallback to ISO standard format.
 >
 > You can use Java date formatting functions as summarized in [Oracle documentation](https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html){_blank}
 
-**Example**
+**Examples**
 
-The following operation will return the date in the following format: MM/DD/YY.
++++Formatting a date-time field
+
+The following operation formats a date-time field to MM/DD/YY format.
 
 ```sql
 {%= formatDate(profile.timeSeriesEvents._mobile.hotelBookingDetails.bookingDate, "MM/dd/YY") %}
 ```
+
++++
+
++++Converting a string to date first
+
+If your field is stored as a string, you must first convert it to a date-time using `stringToDate()` before formatting it.
+
+```sql
+{%= formatDate(stringToDate(profile.person.birthDayAndMonth), "MM/DD/YY") %}
+```
+
++++
+
++++Full date format with day name
+
+The following operation returns a full date format with day name, month name, day and year.
+
+```sql
+{%= formatDate(profile.person.birthDateTime, "EEEE MMMM dd yyyy") %}
+```
+
+Output: `Wednesday January 01 2020`
+
++++
+
++++Dynamic date based on system time
+
+You can format the current system time to generate dynamic dates. The following operation returns the current date in MM/dd/YYYY format.
+
+```sql
+{%= formatDate(getCurrentZonedDateTime(), "MM/dd/YYYY") %}
+```
+
+Output (on Jan 30, 2026): `01/30/2026`
+
++++
+
++++Day of week format
+
+You can extract the day of the week in short form.
+
+```sql
+{%= formatDate(getCurrentZonedDateTime(), "EEE") %}
+```
+
+Output: `Sun` (for Sunday), `Mon` (for Monday), `Tue` (for Tuesday), etc.
+
+For lowercase output, combine with the `lowerCase` function:
+
+```sql
+{%= lowerCase(formatDate(getCurrentZonedDateTime(), "EEE")) %}
+```
+
+Output: `sun`, `mon`, `tue`, etc.
+
++++
+
++++Formatting a timestamp from a context event
+
+When using a timestamp from a journey event context attribute, two requirements apply:
+
+* **Wrap the timestamp with `toDateTime()`** — context event timestamps are not automatically recognized as date-time values by `formatDate()`.
+* **Wrap numeric event IDs in backticks** — if your event ID is a number (for example, `1697323153`), it must be escaped with backticks in the expression path, otherwise the editor raises a PQL syntax error.
+* **Use `{% let %}` assignment syntax** — inline `{%= %}` syntax does not support this pattern. Assign the result to a variable first, then render it with `{{varName}}`.
+
+```handlebars
+{% let appointmentDate = formatDate(toDateTime(context.journey.events.`1697323153`.timestamp), "dd/MM/yyyy HH:mm") %}
+{{appointmentDate}}
+```
+
+Output (example): `18/03/2026 14:30`
+
++++
+
+>[!CAUTION]
+>
+>**Common error: "mismatched input '(' expecting \<EOF\>"**
+>
+>This PQL syntax error occurs when using `formatDate()` with a context event timestamp inline (`{%= formatDate(...) %}`). The most common causes are a numeric event ID that is not wrapped in backticks (`` ` ``), or a timestamp field passed directly to `formatDate()` without first wrapping it in `toDateTime()`. To fix both issues, use the `{% let %}` assignment pattern shown in the example above.
 
 ### Pattern characters {#pattern-characters}
 

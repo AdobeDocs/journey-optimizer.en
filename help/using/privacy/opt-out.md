@@ -25,6 +25,19 @@ While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails a
 >
 >In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
 
+### Check push opt-out status {#push-opt-out-status}
+
+Push opt-out for mobile apps is handled at the device level: when a user disables notifications on their device, the push token is removed from their profile. The **presence of a push token** on a profile is therefore the indicator of implicit push consent.
+
+To verify a profile's push consent status in Adobe Experience Platform:
+
+1. Open the profile in the **[!UICONTROL Profiles]** section of Adobe Experience Platform.
+1. Go to the **[!UICONTROL Attributes]** tab and look for the **[!UICONTROL Push Notification Details]** field group.
+1. If a push token is present, the profile has implicitly consented to receive push notifications. If no token is found, the user has opted out at the device level.
+
+>[!NOTE]
+>
+>For compliance use cases requiring explicit push consent tracking, use the **`consents.marketing.push.val`** attribute from the [Consents and Preferences field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. A value of `y` indicates explicit opt-in; `n` indicates explicit opt-out.
 
 Learn how to manage opt-out in Journey Optimizer email and SMS messages in these sections: 
 

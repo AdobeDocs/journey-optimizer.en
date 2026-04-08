@@ -7,6 +7,7 @@ feature: Overview
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
+exl-id: 628a5d84-6a33-4ed8-84cb-e2e4c6cc2b80
 ---
 # AI & Intelligent Features {#ai-features}
 
@@ -164,6 +165,7 @@ Use generative AI to create and personalize content across multiple channels, ac
 
 ### Key Features
 
+* **Full Content Generation** - Generate complete content experiences (text and images) in one flow for email, web, landing pages, and push. [Generate full content with AI Assistant](../content-management/generative-full-content.md)
 * **Text Generation** - Create compelling copy based on your brand voice and objectives. [Generate text with AI](../content-management/generative-text.md)
 * **Image Generation** - Generate custom images using Adobe Firefly. [Generate images with AI](../content-management/generative-image.md)
 * **Content Variations** - Produce multiple variations for A/B testing. [Content experiment with AI](../content-management/generative-experimentation.md)
@@ -172,7 +174,7 @@ Use generative AI to create and personalize content across multiple channels, ac
 
 ### Best Practices
 
-* **Be specific** - Provide clear, detailed prompts for better results
+* **Be specific** - Provide clear, detailed prompts for better results. [Learn prompt best practices](../content-management/ai-assistant-prompting-guide.md)
 * **Upload brand assets** - Use PDFs, images, or ZIP files (max 50MB) to maintain brand consistency
 * **Use custom templates** - Leverage brand-specific templates with up to 8-10 images
 * **Provide feedback** - Rate outputs to help improve the AI models
@@ -271,7 +273,13 @@ Browse Journey Optimizer playbooks for common scenarios like:
 
 Transform static image designs (JPEG, PNG) into editable HTML email templates using AI-powered conversion technology.
 
-[Learn more about Image to HTML](../email/image-to-html.md)
+[Learn more about Image to HTML](../content-management/image-to-html.md)
+
+### GenStudio for Performance Marketing
+
+Integrate with Adobe GenStudio for Performance Marketing to create AI-powered email content and import templates into Journey Optimizer for orchestration. Export Journey Optimizer templates to GenStudio, generate variations with AI, and bring them back for deployment. (Limited availability, email channel only.)
+
+[Learn more about GenStudio](../integrations/genstudio.md)
 
 ### Brand Alignment Scoring
 

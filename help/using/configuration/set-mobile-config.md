@@ -23,26 +23,31 @@ exl-id: 846e0d11-798b-4f3b-80db-848a17d32830
 >abstract="Adobe Experience Platform Assurance is embedded into this workflow to help you inspect your SDK implementation, as well as simulate and validate application events."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home" text="Adobe Experience Platform Assurance Overview"
 
-This set up facilitates the expeditious configuration of marketing channels, ensuring all required resources are readily available within Experience Platform, Journey Optimizer, and Data Collection. This enables your marketing team to start with campaign and journey creation.
+**Guided Channel Setup** is a streamlined workflow in Adobe Journey Optimizer that helps you quickly configure mobile and web marketing channels. It lives under **Administration** > **Channels** > **Channel configuration** and automates the creation of essential resources—such as tag properties, datastreams, and channel configurations—across Adobe Experience Platform, Journey Optimizer, and Data Collection. Instead of manually configuring each component, you follow a guided flow that sets everything up for you, so your marketing team can start creating In-app messages, push notifications, and web experiences without delay.
 
-The Guided Channel setup supports the following platforms and channels.
+The Guided Channel Setup supports the following platforms and channels.
 
-* Platforms and SDKs:
+>[!BEGINTABS]
 
-  * Swift by Apple, iOS
+>[!TAB iOS]
 
-  * Kotlin, Android
+**SDK:** Swift by Apple
 
-  * Javascript, Web
+**Channels:** Mobile In-App, Mobile Push Message
 
-* Channels:
+>[!TAB Android]
 
-  * Mobile In-App
+**SDK:** Kotlin
 
-  * Mobile Push Message
+**Channels:** Mobile In-App, Mobile Push Message
 
-  * Web Basic
+>[!TAB Web]
 
+**SDK:** Javascript
+
+**Channels:** Web Basic
+
+>[!ENDTABS]
 
 Note that for each platform that you would like to setup, it is required to create a separate configuration. This is because each app requires a unique Channel Configuration, and this provides the flexibility to determine which channels you would like for each platform.
 
@@ -105,21 +110,28 @@ Note that for each platform that you would like to setup, it is required to crea
 
 * If you are using the Existing configuration option, please ensure that you are using the following Adobe Experience Platform Mobile SDK extension versions. For more details on the SDK setup including the required dependencies and initialization code, please refer to the [following documentation](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/install-sdks).
   
-  For Android
+>[!BEGINTABS]
 
-    * Mobile Core v3.1.0 or later
-    * Adobe Journey Optimizer v3.1.0 or later
+>[!TAB For iOS]
 
-  For iOS
+* Mobile Core v5.2.0 or later
+* Adobe Journey Optimizer v5.1.1 or later
 
-    * Mobile Core v5.2.0 or later
-    * Adobe Journey Optimizer v5.1.1 or later
+
+>[!TAB For Android]
+
+* Mobile Core v3.1.0 or later
+* Adobe Journey Optimizer v3.1.0 or later
+
+
+>[!ENDTABS]
+
 
 ## Auto-created resources {#auto-create-resources}
 
 The Guided Channel Setup simplifies the rapid configuration of marketing channels, making all essential resources readily available in the Experience Platform, Journey Optimizer, and Data Collection apps. This allows your marketing team to quickly start creating campaigns and journeys. Below is a list of the resources that are auto generated and configured as a part of the Guided Channel Setup.
 
-Browse through the tabs below to access the comprehensive lists of all the resources that are auto generated:
+Browse the tabs below to access the comprehensive lists of all the resources that are auto generated:
 
 >[!BEGINTABS]
 

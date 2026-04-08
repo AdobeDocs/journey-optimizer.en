@@ -20,7 +20,7 @@ To learn more about Dynamic Media in Adobe Experience Manager as a Cloud Service
 
 >[!AVAILABILITY]
 >
->For Healthcare customer, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Enhanced Security add-on offerings.
+>For Healthcare customer, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Extended Security for Healthcare add-on offerings.
 
 
 ## Add and manage Dynamic media {#dynamic-media}

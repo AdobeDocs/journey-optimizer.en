@@ -5,6 +5,7 @@ title: Send wishlist item updates
 description: Send wishlist item updates
 feature: Use Cases
 version: Campaign Orchestration
+exl-id: fffc9d0c-f105-4944-89c2-e5fd4273ec3d
 ---
 # Send wishlist item updates {#wishist-uc}
 

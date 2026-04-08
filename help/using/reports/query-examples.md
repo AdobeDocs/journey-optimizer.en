@@ -13,6 +13,32 @@ exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
 
 This section provides commonly used examples to query Journey Step Events in Data Lake. Before diving into specific use cases, it's important to understand the key identifiers used in journey event data.
 
+## Prerequisites {#prerequisites}
+
+Before running any query on this page, ensure the following:
+
+* **Access to Adobe Experience Platform Query Service** — You must have access to [Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"} in your Adobe Experience Platform sandbox.
+* **Dataset available** — Queries target the `journey_step_events` dataset. Verify the dataset exists and contains data in your sandbox via **Experience Platform > Datasets**.
+* **Correct journey version ID** — Most queries require a `journeyVersionID`. Find it in Journey Optimizer under **Journeys > [your journey] > Properties**, or use `journeyVersionName` to locate it in the dataset first.
+* **Schema field values** — Make sure that the fields used in your queries have associated values in the corresponding schema. Empty fields return no results without errors.
+
+>[!TIP]
+>
+>**New to Query Service?** Open [Adobe Experience Platform](https://experience.adobe.com/), navigate to **Query Service > Queries**, paste any example below, replace the placeholder values (e.g. `<journeyVersionID>`, `<last x hours>`), and select **Run**.
+
+## Find the right query {#find-query}
+
+| I want to… | Go to |
+|---|---|
+| Count profiles that entered a journey | [Basic use cases](#common-queries) |
+| Debug a specific profile's journey path | [Profile-based queries](#profile-based-queries) |
+| Investigate Read Audience execution or errors | [Read Audience queries](#read-segment-queries) |
+| Troubleshoot message or action errors | [Message & Action errors](#message-action-errors) |
+| Analyze Audience Qualification discards | [Audience Qualification queries](#segment-qualification-queries) |
+| Debug external or business events | [Event-based queries](#event-based-queries) |
+| Monitor custom action endpoint performance | [Custom Action queries](#query-custom-action) |
+| Track Engageable Profiles and license usage | [Engageable Profiles queries](#engageable-profiles-queries) |
+
 Make sure that the fields used in your queries have associated values in the corresponding schema.
 
 ## Understanding key identifiers {#key-identifiers}
@@ -363,27 +389,25 @@ WHERE _experience.journeyOrchestration.serviceType is not null;
 
 This query allows you to list each error encountered in journeys while executing a message/action.
 
-_Data Lake query_
-
 ```sql
-SELECT _experience.journeyOrchestration.stepEvents.actionExecutionError, count(distinct _id) FROM journey_step_events
-WHERE _experience.journeyOrchestration.stepEvents.nodeName=<'message-name'>
+SELECT _experience.journeyOrchestration.stepEvents.actionExecutionError, count(distinct _id) AS ERROR_COUNT 
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.nodeName = '<message-name>'
 AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NULL
 AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>'
 GROUP BY _experience.journeyOrchestration.stepEvents.actionExecutionError
+ORDER BY ERROR_COUNT DESC;
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT _experience.journeyOrchestration.stepEvents.actionExecutionError, count(distinct _id) FROM journey_step_events
-WHERE _experience.journeyOrchestration.stepEvents.nodeName='Message - 100KB Email with Gateway and Kafkav2'
-AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NULL
-AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-143e-4f83-9cf5-cfec0fca3d26'
-GROUP BY _experience.journeyOrchestration.stepEvents.actionExecutionError
-```
+| actionExecutionError | ERROR_COUNT |
+|---|---|
+| TimedOut | 145 |
+| ErrorConnecting | 87 |
+| InvalidResponse | 23 |
 
-This query returns all the different errors that occurred while executing an action in a journey along with the count of how many times it occurred.
+This query returns all the different errors that occurred while executing an action in a journey along with the count of how many times each error occurred, ordered by frequency.
 
 +++
 
@@ -393,25 +417,20 @@ This query returns all the different errors that occurred while executing an act
 
 This query checks whether a specific profile entered a journey by counting the events associated with that profile and journey combination.
 
-_Data Lake query_
-
 ```sql
-SELECT count(distinct _id) FROM journey_step_events
-where
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>'
+SELECT count(distinct _id) AS EVENT_COUNT 
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>';
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT count(distinct _id) FROM journey_step_events
-where
-_experience.journeyOrchestration.stepEvents.journeyVersionID = 'ec9efdd0-8a7c-4d7a-a765-b2cad659fa4e' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
-```
+| EVENT_COUNT |
+|---|
+| 3 |
 
-The result should be greater than 0. This query returns the exact number of times a profile has entered a journey.
+This query returns the exact number of times a profile has entered a journey. A result greater than 0 confirms that the profile entered the journey.
 
 +++
 
@@ -419,51 +438,41 @@ The result should be greater than 0. This query returns the exact number of time
 
 Method 1: if the name of your message is not unique in the journey (it is used at multiple places).
 
-_Data Lake query_
-
 ```sql
-SELECT count(distinct _id) FROM journey_step_events WHERE
-_experience.journeyOrchestration.stepEvents.nodeID='<NodeId in the UI corresponding to the message>' AND
-_experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>'
+SELECT count(distinct _id) AS MESSAGE_SENT_COUNT 
+FROM journey_step_events 
+WHERE _experience.journeyOrchestration.stepEvents.nodeID = '<NodeId in the UI corresponding to the message>' 
+AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL 
+AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>';
 ```
 
-_Example_
-    
-```sql
-SELECT count(distinct _id) FROM journey_step_events WHERE
-_experience.journeyOrchestration.stepEvents.nodeID='17ae65a1-02dd-439d-b54e-b56a78520eba' AND
-_experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-143e-4f83-9cf5-cfec0fca3d26' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
-```
+_Sample output_
 
-The result should be greater than 0. This query only tells us whether the message action was successfully executed on the journey side.
+| MESSAGE_SENT_COUNT |
+|---|
+| 1 |
+
+A result greater than 0 confirms the message action was successfully executed. This query only tells us whether the message action was successfully executed on the journey side.
 
 Method 2: if the name of your message is unique in the journey.
 
-_Data Lake query_
-
 ```sql
-SELECT count(distinct _id) FROM journey_step_events WHERE
-_experience.journeyOrchestration.stepEvents.nodeName='<NodeName in the UI corresponding to the message>' AND
-_experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>'
+SELECT count(distinct _id) AS MESSAGE_SENT_COUNT 
+FROM journey_step_events 
+WHERE _experience.journeyOrchestration.stepEvents.nodeName = '<NodeName in the UI corresponding to the message>' 
+AND _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL 
+AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>';
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT count(distinct _id) FROM journey_step_events WHERE
-_experience.journeyOrchestration.stepEvents.nodeID='Message- 100KB Email' AND
-_experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.journeyVersionID = '67b14482-143e-4f83-9cf5-cfec0fca3d26' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com'
-```
+| MESSAGE_SENT_COUNT |
+|---|
+| 1 |
 
-The query returns the list of all messages along with their count invoked for the selected profile.
+The query returns the count of times the message was successfully invoked for the selected profile.
 
 +++
 
@@ -471,27 +480,26 @@ The query returns the list of all messages along with their count invoked for th
 
 This query retrieves all successfully executed message actions for a specific profile within the last 30 days, grouped by message name.
 
-_Data Lake query_
-
 ```sql
-SELECT _experience.journeyOrchestration.stepEvents.nodeName, count(distinct _id) FROM journey_step_events
-WHERE  _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.nodeType = 'action' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>' AND
-timestamp > (now() - interval '30' day)
+SELECT _experience.journeyOrchestration.stepEvents.nodeName AS MESSAGE_NAME, 
+       count(distinct _id) AS MESSAGE_COUNT 
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL 
+AND _experience.journeyOrchestration.stepEvents.nodeType = 'action' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>' 
+AND timestamp > (now() - interval '30' day)
 GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
+ORDER BY MESSAGE_COUNT DESC;
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT _experience.journeyOrchestration.stepEvents.nodeName, count(distinct _id) FROM journey_step_events
-WHERE  _experience.journeyOrchestration.stepEvents.actionExecutionError IS NULL AND
-_experience.journeyOrchestration.stepEvents.nodeType = 'action' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com' AND
-timestamp > (now() - interval '30' day)
-GROUP BY _experience.journeyOrchestration.stepEvents.nodeName
-```
+| MESSAGE_NAME | MESSAGE_COUNT |
+|---|---|
+| Welcome Email | 1 |
+| Product Recommendation | 3 |
+| Cart Abandonment Reminder | 2 |
+| Weekly Newsletter | 4 |
 
 The query returns the list of all messages along with their count invoked for the selected profile.
 
@@ -501,27 +509,26 @@ The query returns the list of all messages along with their count invoked for th
 
 This query returns all the journeys that a specific profile has entered within the last 30 days, along with the entry count for each journey.
 
-_Data Lake query_
-
 ```sql
-SELECT _experience.journeyOrchestration.stepEvents.journeyVersionName, count(distinct _id) FROM journey_step_events
-WHERE  _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
-_experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>' AND
-timestamp > (now() - interval '30' day)
+SELECT _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME, 
+       count(distinct _id) AS ENTRY_COUNT 
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.nodeType = 'start' 
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID corresponding to the namespace used>' 
+AND timestamp > (now() - interval '30' day)
 GROUP BY _experience.journeyOrchestration.stepEvents.journeyVersionName
+ORDER BY ENTRY_COUNT DESC;
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT _experience.journeyOrchestration.stepEvents.journeyVersionName, count(distinct _id) FROM journey_step_events
-WHERE  _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
-_experience.journeyOrchestration.stepEvents.profileID = 'saurgarg@adobe.com' AND
-timestamp > (now() - interval '30' day)
-GROUP BY _experience.journeyOrchestration.stepEvents.journeyVersionName
-```
+| JOURNEY_NAME | ENTRY_COUNT |
+|---|---|
+| Welcome Journey v2 | 1 |
+| Product Recommendations | 5 |
+| Re-engagement Campaign | 2 |
 
-The query returns the list of all journey names along with the number of times the queried profile entered the journey.
+The query returns the list of all journey names along with the number of times the queried profile entered each journey.
 
 +++
 
@@ -529,27 +536,27 @@ The query returns the list of all journey names along with the number of times t
 
 This query provides a daily breakdown of the number of distinct profiles that entered a journey over a specified time period.
 
-_Data Lake query_
-
 ```sql
-SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.profileID) FROM journey_step_events
+SELECT DATE(timestamp) AS ENTRY_DATE, 
+       count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS PROFILES_COUNT 
+FROM journey_step_events
 WHERE DATE(timestamp) > (now() - interval '<last x days>' day)
 AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>'
 GROUP BY DATE(timestamp)
-ORDER BY DATE(timestamp) desc
+ORDER BY DATE(timestamp) DESC;
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.profileID) FROM journey_step_events
-WHERE DATE(timestamp) > (now() - interval '100' day)
-AND _experience.journeyOrchestration.stepEvents.journeyVersionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1'
-GROUP BY DATE(timestamp)
-ORDER BY DATE(timestamp) desc
-```
+| ENTRY_DATE | PROFILES_COUNT |
+|---|---|
+| 2024-11-25 | 1,245 |
+| 2024-11-24 | 1,189 |
+| 2024-11-23 | 15,340 |
+| 2024-11-22 | 1,205 |
+| 2024-11-21 | 1,167 |
 
-The query returns, for the defined period, the number of profiles that entered the journey each day. If a profile entered via multiple identities, it will be counted twice. If reentrance is enabled, profile count might be duplicated across different days if it reentered the journey on different day.
+The query returns, for the defined period, the number of profiles that entered the journey each day. If a profile entered via multiple identities, it will be counted twice. If reentrance is enabled, profile count might be duplicated across different days if it reentered the journey on a different day.
 
 Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
 
@@ -562,8 +569,6 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 This query calculates the duration of an audience export job by finding the time difference between when the job was queued and when it finished.
 
-_Data Lake query_
-
 ```sql
 select DATEDIFF (minute,
               (select timestamp
@@ -573,20 +578,6 @@ _experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'queued
               (select timestamp
                 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'finished')) AS export_job_runtime;
-```
-
-_Example_
-
-```sql
-select DATEDIFF (minute,
-              (select timestamp
-                where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'queued') ,
-              (select timestamp
-                where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.status = 'finished')) AS export_job_runtime;
 ```
 
@@ -598,21 +589,10 @@ The query returns the time difference, in minutes, between when time the audienc
 
 This query counts the number of distinct profiles that were discarded due to instance duplication errors during the Read Audience activity.
 
-_Data Lake query_
-
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_DUPLICATION'
-```
-
-_Example_
-
-```sql
-SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_DUPLICATION'
 ```
 
@@ -624,21 +604,10 @@ The query returns all the profile Ids that were discarded by the journey because
 
 This query returns the count of profiles that were discarded because they had an invalid namespace or missing identity for the required namespace.
 
-_Data Lake query_
-
 ```sql
 SELECT count(*) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_BAD_NAMESPACE'
-```
-
-_Example_
-
-```sql
-SELECT count(*) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_BAD_NAMESPACE'
 ```
 
@@ -650,21 +619,10 @@ The query returns all the profile Ids that were discarded by the journey because
 
 This query counts the profiles that were discarded because they were missing an identity map required for journey execution.
 
-_Data Lake query_
-
 ```sql
 SELECT count(*) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NO_IDENTITY_MAP'
-```
-
-_Example_
-
-```sql
-SELECT count(*) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NO_IDENTITY_MAP'
 ```
 
@@ -676,21 +634,10 @@ The query returns all the profile Ids that were discarded by the journey because
 
 This query identifies profiles that were discarded when the journey was running in test mode but the profile did not have the testProfile attribute set to true.
 
-_Data Lake query_
-
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NOT_A_TEST_PROFILE'
-```
-
-_Example_
-
-```sql
-SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_NOT_A_TEST_PROFILE'
 ```
 
@@ -702,21 +649,10 @@ The query returns all the profile Ids that were discarded by the journey because
 
 This query returns the count of profiles that were discarded due to internal system errors during journey execution.
 
-_Data Lake query_
-
 ```sql
 SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
 where
 _experience.journeyOrchestration.journey.versionID = '<journey-version-id>' AND
-_experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_INTERNAL'
-```
-
-_Example_
-
-```sql
-SELECT count(distinct _experience.journeyOrchestration.profile.ID) FROM journey_step_events
-where
-_experience.journeyOrchestration.journey.versionID = '180ad071-d42d-42bb-8724-2a6ff0a109f1' AND
 _experience.journeyOrchestration.serviceEvents.segmentExportJob.eventCode = 'ERROR_INSTANCE_INTERNAL'
 ```
 
@@ -1027,8 +963,6 @@ This query returns all events (external events / audience qualification events) 
 
 This query counts the number of times a business event was received by a journey, grouped by date, within a specified time frame.
 
-_Data Lake query_
-
 ```sql
 SELECT DATE(timestamp), count(distinct _id)
 FROM journey_step_events
@@ -1039,42 +973,17 @@ _experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
 WHERE DATE(timestamp) > (now() - interval '<last x hours>' hour)
 ```
 
-_Example_
-
-```sql
-SELECT DATE(timestamp), count(distinct _id)
-FROM journey_step_events
-where
-_experience.journeyOrchestration.stepEvents.journeyVersionID = 'b1093bd4-11f3-44cc-961e-33925cc58e18' AND
-_experience.journeyOrchestration.stepEvents.nodeName = 'TEST_MLTrainingSession' AND
-_experience.journeyOrchestration.stepEvents.nodeType = 'start' AND
-WHERE DATE(timestamp) > (now() - interval '6' hour)
-```
-
 +++
 
 +++Check if an external event of a profile got discarded because no related journey was found
 
 This query identifies when an external event for a specific profile was discarded because there was no active or matching journey configured to receive that event.
 
-_Data Lake query_
-
 ```sql
 SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
 where
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventID = '<eventId>' AND
 _experience.journeyOrchestration.profile.ID = '<profileID>' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
-```
-
-_Example_
-
-```sql
-SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp) FROM journey_step_events
-where
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventID = '515bff852185e434ca5c83bcfc4f24626b1545ca615659fc4cfff91626ce61a6' AND
-_experience.journeyOrchestration.profile.ID = 'mandee@adobe.com' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'EVENT_WITH_NO_JOURNEY'
 ```
@@ -1087,26 +996,12 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 This query retrieves external events that were discarded for a specific profile due to internal service errors, along with the event ID and error code.
 
-_Data Lake query_
-
 ```sql
 SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp), _experience.journeyOrchestration.serviceEvents.dispatcher.eventID, _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode
 FROM journey_step_events
 where
 _experience.journeyOrchestration.profile.ID='<profileID>' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventID='<eventID>' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
-```
-
-_Example_
-
-```sql
-SELECT _experience.journeyOrchestration.profile.ID, DATE(timestamp), _experience.journeyOrchestration.serviceEvents.dispatcher.eventID, _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode
-FROM journey_step_events
-where
-_experience.journeyOrchestration.profile.ID='mandee@adobe.com' AND
-_experience.journeyOrchestration.serviceEvents.dispatcher.eventID='81c51be978d8bdf9ef497076b3e12b14533615522ecea9f5080a81c736491656' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard' AND
 _experience.journeyOrchestration.serviceEvents.dispatcher.eventType = 'ERROR_SERVICE_INTERNAL';
 ```
@@ -1118,16 +1013,6 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 +++Check the count of all the events discarded by stateMachine by errorCode
 
 This query aggregates all events discarded by the journey state machine, grouped by error code to help identify the most common reasons for discards.
-
-_Data Lake query_
-
-```sql
-SELECT _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode, COUNT() FROM journey_step_events
-where
-_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' GROUP BY _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode
-```
-
-_Example_
 
 ```sql
 SELECT _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode, COUNT() FROM journey_step_events
@@ -1143,19 +1028,6 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 This query identifies all events that were discarded because a profile attempted to reenter a journey when reentrance was not permitted in the journey configuration.
 
-_Data Lake query_
-
-```sql
-SELECT DATE(timestamp), _experience.journeyOrchestration.profile.ID,
-_experience.journeyOrchestration.journey.versionID,
-_experience.journeyOrchestration.serviceEvents.stateMachine.eventCode 
-FROM journey_step_events
-where
-_experience.journeyOrchestration.serviceEvents.stateMachine.eventType = 'discard' AND _experience.journeyOrchestration.serviceEvents.stateMachine.eventCode='reentranceNotAllowed'
-```
-
-_Example_
-
 ```sql
 SELECT DATE(timestamp), _experience.journeyOrchestration.profile.ID,
 _experience.journeyOrchestration.journey.versionID,
@@ -1169,29 +1041,175 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 +++
 
+## Queries for Engageable Profiles {#engageable-profiles-queries}
+
+These queries help you monitor and analyze your Engageable Profiles count. An Engageable Profile is a unique profile that has been engaged through journeys or campaigns in the past 12 months. Learn more about [Engageable Profiles and license usage](../audience/license-usage.md#what-is-engageable-profile).
+
+>[!IMPORTANT]
+>
+>**Best practices for querying Engageable Profiles:**
+>* Ensure each non-aggregate field is included in the `GROUP BY` clause
+>* Avoid referencing datasets that don't exist in your sandbox - confirm dataset names in the Platform UI
+>* Use `distinct` when counting unique profiles to avoid duplicates across identity namespaces
+>* When using `LIMIT`, place it at the end of the query after `ORDER BY` clauses
+
++++Count unique profiles engaged by a specific journey
+
+This query returns the number of distinct profiles that have been engaged by a specific journey, which contributes to your Engageable Profiles count.
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journeyVersionID>'
+AND timestamp > (now() - interval '12' month);
+```
+
+This query helps you understand how many unique profiles a specific journey has contributed to your [Engageable Profiles](../audience/license-usage.md) count in the past 12 months.
+
++++
+
++++Count profiles engaged per journey in the last 12 months
+
+This query shows the number of unique profiles engaged by each journey in your organization over the past 12 months, helping you identify which journeys are contributing most to your [Engageable Profiles](../audience/license-usage.md) count.
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '12' month)
+GROUP BY 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName
+ORDER BY ENGAGED_PROFILES DESC;
+```
+
+_Sample output_
+
+| JOURNEY_VERSION_ID | JOURNEY_NAME | ENGAGED_PROFILES |
+|---|---|---|
+| 67b14482-143e-4f83-9cf5-cfec0fca3d26 | Welcome Campaign v2 | 125,450 |
+| a3c21b89-456d-4e21-b8f3-9a8e7c6d5432 | Product Launch Journey | 98,230 |
+| f9e8d7c6-b5a4-3210-9876-543210fedcba | Re-engagement Flow | 45,670 |
+
+This output helps you identify which journeys are engaging the most profiles and contributing most significantly to your Engageable Profiles count.
+
+>[!NOTE]
+>
+>This query groups by both `journeyVersionID` and `journeyVersionName`. Both fields must be included in the `GROUP BY` clause since they are selected in the query. Omitting fields from the `GROUP BY` clause will cause the query to fail.
+
++++
+
++++Count profiles engaged by journeys daily over the past 30 days
+
+This query provides a daily breakdown of newly engaged profiles, helping you identify spikes in [Engageable Profiles](../audience/license-usage.md) count.
+
+```sql
+SELECT 
+    DATE(timestamp) AS ENGAGEMENT_DATE,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '30' day)
+GROUP BY DATE(timestamp)
+ORDER BY ENGAGEMENT_DATE DESC;
+```
+
+_Sample output_
+
+| ENGAGEMENT_DATE | ENGAGED_PROFILES |
+|---|---|
+| 2024-11-25 | 8,450 |
+| 2024-11-24 | 7,820 |
+| 2024-11-23 | 125,340 |
+| 2024-11-22 | 9,230 |
+| 2024-11-21 | 8,670 |
+
+This output helps you monitor daily trends and identify when large numbers of profiles are being engaged. In this example, November 23 shows a significant spike (125,340 profiles) compared to typical daily engagement (~8,000 profiles), which would warrant investigation to understand what journey or campaign caused the increase in your [Engageable Profiles](../audience/license-usage.md) count.
+
++++
+
++++Identify journeys that recently engaged large audiences
+
+This query helps identify which journeys have engaged large numbers of new profiles in recent time periods, which may explain sudden increases in [Engageable Profiles](../audience/license-usage.md) count.
+
+```sql
+SELECT 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID AS JOURNEY_VERSION_ID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName AS JOURNEY_NAME,
+    DATE(timestamp) AS ENGAGEMENT_DATE,
+    count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '7' day)
+AND _experience.journeyOrchestration.stepEvents.nodeType = 'start'
+GROUP BY 
+    _experience.journeyOrchestration.stepEvents.journeyVersionID,
+    _experience.journeyOrchestration.stepEvents.journeyVersionName,
+    DATE(timestamp)
+HAVING count(distinct _experience.journeyOrchestration.stepEvents.profileID) > 1000
+ORDER BY ENGAGEMENT_DATE DESC, ENGAGED_PROFILES DESC;
+```
+
+_Sample output_
+
+| JOURNEY_VERSION_ID | JOURNEY_NAME | ENGAGEMENT_DATE | ENGAGED_PROFILES |
+|---|---|---|---|
+| 67b14482-143e-4f83-9cf5-cfec0fca3d26 | Black Friday Campaign | 2024-11-23 | 125,340 |
+| a3c21b89-456d-4e21-b8f3-9a8e7c6d5432 | Product Launch Journey | 2024-11-22 | 45,230 |
+| f9e8d7c6-b5a4-3210-9876-543210fedcba | Holiday Newsletter | 2024-11-21 | 32,150 |
+
+This query filters for journeys that engaged more than 1,000 profiles per day in the past 7 days. The output shows which specific journeys and dates are responsible for large profile engagements. Adjust the `HAVING` clause threshold based on your needs (e.g., change `> 1000` to `> 10000` for larger thresholds).
+
++++
+
++++Total unique profiles engaged across all journeys in the last 12 months
+
+This query provides a count of unique profiles engaged across all journeys in the past 12 months, giving you an overview of your journey-based engagement.
+
+```sql
+SELECT count(distinct _experience.journeyOrchestration.stepEvents.profileID) AS TOTAL_ENGAGED_PROFILES
+FROM journey_step_events
+WHERE timestamp > (now() - interval '12' month);
+```
+
+_Sample output_
+
+| TOTAL_ENGAGED_PROFILES |
+|---|
+| 2,547,890 |
+
+This single number represents the total count of unique profiles that have been engaged by at least one journey in the past 12 months.
+
+>[!NOTE]
+>
+>This query counts distinct profile IDs in the journey step events dataset. The actual Engageable Profiles count shown in the [License Usage Dashboard](../audience/license-usage.md) may differ slightly, as it also includes profiles engaged through campaigns and other Journey Optimizer capabilities beyond journeys.
+
++++
+
 ## Common journey-based queries {#journey-based-queries}
 
 +++Number of daily active journeys
 
 This query returns a daily count of unique journey versions that had activity, helping you understand journey execution patterns over time.
 
-_Data Lake query_
-
 ```sql
-SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.journeyVersionID) FROM journey_step_events
+SELECT DATE(timestamp) AS ACTIVITY_DATE, 
+       count(distinct _experience.journeyOrchestration.stepEvents.journeyVersionID) AS ACTIVE_JOURNEYS
+FROM journey_step_events
 WHERE DATE(timestamp) > (now() - interval '<last x days>' day)
 GROUP BY DATE(timestamp)
-ORDER BY DATE(timestamp) desc
+ORDER BY DATE(timestamp) DESC;
 ```
 
-_Example_
+_Sample output_
 
-```sql
-SELECT DATE(timestamp), count(distinct _experience.journeyOrchestration.stepEvents.journeyVersionID) FROM journey_step_events
-WHERE DATE(timestamp) > (now() - interval '100' day)
-GROUP BY DATE(timestamp)
-ORDER BY DATE(timestamp) desc
-```
+| ACTIVITY_DATE | ACTIVE_JOURNEYS |
+|---|---|
+| 2024-11-25 | 12 |
+| 2024-11-24 | 15 |
+| 2024-11-23 | 14 |
+| 2024-11-22 | 11 |
+| 2024-11-21 | 13 |
 
 The query returns, for the defined period, the count of unique journeys that triggered each day. A single journey triggering on multiple days will be counted once per day.
 

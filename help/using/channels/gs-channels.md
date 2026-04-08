@@ -41,6 +41,16 @@ Learn how to create, configure, and send push notifications for iOS and Android,
 :::
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
+
+iOS Live activities
+
+Deliver persistent, real-time updates directly on the iPhone Lock Screen and Dynamic Island. Power Live activities from API-triggered campaigns for individual use cases (order tracking, ride status) or broadcast use cases (sports scores, flight status).
+
+[Learn more about iOS Live activities](../mobile-live/get-started-mobile-live.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg)
 
 SMS / MMS / RCS Messaging
@@ -58,6 +68,26 @@ Direct Mail Campaigns
 Discover how to create and manage direct mail campaigns, including exporting extraction files for third-party providers and ensuring compliance with user consent.
 
 [Learn more about Direct mail campaigns](../../rp_landing_pages/direct-mail-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
+
+WhatsApp Messaging
+
+Learn how to integrate and use WhatsApp messaging via Meta's Cloud API for personalized and compliant communication campaigns and journeys.
+
+[Learn more about WhatsApp messaging](../../rp_landing_pages/whatsapp-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/comment.svg)
+
+LINE Messaging
+
+Discover how to configure, create, and personalize LINE messages for effective communication in campaigns and journeys.
+
+[Learn more about LINE messaging](../../rp_landing_pages/line-landing-page.md)
 :::
 
 ::::
@@ -111,11 +141,6 @@ Discover how to configure, create, and design content cards for engaging and per
 ::::
 
 
-## Additional Resources
-
-- **[WhatsApp Messaging](../../rp_landing_pages/whatsapp-landing-page.md)** - Learn how to integrate and use WhatsApp messaging via Meta's Cloud API for personalized and compliant communication campaigns.
-- **[LINE Messaging](../../rp_landing_pages/line-landing-page.md)** - Discover how to configure, create, and personalize LINE messages for effective communication in campaigns and journeys.
-
 ## Channels in journeys & campaigns {#channels}
 
 In Adobe Journey Optimizer, you can leverage communication channels in two primary contexts:
@@ -131,8 +156,9 @@ The table below shows the availability of each channel across different journeys
 | Email                | ✅ | ✅ | ✅ | ✅ | ✅ |
 | SMS                  | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Push notification    | ✅ | ✅ | ✅ | ✅ | ✅ |
+| iOS Live activities  | — | — | — | ✅ | — |
 | In-app               | ✅ | ✅ | — | — | — |
-| Direct mail          | ✅ | ✅ | — | — | — |
+| Direct mail          | ✅ | ✅ | — | — | ✅ |
 | Web                  | ✅ | ✅ | — | — | — |
 | Code-based exp.      | ✅ | ✅ | — | — | — |
 | Content cards        | ✅ | ✅ | — | — | — |

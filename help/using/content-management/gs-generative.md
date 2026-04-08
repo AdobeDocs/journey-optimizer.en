@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
+mini-toc-levels: 1
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 ---
 # Get started with AI Assistant {#gs-content-assistant}
@@ -41,21 +42,27 @@ AI Assistant supports generation **in multiple languages** enabling you to reach
     <tr style="border: 0;background-color: #FFFFFF;">
       <td>
         <ul>
-          <li>French</li>
-          <li>Spanish</li>
-          <li>German</li>
-          <li>Italian</li>
+          <li>Chinese (Hong Kong)</li>
+          <li>Chinese (Simplified)</li>
+          <li>Chinese (Taiwan)</li>
+          <li>Dutch</li>
         </ul>
       </td>
       <td>
         <ul>
+          <li>French</li>
+          <li>German</li>
+          <li>Italian</li>
           <li>Japanese</li>
-          <li>Swedish</li>
-          <li>Dutch</li>
-          <li>Norwegian</li>
         </ul>
       </td>
       <td>
+        <ul>
+          <li>Norwegian</li>
+          <li>Portuguese</li>
+          <li>Spanish</li>
+          <li>Swedish</li>
+        </ul>
       </td>
     </tr>
   </tbody>
@@ -65,7 +72,7 @@ Use AI Assistant in Adobe Journey Optimizer to optimize your message's impact by
 
 >[!IMPORTANT]
 >
->* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).
+>* Before you start using this capability, read the related [Guardrails and limitations](#generative-guardrails).
 >
 >
 >* You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
@@ -102,19 +109,30 @@ The user will receive an email with instructions to access your instance.
 
 General guidelines for using AI Assistant in Adobe Journey Optimizer for email generation are listed below:
 
-* The quality of the generated content is strongly impacted by the marketing objective / prompt you define. Use well defined prompt for the GenAI model to accurately interpret. 
-* Upload brand asset to have accurate, on brand content. Else, content is based on publicly available info. The uploaded content can be in the following formats: PDF, JPEG, PNG, or ZIP files (with supported file formats).
-* The maximum size for uploaded brand asset is 50MB. Larger files or lots of images can work but the processing time is increased.
-* Use brand specific or custom template to create your email content using AI Assistant in Adobe Journey Optimizer. Email templates with up to 8-10 images is recommended.
-* Make sure to report any problematic outputs using the thumb up, thumb down or flag icons when selecting variants.
-* Your use of AI Assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
-* As part of Adobe's commitment to promote transparency in the use of generative AI tools in media creation, Adobe will apply Content Credentials when content or a project that included a Firefly generated asset is downloaded or exported. [Learn more](https://helpx.adobe.com/firefly/using/content-credentials.html)
-
-The following limitations apply to AI Assistant in Adobe Journey Optimizer:
+### Supported channels
 
 * Only available for the email, push, web and SMS channels.
+
+### Content quality, prompts, and feedback
+
+* The quality of the generated content is strongly impacted by the marketing objective / prompt you define. Use well defined prompt for the GenAI model to accurately interpret. 
 * GenAI content might not always be accurate: please share your feedback so that our engineers can refine the models.
+* Make sure to report any problematic outputs using the thumb up, thumb down or flag icons when selecting variants.
+
+### Brand assets
+
+* Upload brand asset to have accurate, on brand content. Else, content is based on publicly available info. The uploaded content can be in the following formats: PDF, JPEG, PNG, or ZIP files (with supported file formats).
+* The maximum size for uploaded brand asset is 50MB. Larger files or lots of images can work but the processing time is increased.
 * You may upload multiple brand assets, but can leverage only one for a specific generation.
+
+### Email templates and imagery
+
+* Use brand specific or custom template to create your email content using AI Assistant in Adobe Journey Optimizer. Email templates with up to 8-10 images is recommended.
+
+### Legal use and transparency
+
+* Your use of AI Assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
+* As part of Adobe's commitment to promote transparency in the use of generative AI tools in media creation, Adobe will apply Content Credentials when content or a project that included a Firefly generated asset is downloaded or exported. [Learn more](https://helpx.adobe.com/firefly/using/content-credentials.html)
 
 
 ## AI Assistant content generation capabilities {#generative-features}

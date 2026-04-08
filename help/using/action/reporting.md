@@ -1,13 +1,13 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journey report
+title: Monitor your custom actions
 description: Learn how to use data from the journey report
 feature: Reporting, Journeys
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Limited availability" type="Informative"
+exl-id: 908f553a-6d2b-45e5-bdb2-eb685f5e1165
 ---
 # Monitor your custom actions {#reporting}
 
@@ -15,10 +15,6 @@ badge: label="Limited availability" type="Informative"
 >id="ajo_campaigns_custom_actions_monitor"
 >title="Monitor your custom actions"
 >abstract="The **[!UICONTROL Custom action]** reporting page lets you track the performance and reliability of API calls your journeys make to third-party systems."
-
->[!AVAILABILITY]
->
->Custom actions reporting is currently only available for a set of organizations (Limited Availability). 
 
 The **[!UICONTROL Custom action]** reporting page allows you to monitor the reliability and performance of API calls made from your journeys to third-party systems. These reports help you quickly identify integration issues, latency bottlenecks, or throttling/capping limits that may impact delivery.
 
@@ -28,7 +24,7 @@ To access the **[!UICONTROL Custom action]** reporting page, click ![](assets/do
 
 ![](assets/monitor-1.png)
 
-➡️ [Learn more on how to configure you Custom actions](../action/about-custom-action-configuration.md)
+➡️ [Learn more about Custom actions configuration](../action/about-custom-action-configuration.md)
 
 In addition to the **[!UICONTROL Custom action]** reporting page, you can use **[!DNL Adobe Experience Platform Query Service]** to build queries to report on custom action performance metrics. Query examples are available in [this section](../reports/query-examples.md).
 
@@ -50,19 +46,34 @@ The **[!UICONTROL Custom action]** Key Performance Indicators (KPIs) serve as a 
 
 * **[!UICONTROL Average RPS]**: Number of requests per second processed by the custom action over the selected time range.
 
+* **[!UICONTROL Average latency]**: Average end-to-end response time (in milliseconds) for all HTTP calls, including successful calls, errors, and timeouts.
+
+* **[!UICONTROL Average successful latency]**: Average end-to-end response time (in milliseconds) for successful calls only, excluding failed requests and timeouts.
+
+* **[!UICONTROL Average queue time]**: Average time (in milliseconds) calls spent waiting in the execution queue before being sent. This only applies to throttled endpoints, where Journey Optimizer queues up calls when the throughput limit is reached.
+
 +++
 
-## Calls overtime {#calls}
+## Calls over time {#calls}
 
 ![](assets/monitor-3.png)
 
-The **[!UICONTROL Calls overtime]** graph shows the HTTP call KPI trend over the time period selected for the report. The granularity of the time series depends on the selected time range. For example:
+The **[!UICONTROL Calls over time]** graph shows the HTTP call KPI trend over the time period selected for the report. The granularity of the time series depends on the selected time range. For example:
 
 * For a 7 day report, each data point will show the KPIs for one day. 
 * If you select a 1-day time range, the graph will show the KPIs per hour.
 * If you select a 1-hour time range, the graph will show the KPIs per minute.
 
 ➡️[See the KPIs section for a description of the HTTP call metrics](#kpis)
+
+## Latency over time {#latency-overtime}
+
+![](assets/monitor-6.png)
+
+The **[!UICONTROL Latency over time]** graph visualizes the trend of latency metrics over the selected time period. This time-series view allows you to track performance patterns, identify peak latency periods, and monitor the impact of optimizations or system changes over time.
+
+➡️[See the KPIs section for a description of the Latency metrics](#kpis)
+
 
 ## Call breakdown {#breakdown}
 
@@ -72,4 +83,20 @@ The **[!UICONTROL Calls breakdown]** table provides a hierarchical breakdown of 
 
 ➡️[See the KPIs section for a description of the HTTP call metrics](#kpis)
 
+## Latency breakdown {#latency-breakdown}
 
+![](assets/monitor-5.png)
+
+The **[!UICONTROL Latency breakdown]** table provides a detailed breakdown of latency metrics across your custom actions. This view helps you identify which specific endpoints or actions are experiencing performance issues, enabling you to pinpoint and address latency bottlenecks effectively.
+
+➡️[See the KPIs section for a description of the Latency metrics](#kpis)
+
+## How-to video {#video}
+
+The video below shows how to monitor the reliability and performance of API calls made from your journeys to third-party systems.
+
++++See video
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479541?quality=12&learn=on)
+
++++

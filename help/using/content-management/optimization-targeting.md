@@ -6,6 +6,7 @@ description: Learn how to leverage targeting rules to deliver personalized conte
 role: User
 level: Intermediate
 keywords: targeting, optimization, audience, personalization, rules
+exl-id: ced2248a-e0fb-4fc5-b00b-13972618eeb9
 ---
 # Use targeting {#targeting}
 
@@ -93,4 +94,3 @@ Once the journey/campaign is live, content tailored for each target is sent so t
 * If no targeting rules match, default content can be delivered.
 
 * If default content is not enabled, passthrough behavior ensures lower-priority campaigns are evaluated.-->
-

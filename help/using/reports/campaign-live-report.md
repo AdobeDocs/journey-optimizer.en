@@ -102,7 +102,7 @@ The **[!UICONTROL Sending metrics by Email]** table offers a comprehensive summa
 
 * **[!UICONTROL Execution time]**: Start time of every execution of your recurring email. To target only one or multiple recurring emails, select it from the **[!UICONTROL Execution time]** drop-down. 
 
-* **[!UICONTROL Targeted]**: Total number of messages processed during the sending process.
+* **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied.
 
 * **[!UICONTROL Excluded]**: Number of user profiles, excluded from the targeted profiles, who did not receive the message.
 
@@ -324,7 +324,7 @@ The **[!UICONTROL Push notification - Statistics]** table provides a concise sum
 
 * **[!UICONTROL Execution time]**: Start time of every execution of your recurring push notification. To target only one or multiple recurring push notifications, select it from the **[!UICONTROL Execution time]** drop-down. 
 
-* **[!UICONTROL Targeted]**: Total number of messages processed during the sending process.
+* **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied.
 
 * **[!UICONTROL Excluded]**: Number of user profiles, excluded from the targeted profiles, who did not receive the message.
 
@@ -394,7 +394,7 @@ The **[!UICONTROL Push notification - Breakdown by platform]** graph and table p
 
 +++ Learn more about Push notification - Breakdown by platform metrics
 
-* **[!UICONTROL Targeted]**: Total number of messages processed during the analysis.
+* **[!UICONTROL Targeted]**: Number of profiles that qualified for the audience before exclusions, suppressions, or consent removals were applied.
 
 * **[!UICONTROL Delivered]**: Number of messages successfully sent, in relation to the total number of sent messages.
 

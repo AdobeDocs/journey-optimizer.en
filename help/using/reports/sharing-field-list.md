@@ -93,7 +93,7 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
 
     **Common causes**: Duplicate events, high event volume, system resource constraints.
     
-    **Troubleshooting**: Implement deduplication, avoid traffic spikes, optimize journey design, contact support if persistent.
+    **Troubleshooting**: Implement deduplication, avoid traffic spikes, optimize journey design, [contact support](../start/user-interface.md#support-ticket-guidelines) if persistent.
 
 * **maxInstanceStackEventsReached**: The journey runtime reached the internal per-profile event stack limit for a given journey version.
 

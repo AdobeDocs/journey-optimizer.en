@@ -1,13 +1,13 @@
 ---
-title: Migrate from Decision management to Decisioning
+title: Benefits of migrating to Decisioning
 description: Learn about the benefits of migrating from Decision management to Decisioning
 feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-
+exl-id: aedd7845-3d8d-457a-a7f3-03897846b241
 ---
-# Migrate from Decision management to Decisioning {#migrate-to-decisioning}
+# Benefits of migrating to Decisioning {#migrate-to-decisioning}
 
 ## What is Decisioning? {#what-is-decisioning}
 
@@ -59,7 +59,7 @@ Dashboard documenting performance of decision items and selection strategies aga
 
 * **Policy enforcement**: Business user empowerment to use features like [Data Usage Labeling & Enforcement (DULE)](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview){target="_blank"} and [Consent](../action/consent.md) within Decisioning, enabling privacy shield protection across the decisioning workflow. This ensures decisions automatically respect data usage policies and customer consent preferences.
 
-* **Native messaging channel support**: Integrated messaging and decisioning within a single framework across multiple channels ([Code-based experience](../code-based/get-started-code-based.md) and [Email](../email/get-started-email.md) currently available, other channels coming in H1 2026). Intuitive UI support allows users to insert decisioning components directly in message authoring workflows.
+* **Native messaging channel support**: Integrated messaging and decisioning within a single framework across multiple channels: [Code-based experience](../code-based/get-started-code-based.md), [Email](../email/get-started-email.md) (Limited Availability), [SMS](../sms/get-started-sms.md), and [Push notifications](../push/get-started-push.md). Intuitive UI support allows users to insert decisioning components directly in message authoring workflows.
 
 * **Experience Platform dataset lookup**: Ability to upload and reference [Adobe Experience Platform datasets](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview){target="_blank"} directly within offer selection rules, ranking, and personalized offer content. This expands flexibility for personalization and targeting by allowing decision logic to use dynamic external data sources. [Learn more](../data/lookup-aep-data.md)
 
@@ -82,11 +82,18 @@ Dashboard documenting performance of decision items and selection strategies aga
 
 ## Migration tooling {#migration-tooling}
 
-The Journey Optimizer team is currently working on migration tooling APIs to migrate Decision management entities to Decisioning. This tooling enables seamless migration between sandboxes with dependency resolution and rollback capabilities. If interested, reach out to your Adobe representative.
+A comprehensive set of **Migration Tooling APIs** is available to migrate Decision management entities to Decisioning. These APIs enable seamless migration between sandboxes with automated dependency resolution and rollback capabilities.
+
+The Migration Tooling APIs allow you to:
+
+* **Analyze dependencies** between source and target sandboxes
+* **Migrate at different scopes** - sandbox, offer, or decision level
+* **Rollback migrations** if issues are discovered
+
+For complete API documentation, including authentication, endpoints, request/response examples, and step-by-step workflows, refer to [this page](decisioning-migration-api.md).
 
 ## Related topics {#related-topics}
 
 * [Get started with Decisioning](gs-experience-decisioning.md)
 * [Decisioning guardrails and limitations](decisioning-guardrails.md)
 * [Decisioning FAQ](decisioning-faq.md)
-

@@ -21,7 +21,7 @@ Adobe Journey Optimizer enables brands to deliver connected, contextual, and per
 Journey Optimizer offers two orchestration approaches to meet different marketing needs:
 
 * **Journeys**: Best for real-time, one-to-one engagement where each customer moves through at their own pace, triggered by behavior or events
-* **Orchestrated Campaigns**: Best for batch, one-to-many campaigns where audiences progress together through multi-step workflows on a schedule—ideal for seasonal promotions, product launches, and account-based communications
+* **Orchestrated campaigns**: Best for batch, one-to-many campaigns where audiences progress together through multi-step workflows on a schedule—ideal for seasonal promotions, product launches, and account-based communications
 
 This unified experience allows you to implement entire use cases in one place, from defining audiences and designing journeys to creating personalized content and analyzing results. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
 
@@ -48,7 +48,7 @@ A successful Journey Optimizer implementation typically follows this sequence, w
    The Administrator establishes the foundation by configuring sandboxes, setting up access controls, and preparing channel configurations. This must happen first to enable other teams to work.  
    * Configure development, staging, and production sandboxes  
    * Set up roles, permissions, and object-level access control (OLAC)  
-   * Configure channel configurations (email, SMS, push, in-app, web, content cards)
+   * Configure channel configurations (email, SMS, push, web push, in-app, web, direct mail, content cards)
    * Delegate subdomains and set up IP pools  
    * Configure suppression lists and consent policies
 
@@ -64,9 +64,10 @@ A successful Journey Optimizer implementation typically follows this sequence, w
 3. **Developer**: Implements technical integrations  
    Developers connect applications to Journey Optimizer by integrating SDKs, sending events, and building API endpoints. These implementations enable journeys to trigger and execute.  
    * Integrate Mobile SDK (iOS/Android) with push notification setup  
-   * Implement Web SDK for web experiences  
+   * Implement Web SDK for web experiences and web push notifications
    * Send events from applications to trigger journeys
    * Build custom action endpoints for external system integrations  
+   * Monitor custom action health and performance
    * Test implementations using Adobe Experience Platform Assurance
 
 4. **Marketer**: Designs and executes customer experiences  
@@ -89,15 +90,16 @@ As a Marketer or Business Practitioner, you design customer journeys to deliver 
 
 **Key capabilities you'll use:**
 
-* **Journey Orchestration**: Create real-time, one-to-one customer engagement where each person moves through at their own pace, triggered by behavior or events across channels
-* **Campaign Orchestration**: Design and automate complex, multi-step batch campaigns at scale using a visual canvas. Perfect for brand-initiated campaigns like seasonal promotions, product launches, and account-based communications. Leverage multi-entity segmentation to create precise audiences by connecting customer data with related entities (accounts, purchases, bookings)
+* **Journey Orchestration**: Create real-time, one-to-one customer engagement where each person moves through at their own pace, triggered by behavior or events across channels. Use the unified Action activity for all channel actions, the Content decision activity to integrate offers into journeys, and Journey Agent to create journeys from natural language prompts
+* **Campaign Orchestration**: Design and automate complex, multi-step batch campaigns at scale using a visual canvas. Perfect for brand-initiated campaigns like seasonal promotions, product launches, and account-based communications. Leverage multi-entity segmentation to create precise audiences by connecting customer data with related entities (accounts, purchases, bookings). Use wave sending to deliver messages in controlled batches
 * **Modern Message Designer**: Design and personalize email and mobile messages with a drag-and-drop interface. Edit out-of-the-box templates to accelerate time to market
-* **Decision Management**: Create and manage offers, eligibility rules, and other components in a centralized library that can be embedded in emails and customer touchpoints
+* **Decision Management**: Create and manage offers, eligibility rules, and other components in a centralized library that can be embedded in emails and customer touchpoints. Use Decisioning for push and SMS personalization
 * **Asset Management**: Access Adobe Experience Manager Assets Essentials fully embedded into Journey Optimizer for streamlined asset access and delivery
 * **Audience Definition**: Build on-demand audiences with instant refinement using relational queries, with pre-send visibility for accurate audience counts
 * **AI/ML Services**: Leverage send-time optimization and predictive engagement scores to target high-value customers and minimize churn risk
+* **Delivery Control**: Use quiet hours (time-based exclusions) and conflict management to respect customer preferences and prevent over-communication
 
-**Start with:** Use case templates and wizards to easily create and deploy new customer journeys.
+**Start with:** Use case templates and wizards to easily create and deploy new customer journeys. Use Journey Agent to create journeys from natural language prompts.
 
 [Get Started as a Marketer →](path/marketer.md)
 
@@ -115,7 +117,7 @@ As a Data Architect or Engineer, you set up and maintain the customer profile da
 * **Profile Management**: Enable datasets for Real-time Customer Profile to power personalized experiences
 * **Data Quality**: Monitor data ingestion to ensure everything flows smoothly into Journey Optimizer
 
-**Start with:** Model your first customer profile schema and configure a source connector to begin ingesting data.
+**Start with:** Review the [Get started with data management](../data/gs-data.md) overview to understand schemas, datasets, identities, and the full data setup checklist. Then model your first customer profile schema and configure a source connector to begin ingesting data.
 
 [Get Started as a Data Engineer →](path/data-engineer.md)
 
@@ -129,8 +131,9 @@ As an Administrator, you set up the Journey Optimizer environment to enable your
 * **User Management**: Set up user groups and permissions to control access to different functionality
 * **Channel Setup**: Configure delivery channels and message presets to ensure consistent branding across messages and assets delivered through Journey Optimizer
 * **Security & Governance**: Apply object-level access control (OLAC), configure consent policies, and implement data governance policies
-* **Deliverability**: Delegate subdomains, create IP pools, and manage suppression lists and allowed lists
+* **Deliverability**: Delegate subdomains, migrate subdomains to custom delegation when needed, create IP pools, and manage suppression lists and allowed lists
 * **Journey Configuration**: Set up journey elements and configurations for your teams
+* **Channel Configuration**: Configure web push notifications, direct mail, and message export (email/SMS) when required
 
 **Start with:** Configure sandboxes and user permissions, then set up your first channel configurations and message presets.
 
@@ -212,6 +215,7 @@ For more in-depth learning and updates, explore the following resources:
 >[!TAB Learning & Documentation]
 
 * [Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Step-by-step video tutorials for all roles
+* [Get started with data management](../data/gs-data.md) - Schemas, datasets, identities, and the data readiness checklist for Journey Optimizer
 * [Journey Use Cases Library](../building-journeys/jo-use-cases.md) - Practical examples and implementation patterns
 * [AI & Intelligent Features](ai-features.md) - Learn about AI Assistant, send-time optimization, and content generation
 * [User Interface Guide](user-interface.md) - Navigate Journey Optimizer effectively

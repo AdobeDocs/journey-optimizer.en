@@ -7,7 +7,7 @@ feature: Personalization, Use Cases
 topic: Personalization
 role: Developer
 level: Intermediate
-keywords: expression, editor, helpers,use case, personalization
+keywords: expression, editor, helpers, use case, personalization
 exl-id: 9c9598c0-6fb1-4e2f-b610-ccd1a80e516e
 ---
 # Personalization use case: cart abandonment email {#personalization-use-case-helper-functions}
@@ -51,26 +51,26 @@ The cart content is contextual information from the journey. Therefore, you must
 1. Create a journey that starts with this event.
 1. Add an **Email** activity to the journey.
 
-   ![](assets/personalization-uc-helpers-8.png)
+   ![Journey canvas with an event and an Email activity in the flow](assets/personalization-uc-helpers-8.png)
 
-## Step 2: Create the email{#configure-email}
+## Step 2: Create the email {#configure-email}
 
 1. In the **Email** activity, click **[!UICONTROL Edit content]**, then click **[!UICONTROL Email Designer]**.
 
-   ![](assets/personalization-uc-helpers-1.png)
+   ![Email activity with Edit content and Email Designer options](assets/personalization-uc-helpers-1.png)
 
 1. From the left palette of the Email Designer home page, drag and drop three structure components onto the body of the message.
 
 1. Drag and drop an HTML content component onto each new structure component.
 
-   ![](assets/personalization-uc-helpers-2.png)
+   ![Email Designer with three structure components and HTML content components in the body](assets/personalization-uc-helpers-2.png)
 
 ## Step 3: Insert the customer's first name in capital letters {#uppercase-function}
 
 1. On the Email Designer home page, click on the HTML component where you want to add the customer's first name.
 1. On the contextual toolbar, click **[!UICONTROL Show the source code]**.
 
-   ![](assets/personalization-uc-helpers-3.png)
+   ![Contextual toolbar with Show the source code option](assets/personalization-uc-helpers-3.png)
 
 1. In the **[!UICONTROL Edit HTML]** window, add the `upperCase` string function:
    1. In the left menu, select **[!UICONTROL Helper functions]**.
@@ -83,7 +83,7 @@ The cart content is contextual information from the journey. Therefore, you must
       {%= upperCase(string) %}
       ``` 
 
-      ![](assets/personalization-uc-helpers-4.png)
+      ![Expression editor with upperCase function selected in Helper functions](assets/personalization-uc-helpers-4.png)
 
 1. Remove the "string" placeholder from the expression.
 1. Add the first name token:
@@ -97,13 +97,13 @@ The cart content is contextual information from the journey. Therefore, you must
       {%= upperCase(profile.person.name.firstName) %}
       ``` 
 
-      ![](assets/personalization-uc-helpers-5.png)
+      ![Expression editor showing upperCase with Profile First name token](assets/personalization-uc-helpers-5.png)
 
       Learn more about the person name data type in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/person-name.html){target="_blank"}.
 
 1. Click **[!UICONTROL Validate]**, then click **[!UICONTROL Save]**.
 
-   ![](assets/personalization-uc-helpers-6.png)
+   ![Edit HTML window with Validate and Save buttons](assets/personalization-uc-helpers-6.png)
 
 1. Save the message.
 
@@ -116,7 +116,7 @@ This step demonstrates iterating over event data. For comprehensive examples of 
 1. On the Email Designer home page, click on the HTML component where you want to list the cart content.
 1. On the contextual toolbar, click **[!UICONTROL Show the source code]**.
 
-   ![](assets/personalization-uc-helpers-3.png)
+   ![Contextual toolbar with Show the source code option](assets/personalization-uc-helpers-3.png)
 
 1. In the **[!UICONTROL Edit HTML]** window, add the `each` helper:
    1. In the left menu, select **[!UICONTROL Helper functions]**.
@@ -129,7 +129,7 @@ This step demonstrates iterating over event data. For comprehensive examples of 
       {{#each someArray as |variable|}} {{/each}}
       ```
 
-      ![](assets/personalization-uc-helpers-9.png)
+      ![Expression editor with the each helper template](assets/personalization-uc-helpers-9.png)
 
 1. Add the `productListItems` array to the expression:
 
@@ -152,7 +152,7 @@ This step demonstrates iterating over event data. For comprehensive examples of 
    
       In this example, *event_ID* represents the ID of your event.
 
-      ![](assets/personalization-uc-helpers-10.png)
+      ![Expression editor with productListItems in Contextual attributes](assets/personalization-uc-helpers-10.png)
 
    1. Modify the expression:
       1. Remove the ".product" string.
@@ -164,7 +164,7 @@ This step demonstrates iterating over event data. For comprehensive examples of 
       {{#each context.journey.events.event_ID.productListItems as |product|}}
       ```
 
-1. Paste this code between the opening `{{#each}}` tag and the closing `{/each}}` tag:
+1. Paste this code between the opening `{{#each}}` tag and the closing `{{/each}}` tag:
 
    ```html
    <table>
@@ -206,14 +206,14 @@ This step demonstrates iterating over event data. For comprehensive examples of 
 
 1. Click **[!UICONTROL Validate]**, then click **[!UICONTROL Save]**.
 
-   ![](assets/personalization-uc-helpers-11.png)
+   ![Expression editor with Validate and Save after configuring the each block](assets/personalization-uc-helpers-11.png)
 
 ## Step 5: Insert a product-specific note {#if-helper}
 
 1. On the Email Designer home page, click on the HTML component where you want to insert the note.
 1. On the contextual toolbar, click **[!UICONTROL Show the source code]**.
 
-   ![](assets/personalization-uc-helpers-3.png)
+   ![Contextual toolbar with Show the source code option](assets/personalization-uc-helpers-3.png)
 
 1. In the **[!UICONTROL Edit HTML]** window, add the `if` helper:
    1. In the left menu, select **[!UICONTROL Helper functions]**.
@@ -229,7 +229,7 @@ This step demonstrates iterating over event data. For comprehensive examples of 
       {%/if%}
       ```
 
-      ![](assets/personalization-uc-helpers-12.png)
+      ![Expression editor with the if helper template](assets/personalization-uc-helpers-12.png)
 
 1. Remove this condition from the expression:
 
@@ -263,7 +263,7 @@ This step demonstrates iterating over event data. For comprehensive examples of 
       {%/if%}
       ```
 
-      ![](assets/personalization-uc-helpers-13.png)
+      ![Expression editor with productListItems name token in the if condition](assets/personalization-uc-helpers-13.png)
 
 1. Modify the expression:
    1. In the Expression editor, specify the product name after the `name` token.
@@ -297,7 +297,7 @@ This step demonstrates iterating over event data. For comprehensive examples of 
    1. Remove the "default_render" placeholder from the expression.
 1. Click **[!UICONTROL Validate]**, then click **[!UICONTROL Save]**.
 
-   ![](assets/personalization-uc-helpers-14.png)
+   ![Edit HTML window with Validate and Save after configuring the if block](assets/personalization-uc-helpers-14.png)
 
 1.  Save the message.
 
@@ -305,19 +305,19 @@ This step demonstrates iterating over event data. For comprehensive examples of 
 
 1. Turn on the **[!UICONTROL Test]** toggle, then click **[!UICONTROL Trigger an event]**.
 
-   ![](assets/personalization-uc-helpers-15.png)
+   ![Journey with Test toggle on and Trigger an event button](assets/personalization-uc-helpers-15.png)
 
 1. In the **[!UICONTROL Event configuration]** window, enter the input values, then click **[!UICONTROL Send]**.
 
    The test mode works only with test profiles.
 
-   ![](assets/personalization-uc-helpers-16.png)
+   ![Event configuration window with input values and Send button](assets/personalization-uc-helpers-16.png)
 
    The email is sent to the address of the test profile.
 
    In this example, the email contains the note about the Juno Jacket because this product is in the cart:
 
-   ![](assets/personalization-uc-helpers-17.png)
+   ![Sample email showing the Juno Jacket shipping note in the message body](assets/personalization-uc-helpers-17.png)
 
 1. Verify that there is no error, then publish the journey.
 
@@ -336,7 +336,7 @@ This step demonstrates iterating over event data. For comprehensive examples of 
 
 * [Personalization with decision-based offer](../offers/offers-e2e.md)
 
-## How-to video{#video}
+## How-to video {#video}
 
 Learn how to use helper functions.
 

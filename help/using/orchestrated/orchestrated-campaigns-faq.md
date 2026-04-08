@@ -67,7 +67,7 @@ To access Campaign Orchestration, your license must include either the **Journey
 * **Orchestrated campaigns**: Best for **batch, one-to-many** campaigns. Audiences progress in bulk, on a schedule.  
 * **Journeys**: Best for **real-time, one-to-one** engagement. Each customer moves through the journey at their own pace, triggered by behavior or events.  
 
-**Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated Campaigns for planned, calendar-based initiatives.
+**Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated campaigns for planned, calendar-based initiatives.
 
 **Learn more**
 
@@ -135,6 +135,20 @@ Yes. Campaign orchestration is natively integrated with:
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
 * **Federated Audience Composition (FAC)**: Available as an add-on.  -->
 
++++ How do I test a signal-triggered orchestrated campaign before publishing?
+
+While the campaign is in **Draft**, you can test it by defining **parameters** in the schedule and providing **test values** for each. Start the workflow, then call the trigger API (using the sample request from the schedule configuration or your own request with the same endpoint) to run the campaign with those test values. [Learn how to complete and test a signal-triggered campaign](trigger-orchestrated-campaign.md#build-and-test).
+
++++
+
++++ Can I revert a live orchestrated campaign back to draft?
+
+Yes, in specific situations. The **[!UICONTROL Back to draft]** option is designed as a recovery mechanism to unpublish and revert a campaign to draft status.
+
+This option is available for scheduled campaigns awaiting execution, or for live campaigns with execution errors. [Learn how to revert a live campaign back to draft](start-monitor-campaigns.md#back-to-draft)
+
++++
+
 +++ Which channels are supported?
 
 You can create Orchestrated campaigns to send **emails**, **SMS**, **push notifications** and **direct mails**.  
@@ -148,7 +162,7 @@ You can create Orchestrated campaigns to send **emails**, **SMS**, **push notifi
 
 +++ Can multiple communications and different channels be launched within the same Orchestrated campaign?
 
-Yes, Orchestrated campaigns supports cross-channel orchestration. You can combine email, SMS, and push notification activities into a multi-step campaign canvas to create comprehensive customer experiences.
+Yes, Orchestrated campaigns supports cross-channel orchestration. You can combine email, SMS, push notification, and direct mail activities into a multi-step campaign canvas to create comprehensive customer experiences.
 
 **Learn more**
 
@@ -181,7 +195,7 @@ No, the content designer, including the Email Designer, is common across all Jou
 
 +++ How are the different channels connected in Orchestrated campaigns?
 
-The channel component & runtime are common to all Journey Optimizer campaigns, however, supported channels differ. Orchestrated campaigns support email, SMS, and push notifications.
+The channel component & runtime are common to all Journey Optimizer campaigns, however, supported channels differ. Orchestrated campaigns support email, SMS, push notifications, and direct mail.
 
 **Learn more**
 
@@ -193,7 +207,7 @@ The channel component & runtime are common to all Journey Optimizer campaigns, h
 
 +++ Can Orchestrated campaigns connect with outbound channels (web, inApp)?
 
-No, inbound channels like web and in-app are not supported in Orchestrated campaigns. Only outbound channels (email, SMS, and push notifications) are supported.
+No, inbound channels like web and in-app are not supported in Orchestrated campaigns. Only outbound channels (email, SMS, push notifications, and direct mail) are supported.
 
 **Learn more**
 

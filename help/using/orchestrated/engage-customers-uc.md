@@ -5,6 +5,7 @@ title: Engage customers by browsing activity
 description: Engage customers by browsing activity
 feature: Use Cases
 version: Campaign Orchestration
+exl-id: 915ebafe-935b-49b6-8b8c-0e7a8bf546a4
 ---
 # Engage customers by browsing activity {#engage-customers-uc}
 

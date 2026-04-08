@@ -12,7 +12,7 @@ version: Journey Orchestration
 ---
 # Use custom actions to write journey events in Experience Platform {#custom-action-aep}
 
-This use case explains how to write custom events into Adobe Experience Platform from Journeys using Custom Actions and Authenticated calls.
+This use case explains how to write custom events into [!DNL Adobe Experience Platform] from Journeys using Custom Actions and Authenticated calls.
 
 ## Configure a developer project {#custom-action-aep-IO}
 
@@ -24,7 +24,7 @@ This use case explains how to write custom events into Adobe Experience Platform
 
 1. Click **View cURL command**.
 
-    ![Adobe Experience Platform action type selection](assets/custom-action-aep-2.png)
+    ![[!DNL Adobe Experience Platform] action type selection](assets/custom-action-aep-2.png)
 
 1. Copy the cURL command and store the client_id, client_secret, grant_type and scope.
 
@@ -34,15 +34,15 @@ curl -X POST 'https://ims-na1.adobelogin.com/ims/token/v3' -H 'Content-Type: app
  
 >[!CAUTION]
 >
->After creating your project on the Adobe Developer Console, be sure to grant developer and API access control with the right permissions. Learn more in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
+>After creating your project on the Adobe Developer Console, be sure to grant developer and API access control with the right permissions. Learn more in the [[!DNL Adobe Experience Platform] documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#grant-developer-and-api-access-control){target="_blank"}
 
 ## Configure the source using HTTP API Inlet
 
-1. Create an endpoint in Adobe Experience Platform to write the data from journeys.
+1. Create an endpoint in [!DNL Adobe Experience Platform] to write the data from journeys.
 
-1. In Adobe Experience Platform, click **Sources**, under **Connections** in the left menu. Under **HTTP API**, click **Add data**.
+1. In [!DNL Adobe Experience Platform], click **Sources**, under **Connections** in the left menu. Under **HTTP API**, click **Add data**.
 
-    ![Sandbox selection dropdown for Adobe Experience Platform](assets/custom-action-aep-3.png)
+    ![Sandbox selection dropdown for [!DNL Adobe Experience Platform]](assets/custom-action-aep-3.png)
 
 1. Select **New account** and enable authentication. Select **Connect to Source**.
 
@@ -95,7 +95,7 @@ Custom action configuration is detailed on [this page](../action/about-custom-ac
 
 For this example, follow these steps:
 
-1. Open Adobe Journey Optimizer, and click **Configurations**, under **Administration** in the left menu. Under **Actions**, click **Manage** and click **Create Action**.
+1. Open [!DNL Adobe Journey Optimizer], and click **Configurations**, under **Administration** in the left menu. Under **Actions**, click **Manage** and click **Create Action**.
 
 1. Set the URL and select the Post method. 
 

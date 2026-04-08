@@ -15,7 +15,7 @@ version: Journey Orchestration
 
 In this section, learn how to troubleshoot journeys before testing or publishing. All the checks listed below can be performed when the journey is in test mode or when the journey is live. The recommendation is to make all the checks below in test mode and then proceed to publication. Learn more about the test mode on [this page](../building-journeys/testing-the-journey.md).
 
-Learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messages are sent [on this page](troubleshooting-execution.md).
+Learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messages are sent [on this page](troubleshooting-execution.md). If no profiles enter your event-based journey despite events being ingested, ensure the [event condition data types match the event schema](troubleshooting-execution.md#verify-event-identity-and-rule-data-types).
 
 If you are using inbound actions, learn how to troubleshoot them [on this page](troubleshooting-inbound.md).
 
@@ -43,7 +43,7 @@ The system detects two kinds of issues: **errors** and **warnings**. Errors bloc
 
 <!--Most of the time, errors detected by the system are linked to errors visible on the activities but they can also relate to other issues. In all cases, check alerts and resolve the issue using to the error description. If you cannot identify the issue, use the **[!UICONTROL Copy details]** button to store the alerts, and send them to your administrator.-->
 
-Errors and warnings that are global to the journey appear first in the list. Error and warnings related to specific activities are listed after, by activity order or appearance in the journey from left to right. At the bottom of the list of alerts, the **[!UICONTROL Copy details]** button lets you copy technical information about the journey which are useful to troubleshoot the issues.
+Errors and warnings that are global to the journey appear first in the list. Error and warnings related to specific activities are listed after, by activity order or appearance in the journey from left to right. At the bottom of the list of alerts, the **[!UICONTROL Copy details]** button lets you copy technical information about the journey which are useful to troubleshoot the issues. For the list of copied fields (including pause and resume information), see [Copy technical details](journey-properties.md#access-properties) in journey properties.
 
 ## Add an alternative path {#canvas-add-path}
 

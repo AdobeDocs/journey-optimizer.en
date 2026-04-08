@@ -10,8 +10,12 @@ level: Intermediate
 keywords: activity, condition, canvas, journey
 exl-id: 02de069c-3009-4105-aa98-c49959d3efda
 version: Journey Orchestration
+hidefromtoc: yes
+hide: yes
 ---
 # Condition activity {#condition-activity}
+
+Use the condition activity to route profiles to different paths based on rules and data.
 
 ## Add a condition activity {#add-condition-activity}
 
@@ -32,7 +36,11 @@ The following types of conditions are available:
 * [Date condition](#date_condition)
 * [Profile cap](#profile_cap)
 
-You can also use an audience in a journey condition. [Learn more](#using-a-segment). For more information on how to generate and target audiences, refer to [this section](../audience/about-audiences.md)
+You can also base a condition on audience membership. See these sections:
+
+* [Use an audience in a condition](#using-a-segment) – Add paths based on whether profiles belong to an audience.
+* [Build and target audiences](../audience/about-audiences.md) – Create and manage audiences in the Audiences menu.
+* [Audience targeting in journeys](read-audience.md#audience-targeting-in-journeys) – After a Read Audience activity, segment, exclude, or merge branches using conditions.
 
 >[!NOTE]
 >
@@ -53,7 +61,7 @@ Click **[!UICONTROL Add a path]** if you want to define several conditions. For 
 
 Note that the design of journeys has functional impacts. When several paths are defined after a condition, only the first eligible path will be executed. It means that you can vary the prioritization of paths by placing them above or below one another.
 
-Let's take the example of a first path's condition "The person is a VIP" and a second path's condition "The person is a male". If a person meeting both conditions (a male who is a VIP) passes this step, the first path will be chosen even if this person is also eligible to the second one, because the first path is "above". To change this priority, move your activities in another vertical order.
+Let's take two path conditions: "The person is a VIP" and "The person is a male." If a person meets both conditions, the first path is chosen because it is above the second. To change this priority, move your activities to a different vertical order.
 
 ![Path prioritization showing VIP and male conditions](assets/journey48.png)
 
@@ -66,7 +74,7 @@ The simple mode allows you to perform simple queries based on a combination of f
 
 ![Expression editor showing field selection and logical operators AND OR](assets/journey64.png)
 
-If you are using the [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Using audience in conditions](../building-journeys/condition-activity.md#using-a-segment). For more information on how to generate and target audiences in Journey Optimizer, refer to [this section](../audience/about-audiences.md).
+If you are using the [[!DNL Adobe Experience Platform] Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Using audience in conditions](../building-journeys/condition-activity.md#using-a-segment). For more information on how to generate and target audiences in Journey Optimizer, refer to [this section](../audience/about-audiences.md).
 
 
 >[!NOTE]

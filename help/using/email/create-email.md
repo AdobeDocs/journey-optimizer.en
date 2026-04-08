@@ -25,21 +25,35 @@ To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** ac
 
 >[!TAB Add an email to a journey]
 
-1. Open your journey, then drag and drop an **[!UICONTROL Email]** activity from the **[!UICONTROL Actions]** section of the palette.
+1. Open your journey, then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
-1. Provide basic information on your message (label, description, category).
+    >[!IMPORTANT]
+    >
+    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
-1. Choose or create the [email configuration](email-settings.md).
+1. Select **[!UICONTROL Email]** as the action type.
 
     ![](assets/email_journey.png)
 
-    The field is pre-filled, by default, with the last configuration used for that channel by the user.
+1. Enter a **[!UICONTROL Label]** to identify your action in the journey canvas.
 
->[!NOTE]
->
->You can use the Send-Time Optimization option to predict the best time to send the message to maximize engagement based on historical open and click rates. [Learn how to work with Send-Time Optimization](../building-journeys/send-time-optimization.md)  
+1. Click the **[!UICONTROL Configure action]** button.
 
-For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md).
+1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the email configuration to use. [Learn more](email-settings.md)
+
+    ![](assets/email-action-config.png)
+
+1. Additionnally:
+
+    * You can apply capping rules to your email action by selecting a rule set in the **[!UICONTROL Business rules]** drop-down list. [Learn more](../conflict-prioritization/channel-capping.md)
+
+    * You can use the **[!DNL Send time optimization]** option to predict the best time to send the message to maximize engagement based on historical open and click rates. [Learn how](../building-journeys/send-time-optimization.md)
+
+1. Select the **[!UICONTROL Edit content]** button and create your content as desired using the Email Designer. [Learn more](#define-email-content)
+
+1. Go back to the journey canvas. If necessary, complete your journey flow by dragging and dropping additional actions or events. [Learn more](../building-journeys/about-journey-activities.md)
+
+For more information on how to create, configure and publish a journey, refer to [this page](../building-journeys/journey-gs.md).
 
 >[!TAB Add an email to a campaign]
 
@@ -60,8 +74,7 @@ From the **[!UICONTROL Action]** section, specify if you want to track how your 
 
 ![](assets/email_campaign_tracking.png)
 -->
-
-For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
+For more information on how to create, configure and activate a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
 >[!ENDTABS]
 
@@ -174,7 +187,7 @@ When your email is ready, complete the configuration of your [journey](../buildi
 
 >[!NOTE]
 >
->To track the behavior of your recipients through email openings and/or interactions, make sure that the dedicated options in the **[!UICONTROL Tracking]** section are enabled in the journey's [email activity](../building-journeys/journeys-message.md) or in the email [campaign](../campaigns/create-campaign.md).<!--to move?-->
+>To track the behavior of your recipients through email openings and/or interactions, make sure that the dedicated options in the **[!UICONTROL Tracking]** section are enabled in the journey's [email activity](../building-journeys/journey-action.md) or in the email [campaign](../campaigns/create-campaign.md).<!--to move?-->
 
 <!--
 

@@ -2,18 +2,18 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Orchestration - Complete guide
-description: Comprehensive guide to get started with journey orchestration in Adobe Journey Optimizer
+description: Comprehensive guide to get started with journey orchestration in [!DNL Adobe Journey Optimizer]
 feature: Journeys, Get Started, Overview
 role: User
 level: Beginner, Intermediate
 hide: yes
 hidefromtoc: yes
 keywords: journey, orchestration, getting started, onboarding, capabilities
+exl-id: 96b1d619-986d-493d-a73b-d7c63b92cca8
 ---
-
 # Journey Orchestration - Complete guide{#journey-orchestration-guide}
 
-Journeys in Adobe Journey Optimizer empower you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
+Journeys in [!DNL Adobe Journey Optimizer] empower you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
 
 Whether you're exploring real-time triggers, managing journey properties, or using advanced tools like custom actions and expressions, this guide provides a clear roadmap to confidently design and refine journeys that deliver meaningful, timely customer experiences.
 
@@ -37,7 +37,7 @@ The Journey Optimizer journey designer provides everything marketers and journey
 
 **Real-time & batch delivery**
 
-Send real-time **unitary delivery** triggered when an event is received, or **in batch** using Adobe Experience Platform audiences.
+Send real-time **unitary delivery** triggered when an event is received, or **in batch** using [!DNL Adobe Experience Platform] audiences.
 
 [Learn about journey entry](entry-management.md)
 :::
@@ -47,7 +47,7 @@ Send real-time **unitary delivery** triggered when an event is received, or **in
 
 **Contextual data**
 
-Leverage **contextual data** from events, information from Adobe Experience Platform, or data from third-party API services.
+Leverage **contextual data** from events, information from [!DNL Adobe Experience Platform], or data from third-party API services.
 
 [Work with data sources](../datasource/about-data-sources.md)
 :::
@@ -59,7 +59,7 @@ Leverage **contextual data** from events, information from Adobe Experience Plat
 
 Use **built-in channel actions** to send messages designed in [!DNL Journey Optimizer] across email, push, SMS/MMS, and more.
 
-[Send messages in journeys](journeys-message.md)
+[Send messages in journeys](journey-action.md)
 :::
 
 :::
@@ -98,7 +98,7 @@ Test your journeys before publishing, monitor their performance, and optimize de
 
 From within the journey designer, marketers can send real-time triggered 1:1 messages through any channel when an event occurs. For example, when a customer subscribes to a service, it can [trigger a welcome email](message-to-subscribers-uc.md), encouraging them to log into the app for the first time and set their preferences. Actions like completing the purchase, opening the email, and logging into the app can be used to advance new customers through their journeys.
 
-The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journeys-message.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
+The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journey-action.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
 
 
 :::: landing-cards-container
@@ -178,7 +178,7 @@ Find answers to frequently asked questions about journey building, troubleshooti
 
 Step-by-step guidance on designing, testing, publishing, and tracking customer journeys to build personalized omnichannel campaigns.
 
-[Explore journey creation](/help/rp_landing_pages/create-journey-landing-page.md) | [Learn journey management](/help/rp_landing_pages/manage-journey-landing-page.md) | [Journey workflow steps](journey.md#workflow)
+[Explore journey creation](../../rp_landing_pages/create-journey-landing-page.md) | [Learn journey management](../../rp_landing_pages/manage-journey-landing-page.md) | [Journey workflow steps](journey.md#workflow)
 :::
 
 :::
@@ -188,7 +188,7 @@ Step-by-step guidance on designing, testing, publishing, and tracking customer j
 
 Discover how to configure and use activities like triggers, decision steps, audience management, and personalized messaging in journeys.
 
-[Explore activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
+[Explore activities](../../rp_landing_pages/about-journey-building-landing-page.md)
 :::
 
 :::
@@ -198,7 +198,7 @@ Discover how to configure and use activities like triggers, decision steps, audi
 
 Master expression creation for dynamic workflows, data manipulation, and advanced journey orchestration using powerful tools and syntax.
 
-[Learn about expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
+[Learn about expressions](../../rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
 :::
 
 :::
@@ -208,7 +208,7 @@ Master expression creation for dynamic workflows, data manipulation, and advance
 
 Diagnose and resolve journey execution issues with tools, error codes, and best practices for debugging and optimization.
 
-[Troubleshooting guide](/help/rp_landing_pages/troubleshoot-journey-landing-page.md)
+[Troubleshooting guide](../../rp_landing_pages/troubleshoot-journey-landing-page.md)
 :::
 
 :::
@@ -246,4 +246,3 @@ Discover the components of a journey and understand the basics of building a jou
 * **[Troubleshooting](troubleshooting.md)** - Common journey issues and solutions
 * **[Journey Tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Learn journey building through hands-on video tutorials
 * **[Journey guardrails & limitations](../start/guardrails.md)** - Check guardrails and limitations when using [!DNL Adobe Journey Optimizer]
-

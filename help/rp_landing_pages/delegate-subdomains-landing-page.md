@@ -8,7 +8,9 @@ exl-id: 7df9b8e2-136a-4ffc-9243-53c7be026d81
 ---
 # Delegate email subdomains{#section-overview}
 
-Delegating email subdomains in Adobe Journey Optimizer empowers administrators to improve email deliverability, protect domain reputation, and streamline campaign management. By setting up subdomains, you can isolate different types of email traffic, like marketing and transactional messages, while ensuring compliance with industry standards. This section introduces key configuration methods, such as full delegation and CNAME setups, and explores how they differ in effort and control. You'll also learn to manage essential DNS records like DMARC and PTR, enhance Gmail deliverability with Google TXT records, and group IPs using IP pools. Whether you're optimizing security or reputation, this guide makes the process approachable and effective.
+Delegating email subdomains is a core step in [channel configuration](../using/configuration/get-started-configuration.md)—required before you can send emails from Journey Optimizer. Subdomains let you isolate traffic types (e.g., marketing vs. transactional), protect your main domain's reputation, and speed up [IP warmup](../using/configuration/ip-warmup-gs.md). They work alongside [email channel configuration](../using/email/get-started-email-config.md) and [deliverability monitoring](../using/reports/deliverability.md) to ensure messages reach inboxes.
+
+You can choose from several setup methods: **full delegation** (Adobe manages DNS), **CNAME setup**, or **custom delegation** (you own certificates and DNS). If you start with CNAME, you can later [migrate to custom delegation](../using/configuration/custom-subdomain-migration.md) for stricter security. This section also covers DMARC and PTR records, Google TXT records for Gmail, and IP pools. For broader deliverability guidance, see [Get started with deliverability](../using/reports/deliverability.md) and [Monitor email addresses](monitor-reputation-landing-page.md).
 
 ## Delegate Email Subdomains
 
@@ -31,6 +33,26 @@ Delegate a Subdomain
 Step-by-step guidance for delegating subdomains to Adobe, including full delegation and CNAME setup.
 
 [Learn How to Delegate](../using/configuration/delegate-subdomain.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/screwdriver-wrench.svg)
+
+Set Up a Custom Subdomain
+
+Take full ownership of your subdomains with custom delegation—upload your own SSL certificates and maintain full control over domain configuration.
+
+[Set up a custom subdomain](../using/configuration/delegate-custom-subdomain.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+Migrate from CNAME to Custom Delegation
+
+Migrate existing CNAME-configured subdomains to custom delegation to meet security policies and gain full control over certificates.
+
+[Migrate your subdomain](../using/configuration/custom-subdomain-migration.md)
 :::
 
 :::
@@ -74,3 +96,9 @@ Group IP addresses for improved email deliverability and manage subdomain reputa
 :::
 
 ::::
+
+## Additional resources
+
+- **[Configure landing page subdomains](../using/landing-pages/lp-subdomains.md)** - Set up subdomains for landing pages and subscription forms.
+- **[Configure web subdomains](../using/web/web-delegated-subdomains.md)** - Delegate subdomains for web experiences and tracking.
+- **[Get started with channels configuration](../using/configuration/get-started-configuration.md)** - Overview of all channel setup steps, including subdomain delegation.

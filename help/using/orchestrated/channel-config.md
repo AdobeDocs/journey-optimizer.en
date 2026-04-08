@@ -4,6 +4,7 @@ product: journey optimizer
 title: Configure your Channel configuration
 description: Learn how to configure your Channel configuration
 version: Campaign Orchestration
+exl-id: 6793e9b8-06ca-403b-8cb0-3bcaef089837
 ---
 # Configure your Channel configuration {#channel-configuration}
 
@@ -59,7 +60,7 @@ To configure you channel configuration:
 
 1. Once configured, click **[!UICONTROL Submit]**.
 
-Your channel is now ready to use with **Orchestrated Campaigns**, and messages will be delivered according to the selected target dimension.
+Your channel is now ready to use with **Orchestrated campaigns**, and messages will be delivered according to the selected target dimension.
 
 ## URL tracking parameters {#url-tracking}
 
