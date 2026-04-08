@@ -95,9 +95,9 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
     
     **Troubleshooting**: Implement deduplication, avoid traffic spikes, optimize journey design, [contact support](../start/user-interface.md#support-ticket-guidelines) if persistent.
 
-* **maxInstanceStackEventsReached**: The journey runtime reached the internal per-profile event stack limit for a given journey version.
+* **maxInstanceStackEventsReached**: The journey runtime reached the internal per-profile event stack limit of 10 events for a given journey version.
 
-    **Common causes**: The profile's journey instance is blocked on a long-running step (for example, long waits, slow enrichments, or custom action retries) and events for the same profile, also being used in that journey, pile up beyond this limit.
+    **Common causes**: The profile's journey instance is blocked on a long-running step (for example, long waits, slow enrichments, or custom action retries) and events for the same profile, also being used in that journey, pile up beyond the 10-event limit.
 
     **Troubleshooting**: Reduce long-running steps on paths that can re-trigger frequently, debounce or deduplicate upstream events, and split long scenarios into multiple journeys. This is a safety guardrail and the limit is not configurable; additional events are discarded until the stack drains. For more guidance, see [Discarded events with maxInstanceStackEventsReached](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached).
 
