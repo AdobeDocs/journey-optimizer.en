@@ -112,7 +112,7 @@ Here are a few things to check:
 
 This discard reason means the journey runtime reached its internal per-profile event stack limit for a specific journey version. It is a safety guardrail that prevents too many pending events from stacking up while another event for the same profile is still being processed.
 
-This is **not** a time-window or throughput limit. It occurs when the same profile keeps qualifying for the same journey version while the instance is blocked on a long-running step (for example, a long wait, enrichment, or custom action retries).
+This is **not** a time-window or throughput limit. It occurs when the profile's journey instance is blocked on a long-running step (for example, a long wait, enrichment, or custom action retries) and events for the same profile, also being used in that journey, pile up beyond this limit.
 
 To identify it, query journey step events where the discard reason equals `maxInstanceStackEventsReached` (for example, in `serviceEvents.stateMachine.eventType` or similar fields). Learn more about discarded event types in the [step event field list](../reports/sharing-field-list.md#discarded-events).
 
