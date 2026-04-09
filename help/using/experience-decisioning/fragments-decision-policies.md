@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 70f64348-092b-4350-91dc-72c3c07300f9
+badge: label="Limited Availability" type="Informative"
 ---
 # Leverage fragments in decision policies {#fragments}
 
