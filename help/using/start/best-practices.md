@@ -7,7 +7,6 @@ feature: Get Started
 role: User
 level: Intermediate
 hide: yes
-hidefromtoc: yes
 exl-id: 271fb85d-5621-4a12-b3d1-65cf6021b174
 ---
 # Best practices {#best-practices}

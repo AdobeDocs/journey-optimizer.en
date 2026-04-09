@@ -5,7 +5,6 @@ title: Collection management functions
 description: Learn about data types in collection management functions
 feature: Journeys
 hide: yes
-hidefromtoc: yes
 role: Developer
 level: Experienced
 keywords: query, collections, functions, payload, journey
