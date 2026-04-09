@@ -393,7 +393,8 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Email Content Locking</strong><br/></th>
@@ -408,7 +409,8 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
 <table>
 <thead>
@@ -514,7 +516,8 @@ You can now export content templates and fragments between sandboxes. [Learn mor
 * **IP warmup plans** - This capability is now available to all customers, including organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings. [Learn more](../configuration/ip-warmup-gs.md)
 
 <!--
-![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.-->
+![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
+-->
 
 
 
@@ -543,7 +546,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -624,7 +627,7 @@ This release brings the improvements listed below.
 
 **Journeys**
 
-* In the **Condition** activity, by default, the **[!UICONTROL Time condition]** is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)
+* In the **Condition** activity, by default, the **[!UICONTROL Time condition]** is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/conditions.md#time_condition)
 * When building your journeys, alerts are now displayed from the **Alerts** button, to align with other alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#activity-errors)
 * Zoom options in the journey toolbar have been improved: the zoom percentage is now visible and you can now more easily reset the zoom value.
 
@@ -789,7 +792,8 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Extended personalization data - Beta</strong><br/></th>
@@ -803,7 +807,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements {#june24-improvements}
 
@@ -917,7 +921,8 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>IP Warmup Workflow</strong><br/></th>
@@ -931,9 +936,10 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Business rules - Beta</strong><br/></th>
@@ -948,10 +954,11 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Extended personalization data - Beta</strong><br/></th>
@@ -965,7 +972,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements {#e-improvements}
 
@@ -982,10 +989,12 @@ From beta to this release, the following improvements have been added:
 * **Reporting** - You can now create custom reporting dashboards of Experience Decisioning campaigns using [!DNL Customer Journey Analytics]. [Read more](../experience-decisioning/cja-reporting.md)
 
 
-<!--**Decision Management**
+<!--
+**Decision Management**
 
 * **Multi-rule support** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent.
-* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
+* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. 
+-->
 
 
 **Email channel**
@@ -1003,11 +1012,14 @@ From beta to this release, the following improvements have been added:
 <!--
 **Audiences**
 
-* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.-->
+* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
+-->
 
-<!--**Personalization**
+<!--
+**Personalization**
 
-* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)-->
+* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)
+-->
 
 **Journeys**
 
@@ -1066,7 +1078,8 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<!-- table>
+<!--
+ table>
 <thead>
 <tr>
 <th><strong>AI Assistant - Experience Variant Generation - Beta</strong><br/></th>
@@ -1079,10 +1092,11 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Email Surface Personalization - Private beta </strong><br/></th>
@@ -1095,7 +1109,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements {#apr-improvements}
 
@@ -1262,9 +1276,11 @@ Previously available as Beta, the following improvements are now available to al
 
 * In addition to Email and Push, you can now create Frequency rules for SMS and Direct Mail channels. Frequency rules automatically exclude over-solicited profiles from messages and actions when the frequency cap is reached. [Read more](../conflict-prioritization/rule-sets.md) 
 
-<!--**Decision management**
+<!--
+**Decision management**
 
-* **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.-->
+* **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.
+-->
 
 
 ## January '24 release {#jan-2024}

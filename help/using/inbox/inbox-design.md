@@ -47,8 +47,15 @@ For the complete procedure to create an inbox campaign, refer to [Create an Inbo
 
     ![](assets/inbox-design-3.png)
 
+1. Click the ![rail icon](assets/do-not-localize/Smock_Rail_18_N.svg) to open the preview panel and review how the empty inbox appears.
+
+    ![](assets/inbox-design-3.png)
+
 1. In the **[!UICONTROL Data]** section, click **[!UICONTROL Add meta]** to add custom key/value pairs to the payload.
 
 1. Click the ![](assets/do-not-localize/Smock_StarOutline_18_N.svg) icon to open a dark mode preview of the inbox and confirm your dark theme colors and images.
 
     ![](assets/inbox-design-4.png)
+
+When you are ready, review your settings and activate the inbox. After activation, you can use it with [Content cards](../content-card/create-content-card.md).
+

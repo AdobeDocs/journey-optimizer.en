@@ -23,7 +23,6 @@ solution: Journey Optimizer
     + [2022](using/rn/release-notes-2022.md)
     + [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
-  + [Monthly updates report](../monthly-updates-report.md)
   + [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
   + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
@@ -79,9 +78,11 @@ solution: Journey Optimizer
     + [General events](using/building-journeys/general-events.md)
     + [Reaction events](using/building-journeys/reaction-events.md)
     + [Audience qualification](using/building-journeys/audience-qualification-events.md)
-    + [Optimize](using/building-journeys/optimize.md)
-    + [Conditions](using/building-journeys/conditions.md)
-    + [Condition](using/building-journeys/condition-activity.md)
+    + Optimize {#optimize-activity}
+      + [Get started with the Optimize activity](using/building-journeys/optimize.md)
+      + [Path experimentation](using/building-journeys/path-experimentation.md)
+      + [Path targeting](using/building-journeys/path-targeting.md)
+      + [Conditions](using/building-journeys/conditions.md)
     + [Read audience](using/building-journeys/read-audience.md)
     + [Wait](using/building-journeys/wait-activity.md)
     + [Content decision](using/building-journeys/content-decision.md)

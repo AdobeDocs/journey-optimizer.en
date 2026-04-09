@@ -48,7 +48,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
     +++ List of SMS credentials for configuration
 
     |Configuration fields|Description|
-    |---|---|    
+    |---|---|
     |SMS vendor|Sinch|
     |Name|Choose a name for your API Credential.|
     |Service ID and API Token|Access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.|

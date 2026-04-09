@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
+mini-toc-levels: 1
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 ---
 # Get started with AI Assistant {#gs-content-assistant}

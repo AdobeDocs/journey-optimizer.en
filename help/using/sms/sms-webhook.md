@@ -98,53 +98,53 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
 1. Select a keyword category from the **[!UICONTROL Inbound Keyword Category]** drop-down to configure:
 
-    * +++ Opt-In
+    +++ Opt-In
 
-        * Enable keywords that opt in users with their consent. When a user's message matches a configured keyword, their phone number is opted in to receive SMS messages.
+    * Enable keywords that opt in users with their consent. When a user's message matches a configured keyword, their phone number is opted in to receive SMS messages.
 
-        * By default, the following keywords are enabled: Subscribe, Yes, Unstop, Continue, Resume, and Begin. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
+    * By default, the following keywords are enabled: Subscribe, Yes, Unstop, Continue, Resume, and Begin. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-In keyword.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-In keyword.
 
-        +++
+    +++
 
-    * +++ Opt-Out
+    +++ Opt-Out
 
-        * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
+    * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
 
-        * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
+    * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-Out keyword.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-Out keyword.
 
-        * Enable **[!UICONTROL Fuzzy Logic]** to detect similar keywords to configured Opt-Out keywords. If a user's response is close but not exact, the message entered in the **[!UICONTROL Fuzzy Auto Response]** field is sent. Typically, this message indicates the opt-out did not occur and specifies the exact keyword needed to unsubscribe.
+    * Enable **[!UICONTROL Fuzzy Logic]** to detect similar keywords to configured Opt-Out keywords. If a user's response is close but not exact, the message entered in the **[!UICONTROL Fuzzy Auto Response]** field is sent. Typically, this message indicates the opt-out did not occur and specifies the exact keyword needed to unsubscribe.
 
-        +++
+    +++
 
-    * +++ Double Opt-In
+    +++ Double Opt-In
 
-        * Enable keywords for the double opt-in requirement. When a user's message matches a configured keyword, they are not fully opted-in at this stage. This two-step consent workflow requires users to confirm their opt-in with a second keyword.
+    * Enable keywords for the double opt-in requirement. When a user's message matches a configured keyword, they are not fully opted-in at this stage. This two-step consent workflow requires users to confirm their opt-in with a second keyword.
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a double opt-in keyword is matched. This message instructs the user to enter an Opt-In keyword to complete the opt-in process.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a double opt-in keyword is matched. This message instructs the user to enter an Opt-In keyword to complete the opt-in process.
 
-        +++
+    +++
 
-    * +++ Help
+    +++ Help
 
-        * Enable keywords that provide a standard response when help is requested. When a user's message matches a configured keyword, they receive the Help reply message.
+    * Enable keywords that provide a standard response when help is requested. When a user's message matches a configured keyword, they receive the Help reply message.
 
-        * By default, the following keywords are enabled: Help, Info, Information. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
+    * By default, the following keywords are enabled: Help, Info, Information. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches a Help keyword.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches a Help keyword.
 
-        +++
+    +++
 
-    * +++ Custom
+    +++ Custom
 
-        * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
+    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
 
-        * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
+    * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 
-        +++
+    +++
 
 1. Enter a **[!UICONTROL Default Reply Message]**. This message is automatically sent when a user's response does not match any configured keyword.
 
@@ -199,53 +199,53 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
 1. Select a keyword category from the **[!UICONTROL Inbound Keyword Category]** drop-down to configure:
 
-    * +++ Opt-In
+    +++ Opt-In
 
-        * Enable keywords that opt in users with their consent. When a user's message matches a configured keyword, their phone number is opted in to receive SMS messages.
+    * Enable keywords that opt in users with their consent. When a user's message matches a configured keyword, their phone number is opted in to receive SMS messages.
 
-        * By default, the following keywords are enabled: Subscribe, Yes, Unstop, Continue, Resume, and Begin. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
+    * By default, the following keywords are enabled: Subscribe, Yes, Unstop, Continue, Resume, and Begin. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-In keyword.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-In keyword.
 
-        +++
+    +++
 
-    * +++ Opt-Out
+    +++ Opt-Out
 
-        * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
+    * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
 
-        * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
+    * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-Out keyword.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-Out keyword.
 
-        * Enable **[!UICONTROL Fuzzy Logic]** to detect similar keywords to configured Opt-Out keywords. If a user's response is close but not exact, the message entered in the **[!UICONTROL Fuzzy Auto Response]** field is sent. Typically, this message indicates the opt-out did not occur and specifies the exact keyword needed to unsubscribe.
+    * Enable **[!UICONTROL Fuzzy Logic]** to detect similar keywords to configured Opt-Out keywords. If a user's response is close but not exact, the message entered in the **[!UICONTROL Fuzzy Auto Response]** field is sent. Typically, this message indicates the opt-out did not occur and specifies the exact keyword needed to unsubscribe.
 
-        +++
+    +++
 
-    * +++ Double Opt-In
+    +++ Double Opt-In
 
-        * Enable keywords for the double opt-in requirement. When a user's message matches a configured keyword, they are not fully opted-in at this stage. This two-step consent workflow requires users to confirm their opt-in with a second keyword.
+    * Enable keywords for the double opt-in requirement. When a user's message matches a configured keyword, they are not fully opted-in at this stage. This two-step consent workflow requires users to confirm their opt-in with a second keyword.
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a double opt-in keyword is matched. This message instructs the user to enter an Opt-In keyword to complete the opt-in process.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a double opt-in keyword is matched. This message instructs the user to enter an Opt-In keyword to complete the opt-in process.
 
-        +++
+    +++
 
-    * +++ Help
+    +++ Help
 
-        * Enable keywords that provide a standard response when help is requested. When a user's message matches a configured keyword, they receive the Help reply message.
+    * Enable keywords that provide a standard response when help is requested. When a user's message matches a configured keyword, they receive the Help reply message.
 
-        * By default, the following keywords are enabled: Help, Info, Information. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
+    * By default, the following keywords are enabled: Help, Info, Information. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches a Help keyword.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches a Help keyword.
 
-        +++
+    +++
 
-    * +++ Custom
+    +++ Custom
 
-        * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
+    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
 
-        * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
+    * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 
-        +++
+    +++
 
 1. Enter a **[!UICONTROL Default Reply Message]**. This message is automatically sent when a user's response does not match any configured keyword.
 
@@ -307,53 +307,53 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
 1. Select a keyword category from the **[!UICONTROL Inbound Keyword Category]** drop-down to configure:
 
-    * +++ Opt-In
+    +++ Opt-In
 
-        * Enable keywords that opt in users with their consent. When a user's message matches a configured keyword, their phone number is opted in to receive SMS messages.
+    * Enable keywords that opt in users with their consent. When a user's message matches a configured keyword, their phone number is opted in to receive SMS messages.
 
-        * By default, the following keywords are enabled: Subscribe, Yes, Unstop, Continue, Resume, and Begin. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
+    * By default, the following keywords are enabled: Subscribe, Yes, Unstop, Continue, Resume, and Begin. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-In keyword.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-In keyword.
 
-        +++
+    +++
 
-    * +++ Opt-Out
+    +++ Opt-Out
 
-        * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
+    * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
 
-        * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
+    * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-Out keyword.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches an Opt-Out keyword.
 
-        * Enable **[!UICONTROL Fuzzy Logic]** to detect similar keywords to configured Opt-Out keywords. If a user's response is close but not exact, the message entered in the **[!UICONTROL Fuzzy Auto Response]** field is sent. Typically, this message indicates the opt-out did not occur and specifies the exact keyword needed to unsubscribe.
+    * Enable **[!UICONTROL Fuzzy Logic]** to detect similar keywords to configured Opt-Out keywords. If a user's response is close but not exact, the message entered in the **[!UICONTROL Fuzzy Auto Response]** field is sent. Typically, this message indicates the opt-out did not occur and specifies the exact keyword needed to unsubscribe.
 
-        +++
+    +++
 
-    * +++ Double Opt-In
+    +++ Double Opt-In
 
-        * Enable keywords for the double opt-in requirement. When a user's message matches a configured keyword, they are not fully opted-in at this stage. This two-step consent workflow requires users to confirm their opt-in with a second keyword.
+    * Enable keywords for the double opt-in requirement. When a user's message matches a configured keyword, they are not fully opted-in at this stage. This two-step consent workflow requires users to confirm their opt-in with a second keyword.
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a double opt-in keyword is matched. This message instructs the user to enter an Opt-In keyword to complete the opt-in process.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a double opt-in keyword is matched. This message instructs the user to enter an Opt-In keyword to complete the opt-in process.
 
-        +++
+    +++
 
-    * +++ Help
+    +++ Help
 
-        * Enable keywords that provide a standard response when help is requested. When a user's message matches a configured keyword, they receive the Help reply message.
+    * Enable keywords that provide a standard response when help is requested. When a user's message matches a configured keyword, they receive the Help reply message.
 
-        * By default, the following keywords are enabled: Help, Info, Information. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
+    * By default, the following keywords are enabled: Help, Info, Information. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
-        * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches a Help keyword.
+    * Use the **[!UICONTROL Reply Message]** field to create a message that is automatically sent when a user's inbound message matches a Help keyword.
 
-        +++
+    +++
 
-    * +++ Custom
+    +++ Custom
 
-        * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
+    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
 
-        * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
+    * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 
-        +++
+    +++
 
 1. Enter a **[!UICONTROL Default Reply Message]**. This message is automatically sent when a user's response does not match any configured keyword.
 

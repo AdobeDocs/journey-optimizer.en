@@ -25,8 +25,8 @@ To access journey properties, select the pencil icon in the top-right of the scr
 
 This time zone will be used for every activity of the journey containing a time element such as:
 
-* [Time condition](../building-journeys/condition-activity.md#time_condition)
-* [Date condition](../building-journeys/condition-activity.md#date_condition)
+* [Time condition](../building-journeys/conditions.md#time_condition)
+* [Date condition](../building-journeys/conditions.md#date_condition)
 * [Custom wait](../building-journeys/wait-activity.md#custom)
 
 <!--

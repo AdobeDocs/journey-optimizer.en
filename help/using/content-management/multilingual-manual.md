@@ -193,5 +193,4 @@ You can now activate your campaign or journey. Once sent, you can measure the im
 1. Create your journey with a Delivery and personalize your content as needed.
 1. From your delivery action, click Edit content.
 1. Click Add languages.
-
 -->

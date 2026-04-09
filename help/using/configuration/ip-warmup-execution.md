@@ -34,9 +34,11 @@ Each phase is composed of several runs, to which you assign a single campaign.
 >title="Define the phases of your plan"
 >abstract="Each phase is composed of several runs, to which you assign a single campaign."
 
-<!--You need to associate the campaign and audience at phase level and turns on some settings as needed for all runs associated with a single creative/campaign
+<!--
+You need to associate the campaign and audience at phase level and turns on some settings as needed for all runs associated with a single creative/campaign
 
-At phase level, system ensures that previously targeted + new profiles are picked up AND at iteration level, system ensures that each run is having unique profiles and the count matches what is stated in plan-->
+At phase level, system ensures that previously targeted + new profiles are picked up AND at iteration level, system ensures that each run is having unique profiles and the count matches what is stated in plan
+-->
 
 <!--![](assets/ip-warmup-plan-phase-1.png)-->
 

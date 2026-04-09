@@ -56,11 +56,11 @@ Learn how to trigger actions and conditions based on audience participation stat
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Using the Condition Activity
+Using the Optimize activity (conditions)
 
 Define multiple paths in a journey based on criteria like time, data source, or percentage splits.
 
-[Configure Condition activities](../using/building-journeys/condition-activity.md)
+[Configure Optimize and conditions](../using/building-journeys/optimize.md)
 :::
 
 :::

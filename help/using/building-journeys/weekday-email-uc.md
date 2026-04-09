@@ -27,8 +27,7 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 
 >[!NOTE]
 >
->To implement this use case, you need an active [!DNL Adobe Journey Optimizer] instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](condition-activity.md) and [expressions](expression/expressionadvanced.md).
-
+>To implement this use case, you need an active Adobe Journey Optimizer instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](conditions.md) and [expressions](expression/expressionadvanced.md).
 
 ## Implementation steps
 
@@ -50,7 +49,7 @@ Use these steps to build the weekday-only email flow.
 
 Right after the journey start, add a **[!UICONTROL Condition]** activity to check if the current day is Saturday or Sunday. This will branch the workflow accordingly.
 
-1. Drag and drop a [**[!UICONTROL Condition]** activity](condition-activity.md) onto the canvas after your entry point.
+1. Drag and drop an [**[!UICONTROL Optimize]** activity](optimize.md) onto the canvas after your entry point.
 
 1. Click on the **[!UICONTROL Condition]** activity to open its configuration panel.
 
@@ -180,7 +179,7 @@ Once testing is complete:
 
 ## Related topics
 
-* [Condition activities](condition-activity.md) - Learn how to create different paths in your journey
+* [Optimize activities](optimize.md) - Learn how to create different paths in your journey
 * [Use conditions in a journey](conditions.md) - Detailed guide on journey conditions
 * [Wait activity](wait-activity.md) - Configure wait durations and formulas
 * [Date functions](functions/date-functions.md) - Complete reference for date and time functions

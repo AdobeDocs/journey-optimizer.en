@@ -104,6 +104,20 @@ Ensure you are adding the correct resource first. The **Approve & publish Campai
 
 +++
 
++++How does [!DNL Journey Optimizer] determine which approval policy applies if more than one policy could match?
+
+When several active approval policies could apply to the same journey or campaign, the policy that was **activated most recently** takes precedence. The approver user groups defined in that policy are the ones that are notified and that govern the request.
+
+[Learn more](approval-policies.md#multiple-policies)
+
++++
+
++++If a requestor belongs to multiple user groups, can they choose which group the approval request is sent to?
+
+No. Requestors cannot manually select which user group receives or routes the approval request. The user groups specified in the approval policy that applies—according to [policy precedence](approval-policies.md#multiple-policies)—are notified automatically.
+
++++
+
 ## Additional resources
 
 * **[Create approval policies](approval-policies.md)** - Learn how to set up approval policies to enforce review workflows for campaigns and journeys.

@@ -28,6 +28,27 @@ Because of this model, release notes are updated between monthly releases. For f
 <table>
 <thead>
 <tr>
+<th><strong>Journey path experimentation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Use the new <strong>Optimize</strong> node to run A/B tests or multi-armed bandit experiments to determine the best path to meet your business-centric KPIs. This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
+</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>As part of the General Availability, this release introduces <strong>experiment type</strong> selection (A/B or multi-armed bandit) and <strong>Scale the winner</strong> for unitary journeys.</p>
+<p><img src="assets/do-not-localize/optimize-experiment.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/path-experimentation.md">detailed documentation</a>.</p>
+<p>Availability date: April 7, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Inbox</strong><br/></th>
 </tr>
 </thead>
@@ -83,11 +104,31 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ### Improvements {#april-26-improv}
 
+#### Journey Path Optimization
+
+* **Experiment type** - You can now choose between A/B experiment (fixed split at the start) or Multi-armed bandit (automatic split with weekly weight updates) when configuring a path experiment. [Read more](../building-journeys/path-experimentation.md)
+
+  Availability date: April 7, 2026
+
+* **Path experimentation: Scale the Winner** - You can now automatically or manually roll out the winning path of an experiment to your full audience. Once a winner is determined, you can amplify its reach and effectiveness without constantly monitoring the experiment. [Read more](../building-journeys/path-experimentation.md#scale-winner)
+
+  This capability is available only in unitary journeys (event-triggered and Audience qualifications). It is not available for Read audience journeys.
+
+  Availability date: April 7, 2026
+
+* **Conditions** - The [Optimize](../building-journeys/optimize.md) activity is the new vehicle for creating conditional paths in journeys. It replaces the former **Condition** activity, which has been removed from the UI. All conditional logic is retained and is now handled through the **Optimize** activity's conditions. [Read more](../building-journeys/conditions.md)
+
+  Previously released in Limited Availability, this capability is now available to all environments (General Availability).
+
+  Availability date: April 7, 2026
+
+<!--
+* **Adobe Experience Manager Content Fragment context while authoring** - Your Content Fragment selection stays active as you move between text fields and content blocks, so you can add more fragment fields without reopening **Open AEM Content advisor** each time. [Read more](../integrations/aem-fragments.md)
+
+  Availability date: April 1, 2026
+-->
+
 #### Adobe Experience Manager Integrations
-
-<!--* **Adobe Experience Manager Content Fragment context while authoring** - Your Content Fragment selection stays active as you move between text fields and content blocks, so you can add more fragment fields without reopening **Open AEM Content advisor** each time. [Read more](../integrations/aem-fragments.md)
-
-  Availability date: April 1, 2026-->
 
 * **Adobe Experience Manager Content fragment Varition Support** - You can select **Content Fragment variations** (for example language or channel variants) when inserting Adobe Experience Manager Content Fragments, with improved handling for locale and multilingual scenarios. [Read more](../integrations/aem-fragments.md#aem-variations)
 
@@ -101,7 +142,8 @@ The [New capabilities](#march-26-features) and [Improvements](#march-26-improv) 
 <!--
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
 
-See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
+See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
+-->
 
 **Release date**: March 24-25, 2026
 
@@ -387,8 +429,6 @@ Improvements coming with this release are listed below.
   Availability date: March 27, 2026
 
 <!--
-
-
 * **Exclude bot clicks for email and SMS reporting** - Email and SMS reporting now automatically filters out bot clicks from click metrics, providing more accurate engagement data and preventing automated traffic from inflating your performance figures.
 
 #### Email Designer
@@ -397,7 +437,8 @@ Improvements coming with this release are listed below.
 
 * **Text mode support in fragments** - To support text-based email workflows, you can now create and manage text versions of your visual fragments for optimal use in the plain text version of emails that include that fragment.
 
-  **Caution:** When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered—both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.-->
+  **Caution:** When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered—both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.
+-->
 <!--
 #### Decisioning
 
@@ -441,41 +482,16 @@ Improvements coming with this release are listed below.
 
   Availability date: March 31, 2026
   
+<!--
 ## Coming soon {#coming-soon}
 
 The features and improvements below are planned for release later in March/early April. Release dates and scope are **subject to change without prior notice**.
 
-<table>
-<thead>
-<tr>
-<th><strong>Journey path experimentation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Use the new <strong>Optimize</strong> node to run A/B tests or multi-armed bandit experiments to determine the best path to meet your business-centric KPIs. This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
-</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../building-journeys/optimize.md">Learn more</a></p>
-<p><img src="assets/do-not-localize/optimize.gif"></p>
-<p>As part of the General Availability, this release introduces <strong>experiment type</strong> selection (A/B or multi-armed bandit) and <strong>Scale the winner</strong> for unitary journeys.</p>
-<p>Availability date: April 7, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
-<!--WAITING RELEASE DATE CONFIRMATION * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.-->
-<!--
+WAITING RELEASE DATE CONFIRMATION * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.
+
+
 WAITING RELEASE DATE CONFIRMATION
 * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.
-
-<--
-TO ADD when Path optimization is GA:
-
-* **Experiment type** - You can now choose between A/B experiment (fixed split at the start) or Multi-armed bandit (automatic split with weekly weight updates) when configuring a path experiment.
-
-* **Path experimentation: Scale the Winner** - You can now automatically or manually roll out the winning path of an experiment to your full audience. Once a winner is determined, you can amplify its reach and effectiveness without constantly monitoring the experiment.
-This capability is available only in unitary journeys (event-triggered and Audience qualifications). It is not available for Read audience journeys.
-
 -->
+

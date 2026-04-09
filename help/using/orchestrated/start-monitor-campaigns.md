@@ -105,12 +105,12 @@ Data transported from one activity to another through transitions is stored in a
 
 Visual status indicators help you understand how each activity is performing:
 
-|Visual indicator | Description | 
+|Visual indicator | Description |
 |-----|------------|
 |![Pending status](assets/activity-status-pending.png){zoomable="yes"}{width="70%"}| The activity is currently being executed. |
 |![Orange status](assets/activity-status-orange.png){zoomable="yes"}{width="70%"}| The activity requires your attention. This may involve confirming the sending of a delivery or taking a necessary action. |
 |![Error status](assets/activity-status-red.png){zoomable="yes"}{width="70%"}|The activity has encountered an error. To resolve the issue, open the Orchestrated campaign logs for more information.|
-|![Success status](assets/activity-status-green.png){zoomable="yes"}{width="70%"}|The activity has been successfully executed. | 
+|![Success status](assets/activity-status-green.png){zoomable="yes"}{width="70%"}|The activity has been successfully executed. |
 
 ### Logs and tasks {#logs-tasks}
 
