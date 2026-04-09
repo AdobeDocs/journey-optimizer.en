@@ -459,6 +459,10 @@ Improvements coming with this release are listed below.
   * **New users and sandboxes**: Both the display name and the table name reflect the new name.
   * **Existing users with new sandboxes**: Both the display name and the table name are updated to the new name.
 
+  >[!NOTE]
+  >
+  >New datasets show the new name immediately. For older dataset names, backfill and reconciliation proceed gradually and may take several weeks to complete.
+
   Availability date: March 2, 2026
 
 
