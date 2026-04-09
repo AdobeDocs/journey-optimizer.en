@@ -2,7 +2,7 @@
 title: Optimize email text for AI inboxes
 description: Refine the plain text layer of email in Journey Optimizer so AI-assisted inbox clients can use your offers and CTAs when they summarize mail or extract intent—in the Email Designer with Optimize with AI.
 feature: Email Design
-topic: Email Design, Artificial Intelligence
+topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
 exl-id: 0c2f95ce-28a0-480c-9829-b7e4975b6340
