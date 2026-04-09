@@ -50,6 +50,10 @@ These steps cover generating personalization expressions from scratch. To work w
 
     ![](assets/ai-perso-generate.png)
 
+    >[!NOTE]
+    >
+    >Any unrelated prompt or question returns an out-of-scope error. Adjust your prompt and ask a relevant question about the personalization you need.
+
 1. You can keep discussing with the assistant in a multi-turn conversation: it keeps context from your prompts so you can refine the same expression step by step. To start over, click the **[!UICONTROL New session]** button.
 
     ![](assets/ai-perso-question.png)

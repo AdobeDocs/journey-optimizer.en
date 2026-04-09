@@ -141,7 +141,7 @@ The following guardrails apply to [AI Assistant for personalization expressions]
 * **Offer and Experience Decisioning** — Not supported.
 * **Favorites** — Not supported.
 * **Saved conditions** — Not supported.
-* **Fragments** and **Adobe Experience Manager Content Fragments** — Not supported.
+* **Adobe Experience Manager Content Fragments** — Not supported.
 
 ## AI Assistant content generation capabilities {#generative-features}
 
