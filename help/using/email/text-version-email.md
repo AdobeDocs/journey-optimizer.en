@@ -46,13 +46,13 @@ If you prefer using a different content for the plain text version, follow the s
 
 You can help AI-powered inbox features (such as summaries in [!DNL Gmail], [!DNL Outlook], or [!DNL Apple Mail]) surface your key offers and details by using the **[!UICONTROL Optimize for AI Inbox]** button. That action generates an improved plain text version focused on information assistants are likely to read from the text part of the message.
 
-![Optimize for AI Inbox button in the text version view](../content-management/assets/text-optimizer-for-ai-button.png){zoomable="yes" width="80%"}
+![Optimize for AI Inbox button in the text version view](assets/text-optimizer-for-ai-button.png){zoomable="yes" width="80%"}
 
 >[!IMPORTANT]
 >
 >When using this capability, the **[!UICONTROL Sync with HTML]** option is automatically disabled.
 
-For a full walkthrough and recommended scenarios, see [Optimize email text for AI inboxes](../content-management/llm-email-optimizer.md).
+For a full walkthrough and recommended scenarios, see [Optimize email text for AI inboxes](llm-email-optimizer.md).
 
 ## When to use custom plain text versions {#when-to-use}
 
