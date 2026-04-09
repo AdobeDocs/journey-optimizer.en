@@ -6,7 +6,6 @@ description: Journey Optimizer 2023 Release notes
 feature: Release Notes
 topic: Content Management
 hide: yes
-hidefromtoc: yes
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2

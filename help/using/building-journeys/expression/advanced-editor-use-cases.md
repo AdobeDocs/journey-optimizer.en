@@ -7,7 +7,6 @@ feature: Journeys
 role: Developer
 level: Experienced
 hide: yes
-hidefromtoc: yes
 keywords: expression, condition, use-cases, events
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
 version: Journey Orchestration

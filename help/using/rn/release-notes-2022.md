@@ -7,7 +7,6 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-hidefromtoc: yes
 hide: yes
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
 ---
