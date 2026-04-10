@@ -190,23 +190,6 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 </tr>
 </tbody>
 </table>
-<table>
-<thead>
-<tr>
-<th><strong>Inbox</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Inbox</strong> is a mobile functionality, available with Content Cards, that enables customers to create a centralized location within their app or website to display messages sent to their users. This extends the lifetime of marketing communications by ensuring messages remain accessible even after they are dismissed.</p>
-<p><img src="assets/do-not-localize/inbox.gif"/></p>
-<p>For more information, refer to the <a href="../inbox/inbox-gs.md">detailed documentation</a>.</p>
-<p>Availability date: March 31, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
