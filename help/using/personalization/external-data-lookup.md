@@ -6,7 +6,6 @@ topic: Personalization
 role: Developer
 level: Experienced
 hide: yes
-hidefromtoc: yes
 badge: label="Limited availability" type="Informative"
 exl-id: eae8a09a-5d27-4a80-b21f-7f795d800602
 ---
