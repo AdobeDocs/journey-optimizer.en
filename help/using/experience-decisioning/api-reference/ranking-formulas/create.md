@@ -16,8 +16,8 @@ You can create a ranking formula by making a POST request to the Offer Library A
 
 The following table shows the valid values which comprise the Content-Type fields in the request header:
 
-| Header name | Value | 
-| --------- | ----------- | 
+| Header name | Value |
+| --------- | ----------- |
 | Content-Type |application/json |
 
 **API format**

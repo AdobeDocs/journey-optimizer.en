@@ -78,7 +78,8 @@ To open the advanced HTML editor and edit your template source, follow these ste
     >Your edits are preserved when you switch views.
 
 <!--
-    ![](assets/email-template-expert-mode-simulate.png){zoomable="yes"}-->
+    ![](assets/email-template-expert-mode-simulate.png){zoomable="yes"}
+-->
 
 ## Related topics
 

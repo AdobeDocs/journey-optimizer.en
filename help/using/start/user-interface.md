@@ -33,7 +33,7 @@ The Journey Optimizer interface consists of four main areas:
 
 ## Top bar features {#top-bar}
 
-### Universal search {#search}
+### Universal search {#universal-search}
 
 Use the search icon to quickly find journeys, campaigns, assets, and other objects across Journey Optimizer. Type keywords to see relevant results from all areas of the platform. [Learn more about universal search](search-filter-categorize.md#unified-search).
 

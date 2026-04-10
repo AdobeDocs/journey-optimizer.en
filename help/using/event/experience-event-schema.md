@@ -117,7 +117,7 @@ Add a condition in a journey, edit the expression and unfold the event node in t
 
 ![](assets/schema12.png)
 
-To learn how to define journey conditions, refer to this [page](../building-journeys/condition-activity.md).
+To learn how to define journey conditions, refer to this [page](../building-journeys/conditions.md).
 
 ### Message personalization{#message_personalization}
 

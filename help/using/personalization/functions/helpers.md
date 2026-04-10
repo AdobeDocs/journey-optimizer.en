@@ -210,6 +210,26 @@ The following example lets you calculate the total sum of prices for products in
 {{sum}}
 ```
 
+## Dataset lookup {#dataset-lookup}
+
+>[!AVAILABILITY]
+>
+>This feature is currently available to all customers as a limited availability release.
+>
+>For now, the `datasetLookup` helper function can be used within expression fragments for a limited set of customers. To gain access, contact your Adobe representative.
+
+The `datasetLookup` helper retrieves data from Adobe Experience Platform record datasets during personalization so you can use field values that are not stored on the profile or in the event payload.
+
+**Syntax**
+
+```sql
+{{datasetLookup datasetId="datasetId" id="key" result="store" required=false}}
+```
+
+Reference retrieved fields with `{{result.fieldId}}`, where `result` is the value you pass to the `result` parameter.
+
+For dataset enablement, parameter details, examples, and testing, see [Use Adobe Experience Platform data for personalization](../aep-data-perso.md).
+
 ## Execution Metadata {#execution-metadata}
 
 The `executionMetadata` helper allows to dynamically capture and store custom key-value pairs into the message execution context.

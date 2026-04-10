@@ -6,6 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 70f64348-092b-4350-91dc-72c3c07300f9
+badge: label="Limited Availability" type="Informative"
 ---
 # Leverage fragments in decision policies {#fragments}
 
@@ -17,7 +18,7 @@ If your decision policy contains decision items including fragments, you can lev
 
 For example, let's say you want to display different contents for several mobile device models. Make sure you added fragments corresponding to those devices to the decision item that you are using in the decision policy. [Learn how](items.md#attributes).
 
-![](assets/item-fragments.png){width=70%}
+![Fragments section of a decision item showing fragment references and placement keys.](assets/item-fragments.png){width=70%}
 
 Once done, you can use either one of the following methods:
 
@@ -27,7 +28,7 @@ Once done, you can use either one of the following methods:
 
 Simply copy-paste the code block below into the decision policy code. Replace `variable` with the fragment ID and `placement` with the fragment reference key:
 
-```
+```handlebars
 {% let variable =  get(item._experience.decisioning.offeritem.contentReferencesMap, "placement").id %}
 {{fragment id = variable required=false}}
 ```
@@ -36,19 +37,19 @@ Simply copy-paste the code block below into the decision policy code. Replace `v
 
 1. Navigate to the **[!UICONTROL Helper functions]** and add the **Let** function `{% let variable = expression %} {{variable}}` to the code pane, where you can declare the variable for your fragment.
 
-    ![](assets/decision-let-function.png)
+    ![Decision policy code editor showing the Let helper function added to the code pane.](assets/decision-let-function.png)
 
-1. Use the **Map** > **Get** function `{%= get(map, string) %}` to build your expression. The map is the fragment referenced in the decision item and the string can be the device model you entered in the decision item as the **[!UICONTROL Fragment reference key]**.
+1. Use the **Map** > **Get** function `{%= get(map, string) %}` to build your expression. The map is the fragment referenced in the decision item. The string can be the device model you entered in the decision item as the **[!UICONTROL Fragment reference key]**.
 
-    ![](assets/decision-map-function.png)
+    ![Map and Get functions used to reference the fragment map and fragment reference key.](assets/decision-map-function.png)
 
 1. You can also use a contextual attribute which would contain this device model ID.
 
-    ![](assets/decision-contextual-attribute.png)
+    ![Contextual attribute selected for the device model identifier.](assets/decision-contextual-attribute.png)
 
 1. Add the variable that you chose for your fragment as the fragment ID.
 
-    ![](assets/decision-fragment-id.png)
+    ![Fragment ID variable set from the decision item in the decision policy code.](assets/decision-fragment-id.png)
 
 >[!ENDTABS]
 
@@ -62,21 +63,29 @@ The fragment ID and reference key will be selected from the decision item's **[!
 
 ## Usage and guardrails {#fragments-guardrails}
 
-### Decision item and context attributes {#context-attributes}
+**Simulate content and expression fragments in emails**
 
-Decision item attributes and contextal attribute are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
+For the **Email** channel, expression fragments associated with a decision item display correctly when you **[!UICONTROL Send proof]** or when the campaign is activated. However, **[!UICONTROL Simulate content]** does not display the expression fragment from the decision item.
+
+**Visual fragments and decision items in emails**
+
+You cannot assign a **[!UICONTROL Visual fragment]** to a decision item, only **expression fragments** are supported in this context.
+
+**Decision item and context attributes**
+
+Decision item attributes and contextual attributes are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
 
 Let's say you want to use the *sport* variable in your fragment.
 
 1. Reference this variable in the fragment, for example:
 
-    ```
+    ```text
     Elevate your practice with new {{sport}} gear!
     ```
 
 1. Define the variable with the **Let** function within the decision policy block. In the example below, *sport* is defined with the decision item attribute:
 
-    ```
+    ```handlebars
     {#each decisionPolicy.13e1d23d-b8a7-4f71-a32e-d833c51361e0.items as |item|}}
     {% let sport = item._cjmstage.value %}
     {{fragment id = get(item._experience.decisioning.offeritem.contentReferencesMap, "placement1").id }}
@@ -85,7 +94,7 @@ Let's say you want to use the *sport* variable in your fragment.
 
 ### Decision item fragment content validation {#fragment-content-validation}
 
-* Due to the dynamic nature of these fragments, when used in a campaign, the message validation during the campaign content creation is skipped for fragments that are referenced in decision items.
+* Due to the dynamic nature of these fragments, when used in a campaign, message validation during campaign content creation is skipped for fragments referenced in decision items.
 
 * The validation of the fragment content happens only during the fragment creation and publication.
 

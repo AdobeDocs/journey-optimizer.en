@@ -135,7 +135,8 @@ Before that, verify the following:
 
     * Click **[!UICONTROL Download CSR]** to save the form to your local computer.
 
-    * Send the CSR to the Certificate Authority to get your SSL certificate.-->
+    * Send the CSR to the Certificate Authority to get your SSL certificate.
+-->
 
 1. Once you have retrieved your SSL certificate, click **[!UICONTROL Upload certificate]**.
 

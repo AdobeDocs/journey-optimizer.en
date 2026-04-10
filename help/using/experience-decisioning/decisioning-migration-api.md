@@ -350,13 +350,15 @@ When migrating from Decision management to Decisioning, entities are mapped as f
 
 ## Workflow cleanup {#cleanup}
 
-<!--Workflow resources can be deleted by service users only. Delete operations require an `If-Match` header with the workflow's `_etag` value.
+<!--
+Workflow resources can be deleted by service users only. Delete operations require an `If-Match` header with the workflow's `_etag` value.
 
 **Available delete operations:**
 
 * `DELETE /workflows/generate-dependencies/{id}`
 * `DELETE /workflows/migration/{id}`
-* `DELETE /workflows/rollback/{id}`-->
+* `DELETE /workflows/rollback/{id}`
+-->
 
 Workflow deletion is not publicly available. If you need to delete a workflow resource, contact your system administrator.
 

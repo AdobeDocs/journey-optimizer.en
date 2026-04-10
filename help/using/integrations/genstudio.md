@@ -47,19 +47,23 @@ To use the [!DNL GenStudio for Performance Marketing] integration with [!DNL Jou
 
 * Users must have at least the **Collaborator** role or higher in [!DNL GenStudio for Performance Marketing] to utilize the integration features. [Learn more about user roles in GenStudio](https://experienceleague.adobe.com/en/docs/genstudio-for-performance-marketing/user-guide/intro/user-roles){target="_blank"}
 
-<!--To access the GenStudio integration in [!DNL Adobe Journey Optimizer] feature, users need to be granted the **xxx** permission. [Learn more](../administration/permissions.md)
+<!--
+To access the GenStudio integration in [!DNL Adobe Journey Optimizer] feature, users need to be granted the **xxx** permission. [Learn more](../administration/permissions.md)
 
 >[!IMPORTANT]
 >
->* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).-->
+>* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).
+-->
 
-<!--Guardrails and limitations {#genstudio-guardrails}
+<!--
+Guardrails and limitations {#genstudio-guardrails}
 
 General guidelines for using the GenStudio integration in [!DNL Adobe Journey Optimizer] for email generation are listed below:
 
 See if guidelines/limitations such as the ones listed [here](../content-management/gs-generative.md#generative-guardrails) for AI Assistant can apply.
 
-The following limitations apply to GenStudio integration in [!DNL Adobe Journey Optimizer]:-->
+The following limitations apply to GenStudio integration in [!DNL Adobe Journey Optimizer]:
+-->
 
 ## Leverage GenStudio capabilities in Journey Optimizer {#use-genstudio}
 

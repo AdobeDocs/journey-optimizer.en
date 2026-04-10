@@ -109,7 +109,7 @@ The payload contains the following context information, which you can use in con
 
 When using the expression editor in a condition or action that follows an **[!UICONTROL Audience Qualification]** activity, you have access to the **[!UICONTROL AudienceQualification]** node. You can choose between the **[!UICONTROL Last qualification time]** and the **[!UICONTROL status]** (enter or exit).
 
-See [Condition activity](../building-journeys/condition-activity.md#about_condition).
+See [Conditions](../building-journeys/conditions.md#about_condition).
 
 A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This interval matches the cache refresh interval of the dedicated service. Wait ten minutes before using this journey.
 

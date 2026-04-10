@@ -52,7 +52,7 @@ Learn more:
 
 * [!DNL Adobe Experience Platform] [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
-* [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
+* [Using audiences in conditions](../building-journeys/conditions.md#using-a-segment)
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
@@ -71,7 +71,7 @@ Learn more using audiences:
 
 * [!DNL Adobe Experience Platform] [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
-* [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
+* [Using audiences in conditions](../building-journeys/conditions.md#using-a-segment)
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
@@ -93,7 +93,7 @@ Learn more:
 
 * [!DNL Adobe Experience Platform] [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
-* [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
+* [Using audiences in conditions](../building-journeys/conditions.md#using-a-segment)
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 

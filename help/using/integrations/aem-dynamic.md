@@ -243,7 +243,6 @@ Enable conditional content in your dynamic media to better target your audience 
 1. Select your **[!UICONTROL Component]** and access the **[!UICONTROL Settings]** menu.
 
 1. In the **[!UICONTROL Custom Attributes]** menu, populate the Dynamic Media text and personalization fields to customize the content for your audience.
-
 -->
 
 ## How-to video {#video}

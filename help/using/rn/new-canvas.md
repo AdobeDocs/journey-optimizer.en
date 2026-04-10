@@ -74,7 +74,8 @@ For each activity within every live journey using the new model, you have access
 
 ![](assets/new-canvas6bis.png)
 
-<!--`
+<!--
+`
 With every live journey on the new model, you will be able to see two types of "last 24 hours" reporting information:
 
 * On a **new insert**, you will see:

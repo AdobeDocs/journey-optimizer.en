@@ -23,7 +23,6 @@ solution: Journey Optimizer
     + [2022](using/rn/release-notes-2022.md)
     + [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
-  + [Monthly updates report](../monthly-updates-report.md)
   + [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
   + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
@@ -79,9 +78,11 @@ solution: Journey Optimizer
     + [General events](using/building-journeys/general-events.md)
     + [Reaction events](using/building-journeys/reaction-events.md)
     + [Audience qualification](using/building-journeys/audience-qualification-events.md)
-    + [Optimize](using/building-journeys/optimize.md)
-    + [Conditions](using/building-journeys/conditions.md)
-    + [Condition](using/building-journeys/condition-activity.md)
+    + Optimize {#optimize-activity}
+      + [Get started with the Optimize activity](using/building-journeys/optimize.md)
+      + [Path experimentation](using/building-journeys/path-experimentation.md)
+      + [Path targeting](using/building-journeys/path-targeting.md)
+      + [Conditions](using/building-journeys/conditions.md)
     + [Read audience](using/building-journeys/read-audience.md)
     + [Wait](using/building-journeys/wait-activity.md)
     + [Content decision](using/building-journeys/content-decision.md)
@@ -282,6 +283,7 @@ solution: Journey Optimizer
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Manage the text version](using/email/text-version-email.md)
+        + [Optimize email text for AI inboxes](using/email/llm-email-optimizer.md)
         + [Add metadata](using/email/email-metadata.md)
       + Edit style {#edit-style}
         + [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)
@@ -385,6 +387,11 @@ solution: Journey Optimizer
       + [Configure content cards support in Web SDK](using/content-card/content-card-configuration-sdk.md)
     + [Create content cards](using/content-card/create-content-card.md)
     + [Design content cards](using/content-card/design-content-card.md)
+  + Inbox {#inbox}
+    + [Get started with Inbox](using/inbox/inbox-gs.md)
+    + [Configure Inbox channel in Journey Optimizer](using/inbox/inbox-configuration.md)
+    + [Create your Inbox](using/inbox/inbox-create.md)
+    + [Design your Inbox](using/inbox/inbox-design.md)
   + WhatsApp {#whatsapp}
     + [WhatsApp](/help/rp_landing_pages/whatsapp-landing-page.md)
     + [Get started with WhatsApp messages](using/whatsapp/get-started-whatsapp.md)
@@ -483,7 +490,10 @@ solution: Journey Optimizer
     + [Work with Adobe Stock](using/integrations/stock.md)
     + [Work with Adobe Express](using/integrations/express.md)
     + [Work with Experience Manager templates](using/integrations/aem-templates.md)
-    + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+    + Experience Manager Content Fragments {#aem}
+      + [Get started with Experience Manager Content Fragments](using/integrations/aem-fragments-gs.md)
+      + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+      + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
     + [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
     + [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
@@ -879,9 +889,8 @@ solution: Journey Optimizer
     + [Access & edit PTR records](using/configuration/ptr-records.md)
     + [Create IP pools](using/configuration/ip-pools.md)
   + Implement an IP warmup plan {#implement-ip-warmup-plan}
-    + [Implement an IP warmup plan](/help/rp_landing_pages/implement-ip-warmup-plan-landing-page.md)
-    + [IP warmup deliverability guide](using/configuration/ip-warmup-deliverability-guide.md)
     + [Get started with IP warmup plans](using/configuration/ip-warmup-gs.md)
+    + [IP warmup deliverability guide](using/configuration/ip-warmup-deliverability-guide.md)
     + [Create IP warmup campaigns](using/configuration/ip-warmup-campaign.md)
     + [Create an an IP warmup plan](using/configuration/ip-warmup-plan.md)
     + [Run the IP warmup plan](using/configuration/ip-warmup-execution.md)
