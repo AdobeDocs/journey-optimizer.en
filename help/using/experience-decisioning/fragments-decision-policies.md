@@ -10,13 +10,13 @@ badge: label="Limited Availability" type="Informative"
 ---
 # Leverage fragments in decision policies {#fragments}
 
-If your decision policy contains decision items including fragments, you can leverage these fragments in the decision policy code. [Learn more on fragments](../content-management/fragments.md)
+If your decision policy contains decision items including fragments, you can leverage these fragments when authoring a message, within the decision policy. [Learn more on fragments](../content-management/fragments.md)
 
 >[!AVAILABILITY]
 >
 >This feature is available in Limited Availability for the **Code-based experience** and **Email** channels. To request access, contact your Adobe representative.
 
-For example, let's say you want to display different contents for several mobile device models. Make sure you added fragments corresponding to those devices to the decision item that you are using in the decision policy. [Learn how](items.md#attributes).
+For example, let's say you want to display different contents for several mobile device models. Add the specified fragments, each pertaining to a different phone model, to the decision item you are using in the decision policy. [Learn how](items.md#attributes).
 
 ![Fragments section of a decision item showing fragment references and placement keys.](assets/item-fragments.png){width=70%}
 
@@ -63,15 +63,15 @@ The fragment ID and reference key will be selected from the decision item's **[!
 
 ## Usage and guardrails {#fragments-guardrails}
 
-**Simulate content and expression fragments in emails**
+### Simulate content and expression fragments in emails {#simulate-content-expression-fragments}
 
 For the **Email** channel, expression fragments associated with a decision item display correctly when you **[!UICONTROL Send proof]** or when the campaign is activated. However, **[!UICONTROL Simulate content]** does not display the expression fragment from the decision item.
 
-**Visual fragments and decision items in emails**
+### Visual fragments and decision items in emails {#visual-fragments-decision-items}
 
 You cannot assign a **[!UICONTROL Visual fragment]** to a decision item, only **expression fragments** are supported in this context.
 
-**Decision item and context attributes**
+### Decision item and context attributes {#decision-item-context-attributes}
 
 Decision item attributes and contextual attributes are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
 
