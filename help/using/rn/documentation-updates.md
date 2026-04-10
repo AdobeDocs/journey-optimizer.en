@@ -17,6 +17,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **[Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached)** section has been added to the journey troubleshooting documentation, explaining the `maxInstanceStackEventsReached` discard reason, when it occurs, and how to mitigate it. The guardrails and step event field list pages have also been updated accordingly.
 
+* The **Leverage fragments in decision policies** documentation now includes guardrail notes for the **Email** channel: **[!UICONTROL Simulate content]** does not display expression fragments from the decision item, while **[!UICONTROL Send proof]** and activated campaigns do. The page also states that **[!UICONTROL Visual fragments]** cannot be assigned to a decision item — only **expression fragments** are supported in this context. [Read more](../experience-decisioning/fragments-decision-policies.md)
+
 ## March 2026 {#march-2026}
 
 * Documentation for **previewing code-based experiences with Experience Decisioning** now clarifies that **[!UICONTROL Simulate content]** is content preview only. Context data from live Edge requests is not simulated in authoring preview. [Read more](../code-based/test-code-based.md#preview-code-based)
