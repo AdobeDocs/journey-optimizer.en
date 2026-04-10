@@ -4,7 +4,6 @@ product: Journey Optimizer
 title: Guided channel setup
 description: Guided channel setup
 hide: yes
-hidefromtoc: yes
 redpen-status: CREATED_||_2025-08-11_21-07-03
 exl-id: fb2185b8-6c92-4c50-8a79-2eb776cf0ac5
 ---
