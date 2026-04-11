@@ -85,6 +85,22 @@ By using channel activities, you can create comprehensive and personalized campa
 
 1. In the **[!UICONTROL Properties]** tab, enter a description then switch to the **[!UICONTROL Actions]** tab to configure the activity.
 
+## Marketing vs Transactional messages {#marketing-vs-transactional}
+
+Choosing the right category determines how messages are delivered and which rules apply:
+
+| | Marketing | Transactional |
+| --- | --- | --- |
+| **Opt-in required** | Yes | No |
+| **Business rules** | Applied (frequency capping, fatigue rules) | Bypassed |
+| **Channel configuration type** | Marketing surface | Transactional surface |
+| **Typical use cases** | Promotions, newsletters, seasonal campaigns | Order confirmations, password resets, disruption alerts |
+| **Audience** | Opted-in subscribers only | Any profile, regardless of opt-in status |
+
+>[!NOTE]
+>
+>Use Transactional only for operational or time-sensitive communications. Misclassifying a promotional message as Transactional bypasses consent and business rules, which may violate regulatory requirements.
+
 ## Set up the channel configuration and settings {#configuration}
 
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.

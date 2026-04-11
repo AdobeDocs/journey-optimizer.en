@@ -48,3 +48,7 @@ Follow these steps to configure the **[!UICONTROL Build audience]** activity:
 Here is an example of an Orchestrated campaign with two **[!UICONTROL Build audience]** activities. The first targets profiles that have items in their cart, followed by an email delivery. The second targets profiles with a wishlist, followed by an SMS delivery.
 
 ![](../assets/build-audience-2.png)
+
+In the example below, the **[!UICONTROL Build audience]** activity uses the rule builder to filter profiles by their subscription plan. A condition is set on the `plan` attribute to include only profiles where `plan = "basic"`, narrowing the audience to basic-tier subscribers before passing them to the next activity.
+
+![](../assets/build-audience-plan.png)

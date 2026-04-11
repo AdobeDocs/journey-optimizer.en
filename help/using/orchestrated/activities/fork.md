@@ -36,3 +36,16 @@ Follow these steps to configure the **[!UICONTROL Fork]** activity:
 1. To remove a transition, click the ![](../assets/do-not-localize/Smock_Delete_18_N.svg) icon.
 
 1. If needed, click **[!UICONTROL Add transition]** to add an additional outbound transition. 
+
+## Examples {#fork-examples}
+
+Here is a typical use of the **[!UICONTROL Fork]** activity: targeting the same audience with two different email channels — one Marketing and one Transactional — to compare delivery behavior.
+
+After a **[!UICONTROL Build audience]** activity selects the target population, a **[!UICONTROL Fork]** creates two parallel branches:
+
+* **Branch 1** connects to a Marketing email channel activity. Messages follow standard business rules and are sent only to opted-in profiles.
+* **Branch 2** connects to a Transactional email channel activity. Messages bypass business rules and are delivered to all profiles regardless of opt-in status.
+
+![](../assets/workflow-fork.png)
+
+This pattern is useful for understanding how channel category settings affect delivery behavior, and for sending different message types to the same audience in a single campaign run.

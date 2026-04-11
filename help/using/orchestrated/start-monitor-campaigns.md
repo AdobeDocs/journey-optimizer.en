@@ -27,6 +27,10 @@ Once you have created your orchestrated campaign and designed the tasks to perfo
 
 To test an Orchestrated campaign, open the campaign and select **[!UICONTROL Start]**. Each activity in the campaign is executed sequentially until the end of the canvas is reached.
 
+>[!NOTE]
+>
+>For non-recurring campaigns, message delivery is paused by default after publishing until you explicitly confirm the send from the channel activity's properties pane. To avoid this during testing, enable **[!UICONTROL Send without confirmation]** on the channel activity before publishing. [Learn more](#confirm-sending)
+
 ![Start button in the campaign canvas toolbar](assets/campaign-start.png){zoomable="yes"}
 
 For **triggered orchestrated campaigns**, the system waits for an API call to start the campaign. You need to send the signal to continue the test. [Learn how to test signal-triggered campaigns](trigger-orchestrated-campaign.md#complete-and-test).
