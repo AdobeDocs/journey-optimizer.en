@@ -283,3 +283,73 @@ The following operation defines people who have eaten sushi and pizza at least o
 ```sql
 {%= supersetOf(person.eatenFoods,["sushi", "pizza"]) %}
 ```
+
+## Iterate over an array {#each-loop}
+
+Use the Handlebars `{{#each}}` block helper to loop over an array and render content for each item in **personalized content** (email, SMS, push).
+
+>[!NOTE]
+>
+>`{{#each}}` is available in the **personalization editor** only (email body, SMS, push content). It is **not** supported in the journey condition activity. To filter or match items from an array inside a journey condition, use [collection management functions](../../building-journeys/expression/collection-management-functions.md) instead.
+
+**Syntax**
+
+```handlebars
+{{#each arrayAttribute}}
+  {{this}}
+{{/each}}
+```
+
++++Example — List all items in an array
+
+```handlebars
+{{#each profile.purchases.items}}
+  - {{this.name}}: {{this.price}}€
+{{/each}}
+```
+
+Output (example):
+
+```
+- Running shoes: 89€
+- Water bottle: 15€
+- Gym bag: 45€
+```
+
++++
+
++++Example — Access the loop index
+
+Use `@index` to access the current loop position (0-based):
+
+```handlebars
+{{#each profile.preferences.languages}}
+  {{@index}}: {{this}}
+{{/each}}
+```
+
+Output (example):
+
+```
+0: English
+1: French
+2: Spanish
+```
+
++++
+
++++Example — Conditional rendering inside a loop
+
+Use the PQL `{% if %}` block inside `{{#each}}` to render content only when a condition is met:
+
+```handlebars
+{{#each profile.orders}}
+  {% if this.status = "pending" %}
+  Your order {{this.id}} is still pending.
+  {% endif %}
+{{/each}}
+```
+
+This is the recommended pattern to simulate a "break on condition" — only the items matching the condition produce output.
+
++++

@@ -310,6 +310,7 @@ The following guardrails apply to the [journey expression editor](../building-jo
 
 * Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You must create a new audience and use an `inaudience` condition in the journey.
 * `timeSeriesEvents` attributes cannot be used in the expression editor. To access Experience Events at a profile level, please create a new field group based on a `XDM ExperienceEvent` schema.
+* A single condition expression cannot contain more than **200 values** in an `in` list (e.g. `field in ["val1","val2",...]`). Expressions exceeding this limit will fail validation. To work around this limit, split the values across multiple conditions combined with `or`.
 
 ### Journey activities {#activities}
 

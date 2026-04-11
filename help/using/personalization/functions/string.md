@@ -660,6 +660,30 @@ The `replaceAll` function is used to replace all substrings of a text that match
 > Learn more in [Oracle documentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}.
 >
 
++++Example — Basic replacement
+
+```sql
+{%= replaceAll("Hello World","World","AJO") %}
+```
+
+Returns `Hello AJO`.
+
++++
+
++++Real-world example — Variable reassignment after replaceAll
+
+`replaceAll` returns a new string but does not modify the original value. To reuse the cleaned string multiple times, assign the result to a variable using `{% let %}`:
+
+```handlebars
+{% let cleanName = replaceAll(profile.person.name.firstName, "[^a-zA-Z]", "") %}
+Hello {{cleanName}}, your personalised offer is ready.
+Your code: WELCOME-{{upperCase(cleanName)}}
+```
+
+The `{% let %}` assignment stores the result of `replaceAll` so it can be referenced as `{{cleanName}}` without calling the function again. This is the correct pattern — chaining `replaceAll` inside itself or trying to reassign to the same profile variable is not supported.
+
++++
+
 ## Right trim {#rightTrim}
 
 The `rightTrim` function is removes white spaces from end of a string.

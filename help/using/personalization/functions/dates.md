@@ -239,15 +239,32 @@ The `dateDiff` function is used to retrieve the difference between two dates in 
 {%= dateDiff(datetime,datetime) %}
 ```
 
-<!--
-**Example**
++++Example — Days remaining until an event
 
-The following operation gets all the values for the map `identityMap`.
+The following operation returns the number of days between today and a future date stored in the profile (e.g. a subscription end date or an event date):
 
 ```sql
-{%= values(identityMap) %}
+{%= dateDiff(stringToDate(profile.events.subscriptionEndDate), getCurrentZonedDateTime()) %}
 ```
--->
+
++++
+
++++Real-world example — Countdown in subject line
+
+Use `dateDiff` to build a dynamic countdown for email subject lines or content:
+
+```handlebars
+{% let daysLeft = dateDiff(stringToDate(profile.loyalty.expiryDate), getCurrentZonedDateTime()) %}
+{% if daysLeft > 0 %}
+Your points expire in {{daysLeft}} day{% if daysLeft > 1 %}s{% endif %} — use them before they're gone!
+{% else %}
+Your points have expired.
+{% endif %}
+```
+
+Output (example): `Your points expire in 7 days — use them before they're gone!`
+
++++
 
 ## Day of month {#day-month}
 
@@ -269,7 +286,7 @@ The `dayOfMonth` returns the number representing the day of the month.
 
 ## Day of week {#day-week}
 
-The `dayOfWeek` function is used to retrieve the day of week.
+The `dayOfWeek` function is used to retrieve the day of week. It returns an integer from 1 (Monday) to 7 (Sunday) following the ISO-8601 standard.
 
 **Syntax**
 
@@ -277,15 +294,33 @@ The `dayOfWeek` function is used to retrieve the day of week.
 {%= dayOfWeek(datetime) %}
 ```
 
-<!--
-**Example**
++++Example — Detect weekends in personalized content
 
-The following operation gets all the values for the map `identityMap`.
+Use this function inside email or content to adapt messaging based on the day. The comparison operator in PQL is `=` (single equals, not `==`):
 
-```sql
-{%= values(identityMap) %}
+```handlebars
+{% if dayOfWeek(getCurrentZonedDateTime()) = 6 or dayOfWeek(getCurrentZonedDateTime()) = 7 %}
+We're closed on weekends — your request will be processed on the next business day.
+{% else %}
+Our team will get back to you within 24 hours.
+{% endif %}
 ```
--->
+
+| Day | Returned value |
+|-----|----------------|
+| Monday | 1 |
+| Tuesday | 2 |
+| Wednesday | 3 |
+| Thursday | 4 |
+| Friday | 5 |
+| Saturday | 6 |
+| Sunday | 7 |
+
++++
+
+>[!NOTE]
+>
+>`dayOfWeek()` is designed for **content personalization** (e.g. adapting email body text based on the day). If you need to **route profiles differently in a journey** based on the day of the week (e.g. skip weekends for a Wait activity), use the built-in **Time condition → Day of the week** option available directly in the journey Condition activity. [Learn more](../../building-journeys/condition-activity.md#date_condition)
 
 ## Day of year{#day-year}
 
@@ -297,15 +332,12 @@ The `dayOfYear` function is used to retrieve the day of year.
 {%= dayOfYear(datetime) %}
 ```
 
-<!--
-**Example**
++++Example
 
-The following operation gets all the values for the map `identityMap`.
+* Input: `{%= dayOfYear(stringToDate("2024-03-15T00:00:00Z")) %}`
+* Output: `75`
 
-```sql
-{%= values(identityMap) %}
-```
--->
++++
 
 ## Diff In Seconds {#diff-seconds}
 
@@ -355,6 +387,22 @@ The `extractMinutes` function extracts the minute component from a given timesta
 
 * Input: `{%= extractMinutes(stringToDate("2024-11-01T17:19:51Z"))%}`
 * Output: `19`
+
++++
+
++++Real-world example — Display current time as HH:MM only
+
+Combine `extractHours` and `extractMinutes` to render just the time portion without any date, day, or year:
+
+```handlebars
+{% let h = extractHours(getCurrentZonedDateTime()) %}
+{% let m = extractMinutes(getCurrentZonedDateTime()) %}
+Your appointment is confirmed for {{h}}:{% if m < 10 %}0{% endif %}{{m}}.
+```
+
+Output (example): `Your appointment is confirmed for 14:05.`
+
+The leading-zero guard (`{% if m < 10 %}0{% endif %}`) ensures minutes below 10 are displayed as two digits (e.g. `09` instead of `9`).
 
 +++
 
@@ -620,15 +668,14 @@ The `setDays` function is used to set the day of the month for the given date-ti
 {%= setDays(datetime, day) %}
 ```
 
-<!--
-**Example**
++++Example
 
-The following operation gets all the values for the map `identityMap`.
+Set the day of the month to the 1st:
 
-```sql
-{%= values(identityMap) %}
-```
--->
+* Input: `{%= setDays(stringToDate("2024-11-15T17:19:51Z"), 1) %}`
+* Output: `2024-11-01T17:19:51Z`
+
++++
 
 ## Set hours{#set-hours}
 
@@ -640,15 +687,28 @@ The `setHours` function is used to set the hour of the date-time.
 {%= setHours(datetime, hour) %}
 ```
 
-<!--
-**Example**
++++Example — Set a date-time to a specific hour
 
-The following operation gets all the values for the map `identityMap`.
+* Input: `{%= setHours(stringToDate("2024-11-01T17:19:51Z"), 0) %}`
+* Output: `2024-11-01T00:19:51Z`
+
++++
+
++++Real-world example — X days before a dynamic end date
+
+To target a profile X days before a date stored in their profile (e.g. subscription expiry), use `addDays` with a negative value:
 
 ```sql
-{%= values(identityMap) %}
+{%= addDays(stringToDate(profile.subscription.endDate), -7) %}
 ```
--->
+
+To also normalize the time to a fixed hour (e.g. 9 AM), combine with `setHours`:
+
+```sql
+{%= setHours(addDays(stringToDate(profile.subscription.endDate), -7), 9) %}
+```
+
++++
 
 ## To Date Time {#to-date-time}
 
@@ -765,15 +825,12 @@ The `weekOfYear` function is used to retrieve the week of the year.
 {%= weekOfYear(datetime) %}
 ```
 
-<!--
-**Example**
++++Example
 
-The following operation gets all the values for the map `identityMap`.
+* Input: `{%= weekOfYear(stringToDate("2024-11-01T17:19:51Z")) %}`
+* Output: `44`
 
-```sql
-{%= values(identityMap) %}
-```
--->
++++
 
 ## Years Difference {#diff-years}
 

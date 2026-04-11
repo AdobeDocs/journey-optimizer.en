@@ -43,7 +43,17 @@ where:
 
 * Regarding literal functions arguments, the templating language parser does not support single unescaped backslash (`\`) symbol. This character must be escaped with an additional backslash (`\`) symbol. Example:
 
-    `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}` 
+    `{%= regexGroup("abc@xyz.com","@(\\w+)", 1)%}`
+
+* To include a **literal double quote** inside a string value (e.g. when generating JSON output), escape it with a backslash (`\"`):
+
+    ```handlebars
+    { "message": "Hello \"{{profile.person.name.firstName}}\"" }
+    ```
+
+    Output: `{ "message": "Hello \"John\"" }`
+
+    Alternatively, use the triple-stash `{{{ }}}` to output unescaped HTML when the value itself contains special characters you do not want HTML-encoded.
 
 ## Reserved keywords {#reserved-keywords}
 
@@ -64,6 +74,43 @@ If your profile schema has a field named `next`, you must wrap it in backticks:
 ```
 
 Without the backticks, the personalization editor will fail validation with an error.
+
+## PQL syntax rules for special attribute keys {#pql-special-keys}
+
+Beyond reserved keywords, two additional cases require backtick escaping in PQL expressions.
+
+### Hyphenated attribute keys {#hyphenated-keys}
+
+If your XDM schema contains field names with hyphens (e.g. `my-field`, `event-type`) or names that start with or contain numbers, wrap the key in backticks:
+
+```handlebars
+{{profile.`my-custom-field`}}
+```
+
+```sql
+{%= profile.events.`order-total` > 100 %}
+```
+
+Without backticks, the hyphen is interpreted as a subtraction operator and causes a PQL syntax error.
+
+### Numeric event IDs in context attributes {#numeric-event-ids}
+
+When referencing context event attributes where the event ID is a number (e.g. `1697323153`), wrap it in backticks. This also applies inside functions like `formatDate()`:
+
+```handlebars
+{% let ts = formatDate(toDateTime(context.journey.events.`1697323153`.timestamp), "dd/MM/yyyy") %}
+{{ts}}
+```
+
+### Type coercion {#type-coercion}
+
+PQL is strongly typed. When comparing or passing values, both sides must be the same type. Common cases:
+
+| Scenario | Solution |
+|----------|----------|
+| String field compared to a number | Use `stringToNumber()` to convert: `{%= stringToNumber(profile.loyalty.tier) > 2 %}` |
+| Number stored as string | Use `string_to_integer()` or `stringToNumber()` before arithmetic |
+| Boolean stored as string | Use `toBool()` to convert: `{%= toBool(profile.consent.email) = true %}` |
 
 ## Available namespaces {#namespaces}
 

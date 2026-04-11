@@ -440,6 +440,7 @@ solution: Journey Optimizer
       + [String functions](using/personalization/functions/string.md)
     + Personalization use cases {#personalization-use-cases}
       + [Personalization use cases](/help/rp_landing_pages/personalization-use-cases-landing-page.md)
+      + [Personalization recipes](using/personalization/personalization-recipes.md)
       + [Order status notification](using/personalization/personalization-use-case.md)
       + [Cart abandonment email](using/personalization/personalization-use-case-helper-functions.md)
       + [Health plan prescriptions email](using/personalization/perso-uc-plan-prescriptions.md)
