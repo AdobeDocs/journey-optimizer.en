@@ -5,7 +5,6 @@ feature: Personalization
 topic: Personalization
 role: Developer
 level: Experienced
-exl-id: personalization-recipes
 ---
 # Personalization recipes {#personalization-recipes}
 
@@ -105,16 +104,16 @@ Use `{{#each}}` to iterate over a profile array and render each item. This is av
 
 ```handlebars
 {{#each profile.purchases.recentItems}}
-  - {{this.name}}: {{this.price}}€
+  - {{this.name}}: {{this.price}}&euro;
 {{/each}}
 ```
 
 Output (example):
 
 ```
-- Running shoes: 89€
-- Water bottle: 15€
-- Gym bag: 45€
+- Running shoes: 89&euro;
+- Water bottle: 15&euro;
+- Gym bag: 45&euro;
 ```
 
 >[!NOTE]
@@ -127,7 +126,7 @@ Use `topN` to sort and retrieve the top N items, then loop with `{{#each}}`:
 
 ```handlebars
 {{#each topN(profile.orders, price, 3)}}
-  {{this.name}} — {{this.price}}€
+  {{this.name}} — {{this.price}}&euro;
 {{/each}}
 ```
 
@@ -206,7 +205,7 @@ Use `{% if %}`, `{% elseif %}`, and `{% else %}` for multi-branch conditional lo
 {% if profile.loyalty.tier = "gold" %}
 As a Gold member, enjoy free shipping on all orders.
 {% elseif profile.loyalty.tier = "silver" %}
-As a Silver member, enjoy free shipping on orders over €50.
+As a Silver member, enjoy free shipping on orders over &euro;50.
 {% else %}
 Join our loyalty program to unlock exclusive benefits.
 {% endif %}
