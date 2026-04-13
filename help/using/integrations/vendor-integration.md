@@ -7,9 +7,9 @@ feature: Integrations
 topic: Content Management
 role: User
 level: Intermediate
-keywords: integration, vendor, third-party
 hide: yes
 hidefromtoc: yes
+keywords: integration, vendor, third-party
 ---
 # Available vendors
 
@@ -19,7 +19,15 @@ hidefromtoc: yes
 
 >[!BEGINSHADEBOX]
 
-For Contentful, the following prerequisites apply:
+Contentful is a headless CMS for structured entries and assets over REST or GraphQL, so Journey Optimizer can pull content at send or open time.
+
+Typical use cases include localized hero blocks, alt text, and CTAs in email, as well as product or promo entries in dynamic modules. Another common pattern is retrieving a specific entry by ID for personalized messaging.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Contentful.
+
+The following prerequisites apply:
 
 * Contentful space with Delivery API access and a read-oriented API key.
 * Clear content types and field IDs; admin access in Journey Optimizer to create integrations.
@@ -29,11 +37,7 @@ The following limitations and exclusions apply:
 * Broad listing or paginated Contentful APIs are a poor fit for this pattern; prefer retrieval calls that target a specific entry or asset.
 * Write-back or two-way synchronization is outside the scope of this example.
 
->[!ENDSHADEBOX]
-
-Contentful is a headless CMS for structured entries and assets over REST or GraphQL, so Journey Optimizer can pull content at send or open time.
-
-Typical use cases include localized hero blocks, alt text, and CTAs in email, as well as product or promo entries in dynamic modules. Another common pattern is retrieving a specific entry by ID for personalized messaging.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -97,7 +101,15 @@ Sample integration fields (align with the [Content Delivery API](https://www.con
 
 >[!BEGINSHADEBOX]
 
-For Sitecore, the following prerequisites apply:
+Sitecore Content Hub and related cloud APIs support DAM-style download and metadata flows; the example pattern below centers on a download order by ID.
+
+Typical use cases include asset or download metadata in email content and alignment with DAM workflows managed in Sitecore.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Sitecore.
+
+The following prerequisites apply:
 
 * Tenant URL and credentials (bearer or token per your API surface).
 * Admin access in Journey Optimizer to create integrations.
@@ -107,11 +119,7 @@ The following limitations and exclusions apply:
 * Hostnames and paths vary by Sitecore product. Use only endpoints your tenant exposes.
 * OAuth access tokens, refresh, and lifetimes must follow Sitecore security policy.
 
->[!ENDSHADEBOX]
-
-Sitecore Content Hub and related cloud APIs support DAM-style download and metadata flows; the example pattern below centers on a download order by ID.
-
-Typical use cases include asset or download metadata in email content and alignment with DAM workflows managed in Sitecore.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -177,7 +185,15 @@ Use the following fields when you configure this sample call in Journey Optimize
 
 >[!BEGINSHADEBOX]
 
-For Salsify, the following prerequisites apply:
+Salsify is a PIM with APIs for products, channels, and digital assets.
+
+Typical use cases include product attributes or media URLs in email and messaging aligned with syndicated catalog data.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Salsify.
+
+The following prerequisites apply:
 
 * API token and organization context; product IDs resolvable from profile or context.
 * Admin access in Journey Optimizer.
@@ -187,11 +203,7 @@ The following limitations and exclusions apply:
 * Very large catalogs: avoid bulk list endpoints if Integrations expects per-entity retrieval.
 * Attribute visibility can be limited by Salsify role permissions.
 
->[!ENDSHADEBOX]
-
-Salsify is a PIM with APIs for products, channels, and digital assets.
-
-Typical use cases include product attributes or media URLs in email and messaging aligned with syndicated catalog data.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -258,7 +270,15 @@ Some older references reused a download-order style path for Salsify; your tenan
 
 >[!BEGINSHADEBOX]
 
-For Contentstack, the following prerequisites apply:
+Contentstack is a headless CMS; REST delivery is typical for JSON field mapping in Journey Optimizer.
+
+A typical use case is using entries for banners or promos with parameters that include locale.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Contentstack.
+
+The following prerequisites apply:
 
 * Stack API key, delivery token, environment name, and content type UIDs.
 * Admin access in Journey Optimizer.
@@ -268,11 +288,7 @@ The following limitations and exclusions apply:
 * This pattern uses REST JSON for field mapping; GraphQL delivery follows a different integration path.
 * Use production-appropriate delivery tokens; preview and published flows are not interchangeable.
 
->[!ENDSHADEBOX]
-
-Contentstack is a headless CMS; REST delivery is typical for JSON field mapping in Journey Optimizer.
-
-A typical use case is using entries for banners or promos with parameters that include locale.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -341,7 +357,15 @@ Contentstack expects **both** keys as headers for delivery requests.
 
 >[!BEGINSHADEBOX]
 
-For Akeneo, the following prerequisites apply:
+Akeneo PIM exposes REST APIs for products, attributes, and media.
+
+Typical use cases include governed product data in email modules and attributes for a given channel in journeys.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Akeneo.
+
+The following prerequisites apply:
 
 * PIM base URL and OAuth client; product UUID or identifier strategy.
 * Admin access in Journey Optimizer.
@@ -351,11 +375,7 @@ The following limitations and exclusions apply:
 * PIM responses can be large. Map only the attributes required for personalization.
 * Write operations are outside the scope of typical read-only personalization examples.
 
->[!ENDSHADEBOX]
-
-Akeneo PIM exposes REST APIs for products, attributes, and media.
-
-Typical use cases include governed product data in email modules and attributes for a given channel in journeys.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -428,7 +448,15 @@ Example pattern: `https://{pim-host}/api/rest/v1/products-uuid/{uuid}` with `Acc
 
 >[!BEGINSHADEBOX]
 
-For Magnolia, the following prerequisites apply:
+Magnolia offers headless and REST delivery endpoints depending on deployment.
+
+A typical use case is delivering content nodes or fragments for marketing modules.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Magnolia.
+
+The following prerequisites apply:
 
 * Instance URL and token or basic auth; workspace and paths for delivery.
 * Admin access in Journey Optimizer.
@@ -437,11 +465,7 @@ The following limitations and exclusions apply:
 
 * REST delivery URLs depend on installed Magnolia modules and configuration.
 
->[!ENDSHADEBOX]
-
-Magnolia offers headless and REST delivery endpoints depending on deployment.
-
-A typical use case is delivering content nodes or fragments for marketing modules.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -505,7 +529,15 @@ Note: Delivery API is to use the rest-anonymous role for content that doesn't re
 
 >[!BEGINSHADEBOX]
 
-For Voucherify, the following prerequisites apply:
+Voucherify provides promotions and loyalty REST APIs (campaigns, vouchers, loyalty programs).
+
+Typical use cases include reading loyalty or promotion state for offers in content and showing tier or balance where appropriate.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Voucherify.
+
+The following prerequisites apply:
 
 * Application ID and secret (per region/cluster); clarity on which loyalty or campaign endpoints you call.
 * Admin access in Journey Optimizer.
@@ -515,11 +547,7 @@ The following limitations and exclusions apply:
 * Avoid exposing internal promotion or campaign identifiers in customer-facing errors or message content.
 * Application-level rate limits apply. Configure retries and caching per Voucherify guidance.
 
->[!ENDSHADEBOX]
-
-Voucherify provides promotions and loyalty REST APIs (campaigns, vouchers, loyalty programs).
-
-Typical use cases include reading loyalty or promotion state for offers in content and showing tier or balance where appropriate.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -600,7 +628,15 @@ Sample integration fields. Full reference: [Voucherify API](https://docs.voucher
 
 >[!BEGINSHADEBOX]
 
-For Talon.One, the following prerequisites apply:
+Talon.One is a promotion and loyalty rules engine with REST APIs for sessions, effects, and profiles.
+
+Typical use cases include promotions at cart or profile level in personalized content and loyalty progress or rewards display.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Talon.One.
+
+The following prerequisites apply:
 
 * API key and deployment-specific base URL; identifiers for application or campaign scope.
 * Admin access in Journey Optimizer.
@@ -610,11 +646,7 @@ The following limitations and exclusions apply:
 * Session-heavy flows may require careful mapping to the Integrations request model.
 * Observe Talon.One rate limits and idempotency guidance.
 
->[!ENDSHADEBOX]
-
-Talon.One is a promotion and loyalty rules engine with REST APIs for sessions, effects, and profiles.
-
-Typical use cases include promotions at cart or profile level in personalized content and loyalty progress or rewards display.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -686,7 +718,15 @@ The table below lists example values for this integration request.
 
 >[!BEGINSHADEBOX]
 
-For Antavo, the following prerequisites apply:
+Antavo is an enterprise loyalty platform with REST APIs for members, rewards, and events.
+
+Typical use cases include points, tier, or rewards in email or push and offers driven by loyalty state.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Antavo.
+
+The following prerequisites apply:
 
 * Stack URL and API credentials; program or shop identifiers as required.
 * Admin access in Journey Optimizer.
@@ -696,11 +736,7 @@ The following limitations and exclusions apply:
 * Customer PII must be handled under Antavo agreements and your privacy policies.
 * Confirm API versions and stable endpoints with Antavo for your environment.
 
->[!ENDSHADEBOX]
-
-Antavo is an enterprise loyalty platform with REST APIs for members, rewards, and events.
-
-Typical use cases include points, tier, or rewards in email or push and offers driven by loyalty state.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -766,7 +802,15 @@ Sample integration fields use the **staging** host; production uses your Antavo 
 
 >[!BEGINSHADEBOX]
 
-For Salesforce Loyalty, the following prerequisites apply:
+Salesforce Loyalty Management exposes REST APIs on the Salesforce platform for members, programs, and transactions.
+
+Typical use cases include surfacing tier, points, or benefits in journeys and aligning messaging with CRM and loyalty data.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Salesforce Loyalty.
+
+The following prerequisites apply:
 
 * Salesforce instance, connected app or integration user, and OAuth appropriate to your org.
 * Admin access in Journey Optimizer.
@@ -776,11 +820,7 @@ The following limitations and exclusions apply:
 * Salesforce API limits and OAuth token refresh must be designed into your integration.
 * Field-level security and sharing rules govern which fields appear in API responses.
 
->[!ENDSHADEBOX]
-
-Salesforce Loyalty Management exposes REST APIs on the Salesforce platform for members, programs, and transactions.
-
-Typical use cases include surfacing tier, points, or benefits in journeys and aligning messaging with CRM and loyalty data.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -856,7 +896,15 @@ Use the Loyalty Management **member profile** GET operation documented for your 
 
 >[!BEGINSHADEBOX]
 
-For Capillary, the following prerequisites apply:
+Capillary provides loyalty and engagement APIs common in retail stacks.
+
+Typical use cases include points, tier, or offers inside personalized journeys.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Capillary.
+
+The following prerequisites apply:
 
 * API host and authentication (often signed requests; follow Capillary docs).
 * Program identifiers for your endpoint.
@@ -865,11 +913,7 @@ The following limitations and exclusions apply:
 
 * Authentication schemes and regional hosts vary by deployment. Confirm with Capillary for your stack.
 
->[!ENDSHADEBOX]
-
-Capillary provides loyalty and engagement APIs common in retail stacks.
-
-Typical use cases include points, tier, or offers inside personalized journeys.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -939,7 +983,15 @@ Example: `https://ushc.intouch.capillarytech.com/api/v3/rewards/{reward_id}` (ho
 
 >[!BEGINSHADEBOX]
 
-For Stensul, the following prerequisites apply:
+Stensul is an email creation platform for approved templates; Journey Optimizer can consume template metadata and structured regions through its API.
+
+Typical use cases include importing approved templates and mapping regions to profile attributes, and reusing governed blocks for scalable campaign builds.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Stensul.
+
+The following prerequisites apply:
 
 * Stensul account with API access and published templates with defined tokens.
 * Admin access in Journey Optimizer to create integrations.
@@ -949,11 +1001,7 @@ The following limitations and exclusions apply:
 * In-place WYSIWYG editing of Stensul templates inside Journey Optimizer is not covered here.
 * Large or complex HTML in template payloads may require security review and sanitization.
 
->[!ENDSHADEBOX]
-
-Stensul is an email creation platform for approved templates; Journey Optimizer can consume template metadata and structured regions through its API.
-
-Typical use cases include importing approved templates and mapping regions to profile attributes, and reusing governed blocks for scalable campaign builds.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -977,7 +1025,15 @@ Use the procedure below to configure this integration in Journey Optimizer. See 
 
 >[!BEGINSHADEBOX]
 
-For Marigold, the following prerequisites apply:
+Marigold exposes loyalty and engagement APIs; hosts differ by geography (EU vs US module hostnames).
+
+A typical use case is enriching messages with loyalty or preference data from Marigold programs.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Marigold.
+
+The following prerequisites apply:
 
 * Base URL and credentials from your contract; least-privilege API user when possible.
 * Admin access in Journey Optimizer.
@@ -987,11 +1043,7 @@ The following limitations and exclusions apply:
 * Endpoints vary by Marigold product. Validate with Marigold support for your deployment.
 * Personal data in responses must comply with your DPA and retention policies.
 
->[!ENDSHADEBOX]
-
-Marigold exposes loyalty and engagement APIs; hosts differ by geography (EU vs US module hostnames).
-
-A typical use case is enriching messages with loyalty or preference data from Marigold programs.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1064,7 +1116,15 @@ Base host depends on region (for example `https://{{customername}}.module.slgnt.
 
 >[!BEGINSHADEBOX]
 
-For Adobe Target Recommendations, the following prerequisites apply:
+Adobe Target includes Recommendations and delivery APIs for server-side or integrated experiences, subject to entitlements.
+
+Typical use cases include injecting recommendations into experiences you author in Journey Optimizer and aligning keys with profile or Experience Platform context.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Adobe Target Recommendations.
+
+The following prerequisites apply:
 
 * Target with Recommendations; IMS org and supported authentication.
 * Admin access in Journey Optimizer.
@@ -1074,11 +1134,7 @@ The following limitations and exclusions apply:
 * Recommendation and delivery APIs require specific parameters (for example mbox or product identifiers). Follow Adobe Target documentation.
 * Tune latency and caching for your send volume and use case.
 
->[!ENDSHADEBOX]
-
-Adobe Target includes Recommendations and delivery APIs for server-side or integrated experiences, subject to entitlements.
-
-Typical use cases include injecting recommendations into experiences you author in Journey Optimizer and aligning keys with profile or Experience Platform context.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1203,7 +1259,15 @@ Refer to [Target authentication configuration](https://experienceleague.adobe.co
 
 >[!BEGINSHADEBOX]
 
-For AccuWeather, the following prerequisites apply:
+AccuWeather exposes forecast and location REST APIs so messages can include weather-aware snippets.
+
+Typical use cases include short forecasts in email or push and tailoring content using forecast values tied to profile or context.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for AccuWeather.
+
+The following prerequisites apply:
 
 * API subscription and key; location key or a city search flow.
 * Admin access in Journey Optimizer to create integrations.
@@ -1214,11 +1278,7 @@ The following limitations and exclusions apply:
 * Observe AccuWeather rate limits and recommended caching.
 * Resolving `locationKey` often requires a separate geolocation or city-search request before forecast calls.
 
->[!ENDSHADEBOX]
-
-AccuWeather exposes forecast and location REST APIs so messages can include weather-aware snippets.
-
-Typical use cases include short forecasts in email or push and tailoring content using forecast values tied to profile or context.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1292,7 +1352,15 @@ Sample integration fields. Details and tiers are described in [AccuWeather APIs]
 
 >[!BEGINSHADEBOX]
 
-For ShipStation, the following prerequisites apply:
+ShipStation offers shipping and order APIs for carriers, labels, and tracking.
+
+Typical use cases include order status, tracking links, or delivery ETAs in transactional messages.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for ShipStation.
+
+The following prerequisites apply:
 
 * API key and secret (Basic auth per ShipStation docs).
 * Admin access in Journey Optimizer.
@@ -1302,11 +1370,7 @@ The following limitations and exclusions apply:
 * Do not expose ShipStation API keys in message content; keep credentials in the integration configuration only.
 * Paginated list endpoints may be a poor fit for Integrations; prefer single-resource GETs when possible.
 
->[!ENDSHADEBOX]
-
-ShipStation offers shipping and order APIs for carriers, labels, and tracking.
-
-Typical use cases include order status, tracking links, or delivery ETAs in transactional messages.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1379,7 +1443,15 @@ The following **Get Timer** example illustrates one ShipStation automation timin
 
 >[!BEGINSHADEBOX]
 
-For RevenueCat, the following prerequisites apply:
+RevenueCat provides subscription status and entitlements APIs for apps.
+
+A typical use case is reflecting subscription state in lifecycle campaigns where policy allows.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for RevenueCat.
+
+The following prerequisites apply:
 
 * Secret API key and app identifiers; stable mapping between profiles and RevenueCat customer IDs.
 * Admin access in Journey Optimizer.
@@ -1389,11 +1461,7 @@ The following limitations and exclusions apply:
 * Protect secret API keys and follow your rotation policies.
 * Subscription and entitlement data is sensitive. Meet privacy and consent requirements.
 
->[!ENDSHADEBOX]
-
-RevenueCat provides subscription status and entitlements APIs for apps.
-
-A typical use case is reflecting subscription state in lifecycle campaigns where policy allows.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1466,16 +1534,20 @@ Example pattern: use RevenueCat's **Get a Product** (or equivalent product/entit
 
 >[!BEGINSHADEBOX]
 
-For Databricks, the following prerequisites apply:
+Databricks provides SQL and REST APIs over lakehouse data; earlier drafts combined statement execution guidance with a **jobs/get** sample.
+
+A typical use case is using small, denormalized attributes from governed tables for personalization with strict least privilege.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Databricks.
+
+The following prerequisites apply:
 
 * Workspace host, token or OAuth per org policy; service principal with minimal scope.
 * Admin access in Journey Optimizer.
 
->[!ENDSHADEBOX]
-
-Databricks provides SQL and REST APIs over lakehouse data; earlier drafts combined statement execution guidance with a **jobs/get** sample.
-
-A typical use case is using small, denormalized attributes from governed tables for personalization with strict least privilege.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1536,7 +1608,15 @@ The **GET** job example below is illustrative; for SQL-driven personalization, p
 
 >[!BEGINSHADEBOX]
 
-For Bynder, the following prerequisites apply:
+Bynder is a DAM with REST APIs; integrations commonly use OAuth 2.0 for read-only metadata or asset URLs.
+
+Typical use cases include pulling asset metadata or delivery URLs into messages and keeping creative approved in Bynder aligned with journeys.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Bynder.
+
+The following prerequisites apply:
 
 * Portal domain and OAuth client (or approved token approach).
 * Scopes for read-only access; admin access in Journey Optimizer.
@@ -1546,11 +1626,7 @@ The following limitations and exclusions apply:
 * Pagination and OAuth token refresh must follow Bynder's API rules.
 * Large paginated responses: map only the fields required for personalization.
 
->[!ENDSHADEBOX]
-
-Bynder is a DAM with REST APIs; integrations commonly use OAuth 2.0 for read-only metadata or asset URLs.
-
-Typical use cases include pulling asset metadata or delivery URLs into messages and keeping creative approved in Bynder aligned with journeys.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1682,7 +1758,15 @@ Sample integration fields. See [Bynder API documentation](https://developer.bynd
 
 >[!BEGINSHADEBOX]
 
-For Trustpilot, the following prerequisites apply:
+Trustpilot provides APIs for business and review summary data where your use case and contract allow.
+
+A typical use case is showing review counts or ratings in marketing content compliant with Trustpilot terms.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Trustpilot.
+
+The following prerequisites apply:
 
 * API key and approved use case; business identifiers for queries.
 * Admin access in Journey Optimizer.
@@ -1692,11 +1776,7 @@ The following limitations and exclusions apply:
 * Use of Trustpilot data must comply with Trustpilot branding and data-use policies.
 * Rate limits apply to review summary and related endpoints.
 
->[!ENDSHADEBOX]
-
-Trustpilot provides APIs for business and review summary data where your use case and contract allow.
-
-A typical use case is showing review counts or ratings in marketing content compliant with Trustpilot terms.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1762,7 +1842,15 @@ Use the categories listing operation from [Trustpilot developers](https://develo
 
 >[!BEGINSHADEBOX]
 
-For Bazaarvoice, the following prerequisites apply:
+Bazaarvoice provides ratings, reviews, and UGC APIs.
+
+A typical use case is showing review summaries or ratings in email when policy allows.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Bazaarvoice.
+
+The following prerequisites apply:
 
 * API passkey and client identifiers from your contract.
 * Admin access in Journey Optimizer.
@@ -1772,11 +1860,7 @@ The following limitations and exclusions apply:
 * Display of ratings and reviews must follow Bazaarvoice content policies.
 * Rate limits and caching rules apply per API key.
 
->[!ENDSHADEBOX]
-
-Bazaarvoice provides ratings, reviews, and UGC APIs.
-
-A typical use case is showing review summaries or ratings in email when policy allows.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1842,7 +1926,15 @@ Example entry point: `https://api.bazaarvoice.com/data/products.json` with versi
 
 >[!BEGINSHADEBOX]
 
-For OneTrust, the following prerequisites apply:
+OneTrust exposes privacy and consent APIs (product-specific URLs and schemas).
+
+A typical use case is reading consent or preference signals for conditional content where architecture and legal review allow.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for OneTrust.
+
+The following prerequisites apply:
 
 * API credentials and regional base URL; legal approval for fields used in messaging.
 * Admin access in Journey Optimizer.
@@ -1852,11 +1944,7 @@ The following limitations and exclusions apply:
 * Consent and preference data are highly regulated. Coordinate with privacy and legal teams.
 * API paths and payloads differ by OneTrust product. Use documentation for your subscription.
 
->[!ENDSHADEBOX]
-
-OneTrust exposes privacy and consent APIs (product-specific URLs and schemas).
-
-A typical use case is reading consent or preference signals for conditional content where architecture and legal review allow.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -1924,7 +2012,15 @@ Example pattern (fragment): `https://{tenant}.my.onetrust.com/api/consentmanager
 
 >[!BEGINSHADEBOX]
 
-For Meta, the following prerequisites apply:
+Meta Graph and Marketing APIs expose catalog and campaign objects for authorized business integrations.
+
+A typical use case is enriching content with attributes from Meta where tokens and policies allow.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Meta.
+
+The following prerequisites apply:
 
 * System user or app token with correct permissions; Business Manager alignment.
 * Admin access in Journey Optimizer.
@@ -1934,11 +2030,7 @@ The following limitations and exclusions apply:
 * Short-lived access tokens require a renewal or long-lived strategy suited to server-side integrations.
 * Comply with Meta Platform Terms; do not log tokens or other secrets in message payloads.
 
->[!ENDSHADEBOX]
-
-Meta Graph and Marketing APIs expose catalog and campaign objects for authorized business integrations.
-
-A typical use case is enriching content with attributes from Meta where tokens and policies allow.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -2005,7 +2097,15 @@ Sample integration fields. See [Graph API](https://developers.facebook.com/docs/
 
 >[!BEGINSHADEBOX]
 
-For Aprimo, the following prerequisites apply:
+Aprimo combines marketing operations and DAM APIs for records, assets, and metadata.
+
+Typical use cases include approved record or asset fields in dynamic content and governed DAM workflows in regulated industries.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Aprimo.
+
+The following prerequisites apply:
 
 * Tenant URL and credentials (OAuth or API key per your setup).
 * Admin access in Journey Optimizer.
@@ -2015,11 +2115,7 @@ The following limitations and exclusions apply:
 * Aprimo field-level security must align with the attributes you map in Journey Optimizer.
 * Large HAL or JSON payloads: restrict mapped fields to the minimum required set.
 
->[!ENDSHADEBOX]
-
-Aprimo combines marketing operations and DAM APIs for records, assets, and metadata.
-
-Typical use cases include approved record or asset fields in dynamic content and governed DAM workflows in regulated industries.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
@@ -2085,7 +2181,15 @@ The table below lists example values for this integration request.
 
 >[!BEGINSHADEBOX]
 
-For Epsilon (Epsilon3), the following prerequisites apply:
+Epsilon exposes APIs per enterprise agreement; base URLs and auth come from your account team (the Events API example below is illustrative).
+
+A typical use case is exposing loyalty or offer attributes through supported JSON APIs.
+
+>[!ENDSHADEBOX]
+
++++ Learn more about prerequisites and limitations for Epsilon (Epsilon3).
+
+The following prerequisites apply:
 
 * Credentials and endpoints from Epsilon; admin access in Journey Optimizer.
 
@@ -2093,11 +2197,7 @@ The following limitations and exclusions apply:
 
 * Endpoints and hosts are customer-specific. Do not deploy without documentation from your Epsilon account team.
 
->[!ENDSHADEBOX]
-
-Epsilon exposes APIs per enterprise agreement; base URLs and auth come from your account team (the Events API example below is illustrative).
-
-A typical use case is exposing loyalty or offer attributes through supported JSON APIs.
++++
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
