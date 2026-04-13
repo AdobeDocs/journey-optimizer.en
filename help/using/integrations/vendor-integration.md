@@ -14,7 +14,7 @@ keywords: integration, vendor, third-party
 
 >[!BEGINSHADEBOX]
 
-Table of content:
+Table of content: 
 
 * [Work with Integrations](external-sources.md)
 * [Get started with Vendors integration](vendor-integration-gs.md)
