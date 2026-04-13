@@ -60,7 +60,7 @@ These steps cover generating personalization expressions from scratch. To work w
 
 1. After you generate an expression, click **[!UICONTROL Show previews for sample profiles]** to see how the expression evaluates with sample data and to view the associated payload as JSON. For this check, the assistant generates a limited set of synthetic sample profiles; they are not saved or stored in your organization.
 
-    If you need more sample profiles, type **Preview** in the discussion with the assistant so it can generate additional preview profiles.
+    If you need custom or additional sample profiles, describe what you need in the discussion with the assistant and include the keyword **preview** in your prompt so it can generate the right preview profiles for your check.
 
     ![](assets/ai-perso-preview-button.png)
 
@@ -68,6 +68,10 @@ These steps cover generating personalization expressions from scratch. To work w
 
     ![](assets/ai-perso-preview.png)
 
+    >[!NOTE]
+    >
+    >Additional previews are for spot checking. The assistant is tuned to generate roughly one to five profiles, asking for a very large number may cause the request to fail.
+    
     +++
 
     >[!NOTE]
