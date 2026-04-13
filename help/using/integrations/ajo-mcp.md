@@ -8,7 +8,6 @@ topic: Content Management, Artificial Intelligence
 badge: label="Limited availability" type="Informative"
 role: User, Developer
 level: Beginner, Intermediate
-exl-id: 
 ---
 # Work with AI assistants via MCP {#ajo-mcp}
 
