@@ -23,7 +23,7 @@ To add a Content card to a journey, follow these steps:
 
     >[!IMPORTANT]
     >
-    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL Card]** as the action type.
 
@@ -79,7 +79,7 @@ To add a Content card to a journey, follow these steps:
         |Device info|OS version|Triggered when one of the specified OS version is met.|
         |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
         |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.| 
+        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -124,6 +124,10 @@ To start building your content cards through a campaign, follow the steps below.
 
 1. Select or create a new [Content card configuration](content-card-configuration.md).
 
+1. Select an [Inbox configuration](../inbox/inbox-configuration.md) that defines the inbox surface for this **Content card**.
+
+    ![](assets/content-card-create-2.png)
+
 1. To test the content of your message, click **[!UICONTROL Create experiment]**. This allows you to test multiple variables of a delivery on sample populations to determine which treatment has the greatest impact on the targeted audience. [Learn more about content experiment](../content-management/content-experiment.md).
 
 1. Enable the **[!UICONTROL Enable additional delivery rules]** option then select **[!UICONTROL Edit rules]** to define when your message should be shown, dismissed, or permanently hidden. 
@@ -162,7 +166,7 @@ To start building your content cards through a campaign, follow the steps below.
         |Device info|OS version|Triggered when one of the specified OS version is met.|
         |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
         |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.| 
+        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|

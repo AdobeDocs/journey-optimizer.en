@@ -5,7 +5,6 @@ title: Pre release notes for Journey Optimizer
 description: Adobe Journey Optimizer Pre Release notes
 feature: Release Notes
 hide: yes
-hidefromtoc: yes
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
 # Pre-release notes {#e-release-notes}
@@ -75,13 +74,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Transactional messages in Orchestrated Campaigns</strong><br/></th>
+<th><strong>Transactional category in Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Orchestrated Campaigns now support <strong>transactional messaging</strong>, enabling you to trigger real-time, event-driven messages—such as order confirmations, booking notifications, and account updates—directly within your campaign workflow.</p>
+<p>In Orchestrated campaigns, you can now set a channel activity to the <strong>Transactional</strong> category using the <strong>Category</strong> field. This applies transactional channel configurations to that activity and bypasses business rules for it.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14233">DOCAC-14233</a></p>
 </td>
 </tr>
@@ -304,7 +303,6 @@ Improvements coming with this release are listed below.
 
 * **Target dimension simplification in Orchestrated Campaigns** - You can now easily select or automatically deduce the right targeting and secondary dimensions in Orchestrated campaigns for accurate, efficient audience activation.
   Documentation JIRA task: [DOCAC-13554](https://jira.corp.adobe.com/browse/DOCAC-13554)
-
 -->
 
 <!--
@@ -559,7 +557,6 @@ Improvements coming with this release are listed below.
 * **SMS Webhooks** - <strong>Webhooks</strong> are now supported across all SMS providers. You can configure each webhook based on its intended purpose: <strong>Inbound webhooks</strong> to capture incoming messages and <strong>Feedback webhooks</strong> to receive delivery receipts, status updates, and other message-related events. [Read more](../sms/sms-webhook.md)
 
   Availability date: February 2, 2026.
-
 -->
 <!--
 ## January '26 pre-release notes {#jan-26-01-rn}

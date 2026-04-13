@@ -210,6 +210,26 @@ The following example lets you calculate the total sum of prices for products in
 {{sum}}
 ```
 
+## Dataset lookup {#dataset-lookup}
+
+>[!AVAILABILITY]
+>
+>This feature is currently available to all customers as a limited availability release.
+>
+>For now, the `datasetLookup` helper function can be used within expression fragments for a limited set of customers. To gain access, contact your Adobe representative.
+
+The `datasetLookup` helper retrieves data from Adobe Experience Platform record datasets during personalization so you can use field values that are not stored on the profile or in the event payload.
+
+**Syntax**
+
+```sql
+{{datasetLookup datasetId="datasetId" id="key" result="store" required=false}}
+```
+
+Reference retrieved fields with `{{result.fieldId}}`, where `result` is the value you pass to the `result` parameter.
+
+For dataset enablement, parameter details, examples, and testing, see [Use Adobe Experience Platform data for personalization](../aep-data-perso.md).
+
 ## Execution Metadata {#execution-metadata}
 
 The `executionMetadata` helper allows to dynamically capture and store custom key-value pairs into the message execution context.
@@ -277,3 +297,59 @@ In this example, assuming `profile.person.name.firstName` = "Alex", the resultin
 }
 ```
 
+## Encrypt {#url-parameter-encryption-helper}
+
+>[!AVAILABILITY]
+>
+>This feature is available in Limited Availability. Contact your Adobe representative to gain access.
+>
+>This capability is currently only available for the Email channel.
+
+The `Encrypt` function lets you encrypt any expression value at render time—commonly a profile attribute, a token, or even a stringified JSON structure you build in the expression—before it is written into a query parameter on tracking links or landing pages.
+
+Values that would appear as plain text in the URL (including PII or other sensitive data) are not readable when the link is inspected or forwarded. Only the values you wrap with this helper are encrypted; the rest of the URL is unchanged.
+
+**Use case**
+
+This helper allows you to protect sensitive profile data (PII) before including it in rendered output.
+
+**Prerequisite**
+
+An administrator must create at least one active key in the sandbox-level key registry. [Learn how to create and manage keys](../url-parameter-encryption.md#create-keys)
+
+>[!NOTE]
+>
+>Using a revoked or otherwise non-active key should cause the personalization to fail at render time so a message is not sent with an invalid key.
+
+**Syntax**
+
+```text
+{{encrypt dataPath keyName="keyName" version="version" result="variableName"}}
+```
+
+**Usage**
+
+This helper encrypts sensitive data and stores the result in a template variable. <!--The encryption is performed using the AES-256-GCM algorithm.-->
+
+You can apply the helper to one parameter, several, or all parameters in a link, depending on your URL design and length constraints.
+
+* **Input**: `dataPath` (data reference that must resolve to a string), `keyName` (encryption key identifier), `version` (optional key version), `result` (variable name for encrypted output)
+* **Output**: Makes the encrypted value available in the specified `result` variable.
+* **Result format**: The result variable contains a dot-separated string: `keyName.version.nonce.authTag.cipherText` (all segments except `keyName` and `version` are URL-safe Base64 encoded without padding).
+* **Static key requirements**: The `keyName` and `version` must be static string literals (dynamic references are not supported).
+* **Default version**: The `version` parameter is optional; if omitted, the encryption key service resolves the default version
+
+**Examples**
+
+| Example expression | Result |
+| --- | --- |
+| `{{encrypt profile.person.email keyName="email-key" version="1" result="enc"}}{{enc}}` | `email-key.1.RkFrZU5vbmNlQUJD.T3V0cHV0QXV0aFRhZ0Fh.am9obkBleGFtcGxlLmNvbQ` |
+| `{{encrypt profile.person.name.firstName keyName="pii-key" version="2" result="encName"}}{{encName}}` | `pii-key.2.U29tZVJhbmRvbUlW.QXV0aGVudGljYXRpb25UYQ.Sm9obg` |
+
+**Guardrails**
+
+* Decryption is handled outside [!DNL Journey Optimizer] on your landing pages, apps, or APIs. Plan key lifecycle and rotation with your security team so historical payloads can still be decrypted where needed.
+
+* Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
+
+* The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.

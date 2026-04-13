@@ -67,7 +67,7 @@ To access Campaign Orchestration, your license must include either the **Journey
 * **Orchestrated campaigns**: Best for **batch, one-to-many** campaigns. Audiences progress in bulk, on a schedule.  
 * **Journeys**: Best for **real-time, one-to-one** engagement. Each customer moves through the journey at their own pace, triggered by behavior or events.  
 
-**Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated Campaigns for planned, calendar-based initiatives.
+**Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated campaigns for planned, calendar-based initiatives.
 
 **Learn more**
 
@@ -133,13 +133,80 @@ Yes. Campaign orchestration is natively integrated with:
 
 * **Customer Journey Analytics**: Campaign orchestration reports are available.  
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
-* **Federated Audience Composition (FAC)**: Available as an add-on.  -->
+* **Federated Audience Composition (FAC)**: Available as an add-on.  
+-->
+
++++ How do I test a signal-triggered orchestrated campaign before publishing?
+
+While the campaign is in **Draft**, you can test it by defining **parameters** in the schedule and providing **test values** for each. Start the workflow, then call the trigger API (using the sample request from the schedule configuration or your own request with the same endpoint) to run the campaign with those test values. [Learn how to complete and test a signal-triggered campaign](trigger-orchestrated-campaign.md#build-and-test).
+
++++
 
 +++ Can I revert a live orchestrated campaign back to draft?
 
 Yes, in specific situations. The **[!UICONTROL Back to draft]** option is designed as a recovery mechanism to unpublish and revert a campaign to draft status.
 
 This option is available for scheduled campaigns awaiting execution, or for live campaigns with execution errors. [Learn how to revert a live campaign back to draft](start-monitor-campaigns.md#back-to-draft)
+
++++
+
++++ What happens internally when I publish an Orchestrated campaign?
+
+When you click **[!UICONTROL Publish]**, the following sequence occurs:
+
+1. **Scheduler activation** — If a schedule is configured, the scheduler kicks in and triggers execution at the defined time.
+1. **Save Audience activities run first** — Any Save audience activities execute before message activities. The audience shell is created in the Audience Portal and qualified profiles begin ingesting.
+1. **Message execution begins** — Channel activities start processing for the first message activity in the workflow.
+1. **Profile snapshot lookup** — Profile data is resolved against a snapshot taken at publication time, not the real-time profile, ensuring consistency across the entire execution.
+1. **Consent evaluation** — Consent is honored directly from the profile record and is not re-evaluated at send time.
+1. **Profile reconciliation** — Recipients are reconciled against Adobe Experience Platform Profiles at send time.
+1. **Delivery log creation** — Delivery events are recorded in the `ajo_message_feedback_event` dataset.
+
+**Learn more**
+
+* [Publication-time execution sequence](start-monitor-campaigns.md#publication-sequence)
+* [Start and monitor your Orchestrated campaigns](start-monitor-campaigns.md)
+
++++
+
++++ Why are my messages not sending after I publish the campaign?
+
+Several situations can prevent messages from being sent after publication. Check the following in order:
+
+1. **Sending confirmation pending (most common)** — For non-recurring campaigns, message delivery is paused by default until you explicitly confirm the send from the channel activity's properties pane. The campaign shows as **Live** but no messages go out until confirmed. [Learn more](start-monitor-campaigns.md#confirm-sending)
+
+1. **Campaign is scheduled for a future time** — If a schedule is configured, the campaign is Live but execution has not started yet. Check the schedule settings and wait for the configured start time. [Learn more](create-orchestrated-campaign.md#schedule)
+
+1. **Save Audience activities still ingesting** — Save Audience activities run before message activities at publication time. If audience ingestion is still in progress, message execution has not started yet. Monitor the activity status indicators in the canvas. [Learn more](start-monitor-campaigns.md#activities)
+
+1. **Audience is empty** — The targeting query returned zero profiles. Review your segmentation rules and validate the audience count before republishing.
+
+1. **All profiles opted out** — Consent is evaluated at send time against each profile. If all targeted profiles have opted out on the relevant channel, no messages are sent. [Learn more](../action/consent.md)
+
+1. **Channel activity in error state** — An orange or red status indicator on the channel activity signals a blocking issue. Open the **[!UICONTROL Logs]** for details on the error and how to resolve it. [Learn more](start-monitor-campaigns.md#logs-tasks)
+
+1. **Rate control throttling delivery** — If rate control is enabled on the channel activity, delivery may be slower than expected. Check the rate control settings in the channel activity properties pane. [Learn more](activities/channels.md#rate-control)
+
+**Learn more**
+
+* [Start and monitor your Orchestrated campaigns](start-monitor-campaigns.md)
+* [Add a channel activity in an Orchestrated campaign](activities/channels.md)
+
++++
+
++++ Does publication use the real-time profile or a snapshot?
+
+At publication time, profile data is resolved against a **snapshot taken at publication time**, not the real-time profile. This ensures consistency across the entire campaign execution — all activities process the same profile state regardless of how long the campaign runs.
+
+Consent, however, is always honored from the current profile record and is not re-evaluated at send time.
+
+Note that segmentation in Orchestrated campaigns is performed on Recipients (relational store), while message sending and consent checks are resolved against the Adobe Experience Platform Profile.
+
+**Learn more**
+
+* [Publication-time execution sequence](start-monitor-campaigns.md#publication-sequence)
+* [What is the relationship between Recipient and Profile Entities?](#faq-oc)
+* [Work with consent policies](../action/consent.md)
 
 +++
 
@@ -319,13 +386,13 @@ Segmentation is performed on Recipients while sending against the Adobe Experien
 
 Answering 'Yes' suggests the best data store - but always confirm the best approach based on your use case and constraints with your Adobe representative.
 
-|Relational Store | Real-Time Customer Profile | 
+|Relational Store | Real-Time Customer Profile |
 |---------|----------|
-| Is the source the data relational already? | Is the source of the data streaming? | 
-| Do you plan to ingest data as-it for marketing use cases? | Is data freshness a major requirement? | 
-| Is there a large volume of historical data (`>` 2 months) that is needed for marketing activation use cases? | Are there scenarios where in-the-moment action or decision require data? | 
-| Are there ad-hoc needs for audience creation, evaluation, and activation? | Can the behavioral data be limited to `<` 90 days using pre-computed aggregates?| 
-|  | Is data needed for personalizing messages in real-time?| 
+| Is the source the data relational already? | Is the source of the data streaming? |
+| Do you plan to ingest data as-it for marketing use cases? | Is data freshness a major requirement? |
+| Is there a large volume of historical data (`>` 2 months) that is needed for marketing activation use cases? | Are there scenarios where in-the-moment action or decision require data? |
+| Are there ad-hoc needs for audience creation, evaluation, and activation? | Can the behavioral data be limited to `<` 90 days using pre-computed aggregates?|
+|  | Is data needed for personalizing messages in real-time?|
 
 **Learn more**
 

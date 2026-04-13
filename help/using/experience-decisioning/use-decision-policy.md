@@ -15,9 +15,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!CAUTION]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **SMS**, and **Push notification** channels.
->
->Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>Decision policies are available to all customers for the **Code-based Experience**, **SMS**, **Push notification**, and **Email** channels.
 
 ## Insert the decision policy code {#insert}
 
@@ -53,7 +51,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
    >[!NOTE]
    >
-   >If you use multiple decision policies in the same email (for example, one for the header and one for the footer), the same offer is deduplicated across placements: each area receives a different offer. To show the same offer in multiple areas, use **[!UICONTROL Reuse decision output]** when adding a decision policy. [Learn how to create decision policies](create-decision-policy.md).
+   >If you use multiple decision policies in the same email (for example, one for the header and one for the footer), the same offer is deduplicated across placements: it is not rendered twice. The second decision policy will not return any content and will display a blank space, unless you have configured a fallback offer, in which case the fallback will be displayed instead.
 
 >[!TAB SMS]
 

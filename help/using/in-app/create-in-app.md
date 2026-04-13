@@ -29,7 +29,7 @@ To add an In-app message in a journey, follow these steps:
 
     >[!IMPORTANT]
     >
-    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL In-app]** as the action type.
 
@@ -89,7 +89,7 @@ To add an In-app message in a journey, follow these steps:
         |Device info|OS version|Triggered when one of the specified OS version is met.|
         |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
         |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.| 
+        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -195,7 +195,7 @@ To add an In-app message in a campaign, follow these steps:
         |Device info|OS version|Triggered when one of the specified OS version is met.|
         |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
         |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.| 
+        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|

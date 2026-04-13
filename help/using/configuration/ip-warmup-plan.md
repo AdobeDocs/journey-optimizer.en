@@ -284,7 +284,8 @@ To create an IP warmup plan, follow the steps below.
 1. Upload the Excel file containing your IP warmup plan. [Learn more](#prepare-file)
     
     <!--
-    You can also download the Excel template from the [!DNL Journey Optimizer] user interface and upload it after filling it with the IP warmup details.-->
+    You can also download the Excel template from the [!DNL Journey Optimizer] user interface and upload it after filling it with the IP warmup details.
+-->
 
     ![](assets/ip-warmup-upload-success.png)
 

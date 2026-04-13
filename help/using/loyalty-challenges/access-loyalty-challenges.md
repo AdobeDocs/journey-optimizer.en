@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 hide: yes
-hidefromtoc: yes
 badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: 8907c18e-4623-4743-a76b-333f34e13baf

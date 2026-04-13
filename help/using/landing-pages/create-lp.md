@@ -47,7 +47,7 @@ To create a landing page, you must select a preset, then configure the primary p
 
 1. Add a title. You can add a description if needed.
 
-    ![](assets/lp_create-lp-details.png)
+    ![](assets/lp_create-lp-details.png){width=75%}
 
 1. To assign custom or core data usage labels to the landing page, select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
@@ -55,7 +55,12 @@ To create a landing page, you must select a preset, then configure the primary p
 
 1. Select a preset. Learn how to create landing page presets in [this section](../landing-pages/lp-presets.md#lp-create-preset).
 
-    ![](assets/lp_create-lp-presets.png)
+1. Select the type of landing page you want to create.
+
+    ![](assets/lp_create-lp-data-capture.png){width=60%}
+
+    * **[!UICONTROL Subscription/Unsubscription]**: Use this type to create a landing page for subscription or unsubscription use cases. [Learn more](lp-use-cases.md#subscription-to-a-service)
+    * **[!UICONTROL Data Capture]**: Use this type to create a landing page for data capture use cases. [Learn more](get-started-lp.md#data-capture-lp)
 
 1. Click **[!UICONTROL Create]**.
 
@@ -80,7 +85,8 @@ Once you configured and designed the [primary page](#configure-primary-page), an
 >title="Define your primary page settings"
 >abstract="The primary page is immediately displayed to the users after they click the link to your landing page, such as from an email or a website."
 <!--
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html" text="Design the landing page content"-->
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html" text="Design the landing page content"
+-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_settings"
@@ -127,9 +133,11 @@ To define the primary page settings, follow the steps below.
 
     ![](assets/lp_expiry-date.png)
 
-<!--1. In the **[!UICONTROL Additional data]** section, define one or more keys and their corresponding parameter values. You will be able to leverage these keys in the content of your primary page and subpages using the [personalization editor](../personalization/personalization-build-expressions.md). Learn more in [this section](lp-content.md#use-additional-data).
+<!--
+1. In the **[!UICONTROL Additional data]** section, define one or more keys and their corresponding parameter values. You will be able to leverage these keys in the content of your primary page and subpages using the [personalization editor](../personalization/personalization-build-expressions.md). Learn more in [this section](lp-content.md#use-additional-data).
 
-    ![](assets/lp_create-lp-additional-data.png)-->
+    ![](assets/lp_create-lp-additional-data.png)
+-->
 
 1. If you selected one or more subscription lists when [designing the primary page](design-lp.md), they display in the **[!UICONTROL Subscription list]** section.
 
@@ -242,14 +250,14 @@ Two types of alerts can happen:
 >
 > You must resolve all **error** alerts before publication.
 
-<!--The settings and elements checked by the system are listed below. You will also find information on how to adapt your configuration to resolve the corresponding issues.
+<!--
+The settings and elements checked by the system are listed below. You will also find information on how to adapt your configuration to resolve the corresponding issues.
 
 **Warnings**:
 
 * 
 
 **Errors**:
-
 -->
 
 ## Publish the landing page {#publish-landing-page}

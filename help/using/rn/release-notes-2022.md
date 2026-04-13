@@ -7,7 +7,6 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-hidefromtoc: yes
 hide: yes
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
 ---
@@ -20,7 +19,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 ## October 2022 Release {#oct-2022-release}
 
 <!--
-
 ### New capability{#oct-2022-features}
 
 <table>
@@ -38,7 +36,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tr>
 </tbody>
 </table>
-
 -->
 
 ### Improvements {#oct-2022-improvements}
@@ -184,7 +181,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </table>
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Data Hygiene</strong><br/></th>
@@ -200,7 +198,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements{#sept-2022-improvements}
 
@@ -279,7 +277,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>New Dynamic Expression Builder</strong><br/></th>
@@ -294,7 +293,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 ### Improvements
@@ -466,7 +465,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tbody>
 </table>
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Automatically use the best performing offer in your decisions</strong><br/></th>
@@ -482,7 +482,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
 <table>
 <thead>
@@ -562,7 +563,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Attribute-based Access Control (ABAC)</strong><br/></th>
@@ -577,7 +579,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -716,7 +718,8 @@ As an Adobe Campaign Standard customer, you can now send emails, push notificati
 </table>
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>API Developer Site and Suppression API</strong><br/></th>
@@ -733,7 +736,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -786,7 +789,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 <tr>
 <td>
 <p>When configuring a <strong>Condition</strong> activity in a journey, you can now define a profile cap. This new condition type allows you to set a maximum number of profiles for a journey path. When this limit is reached, the entering profiles take an alternate path. This allows you to ramp up the volume of your deliveries (IP ramp up). For example, you may want to ramp up your deliveries on a domain by splitting the execution: send 1000 messages on day 1, 2000 on day 2, etc.</p>
-<p>For more information, refer to the <a href="../building-journeys/condition-activity.md#profile_cap">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../building-journeys/conditions.md#profile_cap">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

@@ -15,8 +15,8 @@ version: Journey Orchestration
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification"
->title="Audience qualification events"
->abstract="This activity listens to entrances and exits of profiles in [!DNL Adobe Experience Platform] audiences to move individuals through a journey."
+>title="Audience qualification"
+>abstract="Trigger journey entry or continuation when a profile qualifies for or exits an [!DNL Adobe Experience Platform] audience. Recommended for streaming audiences; use a Read Audience activity for batch scenarios."
 
 ## About audience qualification events{#about-segment-qualification}
 
@@ -37,6 +37,33 @@ This type of event can be positioned as the first step or later in the journey.
 ## Configure the activity {#configure-segment-qualification}
 
 To configure the **[!UICONTROL Audience Qualification]** activity, follow these steps:
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_label"
+>title="Label"
+>abstract="Add an optional label to identify this activity in reporting and test mode logs."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_audience"
+>title="Audience"
+>abstract="Select the [!DNL Adobe Experience Platform] audience to leverage. The journey listens for profile entrances and exits from this audience."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_behavior"
+>title="Behavior"
+>abstract="Choose whether to listen to audience entrances, exits, or both."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_identity"
+>title="Identity type"
+>abstract="Select the identity type used to identify individuals. Only people-based identity namespaces are available."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_event_segment_qualification_merge_policy"
+>title="Merge policy"
+>abstract="The merge policy is automatically retrieved from your selected audience and applied throughout the entire journey."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-properties#merge-policies" text="Learn more about merge policies"
+
 
 1. Unfold the **[!UICONTROL Events]** category and drop an **[!UICONTROL Audience Qualification]** activity into your canvas.
 
@@ -82,7 +109,7 @@ The payload contains the following context information, which you can use in con
 
 When using the expression editor in a condition or action that follows an **[!UICONTROL Audience Qualification]** activity, you have access to the **[!UICONTROL AudienceQualification]** node. You can choose between the **[!UICONTROL Last qualification time]** and the **[!UICONTROL status]** (enter or exit).
 
-See [Condition activity](../building-journeys/condition-activity.md#about_condition).
+See [Conditions](../building-journeys/conditions.md#about_condition).
 
 A new journey that includes an **Audience Qualification** event becomes operational ten minutes after you publish it. This interval matches the cache refresh interval of the dedicated service. Wait ten minutes before using this journey.
 
@@ -112,13 +139,15 @@ See the [[!DNL Adobe Experience Platform] streaming segmentation documentation](
 
 >[!NOTE]
 >
->For streaming segmentation, newly ingested data may take up to **2 hours** to propagate fully within [!DNL Adobe Experience Platform] for real-time use. Audiences that rely on day-based or time-based conditions (e.g., "events that occurred today") may experience additional complexity in qualification timing. If your journey depends on immediate audience qualification, consider adding a short [Wait activity](wait-activity.md) at the beginning. You can also allow buffer time to ensure accurate qualification.
+>Propagation timing for streaming segment membership depends on how the membership is evaluated and where it is used in the journey:
+>
+>* **Audience Qualification node + streaming segment:** When a profile qualifies for a streaming segment at the Edge, that membership is projected from Edge to Hub before the journey can act on it. This Edge-to-Hub propagation typically takes **15 to 30 minutes**. If profiles are not entering an Audience Qualification journey as expected, allow for this propagation window (by adding a wait activity if appropriate) before investigating further. For use cases requiring true real-time entry, consider a unitary event trigger instead.
 
 #### Why not all qualified profiles may enter the journey {#streaming-entry-caveats}
 
 When using streaming audiences with the **Audience Qualification** activity, not all profiles that qualify for the audience will necessarily enter the journey. This behavior can occur for the following reasons:
 
-* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter.
+* **Profiles already in the audience**: Only profiles that newly qualify for the audience after the journey is published will trigger entry. Profiles already in the audience before publishing will not enter. Similarly, when a streaming segment uses a **time-based condition** (for example, "event in the next 8 hours"), profiles that already met that condition before the segment was created are **not retroactively evaluated** — only profiles whose data changes after segment activation are assessed against the condition.
 
 * **Journey activation time**: When you publish a journey, the **Audience Qualification** activity takes up to **10 minutes** to become active and start listening for profile entries and exits. [Learn more about journey activation](#configure-segment-qualification).
 

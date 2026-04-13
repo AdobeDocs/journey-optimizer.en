@@ -8,7 +8,6 @@ topic: Administration
 role: Admin
 level: Experienced
 hide: yes
-hidefromtoc: yes
 keywords: CC, carbon copy, email, channel configuration, email headers, BCC
 badge: label="Limited availability" type="Informative"
 exl-id: 9649cc07-3183-4510-b5d9-b1e33eff43e9

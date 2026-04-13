@@ -250,10 +250,6 @@ To display dynamic benefits based on loyalty status, see the below example.
 
 The [Dataset Lookup activity](../building-journeys/dataset-lookup.md) allows you to retrieve data from [Adobe Experience Platform datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"} during journey runtime. The enriched data is stored as an array and can be iterated over in your messages.
 
->[!AVAILABILITY]
->
->The Dataset Lookup activity is only available for a limited set of organizations. To gain access, contact your Adobe representative.
-
 Learn more about configuring the Dataset Lookup activity in [this section](../building-journeys/dataset-lookup.md). Dataset lookup is particularly powerful when combined with event data - see [Example: Event data enriched with dataset lookup](#combine-sources) for a practical use case.
 
 ### Context path for dataset lookups

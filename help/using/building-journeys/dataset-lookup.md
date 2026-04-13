@@ -16,9 +16,13 @@ exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dataset_lookup"
 >title="Dataset lookup activity"
->abstract="The **[!UICONTROL Dataset lookup]** activity allows you to to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
+>abstract="The **[!UICONTROL Dataset lookup]** activity allows you to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
 
 The **[!UICONTROL Dataset lookup]** activity allows you to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
+
+>[!AVAILABILITY]
+>
+>This feature is currently available to all customers as a limited availability release.
 
 Key Benefits:
 
@@ -26,17 +30,13 @@ Key Benefits:
 * **Dynamic decision-making**: Use external data to drive journey logic and actions.
 * **Enhanced data Access**: Retrieve product metadata, pricing tables, or relational data tied to specific keys.
 
->[!AVAILABILITY]
->
->This activity is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 ## Must-read {#must-read}
 
 Review these requirements before you configure dataset lookups.
 
 ### Dataset enablement
 
-The dataset must be enabled for lookup in [!DNL Adobe Experience Platform]. Detailed information are available in this section: [Use [!DNL Adobe Experience Platform] data](../data/lookup-aep-data.md). 
+The dataset must be enabled for lookup in [!DNL Adobe Experience Platform]. Detailed information is available in this section: [Use [!DNL Adobe Experience Platform] data](../data/lookup-aep-data.md).
 
 ### Limits & restrictions
 

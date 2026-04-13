@@ -6,7 +6,6 @@ description: Learn how to access and use Adobe Experience Manager Content Adviso
 role: User
 level: Beginner, Intermediate
 hide: yes
-hidefromtoc: yes
 exl-id: 842d69e3-be7f-4a81-8161-6c6ecd571f95
 ---
 # Work with Adobe Experience Manager Content Advisor {#aem-content-advisor}
@@ -23,100 +22,100 @@ Adobe Experience Manager Content Advisor replaces deterministic discovery with s
 
 Adobe Experience Manager Content Advisor provides the following asset features:
 
-* +++ AI semantic search
-    
-    Search for assets using natural language instead of exact keywords or file names. Describe what you need in plain language, for example "coffee in the mountains", and the AI finds contextually relevant assets based on meaning and content, not just text matches.
-    
-    ![](assets/content-advisor-2.png){zoomable="yes"}
++++ AI semantic search
 
-    +++
+Search for assets using natural language instead of exact keywords or file names. Describe what you need in plain language, for example "coffee in the mountains", and the AI finds contextually relevant assets based on meaning and content, not just text matches.
 
-* +++ Recent search history
+![](assets/content-advisor-2.png){zoomable="yes"}
 
-    Access your recent searches to quickly reuse keywords and contexts. This saves time when working on similar campaigns or when you need to refine previous searches.
++++
 
-    ![](assets/content-advisor-4.png){zoomable="yes"}
++++ Recent search history
 
-    +++ 
+Access your recent searches to quickly reuse keywords and contexts. This saves time when working on similar campaigns or when you need to refine previous searches.
 
-* +++ Upload brief
+![](assets/content-advisor-4.png){zoomable="yes"}
 
-    Upload a marketing brief document to automatically surface assets that align with your campaign context. The AI analyzes your brief and suggests relevant assets based on the content and requirements described in the document.
++++ 
 
-    ![](assets/content-advisor-5.png){zoomable="yes"}
++++ Upload brief
 
-    +++
+Upload a marketing brief document to automatically surface assets that align with your campaign context. The AI analyzes your brief and suggests relevant assets based on the content and requirements described in the document.
 
-* +++ Asset information panel
+![](assets/content-advisor-5.png){zoomable="yes"}
 
-    View detailed metadata and properties for any asset using the **Info** icon. This includes asset dimensions, file size, creation date, tags, and other relevant information to help you make informed decisions.
++++
 
-    ![](assets/content-advisor-6.png){zoomable="yes"}
++++ Asset information panel
 
-    +++
+View detailed metadata and properties for any asset using the **Info** icon. This includes asset dimensions, file size, creation date, tags, and other relevant information to help you make informed decisions.
 
-* +++ Dynamic Media panel
+![](assets/content-advisor-6.png){zoomable="yes"}
 
-    Access dynamic renditions, smart crops, and on-the-fly modifications based on repository configuration.
++++
 
-    ![](assets/content-advisor-1.png){zoomable="yes"}
++++ Dynamic Media panel
 
-    The Dynamic Media panel provides access to dynamic renditions, smart crops, and on-the-fly modifications. You can enter modifiers directly in the panel to create custom renditions.
+Access dynamic renditions, smart crops, and on-the-fly modifications based on repository configuration.
 
-    **Availability**
+![](assets/content-advisor-1.png){zoomable="yes"}
 
-    Dynamic Media availability depends on your repository configuration:
+The Dynamic Media panel provides access to dynamic renditions, smart crops, and on-the-fly modifications. You can enter modifiers directly in the panel to create custom renditions.
 
-    * **Scene7**: Available for published assets (except Video and PDF). [Learn more on Dynamic Media Scene7 modifiers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-modifiers.html){target="_blank"}
+**Availability**
 
-    * **OpenAPI**: Available for approved assets (except Video). [Learn more on Dynamic Media with OpenAPI modifiers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html){target="_blank"}
+Dynamic Media availability depends on your repository configuration:
 
-    * **Both Scene7 and OpenAPI**: Available when both configurations exist and the asset meets the criteria.
+* **Scene7**: Available for published assets (except Video and PDF). [Learn more on Dynamic Media Scene7 modifiers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-modifiers.html){target="_blank"}
 
-    **Stack selection**
+* **OpenAPI**: Available for approved assets (except Video). [Learn more on Dynamic Media with OpenAPI modifiers](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html){target="_blank"}
 
-    The buttons you see depend on your repository configuration:
+* **Both Scene7 and OpenAPI**: Available when both configurations exist and the asset meets the criteria.
 
-    * **Scene7 button only**: Repository has Scene7 configuration and asset is published to Dynamic Media.
-    * **OpenAPI button only**: Repository has OpenAPI configuration and asset is approved.
-    * **Both buttons**: Repository has both configurations and asset is both published and approved.
-    +++
+**Stack selection**
+
+The buttons you see depend on your repository configuration:
+
+* **Scene7 button only**: Repository has Scene7 configuration and asset is published to Dynamic Media.
+* **OpenAPI button only**: Repository has OpenAPI configuration and asset is approved.
+* **Both buttons**: Repository has both configurations and asset is both published and approved.
++++
 
 ### For Content Fragment {#content-fragment-features}
 
 Adobe Experience Manager Content Advisor provides the following Content Fragment features:
 
-* +++ Template view listing 
++++ Template view listing 
 
-    Switch between thumbnail and table views to browse Content Fragments in the format that works best for your workflow. Thumbnail view provides visual context, while table view shows detailed information in a structured format.
+Switch between thumbnail and table views to browse Content Fragments in the format that works best for your workflow. Thumbnail view provides visual context, while table view shows detailed information in a structured format.
 
-    ![](assets/content-advisor-7.png){zoomable="yes"}
+![](assets/content-advisor-7.png){zoomable="yes"}
 
-    +++
++++
 
-* +++ Info panel 
++++ Info panel 
 
-    Click the **[!UICONTROL Info]** icon to open a right panel displaying fragment variations, properties, and **[!UICONTROL Referenced By]** details. The **[!UICONTROL Referenced By]** section shows all Adobe Experience Manager entities where the fragment is used, with links to view these references directly in Adobe Experience Manager.
+Click the **[!UICONTROL Info]** icon to open a right panel displaying fragment variations, properties, and **[!UICONTROL Referenced By]** details. The **[!UICONTROL Referenced By]** section shows all Adobe Experience Manager entities where the fragment is used, with links to view these references directly in Adobe Experience Manager.
 
-    ![](assets/content-advisor-8.png){zoomable="yes"}
+![](assets/content-advisor-8.png){zoomable="yes"}
 
-    +++
++++
 
-* +++ Open in Adobe Experience Manager
++++ Open in Adobe Experience Manager
 
-    Quickly open any Content Fragment directly in Adobe Experience Manager for editing using the icon next to the title. This seamless integration lets you switch between Journey Optimizer and Adobe Experience Manager without losing context.
+Quickly open any Content Fragment directly in Adobe Experience Manager for editing using the icon next to the title. This seamless integration lets you switch between Journey Optimizer and Adobe Experience Manager without losing context.
 
-    ![](assets/content-advisor-9.png){zoomable="yes"}
+![](assets/content-advisor-9.png){zoomable="yes"}
 
-    +++
++++
 
-* +++ JSON preview
++++ JSON preview
 
-    Preview the JSON structure of Content Fragments in a clean, organized tabular format. This helps you understand the fragment's data structure and verify content before using it in your campaigns.
+Preview the JSON structure of Content Fragments in a clean, organized tabular format. This helps you understand the fragment's data structure and verify content before using it in your campaigns.
 
-    ![](assets/content-advisor-10.png){zoomable="yes"}
+![](assets/content-advisor-10.png){zoomable="yes"}
 
-    +++
++++
 
 ## Access Adobe Experience Manager Content Advisor {#access}
 

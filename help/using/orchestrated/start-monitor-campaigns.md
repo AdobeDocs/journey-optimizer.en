@@ -17,6 +17,21 @@ version: Campaign Orchestration
 
 Once you have created your orchestrated campaign and designed the tasks to perform in the canvas, you can publish it and monitor how it is being executed. You can also execute the campaign in test mode to check its execution and the result of the different activities.
 
+## Campaign lifecycle at a glance {#lifecycle}
+
+Orchestrated campaigns move through a defined set of states. The key stages in the publication workflow are:
+
+| Status | What it means |
+|---|---|
+| **Draft** | The campaign is being built and tested — not yet active. |
+| **Live** | The campaign has been published and is executing. |
+| **Closed** | The recurring campaign is closed to new entries, but active profiles continue until all activities complete. |
+| **Completed** | Campaign execution has finished. |
+
+>[!NOTE]
+>
+>For all statuses (including Scheduled, Stopped, Archived) and available actions at each stage, see [Understanding campaign statuses](../campaigns/manage-campaigns.md#statuses).
+
 ## Test your campaign before publishing {#test}
 
 [!DNL Journey Optimizer] allows you to test Orchestrated campaigns before going live. When a campaign is created, it enters the **Draft** state by default. In this state, you can execute the campaign manually to test the flow. 
@@ -25,11 +40,13 @@ Once you have created your orchestrated campaign and designed the tasks to perfo
 >
 >All activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.
 
-To test an Orchestrated campaign, open the campaign and select **[!UICONTROL Start]**.
+To test an Orchestrated campaign, open the campaign and select **[!UICONTROL Start]**. Each activity in the campaign is executed sequentially until the end of the canvas is reached.
 
 ![Start button in the campaign canvas toolbar](assets/campaign-start.png){zoomable="yes"}
 
-Each activity in the campaign is executed sequentially until the end of the canvas is reached. During the test, you can control the campaign execution using the action bar in the canvas. From there, you can:
+For **triggered orchestrated campaigns**, the system waits for an API call to start the campaign. You need to send the signal to continue the test. [Learn how to test signal-triggered campaigns](trigger-orchestrated-campaign.md#complete-and-test).
+
+During the test, you can control the campaign execution using the action bar in the canvas. From there, you can:
 
 * **Stop** the execution at any time.
 * **Start** the execution again.
@@ -42,9 +59,15 @@ The **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolba
 
 You can also quickly identify failed activities using the [visual status indicators](#activities) displayed directly on each activity. For detailed troubleshooting, open the [campaign's logs](#logs-tasks), which provide in-depth information about the error and its context.
 
-If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities](activities/channels.md)
+If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities and simulate content](activities/channels.md#simulate-content-test-profiles).
 
-Once validated, the campaign can be published.
+>[!TIP]
+>
+>Before clicking **[!UICONTROL Publish]**, confirm the following:
+>* The campaign ran successfully in test mode with no errors in the [logs](#logs-tasks).
+>* Message content has been previewed using **[!UICONTROL Simulate Content]**.
+>* The [schedule is configured](create-orchestrated-campaign.md#schedule) if this is a scheduled campaign.
+>* You have reviewed the [sending confirmation](#confirm-sending) behavior — for non-recurring campaigns, no messages are sent until you explicitly approve the send after publishing.
 
 ## Publish the campaign {#publish}
 
@@ -60,6 +83,24 @@ The visual flow restarts, and real profiles begin flowing through the journey in
 
 If the publish action fails (e.g., due to missing message content), you are alerted and must fix the issue before retrying. On successful publishing, the campaign begins executing (immediately or on schedule), moves from **Draft** to **Live** status, and becomes "Read only".
 
+>[!IMPORTANT]
+>
+>For non-recurring campaigns, message delivery is paused after publishing until you explicitly confirm the send from the channel activity's properties pane. The campaign will show as **Live** but no messages are sent until confirmed. [Learn more](#confirm-sending)
+
+### Publication-time execution sequence {#publication-sequence}
+
+When you click **[!UICONTROL Publish]**, the following sequence occurs internally:
+
+1. **Scheduler activation** — If the campaign has a [schedule configured](create-orchestrated-campaign.md#schedule), the scheduler kicks in and triggers execution at the defined time.
+1. **Save Audience activities run first** — Any [Save audience](activities/save-audience.md) activities in the workflow execute before message activities. The audience shell is created within the [Audience Portal](../audience/about-audiences.md#browse), and qualified profiles begin ingesting.
+1. **Message execution begins** — [Channel activities](activities/channels.md) start processing for the first message activity in the workflow.
+1. **Profile snapshot lookup** — Profile data is resolved against a snapshot taken at publication time, not the real-time profile. This ensures consistency across the entire execution.
+1. **Consent evaluation** — For matching profiles, consent is honored directly from the profile record. Consent is not re-evaluated at send time. [Learn more about consent management](../action/consent.md)
+1. **On-the-fly profile creation** — Profiles that do not match an existing record are created on the fly during execution.
+1. **Delivery log creation** — Delivery events are recorded in the [`ajo_message_feedback_event`](../data/datasets-query-examples.md#message-feedback-event-dataset) dataset, which is the primary source for delivery logs and post-send validation.
+
+To validate results after execution, use Journey Optimizer reporting capabilities. [Learn more on Orchestrated campaigns reporting](reporting-campaigns.md)
+
 ## Revert a campaign back to draft {#back-to-draft}
 
 The **[!UICONTROL Back to draft]** feature allows you to unpublish and revert an orchestrated campaign to draft status in specific situations. This is designed as a recovery mechanism to fix issues before any messages are sent, while maintaining the integrity of the campaign lifecycle.
@@ -72,7 +113,7 @@ This option is available in two scenarios:
 
 To switch a campaign back to draft status, open the orchestrated campaign and click the **[!UICONTROL Back to draft]** button in the campaign canvas toolbar.
 
-![](assets/back-to-draft.png)
+![Back to draft button in the campaign canvas toolbar](assets/back-to-draft.png)
 
 The campaign is unpublished and the workflow is stopped. The campaign returns to **Draft** status. You can now fix the identified issues, then [test the campaign](#test) and [publish it](#publish) again when ready.
 
@@ -80,7 +121,7 @@ The campaign is unpublished and the workflow is stopped. The campaign returns to
 
 By default, for non-recurring orchestrated campaigns, message delivery is paused until you explicitly approve the send. After publishing the campaign, confirm the send request from the channel activity's properties pane. Until it is confirmed, the channel activity stays pending and no message is sent.
 
-![image showing the Confirm button](assets/confirm-sending.png)
+![Confirm send button in the channel activity properties pane](assets/confirm-sending.png)
 
 Before publishing, you can disable sending confirmation from the channel activity properties pane. For details, see [Confirm message sending](activities/channels.md#confirm-message-sending).
 
@@ -99,16 +140,18 @@ Data transported from one activity to another through transitions is stored in a
 
     ![Transition preview showing work table schema and results](assets/transition.png){zoomable="yes"}
 
+You can now inspect the data passed between activities to validate your campaign flow and confirm that each activity is processing the expected profiles.
+
 ### Activity execution indicators {#activities}
 
 Visual status indicators help you understand how each activity is performing:
 
-|Visual indicator | Description | 
+|Visual indicator | Description |
 |-----|------------|
 |![Pending status](assets/activity-status-pending.png){zoomable="yes"}{width="70%"}| The activity is currently being executed. |
-|![Orange status](assets/activity-status-orange.png){zoomable="yes"}{width="70%"}| The activity requires your attention. This may involve confirming the sending of a delivery or taking a necessary action. |
+|![Attention required status indicator](assets/activity-status-orange.png){zoomable="yes"}{width="70%"}| The activity requires your attention. This may involve confirming the sending of a delivery or taking a necessary action. |
 |![Error status](assets/activity-status-red.png){zoomable="yes"}{width="70%"}|The activity has encountered an error. To resolve the issue, open the Orchestrated campaign logs for more information.|
-|![Success status](assets/activity-status-green.png){zoomable="yes"}{width="70%"}|The activity has been successfully executed. | 
+|![Success status](assets/activity-status-green.png){zoomable="yes"}{width="70%"}|The activity has been successfully executed. |
 
 ### Logs and tasks {#logs-tasks}
 
@@ -135,3 +178,5 @@ In both tabs, you can choose the displayed columns and their order, apply filter
 ## Next steps {#next}
 
 After starting the Orchestrated campaign canvas, you can use Journey Optimizer reporting capabilities to get insights such as understanding audience behavior, and measuring the performance of each step in your customer journey. [Learn more on Orchestrated campaigns reporting](../orchestrated/reporting-campaigns.md)
+
+Have questions about Orchestrated campaigns? Check the [Orchestrated campaigns FAQ](orchestrated-campaigns-faq.md) for answers to the most common questions from practitioners.

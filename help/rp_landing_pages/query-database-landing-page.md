@@ -16,7 +16,7 @@ Discover how to unlock the full potential of your audience data with Adobe Journ
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-Using the Rule Builder for Orchestrated Campaigns
+Using the Rule Builder for Orchestrated campaigns
 
 Learn how to create and manage audience targeting and segmentation rules using the Rule Builder in Adobe Journey Optimizer.
 

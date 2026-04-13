@@ -108,6 +108,20 @@ Here are a few things to check:
 * Is it due to a condition excluding the person? For example, the condition is "gender = male" and the person is a woman. This check can be performed by a business user if the condition is not too complex.
 * Is it due to a call to a data source not responding? When the journey is in test, this information can be seen in test mode logs. When the journey is live, an administrator can test direct calls to the data source and check the answer received. An administrator can also duplicate the journey and test it.
 
+## Events discarded due to a blocked journey instance {#max-instance-stack-events-reached}
+
+If you see events discarded with the `maxInstanceStackEventsReached` reason, the journey runtime has reached its internal per-profile event stack limit of 10 events for a specific journey version. This is a safety guardrail that prevents too many pending events from stacking up while another event for the same profile is still being processed.
+
+This is **not** a time-window or throughput limit. It occurs when the profile's journey instance is blocked on a long-running step (for example, a long wait, enrichment, or custom action retries) and events for the same profile, also being used in that journey, pile up beyond the 10-event limit.
+
+To identify it, query journey step events where the discard reason equals `maxInstanceStackEventsReached` (for example, in `serviceEvents.stateMachine.eventType` or similar fields). Learn more about discarded event types in the [step event field list](../reports/sharing-field-list.md#discarded-events).
+
+**What you can do**
+
+* Reduce long waits or slow steps on paths that can re-trigger frequently.
+* Deduplicate or debounce upstream events when possible.
+* Split long-running scenarios into multiple journeys to avoid stacking.
+
 ## Check that messages are sent successfully {#checking-that-messages-are-sent-successfully}
 
 If individuals flow the right way in the journey but do not receive messages they should receive, you can check if:

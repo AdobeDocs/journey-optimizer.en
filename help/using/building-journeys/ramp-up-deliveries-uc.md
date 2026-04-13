@@ -8,7 +8,6 @@ topic: Content Management
 role: User, Developer
 level: Intermediate, Experienced
 hide: yes
-hidefromtoc: yes
 keywords: deliverability, journey, use case, email, reputation
 exl-id: 83d1b68d-011a-4109-b5f0-6ca1ade2944d
 version: Journey Orchestration
@@ -23,11 +22,11 @@ The purpose of this use case is to create a journey to ramp up your email delive
 
 1. Create a journey. [Read more](journey-gs.md).
 
-1. Add a **[!UICONTROL Condition]** activity to the journey. [Read more](condition-activity.md).
+1. Add an **[!UICONTROL Optimize]** activity to the journey. [Read more](optimize.md).
 
 1. In the **[!UICONTROL Condition]** activity settings, set the maximum number of recipients for your delivery:
 
-   1. In the **[!UICONTROL Condition]** activity settings, set the **[!UICONTROL Type]** field to **[!UICONTROL Profile cap]**. [Read more](condition-activity.md#profile_cap).
+   1. In the **[!UICONTROL Optimize]** activity settings, select **[!UICONTROL Conditions]** method and set the **[!UICONTROL Type]** field to **[!UICONTROL Profile cap]**. [Read more](conditions.md#profile_cap).
 
    1. Set the **[!UICONTROL Limit]** field to the maximum number of recipients for this delivery.
 

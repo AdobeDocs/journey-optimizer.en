@@ -15,7 +15,7 @@ Expand your AI image creation capabilities with built-in models, custom Firefly 
 Choose the right model for your needs:
 
 - **[!UICONTROL Adobe model]**, powered by Firefly Image Model 4, is provided out of the box and ready to use for immediate image generation without additional setup.
-- **[!UICONTROL Partner model]**, powered by Gemini 2.5 Flash, offers specialized capabilities for specific use cases.
+- **[!UICONTROL Partner model]**, powered by Gemini 2.5 Flash, offers specialized capabilities for specific use cases. For a step-by-step workflow that uses **Gemini** with **text overlays** on images in AI Assistant, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
 - **[!UICONTROL Custom models]** are brand-specific models trained on your own assets and added by your organization.
 
     Learn more on **[!UICONTROL Custom models]** in [Adobe Firefly documentation](https://helpx.adobe.com/firefly/web/work-with-enterprise-features/train-custom-models/custom-models-overview.html)

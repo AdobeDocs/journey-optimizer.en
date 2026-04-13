@@ -73,7 +73,7 @@ A source connector (also known as a **source**) helps you ingest data from multi
 
 ### Data source (Journey Optimizer) {#data-source}
 
-A data source in Journey Optimizer defines which fields from Adobe Experience Platform (or external APIs) are exposed inside journeys and messages. Configured in the Journey Optimizer UI, data sources typically include the built-in Adobe Experience Platform data source (exposing Real-Time Customer Profile attributes and events) and optional external or custom data sources called at journey runtime for additional enrichment. They are used for journey conditions, custom actions, and message personalization.
+A data source in Journey Optimizer defines which fields from Adobe Experience Platform (or external APIs) are exposed inside journeys and messages. Configured in the Journey Optimizer UI, data sources typically include the built-in Adobe Experience Platform data source (exposing Real-Time Customer Profile attributes) and optional external or custom data sources called at journey runtime for additional enrichment. They are used for journey conditions, custom actions, and message personalization.
 
 ➡️ [Learn more about data sources](../datasource/about-data-sources.md)
 
@@ -101,25 +101,40 @@ Before marketers start building journeys and campaigns, your organization should
 >[!NOTE]
 >The steps below involve multiple roles: data engineers, administrators, and marketers. Use this checklist as a shared plan to prepare your environment. Steps 1–4 are completed in Adobe Experience Platform; Steps 5–6 are configured in Journey Optimizer.
 
-### 1. Define your identity strategy {#identity-strategy}
+The six steps below walk you through the full data setup process, from identity configuration to verifying that data flows correctly into Journey Optimizer:
+
+1. Define your identity strategy
+1. Design schemas for profile and event data
+1. Create profile-enabled datasets
+1. Ingest data from your sources
+1. Configure data sources in Journey Optimizer
+1. Verify tracking, feedback, and journey datasets
+
++++ Define your identity strategy
 
 Choose a primary identity for your customers (such as ECID, email, or CRMID) and configure the corresponding namespaces in Adobe Experience Platform Identity Service. Make sure identity fields are present in your profile-enabled schemas and validate that profiles are correctly stitched into the identity graph.
 
 ➡️ [Learn more about identities in Journey Optimizer](../audience/get-started-identity.md)
 
-### 2. Design schemas for profile and event data {#design-schemas}
++++
+
++++ Design schemas for profile and event data
 
 Create **XDM Individual Profile** schemas to capture customer attributes such as name and contact information, preferences and interests, and lifecycle stage or consent state. Create **XDM ExperienceEvent** schemas to capture behavioral and transactional data such as web and app events, purchases, and offline interactions. Mark the correct fields as identities and profile attributes where appropriate.
 
 ➡️ [Learn more about schemas](get-started-schemas.md)
 
-### 3. Create profile-enabled datasets {#create-datasets}
++++
+
++++ Create profile-enabled datasets
 
 In Adobe Experience Platform, create datasets based on your XDM schemas and enable Profile on any dataset that should contribute to Real-Time Customer Profile. Confirm that system-generated datasets created by Journey Optimizer are visible in the Datasets workspace.
 
 ➡️ [Learn more about datasets](get-started-datasets.md)
 
-### 4. Ingest data from your sources {#ingest-data}
++++
+
++++ Ingest data from your sources
 
 Configure source connectors for your enterprise systems — such as Adobe Analytics, Adobe Experience Platform Web SDK, or your CRM and POS platforms — and map incoming fields to your XDM schemas. Validate that data lands in the correct datasets and appears in Real-Time Customer Profile where expected.
 
@@ -127,7 +142,9 @@ Configure source connectors for your enterprise systems — such as Adobe Analyt
 
 ➡️ [Tutorial: Create datasets and ingest data](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/create-datasets-and-ingest-data){target="_blank"}
 
-### 5. Configure data sources in Journey Optimizer {#configure-data-sources}
++++
+
++++ Configure data sources in Journey Optimizer
 
 Data sources are a Journey Optimizer-specific concept: they are not where your data lives, but where you declare which fields Journey Optimizer is allowed to read during journey and message execution. Before a journey can evaluate a condition like "is the customer a loyalty member?" or personalize a message with a first name, the relevant profile fields must be exposed through a data source configuration.
 
@@ -140,11 +157,15 @@ Configuring data sources is an administrative task that unlocks the full data la
 
 ➡️ [Learn more about data source configuration](../datasource/about-data-sources.md)
 
-### 6. Verify tracking, feedback, and journey datasets {#verify-datasets}
++++
+
++++ Verify tracking, feedback, and journey datasets
 
 Confirm that Journey Optimizer system-generated datasets are available in the Datasets workspace. Run test journeys and campaigns, then use Query Editor to verify that send, open, click, and bounce events are recorded and that journey step events and states are captured correctly. Use these datasets for ongoing monitoring, troubleshooting, and journey optimization.
 
 ➡️ [Learn more about queries in Journey Optimizer](get-started-queries.md)
+
++++
 
 ## Guardrails and data design considerations {#guardrails}
 
@@ -186,18 +207,86 @@ This flow illustrates how schemas, datasets, sources, data sources, and queries 
 
 ## Related resources {#related-resources}
 
-* **[Get started with schemas](get-started-schemas.md)** — Learn how to create XDM schemas in Adobe Experience Platform, choose the right class and field groups, and model your profile attributes and behavioral events.
+:::: landing-cards-container
 
-* **[Work with datasets](get-started-datasets.md)** — Understand how to create profile-enabled and event datasets, monitor data ingestion, and explore the system-generated datasets that Journey Optimizer creates automatically for tracking, feedback, and journey step events.
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-* **[Configure data sources](../datasource/about-data-sources.md)** — Step-by-step guidance on setting up the built-in Adobe Experience Platform data source and optional external data sources to expose profile fields and external API responses inside your journeys.
+**Get started with schemas**
 
-* **[Use Adobe Experience Platform data (lookup)](lookup-aep-data.md)** — Discover how to enrich messages at runtime with reference or transactional data from AEP datasets, without storing that data on the Real-Time Customer Profile.
+Learn how to create XDM schemas in Adobe Experience Platform, choose the right class and field groups, and model your profile attributes and behavioral events.
 
-* **[Get started with queries](get-started-queries.md)** — Use Query Service to analyze Journey Optimizer datasets, verify that events are flowing correctly, and build reporting queries on send, open, click, and bounce data.
+[Learn more](get-started-schemas.md)
+:::
 
-* **[Get started with profiles](../audience/get-started-profiles.md)** — Explore how Real-Time Customer Profile works in Journey Optimizer and how to browse, inspect, and validate individual customer profiles in the Platform UI.
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/database.svg)
 
-* **[Set up data overview tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"}** — A beginner-friendly video walkthrough of data setup in Journey Optimizer, covering schemas, datasets, and sources end to end.
+**Work with datasets**
 
-* **[Create datasets and ingest data tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/create-datasets-and-ingest-data){target="_blank"}** — A hands-on tutorial showing how to create datasets in Adobe Experience Platform and ingest data using source connectors, with step-by-step instructions you can follow in your own sandbox.
+Understand how to create profile-enabled and event datasets, monitor data ingestion, and explore the system-generated datasets that Journey Optimizer creates automatically for tracking, feedback, and journey step events.
+
+[Learn more](get-started-datasets.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+**Configure data sources**
+
+Step-by-step guidance on setting up the built-in Adobe Experience Platform data source and optional external data sources to expose profile fields and external API responses inside your journeys.
+
+[Learn more](../datasource/about-data-sources.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+**Use Adobe Experience Platform data (lookup)**
+
+Discover how to enrich messages at runtime with reference or transactional data from AEP datasets, without storing that data on the Real-Time Customer Profile.
+
+[Learn more](lookup-aep-data.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+**Get started with queries**
+
+Use Query Service to analyze Journey Optimizer datasets, verify that events are flowing correctly, and build reporting queries on send, open, click, and bounce data.
+
+[Learn more](get-started-queries.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+**Get started with profiles**
+
+Explore how Real-Time Customer Profile works in Journey Optimizer and how to browse, inspect, and validate individual customer profiles in the Platform UI.
+
+[Learn more](../audience/get-started-profiles.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+
+**Set up data overview tutorial**
+
+A beginner-friendly video walkthrough of data setup in Journey Optimizer, covering schemas, datasets, and sources end to end.
+
+[Watch tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/set-up-data-overview){target="_blank"}
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+
+**Create datasets and ingest data tutorial**
+
+A hands-on tutorial showing how to create datasets in Adobe Experience Platform and ingest data using source connectors, with step-by-step instructions you can follow in your own sandbox.
+
+[Watch tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/data-management/create-datasets-and-ingest-data){target="_blank"}
+:::
+
+::::

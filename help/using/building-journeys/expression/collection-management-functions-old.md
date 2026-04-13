@@ -5,7 +5,6 @@ title: Collection management functions
 description: Learn about data types in collection management functions
 feature: Journeys
 hide: yes
-hidefromtoc: yes
 role: Developer
 level: Experienced
 keywords: query, collections, functions, payload, journey
@@ -67,7 +66,7 @@ The **[!UICONTROL all]** function enables the definition of a filter on a given 
 
 For example, among all the app users, you can get the ones using IOS 13 (boolean expression "app used == IOS 13"). The result of this function is the filtered list containing items matching the boolean expression (example: app user 1, app user 34, app user 432).
 
-In a Data Source Condition activity you can check if the result of the **[!UICONTROL all]** function is null or not. You can also combine this **[!UICONTROL all]** function with other functions such as **[!UICONTROL count]**. For more information, see [Data Source Condition activity](../condition-activity.md#data_source_condition).
+In a Data Source Condition activity you can check if the result of the **[!UICONTROL all]** function is null or not. You can also combine this **[!UICONTROL all]** function with other functions such as **[!UICONTROL count]**. For more information, see [Data Source Condition activity](../conditions.md#data_source_condition).
 
 
 ## Examples
@@ -96,7 +95,8 @@ Here we use the **[!UICONTROL count]** function to check if there are push notif
 
 The result will be true.
 
-<!--Alternatively, you can check if there is no token in the collection:
+<!--
+Alternatively, you can check if there is no token in the collection:
 
    ```json
    count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().token}) == 0
@@ -117,7 +117,8 @@ Note that when the condition in the **all()** function is empty, the filter will
 In both cases, the result of the expression is **3**.
 
 A query of experience events recorded on the Adobe Experience Platform may or may not include the current event that triggered the current Journey. This will depend on the relative processing time with which [!DNL Journey Orchestration] sees an event and started evaluating conditions, versus the time it takes for that event to be ingested into the Adobe Experience Platform. For example, when using the .all() syntax to query experience events from the Adobe Experience Platform, we recommend enforcing the exclusion of the current event (by requiring an
-earlier timestamp) in order to only consider prior events.-->
+earlier timestamp) in order to only consider prior events.
+-->
 
    >[!NOTE]
    >
@@ -154,7 +155,8 @@ count(
 )._id}) > 0
 ```
 
-<!--**"All + Count" example 4:** here we use the count function in a boolean expression to see if there is push notification tokens in the collection.
+<!--
+**"All + Count" example 4:** here we use the count function in a boolean expression to see if there is push notification tokens in the collection.
 
 `count(@event{LobbyBeacon._experience.campaign.message.profile.pushNotificationTokens.all().application.name}) > 0`
 
@@ -168,7 +170,8 @@ Alternatively, you can check if there is NO token in the collection:
 
 The result will be:
 
-`false`-->
+`false`
+-->
 
 >[!NOTE]
 >

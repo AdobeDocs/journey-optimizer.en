@@ -164,7 +164,6 @@ Once your journey or campaigns has been activated and executed, you can view the
 
 
 <!--
-
 >[!TAB Apply Quiet hours to custom actions]
 
 1. Open your journey and add or select a custom action in the canvas.
@@ -178,7 +177,6 @@ Once your journey or campaigns has been activated and executed, you can view the
    >Only [activated](#activate-rule) rule sets display in the list.
 
 1. Activate your journey.
-
 -->
 
 

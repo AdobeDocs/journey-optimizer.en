@@ -22,7 +22,7 @@ exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
 
 The data source configuration allows you to define a connection to a system to retrieve additional information that will be used in your journeys, for:
 
-* [condition definition](../building-journeys/condition-activity.md)
+* [condition definition](../building-journeys/conditions.md)
 * parameter and personalization data in [actions](../action/action.md)
 * [custom wait definition](../building-journeys/wait-activity.md#custom)
 * [time zone definition](../building-journeys/timezone-management.md)
