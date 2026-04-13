@@ -7,7 +7,7 @@ feature: Integrations
 topic: Content Management
 role: User
 level: Intermediate
-hide: yes
+hide: true
 keywords: integration, vendor, third-party
 ---
 # Available vendors

@@ -5,7 +5,7 @@ title: Access Adobe Experience Manager Content Advisor
 description: Learn how to access and use Adobe Experience Manager Content Advisor to discover assets and content fragments using AI-powered semantic search in Adobe Journey Optimizer.
 role: User
 level: Beginner, Intermediate
-hide: yes
+hide: true
 exl-id: 842d69e3-be7f-4a81-8161-6c6ecd571f95
 ---
 # Work with Adobe Experience Manager Content Advisor {#aem-content-advisor}
