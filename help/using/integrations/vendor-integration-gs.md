@@ -17,10 +17,10 @@ keywords: integration, vendor, third-party
 
 Table of content:
 
-* [Work with Integrations](using/integrations/external-sources.md)
-* **[Get started with Vendors integration](using/integrations/vendor-integration.md)**
-* [Available vendors](using/integrations/vendor-integration.md)
-* [FAQ](using/integrations/vendor-integration-faq.md) 
+* [Work with Integrations](external-sources.md)
+* **[Get started with Vendors integration](vendor-integration-gs.md)**
+* [Available vendors](vendor-integration.md)
+* [FAQ](vendor-integration-faq.md) 
 
 >[!ENDSHADEBOX]
 
