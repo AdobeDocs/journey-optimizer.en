@@ -25,7 +25,7 @@ External data sources allow you to define a connection to third-party systems, f
 >
 >* Guardrails when working with external systems are listed on [this page](../configuration/external-systems.md).
 >
->* As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see [custom action responses](../action/action-response.md)
+>* As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases. For more information on responses, see [custom action responses](../action/action-response.md). Custom Actions without Data Lake persistence are the right choice when the data is only useful inside the journey and the external system is accessible via an API endpoint. For a comparison of all data access options, see [Choose your data access strategy](../datasource/about-data-sources.md#data-access-strategy).
 
 REST APIs using POST or GET and returning JSON are supported. API Key, basic and custom authentication modes are supported.
 

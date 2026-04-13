@@ -67,7 +67,7 @@ To access Campaign Orchestration, your license must include either the **Journey
 * **Orchestrated campaigns**: Best for **batch, one-to-many** campaigns. Audiences progress in bulk, on a schedule.  
 * **Journeys**: Best for **real-time, one-to-one** engagement. Each customer moves through the journey at their own pace, triggered by behavior or events.  
 
-**Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated Campaigns for planned, calendar-based initiatives.
+**Best practice**: Use them together — Journeys for triggered, reactive experiences, and Orchestrated campaigns for planned, calendar-based initiatives.
 
 **Learn more**
 
@@ -133,7 +133,14 @@ Yes. Campaign orchestration is natively integrated with:
 
 * **Customer Journey Analytics**: Campaign orchestration reports are available.  
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
-* **Federated Audience Composition (FAC)**: Available as an add-on.  -->
+* **Federated Audience Composition (FAC)**: Available as an add-on.  
+-->
+
++++ How do I test a signal-triggered orchestrated campaign before publishing?
+
+While the campaign is in **Draft**, you can test it by defining **parameters** in the schedule and providing **test values** for each. Start the workflow, then call the trigger API (using the sample request from the schedule configuration or your own request with the same endpoint) to run the campaign with those test values. [Learn how to complete and test a signal-triggered campaign](trigger-orchestrated-campaign.md#build-and-test).
+
++++
 
 +++ Can I revert a live orchestrated campaign back to draft?
 
@@ -319,13 +326,13 @@ Segmentation is performed on Recipients while sending against the Adobe Experien
 
 Answering 'Yes' suggests the best data store - but always confirm the best approach based on your use case and constraints with your Adobe representative.
 
-|Relational Store | Real-Time Customer Profile | 
+|Relational Store | Real-Time Customer Profile |
 |---------|----------|
-| Is the source the data relational already? | Is the source of the data streaming? | 
-| Do you plan to ingest data as-it for marketing use cases? | Is data freshness a major requirement? | 
-| Is there a large volume of historical data (`>` 2 months) that is needed for marketing activation use cases? | Are there scenarios where in-the-moment action or decision require data? | 
-| Are there ad-hoc needs for audience creation, evaluation, and activation? | Can the behavioral data be limited to `<` 90 days using pre-computed aggregates?| 
-|  | Is data needed for personalizing messages in real-time?| 
+| Is the source the data relational already? | Is the source of the data streaming? |
+| Do you plan to ingest data as-it for marketing use cases? | Is data freshness a major requirement? |
+| Is there a large volume of historical data (`>` 2 months) that is needed for marketing activation use cases? | Are there scenarios where in-the-moment action or decision require data? |
+| Are there ad-hoc needs for audience creation, evaluation, and activation? | Can the behavioral data be limited to `<` 90 days using pre-computed aggregates?|
+|  | Is data needed for personalizing messages in real-time?|
 
 **Learn more**
 

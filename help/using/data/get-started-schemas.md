@@ -54,6 +54,7 @@ Learn how to create a standard schema, add field groups, create, and configure c
 
 >[!MORELIKETHIS]
 >
+>* [Get started with data management in Journey Optimizer](gs-data.md)
 >* [Create a schema, a dataset and ingest data to add Test profiles in Journey Optimizer](../audience/creating-test-profiles.md)
 >* [XDM System overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}
 >* [Best practices for data modeling](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html){target="_blank"}

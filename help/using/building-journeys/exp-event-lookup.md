@@ -52,7 +52,7 @@ Learn more:
 
 * [!DNL Adobe Experience Platform] [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
-* [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
+* [Using audiences in conditions](../building-journeys/conditions.md#using-a-segment)
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
@@ -71,7 +71,7 @@ Learn more using audiences:
 
 * [!DNL Adobe Experience Platform] [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
-* [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
+* [Using audiences in conditions](../building-journeys/conditions.md#using-a-segment)
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
@@ -93,7 +93,7 @@ Learn more:
 
 * [!DNL Adobe Experience Platform] [Segment builder – Time constraints](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#time-constraints){target="_blank"}
 
-* [Using audiences in conditions](../building-journeys/condition-activity.md#using-a-segment)
+* [Using audiences in conditions](../building-journeys/conditions.md#using-a-segment)
 
 * [inAudience() function](../building-journeys/functions/functioninaudience.md)
 
@@ -101,7 +101,7 @@ Learn more:
 
 To personalize communications based on the latest cart or browse events across multiple cart types or product views:
 
-* If you have access to [[!DNL Adobe Experience Platform] Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview){target="_blank"}, configure automated queries to extract the required data from the event, manipulate it to fit the use case, and write it back to a profile-enabled dataset for activation.
+* If you have access to [[!DNL Adobe Experience Platform] Data Distiller](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview){target="_blank"}, configure automated queries to extract the required data from the event, manipulate it to fit the use case, and write it back to a [profile-enabled dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile){target="_blank"} for activation.
 * If the abandonment data can be modeled on the profile with scalar attributes, consider using Computed attributes to capture the latest information and then reference these attributes in the journey to construct the communication. [Learn more in [!DNL Adobe Experience Platform] documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/computed-attributes/overview){target="_blank"}
 
 

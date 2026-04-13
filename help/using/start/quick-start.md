@@ -21,7 +21,7 @@ Adobe Journey Optimizer enables brands to deliver connected, contextual, and per
 Journey Optimizer offers two orchestration approaches to meet different marketing needs:
 
 * **Journeys**: Best for real-time, one-to-one engagement where each customer moves through at their own pace, triggered by behavior or events
-* **Orchestrated Campaigns**: Best for batch, one-to-many campaigns where audiences progress together through multi-step workflows on a schedule—ideal for seasonal promotions, product launches, and account-based communications
+* **Orchestrated campaigns**: Best for batch, one-to-many campaigns where audiences progress together through multi-step workflows on a schedule—ideal for seasonal promotions, product launches, and account-based communications
 
 This unified experience allows you to implement entire use cases in one place, from defining audiences and designing journeys to creating personalized content and analyzing results. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
 
@@ -117,7 +117,7 @@ As a Data Architect or Engineer, you set up and maintain the customer profile da
 * **Profile Management**: Enable datasets for Real-time Customer Profile to power personalized experiences
 * **Data Quality**: Monitor data ingestion to ensure everything flows smoothly into Journey Optimizer
 
-**Start with:** Model your first customer profile schema and configure a source connector to begin ingesting data.
+**Start with:** Review the [Get started with data management](../data/gs-data.md) overview to understand schemas, datasets, identities, and the full data setup checklist. Then model your first customer profile schema and configure a source connector to begin ingesting data.
 
 [Get Started as a Data Engineer →](path/data-engineer.md)
 
@@ -215,6 +215,7 @@ For more in-depth learning and updates, explore the following resources:
 >[!TAB Learning & Documentation]
 
 * [Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Step-by-step video tutorials for all roles
+* [Get started with data management](../data/gs-data.md) - Schemas, datasets, identities, and the data readiness checklist for Journey Optimizer
 * [Journey Use Cases Library](../building-journeys/jo-use-cases.md) - Practical examples and implementation patterns
 * [AI & Intelligent Features](ai-features.md) - Learn about AI Assistant, send-time optimization, and content generation
 * [User Interface Guide](user-interface.md) - Navigate Journey Optimizer effectively

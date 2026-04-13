@@ -21,6 +21,7 @@ The report page is displayed with the following tabs:
 * [Campaigns](#campaign)
 * [Channels](#channel)
 * [Rule sets](#rule-sets)
+* [Optimization models](#optimization-models)
 
 To learn more about Customer Journey Analytics Workspace and how to filter and analyze data, refer to [this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home).
 
@@ -151,3 +152,25 @@ The **[!UICONTROL Exclusions]** column shows the number of profiles that were ex
 +++
 
 ➡️ [Learn more about journey capping & arbitration](../conflict-prioritization/journey-capping.md)
+
+## Optimization models {#optimization-models}
+
+![](assets/sto-report.png)
+
+The **[!UICONTROL Send-Time Optimization]** tables give you insights into how your Optimized and Control Email or Push messages are performing. Use it to compare key metrics, such as sends, opens, clicks, and bounces—so you can see how each variant is doing and inform your optimization decisions.
+
+Note that metrics in this report, including **[!UICONTROL Lift]** and **[!UICONTROL Confidence]**, are calculated from **60 days** of sends and engagement.
+
++++ Learn more about Send-time optimization metrics
+
+* **[!UICONTROL Sends]**: Total number of times each message variant was sent.
+
+* **[!UICONTROL Open]**: Total number of open events recorded for the message.
+
+* **[!UICONTROL Open rate]**: The percentage of sent messages for which the profile opened the message at least once. 
+
+* **[!UICONTROL Lift]**: Percentage improvement in conversion rate for a given treatment relative to the baseline variant. Lift quantifies the magnitude of a difference; interpret it together with **[!UICONTROL Confidence]**.
+
+* **[!UICONTROL Confidence]**: Statistical strength of evidence that the Send-Time Optimized variant's open or click rate differs from the Control variant (send time assigned at random). It is computed with a two-proportion Z-test.
+
++++

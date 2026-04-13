@@ -6,7 +6,6 @@ topic: Content Management
 role: User
 level: Beginner
 hide: yes
-hidefromtoc: yes
 ---
 # Content cards report {#content-card-report}
 

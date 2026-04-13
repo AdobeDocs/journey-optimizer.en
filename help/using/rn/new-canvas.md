@@ -6,7 +6,6 @@ feature: Release Notes
 topic: Content Management
 description: New journey interface
 hide: yes
-hidefromtoc: yes
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 ---
 # Welcome to the Improved Journey Designer {#new-canvas}
@@ -74,7 +73,8 @@ For each activity within every live journey using the new model, you have access
 
 ![](assets/new-canvas6bis.png)
 
-<!--`
+<!--
+`
 With every live journey on the new model, you will be able to see two types of "last 24 hours" reporting information:
 
 * On a **new insert**, you will see:

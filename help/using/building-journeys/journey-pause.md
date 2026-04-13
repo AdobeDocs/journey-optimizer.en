@@ -77,8 +77,8 @@ When a journey is paused, profile management and activity execution depends on t
 | [Unitary Event](general-events.md)      | <ul> <li>At the first node in the canvas: The event is discarded</li><li>In other nodes: Same behavior as in a live journey, however if the event is after an <strong>Action</strong> activity and the user is paused on that action, the event is discarded. </li></ul>|
 | [Read Audience](read-audience.md)     |   Same behavior as in a live journey, with a few specificities: <ol> <li> If <strong>Pause</strong> was pressed after the <strong>Read audience</strong> activity had started, profiles which have entered the journey will continue (until the next <strong>Action</strong> activity). As journey reads audiences at a certain speed, if the complete audience has not entered yet, remaining profiles in the queue will be discarded.</li><li> For single executions: No error will be shown at resume time if the scheduled date was before the resume date. That schedule would be ignored.</li><li>For incremental journeys: <ul><li>If pause happens before the first occurence then on resume the complete audience would be played. </li><li>If pause happens, for instance, on the 4th day of a daily recurrence and journey remains paused until the 9th day then on resume all the profiles that have entered from 4th-9th would be included  </li></ul></ol>|
 | [Reaction](reaction-events.md)      | Same behavior as in a live journey, however if the reaction is after an <strong>Action</strong> activity and the user is paused on that action, the reaction event is discarded.    |
-| [Wait](wait-activity.md)             | Same behavior as in a live journey | 
-| [Condition](condition-activity.md)  | Same behavior as in a live journey |
+| [Wait](wait-activity.md)             | Same behavior as in a live journey |
+| [Optimize](optimize.md)  | Same behavior as in a live journey |
 | [Content Decision](content-decision.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Channel Action](journey-action.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
@@ -110,6 +110,15 @@ To resume a paused journey, and start listening to journey events again, follow 
 
 From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
 
+## View when a journey was paused or resumed {#view-pause-resume-info}
+
+To see when a journey was last paused or resumed, and by whom, open the journey and go to its **properties** (click the pencil icon next to the journey name). Use the **Copy technical details** button to copy technical information that includes:
+
+* The date and time of the last pause and resume
+* The display name and identifier of the user who performed the last pause and the last resume
+* Paused journey settings (pause behavior, max pause duration, auto-resume state, pause ID)
+
+This information is useful for troubleshooting, auditing, or sharing with support. For the complete list of copied fields, see [Access the properties of a journey](journey-properties.md#access-properties).
 
 ## Apply an exit criteria in a paused journey {#journey-exit-criteria}
 

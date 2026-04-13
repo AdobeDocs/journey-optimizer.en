@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create a test profile
+title: Create test profiles
 description: Learn how to create a test profile
 feature: Profiles, Test Profiles
 topic: Content Management
@@ -21,7 +21,7 @@ You can create test profiles by [uploading a CSV file](#create-test-profiles-csv
 
 You can upload a JSON file into an existing dataset. For more information, refer to the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html#add-data-to-dataset){target="_blank"}.
 
-Note that creating a test profile is similar to creating regular profiles in [!DNL Adobe Experience Platform]. For more information, refer to the [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}.
+Creating a test profile is similar to creating regular profiles in [!DNL Adobe Experience Platform]. For more information, refer to the [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}.
 
 ➡️ [Learn how to create test profiles in this video](#video)
 
@@ -29,7 +29,7 @@ Note that creating a test profile is similar to creating regular profiles in [!D
 
 To create profiles, you first need to create a schema and a dataset in Adobe [!DNL Journey Optimizer].
 
-### Create a schema
+### Create a schema {#create-schema}
 
 To **create a schema**, follow these steps:
 
@@ -42,7 +42,7 @@ To **create a schema**, follow these steps:
     ![Schema type selection showing Individual Profile option](assets/test-profiles-1.png)
 1. Enter a name for your schema and click **Finish**.
     ![Name and save schema dialog](assets/test-profiles-1-bis.png)
-1. In the **Field groups** section, on the left, click **Add** and select the appropriate field groups. Make sure you add the **Profile test details** field group.
+1. In the **Field groups** section, on the left, click **Add** and select the appropriate field groups. Make sure you add the **[!UICONTROL Profile test details]** field group.
     ![Field groups section with Add button](assets/test-profiles-1-ter.png)
     Once done, click **[!UICONTROL Add field groups]**: the list of field groups is displayed on the schema overview screen.
     ![Schema overview with field groups list](assets/test-profiles-2.png)
@@ -59,11 +59,19 @@ To **create a schema**, follow these steps:
     ![Schema properties pane with Profile option enabled](assets/test-profiles-5.png)
 1. Click **Save**.
 
->[!NOTE]
->
->For more information on schema creation, refer to the [XDM documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
+For more information about schema creation, refer to the [XDM documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#prerequisites){target="_blank"}.
 
-### Create a dataset
+>[!IMPORTANT]
+>
+>When creating or replacing a dataset for test profile ingestion, ensure that the schema has the correct identity descriptor applied to the primary identity field (e.g., `/personID`) for the intended namespace. If the identity descriptor is missing or incorrectly configured, profiles ingested into this dataset may not be flagged as test profiles (`testProfile = true`), even if the ingestion process completes successfully.
+>
+>If your test profiles are not flagged correctly after ingestion:
+>
+>1. Review the schema associated with your dataset.
+>1. Confirm that the primary identity field has the correct identity descriptor for your namespace (see steps 6–7 above).
+>1. If the descriptor is missing, update the schema to add the identity descriptor and re-ingest your data.
+
+### Create a dataset {#create-dataset}
 
 Then you need to **create the dataset** in which the profiles will be imported. Follow these steps:
 
@@ -82,7 +90,7 @@ Then you need to **create the dataset** in which the profiles will be imported. 
 >
 > For more information on dataset creation, refer to the [Catalog Service documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#getting-started){target="_blank"}.
 
-## In-product use case{#use-case-1}
+## In-product use case {#use-case-1}
 
 From [!DNL Adobe Journey Optimizer] home page, you can leverage the test profiles in-product use case. This use case facilitates the creation of test profiles used for testing journeys before publishing.
 
@@ -105,11 +113,13 @@ The following information is required:
     1. **Gender**: Test profile gender. Available values are **male**, **female** and **non_specified**
 
 After selecting the identity namespace and providing the CSV file based on the format above, select the **[!UICONTROL Run]** button at the top right. The use case might take a few minutes to complete. Once the use case completes processing and creating the test profiles, a notification will be sent to notify the user.
+
 >[!NOTE]
 >
 >Test profiles may override existing profiles. Before executing the use case make sure the CSV contains test profiles only and that it is executed against the correct sandbox.
 
-<!-- Removed as asked in DOCAC-13605 AJO Test Profiles Using a Journey should be removed
+<!--
+ Removed as asked in DOCAC-13605 AJO Test Profiles Using a Journey should be removed
 ## Turn a profile into a test profile{#turning-profile-into-test}
 
 You can turn an existing profile into a test profile: you can update profiles attributes in the same way as when you create a profile. 
@@ -148,19 +158,19 @@ Your journey will be composed of a **[!UICONTROL Read Audience]** and an **[!UIC
     > For more information on the **[!UICONTROL Update Profile]** activity, refer to [this section](../building-journeys/update-profiles.md).
 -->
 
-## Create a test profile using a csv file{#create-test-profiles-csv}
+## Create test profiles using a CSV file {#create-test-profiles-csv}
 
 In [!DNL Adobe Experience Platform], you can create profiles by uploading a csv file containing the different profile fields into your dataset. This is the easiest method.
 
 1. Create a simple csv file using a spreadsheet software.
-1. Add one column for each required field. Make sure you add the primary identity field ("personID" in our example above) and the "testProfile" field set to "true".
+1. Add one column for each required field. Make sure you add the primary identity field (`personID` in our example above) and the `testProfile` field set to `true`.
     ![CSV file with column headers including personID and testProfile](assets/test-profiles-11.png)
 1. Add one line per profile and fill in the values for each field.
     ![CSV file with sample test profile data](assets/test-profiles-12.png)
 1. Save the spreadsheet as a csv file. Make sure commas are used as separators.
 1. Browse to [!DNL Adobe Experience Platform] **Workflows**.
     ![Workflows menu in Adobe Experience Platform](assets/test-profiles-14.png)
-1. Choose **Map CSV to XDM schema**, then click **Launch**.
+1. Choose **[!UICONTROL Map CSV to XDM schema]**, then click **Launch**.
     ![Map CSV to XDM schema workflow option](assets/test-profiles-16.png)
 1. Select the dataset you want to import the profiles into. Click **Next**.
     ![Dataset selection screen for CSV import](assets/test-profiles-17.png)
@@ -183,10 +193,10 @@ Your test profiles are added and can now be used when testing a journey. Refer t
 
 You can also create test profiles via API calls. Learn more in [[!DNL Adobe Experience Platform] documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}.
 
-You must use a Profile schema that contains the "Profile test details" field group. The testProfile flag is part of this field group.
-When creating a profile, make sure you pass the value: testProfile = true.
+You must use a Profile schema that contains the **[!UICONTROL Profile test details]** field group. The `testProfile` flag is part of this field group.
+When creating a profile, make sure you pass the value: `testProfile = true`.
 
-Note that you can also update an existing profile to change its testProfile flag to "true".
+You can also update an existing profile to change its `testProfile` flag to `true`.
 
 Here is an example of an API call to create a test profile:
 

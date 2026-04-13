@@ -11,7 +11,14 @@ exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
 ---
 
-# Get started with journeys{#jo-general-principle}
+# Get started with journeys {#jo-general-principle}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_canvas"
+>title="Create a journey"
+>abstract="Use the drag-and-drop canvas to orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs" text="Create your first journey"
+
 
 [!DNL Adobe Journey Optimizer] empowers you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
 
@@ -33,16 +40,18 @@ Use [!DNL Journey Optimizer] to:
 
 ### Journeys vs Campaigns: When to use each {#journeys-vs-campaigns-intro}
 
-[!DNL Adobe Journey Optimizer] offers three approaches to reach customers: **Journeys** (1:1 real-time orchestration), **Campaigns** (simple batch or API-triggered delivery), and **Orchestrated Campaigns** (batch canvas workflows with multi-entity data).
+[!DNL Adobe Journey Optimizer] offers three approaches to reach customers: **Journeys** (1:1 real-time orchestration), **Campaigns** (simple batch or API-triggered delivery), and **Orchestrated campaigns** (batch canvas workflows with multi-entity data).
 
 **Quick decision:**
 
 * Use **Journeys** for multi-step, behavior-driven experiences where each customer progresses at their own pace
-* Use **Action/API Campaigns** for simple, scheduled or triggered message delivery to audiences
-* Use **Orchestrated Campaigns** for complex batch workflows requiring multi-entity segmentation and exact pre-send counts
+* Use **Action and API-triggered campaigns** for simple, scheduled or triggered message delivery to audiences
+* Use **Orchestrated campaigns** for complex batch workflows requiring multi-entity segmentation and exact pre-send counts
 
-<!-- waiting for DOCAC-13912
-➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability-->
+<!--
+ waiting for DOCAC-13912
+➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability
+-->
 
 ## Choose your journey type {#journey-types}
 
@@ -53,8 +62,10 @@ Use [!DNL Journey Optimizer] to:
 * **Audience Qualification journeys**: Real-time responses to audience membership changes (VIP upgrades, re-engagement)
 * **Business event journeys**: Business conditions affecting multiple customers (inventory alerts, flash sales)
 
-<!-- waiting for DOCAC-13912 
-➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix -->
+<!--
+ waiting for DOCAC-13912 
+➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix 
+-->
 
 ## Build with the journey designer {#journey-designer}
 
@@ -93,7 +104,7 @@ Use built-in channel actions for email, push, SMS/MMS, in-app, web, and more—a
 
 Branch your journey based on profile attributes, audience membership, or real-time events.
 
-[Use conditions](condition-activity.md)
+[Use conditions](conditions.md)
 :::
 
 :::
@@ -357,16 +368,17 @@ Get a visual introduction to journey components and learn the basics of building
 
 * **Campaigns (Action & API-triggered)**: Simple message delivery to audiences, executing simultaneously to all profiles either on schedule or via API trigger. Best for promotional campaigns, newsletters, transactional messages.
 
-* **Orchestrated Campaigns**: Multi-step batch workflows with complex segmentation using relational data (profiles + products/stores/bookings). All profiles processed together with exact pre-send counts. Best for seasonal promotions, product launches, campaigns requiring multi-entity data.
+* **Orchestrated campaigns**: Multi-step batch workflows with complex segmentation using relational data (profiles + products/stores/bookings). All profiles processed together with exact pre-send counts. Best for seasonal promotions, product launches, campaigns requiring multi-entity data.
 
-**Key difference**: Journeys maintain individual customer state for real-time actions; Action/API Campaigns deliver simple messages in batch; Orchestrated Campaigns provide batch workflow canvas with multi-entity segmentation capabilities.
+**Key difference**: Journeys maintain individual customer state for real-time actions; Action and API-triggered campaigns deliver simple messages in batch; Orchestrated campaigns provide batch workflow canvas with multi-entity segmentation capabilities.
 
 <!-- waiting for DOCAC-13912 - [See detailed comparison](#journeys-vs-campaigns) -->
 [Learn about Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
 
 +++
 
-<!-- Waiting for DOCAC-13912
+<!--
+ Waiting for DOCAC-13912
 +++ Which journey type should I use?
 
 Use the [decision guide](#decision-guide) or [comparison table](#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.

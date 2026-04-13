@@ -10,13 +10,13 @@ exl-id: 2b553e08-5a20-4efb-895e-c8984c52d6b5
 
 Launching your first Orchestrated campaign in Adobe Journey Optimizer empowers you to create seamless, personalized customer experiences that adapt to each individual’s journey. This guide walks you through every step, from setting up your campaign and designing its flow using an intuitive visual canvas, to testing, launching, monitoring, and analyzing its performance. You’ll learn how to align activities, fine-tune timing, and leverage actionable insights to optimize results. Whether you're scheduling one-time messages or building advanced retargeting strategies, each topic is designed to build your confidence and help you bring your marketing vision to life.
 
-## Launch Your First Orchestrated Campaign
+## Launch Your First Orchestrated campaign
 
 :::: landing-cards-container
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
-Step-by-Step Guide to Creating an Orchestrated Campaign
+Step-by-Step Guide to Creating an Orchestrated campaign
 
 Learn the key steps to create, manage, and analyze an Orchestrated campaign, including advanced retargeting techniques.
 
@@ -26,7 +26,7 @@ Learn the key steps to create, manage, and analyze an Orchestrated campaign, inc
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-Create and Schedule an Orchestrated Campaign
+Create and Schedule an Orchestrated campaign
 
 Discover how to create and configure campaign properties, execution schedules, and ensure optimal performance.
 
@@ -56,7 +56,7 @@ Learn how to test, publish, and monitor your Orchestrated campaigns for successf
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
 
-Reporting for Orchestrated Campaigns
+Reporting for Orchestrated campaigns
 
 Access actionable insights and performance metrics with detailed reports for your Orchestrated campaigns.
 

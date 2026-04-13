@@ -20,7 +20,7 @@ This change is being rolled out to **existing customer sandboxes** in a subseque
 
 ## Impacted datasets {#datasets}
 
-The table below lists all impacted datasets and their respective Time-To-Live in the data lake and the profile store.
+The table below lists all impacted datasets and their respective Time-To-Live in the data lake and the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
 
 |Dataset|Data Lake TTL|Profile Store TTL|
 |------|-----|-----|
@@ -29,7 +29,7 @@ The table below lists all impacted datasets and their respective Time-To-Live in
 |AJO Push Tracking Experience Event Dataset|13 months|90 days|
 |AJO Surfaces Dataset|13 months|n/a|
 |AJO Inbound Activity Event Dataset|13 months|90 days|
-|AJO Email BCC Feedback Event Dataset|13 months|n/a|
+|AJO Secondary Recipient Feedback Event Dataset|13 months|n/a|
 |Entity Event Dataset|13 months|n/a|
 |Journey Step Events|13 months|n/a|
 |ODE DecisionEvents - prod decisioning|13 months|n/a|
@@ -129,6 +129,8 @@ Customers who require longer retention should consider exporting relevant data f
 +++Will customers be notified before the TTL is enforced on existing sandboxes?
 
 Yes, impacted customers will be notified in advance, and the product team will work with them to ensure a smooth transition.
+
++++
 
 +++Can I delete Journey Optimizer system-generated datasets?
 

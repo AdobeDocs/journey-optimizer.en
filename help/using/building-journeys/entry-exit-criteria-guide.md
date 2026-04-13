@@ -34,7 +34,7 @@ This guide provides practical guidance, real-world examples, and best practices 
 
 * **Success metric achievement** - Profiles exit when they complete the [journey objective](success-metrics.md), such as making a purchase or downloading an app, eliminating unnecessary follow-up communications.
 
-* **Condition-based** - Profiles exit when [specific conditions](condition-activity.md) are met, like inactivity over a set period or changes in profile attributes.
+* **Condition-based** - Profiles exit when [specific conditions](conditions.md) are met, like inactivity over a set period or changes in profile attributes.
 
 * **Event-based** - Profiles exit when [specific events occur](../event/about-events.md), such as subscription cancelation or product return.
 
@@ -96,11 +96,11 @@ Gather insights about customer satisfaction and product performance by requestin
 
 * **[Event-Based Triggers](../event/about-events.md)**: Use events like "profile creation," "transaction completed," or custom events to kick off a journey. [Configure events](../event/about-creating.md) in **[!UICONTROL Administration]** > **[!UICONTROL Events]** and define [event schema and fields](../event/experience-event-schema.md). Then add the event from the **[!UICONTROL Events]** palette in the [journey designer](using-the-journey-designer.md).
 
-* **[Audience-Based Entry](read-audience.md)**: Target journeys to profiles who belong to specific audiences, either as a one-time batch or on a recurring schedule. [Create audiences](../audience/creating-a-segment-definition.md) in the **[!UICONTROL Audiences]** menu, then add a **[!UICONTROL Read Audience]** activity and [configure the schedule](journey-properties.md#schedule).
+* **[Audience-Based Entry](read-audience.md)**: Target journeys to profiles who belong to specific audiences, either as a one-time batch or on a recurring schedule. [Create audiences](../audience/creating-a-segment-definition.md) in the **[!UICONTROL Audiences]** menu, then add a **[!UICONTROL Read Audience]** activity and [configure the schedule](journey-properties.md#schedule). After entry, use conditions to [segment, exclude, or merge branches](read-audience.md#audience-targeting-in-journeys).
 
 * **[Audience Qualification Entry](audience-qualification-events.md)**: Trigger journeys when profiles qualify for or exit from specific audiences in real-time. Define [streaming audiences](../audience/about-audiences.md), add an **[!UICONTROL Audience Qualification]** event from the **[!UICONTROL Events]** palette, and choose the trigger type.
 
-* **[Attribute Filters](condition-activity.md)**: Refine entry criteria by combining events or audiences with profile attributes and context using AND/OR logic. Use [conditions](conditions.md) to reference [profile attributes](../audience/get-started-profiles.md), events, or [external data](../datasource/about-data-sources.md).
+* **[Attribute Filters](conditions.md)**: Refine entry criteria by combining events or audiences with profile attributes and context using AND/OR logic. Use [conditions](conditions.md) to reference [profile attributes](../audience/get-started-profiles.md), events, or [external data](../datasource/about-data-sources.md).
 
 * **[Time Windows and Scheduling](journey-properties.md#schedule)**: Set temporal constraints to keep journeys timely and relevant. Configure [schedules on Read Audience activities](read-audience.md), use [Wait activities](wait-activity.md), and add [time-based conditions](conditions.md) to control timing.
 
@@ -116,7 +116,7 @@ Gather insights about customer satisfaction and product performance by requestin
 
 * **[Success Metric Achievement](journey-properties.md#exit-criteria)**: Define success metrics (like purchase or subscription) and exit profiles upon completion. Click **[!UICONTROL Show exit criteria]** icon, select **[!UICONTROL Add exit criteria]**, and choose an [Event](../event/about-events.md) or [Audience](../audience/about-audiences.md) as the exit trigger.
 
-* **[Inactivity Timeouts](wait-activity.md)**: Exit profiles if no engagement occurs within a set timeframe. Use [Exit Criteria](journey-properties.md#exit-criteria) with audiences that check last engagement date, set [Wait activities](wait-activity.md) with defined durations, and use [conditions](condition-activity.md) to check for activity.
+* **[Inactivity Timeouts](wait-activity.md)**: Exit profiles if no engagement occurs within a set timeframe. Use [Exit Criteria](journey-properties.md#exit-criteria) with audiences that check last engagement date, set [Wait activities](wait-activity.md) with defined durations, and use [conditions](conditions.md) to check for activity.
 
 * **[Re-entry Rules](entry-management.md)**: Decide if profiles can re-enter the journey multiple times or only once, depending on your campaign strategy. Configure **[!UICONTROL Re-entrance]** settings in journey **[!UICONTROL Properties]** to set wait periods, enable forced re-entrance, or use [supplemental identifiers](supplemental-identifier.md) for context-specific re-entrance.
 
@@ -206,4 +206,4 @@ Start by clearly mapping your customer triggers and exit points, test thoroughly
 
 **Related capabilities**
 
-[Audience qualification events](audience-qualification-events.md) | [Success metrics and goals](success-metrics.md) | [Conflict management](../conflict-prioritization/conflicts.md) | [Frequency capping](../conflict-prioritization/rule-sets.md) | [Testing journeys](testing-the-journey.md) | [Condition activity](condition-activity.md) | [Reaction events](reaction-events.md) | [Wait activity](wait-activity.md)
+[Audience qualification events](audience-qualification-events.md) | [Success metrics and goals](success-metrics.md) | [Conflict management](../conflict-prioritization/conflicts.md) | [Frequency capping](../conflict-prioritization/rule-sets.md) | [Testing journeys](testing-the-journey.md) | [Optimize activity](optimize.md) | [Reaction events](reaction-events.md) | [Wait activity](wait-activity.md)

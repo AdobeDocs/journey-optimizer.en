@@ -63,6 +63,16 @@ context.journey.events.<event_ID>.<fieldPath>
 * `<event_ID>`: The unique ID of your event as configured in the journey
 * `<fieldPath>`: The path to the field or array within your event schema
 
+>[!NOTE]
+>
+>**Numeric event IDs require backticks.** If your event ID is a number (for example, `1697323153`), wrap it in backticks (`` ` ``) in your expression path. Without backticks, the PQL parser raises a syntax error.
+>
+>```handlebars
+>context.journey.events.`1697323153`.fieldName
+>```
+>
+>For more details and a complete example including date formatting from event timestamps, see [Formatting a timestamp from a context event](../personalization/functions/dates.md#format-date).
+
 ### Example: Cart items from an event
 
 If your [event schema](../event/experience-event-schema.md) includes a `productListItems` array (standard [XDM format](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/product-list-item.html){target="_blank"}), you can display cart contents as detailed in the sample below.
@@ -239,10 +249,6 @@ To display dynamic benefits based on loyalty status, see the below example.
 ## Iterate over dataset lookup results {#dataset-lookup}
 
 The [Dataset Lookup activity](../building-journeys/dataset-lookup.md) allows you to retrieve data from [Adobe Experience Platform datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"} during journey runtime. The enriched data is stored as an array and can be iterated over in your messages.
-
->[!AVAILABILITY]
->
->The Dataset Lookup activity is only available for a limited set of organizations. To gain access, contact your Adobe representative.
 
 Learn more about configuring the Dataset Lookup activity in [this section](../building-journeys/dataset-lookup.md). Dataset lookup is particularly powerful when combined with event data - see [Example: Event data enriched with dataset lookup](#combine-sources) for a practical use case.
 

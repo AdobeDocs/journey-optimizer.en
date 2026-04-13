@@ -9,7 +9,6 @@ level: Beginner
 keywords: journey types, unitary, read audience, audience qualification, business event, comparison, decision guide, choose, selection, real-time, scheduled, batch, event-triggered
 version: Journey Orchestration
 hide: yes
-hidefromtoc: yes
 exl-id: 0c894dc1-76b6-4b33-baf8-eaf6686f7d38
 ---
 # Journey types and selection guide {#journey-types-selection}
@@ -124,34 +123,34 @@ Not all features are available for all journey types. Use this matrix to underst
 
 | Feature / Capability | Unitary | Read Audience | Audience Qualification | Business event |
 |---------------------|:-------:|:-------------:|:----------------------:|:--------------:|
-| **Entry mechanisms** |
+| **Entry mechanisms** | | | | |
 | Event-triggered entry | ✅ | ❌ | ❌ | ✅ |
 | Scheduled entry | ❌ | ✅ | ❌ | ❌ |
 | Audience-based entry | ❌ | ✅ | ✅ | ❌ |
-| **Orchestration features** |
+| **Orchestration features** | | | | |
 | Wait activities | ✅ | ✅ | ✅ | ✅ |
 | Condition activities | ✅ | ✅ | ✅ | ✅ |
 | Custom actions | ✅ | ✅ | ✅ | ✅ |
 | Read audience activity (inside journey) | ✅ | ✅ | ✅ | ✅ |
 | Audience qualification activity | ✅ | ✅ | ✅ | ✅ |
 | Jump activity | ✅ | ✅ | ✅ | ✅ |
-| **Profile management** |
+| **Profile management** | | | | |
 | Profile re-entrance | ✅ Configurable | ❌ Once per execution | ✅ Configurable | ✅ Per event |
 | Namespace configuration | ✅ Required | ✅ Optional | ✅ Required | ✅ Required |
 | Profile cap | ✅ | ✅ | ✅ | ✅ |
-| **Testing & optimization** |
+| **Testing & optimization** | | | | |
 | Test mode | ✅ | ✅ | ✅ | ✅ |
 | Dry run | ✅ | ✅ | ✅ | ✅ |
 | Path experiments (A/B testing) | ✅ | ✅ | ✅ | ❌ |
 | Send-time optimization | ✅ | ✅ | ✅ | ✅ |
-| **Channels** |
+| **Channels** | | | | |
 | Email | ✅ | ✅ | ✅ | ✅ |
 | Push notifications | ✅ | ✅ | ✅ | ✅ |
 | SMS / MMS | ✅ | ✅ | ✅ | ✅ |
 | In-app messages | ✅ | ✅ | ✅ | ✅ |
 | Web | ✅ | ✅ | ✅ | ✅ |
 | Content cards | ✅ | ✅ | ✅ | ✅ |
-| **Advanced capabilities** |
+| **Advanced capabilities** | | | | |
 | Incremental read | ❌ | ✅ | ❌ | ❌ |
 | Export audience | ✅ | ✅ | ✅ | ✅ |
 | Time zone management | ✅ | ✅ | ✅ | ✅ |

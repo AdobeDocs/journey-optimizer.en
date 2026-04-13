@@ -104,7 +104,6 @@ If you get an error upon submitting the email configuration, it means that the M
 ## CC email {#cc-email}
 
 You can add a visible CC (carbon copy) recipient to emails sent by [!DNL Journey Optimizer], so that an additional address receives a copy and is visible to the primary recipient. The CC field is optional and supports personalization. [Learn more](../configuration/cc-email-field.md)
-
 -->
 
 ## Sending to suppressed email addresses {#send-to-suppressed-email-addresses}
