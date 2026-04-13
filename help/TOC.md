@@ -21,7 +21,7 @@ solution: Journey Optimizer
     + [2024](using/rn/release-notes-2024.md)
     + {hide-from-toc} [2023](using/rn/release-notes-2023.md)
     + {hide-from-toc} [2022](using/rn/release-notes-2022.md)
-    + {hide-from-toc} [2021](using/rn/release-notes-2021.md)
+    + [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
@@ -498,7 +498,6 @@ solution: Journey Optimizer
     + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
-    + {hide-from-toc} [Work with AI assistants via MCP](using/integrations/ajo-mcp.md)
     + {hide-from-toc} [Work with Integrations](using/integrations/external-sources.md)
   + AI Assistant for content generation {#ai-assistant}
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
@@ -508,6 +507,7 @@ solution: Journey Optimizer
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
+    + [AI Assistant for Personalization Expressions](using/content-management/generative-personalization-expressions.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)
     + Brands {#brands}
       + [Brands](/help/rp_landing_pages/brands-landing-page.md)
