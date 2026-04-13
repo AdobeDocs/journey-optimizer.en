@@ -276,7 +276,6 @@ solution: Journey Optimizer
         + [Use email templates](using/email/use-email-templates.md)
         + [Leverage email themes](using/email/apply-email-themes.md)
         + [Attach PDF files to your emails](using/email/pdf-attachments.md)
-        + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
       + Design your content {#add-content}
         + [Design your content](/help/rp_landing_pages/add-content-landing-page.md)
         + [Use content components](using/email/content-components.md)
@@ -286,6 +285,7 @@ solution: Journey Optimizer
         + [Manage the text version](using/email/text-version-email.md)
         + [Optimize email text for AI inboxes](using/email/llm-email-optimizer.md)
         + [Add metadata](using/email/email-metadata.md)
+        + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
       + Edit style {#edit-style}
         + [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)
         + [Get started with email style](using/email/get-started-email-style.md)
