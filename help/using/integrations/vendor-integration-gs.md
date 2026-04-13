@@ -8,11 +8,21 @@ topic: Content Management
 role: User
 level: Intermediate
 hide: yes
-hidefromtoc: yes
 keywords: integration, vendor, third-party
 ---
 
 # Get started with Vendors integration {#vendor-integration}
+
+>[!BEGINSHADEBOX]
+
+Table of content:
+
+* [Work with Integrations](using/integrations/external-sources.md)
+* **[Get started with Vendors integration](using/integrations/vendor-integration.md)**
+* [Available vendors](using/integrations/vendor-integration.md)
+* [FAQ](using/integrations/vendor-integration-faq.md) 
+
+>[!ENDSHADEBOX]
 
 You can use **Integrations** in Adobe Journey Optimizer to call **external systems over HTTP** when each system exposes an **API endpoint** that suits your use case and is compatible with how Integrations issues requests and consumes responses. For complete workflow, see [Work with Integrations](external-sources.md).
 

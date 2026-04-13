@@ -13,6 +13,17 @@ exl-id: 104f283e-f6a5-431b-919a-d97b83d19632
 ---
 # Work with Integrations {#external-sources}
 
+>[!BEGINSHADEBOX]
+
+Table of content:
+
+* **[Work with Integrations](using/integrations/external-sources.md)**
+* [Get started with Vendors integration](using/integrations/vendor-integration.md)
+* [Available vendors](using/integrations/vendor-integration.md)
+* [FAQ](using/integrations/vendor-integration-faq.md) 
+
+>[!ENDSHADEBOX]
+
 ## Overview
 
 The **Integrations** feature enables seamless integration of third-party data sources into Adobe Journey Optimizer. This feature streamlines the integration of external data and content sources into your campaigns, empowering you to deliver highly personalized and dynamic messaging across multiple channels.

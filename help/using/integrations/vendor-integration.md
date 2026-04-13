@@ -8,10 +8,20 @@ topic: Content Management
 role: User
 level: Intermediate
 hide: yes
-hidefromtoc: yes
 keywords: integration, vendor, third-party
 ---
 # Available vendors
+
+>[!BEGINSHADEBOX]
+
+Table of content:
+
+* [Work with Integrations](using/integrations/external-sources.md)
+* [Get started with Vendors integration](using/integrations/vendor-integration.md)
+* **[Available vendors](using/integrations/vendor-integration.md)**
+* [FAQ](using/integrations/vendor-integration-faq.md) 
+
+>[!ENDSHADEBOX]
 
 ## Content and CMS {#content-and-cms}
 

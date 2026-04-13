@@ -9,9 +9,19 @@ role: User
 level: Intermediate
 keywords: integration, FAQ, external data, personalization
 hide: yes
-hidefromtoc: yes
 ---
 # Frequently asked questions about Integrations {#vendor-integration-faq}
+
+>[!BEGINSHADEBOX]
+
+Table of content:
+
+* [Work with Integrations](using/integrations/external-sources.md)
+* [Get started with Vendors integration](using/integrations/vendor-integration.md)
+* [Available vendors](using/integrations/vendor-integration.md)
+* **[FAQ](using/integrations/vendor-integration-faq.md)** 
+
+>[!ENDSHADEBOX]
 
 Below are frequently asked questions about **Integrations** in Adobe Journey Optimizer.
 
