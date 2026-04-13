@@ -85,3 +85,4 @@ No. The MCP server is designed for both marketing and technical personas. Market
 
 When you submit a prompt, the AI assistant may send relevant context (including [!DNL Adobe Journey Optimizer] data returned by the MCP server) to its model for processing. Review the privacy and data-handling policies of your AI assistant provider before connecting to production data.
 +++
+
