@@ -9,13 +9,13 @@ exl-id: 0c2f95ce-28a0-480c-9829-b7e4975b6340
 ---
 # Optimize email text for AI inboxes {#email-text-optimizer}
 
-[!DNL Adobe Journey Optimizer] comes with an email-channel capability that helps you structure the [text version](../email/text-version-email.md) of your messages for improved AI-assisted inbox experiences—such as [!DNL Apple Intelligence] and [!DNL Google Gemini] in [!DNL Gmail]—so they can answer questions and summarize mail based on your content more accurately, with better results.
+[!DNL Adobe Journey Optimizer] comes with an email-channel capability that helps you structure the [text version](text-version-email.md) of your messages for improved AI-assisted inbox experiences—such as [!DNL Apple Intelligence] and [!DNL Google Gemini] in [!DNL Gmail]—so they can answer questions and summarize mail based on your content more accurately, with better results.
 
 >[!NOTE]
 >
 >This capability changes plain text only, not the HTML version of your email content.
 
-With this email text optimizer, you can ensure that the plain text version of your email content is enhanced for AI-assisted inbox experiences, so that the information you provide to the AI features of these email inbox providers is exactly the one which you want to provide.
+You can use this capability to refine plain text so AI-assisted inbox experiences are more likely to surface the offers, calls to action, and details you intend—rather than thin auto-generated text or unrelated context.
 
 ## How it works {#how-it-works}
 
@@ -47,15 +47,15 @@ To prevent these issues, [!DNL Journey Optimizer] rewrites the plain text so tha
 
 >[!IMPORTANT]
 >
->Before starting using this capability, read out related [Risks and limitations](#inbox-ai-risks).
+>Before you use this capability, read the related [Risks and limitations](#inbox-ai-risks).
 >
 >To access this feature, you must agree to a user agreement which displays the first time you use Generative AI in [!DNL Journey Optimizer]. For more information, read the [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html){target="_blank"}.
 
 To optimize the plain text version of your email for AI inboxes with [!DNL Journey Optimizer], follow the steps below.
 
-1. Open your email in the [Email Designer](../email/content-from-scratch.md) (from a campaign, journey, or template, depending on your workflow).
+1. Open your email in the [Email Designer](content-from-scratch.md) (from a campaign, journey, or template, depending on your workflow).
 
-1. Select the **[!UICONTROL Plain text]** icon to open the text version of your email. [Learn more](../email/text-version-email.md)
+1. Select the **[!UICONTROL Plain text]** icon to open the text version of your email. [Learn more](text-version-email.md)
 
     ![Select the Plain text icon to open the text version of your email](assets/text-optimizer-text-icon.png){zoomable="yes"}
 
@@ -65,7 +65,7 @@ To optimize the plain text version of your email for AI inboxes with [!DNL Journ
 
     >[!NOTE]
     >
-    >Upon clicking the **[!UICONTROL Optimize for AI Inbox]** button, the **[!UICONTROL Sync with HTML]** option is automatically disabled. [Learn more](../email/text-version-email.md#plain-text-custom)
+    >Upon clicking the **[!UICONTROL Optimize for AI Inbox]** button, the **[!UICONTROL Sync with HTML]** option is automatically disabled. [Learn more](text-version-email.md#plain-text-custom)
 
 1. If this is the first time you are using Generative AI in [!DNL Journey Optimizer], you will be asked to agree to the user agreement. To learn more, check out the [Adobe Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html){target="_blank"}.
 
@@ -79,7 +79,7 @@ To optimize the plain text version of your email for AI inboxes with [!DNL Journ
 
     >[!NOTE]
     >
-    >The email text optimizer updates the plain text body only. It does not change your HTML design, layout, or images.
+    >**Optimize email text for AI inboxes** updates the plain text body only. It does not change your HTML design, layout, or images.
 
 1. You can switch back to the HTML version of your email at any time by clicking the **[!UICONTROL Switch to Desktop view]** icon. Your changes in the text version are preserved.
 
@@ -97,12 +97,12 @@ The Optimize email text for AI inboxes capability helps you prepare plain text f
 
 * **Privacy, compliance, and data use** — Inbox AI may process message content on provider infrastructure subject to that provider's privacy policy, retention, and regional rules. Organizations in regulated industries should assess whether recipient use of such features affects their obligations, independent of how the email was authored in [!DNL Journey Optimizer].
 
-* **Brand and legal exposure** — Incorrect or incomplete AI summaries can still create customer confusion or disputes about promotions, terms, or opt-out language. The optimizer improves the text layer you supply; it does not ensure that a third party's model will reproduce it faithfully.
+* **Brand and legal exposure** — Incorrect or incomplete AI summaries can still create customer confusion or disputes about promotions, terms, or opt-out language. **Optimize email text for AI inboxes** improves the text layer you supply; it does not ensure that a third party's model will reproduce it faithfully.
 
-* **[!UICONTROL Optimize for AI inbox]** in [!DNL Journey Optimizer] — The authoring-time action in the Email Designer is a separate system from end-user inbox assistants. Always review generated plain text before send.
+* **[!UICONTROL Optimize for AI Inbox]** in [!DNL Journey Optimizer] — The authoring-time control in the Email Designer is separate from end-user inbox assistants. Always review generated plain text before send.
 
 ## Related topics {#related-topics}
 
-* [Manage the text version of an email](../email/text-version-email.md)
-* [Get started with email design](../email/get-started-email-design.md)
-* For Adobe generative features more broadly, see [Get started with AI Assistant to create content](gs-generative.md).
+* [Manage the text version of an email](text-version-email.md)
+* [Get started with email design](get-started-email-design.md)
+* For Adobe generative features more broadly, see [Get started with AI Assistant to create content](../content-management/gs-generative.md).

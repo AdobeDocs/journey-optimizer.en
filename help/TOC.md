@@ -236,7 +236,6 @@ solution: Journey Optimizer
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
     + {hide-from-toc} [Auto-generation of content variants](using/test-approve/simulate-sample-input-generated.md)
     + [Email Spam report](using/content-management/spam-report.md)
-    + [LLM email optimizer](using/content-management/llm-email-optimizer.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
     + [Get started with approvals](using/test-approve/gs-approval.md)
@@ -285,6 +284,7 @@ solution: Journey Optimizer
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Manage the text version](using/email/text-version-email.md)
+        + [Optimize email text for AI inboxes](using/email/llm-email-optimizer.md)
         + [Add metadata](using/email/email-metadata.md)
       + Edit style {#edit-style}
         + [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)

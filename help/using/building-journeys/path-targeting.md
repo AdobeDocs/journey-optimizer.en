@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: targeting, rules, journey, path, optimization, personalization
 exl-id: b30ce5c9-a0e2-4601-97a3-5bec648368e4
+badge: label="Limited Availability" type="Informative"
 ---
 # Leverage path targeting {#targeting}
 
