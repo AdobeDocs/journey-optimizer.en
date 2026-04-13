@@ -125,6 +125,14 @@ Because of this model, release notes are updated between monthly releases. For f
 
 #### Journey Path Optimization
 
+#### Email design
+
+* **Advanced HTML editor for email content** - Advanced HTML mode lets you edit the HTML source of your content in the Email Designer, add advanced expressions (such as conditions) in the source, and toggle between HTML view and Desktop view without losing your changes.
+
+  Previously available for email content templates only, this capability is now deployed to **email** content in the Email Designer (for example, emails authored in journeys and campaigns), in addition to email content templates. It is currently in Limited Availability — contact your Adobe representative to gain access. [Read more](../email/email-expert-mode.md)
+
+  Availability date: April 9, 2026
+
 * **Experiment type** - You can now choose between A/B experiment (fixed split at the start) or Multi-armed bandit (automatic split with weekly weight updates) when configuring a path experiment. [Read more](../building-journeys/path-experimentation.md)
 
   Availability date: April 7, 2026
@@ -298,7 +306,7 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <p>Advanced HTML mode for email content templates lets you edit the HTML source of your content in the Email Designer, add advanced expressions (such as conditions) in the source, and toggle between HTML view and Desktop view without losing your changes.</p>
 <p>This capability is available in content templates for the Email channel only. It is currently in Limited Availability — contact your Adobe representative to gain access.</p>
 <p><img src="assets/do-not-localize/expert-mode.gif"/></p>
-<p>For more information, refer to the <a href="../content-management/email-template-expert-mode.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../email/email-expert-mode.md">detailed documentation</a>.</p>
 <p>Availability date: March 10, 2026</p>
 </td>
 </tr>
