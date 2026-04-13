@@ -15,6 +15,12 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## April 2026 {#april-2026}
 
+* The **Start and monitor Orchestrated campaigns** documentation has been updated with a new section detailing the internal publication-time execution sequence, along with a campaign lifecycle status table, a pre-publication checklist, and a sending confirmation warning for non-recurring campaigns. [Read more](../orchestrated/start-monitor-campaigns.md#publication-sequence)
+
+* The **Save audience** activity documentation has been updated with a note clarifying that Save Audience activities always execute before message activities at publication time. [Read more](../orchestrated/activities/save-audience.md)
+
+* Three new Q&As have been added to the **Orchestrated campaigns FAQ**: what happens internally at publication time, a 7-point checklist of reasons why messages may not send after publishing, and how profile snapshot lookup differs from real-time profile resolution. [Read more](../orchestrated/orchestrated-campaigns-faq.md)
+
 * A new **[Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached)** section has been added to the journey troubleshooting documentation, explaining the `maxInstanceStackEventsReached` discard reason, when it occurs, and how to mitigate it. The guardrails and step event field list pages have also been updated accordingly.
 
 * The **Leverage fragments in decision policies** documentation now includes guardrail notes for the **Email** channel: **[!UICONTROL Simulate content]** does not display expression fragments from the decision item, while **[!UICONTROL Send proof]** and activated campaigns do. The page also states that **[!UICONTROL Visual fragments]** cannot be assigned to a decision item — only **expression fragments** are supported in this context. [Read more](../experience-decisioning/fragments-decision-policies.md)
