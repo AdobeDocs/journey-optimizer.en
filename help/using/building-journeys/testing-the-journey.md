@@ -25,7 +25,7 @@ Only test profiles can enter a journey in test mode. You can either create new t
 
 Adobe Journeys Optimizer offers two ways to test and validate your journey:
 
-* **[Simulation](simulate-journey.md#simulated-users)**: Set the journey to **[!UICONTROL Simulation]** and use simulated users (temporary profiles you create or generate on the fly without pre-created profiles in Adobe Experience Platform).
+* **[Simulation](simulate-journey.md#test-users)**: Set the journey to **[!UICONTROL Simulation]** and use simulated users (temporary profiles you create or generate on the fly without pre-created profiles in Adobe Experience Platform).
 
 * **[Test mode](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
