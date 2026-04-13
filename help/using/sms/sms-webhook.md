@@ -380,6 +380,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
     "inboundNumber": "{{inboundNumber}}"
     }
     ```
+
     +++
 
 1. When your JSON file is created, click **[!UICONTROL View payload editor]**, then copy and paste your JSON payload into the editor and save it.
