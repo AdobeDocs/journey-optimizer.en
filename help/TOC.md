@@ -273,10 +273,10 @@ solution: Journey Optimizer
         + [Design content from scratch](using/email/content-from-scratch.md)
         + [Import your content](using/email/existing-content.md)
         + [Code your own content](using/email/code-content.md)
-        + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
         + [Use email templates](using/email/use-email-templates.md)
         + [Leverage email themes](using/email/apply-email-themes.md)
         + [Attach PDF files to your emails](using/email/pdf-attachments.md)
+        + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
       + Design your content {#add-content}
         + [Design your content](/help/rp_landing_pages/add-content-landing-page.md)
         + [Use content components](using/email/content-components.md)
