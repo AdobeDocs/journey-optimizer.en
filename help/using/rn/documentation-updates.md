@@ -19,7 +19,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Save audience** activity documentation has been updated with a note clarifying that Save Audience activities always execute before message activities at publication time. [Read more](../orchestrated/activities/save-audience.md)
 
-* Three new Q&As have been added to the **Orchestrated campaigns FAQ**: what happens internally at publication time, why messages may not send after publishing, and how profile snapshot lookup differs from real-time profile resolution. [Read more](../orchestrated/orchestrated-campaigns-faq.md)
+* Three new Q&As have been added to the **Orchestrated campaigns FAQ**: what happens internally at publication time, a 7-point checklist of reasons why messages may not send after publishing, and how profile snapshot lookup differs from real-time profile resolution. [Read more](../orchestrated/orchestrated-campaigns-faq.md)
 
 * A new **[Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached)** section has been added to the journey troubleshooting documentation, explaining the `maxInstanceStackEventsReached` discard reason, when it occurs, and how to mitigate it. The guardrails and step event field list pages have also been updated accordingly.
 
