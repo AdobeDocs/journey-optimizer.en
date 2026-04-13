@@ -8,7 +8,6 @@ topic: Content Management
 role: User, Developer
 level: Intermediate, Experienced
 hide: yes
-hidefromtoc: yes
 keywords: deliverability, journey, use case, email, reputation
 exl-id: 83d1b68d-011a-4109-b5f0-6ca1ade2944d
 version: Journey Orchestration

@@ -44,6 +44,10 @@ A landing page URL might use a query parameter such as `token` whose value is a 
 
 Before being able to use the URL parameter encryption helper, you need to create a key. To do so, follow the steps below.
 
+>[!NOTE]
+>
+>Currently there are no specific permissions to access and manage keys. Roles that grant access to the **[!UICONTROL Configurations]** section under **[!UICONTROL Administration]** also grant access to the key registry. However, specific permissions are planned for a future release.
+
 <!--
 >[!IMPORTANT]
 >

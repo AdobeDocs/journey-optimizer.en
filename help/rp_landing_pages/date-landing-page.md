@@ -6,7 +6,6 @@ description: Date
 redpen-status: CREATED_||_2025-08-11_20-14-40
 exl-id: 38bf1898-9de0-470d-abd6-a9240e83e87f
 hide: yes
-hidefromtoc: yes
 ---
 # Date{#section-overview}
 

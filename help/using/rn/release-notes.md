@@ -76,7 +76,7 @@ Because of this model, release notes are updated between monthly releases. For f
 <p>Adobe Journey Optimizer now includes a new capability that ensures your emails are optimally structured for AI-powered inboxes such as Apple Intelligence and Google Gemini in Gmail.</p>
 <p>As AI assistants increasingly control how recipients read and act on email, this feature helps you author content that performs well across downstream AI tasks including summarization, triage, prioritization, and intent extraction.</p>
 <p><img src="assets/do-not-localize/text-optimizer.gif"></p>
-<p>For more information, refer to the <a href="../content-management/llm-email-optimizer.md">detailed documentation</a>.</p>
+<p>For more information, refer to <a href="../email/llm-email-optimizer.md">Optimize email text for AI inboxes</a>.</p>
 <p>Availability date: April 3, 2026</p>
 </td>
 </tr>
@@ -185,23 +185,6 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><img src="assets/do-not-localize/image-converter.gif"></p>
 <p>For more information, refer to the <a href="../content-management/image-to-html.md">detailed documentation</a>.</p>
-<p>Availability date: March 31, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th><strong>Inbox</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Inbox</strong> is a mobile functionality, available with Content Cards, that enables customers to create a centralized location within their app or website to display messages sent to their users. This extends the lifetime of marketing communications by ensuring messages remain accessible even after they are dismissed.</p>
-<p><img src="assets/do-not-localize/inbox.gif"/></p>
-<p>For more information, refer to the <a href="../inbox/inbox-gs.md">detailed documentation</a>.</p>
 <p>Availability date: March 31, 2026</p>
 </td>
 </tr>
@@ -458,6 +441,10 @@ Improvements coming with this release are listed below.
   * **Existing users**: Only the display name is updated. The underlying table name remains unchanged.
   * **New users and sandboxes**: Both the display name and the table name reflect the new name.
   * **Existing users with new sandboxes**: Both the display name and the table name are updated to the new name.
+
+  >[!NOTE]
+  >
+  >New datasets show the new name immediately. For older dataset names, backfill and reconciliation proceed gradually and may take several weeks to complete.
 
   Availability date: March 2, 2026
 

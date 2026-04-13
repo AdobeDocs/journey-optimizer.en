@@ -6,7 +6,6 @@ description: Learn how to access and use Adobe Experience Manager Content Adviso
 role: User
 level: Beginner, Intermediate
 hide: yes
-hidefromtoc: yes
 exl-id: 842d69e3-be7f-4a81-8161-6c6ecd571f95
 ---
 # Work with Adobe Experience Manager Content Advisor {#aem-content-advisor}

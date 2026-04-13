@@ -9,7 +9,6 @@ role: User
 level: Beginner
 keywords: integration
 hide: yes
-hidefromtoc: yes
 exl-id: 104f283e-f6a5-431b-919a-d97b83d19632
 ---
 # Work with Integrations {#external-sources}

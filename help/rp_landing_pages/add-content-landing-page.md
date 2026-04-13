@@ -64,6 +64,16 @@ Create and customize the plain text version of your email for recipients who can
 :::
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/message.svg)
+
+Optimize email text for AI inboxes
+
+Structure the plain text layer of your email so AI-assisted inbox clients can better summarize and extract your offers and calls to action.
+
+[Optimize email text for AI inboxes](../using/email/llm-email-optimizer.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 Add Metadata

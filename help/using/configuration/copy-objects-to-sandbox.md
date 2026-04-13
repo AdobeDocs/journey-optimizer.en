@@ -66,7 +66,11 @@ Journey Optimizer allows the export of journeys, custom actions, content templat
 
 +++ Campaigns
 
-Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. However, the following items are **not** copied:
+>[!NOTE]
+>
+>The campaign sandbox copy information in this subsection applies to **Action** campaigns and **API-triggered** campaigns. **Orchestrated** campaigns are not supported for copy between sandboxes.
+
+For **Action** and **API-triggered** campaigns, campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. However, the following items are **not** copied:
 
 * Multi-lingual variants and language settings,
 * Business rules,
