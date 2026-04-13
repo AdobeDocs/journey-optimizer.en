@@ -102,6 +102,25 @@ Because of this model, release notes are updated between monthly releases. For f
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>AI Assistant for Personalization Expressions</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>[!DNL Adobe Journey Optimizer] now includes an AI Assistant in the Personalization Editor. Describe what you want to personalize in plain language and the assistant produces a personalization expression you can use as-is or refine in a short follow-up conversation.</p>
+<p>You can also select existing personalization code and ask the assistant to explain it, fix it, or suggest improvements. After you generate an expression, <strong>Show previews for sample profiles</strong> runs a quick check against a limited set of synthetic sample profiles.</p>
+<p><img src="assets/do-not-localize/assistant-perso.gif"></p>
+<p>For more information, refer to <a href="../content-management/generative-personalization-expressions.md">AI Assistant for Personalization Expressions</a>.</p>
+<p>Availability date: April 13, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#april-26-improv}
 
 #### Journey Path Optimization
@@ -122,15 +141,17 @@ Because of this model, release notes are updated between monthly releases. For f
 
   Availability date: April 7, 2026
 
-<!--
 * **Adobe Experience Manager Content Fragment context while authoring** - Your Content Fragment selection stays active as you move between text fields and content blocks, so you can add more fragment fields without reopening **Open AEM Content advisor** each time. [Read more](../integrations/aem-fragments.md)
 
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
   Availability date: April 1, 2026
--->
 
 #### Adobe Experience Manager Integrations
 
 * **Adobe Experience Manager Content fragment Varition Support** - You can select **Content Fragment variations** (for example language or channel variants) when inserting Adobe Experience Manager Content Fragments, with improved handling for locale and multilingual scenarios. [Read more](../integrations/aem-fragments.md#aem-variations)
+  
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
   Availability date: April 3, 2026
 
