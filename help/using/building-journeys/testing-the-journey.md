@@ -19,10 +19,15 @@ version: Journey Orchestration
 >abstract="Use test profiles to test your journey before publishing it. This allows you to analyze how individuals flow in the journey and troubleshoot before publication."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-dry-run" text="Journey Dry run"
 
-
 Once you have built your journey, you can test it before publishing. [!DNL Adobe Journey Optimizer] offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
 
 Only test profiles can enter a journey in test mode. You can either create new test profiles or turn existing profiles into test profiles. Learn more about test profiles in [this section](../audience/creating-test-profiles.md). 
+
+Adobe Journeys Optimizer offers two ways to test and validate your journey:
+
+* **[Simulation](simulate-journey.md#simulated-users)**: Set the journey to **[!UICONTROL Simulation]** and use simulated users (temporary profiles you create or generate on the fly without pre-created profiles in Adobe Experience Platform).
+
+* **[Test mode](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
 >[!NOTE]
 >
@@ -61,12 +66,6 @@ Review these notes before running tests in your journey.
 -->
 
 ## Activate the test mode
-
-Adobe Journeys Optimizer offers two ways to test and validate your journey:
-
-* **[Simulation](#simulated-users)**: Temporary profiles generated on-the-fly within the test mode interface. They are ideal for quick testing without the need to pre-create profiles in Adobe Experience Platform.
-
-* **[Test mode](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
 Use the **[!UICONTROL Test mode]** method when you want to test your journey with pre-existing test profiles that you have already created in Adobe Experience Platform.
 
