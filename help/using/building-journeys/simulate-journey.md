@@ -17,35 +17,39 @@ badge: label="Limited Availability" type="Informative"
 >
 > The use of Journey Simulation is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
 
->[!AVAILABILITY]
->
->This feature is currently available to all customers as a limited availability release.
 
-Alongside states such as **Draft**, **Test mode**, and **Live**, your journey can be set to **[!UICONTROL Simulation]**. That status is dedicated to validating the journey using **simulated users** (temporary profiles you create or generate on the fly), without first creating persistent test profiles in Adobe Experience Platform. The experience is delivered through an updated interface compared to earlier iterations, but you still drive validation with simulated users as the underlying approach.
+You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profiles you add or generate on the fly, without using persistent test profiles in Adobe Experience Platform.
 
 Adobe Journey Optimizer offers two ways to test and validate your journey:
 
-* **[Simulation](#simulated-users)**: Use the **[!UICONTROL Simulation]** journey status and simulated users for quick runs without pre-created profiles in Adobe Experience Platform.
+* **[Simulation](#test-users)**: Use the **[!UICONTROL Simulation]** journey status and test users for quick runs without pre-created profiles in Adobe Experience Platform.
 
 * **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
-## Create and manage simulated users {#simulated-users}
+## Create and manage test users {#test-users}
+
+>[!IMPORTANT]
+>
+>You must have the **Simulate Journeys** permission to see and use **[!UICONTROL Simulate]**. [Learn more](../administration/permissions.md)
+
+
+Test users are temporary profiles you define in **[!UICONTROL Simulation settings]**. This section covers how to create them from the UI or from a JSON file, save them for reuse, adjust or remove them from the list, and send them into the journey.
 
 ### Create simulated users
 
-Use **[!UICONTROL Simulation]** when you want to test your journey without creating persistent test profiles in Adobe Experience Platform. You work from the **[!UICONTROL Simulation]** journey status and generate or pick simulated users in the **[!UICONTROL Simulation settings]** experience.
+The following steps show you how to create test users from the UI or by importing a JSON file.
 
-1. Set the journey to **[!UICONTROL Simulation]**. Open the **[!UICONTROL Simulate]** entry point and choose **[!UICONTROL Simulation]** so the journey uses the Simulation status (alongside options such as Test mode or Live, depending on your workspace).
+1. From your Journey, open **[!UICONTROL Simulate]** and choose **[!UICONTROL Simulation]**.
 
     ![Test mode button in journey interface](assets/test-mode-simulated.png)
     
-1. Click **[!UICONTROL Create Simulated Users]** to create new users and select whether to create users from the UI or import them from a JSON file.
+1. Click **[!UICONTROL Create Simulated Users]** to create new users and select whether to create users from the UI or import them from JSON.
 
     ![Simulated user selection panel](assets/simulate-2.png)
 
-1. If creating from a JSON file, simply update the corresponding fields with your Test user data
+1. If you create simulated users from JSON, update the corresponding fields with your test user data.
 
-1. If creating from the UI, enter a **[!UICONTROL Display name]** and **[!UICONTROL Description]** to identify this simulated user. Then, select the attributes from the Union schema that you want to populate for this user.
+1. If you create simulated users from UI, enter a **[!UICONTROL Display name]** and **[!UICONTROL Description]** to identify this simulated user. Then, select the attributes from the Union schema that you want to populate for this user.
 
     ![Attribute selection from Union schema](assets/simulate-3.png)
 
@@ -53,19 +57,19 @@ Use **[!UICONTROL Simulation]** when you want to test your journey without creat
 
 1. Click **[!UICONTROL Add profile]** to create multiple simulated users in a single session.
 
-1. From your created profiles, following options are available:
+1. For each simulated user you added in this session, you can use the following actions:
 
-    * Duplicate
-    * Apply all
-    * Delete
+    * **[!UICONTROL Duplicate]**: Adds a new simulated user that replicates the completed configuration of an existing entry, you can then edit the duplicate as needed.
+    * **[!UICONTROL Apply all]**: Propagates the attribute values or settings from one simulated user to every other simulated user in the list.
+    * **[!UICONTROL Delete]**: Removes the selected simulated user from the list.
 
-1. Click **[!UICONTROL Save]** to store the simulated user(s) for future use.
+1. Click **[!UICONTROL Save]** to store one or more simulated users for future use.
 
-1. Once you have created your simulated users, they are now available in the Test users list. From the options menu, choose between the following option:
+1. After you save, the simulated users you created appear in the **Test users** list. For each entry, open the options menu and select one of the following:
 
-    * ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg) to edit users and change its details.
-    * ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) to send your simulation to only one test user.
-    * ![Clear icon](assets/do-not-localize/Smock_Close_18_N.svg) to clear your test users from the list. Note that clearing it does not delete it, it can still be selectable from the Simulated users list.
+    * ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg): Update the simulated user's details.
+    * ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg): Run the simulation for this simulated user only.
+    * ![Clear icon](assets/do-not-localize/Smock_Close_18_N.svg): Remove the user from this list. The simulated user is not deleted and remains available in the Simulated Users selection.
 
     ![Simulated user selection panel](assets/simulate-3.png)
 
@@ -79,9 +83,9 @@ Use **[!UICONTROL Simulation]** when you want to test your journey without creat
 
 ### Select simulated users
 
-Simulated users that you **create manually** in a journey are **available in your other journeys** as well.
+Simulated users that you create manually are stored and can be selected from this list when Simulation is enabled on other journeys.
 
-1. Set the journey to **[!UICONTROL Simulation]**. Open the **[!UICONTROL Simulate]** entry point and choose **[!UICONTROL Simulation]** so the journey uses the Simulation status (alongside options such as Test mode or Live, depending on your workspace).
+1. Set the journey to **[!UICONTROL Simulation]**. Open the **[!UICONTROL Simulate]** entry point and choose **[!UICONTROL Simulation]** so the journey uses the Simulation status, for example alongside Test mode or Live, depending on your workspace.
 
     ![Test mode button in journey interface](assets/test-mode-simulated.png)
 
@@ -107,26 +111,31 @@ Simulated users that you **create manually** in a journey are **available in you
 
 ## Trigger your events {#firing_events}
 
-A test event menu is available if the Journey has one or multiple events.
+If your journey includes one or more events, you can trigger them while Simulation is active.
 
-1. Choose from **[!UICONTROL Select event type]** the event you want to trigger for this simulation. 
+1. In **[!UICONTROL Select event type]**, select the event to fire for this simulation.
 
-1. Click ![Edit event](assets/do-not-localize/Smock_Edit_18_N.svg) to further customize the fields passed and the execution of the event sending. 
+1. For your selected Test user, click ![Edit event](assets/do-not-localize/Smock_Edit_18_N.svg) to adjust the event payload and how the event is sent.
 
-1. Open your test user drop-down and select your Event type and how it is produced.
+1. In the test user drop-down, select the profile and finish configuring the event and how it is generated.
 
     ![Event configuration interface with fields and drop-down for event selection](assets/simulate-8.png)
 
-1. Once configured, select Trigger selected events.
+1. Click **[!UICONTROL Trigger selected events]**.
 
-Following message is displayed: `Events triggered successfully`.
+The following message appears: `Events triggered successfully`.
 
 ## View logs {#viewing_logs}
 
-The **[!UICONTROL Show log]** button allows you to view the test results. Select from the test user drop-down, the information you want to know for each test user.
+The **[!UICONTROL Show log]** button allows you to view the test results. In the test user drop-down, select the profile whose execution you want to inspect.
 
-Information for each activity is displayed such as profile entered/exited or any error that occured during the simulation
+For each activity, the log can show whether the profile entered or exited the step, and errors that occurred during the simulation.
 
-If errors occur, leave **[!UICONTROL Simulation]**, adjust your journey, and run Simulation again. When testing is complete, you can publish your journey. See [Publish your journey](../building-journeys/publish-journey.md).
+For **Wait** activities, the log includes two duration-related values:
+
+* **Defined duration**: The duration specified on the **Wait** activity for the published journey and applied once the journey is live. The log records whether Simulation applies an override from the test settings, for example 10 seconds, rather than relying solely on the value defined on the journey.
+* **Actual duration**: The elapsed time the simulated user remained on the **Wait** activity. This value typically approximates the override duration but may vary, as it represents end-to-end processing time for the step, including service latency.
+
+If errors occur, leave **Simulation**, adjust your journey, and run Simulation again. When testing is complete, you can publish your journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
 ![Logs for test users](assets/simulate-6.png)
