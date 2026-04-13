@@ -498,6 +498,7 @@ solution: Journey Optimizer
     + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
+    + [Use Journey Optimizer with AI assistants via MCP](using/integrations/ajo-mcp.md)
     + {hide-from-toc} [Work with Integrations](using/integrations/external-sources.md)
   + AI Assistant for content generation {#ai-assistant}
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
