@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## April 2026 {#april-2026}
 
+* The **Edit email content with the advanced HTML editor** page has been moved from the Content management section to the **Email** section of the documentation (under Email design) and the page file has been renamed to **email-expert-mode.md**. The page now documents that the advanced HTML editor is available in the Email Designer for email messages as well as for email content templates. [Read more](../email/email-expert-mode.md)
+
 * The **Start and monitor Orchestrated campaigns** documentation has been updated with a new section detailing the internal publication-time execution sequence, along with a campaign lifecycle status table, a pre-publication checklist, and a sending confirmation warning for non-recurring campaigns. [Read more](../orchestrated/start-monitor-campaigns.md#publication-sequence)
 
 * The **Save audience** activity documentation has been updated with a note clarifying that Save Audience activities always execute before message activities at publication time. [Read more](../orchestrated/activities/save-audience.md)
@@ -59,7 +61,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Monitor your AI models** page is now available in the Decisioning documentation. It explains how to track the health, training status, and performance of personalized optimization models directly in [!DNL Journey Optimizer]. [Read more](../experience-decisioning/ranking/ai-model-observability.md)
 
-* The **advanced HTML editor** (expert mode) for email templates is now available in Limited Availability. The documentation page is now publicly accessible. This capability lets you view and edit the raw HTML source of email content templates directly from the Email Designer. [Read more](../content-management/email-template-expert-mode.md)
+* The **advanced HTML editor** (expert mode) for email templates is now available in Limited Availability. The documentation page is now publicly accessible. This capability lets you view and edit the raw HTML source of email content templates directly from the Email Designer. [Read more](../email/email-expert-mode.md)
 
 * The **URL tracking** and **Journey troubleshooting** documentation have been updated to document the behavior of `context.system.source.actionId` in closed journeys. Closed or un-republished journeys may produce empty `{}` placeholders in tracking URLs. Guidance has been added on how to resolve the issue by republishing the journey or removing the affected parameter. [Read more](../email/url-tracking.md)
 
