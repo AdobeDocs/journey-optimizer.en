@@ -6,7 +6,7 @@ description: Learn how to create a dataset to collect events
 feature: Ranking, Datasets, Decisioning
 role: Developer
 level: Experienced
-hide: yes
+hide: true
 exl-id: 96c1326f-be40-4738-8997-a67dc14872bb
 version: Journey Orchestration
 ---

@@ -5,7 +5,7 @@ title: Functions
 description: Functions
 redpen-status: CREATED_||_2025-08-11_20-18-53
 exl-id: d82e30d6-abe5-4522-a8c4-a11ff5c9bd91
-hide: yes
+hide: true
 ---
 # Functions{#section-overview}
 

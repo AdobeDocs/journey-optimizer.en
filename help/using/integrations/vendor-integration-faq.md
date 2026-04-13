@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: integration, FAQ, external data, personalization
-hide: yes
+hide: true
 ---
 # Frequently asked questions about Integrations {#vendor-integration-faq}
 

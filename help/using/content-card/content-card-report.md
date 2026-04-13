@@ -5,7 +5,7 @@ feature: Reporting, Content Cards
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
+hide: true
 ---
 # Content cards report {#content-card-report}
 

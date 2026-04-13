@@ -4,7 +4,7 @@ product: journey optimizer
 title: Pre release notes for Journey Optimizer
 description: Adobe Journey Optimizer Pre Release notes
 feature: Release Notes
-hide: yes
+hide: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
 # Pre-release notes {#e-release-notes}
