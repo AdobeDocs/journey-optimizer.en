@@ -1361,3 +1361,4 @@ This release comes with the improvements listed below.
 **Decision management**
 
 * **Frequency capping on Edge** - The frequency capping counter is now updated and available in an Edge Decisioning API decision in less than 3 seconds. [Learn more](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
+
