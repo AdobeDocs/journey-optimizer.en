@@ -1,27 +1,23 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Edit email templates with the advanced HTML editor
-description: Use Expert Mode to view and edit the HTML source of email content in the WYSIWYG editor, with feature-flag control, guardrails, and save validation.
-feature: Templates
+title: Edit email content with the advanced HTML editor
+description: Use Expert Mode to view and edit the HTML source of email content in the Email Designer, with feature-flag control, guardrails, and save validation.
+feature: Email Design
 topic: Content Management
 role: User
 level: Experienced
 exl-id: 0c586565-0c65-435f-986d-cd08b59de159
 ---
-# Edit email templates with the advanced HTML editor {#email-template-expert-mode}
+# Edit email content with the advanced HTML editor {#email-expert-mode}
 
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
-The **advanced HTML editor** is an expert mode that lets you view and edit the raw source code of email content templates directly from the [!DNL Journey Optimizer] Email Designer interface.
+The **advanced HTML editor** is an expert mode that lets you view and edit the raw HTML source of **email content** directly in the [!DNL Journey Optimizer] [Email Designer](get-started-email-design.md)—whether you are [designing an email](content-from-scratch.md) for a journey, a campaign, or editing an [email content template](../content-management/create-content-templates.md).
 
 This capability lets you insert advanced expressions—such as conditions—directly in the source. When you switch back to the visual (Desktop) view, the content is re-rendered so you can check how it looks and continue editing in either view.
-
->[!NOTE]
->
->This feature is only available in content templates and for the Email channel.
 
 ## Guardrails {#guardrails}
 
@@ -39,13 +35,13 @@ When you use the advanced HTML editor, the following guardrails protect content 
 
 >[!WARNING]
 >
->The advanced HTML editor in the content template is not the same as **[!UICONTROL Code your own]** mode in the Email Designer. In [!UICONTROL Code your own] mode, you cannot switch back to the visual editor—once you choose that path, you stay in code-only editing. The advanced HTML editor, by contrast, lets you toggle between HTML view and Desktop (visual) view at any time. [Learn more about the code editor](../email/code-content.md)
+>The advanced HTML editor is not the same as **[!UICONTROL Code your own]** mode in the Email Designer. In [!UICONTROL Code your own] mode, you cannot switch back to the visual editor—once you choose that path, you stay in code-only editing. The advanced HTML editor, by contrast, lets you toggle between HTML view and Desktop (visual) view at any time. [Learn more about the code editor](code-content.md)
 
 ## Switch to advanced HTML view {#switch-to-html-view}
 
-To open the advanced HTML editor and edit your template source, follow these steps.
+To open the advanced HTML editor and edit your HTML source, follow these steps.
 
-1. Open or create an [email template](../content-management/create-content-templates.md) and open the [Email Designer](../email/get-started-email-design.md) to edit the content.
+1. Open the email or template you want to edit in the Email Designer—for example, [create or edit an email](create-email.md) from a journey or campaign, or open an [email content template](../content-management/create-content-templates.md) and edit its body in the [Email Designer](get-started-email-design.md).
 
 1. Click the **[!UICONTROL HTML]** button in the top-right corner of the screen.
 
@@ -61,7 +57,7 @@ To open the advanced HTML editor and edit your template source, follow these ste
 
 1. The advanced HTML editor displays.
 
-    ![Advanced HTML editor interface showing email template source code](assets/email-template-expert-mode.png)
+    ![Advanced HTML editor interface showing email source code](assets/email-template-expert-mode.png)
 
 1. Add the desired changes to your email content.
 
@@ -83,7 +79,6 @@ To open the advanced HTML editor and edit your template source, follow these ste
 
 ## Related topics
 
-* [Code your own email content](../email/code-content.md)
-* [Create content templates](create-content-templates.md)
-* [Get started with the Email Designer](../email/get-started-email-design.md)
-
+* [Code your own email content](code-content.md)
+* [Create content templates](../content-management/create-content-templates.md)
+* [Get started with the Email Designer](get-started-email-design.md)

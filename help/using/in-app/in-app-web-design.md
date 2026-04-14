@@ -6,8 +6,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: in-app, message, creation, start
-hide: yes
-hidefromtoc: yes
+hide: true
 ---
 # Design your Web In-app content {#in-app-web-design}
 

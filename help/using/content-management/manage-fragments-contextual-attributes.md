@@ -7,8 +7,7 @@ feature: Fragments
 topic: Content Management
 role: User
 level: Intermediate, Experienced
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: a274656e-2570-4a9c-b72b-4e8e920b7462
 ---
 # Add contextual attributes to published fragments {#adding-contextual-attributes}

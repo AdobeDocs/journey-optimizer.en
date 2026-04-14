@@ -7,8 +7,7 @@ feature: Email Design, SMS, Push, In App
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
+hide: true
 keywords: content, design, email, push, sms, personalization, templates
 exl-id: a5700c92-1f6a-4c78-9c8e-81f8fd2fe8e3
 ---

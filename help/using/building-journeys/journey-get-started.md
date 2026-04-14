@@ -6,8 +6,7 @@ description: Comprehensive guide to get started with journey orchestration in [!
 feature: Journeys, Get Started, Overview
 role: User
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
+hide: true
 keywords: journey, orchestration, getting started, onboarding, capabilities
 exl-id: 96b1d619-986d-493d-a73b-d7c63b92cca8
 ---

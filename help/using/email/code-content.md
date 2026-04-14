@@ -20,7 +20,7 @@ You must have HTML skills, and once you choose this mode, you stay in the code e
 
 >[!NOTE]
 >
->**[!UICONTROL Code your own]** is not the same as the advanced HTML editor in content templates. The advanced HTML editor lets you toggle between HTML view and the visual (Desktop) view at any time—not the code editor. [Learn more about the advanced HTML editor](../content-management/email-template-expert-mode.md).
+>**[!UICONTROL Code your own]** is not the same as the advanced HTML editor in the Email Designer. The advanced HTML editor lets you toggle between HTML view and the visual (Desktop) view at any time—not the code editor. [Learn more about the advanced HTML editor](email-expert-mode.md).
 
 ## Use the code editor {#use-code-editor}
 

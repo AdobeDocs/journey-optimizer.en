@@ -8,8 +8,7 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: journey, campaign, orchestrated, comparison, choose, decision, workflow, real-time, batch, orchestration, multi-step, scheduled, API-triggered, event-driven
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
 ---
 # Journeys vs Campaigns: Choose the right approach {#journeys-vs-campaigns}

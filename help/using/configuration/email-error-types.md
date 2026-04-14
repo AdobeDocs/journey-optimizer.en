@@ -8,8 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: retries, bounce, soft, ignored, hard, optimizer, error
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: a8908b11-2288-4d53-897c-3f99cb5ceab4
 ---
 # Email error types {#email-error-types}
