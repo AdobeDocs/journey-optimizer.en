@@ -8,6 +8,8 @@ topic: Content Management, Artificial Intelligence
 badge: label="Limited availability" type="Informative"
 role: User, Developer
 level: Beginner, Intermediate
+hide: true
+badge: label="Beta" type="Informative"
 ---
 # Work with AI assistants via MCP {#ajo-mcp}
 
