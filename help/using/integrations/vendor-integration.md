@@ -42,6 +42,7 @@ The following prerequisites apply:
 * Contentful space with Delivery API access and a read-oriented API key.
 * Clear content types and field IDs; admin access in Journey Optimizer to create integrations.
 
+
 The following limitations and exclusions apply:
 
 * Broad listing or paginated Contentful APIs are a poor fit for this pattern; prefer retrieval calls that target a specific entry or asset.
