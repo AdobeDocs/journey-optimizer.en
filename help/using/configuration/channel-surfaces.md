@@ -22,7 +22,7 @@ exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
 >title="Marketing action"
 >abstract="Choose the Marketing actions to link consent policies to the messages using this setup. All consent policies connected to the marketing action will be used to honor your customers' preferences."
 
-With [!DNL Journey Optimizer], you can set up channel configurations (i.e. message presets) that define all the technical parameters required for your messages: email type, sender email and name, mobile apps, SMS configuration, and more. 
+With [!DNL Journey Optimizer], you can set up channel configurations (i.e. message presets) that define all the technical parameters required for your messages: email type, From and optional Sender header values, reply and error routing, mobile apps, SMS configuration, and more. 
 
 >[!CAUTION]
 >

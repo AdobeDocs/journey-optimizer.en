@@ -33,7 +33,7 @@ To be able to send emails through journeys and campaigns in [!DNL Journey Optimi
 
     ![](assets/surface-subdomain-ip-pool.png)
     
-    * The **[!UICONTROL Sender email]** and **[!UICONTROL Error email]** addresses must use the current selected delegated subdomain. [Learn more](email-settings.md#email-header)
+    * The **[!UICONTROL From email prefix]** and **[!UICONTROL Error email prefix]** use the currently selected [delegated subdomain](../configuration/about-subdomain-delegation.md). Optionally, **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** can identify a different transmitting party (full **Sender** address, not tied to that subdomain suffix). [Learn more](header-parameters.md#sender-header)
 
     ![](assets/preset-header.png)
 

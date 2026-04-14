@@ -86,7 +86,7 @@ You can also use personalization for all the header parameters defined in a conf
 
 >[!NOTE]
 >
->* All **[!UICONTROL Header parameters]** fields can be personalized, except the **[!UICONTROL Error email prefix]** field.
+>* All **[!UICONTROL Header parameters]** fields can be personalized, except the **[!UICONTROL Error email prefix]** field. When you use optional **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]**, they follow the same personalization rules as **From** and **Reply to**. [Learn more](header-parameters.md#sender-header)
 >* When [editing an email configuration](../configuration/channel-surfaces.md#edit-channel-surface), you cannot add new [profile attributes](../personalization/personalization-build-expressions.md#sources) to header parameters — you must create a new channel configuration instead.
 
 For example, if you have multiple brands, you can create a single configuration and use personalized values for your email headers. This allows you to make sure that all emails sent from your different brands are addressed to each of your customers with the correct **From** names and emails. Similarly, when your recipients hit the **Reply** button in their email client software, you want the **Reply to** names and emails correspond to the correct brand for the right user.
@@ -119,7 +119,7 @@ The examples below use event parameters, which are currently not available.
 
 >[!NOTE]
 >
->If you added one or more dynamic subdomains to your configuration, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains).
+>If you added one or more dynamic subdomains to your configuration, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains). **[!UICONTROL Sender email]**, when set, is a full address and is not built from that subdomain suffix.
 
 ## Use personalized URL tracking {#personalize-url-tracking}
 

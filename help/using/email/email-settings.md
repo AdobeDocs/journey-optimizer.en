@@ -85,7 +85,7 @@ It enables you to include a one-click unsubscribe URL into the email header. [Le
 
 ## Header parameters {#email-header}
 
-In the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that configuration. [Learn more](header-parameters.md)
+In the **[!UICONTROL Header parameters]** section, enter the **From**, **Reply to**, and **Error** values for the type of emails sent using that configuration. Optionally, when the transmitting party should differ from the **From** author, set **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** so a **Sender** SMTP header can be added. [Learn more](header-parameters.md)
 
 ## BCC email {#bcc-email}
 
