@@ -70,9 +70,9 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_2.png)
 
-1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM CF selector]**.
+1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM Content advisor]**.
 
-    ![](assets/aem_campaign_3.png)
+    ![](assets/cf-variation-1.png)
 
 1. Browse the list and select a **[!UICONTROL Content Fragment]** to import into your Journey Optimizer content.
 
@@ -107,7 +107,9 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 1. Choose the desired fields from your **[!UICONTROL Fragment]** to add to your content.
 
     <!--
-    Note that if you choose to copy the value, any future updates to the Content Fragment will not be reflected in your campaign or journey. However, using dynamic placeholders ensures real-time updates.-->
+    Note that if you choose to copy the value, any future updates to the Content Fragment will not be reflected in your campaign or journey. However, using dynamic placeholders ensures real-time updates.
+    
+    -->
 
     ![](assets/aem_campaign_6.png)
 
@@ -148,7 +150,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
 1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
 
-    <!--Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM CF selector]**.-->
+    Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM Content advisor]**.
 
 Once you have performed your tests and validated the content, you can [send your campaign](../campaigns/review-activate-campaign.md) or [publish your journey](../building-journeys/publish-journey.md) to your audience.
 
@@ -161,13 +163,13 @@ In Adobe Experience Manager, each Content Fragment is made up of the following:
 * **Main**: the core content of the fragment which always exists, cannot be deleted, and is the basis for all variations.
 * **Variations**: one or more permutations of **Main** that authors create for specific channels or scenarios. Variations live inside the fragment not as separate assets and can be compared and synchronized with **Main**.
 
-➡️ [Learn more in Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/content-fragments/content-fragments-variations)
-
 Examples of variation use cases:
 
 * A short version of copy for a push notification and a longer version for email.
 * Regional tone adjustments without creating a separate fragment.
 * Channel-specific messaging (for example web compared to mobile).
+
+➡️ [Learn more in Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/content-fragments/content-fragments-variations)
 
 Journey Optimizer lets you choose which variation to use when you insert a fragment, so different campaigns or journeys can rely on different renditions of the same source content in Adobe Experience Manager without duplicating fragments.
 
@@ -177,9 +179,9 @@ To select a variation:
 
 1. Click ![Personalization icon](assets/do-not-localize/Smock_PersonalizationField_18_N.svg) in any text field, or open the HTML source from an HTML content component.
 
-1. From **[!UICONTROL AEM Content Fragment]**, click **[!UICONTROL Open CF selector]**.
+1. From **[!UICONTROL AEM Content Fragment]**, click **[!UICONTROL Open AEM Content advisor]**.
 
-    ![](assets/aem_campaign_3.png)
+    ![](assets/cf-variation-1.png)
 
 1. To select a locale-specific Adobe Experience Manager Content Fragment in table view, use **[!UICONTROL Customize table]** to add the **[!UICONTROL Language]** column. Locale values are displayed in the table, enabling you to identify and select the appropriate fragment.
 
