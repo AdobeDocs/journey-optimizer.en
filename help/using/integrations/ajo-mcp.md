@@ -5,15 +5,18 @@ title: Work with AI assistants via MCP
 description: Learn how to connect Adobe Journey Optimizer to AI assistants using the MCP server
 feature: Integrations
 topic: Content Management, Artificial Intelligence
-badge: label="Limited availability" type="Informative"
+badge: label="Beta" type="Informative"
 role: User, Developer
 level: Beginner, Intermediate
+hide: true
 ---
 # Work with AI assistants via MCP {#ajo-mcp}
 
 >[!AVAILABILITY]
 >
->The [!DNL Adobe Journey Optimizer] MCP server is currently available in **Claude Web** and **Claude Desktop** only.
+>The [!DNL Adobe Journey Optimizer] MCP server is currently available in **Claude Web** and **Claude Desktop** only. Support for additional MCP-compatible applications will be added in future releases.
+
+The [!DNL Adobe Journey Optimizer] MCP integration lets you query campaigns, journeys, and offers using plain-language prompts — without writing API calls or navigating product screens. This page explains how the integration works, what you can do with it, and how to get started.
 
 ## What is the Model Context Protocol? {#mcp-overview}
 
@@ -23,7 +26,7 @@ Marketing and customer-experience teams increasingly rely on chat-based applicat
 
 ## Key capabilities {#mcp-capabilities}
 
-The [!DNL Adobe Journey Optimizer] MCP server lets you inspect, summarize, and troubleshoot [!DNL Adobe Journey Optimizer] journeys, campaigns, and offers directly from your AI assistant. [!DNL Adobe Journey Optimizer]'s retrieve APIs are turned into plain-language answers so you can:
+The [!DNL Adobe Journey Optimizer] MCP server lets you inspect, summarize, and troubleshoot journeys, campaigns, and offers directly from your AI assistant. All operations are **read-only** — the MCP server surfaces retrieve APIs as plain-language answers so you can:
 
 * **Understand journey logic** — Get a human-readable summary of any journey's branching, conditions, and actions.
 * **Check campaign readiness** — Identify blockers that prevent a campaign from being published.
@@ -55,7 +58,13 @@ Before connecting the [!DNL Adobe Journey Optimizer] MCP server to your AI assis
 
 >[!NOTE]
 >
->Detailed setup steps will be added once the integration is generally available. Contact your Adobe representative for early access.
+>This integration is in Beta. Detailed setup steps will be published when it reaches general availability. Contact your Adobe representative to request early access and receive configuration instructions.
+
+During the Beta phase, your Adobe representative will provide:
+
+* The MCP server endpoint URL specific to your organization.
+* Authentication credentials for connecting your AI assistant to [!DNL Adobe Journey Optimizer].
+* Guidance on configuring the MCP server in Claude Desktop or Claude Web.
 
 <!--
 Step-by-step connection instructions to be added here, including:
@@ -84,4 +93,14 @@ No. The MCP server is designed for both marketing and technical personas. Market
 +++Is my data sent to the AI assistant provider?
 
 When you submit a prompt, the AI assistant may send relevant context (including [!DNL Adobe Journey Optimizer] data returned by the MCP server) to its model for processing. Review the privacy and data-handling policies of your AI assistant provider before connecting to production data.
++++
+
++++What permissions do I need in [!DNL Adobe Journey Optimizer]?
+
+You need at minimum **View** permissions for the objects you want to query — campaigns, journeys, or offers. No write permissions are required because the MCP server only performs read operations. Contact your [!DNL Adobe Journey Optimizer] administrator if you are unsure about your current access level.
++++
+
++++Can I use the MCP server in sandbox environments?
+
+Yes. The MCP server respects your [!DNL Adobe Journey Optimizer] sandbox configuration. You can query sandbox-specific data by specifying the sandbox in your prompt or by connecting with credentials scoped to a particular sandbox.
 +++
