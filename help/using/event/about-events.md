@@ -42,6 +42,21 @@ Unitary journeys (starting with an event or an audience qualification) include a
 **Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancelation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after.Learn how to create a business event [on this page](../event/about-creating-business.md).
 
 
+## Unitary vs business events at a glance {#event-comparison}
+
+| | Unitary event | Business event |
+|---|---|---|
+| **Linked to a profile?** | Yes — triggered by a specific individual's action. | No — triggered by an external occurrence not tied to one person. |
+| **Entry behavior** | One profile enters the journey in real time. | Multiple profiles enter via an automatic Read Audience step. |
+| **Typical use cases** | Purchase confirmation, form submission, app login, loyalty milestone. | Flight cancellation, stock replenishment alert, breaking news, weather event. |
+| **How it starts the journey** | Event-based entry — no audience needed. | Business event + automatic Read Audience (added by Journey Optimizer). |
+| **Multiple per journey?** | Yes — you can listen to several unitary events across journey steps. | No — only one business event per journey, placed at the start. |
+| **Event ID type** | Rule-based or system-generated. | Always rule-based. |
+
+>[!NOTE]
+>
+>A journey can contain only **one** business event, which must be the first activity. Journey Optimizer automatically adds a **Read Audience** activity after it to define which profiles receive the journey triggered by that event.
+
 ## Event ID type {#event-id-type}
 
 For **business** events, the event ID type is always rule-based. 

@@ -54,6 +54,15 @@ What you need to configure before building depends on how your journey is trigge
 
 * **Event-based entry** — The journey is triggered in real time when an individual performs an action, such as a purchase or a sign-up. [Configure an event](../event/about-events.md) to define the trigger and the data it carries.
 
+**Not sure which entry point to use?** The table below maps the most common use cases to the right starting activity.
+
+| Entry point | Use when… | Profiles enter |
+|---|---|---|
+| **[Read Audience](read-audience.md)** | You want to send a scheduled or recurring message to a defined set of profiles (newsletters, promotions, onboarding series). | All profiles from a batch audience, at once or on a schedule. |
+| **[Audience Qualification](audience-qualification-events.md)** | You need to react in real time when a profile enters or exits an audience (loyalty tier upgrade, churn risk flag). | One profile at a time, as soon as they qualify in a streaming audience. |
+| **Unitary event** | A profile action triggers an immediate response (purchase confirmation, form submission, app login). | One profile at a time, in real time. |
+| **[Business event](../event/about-creating-business.md)** | A non-profile event affects multiple people at once (flight cancellation, stock replenishment, breaking news alert). | All profiles associated with the event, via an automatic Read Audience step. |
+
 The following elements are optional, but may be required depending on your use case:
 
 * **Data source** — To enrich journey conditions or personalization with data from an external system, set up a [data source](../datasource/about-data-sources.md).

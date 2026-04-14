@@ -48,6 +48,16 @@ In journey B, the first event is triggered internally via the **[!UICONTROL Jump
 >
 >Journey B can also be triggered via an external event.
 
+### Profile behavior during a Jump {#jump-profile-behavior}
+
+When a profile reaches the **[!UICONTROL Jump]** step, it continues progressing in the origin journey (Journey A) while simultaneously entering the target journey (Journey B). The profile is therefore active in both journeys at the same time.
+
+This means:
+
+* The profile completes any remaining steps in Journey A after the Jump activity (for example, a follow-up wait or closing action).
+* The profile also starts flowing through Journey B from its first event, independently of Journey A.
+* If the profile is **already active** in Journey B when the Jump is executed, it will **not** enter Journey B again. Journey A continues normally; no error is reported.
+
 ## Best practices and limitations {#jump-limitations}
 
 Use these guidelines to keep Jump activity behavior predictable and safe.
