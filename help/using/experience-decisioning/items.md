@@ -48,6 +48,8 @@ Start by defining the decision item's standard and custom attributes :
     >
     >This feature is available in Limited Availability for the **Code-based experience** and **Email** channels. To request access, contact your Adobe representative.
 
+    When using these fragments in your decision policies, you can make a fragment optional so that it is skipped if temporarily unavailable on Edge. [Learn how](fragments-decision-policies.md#optional-fragments)
+
 1. Specify custom attributes (optional). Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are defined in the decision items' catalog schema. [Learn how to work with catalogs](catalogs.md)
 
 1. Once the decision item's attributes are defined, click **[!UICONTROL Next]**.
