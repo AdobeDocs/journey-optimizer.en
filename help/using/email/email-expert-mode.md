@@ -13,7 +13,7 @@ exl-id: 0c586565-0c65-435f-986d-cd08b59de159
 
 >[!AVAILABILITY]
 >
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access. 
 
 The **advanced HTML editor** is an expert mode that lets you view and edit the raw HTML source of **email content** directly in the [!DNL Journey Optimizer] [Email Designer](get-started-email-design.md)—whether you are [designing an email](content-from-scratch.md) for a journey, a campaign, or editing an [email content template](../content-management/create-content-templates.md).
 
