@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 hide: true
 exl-id: 842d69e3-be7f-4a81-8161-6c6ecd571f95
 ---
-# Work with Adobe Experience Manager Content Advisor {#aem-content-advisor}
+# Work with Adobe Experience Manager content advisor {#aem-content-advisor}
 
 >[!AVAILABILITY]
 >
@@ -81,7 +81,7 @@ The buttons you see depend on your repository configuration:
 * **Both buttons**: Repository has both configurations and asset is both published and approved.
 +++
 
-### For Content Fragment {#content-fragment-features}
+### For content fragment {#content-fragment-features}
 
 Adobe Experience Manager Content Advisor provides the following Content Fragment features:
 
@@ -117,7 +117,7 @@ Preview the JSON structure of Content Fragments in a clean, organized tabular fo
 
 +++
 
-## Access Adobe Experience Manager Content Advisor {#access}
+## Access Adobe Experience Manager content advisor {#access}
 
 To access Adobe Experience Manager Content Advisor in Journey Optimizer, follow these steps:
 

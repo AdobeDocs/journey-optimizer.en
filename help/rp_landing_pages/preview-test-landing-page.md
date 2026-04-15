@@ -18,7 +18,7 @@ exl-id: bd78e0af-573b-4880-a9f1-44467c9db159
 
 Ensure flawless message delivery by catching errors before they reach customers. Preview content validates personalization accuracy across different customer profiles, while testing tools reveal rendering issues, spam risks, and content variations that could impact engagement. Access comprehensive capabilities to send proofs to stakeholders, simulate personalization with sample data, check email rendering across clients, and evaluate deliverability metrics—all before activation. Master these validation techniques to protect brand reputation, maximize inbox placement, and deliver consistently excellent customer experiences.
 
-## Preview & Test Content
+## Preview & test content
 
 :::: landing-cards-container
 :::

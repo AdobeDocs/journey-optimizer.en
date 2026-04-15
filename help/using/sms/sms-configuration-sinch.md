@@ -150,7 +150,7 @@ Note that messages automatically fall back to SMS when the profile's device does
     Your messages automatically falls back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 -->
 
-### RCS Multimedia Messages
+### RCS multimedia messages
 
 >[!AVAILABILITY]
 >

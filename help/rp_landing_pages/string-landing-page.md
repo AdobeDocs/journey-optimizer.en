@@ -11,7 +11,7 @@ exl-id: 1085e570-10b8-4d96-912a-994979358b65
 
 Strings are the building blocks of text-based data, and Adobe Journey Optimizer's string functions give you powerful tools to manage and transform them effortlessly. 
 
-## String Functions Overview
+## String functions overview
 
 :::: landing-cards-container
 :::

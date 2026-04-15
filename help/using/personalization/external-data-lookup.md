@@ -9,7 +9,7 @@ hide: true
 badge: label="Limited availability" type="Informative"
 exl-id: eae8a09a-5d27-4a80-b21f-7f795d800602
 ---
-# External Data Lookup helper
+# External data lookup helper
 
 The `externalDataLookup` helper in the [!DNL Journey Optimizer] personalization Editor can be used to dynamically fetch data from an external endpoint for use in generating content for inbound channels like the Code-based Experience, Web and In-App Message channels.
 
@@ -169,7 +169,7 @@ Or for example you could fetch and loop through the items in order to return an 
 
 ## Troubleshooting
 
-### Timeouts and Error Handling
+### Timeouts and error handling
 
 [!DNL Journey Optimizer] uses a strict timeout when calling the external endpoint in order to maintain low-latency, high-throughput performance characteristics for the Adobe Experience Platform Edge Network.
 
@@ -207,7 +207,7 @@ Under the Edge Delivery Section of assurance trace as part of execution details 
 
 ![](assets/external-data-troubleshoot.png "width=50%")
 
-## Frequently Asked Questions {#faq-external-data}
+## Frequently asked questions {#faq-external-data}
 
 You will find below Frequently Asked Questions about External Data Lookup helper.
 

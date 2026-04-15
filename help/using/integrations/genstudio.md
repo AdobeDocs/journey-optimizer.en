@@ -10,7 +10,7 @@ role: User
 level: Beginner, Intermediate
 exl-id: c22a44a8-e4e2-453a-9ca2-b80f7c0edc19
 ---
-# Work with GenStudio for Performance Marketing {#ajo-genstudio}
+# Work with GenStudio for performance marketing {#ajo-genstudio}
 
 >[!CONTEXTUALHELP]
 >id="ajo_genstudio_button"

@@ -31,7 +31,7 @@ When Journey Optimizer executes a call to an external API, the technical guardra
 
 ## Capping & throttling APIs {#capping}
 
-### About Capping & Throttling APIs
+### About capping & throttling apis
 
 When configuring a datasource or an action, you establish a connection to a system to either retrieve additional information to use in your journeys or send messages or API calls.
 
@@ -100,7 +100,7 @@ Let's take an example for a timeout of 5 seconds.
     * If one of the three retries is successful before the end of the 5 seconds, the call is performed, and there is no error.
     * If the end of the timeout duration is reached during the retries, the call is canceled and counted as a timeout error in reporting. 
 
-## Frequently Asked Questions {#faq}
+## Frequently asked questions {#faq}
 
 You will find below Frequently Asked Questions about integrating Journey Optimizer with external systems.
 

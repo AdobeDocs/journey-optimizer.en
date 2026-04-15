@@ -10,7 +10,7 @@ keywords: journey, data sources, limit, throughput, custom, actions
 exl-id: 45d6bb82-88ea-4510-a023-a75a82cc6f7b
 version: Journey Orchestration
 ---
-# Use case: limit throughput with External Data Sources & Custom Actions{#limit-throughput}
+# Use case: limit throughput with external data sources & custom actions{#limit-throughput}
 
 Use this use case to throttle journey processing when external systems must handle a capped number of requests per second.
 

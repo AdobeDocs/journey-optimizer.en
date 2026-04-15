@@ -64,7 +64,7 @@ import AEPMessagingLiveActivity
 import ActivityKit
 ```
 
-## Step 2: Define your Live activity Attributes {#attributes}
+## Step 2: define your live activity attributes {#attributes}
 
 Create a struct that conforms to the `LiveActivityAttributes` protocol. This defines both the static data and dynamic content state for your Live activity.
 
@@ -127,7 +127,7 @@ if #available(iOS 16.1, *) {
 }
 ```
 
-## Step 3: Register Live activity {#register}
+## Step 3: register live activity {#register}
 
 Register your Live activity types in your `AppDelegate` after SDK initialization, this allows you to:
 
@@ -143,7 +143,7 @@ if #available(iOS 16.1, *) {
 }
 ```
 
-## Step 4: Create Live activity widgets {#widgets}
+## Step 4: create live activity widgets {#widgets}
 
 A Live activity is displayed through widgets. You need to create a widget bundle and configuration:
 
@@ -182,7 +182,7 @@ struct FoodDeliveryLiveActivityWidget: Widget {
 }
 ```
 
-## Step 5: Start a Live activity locally (optional) {#local}
+## Step 5: start a live activity locally (optional) {#local}
 
 While Journey Optimizer can remotely start Live activities, you can also start them locally:
 

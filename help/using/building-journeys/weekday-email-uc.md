@@ -45,7 +45,7 @@ Use these steps to build the weekday-only email flow.
    * **[Read Audience](read-audience.md)**: For batch campaigns targeting a specific audience
    * **[Event](../event/about-events.md)**: For real-time triggered journeys based on customer behavior
 
-### Step 2: Add a Condition activity to check the day of the week
+### Step 2: add a condition activity to check the day of the week
 
 Right after the journey start, add a **[!UICONTROL Condition]** activity to check if the current day is Saturday or Sunday. This will branch the workflow accordingly.
 
@@ -72,7 +72,7 @@ Right after the journey start, add a **[!UICONTROL Condition]** activity to chec
 >
 >The time zone used for day of week evaluation is defined at the journey level in the journey properties, not at the condition level. The journey [timezone](timezone-management.md) used in the formula is the journey's configured timezone, not the recipient's.
 
-### Step 3: Configure Wait activities for weekend entries
+### Step 3: configure wait activities for weekend entries
 
 For profiles entering on Saturday or Sunday, use **[!UICONTROL Wait]** activities with custom formulas to delay the email until Monday at your desired hour.
 

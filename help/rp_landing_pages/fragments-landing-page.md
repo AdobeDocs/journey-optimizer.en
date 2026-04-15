@@ -10,7 +10,7 @@ exl-id: 8ec67807-8bcb-4510-bcba-ccf6e710ceb9
 
 Reusable content fragments in Adobe Journey Optimizer help you save time and ensure consistency by letting you create modular pieces of content—like text blocks, images, or dynamic expressions—that can be used across multiple email campaigns and customer journeys. Whether you’re building a new marketing email or tailoring a personalized message, these fragments simplify your workflow while maintaining brand alignment. This section explores the different types of fragments (visual and expression), how to create and save them, and even make them customizable for specific use cases. You’ll also learn tips for managing, organizing, and reusing fragments effectively to streamline your content strategy.
 
-## Reusable Content Fragments
+## Reusable content fragments
 
 :::: landing-cards-container
 :::
