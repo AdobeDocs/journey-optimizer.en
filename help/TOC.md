@@ -283,7 +283,6 @@ solution: Journey Optimizer
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Manage the text version](using/email/text-version-email.md)
-        + [Optimize email text for AI inboxes](using/email/llm-email-optimizer.md)
         + [Add metadata](using/email/email-metadata.md)
         + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
       + Edit style {#edit-style}
@@ -422,9 +421,8 @@ solution: Journey Optimizer
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Iterate over contextual data](using/personalization/iterate-contextual-data.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md)
-    + Use Adobe Experience Platform data for personalization {#aep-data-perso}
-      + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
-      + [Encrypt URL parameters in tracking links](using/personalization/url-parameter-encryption.md)
+    + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
+    + [Encrypt URL parameters in tracking links](using/personalization/url-parameter-encryption.md)
     + Helper functions list {#functions}
       + [Helper functions list](/help/rp_landing_pages/functions-landing-page.md)
       + [Get started with helper functions](using/personalization/functions/functions.md)
@@ -974,3 +972,4 @@ solution: Journey Optimizer
     + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)
+

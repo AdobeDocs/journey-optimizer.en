@@ -216,7 +216,7 @@ In an object array with the supplemental ID as `bookingNum` and an attribute at 
 
 These examples show how supplemental identifiers support multiple related records.
 
-### **Policy Renewal Notifications**
+### **Policy renewal notifications**
 
 * **Scenario**: An insurance provider sends renewal reminders for each active policy held by a customer.
 * **Execution**:

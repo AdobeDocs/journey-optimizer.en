@@ -15,7 +15,7 @@ exl-id: 4578e8fe-341e-4678-b21f-d344f0a9a63d
 
 The 'Create & Manage Offers' section in Adobe Journey Optimizer empowers you to craft tailored, impactful offers that reach the right audience at the right time. Whether you're creating personalized offers, fallback options for broader appeal, or organizing your offers into dynamic or static collections for seamless management, this section provides clear, actionable guidance. You'll learn how to optimize your offers through strategic configurations like placements, constraints, and priorities, ensuring every interaction is meaningful. Dive in to discover how these components work together to help you deliver smarter, more engaging experiences for your customers.
 
-## Create & Manage Offers
+## Create & manage offers
 
 :::: landing-cards-container
 :::

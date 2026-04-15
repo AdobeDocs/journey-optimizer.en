@@ -11,7 +11,7 @@ keywords: artificial, AI, intelligent, journey, service
 exl-id: 20da09e1-0611-4d27-a589-30552011e06c
 version: Journey Orchestration
 ---
-# Integrate with Intelligent Services {#ai-overview}
+# Integrate with intelligent services {#ai-overview}
 
 The integration with **[!DNL Adobe Intelligent Services]** enables you to leverage artificial intelligence and machine learning for customer experience use cases. This allows marketing analysts to set up predictions tailored to a company's needs using business-level configurations without requiring data science expertise.
 

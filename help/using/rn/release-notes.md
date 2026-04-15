@@ -64,6 +64,7 @@ Because of this model, release notes are updated between monthly releases. For f
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -82,6 +83,7 @@ Because of this model, release notes are updated between monthly releases. For f
 </tr>
 </tbody>
 </table>
+--> 
 
 <table>
 <thead>
@@ -127,7 +129,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
 * **Temporarily unavailable fragments are skipped** - When using fragments in decision items, if a fragment is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing. [Read more](../experience-decisioning/fragments-decision-policies.md#temporary-unavailable-fragments)
 
-  Availability date: April 14, 2026
+  Availability date: April 14, 2026 
 
 #### Email design
 

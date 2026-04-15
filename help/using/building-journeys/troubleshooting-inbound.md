@@ -65,7 +65,7 @@ The chart below shows the sequence of debugging steps you can follow:
 
 ![Troubleshooting workflow for inbound message not displaying: check journey, edge delivery, and profile](assets/troubleshoot-inbound-scenario-1-steps.png){width="70%" align="center"}
 
-### Step 1: Check if the device/client is receiving the content from the Edge Network {#step-1}
+### Step 1: check if the device/client is receiving the content from the edge network {#step-1}
 
 Start by checking if the device/client is getting the expected content. 
 
@@ -93,7 +93,7 @@ Perform a curl request using [Adobe's API](https://developer.adobe.com/data-coll
 
 >[!ENDTABS]
 
-### Step 2: Check if the Edge Network is returning the content {#step-2}
+### Step 2: check if the edge network is returning the content {#step-2}
 
 This step is to make sure the Edge Network is returning the expected inbound content to be rendered on the device/client.
 
@@ -125,7 +125,7 @@ To debug the Edge Network behavior, follow the steps below.
 
 1. If the Edge Network delivery server does not view the profile as being in the relevant **joai** segment, go to the next step.<!--use the Platform Profile viewer UI to check if the expected **joai** segment is in a realized state in the Edge profile. Learn more in the [Experience Platform Profile UI documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide){target="_blank"}-->
 
-### Step 3: Check if the 'joai' audience membership has propagated to the Edge Network {#step-3}
+### Step 3: check if the 'joai' audience membership has propagated to the edge network {#step-3}
 
 This step is to verify that the Edge profile was correctly updated when the profile entered the inbound journey action and the profile was qualified into the corresponding **joai** segment.
 
@@ -159,7 +159,7 @@ To check for the presence of the **joai** segment in the Edge profile's `segment
 
 <!--The next step is to check whether the audience segment is present in the profile on the Hub.-->
 
-### Step 4: Check if the 'joai' audience membership is present in the profile on the Hub {#step-4}
+### Step 4: check if the 'joai' audience membership is present in the profile on the hub {#step-4}
 
 This step is to verify that the Hub profile was correctly updated when the profile entered the inbound journey action and the profile was qualified into the corresponding **joai** segment.
 

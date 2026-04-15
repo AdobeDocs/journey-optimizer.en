@@ -7,7 +7,7 @@ redpen-status: CREATED_||_2025-08-11_21-02-56
 badge: label="Legacy" type="Informative"
 exl-id: 96be492d-5003-4954-94cb-467ec5a725bd
 ---
-# Create Decision Management reports{#section-overview}
+# Create decision management reports{#section-overview}
 
 >[!TIP]
 >
@@ -15,7 +15,7 @@ exl-id: 96be492d-5003-4954-94cb-467ec5a725bd
 
 Use Decision Management event data and the DecisioningEvents XDM schema to build custom reports in Adobe Journey Optimizer. This section covers how to work with event datasets and access the XDM fields needed to analyze offer selections, fallback usage, and placement effectiveness.
 
-## Create Decision Management Reports
+## Create decision management reports
 
 :::: landing-cards-container
 :::

@@ -10,7 +10,7 @@ exl-id: 87d500e0-4a2c-4e22-a90c-611229b55d7c
 
 Dynamic content in Adobe Journey Optimizer empowers you to create personalized messages that adapt seamlessly to your audience. By using conditional rules, you can tailor emails, SMS, and push notifications based on profile attributes, audience membership, or real-time events. Whether you’re crafting a fallback message for when specific criteria aren’t met or saving reusable rules for consistency, the personalization editor and Email Designer offer intuitive tools to bring your ideas to life. This section guides you through building, managing, and applying dynamic content, helping you deliver impactful, context-aware communication every time.
 
-## Dynamic Content Features
+## Dynamic content features
 
 :::: landing-cards-container
 :::

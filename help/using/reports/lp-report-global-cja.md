@@ -43,7 +43,7 @@ The **[!UICONTROL Landing page Views]** KPI allows you to see the impact of your
 
 * **[!UICONTROL Landing page Views]**: Total number of visits to your landing page coming from journeys and external sources, including multiple visits of one profile.
 
-## Unique Landing page Views {#lp-unique-views}
+## Unique landing page views {#lp-unique-views}
 
 ![](assets/cja-lp-unique-views.png)
 

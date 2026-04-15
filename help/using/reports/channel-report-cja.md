@@ -129,7 +129,7 @@ The **[!UICONTROL Outbound errors]** table empowers you to pinpoint the precise 
 
 The **[!UICONTROL Outbound exclusions]** table present a comprehensive view of the different factors that resulted in the exclusion of user profiles from the targeted audience, resulting in the message not being received.
 
-## Journey Capping and Conflicts {#rule-sets}
+## Journey capping and conflicts {#rule-sets}
 
 The **[!UICONTROL Journey Capping and Conflicts]** table provides insights into how journey arbitration rule sets are performing, showing journey entrances and exclusions based on the capping rules and priority scores applied to your journeys.
 
