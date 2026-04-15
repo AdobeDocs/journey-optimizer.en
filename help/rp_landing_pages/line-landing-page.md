@@ -19,7 +19,7 @@ LINE messages can be created and sent in a journey or in a campaign:
 
 Before creating your LINE message, configure your LINE channel with Journey Optimizer. [Learn more](../using/line/line-configuration.md).
 
-## LINE Channel Documentation
+## LINE channel documentation
 
 :::: landing-cards-container
 

@@ -21,7 +21,7 @@ Email deliveries can be created:
 >
 >If this is your first time creating an email, make sure the email channel has been configured. [Learn more](../using/email/email-settings.md)
 
-## Email Channel Features and Documentation
+## Email channel features and documentation
 
 :::: landing-cards-container
 

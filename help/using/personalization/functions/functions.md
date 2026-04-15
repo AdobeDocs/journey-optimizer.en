@@ -40,7 +40,7 @@ Functions are organized into three categories for easy navigation:
 
 ## Functions{#functions-helper}
 
-### Aggregation and Array Functions
+### Aggregation and array functions
  
 <table>
     <tr>
@@ -99,7 +99,7 @@ Functions are organized into three categories for easy navigation:
     </tr>
 </table>
 
-### Date Time Functions{#date-functions}
+### Date time functions{#date-functions}
 
 <table>
     <tr>

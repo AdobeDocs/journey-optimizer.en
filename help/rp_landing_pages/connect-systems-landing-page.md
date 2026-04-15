@@ -10,7 +10,7 @@ exl-id: fe784f79-f8a2-4091-a5f0-3e44a1838c1c
 
 Adobe Journey Optimizer empowers you to seamlessly connect your systems and environments, ensuring your customer journeys are enriched with the right data and tools at every step. Whether you’re integrating with other Adobe solutions, third-party platforms, or leveraging APIs, you’ll discover how to unify workflows, personalize experiences, and streamline processes. Dive into topics like using sandboxes to manage environments, linking external systems for data enrichment, or activating AI-driven insights for smarter marketing. Each section is designed to help you unlock new possibilities, making it easier to create cohesive, impactful customer experiences across your connected ecosystem.
 
-## Connect Your Systems and Environments
+## Connect your systems and environments
 
 :::: landing-cards-container
 :::

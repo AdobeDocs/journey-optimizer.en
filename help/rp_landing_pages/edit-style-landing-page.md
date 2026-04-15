@@ -10,7 +10,7 @@ exl-id: c4269d5d-95fa-4b00-add5-42a26ab0de9f
 
 Adobe Journey Optimizer’s Email Designer includes powerful styling tools to help you create visually engaging and responsive emails. You can customize layouts, adjust alignment and spacing, personalize backgrounds, and fine-tune the appearance of individual content blocks. These capabilities give you precise control over design, allowing you to craft polished emails that reflect your brand and resonate with your audience.
 
-## Edit Style Features
+## Edit style features
 
 :::: landing-cards-container
 :::

@@ -10,7 +10,7 @@ exl-id: 430e1c63-0f82-4515-9cc2-2e1346742da5
 
 The 'Configure Content Card Channel' section in Adobe Journey Optimizer empowers you to deliver personalized, engaging experiences across web, mobile, and other platforms through dynamic content cards. By defining surfaces specific touchpoints identified using unique URIs and customizing configurations, you can tailor how your messages appear and interact with users. This section walks you through essential setup steps, from integrating with Adobe Experience Platform SDKs to troubleshooting and refining your designs. Whether you're creating rules for web personalization or leveraging mobile SDK features for tracking user interactions, each topic builds a clear path to help you optimize content delivery and drive meaningful engagement.
 
-## Configure Content Card Channel
+## Configure content card channel
 
 :::: landing-cards-container
 :::

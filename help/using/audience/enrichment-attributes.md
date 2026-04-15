@@ -50,7 +50,7 @@ Here are the actions you can perform using audiences' enrichment attributes:
 >+++
 
 
-## Frequently Asked Questions {#faq-enrichment}
+## Frequently asked questions {#faq-enrichment}
 
 You will find below Frequently Asked Questions about enrichment attributes.
 
