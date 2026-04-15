@@ -15,7 +15,7 @@ exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_list"
 >title="Journey events"
->abstract="An event is linked to a person. It relates to the behavior of a person (for example, a person bought a product, visited a shop, exited a website, etc.) or something happening linked to a person (for example, a person reached 10,000 loyalty points). Journey Optimizer listens to unitary events in journeys to orchestrate the best next actions."
+>abstract="Journey Optimizer supports two types of events in journeys: unitary events, linked to a specific person's behavior (such as a purchase or a loyalty milestone), and business events, triggered by a global occurrence (such as a flight cancellation or a stock update). Use events to trigger journeys and orchestrate the right actions for your profiles."
 
 Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey.
 
