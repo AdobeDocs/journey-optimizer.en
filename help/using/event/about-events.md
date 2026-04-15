@@ -60,6 +60,20 @@ For **unitary** events, there are two types of event ID:
 >
 >Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch, events inserted via **Query Service**, or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, please build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but can cause downstream challenges based on the actions used. This data does not necessarily need to go to the Real-Time Profile. If you would like to use the events for segmentation, we recommend you enable the dataset for profile.
 
+## How to choose {#choose-event-type}
+
+Use the following criteria to select the right event type for your journey. [Learn more on journey types](../building-journeys/journey.md#journey-types).
+
+* **Choose a unitary event** when the trigger is tied to a specific individual — for example, a purchase, a form submission, or a loyalty milestone. Unitary events require a person-based primary identity in the schema and start the journey immediately for that profile. [Learn how to configure a unitary event](../event/about-creating.md).
+
+* **Choose a business event** when the trigger is a non-people signal — for example, a product restock, a price drop, or a flight cancellation — and you want to act on a set of profiles related to that signal. Business events require a time-series schema with a non-people primary identity and the `_id` and `timestamp` fields. Plan for an audience export delay of 15 minutes to up to one hour. [Learn how to configure a business event](../event/about-creating-business.md).
+
+* **Choose audience qualification** when the trigger is a profile entering or exiting an audience, and you need more complex segmentation logic than a single event can provide. [Learn more on audience qualification events](../building-journeys/audience-qualification-events.md).
+
+>[!CAUTION]
+>
+>Business events cannot be used in the same journey as unitary events or audience qualification activities.
+
 ## Data cycle {#data-cycle}
 
 Events are POST API calls. Events are sent to Adobe Experience Platform through Streaming Ingestion APIs. The URL destination of events sent through transactional messaging APIs is called an "inlet". The payload of events follows XDM formatting. 
