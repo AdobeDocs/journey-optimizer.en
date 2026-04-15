@@ -41,7 +41,7 @@ When an error occurs, note the complete error code and any accompanying request 
 
 Use this section to find error codes grouped by service.
 
-### CJMPTS: Push and Transport Service errors {#cjmpts-errors}
+### CJMPTS: Push and transport service errors {#cjmpts-errors}
 
 These errors occur during push notification delivery and message transport operations.
 
@@ -70,7 +70,7 @@ These errors occur during journey execution, event processing, and API operation
 | **CJMRT-080608-400** | Bad request in domain/channel/delegation | Required DNS records or email/SMS configuration missing | 1. Complete DNS configuration for email domains<br/>2. Verify subdomain delegation is complete<br/>3. Run configuration wizards again<br/>4. Allow time for DNS propagation (up to 72 hours)<br/><br/>**Related documentation**: [Channel surfaces](../configuration/channel-surfaces.md), [Subdomain delegation](../configuration/delegate-subdomain.md) |
 | **CJMRT-110100-500** | Internal error on payload | Backend data/config bug or unsupported configuration | 1. Retry the operation<br/>2. Simplify configuration if using advanced features<br/>3. Escalate to Adobe Support with request ID and exact payload<br/>4. Check for known issues in release notes<br/><br/>**Related documentation**: [Journey troubleshooting](troubleshooting.md) |
 
-### CJMMAS: Message Authoring Service errors {#cjmmas-errors}
+### CJMMAS: message authoring service errors {#cjmmas-errors}
 
 These errors occur when creating, editing, or publishing messages, presets, and content.
 
@@ -95,7 +95,7 @@ These errors occur during campaign creation, configuration, and activation.
 | **CJMCMP-3001-400** | Simulation/preview "incorrect surface type filter" | Node built using legacy structure sends type=surfaceId, backend expects brandingPresetId | 1. Delete and recreate the affected node<br/>2. Use the new journey version/template<br/>3. Use test mode to clear configuration<br/>4. Bulk recreate nodes if issue is widespread<br/><br/>**Related documentation**: [Channel surfaces](../configuration/channel-surfaces.md), [Message simulation](../content-management/preview.md) |
 | **CJMCMP-2050-400** | Bad request in campaign activation or approval | Campaign references invalid/missing policy or segment | 1. Audit all campaign node configurations<br/>2. Verify policy/segment links are current and valid<br/>3. Update with correct configuration<br/>4. Re-test campaign before activation<br/><br/>**Related documentation**: [Campaign creation](../campaigns/create-campaign.md), [Campaign approval](../test-approve/gs-approval.md) |
 
-### CJMTL: Transport Layer errors {#cjmtl-errors}
+### CJMTL: transport layer errors {#cjmtl-errors}
 
 These errors occur during message transport and delivery operations.
 
@@ -104,7 +104,7 @@ These errors occur during message transport and delivery operations.
 | **CJMTL-010018-422** | "Personalization not allowed in domain name" when saving/sending content | Overly strict validation temporarily broke dynamic href domain personalization | 1. Refactor links if using domain variables<br/>2. Verify the latest AJO version is in use<br/>3. Retry the operation<br/>4. Use static domains if issue persists<br/><br/>**Related documentation**: [Personalization syntax](../personalization/personalization-syntax.md), [Email design](../email/content-from-scratch.md) |
 | **CJMTL-010011-422** | Unprocessable entity - Push/SMS/Email send fails, says "invalid field" | Payload or recipient/contact data missing or invalid | 1. Inspect logs for specific field errors<br/>2. Fix profile/contact information<br/>3. Validate with test profile<br/>4. Refactor payload format as needed<br/><br/>**Related documentation**: [Profile management](../audience/get-started-profiles.md), [Test profiles](../audience/creating-test-profiles.md) |
 
-### CJMRPS: Reporting and Provisioning Service errors {#cjmrps-errors}
+### CJMRPS: reporting and provisioning service errors {#cjmrps-errors}
 
 These errors occur during reporting configuration and dataset provisioning operations.
 

@@ -30,7 +30,7 @@ The **[!UICONTROL Update Profile]** activity requires a dedicated dataset to sto
 
 Additionally, the **[!UICONTROL Update Profile]** activity configuration does not require an [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}. As such, ensure that the selected dataset uses the same **[!UICONTROL Identity namespace]** that was used by the action that launched the journey as it is this namespace these updates will use. The identity map can also be used by the selected dataset. Failure to select a dataset with the correct identity namespace or one that uses identity map will cause the **[!UICONTROL Update Profile]** activity to fail.
 
-## Configure the Update Profile activity {#use-profile-update}
+## Configure the update profile activity {#use-profile-update}
 
 Follow the steps below to configure the **[!UICONTROL Update Profile]** activity in your journey.
 

@@ -49,7 +49,7 @@ Essential terms and concepts to help you navigate Journey Optimizer confidently.
 
 ::::
 
-## Choose Your Learning Path {#by-role}
+## Choose your learning path {#by-role}
 
 Get started with role-specific guidance tailored to your responsibilities and goals.
 
@@ -137,13 +137,13 @@ Discover how AI helps you create content, optimize send times, and make smarter 
 
 ## Additional Resources {#additional-resources}
 
-### Reference & Best Practices
+### Reference & best practices
 
 * **[Guardrails & Limitations](../using/start/guardrails.md)** - Understand constraints and recommended practices for using Journey Optimizer features effectively
 * **[Accessibility Features](../using/start/accessibility.md)** - Learn about accessibility features and WCAG compliance to ensure inclusivity for all users
 * **[Troubleshooting Guide](../using/start/troubleshooting.md)** - Find answers to frequently asked questions and solutions to common problems
 
-### Learn & Get Support
+### Learn & get support
 
 * **[Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}** - Step-by-step video tutorials covering core capabilities
 * **[Use Case Playbooks](../using/start/ai-features.md#playbooks)** - Pre-built workflows for common scenarios like abandoned cart recovery and welcome campaigns
@@ -152,7 +152,7 @@ Discover how AI helps you create content, optimize send times, and make smarter 
 * **[Community Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Connect with other users, ask questions, and share best practices
 * **[Documentation Updates](../using/rn/documentation-updates.md)** - Stay informed about recent changes and additions to the documentation
 
-## Ready to Get Started?
+## Ready to get started?
 
 Choose the path that's right for you:
 

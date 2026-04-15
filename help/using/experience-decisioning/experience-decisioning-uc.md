@@ -8,7 +8,7 @@ level: Intermediate, Experienced
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
 version: Journey Orchestration
 ---
-# Use Decisioning in a code-based experience with Content experiment {#experience-decisioning-uc}
+# Use decisioning in a code-based experience with content experiment {#experience-decisioning-uc}
 
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 

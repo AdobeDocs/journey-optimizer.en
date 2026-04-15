@@ -18,7 +18,7 @@ hide: true
 
 The [!DNL Adobe Journey Optimizer] MCP integration lets you query campaigns, journeys, and offers using plain-language prompts — without writing API calls or navigating product screens. This page explains how the integration works, what you can do with it, and how to get started.
 
-## What is the Model Context Protocol? {#mcp-overview}
+## What is the model context protocol? {#mcp-overview}
 
 Marketing and customer-experience teams increasingly rely on chat-based applications and developer tools — such as Anthropic Claude, OpenAI ChatGPT, Cursor, and Microsoft Copilot Studio — to streamline their day-to-day work. These applications support the **Model Context Protocol (MCP)**, an open standard that lets applications expose back-end tools to large language models (LLMs) in a uniform way.
 

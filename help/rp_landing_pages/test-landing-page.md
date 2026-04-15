@@ -16,7 +16,7 @@ This section covers all testing and approval capabilities in Journey Optimizer. 
 
 This landing page helps you choose the right testing approach based on what you're building (campaigns vs. journeys), walks you through recommended testing workflows, and provides quick access to all testing and approval resources. Start with [Choose your testing approach](#choose-your-testing-approach) below to identify which tools apply to your use case. For definitions of key testing terms, see [Key terminology](#key-terminology).
 
-## Test & Approve Content
+## Test & approve content
 
 :::: landing-cards-container
 :::

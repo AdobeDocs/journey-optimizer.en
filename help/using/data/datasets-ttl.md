@@ -34,7 +34,7 @@ The table below lists all impacted datasets and their respective Time-To-Live in
 |Journey Step Events|13 months|n/a|
 |ODE DecisionEvents - prod decisioning|13 months|n/a|
 
-## Frequently Asked Questions {#faq}
+## Frequently asked questions {#faq}
 
 You will find below Frequently Asked Questions about datasets Time-to-live (TTL).
 

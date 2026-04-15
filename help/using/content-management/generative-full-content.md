@@ -119,7 +119,7 @@ After generating content variations, you can fine-tune the results to ensure the
    * **Web**: Once you defined your web campaign settings and edited your content as desired, you can review and activate your web campaign. [Learn more](../web/create-web.md#activate-web-campaign)
    * **Landing Page**: Once your landing page is ready, you can publish it to make it available for use in a message. [Learn more](../landing-pages/create-lp.md#publish-landing-page)
 
-## For Mobile Channels {#mobile-channels}
+## For mobile channels {#mobile-channels}
 
 AI Assistant also supports content generation for mobile push notifications, enabling you to create engaging titles, messages, and images for your mobile apps. This helps you maintain consistent, high-quality communication across all customer touchpoints, including mobile.
 

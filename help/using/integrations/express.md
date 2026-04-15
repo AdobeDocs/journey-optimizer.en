@@ -35,7 +35,7 @@ To access the **[!DNL Adobe Express]** menu, access your **Image settings** from
 
 ➡️ [Discover this feature in video](#video) 
 
-## Using Adobe Express with an Enterprise License {#licence}
+## Using Adobe Express with an enterprise license {#licence}
 
 The features detailed in the sections below are accessible to users without an Adobe Express Enterprise license.
 
@@ -45,7 +45,7 @@ With an Enterprise license, users have full access to the Adobe Express Web edit
 
 For more information on available use cases for users with an Enterprise license for Adobe Express, refer to [Adobe Express Web documentation](https://helpx.adobe.com/express/web.html).
 
-## Using Adobe Express without an Enterprise License  {#edit}
+## Using Adobe Express without an enterprise license  {#edit}
 
 Without an Enterprise license, users have access to the following use cases available with Adobe Express:
 

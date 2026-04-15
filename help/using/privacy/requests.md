@@ -54,7 +54,7 @@ The three upstream services are:
 >
 >For delete and access requests, you need to call these individual systems to make sure the requests are handled by each of them. Making a privacy request to [!DNL Adobe Journey Optimizer] will not remove data from all these systems.
 
-## Create Access and Delete requests
+## Create access and delete requests
 
 ### Prerequisites
 
