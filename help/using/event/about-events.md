@@ -15,7 +15,7 @@ exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_list"
 >title="Journey events"
->abstract="Journey Optimizer supports two types of events in journeys: unitary events, linked to a specific person's behavior (such as a purchase or a loyalty milestone), and business events, triggered by a global occurrence (such as a flight cancellation or a stock update). Use events to trigger journeys and orchestrate the right actions for your profiles."
+>abstract="Journey Optimizer supports three types of events in journeys: unitary events, linked to a specific person's behavior (such as a purchase or a loyalty milestone); business events, triggered by a global occurrence (such as a flight cancellation or a stock update); and audience qualification events, triggered when a profile enters or exits an audience. Use events to trigger journeys and orchestrate the right actions for your profiles."
 
 Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey.
 
@@ -27,7 +27,7 @@ In the event configuration, you configure the events expected in the journeys. T
 
 Event configuration is **mandatory** and must be performed by a Data engineer.
 
-You can configure two types of events: **Unitary events** and **Business events**.
+You can configure three types of events: **Unitary events**, **Business events**, and **Audience qualification events**.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -39,8 +39,15 @@ Unitary journeys (starting with an event or an audience qualification) include a
 
 ## Business events {#business-events}
 
-**Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancelation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after.Learn how to create a business event [on this page](../event/about-creating-business.md).
+**Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancelation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after. Learn how to create a business event [on this page](../event/about-creating-business.md).
 
+## Audience qualification events {#audience-qualification-events}
+
+An **audience qualification** event is triggered when a profile enters or exits an audience. For example, a customer crossing a loyalty spend threshold enters the Gold tier audience — that qualification triggers the journey for that profile in real time (for streaming audiences) or at the next batch evaluation. Unlike unitary events, audience qualification lets you build complex triggering logic using the full power of audience definitions, without requiring implementation changes to send a new event. Learn more on [audience qualification events](../building-journeys/audience-qualification-events.md).
+
+>[!NOTE]
+>
+>Audience qualification events are not configured in **Administration > Events** — they are selected directly on the journey canvas as the first step of a journey.
 
 ## Event ID type {#event-id-type}
 
@@ -68,7 +75,7 @@ Use the following criteria to select the right event type for your journey — t
 
 * **Choose a business event** when the trigger is a global occurrence — for example, a product restock, a price drop, or a flight cancellation — and you want to broadcast to a set of profiles related to that signal. Business events must be the first step in the journey and automatically target profiles via a **Read Audience** activity. They require a time-series schema with a non-people primary identity and the `_id` and `timestamp` fields. Plan for an audience export delay of 15 minutes to up to one hour. [Learn how to configure a business event](../event/about-creating-business.md).
 
-* **Choose audience qualification** when the trigger is a profile entering or exiting an audience, and you need more complex segmentation logic than a single event can provide — for example, re-engaging lapsed customers who just met a spend threshold, or triggering an offboarding flow when a VIP member drops out of the loyalty tier. [Learn more on audience qualification events](../building-journeys/audience-qualification-events.md).
+* **Choose an audience qualification event** when the trigger is a profile entering or exiting an audience, and you need more complex segmentation logic than a single event can provide — for example, re-engaging lapsed customers who just met a spend threshold, or triggering an offboarding flow when a VIP member drops out of the loyalty tier. [Learn more on audience qualification events](../building-journeys/audience-qualification-events.md).
 
 >[!CAUTION]
 >
