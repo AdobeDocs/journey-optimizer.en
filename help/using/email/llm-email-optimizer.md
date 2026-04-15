@@ -9,13 +9,9 @@ exl-id: 0c2f95ce-28a0-480c-9829-b7e4975b6340
 ---
 # Optimize email text for AI inboxes {#email-text-optimizer}
 
-[!DNL Adobe Journey Optimizer] comes with an email-channel capability that helps you structure the [text version](text-version-email.md) of your messages for improved AI-assisted inbox experiences—such as [!DNL Apple Intelligence] and [!DNL Google Gemini] in [!DNL Gmail]—so they can answer questions and summarize mail based on your content more accurately, with better results.
+[!DNL Adobe Journey Optimizer] comes with an email-channel capability that helps you structure a specific version of your messages for improved AI-assisted inbox experiences—such as [!DNL Apple Intelligence] and [!DNL Google Gemini] in [!DNL Gmail]—so they can answer questions and summarize mail based on your content more accurately, with better results.
 
->[!NOTE]
->
->This capability changes plain text only, not the HTML version of your email content.
-
-You can use this capability to refine plain text so AI-assisted inbox experiences are more likely to surface the offers, calls to action, and details you intend—rather than thin auto-generated text or unrelated context.
+You can use this capability to refine a dedicated text version of your messages so AI-assisted inbox experiences are more likely to surface the offers, calls to action, and details you intend—rather than thin auto-generated text or unrelated context.
 
 ## How it works {#how-it-works}
 
@@ -25,13 +21,19 @@ Typical questions recipients may ask in AI-assisted inbox experiences are *What 
 
 * Also, the assistants may proactively search for discounts or coupons related to the brand and fold those into the answer, so the user is no longer looking at only what your message actually promised. That behavior is useful to end users, but dilutes control for marketers who need answers to track the real terms in the send.
 
-To prevent these issues, [!DNL Journey Optimizer] rewrites the plain text so that coupons, discount ranges, call to actions, and other priorities appear up front in clear linear copy. The goal is for inbox AI to ground summaries and Q&A in your defined offers and actions—instead of leaning on a thin default text part or on unrelated web results.
+To prevent these issues, [!DNL Journey Optimizer] creates an additional text version of your messages so that coupons, discount ranges, call to actions, and other priorities appear up front in clear linear copy.
+
+>[!NOTE]
+>
+>This dedicated text version is not the same as the default or custom plain text version of your messages. [Learn more](text-version-email.md)
+
+The goal is for inbox AI to ground summaries and Q&A in your defined offers and actions—instead of leaning on a thin default text part or on unrelated web results.
 
 >[!IMPORTANT]
 >
 >Exact AI-assistant behaviors depend on the inbox provider and model version. After your email is delivered, answers and summaries provided by external AI clients can be wrong, incomplete, or mixed with web results.
 >
->The Optimize email text for AI inboxes capability only improves the plain text you author in Journey Optimizer; it does not guarantee how a third-party assistant will interpret or display the message. Read more about the [limitations and risks of third-party inbox AI](#inbox-ai-risks).
+>The Optimize email text for AI inboxes capability only generates a dedicated text version in Journey Optimizer; it does not guarantee how a third-party assistant will interpret or display the message. Read more about the [limitations and risks of third-party inbox AI](#inbox-ai-risks).
 
 ## Recommended use cases {#use-cases}
 
@@ -41,7 +43,7 @@ To prevent these issues, [!DNL Journey Optimizer] rewrites the plain text so tha
 
 * **Dense or fragmented auto-generated text** — When default plain text is hard to scan, optimization can produce a clearer linear narrative with explicit offers and links.
 
-* **Controlling inbox Q&A** — When you expect recipients to ask assistants *what the email is about* or *what the offers are*, a strong plain text version reduces partial summaries and reduces reliance on web-supplemented answers that are not tied to your approved copy.
+* **Controlling inbox Q&A** — When you expect recipients to ask assistants *what the email is about* or *what the offers are*, a strong ai-inbox version reduces partial summaries and avoids reliance on web-supplemented answers that are not tied to your approved copy.
 
 ## Optimize for AI inbox experiences {#optimize-with-ai}
 
@@ -55,17 +57,9 @@ To optimize the plain text version of your email for AI inboxes with [!DNL Journ
 
 1. Open your email in the [Email Designer](content-from-scratch.md) (from a campaign, journey, or template, depending on your workflow).
 
-1. Select the **[!UICONTROL Plain text]** icon to open the text version of your email. [Learn more](text-version-email.md)
-
-    ![Select the Plain text icon to open the text version of your email](assets/text-optimizer-text-icon.png){zoomable="yes"}
-
-1. The text version of your email is displayed. Click the **[!UICONTROL Optimize for AI Inbox]** button to generate an improved plain text version that highlights key information for AI-assisted reading and summarization.
+1. Click the **[!UICONTROL Optimize for AI Inbox]** button to generate an improved version that highlights key information for AI-assisted reading and summarization.
 
     ![Optimize for AI Inbox button in the text version view](assets/text-optimizer-for-ai-button.png){zoomable="yes" width="80%"}
-
-    >[!NOTE]
-    >
-    >Upon clicking the **[!UICONTROL Optimize for AI Inbox]** button, the **[!UICONTROL Sync with HTML]** option is automatically disabled. [Learn more](text-version-email.md#plain-text-custom)
 
 1. If this is the first time you are using Generative AI in [!DNL Journey Optimizer], you will be asked to agree to the user agreement. To learn more, check out the [Adobe Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html){target="_blank"}.
 
