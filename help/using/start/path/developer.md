@@ -6,7 +6,7 @@ role: Developer
 level: Experienced
 exl-id: 5053dd4f-d050-415f-bc74-d6d061bdcbe1
 ---
-# Get Started for Developers {#get-started-developers}
+# Get started for developers {#get-started-developers}
 
 As a **Developer**, you are responsible for implementing and integrating [!DNL Adobe Journey Optimizer] into your applications and systems. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) and the [Data Engineer](data-engineer.md) have granted you access and prepared your environment.
 

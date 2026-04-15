@@ -8,7 +8,7 @@ role: Developer, User, Admin, Leader
 level: Intermediate
 exl-id: f0985d1f-0bcf-452f-bd46-dfeca0424f01
 ---
-# Set up & manage Customer Managed Keys {#cmk}
+# Set up & manage customer managed keys {#cmk}
 
 >[!AVAILABILITY]
 >

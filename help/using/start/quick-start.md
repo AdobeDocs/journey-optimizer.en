@@ -27,7 +27,7 @@ This unified experience allows you to implement entire use cases in one place, f
 
 **Important Note:** Adobe Journey Optimizer defines distinct roles with specific responsibilities. A single individual can perform multiple roles or all roles, depending on your organization's structure.
 
-## Role-Based Quick Start Guides
+## Role-Based quick start guides
 
 To simplify implementation, Adobe Journey Optimizer organizes tasks into specific roles based on expertise. Each role focuses on essential tasks required to deliver a seamless customer experience.
 
@@ -40,7 +40,7 @@ To simplify implementation, Adobe Journey Optimizer organizes tasks into specifi
 
 Each role addresses a specific phase of Adobe Journey Optimizer implementation and ensures a structured and efficient deployment process.
 
-## Implementation Order and Role Dependencies
+## Implementation order and role dependencies
 
 A successful Journey Optimizer implementation typically follows this sequence, which reflects the dependencies between roles:
 
@@ -80,7 +80,7 @@ A successful Journey Optimizer implementation typically follows this sequence, w
 
  **Note:** While this sequence is typical, some activities can occur in parallel. For instance, Developers may work on app integrations while Data Engineers configure schemas.
 
-## Getting Started by Role
+## Getting started by role
 
 Each role begins with specific tasks tailored to its focus. Completing these initial steps ensures smoother onboarding and alignment with the overall implementation process:
 
@@ -103,7 +103,7 @@ As a Marketer or Business Practitioner, you design customer journeys to deliver 
 
 [Get Started as a Marketer →](path/marketer.md)
 
-### For Data Engineers {#for-data-engineers}
+### For data engineers {#for-data-engineers}
 
 As a Data Architect or Engineer, you set up and maintain the customer profile data and other data sources that power the experiences orchestrated by Journey Optimizer.
 

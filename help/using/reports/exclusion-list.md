@@ -11,7 +11,7 @@ exl-id: a34ba1a8-87d5-4f9c-a181-2f49e74e8f09
 ---
 # Exclusion reasons {#exclusion-list}
 
-## How Exclusions Are Counted in Campaign Reports
+## How exclusions are counted in Campaign reports
 
 When viewing campaign reports, note that the *Exclusions* metric is calculated as follows:
 

@@ -27,7 +27,7 @@ Push notifications can be created:
 >While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and SMS messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system.
 
 
-## Push Notification Channel
+## Push notification channel
 
 :::: landing-cards-container
 

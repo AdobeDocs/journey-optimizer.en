@@ -39,13 +39,13 @@ The complete Adobe Journey Optimizer API documentation includes detailed informa
 
 Access the [Adobe Journey Optimizer API documentation](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"} and browse the **API references** menu to explore all available APIs.
 
-## Decision Management APIs {#decision-management-apis}
+## Decision management apis {#decision-management-apis}
 
 Journey Optimizer provides dedicated APIs for Decision Management, allowing you to programmatically manage offers, decisions, and placements.
 
 Refer to the [Decision Management API developer guide](../offers/api-reference/getting-started.md) to get started with offer decisioning APIs.
 
-## Experience Decisioning APIs {#experience-decisioning-apis}
+## Experience decisioning apis {#experience-decisioning-apis}
 
 Journey Optimizer also offers Experience Decisioning APIs for delivering personalized decision items through code-based experiences. Experience Decisioning provides a simplified approach to personalization with decision items, eligibility rules, and selection strategies.
 

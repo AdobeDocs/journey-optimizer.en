@@ -464,7 +464,7 @@ The **[!UICONTROL SMS Performance by date]** widget offers a detailed overview o
 
 +++
 
-### SMS - Error Reasons {#sms-error-reasons}
+### SMS - error reasons {#sms-error-reasons}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_sms_error_reasons"
@@ -473,7 +473,7 @@ The **[!UICONTROL SMS Performance by date]** widget offers a detailed overview o
 
 The **[!UICONTROL Excluded Reasons]** graphs and table allow you to identify the specific errors that occurred during the sending process of your SMS messages within the last 24 hours, facilitating a thorough analysis of any issues encountered.
 
-### SMS - Excluded Reasons {#sms-excluded-reasons}
+### SMS - excluded reasons {#sms-excluded-reasons}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_sms_excluded_reasons"
@@ -550,7 +550,7 @@ The **[!UICONTROL Interactions by element]** table presents comprehensive inform
 
 From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Direct mail]** tab details the main information relative to your Direct mail.
 
-### Direct Mail - Sending statistics {#direct-mail-sending}
+### Direct mail - sending statistics {#direct-mail-sending}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_direct_sending_statistics"
@@ -573,7 +573,7 @@ The **[!UICONTROL Direct Mail - Sending statistics]** table provides a concise s
 
 +++
 
-### Direct Mail - Error reasons {#direct-mail-error-reasons}
+### Direct mail - error reasons {#direct-mail-error-reasons}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_direct_error_reasons"
@@ -584,7 +584,7 @@ The **[!UICONTROL Direct Mail - Sending statistics]** table provides a concise s
 
 The **[!UICONTROL Direct Mail - Error reasons]** graphs and table provide the means to identify specific errors that occurred during the sending process of your direct mail messages, allowing for a detailed analysis of any issues encountered in the last 24 hours.
 
-### Direct Mail - Excluded reasons {#direct-mail-excluded-reasons}
+### Direct mail - excluded reasons {#direct-mail-excluded-reasons}
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_direct_excluded_reasons"

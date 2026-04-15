@@ -107,7 +107,7 @@ To import files to **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Ser
 -->
 
 
-## Frequently Asked Questions {#faq-assets}
+## Frequently asked questions {#faq-assets}
 
 You will find below Frequently Asked Questions about Adobe Experience Manager Assets.
 

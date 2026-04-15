@@ -15,7 +15,7 @@ exl-id: 09ba2a43-f7f3-4414-b7b3-64c9932ff6c7
 
 Context data empowers Adobe Journey Optimizer to create smarter, more personalized experiences by using real-time information to shape decision outcomes. Whether you're tailoring offers based on a user's device type or leveraging weather data to refine eligibility rules, context data allows you to adapt your strategies with precision. This guide explores how context data works across two key APIs: Decisioning and Edge Decisioning, highlighting their unique strengths, limitations, and use cases. You'll learn how to pass and apply context data, configure eligibility rules, and use ranking formulas, all with step-by-step instructions to help you unlock its full potential in your campaigns.
 
-## Leverage Context Data
+## Leverage context data
 
 :::: landing-cards-container
 :::
