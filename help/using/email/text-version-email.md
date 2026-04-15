@@ -54,10 +54,12 @@ You can help AI-powered inbox features (such as summaries in [!DNL Gmail], [!DNL
 >When using this capability, the **[!UICONTROL Sync with HTML]** option is automatically disabled.
 
 For a full walkthrough and recommended scenarios, see [Optimize email text for AI inboxes](llm-email-optimizer.md).
+-->
 
 ## When to use custom plain text versions {#when-to-use}
 
-Understanding when to create a custom plain text version versus using auto-sync helps ensure optimal email delivery and readability.-->
+Understanding when to create a custom plain text version versus using auto-sync helps ensure optimal email delivery and readability.
+
 
 ### Use custom plain text (disable sync) when:
 

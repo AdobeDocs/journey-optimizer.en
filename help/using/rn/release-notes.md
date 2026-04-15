@@ -64,7 +64,8 @@ Because of this model, release notes are updated between monthly releases. For f
 </tbody>
 </table>
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Optimize email text for AI inboxes</strong><br/></th>
@@ -81,7 +82,8 @@ Because of this model, release notes are updated between monthly releases. For f
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 <table>
 <thead>
