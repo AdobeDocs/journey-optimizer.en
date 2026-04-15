@@ -283,7 +283,6 @@ solution: Journey Optimizer
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Manage the text version](using/email/text-version-email.md)
-        + [Optimize email text for AI inboxes](using/email/llm-email-optimizer.md)
         + [Add metadata](using/email/email-metadata.md)
         + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
       + Edit style {#edit-style}

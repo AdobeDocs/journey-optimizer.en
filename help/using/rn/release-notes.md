@@ -64,6 +64,7 @@ Because of this model, release notes are updated between monthly releases. For f
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -82,6 +83,7 @@ Because of this model, release notes are updated between monthly releases. For f
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>
