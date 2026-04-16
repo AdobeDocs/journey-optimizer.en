@@ -12,7 +12,7 @@ Content cards are a new digital messaging feature in Adobe Journey Optimizer tha
 
 This feature enables marketers to present relevant, rich media content to users, driving higher engagement and ensuring important messages are seen without disrupting the user journey.
 
-## Content Cards Documentation
+## Content cards documentation
 
 :::: landing-cards-container
 

@@ -45,7 +45,7 @@ This playground provides a simulated environment to write and test personalizati
 
 ➡️ [Access the personalization playground](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
 
-## AI Assistant in the Personalization Editor {#ai-personalization-expressions}
+## AI assistant in the personalization editor {#ai-personalization-expressions}
 
 In the **[!UICONTROL Personalization Editor]**, **[!UICONTROL AI Assistant]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
 

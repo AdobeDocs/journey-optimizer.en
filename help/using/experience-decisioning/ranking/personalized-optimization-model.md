@@ -27,7 +27,7 @@ To train a personalized optimization model, the dataset must meet the following 
 
 Until the first time a personalized optimization model is trained, offers within a selection strategy utilizing a personalized optimization model will be served at random.
 
-## Key Model Assumptions and Limitations {#key}
+## Key model assumptions and limitations {#key}
 
 In order to maximize the advantage of using personalized optimization, there are some key assumptions and limitations to be aware of. 
 

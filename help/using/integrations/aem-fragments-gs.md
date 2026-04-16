@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: c36a53a4-c324-4082-838e-ed27bd3b2e90
 ---
-# Get started with Adobe Experience Manager Content Fragments {#aem-fragments}
+# Get started with Adobe Experience Manager content fragments {#aem-fragments}
 
 >[!AVAILABILITY]
 >

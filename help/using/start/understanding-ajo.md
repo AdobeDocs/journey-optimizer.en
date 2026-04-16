@@ -27,7 +27,7 @@ Adobe Experience Platform serves as the backbone, enabling brands to centralize 
 * **Real-time Customer Profile** - Creates unified profiles by merging data from multiple sources (email interactions, in-store purchases, web behavior). [Learn about profiles](../audience/get-started-profiles.md)
 * **Governance Layer** - Governs data access, privacy compliance, and security while adhering to regulations. [View privacy documentation](../privacy/get-started-privacy.md)
 
-### Adobe Journey Optimizer: The Orchestration Engine {#ajo-orchestration}
+### Adobe Journey Optimizer: the orchestration engine {#ajo-orchestration}
 
 Adobe Journey Optimizer applies the data and insights from Adobe Experience Platform to deliver intelligent, personalized customer experiences:
 
@@ -37,13 +37,13 @@ Adobe Journey Optimizer applies the data and insights from Adobe Experience Plat
 * **Delivery (Connections)** - Delivers messages through channels like email, SMS, push notifications, and direct mail; exports data to external systems. [Configure channels](../configuration/get-started-configuration.md)
 * **Measurement & Analysis** - Tracks customer engagement and campaign performance with reports for continuous improvement. [View reports](../reports/campaign-global-report-cja.md)
 
-### The Continuous Optimization Cycle {#optimization-cycle}
+### The continuous optimization cycle {#optimization-cycle}
 
 This ecosystem operates as a continuous optimization cycle. Data drives customer understanding, which informs personalized content and decisions. These are orchestrated into journeys, delivered across channels, measured for effectiveness, and refined over time.
 
 ![](../assets/do-not-localize/get-started-flow.png)
 
-## Key Functional Areas {#functional-areas}
+## Key functional areas {#functional-areas}
 
 Journey Optimizer includes seven key functional areas that work together seamlessly:
 
@@ -57,7 +57,7 @@ Journey Optimizer includes seven key functional areas that work together seamles
 | **Connections** | Connect data sources and channels | Configure source connectors, set up channels, connect to external platforms. [Learn more](../configuration/get-started-configuration.md) |
 | **Administration & Privacy** | Control setup and compliance | Manage users, configure sandboxes, set up channels, handle privacy requests. [Learn more](../administration/permissions.md) |
 
-### How These Areas Work Together {#working-together}
+### How these areas work together {#working-together}
 
 These functional areas operate in a continuous cycle:
 

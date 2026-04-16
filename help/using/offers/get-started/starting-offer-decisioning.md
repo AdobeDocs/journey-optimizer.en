@@ -11,7 +11,7 @@ level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
 version: Journey Orchestration
 ---
-# Get started with Decision Management {#about-decision-management}
+# Get started with decision management {#about-decision-management}
 
 Use [!DNL Journey Optimizer] to deliver the best offer and experience to your customers across all touch points at the right time. Once designed, target your audiences with personalized offers.
 
@@ -64,7 +64,7 @@ Decision Management capabilities and integration with Adobe Experience Platform 
 
     ![](../../assets/do-not-localize/call-center.png)
 
-## Grant access to Decision Management {#granting-acess-to-decision-management}
+## Grant access to decision management {#granting-acess-to-decision-management}
 
 Permissions to access and use decisioning capabilities are managed using the [Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html){target="_blank"}. 
 
@@ -104,7 +104,7 @@ You can find below the list of the main concepts you will work with when using D
 
 ## How-to videos{#video}
 
-### What is Decision Management? {#what-is-offer-decisioning}
+### What is decision management? {#what-is-offer-decisioning}
 
 The video below provides an introduction to Decision Management key capabilities, architecture and use cases:
 

@@ -66,7 +66,7 @@ To use a fragment into an email, follow the steps below.
 
 1. Add as many fragments as you want and **[!UICONTROL Save]** your changes.
 
-### Limitations when using Dynamic Content in fragments {#fragment-dynamic-content}
+### Limitations when using dynamic content in fragments {#fragment-dynamic-content}
 
 >[!CAUTION]
 >
@@ -80,7 +80,7 @@ To use a fragment into an email, follow the steps below.
 >
 >**Recommended approach:** When using multiple fragments with Dynamic Content in your email, add each fragment directly into its own structure block at the email level. This ensures proper functionality and prevents the issues mentioned above.
 
-## Best practices for fragments with Dynamic Content {#fragment-best-practices}
+## Best practices for fragments with dynamic content {#fragment-best-practices}
 
 Follow these best practices when working with visual fragments and Dynamic Content (conditional content):
 

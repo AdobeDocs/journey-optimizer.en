@@ -9,7 +9,7 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 ---
-# AI Assistant for Personalization Expressions{#generative-personalization-expressions}
+# AI assistant for personalization expressions{#generative-personalization-expressions}
 
 >[!IMPORTANT]
 >
