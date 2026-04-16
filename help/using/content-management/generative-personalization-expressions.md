@@ -103,17 +103,22 @@ You can select an existing personalization expression and use AI Assistant to fi
 
 ## Generate from the Email Designer {#generate-email-designer}
 
-You can use AI Assistant for personalization directly while editing text inline in the Email Designer, without opening the full [!UICONTROL Personalization Editor]. The generated expression is inserted at the cursor position in the text component.
+[!UICONTROL AI Assistant for personalization expressions] is also available directly from the inline editing experience in the Email Designer, without opening the full [!UICONTROL Personalization Editor]. The generated expression is inserted at the cursor position in the text component.
 
 1. In the Email Designer, select a text component and start editing it inline.
 
-1. In the inline editing popover that appears, click **[!UICONTROL Use AI to generate]** at the top.
+1. Open the inline personalization popover in one of two ways:
+
+   * Type `{{` at the position where you want the expression inserted — the popover opens automatically.
+   * Click **[!UICONTROL Use AI to generate]** in the inline editing popover if it is already open.
 
     ![](assets/ai-perso-email-entry.png)
 
 1. In the text field, describe the personalization expression you want in plain language, then click **[!UICONTROL Generate]**.
 
-1. Review the result in the **[!UICONTROL Expression]** tab. Switch to the **[!UICONTROL Preview]** tab to see how the expression evaluates against sample data.
+1. Review the result in the **[!UICONTROL Expression]** tab to see the generated expression.
+
+    Switch to the **[!UICONTROL Preview]** tab to see how the expression evaluates using sample profile values, so you can verify the output before inserting it.
 
     ![](assets/ai-perso-email-result.png)
 
@@ -121,4 +126,4 @@ You can use AI Assistant for personalization directly while editing text inline 
 
 >[!NOTE]
 >
->The assistant session in the inline Email Designer popover is independent from sessions in the [!UICONTROL Personalization Editor]. Closing the popover clears the conversation.
+>The [!UICONTROL AI Assistant for personalization expressions] session in the inline Email Designer popover is independent from sessions in the [!UICONTROL Personalization Editor]. Closing the popover clears the conversation.
