@@ -43,12 +43,6 @@ Journey Optimizer now includes **Campaign Orchestration**, a new capability purp
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
 
->[!TAB Quiet Hours]
-
-Quiet hours let you define time-based exclusions for Email, SMS, Push, and WhatsApp channels.
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/quiet-hours.md)
-
 
 >[!ENDTABS]
 
