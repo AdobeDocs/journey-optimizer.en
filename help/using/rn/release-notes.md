@@ -133,6 +133,10 @@ Because of this model, release notes are updated between monthly releases. For f
 
 #### Email design
 
+* **AI Assistant for personalization expressions in the Email Designer** - AI Assistant for personalization expressions is now also available directly from the inline editing experience in the Email Designer. When editing a text component, click **Use AI to generate** in the inline editing popover to describe the personalization you need in plain language, review the generated expression, and insert it without leaving the Email Designer. [Learn more](../content-management/generative-personalization-expressions.md#generate-email-designer)
+
+  Availability date: April 15, 2026
+
 * **Advanced HTML editor for email content** - Advanced HTML mode lets you edit the HTML source of your content in the Email Designer, add advanced expressions (such as conditions) in the source, and toggle between HTML view and Desktop view without losing your changes.
 
   Previously available for email content templates only, this capability is now deployed to **email** content in the Email Designer (for example, emails authored in journeys and campaigns), in addition to email content templates. It is currently in Limited Availability — contact your Adobe representative to gain access. [Read more](../email/email-expert-mode.md)
