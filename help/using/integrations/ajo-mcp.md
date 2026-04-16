@@ -28,7 +28,7 @@ Marketing and customer-experience teams increasingly rely on chat-based applicat
 
 The [!DNL Adobe Journey Optimizer] MCP server lets you inspect, summarize, and troubleshoot journeys, campaigns, and offers directly from your AI assistant. All operations are **read-only** — the MCP server surfaces retrieve APIs as plain-language answers so you can:
 
-* **Understand journey logic** — Get a human-readable summary of any journey's branching, conditions, and actions.
+<!--* **Understand journey logic** — Get a human-readable summary of any journey's branching, conditions, and actions.-->
 * **Check campaign readiness** — Identify blockers that prevent a campaign from being published.
 * **Spot coverage gaps** — See which channels are covered across your live journeys and campaigns, and where gaps exist.
 * **Audit your orchestration portfolio** — Review the full status of campaigns and journeys without parsing JSON or jumping across product screens.
@@ -43,7 +43,7 @@ The following examples show how to interact with the [!DNL Adobe Journey Optimiz
 | **Inventory & status audit** | "What do we have and what state is it in? Show live vs. draft vs. completed/stopped/archived counts for campaigns." |
 | **Check publish readiness** | "Why is campaign cmp456 not ready to publish? Show me the blockers." |
 | **Compare objects** | "Compare campaigns abc123 and xyz789 — what changed in status and schedule?" |
-| **Audit your portfolio** | "Across all live journeys and campaigns, which channels are covered and where are the gaps?" |
+| **Audit your portfolio** | "Across all live campaigns, which channels are covered and where are the gaps?" |
 | **Channel coverage & mix** | "Show the channel footprint across journeys, campaigns, and offer placements — email-only vs. multi-channel, push/SMS/in-app usage, and mismatches between journey channels." |
 
 ## Prerequisites {#mcp-prerequisites}
