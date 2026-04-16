@@ -132,8 +132,10 @@ Journey Optimizer allows you to configure connections to external systems via cu
 
 Learn how to use external data sources to define a connection to a third-party system in [this section](../datasource/external-data-sources.md).
 
+<!--
 ## AI tools via MCP (Beta) {#integration-mcp}
 
 [!DNL Adobe Journey Optimizer] provides a Model Context Protocol (MCP) server that lets you query campaign and offer data using plain-language prompts directly from MCP-compatible AI tools such as Claude Web and Claude Desktop — without writing API calls or navigating product screens.
 
 Learn more about [Journey Optimizer + MCP](../integrations/ajo-mcp.md).
+-->
