@@ -1,14 +1,14 @@
 ---
 title: Optimize email text for AI inboxes
-description: Refine the plain text layer of email in Journey Optimizer so AI-assisted inbox clients can use your offers and CTAs when they summarize mail or extract intent—in the Email Designer with Optimize with AI.
+description: Generate and refine a dedicated version of your messages so AI-assisted inbox clients can use your offers and CTAs when they summarize mail or extract intent—in the Email Designer with Optimize with AI.
 feature: Email Design
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
 exl-id: 0c2f95ce-28a0-480c-9829-b7e4975b6340
-hide: true
+
 ---
-# Optimize email text for AI inboxes {#email-text-optimizer}
+# Optimize email for AI inboxes {#email-text-optimizer}
 
 [!DNL Adobe Journey Optimizer] comes with an email-channel capability that helps you structure a specific version of your messages for improved AI-assisted inbox experiences—such as [!DNL Apple Intelligence] and [!DNL Google Gemini] in [!DNL Gmail]—so they can answer questions and summarize mail based on your content more accurately, with better results.
 
