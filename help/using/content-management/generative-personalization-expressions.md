@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: AI Assistant for Personalization Expressions
-description: Learn how to use AI Assistant in Journey Optimizer to generate personalization expressions from natural language in the Personalization Editor, and how the Add expression control works in the Email Designer for email content only.
+description: Learn how to use AI Assistant in Journey Optimizer to generate personalization expressions from natural language in the Personalization Editor, and how the Add expression control works in the Email Designer.
 feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
@@ -23,7 +23,7 @@ mini-toc-levels: 1
 [!UICONTROL AI Assistant] helps you generate new personalization from plain language, explain what existing expressions do, and fix issues in selected code, so that you spend less time on syntax and manual field discovery. You can also iterate on a selection or ask for other changes in conversation. It is available in two ways:
 
 * **[!UICONTROL Personalization Editor]** — wherever the editor is available across channels (subject line, body, and other fields that open it). This is the general path for AI-assisted personalization. For where and how to open the editor, see [Add personalization](../personalization/personalization-build-expressions.md#where).
-* **Email content only — Email Designer toolbar** — when you author **email** in the Email Designer, select a component and use **[!UICONTROL Add expression]** in the contextual toolbar to open the assistant in a toolbox without opening the full editor first. This entry point is **not** available outside email authoring. See [Generate from the Email Designer](#generate-email-designer). Screenshots in that section illustrate this email workflow; they are not meant to imply that AI Assistant for expressions exists only in email when you use the **[!UICONTROL Personalization Editor]** path above.
+* **Email Designer toolbar** — when you author emails in the Email Designer, select a component and use **[!UICONTROL Add expression]** in the contextual toolbar to open the assistant in a toolbox without opening the full editor first. This entry point is not available outside email authoring. See [Generate from the Email Designer](#generate-email-designer).
 
 For broader AI Assistant setup and languages, see [Get started with AI Assistant](gs-generative.md). For personalization concepts, see [Get started with personalization](../personalization/personalize.md). For prompt ideas, see [AI prompt best practices](ai-assistant-prompting-guide.md).
 
@@ -105,7 +105,7 @@ You can select an existing personalization expression and use AI Assistant to fi
 
 >[!NOTE]
 >
->This section applies **only** when you edit **email** content in the **Email Designer**. The **[!UICONTROL Add expression]** toolbar control does not appear for other channels or surfaces; use the **[!UICONTROL Personalization Editor]** path in [Overview](#where-available) everywhere else.
+>This section applies only when you edit **email** content in the Email Designer. For other channels, use the **[!UICONTROL Personalization Editor]**.
 
 In the Email Designer, you can use [!UICONTROL AI Assistant for personalization expressions] from the contextual toolbar without opening the full [!UICONTROL Personalization Editor] first.
 
@@ -123,7 +123,7 @@ In the Email Designer, you can use [!UICONTROL AI Assistant for personalization 
 
     You can:
 
-    * Sanity-check the expression with **one** preview value on the **[!UICONTROL Preview]** tab (same idea as above: a single sample for confidence on the code, not multiple profiles or full coverage).
+    * Validate the expression output with one sample value - use the **[!UICONTROL Preview]** tab.
     * Generate another suggestion from the same prompt - use **[!UICONTROL Regenerate]**.
     * Clear the discussion and start over - use **[!UICONTROL Reset]**.
     * Refine the expression in the full editor - click the ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg "Edit") icon to open **[!UICONTROL Personalization Editor]**.
