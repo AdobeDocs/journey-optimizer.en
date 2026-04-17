@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: AI Assistant for Personalization Expressions
-description: Learn how to use AI Assistant in Journey Optimizer to generate personalization expressions from natural language — from the Personalization Editor or from the Email Designer toolbar.
+description: Learn how to use AI Assistant in Journey Optimizer to generate personalization expressions from natural language in the Personalization Editor, and how the Add expression control works in the Email Designer for email content only.
 feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
@@ -22,8 +22,8 @@ mini-toc-levels: 1
 
 [!UICONTROL AI Assistant] helps you generate new personalization from plain language, explain what existing expressions do, and fix issues in selected code, so that you spend less time on syntax and manual field discovery. You can also iterate on a selection or ask for other changes in conversation. It is available in two ways:
 
-* **[!UICONTROL Personalization Editor]** — wherever the editor is available (subject line, body, and other fields that open it). For where and how to open the editor, see [Add personalization](../personalization/personalization-build-expressions.md#where).
-* **Email Designer** — when you select a component, use **[!UICONTROL Add expression]** in the contextual toolbar to open the assistant in a toolbox. See [Generate from the Email Designer](#generate-email-designer).
+* **[!UICONTROL Personalization Editor]** — wherever the editor is available across channels (subject line, body, and other fields that open it). This is the general path for AI-assisted personalization. For where and how to open the editor, see [Add personalization](../personalization/personalization-build-expressions.md#where).
+* **Email content only — Email Designer toolbar** — when you author **email** in the Email Designer, select a component and use **[!UICONTROL Add expression]** in the contextual toolbar to open the assistant in a toolbox without opening the full editor first. This entry point is **not** available outside email authoring. See [Generate from the Email Designer](#generate-email-designer). Screenshots in that section illustrate this email workflow; they are not meant to imply that AI Assistant for expressions exists only in email when you use the **[!UICONTROL Personalization Editor]** path above.
 
 For broader AI Assistant setup and languages, see [Get started with AI Assistant](gs-generative.md). For personalization concepts, see [Get started with personalization](../personalization/personalize.md). For prompt ideas, see [AI prompt best practices](ai-assistant-prompting-guide.md).
 
@@ -57,9 +57,9 @@ These steps cover generating personalization expressions from scratch. To work w
 
     ![](assets/ai-perso-question.png)
 
-1. After you generate an expression, click **[!UICONTROL Show previews for sample profiles]** to see how the expression evaluates with sample data and to view the associated payload as JSON. For this check, the assistant generates a limited set of synthetic sample profiles; they are not saved or stored in your organization.
+1. After you generate an expression, click **[!UICONTROL Show previews for sample profiles]** to see how the expression evaluates against **one** synthetic sample profile and to view the associated payload as JSON. The preview is a **single** spot check so you can gain confidence that your code resolves as expected — it does **not** simulate multiple recipients, varied data, or full coverage. Sample data is not saved or stored in your organization.
 
-    If you need custom or additional sample profiles, describe what you need in the discussion with the assistant and include the keyword **preview** in your prompt so it can generate the right preview profiles for your check.
+    If you need the sample adjusted (for example, different attributes emphasized), describe what you need in the discussion with the assistant and include the keyword **preview** in your prompt.
 
     ![](assets/ai-perso-preview-button.png)
 
@@ -69,7 +69,7 @@ These steps cover generating personalization expressions from scratch. To work w
 
     >[!NOTE]
     >
-    >Additional previews are for spot checking. The assistant is tuned to generate roughly one to five profiles, asking for a very large number may cause the request to fail.
+    >Do not expect multiple preview rows or exhaustive scenarios here. The control is intentionally limited to **one** sample evaluation for a quick code check, not partial coverage across many profiles. Asking for an unrealistically large set of previews may cause the request to fail.
     
     +++
 
@@ -103,6 +103,10 @@ You can select an existing personalization expression and use AI Assistant to fi
 
 ## Generate from the Email Designer toolbar {#generate-email-designer}
 
+>[!NOTE]
+>
+>This section applies **only** when you edit **email** content in the **Email Designer**. The **[!UICONTROL Add expression]** toolbar control does not appear for other channels or surfaces; use the **[!UICONTROL Personalization Editor]** path in [Overview](#where-available) everywhere else.
+
 In the Email Designer, you can use [!UICONTROL AI Assistant for personalization expressions] from the contextual toolbar without opening the full [!UICONTROL Personalization Editor] first.
 
 1. In the Email Designer, select the component you want to personalize, and click at the location where you want to insert the expression.
@@ -119,7 +123,7 @@ In the Email Designer, you can use [!UICONTROL AI Assistant for personalization 
 
     You can:
 
-    * Validate the expression output with sample values - use the **[!UICONTROL Preview]** tab.
+    * Sanity-check the expression with **one** preview value on the **[!UICONTROL Preview]** tab (same idea as above: a single sample for confidence on the code, not multiple profiles or full coverage).
     * Generate another suggestion from the same prompt - use **[!UICONTROL Regenerate]**.
     * Clear the discussion and start over - use **[!UICONTROL Reset]**.
     * Refine the expression in the full editor - click the ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg "Edit") icon to open **[!UICONTROL Personalization Editor]**.

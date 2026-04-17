@@ -47,7 +47,7 @@ This playground provides a simulated environment to write and test personalizati
 
 ## AI assistant for personalization expressions {#ai-personalization-expressions}
 
-In the **[!UICONTROL Personalization Editor]** or from the Email Designer toolbar (**[!UICONTROL Add expression]**), **[!UICONTROL AI Assistant]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
+In the **[!UICONTROL Personalization Editor]** (wherever it is available), or from the Email Designer (**[!UICONTROL Add expression]** in the toolbar when you edit **email** content only), **[!UICONTROL AI Assistant]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
 
 ![](../content-management/assets/ai-perso-generate.png)
 

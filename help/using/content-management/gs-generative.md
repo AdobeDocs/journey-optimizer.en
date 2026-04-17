@@ -136,7 +136,7 @@ General guidelines for using AI Assistant in Adobe Journey Optimizer for email g
 
 ### AI assistant for personalization expressions {#ai-assistant-personalization-editor-guardrails}
 
-The following guardrails apply to [AI Assistant for personalization expressions](generative-personalization-expressions.md) in the [!UICONTROL Personalization Editor].
+The following guardrails apply to [AI Assistant for personalization expressions](generative-personalization-expressions.md) in the [!UICONTROL Personalization Editor] and in the Email Designer **[!UICONTROL Add expression]** toolbox (email content only).
 
 * **Offer and Experience Decisioning** — Not supported.
 * **Favorites** — Not supported.
