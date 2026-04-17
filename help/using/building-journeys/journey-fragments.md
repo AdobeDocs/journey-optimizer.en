@@ -18,11 +18,6 @@ version: Journey Orchestration
 >[!AVAILABILITY]
 >This capability is currently in Limited Availability. To request access, contact your Adobe representative.
 
->[!CONTEXTUALHELP]
->id="ajo_journey_fragment_properties"
->title="Journey Fragments"
->abstract="Journey Fragments let you save one or multiple journey nodes as a reusable component. Saved fragments are available in a dedicated Fragment Inventory and can be dropped into any journey in your sandbox, helping teams build journeys faster and reduce setup time."
-
 Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent — without rebuilding the same logic from scratch every time. [See use case examples.](#examples)
 
 Once created, fragments are stored in a dedicated **[!UICONTROL Fragment Inventory]** and can be inserted into any journey using the **[!UICONTROL Journey fragments]** activity.
@@ -45,9 +40,16 @@ You can filter the list by fragment name, status, creation date, creator, last m
 
 ## Create a journey fragment {#create-journey-fragment}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_fragment_create_canvas"
+>title="Save as a journey fragment"
+>abstract="Enter a unique name for your fragment and click Save. The selected nodes will be saved as a reusable fragment available in the Fragment Inventory."
+
 You can create a journey fragment in two ways: directly from the journey canvas (recommended), or from the Fragment Inventory.
 
-### From the journey canvas {#create-from-canvas}
+>[!BEGINTABS]
+
+>[!TAB From the journey canvas]
 
 To save journey nodes as a fragment directly from the journey canvas:
 
@@ -65,7 +67,7 @@ To save journey nodes as a fragment directly from the journey canvas:
 >[!TIP]
 >If you create a fragment from a journey, [test your journey](testing-the-journey.md) **before** saving the fragment to ensure the selected nodes behave as expected.
 
-### From the fragment inventory {#create-from-inventory}
+>[!TAB From the fragment inventory]
 
 To create a fragment directly from the inventory:
 
@@ -75,13 +77,15 @@ To create a fragment directly from the inventory:
 1. When done, click **[!UICONTROL Save]** to save the fragment as a draft.
 
 >[!CAUTION]
->Test mode is not available in the fragment editor. This means you cannot validate the behavior of the configured activities before the fragment is activated and inserted into a journey. For fragments where logic accuracy is critical, consider [building and testing the nodes in a full journey](testing-the-journey.md) first, then saving them as a fragment [from the canvas](#create-from-canvas).
+>Test mode is not available in the fragment editor. This means you cannot validate the behavior of the configured activities before the fragment is activated and inserted into a journey. For fragments where logic accuracy is critical, consider [building and testing the nodes in a full journey](testing-the-journey.md) first, then saving them as a fragment from the canvas tab above.
+
+>[!ENDTABS]
 
 ## Edit a fragment {#edit-journey-fragment}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_fragment_edit"
->title="Edit a fragment"
+>id="ajo_journey_fragment_properties"
+>title="Journey fragment properties"
 >abstract="Open a fragment from the inventory to modify its nodes, properties, tags, or labels. Active fragments must be deactivated before they can be edited."
 
 To edit a fragment, open it from the **[!UICONTROL Fragment Inventory]** by clicking its name. In the fragment authoring UI, you can:
