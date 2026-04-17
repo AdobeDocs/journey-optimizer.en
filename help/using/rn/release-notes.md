@@ -133,7 +133,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
 #### Email design
 
-* **AI Assistant for personalization expressions in the Email Designer** - AI Assistant for personalization expressions is now also available directly from the inline editing experience in the Email Designer. When editing a text component, click **Use AI to generate** in the inline editing popover to describe the personalization you need in plain language, review the generated expression, and insert it without leaving the Email Designer. [Learn more](../content-management/generative-personalization-expressions.md#generate-email-designer)
+* **AI Assistant for personalization expressions in the Email Designer** - In the Email Designer, select a component and use **Add expression** in the contextual toolbar to describe the personalization you need in plain language, review the generated expression, and insert it without leaving the designer. [Learn more](../content-management/generative-personalization-expressions.md#generate-email-designer)
 
   Availability date: April 15, 2026
 

@@ -134,7 +134,7 @@ General guidelines for using AI Assistant in Adobe Journey Optimizer for email g
 * Your use of AI Assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 * As part of Adobe's commitment to promote transparency in the use of generative AI tools in media creation, Adobe will apply Content Credentials when content or a project that included a Firefly generated asset is downloaded or exported. [Learn more](https://helpx.adobe.com/firefly/using/content-credentials.html)
 
-### AI assistant in the personalization editor {#ai-assistant-personalization-editor-guardrails}
+### AI assistant for personalization expressions {#ai-assistant-personalization-editor-guardrails}
 
 The following guardrails apply to [AI Assistant for personalization expressions](generative-personalization-expressions.md) in the [!UICONTROL Personalization Editor].
 
