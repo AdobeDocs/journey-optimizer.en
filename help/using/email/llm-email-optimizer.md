@@ -12,11 +12,13 @@ hide: true
 
 [!DNL Adobe Journey Optimizer] comes with an email-channel capability that helps you structure a specific version of your messages for improved AI-assisted inbox experiences—such as [!DNL Apple Intelligence] and [!DNL Google Gemini] in [!DNL Gmail]—so they can answer questions and summarize mail based on your content more accurately, with better results.
 
-You can use this capability to generate and refine a dedicated text version of your messages so AI-assisted inbox experiences are more likely to surface the offers, calls to action, and details you intend—rather than thin auto-generated text or unrelated context.
+You can use this capability to generate and refine a dedicated version of your messages so AI-assisted inbox experiences are more likely to surface the offers, calls to action, and details you intend—rather than thin auto-generated text or unrelated context.
 
+<!--
 >[!NOTE]
 >
 >This optimized for AI inboxes text version is not the same as the default or custom plain text version of your messages. [Learn more](text-version-email.md)
+-->
 
 ## How it works {#how-it-works}
 
