@@ -282,7 +282,7 @@ solution: Journey Optimizer
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
-        + [Optimize email for AI inboxes](using/email/llm-email-optimizer.md)
+        + {hide-from-toc} [Optimize email for AI inboxes](using/email/llm-email-optimizer.md)
         + [Manage the text version](using/email/text-version-email.md)
         + [Add metadata](using/email/email-metadata.md)
         + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
