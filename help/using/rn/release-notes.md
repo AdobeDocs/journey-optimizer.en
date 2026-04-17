@@ -25,6 +25,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
 ### New capabilities {#april-26-features}
 
+<!--
 <table>
 <thead>
 <tr>
@@ -43,6 +44,7 @@ Because of this model, release notes are updated between monthly releases. For f
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>
