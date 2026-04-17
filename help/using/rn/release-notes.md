@@ -114,7 +114,7 @@ Because of this model, release notes are updated between monthly releases. For f
 <tr>
 <td>
 <p>[!DNL Adobe Journey Optimizer] now includes an AI Assistant in the Personalization Editor. Describe what you want to personalize in plain language and the assistant produces a personalization expression you can use as-is or refine in a short follow-up conversation.</p>
-<p>You can also select existing personalization code and ask the assistant to explain it, fix it, or suggest improvements. After you generate an expression, <strong>Show previews for sample profiles</strong> runs a quick check against <strong>one</strong> synthetic sample profile so you can validate how the expression resolves — not multiple recipients or full coverage.</p>
+<p>You can also select existing personalization code and ask the assistant to explain it, fix it, or suggest improvements. After you generate an expression, <strong>Show previews for sample profiles</strong> runs a quick check against a limited set of synthetic sample profiles.</p>
 <p><img src="assets/do-not-localize/assistant-perso.gif"></p>
 <p>For more information, refer to <a href="../content-management/generative-personalization-expressions.md">AI Assistant for Personalization Expressions</a>.</p>
 <p>Availability date: April 13, 2026</p>

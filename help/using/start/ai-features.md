@@ -169,7 +169,7 @@ Use generative AI to create and personalize content across multiple channels, ac
 * **Text Generation** - Create compelling copy based on your brand voice and objectives. [Generate text with AI](../content-management/generative-text.md)
 * **Image Generation** - Generate custom images using Adobe Firefly. [Generate images with AI](../content-management/generative-image.md)
 * **Content Variations** - Produce multiple variations for A/B testing. [Content experiment with AI](../content-management/generative-experimentation.md)
-* **Personalization** - Generate new expressions, explain existing code, or fix issues with AI Assistant from the Personalization Editor, or from the Email Designer toolbar (**Add expression**, email content only). [AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
+* **Personalization** - Generate new expressions, explain existing code, or fix issues with AI Assistant from the Personalization Editor or from the Email Designer toolbar (**Add expression**). [AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
 * **Brand Alignment** - Ensure generated content matches your brand guidelines. [Evaluate brand alignment](../content-management/brands-score.md)
 * **Template Support** - Leverage your existing email templates. [Work with content templates](../content-management/content-templates.md)
 
