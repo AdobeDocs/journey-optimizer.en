@@ -134,7 +134,7 @@ Use search, filters, and tags to manage journeys, campaigns, and content efficie
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/help.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/question.svg)
 
 Troubleshooting FAQ
 
