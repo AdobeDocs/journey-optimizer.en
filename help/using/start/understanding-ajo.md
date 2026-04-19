@@ -77,21 +77,9 @@ These functional areas operate in a continuous cycle:
 
 ## Architecture Details {#architecture-details}
 
-For technical teams, here's the detailed architecture diagram showing how Journey Optimizer integrates with Adobe Experience Platform. [Navigate the interface](user-interface.md) to explore these components in practice.
+Journey Optimizer is one of four applications natively built on Adobe Experience Platform, alongside Real-Time CDP, Customer Journey Analytics, and Adobe Mix Modeler. It shares AEP's core services — Real-Time Customer Profile, Identity Graph, data governance, and query services — so it accesses a unified customer data foundation without requiring separate integrations. Journey Optimizer can operate as a standalone application or interoperate with other AEP-native applications.
 
-![Adobe Journey Optimizer Architecture](assets/ajo-architecture.png)
-
-Four applications are natively built on Experience Platform: Adobe Real-Time Customer Data Platform, Journey Optimizer, Customer Journey Analytics, and Adobe Mix Modeler. Journey Optimizer works seamlessly with these applications but can also function independently. [Review guardrails and limitations](guardrails.md) for implementation considerations.
-
-### Integration Points {#integration-points}
-
-Journey Optimizer integrates with Adobe Experience Platform at multiple levels:
-
-* **Data Layer** - Shares the same Real-time Customer Profile, Identity Graph, and datasets
-* **Service Layer** - Leverages Adobe Experience Platform's governance, privacy, and query services
-* **Application Layer** - Provides journey orchestration, decision management, and content management on top of Adobe Experience Platform
-
-Learn more about [Adobe Journey Optimizer blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}.
+For a deep dive into technical architecture — including integration patterns, prerequisites, and system data flows — see the [Adobe Journey Optimizer Blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}. For implementation considerations, [review guardrails and limitations](guardrails.md).
 
 ## Privacy and Security {#privacy-security}
 
