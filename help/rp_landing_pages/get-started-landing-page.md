@@ -48,7 +48,7 @@ Essential terms and concepts to help you navigate Journey Optimizer confidently.
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/sparkle.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
 AI & Intelligent Features
 
