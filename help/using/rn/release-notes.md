@@ -28,6 +28,26 @@ Because of this model, release notes are updated between monthly releases. For f
 <table>
 <thead>
 <tr>
+<th><strong>Optimize email for AI inboxes</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now includes a new capability that ensures your emails are optimally structured for AI-powered inboxes such as Apple Intelligence and Google Gemini in Gmail.</p>
+<p>As AI assistants increasingly control how recipients read and act on email, this feature helps you author content that performs well across downstream AI tasks including summarization, triage, prioritization, and intent extraction.</p>
+<p><img src="assets/do-not-localize/optimize-for-ai.gif"></p>
+<p>For more information, refer to <a href="../email/llm-email-optimizer.md">Optimize email text for AI inboxes</a>.</p>
+<p>Availability date: April 17, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey path experimentation</strong><br/></th>
 </tr>
 </thead>
@@ -133,7 +153,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
 #### Email design
 
-* **AI Assistant for personalization expressions in the Email Designer** - AI Assistant for personalization expressions is now also available directly from the inline editing experience in the Email Designer. When editing a text component, click **Use AI to generate** in the inline editing popover to describe the personalization you need in plain language, review the generated expression, and insert it without leaving the Email Designer. [Learn more](../content-management/generative-personalization-expressions.md#generate-email-designer)
+* **AI Assistant for personalization expressions in the Email Designer** - In the Email Designer, select a component and use **Add expression** in the contextual toolbar to describe the personalization you need in plain language, review the generated expression, and insert it without leaving the designer. [Learn more](../content-management/generative-personalization-expressions.md#generate-email-designer)
 
   Availability date: April 15, 2026
 
