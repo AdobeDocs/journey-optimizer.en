@@ -16,7 +16,7 @@ This page explains how Adobe Experience Platform and Journey Optimizer work toge
 
 Adobe Journey Optimizer and Adobe Experience Platform work together to enable data-driven personalization at scale. This page explains how these systems operate and how their key functional areas combine to deliver exceptional customer experiences. [Learn about key capabilities](get-started.md) | [Explore key terminology](terminology.md)
 
-## How Journey Optimizer Works {#how-it-works}
+## How Journey Optimizer works {#how-it-works}
 
 Without a unified data foundation, brands are forced to rely on multiple channel-specific tools — making it difficult to maintain a consistent view of each customer or act on their behavior in real time. Journey Optimizer solves this by building on Adobe Experience Platform to connect customer data, content creation, and journey orchestration in a single, continuous system. The result is meaningful brand experiences that drive customer loyalty and lifetime value.
 
@@ -24,7 +24,7 @@ Adobe Journey Optimizer operates as a continuous flow where data is collected, a
 
 ![Diagram showing Adobe Experience Platform as the foundational data layer, with Journey Optimizer built on top alongside Real-Time CDP, Customer Journey Analytics, and Adobe Mix Modeler, all sharing core services such as Real-Time Customer Profile, data governance, and identity resolution.](assets/ajo-aep-architecture-diagram.png)
 
-### Adobe Experience Platform: The Foundation {#aep-foundation}
+### Adobe Experience Platform: the foundation {#aep-foundation}
 
 Adobe Experience Platform serves as the backbone, enabling brands to centralize customer data and activate it for personalized experiences:
 
@@ -75,12 +75,12 @@ These functional areas operate in a continuous cycle:
 6. **Measurement** - Performance data feeds insights back to refine audiences, content, decisions, and journeys
 7. **Governance** - Administration and Privacy controls ensure compliance throughout
 
-## Architecture Details {#architecture-details}
+## Architecture details {#architecture-details}
 
 Journey Optimizer is one of four applications natively built on Adobe Experience Platform, alongside Real-Time CDP, Customer Journey Analytics, and Adobe Mix Modeler. It shares AEP's core services — Real-Time Customer Profile, Identity Graph, data governance, and query services — so it accesses a unified customer data foundation without requiring separate integrations. Journey Optimizer can operate as a standalone application or interoperate with other AEP-native applications.
 
 For a deep dive into technical architecture — including integration patterns, prerequisites, and system data flows — see the [Adobe Journey Optimizer Blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}. For implementation considerations, [review guardrails and limitations](guardrails.md).
 
-## Privacy and Security {#privacy-security}
+## Privacy and security {#privacy-security}
 
 Adobe Experience Cloud's privacy and security practices apply to Adobe Journey Optimizer. These measures ensure compliance with privacy regulations like GDPR, enabling you to deliver personalized experiences while maintaining customer trust. [Learn more about privacy in Journey Optimizer](../privacy/get-started-privacy.md)
