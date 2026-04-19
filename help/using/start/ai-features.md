@@ -323,3 +323,11 @@ No. Always review [AI-generated content](#content-generation) for accuracy and b
 Most AI features are included with Adobe Journey Optimizer. Some capabilities like [Send-Time Optimization](#send-time-optimization) or [AI Agents](#ai-agents) may require enablement by Adobe. Contact your Adobe representative for details about your specific license and available features.
 
 +++
+
+>[!MORELIKETHIS]
+>
+>* [What is Journey Optimizer?](get-started.md) — Overview of key capabilities, use cases, and architecture.
+>* [Understanding how it works](understanding-ajo.md) — How Journey Optimizer and Experience Platform work together.
+>* [AI content generation](../content-management/gs-generative.md) — Generate emails, push, SMS, and web content with AI Assistant.
+>* [Send-Time Optimization](../building-journeys/send-time-optimization.md) — Predict and optimize message delivery timing per individual.
+>* [AI models for decisioning](../experience-decisioning/ranking/ai-models.md) — Rank and personalize offers automatically with AI ranking models.

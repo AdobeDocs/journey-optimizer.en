@@ -4,19 +4,25 @@ product: journey optimizer
 title: Understanding Journey Optimizer
 description: Learn how Adobe Journey Optimizer works with Adobe Experience Platform to deliver personalized customer experiences
 feature: Get Started
+topic: Content Management
 role: Admin, Developer, User
 level: Beginner
+keywords: journey optimizer, how it works, architecture, experience platform, functional areas
 exl-id: 9df179a0-a5f6-4dbd-a9db-a103731b1854
 ---
 # Understanding Journey Optimizer {#understanding-ajo}
+
+This page explains how Adobe Experience Platform and Journey Optimizer work together, covering the continuous data-to-experience cycle, key functional areas, architecture details, and integration points.
 
 Adobe Journey Optimizer and Adobe Experience Platform work together to enable data-driven personalization at scale. This page explains how these systems operate and how their key functional areas combine to deliver exceptional customer experiences. [Learn about key capabilities](get-started.md) | [Explore key terminology](terminology.md)
 
 ## How Journey Optimizer Works {#how-it-works}
 
+Without a unified data foundation, brands are forced to rely on multiple channel-specific tools — making it difficult to maintain a consistent view of each customer or act on their behavior in real time. Journey Optimizer solves this by building on Adobe Experience Platform to connect customer data, content creation, and journey orchestration in a single, continuous system. The result is meaningful brand experiences that drive customer loyalty and lifetime value.
+
 Adobe Journey Optimizer operates as a continuous flow where data is collected, analyzed, and applied to create personalized customer journeys.
 
-![](assets/ajo-aep-architecture-diagram.png)
+![Diagram showing Adobe Experience Platform as the foundational data layer, with Journey Optimizer built on top alongside Real-Time CDP, Customer Journey Analytics, and Adobe Mix Modeler, all sharing core services such as Real-Time Customer Profile, data governance, and identity resolution.](assets/ajo-aep-architecture-diagram.png)
 
 ### Adobe Experience Platform: The Foundation {#aep-foundation}
 
@@ -32,7 +38,7 @@ Adobe Experience Platform serves as the backbone, enabling brands to centralize 
 Adobe Journey Optimizer applies the data and insights from Adobe Experience Platform to deliver intelligent, personalized customer experiences:
 
 * **Customer Understanding** - Real-time Customer Profiles enable segmentation into audiences for targeted messaging. [Create audiences](../audience/about-audiences.md)
-* **Content & Offers** - Tools for creating, managing, and personalizing content; real-time logic to select the best offer for each individual. [Design content](../../rp_landing_pages/content-management-landing-page.md) | [Manage offers](../offers/get-started/starting-offer-decisioning.md)
+* **Content & Offers** - A built-in visual designer, reusable templates, and a centralized asset library let teams author and personalize messages for any channel — without leaving the platform. Dynamic personalization adapts content based on customer attributes, behavior, and context. Real-time decisioning logic then selects the best offer for each individual. [Design content](../../rp_landing_pages/content-management-landing-page.md) | [Manage assets](../integrations/assets.md) | [Manage offers](../offers/get-started/starting-offer-decisioning.md)
 * **Journey & Campaign Management** - Automates sequences of interactions (journeys) or schedules one-time targeted messages (campaigns). [Build journeys](../building-journeys/journey-gs.md) | [Create campaigns](../campaigns/get-started-with-campaigns.md)
 * **Delivery (Connections)** - Delivers messages through channels like email, SMS, push notifications, and direct mail; exports data to external systems. [Configure channels](../configuration/get-started-configuration.md)
 * **Measurement & Analysis** - Tracks customer engagement and campaign performance with reports for continuous improvement. [View reports](../reports/campaign-global-report-cja.md)
@@ -41,7 +47,7 @@ Adobe Journey Optimizer applies the data and insights from Adobe Experience Plat
 
 This ecosystem operates as a continuous optimization cycle. Data drives customer understanding, which informs personalized content and decisions. These are orchestrated into journeys, delivered across channels, measured for effectiveness, and refined over time.
 
-![](../assets/do-not-localize/get-started-flow.png)
+![Diagram illustrating the continuous optimization cycle in Journey Optimizer: data ingestion feeds customer profiles, which inform content and offer decisions, orchestrated into journeys, delivered across channels, measured for performance, and refined over time.](../assets/do-not-localize/get-started-flow.png)
 
 ## Key functional areas {#functional-areas}
 

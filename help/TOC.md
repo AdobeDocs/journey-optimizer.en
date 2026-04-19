@@ -29,18 +29,19 @@ solution: Journey Optimizer
   + Essentials {#essentials}
     + [What is Journey Optimizer?](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
+    + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
     + [Guardrails & limitations](using/start/guardrails.md)
   + Get started by role {#by-role}
-    + [Choose your learning path](using/start/quick-start.md)
-    + [Get started as a Marketer](using/start/path/marketer.md)
-    + [Get started as a Data Engineer](using/start/path/data-engineer.md)
+    + [Roles and responsibilities](using/start/quick-start.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
+    + [Get started as a Data Engineer](using/start/path/data-engineer.md)
     + [Get started as a Developer](using/start/path/developer.md)
+    + [Get started as a Marketer](using/start/path/marketer.md)
   + Work efficiently {#work-efficiently}
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)
-    + [AI & intelligent features](using/start/ai-features.md)
+    + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
     + [Accessibility](using/start/accessibility.md)
     + {hide-from-toc} [Journeys vs Campaigns](using/start/journeys-vs-campaigns.md)
 + Journeys {#orchestrate-journeys}
