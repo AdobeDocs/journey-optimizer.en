@@ -30,6 +30,27 @@ You can also create audience-based campaigns to send messages.
 -->
 
 
+## Key capabilities {#key-capabilities}
+
+[!DNL Adobe Journey Optimizer] is an agile and scalable application for creating and delivering personalized, connected, and timely customer experiences across any app, device, or channel. 
+
+![Diagram showing Journey Optimizer's three core capability areas: Real-time Customer Insights & Engagement, Modern Omnichannel Orchestration & Execution, and Intelligent Decisioning & Personalization, all built on Adobe Experience Platform.](assets/ajo-capabilities.png)
+
+Key capabilities include:
+
+### Real-time Customer Insights & Engagement
+
+An integrated profile fuses live data from all sources across customer touchpoints, including behavioral, transactional, financial, and operational data to optimize personal and contextual experiences for customers in their time. [Learn about profiles and audiences](../audience/get-started-profiles.md)
+
+### Modern Omnichannel Orchestration & Execution
+
+A single canvas on which to harmonize and optimize the customer journey for 1:1 customer engagement and marketing outreach — to help brands deliver more value across the customer lifecycle. Customer journeys designed in [!DNL Adobe Journey Optimizer] can be dynamic and event-based to help brands react to real-time signals as well as connect those interactions with scheduled campaigns so the right decisions can be made about what communications to send a customer, when, and through what channels. Embedded content creation tools — including a drag-and-drop visual designer, reusable templates, content fragments, and a personalization editor — allow teams to author, personalize, and manage messages for every channel directly within the same workflow. [Build your first journey](../building-journeys/journey-gs.md) | [Design your content](../../rp_landing_pages/content-management-landing-page.md)
+
+### Intelligent Decisioning & Personalization
+
+Brands can apply centralized decisioning and incorporate artificial intelligence and machine learning to configure predictive insights throughout the customer experience, making it easier to automate decisions and optimize the experience at scale. Decisioning powers centralized offers across channels at scale through [!DNL Adobe Journey Optimizer]. [Explore offer decisioning](../offers/get-started/starting-offer-decisioning.md) | [Discover AI features](ai-features.md)
+
+
 ## Use cases {#use-cases}
 
 These examples illustrate how Journey Optimizer's capabilities work together across different roles, industries, and channels.
@@ -97,27 +118,6 @@ A retail brand planning a product launch uses Journey Optimizer's AI Assistant t
 Non-marketers such as operations teams and customer support can use [!DNL Adobe Journey Optimizer] to manage operational notifications or monitor onboarding processes. For example, an amusement park where visitors download a mobile app as part of their experience: maintenance staff can use Journey Optimizer to notify park visitors of rides currently closed due to maintenance.
 
 [Build your first journey](../building-journeys/journey-gs.md)
-
-
-## Key capabilities {#key-capabilities}
-
-[!DNL Adobe Journey Optimizer] is an agile and scalable application for creating and delivering personalized, connected, and timely customer experiences across any app, device, or channel. 
-
-![Diagram showing Journey Optimizer's three core capability areas: Real-time Customer Insights & Engagement, Modern Omnichannel Orchestration & Execution, and Intelligent Decisioning & Personalization, all built on Adobe Experience Platform.](assets/ajo-capabilities.png)
-
-Key capabilities include:
-
-### Real-time Customer Insights & Engagement
-
-An integrated profile fuses live data from all sources across customer touchpoints, including behavioral, transactional, financial, and operational data to optimize personal and contextual experiences for customers in their time. [Learn about profiles and audiences](../audience/get-started-profiles.md)
-
-### Modern Omnichannel Orchestration & Execution
-
-A single canvas on which to harmonize and optimize the customer journey for 1:1 customer engagement and marketing outreach — to help brands deliver more value across the customer lifecycle. Customer journeys designed in [!DNL Adobe Journey Optimizer] can be dynamic and event-based to help brands react to real-time signals as well as connect those interactions with scheduled campaigns so the right decisions can be made about what communications to send a customer, when, and through what channels. Embedded content creation tools — including a drag-and-drop visual designer, reusable templates, content fragments, and a personalization editor — allow teams to author, personalize, and manage messages for every channel directly within the same workflow. [Build your first journey](../building-journeys/journey-gs.md) | [Design your content](../../rp_landing_pages/content-management-landing-page.md)
-
-### Intelligent Decisioning & Personalization
-
-Brands can apply centralized decisioning and incorporate artificial intelligence and machine learning to configure predictive insights throughout the customer experience, making it easier to automate decisions and optimize the experience at scale. Decisioning powers centralized offers across channels at scale through [!DNL Adobe Journey Optimizer]. [Explore offer decisioning](../offers/get-started/starting-offer-decisioning.md) | [Discover AI features](ai-features.md)
 
 
 ## Availability & Licensing {#availability}
