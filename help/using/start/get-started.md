@@ -10,11 +10,11 @@ level: Beginner
 keywords: journey optimizer, what is ajo, adobe journey optimizer, get started, omnichannel, personalization, customer journey
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
 ---
-# Get Started with Journey Optimizer {#cjm-gs}
+# Get Started with Journey Optimizer {#ajo-gs}
 
 This page introduces Adobe Journey Optimizer: what it is, who it's for, its key capabilities, and how it fits into the Adobe Experience Platform architecture. It is the recommended starting point for new users.
 
-## What is [!DNL Adobe Journey Optimizer]?{#about-cjm}
+## What is [!DNL Adobe Journey Optimizer]?{#about-ajo}
 
 [!DNL Adobe Journey Optimizer] is an enterprise application for creating and delivering connected, contextual, and personalized customer experiences across all channels and touchpoints. It is built natively on [!DNL Adobe Experience Platform] and leverages a unified real-time customer profile, an API-first open framework, centralized offer decisioning, and AI/ML capabilities. Journey Optimizer enables brands to orchestrate both scheduled marketing campaigns and real-time, event-triggered communications — from a single application, at scale. The result is meaningful brand experiences that boost customer loyalty and lifetime value.
 
