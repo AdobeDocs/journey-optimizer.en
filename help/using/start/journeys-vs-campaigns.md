@@ -105,6 +105,10 @@ Follow this decision tree to choose the right approach. Many brands use more tha
 * Real-time decision-making based on behavior and events
 * Wait activities create personalized timing
 * Conditional branching creates unique paths per profile
+* Built-in active listening — inaction for a defined period can also trigger the next step, not just explicit events. [Learn about wait activities](../building-journeys/wait-activity.md)
+* Frequency capping — control how often a customer can enter or receive messages from a journey. [Learn about journey capping](../conflict-prioritization/journey-capping.md)
+* Audience splitting by percentage — divide profiles into random, percentage-based groups to run A/B experiments across journey paths. [Learn about percentage split](../building-journeys/condition-activity.md)
+* Test mode — validate journey logic and message delivery with test profiles before publishing live. [Learn about test mode](../building-journeys/testing-the-journey.md)
 
 **Example flow:**
 
@@ -206,6 +210,8 @@ Combines workflow complexity with batch campaign execution.
 | Code-based | ✅ | ✅ | ❌ | ❌ |
 | Content cards | ✅ | ✅ | ❌ | ❌ |
 | Direct mail | ✅ | ✅ | ❌ | ✅ |
+| LINE | ✅ | ✅ | ✅ | ✅ |
+| WhatsApp | ✅ | ✅ | ✅ | ✅ |
 
 ### Advanced capabilities
 
@@ -220,7 +226,7 @@ Combines workflow complexity with batch campaign execution.
 | Multi-entity data | ❌ | ❌ | ❌ | ✅ |
 | Exact pre-send counts | ❌ | ❌ | ❌ | ✅ |
 | On-demand segmentation | ❌ | ❌ | ❌ | ✅ |
-| Send-time optimization | ✅ | ✅ | ✅ | ✅ |
+| Send-time optimization | ✅ | ❌ | ❌ | ❌ |
 | A/B testing | ✅ | ✅ | ❌ | ❌ |
 | Approval workflows | ✅ | ✅ | ✅ | ❌ |
 
