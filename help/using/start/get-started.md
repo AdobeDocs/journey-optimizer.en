@@ -34,80 +34,70 @@ You can also create audience-based campaigns to send messages.
 
 These examples illustrate how Journey Optimizer's capabilities work together across different roles, industries, and channels.
 
-| Use case | Role | Core capability |
-|----------|------|----------------|
-| Delayed shipment recovery | Marketer | [Unified profile + audience exclusion](../audience/get-started-profiles.md) |
-| Real-time in-store engagement | Marketer | [Geofence triggering + push](../push/get-started-push.md) |
-| Cart abandonment recovery | Marketer | [Event-triggered multi-step journey](../building-journeys/journey-gs.md) |
-| Streaming service welcome series | Marketer | [Event-triggered welcome journey](../building-journeys/journey-gs.md) |
-| Reservation reminder with directions | Marketer | [Scheduled + location-aware messaging](../campaigns/get-started-with-campaigns.md) |
-| Proactive service outage notification | Operations | [Automated selection at scale](../audience/about-audiences.md) |
-| AI-powered promotional campaign | Marketer | [AI content generation + experimentation](ai-features.md) |
-| Maintenance alerts via mobile app | Operations | [Non-marketing orchestration](../building-journeys/journey-gs.md) |
+### Delayed shipment recovery {#uc-delayed-shipment}
 
-+++**Delayed shipment recovery (Marketer)**
+**Role:** Marketer | **Core capability:** [Unified profile + audience exclusion](../audience/get-started-profiles.md)
 
 A clothing store typically sends post-purchase surveys to all customers who have purchased products in the last week. Due to inclement weather, a few shipments experienced delays. Seeing which customers have not received their shipments, the clothing store can exclude them from the scheduled customer satisfaction send and instead send a personalized email apologizing for the delay and offering a discount code with product recommendations based on the customer's past purchases.
 
 [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
 
-+++
+### Real-time in-store engagement {#uc-instore}
 
-+++**Real-time in-store engagement (Marketer)**
+**Role:** Marketer | **Core capability:** [Geofence triggering + push](../push/get-started-push.md)
 
 The same retailer can engage a loyal customer who pulls into the store parking lot in real time by sending them a push notification about a sweater that is back in stock in the customer's size.
 
 [Get started with push notifications](../push/get-started-push.md)
 
-+++
+### Cart abandonment recovery {#uc-cart}
 
-+++**Cart abandonment recovery (Marketer)**
+**Role:** Marketer | **Core capability:** [Event-triggered multi-step journey](../building-journeys/journey-gs.md)
 
 When a customer adds items to an online cart but leaves without completing the purchase, Journey Optimizer detects the event in real time and starts a recovery journey automatically. The customer receives a personalized email reminding them of the items left behind. If they do not click through within 24 hours, a follow-up push notification is sent — personalized based on their browsing history and loyalty status.
 
 [Build your first journey](../building-journeys/journey-gs.md)
 
-+++
+### Streaming service welcome series {#uc-welcome}
 
-+++**Streaming service welcome series (Marketer)**
+**Role:** Marketer | **Core capability:** [Event-triggered welcome journey](../building-journeys/journey-gs.md)
 
 When a customer subscribes to a streaming service, Journey Optimizer detects the sign-up event and immediately starts a multi-step welcome journey. The customer receives a welcome email encouraging them to open the app for the first time. If no login activity is detected within 48 hours, a follow-up push notification is sent with personalized content recommendations based on their stated interests during sign-up — turning a passive subscriber into an active, engaged user from day one.
 
 [Build your first journey](../building-journeys/journey-gs.md)
 
-+++
+### Reservation reminder with directions {#uc-reservation}
 
-+++**Reservation reminder with directions (Marketer)**
+**Role:** Marketer | **Core capability:** [Scheduled + location-aware messaging](../campaigns/get-started-with-campaigns.md)
 
 A hospitality brand sends each guest a timely reminder one hour before their reservation. The notification includes the guest's name, reservation time, and location-based directions to the venue — automatically assembled from the customer profile and booking data, with no manual effort from the marketing team.
 
 [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
 
-+++
+### Proactive service outage notification {#uc-outage}
 
-+++**Proactive service outage notification (Operations team)**
+**Role:** Operations | **Core capability:** [Automated audience selection at scale](../audience/about-audiences.md)
 
 When a service disruption occurs, Journey Optimizer automatically identifies the affected customers based on their account data and usage patterns. Those customers receive a proactive notification acknowledging the issue and outlining next steps — turning a potentially negative experience into a moment of transparency and trust, delivered at scale.
 
 [Build your first journey](../building-journeys/journey-gs.md)
 
-+++
+### AI-powered promotional campaign {#uc-ai-campaign}
 
-+++**AI-powered promotional campaign (Marketer)**
+**Role:** Marketer | **Core capability:** [AI content generation + experimentation](ai-features.md)
 
 A retail brand planning a product launch uses Journey Optimizer's AI Assistant to generate multiple subject line and body copy variations in minutes — guided by a natural language prompt and their uploaded brand guidelines. Built-in content experimentation automatically identifies the best-performing variant among an initial audience sample. The winning message is then deployed to the remaining recipients, maximizing engagement without additional copywriting effort.
 
 [Explore AI & intelligent features](ai-features.md) | [Learn about content experimentation](../content-management/experiment-accelerator-gs.md)
 
-+++
+### Maintenance alerts via mobile app {#uc-maintenance}
 
-+++**Maintenance alerts via mobile app (Operations team)**
+**Role:** Operations | **Core capability:** [Non-marketing journey orchestration](../building-journeys/journey-gs.md)
 
 Non-marketers such as operations teams and customer support can use [!DNL Adobe Journey Optimizer] to manage operational notifications or monitor onboarding processes. For example, an amusement park where visitors download a mobile app as part of their experience: maintenance staff can use Journey Optimizer to notify park visitors of rides currently closed due to maintenance.
 
 [Build your first journey](../building-journeys/journey-gs.md)
 
-+++
 
 ## Key capabilities {#key-capabilities}
 
@@ -139,24 +129,7 @@ Adobe Experience Cloud general privacy guidelines and procedures apply to [!DNL 
 
 ## Architecture {#architecture}
 
-Understand the basic architecture of [!DNL Adobe Journey Optimizer], the points of integration, and the relationship between [!DNL Journey Optimizer] and [!DNL Experience Platform], in the diagram below.
-
-Adobe Experience Platform is a powerful, flexible, open, and centralized data foundation that collects, standardizes, governs, applies AI insights to, and unifies data to offer thoughtful and relevant digital customer experiences.
-
-![Diagram showing Adobe Experience Platform as the foundational data layer, with four natively built applications on top: Adobe Real-Time Customer Data Platform, Journey Optimizer, Customer Journey Analytics, and Adobe Mix Modeler. Shared services such as Real-Time Customer Profile, data governance, and identity resolution underpin all four applications.](assets/ajo-aep-architecture-diagram.png){width="70%" zoomable="yes"}
-
-Four applications are natively built on Experience Platform: Adobe Real-Time Customer Data Platform, Journey Optimizer, Customer Journey Analytics, and Adobe Mix Modeler.
-
-The core functionality and services of Journey Optimizer operate off the foundational components of Adobe Experience Platform, which includes the Real-Time Customer Profile. While Journey Optimizer works seamlessly and is interoperable with Real-Time CDP and Customer Journey Analytics, it can also function independently as a standalone application.
-
-![Diagram showing Journey Optimizer's internal architecture and its integration points with Adobe Experience Platform services, including data ingestion, Real-Time Customer Profile, decisioning engine, and outbound channel delivery across email, push, SMS, and web.](assets/ajo-architecture-diagram.png){width="70%" zoomable="yes"}
-
-
-### Adobe Journey Optimizer Blueprints
-
-Digital experience blueprints provide system and data flow architecture diagrams to help better understand how Adobe Experience Platform and Applications are integrated and implemented. The blueprints provide a visual representation of inter-system and component data and content flows, sequence of operations, and dependencies to help inform use case design and architecture of Adobe Experience Platform and Applications.
-
-See [Adobe Journey Optimizer blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/architecture-diagrams/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}.
+Journey Optimizer is built natively on Adobe Experience Platform, sharing its data foundation, identity graph, and governance services — for a detailed walkthrough of how these systems work together, see [Understanding Journey Optimizer](understanding-ajo.md).
 
 
 >[!MORELIKETHIS]
