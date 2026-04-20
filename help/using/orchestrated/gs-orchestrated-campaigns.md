@@ -75,6 +75,13 @@ Each Orchestrated campaign contains:
 
 * **Worktables**: The worktable contains all the information carried by the transition. Each Orchestrated campaign uses several worktables. The data conveyed in these tables can be used throughout the Orchestrated campaign's life cycle.
 
+A typical entry-level Orchestrated campaign follows this pattern: **Build audience → Fork → Channel A + Channel B**.
+
+This approach lets you target the same audience with two parallel branches in a single campaign run — for example, one branch using a Marketing email and another using a Transactional email. Each branch is independent and can use a different channel configuration, message content, or category.
+
+➡️ [Learn how to use the Fork activity](activities/fork.md)
+
+➡️ [Understand Marketing vs Transactional messages](activities/channels.md#marketing-vs-transactional)
 
 ## Introduction video {#video-oc}
 
@@ -125,13 +132,3 @@ Now that you have an understanding of what orchestrated campaigns are, it's time
 * **[Guardrails and limitations](guardrails.md)** - Review important guardrails, limitations, and best practices to ensure optimal campaign performance.
 * **[Frequently Asked Questions](orchestrated-campaigns-faq.md)** - Find answers to common questions about Orchestrated campaigns features, capabilities, and use cases.
 * **[Orchestrated campaign tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-campaigns/orchestrated-campaigns/introduction-to-orchestrated-campaigns){target="_blank"}** - Explore step-by-step video tutorials covering features and best practices.
-
-## Common workflow patterns {#workflow-patterns}
-
-A typical entry-level Orchestrated campaign follows this pattern: **Build audience → Fork → Channel A + Channel B**.
-
-This approach lets you target the same audience with two parallel branches in a single campaign run — for example, one branch using a Marketing email and another using a Transactional email. Each branch is independent and can use a different channel configuration, message content, or category.
-
-➡️ [Learn how to use the Fork activity](activities/fork.md)
-
-➡️ [Understand Marketing vs Transactional messages](activities/channels.md#marketing-vs-transactional)

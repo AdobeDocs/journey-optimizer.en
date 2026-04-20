@@ -19,11 +19,9 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Fork activity** documentation has been enriched with a new **Examples** section illustrating how to use the Fork activity to split an audience across two parallel email branches — one Marketing and one Transactional — in a single campaign run. [Read more](../orchestrated/activities/fork.md#fork-examples)
 
-* The **Start and monitor Orchestrated campaigns** documentation has been updated with a note clarifying that for non-recurring campaigns, message delivery is paused by default after publishing until manually confirmed. Guidance has been added on how to enable the **Send without confirmation** option to streamline testing. [Read more](../orchestrated/start-monitor-campaigns.md#test)
-
 * The **Build audience activity** documentation has been enriched with a new example showing how to filter profiles by a subscription plan attribute using the rule builder. [Read more](../orchestrated/activities/build-audience.md#build-audience-examples)
 
-* The **Get started with Orchestrated campaigns** page now includes a **Common workflow patterns** section documenting the entry-level **Build audience → Fork → Channel A + Channel B** pattern, with cross-references to the Fork activity and Marketing vs Transactional messages pages. [Read more](../orchestrated/gs-orchestrated-campaigns.md#workflow-patterns)
+* The **Get started with Orchestrated campaigns** page documents the entry-level **Build audience → Fork → Channel A + Channel B** pattern in **What's inside an Orchestrated campaign?**, with cross-references to the Fork activity and Marketing vs Transactional messages pages. [Read more](../orchestrated/gs-orchestrated-campaigns.md#gs-ms-campaign-inside)
 
 * A new **[Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached)** section has been added to the journey troubleshooting documentation, explaining the `maxInstanceStackEventsReached` discard reason, when it occurs, and how to mitigate it. The guardrails and step event field list pages have also been updated accordingly.
 

@@ -3,6 +3,7 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Start and monitor Orchestrated campaigns with Adobe Journey Optimizer
 description: Learn how to start and monitor Orchestrated campaigns with Adobe Journey Optimizer.
+mini-toc-levels: 1
 feature: Monitoring
 exl-id: 5fc2d1d6-75c3-4b45-bb2b-09982b9bd5ed
 version: Campaign Orchestration
@@ -26,10 +27,6 @@ Once you have created your orchestrated campaign and designed the tasks to perfo
 >All activities in the canvas are executed except **[!UICONTROL Save audience]** activities and channel activities. There is no functional impact on your data or audience.
 
 To test an Orchestrated campaign, open the campaign and select **[!UICONTROL Start]**. Each activity in the campaign is executed sequentially until the end of the canvas is reached.
-
->[!NOTE]
->
->For non-recurring campaigns, message delivery is paused by default after publishing until you explicitly confirm the send from the channel activity's properties pane. To avoid this during testing, enable **[!UICONTROL Send without confirmation]** on the channel activity before publishing. [Learn more](#confirm-sending)
 
 ![Start button in the campaign canvas toolbar](assets/campaign-start.png){zoomable="yes"}
 

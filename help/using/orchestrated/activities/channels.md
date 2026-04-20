@@ -93,7 +93,7 @@ Choosing the right category determines how messages are delivered and which rule
 | --- | --- | --- |
 | **Opt-in required** | Yes | No |
 | **Business rules** | Applied (frequency capping, fatigue rules) | Bypassed |
-| **Channel configuration type** | Marketing surface | Transactional surface |
+| **Channel configuration type** | Marketing channel configuration | Transactional channel configuration |
 | **Typical use cases** | Promotions, newsletters, seasonal campaigns | Order confirmations, password resets, disruption alerts |
 | **Audience** | Opted-in subscribers only | Any profile, regardless of opt-in status |
 
