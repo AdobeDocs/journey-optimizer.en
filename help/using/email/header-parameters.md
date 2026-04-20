@@ -47,13 +47,11 @@ When configuring a new [email channel configuration](email-settings.md), in the 
 
 ## Sender headers {#sender-header}
 
-Some use cases require the mailbox that transmits the message to be different from the **From** author—for example a parent organization sending on behalf of a subsidiary, a shared marketing team for several brands, or an agency sending for clients.
+Some use cases require the mailbox that transmits the message to be different from the **From** author—for example a parent organization sending on behalf of a subsidiary, a shared marketing team for several brands, or an agency sending for multiple clients.
 
-In this case, you can set a different **Sender** name and email to be added to the email header.
+In other words, **From** is the author of the message (who the email is "from") and **Sender** is the agent responsible for transmitting the message (who actually sent it). The **Sender** field is intended for use when the transmission entity is different from the author. 
 
->[!NOTE]
->
->These fields are optional. You can [personalize](surface-personalization.md#personalize-header) them like other header fields.
+In this case, you can set a different **Sender** name and email address to be added to the email header using the following fields in the **Sender headers** section:
 
 * **[!UICONTROL Sender name]**: The name of the party responsible for transmitting the message when it differs from the **From** author.
 
@@ -61,15 +59,21 @@ In this case, you can set a different **Sender** name and email to be added to t
 
 ![](assets/preset-sender-header.png){width="80%"}
 
-When **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** are set, [!DNL Journey Optimizer] adds a **Sender** SMTP header as defined in [RFC 5322](https://datatracker.ietf.org/doc/html/rfc5322#section-3.6.2){target="_blank"}. Email clients that support this may show wording such as **Sender on behalf of From** or a **via** indicator.
+>[!NOTE]
+>
+>These fields are optional. You can [personalize](surface-personalization.md#personalize-header) them like other header fields.
+
+When **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** are set, [!DNL Journey Optimizer] adds a **Sender** SMTP header to the email<!--as defined in [RFC 5322](https://datatracker.ietf.org/doc/html/rfc5322#section-3.6.2){target="_blank"}-->. Email clients that support this may show wording such as **Sender on behalf of From** or a **via** indicator.
 
 >[!NOTE]
 >
->If you leave **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** empty, or if the resolved **Sender** would be identical to **From**, no **Sender** header is added.
+>If you leave **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** empty, or if the resolved **Sender** is identical to **From**, no **Sender** header is added.
 
-SPF, DKIM, and DMARC continue to rely on **From** and the envelope (**Return-Path**). The [delegated subdomain](../configuration/about-subdomain-delegation.md) selected for the configuration remains the sending domain used for those checks. The **Sender** address is not used for SPF, DKIM, or DMARC alignment; only **format** validation is performed (no MX record, delegation, or DMARC validation on **[!UICONTROL Sender email]**).
+Notes:
 
-If **Sender** is configured and personalization does not resolve to a value for a recipient, the message is not delivered to that recipient.
+* The **Sender** address is not used for SPF, DKIM, or DMARC alignment; only **format** validation is performed. SPF, DKIM, and DMARC continue to rely on the **From** fields. The [delegated subdomain](../configuration/about-subdomain-delegation.md) selected for the configuration remains the sending domain used for those checks.
+
+* If **Sender** is configured and personalization does not resolve to a value for a recipient, the message is not delivered to that recipient.
 
 ## Reply to email {#reply-to-email}
 
