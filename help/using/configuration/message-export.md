@@ -27,6 +27,8 @@ With this feature, the content of email and SMS messages sent via [!DNL Journey 
 
 Records are then retained in the dataset for seven calendar days from ingestion, during which you can export them out to the external system of your choice.
 
+➡️ For common questions and answers, see the [Message Export FAQ](#message-export-faq).
+
 ## Guardrails
 
 * This feature only supports the **Email** and **SMS** channels.
@@ -111,3 +113,123 @@ See the **AJO Message Export schema** for a full view of the dataset structure a
 
 [Learn more](message-export-schema.md)
 -->
+
+## Message Export FAQ {#message-export-faq}
+
++++ What is Message Export?
+
+Message Export enables customers to export fully rendered messages (Email and SMS) that were sent to end users. The exported data can be delivered to external destinations using standard [!DNL Adobe Experience Platform] (AEP) export capabilities and used for purposes such as archival, compliance review, analytics, or downstream integrations.
+
++++
+
++++ Which channels are supported?
+
+Message Export supports:
+
+* Email
+* SMS
+
++++
+
++++ What data does Message Export generate?
+
+Message Export creates a system-generated dataset in [!DNL Adobe Experience Platform] that contains a snapshot of the message at send time. This dataset can then be exported to supported destinations (for example, cloud storage or third-party systems).
+
+Message Export is designed as an enablement mechanism for customers to move message data out of Adobe systems—customers are responsible for transforming, storing, and managing the data in their own archival or compliance solutions.
+
++++
+
++++ Does Message Export capture fully personalized messages?
+
+Yes. Message Export captures the fully rendered message that was sent to each recipient, including personalization and dynamic content as rendered at send time.
+
++++
+
++++ Can Message Export be used to reproduce the original message?
+
+Yes. The exported HTML can be used to reproduce the original sent message in a browser.
+
+However, reproduction depends on the availability of externally hosted assets (such as images). Message Export does not embed media files directly in the export.
+
++++
+
++++ Are images and media included in the export?
+
+Message Export includes HTML content with references (URLs) to images and other media. Media assets are not embedded in the export.
+
+If an image or asset URL becomes invalid, restricted, or unpublished after send time, Message Export cannot recover that asset.
+
++++
+
++++ How are links handled in Message Export?
+
+Exported messages contain encrypted tracked links, consistent with how links are handled at send time. These encrypted links are preserved in the export and can be resolved as designed by the platform.
+
++++
+
++++ How is PII and personalization data handled?
+
+Data is stored exactly as it appears in the rendered message:
+
+* Personalization values rendered into the message (for example, first name) appear as text.
+* Encrypted elements (such as tracked links) remain encrypted.
+* Message Export does not automatically anonymize or redact rendered message content.
+
++++
+
++++ What is the retention period for Message Export data?
+
+Message Export data follows a 7-day retention window within [!DNL Adobe Experience Platform].
+
+Customers should export the data within this period and store it in their own systems if longer retention is required.
+
++++
+
++++ Can customers test Message Export before purchasing?
+
+There is no trial or "try-before-you-buy" option for Message Export.
+
+Customers may validate their downstream systems using sample export files, since Message Export relies on standard AEP dataset and destination functionality.
+
++++
+
++++ Is the Message Export schema available before purchase?
+
+No. The Message Export dataset and schema become available in the product only after the Message Export add-on is purchased and enabled.
+
++++
+
++++ Is Message Export a full archival or compliance solution?
+
+No. Message Export is an enabler, not a full archival or compliance product.
+
+Customers are expected to:
+
+* Export message data from Adobe
+* Transform or enrich as needed
+* Store and manage the data in their own archival or compliance systems
+
++++
+
++++ What are common use cases?
+
+Customers typically use Message Export for:
+
+* Regulatory or compliance review
+* Message archival
+* Integration with third-party systems
+* Internal audit or support workflows
+* Analytics beyond Adobe applications
+
++++
+
++++ What Message Export does not do
+
+Message Export does not:
+
+* Embed external images or media assets
+* Provide unlimited or long-term data retention in Adobe systems
+* Offer a trial environment
+* Automatically archive messages outside Adobe
+
++++
