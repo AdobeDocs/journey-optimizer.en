@@ -104,3 +104,10 @@ The dataset contains comprehensive information for each message sent via the cha
 
 All records in the dataset are retained for **seven calendar days from ingestion**. During this retention period, you can access the data for compliance audits, legal inquiries, or export it to your own storage system via the configured Experience Platform destination.
 
+<!--
+## AJO Message Export schema {#message-export-schema}
+
+See the **AJO Message Export schema** for a full view of the dataset structure and available fields.
+
+[Learn more](message-export-schema.md)
+-->
