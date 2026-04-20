@@ -75,6 +75,13 @@ Each Orchestrated campaign contains:
 
 * **Worktables**: The worktable contains all the information carried by the transition. Each Orchestrated campaign uses several worktables. The data conveyed in these tables can be used throughout the Orchestrated campaign's life cycle.
 
+A typical entry-level Orchestrated campaign follows this pattern: **Build audience → Fork → Channel A + Channel B**.
+
+This approach lets you target the same audience with two parallel branches in a single campaign run — for example, one branch using a Marketing email and another using a Transactional email. Each branch is independent and can use a different channel configuration, message content, or category.
+
+➡️ [Learn how to use the Fork activity](activities/fork.md)
+
+➡️ [Understand Marketing vs Transactional messages](activities/channels.md#marketing-vs-transactional)
 
 ## Introduction video {#video-oc}
 
