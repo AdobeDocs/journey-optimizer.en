@@ -8,7 +8,7 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: export, messages, dataset, schema, emails, SMS
-exl-id: 2f7a9f28-4a22-4b3f-b260-9e3b7b5b0cc0
+
 ---
 # AJO Message Export schema {#ajo-message-export-schema}
 
