@@ -1,5 +1,5 @@
 ---
-title: Optimize email text for AI inboxes
+title: Optimize email for AI inboxes
 description: Generate and refine a dedicated version of your messages so AI-assisted inbox clients can use your offers and CTAs when they summarize mail or extract intent—in the Email Designer with Optimize with AI.
 feature: Email Design
 topic: Content Management, Artificial Intelligence
@@ -28,7 +28,7 @@ Typical questions recipients may ask in AI-assisted inbox experiences are *What 
 
 * Also, the assistants may proactively search for discounts or coupons related to the brand and fold those into the answer, so the user is no longer looking at only what your message actually promised. That behavior is useful to end users, but dilutes control for marketers who need answers to track the real terms in the send.
 
-To prevent these issues, [!DNL Journey Optimizer] creates an additional specific text version of your messages so that coupons, discount ranges, call to actions, and other priorities appear up front in clear linear copy. This version is different from the default or custom [plain text version](text-version-email.md) of your messages.
+To prevent these issues, [!DNL Journey Optimizer] creates an additional specific version of your messages so that coupons, discount ranges, call to actions, and other priorities appear up front in clear linear copy. <!--This version is different from the HTML view and default or custom plain text version of your messages.-->
 
 The goal is for inbox AI to ground summaries and Q&A in your defined offers and actions—instead of leaning on a thin default text part or on unrelated web results.
 
@@ -36,7 +36,7 @@ The goal is for inbox AI to ground summaries and Q&A in your defined offers and 
 >
 >Exact AI-assistant behaviors depend on the inbox provider and model version. After your email is delivered, answers and summaries provided by external AI clients can be wrong, incomplete, or mixed with web results.
 >
->The Optimize email text for AI inboxes capability only generates a dedicated version in Journey Optimizer; it does not guarantee how a third-party assistant will interpret or display the message. Read more about the [limitations and risks of third-party inbox AI](#inbox-ai-risks).
+>The Optimize email for AI inboxes capability only generates a dedicated version in Journey Optimizer; it does not guarantee how a third-party assistant will interpret or display the message. Read more about the [limitations and risks of third-party inbox AI](#inbox-ai-risks).
 
 ## Recommended use cases {#use-cases}
 
@@ -44,7 +44,7 @@ The goal is for inbox AI to ground summaries and Q&A in your defined offers and 
 * **Critical details only in images** — Offers, promo codes, or deadlines shown in banners or graphics are invisible in plain text. Use the optimizer (and manual edits) so the same facts appear as text, improving extraction by AI summaries and text-only clients.
 -->
 
-* **Dense or fragmented text** — When the content of the email is hard to scan, optimization can produce a clearer linear narrative with explicit offers and links.
+* **Dense or fragmented content** — When the content of the email is hard to scan, optimization can produce a clearer linear narrative with explicit offers and links.
 
 * **Controlling inbox Q&A** — When you expect recipients to ask assistants *what the email is about* or *what the offers are*, a strong optimized for AI version reduces partial summaries and avoids reliance on web-supplemented answers that are not tied to your approved copy.
 
@@ -106,7 +106,7 @@ The Optimize email for AI inboxes capability helps you prepare a version of your
 
 * **Brand and legal exposure** — Incorrect or incomplete AI summaries can still create customer confusion or disputes about promotions, terms, or opt-out language. [!DNL Journey Optimizer] does not ensure that a third party's model will reproduce the optimized version of your email faithfully.
 
-* **[!UICONTROL Optimize for AI Inbox]** in [!DNL Journey Optimizer] — The authoring-time control in the Email Designer is separate from end-user inbox assistants. Always review generated plain text before send.
+* **[!UICONTROL Optimize for AI Inbox]** in [!DNL Journey Optimizer] — The authoring-time control in the Email Designer is separate from end-user inbox assistants. Always review generated content before send.
 
 ## Related topics {#related-topics}
 
