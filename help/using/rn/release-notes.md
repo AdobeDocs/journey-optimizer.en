@@ -37,7 +37,7 @@ Because of this model, release notes are updated between monthly releases. For f
 <p>Adobe Journey Optimizer now includes a new capability that ensures your emails are optimally structured for AI-powered inboxes such as Apple Intelligence and Google Gemini in Gmail.</p>
 <p>As AI assistants increasingly control how recipients read and act on email, this feature helps you author content that performs well across downstream AI tasks including summarization, triage, prioritization, and intent extraction.</p>
 <p><img src="assets/do-not-localize/optimize-for-ai.gif"></p>
-<p>For more information, refer to <a href="../email/llm-email-optimizer.md">Optimize email text for AI inboxes</a>.</p>
+<p>For more information, refer to <a href="../email/llm-email-optimizer.md">Optimize email for AI inboxes</a>.</p>
 <p>Availability date: April 17, 2026</p>
 </td>
 </tr>
