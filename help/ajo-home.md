@@ -23,6 +23,13 @@ Discover the latest Journey Optimizer features and improvements in the Release N
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
 
+>[!TAB AI Assistant for personalization]
+
+Use **AI Assistant** in the Personalization Editor or from the Email Designer toolbar (**Add expression**) to describe what you want in plain language and get a personalization expression, or select existing code to explain it, fix issues, or suggest improvements.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/generative-personalization-expressions.md)
+
+
 >[!TAB Iterate over contextual data]
 
 Learn how to use iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
@@ -36,19 +43,13 @@ Journey Optimizer now includes **Campaign Orchestration**, a new capability purp
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
 
->[!TAB Quiet Hours]
-
-Quiet hours let you define time-based exclusions for Email, SMS, Push, and WhatsApp channels.
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/quiet-hours.md)
-
 
 >[!ENDTABS]
 
 
 ## Start Exploring {#section-explore}
 
-:::: landing-cards-container
+::::landing-cards-container
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 

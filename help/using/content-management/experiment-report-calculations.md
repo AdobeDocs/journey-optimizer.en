@@ -32,7 +32,7 @@ The lift between a variant  *ν*, and the control variant  *ν<sub>0</sub>* is t
 
 </br>
 
-## Anytime Valid Confidence Intervals for individual treatments
+## Anytime valid confidence intervals for individual treatments
 
 The Journey Experimentation panel displays "anytime valid" confidence intervals (confidence sequences) for individual treatments in an experiment. 
 
@@ -93,7 +93,7 @@ Finally, the **anytime valid confidence** is:
 
 ![](assets/statistical_11.png){width="200" align="center"}
 
-## Declaring an Experiment to be Conclusive
+## Declaring an experiment to be conclusive
 
 For an Experiment with two arms, the Journey Optimizer Experimentation panel displays a message stating that an Experiment is **conclusive** when the anytime valid confidence exceeds 95% (i.e., the anytime valid `p`-value is below 5%). 
 

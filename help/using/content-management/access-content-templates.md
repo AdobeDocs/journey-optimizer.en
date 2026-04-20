@@ -95,7 +95,7 @@ To easily navigate your content templates, use folders to organize them more eff
 >
 >When a template is edited or deleted, campaigns or journeys including content created using this template are not impacted.
 
-## [!BADGE Limited Availability]{type=Informative} Display templates as thumbnails {#template-thumbnails}
+## [!BADGE limited Availability]{type=Informative} display templates as thumbnails {#template-thumbnails}
 
 Select the **[!UICONTROL Grid view]** mode to display each template as a thumbnail.
 

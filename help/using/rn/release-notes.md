@@ -28,6 +28,26 @@ Because of this model, release notes are updated between monthly releases. For f
 <table>
 <thead>
 <tr>
+<th><strong>Optimize email for AI inboxes</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now includes a new capability that ensures your emails are optimally structured for AI-powered inboxes such as Apple Intelligence and Google Gemini in Gmail.</p>
+<p>As AI assistants increasingly control how recipients read and act on email, this feature helps you generate and author content that performs well across downstream AI tasks including summarization, triage, prioritization, and intent extraction.</p>
+<p><img src="assets/do-not-localize/optimize-for-ai.gif"></p>
+<p>For more information, refer to <a href="../email/llm-email-optimizer.md">Optimize email for AI inboxes</a>.</p>
+<p>Availability date: April 17, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey path experimentation</strong><br/></th>
 </tr>
 </thead>
@@ -64,6 +84,7 @@ Because of this model, release notes are updated between monthly releases. For f
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -82,6 +103,7 @@ Because of this model, release notes are updated between monthly releases. For f
 </tr>
 </tbody>
 </table>
+--> 
 
 <table>
 <thead>
@@ -102,7 +124,44 @@ Because of this model, release notes are updated between monthly releases. For f
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>AI Assistant for Personalization Expressions</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>[!DNL Adobe Journey Optimizer] now includes an AI Assistant in the Personalization Editor. Describe what you want to personalize in plain language and the assistant produces a personalization expression you can use as-is or refine in a short follow-up conversation.</p>
+<p>You can also select existing personalization code and ask the assistant to explain it, fix it, or suggest improvements. After you generate an expression, <strong>Show previews for sample profiles</strong> runs a quick check against a limited set of synthetic sample profiles.</p>
+<p><img src="assets/do-not-localize/assistant-perso.gif"></p>
+<p>For more information, refer to <a href="../content-management/generative-personalization-expressions.md">AI Assistant for Personalization Expressions</a>.</p>
+<p>Availability date: April 13, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Improvements {#april-26-improv}
+
+#### Decisioning
+
+* **Temporarily unavailable fragments are skipped** - When using fragments in decision items, if a fragment is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing. [Read more](../experience-decisioning/fragments-decision-policies.md#temporary-unavailable-fragments)
+
+  Availability date: April 14, 2026 
+
+#### Email design
+
+* **AI Assistant for personalization expressions in the Email Designer** - In the Email Designer, select a component and use **Add expression** in the contextual toolbar to describe the personalization you need in plain language, review the generated expression, and insert it without leaving the designer. [Learn more](../content-management/generative-personalization-expressions.md#generate-email-designer)
+
+  Availability date: April 15, 2026
+
+* **Advanced HTML editor for email content** - Advanced HTML mode lets you edit the HTML source of your content in the Email Designer, add advanced expressions (such as conditions) in the source, and toggle between HTML view and Desktop view without losing your changes.
+
+  Previously available for email content templates only, this capability is now deployed to **email** content in the Email Designer (for example, emails authored in journeys and campaigns), in addition to email content templates. It is currently in Limited Availability — contact your Adobe representative to gain access. [Read more](../email/email-expert-mode.md)
+
+  Availability date: April 9, 2026
 
 #### Journey Path Optimization
 
@@ -122,15 +181,17 @@ Because of this model, release notes are updated between monthly releases. For f
 
   Availability date: April 7, 2026
 
-<!--
 * **Adobe Experience Manager Content Fragment context while authoring** - Your Content Fragment selection stays active as you move between text fields and content blocks, so you can add more fragment fields without reopening **Open AEM Content advisor** each time. [Read more](../integrations/aem-fragments.md)
 
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
   Availability date: April 1, 2026
--->
 
 #### Adobe Experience Manager Integrations
 
 * **Adobe Experience Manager Content fragment Varition Support** - You can select **Content Fragment variations** (for example language or channel variants) when inserting Adobe Experience Manager Content Fragments, with improved handling for locale and multilingual scenarios. [Read more](../integrations/aem-fragments.md#aem-variations)
+  
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
   Availability date: April 3, 2026
 
@@ -277,7 +338,7 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <p>Advanced HTML mode for email content templates lets you edit the HTML source of your content in the Email Designer, add advanced expressions (such as conditions) in the source, and toggle between HTML view and Desktop view without losing your changes.</p>
 <p>This capability is available in content templates for the Email channel only. It is currently in Limited Availability — contact your Adobe representative to gain access.</p>
 <p><img src="assets/do-not-localize/expert-mode.gif"/></p>
-<p>For more information, refer to the <a href="../content-management/email-template-expert-mode.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../email/email-expert-mode.md">detailed documentation</a>.</p>
 <p>Availability date: March 10, 2026</p>
 </td>
 </tr>
@@ -422,11 +483,6 @@ Improvements coming with this release are listed below.
 
   **Caution:** When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered—both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.
 -->
-<!--
-#### Decisioning
-
-* **Optional fragments in decision items** - When using fragments in decision items, you can now make a fragment optional so that if it is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing.
--->
 
 #### Configuration
 
@@ -481,4 +537,3 @@ WAITING RELEASE DATE CONFIRMATION * **Target dimension simplification in Orchest
 WAITING RELEASE DATE CONFIRMATION
 * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.
 -->
-

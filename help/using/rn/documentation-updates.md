@@ -22,6 +22,13 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * The **Build audience activity** documentation has been enriched with a new example showing how to filter profiles by a subscription plan attribute using the rule builder. [Read more](../orchestrated/activities/build-audience.md#build-audience-examples)
 
 * The **Get started with Orchestrated campaigns** page documents the entry-level **Build audience → Fork → Channel A + Channel B** pattern in **What's inside an Orchestrated campaign?**, with cross-references to the Fork activity and Marketing vs Transactional messages pages. [Read more](../orchestrated/gs-orchestrated-campaigns.md#gs-ms-campaign-inside)
+* The **Edit email content with the advanced HTML editor** page has been moved from the Content management section to the **Email** section of the documentation (under Email design) and the page file has been renamed to **email-expert-mode.md**. The page now documents that the advanced HTML editor is available in the Email Designer for email messages as well as for email content templates. [Read more](../email/email-expert-mode.md)
+
+* The **Start and monitor Orchestrated campaigns** documentation has been updated with a new section detailing the internal publication-time execution sequence, along with a campaign lifecycle status table, a pre-publication checklist, and a sending confirmation warning for non-recurring campaigns. [Read more](../orchestrated/start-monitor-campaigns.md#publication-sequence)
+
+* The **Save audience** activity documentation has been updated with a note clarifying that Save Audience activities always execute before message activities at publication time. [Read more](../orchestrated/activities/save-audience.md)
+
+* Three new Q&As have been added to the **Orchestrated campaigns FAQ**: what happens internally at publication time, a 7-point checklist of reasons why messages may not send after publishing, and how profile snapshot lookup differs from real-time profile resolution. [Read more](../orchestrated/orchestrated-campaigns-faq.md)
 
 * A new **[Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached)** section has been added to the journey troubleshooting documentation, explaining the `maxInstanceStackEventsReached` discard reason, when it occurs, and how to mitigate it. The guardrails and step event field list pages have also been updated accordingly.
 
@@ -61,7 +68,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Monitor your AI models** page is now available in the Decisioning documentation. It explains how to track the health, training status, and performance of personalized optimization models directly in [!DNL Journey Optimizer]. [Read more](../experience-decisioning/ranking/ai-model-observability.md)
 
-* The **advanced HTML editor** (expert mode) for email templates is now available in Limited Availability. The documentation page is now publicly accessible. This capability lets you view and edit the raw HTML source of email content templates directly from the Email Designer. [Read more](../content-management/email-template-expert-mode.md)
+* The **advanced HTML editor** (expert mode) for email templates is now available in Limited Availability. The documentation page is now publicly accessible. This capability lets you view and edit the raw HTML source of email content templates directly from the Email Designer. [Read more](../email/email-expert-mode.md)
 
 * The **URL tracking** and **Journey troubleshooting** documentation have been updated to document the behavior of `context.system.source.actionId` in closed journeys. Closed or un-republished journeys may produce empty `{}` placeholders in tracking URLs. Guidance has been added on how to resolve the issue by republishing the journey or removing the affected parameter. [Read more](../email/url-tracking.md)
 

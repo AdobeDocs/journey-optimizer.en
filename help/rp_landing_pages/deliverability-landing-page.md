@@ -10,7 +10,7 @@ exl-id: 1657152e-4a93-4664-a56f-3ea7f9e69098
 
 Email deliverability is all about ensuring your emails reach your audience’s inbox rather than getting lost in spam folders or blocked entirely- a critical factor for successful campaigns. In Adobe Journey Optimizer, you’ll learn how to improve deliverability by managing suppression lists to exclude problematic addresses, adapting email content to avoid spam filters, and building a strong sender reputation through practices like IP warmup. You’ll also explore advanced tools like DMARC authentication and SMTP relay for added security and compliance. Each topic connects to practical strategies that empower you to safeguard your email performance while enhancing trust with recipients.
 
-## Email Deliverability Resources
+## Email deliverability resources
 
 :::: landing-cards-container
 :::

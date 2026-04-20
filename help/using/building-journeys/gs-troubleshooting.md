@@ -7,7 +7,7 @@ feature: Journeys, Monitoring
 topic: Content Management
 role: User
 level: Intermediate
-hide: yes
+hide: true
 keywords: troubleshoot, troubleshooting, journey, check, errors
 exl-id: d255e9e4-301a-444a-86d3-97e0df4d3a49
 version: Journey Orchestration

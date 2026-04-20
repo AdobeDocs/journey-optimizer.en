@@ -8,7 +8,7 @@ topic: Content Management
 role: User
 level: Intermediate
 badge: label="Private beta" type="Informative"
-hide: yes
+hide: true
 exl-id: 9b7fbd43-3d90-458b-8a2f-0bf0ac5437c3
 ---
 # Auto-generation of content variants (Beta){#auto-generate-variants}

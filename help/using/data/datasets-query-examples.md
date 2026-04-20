@@ -27,7 +27,7 @@ To view the complete list of fields and attributes for each schema, consult the 
 See also several commonly used [examples to query Journey Step Events](../reports/query-examples.md). 
 
 
-## Email Tracking Experience Event Dataset{#email-tracking-experience-event-dataset}
+## Email tracking Experience event dataset{#email-tracking-experience-event-dataset}
 
 _Name in the interface : AJO Email Tracking Experience Event Dataset_
 
@@ -67,7 +67,7 @@ order by
 limit 100;
 ```
 
-## Message Feedback Event Dataset{#message-feedback-event-dataset}
+## Message feedback event dataset{#message-feedback-event-dataset}
 
 _Name in the interface: AJO Message Feedback Event Dataset_
 
@@ -177,7 +177,7 @@ Once identified, remove those addresses from Journey Optimizer suppression list.
 
 
 
-## Push Tracking Experience Event Dataset {#push-tracking-experience-event-dataset}
+## Push tracking Experience event dataset {#push-tracking-experience-event-dataset}
 
 _Name in the interface: AJO Push Tracking Experience Event Dataset_
 
@@ -195,7 +195,7 @@ select  _experience.customerJourneyManagement.pushChannelContext.platform, SUM (
   group by _experience.customerJourneyManagement.pushChannelContext.platform
 ```
 
-## Journey Step Event{#journey-step-event}
+## Journey step event{#journey-step-event}
 
 _Internal name: Journey Step Events (system dataset)_
 
@@ -268,7 +268,7 @@ See also several commonly used [examples to query Journey Step Events](../report
 
 Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
 
-## Decisioning Event Dataset{#ode-decisionevents}
+## Decisioning event dataset{#ode-decisionevents}
 
 _Name in the interface: ODE DecisionEvents (system dataset)_
 
@@ -299,7 +299,7 @@ group by proposedOffers.id, proposedOffers.name, po._experience.decisioning.rank
 ```
 
 <!--
-## Consent Service Dataset{#consent-service-dataset}
+## Consent service dataset{#consent-service-dataset}
 
 _Name in the interface: CJM Consent Service Dataset (system dataset)_
 
