@@ -8,7 +8,7 @@ level: Intermediate
 version: Journey Orchestration
 exl-id: 7bb72527-d4e1-49f8-b2c3-c943d65903f2
 ---
-# Decisioning Frequently Asked Questions {#decisioning-faq}
+# Decisioning frequently asked questions {#decisioning-faq}
 
 This page provides answers to frequently asked questions about Decisioning capabilities in Adobe Journey Optimizer.
 

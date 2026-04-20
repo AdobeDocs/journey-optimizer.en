@@ -72,7 +72,7 @@ Note that with an Enterprise license, users gain full access to the Adobe Expres
 
 Learn more about [Journey Optimizer + Adobe Express](../integrations/express.md).
 
-## GenStudio for Performance Marketing
+## GenStudio for performance marketing
 
 Adobe GenStudio for Performance Marketing is a generative AI-first application that lets marketing teams create their own ads and emails to drive impactful, personalized marketing campaigns that adhere to your brand standards and complies with your enterprise policies. By leveraging Adobe AI technology, it provides a comprehensive suite of tools that simplify the complexities of content creation and management so that creatives can focus on innovation.
 

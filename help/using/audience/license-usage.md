@@ -26,7 +26,7 @@ To access this dashboard, go to **[!UICONTROL Administration]** > **[!UICONTROL 
 
 For [!DNL Adobe Journey Optimizer], the dashboard allows you to check the number of **Engageable Profiles**. 
 
-## What is an Engageable Profile? {#what-is-engageable-profile}
+## What is an engageable profile? {#what-is-engageable-profile}
 
 An **Engageable Profile** is a record of information representing an individual that is stored in the Profile Service and has been engaged by journeys or campaigns. 
 
@@ -47,7 +47,7 @@ Key characteristics of Engageable Profiles:
 >
 >If you observe a sudden spike in your Engageable Profiles count, refer to the [Troubleshooting section](#troubleshooting-engageable-profiles) below for detailed guidance on understanding and resolving the issue.
 
-## Troubleshooting: Significant increase in Engageable Profiles count {#troubleshooting-engageable-profiles}
+## Troubleshooting: significant increase in engageable profiles count {#troubleshooting-engageable-profiles}
 
 If you observe a sudden spike in the Engageable Profiles count (for example, profiles increasing from hundreds of thousands to millions within a day), this section provides guidance to understand and address the issue.
 

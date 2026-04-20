@@ -291,9 +291,9 @@ Once content is generated, use the **Refine** feature to iterate and enhance it 
 | **Change Tone** | Adapt content for different audiences | "Change tone to more casual for younger demographic" |
 | **Transcreate** | Cultural adaptation beyond translation | "Transcreate this campaign for the Japanese market" |
 
-## Scenario-Based Prompt Examples
+## Scenario-Based prompt examples
 
-### Based on Content Type {#content-type-practices}
+### Based on content type {#content-type-practices}
 
 <table style="table-layout: fixed; border: 0;">
 <thead>
@@ -322,7 +322,7 @@ Once content is generated, use the **Refine** feature to iterate and enhance it 
 </tbody>
 </table>
 
-### Based on Industry-Specific Approaches {#industry-approaches}
+### Based on industry-specific approaches {#industry-approaches}
 
 <table style="table-layout: fixed; border-collapse: collapse; border: 0;">
 <thead>

@@ -38,7 +38,7 @@ Use [!DNL Journey Optimizer] to:
 
 ➡️ **Ready to start building?** [Create your first journey](journey-gs.md) in 5 minutes.
 
-### Journeys vs Campaigns: When to use each {#journeys-vs-campaigns-intro}
+### Journeys vs campaigns: when to use each {#journeys-vs-campaigns-intro}
 
 [!DNL Adobe Journey Optimizer] offers three approaches to reach customers: **Journeys** (1:1 real-time orchestration), **Campaigns** (simple batch or API-triggered delivery), and **Orchestrated campaigns** (batch canvas workflows with multi-entity data).
 

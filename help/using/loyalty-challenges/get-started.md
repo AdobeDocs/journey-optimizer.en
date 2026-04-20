@@ -12,7 +12,7 @@ badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 ---
-# Get started with Loyalty Challenges {#get-started-loyalty-challenges}
+# Get started with loyalty challenges {#get-started-loyalty-challenges}
 
 >[!BEGINSHADEBOX]
 

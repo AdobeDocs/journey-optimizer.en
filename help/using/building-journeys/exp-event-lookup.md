@@ -123,7 +123,7 @@ Learn more:
 
 
 
-## Frequently Asked Questions {#faq-ee}
+## Frequently asked questions {#faq-ee}
 
 This FAQ focuses on the timeline for retiring experience event usage in journey expressions and who is impacted. For guidance on alternative approaches, see the use cases and best practices above.
 

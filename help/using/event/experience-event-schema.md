@@ -10,7 +10,7 @@ level: Intermediate, Experienced
 keywords: schemas, XDM, platform, streaming, ingestion, journey
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
 ---
-# About ExperienceEvent Schemas for [!DNL Journey Optimizer] Events {#about-experienceevent-schemas}
+# About experienceevent schemas for [!DNL Journey Optimizer] events {#about-experienceevent-schemas}
 
 [!DNL Journey Optimizer] events are XDM Experience Events that are sent to Adobe Experience Platform via Streaming Ingestion.
 

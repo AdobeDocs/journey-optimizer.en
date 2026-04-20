@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 ---
-# Work with Adobe Experience Manager Content Fragments {#aem-fragments}
+# Work with Adobe Experience Manager content fragments {#aem-fragments}
 
 >[!AVAILABILITY]
 >
@@ -156,7 +156,7 @@ Once you have performed your tests and validated the content, you can [send your
 
 Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references){target="_blank"}. 
 
-## Working with Content Fragment variations {#aem-variations}
+## Working with content fragment variations {#aem-variations}
 
 In Adobe Experience Manager, each Content Fragment is made up of the following:
 

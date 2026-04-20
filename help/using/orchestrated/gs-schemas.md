@@ -7,7 +7,7 @@ exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
 version: Campaign Orchestration
 ---
 
-# Get started with relational Schemas and Datasets{#gs-schemas}
+# Get started with relational schemas and datasets{#gs-schemas}
 
 This guide walks you through the process of creating a relational schema, configuring a dataset for Orchestrated campaigns and ingesting data.
 

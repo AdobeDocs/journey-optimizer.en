@@ -42,7 +42,7 @@ Step 1 is optional if your push credentials have already been configured, as the
 
 1. Click **[!UICONTROL Submit]** to create your app configuration.
 
-## Step 2: Create your Live activity configuration {#config-live-activity}
+## Step 2: create your live activity configuration {#config-live-activity}
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Click the **[!UICONTROL Create channel configuration]** button.
 

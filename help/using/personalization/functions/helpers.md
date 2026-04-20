@@ -9,7 +9,7 @@ exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
 ---
 # Helpers {#gs-helpers}
 
-## Default Fallback Value{#default-value}
+## Default fallback value{#default-value}
 
 The `Default Fallback Value` helper is used to return a default fallback value if an attribute is empty or null. This mechanism works for Profile attributes and Journey events.
 

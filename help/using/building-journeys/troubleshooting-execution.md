@@ -131,11 +131,11 @@ If individuals flow the right way in the journey but do not receive messages the
 
 In case of a message sent via a custom action, the only thing that can be checked during journey test is the fact that the call of the custom action's system leads to an error or not. If the call to the external system associated with the custom action does not lead to an error but does not lead to a message sending, some investigations should be done on the external system's side.
 
-## Understanding duplicate entries in Journey Step Events {#duplicate-step-events}
+## Understanding duplicate entries in Journey step events {#duplicate-step-events}
 
 Use this section to understand why duplicate rows can appear in Journey Step Events.
 
-### Why do I see multiple entries with the same journey instance, profile, node, and request IDs?
+### Why do i see multiple entries with the same journey instance, profile, node, and request ids?
 
 When querying Journey Step Events data, you may occasionally observe what appears to be duplicate log entries for the same journey execution. These entries share identical values for:
 
@@ -197,7 +197,7 @@ When analyzing Journey Step Events data:
       AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID>'
     ```
 
-### What should I do if I observe this?
+### What should i do if i observe this?
 
 This is normal system behavior and **no action is required**. The duplicate logging does not indicate a problem with your journey configuration or message delivery. 
 
