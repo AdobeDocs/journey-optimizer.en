@@ -97,7 +97,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>Marketers can now intelligently automate the selection of journeys based on specific constraints — using formulas and AI models. AI models can optimize journey selection based on engagement metrics such as click rate, purchases, or any other custom metrics the marketer would like to optimize for.</p>
+<p>You can now use AI models in your ranking formulas to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14295">DOCAC-14295</a></p>
 </td>
@@ -363,7 +363,7 @@ Improvements coming with this release are listed below.
 
 #### Configuration
 
-* **Specific permissions for URL parameter encryption** - &lt;TBC&gt;
+* **Specific permissions for URL parameter encryption keys** - To access and manage keys for URL parameter encryption, new permissions have been created. You must now have the **View Key Registry** and **Manage Key Registry** permissions granted.
 
   Documentation JIRA task: [DOCAC-14490](https://jira.corp.adobe.com/browse/DOCAC-14490)
 
