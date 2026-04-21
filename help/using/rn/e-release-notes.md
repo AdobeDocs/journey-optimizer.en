@@ -160,7 +160,8 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Journey fragments</strong><br/></th>
@@ -176,7 +177,8 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 <table>
 <thead>
