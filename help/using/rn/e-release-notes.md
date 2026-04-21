@@ -30,7 +30,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>[!DNL Adobe Journey Optimizer] now provides an <strong>MCP (Model Context Protocol) server</strong> that surfaces campaign, loyalty, and sandbox operations directly inside any MCP-compatible application. With this integration, different personas can collaborate around the same orchestration data. Instead of writing queries against the AJO REST API or navigating multiple UI screens, you can describe your intent conversationally and let the LLM invoke the appropriate MCP tools. This capability is currently available in Claude Web and Desktop.</p>
+<p>Adobe Journey Optimizernow provides an <strong>MCP (Model Context Protocol) server</strong> that surfaces campaign, loyalty, and sandbox operations directly inside any MCP-compatible application. With this integration, different personas can collaborate around the same orchestration data. Instead of writing queries against the AJO REST API or navigating multiple UI screens, you can describe your intent conversationally and let the LLM invoke the appropriate MCP tools. This capability is currently available in Claude Web and Desktop.</p>
 <p>This capability is available to all customers in Public Beta.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14509">DOCAC-14509</a></p>
 </td>
@@ -75,7 +75,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Folders for journeys and campaigns (Limited Availability)</strong><br/></th>
+<th><strong>Folders for journeys and campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -180,7 +180,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>[!DNL Adobe Journey Optimizer] now includes an <strong>AI Assistant</strong> in the <strong>Personalization editor</strong>. Describe what you want to personalize in plain language and the assistant produces a <strong>personalization expression</strong> you can use as-is or refine in a short follow-up conversation. You can also select existing personalization code and ask the assistant to explain it, fix it, or suggest improvements.</p>
+<p>Adobe Journey Optimizer now includes an <strong>AI Assistant</strong> in the <strong>Personalization editor</strong>. Describe what you want to personalize in plain language and the assistant produces a <strong>personalization expression</strong> you can use as-is or refine in a short follow-up conversation. You can also select existing personalization code and ask the assistant to explain it, fix it, or suggest improvements.</p>
 <p>For more information, refer to <a href="../content-management/generative-personalization-expressions.md">AI Assistant for Personalization Expressions</a>.</p>
 <p>Availability date: April 13, 2026</p>
 </td>
