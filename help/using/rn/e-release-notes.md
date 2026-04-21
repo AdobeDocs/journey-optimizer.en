@@ -114,7 +114,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>&lt;TBC&gt;</p>
+<p>You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14038">DOCAC-14038</a></p>
 </td>
@@ -131,7 +131,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>&lt;TBC&gt;</p>
+<p>Sandbox tooling now supports exporting and importing Orchestrated campaigns between sandboxes via packages.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-13760">DOCAC-13760</a></p>
 </td>
 </tr>
@@ -147,7 +147,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>&lt;TBC&gt;</p>
+<p>Adobe Journey Optimizer now includes a new capability that ensures your emails are optimally structured for AI-powered inboxes such as Apple Intelligence and Google Gemini in Gmail. As AI assistants increasingly control how recipients read and act on email, this feature helps you author content that performs well across downstream AI tasks including summarization, triage, prioritization, and intent extraction.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14520">DOCAC-14520</a></p>
 </td>
 </tr>
@@ -163,7 +163,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>&lt;TBC&gt;</p>
+<p>The Incremental query activity is now available in Orchestrated campaigns. This targeting activity runs your query each time the campaign runs and returns only records that were not returned in a previous run. You can message or export only new sign-ups, new gold members, or other "new since last run" segments without re-targeting the same profiles.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14262">DOCAC-14262</a></p>
 </td>
 </tr>
@@ -179,7 +179,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>&lt;TBC&gt;</p>
+<p>You can now set your journey to Simulation. This mode allows you to validate your logic using simulated users. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14050">DOCAC-14050</a></p>
 </td>
 </tr>
@@ -295,7 +295,7 @@ Improvements coming with this release are listed below.
 
 #### AI
 
-* **Brand alignment score in Campaign dashboard** - &lt;TBC&gt;
+* **Brand alignment score in Campaign dashboard** - You can now assess your brand alignment score directly within your Campaign dashboard to ensure content stays on-brand. This allows you to verify guidelines at a glance without having to open the content designer.
 
   Documentation JIRA task: [DOCAC-14516](https://jira.corp.adobe.com/browse/DOCAC-14516)
 
@@ -339,7 +339,7 @@ Improvements coming with this release are listed below.
 
   Documentation JIRA task: [DOCAC-13802](https://jira.corp.adobe.com/browse/DOCAC-13802)
 
-* **Open-time personalization with countdown timer using Dynamic Media** - &lt;TBC&gt;
+* **Open-time personalization with countdown timer using Dynamic Media** - Journey Optimizer and Adobe Experience Manager Dynamic Media integration enables open-time personalization for Dynamic Media templates, unlocking hyper-personalized use cases. Customers can create and publish personalized templates in Adobe Experience Manager and use them in Journey Optimizer, with data rendered at open time.
 
   Documentation JIRA task: [DOCAC-13801](https://jira.corp.adobe.com/browse/DOCAC-13801)
 
@@ -385,7 +385,7 @@ Improvements coming with this release are listed below.
 
 #### External integrations
 
-* **External Data integrations** - &lt;TBC&gt;
+* **External Data integrations** - The Integrations feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and content, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.
 
   Documentation JIRA task: [DOCAC-13803](https://jira.corp.adobe.com/browse/DOCAC-13803)
 
