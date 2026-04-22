@@ -11,7 +11,7 @@ keywords: journey, questions, answers, troubleshoot, help, guide, orchestration
 version: Journey Orchestration
 exl-id: cac9fc24-b78e-48d9-9c0c-f43181246f6f
 ---
-# Journey Orchestration - Frequently Asked Questions {#faq-journeys}
+# Journey orchestration - frequently asked questions {#faq-journeys}
 
 Find answers to common questions about Journey Orchestration in [!DNL Adobe Journey Optimizer].
 

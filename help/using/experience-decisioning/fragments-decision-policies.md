@@ -117,3 +117,4 @@ If your decision policy qualifies for two offers and each has a fragment—for e
 >[!NOTE]
 >
 >You can still mark a fragment as mandatory by setting the `required` flag to `true`. However, if a fragment is temporarily missing, it may cause journey or campaign rendering to fail.
+

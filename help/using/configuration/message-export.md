@@ -33,7 +33,7 @@ Records are then retained in the dataset for seven calendar days from ingestion,
 * Records in the AJO Message Export Dataset are retained **for seven calendar days from ingestion**.
 * Backfill is not supported for messages sent before enabling Message Export as described below.
 
-## Enable Message Export {#enable-message-export}
+## Enable message export {#enable-message-export}
 
 The onboarding process for the Message Export feature consists of two steps:
 
@@ -64,7 +64,7 @@ For detailed steps, supported cloud destinations, required permissions, and more
     * File format: select JSON or Parquet (choose one based on downstream tools).
     * Schedule: ensure it runs within the 7-day retention window.
 
-### Enable Message Export in the channel configuration {#config-message-export}
+### Enable message export in the channel configuration {#config-message-export}
 
 To apply Message Export to your campaigns and journeys, you must enable the dedicated option at the channel configuration level. Follow the steps below.
 

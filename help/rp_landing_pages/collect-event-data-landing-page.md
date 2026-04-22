@@ -15,7 +15,7 @@ exl-id: fa55faae-1258-49c7-884f-83d1c33db969
 
 Collecting event data in Adobe Journey Optimizer enables you to track key interactions like decisions, impressions, clicks, and custom events, ensuring your offers are tailored and effective. This data fuels critical processes such as reporting, frequency capping, and AI model building by seamlessly integrating with Adobe Experience Platform. You'll learn how different event types whether automatically triggered or custom-defined work together to provide actionable feedback. From creating datasets to configuring schemas, each step builds a foundation for capturing and leveraging insights, helping you make informed decisions and optimize customer experiences with confidence.
 
-## Collect Event Data
+## Collect event data
 
 :::: landing-cards-container
 :::

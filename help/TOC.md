@@ -29,18 +29,19 @@ solution: Journey Optimizer
   + Essentials {#essentials}
     + [What is Journey Optimizer?](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
+    + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
     + [Guardrails & limitations](using/start/guardrails.md)
   + Get started by role {#by-role}
-    + [Choose your learning path](using/start/quick-start.md)
-    + [Get started as a Marketer](using/start/path/marketer.md)
-    + [Get started as a Data Engineer](using/start/path/data-engineer.md)
+    + [Roles and responsibilities](using/start/quick-start.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
+    + [Get started as a Data Engineer](using/start/path/data-engineer.md)
     + [Get started as a Developer](using/start/path/developer.md)
+    + [Get started as a Marketer](using/start/path/marketer.md)
   + Work efficiently {#work-efficiently}
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)
-    + [AI & intelligent features](using/start/ai-features.md)
+    + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
     + [Accessibility](using/start/accessibility.md)
     + {hide-from-toc} [Journeys vs Campaigns](using/start/journeys-vs-campaigns.md)
 + Journeys {#orchestrate-journeys}
@@ -72,6 +73,7 @@ solution: Journey Optimizer
     + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md)
+    + {hide-from-toc} [Journey Fragments](using/building-journeys/journey-fragments.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
@@ -282,8 +284,8 @@ solution: Journey Optimizer
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
+        + [Optimize email for AI inboxes](using/email/llm-email-optimizer.md)
         + [Manage the text version](using/email/text-version-email.md)
-        + [Optimize email text for AI inboxes](using/email/llm-email-optimizer.md)
         + [Add metadata](using/email/email-metadata.md)
         + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
       + Edit style {#edit-style}
@@ -497,11 +499,11 @@ solution: Journey Optimizer
     + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
-    + {hide-from-toc}[Work with Integrations](using/integrations/external-sources.md)
-    + {hide-from-toc}[Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
-    + {hide-from-toc}[Available vendors](using/integrations/vendor-integration.md)
-    + {hide-from-toc}[FAQ](using/integrations/vendor-integration-faq.md)      
-    + {hide-from-toc} [Work with AI assistants via MCP](/help/using/integrations/ajo-mcp.md)
+    + {hide-from-toc} [Work with Integrations](using/integrations/external-sources.md)
+    + {hide-from-toc} [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
+    + {hide-from-toc} [Available vendors](using/integrations/vendor-integration.md)
+    + {hide-from-toc} [FAQ](using/integrations/vendor-integration-faq.md)      
+    + {hide-from-toc} [Work with AI tools via MCP](/help/using/integrations/ajo-mcp.md)
   + AI Assistant for content generation {#ai-assistant}
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
     + [Get started with AI Assistant](using/content-management/gs-generative.md)

@@ -10,7 +10,7 @@ exl-id: cc658ad0-79ec-4403-bdda-18f0c428d3fa
 
 The 'All Time Report' in Adobe Journey Optimizer is your gateway to understanding the performance of campaigns and journeys over time. This feature empowers you to analyze data seamlessly, thanks to its integration with Customer Journey Analytics, ensuring accurate insights across channels like email, SMS, push notifications, and more. You’ll learn how to access detailed metrics, configure reporting data sources, and even create audiences directly from reports. Whether you’re exploring campaign effectiveness or diving into journey analytics, the interconnected topics provide a clear roadmap to mastering reporting tools and optimizing customer engagement with confidence.
 
-## All Time Report Features
+## All time report features
 
 :::: landing-cards-container
 :::

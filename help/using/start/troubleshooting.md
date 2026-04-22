@@ -12,8 +12,6 @@ exl-id: f8acb987-5c6e-4545-93b9-fdfc0d74db57
 
 The following is a list of troubleshooting articles for Adobe Journey Optimizer. Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
 
-See also the [Adobe Experience Platform FAQ and Troubleshooting documentation](https://experienceleague.adobe.com/en/docs/experience-platform/landing/troubleshooting){target="_blank"}.
-
 When contacting Adobe support for unresolved issues, include environment details, impact level, replication steps, logs or screenshots, and relevant IDs. [Learn what to include in support tickets](user-interface.md#support-ticket-guidelines).
 
 ## Email channel {#ajo-troubleshooting-email}
@@ -22,8 +20,6 @@ When contacting Adobe support for unresolved issues, include environment details
 
 In Adobe Journey Optimizer (AJO), modifying the default CSS blocks in the email header can lead to unexpected formatting issues—especially after removing content fragments. These issues are more noticeable on mobile devices and may result in layout shifts or styling inconsistencies. To prevent this, use the Themes feature to apply custom CSS safely without altering system generated CSS styles.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27252){target="_blank"} to learn how to resolve this issue.
-
 Learn more about email formatting [on this page](../email/get-started-email-design.md).
 
 +++
@@ -31,9 +27,7 @@ Learn more about email formatting [on this page](../email/get-started-email-desi
 
 +++ Why are fragments with editable fields not working?
 
-In Adobe Journey Optimizer, fragments with editable fields may fail to load correctly or duplicate unexpectedly when added to templates. The problem typically affects specific fragments across environments.
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26908){target="_blank"} to learn how to resolve this issue.
+In Adobe Journey Optimizer, fragments with editable fields may fail to load correctly or duplicate unexpectedly when added to templates. The problem typically affects specific fragments across environments. To resolve this, verify fragment configuration, check for conflicting editable field definitions, and test in a development sandbox before republishing.
 
 Learn more about customizable fragments [on this page](../content-management/customizable-fragments.md).
 
@@ -43,8 +37,6 @@ Learn more about customizable fragments [on this page](../content-management/cus
 
 HTML fragments may fail to render properly in emails, often appearing as **fragment IDs** rather than actual content. Unlike visual fragments, HTML fragments require careful configuration. To resolve this, follow best practices for using both **visual and HTML expression fragments** in your email campaigns.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25441){target="_blank"} to learn how to resolve this issue.
-
 Learn more about HTML fragments [on this page](../content-management/fragments.md).
 
 +++
@@ -52,8 +44,6 @@ Learn more about HTML fragments [on this page](../content-management/fragments.m
 +++ Why are email templates and content disappearing from unpublished journeys?
 
 When editing email templates in an unpublished journey, the content and templates of certain emails may unexpectedly disappear. This can cause rework and delays. To reduce the risk of this issue, avoid simultaneous edits, limit the number of open tabs, and save changes frequently.
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26738){target="_blank"} to learn how to resolve this issue.
 
 Learn more about templates [on this page](../email/use-email-templates.md).
 
@@ -63,8 +53,6 @@ Learn more about templates [on this page](../email/use-email-templates.md).
 
 In **'Code your own'** mode under the **Edit Email Body** feature, the Preheader input field does not appear. To include preheader text, users must **manually code the preheader** within their custom HTML content.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26174){target="_blank"} to learn how to solve this issue.
-
 Learn more about Email preheader configuration [on this page](../email/header-parameters.md).
 
 +++
@@ -72,8 +60,6 @@ Learn more about Email preheader configuration [on this page](../email/header-pa
 +++ Why is there a discrepancy in link behavior when using an HTML component in email templates?  
 
 When adding an **HTML component** to an email template, links may behave differently depending on the **email client**, **viewing mode**, or **device/browser**. For example, anchor links can function differently in **Outlook's side-by-side view** compared to full-screen view. Be aware of these variations when designing email templates and test across multiple clients and devices.
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26221){target="_blank"} to learn how to solve this issue.
 
 See also Email design best practices [on this page](../email/get-started-email-design.md).
 
@@ -84,9 +70,6 @@ See also Email design best practices [on this page](../email/get-started-email-d
 
 Missing link tracking in Adobe Journey Optimizer occurs when email URLs use dynamic variables and don't start with http, or when logic statements are placed in the URL field. To resolve this, ensure all URLs begin with http, avoid using logic in the URL field, and move complex personalization logic to the HTML content or pre-processed attributes.
 
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26932){target="_blank"} to learn how to resolve this issue.
-
 Learn more about email tracking [on this page](../email/message-tracking.md).
 
 +++
@@ -94,8 +77,6 @@ Learn more about email tracking [on this page](../email/message-tracking.md).
 +++ How do I resolve a Mail Exchanger error when setting up API-triggered transactional email campaigns? 
 
 If you encounter a Mail Exchanger (MX) error while creating a channel configuration for an API-triggered transactional email campaign in Adobe Journey Optimizer, it may be due to **DNS misconfigurations** or **DMARC policy limitations**. To resolve this, ensure that your DNS is correctly configured and verify that your domain complies with **Domain-based Message Authentication, Reporting, and Conformance (DMARC)** requirements.
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26200){target="_blank"} to learn how to resolve this issue.
 
 Learn more about email DMARC policies [on this page](../configuration/dmarc-record-update.md).
 
@@ -108,9 +89,9 @@ See also [API-triggered campaigns documentation](../campaigns/api-triggered-camp
 
 When implementing push notifications in Journey Optimizer, a single profile can indeed have multiple push tokens associated with different devices. During a push notification campaign, Journey Optimizer is designed to manage these tokens and ensure that the targeted profile can be reached across all associated devices.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26738){target="_blank"} to learn more about push token management.
-
 Learn more about push configuration [on this page](../push/push-configuration.md).
+
+See also [push notification data flow](../push/push-gs.md) to understand how tokens are registered and managed end-to-end.
 
 +++
 
@@ -118,9 +99,17 @@ Learn more about push configuration [on this page](../push/push-configuration.md
 
 If push messages are not redirecting to the intended web URL, it may be due to incorrect click action configuration or disabled push notification settings. Ensure that the **click action** for the push message is correctly set and that **automatic display and tracking** of push notifications are enabled to resolve this issue.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26226){target="_blank"} to learn more about this issue.
-
 Learn more about push configuration [on this page](../push/push-configuration.md).
+
++++
+
++++ Why are push notifications failing after updating app credentials?
+
+Expired or misconfigured push credentials — such as an APNs certificate for iOS or an FCM key for Android — cause delivery failures silently. Journey Optimizer cannot send notifications if the credentials stored in the push channel configuration no longer match those registered with the device platform. Update the credentials in the push channel configuration and verify that the associated mobile app surface is republished.
+
+Learn how to configure push credentials [on this page](../push/push-gs.md).
+
+See also the [push channel configuration documentation](../push/push-configuration.md).
 
 +++
 
@@ -131,36 +120,132 @@ Learn more about push configuration [on this page](../push/push-configuration.md
 
 If a recipient responds **STOP** to an SMS, all future messages from that short number are blocked — including transactional messages. To guarantee uninterrupted delivery of transactional SMS, configure and send them through a **separate short number** that recipients have not previously opted out from.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26258){target="_blank"} to learn more about this issue.
-
 Learn more about SMS opt-out configuration [on this page](../sms/sms-opt-out.md).
 
 +++
 
-## In-app channel
++++ Why is SMS delivery failing even though the channel is configured?
+
+SMS delivery failures after channel setup are most commonly caused by incorrect provider API credentials, a mismatch between the sender ID and what the provider has registered, or routing restrictions at the provider level. Verify that the API key, password, and sender details entered in Journey Optimizer match exactly what your SMS provider has provisioned. Then send a test message to confirm connectivity before launching a campaign.
+
+Learn how to configure your SMS provider [on this page](../sms/sms-configuration.md).
+
++++
+
++++ How do I verify that a profile has opted out of SMS communications?
+
+When a profile texts STOP, Journey Optimizer updates the profile's SMS consent attribute. To verify the current opt-out status, open the profile in the Experience Platform UI and inspect the consent fields under **Privacy** > **Consents**. For campaign troubleshooting, also check the exclusion reasons in the campaign report — opted-out profiles appear under the **Excluded** count with the reason "Opted out."
+
+Learn more about SMS opt-out handling [on this page](../sms/sms-opt-out.md).
+
++++
+
+## In-app channel {#ajo-troubleshooting-inapp}
 
 +++ Why can't I report on the In-app channel in Customer Journey Analytics?
 
 Difficulties reporting on the **In-app channel** in Adobe Customer Journey Analytics often arise from misconfigured **data views**, **datasets**, or **schema updates**. Ensure these configurations are correctly applied to resolve the issue.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26206){target="_blank"} to learn more about this issue.
-
-Learn more how to integrate Journey Optimizer analytics data in Customer Journey Analytics [on this page](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo#automatically-configure-journey-optimizer-integration){target="_blank"}.
-
-See also the [Journey Optimizer All-time reports documentation](../reports/report-gs-cja.md)
+See also the [Journey Optimizer All-time reports documentation](../reports/report-gs-cja.md).
 
 +++
 
++++ Why is my in-app message not displaying to users?
+
+In-app messages require the Adobe Experience Platform Mobile SDK to be correctly installed and the Messaging extension to be registered in your app. If the message is not appearing, verify that the SDK is initialized before the app attempts to fetch in-app messages, that the correct app surface (bundle ID) is configured in Journey Optimizer, and that the campaign is in **Live** status. Also confirm that the profile meets the audience criteria and has not already been capped by a frequency rule.
+
+Learn how to configure the In-app channel [on this page](../in-app/inapp-configuration.md).
+
++++
+
++++ Why is my in-app campaign not triggering on the expected event?
+
+In-app campaigns trigger based on event names that must match exactly between your app's SDK implementation and the trigger condition defined in Journey Optimizer. A mismatch in capitalization, spelling, or event payload structure will prevent the trigger from firing. Use the Adobe Experience Platform Assurance tool to inspect live SDK events and compare them against your campaign's trigger configuration.
+
+Learn how to create and configure an in-app message [on this page](../in-app/create-in-app.md).
+
++++
+
+
+## Content cards {#ajo-troubleshooting-content-cards}
+
++++ Why are content cards not displaying in the app?
+
+Content cards require the Adobe Experience Platform Mobile SDK and the **Messaging SDK** to be installed, registered, and configured in the app. Unlike push or in-app messages, content cards are not rendered automatically — your app must explicitly call the Messaging SDK APIs to fetch available cards and then render them in your UI. If cards are not appearing, use **Adobe Experience Platform Assurance** to verify that decision requests are going out when the target event fires and that responses are coming back from the Edge Network.
+
+Learn how to configure content cards support in the Mobile SDK [on this page](../content-card/content-card-configuration-sdk.md).
+
++++
+
++++ Do content cards require the user to grant push notification permissions?
+
+No. Content cards are silent and persistent — they do not rely on OS-level push permissions and are not affected by a user's notification opt-in status. This makes them a useful fallback channel for reaching users who have disabled push notifications. Cards are fetched from the Edge Network while the user is in-session and displayed within your app's own UI.
+
+Learn more about the content card channel [on this page](../content-card/get-started-content-card.md).
+
++++
+
++++ Why are content card impressions not appearing in campaign reports?
+
+Content card impressions and interactions (clicks, dismissals) are not tracked automatically. Your app must explicitly send tracking events back to Adobe via the Messaging SDK after rendering a card and after any user interaction with it. If these tracking calls are missing from the implementation, reports will show zero impressions even when cards are being served correctly. Verify the tracking calls are firing in **Assurance** before investigating the campaign configuration.
+
+Learn how to access content card reports [on this page](../content-card/content-card-report.md).
+
+See also the [content card SDK configuration](../content-card/content-card-configuration-sdk.md) for the required tracking calls.
+
++++
+
+## WhatsApp {#ajo-troubleshooting-whatsapp}
+
++++ Why are my WhatsApp messages not being sent?
+
+WhatsApp message delivery requires two conditions to be met: the recipient must have explicitly opted in to receive WhatsApp communications from your brand, and the message must use a **pre-approved message template** registered with the WhatsApp Business API. If either condition is not met, the message will be silently blocked by the WhatsApp platform before delivery. Verify opt-in status in the recipient's profile consent attributes and confirm the template is in **Approved** status in your WhatsApp Business account.
+
+Learn how to configure the WhatsApp channel [on this page](../whatsapp/whatsapp-configuration.md).
+
++++
+
++++ Why is my WhatsApp message rejected with a template error?
+
+The WhatsApp Business API only allows pre-approved message templates for outbound business-initiated messages. Free-form messages are only permitted within a **24-hour customer service window** — that is, within 24 hours of the customer sending a message to your brand first. If your message is being rejected, verify that the template has been submitted to and approved by Meta, that the template variables (placeholders) in the Journey Optimizer message exactly match the approved template structure, and that the correct template is selected in the campaign or journey action.
+
+Learn how to create WhatsApp messages [on this page](../whatsapp/create-whatsapp.md).
+
++++
+
++++ How do I collect and verify WhatsApp opt-in from users?
+
+WhatsApp requires explicit opt-in before you can send marketing messages. Opt-in can be collected through any channel your brand controls — such as a web form, SMS double opt-in, or in-app consent screen — as long as the process is clear and documented. Once collected, update the profile's WhatsApp consent attribute in Adobe Experience Platform. To verify current consent status for a profile, open the profile in the Experience Platform UI and inspect the **Consents** section. Sending to profiles without valid consent violates WhatsApp Business policies and can result in your account being suspended.
+
+Learn how to get started with the WhatsApp channel [on this page](../whatsapp/get-started-whatsapp.md).
+
++++
 
 ## Data management {#ajo-troubleshooting-data-management}
 
 +++ How do Time-to-Live (TTL) settings apply to Profile and Data Lake datasets when you create a new sandbox?
 
-Organizations provisioning new sandboxes in Adobe Journey Optimizer have raised questions about how Time-to-Live (TTL) settings apply to Profile and Data Lake datasets. This article clarifies that TTL settings do not affect existing sandboxes and are automatically applied only to newly provisioned ones.
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26135){target="_blank"} to learn how to handle TTL.
+Organizations provisioning new sandboxes in Adobe Journey Optimizer have raised questions about how Time-to-Live (TTL) settings apply to Profile and Data Lake datasets. TTL settings do not affect existing sandboxes and are automatically applied only to newly provisioned ones.
 
 Learn more about dataset Time-to-live [on this page](../data/datasets-ttl.md).
+
++++
+
++++ Why is a dataset not being enabled for Real-time Customer Profile?
+
+For a dataset to power profile-based personalization and journey conditions in Journey Optimizer, two requirements must both be met: the underlying XDM schema must have **Profile** enabled, and the dataset itself must be toggled on for **Real-time Customer Profile** in the Experience Platform UI. If either is missing, the data will be ingested into the Data Lake but will not be merged into unified profiles. Also ensure that the dataset contains at least one identity field mapped to a recognized namespace.
+
+Learn how to configure datasets [on this page](../data/get-started-datasets.md).
+
+See also the [data management overview](../data/gs-data.md) for the full setup checklist.
+
++++
+
++++ How do I monitor and resolve data ingestion failures?
+
+Ingestion failures appear in the **Monitoring** dashboard of Adobe Experience Platform under **Sources** > **Dataflows**. Common causes include schema validation errors (a field in the source data does not match the XDM schema), missing required identity fields, or malformed JSON payloads. Open the failed batch record to see the specific error code and affected rows. Correct the source data and re-ingest, or adjust the schema mapping if the source format has changed.
+
+Learn more about schemas and data setup [on this page](../data/gs-data.md).
 
 +++
 
@@ -171,10 +256,6 @@ Learn more about dataset Time-to-live [on this page](../data/datasets-ttl.md).
 
 The number of processed entries in the **Read Audience** feature of Adobe Journey Optimizer can be lower than the expected audience count. This issue often arises due to incorrect namespace configurations, leading to profiles being excluded from journeys. The resolution involves checking and correcting namespace configurations, reviewing relevant documentation, and adjusting priorities to ensure smoother operations in Adobe Journey Optimizer.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26135){target="_blank"} to learn how to resolve this issue.
-
-See also [this article about outdated audience counts](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26166){target="_blank"}.
-
 Learn more about the **Read Audience** activity in journeys [on this page](../building-journeys/read-audience.md).
 
 +++
@@ -183,23 +264,15 @@ Learn more about the **Read Audience** activity in journeys [on this page](../bu
 
 In Adobe Journey Optimizer, certain field values may not update correctly after running through an **Update Profile** activity in a journey. In some cases, updated fields can disappear or revert to their previous state. To address this, check for conflicting rules or conditions, review permissions settings, use a unique dataset for the **Update Profile** activity, and ensure no other ingestion process is writing to the same profile at the same time.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26352){target="_blank"} to learn steps to resolve this issue.
-
 Learn more about the **Update Profile** activity in journeys [on this page](../building-journeys/update-profiles.md).
-
-See also the [Adobe Experience Platform documentation about Data ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/ingest-batch-data#dataset-activity){target="_blank"}.
 
 +++
 
 +++ Why is there a mismatch in profile count entering a journey vs. in the associated audience?
 
-The discrepancy can happen when the journey uses a previous day's profile snapshot if the current day's snapshot is not available at the time of journey execution. 
+The discrepancy can happen when the journey uses a previous day's profile snapshot if the current day's snapshot is not available at the time of journey execution. To investigate, check when your daily segmentation job last ran and whether the journey was triggered before the snapshot was ready.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26253){target="_blank"} to learn steps to resolve this issue.
-
-Learn more in [this Journey Optimizer Community post](https://experienceleaguecommunities.adobe.com/t5/real-time-customer-data-platform/profile-snapshot-and-segment-qualification-troubleshooting/ba-p/698998){target="_blank"}.
-
-See also the [Adobe Experience Platform Schedules API documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/api/schedules){target="_blank"} to check when your daily job is scheduled.
+Learn more about the **Read Audience** activity and scheduling behavior [on this page](../building-journeys/read-audience.md).
 
 +++
 
@@ -216,11 +289,7 @@ This is expected behavior and does not impact your campaign execution - the corr
 
 Audience population problems can occur when components or resources are missing, often due to entitlement, provisioning, or permission misconfigurations. To fix these issues, start by verifying entitlements, ensuring correct provisioning, and reviewing permissions. If the problem persists, escalate the case and coordinate with support teams for a complete resolution.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26333){target="_blank"} to learn steps to resolve this issue.
-
-Learn more about the **Update Profile** activity in journeys [on this page](../building-journeys/update-profiles.md).
-
-See also the [Adobe Real-Time CDP Profile documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/user-guide#profile-detail){target="_blank"}.
+Learn more about managing audiences [on this page](../audience/about-audiences.md).
 
 +++
 
@@ -236,9 +305,7 @@ Learn how to troubleshoot and resolve Engageable Profiles increases and monitor 
 
 +++ Why are emails sent to individuals outside the intended audience based on date functions?
 
-Emails may be sent to recipients who **do not meet the specified audience criteria**. For example, members with redemption dates **before July 4th, 2025** may receive emails intended only for those after that date. This behavior can result from **misconfigured audience segmentation** or **unexpected changes in profile qualification logic**.  
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26173){target="_blank"} to learn steps to resolve this issue.
+Emails may be sent to recipients who **do not meet the specified audience criteria**. For example, members with redemption dates **before July 4th, 2025** may receive emails intended only for those after that date. This behavior can result from **misconfigured audience segmentation** or **unexpected changes in profile qualification logic**. Review the audience definition and test with sample profiles to verify the date logic is applied correctly.
 
 Learn more about date functions [on this page](../building-journeys/functions/date-functions.md).
 
@@ -258,9 +325,9 @@ Learn more about [Campaign reports](../reports/campaign-global-report-cja.md) an
 
 +++ How do I resolve audience selection issues and Chrome errors when saving journeys?
 
-Adding audiences to journey conditions may sometimes cause **application crashes** or display an **Aw Snap error** in Chrome, including errors when saving journeys. These issues are often related to **Chromium services**. To resolve them, apply a **browser update** or use an appropriate **workaround**.
+Adding audiences to journey conditions may sometimes cause **application crashes** or display an **Aw Snap error** in Chrome, including errors when saving journeys. These issues are often related to **Chromium services**. To resolve them, apply a **browser update**, clear the browser cache, or try a different browser session.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26145){target="_blank"} to learn steps to resolve this issue.
+Learn more about [navigating the Journey Optimizer interface](user-interface.md).
 
 +++
 
@@ -278,8 +345,6 @@ For Journeys, refer to the following troubleshooting sections:
 
 When creating a new version of a journey, **expressions in specific steps** may be lost, causing errors and requiring manual re-entry. To resolve this, **duplicate the journey**, test for reproducibility, **avoid browser reloads**, and use the **updated canvas** for older journeys.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26152){target="_blank"} to learn steps to resolve this issue.
-
 Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.md#duplicate-a-journey).
  
 +++
@@ -287,8 +352,6 @@ Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.
 +++ Why do profiles exit journeys prematurely? 
 
 Profiles may exit a journey unexpectedly without passing through a designated node when the **condition checking feedback status** of sent messages is misconfigured. To resolve this, review the **condition logic**, implement **alternative logic**, or consult with your **implementation team**.
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26127){target="_blank"} to learn steps to resolve this issue.
 
 See also [Journey design guidelines](../building-journeys/using-the-journey-designer.md).
 
@@ -299,8 +362,6 @@ See also [Journey design guidelines](../building-journeys/using-the-journey-desi
 
 Profiles may exit a journey unexpectedly when **event capping** occurs, causing some profiles to be discarded if the number of events processed exceeds system capacity. To reduce profile exits, understand the **system limits**, monitor for **event spikes**, and optimize **data flow** to prevent exceeding thresholds.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26018){target="_blank"} to learn steps to resolve this issue.
-
 See also [Journey guardrails](../start/guardrails.md#decisioning-guardrails).
 
 +++
@@ -309,8 +370,6 @@ See also [Journey guardrails](../start/guardrails.md#decisioning-guardrails).
 +++ Why is my event not triggering the intended journey?  
 
 Events may fail to trigger a journey even if all criteria are met when they are **created through query services** rather than being streamed to the **Data Collection Core Service (DCCS)**. To resolve this, review the event configuration, ensure events are **streamed directly to DCCS**, and verify functionality using **test mode**.
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26031){target="_blank"} to learn steps to resolve this issue.
 
 Learn more about events [on this page](../event/about-events.md).
 
@@ -323,8 +382,6 @@ See also [Journey Event guardrails](../start/guardrails.md#events-g).
 
 If a journey stops triggering after modifications to its associated audience — such as changes to the merge policy — you may experience interrupted flows. To resolve this, **duplicate and republish the journey** with the updated audience settings to ensure triggers function correctly.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26224){target="_blank"} to learn steps to resolve this issue.
-
 Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.md#duplicate-a-journey).
 
 +++
@@ -333,19 +390,17 @@ Learn how to duplicate a journey [on this page](../building-journeys/journey-ui.
 
 Timeout errors can occur when a **custom action** calls an external third-party endpoint. To resolve this, verify that the **endpoint is accessible**, check **server logs**, ensure there is **no blocking from Adobe**, update endpoint configurations as needed, and **test after updates**. Also, be mindful of **API call timeout specifications**.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26156){target="_blank"} to learn steps to resolve this issue.
-
 Learn more about Journey Throttling API [on this page](../configuration/throttling.md).
 
 See also the [Integration with external systems documentation](../configuration/external-systems.md).
 
 +++
 
-+++ What steps should you take if you encounter a 403 error with the message **invalid_access** or **No access to this dataId=XX granted** granted when publishing an audience from an arrow?
++++ What steps should you take if you encounter a 403 error with the message **invalid_access** or **No access to this dataId=XX granted** when publishing an audience from a journey?
 
 To resolve this error, ask your administrator to verify that your user profile has access to the required data views for audience publishing, then try publishing the audience again.
 
-Refer to [the permissions documentation](../administration/permissions.md){target="_blank"} to learn steps to resolve this issue.
+Refer to [the permissions documentation](../administration/permissions.md) to learn steps to resolve this issue.
 
 +++
 
@@ -355,9 +410,23 @@ Refer to [the permissions documentation](../administration/permissions.md){targe
 
 Issues with the **Capping rules dropdown** often occur when rule sets are **misconfigured** or **inaccessible**. Ensure that all rule sets are correctly configured and available to resolve the problem.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26204){target="_blank"} to learn more.
-
 Learn how to apply capping rules [in this section](../conflict-prioritization/rule-sets.md).
+
++++
+
++++ Why is a frequency capping rule not being applied to my campaign or journey?
+
+Frequency capping rules only take effect when the rule set is explicitly attached to the campaign or journey. If capping is not working, verify that the correct rule set is selected in the campaign or journey settings, that the rule's channel type matches the channel being used, and that the rule is in **Active** status. Also check whether the profile already reached the cap in a previous run, which would prevent further messages even if the rule appears correctly configured.
+
+Learn how to configure channel capping rules [on this page](../conflict-prioritization/channel-capping.md).
+
++++
+
++++ How do I configure quiet hours to prevent messages from being sent at night?
+
+Quiet hours are time-based exclusion rules configured within a **Channel rule set**. Define the blackout window (for example, 10 PM to 8 AM) and apply the rule set to the relevant campaigns or journeys. When a message is scheduled to send during quiet hours, Journey Optimizer either holds the message until the next allowed window or discards it, depending on the rule configuration.
+
+Learn how to set up quiet hours [on this page](../conflict-prioritization/quiet-hours.md).
 
 +++
 
@@ -367,8 +436,6 @@ Learn how to apply capping rules [in this section](../conflict-prioritization/ru
 
 Difficulties creating offer collections often occur when **catalogs have not been provisioned** for your organization. To resolve this, verify that all required catalogs are correctly provisioned before attempting to create offer collections.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26265){target="_blank"} to learn steps to resolve this issue.
-
 Learn more about offer collections [on this page](../offers/offer-library/creating-collections.md).
 
 +++
@@ -377,23 +444,42 @@ Learn more about offer collections [on this page](../offers/offer-library/creati
 
 When integrating Adobe Target into an application using Adobe Journey Optimizer, the **Offer Decisioning** option may be inaccessible within the Datastream configuration. This typically occurs due to **permission settings** or **provisioning constraints**. To resolve the issue, verify user permissions and ensure the necessary provisioning is in place.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26175){target="_blank"} to learn steps to resolve this issue.
-
 Learn more about required permissions for Offer Decisioning [on this page](../offers/get-started/starting-offer-decisioning.md#granting-acess-to-decision-management).
 
 +++
 
++++ Why is an offer not being returned even though it meets the eligibility criteria?
+
+If a qualifying offer is not appearing in a decisioning response, check the following in order: verify the offer is in **Approved** (not Draft) status; confirm the placement ID in the request matches the offer's representation surface; check whether any capping limit (total or per profile) has been reached for that offer; and ensure the collection and decision scope are correctly configured. Use the **Simulation** tool in Experience Decisioning to test offer responses against a specific profile without sending live traffic.
+
+Learn how to get started with Experience Decisioning [on this page](../experience-decisioning/gs-experience-decisioning.md).
+
++++
 
 
 ## Multilingual {#ajo-troubleshooting-multilingual}
 
 +++ How to resolve this issue `Message validation error (CJMMAS - 1069-500)`?
 
-In Adobe Journey Optimizer, a Message Validation Error (CJMMAS - 1069-500) linked to the multilingual feature prevents journeys from being set to Test mode or Published. 
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26168){target="_blank"} to learn steps to resolve this issue.
+In Adobe Journey Optimizer, a Message Validation Error (CJMMAS - 1069-500) linked to the multilingual feature prevents journeys from being set to Test mode or Published. Verify that all locale content is complete, that the primary language is correctly set, and that no required translation fields are empty before attempting to publish.
 
 Learn more about multilingual content [on this page](../content-management/multilingual-gs.md).
+
++++
+
++++ Why is the translation provider not connecting in Journey Optimizer?
+
+Translation provider connection failures are usually caused by incorrect API credentials or a missing provider configuration in the multilingual settings. Verify that the API key, endpoint URL, and any required authentication tokens entered in Journey Optimizer match exactly what your translation vendor has provisioned. If credentials are correct, check whether the provider account has sufficient quota or active subscription status, then save and retest the connection.
+
+Learn how to configure a translation provider [on this page](../content-management/multilingual-provider.md).
+
++++
+
++++ What happens when a translation is missing for a locale?
+
+If a translation has not been provided for a specific locale, Journey Optimizer falls back to the content defined in the **primary language** (fallback locale) configured in your language settings. If no fallback is configured, the message may render as empty or fail validation before sending. To prevent this, always define a fallback locale in your multilingual project settings and verify that all locales have approved translations before activating the campaign or journey.
+
+Learn more about multilingual content setup [on this page](../content-management/multilingual-gs.md).
 
 +++
 
@@ -404,10 +490,7 @@ Learn more about multilingual content [on this page](../content-management/multi
 
 To maintain **data integrity and security** when connecting to third-party systems, ensure that Transport Layer Security (**TLS**) v1.3 is enabled for your custom actions. This helps protect communications and prevents potential security vulnerabilities.
 
-
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26223){target="_blank"} to learn more.
-
-Learn more about multilingual content [on this page](../action/about-custom-action-configuration.md).
+Learn more about custom action configuration [on this page](../action/about-custom-action-configuration.md).
 
 +++
 
@@ -415,7 +498,15 @@ Learn more about multilingual content [on this page](../action/about-custom-acti
 
 In Adobe Journey Optimizer, dashboards cannot be created directly from queries. To build dashboards, use the available **dashboard creation functionalities** within Adobe Experience Platform, which allow you to visualize and analyze query data effectively.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26201){target="_blank"} to learn more.
+Learn more about queries in Journey Optimizer [on this page](../data/get-started-queries.md).
+
++++
+
++++ Why are my messages being blocked by the suppression list?
+
+Addresses are automatically added to the suppression list after hard bounces, spam complaints, or manual additions by an administrator. Once suppressed, a profile will not receive any messages from that channel regardless of campaign or journey targeting. To investigate, open **Administration** > **Channels** > **Suppression list** and search for the address. If the suppression was added in error, it can be removed directly from the interface. For hard-bounce suppressions, also review the underlying deliverability issue before removing the address.
+
+Learn how to manage the suppression list [on this page](../configuration/manage-suppression-list.md).
 
 +++
 
@@ -423,10 +514,26 @@ Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/do
 
 +++ How do I resolve access issues with the Query Service API?  
 
-Access errors when using the **Query Service API** via Postman or similar tools are usually caused by **insufficient permissions**. To resolve this, verify user permissions, check API credentials, and provide detailed information to support if needed.
+Access errors when using the **Query Service API** via Postman or similar tools are usually caused by **insufficient permissions**. To resolve this, verify user permissions, check API credentials against the roles configured in your organization, and provide detailed information to support if needed.
 
-Refer to [this troubleshooting article](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26196){target="_blank"} to learn more.
+Learn more about permissions in Journey Optimizer [on this page](../administration/permissions.md).
 
-See also the [Manage API credentials documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/permissions#manage-api-credentials-for-role){target="_blank"}.
++++
+
++++ How do I resolve 429 Too Many Requests errors when calling Journey Optimizer APIs?
+
+A 429 response means your integration has exceeded the API rate limit for the endpoint. Each Journey Optimizer API has defined throughput thresholds. To resolve this, implement **exponential backoff** logic in your integration: wait for the duration specified in the `Retry-After` response header before retrying. For sustained high-volume use cases, review the throttling and capping configuration for your custom actions and data sources to align API call rates with system limits.
+
+Learn more about Journey Optimizer throttling [on this page](../configuration/throttling.md).
+
+See also the [external systems integration documentation](../configuration/external-systems.md).
+
++++
+
++++ Why is my API-triggered campaign not executing after the API call?
+
+If an API-triggered campaign is not executing, verify the following: the campaign is in **Live** status (not draft or stopped); the API call includes the correct campaign ID in the endpoint path; the request payload matches the profile identifier schema expected by the campaign; and the API credentials used have the **Manage Campaigns** permission. Check the campaign's execution logs in the reporting dashboard to identify whether the profile was received but excluded, or whether the call did not reach the campaign at all.
+
+Learn more about API-triggered campaigns [on this page](../campaigns/api-triggered-campaigns.md).
 
 +++

@@ -11,7 +11,7 @@ keywords: journey, campaign, orchestrated, comparison, choose, decision, workflo
 hide: true
 exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
 ---
-# Journeys vs Campaigns: Choose the right approach {#journeys-vs-campaigns}
+# Journeys vs campaigns: choose the right approach {#journeys-vs-campaigns}
 
 [!DNL Adobe Journey Optimizer] offers two main ways to reach and engage your customers: **Journeys** and **Campaigns**. Journeys are designed for real-time, multi-step orchestration driven by customer behavior, while campaigns are better suited for one-time or scheduled broadcasts to a defined audience. Once you have decided on a campaign, you can then choose the campaign type that best fits your use case.
 
@@ -105,6 +105,10 @@ Follow this decision tree to choose the right approach. Many brands use more tha
 * Real-time decision-making based on behavior and events
 * Wait activities create personalized timing
 * Conditional branching creates unique paths per profile
+* Built-in active listening — inaction for a defined period can also trigger the next step, not just explicit events. [Learn about wait activities](../building-journeys/wait-activity.md)
+* Frequency capping — control how often a customer can enter or receive messages from a journey. [Learn about journey capping](../conflict-prioritization/journey-capping.md)
+* Audience splitting by percentage — divide profiles into random, percentage-based groups to run A/B experiments across journey paths. [Learn about percentage split](../building-journeys/condition-activity.md)
+* Test mode — validate journey logic and message delivery with test profiles before publishing live. [Learn about test mode](../building-journeys/testing-the-journey.md)
 
 **Example flow:**
 
@@ -170,7 +174,7 @@ Combines workflow complexity with batch campaign execution.
 * **Birthday campaigns**: Entry based on birthdate, personalized offers
 * **Re-engagement**: Triggered by audience qualification (inactivity), progressive outreach
 
-### Campaign use cases (Action & API-triggered)
+### Campaign use cases (action & API-triggered)
 
 **Action campaigns:**
 * **Monthly newsletters**: Scheduled batch delivery to subscriber segment
@@ -206,6 +210,8 @@ Combines workflow complexity with batch campaign execution.
 | Code-based | ✅ | ✅ | ❌ | ❌ |
 | Content cards | ✅ | ✅ | ❌ | ❌ |
 | Direct mail | ✅ | ✅ | ❌ | ✅ |
+| LINE | ✅ | ✅ | ✅ | ✅ |
+| WhatsApp | ✅ | ✅ | ✅ | ✅ |
 
 ### Advanced capabilities
 
@@ -220,7 +226,7 @@ Combines workflow complexity with batch campaign execution.
 | Multi-entity data | ❌ | ❌ | ❌ | ✅ |
 | Exact pre-send counts | ❌ | ❌ | ❌ | ✅ |
 | On-demand segmentation | ❌ | ❌ | ❌ | ✅ |
-| Send-time optimization | ✅ | ✅ | ✅ | ✅ |
+| Send-time optimization | ✅ | ❌ | ❌ | ❌ |
 | A/B testing | ✅ | ✅ | ❌ | ❌ |
 | Approval workflows | ✅ | ✅ | ✅ | ❌ |
 

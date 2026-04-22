@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: 359ea3c6-7746-469e-8a24-624f9726f2d8
 ---
-# Get Started with Sources connectors {#sources-gs}
+# Get started with sources connectors {#sources-gs}
 
 ## What is a source? {#what-is-source}
 

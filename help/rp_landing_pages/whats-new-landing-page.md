@@ -42,7 +42,7 @@ By integrating Adobe Experience Manager as a Cloud Service with Adobe Journey Op
 
 >[!ENDTABS]
 
-## Release Notes and Documentation Updates
+## Release notes and documentation updates
 
 :::: landing-cards-container
 :::

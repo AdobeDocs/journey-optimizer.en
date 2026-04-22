@@ -107,7 +107,7 @@ After generating image variations, you can review the results, check brand align
    * **Web**: Once you defined your web campaign settings and edited your content as desired, you can review and activate your web campaign. [Learn more](../web/create-web.md#activate-web-campaign)
    * **Landing Page**: Once your landing page is ready, you can publish it to make it available for use in a message. [Learn more](../landing-pages/create-lp.md#publish-landing-page)
 
-## For Mobile Channels {#mobile-channels}
+## For mobile channels {#mobile-channels}
 
 AI Assistant enables you to generate engaging images for push notifications, helping you create visually compelling mobile communications that capture attention and resonate with your audience.
 
