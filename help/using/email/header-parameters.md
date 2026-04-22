@@ -47,6 +47,11 @@ When configuring a new [email channel configuration](email-settings.md), in the 
 
 ## Sender headers {#sender-header}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_preset_sender_header"
+>title="Sender headers"
+>abstract="Use these optional fields when the transmitting entity (Sender) differs from the authoring entity (From), for example a corporate parent dispatching messages for a child brand, or an agency sending for multiple customers. Email clients that support this typically render it as "Sender on behalf of From" or show a "via" indicator."
+
 Some use cases require the mailbox that transmits the message to be different from the **From** author—for example a parent organization sending on behalf of a subsidiary, a shared marketing team for several brands, or an agency sending for multiple clients.
 
 In other words, **From** is the author of the message (who the email is "from") and **Sender** is the agent responsible for transmitting the message (who actually sent it). The **Sender** field is intended for use when the transmission entity is different from the author. 
