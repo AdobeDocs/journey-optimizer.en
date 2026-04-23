@@ -28,6 +28,26 @@ Because of this model, release notes are updated between monthly releases. For f
 <table>
 <thead>
 <tr>
+<th><strong>Adobe Express integration</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <b>Adobe Express integration</b> in Adobe Journey Optimizer lets you use Adobe Express's editing tools directly during content creation, enabling you to resize, remove backgrounds, crop, and convert assets to JPEG or PNG.
+</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p><img src="assets/do-not-localize/express_resize.gif"></p>
+<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>
+<p>Availability date: April 23, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Optimize email for AI inboxes</strong><br/></th>
 </tr>
 </thead>
