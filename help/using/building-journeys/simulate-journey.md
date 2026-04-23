@@ -17,7 +17,6 @@ badge: label="Limited Availability" type="Informative"
 >
 > The use of Journey Simulation is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
 
-
 You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profiles you add, without using persistent test profiles in Adobe Experience Platform.
 
 Adobe Journey Optimizer offers two ways to test and validate your journey:
@@ -25,6 +24,11 @@ Adobe Journey Optimizer offers two ways to test and validate your journey:
 * **[Simulation](#test-users)**: Use the **[!UICONTROL Simulation]** journey status and simulated users for quick runs without pre-created profiles in Adobe Experience Platform.
 
 * **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
+
+Note that Journey Simulation is in **Limited availability**. To share beta feedback and help us improve the experience, open **[!UICONTROL Beta feedback]** from the top bar.
+
+![Beta feedback menu](assets/beta-feedback.png)
+
 
 ## Create and manage simulated users {#test-users}
 
