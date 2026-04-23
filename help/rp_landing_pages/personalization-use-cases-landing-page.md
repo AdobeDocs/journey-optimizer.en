@@ -10,7 +10,7 @@ exl-id: 1b351130-3caa-4389-9caf-1a56e263f085
 
 Imagine creating communications so tailored to your audience that they feel custom-made every time. Adobe Journey Optimizer's personalization use cases empower you to do just that, blending customer profiles, real-time context, and decision-based offers to craft messages that truly resonate. Whether you're sending an order status update, re-engaging shoppers with cart abandonment emails, or personalizing health-related notifications, this section guides you step-by-step. Each use case showcases how to combine data and tools—like helper functions or dynamic templates—to deliver messages your audience will find relevant and engaging. Dive in to see how these techniques can transform your campaigns.
 
-## Personalization Use Cases
+## Personalization use cases
 
 :::: landing-cards-container
 :::

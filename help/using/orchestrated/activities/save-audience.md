@@ -49,6 +49,10 @@ Follow these steps to configure the **[!UICONTROL Save audience]** activity:
 
 1. Publish the campaign for the audience to be created or replaced since the **[!UICONTROL Save audience]** activity does not execute while the campaign is in **[!UICONTROL Draft mode]**.
 
+>[!NOTE]
+>
+>At publication time, **[!UICONTROL Save audience]** activities always execute before any message activities in the workflow. The audience shell is created and profiles begin ingesting into the Audience Portal before any channel activity starts processing. [Learn more about the publication-time execution sequence](../start-monitor-campaigns.md#publication-sequence)
+
 The content of the saved audience is then available in the detail view of the audience, which can be accessed from the **[!UICONTROL Audiences]** menu, or can be selected when targeting an audience, for example with a **[!UICONTROL Read audience]** activity.
 
  ![](../assets/save-audience-4.png)

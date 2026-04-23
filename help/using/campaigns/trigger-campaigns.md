@@ -41,7 +41,7 @@ Once your campaign has been activated, you need to retrieve the generated sample
 
 If email delivery times exceed expectations, investigate potential outages or performance issues with external services, such as cloud infrastructure providers or email service providers. Journey Optimizer logs record message departure timestamps, which can help determine whether delays occurred downstream in the delivery pipeline.
 
-### Azure Cosmos DB authentication errors (500 Internal Server Error) {#cosmosdb-auth-errors}
+### Azure cosmos DB authentication errors (500 internal server error) {#cosmosdb-auth-errors}
 
 If you encounter **500 Internal Server Errors** when triggering API-triggered campaigns, and the system logs show a **403 Forbidden** error from Azure Cosmos DB with a message such as:
 

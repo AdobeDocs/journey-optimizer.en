@@ -10,7 +10,7 @@ exl-id: 046a5e06-a827-4194-be1c-e6546a8da747
 
 Legacy step event fields in Adobe Journey Optimizer are essential for monitoring and analyzing the progression and outcomes of customer journeys. These fields are grouped into categories like identity, action execution, data fetching, and common event properties, each serving a unique purpose in journey reporting and step processing. Whether you're tracking data fetch errors, understanding action execution times, or identifying profiles, these fields unlock powerful insights for optimizing customer experiences. As you explore each category, you'll discover how they interact and complement one another, providing a complete picture of journey performance and behavior.
 
-## Legacy Step Event Fields
+## Legacy step event fields
 
 :::: landing-cards-container
 :::

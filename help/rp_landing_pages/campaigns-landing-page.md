@@ -5,7 +5,7 @@ title: Campaigns
 description: Campaigns
 redpen-status: CREATED_||_2025-08-11_20-28-03
 exl-id: 6fc5b0f4-95a5-431d-a80a-3a1f71b4dd0d
-hide: yes
+hide: true
 ---
 # Campaigns{#section-overview}
 

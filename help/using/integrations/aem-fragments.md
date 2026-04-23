@@ -8,7 +8,7 @@ role: User
 level: Beginner
 exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 ---
-# Work with Adobe Experience Manager Content Fragments {#aem-fragments}
+# Work with Adobe Experience Manager content fragments {#aem-fragments}
 
 >[!AVAILABILITY]
 >
@@ -109,7 +109,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
     <!--
     Note that if you choose to copy the value, any future updates to the Content Fragment will not be reflected in your campaign or journey. However, using dynamic placeholders ensures real-time updates.
     
--->
+    -->
 
     ![](assets/aem_campaign_6.png)
 
@@ -156,7 +156,7 @@ Once you have performed your tests and validated the content, you can [send your
 
 Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references){target="_blank"}. 
 
-## Working with Content Fragment variations {#aem-variations}
+## Working with content fragment variations {#aem-variations}
 
 In Adobe Experience Manager, each Content Fragment is made up of the following:
 

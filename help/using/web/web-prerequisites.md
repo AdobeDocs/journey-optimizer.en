@@ -58,7 +58,7 @@ To be able to open, author and preview your web pages reliably into the [!DNL Jo
 >
 >Google Chrome and Microsoft Edge are currently the only browsers that support authoring web pages in [!DNL Journey Optimizer].
 
-### Install the Visual Editing Helper extension {#install-visual-editing-helper}
+### Install the visual editing helper extension {#install-visual-editing-helper}
 
 To download and install the Visual Editing Helper browser extension, follow the steps below.
 

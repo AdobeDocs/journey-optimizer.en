@@ -9,7 +9,7 @@ role: User
 level: Beginner
 exl-id: 628a5d84-6a33-4ed8-84cb-e2e4c6cc2b80
 ---
-# AI & Intelligent Features {#ai-features}
+# AI & intelligent features {#ai-features}
 
 Adobe Journey Optimizer harnesses the power of artificial intelligence and machine learning to help you create, optimize, and deliver exceptional customer experiences. From generating personalized content to predicting optimal send times, AI capabilities streamline your workflow and maximize impact. Use Case Playbooks provide pre-built templates to quickly implement common marketing scenarios.
 
@@ -27,7 +27,7 @@ Click the AI Assistant icon in the top bar to open the assistant panel on the ri
 >
 >You must agree to the [Adobe Experience Cloud Generative AI User Guidelines](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"} before using AI Assistant.
 
-### What AI Assistant Can Do
+### What AI assistant can do
 
 **Product Knowledge** - Ask questions about Adobe Journey Optimizer features and concepts:
 
@@ -45,7 +45,7 @@ Click the AI Assistant icon in the top bar to open the assistant panel on the ri
 >
 >Operational insights are currently only available for **Journeys** and reflect data from your current sandbox.
 
-### How to Use AI Assistant
+### How to use AI assistant
 
 1. Enter your question in the text field at the bottom of the panel
 2. Press Enter to submit your query
@@ -57,7 +57,7 @@ Click the AI Assistant icon in the top bar to open the assistant panel on the ri
 
 [Learn more about AI Assistant in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}
 
-## Advanced AI Agents for Journey Optimization {#ai-agents}
+## Advanced AI agents for Journey optimization {#ai-agents}
 
 Building on AI Assistant's conversational capabilities, Adobe Journey Optimizer offers specialized AI Agents that provide deep analysis and actionable recommendations for journey optimization and experimentation.
 
@@ -75,7 +75,7 @@ Journey Agent includes two skills in AI Assistant: Analyze and Create. Use them 
 
 +++
 
-#### Journey Analyze Skill {#journey-analyze-skill}
+#### Journey analyze skill {#journey-analyze-skill}
 
 The [Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-create-agent-skill-overview-and-user-guide){target="_blank"} helps you optimize journey performance through natural language analysis:
 
@@ -98,7 +98,7 @@ The [Journey Analyze Agent](https://experienceleague.adobe.com/en/docs/experienc
 +++
 
 
-#### Journey Create Skill {#journey-create-skill}
+#### Journey create skill {#journey-create-skill}
 
 The [Journey Create Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent#journey-analyze-agent-skill-overview-and-user-guide){target="_blank"} helps you build journeys from natural language prompts, translating your goals into structured journey configurations:
 
@@ -159,7 +159,7 @@ The [Experimentation Agent](https://experienceleague.adobe.com/en/docs/experienc
 
 **Agent Orchestrator** - Coordinates multiple specialized agents to solve complex, multi-step marketing challenges. The orchestrator automatically determines which agents to involve and sequences their work efficiently. [Learn more about Agent Orchestrator](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator){target="_blank"}
 
-## AI-Powered Content Generation {#content-generation}
+## AI-Powered content generation {#content-generation}
 
 Use generative AI to create and personalize content across multiple channels, accelerating your content creation process while maintaining brand consistency. AI Assistant for content generation is available for [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [SMS](../sms/get-started-sms.md), and [web](../web/get-started-web.md) experiences - helping you generate subject lines, body text, images, and complete message variations.
 
@@ -169,6 +169,7 @@ Use generative AI to create and personalize content across multiple channels, ac
 * **Text Generation** - Create compelling copy based on your brand voice and objectives. [Generate text with AI](../content-management/generative-text.md)
 * **Image Generation** - Generate custom images using Adobe Firefly. [Generate images with AI](../content-management/generative-image.md)
 * **Content Variations** - Produce multiple variations for A/B testing. [Content experiment with AI](../content-management/generative-experimentation.md)
+* **Personalization** - Generate new expressions, explain existing code, or fix issues with AI Assistant from the Personalization Editor or from the Email Designer toolbar (**Add expression**). [AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
 * **Brand Alignment** - Ensure generated content matches your brand guidelines. [Evaluate brand alignment](../content-management/brands-score.md)
 * **Template Support** - Leverage your existing email templates. [Work with content templates](../content-management/content-templates.md)
 
@@ -201,7 +202,7 @@ Send-Time Optimization analyzes historical engagement data (opens and clicks) to
 
 [Learn more about Send-Time Optimization](../building-journeys/send-time-optimization.md)
 
-## AI Models for Decisioning {#ai-decisioning}
+## AI models for decisioning {#ai-decisioning}
 
 Create intelligent ranking models that automatically optimize which offers to show to each customer, maximizing business objectives.
 
@@ -234,13 +235,13 @@ Key capabilities:
 
 [Learn more about Experiment Accelerator](../content-management/experiment-accelerator-gs.md)
 
-## Use Case Playbooks {#playbooks}
+## Use case playbooks {#playbooks}
 
 Use Case Playbooks are pre-built workflows that help you implement common marketing scenarios quickly. Each playbook includes ready-to-use journeys, messages, schemas, and segments.
 
 ![Use Case Playbooks interface](assets/playbooks-filter.png)
 
-### How Playbooks Work
+### How playbooks work
 
 1. **Browse** the playbook library to find use cases matching your goals
 2. **Enable** a playbook to automatically generate all required resources
@@ -275,19 +276,19 @@ Transform static image designs (JPEG, PNG) into editable HTML email templates us
 
 [Learn more about Image to HTML](../content-management/image-to-html.md)
 
-### GenStudio for Performance Marketing
+### GenStudio for performance marketing
 
 Integrate with Adobe GenStudio for Performance Marketing to create AI-powered email content and import templates into Journey Optimizer for orchestration. Export Journey Optimizer templates to GenStudio, generate variations with AI, and bring them back for deployment. (Limited availability, email channel only.)
 
 [Learn more about GenStudio](../integrations/genstudio.md)
 
-### Brand Alignment Scoring
+### Brand alignment scoring
 
 Evaluate how well your content aligns with your brand guidelines using AI-powered scoring that measures tone, voice, and messaging consistency.
 
 [Learn more about Brand Alignment](../content-management/brands-score.md)
 
-## Frequently Asked Questions {#faq}
+## Frequently asked questions {#faq}
 
 +++**What permissions do I need for AI features?**
 
@@ -322,3 +323,11 @@ No. Always review [AI-generated content](#content-generation) for accuracy and b
 Most AI features are included with Adobe Journey Optimizer. Some capabilities like [Send-Time Optimization](#send-time-optimization) or [AI Agents](#ai-agents) may require enablement by Adobe. Contact your Adobe representative for details about your specific license and available features.
 
 +++
+
+>[!MORELIKETHIS]
+>
+>* [What is Journey Optimizer?](get-started.md) — Overview of key capabilities, use cases, and architecture.
+>* [Understanding how it works](understanding-ajo.md) — How Journey Optimizer and Experience Platform work together.
+>* [AI content generation](../content-management/gs-generative.md) — Generate emails, push, SMS, and web content with AI Assistant.
+>* [Send-Time Optimization](../building-journeys/send-time-optimization.md) — Predict and optimize message delivery timing per individual.
+>* [AI models for decisioning](../experience-decisioning/ranking/ai-models.md) — Rank and personalize offers automatically with AI ranking models.

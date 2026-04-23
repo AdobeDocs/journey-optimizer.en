@@ -103,7 +103,7 @@ To create your IP warmup plan, fill in the first tab with the data you need to f
 
 The idea is to progressively increase the number of targeted addresses in each run, while reducing the number of runs for each phase.
 
-### Custom Domain Group tab {#custom-domain-group-tab}
+### Custom domain group tab {#custom-domain-group-tab}
 
 You can also add more columns to your plan by including custom domain groups. 
 
@@ -119,7 +119,7 @@ For example, if you add the custom domain Roadrunner, you want the following sub
 
 If you do not need custom domains, leave the **[!UICONTROL Custom Domain Group]** tab empty.
 
-### OOTB Domain Groups tab {#ootb-domain-groups-tab}
+### OOTB domain groups tab {#ootb-domain-groups-tab}
 
 The **OOTB Domain Groups** tab of the IP Warmup plan template contains all the out-of-the-box main domain groups you can add to your plan.
 

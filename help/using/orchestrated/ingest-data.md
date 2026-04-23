@@ -19,7 +19,7 @@ Adobe Experience Platform allows data to be ingested from external sources while
 
 A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Data that is successfully ingested into Experience Platform is stored within the data lake as datasets. 
 
-## Supported Sources for Orchestrated campaigns {#supported}
+## Supported sources for orchestrated campaigns {#supported}
 
 The following Dources are supported for use with Orchestrated campaigns:
 

@@ -8,7 +8,7 @@ role: User
 level: Beginner
 keywords: journey types, unitary, read audience, audience qualification, business event, comparison, decision guide, choose, selection, real-time, scheduled, batch, event-triggered
 version: Journey Orchestration
-hide: yes
+hide: true
 exl-id: 0c894dc1-76b6-4b33-baf8-eaf6686f7d38
 ---
 # Journey types and selection guide {#journey-types-selection}
@@ -168,7 +168,3 @@ Now that you understand journey types, you're ready to:
 * **[Learn about the journey designer](using-the-journey-designer.md)** - Design your journey canvas
 * **[Explore journey capabilities](journey.md#capabilities)** - Discover advanced features
 * **[View journey FAQ](journey-faq.md)** - Common questions answered
-
-**Need to compare with campaigns?**
-
-* [Journeys vs Campaigns comparison guide](../start/journeys-vs-campaigns.md) - Choose between journeys, Action/API campaigns, and Orchestrated campaigns

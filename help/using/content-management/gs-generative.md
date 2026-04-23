@@ -7,6 +7,7 @@ feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
+mini-toc-levels: 1
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 ---
 # Get started with AI Assistant {#gs-content-assistant}
@@ -133,9 +134,16 @@ General guidelines for using AI Assistant in Adobe Journey Optimizer for email g
 * Your use of AI Assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 * As part of Adobe's commitment to promote transparency in the use of generative AI tools in media creation, Adobe will apply Content Credentials when content or a project that included a Firefly generated asset is downloaded or exported. [Learn more](https://helpx.adobe.com/firefly/using/content-credentials.html)
 
+### AI assistant for personalization expressions {#ai-assistant-personalization-editor-guardrails}
+
+The following guardrails apply to [AI Assistant for personalization expressions](generative-personalization-expressions.md) in the [!UICONTROL Personalization Editor] and in the Email Designer.
+
+* **Offer and Experience Decisioning** — Not supported.
+* **Favorites** — Not supported.
+* **Saved conditions** — Not supported.
+* **Adobe Experience Manager Content Fragments** — Not supported.
 
 ## AI Assistant content generation capabilities {#generative-features}
-
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>

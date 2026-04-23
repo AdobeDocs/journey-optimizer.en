@@ -21,27 +21,27 @@ solution: Journey Optimizer
     + [2024](using/rn/release-notes-2024.md)
     + {hide-from-toc} [2023](using/rn/release-notes-2023.md)
     + {hide-from-toc} [2022](using/rn/release-notes-2022.md)
-    + [2021](using/rn/release-notes-2021.md)
+    + {hide-from-toc} [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
-  + [Monthly updates report](../monthly-updates-report.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
   + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer?](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
+    + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
     + [Guardrails & limitations](using/start/guardrails.md)
   + Get started by role {#by-role}
-    + [Choose your learning path](using/start/quick-start.md)
-    + [Get started as a Marketer](using/start/path/marketer.md)
-    + [Get started as a Data Engineer](using/start/path/data-engineer.md)
+    + [Roles and responsibilities](using/start/quick-start.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
+    + [Get started as a Data Engineer](using/start/path/data-engineer.md)
     + [Get started as a Developer](using/start/path/developer.md)
+    + [Get started as a Marketer](using/start/path/marketer.md)
   + Work efficiently {#work-efficiently}
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)
-    + [AI & intelligent features](using/start/ai-features.md)
+    + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
     + [Accessibility](using/start/accessibility.md)
     + {hide-from-toc} [Journeys vs Campaigns](using/start/journeys-vs-campaigns.md)
 + Journeys {#orchestrate-journeys}
@@ -73,6 +73,7 @@ solution: Journey Optimizer
     + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md)
+    + {hide-from-toc} [Journey Fragments](using/building-journeys/journey-fragments.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
@@ -236,7 +237,6 @@ solution: Journey Optimizer
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
     + {hide-from-toc} [Auto-generation of content variants](using/test-approve/simulate-sample-input-generated.md)
     + [Email Spam report](using/content-management/spam-report.md)
-    + [LLM email optimizer](using/content-management/llm-email-optimizer.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
     + [Get started with approvals](using/test-approve/gs-approval.md)
@@ -284,8 +284,10 @@ solution: Journey Optimizer
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
+        + [Optimize email for AI inboxes](using/email/llm-email-optimizer.md)
         + [Manage the text version](using/email/text-version-email.md)
         + [Add metadata](using/email/email-metadata.md)
+        + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
       + Edit style {#edit-style}
         + [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)
         + [Get started with email style](using/email/get-started-email-style.md)
@@ -422,9 +424,8 @@ solution: Journey Optimizer
     + [Personalization syntax](using/personalization/personalization-syntax.md)
     + [Iterate over contextual data](using/personalization/iterate-contextual-data.md)
     + [Reuse expression fragments](using/personalization/use-expression-fragments.md)
-    + Use Adobe Experience Platform data for personalization {#aep-data-perso}
-      + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
-      + [Encrypt URL parameters in tracking links](using/personalization/url-parameter-encryption.md)
+    + [Use Adobe Experience Platform data for personalization](using/personalization/aep-data-perso.md)
+    + [Encrypt URL parameters in tracking links](using/personalization/url-parameter-encryption.md)
     + Helper functions list {#functions}
       + [Helper functions list](/help/rp_landing_pages/functions-landing-page.md)
       + [Get started with helper functions](using/personalization/functions/functions.md)
@@ -468,7 +469,6 @@ solution: Journey Optimizer
     + [Create content templates](using/content-management/create-content-templates.md)
     + [Convert images to email templates](using/content-management/image-to-html.md)
     + [Lock content in email templates](using/content-management/content-locking.md)
-    + [Edit email templates in expert mode](using/content-management/email-template-expert-mode.md)
     + [Test content templates](using/content-management/test-content-templates.md)
     + [Use content templates](using/content-management/use-content-templates.md)
   + Reusable content fragments {#fragments}
@@ -500,6 +500,10 @@ solution: Journey Optimizer
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
     + {hide-from-toc} [Work with Integrations](using/integrations/external-sources.md)
+    + {hide-from-toc} [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
+    + {hide-from-toc} [Available vendors](using/integrations/vendor-integration.md)
+    + {hide-from-toc} [FAQ](using/integrations/vendor-integration-faq.md)      
+    + {hide-from-toc} [Work with AI tools via MCP](/help/using/integrations/ajo-mcp.md)
   + AI Assistant for content generation {#ai-assistant}
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
@@ -508,6 +512,7 @@ solution: Journey Optimizer
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
     + [Content experiment with AI](using/content-management/generative-experimentation.md)
+    + [AI Assistant for Personalization Expressions](using/content-management/generative-personalization-expressions.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)
     + Brands {#brands}
       + [Brands](/help/rp_landing_pages/brands-landing-page.md)

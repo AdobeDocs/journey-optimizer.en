@@ -117,7 +117,7 @@ To set up a custom subdomain, follow the steps below.
 >Both Data and CDN subdomains must be included in the same certificate.
 -->
 
-## Complete the Feedback Loop steps {#feedback-loop-steps}
+## Complete the feedback loop steps {#feedback-loop-steps}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_feedback-loop"

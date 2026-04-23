@@ -43,7 +43,7 @@ This reference guide defines the essential terms you'll encounter when using Ado
 | **Engageable Audience** | The number of customer profiles you can actively contact through Adobe Journey Optimizer based on your license agreement. This typically refers to profiles engaged within the last 12 months. |
 | **Test Profile** | Fictitious profiles used for testing and previewing messages before sending to real customers. Test profiles help verify personalization, content, and journey logic. [Learn more](../audience/creating-test-profiles.md) |
 
-## Content & Personalization Terms {#content-terms}
+## Content & personalization terms {#content-terms}
 
 | Term | Definition |
 |------|------------|
@@ -52,7 +52,7 @@ This reference guide defines the essential terms you'll encounter when using Ado
 | **Fragment** | A reusable content block (such as a header, footer, or promotional banner) that can be used across multiple messages to ensure consistency and enable centralized updates. [Learn more](../content-management/fragments.md) |
 | **Landing Page** | A standalone web page where customers can opt-in or opt-out from communications, subscribe to services, or provide information through online forms. [Learn more](../landing-pages/get-started-lp.md) |
 
-## Decision & Offer Terms {#decision-terms}
+## Decision & offer terms {#decision-terms}
 
 | Term | Definition |
 |------|------------|
@@ -60,7 +60,7 @@ This reference guide defines the essential terms you'll encounter when using Ado
 | **Offer** | A marketing message, discount, or promotion that can be presented to customers. Offers include eligibility rules that determine which customers can receive them. [Learn more](../offers/offer-library/creating-personalized-offers.md) |
 | **Decision Policy** | A set of rules and strategies that determine which offer to show to which customer at what time, based on constraints like eligibility, priority, and capping rules. [Learn more](../experience-decisioning/create-decision.md) |
 
-## Data & Configuration Terms {#data-config-terms}
+## Data & configuration terms {#data-config-terms}
 
 | Term | Definition |
 |------|------------|

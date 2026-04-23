@@ -39,7 +39,7 @@ Send-Time Optimization is only available for Journey Optimizer's built-in Email 
 >* Send-Time Optimization only applies to **Email** and **Push notification** channels.
 >
 
-## Use Send-Time Optimization{#use-send-time-optimization}
+## Use send-time optimization{#use-send-time-optimization}
 
 To enable and configure Send-Time Optimization on an email or push action, follow the steps below.
 
@@ -69,7 +69,7 @@ When your journey is activated and a customer reaches the Email or Push action i
 
 To monitor your journey's performance, refer to the [Overview page](../reports/channel-report-cja.md). 
 
-## How Send-Time Optimization works {#how-send-time}
+## How send-time optimization works {#how-send-time}
 
 The Send-Time Optimization model ingests your organization's [!DNL Adobe Journey Optimizer] customer behavior data and looks at user-level open and click events to determine when your customers are most likely to engage with your messaging.
 
@@ -98,7 +98,7 @@ Messages sent by Send-Time Optimization receive either an "exploration" message 
 Exploration send times are selected at random from the send times made available by your configured maximum wait time. For example, in the case that a message is selected at 9 AM Wednesday with Send-Time Optimization turned on and a 3 hour maximum wait time, Exploration send times for the message will be split evenly between 9 AM, 10 AM, 11 AM and 12 PM.
 
 
-## Frequently Asked Questions {#faq-send-time}
+## Frequently asked questions {#faq-send-time}
 
 You will find below Frequently Asked Questions about Send-Time Optimization.
 

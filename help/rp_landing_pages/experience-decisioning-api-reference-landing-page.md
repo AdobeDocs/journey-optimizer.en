@@ -4,7 +4,7 @@ product: Journey Optimizer
 title: API reference
 description: API reference
 redpen-status: CREATED_||_2025-08-11_20-54-39
-hide: yes
+hide: true
 exl-id: 0111453f-c704-40c1-9e74-2320b125ee92
 ---
 # API reference{#section-overview}

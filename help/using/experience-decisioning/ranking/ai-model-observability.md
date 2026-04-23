@@ -98,7 +98,7 @@ To view error details for a personalized optimization AI model whose last traini
 
 1. You can check which dataset is selected in the model's **[!UICONTROL Properties]**. Click **[!UICONTROL Edit properties]** to select another dataset. [Learn more](create-ai-models.md)
 
-    ![](../assets/ai-model-properties-edit-dataset.png){align="left" width="45%"}
+    ![](../assets/ai-model-properties-edit-dataset.png){align="center" width="45%"}
 
 ## Frequently asked questions {#faq}
 
