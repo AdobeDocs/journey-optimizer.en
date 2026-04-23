@@ -84,6 +84,8 @@ To insert links into your email content, follow the steps below:
 
     * Select **[!UICONTROL Mirror page]** to add a link to the email mirror page. [Learn more](#mirror-page)
 
+    * Select **[!UICONTROL Deeplink]** to insert a link to a mobile app. This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement. [Learn more](../push/push-configuration.md##message-preset)
+
 1. Enter the desired URL in the corresponding field, or select a landing page, and define the link settings and styles. [Learn more](#adjust-links)
 
     >[!NOTE]
