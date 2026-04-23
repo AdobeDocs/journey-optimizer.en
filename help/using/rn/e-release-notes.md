@@ -11,6 +11,7 @@ exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 
 Adobe Journey Optimizer continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated at the end of each month in the [release notes](release-notes.md). 
 
+<!--
 ## April '26 pre-release notes {#april-26-rn}
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
@@ -201,7 +202,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tbody>
 </table>
 
-<!--
 <table>
 <thead>
 <tr>
@@ -219,7 +219,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tr>
 </tbody>
 </table>
--->
 
 <table>
 <thead>
@@ -380,13 +379,11 @@ Improvements coming with this release are listed below.
 
   Availability date: April 1, 2026
 
-<!--
 #### WhatsApp
 
 * **WhatsApp Channel: Embedded Sign Up** - Adobe Journey Optimizer now supports Meta's <strong>Embedded Sign Up</strong> flow for WhatsApp channel configuration. This streamlined onboarding experience allows you to connect your <strong>WhatsApp Business Account</strong> and phone numbers directly within the AJO interface, without navigating to <strong>Meta Business Manager</strong>, reducing setup time significantly. It also serves as a migration tool to transfer existing phone numbers and <strong>WhatsApp Business Accounts (WABAs)</strong> to Adobe.
 
   Documentation JIRA task: [DOCAC-13386](https://jira.corp.adobe.com/browse/DOCAC-13386)
--->
 
 #### Configuration
 
@@ -403,6 +400,8 @@ Improvements coming with this release are listed below.
 * **Global variables in Orchestrated Campaigns** - Orchestrated Campaigns now support global variables that can be defined once and reused across all activities within a workflow, simplifying configuration and ensuring consistency in dynamic values, expressions, and content personalization.
   
   Documentation JIRA task: [DOCAC-14113](https://jira.corp.adobe.com/browse/DOCAC-14113)
+
+-->
 
 <!--
 ## March '26 pre-release notes {#march-26-rn}
