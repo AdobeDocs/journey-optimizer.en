@@ -52,18 +52,17 @@ Set the targeting dimension, build your query, and choose how the activity decid
 
      ![](../assets/incremental-query-2.png)
 
-1. Under **[!UICONTROL Processed data]**, choose how to exclude records from earlier runs:
+1. Under **[!UICONTROL Processed data]**, choose your **[!UICONTROL Path to the date field]**. Each run returns only rows whose date is after the last execution. 
 
+      ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-3.png)
+
+   <!--
    * **[!UICONTROL Exclude results of previous execution]**: The activity maintains a list of records returned in prior runs. Each run excludes those records and returns only new ones. **[!UICONTROL History in days]** controls the retention period for that list. 0 indicates indefinite retention, no records are removed.
 
       >[!IMPORTANT]
       >
       >This mode stores the primary key of each processed record. Personally identifiable information (PII) must not be used as the primary key.
-
-   * **[!UICONTROL Use a date field]**: The activity uses a selected date field instead of tracking individual IDs. Each run returns only rows whose date is after the last execution. 
-
-      ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-3.png)
-
+   -->
 ## Example {#incremental-query-example}
 
 The following example sends a welcome email to profiles who have just become gold members. The campaign can be scheduled to run weekly, every Monday. Each run targets only profiles that qualified for gold membership since the previous run, so each recipient receives the welcome email once.
