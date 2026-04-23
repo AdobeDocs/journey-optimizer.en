@@ -390,7 +390,7 @@ Improvements coming with this release are listed below.
 
 #### Orchestrated campaigns
 
-* **Data Modeler enhancements** - For Orchestrated relational schemas, the Data Modeler now supports composite key creation using multiple fields. Composite relationships between tables are created when you load a schema from a DDL or Excel file. In the entity relationship view, after uploading a file, composite links show the full set of field pairings between tables.
+* **Data Modeler enhancements** - Orchestrated relational schemas now support composite keys spanning multiple fields. Loading a schema from a DDL file also brings in enumerations, and loading from either a DDL or Excel file automatically creates composite relationships between tables. In the entity relationship view, composite links now display the full set of field pairings between tables after a file is uploaded.
 
   Documentation JIRA task: [DOCAC-14334](https://jira.corp.adobe.com/browse/DOCAC-14334)
 
