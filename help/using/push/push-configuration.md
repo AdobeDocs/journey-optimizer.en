@@ -234,6 +234,8 @@ Once creating your push credentials, you need to create a configuration to be ab
 
 1. Select the same **[!UICONTROL App id]** as for your [push credential](#push-credentials-launch) configured above.
 
+1. You can personalize the **[!UICONTROL App id]** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Learn more on personalization](../personalization/personalization-build-expressions.md)
+
 1. Save your changes.
 
 You can now select your configuration when creating your push notifications.
