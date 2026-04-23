@@ -7,9 +7,12 @@ feature: Release Notes
 hide: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
+<!--
 # Pre-release notes {#e-release-notes}
 
 Adobe Journey Optimizer continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated at the end of each month in the [release notes](release-notes.md). 
+
+-->
 
 <!--
 ## April '26 pre-release notes {#april-26-rn}
@@ -196,7 +199,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>Availability date: April 17, 2026</p>
 <!--
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14520">DOCAC-14520</a></p>
--->
+
 </td>
 </tr>
 </tbody>
