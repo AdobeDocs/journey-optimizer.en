@@ -18,7 +18,7 @@ Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a h
 
 **Real-time Customer Profile​** - Integrate customer attributes and events from online, offline, and pseudonymous sources into a single, unified profile. ​Use the profile to engage customers with personalized, real-time experiences across multiple touchpoints. ​
 
-**Data Ingestion** - Connect to various data sources to ingest behavioral, transactional, financial, and operational data. Ingest data either in real-time or through batch uploads to keep profiles constantly updated.
+**Data Ingestion** - Connect to various data sources to ingest behavioral, transactional, financial, and operational data. Ingest data either in real-time or through batch uploads to keep profiles constantly updated. Profiles are not created directly within the [!DNL Journey Optimizer] interface — they are automatically created or updated in Adobe Experience Platform when data is ingested.
 
 >[!NOTE]
 >
@@ -32,6 +32,7 @@ Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a h
 
 >[!MORELIKETHIS]
 >
+>* [Get started with data management in Journey Optimizer](../data/gs-data.md)
 >* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
 >* [Default guardrails for Real-Time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}
 >* ​[Data Ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home){target="_blank"}

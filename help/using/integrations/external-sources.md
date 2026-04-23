@@ -8,11 +8,21 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: integration
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 104f283e-f6a5-431b-919a-d97b83d19632
 ---
 # Work with Integrations {#external-sources}
+
+>[!BEGINSHADEBOX]
+
+Table of content:
+
+* **[Work with Integrations](external-sources.md)**
+* [Get started with Vendors integration](vendor-integration-gs.md)
+* [Available vendors](vendor-integration.md)
+* [FAQ](vendor-integration-faq.md) 
+
+>[!ENDSHADEBOX]
 
 ## Overview
 

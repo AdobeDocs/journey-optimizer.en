@@ -89,8 +89,10 @@ To set up targeting, follow the steps below.
 
 Once the journey/campaign is live, content tailored for each target is sent so that US residents get a specific message, France residents a different message, and so on.
 
-<!--Default content:
+<!--
+Default content:
 
 * If no targeting rules match, default content can be delivered.
 
-* If default content is not enabled, passthrough behavior ensures lower-priority campaigns are evaluated.-->
+* If default content is not enabled, passthrough behavior ensures lower-priority campaigns are evaluated.
+-->

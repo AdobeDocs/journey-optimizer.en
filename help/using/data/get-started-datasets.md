@@ -97,6 +97,7 @@ Learn more about Data Governance and data usage labels in the [Data Governance d
 
 >[!MORELIKETHIS]
 >
+>* [Get started with data management in Journey Optimizer](gs-data.md)
 >* [Datasets documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}
 >* [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 >* [Data management license entitlement best practices](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/data-management-best-practices#data-management-best-practices){target="_blank"}

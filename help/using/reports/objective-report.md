@@ -7,8 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: ec1af88c-7b0a-4eaf-97e1-0d9676268fed
 badge: label="Beta" type="Informative"
 ---

@@ -27,8 +27,7 @@ This approach is ideal for business-to-business (B2B) email campaigns, professio
 
 >[!NOTE]
 >
->To implement this use case, you need an active [!DNL Adobe Journey Optimizer] instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](condition-activity.md) and [expressions](expression/expressionadvanced.md).
-
+>To implement this use case, you need an active Adobe Journey Optimizer instance with a configured [email channel surface](../configuration/channel-surfaces.md), an [audience](../audience/about-audiences.md) or [event](../event/about-events.md) to trigger the journey, and a basic understanding of [journey conditions](conditions.md) and [expressions](expression/expressionadvanced.md).
 
 ## Implementation steps
 
@@ -46,11 +45,11 @@ Use these steps to build the weekday-only email flow.
    * **[Read Audience](read-audience.md)**: For batch campaigns targeting a specific audience
    * **[Event](../event/about-events.md)**: For real-time triggered journeys based on customer behavior
 
-### Step 2: Add a Condition activity to check the day of the week
+### Step 2: add a condition activity to check the day of the week
 
 Right after the journey start, add a **[!UICONTROL Condition]** activity to check if the current day is Saturday or Sunday. This will branch the workflow accordingly.
 
-1. Drag and drop a [**[!UICONTROL Condition]** activity](condition-activity.md) onto the canvas after your entry point.
+1. Drag and drop an [**[!UICONTROL Optimize]** activity](optimize.md) onto the canvas after your entry point.
 
 1. Click on the **[!UICONTROL Condition]** activity to open its configuration panel.
 
@@ -73,7 +72,7 @@ Right after the journey start, add a **[!UICONTROL Condition]** activity to chec
 >
 >The time zone used for day of week evaluation is defined at the journey level in the journey properties, not at the condition level. The journey [timezone](timezone-management.md) used in the formula is the journey's configured timezone, not the recipient's.
 
-### Step 3: Configure Wait activities for weekend entries
+### Step 3: configure wait activities for weekend entries
 
 For profiles entering on Saturday or Sunday, use **[!UICONTROL Wait]** activities with custom formulas to delay the email until Monday at your desired hour.
 
@@ -180,7 +179,7 @@ Once testing is complete:
 
 ## Related topics
 
-* [Condition activities](condition-activity.md) - Learn how to create different paths in your journey
+* [Optimize activities](optimize.md) - Learn how to create different paths in your journey
 * [Use conditions in a journey](conditions.md) - Detailed guide on journey conditions
 * [Wait activity](wait-activity.md) - Configure wait durations and formulas
 * [Date functions](functions/date-functions.md) - Complete reference for date and time functions

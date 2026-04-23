@@ -26,6 +26,10 @@ All these actions can be performed using the **[!UICONTROL Simulate Content]** b
 
 ![](../email/assets/email-preview-button.png)
 
+>[!IMPORTANT]
+>
+>If you use **[!UICONTROL Simulate Content]** from an **Orchestrated campaign** channel activity, see [Check and test your content](../orchestrated/activities/channels.md#simulate-content-test-profiles) for more information and important notes.
+
 ## Testing using test profiles data or sample input data {#methods}
 
 Journey Optimizer provides two experiences to test your content:

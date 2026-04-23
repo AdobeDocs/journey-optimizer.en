@@ -10,7 +10,7 @@ level: Experienced
 exl-id: c9e14d4d-f2e2-43f9-b1c5-4b005ce858ad
 version: Journey Orchestration
 ---
-# Context data & Edge Decisioning requests {#edge}
+# Context data & edge decisioning requests {#edge}
 
 >[!TIP]
 >
@@ -33,11 +33,10 @@ To go further, you can also leverage context data into **ranking formulas**, or 
 
 * [Ranking formulas - Boost offers based on context data](../offers/ranking/create-ranking-formulas.md#context-data)
 * [Personalize representations based on context data](../offers/offer-library/add-representations.md#context-data)
-* [Supported functions in the personalization editor](offer-library/personalization-editor-supported-functions.md) (when personalizing offer content in Decision management)
 
 >[!ENDSHADEBOX]
 
-## Prerequisites to pass context data in Edge Decisioning requests {#prerequisites}
+## Prerequisites to pass context data in edge decisioning requests {#prerequisites}
 
 Unlike passing context in a free format using the Decisioning API, the Edge Decisioning context requires XDM compliance. The context payload needs to be XDM Experience Event compliant. To do this, the context needs to be defined as part of the 'XDM Experience Event' that is used for data collection.
 
@@ -127,7 +126,7 @@ Create a new decision that leverages the Offer Decision Engine to pick the best 
 >
 >To go further, you can leverage context data into ranking formulas and assign them to your decision. ADD INFORMATION
 
-## Pass context data in the Edge Decisioning request {#request}
+## Pass context data in the edge decisioning request {#request}
 
 ### Endpoint
 

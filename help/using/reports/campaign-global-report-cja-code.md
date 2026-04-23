@@ -159,7 +159,7 @@ Key metrics displayed include:
 >
 >Currently the [Lift Measurement](../experience-decisioning/ranking/auto-optimization-model.md#lift) report is only available for the [Personalized optimization](../experience-decisioning/ranking/personalized-optimization-model.md) AI model. If you require lift measurement reporting, use the Personalized optimization model instead.
 
-### Conversion rate for Holdout and Model Driven traffic {#conversion-rate}
+### Conversion rate for holdout and model driven traffic {#conversion-rate}
 
 >[!NOTE]
 >

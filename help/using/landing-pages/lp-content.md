@@ -20,7 +20,11 @@ exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
     
 To design your landing page content, you can use the same components as for an email. [Learn more](../email/content-components.md#add-content-components)
 
-To design specific content that will enable users to select and submit their choices, [use the form component](#use-form-component) and define its [landing page-specific styles](#lp-form-styles).
+To design specific content that will enable users to select and submit their choices, use the **form component**:
+
+* For opt-in, opt-out, and subscription scenarios, use the [built-in form component](#use-form-component) and define its [landing page-specific styles](#lp-form-styles).
+
+* To let users submit data through a specific form (for example to enrich an [!DNL Experience Platform] dataset), [embed a published form](#embed-form) on a **[!UICONTROL Data Capture]** landing page. [Learn more about creating forms](lp-forms.md)
 
 >[!NOTE]
 >
@@ -161,6 +165,40 @@ To define specific content that will enable users to select and submit their cho
 1. Expand the **[!UICONTROL Form error]** section to adjust the display of the error message that displays in case a problem occurs. Check the corresponding option to preview the error text on the form.
 
     ![](assets/lp_designer-form-error-preview.png)
+
+## Embed a form (data capture) {#embed-form}
+
+For landing pages created with the [Data Capture](get-started-lp.md#data-capture-lp) type, you can embed a [published form](lp-forms.md) that you created. Submissions are sent to the streaming connection and dataset configured in the form preset.
+
+In the landing page content designer, follow the steps below.
+
+1. Drag and drop a **[!UICONTROL Structure]** component into your content, then drag and drop the **[!UICONTROL Form]** component into that structure.
+
+    >[!NOTE]
+    >
+    >Only **published** forms can be selected on the landing page.
+
+1. In the **[!UICONTROL Embed form]** section, select the form to display.
+
+    ![](assets/lp_embed-form.png)
+
+    >[!NOTE]
+    >
+    >Use **[!UICONTROL Edit form]** if you need to change the form content or Thank you page behavior; the form opens in a new tab. [Learn more about editing forms](lp-forms.md#edit-form)
+
+1. In the **[!UICONTROL Follow up type]** section, define what happens after submit:
+
+    * **[!UICONTROL Form defined]** — Use the Thank you page action configured in the embedded form. [Learn more](lp-forms.md#thank-you-page)
+    * **Published landing page** — Redirect to another published [landing page](create-lp.md).
+    * **External URL** — Redirect to a full URL.
+
+1. Save your landing page content when you are done.
+
+For the full workflow (landing page creation, testing, and publishing), see [Leverage the form in a landing page](lp-forms.md#leverage-form-in-lp).
+
+>[!NOTE]
+>
+>This embedded form experience applies to **[!UICONTROL Data Capture]** landing pages only.
 
 ## Use primary page context {#use-primary-page-context}
 

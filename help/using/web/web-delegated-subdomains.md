@@ -153,7 +153,8 @@ If you wish to undelegate a web subdomain, reach out to your Adobe representativ
 
 1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/manage-campaigns.md#stop)
 
-1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)-->
+1. Stop the active journeys associated with the subdomains. [Learn how](../building-journeys/end-journey.md#stop-journey)
+-->
 
 If the web subdomain was a [new delegated subdomain](#web-configure-new-subdomain), you can delete the CNAME DNS record that you created for the web subdomain from your hosting solution (but do not delete the original email subdomain if any).
 

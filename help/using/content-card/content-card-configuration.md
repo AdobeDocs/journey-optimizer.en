@@ -32,7 +32,7 @@ The tables below list some surface URI definition examples for various devices.
 **Web and mobile**
 
 | Type | URI | Description |
-| --------- | ----------- | ------- | 
+| --------- | ----------- | ------- |
 | Web | `web://domain.com/path/page.html#element` | Represents an individual element within a specific page of a specific domain, where an element can be a label like in the following examples: hero_banner, top_nav, menu, footer, etc. |
 | iOS app | `mobileapp://com.vendor.bundle/activity#element` | Represents a specific element within a native app activity, such as a button or other view element. |
 | Android app | `mobileapp://com.vendor.bundle/#element` | Represents a specific element within a native app. |
@@ -40,7 +40,7 @@ The tables below list some surface URI definition examples for various devices.
 **Other device types**
 
 | Type | URI | Description |
-| --------- | ----------- | ------- | 
+| --------- | ----------- | ------- |
 | Desktop | `desktop://com.vendor.bundle/#element` | Represents a specific element within an application, such as a button, menu, hero banner, etc. |
 | TV app | `tvcd://com.vendor.bundle/#element` | Represents a specific element within a smart TV or TV connected device app - bundle ID. |
 | Service | `service://servicename/#element` | Represents a server-side process or other manual entity. |
@@ -50,13 +50,13 @@ The tables below list some surface URI definition examples for various devices.
 **Wildcard surfaces**
 
 | Type | URI | Description |
-| --------- | ----------- | ------- | 
+| --------- | ----------- | ------- |
 | Wildcard web | `wildcard:web://domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under a specific domain. |
 | Wildcard web | `wildcard:web://*domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under all domains that end with "domain.com". |
 
 ## Create a content card configuration {#create-config}
 
-1. Access the **[!UICONTROL Channels]** > **[!UICONTROL Branding]** > **[!UICONTROL Channel configurations]** menu, then click **[!UICONTROL Create channel configuration]**.
+1. Access the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu, then click **[!UICONTROL Create channel configuration]**.
 
     ![](assets/content_card_config_1.png)
 

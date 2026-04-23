@@ -34,11 +34,11 @@ The advanced expression editor offers a set of built-in functions and operators 
 
 The advanced expression editor can be used to:
 
-* create [advanced conditions](../condition-activity.md#about_condition) on data sources and event information
+* create [advanced conditions](../conditions.md#data_source_condition) on data sources and event information
 * define custom [wait activities](../wait-activity.md#custom)
 * define action parameters mapping
 
-When possible, you can switch between the two modes using the **[!UICONTROL Advanced mode]** / **[!UICONTROL Simple mode]** button. The simple mode is described [here](../condition-activity.md#about_condition).
+When possible, you can switch between the two modes using the **[!UICONTROL Advanced mode]** / **[!UICONTROL Simple mode]** button. The simple mode is described [here](../conditions.md#about_condition).
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ On the left part of the screen are displayed available fields and functions:
     >
     >Creating expressions using experience events is not supported. Alternative approaches and best practices for creating expressions/logic with experience events are referenced [here](../../building-journeys/exp-event-lookup.md)    
 
-* **[!UICONTROL Audiences]**: if you have dropped an **[!UICONTROL Audience qualification]** event, choose the audience you want to use in your expression. [Read more](../condition-activity.md#using-a-segment)
+* **[!UICONTROL Audiences]**: if you have dropped an **[!UICONTROL Audience qualification]** event, choose the audience you want to use in your expression. [Read more](../conditions.md#using-a-segment)
 * **[!UICONTROL Data Sources]**: choose from the list of fields available from your data sources' field groups. [Read more](../../datasource/about-data-sources.md)
 * **[!UICONTROL Journey properties]**: this section regroups the technical fields related to the journey for a given profile. [Read more](journey-properties.md)
 * **[!UICONTROL Functions]**: choose from the a list of built-in functions that allow to carry out complex filtering. Functions are organized by categories. [Read more](functions.md)

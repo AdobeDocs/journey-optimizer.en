@@ -9,9 +9,9 @@ version: Campaign Orchestration
 
 # Configure a Targeting dimension {#configuration}
 
-With **[!UICONTROL Orchestrated Campaigns]**, you can design and deliver targeted communications at the entity level, leveraging Adobe Experience Platform's relational schema capabilities. Experience Platform uses schemas to describe the structure of data in a consistent and reusable way. When data is ingested into Experience Platform, it is structured according to an XDM schema.
+With **[!UICONTROL Orchestrated campaigns]**, you can design and deliver targeted communications at the entity level, leveraging Adobe Experience Platform's relational schema capabilities. Experience Platform uses schemas to describe the structure of data in a consistent and reusable way. When data is ingested into Experience Platform, it is structured according to an XDM schema.
 
-Although segmentation for **[!UICONTROL Orchestrated Campaigns]** operates primarily on relational schemas, the actual message delivery always occurs at the **Profile** level.
+Although segmentation for **[!UICONTROL Orchestrated campaigns]** operates primarily on relational schemas, the actual message delivery always occurs at the **Profile** level.
 
 When configuring targeting, you define two key aspects:
 
@@ -21,7 +21,7 @@ When configuring targeting, you define two key aspects:
 
      >[!IMPORTANT]
      >
-     > Orchestrated Campaigns allow targeting on any schema that has a direct or related relationship to the **Profile** schema. While its usage is primarily intended on 1:1 relationships, it also supports 1:N relationships, such as Account `>` Recipients, as long as the relationship path is properly modeled in the data model. This enables targeting based on account-level data while still resolving the correct profile identity for message delivery.
+     > Orchestrated campaigns allow targeting on any schema that has a direct or related relationship to the **Profile** schema. While its usage is primarily intended on 1:1 relationships, it also supports 1:N relationships, such as Account `>` Recipients, as long as the relationship path is properly modeled in the data model. This enables targeting based on account-level data while still resolving the correct profile identity for message delivery.
 
 * **Profile Linkage**
      

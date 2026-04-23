@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 4e2dc0d6-4610-4a2f-8388-bc58182b227f
 version: Journey Orchestration
 ---
-# Deliver offers using the Edge Decisioning API {#edge-decisioning-api}
+# Deliver offers using the edge decisioning API {#edge-decisioning-api}
 
 >[!TIP]
 >
@@ -62,7 +62,7 @@ To personalize offers, you must separately configure your personalization/profil
 
 To configure the SDK for decision management, follow either of two steps below:
 
-## Option 1 - Install the Tag extension and implementation using Launch
+## Option 1 - install the tag extension and implementation using launch
 
 This option is more user-friendly for people who may have less coding experience. 
 
@@ -265,6 +265,8 @@ document.getElementById('offerImage').src = offerImageURL;
 
 ```
 
-<!--## Limitations
+<!--
+## Limitations
 
-Some offer constraints are currently not supported with the mobile Experience Edge workflows, for example Capping. The Capping field value specifies the number of times an offer can be presented across all users. For more details, see [Add constraints to an offer](../../offer-library/add-constraints.md#capping).-->
+Some offer constraints are currently not supported with the mobile Experience Edge workflows, for example Capping. The Capping field value specifies the number of times an offer can be presented across all users. For more details, see [Add constraints to an offer](../../offer-library/add-constraints.md#capping).
+-->

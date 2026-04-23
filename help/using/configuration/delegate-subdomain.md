@@ -33,6 +33,7 @@ You can either:
 
 * Fully delegate a subdomain - [Learn how](#set-up-subdomain)
 * Create a subdomain using CNAMEs to point to Adobe-specific records - [Learn how](#set-up-subdomain)
+* Delegate a custom subdomain - [Learn how](delegate-custom-subdomain.md)
 
 The **full subdomain delegation** is the recommended method. Learn more about the differences between the different subdomain configuration methods in [this section](about-subdomain-delegation.md#subdomain-delegation-methods).
 
@@ -88,7 +89,8 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 <!--
 >[!NOTE]
 >
->This section describes how to set up a subdomain using the full delegation. The custom delegation method is detailed in [this section](#setup-custom-subdomain).-->
+>This section describes how to set up a subdomain using the full delegation. The custom delegation method is detailed in [this section](#setup-custom-subdomain).
+-->
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** menu, then click **[!UICONTROL Set up subdomain]**.
 
@@ -111,7 +113,8 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
     ![](assets/subdomain-name.png)
 
-<!-- >[!CAUTION]
+<!--
+ >[!CAUTION]
     >
     >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
     >
@@ -182,7 +185,8 @@ To complete your subdomain delegation, follow the steps below.
 <!--
     >[!NOTE]
     >
-    >If an error occurs while trying to submit a custom subdomain, refer to [this section](delegate-custom-subdomain.md#check-list).-->
+    >If an error occurs while trying to submit a custom subdomain, refer to [this section](delegate-custom-subdomain.md#check-list).
+-->
 
 1. You can create the records and submit the subdomain configuration later on using the **[!UICONTROL Save as draft]** button.
 

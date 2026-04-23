@@ -137,6 +137,8 @@ To define the conditions associated with an approval policy, follow these steps:
     </tr>
     </table>
 
+    +++
+
 1. To add more criteria, click **[!UICONTROL Add condition]** to define additional rules and select either **[!UICONTROL And]** or **[!UICONTROL Or]** to specify how the conditions are connected.
 
 1. Under the **[!UICONTROL Then, send approval request to]** menu, click **[!UICONTROL Add condition]** to define which user can accept the approval request.

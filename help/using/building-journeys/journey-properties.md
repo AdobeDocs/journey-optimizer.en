@@ -13,10 +13,12 @@ version: Journey Orchestration
 ---
 # Set your journey properties {#jo-properties}
 
+Use journey properties to configure global settings for your journey, including its name, entrance rules, timezone, start and end dates, timeout duration, exit criteria, and conflict management. Properties are accessible from the right rail at any stage of journey authoring.
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties"
 >title="Journey properties"
->abstract="This section shows the journey properties. By default, read-only parameters are hidden. Available settings depend on the status of the journey, your permissions and product configuration."
+>abstract="Configure global settings for this journey, including name, tags, entrance rules, time zone, dates, timeout, and conflict management. Read-only parameters are hidden by default. Available options vary based on journey status, your permissions, and product configuration."
 
 ## Access the properties of a journey {#access-properties}
 
@@ -144,7 +146,7 @@ Recommended values are between 1 and 30 seconds.
 
 We recommend that you define a very short **[!UICONTROL Timeout or error]** value if your journey is time sensitive (example: reacting to the real-time location of a person) because you cannot delay your action for more than a few seconds. If your journey is less time sensitive, you can use a longer value to give more time to the system called to send a valid response.
 
-Journeys also uses a global timeout as detailled below.
+Journeys also uses a global timeout as detailed below.
 
 ### Global journey timeout {#global_timeout}
 
@@ -160,7 +162,7 @@ Due to the 91-day journey timeout, when journey reentrance is not allowed, we ca
 
 An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
 
-#### Time-to-Live (TTL) and data rentention FAQ {#timeout-faq}
+### Time-to-Live (TTL) and data retention FAQ {#timeout-faq}
 
 Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global timeout has moved from 30 to 91 days. Impacts are listed in the FAQ below:
 
@@ -257,7 +259,7 @@ Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global ti
       <p>What happens to a running profile in a previous journey version that is republished after the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will maintain a TTL of 30 days (7 days for HIPPA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+      <p>The profile will maintain a TTL of 30 days (7 days for HIPAA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -268,15 +270,36 @@ Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global ti
       <p>The profile will have a TTL of 91 days, matching the TTL of the newly republished journey version. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>Will my always-on recurring Read Audience journey stop after 91 days?</p>
+    </td>
+    <td>
+      <p>No. A recurring Read Audience journey with no end date remains <strong>Live</strong> as long as it is published. It moves to <strong>Finished</strong> status only 91 days after the execution of its <strong>last occurrence</strong>. The 91-day global timeout applies to individual profiles flowing through the journey (maximum active duration per profile), not to the journey's Live status.</p>
+    </td>
+  </tr>
+  <tr style="border: 1;">
+    <td>
+      <p>What is the difference between the 91-day journey timeout and the 91-day reporting window?</p>
+    </td>
+    <td>
+      <p>These are two separate concepts. The <strong>journey global timeout</strong> (91 days) is the maximum time an individual profile can remain active within a journey — after 91 days, the profile is exited and its data deleted. The <strong>reporting window</strong> (approximately 91 days) is a display limit in the UI: performance data older than ~91 days is no longer visible in reporting, but the journey itself continues to run and new profiles continue to enter.</p>
+    </td>
+  </tr>
 </table>
 
-## Merge policies {#merge-policies}
+## Merge policy {#merge-policies}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_merge_policy"
+>title="Merge policy"
+>abstract="The merge policy is automatically retrieved based on your selected event or audience. This merge policy is used throughout the entire journey."
 
 [!DNL Adobe Journey Optimizer] uses merge policies while retrieving profile data from [!DNL Adobe Experience Platform]. Depending on the journey type, different merge policies are used:
 
-* In Read audience or audience qualification journeys: the merge policy from the audience is used
-* In Unitary event journeys: the default merge policy is used
-* In Business event journeys: the merge policy from the targeted audience in the following Read audience activity is used
+* In **[Read audience](read-audience.md)** or **[Audience qualification](audience-qualification-events.md)** journeys: the merge policy from the audience is used
+* In **[Unitary event](../event/about-events.md)** journeys: the default merge policy is used
+* In **[Business event](../event/about-creating-business.md)** journeys: the merge policy from the targeted audience in the following Read audience activity is used
 
 [!DNL Adobe Journey Optimizer] applies the merge policy used throughout the entire journey. Therefore, if multiple audiences are used in a journey (for example using the in [`inAudience` functions](functions/functioninaudience.md)), this creates inconsistencies with the merge policy used by the journey, an error is raised and publication is blocked. However, if an inconsistent audience is used in message personalization, an alert is not raised, despite the inconsistency. For this reason, it is highly recommended to check the merge policy associated with your audience, when this audience is used in message personalization.
 
@@ -295,7 +318,7 @@ To learn more about merge policies, refer to [[!DNL Adobe Experience Platform] d
 
 ### Journey Exit criteria {#exit-criteria-desc}
 
-By adding exit criteria, you make the profiles exit the journey as soon as an event happen (eg: Purchase) or they qualify for an audience. This will prevent the user from getting any further communications from the journey.
+By adding exit criteria, you make the profiles exit the journey as soon as an event happens (e.g., Purchase) or they qualify for an audience. This will prevent the user from getting any further communications from the journey.
 
 You may want to remove profiles from a journey when they do not meet the journey's purpose anymore. This can be achieved by **global exit criteria**, which are closely associated with goal management.
 
@@ -307,7 +330,7 @@ You may want to remove profiles from a journey when they do not meet the journey
 
 A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer should not receive rest of the messages in the series. By defining an exit criteria, any profiles who made a purchase is removed from the journey.
 
-#### Configuration and usage {#exit-criteria-config}
+### Configuration and usage {#exit-criteria-config}
 
 Exit criteria are set at journey level. One journey can have multiple exit criteria. If you have set multiple exit criteria, the evaluation happens from top to bottom with an `OR` logic. Hence, if you have Exit Criteria A and Exit Criteria B, it is evaluated as A **OR** B. The criteria are evaluated at every step of the journey.
 
@@ -324,7 +347,7 @@ To **create** an exit criteria, follow these steps:
     * For Exit criteria based on an event, like for example downloading an app or adding a product to a cart, pick only unitary event. 
     * For Exit criteria based on an audience,like for example an audience that checks if a customer has purchased in the last 24 hours, select an audience. Note: Exit criteria using an audience can take up to 10 mins to be effective.
 
-You can add multiple exit criteria.
+You can add multiple exit criteria. The exit criteria is now active and will be evaluated at each step of the journey.
 
 ![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%" align="left"}
 
@@ -386,6 +409,15 @@ The **[!UICONTROL Conflict management]** section in the journey's properties all
 
 * Assign a **priority score** to the journey, ranging from 0 to 100. A higher number indicates a higher priority. The priority value inserted here is inherited by any inbound actions (such as In-App) contained in this journey. [learn how to work with priority scores](../conflict-prioritization/priority-scores.md)
 
-  For situations where this same inbound channel configuration is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chose.
+  For situations where this same inbound channel configuration is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chosen.
 
 * **View conflicts** with other journeys, campaigns, or channel configurations. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. [Learn how to identify potential conflicts in journey](../conflict-prioritization/conflicts.md)
+
+## Related topics {#related-topics}
+
+* [Profile entrance management](entry-management.md) - Configure how profiles enter and re-enter journeys
+* [Journey entry and exit criteria guide](entry-exit-criteria-guide.md) - Complete guide with real-world examples and best practices
+* [How journeys end](end-journey.md) - Understand natural journey completion and profile exit
+* [Pause a journey](journey-pause.md) - Pause and resume journeys with profile attribute exit criteria
+* [Timezone management](timezone-management.md) - Configure journey and profile timezones
+* [Conflict management and prioritization](../conflict-prioritization/conflicts.md) - Identify and resolve conflicts across journeys and campaigns

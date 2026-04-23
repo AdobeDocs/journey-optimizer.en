@@ -108,6 +108,20 @@ Here are a few things to check:
 * Is it due to a condition excluding the person? For example, the condition is "gender = male" and the person is a woman. This check can be performed by a business user if the condition is not too complex.
 * Is it due to a call to a data source not responding? When the journey is in test, this information can be seen in test mode logs. When the journey is live, an administrator can test direct calls to the data source and check the answer received. An administrator can also duplicate the journey and test it.
 
+## Events discarded due to a blocked journey instance {#max-instance-stack-events-reached}
+
+If you see events discarded with the `maxInstanceStackEventsReached` reason, the journey runtime has reached its internal per-profile event stack limit of 10 events for a specific journey version. This is a safety guardrail that prevents too many pending events from stacking up while another event for the same profile is still being processed.
+
+This is **not** a time-window or throughput limit. It occurs when the profile's journey instance is blocked on a long-running step (for example, a long wait, enrichment, or custom action retries) and events for the same profile, also being used in that journey, pile up beyond the 10-event limit.
+
+To identify it, query journey step events where the discard reason equals `maxInstanceStackEventsReached` (for example, in `serviceEvents.stateMachine.eventType` or similar fields). Learn more about discarded event types in the [step event field list](../reports/sharing-field-list.md#discarded-events).
+
+**What you can do**
+
+* Reduce long waits or slow steps on paths that can re-trigger frequently.
+* Deduplicate or debounce upstream events when possible.
+* Split long-running scenarios into multiple journeys to avoid stacking.
+
 ## Check that messages are sent successfully {#checking-that-messages-are-sent-successfully}
 
 If individuals flow the right way in the journey but do not receive messages they should receive, you can check if:
@@ -117,11 +131,11 @@ If individuals flow the right way in the journey but do not receive messages the
 
 In case of a message sent via a custom action, the only thing that can be checked during journey test is the fact that the call of the custom action's system leads to an error or not. If the call to the external system associated with the custom action does not lead to an error but does not lead to a message sending, some investigations should be done on the external system's side.
 
-## Understanding duplicate entries in Journey Step Events {#duplicate-step-events}
+## Understanding duplicate entries in Journey step events {#duplicate-step-events}
 
 Use this section to understand why duplicate rows can appear in Journey Step Events.
 
-### Why do I see multiple entries with the same journey instance, profile, node, and request IDs?
+### Why do i see multiple entries with the same journey instance, profile, node, and request ids?
 
 When querying Journey Step Events data, you may occasionally observe what appears to be duplicate log entries for the same journey execution. These entries share identical values for:
 
@@ -183,7 +197,7 @@ When analyzing Journey Step Events data:
       AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID>'
     ```
 
-### What should I do if I observe this?
+### What should i do if i observe this?
 
 This is normal system behavior and **no action is required**. The duplicate logging does not indicate a problem with your journey configuration or message delivery. 
 

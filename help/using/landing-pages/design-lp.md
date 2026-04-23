@@ -28,6 +28,8 @@ From there, you can:
 
 * **Use a saved landing page template** created in [!DNL Journey Optimizer]. [Learn more](lp-templates.md)
 
+Once in the landing page content designer, you can use the same components as for an email and define landing page-specific content using the form component. [Learn how](lp-content.md)
+
 >[!NOTE]
 >
 >The landing page content designer is mostly similar to the Email Designer. Learn more about [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).

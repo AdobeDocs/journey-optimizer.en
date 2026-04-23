@@ -383,6 +383,8 @@ FROM journey_step_event
 WHERE _experience.journeyOrchestration.serviceType is not null;
 ```
 
++++
+
 ## Message/Action Errors {#message-action-errors}
 
 +++List of each error encountered in journeys
@@ -1041,7 +1043,7 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 +++
 
-## Queries for Engageable Profiles {#engageable-profiles-queries}
+## Queries for engageable profiles {#engageable-profiles-queries}
 
 These queries help you monitor and analyze your Engageable Profiles count. An Engageable Profile is a unique profile that has been engaged through journeys or campaigns in the past 12 months. Learn more about [Engageable Profiles and license usage](../audience/license-usage.md#what-is-engageable-profile).
 
@@ -1458,7 +1460,7 @@ ORDER BY
 
 +++
 
-## Queries related to Custom Action performance metrics {#query-custom-action}
+## Queries related to custom action performance metrics {#query-custom-action}
 
 +++ Total number of successful calls, errors and requests per second of each endpoint over a specific time period
 

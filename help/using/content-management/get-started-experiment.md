@@ -43,7 +43,7 @@ In detail, the MumurHash3 32-bit algorithm is used to hash the user identity str
 
 Note that as part of configuring every campaign with a content experiment, you must choose an identity namespace from which the userId will be selected for the randomization algorithm. This is independent of the [execution addresses](../configuration/primary-email-addresses.md).
 
-### Data Collection and Analysis
+### Data collection and analysis
 
 At the time of assignment i.e., when the message is sent in outbound channels, or when the user enters the campaign in inbound channels, an "assignment record" is logged to the appropriate system dataset. This will record which treatment the user was assigned to, along with experiment and campaign identifiers. 
 
@@ -123,7 +123,7 @@ When you compare the performance of two treatments, you should always compare th
     
 For example, if the experiment objective is set to **[!UICONTROL Unique Opens]**, and a given treatment was shown to 10,000 Profiles with 200 Unique Opens recorded, then this represents a **[!UICONTROL Conversion Rate]** of 2%. For non-unique metrics, e.g. Opens metric, the normalized metric is shown as a **[!UICONTROL Count per Profile]**, while for continuous metrics like Price Total, the normalized metric is shown as a **[!UICONTROL Total per Profile]**.
 
-### 2. Focus on Confidence intervals {#confidence-intervals}
+### 2. focus on confidence intervals {#confidence-intervals}
 
 When you run experiments on samples of your profiles, the conversion rate observed for a given treatment represents an estimate of the true underlying conversion rate.
     
@@ -135,17 +135,17 @@ If the confidence intervals for two treatments are barely overlapping, this mean
 
 Adobe uses 95% Anytime Valid Confidence Intervals, or Confidence Sequences, which means the results can be safely viewed at any time during the experiment.
 
-### 3. Understand Lift {#understand-lift}
+### 3. understand lift {#understand-lift}
 
 The Experiment report summary shows the **[!UICONTROL Lift over Baseline]**, which is a measure of the percentage improvement in conversion rate of a given treatment over the baseline. Defined precisely, it is the difference in performance between a given treatment and the baseline, divided by the performance of the baseline, expressed as a percentage.
 
-### 3. Understand Confidence {#understand-confidence}
+### 3. understand confidence {#understand-confidence}
 
 While you should primarily focus on the **[!UICONTROL Confidence interval]** for the performance of each treatment, Adobe also shows the Confidence, which is a probabilistic measure of how much evidence there is that a given treatment is the same as the baseline treatment. A higher confidence indicates less evidence for the assumption that baseline and non-baseline treatments have equal performance. More precisely, the confidence that is displayed is a probability (expressed as a percentage) that we would have observed a smaller difference in conversion rates between a given treatment and the baseline, if in reality there is no difference in the true underlying conversion rates. In terms of p-values, the confidence displayed is 1 - p-value.
 
 Adobe uses "Anytime Valid" Confidence, and "Anytime Valid" p-values that are consistent with the Confidence Sequences described above.
 
-### 4. Statistical Significance
+### 4. statistical significance
 
 When running Experiments, a result is deemed statistically significant if it was very unlikely to have been observed given a null hypothesis that a given treatment and the baseline have identical true underlying conversion rates/performance. 
 

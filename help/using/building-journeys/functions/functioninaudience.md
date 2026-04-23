@@ -15,7 +15,7 @@ The `inAudience` function is an Adobe Experience Platform function that enables 
 
 Use the `inAudience` function when you need to:
 
-* Branch journey paths based on audience membership. [Learn more](../condition-activity.md#using-a-segment)
+* Branch journey paths based on audience membership. [Learn more](../conditions.md#using-a-segment)
 * Apply conditional logic that depends on whether a profile belongs to a specific segment
 * Target specific groups of customers with personalized experiences
 * Evaluate real-time audience participation within journey conditions
@@ -105,6 +105,13 @@ When using the `inAudience` function in your journeys, be aware of the following
 * When using multiple audiences with the `inAudience` function, inconsistencies with merge policies can cause errors or alerts
 * Refer to [Journey properties](../journey-properties.md) for more information on merge policy behavior
 
+**Propagation timing:** {#propagation-timing}
+
+When using `inAudience()` in a condition node, segment membership evaluation timing varies depending on where the condition appears in the journey:
+
+* **In a Read Audience journey, before a Wait activity:** Journey Optimizer reads from the batch projection of the profile. Data in this projection is refreshed within **2 hours** after ingestion. Audiences that rely on day-based or time-based conditions may experience additional delay. Add a short [Wait activity](../wait-activity.md) at the start of the journey, or allow buffer time to ensure the latest segment membership is reflected.
+* **In a unitary event journey, or after a Wait activity:** Segment membership is read from the streaming (unitary) projection. Data is typically available within **15 minutes**. For more details, refer to the [Adobe Experience Platform streaming ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/streaming/overview){target="_blank"}.
+
 ## Related topics
 
 Learn more about using audiences in Adobe Journey Optimizer:
@@ -112,6 +119,6 @@ Learn more about using audiences in Adobe Journey Optimizer:
 * **[About audiences](../../audience/about-audiences.md)** - Understand how audiences work in Adobe Experience Platform and Journey Optimizer, including how to create and manage them
 * **[Read Audience activity](../read-audience.md)** - Use audiences to trigger journey entry and make all audience members enter a journey
 * **[Audience Qualification events](../audience-qualification-events.md)** - Listen to profile entrances and exits from audiences to trigger journey actions in real-time
-* **[Using audiences in conditions](../condition-activity.md#using-a-segment)** - Create conditional journey paths based on audience membership using the Condition activity
+* **[Using audiences in conditions](../conditions.md#using-a-segment)** - Create conditional journey paths based on audience membership using the Optimize activity
 * **[Journey properties - Merge policies](../journey-properties.md)** - Understand how merge policies work when using multiple audiences with the inAudience function
 

@@ -20,6 +20,10 @@ For example, you can wait a few days after an email delivery to track opens and 
 
 ## Configuration{#wait-configuration}
 
+>[!IMPORTANT]
+>
+>Data in temporary tables does not persist beyond **5 days**. When you use **[!UICONTROL Duration]** or **[!UICONTROL Fixed time]** waits, ensure the elapsed time until the next activity completes within that limit so intermediate data remains available.
+
 Follow these steps to configure the **[!UICONTROL Wait]** activity:
 
 1. Add a **[!UICONTROL Wait]** activity into your Orchestrated campaign.
@@ -34,6 +38,6 @@ Follow these steps to configure the **[!UICONTROL Wait]** activity:
 
 ## Example{#wait-example}
 
-The following example illustrates the **[!UICONTROL Wait]** activity in a typical use case.  An email with a promo code is sent to profiles celebrating their birthdays. After 29 days, an SMS is sent to the same group as a reminder that their birthday promo code is about to expire.
+The following example illustrates the **[!UICONTROL Wait]** activity in a typical use case.  An email with a promo code is sent to profiles celebrating their birthdays. After 2 days, an SMS is sent to the same group as a reminder that their birthday promo code is about to expire.
 
 ![](../assets/wait-example.png)

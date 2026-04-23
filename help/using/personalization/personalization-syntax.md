@@ -16,7 +16,7 @@ Personalization in [!DNL Journey Optimizer] is based on the templating syntax ca
 
 It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions.
 
-Simple expression sample: 
+Simple expression sample:
 
 `{{profile.person.name}}`
 
@@ -149,7 +149,7 @@ Blocks are expressions that have a block opening (`{{# }}`) and closing (`{{/}}`
 | String | A data type comprised of characters surrounded by double quotes. <br>Examples: `"prospect"`, `"jobs"`, `"articles"` |
 | Boolean | A data type that is either true or false.|
 | Integer | A data type representing a whole number. It can be positive, negative, or zero. <br>Examples: `-201`, `0`, `412` |
-| Array | A data type that is comprised as a group of other literal values. It uses square brackets to group and commas to delimit between different values. <br> **Note:** You cannot directly access properties of items within an array. <br> Examples: `[1, 4, 7]`, `["US", "FR"]` |  
+| Array | A data type that is comprised as a group of other literal values. It uses square brackets to group and commas to delimit between different values. <br> **Note:** You cannot directly access properties of items within an array. <br> Examples: `[1, 4, 7]`, `["US", "FR"]` |
 
 >[!CAUTION]
 >

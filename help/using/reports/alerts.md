@@ -52,7 +52,7 @@ Journey Optimizer provides pre-configured alert rules that monitor specific aspe
 
 Navigate to **[!UICONTROL Administration]** > **[!UICONTROL Alerts]** in the left menu. The **Browse** tab displays all pre-configured alerts available for Journey Optimizer.
 
-![](assets/updated-alerts-list.png){width=50%}
+![](assets/updated-alerts-list.png){width=60%}
 
 ### Alert categories
 
@@ -78,7 +78,7 @@ Detect issues with email deliverability setup:
 
 * [AJO Domain DNS record missing](#alert-dns-record-missing) – Identifies missing or misconfigured DNS records
 * [AJO channel configuration failure](#alert-channel-config-failure) – Detects email configuration issues (SPF, DKIM, MX records)
-<!--* the [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal) alert-->
+* [AJO domain certificates renewal unsuccessful](#alert-certificates-renewal-unsuccessful) – Warns when Resource or Tracking certificates on a custom delegation subdomain are expiring soon or have expired
 
 >[!ENDTABS]
 
@@ -188,7 +188,7 @@ All journey notifications available in the user interface are listed below.
 >
 >Adobe Journey Optimizer specific alerts apply only to **live** journeys. Alerts are not triggered for journeys in test mode.
 
-### Read Audience Trigger Unsuccessful {#alert-read-audiences}
+### Read Audience trigger unsuccessful {#alert-read-audiences}
 
 This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max).
 
@@ -200,7 +200,7 @@ The I/O event subscription name corresponding to the **Read Audience Trigger Uns
 
 To troubleshoot **Read Audience** alerts, check your audience count in the Experience Platform interface.
 
-### Profile Discard Rate Exceeded {#alert-discard-rate}
+### Profile discard rate exceeded {#alert-discard-rate}
 
 This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
@@ -215,7 +215,7 @@ There are several reasons a profile could be discarded, which will inform the me
 * Event throughput rate is exceeded. To solve this, ensure that events coming into the system are not exceeding these limits.
 
 
-### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
+### Custom action error rate exceeded {#alert-custom-action-error-rate}
 
 This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
@@ -234,7 +234,7 @@ Custom actions errors can happen for a variety of reasons. To troubleshoot these
 * Check that the endpoint is reachable and the custom action can reach it via the custom action connectivity checker.
 * Verify the authentication credentials, check internet connectivity, etc.
 
-### Profile Error Rate Exceeded {#alert-profile-error-rate}
+### Profile error rate exceeded {#alert-profile-error-rate}
 
 This alert warns you if the ratio of profiles-in-error to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
@@ -254,7 +254,7 @@ This alert notifies you when a journey has finished. The definition of "finished
 
 This is an informational alert that helps you keep track of journey completion. There is no resolution criteria as this is a one-time notification.
 
-### Custom Action Capping Triggered {#alert-custom-action-capping}
+### Custom action capping triggered {#alert-custom-action-capping}
 
 This alert warns you when capping has been triggered on a custom action. Capping is used to limit the number of calls sent to an external endpoint to prevent overwhelming the endpoint.
 
@@ -310,7 +310,7 @@ If the changes do not resolve the issue, the same alert will be triggered again 
 
 This alert is triggered in case the system audit detects email channel configuration issues. These issues may include misconfigured channel settings, invalid DNS configuration, suppression list issue, IP inconsistency, or any other errors that can impact email delivery.
 
-If you receive such an alert, the resolution steps are listed below:
+If you receive such an alert, the resolution steps are listed below.
 
 1. Click the alert to be directed to the impacted [email channel configuration](../email/get-started-email-config.md) in the [!DNL Journey Optimizer] interface.
 
@@ -343,9 +343,29 @@ When resolving email configuration issues, keep in mind the best practices liste
 * Act promptly - Address configuration failures as soon as they are detected to avoid disruptions in email delivery.
 * Check all configurations - If the alert indicates multiple impacted email configurations, review and fix each of them.
 
-<!--### AJO domain certificates renewal unsuccessful {#alert-certificates-renewal}
+### AJO domain certificates renewal unsuccessful {#alert-certificates-renewal-unsuccessful}
 
-This alert warns you if a domain certificate (CDN, tracking URL) renewal failed for a specific Journey Optimizer subdomain.-->
+>[!IMPORTANT]
+>
+>This alert applies only to channel configurations using the [custom subdomain](../configuration/delegate-custom-subdomain.md) delegation type. 
+
+This alert notifies you when a Resource or Tracking domain certificate on a custom delegation subdomain is expiring within 30 days or has already expired. Without valid certificates, email deliverability and link tracking may be disrupted.
+
+>[!NOTE]
+>
+>The check runs **weekly**.
+
+If this alert is triggered, follow the steps below to investigate and resolve the issue.
+
+1. Click the alert to open the impacted [subdomain](../configuration/delegate-subdomain.md) in [!DNL Journey Optimizer].
+
+1. Review the details to see whether certificate renewal is needed.
+
+   * If the expiry date is in the future, plan remediation—the alert can provide up to 30 days of warning.
+   * If the certificate has already expired, take immediate action.
+   * If the issue is not resolved, the same alert is triggered again the following week.
+
+1. In your DNS hosting solution, verify that all records required for the subdomain delegation still match the values shown in [!DNL Journey Optimizer], including records used for SSL validation.
 
 ## Manage alerts {#manage-alerts}
 

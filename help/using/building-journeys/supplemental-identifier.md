@@ -135,13 +135,15 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
     
         After applying the non-person identity namespace to a schema, you must create a new field group in order to use the supplemental identifier. Existing entities cannot be refreshed to recognize the new identifier.
 
-<!--1. **Add the supplemental ID field to the data source**
+<!--
+1. **Add the supplemental ID field to the data source**
 
     1. Navigate to the **[!UICONTROL Configuration]** / **[!UICONTROL Data Sources]** menu, then locate the "ExperiencePlatformDataSource" data source.
 
         ![Data source configuration with supplemental identifier mapping](assets/supplemental-ID-data-source.png)
 
-    1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).-->
+    1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).
+-->
 
 1. **Add and configure a Read audience activity in the journey**
 
@@ -214,7 +216,7 @@ In an object array with the supplemental ID as `bookingNum` and an attribute at 
 
 These examples show how supplemental identifiers support multiple related records.
 
-### **Policy Renewal Notifications**
+### **Policy renewal notifications**
 
 * **Scenario**: An insurance provider sends renewal reminders for each active policy held by a customer.
 * **Execution**:

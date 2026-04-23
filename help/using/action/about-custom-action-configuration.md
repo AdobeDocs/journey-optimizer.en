@@ -147,7 +147,7 @@ When configuring a custom action, you need to define the following **[!UICONTROL
     >
     >Headers are validated according to field parsing rules. Learn more in [this documentation](https://tools.ietf.org/html/rfc7230#section-3.2.4){_blank}.
 
-## Transport Security Layer {#tls} 
+## Transport security layer {#tls}
 
 ### TLS protocol support {#tls-protocol-support} 
 

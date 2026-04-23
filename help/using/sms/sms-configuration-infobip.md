@@ -42,7 +42,7 @@ To configure Infobip with Journey Optimizer, follow these steps:
     +++ List of SMS credentials for configuration
 
     |Configuration fields|Description|
-    |---|---|    
+    |---|---|
     |SMS vendor|Infobip|
     |Name|Choose a name for your API Credential.|
     |API base URL and API key| Access your web interface homepage or the API key management page to find your credentials. For regional or alternate domain endpoints, e.g. `api-ny2.infobip.com`, specify the complete base URL and verify your authorization token with Infobip support. </br>Learn more in [Infobip Documentation](https://www.infobip.com/docs/api){target="_blank"}|

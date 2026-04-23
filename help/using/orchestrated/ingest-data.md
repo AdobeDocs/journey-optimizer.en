@@ -19,7 +19,7 @@ Adobe Experience Platform allows data to be ingested from external sources while
 
 A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Data that is successfully ingested into Experience Platform is stored within the data lake as datasets. 
 
-## Supported Sources for Orchestrated campaigns {#supported}
+## Supported sources for orchestrated campaigns {#supported}
 
 The following Dources are supported for use with Orchestrated campaigns:
 
@@ -105,7 +105,7 @@ This example demonstrates how to configure a data flow that ingests structured d
 
     >[!IMPORTANT]
     >
-    > For **file-based sources only**, each row in the data file must include a `_change_request_type` column with values `U` (upsert) or `D` (delete). Without this column, the system will not recognize the data as supporting change tracking, and the Orchestrated Campaign toggle will not appear, preventing the dataset from being selected for targeting.
+    > For **file-based sources only**, each row in the data file must include a `_change_request_type` column with values `U` (upsert) or `D` (delete). Without this column, the system will not recognize the data as supporting change tracking, and the Orchestrated campaign toggle will not appear, preventing the dataset from being selected for targeting.
 
     ![](assets/S3_config_6.png)
 

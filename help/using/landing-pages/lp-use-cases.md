@@ -173,7 +173,6 @@ The opt-out information is stored in the **Consent Service Dataset**. [Learn mor
 * [Opt-out link in the email header](../email/email-opt-out.md#unsubscribe-header)
 
 <!--
-
 ### Other ways to opt out
 
 You can also enable your recipients to unsubscribe whithout using landing pages.
@@ -185,7 +184,6 @@ You can also enable your recipients to unsubscribe whithout using landing pages.
 * **Unsubscribe link in header**
 
     If the recipients' email client supports displaying an unsubscribe link in the email header, emails sent with [!DNL Journey Optimizer] automatically include this link. [Learn more](../email/email-opt-out.md#unsubscribe-header)
-
 -->
 
 ## Leverage landing page submission event {#leverage-lp-event}
@@ -198,7 +196,8 @@ To do this, you need to create a [rule-based unitary event](../event/about-creat
 >
 >When working with landing page submission events, be aware that the event `interactionType` field may not always precisely reflect the specific user action. To accurately determine whether a user has opted out, subscribed, or performed another action, always verify the actual profile attributes (such as consent preferences) or form field values rather than relying solely on the event `interactionType`.
 
-<!--DETAILED STEPS TBC:
+<!--
+DETAILED STEPS TBC:
 
 Follow the steps below.
 
@@ -248,4 +247,5 @@ Follow the steps below.
 
     ![](assets/lp_subscription-uc-journey-email.png)
 
-///How do you use the information from the event to send an email to the users? -->
+///How do you use the information from the event to send an email to the users? 
+-->

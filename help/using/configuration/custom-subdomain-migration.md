@@ -75,7 +75,7 @@ Follow the steps below to start migrating a given subdomain.
 
 1. Click **[!UICONTROL Yes]**. The subdomain moves to **[!UICONTROL Draft]** status and is unavailable until setup is complete.
 
-## Generate and send the CSR to the Certificate Authority {#send-csr-to-ca}
+## Generate and send the CSR to the certificate authority {#send-csr-to-ca}
 
 To complete the migration, you need a SSL certificate issued by a Certificate Authority (CA). To receive this SSL certificate, you must first generate a Certificate Signing Request (CSR) and send it to the CA.
 
@@ -135,7 +135,8 @@ Before that, verify the following:
 
     * Click **[!UICONTROL Download CSR]** to save the form to your local computer.
 
-    * Send the CSR to the Certificate Authority to get your SSL certificate.-->
+    * Send the CSR to the Certificate Authority to get your SSL certificate.
+-->
 
 1. Once you have retrieved your SSL certificate, click **[!UICONTROL Upload certificate]**.
 

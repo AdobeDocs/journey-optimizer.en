@@ -91,12 +91,12 @@ When creating a [rule that matches multiple pages](#web-page-matching-rule), you
 
 * **Domain**
 
-    | Operator  | Description  | Examples   | 
+    | Operator  | Description  | Examples   |
     |---|---|---|
     | Equals  | Exact match of the domain.  | |
-    | Starts with  | Matches all the domains (including sub-domains) which start with the string entered.  | Ex: "Starts with: dev" -> matches all the domains and subdomains that start with "dev", like: dev.example.com, dev.products.example.com, developer.example.com   | 
-    | Ends with  | Matches all the domains (including sub-domains) which end with the string entered.  | Ex: "Ends with: example.com" -> matches all the domains and subdomains that ends with "example.com", like: stage.example.com, prod.example.com, myexample.com   |  
-    | Wildcard matching  | "Wildcard matching" operator allows the user to define a wildcard match in the middle of the the string, like "dev.*.example.com". The validation rules are that the value must contain one and only one wildcard (asterisk) when the operator is "wildcard matching".  | Ex: "Wildcard matching: dev.*.example.com" -> matches domains like: dev.products.example.com, dev.mytest.products.example.com, dev.blog.example.com   | 
+    | Starts with  | Matches all the domains (including sub-domains) which start with the string entered.  | Ex: "Starts with: dev" -> matches all the domains and subdomains that start with "dev", like: dev.example.com, dev.products.example.com, developer.example.com   |
+    | Ends with  | Matches all the domains (including sub-domains) which end with the string entered.  | Ex: "Ends with: example.com" -> matches all the domains and subdomains that ends with "example.com", like: stage.example.com, prod.example.com, myexample.com   |
+    | Wildcard matching  | "Wildcard matching" operator allows the user to define a wildcard match in the middle of the the string, like "dev.*.example.com". The validation rules are that the value must contain one and only one wildcard (asterisk) when the operator is "wildcard matching".  | Ex: "Wildcard matching: dev.*.example.com" -> matches domains like: dev.products.example.com, dev.mytest.products.example.com, dev.blog.example.com   |
     | Any  | Matches all the domains – useful when testing a particular path across domains  ||
 
 

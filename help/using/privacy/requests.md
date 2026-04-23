@@ -18,8 +18,10 @@ Privacy requests can be created and managed from the **[!UICONTROL Requests]** m
 
 For more information on Privacy Service and how to create and manage privacy requests, refer to the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}.
 
-<!--* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
-* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)-->
+<!--
+* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)
+-->
 
 ## Manage individual data privacy requests that you can send to Adobe Journey Optimizer {#data-privacy-requests}
 
@@ -52,7 +54,7 @@ The three upstream services are:
 >
 >For delete and access requests, you need to call these individual systems to make sure the requests are handled by each of them. Making a privacy request to [!DNL Adobe Journey Optimizer] will not remove data from all these systems.
 
-## Create Access and Delete requests
+## Create access and delete requests
 
 ### Prerequisites
 

@@ -6,12 +6,11 @@ description: Comprehensive guide to get started with journey orchestration in [!
 feature: Journeys, Get Started, Overview
 role: User
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
+hide: true
 keywords: journey, orchestration, getting started, onboarding, capabilities
 exl-id: 96b1d619-986d-493d-a73b-d7c63b92cca8
 ---
-# Journey Orchestration - Complete guide{#journey-orchestration-guide}
+# Journey orchestration - complete guide{#journey-orchestration-guide}
 
 Journeys in [!DNL Adobe Journey Optimizer] empower you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
 

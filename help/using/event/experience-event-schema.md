@@ -10,7 +10,7 @@ level: Intermediate, Experienced
 keywords: schemas, XDM, platform, streaming, ingestion, journey
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
 ---
-# About ExperienceEvent Schemas for [!DNL Journey Optimizer] Events {#about-experienceevent-schemas}
+# About experienceevent schemas for [!DNL Journey Optimizer] events {#about-experienceevent-schemas}
 
 [!DNL Journey Optimizer] events are XDM Experience Events that are sent to Adobe Experience Platform via Streaming Ingestion.
 
@@ -117,7 +117,7 @@ Add a condition in a journey, edit the expression and unfold the event node in t
 
 ![](assets/schema12.png)
 
-To learn how to define journey conditions, refer to this [page](../building-journeys/condition-activity.md).
+To learn how to define journey conditions, refer to this [page](../building-journeys/conditions.md).
 
 ### Message personalization{#message_personalization}
 

@@ -82,7 +82,8 @@ You are now ready to [create landing pages](../landing-pages/create-lp.md) in [!
 <!--
 >[!NOTE]
 >
->Learn how to create channel configurations for push notifications and emails in [this section](channel-surfaces.md).-->
+>Learn how to create channel configurations for push notifications and emails in [this section](channel-surfaces.md).
+-->
 
 **Related topics**:
 

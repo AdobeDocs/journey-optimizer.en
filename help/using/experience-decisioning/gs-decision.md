@@ -31,7 +31,7 @@ Our next-generation decision framework, designed to unify existing Journey Optim
 * Updated decision policy and selection strategy configuration: Allow reusability of decision components
 * Experimentation capabilities: Test decision logic against other content components to measure performance
 
-Decisioning is available to all customers for the **Code-based Experience**, **Push notification**, and **SMS** channels. Decisioning for the **Email** channel is available in Limited Availability. To request access to Email decisioning, contact your Adobe representative. Learn more about [availability labels](../rn/releases.md#availability-labels).
+Decisioning is available to all customers for the **Code-based Experience**, **Push notification**, and **SMS** channels. Decisioning for the **Email** channel is available in Limited Availability. To request access to Email decisioning, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ➡️ [Get started with Decisioning](../experience-decisioning/gs-experience-decisioning.md)
 

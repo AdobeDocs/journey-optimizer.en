@@ -10,13 +10,13 @@ exl-id: 31f3668f-99fb-4388-a379-4979c63b7b3a
 
 Orchestrated campaigns in Adobe Journey Optimizer empower you to design and execute sophisticated, multi-step marketing campaigns that deliver the right message to the right audience at scale. Unlike real-time journeys, these batch campaigns process audience segments and profiles together, making them ideal for scheduled, data-driven marketing initiatives. You'll explore how activities like audience segmentation, transitions, and worktables work together to create seamless workflows. Along the way, you'll learn how Orchestrated campaigns differ from journeys, configure data for personalization, build and launch campaigns, and optimize performance, all with an intuitive visual canvas. Get ready to take your marketing automation to the next level!
 
-## Orchestrated Campaigns Overview
+## Orchestrated campaigns Overview
 
 :::: landing-cards-container
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/book.svg)
 
-Introduction to Orchestrated Campaigns
+Introduction to Orchestrated campaigns
 
 Learn about the core capabilities, components, and distinctions of Orchestrated campaigns in Adobe Journey Optimizer.
 
@@ -36,7 +36,7 @@ Understand the constraints and limitations to consider when using Orchestrated c
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Data Configuration for Orchestrated Campaigns
+Data Configuration for Orchestrated campaigns
 
 Configure relational schemas, datasets, and channels to ensure data readiness for Orchestrated campaigns.
 
@@ -46,7 +46,7 @@ Configure relational schemas, datasets, and channels to ensure data readiness fo
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
 
-Launch and Manage Orchestrated Campaigns
+Launch and Manage Orchestrated campaigns
 
 A step-by-step guide to creating, orchestrating, monitoring, and analyzing your first Orchestrated campaign.
 
@@ -56,7 +56,7 @@ A step-by-step guide to creating, orchestrating, monitoring, and analyzing your 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Query the Database for Orchestrated Campaigns
+Query the Database for Orchestrated campaigns
 
 Master database querying to effectively target, segment, and retarget audiences in Orchestrated campaigns.
 

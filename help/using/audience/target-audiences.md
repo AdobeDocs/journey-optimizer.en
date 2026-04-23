@@ -47,7 +47,7 @@ You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
     For journeys using audiences from audience composition or custom upload, profile attributes are as fresh as the last batch evaluation at journey entry. However, after a **Wait** activity, the journey refreshes profile attributes from the Unified Profile Service (UPS), fetching the latest available data, which means profile attributes may change during journey execution. [Learn more about profile refresh after a Wait activity](../building-journeys/wait-activity.md#profile-refresh)
 
-* Use the **Condition** activity in a journey to build conditions based on audience membership. [Learn how to use audiences in conditions](../building-journeys/condition-activity.md#using-a-segment).
+* Use the **Optimize** activity in a journey to build conditions based on audience membership. [Learn how to use audiences in conditions](../building-journeys/conditions.md#using-a-segment).
 
 * Use the **Audience Qualification** event activity in a journey to make individuals enter or move forward in the journey based on Adobe Experience Platform audience entrances and exits. For example, you can make all new silver customers enter a journey and send them messages. [Learn how to configure an Audience qualification activity](../building-journeys/audience-qualification-events.md).
 

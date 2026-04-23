@@ -60,7 +60,7 @@ To configure you channel configuration:
 
 1. Once configured, click **[!UICONTROL Submit]**.
 
-Your channel is now ready to use with **Orchestrated Campaigns**, and messages will be delivered according to the selected target dimension.
+Your channel is now ready to use with **Orchestrated campaigns**, and messages will be delivered according to the selected target dimension.
 
 ## URL tracking parameters {#url-tracking}
 

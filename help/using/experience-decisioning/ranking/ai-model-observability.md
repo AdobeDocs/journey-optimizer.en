@@ -98,7 +98,7 @@ To view error details for a personalized optimization AI model whose last traini
 
 1. You can check which dataset is selected in the model's **[!UICONTROL Properties]**. Click **[!UICONTROL Edit properties]** to select another dataset. [Learn more](create-ai-models.md)
 
-    ![](../assets/ai-model-properties-edit-dataset.png){align="left" width="45%"}
+    ![](../assets/ai-model-properties-edit-dataset.png){align="center" width="45%"}
 
 ## Frequently asked questions {#faq}
 
@@ -154,7 +154,8 @@ Typically, online measures of model quality, such as lift and lift significance,
 * **In progress** – A training job is running. Some metrics may be temporarily unavailable until it finishes.
 * **Pending** – No result yet (for example, model recently activated or settings recently changed).
 
-If no model has been successfully deployed yet, the "currently deployed model" section and some performance fields will be empty or show the initial-state messaging.-->
+If no model has been successfully deployed yet, the "currently deployed model" section and some performance fields will be empty or show the initial-state messaging.
+-->
 
 ## How-to video {#video}
 

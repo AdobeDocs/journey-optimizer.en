@@ -7,8 +7,7 @@ feature: IP Warmup Plans
 topic: Administration
 role: Admin
 level: Experienced
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 27c94bb6-bae0-4b0e-ba8f-a92b9ed2e4d5
 ---
 # Download IP warmup plan template and sample {#ip-warmup-plan-files}
