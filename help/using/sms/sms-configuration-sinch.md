@@ -27,18 +27,6 @@ To configure your Sinch provider, follow the steps below:
 
 ## Configure API credentials for SMS{#create-api}
 
->[!BEGINSHADEBOX]
-
-If opt-in or opt-out keywords are not provided, standard consent messages are used to honor user privacy. Adding custom keywords automatically overrides the defaults.
-
-**Default keywords:**
-
-* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, CONTINUE, RESUME, BEGIN
-* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO
-* **Help**: HELP
-
->[!ENDSHADEBOX]
-
 To configure your Sinch provider to send SMS messages and MMS with Journey Optimizer, follow these steps:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
@@ -52,17 +40,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
     |SMS vendor|Sinch|
     |Name|Choose a name for your API Credential.|
     |Service ID and API Token|Access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.|
-    |Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
-    |Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the custom response that is automatically sent as your Opt-In Message.|
-    |Opt-Out Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
-    |Opt-Out Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your Opt-Out Message.|
-    |Help Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
-    |Help Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your **Help Message**.|
-    |Double Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more about the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
-    |Double Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
     |Inbound Number|Add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.|
-    |Custom Inbound Keywords|Define unique, non consent related keywords for batch-based actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a batched segment qualification within the journey and deliver a customized response or action.|
-    |Default Inbound Reply Message|Enter the default reply that is sent when an end user sends an inbound SMS that does not match any of the defined keywords.|
     |Override URL| Enter your custom URL to replace the default endpoints for SMS delivery reports, feedback data, inbound messages or event notifications. Sinch will send all relevant updates to this URL instead of the predefined ones.|
 
     +++

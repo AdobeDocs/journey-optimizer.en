@@ -10,18 +10,6 @@ exl-id: 7b6dc89a-1a81-49c2-b2a7-bf24b9d215e3
 ---
 # Configure Infobip provider {#sms-configuration-infobip}
 
->[!BEGINSHADEBOX]
-
-If opt-in or opt-out keywords are not provided, standard consent messages are used to honor user privacy. Adding custom keywords automatically overrides the defaults.
-
-**Default keywords:**
-
-* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, CONTINUE, RESUME, BEGIN
-* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO
-* **Help**: HELP
-
->[!ENDSHADEBOX]
-
 By integrating Infobip with Adobe Journey Optimizer, you can deliver text messages to your profiles as part of your journeys and campaigns.
 
 To configure Infobip as your SMS provider, follow the steps below:
@@ -46,21 +34,11 @@ To configure Infobip with Journey Optimizer, follow these steps:
     |SMS vendor|Infobip|
     |Name|Choose a name for your API Credential.|
     |API base URL and API key| Access your web interface homepage or the API key management page to find your credentials. For regional or alternate domain endpoints, e.g. `api-ny2.infobip.com`, specify the complete base URL and verify your authorization token with Infobip support. </br>Learn more in [Infobip Documentation](https://www.infobip.com/docs/api){target="_blank"}|
-    |Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
-    |Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the custom response that is automatically sent as your Opt-In Message.|
-    |Opt-Out Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
-    |Opt-Out Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your Opt-Out Message.|
-    |Help Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
-    |Help Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your **Help Message**.|
-    |Double Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more about the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
-    |Double Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
     |Principal Entity ID|Enter your assigned DLT principal entity ID.|
     |Content Template ID|Enter your registered DLT content template ID.|
     |Validity Period| Enter the message validity period in hours. In the event that messages cannot be delivered within this timeframe, the system will make additional attempts to resend them. The default validity period is set to 48 hours.|
     |Callback Data| Enter the additional client data that will be sent on the Notify URL.|
     |Inbound Number|Add your unique inbound number. This allows you to use the same API credentials across different sandboxes, each with its own inbound number.|
-    |Custom Inbound Keywords|Define unique, non consent related keywords for batch-based actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a batched segment qualification within the journey and deliver a customized response or action.|
-    |Default Inbound Reply Message|Enter the default reply that is sent when a end user sends an inbound SMS that does not match any of the defined keywords.|
 
     +++
 
