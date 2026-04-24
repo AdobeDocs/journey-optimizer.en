@@ -100,6 +100,22 @@ New capabilities and improvements released earlier in April are announced with t
 <table>
 <thead>
 <tr>
+<th><strong>Folders for journeys and campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now organize your journeys and campaigns into <strong>folders</strong> to improve navigation and management in the interface.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey Optimizer AI Agent Integration via MCP</strong><br/></th>
 </tr>
 </thead>
