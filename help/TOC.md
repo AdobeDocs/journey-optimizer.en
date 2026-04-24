@@ -306,7 +306,7 @@ solution: Journey Optimizer
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
-      + [Configure deeplinks in emails](using/email/deeplinks-email.md)
+      + [Configure deeplinks in emails](using/email/deeplinks.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
