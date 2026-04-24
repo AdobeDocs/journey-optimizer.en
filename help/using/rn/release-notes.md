@@ -336,10 +336,6 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 #### Adobe Experience Manager Integrations
 
-* **Content Advisor Selector** - The Adobe Experience Manager Assets and Content Fragment selectors are now replaced by the **Content Advisor selector**, a unified modal that allows you to browse, search, filter, and access all AEM Assets and AEM Content Fragments. Dynamic Media rendition support is also included, allowing you to add image renditions from the UI when Dynamic Media assets are selected. Previously released in Limited Availability, this capability is now available to all environments (General Availability).
-
-* **Open-time personalization with countdown timer using Dynamic Media** - Journey Optimizer and Adobe Experience Manager Dynamic Media integration enables open-time personalization for Dynamic Media templates, unlocking hyper-personalized use cases. Customers can create and publish personalized templates in Adobe Experience Manager and use them in Journey Optimizer, with data rendered at open time.
-
 * **Adobe Experience Manager Content fragment Varition Support** - You can select **Content Fragment variations** (for example language or channel variants) when inserting Adobe Experience Manager Content Fragments, with improved handling for locale and multilingual scenarios. [Read more](../integrations/aem-fragments.md#aem-variations)
 
   This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
