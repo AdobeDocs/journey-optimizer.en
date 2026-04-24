@@ -207,7 +207,7 @@ New capabilities and improvements released earlier in April are announced with t
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now includes AI Assistant directly in the personalization editor that converts natural-language prompts into valid personalization expressions and conditional logic, no syntax expertise required. Describe the personalization you want to achieve, and AI generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>[!DNL Adobe Journey Optimizer] now includes <strong>AI Assistant</strong> directly in the personalization editor that converts natural-language prompts into valid personalization expressions and conditional logic, no syntax expertise required. Describe the personalization you want to achieve, and AI generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
 <p>The assistant also works in reverse. Select any existing expression and ask it to explain the logic, identify issues, or suggest improvements. This makes it useful not just for authoring new expressions, but for reviewing and debugging existing ones across your team.</p>
 <p><img src="assets/do-not-localize/assistant-perso.gif"></p>
 <p>For more information, refer to <a href="../content-management/generative-personalization-expressions.md">AI Assistant for Personalization Expressions</a>.</p>
