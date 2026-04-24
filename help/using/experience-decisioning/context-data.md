@@ -7,6 +7,19 @@ role: User
 level: Intermediate
 exl-id: ddc4b681-020b-4433-b4b3-3791c41907c9
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/tL3mwS9sDtSkSVljry1EeqPnYn4U34TvXCg5jX2ej3M
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Leverage context data in Decisioning {#context}
 

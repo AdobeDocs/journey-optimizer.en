@@ -5,8 +5,17 @@ title: Edit expressions
 description: Learn how to edit expressions.
 exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/LELPFd6kbbQdGOEFmWKqXcCEL2CFdPWMuonlDVotYRg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-
 # Edit expressions {#edit-expressions}
 
 >[!NOTE]
