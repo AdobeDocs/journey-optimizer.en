@@ -116,13 +116,13 @@ New capabilities and improvements released earlier in April are announced with t
 <table>
 <thead>
 <tr>
-<th><strong>Sandbox copy for Orchestrated campaigns</strong><br/></th>
+<th><strong>Copy orchestrated campaigns across sandboxes</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>Sandbox tooling</strong> now supports exporting and importing <strong>Orchestrated campaigns</strong> between sandboxes via packages.</p>
+<p><strong>Sandbox Tooling now supports packaging and copying orchestrated campaigns from one sandbox to another. This eliminates the need to manually rebuild campaigns in each environment. To protect production environments, all imported campaigns land in draft status in the target sandbox, giving teams a review and approval step before any campaign goes live.</p>
 </td>
 </tr>
 </tbody>
