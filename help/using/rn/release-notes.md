@@ -137,7 +137,9 @@ New capabilities and improvements released earlier in April are announced with t
 <tbody>
 <tr>
 <td>
-<p>The <strong>Incremental query</strong> activity is now available in <strong>Orchestrated campaigns</strong>. This targeting activity runs your query each time the campaign runs and returns only records that were not returned in a previous run. You can message or export only new sign-ups, new gold members, or other "new since last run" segments without re-targeting the same profiles.</p>
+<p><strong>Orchestrated campaigns</strong> now support an <strong>Incremental query</strong> activity that targets only profiles or events that are newly eligible since the last execution.
+
+This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly qualified loyalty members, and similar segments) while reducing query workloads and avoiding redundant sends over time.</p>
 </td>
 </tr>
 </tbody>
