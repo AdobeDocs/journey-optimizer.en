@@ -283,6 +283,7 @@ solution: Journey Optimizer
         + [Use content components](using/email/content-components.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
+        + [Use deeplinks in email messages](using/email/deeplinks-email.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Optimize email for AI inboxes](using/email/llm-email-optimizer.md)
         + [Manage the text version](using/email/text-version-email.md)
