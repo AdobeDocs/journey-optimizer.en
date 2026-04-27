@@ -17,7 +17,7 @@ keywords: integration, vendor, third-party
 
 Table of content:
 
-* [Work with Integrations](external-sources.md)
+* [Work with Integrations](integrations.md)
 * **[Get started with Vendors integration](vendor-integration-gs.md)**
 * [Available vendors](vendor-integration.md)
 * [FAQ](vendor-integration-faq.md) 
@@ -25,7 +25,7 @@ Table of content:
 >[!ENDSHADEBOX]
 
 
-You can use **Integrations** in Adobe Journey Optimizer to call **external systems over HTTP** when each system exposes an **API endpoint** that suits your use case and is compatible with how Integrations issues requests and consumes responses. For complete workflow, see [Work with Integrations](external-sources.md).
+You can use **Integrations** in Adobe Journey Optimizer to call **external systems over HTTP** when each system exposes an **API endpoint** that suits your use case and is compatible with how Integrations issues requests and consumes responses. For complete workflow, see [Work with Integrations](integrations.md).
 
 The list of third-party solutions described is illustrative, not exhaustive. Other platforms may be used where they satisfy product requirements.
 
@@ -35,7 +35,7 @@ Apply the following when you configure any integration in this guide or a simila
 
 * **Response format:** Integrations map fields from **JSON** responses. Design calls so the API returns JSON suitable for mapping at authoring time.
 * **Payload and fields:** Request and map only the attributes you need. Smaller responses reduce latency and limit exposure of sensitive data.
-* **Endpoint shape:** Prefer stable, **single-resource** retrieval (for example one entry, product, or member) over broad list or pagination endpoints when the product expects targeted lookups. See [Limitations & exclusions](#limitations-exclusions) and [Work with Integrations](external-sources.md).
+* **Endpoint shape:** Prefer stable, **single-resource** retrieval (for example one entry, product, or member) over broad list or pagination endpoints when the product expects targeted lookups. See [Limitations & exclusions](#limitations-exclusions) and [Work with Integrations](integrations.md).
 * **Volume and reliability:** Respect the vendor's **rate limits**. Configure **timeout**, **retry**, and **cache** policy for your channel (for example batch email vs transactional sends) and validate under load.
 * **Security:** Store and rotate tokens, API keys, and OAuth credentials according to your organization's policies. Do not embed secrets in message content.
 
