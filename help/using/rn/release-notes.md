@@ -43,7 +43,7 @@ New capabilities and improvements released earlier in April are announced with t
 <tr>
 <td>
 <p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>This integration is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.</p>
 </td>
 </tr>
 </tbody>
