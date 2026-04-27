@@ -36,6 +36,22 @@ New capabilities and improvements released earlier in April are announced with t
 <table>
 <thead>
 <tr>
+<th><strong>Integrations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
+<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey simulation</strong><br/></th>
 </tr>
 </thead>

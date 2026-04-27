@@ -16,7 +16,7 @@ keywords: integration, vendor, third-party
 
 Table of content: 
 
-* [Work with Integrations](external-sources.md)
+* [Work with Integrations](integrations.md)
 * [Get started with Vendors integration](vendor-integration-gs.md)
 * **[Available vendors](vendor-integration.md)**
 * [FAQ](vendor-integration-faq.md) 
@@ -62,7 +62,7 @@ Use the procedure below to configure this integration in Journey Optimizer. See 
 
 1. Add authentication header: 
 
-  Authorization: Bearer <CONTENTFUL_DELIVERY_TOKEN>
+    Authorization: Bearer <CONTENTFUL_DELIVERY_TOKEN>
 
 1. Add path variables if required (e.g., entry ID, locale).
 
@@ -134,7 +134,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure **GET** on your download-order path, set authorization headers per Sitecore, map `id` from context, paste sample JSON, map fields, and tune timeouts for asset latency.
+1. Follow [Work with Integrations](integrations.md). Configure **GET** on your download-order path, set authorization headers per Sitecore, map `id` from context, paste sample JSON, map fields, and tune timeouts for asset latency.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -218,7 +218,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Prefer single-product retrieval over bulk catalog calls, set bearer auth, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Prefer single-product retrieval over bulk catalog calls, set bearer auth, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -303,7 +303,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Add both `api_key` and `access_token` headers as Contentstack requires, include the `environment` query parameter, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Add both `api_key` and `access_token` headers as Contentstack requires, include the `environment` query parameter, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -390,7 +390,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** with bearer token, request only needed attribute options in query flags, paste sample JSON, map a minimal attribute set, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use **GET** with bearer token, request only needed attribute options in query flags, paste sample JSON, map a minimal attribute set, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -480,7 +480,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use the public delivery URL pattern your modules expose, authenticate per Magnolia guidance (anonymous delivery vs token for protected content), paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use the public delivery URL pattern your modules expose, authenticate per Magnolia guidance (anonymous delivery vs token for protected content), paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -562,7 +562,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Set base URL for your cluster, add required headers (`X-APP-ID`, `X-APP-TOKEN`), constrain list endpoints with filters or IDs, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Set base URL for your cluster, add required headers (`X-APP-ID`, `X-APP-TOKEN`), constrain list endpoints with filters or IDs, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -661,7 +661,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** on the profile or achievement path you need, set `Authorization: ApiKey-v1 <key>` as documented, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use **GET** on the profile or achievement path you need, set `Authorization: ApiKey-v1 <key>` as documented, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -751,7 +751,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure **GET** with the vendor's authentication (for example API key in query), avoid exposing PII against policy, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Configure **GET** with the vendor's authentication (for example API key in query), avoid exposing PII against policy, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -835,7 +835,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use the loyalty integration endpoint your team approves, complete Salesforce OAuth, paste sample JSON, map fields, respect composite API limits, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use the loyalty integration endpoint your team approves, complete Salesforce OAuth, paste sample JSON, map fields, respect composite API limits, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -928,7 +928,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure headers such as `CAP-API-ACCESS-TOKEN` as required, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Configure headers such as `CAP-API-ACCESS-TOKEN` as required, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1058,7 +1058,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Point to the Marigold host for your region, set authentication (the sample below uses `X-Api-Key` with key and secret), paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Point to the Marigold host for your region, set authentication (the sample below uses `X-Api-Key` with key and secret), paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1149,7 +1149,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Delivery calls are often **POST** with a JSON body. Configure OAuth per [Target authentication](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/configure-authentication){target="_blank"}, paste a sample response, map fields, test under expected volume.
+1. Follow [Work with Integrations](integrations.md). Delivery calls are often **POST** with a JSON body. Configure OAuth per [Target authentication](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/configure-authentication){target="_blank"}, paste a sample response, map fields, test under expected volume.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1293,7 +1293,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** unless your subscription requires otherwise, attach the `apiKey` query parameter (or as documented), map `locationKey` and other variables from profile/context, paste sample JSON, map fields, then test.
+1. Follow [Work with Integrations](integrations.md). Use **GET** unless your subscription requires otherwise, attach the `apiKey` query parameter (or as documented), map `locationKey` and other variables from profile/context, paste sample JSON, map fields, then test.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1385,7 +1385,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Target the resource you need (orders vs shipments), authenticate per [ShipStation API](https://www.shipstation.com/docs/api/){target="_blank"}, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Target the resource you need (orders vs shipments), authenticate per [ShipStation API](https://www.shipstation.com/docs/api/){target="_blank"}, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1476,7 +1476,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Call the REST **GET** modeled below, authenticate with the secret key header, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Call the REST **GET** modeled below, authenticate with the secret key header, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1562,7 +1562,7 @@ The following prerequisites apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Prefer narrow read paths; if you use **POST** statement execution, include the JSON body the API requires, paste a sample success response for mapping, test latency carefully, activate.
+1. Follow [Work with Integrations](integrations.md). Prefer narrow read paths; if you use **POST** statement execution, include the JSON body the API requires, paste a sample success response for mapping, test latency carefully, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1641,7 +1641,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure **GET** on the chosen endpoint (one common pattern is a users listing), complete OAuth per [Bynder](https://developer.bynder.com/){target="_blank"}, avoid pulling unnecessary pages of data, map fields, test, then activate.
+1. Follow [Work with Integrations](integrations.md). Configure **GET** on the chosen endpoint (one common pattern is a users listing), complete OAuth per [Bynder](https://developer.bynder.com/){target="_blank"}, avoid pulling unnecessary pages of data, map fields, test, then activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1791,7 +1791,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure **GET** with required query authentication, map identifiers from profile or context, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Configure **GET** with required query authentication, map identifiers from profile or context, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1875,7 +1875,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** with `passkey` as a query parameter on the Conversations API, set `Accept: application/json`, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use **GET** with `passkey` as a query parameter on the Conversations API, set `Accept: application/json`, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -1959,7 +1959,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use the published schema or preference-center path your subscription documents, complete OAuth if required, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use the published schema or preference-center path your subscription documents, complete OAuth if required, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -2045,7 +2045,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Graph calls are often **GET** with a versioned path; handle token expiry, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Graph calls are often **GET** with a versioned path; handle token expiry, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -2130,7 +2130,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** on the record path you need, send required headers such as `API-VERSION`, paste sample JSON (HAL or JSON as returned), map a minimal field set, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use **GET** on the record path you need, send required headers such as `API-VERSION`, paste sample JSON (HAL or JSON as returned), map a minimal field set, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
@@ -2212,7 +2212,7 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Do not guess public URLs. Use the specification from Epsilon, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Do not guess public URLs. Use the specification from Epsilon, paste sample JSON, map fields, test, activate.
 
 1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
 
