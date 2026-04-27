@@ -51,9 +51,17 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
     * **[!UICONTROL Sender short code + profile number]**: Consent is keyed to the **sender short code** and the profile **mobile number**. Use when profiles can have several numbers, or when opt-in/out must apply per sender and recipient pair.
 
-1. Enable **[!UICONTROL Use custom dataset for inbound]** to write inbound SMS reporting to a dataset you select. Before you save, verify the dataset schema includes the inbound reporting fields required for SMS.
+1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about creating datasets](../experience-decisioning/data-collection/create-dataset.md)
 
-    [Learn more about creating datasets](../experience-decisioning/data-collection/create-dataset.md)
+    >[!NOTE]
+    >
+    >The dataset schema must be **[!UICONTROL XDM ExperienceEvent]** and include at least these field groups:
+    >* Adobe CJM ExperienceEvent - Message interaction details
+    >* Adobe CJM ExperienceEvent - Message Execution Details
+    >* Adobe CJM ExperienceEvent - Message Profile Details
+    >
+    >The schema and dataset must be enabled for Profile.
+
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
