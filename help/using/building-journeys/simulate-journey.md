@@ -15,7 +15,7 @@ badge: label="Limited Availability" type="Informative"
 
 >[!IMPORTANT]
 >
-> The use of Journey Simulation is currently unavailable for use with Healthcare Shield or Privacy and Security Shield.
+> This capability is available to all customers as a Limited Availability with essential capabilities.
 
 You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profiles you add, without using persistent test profiles in Adobe Experience Platform.
 
