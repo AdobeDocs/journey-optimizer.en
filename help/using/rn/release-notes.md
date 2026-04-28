@@ -144,7 +144,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 <td>
 <p>You can now use <strong>AI models</strong> in your ranking formulas to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p><img src="assets/do-not-localize/journey-arbitration-formulas.gif"></p>
+<p><img src="assets/do-not-localize/journey-arbitration-ai-models.gif"></p>
 <p>For more information, refer to the <a href="../conflict-prioritization/journey-ai-models.md">detailed documentation</a>.</p>
 </td>
 </tr>
