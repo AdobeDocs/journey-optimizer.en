@@ -410,7 +410,7 @@ A new option is available in the email surface settings to include email address
 <tr>
 <td>
 <p>You can now create and manage Adobe Journey Optimizer content templates using dedicated APIs, providing a seamless integration with your existing content system.</p>
-<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/content/">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/content">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -437,7 +437,7 @@ As a result, within Adobe Journey Optimizer and the Adobe Experience Platform UI
 
 **APIs**
 
-The JWT method to generate access tokens for Adobe Journey Optimizer APIsauthentication has been deprecated. All new integrations must be created using the OAuth Server-to-Server authentication method. Adobe also recommends that you migrate your existing integrations to the OAuth method. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}.
+The JWT method to generate access tokens for Adobe Journey Optimizer APIsauthentication has been deprecated. All new integrations must be created using the OAuth Server-to-Server authentication method. Adobe also recommends that you migrate your existing integrations to the OAuth method. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}.
 
 
 **Other changes**
