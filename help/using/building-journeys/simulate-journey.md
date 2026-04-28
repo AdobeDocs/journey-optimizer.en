@@ -48,6 +48,8 @@ The following steps show you how to create simulated users from the UI or by imp
     
 1. Click **[!UICONTROL Create Simulated Users]** to create new users and select whether to create users from the UI or import them from JSON.
 
+    To reuse simulated users instead, click **[!UICONTROL Select simulated users]** and choose entries you saved earlier.
+
     ![Simulated user selection panel](assets/simulate-2.png)
 
 1. If you create simulated users from JSON, update the corresponding fields with your simulated user data.
@@ -74,15 +76,17 @@ The following steps show you how to create simulated users from the UI or by imp
     * ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg): Run the simulation for this simulated user only.
     * ![Clear icon](assets/do-not-localize/Smock_Close_18_N.svg): Remove the user from this list. The simulated user is not deleted and remains available in the Simulated Users selection.
 
-    ![Simulated user selection panel](assets/simulate-3.png)
+    ![Simulated user selection panel](assets/simulate-4.png)
+    
+1. If your journey includes a **[!UICONTROL Wait]** activity, open the **[!UICONTROL Test settings]** tab to fine-tune how long that wait lasts during the simulation.
 
-1. Click **[!UICONTROL Send all]** to send every simulated users in the list into the journey. A `Simulated users entered the journey successfully.` confirmation message appears when the profiles successfully enter the journey.
+1. Click **[!UICONTROL Send all]** to send every simulated users in the list into the journey. A `Simulated users have been sent successfully.` confirmation message appears when the profiles successfully enter the journey.
 
     ![Simulated user selection panel](assets/simulate-5.png)
 
-1. Click **[!UICONTROL Show log]** to open the execution log and review how each step ran. For more information, see [View logs](#viewing_logs).
+1. Access **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View results](#viewing_logs).
 
-1. When errors appear in the log, leave **Simulation**, apply the required changes to the journey, and run **Simulation** again. After validation succeeds, publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
+After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
 ### Select simulated users
 
@@ -92,7 +96,7 @@ Simulated users that you create manually are stored and can be selected from thi
 
     ![Test mode button in journey interface](assets/test-mode-simulated.png)
 
-1. In the **[!UICONTROL Simulation settings]** panel, you can either select previously created simulated users clicking Select simulated users.
+1. In the **[!UICONTROL Simulation settings]** panel, you can either select previously created simulated users clicking **[!UICONTROL Select simulated users]**.
 
 1. Select from the list of simulated users that were previously created and saved.
 
@@ -110,7 +114,7 @@ Simulated users that you create manually are stored and can be selected from thi
 
 1. Click **[!UICONTROL Show log]** to open the execution log and review how each step ran. For more information, see [View logs](#viewing_logs).
 
-1. When errors appear in the log, leave **Simulation**, apply the required changes to the journey, and run **Simulation** again. After validation succeeds, publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
+After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
 ## Trigger your events {#firing_events}
 
@@ -134,9 +138,9 @@ If your journey includes one or more events, you can trigger them while Simulati
 
 1. Click **[!UICONTROL Show log]** to open the execution log and review how each step ran. For more information, see [View logs](#viewing_logs).
 
-## View logs {#viewing-logs}
+## View results {#viewing-logs}
 
-The **[!UICONTROL Show log]** button allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the profile whose execution you want to inspect.
+The **[!UICONTROL Results]** tab allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the profile whose execution you want to inspect.
 
 For each activity, the log can show whether the profile entered or exited the step, and errors that occurred during the simulation.
 
@@ -145,6 +149,6 @@ For each activity, the log can show whether the profile entered or exited the st
 For **Wait** activities, the log includes two duration-related values:
 
 * **Defined duration**: The duration specified on the **Wait** activity for the published journey and applied once the journey is live. The log records whether Simulation applies an override from the test settings, for example 10 seconds, rather than relying solely on the value defined on the journey.
-* **Actual duration**: The elapsed time the simulated user remained on the **Wait** activity. This value typically approximates the override duration but may vary, as it represents end-to-end processing time for the step, including service latency.
+* **Actual duration**: The elapsed time the simulated user remained on the **Wait** activity. This value is set from the **[!UICONTROL Test settings]** tab.
 
 When errors appear in the log, leave **Simulation**, apply the required changes to the journey, and run **Simulation** again. After validation succeeds, publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
