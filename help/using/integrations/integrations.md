@@ -128,6 +128,10 @@ As an administrator, you can set up external integrations by following these ste
 
     ![](assets/external-integration-config-5.png)
 
+    >[!NOTE]
+    >
+    >The **[!UICONTROL Response payload]** configuration defines the expected response for authoring including any schema applied in that step. Marketers may reference only exposed fields, tokens for other paths fail validation in the editor.
+
 1. Use **[!UICONTROL Send test connection]** to validate the integration.
     
     Once validated, click **[!UICONTROL Activate]**.
@@ -140,7 +144,14 @@ Calls honor the **throttling** rate you configured: Journey Optimizer schedules 
 
 Each queued message also carries a validity window (TTL). If processing falls behind and a message sits past that window, the system **discards** it and emits a **`MessageValidityExclusion`** event so stale work clears from the queue and resources stay available.
 
+
 ## Using External integrations for personalization {#personalization}
+
+Before you use external integrations for personalization, note that the scheduling and isolation of integration calls depend on execution context:
+
+* **Batch execution** (batch campaigns, orchestrated campaigns, and API-triggered marketing campaigns): each batch run operates in a dedicated, isolated environment. Concurrent batch executions that call external systems therefore do not contend with or obstruct one another.
+
+* **Unitary execution** (unitary journeys, batch journeys, and API-triggered transactional campaigns): integration traffic is isolated per brand sandbox, so a slow external API for one brand does not delay another. Within your sandbox, concurrent integrations can briefly delay other integration-backed messages; each message is attempted for up to 12 hours before expiration.
 
 As a marketer, you can use configured integrations to personalize your content. Follow these steps:
 
@@ -180,6 +191,10 @@ As a marketer, you can use configured integrations to personalize your content. 
 1. Once integration attributes are defined, you can now use the integration fields in your content for personalized messaging by clicking the ![add](assets/do-not-localize/Smock_Add_18_N.svg) icon.
 
     ![](assets/external-integration-content-6.png)
+
+    >[!NOTE]
+    >
+    >Tokens in your template must use only fields the administrator exposed in the integration configuration. For example, `{{weatherResponse.temperature}}` is valid when `temperature` is exposed; `{{weatherResponse.humidity}}` is rejected in the editor if `humidity` was not exposed.
 
 1. Click **[!UICONTROL Save]**.
 
