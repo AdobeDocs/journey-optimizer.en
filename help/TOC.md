@@ -224,7 +224,7 @@ solution: Journey Optimizer
     + [Set quiet hours](using/conflict-prioritization/quiet-hours.md)
   + Journey arbitration {#journey-arbitration}
     + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
-    + {hide-from-toc} [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
+    + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
 + Test & approve {#test}
   + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
