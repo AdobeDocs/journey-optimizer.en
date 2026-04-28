@@ -60,6 +60,8 @@ New capabilities and improvements released earlier in April are announced with t
 <td>
 <p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
 <p>This capability is available to all customers as a Limited Availability with essential capabilities.</p>
+<p><img src="assets/do-not-localize/simulate-user.gif"></p>
+<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
