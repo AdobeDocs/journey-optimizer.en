@@ -10,7 +10,7 @@ level: Intermediate
 hide: true
 keywords: integration, vendor, third-party
 ---
-# Available vendors
+# Sample Vendor configurations {#vendor-integration}
 
 >[!BEGINSHADEBOX]
 
@@ -18,8 +18,14 @@ Table of content:
 
 * [Work with Integrations](integrations.md)
 * [Get started with Vendors integration](vendor-integration-gs.md)
-* **[Available vendors](vendor-integration.md)**
+* **[Sample Vendor configurations](vendor-integration.md)**
 * [FAQ](vendor-integration-faq.md) 
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+Customers and third-party providers are responsible for securing API endpoints as needed for their security and compliance requirements.
 
 >[!ENDSHADEBOX]
 

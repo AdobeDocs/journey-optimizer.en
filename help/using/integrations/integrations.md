@@ -18,7 +18,7 @@ exl-id: 104f283e-f6a5-431b-919a-d97b83d19632
 Table of content:
 
 * **[Work with Integrations](integrations.md)**
-* [Get started with Vendors integration](vendor-integration-gs.md)
+* [Get started](vendor-integration-gs.md)
 * [Available vendors](vendor-integration.md)
 * [FAQ](vendor-integration-faq.md) 
 
@@ -26,7 +26,7 @@ Table of content:
 
 ## Overview
 
-The **Integrations** feature enables seamless integration of third-party data sources into Adobe Journey Optimizer. This feature streamlines the integration of external data and content sources into your campaigns, empowering you to deliver highly personalized and dynamic messaging across multiple channels.
+The **Integrations** feature links Adobe Journey Optimizer to third-party systems whose data and composable content you already manage elsewhere. You can surface that material during authoring and at send time, which supports more responsive, personalized experiences across the channels you use in Journey Optimizer.
 
 You can use this feature to access external data and pull content from third-party tools such as:
 
@@ -35,19 +35,35 @@ You can use this feature to access external data and pull content from third-par
 * **Product Recommendations** from recommendation engines.
 * **Logistics Updates** like delivery status.
 
-## Beta limitations {#limitations}
+To start using Integrations, users need to be granted the **[!UICONTROL Manage AJO integration configuration]** and **[!UICONTROL View AJO integration]** permissions. [Learn more on permissions](../administration/permissions.md)
 
-The beta release has the following limitations:
++++ Learn how to assign Integrations related permissions
 
-* Outbound channels are supported only.
+1. In the **[!UICONTROL Permissions]** product, go to the **[!UICONTROL Roles]** tab and select the desired **[!UICONTROL Role]**.
 
-* Only JSON format is supported for API call responses. HTML and raw binary image outputs are not available.
+1. Click **[!UICONTROL Edit]** to modify the permissions.
 
-* Only retrieval APIs targeting specific content are supported, listing APIs are not available.
+1. Add the **[!UICONTROL AJO Integration Configuration]** resource, then select the appropriate Integrations permissions from the drop-down menu.
 
-* Integrations feature is available for both Journeys and Campaigns but is not supported in Fragments.
+    ![](assets/external-integration-config-9.png)
+
+1. Click **[!UICONTROL Save]** to apply changes.
+
+    Any users already assigned to this role will have their permissions automatically updated.
+
+1. To assign this role to new users, navigate to the **[!UICONTROL Users]** tab within the **[!UICONTROL Roles]** dashboard and click **[!UICONTROL Add User]**.
+
+1. Enter the user's name, email address, or choose from the list, then click **[!UICONTROL Save]**.
+
+If the user was not previously created, refer to [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+
++++
 
 ## Configure your Integration {#configure}
+
+>[!AVAILABILITY]
+>
+> This integration feature is restricted to outbound channels (Email, SMS, and Push) and provides data in JSON or HTML formats. Please note that the API is read-only, supporting retrieval operations only.
 
 As an administrator, you can set up external integrations by following these steps:
 
@@ -56,6 +72,8 @@ As an administrator, you can set up external integrations by following these ste
     Then, click **[!UICONTROL Create Integration]** to start a new configuration.
 
     ![](assets/external-integration-config-1.png)
+
+1. Optionally, paste a **cURL** command to auto-fill the URL, HTTP method, headers, and query parameters.
 
 1. Provide a **[!UICONTROL Name]** and **[!UICONTROL Description]** for your integration. 
 
@@ -97,7 +115,10 @@ As an administrator, you can set up external integrations by following these ste
 
     ![](assets/external-integration-config-4.png)
 
-1. Set  **[!UICONTROL Policy configuration]** such **[!UICONTROL Timeout]** period for API requests and choose to enable throttling, cache and/or retry.
+1. Set  **[!UICONTROL Policy configuration]** such as **[!UICONTROL Timeout]** period for API requests and choose to enable throttling, cache and/or retry.
+
+    When throttling is enabled, supported rates range from **50** TPS (minimum) to **5000** TPS (maximum).
+    When retry is enabled, other failures follow **three** retries by default, with **200 ms**, **400 ms**, and **800 ms** between successive attempts.
 
 1. With the **[!UICONTROL Response payload]** field, you can decide which fields of the sample output needs to be used for message personalization. 
     
@@ -111,6 +132,14 @@ As an administrator, you can set up external integrations by following these ste
     
     Once validated, click **[!UICONTROL Activate]**.
 
+### Send-time limits and behavior {#configure-send-time}
+
+At send time, responses from the external API may be up to **4 MB** by default. Anything larger is treated as an integration error, and **retries are not attempted** when the failure is caused by response size. 
+
+Calls honor the **throttling** rate you configured: Journey Optimizer schedules attempts up to that limit even when the external system is down or returning errors. If **cache** is enabled, only **successful** responses are stored and reused until the cache **TTL** you defined expires; failed responses are never cached.
+
+Each queued message also carries a validity window (TTL). If processing falls behind and a message sits past that window, the system **discards** it and emits a **`MessageValidityExclusion`** event so stale work clears from the queue and resources stay available.
+
 ## Using External integrations for personalization {#personalization}
 
 As a marketer, you can use configured integrations to personalize your content. Follow these steps:
@@ -122,6 +151,8 @@ As a marketer, you can use configured integrations to personalize your content. 
     ![](assets/external-integration-content-1.png)
 
 1. Navigate to the **[!UICONTROL Integrations]** section and click **[!UICONTROL Open integrations]** to view all active integrations.
+    
+    Note that Content Fragments is available with Integrations but support outbound channels only, inbound publication will not succeed. Once a fragment is published, adding and saving new integrations is disabled to avoid impact on existing journeys and campaigns.
 
     ![](assets/external-integration-content-2.png)
 
@@ -132,6 +163,13 @@ As a marketer, you can use configured integrations to personalize your content. 
 1. Enable the **[!UICONTROL Pills]** mode to unlock the advanced integration menu.
 
     ![](assets/external-integration-content-4.png)
+
+1. When you author integration personalization, the Integrations helper includes a **`required`** field that defines how failures or missing data interact with default content:
+
+    * **`required=true`** (default): Rendering stops for that message. The send is excluded with **`ExternalDataLookupExclusion`**, and that exclusion is recorded in the **message feedback dataset**.
+    * **`required=false`**: The result variable is set to **`null`** and rendering continues. Use default text, fallbacks, or conditional logic in your template so profiles do not receive empty content when the integration does not return data.
+
+        ![](assets/external-integration-content-8.png)
 
 1. To complete your integration setup, define your integration attributes, which were previously specified during [configuration](#configure). 
 
@@ -148,3 +186,4 @@ As a marketer, you can use configured integrations to personalize your content. 
 Your integration personalization is now successfully applied to your content, ensuring each recipient receives a tailored, relevant experience based on the attributes you have configured.
 
 ![](assets/external-integration-content-7.png)
+
