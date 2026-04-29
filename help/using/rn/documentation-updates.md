@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## April 2026 {#april-2026}
 
+* The **Change dimension** activity documentation has been updated to clarify that while the activity uses an external join and keeps all records at the dimension-change step, records without a matching profile in the new targeting dimension are silently excluded at message delivery time. [Read more](../orchestrated/activities/change-dimension.md)
+
 * The guardrails in the **Add a CC field to emails** documentation have been enhanced. They now specify that the CC address is not checked against consent or suppression, and that opens and click-throughs from emails sent to the CC address are taken into account in the total opens and clicks from the send analysis. [Read more](../configuration/cc-email-field.md)
 
 * The **Channel activities** documentation has been updated with a new **Marketing vs Transactional messages** section explaining the behavioral differences between the two channel categories: opt-in requirements, business rule application, channel configuration type, and recommended use cases. [Read more](../orchestrated/activities/channels.md#marketing-vs-transactional)

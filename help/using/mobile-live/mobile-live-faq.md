@@ -209,7 +209,7 @@ No. Each API request should have a unique `requestId` to ensure idempotency and 
 
 +++What authentication is required for the Headless API?
 
-Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/) for authentication requirements, including OAuth tokens and API keys.
+Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging) for authentication requirements, including OAuth tokens and API keys.
 
 +++
 
