@@ -382,7 +382,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 <p>You can now configure an optional CC (carbon copy) field in your email channel settings. Unlike BCC, CC recipients are visible to the primary recipient, enabling transparent communication and clearer ownership.</p>
 <p>This allows you to automatically copy the right stakeholder on each message—such as a relationship manager or account owner—while ensuring the customer knows who to contact for follow-up.</p>
 <p>The CC field supports personalization, so a single configuration can dynamically route copies based on profile data, making it scalable across multiple use cases without additional setup.</p>
-<!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
+<p><img src="../configuration/assets/email-config-cc.png"></p>
 <p>For more information, refer to the <a href="../configuration/cc-email-field.md">detailed documentation</a>.</p>
 </td>
 </tr>
