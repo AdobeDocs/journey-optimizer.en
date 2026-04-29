@@ -406,3 +406,4 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 #### Orchestrated campaigns
 
 * **Global variables in Orchestrated Campaigns** - Orchestrated Campaigns now support global variables that can be defined once and reused across all activities within a workflow, simplifying configuration and ensuring consistency in dynamic values, expressions, and content personalization.
+
