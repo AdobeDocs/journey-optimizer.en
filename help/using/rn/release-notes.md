@@ -33,9 +33,7 @@ New capabilities and improvements released earlier in April are announced with t
 
 ### New capabilities {#april-26-features}
 
-
-
-<table>
+<!--<table>
 <thead>
 <tr>
 <th><strong>Folders for journeys and campaigns</strong><br/></th>
@@ -49,7 +47,7 @@ New capabilities and improvements released earlier in April are announced with t
 </td>
 </tr>
 </tbody>
-</table>
+</table>-->
 
 <table>
 <thead>
@@ -66,24 +64,6 @@ New capabilities and improvements released earlier in April are announced with t
 </tr>
 </tbody>
 </table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Copy orchestrated campaigns across sandboxes</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Sandbox Tooling now supports packaging and copying orchestrated campaigns from one sandbox to another. This eliminates the need to manually rebuild campaigns in each environment. When a campaign is packaged, its core dependent objects such as merge policies, messages, are automatically included, so the imported campaign arrives ready to configure and validate. To protect production environments, all imported campaigns land in draft status in the target sandbox, giving teams a review and approval step before any campaign goes live.</p>
-<p><img src="assets/do-not-localize/oc-sandbox.gif"></p>
-<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 <table>
 <thead>
@@ -151,7 +131,7 @@ New capabilities and improvements released earlier in April are announced with t
 <tbody>
 <tr>
 <td>
-<p>[!DNL Adobe Journey Optimizer] now includes <strong>AI Assistant</strong> directly in the personalization editor that converts natural-language prompts into valid personalization expressions and conditional logic, no syntax expertise required. Describe the personalization you want to achieve, and AI generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>[!DNL Adobe Journey Optimizer] now includes <strong>AI Assistant</strong> directly in the personalization editor and the Email Designer that converts natural-language prompts into valid personalization expressions and conditional logic, no syntax expertise required. Describe the personalization you want to achieve, and AI generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
 <p>The assistant also works in reverse. Select any existing expression and ask it to explain the logic, identify issues, or suggest improvements. This makes it useful not just for authoring new expressions, but for reviewing and debugging existing ones across your team.</p>
 <p><img src="assets/do-not-localize/assistant-perso.gif"></p>
 <p>For more information, refer to <a href="../content-management/generative-personalization-expressions.md">AI Assistant for Personalization Expressions</a>.</p>
@@ -273,17 +253,7 @@ New capabilities and improvements released earlier in April are announced with t
 
   Availability date: April 1, 2026
 
-#### Orchestrated campaigns
-
-* **Data Modeler enhancements** - Orchestrated relational schemas now support composite keys spanning multiple fields. Loading a schema from a DDL file also brings in enumerations, and loading from either a DDL or Excel file automatically creates composite relationships between tables. In the entity relationship view, composite links now display the full set of field pairings between tables after a file is uploaded.
-
-* **Global variables in Orchestrated Campaigns** - Orchestrated Campaigns now support global variables that can be defined once and reused across all activities within a workflow, simplifying configuration and ensuring consistency in dynamic values, expressions, and content personalization.
-
 #### Email design
-
-* **AI Assistant for personalization expressions in the Email Designer** - In the Email Designer, select a component and use **Add expression** in the contextual toolbar to describe the personalization you need in plain language, review the generated expression, and insert it without leaving the designer. [Learn more](../content-management/generative-personalization-expressions.md#generate-email-designer)
-
-  Availability date: April 15, 2026
 
 * **Advanced HTML editor for email content** - Advanced HTML mode lets you edit the HTML source of your content in the Email Designer, add advanced expressions (such as conditions) in the source, and toggle between HTML view and Desktop view without losing your changes.
 
@@ -314,6 +284,23 @@ New capabilities and improvements released earlier in April are announced with t
 The following capabilities and enhancements are scheduled for release in the next few days. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 ### New capabilities {#comming-soon-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Copy orchestrated campaigns across sandboxes</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Sandbox Tooling now supports packaging and copying orchestrated campaigns from one sandbox to another. This eliminates the need to manually rebuild campaigns in each environment. When a campaign is packaged, its core dependent objects such as merge policies, messages, are automatically included, so the imported campaign arrives ready to configure and validate. To protect production environments, all imported campaigns land in draft status in the target sandbox, giving teams a review and approval step before any campaign goes live.</p>
+<p><img src="assets/do-not-localize/oc-sandbox.gif"></p>
+<!--<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>-->
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -424,3 +411,9 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 #### Configuration
 
 * **Specific permissions for URL parameter encryption keys** - To access and manage keys for URL parameter encryption, new permissions have been created. You must now have the **View Key Registry** and **Manage Key Registry** permissions granted. <!--[Read more](../personalization/url-parameter-encryption.md#create-keys)-->
+
+#### Orchestrated campaigns
+
+* **Data Modeler enhancements** - Orchestrated relational schemas now support composite keys spanning multiple fields. Loading a schema from a DDL file also brings in enumerations, and loading from either a DDL or Excel file automatically creates composite relationships between tables. In the entity relationship view, composite links now display the full set of field pairings between tables after a file is uploaded.
+
+* **Global variables in Orchestrated Campaigns** - Orchestrated Campaigns now support global variables that can be defined once and reused across all activities within a workflow, simplifying configuration and ensuring consistency in dynamic values, expressions, and content personalization.
