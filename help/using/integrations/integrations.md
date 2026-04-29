@@ -67,7 +67,7 @@ As an administrator, you can set up external integrations by following these ste
 
     >[!NOTE]
     >
-    >These fields cannot contain spaces.
+    >**[!UICONTROL Name]** field cannot contain spaces.
 
 1. Enter the API endpoint **[!UICONTROL URL]**. 
 
@@ -133,12 +133,12 @@ As an administrator, you can set up external integrations by following these ste
 
 1. Access your newly created Integration to:
 
-    * **Update**: Change **Authentication** details and **Policy configuration** only.
+    * **Update**: Change **Authentication** details and **Policy configuration** only. Updates apply to live journeys and campaigns. Before you save changes, use the **[!UICONTROL Explore references]** menu to confirm where the integration is used.
     * **Archive**: Archive an Integration configuration.
 
     ![](assets/external-integration-config-7.png)
 
-After activation, click the ![advanced menu](assets/do-not-localize/Smock_More_18_N.svg) icon to review usage for this configuration, including journeys and campaigns that depend on it.
+After activation, click the ![advanced menu](assets/do-not-localize/Smock_More_18_N.svg) icon to access the **[!UICONTROL Explore references]** menu and to review usage for this configuration, including journeys and campaigns that depend on it.
 
 ![](assets/external-integration-config-6.png)
 
