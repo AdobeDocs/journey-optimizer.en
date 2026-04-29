@@ -232,11 +232,28 @@ Once creating your push credentials, you need to create a configuration to be ab
 
 1. Choose your **[!UICONTROL Platform]**: Android and/or iOS <!--and/or Web-->.
 
-1. Select the same **[!UICONTROL App id]** as for your [push credential](#push-credentials-launch) configured above.
+1. For **[!UICONTROL App id]**, select the value that matches your [push credential](#push-credentials-launch). Optionally, use personalization to drive many apps from one journey or campaign. [Learn more](#app-id-personalization)
 
-1. Save your changes.
+1. **Save** your changes.
 
 You can now select your configuration when creating your push notifications.
+
+### Personalize the App id (optional) {#app-id-personalization}
+
+>[!CONTEXTUALHELP]
+>id="ajo_surface_dynamic_app_id"
+>title="Personalize App id"
+>abstract="When you manage multiple mobile apps, store each app id on the profile and use a single push channel configuration. Open the personalization editor next to the App id field to select a profile attribute; the expression is evaluated at send time for each recipient. Ensure push credentials exist for every app id your expression can return."
+
+When you have many brands or tenants with separate apps, you can store each **[!UICONTROL App id]** on the profile and use a single channel configuration to send push notifications to the correct app for each recipient.
+
+To do so, click the Personalization icon next to the **[!UICONTROL App id]** field, select a profile attribute mapped to the app id, and save. The field uses the corresponding [Handlebars expression](../personalization/personalization-syntax.md) evaluated for each recipient at send time.
+
+![](assets/push-config-11.png){width="70%"}
+
+>[!CAUTION]
+>
+>[!DNL Journey Optimizer] does not check that [push credentials](#push-credentials-launch) exist for every value the expression may return. Make sure you have push credentials for every possible app id, and test with representative profiles. If a recipient's resolved app id has no matching push credentials, they will not be delivered as expected.
 
 ## Step 3: configure Adobe Journey Optimizer extension in your mobile property {#configure-journey-optimizer-extension}
 

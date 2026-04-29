@@ -63,7 +63,7 @@ Any schema used for targeting must include at least one identity field of type `
   Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
 * **Composite Key**  
-  Composite primary keys are supported in relational schema definitions, enabling the use of multiple fields together to uniquely identify records.
+  Composite primary keys spanning multiple fields are supported in relational schema definitions, enabling the use of multiple fields together to uniquely identify records.
 
 +++
 
