@@ -909,7 +909,7 @@ solution: Journey Optimizer
     + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for email archiving](using/configuration/archiving-support.md)
-  + {hide-from-toc} [Add a CC field to emails](using/configuration/cc-email-field.md)
+  + [Add a CC field to emails](using/configuration/cc-email-field.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
 + Journey configuration {#configure-journeys}
