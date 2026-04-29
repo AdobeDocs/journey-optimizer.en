@@ -42,7 +42,7 @@ Before diving into implementation, familiarize yourself with the core technical 
 
 1. **XDM data models**: Journey Optimizer uses Experience Data Model (XDM) to structure event and profile data. As a developer, you'll need to understand how to send data that conforms to the schemas configured by your [Data Engineer](data-engineer.md). Learn about [XDM schemas](../../data/get-started-schemas.md).
 
-1. **Authentication and security**: All implementations require proper authentication. Understand how to set up authentication for SDKs and APIs. Learn about [API authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}.
+1. **Authentication and security**: All implementations require proper authentication. Understand how to set up authentication for SDKs and APIs. Learn about [API authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}.
 
 ## Set up mobile app integrations {#mobile-integration}
 
@@ -50,9 +50,9 @@ Before diving into implementation, familiarize yourself with the core technical 
 
 To enable push notifications, in-app messages, and other mobile capabilities, integrate the Adobe Experience Platform Mobile SDK into your mobile applications.
 
-1. **Install and configure the Mobile SDK**: Follow the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} to get started with SDK integration.
+1. **Install and configure the Mobile SDK**: Follow the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started){target="_blank"} to get started with SDK integration.
 
-1. **Create a mobile property**: Set up a mobile property in [!DNL Adobe Experience Platform Data Collection]. Learn how to [create and configure a mobile property](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+1. **Create a mobile property**: Set up a mobile property in [!DNL Adobe Experience Platform Data Collection]. Learn how to [create and configure a mobile property](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property){target="_blank"}.
 
 1. **Configure push notifications**: 
    * For **iOS apps**: Register your app with APNs (Apple Push Notification service). Learn more in [Apple's documentation](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns){target="_blank"}.
@@ -66,7 +66,7 @@ Detailed steps to configure push notifications are available on [this page](../.
 
 For native mobile app personalization using code-based experiences:
 
-* Follow [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"} for Mobile SDK implementation
+* Follow [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial){target="_blank"} for Mobile SDK implementation
 * Review sample implementations for [iOS](https://github.com/adobe/aepsdk-messaging-ios/tree/main/TestApps/MessagingDemoAppSwiftUI){target="_blank"} and [Android](https://github.com/adobe/aepsdk-messaging-android/tree/main/code/testapp){target="_blank"}
 
 ## Implement web experiences {#web-implementation}
@@ -173,9 +173,9 @@ Journey Optimizer provides comprehensive REST APIs for programmatic access:
 
 1. **Understand API capabilities**: Journey Optimizer APIs allow you to create, read, update, and delete various resources programmatically. Learn about [Journey Optimizer APIs](../../configuration/ajo-apis.md).
 
-1. **Authentication**: Follow [this tutorial](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} to set up API authentication using Adobe Developer Console.
+1. **Authentication**: Follow [this tutorial](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} to set up API authentication using Adobe Developer Console.
 
-1. **Explore API references**: Browse the complete API documentation and try APIs directly in the [Adobe Journey Optimizer API reference](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}.
+1. **Explore API references**: Browse the complete API documentation and try APIs directly in the [Adobe Journey Optimizer API reference](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}.
 
 1. **API-triggered campaigns**: Build transactional messaging with API-triggered campaigns. For high-volume scenarios (up to 5000 TPS), explore [High Throughput mode](../../campaigns/api-triggered-high-throughput.md) (requires add-on license).
 

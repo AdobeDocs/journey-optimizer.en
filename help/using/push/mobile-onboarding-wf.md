@@ -27,7 +27,7 @@ To access the new mobile onboarding quick start workflow, browse to **[!DNL Data
 Below are a few additional features:
  
 * Easy four step workflow and user interface.
-* Delivers a basic setup to start collecting mobile event data via the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} in minutes.
+* Delivers a basic setup to start collecting mobile event data via the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation){target="_blank"} in minutes.
 * Ability to test and validate a basic mobile push event leveraging [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 * Auto creates and configures all necessary Data Collection, and Journey Optimizer assets. 
 * In product guidance and tooltips.

@@ -499,9 +499,9 @@ solution: Journey Optimizer
     + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
-    + {hide-from-toc} [Work with Integrations](using/integrations/external-sources.md)
+    + {hide-from-toc} [Work with Integrations](using/integrations/integrations.md)
     + {hide-from-toc} [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
-    + {hide-from-toc} [Available vendors](using/integrations/vendor-integration.md)
+    + {hide-from-toc} [Sample Vendor configurations](using/integrations/vendor-integration.md)
     + {hide-from-toc} [FAQ](using/integrations/vendor-integration-faq.md)      
     + {hide-from-toc} [Work with AI tools via MCP](/help/using/integrations/ajo-mcp.md)
   + AI Assistant for content generation {#ai-assistant}

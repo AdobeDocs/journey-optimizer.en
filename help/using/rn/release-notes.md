@@ -36,6 +36,22 @@ New capabilities and improvements released earlier in April are announced with t
 <table>
 <thead>
 <tr>
+<th><strong>Integrations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
+<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey simulation</strong><br/></th>
 </tr>
 </thead>
@@ -43,7 +59,7 @@ New capabilities and improvements released earlier in April are announced with t
 <tr>
 <td>
 <p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>This capability is available to all customers as a Limited Availability with essential capabilities.</p>
 </td>
 </tr>
 </tbody>
@@ -320,7 +336,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 * **Brand alignment score in Campaign dashboard** - You can now assess your brand alignment score directly within your Campaign dashboard to ensure content stays on-brand. This allows you to verify guidelines at a glance without having to open the content designer.
 
-* **Prompt Assistant enhancement** - When a prompt is vague, incomplete, or mixes multiple goals, **Prompt Assistant** can now ask focused clarifying questions or suggest a clearer rewrite of your request before generation, helping you pin down what you need before the assistant responds, which improves consistency and reduces retries. [Learn more](../content-management/ai-assistant-prompting-guide.md)
+* **Prompt Assistant enhancement** - Prompt Assistant enhances AI content generation by analyzing user prompts in real time and identifying gaps in clarity, completeness, and context. It suggests improved rewrites and provides actionable guidance to enrich prompts with key details like audience, tone, and intent. The feature also asks targeted clarifying questions to help users refine their inputs before generation. This results in more accurate, high-quality outputs with fewer iterations. [Learn more](../content-management/ai-assistant-prompting-guide.md)
 
 #### Decisioning
 

@@ -226,7 +226,7 @@ The right testing approach depends on what you're building and what you need to 
 
 **For API-triggered campaigns:**
 
-* Use the [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target-"_blank"} to trigger proof jobs programmatically
+* Use the [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target-"_blank"} to trigger proof jobs programmatically
 
 >[!TAB Testing journeys]
 
@@ -486,7 +486,7 @@ Understand how testing capabilities connect to each other and to your broader Jo
 
 +++**Q: How do I test API-triggered campaigns?**
 
-**Option 1:** Use [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target-"_blank"} for programmatic testing
+**Option 1:** Use [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target-"_blank"} for programmatic testing
 **Option 2:** Preview content with test profiles in UI
 **Option 3:** Send proofs to test email addresses
 **Best practice:** Combine all three for comprehensive validation
