@@ -33,7 +33,8 @@ New capabilities and improvements released earlier in April are announced with t
 
 ### New capabilities {#april-26-features}
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Folders for journeys and campaigns</strong><br/></th>
@@ -47,7 +48,8 @@ New capabilities and improvements released earlier in April are announced with t
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
 <table>
 <thead>
