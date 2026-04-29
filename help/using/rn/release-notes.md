@@ -65,6 +65,7 @@ New capabilities and improvements released earlier in April are announced with t
 <p>Adobe Journey Optimizer now provides an <strong>MCP (Model Context Protocol) server</strong> that surfaces campaign, loyalty, channel configuration, and sandbox operations directly inside any MCP-compatible application. With this integration, different personas can collaborate around the same orchestration data. Instead of writing queries against the Adobe Journey Optimizer REST API or navigating multiple UI screens, you can describe your intent conversationally and let the LLM invoke the appropriate MCP tools. This capability is currently available in Claude Web and Desktop.</p>
 <p>This capability is available to all customers in Public Beta.</p>
 <p>For more information, refer to the <a href="../integrations/ajo-mcp.md">detailed documentation</a>.</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -220,10 +221,6 @@ New capabilities and improvements released earlier in April are announced with t
 * **Temporarily unavailable fragments are skipped** - When using fragments in decision items, if a fragment is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing. [Read more](../experience-decisioning/fragments-decision-policies.md#temporary-unavailable-fragments)
 
   Availability date: April 14, 2026
-
-#### Push
-
-* **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Read more](../push/push-configuration.md)
 
 <!--
 #### SMS
@@ -411,6 +408,10 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 </table>
 
 ### Improvements {#comming-soon-improv}
+
+#### Push
+
+* **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Read more](../push/push-configuration.md)
 
 #### Configuration
 
