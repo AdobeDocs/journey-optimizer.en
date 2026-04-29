@@ -8,7 +8,6 @@ topic: Content Management, Artificial Intelligence
 badge: label="Beta" type="Informative"
 role: User, Developer
 level: Beginner, Intermediate
-hide: true
 ---
 # Work with MCP clients (Beta) {#ajo-mcp}
 
