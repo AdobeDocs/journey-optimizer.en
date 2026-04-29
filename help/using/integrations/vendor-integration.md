@@ -7,21 +7,9 @@ feature: Integrations
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
 keywords: integration, vendor, third-party
 ---
 # Sample Vendor configurations {#vendor-integration}
-
->[!BEGINSHADEBOX]
-
-Table of content: 
-
-* [Work with Integrations](integrations.md)
-* [Get started with Vendors integration](vendor-integration-gs.md)
-* **[Sample Vendor configurations](vendor-integration.md)**
-* [FAQ](vendor-integration-faq.md) 
-
->[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 

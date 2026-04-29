@@ -8,21 +8,9 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: integration
-hide: true
 exl-id: 104f283e-f6a5-431b-919a-d97b83d19632
 ---
 # Work with Integrations {#external-sources}
-
->[!BEGINSHADEBOX]
-
-Table of content:
-
-* **[Work with Integrations](integrations.md)**
-* [Get started](vendor-integration-gs.md)
-* [Available vendors](vendor-integration.md)
-* [FAQ](vendor-integration-faq.md) 
-
->[!ENDSHADEBOX]
 
 ## Overview
 
@@ -139,11 +127,11 @@ As an administrator, you can set up external integrations by following these ste
     >
     >The **[!UICONTROL Response payload]** configuration defines the expected response for authoring including any schema applied in that step. Marketers may reference only exposed fields, tokens for other paths fail validation in the editor.
 
-1. Use **[!UICONTROL Send test connection]** to validate the integration.
+1. Use **[!UICONTROL Send test connection]** to validate the integration. [Learn more on how to test your connection](#connection)
     
     Once validated, click **[!UICONTROL Activate]**.
 
-1. Access your newly created Integrations to:
+1. Access your newly created Integration to:
 
     * **Update**: Change **Authentication** details and **Policy configuration** only.
     * **Archive**: Archive an Integration configuration.
@@ -162,60 +150,24 @@ Calls honor the **throttling** rate you configured: Journey Optimizer schedules 
 
 Each queued message also carries a validity window (TTL). If processing falls behind and a message sits past that window, the system **discards** it and emits a **`MessageValidityExclusion`** event so stale work clears from the queue and resources stay available.
 
+## Testing your connection {#connection}
 
-## Using External integrations for personalization {#personalization}
+**[!UICONTROL Send test connection]** validates the endpoint URL, authentication, and request structure against the target API prior to activation, which reduces the risk of runtime failures during message processing. 
 
-As a marketer, you can use configured integrations to personalize your content. Follow these steps:
+1. When the URL, HTTP method, headers, and query parameters are defined, click **[!UICONTROL Send test connection]** to run a connectivity test and confirm the configuration.
 
-1. Access your campaign content and click **[!UICONTROL Add personalization]** from your Text or HTML **[!UICONTROL Components]**. 
-
-    [Learn more on components](../email/content-components.md)
-
-    ![](assets/external-integration-content-1.png)
-
-1. Navigate to the **[!UICONTROL Integrations]** section and click **[!UICONTROL Open integrations]** to view all active integrations.
+1. In the **[!UICONTROL Send test connection]** dialog, enter default values for any **[!UICONTROL Variable]** placeholders in the URL path, headers, and query parameters.
     
-    Note that **Journey Optimizer Fragments** are available with Integrations but support outbound channels only. Once a fragment is published, adding and saving new integrations is disabled to avoid impact on existing journeys and campaigns.
+    Those values are included in the test request. Journey Optimizer invokes the endpoint and reports whether the connection succeeded or failed.
 
-    ![](assets/external-integration-content-2.png)
+    ![](assets/external-integration-config-11.png)
 
-1. Select an integration and click **[!UICONTROL Save]**.
-    
-    ![](assets/external-integration-content-3.png)
+1. If the test returns a successful response, select **[!UICONTROL Use as response payload]** to copy the response body into the **[!UICONTROL Response payload]** field, see step 10 under [Configure your Integration](#configure), where data types can be detected and fields can be selected for personalization.
 
-1. Enable the **[!UICONTROL Pills]** mode to unlock the advanced integration menu.
+    ![](assets/external-integration-config-10.png)
 
-    ![](assets/external-integration-content-4.png)
+1. If the test does not succeed, expand the **[!UICONTROL Error]** drop-down to review the failure details, update the integration configuration as needed, and run **[!UICONTROL Send test connection]** again.
 
-1. When you author integration personalization, the Integrations helper includes a **`required`** field that defines how failures or missing data interact with default content:
+    ![](assets/external-integration-content-12.png)
 
-    * **`required=true`** (default): Rendering stops for that message. The send is excluded with **`ExternalDataLookupExclusion`**, and that exclusion is recorded in the **message feedback dataset**.
-    * **`required=false`**: The result variable is set to **`null`** and rendering continues. Use default text, fallbacks, or conditional logic in your template so profiles do not receive empty content when the integration does not return data.
-
-        ![](assets/external-integration-content-8.png)
-
-1. To complete your integration setup, define your integration attributes, which were previously specified during [configuration](#configure). 
-
-    You can assign values to these attributes using either static values, which remain constant, or profile attributes, which dynamically pull information from user profiles.
-
-    ![](assets/external-integration-content-5.png)
-
-1. Once integration attributes are defined, you can now use the integration fields in your content for personalized messaging by clicking the ![add](assets/do-not-localize/Smock_Add_18_N.svg) icon.
-
-    ![](assets/external-integration-content-6.png)
-
-    >[!NOTE]
-    >
-    >Tokens in your template must use only fields the administrator exposed in the integration configuration. For example, `{{weatherResponse.temperature}}` is valid when `temperature` is exposed; `{{weatherResponse.humidity}}` is rejected in the editor if `humidity` was not exposed.
-
-1. Click **[!UICONTROL Save]**.
-
-Your integration personalization is now successfully applied to your content, ensuring each recipient receives a tailored, relevant experience based on the attributes you have configured.
-
-![](assets/external-integration-content-7.png)
-
-## How-to video {#video}
-
-This video shows how **Integrations** connect Adobe Journey Optimizer to external APIs so you can pull live data and content into **outbound** channels, Email, SMS, and Push, for more relevant personalization.
-
->[!VIDEO](https://video.tv.adobe.com/v/3484118/?learn=on)
+After the test succeeds, select **[!UICONTROL Activate]** in the integration configuration. See [Configure your Integration](#configure).

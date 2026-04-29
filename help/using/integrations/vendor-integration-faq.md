@@ -8,23 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: integration, FAQ, external data, personalization
-hide: true
 ---
 # Frequently asked questions about Integrations {#vendor-integration-faq}
 
->[!BEGINSHADEBOX]
-
-Table of content:
-
-* [Work with Integrations](integrations.md)
-* [Get started with Vendors integration](vendor-integration-gs.md)
-* [Available vendors](vendor-integration.md)
-* **[FAQ](vendor-integration-faq.md)** 
-
->[!ENDSHADEBOX]
-
 Below are frequently asked questions about **Integrations** in Adobe Journey Optimizer.
-
 
 ## Get started
 
