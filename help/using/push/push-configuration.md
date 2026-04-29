@@ -232,7 +232,7 @@ Once creating your push credentials, you need to create a configuration to be ab
 
 1. Choose your **[!UICONTROL Platform]**: Android and/or iOS <!--and/or Web-->.
 
-1. For **[!UICONTROL App id]**, select the value that matches your [push credential](#push-credentials-launch). Optionally, personalize the App id to drive many apps from one journey or campaign. [Learn more](#app-id-personalization)
+1. For **[!UICONTROL App id]**, select the value that matches your [push credential](#push-credentials-launch). Optionally, use personalization to drive many apps from one journey or campaign. [Learn more](#app-id-personalization)
 
 1. **Save** your changes.
 
@@ -242,13 +242,13 @@ You can now select your configuration when creating your push notifications.
 
 When you have many brands or tenants with separate apps, you can store each **[!UICONTROL App id]** on the profile and use a single channel configuration to send push notifications to the correct app for each recipient.
 
-To do so, click the Personalization icon next to the **[!UICONTROL App id]** field, select the profile attribute of your choice, and save. The field uses the corresponding [Handlebars expression](../personalization/personalization-syntax.md) evaluated for each recipient at send time.
+To do so, click the Personalization icon next to the **[!UICONTROL App id]** field, select a profile attribute mapped to the app id, and save. The field uses the corresponding [Handlebars expression](../personalization/personalization-syntax.md) evaluated for each recipient at send time.
 
 ![](assets/push-config-11.png){width="70%"}
 
 >[!CAUTION]
 >
->[!DNL Journey Optimizer] does not check that [push credentials](#push-credentials-launch) exist for every value the expression may return. Make sure you have push credentials for every possible App id, and test with representative profiles. If a recipient's resolved App id has no matching push credentials, they will not be delivered as expected.
+>[!DNL Journey Optimizer] does not check that [push credentials](#push-credentials-launch) exist for every value the expression may return. Make sure you have push credentials for every possible app id, and test with representative profiles. If a recipient's resolved app id has no matching push credentials, they will not be delivered as expected.
 
 ## Step 3: configure Adobe Journey Optimizer extension in your mobile property {#configure-journey-optimizer-extension}
 
