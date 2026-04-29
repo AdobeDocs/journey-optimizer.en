@@ -33,39 +33,7 @@ New capabilities and improvements released earlier in April are announced with t
 
 ### New capabilities {#april-26-features}
 
-<table>
-<thead>
-<tr>
-<th><strong>Integrations</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
-<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
-</td>
-</tr>
-</tbody>
-</table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Journey simulation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
-<p>This capability is available to all customers as a Limited Availability with essential capabilities.</p>
-<p><img src="assets/do-not-localize/simulate-user.gif"></p>
-<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -116,22 +84,6 @@ New capabilities and improvements released earlier in April are announced with t
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Incremental query activity in Orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Orchestrated campaigns</strong> now support an <strong>Incremental query</strong> activity that targets only profiles or events that are newly eligible since the last execution.
-
-This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly qualified loyalty members, and similar segments) while reducing query workloads and avoiding redundant sends over time.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -269,11 +221,13 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 ### Improvements {#april-26-improv}
 
+<!--
 #### AI
 
 * **Brand alignment score in Campaign dashboard** - You can now assess your brand alignment score directly within your Campaign dashboard to ensure content stays on-brand. This allows you to verify guidelines at a glance without having to open the content designer.
 
 * **Prompt Assistant enhancement** - Prompt Assistant enhances AI content generation by analyzing user prompts in real time and identifying gaps in clarity, completeness, and context. It suggests improved rewrites and provides actionable guidance to enrich prompts with key details like audience, tone, and intent. The feature also asks targeted clarifying questions to help users refine their inputs before generation. This results in more accurate, high-quality outputs with fewer iterations. [Learn more](../content-management/ai-assistant-prompting-guide.md)
+-->
 
 #### Decisioning
 
@@ -287,6 +241,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 * **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Read more](../push/push-configuration.md)
 
+<!--
 #### SMS
 
 * **Character Count** - In Adobe Journey Optimizer, you can now use the Character Count to monitor the length of your SMS messages in real time. It helps you see when a message will be split into multiple segments to better manage formatting and avoid unexpected increases in sending costs. [Read more](../sms/create-sms.md)
@@ -302,6 +257,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 #### WhatsApp
 
 * **WhatsApp interactive buttons and tracking** - WhatsApp in Journey Optimizer now supports interactive buttons required by your templates and use cases, along with built-in interaction tracking so you can measure engagement and analyze performance alongside your other channel reporting.
+-->
 
 #### Adobe Experience Manager Integrations
 
@@ -358,6 +314,56 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 The following capabilities and enhancements are scheduled for release in the next few days. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 ### New capabilities {#comming-soon-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Integrations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
+<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey simulation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
+<p>This capability is available to all customers as a Limited Availability with essential capabilities.</p>
+<!--p><img src="assets/do-not-localize/simulate-user.gif"></p-->
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Incremental query activity in Orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Orchestrated campaigns</strong> now support an <strong>Incremental query</strong> activity that targets only profiles or events that are newly eligible since the last execution.
+
+This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly qualified loyalty members, and similar segments) while reducing query workloads and avoiding redundant sends over time.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
