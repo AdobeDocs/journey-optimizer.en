@@ -35,7 +35,7 @@ By using the Adobe Journey Optimizer MCP Server (Beta) ("Beta"), You hereby ackn
 
 Marketing and customer-experience teams increasingly rely on chat-based applications and developer tools — such as Anthropic Claude, OpenAI ChatGPT, Cursor, and Microsoft Copilot Studio — to streamline their day-to-day work. These applications support the **Model Context Protocol (MCP)**, an open standard that lets applications expose back-end tools to large language models (LLMs) in a uniform way.
 
-[!DNL Adobe Journey Optimizer] now provides an MCP server that surfaces campaign, loyalty, and sandbox operations directly inside any MCP-compatible application. With the [!DNL Adobe Journey Optimizer] MCP integration, different personas can collaborate around the same orchestration data — without writing queries against the [!DNL Adobe Journey Optimizer] REST API or navigating multiple UI screens. Customers can describe their intent conversationally and let the LLM invoke the appropriate MCP tools.
+[!DNL Adobe Journey Optimizer] now provides an MCP server that surfaces campaign and sandbox operations directly inside any MCP-compatible application. With the [!DNL Adobe Journey Optimizer] MCP integration, different personas can collaborate around the same orchestration data — without writing queries against the [!DNL Adobe Journey Optimizer] REST API or navigating multiple UI screens. Customers can describe their intent conversationally and let the LLM invoke the appropriate MCP tools.
 
 ## Key capabilities {#mcp-capabilities}
 
@@ -123,7 +123,7 @@ The [!DNL Adobe Journey Optimizer] MCP server is currently available for **Claud
 
 +++What [!DNL Adobe Journey Optimizer] objects can I access via MCP?
 
-You can access campaigns, offers, loyalty data, and sandbox information. Operations are read-only (retrieve APIs); write operations are not supported in the current release.
+You can access campaigns, offers and sandbox information. Operations are read-only (retrieve APIs); write operations are not supported in the current release.
 +++
 
 +++Do I need developer access to use the [!DNL Adobe Journey Optimizer] MCP server?
