@@ -35,23 +35,22 @@ New capabilities and improvements released earlier in April are announced with t
 
 ### New capabilities {#april-26-features}
 
-<!--
 <table>
 <thead>
 <tr>
-<th><strong>Folders for journeys and campaigns</strong><br/></th>
+<th><strong>Copy orchestrated campaigns across sandboxes</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now organize your journeys and campaigns into <strong>folders</strong> to improve navigation and management in the interface.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Sandbox Tooling now supports packaging and copying orchestrated campaigns from one sandbox to another. This eliminates the need to manually rebuild campaigns in each environment. When a campaign is packaged, its core dependent objects such as merge policies, messages, are automatically included, so the imported campaign arrives ready to configure and validate. To protect production environments, all imported campaigns land in draft status in the target sandbox, giving teams a review and approval step before any campaign goes live.</p>
+<p><img src="assets/do-not-localize/oc-sandbox.gif"></p>
+<p>For more information, refer to the <a href="../configuration/copy-objects-to-sandbox.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
--->
 
 <table>
 <thead>
@@ -285,23 +284,6 @@ New capabilities and improvements released earlier in April are announced with t
 The following capabilities and enhancements are scheduled for release in the next few days. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 ### New capabilities {#comming-soon-features}
-
-<table>
-<thead>
-<tr>
-<th><strong>Copy orchestrated campaigns across sandboxes</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Sandbox Tooling now supports packaging and copying orchestrated campaigns from one sandbox to another. This eliminates the need to manually rebuild campaigns in each environment. When a campaign is packaged, its core dependent objects such as merge policies, messages, are automatically included, so the imported campaign arrives ready to configure and validate. To protect production environments, all imported campaigns land in draft status in the target sandbox, giving teams a review and approval step before any campaign goes live.</p>
-<!--<p><img src="assets/do-not-localize/oc-sandbox.gif"></p>-->
-<!--<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>-->
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
