@@ -221,10 +221,6 @@ New capabilities and improvements released earlier in April are announced with t
 
   Availability date: April 14, 2026
 
-#### Push
-
-* **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Read more](../push/push-configuration.md)
-
 <!--
 #### SMS
 
@@ -411,6 +407,10 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 </table>
 
 ### Improvements {#comming-soon-improv}
+
+#### Push
+
+* **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Read more](../push/push-configuration.md)
 
 #### Configuration
 
