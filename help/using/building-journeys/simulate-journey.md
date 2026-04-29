@@ -65,7 +65,7 @@ The following steps show you how to create simulated users from the UI or by imp
 1. For each simulated user you added in this session, you can use the following actions:
 
     * **[!UICONTROL Duplicate]**: Adds a new simulated user that replicates the completed configuration of an existing entry, you can then edit the duplicate as needed.
-    * **[!UICONTROL Apply all]**: Propagates the attribute values or settings from one simulated user to every other simulated user in the list.
+    * **[!UICONTROL Apply to all]**: Propagates the attribute values or settings from one simulated user to every other simulated user in the list.
     * **[!UICONTROL Delete]**: Removes the selected simulated user from the list.
 
 1. Click **[!UICONTROL Save]** to store one or more simulated users for future use.
@@ -97,6 +97,8 @@ Simulated users that you create manually are stored and can be selected from thi
     ![Test mode button in journey interface](assets/test-mode-simulated.png)
 
 1. In the **[!UICONTROL Simulation settings]** panel, you can either select previously created simulated users clicking **[!UICONTROL Select simulated users]**.
+
+    ![Test mode in journey interface](assets/simulate-11.png)
 
 1. Select from the list of simulated users that were previously created and saved.
 
