@@ -89,7 +89,7 @@ Visit the page and inspect the networking tab, or check the Edge response payloa
 
 >[!TAB Code-based experience channel]
 
-Perform a curl request using [Adobe's API](https://developer.adobe.com/data-collection-apis/docs/api/) and check the Edge response payload in the **[!UICONTROL Edge Delivery]** section of the [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} session.
+Perform a curl request using [Adobe's API](https://developer.adobe.com/data-collection-apis/docs/api) and check the Edge response payload in the **[!UICONTROL Edge Delivery]** section of the [Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/tutorials/using-assurance){target="_blank"} session.
 
 >[!ENDTABS]
 

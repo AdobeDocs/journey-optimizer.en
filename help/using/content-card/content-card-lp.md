@@ -16,27 +16,27 @@ Refer to the following documentation pages to learn how to integrate content car
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
-<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/displaying-content-cards/">
+<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/displaying-content-cards">
 <img alt="Fetch" src="assets/do-not-localize/fetch.jpeg">
 </a>
-<div><a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/displaying-content-cards/"><strong>Fetch and Display Content Cards</strong>
+<div><a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/displaying-content-cards"><strong>Fetch and Display Content Cards</strong>
 </div>
 <p>
 </td>
 <td>
-<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/customizing-content-card-templates/">
+<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/customizing-content-card-templates">
 <img alt="Customize" src="assets/do-not-localize/customize.jpeg">
 </a>
 <div>
-<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/customizing-content-card-templates/"><strong>Customize Content Cards</strong></a>
+<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/customizing-content-card-templates"><strong>Customize Content Cards</strong></a>
 </div>
 <p></td>
 <td>
-<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/listening-content-card-events/">
+<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/listening-content-card-events">
 <img alt="Listen" src="assets/do-not-localize/listen.jpeg">
 </a>
 <div>
-<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/listening-content-card-events/"><strong>Listen to Content Card Events</strong></a>
+<a href="https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/tutorial/listening-content-card-events"><strong>Listen to Content Card Events</strong></a>
 </div>
 <p>
 </td>

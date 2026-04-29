@@ -58,7 +58,7 @@ The **[!UICONTROL CC email]** field accepts three types of values:
 
 * A **profile attribute**, such as the relationship manager email address available in the profile.
 
-* A **contextual attribute** - this value can **only be used in API-triggered campaigns**. It is retrieved from the API payload which must include the context variable `context.channel.email.ccvalues` with the CC address value.
+* A **contextual attribute** - this value can **only be used in API-triggered campaigns**. It is retrieved from the API payload which must include the context variable `context.channel.email.ccvalues` with the CC address value passed as a string.
 
     >[!WARNING]
     >
@@ -91,7 +91,9 @@ If you [edit an email configuration](channel-surfaces.md#edit-channel-surface) a
 
 * **Delivery timing:** Messages may be delivered to the CC email address before the target recipients. CC messages can also be sent even though the original messages may have [bounced](../reports/suppression-list.md#delivery-failures).
 
-* **Reporting:** Opens, clicks, and other engagement from CC recipients are included in email reporting metrics. Thus, any opens or clicks from CC recipients will cause miscalculations in [reports](../reports/report-gs-cja.md).
+* **Consent and suppression:** The CC email address is not checked against consent or suppression.
+
+* **Reporting:** Opens, clicks, and other engagement from CC recipients are included in email reporting metrics. Do not open or click through the emails sent to the CC address, as it is taken into account in the total opens and clicks from the send analysis, which could cause miscalculations in [reports](../reports/report-gs-cja.md).
 
 * **Spam:** Do not mark messages as spam in the CC inbox, as it will impact all the other emails sent to this address.
 
