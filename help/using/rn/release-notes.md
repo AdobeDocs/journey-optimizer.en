@@ -295,7 +295,7 @@ The following capabilities and enhancements are scheduled for release in the nex
 <tr>
 <td>
 <p>Sandbox Tooling now supports packaging and copying orchestrated campaigns from one sandbox to another. This eliminates the need to manually rebuild campaigns in each environment. When a campaign is packaged, its core dependent objects such as merge policies, messages, are automatically included, so the imported campaign arrives ready to configure and validate. To protect production environments, all imported campaigns land in draft status in the target sandbox, giving teams a review and approval step before any campaign goes live.</p>
-<p><img src="assets/do-not-localize/oc-sandbox.gif"></p>
+<!--<p><img src="assets/do-not-localize/oc-sandbox.gif"></p>-->
 <!--<p>For more information, refer to the <a href="../integrations/express.md">detailed documentation</a>.</p>-->
 </td>
 </tr>
@@ -363,7 +363,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 <td>
 <p>With Journey Optimizer, you can now send emails where the transmitting entity (Sender) differs from the authoring entity (From). Email clients that support this will typically render it as "Sender on behalf of From" or show a "via" indicator. Fill in the optional <strong>Sender headers</strong> fields in the email channel settings to configure this capability.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p><img src="assets/do-not-localize/forms.gif"></p>
+<!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
 <p>For more information, refer to the <a href="../email/header-parameters.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -382,7 +382,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 <p>You can now configure an optional CC (carbon copy) field in your email channel settings. Unlike BCC, CC recipients are visible to the primary recipient, enabling transparent communication and clearer ownership.</p>
 <p>This allows you to automatically copy the right stakeholder on each message—such as a relationship manager or account owner—while ensuring the customer knows who to contact for follow-up.</p>
 <p>The CC field supports personalization, so a single configuration can dynamically route copies based on profile data, making it scalable across multiple use cases without additional setup.</p>
-<p><img src="assets/do-not-localize/forms.gif"></p>
+<!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
 <p>For more information, refer to the <a href="../configuration/cc-email-field.md">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -399,7 +399,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 <tr>
 <td>
 <p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
-<p><img src="assets/do-not-localize/forms.gif"></p>
+<!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
 <p>For more information, refer to the <a href="../email/message-tracking.md">detailed documentation</a>.</p>
 </td>
 </tr>
