@@ -35,7 +35,7 @@ You can use this feature to access external data and pull content from third-par
 * **Product Recommendations** from recommendation engines.
 * **Logistics Updates** like delivery status.
 
-To start using Integrations, users need to be granted the **[!UICONTROL Manage AJO integration configuration]** and **[!UICONTROL View AJO integration]** permissions. [Learn more on permissions](../administration/permissions.md)
+To start using Integrations, users need to be granted the **[!UICONTROL Manage AJO integration configuration]** and **[!UICONTROL View AJO integration configuration]** permissions. [Learn more on permissions](../administration/permissions.md)
 
 +++ Learn how to assign Integrations related permissions
 
@@ -63,7 +63,7 @@ If the user was not previously created, refer to [this documentation](https://ex
 
 >[!AVAILABILITY]
 >
-> This integration feature is restricted to outbound channels (Email, SMS, and Push) and provides data in JSON or HTML formats. Please note that the API is read-only, supporting retrieval operations only.
+> This integration feature is restricted to outbound channels (Email, SMS, and Push) and supports pulling JSON or HTML.
 
 As an administrator, you can set up external integrations by following these steps:
 
@@ -81,9 +81,13 @@ As an administrator, you can set up external integrations by following these ste
     >
     >These fields cannot contain spaces.
 
-1. Enter the API endpoint **[!UICONTROL URL]**, which may include path parameters with variables that can be defined using labels and default values.
+1. Enter the API endpoint **[!UICONTROL URL]**. 
 
-1. Configure the **[!UICONTROL Path Template]** with **[!UICONTROL Name]** and **[!UICONTROL Default value]**.
+    For path variables, wrap a label in double curly braces in the URL, for example, `https://api.example.com/v1/products/{{productId}}`, then set each placeholder in **[!UICONTROL Path Template]**.
+
+1. Configure the **[!UICONTROL Path Template]** with **[!UICONTROL Name]** and **[!UICONTROL Default value]** for every placeholder you added in the URL.
+
+    Note that the **[!UICONTROL Name]** is a marketer-facing label in the editor only, it is not sent on the API request.
 
     ![](assets/external-integration-config-2.png)
 
@@ -91,15 +95,15 @@ As an administrator, you can set up external integrations by following these ste
 
 1. Click **[!UICONTROL Add Header]** and/or **[!UICONTROL Add Query Parameters]** as needed for your integration. For each parameter, provide the following details:
 
-    * **[!UICONTROL Parameter]**:: A unique identifier used internally to reference the parameter.
+    * **[!UICONTROL Parameter]**: The actual header or query parameter name as expected by the API.
 
-    * **[!UICONTROL Name]**: The actual name of the parameter as expected by the API.
+    * **[!UICONTROL Name]**: A marketer-friendly label for this parameter, authors select it when mapping values in campaigns.
 
     * **[!UICONTROL Type]**: Choose **Constant** for a fixed value or **Variable** for dynamic input.
 
     * **[!UICONTROL Value]**: Enter the value directly for constants, or select a variable mapping.
 
-    * **[!UICONTROL Mandatory]**: Specify whether this parameter is required.
+    * **[!UICONTROL Mandatory]**: Specify whether this parameter is required. For mandatory **[!UICONTROL Variable]** parameters, if no value is resolved at runtime and no default is provided, request generation fails with an error and the outbound API call is not made.
 
     ![](assets/external-integration-config-3.png)
 
@@ -117,8 +121,11 @@ As an administrator, you can set up external integrations by following these ste
 
 1. Set  **[!UICONTROL Policy configuration]** such as **[!UICONTROL Timeout]** period for API requests and choose to enable throttling, cache and/or retry.
 
-    When throttling is enabled, supported rates range from **50** TPS (minimum) to **5000** TPS (maximum).
-    When retry is enabled, other failures follow **three** retries by default, with **200 ms**, **400 ms**, and **800 ms** between successive attempts.
+    >[!NOTE]
+    >
+    >With throttling enabled, supported rates are 50 to 5000 TPS. Limits apply to the **integration**, not each API endpoint.
+    >
+    >With retry enabled, other failures retry **three** times by default, with **200 ms**, **400 ms**, and **800 ms** between attempts.
 
 1. With the **[!UICONTROL Response payload]** field, you can decide which fields of the sample output needs to be used for message personalization. 
     
@@ -136,6 +143,17 @@ As an administrator, you can set up external integrations by following these ste
     
     Once validated, click **[!UICONTROL Activate]**.
 
+1. Access your newly created Integrations to:
+
+    * **Update**: Change **Authentication** details and **Policy configuration** only.
+    * **Archive**: Archive an Integration configuration.
+
+    ![](assets/external-integration-config-7.png)
+
+After activation, click the ![advanced menu](assets/do-not-localize/Smock_More_18_N.svg) icon to review usage for this configuration, including journeys and campaigns that depend on it.
+
+![](assets/external-integration-config-6.png)
+
 ### Send-time limits and behavior {#configure-send-time}
 
 At send time, responses from the external API may be up to **4 MB** by default. Anything larger is treated as an integration error, and **retries are not attempted** when the failure is caused by response size. 
@@ -147,12 +165,6 @@ Each queued message also carries a validity window (TTL). If processing falls be
 
 ## Using External integrations for personalization {#personalization}
 
-Before you use external integrations for personalization, note that the scheduling and isolation of integration calls depend on execution context:
-
-* **Batch execution** (batch campaigns, orchestrated campaigns, and API-triggered marketing campaigns): each batch run operates in a dedicated, isolated environment. Concurrent batch executions that call external systems therefore do not contend with or obstruct one another.
-
-* **Unitary execution** (unitary journeys, batch journeys, and API-triggered transactional campaigns): integration traffic is isolated per brand sandbox, so a slow external API for one brand does not delay another. Within your sandbox, concurrent integrations can briefly delay other integration-backed messages; each message is attempted for up to 12 hours before expiration.
-
 As a marketer, you can use configured integrations to personalize your content. Follow these steps:
 
 1. Access your campaign content and click **[!UICONTROL Add personalization]** from your Text or HTML **[!UICONTROL Components]**. 
@@ -163,7 +175,7 @@ As a marketer, you can use configured integrations to personalize your content. 
 
 1. Navigate to the **[!UICONTROL Integrations]** section and click **[!UICONTROL Open integrations]** to view all active integrations.
     
-    Note that Content Fragments is available with Integrations but support outbound channels only, inbound publication will not succeed. Once a fragment is published, adding and saving new integrations is disabled to avoid impact on existing journeys and campaigns.
+    Note that **Journey Optimizer Fragments** are available with Integrations but support outbound channels only. Once a fragment is published, adding and saving new integrations is disabled to avoid impact on existing journeys and campaigns.
 
     ![](assets/external-integration-content-2.png)
 
@@ -202,3 +214,8 @@ Your integration personalization is now successfully applied to your content, en
 
 ![](assets/external-integration-content-7.png)
 
+## How-to video {#video}
+
+This video shows how **Integrations** connect Adobe Journey Optimizer to external APIs so you can pull live data and content into **outbound** channels, Email, SMS, and Push, for more relevant personalization.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3484118/?learn=on)

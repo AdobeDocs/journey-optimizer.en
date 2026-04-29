@@ -25,13 +25,27 @@ Table of content:
 
 >[!BEGINSHADEBOX]
 
-Customers and third-party providers are responsible for securing API endpoints as needed for their security and compliance requirements.
+Customers and third-party providers are responsible for securing API endpoints to meet their security, compliance, and regulatory requirements, including HIPAA where applicable.
 
 >[!ENDSHADEBOX]
+
+## Quick navigation {#quick-navigation}
+
+Use these grouped links to jump to the relevant vendor pattern quickly:
+
+* **Content management system:** [Contentful](#contentful), [Sitecore](#sitecore), [Salsify](#salsify), [Contentstack](#contentstack), [Akeneo](#akeneo), [Magnolia](#magnolia)
+* **Loyalty and rewards:** [Voucherify](#voucherify), [Talon.One](#talon-one), [Antavo](#antavo), [Salesforce Loyalty](#salesforce-loyalty), [Capillary](#capillary)
+* **Templates, personalization and recommendations:** [Stensul](#stensul), [Marigold](#marigold), [Adobe Target Recommendations](#adobe-target-recommendations)
+* **Data, weather, and operations:** [AccuWeather](#accuweather), [ShipStation](#shipstation), [RevenueCat](#revenuecat), [Databricks](#databricks)
+* **Reviews, consent, and social:** [Bynder](#bynder), [Trustpilot](#trustpilot), [Bazaarvoice](#bazaarvoice), [OneTrust](#onetrust), [Meta](#meta), [Aprimo](#aprimo), [Epsilon (Epsilon3)](#epsilon)
 
 ## Content and CMS {#content-and-cms}
 
 ### Contentful {#contentful}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Contentful. Confirm current API details with Contentful documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -116,6 +130,10 @@ Sample integration fields (align with the [Content Delivery API](https://www.con
 +++
 
 ### Sitecore {#sitecore}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Sitecore. Confirm current API details with Sitecore documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -202,6 +220,10 @@ Use the following fields when you configure this sample call in Journey Optimize
 
 ### Salsify {#salsify}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Salsify. Confirm current API details with Salsify documentation.
+
 >[!BEGINSHADEBOX]
 
 Salsify is a PIM with APIs for products, channels, and digital assets.
@@ -287,6 +309,10 @@ Some older references reused a download-order style path for Salsify; your tenan
 +++
 
 ### Contentstack {#contentstack}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Contentstack. Confirm current API details with Contentstack documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -375,6 +401,10 @@ Contentstack expects **both** keys as headers for delivery requests.
 +++
 
 ### Akeneo {#akeneo}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Akeneo. Confirm current API details with Akeneo documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -468,6 +498,10 @@ Example pattern: `https://{pim-host}/api/rest/v1/products-uuid/{uuid}` with `Acc
 
 ### Magnolia {#magnolia}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Magnolia. Confirm current API details with Magnolia documentation.
+
 >[!BEGINSHADEBOX]
 
 Magnolia offers headless and REST delivery endpoints depending on deployment.
@@ -549,6 +583,10 @@ Note: Delivery API is to use the rest-anonymous role for content that doesn't re
 ## Loyalty and rewards {#loyalty-and-rewards}
 
 ### Voucherify {#voucherify}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Voucherify. Confirm current API details with Voucherify documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -649,6 +687,10 @@ Sample integration fields. Full reference: [Voucherify API](https://docs.voucher
 
 ### Talon.One {#talon-one}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Talon.One. Confirm current API details with Talon.One documentation.
+
 >[!BEGINSHADEBOX]
 
 Talon.One is a promotion and loyalty rules engine with REST APIs for sessions, effects, and profiles.
@@ -740,6 +782,10 @@ The table below lists example values for this integration request.
 
 ### Antavo {#antavo}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Antavo. Confirm current API details with Antavo documentation.
+
 >[!BEGINSHADEBOX]
 
 Antavo is an enterprise loyalty platform with REST APIs for members, rewards, and events.
@@ -821,6 +867,10 @@ Sample integration fields use the **staging** host; production uses your Antavo 
 +++
 
 ### Salesforce Loyalty {#salesforce-loyalty}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Salesforce. Confirm current API details with Salesforce documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -917,6 +967,10 @@ Use the Loyalty Management **member profile** GET operation documented for your 
 
 ### Capillary {#capillary}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Capillary. Confirm current API details with Capillary documentation.
+
 >[!BEGINSHADEBOX]
 
 Capillary provides loyalty and engagement APIs common in retail stacks.
@@ -1002,6 +1056,10 @@ Example: `https://ushc.intouch.capillarytech.com/api/v3/rewards/{reward_id}` (ho
 
 ### Stensul {#stensul}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Stensul. Confirm current API details with Stensul documentation.
+
 >[!BEGINSHADEBOX]
 
 Stensul is an email creation platform for approved templates; Journey Optimizer can consume template metadata and structured regions through its API.
@@ -1045,6 +1103,10 @@ Use the procedure below to configure this integration in Journey Optimizer. See 
 1. Test connection and activate.
 
 ### Marigold {#marigold}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Marigold. Confirm current API details with Marigold documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -1134,6 +1196,10 @@ Base host depends on region (for example `https://{{customername}}.module.slgnt.
 +++
 
 ### Adobe Target Recommendations {#adobe-target-recommendations}
+
+>[!IMPORTANT]
+>
+>This configuration is an illustrative pattern tested by the Adobe Journey Optimizer team. Adobe Target Recommendations is a separate Adobe product with its own release cycle and API versioning. Always confirm current API details with the [Adobe Target developer documentation](https://experienceleague.adobe.com/en/docs/target-dev/developer/overview) before deploying in production.
 
 >[!BEGINSHADEBOX]
 
@@ -1276,6 +1342,10 @@ Refer to [Target authentication configuration](https://experienceleague.adobe.co
 
 ### AccuWeather {#accuweather}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by AccuWeather. Confirm current API details with AccuWeather documentation.
+
 >[!BEGINSHADEBOX]
 
 AccuWeather exposes forecast and location REST APIs so messages can include weather-aware snippets.
@@ -1370,6 +1440,10 @@ Sample integration fields. Details and tiers are described in [AccuWeather APIs]
 
 ### ShipStation {#shipstation}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by ShipStation. Confirm current API details with ShipStation documentation.
+
 >[!BEGINSHADEBOX]
 
 ShipStation offers shipping and order APIs for carriers, labels, and tracking.
@@ -1461,6 +1535,10 @@ The following **Get Timer** example illustrates one ShipStation automation timin
 +++
 
 ### RevenueCat {#revenuecat}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by RevenueCat. Confirm current API details with RevenueCat documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -1554,6 +1632,10 @@ Example pattern: use RevenueCat's **Get a Product** (or equivalent product/entit
 
 ### Databricks {#databricks}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Databricks. Confirm current API details with Databricks documentation.
+
 >[!BEGINSHADEBOX]
 
 Databricks provides SQL and REST APIs over lakehouse data; earlier drafts combined statement execution guidance with a **jobs/get** sample.
@@ -1628,6 +1710,10 @@ The **GET** job example below is illustrative; for SQL-driven personalization, p
 ## Reviews, consent, and social {#reviews-consent-and-social}
 
 ### Bynder {#bynder}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Bynder. Confirm current API details with Bynder documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -1780,6 +1866,10 @@ Sample integration fields. See [Bynder API documentation](https://developer.bynd
 
 ### Trustpilot {#trustpilot}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Trustpilot. Confirm current API details with Trustpilot documentation.
+
 >[!BEGINSHADEBOX]
 
 Trustpilot provides APIs for business and review summary data where your use case and contract allow.
@@ -1865,6 +1955,10 @@ Use the categories listing operation from [Trustpilot developers](https://develo
 
 ### Bazaarvoice {#bazaarvoice}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Bazaarvoice. Confirm current API details with Bazaarvoice documentation.
+
 >[!BEGINSHADEBOX]
 
 Bazaarvoice provides ratings, reviews, and UGC APIs.
@@ -1949,6 +2043,10 @@ Example entry point: `https://api.bazaarvoice.com/data/products.json` with versi
 +++
 
 ### OneTrust {#onetrust}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by OneTrust. Confirm current API details with OneTrust documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -2036,6 +2134,10 @@ Example pattern (fragment): `https://{tenant}.my.onetrust.com/api/consentmanager
 
 ### Meta {#meta}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Meta. Confirm current API details with Meta documentation.
+
 >[!BEGINSHADEBOX]
 
 Meta Graph and Marketing APIs expose catalog and campaign objects for authorized business integrations.
@@ -2122,6 +2224,10 @@ Sample integration fields. See [Graph API](https://developers.facebook.com/docs/
 
 ### Aprimo {#aprimo}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Aprimo. Confirm current API details with Aprimo documentation.
+
 >[!BEGINSHADEBOX]
 
 Aprimo combines marketing operations and DAM APIs for records, assets, and metadata.
@@ -2205,6 +2311,10 @@ The table below lists example values for this integration request.
 +++
 
 ### Epsilon (Epsilon3) {#epsilon}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Epsilon. Confirm current API details with Epsilon documentation.
 
 >[!BEGINSHADEBOX]
 
