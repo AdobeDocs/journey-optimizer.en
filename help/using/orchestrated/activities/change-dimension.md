@@ -37,7 +37,11 @@ Follow these steps to configure the **[!UICONTROL Change dimension]** activity:
 
    ![](../assets/orchestrated-change-dimension.png)
 
-1. Define the **[!UICONTROL New target dimension]**. During dimension change, all records are kept. 
+1. Define the **[!UICONTROL New target dimension]**. The Change dimension step uses an external join: all records from the input population pass through, including those with no matching entry in the new dimension.
+
+   >[!IMPORTANT]
+   >
+   >Records that have no matching profile in the new targeting dimension are **silently excluded at message delivery time**. This exclusion is currently not reflected in exclusion logs. To identify non-matching records early, use the **Preview results** option on the transition after the Change dimension step and verify that record counts align with your expectations before proceeding.
 
 
 ## Example {#example}

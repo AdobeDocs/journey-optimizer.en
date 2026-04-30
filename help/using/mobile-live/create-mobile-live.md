@@ -50,7 +50,7 @@ After configuring your mobile configuration and implement your Adobe Experience 
 
     Ensure that you also copy the **[!UICONTROL Campaign ID]** identifiers to include in your payload.
 
-    ➡️ Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/) for authentication requirements, including OAuth tokens and API keys.
+    ➡️ Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging) for authentication requirements, including OAuth tokens and API keys.
 
     ![](assets/create-live-3.png)
 

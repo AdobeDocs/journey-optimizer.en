@@ -225,7 +225,7 @@ solution: Journey Optimizer
     + [Set quiet hours](using/conflict-prioritization/quiet-hours.md)
   + Journey arbitration {#journey-arbitration}
     + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
-    + {hide-from-toc} [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
+    + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
 + Test & approve {#test}
   + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
@@ -500,11 +500,11 @@ solution: Journey Optimizer
     + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
-    + {hide-from-toc} [Work with Integrations](using/integrations/external-sources.md)
+    + {hide-from-toc} [Work with Integrations](using/integrations/integrations.md)
     + {hide-from-toc} [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
-    + {hide-from-toc} [Available vendors](using/integrations/vendor-integration.md)
+    + {hide-from-toc} [Sample Vendor configurations](using/integrations/vendor-integration.md)
     + {hide-from-toc} [FAQ](using/integrations/vendor-integration-faq.md)      
-    + {hide-from-toc} [Work with AI tools via MCP](/help/using/integrations/ajo-mcp.md)
+    + [Work with AI tools via MCP](/help/using/integrations/ajo-mcp.md)
   + AI Assistant for content generation {#ai-assistant}
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
@@ -910,7 +910,7 @@ solution: Journey Optimizer
     + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for email archiving](using/configuration/archiving-support.md)
-  + {hide-from-toc} [Add a CC field to emails](using/configuration/cc-email-field.md)
+  + [Add a CC field to emails](using/configuration/cc-email-field.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
 + Journey configuration {#configure-journeys}

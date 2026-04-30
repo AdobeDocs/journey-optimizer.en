@@ -23,7 +23,7 @@ While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails a
 
 >[!NOTE]
 >
->In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
+>In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"}
 
 ### Check push opt-out status {#push-opt-out-status}
 
