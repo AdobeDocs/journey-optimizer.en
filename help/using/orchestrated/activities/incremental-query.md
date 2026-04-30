@@ -20,7 +20,7 @@ version: Campaign Orchestration
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_incrementalquery_processeddata"
 >title="Processed data"
->abstract="Under Processed data, choose how to exclude records from earlier runs. With Exclude results of previous execution, the activity keeps a list of records returned in prior runs; each run excludes those and returns only new ones. With the Use a date field option, the activity uses a selected date field instead of tracking individual IDs, and each run returns only rows whose date is after the last execution."
+>abstract="Under Processed data, choose how to exclude records from earlier runs. With the Use a date field option, the activity uses a selected date field instead of tracking individual IDs, and each run returns only rows whose date is after the last execution."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_incrementalquery_history"
