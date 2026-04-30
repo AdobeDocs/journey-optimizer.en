@@ -29,6 +29,75 @@ Note that Journey Simulation is in **Limited availability**. To share beta feedb
 
 ![Beta feedback menu](assets/beta-feedback.png)
 
+## Limitations {#limitations}
+
+In this release, **[!UICONTROL Simulation]** may not support every activity, channel, or integration that **[!UICONTROL Test mode]** or a live journey supports, and behavior may change as the capability matures. Use the procedures in this article for supported workflows.
+
+Refer to the drop-downs below to learn more on Simulation limitations.
+
++++ Node-level restrictions
+
+If a journey contains any of the following nodes, it cannot be started in simulation mode in this **Limited Availability** release. The journey must be modified, or the relevant node removed, before simulation can run.
+
+| Restricted node | Behavior in Limited Availability |
+| --- | --- |
+| Business Events | Not supported: journeys that enter through a business event cannot be run in **[!UICONTROL Simulation]** with Limited Availability release. |
+| Supplemental ID (multiple re-entrance) | Not supported: concurrent re-entrance (several active instances for the same profile) prevents **[!UICONTROL Simulation]** from starting. |
+| Content Decision node | Blocked: this activity must be removed or changed before you can simulate the journey. |
+| Dataset Lookup | Not supported: customer dataset lookups by key block **[!UICONTROL Simulation]** for any journey that includes this activity. |
+| Path Experimentation (Optimize — Experiment variant) | Blocked with Limited Availability release. You can still use **[!UICONTROL Optimize]** for flows that used to live under **[!UICONTROL Condition]** (for example, data source conditions). |
+| Path Targeting (Optimize, Targeting Rule variant) | Blocked with Limited Availability release.|
+| Not supported outbound actions | **[!UICONTROL WhatsApp]** and **[!UICONTROL Direct mail]** in the journey stop **[!UICONTROL Simulation]** from starting. |
+| Inbound actions | **[!UICONTROL In-app]**, **[!UICONTROL Web]**, **[!UICONTROL Code-based experience]**, and **[!UICONTROL Content card]** actions in the journey stop **[!UICONTROL Simulation]** from starting. |
+
++++
+
+</br>
+
++++ Functionality not supported in Limited Availability
+
+The following capabilities are explicitly out of scope for this **Limited Availability** release.
+
+| Capability | Status in Limited Availability |
+| --- | --- |
+| Exit criteria | Not supported: exit criteria are not applied when you run **[!UICONTROL Simulation]** in this release. |
+| External audiences | Not supported: you cannot start **[!UICONTROL Simulation]** on a journey that uses an audience that is not based on [!DNL Unified Profile Service] (UPS). |
+| [!DNL Adobe Journey Optimizer] decisioning inside an action (for example, email content with Adobe Journey Optimizer decisioning) | Not available: action proofs for content that uses [!DNL Adobe Journey Optimizer] decisioning are not generated in this release. |
+| Mock custom action response | [!UICONTROL Custom actions] perform a real outbound call by default. Mocking the response so no external call runs is not available in this release. |
+| Consent policy evaluation | Not available: consent cannot be mocked at the simulated-user level in this release. |
+| Journey capping and arbitration | Not supported in **[!UICONTROL Simulation]** in this release. |
+| Frequency capping (by channel or communication type) | Not supported in **[!UICONTROL Simulation]** in this release. |
+| Opt-out management, suppression, and allow lists | Follows messaging routing configuration where it applies. |
+| Dynamic subdomain and dynamic attributes in channel configurations | Follows messaging routing configuration where it applies. |
+| Send Time Optimization (STO) | Not supported in **[!UICONTROL Simulation]** in this release. |
+| Sandbox tooling (copy simulated users across sandboxes) | Not available in this release. |
+| Wave sending in journeys | Not available in this release. |
+| Quiet hours | Not available in this release. |
+| Privacy service | Simulated users are not GDPR-compliant persistent profiles. Do not include real customer data in simulated users. |
+
++++
+
+</br>
+
++++ Quantitative guardrails 
+
+These numeric limits apply to **[!UICONTROL Simulation]** in this **Limited Availability** release. They are enforced in the journey interface and at runtime. Limits may change in a later release, if you run near a ceiling, verify behavior in your sandbox.
+
+| Guardrail | Limit | Notes |
+| --- | --- | --- |
+| Maximum simulated profiles that can be selected and triggered in one batch (batch journeys, event-triggered flows, and audience-qualification flows) | 20 | Counted for each **[!UICONTROL Send all]** or **[!UICONTROL Trigger selected events]**; not a cumulative cap for the whole journey. |
+| Maximum unique simulated users tested in a single simulation run | 100 | Reaching **100** unique users in one run blocks **[!UICONTROL Select simulated users]** for new profiles. If you are at **90**, you can add at most **10** more before the same block. |
+| Maximum times the same simulated user can be tested in a single simulation run | 5 | Per user, per run. The profile may still enter the journey more often, but only the most recent executions (up to this number) are guaranteed to keep full log detail. |
+| Simulation logs retention (time-to-live) | 30 days | Log records are removed automatically when they reach this age. |
+| Maximum simulation logs retrieved in one call for a profile run | 200 | Same upper bound as **[!UICONTROL Test mode]**. |
+| Maximum journeys that can run in **[!UICONTROL Simulation]** at the same time in one sandbox | 20 | Cap is shared by every **[!UICONTROL Simulation]** journey in that sandbox at once. |
+| Maximum active simulated users in one sandbox | 10,000 | Maximum simulated users that can exist in the sandbox at one time. |
+| Simulation logs retained per journey | Last 5 simulation runs | Each new run beyond five drops the oldest retained run. |
+| Event pre-filling — maximum pre-filled events stored per journey | 20 | When full, the oldest event is removed first. Limit may change by release. |
+| Event pre-filling — maximum simulated profiles per event for storing payload | 10 | When full, the oldest profile is removed first. Limit may change by release. |
+| Event pre-filling data time-to-live | 7 days | After this period, pre-filled event data is purged. |
+
++++
 
 ## Create and manage simulated users {#test-users}
 
