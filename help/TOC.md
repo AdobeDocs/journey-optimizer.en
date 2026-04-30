@@ -212,6 +212,8 @@ solution: Journey Optimizer
       + [Engage customers by browsing activity](using/orchestrated/engage-customers-uc.md)
       + [Notify users about product availability](using/orchestrated/product-availability-uc.md)
     + Advanced operations {#orchestrated-advanced}
+      + [Use variables in Orchestrated campaigns](using/orchestrated/variables-orchestrated-campaigns.md)
+      + [Define global variables in Orchestrated campaigns](using/orchestrated/global-variables.md)
       + [Trigger Orchestrated campaigns using a signal](using/orchestrated/trigger-orchestrated-campaign.md)
 + Conflict & prioritization {#conflict-prioritization}
   + [Conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
