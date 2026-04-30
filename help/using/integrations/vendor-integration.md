@@ -13,7 +13,7 @@ keywords: integration, vendor, third-party
 
 >[!BEGINSHADEBOX]
 
-Customers and third-party providers are responsible for securing API endpoints to meet their security, compliance, and regulatory requirements, including HIPAA where applicable.
+Customers are responsible for ensuring that their use of the AJO Integrations feature and any associated third-party vendors or integrations complies with all applicable laws and regulations, such as HIPAA.
 
 >[!ENDSHADEBOX]
 
