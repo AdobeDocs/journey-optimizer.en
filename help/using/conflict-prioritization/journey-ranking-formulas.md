@@ -180,7 +180,7 @@ To assign the rule set to a journey, follow the steps below.
 
 All journeys that use this rule set will be ranked with the selected formula when the cap is applied.
 
-To monitor how your rule sets and ranking formulas perform, see the [Journey Capping and Conflicts](../reports/channel-report-cja.md#rule-sets) section in the Overview report.
+To monitor how your rule sets and ranking formulas perform, see the [Journey Capping and Conflicts](../reports/channel-report-cja.md#rule-sets) section in the Overview report. To investigate discards at the Data Lake level and identify whether a profile was excluded due to a cap being reached (`CAP_REACHED`) or a lower priority (`LOWER_PRIORITY`), use the queries available in [this section](../reports/query-examples.md#business-rules-queries).
 
 <!--
 ## Reporting {#reporting}
