@@ -67,19 +67,18 @@ Your integration personalization is now successfully applied to your content, en
 
 ![](assets/external-integration-content-7.png)
 
+<!--
 ## Map one API call to another {#map-integration-chain}
 
 You can **chain** integrations so that values returned by one active integration drive the inputs (path, headers, or query parameters) of another. That lets you build a real-time data flow in a single message without custom code.
 
-For example, a reservation system integration returns a flight booking reference from the profile context. A separate flight-information integration expects that reference as a **path variable**. In the personalization editor, you map the second integration's variable to a field from the first integration's response, instead of a static value or profile attribute alone.
-
 Before you start, make sure that:
 
-* An administrator has configured and activateD every integration you need. See [Configure your Integration](integrations.md).
+* An administrator has configured and activated every integration you need. See [Configure your Integration](integrations.md).
 * Variable path placeholders, headers, and query parameters are set up in the integration configuration with marketer-facing labels.
 * The administrator exposed the response fields you need in each integration's **[!UICONTROL Response payload]** so they appear when authoring.
 
-How to map one API call to another:
+In the below example, a reservation system integration returns a flight booking reference from the profile context. A separate flight-information integration expects that reference as a **path variable**. In the personalization editor, you map the second integration's variable to a field from the first integration's response, instead of a static value or profile attribute alone.
 
 1. Open your message or fragment and place the cursor where you want personalized content (for example, a **[!UICONTROL Text]** field).
 
@@ -88,6 +87,10 @@ How to map one API call to another:
 1. Select the integration whose output will supply the downstream input (in the example, the reservation or profile API that returns the flight identifier).
 
 1. Define that integration's inputs as usual—static values, profile attributes, or other allowed mappings—then save so its response is available for chaining.
+
+    >[!NOTE]
+    >
+    > Fields must appear in the administrator-defined response payload for each integration. You cannot reference response properties that were not exposed in configuration.
 
 1. Select the **second** integration (for example, the API that needs the flight number or booking reference on the URL path).
 
@@ -99,9 +102,7 @@ How to map one API call to another:
 
 When you **simulate** or send, Journey Optimizer resolves integrations in order: the first call runs with the profile context you configured; its output is used to build the second request. Different integrations may run at simulation time and at send time according to your setup and channel behavior.
 
->[!NOTE]
->
-> Fields must appear in the administrator-defined response payload for each integration. You cannot reference response properties that were not exposed in configuration.
+-->
 
 ## How-to video {#video}
 
