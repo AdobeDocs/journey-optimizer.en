@@ -393,6 +393,7 @@ The following capabilities and enhancements are scheduled for release in the nex
 <p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
 <!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
 <p>For more information, refer to the <a href="../email/message-tracking.md">detailed documentation</a>.</p>
+<p>Availability date: May 7, 2026</p>
 </td>
 </tr>
 </tbody>
