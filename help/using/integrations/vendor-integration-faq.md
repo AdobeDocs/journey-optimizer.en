@@ -8,23 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: integration, FAQ, external data, personalization
-hide: true
 ---
 # Frequently asked questions about Integrations {#vendor-integration-faq}
 
->[!BEGINSHADEBOX]
-
-Table of content:
-
-* [Work with Integrations](integrations.md)
-* [Get started with Vendors integration](vendor-integration-gs.md)
-* [Available vendors](vendor-integration.md)
-* **[FAQ](vendor-integration-faq.md)** 
-
->[!ENDSHADEBOX]
-
 Below are frequently asked questions about **Integrations** in Adobe Journey Optimizer.
-
 
 ## Get started
 
@@ -108,9 +95,9 @@ Yes. The feature is available for both journeys and campaigns for **outbound** c
 
 +++ Can I use Integrations in reusable fragments?
 
-The Integrations feature is **not** supported in Fragments. Use integrations in campaign and journey message content where the product supports them.
+The Integrations feature is supported in Fragments.
 
-➡️ [Learn more on Fragments and beta limits](integrations.md#limitations)
+➡️ [Learn more on Fragments](aem-fragments-gs.md)
 
 +++
 
@@ -126,7 +113,7 @@ The Integrations feature is **not** supported in Fragments. Use integrations in 
 
 +++ Which API response formats are supported?
 
-For API call responses, **JSON** is supported for field mapping. Raw binary image output and formats that are not JSON are not available for this workflow.
+For API call responses, **JSON** and **HTML** are supported for field mapping. Raw binary image output and formats that are not JSON are not available for this workflow.
 
 ➡️ [Learn more on JSON and response formats](integrations.md#limitations)
 
@@ -144,9 +131,9 @@ For API call responses, **JSON** is supported for field mapping. Raw binary imag
 
 +++ What permissions do I need to configure Integrations?
 
-Configuration is an administrator workflow under **[!UICONTROL Configurations]** > **[!UICONTROL Integrations]**. Exact permission names depend on your organization's Admin Console and Journey Optimizer product profiles. Confirm with your admin or Adobe representative.
+To start using Integrations, users need to be granted the **[!UICONTROL Manage AJO integration configuration]** and **[!UICONTROL View AJO integration configuration]** permissions. 
 
-➡️ [Learn more on where Integrations are configured](integrations.md#configure)
+➡️ [Learn more on Integrations permissions](integrations.md#overview)
 
 +++
 
