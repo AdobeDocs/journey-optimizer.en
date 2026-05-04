@@ -329,3 +329,27 @@ URL-encode query parameter values. This reduces delivery and rendering issues an
  
 +++
  
++++ I have one app but different subdomains for the organization. Should I request AASA and assetLinks.json to be created for each subdomain?
+
+Yes. If you want deeplinking on every delegated subdomain, request AASA and `assetlinks.json` configuration for each subdomain that should support the feature.
+
++++
+ 
++++ Should the URL I configure use a deeplinking format (for example `appname://path`)?
+
+You can use a custom URL scheme (for example `appname://path`), but the recommended approach is a universal link or app link (`https://`), which matches the HTTPS-based setup in the configuration and implementation sections on this page.
+
++++
+ 
++++ Will UTM parameters on the URL be available in the mobile app for analytics?
+
+Yes. UTM parameters you configure in [!DNL Journey Optimizer] are included in the final URL returned in the `Location` header when your app performs a GET on the `mclick` URL, so you can use them for in-app analytics.
+
++++
+ 
++++ What is the user experience for `/ee/v1/click/` URLs?
+
+The link opens in the device's default web browser (standard click tracking behavior), rather than being handled as an app deep link through the `mclick` flow described on this page.
+
++++
+ 
