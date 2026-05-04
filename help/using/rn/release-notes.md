@@ -38,6 +38,24 @@ New capabilities and improvements released earlier in April are announced with t
 <table>
 <thead>
 <tr>
+<th><strong>Integrations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
+<p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
+<p>For more information, refer to the <a href="../integrations/integrations.md">detailed documentation</a>.</p>
+<p>Availability date: May 4, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Incremental query activity in Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -47,7 +65,7 @@ New capabilities and improvements released earlier in April are announced with t
 <p><strong>Orchestrated campaigns</strong> now support an <strong>Incremental query</strong> activity that targets only profiles or events that are newly eligible since the last execution.
 
 This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly qualified loyalty members, and similar segments) while reducing query workloads and avoiding redundant sends over time.</p>
-<p>For more information, refer to the <a href="../orchestrated/activities/incremental-query.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../orchestrated/activities/incremental-query.md#incremental-query-configuration">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -63,7 +81,6 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 <tr>
 <td>
 <p>With Journey Optimizer, you can now send emails where the transmitting entity (Sender) differs from the authoring entity (From). Email clients that support this will typically render it as "Sender on behalf of From" or show a "via" indicator. Fill in the optional <strong>Sender headers</strong> fields in the email channel settings to configure this capability.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p><img src="assets/do-not-localize/sender-headers.gif"></p>
 <p>For more information, refer to the <a href="../email/header-parameters.md#sender-header">detailed documentation</a>.</p>
 </td>
@@ -272,8 +289,6 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 * **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Read more](../push/push-configuration.md#app-id-personalization)
 
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 #### Decisioning
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience and email campaigns through decision policies. [Read more](../experience-decisioning/fragments-decision-policies.md)
@@ -352,22 +367,6 @@ The following capabilities and enhancements are scheduled for release in the nex
 <table>
 <thead>
 <tr>
-<th><strong>Integrations</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
-<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Journey simulation</strong><br/></th>
 </tr>
 </thead>
@@ -399,8 +398,3 @@ The following capabilities and enhancements are scheduled for release in the nex
 </tbody>
 </table>
 
-### Improvements {#comming-soon-improv}
-
-#### Configuration
-
-* **Specific permissions for URL parameter encryption keys** - To access and manage keys for URL parameter encryption, new permissions have been created. You must now have the **View Key Registry** and **Manage Key Registry** permissions granted. <!--[Read more](../personalization/url-parameter-encryption.md#create-keys)-->
