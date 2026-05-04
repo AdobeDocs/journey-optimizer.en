@@ -171,3 +171,4 @@ Each queued message also carries a validity window (TTL). If processing falls be
     ![](assets/external-integration-content-12.png)
 
 After the test succeeds, select **[!UICONTROL Activate]** in the integration configuration. See [Configure your Integration](#configure).
+
