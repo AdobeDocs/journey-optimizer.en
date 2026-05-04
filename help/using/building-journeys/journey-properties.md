@@ -35,6 +35,7 @@ You can:
 * Select the journey and profile [timezones](#timezone)    
 * Choose custom [start and end dates](#dates)
 * Define a [timeout duration](#timeout) in journey activities (for Admin users only)
+* Monitor the [current journey payload size](#journey-payload-size) to avoid publishing errors
 * Monitor conflicts and prioritize your journeys using [conflict management tools](#conflict)
 
 ![Journey properties configuration pane with general settings and advanced options](assets/new-journey-properties.png){width="80%"}{zoomable="yes"}
@@ -106,6 +107,21 @@ You can limit access to a journey based on access labels.
 To assign custom data usage labels to the journey, click the **[!UICONTROL Manage access labels]** icon and select one or several labels. 
 
 [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
+
+## Journey payload size {#journey-payload-size}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_payload_size"
+>title="Current journey payload size"
+>abstract="Displays the current size of the journey payload compared to the configured limit. Use this indicator to monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded."
+
+The **[!UICONTROL Current journey payload size]** field in the journey properties panel displays the current size of your journey's payload in relation to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator is visible at any stage of journey authoring.
+
+![Current journey payload size indicator in the journey properties panel](assets/journey-payload-size.png){width="50%" zoomable="yes"}
+
+Use this information to monitor the complexity of your journey before publishing. If the payload size approaches or exceeds the limit, journey publication fails. To reduce the size, consider simplifying the journey logic or reducing the number of activities.
+
+The default limit is 2 MB. Contact Adobe Customer Care if you need to request a higher limit for your organization.
 
 ## Journey and profile timezones {#timezone}
 

@@ -15,7 +15,11 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2026 {#may-2026}
 
+* The **Jump activity** documentation has been updated to clarify the difference between a silent skip and a Jump failure. When a profile is already active in the target journey, the Jump is silently skipped — no error is raised and the origin journey continues normally. In other situations, the Jump is treated as a failed action and the origin journey applies standard action-error handling. A new **Runtime failures** section in the Troubleshooting page documents the three engineering-confirmed cases that trigger a Jump failure. [Read more](../building-journeys/jump.md#jump-troubleshoot)
+
 * A new **Business rules queries** section has been added to the query examples page, providing a Data Lake query to check all profile discards due to journey frequency capping exclusions on a specific journey after a specific date. The query includes the `eventCodeReason` field to identify whether profiles were excluded because a cap was reached (`CAP_REACHED`) or due to a lower priority (`LOWER_PRIORITY`). [Read more](../reports/query-examples.md#business-rules-queries)
+
+* The **Journey properties** documentation has been updated to document the new **Current journey payload size** indicator in the journey properties panel. This read-only field shows the current size of the journey payload compared to the configured limit (e.g. 1.5 MB out of 2 MB), helping you monitor journey complexity before publishing and avoid size-related publication errors. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
 
 ## April 2026 {#april-2026}
 

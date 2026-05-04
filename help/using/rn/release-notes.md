@@ -335,6 +335,12 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
   Availability date: April 9, 2026
 
+#### Journeys
+
+* **Current journey payload size visible in journey properties** - The journey properties panel now displays the current size of the journey payload compared to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator helps you monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
+
+  Availability date: April 30, 2026
+
 #### Journey Path Optimization
 
 * **Experiment type** - You can now choose between A/B experiment (fixed split at the start) or Multi-armed bandit (automatic split with weekly weight updates) when configuring a path experiment. [Read more](../building-journeys/path-experimentation.md)
