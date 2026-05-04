@@ -272,9 +272,13 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 * **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Read more](../push/push-configuration.md#app-id-personalization)
 
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
 #### Decisioning
 
-* **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience and email campaigns through decision policies. Previously released in Limited Availability, this capability is now available to all environments (General Availability). [Read more](../experience-decisioning/fragments-decision-policies.md)
+* **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience and email campaigns through decision policies. [Read more](../experience-decisioning/fragments-decision-policies.md)
+
+  Previously released in Limited Availability, this capability is now available to all environments (General Availability).
 
 * **Temporarily unavailable fragments are skipped** - When using fragments in decision items, if a fragment is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing. [Read more](../experience-decisioning/fragments-decision-policies.md#temporary-unavailable-fragments)
 
