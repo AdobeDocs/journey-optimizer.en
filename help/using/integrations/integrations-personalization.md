@@ -91,6 +91,14 @@ In the below example, a reservation system integration returns a flight booking 
 
     Here, the reservation or profile API that returns the flight identifier.
 
+    ![](assets/uc-integrations-3.png)
+
+1. To wire up the input, access **[!UICONTROL Helper function]** menu and add your Helper. Here `Let` function.
+
+1. Update the variable to map it dynamically to the output of the reservation system integration, specifically to the flight booking reference that the reservation system returns as part of its passenger profile payload.
+
+    ![](assets/uc-integrations-4.png)
+
 1. Define that integration's inputs as usual (static values, profile attributes, or other allowed mappings), then save so its response is available for chaining.
 
     >[!NOTE]
@@ -99,13 +107,21 @@ In the below example, a reservation system integration returns a flight booking 
 
 1. Select the **second** integration (for example, the API that needs the flight number or booking reference on the URL path).
 
+    ![](assets/uc-integrations-5.png)
+
 1. For each input that must come from the first call (often a **path variable** or **variable** header or query parameter), choose the mapping source that references the **first integration's response** (for example, the flight booking reference field from the reservation payload). Do not use a static test value if you need live, profile-specific data.
 
+    ![](assets/uc-integrations-6.png)
+
 1. Insert the response tokens you need in the content (for example, destination name from the flight API, loyalty balance from a loyalty integration) using the ![add](assets/do-not-localize/Smock_Add_18_N.svg) control.
+
+    ![](assets/uc-integrations-8.png)
 
 1. Save the personalization.
 
 When you **simulate** or send, Journey Optimizer resolves integrations in order. The first call runs with the profile context you configured, and its output is used to build the second request. Different integrations may run at simulation time and at send time according to your setup and channel behavior.
+
+![](assets/uc-integrations-7.png)
 
 ## How-to video {#video}
 
