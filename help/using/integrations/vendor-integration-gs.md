@@ -26,6 +26,7 @@ Apply the following when you configure any integration in this guide or a simila
 * **Volume and reliability:** Respect the vendor's **rate limits**. Configure **timeout**, **retry**, and **cache** policy for your channel (for example batch email vs transactional sends) and validate under load.
 * **Security:** Store and rotate tokens, API keys, and OAuth credentials according to your organization's policies. Do not embed secrets in message content.
 
+
 ## Limitations & exclusions {#limitations-exclusions}
 
 The third-party solutions list is **illustrative**, not exhaustive. Vendor APIs, hosts, rate limits, and JSON or HTML response shapes can change. Confirm endpoints, authentication, and field mapping with the vendor's current documentation and your subscription. Patterns here assume **read-oriented** calls suitable for personalization. Integrations supports mapping from **JSON** and **HTML** responses only. **Write-back**, **batch exports**, and responses in any other format are not supported.

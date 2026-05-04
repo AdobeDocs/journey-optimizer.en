@@ -13,6 +13,7 @@ keywords: integration, FAQ, external data, personalization
 
 Below are frequently asked questions about **Integrations** in Adobe Journey Optimizer.
 
+
 ## Get started
 
 +++ What do Integrations do in Journey Optimizer?
