@@ -67,10 +67,9 @@ Your integration personalization is now successfully applied to your content, en
 
 ![](assets/external-integration-content-7.png)
 
-<!--
 ## Map one API call to another {#map-integration-chain}
 
-You can **chain** integrations so that values returned by one active integration drive the inputs (path, headers, or query parameters) of another. That lets you build a real-time data flow in a single message without custom code.
+You can chain integrations so that values returned by one active integration drive the inputs (path, headers, or query parameters) of another. That lets you build a real-time data flow in a single message without custom code.
 
 Before you start, make sure that:
 
@@ -80,13 +79,19 @@ Before you start, make sure that:
 
 In the below example, a reservation system integration returns a flight booking reference from the profile context. A separate flight-information integration expects that reference as a **path variable**. In the personalization editor, you map the second integration's variable to a field from the first integration's response, instead of a static value or profile attribute alone.
 
-1. Open your message or fragment and place the cursor where you want personalized content (for example, a **[!UICONTROL Text]** field).
+1. Open your message or fragment and place the cursor where you want personalized content, for example, a **[!UICONTROL Text]** field.
 
-1. Open the personalization editor and go to **[!UICONTROL Integrations]** → **[!UICONTROL Open integrations]**.
+    ![](assets/uc-integrations-1.png)
 
-1. Select the integration whose output will supply the downstream input (in the example, the reservation or profile API that returns the flight identifier).
+1. Open the personalization editor. Access the **[!UICONTROL Integrations]** menu and click **[!UICONTROL Open integrations]**.
 
-1. Define that integration's inputs as usual—static values, profile attributes, or other allowed mappings—then save so its response is available for chaining.
+    ![](assets/uc-integrations-2.png)
+    
+1. Select the integration whose output supplies the downstream input. 
+
+    Here, the reservation or profile API that returns the flight identifier.
+
+1. Define that integration's inputs as usual (static values, profile attributes, or other allowed mappings), then save so its response is available for chaining.
 
     >[!NOTE]
     >
@@ -94,15 +99,13 @@ In the below example, a reservation system integration returns a flight booking 
 
 1. Select the **second** integration (for example, the API that needs the flight number or booking reference on the URL path).
 
-1. For each input that must come from the first call—often a **path variable** or **variable** header/query parameter—choose the mapping source that references the **first integration's response** (for example, the flight booking reference field from the reservation payload). Do not use a static test value if you need live, profile-specific data.
+1. For each input that must come from the first call (often a **path variable** or **variable** header or query parameter), choose the mapping source that references the **first integration's response** (for example, the flight booking reference field from the reservation payload). Do not use a static test value if you need live, profile-specific data.
 
 1. Insert the response tokens you need in the content (for example, destination name from the flight API, loyalty balance from a loyalty integration) using the ![add](assets/do-not-localize/Smock_Add_18_N.svg) control.
 
 1. Save the personalization.
 
-When you **simulate** or send, Journey Optimizer resolves integrations in order: the first call runs with the profile context you configured; its output is used to build the second request. Different integrations may run at simulation time and at send time according to your setup and channel behavior.
-
--->
+When you **simulate** or send, Journey Optimizer resolves integrations in order. The first call runs with the profile context you configured, and its output is used to build the second request. Different integrations may run at simulation time and at send time according to your setup and channel behavior.
 
 ## How-to video {#video}
 
