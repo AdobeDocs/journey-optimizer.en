@@ -398,8 +398,3 @@ The following capabilities and enhancements are scheduled for release in the nex
 </tbody>
 </table>
 
-### Improvements {#comming-soon-improv}
-
-#### Configuration
-
-* **Specific permissions for URL parameter encryption keys** - To access and manage keys for URL parameter encryption, new permissions have been created. You must now have the **View Key Registry** and **Manage Key Registry** permissions granted. <!--[Read more](../personalization/url-parameter-encryption.md#create-keys)-->
