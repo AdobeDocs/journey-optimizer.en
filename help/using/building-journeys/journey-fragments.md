@@ -23,7 +23,7 @@ Journey Fragments are reusable sets of journey nodes that you can build once and
 Once created, fragments are stored in a dedicated **[!UICONTROL Fragment Inventory]** and can be inserted into any journey using the **[!UICONTROL Journey fragments]** activity.
 
 >[!NOTE]
->For this first release, journey fragments use a **copy behavior**: inserting a fragment into a journey creates a static copy of the original nodes. Any updates made to the original fragment are not automatically reflected in journeys that have already used it.
+>Journey fragments use a **copy behavior**: inserting a fragment into a journey creates a static copy of the original nodes. Any updates made to the original fragment are not reflected in journeys that have already used it.
 
 ## Permissions {#journey-fragments-permissions}
 
@@ -65,7 +65,7 @@ To save journey nodes as a fragment directly from the journey canvas:
 1. Click **[!UICONTROL Save]**. The fragment is saved as a draft.
 
 >[!TIP]
->If you create a fragment from a journey, [test your journey](testing-the-journey.md) **before** saving the fragment to ensure the selected nodes behave as expected.
+>If you create a fragment from a journey, [test or simulate your journey](testing-the-journey.md) **before** saving the fragment to ensure the selected nodes behave as expected.
 
 >[!TAB From the fragment inventory]
 
@@ -77,7 +77,7 @@ To create a fragment directly from the inventory:
 1. When done, click **[!UICONTROL Save]** to save the fragment as a draft.
 
 >[!CAUTION]
->Test mode is not available in the fragment editor. This means you cannot validate the behavior of the configured activities before the fragment is activated and inserted into a journey. For fragments where logic accuracy is critical, consider [building and testing the nodes in a full journey](testing-the-journey.md) first, then saving them as a fragment from the canvas tab above.
+>Test mode and simulation are not available in the fragment editor. This means you cannot validate the behavior of the configured activities before the fragment is activated and inserted into a journey. For fragments where logic accuracy is critical, consider [building and testing or simulating the nodes in a full journey](testing-the-journey.md) first, then saving them as a fragment from the canvas tab above.
 
 >[!ENDTABS]
 
@@ -97,7 +97,7 @@ To edit a fragment, open it from the **[!UICONTROL Fragment Inventory]** by clic
 >
 >* Only **[!UICONTROL Draft]** fragments can be edited. To modify an **[!UICONTROL Active]** fragment, deactivate it first.
 >
->* Test mode is not available in the fragment editor. Test any journey-level logic in the full journey before saving nodes as a fragment.
+>* Test mode and simulation are not available in the fragment editor. Test or simulate any journey-level logic in the full journey before saving nodes as a fragment.
 >
 >* [Jump](jump.md) activities are not allowed inside a fragment.
 
@@ -105,14 +105,23 @@ To edit a fragment, open it from the **[!UICONTROL Fragment Inventory]** by clic
 
 ### Fragment statuses {#fragment-statuses}
 
-Journey fragments follow a two-status lifecycle:
+Journey fragments follow a lifecycle with the following statuses:
 
 | Status | Description |
 |---|---|
 | **[!UICONTROL Draft]** | The fragment is being authored and is not yet available for use in journeys. |
 | **[!UICONTROL Active]** | The fragment is ready to be used in journeys. |
+| **[!UICONTROL Archived]** | The fragment has been archived and is no longer available for use in journeys. |
 
-To activate a **[!UICONTROL Draft]** fragment, open it and use the **[!UICONTROL Activate]** icon. To deactivate an **[!UICONTROL Active]** fragment, open it and use the **[!UICONTROL Deactivate]** icon.
+The following rules apply to fragment status transitions:
+
+* Only **[!UICONTROL Draft]** fragments can be activated. Open a draft fragment and use the **[!UICONTROL Activate]** icon.
+* Only **[!UICONTROL Active]** fragments can be deactivated or archived.
+* Only **[!UICONTROL Archived]** fragments can be unarchived. Unarchiving a fragment returns it to **[!UICONTROL Draft]** state.
+* Only **[!UICONTROL Draft]** fragments can be deleted.
+
+>[!NOTE]
+>When activating a fragment, most of the same validation checks that run during journey publication are applied. However, **contextual attributes are not validated** and **governance policies are not enforced** at activation time — both are evaluated when the fragment is inserted and used in a journey.
 
 ### Fragment actions {#fragment-actions}
 
@@ -120,25 +129,29 @@ From the fragment inventory, you can perform the following actions on a fragment
 
 * **[!UICONTROL Open]**: edit the fragment by clicking on its name.
 * **[!UICONTROL Duplicate]**: create a copy of the fragment, from the **[!UICONTROL More actions]** (...) icon.
-* **[!UICONTROL Delete]**: delete a fragment from the active inventory,  from the **[!UICONTROL More actions]** (...) icon.
-* **[!UICONTROL Edit tags]** — add or remove tags of a fragment, from the **[!UICONTROL More actions]** (...) icon.
+* **[!UICONTROL Archive]**: archive a fragment (available for **[!UICONTROL Active]** fragments only), from the **[!UICONTROL More actions]** (...) icon. Archived fragments are no longer available in the fragment picker.
+* **[!UICONTROL Unarchive]**: restore an archived fragment (available for **[!UICONTROL Archived]** fragments only), from the **[!UICONTROL More actions]** (...) icon. The fragment returns to **[!UICONTROL Draft]** state.
+* **[!UICONTROL Delete]**: permanently delete a fragment (available for **[!UICONTROL Draft]** fragments only), from the **[!UICONTROL More actions]** (...) icon.
+* **[!UICONTROL Edit tags]**: add or remove tags of a fragment, from the **[!UICONTROL More actions]** (...) icon.
 
 ## Use a fragment in a journey {#use-journey-fragment}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_fragment_add"
 >title="Add a journey fragment"
->abstract="Only **[!UICONTROL Active]** fragments are available in the picker. Inserting a fragment creates a **static copy** of its nodes — any subsequent updates to the original fragment are not reflected in the journey."
+>abstract="Only **[!UICONTROL Active]** fragments are available in the picker. Inserting a fragment creates a **static copy** of its nodes — updates to the original fragment are not reflected in the journey."
 
 To insert a fragment into a journey:
 
 1. Open your journey and drag the **[!UICONTROL Journey fragments]** activity from the left rail.
-1. Drop it into an existing branch. A fragment picker appears.
+1. Drop it into an existing branch, or onto an empty canvas. A fragment picker appears.
 1. Browse or search for the fragment you want to use. You can preview a fragment or open it in another tab before inserting it.
 1. Select the fragment. Its nodes are copied into the canvas at the drop point.
 
 >[!NOTE]
 >Only **[!UICONTROL Active]** fragments are available in the picker. Inserting a fragment creates a **static copy** of its nodes — any subsequent updates to the original fragment are not reflected in the journey.
+>
+>When dropping a fragment onto an empty canvas, the fragment must start with a **[!UICONTROL Read Audience]**, **[!UICONTROL Audience Qualification]**, or **[!UICONTROL Event]** node (same rule as when starting any journey).
 
 ## Guardrails and limitations {#guardrails}
 
@@ -157,7 +170,7 @@ The following guardrails apply to journey fragments:
 
 * Only **[!UICONTROL Active]** fragments can be inserted into a journey.
 * Inserting a fragment creates a **static copy** of its nodes. Updates to the original fragment are not propagated to journeys where it has been used.
-* A fragment must be inserted into an **existing branch** in the canvas.
+* A fragment can be dropped into an existing branch or onto an empty canvas. When dropped onto an empty canvas, the fragment must start with a **[!UICONTROL Read Audience]**, **[!UICONTROL Audience Qualification]**, or **[!UICONTROL Event]** node.
 
 **General**
 
@@ -172,13 +185,13 @@ The following examples illustrate common journey patterns that can be saved and 
 
 **Eligibility checks**
 
-A standard entry pattern — such as a [Read Audience](read-audience.md) node followed by eligibility filters — can be encapsulated into a fragment. This allows teams to maintain consistency in how profiles enter journeys while reducing setup time. The fragment can be the [Condition](condition-activity.md) only, or the Read Audience and Condition together.
+A standard entry pattern — such as a [Read Audience](read-audience.md) node followed by eligibility filters — can be encapsulated into a fragment. This allows teams to maintain consistency in how profiles enter journeys while reducing setup time. The fragment can be the [Optimize](optimize.md) activity only, or the Read Audience and Optimize activity together.
 
 ![Eligibility check fragment example](assets/journey-fragments-uc-eligibility-check.png)
 
 **Preferred channel**
 
-A fragment can evaluate a profile's preferred communication channel — email, push, or SMS — and route the profile accordingly. This logic can be reused across any journey involving outbound messaging, ensuring consistent channel preference management. The fragment can include the [Condition](condition-activity.md) and all three channel branches.
+A fragment can evaluate a profile's preferred communication channel — email, push, or SMS — and route the profile accordingly. This logic can be reused across any journey involving outbound messaging, ensuring consistent channel preference management. The fragment can include the [Optimize](optimize.md) activity and all three channel branches.
 
 ![Preferred channel fragment example](assets/journey-fragments-uc-preferred-channel.png)
 
