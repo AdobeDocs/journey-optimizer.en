@@ -244,10 +244,6 @@ You can now select your configuration when creating your push notifications.
 >title="Personalize App id"
 >abstract="When you manage multiple mobile apps, store each app id on the profile and use a single push channel configuration. Open the personalization editor next to the App id field to select a profile attribute; the expression is evaluated at send time for each recipient. Ensure push credentials exist for every app id your expression can return."
 
->[!AVAILABILITY]
->
->This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 When you have many brands or tenants with separate apps, you can store each **[!UICONTROL App id]** on the profile and use a single channel configuration to send push notifications to the correct app for each recipient.
 
 To do so, click the Personalization icon next to the **[!UICONTROL App id]** field, select a profile attribute mapped to the app id, and save. The field uses the corresponding [Handlebars expression](../personalization/personalization-syntax.md) evaluated for each recipient at send time.
