@@ -123,6 +123,8 @@ Use this information to monitor the complexity of your journey before publishing
 
 The default limit is 2 MB. Contact Adobe Customer Care if you need to request a higher limit for your organization.
 
+For full details on thresholds, warning and error messages, and troubleshooting steps, refer to [Journey payload size validation](../start/guardrails.md#journey-payload-size) and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys).
+
 ## Journey and profile timezones {#timezone}
 
 The timezone is defined at journey level. You can enter a fixed time zone or use [!DNL Adobe Experience Platform] profiles to define the journey time zone. If a time zone is defined in [!DNL Adobe Experience Platform] profile, it can be retrieved in the journey.
