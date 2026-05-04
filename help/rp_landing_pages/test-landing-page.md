@@ -16,7 +16,7 @@ This section covers all testing and approval capabilities in Journey Optimizer. 
 
 This landing page helps you choose the right testing approach based on what you're building (campaigns vs. journeys), walks you through recommended testing workflows, and provides quick access to all testing and approval resources. Start with [Choose your testing approach](#choose-your-testing-approach) below to identify which tools apply to your use case. For definitions of key testing terms, see [Key terminology](#key-terminology).
 
-## Test & Approve Content
+## Test & approve content
 
 :::: landing-cards-container
 :::
@@ -226,7 +226,7 @@ The right testing approach depends on what you're building and what you need to 
 
 **For API-triggered campaigns:**
 
-* Use the [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target-"_blank"} to trigger proof jobs programmatically
+* Use the [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target-"_blank"} to trigger proof jobs programmatically
 
 >[!TAB Testing journeys]
 
@@ -486,7 +486,7 @@ Understand how testing capabilities connect to each other and to your broader Jo
 
 +++**Q: How do I test API-triggered campaigns?**
 
-**Option 1:** Use [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target-"_blank"} for programmatic testing
+**Option 1:** Use [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target-"_blank"} for programmatic testing
 **Option 2:** Preview content with test profiles in UI
 **Option 3:** Send proofs to test email addresses
 **Best practice:** Combine all three for comprehensive validation

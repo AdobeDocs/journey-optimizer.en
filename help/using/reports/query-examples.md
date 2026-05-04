@@ -35,6 +35,7 @@ Before running any query on this page, ensure the following:
 | Investigate Read Audience execution or errors | [Read Audience queries](#read-segment-queries) |
 | Troubleshoot message or action errors | [Message & Action errors](#message-action-errors) |
 | Analyze Audience Qualification discards | [Audience Qualification queries](#segment-qualification-queries) |
+| Investigate business rules discards | [Business rules queries](#business-rules-queries) |
 | Debug external or business events | [Event-based queries](#event-based-queries) |
 | Monitor custom action endpoint performance | [Custom Action queries](#query-custom-action) |
 | Track Engageable Profiles and license usage | [Engageable Profiles queries](#engageable-profiles-queries) |
@@ -959,6 +960,60 @@ This query returns all events (external events / audience qualification events) 
 
 +++
 
+## Queries related to business rules {#business-rules-queries}
+
++++Check all discards due to journey frequency capping exclusions on a specific journey after a specific date
+
+This query returns the rejected ruleset and rule details for all profiles discarded due to frequency capping rules on a specific journey, starting from a given date.
+
+_Data Lake query_
+
+```sql
+SELECT
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCodeReason,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.ID AS RULESET_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.name AS RULESET_NAME,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.ID AS RULE_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.name AS RULE_NAME
+FROM
+    journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
+AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionId>'
+AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.ID is not null
+AND
+    timestamp >= to_date('<YYYY-MM-DD>')
+```
+
+_Example_
+
+```sql
+SELECT
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCodeReason,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.ID AS RULESET_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.name AS RULESET_NAME,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.ID AS RULE_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.name AS RULE_NAME
+FROM
+    journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
+AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID='3855072d-79c3-438a-a5c3-c77fd6843812'
+AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.ID is not null
+AND
+    timestamp >= to_date('2025-05-16')
+```
+
+This query returns all discards where a ruleset was matched (non-null `rejectedRuleset.ID`). The `eventCodeReason` field provides the sub-reason for the discard: `LOWER_PRIORITY` (profile discarded due to journey arbitration) or `CAP_REACHED` (profile discarded because the frequency cap was reached). The results show which specific frequency capping rulesets and rules caused profiles to be excluded from the journey after the specified date.
+
++++
+
 ## Event-based queries {#event-based-queries}
 
 +++Check if a business event was received for a journey
@@ -1043,17 +1098,16 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 +++
 
-## Queries for Engageable Profiles {#engageable-profiles-queries}
+## Queries for engageable profiles {#engageable-profiles-queries}
 
 These queries help you monitor and analyze your Engageable Profiles count. An Engageable Profile is a unique profile that has been engaged through journeys or campaigns in the past 12 months. Learn more about [Engageable Profiles and license usage](../audience/license-usage.md#what-is-engageable-profile).
 
->[!IMPORTANT]
->
->**Best practices for querying Engageable Profiles:**
->* Ensure each non-aggregate field is included in the `GROUP BY` clause
->* Avoid referencing datasets that don't exist in your sandbox - confirm dataset names in the Platform UI
->* Use `distinct` when counting unique profiles to avoid duplicates across identity namespaces
->* When using `LIMIT`, place it at the end of the query after `ORDER BY` clauses
+**Best practices for querying Engageable Profiles:**
+
+* Ensure each non-aggregate field is included in the `GROUP BY` clause
+* Avoid referencing datasets that don't exist in your sandbox - confirm dataset names in the Platform UI
+* Use `distinct` when counting unique profiles to avoid duplicates across identity namespaces
+* When using `LIMIT`, place it at the end of the query after `ORDER BY` clauses
 
 +++Count unique profiles engaged by a specific journey
 
@@ -1460,7 +1514,7 @@ ORDER BY
 
 +++
 
-## Queries related to Custom Action performance metrics {#query-custom-action}
+## Queries related to custom action performance metrics {#query-custom-action}
 
 +++ Total number of successful calls, errors and requests per second of each endpoint over a specific time period
 

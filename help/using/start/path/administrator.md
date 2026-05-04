@@ -8,7 +8,7 @@ role: Admin
 level: Intermediate
 exl-id: 24f85ced-aa45-493f-b2c4-7c7b58351b38
 ---
-# Get Started for System Administrators {#get-started-sys-admins}
+# Get started for system administrators {#get-started-sys-admins}
 
 As a **System Administrator**, you set up the Journey Optimizer environment and manage access to enable your teams to work efficiently and securely. You perform essential configuration steps so that the [Data Engineer](data-engineer.md), [Developer](developer.md), and [Marketer](marketer.md) can start working with [!DNL Adobe Journey Optimizer].
 

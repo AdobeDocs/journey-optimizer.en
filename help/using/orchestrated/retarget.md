@@ -20,7 +20,7 @@ Retargeting allows you to follow up with recipients based on how they responded 
 ![](assets/do-not-localize/retarget-schema.png){zoomable="yes"}
 
 
-## Create a Feedback-based Retargeting Rule {#feedback-retarget}
+## Create a feedback-based retargeting rule {#feedback-retarget}
 
 Feedback-based Retargeting Rule allows you to retarget recipients based on message delivery events captured in the **[!UICONTROL Message Feedback]** schema. These events include outcomes such as messages being sent, opened, bounced, or marked as spam.
 

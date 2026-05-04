@@ -6,7 +6,7 @@ topic: Integrations
 role: User
 level: Experienced
 exl-id: 70f64348-092b-4350-91dc-72c3c07300f9
-badge: label="Limited Availability" type="Informative"
+
 ---
 # Leverage fragments in decision policies {#fragments}
 
@@ -14,7 +14,7 @@ If your decision policy contains decision items including fragments, you can lev
 
 >[!AVAILABILITY]
 >
->This feature is available in Limited Availability for the **Code-based experience** and **Email** channels. To request access, contact your Adobe representative.
+>This feature is available for the **Code-based experience** and **Email** channels.
 
 For example, let's say you want to display different contents for several mobile device models. Add the specified fragments, each pertaining to a different phone model, to the decision item you are using in the decision policy. [Learn how](items.md#attributes).
 
@@ -117,3 +117,4 @@ If your decision policy qualifies for two offers and each has a fragment—for e
 >[!NOTE]
 >
 >You can still mark a fragment as mandatory by setting the `required` flag to `true`. However, if a fragment is temporarily missing, it may cause journey or campaign rendering to fail.
+

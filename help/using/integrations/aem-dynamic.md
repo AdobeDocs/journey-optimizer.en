@@ -8,9 +8,9 @@ role: User
 level: Beginner
 exl-id: 3e777cc5-a935-4e68-9de7-60b241e78f63
 ---
-# Work with Dynamic Media {#aem-dynamic}
+# Work with dynamic media {#aem-dynamic}
 
-## Get started with Dynamic Media {#gs-aem-dynamic}
+## Get started with dynamic media {#gs-aem-dynamic}
 
 The Asset selector now supports Dynamic media allowing you to seamlessly select and use approved dynamic media renditions within Journey Optimizer. Changes made to assets in Adobe Experience Manager are instantly reflected in your Journey Optimizer content, ensuring the most up-to-date versions are always in use without requiring manual updates.
 
@@ -192,7 +192,7 @@ You can insert your dynamic template directly into your content using the HTML c
 Once you have performed your tests and validated the content, you can send your message to your audience. 
 
 <!--
-## Personalization with Text Overlay
+## Personalization with text overlay
 
 Easily customize any dynamic media by replacing the existing text overlay with new text of your choice, allowing for seamless updates and personalization.
 

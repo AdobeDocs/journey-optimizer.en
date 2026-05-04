@@ -168,7 +168,3 @@ Now that you understand journey types, you're ready to:
 * **[Learn about the journey designer](using-the-journey-designer.md)** - Design your journey canvas
 * **[Explore journey capabilities](journey.md#capabilities)** - Discover advanced features
 * **[View journey FAQ](journey-faq.md)** - Common questions answered
-
-**Need to compare with campaigns?**
-
-* [Journeys vs Campaigns comparison guide](../start/journeys-vs-campaigns.md) - Choose between journeys, Action/API campaigns, and Orchestrated campaigns

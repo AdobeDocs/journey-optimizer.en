@@ -188,7 +188,7 @@ All journey notifications available in the user interface are listed below.
 >
 >Adobe Journey Optimizer specific alerts apply only to **live** journeys. Alerts are not triggered for journeys in test mode.
 
-### Read Audience Trigger Unsuccessful {#alert-read-audiences}
+### Read Audience trigger unsuccessful {#alert-read-audiences}
 
 This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max).
 
@@ -200,7 +200,7 @@ The I/O event subscription name corresponding to the **Read Audience Trigger Uns
 
 To troubleshoot **Read Audience** alerts, check your audience count in the Experience Platform interface.
 
-### Profile Discard Rate Exceeded {#alert-discard-rate}
+### Profile discard rate exceeded {#alert-discard-rate}
 
 This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
@@ -215,7 +215,7 @@ There are several reasons a profile could be discarded, which will inform the me
 * Event throughput rate is exceeded. To solve this, ensure that events coming into the system are not exceeding these limits.
 
 
-### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
+### Custom action error rate exceeded {#alert-custom-action-error-rate}
 
 This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
@@ -234,7 +234,7 @@ Custom actions errors can happen for a variety of reasons. To troubleshoot these
 * Check that the endpoint is reachable and the custom action can reach it via the custom action connectivity checker.
 * Verify the authentication credentials, check internet connectivity, etc.
 
-### Profile Error Rate Exceeded {#alert-profile-error-rate}
+### Profile error rate exceeded {#alert-profile-error-rate}
 
 This alert warns you if the ratio of profiles-in-error to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
@@ -254,7 +254,7 @@ This alert notifies you when a journey has finished. The definition of "finished
 
 This is an informational alert that helps you keep track of journey completion. There is no resolution criteria as this is a one-time notification.
 
-### Custom Action Capping Triggered {#alert-custom-action-capping}
+### Custom action capping triggered {#alert-custom-action-capping}
 
 This alert warns you when capping has been triggered on a custom action. Capping is used to limit the number of calls sent to an external endpoint to prevent overwhelming the endpoint.
 

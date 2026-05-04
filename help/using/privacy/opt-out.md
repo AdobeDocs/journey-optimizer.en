@@ -23,7 +23,7 @@ While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails a
 
 >[!NOTE]
 >
->In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
+>In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"}
 
 ### Check push opt-out status {#push-opt-out-status}
 
@@ -68,7 +68,7 @@ Learn how to manage opt-out in Journey Optimizer email and SMS messages in these
 
 Your customers can also opt out from being presented personalized contents. Once a profile has opted out from personalization, you need to ensure that their data is not used for personalization and you must replace any personalized content with a fallback variant.
 
-### In Decision Management {#opt-out-decision-management}
+### In decision management {#opt-out-decision-management}
 
 When leveraging offers, personalization preferences are not automatically implemented in [decision scopes](../offers/offer-activities/create-offer-activities.md#add-decision-scopes) used from a [decisioning](../offers/api-reference/offer-delivery-api/decisioning-api.md) API request or [edge decisioning](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md) API request. In this case, you need to manually enforce personalization consent. To do so, follow the steps below.
 

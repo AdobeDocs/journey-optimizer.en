@@ -13,8 +13,23 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## May 2026 {#may-2026}
+
+* A new **Business rules queries** section has been added to the query examples page, providing a Data Lake query to check all profile discards due to journey frequency capping exclusions on a specific journey after a specific date. The query includes the `eventCodeReason` field to identify whether profiles were excluded because a cap was reached (`CAP_REACHED`) or due to a lower priority (`LOWER_PRIORITY`). [Read more](../reports/query-examples.md#business-rules-queries)
+
 ## April 2026 {#april-2026}
 
+* The **Change dimension** activity documentation has been updated to clarify that while the activity uses an external join and keeps all records at the dimension-change step, records without a matching profile in the new targeting dimension are silently excluded at message delivery time. [Read more](../orchestrated/activities/change-dimension.md)
+
+* The guardrails in the **Add a CC field to emails** documentation have been enhanced. They now specify that the CC address is not checked against consent or suppression, and that opens and click-throughs from emails sent to the CC address are taken into account in the total opens and clicks from the send analysis. [Read more](../configuration/cc-email-field.md)
+
+* The **Channel activities** documentation has been updated with a new **Marketing vs Transactional messages** section explaining the behavioral differences between the two channel categories: opt-in requirements, business rule application, channel configuration type, and recommended use cases. [Read more](../orchestrated/activities/channels.md#marketing-vs-transactional)
+
+* The **Fork activity** documentation has been enriched with a new **Examples** section illustrating how to use the Fork activity to split an audience across two parallel email branches — one Marketing and one Transactional — in a single campaign run. [Read more](../orchestrated/activities/fork.md#fork-examples)
+
+* The **Build audience activity** documentation has been enriched with a new example showing how to filter profiles by a subscription plan attribute using the rule builder. [Read more](../orchestrated/activities/build-audience.md#build-audience-examples)
+
+* The **Get started with Orchestrated campaigns** page documents the entry-level **Build audience → Fork → Channel A + Channel B** pattern in **What's inside an Orchestrated campaign?**, with cross-references to the Fork activity and Marketing vs Transactional messages pages. [Read more](../orchestrated/gs-orchestrated-campaigns.md#gs-ms-campaign-inside)
 * The **Edit email content with the advanced HTML editor** page has been moved from the Content management section to the **Email** section of the documentation (under Email design) and the page file has been renamed to **email-expert-mode.md**. The page now documents that the advanced HTML editor is available in the Email Designer for email messages as well as for email content templates. [Read more](../email/email-expert-mode.md)
 
 * The **Start and monitor Orchestrated campaigns** documentation has been updated with a new section detailing the internal publication-time execution sequence, along with a campaign lifecycle status table, a pre-publication checklist, and a sending confirmation warning for non-recurring campaigns. [Read more](../orchestrated/start-monitor-campaigns.md#publication-sequence)

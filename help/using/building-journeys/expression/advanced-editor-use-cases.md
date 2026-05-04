@@ -108,7 +108,7 @@ This expression returns a boolean.
 
 From there you can add another path in your journey for when the product is not in store and send notification with engagement offer. Configure messages accordingly and use personalization data to enhance the message target.
 
-## Timestamp Filtering in Expressions
+## Timestamp filtering in expressions
 
 When referencing multiple cart activity events, specify both a start and end timestamp window to avoid picking up historical data. For instance:
 

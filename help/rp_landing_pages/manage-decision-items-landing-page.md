@@ -10,7 +10,7 @@ exl-id: b6490231-e2c8-40c0-9127-128bab76493f
 
 Managing decision items in Adobe Journey Optimizer is all about ensuring the right marketing offers reach the right audiences at the right time. This section introduces you to key tools like catalogs for organizing items, detailed attributes for tailoring offers, and collections for grouping them intelligently. You'll also explore rules for eligibility, constraints to cap how often offers appear, and practical tips for editing and maintaining your items. Whether you're setting up personalized campaigns or fine-tuning your decisioning strategy, these features work together to help you deliver impactful, targeted experiences with confidence.
 
-## Manage Decision Items
+## Manage decision items
 
 :::: landing-cards-container
 :::

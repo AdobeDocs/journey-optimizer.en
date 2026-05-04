@@ -80,7 +80,7 @@ A data source in Journey Optimizer defines which fields from Adobe Experience Pl
 >[!NOTE]
 >The [Adobe Experience Platform Glossary](https://experienceleague.adobe.com/en/docs/experience-platform/landing/glossary){target="_blank"} defines "data source" generically as the origin of data (a CRM, mobile app, etc.). In Journey Optimizer, **data source** has a specific meaning: a UI configuration that controls which fields are exposed inside journeys and messages.
 
-### Identity and Real-Time Customer Profile {#identity}
+### Identity and real-time customer profile {#identity}
 
 An identity is an identifier that uniquely represents an individual customer, such as a cookie ID, device ID, email address, or CRM ID. Identities are organized into namespaces (Email, ECID, CRMID), and multiple identities for the same person are stitched into a unified identity graph. Real-Time Customer Profile uses that graph to maintain a holistic view of each individual customer by combining data from multiple channels — including online, offline, CRM, and third-party sources.
 

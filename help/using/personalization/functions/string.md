@@ -227,7 +227,7 @@ The following query determines, with case sensitivity, if the person's name is "
 
 ```
 
-## Equals Ignore Case{#equalsIgnoreCase}
+## Equals ignore case{#equalsIgnoreCase}
 
 The `equalsIgnoreCase` function is used to determine if a string is equal to the specified string, without case sensitivity.
 
@@ -383,7 +383,7 @@ The following function returns 'true' if the profile's mobile phone number is em
 {%= isEmpty(profile.mobilePhone.number) %}
 ```
 
-## Is Not Empty {#is-not-empty}
+## Is not empty {#is-not-empty}
 
 The `isNotEmpty` function is used to determine if a string is not empty.
 
@@ -572,7 +572,7 @@ The following query determines, with case sensitivity, if the person's name is n
 {%= notEqualTo(profile.person.name,"John") %}
 ```
 
-## Not Equal With Ignore Case {#not-equal-with-ignore-case}
+## Not equal with ignore case {#not-equal-with-ignore-case}
 
 The `notEqualWithIgnoreCase` function is used to compare two strings ignoring case.
 
@@ -797,7 +797,7 @@ The `toBool` function is used to convert an argument value into a boolean value,
 {= toBool(string) %}: boolean
 ```
 
-## To Date Time {#to-date-time}
+## To date time {#to-date-time}
 
 The `toDateTime` function is used to convert string to date. It returns the epoch date as output for invalid input.
 
@@ -807,7 +807,7 @@ The `toDateTime` function is used to convert string to date. It returns the epoc
 {%= toDateTime(string, string) %}: date-time
 ```
 
-## To Date Time Only {#to-date-time-only}
+## To date time only {#to-date-time-only}
 
 The `toDateTimeOnly` function is used to convert an argument value into a date time only value. It returns the epoch date as output for invalid input. This function accepts string, date, long and int field types.
 

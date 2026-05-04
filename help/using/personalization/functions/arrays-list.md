@@ -65,7 +65,7 @@ The following operation specifies people who have placed orders in more than one
 {%= distinct(person.orders.storeId).count() > 1 %}
 ```
 
-## Distinct Count With Null {#distinct-count-with-null}
+## Distinct count with null {#distinct-count-with-null}
 
 The `distinctCountWithNull` function is used to count the number of different values in a list including the null values.
 

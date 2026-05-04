@@ -31,9 +31,9 @@ Once your campaign has been activated, you need to retrieve the generated sample
     >
     >The endpoints in the cURL section differ between standard and [High throughput campigns](../campaigns/api-triggered-high-throughput.md).
 
-1. Use this cURL request into the APIs to build your payload and trigger the campaign. For more information, refer to the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution), where all endpoints for standard and High throughput campaigns are listed.
+1. Use this cURL request into the APIs to build your payload and trigger the campaign. For more information, refer to the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging#tag/execution), where all endpoints for standard and High throughput campaigns are listed.
 
-    API call examples are also available on [this page](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples/).
+    API call examples are also available on [this page](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples).
 
 ## Troubleshooting {#troubleshooting}
 
@@ -41,7 +41,7 @@ Once your campaign has been activated, you need to retrieve the generated sample
 
 If email delivery times exceed expectations, investigate potential outages or performance issues with external services, such as cloud infrastructure providers or email service providers. Journey Optimizer logs record message departure timestamps, which can help determine whether delays occurred downstream in the delivery pipeline.
 
-### Azure Cosmos DB authentication errors (500 Internal Server Error) {#cosmosdb-auth-errors}
+### Azure cosmos DB authentication errors (500 internal server error) {#cosmosdb-auth-errors}
 
 If you encounter **500 Internal Server Errors** when triggering API-triggered campaigns, and the system logs show a **403 Forbidden** error from Azure Cosmos DB with a message such as:
 

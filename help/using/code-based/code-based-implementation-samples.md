@@ -27,7 +27,7 @@ If you have a client-side implementation, you can use one of the AEP client SDKs
 
 * The steps [below](#client-side-how) describe the process of fetching the content published on the edge by the code-based experience journeys and campaigns in a sample **Web SDK** implementation and displaying the personalized content.
 
-* The steps to implement code-based channel using **Mobile SDK** are described in [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
+* The steps to implement code-based channel using **Mobile SDK** are described in [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial){target="_blank"}.
 
   >[!NOTE]
   >
@@ -315,7 +315,7 @@ If you have a hybrid implementation, check out the links below.
 * Adobe Tech Blog: [Hybrid Personalization in the Adobe Experience Platform Web SDK](https://blog.developer.adobe.com/hybrid-personalization-in-the-adobe-experience-platform-web-sdk-6a1bb674bf41){target="_blank"}
 * SDK Documentation: [Hybrid personalization using Web SDK and Edge Network Server API](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/hybrid-personalization.html){target="_blank"}
 
-## Debug Edge network API calls with Adobe Experience Platform Assurance {#debugging-edge-api-assurance}
+## Debug edge network API calls with Adobe Experience Platform assurance {#debugging-edge-api-assurance}
 
 When directly using the Edge Network API for code-based experiences (not using Web SDK or Mobile SDK), you can debug your API calls with Adobe Experience Platform Assurance by including the Assurance session ID as a validation token header.
 
@@ -358,7 +358,7 @@ When directly using the Edge Network API for code-based experiences (not using W
 
 To help you get started with implementing code-based experiences, refer to the comprehensive step-by-step tutorials below:
 
-* **Mobile SDK implementation**: Follow [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"} to learn how to set up code-based experiences on mobile apps using the Adobe Experience Platform Mobile SDK.
+* **Mobile SDK implementation**: Follow [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial){target="_blank"} to learn how to set up code-based experiences on mobile apps using the Adobe Experience Platform Mobile SDK.
 
 * **Web SDK implementation**: Learn how to configure the Web SDK for decisioning and code-based experiences in [these tutorials](code-based-decisioning-implementations.md#tutorials).
 

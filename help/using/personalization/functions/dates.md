@@ -7,7 +7,7 @@ role: Developer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
 ---
-# Date Time Functions{#date-time}
+# Date time functions{#date-time}
 
 Date and time functions are used to perform date and time operations on values within Journey Optimizer.
 
@@ -650,7 +650,7 @@ The following operation gets all the values for the map `identityMap`.
 ```
 -->
 
-## To Date Time {#to-date-time}
+## To date time {#to-date-time}
 
 The `ToDateTime` function converts string to date. It returns the epoch date as output for invalid input.
 
@@ -687,7 +687,7 @@ The following operation gets all the values for the map `identityMap`.
 ```
 -->
 
-## Truncate to Start Of Day {#truncate-day}
+## Truncate to start of day {#truncate-day}
 
 The `truncateToStartOfDay` function is used to modify a given date-time by setting it to the start of the day with the time set to 00:00.
 

@@ -67,7 +67,7 @@ The **[!UICONTROL Journey Statistics]** table offers a detailed summary of cruci
 
 ## Journey exclusion {#journey-exclusion}
 
-The **[!UICONTROL Journey exclusion]** table presents a comprehensive view of the different factors that resulted in the exclusion of user profiles.
+The **[!UICONTROL Journey exclusion]** table presents a comprehensive view of the different factors that resulted in the exclusion of user profiles. To investigate business rules-related exclusions at the Data Lake level and identify whether profiles were excluded due to a cap being reached or a lower priority, use the queries available in [this section](query-examples.md#business-rules-queries).
 
 ## Action error {#action-error}
 
