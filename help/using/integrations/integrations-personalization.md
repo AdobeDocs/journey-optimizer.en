@@ -68,6 +68,7 @@ Your integration personalization is now successfully applied to your content, en
 ![](assets/external-integration-content-7.png)
 
 <!--
+
 ## Map one API call to another {#map-integration-chain}
 
 You can **chain** integrations so that values returned by one active integration drive the inputs (path, headers, or query parameters) of another. That lets you build a real-time data flow in a single message without custom code.

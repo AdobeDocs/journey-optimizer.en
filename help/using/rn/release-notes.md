@@ -45,7 +45,7 @@ New capabilities and improvements released earlier in April are announced with t
 <tr>
 <td>
 <p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
-<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
+<p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
 <p>For more information, refer to the <a href="../integrations/integrations.md">detailed documentation</a>.</p>
 <p>Availability date: May 4, 2026</p>
 </td>
@@ -65,7 +65,7 @@ New capabilities and improvements released earlier in April are announced with t
 <p><strong>Orchestrated campaigns</strong> now support an <strong>Incremental query</strong> activity that targets only profiles or events that are newly eligible since the last execution.
 
 This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly qualified loyalty members, and similar segments) while reducing query workloads and avoiding redundant sends over time.</p>
-<p>For more information, refer to the <a href="../orchestrated/activities/incremental-query.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../orchestrated/activities/incremental-query.md#incremental-query-configuration">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
