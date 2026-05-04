@@ -327,7 +327,7 @@ table>
 <tr>
 <td>
 <p>A new Journey Optimizer API is now available to retrieve journeys and their associated objects such as campaigns and surfaces.</p>
-<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve/">detailed documentation</a></p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve">detailed documentation</a></p>
 <p>Availability date: Sept 25, 2025</p>
 </td>
 </tr>
@@ -1321,7 +1321,7 @@ Improvements coming with this release are listed below.
 
 * **Interactive Message Execution API update** - Availability date: June 6th, 2025 
 
-  The Interactive Message Execution API now allows you to delete the schedule of upcoming campaigns execution. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/messaging/){target="_blank"}
+  The Interactive Message Execution API now allows you to delete the schedule of upcoming campaigns execution. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/messaging){target="_blank"}
 
 
 ## May '25 release notes {#25-5-rn}

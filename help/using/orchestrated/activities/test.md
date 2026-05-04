@@ -35,7 +35,7 @@ To set up the **[!UICONTROL Test]** activity:
 
    * **Label**: A name for the transition so you can identify it on the canvas.
 
-   * **Condition type**: The data to evaluate, by default, population count. 
+   * **Condition type**: The data to evaluate, by default, population count.  Variables (coming from global variables or a trigger signal) are also listed here and can be selected to base a condition on a variable value. [Learn how to use variables in Orchestrated campaigns](../variables-orchestrated-campaigns.md)
 
    * **Operator**: The comparison to apply, e.g. equal to, greater than, less than. The list of operators depends on the condition type's data type.
 

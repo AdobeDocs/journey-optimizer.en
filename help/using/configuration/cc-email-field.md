@@ -7,9 +7,7 @@ feature: Channel Configuration
 topic: Administration
 role: Admin
 level: Experienced
-hide: true
 keywords: CC, carbon copy, email, channel configuration, email headers, BCC
-badge: label="Limited availability" type="Informative"
 exl-id: 9649cc07-3183-4510-b5d9-b1e33eff43e9
 ---
 # Add a CC field to emails {#cc-email-field}
@@ -18,10 +16,6 @@ exl-id: 9649cc07-3183-4510-b5d9-b1e33eff43e9
 >id="ajo_admin_config_cc"
 >title="Define a CC email address"
 >abstract="You can add a visible CC (carbon copy) field to emails sent with this channel configuration. Enter a fixed email address or use personalization (profile attribute or context variable). Be aware that CC usage is counted toward your entitled message volume."
-
->[!AVAILABILITY]
->
->This feature is available for all customers in Limited Availability. Contact your Adobe representative to gain access.
 
 You can add a visible CC (carbon copy) field to emails sent by [!DNL Journey Optimizer] through your journeys and campaigns. This optional feature is configured at the [channel configuration](channel-surfaces.md) level, alongside the email header parameters and BCC email option.
 
