@@ -15,7 +15,7 @@ keywords: deeplink, deep link, universal links, app links, email
  
 Deeplinks in emails help you take recipients from an email to a specific screen or piece of content in your mobile app. It helps bring people straight to the intended in-app experience, without routing them through a web browser or an app store, so the journey stays relevant and on-brand.
 
-To add a deeplink to an email, select the element you want to link (text, button, or image) in the Email Designer, click **[!UICONTROL Insert link]** in the contextual toolbar and choose **[!UICONTROL Deeplink]** to enter your deeplink URL. [Learn more on inserting links](message-tracking.md#insert-links)
+To add a deeplink to an email, make sure [link tracking is enabled](message-tracking.md#enable-tracking). Select the element you want to link (text, button, or image) in the Email Designer, click **[!UICONTROL Insert link]** in the contextual toolbar and choose **[!UICONTROL Deeplink]** to enter your deeplink URL. [Learn more on inserting links](message-tracking.md#insert-links)
 
 When your recipients click the deeplink, they are taken directly to the intended in-app content - provided you have completed the configuration steps detailed on this page, which covers:
  
@@ -45,6 +45,8 @@ To be able to use deeplinks in emails for your mobile apps, complete the configu
       * Delegated subdomain
       * App bundle ID
       * SHA-256 certificate fingerprint
+
+<!--Adobe is hosting these files internally so not on customer's side.
 
 1. Validate the URLs below and ensure the content matches the expected format such as in the examples below.
 
@@ -91,7 +93,15 @@ To be able to use deeplinks in emails for your mobile apps, complete the configu
       ```
 
       +++
- 
+
+-->
+
+>[!IMPORTANT]
+>
+>Deeplinking through Adobe email infrastructure applies when [link tracking is enabled](message-tracking.md#enable-tracking). Tracked deeplink clicks use URLs under `/ee/v1/mclick/*`, which Adobe hosts and resolves.
+>
+>For **non-tracked** links, the URL is not rewritten through Adobe systems. You must configure universal links or app links on your own domains and hosting so those links open your app as intended.
+
 ## Mobile app implementation {#mobile-implementation}
  
 This section explains how to implement mobile deeplinks with [!DNL Adobe Journey Optimizer] so that, in a typical **HTTPS** setup (universal links and app links), a single URL can:
@@ -271,7 +281,7 @@ This section provides common implementation patterns for deeplinks. Your exact s
 ### Recommended practices {#deeplink-best-practices}
  
 * **Use stable paths**: Prefer routes that are resilient to app UI changes (for example `/account/orders` instead of `/tab/3/view/2`).
-* **Account for tracked paths**: In email, the clicked link may use tracked path patterns (for example `/ee/v1/mclick/` as allowed in the AASA example in the configuration section). Make sure your router can parse the final URL.
+* **Account for tracked paths**: When link tracking is enabled, the clicked link may use tracked path patterns (for example `/ee/v1/mclick/`). Make sure your router can parse the final URL after resolving the tracked link.
 * **Keep parameters predictable**: Define a consistent parameter scheme (for example `?orderId=12345`).
 * **Avoid sensitive data in URLs**: Do not put secrets or personal data directly into the deeplink URL.
 * **Test your deeplink**: Send a proof and click the deeplink on a device where the app is installed.
@@ -283,7 +293,7 @@ This section provides common implementation patterns for deeplinks. Your exact s
  
 +++ The app doesn't open when I tap the deeplink.
  
-* Verify the URL matches the host and path patterns your app is registered to handle, including tracked click paths when link tracking is enabled (for example paths under `/ee/v1/mclick/` as shown in the AASA example in the configuration section).
+* Verify the URL matches the host and path patterns your app is registered to handle, including tracked click paths when link tracking is enabled (for example paths under `/ee/v1/mclick/`).
 * For iOS universal links and Android app links, confirm domain association (AASA / `assetlinks.json`) is correctly configured and reachable.
 * Test on a real device (simulators/emulators can behave differently for link association).
  

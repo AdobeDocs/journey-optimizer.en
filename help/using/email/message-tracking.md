@@ -86,6 +86,10 @@ To insert links into your email content, follow the steps below:
 
     * Select **[!UICONTROL Deeplink]** to insert a link to a mobile app. This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement. [Learn more](deeplinks.md)
 
+        >[!IMPORTANT]
+        >
+        >Before using deeplinking, make sure [link tracking is enabled](#enable-tracking) for your message so that the URL is rewritten through Adobe systems.
+
 1. Enter the desired URL in the corresponding field, or select a landing page, and define the link settings and styles. [Learn more](#adjust-links)
 
     >[!NOTE]
