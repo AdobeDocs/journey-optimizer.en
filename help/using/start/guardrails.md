@@ -211,6 +211,8 @@ If the request exceeds the maximum allowed size, the response includes **Request
 * Consider splitting the journey into smaller journeys if needed.
 * If you believe your organization needs a higher limit, contact your Adobe representative.
 
+To monitor the current payload size of your journey before publishing, use the **[!UICONTROL Current journey payload size]** indicator in the journey properties panel. [Learn how to check the size of your journey payload](../building-journeys/journey-properties.md#journey-payload-size)
+
 ### Select package limitations for unitary journeys {#select-package-limitations}
 
 >[!NOTE]
