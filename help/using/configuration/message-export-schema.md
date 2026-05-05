@@ -450,7 +450,8 @@ This section lists the fields available in the exported dataset.
 
 +++
 
+<!--
 ## Schema reference
 
-![](assets/ajo-message-export-schema.png)
+![](assets/ajo-message-export-schema.png)-->
 
