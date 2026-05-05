@@ -25,7 +25,7 @@ Adobe Journey Optimizer offers two ways to test and validate your journey:
 
 * **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
-Note that Journey Simulation is in **Limited availability**. To share beta feedback and help us improve the experience, open **[!UICONTROL Beta feedback]** from the top bar.
+Note that Journey Simulation is in **Limited availability**. To share feedback and help us improve the experience, open **[!UICONTROL Feedback]** from the top bar.
 
 ![Beta feedback menu](assets/beta-feedback.png)
 
@@ -33,7 +33,7 @@ Note that Journey Simulation is in **Limited availability**. To share beta feedb
 
 >[!IMPORTANT]
 >
->You need the **Simulate journeys** permission to use the **[!UICONTROL Simulate]** menu. [Learn more](../administration/permissions.md)
+>You need the **Simulate journeys** permission to access the **[!UICONTROL Simulation]** feature. [Learn more](../administration/permissions.md)
 
 Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, from the UI or a JSON file, save them for reuse, adjust or remove them from the list, and send them into the journey.
 
@@ -83,7 +83,7 @@ The following steps show you how to create simulated users from the UI or by imp
 
     ![Simulated user selection panel](assets/simulate-5.png)
 
-1. Access **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View results](#viewing-logs).
+1. Access **[!UICONTROL Results]** tab to open the execution results and review how each step ran. For more information, see [View results](#viewing-logs).
 
 After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
@@ -113,7 +113,7 @@ Simulated users that you create manually are stored and can be selected from thi
 
     ![Simulated user selection panel](assets/simulate-5.png)
 
-1. Click **[!UICONTROL Show log]** to open the execution log and review how each step ran. For more information, see [View logs](#viewing-logs).
+1. Click **[!UICONTROL Show log]** to open the execution log and review how each step ran. For more information, see [View Results](#viewing-logs).
 
 After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
@@ -129,7 +129,7 @@ If your journey includes one or more events, you can trigger them while Simulati
 
     ![Event configuration interface with fields and drop-down for event selection](assets/simulate-9.png)
 
-1. In the simulated user drop-down, select the simulated user and finish configuring the event and how it is generated.
+1. From your simulated user drop-down, select the simulated user and finish configuring the event and how it is generated.
 
     ![Event configuration interface with fields and drop-down for event selection](assets/simulate-8.png)
 
@@ -137,13 +137,13 @@ If your journey includes one or more events, you can trigger them while Simulati
     
     A `Events triggered successfully` confirmation message appears when the simulated users successfully enter the journey.
 
-1. Click **[!UICONTROL Show log]** to open the execution log and review how each step ran. For more information, see [View logs](#viewing-logs).
+1. Click **[!UICONTROL Show log]** to open the execution log and review how each step ran. For more information, see [View Results](#viewing-logs).
 
 ## View results {#viewing-logs}
 
 The **[!UICONTROL Results]** tab allows you to view the test results. Use the view selector to choose how you browse the log:
 
-* **All simulated users**: Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. This view helps you scan the full simulation at a glance—activity, outcomes, and errors—without picking a single simulated user first.
+* **All simulated users**: Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. This view helps you scan the full simulation at a glance, activity, outcomes, and errors, without picking a single simulated user first.
 
 * **One simulated user**: In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect.
 
@@ -176,8 +176,7 @@ If a journey contains any of the following nodes, it cannot be started in **[!UI
 | Dataset Lookup | Customer dataset lookups by key are not supported; journeys that include this activity cannot be run in **[!UICONTROL Simulation]**. |
 | Path Experimentation (Optimize — Experiment variant) | Not supported in **[!UICONTROL Simulation]**. You can still use **[!UICONTROL Optimize]** for flows that used to live under **[!UICONTROL Condition]** (for example, data source conditions). |
 | Path Targeting (Optimize, Targeting Rule variant) | Not supported in **[!UICONTROL Simulation]**. |
-| Not supported outbound actions | **[!UICONTROL WhatsApp]** and **[!UICONTROL Direct mail]** in the journey stop **[!UICONTROL Simulation]** from starting. |
-| Inbound actions | **[!UICONTROL In-app]**, **[!UICONTROL Web]**, **[!UICONTROL Code-based experience]**, and **[!UICONTROL Content card]** actions in the journey stop **[!UICONTROL Simulation]** from starting. |
+| External audience attribute enrichment | Journeys that use personalized attributes from external audience sources will not start in **[!UICONTROL Simulation]** when this validation is active. |
 
 +++
 
@@ -190,7 +189,6 @@ The following capabilities are not supported in **[!UICONTROL Simulation]**.
 | Capability | Notes |
 | --- | --- |
 | Exit criteria | Exit criteria are not applied when you run **[!UICONTROL Simulation]**. |
-| External audiences | You cannot start **[!UICONTROL Simulation]** on a journey that uses an audience that is not based on [!DNL Unified Profile Service] (UPS). |
 | [!DNL Adobe Journey Optimizer] decisioning inside an action (for example, email content with Adobe Journey Optimizer decisioning) | Action proofs for content that uses [!DNL Adobe Journey Optimizer] decisioning are not generated. |
 | Mock custom action response | [!UICONTROL Custom actions] perform a real outbound call by default. Mocking the response so no external call runs is not supported. |
 | Consent policy evaluation | Consent cannot be mocked at the simulated-user level. |
@@ -202,6 +200,8 @@ The following capabilities are not supported in **[!UICONTROL Simulation]**.
 | Sandbox tooling (copy simulated users across sandboxes) | Not supported. |
 | Wave sending in journeys | Not supported. |
 | Quiet hours | Not supported. |
+| Opt-out management, suppression, and allow lists | Not supported. |
+| Dynamic subdomain and dynamic attributes in channel configurations | Not supported. |
 | Privacy service | Simulated users are not GDPR-compliant persistent profiles. Do not include real customer data in simulated users. |
 
 +++
@@ -210,20 +210,14 @@ The following capabilities are not supported in **[!UICONTROL Simulation]**.
 
 +++ Quantitative guardrails 
 
-These numeric limits apply to **[!UICONTROL Simulation]**. They are enforced in the journey interface and at runtime. Limits may change in a later release; if you run near a ceiling, verify behavior in your sandbox.
+These guardrails apply to **[!UICONTROL Simulation]**. Numeric caps are enforced in the journey interface and at runtime. Limits may change in a later release; if you run near a ceiling, verify behavior in your sandbox.
 
 | Guardrail | Limit | Notes |
 | --- | --- | --- |
 | Maximum simulated users that can be selected and triggered in one batch (batch journeys, event-triggered flows, and audience-qualification flows) | 20 | Counted for each **[!UICONTROL Send all]** or **[!UICONTROL Trigger selected events]**; not a cumulative cap for the whole journey. |
 | Maximum unique simulated users tested in a single simulation run | 100 | Reaching **100** unique users in one run blocks **[!UICONTROL Select simulated users]** for new simulated users. If you are at **90**, you can add at most **10** more before the same block. |
-| Maximum times the same simulated user can be tested in a single simulation run | 5 | Per user, per run. The simulated user may still enter the journey more often, but only the most recent executions (up to this number) are guaranteed to keep full log detail. |
-| Simulation logs retention (time-to-live) | 30 days | Log records are removed automatically when they reach this age. |
-| Maximum simulation logs retrieved in one call for one simulated user's run | 200 | Same upper bound as **[!UICONTROL Test mode]**. |
 | Maximum journeys that can run in **[!UICONTROL Simulation]** at the same time in one sandbox | 20 | Cap is shared by every **[!UICONTROL Simulation]** journey in that sandbox at once. |
-| Maximum active simulated users in one sandbox | 10,000 | Maximum simulated users that can exist in the sandbox at one time. |
-| Simulation logs retained per journey | Last 5 simulation runs | Each new run beyond five drops the oldest retained run. |
-| Event pre-filling — maximum pre-filled events stored per journey | 20 | When full, the oldest event is removed first. Limit may change by release. |
-| Event pre-filling — maximum simulated users per event for storing payload | 10 | When full, the oldest simulated user is removed first. Limit may change by release. |
-| Event pre-filling data time-to-live | 7 days | After this period, pre-filled event data is purged. |
+| Maximum active simulated users in one sandbox | 2,000 | Maximum simulated users that can exist in the sandbox at one time. Adobe may adjust this limit based on customer feedback. |
+| Event Pre-fill (Browser Only) | — | Event pre-filling is supported in the browser only. Pre-filled event data is specific to the browser. |
 
 +++
