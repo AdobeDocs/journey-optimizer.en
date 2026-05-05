@@ -56,6 +56,7 @@ solution: Journey Optimizer
     + [Send using waves in journeys](using/building-journeys/send-using-waves.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
+    + [Simulate your journey](using/building-journeys/simulate-journey.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Journey Dry run](using/building-journeys/journey-dry-run.md)
     + [Publish your journey](using/building-journeys/publish-journey.md)
