@@ -18,6 +18,36 @@ exl-id: f931372e-6cf2-4f27-b12a-ed5ca0c1b87b
 This guide helps you structure your requests, communicate intent with clarity, and ensure the AI produces messaging that aligns with your brand guidelines, audience needs, and campaign goals.
 Learn how to write effective prompts that enable AI Assistant to generate high-quality, on-brand marketing content tailored to your objectives. 
 
+## Use the Prompt assistant {#prompt-assistant}
+
+The prompt assistant helps you strengthen your opening prompt so content generation needs less back-and-forth. From that first input, you may get suggestions, a suggested rewrite, optional enhancements, and clarifying questions. Your answers refine the prompt that is used to generate the content.
+
+1. From the **[!UICONTROL AI Assistant]** menu, open **[!UICONTROL Prompt assistant]** to refine your prompt before you generate content.
+
+    ![](assets/prompt-assistant-1.png)
+
+1. Enter your prompt. Suggestions may show inline after your text and in a list below. Click **[!UICONTROL Try this]** on a suggestion to replace your current prompt with that version.
+
+    ![](assets/prompt-assistant-2.png)
+
+1. Click **[!UICONTROL Analyze prompt]** when you want the prompt assistant to review your text.
+
+1. The message area summarizes issues or gaps the assistant found in your prompt. If a suggested rewrite appears, review it and apply it when you want that wording.
+
+    ![](assets/prompt-assistant-3.png)
+
+1. Answer clarifying questions to give the assistant the context it needs. Your answers are incorporated into the refined prompt used for generation.
+
+    Click **[!UICONTROL Update context]**, then click **[!UICONTROL Analyze prompt]** again if you want another pass.
+
+    ![](assets/prompt-assistant-4.png)
+
+1. After you review the assistant feedback and are satisfied with your prompt, click **[!UICONTROL Use this prompt]** to apply it and continue with content generation.
+
+    ![](assets/prompt-assistant-5.png)
+
+Following this workflow establishes objectives and required detail in the prompt prior to generation, which tends to improve relevance and reduce subsequent revision.
+
 ## Use the CO-STAR framework {#costar-framework}
 
 For best results with AI Assistant, organize your prompts using the CO-STAR framework. This structured approach ensures AI understands exactly what you need.
