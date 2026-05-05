@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Test your journey
+title: Simulate your journey
 description: Learn how to simulate your journey
 feature: Journeys, Test Profiles
 topic: Content Management
