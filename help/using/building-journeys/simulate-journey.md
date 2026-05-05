@@ -11,8 +11,8 @@ keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
 ---
-# Simulate your journey{#testing_the_journey}
-
+# Simulate your journey{#simulate-journey}
+ 
 >[!IMPORTANT]
 >
 > This capability is available to all customers as a Limited Availability with essential capabilities.
@@ -24,9 +24,9 @@ Adobe Journey Optimizer offers two ways to test and validate your journey:
 * **[Simulation](#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users for quick runs without pre-created profiles in Adobe Experience Platform.
 
 * **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
-
+ 
 Note that Journey Simulation is in **Limited availability**. To share feedback and help us improve the experience, open **[!UICONTROL Feedback]** from the top bar.
-
+ 
 ![Beta feedback menu](assets/beta-feedback.png)
 
 ## Create and manage simulated users {#test-users}
@@ -83,7 +83,7 @@ The following steps show you how to create simulated users from the UI or by imp
 
     ![Simulated user selection panel](assets/simulate-5.png)
 
-1. Access **[!UICONTROL Results]** tab to open the execution results and review how each step ran. For more information, see [View results](#viewing-logs).
+1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
 
 After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
@@ -113,7 +113,7 @@ Simulated users that you create manually are stored and can be selected from thi
 
     ![Simulated user selection panel](assets/simulate-5.png)
 
-1. Click **[!UICONTROL Show log]** to open the execution log and review how each step ran. For more information, see [View Results](#viewing-logs).
+1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
 
 After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
@@ -137,9 +137,9 @@ If your journey includes one or more events, you can trigger them while Simulati
     
     A `Events triggered successfully` confirmation message appears when the simulated users successfully enter the journey.
 
-1. Click **[!UICONTROL Show log]** to open the execution log and review how each step ran. For more information, see [View Results](#viewing-logs).
+1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
 
-## View results {#viewing-logs}
+## View results {#viewing-results}
 
 The **[!UICONTROL Results]** tab allows you to view the test results. Use the view selector to choose how you browse the log:
 
