@@ -73,3 +73,4 @@ The following example sends a welcome email to profiles who have just become gol
 * **[!UICONTROL Email delivery]**: Sends the welcome email to the profiles output by the query.
 
 ![Incremental query activity configuration in the Orchestrated campaign canvas](../assets/incremental-query-example.png)
+

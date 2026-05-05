@@ -90,6 +90,29 @@ To use the test mode, follow these steps:
 
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
 
+## Worked example: validate a simple journey {#test-walkthrough}
+
+The following example walks through testing a journey that starts with a unitary event, sends an email, waits 10 minutes, then sends a push notification.
+
+To validate the journey end to end:
+
+1. Activate test mode by clicking **[!UICONTROL Test mode]** in the top-right corner. The canvas switches to test mode and a **[!UICONTROL Trigger an event]** button appears.
+1. Set **[!UICONTROL Wait time]** to **10 seconds** so the wait node completes quickly during testing.
+1. Click **[!UICONTROL Trigger an event]**, select your event, and enter a test profile identifier (for example, the email address of a profile flagged as a test profile in Adobe Experience Platform).
+1. Click **[!UICONTROL Send]**. The visual flow appears on the canvas and turns green as the profile progresses through each step.
+1. Click **[!UICONTROL Show log]** and confirm the following in the JSON output:
+   * `currentstep` matches the activity you expect the profile to be at.
+   * `phase` shows `running` while the profile is in a wait node, and `finished` when it reaches the end.
+   * No `actionExecutionErrors` entries are present.
+1. After 10 seconds, refresh the log. The profile should have advanced past the wait node and triggered the push action.
+1. When all steps show `finished` and no errors are logged, deactivate test mode and publish the journey.
+
+>[!TIP]
+>
+>If the profile does not appear in the log at all, check that:
+>* The profile identifier you entered is flagged as a test profile in [!DNL Adobe Experience Platform].
+>* The journey's configured start and end dates include the current time. Events triggered outside this window are silently discarded. [Learn more](troubleshooting-execution.md#troubleshooting-test-transitions).
+
 ## Trigger your events {#firing_events}
 
 >[!CONTEXTUALHELP]
