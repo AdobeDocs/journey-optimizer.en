@@ -8,7 +8,7 @@ solution: Journey Optimizer
 ---
 
 # Adobe Journey Optimizer Help {#using}
-
+ 
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
