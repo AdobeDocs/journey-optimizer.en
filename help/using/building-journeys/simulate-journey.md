@@ -24,9 +24,9 @@ Adobe Journey Optimizer offers two ways to test and validate your journey:
 * **[Simulation](#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users for quick runs without pre-created profiles in Adobe Experience Platform.
 
 * **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
-
+ 
 Note that Journey Simulation is in **Limited availability**. To share feedback and help us improve the experience, open **[!UICONTROL Feedback]** from the top bar.
-
+ 
 ![Beta feedback menu](assets/beta-feedback.png)
 
 ## Create and manage simulated users {#test-users}
