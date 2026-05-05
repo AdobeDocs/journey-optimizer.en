@@ -26,6 +26,25 @@ Because of this model, release notes are updated between monthly releases. For f
 <table>
 <thead>
 <tr>
+<th><strong>Journey simulation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
+<p>This capability is available to all customers as a Limited Availability with essential capabilities.</p>
+<p><img src="assets/do-not-localize/simulate-user.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/simulate-journey.md">detailed documentation</a>.</p>
+<p>Availability date: May 5, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Decisioning rules and ranking formula AI optimization</strong><br/></th>
 </tr>
 </thead>
@@ -35,6 +54,24 @@ Because of this model, release notes are updated between monthly releases. For f
 <p>[!DNL Adobe Journey Optimizer] now uses AI to detect Decisioning rules and ranking formulas that can be simplified. In the inventory, a red indicator appears on any rule for which the AI has identified an optimization opportunity. Clicking the indicator displays the original expression alongside the AI-suggested version. From there, you can download a file to review how simulated profiles are evaluated by each version and confirm they behave identically, then replace the expression with the optimized one.</p>
 <p>For more information, refer to the <a href="../start/ai-features.md#decisioning-optimization">detailed documentation</a>.</p>
 <p>Availability date: May 5, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Integrations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
+<p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
+<p>For more information, refer to the <a href="../integrations/integrations.md">detailed documentation</a>.</p>
+<p>Availability date: May 4, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -57,24 +94,6 @@ New capabilities and improvements released earlier in April are announced with t
 <table>
 <thead>
 <tr>
-<th><strong>Integrations</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
-<p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
-<p>For more information, refer to the <a href="../integrations/integrations.md">detailed documentation</a>.</p>
-<p>Availability date: May 4, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Incremental query activity in Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -85,6 +104,7 @@ New capabilities and improvements released earlier in April are announced with t
 
 This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly qualified loyalty members, and similar segments) while reducing query workloads and avoiding redundant sends over time.</p>
 <p>For more information, refer to the <a href="../orchestrated/activities/incremental-query.md#incremental-query-configuration">detailed documentation</a>.</p>
+<p>Availability date: April 30, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -384,23 +404,6 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 The following capabilities and enhancements are scheduled for release in the next few days. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 ### New capabilities {#comming-soon-features}
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey simulation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
-<p>This capability is available to all customers as a Limited Availability with essential capabilities.</p>
-<!--p><img src="assets/do-not-localize/simulate-user.gif"></p-->
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
