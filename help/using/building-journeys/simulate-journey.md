@@ -11,7 +11,7 @@ keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
 ---
-# Simulate your journey{#testing_the_journey}
+# Simulate your journey{#simulate-journey}
  
 >[!IMPORTANT]
 >
