@@ -12,7 +12,7 @@ version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
 ---
 # Simulate your journey{#testing_the_journey}
-
+ 
 >[!IMPORTANT]
 >
 > This capability is available to all customers as a Limited Availability with essential capabilities.
