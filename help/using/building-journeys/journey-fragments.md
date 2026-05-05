@@ -65,6 +65,7 @@ To save journey nodes as a fragment directly from the journey canvas:
 1. Click **[!UICONTROL Save]**. The fragment is saved as a draft.
 
 >[!TIP]
+>
 >If you create a fragment from a journey, [test or simulate your journey](testing-the-journey.md) **before** saving the fragment to ensure the selected nodes behave as expected.
 
 >[!TAB From the fragment inventory]
@@ -77,6 +78,7 @@ To create a fragment directly from the inventory:
 1. When done, click **[!UICONTROL Save]** to save the fragment as a draft.
 
 >[!CAUTION]
+>
 >Test mode and simulation are not available in the fragment editor. This means you cannot validate the behavior of the configured activities before the fragment is activated and inserted into a journey. For fragments where logic accuracy is critical, consider [building and testing or simulating the nodes in a full journey](testing-the-journey.md) first, then saving them as a fragment from the canvas tab above.
 
 >[!ENDTABS]
