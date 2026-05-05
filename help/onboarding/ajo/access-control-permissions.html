@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Access Control and Permissions — Adobe Journey Optimizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-subtle: #f7f7f5;
+      --bg-hover: #f1f1ef;
+      --sidebar-bg: #fbfbfa;
+      --border: #e8e8e4;
+      --border-strong: #d3d3ce;
+      --text: #1a1a18;
+      --text-secondary: #6b6b63;
+      --text-muted: #9b9b93;
+      --accent: #e03e2d;
+      --accent-soft: #fdf2f1;
+      --accent-border: #f5c6c0;
+      --teal: #0f8a7e;
+      --teal-soft: #f0faf9;
+      --gold: #a16207;
+      --gold-soft: #fefce8;
+      --violet: #6b46c1;
+      --violet-soft: #f5f3ff;
+      --sidebar-width: 240px;
+      --content-max: 720px;
+      --font: 'Inter', -apple-system, system-ui, sans-serif;
+      --mono: 'JetBrains Mono', 'SF Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-family: var(--font); background: var(--bg); color: var(--text); font-size: 16px; }
+    body { min-height: 100vh; }
+
+    /* ── Progress bar ── */
+    .progress-strip {
+      height: 3px;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: var(--border);
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--accent);
+      width: 0%;
+      transition: width 0.1s linear;
+    }
+
+    /* ── Layout ── */
+    .layout { display: flex; min-height: 100vh; }
+
+    /* ── Sidebar ── */
+    .sidebar {
+      position: fixed;
+      left: 0; top: 0;
+      width: var(--sidebar-width);
+      min-height: 100vh;
+      background: var(--sidebar-bg);
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      z-index: 50;
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar-header {
+      padding: 20px 16px 14px;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .sidebar-product {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      margin-bottom: 10px;
+    }
+    .sidebar-product-icon {
+      height: 24px;
+      width: auto;
+      flex-shrink: 0;
+      display: block;
+    }
+    .sidebar-product-name {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    .sidebar-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+    .sidebar-meta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .sidebar-badge {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+      border-radius: 4px;
+      padding: 1px 6px;
+    }
+    .sidebar-time {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .sidebar-nav {
+      padding: 12px 8px;
+      flex: 1;
+    }
+    .nav-section-label {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 6px 8px 4px;
+      margin-top: 8px;
+      display: block;
+    }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 13px;
+      color: var(--text-secondary);
+      position: relative;
+      transition: background 0.1s, color 0.1s;
+    }
+    .nav-link:hover { background: var(--bg-hover); color: var(--text); }
+    .nav-link.active {
+      background: var(--bg-hover);
+      color: var(--text);
+      font-weight: 500;
+    }
+    .nav-link.active::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 2px; height: 16px;
+      background: var(--accent);
+      border-radius: 0 2px 2px 0;
+    }
+    .nav-num {
+      font-size: 11px;
+      color: var(--text-muted);
+      min-width: 16px;
+      font-family: var(--mono);
+      font-variant-numeric: tabular-nums;
+    }
+    .sidebar-footer {
+      padding: 12px 16px;
+      border-top: 1px solid var(--border);
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      flex-shrink: 0;
+    }
+
+    /* ── Main ── */
+    .main { margin-left: var(--sidebar-width); flex: 1; }
+
+    /* ── Page header ── */
+    .page-header {
+      padding: 48px 48px 32px;
+      border-bottom: 1px solid var(--border);
+      max-width: calc(var(--content-max) + 96px);
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--text-secondary); }
+    .breadcrumb span { color: var(--border-strong); }
+    .page-title {
+      font-size: 30px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.03em;
+      margin-bottom: 10px;
+      line-height: 1.15;
+    }
+    .page-desc {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      max-width: 580px;
+      margin-bottom: 14px;
+    }
+    .page-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .page-tag {
+      font-size: 12px;
+      color: var(--text-secondary);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 3px 9px;
+    }
+
+    /* ── In this guide ── */
+    .in-this-guide {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+    .itg-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .itg-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .itg-link {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      white-space: nowrap;
+      transition: color 0.15s;
+    }
+    .itg-link:hover { color: var(--accent); text-decoration: underline; }
+    .itg-sep { color: var(--border-strong); font-size: 12px; user-select: none; }
+
+    /* ── Content ── */
+    .content {
+      padding: 0 48px 80px;
+      max-width: calc(var(--content-max) + 96px);
+    }
+    .section {
+      padding: 44px 0 36px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section:last-child { border-bottom: none; }
+    .section-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .section-num {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-family: var(--mono);
+      font-variant-numeric: tabular-nums;
+    }
+    .section-tag {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin: 28px 0 8px;
+    }
+    p {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+
+    /* ── Doc links ── */
+    .doc-link {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .doc-link:hover { text-decoration: underline; }
+    .learn-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--accent);
+      text-decoration: none;
+      margin-top: 6px;
+      opacity: 0.85;
+      transition: opacity 0.15s;
+    }
+    .learn-more:hover { opacity: 1; text-decoration: underline; }
+
+    /* ── Feature list ── */
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin: 14px 0;
+    }
+    .feature-list li {
+      display: block;
+      position: relative;
+      padding: 3px 0 3px 18px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .feature-list li::before {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 10px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* ── CTA block ── */
+    .cta-block {
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 16px 18px;
+      background: var(--accent-soft);
+      margin: 20px 0;
+    }
+    .cta-text {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .cta-button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 7px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .cta-button:hover { opacity: 0.88; }
+
+    /* ── Callouts ── */
+    .callout {
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin: 16px 0;
+      display: flex;
+      gap: 10px;
+    }
+    .callout-icon { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+    .callout-body { flex: 1; }
+    .callout-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 3px;
+      display: block;
+    }
+    .callout p { font-size: 13.5px; margin: 0; line-height: 1.6; }
+    .callout-tip { background: var(--teal-soft); border: 1px solid #c3e8e4; }
+    .callout-tip .callout-label { color: var(--teal); }
+    .callout-tip p { color: #134e4a; }
+    .callout-note { background: var(--gold-soft); border: 1px solid #fde68a; }
+    .callout-note .callout-label { color: var(--gold); }
+    .callout-note p { color: #713f12; }
+    .callout-info { background: var(--violet-soft); border: 1px solid #ddd6fe; }
+    .callout-info .callout-label { color: var(--violet); }
+    .callout-info p { color: #3b0764; }
+
+    /* ── Expandable tips ── */
+    details.expandable-tip {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg-subtle);
+      margin: 14px 0;
+    }
+    details.expandable-tip summary {
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text);
+    }
+    details.expandable-tip summary::-webkit-details-marker { display: none; }
+    details.expandable-tip summary::after {
+      content: "↓";
+      color: var(--text-muted);
+      font-size: 11px;
+      transition: transform 0.2s;
+      flex-shrink: 0;
+      margin-left: 8px;
+    }
+    details.expandable-tip[open] summary::after { transform: rotate(180deg); }
+    .expandable-content {
+      padding: 0 14px 12px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      border-top: 1px solid var(--border);
+      margin-top: 0;
+    }
+    .expandable-content p { font-size: 13.5px; margin-bottom: 8px; }
+    .expandable-content p:last-child { margin-bottom: 0; }
+
+    /* ── Screenshot placeholders ── */
+    .screenshot-placeholder {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--bg-subtle);
+      margin: 12px 0;
+      overflow: hidden;
+    }
+    .screenshot-inner {
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .screenshot-icon { font-size: 28px; margin-bottom: 8px; display: block; }
+    .screenshot-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: block;
+    }
+    .screenshot-caption {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+      padding: 0 12px 10px;
+      display: block;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── Flow diagram ── */
+    .flow-diagram {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 16px 0;
+      overflow-x: auto;
+    }
+    .flow-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .flow-row:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .flow-node {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 12px;
+      text-align: center;
+      min-width: 90px;
+      flex-shrink: 0;
+    }
+    .fn-icon { font-size: 16px; margin-bottom: 4px; display: block; }
+    .fn-label { font-size: 11.5px; font-weight: 600; color: var(--text); display: block; }
+    .fn-sub { font-size: 10px; color: var(--text-muted); display: block; margin-top: 2px; }
+    .flow-arrow { color: var(--border-strong); font-size: 16px; }
+    .flow-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 14px;
+    }
+    .flow-table td {
+      padding: 7px 10px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+    .flow-table td:first-child {
+      font-weight: 600;
+      color: var(--text);
+      width: 160px;
+      white-space: nowrap;
+      padding-right: 16px;
+    }
+    .flow-table tr:last-child td { border-bottom: none; }
+
+    /* ── Concept grid ── */
+    .concept-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .concept-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .concept-card h4 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .concept-card p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin: 0;
+    }
+    .card-red { border-top: 3px solid var(--accent); }
+    .card-teal { border-top: 3px solid var(--teal); }
+    .card-gold { border-top: 3px solid #ca8a04; }
+    .card-violet { border-top: 3px solid var(--violet); }
+
+    /* ── Pill ── */
+    .pill {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      font-weight: 500;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 4px;
+      padding: 1px 6px;
+      margin: 1px 2px;
+    }
+
+    /* ── Step list ── */
+    .step-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 14px 0;
+    }
+    .step-card {
+      display: flex;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .step-card:last-child { border-bottom: none; }
+    .step-num-wrap {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--text);
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+      font-family: var(--mono);
+    }
+    .step-body { flex: 1; }
+    .step-body h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .step-body p { font-size: 13.5px; margin-bottom: 8px; }
+
+    /* ── UI path ── */
+    .ui-path {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 3px 8px 3px 6px;
+      font-family: var(--mono);
+      font-size: 11.5px;
+      color: var(--text-secondary);
+      margin-bottom: 8px;
+      flex-wrap: wrap;
+    }
+    .ui-path-icon { color: var(--accent); font-style: normal; font-size: 11px; }
+
+    /* ── Workflow steps ── */
+    .workflow-steps {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      margin: 14px 0;
+    }
+    .ws-node {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .ws-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 32px;
+      flex-shrink: 0;
+    }
+    .ws-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .ws-line {
+      width: 1px;
+      height: 20px;
+      background: var(--border-strong);
+      margin: 2px auto;
+    }
+    .ws-content { flex: 1; padding: 4px 0 12px; }
+    .ws-content h5 { font-size: 13.5px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+    .ws-content p { font-size: 13px; color: var(--text-secondary); margin: 0; line-height: 1.55; }
+
+    /* ── Scenario cards ── */
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .scenario-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .scenario-card h4 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .scenario-who {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+    .scenario-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 6px; }
+    .scenario-outcome {
+      font-size: 12px;
+      color: var(--teal);
+      margin-top: 6px;
+    }
+
+    /* ── Checklist cards ── */
+    .checklist-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .checklist-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .checklist-card h4 {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .checklist-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 6px; }
+    .check-risk { font-size: 12px; color: var(--accent); margin-top: 6px; }
+
+    /* ── Metric grid ── */
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .metric-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .metric-icon { font-size: 18px; margin-bottom: 8px; display: block; }
+    .metric-label { font-size: 12px; font-weight: 600; color: var(--text); margin-bottom: 4px; display: block; }
+    .metric-desc { font-size: 12.5px; color: var(--text-secondary); line-height: 1.55; }
+
+    /* ── Tip cards ── */
+    .tip-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .tip-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px;
+    }
+    .tip-card h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+    .tip-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin: 0; }
+
+    /* ── Try it ── */
+    .try-it-header {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .try-it-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .try-it-badge {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+      display: block;
+      letter-spacing: 0.06em;
+    }
+    .try-it-header h3 { font-size: 15px; font-weight: 600; color: var(--text); margin: 0 0 4px; }
+    .try-it-header p { font-size: 13px; color: var(--text-secondary); margin: 0; }
+    .try-it-tasks { display: flex; flex-direction: column; gap: 0; }
+    .try-it-task {
+      display: flex;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .try-it-task:last-child { border-bottom: none; }
+    .try-it-task-icon {
+      width: 28px;
+      height: 28px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .try-it-task h4 { font-size: 13.5px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+    .try-it-task p { font-size: 13px; color: var(--text-secondary); margin: 0; line-height: 1.6; }
+
+    /* ── Tag cloud ── */
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+    .tag {
+      font-size: 12px;
+      color: var(--text-secondary);
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      padding: 4px 10px;
+      text-decoration: none;
+      transition: background 0.1s, color 0.1s, border-color 0.1s;
+    }
+    .tag:hover { background: var(--bg-hover); color: var(--text); border-color: var(--border-strong); }
+
+    /* ── Related guides ── */
+    .related-guides { border-top: 1px solid var(--border); padding-top: 20px; margin-top: 20px; }
+    .related-guides h3 {
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
+    .related-guide {
+      display: flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      text-decoration: none;
+      align-items: flex-start;
+    }
+    .related-guide:last-child { border-bottom: none; }
+    .related-guide-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .related-guide-title { font-size: 13.5px; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+    .related-guide-desc { font-size: 12.5px; color: var(--text-muted); }
+
+    /* ── Footer ── */
+    .page-footer {
+      padding: 20px 48px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: calc(var(--content-max) + 96px);
+    }
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .footer-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+    .footer-brand span { font-size: 12px; font-weight: 600; color: var(--text-muted); }
+    .footer-meta { font-size: 11.5px; color: var(--text-muted); }
+
+    /* ── Mobile nav toggle ── */
+    #navToggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 44px;
+      height: 44px;
+      background: var(--text);
+      color: white;
+      border-radius: 10px;
+      border: none;
+      z-index: 200;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.25s ease;
+      }
+      .sidebar.open { transform: translateX(0); }
+      .main { margin-left: 0; }
+      .page-header { padding: 28px 20px 20px; }
+      .content { padding: 0 20px 60px; }
+      .concept-grid, .scenario-grid, .checklist-grid, .metric-grid, .tip-grid { grid-template-columns: 1fr; }
+      .page-footer { flex-direction: column; gap: 6px; align-items: flex-start; padding: 16px 20px; }
+      #navToggle { display: flex; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="progress-strip"><div class="progress-fill" id="progressFill"></div></div>
+
+<div class="layout">
+
+  <!-- ── Sidebar ── -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <a class="sidebar-product" href="https://experienceleague.adobe.com/en/docs/journey-optimizer" target="_blank" rel="noopener">
+        <svg class="sidebar-product-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.6 33.5" aria-label="Adobe" role="img">
+          <path d="M27.1,0H44.6V33.5Z" fill="#eb1000"/>
+          <path d="M17.5,0H0V33.5Z" fill="#eb1000"/>
+          <path d="M22.3,12.4,28.6,28H23.4l-1.7-4.5H15.8Z" fill="#eb1000"/>
+        </svg>
+        <span class="sidebar-product-name">Adobe Journey Optimizer</span>
+      </a>
+      <div class="sidebar-title">Access Control &amp; Permissions</div>
+      <div class="sidebar-meta">
+        <span class="sidebar-badge">Admin</span>
+        <span class="sidebar-time">~10 min</span>
+      </div>
+    </div>
+    <div class="sidebar-nav">
+      <span class="nav-section-label">Guide</span>
+      <a href="#s1" class="nav-link active"><span class="nav-num">01</span>Overview</a>
+      <a href="#s2" class="nav-link"><span class="nav-num">02</span>Architecture</a>
+      <a href="#s3" class="nav-link"><span class="nav-num">03</span>Concepts</a>
+      <a href="#s4" class="nav-link"><span class="nav-num">04</span>Configure</a>
+      <a href="#s5" class="nav-link"><span class="nav-num">05</span>Data</a>
+      <a href="#s6" class="nav-link"><span class="nav-num">06</span>Journeys &amp; Campaigns</a>
+      <a href="#s7" class="nav-link"><span class="nav-num">07</span>Common Scenarios</a>
+      <a href="#s8" class="nav-link"><span class="nav-num">08</span>Pre-launch Checks</a>
+      <a href="#s9" class="nav-link"><span class="nav-num">09</span>Performance</a>
+      <a href="#s10" class="nav-link"><span class="nav-num">10</span>Try It</a>
+    </div>
+    <div class="sidebar-footer">
+      Access Control · Onboarding Guide<br>
+      Adobe Journey Optimizer
+    </div>
+  </nav>
+
+  <!-- ── Main ── -->
+  <div class="main">
+
+    <!-- ── Page header ── -->
+    <header class="page-header">
+      <div class="breadcrumb">
+        <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer" target="_blank" rel="noopener">Adobe Journey Optimizer</a>
+        <span>/</span>
+        <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/permissions-overview" target="_blank" rel="noopener">Access Control</a>
+        <span>/</span>
+        <span>Onboarding Guide</span>
+      </div>
+      <h1 class="page-title">Access Control &amp; Permissions</h1>
+      <p class="page-desc">Set up roles, assign permissions, and control who can do what inside Adobe Journey Optimizer — in under 10 minutes.</p>
+      <div class="page-tags">
+        <span class="page-tag">Admin</span>
+        <span class="page-tag">Access Management</span>
+        <span class="page-tag">Roles</span>
+        <span class="page-tag">Sandboxes</span>
+      </div>
+      <div class="in-this-guide">
+        <span class="itg-label">In this guide</span>
+        <div class="itg-links">
+          <a href="#s1" class="itg-link">Overview</a>
+          <span class="itg-sep">·</span>
+          <a href="#s2" class="itg-link">Architecture</a>
+          <span class="itg-sep">·</span>
+          <a href="#s3" class="itg-link">Concepts</a>
+          <span class="itg-sep">·</span>
+          <a href="#s4" class="itg-link">Configure</a>
+          <span class="itg-sep">·</span>
+          <a href="#s5" class="itg-link">Data</a>
+          <span class="itg-sep">·</span>
+          <a href="#s6" class="itg-link">Journeys &amp; Campaigns</a>
+          <span class="itg-sep">·</span>
+          <a href="#s7" class="itg-link">Common Scenarios</a>
+          <span class="itg-sep">·</span>
+          <a href="#s8" class="itg-link">Pre-launch Checks</a>
+          <span class="itg-sep">·</span>
+          <a href="#s9" class="itg-link">Performance</a>
+          <span class="itg-sep">·</span>
+          <a href="#s10" class="itg-link">Try It</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ── Content ── -->
+    <main class="content">
+
+      <!-- Section 1 — Overview -->
+      <section class="section" id="s1">
+        <div class="section-eyebrow">
+          <span class="section-num">01</span>
+          <span class="section-tag">Overview</span>
+        </div>
+        <h2>What Access Control Does (and Why It Matters)</h2>
+        <p>You've just onboarded a new campaign manager and handed them access to Adobe Journey Optimizer — then realised they can accidentally publish journeys, delete content, or view data they shouldn't. Setting up access control properly from day one prevents exactly this. It's not just security hygiene; it's the difference between a team that moves fast with confidence and one that's constantly cleaning up unintended changes.</p>
+        <p>Access control in Adobe Journey Optimizer lets you define <strong>who sees what, who can do what, and in which environments</strong> — all without touching code. You control it entirely through the Permissions interface in Adobe Experience Cloud.</p>
+        <p><strong>In this guide, you'll:</strong></p>
+        <ul class="feature-list">
+          <li><a href="#s2" class="doc-link">Understand how the permission system is structured</a> — Admin Console, Permissions, roles, and sandboxes</li>
+          <li><a href="#s3" class="doc-link">Learn the five key concepts</a> you'll see every time you assign access</li>
+          <li><a href="#s4" class="doc-link">Walk through the full configuration</a> — from creating a role to adding a user in under 10 minutes</li>
+          <li><a href="#s7" class="doc-link">Explore real-life scenarios</a> — campaign managers, contractors, and multi-team setups</li>
+          <li><a href="#s10" class="doc-link">Try it hands-on</a> — set up a Campaign Manager role yourself with a practice scenario</li>
+        </ul>
+        <div class="cta-block">
+          <p class="cta-text">Assign your first role in Adobe Journey Optimizer and take full control of who can create, edit, and publish journeys and campaigns.</p>
+          <a href="#s4" class="cta-button">Get started →</a>
+        </div>
+      </section>
+
+      <!-- Section 2 — Architecture -->
+      <section class="section" id="s2">
+        <div class="section-eyebrow">
+          <span class="section-num">02</span>
+          <span class="section-tag">Architecture</span>
+        </div>
+        <h2>How Access Control Fits Together</h2>
+        <p>Access control in Adobe Journey Optimizer spans two systems — Adobe Admin Console handles product provisioning, while Experience Platform Permissions is where you define the fine-grained access each user gets inside the product.</p>
+        <div class="flow-diagram">
+          <div class="flow-row">
+            <div class="flow-node">
+              <span class="fn-icon">🏢</span>
+              <span class="fn-label">Admin Console</span>
+              <span class="fn-sub">Product provisioning</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-node">
+              <span class="fn-icon">🔐</span>
+              <span class="fn-label">Permissions</span>
+              <span class="fn-sub">Roles &amp; resources</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-node">
+              <span class="fn-icon">🎭</span>
+              <span class="fn-label">Roles</span>
+              <span class="fn-sub">Permission bundles</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-node">
+              <span class="fn-icon">🏖️</span>
+              <span class="fn-label">Sandboxes</span>
+              <span class="fn-sub">Environments</span>
+            </div>
+            <span class="flow-arrow">→</span>
+            <div class="flow-node">
+              <span class="fn-icon">👤</span>
+              <span class="fn-label">Users</span>
+              <span class="fn-sub">Assigned access</span>
+            </div>
+          </div>
+          <table class="flow-table">
+            <tr><td>Admin Console</td><td>The starting point. Users must be added to the Adobe Journey Optimizer product before you can assign roles in Permissions.</td></tr>
+            <tr><td>Permissions</td><td>The Permissions surface inside Adobe Experience Cloud is where all role management happens for Adobe Journey Optimizer.</td></tr>
+            <tr><td>Roles</td><td>A role is a bundle of permissions you assign to users. You can use built-in roles or create custom ones for your organisation's needs.</td></tr>
+            <tr><td>Sandboxes</td><td>Each role controls access to specific sandboxes (production, development, staging). A user only sees the sandboxes assigned to their role.</td></tr>
+            <tr><td>Users</td><td>Users are added to roles — not to individual permissions. Their access in Adobe Journey Optimizer is determined entirely by the role(s) they hold.</td></tr>
+          </table>
+        </div>
+        <div class="screenshot-placeholder">
+          <div class="screenshot-inner">
+            <span class="screenshot-icon">🖥</span>
+            <span class="screenshot-label">Architecture overview</span>
+          </div>
+          <span class="screenshot-caption">The Permissions interface in Adobe Experience Cloud — Roles tab showing built-in and custom roles.</span>
+        </div>
+      </section>
+
+      <!-- Section 3 — Concepts -->
+      <section class="section" id="s3">
+        <div class="section-eyebrow">
+          <span class="section-num">03</span>
+          <span class="section-tag">Concepts</span>
+        </div>
+        <h2>Before You Start: Key Concepts</h2>
+        <p>Before you configure access control, here are the terms you'll see in the Adobe Journey Optimizer UI — and what they mean.</p>
+        <div class="concept-grid">
+          <div class="concept-card card-red">
+            <h4><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/permissions" class="doc-link" target="_blank" rel="noopener">Roles</a></h4>
+            <p>A role is a collection of permissions and sandbox assignments given to a group of users. Think of it as a job profile — "Campaign Manager", "Journey Viewer", "Content Editor". Every user in Adobe Journey Optimizer must belong to at least one role to access the product.</p>
+            <span class="pill">Permissions → Roles</span>
+          </div>
+          <div class="concept-card card-teal">
+            <h4><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/ootb-permissions" class="doc-link" target="_blank" rel="noopener">Permissions</a></h4>
+            <p>Permissions are the individual rights assigned to a role — for example, <span class="pill">Manage Journeys</span> or <span class="pill">View Campaigns</span>. They are grouped by resource (Journeys, Campaigns, Messages, Reports…). You assign permissions to roles, not directly to users.</p>
+          </div>
+          <div class="concept-card card-gold">
+            <h4><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions" class="doc-link" target="_blank" rel="noopener">Permission Levels</a></h4>
+            <p>Each resource has two levels: <span class="pill">Manage</span> (full create/edit/delete access) and <span class="pill">View</span> (read-only). Some resources have additional granular permissions like <span class="pill">Publish</span>. Always grant the lowest level that lets the user do their job.</p>
+          </div>
+          <div class="concept-card card-violet">
+            <h4><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/attribute-based-access" class="doc-link" target="_blank" rel="noopener">Attribute-based Access Control</a></h4>
+            <p>Lets you restrict access to specific schema fields or dataset attributes using labels. Useful for protecting sensitive personal data — for example, ensuring only certain roles can see a customer's health or financial data fields in personalisation.</p>
+            <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/attribute-based-access" class="learn-more" target="_blank" rel="noopener">Full guide →</a>
+          </div>
+          <div class="concept-card card-red" style="grid-column: span 2;">
+            <h4><a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access" class="doc-link" target="_blank" rel="noopener">Object-level Access Control</a></h4>
+            <p>Lets you apply labels to individual objects — a specific journey, campaign, or message — to restrict who can open or edit that object. This is on top of role-level permissions. A user needs both the right role permission <em>and</em> the right object label to access a labelled object.</p>
+            <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access" class="learn-more" target="_blank" rel="noopener">Full guide →</a>
+          </div>
+        </div>
+        <details class="expandable-tip">
+          <summary>Not sure whether to use a built-in or custom role?</summary>
+          <div class="expandable-content">
+            <p>Start with built-in roles — Adobe Journey Optimizer ships with a set of pre-configured roles (Journey Manager, Journey Viewer, Campaign Manager, Campaign Viewer) that cover the most common team setups. If a built-in role has one or two permissions you don't want users to have, create a custom role by duplicating and editing it rather than starting from scratch. Custom roles are only worth the maintenance overhead when your team's workflow genuinely diverges from the built-in structure.</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- Section 4 — Configure -->
+      <section class="section" id="s4">
+        <div class="section-eyebrow">
+          <span class="section-num">04</span>
+          <span class="section-tag">Configure</span>
+        </div>
+        <h2>Configure Access Control: Step by Step</h2>
+        <p>By the end of these steps you'll have a role configured with the right permissions and sandboxes, and a user assigned to it — ready to log in with the correct access.</p>
+        <div class="step-list">
+
+          <div class="step-card">
+            <div class="step-num-wrap">01</div>
+            <div class="step-body">
+              <h4>Open the Permissions interface</h4>
+              <div class="ui-path"><i class="ui-path-icon">▸</i> Adobe Experience Cloud → Permissions → Roles</div>
+              <p>Navigate to <a href="https://experience.adobe.com" target="_blank" rel="noopener" class="doc-link">experience.adobe.com</a>, select the <span class="pill">Permissions</span> app from the product switcher, then click <span class="pill">Roles</span> in the left navigation. You need Product Administrator or System Administrator privileges to access this area.</p>
+              <div class="screenshot-placeholder">
+                <div class="screenshot-inner"><span class="screenshot-icon">📸</span><span class="screenshot-label">Permissions → Roles</span></div>
+                <span class="screenshot-caption">The Roles tab lists all built-in and custom roles. Built-in roles show a lock icon and cannot be deleted.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num-wrap">02</div>
+            <div class="step-body">
+              <h4>Select or create a role</h4>
+              <div class="ui-path"><i class="ui-path-icon">▸</i> Permissions → Roles → [Select role] or Create role</div>
+              <p>To use a built-in role, click on it (for example <span class="pill">Journey Manager</span> or <span class="pill">Campaign Manager</span>). To create a custom role, click <span class="pill">Create role</span>, enter a name and description, and save. Start from a built-in role as your reference point before building from scratch.</p>
+              <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/ootb-product-profiles" class="learn-more" target="_blank" rel="noopener">See all built-in roles →</a>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num-wrap">03</div>
+            <div class="step-body">
+              <h4>Edit permissions for the role</h4>
+              <div class="ui-path"><i class="ui-path-icon">▸</i> Role dashboard → Edit → Resources panel</div>
+              <p>Click <span class="pill">Edit</span> on the role dashboard. The <span class="pill">Resources</span> panel on the left lists every resource in Adobe Journey Optimizer (Journeys, Campaigns, Messages, Reports, Administration…). Drag a resource into the role to add its permissions, then expand it to choose between <span class="pill">Manage</span> and <span class="pill">View</span> levels. Remove a resource by dragging it back out.</p>
+              <div class="screenshot-placeholder">
+                <div class="screenshot-inner"><span class="screenshot-icon">📸</span><span class="screenshot-label">Role Edit — Resources panel</span></div>
+                <span class="screenshot-caption">Drag-and-drop resource permissions into the role. Expand each resource to see granular permission options like Manage, View, and Publish.</span>
+              </div>
+            </div>
+          </div>
+
+          <details class="expandable-tip">
+            <summary>Common mistake: giving Manage when View is enough</summary>
+            <div class="expandable-content">
+              <p>The most frequent misconfiguration is assigning <span class="pill">Manage</span> for resources like Journeys or Campaigns to everyone "just in case". This gives users the ability to publish, delete, and modify live assets. Follow the principle of least privilege: start with <span class="pill">View</span> for all resources, then add <span class="pill">Manage</span> only for the specific resources each role actually needs to edit. The <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions" class="doc-link" target="_blank" rel="noopener">Permission levels page</a> lists every granular right so you can review before assigning.</p>
+            </div>
+          </details>
+
+          <div class="step-card">
+            <div class="step-num-wrap">04</div>
+            <div class="step-body">
+              <h4>Assign sandboxes to the role</h4>
+              <div class="ui-path"><i class="ui-path-icon">▸</i> Role Edit → Sandboxes tab</div>
+              <p>Switch to the <span class="pill">Sandboxes</span> tab while in edit mode. Select which sandboxes users in this role can access — for example <span class="pill">Production</span>, <span class="pill">Dev</span>, or a specific named sandbox. Users only see Adobe Journey Optimizer data from sandboxes assigned to their role. Assign the minimum set of sandboxes needed.</p>
+              <div class="screenshot-placeholder">
+                <div class="screenshot-inner"><span class="screenshot-icon">📸</span><span class="screenshot-label">Sandboxes tab in Role Edit</span></div>
+                <span class="screenshot-caption">Select sandboxes from the list. The user will only see environments listed here when they log into Adobe Journey Optimizer.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num-wrap">05</div>
+            <div class="step-body">
+              <h4>Save the role</h4>
+              <div class="ui-path"><i class="ui-path-icon">▸</i> Role Edit → Save</div>
+              <p>Click <span class="pill">Save</span> to apply your permission and sandbox changes. Changes to a role take effect for all users currently assigned to it — no re-login required. Review the summary panel that appears after saving to confirm the resource list looks correct.</p>
+            </div>
+          </div>
+
+          <details class="expandable-tip">
+            <summary>Editing a role affects all users in it immediately</summary>
+            <div class="expandable-content">
+              <p>When you add or remove a permission from a role, every user in that role gets the change in real time — without any re-login. This is intentional but easy to overlook. If you're making a significant change (like removing Manage Journeys from a role), communicate with affected team members before saving. For safe iteration, create a new custom role and test it with one user before migrating the whole team.</p>
+            </div>
+          </details>
+
+          <div class="step-card">
+            <div class="step-num-wrap">06</div>
+            <div class="step-body">
+              <h4>Add users to the role</h4>
+              <div class="ui-path"><i class="ui-path-icon">▸</i> Role dashboard → Users tab → Add user</div>
+              <p>From the role's dashboard, open the <span class="pill">Users</span> tab and click <span class="pill">Add user</span>. Search by name or email address and select the user from the list. If the user doesn't appear, they haven't been added to the Adobe Journey Optimizer product in Admin Console yet — do that first, then return here.</p>
+              <div class="screenshot-placeholder">
+                <div class="screenshot-inner"><span class="screenshot-icon">📸</span><span class="screenshot-label">Users tab — Add user</span></div>
+                <span class="screenshot-caption">Search for the user by email. Added users receive an email notification with a link to log into Adobe Journey Optimizer with their new access.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-num-wrap">07</div>
+            <div class="step-body">
+              <h4>Verify the user's access</h4>
+              <div class="ui-path"><i class="ui-path-icon">▸</i> Adobe Journey Optimizer → Log in as user</div>
+              <p>Ask the user to log in and confirm they see the expected sections and sandboxes. If a permission is missing, they'll see: <em>"You do not have permission to access this feature. Permission needed: [resource]."</em> Note the exact resource name shown and add it to their role. For sensitive roles, test by creating a second browser profile with the user's credentials before handing over access.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <span class="callout-label">Tip</span>
+            <p>To quickly audit which permissions a role has, navigate to the role and click the <span class="pill">Permissions</span> tab without entering edit mode. This gives you a read-only summary you can share with your security team.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 — Data -->
+      <section class="section" id="s5">
+        <div class="section-eyebrow">
+          <span class="section-num">05</span>
+          <span class="section-tag">Data</span>
+        </div>
+        <h2>Connect to Your Data</h2>
+        <p>To get access control working correctly, you need to know which data constructs in Adobe Journey Optimizer map to which permission resources. Here's what to identify first — no schema-building required, just the right labels to look for in the UI.</p>
+
+        <p><strong>Resources and what they protect:</strong> Each permission resource in Adobe Journey Optimizer maps to a set of UI sections and API actions. Before assigning permissions to a role, identify which of these your user needs:</p>
+
+        <ul class="feature-list">
+          <li><span class="pill">Journeys</span> — access to the Journeys canvas, journey creation, testing, and publishing</li>
+          <li><span class="pill">Campaigns</span> — access to action campaigns, API-triggered campaigns, and campaign scheduling</li>
+          <li><span class="pill">Messages</span> — access to the message library and content editor</li>
+          <li><span class="pill">Channel configurations</span> — access to email subdomains, push credentials, SMS providers</li>
+          <li><span class="pill">Reports</span> — access to live reports and all-time reports across journeys and campaigns</li>
+          <li><span class="pill">Administration</span> — access to Permissions, event configuration, and data source settings</li>
+        </ul>
+
+        <p><strong>Sandbox names matter:</strong> Make sure you know the exact names of the sandboxes in your organisation before assigning them to roles. Sandbox names are case-sensitive in the Permissions UI. You can find them in <span class="pill">Adobe Experience Platform → Sandboxes</span>.</p>
+
+        <p><strong>Labels for attribute-based access:</strong> If you're using attribute-based access control to restrict field-level data visibility, you'll need the label names applied to your schemas. These are set in Adobe Experience Platform's data governance interface (<span class="pill">Adobe Experience Platform → Schemas → [schema] → Field labels</span>). Match these labels when configuring access policies in Permissions.</p>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">🔍</span>
+          <div class="callout-body">
+            <span class="callout-label">Where to find this</span>
+            <p>To see every available permission across all resources, go to <span class="pill">Permissions → Roles → [any role] → Edit</span> and browse the Resources panel. Each resource expands to show the full list of granular permissions available for that area of Adobe Journey Optimizer.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6 — Journeys & Campaigns -->
+      <section class="section" id="s6">
+        <div class="section-eyebrow">
+          <span class="section-num">06</span>
+          <span class="section-tag">Journeys &amp; Campaigns</span>
+        </div>
+        <h2>How Access Control Applies to Your Journeys and Campaigns</h2>
+        <p>Every action a user takes in a journey or campaign — from opening the canvas to hitting Publish — is gated by the permissions in their role. Here's how the permission check flows from login to live activation.</p>
+
+        <div class="workflow-steps">
+          <div class="ws-node">
+            <div class="ws-left">
+              <div class="ws-icon">🔑</div>
+              <div class="ws-line"></div>
+            </div>
+            <div class="ws-content">
+              <h5>User logs into Adobe Journey Optimizer</h5>
+              <p>Adobe Experience Cloud reads the user's assigned role(s) and loads the permission set. The sidebar navigation renders only the sections the user has <span class="pill">View</span> or <span class="pill">Manage</span> access to.</p>
+            </div>
+          </div>
+          <div class="ws-node">
+            <div class="ws-left">
+              <div class="ws-icon">🗂</div>
+              <div class="ws-line"></div>
+            </div>
+            <div class="ws-content">
+              <h5>User opens the Journeys or Campaigns list</h5>
+              <p>The list shows only journeys/campaigns within the sandbox(es) assigned to the user's role. Objects in other sandboxes are invisible — not locked, just absent.</p>
+            </div>
+          </div>
+          <div class="ws-node">
+            <div class="ws-left">
+              <div class="ws-icon">✏️</div>
+              <div class="ws-line"></div>
+            </div>
+            <div class="ws-content">
+              <h5>User attempts to create or edit</h5>
+              <p>If the role has <span class="pill">Manage Journeys</span>, the <span class="pill">Create journey</span> button appears. Without it, the button is absent. Same pattern applies to campaigns, messages, and all other resources.</p>
+            </div>
+          </div>
+          <div class="ws-node">
+            <div class="ws-left">
+              <div class="ws-icon">🚀</div>
+              <div class="ws-line"></div>
+            </div>
+            <div class="ws-content">
+              <h5>User tries to publish</h5>
+              <p>Publishing a journey requires <span class="pill">Publish journey</span> permission (a separate right under the Journeys resource). A user with only <span class="pill">Manage Journeys</span> can build and save a journey but cannot activate it to production profiles. This is a common split between content creators and campaign leads.</p>
+            </div>
+          </div>
+          <div class="ws-node">
+            <div class="ws-left">
+              <div class="ws-icon">🏷️</div>
+              <div class="ws-line"></div>
+            </div>
+            <div class="ws-content">
+              <h5>Object-level label check (if configured)</h5>
+              <p>If the journey or campaign has an <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access" class="doc-link" target="_blank" rel="noopener">object-level access label</a>, the system also checks whether the user's role carries a matching label policy. Both the role permission and the object label policy must pass for the user to open the object.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-note">
+          <span class="callout-icon">⚠️</span>
+          <div class="callout-body">
+            <span class="callout-label">Watch out</span>
+            <p>The single most common misconfiguration is missing the <span class="pill">Publish journey</span> permission for users who need to activate journeys. This permission is separate from <span class="pill">Manage Journeys</span> — check that it's included if your Campaign Leads need to go live without waiting for admin approval.</p>
+          </div>
+        </div>
+
+        <div class="screenshot-placeholder">
+          <div class="screenshot-inner"><span class="screenshot-icon">🖥</span><span class="screenshot-label">Journey canvas — access gates</span></div>
+          <span class="screenshot-caption">A user with View Journeys only will see the canvas in read-only mode — all edit controls are hidden, and the Publish button does not appear.</span>
+        </div>
+      </section>
+
+      <!-- Section 7 — Common Scenarios -->
+      <section class="section" id="s7">
+        <div class="section-eyebrow">
+          <span class="section-num">07</span>
+          <span class="section-tag">Common Scenarios</span>
+        </div>
+        <h2>Common Ways to Use Access Control</h2>
+        <p>Access control looks different depending on your team structure. These four scenarios cover the setups admins encounter most often — read the one that matches your situation and skip the rest.</p>
+        <div class="scenario-grid">
+          <div class="scenario-card card-red">
+            <h4>Onboarding a new campaign manager</h4>
+            <p class="scenario-who">Admin onboarding a marketer</p>
+            <p>Assign the built-in <span class="pill">Campaign Manager</span> role to give full create/edit/publish access to campaigns and read-only access to journeys. Add the <span class="pill">Production</span> sandbox and any relevant development sandbox. The user gets full campaign control without touching journey configuration.</p>
+            <p class="scenario-outcome">→ User can build, schedule, and activate campaigns. Cannot edit journeys.</p>
+          </div>
+          <div class="scenario-card card-teal">
+            <h4>Agency or contractor read-only access</h4>
+            <p class="scenario-who">Admin managing external partners</p>
+            <p>Create a custom role with <span class="pill">View Journeys</span>, <span class="pill">View Campaigns</span>, and <span class="pill">View Reports</span> only. Assign a non-production sandbox. This gives the agency visibility into performance without any risk of editing live assets. Do not assign the Production sandbox to contractor roles.</p>
+            <p class="scenario-outcome">→ Contractor can review results and report on performance. No edit access anywhere.</p>
+          </div>
+          <div class="scenario-card card-gold">
+            <h4>Multi-team setup with channel ownership</h4>
+            <p class="scenario-who">Admin managing email, push, and SMS teams</p>
+            <p>Create one role per channel team: give the Email team <span class="pill">Manage Messages</span> + <span class="pill">View Journeys</span>; give the Push team the same for push-specific channel configurations. Each team manages their own channel but cannot interfere with others. Assign shared sandboxes where cross-team visibility is needed.</p>
+            <p class="scenario-outcome">→ Each channel team operates independently within their resource scope.</p>
+          </div>
+          <div class="scenario-card card-violet">
+            <h4>Isolating a sensitive campaign</h4>
+            <p class="scenario-who">Admin protecting a high-value or confidential campaign</p>
+            <p>Use <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access" class="doc-link" target="_blank" rel="noopener">object-level access control</a> to apply a label (e.g. <span class="pill">C2</span>) to the journey or campaign. Only users whose role carries a matching policy for that label can open the object — even if they have <span class="pill">Manage Journeys</span> at the role level.</p>
+            <p class="scenario-outcome">→ Labelled object is invisible or locked for all users without the matching label policy.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8 — Pre-launch Checks -->
+      <section class="section" id="s8">
+        <div class="section-eyebrow">
+          <span class="section-num">08</span>
+          <span class="section-tag">Pre-launch Checks</span>
+        </div>
+        <h2>Before You Go Live: What to Verify</h2>
+        <p>Run through these four checks before handing access to your team. Each one catches a different category of misconfiguration — skip one and you'll typically find out about it at the worst possible moment.</p>
+        <div class="checklist-grid">
+          <div class="checklist-card card-red">
+            <h4>✅ Every user has a role assigned</h4>
+            <p>A user added to Admin Console but not assigned to any role in Permissions will see a blank Adobe Journey Optimizer interface with no navigation. Go to <span class="pill">Permissions → Roles → [role] → Users</span> and confirm all team members appear in at least one role.</p>
+            <p class="check-risk">Risk if skipped: User logs in and sees nothing — usually escalated as a "product not working" issue.</p>
+          </div>
+          <div class="checklist-card card-teal">
+            <h4>✅ Sandbox assignments match environments</h4>
+            <p>Verify that each role's sandbox list matches where the user's work lives. A Campaign Manager without the Production sandbox cannot see or activate campaigns in production. Navigate to <span class="pill">Permissions → Roles → [role] → Edit → Sandboxes</span> to confirm the list.</p>
+            <p class="check-risk">Risk if skipped: User can't see their work in the correct environment — appears as missing data.</p>
+          </div>
+          <div class="checklist-card card-gold">
+            <h4>✅ Publish permissions intentionally assigned</h4>
+            <p>For roles that need to go live with journeys or campaigns, confirm <span class="pill">Publish journey</span> or <span class="pill">Manage Campaigns</span> is included. Test by logging in as the user (or using a test account with the same role) and checking whether the Publish button is visible and active.</p>
+            <p class="check-risk">Risk if skipped: Team is blocked at the final step — can build but not activate, causing delays.</p>
+          </div>
+          <div class="checklist-card card-violet">
+            <h4>✅ Audit Logs enabled and monitored</h4>
+            <p>Audit logs record every role change, permission update, and significant user action. Confirm they're accessible at <span class="pill">Adobe Journey Optimizer → Privacy → Audit Logs</span>. Set up an alert or periodic review cadence so permission changes don't go unnoticed. <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/audit-logs" class="doc-link" target="_blank" rel="noopener">See audit log docs →</a></p>
+            <p class="check-risk">Risk if skipped: Unintended permission escalations go undetected until an incident occurs.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 9 — Performance -->
+      <section class="section" id="s9">
+        <div class="section-eyebrow">
+          <span class="section-num">09</span>
+          <span class="section-tag">Performance</span>
+        </div>
+        <h2>Track Performance After Launch</h2>
+        <p>Once access control is live, here's what to watch in Adobe Journey Optimizer. There's no single "permissions report", but these four signals tell you if your setup is healthy.</p>
+
+        <div class="metric-grid">
+          <div class="metric-card">
+            <span class="metric-icon">🎭</span>
+            <span class="metric-label">Active roles configured</span>
+            <p class="metric-desc">The total number of roles in Permissions. A healthy number is low — typically 3–8 roles for most organisations. Role sprawl (20+ roles) is a signal that custom roles were created reactively instead of deliberately. Audit and consolidate annually.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-icon">👥</span>
+            <span class="metric-label">Users without a role</span>
+            <p class="metric-desc">Check <span class="pill">Permissions → Users</span> for any user listed without a role assignment. This is a blank-access state — the user exists in Admin Console but gets no Adobe Journey Optimizer access. Review and assign roles for all active team members.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-icon">📋</span>
+            <span class="metric-label">Audit log — permission changes</span>
+            <p class="metric-desc">Filter <span class="pill">Audit Logs</span> by action type <span class="pill">Role</span> to see every role edit, user assignment, and permission change. A spike in role changes is worth investigating — it may indicate unsanctioned access escalation or a role being misused as a workaround.</p>
+          </div>
+          <div class="metric-card">
+            <span class="metric-icon">🚫</span>
+            <span class="metric-label">Access denied events</span>
+            <p class="metric-desc">In audit logs, filter for <span class="pill">Access denied</span> or failed actions by resource. A pattern of denials for a specific user + resource combination means a permission is missing from their role. Resolve proactively to avoid blocked workflows.</p>
+          </div>
+        </div>
+
+        <h3>Optimisation tips</h3>
+        <div class="tip-grid">
+          <div class="tip-card card-red">
+            <h4>Review roles quarterly</h4>
+            <p>Set a calendar reminder every quarter to audit role membership. Remove users who've left the team, and check whether any custom roles still match your current team structure. Stale roles are a compliance risk.</p>
+          </div>
+          <div class="tip-card card-teal">
+            <h4>Use the built-in roles as a baseline</h4>
+            <p>Before creating a custom role, check whether an existing built-in role covers 90% of the need. Customise only when the difference matters operationally — fewer roles means less maintenance overhead.</p>
+          </div>
+          <div class="tip-card card-gold">
+            <h4>Separate Dev and Production sandbox access</h4>
+            <p>Give developers and content builders access to development sandboxes only. Restrict Production sandbox assignments to team leads and admins. This prevents accidental changes to live assets during testing.</p>
+          </div>
+          <div class="tip-card card-violet">
+            <h4>Use object labels for high-stakes assets</h4>
+            <p>For campaigns targeting sensitive segments or carrying large budgets, apply an <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access" class="doc-link" target="_blank" rel="noopener">object-level access label</a>. This adds a second layer of protection beyond role-level permissions.</p>
+          </div>
+        </div>
+
+        <details class="expandable-tip">
+          <summary>Not seeing expected access? Start here.</summary>
+          <div class="expandable-content">
+            <p><strong>User sees blank Adobe Journey Optimizer interface:</strong> They have no role assigned in Permissions. Go to <span class="pill">Permissions → Roles</span>, find the appropriate role, and add the user under the Users tab.</p>
+            <p><strong>User can't see a journey or campaign they should have access to:</strong> Check whether the object is in a sandbox assigned to their role. Navigate to <span class="pill">Permissions → Roles → [role] → Edit → Sandboxes</span> and confirm the correct sandbox is listed. If the object has an object-level label, the user's role also needs a matching label policy.</p>
+            <p><strong>Publish button missing or greyed out:</strong> The user's role is missing the <span class="pill">Publish journey</span> permission (for journeys) or <span class="pill">Manage Campaigns</span> (for campaigns). Edit the role and add the permission from the Resources panel.</p>
+          </div>
+        </details>
+      </section>
+
+      <!-- Section 10 — Try It -->
+      <section class="section" id="s10">
+        <div class="section-eyebrow">
+          <span class="section-num">10</span>
+          <span class="section-tag">Try It</span>
+        </div>
+        <h2>Try It Yourself</h2>
+
+        <div class="try-it-header">
+          <div class="try-it-icon">🧪</div>
+          <div>
+            <span class="try-it-badge">Hands-on scenario</span>
+            <h3>Set up a Campaign Manager role for a new team member</h3>
+            <p>Assign full campaign access and read-only journey access to a new colleague — using a development sandbox to test before touching Production.</p>
+          </div>
+        </div>
+
+        <div class="try-it-tasks">
+          <div class="try-it-task">
+            <div class="try-it-task-icon">1️⃣</div>
+            <div>
+              <h4>Open Permissions and locate the Campaign Manager role</h4>
+              <p>Go to <span class="pill">Adobe Experience Cloud → Permissions → Roles</span>. Scroll the role list and click <span class="pill">Campaign Manager</span>. Review the current permission and sandbox summary on the role dashboard before editing anything.</p>
+            </div>
+          </div>
+          <div class="try-it-task">
+            <div class="try-it-task-icon">2️⃣</div>
+            <div>
+              <h4>Edit the role and verify resource permissions</h4>
+              <p>Click <span class="pill">Edit</span>. In the Resources panel, confirm <span class="pill">Manage Campaigns</span> is assigned. Locate the <span class="pill">Journeys</span> resource — if <span class="pill">Manage Journeys</span> is assigned, drag it back to the resource pool and replace it with <span class="pill">View Journeys</span> only. This gives read-only journey visibility without edit rights.</p>
+            </div>
+          </div>
+          <div class="try-it-task">
+            <div class="try-it-task-icon">3️⃣</div>
+            <div>
+              <h4>Assign a development sandbox to the role</h4>
+              <p>Switch to the <span class="pill">Sandboxes</span> tab. Select your development sandbox from the list (do not add Production for this test). Click <span class="pill">Save</span> to apply. Confirm the summary shows your development sandbox and the updated permissions.</p>
+            </div>
+          </div>
+          <div class="try-it-task">
+            <div class="try-it-task-icon">4️⃣</div>
+            <div>
+              <h4>Add your new team member to the role</h4>
+              <p>From the role dashboard, open the <span class="pill">Users</span> tab and click <span class="pill">Add user</span>. Type the user's email address, select them from the results, and click <span class="pill">Save</span>. The user receives an email invitation with a link to log into Adobe Journey Optimizer.</p>
+            </div>
+          </div>
+          <div class="try-it-task">
+            <div class="try-it-task-icon">5️⃣</div>
+            <div>
+              <h4>Verify the access is correct</h4>
+              <p>Ask the user to log in and navigate to <span class="pill">Campaigns</span> — they should see the full campaign list and a <span class="pill">Create campaign</span> button. Navigate to <span class="pill">Journeys</span> — the canvas should load in read-only mode with no edit or publish controls visible. If everything looks right, repeat with the Production sandbox assigned when you're ready to promote them.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-tip" style="margin-top: 20px;">
+          <span class="callout-icon">✅</span>
+          <div class="callout-body">
+            <span class="callout-label">You're set up</span>
+            <p>Your new Campaign Manager can now build and activate campaigns in Adobe Journey Optimizer, see all journeys in read-only mode, and work only within the sandboxes you've designated. When they need Production access, return to the role's Sandboxes tab and add it — no other changes needed.</p>
+          </div>
+        </div>
+
+        <h3>Where to go next</h3>
+        <div class="tag-cloud">
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/ootb-product-profiles" class="tag" target="_blank" rel="noopener">Built-in Roles →</a>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/ootb-permissions" class="tag" target="_blank" rel="noopener">Built-in Permissions →</a>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions" class="tag" target="_blank" rel="noopener">Permission Levels →</a>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/attribute-based-access" class="tag" target="_blank" rel="noopener">Attribute-based Access Control →</a>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access" class="tag" target="_blank" rel="noopener">Object-level Access Control →</a>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/sandbox/sandboxes" class="tag" target="_blank" rel="noopener">Sandboxes →</a>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/audit-logs" class="tag" target="_blank" rel="noopener">Audit Logs →</a>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/get-started/by-role/administrator" class="tag" target="_blank" rel="noopener">Get started as Administrator →</a>
+        </div>
+
+        <div class="related-guides">
+          <h3>Related guides</h3>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/permissions" class="related-guide" target="_blank" rel="noopener">
+            <div class="related-guide-icon">👥</div>
+            <div>
+              <div class="related-guide-title">Manage users &amp; roles</div>
+              <div class="related-guide-desc">Step-by-step guide for assigning roles, adding users, and editing built-in and custom roles in Permissions.</div>
+            </div>
+          </a>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/attribute-based-access" class="related-guide" target="_blank" rel="noopener">
+            <div class="related-guide-icon">🏷️</div>
+            <div>
+              <div class="related-guide-title">Attribute-based access control</div>
+              <div class="related-guide-desc">Restrict access to specific data fields using labels — essential for teams handling sensitive personal data.</div>
+            </div>
+          </a>
+          <a href="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/audit-logs" class="related-guide" target="_blank" rel="noopener">
+            <div class="related-guide-icon">📋</div>
+            <div>
+              <div class="related-guide-title">Audit logs</div>
+              <div class="related-guide-desc">Monitor every role change, permission update, and access event across your Adobe Journey Optimizer organisation.</div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ── Footer ── -->
+    <footer class="page-footer">
+      <div class="footer-brand">
+        <div class="footer-dot"></div>
+        <span>Adobe Journey Optimizer</span>
+      </div>
+      <div class="footer-meta">Access Control &amp; Permissions · Onboarding Guide v1.0</div>
+    </footer>
+
+  </div><!-- /.main -->
+
+</div><!-- /.layout -->
+
+<button id="navToggle" aria-label="Toggle navigation">☰</button>
+
+<script>
+  // 1. Active nav link via IntersectionObserver
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(s => observer.observe(s));
+
+  // 2. Reading progress bar
+  const progressFill = document.getElementById('progressFill');
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight;
+    const viewportHeight = window.innerHeight;
+    const progress = scrollY / (docHeight - viewportHeight) * 100;
+    progressFill.style.width = Math.min(progress, 100) + '%';
+  });
+
+  // 3. Mobile sidebar toggle
+  const navToggle = document.getElementById('navToggle');
+  const sidebar = document.getElementById('sidebar');
+  navToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    navToggle.textContent = sidebar.classList.contains('open') ? '✕' : '☰';
+  });
+
+  // 4. Close sidebar on nav link click (mobile)
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        sidebar.classList.remove('open');
+        navToggle.textContent = '☰';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
