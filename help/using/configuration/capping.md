@@ -13,11 +13,11 @@ exl-id: 377b2659-d26a-47c2-8967-28870bddf5c5
 
 The Capping API helps you create, configure and monitor your capping configurations.
 
-This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}.
+This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}.
 
 ## Capping API description & Postman collection {#description}
 
-The table below lists the available commands for the capping API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/){target="_blank"}.
+The table below lists the available commands for the capping API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling){target="_blank"}.
 
 | Method  | Path   | Description   |
 |---|---|---|

@@ -103,7 +103,7 @@ In the dataset management user interface, use the toggle to enable the dataset f
 
 ### API Method
 
-Follow the directions detailed in [this documentation](https://developer.adobe.com/journey-optimizer-apis/references/authentication/) to configure your environment to send API commands. 
+Follow the directions detailed in [this documentation](https://developer.adobe.com/journey-optimizer-apis/references/authentication) to configure your environment to send API commands. 
 
 #### Prerequisites
 

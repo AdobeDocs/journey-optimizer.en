@@ -26,7 +26,7 @@ For Adobe Journey Optimizer to correctly display content cards, you must configu
 
 * **Adobe Experience Platform Mobile or Platform Web SDK** 
 
-    For mobile and web applications, to add modifications to your web pages or mobile apps, you need to implement either the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview){target="_blank"} on your website or [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/){target="_blank"} on your mobile apps.
+    For mobile and web applications, to add modifications to your web pages or mobile apps, you need to implement either the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview){target="_blank"} on your website or [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home){target="_blank"} on your mobile apps.
 
 * **Journey Optimizer**
 

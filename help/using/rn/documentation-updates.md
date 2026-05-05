@@ -13,7 +13,15 @@ exl-id: 83c8f206-bce3-4cc8-94a3-575ec1d999bc
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## May 2026 {#may-2026}
+
+* A new **Business rules queries** section has been added to the query examples page, providing a Data Lake query to check all profile discards due to journey frequency capping exclusions on a specific journey after a specific date. The query includes the `eventCodeReason` field to identify whether profiles were excluded because a cap was reached (`CAP_REACHED`) or due to a lower priority (`LOWER_PRIORITY`). [Read more](../reports/query-examples.md#business-rules-queries)
+
 ## April 2026 {#april-2026}
+
+* The **Change dimension** activity documentation has been updated to clarify that while the activity uses an external join and keeps all records at the dimension-change step, records without a matching profile in the new targeting dimension are silently excluded at message delivery time. [Read more](../orchestrated/activities/change-dimension.md)
+
+* The guardrails in the **Add a CC field to emails** documentation have been enhanced. They now specify that the CC address is not checked against consent or suppression, and that opens and click-throughs from emails sent to the CC address are taken into account in the total opens and clicks from the send analysis. [Read more](../configuration/cc-email-field.md)
 
 * The **Channel activities** documentation has been updated with a new **Marketing vs Transactional messages** section explaining the behavioral differences between the two channel categories: opt-in requirements, business rule application, channel configuration type, and recommended use cases. [Read more](../orchestrated/activities/channels.md#marketing-vs-transactional)
 

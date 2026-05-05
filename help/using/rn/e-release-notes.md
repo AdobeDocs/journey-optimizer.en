@@ -7,10 +7,14 @@ feature: Release Notes
 hide: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 ---
+<!--
 # Pre-release notes {#e-release-notes}
 
 Adobe Journey Optimizer continuously delivers new features, enhancements to existing features, and bug fixes. All changes are consolidated at the end of each month in the [release notes](release-notes.md). 
 
+-->
+
+<!--
 ## April '26 pre-release notes {#april-26-rn}
 
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
@@ -70,6 +74,23 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>This allows you to automatically copy the right stakeholder on each message—such as a relationship manager or account owner—while ensuring the customer knows who to contact for follow-up.</p>
 <p>The CC field supports personalization, so a single configuration can dynamically route copies based on profile data, making it scalable across multiple use cases without additional setup.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14581">DOCAC-14581</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Deeplinks in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer. This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14582">DOCAC-14582</a></p>
 </td>
 </tr>
 </tbody>
@@ -155,7 +176,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>You can now use <strong>AI models</strong> in your <strong>ranking formulas</strong> to automatically boost <strong>journey priority scores</strong> based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
+<p>You can now use <strong>AI models</strong> in your ranking formulas to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14295">DOCAC-14295</a></p>
 </td>
@@ -178,13 +199,12 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <p>Availability date: April 17, 2026</p>
 <!--
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14520">DOCAC-14520</a></p>
--->
+
 </td>
 </tr>
 </tbody>
 </table>
 
-<!--
 <table>
 <thead>
 <tr>
@@ -202,7 +222,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 </tr>
 </tbody>
 </table>
--->
 
 <table>
 <thead>
@@ -299,6 +318,38 @@ Improvements coming with this release are listed below.
 
   Availability date: April 9, 2026
 
+#### Push
+
+* **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information.
+
+  Documentation JIRA task: [DOCAC-14592](https://jira.corp.adobe.com/browse/DOCAC-14592)
+
+#### SMS
+
+* **Character Count** - In Adobe Journey Optimizer, you can now use the Character Count to monitor the length of your SMS messages in real time. It helps you see when a message will be split into multiple segments to better manage formatting and avoid unexpected increases in sending costs. [Read more](../sms/create-sms.md)
+
+  Documentation JIRA task: [DOCAC-14346](https://jira.corp.adobe.com/browse/DOCAC-14346)
+
+* **Opt-out and consent at phone number and sender** - For SMS, Journey Optimizer now records marketing consent and opt-out at the level of both the profile's phone number and short code. If a profile's phone number changes, consent tied to the previous number does not transfer to the new one. The recipient must opt in again, ensuring that all messages remain aligned with consent at the specific number and sender level.
+
+  This capability is currently only available for Sinch SMS configurations. [Read more](../sms/sms-configuration-sinch.md)
+
+  Documentation JIRA task: [DOCAC-14344](https://jira.corp.adobe.com/browse/DOCAC-14344)
+
+* **Support custom dataset selection** - Inbound SMS events can be written to a **custom dataset** you choose, so audiences and journeys can use that data sooner than waiting on the default message-feedback path and streaming audience refresh—useful for **two-way SMS**. [Read more](../sms/sms-webhook.md)
+
+  Documentation JIRA task: [DOCAC-14356](https://jira.corp.adobe.com/browse/DOCAC-14356)
+
+* **Webhook interface enhancement** - When configuring SMS webhooks, the user interface now includes a built-in setup guide with practical examples, making it easier to align provider payloads and troubleshoot issues without leaving the configuration flow. [Read more](../sms/sms-webhook.md)
+
+  Documentation JIRA task: [DOCAC-14589](https://jira.corp.adobe.com/browse/DOCAC-14589)
+
+#### WhatsApp
+
+* **WhatsApp interactive buttons and tracking** - WhatsApp in Journey Optimizer now supports interactive buttons required by your templates and use cases, along with built-in interaction tracking so you can measure engagement and analyze performance alongside your other channel reporting.
+
+  Documentation JIRA task: [DOCAC-14590](https://jira.corp.adobe.com/browse/DOCAC-14590)
+
 #### Journey Path Optimization
 
 * **Experiment type** - You can now choose between A/B experiment (fixed split at the start) or Multi-armed bandit (automatic split with weekly weight updates) when configuring a path experiment. [Read more](../building-journeys/path-experimentation.md)
@@ -315,7 +366,7 @@ Improvements coming with this release are listed below.
 
 #### Adobe Experience Manager integrations
 
-* **Content Advisor Selector** - The AEM Assets and Content Fragment selectors are now replaced by the **Content Advisor selector**, a unified modal that allows you to browse, search, filter, and access all AEM Assets and AEM Content Fragments. Dynamic Media rendition support is also included, allowing you to add image renditions from the UI when Dynamic Media assets are selected. Previously released in Limited Availability, this capability is now available to all environments (General Availability).
+* **Content Advisor Selector** - The Adobe Experience Manager Assets and Content Fragment selectors are now replaced by the **Content Advisor selector**, a unified modal that allows you to browse, search, filter, and access all AEM Assets and AEM Content Fragments. Dynamic Media rendition support is also included, allowing you to add image renditions from the UI when Dynamic Media assets are selected. Previously released in Limited Availability, this capability is now available to all environments (General Availability).
 
   Documentation JIRA task: [DOCAC-13802](https://jira.corp.adobe.com/browse/DOCAC-13802)
 
@@ -345,11 +396,15 @@ Improvements coming with this release are listed below.
 
 #### Orchestrated campaigns
 
-<!--* **Data Modeler enhancements** - The Data Modeler in Orchestrated Campaigns now supports enhanced <strong>composite relationship management</strong>. You can create and manage composite relationships directly in the UI, including linking a field to multiple tables of the same type. These enhancements build on the <strong>composite key</strong> and <strong>enumeration management</strong> capabilities introduced in the previous release.Documentation JIRA task: [DOCAC-14334](https://jira.corp.adobe.com/browse/DOCAC-14334)-->
+* **Data Modeler enhancements** - Orchestrated relational schemas now support composite keys spanning multiple fields. Loading a schema from a DDL file also brings in enumerations, and loading from either a DDL or Excel file automatically creates composite relationships between tables. In the entity relationship view, composite links now display the full set of field pairings between tables after a file is uploaded.
+
+  Documentation JIRA task: [DOCAC-14334](https://jira.corp.adobe.com/browse/DOCAC-14334)
 
 * **Global variables in Orchestrated Campaigns** - Orchestrated Campaigns now support global variables that can be defined once and reused across all activities within a workflow, simplifying configuration and ensuring consistency in dynamic values, expressions, and content personalization.
   
   Documentation JIRA task: [DOCAC-14113](https://jira.corp.adobe.com/browse/DOCAC-14113)
+
+-->
 
 <!--
 ## March '26 pre-release notes {#march-26-rn}
@@ -1095,7 +1150,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tr>
 <td>
 <p>A new <strong>Journey Optimizer API</strong> is now available, enabling you to programmatically retrieve and inspect campaign-related data such as details, versions, and configurations.</p>
-<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve/">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve">detailed documentation</a>.</p>
 <p><a href="https://jira.corp.adobe.com/browse/CJM-96195">Link to PRODUCT JIRA task</a></p>
 <p>Availability date: November 24, 2025</p>
 </td>

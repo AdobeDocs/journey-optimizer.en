@@ -118,5 +118,6 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
 
 * [Dataset query samples - Journey Step Event](../data/datasets-query-examples.md#journey-step-event).
 * [Examples of queries - Event-based Queries](query-examples.md#event-based-queries).
+* [Examples of queries - Business rules queries](query-examples.md#business-rules-queries).
 * [Built-in schemas dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 
