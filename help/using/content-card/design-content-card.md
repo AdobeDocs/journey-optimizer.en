@@ -21,15 +21,15 @@ From the **[!UICONTROL Content card layout]** section, choose one of the three i
 
 * **[!UICONTROL Small image]**: Displays a compact image alongside text, ideal for messages where content takes priority over visuals. 
     
-    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/smallimage-template/) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/smallimagecarduistate/) to learn more.
+    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/smallimage-template) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/smallimagecarduistate) to learn more.
 
 * **[!UICONTROL Large image]**: Features a prominent image above or beside the text, making visuals the main focus of your message. 
 
-    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/largeimage-template/) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/largeimagecarduistate/) to learn more.
+    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/largeimage-template) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/largeimagecarduistate) to learn more.
 
 * **[!UICONTROL Image only]**: Shows the image without accompanying text, perfect for visual-driven messages or standalone imagery. 
     
-    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/imageonly-template/) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/imageonlycarduistate/) to learn more.
+    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/imageonly-template) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/imageonlycarduistate) to learn more.
 
 ## Content tab {#content-tab}
 

@@ -27,6 +27,12 @@ To capture profile data with your [!DNL Journey Optimizer] landing pages and enr
 >title="Select a dataset"
 >abstract="Define a dataset where the form responses will be stored and reflected. You can type to search a specific dataset or select it from the list."
 
+<!--
+>[!NOTE]
+>
+>To access and edit form presets, you must have the **[!UICONTROL View form presets]**, **[!UICONTROL Manage form presets]**, and **[!UICONTROL Publish form presets]** permissions. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).
+-->
+
 Before being able to create a form, you need to create a dedicated preset where you select the connection endpoint where form submission data is sent, and the dataset where the data captured through the form will be stored.
 
 Once data lands on the streaming endpoint, it is linked with the dataset information. Using the generated source/target connections and source flow, the data is then pushed into the dataset.
@@ -39,12 +45,6 @@ When creating a preset:
     * **Source connection** – where the data originates.
     * **Target connection** – where the data is stored or consumed.
     * **Source flow** – the pipeline that moves data from the source connection into [!DNL Experience Platform], handling mapping, transformation, and validation.
-
-<!--
->[!NOTE]
->
-> To access and edit form presets, you must have the **[!UICONTROL Manage form presets]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).TBC
--->
 
 To create a form preset, follow the steps below.
 
@@ -78,6 +78,12 @@ To create a form preset, follow the steps below.
 1. Click **[!UICONTROL Publish]**. Your preset is now ready to be used in a form.
 
 ## Access and manage forms {#access-forms}
+
+<!--
+>[!NOTE]
+>
+>To access and edit forms, you must have the **[!UICONTROL View forms]**, **[!UICONTROL Manage forms]**, and **[!UICONTROL Publish forms]** permissions. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).
+-->
 
 To access the form list, select **[!UICONTROL Content Management]** > **[!UICONTROL Forms]** from the left menu.
 

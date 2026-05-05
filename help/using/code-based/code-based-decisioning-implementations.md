@@ -290,7 +290,7 @@ Let's say you have the same decision policy with header and footer placement in 
 
 ## Tutorials {#tutorials}
 
-Learn how to fetch, display and track code-based experiences using the [Adobe Journey Optimizer extension](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/#implement-extension-in-mobile-app){target="_blank"} for Adobe Experience Platform Mobile SDKs in [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
+Learn how to fetch, display and track code-based experiences using the [Adobe Journey Optimizer extension](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/#implement-extension-in-mobile-app){target="_blank"} for Adobe Experience Platform Mobile SDKs in [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial){target="_blank"}.
 
 Learn how to use decisioning in Journey Optimizer to personalize content offers on your website, with a focus on Web SDK configuration, in [this tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
 

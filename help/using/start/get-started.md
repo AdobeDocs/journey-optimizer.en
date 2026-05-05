@@ -132,12 +132,12 @@ Adobe Experience Cloud general privacy guidelines and procedures apply to [!DNL 
 Journey Optimizer is built natively on Adobe Experience Platform, sharing its data foundation, identity graph, and governance services — for a detailed walkthrough of how these systems work together, see [Understanding Journey Optimizer](understanding-ajo.md).
 
 
->[!MORELIKETHIS]
->
->* [Key steps to start](quick-start.md) — Role-based quickstart guides for admins, marketers, and data engineers.
->* [Get started with data management](../data/gs-data.md) — Learn how data is ingested, unified, and activated in Journey Optimizer.
->* [Design journeys and send messages](../building-journeys/journey-gs.md) — Build your first customer journey and configure channel actions.
->* [Live reports](../reports/live-report.md) — Monitor campaign and journey performance in real time.
->* [Introduction to Journey Optimizer tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction){target="_blank"} — A guided video walkthrough of core Journey Optimizer concepts.
->* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF) — Security architecture, data protection, and compliance details.
->* [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} — Official licensing terms and edition feature breakdown.
+## Related resources {#related-resources}
+
+* [Key steps to start](quick-start.md) — Role-based quickstart guides for admins, marketers, and data engineers.
+* [Get started with data management](../data/gs-data.md) — Learn how data is ingested, unified, and activated in Journey Optimizer.
+* [Design journeys and send messages](../building-journeys/journey-gs.md) — Build your first customer journey and configure channel actions.
+* [Live reports](../reports/live-report.md) — Monitor campaign and journey performance in real time.
+* [Introduction to Journey Optimizer tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction){target="_blank"} — A guided video walkthrough of core Journey Optimizer concepts.
+* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF) — Security architecture, data protection, and compliance details.
+* [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} — Official licensing terms and edition feature breakdown.

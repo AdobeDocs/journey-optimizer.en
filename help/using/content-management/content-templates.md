@@ -36,7 +36,7 @@ To create, edit, and delete content templates, ensure you have the **[!DNL Manag
 
 >[!NOTE]
 >
->You can also create and manage content templates using APIs. For more information, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/content/){target="_blank"}.
+>You can also create and manage content templates using APIs. For more information, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"}.
 
 ## How-to video {#video-templates}
 

@@ -222,6 +222,26 @@ Create intelligent ranking models that automatically optimize which offers to sh
 
 [Learn more about AI models for decisioning](../experience-decisioning/ranking/ai-models.md) | [Create AI ranking models](../experience-decisioning/ranking/create-ai-models.md)
 
+## AI-powered rule and formula optimization {#decisioning-optimization}
+
+Adobe Journey Optimizer can automatically analyze [Decisioning rules](../experience-decisioning/rules.md) and [ranking formulas](../experience-decisioning/ranking/ranking-formulas.md) expressed in PQL syntax, and suggest simplifications that preserve the original logic. When a simplification is found, a red **[!UICONTROL Optimize]** indicator appears next to the rule or formula, opening a side-by-side comparison of the original and AI-suggested expressions, with a downloadable analysis to validate that both behave identically.
+
+### Key Capabilities
+
+* **Logic-preserving simplifications** - The AI suggests a shorter expression that returns the same result on simulated profiles.
+* **Validation report** - Download an analysis (TSV) showing how each simulated profile is evaluated against both versions before applying the change.
+* **One-click apply** - Replace the original PQL with the optimized version directly from the **[!UICONTROL Optimize]** window.
+
+### Eligibility
+
+Only rules and ranking formulas whose PQL expression is larger than **2 KB** (UTF-8 encoded) are targeted for analysis, smaller expressions are not analyzed.
+
+### Permissions
+
+This capability uses the same generative AI access controls as **AI Assistant**. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. [Learn more about AI Assistant access](../content-management/gs-generative.md#generative-access)
+
+[Optimize Decisioning rules](../experience-decisioning/rules.md#optimize) | [Optimize ranking formulas](../experience-decisioning/ranking/ranking-formulas.md#optimize)
+
 ## Content Experimentation with AI {#experimentation}
 
 **Experiment Accelerator** helps you run experiments faster with AI-driven insights and recommendations, identifying winning content variations more quickly.
