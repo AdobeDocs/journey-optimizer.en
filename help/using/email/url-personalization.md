@@ -79,8 +79,6 @@ Now when the email is sent out, this parameter is automatically appended to the 
 >
 >To verify the final URL, you can [send a proof](../content-management/proofs.md) and click the link in the content of the email once you receive the proof. The URL should display the tracking parameter. For example: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>
 
-
-<!--
 ## Best practices and guardrails {#best-practices}
 
 To keep links valid, clickable, and trackable, follow the best practices and guardrails below.
@@ -121,4 +119,4 @@ Before activating a journey or campaign, follow the recommendations below:
 
 * Send a [proof](../content-management/proofs.md) and click links to confirm the resolved URL starts with `http`/`https` and keeps the expected structure.
 * If tracking parameters are appended, confirm the final URL includes them (either via configuration-level URL tracking or per-link tracking parameters).
--->
+
