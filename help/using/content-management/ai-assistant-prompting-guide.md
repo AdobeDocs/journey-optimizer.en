@@ -18,7 +18,7 @@ exl-id: f931372e-6cf2-4f27-b12a-ed5ca0c1b87b
 This guide helps you structure your requests, communicate intent with clarity, and ensure the AI produces messaging that aligns with your brand guidelines, audience needs, and campaign goals.
 Learn how to write effective prompts that enable AI Assistant to generate high-quality, on-brand marketing content tailored to your objectives. 
 
-## Use the Prompt assistant
+## Use the Prompt assistant {#prompt-assistant}
 
 The prompt assistant helps you strengthen your opening prompt so content generation needs less back-and-forth. From that first input, you may get suggestions, a suggested rewrite, optional enhancements, and clarifying questions. Your answers refine the prompt that is used to generate the content.
 
