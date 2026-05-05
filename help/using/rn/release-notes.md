@@ -22,7 +22,7 @@ Because of this model, release notes are updated between monthly releases. For f
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
 ## May '26 updates {#may-26-rn}
-
+ 
 <table>
 <thead>
 <tr>
