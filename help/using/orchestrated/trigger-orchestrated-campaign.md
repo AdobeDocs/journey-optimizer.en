@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Trigger an Orchestrated campaign using a signal
-description: Learn how to trigger an Orchestrated campaign using a signal in [!DNL Adobe Journey Optimizer].
+description: Learn how to trigger an Orchestrated campaign using a signal and pass parameters that become available as in the campaign.
 feature: Campaigns
 topic: Content Management
 role: Developer
@@ -12,16 +12,18 @@ exl-id: d1fd072d-b143-4752-822f-23f98684ba80
 ---
 # Trigger Orchestrated campaigns using a signal {#trigger-signal}
 
-You can trigger an Orchestrated campaign by sending it a signal instead of running it on a schedule. The signal is sent via an API call from an external system or application. When using a signal, you can pass parameters. They are then made available in the orchestrated campaign as event variables in the execution context — for use in targeting, conditions, or expressions.
+You can trigger an Orchestrated campaign by sending it a signal instead of running it on a schedule. The signal is sent via an API call from an external system or application. When using a signal, you can pass parameters that become available as variables in the campaign — for use in targeting, conditions, or expressions.
+
+This page explains how to configure and trigger a signal. Once the variables are available, for details on how to use them in rules and **[!UICONTROL Test]** conditions, see [Use variables in Orchestrated campaigns](variables-orchestrated-campaigns.md).
 
 For the full REST specification of the trigger endpoint (paths, headers, body, responses, and errors), see [Trigger Orchestrated campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} in the Adobe Journey Optimizer API documentation.
 
 End-to-end process to trigger an Orchestrated campaign using a signal:
 
-1. [Schedule the campaign to be triggered by a signal](#set-an-orchestrated-campaign-to-wait-for-a-signal-configure-signal)
-1. [Add parameters for the signal payload](#add-parameters-for-the-signal-payload-optional-parameters) (optional)
-1. [Build and test the campaign](#build-and-test-the-campaign-build-and-test)
-1. [Publish and trigger the campaign](#publish-and-trigger-the-campaign-publish)
+1. [Schedule the campaign to be triggered by a signal](#configure-signal)
+1. [Add parameters for the signal payload](#parameters) (optional)
+1. [Build and test the campaign](#build-and-test)
+1. [Publish and trigger the campaign](#publish)
 
 >[!NOTE]
 >
@@ -41,7 +43,7 @@ To set an orchestrated campaign to start on a signal instead of a schedule, foll
 
 ## Add parameters for the signal payload (optional) {#parameters}
 
-You can pass parameters in the trigger signal and use them in your campaign in the execution context—for example, in targeting, conditions, or expressions. Define each parameter in the schedule settings first, then pass its value when you call the trigger API.
+You can pass parameters in the trigger signal and use them in your campaign in the execution context — for example, in targeting, conditions, or expressions. Define each parameter in the schedule settings first, then pass its value when you call the trigger API.
 
 1. Open the campaign scheduler and select **[!UICONTROL Add parameter]**.
 
@@ -51,7 +53,7 @@ You can pass parameters in the trigger signal and use them in your campaign in t
 
 >[!NOTE]
 >
->If you pass a parameter in the API call that has not been defined in the scheduler, the API call still succeeds and the parameter is propagated, and you can use it in expressions. However, the orchestrated campaign interface will not help you use it—for example, the Test activity will not list or show parameters that were not defined in the scheduler.
+>If you pass a parameter in the API call that has not been defined in the scheduler, the API call still succeeds and the parameter is propagated, and you can use it in expressions. However, the orchestrated campaign interface will not help you use it — for example, the Test activity will not list or show parameters that were not defined in the scheduler.
 
 ## Build and test the campaign {#build-and-test}
 

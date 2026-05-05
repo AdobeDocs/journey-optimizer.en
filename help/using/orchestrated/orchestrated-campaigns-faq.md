@@ -341,16 +341,17 @@ No, Orchestrated campaigns do not support decisioning capabilities. For decision
 
 +++ How does deployment across environments work?
 
-Objects created in Orchestrated campaigns (e.g., audiences, workflows) are tied to the sandbox in which they are built. Standard packaging and deployment workflows across environments (dev, stage, prod) are not currently available for Orchestrated campaigns.  
+Objects created in Orchestrated campaigns (for example, audiences and workflows) belong to the sandbox where they were created. To reuse an orchestrated campaign in another sandbox (for example, dev, stage, or production), copy it with **Sandbox tooling**: add the campaign to a package, publish the package, and import it into the target sandbox. The imported copy is created in **draft**, and **re-importing the same package creates a new campaign** rather than updating an existing one. A complete move often takes **more than one step**: you may need to align **channel configurations** (matching names in the target), **schemas**, and **datasets** through the same package or additional package imports—channel configurations are not copied with the campaign. There is no full pre-export checklist in the UI; use the import mapping flow and **post-import alerts** to finish setup. For details and limitations, see [Copy Journey Optimizer objects between sandboxes](../configuration/copy-objects-to-sandbox.md).
 
 **Best practices**
 
-* Maintain **separate sandboxes** for experimentation, QA, and production.  
-* Document configurations thoroughly to enable manual replication if needed.  
-* Align with governance teams to reduce configuration drift between environments.   
+* Maintain **separate sandboxes** for experimentation, QA, and production.
+* After each import, validate the campaign end to end in the target sandbox before you publish.
+* Document configurations and align with governance teams to reduce configuration drift between environments.
 
 **Learn more**
 
+* [Copy Journey Optimizer objects between sandboxes](../configuration/copy-objects-to-sandbox.md)
 * [Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)
 * [Guardrails and limitations](guardrails.md)
 

@@ -48,6 +48,20 @@ In journey B, the first event is triggered internally via the **[!UICONTROL Jump
 >
 >Journey B can also be triggered via an external event.
 
+### Profile behavior during a Jump {#jump-profile-behavior}
+
+When a profile reaches the **[!UICONTROL Jump]** step, it continues progressing in the origin journey (Journey A) while simultaneously entering the target journey (Journey B). The profile is therefore active in both journeys at the same time.
+
+This means:
+
+* The profile completes any remaining steps in Journey A after the Jump activity (for example, a follow-up wait or closing action).
+* The profile also starts flowing through Journey B from its first event, independently of Journey A.
+* If the profile is **already active** in Journey B when the Jump is executed, it will **not** enter Journey B again. Journey A continues normally; no error is reported.
+
+>[!NOTE]
+>
+>The case above — profile already active in Journey B — results in a **silent skip**: no error is raised and Journey A continues normally. In other situations, the Jump can **fail** and Journey A applies its standard action-error handling. See [Runtime failures](#jump-troubleshoot) for the full list of cases.
+
 ## Best practices and limitations {#jump-limitations}
 
 Use these guidelines to keep Jump activity behavior predictable and safe.
@@ -132,10 +146,20 @@ When a **[!UICONTROL Jump]** activity is configured in a journey, a **[!UICONTRO
 
 ## Troubleshooting {#jump-troubleshoot}
 
-Errors occur if:
+### Configuration errors
 
-* The target journey no longer exists
-* The target journey is draft, closed, or stopped
-* The first event of the target journey has changed, and the mapping is broken
+The following issues prevent the Jump from working correctly and appear as errors on the journey canvas:
+
+* The target journey no longer exists.
+* The target journey is draft, closed, or stopped.
+* The first event of the target journey has changed and the mapping is broken.
 
 ![Journey analytics showing jump activity execution metrics](assets/jump6.png)
+
+### Runtime failures
+
+In the following cases, the Jump step is treated as a **failed action** in Journey A. Journey A applies the standard action-error handling and continues:
+
+* The existing target journey instance has been terminated and the target journey is non-reentrant.
+* A reentrance period is configured on the target journey. Even when re-entry is allowed in principle, the profile cannot re-enter until the period elapses (the Jump fails with a "non-reentrant for the period" status).
+* The target journey version cannot be located, has been deleted, is in a finished state, or has been stopped.

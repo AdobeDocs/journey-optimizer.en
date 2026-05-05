@@ -27,9 +27,11 @@ The expression editor provides:
 
 * An **input field (1)** where the expression is defined.
 * A list of available **fields (2)** that can be used in the expression and correspond to the targeting dimension of the query.
-* **Helper functions (3)**, sorted by category.
+* A list of available **variables (3)** that can be used in the expression. This menu is available for the **Value** field. [Learn how to use variables in Orchestrated campaigns](variables-orchestrated-campaigns.md)
 
-Edit the expression by entering an expression directly in the input field. To add a field or a helper function, place your cursor in the expression where you want to add it and click the + button.
+* **Helper functions (4)**, sorted by category.
+
+Edit the expression by entering an expression directly in the input field. To add a field, a variable or a helper function, place your cursor in the expression where you want to add it and click the + button.
 
 ![Expression editor interface](assets/rule-builder-expression-editor.png){zoomable="yes"}
 
