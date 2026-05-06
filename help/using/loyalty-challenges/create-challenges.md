@@ -51,7 +51,13 @@ This page covers the complete process of creating a loyalty challenge, from sele
    * **[!UICONTROL Sequential]**: Customers complete tasks in a defined order  
      *Example: Purchase → Review → Share (must be completed in this sequence)*
 
-   After selecting a challenge type, the challenge creation interface opens with multiple configuration tabs. Start by configuring the challenge structure.
+   * **[!UICONTROL Bring your own data]**: Select **[!UICONTROL Bring your own data]** when you want the challenge framework such as tasks and rewards to be assembled from your Loyalty Challenges data integration. When this type is selected, you don't need to configure the challenge structure, you only configure **[!UICONTROL Content]**, **[!UICONTROL Messaging]**, and **[!UICONTROL Audience]** the same way as other challenges.
+
+      >[!AVAILABILITY]
+      >
+      >The **[!UICONTROL Bring your own data]** challenge type is currently available to a restricted set of organizations and will be made available more broadly in a future release.
+
+   After selecting a challenge type, the challenge creation interface opens with multiple configuration tabs. For all types except **[!UICONTROL Bring your own data]**, start by configuring the challenge structure.
 
 ## Configure the challenge structure {#structure}
 
