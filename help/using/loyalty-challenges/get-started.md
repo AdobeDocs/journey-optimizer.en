@@ -22,6 +22,7 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * [Create challenges](create-challenges.md)
 * [Create tasks](create-tasks.md)
+* [Monitor loyalty challenge performance](loyalty-reporting.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
 >[!ENDSHADEBOX]
@@ -46,6 +47,7 @@ With Loyalty Challenges, you can:
 * **Personalize the experience**: Use content cards and multi-channel messaging to create immersive, branded experiences
 * **Integrate seamlessly**: Connect with your existing loyalty providers and leverage Experience Platform data
 * **Track automatically**: Monitor customer progress through auto-generated journeys without custom development
+* **Measure performance**: Use built-in reporting dashboards to track program KPIs, challenge results, and task-level metrics
 
 ![](assets/challenges-gs.png)
 
@@ -152,6 +154,17 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
     </div>
     <p>
     <em>Learn how to define tasks that customers complete for challenges</em>
+    </p>
+  </td>
+  <td>
+    <a href="loyalty-reporting.md">
+      <img alt="Reports" src="assets/do-not-localize/icon-reporting.png" width="200"/>
+    </a>
+    <div>
+    <a href="loyalty-reporting.md"><strong>Monitor performance</strong></a>
+    </div>
+    <p>
+    <em>Track program KPIs, challenge results, and task metrics with built-in dashboards</em>
     </p>
   </td>
 </tr>

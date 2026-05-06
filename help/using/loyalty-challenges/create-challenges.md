@@ -22,6 +22,7 @@ exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * **Create challenges** ◀︎ **You are here**
 * [Create tasks](create-tasks.md)
+* [Monitor loyalty challenge performance](loyalty-reporting.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
 >[!ENDSHADEBOX]
@@ -293,7 +294,7 @@ Launching a challenge requires **three steps**: (1) publish the challenge, (2) g
 
 1. Open the journey and publish it. The journey will start automatically on your specified challenge start date and deliver content and messages according to your configuration. [Learn how to publish a journey](../building-journeys/publish-journey.md).
 
-1. Once your challenge is live, monitor performance and message delivery in the [journey report](../reports/journey-global-report-cja.md).
+1. Once your challenge is live, monitor program KPIs, challenge results, and task-level metrics in the [loyalty challenge reports](loyalty-reporting.md). You can also monitor message delivery in the [journey report](../reports/journey-global-report-cja.md).
 
 >[!NOTE]
 >
