@@ -77,7 +77,13 @@ Because of this model, release notes are updated between monthly releases. For f
 </tbody>
 </table>
 
+### Improvements {#may-26-improv}
+ 
+#### Decisioning
 
+* **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
+
+  Availability date: May 6, 2026
 
 ## Coming soon {#coming-soon}
 
@@ -123,13 +129,7 @@ The following capabilities and enhancements are scheduled for release in the nex
 </tbody>
 </table>
 
-### Improvements {#may-26-improv}
- 
-#### Decisioning
 
-* **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
-
-  Availability date: May 6, 2026
 
 ## April '26 release notes {#april-26-rn}
 
