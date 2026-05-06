@@ -123,7 +123,13 @@ The following capabilities and enhancements are scheduled for release in the nex
 </tbody>
 </table>
 
+### Improvements {#may-26-improv}
 
+#### Decisioning
+
+* **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
+
+  Availability date: May 6, 2026
 
 ## April '26 release notes {#april-26-rn}
 
@@ -379,6 +385,10 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 * **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Read more](../push/push-configuration.md#app-id-personalization)
 
 #### Decisioning
+
+* **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
+
+  Availability date: May 6, 2026
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience and email campaigns through decision policies. [Read more](../experience-decisioning/fragments-decision-policies.md)
 
