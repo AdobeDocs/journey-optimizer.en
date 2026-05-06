@@ -8,7 +8,7 @@ level: Beginner
 exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
 ---
 # Create content cards {#create-content-card}
-
+ 
 >[!IMPORTANT]
 >
 >By default, the close button hides the card. To add more functionality, you can manually define dismissal or disqualification rules.
@@ -49,7 +49,6 @@ To add a Content card to a journey, follow these steps:
 
     1. Click **[!UICONTROL Add condition]** to select your event.
         
-        +++ See available Events
         
         | Package | Trigger | Definition |
         |---|---|---|

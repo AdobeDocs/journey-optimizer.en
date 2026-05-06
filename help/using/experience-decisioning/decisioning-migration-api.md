@@ -213,7 +213,7 @@ To migrate specific offers only, use `request-level=offer` in the query string a
 ```json
 "offersList": ["offer-id-1", "offer-id-2"]
 ```
-
+ 
 **Decision-level migration**
 
 To migrate specific decisions only, use `request-level=decision` in the query string and add a `decisionsList` array to the body:
