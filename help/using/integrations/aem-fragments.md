@@ -12,7 +12,7 @@ exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 
 >[!AVAILABILITY]
 >
->This integration applies to **Adobe Experience Manager as a Cloud Service Sites**, for **Content Fragments** only. Journey Optimizer reads fragments from the **Publish** tier (not Author). 
+>This integration applies to **Adobe Experience Manager as a Cloud Service Sites**, for **Content Fragments** only. By default, Journey Optimizer reads fragments from the **Publish** tier. Your administrator can instead configure **author-only** access, **authenticated publish**, or **custom domains** for a repository. [Learn how to configure AEM repository settings](../administration/aem-admin-settings.md). 
 
 The integration between Adobe Experience Manager and Journey Optimizer follows this data flow:
 
