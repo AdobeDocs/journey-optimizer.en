@@ -8,7 +8,7 @@ level: Beginner
 exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
 ---
 # Create content cards {#create-content-card}
-
+ 
 >[!IMPORTANT]
 >
 >By default, the close button hides the card. To add more functionality, you can manually define dismissal or disqualification rules.
@@ -49,7 +49,7 @@ To add a Content card to a journey, follow these steps:
 
     1. Click **[!UICONTROL Add condition]** to select your event.
         
-        Available Event
+        +++ See available Events
         
         | Package | Trigger | Definition |
         |---|---|---|
@@ -63,11 +63,13 @@ To add a Content card to a journey, follow these steps:
         |Application lifecycle|Application close|Triggered when the application is closed. |
         |Application lifecycle|Application crash|Triggered when the application is not backgrounded before being closed. The event is sent when the application is started after the crash. Adobe Mobile crash reporting does not implement a global uncaught exception handler.|
 
+        +++
+
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
 
     1. Choose the **[!UICONTROL And]** condition if you want to add **[!UICONTROL Traits]** and better fine-tune your rule.
 
-        Available Traits
+        +++ See available Traits
         
         | Package | Traits | Definition |
         |---|---|---|
@@ -85,6 +87,8 @@ To add a Content card to a journey, follow these steps:
         |Application lifecycle|Install date|Triggered when the specified Install date is met.|
         |Application lifecycle|Launches|Triggered when the specified number of Launches is met.|
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
+
+        +++
 
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
@@ -132,7 +136,7 @@ To start building your content cards through a campaign, follow the steps below.
 
     1. Click **[!UICONTROL Add condition]** to select your event.
         
-        Available Event
+        +++ See available Events
         
         | Package | Trigger | Definition |
         |---|---|---|
@@ -146,11 +150,13 @@ To start building your content cards through a campaign, follow the steps below.
         |Application lifecycle|Application close|Triggered when the application is closed. |
         |Application lifecycle|Application crash|Triggered when the application is not backgrounded before being closed. The event is sent when the application is started after the crash. Adobe Mobile crash reporting does not implement a global uncaught exception handler.|
 
+        +++
+
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
 
     1. Choose the **[!UICONTROL And]** condition if you want to add **[!UICONTROL Traits]** and better fine-tune your rule.
         
-        Available Traits
+        +++ See available Traits
         
         | Package | Traits | Definition |
         |---|---|---|
@@ -168,7 +174,9 @@ To start building your content cards through a campaign, follow the steps below.
         |Application lifecycle|Install date|Triggered when the specified Install date is met.|
         |Application lifecycle|Launches|Triggered when the specified number of Launches is met.|
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
-        
+
+        +++
+
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
     ![](assets/content-card-rules.png)
