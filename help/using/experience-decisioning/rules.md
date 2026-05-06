@@ -123,6 +123,28 @@ To create a rule, follow these steps:
 >
 >[Learn more about Eligibility rules Guardrails & limitations](decisioning-guardrails.md#eligibility-rules)
 
+## AI-powered rule optimization {#optimize}
+
+[!DNL Journey Optimizer] can automatically analyze rules and suggest simplifications that preserve the original logic. Only rules whose PQL expression is larger than **2 KB** (UTF-8 encoded) are eligible, smaller expressions are not analyzed. When a simplification is found, a red **[!UICONTROL Optimize]** indicator appears next to the rule in the inventory.
+
+>[!NOTE]
+>
+>AI-powered rule optimization relies on the same generative AI capabilities as **AI Assistant**, and uses the same access controls. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. For details, refer to [Access AI Assistant](../content-management/gs-generative.md#generative-access).
+
+![](assets/decision-rules-ai.png)
+
+To optimize a rule:
+
+1. In the rules inventory, click the red indicator icon next to the rule name.
+
+1. The **[!UICONTROL Optimize]** window opens, displaying the original PQL expression alongside the AI-suggested version.
+
+    ![](assets/decision-rules-ai-details.png)
+
+1. To validate that both expressions behave identically, click **[!UICONTROL Download Optimisation Analysis (TSV)]** to download a file showing how simulated profiles are evaluated against each version.
+
+1. Once satisfied, click **[!UICONTROL Apply]** to replace the original expression with the optimized one.
+
 ## How-to video {#video}
 
 Learn how to create, duplicate, and apply reusable **targeting rules** in Adobe Journey Optimizer to efficiently personalize campaigns based on customer attributes like region, language, and behavior—saving time while enhancing audience precision.

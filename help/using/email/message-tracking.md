@@ -50,11 +50,11 @@ A unique tracking identifier (urlID) is only generated when both the **URL** and
 To track the same URL across multiple emails (or multiple times in one email), use a unique label for each similar URL; otherwise, [!DNL Journey Optimizer] will not be able to track which link was clicked. You can set distinct labels in the Email Designer or, for HTML, via the `data-label` attribute.
 
 | URL | Tag | Label | urlID behavior |
-|-----|-----|-------|----------------|
-| www.example.com | First | (blank) | Gets a urlID (e.g. A) |
-| www.example.com | Second | (blank) | Reuses urlID A — cannot tell which link was clicked |
-| www.example.com | Third | First Label | Gets a urlID (e.g. B) |
-| www.example.com | Fourth | Second Label | Gets a urlID (e.g. C) |
+| --- | --- | --- | --- |
+| `https://www.example.com` | First | (blank) | Gets a urlID (e.g. A) |
+| `https://www.example.com` | Second | (blank) | Reuses urlID A — cannot tell which link was clicked |
+| `https://www.example.com` | Third | First Label | Gets a urlID (e.g. B) |
+| `https://www.example.com` | Fourth | Second Label | Gets a urlID (e.g. C) |
 
 ## Insert links {#insert-links}
 
@@ -90,7 +90,7 @@ To insert links into your email content, follow the steps below:
     >
     >For interpreting URLs, [!DNL Journey Optimizer] complies with the URI syntax ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), which disables some special international characters in URLs. When trying to send the proof or email, if you are returned an error involving a URL added to your content, you can URL encode the string as a workaround.
 
-1. You can personalize your links. [Learn more](../personalization/personalization-build-expressions.md)
+1. You can personalize your links. [Learn more](url-personalization.md)
 
 1. Save your changes.
 
@@ -193,26 +193,4 @@ Reporting on openings and clicks is available in the [Live report](../reports/li
 
 ## Personalize URL tracking {#url-tracking}
 
-[URL tracking](email-settings.md#url-tracking) is managed at the configuration level and applies to all URLs included in your message content.
-
-You can also personalize individual URLs in the Email Designer. To add personalized URL tracking parameters to a single link in your content, follow the steps below.
-
-1. Select a link and click **[!UICONTROL Insert link]** from the contextual toolbar.
-
-1. Select the personalization icon. It is only available for these types of links: **External link**, **Unsubscription link** and **Opt-Out**.
-
-    ![](assets/message-tracking-insert-link-perso.png)
-
-1. Add the URL tracking parameter and select the profile attribute of your choice from the [personalization editor](../personalization/personalization-build-expressions.md).
-
-    ![](assets/message-tracking-perso-parameter.png)
-
-1. Save your changes.
-
-1. Repeat the steps above for each link you want to add this tracking parameter to.
-
-Now when the email is sent out, this parameter will be automatically appended to the end of the URL. You can then capture this parameter in web analytics tools or in performance reports.
-
->[!NOTE]
->
->To verify the final URL, you can [send a proof](../content-management/proofs.md) and click the link in the content of the email once you receive the proof. The URL should display the tracking parameter. In the example above, the final URL will be: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>
+For detailed guidance on URL personalization (including how to personalize URL tracking parameters and how to personalize a complete/base URL), refer to [URL personalization](url-personalization.md).

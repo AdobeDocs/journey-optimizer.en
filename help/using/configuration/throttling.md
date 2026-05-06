@@ -13,7 +13,7 @@ exl-id: b837145b-1727-43c0-a0e2-bf0e8a35347c
 
 The Throttling API helps you create, configure and monitor your throttling configurations in order to limit the number of events sent per second.
 
-This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/){target="_blank"}.
+This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}.
 
 ## Must-read
 
@@ -26,7 +26,7 @@ This section provides global information on how to work with the API. A detailed
 
 ## Throttling API description & Postman collection {#description}
 
-The table below lists the available commands for the throttling API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/).
+The table below lists the available commands for the throttling API. Detailed information including request samples, parameters, and response formats is available in the [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling).
 
 | Method  | Path   | Description   |
 |---|---|---|

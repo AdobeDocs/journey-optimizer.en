@@ -19,10 +19,15 @@ version: Journey Orchestration
 >abstract="Use test profiles to test your journey before publishing it. This allows you to analyze how individuals flow in the journey and troubleshoot before publication."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-dry-run" text="Journey Dry run"
 
-
-Once you have built your journey, you can test it before publishing. Journey Optimizer offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
+Once you have built your journey, you can test it before publishing. [!DNL Adobe Journey Optimizer] offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
 
 Only test profiles can enter a journey in test mode. You can either create new test profiles or turn existing profiles into test profiles. Learn more about test profiles in [this section](../audience/creating-test-profiles.md). 
+
+Adobe Journeys Optimizer offers two ways to test and validate your journey:
+
+* **[Simulation](simulate-journey.md#test-users)**: Set the journey to **[!UICONTROL Simulation]** and use simulated users (temporary profiles you create or generate on the fly without pre-created profiles in Adobe Experience Platform).
+
+* **[Test mode](#test-profiles)**: Persistent profiles explicitly flagged as test profiles in Adobe Experience Platform. They can be reused across multiple test sessions. This method is recommended for testing with consistent, predefined profile data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
 >[!NOTE]
 >
@@ -50,8 +55,8 @@ Review these notes before running tests in your journey.
 ### Execution
 
 * **Split behavior** - When the journey reaches a split, the top branch is always selected. Reorder branches if you want a different path tested.  
-* **Event timing** - If the journey includes*multiple events, trigger each event in sequences.Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event and send the profile to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window 
-* **Active date window** -  Make sure the journey's configured choose [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
+* **Event timing** - If the journey includes multiple events, trigger each event in sequence. Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event. The profile will then be sent to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window. 
+* **Active date window** -  Make sure the journey's configured [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
 * **Reaction events** -  For reaction events with a timeout, the minimum and default wait time is 40 seconds.  
 * **Test datasets** - Events triggered in test mode are stored in dedicated datasets labeled as follows: `JOtestmode - <schema of your event>`
 * **Shared infrastructure** - Test Mode runs on the same infrastructure as production. During high traffic periods, you may notice delays in email sends or event processing. In this case, check platform traffic dashboards or retry your tests during off-peak hours.
@@ -62,9 +67,9 @@ Review these notes before running tests in your journey.
 
 ## Activate the test mode
 
-To use the test mode, follow these steps:
+Use the **[!UICONTROL Test mode]** method when you want to test your journey with pre-existing test profiles that you have already created in Adobe Experience Platform.
 
-1. To activate the test mode, click the **[!UICONTROL Test mode]** button, located in the top right corner.
+1. To activate the test mode, click the **[!UICONTROL Simulate]** button, and select **[!UICONTROL Test mode]**.
 
     ![Test mode button in journey interface](assets/journeytest1.png)
 
@@ -90,6 +95,29 @@ To use the test mode, follow these steps:
 
 1. If there is any error, deactivate the test mode, modify your journey and test it again. Once tests are done, you can publish your journey. See [this page](../building-journeys/publish-journey.md).
 
+## Worked example: validate a simple journey {#test-walkthrough}
+
+The following example walks through testing a journey that starts with a unitary event, sends an email, waits 10 minutes, then sends a push notification.
+
+To validate the journey end to end:
+
+1. Activate test mode by clicking **[!UICONTROL Test mode]** in the top-right corner. The canvas switches to test mode and a **[!UICONTROL Trigger an event]** button appears.
+1. Set **[!UICONTROL Wait time]** to **10 seconds** so the wait node completes quickly during testing.
+1. Click **[!UICONTROL Trigger an event]**, select your event, and enter a test profile identifier (for example, the email address of a profile flagged as a test profile in Adobe Experience Platform).
+1. Click **[!UICONTROL Send]**. The visual flow appears on the canvas and turns green as the profile progresses through each step.
+1. Click **[!UICONTROL Show log]** and confirm the following in the JSON output:
+   * `currentstep` matches the activity you expect the profile to be at.
+   * `phase` shows `running` while the profile is in a wait node, and `finished` when it reaches the end.
+   * No `actionExecutionErrors` entries are present.
+1. After 10 seconds, refresh the log. The profile should have advanced past the wait node and triggered the push action.
+1. When all steps show `finished` and no errors are logged, deactivate test mode and publish the journey.
+
+>[!TIP]
+>
+>If the profile does not appear in the log at all, check that:
+>* The profile identifier you entered is flagged as a test profile in [!DNL Adobe Experience Platform].
+>* The journey's configured start and end dates include the current time. Events triggered outside this window are silently discarded. [Learn more](troubleshooting-execution.md#troubleshooting-test-transitions).
+
 ## Trigger your events {#firing_events}
 
 >[!CONTEXTUALHELP]
@@ -112,14 +140,14 @@ The identity namespace is used to uniquely identify the test profiles. For examp
 
 >[!NOTE]
 >
->* When you trigger an event in test mode, a real event is generated, meaning it will also hit other journey listening to this event.
+>* When you trigger an event in test mode, a real event is generated, meaning it will also hit other journeys listening to this event.
 >
 >* Ensure that each event in test mode is triggered in the correct order and within the configured waiting window. For example, if there is a 60-second wait, the second event must be triggered only after that 60-second wait has elapsed and before the timeout limit expires.
 >
 
 ### Event configuration {#trigger-events-configuration}
 
-If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending. The interface helps you pass the right information in the event payload and make sure the information type is correct. The test mode saves the last parameters used in a test session for later use.
+If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending. The interface helps you pass the right information in the event payload and ensures the information type is correct. Test mode saves the last parameters used in a test session for later use.
 
 ![Event configuration interface with fields and drop-down for event selection](assets/journeytest4.png)
 
@@ -167,7 +195,7 @@ The **[!UICONTROL Show log]** button allows you to view the test results. This p
 >
 >In the test logs, in case of an error when calling a third-party system (data source or action), the error code and error response are displayed.
 
-The number of individuals (technically they are called instances) currently inside the journey are displayed. Here is useful information that is displayed for each individual:
+The number of individuals (technically called instances) currently inside the journey are displayed. The following information is displayed for each individual:
 
 * _Id_: the individual's internal ID in the journey. This can be used for debugging purposes.
 * _currentstep_: the step where the individual is at in the journey. We recommend adding labels to your activities to identify them more easily.

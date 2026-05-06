@@ -22,7 +22,8 @@ exl-id: c1e49173-69cc-4729-9f9a-afea2ccff3fa
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * [Create challenges](create-challenges.md)
 * **Create tasks** ◀︎ **You are here**
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
+* [Monitor loyalty challenge performance](loyalty-reporting.md)
+* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
 >[!ENDSHADEBOX]
 
@@ -80,7 +81,7 @@ Configure the task attributes based on the selected activity type. Browse the ta
 Available attributes for **Purchase** activities:
 
 * **[!UICONTROL Quantity]**: Enter the number of items that must be purchased to complete this task.
-* **[!UICONTROL Eligible items & exclusions]**: Define items or item groups that count toward task completion and those that don't. [Learn more on eligible items and exclusions](#eligible-items-exclusions)
+* **[!UICONTROL Eligible items & exclusions]**: Define items or item groups that count toward task completion and those that don't, or choose **[!UICONTROL Bring your own data]** to drive eligibility from your external data. [Learn more](#eligible-items-exclusions)
 * **[!UICONTROL Minimum spend value amount]**: Set a minimum purchase amount requirement.
 * **[!UICONTROL Maximum number of transactions]**: Limit how many transactions can be used to complete the task.
 
@@ -109,17 +110,39 @@ Available attributes for **Spend** activities:
 
 For both **Purchase** and **Spend** activities, you can use the **[!UICONTROL Eligible items & exclusions]** attribute to define which items and groups are eligible and which are excluded. This allows you to target specific products, categories, or locations to align with your challenge goals.
 
-For example, you can limit a spending task to specific product categories, or exclude gift cards or promotional items from counting toward task completion.
+For example, you can limit a task to specific product categories, or exclude gift cards or promotional items from counting toward task completion.
 
 ![](assets/tasks-create-eligible.png)
 
-* To define eligible items, enter specific item IDs, categories, or destination IDs, separated by commas in the **[!UICONTROL Eligible task purchases are limited to the following]** field. If you leave this field empty, all purchases are eligible by default. You can also enter `*` to explicitly make all purchases eligible.
+### Set eligible items for the task
 
-   Example: `SKU001, SKU002, CategoryA`
+To define eligible items, enter specific item IDs, categories, or destination IDs, separated by commas in the **[!UICONTROL Eligible task purchases are limited to the following]** field. If you leave this field empty, all purchases are eligible by default. You can also enter `*` to explicitly make all purchases eligible.
 
-* To exclude items from the task, enter specific item IDs, categories, or destination IDs in the **[!UICONTROL The following are excluded from this task]** field.
+Example: `SKU001, SKU002, CategoryA`
 
-   Example: `CLEARANCE01, GIFTCARD, SALE_CATEGORY`
+### Exclude items from the task
+
+To exclude items from the task, enter specific item IDs, categories, or destination IDs in the **[!UICONTROL The following are excluded from this task]** field.
+
+Example: `CLEARANCE01, GIFTCARD, SALE_CATEGORY`
+
+### Bring your own data for eligibility & exclusions {#byod-personalization}
+
+>[!AVAILABILITY]
+>
+>The **[!UICONTROL Bring your own data]** option is currently available to a restricted set of organizations and will be made available more broadly in a future release.
+
+In addition to entering item IDs to make eligible or exclude, you can also drive eligibility from your external Loyalty Challenges data at runtime using the **[!UICONTROL Bring your own data]** option.
+
+When **[!UICONTROL Bring your own data]** is selected, eligibility per participant is resolved at runtime from data synchronized with your Loyalty Challenges environment instead of a list of item IDs.
+
+To use this option, select the personalization icon in **[!UICONTROL Eligible items & exclusions]**, then choose **[!UICONTROL Bring your own data]**.
+
+![](assets/tasks-create-eligible-bring.png)
+
+>[!IMPORTANT]
+>
+>When assigning this task to a challenge, select **[!UICONTROL Standard]** as the challenge type. Do not select **[!UICONTROL Bring your own data]** at the challenge level, as that option is reserved for fully data-driven challenges where the entire structure, including tasks and rewards, is supplied externally.
 
 ## Define task properties {#define-task-properties}
 

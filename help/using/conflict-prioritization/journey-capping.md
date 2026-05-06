@@ -109,7 +109,7 @@ Once a journey is live, you can check in the journey report if the rule set has 
 
 ![](assets/journey-report.png)
 
-In addition, you can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to build queries to identify which rule caused a profile to not enter into a given journey. A query example is available in [this section](../reports/query-examples.md#common-queries).
+In addition, you can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to build queries to identify which rule caused a profile to not enter into a given journey. Query examples, including the discard sub-reason (`CAP_REACHED` or `LOWER_PRIORITY`), are available in [this section](../reports/query-examples.md#business-rules-queries).
 
 ## How-to video {#video}
 
