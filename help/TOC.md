@@ -8,7 +8,7 @@ solution: Journey Optimizer
 ---
 
 # Adobe Journey Optimizer Help {#using}
-
+ 
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
@@ -136,6 +136,7 @@ solution: Journey Optimizer
   + {hide-from-toc} [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
   + {hide-from-toc} [Create challenges](using/loyalty-challenges/create-challenges.md)
   + {hide-from-toc} [Create tasks](using/loyalty-challenges/create-tasks.md)
+  + {hide-from-toc} [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
@@ -287,6 +288,7 @@ solution: Journey Optimizer
         + [Use content components](using/email/content-components.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
+        + [Personalize URLs](using/email/url-personalization.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Optimize email for AI inboxes](using/email/llm-email-optimizer.md)
         + [Manage the text version](using/email/text-version-email.md)
