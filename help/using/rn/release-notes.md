@@ -92,7 +92,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
   This capability is currently only available for Sinch SMS configurations. [Read more](../sms/sms-configuration-sinch.md)
 -->
-
+ 
 * **Character Count** - In Adobe Journey Optimizer, you can now use the Character Count to monitor the length of your SMS messages in real time. It helps you see when a message will be split into multiple segments to better manage formatting and avoid unexpected increases in sending costs. [Read more](../sms/create-sms.md)
 
 * **SMS inbounds to a custom dataset** - In **SMS API credentials**, route **inbound SMS** to a **custom, profile-enabled Experience Event dataset** you select instead of only the default tracking dataset. [Read more](../sms/sms-webhook.md)

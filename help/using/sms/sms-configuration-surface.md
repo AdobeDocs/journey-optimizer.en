@@ -53,7 +53,7 @@ To create a channel configuration, follow these steps:
 
 1. Enter the **[!UICONTROL Sender number]** ​you want to use for your communications.
 
-1. If you want to use the URL shortening function in your SMS messages, select an item from the **[!UICONTROL Subdomain]** list.
+1. If you want to use the URL shortening function in your SMS messages, select an item from the **[!UICONTROL Subdomain]** list. 
 
     >[!NOTE]
     >

@@ -55,7 +55,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
 1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about creating datasets](../experience-decisioning/data-collection/create-dataset.md)
 
-    >[!NOTE]
+    >[!NOTE] 
     >
     >The dataset schema must be **[!UICONTROL XDM ExperienceEvent]** and include at least these field groups:
     >* Adobe CJM ExperienceEvent - Message interaction details

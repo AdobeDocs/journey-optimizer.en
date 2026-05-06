@@ -46,7 +46,7 @@ To configure Twilio with Journey Optimizer, you need to create new API credentia
     >* Adobe CJM ExperienceEvent - Message Execution Details
     >* Adobe CJM ExperienceEvent - Message Profile Details
     >
-    >The schema and dataset must be enabled for Profile.
+    >The schema and dataset must be enabled for Profile. 
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
