@@ -70,7 +70,7 @@ To add an In-app message in a journey, follow these steps:
         |Places|Exit POI| Triggered by the Places SDK when your customer exits the Point of Interest (POI) that you configured.|
 
         +++
-
+ 
     1. Click **[!UICONTROL Add condition]** if you want the trigger to consider multiple events or criteria.
 
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
