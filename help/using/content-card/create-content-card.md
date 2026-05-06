@@ -62,7 +62,7 @@ To add a Content card to a journey, follow these steps:
         |Application lifecycle|Application close|Triggered when the application is closed. |
         |Application lifecycle|Application crash|Triggered when the application is not backgrounded before being closed. The event is sent when the application is started after the crash. Adobe Mobile crash reporting does not implement a global uncaught exception handler.|
 
-        +++ 
+        +++
 
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
 
@@ -87,7 +87,7 @@ To add a Content card to a journey, follow these steps:
         |Application lifecycle|Launches|Triggered when the specified number of Launches is met.|
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
 
-        +++ 
+        +++
 
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
@@ -149,7 +149,7 @@ To start building your content cards through a campaign, follow the steps below.
         |Application lifecycle|Application close|Triggered when the application is closed. |
         |Application lifecycle|Application crash|Triggered when the application is not backgrounded before being closed. The event is sent when the application is started after the crash. Adobe Mobile crash reporting does not implement a global uncaught exception handler.|
 
-        +++ 
+        +++
 
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
 
@@ -173,9 +173,9 @@ To start building your content cards through a campaign, follow the steps below.
         |Application lifecycle|Install date|Triggered when the specified Install date is met.|
         |Application lifecycle|Launches|Triggered when the specified number of Launches is met.|
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
-        
-        +++ 
-        
+
+        +++
+
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
     ![](assets/content-card-rules.png)
