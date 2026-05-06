@@ -53,7 +53,7 @@ To add an In-app message in a journey, follow these steps:
 
     1. Click the event drop-down to change your Trigger if needed.
         
-        Available Triggers
+        +++ See available Triggers
         
         | Package | Trigger | Definition |
         |---|---|---|
@@ -69,6 +69,8 @@ To add an In-app message in a journey, follow these steps:
         |Places|Enter POI| Triggered by the Places SDK when your customer enters the Point of Interest (POI) that you configured.|
         |Places|Exit POI| Triggered by the Places SDK when your customer exits the Point of Interest (POI) that you configured.|
 
+        +++
+
     1. Click **[!UICONTROL Add condition]** if you want the trigger to consider multiple events or criteria.
 
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
@@ -77,7 +79,7 @@ To add an In-app message in a journey, follow these steps:
 
     1. Choose the **[!UICONTROL And]** condition if you want to add **[!UICONTROL Traits]** and better fine-tune your rule.
 
-        Available Traits
+        +++ See available Traits
         
         | Package | Traits | Definition |
         |---|---|---|
@@ -98,6 +100,8 @@ To add an In-app message in a journey, follow these steps:
         |Places|Current POI|Triggered by the Places SDK when your customer enters the specified Point of Interest (POI).|
         |Places|Last entered POI|Triggered by the Places SDK depending on your customer last entered Point of Interest (POI).|
         |Places|Last exited POI|Triggered by the Places SDK depending on your customer last exited Point of Interest (POI).|
+
+        +++
 
         ![](assets/in_app_create_8.png)
 
@@ -155,7 +159,7 @@ To add an In-app message in a campaign, follow these steps:
 
     1. Click the event drop-down to change your Trigger if needed.
         
-        Available Triggers
+        +++ See available Triggers
         
         | Package | Trigger | Definition |
         |---|---|---|
@@ -171,6 +175,8 @@ To add an In-app message in a campaign, follow these steps:
         |Places|Enter POI| Triggered by the Places SDK when your customer enters the Point of Interest (POI) that you configured.|
         |Places|Exit POI| Triggered by the Places SDK when your customer exits the Point of Interest (POI) that you configured.|
 
+        +++
+
     1. Click **[!UICONTROL Add condition]** if you want the trigger to consider multiple events or criteria.
 
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
@@ -179,7 +185,7 @@ To add an In-app message in a campaign, follow these steps:
 
     1. Choose the **[!UICONTROL And]** condition if you want to add **[!UICONTROL Traits]** and better fine-tune your rule.
 
-        Available Traits
+        +++ See available Traits
         
         | Package | Traits | Definition |
         |---|---|---|
@@ -200,6 +206,8 @@ To add an In-app message in a campaign, follow these steps:
         |Places|Current POI|Triggered by the Places SDK when your customer enters the specified Point of Interest (POI).|
         |Places|Last entered POI|Triggered by the Places SDK depending on your customer last entered Point of Interest (POI).|
         |Places|Last exited POI|Triggered by the Places SDK depending on your customer last exited Point of Interest (POI).|
+
+        +++
 
         ![](assets/in_app_create_8.png)
 
