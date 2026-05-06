@@ -37,7 +37,7 @@ To configure Twilio with Journey Optimizer, you need to create new API credentia
 
     * **[!UICONTROL Inbound Number]**: add your unique inbound number. This allows you to use the same API credentials across different sandboxes, each with its own inbound number.
 
-1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about creating datasets](../experience-decisioning/data-collection/create-dataset.md)
+1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about using a custom dataset for inbound keywords](custom-dataset-inbound-keywords.md)
 
     >[!NOTE]
     >

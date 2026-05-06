@@ -78,7 +78,7 @@ To send SMS and RCS messages in Journey Optimizer using a custom provider not av
     >
     >When configuring a custom SMS provider with Basic or Bearer authentication, you must include the `authOption` parameter in the JSON payload. In addition, the **Provider Payload** must reference the template variables `{{fromNumber}}`, `{{toNumber}}`, and `{{message}}`.
 
-1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about creating datasets](../experience-decisioning/data-collection/create-dataset.md)
+1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about using a custom dataset for inbound keywords](custom-dataset-inbound-keywords.md)
 
     >[!NOTE]
     >

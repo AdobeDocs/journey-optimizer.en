@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>custom-dataset-inbound-keywords.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="use-a-custom-dataset-for-inbound-keywords-custom-dataset-inbound-keywords">Use a custom dataset for inbound keywords {#custom-dataset-inbound-keywords}</h1>
+<p>Inbound SMS keywords can be stored in a profile-enabled custom dataset. The configuration consists of an Adobe Experience Platform schema, a dataset created from that schema, and Journey Optimizer SMS API credentials that reference the dataset for inbound messages.</p>
+<p>For background on schemas, field groups, and datasets, refer to the following Adobe Experience Platform documentation:</p>
+<ul>
+<li><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html">XDM System overview</a>{target=&quot;_blank&quot;}</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html">Basics of schema composition</a>{target=&quot;_blank&quot;}</li>
+<li><a href="https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html">Datasets overview</a>{target=&quot;_blank&quot;}</li>
+</ul>
+<p>To use a custom dataset for inbound keyword, you need to:</p>
+<ol>
+<li><a href="#create-schema">Create a schema</a></li>
+<li><a href="#create-dataset">Create a dataset</a></li>
+<li><a href="#configure-api-credentials">Configure API credentials</a></li>
+</ol>
+<h2 id="create-a-schema-create-schema">Create a schema {#create-schema}</h2>
+<p>A schema defines the structure and validation rules that apply to ingested data. Compose an Experience Event schema for inbound keyword collection by adding the existing field groups listed below.</p>
+<p>➡️ <a href="https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition">Learn more about schema creation in Adobe Experience Platform documentation</a></p>
+<ol>
+<li>
+<p>In Adobe Experience Platform, from <strong>[!UICONTROL Data management]</strong>, access <strong>[!UICONTROL Schemas]</strong> and select <strong>[!UICONTROL Create schema]</strong>.</p>
+<p><img src="file:///c:/GIT/journey-optimizer.en.ghec/help/using/sms/assets/schema-sms-1.png" alt=""></p>
+</li>
+<li>
+<p>Choose <strong>[!UICONTROL Standard schema]</strong>.</p>
+</li>
+<li>
+<p>Select <strong>[!UICONTROL Experience Event]</strong>.</p>
+<p><img src="file:///c:/GIT/journey-optimizer.en.ghec/help/using/sms/assets/schema-sms-2.png" alt=""></p>
+</li>
+<li>
+<p>Enter a <strong>[!UICONTROL Display name]</strong> for the schema and click <strong>[!UICONTROL Finish]</strong>.</p>
+<p>The schema is saved and the schema editor opens.</p>
+</li>
+<li>
+<p>Open <strong>[!UICONTROL Schema properties]</strong> and enable the schema for <strong>[!UICONTROL Profile]</strong>.</p>
+<p><img src="file:///c:/GIT/journey-optimizer.en.ghec/help/using/sms/assets/schema-sms-3.png" alt=""></p>
+</li>
+<li>
+<p>In <strong>[!UICONTROL Field groups]</strong>, add these existing field groups:</p>
+<ul>
+<li>[!DNL Adobe CJM ExperienceEvent - Message interaction details]</li>
+<li>[!DNL Adobe CJM ExperienceEvent - Message Execution Details]</li>
+<li>[!DNL Adobe CJM ExperienceEvent - Message Profile Details]</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>[!UICONTROL Save]</strong>.</p>
+</li>
+</ol>
+<h2 id="create-a-dataset-create-dataset">Create a dataset {#create-dataset}</h2>
+<p>A dataset is the storage container for ingested data. Each dataset is associated with exactly one schema, and records written to the dataset must conform to that schema.</p>
+<ol>
+<li>
+<p>In Adobe Experience Platform, from <strong>[!UICONTROL Data management]</strong>, access <strong>[!UICONTROL Datasets]</strong> and select <strong>[!UICONTROL Create dataset]</strong>.</p>
+<p><img src="file:///c:/GIT/journey-optimizer.en.ghec/help/using/sms/assets/schema-sms-4.png" alt=""></p>
+</li>
+<li>
+<p>Choose <strong>[!UICONTROL Create dataset from schema]</strong>.</p>
+</li>
+<li>
+<p>Select the schema created in the previous section and click <strong>[!UICONTROL Next]</strong>.</p>
+<p><img src="file:///c:/GIT/journey-optimizer.en.ghec/help/using/sms/assets/schema-sms-5.png" alt=""></p>
+</li>
+<li>
+<p>Enter a <strong>[!UICONTROL Name]</strong> and click <strong>[!UICONTROL Finish]</strong>.</p>
+</li>
+<li>
+<p>From the <strong>[!UICONTROL Data activity]</strong> tab, enable data for <strong>[!UICONTROL Profile]</strong>.</p>
+<p>Select the <strong>[!UICONTROL Data retention]</strong> policy appropriate to organizational governance requirements.</p>
+<p><img src="file:///c:/GIT/journey-optimizer.en.ghec/help/using/sms/assets/schema-sms-6.png" alt=""></p>
+</li>
+<li>
+<p>Click <strong>[!UICONTROL Save]</strong>.</p>
+</li>
+</ol>
+<h2 id="configure-api-credentials-configure-api-credentials">Configure API credentials {#configure-api-credentials}</h2>
+<p>Configure credentials according to your SMS provider using <a href="sms-configuration.md">Get started with SMS / MMS / RCS configuration</a>. Then complete the steps below to select the custom inbound dataset.</p>
+<ol>
+<li>
+<p>In the left rail, browse to <strong>[!UICONTROL Administration]</strong> &gt; <strong>[!UICONTROL Channels]</strong> <code>&gt;</code> <strong>[!UICONTROL SMS Settings]</strong> and select the <strong>[!UICONTROL API Credentials]</strong> menu. Click the <strong>[!UICONTROL Create new API credentials]</strong> button.</p>
+</li>
+<li>
+<p>Create or edit credentials depending on your provider.</p>
+</li>
+<li>
+<p>Enable the <strong>[!UICONTROL Use custom dataset for inbound]</strong> option.</p>
+</li>
+<li>
+<p>Select the <strong>[!UICONTROL Dataset]</strong> created in the previous section.</p>
+<p><img src="file:///c:/GIT/journey-optimizer.en.ghec/help/using/sms/assets/schema-sms-7.png" alt=""></p>
+</li>
+<li>
+<p>Complete any remaining required fields and click <strong>[!UICONTROL Save]</strong>.</p>
+<blockquote>
+<p>[!NOTE]</p>
+<p>Upon saving API credentials, Journey Optimizer validates that the inbound keyword dataset is configured correctly. If validation fails, an error message indicates the required correction.</p>
+</blockquote>
+</li>
+</ol>
+<p>After the credentials are saved, outbound and inbound messaging behavior is unchanged; inbound keywords for that credential are recorded in the selected custom dataset.</p>
+
+</body>
+</html>
