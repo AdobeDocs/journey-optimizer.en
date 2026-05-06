@@ -125,17 +125,17 @@ If your journey includes one or more events, you can trigger them while Simulati
 
     ![Event configuration interface with fields and drop-down for event selection](assets/simulate-10.png)
 
-1. Click ![Edit event](assets/do-not-localize/Smock_Edit_18_N.svg) to adjust the event for this simulated user.
+1. Click **[!UICONTROL Configure events]** to open the editor and adjust the event as needed. To change the payload for a specific simulated user only, click ![Edit event](assets/do-not-localize/Smock_Edit_18_N.svg) beside that user.
 
     ![Event configuration interface with fields and drop-down for event selection](assets/simulate-9.png)
 
-1. From your simulated user drop-down, select the simulated user and finish configuring the event and how it is generated.
+1. In the **[!UICONTROL Trigger event]** view, specify which simulated users to include in the execution. Event configuration applies to a single event at a time. Modifying the selected event or the set of included users resets previously entered field values. Complete the current configuration before changing either selection.
 
-    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-8.png)
+    ![Event configuration with Test users list and event fields](assets/simulate-8.png)
 
-1. Click **[!UICONTROL Trigger selected events]**. 
-    
-    A `Events triggered successfully` confirmation message appears when the simulated users successfully enter the journey.
+1. Click **[!UICONTROL Done]**. 
+
+1. Then, in **[!UICONTROL Test events]**, either select **[!UICONTROL Send all]** to send every simulated user listed under **[!UICONTROL Test users]** into the journey, or select ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) for a single user to execute the simulation for that user only.
 
 1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
 
@@ -218,6 +218,6 @@ These guardrails apply to **[!UICONTROL Simulation]**. Numeric caps are enforced
 | Maximum unique simulated users tested in a single simulation run | 100 | Reaching **100** unique users in one run blocks **[!UICONTROL Select simulated users]** for new simulated users. If you are at **90**, you can add at most **10** more before the same block. |
 | Maximum journeys that can run in **[!UICONTROL Simulation]** at the same time in one sandbox | 20 | Cap is shared by every **[!UICONTROL Simulation]** journey in that sandbox at once. |
 | Maximum active simulated users in one sandbox | 2,000 | Maximum simulated users that can exist in the sandbox at one time. Adobe may adjust this limit based on customer feedback. |
-| Event Pre-fill (Browser Only) | — | Event pre-filling is supported in the browser only. Pre-filled event data is specific to the browser. |
+| Event Pre-fill (Browser Only) | — | You can pre-fill event payload fields only in the browser-based simulation UI. Pre-filled values stay in that browser and are not synced to other browsers, devices, or sessions, so you may see different pre-fill data in each place you test. |
 
 +++
