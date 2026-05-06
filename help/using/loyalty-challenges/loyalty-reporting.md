@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Monitor loyalty challenge performance
-description: Learn how to use the Loyalty Challenges reporting dashboards to track program performance, challenge results, and task metrics in Adobe Journey Optimizer.
+description: Learn how to use the Loyalty Challenges reporting dashboards to track challenge performance and task metrics in Adobe Journey Optimizer.
 feature: Journeys
 topic: Content Management
 role: User
