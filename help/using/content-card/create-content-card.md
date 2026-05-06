@@ -49,6 +49,7 @@ To add a Content card to a journey, follow these steps:
 
     1. Click **[!UICONTROL Add condition]** to select your event.
         
+        +++ See available Events
         
         | Package | Trigger | Definition |
         |---|---|---|
