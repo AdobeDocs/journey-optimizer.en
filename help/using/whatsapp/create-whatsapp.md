@@ -16,13 +16,13 @@ With Adobe Journey Optimizer, you can design and send engaging messages on Whats
 
 Note that only Outbound messages elements are supported in Journey Optimizer. 
 
-+++ Learn more about supported message elements and calls to actions
++++ Learn more about supported message elements and interactive buttons
 
 The following message types are supported in WhatsApp:
 
 | Message Feature | Description |
 |-|-|
-| Headers |  Optional text that appears above the body of your message.|
+| Headers | Optional text that appears above the body of your message.|
 | Text | Supports dynamic content through parameters. |
 | Images (JPEG, PNG) | Must be in 8-bit RGB or RGBA format and under 5 MB in size. |
 | Videos | Must be 3GPP or MP4, under 16 MB, and hosted via URL. |
@@ -31,13 +31,18 @@ The following message types are supported in WhatsApp:
 | Body Text | Supports dynamic content through parameters. |
 | Footer Text | Supports dynamic content through parameters. |
 
-The following call-to-action option is available for your WhatsApp messages:
+The following call-to-action options are available for your WhatsApp messages:
 
 | Call to actions | Description |
 |-|-|
-| Visit website| Only one button is permitted, with variable parameters included.|
-| Call on WhatsApp| Provides a button that opens a WhatsApp chat with the specified phone number directly from the message.|
-| Call phone number | Provides a button that initiates a phone call to the specified number when tapped by the user.|
+| Quick reply | Short preset replies the user can tap to respond to your message. |
+| Visit website | Only one button is permitted, with variable parameters included. |
+| Call on WhatsApp | Provides a button that opens a WhatsApp chat with the specified phone number directly from the message. |
+| Call phone number | Provides a button that initiates a phone call to the specified number when tapped by the user. |
+| Call to action – URL | Opens a URL (**Visit website**). Only one URL button is permitted, with variable parameters included. |
+| Call to action – phone | Uses the phone number from the template, for example **Call phone number** (places a call) or **Call on WhatsApp** (opens a chat with that number in WhatsApp). |
+
+Note that **Copy code** interactive buttons are not supported.
 
 +++
 
