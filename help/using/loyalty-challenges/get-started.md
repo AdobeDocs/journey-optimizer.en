@@ -51,7 +51,7 @@ With Loyalty Challenges, you can:
 
 ![](assets/challenges-gs.png)
 
-You can create three types of challenge experiences:
+You can create these types of challenge experiences:
 
 * **Standard challenges**: Customers complete any specified number of tasks in any order. Use this type when you want flexibility and multiple paths to completion.  
   *Example: "Summer Wellness Challenge" - Complete 3 out of 5 tasks: buy health products, share on social media, refer a friend, write a review, or attend a virtual event*
@@ -61,6 +61,8 @@ You can create three types of challenge experiences:
 
 * **Sequential challenges**: Customers complete tasks in a defined order. Use this type to guide customers through a specific journey or onboarding process.  
   *Example: "New Member Journey" - Sign up for emails → Make your first purchase → Write a product review → Refer a friend (complete in this exact order)*
+
+* **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Content, Messaging, and Audience as you would for any other challenge type.
 
 ## How it works {#how-it-works}
 
