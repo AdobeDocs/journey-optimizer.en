@@ -358,3 +358,10 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_admin_aem_custom_domain"
 >title="Custom domain"
 >abstract="Optional. Provide a custom domain ifpublish-p16552-e147195.adobeaemcloud.comis blocked from fetching content for your org"
+
+<!-- JOURNEYS - EXPRESSION ASSISTANT -->
+
+>[!CONTEXTUALHELP]
+>id="journeyExpAI"
+>title="Expression Assistant"
+>abstract="Use Expression Assistant to generate and refine expressions in Journey Optimizer."
