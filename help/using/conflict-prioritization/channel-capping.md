@@ -78,7 +78,7 @@ To create a channel rule set, follow these steps :
 
 1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]** or **[!UICONTROL WhatsApp]**.
 
-   ![](assets/rule-set-channels.png)
+   ![](assets/rule-sets-channels.png)
 
    Select several channels if you want to apply capping across all selected channels as a total count.
 
