@@ -130,10 +130,9 @@ Break the end-to-end journey into three smaller, connected sub-journeys:
 
 Connect the sub-journeys using the [**[!UICONTROL Jump]**](jump.md) activity so that profiles pass seamlessly from one phase to the next. Each sub-journey remains simple, readable, and independently maintainable.
 
->[!TIP]
->
->Learn how to set up and connect sub-journeys using the [Jump activity](jump.md).
-
+<!--
 >[!NOTE]
 >
 >If your goal is to build a gamified loyalty program with challenges, tasks, and built-in reward tracking, Journey Optimizer also offers a dedicated **Loyalty Challenges** capability.
+-->
+
