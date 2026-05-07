@@ -70,7 +70,7 @@ Your integration personalization is now successfully applied to your content, en
 ## Map one API call to another {#map-integration-chain}
 
 You can chain integrations so one call's results feed the next, for example, path segments, headers, or query parameters. The calls run in order in the same message, which supports richer personalization without custom code.
-
+ 
 Before you start, make sure that:
 
 * An administrator has configured and activated every integration you need. See [Configure your Integration](integrations.md).
