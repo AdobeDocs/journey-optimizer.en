@@ -101,3 +101,39 @@ The event is now configured and ready to be used in the journey. Using the corre
 1. Use the **Test** toggle, located in the top right corner, to activate the test mode. Refer to this [section](testing-the-journey.md) to learn how to use the test mode.
 
 1. When the journey is ready, publish it using the **Publish** button, located in the top right corner.
+
+## Multi-phase loyalty journey {#multi-phase-loyalty}
+
+This example illustrates a key journey architecture pattern: decomposing a complex, multi-phase journey into smaller, focused sub-journeys connected with the [**[!UICONTROL Jump]**](jump.md) activity. A loyalty program serves as the scenario, but this pattern applies to any journey that spans multiple milestones or business phases.
+
+Complex multi-phase journeys quickly generate a large number of unique customer paths. Decomposing them into one sub-journey per phase keeps each journey manageable, testable, and independently maintainable.
+
+### Scenario
+
+Consider a loyalty program that guides customers through three milestones using two marketing channels ([email](../email/create-email.md) and [push](../push/create-push.md)):
+
+1. **Phase 1 — Download the mobile app:** Initial communications encourage new loyalty members to download the app. A follow-up reminder is sent if the customer has not acted within a set period.
+1. **Phase 2 — Make a first transaction:** Once the app is downloaded, targeted messages guide customers toward completing their first loyalty transaction.
+1. **Phase 3 — Make a second transaction:** After the first transaction, a final set of communications drives a second transaction to deepen loyalty engagement.
+
+Even with this straightforward strategy, this journey exposes more than 20 unique paths a customer can take. Complexity grows exponentially with each additional touchpoint or channel.
+
+### Sub-journey decomposition
+
+Break the end-to-end journey into three smaller, connected sub-journeys:
+
+| Sub-journey | Entry condition | Business objective |
+|---|---|---|
+| Phase 1 — App download | Customer joins the loyalty program | Drive mobile app download |
+| Phase 2 — First transaction | Customer downloads the app | Drive first loyalty transaction |
+| Phase 3 — Second transaction | Customer completes first transaction | Drive second loyalty transaction |
+
+Connect the sub-journeys using the [**[!UICONTROL Jump]**](jump.md) activity so that profiles pass seamlessly from one phase to the next. Each sub-journey remains simple, readable, and independently maintainable.
+
+>[!TIP]
+>
+>Learn how to set up and connect sub-journeys using the [Jump activity](jump.md).
+
+>[!NOTE]
+>
+>If your goal is to build a gamified loyalty program with challenges, tasks, and built-in reward tracking, Journey Optimizer also offers a dedicated **Loyalty Challenges** capability.
