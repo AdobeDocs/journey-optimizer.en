@@ -53,7 +53,7 @@ To create a channel configuration, follow these steps:
 
 1. Enter the **[!UICONTROL Sender number]** ​you want to use for your communications.
 
-1. If you want to use the URL shortening function in your SMS messages, select an item from the **[!UICONTROL Subdomain]** list.
+1. If you want to use the URL shortening function in your SMS messages, select an item from the **[!UICONTROL Subdomain]** list. 
 
     >[!NOTE]
     >
@@ -64,6 +64,17 @@ To create a channel configuration, follow these steps:
     >[!NOTE]
     >
     >By default, [!DNL Journey Optimizer] uses the phone number specified in the [general settings](../configuration/primary-email-addresses.md) at the sandbox level. Updating this field overrides the default value for the journeys and campaigns using this configuration.
+
+1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about creating datasets](../experience-decisioning/data-collection/create-dataset.md)
+
+    >[!NOTE]
+    >
+    >The dataset schema must be **[!UICONTROL XDM ExperienceEvent]** and include at least these field groups:
+    >* Adobe CJM ExperienceEvent - Message interaction details
+    >* Adobe CJM ExperienceEvent - Message Execution Details
+    >* Adobe CJM ExperienceEvent - Message Profile Details
+    >
+    >The schema and dataset must be enabled for Profile.
 
 1. Once all the parameters have been configured, click **[!UICONTROL Submit]** to confirm. You can also save the channel configuration as draft and resume its configuration later on.
 

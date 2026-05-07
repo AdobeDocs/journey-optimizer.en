@@ -21,6 +21,132 @@ Because of this model, release notes are updated between monthly releases. For f
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+## May '26 updates {#may-26-rn}
+ 
+<table>
+<thead>
+<tr>
+<th><strong>Journey simulation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
+<p>This capability is available to all customers as a Limited Availability with essential capabilities.</p>
+<p><img src="assets/do-not-localize/simulate-user.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/simulate-journey.md">detailed documentation</a>.</p>
+<p>Availability date: May 5, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning rules and ranking formula AI optimization</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>[!DNL Adobe Journey Optimizer] now uses AI to detect Decisioning rules and ranking formulas that can be simplified. In the inventory, a red indicator appears on any rule for which the AI has identified an optimization opportunity. Clicking the indicator displays the original expression alongside the AI-suggested version. From there, you can download a file to review how simulated profiles are evaluated by each version and confirm they behave identically, then replace the expression with the optimized one.</p>
+<p>For more information, refer to the <a href="../start/ai-features.md#decisioning-optimization">detailed documentation</a>.</p>
+<p>Availability date: May 5, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+ 
+<table>
+<thead>
+<tr>
+<th><strong>Integrations</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
+<p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
+<p>For more information, refer to the <a href="../integrations/integrations.md">detailed documentation</a>.</p>
+<p>Availability date: May 4, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Improvements {#may-26-improv}
+ 
+#### Decisioning
+
+* **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
+
+  Availability date: May 6, 2026
+
+#### SMS
+
+<!--
+* **Opt-out and consent at phone number and sender** - For SMS, Journey Optimizer now records marketing consent and opt-out at the level of both the profile's phone number and short code. 
+
+  This capability is currently only available for Sinch SMS configurations. [Read more](../sms/sms-configuration-sinch.md)
+-->
+ 
+* **Character Count** - In Adobe Journey Optimizer, you can now use the Character Count to monitor the length of your SMS messages in real time. It helps you see when a message will be split into multiple segments to better manage formatting and avoid unexpected increases in sending costs. [Read more](../sms/create-sms.md)
+
+* **SMS inbounds to a custom dataset** - In **SMS API credentials**, route **inbound SMS** to a **custom, profile-enabled Experience Event dataset** you select instead of only the default tracking dataset. [Read more](../sms/sms-webhook.md)
+
+* **Webhook interface enhancement** - When configuring SMS webhooks, the user interface now includes a built-in setup guide with practical examples, making it easier to align provider payloads and troubleshoot issues without leaving the configuration flow. [Read more](../sms/sms-webhook.md)
+
+#### WhatsApp
+
+* **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
+
+## Coming soon {#coming-soon}
+
+The following capabilities and enhancements are scheduled for release in the next few days. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
+
+### New capabilities {#comming-soon-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>Deeplinks in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
+<!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
+<p>For more information, refer to the <a href="../email/message-tracking.md">detailed documentation</a>.</p>
+<p>Availability date: May 11, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Fragments</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create <strong>Journey Fragments</strong> in Adobe Journey Optimizer. Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent — without rebuilding the same logic from scratch every time.</p>
+<p>Once created, fragments are stored in a dedicated <strong>Fragment Inventory</strong> and can be inserted into any journey using the <strong>Journey fragments</strong> activity.</p>
+<!--<p><img src="assets/do-not-localize/journey-fragments.gif"></p>-->
+<p>This capability will only be available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<!--p>For more information, refer to the <a href="../building-journeys/journey-fragments.md">detailed documentation</a>.</p-->
+<p>Availability date: May 12, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## April '26 release notes {#april-26-rn}
 
 <!--
@@ -38,24 +164,6 @@ New capabilities and improvements released earlier in April are announced with t
 <table>
 <thead>
 <tr>
-<th><strong>Integrations</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
-<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
-<p>For more information, refer to the <a href="../integrations/integrations.md">detailed documentation</a>.</p>
-<p>Availability date: May 4, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Incremental query activity in Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -65,7 +173,8 @@ New capabilities and improvements released earlier in April are announced with t
 <p><strong>Orchestrated campaigns</strong> now support an <strong>Incremental query</strong> activity that targets only profiles or events that are newly eligible since the last execution.
 
 This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly qualified loyalty members, and similar segments) while reducing query workloads and avoiding redundant sends over time.</p>
-<p>For more information, refer to the <a href="../orchestrated/activities/incremental-query.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../orchestrated/activities/incremental-query.md#incremental-query-configuration">detailed documentation</a>.</p>
+<p>Availability date: April 30, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -81,7 +190,6 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 <tr>
 <td>
 <p>With Journey Optimizer, you can now send emails where the transmitting entity (Sender) differs from the authoring entity (From). Email clients that support this will typically render it as "Sender on behalf of From" or show a "via" indicator. Fill in the optional <strong>Sender headers</strong> fields in the email channel settings to configure this capability.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p><img src="assets/do-not-localize/sender-headers.gif"></p>
 <p>For more information, refer to the <a href="../email/header-parameters.md#sender-header">detailed documentation</a>.</p>
 </td>
@@ -278,21 +386,25 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 ### Improvements {#april-26-improv}
 
-<!--
 #### AI
 
+<!--
 * **Brand alignment score in Campaign dashboard** - You can now assess your brand alignment score directly within your Campaign dashboard to ensure content stays on-brand. This allows you to verify guidelines at a glance without having to open the content designer.
-
-* **Prompt Assistant enhancement** - Prompt Assistant enhances AI content generation by analyzing user prompts in real time and identifying gaps in clarity, completeness, and context. It suggests improved rewrites and provides actionable guidance to enrich prompts with key details like audience, tone, and intent. The feature also asks targeted clarifying questions to help users refine their inputs before generation. This results in more accurate, high-quality outputs with fewer iterations. [Learn more](../content-management/ai-assistant-prompting-guide.md)
 -->
+
+* **Prompt Assistant enhancement** - Prompt Assistant enhances AI content generation by analyzing user prompts in real time and identifying gaps in clarity, completeness, and context. It suggests improved rewrites and provides actionable guidance to enrich prompts with key details like audience, tone, and intent. The feature also asks targeted clarifying questions to help users refine their inputs before generation. This results in more accurate, high-quality outputs with fewer iterations. [Learn more](../content-management/ai-assistant-prompting-guide.md#prompt-assistant)
+
+  Availability date: May 5, 2026
 
 #### Push
 
 * **Personalize App id in channel settings** - In the Push channel configuration settings, you can now personalize the **App id** field so that each recipient can receive a push notification from the appropriate brand based on their profile information. [Read more](../push/push-configuration.md#app-id-personalization)
 
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 #### Decisioning
+
+* **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
+
+  Availability date: May 6, 2026
 
 * **Attach fragments to decision items** - Journey Optimizer now provides the ability to attach fragments to decision items which can be leveraged in code-based experience and email campaigns through decision policies. [Read more](../experience-decisioning/fragments-decision-policies.md)
 
@@ -301,24 +413,6 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 * **Temporarily unavailable fragments are skipped** - When using fragments in decision items, if a fragment is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing. [Read more](../experience-decisioning/fragments-decision-policies.md#temporary-unavailable-fragments)
 
   Availability date: April 14, 2026
-
-<!--
-#### SMS
-
-* **Character Count** - In Adobe Journey Optimizer, you can now use the Character Count to monitor the length of your SMS messages in real time. It helps you see when a message will be split into multiple segments to better manage formatting and avoid unexpected increases in sending costs. [Read more](../sms/create-sms.md)
-
-* **Opt-out and consent at phone number and sender** - For SMS, Journey Optimizer now records marketing consent and opt-out at the level of both the profile's phone number and short code. 
-
-  This capability is currently only available for Sinch SMS configurations. [Read more](../sms/sms-configuration-sinch.md)
-
-* **SMS inbounds to a custom dataset** - In **SMS API credentials**, route **inbound SMS** to a **custom, profile-enabled Experience Event dataset** you select instead of only the default tracking dataset. [Read more](../sms/sms-webhook.md)
-
-* **Webhook interface enhancement** - When configuring SMS webhooks, the user interface now includes a built-in setup guide with practical examples, making it easier to align provider payloads and troubleshoot issues without leaving the configuration flow. [Read more](../sms/sms-webhook.md)
-
-#### WhatsApp
-
-* **WhatsApp interactive buttons and tracking** - WhatsApp in Journey Optimizer now supports interactive buttons required by your templates and use cases, along with built-in interaction tracking so you can measure engagement and analyze performance alongside your other channel reporting.
--->
 
 #### Adobe Experience Manager Integrations
 
@@ -337,6 +431,12 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
   Previously available for email content templates only, this capability is now deployed to **email** content in the Email Designer (for example, emails authored in journeys and campaigns), in addition to email content templates. It is currently in Limited Availability — contact your Adobe representative to gain access. [Read more](../email/email-expert-mode.md)
 
   Availability date: April 9, 2026
+
+#### Journeys
+
+* **Current journey payload size visible in journey properties** - The journey properties panel now displays the current size of the journey payload compared to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator helps you monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
+
+  Availability date: April 30, 2026
 
 #### Journey Path Optimization
 
@@ -360,49 +460,3 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 * **Global variables in Orchestrated Campaigns** - Orchestrated Campaigns now support global variables that can be defined once and reused across all activities within a workflow, simplifying configuration and ensuring consistency in dynamic values, expressions, and content personalization. [Read more](../orchestrated/global-variables.md)
 * **Data Modeler enhancements** - Orchestrated relational schemas now support composite keys spanning multiple fields. Loading a schema from a DDL file also brings in enumerations, and loading from either a DDL or Excel file automatically creates composite relationships between tables. In the entity relationship view, composite links now display the full set of field pairings between tables after a file is uploaded. [Read more](../orchestrated/gs-schemas.md)
-
-## Coming soon {#coming-soon}
-
-The following capabilities and enhancements are scheduled for release in the next few days. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
-
-### New capabilities {#comming-soon-features}
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey simulation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
-<p>This capability is available to all customers as a Limited Availability with essential capabilities.</p>
-<!--p><img src="assets/do-not-localize/simulate-user.gif"></p-->
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Deeplinks in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
-<!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
-<p>For more information, refer to the <a href="../email/message-tracking.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-### Improvements {#comming-soon-improv}
-
-#### Configuration
-
-* **Specific permissions for URL parameter encryption keys** - To access and manage keys for URL parameter encryption, new permissions have been created. You must now have the **View Key Registry** and **Manage Key Registry** permissions granted. <!--[Read more](../personalization/url-parameter-encryption.md#create-keys)-->
