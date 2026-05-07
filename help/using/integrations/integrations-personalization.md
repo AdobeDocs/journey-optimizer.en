@@ -91,13 +91,13 @@ The example below uses a reservation integration that returns a flight number fr
 
     ![](assets/uc-integrations-3.png)
 
-1. Open the **[!UICONTROL Helper function]** menu and add a helper, for example, the `Let` function, so you can bind a variable to the reservation response.
+1. (Optional) Open the **[!UICONTROL Helper function]** menu and add a helper, for example, the `Let` function, if you want to bind a named variable to the reservation response.
 
     >[!NOTE]
     >
     > Only fields exposed in the administrator-defined **[!UICONTROL Response payload]** are available. You cannot reference properties that were not exposed in configuration.
 
-1. Map that variable to the field the reservation integration returns for downstream use. Here, the flight number in the passenger or booking payload.
+1. If you use a helper variable, map that variable to the field the reservation integration returns for downstream use, for example, the flight number in the passenger or booking payload.
 
     ![](assets/uc-integrations-4.png)
 
@@ -105,9 +105,9 @@ The example below uses a reservation integration that returns a flight number fr
 
     ![](assets/uc-integrations-5.png)
 
-1. From the second integration, open **[!UICONTROL Integrations attributes]** and, for each input that should reuse the first call, for example, a path variable, header, or query parameter, choose a mapping source that reads from the first integration's response. 
+1. In the second integration, open **[!UICONTROL Integrations attributes]**. For each input that must reuse data from the first call, such as a path variable, header, or query parameter, select a mapping source from the first integration response.
 
-    The first API's output then supplies the input parameters for the next.
+    In the **[!UICONTROL Pills]** experience, you can map first-call output directly to second-call input without a `Let` statement. If you used `Let`, you can map through that variable instead.
 
     ![](assets/uc-integrations-6.png)
 
