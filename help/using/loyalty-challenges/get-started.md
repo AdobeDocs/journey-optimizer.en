@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with Loyalty Challenges
-description: Learn how to create and manage loyalty challenges in Adobe Journey Optimizer to build engaging loyalty programs.
+description: Learn how to create and manage loyalty challenges in Adobe Journey Optimizer to build engaging, rewarding loyalty programs.
 feature: Journeys
 topic: Content Management
 role: User
@@ -22,7 +22,8 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * [Create challenges](create-challenges.md)
 * [Create tasks](create-tasks.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
+* [Monitor loyalty challenge performance](loyalty-reporting.md)
+* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
 >[!ENDSHADEBOX]
 
@@ -46,10 +47,11 @@ With Loyalty Challenges, you can:
 * **Personalize the experience**: Use content cards and multi-channel messaging to create immersive, branded experiences
 * **Integrate seamlessly**: Connect with your existing loyalty providers and leverage Experience Platform data
 * **Track automatically**: Monitor customer progress through auto-generated journeys without custom development
+* **Measure performance**: Use built-in reporting dashboards to track program KPIs, challenge results, and task-level metrics
 
 ![](assets/challenges-gs.png)
 
-You can create three types of challenge experiences:
+You can create these types of challenge experiences:
 
 * **Standard challenges**: Customers complete any specified number of tasks in any order. Use this type when you want flexibility and multiple paths to completion.  
   *Example: "Summer Wellness Challenge" - Complete 3 out of 5 tasks: buy health products, share on social media, refer a friend, write a review, or attend a virtual event*
@@ -60,11 +62,13 @@ You can create three types of challenge experiences:
 * **Sequential challenges**: Customers complete tasks in a defined order. Use this type to guide customers through a specific journey or onboarding process.  
   *Example: "New Member Journey" - Sign up for emails → Make your first purchase → Write a product review → Refer a friend (complete in this exact order)*
 
+* **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Content, Messaging, and Audience as you would for any other challenge type.
+
 ## How it works {#how-it-works}
 
 Creating and launching a loyalty challenge follows this workflow:
 
-1. **Create a challenge** - Define the basic challenge properties, including name, type (Standard, Streak, or Sequential), and date range.
+1. **Create a challenge** - Define the basic challenge properties, including name, type (Standard, Streak, Sequential, or Bring your own data when available), and date range. [Learn how to choose a challenge type](create-challenges.md#create-the-challenge).
 
 1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend), quantities, product filters, and rewards.
 
@@ -154,9 +158,20 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
     <em>Learn how to define tasks that customers complete for challenges</em>
     </p>
   </td>
+  <td>
+    <a href="loyalty-reporting.md">
+      <img alt="Reports" src="assets/do-not-localize/icon-reporting.png" width="200"/>
+    </a>
+    <div>
+    <a href="loyalty-reporting.md"><strong>Monitor performance</strong></a>
+    </div>
+    <p>
+    <em>Track program KPIs, challenge results, and task metrics with built-in dashboards</em>
+    </p>
+  </td>
 </tr>
 </table>
 
 ## API reference {#api-reference}
 
-To manage loyalty challenges programmatically, use the [Loyalty Challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}. The API lets you create, update, and manage challenges and tasks via REST endpoints.
+To manage loyalty challenges programmatically, use the [Loyalty Challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}. The API lets you create, update, and manage challenges and tasks via REST endpoints.

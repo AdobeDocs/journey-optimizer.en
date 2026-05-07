@@ -32,6 +32,13 @@ The **Read Audience** activity is the journey entry-point activity that adds all
 | Your audience is batch-evaluated (e.g. daily snapshot). | Your audience is streaming or event-based. |
 | You are okay with a delay between audience evaluation and journey entry. | You need immediate entry when a profile qualifies. |
 
+>[!TIP]
+>
+>**Real-world examples**
+>* **Weekly newsletter** → Read Audience. Your audience is a daily batch snapshot. You schedule the journey every Monday at 9 AM. All qualified profiles enter together.
+>* **Loyalty tier upgrade** → Audience Qualification. As soon as a profile reaches Gold status in a streaming audience, they enter the journey immediately to receive a congratulations email.
+>* **Re-engagement series** → Read Audience. You run a recurring journey every 30 days targeting profiles inactive for 90+ days.
+
 **Key limits:** One Read Audience per journey (must be the first activity); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and limitations](../start/guardrails.md#read-segment-g).
 
 **Prerequisites:** An [!DNL Adobe Experience Platform] audience that is built and evaluated (Realized status), a people-based identity namespace selected for the journey, and—for recurring runs—understanding of [scheduling and throughput limits](../start/guardrails.md#read-segment-g).

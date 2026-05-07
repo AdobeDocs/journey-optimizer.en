@@ -22,7 +22,8 @@ exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * **Create challenges** ◀︎ **You are here**
 * [Create tasks](create-tasks.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges/){target="_blank"}
+* [Monitor loyalty challenge performance](loyalty-reporting.md)
+* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +52,13 @@ This page covers the complete process of creating a loyalty challenge, from sele
    * **[!UICONTROL Sequential]**: Customers complete tasks in a defined order  
      *Example: Purchase → Review → Share (must be completed in this sequence)*
 
-   After selecting a challenge type, the challenge creation interface opens with multiple configuration tabs. Start by configuring the challenge structure.
+   * **[!UICONTROL Bring your own data]**: Select **[!UICONTROL Bring your own data]** when you want the challenge framework such as tasks and rewards to be assembled from your Loyalty Challenges data integration. When this type is selected, you don't need to configure the challenge structure, you only configure **[!UICONTROL Content]**, **[!UICONTROL Messaging]**, and **[!UICONTROL Audience]** the same way as other challenges.
+
+      >[!AVAILABILITY]
+      >
+      >The **[!UICONTROL Bring your own data]** challenge type is currently available to a restricted set of organizations and will be made available more broadly in a future release.
+
+   After selecting a challenge type, the challenge creation interface opens with multiple configuration tabs. For all types except **[!UICONTROL Bring your own data]**, start by configuring the challenge structure.
 
 ## Configure the challenge structure {#structure}
 
@@ -287,7 +294,7 @@ Launching a challenge requires **three steps**: (1) publish the challenge, (2) g
 
 1. Open the journey and publish it. The journey will start automatically on your specified challenge start date and deliver content and messages according to your configuration. [Learn how to publish a journey](../building-journeys/publish-journey.md).
 
-1. Once your challenge is live, monitor performance and message delivery in the [journey report](../reports/journey-global-report-cja.md).
+1. Once your challenge is live, monitor program KPIs, challenge results, and task-level metrics in the [loyalty challenge reports](loyalty-reporting.md). You can also monitor message delivery in the [journey report](../reports/journey-global-report-cja.md).
 
 >[!NOTE]
 >

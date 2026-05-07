@@ -8,7 +8,7 @@ solution: Journey Optimizer
 ---
 
 # Adobe Journey Optimizer Help {#using}
-
+ 
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
@@ -56,6 +56,7 @@ solution: Journey Optimizer
     + [Send using waves in journeys](using/building-journeys/send-using-waves.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
+    + [Simulate your journey](using/building-journeys/simulate-journey.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Journey Dry run](using/building-journeys/journey-dry-run.md)
     + [Publish your journey](using/building-journeys/publish-journey.md)
@@ -135,6 +136,7 @@ solution: Journey Optimizer
   + {hide-from-toc} [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
   + {hide-from-toc} [Create challenges](using/loyalty-challenges/create-challenges.md)
   + {hide-from-toc} [Create tasks](using/loyalty-challenges/create-tasks.md)
+  + {hide-from-toc} [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
@@ -200,6 +202,7 @@ solution: Journey Optimizer
       + [Deduplication](using/orchestrated/activities/deduplication.md)
       + [Enrichment](using/orchestrated/activities/enrichment.md)
       + [Fork](using/orchestrated/activities/fork.md)
+      + [Incremental query](using/orchestrated/activities/incremental-query.md)
       + [Read audience](using/orchestrated/activities/read-audience.md)
       + [Reconciliation](using/orchestrated/activities/reconciliation.md)
       + [Save audience](using/orchestrated/activities/save-audience.md)
@@ -211,6 +214,8 @@ solution: Journey Optimizer
       + [Engage customers by browsing activity](using/orchestrated/engage-customers-uc.md)
       + [Notify users about product availability](using/orchestrated/product-availability-uc.md)
     + Advanced operations {#orchestrated-advanced}
+      + [Use variables in Orchestrated campaigns](using/orchestrated/variables-orchestrated-campaigns.md)
+      + [Define global variables in Orchestrated campaigns](using/orchestrated/global-variables.md)
       + [Trigger Orchestrated campaigns using a signal](using/orchestrated/trigger-orchestrated-campaign.md)
 + Conflict & prioritization {#conflict-prioritization}
   + [Conflict management & prioritization](using/conflict-prioritization/gs-conflict-prioritization.md)
@@ -224,7 +229,7 @@ solution: Journey Optimizer
     + [Set quiet hours](using/conflict-prioritization/quiet-hours.md)
   + Journey arbitration {#journey-arbitration}
     + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
-    + {hide-from-toc} [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
+    + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
 + Test & approve {#test}
   + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
@@ -283,6 +288,7 @@ solution: Journey Optimizer
         + [Use content components](using/email/content-components.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
+        + [Personalize URLs](using/email/url-personalization.md)
         + [Insert personalized offers](using/email/add-offers-email.md)
         + [Optimize email for AI inboxes](using/email/llm-email-optimizer.md)
         + [Manage the text version](using/email/text-version-email.md)
@@ -499,11 +505,14 @@ solution: Journey Optimizer
     + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
-    + {hide-from-toc} [Work with Integrations](using/integrations/external-sources.md)
-    + {hide-from-toc} [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
-    + {hide-from-toc} [Available vendors](using/integrations/vendor-integration.md)
-    + {hide-from-toc} [FAQ](using/integrations/vendor-integration-faq.md)      
-    + {hide-from-toc} [Work with AI tools via MCP](/help/using/integrations/ajo-mcp.md)
+    + Integrations {#integrations}
+      + [Work with Integrations](using/integrations/integrations.md)
+      + [Using External integrations for personalization](using/integrations/integrations-personalization.md)
+      + [FAQ](using/integrations/vendor-integration-faq.md)
+      + Sample Vendors {#vendors}
+        + [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
+        + [Sample Vendor configurations](using/integrations/vendor-integration.md)  
+    + [Work with AI tools via MCP](/help/using/integrations/ajo-mcp.md)
   + AI Assistant for content generation {#ai-assistant}
     + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
     + [Get started with AI Assistant](using/content-management/gs-generative.md)
@@ -909,7 +918,7 @@ solution: Journey Optimizer
     + [Allowed list](using/configuration/allow-list.md)
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for email archiving](using/configuration/archiving-support.md)
-  + {hide-from-toc} [Add a CC field to emails](using/configuration/cc-email-field.md)
+  + [Add a CC field to emails](using/configuration/cc-email-field.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
 + Journey configuration {#configure-journeys}

@@ -31,9 +31,9 @@ Once your campaign has been activated, you need to retrieve the generated sample
     >
     >The endpoints in the cURL section differ between standard and [High throughput campigns](../campaigns/api-triggered-high-throughput.md).
 
-1. Use this cURL request into the APIs to build your payload and trigger the campaign. For more information, refer to the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution), where all endpoints for standard and High throughput campaigns are listed.
+1. Use this cURL request into the APIs to build your payload and trigger the campaign. For more information, refer to the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging#tag/execution), where all endpoints for standard and High throughput campaigns are listed.
 
-    API call examples are also available on [this page](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples/).
+    API call examples are also available on [this page](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples).
 
 ## Troubleshooting {#troubleshooting}
 

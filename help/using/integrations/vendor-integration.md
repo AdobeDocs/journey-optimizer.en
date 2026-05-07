@@ -7,25 +7,33 @@ feature: Integrations
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
 keywords: integration, vendor, third-party
 ---
-# Available vendors
+# Sample Vendor configurations {#vendor-integration}
 
 >[!BEGINSHADEBOX]
 
-Table of content: 
-
-* [Work with Integrations](external-sources.md)
-* [Get started with Vendors integration](vendor-integration-gs.md)
-* **[Available vendors](vendor-integration.md)**
-* [FAQ](vendor-integration-faq.md) 
+Customers are responsible for ensuring that their use of the AJO Integrations feature and any associated third-party vendors or integrations complies with all applicable laws and regulations, such as HIPAA.
 
 >[!ENDSHADEBOX]
+
+## Quick navigation {#quick-navigation}
+
+Use these grouped links to jump to the relevant vendor pattern quickly:
+
+* **Content management system:** [Contentful](#contentful), [Sitecore](#sitecore), [Salsify](#salsify), [Contentstack](#contentstack), [Akeneo](#akeneo), [Magnolia](#magnolia)
+* **Loyalty and rewards:** [Voucherify](#voucherify), [Talon.One](#talon-one), [Antavo](#antavo), [Salesforce Loyalty](#salesforce-loyalty), [Capillary](#capillary)
+* **Templates, personalization and recommendations:** [Stensul](#stensul), [Marigold](#marigold), [Adobe Target Recommendations](#adobe-target-recommendations)
+* **Data, weather, and operations:** [AccuWeather](#accuweather), [ShipStation](#shipstation), [RevenueCat](#revenuecat), [Databricks](#databricks)
+* **Reviews, consent, and social:** [Bynder](#bynder), [Trustpilot](#trustpilot), [Bazaarvoice](#bazaarvoice), [OneTrust](#onetrust), [Meta](#meta), [Aprimo](#aprimo), [Epsilon (Epsilon3)](#epsilon)
 
 ## Content and CMS {#content-and-cms}
 
 ### Contentful {#contentful}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Contentful. Confirm current API details with Contentful documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -42,7 +50,6 @@ The following prerequisites apply:
 * Contentful space with Delivery API access and a read-oriented API key.
 * Clear content types and field IDs; admin access in Journey Optimizer to create integrations.
 
-
 The following limitations and exclusions apply:
 
 * Broad listing or paginated Contentful APIs are a poor fit for this pattern; prefer retrieval calls that target a specific entry or asset.
@@ -52,17 +59,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. Follow [Work with Integrations](integrations.md). Configure **GET** with the Content Delivery API and your Delivery token, paste sample JSON, map fields, test, activate.
+
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Contentful Content Delivery API (CDA) URL: `https://cdn.contentful.com/spaces/{space_id}/environments/{environment_id}/entries/{entry_id}`
 
-1. Select HTTP method: GET.
+1. Select HTTP method: **GET**.
 
-1. Add authentication header: 
-
-  Authorization: Bearer <CONTENTFUL_DELIVERY_TOKEN>
+1. Add authentication. Set the **`access_token`** **query** parameter to your Content Delivery API token, as shown in **Sample integration fields** below. Contentful also accepts the same token in an `Authorization: Bearer` header; use whichever your integration fields support.
 
 1. Add path variables if required (e.g., entry ID, locale).
 
@@ -82,7 +89,7 @@ Sample integration fields (align with the [Content Delivery API](https://www.con
 
 | Field | Value |
 | -- | -- |
-| **URL** | `https://cdn.contentful.com/spaces/{{spaceID}}/entries/environments/{{environment_id}}` |
+| **URL** | `https://cdn.contentful.com/spaces/{{spaceID}}/environments/{{environment_id}}/entries/{{entry_id}}` |
 | Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
 | Policy | Configure policy level details as per your need. |
 | **HTTP method** | `GET` |
@@ -93,6 +100,7 @@ Sample integration fields (align with the [Content Delivery API](https://www.con
 | --- | --- | --- |
 | `spaceID` | `spaceID` | `<YOUR_SPACE_ID>` |
 | `environment_id` | `environment_id` | `<YOUR_ENV_ID>` |
+| `entry_id` | `entry_id` | `<YOUR_ENTRY_ID>` |
 
 **Headers**
 
@@ -109,6 +117,10 @@ Sample integration fields (align with the [Content Delivery API](https://www.con
 +++
 
 ### Sitecore {#sitecore}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Sitecore. Confirm current API details with Sitecore documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -134,16 +146,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure **GET** on your download-order path, set authorization headers per Sitecore, map `id` from context, paste sample JSON, map fields, and tune timeouts for asset latency.
+1. Follow [Work with Integrations](integrations.md). Configure **GET** on your download-order path, set authorization headers per Sitecore, map `id` from context, paste sample JSON, map fields, and tune timeouts for asset latency.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Content Hub API (example: download order by ID). Example URL pattern:
 
-1. `https://xmapps-api.sitecorecloud.io/api/v1/downloadorders/{id}`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://xmapps-api.sitecorecloud.io/api/v1/downloadorders/{id}`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -194,6 +207,10 @@ Use the following fields when you configure this sample call in Journey Optimize
 
 ### Salsify {#salsify}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Salsify. Confirm current API details with Salsify documentation.
+
 >[!BEGINSHADEBOX]
 
 Salsify is a PIM with APIs for products, channels, and digital assets.
@@ -218,16 +235,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Prefer single-product retrieval over bulk catalog calls, set bearer auth, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Prefer single-product retrieval over bulk catalog calls, set bearer auth, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Salsify Product API. Example URL pattern:
 
-1. `https://api.salsify.com/v1/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://api.salsify.com/v1/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -279,6 +297,10 @@ Some older references reused a download-order style path for Salsify; your tenan
 
 ### Contentstack {#contentstack}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Contentstack. Confirm current API details with Contentstack documentation.
+
 >[!BEGINSHADEBOX]
 
 Contentstack is a headless CMS; REST delivery is typical for JSON field mapping in Journey Optimizer.
@@ -303,16 +325,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Add both `api_key` and `access_token` headers as Contentstack requires, include the `environment` query parameter, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Add both `api_key` and `access_token` headers as Contentstack requires, include the `environment` query parameter, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Content Delivery API. Example URL pattern:
 
-1. `https://cdn.contentstack.io/v3/content_types/{content_type_uid}/entries/{entry_uid}`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://cdn.contentstack.io/v3/content_types/{content_type_uid}/entries/{entry_uid}`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -366,6 +389,10 @@ Contentstack expects **both** keys as headers for delivery requests.
 
 ### Akeneo {#akeneo}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Akeneo. Confirm current API details with Akeneo documentation.
+
 >[!BEGINSHADEBOX]
 
 Akeneo PIM exposes REST APIs for products, attributes, and media.
@@ -390,16 +417,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** with bearer token, request only needed attribute options in query flags, paste sample JSON, map a minimal attribute set, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use **GET** with bearer token, request only needed attribute options in query flags, paste sample JSON, map a minimal attribute set, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Akeneo REST API. Example URL pattern:
 
-1. `https://{pim-host}/api/rest/v1/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://{pim-host}/api/rest/v1/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -457,6 +485,10 @@ Example pattern: `https://{pim-host}/api/rest/v1/products-uuid/{uuid}` with `Acc
 
 ### Magnolia {#magnolia}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Magnolia. Confirm current API details with Magnolia documentation.
+
 >[!BEGINSHADEBOX]
 
 Magnolia offers headless and REST delivery endpoints depending on deployment.
@@ -480,16 +512,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use the public delivery URL pattern your modules expose, authenticate per Magnolia guidance (anonymous delivery vs token for protected content), paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use the public delivery URL pattern your modules expose, authenticate per Magnolia guidance (anonymous delivery vs token for protected content), paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Magnolia REST (delivery). Example URL pattern:
 
-1. `https://{author-or-public}/.rest/delivery/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://{author-or-public}/.rest/delivery/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -529,7 +562,7 @@ Example pattern: `https://{domain}/magnoliaAuthor/.rest/delivery/...` or public 
 | --- | --- | --- | --- |
 | API Key | Authorization | `<bearer_token>` | Header |
 
-Note: Delivery API is to use the rest-anonymous role for content that doesn't require a login. For secure access to protected data, a more robust method like API tokens or OAuth 2.0 is preferred
+Note: Delivery API is to use the rest-anonymous role for content that doesn't require a login. For secure access to protected data, a more robust method like API tokens or OAuth 2.0 is preferred.
 
 +++
 
@@ -537,6 +570,10 @@ Note: Delivery API is to use the rest-anonymous role for content that doesn't re
 ## Loyalty and rewards {#loyalty-and-rewards}
 
 ### Voucherify {#voucherify}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Voucherify. Confirm current API details with Voucherify documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -562,17 +599,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Set base URL for your cluster, add required headers (`X-APP-ID`, `X-APP-TOKEN`), constrain list endpoints with filters or IDs, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Set base URL for your cluster, add required headers (`X-APP-ID`, `X-APP-TOKEN`), constrain list endpoints with filters or IDs, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
-1. Configure the endpoint using the Loyalty / REST APIs. Example URL pattern:
+1. Configure the endpoint using the Loyalty / REST APIs. Per [Voucherify](https://docs.voucherify.io/){target="_blank"}, set the **cluster** host and paths for your region. Example URL pattern:
 
-1. Per Voucherify OpenAPI base URL for your region
+    `https://{cluster}.voucherify.io/`
 
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -637,6 +674,10 @@ Sample integration fields. Full reference: [Voucherify API](https://docs.voucher
 
 ### Talon.One {#talon-one}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Talon.One. Confirm current API details with Talon.One documentation.
+
 >[!BEGINSHADEBOX]
 
 Talon.One is a promotion and loyalty rules engine with REST APIs for sessions, effects, and profiles.
@@ -661,16 +702,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** on the profile or achievement path you need, set `Authorization: ApiKey-v1 <key>` as documented, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use **GET** on the profile or achievement path you need, set `Authorization: ApiKey-v1 <key>` as documented, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Talon.One Integration API. Example URL pattern:
 
-1. `https://{your-domain}.talon.one/v1/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://{your-domain}.talon.one/v1/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -727,6 +769,10 @@ The table below lists example values for this integration request.
 
 ### Antavo {#antavo}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Antavo. Confirm current API details with Antavo documentation.
+
 >[!BEGINSHADEBOX]
 
 Antavo is an enterprise loyalty platform with REST APIs for members, rewards, and events.
@@ -751,17 +797,15 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure **GET** with the vendor's authentication (for example API key in query), avoid exposing PII against policy, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Configure **GET** with the vendor's authentication (for example API key in query), avoid exposing PII against policy, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
-1. Configure the endpoint using the Antavo Enterprise API. Example URL pattern:
+1. Configure the endpoint using the Antavo Enterprise API.
 
-1. Per Antavo stack base URL documented in your tenant
-
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -811,6 +855,10 @@ Sample integration fields use the **staging** host; production uses your Antavo 
 
 ### Salesforce Loyalty {#salesforce-loyalty}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Salesforce. Confirm current API details with Salesforce documentation.
+
 >[!BEGINSHADEBOX]
 
 Salesforce Loyalty Management exposes REST APIs on the Salesforce platform for members, programs, and transactions.
@@ -835,16 +883,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use the loyalty integration endpoint your team approves, complete Salesforce OAuth, paste sample JSON, map fields, respect composite API limits, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use the loyalty integration endpoint your team approves, complete Salesforce OAuth, paste sample JSON, map fields, respect composite API limits, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Salesforce Loyalty Management REST. Example URL pattern:
 
-1. `https://{instance}.salesforce.com/services/data/vXX.X/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://{instance}.salesforce.com/services/data/vXX.X/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -905,6 +954,10 @@ Use the Loyalty Management **member profile** GET operation documented for your 
 
 ### Capillary {#capillary}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Capillary. Confirm current API details with Capillary documentation.
+
 >[!BEGINSHADEBOX]
 
 Capillary provides loyalty and engagement APIs common in retail stacks.
@@ -928,17 +981,15 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure headers such as `CAP-API-ACCESS-TOKEN` as required, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Configure headers such as `CAP-API-ACCESS-TOKEN` as required, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
-1. Configure the endpoint using the Capillary APIs. Example URL pattern:
+1. Configure the endpoint using the Capillary APIs.
 
-1. Per Capillary integration guide for your region
-
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -992,6 +1043,10 @@ Example: `https://ushc.intouch.capillarytech.com/api/v3/rewards/{reward_id}` (ho
 
 ### Stensul {#stensul}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Stensul. Confirm current API details with Stensul documentation.
+
 >[!BEGINSHADEBOX]
 
 Stensul is an email creation platform for approved templates; Journey Optimizer can consume template metadata and structured regions through its API.
@@ -1016,15 +1071,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name.
 
-1. Configure the endpoint using the Stensul Templates API URL (example pattern): `https://api.stensul.com/v1/templates/{template_id}`
+1. Configure the endpoint using the Stensul Templates API URL. Example URL pattern:
+
+    `https://api.stensul.com/v1/templates/{template_id}`
 
 1. Configure authentication (API key or OAuth per Stensul API documentation).
 
-1. Define path variables (e.g., template ID).
+1. Define path variables , e.g. template ID.
 
 1. Paste a sample JSON response for field detection.
 
@@ -1033,6 +1090,10 @@ Use the procedure below to configure this integration in Journey Optimizer. See 
 1. Test connection and activate.
 
 ### Marigold {#marigold}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Marigold. Confirm current API details with Marigold documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -1058,17 +1119,15 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Point to the Marigold host for your region, set authentication (the sample below uses `X-Api-Key` with key and secret), paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Point to the Marigold host for your region, set authentication (the sample below uses `X-Api-Key` with key and secret), paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
-1. Configure the endpoint using the Marigold REST API (endpoint per your integration guide). Example URL pattern:
+1. Configure the endpoint using the Marigold REST API.
 
-1. Use the base URL and path provided in your Marigold API documentation
-
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1084,8 +1143,8 @@ Use the procedure below to configure this integration in Journey Optimizer. See 
 
 1. Marigold uses 2 endpoints based on the geographical area for which the customer instance is active:
 
-1. Europe: https://{{customername}}.module.slgnt.eu
-   USA: https://{{customername}}.module.slgnt.us
+    * Europe: `https://{{customername}}.module.slgnt.eu`
+    * USA: `https://{{customername}}.module.slgnt.us`
 
 The table below lists example values for this integration request.
 
@@ -1125,6 +1184,10 @@ Base host depends on region (for example `https://{{customername}}.module.slgnt.
 
 ### Adobe Target Recommendations {#adobe-target-recommendations}
 
+>[!IMPORTANT]
+>
+>This configuration is an illustrative pattern tested by the Adobe Journey Optimizer team. Adobe Target Recommendations is a separate Adobe product with its own release cycle and API versioning. Always confirm current API details with the [Adobe Target developer documentation](https://experienceleague.adobe.com/en/docs/target-dev/developer/overview) before deploying in production.
+
 >[!BEGINSHADEBOX]
 
 Adobe Target includes Recommendations and delivery APIs for server-side or integrated experiences, subject to entitlements.
@@ -1149,17 +1212,15 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Delivery calls are often **POST** with a JSON body. Configure OAuth per [Target authentication](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/configure-authentication){target="_blank"}, paste a sample response, map fields, test under expected volume.
+1. Follow [Work with Integrations](integrations.md). Delivery calls are often **POST** with a JSON body. Configure OAuth per [Target authentication](https://experienceleague.adobe.com/en/docs/target-dev/developer/api/configure-authentication){target="_blank"}, paste a sample response, map fields, test under expected volume.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
-1. Configure the endpoint using the Target Recommendations / delivery APIs (per Adobe documentation for your integration pattern). Example URL pattern:
+1. Configure the endpoint using the Target Recommendations / delivery APIs. 
 
-1. See Adobe Target Recommendations API documentation for your use case
-
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1268,6 +1329,10 @@ Refer to [Target authentication configuration](https://experienceleague.adobe.co
 
 ### AccuWeather {#accuweather}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by AccuWeather. Confirm current API details with AccuWeather documentation.
+
 >[!BEGINSHADEBOX]
 
 AccuWeather exposes forecast and location REST APIs so messages can include weather-aware snippets.
@@ -1293,16 +1358,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** unless your subscription requires otherwise, attach the `apiKey` query parameter (or as documented), map `locationKey` and other variables from profile/context, paste sample JSON, map fields, then test.
+1. Follow [Work with Integrations](integrations.md). Use **GET** unless your subscription requires otherwise, attach the `apiKey` query parameter, map `locationKey` and other variables from profile/context, paste sample JSON, map fields, then test.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Daily Forecasts API. Example URL pattern:
 
-1. `https://dataservice.accuweather.com/forecasts/v1/daily/{days}day/{locationKey}`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://dataservice.accuweather.com/forecasts/v1/daily/{days}day/{locationKey}`
+  
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1361,6 +1427,10 @@ Sample integration fields. Details and tiers are described in [AccuWeather APIs]
 
 ### ShipStation {#shipstation}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by ShipStation. Confirm current API details with ShipStation documentation.
+
 >[!BEGINSHADEBOX]
 
 ShipStation offers shipping and order APIs for carriers, labels, and tracking.
@@ -1385,16 +1455,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Target the resource you need (orders vs shipments), authenticate per [ShipStation API](https://www.shipstation.com/docs/api/){target="_blank"}, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Target the resource you need (orders vs shipments), authenticate per [ShipStation API](https://www.shipstation.com/docs/api/){target="_blank"}, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the ShipStation REST API. Example URL pattern:
 
-1. `https://ssapi.shipstation.com/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://ssapi.shipstation.com/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1452,6 +1523,10 @@ The following **Get Timer** example illustrates one ShipStation automation timin
 
 ### RevenueCat {#revenuecat}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by RevenueCat. Confirm current API details with RevenueCat documentation.
+
 >[!BEGINSHADEBOX]
 
 RevenueCat provides subscription status and entitlements APIs for apps.
@@ -1476,16 +1551,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Call the REST **GET** modeled below, authenticate with the secret key header, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Call the REST **GET** modeled below, authenticate with the secret key header, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the RevenueCat REST API. Example URL pattern:
 
-1. `https://api.revenuecat.com/v1/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://api.revenuecat.com/v1/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1543,6 +1619,10 @@ Example pattern: use RevenueCat's **Get a Product** (or equivalent product/entit
 
 ### Databricks {#databricks}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Databricks. Confirm current API details with Databricks documentation.
+
 >[!BEGINSHADEBOX]
 
 Databricks provides SQL and REST APIs over lakehouse data; earlier drafts combined statement execution guidance with a **jobs/get** sample.
@@ -1562,16 +1642,17 @@ The following prerequisites apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Prefer narrow read paths; if you use **POST** statement execution, include the JSON body the API requires, paste a sample success response for mapping, test latency carefully, activate.
+1. Follow [Work with Integrations](integrations.md). Prefer narrow read paths; if you use **POST** statement execution, include the JSON body the API requires, paste a sample success response for mapping, test latency carefully, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Databricks SQL Statement Execution API. Example URL pattern:
 
-1. `https://{workspace-host}/api/2.0/sql/statements/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://{workspace-host}/api/2.0/sql/statements/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1597,7 +1678,7 @@ The **GET** job example below is illustrative; for SQL-driven personalization, p
 | **HTTP method** | `GET` |
 | Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
 | Policy | Configure policy level details as per your need. |
-| Authentication | Oauth |
+| Authentication | OAuth |
 
 **Headers**
 
@@ -1616,6 +1697,10 @@ The **GET** job example below is illustrative; for SQL-driven personalization, p
 ## Reviews, consent, and social {#reviews-consent-and-social}
 
 ### Bynder {#bynder}
+
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Bynder. Confirm current API details with Bynder documentation.
 
 >[!BEGINSHADEBOX]
 
@@ -1641,16 +1726,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure **GET** on the chosen endpoint (one common pattern is a users listing), complete OAuth per [Bynder](https://developer.bynder.com/){target="_blank"}, avoid pulling unnecessary pages of data, map fields, test, then activate.
+1. Follow [Work with Integrations](integrations.md). Configure **GET** on the chosen endpoint (one common pattern is a users listing), complete OAuth per [Bynder](https://developer.bynder.com/){target="_blank"}, avoid pulling unnecessary pages of data, map fields, test, then activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
-1. Configure the endpoint using the Bynder API v4 (example: users listing pattern). Example URL pattern:
+1. Configure the endpoint using the Bynder API v4. Example URL pattern:
 
-1. `https://{your-bynder-domain}/api/v4/users/`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://{your-bynder-domain}/api/v4/users/`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1767,6 +1853,10 @@ Sample integration fields. See [Bynder API documentation](https://developer.bynd
 
 ### Trustpilot {#trustpilot}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Trustpilot. Confirm current API details with Trustpilot documentation.
+
 >[!BEGINSHADEBOX]
 
 Trustpilot provides APIs for business and review summary data where your use case and contract allow.
@@ -1791,16 +1881,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Configure **GET** with required query authentication, map identifiers from profile or context, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Configure **GET** with required query authentication, map identifiers from profile or context, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Trustpilot APIs. Example URL pattern:
 
-1. `https://api.trustpilot.com/v1/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://api.trustpilot.com/v1/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1851,6 +1942,10 @@ Use the categories listing operation from [Trustpilot developers](https://develo
 
 ### Bazaarvoice {#bazaarvoice}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Bazaarvoice. Confirm current API details with Bazaarvoice documentation.
+
 >[!BEGINSHADEBOX]
 
 Bazaarvoice provides ratings, reviews, and UGC APIs.
@@ -1875,16 +1970,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** with `passkey` as a query parameter on the Conversations API, set `Accept: application/json`, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use **GET** with `passkey` as a query parameter on the Conversations API, set `Accept: application/json`, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Bazaarvoice Conversations API. Example URL pattern:
 
-1. `https://api.bazaarvoice.com/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://api.bazaarvoice.com/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1935,6 +2031,10 @@ Example entry point: `https://api.bazaarvoice.com/data/products.json` with versi
 
 ### OneTrust {#onetrust}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by OneTrust. Confirm current API details with OneTrust documentation.
+
 >[!BEGINSHADEBOX]
 
 OneTrust exposes privacy and consent APIs (product-specific URLs and schemas).
@@ -1959,17 +2059,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use the published schema or preference-center path your subscription documents, complete OAuth if required, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use the published schema or preference-center path your subscription documents, complete OAuth if required, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
-1. Configure the endpoint using the OneTrust API. Example URL pattern:
+1. Configure the endpoint using the OneTrust API. Your tenant, product, and path come from the [OneTrust](https://developer.onetrust.com/){target="_blank"} documentation for your subscription. Example URL pattern:
 
-1. Per OneTrust developer portal base URL
+    `https://{tenant}.my.onetrust.com/api/...`
 
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -1993,7 +2093,7 @@ The table below lists example values for this integration request.
 | **HTTP method** | `GET` |
 | **Policy** | Configure policy level details as per your need. |
 | **Response payload** | Select and configure the desired response fields for use during authoring, based on the API response. |
-| **Authentication** | Oauth |
+| **Authentication** | OAuth |
 
 **Path parameters**
 
@@ -2021,6 +2121,10 @@ Example pattern (fragment): `https://{tenant}.my.onetrust.com/api/consentmanager
 
 ### Meta {#meta}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Meta. Confirm current API details with Meta documentation.
+
 >[!BEGINSHADEBOX]
 
 Meta Graph and Marketing APIs expose catalog and campaign objects for authorized business integrations.
@@ -2045,16 +2149,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Graph calls are often **GET** with a versioned path; handle token expiry, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Graph calls are often **GET** with a versioned path; handle token expiry, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
 1. Configure the endpoint using the Meta Graph API. Example URL pattern:
 
-1. `https://graph.facebook.com/vXX.X/...`
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+    `https://graph.facebook.com/vXX.X/...`
+
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -2080,7 +2185,7 @@ Sample integration fields. See [Graph API](https://developers.facebook.com/docs/
 | **HTTP method** | `GET` |
 | Response Payload | Select and configure the desired response fields for use during authoring, based on the API response. |
 | Policy | Configure policy level details as per your need. |
-| Authentication | Oauth |
+| Authentication | OAuth |
 
 **Path parameters**
 
@@ -2106,6 +2211,10 @@ Sample integration fields. See [Graph API](https://developers.facebook.com/docs/
 
 ### Aprimo {#aprimo}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Aprimo. Confirm current API details with Aprimo documentation.
+
 >[!BEGINSHADEBOX]
 
 Aprimo combines marketing operations and DAM APIs for records, assets, and metadata.
@@ -2130,17 +2239,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Use **GET** on the record path you need, send required headers such as `API-VERSION`, paste sample JSON (HAL or JSON as returned), map a minimal field set, test, activate.
+1. Follow [Work with Integrations](integrations.md). Use **GET** on the record path you need, send required headers such as `API-VERSION`, paste sample JSON (HAL or JSON as returned), map a minimal field set, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
-1. Configure the endpoint using the Aprimo DAM / Records API. Example URL pattern:
+1. Configure the endpoint using the Aprimo DAM / Records API. Use the API base URL and records path for your **tenant** (per Aprimo). Example URL pattern:
 
-1. Per Aprimo API base URL and resource path for your tenant
+    `https://{tenant}.dam.aprimo.com/`
 
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 
@@ -2190,6 +2299,10 @@ The table below lists example values for this integration request.
 
 ### Epsilon (Epsilon3) {#epsilon}
 
+>[!IMPORTANT]
+>
+>This configuration example was independently tested by Adobe as an example pattern. It is not maintained by or formally supported by Epsilon. Confirm current API details with Epsilon documentation.
+
 >[!BEGINSHADEBOX]
 
 Epsilon exposes APIs per enterprise agreement; base URLs and auth come from your account team (the Events API example below is illustrative).
@@ -2212,17 +2325,17 @@ The following limitations and exclusions apply:
 
 Use the procedure below to configure this integration in Journey Optimizer. See **Sample integration fields** for example request details, and confirm those values with the vendor documentation for your environment.
 
-1. Follow [Work with Integrations](external-sources.md). Do not guess public URLs. Use the specification from Epsilon, paste sample JSON, map fields, test, activate.
+1. Follow [Work with Integrations](integrations.md). Do not guess public URLs. Use the specification from Epsilon, paste sample JSON, map fields, test, activate.
 
-1. In Journey Optimizer, go to Configurations > Manage, then select Create Integration.
+1. In Journey Optimizer, go to **[!UICONTROL Configurations]** > **[!UICONTROL Manage]**, then select **[!UICONTROL Create Integration]**.
 
 1. Enter an integration name without spaces.
 
-1. Configure the endpoint using the Epsilon API (per your integration specification). Example URL pattern:
+1. Configure the endpoint using the Epsilon API (per your integration specification). Base URL and resource paths are provided by your Epsilon account team. Example URL pattern:
 
-1. Provided by Epsilon for your program
+    `https://{your-instance}.epsilon3.io/api/...`
 
-1. Select the HTTP method shown in the configuration table (typically GET unless noted otherwise).
+1. Select the HTTP method shown in the configuration table, typically GET unless noted otherwise.
 
 1. Configure authentication (headers, query parameters, or OAuth) exactly as specified in the table and in the vendor documentation.
 

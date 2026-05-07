@@ -70,7 +70,7 @@ The tables below list some surface URI definition examples for various devices.
 
 In [!DNL Journey Optimizer], the code-based experience channel supports two types of customer implementations:
 
-* Based on the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} for your websites, or on the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} for you mobile apps;
+* Based on the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} for your websites, or on the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation){target="_blank"} for you mobile apps;
 * Server-side or hybrid using [AEP Edge Network Server APIs](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"}.
 
 >[!NOTE]

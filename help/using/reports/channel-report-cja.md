@@ -151,6 +151,8 @@ The **[!UICONTROL Exclusions]** column shows the number of profiles that were ex
 
 +++
 
+To investigate these exclusions at the Data Lake level using Adobe Experience Platform Query Service, see [Business rules queries](query-examples.md#business-rules-queries).
+
 ➡️ [Learn more about journey capping & arbitration](../conflict-prioritization/journey-capping.md)
 
 ## Optimization models {#optimization-models}
