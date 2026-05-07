@@ -141,11 +141,11 @@ If your journey includes one or more events, you can trigger them while Simulati
 
 ## View results {#viewing-results}
 
-The **[!UICONTROL Results]** tab allows you to view the test results. Use the view selector to choose how you browse the log:
+The **[!UICONTROL Results]** tab allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect.
 
+<!--
 * **All simulated users**: Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. This view helps you scan the full simulation at a glance, activity, outcomes, and errors, without picking a single simulated user first.
-
-* **One simulated user**: In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect.
+-->
 
 For each activity, the log can show whether the simulated user entered or exited the step, and errors that occurred during the simulation.
 
