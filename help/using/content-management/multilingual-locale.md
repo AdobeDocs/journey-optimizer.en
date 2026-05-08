@@ -12,6 +12,7 @@ exl-id: 0b0e9344-f1ca-4aed-b143-facaa74c9b29
 ---
 # Create locale {#multilingual-locale}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_multi_add_locale"
 >title="Add locale"

@@ -37,6 +37,7 @@ Each task represents a measurable action that contributes toward challenge compl
 
 ## Create a task {#create-task}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_task_create"
 >title="Create a task"
@@ -100,6 +101,7 @@ Available attributes for **Spend** activities:
 >[!ENDTABS]
 
 ## Define eligible items and exclusions {#eligible-items-exclusions}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_task_eligible_items_exclusion"

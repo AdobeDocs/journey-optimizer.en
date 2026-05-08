@@ -11,6 +11,7 @@ exl-id: e3781f79-7c8d-4512-b44f-835639b1471f
 ---
 # Journey live report {#journey-live-report}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_live_report"
 >title="Journey live report"
@@ -40,6 +41,7 @@ From your journey **[!UICONTROL Live report]**, the **[!UICONTROL Journey]** tab
 
 ### Journey's performance {#journey-performance}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_performance_live"
 >title="Journey's performance"
@@ -52,6 +54,7 @@ From your journey **[!UICONTROL Live report]**, the **[!UICONTROL Journey]** tab
 Note the profile count for a node is only updated after the profile completes the node, not upon entering it. For instance, a profile on a **Wait** node is only counted once the specified date is reached and the profile has exited the node.
 
 ### Journey's statistics {#journey-statistics}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_statistics_live"
@@ -73,6 +76,7 @@ The **[!UICONTROL Journey Statistics]** Key Performance Indicators (KPIs) functi
 
 ### Action executed over the last 24 hours {#action-executed}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_actions_executed_live"
 >title="Action executed over the last 24 hours"
@@ -91,6 +95,7 @@ The **[!UICONTROL Action executed over the last 24 hours]** widget represents th
 +++
 
 ### Actions executed and errors {#actions-errors}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_actions_executed__errors_live"
@@ -111,6 +116,7 @@ The **[!UICONTROL Actions executed and errors]** widget represents the most succ
 
 ### Actions error reasons {#actions-error-reasons}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_actions_errors_live"
 >title="Actions error reasons"
@@ -121,6 +127,7 @@ The **[!UICONTROL Actions executed and errors]** widget represents the most succ
 The **[!UICONTROL Action error reasons]** table and graph offer a comprehensive overview of errors that occurred during the execution of your actions within the last 24 hours.
 
 ### Error type by actions {#error-type-actions}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_actions_error_type_live"
@@ -133,6 +140,7 @@ The **[!UICONTROL Error type by actions]** table and graph offer a comprehensive
 
 ### Event executed over the last 24 hours {#event-executed-24hours}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_24hours_live"
 >title="Event executed over the last 24 hours"
@@ -144,6 +152,7 @@ The **[!UICONTROL Event executed over the last 24 hours]** widget enables you to
 
 ### Events {#events}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_events_live"
 >title="Events"
@@ -154,6 +163,7 @@ The **[!UICONTROL Event executed over the last 24 hours]** widget enables you to
 The **[!UICONTROL Events]** widget allows you to see which one of your events was successfully executed through summary number, graph and table.
 
 ### Events by origin {#events-origin}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_events_origin_live"
@@ -169,6 +179,7 @@ The **[!UICONTROL Events by origin]** table and graphs provide a detailed perspe
 From your journey **[!UICONTROL Live report]**, the **[!UICONTROL Email]** tab details the main information relative to the emails sent in your journey.
 
 ### Email - Sending performance {#email-sending-performance}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_sending_performance_live"
@@ -192,6 +203,7 @@ The **[!UICONTROL Email - Sending performance]** graph provides a comprehensive 
 +++
 
 ### Email - Statistics {#email-stat}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_statistics_live"
@@ -230,6 +242,7 @@ The **[!UICONTROL Email - Statistics]** table provides a comprehensive summary o
 
 ### Email - Performance by date {#email-perf-date}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_performance_bydate_live"
 >title="Email - Performance by date"
@@ -261,6 +274,7 @@ The **[!UICONTROL Email - Performance by date]** widget offers a detailed overvi
 
 ### Email - Bounce categories and reasons {#email-bounce-categories}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_bounces_live"
 >title="Email - Bounce categories and reasons"
@@ -284,6 +298,7 @@ For more information on bounces, refer to the [Suppression list](../reports/supp
 
 ### Email - Error reasons {#email-error-reasons}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_errors_live"
 >title="Email - Error reasons"
@@ -294,6 +309,7 @@ For more information on bounces, refer to the [Suppression list](../reports/supp
 The **[!UICONTROL Error Reasons]** graphs and table offer visibility into the specific errors that occurred during the sending process of the last 24 hours, providing valuable information on the nature and occurrence of errors.
 
 ### Email - Excluded reasons {#email-excluded}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_excluded_live"
@@ -308,6 +324,7 @@ Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion 
 
 ### Email - Best recipient domain {#email-best-recipient}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_best_recipient_live"
 >title="Email - Best recipient domain"
@@ -318,6 +335,7 @@ Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion 
 The **[!UICONTROL Email - Best recipient domain]** graph and table offer a detailed breakdown of the domains that profiles most frequently use to open your emails within the last 24 hours. This provides valuable insights into profile behavior, helping you understand preferred platforms.
 
 ### Email- Offers {#email-offers}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_offers_live"
@@ -341,6 +359,7 @@ The **[!UICONTROL Offers statistic]** and **[!UICONTROL Offers statistics over t
 +++
 
 ### Email - Optimization {#email-sto}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_email_optimization_live"
@@ -374,6 +393,7 @@ From your journey **[!UICONTROL Live report]**, the **[!UICONTROL Push notificat
 
 ### Push notification - Sending performance {#push-sending-performance}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_push_sending_performance_live"
 >title="Push notification - Sending performance"
@@ -394,6 +414,7 @@ The **[!UICONTROL Push notification sending performance]** graph offers a thorou
 +++
 
 ### Push notification - Statistics {#push-statistics}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_push_statistics_live"
@@ -423,6 +444,7 @@ The **[!UICONTROL Push notification sending performance]** graph offers a thorou
 
 ### Push notification - Breakdown by platform {#push-breakdown}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_push_breakdown_live"
 >title="Push notification - Breakdown by platform"
@@ -433,6 +455,7 @@ The **[!UICONTROL Push notification sending performance]** graph offers a thorou
 The **[!UICONTROL Push notification - Breakdown by platform]** graph and table provide a detailed analysis of the success of your push notifications, offering insights based on your profile's operating system. This breakdown enhances your understanding of how well your push notifications perform across different platforms.
 
 ### Push notification - Sending summary {#push-sending-summary}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_push_sending_summary_live"
@@ -461,6 +484,7 @@ The **[!UICONTROL Push notification summary]** graph offers a dynamic representa
 
 ### Push notification - Error reasons {#push-error}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_push_error_reasons_live"
 >title="Push notification - Error reasons"
@@ -471,6 +495,7 @@ The **[!UICONTROL Push notification summary]** graph offers a dynamic representa
 The **[!UICONTROL Error Reasons]** table and graphs provide you with the capability to identify the specific errors that occurred during the sending process of your push notifications, offering detailed insights into any issues encountered in the last 24 hours.
 
 ### Push notification - Excluded reasons {#push-excluded}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_push_excluded_reasons_live"
@@ -486,6 +511,7 @@ Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion 
 ## SMS tab {#sms-live}
 
 ### SMS - Statistics {#sms-statistics}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_sms_statistics_live"
@@ -514,6 +540,7 @@ The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essent
 
 ### SMS - Performance by date {#sms-performance}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_sms_performance_live"
 >title="SMS - Performance by date"
@@ -535,6 +562,7 @@ The **[!UICONTROL SMS - Performance by date]** widget offers a detailed overview
 
 ### SMS - Bounces reasons {#sms-bounces}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_sms_bounces_live"
 >title="SMS - Bounces reasons"
@@ -546,6 +574,7 @@ The **[!UICONTROL SMS - Bounces reasons]** graphs and table provide a comprehens
 
 ### SMS - Error reasons {#sms-error}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_sms_error_live"
 >title="SMS - Error reasons"
@@ -556,6 +585,7 @@ The **[!UICONTROL SMS - Bounces reasons]** graphs and table provide a comprehens
 The **[!UICONTROL SMS - Error Reasons]** graphs and table allow you to identify the specific errors that occurred during the sending process of your SMS messages, facilitating a thorough analysis of any issues encountered in the last 24 hours.
 
 ### SMS - Excluded reasons {#sms-excluded}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_sms_excluded_live"
@@ -579,6 +609,7 @@ The **[!UICONTROL SMS - Clicks by links]** widget offers essential insights into
 ## In-app tab {#in-app-live}
 
 ### In-app performance {#inapp-performance}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_inapp_performance_live"
@@ -607,6 +638,7 @@ The **[!UICONTROL In-app performance]** KPIs provide essential insights into you
 
 ### In-app summary {#inapp-summary}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_inapp_summary_live"
 >title="In-app summary"
@@ -633,6 +665,7 @@ The **[!UICONTROL In-app summary]** graph illustrates the progression of your In
 +++
 
 ### Interactions by type {#interactions-type}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_inapp_interactions_live"

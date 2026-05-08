@@ -12,6 +12,7 @@ exl-id: 94d5e615-a7d6-468c-bee8-1ae5fcd4a694
 ---
 # Use email templates {#email-templates}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_use_template"
 >title="Build content from a template"

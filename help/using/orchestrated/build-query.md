@@ -17,6 +17,7 @@ The main steps to build rules for your Orchestrated campaigns are as follows:
 
 ## Add a condition {#conditions}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_querymodeler_customcondition"
 >title="Custom condition"
@@ -202,6 +203,7 @@ In the example below, we have created an intermediate group to target customers 
 ![](assets/rule-builder-groups.png)
 
 ## Check and validate your query
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_querymodeler_ruleproperties"

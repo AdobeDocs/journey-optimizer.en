@@ -10,6 +10,7 @@ version: Journey Orchestration
 ---
 # Configure the item catalog {#catalog}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_custom_attributes"
 >title="Access and edit the catalog's schema"

@@ -12,6 +12,7 @@ exl-id: bd35ae19-8713-4571-80bc-5f40e642d121
 ---
 # Create a content experiment {#content-experiment}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment"
 >title="Content experiment"
@@ -52,10 +53,12 @@ The goal here is to see if recipients will interact with the email depending on 
 
 ## Configure your content experiment {#configure-experiment}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment_dimension"
 >title="Dimension"
 >abstract="Choose the specific dimension to track for your Experiment, such as specific clicks or views of specific pages."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment_success_metric"

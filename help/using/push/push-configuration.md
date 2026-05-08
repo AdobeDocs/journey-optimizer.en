@@ -239,6 +239,7 @@ You can now select your configuration when creating your push notifications.
 
 ### Personalize the App id (optional) {#app-id-personalization}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_app_id"
 >title="Personalize App id"

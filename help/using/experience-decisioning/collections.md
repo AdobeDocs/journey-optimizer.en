@@ -10,15 +10,18 @@ version: Journey Orchestration
 ---
 # Collections {#collections}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_collections"
 >title="Create collections"
 >abstract="Collections allow you to categorize and group your decision items according to your preferences. These categories are created by crafting rules that leverage the attributes of decision items."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_collection_rules"
 >title="Define rules for your collection"
 >abstract="Add one or multiple rules to determine the items to be included in the collection. Choose an item attribute to use as criterion. Select the desired operator and input the value to filter on. Add as many rules as necessary."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_strategy_collection"

@@ -50,6 +50,7 @@ From this list, you can click the three dots next to a landing page and select t
 
 ## Use folders to manage landing pages {#folders}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_lp_folders"
 >title="Organize your landing pages into folders"

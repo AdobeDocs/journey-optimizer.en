@@ -14,25 +14,30 @@ version: Journey Orchestration
 ---
 # Use Adobe Experience Platform data for Decisioning {#aep-data}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_catalogs_dataset"
 >title="Dataset lookup"
 >abstract="In order to use attributes from Adobe Experience Platform for decisioning, you need to create a mapping to define how the Adobe Experience Platform dataset joins with data in [!DNL Journey Optimizer]."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_catalogs_dataset_create"
 >title="Dataset lookup"
 >abstract="Select the dataset with the attributes you need among all Adobe Experience Platform datasets that have been enabled for lookup, then select a mapping key (e.g., flight number or customer ID) that exists in both the decision item attributes and the dataset."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_rules_dataset_lookup"
 >title="Dataset Lookup"
 >abstract="Select the Adobe Experience Platform dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_formula_dataset_lookup"
 >title="Dataset Lookup"
 >abstract="Use [!DNL Adobe Experience Platform] datasets attributes to dynamically adjust the ranking logic to reflect real-world conditions. Click **[!UICONTROL Add dataset]** to select the Adobe Experience Platform dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_dataset"

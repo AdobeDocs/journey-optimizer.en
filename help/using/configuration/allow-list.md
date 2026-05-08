@@ -92,10 +92,12 @@ To add new email addresses or domains to the allowed list for a specific sandbox
 
 ### Manually populate the allowed list {#manually-populate-list}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_allowed_list_add_header"
 >title="Add addresses or domains to the allowed list"
 >abstract="You can manually add new email addresses or domains to the allowed list by selecting them one by one."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_allowed_list_add"
@@ -171,6 +173,7 @@ To export the allowed list as a CSV file, follow the steps below:
     >The link is valid for 24 hours.
 
 ## Allowed list logic {#logic}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_allowed_list_logic"

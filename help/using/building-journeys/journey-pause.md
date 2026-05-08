@@ -12,6 +12,7 @@ version: Journey Orchestration
 ---
 # Pause a journey {#journey-pause}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_pause"
 >title="Pause your journey"
@@ -90,6 +91,7 @@ When a journey is paused, profile management and activity execution depends on t
 Learn how to troubleshoot discards in [this section](#discards-troubleshoot). 
 
 ## How to resume a paused journey {#journey-resume-steps}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_resume"

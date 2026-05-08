@@ -33,6 +33,7 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 
 ## Overview {#overview}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_inventory"
 >title="Loyalty challenges"

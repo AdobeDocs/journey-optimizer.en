@@ -17,6 +17,7 @@ Use the Read Audience activity to start journeys with defined audiences. You cho
 
 ## About the Read Audience activity {#about-segment-trigger-activity}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment"
 >title="Read Audience activity"
@@ -58,15 +59,18 @@ You will set: **Audience** (mandatory), **Namespace** (mandatory), **Reading rat
 
 ### Add activity and select audience {#add-activity-and-select-audience}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_label"
 >title="Label"
 >abstract="Optional label to identify this activity in reporting and test mode logs."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_audience"
 >title="Audience"
 >abstract="Select the [!DNL Adobe Experience Platform] audience whose profiles will enter this journey."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_namespace"
@@ -131,6 +135,7 @@ All guardrails and limitations for the **Read Audience** activity (concurrency, 
 
 ### Profile entry and reading rate {#profile-entry-and-reading-rate}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_reading_rate"
 >title="Reading rate"
@@ -146,35 +151,42 @@ This value is stored in the journey version payload. The default value is 5,000 
 
 ### Schedule the journey {#schedule}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_start_date"
 >title="Start date / time"
 >abstract="Define when to start this journey."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_until"
 >title="Repeat until"
 >abstract="Define the end date for recurring runs."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_every"
 >title="Repeat every"
 >abstract="How often the journey runs (e.g. daily, weekly)."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_incremental_read"
 >title="Incremental read"
 >abstract="After the first run, only new profiles added to the audience enter the journey."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_force_reentrance"
 >title="Force reentrance"
 >abstract="Clear all participants from the journey before each new audience read."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience"
 >title="Trigger after batch audience evaluation"
 >abstract="Run the journey only after the batch audience has been freshly evaluated."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"

@@ -11,6 +11,7 @@ exl-id: 9a1c148c-a6c3-406b-8f2e-1cf8b8239e75
 
 ## Preview your code-based experience {#preview-code-based}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_preview"
 >title="Preview your code-based experience"
@@ -40,20 +41,24 @@ When your code-based experience uses [Experience Decisioning](../experience-deci
 
 ## Preview on device {#preview-on-device}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_preview_device"
 >title="Preview your code-based experience on a real device"
 >abstract="Get a preview of your personalized experiences right on your browser or on your mobile devices, to see how they look on real devices."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_preview_device_web"
 >title="Preview your code-based web experience on device"
 >abstract="Scan the QR code or copy the link to preview on device."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_preview_device_mobile"
 >title="Preview your code-based mobile experience on device"
 >abstract="Scan the QR code or copy the link to preview on device. Once connected, enter the pin on the device. You may need to restart your app to see the changes each time you update your preview links."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_preview_device_refresh"

@@ -47,10 +47,12 @@ The steps to add dynamic content in expressions are as follows:
 
 ## Add dynamic content into emails {#emails}
 
+
 >[!CONTEXTUALHELP]
 >id="ac_conditional_content"
 >title="Conditional content"
 >abstract="Use conditional rules to create multiple variants of a content component. If none of the conditions are met when sending the message, the content from the Default variant will display."
+
 
 >[!CONTEXTUALHELP]
 >id="ac_conditional_content_select"

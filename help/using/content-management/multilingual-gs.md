@@ -12,6 +12,7 @@ exl-id: b57683b4-6dcc-4f6c-a8b2-4ba371d78d21
 ---
 # Get started with multilingual content {#multilingual-gs}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_multi_translation_homepage"
 >title="Translations"
@@ -30,6 +31,7 @@ With Journey Optimizer, you have the possibility to create multilingual content 
 ![](assets/translation_schema.png)
 
 ## Prerequisites {#prerequisites}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_multi_translation_error"

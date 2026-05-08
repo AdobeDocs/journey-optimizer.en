@@ -8,6 +8,7 @@ exl-id: 9ab43b14-41cf-49f1-bdcf-6fee58db5000
 ---
 # Email spam report {#spam-report}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_spam_report"
 >title="Email spam report"

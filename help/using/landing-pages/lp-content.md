@@ -12,6 +12,7 @@ exl-id: 5bf023b4-4218-4110-b171-3e70e0507fca
 ---
 # Define landing page-specific content {#lp-content}
 
+
 >[!CONTEXTUALHELP]
 >id="ac_lp_components"
 >title="Use content components"
@@ -38,11 +39,13 @@ Using the landing page content designer, you can also leverage contextual data c
 
 ## Use the form component {#use-form-component}
 
+
 >[!CONTEXTUALHELP]
 >id="ac_lp_formfield"
 >title="Set the form component fields"
 >abstract="Define how your recipients will see and submit their choices from your landing page."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/landing-pages/landing-pages-design/lp-content#lp-form-styles" text="Define landing page form styles"
+
 
 >[!CONTEXTUALHELP]
 >id="ac_lp_submission"

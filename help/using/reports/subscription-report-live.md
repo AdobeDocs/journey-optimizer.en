@@ -11,6 +11,7 @@ exl-id: 140c858d-9566-403c-a0e7-395437bb4e42
 ---
 # Subscription live report {#subscription-report-live}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_subscription_live_report"
 >title="Subscription live report"

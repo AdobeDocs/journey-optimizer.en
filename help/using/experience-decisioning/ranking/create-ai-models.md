@@ -24,6 +24,7 @@ To access the list of AI models, go to **[!UICONTROL Decisioning]** > **[!UICONT
 
 ## Create an AI model {#create-ranking-strategy}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_ai_model_metric"
 >title="Optimization metric"

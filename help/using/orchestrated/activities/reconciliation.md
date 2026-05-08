@@ -9,20 +9,24 @@ version: Campaign Orchestration
 
 # Reconciliation {#reconciliation}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation"
 >title="Reconciliation activity"
 >abstract="The **Reconciliation** activity is a **Targeting** activity which allows you to define the link between Adobe Journey Optimizer and the data in a work table." 
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_field"
 >title="Reconciliation select field"
 >abstract="Reconciliation select field" 
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_condition"
 >title="Reconciliation create condition"
 >abstract="Reconciliation create condition" 
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_complement"
@@ -37,15 +41,18 @@ The **[!UICONTROL Enrichment]** activity lets you add additional data to your Or
 
 ## Configure the Reconciliation activity {#reconciliation-configuration}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_targeting"
 >title="Targeting dimension"
 >abstract="Select the new targeting dimension. A dimension lets you define the targeted population: recipients, app subscribers, operators, subscribers, etc. By default, the current targeting dimension is selected." 
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_rules"
 >title="Reconciliation rules"
 >abstract="Select reconciliation rules to use for the deduplication. To use attributes, select the **Simple attributes** option and choose the source and destination fields. To create your own reconciliation condition using the rule builder, select the **Advanced reconciliation conditions** option."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_targeting_selection"
@@ -53,10 +60,12 @@ The **[!UICONTROL Enrichment]** activity lets you add additional data to your Or
 >abstract="Select the targeting dimension for your inbound data to reconcile with." 
 >additional-url="https://experienceleague.adobe.com/docs/campaign-web/v8/audiences/gs-audiences-recipients.html#targeting-dimensions" text="Targeting dimensions"
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_keep_unreconciled_data"
 >title="Keep unreconciled data"
 >abstract="By default, non reconciled data are kept in the outbound transition and available in the worktable for future use. To remove unreconciled data, desactivate the **Keep unreconciled data** option." 
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation_attribute"

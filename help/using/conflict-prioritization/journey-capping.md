@@ -18,10 +18,12 @@ Both types of journey capping leverage priority scores to arbitrate entries.
 
 ## Create a journey capping rule {#create-rule}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_concurrency_prioritization"
 >title="Prioritization look ahead"
 >abstract=" If a higher priority journey is scheduled within the time period specified here, then the customer will be suppressed from entering this journey. For situations where you want journeys to be entered into on a first come, first serve basis we suggest choosing the Daily look ahead period and ensuring that the priority score of any other journeys on that day is less than the priority score for the journey. Providing a priority score of 100 to a journey also would ensure that it is entered into."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_rule_type"
@@ -89,6 +91,7 @@ To create a journey capping rule, follow these steps:
 1. When the capping rule is ready to be applied to journeys, activate the rule and the rule set where it has been added. [Learn how to activate rule sets](../conflict-prioritization/rule-sets.md#Create)
 
 ## Apply capping rules to journeys {#apply-capping}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_capping_rule"

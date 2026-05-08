@@ -12,15 +12,18 @@ version: Campaign Orchestration
 
 # Incremental query {#incremental-query}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_incrementalquery"
 >title="Incremental query"
 >abstract="The Incremental query is a Targeting activity that runs a database query every time the Orchestrated campaign runs. It returns only new records and excludes anyone already included in a previous run, so you avoid re-targeting the same people or re-exporting the same rows."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_incrementalquery_processeddata"
 >title="Processed data"
 >abstract="Under Processed data, choose how to exclude records from earlier runs. With the Use a date field option, the activity uses a selected date field instead of tracking individual IDs, and each run returns only rows whose date is after the last execution."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_incrementalquery_history"

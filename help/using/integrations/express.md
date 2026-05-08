@@ -12,6 +12,7 @@ exl-id: c74156bb-4f00-4325-b416-6fe36cb755d1
 ---
 # Edit assets with [!DNL Adobe Express]{#express}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_express_menu"
 >title="Adobe Express integration"

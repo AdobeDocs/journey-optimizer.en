@@ -33,6 +33,7 @@ Before creating ranking formulas, keep the following constraints in mind:
 
 ## Create the ranking formula and set properties {#create-ranking-formula}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_formulas"
 >title="Create ranking formulas"

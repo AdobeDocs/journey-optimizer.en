@@ -18,16 +18,19 @@ Each phase is composed of several runs, to which you assign a single campaign.
 
 ## Define the phases {#define-phases}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_campaigns_excluded"
 >title="Exclude campaign audiences"
 >abstract="Select campaigns to exclude their audiences from the current phase. This prevents previously contacted profiles from being targeted again; only those who have received communication via the journey will be excluded."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_domains_excluded"
 >title="Exclude domain groups"
 >abstract="Select the domains that you want to exclude from the current phase. Domain exclusion requires a non-executed phase, so you may have to split a running phase to add exclusions."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-execution.html#split-phase" text="Split a phase"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_phases"
@@ -111,25 +114,30 @@ To define the phases of your IP warmup plan, you need to select a campaign for e
 
 ## Define the runs {#define-runs}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_run"
 >title="Define each run"
 >abstract="Define and activate each run for all the phases."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_last_engagement"
 >title="Filter on engagement"
 >abstract="This column is a filter that targets only the users engaged with your brand over the last 20 days for example. You can also change this setting through the **Edit run** option."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_retry"
 >title="Set a time window"
 >abstract="You can define a time window during which the IP warmup campaign can be executed in case there is any delays in the segmentation job."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_pause"
 >title="Cancel runs with audience errors"
 >abstract="Select this option to cancel a run if the qualified profiles are less than the targeted profiles once the audience has been evaluated for that run."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_qualified"

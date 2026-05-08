@@ -13,6 +13,7 @@ version: Journey Orchestration
 ---
 # [!DNL Adobe Campaign] v7/v8 actions {#using_campaign_v7-v8} 
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_acc"
 >title="Custom actions"

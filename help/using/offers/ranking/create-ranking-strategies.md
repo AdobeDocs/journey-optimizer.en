@@ -25,6 +25,7 @@ version: Journey Orchestration
 
 ## Create an AI model {#create-ranking-strategy}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_ai_model_metric"
 >title="Optimization metric"

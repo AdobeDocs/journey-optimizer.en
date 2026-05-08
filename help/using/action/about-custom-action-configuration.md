@@ -12,6 +12,7 @@ exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
 ---
 # Configure a custom action {#configure-a-custom-action}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_configuration"
 >title="Custom actions"

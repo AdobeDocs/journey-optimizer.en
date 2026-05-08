@@ -11,16 +11,19 @@ exl-id: 08a546d1-060c-43e8-9eac-4c38945cc3e1
 ---
 # Configure SMS subdomains {#sms-mms-subdomains}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_sms_header"
 >title="Delegate an SMS/MMS subdomain"
 >abstract="Set up your subdomain for text messages (SMS/MMS). You can use a subdomain that is already delegated to Adobe, or configure a new subdomain."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_sms"
 >title="Delegate an SMS/MMS subdomain"
 >abstract="You must configure a subdomain to use for your text messages, as you need this subdomain to create a SMS configuration. You can use a subdomain already delegated to Adobe, or configure a new subdomain."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Create an SMS configuration"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_sms_subdomain"
@@ -83,6 +86,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create SMS channel configurations.
 
 ## Configure a new subdomain {#sms-configure-new-subdomain}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_subdomain_dns"

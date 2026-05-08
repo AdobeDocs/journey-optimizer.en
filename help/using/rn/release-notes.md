@@ -10,6 +10,7 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 ---
 # Release notes {#release-notes}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card1"
 >title="What's new?"

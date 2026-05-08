@@ -13,10 +13,12 @@ version: Journey Orchestration
 ---
 # Create your first journey {#jo-quick-start}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card2"
 >title="Create journeys"
 >abstract="Use **[!DNL Adobe Journey Optimizer]** to build real-time orchestration use cases using contextual data stored in events or data sources."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_create"

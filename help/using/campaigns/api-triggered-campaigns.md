@@ -13,6 +13,7 @@ exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
 
 # Work with API triggered campaigns {#trigger-campaigns}
 
+
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_api_triggered"
 >title="API triggered campaigns"

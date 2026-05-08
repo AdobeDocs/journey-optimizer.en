@@ -12,35 +12,42 @@ exl-id: 5a20911d-cc87-4fdc-9b4b-936c19258876
 ---
 # Create a channel set up {#set-mobile-ios}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_javascript_code"
 >title="Javascript code"
 >abstract="The head tag contains essential metadata and resources that are loaded before the main content of your webpage. Placing code in this section ensures it is properly initialized and executed early, allowing your webpage to load and function efficiently. By adding code to the head section, you help enhance the structure, performance, and overall user experience of your site."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_token"
 >title="Retrieve the device token"
 >abstract="To ensure the device's push token is properly synchronized with your Adobe Experience Platform profile, you need to incorporate the following code into your application. This integration is essential for maintaining up-to-date communication capabilities and ensuring a seamless user experience."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_xcode"
 >title="Launch the application from Xcode"
 >abstract="To obtain your push token, first, launch your application using Xcode. After the application has started, restart it to ensure the validation process is completed. Adobe will then provide your push token as part of the validation results. This token is essential for enabling push notifications and will be displayed once the setup has been successfully validated."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_push_certificate_fcm"
 >title="Provide a push certificate"
 >abstract="Drag and drop your .json private key file. This file contains authentication information required for secure integration and communication between your application and the server."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_certificate"
 >title="Provide a push certificate"
 >abstract="The .p8 key file contains a private key used to authenticate your app with Apple's servers for secure push notifications. You can acquire this key from the Certificates, Identifiers, and Profiles page in your developer account."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_key_id"
 >title="Key ID"
 >abstract="The Key ID, a 10-character string assigned during the creation of the p8 authentication key, can be found under the **Keys** tab on the Certificates, Identifiers, and Profiles page in your developer account."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_push_team_id"

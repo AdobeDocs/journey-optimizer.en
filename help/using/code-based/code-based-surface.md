@@ -11,6 +11,7 @@ exl-id: 07ec74fb-7fbc-48c6-a8fc-f58f24a60723
 
 ## What is a surface? {#surface-definition}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_uri"
 >title="Add the surface URI for your component"

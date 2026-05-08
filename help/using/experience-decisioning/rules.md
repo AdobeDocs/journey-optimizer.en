@@ -10,6 +10,7 @@ version: Journey Orchestration
 ---
 # Build rules {#rules}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_rules"
 >title="Create rules"

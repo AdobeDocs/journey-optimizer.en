@@ -12,6 +12,7 @@ exl-id: 311eb2d1-e445-43e6-bc2c-c6288b637f47
 ---
 # Add a Google TXT record to a subdomain {#google-txt-record}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_google"
 >title="Google TXT records"

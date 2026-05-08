@@ -51,10 +51,12 @@ Learn how to [create a channel action in an Orchestrated campaign](channels.md).
 
 ## Flow control activities {#flow-control}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_end"
 >title="End activity"
 >abstract="The **End** activity allows you to graphically mark the end of an Orchestrated campaign. This activity has no functional impact and is therefore optional."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_signal"
