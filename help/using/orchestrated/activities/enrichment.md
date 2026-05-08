@@ -9,7 +9,6 @@ version: Campaign Orchestration
 
 # Enrichment {#enrichment}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment"
 >title="Enrichment activity"
@@ -21,12 +20,10 @@ You can leverage this information to segment your audience more precisely, based
 
 ## Add an Enrichment activity {#enrichment-configuration}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_targetdata_personalization_enrichmentdata"
 >title="Enrichment data"
 >abstract="Select the data to use to enrich your Orchestrated campaign. You can select two types of enrichment data: a single enrichment attribute from the target dimension, or a collection link, which is a link with a 1-N cardinality between tables."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment_data"
@@ -133,7 +130,6 @@ We now need to apply sorting in order to retrieve the three **latest** purchases
 
 ## Data reconciliation {#reconciliation}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment_reconciliation"
 >title="Reconciliation"
@@ -184,7 +180,6 @@ The example below shows an Orchestrated campaign configured to create a link bet
 
 ## Create links between tables {#create-links}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment_simplejoin"
 >title="Link definition"
@@ -219,7 +214,6 @@ To create a link, follow these steps:
 A workflow example using links is available in the [Examples](#link-example) section.
 
 ## Add offers {#add-offers}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment_offer_proposition"

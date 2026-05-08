@@ -13,7 +13,6 @@ version: Journey Orchestration
 ---
 # Test your journey{#testing_the_journey}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test"
 >title="Test your journey"
@@ -121,7 +120,6 @@ To validate the journey end to end:
 
 ## Trigger your events {#firing_events}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_configuration"
 >title="Configure the test mode"
@@ -182,7 +180,6 @@ When using a [business event](../event/about-events.md), use the test mode to tr
 Note that when you first trigger a business event, you cannot change the business event definition in the same test session. You can only make the same individual or a different individual enter the journey passing the same or another identifier. If you want to change business event parameters, you must stop and start again test mode.
 
 ## View logs {#viewing_logs}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_logs"

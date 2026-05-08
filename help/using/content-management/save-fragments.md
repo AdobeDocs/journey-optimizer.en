@@ -57,7 +57,6 @@ To save content from the Email Designer as fragment, follow these steps:
 
 ## Save as expression fragment {#save-as-expression-fragment}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_perso_library"
 >title="Save as expression fragment"

@@ -10,12 +10,10 @@ version: Journey Orchestration
 ---
 # Create selection strategies {#selection-strategies}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_strategies"
 >title="Define your selection strategies"
 >abstract="A selection strategy is reusable and consists of a collection associated with an eligibility constraint and a ranking method to determine the offers to be shown when selected in a decision policy."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_strategy_eligibility"
@@ -79,7 +77,6 @@ To create a selection strategy, follow the steps below.
 1. Click **[!UICONTROL Create]**. It is now ready to be used in a [decision policy](create-decision.md)
 
 ## Select a ranking method {#select-ranking-method}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_strategy_ranking"

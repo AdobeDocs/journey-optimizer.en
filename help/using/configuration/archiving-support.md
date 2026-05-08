@@ -26,7 +26,6 @@ Regulations such as HIPAA require that [!DNL Journey Optimizer] should provide a
 
 ## How to use BCC for emails {#bcc-email}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_bcc"
 >title="Define a BCC email address"

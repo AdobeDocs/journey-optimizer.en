@@ -16,13 +16,11 @@ To capture profile data with your [!DNL Journey Optimizer] landing pages and enr
 
 ## Create a form preset {#create-form-preset}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_connection"
 >title="Select the endpoint to use"
 >abstract="Define the streaming endpoint where data is sent upon submitting the form."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/streaming/http" text="Create an HTTP API streaming connection"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_dataset"
@@ -94,7 +92,6 @@ All the existing forms are displayed. You can filter forms based on their status
 ![](assets/lp_form-list.png)
     
 ## Create and design a form {#create-form}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_form_preset"
@@ -193,7 +190,6 @@ Once you selected a field attribute or added a custom field, you can further adj
     ![](assets/lp_create-form-field-behaviors.png){width=75%}
 
 ### Configure the Thank you page {#thank-you-page}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_forms_thankyou_page"

@@ -14,12 +14,10 @@ exl-id: e28c038b-49ed-4685-bfe6-514116eb0711
 
 ## Define a web experience through a journey or a campaign {#create-web-experience}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_web_surface"
 >title="Define a web configuration"
 >abstract="A web configuration can match a single page URL or multiple pages, allowing you to deliver content modifications across one or several web pages."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_surface_rule"
@@ -104,13 +102,11 @@ For more information on how to configure a campaign, refer to [this page](../cam
 
 ## Edit web content {#edit-web-content}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"
 >title="Confirm the URL to edit"
 >abstract="Confirm the URL of the specific web page to use for editing the content that will be applied on the web configuration defined above. The web page must be implemented using the Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
@@ -141,7 +137,6 @@ To start authoring your web experience, follow the steps below.
 
 ## Test the web experience {#test-web-experience}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_preview"
 >title="Preview your web experience"
@@ -162,7 +157,6 @@ You can also open it in the default browser, or copy the test URL to paste it in
 Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
 
 ## Redirect to URL {#web-redirect-to-url}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_redirect"

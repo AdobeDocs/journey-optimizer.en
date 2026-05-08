@@ -13,7 +13,6 @@ version: Journey Orchestration
 ---
 # End activity{#end-activity}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_end"
 >title="End activity"

@@ -13,7 +13,6 @@ version: Journey Orchestration
 ---
 # Audience Qualification events {#segment-qualification}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification"
 >title="Audience qualification"
@@ -39,30 +38,25 @@ This type of event can be positioned as the first step or later in the journey.
 
 To configure the **[!UICONTROL Audience Qualification]** activity, follow these steps:
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_label"
 >title="Label"
 >abstract="Add an optional label to identify this activity in reporting and test mode logs."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_audience"
 >title="Audience"
 >abstract="Select the [!DNL Adobe Experience Platform] audience to leverage. The journey listens for profile entrances and exits from this audience."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_behavior"
 >title="Behavior"
 >abstract="Choose whether to listen to audience entrances, exits, or both."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_identity"
 >title="Identity type"
 >abstract="Select the identity type used to identify individuals. Only people-based identity namespaces are available."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_merge_policy"

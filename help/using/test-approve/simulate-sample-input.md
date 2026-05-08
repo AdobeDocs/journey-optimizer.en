@@ -11,7 +11,6 @@ exl-id: 8462c75e-4f4b-4c4f-8734-19efbbc70c7a
 ---
 # Simulate content variations {#custom-profiles}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_sample_profiles"
 >title="Simulate using sample input"

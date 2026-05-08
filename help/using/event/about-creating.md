@@ -12,12 +12,10 @@ exl-id: e22e2bc7-0c15-457a-8980-97bea5da7784
 ---
 # Configure a unitary event {#configure-an-event}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_unitary"
 >title="Unitary events"
 >abstract="The event configuration allows you to define the information Journey Optimizer will receive as events. You can use multiple events (in different steps of a journey) and several journeys can use the same event. Unitary events are linked to a specific profile. They can be rule-based or system-generated."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_parameters"
@@ -105,7 +103,6 @@ The payload definition allows you to choose the information the system expects t
     ![](assets/journey12.png)
 
 ## Select the identity type {#select-the-namespace}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_namespace"

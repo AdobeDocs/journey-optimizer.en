@@ -17,12 +17,10 @@ version: Journey Orchestration
 >
 >Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_new_fallback"
 >title="Fallback offer"
 >abstract="A fallback offer is the default offer displayed when an end user is not eligible for any of the personalized offers."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_fallback_offer_details "

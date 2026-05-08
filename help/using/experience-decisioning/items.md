@@ -10,7 +10,6 @@ version: Journey Orchestration
 ---
 # Create your first decision item {#items}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_exd_items"
 >title="Manage decision items"
@@ -23,7 +22,6 @@ Before creating a decision item, make sure you have created a **decision rule** 
 To create a decision item, navigate to **[!UICONTROL Decisioning]** > **[!UICONTROL Catalogs]**, then click **[!UICONTROL Create item]** then follow the steps detailed in the sections below.
 
 ## Define the decision item's attributes {#attributes}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_priority"
@@ -57,7 +55,6 @@ Start by defining the decision item's standard and custom attributes :
 1. Once the decision item's attributes are defined, click **[!UICONTROL Next]**.
 
 ## Configure the decision item's eligibility {#eligibility}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_constraints"
@@ -95,7 +92,6 @@ When you select audiences or decision rules, you can see information on the esti
 >Profile estimates are unavailable when rule parameters include data not in the profile such as context data. For example, an eligibility rule that requires the current weather to be ≥80 degrees.
 
 ## Set capping rules {#capping}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_expression"

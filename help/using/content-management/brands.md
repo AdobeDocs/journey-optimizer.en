@@ -10,18 +10,15 @@ exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
 ---
 # Create & manage your brands {#brands}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_brand_overview"
 >title="Get started with brands"
 >abstract="Create and customize your own brands to define your unique visual and verbal identity while making it easier to generate content that matches your brand's style and voice."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_brand_ai_menu"
 >title="Select your Brand"
 >abstract="Choose your brand to ensure that all AI-generated content is tailored to align with your brand's specifications and guidelines."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_brand_score_overview"
@@ -69,7 +66,6 @@ To assign permissions for brands, follow these steps:
 +++
 
 ## Create and manage your brand {#create-brand-kit}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_brands_create"

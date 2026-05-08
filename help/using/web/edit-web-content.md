@@ -28,13 +28,11 @@ Access the following sections to learn more on each topic:
 
 ## Work with the web designer {#work-with-web-designer}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"
 >title="Confirm the URL to edit"
 >abstract="Confirm the URL of the specific web page to use for editing the content that will be applied on the web configuration defined above. The web page must be implemented using the Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
@@ -89,7 +87,6 @@ To start authoring your web experience, follow the steps below.
 >The web content designer is mostly similar to the Email Designer. Learn more about [designing content with [!DNL Journey Optimizer]](../email/get-started-email-design.md).
 
 ## Use components {#content-components}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_components"
@@ -146,7 +143,6 @@ This section details the different ways you can navigate through the web designe
 1. Using it you can easily navigate to any parent, sibling, or child element within the visual editor.
 
 ### Swap to browse mode {#browse-mode}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_browse"

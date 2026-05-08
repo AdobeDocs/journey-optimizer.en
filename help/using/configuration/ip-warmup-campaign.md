@@ -12,7 +12,6 @@ exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
 ---
 # Create IP warmup campaigns {#create-ip-warmup-campaign}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_ip_warmup"
 >title="Activate the IP warmup plan option"

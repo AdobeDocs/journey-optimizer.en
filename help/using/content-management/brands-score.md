@@ -8,24 +8,20 @@ exl-id: 01e74670-7431-4791-b98c-12278e6d3332
 ---
 # Brand alignment {#brands-score}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_brand_score"
 >title="Brand Alignment score"
 >abstract="Your Brand Alignment score measures how well your content adheres to your brand's guidelines, ensuring consistency in colors, fonts, logo, imagery and writing style."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_brand_colors"
 >title="Colors score"
 >abstract="Colors score"
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_brand_fonts"
 >title="Fonts score"
 >abstract="Fonts score"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_brand_logos"

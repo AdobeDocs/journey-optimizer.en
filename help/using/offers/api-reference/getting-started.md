@@ -17,12 +17,10 @@ version: Journey Orchestration
 >
 >Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
-
 >[!CONTEXTUALHELP]
 >id="od_api_support"
 >title="New decision management APIs"
 >abstract="New APIs for creation and management of decision management objects are now available. The legacy apis will be supported until 03/27/2024."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_api_support"

@@ -9,7 +9,6 @@ exl-id: 213511b4-7556-4a25-aa23-b50acd11cd34
 ---
 # Manage web modifications {#manage-web-modifications}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_modifications"
 >title="Easily manage all your changes"
@@ -91,7 +90,6 @@ To add a **CSS Selector** type modification, follow the steps below.
         ![](assets/web-designer-add-modification-css-attribute.png)
 
 ### Page `<head>` {#page-head}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_head"

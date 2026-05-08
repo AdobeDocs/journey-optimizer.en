@@ -12,7 +12,6 @@ exl-id: 7ed52b2e-eabf-414f-b169-4b004733dea9
 ---
 # Add metadata to your email content {#email-metadata}
 
-
 >[!CONTEXTUALHELP]
 >id="ac_edition_preheader"
 >title="Define a preheader"

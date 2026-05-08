@@ -11,19 +11,16 @@ exl-id: dd1af8dc-3920-46cb-ae4d-a8f4d4c26e89
 ---
 # Configure landing page subdomains {#lp-subdomains}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_lp_header"
 >title="Delegate a landing page subdomain"
 >abstract="You will be setting up your subdomain for a landing page use. You can use a subdomain that is already delegated to Adobe or configure another subdomain."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_lp"
 >title="Delegate a landing page subdomain"
 >abstract="You must configure a subdomain to use for your landing pages, as you will need this subdomain to create a landing page preset. You can use a subdomain already delegated to Adobe or configure a new subdomain."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/landing-pages/lp-configuration/lp-presets.html#lp-create-preset" text="Create landing page presets"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_lp_subdomain"
@@ -90,7 +87,6 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
 1. Once the checks are successful, the subdomain gets the **[!UICONTROL Success]** status. It is ready to be used to create landing page presets.
 
 ## Configure a new subdomain {#lp-configure-new-subdomain}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_lp_subdomain_dns"

@@ -12,12 +12,10 @@ exl-id: 38e82eb2-67d9-4a7d-8c1f-77dab20bcec4
 ---
 # Create multilingual content with automated translation {#multilingual-automated}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_multi_add_provider"
 >title="Add provider"
 >abstract="Add translation providers and locales as needed. This allows you to manage which providers and locales are active for your project, giving you the flexibility to adjust resources and target audiences based on your current requirements and project scope."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_multi_edit_provider"
@@ -46,12 +44,10 @@ Follow these steps to create multilingual content using automated translation:
 
 ## Create translation project {#translation-project}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_multi_create_project"
 >title="Create Project"
 >abstract="To begin creating multilingual content, start your translation project by identifying the target locale, selecting the appropriate language or regional dialect for your audience. After that, choose a translation provider that aligns with your project's needs."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_multi_edit_project"
@@ -103,12 +99,10 @@ Your Translation project is now created and can be used in a multilingual campai
 
 ## Create language settings {#language-settings}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_multi_custom_conditional"
 >title="Custom conditional settings"
 >abstract="Custom conditional settings are rule sets that determine which locale your content will be displayed in, based on specific criteria. These settings give you control over content display based on factors sych as user location, language preferences, or other contextual elements."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_multi_fallback"
@@ -292,7 +286,6 @@ You can now activate your campaign or journey. Once sent, you can measure the im
 
 ## Manage Insourcing translation project {#manage-ht-project}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_multi_insourcing_project"
 >title="Insourcing translation project"
@@ -316,12 +309,10 @@ If you selected Insourcing when configuring your Language settings, you can tran
 
 ## Review your translation project {#review-translation-project}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_multi_review_project"
 >title="Review your translation project"
 >abstract="Once your chosen translation provider has completed the translation, you can review the results directly within Journey Optimizer. This allows you to assess the accuracy and quality of the translation, ensuring that it aligns with your expectations and project requirements before finalizing it."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_multi_preview_project"

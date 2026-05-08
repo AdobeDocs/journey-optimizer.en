@@ -11,7 +11,6 @@ exl-id: 1f88626a-b491-4b36-8e3f-57f2b7567dd0
 ---
 # Create a SMS/MMS/RCS message {#create-sms}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Create a text message"
@@ -101,7 +100,6 @@ For more information on how to create, configure and activate a campaign, refer 
 >[!ENDTABS]
 
 ## Define your SMS/RCS content{#sms-content}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms_content"

@@ -15,7 +15,6 @@ Once you have created a push notification, you can design its content for iOS, A
 
 ## Title and Body {#push-title-body}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-compose"
 >title="Personalize your push notification."
@@ -30,7 +29,6 @@ Use the device preview section to visualize how the push notification displays o
 Accelerate your content creation with AI Assistant and generate compelling push notification text with [AI Assistant for text generation](../content-management/generative-text.md) or create complete push notifications with [AI Assistant for full content generation](../content-management/generative-full-content.md).
 
 ## On click behavior {#on-click-behavior}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-onclick"
@@ -51,7 +49,6 @@ Configure the action that occurs when recipients tap the body of your push notif
     >For more information on how the Adobe SDK handles deep links and universal links, refer to the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/push-notifications){target="_blank"}.
 
 ## Add media {#add-media-push}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-media"
@@ -110,7 +107,6 @@ Click ![Edit text with the AI assistant](assets/do-not-localize/Smock_ImageAdd_1
 
 ## Add buttons {#add-buttons-push}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-buttons"
 >title="Add buttons for users to interact with your push notification."
@@ -152,7 +148,6 @@ Use the **[!UICONTROL Add Button]** option to define each button's label and ass
 
 ## Send a silent notification {#silent-notification}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_message_push_silent_notification"
 >title="About silent notification"
@@ -170,7 +165,6 @@ Use the **[!UICONTROL Custom data]** section to add key-value pairs.
 
 ## Custom data {#custom-data}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-custom"
 >title="Configure custom data for your push notification."
@@ -185,7 +179,6 @@ You can personalize and optimize the content of your push notifications with **D
 For more information on how to create and use decision policies in push notifications, refer to [this section](../experience-decisioning/create-decision.md).
 
 ## Advanced options {#advanced-options-push}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo-message-push-advanced"

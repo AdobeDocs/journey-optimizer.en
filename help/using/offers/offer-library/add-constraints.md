@@ -17,24 +17,20 @@ version: Journey Orchestration
 >
 >Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
-
 >[!CONTEXTUALHELP]
 >id="od_offer_constraints"
 >title="About offer constraints"
 >abstract="With constraints, you can specify how the offer is prioritized and presented to the user compared to other offers."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_constraints"
 >title="About offer constraints"
 >abstract="With constraints, you can specify how the offer is prioritized and presented to the user compared to other offers."
 
-
 >[!CONTEXTUALHELP]
 >id="od_offer_priority"
 >title="About offer priority"
 >abstract="In this field, you can specify priority settings for the offer. Priority is a number used to rank offers that meet all constraints such as eligibility, dates, and capping."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_priority"
@@ -71,19 +67,16 @@ For example, if you set the following constraints:
 
 ## Eligibility {#eligibility}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_eligibility"
 >title="Define eligibility"
 >abstract="By default, any profile will be eligible to be presented the offer, but you can use audiences or decision rules to restrict the offer to specific profiles."
-
 
 >[!CONTEXTUALHELP]
 >id="od_offer_eligibility"
 >title="About offer eligibility"
 >abstract="In this section, you can use decision rules to determine which users are eligible to the offer."
 <!--additional-url="https://video.tv.adobe.com/v/329373" text="Watch demo video"-->
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_total_profile_estimate"
@@ -142,12 +135,10 @@ Basically, the output of an audience is a list of profiles, whereas a decision r
 
 ## Capping {#capping}
 
-
 >[!CONTEXTUALHELP]
 >id="od_offer_globalcap"
 >title="About offer capping"
 >abstract="In this field, you can specify how many times the offer can be presented."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_capping"
@@ -180,7 +171,6 @@ The number of times an offer is proposed is calculated at email preparation time
 >Capping counters will reset when the offer expires or 2 years after the offer start date, whichever comes first. Learn how to define an offer's date in [this section](creating-personalized-offers.md#create-offer).
 
 ### Capping event {#capping-event}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_frequency_capping_impression"
@@ -251,7 +241,6 @@ For example, you defined a custom capping event such as the number of checkouts 
 
 ### Frequency capping {#frequency-capping}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_frequency_capping"
 >title="Set the capping frequency"
@@ -307,7 +296,6 @@ If you have defined several [representations](add-representations.md) for your o
     For example, if an offer has an **Email** placement and a **Web** placement, and you set the capping at **2 per profile for each placement**, then each profile could receive the offer up to 2 times for the email placement, and an additional 2 times for the web placement.
 
 ### Impact of changing dates on capping {#capping-change-date}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_offer_change_date"

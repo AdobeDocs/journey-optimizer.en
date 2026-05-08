@@ -45,12 +45,10 @@ You can now select this configuration when using the Web channel in your campaig
 
 ## Build a pages matching rule {#web-page-matching-rule}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_page_rule"
 >title="Build a pages matching rule"
 >abstract="To efficiently manage and target a group of URLs that share the same criteria, create a Pages matching rule. This rule enables you to consolidate multiple URLs under one guideline, simplifying the application of consistent settings and actions across these pages."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_default_url"

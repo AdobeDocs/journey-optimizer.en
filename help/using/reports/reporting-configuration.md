@@ -12,12 +12,10 @@ exl-id: 327a0c45-0805-4f64-9bab-02d67276eff8
 ---
 # Reporting & experimentation prerequisites {#reporting-configuration}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_reporting_config"
 >title="Set up datasets for reporting"
 >abstract="The reporting configuration allows you to retrieve additional metrics that will be used in your campaign reports. It must be performed by a technical user."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_reporting_dataset"

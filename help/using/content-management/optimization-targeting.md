@@ -10,7 +10,6 @@ exl-id: ced2248a-e0fb-4fc5-b00b-13972618eeb9
 ---
 # Use targeting {#targeting}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_content_targeting_fallback"
 >title="What is fallback content?"

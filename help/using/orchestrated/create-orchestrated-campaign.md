@@ -13,7 +13,6 @@ Create an Orchestrated campaign in [!DNL Adobe Journey Optimizer] and configure 
 
 ## Create the campaign {#create}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_creation_workflow"
 >title="List of Orchestrated campaigns"
@@ -48,18 +47,15 @@ To create an Orchestrated campaign, follow these steps:
 
 ## Schedule the campaign {#schedule}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_scheduler"
 >title="Scheduler"
 >abstract="As a campaign manager, you can schedule campaigns to automatically launch at specific times, enabling precise timing and accurate targeting data for marketing communications."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_schedule_validity"
 >title="Scheduler validity"
 >abstract="You can define a validity period for the scheduler. It can be permanent (default), or can be valid until a specific date."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_schedule_options"

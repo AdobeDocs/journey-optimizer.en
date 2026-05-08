@@ -12,7 +12,6 @@ exl-id: 9649cc07-3183-4510-b5d9-b1e33eff43e9
 ---
 # Add a CC field to emails {#cc-email-field}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_cc"
 >title="Define a CC email address"

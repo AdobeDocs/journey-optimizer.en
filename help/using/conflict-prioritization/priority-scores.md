@@ -15,12 +15,10 @@ In situations where a customer qualifies for many journeys, campaigns, or commun
 
 ## Assign priority scores to journeys & campaigns {#priority-journey-campaign}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_priority"
 >title="Priority"
 >abstract="Assign a priority score to the campaign. Priority is essential to prioritize a campaign when there is an imposed constraint such as a frequency cap.</br>Enter a numeric value (from 0-100). Please note, the higher the number, the higher the priority. For situations where two campaigns have the same priority score, the campaign which was activated first will be shown."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_priority"
@@ -46,7 +44,6 @@ If you were authoring this campaign and wanted to make sure that this campaign c
 >If two journeys or campaigns have the same priority score, the system does not have a tie-breaking mechanism. Ensure priority scores are unique to avoid conflicts.
 
 ## Assign priority scores to inbound channel actions {#priority-action}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_priority"

@@ -13,7 +13,6 @@ version: Journey Orchestration
 ---
 # Wait activity {#wait-activity}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_wait"
 >title="Wait activity"
@@ -109,7 +108,6 @@ This behavior ensures that downstream activities use current profile information
 Example: If a profile qualifies for a "silver customer" audience at journey start, but upgrades to "gold customer" during a 3-day wait, activities after the wait will see the updated "gold customer" status.
 
 ## Automatic wait node  {#auto-wait-node}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_auto_wait_node "

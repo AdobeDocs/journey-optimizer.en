@@ -9,7 +9,6 @@ version: Campaign Orchestration
 
 # Wait {#wait}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_wait"
 >title="Wait activity"

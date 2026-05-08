@@ -49,7 +49,6 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 
 ## Use folders to manage fragments {#folders}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_fragments_folders"
 >title="Organize your fragments into folders"
@@ -89,7 +88,6 @@ To easily navigate your fragments, you can use folders to organize them more eff
 
 ## Fragments' statuses {#fragments-statuses}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_fragment_statuses"
 >title="New fragments statuses"
@@ -113,12 +111,10 @@ Fragments can have multiple statuses:
 
 ## Edit a fragment {#edit-fragments}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_fragments_update_campaigns"
 >title="Fragments update in campaigns"
 >abstract="This campaign won't be updated if you publish changes to the fragment. It requires a new version to be published so that fragment update functionality can be supported."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_fragments_update_journeys"

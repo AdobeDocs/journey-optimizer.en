@@ -10,18 +10,15 @@ exl-id: fd713864-96b9-4687-91bd-84e3533273ff
 ---
 # Configure a custom provider {#sms-configuration-custom}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_byop_provider_url"
 >title="Provider URL"
 >abstract="Specify the URL of the external API you plan to connect to. This URL serves as the endpoint for accessing the API's features and functionalities."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_byop_header_parameters"
 >title="Header parameters"
 >abstract="Specify the label, type, and value of additional headers to enable proper authentication, content formatting, and effective API communication. "
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_byop_provider_payload"
@@ -115,7 +112,6 @@ To send SMS and RCS messages in Journey Optimizer using a custom provider not av
 After creating and configuring your API credential, you now need to set up [the inbound settings for the Webhook](#webhook) for SMS messages. 
 
 ### Authentication options for custom SMS Providers {#auth-options}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_byop_auth_type"

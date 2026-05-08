@@ -10,7 +10,6 @@ version: Journey Orchestration
 ---
 # Get started with Decisioning {#get-started-experience-decisioning}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_email_enable_experience_decisioning"
 >title="What is decisioning?"

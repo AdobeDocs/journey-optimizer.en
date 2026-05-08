@@ -10,7 +10,6 @@ version: Campaign Orchestration
 
 # Get started with Orchestrated campaigns {#orchestrated-camp}
 
-
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_orchestrated"
 >title="campaigns_overview_orchestrated"

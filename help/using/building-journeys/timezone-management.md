@@ -13,7 +13,6 @@ version: Journey Orchestration
 ---
 # Time zone management {#timezone_management}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_time_zone"
 >title="Journey time zone"
@@ -45,7 +44,6 @@ To do so, in the **[!UICONTROL Journey Properties]** pane, select a time zone.
 ![Timezone selection dropdown in journey properties](assets/journey72.png)
 
 ## Use profile time zone {#timezone-from-profiles}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_profile_time_zone"

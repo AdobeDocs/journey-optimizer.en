@@ -12,7 +12,6 @@ exl-id: 621c4256-449d-4376-96cd-02cbdcd4de05
 ---
 # Get started with email {#get-started-email}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card4"
 >title="Design emails"

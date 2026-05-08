@@ -12,12 +12,10 @@ exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
 ---
 # Set up channel configurations {#set-up-channel-surfaces}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_channel_surfaces"
 >title="Channel configuration"
 >abstract="A channel configuration is a configuration which has been defined by a System Administrator. It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_marketing_action"
@@ -42,18 +40,15 @@ You can also use the guided channel setup to automate and validate channel setup
 
 ## Create a channel configuration {#create-channel-surface}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets_header"
 >title="Channel configuration settings"
 >abstract="When setting up a channel configuration, select the channel it applies to, and define all the technical parameters required for your sending, such as email type, sender name, mobile apps, SMS configuration, and more."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_message_presets"
 >title="Channel configuration settings"
 >abstract="To be able to create actions such as emails from a journey or a campaign, you must first create a channel configuration that defines all the technical settings required for your messages. You must have the Manage messages presets permission to create, edit and delete channel configurations."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_surface_marketing_action"

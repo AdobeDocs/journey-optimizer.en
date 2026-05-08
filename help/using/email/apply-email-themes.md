@@ -13,7 +13,6 @@ exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
 ---
 # Apply themes to your email content {#apply-email-themes}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_use_theme"
 >title="Apply a theme to your email"

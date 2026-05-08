@@ -10,7 +10,6 @@ exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
 ---
 # Design your In-app content {#design-content}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_content"
 >title="Define your In-app content"
@@ -31,7 +30,6 @@ The **[!UICONTROL Advanced formatting]** toggle activates additional options to 
 Once your In-app message is created, and its content defined and personalized, you can review and activate it. Notifications will then be sent according to the campaign schedule. Learn more on [this page](send-in-app.md).
 
 ## Message layout {#message-layout}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_message_layout"
@@ -68,7 +66,6 @@ From the **Content** tab, you can define and personalize the content of the noti
 
 ### Close button {#close-button}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_close"
 >title="Choose the Style of your Close button."
@@ -92,7 +89,6 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can check t
 
 ### Media {#add-media}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_media"
 >title="Add media to your In-app message to create a compelling experience for end user."
@@ -112,7 +108,6 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can customi
 +++
 
 ### Content {#title-body}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_content"
@@ -136,7 +131,6 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 +++
 
 ### Buttons {#add-buttons}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_buttons"
@@ -177,7 +171,6 @@ From the **Settings** tab, you can define the message layout and preview your In
 
 ### Preview {#preview-tab}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_preview"
 >title="Preview your In-app message."
@@ -199,7 +192,6 @@ The **[!UICONTROL App Preview]** allows you to add a background behind your In-a
 
 ### Layout {#layout-options}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_layout"
 >title="Define the message layout of your In-app message."
@@ -214,7 +206,6 @@ The **[!UICONTROL Background image]** field allows you to add a background to yo
 * A background color.
 
 ### Message {#message-tab}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_authoring_message_advanced"

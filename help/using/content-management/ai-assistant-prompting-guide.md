@@ -10,7 +10,6 @@ exl-id: f931372e-6cf2-4f27-b12a-ed5ca0c1b87b
 ---
 # AI Assistant prompt best practices {#ai-assistant-prompting-guide}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_ai_assistant_prompt"
 >title="Prompt examples"

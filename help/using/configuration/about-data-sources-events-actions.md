@@ -12,7 +12,6 @@ exl-id: c144d44f-031f-4ca2-800e-d3878af400a5
 ---
 # Get started with journeys configuration {#configure-journeys}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_configuration_dashboard"
 >title="About journey configuration"

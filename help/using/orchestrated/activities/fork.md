@@ -9,12 +9,10 @@ version: Campaign Orchestration
 
 # Fork {#fork}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_fork"
 >title="Fork activity"
 >abstract="The **Fork** activity allows you to create outbound transitions to start several activities at the same time."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_fork_transitions"

@@ -9,12 +9,10 @@ version: Campaign Orchestration
 
 # Change dimension {#change-dimension}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_dimension_complement"
 >title="Generate a complement"
 >abstract="You can generate an additional outbound transition with the remaining population, which was excluded as a duplicate. To do this, toggle on the **Generate complement** option"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_change_dimension"

@@ -18,7 +18,6 @@ Use the condition activity to route profiles to different paths based on rules a
 
 ## Add a condition activity {#add-condition-activity}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_condition"
 >title="Condition activity"
@@ -47,7 +46,6 @@ You can also base a condition on audience membership. See these sections:
 >Condition evaluation will fail for profiles that include more than two cross-device identities in the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
 
 ## Add and manage condition paths {#about_condition}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_simple"

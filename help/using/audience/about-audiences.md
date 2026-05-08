@@ -12,12 +12,10 @@ exl-id: 10d2de34-23c1-4a5e-b868-700b462312eb
 
 # Get started with audiences {#about-segments}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment_segment"
 >title="Audience"
 >abstract="By leveraging Real-Time Customer Profile data, Adobe Experience Platform enables you to easily build segment definitions to create targeted audiences that capture the unique behaviors and preferences of your customers."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_audience"

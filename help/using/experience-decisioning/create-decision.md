@@ -10,13 +10,11 @@ version: Journey Orchestration
 ---
 # Get started with decision policies {#create-decision}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_decision"
 >title="What is a decision?"
 >abstract="Decision policies contain all of the selection logic for the decisioning engine to pick the best content. Decision policies are campaign specific. Their goal is to select the best offers for each profile while the campaign authoring allows you to indicate how the selected decision items should be presented, including which item attributes to be included in the message."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="About Decisioning"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_decision_policy"
@@ -24,18 +22,15 @@ version: Journey Orchestration
 >abstract="A decision policy allows you to pick the best items from the Decisioning engine and deliver them to the right audience."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning" text="About Decisioning"
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_exd_decision_policy"
 >title="Decision policy"
 >abstract="A decision policy allows you to pick the best items from decision engine and deliver to each audience."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_exd_placements"
 >title="Placement"
 >abstract="A placement determines where returned items from the decision engine appear in a message. You can track their performance across different placements in reporting."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_decision_attribute"

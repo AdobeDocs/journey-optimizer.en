@@ -12,12 +12,10 @@ exl-id: 27442cb0-5027-4d9c-9d3c-9ec33af7c9ff
 ---
 # Manage dark mode content {#dark-mode}
 
-
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode"
 >title="Switch to dark mode"
 >abstract="Switch to dark mode where you can preview how it may render, and define specific custom settings. <br>The final rendering depends on the recipient's email client. Note that all email clients do not support custom dark mode."
-
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode_preview"
@@ -166,7 +164,6 @@ Here you can see that we have applied a different background, defined another im
 -->
 
 ### Define custom dark mode {#define-custom-dark-mode}
-
 
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode_image"

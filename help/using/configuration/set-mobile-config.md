@@ -12,12 +12,10 @@ exl-id: 846e0d11-798b-4f3b-80db-848a17d32830
 ---
 # Get started with Guided channel setup {#set-mobile-config}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_name"
 >title="Mobile and web configuration name"
 >abstract="Enter the name of your mobile or web configuration. This name will be used for every resource automatically created with the Guided Channel Setup."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_validate_assurance"

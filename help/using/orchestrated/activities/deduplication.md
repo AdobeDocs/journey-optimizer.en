@@ -9,24 +9,20 @@ version: Campaign Orchestration
 
 # Deduplication {#deduplication}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_deduplication_fields"
 >title="Fields to identify duplicates"
 >abstract="In the **Fields to identify duplicates** section, click the **Add attribute** button to specify the fields for which the identical values allow the duplicates to be identified, such as: email address, first name, last name, etc. The order of the fields allows you to specify those to process first."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_deduplication"
 >title="Deduplication activity"
 >abstract="The **Deduplication** activity allows you to delete duplicates in the results of the inbound activities. It is mostly used following targeting activities, and before activities that allow the use of targeted data."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_deduplication_complement"
 >title="Generate a complement"
 >abstract="You can generate an additional outbound transition with the remaining population, which was excluded as a duplicate. To do this, toggle on the **Generate complement** option"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_deduplication_settings"

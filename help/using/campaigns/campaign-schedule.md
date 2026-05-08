@@ -25,7 +25,6 @@ When scheduling campaigns in [!DNL Adobe Journey Optimizer], ensure your start d
 
 ## Send at recipient's local time {#profile-timezone}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule_profile_timezone"
 >title="Use profile timezone"

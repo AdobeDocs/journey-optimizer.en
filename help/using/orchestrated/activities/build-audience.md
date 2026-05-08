@@ -9,7 +9,6 @@ version: Campaign Orchestration
 
 # Build audience {#build-audience}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_build_audience"
 >title="Build audience activity"
@@ -20,7 +19,6 @@ As a marketer, you can create complex audience segments through an intuitive int
 To do this, use the **[!UICONTROL Build audience]** targeting activity. This activity defines the audience that enters the Orchestrated campaign. When sending messages as part of an Orchestrated campaign, the audience is defined in the **[!UICONTROL Build audience]** activity, not within the Orchestrated campaign.
 
 ## Configure the Build audience activity {#build-audience-configuration}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_build_audience_audienceselector"
