@@ -10,10 +10,12 @@ exl-id: 6b438268-d983-4ab8-9276-c4b7de74e6bd
 ---
 # Create a direct mail message {#create-direct}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_direct_mail"
 >title="Direct mail creation"
 >abstract="Create direct mail messages in scheduled campaigns and journeys and design the extraction files required by direct mail providers to send mail to your customers."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_direct_mail"
@@ -91,10 +93,12 @@ You can now start configuring the extraction file to send to your direct mail pr
 
 ## Configure the extraction file {#extraction-file}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_direct_mail_data_fields"
 >title="Data Fields"
 >abstract="Add and configure the columns and the information to be displayed in the extraction file required by direct mail providers to send mail to your customers. You can add up to 50 columns."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_direct_mail_formatting"

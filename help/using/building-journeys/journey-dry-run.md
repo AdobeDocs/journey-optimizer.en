@@ -12,10 +12,12 @@ version: Journey Orchestration
 ---
 # Journey Dry run {#journey-dry-run}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dry_run"
 >title="Dry run mode"
 >abstract="This journey is in Dry run. Journey Dry run is a special journey publication mode in [!DNL Adobe Journey Optimizer] that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information.  This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live."
+
 
 
 >[!CONTEXTUALHELP]

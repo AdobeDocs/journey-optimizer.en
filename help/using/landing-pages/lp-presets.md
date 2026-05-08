@@ -11,6 +11,7 @@ exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
 ---
 # Define landing page presets {#lp-presets}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_lp_subdomain_header"
 >title="Create a landing page preset"

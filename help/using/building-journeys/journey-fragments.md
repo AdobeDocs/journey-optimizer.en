@@ -40,6 +40,7 @@ You can filter the list by fragment name, status, creation date, creator, last m
 
 ## Create a journey fragment {#create-journey-fragment}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_fragment_create_canvas"
 >title="Save as a journey fragment"
@@ -84,6 +85,7 @@ To create a fragment directly from the inventory:
 >[!ENDTABS]
 
 ## Edit a fragment {#edit-journey-fragment}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_fragment_properties"
@@ -137,6 +139,7 @@ From the fragment inventory, you can perform the following actions on a fragment
 * **[!UICONTROL Edit tags]**: add or remove tags of a fragment, from the **[!UICONTROL More actions]** (...) icon.
 
 ## Use a fragment in a journey {#use-journey-fragment}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_fragment_add"

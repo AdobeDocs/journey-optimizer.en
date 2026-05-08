@@ -24,10 +24,12 @@ The main steps to create landing pages are as follows:
 
 ## Create a landing page {#create-landing-page}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_lp_create"
 >title="Define and configure your landing page"
 >abstract="To create a landing page, you need to select a preset, then configure the primary page and subpages, and finally test your page before publishing it."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_management_labels"
@@ -80,6 +82,7 @@ Once you configured and designed the [primary page](#configure-primary-page), an
 
 ## Configure the primary page {#configure-primary-page}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_lp_primary_page"
 >title="Define your primary page settings"
@@ -87,6 +90,7 @@ Once you configured and designed the [primary page](#configure-primary-page), an
 <!--
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/landing-pages/landing-pages-design/design-lp.html" text="Design the landing page content"
 -->
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_settings"
@@ -151,11 +155,13 @@ To define the primary page settings, follow the steps below.
 
 ## Configure subpages {#configure-subpages}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_lp_subpage"
 >title="Define the subpage settings"
 >abstract="You can add up to 2 subpages. For example, you can create a 'thank you' page that will display once the users submit the form, and you can define an error page that will be called if a problem occurs with the landing page."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/landing-pages/landing-pages-design/design-lp" text="Design the landing page content"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_lp_access_settings-subpage"
@@ -187,6 +193,7 @@ To define the subpage settings, follow the steps below.
 ![](assets/lp_subpage-settings.png)
 
 ## Test the landing page {#test-landing-page}
+
 
 >[!CONTEXTUALHELP]
 >id="ac_preview_lp_profiles"

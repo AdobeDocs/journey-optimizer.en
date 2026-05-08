@@ -13,15 +13,18 @@ version: Journey Orchestration
 ---
 # Send-Time Optimization{#send-time-optimization}
 
+
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_disabled"
 >title="About Sent time optimization"
 >abstract="[!DNL Adobe Journey Optimizer]'s Send-Time Optimization feature, powered by Adobe's AI services, can predict the best time to send an email or push message to maximize engagement based on historical open and click rates."
 
+
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_email"
 >title="Activate Send-Time Optimization"
 >abstract="Choose whether to optimize on email opens or email click-throughs by selecting the appropriate radio button. You can also choose to bracket the send times used by the system by entering a value for the Send within the next option."
+
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_push"

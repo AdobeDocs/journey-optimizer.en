@@ -34,6 +34,7 @@ Before creating a decision, make sure that the components below have been create
 
 ## Create the decision {#create-activity}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_details"
 >title="Offer decision details"
@@ -51,15 +52,18 @@ Before creating a decision, make sure that the components below have been create
 
 ## Define decision scopes {#add-decision-scopes}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_scopes"
 >title="Decision scopes"
 >abstract="Configure one or multiple scopes for the offer decision to determine the offers to be shown. This is done by selecting a placement and an associated evaluation criteria for this placement."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_placement"
 >title="Placement"
 >abstract="Select a placement where offers would be delivered."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_evaluation"
@@ -307,6 +311,7 @@ The selection is as follows:
 +++
 
 ## Add a fallback offer {#add-fallback}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_fallback"

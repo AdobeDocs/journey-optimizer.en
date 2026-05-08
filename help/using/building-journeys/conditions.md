@@ -13,6 +13,7 @@ version: Journey Orchestration
 ---
 # Conditions {#conditions}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_conditions"
 >title="Conditions"
@@ -52,6 +53,7 @@ To add a condition to your journey, follow the steps below.
 >Condition evaluation will fail for profiles that include more than two cross-device identities in the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
 
 ## Manage condition paths {#condition_paths}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_simple2"

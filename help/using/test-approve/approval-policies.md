@@ -8,10 +8,12 @@ exl-id: e518cb3c-f361-43a4-b9a5-ec070c612e75
 ---
 # Create & manage approval policies {#approval-policies}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_request_approval"
 >title="Request approval"
 >abstract="Request approval"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_request_change"
@@ -28,10 +30,12 @@ You can target approval policies using flexible criteria such as tags, campaign/
 
 ## Create approval policies {#create-policies}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_permissions_approval_policy"
 >title="New approval policy"
 >abstract="In this screen, enter the name and select the context for the approval policy, then build the conditions to determine who can initiate the approval request and who can validate it."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_self_approval"

@@ -66,6 +66,7 @@ In the **[!UICONTROL Structure]** tab, define how your challenge is organized: i
 
 ### Define the challenge properties and use custom metadata {#properties}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_properties"
 >title="Challenge properties"
@@ -81,6 +82,7 @@ In the **[!UICONTROL Structure]** tab, define how your challenge is organized: i
    ![](assets/challenge-create-properties.png)
 
 ### Schedule the challenge {#schedule}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_schedule"
@@ -106,6 +108,7 @@ Configure when your challenge runs:
 The challenge schedule is now configured. Next, add the tasks that customers need to complete.
 
 ### Add tasks {#add-tasks}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_tasks"
@@ -162,6 +165,7 @@ After adding tasks to your challenge, configure the rewards customers will earn 
 
 ### Configure rewards {#rewards}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_rewards"
 >title="Rewards"
@@ -211,6 +215,7 @@ After configuring the challenge structure with tasks and rewards, design the con
 
 ## Configure content cards {#configure-content-cards}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_content"
 >title="Content"
@@ -231,6 +236,7 @@ To configure content cards for your challenge:
 After configuring the content card, set up messaging to engage customers throughout the challenge lifecycle.
 
 ### Configure messaging {#configure-messaging}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_messaging"
@@ -258,6 +264,7 @@ Learn how to create messages for specific channels in these sections: [In-app me
 After completing the messaging configuration, define which customers are eligible to participate in the challenge.
 
 ## Select the challenge audience {#audience}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_audience"

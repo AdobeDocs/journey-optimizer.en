@@ -11,6 +11,7 @@ exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
 ---
 # Create a push notification {#create-push-notification}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_message_push"
 >title="Push message creation"
@@ -115,6 +116,7 @@ For more information on how to create, configure and activate a campaign, refer 
 * [Add a message in a journey](../building-journeys/journey-action.md)
 
 ## Rapid delivery mode {#rapid-delivery}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_rapid_delivery"

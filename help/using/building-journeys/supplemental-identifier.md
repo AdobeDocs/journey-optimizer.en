@@ -6,6 +6,7 @@ version: Journey Orchestration
 ---
 # Use supplemental identifiers in journeys {#supplemental-id}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
 >title="Use supplemental identifier"

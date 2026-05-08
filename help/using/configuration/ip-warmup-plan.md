@@ -252,11 +252,13 @@ Each domain now displays in a different column on the same row.
 
 ## Create an IP warmup plan {#create-ip-warmup-plan}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_upload"
 >title="Specify your IP warmup plan"
 >abstract="Fill in the Excel template with all the data that will feed your plan, such as IP warmup phases and target number of profiles, and upload it here."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/implement-ip-warmup-plan/ip-warmup-plan.html#prepare-file" text="Prepare the IP warmup plan file"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_warmup_surface"

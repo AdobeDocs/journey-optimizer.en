@@ -45,6 +45,7 @@ Two types of implementations are supported to enable authoring and delivery of w
 
 ## Visual authoring prerequisites {#visual-authoring-prerequisites}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_web_browser_extension"
 >title="Build a pages matching rule"

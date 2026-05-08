@@ -12,6 +12,7 @@ exl-id: 7f0cda1d-daf0-4d4c-9978-ddef81473813
 ---
 # Get started with custom actions {#about_actions}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_list"
 >title="Custom actions"

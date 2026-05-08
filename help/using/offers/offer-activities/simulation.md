@@ -17,6 +17,7 @@ version: Journey Orchestration
 >
 >Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_simulation"
 >title="Simulate offer decisions"
@@ -47,6 +48,7 @@ To access this feature, select the **[!UICONTROL Simulation]** tab from the **[!
 -->
 
 ## Select test profiles {#select-test-profiles}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_simulation_test_profile"

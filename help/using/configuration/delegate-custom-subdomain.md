@@ -43,6 +43,7 @@ To set up a custom subdomain, follow the steps below.
 
 ## Create the DNS records {#create-dns-records}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_custom_dns"
 >title="Generate the matching DNS records"
@@ -60,10 +61,12 @@ To set up a custom subdomain, follow the steps below.
 
 ## Upload the SSL Certificate {#upload-ssl-certificate}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_custom-ssl"
 >title="Generate the Certificate Signing Request"
 >abstract="When setting up a new custom subdomain, you need to generate the Certificate Signing Request (CSR), fill it and send it to the Certificate Authority to get the SSL certificate that you need to upload to Journey Optimizer."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_key_length"
@@ -118,6 +121,7 @@ To set up a custom subdomain, follow the steps below.
 -->
 
 ## Complete the feedback loop steps {#feedback-loop-steps}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_feedback-loop"

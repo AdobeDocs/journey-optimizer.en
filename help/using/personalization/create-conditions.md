@@ -34,10 +34,12 @@ Conditional rules are created from the **[!UICONTROL Conditions]** menu within t
 
 ## Create a conditional rule {#create-condition}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_expression_editor_conditions_create"
 >title="Create condition"
 >abstract="Combine profile attributes, contextual events or audiences to build rules that define which content should be displayed in your messages."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_expression_editor_conditions"

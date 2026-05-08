@@ -10,11 +10,13 @@ exl-id: 98e99978-8538-40b4-92ac-7184864017eb
 # Work with the web designer {#work-with-web-designer}
 
 <!--
+
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"
 >title="Confirm the URL to edit"
 >abstract="Confirm the URL of the specific web page to use for editing the content that will be applied on the web configuration defined above. The web page must be implemented using the Adobe Experience Platform Web SDK."
 >additional-url="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" text="Learn more"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_rule"
@@ -73,6 +75,7 @@ Once you edited your web content, you can manage your modifications. [Learn more
 
 ## Use components {#content-components}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_components"
 >title="Add components to your web page"
@@ -128,6 +131,7 @@ This section details the different ways you can navigate through the web designe
 1. Using it you can easily navigate to any parent, sibling, or child element within the visual editor.
 
 ### Swap to browse mode {#browse-mode}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_browse"

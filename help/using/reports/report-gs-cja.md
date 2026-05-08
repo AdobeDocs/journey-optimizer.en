@@ -11,6 +11,7 @@ exl-id: bfd88d2a-e7b8-4e3b-85a1-4a14b0ba56dc
 ---
 # Get started with all time report {#channel-report-gs-cja}
 
+
 >[!CONTEXTUALHELP]
 >id="cja_connections_enable_cja"
 >title="Enable Customer Journey Analytics"

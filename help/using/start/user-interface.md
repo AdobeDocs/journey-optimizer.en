@@ -209,10 +209,12 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 <!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS SKU only-->
 
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_oc_campaign_ovv_1"
 >title="Campaign orchestration"
 >abstract="Split, combine, enrich and manipulate relational datasets to define your audience"
+
 
 
 
@@ -223,10 +225,12 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 
 
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_oc_campaign_ovv_3"
 >title="Ad-hoc segmentation & exact counts"
 >abstract="Build your segment step by step with exact counts"
+
 
 
 
@@ -238,10 +242,12 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 <!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
 
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_oc_jo_campaign_ovv_1"
 >title="Guided UI to create and send a campaign"
 >abstract="Set one or multiple actions with a channel, choose an audience, set the content, define a schedule and you are ready to send"
+
 
 
 >[!CONTEXTUALHELP]
@@ -253,20 +259,24 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 <!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS - API triggered tab -->
 
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_oc_api_campaign_ovv_1"
 >title="Transactional API triggered campaigns"
 >abstract="Trigger real-time messages through API calls"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_oc_api_campaign_ovv_2"
 >title="Marketing messages"
 >abstract="Promotional content (requires opt-in, subject to business rules)"
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_oc_api_campaign_ovv_3"
 >title="Transactional messages"
 >abstract="Service-related content (confirmation, alerts, not subject to marketing consent)"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_oc_api_campaign_ovv_4"
@@ -276,30 +286,36 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 <!--APPROVAL POLICIES-->
 
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_edit_disabled"
 >title="Edit disabled"
 >abstract="Edit disabled (campaigns)"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_edit_disabled"
 >title="Edit disabled"
 >abstract="Edit disabled (journeys)"
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_approval_status"
 >title="Approval status"
 >abstract="Approval status"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_approve"
 >title="Approve"
 >abstract="Approve (campaigns)"
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_approve"
 >title="Approve"
 >abstract="Approve (journeys)"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_simulation"
@@ -308,45 +324,54 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 
 <!-- WEBHOOKS -->
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_channels_feedback_webhook_settings"
 >title="Enable webhooks"
 >abstract="Enable webhooks to receive real-time feedback on the execution status of your messages. Before activating this option, make sure you have configured a webhook in the **Administration** / **Channels** / **Feedback Webhook** menu."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_channels_feedback_webhook_settings_create"
 >title="Feedback Webhooks"
 >abstract="Feedback webhooks allows you to receive real-time feedback on the execution status of messages sent with transactional API triggered campaigns. Only one webhook configuration per Organization + sandbox combination is allowed."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_channels_feedback_webhook_settings_configuration"
 >title="Basic Configuration"
 >abstract="In this section, enter a descriptive name to identify the webhook and select the channel(s) for which this webhook should receive feedback (Email and/or SMS). In the Webhook URL field, provide the HTTPS endpoint where feedback events must be delivered."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_channels_feedback_webhook_settings_authentication"
 >title="Authentication"
 >abstract="If your endpoint requires JWT authentication, select **JWT Authentication** from the list and provide the required details."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_channels_feedback_webhook_settings_header_parameters"
 >title="Header Parameters"
 >abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_aem_content_fragment_configuration"
 >title=""AEM Configuration Help"
 >abstract="Learn more about creating and managing a configuration"
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_aem_configure_instance"
 >title="Instance Configuration"
 >abstract="Select the appropriate instance configuration type for your setup. </br>Author only setup: Use content fragments from the AEM author instance. Publish instance configuration and live updates are not supported.</br>Publish instance setup: Configure publish instance settings. Optionally enable "Send token to publish instance" to provide Service Credentials for authentication."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_aem_send_token"
 >title="Send token to publish instance"
 >abstract="When enabled, Service Credentials are sent to authenticate requests to the publish instance. Provide a valid Service Credential JSON below."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_aem_service_credential"
@@ -354,12 +379,14 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >abstract="Paste your AEM service credential JSON after creating them by going through the public technical account documentation. It will be automatically formatted and validated."
 >additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#create-a-technical-account"
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_aem_custom_domain"
 >title="Custom domain"
 >abstract="Optional. Provide a custom domain ifpublish-p16552-e147195.adobeaemcloud.comis blocked from fetching content for your org"
 
 <!-- JOURNEYS - EXPRESSION ASSISTANT -->
+
 
 >[!CONTEXTUALHELP]
 >id="journeyExpAI"

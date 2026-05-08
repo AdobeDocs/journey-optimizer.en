@@ -13,10 +13,12 @@ version: Journey Orchestration
 ---
 # General events {#general-events}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_custom"
 >title="Unitary events"
 >abstract="Events allow you to trigger your journeys unitarily to send messages, in real-time, to the individual flowing into the journey. For this type of event, you can only add a label and a description. The event configuration is performed by a data engineer and cannot be edited."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_business_canvas"

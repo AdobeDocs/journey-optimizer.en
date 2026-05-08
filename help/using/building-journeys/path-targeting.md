@@ -13,6 +13,7 @@ badge: label="Limited Availability" type="Informative"
 ---
 # Leverage path targeting {#targeting}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_path_targeting_fallback"
 >title="What is fallback path?"

@@ -16,10 +16,12 @@ For increased flexibility and control over your email settings, [!DNL Journey Op
 
 ## Add dynamic subdomains {#dynamic-subdomains}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_surface_perso_not_available"
 >title="Personalization not available"
 >abstract="This configuration was created without any personalization attributes. Refer to the documentation for steps to solve if personalization is required."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_surface_dynamic_subdomain"

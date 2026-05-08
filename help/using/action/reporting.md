@@ -11,6 +11,7 @@ exl-id: 908f553a-6d2b-45e5-bdb2-eb685f5e1165
 ---
 # Monitor your custom actions {#reporting}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_custom_actions_monitor"
 >title="Monitor your custom actions"

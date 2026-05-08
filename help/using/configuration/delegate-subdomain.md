@@ -12,11 +12,13 @@ exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
 ---
 # Delegate a subdomain {#delegate-subdomain}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname"
 >title="Subdomain delegation"
 >abstract="Journey Optimizer allows you to delegate your subdomains to Adobe. You can fully delegate a subdomain to Adobe, which is the recommended method. </br>You can also create a subdomain using CNAMEs to point to Adobe-specific records, but this approach requires you to maintain and manage DNS records on your own."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/delegate-subdomains/about-subdomain-delegation#subdomain-delegation-methods" text="Subdomain configuration methods"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname_header"
@@ -79,6 +81,7 @@ You can:
 >Subdomain configuration is **common to all environments**. Therefore any modification to a subdomain will also impact the production sandboxes.
 
 ## Set up a subdomain in Journey Optimizer {#set-up-subdomain}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns"
@@ -143,10 +146,12 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
 ## Set up a subdomain with CNAMEs {#cname-subdomain-setup}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_dns_cname"
 >title="Generate the matching DNS and validation records"
 >abstract="To delegate a subdomain using CNAMEs, you need to copy-paste the Adobe nameserver information and the SSL CDN URL validation record displayed in the Journey Optimizer interface into your hosting platform. Once the checks are successful, the subdomain is ready to be used to deliver messages."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_cdn_cname"

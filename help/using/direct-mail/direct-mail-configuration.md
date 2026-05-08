@@ -29,31 +29,37 @@ Before being able to generate this file, you need to create:
 
 ## Configure file routing {#file-routing-configuration}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details"
 >title="Define the file routing configuration"
 >abstract="After you create a direct mail message, the file containing the targeted audience data will be generated and exported to a server. You need to specify the server details so that your direct mail provider can access and use that file for delivering direct mail."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/create-direct-mail" text="Create a direct mail message"
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_details_header"
 >title="Define the file routing configuration"
 >abstract="You need to define where the file will be exported for your direct mail provider to use."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_select_file_routing"
 >title="File routing configuration"
 >abstract="Select the file routing configuration of your choice, which defines where the file will be exported for your direct mail provider to use."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_type"
 >title="Select the server type for your file"
 >abstract="Choose which type of server you want to use for exporting your direct mail files: Amazon S3, SFTP, Azure, or Data Landing Zone."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_aws_region"
 >title="Choose the AWS region"
 >abstract="Select the geographic region of the AWS server where you want to export your direct mail files. As a general practice, it is preferred to choose the closest region to your direct mail provider's location."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_file_routing_frequency"
@@ -194,6 +200,7 @@ For more information on connecting your SFTP account to Experience Platform, ref
 
 ## Create a direct mail configuration {#direct-mail-surface}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_settings"
 >title="Define the direct mail settings"
@@ -201,11 +208,13 @@ For more information on connecting your SFTP account to Experience Platform, ref
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/direct-mail/direct-mail-configuration#file-routing-configuration" text="Configure file routing"
 
 <!--
+
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_sort"
 >title="Define the sort order"
 >abstract="If you select this option, the sort will be by profile ID, ascending or descending. If you unselect it, the sorting configuration defined when creating the direct mail message within a journey or a campaign."
 -->
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_dm_surface_split"

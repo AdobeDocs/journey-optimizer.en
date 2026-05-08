@@ -13,6 +13,7 @@ version: Journey Orchestration
 ---
 # Use the Action activity {#add-a-message-in-a-journey}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_action_activity"
 >title="Action activity"
@@ -228,6 +229,7 @@ For in-app messages, you can use the **[!UICONTROL Edit triggers]** button to ch
 +++
 
 ## Add multiple inbound actions {#multi-action}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_multi_action_journey"

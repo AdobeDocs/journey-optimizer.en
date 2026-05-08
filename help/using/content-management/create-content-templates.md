@@ -11,6 +11,7 @@ exl-id: a205539b-b7ea-4832-92b0-49637c4dac47
 ---
 # Create content templates {#create-content-templates}
  
+
 >[!CONTEXTUALHELP]
 >id="ajo_create_template"
 >title="Define your own content template"

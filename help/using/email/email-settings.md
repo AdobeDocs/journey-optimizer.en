@@ -36,6 +36,7 @@ The email configuration gets picked up for sending communications following the 
 
 ## Email type {#email-type}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_emailtype"
 >title="Define the email type"
@@ -112,6 +113,7 @@ You can add a visible CC (carbon copy) recipient to emails sent by [!DNL Journey
 
 ## Sending to suppressed email addresses {#send-to-suppressed-email-addresses}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_surface_suppressed_addresses"
 >title="Override suppression list precedence"
@@ -142,6 +144,7 @@ Once this option is enabled, although a customer marked your marketing email as 
 
 ## Seed list {#seed-list}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_surface_seed_list"
 >title="Add a seed list"
@@ -164,6 +167,7 @@ When the current configuration is used in a campaign or journey, the email addre
 Learn how to use seed list in a campaign or a journey in [this section](../configuration/seed-lists.md#use-seed-list).
 
 ## Email retry parameters {#email-retry}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_presets_retryperiod"

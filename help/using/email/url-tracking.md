@@ -12,10 +12,12 @@ exl-id: 5a12280c-b937-4cd9-a1ef-563bab48e42e
 ---
 # URL tracking {#url-tracking}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_utm"
 >title="Define URL tracking parameters"
 >abstract="Use this section to automatically append tracking parameters to the URLs present in your email content. This feature is optional."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_url_preview"

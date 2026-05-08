@@ -12,6 +12,7 @@ exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
 ---
 # External data sources {#external-data-sources}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_custom"
 >title="External data sources"
@@ -112,6 +113,7 @@ In case of a GET call requiring parameter(s), you enter the parameter(s) in the 
 Once your changes are saved, the data source is configured and ready to be used in your journeys, for example in your conditions or to personalize an email. If the temperature is above 30°C, you can decide to send a specific communication.
 
 ## Custom authentication mode {#custom-authentication-mode}
+
 
 >[!CONTEXTUALHELP]
 >id="jo_authentication_payload"

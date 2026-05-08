@@ -13,6 +13,7 @@ version: Journey Orchestration
 ---
 # Browse & filter your journeys {#browse-journeys}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_view"
 >title="Journeys list and calendar views"

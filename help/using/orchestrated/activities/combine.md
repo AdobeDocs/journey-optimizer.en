@@ -9,6 +9,7 @@ version: Campaign Orchestration
 
 # Combine {#combine}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_combine"
 >title="Combine activity"
@@ -26,15 +27,18 @@ The following segmentation options are available:
 
 ## Configure the Combine activity {#combine-configuration}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_intersection_merging_options"
 >title="Intersection merging options"
 >abstract="The intersection allows you to keep only the elements common to the different inbound populations in the activity. In the Sets to join section, check all the previous activities you wish you join."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_exclusion_merging_options"
 >title="Exclusion merging options"
 >abstract="The exclusion allows you to exclude elements from one population according to certain criteria. In the Sets to join section, check all the previous activities you wish you join."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_combine_options"
@@ -53,6 +57,7 @@ Follow these common steps to start configuring the **[!UICONTROL Combine]** acti
 
 ## Union {#combine-union}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_combine_reconciliation"
 >title="Reconciliation options"
@@ -69,6 +74,7 @@ In the following example, a **[!UICONTROL Combine]** activity is used with a **[
 ![](../assets/orchestrated-union-example.png)
 
 ## Intersection {#combine-intersection}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_intersection_reconciliation_options"
@@ -92,20 +98,24 @@ The following example illustrates the use of the **[!UICONTROL Intersection]** b
 
 ## Exclusion {#combine-exclusion}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_exclusion_options"
 >title="Exclusion rules"
 >abstract="When necessary, you can manipulate inbound tables. Indeed, to exclude a target from another dimension, this target has to be returned to the same targeting dimension as the main target. To do this, click Add a rule in the Exclusion rules section and specify the dimension change conditions. Data reconciliation is carried out either via an attribute or a join."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_combine_sets"
 >title="Select sets to combine"
 >abstract="In the **Sets to join** section, select the **Primary set** from the inbound transitions. This is the set from which elements are excluded. The other sets match elements before being excluded from the primary set."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_combine_exclusion"
 >title="Exclusion rules"
 >abstract="When necessary, you can manipulate inbound tables. Indeed, to exclude a target from another dimension, this target has to be returned to the same targeting dimension as the main target. To do this, click Add a rule in the Exclusion rules section and specify the dimension change conditions. Data reconciliation is carried out either via an attribute or a join."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_combine_complement"

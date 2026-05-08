@@ -10,15 +10,18 @@ exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
 ---
 # Get started with SMS / MMS / RCS configuration {#sms-configuration}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_header"
 >title="Configure your SMS provider with Journey Optimizer"
 >abstract="Adobe Journey Optimizer sends text messages through SMS service providers. Select your provider, and fill in your API credentials."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_mms_api_header"
 >title="Configure your MMS provider with Journey Optimizer"
 >abstract="Adobe Journey Optimizer sends media content through MMS service providers. Select your provider, and fill in your API credentials."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api"
@@ -26,10 +29,12 @@ exl-id: 4dcd22ed-bf7e-4789-ab7b-33544c857db8
 >abstract="Before sending text messages (SMS/MMS), you must integrate the provider settings with Journey Optimizer. Once done, you need to create an SMS/MMS configuration. These steps must be performed by an Adobe Journey Optimizer System Administrator."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Create an SMS channel configuration"
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_configuration"
 >title="Select the SMS vendor configuration"
 >abstract="Select the API credentials configured for your SMS vendor."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_fuzzy_opt_out"

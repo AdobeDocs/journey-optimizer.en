@@ -15,6 +15,7 @@ version: Journey Orchestration
 
 Use journey properties to configure global settings for your journey, including its name, entrance rules, timezone, start and end dates, timeout duration, exit criteria, and conflict management. Properties are accessible from the right rail at any stage of journey authoring.
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties"
 >title="Journey properties"
@@ -82,6 +83,7 @@ Profile entrance management depends on the type of journey. Learn more about pro
 
 ### Allow reentrance  {#allow-reentrance}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_entrance"
 >title="Allow reentrance"
@@ -91,6 +93,7 @@ Profile entrance management depends on the type of journey. Learn more about pro
 By default, new journeys allow reentrance. You can uncheck the **Allow reentrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop. 
 
 ### Reentrance wait period  {#reentrance-wait}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_re-entrance_wait"
@@ -109,6 +112,7 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
 ## Journey payload size {#journey-payload-size}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_payload_size"
@@ -133,10 +137,12 @@ The timezone is defined at journey level. You can enter a fixed time zone or use
 
 ## Start and end dates {#dates}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_start_date"
 >title="Start date"
 >abstract="Select the date when profiles can begin entering the journey. If no start date is set, it defaults to the journey's publication date."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_end_date"
@@ -152,6 +158,7 @@ If needed, you can define custom **Start date** and **End date**. This allows pr
 Timeout settings control how long a journey waits for activity execution and how long profiles can remain in a journey.
 
 ### Timeout in journey activities {#timeout_and_error}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_timeout"
@@ -308,6 +315,7 @@ Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global ti
 
 ## Merge policy {#merge-policies}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_merge_policy"
 >title="Merge policy"
@@ -328,6 +336,7 @@ To learn more about merge policies, refer to [[!DNL Adobe Experience Platform] d
 >When an audience merge policy is updated, any active journey referencing that audience must be republished (or duplicated). Changing the merge policy effectively creates a 'new' audience that the ongoing journey cannot access, ensuring data consistency.
 
 ## Exit criteria {#exit-criteria}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_exit_criterias"

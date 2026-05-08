@@ -27,6 +27,7 @@ When applying the content template to their content, users will be able to custo
 
 ## Add editable fields to HTML or JSON content templates {#add-editable-fields}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_cbe_preview_form_fields"
 >title="Check your form fields' rendering"
@@ -193,6 +194,7 @@ Below are a few examples of JSON and HTML templates, some of them including deci
 ```
 
 ## Edit form fields in a code-based experience {#edit-form-fields}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_form_fields"

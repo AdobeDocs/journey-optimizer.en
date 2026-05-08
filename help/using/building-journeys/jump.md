@@ -13,6 +13,7 @@ version: Journey Orchestration
 ---
 # Jump from one journey to another {#jump}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_jump"
 >title="Jump activity"

@@ -13,6 +13,7 @@ version: Journey Orchestration
 
 # Get started with journeys {#jo-general-principle}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_canvas"
 >title="Create a journey"

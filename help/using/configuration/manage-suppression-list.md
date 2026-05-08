@@ -85,10 +85,12 @@ From the **[!UICONTROL Suppression list]** view, you can also edit the retry par
 
 ## Add addresses and domains to the suppression list{#add-addresses-and-domains}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list_header"
 >title="Add emails or domains to the suppression list"
 >abstract="You can manually populate the Journey Optimizer suppression list in order to exclude specific email addresses and/or domains from your sending."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list"
@@ -106,6 +108,7 @@ However, you can also manually populate the [!DNL Journey Optimizer] suppression
 You may add email addresses or domains [one at a time](#add-one-address-or-domain), or [in bulk mode](#upload-csv-file) through a CSV file upload.
 
 ### Add one address or domain {#add-one-address-or-domain}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list_address"
@@ -135,6 +138,7 @@ To add an email address or a domain to the suppression list, follow the steps be
 1. Use the **[!UICONTROL Submit]** button to confirm.
 
 ### Upload a CSV file {#upload-csv-file}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list_csv"
@@ -227,6 +231,7 @@ You can then remove quarantined email addresses from the suppression list using 
 ## Download the suppression list {#download-suppression-list}
 
 <!--
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_suppression_list_download"
 >title="Export the list as a CSV file"

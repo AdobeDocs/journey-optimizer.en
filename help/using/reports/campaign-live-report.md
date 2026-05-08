@@ -11,6 +11,7 @@ exl-id: 925494b6-e08a-4bd3-8a2f-96a5d9cbc387
 ---
 # Campaign live report {#campaign-live-report}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_report"
 >title="Campaign live report"
@@ -67,6 +68,7 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Email]** tab 
 
 ### Email - Sending performance {#email-sending-performance}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_sending_statistics"
 >title="Email - Sending statistics"
@@ -88,6 +90,7 @@ The **[!UICONTROL Email - Sending Performance]** offers a thorough overview of d
 +++
 
 ### Email - Statistics
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_statistics"
@@ -127,10 +130,12 @@ The **[!UICONTROL Sending metrics by Email]** table offers a comprehensive summa
 
 ### Email - Bounce categories and reasons {#bounce-categories}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_bounce_categories"
 >title="Email - Bounce categories"
 >abstract="The Email - Bounce categories graphs and table provide data on both temporary and permanent errors from the last 24 hours."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_bounce_reasons"
@@ -154,6 +159,7 @@ For more information on bounces, refer to the [Suppression list](../reports/supp
 +++
 
 ### Email - Performance by date {#email-performance-date}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_performance_bydate"
@@ -186,6 +192,7 @@ The **[!UICONTROL Email - Performance by date]** widget offers a detailed overvi
 
 ### Error Reasons {#email-error-reasons}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_error_reasons"
 >title="Email - Error reasons"
@@ -196,6 +203,7 @@ The **[!UICONTROL Email - Performance by date]** widget offers a detailed overvi
 The **[!UICONTROL Error Reasons]** graphs and tables provide insight into the specific errors that occurred during the sending process in the last 24 hours. This information is valuable for understanding the nature and frequency of errors.
 
 ### Excluded Reasons {#email-exclude-reasons}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_excluded_reasons"
@@ -209,6 +217,7 @@ The **[!UICONTROL Excluded Reasons]** graphs and table offer a comprehensive per
 Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion reasons.
 
 ### Email - Best recipient domain {#email-best-recipient}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_email_best_recipient"
@@ -243,6 +252,7 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL In-app]** tab
 
 ### In-app performance {#inapp-performance}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_inapp_performance"
 >title="In-app performance"
@@ -259,6 +269,7 @@ The **[!UICONTROL In-app performance]** KPIs provide essential insights into you
 +++
 
 ### In-app summary {#inapp-summary}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_inapp_summary"
@@ -277,6 +288,7 @@ The **[!UICONTROL In-app summary]** graph illustrates the progression of your In
 
 ### Interactions by type {#inapp-interactions}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_inapp_interactions"
 >title="Interactions by type"
@@ -289,6 +301,7 @@ The **[!UICONTROL Interactions by type]** graphs and table provide a detailed ac
 From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Push notification]** tab details the main information relative to the push notification sent in your campaign.
 
 ### Push notification - Sending performance {#push-sending-performance}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_push_sending_performance"
@@ -310,6 +323,7 @@ The **[!UICONTROL Push notification sending performance]** graph offers a thorou
 +++
 
 ### Push notification - Statistics {#push-statistics}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_push_statistics"
@@ -342,6 +356,7 @@ The **[!UICONTROL Push notification - Statistics]** table provides a concise sum
 
 ### Push notification - Sending summary {#push-sending-summary}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_push_sending_summary"
 >title="Push notification - Sending summary"
@@ -365,6 +380,7 @@ The **[!UICONTROL Push notification - Statistics]** graph offers a dynamic repre
 
 ### Push notification - Excluded reasons {#push-excluded}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_push_excluded_reasons"
 >title="Push notification - Excluded reasons"
@@ -376,6 +392,7 @@ Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion 
 
 ### Push notification - Error reasons {#push-error}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_push_error_reasons"
 >title="Push notification - Error reasons"
@@ -384,6 +401,7 @@ Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion 
 The **[!UICONTROL Error Reasons]** table and graphs provide you with the capability to identify the specific errors that occurred during the sending process of your push notifications within the last 24 hours, offering detailed insights into any issues encountered along the way.
 
 ### Push notification - Breakdown by platform {#push-breakdown-platform}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_push_breakdown_platform"
@@ -416,6 +434,7 @@ From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL SMS]** tab de
 
 ### SMS - Statistics {#sms-statistics}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_sms_statistics"
 >title="SMS - Statistics"
@@ -445,6 +464,7 @@ The **[!UICONTROL SMS - Statistics]** table provides a concise summary of essent
 
 ### SMS - Performance by date {#sms-perfomance-date}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_sms_performance"
 >title="SMS - Performance by date"
@@ -466,6 +486,7 @@ The **[!UICONTROL SMS Performance by date]** widget offers a detailed overview o
 
 ### SMS - error reasons {#sms-error-reasons}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_sms_error_reasons"
 >title="SMS - Error reasons"
@@ -474,6 +495,7 @@ The **[!UICONTROL SMS Performance by date]** widget offers a detailed overview o
 The **[!UICONTROL Excluded Reasons]** graphs and table allow you to identify the specific errors that occurred during the sending process of your SMS messages within the last 24 hours, facilitating a thorough analysis of any issues encountered.
 
 ### SMS - excluded reasons {#sms-excluded-reasons}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_sms_excluded_reasons"
@@ -488,6 +510,7 @@ Refer to [this page](exclusion-list.md) for the comprehensive list of exclusion 
 
 ### SMS - Bounces reasons {#sms-bounces-reasons}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_sms_bounces_reasons"
 >title="SMS - Bounces reasons"
@@ -500,6 +523,7 @@ The **[!UICONTROL Bounces Reasons]** graphs and table provide a comprehensive ov
 From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Web]** tab details the main information relative to your Web pages.
 
 ### Web performance {#web-performance}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_web_performance"
@@ -522,6 +546,7 @@ The **[!UICONTROL Web performance]** KPIs offer comprehensive insights into your
 
 ![](assets/campaign_live_web_summary.png)
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_web_summary"
 >title="Web summary"
@@ -539,6 +564,7 @@ The **[!UICONTROL Web summary]** graph shows the evolution of your web experienc
 
 ### Interactions by element {#web-interactions}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_web_interactions"
 >title="Interactions by element"
@@ -551,6 +577,7 @@ The **[!UICONTROL Interactions by element]** table presents comprehensive inform
 From your Campaign **[!UICONTROL Live report]**, the **[!UICONTROL Direct mail]** tab details the main information relative to your Direct mail.
 
 ### Direct mail - sending statistics {#direct-mail-sending}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_direct_sending_statistics"
@@ -575,6 +602,7 @@ The **[!UICONTROL Direct Mail - Sending statistics]** table provides a concise s
 
 ### Direct mail - error reasons {#direct-mail-error-reasons}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_direct_error_reasons"
 >title="Direct Mail - Error reasons"
@@ -585,6 +613,7 @@ The **[!UICONTROL Direct Mail - Sending statistics]** table provides a concise s
 The **[!UICONTROL Direct Mail - Error reasons]** graphs and table provide the means to identify specific errors that occurred during the sending process of your direct mail messages, allowing for a detailed analysis of any issues encountered in the last 24 hours.
 
 ### Direct mail - excluded reasons {#direct-mail-excluded-reasons}
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_direct_excluded_reasons"

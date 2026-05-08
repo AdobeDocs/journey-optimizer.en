@@ -10,15 +10,18 @@ exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
 ---
 # Create decision policies {#create-decision}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_item_number"
 >title="Define the number of items to be returned"
 >abstract="Select the number of decision items you want to be returned back. For example, if you select 2, the best 2 eligible offers will be presented for the current configuration."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_fallback"
 >title="Select a fallback"
 >abstract="A fallback item displays to the user when none of the selection strategies defined for that decision policy are qualified."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_strategy"

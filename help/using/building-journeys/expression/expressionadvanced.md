@@ -12,6 +12,7 @@ version: Journey Orchestration
 ---
 # Work with the advanced expression editor {#about-the-advanced-expression-editor}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_advanced"
 >title="About the advanced expression editor"

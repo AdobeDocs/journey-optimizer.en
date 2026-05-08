@@ -14,20 +14,24 @@ version: Journey Orchestration
 # Copy a journey to another sandbox {#copy-to-sandbox}
 
 <!--
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_main"
 >title="Copy a journey to another sandbox"
 >abstract="Journey Optimizer allows you to copy an entire journey from one sandbox to another. For example, you can copy a journey from the Stage sandbox environment to your Production sandbox. In addition to the Journey itself, Journey Optimizer also copies most of the objects the journey depends on."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_sandbox_details"
 >title="Sandbox details"
 >abstract="Select the destination sandbox you want to copy the journey to. Only sandboxes within your organization are available."
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_object_details"
 >title="Object details"
 >abstract="This is the journey you are going to copy."
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_dependent_objects"

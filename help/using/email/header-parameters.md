@@ -47,6 +47,7 @@ When configuring a new [email channel configuration](email-settings.md), in the 
 
 ## Sender headers {#sender-header}
 
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_sender_header"
 >title="Sender headers"
