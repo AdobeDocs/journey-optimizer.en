@@ -9,7 +9,6 @@ exl-id: 1aff2f6f-914c-4088-afd8-58bd9edfe07d
 ---
 # Configure your code-based experience {#code-based-configuration}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_surface"
 >title="Define a code-based experience configuration"
@@ -25,12 +24,10 @@ A code-based experience configuration must reference the surface, which is basic
 
 ## Create a code-based experience configuration {#create-code-based-configuration}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_location"
 >title="Indicate the specific location inside your page or app"
 >abstract="This field specifies the exact destination inside a page or within the app you want users to access. It can be a particular section inside a web page, or a page deep within the app's navigation structure."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_default_mobile_url"
@@ -81,7 +78,6 @@ You can now select this configuration when [creating a code-based experience](cr
 
 ### Web platforms {#web}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_default_web_url"
 >title="Define a URL for content authoring and preview"
@@ -120,12 +116,10 @@ To define the code-based experience configuration settings for web platforms, fo
 
 ### Mobile platforms (iOS and Android) {#mobile}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_app_id"
 >title="Provide your app ID"
 >abstract="Enter the app ID for accurate identification and configuration within the application's operational environment, ensuring seamless integration and functionality."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_mobile_url_preview"

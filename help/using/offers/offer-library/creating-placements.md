@@ -17,18 +17,15 @@ version: Journey Orchestration
 >
 >Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_placement"
 >title="Placement"
 >abstract="A placement is a container that is used to showcase offers. It helps ensure that the right offer content shows up in the right location within your message. Placements are created from the "Components" menu."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_placement_request"
 >title="Request settings"
 >abstract="Enable the **[!UICONTROL Allow Duplicates across placements]** option to make the system consider the same offer for multiple placements. Use the **[!UICONTROL Request offer]** field to adjust the number of returned offers. For example, if you select 2, the best 2 offers will display for the selected decision scope."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_placement_response"

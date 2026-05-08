@@ -12,12 +12,10 @@ exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
 ---
 # Manage the default execution fields {#change-primary-email}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address"
 >title="Define which address to use"
 >abstract="When several email addresses or phone numbers are available in the database (personal, professional, etc.), you can choose which one to prioritize for sending."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address_header"
@@ -66,7 +64,6 @@ The execution field is updated and will now be used as the primary address.
 
 ## Override the default execution field in the journey parameters {#override-execution-address-journey}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_execution_address"
 >title="Define a custom value"
@@ -90,7 +87,6 @@ Override this value using the **[!UICONTROL Enable parameter override]** icon to
 >Email address or phone number override should only be used for specific use cases. Most of the time, you do not need to change it, because the value defined as the primary field in the **[!UICONTROL Execution fields]** at the sandbox level is the one that should be used. [Learn more](#change-primary-email)
 
 ## Override the default execution field in the channel configuration {#override-execution-address-channel-config}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_execution_address"

@@ -11,7 +11,6 @@ exl-id: 289aac5d-6cdb-411f-985e-3acef58050a8
 ---
 # Build segment definitions {#build-segments}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_ao_create_rule"
 >title="Create a rule"

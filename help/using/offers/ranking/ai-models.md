@@ -31,7 +31,6 @@ For example, you can select an AI model for the email channel and another one fo
 
 ## AI model types {#ai-model-types}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_ai_model_type"
 >title="Choose the model type"

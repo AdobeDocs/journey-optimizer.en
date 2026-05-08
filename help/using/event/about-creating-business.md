@@ -12,7 +12,6 @@ exl-id: 39eb40e1-d7f5-4a8e-9b64-c620940d5ff2
 ---
 # Configure a business event {#configure-a-business-event}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_business"
 >title="Business events"

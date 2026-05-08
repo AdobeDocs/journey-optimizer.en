@@ -13,12 +13,10 @@ exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
 ---
 # Access & manage campaigns {#manage-campaigns}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
 >title="Orchestrated campaigns inventory"
 >abstract="In this screen, you can access the full list of Orchestrated campaigns, check their current status, last/next execution dates, and create a new Orchestrated campaign."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_campaign_action"
@@ -132,7 +130,6 @@ When an error occurs within one of your campaigns, a warning icon appears alongs
 >Assets/Images are accessible in delivered content for up to 2 years (730 days) since their first publication in any fragment/inline message. Re-publishing is required after this expiry period (any time after 730 days) to keep them accessible for another 2 years. Any re-publication done within 730 days of the first publication will not extend the expiry of assets/images to the next 730 days.
 
 ## Campaigns calendar {#calendar}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_view"

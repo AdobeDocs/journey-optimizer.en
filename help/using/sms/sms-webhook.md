@@ -10,12 +10,10 @@ exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
 ---
 # Create Webhook {#webhook}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_channels_sms_webhook_settings_create"
 >title="Create an SMS Webhook"
 >abstract="You can configure Webhooks to capture inbound responses for managing opt-in and opt-out consent, and to receive delivery reports including read receipts where available."
-
 
 
 >[!CONTEXTUALHELP]

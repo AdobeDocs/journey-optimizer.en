@@ -11,7 +11,6 @@ version: Campaign Orchestration
 
 # Start and monitor your Orchestrated campaigns {#start-monitor}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_publication"
 >title="Publish Orchestrated campaign"
@@ -156,7 +155,6 @@ Visual status indicators help you understand how each activity is performing:
 |![Success status](assets/activity-status-green.png){zoomable="yes"}{width="70%"}|The activity has been successfully executed. |
 
 ### Logs and tasks {#logs-tasks}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_logs"

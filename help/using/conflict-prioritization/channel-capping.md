@@ -22,7 +22,6 @@ Leveraging channel rule sets allows you to set frequency capping by communicatio
 
 ## Create a channel capping rule
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_channel"
 >title="Define the channel(s) the rule applies to"

@@ -12,7 +12,6 @@ exl-id: c77dc420-a375-4376-ad86-ac740e214c3c
 ---
 # Create an email {#create-email}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_message_email"
 >title="Email creation"
@@ -82,7 +81,6 @@ For more information on how to create, configure and activate a campaign, refer 
 ## Define your email content {#define-email-content}
 
 <!-- update the quarry component with right ID value-->
-
 
 >[!CONTEXTUALHELP]
 >id="test_id"

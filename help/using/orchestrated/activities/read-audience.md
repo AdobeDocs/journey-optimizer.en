@@ -9,7 +9,6 @@ version: Campaign Orchestration
 
 # Read audience {#read-audience}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_read_audience"
 >title="Build audience activity"

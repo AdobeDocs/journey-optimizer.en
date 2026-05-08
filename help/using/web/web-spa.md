@@ -11,7 +11,6 @@ exl-id: b33e4bca-d2e9-4610-9f04-008d47f686d0
 
 ## About views {#about-views}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_modifications_views"
 >title="Apply changes to selected views"

@@ -12,7 +12,6 @@ exl-id: 9083e355-15e3-4d1f-91ae-03095e08ad16
 ---
 # Adobe Experience Platform data source {#adobe-experience-platform-data-source}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_built_in"
 >title="Adobe Experience Platform data source"

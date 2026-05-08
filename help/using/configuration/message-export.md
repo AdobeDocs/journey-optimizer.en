@@ -12,7 +12,6 @@ exl-id: 7b50c933-9738-4b1b-acae-08f0a8d41dab
 ---
 # Export message content {#message-export}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_msg_export"
 >title="Retain and export your sent content"

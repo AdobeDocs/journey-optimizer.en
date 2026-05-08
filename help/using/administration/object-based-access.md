@@ -12,7 +12,6 @@ exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
 ---
 # Object level access control {#object-level-access}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_olac_manage_access"
 >title="Access management labels"

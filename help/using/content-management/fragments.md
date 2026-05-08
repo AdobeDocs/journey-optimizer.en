@@ -11,7 +11,6 @@ exl-id: 7131a953-baca-4e7c-a8df-97c0bd6ac567
 ---
 # Get started with fragments {#fragments}
  
-
 >[!CONTEXTUALHELP] 
 >id="ajo_create_fragment"
 >title="Define your own fragments"

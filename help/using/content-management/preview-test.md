@@ -8,12 +8,10 @@ exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
 ---
 # Preview & test your content {#preview-test}
 
-
 >[!CONTEXTUALHELP]
 >id="ac_preview_testprofiles"
 >title="Check how your content is rendering"
 >abstract="Once your content has been defined, you can use test profiles to preview it and check if the rendering is correct according to the channel you are using."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_preview_simulate"

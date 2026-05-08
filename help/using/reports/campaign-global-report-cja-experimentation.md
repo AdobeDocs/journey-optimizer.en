@@ -12,7 +12,6 @@ exl-id: 69742163-7378-49ab-929e-86213d6e65e3
 
 # Experimentation campaign report {#campaign-global-report-cja-experimentation}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment_click"
 >title="Success metric"

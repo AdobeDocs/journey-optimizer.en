@@ -12,7 +12,6 @@ exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
 ---
 # Subdomain delegation in [!DNL Journey Optimizer] {#subdomain-delegation}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_delegated_subdomains"
 >title="Your delegated subdomains display here."

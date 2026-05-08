@@ -13,7 +13,6 @@ version: Journey Orchestration
 ---
 # Update Profile {#update-profile}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_update_profiles"
 >title="Update Profile activity"

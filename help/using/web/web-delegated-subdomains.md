@@ -11,18 +11,15 @@ exl-id: 6e00466d-4ce5-4d80-89ff-c7331a5ab158
 ---
 # Configure web subdomains {#web-subdomains}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_web_header"
 >title="Delegate a web subdomain"
 >abstract="You will be setting up your subdomain for web channel use. You can use a subdomain that is already delegated to Adobe or configure another subdomain."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_web"
 >title="Delegate a web subdomain"
 >abstract="If you add content coming from the Adobe Experience Manager Assets to your web experiences, you  must set up the subdomain that will be used to publish this content. Select amongst the subdomains already delegated to Adobe or configure a new subdomain."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_web_default"
@@ -90,7 +87,6 @@ To use a subdomain that is already delegated to Adobe, follow the steps below:
     In very rare occasions, a subdomain setup could fail. In this case, you can delete the **[!UICONTROL Failed]** subdomain to clean up the list using the **[!UICONTROL Delete]** button from the **[!UICONTROL More actions]** icon.
 
 ## Configure a new subdomain {#web-configure-new-subdomain}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_web_subdomain_dns"

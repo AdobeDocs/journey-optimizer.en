@@ -8,7 +8,6 @@ exl-id: 1f7b74d2-77c3-4113-8e6a-1e2a95117748
 ---
 # A/B vs Multi-armed bandit experiments {#mab-vs-ab}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_ab_test_mab"
 >title="Experiment type"

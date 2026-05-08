@@ -74,13 +74,11 @@ You can click a seed list name to edit it. <!--Use the **[!UICONTROL Edit]** but
 
 ## Create a seed list {#create-seed-list}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_seed_list_details"
 >title="Define a seed list"
 >abstract="Use a seed list to automatically add specific internal addresses to your delivery audience for assurance purposes. Seed lists allow you to monitor the message copies sent out to ensure that all display elements are correct and to protect your mailing list. Currently this feature only applies to the email channel."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/seed-lists.html#use-seed-list" text="What are seed lists?"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_seed_addresses"

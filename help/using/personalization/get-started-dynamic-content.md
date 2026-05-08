@@ -12,7 +12,6 @@ exl-id: be9a3f83-8e22-4efa-9d48-37bf554018fa
 ---
 # Get started with dynamic content {#start-dynamic-content}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_conditions_list"
 >title="Conditions"

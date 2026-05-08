@@ -10,7 +10,6 @@ exl-id: 0d541520-016e-468f-b011-808712847556
 ---
 # Create a SMS/MMS/RCS configuration {#message-preset-sms}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_sms_type"
 >title="Define the message category"

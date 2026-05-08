@@ -102,7 +102,6 @@ To gain true business insights, you should stick to just one Experiment. Instead
 
 ## Interpret the results of your Experiments {#interpret-results}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment_summary"
 >title="Summary widget"

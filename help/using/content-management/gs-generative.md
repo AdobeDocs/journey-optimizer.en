@@ -12,18 +12,15 @@ exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
 ---
 # Get started with AI Assistant {#gs-content-assistant}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_settings"
 >title="AI Assistant in Journey Optimizer"
 >abstract="Once you have crafted and personalized your delivery, you can use AI Assistant in Journey Optimizer to enhance your content. This feature simplifies the process of personalization and content improvement by allowing you to fine-tune the content by describing what you want to generate."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_context"
 >title="Upload brand asset"
 >abstract="The Upload brand asset menu enables you to add any brand asset containing content that can provide additional context for AI Assistant in Journey Optimizer, or to select a previously uploaded asset. This option ensures that AI Assistant has access to all necessary materials to enhance its functionality and relevance."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_start"

@@ -17,30 +17,25 @@ version: Journey Orchestration
 >
 >Decisioning, [!DNL Adobe Journey Optimizer]'s new decisioning capability, is now available via the code-based experience and email channels! [Learn more](../../experience-decisioning/gs-experience-decisioning.md)
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_decision_collection"
 >title="About offer collections"
 >abstract="With offer collections, you can organize your offers by regrouping them into categories of your choice."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_collection_dynamic"
 >title="Dynamic collection"
 >abstract="Use collection qualifiers to dynamically qualify offers for a collection."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_collection_static"
 >title="Static collection"
 >abstract="Manually select and group offers together using criteria such as status, collection qualifiers, date and channel."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_collection_static_select"
 >title="Static collection preview"
 >abstract="Static collections are built by manually selecting individual offers to include in the collection. The collection can only be updated by manually adding more offers to it."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_decisioning_collection_dynamic_select"

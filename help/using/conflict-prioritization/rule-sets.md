@@ -12,7 +12,6 @@ exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
 ---
 # Work with rule sets {#rule-sets}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_rule_sets"
 >title="Rule Sets"
@@ -56,12 +55,10 @@ In addition to this "Global Default Rule Set" rule set, you can create **rule se
 
 ## Create and activate rule sets {#Create}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_domain"
 >title="Rule Set Domain"
 >abstract="When creating a rule set, you need to specify if the rules within the rule set will enforce capping rules that are specific to communication channels, or to journeys."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_category"
@@ -76,24 +73,20 @@ NOT USED?
 >abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."
 -->
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_rule_type"
 >title="Rule type"
 >abstract="Select the desired rule type for your channel rule set: Use the **Frequency capping** type to apply capping rules to communication channels. For example, do not send more than 1 email or SMS communication per day. Select **Quiet hours** to define time-based exclusions to ensure that no messages are sent during specific periods of time."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_sets_duration"
 >title="Select the message rule category"
 >abstract="When activated and applied to a message, all the frequency rules matching the selected category will be automatically applied to this message. Currently only the Marketing category is available."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_rule_set_rule_capping"
 >title="Rule capping"
 >abstract="Set the capping for your rule. Depending on the rule set domain and the selection in the Rule Type field, this field can define the maximum number of messages that can be sent to a profile, or the maximum number of journeys the profile can enter or be enrolled in simultaneously."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_business_rules"

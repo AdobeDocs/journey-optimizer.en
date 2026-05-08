@@ -12,7 +12,6 @@ exl-id: fb3e51b5-4cbb-4949-8992-1075959da67d
 ---
 # Work with journey events {#about-events}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_list"
 >title="Journey events"

@@ -11,13 +11,11 @@ exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
 ---
 # Create a fragment {#create-fragments}
  
-
 >[!CONTEXTUALHELP]
 >id="ajo_create_visual_fragment"
 >title="Select the visual type"
 >abstract="Create a standalone visual fragment to make your content reusable in an email within a journey or a campaign, or in a content template."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments" text="Add visual fragments to your emails"
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_create_expression_fragment"

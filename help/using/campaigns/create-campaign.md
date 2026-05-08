@@ -14,7 +14,6 @@ exl-id: 617d623c-e038-4b5b-a367-5254116b7815
 
 # Work with Action campaigns {#gs-action-campaigns}
 
-
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_action"
 >title="Action campaigns"

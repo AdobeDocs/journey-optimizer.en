@@ -31,12 +31,10 @@ Below is a summary of how Journey Optimizer identifies potential conflicts for j
 
 ## View identified conflicts for a given journey or campaign {#view}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_conflict"
 >title="View potential conflicts"
 >abstract="Check whenever there’s a possibility of overlap with other campaigns. Conflicts are shown for live and scheduled campaigns only. Note that the button becomes available as soon as you have assigned any of the following settings: **[!UICONTROL Start / end date]**, **[!UICONTROL Audience]**, **[!UICONTROL Channel]**, **[!UICONTROL Channel configuration]**, and **[!UICONTROL Rule set]**."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_conflict"

@@ -13,7 +13,6 @@ exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
 ---
 # Add personalization {#build-personalization-expressions}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_perso_editor"
 >title="About the personalization editor"
@@ -86,7 +85,6 @@ The navigation pane lets you select the source for personalization. Available so
 >If you are targeting an audience with enrichment attributes generated using a composition workflow, you can leverage these enrichment attributes to personalize your message. [Learn how to use audiences enrichment attributes](../audience/about-audiences.md#enrichment)
 
 ## Add personalization {#add}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_perso_editor_autocomplete"

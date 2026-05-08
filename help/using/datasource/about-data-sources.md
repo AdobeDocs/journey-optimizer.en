@@ -12,7 +12,6 @@ exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
 ---
 # Get started with data sources {#about-data-sources}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_list"
 >title="About data sources"

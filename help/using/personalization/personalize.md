@@ -12,7 +12,6 @@ exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
 ---
 # Get started with personalization{#add-personalization}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card5"
 >title="Personalize experiences"

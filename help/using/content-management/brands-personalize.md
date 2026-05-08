@@ -58,7 +58,6 @@ You can now further personalize your brand or [publish your brand](brands.md#cre
 
 ## Writing style {#writing-style}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_brand_writing_style"
 >title="Writing style alignment score"
@@ -174,7 +173,6 @@ To personalize your **[!UICONTROL Writing Style]**:
 You can now further personalize your brand or [publish your brand](#create-brand-kit).
 
 ## Visual content {#visual-content}
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_brand_imagery"

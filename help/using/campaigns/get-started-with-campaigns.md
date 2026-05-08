@@ -13,78 +13,65 @@ exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
 ---
 # Get started with campaigns {#get-started-campaigns}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule"
 >title="Campaign schedule"
 >abstract="By default, campaigns start upon manual activation and end immediately after the message is sent once. You have the flexibility to set a specific date and time for the message to be sent. Furthermore, you can specify an end date for recurring Action campaigns. In the Action triggers, you can also configure the message sending frequency to suit your preferences."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule_start"
 >title="Campaign start"
 >abstract="Specify a date and time at which the message should be sent."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule_end"
 >title="Campaign end"
 >abstract="Specify when a recurring campaign should stop being executed."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule_triggers"
 >title="Campaign action triggers"
 >abstract="Define a frequency at which the campaign's message should be sent."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_throttling"
 >title="Rate control"
 >abstract="Set Rate control for your campaign by specifying the desired rate limits. This feature is particularly useful for preventing overload on downstream systems, such as landing pages or customer care platforms."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card3"
 >title="Create campaigns"
 >abstract="Use **Adobe Journey Optimizer** to deliver one-time content to a specific audience using various channels. When using journeys, actions are executed in sequence. With campaigns, actions are performed simultaneously, either immediately, or based on a specified schedule."
 
-
 >[!CONTEXTUALHELP]
 >id="campaigns_list"
 >title="Campaigns"
 >abstract="Create campaigns to deliver one-time content to a specific audience across various channels. Before creating your campaign, make sure you have a channel configuration and an Adobe Experience Platform audience ready for use."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_campaign_type"
 >title="Campaign type"
 >abstract="Select the type of campaign. Available channels vary depending on the selected type. <br>**Scheduled campaigns** (Action campaigns) – Ideal for simple, one-off batch communications that you can schedule to run at a specific time.<br>**API triggered campaigns** – Activated through an API call, enabling automated, event-based messaging directly from external systems.<br>**Orchestrated campaigns** – Provide a visual, drag-and-drop canvas to design and automate complex, multi-step marketing workflows, from audience segmentation to personalized message delivery across channels."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_orchestration"
 >title="Campaigns"
 >abstract="Create your segmentation flow, craft your cross channel messages and plan your campaigns. Supported channels: Email, SMS, Push notifications, Direct mail."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_scheduled_marketing"
 >title="Campaigns"
 >abstract="Deliver single or recurring outbound deliveries or ongoing inbound actions."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_scheduled_transactional"
 >title="Campaigns"
 >abstract="Deliver single or recurring outbound transactional actions. Supported channels: Email, SMS, Push notifications."
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_api_marketing"
 >title="Campaigns"
 >abstract="Deliver personalized marketing communications to targeted audiences. Supported channels: Email, SMS, Push notifications."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_api_transactional"

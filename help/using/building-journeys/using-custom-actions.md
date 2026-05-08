@@ -13,7 +13,6 @@ version: Journey Orchestration
 ---
 # Use custom actions {#use-custom-actions}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom"
 >title="Custom actions"

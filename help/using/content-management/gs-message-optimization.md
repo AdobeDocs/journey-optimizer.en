@@ -12,7 +12,6 @@ exl-id: 0f563d61-7a9e-46bf-adfb-5a26e63505b9
 ---
 # Get started with content optimization {#message-optimization}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_optimization"
 >title="Content optimization"

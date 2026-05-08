@@ -45,7 +45,6 @@ In both cases, when a recipient clicks the opt-out link, their unsubscribe reque
 
 ## Enable List unsubscribe {#enable-list-unsubscribe}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_unsubscribe"
 >title="Add an unsubscribe URL to your emails"
@@ -94,12 +93,10 @@ Currently, [!DNL Journey Optimizer] does not append a specific tag to unsubscrib
 
 ## Manage unsubscribe data externally {#custom-managed}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_unsubscribe_custom"
 >title="Define how unsubscribe data is managed"
 >abstract="**Adobe managed**: Consent data is managed by you within the Adobe system.<br>**Customer managed**: Consent data is managed by you in an external system and no synchronization of consent data is updated in the Adobe system unless initiated by you."
-
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_config_unsubscribe_custom_url"

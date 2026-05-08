@@ -13,7 +13,6 @@ version: Journey Orchestration
 ---
 # Get started with the Optimize activity {#journey-path-optimization}
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_journey_optimize"
 >title="Optimize activity"
