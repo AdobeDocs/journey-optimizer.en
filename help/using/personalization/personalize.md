@@ -84,6 +84,14 @@ Now that you have an understanding of personalization in **[!DNL Journey Optimiz
 </div>
 <p></td>
 <td>
+<a href="../personalization/personalization-recipes.md">
+<img alt="Infrequent" src="assets/do-not-localize/uc.png">
+</a>
+<div>
+<a href="../personalization/personalization-recipes.md"><strong>Personalization recipes</strong></a>
+</div>
+<p></td>
+<td>
 <a href="../personalization/personalization-use-case.md">
 <img alt="Infrequent" src="assets/do-not-localize/uc.png">
 </a>

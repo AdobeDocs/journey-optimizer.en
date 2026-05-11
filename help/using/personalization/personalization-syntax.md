@@ -288,3 +288,5 @@ If an XDM schema field name contains a hyphen (e.g. `order-total`), wrap it in b
 ```sql
 {%= profile.events.`order-total` > 100 %}
 ```
+
+For ready-to-use expressions you can copy directly into your content, see [Personalization recipes](personalization-recipes.md).
