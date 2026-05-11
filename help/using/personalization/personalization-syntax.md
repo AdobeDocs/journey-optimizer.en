@@ -201,3 +201,81 @@ Blocks are expressions that have a block opening (`{{# }}`) and closing (`{{/}}`
 >[!CAUTION]
 >
 >The use of **xEvent** variable is not available in personalization expressions. Any reference to xEvent will result in validation failures.
+
+## Best practices {#best-practices}
+
+Review these syntax rules before building personalization expressions. Most runtime errors come from mixing up Handlebars and PQL contexts.
+
+**Use the correct conditional block syntax**
+
+Always use `{%#if%}` / `{%else if%}` / `{%else%}` / `{%/if%}`. The `{% if %}` / `{% elseif %}` / `{% endif %}` syntax is not supported.
+
+```handlebars
+{%#if profile.loyalty.tier = "gold"%}
+Gold member content
+{%else if profile.loyalty.tier = "silver"%}
+Silver member content
+{%else%}
+Default content
+{%/if%}
+```
+
+**Do not call PQL functions inside `{{...}}` Handlebars blocks**
+
+`{{...}}` resolves Handlebars variables and helpers only — it does not evaluate PQL. Wrapping a PQL function like `upperCase()` inside `{{...}}` causes a "could not find helper" error. Use `{%= ... %}` instead:
+
+| Incorrect | Correct |
+|-----------|---------|
+| `{{upperCase(cleanName)}}` | `{%= upperCase(cleanName) %}` |
+
+**Use a named loop alias when combining `{{#each}}` with `{%#if%}`**
+
+`this.field` is resolved by the Handlebars renderer but not by the PQL evaluator inside a `{%#if%}` condition. Define a named alias with `as |item|` so both contexts can resolve the field:
+
+```handlebars
+{{#each profile.orders as |order|}}
+  {%#if order.status = "pending"%}
+  Order {{order.id}} is pending.
+  {%/if%}
+{{/each}}
+```
+
+**Assign PQL function results to a variable before looping**
+
+PQL UDFs such as `topN` cannot be called directly inside `{{#each}}`. Evaluate them first with `{% let %}`, then iterate over the result:
+
+```handlebars
+{% let topOrders = topN(profile.orders, price, 3) %}
+{{#each topOrders}}
+  {{this.name}} — {{this.price}}&euro;
+{{/each}}
+```
+
+**Use `{% let %}` to avoid repeating function calls**
+
+When a computed value is needed more than once, store it in a variable. This improves readability and prevents redundant evaluations:
+
+```handlebars
+{% let cleanName = replaceAll(profile.person.name.firstName, "[^a-zA-Z]", "") %}
+Hi {{cleanName}}, your code is: WELCOME-{%= upperCase(cleanName) %}
+```
+
+**Use the correct argument order for `dateDiff`**
+
+`dateDiff(start, end)` takes the earlier date first. To compute days remaining until a future date, pass the current date as the first argument:
+
+```sql
+{% let daysLeft = dateDiff(getCurrentZonedDateTime(), stringToDate(profile.loyalty.expiryDate)) %}
+```
+
+**Use `=` for equality comparisons in PQL, not `==`**
+
+PQL uses a single `=` operator for equality. Using `==` results in a syntax error.
+
+**Use backticks for hyphenated field names — in PQL expressions only**
+
+If an XDM schema field name contains a hyphen (e.g. `order-total`), wrap it in backticks to prevent the hyphen from being parsed as a subtraction operator. This is only supported inside `{%= ... %}` PQL expressions, not in `{{...}}` Handlebars blocks:
+
+```sql
+{%= profile.events.`order-total` > 100 %}
+```
