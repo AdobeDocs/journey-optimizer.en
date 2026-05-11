@@ -12,18 +12,23 @@ exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
 ---
 # Personalization syntax {#personalization-syntax}
 
-Personalization in [!DNL Journey Optimizer] is based on the templating syntax called Handlebars. For a complete description of the Handlebars syntax, refer to [HandlebarsJS documentation](https://handlebarsjs.com/).
+Personalization in [!DNL Journey Optimizer] uses two complementary syntaxes that work together in the same expression:
 
-It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions.
+* **Handlebars** (`{{...}}`) — used to render profile attributes, loop over arrays, and call block helpers. Refer to the [HandlebarsJS documentation](https://handlebarsjs.com/) for a complete reference.
+* **Profile Query Language (PQL)** (`{%= ... %}`) — used to call built-in functions (e.g. `upperCase()`, `formatDate()`, `dateDiff()`) and evaluate conditional expressions.
 
-Simple expression sample:
+Understanding which context you are in is key to avoiding runtime errors. For example, a PQL function call placed inside `{{...}}` will fail because Handlebars tries to resolve it as a helper rather than evaluate it as a PQL expression.
 
-`{{profile.person.name}}`
+**Examples:**
 
-where:
+| Use case | Syntax |
+|----------|--------|
+| Render a profile attribute | `{{profile.person.name.firstName}}` |
+| Call a PQL function | `{%= upperCase(profile.person.name.firstName) %}` |
+| Conditional block | `{%#if profile.loyalty.tier = "gold"%}...{%/if%}` |
+| Loop over an array | `{{#each profile.orders}}...{{/each}}` |
 
-* `profile` is a namespace.
-* `person.name` is a token composed by attributes. The attributes structure is defined in an Adobe Experience Platform XDM Schema. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
+The attributes structure is defined in an Adobe Experience Platform XDM Schema. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
 
 ## Syntax general rules {#general-rules}
 
@@ -75,6 +80,10 @@ If your profile schema has a field named `next`, you must wrap it in backticks:
 
 Without the backticks, the personalization editor will fail validation with an error.
 
+>[!NOTE]
+>
+>Backtick escaping for reserved keywords applies to both `{{...}}` Handlebars paths and `{%= ... %}` PQL expressions, because these keywords are reserved at the path resolution level. This is different from hyphenated field names, where backtick escaping is only supported inside PQL expressions. See [Hyphenated attribute keys](#hyphenated-keys).
+
 ## PQL syntax rules for special attribute keys {#pql-special-keys}
 
 Beyond reserved keywords, two additional cases require backtick escaping in PQL expressions.
@@ -102,15 +111,15 @@ When referencing context event attributes where the event ID is a number (e.g. `
 {{ts}}
 ```
 
-### Type coercion {#type-coercion}
+## Type coercion {#type-coercion}
 
 PQL is strongly typed. When comparing or passing values, both sides must be the same type. Common cases:
 
 | Scenario | Solution |
 |----------|----------|
-| String field compared to a number | Use `stringToNumber()` to convert: `{%= stringToNumber(profile.loyalty.tier) > 2 %}` |
-| Number stored as string | Use `string_to_integer()` or `stringToNumber()` before arithmetic |
-| Boolean stored as string | Use `toBool()` to convert: `{%= toBool(profile.consent.email) = true %}` |
+| Numeric value stored as a string | Use `stringToNumber()` before arithmetic or comparison: `{%= stringToNumber(profile.loyalty.pointsBalance) > 500 %}` |
+| Integer stored as string | Use `string_to_integer()` or `stringToNumber()` before arithmetic |
+| Boolean stored as string | Use `toBool()` to convert: `{%= toBool(profile.consents.email.val) = true %}` |
 
 ## Available namespaces {#namespaces}
 
@@ -185,7 +194,7 @@ These block helpers are identified by a `#` preceding the helper name and requir
 
 Blocks are expressions that have a block opening (`{{# }}`) and closing (`{{/}}`).
 
-    For more information on helper functions, refer to [this section](functions/helpers.md).
+For more information on helper functions, refer to [this section](functions/helpers.md).
 
 ## Literal types {#literal-types}
 
@@ -264,7 +273,7 @@ Hi {{cleanName}}, your code is: WELCOME-{%= upperCase(cleanName) %}
 
 `dateDiff(start, end)` takes the earlier date first. To compute days remaining until a future date, pass the current date as the first argument:
 
-```sql
+```handlebars
 {% let daysLeft = dateDiff(getCurrentZonedDateTime(), stringToDate(profile.loyalty.expiryDate)) %}
 ```
 
