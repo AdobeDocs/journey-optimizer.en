@@ -10,10 +10,6 @@ exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 ---
 # Work with Adobe Experience Manager content fragments {#aem-fragments}
 
->[!AVAILABILITY]
->
->This integration applies to **Adobe Experience Manager as a Cloud Service Sites**, for **Content Fragments** only. By default, Journey Optimizer reads fragments from the **Publish** tier. Your administrator can instead configure **author-only** access, **authenticated publish**, or **custom domains** for a repository. [Learn how to configure AEM repository settings](../administration/aem-admin-settings.md). 
-
 The integration between Adobe Experience Manager and Journey Optimizer follows this data flow:
 
 1. **[Configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration){target="_blank"}**: To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first configure the Dispatcher. This is a prerequisite for the integration. 
