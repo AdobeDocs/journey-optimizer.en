@@ -10,7 +10,7 @@ exl-id: 08fa046a-4610-4923-a84e-db54e5ad7402
 
 The Live report feature in Adobe Journey Optimizer empowers you to track and analyze the real-time performance of your campaigns, journeys, and messages, all within a dynamic, customizable dashboard. Whether you want to monitor email engagement, SMS delivery rates, or landing page conversions, Live reports offer clear insights to help you optimize outcomes. You’ll learn how to tailor dashboards to your needs, export data for deeper analysis, and explore detailed metrics across different communication channels. Dive into child topics like Journey and Campaign reports to uncover actionable trends, identify issues, and make data-driven decisions with confidence.
 
-## Live Report Features
+## Live report features
 
 :::: landing-cards-container
 :::

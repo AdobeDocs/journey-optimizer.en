@@ -11,7 +11,7 @@ level: Experienced
 exl-id: 4e2dc0d6-4610-4a2f-8388-bc58182b227f
 version: Journey Orchestration
 ---
-# Deliver offers using the Edge Decisioning API {#edge-decisioning-api}
+# Deliver offers using the edge decisioning API {#edge-decisioning-api}
 
 >[!TIP]
 >
@@ -62,7 +62,7 @@ To personalize offers, you must separately configure your personalization/profil
 
 To configure the SDK for decision management, follow either of two steps below:
 
-## Option 1 - Install the Tag extension and implementation using Launch
+## Option 1 - install the tag extension and implementation using launch
 
 This option is more user-friendly for people who may have less coding experience. 
 

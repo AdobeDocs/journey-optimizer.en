@@ -11,7 +11,7 @@ keywords: journey, questions, answers, troubleshoot, help, guide, orchestration
 version: Journey Orchestration
 exl-id: cac9fc24-b78e-48d9-9c0c-f43181246f6f
 ---
-# Journey Orchestration - Frequently Asked Questions {#faq-journeys}
+# Journey orchestration - frequently asked questions {#faq-journeys}
 
 Find answers to common questions about Journey Orchestration in [!DNL Adobe Journey Optimizer].
 
@@ -547,11 +547,11 @@ Learn more about [journey live reporting](report-journey.md).
 * **Journey not published**: The journey is still in draft mode
   Solution: Publish the journey to activate it
   
- <!--
+  <!--
  
-* **Message not approved**: Message content requires approval before sending
+  * **Message not approved**: Message content requires approval before sending
   Solution: Submit for approval or check approval status
--->
+  -->
   
 * **Channel configuration issue**: Email/SMS configuration is incorrect
   Solution: Verify channel configurations and authentication

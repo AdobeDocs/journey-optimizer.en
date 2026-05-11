@@ -7,7 +7,7 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-hide: yes
+hide: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
 ---
 # Release Notes 2022 {#release-notes-2022}
@@ -732,7 +732,7 @@ table>
 Developer SDK for Journey Optimizer is now available with the Suppression API (beta).</p>
 <p>With this API, you can control your outgoing messages using suppression and allow lists.
 The suppression list helps you with honoring the ISPs' feedback to preserve sending IP reputation. The allow list helps you ensure that you send only to those email addresses which are in the allowed list, and typically to ensure that you do not send mails to customers from your development sandbox.</p>
-<p>See <a href="https://developer.adobe.com/journey-optimizer-apis/">Adobe Journey Optimizer APIs</a>.</p>
+<p>See <a href="https://developer.adobe.com/journey-optimizer-apis">Adobe Journey Optimizer APIs</a>.</p>
 </td>
 </tr>
 </tbody>

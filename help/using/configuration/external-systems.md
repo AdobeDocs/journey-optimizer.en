@@ -31,7 +31,7 @@ When Journey Optimizer executes a call to an external API, the technical guardra
 
 ## Capping & throttling APIs {#capping}
 
-### About Capping & Throttling APIs
+### About capping & throttling apis
 
 When configuring a datasource or an action, you establish a connection to a system to either retrieve additional information to use in your journeys or send messages or API calls.
 
@@ -54,7 +54,7 @@ For more information on how to work with the APIs, refer to these sections:
 * [Capping API](capping.md)
 * [Throttling API](throttling.md)
 
-A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/)
+A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling)
 
 ### Data sources & custom actions capacity {#capacity}
 
@@ -100,7 +100,7 @@ Let's take an example for a timeout of 5 seconds.
     * If one of the three retries is successful before the end of the 5 seconds, the call is performed, and there is no error.
     * If the end of the timeout duration is reached during the retries, the call is canceled and counted as a timeout error in reporting. 
 
-## Frequently Asked Questions {#faq}
+## Frequently asked questions {#faq}
 
 You will find below Frequently Asked Questions about integrating Journey Optimizer with external systems.
 

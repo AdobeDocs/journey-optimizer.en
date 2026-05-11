@@ -16,7 +16,7 @@ Personalization in [!DNL Journey Optimizer] is based on the templating syntax ca
 
 It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions.
 
-Simple expression sample: 
+Simple expression sample:
 
 `{{profile.person.name}}`
 

@@ -6,7 +6,7 @@ description: Learn how to build advanced expressions
 feature: Journeys
 role: Developer
 level: Experienced
-hide: yes
+hide: true
 keywords: expression, condition, use-cases, events
 exl-id: 753ef9f4-b39d-4de3-98ca-e69a1766a78b
 version: Journey Orchestration
@@ -108,7 +108,7 @@ This expression returns a boolean.
 
 From there you can add another path in your journey for when the product is not in store and send notification with engagement offer. Configure messages accordingly and use personalization data to enhance the message target.
 
-## Timestamp Filtering in Expressions
+## Timestamp filtering in expressions
 
 When referencing multiple cart activity events, specify both a start and end timestamp window to avoid picking up historical data. For instance:
 

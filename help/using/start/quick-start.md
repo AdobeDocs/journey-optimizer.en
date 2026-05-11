@@ -4,8 +4,10 @@ product: journey optimizer
 title: Roles and Responsibilities
 description: Learn about the different roles involved in Adobe Journey Optimizer and their responsibilities
 feature: Get Started
+topic: Get Started
 role: Admin, Developer, User
 level: Beginner
+keywords: roles, responsibilities, marketer, administrator, data engineer, developer, quick start
 exl-id: 71ab7369-fd84-46eb-95d2-941bd887d565
 redpen-status: PASS_||_2025-04-28_15-13-07
 ---
@@ -18,16 +20,36 @@ Adobe Journey Optimizer enables brands to deliver connected, contextual, and per
 * **Modern omnichannel orchestration** through unified canvases for both real-time journeys and batch campaigns, plus a modern message designer
 * **Intelligent decisioning and personalization** through decision management and AI/ML capabilities
 
-Journey Optimizer offers two orchestration approaches to meet different marketing needs:
+Journey Optimizer offers two main approaches to reach and engage customers:
 
-* **Journeys**: Best for real-time, one-to-one engagement where each customer moves through at their own pace, triggered by behavior or events
-* **Orchestrated campaigns**: Best for batch, one-to-many campaigns where audiences progress together through multi-step workflows on a schedule—ideal for seasonal promotions, product launches, and account-based communications
+* **Journeys** — Real-time, one-to-one orchestration where each customer moves at their own pace, triggered by behavior or events. Best for onboarding sequences, cart abandonment, and lifecycle engagement.
+* **Campaigns** — Audience-based messaging with three delivery modes depending on your use case:
+  * **Action campaigns** — Scheduled or recurring messages delivered to a defined audience all at once. Best for newsletters, promotional announcements, and product launches.
+  * **API-triggered campaigns** — On-demand messages triggered by an external system via API. Best for transactional messages such as order confirmations, shipping alerts, and account notifications.
+  * **Orchestrated campaigns** — Complex batch workflows with multi-entity segmentation and canvas-based execution. Best for seasonal promotions, multi-step batch programs, and campaigns requiring exact pre-send counts.
 
 This unified experience allows you to implement entire use cases in one place, from defining audiences and designing journeys to creating personalized content and analyzing results. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
 
 **Important Note:** Adobe Journey Optimizer defines distinct roles with specific responsibilities. A single individual can perform multiple roles or all roles, depending on your organization's structure.
 
-## Role-Based Quick Start Guides
+>[!NOTE]
+>
+>* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
+>
+>* Adobe Experience Cloud general privacy guidelines and procedures apply to [!DNL Journey Optimizer]. [Learn more about Adobe Experience Cloud privacy](https://www.adobe.com/privacy/experience-cloud.html){target="_blank"}.
+
+## Before you begin {#before-you-begin}
+
+A successful implementation starts with preparation. Before configuring Journey Optimizer, align your team on the following:
+
+* **Define your use cases first** — Identify which customer scenarios you will address and prioritize them. This guides every configuration decision, from [data management](../data/gs-data.md) to [channel setup](../configuration/get-started-configuration.md).
+* **Involve all teams that touch the customer experience** — A Journey Optimizer implementation typically spans marketing, IT, data, and operations. Early alignment across teams prevents rework.
+* **Establish a shared customer identifier** — Agree on a common identifier (such as a CRM ID or email address) that exists across all your data sources. This is the foundation of [unified customer profiles](../audience/get-started-profiles.md).
+* **Verify data privacy compliance** — Ensure all data sources you plan to connect comply with applicable [privacy regulations](../privacy/get-started-privacy.md) before ingestion.
+* **Plan for testing before go-live** — Validate that [event triggers, journey conditions, and channel actions](../building-journeys/journey-gs.md) behave as expected in a development or staging sandbox.
+* **Prepare your brand content and asset library** — Identify the digital assets, templates, and brand guidelines your team will use in journeys and campaigns. Loading them into Journey Optimizer's [built-in asset library](../integrations/assets.md) before launch accelerates message creation and ensures brand consistency from day one.
+
+## Role-Based quick start guides
 
 To simplify implementation, Adobe Journey Optimizer organizes tasks into specific roles based on expertise. Each role focuses on essential tasks required to deliver a seamless customer experience.
 
@@ -40,7 +62,7 @@ To simplify implementation, Adobe Journey Optimizer organizes tasks into specifi
 
 Each role addresses a specific phase of Adobe Journey Optimizer implementation and ensures a structured and efficient deployment process.
 
-## Implementation Order and Role Dependencies
+## Implementation order and role dependencies
 
 A successful Journey Optimizer implementation typically follows this sequence, which reflects the dependencies between roles:
 
@@ -80,7 +102,7 @@ A successful Journey Optimizer implementation typically follows this sequence, w
 
  **Note:** While this sequence is typical, some activities can occur in parallel. For instance, Developers may work on app integrations while Data Engineers configure schemas.
 
-## Getting Started by Role
+## Getting started by role
 
 Each role begins with specific tasks tailored to its focus. Completing these initial steps ensures smoother onboarding and alignment with the overall implementation process:
 
@@ -103,7 +125,7 @@ As a Marketer or Business Practitioner, you design customer journeys to deliver 
 
 [Get Started as a Marketer →](path/marketer.md)
 
-### For Data Engineers {#for-data-engineers}
+### For data engineers {#for-data-engineers}
 
 As a Data Architect or Engineer, you set up and maintain the customer profile data and other data sources that power the experiences orchestrated by Journey Optimizer.
 

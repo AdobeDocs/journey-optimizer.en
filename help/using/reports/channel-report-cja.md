@@ -129,7 +129,7 @@ The **[!UICONTROL Outbound errors]** table empowers you to pinpoint the precise 
 
 The **[!UICONTROL Outbound exclusions]** table present a comprehensive view of the different factors that resulted in the exclusion of user profiles from the targeted audience, resulting in the message not being received.
 
-## Journey Capping and Conflicts {#rule-sets}
+## Journey capping and conflicts {#rule-sets}
 
 The **[!UICONTROL Journey Capping and Conflicts]** table provides insights into how journey arbitration rule sets are performing, showing journey entrances and exclusions based on the capping rules and priority scores applied to your journeys.
 
@@ -150,6 +150,8 @@ The **[!UICONTROL Exclusions]** column shows the number of profiles that were ex
 * **Lower priority**: The cap has not been reached, but other higher priority journeys meet the constraints. The profile was excluded from this journey and entered a higher priority journey instead.
 
 +++
+
+To investigate these exclusions at the Data Lake level using Adobe Experience Platform Query Service, see [Business rules queries](query-examples.md#business-rules-queries).
 
 ➡️ [Learn more about journey capping & arbitration](../conflict-prioritization/journey-capping.md)
 

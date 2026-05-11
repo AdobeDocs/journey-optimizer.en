@@ -86,14 +86,14 @@ You can also use personalization for all the header parameters defined in a conf
 
 >[!NOTE]
 >
->* All **[!UICONTROL Header parameters]** fields can be personalized, except the **[!UICONTROL Error email prefix]** field.
+>* All **[!UICONTROL Header parameters]** and optional **[!UICONTROL Sender headers]** fields can be personalized, except the **[!UICONTROL Error email prefix]** field.
 >* When [editing an email configuration](../configuration/channel-surfaces.md#edit-channel-surface), you cannot add new [profile attributes](../personalization/personalization-build-expressions.md#sources) to header parameters — you must create a new channel configuration instead.
 
 For example, if you have multiple brands, you can create a single configuration and use personalized values for your email headers. This allows you to make sure that all emails sent from your different brands are addressed to each of your customers with the correct **From** names and emails. Similarly, when your recipients hit the **Reply** button in their email client software, you want the **Reply to** names and emails correspond to the correct brand for the right user.
 
 To use personalized variables for your configuration header parameters, follow the steps below.
 
-1. Define your header parameters as you would usually do. [Learn how](email-settings.md#email-header)
+1. Define your header parameters as you would usually do. [Learn how](header-parameters.md)
 
 1. For each field, select the Edit icon.
 
@@ -110,16 +110,16 @@ To use personalized variables for your configuration header parameters, follow t
     For example, you want to handle dynamically emails sent on behalf of a relationship manager, whose details are stored in the customer profile, so that every customer is linked to a relationship manager. In a [journey](../building-journeys/journey-gs.md), the email header (sender name, sender email, reply to address) can be personalized with the relationship manager's parameters, taken from the profile attributes.
     
     <!--
-The examples below use event parameters, which are currently not available.
+    The examples below use event parameters, which are currently not available.
     
     Let's say you want to handle dynamically emails sent on behalf of a sales assistant, where the sales assistant is retrieved from an event or campaign contextual parameters. For example: In a [journey](../building-journeys/journey-gs.md), when a purchase event is linked to the sales assistant of a specific shop, the email header (sender name, sender email, reply to address) can be personalized with the sales assistant parameters, taken from the event attributes. In an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), initiated externally by a sales assistant, the triggered email can be sent on behalf of the sales assistant and the header personalization values taken from campaign contextual parameters.
--->
+    -->
 
 1. Repeat the steps above for each parameter you want to add personalization to.
 
 >[!NOTE]
 >
->If you added one or more dynamic subdomains to your configuration, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains).
+>If you added one or more dynamic subdomains to your configuration, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains). **[!UICONTROL Sender email]**, when set, is a full address and is not built from that subdomain suffix.
 
 ## Use personalized URL tracking {#personalize-url-tracking}
 

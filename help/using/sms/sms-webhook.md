@@ -369,18 +369,10 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
     * **OriginTimestamp**: The timestamp when the message was received, in UTC format.
     * **InboundNumber**: The phone number used for this webhook configuration.
 
-    +++Payload example
+    >[!TIP]
+    >
+    > Open the **[!UICONTROL Setup guide]** for a sample JSON payload and step-by-step guidance.
 
-        ```json
-        {
-        "inboundMessage": "{{inboundMessage}}",
-        "profileNumber": "{{profileNumber}}",
-        "requestId": "{{requestId}}",
-        "originTimestamp": "{{originTimestamp}}",
-        "inboundNumber": "{{inboundNumber}}"
-        }
-        ```
-    +++
 
 1. When your JSON file is created, click **[!UICONTROL View payload editor]**, then copy and paste your JSON payload into the editor and save it.
 
@@ -410,17 +402,17 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
     +++Payload example
 
-        ```json
+    ```json
+    {
+    "clientReference": "{{client_reference}}",
+    "statuses": [
         {
-        "clientReference": "{{client_reference}}",
-        "statuses": [
-            {
-                "code": "{{failureCode}}",
-                "status": "{{feedbackStatus}}"
-            }
-        ]
+            "code": "{{failureCode}}",
+            "status": "{{feedbackStatus}}"
         }
-        ```
+    ]
+    }
+    ```
 
     +++
 

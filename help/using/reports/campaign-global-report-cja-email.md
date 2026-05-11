@@ -110,7 +110,7 @@ The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis
 
 +++
 
-## Unique Sending Statistics {#unique-sending-statistics-email}
+## Unique sending statistics {#unique-sending-statistics-email}
 
 ![](assets/cja-unique-email-sending-stat.png)
 

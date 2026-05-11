@@ -13,7 +13,7 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 ## Dataflow limitations
 
-### Data Design & Storage
+### Data design & storage
 
 * The relational datastore supports a **maximum of 200 tables** (schemas).
 

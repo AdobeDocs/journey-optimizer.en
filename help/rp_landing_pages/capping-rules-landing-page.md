@@ -12,7 +12,7 @@ Capping rules are part of [conflict management & prioritization](../using/confli
 
 You can set limits on how often messages are sent (frequency capping), how many journeys a profile can enter (journey capping), and when messages are blocked (quiet hours). Rules are grouped into **rule sets** and applied to campaigns or journeys. For programmatic control from external systems, see the [Capping API](../using/configuration/capping.md).
 
-## Set Message & Journey Capping Rules
+## Set message & Journey capping rules
 
 :::: landing-cards-container
 :::

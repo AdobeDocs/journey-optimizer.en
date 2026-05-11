@@ -334,26 +334,34 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
 
 >[!CONTEXTUALHELP]
->id="ajo_orchestration_incrementalquery"
->title="Incremental query"
->abstract="The Incremental query is a Targeting activity that runs a database query every time the Orchestrated campaign runs. It returns only new records and excludes anyone already included in a previous run, so you avoid re-targeting the same people or re-exporting the same rows."
+>id="ajo_admin_aem_content_fragment_configuration"
+>title=""AEM Configuration Help"
+>abstract="Learn more about creating and managing a configuration"
 
 >[!CONTEXTUALHELP]
->id="ajo_orchestration_incrementalquery_processeddata"
->title="Processed data"
->abstract="Under Processed data, choose how to exclude records from earlier runs. With Exclude results of previous execution, the activity keeps a list of records returned in prior runs; each run excludes those and returns only new ones. With the Use a date field option, the activity uses a selected date field instead of tracking individual IDs, and each run returns only rows whose date is after the last execution."
+>id="ajo_admin_aem_configure_instance"
+>title="Instance Configuration"
+>abstract="Select the appropriate instance configuration type for your setup. </br>Author only setup: Use content fragments from the AEM author instance. Publish instance configuration and live updates are not supported.</br>Publish instance setup: Configure publish instance settings. Optionally enable "Send token to publish instance" to provide Service Credentials for authentication."
 
 >[!CONTEXTUALHELP]
->id="ajo_orchestration_incrementalquery_history"
->title="History in days"
->abstract="This setting controls how long that list is retained. A value of 0 means indefinite retention; no records are removed."
+>id="ajo_admin_aem_send_token"
+>title="Send token to publish instance"
+>abstract="When enabled, Service Credentials are sent to authenticate requests to the publish instance. Provide a valid Service Credential JSON below."
 
 >[!CONTEXTUALHELP]
->id="ajo_inbox_location"
->title="Location on page"
->abstract="."
+>id="ajo_admin_aem_service_credential"
+>title="Paste Service Credential JSON"
+>abstract="Paste your AEM service credential JSON after creating them by going through the public technical account documentation. It will be automatically formatted and validated."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#create-a-technical-account"
 
 >[!CONTEXTUALHELP]
->id="ajo_inbox_app_id"
->title="App ID"
->abstract="."
+>id="ajo_admin_aem_custom_domain"
+>title="Custom domain"
+>abstract="Optional. Provide a custom domain ifpublish-p16552-e147195.adobeaemcloud.comis blocked from fetching content for your org"
+
+<!-- JOURNEYS - EXPRESSION ASSISTANT -->
+
+>[!CONTEXTUALHELP]
+>id="journeyExpAI"
+>title="Expression Assistant"
+>abstract="Use Expression Assistant to generate and refine expressions in Journey Optimizer."

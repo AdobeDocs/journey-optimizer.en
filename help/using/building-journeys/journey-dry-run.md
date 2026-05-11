@@ -125,7 +125,7 @@ Dry run journeys can also be stopped manually. To deactivate the Dry run mode, f
 * **Jump** actions are not enabled in Dry run. 
     When a source journey triggers a **Jump** event to a destination one, that jump event would not be applicable to a Dry run journey version. For instance, if the latest version of a journey is in Dry run and the previous one is **Live**, then the jump event would ignore the Dry run version and only be applicable for the **Live** one.
 
-## Journey Step Events and Dry run {#journey-step-events}
+## Journey step events and dry run {#journey-step-events}
 
 Journey Dry run generates **stepEvents**. These stepEvents have a specific flag and Dry run ID: `inDryRun` and `dryRunID`.
 

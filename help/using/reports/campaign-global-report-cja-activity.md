@@ -7,7 +7,7 @@ feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
-hide: yes
+hide: true
 exl-id: 58034ec4-62dc-406c-99c4-d6b7aa107140
 ---
 # Live activity campaign report {#campaign-global-report-cja-activity}

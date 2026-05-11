@@ -15,7 +15,6 @@ exl-id: 7099d44e-5d5d-4eef-9477-f68f4eaa1983
 >[!AVAILABILITY]
 >
 >The new **Mobile onboarding quick start workflow** is now available. Use this new product feature to rapidly configure the Mobile SDK to start collecting and validating mobile event data, and to send mobile push notifications. This capability is accessible via the Data Collection home page as a public beta. [Learn more](mobile-onboarding-wf.md)
->
 
 ## Before starting {#start-push}
 
@@ -123,9 +122,9 @@ Follow implementation steps detailed in the links below:
 
 ### Integrate your mobile app with Adobe Experience Platform SDK {#integrate-mobile-app}
 
-Adobe Experience Platform Mobile SDK provides client-side integration APIs for your mobiles via Android and iOS compatible SDKs. Follow [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/){target="_blank"} to get setup with Adobe Experience Platform Mobile SDKs in your app.
+Adobe Experience Platform Mobile SDK provides client-side integration APIs for your mobiles via Android and iOS compatible SDKs. Follow [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started){target="_blank"} to get setup with Adobe Experience Platform Mobile SDKs in your app.
 
-By the end of this, you should have also created and configured a mobile property in [!DNL Adobe Experience Platform Data Collection]. You will typically create a mobile property for each mobile application you want to manage. Learn how to create and configure a mobile property in [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/){target="_blank"}.
+By the end of this, you should have also created and configured a mobile property in [!DNL Adobe Experience Platform Data Collection]. You will typically create a mobile property for each mobile application you want to manage. Learn how to create and configure a mobile property in [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property){target="_blank"}.
 
 <!--
 To enable **Web push notifications**, ensure that the [pushNotifications property](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications) is properly configured within the Web SDK. Then, use [the sendPushSubscription command](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription) to register push subscriptions with Adobe Experience Platform.
@@ -190,7 +189,7 @@ The mobile app push credential registration is required to authorize Adobe to se
 1. Click **[!UICONTROL Submit]** to create your app configuration.
 
 <!--
-## Step 2: Set up a mobile property in Adobe Experience Platform Launch {#launch-property}
+## Step 2: set up a mobile property in Adobe Experience Platform launch {#launch-property}
 
 Setting up a mobile property allows the mobile app developer or marketer to configure the mobile SDKs attributes such as Session Timeouts, the [!DNL Adobe Experience Platform] sandbox to be targeted and the **[!UICONTROL Adobe Experience Platform Datasets]** to be used for mobile SDK to send data to.
 
@@ -232,17 +231,34 @@ Once creating your push credentials, you need to create a configuration to be ab
 
 1. Choose your **[!UICONTROL Platform]**: Android and/or iOS <!--and/or Web-->.
 
-1. Select the same **[!UICONTROL App id]** as for your [push credential](#push-credentials-launch) configured above.
+1. For **[!UICONTROL App id]**, select the value that matches your [push credential](#push-credentials-launch). Optionally, use personalization to drive many apps from one journey or campaign. [Learn more](#app-id-personalization)
 
-1. Save your changes.
+1. **Save** your changes.
 
 You can now select your configuration when creating your push notifications.
 
-## Step 3: Configure Adobe Journey Optimizer Extension in your mobile property {#configure-journey-optimizer-extension}
+### Personalize the App id (optional) {#app-id-personalization}
+
+>[!CONTEXTUALHELP]
+>id="ajo_surface_dynamic_app_id"
+>title="Personalize App id"
+>abstract="When you manage multiple mobile apps, store each app id on the profile and use a single push channel configuration. Open the personalization editor next to the App id field to select a profile attribute; the expression is evaluated at send time for each recipient. Ensure push credentials exist for every app id your expression can return."
+
+When you have many brands or tenants with separate apps, you can store each **[!UICONTROL App id]** on the profile and use a single channel configuration to send push notifications to the correct app for each recipient.
+
+To do so, click the Personalization icon next to the **[!UICONTROL App id]** field, select a profile attribute mapped to the app id, and save. The field uses the corresponding [Handlebars expression](../personalization/personalization-syntax.md) evaluated for each recipient at send time.
+
+![](assets/push-config-11.png){width="70%"}
+
+>[!CAUTION]
+>
+>[!DNL Journey Optimizer] does not check that [push credentials](#push-credentials-launch) exist for every value the expression may return. Make sure you have push credentials for every possible app id, and test with representative profiles. If a recipient's resolved app id has no matching push credentials, they will not be delivered as expected.
+
+## Step 3: configure Adobe Journey Optimizer extension in your mobile property {#configure-journey-optimizer-extension}
 
 The **Adobe Journey Optimizer extension** for Adobe Experience Platform Mobile SDKs powers push notifications for your mobile apps and helps you collects user push tokens and manages interaction measurement with Adobe Experience Platform services.
 
-Learn how to setup Journey Optimizer extension in [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/){target="_blank"}.
+Learn how to setup Journey Optimizer extension in [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer){target="_blank"}.
 
 
 <!--
@@ -293,13 +309,13 @@ To configure **[!UICONTROL Adobe Experience Platform Messaging]** extension to s
 -->
 
 <!--
-## Step 4: Publish the Property {#publish-property}
+## Step 4: publish the property {#publish-property}
 
 You now need to publish the property to integrate your configuration and to use it in the mobile app. 
 
 To publish your property, refer to the steps detailed in [Adobe Experience Platform Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property#publish-the-configuration)
 
-## Step 5: Configure the ProfileDataSource {#configure-profiledatasource}
+## Step 5: configure the profiledatasource {#configure-profiledatasource}
 
 To configure the `ProfileDataSource`, use the `ProfileDCInletURL` from [!DNL Adobe Experience Platform] setup and add the following in the mobile app:
 
@@ -405,4 +421,3 @@ Your event is now created and can now be used in a journey.
 1. Click **[!UICONTROL Send]**.
 
 Your event will be triggered and you will receive your push notification to your mobile app.
-
