@@ -499,7 +499,7 @@ solution: Journey Optimizer
     + {hide-from-toc} [Work with Experience Manager templates](using/integrations/aem-templates.md)
     + Experience Manager Content Fragments {#aem}
       + [Get started with Experience Manager Content Fragments](using/integrations/aem-fragments-gs.md)
-      + [Configure Experience Manager for Content Fragments](using/administration/aem-admin-settings.md)
+      + {hide-from-toc} [Configure your repository for Content Fragments](using/administration/aem-admin-settings.md)
       + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
       + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
     + {hide-from-toc} [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
