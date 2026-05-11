@@ -19,6 +19,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Business rules queries** section has been added to the query examples page, providing a Data Lake query to check all profile discards due to journey frequency capping exclusions on a specific journey after a specific date. The query includes the `eventCodeReason` field to identify whether profiles were excluded because a cap was reached (`CAP_REACHED`) or due to a lower priority (`LOWER_PRIORITY`). [Read more](../reports/query-examples.md#business-rules-queries)
 
+* The **Journey properties** documentation has been updated to document the new **Current journey payload size** indicator in the journey properties panel. This read-only field shows the current size of the journey payload compared to the configured limit (e.g. 1.5 MB out of 2 MB), helping you monitor journey complexity before publishing and avoid size-related publication errors. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
+
 ## April 2026 {#april-2026}
 
 * The **Change dimension** activity documentation has been updated to clarify that while the activity uses an external join and keeps all records at the dimension-change step, records without a matching profile in the new targeting dimension are silently excluded at message delivery time. [Read more](../orchestrated/activities/change-dimension.md)

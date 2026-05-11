@@ -64,6 +64,10 @@ Browse the tabs below to learn how to add a WhatsApp message in a campaign or a 
 
     The **[!UICONTROL configuration]** field is pre-filled, by default, with the last configuration used for that channel by the user.
 
+1. In the **[!UICONTROL Business rules]** section, you can apply a rule set to control communication pressure on WhatsApp messages.
+
+    Learn more about [rule sets](../conflict-prioritization/rule-sets.md), [channel frequency capping](../conflict-prioritization/channel-capping.md), and [quiet hours](../conflict-prioritization/quiet-hours.md).
+
 You can now start designing the content of your WhatsApp message from the **[!UICONTROL Edit content]** button, as detailed below.
 
 >[!TAB Add a WhatsApp message to a Campaign]

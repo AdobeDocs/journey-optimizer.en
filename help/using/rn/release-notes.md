@@ -121,7 +121,7 @@ The following capabilities and enhancements are scheduled for release in the nex
 <p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
 <!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
 <p>For more information, refer to the <a href="../email/message-tracking.md">detailed documentation</a>.</p>
-<p>Availability date: May 7, 2026</p>
+<p>Availability date: May 11, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -431,6 +431,12 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
   Previously available for email content templates only, this capability is now deployed to **email** content in the Email Designer (for example, emails authored in journeys and campaigns), in addition to email content templates. It is currently in Limited Availability — contact your Adobe representative to gain access. [Read more](../email/email-expert-mode.md)
 
   Availability date: April 9, 2026
+
+#### Journeys
+
+* **Current journey payload size visible in journey properties** - The journey properties panel now displays the current size of the journey payload compared to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator helps you monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
+
+  Availability date: April 30, 2026
 
 #### Journey Path Optimization
 
