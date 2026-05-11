@@ -18,28 +18,28 @@ This section lists the fields available in the exported dataset.
 
 ## Dataset fields
 
-+++ `_experience`
++++ _experience
 
 **Field:** `_experience`  
 **Type:** object
 
 +++
 
-+++ `_experience > customerJourneyManagement`
++++ _experience > customerJourneyManagement
 
 **Field:** `customerJourneyManagement`  
 **Type:** object
 
 +++
 
-+++ `_experience > customerJourneyManagement > messageDeliveryMetadata`
++++ _experience > customerJourneyManagement > messageDeliveryMetadata
 
 **Field:** `messageDeliveryMetadata`  
 **Type:** object
 
 +++
 
-+++ `_experience > customerJourneyManagement > messageDeliveryMetadata > emailMetadata`
++++ _experience > customerJourneyManagement > messageDeliveryMetadata > emailMetadata
 
 **Field:** `emailMetadata`  
 **Type:** object
@@ -101,7 +101,7 @@ This section lists the fields available in the exported dataset.
 
 +++
 
-+++ `_experience > customerJourneyManagement > messageDeliveryMetadata > smsMetadata`
++++ _experience > customerJourneyManagement > messageDeliveryMetadata > smsMetadata
 
 **Field:** `smsMetadata`  
 **Type:** object
@@ -128,7 +128,7 @@ This section lists the fields available in the exported dataset.
 
 +++
 
-+++ `_experience > customerJourneyManagement > messageExecution`
++++ _experience > customerJourneyManagement > messageExecution
 
 **Field:** `messageExecution`  
 **Type:** object
@@ -254,7 +254,7 @@ This section lists the fields available in the exported dataset.
 
 +++
 
-+++ `_experience > customerJourneyManagement > messageProfile`
++++ _experience > customerJourneyManagement > messageProfile
 
 **Field:** `messageProfile`  
 **Type:** object
@@ -356,7 +356,7 @@ This section lists the fields available in the exported dataset.
 
 +++
 
-+++ `_experience > customerJourneyManagement > messageRenderedContent`
++++ _experience > customerJourneyManagement > messageRenderedContent
 
 **Field:** `messageRenderedContent`  
 **Type:** object
@@ -403,7 +403,7 @@ This section lists the fields available in the exported dataset.
 
 +++
 
-+++ `identityMap`
++++ identityMap
 
 **Field:** `identityMap`  
 **Type:** map
@@ -429,21 +429,21 @@ This section lists the fields available in the exported dataset.
 
 +++
 
-+++ `eventType`
++++ eventType
 
 **Field:** `eventType`  
 **Type:** string
 
 +++
 
-+++ `producedBy`
++++ producedBy
 
 **Field:** `producedBy`  
 **Type:** string
 
 +++
 
-+++ `timestamp`
++++ timestamp
 
 **Field:** `timestamp`  
 **Type:** dateTime
