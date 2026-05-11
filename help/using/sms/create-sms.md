@@ -143,6 +143,10 @@ To configure your message content, follow the steps below. Settings for MMS are 
     >
     > The lifespan of short URLs is set to 30 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
 
+1. Use the **[!UICONTROL Character count]** to monitor SMS length as you compose the message. It updates in real time and indicates when the content will be delivered in multiple segments.
+
+    ![](assets/sms_tracking_3.png)
+
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](#sms-mms-test).
 
 ## Personalize with Decisioning {#decisioning-sms}

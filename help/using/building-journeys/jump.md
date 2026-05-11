@@ -102,7 +102,7 @@ Build each phase as a separate journey in Journey Optimizer, then use **[!UICONT
 
 >[!TIP]
 >
->For a detailed walkthrough of this approach, see [Best practices for advanced journeys in Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
+>For a worked example using a multi-phase loyalty program, see [Multi-phase loyalty journey](journeys-uc.md#multi-phase-loyalty).
 
 ## Configuring the Jump activity {#jump-configure}
 
