@@ -27,8 +27,8 @@ You can create two types of rule sets:
 
 * **Channel** rule sets apply rules to communication channels. They allow you to set:
 
-   * **Frequency capping rules** - *Do not send more than 1 email or SMS communication per day.*
-   * **Quiet hours rules** - *Do not send email messages ouside of the 8AM - 9PM timeslot.*
+   * **Frequency capping rules** - *Do not send more than 1 Email, SMS, Push, Direct mail, or WhatsApp communication per day.*
+   * **Quiet hours rules** - *Do not send email messages outside of the 8AM - 9PM timeslot.*
 
 * **Journey** rule sets apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
 

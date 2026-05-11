@@ -79,7 +79,6 @@ Now when the email is sent out, this parameter is automatically appended to the 
 >
 >To verify the final URL, you can [send a proof](../content-management/proofs.md) and click the link in the content of the email once you receive the proof. The URL should display the tracking parameter. For example: <https://luma.enablementadobe.com/content/luma/us/en.html?utm_contact=profile.userAccount.contactDetails.homePhone.number>
 
-
 <!--
 ## Best practices and guardrails {#best-practices}
 

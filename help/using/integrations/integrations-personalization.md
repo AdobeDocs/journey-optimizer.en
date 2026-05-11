@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Enable External Integrations
+title: Using External Integrations
 description: Integrate external integrations into the channel authoring process to enrich content with personalized and dynamic information
 feature: Integrations
 topic: Content Management
@@ -67,43 +67,59 @@ Your integration personalization is now successfully applied to your content, en
 
 ![](assets/external-integration-content-7.png)
 
-<!--
-
 ## Map one API call to another {#map-integration-chain}
 
-You can **chain** integrations so that values returned by one active integration drive the inputs (path, headers, or query parameters) of another. That lets you build a real-time data flow in a single message without custom code.
-
+You can chain integrations so one call's results feed the next, for example, path segments, headers, or query parameters. The calls run in order in the same message, which supports richer personalization without custom code.
+ 
 Before you start, make sure that:
 
 * An administrator has configured and activated every integration you need. See [Configure your Integration](integrations.md).
 * Variable path placeholders, headers, and query parameters are set up in the integration configuration with marketer-facing labels.
 * The administrator exposed the response fields you need in each integration's **[!UICONTROL Response payload]** so they appear when authoring.
 
-In the below example, a reservation system integration returns a flight booking reference from the profile context. A separate flight-information integration expects that reference as a **path variable**. In the personalization editor, you map the second integration's variable to a field from the first integration's response, instead of a static value or profile attribute alone.
+The example below uses a reservation integration that returns a flight number from the profile's booking, then a flight information integration that uses that number for live status (delays, destination). You map the second integration's inputs to the first call's response.
 
-1. Open your message or fragment and place the cursor where you want personalized content (for example, a **[!UICONTROL Text]** field).
+1. Open your message or fragment and open the personalization editor.
 
-1. Open the personalization editor and go to **[!UICONTROL Integrations]** → **[!UICONTROL Open integrations]**.
+    ![](assets/uc-integrations-1.png)
 
-1. Select the integration whose output will supply the downstream input (in the example, the reservation or profile API that returns the flight identifier).
+1. In **[!UICONTROL Integrations]**, click **[!UICONTROL Open integrations]**.
 
-1. Define that integration's inputs as usual—static values, profile attributes, or other allowed mappings—then save so its response is available for chaining.
+    ![](assets/uc-integrations-2.png)
+    
+1. Add the integration whose response will feed the next call, for example, reservation or booking data that includes the flight identifier.
+
+    ![](assets/uc-integrations-3.png)
+
+1. (Optional) Open the **[!UICONTROL Helper function]** menu and add a helper, for example, the `Let` function, if you want to bind a named variable to the reservation response.
 
     >[!NOTE]
     >
-    > Fields must appear in the administrator-defined response payload for each integration. You cannot reference response properties that were not exposed in configuration.
+    > Only fields exposed in the administrator-defined **[!UICONTROL Response payload]** are available. You cannot reference properties that were not exposed in configuration.
 
-1. Select the **second** integration (for example, the API that needs the flight number or booking reference on the URL path).
+1. If you use a helper variable, map that variable to the field the reservation integration returns for downstream use, for example, the flight number in the passenger or booking payload.
 
-1. For each input that must come from the first call—often a **path variable** or **variable** header/query parameter—choose the mapping source that references the **first integration's response** (for example, the flight booking reference field from the reservation payload). Do not use a static test value if you need live, profile-specific data.
+    ![](assets/uc-integrations-4.png)
 
-1. Insert the response tokens you need in the content (for example, destination name from the flight API, loyalty balance from a loyalty integration) using the ![add](assets/do-not-localize/Smock_Add_18_N.svg) control.
+1. From the **[!UICONTROL Open integrations]** menu, add the second integration, for example, flight status.
 
-1. Save the personalization.
+    ![](assets/uc-integrations-5.png)
 
-When you **simulate** or send, Journey Optimizer resolves integrations in order: the first call runs with the profile context you configured; its output is used to build the second request. Different integrations may run at simulation time and at send time according to your setup and channel behavior.
+1. In the second integration, open **[!UICONTROL Integrations attributes]**. For each input that must reuse data from the first call, such as a path variable, header, or query parameter, select a mapping source from the first integration response.
 
--->
+    In the **[!UICONTROL Pills]** experience, you can map first-call output directly to second-call input without a `Let` statement. If you used `Let`, you can map through that variable instead.
+
+    ![](assets/uc-integrations-6.png)
+
+1. Insert tokens from the second integration into your content with the ![add](assets/do-not-localize/Smock_Add_18_N.svg) control, for example, destination from the flight information response.
+
+    ![](assets/uc-integrations-8.png)
+
+1. Save your content.
+
+On **[!UICONTROL Simulation]** or send, Journey Optimizer runs integrations in order: the first call uses your configured profile context, and its result builds the second request. Whether a given integration runs at simulation or send time depends on your setup and channel.
+
+![](assets/uc-integrations-7.png)
 
 ## How-to video {#video}
 

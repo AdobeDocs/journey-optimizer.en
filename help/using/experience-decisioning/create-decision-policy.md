@@ -45,11 +45,13 @@ Open a journey or campaign, select a [channel action](../building-journeys/journ
 
 Edit the content of your message and browse the tabs below for more information on how to add the decision policy based on the selected channel.
 
-### For Code-based Experience
+>[!BEGINTABS]
+
+>[!TAB Code-based Experience]
 
 For code-based experiences, you can add a new decision policy using either the **code editor**, or the **Decisioning** menu available in the properties pane.
 
-+++ Add a decision policy from the code editor
++++Add a decision policy from the code editor
 
 1. Open the code editor editor using the **[!UICONTROL Edit code]** button.
 
@@ -59,7 +61,7 @@ For code-based experiences, you can add a new decision policy using either the *
 
 +++
 
-+++ Add a decison policy from the Decisioning menu
++++Add a decison policy from the Decisioning menu
 
 1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
 
@@ -69,7 +71,7 @@ For code-based experiences, you can add a new decision policy using either the *
 
 +++
 
-### For Email
+>[!TAB Email]
 
 1. Toggle the **[!UICONTROL Enable decisioning]** option.
 
@@ -81,7 +83,7 @@ For code-based experiences, you can add a new decision policy using either the *
 
 1. Add a new decision policy, using either the **personalization editor** or the **Decisioning** menu available in the Email designer.
 
-    +++ Add a decision policy from the Personalization editor
+    +++Add a decision policy from the Personalization editor
 
     1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon available in the subject line field or in any field in the email body where you can add personalization.
 
@@ -91,7 +93,7 @@ For code-based experiences, you can add a new decision policy using either the *
 
     +++
 
-    +++ Add a decison policy from the Decisioning menu
+    +++Add a decison policy from the Decisioning menu
 
     1. Open the Email Designer and select any component in the email structure.
 
@@ -117,11 +119,11 @@ You can also add decision policies when using the **[!UICONTROL Code your own]**
 >
 >In **[!UICONTROL Code your own]** mode, you can only return one decision item per policy, because the **[!UICONTROL Repeat Grid]** component is not available.
 
-### For SMS
+>[!TAB SMS]
 
 For SMS, you can add a new decision policy using either the **personalization editor**, or the **Decisioning** menu available in the properties pane.
 
-+++ Add a decision policy from the personalization editor
++++Add a decision policy from the personalization editor
 
 1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
 1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
@@ -130,7 +132,7 @@ For SMS, you can add a new decision policy using either the **personalization ed
 
 +++
 
-+++ Add a decison policy from the Decisioning menu
++++Add a decison policy from the Decisioning menu
 
 1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
 
@@ -140,11 +142,11 @@ For SMS, you can add a new decision policy using either the **personalization ed
 
 +++
 
-### For Push notification
+>[!TAB Push notification]
 
 For Push notifications, you can add a new decision policy using either the **personalization editor**, or the **Decisioning** menu available in the properties pane.
 
-+++ Add a decision policy from the personalization editor
++++Add a decision policy from the personalization editor
 
 1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
 1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
@@ -153,7 +155,7 @@ For Push notifications, you can add a new decision policy using either the **per
 
 +++
     
-+++ Add a decison policy from the Decisioning menu
++++Add a decison policy from the Decisioning menu
 
 1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
 
@@ -164,8 +166,10 @@ For Push notifications, you can add a new decision policy using either the **per
 >[!IMPORTANT]
 >
 >Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions){target="_blank"}.
-
+ 
 +++
+
+>[!ENDTABS]
 
 ## Configure the decision policy {#configure}
 
@@ -183,7 +187,7 @@ After you have added a new decision policy into your content, the decision polic
 
     To return multiple items for the Email channel, you need to add the decision policy within a **[!UICONTROL Repeat Grid]** component. Expand the section below for more details:
 
-    +++ Return multiple decision items in emails
+    +++Return multiple decision items in emails
 
     1. Drag a **[!UICONTROL Repeat Grid]** component in your email and configure it as desired using the **[!UICONTROL Settings]** pane. 
 

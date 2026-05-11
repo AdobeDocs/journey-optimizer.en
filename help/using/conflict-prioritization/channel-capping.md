@@ -74,13 +74,15 @@ To create a channel rule set, follow these steps :
 
    Make sure you enter a value that matches the selected duration type: 1-23 for Hourly, 1-30 for Daily, 1-4 for Weekly, and 1-3 for Monthly.
 
-   The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this resets occurs every two days at midnight UTC.
+   The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this reset occurs every two days at midnight UTC.
 
-1. Select the channel you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]** or **[!UICONTROL Direct mail]**.
+1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]** or **[!UICONTROL WhatsApp]**.
 
-1. Select several channels if you want to apply capping across all selected channels as a total count.
+   ![](assets/rule-sets-channels.png)
 
-   For example, set capping to 5, and select both the email and sms channels. If a profile has already received 3 marketing emails and 2 marketing sms for the selected period, this profile will be excluded from the very next delivery of any marketing email or sms.
+   Select several channels if you want to apply capping across all selected channels as a total count.
+
+   For example, set capping to 5, and select both the Email and SMS channels. If a profile has already received 3 marketing emails and 2 marketing SMS messages for the selected period, this profile will be excluded from the very next delivery of any marketing email or SMS message.
 
 1. Click **[!UICONTROL Save]** to confirm the rule creation. Your message is added to the rule set, with the **[!UICONTROL Draft]** status.
 
