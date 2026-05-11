@@ -340,13 +340,17 @@ Output (example):
 
 +++Example — Conditional rendering inside a loop
 
-Use the PQL `{% if %}` block inside `{{#each}}` to render content only when a condition is met:
+Use the `{%#if%}` block inside `{{#each}}` to render content only when a condition is met:
+
+>[!NOTE]
+>
+>`{% if %}` / `{% endif %}` are not supported. Use `{%#if%}` / `{%/if%}` instead. Also, `this.<field>` does not work inside PQL condition expressions — reference the field directly using the attribute name (e.g. `order.status`).
 
 ```handlebars
-{{#each profile.orders}}
-  {% if this.status = "pending" %}
-  Your order {{this.id}} is still pending.
-  {% endif %}
+{{#each profile.orders as |order|}}
+  {%#if order.status = "pending"%}
+  Your order {{order.id}} is still pending.
+  {%/if%}
 {{/each}}
 ```
 

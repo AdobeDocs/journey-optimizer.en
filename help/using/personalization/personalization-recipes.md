@@ -42,12 +42,12 @@ Output (example): `April 11, 2026`
 Use `dateDiff` to compute the number of days remaining until a profile date attribute, then render it dynamically:
 
 ```handlebars
-{% let daysLeft = dateDiff(stringToDate(profile.loyalty.expiryDate), getCurrentZonedDateTime()) %}
-{% if daysLeft > 0 %}
-Your reward points expire in {{daysLeft}} day{% if daysLeft > 1 %}s{% endif %}. Use them before they're gone!
-{% else %}
+{% let daysLeft = dateDiff(getCurrentZonedDateTime(), stringToDate(profile.loyalty.expiryDate)) %}
+{%#if daysLeft > 0%}
+Your reward points expire in {{daysLeft}} day{%#if daysLeft > 1%}s{%/if%}. Use them before they're gone!
+{%else%}
 Your reward points have expired.
-{% endif %}
+{%/if%}
 ```
 
 Output (example): `Your reward points expire in 7 days. Use them before they're gone!`
@@ -85,11 +85,11 @@ Output (example): `Your appointment is at 14:05.`
 Use `dayOfWeek` to adapt content based on the day. The function returns 1 (Monday) through 7 (Sunday). Use the single `=` operator (PQL syntax, not `==`):
 
 ```handlebars
-{% if dayOfWeek(getCurrentZonedDateTime()) = 6 or dayOfWeek(getCurrentZonedDateTime()) = 7 %}
+{%#if dayOfWeek(getCurrentZonedDateTime()) = 6 or dayOfWeek(getCurrentZonedDateTime()) = 7%}
 We're closed on weekends — our team will follow up on the next business day.
-{% else %}
+{%else%}
 Our team will get back to you within 24 hours.
-{% endif %}
+{%/if%}
 ```
 
 >[!NOTE]
@@ -120,17 +120,22 @@ Output (example):
 >
 >`{{#each}}` is not supported in the journey condition activity. For array filtering in conditions, use [collection management functions](../building-journeys/expression/collection-management-functions.md).
 
-### Recipe 7 — Show only the first N items from an array {#recipe-first-n}
+### Recipe 7 — Show the top N items from an array by price {#recipe-first-n}
 
-Use `topN` to sort and retrieve the top N items, then loop with `{{#each}}`:
+Use `topN` to sort and retrieve the top N items by a numeric field. Since `topN` is a PQL function, assign it to a variable first with `{% let %}`, then loop with `{{#each}}`:
 
 ```handlebars
-{{#each topN(profile.orders, price, 3)}}
+{% let topOrders = topN(profile.orders, price, 3) %}
+{{#each topOrders}}
   {{this.name}} — {{this.price}}&euro;
 {{/each}}
 ```
 
-Or use `head` to get only the single first item:
+>[!NOTE]
+>
+>`topN(profile.orders, price, 3)` sorts orders by `price` in descending order and returns the top 3 — it does not simply return the first 3 items in the original array order.
+
+Or use `head` to get only the single top item:
 
 ```sql
 {%= head(profile.purchases.recentItems).name %}
@@ -138,15 +143,19 @@ Or use `head` to get only the single first item:
 
 ### Recipe 8 — Render content conditionally per array item {#recipe-conditional-loop}
 
-Use the PQL `{% if %}` block inside `{{#each}}` to render output only for matching items:
+Use `{%#if%}` inside `{{#each}}` to render output only for matching items. Define a loop alias with `as |order|` so the PQL evaluator can resolve the attribute reference in the condition:
 
 ```handlebars
-{{#each profile.orders}}
-  {% if this.status = "pending" %}
-  Order {{this.id}} is pending — we'll notify you when it ships.
-  {% endif %}
+{{#each profile.orders as |order|}}
+  {%#if order.status = "pending"%}
+  Order {{order.id}} is pending — we'll notify you when it ships.
+  {%/if%}
 {{/each}}
 ```
+
+>[!NOTE]
+>
+>`this.status` works in Handlebars expressions but is not resolved by the PQL evaluator inside `{%#if%}`. Using a named loop alias (e.g. `order`) makes the attribute available to both the Handlebars and PQL contexts.
 
 ## String & formatting recipes {#string-recipes}
 
@@ -157,7 +166,7 @@ Use the PQL `{% if %}` block inside `{{#each}}` to render output only for matchi
 ```handlebars
 {% let cleanName = replaceAll(profile.person.name.firstName, "[^a-zA-Z]", "") %}
 Hi {{cleanName}},
-Your exclusive code is: WELCOME-{{upperCase(cleanName)}}
+Your exclusive code is: WELCOME-{%= upperCase(cleanName) %}
 ```
 
 Output (example):
@@ -199,16 +208,16 @@ Output (example): `WEDNESDAY JANUARY 01 2020`
 
 ### Recipe 12 — IF/ELSEIF/ELSE in personalized content {#recipe-if-elseif}
 
-Use `{% if %}`, `{% elseif %}`, and `{% else %}` for multi-branch conditional logic. This pattern works in email content and fragments:
+Use `{%#if%}`, `{%else if%}`, and `{%else%}` for multi-branch conditional logic. This pattern works in email content and fragments:
 
 ```handlebars
-{% if profile.loyalty.tier = "gold" %}
+{%#if profile.loyalty.tier = "gold"%}
 As a Gold member, enjoy free shipping on all orders.
-{% elseif profile.loyalty.tier = "silver" %}
+{%else if profile.loyalty.tier = "silver"%}
 As a Silver member, enjoy free shipping on orders over &euro;50.
-{% else %}
+{%else%}
 Join our loyalty program to unlock exclusive benefits.
-{% endif %}
+{%/if%}
 ```
 
 ### Recipe 13 — Null-safe attribute display {#recipe-null-safe}
@@ -216,11 +225,11 @@ Join our loyalty program to unlock exclusive benefits.
 Use a conditional fallback to avoid rendering empty values when a profile attribute may be null or missing:
 
 ```handlebars
-{% if profile.person.name.firstName %}
+{%#if profile.person.name.firstName%}
 Hi {{profile.person.name.firstName}},
-{% else %}
+{%else%}
 Hi there,
-{% endif %}
+{%/if%}
 ```
 
 Or inline with a ternary-style pattern using `isEmpty`:
@@ -233,17 +242,15 @@ Hi {% if isEmpty(profile.person.name.firstName) %}valued customer{% else %}{{pro
 
 ### Recipe 14 — Reference a hyphenated attribute key {#recipe-hyphenated-key}
 
-If your XDM schema field name contains hyphens (e.g. `order-total`, `event-type`), wrap it in backticks to prevent the hyphen from being interpreted as a subtraction operator:
-
-```handlebars
-{{profile.commerce.`order-total`}}
-```
+If your XDM schema field name contains hyphens (e.g. `order-total`, `event-type`), wrap it in backticks inside a PQL expression to prevent the hyphen from being interpreted as a subtraction operator:
 
 ```sql
 {%= profile.events.`order-total` > 100 %}
 ```
 
-Without backticks, the expression raises a PQL syntax error.
+>[!NOTE]
+>
+>Backticks are only supported inside PQL expressions (`{%= ... %}`). They are not accepted in plain Handlebars interpolation (`{{...}}`). If you need to render a hyphenated field value directly, evaluate it via a PQL expression or store it in a variable using `{% let %}` first.
 
 ### Recipe 15 — Reference a numeric event ID in a context attribute {#recipe-numeric-event-id}
 
@@ -255,10 +262,6 @@ Your appointment: {{appointmentDate}}
 ```
 
 Output (example): `Your appointment: 18/03/2026 14:30`
-
->[!CAUTION]
->
->Using `{%= formatDate(toDateTime(context.journey.events.`1697323153`.timestamp), "dd/MM/yyyy") %}` inline (without `{% let %}`) causes a **"mismatched input '(' expecting \<EOF\>"** PQL error. Always use the `{% let %}` assignment pattern for this case.
 
 ### Recipe 16 — Type coercion: compare a string field to a number {#recipe-type-coercion}
 

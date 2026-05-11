@@ -676,8 +676,8 @@ Returns `Hello AJO`.
 
 ```handlebars
 {% let cleanName = replaceAll(profile.person.name.firstName, "[^a-zA-Z]", "") %}
-Hello {{cleanName}}, your personalised offer is ready.
-Your code: WELCOME-{{upperCase(cleanName)}}
+Hello {{cleanName}}, your personalized offer is ready.
+Your code: WELCOME-{%= upperCase(cleanName) %}
 ```
 
 The `{% let %}` assignment stores the result of `replaceAll` so it can be referenced as `{{cleanName}}` without calling the function again. This is the correct pattern — chaining `replaceAll` inside itself or trying to reassign to the same profile variable is not supported.

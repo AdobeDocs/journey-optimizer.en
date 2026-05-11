@@ -81,17 +81,17 @@ Beyond reserved keywords, two additional cases require backtick escaping in PQL 
 
 ### Hyphenated attribute keys {#hyphenated-keys}
 
-If your XDM schema contains field names with hyphens (e.g. `my-field`, `event-type`) or names that start with or contain numbers, wrap the key in backticks:
-
-```handlebars
-{{profile.`my-custom-field`}}
-```
+If your XDM schema contains field names with hyphens (e.g. `my-field`, `event-type`) or names that start with or contain numbers, wrap the key in backticks inside PQL expressions:
 
 ```sql
 {%= profile.events.`order-total` > 100 %}
 ```
 
-Without backticks, the hyphen is interpreted as a subtraction operator and causes a PQL syntax error.
+>[!NOTE]
+>
+>Backtick escaping is only supported inside PQL expressions (`{%= ... %}`). It is not supported in Handlebars interpolation (`{{...}}`). Hyphenated field names cannot be referenced directly in `{{...}}` blocks.
+
+Without backticks in a PQL expression, the hyphen is interpreted as a subtraction operator and causes a PQL syntax error.
 
 ### Numeric event IDs in context attributes {#numeric-event-ids}
 

@@ -244,7 +244,7 @@ The `dateDiff` function is used to retrieve the difference between two dates in 
 The following operation returns the number of days between today and a future date stored in the profile (e.g. a subscription end date or an event date):
 
 ```sql
-{%= dateDiff(stringToDate(profile.events.subscriptionEndDate), getCurrentZonedDateTime()) %}
+{%= dateDiff(getCurrentZonedDateTime(), stringToDate(profile.events.subscriptionEndDate)) %}
 ```
 
 +++
@@ -254,12 +254,12 @@ The following operation returns the number of days between today and a future da
 Use `dateDiff` to build a dynamic countdown for email subject lines or content:
 
 ```handlebars
-{% let daysLeft = dateDiff(stringToDate(profile.loyalty.expiryDate), getCurrentZonedDateTime()) %}
-{% if daysLeft > 0 %}
-Your points expire in {{daysLeft}} day{% if daysLeft > 1 %}s{% endif %} — use them before they're gone!
-{% else %}
+{% let daysLeft = dateDiff(getCurrentZonedDateTime(), stringToDate(profile.loyalty.expiryDate)) %}
+{%#if daysLeft > 0%}
+Your points expire in {{daysLeft}} day{%#if daysLeft > 1%}s{%/if%} — use them before they're gone!
+{%else%}
 Your points have expired.
-{% endif %}
+{%/if%}
 ```
 
 Output (example): `Your points expire in 7 days — use them before they're gone!`
