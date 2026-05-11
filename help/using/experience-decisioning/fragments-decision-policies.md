@@ -5,8 +5,8 @@ feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
-exl-id: 70f64348-092b-4350-91dc-72c3c07300f9
 badge: label="Limited Availability" type="Informative"
+exl-id: 70f64348-092b-4350-91dc-72c3c07300f9
 TQID: https://experienceleague.adobe.com/5Vpngi03UnC9YPlB5tdTRcd0NoT7iglH2pRDkmeZKOg
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
@@ -130,4 +130,3 @@ If your decision policy qualifies for two offers and each has a fragment—for e
 >[!NOTE]
 >
 >You can still mark a fragment as mandatory by setting the `required` flag to `true`. However, if a fragment is temporarily missing, it may cause journey or campaign rendering to fail.
-
