@@ -46,7 +46,8 @@ To be able to use deeplinks in emails for your mobile apps, complete the configu
       * App bundle ID
       * SHA-256 certificate fingerprint
 
-<!--Adobe is hosting these files internally so not on customer's side.
+<!--
+Adobe is hosting these files internally so not on customer's side.
 
 1. Validate the URLs below and ensure the content matches the expected format such as in the examples below.
 
