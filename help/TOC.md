@@ -347,6 +347,7 @@ solution: Journey Optimizer
       + [Configure a custom provider](using/sms/sms-configuration-custom.md)
       + [Create Webhook](using/sms/sms-webhook.md)
       + [Create a SMS / MMS / RCS configuration](using/sms/sms-configuration-surface.md)
+      + [Use a custom dataset for inbound keywords](using/sms/custom-dataset-inbound-keywords.md)
   + Direct mail {#direct-mail}
     + [Direct mail](/help/rp_landing_pages/direct-mail-landing-page.md)
     + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
