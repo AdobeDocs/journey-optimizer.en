@@ -192,6 +192,14 @@ With this authentication mode, the action execution is a two-step process:
     * `response`: indicates that the HTTP response is the access token
     * a selector in a json (assuming that the response is a json, we do not support other formats such as XML). The format of this selector is _json://&lt;path to the access token property>_. For instance, if the response of the call is: _{ "access_token": "theToken", "timestamp": 12323445656 }_, the tokenInResponse will be: _json: //access_token_
 
+* **idTokenInResponse** *(optional)*: indicates how to extract an ID token from the authentication call response, using the same json selector format as `tokenInResponse`. Use this field when your authentication endpoint returns an OpenID Connect response that includes both an `access_token` and an `id_token` (a pattern commonly required by banking and financial service APIs). When specified, the extracted ID token is used as the authentication credential instead of the access token.
+
+    For example, if the response is `{ "access_token": "...", "id_token": "eyJ..." }`, set `idTokenInResponse` to `json://id_token`.
+
+>[!TIP]
+>
+>If your integration targets a banking or financial service API that uses OpenID Connect and requires an ID token rather than an access token, use the `idTokenInResponse` field. A complete payload example is available in the [ID token authentication example](#custom-authentication-mode) further down this page.
+
 The format of this authentication is:
 
 ```json
@@ -211,6 +219,7 @@ The format of this authentication is:
         }
     },
     "tokenInResponse": "<'response' or json selector in format 'json://<field path to access token>'",
+    (optional) "idTokenInResponse": "<json selector in format 'json://<field path to id token>'",
     "cacheDuration": {
         (optional, mutually exclusive with 'duration') "expiryInResponse": "<json selector in format 'json://<field path to expiry>'",
         (optional, mutually exclusive with 'expiryInResponse') "duration": <integer value>,
@@ -296,6 +305,35 @@ Here is an example of the response of the login API call:
   "expiryDuration" : 5
 }
 ```
+
+Here is an example using the **ID token** authentication type (OpenID Connect), commonly required by banking and financial service APIs:
+
+```json
+{
+  "type": "customAuthorization",
+  "endpoint": "https://auth.mybank.com/oauth2/token",
+  "method": "POST",
+  "headers": {
+    "Authorization": "Basic EncodeBase64(<client_id>:<client_secret>)"
+  },
+  "body": {
+    "bodyType": "form",
+    "bodyParams": {
+      "grant_type": "client_credentials",
+      "scope": "openid"
+    }
+  },
+  "tokenInResponse": "json://access_token",
+  "idTokenInResponse": "json://id_token",
+  "cacheDuration": {
+    "duration": 60,
+    "timeUnit": "minutes"
+  },
+  "authorizationType": "bearer"
+}
+```
+
+In this example, the authentication endpoint returns both an `access_token` and an `id_token`. The `idTokenInResponse` field instructs Journey Optimizer to extract the `id_token` value and use it as the credential injected into subsequent API calls.
 
 >[!CAUTION]
 >

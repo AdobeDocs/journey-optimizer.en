@@ -156,6 +156,10 @@ Because of this model, release notes are updated between monthly releases. For f
 
 * **Webhook interface enhancement** - When configuring SMS webhooks, the user interface now includes a built-in setup guide with practical examples, making it easier to align provider payloads and troubleshoot issues without leaving the configuration flow. [Read more](../sms/sms-webhook.md)
 
+#### Journeys
+
+* **Enhanced authentication for custom actions** - When configuring custom actions, you can now use an **ID token** as the authentication mechanism. This extends the existing custom authentication support to cover OpenID Connect flows that return an `id_token` alongside the standard `access_token`, a pattern increasingly required by banking and financial service APIs. [Read more](../datasource/external-data-sources.md#custom-authentication-mode)
+
 #### WhatsApp
 
 * **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.

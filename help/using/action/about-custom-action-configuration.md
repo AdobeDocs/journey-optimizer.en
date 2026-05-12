@@ -80,6 +80,11 @@ Here are the main steps required to configure a custom action:
 1. The number of journeys that use this action is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of  journeys using this action.
 1. Define the different **[!UICONTROL URL Configuration]** parameters. See [this page](../action/about-custom-action-configuration.md#url-configuration).
 1. Configure the **[!UICONTROL Authentication]** section. This configuration is the same as for data sources.  See [this section](../datasource/external-data-sources.md#custom-authentication-mode).
+
+    >[!NOTE]
+    >
+    >If your endpoint uses OpenID Connect and returns both an `access_token` and an `id_token` — a pattern common in banking and financial service APIs — use the optional `idTokenInResponse` field in the custom authentication payload. This instructs Journey Optimizer to use the ID token as the authentication credential instead of the access token. [Learn more about custom authentication](../datasource/external-data-sources.md#custom-authentication-mode).
+
 1. Define the **[!UICONTROL Action parameters]**. See [this page](../action/about-custom-action-configuration.md#define-the-message-parameters).
 1. Click **[!UICONTROL Save]**.
 
