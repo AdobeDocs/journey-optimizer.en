@@ -6,6 +6,24 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: 07ec74fb-7fbc-48c6-a8fc-f58f24a60723
+TQID: https://experienceleague.adobe.com/pwEZHMppLlVIPYRsb0ZAg69tSUh0Qyia-pvqJTAmU6I
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
 # Code-based experience surfaces {#code-based-surface}
 
@@ -44,7 +62,7 @@ The tables below list some surface URI definition examples for various devices.
 **Web and mobile**
 
 | Type | URI | Description |
-| --------- | ----------- | ------- | 
+| --------- | ----------- | ------- |
 | Web | `web://domain.com/path/page.html#element` | Represents an individual element within a specific page of a specific domain, where an element can be a label like in the following examples: hero_banner, top_nav, menu, footer, etc. |
 | iOS app | `mobileapp://com.vendor.bundle/activity#element` | Represents a specific element within a native app activity, such as a button or other view element. |
 | Android app | `mobileapp://com.vendor.bundle/#element` | Represents a specific element within a native app. |
@@ -52,7 +70,7 @@ The tables below list some surface URI definition examples for various devices.
 **Other device types**
 
 | Type | URI | Description |
-| --------- | ----------- | ------- | 
+| --------- | ----------- | ------- |
 | Desktop | `desktop://com.vendor.bundle/#element` | Represents a specific element within an application, such as a button, menu, hero banner, etc. |
 | TV app | `tvcd://com.vendor.bundle/#element` | Represents a specific element within a smart TV or TV connected device app - bundle ID. |
 | Service | `service://servicename/#element` | Represents a server-side process or other manual entity. |
@@ -62,7 +80,7 @@ The tables below list some surface URI definition examples for various devices.
 **Wildcard surfaces**
 
 | Type | URI | Description |
-| --------- | ----------- | ------- | 
+| --------- | ----------- | ------- |
 | Wildcard web | `wildcard:web://domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under a specific domain. |
 | Wildcard web | `wildcard:web://*domain.com/*#element` | Wildcard surface - represents an individual element in each of the pages under all domains that end with "domain.com". |
 
@@ -70,7 +88,7 @@ The tables below list some surface URI definition examples for various devices.
 
 In [!DNL Journey Optimizer], the code-based experience channel supports two types of customer implementations:
 
-* Based on the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} for your websites, or on the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/){target="_blank"} for you mobile apps;
+* Based on the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} for your websites, or on the [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation){target="_blank"} for you mobile apps;
 * Server-side or hybrid using [AEP Edge Network Server APIs](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html){target="_blank"}.
 
 >[!NOTE]

@@ -7,6 +7,20 @@ role: Developer
 level: Experienced
 version: Journey Orchestration
 exl-id: 72492878-550d-4ca0-be12-7eb627f75ad0
+TQID: https://experienceleague.adobe.com/jwUb00RaVqC0olkYXyjsY2BLVBod-lock4XuCqLuBkM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Create an exd placement {#create-exd-placement}
 

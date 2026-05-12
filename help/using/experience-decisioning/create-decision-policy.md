@@ -7,6 +7,28 @@ role: User
 level: Experienced
 version: Journey Orchestration
 exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
+TQID: https://experienceleague.adobe.com/ooRR2Tz1Tphu4JUHgeYjfz-guj8S87NVaWKxM4jShEM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create decision policies {#create-decision}
 
@@ -33,13 +55,11 @@ To present the best dynamic offer and experience to your customers, add a decisi
 1. [Set up a strategy sequence](#strategy) - Select the items to return with the decision policy.
 1. [Select fallback offers](#fallback) (optional) - Select items to display if no items or selection strategies are qualified.
 1. [Review and save](#review) the selection strategy
-1. [Assign a placement](#placement) (Email channel)
+1. [Assign a placement](#placement) (Email channel only)
 
 >[!AVAILABILITY]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Push notification** and SMS channels.
->
->Decisioning for the Email channel is available in Limited Availability. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>Decision policies are available for the **Code-based Experience**, **Push notification**, **SMS**, and **Email** channels.
 
 ## Add a decision policy {#add}
 
@@ -111,6 +131,16 @@ For code-based experiences, you can add a new decision policy using either the *
     >
     >When the same offer can be selected by more than one decision policy in the email body, the engine deduplicates offers: each placement receives a different offer, so the same offer will not appear in both places. To display the same offer in multiple placements, use **[!UICONTROL Reuse decision output]** to reuse the output of an existing decision policy in this email.
 
+    +++
+
+You can also add decision policies when using the **[!UICONTROL Code your own]** mode in the Email Designer. To do so, navigate to **[!UICONTROL Decision policies]** to insert the decision policy code. [Learn how to code your own email content](../email/code-content.md).
+
+![](assets/decision-policy-add-code-your-own.png)
+
+>[!NOTE]
+>
+>In **[!UICONTROL Code your own]** mode, you can only return one decision item per policy, because the **[!UICONTROL Repeat Grid]** component is not available.
+
 >[!TAB SMS]
 
 For SMS, you can add a new decision policy using either the **personalization editor**, or the **Decisioning** menu available in the properties pane.
@@ -131,6 +161,8 @@ For SMS, you can add a new decision policy using either the **personalization ed
 1. Click the **[!UICONTROL Add decision policy]** button.
 
     ![](assets/decision-policy-add-sms.png)
+
++++
 
 >[!TAB Push notification]
 
@@ -155,7 +187,9 @@ For Push notifications, you can add a new decision policy using either the **per
 
 >[!IMPORTANT]
 >
->Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes/){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions/){target="_blank"}.
+>Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions){target="_blank"}.
+ 
++++
 
 >[!ENDTABS]
 

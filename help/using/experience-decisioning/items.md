@@ -48,6 +48,8 @@ Start by defining the decision item's standard and custom attributes :
     >
     >This feature is available in Limited Availability for the **Code-based experience** and **Email** channels. To request access, contact your Adobe representative.
 
+    When using these fragments in your decision policies, you can make a fragment optional so that it is skipped if temporarily unavailable on Edge. [Learn how](fragments-decision-policies.md#optional-fragments)
+
 1. Specify custom attributes (optional). Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are defined in the decision items' catalog schema. [Learn how to work with catalogs](catalogs.md)
 
 1. Once the decision item's attributes are defined, click **[!UICONTROL Next]**.
@@ -182,8 +184,10 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
 
     ![](assets/item-capping-rules.png)
 
-<!--* Identifying how many times a given customer has been shown a decision item. 
-If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event-->
+<!--
+* Identifying how many times a given customer has been shown a decision item. 
+If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event
+-->
 
 ## Review and approved the decision item {#approve}
 

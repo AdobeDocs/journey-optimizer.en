@@ -4,8 +4,7 @@ product: Journey Optimizer
 title: Math
 description: Math
 redpen-status: CREATED_||_2025-08-11_20-16-12
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 2df9c6ea-be94-475f-9997-16f10db22f03
 ---
 # Math{#section-overview}

@@ -7,6 +7,35 @@ feature: Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
+TQID: https://experienceleague.adobe.com/LThNKcpBCCkin2G-y4n-tty4bcGLxMA4ObiodBrpBwY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Get started with Live activity configuration {#mobile-live-config}
 
@@ -42,7 +71,7 @@ Step 1 is optional if your push credentials have already been configured, as the
 
 1. Click **[!UICONTROL Submit]** to create your app configuration.
 
-## Step 2: Create your Live activity configuration {#config-live-activity}
+## Step 2: create your live activity configuration {#config-live-activity}
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Click the **[!UICONTROL Create channel configuration]** button.
 

@@ -7,6 +7,22 @@ feature: Privacy
 role: User
 level: Intermediate
 exl-id: 19ec3410-761e-4a9c-a277-f105fc446d7a
+TQID: https://experienceleague.adobe.com/eZC9hzg7Yf9sZ17idMlFYOX-Rn7lwGL6J2AyFaj0CV4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Privacy requests {#track-changes}
 
@@ -18,8 +34,10 @@ Privacy requests can be created and managed from the **[!UICONTROL Requests]** m
 
 For more information on Privacy Service and how to create and manage privacy requests, refer to the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html){target="_blank"}.
 
-<!--* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
-* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)-->
+<!--
+* [Privacy Service overview](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+* [Managing privacy jobs in the Privacy Service UI](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/user-guide.html)
+-->
 
 ## Manage individual data privacy requests that you can send to Adobe Journey Optimizer {#data-privacy-requests}
 
@@ -52,7 +70,7 @@ The three upstream services are:
 >
 >For delete and access requests, you need to call these individual systems to make sure the requests are handled by each of them. Making a privacy request to [!DNL Adobe Journey Optimizer] will not remove data from all these systems.
 
-## Create Access and Delete requests
+## Create access and delete requests
 
 ### Prerequisites
 

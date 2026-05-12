@@ -8,6 +8,33 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3ec496ba-7555-49e2-992c-403c33302a90
+TQID: https://experienceleague.adobe.com/Tf-a0MQ4SBclyiXPLohyD1rr-7rHq9ASNuaKN10anyw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Use audiences enrichment attributes {#enrichment}
 
@@ -21,7 +48,7 @@ When targeting an audience generated using composition workflows, custom (CSV fi
 
 Here are the actions you can perform using audiences' enrichment attributes:
 
-* **Create multiple paths in a journey** based on rules that leverage the targeted audience's enrichment attributes. To do this, target the audience using a [Read audience](../building-journeys/read-audience.md) activity then create rules in a [Condition](../building-journeys/condition-activity.md) activity based on the audience's enrichment attributes.
+* **Create multiple paths in a journey** based on rules that leverage the targeted audience's enrichment attributes. To do this, target the audience using a [Read audience](../building-journeys/read-audience.md) activity then create rules in an [Optimize](../building-journeys/optimize.md) activity based on the audience's enrichment attributes.
 
     ![](assets/audience-enrichment-attribute-condition.png){width="70%" zoomable="yes"}
 
@@ -50,7 +77,7 @@ Here are the actions you can perform using audiences' enrichment attributes:
 >+++
 
 
-## Frequently Asked Questions {#faq-enrichment}
+## Frequently asked questions {#faq-enrichment}
 
 You will find below Frequently Asked Questions about enrichment attributes.
 

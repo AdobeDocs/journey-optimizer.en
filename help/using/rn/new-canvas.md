@@ -5,9 +5,25 @@ title: New journey interface
 feature: Release Notes
 topic: Content Management
 description: New journey interface
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
+TQID: https://experienceleague.adobe.com/-QKSnBRN9yPYEq5ay9wD-uf4lLduJqmtlFWDnLYt1gk
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Welcome to the Improved Journey Designer {#new-canvas}
 
@@ -74,7 +90,8 @@ For each activity within every live journey using the new model, you have access
 
 ![](assets/new-canvas6bis.png)
 
-<!--`
+<!--
+`
 With every live journey on the new model, you will be able to see two types of "last 24 hours" reporting information:
 
 * On a **new insert**, you will see:

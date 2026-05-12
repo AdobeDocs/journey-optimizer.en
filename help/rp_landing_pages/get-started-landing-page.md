@@ -8,7 +8,7 @@ exl-id: fee218bf-8c60-442d-ac41-a3856fc71b70
 ---
 # Get Started with Adobe Journey Optimizer{#get-started}
 
-Adobe Journey Optimizer empowers you to deliver personalized, real-time customer experiences across every channel. Meet your customers where they are with the right message at the right time.
+Adobe Journey Optimizer empowers you to deliver personalized, real-time customer experiences across every channel — from a single application, at scale. The result is meaningful brand experiences that boost customer loyalty and lifetime value.
 
 Whether you're new to Journey Optimizer or an experienced user looking to expand your skills, this section provides everything you need to get started quickly and effectively.
 
@@ -47,9 +47,19 @@ Essential terms and concepts to help you navigate Journey Optimizer confidently.
 [Review terminology](../using/start/terminology.md)
 :::
 
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+
+AI & Intelligent Features
+
+Discover how AI helps you create content, optimize send times, and make smarter decisions.
+
+[Explore AI capabilities](../using/start/ai-features.md)
+:::
+
 ::::
 
-## Choose Your Learning Path {#by-role}
+## Get started by role {#by-role}
 
 Get started with role-specific guidance tailored to your responsibilities and goals.
 
@@ -96,7 +106,7 @@ Integrate mobile apps, implement web SDKs, configure events, and build custom in
 
 ::::
 
-[Not sure which role fits you? Take our quick assessment →](../using/start/quick-start.md)
+[See all roles and responsibilities →](../using/start/quick-start.md)
 
 ## Work Efficiently {#work-efficiently}
 
@@ -124,26 +134,26 @@ Use search, filters, and tags to manage journeys, campaigns, and content efficie
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+![icon](https://cdn.experienceleague.adobe.com/icons/question.svg)
 
-AI & Intelligent Features
+Troubleshooting FAQ
 
-Discover how AI helps you create content, optimize send times, and make smarter decisions.
+Find answers to frequently asked questions and solutions to common problems across channels and features.
 
-[Explore AI capabilities](../using/start/ai-features.md)
+[View troubleshooting guide](../using/start/troubleshooting.md)
 :::
 
 ::::
 
 ## Additional Resources {#additional-resources}
 
-### Reference & Best Practices
+### Reference & best practices
 
 * **[Guardrails & Limitations](../using/start/guardrails.md)** - Understand constraints and recommended practices for using Journey Optimizer features effectively
 * **[Accessibility Features](../using/start/accessibility.md)** - Learn about accessibility features and WCAG compliance to ensure inclusivity for all users
 * **[Troubleshooting Guide](../using/start/troubleshooting.md)** - Find answers to frequently asked questions and solutions to common problems
 
-### Learn & Get Support
+### Learn & get support
 
 * **[Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}** - Step-by-step video tutorials covering core capabilities
 * **[Use Case Playbooks](../using/start/ai-features.md#playbooks)** - Pre-built workflows for common scenarios like abandoned cart recovery and welcome campaigns
@@ -152,7 +162,7 @@ Discover how AI helps you create content, optimize send times, and make smarter 
 * **[Community Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Connect with other users, ask questions, and share best practices
 * **[Documentation Updates](../using/rn/documentation-updates.md)** - Stay informed about recent changes and additions to the documentation
 
-## Ready to Get Started?
+## Ready to get started?
 
 Choose the path that's right for you:
 

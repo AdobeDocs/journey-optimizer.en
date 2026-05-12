@@ -7,8 +7,28 @@ role: User
 level: Intermediate
 version: Journey Orchestration
 exl-id: 7bb72527-d4e1-49f8-b2c3-c943d65903f2
+TQID: https://experienceleague.adobe.com/rqXcnwygtE6Q8Fi1Lg3EgCqIG9wPwmrzgDvtaiZPavA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-# Decisioning Frequently Asked Questions {#decisioning-faq}
+# Decisioning frequently asked questions {#decisioning-faq}
 
 This page provides answers to frequently asked questions about Decisioning capabilities in Adobe Journey Optimizer.
 
@@ -85,9 +105,11 @@ Adobe recommends the following minimum thresholds to ensure effective model perf
 * 1,000 impressions per offer/item per week
 * 100 conversion events per offer/item per week
 
-<!--**Absolute minimums (per 30 days):**
+<!--
+**Absolute minimums (per 30 days):**
 * At least **250 impressions** per offer/item  
-* At least **25 conversion events** per offer/item-->
+* At least **25 conversion events** per offer/item
+-->
 
 By default, the system will not attempt to build personalized models for offers/items with fewer than 1,000 impressions or 50 conversion events.
 

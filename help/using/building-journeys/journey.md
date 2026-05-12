@@ -9,8 +9,68 @@ level: Beginner, Intermediate
 keywords: journey, discover, get-start, unitary, read audience, audience qualification, business event, real-time, scheduled, batch, event-triggered, workflow, orchestration, personalization, multi-channel
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/FsZLMlzVj6CcTqVp9BPUmiCf2piZL8zaj2WfWv8FMSQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
+    internal-label: Journey design
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
+  - id: b9d00d1b-a371-4a75-a52a-3f8ea2029020
+    internal-label: Journey testing
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: ead8d40a-1b24-451e-a7c4-b2f1acb19f2e
+    internal-label: Journey versions
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
-
 # Get started with journeys {#jo-general-principle}
 
 >[!CONTEXTUALHELP]
@@ -38,7 +98,7 @@ Use [!DNL Journey Optimizer] to:
 
 ➡️ **Ready to start building?** [Create your first journey](journey-gs.md) in 5 minutes.
 
-### Journeys vs Campaigns: When to use each {#journeys-vs-campaigns-intro}
+### Journeys vs campaigns: when to use each {#journeys-vs-campaigns-intro}
 
 [!DNL Adobe Journey Optimizer] offers three approaches to reach customers: **Journeys** (1:1 real-time orchestration), **Campaigns** (simple batch or API-triggered delivery), and **Orchestrated campaigns** (batch canvas workflows with multi-entity data).
 
@@ -48,8 +108,10 @@ Use [!DNL Journey Optimizer] to:
 * Use **Action and API-triggered campaigns** for simple, scheduled or triggered message delivery to audiences
 * Use **Orchestrated campaigns** for complex batch workflows requiring multi-entity segmentation and exact pre-send counts
 
-<!-- waiting for DOCAC-13912
-➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability-->
+<!--
+ waiting for DOCAC-13912
+➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability
+-->
 
 ## Choose your journey type {#journey-types}
 
@@ -60,8 +122,10 @@ Use [!DNL Journey Optimizer] to:
 * **Audience Qualification journeys**: Real-time responses to audience membership changes (VIP upgrades, re-engagement)
 * **Business event journeys**: Business conditions affecting multiple customers (inventory alerts, flash sales)
 
-<!-- waiting for DOCAC-13912 
-➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix -->
+<!--
+ waiting for DOCAC-13912 
+➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix 
+-->
 
 ## Build with the journey designer {#journey-designer}
 
@@ -100,7 +164,7 @@ Use built-in channel actions for email, push, SMS/MMS, in-app, web, and more—a
 
 Branch your journey based on profile attributes, audience membership, or real-time events.
 
-[Use conditions](condition-activity.md)
+[Use conditions](conditions.md)
 :::
 
 :::
@@ -373,7 +437,8 @@ Get a visual introduction to journey components and learn the basics of building
 
 +++
 
-<!-- Waiting for DOCAC-13912
+<!--
+ Waiting for DOCAC-13912
 +++ Which journey type should I use?
 
 Use the [decision guide](#decision-guide) or [comparison table](#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.

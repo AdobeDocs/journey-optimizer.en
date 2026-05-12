@@ -9,6 +9,46 @@ role: Developer, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
+TQID: https://experienceleague.adobe.com/q4zuwxmF2Gr5P5IkdZCKFHoA18-GGrlLD0f-WPCQ3q4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
+    internal-label: Action configuration
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Configure a custom action {#configure-a-custom-action}
 
@@ -147,7 +187,7 @@ When configuring a custom action, you need to define the following **[!UICONTROL
     >
     >Headers are validated according to field parsing rules. Learn more in [this documentation](https://tools.ietf.org/html/rfc7230#section-3.2.4){_blank}.
 
-## Transport Security Layer {#tls} 
+## Transport security layer {#tls}
 
 ### TLS protocol support {#tls-protocol-support} 
 

@@ -7,8 +7,32 @@ role: User
 level: Intermediate, Experienced
 exl-id: 09770df2-c514-4217-a71b-e31c248df543
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/aDWJPWR3IA1EOvCxgqg9vf7KGgw3w4bzsJIZdaUphu4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
 ---
-# Use Decisioning in a code-based experience with Content experiment {#experience-decisioning-uc}
+# Use decisioning in a code-based experience with content experiment {#experience-decisioning-uc}
 
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 

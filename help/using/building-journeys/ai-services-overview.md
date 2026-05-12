@@ -10,8 +10,36 @@ level: Intermediate
 keywords: artificial, AI, intelligent, journey, service
 exl-id: 20da09e1-0611-4d27-a589-30552011e06c
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/rTKcWHwfwleQtD68fcdeqYK2AMQHVaknKtsNDFsOldI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
-# Integrate with Intelligent Services {#ai-overview}
+# Integrate with intelligent services {#ai-overview}
 
 The integration with **[!DNL Adobe Intelligent Services]** enables you to leverage artificial intelligence and machine learning for customer experience use cases. This allows marketing analysts to set up predictions tailored to a company's needs using business-level configurations without requiring data science expertise.
 

@@ -8,6 +8,29 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd743a3b-0317-45d9-8e76-98d5cc258752
+TQID: https://experienceleague.adobe.com/dFM14bh1Yil9GUsCk3mkcqz6QNH3fUWmQCNtj-FnWfA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # SMS campaign report {#campaign-global-report-cja-sms}
 

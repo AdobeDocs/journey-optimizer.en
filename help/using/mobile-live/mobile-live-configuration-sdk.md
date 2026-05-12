@@ -7,6 +7,26 @@ feature: Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 02ca7c8e-105a-4e77-9aad-2381904255d0
+TQID: https://experienceleague.adobe.com/3qQXyrzDwhvaMQt4gpg5g5Xty7uLXFkkSt9UNvHZYfU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Live activity integration with Adobe Experience Platform Mobile SDK {#mobile-live-config-sdk}
 
@@ -64,7 +84,7 @@ import AEPMessagingLiveActivity
 import ActivityKit
 ```
 
-## Step 2: Define your Live activity Attributes {#attributes}
+## Step 2: define your live activity attributes {#attributes}
 
 Create a struct that conforms to the `LiveActivityAttributes` protocol. This defines both the static data and dynamic content state for your Live activity.
 
@@ -127,7 +147,7 @@ if #available(iOS 16.1, *) {
 }
 ```
 
-## Step 3: Register Live activity {#register}
+## Step 3: register live activity {#register}
 
 Register your Live activity types in your `AppDelegate` after SDK initialization, this allows you to:
 
@@ -143,7 +163,7 @@ if #available(iOS 16.1, *) {
 }
 ```
 
-## Step 4: Create Live activity widgets {#widgets}
+## Step 4: create live activity widgets {#widgets}
 
 A Live activity is displayed through widgets. You need to create a widget bundle and configuration:
 
@@ -182,7 +202,7 @@ struct FoodDeliveryLiveActivityWidget: Widget {
 }
 ```
 
-## Step 5: Start a Live activity locally (optional) {#local}
+## Step 5: start a live activity locally (optional) {#local}
 
 While Journey Optimizer can remotely start Live activities, you can also start them locally:
 
@@ -231,9 +251,9 @@ extension FoodDeliveryLiveActivityAttributes: LiveActivityAssuranceDebuggable {
 For comprehensive SDK documentation and implementation details:
 
 * [Live activities Developer Guide](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities)
-* [API Reference](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/api-reference/)
-* [Live activity Tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/tutorial/)
-* [Public Classes](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/public-classes/live-activity-attributes/)
+* [API Reference](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/api-reference)
+* [Live activity Tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/tutorial)
+* [Public Classes](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/public-classes/live-activity-attributes)
 
 >[!TIP]
 >

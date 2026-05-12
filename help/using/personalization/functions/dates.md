@@ -6,8 +6,21 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: edc040de-dfb3-4ebc-91b4-239e10c2260b
+TQID: https://experienceleague.adobe.com/J-aZtYitBu8T4oSwTwKNNDeA-7tA4l8Wi5YZ1WLcT3E
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-# Date Time Functions{#date-time}
+# Date time functions{#date-time}
 
 Date and time functions are used to perform date and time operations on values within Journey Optimizer.
 
@@ -650,7 +663,7 @@ The following operation gets all the values for the map `identityMap`.
 ```
 -->
 
-## To Date Time {#to-date-time}
+## To date time {#to-date-time}
 
 The `ToDateTime` function converts string to date. It returns the epoch date as output for invalid input.
 
@@ -687,7 +700,7 @@ The following operation gets all the values for the map `identityMap`.
 ```
 -->
 
-## Truncate to Start Of Day {#truncate-day}
+## Truncate to start of day {#truncate-day}
 
 The `truncateToStartOfDay` function is used to modify a given date-time by setting it to the start of the day with the time set to 00:00.
 

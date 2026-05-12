@@ -5,8 +5,16 @@ title: Use the Enrichment activity
 description: Learn how to use the Enrichment activity
 exl-id: 8a0aeae8-f4f2-4f1d-9b89-28ce573fadfd
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/Q7lT1NR61ALn475i9akX7z80pybh93kbx06Gc8TcCuI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 ---
-
 # Enrichment {#enrichment}
 
 >[!CONTEXTUALHELP]
@@ -264,5 +272,4 @@ If you want to to view only offers from the enrichment activity, set the number 
 >[!NOTE]
 >
 >If you choose to have more than one offer in the **[!UICONTROL Enrichment]** activity at the **[!UICONTROL Number of offers to keep]** option, all the offers are displayed when clicking on the **[!UICONTROL Propositions]** icon.
-
 -->

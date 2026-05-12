@@ -5,6 +5,24 @@ feature: Preview
 role: User
 level: Beginner
 exl-id: 9ab43b14-41cf-49f1-bdcf-6fee58db5000
+TQID: https://experienceleague.adobe.com/vVYcz9RLGidSEzJBQYR8Tppck0BNtZOXlzon3kDrYZA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Email spam report {#spam-report}
 
@@ -50,7 +68,8 @@ To access the **[!UICONTROL Spam report]**, follow the steps below.
 
     ![](assets/spam-report-low-score.png)
 
-<!--You can also check the message's alerts for warnings on potential risk of spam detection. Follow the steps below.
+<!--
+You can also check the message's alerts for warnings on potential risk of spam detection. Follow the steps below.
 
 1. Click the **[!UICONTROL Alerts]** button on top right of the screen. [Learn more about email alerts](../email/create-email.md#check-email-alerts)
 

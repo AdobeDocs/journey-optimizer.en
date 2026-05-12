@@ -7,6 +7,16 @@ role: Developer
 level: Experienced
 exl-id: e60b0eec-29bc-4411-9eab-08eaf738fc79
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/Ts-7IQQx6A4HhWeDl9sci8XSvgYRH7VbwgUgxRrl9uM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Create a decision item {#create-decision-items}
 
@@ -20,7 +30,7 @@ POST /{ENDPOINT_PATH}/offer-items
 
 | Parameter | Description | Example |
 | --------- | ----------- | ------- |
-| `{ENDPOINT_PATH}` | The endpoint path for persistence APIs. | `https://platform.adobe.io/data/core/dps` | 
+| `{ENDPOINT_PATH}` | The endpoint path for persistence APIs. | `https://platform.adobe.io/data/core/dps` |
 
 **Request**
 

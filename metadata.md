@@ -2,10 +2,15 @@
 cloud: Experience Cloud
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/journey-optimizer.en
-index: yes
+index: true
 product: Journey Optimizer
 solution: Journey Optimizer
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    label: "Journey Optimizer"
 feature-set: Journey Optimizer
+landing-page-name: journey-optimizer
+landing-page-breadcrumb-title: Journey Optimizer
 solution-title: Journey Optimizer Documentation
 ---
 

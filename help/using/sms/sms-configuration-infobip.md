@@ -7,20 +7,31 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 7b6dc89a-1a81-49c2-b2a7-bf24b9d215e3
+TQID: https://experienceleague.adobe.com/hkloRlDuOO-lNSezWvOcD3dtsHrhDqCJGo3cHq5pWog
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Configure Infobip provider {#sms-configuration-infobip}
-
->[!BEGINSHADEBOX]
-
-If opt-in or opt-out keywords are not provided, standard consent messages are used to honor user privacy. Adding custom keywords automatically overrides the defaults.
-
-**Default keywords:**
-
-* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, CONTINUE, RESUME, BEGIN
-* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO
-* **Help**: HELP
-
->[!ENDSHADEBOX]
 
 By integrating Infobip with Adobe Journey Optimizer, you can deliver text messages to your profiles as part of your journeys and campaigns.
 
@@ -42,31 +53,32 @@ To configure Infobip with Journey Optimizer, follow these steps:
     +++ List of SMS credentials for configuration
 
     |Configuration fields|Description|
-    |---|---|    
+    |---|---|
     |SMS vendor|Infobip|
     |Name|Choose a name for your API Credential.|
     |API base URL and API key| Access your web interface homepage or the API key management page to find your credentials. For regional or alternate domain endpoints, e.g. `api-ny2.infobip.com`, specify the complete base URL and verify your authorization token with Infobip support. </br>Learn more in [Infobip Documentation](https://www.infobip.com/docs/api){target="_blank"}|
-    |Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
-    |Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the custom response that is automatically sent as your Opt-In Message.|
-    |Opt-Out Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
-    |Opt-Out Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your Opt-Out Message.|
-    |Help Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
-    |Help Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your **Help Message**.|
-    |Double Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more about the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
-    |Double Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
     |Principal Entity ID|Enter your assigned DLT principal entity ID.|
     |Content Template ID|Enter your registered DLT content template ID.|
     |Validity Period| Enter the message validity period in hours. In the event that messages cannot be delivered within this timeframe, the system will make additional attempts to resend them. The default validity period is set to 48 hours.|
     |Callback Data| Enter the additional client data that will be sent on the Notify URL.|
     |Inbound Number|Add your unique inbound number. This allows you to use the same API credentials across different sandboxes, each with its own inbound number.|
-    |Custom Inbound Keywords|Define unique, non consent related keywords for batch-based actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a batched segment qualification within the journey and deliver a customized response or action.|
-    |Default Inbound Reply Message|Enter the default reply that is sent when a end user sends an inbound SMS that does not match any of the defined keywords.|
 
     +++
 
 1. Enable the **[!UICONTROL Fuzzy Opt-out]** option to detect messages resembling opt-out keywords (e.g., 'CANCIL') and customize the confirmation reply in the **[!UICONTROL Fuzzy Auto Reply]** field. 
 
-    **[!UICONTROL Fuzzy Opt-out]** identifies SMS messages that indicate a user wants to unsubscribe, even if the message does not exactly match a defined opt-out keyword. It can detect common opt-out phrases and certain offensive terms, helping ensure your campaigns respect user preferences and remain compliant.
+    **[!UICONTROL Fuzzy Opt-out]** identifies SMS messages that indicate a user wants to unsubscribe, even if the message does not exactly match a defined opt-out keyword. It can detect common opt-out phrases and certain offensive terms, helping ensure your campaigns respect user preferences and remain compliant. 
+
+1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about using a custom dataset for inbound keywords](custom-dataset-inbound-keywords.md)
+
+    >[!NOTE]
+    >
+    >The dataset schema must be **[!UICONTROL XDM ExperienceEvent]** and include at least these field groups:
+    >* Adobe CJM ExperienceEvent - Message interaction details
+    >* Adobe CJM ExperienceEvent - Message Execution Details
+    >* Adobe CJM ExperienceEvent - Message Profile Details
+    >
+    >The schema and dataset must be enabled for Profile.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 

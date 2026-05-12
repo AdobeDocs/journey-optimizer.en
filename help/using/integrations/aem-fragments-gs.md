@@ -6,8 +6,38 @@ description: Learn how to access & manage AEM Content Fragments
 topic: Content Management
 role: User
 level: Beginner
+exl-id: c36a53a4-c324-4082-838e-ed27bd3b2e90
+TQID: https://experienceleague.adobe.com/GRQ3Wz7Y4YJ3545mTtju0R8en9BYiejyo8UoMx558nM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-# Get started with Adobe Experience Manager Content Fragments {#aem-fragments}
+# Get started with Adobe Experience Manager content fragments {#aem-fragments}
 
 >[!AVAILABILITY]
 >

@@ -10,6 +10,29 @@ role: Developer
 level: Experienced
 exl-id: 692d0aae-6fa1-40b8-a35f-9845d78317a3
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/jhf2EpgMU35YmRWeatijWUFz3KwwjFfKP8lHtX8eyEU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
 ---
 # Deliver offers using the Decisioning API {#decisioning-api}
 
@@ -219,7 +242,9 @@ The table below lists all codes that can be returned in the response:
 |500|Internal server error. The server encountered an unexpected condition which prevented it from fulfilling the request.|
 |503|Service unavailable due to server overload. The server is currently unable to handle the request due to a temporary overloading.|
 
-<!-- ## Tutorial video {#video}
+<!--
+ 
+## Tutorial video {#video}
 
 The following video is intended to support your understanding of the components of Decision Management.
 
@@ -227,7 +252,8 @@ The following video is intended to support your understanding of the components 
 >
 >This video applies to the Offer Decisioning application service built on Adobe Experience Platform. However, it provides generic guidance to use Offer in the context of Journey Optimizer.
 
->[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12) -->
+>[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12)
+-->
 
 ## Next steps {#next-steps}
 

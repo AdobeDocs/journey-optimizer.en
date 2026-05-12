@@ -10,8 +10,34 @@ role: User
 level: Intermediate
 exl-id: 659984cb-b232-47ba-9f5a-604bf97a5e92
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/-drNPR5XmWbTe050ZO3s-tymLiQXjT4gjth7-QTv01c
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
-# Get started with Decision Management {#about-decision-management}
+# Get started with decision management {#about-decision-management}
 
 Use [!DNL Journey Optimizer] to deliver the best offer and experience to your customers across all touch points at the right time. Once designed, target your audiences with personalized offers.
 
@@ -64,7 +90,7 @@ Decision Management capabilities and integration with Adobe Experience Platform 
 
     ![](../../assets/do-not-localize/call-center.png)
 
-## Grant access to Decision Management {#granting-acess-to-decision-management}
+## Grant access to decision management {#granting-acess-to-decision-management}
 
 Permissions to access and use decisioning capabilities are managed using the [Adobe Admin Console](https://helpx.adobe.com/enterprise/managing/user-guide.html){target="_blank"}. 
 
@@ -104,7 +130,7 @@ You can find below the list of the main concepts you will work with when using D
 
 ## How-to videos{#video}
 
-### What is Decision Management? {#what-is-offer-decisioning}
+### What is decision management? {#what-is-offer-decisioning}
 
 The video below provides an introduction to Decision Management key capabilities, architecture and use cases:
 

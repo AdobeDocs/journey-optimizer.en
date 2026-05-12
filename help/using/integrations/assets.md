@@ -9,6 +9,41 @@ role: User
 level: Beginner
 keywords: assets, experience manager, integration
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
+TQID: https://experienceleague.adobe.com/Sy-GvPP4hQgCvYvwJX6mEodMLIuCmHsd4utqI33SjJ4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
 # Create and manage assets with [!DNL Experience Manager Assets]{#experience-manager-assets}
 
@@ -103,10 +138,11 @@ To import files to **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Ser
     Note that this option is available for licensed/unlicensed Stock images and images from your Assets folder. 
 
     ![](assets/media_library_14.png)
-    -->
+    
+-->
 
 
-## Frequently Asked Questions {#faq-assets}
+## Frequently asked questions {#faq-assets}
 
 You will find below Frequently Asked Questions about Adobe Experience Manager Assets.
 

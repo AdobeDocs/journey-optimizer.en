@@ -8,6 +8,29 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd5e053a-69eb-463b-add3-8b9168c8e280
+TQID: https://experienceleague.adobe.com/kqNGPnCDU-yeMvOX-L55POHs1-vmQCEcq4Psky8wSfs
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Create test profiles {#create-test-profiles}
 
@@ -118,7 +141,8 @@ After selecting the identity namespace and providing the CSV file based on the f
 >
 >Test profiles may override existing profiles. Before executing the use case make sure the CSV contains test profiles only and that it is executed against the correct sandbox.
 
-<!-- Removed as asked in DOCAC-13605 AJO Test Profiles Using a Journey should be removed
+<!--
+ Removed as asked in DOCAC-13605 AJO Test Profiles Using a Journey should be removed
 ## Turn a profile into a test profile{#turning-profile-into-test}
 
 You can turn an existing profile into a test profile: you can update profiles attributes in the same way as when you create a profile. 

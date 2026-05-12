@@ -8,6 +8,31 @@ level: Experienced
 mini-toc-levels: 1
 version: Journey Orchestration
 exl-id: 35fc3cf2-1b91-4f30-ad71-f9d7d2a0291c
+TQID: https://experienceleague.adobe.com/zKV67LEfRVmEk9Fac-D45qdHLqbuVCS3rUt6Rt0HB7w
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Use decision policies in messages {#create-decision}
 
@@ -15,9 +40,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!CAUTION]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **SMS**, and **Push notification** channels.
->
->Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>Decision policies are available to all customers for the **Code-based Experience**, **SMS**, **Push notification**, and **Email** channels.
 
 ## Insert the decision policy code {#insert}
 
@@ -73,7 +96,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!IMPORTANT]
 >
->Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes/){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions/){target="_blank"}.
+>Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions){target="_blank"}.
 
 >[!ENDTABS]
 

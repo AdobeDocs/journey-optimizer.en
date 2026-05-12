@@ -7,6 +7,18 @@ role: Developer
 level: Experienced
 exl-id: 78ed06a3-7787-4aab-8373-df7eb40c1727
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/01NgEXGvNxeb1MNkjeB55VNFZFuSiTfQMKeNahfuHWE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Decisioning API developer guide {#decisioning-api-developer-guide}
 
@@ -14,7 +26,7 @@ Decisioning APIs allow you to programmatically create and manage the components 
 
 ## Authentication {#authentication}
 
-Before using Decisioning APIs, you must set up authentication to access the API endpoints. You can refer to the [Journey Optimizer authentication guide](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} for step-by-step instructions.
+Before using Decisioning APIs, you must set up authentication to access the API endpoints. You can refer to the [Journey Optimizer authentication guide](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} for step-by-step instructions.
 
 ## Available API operations {#available-operations}
 

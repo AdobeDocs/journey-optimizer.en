@@ -5,6 +5,20 @@ title: Configuration steps
 description: Learn how to create relational schemas directly through the user interface.
 exl-id: 8c785431-9a00-46b8-ba54-54a10e288141
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/vSXJMXYZECaVuB8PkrEB4Y9AXgJBHMq0bGd8Nb-BGh4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Set up a manual relational schema {#manual-schema}
 
@@ -63,7 +77,7 @@ Any schema used for targeting must include at least one identity field of type `
   Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
 * **Composite Key**  
-  Composite primary keys are supported in relational schema definitions, enabling the use of multiple fields together to uniquely identify records.
+  Composite primary keys spanning multiple fields are supported in relational schema definitions, enabling the use of multiple fields together to uniquely identify records.
 
 +++
 
@@ -142,7 +156,7 @@ After defining your schema, you can now create a dataset based on it. The datase
 
 You now need to enable your Dataset for Orchestrated campaigns.
 
-## Enable Dataset for Orchestrated campaigns {#enable}
+## Enable dataset for orchestrated campaigns {#enable}
 
 >[!CONTEXTUALHELP]
 >id="ajo_oc_enable_dataset_for_oc"

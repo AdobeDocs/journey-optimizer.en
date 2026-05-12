@@ -10,7 +10,7 @@ exl-id: 88c48ccd-c3b7-4235-933b-7a08f5a8f346
 
 Approving journeys and campaigns in Adobe Journey Optimizer ensures that every initiative is reviewed and validated before going live, giving teams greater control over quality and compliance. This feature lets users set up structured approval workflows, define conditions for approvals, and monitor requests effortlessly. Whether you’re creating policies, sending approval requests, or reviewing submissions, each step is designed to streamline collaboration and safeguard your marketing efforts. Dive into how approval policies are established, requests are managed, and changes are handled so you can confidently execute campaigns that meet organizational standards.
 
-## Approve Journeys & Campaigns
+## Approve journeys & campaigns
 
 :::: landing-cards-container
 :::

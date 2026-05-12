@@ -6,8 +6,30 @@ description: Learn how to start with Orchestrated campaigns
 short-description: Discover orchestrated campaign key features and use cases.
 exl-id: 611dd06d-aa18-4fa3-a477-8a910cec21d8
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/ePbw3PWwBuZl5A3bdBzM0gb4koCEH09WUX0P-g8z3VM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
-
 # Get started with Orchestrated campaigns {#orchestrated-camp}
 
 >[!CONTEXTUALHELP]
@@ -75,6 +97,13 @@ Each Orchestrated campaign contains:
 
 * **Worktables**: The worktable contains all the information carried by the transition. Each Orchestrated campaign uses several worktables. The data conveyed in these tables can be used throughout the Orchestrated campaign's life cycle.
 
+A typical entry-level Orchestrated campaign follows this pattern: **Build audience → Fork → Channel A + Channel B**.
+
+This approach lets you target the same audience with two parallel branches in a single campaign run — for example, one branch using a Marketing email and another using a Transactional email. Each branch is independent and can use a different channel configuration, message content, or category.
+
+➡️ [Learn how to use the Fork activity](activities/fork.md)
+
+➡️ [Understand Marketing vs Transactional messages](activities/channels.md#marketing-vs-transactional)
 
 ## Introduction video {#video-oc}
 

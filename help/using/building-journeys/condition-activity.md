@@ -10,6 +10,33 @@ level: Intermediate
 keywords: activity, condition, canvas, journey
 exl-id: 02de069c-3009-4105-aa98-c49959d3efda
 version: Journey Orchestration
+hide: true
+TQID: https://experienceleague.adobe.com/gbZUkOhk-3yBMdxwj3YpPbQrbpMhd6PkNf1hzl-2DFw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # Condition activity {#condition-activity}
 

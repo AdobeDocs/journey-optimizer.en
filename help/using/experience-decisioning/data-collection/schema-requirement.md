@@ -8,6 +8,22 @@ role: Developer
 level: Experienced
 exl-id: ce3a2c33-c15b-436f-90b1-7373d7b2b1ca
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/VWYByDMrFX9Siqx2nYcMM49JimP-HTY6eKNo-hQZ-aU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
 ---
 # Configure data collection {#schema-requirements}
 
@@ -169,7 +185,6 @@ Each offer within a proposition includes a tracking token, which is a unique ide
 For custom events, the schema used in the dataset must also have the **[!UICONTROL Experience Event - Proposition Interactions]** field group associated with it, but there is no specific requirement on the experience event type that must be used to tag these events.
 
 <!--
-
 >[!NOTE]
 >
 >To have your custom events accounted for in [capping](../items.md#capping), you need to connect the experience event to Adobe Experience Platform endpoints by sending it to either one of these two Edge data collection endpoints:
@@ -177,4 +192,5 @@ For custom events, the schema used in the dataset must also have the **[!UICONTR
 >* POST /ee/v2/interact
 >* POST /ee/v2/collect
 >
->If you are using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}, the connection is made automatically.-->
+>If you are using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html){target="_blank"} or [Adobe Experience Platform Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}, the connection is made automatically.
+-->

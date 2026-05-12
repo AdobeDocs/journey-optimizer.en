@@ -5,8 +5,18 @@ title: Use the Build audience activity
 description: Learn how to use the Build audience activity in an Orchestrated campaign
 exl-id: 3959b5fa-0c47-42a5-828f-4d7ca9b7e72d
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/9hEr5kAHco1iq8arv-FddaG3vm54CS-cPFUA63soeAg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
 ---
-
 # Build audience {#build-audience}
 
 >[!CONTEXTUALHELP]
@@ -48,3 +58,7 @@ Follow these steps to configure the **[!UICONTROL Build audience]** activity:
 Here is an example of an Orchestrated campaign with two **[!UICONTROL Build audience]** activities. The first targets profiles that have items in their cart, followed by an email delivery. The second targets profiles with a wishlist, followed by an SMS delivery.
 
 ![](../assets/build-audience-2.png)
+
+In the example below, the **[!UICONTROL Build audience]** activity uses the rule builder to filter profiles by their subscription plan. A condition is set on the `plan` attribute to include only profiles where `plan = "basic"`, narrowing the audience to basic-tier subscribers before passing them to the next activity.
+
+![](../assets/build-audience-plan.png){width="50%" align="left"}

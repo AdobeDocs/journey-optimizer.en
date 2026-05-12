@@ -7,6 +7,31 @@ role: User
 level: Beginner
 keywords: in-app, message, design, formatting
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
+TQID: https://experienceleague.adobe.com/DBRGZUXPBo-2-EX0i3RSGQc4G1-zbsee4u3oF1cU-ng
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Design your In-app content {#design-content}
 
@@ -238,7 +263,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can further
 
 From the **Data** tab, you can define a **[!UICONTROL Key]**​ and **[!UICONTROL Value]** to include custom variables in the payload. These key/value pairs allow you to pass additional data, depending on your specific configuration. 
 
-For more information, refer to the [Developer documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/in-app-message/tutorials/messaging-metadata/).
+For more information, refer to the [Developer documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/in-app-message/tutorials/messaging-metadata).
 
 1. From the **[!UICONTROL Data]** tab, select **[!UICONTROL Add key/value pair]**.
     

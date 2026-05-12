@@ -7,6 +7,30 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: fd713864-96b9-4687-91bd-84e3533273ff
+TQID: https://experienceleague.adobe.com/v5gRCHjcQjn0kXPdtakSZRNlRIA-PVyGpctdn7zwXSI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Configure a custom provider {#sms-configuration-custom}
 
@@ -62,7 +86,7 @@ To send SMS and RCS messages in Journey Optimizer using a custom provider not av
 
 1. Enable the **[!UICONTROL mTLS support]** option, which ensures that both the client and server authenticate each other before establishing a secure connection.
 
-    To use mTLS only, select **[!UICONTROL No Authentication]** from the **[!UICONTROL Auth Type]** drop-down and then enable **[!UICONTROL mTLS support]**.
+    To use mTLS only, select **[!UICONTROL No Authentication]** from the **[!UICONTROL Auth Type]** drop-down and then enable ** [!UICONTROL mTLS support]**.
 
 1. In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add new parameter]** to specify the HTTP headers for the request message that will be sent to the external service.
 
@@ -78,6 +102,16 @@ To send SMS and RCS messages in Journey Optimizer using a custom provider not av
     >
     >When configuring a custom SMS provider with Basic or Bearer authentication, you must include the `authOption` parameter in the JSON payload. In addition, the **Provider Payload** must reference the template variables `{{fromNumber}}`, `{{toNumber}}`, and `{{message}}`.
 
+1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about using a custom dataset for inbound keywords](custom-dataset-inbound-keywords.md)
+
+    >[!NOTE]
+    >
+    >The dataset schema must be **[!UICONTROL XDM ExperienceEvent]** and include at least these field groups:
+    >* Adobe CJM ExperienceEvent - Message interaction details
+    >* Adobe CJM ExperienceEvent - Message Execution Details
+    >* Adobe CJM ExperienceEvent - Message Profile Details
+    >
+    >The schema and dataset must be enabled for Profile.
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 

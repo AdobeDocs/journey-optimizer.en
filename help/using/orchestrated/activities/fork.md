@@ -5,8 +5,16 @@ title: Use the Fork activity
 description: Learn how to use the Fork activity in an Orchestrated campaign
 exl-id: 52e8057b-dac1-45f5-9dd0-1b28a59adde9
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/b0FyVaM0LcSz1DLGd-UEhHqBqXMWcb0rbimJA6E7WOM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 ---
-
 # Fork {#fork}
 
 >[!CONTEXTUALHELP]
@@ -36,3 +44,16 @@ Follow these steps to configure the **[!UICONTROL Fork]** activity:
 1. To remove a transition, click the ![](../assets/do-not-localize/Smock_Delete_18_N.svg) icon.
 
 1. If needed, click **[!UICONTROL Add transition]** to add an additional outbound transition. 
+
+## Examples {#fork-examples}
+
+Here is a typical use of the **[!UICONTROL Fork]** activity: targeting the same audience with two different email channels — one Marketing and one Transactional — to compare delivery behavior.
+
+After a **[!UICONTROL Build audience]** activity selects the target population, a **[!UICONTROL Fork]** creates two parallel branches:
+
+* **Branch 1** connects to a Marketing email channel activity. Messages follow standard business rules and are sent only to opted-in profiles.
+* **Branch 2** connects to a Transactional email channel activity. Messages bypass business rules and are delivered to all profiles regardless of opt-in status.
+
+![](../assets/workflow-fork.png)
+
+This pattern is useful for understanding how channel category settings affect delivery behavior, and for sending different message types to the same audience in a single campaign run.

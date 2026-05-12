@@ -10,6 +10,29 @@ role: Developer
 level: Experienced
 exl-id: 773bee50-849f-4b07-9423-67de5279ad28
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/LZVllKIbmPvNnT0wCskFj3mcNYcKRmvAT85UqWlsztA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+    internal-label: Integrations
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Decision Management API developer guide {#decision-management-api-developer-guide}
 
@@ -70,9 +93,11 @@ This document covered the prerequisite knowledge required to make calls to the [
 > The In-app messaging channel in Adobe Journey Optimizer uses decision management objects. If your organization uses the in-app messaging channel, then API list requests for objects will include objects created by the in-app messaging service and can be ignored for decision management use cases. Objects created for in-app messages will have `createdBy = "Mobile_Sheliak"`.
 -->
 
-<!-- ## How-to video {#video}
+<!--
+ 
+## How-to video {#video}
 
 The following video is intended to support your understanding of the components of Decision Management.
 
->[!VIDEO](https://video.tv.adobe.com/v/329919?quality=12) -->
-
+>[!VIDEO](https://video.tv.adobe.com/v/329919?quality=12)
+-->

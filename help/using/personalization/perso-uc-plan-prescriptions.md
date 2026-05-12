@@ -6,6 +6,19 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: 832b0bfa-ec74-4b1d-ad85-d4e4ea2f8863
+TQID: https://experienceleague.adobe.com/fZtkkz9pvdZ3G7ojmHlNhasxawVbXmBHX-uznq6hseY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Health plan prescriptions email {#plan-prescription}
 

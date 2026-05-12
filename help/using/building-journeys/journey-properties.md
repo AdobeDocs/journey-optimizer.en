@@ -10,8 +10,61 @@ level: Intermediate
 keywords: journey, configuration, properties
 exl-id: 6c21371c-6cbc-4d39-8fe6-39f1b8b13280
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/fDzEwuisEjAKvpIs9SKoz-9IIJXJQ-md9FlCbWQOJz8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: ba62ad25-65cb-4ea9-b7aa-0fa87c4a9fa0
+    internal-label: Journey properties
+  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
+    internal-label: Wait activity
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: d23fcf83-6e65-4279-a3fc-9ed74b042ff2
+    internal-label: Timezones
+  - id: d7dd6f7f-9e2a-47ee-a2bc-b7b9caaefc1d
+    internal-label: Profile entrance management
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Set your journey properties {#jo-properties}
+
+Use journey properties to configure global settings for your journey, including its name, entrance rules, timezone, start and end dates, timeout duration, exit criteria, and conflict management. Properties are accessible from the right rail at any stage of journey authoring.
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties"
@@ -33,6 +86,7 @@ You can:
 * Select the journey and profile [timezones](#timezone)    
 * Choose custom [start and end dates](#dates)
 * Define a [timeout duration](#timeout) in journey activities (for Admin users only)
+* Monitor the [current journey payload size](#journey-payload-size) to avoid publishing errors
 * Monitor conflicts and prioritize your journeys using [conflict management tools](#conflict)
 
 ![Journey properties configuration pane with general settings and advanced options](assets/new-journey-properties.png){width="80%"}{zoomable="yes"}
@@ -105,6 +159,23 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 
 [Learn more about Object Level Access Control (OLAC)](../administration/object-based-access.md)
 
+## Journey payload size {#journey-payload-size}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_payload_size"
+>title="Current journey payload size"
+>abstract="Displays the current size of the journey payload compared to the configured limit. Use this indicator to monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded."
+
+The **[!UICONTROL Current journey payload size]** field in the journey properties panel displays the current size of your journey's payload in relation to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator is visible at any stage of journey authoring.
+
+![Current journey payload size indicator in the journey properties panel](assets/journey-payload-size.png){width="50%" zoomable="yes"}
+
+Use this information to monitor the complexity of your journey before publishing. If the payload size approaches or exceeds the limit, journey publication fails. To reduce the size, consider simplifying the journey logic or reducing the number of activities.
+
+The default limit is 2 MB. Contact Adobe Customer Care if you need to request a higher limit for your organization.
+
+For full details on thresholds, warning and error messages, and troubleshooting steps, refer to [Journey payload size validation](../start/guardrails.md#journey-payload-size) and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys).
+
 ## Journey and profile timezones {#timezone}
 
 The timezone is defined at journey level. You can enter a fixed time zone or use [!DNL Adobe Experience Platform] profiles to define the journey time zone. If a time zone is defined in [!DNL Adobe Experience Platform] profile, it can be retrieved in the journey.
@@ -144,7 +215,7 @@ Recommended values are between 1 and 30 seconds.
 
 We recommend that you define a very short **[!UICONTROL Timeout or error]** value if your journey is time sensitive (example: reacting to the real-time location of a person) because you cannot delay your action for more than a few seconds. If your journey is less time sensitive, you can use a longer value to give more time to the system called to send a valid response.
 
-Journeys also uses a global timeout as detailled below.
+Journeys also uses a global timeout as detailed below.
 
 ### Global journey timeout {#global_timeout}
 
@@ -160,7 +231,7 @@ Due to the 91-day journey timeout, when journey reentrance is not allowed, we ca
 
 An individual can enter a wait activity only if he or she has enough time left in the journey to complete the wait duration before the 91 days journey timeout. See [this page](../building-journeys/wait-activity.md).
 
-#### Time-to-Live (TTL) and data rentention FAQ {#timeout-faq}
+### Time-to-Live (TTL) and data retention FAQ {#timeout-faq}
 
 Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global timeout has moved from 30 to 91 days. Impacts are listed in the FAQ below:
 
@@ -257,7 +328,7 @@ Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global ti
       <p>What happens to a running profile in a previous journey version that is republished after the TTL extension launch?</p>
     </td>
     <td>
-      <p>The profile will maintain a TTL of 30 days (7 days for HIPPA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
+      <p>The profile will maintain a TTL of 30 days (7 days for HIPAA), aligned with the original journey version's publication time. For recurring journeys with forced reentrance, the TTL will match the recurrence period.</p>
     </td>
   </tr>
   <tr style="border: 1;">
@@ -291,7 +362,7 @@ Starting [!DNL Adobe Journey Optimizer] June 2024 release, the journey global ti
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_merge_policy"
 >title="Merge policy"
->abstract="The merge policy is automatically retrieved based on your selected event or audience. This merge policy is used in through entire journey."
+>abstract="The merge policy is automatically retrieved based on your selected event or audience. This merge policy is used throughout the entire journey."
 
 [!DNL Adobe Journey Optimizer] uses merge policies while retrieving profile data from [!DNL Adobe Experience Platform]. Depending on the journey type, different merge policies are used:
 
@@ -316,7 +387,7 @@ To learn more about merge policies, refer to [[!DNL Adobe Experience Platform] d
 
 ### Journey Exit criteria {#exit-criteria-desc}
 
-By adding exit criteria, you make the profiles exit the journey as soon as an event happen (eg: Purchase) or they qualify for an audience. This will prevent the user from getting any further communications from the journey.
+By adding exit criteria, you make the profiles exit the journey as soon as an event happens (e.g., Purchase) or they qualify for an audience. This will prevent the user from getting any further communications from the journey.
 
 You may want to remove profiles from a journey when they do not meet the journey's purpose anymore. This can be achieved by **global exit criteria**, which are closely associated with goal management.
 
@@ -328,7 +399,7 @@ You may want to remove profiles from a journey when they do not meet the journey
 
 A marketer has a promotional journey that has a series of communications. Each of this communication is aimed at driving the customer to make a purchase. As soon as the purchase is made the customer should not receive rest of the messages in the series. By defining an exit criteria, any profiles who made a purchase is removed from the journey.
 
-#### Configuration and usage {#exit-criteria-config}
+### Configuration and usage {#exit-criteria-config}
 
 Exit criteria are set at journey level. One journey can have multiple exit criteria. If you have set multiple exit criteria, the evaluation happens from top to bottom with an `OR` logic. Hence, if you have Exit Criteria A and Exit Criteria B, it is evaluated as A **OR** B. The criteria are evaluated at every step of the journey.
 
@@ -345,7 +416,7 @@ To **create** an exit criteria, follow these steps:
     * For Exit criteria based on an event, like for example downloading an app or adding a product to a cart, pick only unitary event. 
     * For Exit criteria based on an audience,like for example an audience that checks if a customer has purchased in the last 24 hours, select an audience. Note: Exit criteria using an audience can take up to 10 mins to be effective.
 
-You can add multiple exit criteria.
+You can add multiple exit criteria. The exit criteria is now active and will be evaluated at each step of the journey.
 
 ![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%" align="left"}
 
@@ -407,6 +478,15 @@ The **[!UICONTROL Conflict management]** section in the journey's properties all
 
 * Assign a **priority score** to the journey, ranging from 0 to 100. A higher number indicates a higher priority. The priority value inserted here is inherited by any inbound actions (such as In-App) contained in this journey. [learn how to work with priority scores](../conflict-prioritization/priority-scores.md)
 
-  For situations where this same inbound channel configuration is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chose.
+  For situations where this same inbound channel configuration is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chosen.
 
 * **View conflicts** with other journeys, campaigns, or channel configurations. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. [Learn how to identify potential conflicts in journey](../conflict-prioritization/conflicts.md)
+
+## Related topics {#related-topics}
+
+* [Profile entrance management](entry-management.md) - Configure how profiles enter and re-enter journeys
+* [Journey entry and exit criteria guide](entry-exit-criteria-guide.md) - Complete guide with real-world examples and best practices
+* [How journeys end](end-journey.md) - Understand natural journey completion and profile exit
+* [Pause a journey](journey-pause.md) - Pause and resume journeys with profile attribute exit criteria
+* [Timezone management](timezone-management.md) - Configure journey and profile timezones
+* [Conflict management and prioritization](../conflict-prioritization/conflicts.md) - Identify and resolve conflicts across journeys and campaigns

@@ -8,6 +8,41 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d11dd1cb-041b-48cd-b1fc-bcbe12338a07
+TQID: https://experienceleague.adobe.com/QtGuPZnO3Bka3GI9JaMjBJmho4Cry5qgl61h3Ohe3ek
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+    internal-label: Audience segmentation
 ---
 # Email campaign report {#campaign-global-report-cja-email}
 
@@ -110,7 +145,7 @@ The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis
 
 +++
 
-## Unique Sending Statistics {#unique-sending-statistics-email}
+## Unique sending statistics {#unique-sending-statistics-email}
 
 ![](assets/cja-unique-email-sending-stat.png)
 

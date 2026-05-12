@@ -7,6 +7,43 @@ feature: Get Started
 role: Admin, Developer, User
 level: Beginner
 exl-id: 14e72376-87ad-4fae-bf8c-f347109d7903
+TQID: https://experienceleague.adobe.com/-aDvt4RUXyf0EnPfFTJkG1CvWgte-1Fr6YaWvgcNNu4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
+    internal-label: Business rules
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Key Terminology {#key-terminology}
 
@@ -43,7 +80,7 @@ This reference guide defines the essential terms you'll encounter when using Ado
 | **Engageable Audience** | The number of customer profiles you can actively contact through Adobe Journey Optimizer based on your license agreement. This typically refers to profiles engaged within the last 12 months. |
 | **Test Profile** | Fictitious profiles used for testing and previewing messages before sending to real customers. Test profiles help verify personalization, content, and journey logic. [Learn more](../audience/creating-test-profiles.md) |
 
-## Content & Personalization Terms {#content-terms}
+## Content & personalization terms {#content-terms}
 
 | Term | Definition |
 |------|------------|
@@ -52,7 +89,7 @@ This reference guide defines the essential terms you'll encounter when using Ado
 | **Fragment** | A reusable content block (such as a header, footer, or promotional banner) that can be used across multiple messages to ensure consistency and enable centralized updates. [Learn more](../content-management/fragments.md) |
 | **Landing Page** | A standalone web page where customers can opt-in or opt-out from communications, subscribe to services, or provide information through online forms. [Learn more](../landing-pages/get-started-lp.md) |
 
-## Decision & Offer Terms {#decision-terms}
+## Decision & offer terms {#decision-terms}
 
 | Term | Definition |
 |------|------------|
@@ -60,7 +97,7 @@ This reference guide defines the essential terms you'll encounter when using Ado
 | **Offer** | A marketing message, discount, or promotion that can be presented to customers. Offers include eligibility rules that determine which customers can receive them. [Learn more](../offers/offer-library/creating-personalized-offers.md) |
 | **Decision Policy** | A set of rules and strategies that determine which offer to show to which customer at what time, based on constraints like eligibility, priority, and capping rules. [Learn more](../experience-decisioning/create-decision.md) |
 
-## Data & Configuration Terms {#data-config-terms}
+## Data & configuration terms {#data-config-terms}
 
 | Term | Definition |
 |------|------------|

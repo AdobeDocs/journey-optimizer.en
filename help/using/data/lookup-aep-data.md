@@ -11,6 +11,22 @@ keywords: expression, editor
 mini-toc-levels: 1
 badge: label="Limited Availability" type="Informative"
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
+TQID: https://experienceleague.adobe.com/8D-sZ8--lEZSWcfVb9Q-dT59WqBQM2tRV5ses3PX0Ps
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Use Adobe Experience Platform data {#aep-data}
 
@@ -103,7 +119,7 @@ In the dataset management user interface, use the toggle to enable the dataset f
 
 ### API Method
 
-Follow the directions detailed in [this documentation](https://developer.adobe.com/journey-optimizer-apis/references/authentication/) to configure your environment to send API commands. 
+Follow the directions detailed in [this documentation](https://developer.adobe.com/journey-optimizer-apis/references/authentication) to configure your environment to send API commands. 
 
 #### Prerequisites
 

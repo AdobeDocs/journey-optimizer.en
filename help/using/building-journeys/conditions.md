@@ -1,32 +1,59 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Condition activity
-description: Learn about condition activity
+title: Conditions
+description: Configure conditions in the Optimize activity for journey paths
 feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
 keywords: activity, condition, canvas, journey
-hidefromtoc: yes
-hide: yes
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/8gtrjnNNob-iRXdjSytSYOMyDswVxsrd8knipi4i1gI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Conditions {#conditions}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_conditions"
 >title="Conditions"
->abstract="Conditions let you define how individuals progress through your journey by creating multiple paths based on specific criteria. You can also configure an alternate path to handle timeouts or errors, ensuring a seamless experience."
+>abstract="Conditions let you define how individuals progress through your journey by creating multiple paths based on specific criteria. You can also configure an alternate path to handle timeouts or errors, ensuring a seamless experience. Note that the conditions are now configured in the Optimize activity, which replaces the former Condition activity."
 
 With **conditions** you can define how individuals progress through your journey by creating multiple paths based on specific criteria. You can also configure an alternate path to handle timeouts or errors, ensuring a seamless experience.
 
->[!AVAILABILITY]
+>[!NOTE]
 >
->These conditions are available through the **Optimize** activity, which can be accessed on demand in Limited Availability. Contact your Adobe representative to gain access.
+>The new vehicle for creating conditional paths in journeys is the [Optimize](optimize.md) activity. It replaces the former **Condition** activity, which has been removed from the UI. All conditional logic is now handled through the Optimize activity's conditions presented on this page.
 >
->If you don't have access to this capacity, you can still use the legacy [Condition activity](condition-activity.md).
+>If you have existing journeys that used **[!UICONTROL Condition]** activities, you can continue to use them as before. They now appear with a new icon as **[!UICONTROL Optimize]** activities using the **[!UICONTROL Condition]** method, but the behavior is unchanged. Any custom label you had set on the node is preserved.
 
 ## Add a condition {#add-condition-activity}
 
@@ -48,6 +75,10 @@ To add a condition to your journey, follow the steps below.
    * [Date condition](#date_condition)
    * [Profile cap](#profile_cap)
    * You can also use an audience in a journey condition. [Learn more](#using-a-segment)
+
+>[!NOTE]
+>
+>Condition evaluation will fail for profiles that include more than two cross-device identities in the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
 
 ## Manage condition paths {#condition_paths}
 
@@ -81,7 +112,7 @@ The simple mode allows you to perform simple queries based on a combination of f
 
 ![Simple expression editor with drag-and-drop fields and logical operators](assets/journey64.png){width=80%}
 
-If you are using the [[!DNL Adobe Experience Platform] Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Using audience in conditions](../building-journeys/condition-activity.md#using-a-segment).
+If you are using the [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Use audience in conditions](#using-a-segment).
 
 >[!NOTE]
 >
@@ -96,6 +127,14 @@ In the simple editor, you will also find the Journey Properties category, below 
 Use a **[!UICONTROL Data source condition]** to define a condition based on fields from the data sources or the events previously positioned in the journey. This type of condition is defined with the expression editor. [Learn how to use the expression editor](expression/expressionadvanced.md)
 
 For example, if you are targeting an audience with enrichment attributes generated using a composition workflow or a custom upload (CSV file), you can leverage these enrichment attributes to build your condition.
+
+>[!IMPORTANT]
+>
+>**Handling missing or non-ingested attributes**
+>
+>If a schema field is defined in your Profile schema but no data has been ingested for that field, Journey Optimizer and the underlying Real-Time Customer Profile interpret the field as `null`. As a result, conditions that check for `isEmpty()`, `isNull()`, or similar functions will evaluate to `true` even if the attribute was never ingested. This can lead to unexpected journey behavior if you are not aware that the field has no data.
+>
+>To avoid confusion, ensure that the attributes you use in condition expressions have been ingested with actual data before the profile enters the journey. You can verify attribute values in the [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"} to confirm whether data exists for the fields used in your conditions.
 
 Using the advanced expression editor, you can setup more advanced conditions manipulating collections or using data sources requiring the passing of parameters. [Learn more](../datasource/external-data-sources.md)
 

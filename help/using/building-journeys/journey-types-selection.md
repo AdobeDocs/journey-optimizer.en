@@ -8,9 +8,41 @@ role: User
 level: Beginner
 keywords: journey types, unitary, read audience, audience qualification, business event, comparison, decision guide, choose, selection, real-time, scheduled, batch, event-triggered
 version: Journey Orchestration
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 0c894dc1-76b6-4b33-baf8-eaf6686f7d38
+TQID: https://experienceleague.adobe.com/rEANha6Lppyd5vog-0kZ3aL9VvZHc9kziW-d-jiWqeA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: cce82f05-fc3c-4af7-85ff-8bba603861a7
+    internal-label: Condition activities
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
+    internal-label: Reaction events
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Journey types and selection guide {#journey-types-selection}
 
@@ -124,34 +156,34 @@ Not all features are available for all journey types. Use this matrix to underst
 
 | Feature / Capability | Unitary | Read Audience | Audience Qualification | Business event |
 |---------------------|:-------:|:-------------:|:----------------------:|:--------------:|
-| **Entry mechanisms** |
+| **Entry mechanisms** | | | | |
 | Event-triggered entry | ✅ | ❌ | ❌ | ✅ |
 | Scheduled entry | ❌ | ✅ | ❌ | ❌ |
 | Audience-based entry | ❌ | ✅ | ✅ | ❌ |
-| **Orchestration features** |
+| **Orchestration features** | | | | |
 | Wait activities | ✅ | ✅ | ✅ | ✅ |
 | Condition activities | ✅ | ✅ | ✅ | ✅ |
 | Custom actions | ✅ | ✅ | ✅ | ✅ |
 | Read audience activity (inside journey) | ✅ | ✅ | ✅ | ✅ |
 | Audience qualification activity | ✅ | ✅ | ✅ | ✅ |
 | Jump activity | ✅ | ✅ | ✅ | ✅ |
-| **Profile management** |
+| **Profile management** | | | | |
 | Profile re-entrance | ✅ Configurable | ❌ Once per execution | ✅ Configurable | ✅ Per event |
 | Namespace configuration | ✅ Required | ✅ Optional | ✅ Required | ✅ Required |
 | Profile cap | ✅ | ✅ | ✅ | ✅ |
-| **Testing & optimization** |
+| **Testing & optimization** | | | | |
 | Test mode | ✅ | ✅ | ✅ | ✅ |
 | Dry run | ✅ | ✅ | ✅ | ✅ |
 | Path experiments (A/B testing) | ✅ | ✅ | ✅ | ❌ |
 | Send-time optimization | ✅ | ✅ | ✅ | ✅ |
-| **Channels** |
+| **Channels** | | | | |
 | Email | ✅ | ✅ | ✅ | ✅ |
 | Push notifications | ✅ | ✅ | ✅ | ✅ |
 | SMS / MMS | ✅ | ✅ | ✅ | ✅ |
 | In-app messages | ✅ | ✅ | ✅ | ✅ |
 | Web | ✅ | ✅ | ✅ | ✅ |
 | Content cards | ✅ | ✅ | ✅ | ✅ |
-| **Advanced capabilities** |
+| **Advanced capabilities** | | | | |
 | Incremental read | ❌ | ✅ | ❌ | ❌ |
 | Export audience | ✅ | ✅ | ✅ | ✅ |
 | Time zone management | ✅ | ✅ | ✅ | ✅ |
@@ -169,7 +201,3 @@ Now that you understand journey types, you're ready to:
 * **[Learn about the journey designer](using-the-journey-designer.md)** - Design your journey canvas
 * **[Explore journey capabilities](journey.md#capabilities)** - Discover advanced features
 * **[View journey FAQ](journey-faq.md)** - Common questions answered
-
-**Need to compare with campaigns?**
-
-* [Journeys vs Campaigns comparison guide](../start/journeys-vs-campaigns.md) - Choose between journeys, Action/API campaigns, and Orchestrated campaigns

@@ -8,21 +8,49 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
+TQID: https://experienceleague.adobe.com/fio2Etyk9FdkyTiHwRMkadrJ4bbsFz7--KvzQvUQrbc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-
 # Create a WhatsApp message {#create-whatsapp}
 
 With Adobe Journey Optimizer, you can design and send engaging messages on WhatsApp. Simply add a WhatsApp action to your journey or campaign and craft your message content as detailed below. Adobe Journey Optimizer also lets you test your WhatsApp messages before sending them, ensuring perfect rendering, accurate personalization, and proper configuration of all settings.
 
 Note that only Outbound messages elements are supported in Journey Optimizer. 
 
-+++ Learn more about supported message elements and calls to actions
++++ Learn more about supported message elements and interactive buttons
 
 The following message types are supported in WhatsApp:
 
 | Message Feature | Description |
 |-|-|
-| Headers |  Optional text that appears above the body of your message.|
+| Headers | Optional text that appears above the body of your message.|
 | Text | Supports dynamic content through parameters. |
 | Images (JPEG, PNG) | Must be in 8-bit RGB or RGBA format and under 5 MB in size. |
 | Videos | Must be 3GPP or MP4, under 16 MB, and hosted via URL. |
@@ -31,13 +59,18 @@ The following message types are supported in WhatsApp:
 | Body Text | Supports dynamic content through parameters. |
 | Footer Text | Supports dynamic content through parameters. |
 
-The following call-to-action option is available for your WhatsApp messages:
+The following call-to-action options are available for your WhatsApp messages:
 
 | Call to actions | Description |
 |-|-|
-| Visit website| Only one button is permitted, with variable parameters included.|
-| Call on WhatsApp| Provides a button that opens a WhatsApp chat with the specified phone number directly from the message.|
-| Call phone number | Provides a button that initiates a phone call to the specified number when tapped by the user.|
+| Quick reply | Short preset replies the user can tap to respond to your message. |
+| Visit website | Only one button is permitted, with variable parameters included. |
+| Call on WhatsApp | Provides a button that opens a WhatsApp chat with the specified phone number directly from the message. |
+| Call phone number | Provides a button that initiates a phone call to the specified number when tapped by the user. |
+| Call to action – URL | Opens a URL (**Visit website**). Only one URL button is permitted, with variable parameters included. |
+| Call to action – phone | Uses the phone number from the template, for example **Call phone number** (places a call) or **Call on WhatsApp** (opens a chat with that number in WhatsApp). |
+
+Note that **Copy code** interactive buttons are not supported.
 
 +++
 
@@ -58,6 +91,10 @@ Browse the tabs below to learn how to add a WhatsApp message in a campaign or a 
     For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md)
 
     The **[!UICONTROL configuration]** field is pre-filled, by default, with the last configuration used for that channel by the user.
+
+1. In the **[!UICONTROL Business rules]** section, you can apply a rule set to control communication pressure on WhatsApp messages.
+
+    Learn more about [rule sets](../conflict-prioritization/rule-sets.md), [channel frequency capping](../conflict-prioritization/channel-capping.md), and [quiet hours](../conflict-prioritization/quiet-hours.md).
 
 You can now start designing the content of your WhatsApp message from the **[!UICONTROL Edit content]** button, as detailed below.
 

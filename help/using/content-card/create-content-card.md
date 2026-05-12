@@ -8,7 +8,7 @@ level: Beginner
 exl-id: a26bb3bd-d593-466b-9852-94e194d6d2b7
 ---
 # Create content cards {#create-content-card}
-
+ 
 >[!IMPORTANT]
 >
 >By default, the close button hides the card. To add more functionality, you can manually define dismissal or disqualification rules.
@@ -49,7 +49,7 @@ To add a Content card to a journey, follow these steps:
 
     1. Click **[!UICONTROL Add condition]** to select your event.
         
-        +++See available Event.
+        +++ See available Events
         
         | Package | Trigger | Definition |
         |---|---|---|
@@ -69,7 +69,7 @@ To add a Content card to a journey, follow these steps:
 
     1. Choose the **[!UICONTROL And]** condition if you want to add **[!UICONTROL Traits]** and better fine-tune your rule.
 
-        +++See available Traits.
+        +++ See available Traits
         
         | Package | Traits | Definition |
         |---|---|---|
@@ -79,7 +79,7 @@ To add a Content card to a journey, follow these steps:
         |Device info|OS version|Triggered when one of the specified OS version is met.|
         |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
         |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.| 
+        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -89,7 +89,7 @@ To add a Content card to a journey, follow these steps:
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
 
         +++
-        
+
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
 1. You can add one or more inbound actions to your content card by clicking the **[!UICONTROL Add action]** button. [Learn more](../building-journeys/journey-action.md#multi-action)
@@ -124,6 +124,10 @@ To start building your content cards through a campaign, follow the steps below.
 
 1. Select or create a new [Content card configuration](content-card-configuration.md).
 
+1. Select an [Inbox configuration](../inbox/inbox-configuration.md) that defines the inbox surface for this **Content card**.
+
+    ![](assets/content-card-create-2.png)
+
 1. To test the content of your message, click **[!UICONTROL Create experiment]**. This allows you to test multiple variables of a delivery on sample populations to determine which treatment has the greatest impact on the targeted audience. [Learn more about content experiment](../content-management/content-experiment.md).
 
 1. Enable the **[!UICONTROL Enable additional delivery rules]** option then select **[!UICONTROL Edit rules]** to define when your message should be shown, dismissed, or permanently hidden. 
@@ -132,7 +136,7 @@ To start building your content cards through a campaign, follow the steps below.
 
     1. Click **[!UICONTROL Add condition]** to select your event.
         
-        +++See available Event.
+        +++ See available Events
         
         | Package | Trigger | Definition |
         |---|---|---|
@@ -151,8 +155,8 @@ To start building your content cards through a campaign, follow the steps below.
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
 
     1. Choose the **[!UICONTROL And]** condition if you want to add **[!UICONTROL Traits]** and better fine-tune your rule.
-
-        +++See available Traits.
+        
+        +++ See available Traits
         
         | Package | Traits | Definition |
         |---|---|---|
@@ -162,7 +166,7 @@ To start building your content cards through a campaign, follow the steps below.
         |Device info|OS version|Triggered when one of the specified OS version is met.|
         |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
         |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.| 
+        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -172,7 +176,7 @@ To start building your content cards through a campaign, follow the steps below.
         |Application lifecycle|Time of day|Triggered when the specified Time of day is met.|
 
         +++
-        
+
     1. Click **[!UICONTROL Make group]** to group triggers together.
 
     ![](assets/content-card-rules.png)

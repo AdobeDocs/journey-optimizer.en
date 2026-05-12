@@ -5,8 +5,17 @@ title: Edit expressions
 description: Learn how to edit expressions.
 exl-id: bf0a905f-00af-4ed7-9e4f-bf8cb0af9ea9
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/LELPFd6kbbQdGOEFmWKqXcCEL2CFdPWMuonlDVotYRg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-
 # Edit expressions {#edit-expressions}
 
 >[!NOTE]
@@ -27,9 +36,11 @@ The expression editor provides:
 
 * An **input field (1)** where the expression is defined.
 * A list of available **fields (2)** that can be used in the expression and correspond to the targeting dimension of the query.
-* **Helper functions (3)**, sorted by category.
+* A list of available **variables (3)** that can be used in the expression. This menu is available for the **Value** field. [Learn how to use variables in Orchestrated campaigns](variables-orchestrated-campaigns.md)
 
-Edit the expression by entering an expression directly in the input field. To add a field or a helper function, place your cursor in the expression where you want to add it and click the + button.
+* **Helper functions (4)**, sorted by category.
+
+Edit the expression by entering an expression directly in the input field. To add a field, a variable or a helper function, place your cursor in the expression where you want to add it and click the + button.
 
 ![Expression editor interface](assets/rule-builder-expression-editor.png){zoomable="yes"}
 

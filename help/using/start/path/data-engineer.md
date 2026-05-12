@@ -7,8 +7,51 @@ feature: Get Started
 role: Developer
 level: Intermediate
 exl-id: 8beaafc2-e68d-46a1-be5c-e70892575bfb
+TQID: https://experienceleague.adobe.com/BAnAycmwv9oD4On4LSMwm7bBRKOuw5Tbv5a-r3ND-Dw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: af7571a6-3ddb-4c1c-abdf-4d4dde592140
+    internal-label: Source connectors
+  - id: d08afb72-92f6-4856-88e3-11ec34313c2f
+    internal-label: Event configuration
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
-# Get Started for Data Engineer {#data-engineer}
+# Get started for data engineer {#data-engineer}
 
 As a **Data Architect** or **Data Engineer**, you set up and maintain the customer profile data and other data sources that power the experiences orchestrated by [!DNL Journey Optimizer]. This includes integrating all your customer and business data—whether from web, CRM, or offline sources—into a unified 360-degree view of the customer. You model customer profile data and business data into schemas, configure source connectors for ingesting data, and ensure data flows smoothly to enable real-time customer insights and engagement. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) granted you access and prepared your environment.
 

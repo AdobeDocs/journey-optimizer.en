@@ -8,6 +8,53 @@ topic: Administration
 role: User
 level: Intermediate
 exl-id: 0855ca5b-c7af-41c4-ad51-bed820ae5ecf
+TQID: https://experienceleague.adobe.com/W7M7wDP69oM-fT5nbS2YqVIK9QhBgJhNGy-G0ontmQ4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Access and subscribe to system alerts {#alerts}
 
@@ -188,7 +235,7 @@ All journey notifications available in the user interface are listed below.
 >
 >Adobe Journey Optimizer specific alerts apply only to **live** journeys. Alerts are not triggered for journeys in test mode.
 
-### Read Audience Trigger Unsuccessful {#alert-read-audiences}
+### Read Audience trigger unsuccessful {#alert-read-audiences}
 
 This alert warns you if a **Read Audience** activity has not processed any profile 10 mins after scheduled time of execution. This failure can be caused by technical issues, or because the audience is empty. If this failure is caused by technical issues, be aware that retries can still happen, depending of the type of issue (eg: if the export job creation has failed, we will retry every 10mn for 1h max).
 
@@ -200,7 +247,7 @@ The I/O event subscription name corresponding to the **Read Audience Trigger Uns
 
 To troubleshoot **Read Audience** alerts, check your audience count in the Experience Platform interface.
 
-### Profile Discard Rate Exceeded {#alert-discard-rate}
+### Profile discard rate exceeded {#alert-discard-rate}
 
 This alert warns you if the ratio of profile discards to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
@@ -215,7 +262,7 @@ There are several reasons a profile could be discarded, which will inform the me
 * Event throughput rate is exceeded. To solve this, ensure that events coming into the system are not exceeding these limits.
 
 
-### Custom Action Error Rate Exceeded {#alert-custom-action-error-rate}
+### Custom action error rate exceeded {#alert-custom-action-error-rate}
 
 This alert warns you if the ratio of custom action errors to successful HTTP calls over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
@@ -234,7 +281,7 @@ Custom actions errors can happen for a variety of reasons. To troubleshoot these
 * Check that the endpoint is reachable and the custom action can reach it via the custom action connectivity checker.
 * Verify the authentication credentials, check internet connectivity, etc.
 
-### Profile Error Rate Exceeded {#alert-profile-error-rate}
+### Profile error rate exceeded {#alert-profile-error-rate}
 
 This alert warns you if the ratio of profiles-in-error to entered profiles over the last 5 minutes exceeded threshold. The default threshold is set to 20% but you can [define a custom threshold](#custom-threshold).
 
@@ -254,7 +301,7 @@ This alert notifies you when a journey has finished. The definition of "finished
 
 This is an informational alert that helps you keep track of journey completion. There is no resolution criteria as this is a one-time notification.
 
-### Custom Action Capping Triggered {#alert-custom-action-capping}
+### Custom action capping triggered {#alert-custom-action-capping}
 
 This alert warns you when capping has been triggered on a custom action. Capping is used to limit the number of calls sent to an external endpoint to prevent overwhelming the endpoint.
 

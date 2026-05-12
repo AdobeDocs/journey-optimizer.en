@@ -5,8 +5,30 @@ title: Add a channel activity in a multistep campaign
 description: Learn how to add a channel activity in a multistep campaign
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/ouwufvPEUXGewSP5TvsfI0qPxpVqaqso3me4qEc2WQM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-
 # Channel activities {#channel}
 
 >[!CONTEXTUALHELP]
@@ -41,7 +63,6 @@ UNUSED IDs in BJ
 >id="ajo_orchestration_push_android"
 >title="Push Android activity"
 >abstract="The Push Android activity lets you send Android Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring messages, automating the sending of Android Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
-
 -->
 
 >[!CONTEXTUALHELP]
@@ -85,6 +106,22 @@ By using channel activities, you can create comprehensive and personalized campa
     ![image showing the canvas with an Email activity](../assets/channel-edit.png)
 
 1. In the **[!UICONTROL Properties]** tab, enter a description then switch to the **[!UICONTROL Actions]** tab to configure the activity.
+
+## Marketing vs Transactional messages {#marketing-vs-transactional}
+
+Choosing the right category determines how messages are delivered and which rules apply:
+
+| | Marketing | Transactional |
+| --- | --- | --- |
+| **Opt-in required** | Yes | No |
+| **Business rules** | Applied (frequency capping, fatigue rules) | Bypassed |
+| **Channel configuration type** | Marketing channel configuration | Transactional channel configuration |
+| **Typical use cases** | Promotions, newsletters, seasonal campaigns | Order confirmations, password resets, disruption alerts |
+| **Audience** | Opted-in subscribers only | Any profile, regardless of opt-in status |
+
+>[!NOTE]
+>
+>Use Transactional only for operational or time-sensitive communications. Misclassifying a promotional message as Transactional bypasses consent and business rules, which may violate regulatory requirements.
 
 ## Set up the channel configuration and settings {#configuration}
 
@@ -228,14 +265,16 @@ how to add and configure the activity
 
 example of a configured activity within a workflow
 The Email delivery activity allows you to configure the sending an email in a workflow. 
-
 -->
 
-<!--You can also create a recurring Orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
+<!--
+You can also create a recurring Orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
 
-![](../assets/workflow-channel-example2.png)-->
+![](../assets/workflow-channel-example2.png)
+-->
 
-<!-- Scheduled emails available?
+<!--
+ Scheduled emails available?
 
 This can be a single send email and sent just once, or it can be a recurring email.
 * Single send emails are standard emails, sent once.
@@ -243,7 +282,6 @@ This can be a single send email and sent just once, or it can be a recurring ema
 
 When linked to a scheduler, you can define recurring emails.
 Email recipients are defined upstream of the activity in the same workflow, via an Audience targeting activity.
-
 -->
 
 

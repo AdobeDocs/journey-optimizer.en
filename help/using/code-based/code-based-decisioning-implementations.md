@@ -6,6 +6,30 @@ topic: Content Management
 role: Developer
 level: Experienced
 exl-id: f9477611-b792-4b28-8ec2-6bbea2fa3328
+TQID: https://experienceleague.adobe.com/64oNHWa7T8cd-RDZWq0hsAdopo0eh1bhst6NVQpA0Tk
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Decisioning in code-based experience implementations {#code-based-decisioning-implementations}
 
@@ -38,7 +62,8 @@ After publishing your campaign, add the `dryRun` flag into the XDM event `data` 
 <!--
 >[!CAUTION]
 >
->Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.-->
+>Adding the `dryRun` flag to your request will prevent feedback to be captured for reporting and frequency counters from being added to.
+-->
 
 ## Deduplication of decision items in code-based implementations {#code-based-decisioning-deduplication}
 
@@ -289,7 +314,7 @@ Let's say you have the same decision policy with header and footer placement in 
 
 ## Tutorials {#tutorials}
 
-Learn how to fetch, display and track code-based experiences using the [Adobe Journey Optimizer extension](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/#implement-extension-in-mobile-app){target="_blank"} for Adobe Experience Platform Mobile SDKs in [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial/){target="_blank"}.
+Learn how to fetch, display and track code-based experiences using the [Adobe Journey Optimizer extension](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/#implement-extension-in-mobile-app){target="_blank"} for Adobe Experience Platform Mobile SDKs in [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial){target="_blank"}.
 
 Learn how to use decisioning in Journey Optimizer to personalize content offers on your website, with a focus on Web SDK configuration, in [this tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"}.
 

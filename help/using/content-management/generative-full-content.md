@@ -8,6 +8,30 @@ topic: Artificial Intelligence
 role: User
 level: Beginner
 exl-id: 9f395b3d-8414-4e88-b849-6d9af9640b32
+TQID: https://experienceleague.adobe.com/0Xf8qIELy-rLrPg-5slKXt4dlurcaUwXhAW6VWxWuPQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Generate full content with AI Assistant {#generative-full-content}
 
@@ -61,7 +85,7 @@ With AI Assistant open, you can now configure the generation settings to create 
 
 1. Choose your **[!UICONTROL Image settings]**:
 
-    * **[!UICONTROL Generative model]**: Select from available built-in models, custom Firefly models trained on your brand assets, or third-party image generation providers to create images that align with your specific needs and brand requirements. [Learn more](generative-models.md) 
+    * **[!UICONTROL Generative model]**: Select from available built-in models, custom Firefly models trained on your brand assets, or third-party image generation providers to create images that align with your specific needs and brand requirements. [Learn more](generative-models.md). For **Gemini** with **text overlays** on images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
     * **[!UICONTROL Color & tone]**: The overall appearance of the colors within an image and the mood or atmosphere it conveys.
@@ -119,7 +143,7 @@ After generating content variations, you can fine-tune the results to ensure the
    * **Web**: Once you defined your web campaign settings and edited your content as desired, you can review and activate your web campaign. [Learn more](../web/create-web.md#activate-web-campaign)
    * **Landing Page**: Once your landing page is ready, you can publish it to make it available for use in a message. [Learn more](../landing-pages/create-lp.md#publish-landing-page)
 
-## For Mobile Channels {#mobile-channels}
+## For mobile channels {#mobile-channels}
 
 AI Assistant also supports content generation for mobile push notifications, enabling you to create engaging titles, messages, and images for your mobile apps. This helps you maintain consistent, high-quality communication across all customer touchpoints, including mobile.
 
@@ -168,7 +192,7 @@ Once you have accessed AI Assistant for push notifications, you can configure th
 
 1. Choose your **[!UICONTROL Image settings]**:
 
-    * **[!UICONTROL Generative model]**: Select from available built-in models, custom Firefly models trained on your brand assets, or third-party image generation providers to create images that align with your specific needs and brand requirements. [Learn more](generative-models.md) 
+    * **[!UICONTROL Generative model]**: Select from available built-in models, custom Firefly models trained on your brand assets, or third-party image generation providers to create images that align with your specific needs and brand requirements. [Learn more](generative-models.md). For **Gemini** with **text overlays** on images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
     * **[!UICONTROL Color & tone]**: The overall appearance of the colors within an image and the mood or atmosphere it conveys.

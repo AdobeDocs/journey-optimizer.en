@@ -7,6 +7,31 @@ feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: 85412a85-edf0-4069-8bc7-b80371375f1f
+TQID: https://experienceleague.adobe.com/24n9GhVTfQ9y4hlvY6g67dyL0FHqNOJW0aP-WIpzRqs
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Configure Sinch provider {#sms-configuration-sinch}
 
@@ -27,18 +52,6 @@ To configure your Sinch provider, follow the steps below:
 
 ## Configure API credentials for SMS{#create-api}
 
->[!BEGINSHADEBOX]
-
-If opt-in or opt-out keywords are not provided, standard consent messages are used to honor user privacy. Adding custom keywords automatically overrides the defaults.
-
-**Default keywords:**
-
-* **Opt-In**: SUBSCRIBE, YES, UNSTOP, START, CONTINUE, RESUME, BEGIN
-* **Opt-Out**: STOP, QUIT, CANCEL, END, UNSUBSCRIBE, NO
-* **Help**: HELP
-
->[!ENDSHADEBOX]
-
 To configure your Sinch provider to send SMS messages and MMS with Journey Optimizer, follow these steps:
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
@@ -48,28 +61,34 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
     +++ List of SMS credentials for configuration
 
     |Configuration fields|Description|
-    |---|---|    
+    |---|---|
     |SMS vendor|Sinch|
     |Name|Choose a name for your API Credential.|
     |Service ID and API Token|Access the APIs page, you can find your credentials under the SMS tab. Learn more in [Sinch Documentation](https://developers.sinch.com/docs/sms/getting-started/){target="_blank"}.|
-    |Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the default or custom keywords that will automatically trigger your Opt-In Message. For multiple keywords, use comma-separated values.|
-    |Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the custom response that is automatically sent as your Opt-In Message.|
-    |Opt-Out Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the default or custom keywords that will automatically trigger your Opt-Out Message. For multiple keywords, use comma-separated values.|
-    |Opt-Out Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your Opt-Out Message.|
-    |Help Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br> Enter the default or custom keywords that will automatically trigger your **Help Message**. For multiple keywords, use comma-separated values.|
-    |Help Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent as your **Help Message**.|
-    |Double Opt-In Keywords|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the keywords which trigger the double opt-in process. If a user profile does not exist, it is created upon successful confirmation. For multiple keywords, use comma-separated values. [Learn more about the SMS Double Opt-in](https://video.tv.adobe.com/v/3427129/?learn=on).|
-    |Double Opt-In Message|**For new SMS configurations, use the [Webhooks menu](sms-webhook.md) to configure consent keywords. Existing configurations can continue using consent keywords in this section.** </br>Enter the custom response that is automatically sent in response to the double opt-in confirmation.|
     |Inbound Number|Add your unique inbound number or short code. This allows you to use the same API credentials across different sandboxes, each with its own inbound number or short code.|
-    |Custom Inbound Keywords|Define unique, non consent related keywords for batch-based actions, e.g. DISCOUNT, OFFERS, ENROLL. These keywords are captured and stored as attributes in the profile, allowing you to trigger a batched segment qualification within the journey and deliver a customized response or action.|
-    |Default Inbound Reply Message|Enter the default reply that is sent when an end user sends an inbound SMS that does not match any of the defined keywords.|
     |Override URL| Enter your custom URL to replace the default endpoints for SMS delivery reports, feedback data, inbound messages or event notifications. Sinch will send all relevant updates to this URL instead of the predefined ones.|
 
     +++
 
-1. Enable the **[!UICONTROL Fuzzy Opt-out]** option to detect messages resembling opt-out keywords (e.g., 'CANCIL') and customize the confirmation reply in the **[!UICONTROL Fuzzy Auto Reply]** field. 
+<!--
+1. Choose how user consent should be tracked for messaging:
 
-    **[!UICONTROL Fuzzy Opt-out]** identifies SMS messages that indicate a user wants to unsubscribe, even if the message does not exactly match a defined opt-out keyword. It can detect common opt-out phrases and certain offensive terms, helping ensure your campaigns respect user preferences and remain compliant.
+    * **[!UICONTROL Sender short code]**: Inbound keyword consent is keyed to your **sender short code** only. Use when one inbound number is enough to represent consent.
+
+    * **[!UICONTROL Sender short code + profile number]**: Consent is keyed to the **sender short code** and the profile **mobile number**. Use when profiles can have several numbers, or when opt-in/out must apply per sender and recipient pair.
+-->
+
+1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about using a custom dataset for inbound keywords](custom-dataset-inbound-keywords.md)
+
+    >[!NOTE] 
+    >
+    >The dataset schema must be **[!UICONTROL XDM ExperienceEvent]** and include at least these field groups:
+    >* Adobe CJM ExperienceEvent - Message interaction details
+    >* Adobe CJM ExperienceEvent - Message Execution Details
+    >* Adobe CJM ExperienceEvent - Message Profile Details
+    >
+    >The schema and dataset must be enabled for Profile.
+
 
 1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
 
@@ -150,7 +169,7 @@ Note that messages automatically fall back to SMS when the profile's device does
     Your messages automatically falls back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 -->
 
-### RCS Multimedia Messages
+### RCS multimedia messages
 
 >[!AVAILABILITY]
 >

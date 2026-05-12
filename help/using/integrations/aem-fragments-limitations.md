@@ -6,6 +6,7 @@ description: Considerations and common issues for AEM Content Fragments in Journ
 topic: Content Management
 role: User
 level: Beginner
+exl-id: de4f441e-c3a3-4759-a634-bc9029328ebb
 ---
 # Considerations and troubleshooting {#aem-fragments-limitations}
 

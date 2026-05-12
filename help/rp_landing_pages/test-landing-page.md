@@ -16,7 +16,7 @@ This section covers all testing and approval capabilities in Journey Optimizer. 
 
 This landing page helps you choose the right testing approach based on what you're building (campaigns vs. journeys), walks you through recommended testing workflows, and provides quick access to all testing and approval resources. Start with [Choose your testing approach](#choose-your-testing-approach) below to identify which tools apply to your use case. For definitions of key testing terms, see [Key terminology](#key-terminology).
 
-## Test & Approve Content
+## Test & approve content
 
 :::: landing-cards-container
 :::
@@ -127,7 +127,8 @@ Testing and approval processes serve as essential quality gates that protect you
 
 * **Save time and resources** - Detect issues early in the development cycle when fixes are cheaper and faster, preventing costly post-launch corrections or customer service escalations.
 
-<!--## Testing capabilities overview
+<!--
+## Testing capabilities overview
 
 **Testing types available:**
 
@@ -160,7 +161,6 @@ Testing and approval processes serve as essential quality gates that protect you
 2. During development: Preview with [test profiles](#choose-your-testing-approach), validate with [sample input data](#choose-your-testing-approach)
 3. Pre-launch: Run [technical tests](#2-technical-validation) (rendering, spam), check [conflicts](#test--approve-content), submit for [approval](#test--approve-content)
 4. Post-launch: Monitor with live reports (see [Monitoring & Troubleshooting](#test--approve-content)), iterate based on results
-
 -->
 
 <!--
@@ -201,7 +201,6 @@ Use this decision tree to quickly identify the right testing tools for your spec
 * Before launch → [Rendering tests](#2-technical-validation), [spam checks](#2-technical-validation), [conflict detection](#test--approve-content), [approvals](#test--approve-content)
 * After launch → [Live reports](../using/building-journeys/report-journey.md) and [monitoring](#test--approve-content)
 +++
-
 -->
 
 ## Choose your testing approach
@@ -227,7 +226,7 @@ The right testing approach depends on what you're building and what you need to 
 
 **For API-triggered campaigns:**
 
-* Use the [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target-"_blank"} to trigger proof jobs programmatically
+* Use the [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target-"_blank"} to trigger proof jobs programmatically
 
 >[!TAB Testing journeys]
 
@@ -393,7 +392,7 @@ Familiarize yourself with these essential testing concepts to better understand 
 
 Understand how testing capabilities connect to each other and to your broader Journey Optimizer workflows. This section maps prerequisites, upstream/downstream dependencies, and common capability combinations.
 
-+++**Prerequisites (required before testing)**
+### Prerequisites (required before testing)
 
 * Test profiles must be created before using test mode or content preview
 * Approval policies must be configured before submitting for approval
@@ -402,27 +401,21 @@ Understand how testing capabilities connect to each other and to your broader Jo
 * Journey must be in draft status to use test mode
 * Journey must have namespace configured to use test mode
 
-+++
-
-+++**What testing depends on (upstream)**
+### What testing depends on (upstream)
 
 * Content creation: Need campaigns or journeys to test
 * Test profiles: Required for test mode and content preview
 * Approval policies: Required for approval workflows
 * Configuration: Channel configurations, email authentication, domain settings
 
-+++
-
-+++**What depends on testing (downstream)**
+### What depends on testing (downstream)
 
 * Campaign/journey activation: Cannot activate without resolving errors
 * Publishing: Approval may be required before publishing
 * Live monitoring: Post-launch monitoring and reporting
 * Optimization: Use test results to refine future campaigns
 
-+++
-
-+++**Related capabilities**
+### Related capabilities
 
 * Testing + Approval workflows - Quality assurance process
 * Testing + Conflict detection - Preventing customer over-messaging
@@ -431,67 +424,51 @@ Understand how testing capabilities connect to each other and to your broader Jo
 * Test profiles + Personalization - Content validation
 * Dry run + Test mode - Comprehensive journey validation
 
-+++
-
-+++**Common capability combinations**
+### Common capability combinations
 
 * Content testing: Test profiles + Sample input data + Personalization playground
 * Email validation: Rendering tests + Spam scores + Test profiles + Proofs
 * Journey validation: Test mode + Dry run + Test profiles
 * Pre-launch checklist: All technical tests + Conflict detection + Approval workflows
 
-+++
-
 >[!TAB Common questions]
 
-+++**Q: What testing is required before launching a campaign?**
+### Q: What testing is required before launching a campaign?
 
 **Minimum:** Content preview with test profiles + Spam score check (email)
 **Recommended:** + Email rendering + Conflict detection + Approval workflow
 **Best practice:** + Sample input data testing + Seed lists + A/B experiment (if optimizing)
 
-+++
-
-+++**Q: How do I test personalization without creating many test profiles?**
+### Q: How do I test personalization without creating many test profiles?
 
 **Primary solution:** Use [sample input data](../using/test-approve/simulate-sample-input.md) with CSV/JSON files (supports up to 30 variants)
 **Alternative:** Create 3-5 representative [test profiles](../using/audience/creating-test-profiles.md) covering key segments
 **Learning tool:** Experiment first in [personalization playground](../using/personalization/personalize.md#playground)
 
-+++
-
-+++**Q: What's the difference between test mode and dry run for journeys?**
+### Q: What's the difference between test mode and dry run for journeys?
 
 **Test mode:** Sends test profiles through journey, triggers actual actions, generates test messages. Requires draft journey + namespace.
 **Dry run:** Traces execution paths without sending anything. Works on any journey status. No messages sent, no actions executed.
 **Use together:** Test mode for message testing + Dry run for logic validation - comprehensive coverage.
 
-+++
-
-+++**Q: Can I test journeys in production/live status?**
+### Q: Can I test journeys in production/live status?
 
 **Test mode:** No - draft journeys only
 **Dry run:** Yes - works on any journey status
 **Content preview:** Yes - preview individual messages anytime
 **Workaround:** Duplicate live journey to draft for full test mode validation
 
-+++
-
-+++**Q: Which testing capabilities require external integrations?**
+### Q: Which testing capabilities require external integrations?
 
 **Email rendering:** Requires Litmus integration (separate license)
 **All others:** Built-in to Journey Optimizer, no additional integrations required
 **Note:** Test profiles require Real-time Customer Profile Service (included)
 
-+++
+### Q: How do I test API-triggered campaigns?
 
-+++**Q: How do I test API-triggered campaigns?**
-
-**Option 1:** Use [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target-"_blank"} for programmatic testing
+**Option 1:** Use [Campaign Simulation API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target-"_blank"} for programmatic testing
 **Option 2:** Preview content with test profiles in UI
 **Option 3:** Send proofs to test email addresses
 **Best practice:** Combine all three for comprehensive validation
-
-+++
 
 >[!ENDTABS]

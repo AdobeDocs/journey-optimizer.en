@@ -5,8 +5,16 @@ title: Configuration steps
 description: Learn how to bring data into Adobe Experience Platform from supported sources such as SFTP, cloud storage, or databases.
 exl-id: 7f1e7985-b68e-43d6-9c8f-fea2469f8af9
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/jXA5I4NsV459grMkrAD-1AVugey6Uw7aViNO72oKtQw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 ---
-
 # Ingest data {#ingest-data}
 
 >[!IMPORTANT]
@@ -19,7 +27,7 @@ Adobe Experience Platform allows data to be ingested from external sources while
 
 A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Data that is successfully ingested into Experience Platform is stored within the data lake as datasets. 
 
-## Supported Sources for Orchestrated campaigns {#supported}
+## Supported sources for orchestrated campaigns {#supported}
 
 The following Dources are supported for use with Orchestrated campaigns:
 

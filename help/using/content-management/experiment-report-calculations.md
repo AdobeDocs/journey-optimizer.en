@@ -5,6 +5,19 @@ feature: A/B Testing, Experimentation
 role: User
 level: Experienced
 exl-id: 67ba8861-be6f-42ae-b9b8-96168d0dd15c
+TQID: https://experienceleague.adobe.com/fvhdR1yMUsQ9H6N2V1-q-nEWXhuKkzcfRgeEKH-vsbk
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
 ---
 # Understand statistical calculations in Experimentation report {#experiment-report-calculations}
 
@@ -32,7 +45,7 @@ The lift between a variant  *ν*, and the control variant  *ν<sub>0</sub>* is t
 
 </br>
 
-## Anytime Valid Confidence Intervals for individual treatments
+## Anytime valid confidence intervals for individual treatments
 
 The Journey Experimentation panel displays "anytime valid" confidence intervals (confidence sequences) for individual treatments in an experiment. 
 
@@ -93,7 +106,7 @@ Finally, the **anytime valid confidence** is:
 
 ![](assets/statistical_11.png){width="200" align="center"}
 
-## Declaring an Experiment to be Conclusive
+## Declaring an experiment to be conclusive
 
 For an Experiment with two arms, the Journey Optimizer Experimentation panel displays a message stating that an Experiment is **conclusive** when the anytime valid confidence exceeds 95% (i.e., the anytime valid `p`-value is below 5%). 
 

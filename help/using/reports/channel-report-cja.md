@@ -8,6 +8,31 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 393f02c0-f54c-4222-b668-0931b67590ce
+TQID: https://experienceleague.adobe.com/OJek9bJ53fdDbGpGNpbRR9X-kD9zkQnDRvppsevqO44
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Overview report {#channel-report-cja}
 
@@ -129,7 +154,7 @@ The **[!UICONTROL Outbound errors]** table empowers you to pinpoint the precise 
 
 The **[!UICONTROL Outbound exclusions]** table present a comprehensive view of the different factors that resulted in the exclusion of user profiles from the targeted audience, resulting in the message not being received.
 
-## Journey Capping and Conflicts {#rule-sets}
+## Journey capping and conflicts {#rule-sets}
 
 The **[!UICONTROL Journey Capping and Conflicts]** table provides insights into how journey arbitration rule sets are performing, showing journey entrances and exclusions based on the capping rules and priority scores applied to your journeys.
 
@@ -150,6 +175,8 @@ The **[!UICONTROL Exclusions]** column shows the number of profiles that were ex
 * **Lower priority**: The cap has not been reached, but other higher priority journeys meet the constraints. The profile was excluded from this journey and entered a higher priority journey instead.
 
 +++
+
+To investigate these exclusions at the Data Lake level using Adobe Experience Platform Query Service, see [Business rules queries](query-examples.md#business-rules-queries).
 
 ➡️ [Learn more about journey capping & arbitration](../conflict-prioritization/journey-capping.md)
 

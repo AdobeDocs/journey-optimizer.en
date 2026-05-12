@@ -9,8 +9,31 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: schemas, XDM, platform, streaming, ingestion, journey
 exl-id: f19749c4-d683-4db6-bede-9360b9610eef
+TQID: https://experienceleague.adobe.com/T8QeEHgL2WALpXMyTwdGFnEgMPG6rKK76Meg-K2UVZ0
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
-# About ExperienceEvent Schemas for [!DNL Journey Optimizer] Events {#about-experienceevent-schemas}
+# About experienceevent schemas for [!DNL Journey Optimizer] events {#about-experienceevent-schemas}
 
 [!DNL Journey Optimizer] events are XDM Experience Events that are sent to Adobe Experience Platform via Streaming Ingestion.
 
@@ -117,7 +140,7 @@ Add a condition in a journey, edit the expression and unfold the event node in t
 
 ![](assets/schema12.png)
 
-To learn how to define journey conditions, refer to this [page](../building-journeys/condition-activity.md).
+To learn how to define journey conditions, refer to this [page](../building-journeys/conditions.md).
 
 ### Message personalization{#message_personalization}
 

@@ -6,6 +6,16 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: dfe611fb-9c50-473c-9eb7-b983e1e6f01e
+TQID: https://experienceleague.adobe.com/CUiT5GFH9o4q-oOSWuKC8ZyLbRbH9lj88M92LhMIX9E
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Arrays and list functions {#arrays}
 
@@ -65,7 +75,7 @@ The following operation specifies people who have placed orders in more than one
 {%= distinct(person.orders.storeId).count() > 1 %}
 ```
 
-## Distinct Count With Null {#distinct-count-with-null}
+## Distinct count with null {#distinct-count-with-null}
 
 The `distinctCountWithNull` function is used to count the number of different values in a list including the null values.
 
@@ -181,7 +191,8 @@ The following operation defines people whose favorite colors include at least on
 ```
 
 
-<!-- ## Intersection{#intersection}
+<!--
+## Intersection{#intersection}
 
 The `intersection` function is used to determine the common members of two arrays or lists.
 
@@ -198,7 +209,7 @@ The following operation defines if person 1 and person 2 both have favorite colo
 ```sql
 intersection(person1.favoriteColors,person2.favoriteColors) = ["red", "blue", "green"]
 ```
---> 
+-->
 
 ## Sort and get last N in array {#last-n}
 
@@ -211,7 +222,7 @@ The `bottomN` function sorts an array in ascending order based on the given nume
 ```
 
 | Argument | Description |
-| --------- | ----------- | 
+| --------- | ----------- |
 | `{ARRAY}` | The array or list that is to be sorted. |
 | `{VALUE}` | The property in which to sort the array or list. |
 | `{AMOUNT}` | The number of items to be returned. |

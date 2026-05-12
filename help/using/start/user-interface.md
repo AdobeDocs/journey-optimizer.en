@@ -8,6 +8,85 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
+TQID: https://experienceleague.adobe.com/RqIzgHdwFqBmYLPKbMkAvscFopYMF-lt2gY4Vl34GKA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b19d9237-76be-466d-a869-aacf2d72205f
+    internal-label: Landing pages
+  - id: b2044d1a-3b9b-4bf9-af40-0a221e7e1e53
+    internal-label: AI Assistant
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
+  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
+    internal-label: Business rules
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: e5fe9ec6-65e8-420b-8dfd-f088fffaf90c
+    internal-label: Use case playbooks
+  - id: f550d0f2-143d-4093-9463-467fbec95fcc
+    internal-label: Accessibility
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Navigate the interface {#user-interface}
 
@@ -33,7 +112,7 @@ The Journey Optimizer interface consists of four main areas:
 
 ## Top bar features {#top-bar}
 
-### Universal search {#search}
+### Universal search {#universal-search}
 
 Use the search icon to quickly find journeys, campaigns, assets, and other objects across Journey Optimizer. Type keywords to see relevant results from all areas of the platform. [Learn more about universal search](search-filter-categorize.md#unified-search).
 
@@ -334,26 +413,34 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
 
 >[!CONTEXTUALHELP]
->id="ajo_orchestration_incrementalquery"
->title="Incremental query"
->abstract="The Incremental query is a Targeting activity that runs a database query every time the Orchestrated campaign runs. It returns only new records and excludes anyone already included in a previous run, so you avoid re-targeting the same people or re-exporting the same rows."
+>id="ajo_admin_aem_content_fragment_configuration"
+>title=""AEM Configuration Help"
+>abstract="Learn more about creating and managing a configuration"
 
 >[!CONTEXTUALHELP]
->id="ajo_orchestration_incrementalquery_processeddata"
->title="Processed data"
->abstract="Under Processed data, choose how to exclude records from earlier runs. With Exclude results of previous execution, the activity keeps a list of records returned in prior runs; each run excludes those and returns only new ones. With the Use a date field option, the activity uses a selected date field instead of tracking individual IDs, and each run returns only rows whose date is after the last execution."
+>id="ajo_admin_aem_configure_instance"
+>title="Instance Configuration"
+>abstract="Select the appropriate instance configuration type for your setup. </br>Author only setup: Use content fragments from the AEM author instance. Publish instance configuration and live updates are not supported.</br>Publish instance setup: Configure publish instance settings. Optionally enable "Send token to publish instance" to provide Service Credentials for authentication."
 
 >[!CONTEXTUALHELP]
->id="ajo_orchestration_incrementalquery_history"
->title="History in days"
->abstract="This setting controls how long that list is retained. A value of 0 means indefinite retention; no records are removed."
+>id="ajo_admin_aem_send_token"
+>title="Send token to publish instance"
+>abstract="When enabled, Service Credentials are sent to authenticate requests to the publish instance. Provide a valid Service Credential JSON below."
 
 >[!CONTEXTUALHELP]
->id="ajo_inbox_location"
->title="Location on page"
->abstract="."
+>id="ajo_admin_aem_service_credential"
+>title="Paste Service Credential JSON"
+>abstract="Paste your AEM service credential JSON after creating them by going through the public technical account documentation. It will be automatically formatted and validated."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#create-a-technical-account"
 
 >[!CONTEXTUALHELP]
->id="ajo_inbox_app_id"
->title="App ID"
->abstract="."
+>id="ajo_admin_aem_custom_domain"
+>title="Custom domain"
+>abstract="Optional. Provide a custom domain ifpublish-p16552-e147195.adobeaemcloud.comis blocked from fetching content for your org"
+
+<!-- JOURNEYS - EXPRESSION ASSISTANT -->
+
+>[!CONTEXTUALHELP]
+>id="journeyExpAI"
+>title="Expression Assistant"
+>abstract="Use Expression Assistant to generate and refine expressions in Journey Optimizer."

@@ -9,6 +9,49 @@ level: Intermediate
 keywords: entry, exit, criteria, journey, profile, reentrance, best practices
 version: Journey Orchestration
 exl-id: e879a0f6-b969-4de0-a733-f2880d58d59b
+TQID: https://experienceleague.adobe.com/6OJQsorJ9p7gtO1ep-rIss60J2TmKzqiNS3Btfhh8Gs
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
+    internal-label: Wait activity
+  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
+    internal-label: Reaction events
+  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
+    internal-label: Audience Qualification events
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Work with journey entry and exit criteria {#entry-exit-criteria-guide}
 
@@ -34,7 +77,7 @@ This guide provides practical guidance, real-world examples, and best practices 
 
 * **Success metric achievement** - Profiles exit when they complete the [journey objective](success-metrics.md), such as making a purchase or downloading an app, eliminating unnecessary follow-up communications.
 
-* **Condition-based** - Profiles exit when [specific conditions](condition-activity.md) are met, like inactivity over a set period or changes in profile attributes.
+* **Condition-based** - Profiles exit when [specific conditions](conditions.md) are met, like inactivity over a set period or changes in profile attributes.
 
 * **Event-based** - Profiles exit when [specific events occur](../event/about-events.md), such as subscription cancelation or product return.
 
@@ -100,7 +143,7 @@ Gather insights about customer satisfaction and product performance by requestin
 
 * **[Audience Qualification Entry](audience-qualification-events.md)**: Trigger journeys when profiles qualify for or exit from specific audiences in real-time. Define [streaming audiences](../audience/about-audiences.md), add an **[!UICONTROL Audience Qualification]** event from the **[!UICONTROL Events]** palette, and choose the trigger type.
 
-* **[Attribute Filters](condition-activity.md)**: Refine entry criteria by combining events or audiences with profile attributes and context using AND/OR logic. Use [conditions](conditions.md) to reference [profile attributes](../audience/get-started-profiles.md), events, or [external data](../datasource/about-data-sources.md).
+* **[Attribute Filters](conditions.md)**: Refine entry criteria by combining events or audiences with profile attributes and context using AND/OR logic. Use [conditions](conditions.md) to reference [profile attributes](../audience/get-started-profiles.md), events, or [external data](../datasource/about-data-sources.md).
 
 * **[Time Windows and Scheduling](journey-properties.md#schedule)**: Set temporal constraints to keep journeys timely and relevant. Configure [schedules on Read Audience activities](read-audience.md), use [Wait activities](wait-activity.md), and add [time-based conditions](conditions.md) to control timing.
 
@@ -116,7 +159,7 @@ Gather insights about customer satisfaction and product performance by requestin
 
 * **[Success Metric Achievement](journey-properties.md#exit-criteria)**: Define success metrics (like purchase or subscription) and exit profiles upon completion. Click **[!UICONTROL Show exit criteria]** icon, select **[!UICONTROL Add exit criteria]**, and choose an [Event](../event/about-events.md) or [Audience](../audience/about-audiences.md) as the exit trigger.
 
-* **[Inactivity Timeouts](wait-activity.md)**: Exit profiles if no engagement occurs within a set timeframe. Use [Exit Criteria](journey-properties.md#exit-criteria) with audiences that check last engagement date, set [Wait activities](wait-activity.md) with defined durations, and use [conditions](condition-activity.md) to check for activity.
+* **[Inactivity Timeouts](wait-activity.md)**: Exit profiles if no engagement occurs within a set timeframe. Use [Exit Criteria](journey-properties.md#exit-criteria) with audiences that check last engagement date, set [Wait activities](wait-activity.md) with defined durations, and use [conditions](conditions.md) to check for activity.
 
 * **[Re-entry Rules](entry-management.md)**: Decide if profiles can re-enter the journey multiple times or only once, depending on your campaign strategy. Configure **[!UICONTROL Re-entrance]** settings in journey **[!UICONTROL Properties]** to set wait periods, enable forced re-entrance, or use [supplemental identifiers](supplemental-identifier.md) for context-specific re-entrance.
 
@@ -206,4 +249,4 @@ Start by clearly mapping your customer triggers and exit points, test thoroughly
 
 **Related capabilities**
 
-[Audience qualification events](audience-qualification-events.md) | [Success metrics and goals](success-metrics.md) | [Conflict management](../conflict-prioritization/conflicts.md) | [Frequency capping](../conflict-prioritization/rule-sets.md) | [Testing journeys](testing-the-journey.md) | [Condition activity](condition-activity.md) | [Reaction events](reaction-events.md) | [Wait activity](wait-activity.md)
+[Audience qualification events](audience-qualification-events.md) | [Success metrics and goals](success-metrics.md) | [Conflict management](../conflict-prioritization/conflicts.md) | [Frequency capping](../conflict-prioritization/rule-sets.md) | [Testing journeys](testing-the-journey.md) | [Optimize activity](optimize.md) | [Reaction events](reaction-events.md) | [Wait activity](wait-activity.md)

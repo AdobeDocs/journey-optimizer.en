@@ -5,6 +5,21 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: 92d1439e-5cac-4e7d-85f8-ebf432e9ef7c
+TQID: https://experienceleague.adobe.com/dKfstmm0ilHKUATU-sz7c04IZBu2O7Ju-srPPoKJVl4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Get started with journeys & campaigns approval {#send-proofs}
 
@@ -101,6 +116,20 @@ No. Once submitted for approval, the campaign or journey is in a locked "In Revi
 +++I don't see the Approve & publish permission in the drop-down — what should I check?
 
 Ensure you are adding the correct resource first. The **Approve & publish Campaigns** permission requires the **Campaigns** resource to be added to the role, and **Approve & publish Journeys** requires the **Journeys** resource. Both must be added separately. [Learn how to assign approval-related permissions](#prerequisites)
+
++++
+
++++How does [!DNL Journey Optimizer] determine which approval policy applies if more than one policy could match?
+
+When several active approval policies could apply to the same journey or campaign, the policy that was **activated most recently** takes precedence. The approver user groups defined in that policy are the ones that are notified and that govern the request.
+
+[Learn more](approval-policies.md#multiple-policies)
+
++++
+
++++If a requestor belongs to multiple user groups, can they choose which group the approval request is sent to?
+
+No. Requestors cannot manually select which user group receives or routes the approval request. The user groups specified in the approval policy that applies—according to [policy precedence](approval-policies.md#multiple-policies)—are notified automatically.
 
 +++
 

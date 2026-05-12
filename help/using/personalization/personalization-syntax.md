@@ -9,6 +9,22 @@ role: Developer
 level: Intermediate
 keywords: expression, editor, syntax, personalization
 exl-id: 5a562066-ece0-4a78-92a7-52bf3c3b2eea
+TQID: https://experienceleague.adobe.com/kZEw2lITdt8SMWMe-UT2vPzdoiAjB2vbItmK9zt-WJo
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Personalization syntax {#personalization-syntax}
 
@@ -16,7 +32,7 @@ Personalization in [!DNL Journey Optimizer] is based on the templating syntax ca
 
 It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions.
 
-Simple expression sample: 
+Simple expression sample:
 
 `{{profile.person.name}}`
 
@@ -149,7 +165,7 @@ Blocks are expressions that have a block opening (`{{# }}`) and closing (`{{/}}`
 | String | A data type comprised of characters surrounded by double quotes. <br>Examples: `"prospect"`, `"jobs"`, `"articles"` |
 | Boolean | A data type that is either true or false.|
 | Integer | A data type representing a whole number. It can be positive, negative, or zero. <br>Examples: `-201`, `0`, `412` |
-| Array | A data type that is comprised as a group of other literal values. It uses square brackets to group and commas to delimit between different values. <br> **Note:** You cannot directly access properties of items within an array. <br> Examples: `[1, 4, 7]`, `["US", "FR"]` |  
+| Array | A data type that is comprised as a group of other literal values. It uses square brackets to group and commas to delimit between different values. <br> **Note:** You cannot directly access properties of items within an array. <br> Examples: `[1, 4, 7]`, `["US", "FR"]` |
 
 >[!CAUTION]
 >
