@@ -78,7 +78,7 @@ The buttons you see depend on your repository configuration:
 * **Both buttons**: Repository has both configurations and asset is both published and approved.
 +++
 
-### For content fragment {#content-fragment-features}
+### For Content Fragment {#content-fragment-features}
 
 Adobe Experience Manager Content Advisor provides the following Content Fragment features:
 
