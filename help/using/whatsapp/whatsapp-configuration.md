@@ -121,6 +121,10 @@ Once your WhatsApp API credentials have been successfully created, you can now c
 * **Receive delivery reports** such as read receipts (where available) and message delivery status
 * **Enable tracking events** for analytics and reporting in Adobe Experience Platform datasets
 
+>[!NOTE]
+>
+>Inbound WhatsApp messages are captured in the _AJO Inbound Activity Event Dataset_ system dataset. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
+
 Webhooks act as the communication bridge between Meta's WhatsApp Business Platform and Adobe Journey Optimizer, allowing you to receive real-time notifications about message events and user interactions.
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL WhatsApp Webhooks]** menu under **[!UICONTROL WhatsApp settings]**, and click the **[!UICONTROL Create Webhook]** button.
