@@ -220,59 +220,61 @@ You can insert your dynamic template directly into your content using the HTML c
 
 Once you have performed your tests and validated the content, you can send your message to your audience. 
 
-<!--
-## Personalization with text overlay
+# Insert countdown timer {#countdown}
 
-Easily customize any dynamic media by replacing the existing text overlay with new text of your choice, allowing for seamless updates and personalization.
+Create urgency and maximize conversions with Dynamic Media countdown timers that update in real-time when recipients open your emails. This feature is ideal for flash sales, limited-time offers, and time-sensitive promotions.
 
-In this example, our goal is to update the existing text overlay by replacing it with a new validity date and adding a personalization block, ensuring it is customized for each profile when they open their messages.
+For example, as a marketer for a retail brand, you're running a 48-hour flash sale. By using the countdown timer in your promotional emails:
 
-1. Drag and drop an **[!UICONTROL HTML component]** into your content.
+* Recipients who open immediately see "47 hours remaining"
+* Recipients who open 24 hours later see "23 hours remaining"  
+* Recipients who open after the sale ends see "Time's up!"
 
-1. Select **[!UICONTROL Show the source code]**.
+For more information on how to add countdown timers to your Dynamic Media template in Adobe Experience Manager, refer [to this document](assets/do-not-localize/countdown.pdf).
 
-1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
 
-    You can also simply copy and paste your assets URL.
+1. In **[!DNL Adobe Experience Manager]**, create a Dynamic Media template and add a countdown timer component to it. 
 
-1. Browse through your AEM assets and select the one you want to add to your content.
+    Once your template is ready, make sure to publish it in Adobe Experience Manager and then publish it to Dynamic Media so that it becomes available for selection in Journey Optimizer.
 
-1. Replace the overlay with the desired text.
+    ![](assets/timer-1.png)
 
-    Here we change the validity date from 31st December 2024 to the 1st July 2025.
+1. In **[!DNL Journey Optimizer]**, create a new campaign or open an existing one, then access the Email Designer.
 
-1. Add the required personalization fields to your image.
+1. Drag and drop an **HTML** or **Asset** component into your email content.
 
-1. Click **[!UICONTROL Save]**.
+1. Hover over the component and click **[!UICONTROL Show the source code]** (for HTML components) or **[!UICONTROL Browse]** (for Asset components).
 
-Your content now includes your updated text overlay and personalization.
+    ![](assets/timer-2.png)
 
-## Add Dynamic media conditional content
+1. From the **[!UICONTROL Edit HTML]** menu, navigate to **[!UICONTROL Assets]** and click **[!UICONTROL Open asset selector]** to browse and select your published Dynamic Media template.
 
-Enable conditional content in your dynamic media to better target your audience and deliver a more personalized experience.
+    ![](assets/timer-3.png)
 
-1. Drag and drop an **[!UICONTROL HTML component]** into your content.
+1. Enable the pills experience by toggling Pills to On. This improves readability by hiding long attribute paths.
 
-1. Select **[!UICONTROL Show the source code]**.
+    ![](assets/timer-6.png)
 
-1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
+1. In the **[!UICONTROL Custom attributes]** menu, configure any customizable URL parameters as needed for your template.
 
-    You can also simply copy and paste your assets URL.
+    Click **[!UICONTROL Save]** when finished.
 
-1. Browse through your AEM assets and select the one you want to add to your content.
+    ![](assets/timer-4.png)
 
-1. Once your dynamic media is inserted to your content, select **[!UICONTROL Enable conditional]** content from your HTML component toolbar to create your different user experiences. 
+1. Alternatively, you can also access the parameters of the Dynamic Media template by selecting the asset in the Email Designer, then accessing the **[!UICONTROL Settings]** menu.
 
-1. From the Variant - 1, click **[!UICONTROL Select condition]** to fine tune your audience.
+    Configure the following:
 
-1. Choose your condition or create a new one if needed and click **[!UICONTROL Select]**.
+    * **Banner text**: The text displayed with your timer
+    * **End time**: The date and time when the countdown expires. Enter the time in GMT (Greenwich Mean Time) only. The system does not accept other time zones.
+    * **Fallback text**: The message shown after the timer ends
 
-    [Learn more about conditions](../personalization/create-conditions.md)
+    ![](assets/timer-5.png)
 
-1. Select your **[!UICONTROL Component]** and access the **[!UICONTROL Settings]** menu.
+1. Click **[!UICONTROL Preview]** to view the timer with real-time countdown updates and verify your configuration.
 
-1. In the **[!UICONTROL Custom Attributes]** menu, populate the Dynamic Media text and personalization fields to customize the content for your audience.
--->
+When recipients open the email, they see the accurate time remaining for your flash sale. If they reopen the email later, the countdown automatically updates to reflect the current time remaining. After the end date, the default message appears automatically.
+
 
 ## How-to video {#video}
 
