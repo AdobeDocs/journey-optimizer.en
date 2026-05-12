@@ -5,8 +5,18 @@ title: Create Orchestrated campaigns with Adobe Journey Optimizer
 description: Learn how to build Orchestrated campaigns with Adobe Journey Optimizer
 exl-id: d1d64125-cf00-49c2-a71d-1494ede16f61
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/tQGWupMvnX9-uFruIQg1dMuXd9PZNxPDYg6RlGdK3hA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
 ---
-
 # Orchestrate campaign activities {#orchestrate}
 
 Once that you have [created an Orchestrated campaign](gs-campaign-creation.md), you can start orchestrating the differents tasks it will perform. To do this, a visual canvas is provided, allowing you to construct an Orchestrated campaign canvas. Within this canvas, you can add various activities and connect them in a sequential order.

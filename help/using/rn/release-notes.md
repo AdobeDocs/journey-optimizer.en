@@ -7,6 +7,45 @@ role: User
 level: Beginner, Intermediate
 description: Adobe Journey Optimizer Release notes
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
+TQID: https://experienceleague.adobe.com/YJKQFYUi8Kw7yZZKm8blcM-1G9uYsqcsEsopH0hOMhA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
+    internal-label: Action configuration
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Release notes {#release-notes}
 
@@ -121,7 +160,7 @@ The following capabilities and enhancements are scheduled for release in the nex
 <p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
 <!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
 <p>For more information, refer to the <a href="../email/message-tracking.md">detailed documentation</a>.</p>
-<p>Availability date: May 7, 2026</p>
+<p>Availability date: May 11, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -431,6 +470,12 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
   Previously available for email content templates only, this capability is now deployed to **email** content in the Email Designer (for example, emails authored in journeys and campaigns), in addition to email content templates. It is currently in Limited Availability — contact your Adobe representative to gain access. [Read more](../email/email-expert-mode.md)
 
   Availability date: April 9, 2026
+
+#### Journeys
+
+* **Current journey payload size visible in journey properties** - The journey properties panel now displays the current size of the journey payload compared to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator helps you monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
+
+  Availability date: April 30, 2026
 
 #### Journey Path Optimization
 

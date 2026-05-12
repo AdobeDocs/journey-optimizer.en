@@ -10,6 +10,35 @@ role: User
 level: Beginner, Intermediate
 keywords: Email Themes, Modules, Reusability, Brand Consistency, Email Design, Custom CSS, Mobile Optimization
 exl-id: e81d9634-bbff-44d0-8cd7-e86f85075c06
+TQID: https://experienceleague.adobe.com/2zlrBZi84Uq475zZd5jzGki6NZuqTLJABh-G36VwNVA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Apply themes to your email content {#apply-email-themes}
 

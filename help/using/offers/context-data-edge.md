@@ -9,6 +9,38 @@ role: Developer
 level: Experienced
 exl-id: c9e14d4d-f2e2-43f9-b1c5-4b005ce858ad
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/uUlnfdFBE4-6tCklMD-ZwpyVI75hMgSoFftS8n-cC1Y
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: acc16deb-1d7f-4ec9-9ce3-6cdf355afde6
+    internal-label: XDM
+  - id: ca3d6bf4-a4af-4944-936b-8de1eb09f149
+    internal-label: Datastreams
+  - id: de9975b2-c43a-4287-9698-4f4cad92b83f
+    internal-label: Schemas
+  - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+    internal-label: Properties
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Context data & edge decisioning requests {#edge}
 

@@ -6,6 +6,26 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: bb67b55f-2eac-4775-a9f5-78288009477e
+TQID: https://experienceleague.adobe.com/g6SvbQdYTKgvcbEggw4RmjGY-25x7Abm-byZ4UqT4NE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: bc543dba-f0db-4234-b5da-877a5c1664e2
+    internal-label: Content cards
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Configure content cards support in Web SDK {#content-card-configuration-sdk}
 

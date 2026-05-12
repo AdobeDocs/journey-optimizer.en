@@ -240,7 +240,6 @@ solution: Journey Optimizer
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
-    + {hide-from-toc} [Auto-generation of content variants](using/test-approve/simulate-sample-input-generated.md)
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
@@ -500,6 +499,7 @@ solution: Journey Optimizer
     + {hide-from-toc} [Work with Experience Manager templates](using/integrations/aem-templates.md)
     + Experience Manager Content Fragments {#aem}
       + [Get started with Experience Manager Content Fragments](using/integrations/aem-fragments-gs.md)
+      + {hide-from-toc} [Configure your repository for Content Fragments](using/integrations/aem-admin-settings.md)
       + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
       + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
     + {hide-from-toc} [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
@@ -891,6 +891,7 @@ solution: Journey Optimizer
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + [Export message content](using/configuration/message-export.md)
+  + {hide-from-toc} [AJO Message Export schema](using/configuration/message-export-schema.md)
   + Guided channel setup {#guided-setup}
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
     + [Create a channel set up](using/configuration/create-channel-set-up.md)

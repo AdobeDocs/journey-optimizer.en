@@ -9,6 +9,33 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
+TQID: https://experienceleague.adobe.com/sWjIVlyPh0ySD1s-TLxJu9zmItbncoxKO0u3DVjVt-8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: cb1f1586-9fb4-4de2-8332-02cebb88d42d
+    internal-label: Direct mail
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Frequency capping by channel and communication type {#rule-sets}
 
@@ -74,13 +101,15 @@ To create a channel rule set, follow these steps :
 
    Make sure you enter a value that matches the selected duration type: 1-23 for Hourly, 1-30 for Daily, 1-4 for Weekly, and 1-3 for Monthly.
 
-   The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this resets occurs every two days at midnight UTC.
+   The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this reset occurs every two days at midnight UTC.
 
-1. Select the channel you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]** or **[!UICONTROL Direct mail]**.
+1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]** or **[!UICONTROL WhatsApp]**.
 
-1. Select several channels if you want to apply capping across all selected channels as a total count.
+   ![](assets/rule-sets-channels.png)
 
-   For example, set capping to 5, and select both the email and sms channels. If a profile has already received 3 marketing emails and 2 marketing sms for the selected period, this profile will be excluded from the very next delivery of any marketing email or sms.
+   Select several channels if you want to apply capping across all selected channels as a total count.
+
+   For example, set capping to 5, and select both the Email and SMS channels. If a profile has already received 3 marketing emails and 2 marketing SMS messages for the selected period, this profile will be excluded from the very next delivery of any marketing email or SMS message.
 
 1. Click **[!UICONTROL Save]** to confirm the rule creation. Your message is added to the rule set, with the **[!UICONTROL Draft]** status.
 

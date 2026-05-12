@@ -7,6 +7,16 @@ feature: Profiles, Identities
 role: User
 level: Beginner
 exl-id: 90e892e9-33c2-4da5-be1d-496b42572897
+TQID: https://experienceleague.adobe.com/gPZkvVDsQKRuXgVRwyj-kMHQYpLBX2MKfECxBZvPRKU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Get Started with identities {#identities-gs}
 

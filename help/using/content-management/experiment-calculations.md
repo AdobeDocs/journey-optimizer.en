@@ -9,6 +9,22 @@ role: User
 level: Experienced
 keywords: content, experiment, statistical, calculation
 exl-id: 60a1a488-a119-475b-8f80-3c6f43c80ec9
+TQID: https://experienceleague.adobe.com/FK4Ze6jAsBbzBDRxCSLVnbfeoErPniPPUAfSLYVECOI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
 ---
 # Understand statistical calculations {#experiment-calculations}
 

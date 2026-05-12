@@ -15,7 +15,15 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2026 {#may-2026}
 
+* The **Export message content** documentation has been expanded with a **Message Export FAQ** (personalized content, images and media, tracked links, PII, retention, use cases, etc.), and **sample exported JSON** examples for SMS and email. [Read more](../configuration/message-export.md)
+
+* A new **AJO Message Export schema** page documents every field in the AJO Message Export Dataset, with data types and hierarchy for the exported email and SMS payload. [Read more](../configuration/message-export-schema.md)
+
+* A new **Personalize URLs in emails** page has been added, consolidating guidance on dynamic URL personalization, complete/base URL personalization, URL tracking parameter personalization, and key guardrails. [Read more](../email/url-personalization.md)
+
 * A new **Business rules queries** section has been added to the query examples page, providing a Data Lake query to check all profile discards due to journey frequency capping exclusions on a specific journey after a specific date. The query includes the `eventCodeReason` field to identify whether profiles were excluded because a cap was reached (`CAP_REACHED`) or due to a lower priority (`LOWER_PRIORITY`). [Read more](../reports/query-examples.md#business-rules-queries)
+
+* The **Journey properties** documentation has been updated to document the new **Current journey payload size** indicator in the journey properties panel. This read-only field shows the current size of the journey payload compared to the configured limit (e.g. 1.5 MB out of 2 MB), helping you monitor journey complexity before publishing and avoid size-related publication errors. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
 
 ## April 2026 {#april-2026}
 
@@ -30,7 +38,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * The **Build audience activity** documentation has been enriched with a new example showing how to filter profiles by a subscription plan attribute using the rule builder. [Read more](../orchestrated/activities/build-audience.md#build-audience-examples)
 
 * The **Get started with Orchestrated campaigns** page documents the entry-level **Build audience → Fork → Channel A + Channel B** pattern in **What's inside an Orchestrated campaign?**, with cross-references to the Fork activity and Marketing vs Transactional messages pages. [Read more](../orchestrated/gs-orchestrated-campaigns.md#gs-ms-campaign-inside)
-* The **Edit email content with the advanced HTML editor** page has been moved from the Content management section to the **Email** section of the documentation (under Email design) and the page file has been renamed to **email-expert-mode.md**. The page now documents that the advanced HTML editor is available in the Email Designer for email messages as well as for email content templates. [Read more](../email/email-expert-mode.md)
+
+* The **Edit email content with the advanced HTML editor** page has been moved from the Content management section to the **Email** section of the documentation. The page now documents that the advanced HTML editor is available in the Email Designer for email messages as well as for email content templates. [Read more](../email/email-expert-mode.md)
 
 * The **Start and monitor Orchestrated campaigns** documentation has been updated with a new section detailing the internal publication-time execution sequence, along with a campaign lifecycle status table, a pre-publication checklist, and a sending confirmation warning for non-recurring campaigns. [Read more](../orchestrated/start-monitor-campaigns.md#publication-sequence)
 

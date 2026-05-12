@@ -7,6 +7,35 @@ feature: Accessibility
 role: User
 level: Beginner
 exl-id: d971c04c-9b37-4cd7-8a2d-b915e394079b
+TQID: https://experienceleague.adobe.com/ONswG5tDxJQKJ7xm-7zlXk1HE0G7Y927Qbsdiahzf5E
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: f550d0f2-143d-4093-9463-467fbec95fcc
+    internal-label: Accessibility
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+    internal-label: Web experience
 ---
 # Accessibility in Journey Optimizer{#accessibility}
 
