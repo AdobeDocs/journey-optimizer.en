@@ -299,11 +299,11 @@ The `dayOfWeek` function is used to retrieve the day of week. It returns an inte
 Use this function inside email or content to adapt messaging based on the day. The comparison operator in PQL is `=` (single equals, not `==`):
 
 ```handlebars
-{% if dayOfWeek(getCurrentZonedDateTime()) = 6 or dayOfWeek(getCurrentZonedDateTime()) = 7 %}
+{%#if dayOfWeek(getCurrentZonedDateTime()) = 6 or dayOfWeek(getCurrentZonedDateTime()) = 7%}
 We're closed on weekends — your request will be processed on the next business day.
-{% else %}
+{%else%}
 Our team will get back to you within 24 hours.
-{% endif %}
+{%/if%}
 ```
 
 | Day | Returned value |
@@ -402,7 +402,7 @@ Your appointment is confirmed for {{h}}:{% if m < 10 %}0{% endif %}{{m}}.
 
 Output (example): `Your appointment is confirmed for 14:05.`
 
-The leading-zero guard (`{% if m < 10 %}0{% endif %}`) ensures minutes below 10 are displayed as two digits (e.g. `09` instead of `9`).
+The leading-zero guard (`{%#if m < 10%}0{%/if%}`) ensures minutes below 10 are displayed as two digits (e.g. `09` instead of `9`).
 
 +++
 
@@ -532,7 +532,7 @@ When using a timestamp from a journey event context attribute, two requirements 
 
 * **Wrap the timestamp with `toDateTime()`** — context event timestamps are not automatically recognized as date-time values by `formatDate()`.
 * **Wrap numeric event IDs in backticks** — if your event ID is a number (for example, `1697323153`), it must be escaped with backticks in the expression path, otherwise the editor raises a PQL syntax error.
-* **Use `{% let %}` assignment syntax** — inline `{%= %}` syntax does not support this pattern. Assign the result to a variable first, then render it with `{{varName}}`.
+* **Use `{% let %}` or `{%= %}` syntax** — you can either assign the result to a variable with `{% let %}` and render it with `{{varName}}`, or use inline `{%= %}` syntax directly.
 
 ```handlebars
 {% let appointmentDate = formatDate(toDateTime(context.journey.events.`1697323153`.timestamp), "dd/MM/yyyy HH:mm") %}

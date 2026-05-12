@@ -98,7 +98,7 @@ If your XDM schema contains field names with hyphens (e.g. `my-field`, `event-ty
 
 >[!NOTE]
 >
->Backtick escaping is only supported inside PQL expressions (`{%= ... %}`). It is not supported in Handlebars interpolation (`{{...}}`). Hyphenated field names cannot be referenced directly in `{{...}}` blocks.
+>Backtick escaping is only supported inside PQL expressions (`{%= ... %}`). It is not supported in Handlebars interpolation (`{{...}}`). However, hyphenated field names can be referenced directly in `{{...}}` blocks (e.g. `{{profile.my-custom-field}}`); only backtick syntax fails there.
 
 Without backticks in a PQL expression, the hyphen is interpreted as a subtraction operator and causes a PQL syntax error.
 

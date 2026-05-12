@@ -79,7 +79,7 @@ Use `extractHours` and `extractMinutes` to show only the time portion, with a le
 ```handlebars
 {% let h = extractHours(getCurrentZonedDateTime()) %}
 {% let m = extractMinutes(getCurrentZonedDateTime()) %}
-Your appointment is at {{h}}:{% if m < 10 %}0{% endif %}{{m}}.
+Your appointment is at {{h}}:{%#if m < 10%}0{%/if%}{{m}}.
 ```
 
 Output (example): `Your appointment is at 14:05.`
@@ -239,7 +239,7 @@ Hi there,
 Or inline with a ternary-style pattern using `isEmpty`:
 
 ```handlebars
-Hi {% if isEmpty(profile.person.name.firstName) %}valued customer{% else %}{{profile.person.name.firstName}}{% endif %},
+Hi {%#if isEmpty(profile.person.name.firstName)%}valued customer{%else%}{{profile.person.name.firstName}}{%/if%},
 ```
 
 ## PQL edge case recipes {#pql-edge-cases}
