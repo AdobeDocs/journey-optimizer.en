@@ -10,6 +10,12 @@ exl-id: 57d7c25f-7e39-46ad-85c1-65e2c18e2686
 ---
 # Work with Adobe Experience Manager Content Fragments {#aem-fragments}
 
+>[!BEGINSHADEBOX]
+
+The existing **Asset Selector** and **Content Fragment selector** experiences in Adobe Journey Optimizer workflows are being replaced by **Content Advisor**. Content Advisor provides an AI-powered, unified interface for discovering and selecting Assets, Content Fragments, and Dynamic Media directly within your AJO authoring workflows. Existing integrations will continue to work during the transition period.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This integration applies to **Adobe Experience Manager as a Cloud Service Sites**, for **Content Fragments** only. Journey Optimizer reads fragments from the **Publish** tier (not Author). 
@@ -70,7 +76,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_2.png)
 
-1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM Content advisor]**.
+1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM Content Advisor]**.
 
     ![](assets/cf-variation-1.png)
 
@@ -150,7 +156,7 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
 1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
 
-    Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM Content advisor]**.
+    Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM Content Advisor]**.
 
 Once you have performed your tests and validated the content, you can [send your campaign](../campaigns/review-activate-campaign.md) or [publish your journey](../building-journeys/publish-journey.md) to your audience.
 
@@ -179,7 +185,7 @@ To select a variation:
 
 1. Click ![Personalization icon](assets/do-not-localize/Smock_PersonalizationField_18_N.svg) in any text field, or open the HTML source from an HTML content component.
 
-1. From **[!UICONTROL AEM Content Fragment]**, click **[!UICONTROL Open AEM Content advisor]**.
+1. From **[!UICONTROL AEM Content Fragment]**, click **[!UICONTROL Open AEM Content Advisor]**.
 
     ![](assets/cf-variation-1.png)
 
