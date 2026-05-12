@@ -8,6 +8,16 @@ level: Experienced
 keywords: math, functions, expression, journey, calculation, number
 version: Journey Orchestration
 exl-id: da710b22-3112-41fe-8b91-2b6563b79f27
+TQID: https://experienceleague.adobe.com/POIbPCZrqtqGjHqn3ehGonxwv9KhKWlgg2igdN8Y4yw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Math functions {#math-functions}
 

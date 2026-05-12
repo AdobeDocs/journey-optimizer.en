@@ -2,13 +2,23 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Advanced expression editor syntax
-description: Learn about the syntax used in the advanced expression editor 
+description: Learn about the syntax used in the advanced expression editor
 feature: Journeys
 role: Developer
 level: Experienced
 keywords: syntax, editor, journey
 exl-id: c9434b28-2750-4a53-985e-c4a3f940472c
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/-PTYUf-njT3-LsI-A5IKEMDGOl4JecZ-ayM0rU4f2HI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Advanced expression editor syntax {#syntax}
 
