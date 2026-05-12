@@ -17,7 +17,7 @@ Deeplinks in emails help you take recipients from an email to a specific screen 
 
 To add a deeplink to an email, make sure [link tracking is enabled](message-tracking.md#enable-tracking). Select the element you want to link (text, button, or image) in the Email Designer, click **[!UICONTROL Insert link]** in the contextual toolbar and choose **[!UICONTROL Deeplink]** to enter your deeplink URL. [Learn more on inserting links](message-tracking.md#insert-links)
 
-When your recipients click the deeplink, they are taken directly to the intended in-app content - provided you have completed the configuration steps detailed on this page, which covers:
+When your recipients click the deeplink, they are taken directly to the intended in-app content - **provided you have completed the configuration steps** detailed on this page, which covers:
  
 * How to configure deeplinks for emails in Journey Optimizer 
 * How to implement deeplink handling for iOS and Android in your mobile app
@@ -183,7 +183,7 @@ This section provides common implementation patterns for deeplinks. Your exact s
 >
 >The app must perform a **GET** on the `mclick` URL and read the **`Location`** header, then route based on the **final** URL.
 >
->Do not simply open the `mclick` URL in Safari; that defeats the purpose of deep linking.
+>Do not simply open the `mclick` URL in Safari; that defeats the purpose of deeplinking.
 
 ### Android (App Links) {#android-implementation}
 
@@ -278,7 +278,7 @@ This section provides common implementation patterns for deeplinks. Your exact s
 >
 >Routing logic is app‑specific; define a clear mapping from URLs to screens.
 
-### Recommended practices {#deeplink-best-practices}
+## Recommended practices {#deeplink-best-practices}
  
 * **Use stable paths**: Prefer routes that are resilient to app UI changes (for example `/account/orders` instead of `/tab/3/view/2`).
 * **Account for tracked paths**: When link tracking is enabled, the clicked link may use tracked path patterns (for example `/ee/v1/mclick/`). Make sure your router can parse the final URL after resolving the tracked link.
