@@ -15,7 +15,7 @@ keywords: deeplink, deep link, universal links, app links, email
  
 Deeplinks in emails help you take recipients from an email to a specific screen or piece of content in your mobile app. It helps bring people straight to the intended in-app experience, without routing them through a web browser or an app store, so the journey stays relevant and on-brand.
 
-To add a deeplink to an email, make sure [link tracking is enabled](message-tracking.md#enable-tracking). Select the element you want to link (text, button, or image) in the Email Designer, click **[!UICONTROL Insert link]** in the contextual toolbar and choose **[!UICONTROL Deeplink]** to enter your deeplink URL. [Learn more on inserting links](message-tracking.md#insert-links)
+To add a deeplink to an email, make sure [link tracking is enabled](message-tracking.md#enable-tracking). Select the element you want to link (text, button, or image) in the Email Designer, click **[!UICONTROL Insert link]** in the contextual toolbar, and choose **[!UICONTROL Deeplink]** to enter your deeplink URL. [Learn more on inserting links](message-tracking.md#insert-links)
 
 When your recipients click the deeplink, they are taken directly to the intended in-app content - **provided you have completed the configuration steps** detailed on this page, which covers:
  
@@ -45,57 +45,6 @@ To be able to use deeplinks in emails for your mobile apps, complete the configu
       * Delegated subdomain
       * App bundle ID
       * SHA-256 certificate fingerprint
-
-<!--
-Adobe is hosting these files internally so not on customer's side.
-
-1. Validate the URLs below and ensure the content matches the expected format such as in the examples below.
-
-    * **For iOS (AASA)**: `https://data.<delegated_subdomain>/.well-known/apple-app-site-association`
-
-      +++ Example:
-
-      ```json
-      {
-        "applinks": {
-          "apps": [],
-          "details": [
-            {
-              "appID": "<app_bundle_id>",
-              "paths": [
-                "NOT /ee/v1/click/*",
-                "/ee/v1/mclick/*"
-              ]
-            }
-          ]
-        }
-      }
-      ```
-      
-      +++
-
-    * **For Android (assetLinks.json)**: `https://data.<delegated_subdomain>/.well-known/assetlinks.json`
-
-      +++ Example:
-
-      ```json
-      [
-        {
-          "relation": ["delegate_permission/common.handle_all_urls"],
-          "target": {
-            "namespace": "android_app",
-            "package_name": "<app_bundle_id>",
-            "sha256_cert_fingerprints": [
-              "12:34:56:78:90:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34"
-            ]
-          }
-        }
-      ]
-      ```
-
-      +++
-
--->
 
 >[!IMPORTANT]
 >
@@ -288,7 +237,7 @@ This section provides common implementation patterns for deeplinks. Your exact s
 * **Test your deeplink**: Send a proof and click the deeplink on a device where the app is installed.
 * **Validate on real devices**: Universal links and tracked-link resolution behaviors are more reliable to validate on physical devices rather than simulators.
 * **Validate the app-side routing**: If the deeplink does not open the expected screen, validate the app-side routing and the URL format (host/path/query and URL encoding).
-* App Links / Universal Links behavior is most reliable after the app has been installed and opened at least once.
+* **Keep app initialization in mind**: App Links / Universal Links behavior is most reliable after the app has been installed and opened at least once.
  
 ## Troubleshooting and FAQ {#troubleshooting-faq}
  
