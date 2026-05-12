@@ -5,8 +5,18 @@ title: Use the Split activity
 description: Learn how to use the Split activity in an Orchestrated campaign
 exl-id: 986bc566-123a-451d-a4a6-bbf5a2798849
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/kvuWf-Rg2zE7JVQ15LdG-CHG0JWWEn0B4OjHU4RbFSg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
 ---
-
 # Split {#split}
 
 >[!CONTEXTUALHELP]

@@ -15,6 +15,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2026 {#may-2026}
 
+* The **Export message content** documentation has been expanded with a **Message Export FAQ** (personalized content, images and media, tracked links, PII, retention, use cases, etc.), and **sample exported JSON** examples for SMS and email. [Read more](../configuration/message-export.md)
+
+* A new **AJO Message Export schema** page documents every field in the AJO Message Export Dataset, with data types and hierarchy for the exported email and SMS payload. [Read more](../configuration/message-export-schema.md)
+
 * A new **Personalize URLs in emails** page has been added, consolidating guidance on dynamic URL personalization, complete/base URL personalization, URL tracking parameter personalization, and key guardrails. [Read more](../email/url-personalization.md)
 
 * A new **Business rules queries** section has been added to the query examples page, providing a Data Lake query to check all profile discards due to journey frequency capping exclusions on a specific journey after a specific date. The query includes the `eventCodeReason` field to identify whether profiles were excluded because a cap was reached (`CAP_REACHED`) or due to a lower priority (`LOWER_PRIORITY`). [Read more](../reports/query-examples.md#business-rules-queries)
@@ -942,3 +946,4 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 +++
 -->
+

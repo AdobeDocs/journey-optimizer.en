@@ -8,7 +8,7 @@ solution: Journey Optimizer
 ---
 
 # Adobe Journey Optimizer Help {#using}
- 
+  
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
@@ -348,6 +348,7 @@ solution: Journey Optimizer
       + [Configure a custom provider](using/sms/sms-configuration-custom.md)
       + [Create Webhook](using/sms/sms-webhook.md)
       + [Create a SMS / MMS / RCS configuration](using/sms/sms-configuration-surface.md)
+      + [Use a custom dataset for inbound keywords](using/sms/custom-dataset-inbound-keywords.md)
   + Direct mail {#direct-mail}
     + [Direct mail](/help/rp_landing_pages/direct-mail-landing-page.md)
     + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
@@ -891,6 +892,7 @@ solution: Journey Optimizer
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + [Export message content](using/configuration/message-export.md)
+  + {hide-from-toc} [AJO Message Export schema](using/configuration/message-export-schema.md)
   + Guided channel setup {#guided-setup}
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
     + [Create a channel set up](using/configuration/create-channel-set-up.md)
