@@ -15,6 +15,16 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2026 {#may-2026}
 
+* A new **Personalization recipes** page has been added, providing ready-to-use personalization patterns for the most common use cases in Journey Optimizer. It covers date and time recipes (current date formatting, countdown to expiry, days-before calculations, time-only display, and weekend vs. weekday detection), string recipes (using `replaceAll` with variable assignment), and conditional fallback recipes (empty-field fallbacks using `isEmpty`). [Read more](../personalization/personalization-recipes.md)
+
+* The **Personalization syntax** documentation has been updated with an expanded introduction clarifying the difference between Handlebars (`{{...}}`) and PQL (`{%= ... %}`) syntaxes, including a usage table, guidance on escaping literal double quotes, and a new **PQL syntax rules for special attribute keys** section covering reserved keywords, hyphenated attribute keys, and numeric event IDs. The note on backtick escaping has also been corrected: hyphenated field names can be referenced directly in `{{...}}` blocks; only backtick syntax fails there. [Read more](../personalization/personalization-syntax.md)
+
+* The **Date Time functions** documentation has been enriched with new real-world examples: a countdown pattern for `dateDiff`, a weekend vs. weekday conditional for `dayOfWeek` (with a note on using the journey Condition activity for routing use cases), and a time-only display pattern combining `extractHours` and `extractMinutes` with a leading-zero guard. [Read more](../personalization/functions/dates.md)
+
+* The **String functions** documentation has been updated with a new example for `replaceAll` showing how to assign the result to a `{% let %}` variable for reuse across multiple expressions in the same template. [Read more](../personalization/functions/string.md#replace-all)
+
+* The **Array functions** documentation has been updated with a new **Iterate over an array** section documenting the Handlebars `{{#each}}` block helper, including a note clarifying that `{{#each}}` is supported in the personalization editor only and cannot be used inside journey condition activities. [Read more](../personalization/functions/arrays-list.md#each-loop)
+
 * A new **Personalize URLs in emails** page has been added, consolidating guidance on dynamic URL personalization, complete/base URL personalization, URL tracking parameter personalization, and key guardrails. [Read more](../email/url-personalization.md)
 
 * A new **Business rules queries** section has been added to the query examples page, providing a Data Lake query to check all profile discards due to journey frequency capping exclusions on a specific journey after a specific date. The query includes the `eventCodeReason` field to identify whether profiles were excluded because a cap was reached (`CAP_REACHED`) or due to a lower priority (`LOWER_PRIORITY`). [Read more](../reports/query-examples.md#business-rules-queries)

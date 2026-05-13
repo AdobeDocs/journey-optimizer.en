@@ -30,6 +30,10 @@ Understanding which context you are in is key to avoiding runtime errors. For ex
 
 The attributes structure is defined in an Adobe Experience Platform XDM Schema. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
 
+>[!TIP]
+>
+>For ready-to-use expressions that apply these syntaxes to real-world scenarios — date formatting, countdowns, conditional fallbacks, and more — see the **[Personalization recipes](personalization-recipes.md)** page.
+
 ## Syntax general rules {#general-rules}
 
 * Identifiers may be any unicode character except for the following special characters, which are reserved for the Handlebars syntax:
