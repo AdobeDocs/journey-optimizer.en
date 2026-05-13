@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2026 {#may-2026}
 
+* A new **Journey Fragments** page has been added, documenting how to create, manage, and insert reusable sets of journey nodes across multiple journeys. It covers fragment creation from the canvas and from the inventory, lifecycle statuses, guardrails, and use case examples. [Read more](../building-journeys/journey-fragments.md)
+
 * The **Get started with datasets** page has been updated with a new **Inbound** entry in the system datasets section, documenting the _AJO Inbound Activity Event Dataset_. A note has been added to clarify that a profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Read more](../data/get-started-datasets.md#system-datasets)
 
 * The **Export message content** documentation has been expanded with a **Message Export FAQ** (personalized content, images and media, tracked links, PII, retention, use cases, etc.), and **sample exported JSON** examples for SMS and email. [Read more](../configuration/message-export.md)
