@@ -7,6 +7,7 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+hide: true
 keywords: fragments, journey, reuse, nodes, canvas, inventory, reusable
 badge: label="Limited Availability" type="Informative"
 version: Journey Orchestration
