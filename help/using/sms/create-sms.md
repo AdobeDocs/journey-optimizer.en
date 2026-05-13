@@ -176,7 +176,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
       >[!IMPORTANT]
       >
-      >Before using deeplinking, make sure you have completed the corresponding [configuration steps](deeplinks.md#configuration) in Journey Optimizer and implemented [deeplink handling](deeplinks.md#mobile-implementation) in your mobile app. If you have not done so, the deeplink will not direct users to the intended in-app content.
+      >Before using deeplinking, make sure you have completed the corresponding [configuration steps](../email/deeplinks.md#configuration) in Journey Optimizer and implemented [deeplink handling](../email/deeplinks.md#mobile-implementation) in your mobile app. If you have not done so, the deeplink will not direct users to the intended in-app content.
       >
       >Also, make sure link tracking is enabled in the **[!UICONTROL Actions]** section of your journey or campaign so that the URL is rewritten through Adobe systems.
 
