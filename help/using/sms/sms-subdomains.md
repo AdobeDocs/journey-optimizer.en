@@ -71,7 +71,9 @@ You can either use a subdomain that is already delegated to Adobe, or configure 
 
 SMS subdomain configuration is **shared between all environments**. Therefore, any modification to a SMS subdomain also impacts other production sandboxes.
 
-To access and edit SMS subdomains, you must have the **[!UICONTROL Manage SMS Subdomains]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md).
+>[!NOTE]
+>
+>To access and edit SMS subdomains, you must have the **[!UICONTROL Manage SMS Subdomains]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md).
 
 ## Use an existing subdomain {#sms-use-existing-subdomain}
 
