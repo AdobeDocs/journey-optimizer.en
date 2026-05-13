@@ -196,16 +196,7 @@ The timezone is defined at journey level. You can enter a fixed time zone or use
 
 By default, profiles can enter your journey as soon as it is published, and can stay until the [global journey timeout](#global_timeout) is reached. The only exception is recurring read audience journeys with **Force reentrance on recurrence** activated, which end at the start date of the next occurrence. 
 
-If needed, you can define custom **Start date** and **End date**. This allows profiles to enter your journey on a specific date, and exit automatically when the end date is reached.
-
-Once the journey is live, any configured start and end dates are surfaced directly in the **journey header**, next to the live status badge. This gives you an at-a-glance view of the journey schedule without opening the properties panel. The displayed label adapts based on each date's status:
-
-* **Start date upcoming** — the header shows the configured start date.
-* **Start date passed** — the header indicates the journey has already started.
-* **End date upcoming** — the header shows the configured end date.
-* **End date passed** — the header indicates the journey has ended.
-
-If no start or end date is defined, no date information appears in the header.
+If needed, you can define custom **Start date** and **End date**. This allows profiles to enter your journey on a specific date, and exit automatically when the end date is reached. 
 
 ## Timeout {#timeout}
 
