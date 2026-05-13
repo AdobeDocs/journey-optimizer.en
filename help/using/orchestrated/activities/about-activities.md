@@ -5,8 +5,17 @@ title: Work with Orchestrated campaign activities
 description: Learn how to Orchestrated campaign activities
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/OUKBJeSTaPJKav-NNCCxKZ8esY-62JkdRMmcwoJpZJ0
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 ---
-
 # About Orchestrated campaign activities {#orchestrated-campaign-activities}
 
 Orchestrated campaign activities are grouped into three categories. Depending on the context, available activities may differ. 

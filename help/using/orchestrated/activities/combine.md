@@ -5,8 +5,16 @@ title: Use the Combine activity
 description: Learn how to use the Combine activity
 exl-id: af3c3a9c-8172-43b0-bba1-4a3d068b9a9e
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/-iLQufrB6X3O3fdKVCY26cD7pohPyx2Gt9--n8yH5Dg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 ---
-
 # Combine {#combine}
 
 >[!CONTEXTUALHELP]

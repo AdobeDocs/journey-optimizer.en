@@ -8,7 +8,7 @@ solution: Journey Optimizer
 ---
 
 # Adobe Journey Optimizer Help {#using}
- 
+  
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
@@ -74,7 +74,6 @@ solution: Journey Optimizer
     + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md)
-    + {hide-from-toc} [Journey Fragments](using/building-journeys/journey-fragments.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
@@ -88,6 +87,7 @@ solution: Journey Optimizer
       + [Conditions](using/building-journeys/conditions.md)
     + [Read audience](using/building-journeys/read-audience.md)
     + [Wait](using/building-journeys/wait-activity.md)
+    + [Journey Fragments](using/building-journeys/journey-fragments.md)
     + [Content decision](using/building-journeys/content-decision.md)
     + [Dataset lookup](using/building-journeys/dataset-lookup.md)
     + [Action](using/building-journeys/journey-action.md)
@@ -311,6 +311,7 @@ solution: Journey Optimizer
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
+      + [Configure deeplinks in emails](using/email/deeplinks.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
@@ -347,6 +348,7 @@ solution: Journey Optimizer
       + [Configure a custom provider](using/sms/sms-configuration-custom.md)
       + [Create Webhook](using/sms/sms-webhook.md)
       + [Create a SMS / MMS / RCS configuration](using/sms/sms-configuration-surface.md)
+      + [Use a custom dataset for inbound keywords](using/sms/custom-dataset-inbound-keywords.md)
   + Direct mail {#direct-mail}
     + [Direct mail](/help/rp_landing_pages/direct-mail-landing-page.md)
     + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
@@ -891,6 +893,7 @@ solution: Journey Optimizer
   + [Get started with channels configuration](using/configuration/get-started-configuration.md)
   + [Set up channel configurations](using/configuration/channel-surfaces.md)
   + [Export message content](using/configuration/message-export.md)
+  + {hide-from-toc} [AJO Message Export schema](using/configuration/message-export-schema.md)
   + Guided channel setup {#guided-setup}
     + [Get started with Guided channel setup](using/configuration/set-mobile-config.md)
     + [Create a channel set up](using/configuration/create-channel-set-up.md)

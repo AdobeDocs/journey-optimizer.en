@@ -7,6 +7,16 @@ role: Developer
 level: Experienced
 exl-id: cc9f0d7a-6166-4736-8cb7-1989816708ad
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/dZoAhprkoCZ3zkecMZcDeJF3m9aYP4-8GCEtTmlsILQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # List item collections {#list-decision-items}
 

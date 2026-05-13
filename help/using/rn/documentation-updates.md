@@ -25,6 +25,12 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Array functions** documentation has been updated with a new **Iterate over an array** section documenting the Handlebars `{{#each}}` block helper, including a note clarifying that `{{#each}}` is supported in the personalization editor only and cannot be used inside journey condition activities. [Read more](../personalization/functions/arrays-list.md#each-loop)
 
+* The **Get started with datasets** page has been updated with a new **Inbound** entry in the system datasets section, documenting the _AJO Inbound Activity Event Dataset_. A note has been added to clarify that a profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Read more](../data/get-started-datasets.md#system-datasets)
+
+* The **Export message content** documentation has been expanded with a **Message Export FAQ** (personalized content, images and media, tracked links, PII, retention, use cases, etc.), and **sample exported JSON** examples for SMS and email. [Read more](../configuration/message-export.md)
+
+* A new **AJO Message Export schema** page documents every field in the AJO Message Export Dataset, with data types and hierarchy for the exported email and SMS payload. [Read more](../configuration/message-export-schema.md)
+
 * A new **Personalize URLs in emails** page has been added, consolidating guidance on dynamic URL personalization, complete/base URL personalization, URL tracking parameter personalization, and key guardrails. [Read more](../email/url-personalization.md)
 
 * A new **Business rules queries** section has been added to the query examples page, providing a Data Lake query to check all profile discards due to journey frequency capping exclusions on a specific journey after a specific date. The query includes the `eventCodeReason` field to identify whether profiles were excluded because a cap was reached (`CAP_REACHED`) or due to a lower priority (`LOWER_PRIORITY`). [Read more](../reports/query-examples.md#business-rules-queries)
@@ -952,3 +958,4 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 +++
 -->
+

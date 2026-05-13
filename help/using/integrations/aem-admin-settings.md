@@ -21,7 +21,7 @@ Adobe Journey Optimizer integrates with **[!DNL Adobe Experience Manager as a Cl
 >[!NOTE]
 >
 > **[!UICONTROL AEM Integration]** saves repository settings **per sandbox**. Each sandbox keeps its own integrations and they do not apply across sandboxes.
-
+  
 Journey Optimizer stores one integration per organization, sandbox, and Adobe Experience Manager repository. If you save a new integration for that same combination, it replaces the previous settings, only the latest configuration is kept.
 
 To configure your repository:
@@ -46,15 +46,15 @@ To configure your repository:
 
 1. Choose your setup:
 
-    >[!BEGINTABS]
-
-    >[!TAB Author only setup]
+    +++ Author only setup
 
     Select **[!UICONTROL Author only setup]** when Journey Optimizer should read Content Fragments from the Adobe Experience Manager **author** environment only. Replication from author to publish and live publish updates are not supported.
 
     ![](assets/aem-admin-settings-3.png)
+    
+    +++
 
-    >[!TAB Publish instance setup]
+    +++ Publish instance setup
 
     1. Select **[!UICONTROL Publish instance setup]** to turn on publish instance settings.
         
@@ -68,7 +68,7 @@ To configure your repository:
 
         ![](assets/aem-admin-settings-5.png)
 
-    >[!ENDTABS]
+    +++
 
 1. Click **[!UICONTROL Save]**.
 
