@@ -280,3 +280,4 @@ For boolean fields stored as strings:
 ```sql
 {%= toBool(profile.consents.email.val) = true %}
 ```
+
