@@ -74,7 +74,6 @@ solution: Journey Optimizer
     + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md)
-    + [Journey Fragments](using/building-journeys/journey-fragments.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
@@ -88,6 +87,7 @@ solution: Journey Optimizer
       + [Conditions](using/building-journeys/conditions.md)
     + [Read audience](using/building-journeys/read-audience.md)
     + [Wait](using/building-journeys/wait-activity.md)
+    + [Journey Fragments](using/building-journeys/journey-fragments.md)
     + [Content decision](using/building-journeys/content-decision.md)
     + [Dataset lookup](using/building-journeys/dataset-lookup.md)
     + [Action](using/building-journeys/journey-action.md)
