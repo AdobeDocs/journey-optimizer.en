@@ -397,7 +397,7 @@ Combine `extractHours` and `extractMinutes` to render just the time portion with
 ```handlebars
 {% let h = extractHours(getCurrentZonedDateTime()) %}
 {% let m = extractMinutes(getCurrentZonedDateTime()) %}
-Your appointment is confirmed for {{h}}:{% if m < 10 %}0{% endif %}{{m}}.
+Your appointment is confirmed for {{h}}:{%#if m < 10%}0{%/if%}{{m}}.
 ```
 
 Output (example): `Your appointment is confirmed for 14:05.`
