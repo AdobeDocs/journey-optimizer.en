@@ -25,14 +25,14 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Journeys Expression Agent</strong><br/></th>
+<th><strong>AI Assistant for journey expressions</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer now includes an Expression Assistant directly inside the Journey advanced expression editor. Powered by AI, it helps you generate new expressions from a plain-language description.</p>
-<p>This capability is available to all customers in Public Beta.</p>
+<p>Adobe Journey Optimizer now includes an <strong>AI Assistant for journey expressions</strong> directly inside the Journey advanced expression editor. Powered by AI, it helps you generate new expressions from a plain-language description.</p>
+<p>This capability is available to all customers as a Public Beta.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14692">DOCAC-14692</a></p>
 <p>Availability date: May 19, 2026</p>
 </td>
@@ -49,7 +49,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>You can now add Decision policies into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
+<p>You can now add <strong>Decision policies</strong> into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-13429">DOCAC-13429</a></p>
 <p>Availability date: May 19, 2026</p>
 </td>
@@ -60,13 +60,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Auto-finish for one-shot journeys</strong><br/></th>
+<th><strong>Automatic journey closure for non-recurring audiences</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Non-recurring Read Audience journeys now automatically close once the last active profile exits. Previously, these journeys remained Live until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, one-shot journeys transition to Closed status as soon as execution completes, keeping your journey inventory accurate without manual intervention.</p>
+<p>Non-recurring <strong>Read Audience</strong> journeys now automatically close once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, these journeys transition to <strong>Finished</strong> status as soon as execution completes, keeping your journey inventory accurate without manual intervention.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14542">DOCAC-14542</a></p>
 <p>Availability date: May 19, 2026</p>
 </td>
@@ -100,7 +100,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>Use the new Optimize node to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
+<p>Use the new <strong>Optimize</strong> node to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
 <p>This tool allows you to develop more effective marketing campaigns that are more likely to resonate at the 1:1 level, improve marketing personalization efforts for customers and enhance critical customer engagement KPIs, such as conversions and revenue.</p>
 <p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14720">DOCAC-14720</a></p>
@@ -131,13 +131,14 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Content fragments with Adobe Experience Manager</strong><br/></th>
+<th><strong>Enhanced Adobe Experience Manager Content Fragments support</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now manage Adobe Experience Manager Content Fragments with the same ease as native HTML and Expression fragments.</p>
+<p>This release brings several enhancements to make Adobe Experience Manager Content Fragments more usable, more governable, and more production-ready within Journey Optimizer authoring workflows.</p>
+<p>Journey Optimizer can now pull Content Fragments directly from the Adobe Experience Manager authoring tier, without requiring them to be published first. Fragment context is maintained across the full message, allowing authors to reuse a fragment's fields in later content blocks without reselecting it. This release also improves lifecycle handling for invalid or expired Content Fragments, and adds locale and variation support so marketers can work with alternate versions of the same Content Fragment more intentionally.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14686">DOCAC-14686</a></p>
 <p>Availability date: May 19, 2026</p>
 </td>
@@ -171,7 +172,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>To support the addition of RCS, the mobile messaging workflow has been updated. SMS, MMS, and RCS are now conveniently grouped under a single Mobile Message channel in Adobe Journey Optimizer.</p>
+<p>To support the addition of RCS, the <strong>mobile messaging workflow</strong> has been updated. SMS, MMS, and RCS are now conveniently grouped under a single <strong>Mobile Message</strong> channel in Adobe Journey Optimizer.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-12288">DOCAC-12288</a></p>
 <p>Availability date: May 19, 2026</p>
 </td>
