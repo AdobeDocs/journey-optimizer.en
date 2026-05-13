@@ -182,7 +182,8 @@ Because of this model, release notes are updated between monthly releases. For f
 
 * **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
 
-<!--## Coming soon {#coming-soon}
+<!-- 
+## Coming soon {#coming-soon}
 
 The following capabilities and enhancements are scheduled for release in the next few days. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
