@@ -172,7 +172,7 @@ The **[!UICONTROL Current journey payload size]** field in the journey propertie
 
 Use this information to monitor the complexity of your journey before publishing. If the payload size approaches or exceeds the limit, journey publication fails. To reduce the size, consider simplifying the journey logic or reducing the number of activities.
 
-The default limit is 2 MB. Contact Adobe Customer Care if you need to request a higher limit for your organization.
+The default limit is 4 MB. Contact Adobe Customer Care if you need to request a higher limit for your organization.
 
 For full details on thresholds, warning and error messages, and troubleshooting steps, refer to [Journey payload size validation](../start/guardrails.md#journey-payload-size) and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys).
 
