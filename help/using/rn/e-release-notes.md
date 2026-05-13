@@ -189,7 +189,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <tbody>
 <tr>
 <td>
-<p>TBD</p>
+<p>You can now use a flat file as the audience source for an Orchestrated campaign without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14704">DOCAC-14704</a></p>
 <p>Availability date: May 28, 2026</p>
@@ -264,7 +264,7 @@ Improvements coming with this release are listed below.
 
   Availability date: May 19, 2026
 
-* **Content locking in landing pages** - You can now lock portions of content in **landing page templates**, similar to the functionality already available for email templates. Select the structures and components that are editable and apply one of three lock types: **Locked Design** (only texts, images, and URLs can be edited; design settings are disabled), **Locked Design & Content** (everything is locked), or **Lock Position**.
+* **Content locking in landing pages** - You can now lock portions of landing page templates, similar to the locking controls available for email templates. You can define which structures, components, and properties are editable — including options to lock design, content, position, and restrict content by limiting the number and/or types of components allowed.
 
   Documentation JIRA task: [DOCAC-14714](https://jira.corp.adobe.com/browse/DOCAC-14714)
 
@@ -278,13 +278,13 @@ Improvements coming with this release are listed below.
 
 #### Journeys
 
-* **Certificate-Based Custom Authentication in custom actions** - Custom actions now support **Certificate-Based Custom Authentication**. By adding `subType: "certificateCredential"` to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID.
+* **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding subType: "certificateCredential" to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID.
 
   Documentation JIRA task: [DOCAC-14543](https://jira.corp.adobe.com/browse/DOCAC-14543)
 
   Availability date: May 19, 2026
 
-* **Supplemental identifier support for external audiences** - Supplemental identifier support is extended to **external audiences**, including audiences imported from a CSV file or created with Federated Audience Composition. Any non-identity attribute (or non-person identity) can now be used as the supplemental ID, for all audience types.
+* **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
 
   Documentation JIRA task: [DOCAC-14541](https://jira.corp.adobe.com/browse/DOCAC-14541)
 
