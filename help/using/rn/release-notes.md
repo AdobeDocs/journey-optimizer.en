@@ -158,7 +158,7 @@ Because of this model, release notes are updated between monthly releases. For f
 
 #### Journeys
 
-* **Enhanced authentication for custom actions** - When configuring custom actions, you can now use an **ID token** as the authentication mechanism. This extends the existing custom authentication support to cover OpenID Connect flows that return an `id_token` alongside the standard `access_token`, a pattern increasingly required by banking and financial service APIs. [Read more](../datasource/external-data-sources.md#custom-authentication-mode)
+* **Enhanced authentication for custom actions** - When configuring custom actions, you can now enter an **ID token** attribute to enable a new authentication method increasingly used by banks. [Read more](../datasource/external-data-sources.md#custom-authentication-mode)
 
 #### WhatsApp
 
