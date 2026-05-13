@@ -35,7 +35,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 ---
-# Create a SMS/MMS/RCS configuration {#message-preset-sms}
+# Create a Mobile message configuration {#message-preset-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_sms_type"
@@ -43,7 +43,7 @@ topic_v2:
 >abstract="Select the type of text messages using this configuration: Marketing for promotional messages, which require user consent, or Transactional for non-commercial messages, such as password reset."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Opt-out in marketing text messages"
 
-Once your SMS/MMS/RCS channel has been configured, you must create a channel configuration to be able to send SMS, RCS and MMS messages from **[!DNL Journey Optimizer]**. 
+Once your Mobile message channel has been configured, you must create a channel configuration to be able to send SMS, RCS and MMS messages from **[!DNL Journey Optimizer]**. 
 
 To create a channel configuration, follow these steps:
 
@@ -80,7 +80,7 @@ To create a channel configuration, follow these steps:
 
 1. Enter the **[!UICONTROL Sender number]** ​you want to use for your communications.
 
-1. If you want to use the URL shortening function in your SMS messages, select an item from the **[!UICONTROL Subdomain]** list. 
+1. If you want to use the URL shortening function in your SMS messages, select an item from the **[!UICONTROL Subdomain]** list.
 
     >[!NOTE]
     >

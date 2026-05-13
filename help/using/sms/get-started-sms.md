@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with text messages (SMS/MMS/RCS)
+title: Get started with Mobile messages
 description: Learn how to create and send text messages in Journey Optimizer
 feature: SMS
 topic: Content Management
@@ -46,19 +46,19 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---
-# Get started with text messaging {#get-started-sms}
+# Get started with Mobile messages {#get-started-sms}
 
-Use [!DNL Journey Optimizer] to send text messages (SMS/MMS/RCS) to your customers on their mobile devices. You can create, personalize, and preview messages in text format from the SMS/MMS/RCS editor.
+Use [!DNL Journey Optimizer] to send Mobile messageskk to your customers on their mobile devices. You can create, personalize, and preview messages in text format from the SMS/MMS/RCS editor.
 
-Text messages can be created and sent in a journey or in a campaign. For SMS, MMS, and RCS, use the SMS action.
+Text messages can be created and sent in a journey or in a campaign. For SMS, MMS, and RCS, use the Mobile message action.
 
-* In a **Journey**. Create a journey, add an SMS activity, and define basic settings. Then, browse to the SMS Actions pane on the right to create the content for the SMS, MMS, or RCS message. [Learn how to create a journey](../building-journeys/journey-gs.md)
+* In a **Journey**. Create a journey, add an Mobile message action, and define basic settings. Then, browse to the Mobile message Actions pane on the right to create the content for your Mobile message. [Learn how to create a journey](../building-journeys/journey-gs.md)
 
-* In a **Campaign**. Create a campaign, select SMS as your action and define basic settings. Then, edit the message content to define the SMS, MMS, or RCS message to send. Learn how to create [an action campaign](../campaigns/campaign-action.md#action-campaign-action) | [an API-triggered campaign](../campaigns/api-triggered-campaigns.md) | [an orchestrated campaign](../orchestrated/create-orchestrated-campaign.md#create)
+* In a **Campaign**. Create a campaign, select Mobile message as your action and define basic settings. Then, edit the message content to define your Mobile message to send. Learn how to create [an action campaign](../campaigns/campaign-action.md#action-campaign-action) | [an API-triggered campaign](../campaigns/api-triggered-campaigns.md) | [an orchestrated campaign](../orchestrated/create-orchestrated-campaign.md#create)
 
 >[!IMPORTANT]
 >
->If this is your first time creating text messages, make sure the SMS channel has been configured. [Learn more](sms-configuration.md)
+>If this is your first time creating Mobile messages, make sure the Mobile message channel has been configured. [Learn more](sms-configuration.md)
 
 ## Text messaging capabilities {#sms-capabilities}
 
@@ -105,7 +105,7 @@ Test your text messages before sending using test profiles and sample data. Prev
 
 **Reporting & Analytics**
 
-Track the performance of your SMS campaigns and journeys with comprehensive reporting capabilities:
+Track the performance of your Mobile message campaigns and journeys with comprehensive reporting capabilities:
 
 * [SMS campaign reports](../reports/campaign-global-report-cja-sms.md)
 * [SMS journey reports](../reports/journey-global-report-cja-sms.md)

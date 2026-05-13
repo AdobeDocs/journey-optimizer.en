@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure your custom provider
-description: Learn how to configure your environment to send text messages with Journey Optimizer with a custom provider
+description: Learn how to configure your environment to send Mobile messages with Journey Optimizer with a custom provider
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
@@ -49,7 +49,7 @@ topic_v2:
 >title="Provider payload"
 >abstract="Provide the request payload to ensure the correct data is sent for processing and response generation."
 
-This feature empowers you to integrate and configure your own messaging providers, offering flexibility beyond the default options (Sinch, Twilio, and Infobip). This enables seamless authoring, delivery, reporting, and consent management for both SMS and RCS messages.
+This feature empowers you to integrate and configure your own messaging providers, offering flexibility beyond the default options (Sinch, Twilio, and Infobip). This enables seamless authoring, delivery, reporting, and consent management for Mobile messages.
 
 With custom provider configuration, you can connect third-party messaging services directly within Journey Optimizer, customize message payloads for dynamic content, and manage opt-in/opt-out preferences to ensure compliance across both SMS and RCS channels.
 
@@ -62,7 +62,7 @@ To configure your custom provider, follow the steps below:
 
 ## Create your API credential {#api-credential}
 
-To send SMS and RCS messages in Journey Optimizer using a custom provider not available out of the box by Adobe (e.g., Sinch, Infobip, Twilio), follow these steps:
+To send Mobile message in Journey Optimizer using a custom provider not available out of the box by Adobe (e.g., Sinch, Infobip, Twilio), follow these steps:
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL API Credentials]** menu under **[!UICONTROL SMS settings]**, and click the **[!UICONTROL Create new API credentials]** button.
 
@@ -86,7 +86,7 @@ To send SMS and RCS messages in Journey Optimizer using a custom provider not av
 
 1. Enable the **[!UICONTROL mTLS support]** option, which ensures that both the client and server authenticate each other before establishing a secure connection.
 
-    To use mTLS only, select **[!UICONTROL No Authentication]** from the **[!UICONTROL Auth Type]** drop-down and then enable ** [!UICONTROL mTLS support]**.
+    To use mTLS only, select **[!UICONTROL No Authentication]** from the **[!UICONTROL Auth Type]** drop-down and then enable **[!UICONTROL mTLS support]**.
 
 1. In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add new parameter]** to specify the HTTP headers for the request message that will be sent to the external service.
 

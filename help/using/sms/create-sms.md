@@ -40,24 +40,24 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---
-# Create a SMS/MMS/RCS message {#create-sms}
+# Create a Mobile message {#create-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Create a text message"
->abstract="To create a text message (SMS/MMS/RCS), add an SMS action in a journey or a campaign and start personalizing it with the personalization editor."
+>abstract="To create a Mobile message, add an SMS action in a journey or a campaign and start personalizing it with the personalization editor."
 
 >[!AVAILABILITY]
 >
 >RCS is not a HIPAA-Ready Service and must not be used to collect, store, or process any sensitive personal data, including permitted health data, e.g. personal health information, that your organization may otherwise be permitted to process in Journey Optimizer.
 
-You can design and send text (SMS), rich communication (RCS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an SMS action in a journey or a campaign, and then define the content of the text message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your text messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
+You can design and send text (SMS), rich communication (RCS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an Mobile message action in a journey or a campaign, and then define the content of the text message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your text messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
 
 In accordance with the industry standards and regulations, all SMS/MMS marketing messages must contain a way for the recipients to easily unsubscribe. To do this, SMS recipients can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#opt-out-decision-management)
 
 ## Add a text message {#create-sms-journey-campaign}
 
-Browse the tabs below to learn how to add a text message (SMS/MMS/RCS) in a campaign or a journey.
+Browse the tabs below to learn how to add a Mobile message in a campaign or a journey.
 
 >[!BEGINTABS]
 
@@ -69,7 +69,7 @@ Browse the tabs below to learn how to add a text message (SMS/MMS/RCS) in a camp
     >
     >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
-1. Select **[!UICONTROL SMS]** as the action type.
+1. Select **[!UICONTROL Mobile message]** as the action type and click **[!UICONTROL Add]**.
 
     ![](assets/sms_create_1.png)
 
@@ -77,11 +77,11 @@ Browse the tabs below to learn how to add a text message (SMS/MMS/RCS) in a camp
 
 1. Click the **[!UICONTROL Configure action]** button.
 
-1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the SMS configuration to use. [Learn more](sms-configuration.md)
+1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the Mobile message configuration to use. [Learn more](sms-configuration.md)
 
     ![](assets/sms_create_2.png)
 
-1. Additionally, you can apply capping rules to your SMS action by selecting a rule set in the **[!UICONTROL Business rules]** drop-down list. [Learn more](../conflict-prioritization/channel-capping.md)
+1. Additionally, you can apply capping rules to your Mobile message action by selecting a rule set in the **[!UICONTROL Business rules]** drop-down list. [Learn more](../conflict-prioritization/channel-capping.md)
 
 1. Select the **[!UICONTROL Edit content]** button and create your content as desired. [Learn more](#sms-content)
 
@@ -101,23 +101,23 @@ For more information on how to create, configure and publish a journey, refer to
 
 1. From the **[!UICONTROL Properties]** section, edit your Campaign's **[!UICONTROL Title]** and **[!UICONTROL Description]**.
 
-1. Click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
+1. From the **[!UICONTROL Action]** tab, click **[!UICONTROL Add action]** and choose **[!UICONTROL Mobile message]**. Then, select or create a new configuration.
 
-1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
-
-1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL SMS]** and select or create a new configuration.
-
-    Learn more about SMS configuration on [this page](sms-configuration.md).
+    Learn more about Mobile message configuration on [this page](sms-configuration.md).
 
     ![](assets/sms_create_3.png)
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
-1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track clicks on links in your SMS message.
+1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track clicks on links in your Mobile message.
 
-1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/campaign-schedule.md#action-campaign-schedule). 
+1. From the **[!UICONTROL Audience]** tab, click the **[!UICONTROL Select audience]** button to define the audience to target from the list of available Adobe Experience Platform audiences. [Learn more](../audience/about-audiences.md).
 
-1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your SMS message:
+1. In the **[!UICONTROL Identity namespace]** field, choose the namespace to use in order to identify the individuals from the selected audience. [Learn more](../event/about-creating.md#select-the-namespace).
+
+1. From the **[!UICONTROL Schedule]** tab, you can design your Campaigns to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/campaign-schedule.md#action-campaign-schedule). 
+
+1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your Mobile message:
 
     * Once
     * Daily
@@ -135,8 +135,7 @@ For more information on how to create, configure and activate a campaign, refer 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms_content"
 >title="Define your SMS content"
->abstract="Customize and personalize your text messages (SMS/MMS/RCS) by using the personalization editor to define the content and incorporate dynamic elements."
-
+>abstract="Customize and personalize your Mobile message by using the personalization editor to define the content and incorporate dynamic elements."
 
 To configure your message content, follow the steps below. Settings for MMS are detailed in [this section](#mms-content).
 
@@ -144,7 +143,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
 1. Click the **[!UICONTROL Message]** field to open the personalization editor.
 
-    For RCS messaging with Infobip, Twilio, or other third-party providers, paste the required JSON payload into your [custom SMS configuration](sms-configuration-custom.md#api-credential).
+    For RCS messaging with Infobip, Twilio, or other third-party providers, paste the required JSON payload into your [custom Mobile message configuration](sms-configuration-custom.md#api-credential).
 
     ![](assets/sms-content.png)
 
@@ -174,17 +173,13 @@ To configure your message content, follow the steps below. Settings for MMS are 
     >
     > The lifespan of short URLs is set to 30 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
 
-1. Use the **[!UICONTROL Character count]** to monitor SMS length as you compose the message. It updates in real time and indicates when the content will be delivered in multiple segments.
-
-    ![](assets/sms_tracking_3.png)
-
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](#sms-mms-test).
 
 ## Personalize with Decisioning {#decisioning-sms}
 
-You can personalize and optimize the content of your SMS messages with **Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
+You can personalize and optimize the content of your Mobile messages with **Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
 
-For more information on how to create and use decision policies in SMS messages, refer to [this section](../experience-decisioning/create-decision.md).
+For more information on how to create and use decision policies in Mobile messages, refer to [this section](../experience-decisioning/create-decision.md).
 
 ## Define your MMS content{#mms-content}
 
@@ -196,7 +191,7 @@ You can enhance your communication by sending Multimedia Message Service (MMS) m
 
 To create MMS content, follow these steps:
 
-1. Create a SMS as described in [this section](#create-sms-journey-campaign).
+1. Create a Mobile message as described in [this section](#create-sms-journey-campaign).
 
 1. Edit your SMS content as detailed in [this section](#sms-content).
 
@@ -225,7 +220,7 @@ Once sent, you can measure the impact of your SMS within the Campaign or Journey
 **Related topics**
 
 * [Preview, test and send your text message](send-sms.md)
-* [Configure SMS channel](sms-configuration.md)
-* [SMS/MMS reports](../reports/journey-global-report-cja-sms.md)
+* [Configure Mobile message channel](sms-configuration.md)
+* [Mobile message reports](../reports/journey-global-report-cja-sms.md)
 * [Add a message in a journey](../building-journeys/journey-action.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)
