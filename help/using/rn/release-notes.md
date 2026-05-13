@@ -178,12 +178,6 @@ Because of this model, release notes are updated between monthly releases. For f
 
 * **Webhook interface enhancement** - When configuring SMS webhooks, the user interface now includes a built-in setup guide with practical examples, making it easier to align provider payloads and troubleshoot issues without leaving the configuration flow. [Read more](../sms/sms-webhook.md)
 
-#### Journeys
-
-* **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the journey header next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
-
-  Availability date: May 11, 2026
-
 #### WhatsApp
 
 * **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
