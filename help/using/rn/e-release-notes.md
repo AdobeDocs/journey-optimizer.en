@@ -204,7 +204,7 @@ Improvements coming with this release are listed below.
 
 #### AI
 
-* **Journey Agent – Analyze** - Journey Agent now includes new analyze skills, featuring AI recommendations visible on the Journey home screen. Cards provide actionable insights and links to relevant journeys, helping practitioners quickly identify and act on optimization opportunities. The feature is currently in limited availability for select customers, with plans to transition to general availability within the month for those with AI-enabled SKUs.
+* **Journey Agent – Analyze** - Journey Agent now includes new Analyze skills. When navigating to the Journey home screen, a new AI recommendations panel appears on the right side, surfacing cards with actionable insights. Clicking a card takes you directly to the relevant journey and opens the right panel with a detailed recommendation to help optimize journey performance.
 
   Documentation JIRA task: [DOCAC-14540](https://jira.corp.adobe.com/browse/DOCAC-14540)
 
