@@ -71,8 +71,8 @@ To save journey nodes as a fragment directly from the journey canvas:
 
 To create a fragment directly from the inventory:
 
-1. Navigate to **[!UICONTROL Journeys]** > **[!UICONTROL Fragments]** tab.
-1. Click **[!UICONTROL Create Fragment]**.
+1. Navigate to **[!UICONTROL Journeys]** > **[!UICONTROL Journey fragments]** tab.
+1. Click **[!UICONTROL Create journey fragment]**.
 1. In the fragment authoring canvas, add and configure journey activities.
 1. When done, click **[!UICONTROL Save]** to save the fragment as a draft.
 

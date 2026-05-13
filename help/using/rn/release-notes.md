@@ -477,7 +477,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 #### Journeys
 
-* **Current journey payload size visible in journey properties** - The journey properties panel now displays the current size of the journey payload compared to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator helps you monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
+* **Current journey payload size visible in journey properties** - The journey properties panel now displays the current size of the journey payload compared to the configured limit — for example, *1.5 MB (out of 4 MB)*. This read-only indicator helps you monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
 
   Availability date: April 30, 2026
 
