@@ -60,13 +60,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Automatic journey closure for non-recurring audiences</strong><br/></th>
+<th><strong>Automatic completion for non-recurring Read Audience journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Non-recurring <strong>Read Audience</strong> journeys now automatically close once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, these journeys transition to <strong>Finished</strong> status as soon as execution completes, keeping your journey inventory accurate without manual intervention.</p>
+<p>Non-recurring <strong>Read Audience</strong> journeys now automatically close once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14542">DOCAC-14542</a></p>
 <p>Availability date: May 19, 2026</p>
 </td>
@@ -77,13 +77,14 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Trigger orchestrated campaigns from an End activity</strong><br/></th>
+<th><strong>Linked orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now trigger an orchestrated campaign directly from another orchestrated campaign's End activity. You can optionally pass parameters to the target campaign.</p>
+<p>Orchestrated campaigns can now be linked together by triggering an orchestrated campaign directly from another orchestrated campaign's <strong>End activity</strong>.</p>
+<p>This makes it possible to break complex orchestration logic into smaller, reusable flows that can be called from multiple parent campaigns rather than rebuilt each time. The payload passed at runtime is available for segmentation and personalization in the downstream campaign, so each linked campaign can behave based on the context it receives.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14116">DOCAC-14116</a></p>
 <p>Availability date: May 19, 2026</p>
 </td>
@@ -183,13 +184,13 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Target from File in Orchestrated Campaigns</strong><br/></th>
+<th><strong>File-based targeting for orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now use a flat file as the audience source for an Orchestrated campaign without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset.</p>
+<p>Orchestrated campaigns now support loading a CSV or TXT file directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. This supports ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical. </p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14704">DOCAC-14704</a></p>
 <p>Availability date: May 28, 2026</p>
@@ -220,6 +221,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 Improvements coming with this release are listed below.
 
+<!--
 #### AI
 
 * **Journey Agent – Analyze** - Journey Agent now includes new Analyze skills. When navigating to the Journey home screen, a new AI recommendations panel appears on the right side, surfacing cards with actionable insights. Clicking a card takes you directly to the relevant journey and opens the right panel with a detailed recommendation to help optimize journey performance.
@@ -229,6 +231,8 @@ Improvements coming with this release are listed below.
   Documentation JIRA task: [DOCAC-14540](https://jira.corp.adobe.com/browse/DOCAC-14540)
 
   Availability date: May 19, 2026
+
+-->
 
 #### Campaigns
 
@@ -240,7 +244,7 @@ Improvements coming with this release are listed below.
 
   Availability date: May 19, 2026
 
-* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level, or directly for a specific campaign from the campaigns inventory.
+* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
 
   Documentation JIRA task: [DOCAC-14539](https://jira.corp.adobe.com/browse/DOCAC-14539)
 
@@ -326,7 +330,9 @@ Improvements coming with this release are listed below.
 
 #### Email
 
-* **Email header personalization with recipients** - You can now customize Email headers at the Orchestrated Campaign level by overriding global Channel configurations with personalization parameters.
+**Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. 
+
+  Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
 
   Documentation JIRA task: [DOCAC-13761](https://jira.corp.adobe.com/browse/DOCAC-13761)
 
