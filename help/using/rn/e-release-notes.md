@@ -27,49 +27,14 @@ The following capabilities are targeted for this release.
 <table>
 <thead>
 <tr>
-<th><strong>AI Assistant for journey expressions</strong><br/></th>
+<th><strong>RCS messaging</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer now includes an <strong>AI Assistant for journey expressions</strong> directly inside the Journey advanced expression editor. Powered by AI, it helps you generate new expressions from a plain-language description.</p>
-<p>This capability is available to all customers as a Public Beta.</p>
-<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14692">DOCAC-14692</a></p>
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in Direct Mail channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now add <strong>Decision policies</strong> into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
-<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-13429">DOCAC-13429</a></p>
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Automatic completion for non-recurring Read Audience journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Non-recurring <strong>Read Audience</strong> journeys now automatically close once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.</p>
-<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14542">DOCAC-14542</a></p>
+<p>To support the addition of RCS, the <strong>mobile messaging workflow</strong> has been updated. SMS, MMS, and RCS are now conveniently grouped under a single <strong>Mobile Message</strong> channel in Adobe Journey Optimizer.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-12288">DOCAC-12288</a></p>
 <p>Availability date: May 19, 2026</p>
 </td>
 </tr>
@@ -89,6 +54,25 @@ The following capabilities are targeted for this release.
 <p>This makes it possible to break complex orchestration logic into smaller, reusable flows that can be called from multiple parent campaigns rather than rebuilt each time. The payload passed at runtime is available for segmentation and personalization in the downstream campaign, so each linked campaign can behave based on the context it receives.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14116">DOCAC-14116</a></p>
 <p>Availability date: May 19, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Simulation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).With General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14492">DOCAC-14492</a></p>
+<p>Availability date: May 28, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -131,6 +115,59 @@ The following capabilities are targeted for this release.
 </tbody>
 </table>
 
+
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning support in Direct Mail channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now add <strong>Decision policies</strong> into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-13429">DOCAC-13429</a></p>
+<p>Availability date: May 19, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Content Advisor Selector</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now uses the <strong>Content Advisor selector</strong>, a unified modal for selecting both Experience Manager Assets and Content Fragments. The new selector supports browsing, searching, and filtering across all assets, includes Dynamic Media renditions, and incorporates enhanced user interface capabilities that allow you to easily add image renditions when dynamic assets are used.</p>
+<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Availability date: May 19, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Automatic completion for non-recurring Read Audience journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Non-recurring <strong>Read Audience</strong> journeys now automatically close once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14542">DOCAC-14542</a></p>
+<p>Availability date: May 19, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--
 <table>
 <thead>
 <tr>
@@ -143,12 +180,13 @@ The following capabilities are targeted for this release.
 <p>This release brings several enhancements to make Adobe Experience Manager Content Fragments more usable, more governable, and more production-ready within Journey Optimizer authoring workflows.</p>
 <p>Journey Optimizer can now pull Content Fragments directly from the Adobe Experience Manager authoring tier, without requiring them to be published first. Fragment context is maintained across the full message, allowing authors to reuse a fragment's fields in later content blocks without reselecting it. This release also improves lifecycle handling for invalid or expired Content Fragments, and adds locale and variation support so marketers can work with alternate versions of the same Content Fragment more intentionally.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14686">DOCAC-14686</a></p>
-<p>Availability date: May 19, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
+<!--
 <table>
 <thead>
 <tr>
@@ -165,23 +203,7 @@ The following capabilities are targeted for this release.
 </tr>
 </tbody>
 </table>
-
-<table>
-<thead>
-<tr>
-<th><strong>RCS messaging</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>To support the addition of RCS, the <strong>mobile messaging workflow</strong> has been updated. SMS, MMS, and RCS are now conveniently grouped under a single <strong>Mobile Message</strong> channel in Adobe Journey Optimizer.</p>
-<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-12288">DOCAC-12288</a></p>
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
+-->
 
 <table>
 <thead>
@@ -204,16 +226,16 @@ The following capabilities are targeted for this release.
 <table>
 <thead>
 <tr>
-<th><strong>Journey Simulation</strong><br/></th>
+<th><strong>AI Assistant for journey expressions</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).With General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
-<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14492">DOCAC-14492</a></p>
-<p>Availability date: May 28, 2026</p>
+<p>Adobe Journey Optimizer now includes an <strong>AI Assistant for journey expressions</strong> directly inside the Journey advanced expression editor. Powered by AI, it helps you generate new expressions from a plain-language description.</p>
+<p>This capability is available to all customers as a Public Beta.</p>
+<p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14692">DOCAC-14692</a></p>
+<p>Availability date: May 19, 2026</p>
 </td>
 </tr>
 </tbody>
