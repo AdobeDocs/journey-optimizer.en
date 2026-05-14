@@ -220,6 +220,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 Improvements coming with this release are listed below.
 
+<!--
 #### AI
 
 * **Journey Agent – Analyze** - Journey Agent now includes new Analyze skills. When navigating to the Journey home screen, a new AI recommendations panel appears on the right side, surfacing cards with actionable insights. Clicking a card takes you directly to the relevant journey and opens the right panel with a detailed recommendation to help optimize journey performance.
@@ -229,6 +230,8 @@ Improvements coming with this release are listed below.
   Documentation JIRA task: [DOCAC-14540](https://jira.corp.adobe.com/browse/DOCAC-14540)
 
   Availability date: May 19, 2026
+
+-->
 
 #### Campaigns
 
@@ -326,7 +329,9 @@ Improvements coming with this release are listed below.
 
 #### Email
 
-* **Email header personalization with recipients** - You can now customize Email headers at the Orchestrated Campaign level by overriding global Channel configurations with personalization parameters.
+**Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. 
+
+  Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
 
   Documentation JIRA task: [DOCAC-13761](https://jira.corp.adobe.com/browse/DOCAC-13761)
 
