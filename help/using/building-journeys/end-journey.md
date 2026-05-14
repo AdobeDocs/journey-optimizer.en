@@ -80,16 +80,16 @@ If the journey has several paths, we recommend that you add a label to each end 
 
 A journey can close because of the following reasons:
 
-* A one-shot (non-recurring) Read Audience journey **automatically finishes** once the last profile exits the journey. [Learn more](#auto-finish-one-shot)
+* A non-recurring Read Audience journey **automatically finishes** once the last profile exits the journey. [Learn more](#auto-finish-non-recurring)
 * After the last occurrence of a recurring audience-based journey.
 * The journey is closed manually via the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) button.
 * The global journey timeout of 91 days is reached.
 
 After the **91-day journey global timeout**, a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 91-day timeout.  Learn more about [the journey global timeout](../building-journeys/journey-properties.md#global_timeout).
 
-### Auto-finish one-shot journeys {#auto-finish-one-shot}
+### Automatic journey closure for non-recurring audiences {#auto-finish-non-recurring}
 
-A **non-recurring (one-shot) Read Audience journey** now automatically transitions to **[!UICONTROL Finished]** status once the last profile exits the journey. This eliminates the previous behavior where one-shot journeys remained in **Live** status until the 91-day global timeout expired, even though no profiles were actively flowing through them.
+A **non-recurring Read Audience journey** now automatically transitions to **[!UICONTROL Finished]** status once the last profile exits the journey. This eliminates the previous behavior where non-recurring Read Audience journeys remained in **Live** status until the 91-day global timeout expired, even though no profiles were actively flowing through them.
 
 **How it works:**
 
@@ -97,11 +97,11 @@ A **non-recurring (one-shot) Read Audience journey** now automatically transitio
 1. As each profile reaches the end of the journey, it exits normally.
 1. When the **last active profile exits**, the journey automatically transitions to **[!UICONTROL Finished]** status.
 
-This behavior applies to **one-shot (non-recurring) Read Audience journeys** only. Recurring journeys are not affected.
+This behavior applies to **non-recurring Read Audience journeys** only. Recurring journeys are not affected.
 
 >[!NOTE]
 >
->You can still close a one-shot journey manually at any time using the **[!UICONTROL Close to new entrances]** option. The auto-finish behavior simply ensures the journey finishes automatically when it is no longer needed, without requiring manual intervention.
+>You can still close a non-recurring Read Audience journey manually at any time using the **[!UICONTROL Close to new entrances]** option. The auto-finish behavior simply ensures the journey finishes automatically when it is no longer needed, without requiring manual intervention.
 
 ### When is a journey considered "finished"? {#journey-finished-definition}
 
