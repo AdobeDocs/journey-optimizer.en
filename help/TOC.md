@@ -74,7 +74,6 @@ solution: Journey Optimizer
     + [End your journey](using/building-journeys/end-journey.md)
     + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md)
-    + {hide-from-toc} [Journey Fragments](using/building-journeys/journey-fragments.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
@@ -88,6 +87,7 @@ solution: Journey Optimizer
       + [Conditions](using/building-journeys/conditions.md)
     + [Read audience](using/building-journeys/read-audience.md)
     + [Wait](using/building-journeys/wait-activity.md)
+    + [Journey Fragments](using/building-journeys/journey-fragments.md)
     + [Content decision](using/building-journeys/content-decision.md)
     + [Dataset lookup](using/building-journeys/dataset-lookup.md)
     + [Action](using/building-journeys/journey-action.md)
@@ -311,6 +311,7 @@ solution: Journey Optimizer
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
+      + [Configure deeplinks in emails](using/email/deeplinks.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
@@ -448,6 +449,7 @@ solution: Journey Optimizer
       + [String functions](using/personalization/functions/string.md)
     + Personalization use cases {#personalization-use-cases}
       + [Personalization use cases](/help/rp_landing_pages/personalization-use-cases-landing-page.md)
+      + [Personalization recipes](using/personalization/personalization-recipes.md)
       + [Order status notification](using/personalization/personalization-use-case.md)
       + [Cart abandonment email](using/personalization/personalization-use-case-helper-functions.md)
       + [Health plan prescriptions email](using/personalization/perso-uc-plan-prescriptions.md)

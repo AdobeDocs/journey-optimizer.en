@@ -131,6 +131,8 @@ Orchestration activities are different conditions that help determine the next s
 
 From the orchestration activities, use the **Read Audience** activity to set your journey to listen to an [!DNL Adobe Experience Platform] audience. [Learn more about the Read Audience activity](read-audience.md).
 
+Use **Journey Fragments** to insert reusable sets of pre-built journey nodes directly into the canvas. Fragments help teams stay consistent and move faster by avoiding rebuilding the same logic — such as eligibility checks, channel routing, or welcome sequences — from scratch. [Learn more about Journey Fragments](journey-fragments.md).
+
 The other activities allow you to add conditions to your journey to define several paths, set a waiting time before executing the next activity, or end your journey. [Learn more about orchestration activities](about-journey-activities.md#orchestration-activities).
 
 ### Actions{#jo-actions}

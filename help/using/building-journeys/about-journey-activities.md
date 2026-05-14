@@ -87,6 +87,7 @@ From the palette, on the left-hand side of the screen, the following orchestrati
 * [Optimize](optimize.md)
 * [Read Audience](read-audience.md)
 * [Wait](wait-activity.md)
+* [Journey Fragments](journey-fragments.md)
 * [Content decision](content-decision.md)
 * [Dataset lookup](dataset-lookup.md)
 

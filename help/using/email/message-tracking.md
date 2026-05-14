@@ -123,6 +123,14 @@ To insert links into your email content, follow the steps below:
 
     * Select **[!UICONTROL Mirror page]** to add a link to the email mirror page. [Learn more](#mirror-page)
 
+    * Select **[!UICONTROL Deeplink]** to insert a link to a mobile app. This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement. [Learn more](deeplinks.md)
+
+        >[!IMPORTANT]
+        >
+        >Before using deeplinking, make sure you have completed the corresponding [configuration steps](deeplinks.md#configuration) in Journey Optimizer and implemented [deeplink handling](deeplinks.md#mobile-implementation) in your mobile app. If you have not done so, the deeplink will not direct users to the intended in-app content.
+        >
+        >Also, make sure [link tracking is enabled](#enable-tracking) for your message so that the URL is rewritten through Adobe systems.
+
 1. Enter the desired URL in the corresponding field, or select a landing page, and define the link settings and styles. [Learn more](#adjust-links)
 
     >[!NOTE]
@@ -233,3 +241,4 @@ Reporting on openings and clicks is available in the [Live report](../reports/li
 ## Personalize URL tracking {#url-tracking}
 
 For detailed guidance on URL personalization (including how to personalize URL tracking parameters and how to personalize a complete/base URL), refer to [URL personalization](url-personalization.md).
+

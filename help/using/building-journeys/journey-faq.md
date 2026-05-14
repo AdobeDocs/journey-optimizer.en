@@ -136,7 +136,7 @@ Learn more about [journey types](entry-management.md#types-of-journeys).
 A journey consists of:
 
 * **Events**: Entry points that trigger the journey (e.g., profile qualification, business events)
-* **Orchestration activities**: Logic components like conditions, wait, read audience, and end
+* **Orchestration activities**: Logic components like conditions, wait, read audience, journey fragments, and end
 * **Actions**: Activities that perform tasks, such as sending messages, updating profiles, or calling external APIs
 * **Built-in channel actions**: Native messaging capabilities for email, SMS, push, and other channels
 * **Custom actions**: Integration with third-party systems
@@ -423,6 +423,29 @@ Learn more about [timezone management](timezone-management.md).
 **Tip**: Use journey capping rules to limit the total number of messages a customer receives across all journeys.
 
 Learn more about [wait activities](wait-activity.md) and [journey capping](../conflict-prioritization/journey-capping.md).
+
++++
+
++++ What are Journey Fragments and when should I use them?
+
+**Journey Fragments** are reusable sets of journey nodes that you build once and insert into any journey across your sandbox. They are available as an orchestration activity in the journey canvas.
+
+**When to use Journey Fragments**:
+
+* You have logic that repeats across multiple journeys (e.g., eligibility checks, preferred channel routing, welcome sequences)
+* You want to enforce consistency across teams — define the pattern once, reuse it everywhere
+* You want to speed up journey creation by avoiding rebuilding common node sequences from scratch
+
+**Key behaviors to be aware of**:
+
+* Inserting a fragment creates a **static copy** of its nodes — updates to the original fragment are **not** propagated to journeys that already use it
+* Only **Active** fragments can be inserted into a journey
+* Fragments are sandox-scoped and support a maximum of 20 nodes and 200 active fragments per sandbox
+* [Jump](jump.md) activities are not allowed inside a fragment
+
+**Difference from the Jump activity**: The [Jump activity](jump.md) redirects profiles to another live journey at runtime. Journey Fragments copy nodes into the current journey at design time — they are a build-time reuse mechanism, not a runtime routing mechanism.
+
+Learn more about [Journey Fragments](journey-fragments.md).
 
 +++
 
@@ -975,8 +998,8 @@ As journeys approach 50 activities, they can become very complex and difficult t
 
 **Best practice**: Keep your journeys focused and manageable. If your journey is becoming complex, consider:
 
-* Breaking it into multiple journeys using the Jump activity
-* Creating reusable patterns across simpler journeys
+* Breaking it into multiple journeys using the [Jump activity](jump.md)
+* Extracting repeated logic into [Journey Fragments](journey-fragments.md) to reuse across journeys without rebuilding from scratch
 * Simplifying logic with more efficient conditions
 * Reviewing if all activities are necessary
 
