@@ -14,13 +14,15 @@ product_v2:
 
 ## May '26 pre-release notes {#may-26-rn}
 
-**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
+**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published once changes are live in production. While most changes are delivered on the release date, a few may roll out later — refer to the Availability Date listed for each entry for details.
 
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: May 19–20, 2026
 
 ### New capabilities {#may-26-features}
+
+The following capabilities are targeted for this release.
 
 <table>
 <thead>
@@ -219,7 +221,7 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 ### Improvements {#may-26-improv}
 
-Improvements coming with this release are listed below.
+The following improvements are targeted for this release.
 
 <!--
 #### AI
