@@ -315,6 +315,22 @@ The following improvements are targeted for this release.
 
   Availability date: May 19, 2026
 
+
+#### Reporting
+
+* **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
+
+
+  Availability date: May 19, 2026
+
+#### Integrations
+
+* **Open-time personalization with countdown timer using Dynamic Media**- Journey Optimizer and Adobe Experience Manager Dynamic Media integration enables open-time personalization for Dynamic Media templates, unlocking hyper-personalized use cases. Customers can create and publish personalized templates in Adobe Experience Manager and use them in Journey Optimizer, with data rendered at open time.
+
+
+  Availability date: May 19, 2026
+
+
 #### Orchestrated campaigns
 
 * **Add links in Enrichment activity** - The Add Link functionality is now available in the Enrichment Activity for Orchestrated Campaigns. This allows you to create a direct relationship between your working table data and your existing database tables.
@@ -335,21 +351,7 @@ The following improvements are targeted for this release.
 
 
   Availability date: May 29, 2026
-
-#### Reporting
-
-* **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
-
-
-  Availability date: May 19, 2026
-
-#### Integrations
-
-* **Open-time personalization with countdown timer using Dynamic Media**- Journey Optimizer and Adobe Experience Manager Dynamic Media integration enables open-time personalization for Dynamic Media templates, unlocking hyper-personalized use cases. Customers can create and publish personalized templates in Adobe Experience Manager and use them in Journey Optimizer, with data rendered at open time.
-
-
-  Availability date: May 19, 2026
-
+  
 <!--
 # Pre-release notes {#e-release-notes}
 
