@@ -306,23 +306,23 @@ The following improvements are targeted for this release.
 
   Availability date: May 19, 2026
 
-* **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether inheritance can be broken or not, enabling to create fragments that can never be unlocked when used in emails. This helps enforce governance, maintain brand consistency, and support compliance requirements for centrally managed or regulated content blocks.
+* **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages.
 
   Documentation JIRA task: [DOCAC-14716](https://jira.corp.adobe.com/browse/DOCAC-14716)
 
   Availability date: May 19, 2026
 
-* **Content locking in landing pages** - You can now lock portions of landing page templates, similar to the locking controls available for email templates. You can define which structures, components, and properties are editable — including options to lock design, content, position, and restrict content by limiting the number and/or types of components allowed.
+<!--FEEDBACK FROM TYSON WAI - * **Content locking in landing pages** - You can now lock portions of landing page templates, similar to the locking controls available for email templates. You can define which structures, components, and properties are editable — including options to lock design, content, position, and restrict content by limiting the number and/or types of components allowed.
 
   Documentation JIRA task: [DOCAC-14714](https://jira.corp.adobe.com/browse/DOCAC-14714)
 
-  Availability date: May 19, 2026
+  Availability date: May 19, 2026-->
 
-* **Email Designer in Unified Shell** - The Email Designer is now integrated into the Journey Optimizer Unified Shell interface instead of being launched directly in full screen.
+<!--FEEDBACK FROM TYSON WAI - TW: Remove this release, it is not ready for May 19th- * **Email Designer in Unified Shell** - The Email Designer is now integrated into the Journey Optimizer Unified Shell interface instead of being launched directly in full screen.
 
   Documentation JIRA task: [DOCAC-14254](https://jira.corp.adobe.com/browse/DOCAC-14254)
 
-  Availability date: May 19, 2026
+  Availability date: May 19, 2026-->
 
 #### Journeys
 
