@@ -346,7 +346,7 @@ The following improvements are targeted for this release.
 
   Availability date: May 26, 2026
 
-* **Loop over enrichment collections in personalization** - The personalization editor in Orchestrated campaigns now supports a loop construct to iterate over a collection from an enrichment activity.
+* **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
 
   Documentation JIRA task: [DOCAC-14703](https://jira.corp.adobe.com/browse/DOCAC-14703)
 
