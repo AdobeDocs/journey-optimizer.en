@@ -226,7 +226,7 @@ The following capabilities are targeted for this release.
 <table>
 <thead>
 <tr>
-<th><strong>AI Assistant for journey expressions</strong><br/></th>
+<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
 </tr>
 </thead>
 <tbody>
