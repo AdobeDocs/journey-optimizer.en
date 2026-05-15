@@ -232,7 +232,7 @@ The following capabilities are targeted for this release.
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer now includes an <strong>AI Assistant for journey expressions</strong> directly inside the Journey advanced expression editor. Powered by AI, it helps you generate new expressions from a plain-language description.</p>
+<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
 <p>This capability is available to all customers as a Public Beta.</p>
 <p>Documentation JIRA task: <a href="https://jira.corp.adobe.com/browse/DOCAC-14692">DOCAC-14692</a></p>
 <p>Availability date: May 19, 2026</p>
