@@ -27,13 +27,13 @@ The following capabilities are targeted for this release.
 <table>
 <thead>
 <tr>
-<th><strong>RCS messaging</strong><br/></th>
+<th><strong>New Mobile Message channel and Enhanced RCS messaging</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>To support the addition of RCS, the <strong>mobile messaging workflow</strong> has been updated. SMS, MMS, and RCS are now conveniently grouped under a single <strong>Mobile Message</strong> channel in Adobe Journey Optimizer.</p>
+<p>SMS, MMS, and RCS are now unified under a single <strong>Mobile Message</strong> action in Adobe Journey Optimizer, making it easier to manage all mobile message types from one place. As part of this update, you can now author rich media RCS messages — including images, carousels, and suggested actions — directly in Journey Optimizer through a new native authoring experience.</p>
 <p>Availability date: May 19, 2026</p>
 </td>
 </tr>
@@ -265,12 +265,14 @@ The following improvements are targeted for this release.
 
   Availability date: May 19, 2026
 
+<!--
 #### Configuration
 
 * **Performance Add-on for high-throughput Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details.
 
 
   Availability date: May 19, 2026
+-->
 
 #### Decisioning
 
