@@ -60,8 +60,13 @@ Because of this model, release notes are updated between monthly releases. For f
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+>[!NOTE]
+>
+>Want a sneak peek at what's coming? Check out the [pre-release notes](e-release-notes.md) for an early look at upcoming capabilities before they are officially released.
+
 ## May '26 updates {#may-26-rn}
 
+The following capabilities and improvements were released in May 2026.
 
 <table>
 <thead>
@@ -82,7 +87,6 @@ Because of this model, release notes are updated between monthly releases. For f
 </tr>
 </tbody>
 </table>
-
 
 <table>
 <thead>
@@ -157,7 +161,9 @@ Because of this model, release notes are updated between monthly releases. For f
 </table>
 
 ### Improvements {#may-26-improv}
- 
+
+The following improvements were also released in May 2026.
+
 #### Decisioning
 
 * **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
@@ -192,17 +198,12 @@ The following capabilities and enhancements are scheduled for release in the nex
 
 ## April '26 release notes {#april-26-rn}
 
-<!--
-**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
-
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
--->
-
-New capabilities and improvements released earlier in April are announced with their availability date.
 
 **Release date**: April 28-29, 2026
 
 ### New capabilities {#april-26-features}
+
+The following capabilities were released in April 2026.
 
 <table>
 <thead>
@@ -428,6 +429,8 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 </table>
 
 ### Improvements {#april-26-improv}
+
+The following improvements were also released in April 2026.
 
 #### AI
 
