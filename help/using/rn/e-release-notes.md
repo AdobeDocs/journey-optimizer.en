@@ -293,15 +293,20 @@ The following improvements are targeted for this release.
 
   Availability date: May 19, 2026
 
-<!--FEEDBACK FROM TYSON WAI - * **Content locking in landing pages** - You can now lock portions of landing page templates, similar to the locking controls available for email templates. You can define which structures, components, and properties are editable — including options to lock design, content, position, and restrict content by limiting the number and/or types of components allowed.
+<!--
+FEEDBACK FROM TYSON WAI - * **Content locking in landing pages** - You can now lock portions of landing page templates, similar to the locking controls available for email templates. You can define which structures, components, and properties are editable — including options to lock design, content, position, and restrict content by limiting the number and/or types of components allowed.
 
 
-  Availability date: May 19, 2026-->
+  Availability date: May 19, 2026
+  
+  -->
 
-<!--FEEDBACK FROM TYSON WAI - TW: Remove this release, it is not ready for May 19th- * **Email Designer in Unified Shell** - The Email Designer is now integrated into the Journey Optimizer Unified Shell interface instead of being launched directly in full screen.
+<!--
+FEEDBACK FROM TYSON WAI - TW: Remove this release, it is not ready for May 19th- * **Email Designer in Unified Shell** - The Email Designer is now integrated into the Journey Optimizer Unified Shell interface instead of being launched directly in full screen.
 
 
-  Availability date: May 19, 2026-->
+  Availability date: May 19, 2026
+  -->
 
 #### Journeys
 
@@ -351,7 +356,7 @@ The following improvements are targeted for this release.
 
 
   Availability date: May 29, 2026
-  
+
 <!--
 # Pre-release notes {#e-release-notes}
 
