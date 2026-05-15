@@ -27,7 +27,7 @@ The following capabilities are targeted for this release.
 <table>
 <thead>
 <tr>
-<th><strong>Enhanced RCS messaging and new Mobile Message channel</strong><br/></th>
+<th><strong>New Mobile Message channel and Enhanced RCS messaging</strong><br/></th>
 </tr>
 </thead>
 <tbody>
