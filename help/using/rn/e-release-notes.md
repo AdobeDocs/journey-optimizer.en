@@ -60,23 +60,6 @@ The following capabilities are targeted for this release.
 <table>
 <thead>
 <tr>
-<th><strong>Journey Simulation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).With General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
-<p>Availability date: May 28, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Journey path optimization – Targeting</strong><br/></th>
 </tr>
 </thead>
@@ -198,6 +181,40 @@ The following capabilities are targeted for this release.
 <table>
 <thead>
 <tr>
+<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>This capability is available to all customers as a Public Beta.</p>
+<p>Availability date: May 19, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Simulation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).With General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
+<p>Availability date: May 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>File-based targeting for orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -212,22 +229,7 @@ The following capabilities are targeted for this release.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
-<p>This capability is available to all customers as a Public Beta.</p>
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 ### Improvements {#may-26-improv}
 
