@@ -109,6 +109,10 @@ Dataset for ingesting email and push application feedback events from Journey Op
 
 The related schema is AJO Message Feedback Event Schema.
 
+>[!NOTE]
+>
+>This dataset uses batch ingestion. Expect a data latency of up to 2 hours when querying this dataset or using it for reporting purposes.
+
 This query shows the counts of different email feedback status (sent, bounce, etc) for a given message:
 
 ```sql
