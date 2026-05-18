@@ -95,6 +95,7 @@ The following prerequisites are required to use RCS in Journey Optimizer:
 * **Mobile Message channel configuration**: An administrator must create a channel configuration with an RCS-enabled credential selected, so messages are delivered as RCS rather than SMS. [Learn more](sms-configuration.md)
 * **Fallback SMS**: Strongly recommended. Recipients whose devices do not support RCS will not receive the message unless SMS fallback is available. Customers without existing SMS volume should purchase SMS and a short code. [Learn more](design-mobile.md#rcs-content)
 * **Supported vendor**: Native RCS authoring requires Sinch RCS (Adobe resell or direct). Twilio, Infobip, and other providers must use a custom provider integration.
+* **Device support**: RCS delivery is supported on Android and iOS devices. Carrier and regional availability varies, RCS is not universally available globally.
 
 ## Quick start guide {#quick-start}
 

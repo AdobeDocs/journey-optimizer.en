@@ -10,7 +10,7 @@ level: Beginner
 ---
 # Design a Mobile message {#design-mobile}
 
-You can design and send text (SMS), rich communication (RCS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an Mobile message action in a journey or a campaign, and then define the content of the Mobile message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your Mobile messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
+You can design and send text (SMS), rich communication (RCS), and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add a Mobile message action in a journey or a campaign, and then define the content of the Mobile message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your Mobile messages before sending, so that you can check the rendering, personalization attributes, and all other settings.
 
 In accordance with the industry standards and regulations, all SMS/MMS marketing messages must contain a way for the profiles to easily unsubscribe. To do this, SMS profiles can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#opt-out-decision-management)
 
@@ -96,14 +96,15 @@ To define your RCS message content, follow the steps below.
 
     * **[!UICONTROL Open URL]**: redirects the profile to a web page, deep link, or In-App destination. Supports personalization tokens and UTM tracking parameters, e.g. `https://www.example.com/offers?id={{profile.userId}}`.
 
-    * ****[!UICONTROL Dial phone number]****: opens the device dialler with a specified phone number pre-filled, ready for the profile to call.
+    * **[!UICONTROL Dial phone number]**: opens the device dialer with a specified phone number pre-filled, ready for the profile to call.
 
-    * ****[!UICONTROL View location]****: Opens the device's default maps application at a specified location. Provide the decimal **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** of the location to display.
+    * **[!UICONTROL View location]**: opens the device's default maps application at a specified location. Provide the decimal **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** of the location to display.
 
 1. In the **[!UICONTROL Default fallback text]** field, enter the plain-text SMS version of your message. This is required and is delivered to profiles whose device or carrier does not support RCS.
 
 1. From the **[!UICONTROL Webview]** drop-down, choose the size of your **[!UICONTROL Webview]** when sending an **[!UICONTROL Open URL]** action.
 
+1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](send-sms.md).
 
 ## Define your SMS content{#sms-content}
 
@@ -146,11 +147,11 @@ To configure your message content, follow the steps below. Settings for MMS are 
     >
     > The lifespan of short URLs is set to 30 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
 
-1. From the **[!UICONTROL Decisioning]** meny, you can personalize and optimize the content of your Mobile messages with **Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
+1. From the **[!UICONTROL Decisioning]** menu, you can personalize and optimize the content of your Mobile messages with **Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
   
     For more information on how to create and use decision policies in Mobile messages, refer to [this section](../experience-decisioning/create-decision.md).
 
-1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](#sms-mms-test).
+1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](send-sms.md).
 
 ## Define your MMS content{#mms-content}
 
