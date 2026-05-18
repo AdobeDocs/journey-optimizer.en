@@ -161,6 +161,34 @@ Learn how to incorporate SMS into your customer journeys and campaigns:
 
 +++
 
++++Frequently asked questions for RCS
+
+**Is native RCS messaging available with Twilio or Infobip?**
+
+No. The native RCS designer in Journey Optimizer is not available when using third-party SMS providers such as Twilio or Infobip. RCS messages can, however, be sent via a [custom provider integration](sms-configuration-custom.md).
+
+**Why purchase SMS alongside RCS?**
+
+SMS volume and a short code should be purchased to enable SMS fallback, which is the recommended path. If SMS is not configured, profiles whose device or carrier does not support RCS will not receive the message at all.
+
+**Is native RCS messaging available for Sinch direct customers?**
+
+Yes. Customers using Sinch's Conversational API have access to native RCS authoring, including both Adobe resell and Sinch direct customers.
+
+**Is RCS available everywhere?**
+
+No. Carrier adoption continues to grow globally, but RCS is not universally supported across all carriers and regions. Regional availability and carrier support should be researched when planning RCS campaigns.
+
+**Where do RCS messages appear on the device?**
+
+RCS messages appear in the same place as standard SMS messages — in the device's native messaging application. They arrive from a branded, verified sender, giving recipients the trust signals to know the message is legitimate.
+
+**What are the character limits for an RCS message?**
+
+Rich Media (Single) message types support up to 3,072 characters, significantly more than the 160-character limit for standard SMS. Basic RCS message types are limited to 160 characters, matching the standard SMS limit.
+
++++
+
 ## How-to videos {#videos}
 
 **Configure and send SMS messages**
