@@ -51,7 +51,7 @@ To create a channel configuration, follow these steps:
 
     ![](assets/preset-create.png)
 
-1. Enter a name and a description (optional) for the configuration, then select the SMS channel.
+1. Enter a name and a description (optional) for the configuration, then select the Mobile channel.
 
     ![](assets/sms-create-surface.png)
 

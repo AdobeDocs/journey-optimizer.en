@@ -97,46 +97,6 @@ The following prerequisites are required to use RCS in Journey Optimizer:
 * **Supported vendor**: Native RCS authoring requires Sinch RCS (Adobe resell or direct). Twilio, Infobip, and other providers must use a custom provider integration.
 * **Device support**: RCS delivery is supported on Android and iOS devices. Carrier and regional availability varies, RCS is not universally available globally.
 
-## Quick start guide {#quick-start}
-
-<table style="table-layout:fixed"><tr style="border: 0;">
-<td>
-<a href="sms-configuration.md">
-<img alt="Validation" src="../assets/do-not-localize/sms-config.jpg">
-</a>
-<div>
-<a href="sms-configuration.md"><strong>Configure SMS channel</strong></a>
-</div>
-<p>Set up your SMS provider and channel configurations</p>
-</td>
-<td>
-<a href="create-sms.md">
-<img alt="Lead" src="../assets/do-not-localize/sms-create.jpeg">
-</a>
-<div><a href="create-sms.md"><strong>Create a text message</strong></a>
-</div>
-<p>Design and personalize your SMS, MMS, or RCS content</p>
-</td>
-<td>
-<a href="send-sms.md">
-<img alt="Infrequent" src="../assets/do-not-localize/sms-sending.jpg">
-</a>
-<div>
-<a href="send-sms.md"><strong>Preview & send</strong></a>
-</div>
-<p>Test and send your text messages to your audience</p>
-</td>
-<td>
-<a href="sms-opt-out.md">
-<img alt="Validation" src="../assets/do-not-localize/sms-opt-out.jpg">
-</a>
-<div>
-<a href="sms-opt-out.md"><strong>Manage opt-outs</strong></a>
-</div>
-<p>Handle unsubscribe requests and ensure compliance</p>
-</td>
-</tr></table>
-
 ## Additional resources {#additional-resources}
 
 Browse the topics below to learn more about text messaging in Journey Optimizer.
@@ -232,10 +192,3 @@ Learn how to configure and send branded, interactive RCS messages in Adobe Journ
 >[!VIDEO](https://video.tv.adobe.com/v/3464755)
 
 +++
-
-**Related topics**
-
-* [Add messages in journeys](../building-journeys/journey-action.md)
-* [Create marketing campaigns](../campaigns/create-campaign.md)
-* [Guardrails and limitations](../start/guardrails.md#sms-guardrails)
-* [SMS and mobile messaging tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/sms-channel/sms-mms-messages-overview){target="_blank"}
