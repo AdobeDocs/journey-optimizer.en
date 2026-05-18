@@ -88,7 +88,7 @@ Get Started with Email Configuration
 
 Learn the essential steps to configure email capabilities, including subdomain delegation, IP pools, and suppression list management.
 
-[Start configuring email](../using/email/get-started-email-config.md)
+[Start configuring email](get-started-email-config.md)
 :::
 
 :::
@@ -98,7 +98,7 @@ Define Email Configuration Settings
 
 Set up email configurations for deliverability, compliance, and customization with advanced features like BCC, suppression overrides, and URL tracking.
 
-[Configure settings](../using/email/email-settings.md)
+[Configure settings](email-settings.md)
 :::
 
 :::
@@ -108,7 +108,7 @@ Enable and Configure List Unsubscribe
 
 Learn how to enable the 'List unsubscribe' feature to include one-click unsubscribe URLs in email headers for recipient opt-outs.
 
-[Set up List Unsubscribe](../using/email/list-unsubscribe.md)
+[Set up List Unsubscribe](list-unsubscribe.md)
 :::
 
 :::
@@ -118,7 +118,7 @@ Configure Email Header Parameters
 
 Customize sender and reply email addresses, handle errors, and forward emails for effective communication.
 
-[Set up header parameters](../using/email/header-parameters.md)
+[Set up header parameters](header-parameters.md)
 :::
 
 :::
@@ -128,7 +128,7 @@ Configure URL Tracking for Email Channel
 
 Set up URL tracking parameters to measure the effectiveness of email campaigns and integrate with analytics tools.
 
-[Set up URL tracking](../using/email/url-tracking.md)
+[Set up URL tracking](url-tracking.md)
 :::
 
 :::
@@ -138,7 +138,7 @@ Personalized Email Configuration Settings
 
 Set up dynamic subdomains, personalized headers, and URL tracking to deliver tailored email experiences.
 
-[Configure personalized email](../using/email/surface-personalization.md)
+[Configure personalized email](surface-personalization.md)
 :::
 
 ::::
