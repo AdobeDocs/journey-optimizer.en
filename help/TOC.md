@@ -334,19 +334,20 @@ solution: Journey Optimizer
       + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
   + SMS / MMS / RCS channel {#sms}
     + [Get started with Mobile messaging](using/sms/get-started-sms.md)
-    + [Create a SMS / MMS / RCS message](using/sms/create-sms.md)
+    + [Create a Mobile message](using/sms/create-sms.md)
+    + [Design a Mobile message](using/sms/design-sms.md)
     + [Check & send your Mobile messages](using/sms/send-sms.md)
     + [Manage Mobile message opt-out](using/sms/sms-opt-out.md)
     + [Set up SMS subdomains](using/sms/sms-subdomains.md)
     + [Best practices for SMS cost optimization](using/sms/sms-cost-optimization.md)
-    + Configure SMS / MMS / RCS channel {#configure-sms}
-      + [Get started with SMS / MMS / RCS configuration](using/sms/sms-configuration.md)
+    + Configure Mobile channel {#configure-sms}
+      + [Get started with Mobile configuration](using/sms/sms-configuration.md)
       + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
       + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
       + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
       + [Configure a custom provider](using/sms/sms-configuration-custom.md)
       + [Create Webhook](using/sms/sms-webhook.md)
-      + [Create a SMS / MMS / RCS configuration](using/sms/sms-configuration-surface.md)
+      + [Create a Mobile configuration](using/sms/sms-configuration-surface.md)
       + [Use a custom dataset for inbound keywords](using/sms/custom-dataset-inbound-keywords.md)
   + Direct mail {#direct-mail}
     + [Direct mail](/help/rp_landing_pages/direct-mail-landing-page.md)

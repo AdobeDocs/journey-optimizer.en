@@ -165,7 +165,7 @@ To configure Sinch RCS to send RCS with Journey Optimizer, follow these steps:
 
     ![](assets/rcs-config.png)
 
-1. Optionally, enable the **[!UICONTROL Use custom dataset for inbound]** option to store inbound RCS messages in a custom dataset.
+1. Optionally, enable the **[!UICONTROL Use custom dataset for inbound]** option to store inbound RCS messages in a custom dataset. [Learn more](using/sms/custom-dataset-inbound-keywords.md)
 
 1. Set the **[!UICONTROL API rate limit (requests per second)]** to cap the maximum number of API calls per second, use your provider's recommended value to avoid throttling, or leave it at 0 for unlimited requests.
 
