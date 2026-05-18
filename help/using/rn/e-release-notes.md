@@ -205,7 +205,7 @@ The following capabilities are targeted for this release.
 <tr>
 <td>
 <p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).With General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). With General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
 <p>Availability date: May 28, 2026</p>
 </td>
 </tr>
@@ -292,7 +292,7 @@ The following improvements are targeted for this release.
 
 #### Email Designer
 
-* **Rich text in editable fragment fields** - You can now add rich text to customizable fragments that are used in your emails content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
+* **Rich text in editable fragment fields** - You can now add rich text to customizable fragments that are used in your email content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
 
 
   Availability date: May 19, 2026
