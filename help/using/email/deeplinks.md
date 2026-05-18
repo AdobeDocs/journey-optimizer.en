@@ -15,10 +15,11 @@ keywords: deeplink, deep link, universal links, app links, email, sms
  
 Deeplinks help you take recipients from an email or SMS message to a specific screen or piece of content in your mobile app. It helps bring people straight to the intended in-app experience, without routing them through a web browser or an app store, so the journey stays relevant and on-brand.
 
-When your recipients click the deeplink, they are taken directly to the intended in-app content - **provided you have completed the configuration steps** detailed on this page, which covers:
- 
-* How to configure deeplinks for emails in Journey Optimizer 
-* How to implement deeplink handling for iOS and Android in your mobile app
+When your recipients click the deeplink, they are taken directly to the intended in-app content - **provided you have completed**:
+
+* the [configuration steps](#configuration) in Journey Optimizer;
+
+* the [mobile app implementation](#mobile-implementation) steps  for iOS and Android in your mobile app.
 
 >[!NOTE]
 >
@@ -328,4 +329,3 @@ Yes. UTM parameters you configure in [!DNL Journey Optimizer] are included in th
 The link opens in the device's default web browser (standard click tracking behavior), rather than being handled as an app deep link through the `mclick` flow described on this page.
 
 +++
-
