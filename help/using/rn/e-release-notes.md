@@ -275,6 +275,12 @@ The following improvements are targeted for this release.
   Availability date: May 19, 2026
 -->
 
+#### Configuration
+
+* **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
+
+  Availability date: May 19, 2026
+
 #### Decisioning
 
 * **Adobe Experience Manager content fragments in Decisioning** - You can now map Adobe Experience Manager content fragments to decision items in Decisioning and leverage them inside decision policies to deliver the right fragment to the right customer at the right time.
