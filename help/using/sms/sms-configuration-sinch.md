@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure Sinch provider
@@ -122,7 +122,7 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
 
     * **[!UICONTROL SMS vendor]**: Sinch MMS.
 
-    * **[!UICONTROL Name]**: choose a name for your API Credential.
+    * **[!UICONTROL Name]**: enter a name for your API credential.
 
     * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: follow the steps below to gather your MMS API credentials.
 
@@ -143,7 +143,40 @@ After creating and configuring your API credential, you now need to create [your
 
 RCS (Rich Communication Services) messaging is supported in Journey Optimizer through Sinch, allowing the sending of basic messages using verified business profiles with branding elements such as logos and sender names. 
 
+Native RCS authoring requires Sinch RCS. Twilio, Infobip, and other providers must use a [custom provider integration](sms-configuration-custom.md).
+
 Note that messages automatically fall back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
+
+To configure Sinch RCS to send RCS with Journey Optimizer, follow these steps:
+
+1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
+
+1. Configure your RCS API credentials, as detailed below:
+
+    * **[!UICONTROL SMS vendor]**: Sinch RCS.
+
+    * **[!UICONTROL Name]**: enter a name for your API credential.
+
+    * **[!UICONTROL Project ID]**, **[!UICONTROL App ID]** and **[!UICONTROL API Token]**: enter the project ID, app ID, and API token from your Sinch RCS account.
+
+    * **[!UICONTROL Service Plan ID]**: enter the service plan ID associated with your Sinch account.
+
+    * **[!UICONTROL SMS API Token]**: enter the SMS API token from your Sinch account.
+
+    ![](assets/rcs-config.png)
+
+1. Optionally, enable the **[!UICONTROL Use custom dataset for inbound]** option to store inbound RCS messages in a custom dataset.
+
+1. Set the **[!UICONTROL API rate limit (requests per second)]** to cap the maximum number of API calls per second, use your provider's recommended value to avoid throttling, or leave it at 0 for unlimited requests.
+
+1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+1. In the **[!UICONTROL API Credentials]** menu, click the bin icon to delete your API credentials.
+
+1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
+
+After creating and configuring your API credential, you now need to create [your Webhook](sms-webhook.md) and a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)
+
 
 <!--
 ### Basic RCS Messages
@@ -169,32 +202,5 @@ Note that messages automatically fall back to SMS when the profile's device does
     Your messages automatically falls back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 -->
 
-### RCS multimedia messages
-
->[!AVAILABILITY]
->
-> Advanced RCS messages is only available with a direct account managed by Sinch.
-
-1. **Set up your branded RCS agent**
-
-    Create a branded RCS agent in the Sinch Dashboard. [Learn more on branded RCS agent](https://community.sinch.com/t5/RCS/Getting-Started-with-RCS-using-Conversation-API/ta-p/17844)
-
-1. **Set up your [Custom API credentials](sms-configuration-custom.md)**
-    
-    Once your RCS agent is approved, you need to set up your Custom API credentials, which include your AppId, Name, URL and Authentication type.
-
-1. **Configure your RCS with the Provider payload.**
-    
-    In your [Custom API credentials](sms-configuration-custom.md), add your Provider Payload to validate and customize your RCS messages.
-
-1. **Create a [channel configuration](sms-configuration-surface.md) for your RCS messages**
-
-    Configure a channel surface in Journey Optimizer by linking your Sinch credentials and defining the messaging parameters. This setup enables you to compose and send RCS messages from Journey Optimizer.
-
-1. **Create and personalize your [SMS message](../sms/create-sms.md)**
-
-    Paste your payload directly into the SMS content to embed and deliver your Rich Communication Services (RCS) messages.
-
-    ➡️ [Explore how Sinch supports RCS in Sinch documentation](https://sinch.com/blog/rcs-api-guide/)
 
 
