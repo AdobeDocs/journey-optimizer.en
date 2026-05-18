@@ -102,7 +102,7 @@ The following capabilities are targeted for this release.
 <tbody>
 <tr>
 <td>
-<p>You can now add <strong>Decision policies</strong> into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content to deliver for each audience member.</p>
+<p>You can now add Decision policies into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content for each audience member. Direct Mail decisioning also supports batch decisioning use cases, enabling you to export the corresponding offer items for every profile in a given Adobe Experience Platform audience.</p>
 <p>Availability date: May 19, 2026</p>
 </td>
 </tr>
@@ -337,13 +337,14 @@ FEEDBACK FROM TYSON WAI - TW: Remove this release, it is not ready for May 19th-
 
   Availability date: May 19, 2026
 
+<!--
 #### Integrations
 
 * **Open-time personalization with countdown timer using Dynamic Media**- Journey Optimizer and Adobe Experience Manager Dynamic Media integration enables open-time personalization for Dynamic Media templates, unlocking hyper-personalized use cases. Customers can create and publish personalized templates in Adobe Experience Manager and use them in Journey Optimizer, with data rendered at open time.
 
 
   Availability date: May 19, 2026
-
+-->
 
 #### Orchestrated campaigns
 
