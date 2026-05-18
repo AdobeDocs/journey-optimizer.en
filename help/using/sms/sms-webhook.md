@@ -42,6 +42,10 @@ When setting up a webhook, you can define its purpose based on the type of data 
 
 * **Feedback**: Choose this option to track delivery and engagement events, including deliveries, outbound errors, read receipts (if applicable) to support reporting and analysis.
 
+>[!NOTE]
+>
+>Inbound keyword data is stored in the _AJO Inbound Activity Event Dataset_ system dataset, unless a custom dataset is configured. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured. [Learn more](../data/get-started-datasets.md#system-datasets)
+
 Depending on your provider, there will be different expectations on what needs to be set up to have a successful SMS implementation:
 
 * **Sinch and Sinch Conversational**: Create one webhook that handles both inbound and feedback events. No payload configuration is required.

@@ -1,21 +1,19 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Use deeplinks in email messages
-description: Learn how to add deeplinks to email content and how to implement deep link handling in iOS and Android apps.
-feature: Email
+title: Use and configure deeplinks in email and SMS messages
+description: Learn how to add deeplinks to email and SMS content and how to implement deeplink handling in iOS and Android apps.
+feature: Email, SMS
 topic: Content Management
 role: User, Developer
 level: Intermediate
-keywords: deeplink, deep link, universal links, app links, email
+keywords: deeplink, deep link, universal links, app links, email, sms
 
 ---
  
-# Configure deeplinks in emails {#email-deeplinks}
+# Use and configure deeplinks in emails and SMS {#deeplinks}
  
-Deeplinks in emails help you take recipients from an email to a specific screen or piece of content in your mobile app. It helps bring people straight to the intended in-app experience, without routing them through a web browser or an app store, so the journey stays relevant and on-brand.
-
-To add a deeplink to an email, make sure [link tracking is enabled](message-tracking.md#enable-tracking). Select the element you want to link (text, button, or image) in the Email Designer, click **[!UICONTROL Insert link]** in the contextual toolbar and choose **[!UICONTROL Deeplink]** to enter your deeplink URL. [Learn more on inserting links](message-tracking.md#insert-links)
+Deeplinks help you take recipients from an email or SMS message to a specific screen or piece of content in your mobile app. It helps bring people straight to the intended in-app experience, without routing them through a web browser or an app store, so the journey stays relevant and on-brand.
 
 When your recipients click the deeplink, they are taken directly to the intended in-app content - **provided you have completed the configuration steps** detailed on this page, which covers:
  
@@ -26,9 +24,37 @@ When your recipients click the deeplink, they are taken directly to the intended
 >
 >[!DNL Adobe Journey Optimizer] supports deeplinking for both iOS and Android using tracked URLs (`/ee/v1/mclick/*`) to ensure compatibility and click tracking.  
 
+## Authoring deeplinks {#authoring}
+
+### Email {#authoring-email}
+
+For email messages, you have two options to insert a deeplink:
+
+* **Email Designer**: Make sure [link tracking is enabled](message-tracking.md#enable-tracking). Select the element you want to link (text, button, or image), click **[!UICONTROL Insert link]** in the contextual toolbar, and choose **[!UICONTROL Deeplink]** to enter your deeplink URL. [Learn more on inserting links](message-tracking.md#insert-links)
+
+* **Personalization editor (code)**: Insert the deeplink directly into the HTML using the following snippet:
+
+    ```html
+    <a class="arc-link" data-nl-type="DEEPLINK" href="<<deeplink_url>>" id="acr-link-7821368" style="text-decoration:underline;" target="_blank" data-tracking-type="DEEPLINK">Click Here</a>
+    ```
+
+    Replace `<<deeplink_url>>` with your actual deeplink URL and use a unique `id` for each block to avoid conflicts.
+
+### SMS {#authoring-sms}
+
+For SMS, deeplinks are authored using the **Url** helper function in the personalization editor. Learn more on adding links to SMS content in [this section](../sms/create-sms.md#sms-content).
+
+To insert deeplinks in SMS content, use the following syntax:
+
+```
+{{url originalUrl='<<url>>' type='DEEPLINK' action='CLICK'}}
+```
+
+Replace `<<url>>` with your actual deeplink URL.
+
 ## Configuration in Journey Optimizer {#configuration}
 
-To be able to use deeplinks in emails for your mobile apps, complete the configuration steps below.
+To be able to use deeplinks in emails and SMS for your mobile apps, complete the configuration steps below.
 
 >[!NOTE]
 >
@@ -46,60 +72,9 @@ To be able to use deeplinks in emails for your mobile apps, complete the configu
       * App bundle ID
       * SHA-256 certificate fingerprint
 
-<!--
-Adobe is hosting these files internally so not on customer's side.
-
-1. Validate the URLs below and ensure the content matches the expected format such as in the examples below.
-
-    * **For iOS (AASA)**: `https://data.<delegated_subdomain>/.well-known/apple-app-site-association`
-
-      +++ Example:
-
-      ```json
-      {
-        "applinks": {
-          "apps": [],
-          "details": [
-            {
-              "appID": "<app_bundle_id>",
-              "paths": [
-                "NOT /ee/v1/click/*",
-                "/ee/v1/mclick/*"
-              ]
-            }
-          ]
-        }
-      }
-      ```
-      
-      +++
-
-    * **For Android (assetLinks.json)**: `https://data.<delegated_subdomain>/.well-known/assetlinks.json`
-
-      +++ Example:
-
-      ```json
-      [
-        {
-          "relation": ["delegate_permission/common.handle_all_urls"],
-          "target": {
-            "namespace": "android_app",
-            "package_name": "<app_bundle_id>",
-            "sha256_cert_fingerprints": [
-              "12:34:56:78:90:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34:56:78:90:AB:CD:EF:12:34"
-            ]
-          }
-        }
-      ]
-      ```
-
-      +++
-
--->
-
 >[!IMPORTANT]
 >
->Deeplinking through Adobe email infrastructure applies when [link tracking is enabled](message-tracking.md#enable-tracking). Tracked deeplink clicks use URLs under `/ee/v1/mclick/*`, which Adobe hosts and resolves.
+>Deeplinking through Adobe infrastructure applies when link tracking is enabled for your message — in the[ email tracking settings](message-tracking.md#enable-tracking) or in the **[!UICONTROL Actions tracking]** section for SMS campaigns. Tracked deeplink clicks use URLs under `/ee/v1/mclick/*`, which Adobe hosts and resolves.
 >
 >For **non-tracked** links, the URL is not rewritten through Adobe systems. You must configure universal links or app links on your own domains and hosting so those links open your app as intended.
 
@@ -110,7 +85,7 @@ This section explains how to implement mobile deeplinks with [!DNL Adobe Journey
 * Open a specific screen inside your mobile app when the app is installed, or
 * Open your website as a fallback when the app is not installed.
  
-When [link tracking is enabled](message-tracking.md#enable-tracking) for your message, [!DNL Journey Optimizer] continues to track these clicks, includes them in reporting, and can use them in [content experiments](../content-management/content-experiment.md) if you run them on the message.
+When link tracking is enabled for your message, [!DNL Journey Optimizer] continues to track these clicks, includes them in reporting, and can use them in [content experiments](../content-management/content-experiment.md) if you run them on the message.
  
 This section provides common implementation patterns for deeplinks. Your exact setup depends on your app architecture and routing framework.
  
@@ -288,7 +263,7 @@ This section provides common implementation patterns for deeplinks. Your exact s
 * **Test your deeplink**: Send a proof and click the deeplink on a device where the app is installed.
 * **Validate on real devices**: Universal links and tracked-link resolution behaviors are more reliable to validate on physical devices rather than simulators.
 * **Validate the app-side routing**: If the deeplink does not open the expected screen, validate the app-side routing and the URL format (host/path/query and URL encoding).
-* App Links / Universal Links behavior is most reliable after the app has been installed and opened at least once.
+* **Keep app initialization in mind**: App Links / Universal Links behavior is most reliable after the app has been installed and opened at least once.
  
 ## Troubleshooting and FAQ {#troubleshooting-faq}
  
@@ -324,7 +299,7 @@ URL-encode query parameter values. This reduces delivery and rendering issues an
  
 * Create a proof with a deeplink, click it on iOS and Android devices (installed and not installed scenarios).
 * Validate:
-  * The final email link value (host/path/query)
+  * The final email or SMS link value (host/path/query)
   * The OS-level association (if using universal links / app links)
   * The in-app routing outcome
  
@@ -353,4 +328,4 @@ Yes. UTM parameters you configure in [!DNL Journey Optimizer] are included in th
 The link opens in the device's default web browser (standard click tracking behavior), rather than being handled as an app deep link through the `mclick` flow described on this page.
 
 +++
- 
+
