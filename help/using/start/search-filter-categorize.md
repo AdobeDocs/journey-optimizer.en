@@ -60,7 +60,7 @@ Press **Enter** to access all results and filter by business object.
 
 ## Filter lists {#filter-lists}
 
-In most of the lists, use the search bar to find specific items, and define filtering criteria.
+In most of the lists, use the search bar to find specific items, and define filtering criteria. You can also sort any list by clicking a column header. In the Campaigns folders view, sorting by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** is also supported.
 
 Filters can be accessed by clicking on the filter icon on the top left of a list. The filter menu allows you to filter the displayed elements according to different criteria: you can choose to display only elements of a certain type or status, the ones you created, or the ones modified in the last 30 days. Options differ depending on the context.
 

@@ -80,6 +80,24 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 
 ![](assets/fragment-list-more-actions.png)
 
+### Bulk actions {#bulk-actions-fragments}
+
+To perform operations on multiple fragments at once, select several items using the checkboxes in the list. A bulk action bar appears at the bottom of the screen with the following options:
+
+* **[!UICONTROL Add to package]** - Export selected fragments to another sandbox. [Learn how to export objects →](#export)
+* **[!UICONTROL Move to folder]** - Move selected fragments into a folder. [Learn more about folders →](#folders)
+* **[!UICONTROL Edit Tags]** - Edit tags on selected fragments. [Learn how to use tags →](../start/search-filter-categorize.md#add-tags)
+* **[!UICONTROL Manage access]** - Apply access labels to selected fragments. [Learn more about object-level access control →](../administration/object-based-access.md)
+* **[!UICONTROL Archive]** - Archive selected fragments. [Learn more about archiving →](#archive-fragments)
+
+![](assets/do-not-localize/bulk-actions-fragments.png)
+
+You can also sort the fragment list by clicking any column header, and resize columns by dragging the column border to fit the data you need.
+
+>[!NOTE]
+>
+>Bulk actions are available in the **Campaigns**, **Fragments**, and **Templates** inventories only.
+
 ## Use folders to manage fragments {#folders}
 
 >[!CONTEXTUALHELP]

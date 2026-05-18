@@ -53,6 +53,18 @@ In the **[!UICONTROL Personalization Editor]** or from the Email Designer toolba
 
 ➡️ [Learn how to work with AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
 
+## Inline editing of profile attributes {#inline-personalization}
+
+You can insert profile attribute expressions directly while editing content in the **Email Designer** or the **Push channel** editor, without opening the full personalization editor.
+
+To do so, follow these steps:
+
+1. Type `{{` in any text field. An inline autocomplete dropdown opens at the cursor position.
+1. Start typing to filter available profile attributes.
+1. Select the attribute you need — it is inserted as a personalization token at the cursor position.
+
+![](assets/do-not-localize/inline-profile-attributes.png)
+
 ## Let's dive deeper
 
 Now that you have an understanding of personalization in **[!DNL Journey Optimizer]**, it's time to dive deeper into these documentation sections to start working with the feature.

@@ -367,6 +367,36 @@ FEEDBACK FROM TYSON WAI - TW: Remove this release, it is not ready for May 19th-
 
   Availability date: May 29, 2026
 
+### Usability improvements {#may-26-usability}
+
+The following usability improvements are targeted for this release.
+
+#### Lists
+
+* **Bulk actions in lists** - You can now select multiple items at once in the **Campaigns**, **Fragments**, and **Templates** lists and perform bulk operations from a single action bar, including adding items to a package, moving them to a folder, editing tags, managing access, and archiving or deleting them. [Learn more about bulk actions in Campaigns](../campaigns/manage-campaigns.md#bulk-actions-campaigns) | [Fragments](../content-management/manage-fragments.md#bulk-actions-fragments) | [Templates](../content-management/access-content-templates.md#bulk-actions-templates)
+
+  ![](assets/do-not-localize/bulk-actions-campaigns.png)
+
+* **Sorting in lists** - The **Campaigns**, **Fragments**, and **Templates** lists now support sorting by additional columns. Campaigns also support sorting and filtering by priority and channel configuration in the folders view. [Learn more](../campaigns/manage-campaigns.md#search-filter)
+
+* **Column resizing in lists** - Column widths in the **Fragments** and **Templates** lists are now resizable, so you can adjust the layout to fit the data you care about most. [Learn more](../content-management/manage-fragments.md#bulk-actions-fragments)
+
+#### Content authoring
+
+* **Inline editing of profile attributes** - You can now insert profile attribute expressions directly in the Email Designer without opening the full personalization editor. Type `{{` in any text field to open an inline autocomplete dropdown, then browse and select the attribute you need — it is inserted at the cursor position instantly. This capability is also available in the Push channel editor. [Learn more](../personalization/personalize.md#inline-personalization)
+
+  ![](assets/do-not-localize/inline-profile-attributes.png)
+
+* **Tooltip for long links in push channel** - When configuring push notifications, full URLs in link fields are now shown in a tooltip on hover, letting you verify the complete link without truncation. [Learn more](../push/design-push.md#on-click-behavior)
+
+  ![](assets/do-not-localize/push-link-tooltip.png)
+
+#### Simulation & Preview
+
+* **Redesigned preview experience** - The content preview screen has been redesigned with a side-by-side layout that lets you compare how your content renders across multiple profiles at a glance, enabling quicker and more confident reviews before sending. [Learn more](../test-approve/simulate-sample-input.md#preview)
+
+  ![](assets/do-not-localize/simulation-preview-redesign.png)
+
 <!--
 # Pre-release notes {#e-release-notes}
 

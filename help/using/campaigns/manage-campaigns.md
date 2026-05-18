@@ -100,6 +100,8 @@ Each Orchestrated campaign in the list displays information such as the campaign
 
 In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter campaigns to display only those associated to a given channel or tag, or those created during a specific date range.
 
+You can also sort the list by clicking any column header. In the folders view, sorting and filtering by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** columns is also supported.
+
 ## Campaign operations {#operations}
 
 The ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button in the campaigns inventory allows you to perform various operations.
@@ -124,6 +126,23 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 **For Orchestrated campaigns only:**
 
 * **[!UICONTROL Back to draft]** - Unpublish and revert a campaign to draft status for error recovery. This action is available when a scheduled campaign has not yet started, or when a live campaign encounters an error before any executions are completed. [Learn more about reverting campaigns →](../orchestrated/start-monitor-campaigns.md#back-to-draft)
+
+### Bulk actions {#bulk-actions-campaigns}
+
+
+To perform operations on multiple campaigns at once, select several items using the checkboxes in the list. A bulk action bar appears at the bottom of the screen with the following options:
+
+* **[!UICONTROL Add to package]** - Add the selected campaigns to a package for export to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
+* **[!UICONTROL Move to folder]** - Move the selected campaigns into a folder.
+* **[!UICONTROL Edit tags]** - Edit the tags assigned to the selected campaigns. [Learn how to use tags →](../start/search-filter-categorize.md#add-tags)
+* **[!UICONTROL Manage access]** - Apply access labels to the selected campaigns. [Learn more about object-level access control →](../administration/object-based-access.md)
+* **[!UICONTROL Delete]** - Permanently delete the selected campaigns. [Learn more about deleting →](#delete-a-campaign)
+
+![](assets/do-not-localize/bulk-actions-campaigns.png)
+
+>[!NOTE]
+>
+>Bulk actions are available in the **Campaigns**, **Fragments**, and **Templates** inventories only.
 
 ## Understanding campaign status {#statuses}
 
