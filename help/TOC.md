@@ -99,6 +99,7 @@ solution: Journey Optimizer
   + Build expressions {#building-advanced-conditions-journeys}
     + [Build expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
     + [Work with the advanced expression editor](using/building-journeys/expression/expressionadvanced.md)
+    + {hide-from-toc} [Expression assistant](using/building-journeys/expression/expression-agent.md)
     + Syntax {#syntax}
       + [Syntax](/help/rp_landing_pages/syntax-landing-page.md)
       + [Advanced expression editor syntax](using/building-journeys/expression/generalities.md)
