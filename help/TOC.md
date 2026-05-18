@@ -504,6 +504,7 @@ solution: Journey Optimizer
       + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
     + [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
+    + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
     + Integrations {#integrations}
       + [Work with Integrations](using/integrations/integrations.md)
