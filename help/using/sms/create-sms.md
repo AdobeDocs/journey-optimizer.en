@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create an SMS/MMS message
-description: Learn how to create an SMS/MMS message in Journey Optimizer
+title: Create a Mobile message
+description: Learn how to create a Mobile message in Journey Optimizer
 feature: SMS
 topic: Content Management
 role: User

@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure Sinch provider
-description: Learn how to configure your environment to send text messages with Journey Optimizer with Sinch
+description: Learn how to configure your environment to send Mobile messages with Journey Optimizer with Sinch
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
