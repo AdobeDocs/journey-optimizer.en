@@ -333,11 +333,10 @@ solution: Journey Optimizer
       + [Configure web push notification channel](using/push/push-configuration-web.md)
       + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
   + SMS / MMS / RCS channel {#sms}
-    + [SMS / MMS / RCS channel](/help/rp_landing_pages/sms-landing-page.md)
-    + [Get started with text messaging](using/sms/get-started-sms.md)
+    + [Get started with Mobile messaging](using/sms/get-started-sms.md)
     + [Create a SMS / MMS / RCS message](using/sms/create-sms.md)
-    + [Check & send your text messages](using/sms/send-sms.md)
-    + [Manage text message opt-out](using/sms/sms-opt-out.md)
+    + [Check & send your Mobile messages](using/sms/send-sms.md)
+    + [Manage Mobile message opt-out](using/sms/sms-opt-out.md)
     + [Set up SMS subdomains](using/sms/sms-subdomains.md)
     + [Best practices for SMS cost optimization](using/sms/sms-cost-optimization.md)
     + Configure SMS / MMS / RCS channel {#configure-sms}
