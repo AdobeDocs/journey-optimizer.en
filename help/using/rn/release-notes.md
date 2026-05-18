@@ -188,6 +188,27 @@ The following improvements were also released in May 2026.
 
 * **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
 
+* **WhatsApp channel context data** - Journey Optimizer now captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO EmailTrackingExperienceEvent Dataset** under the `whatsAppChannelContext` field group. 
+
+  +++ The following fields are captured and can be used to build audiences and analyze WhatsApp engagement
+
+  * **`messageType`** – WhatsApp message type (e.g. `templateBased`, `response`)
+  * **`inboundMessage`** – Inbound reply content (e.g. `stop`, `start`, `subscribe`)
+  * **`inboundNumber`** – Sender ID where the inbound message was received
+  * **`channelType`** – Channel category (`Utility`, `Marketing`, or `Promotional`)
+  * **`profileNumber`** – Phone number from which the inbound message was received
+  * **`origTimestamp`** – Original timestamp from Meta / WhatsApp
+  * **`status`** – Delivery status including standardized provider feedback (`sent`, `delivered`, `bounce`, `error`, `delay`, `duplicate`, `denylist`, `exclude`, or `unknown`) and the raw provider status message
+  * **`reactionEvent`** – Content of the user response: emoji for reactions, or message text for replies to a specific message
+  * **`reactionMessageID`** – ID of the original message being responded to
+  * **`reactionActionName`** – Type of response action (`react`, `unreact`, or `reply`)
+  * **`interactiveSelectedTitle`** – User-selected title from a WhatsApp interactive message
+  * **`interactiveType`** – Interactive message type (`list reply`, `button reply`, or `button`)
+  * **`interactiveSelectedDescription`** – Description of the selected WhatsApp interactive option
+  * **`interactiveSelectedID`** – ID of the selected option from WhatsApp
+  
+  +++
+
 <!-- 
 ## Coming soon {#coming-soon}
 
