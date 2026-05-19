@@ -101,6 +101,13 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
 
     _Send-Time Optimization Scores / Engagement Scores_: Output scores of Journey AI.
 
+* Inbound
+
+    _AJO Inbound Activity Event Dataset_: Stores inbound activity events for incoming messages received in [!DNL Journey Optimizer].
+
+>[!NOTE]
+>
+>A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset.
 
 ## Create datasets{#create-datasets}
 

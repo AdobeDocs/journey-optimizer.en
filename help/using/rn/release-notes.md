@@ -60,7 +60,51 @@ Because of this model, release notes are updated between monthly releases. For f
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
+>[!NOTE]
+>
+>Want a sneak peek at what's coming? Check out the [pre-release notes](e-release-notes.md) for an early look at upcoming capabilities before they are officially released.
+
 ## May '26 updates {#may-26-rn}
+
+The following capabilities and improvements were released in May 2026.
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Fragments</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create <strong>Journey Fragments</strong> in Adobe Journey Optimizer. Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent — without rebuilding the same logic from scratch every time.</p>
+<p>Once created, fragments are stored in a dedicated <strong>Fragment Inventory</strong> and can be inserted into any journey using the <strong>Journey fragments</strong> activity.</p>
+<!--<p><img src="assets/do-not-localize/journey-fragments.gif"></p>-->
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../building-journeys/journey-fragments.md">detailed documentation</a>.</p>
+<p>Availability date: May 13, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Deeplinks in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
+<p><img src="assets/do-not-localize/deeplinks.gif"></p>
+<p>For more information, refer to the <a href="../email/deeplinks.md">detailed documentation</a>.</p>
+<p>Availability date: May 12, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
  
 <table>
 <thead>
@@ -117,7 +161,9 @@ Because of this model, release notes are updated between monthly releases. For f
 </table>
 
 ### Improvements {#may-26-improv}
- 
+
+The following improvements were also released in May 2026.
+
 #### Decisioning
 
 * **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
@@ -142,63 +188,43 @@ Because of this model, release notes are updated between monthly releases. For f
 
 * **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
 
+* **WhatsApp channel context data** - Journey Optimizer now captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO EmailTrackingExperienceEvent Dataset** under the `whatsAppChannelContext` field group. 
+
+  +++ The following fields are captured and can be used to build audiences and analyze WhatsApp engagement
+
+  * **`messageType`** – WhatsApp message type (e.g. `templateBased`, `response`)
+  * **`inboundMessage`** – Inbound reply content (e.g. `stop`, `start`, `subscribe`)
+  * **`inboundNumber`** – Sender ID where the inbound message was received
+  * **`channelType`** – Channel category (`Utility`, `Marketing`, or `Promotional`)
+  * **`profileNumber`** – Phone number from which the inbound message was received
+  * **`origTimestamp`** – Original timestamp from Meta / WhatsApp
+  * **`status`** – Delivery status including standardized provider feedback (`sent`, `delivered`, `bounce`, `error`, `delay`, `duplicate`, `denylist`, `exclude`, or `unknown`) and the raw provider status message
+  * **`reactionEvent`** – Content of the user response: emoji for reactions, or message text for replies to a specific message
+  * **`reactionMessageID`** – ID of the original message being responded to
+  * **`reactionActionName`** – Type of response action (`react`, `unreact`, or `reply`)
+  * **`interactiveSelectedTitle`** – User-selected title from a WhatsApp interactive message
+  * **`interactiveType`** – Interactive message type (`list reply`, `button reply`, or `button`)
+  * **`interactiveSelectedDescription`** – Description of the selected WhatsApp interactive option
+  * **`interactiveSelectedID`** – ID of the selected option from WhatsApp
+  
+  +++
+
+<!-- 
 ## Coming soon {#coming-soon}
 
 The following capabilities and enhancements are scheduled for release in the next few days. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 ### New capabilities {#comming-soon-features}
-
-<table>
-<thead>
-<tr>
-<th><strong>Deeplinks in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
-<!--<p><img src="assets/do-not-localize/forms.gif"></p>-->
-<p>For more information, refer to the <a href="../email/message-tracking.md">detailed documentation</a>.</p>
-<p>Availability date: May 11, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Fragments</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now create <strong>Journey Fragments</strong> in Adobe Journey Optimizer. Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent — without rebuilding the same logic from scratch every time.</p>
-<p>Once created, fragments are stored in a dedicated <strong>Fragment Inventory</strong> and can be inserted into any journey using the <strong>Journey fragments</strong> activity.</p>
-<!--<p><img src="assets/do-not-localize/journey-fragments.gif"></p>-->
-<p>This capability will only be available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!--p>For more information, refer to the <a href="../building-journeys/journey-fragments.md">detailed documentation</a>.</p-->
-<p>Availability date: May 12, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
+-->
 
 ## April '26 release notes {#april-26-rn}
 
-<!--
-**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
-
-See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
--->
-
-New capabilities and improvements released earlier in April are announced with their availability date.
 
 **Release date**: April 28-29, 2026
 
 ### New capabilities {#april-26-features}
+
+The following capabilities were released in April 2026.
 
 <table>
 <thead>
@@ -374,7 +400,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 <tbody>
 <tr>
 <td>
-<p>Use the new <strong>Optimize</strong> node to run A/B tests or multi-armed bandit experiments to determine the best path to meet your business-centric KPIs. This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
+<p>Use the new <strong>Optimize</strong> node to run A/B tests or multi-armed bandit experiments to determine the best path to meet your business-centric KPIs. This tool allows you to test, vary, and customize communications, sequencing, and timing to best reach your customers.
 </p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p>As part of the General Availability, this release introduces <strong>experiment type</strong> selection (A/B or multi-armed bandit) and <strong>Scale the winner</strong> for unitary journeys.</p>
@@ -425,6 +451,8 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 ### Improvements {#april-26-improv}
 
+The following improvements were also released in April 2026.
+
 #### AI
 
 <!--
@@ -455,7 +483,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 #### Adobe Experience Manager Integrations
 
-* **Adobe Experience Manager Content fragment Varition Support** - You can select **Content Fragment variations** (for example language or channel variants) when inserting Adobe Experience Manager Content Fragments, with improved handling for locale and multilingual scenarios. [Read more](../integrations/aem-fragments.md#aem-variations)
+* **Adobe Experience Manager Content Fragment Variation Support** - You can select **Content Fragment variations** (for example language or channel variants) when inserting Adobe Experience Manager Content Fragments, with improved handling for locale and multilingual scenarios. [Read more](../integrations/aem-fragments.md#aem-variations)
 
   Previously released in Limited Availability, this capability is now available to all environments (General Availability).
 
@@ -473,7 +501,7 @@ This keeps recurring campaigns focused on net-new audiences (new sign-ups, newly
 
 #### Journeys
 
-* **Current journey payload size visible in journey properties** - The journey properties panel now displays the current size of the journey payload compared to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator helps you monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
+* **Current journey payload size visible in journey properties** - The journey properties panel now displays the current size of the journey payload compared to the configured limit — for example, *1.5 MB (out of 4 MB)*. This read-only indicator helps you monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded. [Read more](../building-journeys/journey-properties.md#journey-payload-size)
 
   Availability date: April 30, 2026
 

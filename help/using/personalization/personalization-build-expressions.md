@@ -150,6 +150,10 @@ In the navigation pane, additional features are available to help you build your
 
 * **[!UICONTROL Fragments]** - Leverage expression fragments that have been created or saved to the current sandbox. A fragment is a reusable component that can be referenced across [!DNL Journey Optimizer] campaigns and journeys. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble contents in an improved design process. [Learn how to use expression fragments for personalization](../personalization/use-expression-fragments.md)
 
+>[!TIP]
+>
+>Looking for ready-to-use expressions? The **[Personalization recipes](personalization-recipes.md)** page provides copy-paste patterns for the most common use cases: date formatting, countdown timers, conditional fallbacks, time-only display, and more.
+
 Once your personalization expression is ready, you need to have it validated by the personalization editor. Learn more in [this section](../personalization/personalization-build-expressions.md).
 
 ## Validation mechanisms {#validation-mechanisms}

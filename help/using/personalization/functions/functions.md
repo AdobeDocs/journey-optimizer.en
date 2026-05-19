@@ -458,6 +458,9 @@ Helpers are detailed on [this page](helpers.md).
         <td><a href="helpers.md#url-parameter-encryption-helper">Encrypt</a></td><td>Encrypts expression values for URL query parameters at render time using an active key from the sandbox registry </td>
     </tr>
     <tr>
+        <td><a href="helpers.md#url-function">Url</a></td><td>This function handles URLs in SMS message content; use it with <code>originalUrl</code> to shorten URL and <code>type='DEEPLINK'</code> to insert deeplinks</td>
+    </tr>
+    <tr>
         <td><a href="helpers.md#with">With</a></td><td>This function is used to change the evaluation token of template-part</td>
     </tr>
 </table>

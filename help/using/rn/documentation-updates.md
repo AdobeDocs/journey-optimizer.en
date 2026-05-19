@@ -15,6 +15,24 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2026 {#may-2026}
 
+* The **Key Terminology** page has been overhauled: six new terms added, a new **Conflict & prioritization terms** section introduced, and a new **When terms look similar** disambiguation guide added for four commonly confused term pairs. Adobe Experience Platform-specific terms have been removed and replaced with a note linking to the Adobe Experience Platform glossary. [Read more](../start/terminology.md)
+
+* The **Deeplinks** documentation has been expanded with a new **Authoring deeplinks** section detailing the two options available for email (Email Designer UI and Personalization Editor code) and the URL function syntax for SMS. The **Create an SMS message** page now includes a deeplink step in the content authoring flow. [Read more](../email/deeplinks.md)
+
+* The **Url** helper reference has been updated with a dedicated section in the Personalization documentation. [Read more](../personalization/functions/helpers.md#url)
+
+* A new **Personalization recipes** page has been added, providing ready-to-use personalization patterns for the most common use cases in Journey Optimizer. It covers date and time recipes (current date formatting, countdown to expiry, days-before calculations, time-only display, and weekend vs. weekday detection), string recipes (using `replaceAll` with variable assignment), and conditional fallback recipes (empty-field fallbacks using `isEmpty`). [Read more](../personalization/personalization-recipes.md)
+
+* The **Personalization syntax** documentation has been updated with an expanded introduction clarifying the difference between Handlebars (`{{...}}`) and PQL (`{%= ... %}`) syntaxes, including a usage table, guidance on escaping literal double quotes, and a new **PQL syntax rules for special attribute keys** section covering reserved keywords, hyphenated attribute keys, and numeric event IDs. The note on backtick escaping has also been corrected: hyphenated field names can be referenced directly in `{{...}}` blocks; only backtick syntax fails there. [Read more](../personalization/personalization-syntax.md)
+
+* The **Date Time functions** documentation has been enriched with new real-world examples: a countdown pattern for `dateDiff`, a weekend vs. weekday conditional for `dayOfWeek` (with a note on using the journey Condition activity for routing use cases), and a time-only display pattern combining `extractHours` and `extractMinutes` with a leading-zero guard. [Read more](../personalization/functions/dates.md)
+
+* The **String functions** documentation has been updated with a new example for `replaceAll` showing how to assign the result to a `{% let %}` variable for reuse across multiple expressions in the same template. [Read more](../personalization/functions/string.md#replace-all)
+
+* The **Array functions** documentation has been updated with a new **Iterate over an array** section documenting the Handlebars `{{#each}}` block helper, including a note clarifying that `{{#each}}` is supported in the personalization editor only and cannot be used inside journey condition activities. [Read more](../personalization/functions/arrays-list.md#each-loop)
+
+* The **Get started with datasets** page has been updated with a new **Inbound** entry in the system datasets section, documenting the _AJO Inbound Activity Event Dataset_. A note has been added to clarify that a profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Read more](../data/get-started-datasets.md#system-datasets)
+
 * The **Export message content** documentation has been expanded with a **Message Export FAQ** (personalized content, images and media, tracked links, PII, retention, use cases, etc.), and **sample exported JSON** examples for SMS and email. [Read more](../configuration/message-export.md)
 
 * A new **AJO Message Export schema** page documents every field in the AJO Message Export Dataset, with data types and hierarchy for the exported email and SMS payload. [Read more](../configuration/message-export-schema.md)

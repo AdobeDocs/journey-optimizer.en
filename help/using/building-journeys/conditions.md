@@ -226,3 +226,5 @@ To use an audience in a journey condition, follow these steps:
    >[!NOTE]
    >
    >Note that only the individuals with the **Realized** audience participation status will be considered as members of the audience. For more on how to evaluate an audience, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+
+➡️ **See it in practice:** Learn how to use time and day-of-week conditions to [send emails only on weekdays](weekday-email-uc.md).

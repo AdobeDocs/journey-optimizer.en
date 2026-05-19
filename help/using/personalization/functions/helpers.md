@@ -210,6 +210,30 @@ The following example lets you calculate the total sum of prices for products in
 {{sum}}
 ```
 
+## Url {#url}
+
+The `url` helper is used to track links, shorten URLs and insert [deeplinks](../../email/deeplinks.md) in your SMS message content.
+
+**Syntax**
+
+```sql
+{{url originalUrl='<your_url>' type='<DEEPLINK>' action='CLICK'}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+|---|---|
+| `originalUrl` | The URL to shorten. |
+| `type` | The link type. Use `DEEPLINK` to open a specific screen in a mobile app. |
+| `action` | The tracking action. Use `CLICK` to track clicks on the link. |
+
+**Example**
+
+```sql
+  {{url originalUrl='https://www.mybusiness.com/offers/summer-sale' type='DEEPLINK' action='CLICK'}}
+```
+
 ## Dataset lookup {#dataset-lookup}
 
 >[!AVAILABILITY]
