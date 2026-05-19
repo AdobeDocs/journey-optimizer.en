@@ -373,23 +373,17 @@ The following usability improvements are targeted for this release.
 
 #### Lists
 
-* **Bulk actions in lists** - You can now select multiple items at once in the **Campaigns**, **Fragments**, and **Templates** lists and perform bulk operations from a single action bar, including adding items to a package, moving them to a folder, editing tags, managing access, and archiving or deleting them. [Learn more about bulk actions in Campaigns](../campaigns/manage-campaigns.md#bulk-actions-campaigns) | [Fragments](../content-management/manage-fragments.md#bulk-actions-fragments) | [Templates](../content-management/access-content-templates.md#bulk-actions-templates)
+* **Bulk actions** - You can now select multiple items at once in the **Campaigns**, **Fragments**, and **Templates** lists and perform bulk operations from a single action bar, including adding items to a package, moving them to a folder, editing tags, managing access, and archiving or deleting them. [Learn more](../start/search-filter-categorize.md#bulk-actions)
 
   ![](assets/do-not-localize/bulk-actions-campaigns.png)
 
-* **Sorting in lists** - The **Campaigns**, **Fragments**, and **Templates** lists now support sorting by additional columns. Campaigns also support sorting and filtering by priority and channel configuration in the folders view. [Learn more](../campaigns/manage-campaigns.md#search-filter)
-
-* **Column resizing in lists** - Column widths in the **Fragments** and **Templates** lists are now resizable, so you can adjust the layout to fit the data you care about most. [Learn more](../content-management/manage-fragments.md#bulk-actions-fragments)
+* **Sorting and column resizing** - The **Campaigns**, **Fragments**, and **Templates** lists now support sorting by clicking any column header. In the Campaigns folders view, sorting and filtering by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** is also available. Column widths in the **Fragments** and **Templates** lists are also resizable — drag the column border to fit the data you care about most. [Learn more](../start/search-filter-categorize.md#filter-lists)
 
 #### Content authoring
 
-* **Inline editing of profile attributes** - You can now insert profile attribute expressions directly in the Email Designer without opening the full personalization editor. Type `{{` in any text field to open an inline autocomplete dropdown, then browse and select the attribute you need — it is inserted at the cursor position instantly. This capability is also available in the Push channel editor. [Learn more](../personalization/personalize.md#inline-personalization)
+* **Inline profile attribute editing** - You can now insert profile attribute expressions directly in the Email Designer without opening the full personalization editor. Type `{{` in any text field to open an inline autocomplete dropdown, then browse and select the attribute you need — it is inserted at the cursor position instantly. This capability is also available in the Push channel editor, where full URLs in link fields are also shown in a tooltip on hover so you can verify the complete link without truncation. [Learn more](../personalization/personalize.md#inline-personalization)
 
   ![](assets/do-not-localize/inline-profile-attributes.png)
-
-* **Tooltip for long links in push channel** - When configuring push notifications, full URLs in link fields are now shown in a tooltip on hover, letting you verify the complete link without truncation. [Learn more](../push/design-push.md#on-click-behavior)
-
-  ![](assets/do-not-localize/push-link-tooltip.png)
 
 #### Simulation & Preview
 

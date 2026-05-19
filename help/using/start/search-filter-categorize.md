@@ -74,6 +74,21 @@ In the lists, you can perform basic actions on each element. For example, you ca
 
 ![](assets/journey4.png)
 
+## Bulk actions {#bulk-actions}
+
+In the **Campaigns**, **Fragments**, and **Templates** lists, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen.
+
+The following operations are available:
+
+* **[!UICONTROL Add to package]** - Export selected items to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
+* **[!UICONTROL Move to folder]** - Move selected items into a folder.
+* **[!UICONTROL Edit tags]** - Edit the tags assigned to selected items. [Learn how to use tags →](#add-tags)
+* **[!UICONTROL Manage access]** - Apply access labels to selected items. [Learn more about object-level access control →](../administration/object-based-access.md)
+* **[!UICONTROL Archive]** - Archive selected items. Available for Fragments and Templates.
+* **[!UICONTROL Delete]** - Permanently delete selected items. Available for Campaigns only.
+
+![](assets/bulk-actions-fragments.png)
+
 ## Work with Unified tags {#tags}
 
 >[!CONTEXTUALHELP]

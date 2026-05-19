@@ -119,19 +119,9 @@ To easily navigate your content templates, use folders to organize them more eff
 
 ## Bulk actions {#bulk-actions-templates}
 
-To perform operations on multiple templates at once, select several items using the checkboxes in the list. A bulk action bar appears at the bottom of the screen with the following options:
-
-* **[!UICONTROL Add to package]** - Export selected templates to another sandbox. [Learn how to export objects →](#export)
-* **[!UICONTROL Move to folder]** - Move selected templates into a folder. [Learn more about folders →](#folders)
-* **[!UICONTROL Edit Tags]** - Edit tags on selected templates. [Learn how to use tags →](../start/search-filter-categorize.md#add-tags)
-* **[!UICONTROL Manage access]** - Apply access labels to selected templates. [Learn more about object-level access control →](../administration/object-based-access.md)
-* **[!UICONTROL Archive]** - Archive selected templates.
+You can select multiple templates at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and archiving. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
 
 You can also sort the template list by clicking any column header, and resize columns by dragging the column border to fit the data you need.
-
->[!NOTE]
->
->Bulk actions are available in the **Campaigns**, **Fragments**, and **Templates** inventories only.
 
 ## [!BADGE limited Availability]{type=Informative} display templates as thumbnails {#template-thumbnails}
 

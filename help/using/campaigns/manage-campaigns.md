@@ -129,20 +129,7 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 
 ### Bulk actions {#bulk-actions-campaigns}
 
-
-To perform operations on multiple campaigns at once, select several items using the checkboxes in the list. A bulk action bar appears at the bottom of the screen with the following options:
-
-* **[!UICONTROL Add to package]** - Add the selected campaigns to a package for export to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
-* **[!UICONTROL Move to folder]** - Move the selected campaigns into a folder.
-* **[!UICONTROL Edit tags]** - Edit the tags assigned to the selected campaigns. [Learn how to use tags →](../start/search-filter-categorize.md#add-tags)
-* **[!UICONTROL Manage access]** - Apply access labels to the selected campaigns. [Learn more about object-level access control →](../administration/object-based-access.md)
-* **[!UICONTROL Delete]** - Permanently delete the selected campaigns. [Learn more about deleting →](#delete-a-campaign)
-
-![](assets/do-not-localize/bulk-actions-campaigns.png)
-
->[!NOTE]
->
->Bulk actions are available in the **Campaigns**, **Fragments**, and **Templates** inventories only.
+You can select multiple campaigns at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and deleting. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
 
 ## Understanding campaign status {#statuses}
 
