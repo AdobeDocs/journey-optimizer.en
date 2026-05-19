@@ -104,6 +104,7 @@ The following capabilities are targeted for this release.
 <tr>
 <td>
 <p>You can now add Decision policies into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content for each audience member. Direct Mail decisioning also supports batch decisioning use cases, enabling you to export the corresponding offer items for every profile in a given Adobe Experience Platform audience.</p>
+<!--<p><img src="assets/do-not-localize/exd-dm.gif"></p>-->
 <p>Availability date: May 19, 2026</p>
 </td>
 </tr>
@@ -173,6 +174,7 @@ The following capabilities are targeted for this release.
 <td>
 <p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
 <p>This capability is available to all customers as a Public Beta.</p>
+<!--<p><img src="assets/do-not-localize/expression-assistant.gif"></p>-->
 <p>Availability date: May 19, 2026</p>
 </td>
 </tr>
@@ -218,11 +220,7 @@ The following improvements are targeted for this release.
   Availability date: May 19, 2026
 -->
 
-#### Configuration
 
-* **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
-
-  Availability date: May 19, 2026
 
 #### Decisioning
 
