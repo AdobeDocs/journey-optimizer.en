@@ -155,6 +155,7 @@ The following capabilities were released in May 2026.
 <tr>
 <td>
 <p>[!DNL Adobe Journey Optimizer] now uses AI to detect Decisioning rules and ranking formulas that can be simplified. In the inventory, a red indicator appears on any rule for which the AI has identified an optimization opportunity. Clicking the indicator displays the original expression alongside the AI-suggested version. From there, you can download a file to review how simulated profiles are evaluated by each version and confirm they behave identically, then replace the expression with the optimized one.</p>
+<p><img src="assets/do-not-localize/rule-ai.gif"></p>
 <p>For more information, refer to the <a href="../start/ai-features.md#decisioning-optimization">detailed documentation</a>.</p>
 <p>Availability date: May 5, 2026</p>
 </td>
