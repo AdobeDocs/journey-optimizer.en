@@ -155,6 +155,7 @@ The following capabilities were released in May 2026.
 <tr>
 <td>
 <p>[!DNL Adobe Journey Optimizer] now uses AI to detect Decisioning rules and ranking formulas that can be simplified. In the inventory, a red indicator appears on any rule for which the AI has identified an optimization opportunity. Clicking the indicator displays the original expression alongside the AI-suggested version. From there, you can download a file to review how simulated profiles are evaluated by each version and confirm they behave identically, then replace the expression with the optimized one.</p>
+<p><img src="assets/do-not-localize/rule-ai.gif"></p>
 <p>For more information, refer to the <a href="../start/ai-features.md#decisioning-optimization">detailed documentation</a>.</p>
 <p>Availability date: May 5, 2026</p>
 </td>
@@ -235,6 +236,22 @@ The following improvements were also released in May 2026.
 The following capabilities and enhancements are scheduled for release later in May. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 ### New capabilities {#coming-soon-features}
+
+<table>
+<thead>
+<tr>
+<th><strong>New Mobile Message channel and Enhanced RCS messaging</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>SMS, MMS, and RCS are now unified under a single <strong>Mobile Message</strong> action in Adobe Journey Optimizer, making it easier to manage all mobile message types from one place. As part of this update, you can now author rich media RCS messages, including images, carousels, and suggested actions, directly in Journey Optimizer through a new native authoring experience.</p>
+<p>Availability date: May 20, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
