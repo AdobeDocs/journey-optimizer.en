@@ -100,7 +100,7 @@ Each Orchestrated campaign in the list displays information such as the campaign
 
 In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter campaigns to display only those associated to a given channel or tag, or those created during a specific date range.
 
-You can also sort the list by clicking any column header. In the folders view, sorting and filtering by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** columns is also supported.
+You can also sort the list by clicking most column headers. In the folders view, sorting and filtering by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** columns is also supported.
 
 ## Campaign operations {#operations}
 

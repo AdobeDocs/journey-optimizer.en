@@ -121,7 +121,7 @@ To easily navigate your content templates, use folders to organize them more eff
 
 You can select multiple templates at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and archiving. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
 
-You can also sort the template list by clicking any column header, and resize columns by dragging the column border to fit the data you need.
+You can also sort the template list by clicking most column headers, and resize columns by dragging the column border to fit the data you need.
 
 ## [!BADGE limited Availability]{type=Informative} display templates as thumbnails {#template-thumbnails}
 
