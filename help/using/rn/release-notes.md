@@ -255,6 +255,12 @@ The following capabilities and enhancements are scheduled for release in the nex
 
 ### Improvements  {#coming-soon-improvements}
 
+#### Navigation
+
+* **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
+
+  Availability date: May 21, 2026
+  
 #### Orchestrated campaigns
 
 * **Add links in Enrichment activity** - The Add Link functionality is now available in the Enrichment Activity for Orchestrated Campaigns. This allows you to create a direct relationship between your working table data and your existing database tables.
