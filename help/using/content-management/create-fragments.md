@@ -146,7 +146,9 @@ To lock a visual fragment, follow the steps below.
 
 ![](assets/fragment-lock.png){width="70%" align="center"}
 
-Now when using this fragment in an email, it is locked and cannot be detached from the original fragment. New updates to the original locked fragment are automatically propagated. Learn more about [breaking inheritance](../email/use-visual-fragments.md#break-inheritance).
+Now when using this fragment in an email, it is locked and cannot be detached from the original fragment. [Learn more](../email/use-visual-fragments.md#locked-fragments)
+
+New updates to the original locked fragment are automatically propagated to all emails using it.
 
 ## Preview and publish the fragment {#publish}
 
