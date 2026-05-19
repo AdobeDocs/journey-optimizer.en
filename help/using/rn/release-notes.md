@@ -256,6 +256,23 @@ The following capabilities and enhancements are scheduled for release later in M
 <table>
 <thead>
 <tr>
+<th><strong>Automatic completion for non-recurring Read Audience journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Non-recurring <strong>Read Audience</strong> journeys now automatically transition to <strong>Stopped</strong> status once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.</p>
+<p>Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.</p>
+<p>Availability date: May 21, 2026</p>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey Simulation</strong><br/></th>
 </tr>
 </thead>
@@ -293,6 +310,13 @@ The following capabilities and enhancements are scheduled for release later in M
 #### Navigation
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
+
+  Availability date: May 21, 2026
+
+#### Journeys
+
+* **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding subType: "certificateCredential" to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID.
+
 
   Availability date: May 21, 2026
   
