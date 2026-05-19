@@ -93,3 +93,4 @@ Rule sets allow you to **group together multiple rules** and apply them to the j
 * **[Frequency capping by channel](channel-capping.md)** - Set channel-level frequency caps to prevent over-messaging.
 * **[Set quiet hours](quiet-hours.md)** - Define time-based exclusions for message delivery.
 * **[Conflict management tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Step-by-step video tutorials.
+* **[Journey Optimizer use cases](../building-journeys/jo-use-cases.md)** - Browse practical patterns, including frequency capping and journey suppression logic.

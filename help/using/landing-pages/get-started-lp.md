@@ -133,3 +133,5 @@ Creating and deploying a landing page follows this sequence:
 The video below shows how to create a subscription list, set up landing pages to opt in to or opt out from a service, integrate the opt-in/opt-out option to a message and configure relevant journeys.
 
 >[!VIDEO](https://video.tv.adobe.com/v/341280?quality=12&learn=on)
+
+➡️ **See it in practice:** Explore [landing page use cases](lp-use-cases.md) for step-by-step examples covering subscription management, confirmation emails, and data capture scenarios.
