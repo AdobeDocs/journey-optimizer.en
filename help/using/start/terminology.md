@@ -49,6 +49,8 @@ topic_v2:
 
 This reference guide defines the essential terms you'll encounter when using Adobe Journey Optimizer. Understanding these concepts helps you navigate the platform confidently and collaborate effectively with your team.
 
+For pairs of similar-sounding terms that are often confused — such as **Decisioning vs Decision Management** or **Content Cards vs In-App messages** — see [When terms look similar](#disambiguation) at the bottom of this page.
+
 >[!TIP]
 >
 >For detailed explanations of features and workflows, refer to the specific documentation sections linked throughout this guide.
@@ -67,7 +69,7 @@ This reference guide defines the essential terms you'll encounter when using Ado
 | Term | Definition |
 |------|------------|
 | **Journey** | A series of connected steps that guide customers through experiences with your brand over time. Each step occurs based on customer actions or time triggers, enabling sequential, personalized interactions. [Learn more](../building-journeys/journey.md) |
-| **Campaign** | A single communication or set of communications sent to a specific audience. Unlike journeys that unfold over time, campaigns deliver messages on a schedule or trigger, either immediately or at a specific time. [Learn more](../campaigns/get-started-with-campaigns.md) |
+| **Campaign** | A coordinated marketing action that delivers content to a specific audience across one or more channels. Unlike journeys, campaigns execute actions simultaneously. Journey Optimizer supports three campaign types: **Action campaigns** (scheduled batch sends), **API-triggered campaigns** (real-time, event-driven messaging via API), and **Orchestrated campaigns** (complex, multi-step workflows with a visual canvas). [Learn more](../campaigns/get-started-with-campaigns.md) |
 | **Event** | An action or occurrence that triggers or advances a journey. Events can be customer actions (making a purchase, abandoning a cart) or system events (date/time, data change). [Learn more](../event/about-events.md) |
 | **Channel** | The method used to communicate with customers: email, SMS, push notifications, in-app messages, web, or direct mail. Each channel requires specific configuration. [Learn more](../configuration/get-started-configuration.md) |
 
@@ -93,7 +95,8 @@ This reference guide defines the essential terms you'll encounter when using Ado
 
 | Term | Definition |
 |------|------------|
-| **Decision Management** | A feature that automatically selects the best content or offer for each customer based on real-time profile data, context, and business rules. [Learn more](../offers/get-started/starting-offer-decisioning.md) |
+| **Decisioning** | The current-generation decision framework in Journey Optimizer, recommended for new implementations. Offers schema-based item catalog management, flexible collection rules, reusable decision components, and experimentation capabilities. Available for Code-based Experience, Push, SMS, and Email (Limited Availability). [Learn more](../experience-decisioning/gs-experience-decisioning.md) |
+| **Decision Management** | The legacy offer decisioning feature in Journey Optimizer. Uses a central library of marketing offers and a rules-based decision engine that applies constraints to real-time customer profiles. Still supported for existing implementations, but new implementations should use Decisioning instead. Supports Email, In-App, Push, SMS, and Direct mail. [Learn more](../offers/get-started/starting-offer-decisioning.md) |
 | **Offer** | A marketing message, discount, or promotion that can be presented to customers. Offers include eligibility rules that determine which customers can receive them. [Learn more](../offers/offer-library/creating-personalized-offers.md) |
 | **Decision Policy** | A set of rules and strategies that determine which offer to show to which customer at what time, based on constraints like eligibility, priority, and capping rules. [Learn more](../experience-decisioning/create-decision.md) |
 
@@ -107,6 +110,64 @@ This reference guide defines the essential terms you'll encounter when using Ado
 >[!NOTE]
 >
 >For a comprehensive glossary of Adobe Experience Platform terms, refer to the [Adobe Experience Platform glossary](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html){target="_blank"}.
+
+## When terms look similar: disambiguation guide {#disambiguation}
+
+Adobe Journey Optimizer has grown over several years, which means some feature areas share similar names. Use the tables below to quickly identify which capability fits your needs.
+
+### Decisioning vs Decision Management {#decisioning-vs-dm}
+
+Both capabilities select and deliver offers, but they serve different stages of the product lifecycle.
+
+| | Decisioning | Decision Management |
+|---|---|---|
+| **Status** | Current — recommended for all new implementations | **Legacy** — still supported, but no longer recommended for new implementations |
+| **Introduced** | 2024 | 2021 |
+| **Item catalog** | Schema-based, flexible metadata | Centralized offer library |
+| **Supported channels** | Code-based Experience, Push, SMS, Email (Limited Availability) | Email, In-App, Push, SMS, Direct mail |
+| **Key differentiator** | Reusable decision components, experimentation, broader channel roadmap | Proven constraints engine; migrate to Decisioning for new projects |
+| **Get started** | [Decisioning](../experience-decisioning/gs-experience-decisioning.md) | [Decision Management](../offers/get-started/starting-offer-decisioning.md) |
+| **Migrating?** | [Migration guide](../experience-decisioning/migrate-to-decisioning.md) | — |
+
+### Campaign types {#campaign-types-disambiguation}
+
+Journey Optimizer offers three campaign types that are activated differently and serve distinct use cases.
+
+| | Action campaigns | API-triggered campaigns | Orchestrated campaigns |
+|---|---|---|---|
+| **Also known as** | Scheduled campaigns | — | — |
+| **Activation** | Manual or scheduled | External API call | Visual workflow canvas |
+| **Best for** | One-off or recurring batch sends (newsletters, promotions) | Real-time, event-driven messaging (order confirmations, password resets) | Complex, multi-step cross-channel programs |
+| **Personalization source** | Profile attributes | Profile attributes + API payload context | Profile attributes + relational data |
+| **Get started** | [Action campaigns](../campaigns/create-campaign.md) | [API-triggered campaigns](../campaigns/api-triggered-campaigns.md) | [Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) |
+
+### Frequency capping vs journey arbitration {#capping-vs-arbitration}
+
+Both are rule-set mechanisms under the Conflict & prioritization toolset, but they address different problems.
+
+| | Frequency capping | Journey arbitration |
+|---|---|---|
+| **Problem it solves** | A profile receives too many messages over time | A profile qualifies for multiple journeys simultaneously |
+| **Scope** | Per channel and communication type (Sales, Promotional, etc.) | Journey enrollment — number of concurrent journeys, or which journey wins |
+| **Mechanism** | Caps the number of messages per period; automatically excludes over-solicited profiles | Uses priority scores and capping rules to decide which journey a profile enters |
+| **Configured in** | Rule sets → Frequency capping | Rule sets → Journey capping & arbitration |
+| **Learn more** | [Set frequency capping by channel](../conflict-prioritization/channel-capping.md) | [Manage journey capping & arbitration](../conflict-prioritization/journey-capping.md) |
+
+### Content Cards vs In-App messages {#content-cards-vs-in-app}
+
+Both channels deliver messages inside a mobile or web application, but they have different rendering models and persistence behaviors.
+
+| | Content Cards | In-App messages |
+|---|---|---|
+| **Display model** | Persistent cards embedded in the app UI (feed, inbox, or custom surface) | Transient overlays, banners, or modals shown on top of the app |
+| **Persistence** | Stays visible until explicitly dismissed or expired | Disappears after the user interacts or closes it |
+| **Trigger** | SDK renders on load; rules control display and dismissal | A real-time event in the journey or campaign triggers delivery |
+| **Best for** | Ongoing promotions, loyalty status, persistent alerts | Onboarding tips, limited-time offers, transient notifications |
+| **Get started** | [Content Cards](../content-card/create-content-card.md) | [In-App messages](../in-app/get-started-in-app.md) |
+
+>[!NOTE]
+>
+>**Adobe Journey Optimizer vs Journey Optimizer B2B Edition:** These are two separate products in the same brand family. Adobe Journey Optimizer (this documentation) targets B2C customer journeys. Journey Optimizer B2B Edition is purpose-built for account-based marketing, working with buying groups and account audiences. If you are looking for B2B Edition documentation, visit the [Journey Optimizer B2B Edition guide](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview){target="_blank"}.
 
 ## Related Topics {#related-topics}
 
