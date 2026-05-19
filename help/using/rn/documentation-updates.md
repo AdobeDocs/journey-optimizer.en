@@ -15,7 +15,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2026 {#may-2026}
 
-* The **Key Terminology** page has been enriched with a new **When terms look similar** disambiguation guide covering four commonly confused term pairs: Decisioning vs Decision Management (including the Legacy status of Decision Management), the three campaign types (Action, API-triggered, and Orchestrated), frequency capping vs journey arbitration, and Content Cards vs In-App messages. The **Campaign** definition and the **Decision & offer terms** table have also been updated — Decisioning is now listed alongside Decision Management, which is explicitly marked as legacy. [Read more](../start/terminology.md#disambiguation)
+* The **Key Terminology** page has been overhauled: six new terms added, a new **Conflict & prioritization terms** section introduced, and a new **When terms look similar** disambiguation guide added for four commonly confused term pairs. Adobe Experience Platform-specific terms have been removed and replaced with a note linking to the Adobe Experience Platform glossary. [Read more](../start/terminology.md)
 
 * The **Deeplinks** documentation has been expanded with a new **Authoring deeplinks** section detailing the two options available for email (Email Designer UI and Personalization Editor code) and the URL function syntax for SMS. The **Create an SMS message** page now includes a deeplink step in the content authoring flow. [Read more](../email/deeplinks.md)
 

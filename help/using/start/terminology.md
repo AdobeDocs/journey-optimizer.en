@@ -51,20 +51,11 @@ This reference guide defines the essential terms you'll encounter when using Ado
 
 For pairs of similar-sounding terms that are often confused — such as **Decisioning vs Decision Management** or **Content Cards vs In-App messages** — see [When terms look similar](#disambiguation) at the bottom of this page.
 
->[!TIP]
+>[!NOTE]
 >
->For detailed explanations of features and workflows, refer to the specific documentation sections linked throughout this guide.
+>Adobe Journey Optimizer is built on **Adobe Experience Platform**. Many foundational concepts you will encounter — such as real-time customer profiles, sandboxes, schemas, and datasets — are Adobe Experience Platform concepts, not Journey Optimizer-specific ones. For definitions of those terms, refer to the [Adobe Experience Platform glossary](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html){target="_blank"}.
 
-## Core Platform Terms {#core-terms}
-
-| Term | Definition |
-|------|------------|
-| **Adobe Journey Optimizer** | An application for creating and delivering personalized messages to customers across channels (email, SMS, push notifications, web). It enables you to design customer journeys that respond to real-time customer actions. |
-| **Adobe Experience Platform** | The foundation of Adobe Journey Optimizer that collects and organizes all customer data in one place. It creates unified customer profiles that Journey Optimizer uses for personalization. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html){target="_blank"} |
-| **Real-time Customer Profile** | A unified, real-time view of each customer that combines data from multiple channels including online, offline, CRM, and third-party data. Each profile updates dynamically as customers interact with your brand. [Learn more](../audience/get-started-profiles.md) |
-| **Sandbox** | A separate workspace for testing and experimentation without affecting live customer communications. Adobe Journey Optimizer provides multiple sandboxes for development, testing, and production environments. [Learn more](../administration/sandboxes.md) |
-
-## Journey & Campaign Terms {#journey-campaign-terms}
+## Journey & campaign terms {#journey-campaign-terms}
 
 | Term | Definition |
 |------|------------|
@@ -73,7 +64,7 @@ For pairs of similar-sounding terms that are often confused — such as **Decisi
 | **Event** | An action or occurrence that triggers or advances a journey. Events can be customer actions (making a purchase, abandoning a cart) or system events (date/time, data change). [Learn more](../event/about-events.md) |
 | **Channel** | The method used to communicate with customers: email, SMS, push notifications, in-app messages, web, or direct mail. Each channel requires specific configuration. [Learn more](../configuration/get-started-configuration.md) |
 
-## Customer & Audience Terms {#customer-audience-terms}
+## Customer & audience terms {#customer-audience-terms}
 
 | Term | Definition |
 |------|------------|
@@ -106,8 +97,6 @@ For pairs of similar-sounding terms that are often confused — such as **Decisi
 
 | Term | Definition |
 |------|------------|
-| **Schema** | The structure that defines how data is organized in Adobe Experience Platform, including field names, data types, and relationships. Schemas ensure data consistency across systems. [Learn more](../data/get-started-schemas.md) |
-| **Dataset** | A collection of data (typically a table) that follows a specific schema. Datasets store customer data, interaction events, and other information used for personalization. [Learn more](../data/get-started-datasets.md) |
 | **Channel configuration** | The settings that define how messages are delivered for a specific channel — including sender details, subdomain, IP pool, and message type (marketing or transactional). Previously referred to as "surface" or "preset" in older documentation. [Learn more](../configuration/channel-surfaces.md) |
 | **Suppression list** | A list of email addresses and domains automatically excluded from message delivery due to hard bounces, spam complaints, or manual additions. Sending to suppressed addresses is blocked to protect deliverability and sender reputation. [Learn more](../reports/suppression-list.md) |
 
@@ -117,10 +106,6 @@ For pairs of similar-sounding terms that are often confused — such as **Decisi
 |------|------------|
 | **Rule set** | A named group of business rules applied to journeys and campaigns to govern messaging behavior. A rule set can combine frequency capping, journey entry limits, and quiet hours into a single reusable policy. [Learn more](../conflict-prioritization/rule-sets.md) |
 | **Frequency capping** | A rule within a rule set that limits how many messages a profile can receive within a given time period, per channel or communication type (Sales, Promotional, etc.). Profiles that exceed the cap are automatically excluded from delivery. [Learn more](../conflict-prioritization/channel-capping.md) |
-
->[!NOTE]
->
->For a comprehensive glossary of Adobe Experience Platform terms, refer to the [Adobe Experience Platform glossary](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html){target="_blank"}.
 
 ## When terms look similar: disambiguation guide {#disambiguation}
 
@@ -166,7 +151,7 @@ Both are rule-set mechanisms under the Conflict & prioritization toolset, but th
 | **Configured in** | Rule sets → Frequency capping | Rule sets → Journey capping & arbitration |
 | **Learn more** | [Set frequency capping by channel](../conflict-prioritization/channel-capping.md) | [Manage journey capping & arbitration](../conflict-prioritization/journey-capping.md) |
 
-### Content Cards vs In-App messages {#content-cards-vs-in-app}
+### Content cards vs in-app messages {#content-cards-vs-in-app}
 
 Both channels deliver messages inside a mobile or web application, but they have different rendering models and persistence behaviors.
 
@@ -182,7 +167,7 @@ Both channels deliver messages inside a mobile or web application, but they have
 >
 >**Adobe Journey Optimizer vs Journey Optimizer B2B Edition:** These are two separate products in the same brand family. Adobe Journey Optimizer (this documentation) targets B2C customer journeys. Journey Optimizer B2B Edition is purpose-built for account-based marketing, working with buying groups and account audiences. If you are looking for B2B Edition documentation, visit the [Journey Optimizer B2B Edition guide](https://experienceleague.adobe.com/en/docs/journey-optimizer-b2b/user/guide-overview){target="_blank"}.
 
-## Related Topics {#related-topics}
+## Related topics {#related-topics}
 
 * [Understanding how Journey Optimizer works](understanding-ajo.md) — See how journeys, campaigns, profiles, and channels fit together in the product architecture.
 * [Get started with decision capabilities](../experience-decisioning/gs-decision.md) — Compare Decisioning and Decision Management side by side and choose the right approach for your implementation.
