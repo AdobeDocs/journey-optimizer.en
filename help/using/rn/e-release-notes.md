@@ -4,6 +4,7 @@ product: journey optimizer
 title: Pre release notes for Journey Optimizer
 description: Adobe Journey Optimizer Pre Release notes
 feature: Release Notes
+hide: true
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 TQID: https://experienceleague.adobe.com/951PJzmmITN1nSUapVomlYnPws9pS0TosI1Gl3R9yL4
 product_v2:
@@ -112,32 +113,15 @@ The following capabilities are targeted for this release.
 <table>
 <thead>
 <tr>
-<th><strong>Content Advisor Selector</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now uses the <strong>Content Advisor selector</strong>, a unified modal for selecting both Experience Manager Assets and Content Fragments. The new selector supports browsing, searching, and filtering across all assets, includes Dynamic Media renditions, and incorporates enhanced user interface capabilities that allow you to easily add image renditions when dynamic assets are used.</p>
-<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Automatic completion for non-recurring Read Audience journeys</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Non-recurring <strong>Read Audience</strong> journeys now automatically stop once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.</p>
+<p>Non-recurring <strong>Read Audience</strong> journeys now automatically transition to <strong>Stopped</strong> status once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.</p>
+<p>Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.</p>
 <p>Availability date: May 19, 2026</p>
-</td>
 </tr>
 </tbody>
 </table>
@@ -195,40 +179,6 @@ The following capabilities are targeted for this release.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Journey Simulation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). With General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
-<p>Availability date: May 28, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>File-based targeting for orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Orchestrated campaigns now support loading a CSV or TXT file directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. This supports ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical. </p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: May 28, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 ### Improvements {#may-26-improv}
@@ -248,13 +198,6 @@ The following improvements are targeted for this release.
 -->
 
 #### Campaigns
-
-* **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
-
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
-
-  Availability date: May 19, 2026
 
 * **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
 
@@ -347,26 +290,6 @@ FEEDBACK FROM TYSON WAI - TW: Remove this release, it is not ready for May 19th-
   Availability date: May 19, 2026
 -->
 
-#### Orchestrated campaigns
-
-* **Add links in Enrichment activity** - The Add Link functionality is now available in the Enrichment Activity for Orchestrated Campaigns. This allows you to create a direct relationship between your working table data and your existing database tables.
-
-
-  Availability date: May 26, 2026
-
-* **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
-
-
-  Availability date: May 28, 2026
-
-#### Email
-
-* **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. 
-
-  Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
-
-
-  Availability date: May 29, 2026
 
 <!--
 # Pre-release notes {#e-release-notes}
