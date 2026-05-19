@@ -118,7 +118,6 @@ Both capabilities select and deliver offers, but they serve different stages of 
 | | Decisioning | Decision Management |
 |---|---|---|
 | **Status** | Current — recommended for all new implementations | **Legacy** — still supported, but no longer recommended for new implementations |
-| **Introduced** | 2024 | 2021 |
 | **Item catalog** | Schema-based, flexible metadata | Centralized offer library |
 | **Supported channels** | Code-based Experience, Push, SMS, Email (Limited Availability) | Email, In-App, Push, SMS, Direct mail |
 | **Key differentiator** | Reusable decision components, experimentation, broader channel roadmap | Proven constraints engine; migrate to Decisioning for new projects |
