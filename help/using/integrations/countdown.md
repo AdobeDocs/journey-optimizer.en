@@ -10,7 +10,7 @@ hide: true
 exl-id: 4c1d39c4-3154-4bec-ac3c-c2ead7164d69
 ---
 # Insert countdown timer {#countdown}
-
+ 
 Create urgency and maximize conversions with Dynamic Media countdown timers that update in real-time when recipients open your emails. This feature is ideal for flash sales, limited-time offers, and time-sensitive promotions.
 
 For example, as a marketer for a retail brand, you're running a 48-hour flash sale. By using the countdown timer in your promotional emails:

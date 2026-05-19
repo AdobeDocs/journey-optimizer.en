@@ -15,7 +15,7 @@ exl-id: de4f441e-c3a3-4759-a634-bc9029328ebb
 Keep the following in mind when using Content Fragments from [!DNL Adobe Experience Manager] in [!DNL Journey Optimizer]:
 
 * **Content fragment types**
-    * Simple Content Fragments, nested Content Fragments, and **Content Fragment variations** are supported. Choose the variation when you insert the fragment in [!DNL Journey Optimizer]. If you do not select a variation, the **Main** variation (the fragment's primary content in [!DNL Adobe Experience Manager]) is used.
+    * Simple Content Fragments, nested Content Fragments, and **Content Fragment variations** are supported. Choose the variation when you insert the fragment in [!DNL Journey Optimizer]. If you do not select a variation, the **Main** variation (the fragment's primary content in [!DNL Adobe Experience Manager]) is used. 
 
 * **Multilingual content**
     * Each variation must be authored, tagged, and published in [!DNL Adobe Experience Manager]. In [!DNL Journey Optimizer], select the fragment variation that matches each message language or locale.
