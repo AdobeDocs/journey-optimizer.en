@@ -220,60 +220,6 @@ You can insert your dynamic template directly into your content using the HTML c
 
 Once you have performed your tests and validated the content, you can send your message to your audience. 
 
-<!--
-## Personalization with text overlay
-
-Easily customize any dynamic media by replacing the existing text overlay with new text of your choice, allowing for seamless updates and personalization.
-
-In this example, our goal is to update the existing text overlay by replacing it with a new validity date and adding a personalization block, ensuring it is customized for each profile when they open their messages.
-
-1. Drag and drop an **[!UICONTROL HTML component]** into your content.
-
-1. Select **[!UICONTROL Show the source code]**.
-
-1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
-
-    You can also simply copy and paste your assets URL.
-
-1. Browse through your AEM assets and select the one you want to add to your content.
-
-1. Replace the overlay with the desired text.
-
-    Here we change the validity date from 31st December 2024 to the 1st July 2025.
-
-1. Add the required personalization fields to your image.
-
-1. Click **[!UICONTROL Save]**.
-
-Your content now includes your updated text overlay and personalization.
-
-## Add Dynamic media conditional content
-
-Enable conditional content in your dynamic media to better target your audience and deliver a more personalized experience.
-
-1. Drag and drop an **[!UICONTROL HTML component]** into your content.
-
-1. Select **[!UICONTROL Show the source code]**.
-
-1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
-
-    You can also simply copy and paste your assets URL.
-
-1. Browse through your AEM assets and select the one you want to add to your content.
-
-1. Once your dynamic media is inserted to your content, select **[!UICONTROL Enable conditional]** content from your HTML component toolbar to create your different user experiences. 
-
-1. From the Variant - 1, click **[!UICONTROL Select condition]** to fine tune your audience.
-
-1. Choose your condition or create a new one if needed and click **[!UICONTROL Select]**.
-
-    [Learn more about conditions](../personalization/create-conditions.md)
-
-1. Select your **[!UICONTROL Component]** and access the **[!UICONTROL Settings]** menu.
-
-1. In the **[!UICONTROL Custom Attributes]** menu, populate the Dynamic Media text and personalization fields to customize the content for your audience.
--->
-
 ## How-to video {#video}
 
 Learn how to integrate Adobe Experience Manager Dynamic Media with Adobe Journey Optimizer to enable real-time content updates and personalization.

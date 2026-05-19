@@ -5,26 +5,23 @@ title: Access Adobe Experience Manager Content Advisor
 description: Learn how to access and use Adobe Experience Manager Content Advisor to discover assets and content fragments using AI-powered semantic search in Adobe Journey Optimizer.
 role: User
 level: Beginner, Intermediate
-hide: true
 exl-id: 842d69e3-be7f-4a81-8161-6c6ecd571f95
 ---
-# Work with Adobe Experience Manager content advisor {#aem-content-advisor}
+# Work with Adobe Experience Manager Content Advisor {#aem-content-advisor}
 
->[!AVAILABILITY]
->
->Adobe Experience Manager Content Advisor is available in channel authoring workflows only.
+Adobe Experience Manager Content Advisor replaces deterministic discovery with standardized intent-driven discovery from a unified surface. It enables unified, AI-powered discovery of Assets, Dynamic media and Content Fragments directly within Journey Optimizer authoring workflows, improving marketer productivity and campaign efficiency.
 
-Adobe Experience Manager Content Advisor replaces deterministic discovery with standardized intent-driven discovery from a unified surface. It enables unified, AI-powered discovery of Assets and Content Fragments directly within Journey Optimizer authoring workflows, improving marketer productivity and campaign efficiency.
+➡️ [Learn more about Adobe Experience Manager Content Advisor in Adobe Experience Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications)
 
-## Available features
+## Available capabilities
 
 ### For Assets {#asset-features}
 
-Adobe Experience Manager Content Advisor provides the following asset features:
+Adobe Experience Manager Content Advisor provides the following asset capabilities:
 
 +++ AI semantic search
 
-Search for assets using natural language instead of exact keywords or file names. Describe what you need in plain language, for example "coffee in the mountains", and the AI finds contextually relevant assets based on meaning and content, not just text matches.
+Search for assets using natural language instead of exact keywords or file names. Describe what you need in plain language, for example, "coffee in the mountains", and the AI surfaces contextually relevant assets based on meaning and content, not just text matches. Multi-lingual search is also supported, so you can query in your preferred language and still find the right assets regardless of the language in which they were tagged or named.
 
 ![](assets/content-advisor-2.png){zoomable="yes"}
 
@@ -81,7 +78,7 @@ The buttons you see depend on your repository configuration:
 * **Both buttons**: Repository has both configurations and asset is both published and approved.
 +++
 
-### For content fragment {#content-fragment-features}
+### For Content Fragment {#content-fragment-features}
 
 Adobe Experience Manager Content Advisor provides the following Content Fragment features:
 
