@@ -488,7 +488,7 @@ solution: Journey Optimizer
     + [Customizable fragments](using/content-management/customizable-fragments.md)
     + [Manage fragments](using/content-management/manage-fragments.md)
     + {hide-from-toc} [Add contextual attributes to published fragments](using/content-management/manage-fragments-contextual-attributes.md)
-  + Dynamic content {#dynamic} 
+  + Dynamic content {#dynamic}
     + [Dynamic content](/help/rp_landing_pages/dynamic-landing-page.md)
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)

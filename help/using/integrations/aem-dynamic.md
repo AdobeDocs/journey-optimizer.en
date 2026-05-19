@@ -40,7 +40,7 @@ topic_v2:
 # Work with dynamic media {#aem-dynamic}
 
 ## Get started with dynamic media {#gs-aem-dynamic}
- 
+
 The Asset selector now supports Dynamic media allowing you to seamlessly select and use approved dynamic media renditions within Journey Optimizer. Changes made to assets in Adobe Experience Manager are instantly reflected in your Journey Optimizer content, ensuring the most up-to-date versions are always in use without requiring manual updates.
 
 Note that this integration is only available for customers using Dynamic Media Manager as a Cloud Service.
