@@ -12,7 +12,7 @@ solution: Journey Optimizer
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
-  + {hide-from-toc} [Early release notes](using/rn/e-release-notes.md)
+  + [Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -99,6 +99,7 @@ solution: Journey Optimizer
   + Build expressions {#building-advanced-conditions-journeys}
     + [Build expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
     + [Work with the advanced expression editor](using/building-journeys/expression/expressionadvanced.md)
+    + {hide-from-toc} [Expression assistant](using/building-journeys/expression/expression-agent.md)
     + Syntax {#syntax}
       + [Syntax](/help/rp_landing_pages/syntax-landing-page.md)
       + [Advanced expression editor syntax](using/building-journeys/expression/generalities.md)
@@ -271,19 +272,19 @@ solution: Journey Optimizer
     + [Get started with emails](using/email/get-started-email.md)
     + [Create an email](using/email/create-email.md)
     + Design your email content {#design-email}
-      + [Design your email content](/help/rp_landing_pages/design-email-landing-page.md)
+      + {hide-from-toc} [Design your email content](/help/rp_landing_pages/design-email-landing-page.md)
       + {hide-from-toc} [Design message content](using/start/message-content-design.md)
       + [Get started with email design](using/email/get-started-email-design.md)
       + Start creating content {#start-creating-content}
-        + [Start creating content](/help/rp_landing_pages/start-creating-content-landing-page.md)
+        + {hide-from-toc} [Start creating content](/help/rp_landing_pages/start-creating-content-landing-page.md)
         + [Design content from scratch](using/email/content-from-scratch.md)
         + [Import your content](using/email/existing-content.md)
         + [Code your own content](using/email/code-content.md)
         + [Use email templates](using/email/use-email-templates.md)
         + [Leverage email themes](using/email/apply-email-themes.md)
         + [Attach PDF files to your emails](using/email/pdf-attachments.md)
-      + Design your content {#add-content}
-        + [Design your content](/help/rp_landing_pages/add-content-landing-page.md)
+      + Author your content {#add-content}
+        + {hide-from-toc} [Design your content](/help/rp_landing_pages/add-content-landing-page.md)
         + [Use content components](using/email/content-components.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
@@ -294,7 +295,7 @@ solution: Journey Optimizer
         + [Add metadata](using/email/email-metadata.md)
         + [Edit with the advanced HTML editor](using/email/email-expert-mode.md)
       + Edit style {#edit-style}
-        + [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)
+        + {hide-from-toc} [Edit style](/help/rp_landing_pages/edit-style-landing-page.md)
         + [Get started with email style](using/email/get-started-email-style.md)
         + [Edit background settings](using/email/backgrounds.md)
         + [Adjust vertical alignment & padding](using/email/alignment-and-padding.md)
@@ -302,16 +303,16 @@ solution: Journey Optimizer
         + [Add custom CSS](using/email/custom-css.md)
         + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
-    + [Manage email opt-out](using/email/email-opt-out.md)
     + Configure email channel {#configure-email}
-      + [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
+      + {hide-from-toc} [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
       + [Get started with email configuration](using/email/get-started-email-config.md)
       + [Define email configuration settings](using/email/email-settings.md)
       + [Enable List unsubscribe](using/email/list-unsubscribe.md)
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
-      + [Configure deeplinks in emails](using/email/deeplinks.md)
+    + [Use and configure deeplinks](using/email/deeplinks.md)
+    + [Manage email opt-out](using/email/email-opt-out.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
@@ -988,3 +989,4 @@ solution: Journey Optimizer
     + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)
+
