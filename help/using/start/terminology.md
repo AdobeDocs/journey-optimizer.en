@@ -90,6 +90,8 @@ For pairs of similar-sounding terms that are often confused — such as **Decisi
 | **Content Template** | A reusable message design that can be used across multiple campaigns and journeys to maintain brand consistency and accelerate content creation. [Learn more](../content-management/content-templates.md) |
 | **Fragment** | A reusable content block (such as a header, footer, or promotional banner) that can be used across multiple messages to ensure consistency and enable centralized updates. [Learn more](../content-management/fragments.md) |
 | **Landing Page** | A standalone web page where customers can opt-in or opt-out from communications, subscribe to services, or provide information through online forms. [Learn more](../landing-pages/get-started-lp.md) |
+| **Content experiment** | An A/B testing framework that splits an audience into random groups and delivers different message variants (content, subject line, or offer) to each group, then identifies the best-performing variant based on a defined success metric. [Learn more](../content-management/get-started-experiment.md) |
+| **Experimentation** | The broader capability in Journey Optimizer for testing and optimizing decisions: content experiments test message variants in campaigns and journeys, while decisioning experimentation tests offer selection strategies. Both use statistical analysis to identify winning approaches. [Learn more](../content-management/get-started-experiment.md) |
 
 ## Decision & offer terms {#decision-terms}
 
@@ -106,6 +108,15 @@ For pairs of similar-sounding terms that are often confused — such as **Decisi
 |------|------------|
 | **Schema** | The structure that defines how data is organized in Adobe Experience Platform, including field names, data types, and relationships. Schemas ensure data consistency across systems. [Learn more](../data/get-started-schemas.md) |
 | **Dataset** | A collection of data (typically a table) that follows a specific schema. Datasets store customer data, interaction events, and other information used for personalization. [Learn more](../data/get-started-datasets.md) |
+| **Channel configuration** | The settings that define how messages are delivered for a specific channel — including sender details, subdomain, IP pool, and message type (marketing or transactional). Previously referred to as "surface" or "preset" in older documentation. [Learn more](../configuration/channel-surfaces.md) |
+| **Suppression list** | A list of email addresses and domains automatically excluded from message delivery due to hard bounces, spam complaints, or manual additions. Sending to suppressed addresses is blocked to protect deliverability and sender reputation. [Learn more](../reports/suppression-list.md) |
+
+## Conflict & prioritization terms {#conflict-terms}
+
+| Term | Definition |
+|------|------------|
+| **Rule set** | A named group of business rules applied to journeys and campaigns to govern messaging behavior. A rule set can combine frequency capping, journey entry limits, and quiet hours into a single reusable policy. [Learn more](../conflict-prioritization/rule-sets.md) |
+| **Frequency capping** | A rule within a rule set that limits how many messages a profile can receive within a given time period, per channel or communication type (Sales, Promotional, etc.). Profiles that exceed the cap are automatically excluded from delivery. [Learn more](../conflict-prioritization/channel-capping.md) |
 
 >[!NOTE]
 >
@@ -127,19 +138,21 @@ Both capabilities select and deliver offers, but they serve different stages of 
 | **Supported channels** | Code-based Experience, Push, SMS, Email (Limited Availability) | Email, In-App, Push, SMS, Direct mail |
 | **Key differentiator** | Reusable decision components, experimentation, broader channel roadmap | Proven constraints engine; migrate to Decisioning for new projects |
 | **Get started** | [Decisioning](../experience-decisioning/gs-experience-decisioning.md) | [Decision Management](../offers/get-started/starting-offer-decisioning.md) |
-| **Migrating?** | [Migration guide](../experience-decisioning/migrate-to-decisioning.md) | — |
+
+If you are currently using Decision Management and want to switch, refer to the [migration guide](../experience-decisioning/migrate-to-decisioning.md).
 
 ### Campaign types {#campaign-types-disambiguation}
 
 Journey Optimizer offers three campaign types that are activated differently and serve distinct use cases.
 
-| | Action campaigns | API-triggered campaigns | Orchestrated campaigns |
+| | Action campaigns (Scheduled campaigns) | API-triggered campaigns | Orchestrated campaigns |
 |---|---|---|---|
-| **Also known as** | Scheduled campaigns | — | — |
 | **Activation** | Manual or scheduled | External API call | Visual workflow canvas |
 | **Best for** | One-off or recurring batch sends (newsletters, promotions) | Real-time, event-driven messaging (order confirmations, password resets) | Complex, multi-step cross-channel programs |
 | **Personalization source** | Profile attributes | Profile attributes + API payload context | Profile attributes + relational data |
 | **Get started** | [Action campaigns](../campaigns/create-campaign.md) | [API-triggered campaigns](../campaigns/api-triggered-campaigns.md) | [Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) |
+
+For a full overview of all campaign types and when to use each, refer to [Get started with campaigns](../campaigns/get-started-with-campaigns.md).
 
 ### Frequency capping vs journey arbitration {#capping-vs-arbitration}
 
@@ -171,6 +184,9 @@ Both channels deliver messages inside a mobile or web application, but they have
 
 ## Related Topics {#related-topics}
 
-* [Understanding how Journey Optimizer works](understanding-ajo.md)
-* [Get started with the user interface](user-interface.md)
-* [Choose your role and learning path](quick-start.md)
+* [Understanding how Journey Optimizer works](understanding-ajo.md) — See how journeys, campaigns, profiles, and channels fit together in the product architecture.
+* [Get started with decision capabilities](../experience-decisioning/gs-decision.md) — Compare Decisioning and Decision Management side by side and choose the right approach for your implementation.
+* [Get started with journeys](../building-journeys/journey.md) — Learn how to build event-triggered, sequential customer experiences step by step.
+* [Get started with campaigns](../campaigns/get-started-with-campaigns.md) — Understand the three campaign types (Action, API-triggered, Orchestrated) and when to use each.
+* [Conflict management & prioritization](../conflict-prioritization/gs-conflict-prioritization.md) — Learn how to use rule sets, frequency capping, priority scores, and quiet hours to avoid over-messaging.
+* [Get started with communication channels](../channels/gs-channels.md) — Browse all available channels, their prerequisites, and how to configure them.
