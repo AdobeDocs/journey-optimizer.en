@@ -154,3 +154,6 @@ Now that you have an understanding of what orchestrated campaigns are, it's time
 * **[Guardrails and limitations](guardrails.md)** - Review important guardrails, limitations, and best practices to ensure optimal campaign performance.
 * **[Frequently Asked Questions](orchestrated-campaigns-faq.md)** - Find answers to common questions about Orchestrated campaigns features, capabilities, and use cases.
 * **[Orchestrated campaign tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-campaigns/orchestrated-campaigns/introduction-to-orchestrated-campaigns){target="_blank"}** - Explore step-by-step video tutorials covering features and best practices.
+* **[Engage customers by browsing activity](engage-customers-uc.md)** - Re-engage profiles who browsed but did not purchase, using a multi-step orchestrated campaign.
+* **[Notify users about product availability](product-availability-uc.md)** - Alert customers when a product they showed interest in is back in stock.
+* **[Send wishlist item updates](wishlist-uc.md)** - Trigger personalized messages when wishlist items go on sale or become available.
