@@ -8,6 +8,7 @@ solution: Journey Optimizer
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: "Journey Optimizer"
+usetq: true
 feature-set: Journey Optimizer
 landing-page-name: journey-optimizer
 landing-page-breadcrumb-title: Journey Optimizer
