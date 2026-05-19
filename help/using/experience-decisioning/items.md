@@ -28,6 +28,16 @@ To create a decision item, navigate to **[!UICONTROL Decisioning]** > **[!UICONT
 >title="Define the decision item's priority"
 >abstract="If a profile qualifies for multiple items, the priority enables to compare this decision item to others. A higher priority grants the item precedence over others."
 
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_ajo_fragment"
+>title="Map a Journey Optimizer content fragment to this decision item"
+>abstract="Attach a content fragment from your Journey Optimizer fragment library."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_aem_fragment"
+>title="Map an AEM content fragment to this decision item"
+>abstract="By attaching a content fragment to this decision item, you can leverage your content directly from Adobe Experience Manager."
+
 Start by defining the decision item's standard and custom attributes :
 
 ![](assets/item-attributes.png)
