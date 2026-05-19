@@ -505,7 +505,7 @@ solution: Journey Optimizer
       + {hide-from-toc} [Configure your repository for Content Fragments](using/integrations/aem-admin-settings.md)
       + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
       + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
-    + [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
+    + [Work with Experience Manager Content Advisor](using/integrations/aem-content-advisor.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
