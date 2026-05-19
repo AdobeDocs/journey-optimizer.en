@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Opt-out management for text messages
+title: Opt-out management for Mobile messages
 description: Learn how to manage opt-out with SMS/MMS messages
 feature: SMS
 topic: Content Management
@@ -34,13 +34,13 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 ---
-# Opt-out management for text messages {#sms-opt-out}
+# Opt-out management for Mobile messages {#sms-opt-out}
 
 In accordance with the industry standards and regulations, all SMS marketing messages must contain a way for the recipients to easily unsubscribe. [Learn more about privacy & opt-out management](../privacy/opt-out.md)
 
 >[!IMPORTANT]
 >
->Text message communications may be subject to various legal compliance requirements depending on their nature, the location from where you are sending your text messages, and the location of your recipients. While Adobe Journey Optimizer handles messages on short codes, long codes, and toll-free numbers as detailed below, consult your legal counsel to ensure that your text messaging communications conform to all applicable legal compliance requirements.
+>Mobile message communications may be subject to various legal compliance requirements depending on their nature, the location from where you are sending your Mobile messages, and the location of your recipients. While Adobe Journey Optimizer handles messages on short codes, long codes, and toll-free numbers as detailed below, consult your legal counsel to ensure that your Mobile messaging communications conform to all applicable legal compliance requirements.
 >
 
 ## Native inbound keywords {#sms-native-keywords}
@@ -63,7 +63,7 @@ No steps are required to ensure that SMS opt-out capabilities are working in Ado
 
 If you define custom opt-out keywords in your SMS API credentials, they override the default inbound keywords listed above. To keep the default keywords, such as STOP, QUIT, CANCEL, END, and UNSUBSCRIBE, functional, include them explicitly along with your custom keywords in the Opt-Out Keywords field of your SMS configuration. Otherwise, only your custom keywords are recognized, and the default keywords no longer trigger opt-out actions.
 
-Note that if a customer responds STOP to a text message, the provider blocks all subsequent SMS from that specific sender ID (short code or long number), including transactional messages. To ensure uninterrupted delivery of transactional SMS, use a separate sender ID that has not been previously opted out.
+Note that if a customer responds STOP to a Mobile message, the provider blocks all subsequent SMS from that specific sender ID (short code or long number), including transactional messages. To ensure uninterrupted delivery of transactional SMS, use a separate sender ID that has not been previously opted out.
 
 
 >[!NOTE]
