@@ -42,7 +42,7 @@ topic_v2:
 # Work with Adobe Experience Manager Content Fragments {#aem-fragments}
 
 >[!BEGINSHADEBOX]
-
+ 
 The existing **Asset Selector** and **Content Fragment selector** experiences in Adobe Journey Optimizer workflows are being replaced by **Content Advisor**. Content Advisor provides an AI-powered, unified interface for discovering and selecting Assets, Content Fragments, and Dynamic Media directly within your AJO authoring workflows. Existing integrations will continue to work during the transition period.
 
 >[!ENDSHADEBOX]
