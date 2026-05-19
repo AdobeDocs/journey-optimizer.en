@@ -232,7 +232,7 @@ The following improvements were also released in May 2026.
 
 ## Coming soon {#coming-soon}
 
-The following capabilities and enhancements are scheduled for release in the next few days. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
+The following capabilities and enhancements are scheduled for release later in May. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 ### New capabilities {#coming-soon-features}
 
@@ -297,5 +297,11 @@ The following capabilities and enhancements are scheduled for release in the nex
 
   Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
 
+
+  Availability date: May 29, 2026
+
+  #### Configuration
+
+* **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
 
   Availability date: May 29, 2026
