@@ -47,6 +47,12 @@ topic_v2:
 ---
 # Create and manage assets with [!DNL Experience Manager Assets]{#experience-manager-assets}
 
+>[!BEGINSHADEBOX]
+
+The existing **Asset Selector** and **Content Fragment selector** experiences in Adobe Journey Optimizer workflows are being replaced by **Content Advisor**. Content Advisor provides an AI-powered, unified interface for discovering and selecting Assets, Content Fragments, and Dynamic Media directly within your AJO authoring workflows. Existing integrations will continue to work during the transition period.
+
+>[!ENDSHADEBOX]
+
 ## Get started with [!DNL Experience Manager Assets] {#get-started-assets}
 
 Bring marketing and creative workflows together using **[!DNL Adobe Experience Manager Assets]**. Natively integrated with **[!DNL Adobe Journey Optimizer]**, access **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Service]** to store, manage, discover and distribute digital assets. It provides a single, centralized repository of assets that you can use to populate your messages.
