@@ -8,7 +8,7 @@ level: Beginner, Intermediate
 exl-id: 842d69e3-be7f-4a81-8161-6c6ecd571f95
 ---
 # Work with Adobe Experience Manager Content Advisor {#aem-content-advisor}
- 
+  
 Adobe Experience Manager Content Advisor replaces deterministic discovery with standardized intent-driven discovery from a unified surface. It enables unified, AI-powered discovery of Assets, Dynamic media and Content Fragments directly within Journey Optimizer authoring workflows, improving marketer productivity and campaign efficiency.
 
 ➡️ [Learn more about Adobe Experience Manager Content Advisor in Adobe Experience Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications)
