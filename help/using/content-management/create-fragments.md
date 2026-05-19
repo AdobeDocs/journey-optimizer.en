@@ -124,6 +124,30 @@ When your content is ready, click the **[!UICONTROL Save]** button.
     
 The fragment is created and added to the fragment list with the **[!UICONTROL Draft]** status. You can preview it and publish it to make it available in journeys and campaigns.
 
+### Lock a visual fragment {#lock-visual-fragment}
+
+If you are creating or editing a visual fragment, you can lock it to prevent editors from modifying or detaching it when used in emails.
+
+Selecting this option ensures the fragment stays synchronized wherever it is used, helping enforce brand, maintain consistency and comply with legal requirements.
+
+To lock a visual fragment, follow the steps below.
+
+1. In the fragment content edition screen, go to the **[!UICONTROL Settings]** tab.
+
+1. By default, the fragment is unlocked. Select **[!UICONTROL Prevent inheritance from being broken]** to lock the fragment.
+
+1. Click **[!UICONTROL Confirm]**.
+
+    >[!NOTE]
+    >
+    >Changes apply to future usages only. Existing emails using this fragment are not modified.
+    >
+    >This setting can be updated at any time.
+
+![](assets/fragment-lock.png){width="70%" align="center"}
+
+Now when using this fragment in an email, it is locked and cannot be detached from the original fragment. New updates to the original locked fragment are automatically propagated. Learn more about [breaking inheritance](../email/use-visual-fragments.md#break-inheritance).
+
 ## Preview and publish the fragment {#publish}
 
 >[!NOTE]

@@ -181,3 +181,15 @@ To break inheritance, follow the steps below:
     ![](assets/fragment-break-inheritance.png)
 
 1. That fragment becomes a standalone element that is not linked anymore to the original fragment. Edit it as any other content component in your content. [Learn more](content-components.md)
+
+### Locked fragments {#locked-fragments}
+
+If the fragment was locked by its author, the unlock icon is greyed out and cannot be used to break inheritance.
+
+Locked fragments remain synchronized everywhere they appear, preventing local edits that could break brand standards or compliance requirements.
+
+![](assets/fragment-locked.png)
+
+You can unlock the fragment at any time by resetting its behavior to **[!UICONTROL Allow inheritance to be broken]** in the fragment settings.
+
+Learn how to lock or unlock a fragment in [this section](../content-management/create-fragments.md#lock-visual-fragment).
