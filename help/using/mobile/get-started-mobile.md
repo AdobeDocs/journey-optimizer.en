@@ -60,7 +60,7 @@ Use [!DNL Journey Optimizer] to send mobile messages to your customers across th
 
 Mobile messages can be created and sent in a journey or in a campaign using the Mobile message action:
 
-* In a **Journey**: Add a Mobile message action to your journey, define basic settings, then compose your content in the Mobile message Actions pane on the right. [Learn how to create a journey](../building-journeys/journey-gs.md) 
+* In a **Journey**: Add a Mobile message action to your journey, define basic settings, then compose your content in the Mobile message Actions pane on the right. [Learn how to create a journey](../building-journeys/journey-gs.md)
 
 * In a **Campaign**:Create a campaign, select Mobile message as your action, define basic settings, then edit the message content. Learn how to create [an action campaign](../campaigns/campaign-action.md#action-campaign-action) | [an API-triggered campaign](../campaigns/api-triggered-campaigns.md) | [an orchestrated campaign](../orchestrated/create-orchestrated-campaign.md#create)
 

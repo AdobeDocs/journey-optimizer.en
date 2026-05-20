@@ -15,7 +15,7 @@ Inbound SMS keywords can be stored in a profile-enabled custom dataset. The conf
 >
 >If no custom dataset is configured, inbound keywords are stored in the system _AJO Inbound Activity Event Dataset_ by default. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Learn more about system datasets](../data/get-started-datasets.md#system-datasets)
 
-For background on schemas, field groups, and datasets, refer to the following Adobe Experience Platform documentation: 
+For background on schemas, field groups, and datasets, refer to the following Adobe Experience Platform documentation:
 
 * [XDM System overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}
 * [Basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html){target="_blank"}

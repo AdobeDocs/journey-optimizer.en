@@ -33,7 +33,7 @@ topic_v2:
 ---
 # Configure Infobip provider {#sms-configuration-infobip}
 
-By integrating Infobip with Adobe Journey Optimizer, you can deliver text messages to your profiles as part of your journeys and campaigns. 
+By integrating Infobip with Adobe Journey Optimizer, you can deliver text messages to your profiles as part of your journeys and campaigns.
 
 To configure Infobip as your SMS provider, follow the steps below:
 

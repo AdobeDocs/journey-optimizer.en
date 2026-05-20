@@ -69,7 +69,7 @@ Browse the tabs below to learn how to add a Mobile message in a campaign or a jo
     >
     >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
-1. Select **[!UICONTROL Mobile message]** as the action type and click **[!UICONTROL Add]**. 
+1. Select **[!UICONTROL Mobile message]** as the action type and click **[!UICONTROL Add]**.
 
     ![](assets/sms_create_1.png)
 
