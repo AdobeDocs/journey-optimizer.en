@@ -138,6 +138,8 @@ solution: Journey Optimizer
   + {hide-from-toc} [Create challenges](using/loyalty-challenges/create-challenges.md)
   + {hide-from-toc} [Create tasks](using/loyalty-challenges/create-tasks.md)
   + {hide-from-toc} [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
+  + {hide-from-toc} [Configure the loyalty program](using/loyalty-challenges/loyalty-admin.md)
+  + {hide-from-toc} [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
