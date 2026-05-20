@@ -71,6 +71,23 @@ The following capabilities were released in May 2026.
 <table>
 <thead>
 <tr>
+<th><strong>New Mobile Message channel and Enhanced RCS messaging</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>SMS, MMS, and RCS are now unified under a single <strong>Mobile Message</strong> action in Adobe Journey Optimizer, making it easier to manage all mobile message types from one place. As part of this update, you can now author rich media RCS messages, including images, carousels, and suggested actions, directly in Journey Optimizer through a new native authoring experience.</p>
+<p>For more information, refer to the <a href="../mobile/get-started-mobile.md">detailed documentation</a>.</p>
+<p>Availability date: May 20, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Chained orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
@@ -271,22 +288,6 @@ The following improvements were also released in May 2026.
 The following capabilities and enhancements are scheduled for release later in May. **Information is subject to change**. Updated links, screens, and documentation will be shared once these updates are live in production.
 
 ### New capabilities {#coming-soon-features}
-
-<table>
-<thead>
-<tr>
-<th><strong>New Mobile Message channel and Enhanced RCS messaging</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>SMS, MMS, and RCS are now unified under a single <strong>Mobile Message</strong> action in Adobe Journey Optimizer, making it easier to manage all mobile message types from one place. As part of this update, you can now author rich media RCS messages, including images, carousels, and suggested actions, directly in Journey Optimizer through a new native authoring experience.</p>
-<p>Availability date: May 20, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
