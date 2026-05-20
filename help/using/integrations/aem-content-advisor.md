@@ -51,6 +51,12 @@ View detailed metadata and properties for any asset using the **Info** icon. Thi
 
 +++
 
++++ Cross-organization repository access
+
+Discover and select assets from repositories across organizations to which you have access. This capability allows you to browse and use assets stored in repositories belonging to different organizations, providing broader access to your available asset library without leaving the Journey Optimizer authoring workflow.
+
++++
+
 +++ Dynamic Media panel
 
 Access dynamic renditions, smart crops, and on-the-fly modifications based on repository configuration.
