@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure the SMS configuration
-description: Learn how to configure your SMS/MMS configuration to send text messages with Journey Optimizer
+description: Learn how to configure your SMS/RCS/MMS configuration to send Mobile messages with Journey Optimizer
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
@@ -40,8 +40,8 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_sms_type"
 >title="Define the message category"
->abstract="Select the type of text messages using this configuration: Marketing for promotional messages, which require user consent, or Transactional for non-commercial messages, such as password reset."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Opt-out in marketing text messages"
+>abstract="Select the type of Mobile messages using this configuration: Marketing for promotional messages, which require user consent, or Transactional for non-commercial messages, such as password reset."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Opt-out in marketing Mobile messages"
 
 Once your Mobile message channel has been configured, you must create a channel configuration to be able to send SMS, RCS and MMS messages from **[!DNL Journey Optimizer]**.  
 
@@ -80,7 +80,7 @@ To create a channel configuration, follow these steps:
 
     >[!NOTE]
     >
-    >To be able to select a subdomain, make sure you have previously configured at least one SMS/MMS subdomain. [Learn how](mobile-subdomains.md)
+    >To be able to select a subdomain, make sure you have previously configured at least one SMS/RCS/MMS subdomain. [Learn how](mobile-subdomains.md)
 
 1. In the **[!UICONTROL Execution dimension]** section, use the **[!UICONTROL SMS Execution Field]** to select amongst the profile attributes the phone number that you want to use in priority if several numbers are available in the database. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
 
@@ -113,4 +113,4 @@ To create a channel configuration, follow these steps:
 
     ![](assets/preset-active.png)
 
-You are now ready to send text messages with Journey Optimizer.
+You are now ready to send Mobile messages with Journey Optimizer.

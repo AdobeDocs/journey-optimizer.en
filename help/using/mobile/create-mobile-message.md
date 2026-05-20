@@ -44,24 +44,24 @@ topic_v2:
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
->title="Create a text message"
+>title="Create a Mobile message"
 >abstract="To create a Mobile message, add an SMS action in a journey or a campaign and start personalizing it with the personalization editor."
 
 >[!AVAILABILITY]
 >
 >RCS is not a HIPAA-Ready Service and must not be used to collect, store, or process any sensitive personal data, including permitted health data, e.g. personal health information, that your organization may otherwise be permitted to process in Journey Optimizer.
 
-You can design and send text (SMS), rich communication (RCS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an Mobile message action in a journey or a campaign, and then define the content of the text message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your text messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
+You can design and send text (SMS), rich communication (RCS) and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add an Mobile message action in a journey or a campaign, and then define the content of the Mobile message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your Mobile messages before sending, so that you can check the rendering, personalization attributes, and all other settings. 
 
-In accordance with the industry standards and regulations, all SMS/MMS marketing messages must contain a way for the recipients to easily unsubscribe. To do this, SMS recipients can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#opt-out-decision-management)
+In accordance with the industry standards and regulations, all SMS/RCS/MMS marketing messages must contain a way for the recipients to easily unsubscribe. To do this, SMS recipients can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#opt-out-decision-management)
 
-## Add a text message {#create-sms-journey-campaign}
+## Add a Mobile message {#create-sms-journey-campaign}
 
 Browse the tabs below to learn how to add a Mobile message in a campaign or a journey.
 
 >[!BEGINTABS]
 
->[!TAB Add a text message to a Journey]
+>[!TAB Add a Mobile message to a Journey]
 
 1. Open your journey then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
@@ -89,7 +89,7 @@ Browse the tabs below to learn how to add a Mobile message in a campaign or a jo
 
 For more information on how to create, configure and publish a journey, refer to [this page](../building-journeys/journey-gs.md).
 
->[!TAB Add a text message to a Campaign]
+>[!TAB Add a Mobile message to a Campaign]
 
 1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.
 
@@ -124,7 +124,7 @@ For more information on how to create, configure and publish a journey, refer to
     * Weekly
     * Month
     
-You can now start designing the content of your text message from the **[!UICONTROL Edit content]** button, as detailed below. [Learn more](design-mobile.md)
+You can now start designing the content of your Mobile message from the **[!UICONTROL Edit content]** button, as detailed below. [Learn more](design-mobile.md)
 
 For more information on how to create, configure and activate a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
@@ -134,7 +134,7 @@ For more information on how to create, configure and activate a campaign, refer 
 
 * [Design a mobile message](design-mobile.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)
-* [Preview, test and send your text message](send-mobile-message.md)
+* [Preview, test and send your Mobile message](send-mobile-message.md)
 * [Configure Mobile message channel](mobile-configuration.md)
 * [Mobile message reports](../reports/journey-global-report-cja-sms.md)
 

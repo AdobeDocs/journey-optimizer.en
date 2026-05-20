@@ -145,7 +145,7 @@ To add a built-in channel action to your journey using the **[!UICONTROL Action]
       <img alt="Validation" src="../assets/do-not-localize/sms.jpg">
       </a>
       <div>
-      <a href="../mobile/create-mobile-message.md"><strong>Create text messages (SMS/MMS)</strong></a>
+      <a href="../mobile/create-mobile-message.md"><strong>Create Mobile messages (SMS/RCS/MMS)</strong></a>
       </div>
       <p>
       </td>

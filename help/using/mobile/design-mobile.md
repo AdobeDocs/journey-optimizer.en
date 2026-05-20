@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create an SMS/MMS message
-description: Learn how to create an SMS/MMS message in Journey Optimizer
+title: Create an SMS/RCS/MMS message
+description: Learn how to create an SMS/RCS/MMS message in Journey Optimizer
 feature: SMS
 topic: Content Management
 role: User
@@ -12,7 +12,7 @@ level: Beginner
 
 You can design and send text (SMS), rich communication (RCS), and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add a Mobile message action in a journey or a campaign, and then define the content of the Mobile message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your Mobile messages before sending, so that you can check the rendering, personalization attributes, and all other settings.
 
-In accordance with the industry standards and regulations, all SMS/MMS marketing messages must contain a way for the profiles to easily unsubscribe. To do this, SMS profiles can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#opt-out-decision-management)
+In accordance with the industry standards and regulations, all SMS/RCS/MMS marketing messages must contain a way for the profiles to easily unsubscribe. To do this, SMS profiles can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#opt-out-decision-management)
 
 ## Define your RCS content{#rcs-content}
 

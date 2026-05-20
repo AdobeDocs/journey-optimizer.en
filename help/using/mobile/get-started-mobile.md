@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with Mobile messages
-description: Learn how to create and send text messages in Journey Optimizer
+description: Learn how to create and send Mobile messages in Journey Optimizer
 feature: SMS
 topic: Content Management
 role: User
@@ -78,7 +78,7 @@ Mobile messages can be created and sent in a journey or in a campaign using the 
 
 ## Configuration requirements {#configuration-requirements}
 
-Before sending text messages, you must:
+Before sending Mobile messages, you must:
 
 1. **Choose an SMS provider**: Select from Sinch, Twilio, Infobip, or configure a custom provider
 2. **Set up API credentials**: Integrate your provider's API tokens and service IDs with Journey Optimizer
@@ -99,7 +99,7 @@ The following prerequisites are required to use RCS in Journey Optimizer:
 
 ## Additional resources {#additional-resources}
 
-Browse the topics below to learn more about text messaging in Journey Optimizer.
+Browse the topics below to learn more about Mobile messaging in Journey Optimizer.
 
 +++Configuration guides
 
@@ -124,11 +124,11 @@ Step-by-step configuration for each SMS service provider:
 
 +++Content creation & management
 
-Create, personalize, and manage your text message content:
+Create, personalize, and manage your Mobile message content:
 
-* [Create SMS/MMS messages](create-mobile-message.md)
+* [Create SMS/RCS/MMS messages](create-mobile-message.md)
 * [Preview, test and send messages](send-mobile-message.md)
-* [Personalization in text messages](../personalization/personalize.md)
+* [Personalization in Mobile messages](../personalization/personalize.md)
 * [Dynamic content](../personalization/get-started-dynamic-content.md)
 * [Generate SMS content with AI Assistant](../content-management/generative-text.md)
 
@@ -136,7 +136,7 @@ Create, personalize, and manage your text message content:
 
 +++Compliance & privacy
 
-Ensure your text messaging complies with regulations and privacy standards:
+Ensure your Mobile messaging complies with regulations and privacy standards:
 
 * [Opt-out management](mobile-opt-out.md)
 * [Privacy and consent](../privacy/opt-out.md#opt-out-decision-management)

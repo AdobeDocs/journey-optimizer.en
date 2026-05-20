@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Opt-out management for Mobile messages
-description: Learn how to manage opt-out with SMS/MMS messages
+description: Learn how to manage opt-out with SMS/RCS/MMS messages
 feature: SMS
 topic: Content Management
 role: User
