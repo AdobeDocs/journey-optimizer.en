@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Privacy
 ---
 # Opt-out management for Mobile messages {#sms-opt-out}
- 
+
 In accordance with the industry standards and regulations, all SMS marketing messages must contain a way for the recipients to easily unsubscribe. [Learn more about privacy & opt-out management](../privacy/opt-out.md)
 
 >[!IMPORTANT]

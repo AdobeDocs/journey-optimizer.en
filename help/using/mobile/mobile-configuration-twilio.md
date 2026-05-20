@@ -33,7 +33,7 @@ topic_v2:
 
 By integrating Twilio with Adobe Journey Optimizer, you can deliver text messages to your profiles as part of your journeys and campaigns.
 
-To configure Twilio as your SMS provider, follow the steps below: 
+To configure Twilio as your SMS provider, follow the steps below:
 
 1. [Create API Credential](#api-credential)
 1. [Create Webhook](mobile-webhook.md)

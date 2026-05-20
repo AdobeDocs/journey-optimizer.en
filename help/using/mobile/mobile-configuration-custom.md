@@ -68,7 +68,7 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 
     ![](assets/sms_byo_1.png)
 
-1. Configure your SMS API credentials, as detailed below: 
+1. Configure your SMS API credentials, as detailed below:
 
     * **[!UICONTROL SMS vendor]**: Custom.
 

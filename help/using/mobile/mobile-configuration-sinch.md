@@ -35,7 +35,7 @@ topic_v2:
 ---
 # Configure Sinch provider {#sms-configuration-sinch}
 
-When using the Sinch provider with Journey Optimizer, you can find three distinct options: 
+When using the Sinch provider with Journey Optimizer, you can find three distinct options:
 
 * **SMS Configuration**: Set up your Sinch API credentials to send SMS messages seamlessly.
 
