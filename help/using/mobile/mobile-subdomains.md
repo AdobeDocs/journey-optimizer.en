@@ -91,7 +91,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
 1. Enter the prefix that will display in your SMS URL.
 
-    Only alpha-numeric characters and hyphens are allowed.
+    Only alpha-numeric characters and hyphens are allowed. 
 
     >[!CAUTION]
     >
