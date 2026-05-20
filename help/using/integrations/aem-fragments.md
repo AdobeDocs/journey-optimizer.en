@@ -71,7 +71,7 @@ When a Content Fragment is published in Adobe Experience Manager, an event is se
 >
 >For Healthcare customers, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Extended Security for Healthcare add-on offerings.
 
-## Create and assign a tag in Experience Manager
+## Create and assign a tag in Experience Manager {#create-tag}
 
 >[!IMPORTANT]
 >
@@ -193,7 +193,32 @@ Once you have performed your tests and validated the content, you can [send your
 
 Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references){target="_blank"}. 
 
-## Working with Content Fragment variations {#aem-variations}
+## Use AEM Content Fragments with Experience Decisioning {#aem-decisioning}
+
+>[!AVAILABILITY]
+>
+>This feature is available in Limited Availability for outbound channels with Decisioning support. To request access, contact your Adobe representative.
+
+AEM Content Fragments can also be used as offer item attributes in **Experience Decisioning**. By mapping Content Fragment fields to decision item attributes, you can use Journey Optimizer decisioning models, formulas, and ranking criteria to optimize which fragment is served to each profile.
+
+### Prerequisites and guardrails
+
+* Content Fragments must be tagged in Adobe Experience Manager with the `ajo-enabled:{OrgId}/{SandboxName}` tag before they appear in the decisioning selector. [Learn how to create and assign a tag](#create-tag)
+* Only Content Fragments in a **published** state are available.
+* You can add up to **five** AEM Content Fragments to a single decision item.
+
+### Leverage AEM Content Fragments in Decisioning
+
+Once the AEM Content Fragment has been created and published, you need to:
+
+1. Tie it to a decision item by selecting it in the decision item's attributes.
+1. Leverage it in a decision policy to surface the right content to the right customer.
+
+➡️ [Tie an AEM Content Fragment to a decision item](../experience-decisioning/items.md#aem-fragments)
+
+➡️ [Leverage AEM Content Fragments in a decision policy](../experience-decisioning/fragments-decision-policies.md#aem-fragments-decisioning)
+
+## Working with content fragment variations {#aem-variations}
 
 In Adobe Experience Manager, each Content Fragment is made up of the following:
 
