@@ -243,6 +243,10 @@ The following improvements were also released in May 2026.
 
   Availability date: May 20, 2026
 
+#### Integrations
+
+* **Cross-organization repository access in the Assets Selector** - You can now seamlessly select assets from repositories across multiple organizations directly within the Adobe Experience Manager Asset Selector.
+
 #### SMS
 
 <!--
