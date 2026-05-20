@@ -55,7 +55,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_dataset"
 >title="Add dataset"
->abstract="Use [!DNL Adobe Experience Platform] datasets attributes to define capping criteria based on dynamic, external attributes. Click **[!UICONTROL Add dataset]** to select the Adobe Experience Platform dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping."
+>abstract="Use [!DNL Adobe Experience Platform] datasets attributes to define capping criteria based on dynamic, external attributes. Click **[!UICONTROL Add dataset]** to select the dataset with the attributes you need. If the dataset does not display in the list, make sure you have enabled it for lookup and you have created a dataset lookup mapping."
 
 [!DNL Journey Optimizer] allows you to leverage data from [!DNL Adobe Experience Platform] for Decisioning. This allows you to extend the definition of your decision attributes to additional data in datasets for bulk updates that change periodically without having to manually update the attributes one at a time. For example, availability, wait times, etc.
 
