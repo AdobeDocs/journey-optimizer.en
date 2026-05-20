@@ -24,7 +24,7 @@ exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
 >[!BEGINSHADEBOX]
 
 When new API credentials are created in Journey Optimizer, SMS webhooks are now the way to capture both inbound keywords and feedback events like deliveries and errors. Because each provider has different capabilities, there are separate instructions to enable webhooks.
-With webhooks now supporting Custom provider, it is now possible to gather feedback and inbound keyword collection from any provider to be reported and acted upon in Journey Optimizer.
+With webhooks now supporting Custom provider, it is now possible to gather feedback and inbound keyword collection from any provider to be reported and acted upon in Journey Optimizer. 
 
 * **New customers:** The instructions here can be followed to configure SMS webhooks correctly.
 
