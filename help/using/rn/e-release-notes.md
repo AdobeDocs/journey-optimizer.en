@@ -195,7 +195,7 @@ The following improvements are targeted for this release.
 * **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
 
 
-  Availability date: May 19, 2026
+  Availability date: May 29, 2026
 
 <!--
 #### Configuration
@@ -222,12 +222,12 @@ The following improvements are targeted for this release.
 * **Rich text in editable fragment fields** - You can now add rich text to customizable fragments that are used in your email content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
 
 
-  Availability date: May 19, 2026
+  Availability date: May 28, 2026
 
 * **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages.
 
 
-  Availability date: May 19, 2026
+  Availability date: May 20, 2026
 
 <!--
 FEEDBACK FROM TYSON WAI - * **Content locking in landing pages** - You can now lock portions of landing page templates, similar to the locking controls available for email templates. You can define which structures, components, and properties are editable — including options to lock design, content, position, and restrict content by limiting the number and/or types of components allowed.

@@ -77,8 +77,13 @@ The following capabilities were released in May 2026.
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now uses the <strong>Content Advisor selector</strong>, a unified modal for selecting both Experience Manager Assets and Content Fragments. The new selector supports browsing, searching, and filtering across all assets, includes Dynamic Media renditions, and incorporates enhanced user interface capabilities that allow you to easily add image renditions when dynamic assets are used.</p>
-<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Journey Optimizer now uses the <strong>Content Advisor selector</strong>, a unified modal for selecting both Experience Manager Assets and Content Fragments. The new selector includes:</p>
+<ul>
+<li><strong>Browsing, searching, and filtering</strong> across all assets and fragments.</li>
+<li><strong>AI semantic search</strong>: describe what you need in plain language, e.g. "coffee in the mountains", to surface contextually relevant assets based on meaning and content, not just text matches. Multi-lingual queries are also supported.</li>
+<li><strong>Brief upload</strong>: upload a marketing brief to automatically surface assets that align with your campaign context based on its content and requirements.</li>
+<li><strong>Dynamic Media renditions</strong>: pick and apply image renditions for dynamic assets without leaving the selector.</li>
+</ul>
 <p>For more information, refer to the <a href="../integrations/aem-content-advisor.md">detailed documentation</a>.</p>
 <p>Availability date: May 19, 2026</p>
 </td>
