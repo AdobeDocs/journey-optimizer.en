@@ -140,9 +140,7 @@ To lock a visual fragment, follow the steps below.
 
     >[!NOTE]
     >
-    >Changes apply to future usages only. Existing emails using this fragment are not modified.
-    >
-    >This setting can be updated at any time.
+    >This setting can be updated at any time. However, changes apply to future usages only. Existing emails using this fragment are not modified.
 
 ![](assets/fragment-lock.png){width="70%" align="center"}
 
