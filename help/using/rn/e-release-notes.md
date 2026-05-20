@@ -40,24 +40,6 @@ The following capabilities are targeted for this release.
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Chained orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Orchestrated campaigns can now be linked together by triggering an orchestrated campaign directly from another orchestrated campaign's <strong>End activity</strong>.</p>
-<p>This makes it possible to break complex orchestration logic into smaller, reusable flows that can be called from multiple parent campaigns rather than rebuilt each time. The payload passed at runtime is available for segmentation and personalization in the downstream campaign, so each linked campaign can behave based on the context it receives.</p>
-<!--<p><img src="assets/do-not-localize/oc-trigger.gif"></p>-->
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 <table>
 <thead>
