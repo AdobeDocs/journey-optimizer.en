@@ -32,7 +32,7 @@ exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
 >
 >This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
-The **[!UICONTROL Loyalty Admin]** section is where administrators configure how Journey Optimizer connects to your loyalty program backend. Marketers use **[!UICONTROL Loyalty Challenges (Beta)]** to design challenges, tasks, content, and messaging; Loyalty Admin is a separate, one-time setup for reward fulfillment and event mapping.
+The **[!UICONTROL Loyalty Admin]** section is where you configure how Journey Optimizer connects to your loyalty program backend. Marketers use **[!UICONTROL Loyalty Challenges (Beta)]** to design challenges, tasks, content, and messaging; Loyalty Admin is a separate, one-time setup for reward fulfillment and event mapping.
 
 When a customer completes a challenge (or reaches a reward milestone), Journey Optimizer calls the reward provider you configure here to deliver points or other rewards. Challenge **[!UICONTROL Content]**, **[!UICONTROL Messaging]**, and **[!UICONTROL Audience]** settings are not affected by Loyalty Admin configuration.
 
