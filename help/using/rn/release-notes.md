@@ -276,6 +276,24 @@ The following capabilities and enhancements are scheduled for release later in M
 <table>
 <thead>
 <tr>
+<th><strong>Decisioning support in Direct Mail channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now add Decision policies into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content for each audience member. Direct Mail decisioning also supports batch decisioning use cases, enabling you to export the corresponding offer items for every profile in a given Adobe Experience Platform audience.</p>
+<!--<p><img src="assets/do-not-localize/exd-dm.gif"></p>-->
+<p>Availability date: May 21, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey Simulation</strong><br/></th>
 </tr>
 </thead>
