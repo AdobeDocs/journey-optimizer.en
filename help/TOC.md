@@ -339,7 +339,7 @@ solution: Journey Optimizer
     + [Design a Mobile message](using/mobile/design-mobile.md)
     + [Check & send your Mobile messages](using/mobile/send-mobile-message.md)
     + [Manage Mobile message opt-out](using/mobile/mobile-opt-out.md)
-    + [Set up SMS subdomains](using/mobile/mobile-subdomains.md)
+    + [Set up SMS subdomains](using/mobile/mobile-subdomains.md) 
     + [Best practices for SMS cost optimization](using/mobile/mobile-cost-optimization.md)
     + Configure Mobile channel {#configure-mobile}
       + [Get started with Mobile configuration](using/mobile/mobile-configuration.md)
