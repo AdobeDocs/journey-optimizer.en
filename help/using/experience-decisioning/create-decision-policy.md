@@ -133,9 +133,13 @@ For code-based experiences, you can add a new decision policy using either the *
 
     +++
 
-You can also add decision policies when using the **[!UICONTROL Code your own]** mode in the Email Designer. To do so, navigate to **[!UICONTROL Decision policies]** to insert the decision policy code. [Learn how to code your own email content](../email/code-content.md).
+You can also add decision policies when using the **[!UICONTROL Code your own]** mode in the Email Designer. To do so, navigate to **[!UICONTROL Decision policies]** to insert the decision policy code — the placement selection UI will appear, allowing you to choose a placement for the decision policy. [Learn how to code your own email content](../email/code-content.md).
 
 ![](assets/decision-policy-add-code-your-own.png)
+
+>[!AVAILABILITY]
+>
+>Inserting decision policies in **[!UICONTROL Code your own]** mode is in Limited Availability.
 
 >[!NOTE]
 >

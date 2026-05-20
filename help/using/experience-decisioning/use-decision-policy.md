@@ -78,6 +78,16 @@ Once you've added a decision policy to your content, you can use attributes from
    >
    >If you use multiple decision policies in the same email (for example, one for the header and one for the footer), the same offer is deduplicated across placements: it is not rendered twice. The second decision policy will not return any content and will display a blank space, unless you have configured a fallback offer, in which case the fallback will be displayed instead.
 
+You can also insert the decision policy code when using the **[!UICONTROL Code your own]** mode in the Email Designer. Navigate to **[!UICONTROL Decision policies]** and select **[!UICONTROL Insert syntax]** — the placement selection UI will appear so you can assign a placement directly. [Learn how to code your own email content](../email/code-content.md).
+
+>[!AVAILABILITY]
+>
+>Inserting decision policies in **[!UICONTROL Code your own]** mode is in Limited Availability.
+
+>[!NOTE]
+>
+>In **[!UICONTROL Code your own]** mode, only one decision item can be returned per policy, because the **[!UICONTROL Repeat Grid]** component is not available.
+
 >[!TAB SMS]
 
 1. Open the **Personalization Editor** and navigate to **[!UICONTROL Decision policies]**.

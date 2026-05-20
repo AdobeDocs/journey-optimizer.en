@@ -61,17 +61,17 @@ To create an Orchestrated campaign, follow these steps:
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_scheduler"
 >title="Scheduler"
->abstract="As a campaign manager, you can schedule campaigns to automatically launch at specific times, enabling precise timing and accurate targeting data for marketing communications."
+>abstract="As a campaign manager, you can schedule campaigns to launch automatically at specific times, or set them to **Triggered by a signal** so they start when called from the REST API or from another Orchestrated campaign's **End** activity. [Learn more](trigger-orchestrated-campaign.md)"
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_schedule_validity"
 >title="Scheduler validity"
->abstract="You can define a validity period for the scheduler. It can be permanent (default), or can be valid until a specific date."
+>abstract="For scheduled campaigns, define a validity period for the scheduler. It can be permanent (default), or valid until a specific date."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_schedule_options"
 >title="Scheduler options"
->abstract="Define the frequency of the scheduler. It can be executed at a specific moment, once or several times a day, week or month."
+>abstract="Choose how the campaign starts: on a one-time or recurring schedule (once, daily, weekly, monthly, and so on), or **Triggered by a signal** so it waits for an API call or an upstream campaign's **End** activity. For signal-triggered campaigns, you can define parameters to pass in the payload. [Learn more](trigger-orchestrated-campaign.md)"
 
 By default, Orchestrated campaigns start when activated manually and end once their associated activites have been executed. If you prefer to delay execution or run the campaign on a recurring basis, you can define a schedule for the campaign.
 
