@@ -34,7 +34,7 @@ topic_v2:
 ---
 # Best practices for SMS cost optimization {#sms-cost-optimization}
 
-SMS messages are typically billed by providers based on a 160-character limit per message. Sending SMS messages can incur additional costs if messages are split into multiple parts.  
+SMS messages are typically billed by providers based on a 160-character limit per message. Sending SMS messages can incur additional costs if messages are split into multiple parts.
 
 Follow these guidelines to optimize your messaging strategy and reduce expenses.
 

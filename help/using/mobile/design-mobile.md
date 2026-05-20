@@ -16,7 +16,7 @@ In accordance with the industry standards and regulations, all SMS/MMS marketing
 
 ## Define your RCS content{#rcs-content}
 
-RCS lets you send visually rich messages with images, videos, carousels, and interactive buttons, delivered through the native messaging app on supported devices. Messages are sent from a branded, verified sender. When a profile's device or carrier does not support RCS, Journey Optimizer automatically falls back to a standard SMS.
+RCS lets you send visually rich messages with images, videos, carousels, and interactive buttons, delivered through the native messaging app on supported devices. Messages are sent from a branded, verified sender. When a profile's device or carrier does not support RCS, Journey Optimizer automatically falls back to a standard SMS. 
 
 Every RCS message requires a **[!UICONTROL Default fallback text]**: a plain-text SMS version delivered to profiles whose device or carrier does not support RCS. A campaign cannot be activated without it.
 
