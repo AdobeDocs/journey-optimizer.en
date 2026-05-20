@@ -101,6 +101,6 @@ When your Mobile message is ready, complete the configuration of your [journey](
 **Related topics**
 
 * [Configure SMS channel](mobile-configuration.md)
-* [SMS/MMS reports](../reports/journey-global-report-cja-sms.md)
+* [SMS/RCS/MMS reports](../reports/journey-global-report-cja-sms.md)
 * [Create a Mobile message](create-mobile-message.md)
 * [Add a message in a journey](../building-journeys/journey-action.md)

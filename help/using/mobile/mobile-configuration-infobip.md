@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure Infobip provider
-description: Learn how to configure your environment to send text messages and MMS with Journey Optimizer with Infobip
+description: Learn how to configure your environment to send Mobile messages and MMS with Journey Optimizer with Infobip
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
@@ -33,7 +33,7 @@ topic_v2:
 ---
 # Configure Infobip provider {#sms-configuration-infobip}
 
-By integrating Infobip with Adobe Journey Optimizer, you can deliver text messages to your profiles as part of your journeys and campaigns. 
+By integrating Infobip with Adobe Journey Optimizer, you can deliver Mobile messages to your profiles as part of your journeys and campaigns. 
 
 To configure Infobip as your SMS provider, follow the steps below:
 

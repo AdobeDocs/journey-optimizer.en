@@ -114,7 +114,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
     +++ Opt-Out
 
-    * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
+    * Enable keywords that opt out users and remove consent to send Mobile messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
 
     * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
@@ -215,7 +215,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
     +++ Opt-Out
 
-    * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
+    * Enable keywords that opt out users and remove consent to send Mobile messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
 
     * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
@@ -323,7 +323,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
     +++ Opt-Out
 
-    * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
+    * Enable keywords that opt out users and remove consent to send Mobile messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
 
     * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 

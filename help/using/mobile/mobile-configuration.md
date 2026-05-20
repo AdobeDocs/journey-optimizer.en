@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure the SMS channel
-description: Learn how to configure your environment to send text messages with Journey Optimizer
+description: Learn how to configure your environment to send Mobile messages with Journey Optimizer
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
@@ -36,7 +36,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_header"
 >title="Configure your SMS provider with Journey Optimizer"
->abstract="Adobe Journey Optimizer sends text messages through SMS service providers. Select your provider, and fill in your API credentials."
+>abstract="Adobe Journey Optimizer sends Mobile messages through SMS service providers. Select your provider, and fill in your API credentials."
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_mms_api_header"
@@ -45,8 +45,8 @@ topic_v2:
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api"
->title="Configure your SMS/MMS provider with Journey Optimizer"
->abstract="Before sending text messages (SMS/MMS), you must integrate the provider settings with Journey Optimizer. Once done, you need to create an SMS/MMS configuration. These steps must be performed by an Adobe Journey Optimizer System Administrator."
+>title="Configure your SMS/RCS/MMS provider with Journey Optimizer"
+>abstract="Before sending Mobile messages (SMS/RCS/MMS), you must integrate the provider settings with Journey Optimizer. Once done, you need to create an SMS/RCS/MMS configuration. These steps must be performed by an Adobe Journey Optimizer System Administrator."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/sms/configure-sms/sms-configuration-surface" text="Create an SMS channel configuration"
 
 >[!CONTEXTUALHELP]
@@ -74,11 +74,11 @@ These steps must be performed by an Adobe Journey Optimizer [System Administrato
 
 ## Prerequisites{#sms-prerequisites}
 
-Adobe Journey Optimizer currently integrates with third-party providers who offer text messaging services independent of Adobe Journey Optimizer. Supported providers for text messaging and MMS are: **Sinch**, **Twilio** and **Infobip**. Note that you can configure additional messaging providers using the [custom provider configuration](mobile-configuration-custom.md).
+Adobe Journey Optimizer currently integrates with third-party providers who offer Mobile messaging services independent of Adobe Journey Optimizer. Supported providers for Mobile messaging and MMS are: **Sinch**, **Twilio** and **Infobip**. Note that you can configure additional messaging providers using the [custom provider configuration](mobile-configuration-custom.md).
 
 Prior to Mobile channel configuration, you must create an account with one of these providers to get your **API Token** and **Service ID**, which you need to configure the connection between Adobe Journey Optimizer and the applicable provider. 
 
-Your use of text messaging and MMS services is subject to additional terms and conditions from the applicable provider. As third-party solutions, Sinch, Twilio and Infobip are available to Adobe Journey Optimizer users via an integration. Adobe does not control, and is not responsible for third-party products. For any issues or requests for assistance related to the mobile messaging services, contact your provider.
+Your use of Mobile messaging and MMS services is subject to additional terms and conditions from the applicable provider. As third-party solutions, Sinch, Twilio and Infobip are available to Adobe Journey Optimizer users via an integration. Adobe does not control, and is not responsible for third-party products. For any issues or requests for assistance related to the mobile messaging services, contact your provider.
 
 >[!CAUTION]
 >
