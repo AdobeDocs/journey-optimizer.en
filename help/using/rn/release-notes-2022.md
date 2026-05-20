@@ -338,7 +338,7 @@ table>
 <td>
 <p>You can now create, personalize, and send SMS in Journey Optimizer, through an integration with <b>Sinch</b> or <b>Twilio</b>.</p>
 <img src="assets/do-not-localize/SMS.gif"/>
-<p>Learn how to create and send a SMS in this <a href="../sms/create-mobile-message.md">detailed documentation</a>.</p>
+<p>Learn how to create and send a SMS in this <a href="../mobile/create-mobile-message.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -493,7 +493,7 @@ table>
 <p>You can now create, personalize, and send SMS in Journey Optimizer, through an integration with <b>Sinch</b> or <b>Twilio</b>.</p>
 <!--img src="assets/do-not-localize/SMS.gif"/-->
 <p>The SMS channel is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.</p>
-<p>Learn how to create and send a SMS in this <a href="../sms/create-mobile-message.md">detailed documentation</a>.</p>
+<p>Learn how to create and send a SMS in this <a href="../mobile/create-mobile-message.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

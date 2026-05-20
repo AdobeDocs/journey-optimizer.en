@@ -20,7 +20,7 @@ Get Started with SMS/MMS/RCS Channel Configuration
 
 Learn how to configure SMS, MMS, and RCS channels in Adobe Journey Optimizer, including provider settings and permissions.
 
-[Read the tutorial](../using/sms/mobile-configuration.md)
+[Read the tutorial](../using/mobile/mobile-configuration.md)
 :::
 
 :::
@@ -30,7 +30,7 @@ Configure Sinch Provider for SMS/MMS/RCS Messaging
 
 Step-by-step instructions for setting up Sinch API credentials to enable SMS, MMS, and RCS messaging.
 
-[Learn how to configure Sinch](../using/sms/mobile-configuration-sinch.md)
+[Learn how to configure Sinch](../using/mobile/mobile-configuration-sinch.md)
 :::
 
 :::
@@ -40,7 +40,7 @@ Configure Infobip SMS, MMS, and RCS Provider
 
 Detailed guidance on integrating Infobip as a provider for SMS, MMS, and RCS messaging in Adobe Journey Optimizer.
 
-[Learn how to configure Infobip](../using/sms/mobile-configuration-infobip.md)
+[Learn how to configure Infobip](../using/mobile/mobile-configuration-infobip.md)
 :::
 
 :::
@@ -50,7 +50,7 @@ Configure Twilio Provider for SMS/MMS/RCS Messaging
 
 Instructions for setting up Twilio API credentials and enabling SMS, MMS, and RCS messaging in Adobe Journey Optimizer.
 
-[Learn how to configure Twilio](../using/sms/mobile-configuration-twilio.md)
+[Learn how to configure Twilio](../using/mobile/mobile-configuration-twilio.md)
 :::
 
 :::
@@ -60,7 +60,7 @@ Configure a Custom SMS Provider
 
 Set up custom SMS providers by creating API credentials, managing webhooks, and configuring secure communication channels.
 
-[Learn how to configure a custom provider](../using/sms/mobile-configuration-custom.md)
+[Learn how to configure a custom provider](../using/mobile/mobile-configuration-custom.md)
 :::
 
 :::
@@ -70,7 +70,7 @@ Create an SMS/MMS/RCS Channel Configuration
 
 Learn how to create channel configurations for transactional and marketing SMS, MMS, and RCS messages.
 
-[Learn how to create a configuration](../using/sms/mobile-configuration-surface.md)
+[Learn how to create a configuration](../using/mobile/mobile-configuration-surface.md)
 :::
 
 ::::

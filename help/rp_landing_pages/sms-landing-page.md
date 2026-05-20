@@ -20,7 +20,7 @@ Getting Started with Text Messaging
 
 Learn how to configure, create, and manage SMS, MMS, and RCS messages in Adobe Journey Optimizer.
 
-[Start now](../using/sms/get-started-mobile.md)
+[Start now](../using/mobile/get-started-mobile.md)
 :::
 
 :::
@@ -30,7 +30,7 @@ How to Create SMS, MMS, and RCS Messages
 
 Step-by-step guide to designing, configuring, and sending personalized text messages as part of journeys or campaigns.
 
-[Learn more](../using/sms/create-mobile-message.md)
+[Learn more](../using/mobile/create-mobile-message.md)
 :::
 
 :::
@@ -40,7 +40,7 @@ Check and Send Your Text Messages
 
 Preview, validate, and send messages while ensuring successful delivery and adherence to best practices.
 
-[Get details](../using/sms/send-mobile-message.md)
+[Get details](../using/mobile/send-mobile-message.md)
 :::
 
 :::
@@ -50,7 +50,7 @@ Manage Text Message Opt-Out
 
 Ensure compliance with industry standards by managing opt-out processes for SMS, MMS, and RCS communications.
 
-[Read the guide](../using/sms/mobile-opt-out.md)
+[Read the guide](../using/mobile/mobile-opt-out.md)
 :::
 
 :::
@@ -60,7 +60,7 @@ Set Up SMS Subdomains
 
 Configure SMS subdomains for message delivery, including setup, delegation, and management.
 
-[Configure now](../using/sms/mobile-subdomains.md)
+[Configure now](../using/mobile/mobile-subdomains.md)
 :::
 
 :::
@@ -70,7 +70,7 @@ Configure SMS / MMS / RCS Channels
 
 Comprehensive guidance on setting up messaging channels with supported providers, custom configurations, and tailored options.
 
-[Explore configurations](../using/sms/mobile-configuration.md)
+[Explore configurations](../using/mobile/mobile-configuration.md)
 :::
 
 ::::

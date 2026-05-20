@@ -99,7 +99,7 @@ Follow these steps:
 
     * Create **channel configurations** to configure all the technical parameters required for email, SMS, push, in-app, web, and other channels. [Learn more](../../configuration/channel-surfaces.md)
 
-    * Configure the **SMS channel** to set up all the technical parameters required for SMS. [Learn more](../../sms/mobile-configuration.md)
+    * Configure the **SMS channel** to set up all the technical parameters required for SMS. [Learn more](../../mobile/mobile-configuration.md)
 
     * Manage the number of days during which **retries** are performed before sending email addresses to the suppression list. [Learn more](../../configuration/manage-suppression-list.md)
 

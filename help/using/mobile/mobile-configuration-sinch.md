@@ -165,7 +165,7 @@ To configure Sinch RCS to send RCS with Journey Optimizer, follow these steps:
 
     ![](assets/rcs-config.png)
 
-1. Optionally, enable the **[!UICONTROL Use custom dataset for inbound]** option to store inbound RCS messages in a custom dataset. [Learn more](using/sms/custom-dataset-inbound-keywords.md)
+1. Optionally, enable the **[!UICONTROL Use custom dataset for inbound]** option to store inbound RCS messages in a custom dataset. [Learn more](using/mobile/custom-dataset-inbound-keywords.md)
 
 1. Set the **[!UICONTROL API rate limit (requests per second)]** to cap the maximum number of API calls per second, use your provider's recommended value to avoid throttling, or leave it at 0 for unlimited requests.
 
@@ -197,7 +197,7 @@ After creating and configuring your API credential, you now need to create [your
 
     Configure a channel surface in Journey Optimizer by linking your Sinch credentials and defining the messaging parameters. This setup enables you to compose and send RCS messages from Journey Optimizer.
 
-1. **Create and personalize your [SMS message](../sms/create-mobile-message.md)**
+1. **Create and personalize your [SMS message](../mobile/create-mobile-message.md)**
 
     Your messages automatically falls back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 -->

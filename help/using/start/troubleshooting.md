@@ -169,7 +169,7 @@ See also the [push channel configuration documentation](../push/push-configurati
 
 If a recipient responds **STOP** to an SMS, all future messages from that short number are blocked — including transactional messages. To guarantee uninterrupted delivery of transactional SMS, configure and send them through a **separate short number** that recipients have not previously opted out from.
 
-Learn more about SMS opt-out configuration [on this page](../sms/mobile-opt-out.md).
+Learn more about SMS opt-out configuration [on this page](../mobile/mobile-opt-out.md).
 
 +++
 
@@ -177,7 +177,7 @@ Learn more about SMS opt-out configuration [on this page](../sms/mobile-opt-out.
 
 SMS delivery failures after channel setup are most commonly caused by incorrect provider API credentials, a mismatch between the sender ID and what the provider has registered, or routing restrictions at the provider level. Verify that the API key, password, and sender details entered in Journey Optimizer match exactly what your SMS provider has provisioned. Then send a test message to confirm connectivity before launching a campaign.
 
-Learn how to configure your SMS provider [on this page](../sms/mobile-configuration.md).
+Learn how to configure your SMS provider [on this page](../mobile/mobile-configuration.md).
 
 +++
 
@@ -185,7 +185,7 @@ Learn how to configure your SMS provider [on this page](../sms/mobile-configurat
 
 When a profile texts STOP, Journey Optimizer updates the profile's SMS consent attribute. To verify the current opt-out status, open the profile in the Experience Platform UI and inspect the consent fields under **Privacy** > **Consents**. For campaign troubleshooting, also check the exclusion reasons in the campaign report — opted-out profiles appear under the **Excluded** count with the reason "Opted out."
 
-Learn more about SMS opt-out handling [on this page](../sms/mobile-opt-out.md).
+Learn more about SMS opt-out handling [on this page](../mobile/mobile-opt-out.md).
 
 +++
 

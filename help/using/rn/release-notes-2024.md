@@ -271,7 +271,7 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
-* You can now edit or delete an SMS API Channel Configuration. [Learn more](../sms/mobile-configuration.md)
+* You can now edit or delete an SMS API Channel Configuration. [Learn more](../mobile/mobile-configuration.md)
 
 * The following enhancements have been introduced to improve your SMS messaging capabilities with Infobip and Sinch:
 
@@ -279,7 +279,7 @@ This release comes with the improvements listed below.
 
     * You can create and deliver a default SMS message when a keyword is not recognized.
 
-    Learn more about these improvements in the SMS configuration documentation for [Infobip](../sms/mobile-configuration-infobip.md) and [Sinch](../sms/mobile-configuration-sinch.md). 
+    Learn more about these improvements in the SMS configuration documentation for [Infobip](../mobile/mobile-configuration-infobip.md) and [Sinch](../mobile/mobile-configuration-sinch.md). 
 
 
 <!--**Journeys**-->
@@ -668,7 +668,7 @@ This release brings the new capabilities listed below.
 <td>
 <p>You can now configure additional SMS providers within Journey Optimizer, in addition of the default providers Sinch, Infobip, and Twilio.</p>
 <img src="assets/do-not-localize/byo_sms.gif"/>
-<p>For more information, refer to the <a href="../sms/mobile-configuration-custom.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../mobile/mobile-configuration-custom.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -858,7 +858,7 @@ Read more in the [content fragment](../content-management/fragments.md) document
 
 #### SMS channel
 
-* You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined. [Learn more](../sms/mobile-configuration.md)
+* You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined. [Learn more](../mobile/mobile-configuration.md)
 
 * After creation, the **API Token** field on the **API credential details** page is now masked.
 
@@ -1266,7 +1266,7 @@ Previously available as Beta, the following improvements are now available to al
 
 **SMS channel**
 
-* **Opt-in/opt-out keywords** - When configuring your SMS channel, you can now customize the **Opt-in and Opt-out keywords** as per your preferences. Journey Optimizer triggers the response based on these specified keywords. [Learn more](../sms/mobile-configuration.md)
+* **Opt-in/opt-out keywords** - When configuring your SMS channel, you can now customize the **Opt-in and Opt-out keywords** as per your preferences. Journey Optimizer triggers the response based on these specified keywords. [Learn more](../mobile/mobile-configuration.md)
 
 **Campaigns**
 
@@ -1334,7 +1334,7 @@ This release comes with the improvements listed below.
 
 **SMS Channel**
 
-* **Double Opt-In** - The Double Opt-In workflow for SMS guarantees that users explicitly opt-in to receive messages when the request is initiated from their device. Users initiate the consent process by sending an inbound SMS message. Upon confirming their consent, a follow-up message is sent, requesting final verification. If a user profile does not exist, it is created upon successful confirmation. [Learn more](../sms/mobile-configuration.md) 
+* **Double Opt-In** - The Double Opt-In workflow for SMS guarantees that users explicitly opt-in to receive messages when the request is initiated from their device. Users initiate the consent process by sending an inbound SMS message. Upon confirming their consent, a follow-up message is sent, requesting final verification. If a user profile does not exist, it is created upon successful confirmation. [Learn more](../mobile/mobile-configuration.md) 
 
    Note that this capability is available with Sinch and Infobip SMS providers.
 

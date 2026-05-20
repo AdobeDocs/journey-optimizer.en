@@ -87,7 +87,7 @@ To create a content template from scratch, follow the steps below.
     Learn how to create content for the different channels in the following sections:
     * [Define email content](../email/get-started-email-design.md)
     * [Define push content](../push/design-push.md)
-    * [Define SMS content](../sms/create-mobile-message.md#sms-content)
+    * [Define SMS content](../mobile/create-mobile-message.md#sms-content)
     * [Define direct mail content](../direct-mail/create-direct-mail.md)
     * [Define In-app content](../in-app/design-in-app.md)
     * [Define web content](../web/create-web.md#edit-web-content)   
