@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Create an SMS/MMS message
@@ -104,7 +104,7 @@ To define your RCS message content, follow the steps below.
 
 1. From the **[!UICONTROL Webview]** drop-down, choose the size of your **[!UICONTROL Webview]** when sending an **[!UICONTROL Open URL]** action.
 
-1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](send-sms.md).
+1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](send-mobile-message.md).
 
 ## Define your SMS content{#sms-content}
 
@@ -127,7 +127,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
 1. After defining your content, you can add tracked URLs to your message. To do this, access the **[!UICONTROL Helper functions]** menu and select **[!UICONTROL Helpers]**.
 
-    To use the URL shortening function, you must first configure a subdomain that will then be linked to your configuration. [Learn more](sms-subdomains.md)
+    To use the URL shortening function, you must first configure a subdomain that will then be linked to your configuration. [Learn more](mobile-subdomains.md)
     
     >[!NOTE]
     >
@@ -151,7 +151,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
   
     For more information on how to create and use decision policies in Mobile messages, refer to [this section](../experience-decisioning/create-decision.md).
 
-1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](send-sms.md).
+1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](send-mobile-message.md).
 
 ## Define your MMS content{#mms-content}
 
@@ -179,4 +179,4 @@ To create MMS content, follow these steps:
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed below.
 
-Once you have performed your tests and validated the content, you can send your Mobile message to your audience. These steps are detailed on [this page](send-sms.md)
+Once you have performed your tests and validated the content, you can send your Mobile message to your audience. These steps are detailed on [this page](send-mobile-message.md)

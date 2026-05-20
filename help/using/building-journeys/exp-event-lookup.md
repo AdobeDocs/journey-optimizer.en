@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Experience events lookup in journeys
@@ -57,7 +57,7 @@ Learn more:
 
 * [Manage consent](../privacy/opt-out.md)
 * [Email opt-out management](../email/email-opt-out.md) 
-* [Opt-out management for text messages](../sms/sms-opt-out.md)
+* [Opt-out management for text messages](../sms/mobile-opt-out.md)
 
 
 ## Bounce-based suppression

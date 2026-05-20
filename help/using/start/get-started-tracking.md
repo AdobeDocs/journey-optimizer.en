@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with tracking in Journey Optimizer
@@ -213,9 +213,9 @@ SMS tracking requires minimal setup—Journey Optimizer automatically shortens a
 
 **How it works:**
 
-* **Automatic link tracking** - Add any URL to your SMS content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../sms/sms-subdomains.md)
+* **Automatic link tracking** - Add any URL to your SMS content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../sms/mobile-subdomains.md)
 
-* **Inbound message tracking** - Replies from recipients are automatically captured, allowing you to monitor two-way conversations and response patterns. [Learn more](../sms/sms-opt-out.md#sms-native-keywords)
+* **Inbound message tracking** - Replies from recipients are automatically captured, allowing you to monitor two-way conversations and response patterns. [Learn more](../sms/mobile-opt-out.md#sms-native-keywords)
 
 **View metrics:** Access link click data, inbound message volumes, and message type performance in reports. [Campaign reports](../reports/campaign-global-report-cja-sms.md) | [Journey reports](../reports/journey-global-report-cja-sms.md)
 

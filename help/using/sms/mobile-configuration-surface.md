@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure the SMS configuration
@@ -80,7 +80,7 @@ To create a channel configuration, follow these steps:
 
     >[!NOTE]
     >
-    >To be able to select a subdomain, make sure you have previously configured at least one SMS/MMS subdomain. [Learn how](sms-subdomains.md)
+    >To be able to select a subdomain, make sure you have previously configured at least one SMS/MMS subdomain. [Learn how](mobile-subdomains.md)
 
 1. In the **[!UICONTROL Execution dimension]** section, use the **[!UICONTROL SMS Execution Field]** to select amongst the profile attributes the phone number that you want to use in priority if several numbers are available in the database. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
 

@@ -1,4 +1,4 @@
----
+﻿---
 product: Journey Optimizer
 audience: end-user
 user-guide-title: Journey Optimizer Guide
@@ -334,21 +334,21 @@ solution: Journey Optimizer
       + [Configure web push notification channel](using/push/push-configuration-web.md)
       + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
   + SMS / MMS / RCS channel {#sms}
-    + [Get started with Mobile messaging](using/sms/get-started-sms.md)
-    + [Create a Mobile message](using/sms/create-sms.md)
+    + [Get started with Mobile messaging](using/sms/get-started-mobile.md)
+    + [Create a Mobile message](using/sms/create-mobile-message.md)
     + [Design a Mobile message](using/sms/design-sms.md)
-    + [Check & send your Mobile messages](using/sms/send-sms.md)
-    + [Manage Mobile message opt-out](using/sms/sms-opt-out.md)
-    + [Set up SMS subdomains](using/sms/sms-subdomains.md)
-    + [Best practices for SMS cost optimization](using/sms/sms-cost-optimization.md)
+    + [Check & send your Mobile messages](using/sms/send-mobile-message.md)
+    + [Manage Mobile message opt-out](using/sms/mobile-opt-out.md)
+    + [Set up SMS subdomains](using/sms/mobile-subdomains.md)
+    + [Best practices for SMS cost optimization](using/sms/mobile-cost-optimization.md)
     + Configure Mobile channel {#configure-sms}
-      + [Get started with Mobile configuration](using/sms/sms-configuration.md)
-      + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
-      + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
-      + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
-      + [Configure a custom provider](using/sms/sms-configuration-custom.md)
-      + [Create Webhook](using/sms/sms-webhook.md)
-      + [Create a Mobile configuration](using/sms/sms-configuration-surface.md)
+      + [Get started with Mobile configuration](using/sms/mobile-configuration.md)
+      + [Configure Sinch provider](using/sms/mobile-configuration-sinch.md)
+      + [Configure Infobip provider](using/sms/mobile-configuration-infobip.md)
+      + [Configure Twilio provider](using/sms/mobile-configuration-twilio.md)
+      + [Configure a custom provider](using/sms/mobile-configuration-custom.md)
+      + [Create Webhook](using/sms/mobile-webhook.md)
+      + [Create a Mobile configuration](using/sms/mobile-configuration-surface.md)
       + [Use a custom dataset for inbound keywords](using/sms/custom-dataset-inbound-keywords.md)
   + Direct mail {#direct-mail}
     + [Direct mail](/help/rp_landing_pages/direct-mail-landing-page.md)

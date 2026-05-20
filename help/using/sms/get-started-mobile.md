@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with Mobile messages
@@ -50,7 +50,7 @@ topic_v2:
 
 >[!IMPORTANT]
 >
->If this is your first time creating mobile messages, make sure the Mobile message channel has been configured. [Learn more](sms-configuration.md)
+>If this is your first time creating mobile messages, make sure the Mobile message channel has been configured. [Learn more](mobile-configuration.md)
 
 Use [!DNL Journey Optimizer] to send mobile messages to your customers across three channels, **SMS**, **MMS**, and **RCS**, from a single SMS/MMS/RCS editor where you can create, personalize, and preview your content.
 
@@ -70,10 +70,10 @@ Mobile messages can be created and sent in a journey or in a campaign using the 
 | Feature | Description |
 |---|---|
 | **Personalization** | Tailor messages with profile attributes, conditional content, and dynamic data using the personalization editor. [Learn more](../personalization/personalize.md) |
-| **Provider support** | Connect with [Sinch](sms-configuration-sinch.md), [Twilio](sms-configuration-twilio.md), [Infobip](sms-configuration-infobip.md), or any [custom provider](sms-configuration-custom.md) via API integration. |
-| **URL shortening** | Add shortened, trackable URLs to monitor engagement. Requires subdomain configuration. [Learn more](sms-subdomains.md) |
-| **Opt-out management** | Built-in handling of standard opt-out keywords (STOP, QUIT, CANCEL, etc.) for Sinch and Infobip. [Learn more](sms-opt-out.md) |
-| **Preview & testing** | Validate content with test profiles and sample data before sending. [Learn more](send-sms.md) |
+| **Provider support** | Connect with [Sinch](mobile-configuration-sinch.md), [Twilio](mobile-configuration-twilio.md), [Infobip](mobile-configuration-infobip.md), or any [custom provider](mobile-configuration-custom.md) via API integration. |
+| **URL shortening** | Add shortened, trackable URLs to monitor engagement. Requires subdomain configuration. [Learn more](mobile-subdomains.md) |
+| **Opt-out management** | Built-in handling of standard opt-out keywords (STOP, QUIT, CANCEL, etc.) for Sinch and Infobip. [Learn more](mobile-opt-out.md) |
+| **Preview & testing** | Validate content with test profiles and sample data before sending. [Learn more](send-mobile-message.md) |
 | **Reporting** | Track campaign and journey performance with dedicated [campaign reports](../reports/campaign-global-report-cja-sms.md) and [journey reports](../reports/journey-global-report-cja-sms.md). |
 
 ## Configuration requirements {#configuration-requirements}
@@ -85,14 +85,14 @@ Before sending text messages, you must:
 3. **Create channel configurations**: Set up SMS configurations for marketing and transactional messages
 4. **Configure subdomains (optional)**: Required only if you plan to use URL shortening in your messages
 
-These configuration steps are typically performed by a System Administrator. [Get started with SMS configuration](sms-configuration.md)
+These configuration steps are typically performed by a System Administrator. [Get started with SMS configuration](mobile-configuration.md)
 
 ### Requirements for RCS {#requirement-rcs}
 
 The following prerequisites are required to use RCS in Journey Optimizer:
 
-* **Sinch RCS API credentials**: An administrator must configure API credentials for the Sinch RCS vendor (Project ID, App ID, and API Token). [Learn more](sms-configuration-sinch.md)
-* **Mobile Message channel configuration**: An administrator must create a channel configuration with an RCS-enabled credential selected, so messages are delivered as RCS rather than SMS. [Learn more](sms-configuration.md)
+* **Sinch RCS API credentials**: An administrator must configure API credentials for the Sinch RCS vendor (Project ID, App ID, and API Token). [Learn more](mobile-configuration-sinch.md)
+* **Mobile Message channel configuration**: An administrator must create a channel configuration with an RCS-enabled credential selected, so messages are delivered as RCS rather than SMS. [Learn more](mobile-configuration.md)
 * **Fallback SMS**: Strongly recommended. Recipients whose devices do not support RCS will not receive the message unless SMS fallback is available. Customers without existing SMS volume should purchase SMS and a short code. [Learn more](design-mobile.md#rcs-content)
 * **Supported vendor**: Native RCS authoring requires Sinch RCS (Adobe resell or direct). Twilio, Infobip, and other providers must use a custom provider integration.
 * **Device support**: RCS delivery is supported on Android and iOS devices. Carrier and regional availability varies, RCS is not universally available globally.
@@ -105,9 +105,9 @@ Browse the topics below to learn more about text messaging in Journey Optimizer.
 
 Learn how to set up and configure your SMS environment:
 
-* [SMS channel configuration overview](sms-configuration.md)
-* [Create SMS channel configurations](sms-configuration-surface.md)
-* [Configure SMS subdomains for URL shortening](sms-subdomains.md)
+* [SMS channel configuration overview](mobile-configuration.md)
+* [Create SMS channel configurations](mobile-configuration-surface.md)
+* [Configure SMS subdomains for URL shortening](mobile-subdomains.md)
 
 +++
 
@@ -115,10 +115,10 @@ Learn how to set up and configure your SMS environment:
 
 Step-by-step configuration for each SMS service provider:
 
-* [Configure Sinch provider](sms-configuration-sinch.md)
-* [Configure Twilio provider](sms-configuration-twilio.md)
-* [Configure Infobip provider](sms-configuration-infobip.md)
-* [Configure custom SMS provider](sms-configuration-custom.md)
+* [Configure Sinch provider](mobile-configuration-sinch.md)
+* [Configure Twilio provider](mobile-configuration-twilio.md)
+* [Configure Infobip provider](mobile-configuration-infobip.md)
+* [Configure custom SMS provider](mobile-configuration-custom.md)
 
 +++
 
@@ -126,8 +126,8 @@ Step-by-step configuration for each SMS service provider:
 
 Create, personalize, and manage your text message content:
 
-* [Create SMS/MMS messages](create-sms.md)
-* [Preview, test and send messages](send-sms.md)
+* [Create SMS/MMS messages](create-mobile-message.md)
+* [Preview, test and send messages](send-mobile-message.md)
 * [Personalization in text messages](../personalization/personalize.md)
 * [Dynamic content](../personalization/get-started-dynamic-content.md)
 * [Generate SMS content with AI Assistant](../content-management/generative-text.md)
@@ -138,7 +138,7 @@ Create, personalize, and manage your text message content:
 
 Ensure your text messaging complies with regulations and privacy standards:
 
-* [Opt-out management](sms-opt-out.md)
+* [Opt-out management](mobile-opt-out.md)
 * [Privacy and consent](../privacy/opt-out.md#opt-out-decision-management)
 
 +++
@@ -165,7 +165,7 @@ Learn how to incorporate SMS into your customer journeys and campaigns:
 
 **Is native RCS messaging available with Twilio or Infobip?**
 
-No. The native RCS designer in Journey Optimizer is not available when using third-party SMS providers such as Twilio or Infobip. RCS messages can, however, be sent via a [custom provider integration](sms-configuration-custom.md).
+No. The native RCS designer in Journey Optimizer is not available when using third-party SMS providers such as Twilio or Infobip. RCS messages can, however, be sent via a [custom provider integration](mobile-configuration-custom.md).
 
 **Why purchase SMS alongside RCS?**
 

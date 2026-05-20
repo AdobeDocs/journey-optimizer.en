@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Create a Mobile message
@@ -77,7 +77,7 @@ Browse the tabs below to learn how to add a Mobile message in a campaign or a jo
 
 1. Click the **[!UICONTROL Configure action]** button.
 
-1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the Mobile message configuration to use. [Learn more](sms-configuration.md)
+1. You are directed to the **[!UICONTROL Actions]** tab. From there, select or create the Mobile message configuration to use. [Learn more](mobile-configuration.md)
 
     ![](assets/sms_create_2.png)
 
@@ -103,7 +103,7 @@ For more information on how to create, configure and publish a journey, refer to
 
 1. From the **[!UICONTROL Action]** tab, click **[!UICONTROL Add action]** and choose **[!UICONTROL Mobile message]**. Then, select or create a new configuration.
 
-    Learn more about Mobile message configuration on [this page](sms-configuration.md).
+    Learn more about Mobile message configuration on [this page](mobile-configuration.md).
 
     ![](assets/sms_create_3.png)
 
@@ -134,7 +134,7 @@ For more information on how to create, configure and activate a campaign, refer 
 
 * [Design a mobile message](design-mobile.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)
-* [Preview, test and send your text message](send-sms.md)
-* [Configure Mobile message channel](sms-configuration.md)
+* [Preview, test and send your text message](send-mobile-message.md)
+* [Configure Mobile message channel](mobile-configuration.md)
 * [Mobile message reports](../reports/journey-global-report-cja-sms.md)
 

@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Iterate over contextual data
@@ -57,7 +57,7 @@ Learn how to use Handlebars iteration syntax to display dynamic lists of data fr
 
 ## Overview {#overview}
 
-Journey Optimizer provides access to contextual data from multiple sources during [message personalization](personalize.md). You can iterate over arrays from these sources using Handlebars syntax in native channels ([email](../email/get-started-email-design.md), [push](../push/create-push.md), [SMS](../sms/create-sms.md)) to display dynamic content like product lists, recommendations, or other repeating elements.
+Journey Optimizer provides access to contextual data from multiple sources during [message personalization](personalize.md). You can iterate over arrays from these sources using Handlebars syntax in native channels ([email](../email/get-started-email-design.md), [push](../push/create-push.md), [SMS](../sms/create-mobile-message.md)) to display dynamic content like product lists, recommendations, or other repeating elements.
 
 **Available context sources:**
 
@@ -1083,4 +1083,4 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 
 **Personalization use cases:** [Cart abandonment email](personalization-use-case-helper-functions.md) | [Order status notification](personalization-use-case.md)
 
-**Message design:** [Get started with email design](../email/get-started-email-design.md) | [Create push notifications](../push/create-push.md) | [Create SMS messages](../sms/create-sms.md) | [Preview and test your content](../content-management/preview-test.md)
+**Message design:** [Get started with email design](../email/get-started-email-design.md) | [Create push notifications](../push/create-push.md) | [Create SMS messages](../sms/create-mobile-message.md) | [Preview and test your content](../content-management/preview-test.md)

@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure subdomains for Mobile message
@@ -65,7 +65,7 @@ topic_v2:
 
 ## Get started with SMS subdomains {#gs-sms-mms-subdomains}
 
-To be able to shorten URLs added to your SMS/MMS messages, you must set up the subdomain you will select when [creating an SMS configuration](sms-configuration.md#sms-prerequisites).
+To be able to shorten URLs added to your SMS/MMS messages, you must set up the subdomain you will select when [creating an SMS configuration](mobile-configuration.md#sms-prerequisites).
 
 You can either use a subdomain that is already delegated to Adobe, or configure another subdomain. Learn more about delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 

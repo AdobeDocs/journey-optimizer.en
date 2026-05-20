@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer guardrails and limitations
@@ -129,7 +129,7 @@ If journey publication fails due to content size, reduce your message content an
 
 ### SMS guardrails {#sms-guardrails}
 
-The following guardrails apply to the [SMS channel](../sms/get-started-sms.md):
+The following guardrails apply to the [SMS channel](../sms/get-started-mobile.md):
 
 * Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
 * Message feedback syncing is not currently available for MMS.

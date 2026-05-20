@@ -46,9 +46,9 @@ When using the Sinch provider with Journey Optimizer, you can find three distinc
 To configure your Sinch provider, follow the steps below:
 
 1. [Create API Credential](#create-api)
-1. [Create Webhook](sms-webhook.md)
-1. [Create Channel configuration](sms-configuration-surface.md)
-1. [Create Journey or Campaign with SMS channel action](create-sms.md)
+1. [Create Webhook](mobile-webhook.md)
+1. [Create Channel configuration](mobile-configuration-surface.md)
+1. [Create Journey or Campaign with SMS channel action](create-mobile-message.md)
 
 ## Configure API credentials for SMS{#create-api}
 
@@ -106,7 +106,7 @@ To configure your Sinch provider to send SMS messages and MMS with Journey Optim
 
     ![](assets/verify-connection.png)
 
-After creating and configuring your API credential, you now need to create [your Webhook](sms-webhook.md) and a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create [your Webhook](mobile-webhook.md) and a channel configuration for your RCS messages. [Learn more](mobile-configuration-surface.md)
 
 ## Configure API credentials for MMS{#sinch-mms}
 
@@ -135,7 +135,7 @@ To configure Sinch MMS to send MMS with Journey Optimizer, follow these steps:
 
 1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
-After creating and configuring your API credential, you now need to create [your Webhook](sms-webhook.md) and a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create [your Webhook](mobile-webhook.md) and a channel configuration for your RCS messages. [Learn more](mobile-configuration-surface.md)
 
 ## Configure API credential for RCS
 
@@ -143,7 +143,7 @@ After creating and configuring your API credential, you now need to create [your
 
 RCS (Rich Communication Services) messaging is supported in Journey Optimizer through Sinch, allowing the sending of basic messages using verified business profiles with branding elements such as logos and sender names. 
 
-Native RCS authoring requires Sinch RCS. Twilio, Infobip, and other providers must use a [custom provider integration](sms-configuration-custom.md).
+Native RCS authoring requires Sinch RCS. Twilio, Infobip, and other providers must use a [custom provider integration](mobile-configuration-custom.md).
 
 Note that messages automatically fall back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 
@@ -175,7 +175,7 @@ To configure Sinch RCS to send RCS with Journey Optimizer, follow these steps:
 
 1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
 
-After creating and configuring your API credential, you now need to create [your Webhook](sms-webhook.md) and a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create [your Webhook](mobile-webhook.md) and a channel configuration for your RCS messages. [Learn more](mobile-configuration-surface.md)
 
 
 <!--
@@ -189,15 +189,15 @@ After creating and configuring your API credential, you now need to create [your
 
     Create a branded RCS agent in the Sinch Dashboard. [Learn more on branded RCS agent](https://community.sinch.com/t5/RCS/Getting-Started-with-RCS-using-Conversation-API/ta-p/17844)
 
-1. **Set up your [Custom API credentials](sms-configuration-custom.md)**
+1. **Set up your [Custom API credentials](mobile-configuration-custom.md)**
     
     Once your RCS agent is approved, you need to set up your Sinch API credentials, which include your access key, secret, and service plan ID. These credentials will be used by Journey Optimizer to authenticate and send messages through Sinch's platform.
 
-1. **Create a [channel configuration](sms-configuration-surface.md) for your RCS messages**
+1. **Create a [channel configuration](mobile-configuration-surface.md) for your RCS messages**
 
     Configure a channel surface in Journey Optimizer by linking your Sinch credentials and defining the messaging parameters. This setup enables you to compose and send RCS messages from Journey Optimizer.
 
-1. **Create and personalize your [SMS message](../sms/create-sms.md)**
+1. **Create and personalize your [SMS message](../sms/create-mobile-message.md)**
 
     Your messages automatically falls back to SMS when the profile's device does not support RCS or is temporarily unreachable via RCS.
 -->

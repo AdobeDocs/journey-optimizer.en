@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure Infobip provider
@@ -38,9 +38,9 @@ By integrating Infobip with Adobe Journey Optimizer, you can deliver text messag
 To configure Infobip as your SMS provider, follow the steps below:
 
 1. [Create API Credential](#api-credential)
-1. [Create Webhook](sms-webhook.md)
-1. [Create Channel configuration](sms-configuration-surface.md)
-1. [Create Journey or Campaign with SMS channel action](create-sms.md)
+1. [Create Webhook](mobile-webhook.md)
+1. [Create Channel configuration](mobile-configuration-surface.md)
+1. [Create Journey or Campaign with SMS channel action](create-mobile-message.md)
 
 ## Configure API credentials for SMS {#api-credential}
 
@@ -96,11 +96,11 @@ To configure Infobip with Journey Optimizer, follow these steps:
 
     ![](assets/verify-connection.png)
 
-After creating and configuring your API credential, you now need to create a channel configuration for SMS and MMS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create a channel configuration for SMS and MMS messages. [Learn more](mobile-configuration-surface.md)
 
 ## Configure API credential for RCS
 
-RCS messaging is supported in Adobe Journey Optimizer through Infobip using the [Custom SMS Provider](sms-configuration-custom.md) feature. This enables the delivery of rich, interactive messages via verified business profiles, incorporating elements such as carousels, buttons, and multimedia content.
+RCS messaging is supported in Adobe Journey Optimizer through Infobip using the [Custom SMS Provider](mobile-configuration-custom.md) feature. This enables the delivery of rich, interactive messages via verified business profiles, incorporating elements such as carousels, buttons, and multimedia content.
 
 ➡️ [Explore how Infobip supports RCS in Infobip documentation](https://www.infobip.com/docs/api/channels/rcs)
 
@@ -114,10 +114,10 @@ To configure RCS with Infobip:
 
 1. **Create an SMS Webhook**
 
-    [Configure a custom SMS webhook](sms-configuration-custom.md#webhook) in Journey Optimizer. This webhook will be responsible for handling delivery receipts, inbound RCS messages, and status updates from Infobip's platform.
+    [Configure a custom SMS webhook](mobile-configuration-custom.md#webhook) in Journey Optimizer. This webhook will be responsible for handling delivery receipts, inbound RCS messages, and status updates from Infobip's platform.
 
 1. **Create API Credential using Custom as SMS vendor**
 
-    [Create a new API credential](sms-configuration-custom.md#api-credential) within Journey Optimizer, selecting "Custom" as the SMS provider. Use the appropriate RCS endpoint authentication method, base URL, and headers.
+    [Create a new API credential](mobile-configuration-custom.md#api-credential) within Journey Optimizer, selecting "Custom" as the SMS provider. Use the appropriate RCS endpoint authentication method, base URL, and headers.
 
-After creating and configuring your API credential, you now need to create [your Webhook](sms-webhook.md) and a channel configuration for your RCS messages. [Learn more](sms-configuration-surface.md)
+After creating and configuring your API credential, you now need to create [your Webhook](mobile-webhook.md) and a channel configuration for your RCS messages. [Learn more](mobile-configuration-surface.md)

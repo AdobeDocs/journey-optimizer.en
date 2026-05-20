@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Design message content
@@ -84,7 +84,7 @@ Design SMS & MMS Messages
 
 Compose personalized text messages with SMS, enhance communications with multimedia content using MMS, and leverage dynamic content for targeted messaging.
 
-[Create Text Messages](../sms/create-sms.md)
+[Create Text Messages](../sms/create-mobile-message.md)
 :::
 
 :::

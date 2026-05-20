@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Manage opt-out
@@ -84,11 +84,11 @@ Learn how to manage opt-out in Journey Optimizer email and SMS messages in these
 <p>
 </td>
 <td>
-<a href="../sms/sms-opt-out.md">
+<a href="../sms/mobile-opt-out.md">
 <img alt="Infrequent" src="../assets/do-not-localize/privacy-sms-opt-out.jpeg" width="50%">
 </a>
 <div>
-<a href="../sms/sms-opt-out.md"><strong>SMS opt-out management</strong></a>
+<a href="../sms/mobile-opt-out.md"><strong>SMS opt-out management</strong></a>
 </div>
 <p></td>
 </tr></table>

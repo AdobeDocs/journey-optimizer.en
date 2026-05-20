@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Custom Dataset for Inbound Keywords
@@ -85,7 +85,7 @@ A dataset is the storage container for ingested data. Each dataset is associated
 
 ## Configure API credentials {#configure-api-credentials}
 
-Configure credentials according to your SMS provider using [Get started with SMS / MMS / RCS configuration](sms-configuration.md). Then complete the steps below to select the custom inbound dataset.
+Configure credentials according to your SMS provider using [Get started with SMS / MMS / RCS configuration](mobile-configuration.md). Then complete the steps below to select the custom inbound dataset.
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** `>` **[!UICONTROL SMS Settings]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 

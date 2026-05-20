@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure your custom provider
@@ -56,9 +56,9 @@ With custom provider configuration, you can connect third-party messaging servic
 To configure your custom provider, follow the steps below:
 
 1. [Create API Credential](#api-credential)
-1. [Create Webhook](sms-webhook.md)
-1. [Create Channel configuration](sms-configuration-surface.md)
-1. [Create Journey or Campaign with SMS channel action](create-sms.md)
+1. [Create Webhook](mobile-webhook.md)
+1. [Create Channel configuration](mobile-configuration-surface.md)
+1. [Create Journey or Campaign with SMS channel action](create-mobile-message.md)
 
 ## Create your API credential {#api-credential}
 
@@ -96,7 +96,7 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 
 1. Add your **[!UICONTROL Provider Payload]** to validate and customize your request payloads. 
    
-   For RCS messages, this payload is later used during [content design](create-sms.md#sms-content).
+   For RCS messages, this payload is later used during [content design](create-mobile-message.md#sms-content).
 
     >[!NOTE]
     >

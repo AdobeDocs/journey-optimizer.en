@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure your SMS Webhook
@@ -90,7 +90,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
     * **[!UICONTROL Select SMS vendor]**: Sinch or Sinch Conversational.
 
-    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](sms-configuration-sinch.md).
+    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](mobile-configuration-sinch.md).
 
     * **[!UICONTROL Sender Phone Number]**: Enter the sender phone number you want to use for your communications.
 
@@ -173,7 +173,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
 If your webhook uses API credentials attached to an existing channel configuration, the webhook takes effect immediately. Otherwise, create a new channel configuration.
 
-➡️[Learn more on channel configuration](sms-configuration-surface.md)
+➡️[Learn more on channel configuration](mobile-configuration-surface.md)
 
 ### For Infobip {#create-webhook-infobip}
 
@@ -191,7 +191,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
     * **[!UICONTROL Type]**: Choose either Feedback or Inbound. You need to create both separately, here, we start with Inbound.
 
-    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](sms-configuration-infobip.md#api-credential).
+    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](mobile-configuration-infobip.md#api-credential).
 
     * **[!UICONTROL Sender Phone Number]**: Enter the sender phone number you want to use for your communications.
 
@@ -281,7 +281,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
 If your webhook uses API credentials attached to an existing channel configuration, the webhook takes effect immediately. Otherwise, create a new channel configuration.
 
-➡️[Learn more on channel configuration](sms-configuration-surface.md)
+➡️[Learn more on channel configuration](mobile-configuration-surface.md)
 
 ### For custom provider {#create-webhook-custom}
 
@@ -299,7 +299,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
     * **[!UICONTROL Type]**: Choose either Feedback or Inbound. You need to create both separately, here, we start with Inbound.
 
-    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](sms-configuration-custom.md).
+    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](mobile-configuration-custom.md).
 
     * **[!UICONTROL Sender Phone Number]**: Enter the sender phone number you want to use for your communications.
 
@@ -436,4 +436,4 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
 If your webhook uses API credentials attached to an existing channel configuration, the webhook takes effect immediately. Otherwise, create a new channel configuration.
 
-➡️[Learn more on channel configuration](sms-configuration-surface.md)
+➡️[Learn more on channel configuration](mobile-configuration-surface.md)

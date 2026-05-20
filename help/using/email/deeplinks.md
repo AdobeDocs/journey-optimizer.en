@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Use and configure deeplinks in email and SMS messages
@@ -42,7 +42,7 @@ For email messages, you have two options to insert a deeplink:
 
 ### SMS {#authoring-sms}
 
-For SMS, deeplinks are authored using the **Url** helper function in the personalization editor. Learn more on adding links to SMS content in [this section](../sms/create-sms.md#sms-content).
+For SMS, deeplinks are authored using the **Url** helper function in the personalization editor. Learn more on adding links to SMS content in [this section](../sms/create-mobile-message.md#sms-content).
 
 To insert deeplinks in SMS content, use the following syntax:
 

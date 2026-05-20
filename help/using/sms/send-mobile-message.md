@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Check and test your Mobile messages
@@ -68,7 +68,7 @@ Note that the character count does not reflect variations introduced by dynamic 
 >
 >Journey Optimizer SMS delivery reporting does not account for concatenated messages and dynamic personalization, thus may not reflect the actual number of messages sent from the provider. For detailed usage and billing information, please contact your Adobe representative.
 >
->To learn best practices for minimizing SMS billing overages, refer to [SMS Best Practices for Character Optimization](sms-cost-optimization.md).
+>To learn best practices for minimizing SMS billing overages, refer to [SMS Best Practices for Character Optimization](mobile-cost-optimization.md).
 
 ## Validate your content {#sms-validate}
 
@@ -100,7 +100,7 @@ When your Mobile message is ready, complete the configuration of your [journey](
 
 **Related topics**
 
-* [Configure SMS channel](sms-configuration.md)
+* [Configure SMS channel](mobile-configuration.md)
 * [SMS/MMS reports](../reports/journey-global-report-cja-sms.md)
-* [Create a Mobile message](create-sms.md)
+* [Create a Mobile message](create-mobile-message.md)
 * [Add a message in a journey](../building-journeys/journey-action.md)
