@@ -396,4 +396,4 @@ The following capabilities and enhancements are scheduled for release later in M
 
 * **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
 
-  Availability date: May 29, 2026
+  Availability date: June 1, 2026
