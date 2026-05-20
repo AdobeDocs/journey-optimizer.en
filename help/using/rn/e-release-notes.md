@@ -114,23 +114,7 @@ The following capabilities are targeted for this release.
 </table>
 -->
 
-<table>
-<thead>
-<tr>
-<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
-<p>This capability is available to all customers as a Public Beta.</p>
-<!--<p><img src="assets/do-not-localize/expression-assistant.gif"></p>-->
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 

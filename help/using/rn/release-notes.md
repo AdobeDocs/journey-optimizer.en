@@ -296,6 +296,24 @@ The following capabilities and enhancements are scheduled for release later in M
 <table>
 <thead>
 <tr>
+<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>This capability is available to all customers as a Public Beta.</p>
+<!--<p><img src="assets/do-not-localize/expression-assistant.gif"></p>-->
+<p>Availability date: May 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Automatic completion for non-recurring Read Audience journeys</strong><br/></th>
 </tr>
 </thead>
@@ -383,7 +401,7 @@ The following capabilities and enhancements are scheduled for release later in M
 
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
 
-  Availability date: May 19, 2026
+  Availability date: June, 1 2026
 
 #### Campaigns
 
