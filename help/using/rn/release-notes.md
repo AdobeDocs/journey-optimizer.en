@@ -1,4 +1,4 @@
----
+﻿---
 solution: Journey Optimizer
 product: journey optimizer
 title: Release notes
@@ -209,7 +209,7 @@ The following improvements were also released in May 2026.
 
 #### Orchestrated campaigns
 
-* **Add links in Enrichment activity** - The Add Link functionality is now available in the Enrichment Activity for Orchestrated Campaigns. This allows you to create a direct relationship between your working table data and your existing database tables.
+* **Add links in Enrichment activity** - The Add Link functionality is now available in the Enrichment Activity for Orchestrated Campaigns. This allows you to create a direct relationship between your working table data and your existing database tables. 
 
 
   Availability date: May 20, 2026

@@ -38,7 +38,7 @@ You can leverage this information to segment your audience more precisely, based
 >title="Enrichment activity"
 >abstract="Once enrichment data has been added to the Orchestrated campaign, it can be used in the activities added after the Enrichment activity to segment customers into distinct groups based on their behaviors, preferences, and needs, or to create personalized marketing messages and campaigns that are more likely to resonate with your target audience."
 
-Follow these steps to configure the **Enrichment** activity:
+Follow these steps to configure the **Enrichment** activity: 
 
 1. Add an **Enrichment** activity.
 
