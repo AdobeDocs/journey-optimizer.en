@@ -1,4 +1,4 @@
-﻿---
+---
 solution: Journey Optimizer
 product: journey optimizer
 title: Edit the Action campaign content

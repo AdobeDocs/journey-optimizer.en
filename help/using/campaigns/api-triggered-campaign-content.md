@@ -1,4 +1,4 @@
-﻿---
+---
 solution: Journey Optimizer
 product: journey optimizer
 title: Edit the API triggered campaign content

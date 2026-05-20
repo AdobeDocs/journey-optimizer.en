@@ -1,4 +1,4 @@
-﻿---
+---
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer Get Started for System Admin

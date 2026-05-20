@@ -1,4 +1,4 @@
-﻿---
+---
 solution: Journey Optimizer
 product: journey optimizer
 title: Add a channel activity in a multistep campaign

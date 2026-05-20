@@ -1,4 +1,4 @@
-﻿---
+---
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Manage consent

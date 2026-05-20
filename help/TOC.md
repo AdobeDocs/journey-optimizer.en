@@ -1,4 +1,4 @@
-﻿---
+---
 product: Journey Optimizer
 audience: end-user
 user-guide-title: Journey Optimizer Guide
@@ -336,7 +336,7 @@ solution: Journey Optimizer
   + SMS / MMS / RCS channel {#sms}
     + [Get started with Mobile messaging](using/mobile/get-started-mobile.md)
     + [Create a Mobile message](using/mobile/create-mobile-message.md)
-    + [Design a Mobile message](using/mobile/design-sms.md)
+    + [Design a Mobile message](using/mobile/design-mobile.md)
     + [Check & send your Mobile messages](using/mobile/send-mobile-message.md)
     + [Manage Mobile message opt-out](using/mobile/mobile-opt-out.md)
     + [Set up SMS subdomains](using/mobile/mobile-subdomains.md)

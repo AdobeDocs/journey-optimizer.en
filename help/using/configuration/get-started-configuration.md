@@ -1,4 +1,4 @@
-﻿---
+---
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with [!DNL Journey Optimizer] channels configuration
