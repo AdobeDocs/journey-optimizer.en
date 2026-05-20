@@ -220,6 +220,12 @@ The following improvements were also released in May 2026.
 
   Availability date: May 6, 2026
 
+* **Adobe Experience Manager content fragments in Decisioning** - You can now map Adobe Experience Manager content fragments to decision items in Decisioning and leverage them inside decision policies to deliver the right fragment to the right customer at the right time. [Read more](../integrations/aem-fragments.md#aem-decisioning)
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: May 20, 2026
+
 #### SMS
 
 <!--

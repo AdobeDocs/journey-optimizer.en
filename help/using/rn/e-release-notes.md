@@ -173,15 +173,6 @@ The following improvements are targeted for this release.
 
 
 
-#### Decisioning
-
-* **Adobe Experience Manager content fragments in Decisioning** - You can now map Adobe Experience Manager content fragments to decision items in Decisioning and leverage them inside decision policies to deliver the right fragment to the right customer at the right time.
-
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
-
-  Availability date: May 19, 2026
-
 #### Email Designer
 
 * **Rich text in editable fragment fields** - You can now add rich text to customizable fragments that are used in your email content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
