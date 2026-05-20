@@ -524,7 +524,6 @@ solution: Journey Optimizer
     + [Generate full content with AI](using/content-management/generative-full-content.md)
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
-    + [Content experiment with AI](using/content-management/generative-experimentation.md)
     + [AI Assistant for Personalization Expressions](using/content-management/generative-personalization-expressions.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)
     + Brands {#brands}
