@@ -333,7 +333,7 @@ solution: Journey Optimizer
       + [Configure push notification channel](using/push/push-configuration.md)
       + [Configure web push notification channel](using/push/push-configuration-web.md)
       + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
-  + SMS / MMS / RCS channel {#sms}
+  + SMS / MMS / RCS channel {#mobile}
     + [Get started with Mobile messaging](using/mobile/get-started-mobile.md)
     + [Create a Mobile message](using/mobile/create-mobile-message.md)
     + [Design a Mobile message](using/mobile/design-mobile.md)
@@ -341,7 +341,7 @@ solution: Journey Optimizer
     + [Manage Mobile message opt-out](using/mobile/mobile-opt-out.md)
     + [Set up SMS subdomains](using/mobile/mobile-subdomains.md)
     + [Best practices for SMS cost optimization](using/mobile/mobile-cost-optimization.md)
-    + Configure Mobile channel {#configure-sms}
+    + Configure Mobile channel {#configure-mobile}
       + [Get started with Mobile configuration](using/mobile/mobile-configuration.md)
       + [Configure Sinch provider](using/mobile/mobile-configuration-sinch.md)
       + [Configure Infobip provider](using/mobile/mobile-configuration-infobip.md)
