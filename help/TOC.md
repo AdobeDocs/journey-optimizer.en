@@ -1,4 +1,4 @@
-﻿---
+---
 product: Journey Optimizer
 audience: end-user
 user-guide-title: Journey Optimizer Guide
