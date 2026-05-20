@@ -52,4 +52,4 @@ Learn how to manage subscription topics and channel preferences using consent po
 - **[Get started with privacy](../using/privacy/get-started-privacy.md)** - Overview of privacy management in Journey Optimizer, including data requests and audit logs.
 - **[Data Governance](../using/action/action-privacy.md)** - Protect sensitive fields from being exported to third-party systems through custom actions.
 - **[Manage email opt-out](../using/email/email-opt-out.md)** - Configure email-specific opt-out and unsubscription handling.
-- **[Manage text message opt-out](../using/sms/sms-opt-out.md)** - Configure SMS/MMS/RCS opt-out and unsubscription handling.
+- **[Manage text message opt-out](../using/mobile/mobile-opt-out.md)** - Configure SMS/MMS/RCS opt-out and unsubscription handling.

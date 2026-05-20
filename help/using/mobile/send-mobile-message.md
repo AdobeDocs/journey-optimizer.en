@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Check and test your text messages
-description: Learn how to check and send your text messages in Journey Optimizer
+title: Check and test your Mobile messages
+description: Learn how to check and send your Mobile messages in Journey Optimizer
 feature: SMS
 topic: Content Management
 role: User
@@ -42,9 +42,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 ---
-# Check & send your text message (SMS/MMS){#send-sms}
+# Check & send your Mobile message {#send-sms}
 
-## Preview your text message {#preview-sms}
+## Preview your Mobile message {#preview-sms}
 
 Once your message content has been defined, you can use test profiles or sample input data (uploaded from a CSV/JSON file or added manually) to preview its content. If you inserted personalized content, you can check how this content is displayed in the message. 
 
@@ -56,7 +56,7 @@ Detailed information on how to preview & test content is available in the [Conte
 
 ### Character encoding and limits {#sms-character-limits}
 
-A character count is displayed when accessing **[!UICONTROL Simulate content]** menu to assist in planning and managing your SMS messages.
+A character count is displayed when accessing **[!UICONTROL Simulate content]** menu to assist in planning and managing your Mobile messages.
 
 ![](assets/sms_preview_3.png)
 
@@ -68,7 +68,7 @@ Note that the character count does not reflect variations introduced by dynamic 
 >
 >Journey Optimizer SMS delivery reporting does not account for concatenated messages and dynamic personalization, thus may not reflect the actual number of messages sent from the provider. For detailed usage and billing information, please contact your Adobe representative.
 >
->To learn best practices for minimizing SMS billing overages, refer to [SMS Best Practices for Character Optimization](sms-cost-optimization.md).
+>To learn best practices for minimizing SMS billing overages, refer to [SMS Best Practices for Character Optimization](mobile-cost-optimization.md).
 
 ## Validate your content {#sms-validate}
 
@@ -80,7 +80,7 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 
 ![](assets/sms-alert-button.png)
 
-* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your text message is empty or if character limits may be exceeded with dynamic content.
+* **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your Mobile message is empty or if character limits may be exceeded with dynamic content.
 
     **Character limits:** 160 characters per segment (GSM 7-bit), 70 for Unicode/emojis, up to 1500 characters total.
 
@@ -90,17 +90,17 @@ The alert **"The SMS text character limit has been exceeded"** may appear even w
 
 Validation calculates maximum length for all possible profile data, while simulation shows actual output for one test profile.
 
-## Send your text messages {#sms-send}
+## Send your Mobile messages {#sms-send}
 
 >[!IMPORTANT]
 >
-> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your text messages. [Learn more](../test-approve/gs-approval.md)
+> If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your Mobile messages. [Learn more](../test-approve/gs-approval.md)
 
-When your text message is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
+When your Mobile message is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
 
 **Related topics**
 
-* [Configure SMS channel](sms-configuration.md)
+* [Configure SMS channel](mobile-configuration.md)
 * [SMS/MMS reports](../reports/journey-global-report-cja-sms.md)
-* [Create a text message](create-sms.md)
+* [Create a Mobile message](create-mobile-message.md)
 * [Add a message in a journey](../building-journeys/journey-action.md)

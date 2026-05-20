@@ -8,7 +8,6 @@ topic: Content Management
 role: User, Developer
 level: Intermediate
 keywords: deeplink, deep link, universal links, app links, email, sms
-
 ---
  
 # Use and configure deeplinks in emails and SMS {#deeplinks}
@@ -43,7 +42,7 @@ For email messages, you have two options to insert a deeplink:
 
 ### SMS {#authoring-sms}
 
-For SMS, deeplinks are authored using the **Url** helper function in the personalization editor. Learn more on adding links to SMS content in [this section](../sms/create-sms.md#sms-content).
+For SMS, deeplinks are authored using the **Url** helper function in the personalization editor. Learn more on adding links to SMS content in [this section](../mobile/create-mobile-message.md#sms-content).
 
 To insert deeplinks in SMS content, use the following syntax:
 

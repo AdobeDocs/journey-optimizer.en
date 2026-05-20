@@ -35,7 +35,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
 ---
-# Create a SMS/MMS/RCS configuration {#message-preset-sms}
+# Create a Mobile message configuration {#message-preset-sms}
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_sms_type"
@@ -43,7 +43,7 @@ topic_v2:
 >abstract="Select the type of text messages using this configuration: Marketing for promotional messages, which require user consent, or Transactional for non-commercial messages, such as password reset."
 >additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/privacy/consent/opt-out.html#sms-opt-out-management" text="Opt-out in marketing text messages"
 
-Once your SMS/MMS/RCS channel has been configured, you must create a channel configuration to be able to send SMS, RCS and MMS messages from **[!DNL Journey Optimizer]**. 
+Once your Mobile message channel has been configured, you must create a channel configuration to be able to send SMS, RCS and MMS messages from **[!DNL Journey Optimizer]**. 
 
 To create a channel configuration, follow these steps:
 
@@ -51,7 +51,7 @@ To create a channel configuration, follow these steps:
 
     ![](assets/preset-create.png)
 
-1. Enter a name and a description (optional) for the configuration, then select the SMS channel.
+1. Enter a name and a description (optional) for the configuration, then select the Mobile channel.
 
     ![](assets/sms-create-surface.png)
 
@@ -59,32 +59,28 @@ To create a channel configuration, follow these steps:
     >
     > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
 
-1. Define the **SMS settings**.
+1. Select the **[!UICONTROL SMS Type]** for this configuration:
 
-    ![](assets/sms-surface-settings.png){width=80%}
-
-    Start by selecting the **[!UICONTROL SMS Type]** that will be sent with the configuration: **[!UICONTROL Transactional]** or **[!UICONTROL Marketing]**.
-
-    * Choose **Marketing** for promotional text messages: these messages require user consent.
-    * Choose **Transactional** for non-commercial messages such as order confirmation, password reset notifications, or delivery information for example.
-
-    When creating a SMS/MMS, you must choose a valid channel configuration matching the category you selected for your message.
+    * **[!UICONTROL Marketing]**: for promotional messages that require user consent.
+    * **[!UICONTROL Transactional]**: for non-commercial messages such as order confirmations, password resets, or delivery updates.
 
     >[!CAUTION]
     >
-    >**Transactional** messages can be sent to profiles who unsubscribed from marketing communications. These messages can only be sent in specific contexts.
+    >**Transactional** messages can be sent to profiles who have unsubscribed from marketing communications, but only in specific contexts.
+  
+    ![](assets/sms-surface-settings.png){width=80%}
     
-1. Select the **[!UICONTROL SMS configuration]** to associate with the configuration.
+1. Select the **[!UICONTROL Mobile configuration]** to associate with the configuration.
         
-    For more on how to configure your environment to send SMS messages, refer to [this section](#create-api).
+    For more on how to configure your environment to send Mobile messages, refer to [this section](#create-api).
 
 1. Enter the **[!UICONTROL Sender number]** ​you want to use for your communications.
 
-1. If you want to use the URL shortening function in your SMS messages, select an item from the **[!UICONTROL Subdomain]** list. 
+1. If you want to use the URL shortening function in your Mobile messages, select an item from the **[!UICONTROL Subdomain]** list.
 
     >[!NOTE]
     >
-    >To be able to select a subdomain, make sure you have previously configured at least one SMS/MMS subdomain. [Learn how](sms-subdomains.md)
+    >To be able to select a subdomain, make sure you have previously configured at least one SMS/MMS subdomain. [Learn how](mobile-subdomains.md)
 
 1. In the **[!UICONTROL Execution dimension]** section, use the **[!UICONTROL SMS Execution Field]** to select amongst the profile attributes the phone number that you want to use in priority if several numbers are available in the database. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
 
