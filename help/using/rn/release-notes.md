@@ -207,6 +207,13 @@ The following capabilities were released in May 2026.
 
 The following improvements were also released in May 2026.
 
+#### Orchestrated campaigns
+
+* **Add links in Enrichment activity** - The Add Link functionality is now available in the Enrichment Activity for Orchestrated Campaigns. This allows you to create a direct relationship between your working table data and your existing database tables.
+
+
+  Availability date: May 20, 2026
+
 #### Decisioning
 
 * **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
@@ -360,13 +367,6 @@ The following capabilities and enhancements are scheduled for release later in M
 
   Availability date: May 21, 2026
   
-#### Orchestrated campaigns
-
-* **Add links in Enrichment activity** - The Add Link functionality is now available in the Enrichment Activity for Orchestrated Campaigns. This allows you to create a direct relationship between your working table data and your existing database tables.
-
-
-  Availability date: May 26, 2026
-
 * **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
 
 
