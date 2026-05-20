@@ -356,7 +356,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <td>
 <p>Orchestrated campaigns now support loading a CSV or TXT file directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. This supports ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical. </p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: May 28, 2026</p>
+<p>Availability date: June, 1 2026</p>
 </td>
 </tr>
 </tbody>
@@ -381,7 +381,7 @@ The following capabilities and enhancements are scheduled for release later in M
 * **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
 
 
-  Availability date: May 28, 2026
+  Availability date: June, 1 2026
 
 #### Email
 
