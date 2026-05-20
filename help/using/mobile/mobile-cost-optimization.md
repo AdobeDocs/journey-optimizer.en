@@ -34,7 +34,7 @@ topic_v2:
 ---
 # Best practices for SMS cost optimization {#sms-cost-optimization}
 
-SMS messages are typically billed by providers based on a 160-character limit per message. Sending SMS messages can incur additional costs if messages are split into multiple parts. 
+SMS messages are typically billed by providers based on a 160-character limit per message. Sending SMS messages can incur additional costs if messages are split into multiple parts.  
 
 Follow these guidelines to optimize your messaging strategy and reduce expenses.
 
@@ -54,7 +54,7 @@ For example, a 1,600-character message could consume 10 SMS credits, even though
 
 ## Avoid special characters that increase length {#avoid-special-characters}
 
-Certain characters—such as `| ^ € { } [ ] ~ \` are counted as two characters in GSM encoding. Including these characters can cause your message to exceed the **160-character limit** more quickly.
+Certain characters—such as `| ^ &euro; { } [ ] ~ \` are counted as two characters in GSM encoding. Including these characters can cause your message to exceed the **160-character limit** more quickly.
 
 ## Prevent UCS-2 encoding {#prevent-ucs2-encoding}
 
