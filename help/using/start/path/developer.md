@@ -233,7 +233,7 @@ Journey Optimizer provides comprehensive REST APIs for programmatic access:
 
 1. **Decisioning migration APIs**: Programmatically migrate Decision Management entities to Decisioning with flexible scopes, automated validation, and rollback support. Learn more in the [Decisioning migration API guide](../../experience-decisioning/decisioning-migration-api.md).
 
-1. **SMS Webhooks**: Configure inbound webhooks to capture incoming messages and feedback webhooks to receive delivery receipts and status updates. [Learn more](../../sms/sms-webhook.md).
+1. **SMS Webhooks**: Configure inbound webhooks to capture incoming messages and feedback webhooks to receive delivery receipts and status updates. [Learn more](../../mobile/mobile-webhook.md).
 
 ## Testing and debugging {#testing}
 

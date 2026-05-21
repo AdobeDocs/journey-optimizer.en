@@ -202,6 +202,5 @@ The following guardrails apply to [AI Assistant for personalization expressions]
 
 ## Additional resources
 
-* **[Generative experimentation](generative-experimentation.md)** - Understand how to combine AI-generated content with experimentation.
 * **[AI Assistant use cases](generative-uc.md)** - Learn through use cases how to use AI Assistant
 * **[AI Assistant tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/ai-assistant){target="_blank"}** - Explore step-by-step video tutorials on AI Assistant features and best practices.

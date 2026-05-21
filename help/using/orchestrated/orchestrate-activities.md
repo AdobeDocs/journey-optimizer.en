@@ -109,6 +109,8 @@ To achieve this, activities below have been added:
 * A **[!UICONTROL Combine]** activity excludes customers with less than 50 loyalty points,
 * An **[!UICONTROL Email delivery]** activity sends an email to the resulting customers. 
 
+When you reach the end of a branch, you can add an **[!UICONTROL End]** activity to mark completion on the canvas. You can also configure that **[!UICONTROL End]** activity to send a signal to another Orchestrated campaign that is set to **[!UICONTROL Triggered by a signal]**, and pass parameters in the payload. [Learn more](trigger-orchestrated-campaign.md#signal-end).
+
 ## Next steps {#next}
 
 After successfully designing the Orchestrated campaign canvas, you can execute the Orchestrated campaign and track the progress of its various tasks. [Learn how to start an Orchestrated campaign and monitor its execution](start-monitor-campaigns.md)

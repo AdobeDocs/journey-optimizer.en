@@ -23,6 +23,7 @@ exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
 * **Create challenges** ◀︎ **You are here**
 * [Create tasks](create-tasks.md)
 * [Monitor loyalty challenge performance](loyalty-reporting.md)
+<!-- * [Configure the loyalty program](loyalty-admin.md) -->
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
 >[!ENDSHADEBOX]
@@ -180,6 +181,8 @@ To configure when and how rewards are delivered:
      *Example: Award 10 points after task 1, 20 points after task 2, and 50 points after task 3*
 
 1. Select your reward provider. This is your loyalty solution that manages customer points and rewards.
+
+   <!-- Reward providers are created in **[!UICONTROL Loyalty Admin]** before you author challenges. [Learn how to configure reward providers](loyalty-admin.md#reward-providers). -->
 
    ![](assets/challenge-create-reward-type.png)
 

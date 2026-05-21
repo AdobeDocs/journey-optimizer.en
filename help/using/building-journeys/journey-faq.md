@@ -690,7 +690,7 @@ Yes. Use an **[Optimize activity](conditions.md)** to route profiles based on th
 2. Create a path for each channel by checking the preferred channel profile attribute (e.g., `profile.preferredChannel`)
 3. Configure channel-specific paths:
    * **Email path**: Add an [email action](../email/create-email.md) with email-optimized content
-   * **SMS path**: Add an [SMS action](../sms/create-sms.md) with concise messaging
+   * **SMS path**: Add an [SMS action](../mobile/create-mobile-message.md) with concise messaging
    * **Push path**: Add a [push notification action](../push/create-push.md) with short, actionable content
    * **In-app path**: Add an [in-app message action](../in-app/create-in-app.md) for engaged app users
 4. Add a default path for profiles without a preference, routing them to your primary channel

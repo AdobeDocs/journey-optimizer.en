@@ -134,8 +134,6 @@ After generating content variations, you can fine-tune the results to ensure the
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content. 
 
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
-
 1. Insert personalization fields to customize your content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
 1. Review and activate your content:
@@ -238,8 +236,6 @@ After reviewing your generated push notification variations, you can polish the 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
-
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
 1. Insert personalization fields to customize your push notification content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 

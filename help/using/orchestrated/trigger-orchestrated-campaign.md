@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Trigger an Orchestrated campaign using a signal
-description: Learn how to trigger an Orchestrated campaign using a signal and pass parameters that become available as in the campaign.
+description: Learn how to trigger an Orchestrated campaign with a signal from the REST API or from another campaign's End activity, and how to pass parameters into the campaign.
 feature: Campaigns
 topic: Content Management
 role: Developer
@@ -12,9 +12,14 @@ exl-id: d1fd072d-b143-4752-822f-23f98684ba80
 ---
 # Trigger Orchestrated campaigns using a signal {#trigger-signal}
 
-You can trigger an Orchestrated campaign by sending it a signal instead of running it on a schedule. The signal is sent via an API call from an external system or application. When using a signal, you can pass parameters that become available as variables in the campaign — for use in targeting, conditions, or expressions.
+You can start an Orchestrated campaign with a signal instead of a fixed schedule. When the campaign receives the signal, it runs and you can pass parameters in the payload. They become available as variables for targeting, conditions, or expressions.
 
-This page explains how to configure and trigger a signal. Once the variables are available, for details on how to use them in rules and **[!UICONTROL Test]** conditions, see [Use variables in Orchestrated campaigns](variables-orchestrated-campaigns.md).
+The signal can come from either of the following:
+
+* REST API — Your application or integration calls the trigger endpoint (see [Publish and trigger the campaign](#publish) and the [API reference](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"}).
+* Another Orchestrated campaign — The **[!UICONTROL End]** activity of an upstream campaign sends the same kind of signal when a branch completes. [Learn how to configure the End activity](#signal-end).
+
+This page explains how to set up the campaign that receives the signal (schedule, parameters, test, publish), then how to fire it from the API or from an **[!UICONTROL End]** activity. Once the variables are available, for details on how to use them in rules and **[!UICONTROL Test]** conditions, see [Use variables in Orchestrated campaigns](variables-orchestrated-campaigns.md).
 
 For the full REST specification of the trigger endpoint (paths, headers, body, responses, and errors), see [Trigger Orchestrated campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} in the Adobe Journey Optimizer API documentation.
 
@@ -43,7 +48,7 @@ To set an orchestrated campaign to start on a signal instead of a schedule, foll
 
 ## Add parameters for the signal payload (optional) {#parameters}
 
-You can pass parameters in the trigger signal and use them in your campaign in the execution context — for example, in targeting, conditions, or expressions. Define each parameter in the schedule settings first, then pass its value when you call the trigger API.
+You can pass parameters in the trigger signal and use them in your campaign in the execution context — for example, in targeting, conditions, or expressions. Define each parameter in the schedule settings first, then pass its value when you call the trigger API or when you map parameters from an upstream campaign's **[!UICONTROL End]** activity ([see below](#signal-end)).
 
 1. Open the campaign scheduler and select **[!UICONTROL Add parameter]**.
 
@@ -53,11 +58,15 @@ You can pass parameters in the trigger signal and use them in your campaign in t
 
 >[!NOTE]
 >
->If you pass a parameter in the API call that has not been defined in the scheduler, the API call still succeeds and the parameter is propagated, and you can use it in expressions. However, the orchestrated campaign interface will not help you use it — for example, the Test activity will not list or show parameters that were not defined in the scheduler.
+>For Orchestrated campaigns triggered by the REST API, if you pass a parameter in the API call that has not been defined in the scheduler, the API call still succeeds and the parameter is propagated, and you can use it in expressions. However, the orchestrated campaign interface will not help you use it — for example, the Test activity will not list or show parameters that were not defined in the scheduler.
 
-## Build and test the campaign {#build-and-test}
+## Test the campaign {#build-and-test}
 
-Build your campaign on the canvas, then optionally test it in draft by triggering the signal via the API before you publish.
+Build your campaign on the canvas, then test it in **[!UICONTROL Draft]** before you publish by sending the signal through the REST API.
+
+* **Orchestrated campaigns triggered by the REST API** — Use the steps below to run the campaign in draft and validate targeting, parameters, and delivery logic before publication.
+
+* **Orchestrated campaigns triggered by an End activity** — You cannot run the full chain end-to-end in draft: once the upstream campaign is published, its **[!UICONTROL End]** activity only starts a published downstream campaign. To test the downstream side before both campaigns are published, keep that campaign in **[!UICONTROL Draft]**, set **[!UICONTROL Test values]** for your signal parameters in the scheduler ([Add parameters for the signal payload](#parameters)), then follow the API steps below. The trigger API call uses the same payload as an **[!UICONTROL End]** activity at runtime, so you can validate parameter routing and canvas logic before you publish the downstream campaign and configure the upstream **[!UICONTROL End]** activity ([Trigger from another campaign's End activity](#signal-end)).
 
 1. Add and connect activities (audience, targeting, deliveries) on the canvas. [Learn how to orchestrate campaign activities](orchestrate-activities.md)
 
@@ -106,9 +115,13 @@ When you are satisfied with the test results, [publish the campaign](#publish).
 
 ## Publish and trigger the campaign {#publish}
 
-After you have [built and tested the campaign](#build-and-test), publish the campaign so it can be triggered from your application.
+After you have [tested the campaign](#build-and-test), publish it so it can receive a signal from your application or from another campaign's **[!UICONTROL End]** activity. [Learn more on starting and monitoring the campaign](start-monitor-campaigns.md#publish).
 
-1. Click **[!UICONTROL Publish]** in the campaign canvas. The campaign must be published before it can be triggered from an external system. [Learn more on starting and monitoring the campaign](start-monitor-campaigns.md#publish).
+You can then trigger it from the REST API or from another campaign's **[!UICONTROL End]** activity. See the sections below.
+
+### Send the signal with the REST API {#publish-api}
+
+After publication, follow these steps each time you trigger the campaign from your own application:
 
 1. Open the campaign scheduler, select **[!UICONTROL Copy API request]**  and choose the format (cURL or HTTP Request).
 
@@ -120,8 +133,30 @@ After you have [built and tested the campaign](#build-and-test), publish the cam
 
    >[!IMPORTANT]
    >
-   >For a live orchestrated campaign, a throttle guardrail enforces a **minimum interval of one hour** between two API trigger executions. If you call the API again before that interval has elapsed, the API returns **HTTP 429** error (Too many requests). This guardrail is not applied when you trigger a draft version to test it.
+   >For a live orchestrated campaign, a throttle guardrail enforces a minimum interval of one hour between two API trigger executions. If you call the API again before that interval has elapsed, the API returns HTTP 429 (Too many requests). This guardrail is not applied when you trigger a draft version to test it.
 
    If you added parameters to the signal payload, the values you pass in the API call are exposed as campaign event variables when the campaign runs. To inspect them, open the campaign logs from the campaign canvas toolbar. In the **[!UICONTROL Tasks]** tab, identify the task corresponding to the signal and click the pencil icon to access the related event variables. [Learn how to access logs and tasks](start-monitor-campaigns.md#logs-tasks).
 
    ![Logs and tasks screen where campaign event variables are available](assets/trigger-events-variables.png){zoomable="yes"}
+
+### Send the signal from another campaign's End activity {#signal-end}
+
+Use this path to chain Orchestrated campaigns: when the upstream campaign finishes a branch, the **[!UICONTROL End]** activity sends a signal to a downstream campaign that is already set to **[!UICONTROL Triggered by a signal]**. That lets you reuse smaller campaigns and pass a different payload from each caller.
+
+>[!NOTE]
+>
+>* You can use several **[!UICONTROL End]** activities on the same canvas and configure each one to trigger a different downstream campaign.
+>* Several campaigns can trigger the same downstream campaign. Each call can send a different payload.
+
+Follow these steps on the campaign that should run first:
+
+1. Open the Orchestrated campaign that should send the signal and select an **[!UICONTROL End]** activity at the end of the branch that must complete before the downstream campaign starts.
+1. In the **[!UICONTROL External signal]** section, select the downstream campaign to trigger.
+
+1. Optionally, add parameters: use the same names as on the downstream campaign's schedule, and set each value.
+
+   ![](assets/end-signal.png)
+
+1. To test the downstream campaign in draft mode before publishing it, follow the steps in the [test the campaign](#build-and-test) section to trigger it in draft with the REST API.
+
+The downstream campaign must be published before the upstream campaign runs far enough to reach the **[!UICONTROL End]** activity that triggers it. If the signal is sent while the target campaign is not published, execution will fail. Publish the downstream campaign, then resume or restart as needed.

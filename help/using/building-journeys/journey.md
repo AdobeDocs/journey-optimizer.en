@@ -152,7 +152,7 @@ Choose how customers enter: through an event, audience segment, or audience qual
 
 **Send messages**
 
-Use built-in channel actions for email, push, SMS/MMS, in-app, web, and more—all designed in Journey Optimizer.
+Use built-in channel actions for email, push, SMS/RCS/MMS, in-app, web, and more—all designed in Journey Optimizer.
 
 [Send messages in journeys](journey-action.md)
 :::

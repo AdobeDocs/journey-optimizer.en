@@ -43,6 +43,7 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | Total decision items | 10K |
 | Max size of items including attributes (1KB), max of 30 attributes | 1KB |
 | Frequency rules - Max number of capping rules per decision item | 10 |
+| Max number of AEM Content Fragments per decision item | 5 |
 
 ## Item collections {#item-collections}
 
