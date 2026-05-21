@@ -82,7 +82,8 @@ hide: true
 <tbody>
 <tr>
 <td>
-<p>Use the new <strong>Optimize</strong> node to target specific audiences and determine the best path to meet your business-centric KPIs. This tool allows you to develop more effective, personalized marketing campaigns that improve critical customer engagement KPIs such as conversions and revenue.</p>
+<p>Use the new <strong>Optimize</strong> node to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
+<p>This tool allows you to develop more effective marketing campaigns that are more likely to resonate at the 1:1 level, improve marketing personalization efforts for customers and enhance critical customer engagement KPIs, such as conversions and revenue.</p>
 <p>Previously available in Limited Availability, this capability is now available to all environments.</p>
 <p>Availability date: May 21, 2026</p>
 </td>
@@ -209,7 +210,7 @@ hide: true
 
 ### WhatsApp {#may-26-whatsapp}
 
-* **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone** button types. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
+* **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
 
 * **WhatsApp channel context data** - Journey Optimizer now captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO EmailTrackingExperienceEvent Dataset** under the `whatsAppChannelContext` field group.
 
@@ -303,7 +304,9 @@ The following capabilities and enhancements are scheduled for release later in M
 </tbody>
 </table>
 
-* **Automatic completion for non-recurring Read Audience journeys** - Non-recurring **Read Audience** journeys now automatically transition to **Stopped** status once the last active profile exits. Previously, these journeys remained **Live** until the 91-day global timeout expired — even when no profiles were flowing through them. Note that this behavior does not apply to journeys that include Wait nodes, Reaction nodes, or event-triggered transitions.
+* **Automatic completion for non-recurring Read Audience journeys** - Non-recurring **Read Audience** journeys now automatically transition to **Stopped** status once the last active profile exits. Previously, these journeys remained **Live** until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.
+
+  Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.
 
   Availability date: May 21, 2026
 
