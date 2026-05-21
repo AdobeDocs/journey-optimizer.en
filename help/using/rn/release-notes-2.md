@@ -140,22 +140,11 @@ hide: true
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Automatic completion for non-recurring Read Audience journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Non-recurring <strong>Read Audience</strong> journeys now automatically transition to <strong>Stopped</strong> status once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.</p>
-<p>Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.</p>
-<p>Availability date: May 21, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
+* **Automatic completion for non-recurring Read Audience journeys** - Non-recurring **Read Audience** journeys now automatically transition to **Stopped** status once the last active profile exits. Previously, these journeys remained **Live** until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.
+
+  Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.
+
+  Availability date: May 21, 2026
 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding `subType: "certificateCredential"` to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID.
 
@@ -165,7 +154,7 @@ hide: true
 
   Availability date: June 1, 2026
 
-* **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
+* **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID — no schema labeling required.
 
   Availability date: June 1, 2026
 
@@ -285,7 +274,7 @@ hide: true
 <tbody>
 <tr>
 <td>
-<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
+<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer. This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
 <p><img src="assets/do-not-localize/deeplinks.gif"></p>
 <p>For more information, refer to the <a href="../email/deeplinks.md">detailed documentation</a>.</p>
 <p>Availability date: May 12, 2026</p>
@@ -295,8 +284,6 @@ hide: true
 </table>
 
 **Coming soon**
-
-* **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. 
 
   Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
 
@@ -329,7 +316,7 @@ hide: true
 </tbody>
 </table>
 
-* **Character Count** - In Adobe Journey Optimizer, you can now use the Character Count to monitor the length of your SMS messages in real time. It helps you see when a message will be split into multiple segments to better manage formatting and avoid unexpected increases in sending costs. [Read more](../mobile/create-mobile-message.md)
+* **Character Count** - You can now use the Character Count to monitor the length of your SMS messages in real time. It helps you see when a message will be split into multiple segments to better manage formatting and avoid unexpected increases in sending costs. [Read more](../mobile/create-mobile-message.md)
 
 * **SMS inbounds to a custom dataset** - In **SMS API credentials**, route **inbound SMS** to a **custom, profile-enabled Experience Event dataset** you select instead of only the default tracking dataset. [Read more](../mobile/mobile-webhook.md)
 
@@ -341,7 +328,7 @@ hide: true
 
 * **WhatsApp channel context data** - Journey Optimizer now captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO EmailTrackingExperienceEvent Dataset** under the `whatsAppChannelContext` field group.
 
-  +++ The following fields are captured and can be used to build audiences and analyze WhatsApp engagement
+  +++ Fields captured for WhatsApp audience building and engagement analysis
 
   * **`messageType`** – WhatsApp message type (e.g. `templateBased`, `response`)
   * **`inboundMessage`** – Inbound reply content (e.g. `stop`, `start`, `subscribe`)
@@ -388,14 +375,14 @@ hide: true
 <table>
 <thead>
 <tr>
-<th><strong>Integrations</strong><br/></th>
+<th><strong>Integrations (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
-<p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
+<p>Previously released in Beta, this capability is now available to all environments.</p>
 <p>For more information, refer to the <a href="../integrations/integrations.md">detailed documentation</a>.</p>
 <p>Availability date: May 4, 2026</p>
 </td>
