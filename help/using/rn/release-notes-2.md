@@ -24,18 +24,18 @@ hide: true
 
 >[!NOTE]
 >
->Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries marked **Coming soon** are scheduled for release in the next few days. Information is subject to change.
+>Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries marked **Coming soon** are scheduled for release in the next few days or weeks. Information in these sections is subject to change.
 
 ## May '26 release notes {#may-26-rn}
 
 ### Journeys {#may-26-journeys}
 
-The following capabilities and improvements have been added to journeys in this release. Additional changes are also targeted this month — see the [Coming soon](#may-26-journeys-coming-soon) section below.
+The following capabilities and improvements have been added to journeys in this release. Additional changes are also expected in the upcoming days or weeks — see the [Coming soon](#may-26-journeys-coming-soon) section below.
 
 <table>
 <thead>
 <tr>
-<th><strong>Journey Fragments</strong><br/></th>
+<th><strong>Journey Fragments (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -55,7 +55,7 @@ The following capabilities and improvements have been added to journeys in this 
 <table>
 <thead>
 <tr>
-<th><strong>Journey simulation</strong><br/></th>
+<th><strong>Journey simulation (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -108,12 +108,12 @@ The following capabilities and improvements have been added to journeys in this 
 
 #### Coming soon {#may-26-journeys-coming-soon}
 
-The following journey capabilities are scheduled for release later this month. Information is subject to change.
+The following journey capabilities are expected in the upcoming days or weeks. **Information below is subject to change.**
 
 <table>
 <thead>
 <tr>
-<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
+<th><strong>AI Assistant for Journey Expressions (Public Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -164,7 +164,7 @@ The following journey capabilities are scheduled for release later this month. I
 
 ### Orchestrated campaigns {#may-26-oc}
 
-The following capabilities and improvements have been added to orchestrated campaigns in this release. Additional changes are also targeted this month — see the [Coming soon](#may-26-oc-coming-soon) section below.
+The following capabilities and improvements have been added to orchestrated campaigns in this release. Additional changes are also expected in the upcoming days or weeks — see the [Coming soon](#may-26-oc-coming-soon) section below.
 
 <table>
 <thead>
@@ -191,12 +191,12 @@ The following capabilities and improvements have been added to orchestrated camp
 
 #### Coming soon {#may-26-oc-coming-soon}
 
-The following orchestrated campaign capability is scheduled for release later this month. Information is subject to change.
+The following orchestrated campaign capability is expected in the upcoming days or weeks. **Information below is subject to change.**
 
 <table>
 <thead>
 <tr>
-<th><strong>File-based targeting for orchestrated campaigns</strong><br/></th>
+<th><strong>File-based targeting for orchestrated campaigns (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -212,11 +212,9 @@ The following orchestrated campaign capability is scheduled for release later th
 
 ### Campaigns {#may-26-campaigns}
 
-The following campaign improvements are targeted for release later this month — see the [Coming soon](#may-26-campaigns-coming-soon) section below.
-
 #### Coming soon {#may-26-campaigns-coming-soon}
 
-The following campaign improvements are scheduled for release later this month. Information is subject to change.
+The following campaign improvements are expected in the upcoming days or weeks. **Information below is subject to change.**
 
 * **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
 
@@ -228,7 +226,7 @@ The following campaign improvements are scheduled for release later this month. 
 
 ### Decisioning {#may-26-decisioning}
 
-The following capabilities and improvements have been added to Decisioning in this release. Additional changes are also targeted this month — see the [Coming soon](#may-26-decisioning-coming-soon) section below.
+The following capabilities and improvements have been added to Decisioning in this release. Additional changes are also expected in the upcoming days or weeks — see the [Coming soon](#may-26-decisioning-coming-soon) section below.
 
 <table>
 <thead>
@@ -260,7 +258,7 @@ The following capabilities and improvements have been added to Decisioning in th
 
 #### Coming soon {#may-26-decisioning-coming-soon}
 
-The following Decisioning capability is scheduled for release later this month. Information is subject to change.
+The following Decisioning capability is expected in the upcoming days or weeks. **Information below is subject to change.**
 
 <table>
 <thead>
@@ -281,7 +279,7 @@ The following Decisioning capability is scheduled for release later this month. 
 
 ### Email channel {#may-26-email}
 
-The following capabilities and improvements have been added to the email channel in this release. Additional changes are also targeted this month — see the [Coming soon](#may-26-email-coming-soon) section below.
+The following capabilities and improvements have been added to the email channel in this release. Additional changes are also expected in the upcoming days or weeks — see the [Coming soon](#may-26-email-coming-soon) section below.
 
 <table>
 <thead>
@@ -303,7 +301,7 @@ The following capabilities and improvements have been added to the email channel
 
 #### Coming soon {#may-26-email-coming-soon}
 
-The following email channel improvements are scheduled for release later this month. Information is subject to change.
+The following email channel improvements are expected in the upcoming days or weeks. **Information below is subject to change.**
 
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
 
@@ -317,7 +315,7 @@ The following email channel improvements are scheduled for release later this mo
 
 * **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages.
 
-  Availability date: June 1, 2026
+  Availability date: May 21, 2026
 
 ### Mobile messaging (SMS, MMS & RCS) {#may-26-mobile}
 
@@ -422,16 +420,24 @@ The following capabilities and improvements have been added to content managemen
 
 ### Administration {#may-26-admin}
 
-The following administration improvements are targeted for release later this month — see the [Coming soon](#may-26-admin-coming-soon) section below.
-
 #### Coming soon {#may-26-admin-coming-soon}
 
-The following administration improvements are scheduled for release later this month. Information is subject to change.
+The following administration improvements are expected in the upcoming days or weeks. **Information below is subject to change.**
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
 
   Availability date: May 21, 2026
 
 * **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
+
+  Availability date: June 1, 2026
+
+### Reporting {#may-26-reporting}
+
+#### Coming soon {#may-26-reporting-coming-soon}
+
+The following reporting improvement is expected in the upcoming days or weeks. **Information below is subject to change.**
+
+* **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
 
   Availability date: June 1, 2026
