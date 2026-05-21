@@ -150,17 +150,21 @@ If certain portions of the selected fragment have been made editable, you can ov
 
 To customize editable fields in a fragment, follow these steps:
 
-1. Add the fragment to your content.
+1. Add the fragment to your email content.
 
-1. Select it to open the properties pane on the right-hand side.
+1. Hover over the editable area in the central canvas. The field highlights in green and a pencil icon appears.
 
-    All editable fields in the fragment are displayed in the **Settings** tab, under the **Fragment** section.
+1. Click the pencil icon to edit the field inline. The Email Designer toolbar gives access to rich text options — bold, italic, hyperlinks, and more — for **text**, **button**, and **HTML** components.
 
-1. When you select an editable fields on the right pane, it is highlighted in green on the central preview pane, making it easy to identify its location in your content.
+    >[!NOTE]
+    >
+    >Rich text is not supported for **image** components.
 
-    In the example below, the image **source** and **alt text** can be edited, as well as the "Click here" button **URL**.
+1. The right-hand panel is read-only for customizable fragments. To edit layout or styles, [break the inheritance](#break-inheritance) first.
 
-    ![](assets/fragment-editable.png)
+>[!NOTE]
+>
+>If the fragment was created before inline editing was introduced, a notice in the Email Designer indicates that all editable fields are **text-only**. To enable rich text, open the fragment in the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode.
 
 >[!CAUTION]
 >
