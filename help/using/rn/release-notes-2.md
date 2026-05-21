@@ -9,11 +9,7 @@ description: Adobe Journey Optimizer Release notes
 hide: true
 ---
 
-<!-- ============================================================
-     DRAFT — Topic-based layout exploration
-     All content is identical to release-notes.md (May '26).
-     The only change is the grouping axis: topic > type.
-     ============================================================ -->
+<!-- DRAFT — Topic-based layout exploration. All content is identical to release-notes.md (May '26). The only change is the grouping axis: topic > type. -->
 
 # Release notes {#release-notes}
 
@@ -277,8 +273,6 @@ hide: true
 </table>
 
 * **Cross-organization repository access in the Assets Selector** - You can now seamlessly select assets from repositories across multiple organizations directly within the Adobe Experience Manager Asset Selector.
-
----
 
 ## Coming soon {#coming-soon}
 
