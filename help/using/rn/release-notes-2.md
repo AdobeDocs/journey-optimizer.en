@@ -274,7 +274,7 @@ hide: true
 <tbody>
 <tr>
 <td>
-<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer. This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
+<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
 <p><img src="assets/do-not-localize/deeplinks.gif"></p>
 <p>For more information, refer to the <a href="../email/deeplinks.md">detailed documentation</a>.</p>
 <p>Availability date: May 12, 2026</p>
@@ -316,7 +316,7 @@ hide: true
 </tbody>
 </table>
 
-* **Character Count** - You can now use the Character Count to monitor the length of your SMS messages in real time. It helps you see when a message will be split into multiple segments to better manage formatting and avoid unexpected increases in sending costs. [Read more](../mobile/create-mobile-message.md)
+* **Character Count** - In Adobe Journey Optimizer, you can now use the Character Count to monitor the length of your SMS messages in real time. It helps you see when a message will be split into multiple segments to better manage formatting and avoid unexpected increases in sending costs. [Read more](../mobile/create-mobile-message.md)
 
 * **SMS inbounds to a custom dataset** - In **SMS API credentials**, route **inbound SMS** to a **custom, profile-enabled Experience Event dataset** you select instead of only the default tracking dataset. [Read more](../mobile/mobile-webhook.md)
 
@@ -328,7 +328,7 @@ hide: true
 
 * **WhatsApp channel context data** - Journey Optimizer now captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO EmailTrackingExperienceEvent Dataset** under the `whatsAppChannelContext` field group.
 
-  +++ Fields captured for WhatsApp audience building and engagement analysis
+  +++ The following fields are captured and can be used to build audiences and analyze WhatsApp engagement
 
   * **`messageType`** – WhatsApp message type (e.g. `templateBased`, `response`)
   * **`inboundMessage`** – Inbound reply content (e.g. `stop`, `start`, `subscribe`)
@@ -375,14 +375,14 @@ hide: true
 <table>
 <thead>
 <tr>
-<th><strong>Integrations (General Availability)</strong><br/></th>
+<th><strong>Integrations</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>The <b>Integrations</b> feature allows you to connect third-party data sources directly to Adobe Journey Optimizer. By simplifying how you pull in external data and <b>composable content</b>, this feature makes it easier to deliver personalized, dynamic messaging across all your channels.</p>
-<p>Previously released in Beta, this capability is now available to all environments.</p>
+<p>Previously released in Beta, this capability is now available to all environments (General Availability).</p>
 <p>For more information, refer to the <a href="../integrations/integrations.md">detailed documentation</a>.</p>
 <p>Availability date: May 4, 2026</p>
 </td>
