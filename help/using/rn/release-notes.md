@@ -472,6 +472,16 @@ The following capabilities and enhancements are scheduled for release later in M
 
   Availability date: June, 1 2026
 
+#### Email Designer
+
+* **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages.
+
+  Availability date: May 21, 2026
+
+* **Rich text in editable fragment fields** - You can now add rich text to customizable fragments that are used in your email content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
+
+  Availability date: June 1, 2026
+
 #### Campaigns
 
 * **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
@@ -488,19 +498,6 @@ The following capabilities and enhancements are scheduled for release later in M
 
   Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
 
-
-  Availability date: June 1, 2026
-
-#### Email Designer
-
-* **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages.
-
-
-  Availability date: June 1, 2026
-
-* **Rich text in editable fragment fields** - You can now add rich text to customizable fragments that are used in your email content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
-
-
   Availability date: June 1, 2026
 
 #### Configuration
@@ -509,21 +506,8 @@ The following capabilities and enhancements are scheduled for release later in M
 
   Availability date: June 1, 2026
 
-#### Email Designer
-
-* **Rich text in editable fragment fields** - You can now add rich text to customizable fragments that are used in your email content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
-
-
-  Availability date: June 1, 2026
-
-* **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages.
-
-
-  Availability date: June 1, 2026
-
 #### Reporting
 
 * **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
-
 
   Availability date: June 1, 2026
