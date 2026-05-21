@@ -296,6 +296,24 @@ The following capabilities and enhancements are scheduled for release later in M
 <table>
 <thead>
 <tr>
+<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>This capability is available to all customers as a Public Beta.</p>
+<!--<p><img src="assets/do-not-localize/expression-assistant.gif"></p>-->
+<p>Availability date: May 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Automatic completion for non-recurring Read Audience journeys</strong><br/></th>
 </tr>
 </thead>
@@ -321,7 +339,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <td>
 <p>You can now add Decision policies into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content for each audience member. Direct Mail decisioning also supports batch decisioning use cases, enabling you to export the corresponding offer items for every profile in a given Adobe Experience Platform audience.</p>
 <!--<p><img src="assets/do-not-localize/exd-dm.gif"></p>-->
-<p>Availability date: May 21, 2026</p>
+<p>Availability date: June, 1 2026</p>
 </td>
 </tr>
 </tbody>
@@ -396,6 +414,41 @@ The following capabilities and enhancements are scheduled for release later in M
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Journey path optimization – Targeting</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Use the new <strong>Optimize</strong> node to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
+<p>This tool allows you to develop more effective marketing campaigns that are more likely to resonate at the 1:1 level, improve marketing personalization efforts for customers and enhance critical customer engagement KPIs, such as conversions and revenue.</p>
+<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Availability date: May 21, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Arbitration – ranking formulas</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now use formulas to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
+<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Availability date: May 21, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ### Improvements  {#coming-soon-improvements}
 
@@ -409,13 +462,25 @@ The following capabilities and enhancements are scheduled for release later in M
 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding subType: "certificateCredential" to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID.
 
-
   Availability date: May 21, 2026
   
 * **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
 
+  Availability date: June, 1 2026
+
+* **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
 
   Availability date: June, 1 2026
+
+#### Campaigns
+
+* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
+
+  Availability date: June, 1 2026
+
+* **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
+
+  Availability date: June 1, 2026
 
 #### Email
 
@@ -444,9 +509,14 @@ The following capabilities and enhancements are scheduled for release later in M
 
   Availability date: June 1, 2026
 
-#### Campaigns
+#### Email Designer
 
-* **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
+* **Rich text in editable fragment fields** - You can now add rich text to customizable fragments that are used in your email content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
+
+
+  Availability date: June 1, 2026
+
+* **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages.
 
 
   Availability date: June 1, 2026

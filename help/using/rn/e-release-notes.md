@@ -41,43 +41,6 @@ The following capabilities are targeted for this release.
 </table>
 
 
-<table>
-<thead>
-<tr>
-<th><strong>Journey path optimization – Targeting</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Use the new <strong>Optimize</strong> node to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
-<p>This tool allows you to develop more effective marketing campaigns that are more likely to resonate at the 1:1 level, improve marketing personalization efforts for customers and enhance critical customer engagement KPIs, such as conversions and revenue.</p>
-<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Arbitration – ranking formulas</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now use formulas to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
-<p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
 <!--
 <table>
 <thead>
@@ -114,23 +77,7 @@ The following capabilities are targeted for this release.
 </table>
 -->
 
-<table>
-<thead>
-<tr>
-<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
-<p>This capability is available to all customers as a Public Beta.</p>
-<!--<p><img src="assets/do-not-localize/expression-assistant.gif"></p>-->
-<p>Availability date: May 19, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
+
 
 
 
@@ -150,17 +97,6 @@ The following improvements are targeted for this release.
 
 -->
 
-#### Campaigns
-
-* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
-
-
-  Availability date: May 19, 2026
-
-* **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
-
-
-  Availability date: May 29, 2026
 
 <!--
 #### Configuration
@@ -172,18 +108,6 @@ The following improvements are targeted for this release.
 -->
 
 
-
-#### Email Designer
-
-* **Rich text in editable fragment fields** - You can now add rich text to customizable fragments that are used in your email content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
-
-
-  Availability date: May 28, 2026
-
-* **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages.
-
-
-  Availability date: May 20, 2026
 
 <!--
 FEEDBACK FROM TYSON WAI - * **Content locking in landing pages** - You can now lock portions of landing page templates, similar to the locking controls available for email templates. You can define which structures, components, and properties are editable — including options to lock design, content, position, and restrict content by limiting the number and/or types of components allowed.
@@ -200,12 +124,6 @@ FEEDBACK FROM TYSON WAI - TW: Remove this release, it is not ready for May 19th-
   Availability date: May 19, 2026
   -->
 
-#### Journeys
-
-* **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
-
-
-  Availability date: May 19, 2026
 
 
 #### Reporting

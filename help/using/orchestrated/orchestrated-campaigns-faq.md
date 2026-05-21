@@ -448,7 +448,11 @@ Answering 'Yes' suggests the best data store - but always confirm the best appro
 
 +++ What is the maximum number of activities per Orchestrated campaign?
 
-The number of activities in an Orchestrated campaign is limited to 500.
+Two separate limits apply:
+
+* **Channel activities** — A maximum of 10 channel activities per Orchestrated campaign (Email, SMS, Push, or Direct mail). Targeting and flow control activities do not count. Exceeding this limit when saving or publishing causes the operation to fail.
+
+* **Canvas size** — Up to **500 activities** on the canvas. For maintainability, keep workflows under **100 activities** in practice.
 
 **Learn more**
 
