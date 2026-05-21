@@ -391,7 +391,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <td>
 <p>You can now set your journey to <strong>Simulation</strong>. This mode allows you to validate your logic using <strong>simulated users</strong>. These are temporary profiles created specifically for the simulation, allowing you to test freely without needing to manage persistent test profiles in Adobe Experience Platform.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). With General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
-<p>Availability date: June 1, 2026</p>
+<p>Availability date: early June, 2026</p>
 </td>
 </tr>
 </tbody>
