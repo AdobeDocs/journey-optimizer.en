@@ -146,25 +146,31 @@ Learn how to use implicit variables in [this section](../personalization/use-exp
 
 ## Customize editable fields {#customize-fields}
 
-If certain portions of the selected fragment have been made editable, you can override their default value after adding the fragment into your content. [Learn how to make your fragments customizable](../content-management/customizable-fragments.md)
+If certain portions of the selected fragment have been made editable, you can override their default value after adding the fragment into your content. [Learn how to make fragments customizable](../content-management/customizable-fragments.md)
 
-To customize editable fields in a fragment, follow these steps:
+To customize editable fields in a fragment, follow these steps.
 
-1. Add the fragment to your email content.
+1. Add the fragment to your email content, and select it to open the properties pane on the right-hand side.
 
-1. Hover over the editable area in the central canvas. The field highlights in green and a pencil icon appears.
+1. All editable fields in the fragment are displayed in the **[!UICONTROL Settings]** tab, under the **[!UICONTROL Fragment]** section.
 
-1. Click the pencil icon to edit the field inline. The Email Designer toolbar gives access to rich text options — bold, italic, hyperlinks, and more — for **text**, **button**, and **HTML** components.
+    ![](assets/fragment-editable-rich-field.png)
+
+1. Hover over each editable component in the central canvas. The component highlights in green and a pencil icon appears when clicking on it.
+
+    ![](assets/fragment-editable-field-selected.png){width="70%" align="center"}
 
     >[!NOTE]
     >
-    >Rich text is not supported for **image** components.
+    >You can also select the editable fields on the right pane, making it easy to identify its location in your content. However, the fields in the right-hand panel are read-only for customizable fragments.
 
-1. The right-hand panel is read-only for customizable fragments. To edit layout or styles, [break the inheritance](#break-inheritance) first.
+1. Directly edit the content of the editable component inline.
 
->[!NOTE]
->
->If the fragment was created before inline editing was introduced, a notice in the Email Designer indicates that all editable fields are **text-only**. To enable rich text, open the fragment in the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode.
+1. The Email Designer toolbar gives access to rich text options — bold, italic, hyperlinks, and more — for **text**, **button**, and **HTML** components.
+
+    >[!IMPORTANT]
+    >
+    >If the fragment was created before inline editing was introduced, a notice in the Email Designer indicates that all editable fields are **text-only**. To enable rich text, open the fragment in the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode.
 
 >[!CAUTION]
 >
