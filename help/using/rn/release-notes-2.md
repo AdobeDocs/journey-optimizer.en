@@ -30,6 +30,8 @@ hide: true
 
 ### Journeys {#may-26-journeys}
 
+The following capabilities and improvements have been added to journeys in this release. Additional changes are also targeted this month — see the [Coming soon](#may-26-journeys-coming-soon) section below.
+
 <table>
 <thead>
 <tr>
@@ -104,7 +106,9 @@ hide: true
 </tbody>
 </table>
 
-**Coming soon**
+#### Coming soon {#may-26-journeys-coming-soon}
+
+The following journey capabilities are scheduled for release later this month. Information is subject to change.
 
 <table>
 <thead>
@@ -160,6 +164,8 @@ hide: true
 
 ### Orchestrated campaigns {#may-26-oc}
 
+The following capabilities and improvements have been added to orchestrated campaigns in this release. Additional changes are also targeted this month — see the [Coming soon](#may-26-oc-coming-soon) section below.
+
 <table>
 <thead>
 <tr>
@@ -183,7 +189,9 @@ hide: true
 
   Availability date: May 20, 2026
 
-**Coming soon**
+#### Coming soon {#may-26-oc-coming-soon}
+
+The following orchestrated campaign capability is scheduled for release later this month. Information is subject to change.
 
 <table>
 <thead>
@@ -204,7 +212,11 @@ hide: true
 
 ### Campaigns {#may-26-campaigns}
 
-**Coming soon**
+The following campaign improvements are targeted for release later this month — see the [Coming soon](#may-26-campaigns-coming-soon) section below.
+
+#### Coming soon {#may-26-campaigns-coming-soon}
+
+The following campaign improvements are scheduled for release later this month. Information is subject to change.
 
 * **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
 
@@ -215,6 +227,8 @@ hide: true
   Availability date: June 1, 2026
 
 ### Decisioning {#may-26-decisioning}
+
+The following capabilities and improvements have been added to Decisioning in this release. Additional changes are also targeted this month — see the [Coming soon](#may-26-decisioning-coming-soon) section below.
 
 <table>
 <thead>
@@ -244,7 +258,9 @@ hide: true
 
   Availability date: May 20, 2026
 
-**Coming soon**
+#### Coming soon {#may-26-decisioning-coming-soon}
+
+The following Decisioning capability is scheduled for release later this month. Information is subject to change.
 
 <table>
 <thead>
@@ -265,6 +281,8 @@ hide: true
 
 ### Email channel {#may-26-email}
 
+The following capabilities and improvements have been added to the email channel in this release. Additional changes are also targeted this month — see the [Coming soon](#may-26-email-coming-soon) section below.
+
 <table>
 <thead>
 <tr>
@@ -283,7 +301,11 @@ hide: true
 </tbody>
 </table>
 
-**Coming soon**
+#### Coming soon {#may-26-email-coming-soon}
+
+The following email channel improvements are scheduled for release later this month. Information is subject to change.
+
+* **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
 
   Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
 
@@ -298,6 +320,8 @@ hide: true
   Availability date: June 1, 2026
 
 ### Mobile messaging (SMS, MMS & RCS) {#may-26-mobile}
+
+The following capabilities and improvements have been added to mobile messaging in this release.
 
 <table>
 <thead>
@@ -324,6 +348,8 @@ hide: true
 
 ### WhatsApp channel {#may-26-whatsapp}
 
+The following improvements have been added to the WhatsApp channel in this release.
+
 * **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
 
 * **WhatsApp channel context data** - Journey Optimizer now captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO EmailTrackingExperienceEvent Dataset** under the `whatsAppChannelContext` field group.
@@ -348,6 +374,8 @@ hide: true
   +++
 
 ### Content & Integrations {#may-26-content}
+
+The following capabilities and improvements have been added to content management and integrations in this release.
 
 <table>
 <thead>
@@ -394,7 +422,11 @@ hide: true
 
 ### Administration {#may-26-admin}
 
-**Coming soon**
+The following administration improvements are targeted for release later this month — see the [Coming soon](#may-26-admin-coming-soon) section below.
+
+#### Coming soon {#may-26-admin-coming-soon}
+
+The following administration improvements are scheduled for release later this month. Information is subject to change.
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
 
