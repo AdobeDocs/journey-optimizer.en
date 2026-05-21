@@ -178,3 +178,4 @@ The fragment is now **[!UICONTROL Live]**, and becomes available when building a
 >[!CAUTION]
 >
 >Once it has been published, you cannot add new personalized attributes to a live fragment. If you want to add personalization attributes, you must duplicate the fragment. [Learn more](manage-fragments.md#adding-new-attributes)
+
