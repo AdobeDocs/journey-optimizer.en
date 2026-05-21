@@ -212,8 +212,6 @@ The following orchestrated campaign capability is expected in the upcoming days 
 
 ### Campaigns {#may-26-campaigns}
 
-The following campaign improvements are expected in the upcoming days or weeks — see the [Coming soon](#may-26-campaigns-coming-soon) section below.
-
 #### Coming soon {#may-26-campaigns-coming-soon}
 
 The following campaign improvements are expected in the upcoming days or weeks. **Information below is subject to change.**
