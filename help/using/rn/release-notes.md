@@ -462,7 +462,7 @@ The following capabilities and enhancements are scheduled for release later in M
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
 
-  Availability date: May 21, 2026
+  Availability date: June 2, 2026
 
 #### Journeys
 
