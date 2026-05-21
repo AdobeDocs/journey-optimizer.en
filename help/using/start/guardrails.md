@@ -129,7 +129,7 @@ If journey publication fails due to content size, reduce your message content an
 
 ### SMS guardrails {#sms-guardrails}
 
-The following guardrails apply to the [SMS channel](../sms/get-started-sms.md):
+The following guardrails apply to the [SMS channel](../mobile/get-started-mobile.md):
 
 * Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
 * Message feedback syncing is not currently available for MMS.
@@ -230,7 +230,10 @@ This section covers guardrails and limitations for journeys, including general j
 
 ### General journey guardrails {#journeys-guardrails-journeys}
 
-* The number of activities in a journey is limited to 50. The number of activities is displayed on the upper left section of the journey canvas. This will help in readability, QA and troubleshooting. 
+* The number of activities in a journey is limited to 50. The number of activities is displayed on the upper left section of the journey canvas.
+
+  As journeys near this limit, editing and publishing performance may degrade, and save or validation failures can occur. If this happens, split your journey into smaller sub-journeys using [jump activities](../building-journeys/jump.md) or recreate it in a new version. The activity limit cannot be increased.
+
 * By default, the number of live/paused/dry run journeys at one time is limited to 100.  The current number of journeys is displayed above the journey canvas.
 * As you publish journeys, we automatically scale and adjust to ensure maximum throughput and stability. As you near the milestone of 100 live journeys at one time, you will see a notification appear in the UI on this achievement. If you see this notification and have a need to extend your journeys beyond 100 live journeys at a time, please create a ticket for customer care and we will help you reach your goals. 
 * When using an audience qualification in a journey, that audience qualification activity may take up to 10 minutes to be active and listen to profiles entering or exiting the audience.

@@ -439,13 +439,15 @@ For the full list of Read Audience guardrails (including retry and throughput li
 
 ## Related topics
 
-* [Build audiences](../audience/about-audiences.md)
-* [Audience Qualification activity](audience-qualification-events.md)
-* [Use supplemental identifiers in journeys](supplemental-identifier.md)
-* [Guardrails and limitations](../start/guardrails.md#read-segment-g)
-* [Journey processing rates and entry management](entry-management.md)
-* [Test a journey](testing-the-journey.md)
-* [Publish a journey](../building-journeys/publish-journey.md)
+* [Build audiences](../audience/about-audiences.md) - Create and manage the audience segments you want to target in your Read Audience journeys.
+* [Audience Qualification activity](audience-qualification-events.md) - Trigger journeys in real time as profiles enter or exit an audience, instead of processing them in batch.
+* [Use supplemental identifiers in journeys](supplemental-identifier.md) - Extend Read Audience journeys to target secondary entities such as bookings, contracts, or subscriptions linked to a profile.
+* [Guardrails and limitations](../start/guardrails.md#read-segment-g) - Review throughput limits, retry behavior, and audience size thresholds before launching at scale.
+* [Journey processing rates and entry management](entry-management.md) - Understand how profiles are injected into the journey and what controls entry and re-entry.
+* [Test a journey](testing-the-journey.md) - Validate your journey logic using test profiles before going live.
+* [Publish a journey](../building-journeys/publish-journey.md) - Activate your journey and monitor its initial execution.
+* [Send a message to subscribers](message-to-subscribers-uc.md) - End-to-end use case: target a subscription list with a Read Audience journey, from setup to delivery.
+* [Best practices for Read Audience journeys](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445){target="_blank"} - Community blog covering common pitfalls, count discrepancies, and proven best practices.
 
 ## How-to video {#video}
 

@@ -23,6 +23,7 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 * [Create challenges](create-challenges.md)
 * [Create tasks](create-tasks.md)
 * [Monitor loyalty challenge performance](loyalty-reporting.md)
+<!-- * [Configure the loyalty program](loyalty-admin.md) -->
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
 >[!ENDSHADEBOX]
@@ -68,6 +69,8 @@ You can create these types of challenge experiences:
 
 Creating and launching a loyalty challenge follows this workflow:
 
+<!-- 1. **Configure the loyalty program** (administrators) - Set up your Adobe Experience Platform namespace, reward providers, and optionally event definitions and product inventory so rewards can be fulfilled when customers complete challenges. [Learn how to configure the loyalty program](loyalty-admin.md). -->
+
 1. **Create a challenge** - Define the basic challenge properties, including name, type (Standard, Streak, Sequential, or Bring your own data when available), and date range. [Learn how to choose a challenge type](create-challenges.md#create-the-challenge).
 
 1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend), quantities, product filters, and rewards.
@@ -112,6 +115,18 @@ To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer
 Contact your administrator if you cannot access the feature or need additional permissions.
 
 +++
+
+<!--
+
++++Configure the loyalty program (administrators)
+
+To configure **[!UICONTROL Loyalty Admin]** (reward providers, event definitions, and global settings), you need administrator access to your Journey Optimizer organization. Marketers who only create challenges do not need access to this area. [Learn how to configure the loyalty program](loyalty-admin.md).
+
+Contact your administrator if **[!UICONTROL Loyalty Admin]** is not visible in the left navigation.
+
++++
+
+-->
 
 +++Target audience
 
@@ -169,6 +184,21 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
     <em>Track program KPIs, challenge results, and task metrics with built-in dashboards</em>
     </p>
   </td>
+  <!--
+
+  <td>
+    <a href="loyalty-admin.md">
+      <img alt="Configuration" src="assets/do-not-localize/icon-access.png" width="200"/>
+    </a>
+    <div>
+    <a href="loyalty-admin.md"><strong>Configure the loyalty program</strong></a>
+    </div>
+    <p>
+    <em>Set up reward providers, event definitions, and org settings for fulfillment</em>
+    </p>
+  </td>
+
+  -->
 </tr>
 </table>
 

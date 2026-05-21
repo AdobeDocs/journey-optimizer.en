@@ -78,7 +78,7 @@ Let's say you want to compare three paths:
 
     * Drag and drop a [Wait](wait-activity.md) activity of two days onto the first branch, followed by an [Email](../email/create-email.md) activity (**Treatment B**).
 
-    * Drag and drop an [Email](../email/create-email.md) activity onto the third branch, followed by an [SMS](../sms/create-sms.md) activity (**Treatment C**).
+    * Drag and drop an [Email](../email/create-email.md) activity onto the third branch, followed by an [SMS](../mobile/create-mobile-message.md) activity (**Treatment C**).
 
     ![Path experiment example with three treatment paths](assets/journey-optimize-experiment-ex.png){width=100%}
 

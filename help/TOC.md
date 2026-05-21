@@ -12,8 +12,9 @@ solution: Journey Optimizer
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
-  + [Pre-release notes](using/rn/e-release-notes.md)
+  + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)  
   + [Latest release notes](using/rn/release-notes.md)
+  + {hide-from-toc}[Release notes](using/rn/release-notes-2.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
     + [2026](using/rn/release-notes-2026.md)
@@ -138,6 +139,8 @@ solution: Journey Optimizer
   + {hide-from-toc} [Create challenges](using/loyalty-challenges/create-challenges.md)
   + {hide-from-toc} [Create tasks](using/loyalty-challenges/create-tasks.md)
   + {hide-from-toc} [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
+  + {hide-from-toc} [Configure the loyalty program](using/loyalty-challenges/loyalty-admin.md)
+  + {hide-from-toc} [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
@@ -311,7 +314,7 @@ solution: Journey Optimizer
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
-    + [Use and configure deeplinks](using/email/deeplinks.md) 
+    + [Use and configure deeplinks](using/email/deeplinks.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
@@ -333,23 +336,23 @@ solution: Journey Optimizer
       + [Configure push notification channel](using/push/push-configuration.md)
       + [Configure web push notification channel](using/push/push-configuration-web.md)
       + [Mobile onboarding quick start workflow](using/push/mobile-onboarding-wf.md)
-  + SMS / MMS / RCS channel {#sms}
-    + [SMS / MMS / RCS channel](/help/rp_landing_pages/sms-landing-page.md)
-    + [Get started with text messaging](using/sms/get-started-sms.md)
-    + [Create a SMS / MMS / RCS message](using/sms/create-sms.md)
-    + [Check & send your text messages](using/sms/send-sms.md)
-    + [Manage text message opt-out](using/sms/sms-opt-out.md)
-    + [Set up SMS subdomains](using/sms/sms-subdomains.md)
-    + [Best practices for SMS cost optimization](using/sms/sms-cost-optimization.md)
-    + Configure SMS / MMS / RCS channel {#configure-sms}
-      + [Get started with SMS / MMS / RCS configuration](using/sms/sms-configuration.md)
-      + [Configure Sinch provider](using/sms/sms-configuration-sinch.md)
-      + [Configure Infobip provider](using/sms/sms-configuration-infobip.md)
-      + [Configure Twilio provider](using/sms/sms-configuration-twilio.md)
-      + [Configure a custom provider](using/sms/sms-configuration-custom.md)
-      + [Create Webhook](using/sms/sms-webhook.md)
-      + [Create a SMS / MMS / RCS configuration](using/sms/sms-configuration-surface.md)
-      + [Use a custom dataset for inbound keywords](using/sms/custom-dataset-inbound-keywords.md)
+  + SMS / MMS / RCS channel {#mobile}
+    + [Get started with Mobile messaging](using/mobile/get-started-mobile.md)
+    + [Create a Mobile message](using/mobile/create-mobile-message.md)
+    + [Design a Mobile message](using/mobile/design-mobile.md)
+    + [Check & send your Mobile messages](using/mobile/send-mobile-message.md)
+    + [Manage Mobile message opt-out](using/mobile/mobile-opt-out.md)
+    + [Set up SMS subdomains](using/mobile/mobile-subdomains.md)  
+    + [Best practices for SMS cost optimization](using/mobile/mobile-cost-optimization.md)
+    + Configure Mobile channel {#configure-mobile}
+      + [Get started with Mobile configuration](using/mobile/mobile-configuration.md)
+      + [Configure Sinch provider](using/mobile/mobile-configuration-sinch.md)
+      + [Configure Infobip provider](using/mobile/mobile-configuration-infobip.md)
+      + [Configure Twilio provider](using/mobile/mobile-configuration-twilio.md)
+      + [Configure a custom provider](using/mobile/mobile-configuration-custom.md)
+      + [Create Webhook](using/mobile/mobile-webhook.md)
+      + [Create a Mobile configuration](using/mobile/mobile-configuration-surface.md)
+      + [Use a custom dataset for inbound keywords](using/mobile/custom-dataset-inbound-keywords.md)
   + Direct mail {#direct-mail}
     + [Direct mail](/help/rp_landing_pages/direct-mail-landing-page.md)
     + [Get started with direct mail](using/direct-mail/get-started-direct-mail.md)
@@ -488,7 +491,7 @@ solution: Journey Optimizer
     + [Customizable fragments](using/content-management/customizable-fragments.md)
     + [Manage fragments](using/content-management/manage-fragments.md)
     + {hide-from-toc} [Add contextual attributes to published fragments](using/content-management/manage-fragments-contextual-attributes.md)
-  + Dynamic content {#dynamic}
+  + Dynamic content {#dynamic} 
     + [Dynamic content](/help/rp_landing_pages/dynamic-landing-page.md)
     + [Get started with dynamic content](using/personalization/get-started-dynamic-content.md)
     + [Create conditional rules](using/personalization/create-conditions.md)
@@ -505,9 +508,9 @@ solution: Journey Optimizer
       + {hide-from-toc} [Configure your repository for Content Fragments](using/integrations/aem-admin-settings.md)
       + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
       + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
-    + {hide-from-toc} [Work with Experience Manager Content Advisor](using/content-management/aem-content-advisor.md)
-    + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
+    + [Work with Experience Manager Content Advisor](using/integrations/aem-content-advisor.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
+    + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
     + Integrations {#integrations}
       + [Work with Integrations](using/integrations/integrations.md)
@@ -524,7 +527,6 @@ solution: Journey Optimizer
     + [Generate full content with AI](using/content-management/generative-full-content.md)
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
-    + [Content experiment with AI](using/content-management/generative-experimentation.md)
     + [AI Assistant for Personalization Expressions](using/content-management/generative-personalization-expressions.md)
     + [AI Assistant use cases](using/content-management/generative-uc.md)
     + Brands {#brands}
@@ -989,3 +991,4 @@ solution: Journey Optimizer
     + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)
+

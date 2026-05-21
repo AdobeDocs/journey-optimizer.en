@@ -82,9 +82,9 @@ Create compelling push notifications for iOS and Android, configure title and bo
 
 Design SMS & MMS Messages
 
-Compose personalized text messages with SMS, enhance communications with multimedia content using MMS, and leverage dynamic content for targeted messaging.
+Compose personalized Mobile messages with SMS, enhance communications with multimedia content using MMS, and leverage dynamic content for targeted messaging.
 
-[Create Text Messages](../sms/create-sms.md)
+[Create Text Messages](../mobile/create-mobile-message.md)
 :::
 
 :::

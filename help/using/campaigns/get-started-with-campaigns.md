@@ -269,7 +269,7 @@ Create compelling messages for your audience:
 
 * Use the **Email Designer** for rich email experiences
 * Configure **push notifications** with images and deep links
-* Design **SMS/MMS messages** with personalization
+* Design **SMS/RCS/MMS messages** with personalization
 * Create **in-app** and **web** experiences
 * Add **personalization** using profile attributes and contextual data
 

@@ -24,7 +24,7 @@ exl-id: a0f3e385-934d-44d6-a487-6035161aef0e
 >[!BEGINSHADEBOX]
 
 When new API credentials are created in Journey Optimizer, SMS webhooks are now the way to capture both inbound keywords and feedback events like deliveries and errors. Because each provider has different capabilities, there are separate instructions to enable webhooks.
-With webhooks now supporting Custom provider, it is now possible to gather feedback and inbound keyword collection from any provider to be reported and acted upon in Journey Optimizer.
+With webhooks now supporting Custom provider, it is now possible to gather feedback and inbound keyword collection from any provider to be reported and acted upon in Journey Optimizer. 
 
 * **New customers:** The instructions here can be followed to configure SMS webhooks correctly.
 
@@ -90,7 +90,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
     * **[!UICONTROL Select SMS vendor]**: Sinch or Sinch Conversational.
 
-    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](sms-configuration-sinch.md).
+    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](mobile-configuration-sinch.md).
 
     * **[!UICONTROL Sender Phone Number]**: Enter the sender phone number you want to use for your communications.
 
@@ -114,7 +114,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
     +++ Opt-Out
 
-    * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
+    * Enable keywords that opt out users and remove consent to send Mobile messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
 
     * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
@@ -173,7 +173,7 @@ For Sinch and Sinch Conversational, create a single webhook that handles both in
 
 If your webhook uses API credentials attached to an existing channel configuration, the webhook takes effect immediately. Otherwise, create a new channel configuration.
 
-➡️[Learn more on channel configuration](sms-configuration-surface.md)
+➡️[Learn more on channel configuration](mobile-configuration-surface.md)
 
 ### For Infobip {#create-webhook-infobip}
 
@@ -191,7 +191,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
     * **[!UICONTROL Type]**: Choose either Feedback or Inbound. You need to create both separately, here, we start with Inbound.
 
-    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](sms-configuration-infobip.md#api-credential).
+    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](mobile-configuration-infobip.md#api-credential).
 
     * **[!UICONTROL Sender Phone Number]**: Enter the sender phone number you want to use for your communications.
 
@@ -215,7 +215,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
     +++ Opt-Out
 
-    * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
+    * Enable keywords that opt out users and remove consent to send Mobile messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
 
     * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
@@ -281,7 +281,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
 If your webhook uses API credentials attached to an existing channel configuration, the webhook takes effect immediately. Otherwise, create a new channel configuration.
 
-➡️[Learn more on channel configuration](sms-configuration-surface.md)
+➡️[Learn more on channel configuration](mobile-configuration-surface.md)
 
 ### For custom provider {#create-webhook-custom}
 
@@ -299,7 +299,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
     * **[!UICONTROL Type]**: Choose either Feedback or Inbound. You need to create both separately, here, we start with Inbound.
 
-    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](sms-configuration-custom.md).
+    * **[!UICONTROL API credentials]**: Choose from the drop-down you [previously configured API credentials](mobile-configuration-custom.md).
 
     * **[!UICONTROL Sender Phone Number]**: Enter the sender phone number you want to use for your communications.
 
@@ -323,7 +323,7 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
     +++ Opt-Out
 
-    * Enable keywords that opt out users and remove consent to send text messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
+    * Enable keywords that opt out users and remove consent to send Mobile messages. When a user's message matches a configured keyword, their phone number is opted out from receiving SMS messages.
 
     * By default, the following keywords are enabled: Stop, Quit, Cancel, End, Unsubscribe, No. Remove any default keywords by clicking ![](assets/do-not-localize/Smock_Close_18_N.svg).
 
@@ -436,4 +436,4 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
 If your webhook uses API credentials attached to an existing channel configuration, the webhook takes effect immediately. Otherwise, create a new channel configuration.
 
-➡️[Learn more on channel configuration](sms-configuration-surface.md)
+➡️[Learn more on channel configuration](mobile-configuration-surface.md)

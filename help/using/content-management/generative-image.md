@@ -98,8 +98,6 @@ After generating image variations, you can review the results, check brand align
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
-
 1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
 1. Review and activate your content:
@@ -175,7 +173,5 @@ After generating image variations for your push notifications, you can fine-tune
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
-
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
 When you have defined your content, audience and schedule, you are ready to prepare your push campaign. [Learn more](../campaigns/review-activate-campaign.md)
