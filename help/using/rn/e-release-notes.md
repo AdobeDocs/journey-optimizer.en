@@ -12,10 +12,15 @@ product_v2:
     internal-label: Journey Optimizer
 ---
 
+
 ## May '26 pre-release notes {#may-26-rn}
  
 **The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published once changes are live in production. While most changes are delivered on the release date, a few may roll out later — refer to the Availability Date listed for each entry for details.
 
+
+May Release notes are now live. See [here](release-notes.md)
+
+<!--
 See also [Adobe Experience Platform Pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.
 
 **Release date**: May 19–20, 2026
@@ -41,7 +46,7 @@ The following capabilities are targeted for this release.
 </table>
 
 
-<!--
+
 <table>
 <thead>
 <tr>
@@ -79,13 +84,13 @@ The following capabilities are targeted for this release.
 
 
 
-
+<!--
 
 ### Improvements {#may-26-improv}
 
 The following improvements are targeted for this release.
 
-<!--
+
 #### AI
 
 * **Journey Agent – Analyze** - Journey Agent now includes new Analyze skills. When navigating to the Journey home screen, a new AI recommendations panel appears on the right side, surfacing cards with actionable insights. Clicking a card takes you directly to the relevant journey and opens the right panel with a detailed recommendation to help optimize journey performance.
