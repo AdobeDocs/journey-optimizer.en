@@ -328,7 +328,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <td>
 <p>Non-recurring <strong>Read Audience</strong> journeys now automatically transition to <strong>Stopped</strong> status once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.</p>
 <p>Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.</p>
-<p>Availability date: May 21, 2026</p>
+<p>Availability date: May 22, 2026</p>
 </tr>
 </tbody>
 </table>
@@ -363,7 +363,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <p>Use the new <strong>Optimize</strong> node to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
 <p>This tool allows you to develop more effective marketing campaigns that are more likely to resonate at the 1:1 level, improve marketing personalization efforts for customers and enhance critical customer engagement KPIs, such as conversions and revenue.</p>
 <p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: May 21, 2026</p>
+<p>Availability date: May 22, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -380,7 +380,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <td>
 <p>You can now use formulas to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
 <p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: May 21, 2026</p>
+<p>Availability date: May 22, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -414,7 +414,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <td>
 <p>Orchestrated campaigns now support loading a CSV or TXT file directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. This supports ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical. </p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>Availability date: June, 1 2026</p>
+<p>Availability date: June 1, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -432,7 +432,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <p>Use the new <strong>Optimize</strong> node to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
 <p>This tool allows you to develop more effective marketing campaigns that are more likely to resonate at the 1:1 level, improve marketing personalization efforts for customers and enhance critical customer engagement KPIs, such as conversions and revenue.</p>
 <p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: May 21, 2026</p>
+<p>Availability date: May 22, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -449,7 +449,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <td>
 <p>You can now use formulas to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
 <p>Previously available in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: May 21, 2026</p>
+<p>Availability date: May 22, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -468,7 +468,7 @@ The following capabilities and enhancements are scheduled for release later in M
 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding subType: "certificateCredential" to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID.
 
-  Availability date: May 21, 2026
+  Availability date: May 22, 2026
 
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
 
