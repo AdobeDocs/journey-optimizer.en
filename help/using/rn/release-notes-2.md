@@ -35,7 +35,7 @@ The following capabilities and improvements have been added to journeys in this 
 <table>
 <thead>
 <tr>
-<th><strong>Journey Fragments</strong><br/></th>
+<th><strong>Journey Fragments (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -55,7 +55,7 @@ The following capabilities and improvements have been added to journeys in this 
 <table>
 <thead>
 <tr>
-<th><strong>Journey simulation</strong><br/></th>
+<th><strong>Journey simulation (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -108,12 +108,12 @@ The following capabilities and improvements have been added to journeys in this 
 
 #### Coming soon {#may-26-journeys-coming-soon}
 
-The following journey capabilities are expected in the upcoming days or weeks. Information is subject to change.
+The following journey capabilities are expected in the upcoming days or weeks. **Information below is subject to change.**
 
 <table>
 <thead>
 <tr>
-<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
+<th><strong>AI Assistant for Journey Expressions (Public Beta)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -191,12 +191,12 @@ The following capabilities and improvements have been added to orchestrated camp
 
 #### Coming soon {#may-26-oc-coming-soon}
 
-The following orchestrated campaign capability is expected in the upcoming days or weeks. Information is subject to change.
+The following orchestrated campaign capability is expected in the upcoming days or weeks. **Information below is subject to change.**
 
 <table>
 <thead>
 <tr>
-<th><strong>File-based targeting for orchestrated campaigns</strong><br/></th>
+<th><strong>File-based targeting for orchestrated campaigns (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -216,7 +216,7 @@ The following campaign improvements are expected in the upcoming days or weeks �
 
 #### Coming soon {#may-26-campaigns-coming-soon}
 
-The following campaign improvements are expected in the upcoming days or weeks. Information is subject to change.
+The following campaign improvements are expected in the upcoming days or weeks. **Information below is subject to change.**
 
 * **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
 
@@ -260,7 +260,7 @@ The following capabilities and improvements have been added to Decisioning in th
 
 #### Coming soon {#may-26-decisioning-coming-soon}
 
-The following Decisioning capability is expected in the upcoming days or weeks. Information is subject to change.
+The following Decisioning capability is expected in the upcoming days or weeks. **Information below is subject to change.**
 
 <table>
 <thead>
@@ -303,7 +303,7 @@ The following capabilities and improvements have been added to the email channel
 
 #### Coming soon {#may-26-email-coming-soon}
 
-The following email channel improvements are expected in the upcoming days or weeks. Information is subject to change.
+The following email channel improvements are expected in the upcoming days or weeks. **Information below is subject to change.**
 
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
 
@@ -422,11 +422,9 @@ The following capabilities and improvements have been added to content managemen
 
 ### Administration {#may-26-admin}
 
-The following administration improvements are expected in the upcoming days or weeks — see the [Coming soon](#may-26-admin-coming-soon) section below.
-
 #### Coming soon {#may-26-admin-coming-soon}
 
-The following administration improvements are expected in the upcoming days or weeks. Information is subject to change.
+The following administration improvements are expected in the upcoming days or weeks. **Information below is subject to change.**
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
 
@@ -438,11 +436,9 @@ The following administration improvements are expected in the upcoming days or w
 
 ### Reporting {#may-26-reporting}
 
-The following reporting improvement is expected in the upcoming days or weeks — see the [Coming soon](#may-26-reporting-coming-soon) section below.
-
 #### Coming soon {#may-26-reporting-coming-soon}
 
-The following reporting improvement is expected in the upcoming days or weeks. Information is subject to change.
+The following reporting improvement is expected in the upcoming days or weeks. **Information below is subject to change.**
 
 * **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
 
