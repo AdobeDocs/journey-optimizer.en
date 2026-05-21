@@ -195,3 +195,4 @@ Learn how to lock a fragment in [this section](../content-management/create-frag
 >[!NOTE]
 >
 >The fragment author can change the setting later for future usages by resetting its behavior to **[!UICONTROL Allow inheritance to be broken]** in the fragment settings.
+
