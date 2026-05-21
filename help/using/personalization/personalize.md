@@ -63,7 +63,7 @@ To do so, follow these steps:
 1. Start typing to filter available profile attributes.
 1. Select the attribute you need — it is inserted as a personalization token at the cursor position.
 
-![](assets/do-not-localize/inline-profile-attributes.png)
+![](assets/inline-profile-attributes.png)
 
 ## Let's dive deeper
 
