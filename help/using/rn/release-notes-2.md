@@ -159,7 +159,7 @@ hide: true
 
   Availability date: May 20, 2026
 
-### Email {#may-26-email}
+### Email channel {#may-26-email}
 
 <table>
 <thead>
@@ -204,7 +204,7 @@ hide: true
 
 * **Webhook interface enhancement** - When configuring SMS webhooks, the user interface now includes a built-in setup guide with practical examples, making it easier to align provider payloads and troubleshoot issues without leaving the configuration flow. [Read more](../mobile/mobile-webhook.md)
 
-### WhatsApp {#may-26-whatsapp}
+### WhatsApp channel {#may-26-whatsapp}
 
 * **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
 
@@ -354,7 +354,7 @@ The following capabilities and enhancements are scheduled for release later in M
 </tbody>
 </table>
 
-### Email {#coming-soon-email}
+### Email channel {#coming-soon-email}
 
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. Header values can be set at the channel level and overridden per campaign using contextual data.
 
@@ -368,7 +368,7 @@ The following capabilities and enhancements are scheduled for release later in M
 
   Availability date: June 1, 2026
 
-### Journeys & Campaigns {#coming-soon-journey-simulation}
+### Journeys {#coming-soon-journeys-ga}
 
 <table>
 <thead>
@@ -419,6 +419,8 @@ The following capabilities and enhancements are scheduled for release later in M
 </tr>
 </tbody>
 </table>
+
+### Campaigns {#coming-soon-campaigns}
 
 * **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
 
