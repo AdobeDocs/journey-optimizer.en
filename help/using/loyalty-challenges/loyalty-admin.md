@@ -32,17 +32,15 @@ exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
 >
 >This feature is currently in **private beta**. For full details about the release cycle and availability phases in [!DNL Journey Optimizer], see [release cycle](../rn/releases.md).
 
+## Overview {#access-loyalty-admin}
+
 Use the loyalty program configuration in [!DNL Journey Optimizer] to connect to your external loyalty systems. Marketers use **[!UICONTROL Loyalty Challenges (Beta)]** to design challenges, tasks, content, and messaging. Loyalty program configuration is a separate, administrator-only area for reward fulfillment, event mapping, product inventory, and exclusions.
 
-## Prerequisites {#prerequisites}
+>[!NOTE]
+>
+>Loyalty program configuration is intended for administrators. In addition to the permissions required for Loyalty Challenges, you need administrator-level access to your [!DNL Journey Optimizer] instance. Contact your Adobe administrator to request access.
 
-Loyalty program configuration is intended for administrators. In addition to the permissions required for Loyalty Challenges, you need administrator-level access to your [!DNL Journey Optimizer] instance. Contact your Adobe administrator to request access.
-
-## Access loyalty program configuration {#access-loyalty-admin}
-
-Navigate to **[!UICONTROL Loyalty]** and select **[!UICONTROL Loyal admin]** to access the loyalty program configuration interface.
-
-The interface is organized into tabs:
+To open the configuration interface, navigate to **[!UICONTROL Loyalty]** and select **[!UICONTROL Loyal admin]**. The interface is organized into tabs:
 
 * **Global settings** — Set the Experience Platform identity namespace. [Learn how to configure global settings](#global-settings)
 * **Reward providers** — Connect external APIs that fulfill rewards, including reward types, proxies, and authentication. [Learn how to configure reward providers](#reward-providers)
@@ -66,12 +64,6 @@ Open the **[!UICONTROL Global settings]** tab. For now, the main configuration a
 ## Reward providers {#reward-providers}
 
 A **reward provider** tells [!DNL Journey Optimizer] where to send fulfillment calls when challenge progress is recorded or a challenge is completed, for example, an API that credits loyalty points or stars to a member account.
-
-A reward provider configuration includes:
-
-![](assets/admin-reward.png)
-
-* Basic connection details (name, description, URL, headers).
 * **[!UICONTROL Reward definitions]** — the reward types this provider can issue (for example, stars or miles).
 * **[!UICONTROL Reward proxies]** — an intermediate proxy that calls are routed through instead of your endpoint directly.
 * **[!UICONTROL Auth token generators]** — the mechanism [!DNL Journey Optimizer] uses to obtain access tokens before calling your API.
@@ -79,6 +71,8 @@ A reward provider configuration includes:
 To create a reward provider, follow these steps:
 
 1. Open the **[!UICONTROL Reward providers]** tab and select **[!UICONTROL Create reward provider]**.
+
+   ![](assets/admin-reward.png)
 
 1. Enter a **[!UICONTROL Name]** and a  **[!UICONTROL Description]**.
 
@@ -88,9 +82,9 @@ To create a reward provider, follow these steps:
 
 1. Configure the resources below associated to your reward provider. Expand each section for more information:
 
-   +++Reward definitions — One entry per reward that is supported by your provider (for example, program points or stars, money credit)
+   +++Reward definitions
 
-   For each definition:
+   One entry per reward that is supported by your provider (for example, program points or stars, money credit). For each definition:
 
    * Provide a name and a description.
    * Specify whether the definition is **[!UICONTROL Enabled]**.
@@ -101,7 +95,9 @@ To create a reward provider, follow these steps:
 
    +++
 
-   +++Reward proxy - Routes fulfillment calls through an intermediate server instead of directly to the endpoint
+   +++Reward proxy
+
+   Routes fulfillment calls through an intermediate server instead of directly to the endpoint.
 
    * Provide a name and description.
    * Enter **[!UICONTROL Host]**, **[!UICONTROL Port]** information.
@@ -112,7 +108,9 @@ To create a reward provider, follow these steps:
 
    +++
 
-   +++Auth token generatoér - If your API requires a bearer token for authentication
+   +++Auth token generatoér
+
+   If your API requires a bearer token for authentication.
 
    * Enter a name and description.
    * In the Auth type field, enter the type of authentication (for example Bearer).
@@ -137,11 +135,11 @@ To edit an existing reward provider, open the **[!UICONTROL Reward providers]** 
 >
 >**[!UICONTROL Bring your own data]** challenges fulfill rewards through your own data integration. The reward providers configured here do not apply to those challenges. [Learn how to create Bring your own data challenges](create-challenges.md#create-the-challenge)
 
-## Event definitions (optional) {#event-definitions}
+## Event definitions {#event-definitions}
 
 **[!UICONTROL Event definitions]** map experience events from your systems (for example, purchase, hotel check-in) to activities that Loyalty Challenges can act on, most notably **[!UICONTROL Custom event]** tasks. When events arrive, [!DNL Journey Optimizer] uses these definitions to decide whether to process them. Events that do not match any definition are ignored.
 
-### Create an event definition {#create-event-definition}
+To create an event definition, follow these steps:
 
 1. Open the **[!UICONTROL Event definitions]** tab and create a new definition.
 
@@ -165,6 +163,8 @@ To edit an existing reward provider, open the **[!UICONTROL Reward providers]** 
 ## Product inventory {#product-inventory}
 
 The **[!UICONTROL Product inventory]** tab lets you group catalog items so you can target them in tasks without listing every item ID. You upload a **CSV file** that maps each item identifier to one or more **product groups** (the same item can appear in multiple groups). After import, those groups are available when you configure task eligibility. [Learn how to create tasks](create-tasks.md)
+
+To upload a product inventory file, follow these steps:
 
 1. Prepare a CSV file that maps each item identifier to one or more product groups. Expand the section below to see an example.
 
@@ -193,6 +193,8 @@ The **[!UICONTROL Product inventory]** tab lets you group catalog items so you c
 ## Exclusions {#exclusions}
 
 The **[!UICONTROL Exclusions]** tab lets you define catalog items and groups that are excluded across your loyalty program without listing every item ID in each task. You upload a **CSV file** that maps each item identifier to one or more **exclusion groups** (the same item can appear in multiple groups). After import, those items and groups are available in the task builder: excluded items are marked automatically and cannot be included in a task; exclusion groups can only be added to the task’s exclude list, not the include list. [Learn how to define eligible items and exclusions on tasks](create-tasks.md#eligible-items-exclusions)
+
+To upload a product exclusions file, follow these steps:
 
 1. Prepare a CSV file that maps each item identifier to one or more exclusion groups. Expand the section below to see an example.
 
