@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Configure the loyalty program
-description: Learn how to configure reward providers, event definitions, and organization-level settings for your loyalty program in Adobe Journey Optimizer.
+description: Learn how to configure reward providers, event definitions, product inventory, exclusions, and organization-level settings for your loyalty program in Adobe [!DNL Journey Optimizer].
 feature: Journeys
 topic: Content Management
 role: Admin
@@ -30,146 +30,197 @@ exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
 
 >[!AVAILABILITY]
 >
->This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>This feature is currently in **private beta**. For full details about the release cycle and availability phases in [!DNL Journey Optimizer], see [release cycle](../rn/releases.md).
 
-The **[!UICONTROL Loyalty Admin]** section is where you configure how Journey Optimizer connects to your external loyalty systems. Marketers use **[!UICONTROL Loyalty Challenges (Beta)]** to design challenges, tasks, content, and messaging. **[!UICONTROL Loyalty Admin]** is a separate, administrator-only area for reward fulfillment, event mapping, and product inventory.
+## Overview {#access-loyalty-admin}
 
-When a customer completes a challenge or reaches a reward milestone, Journey Optimizer calls the reward provider you configured to deliver points or other rewards. Configuration in **[!UICONTROL Loyalty Admin]** does not affect challenge **[!UICONTROL Content]**, **[!UICONTROL Messaging]**, or **[!UICONTROL Audience]** settings — those remain under marketer control.
+Loyalty program configuration connects [!DNL Journey Optimizer] to your external loyalty systems by setting up reward fulfillment, event mapping, product inventory, and exclusions before marketers author challenges.
 
-## What you configure here vs. in Loyalty Challenges {#scope}
+>[!NOTE]
+>
+>Loyalty program configuration requires administrator access to your [!DNL Journey Optimizer] instance, in addition to the permissions needed for Loyalty Challenges. Contact your Adobe administrator to gain access.
 
-| Area | Configured in Loyalty Admin | Configured in Loyalty Challenges |
-|------|----------------------------|----------------------------------|
-| Reward fulfillment API | Yes — reward providers | No — select provider and amounts only |
-| Event mapping for custom activities | Yes — event definitions | No — select event name on Custom event tasks |
-| Product group mappings | Yes — product inventory | No — use groups when authoring Purchase/Spend tasks |
-| Challenge structure, content, audience | No | Yes |
+To open the configuration interface, navigate to **[!UICONTROL Loyalty]** and select **[!UICONTROL Loyal admin]**. The interface is organized into tabs:
 
-Adobe Journey Optimizer sends fulfillment calls to your reward provider when customers earn rewards. Your loyalty platform is responsible for crediting the member's account.
-
-## Prerequisites {#prerequisites}
-
-**[!UICONTROL Loyalty Admin]** is intended for a small number of administrators per organization. In addition to the permissions required for [Loyalty Challenges](get-started.md#prerequisites), you need administrator-level access for your Journey Optimizer instance. Contact your Adobe administrator to request access.
-
-## Access Loyalty Admin {#access-loyalty-admin}
-
-To open **[!UICONTROL Loyalty Admin]**, select it from the left navigation in Journey Optimizer.
-
-<!-- SCREENSHOT: Loyalty Admin entry in the left navigation -->
-
-**[!UICONTROL Loyalty Admin]** is organized into tabs: **[!UICONTROL Global settings]**, **[!UICONTROL Reward providers]**, **[!UICONTROL Event definitions]**, and **[!UICONTROL Product inventory]**. The tabs available to you depend on your organization's permissions and feature configuration.
+* **Global settings** — Select the Experience Platform identity namespace for your program. [Learn how to configure global settings](#global-settings)
+* **Reward providers** — Connect the APIs that fulfill rewards when customers make progress or complete challenges. [Learn how to configure reward providers](#reward-providers)
+* **Event definitions** — Map incoming experience events to activities used in **[!UICONTROL Custom AEP event]** tasks. [Learn how to configure event definitions](#event-definitions)
+* **Product inventory** — Upload item-to-group mappings for use in task eligibility rules. [Learn how to configure product inventory](#product-inventory)
+* **Exclusions** — Upload organization-wide item and group exclusions for task configuration. [Learn how to configure exclusions](#exclusions)
 
 ## Global settings {#global-settings}
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_admin_global_settings"
 >title="Global settings"
->abstract="Select the Adobe Experience Platform identity namespace for your loyalty program and copy your configuration ID. These org-level settings are required before reward providers can fulfill rewards correctly."
+>abstract="Select the Adobe Experience Platform identity namespace for your loyalty program."
 
-Use **[!UICONTROL Global settings]** to configure organization-wide options for Loyalty Challenges.
+Open the **[!UICONTROL Global settings]** tab and select the Adobe Experience Platform [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) for your loyalty program in the **[!UICONTROL Namespace]** drop-down. This namespace must match how member profiles are identified in your data.
 
-1. Open the **[!UICONTROL Global settings]** tab.
+![](assets/admin-global-settings.png)
 
-1. In the **[!UICONTROL Namespace]** drop-down, select the [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) used by your loyalty program.
-
-1. Select **[!UICONTROL Save]** to apply the namespace to your Loyalty Challenges configuration.
-
-1. Copy the **[!UICONTROL Configuration ID]** when you need to share it with your implementation team or external systems — for example, when configuring inbound event delivery.
-
-<!-- SCREENSHOT: Global settings tab showing namespace drop-down, Save, and Configuration ID -->
+➡️ [Learn how to work with identity namespaces](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}
 
 ## Reward providers {#reward-providers}
 
-A **reward provider** tells Journey Optimizer where to send fulfillment calls when challenge progress is recorded or a challenge is completed — for example, an API that credits loyalty points or stars to a member account.
+A **reward provider** tells [!DNL Journey Optimizer] where to send fulfillment calls when challenge progress is recorded or a challenge is completed. For example, an API that credits loyalty points or stars to a member account.
 
-A reward provider configuration includes:
-
-* Basic connection details (name, description, API URL, headers)
-* **[!UICONTROL Reward definitions]** — the reward types this provider can issue (for example, stars or miles)
-* **[!UICONTROL Reward proxies]** (optional) — an intermediate proxy that calls are routed through instead of your endpoint directly
-* **[!UICONTROL Auth token generators]** — the mechanism Journey Optimizer uses to obtain access tokens before calling your API
-
-### Create a reward provider {#create-reward-provider}
+To create a reward provider, follow these steps:
 
 1. Open the **[!UICONTROL Reward providers]** tab and select **[!UICONTROL Create reward provider]**.
 
-1. Enter a **[!UICONTROL Name]**, **[!UICONTROL Description]**, and the **[!UICONTROL API URL]** that receives fulfillment requests.
+   ![](assets/admin-reward.png)
+
+1. Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]**.
+
+1. In the **[!UICONTROL URL]** field, enter the API endpoint that receives fulfillment requests.
 
 1. Add **[!UICONTROL Headers]** as needed for your API (for example, API keys or content types).
 
-1. Configure **[!UICONTROL Reward definitions]** — one entry per reward type your provider supports (for example, program points or stars). For each definition:
+1. Configure the resources associated with your reward provider. Expand each section below for field details:
 
-   * Specify the **payload** sent with fulfillment calls.
-   * Optionally mark one definition as the **default** for this provider.
+   +++Reward definitions
 
-1. Optionally configure a **[!UICONTROL Reward proxy]** to route fulfillment calls through an intermediate server:
+   Add one entry per reward type your provider supports (for example, program points, stars, or money credit). For each definition:
 
-   * **[!UICONTROL Name]**, **[!UICONTROL Description]**, and whether the proxy is **enabled**
-   * **[!UICONTROL Host]**, **[!UICONTROL Port]**, and credentials
+   * Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]**.
+   * Specify whether the definition is **[!UICONTROL Enabled]**.
+   * Toggle **[!UICONTROL Default]** to mark one definition as the default for this provider.
+   * Define the **payload** sent with fulfillment calls.
 
-1. Configure an **[!UICONTROL Auth token generator]** if your API requires a bearer token for authentication:
+   ![](assets/admin-reward-definition.png)
 
-   * Token endpoint URL and HTTP method (for example, **POST** for OAuth-style flows)
-   * **[!UICONTROL Token key]** in the response (for example, `access_token`)
-   * Headers required by your token endpoint
+   +++
 
-   Journey Optimizer uses this configuration to obtain a fresh token before calling your reward API.
+   +++Reward proxy
 
-1. Select **[!UICONTROL Create reward provider]**. The provider and all configured child resources are saved together.
+   Route fulfillment calls through an intermediate server instead of sending them directly to your endpoint. On the reward provider and **[!UICONTROL Create proxy]** screens, use the **[!UICONTROL Credentials]** field for proxy authentication.
 
-<!-- SCREENSHOT: Reward provider creation form with definitions, proxy, and auth token sections -->
+   * Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]**.
+   * Enter **[!UICONTROL Host]** and **[!UICONTROL Port]**.
+   * Specify whether the proxy is **[!UICONTROL Enabled]**.
+   * In **[!UICONTROL Credentials]**, enter the proxy username and password as JSON. Credentials value typically looks like:
 
-After you save, the provider appears in the reward providers list. Marketers select this provider when [configuring challenge rewards](create-challenges.md#rewards).
+     ```json
+     { "userName": "test", "password": "xxxx" }
+     ```
 
-To edit an existing reward provider, open the **[!UICONTROL Reward providers]** tab, select the provider, and update fields in place. Changes to child resources (reward definitions, proxies, auth token generators) are saved when you update them.
+   ![](assets/admin-reward-proxies.png)
 
-<!-- SCREENSHOT: Reward provider detail view with child resource sections -->
+   +++
+
+   +++Auth token generator
+
+   Use when your API requires a bearer token or similar authentication.
+
+   * Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]**.
+   * In **[!UICONTROL Auth type]**, enter the authentication type (for example, Bearer).
+   * Select the HTTP method (for example, POST).
+   * Enter the token endpoint URL and the **[!UICONTROL Token key]** in the response (for example, `access_token`).
+   * Specify whether the auth token generator is **[!UICONTROL Enabled]**.
+   * Add any headers required by your token endpoint.
+
+   [!DNL Journey Optimizer] uses this configuration to obtain a fresh token before each call to your reward API.
+
+   ![](assets/admin-reward-auth.png)
+
+   +++
+
+1. Select **[!UICONTROL Create reward provider]**. The provider and all configured resources are saved together.
+
+After you save, the provider appears in the reward providers list. Marketers can select it when configuring challenge rewards. [Learn how to configure challenge rewards](create-challenges.md#rewards)
+
+To edit a reward provider, open the **[!UICONTROL Reward providers]** tab, select the provider, and update fields in place. Changes to reward definitions, proxies, and auth token generators are automatically saved when you update them.
 
 >[!NOTE]
 >
->**[!UICONTROL Bring your own data]** challenges fulfill rewards through your own data integration. The reward providers configured here do not apply to those challenges. [Learn more about Bring your own data challenges](create-challenges.md#create-the-challenge).
+>**[!UICONTROL Bring your own data]** challenges fulfill rewards through your own data integration. Reward providers configured here do not apply to those challenges. [Learn how to create Bring your own data challenges](create-challenges.md#create-the-challenge)
 
-## Event definitions (optional) {#event-definitions}
+## Event definitions {#event-definitions}
 
-**[!UICONTROL Event definitions]** map experience events from your systems — in whatever JSON or XDM format your brand uses — to activities that Loyalty Challenges can act on, most notably **[!UICONTROL Custom event]** tasks. When events arrive, Journey Optimizer uses these definitions to decide whether to process them. Events that do not match any definition are ignored.
+**[!UICONTROL Event definitions]** tell [!DNL Journey Optimizer] which incoming Adobe Experience Platform experience events to process. For example, a purchase or a hotel check-in. Marketers reference these definitions when they create **[!UICONTROL Custom AEP event]** tasks. Events that do not match any definition are ignored.
 
-### Create an event definition {#create-event-definition}
+When your organization sends events in its own JSON format, **[!UICONTROL Schema]** and **[!UICONTROL Transformer]** help [!DNL Journey Optimizer] validate the payload, parse it, and decide whether to track the activity.
+
+To create an event definition, follow these steps:
 
 1. Open the **[!UICONTROL Event definitions]** tab and create a new definition.
 
-1. Enter a **[!UICONTROL Name]** for the event (for example, `Coffee purchase`) — this is the name marketers see when configuring a **[!UICONTROL Custom event]** task.
+   ![](assets/admin-event-definition.png)
 
-1. Specify how to identify the event in incoming payloads:
+1. Enter a **[!UICONTROL Name]** for the event (for example, `Coffee purchase`). Marketers see this name when configuring a **[!UICONTROL Custom AEP event]** task.
 
-   * **[!UICONTROL Identifier path]** — JSON path to the field that identifies the event or member (for example, `data.memberId`)
-   * **[!UICONTROL Identifier values]** — values that must be present for this definition to match
+1. Specify how [!DNL Journey Optimizer] recognizes the event in incoming payloads. Provide an **[!UICONTROL Identifier path]**, an **[!UICONTROL XDM schema ID]**, or both:
 
-1. Optionally specify an **[!UICONTROL XDM schema ID]** if your event payloads conform to an Experience Platform schema.
+   * **[!UICONTROL Identifier path]** — Path to a field in the payload (for example, `data.memberId`). Use this when matching events by values in the payload.
+   * **[!UICONTROL Identifier values]** — Values at the identifier path that must be present for this definition to match.
+   * **[!UICONTROL XDM schema ID]** — ID of the Experience Platform XDM schema for this event type. Use this when events are captured against a known schema.
 
-1. Optionally use the **[!UICONTROL Schema]** and **[!UICONTROL Transformer]** fields to provide custom schema and transformation strings for parsing and validating incoming JSON.
+1. If needed, paste strings into **[!UICONTROL Schema]** and **[!UICONTROL Transformer]**:
 
-   You can provide an XDM schema ID, an identifier path, or both, depending on how your events are structured.
+   * **[!UICONTROL Schema]** — Validation string for the incoming payload.
+   * **[!UICONTROL Transformer]** — Transformation expression (for example, JSONata) that maps your payload into the format Loyalty Challenges expects.
 
-1. Save the event definition.
+1. Save the event definition. It appears in the **[!UICONTROL Event definitions]** list and is available when marketers create **[!UICONTROL Custom AEP event]** tasks. [Learn how to create tasks](create-tasks.md#choose-activity)
 
-<!-- SCREENSHOT: Event definition form with identifier path, values, and schema fields -->
+## Product inventory {#product-inventory}
 
-Most organizations create multiple event definitions — one per activity they want to track (for example, purchase, check-in, or site visit). [Learn how to use Custom event tasks in challenges](create-tasks.md#choose-activity).
+The **[!UICONTROL Product inventory]** tab groups catalog items so marketers can target them in tasks without entering every item ID. Upload a **CSV file** that maps each item identifier to one or more **product groups** (the same item can belong to several groups). Imported groups are available when configuring task eligibility. [Learn how to create tasks](create-tasks.md)
 
-## Product inventory (optional) {#product-inventory}
+To upload a product inventory file, follow these steps:
 
-Use the **[!UICONTROL Product inventory]** tab to upload a CSV file that maps product or item identifiers (for example, MPG IDs) to product groups. Marketers can then reference these groups in task eligibility rules instead of typing individual SKUs.
+1. Prepare a CSV file that maps each item identifier to one or more product groups. Expand the section below to see an example.
+
+   +++Product inventory CSV example
+
+   ![](assets/admin-inventory-csv.png)
+
+   +++
 
 1. Open the **[!UICONTROL Product inventory]** tab.
 
-1. Upload your mapping file.
+1. Select **[!UICONTROL Upload]** and choose your CSV file.
 
-1. Review the imported mappings in the inventory list. Select a product group to see all items in that group, or use search to find items by name or ID.
+   ![](assets/admin-inventory-upload.png)
 
-1. Use **[!UICONTROL Upload history]** to see previous uploads.
+1. Review the imported data in the inventory list. The list shows one row per item. The **[!UICONTROL Groups included in]** column shows every product group for that item as a pill, or several pills when the item belongs to multiple groups.
 
-<!-- SCREENSHOT: Product inventory list after CSV upload -->
+   ![](assets/admin-inventory-imported.png)
 
->[!NOTE]
->
->**[!UICONTROL Global exclusions]** for product inventory is planned for a future release and is not documented here.
+1. To see all items in a product group, select that group’s pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
+
+   ![](assets/admin-inventory-group.png)
+
+1. Open **[!UICONTROL Upload history]** to view previous CSV uploads.
+
+## Exclusions {#exclusions}
+
+The **[!UICONTROL Exclusions]** tab defines catalog items and groups that are excluded program-wide, so marketers do not have to list the same exclusions on every task. Upload a **CSV file** that maps each item identifier to one or more **exclusion groups** (the same item can belong to several groups).
+
+After import, excluded items and groups appear in the task builder when marketers configure **[!UICONTROL Eligible items & exclusions]**. [Learn how to define eligible items and exclusions on tasks](create-tasks.md#eligible-items-exclusions)
+
+To upload exclusions, follow these steps:
+
+1. Prepare a CSV file that maps each item identifier to one or more exclusion groups. Expand the section below to see an example.
+
+   +++Exclusions CSV example
+
+   ![](assets/admin-exclusions-csv.png)
+
+   +++
+
+1. Open the **[!UICONTROL Exclusions]** tab.
+
+1. Select **[!UICONTROL Upload]** and choose your CSV file.
+
+   ![](assets/admin-exclusions-upload.png)
+
+1. Review the imported data in the exclusions list. The list shows one row per item. The **[!UICONTROL Groups included in]** column shows every exclusion group for that item as a pill, or several pills when the item belongs to multiple groups.
+
+<!-- SCREENSHOT: Exclusions list after CSV upload -->
+
+1. To see all items in an exclusion group, select that group’s pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
+
+<!-- SCREENSHOT: Exclusion group details -->
+
+1. Open **[!UICONTROL Upload history]** to view previous CSV uploads.
