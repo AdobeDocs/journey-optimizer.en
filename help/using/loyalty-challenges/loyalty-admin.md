@@ -44,7 +44,7 @@ To open the configuration interface, navigate to **[!UICONTROL Loyalty]** and se
 
 * **Global settings** — Select the Experience Platform identity namespace for your program. [Learn how to configure global settings](#global-settings)
 * **Reward providers** — Connect the APIs that fulfill rewards when customers make progress or complete challenges. [Learn how to configure reward providers](#reward-providers)
-* **Event definitions** — Map incoming experience events to activities used in **[!UICONTROL Custom event]** tasks. [Learn how to configure event definitions](#event-definitions)
+* **Event definitions** — Map incoming experience events to activities used in **[!UICONTROL Custom AEP event]** tasks. [Learn how to configure event definitions](#event-definitions)
 * **Product inventory** — Upload item-to-group mappings for use in task eligibility rules. [Learn how to configure product inventory](#product-inventory)
 * **Exclusions** — Upload organization-wide item and group exclusions for task configuration. [Learn how to configure exclusions](#exclusions)
 
@@ -94,12 +94,16 @@ To create a reward provider, follow these steps:
 
    +++Reward proxy
 
-   Route fulfillment calls through an intermediate server instead of sending them directly to your endpoint.
+   Route fulfillment calls through an intermediate server instead of sending them directly to your endpoint. On the reward provider and **[!UICONTROL Create proxy]** screens, use the **[!UICONTROL Credentials]** field for proxy authentication.
 
    * Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]**.
    * Enter **[!UICONTROL Host]** and **[!UICONTROL Port]**.
    * Specify whether the proxy is **[!UICONTROL Enabled]**.
-   * Add the proxy **[!UICONTROL Credential]**.
+   * In **[!UICONTROL Credentials]**, enter the proxy username and password as JSON. Credentials value typically looks like:
+
+     ```json
+     { "userName": "test", "password": "xxxx" }
+     ```
 
    ![](assets/admin-reward-proxies.png)
 
@@ -134,7 +138,7 @@ To edit a reward provider, open the **[!UICONTROL Reward providers]** tab, selec
 
 ## Event definitions {#event-definitions}
 
-**[!UICONTROL Event definitions]** tell [!DNL Journey Optimizer] which incoming experience events to process. For example, a purchase or a hotel check-in. Marketers reference these definitions in **[!UICONTROL Custom event]** tasks. Events that do not match any definition are ignored.
+**[!UICONTROL Event definitions]** tell [!DNL Journey Optimizer] which incoming Adobe Experience Platform experience events to process. For example, a purchase or a hotel check-in. Marketers reference these definitions when they create **[!UICONTROL Custom AEP event]** tasks. Events that do not match any definition are ignored.
 
 When your organization sends events in its own JSON format, **[!UICONTROL Schema]** and **[!UICONTROL Transformer]** help [!DNL Journey Optimizer] validate the payload, parse it, and decide whether to track the activity.
 
@@ -144,7 +148,7 @@ To create an event definition, follow these steps:
 
    ![](assets/admin-event-definition.png)
 
-1. Enter a **[!UICONTROL Name]** for the event (for example, `Coffee purchase`). Marketers see this name when configuring a **[!UICONTROL Custom event]** task.
+1. Enter a **[!UICONTROL Name]** for the event (for example, `Coffee purchase`). Marketers see this name when configuring a **[!UICONTROL Custom AEP event]** task.
 
 1. Specify how [!DNL Journey Optimizer] recognizes the event in incoming payloads. Provide an **[!UICONTROL Identifier path]**, an **[!UICONTROL XDM schema ID]**, or both:
 
@@ -157,7 +161,7 @@ To create an event definition, follow these steps:
    * **[!UICONTROL Schema]** — Validation string for the incoming payload.
    * **[!UICONTROL Transformer]** — Transformation expression (for example, JSONata) that maps your payload into the format Loyalty Challenges expects.
 
-1. Save the event definition. It appears in the **[!UICONTROL Event definitions]** list and is available when marketers create challenges. [Learn how to create challenges](create-challenges.md)
+1. Save the event definition. It appears in the **[!UICONTROL Event definitions]** list and is available when marketers create **[!UICONTROL Custom AEP event]** tasks. [Learn how to create tasks](create-tasks.md#choose-activity)
 
 ## Product inventory {#product-inventory}
 
