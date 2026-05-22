@@ -15,6 +15,7 @@ solution: Journey Optimizer
   + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)  
   + [Latest release notes](using/rn/release-notes.md)
   + {hide-from-toc}[Release notes](using/rn/release-notes-2.md)
+  + {hide-from-toc}[Release notes](using/rn/release-notes-3.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
     + [2026](using/rn/release-notes-2026.md)
