@@ -173,7 +173,7 @@ Rich text — including bold, italic, line breaks, and hyperlinks — is nativel
 
 >[!NOTE]
 >
->Fragments created before this capability was introduced have editable fields set to **text-only** mode by default. A **Convert** button is available in the fragment editor (near the Fragment inheritance panel) to upgrade these fragments to HTML-compatible mode. Until converted, legacy text and HTML components with inline variables continue to support plain text only.
+>Fragments created before this capability was introduced have editable fields set to **text-only** mode by default. A **Convert** button is available in the fragment editor to upgrade these fragments to HTML-compatible mode. Until converted, legacy text and HTML components with inline variables continue to support plain text only.
 
 The approach below (using HTML components with inline variables) remains fully supported for advanced HTML-based scenarios.
 <!--
