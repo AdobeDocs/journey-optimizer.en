@@ -170,7 +170,7 @@ To customize editable fields in a fragment, follow these steps.
 
     >[!IMPORTANT]
     >
-    >If the fragment was created before inline editing was introduced, a notice in the Email Designer indicates that all editable fields are **text-only**. To enable rich text, open the fragment in the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode.
+    >If the fragment was created before the ability to addd rich text to editable fields in customizable fragments was introduced, a notice in the Email Designer indicates that all editable fields are **text-only**. To enable rich text, go to the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode. [Learn how](../content-management/customizable-fragments.md#rich-text)
 
 >[!CAUTION]
 >
