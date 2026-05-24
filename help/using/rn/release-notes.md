@@ -311,7 +311,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
 <p>This capability is available to all customers as a Public Beta.</p>
 <!--<p><img src="assets/do-not-localize/expression-assistant.gif"></p>-->
-<p>Availability date: May 22, 2026</p>
+<p>Availability date: June 2, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -328,7 +328,7 @@ The following capabilities and enhancements are scheduled for release later in M
 <td>
 <p>Non-recurring <strong>Read Audience</strong> journeys now automatically transition to <strong>Stopped</strong> status once the last active profile exits. Previously, these journeys remained <strong>Live</strong> until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.</p>
 <p>Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.</p>
-<p>Availability date: May 22, 2026</p>
+<p>Availability date: June 2, 2026</p>
 </tr>
 </tbody>
 </table>
@@ -433,7 +433,7 @@ The following capabilities and enhancements are scheduled for release later in M
 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding subType: "certificateCredential" to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID.
 
-  Availability date: May 22, 2026
+  Availability date: June 2, 2026
 
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
 
