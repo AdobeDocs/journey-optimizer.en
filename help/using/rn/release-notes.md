@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
@@ -60,7 +58,7 @@ topic_v2:
 
 >[!NOTE]
 >
->Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change.
+>Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
 
 ## May '26 release notes {#may-26-rn}
 
