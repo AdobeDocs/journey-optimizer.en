@@ -49,7 +49,7 @@ Once you have created a push notification, you can design its content for iOS, A
 
 To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the personalization editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 
-You can also insert profile attributes inline directly in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields by typing `{{`. An autocomplete dropdown opens at the cursor — select any attribute to insert it as a personalization token without opening the full editor. [Learn more about inline editing →](../personalization/personalize.md#inline-personalization)
+<!--You can also insert profile attributes inline directly in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields by typing `{{`. An autocomplete dropdown opens at the cursor — select any attribute to insert it as a personalization token without opening the full editor. [Learn more about inline editing →](../personalization/personalize.md#inline-personalization)-->
 
 Use the device preview section to visualize how the push notification displays on iOS, Android, and Web.
 
@@ -70,9 +70,9 @@ Configure the action that occurs when recipients tap the body of your push notif
 * **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deeplink URL in the provided field.
 * **[!UICONTROL Web URL]**: Directs users to an external webpage. Enter the destination URL in the provided field.
 
-When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL.
+<!--When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL.
 
-![](assets/push-link-tooltip.png)
+![](assets/push-link-tooltip.png)-->
 
 >[!NOTE]
 >

@@ -306,15 +306,16 @@ The following usability improvements were also released in May 2026.
 
 #### Content authoring
 
-* **Inline profile attribute editing** - You can now insert profile attribute expressions directly in the Email Designer without opening the full personalization editor. Type `{{` in any text field to open an inline autocomplete dropdown, then browse and select the attribute you need — it is inserted at the cursor position instantly. This capability is also available in the Push channel editor, where a tooltip icon is always visible next to link fields — hover over it to verify the complete URL without truncation. [Learn more](../personalization/personalize.md#inline-personalization)
+* **Inline profile attribute editing** - You can now insert profile attribute expressions directly in the Email Designer without opening the full personalization editor. Type `{{` in any text field to open an inline autocomplete dropdown, then browse and select the attribute you need — it is inserted at the cursor position instantly. [Learn more](../personalization/personalize.md#inline-personalization)
+<!--This capability is also available in the Push channel editor, where a tooltip icon is always visible next to link fields — hover over it to verify the complete URL without truncation.-->
 
   ![](../personalization/assets/inline-profile-attributes.png)
 
-#### Simulation & Preview
+<!--#### Simulation & Preview
 
 * **Redesigned preview experience** - The content preview screen has been redesigned with a side-by-side layout that lets you compare how your content renders across multiple profiles at a glance, enabling quicker and more confident reviews before sending. [Learn more](../test-approve/simulate-sample-input.md#preview)
 
-  ![](../test-approve/assets/simulation-preview-redesign.png)
+  ![](../test-approve/assets/simulation-preview-redesign.png)-->
 
 ## Coming soon {#coming-soon}
 

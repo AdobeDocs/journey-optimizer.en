@@ -142,11 +142,19 @@ Once variants have been added, you can use them to preview your content in the r
 
 ### Preview content variations {#preview}
 
-The preview screen uses a **side-by-side layout** that displays multiple profiles simultaneously, so you can compare how your content renders for different recipients at a glance without switching between variants.
+<!--The preview screen uses a **side-by-side layout** that displays multiple profiles simultaneously, so you can compare how your content renders for different recipients at a glance without switching between variants.
 
 ![](assets/simulation-preview-redesign.png)
 
-To preview your content, select a variant from the list — the preview pane updates to show the content rendered with that variant's values. Select multiple variants to display them side by side for quick comparison.
+To preview your content, select a variant from the list — the preview pane updates to show the content rendered with that variant's values. Select multiple variants to display them side by side for quick comparison.-->
+
+To preview your content using a variant, select the relevant variant from the list to update the content in the preview pane with the information entered for this variant.
+
+In the example below, we have added two variants for the email subject line:
+
+|Variant 1 selection|Variant 2 selection|
+|----------|-------------|
+|![Variant 1 selection](assets/simulate-custom-boxes.png)|![Variant 2 selection](assets/simulate-custom-boxes2.png)|
 
 For multilingual content and experimentation, a dropdown is available to switch between the different language variants or treatments.
 
