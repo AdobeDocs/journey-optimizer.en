@@ -216,8 +216,6 @@ The following orchestrated campaign capability is expected in the upcoming days 
 
 ### Campaigns {#may-26-campaigns}
 
-The following campaign improvements are expected in the upcoming days or weeks.
-
 +++ Coming soon — **Information below is subject to change.**
 
 * **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
@@ -426,8 +424,6 @@ The following capabilities and improvements have been added to content managemen
 
 ### Administration {#may-26-admin}
 
-The following administration improvements are expected in the upcoming days or weeks.
-
 +++ Coming soon — **Information below is subject to change.**
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
@@ -441,8 +437,6 @@ The following administration improvements are expected in the upcoming days or w
 +++
 
 ### Reporting {#may-26-reporting}
-
-The following reporting improvement is expected in the upcoming days or weeks.
 
 +++ Coming soon — **Information below is subject to change.**
 
