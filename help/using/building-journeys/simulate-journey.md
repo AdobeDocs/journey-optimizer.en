@@ -9,25 +9,35 @@ role: User
 level: Intermediate
 keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
-badge: label="Limited Availability" type="Informative"
 ---
 # Simulate your journey{#simulate-journey}
-  
->[!IMPORTANT]
->
-> This capability is available to all customers as a Limited Availability with essential capabilities.
 
-You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profile-like entities you add, without using persistent test profiles in Adobe Experience Platform.
- 
-Adobe Journey Optimizer offers two ways to test and validate your journey:
+Use this guide after you [launch Simulation](simulate-journey-gs.md) on a journey and choose **[!UICONTROL Manual simulation]**. The sections below follow the same order as a typical run:
 
-* **[Simulation](#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users for quick runs without pre-created profiles in Adobe Experience Platform.
+* **[Create and manage simulated users](#test-users)**: Build or select simulated users, send them into the journey, and adjust wait behavior for the run.
+* **[Trigger your events](#firing_events)**: Fire unitary events so users waiting on event nodes (or entering a unitary journey) can progress on the canvas.
+* **[View results](#viewing-results)**: Open the execution log, review paths and errors, and confirm the journey is ready to publish.
 
-* **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
- 
-Note that Journey Simulation is in **Limited availability**. To share feedback and help us improve the experience, open **[!UICONTROL Feedback]** from the top bar.
- 
-![Beta feedback menu](assets/beta-feedback.png)
+### Quick simulation {#quick-simulation}
+
+Use **[!UICONTROL Quick simulation]** when you want a fast, hands-off run that exercises the journey using sensible defaults. Adobe Journey Optimizer automatically:
+
+* Gathers the profile information required by the journey, such as email address, phone number, and wait time.
+* Generates simulated users based on the journey definition (for example, 10 users when 10 are expected).
+* Triggers each generated user into the journey.
+
+Once the run completes, click **[!UICONTROL View results]** to inspect the outcome. For more information, see [View results](#viewing-results).
+
+### Manual simulation {#manual-simulation}
+
+Use **[!UICONTROL Manual simulation]** when you need full control over the simulated users, the events you fire, and the order in which they enter the journey. The interface guides you through each step:
+
+1. Add test users: generate them with AI, select previously saved users, or create new ones.
+1. Trigger the test users into the journey.
+1. Fire any unitary events the journey expects.
+1. Review the results.
+
+The next sections describe each step in detail.
 
 ## Create and manage simulated users {#test-users}
 
@@ -35,9 +45,15 @@ Note that Journey Simulation is in **Limited availability**. To share feedback a
 >
 >You need the **Simulate journeys** permission to access the **[!UICONTROL Simulation]** feature. [Learn more](../administration/permissions.md)
 
-Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, from the UI or a JSON file, save them for reuse, adjust or remove them from the list, and send them into the journey.
+Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, save them for reuse, adjust or remove them from the list, and send them into the journey.
 
-### Create simulated users
+You can populate the **[!UICONTROL Test users]** list in three ways:
+
+* **Generate users with AI** — Adobe Journey Optimizer generates a set of simulated users from the journey definition. For journeys with an Email or SMS node, the AI prompts you to confirm the email address or phone number to use; the value defaults to the address attached to your IMS profile.
+* **Select existing users** — Pick simulated users you previously created and saved.
+* **Create new users** — Define new simulated users from a UI form or by importing a JSON object.
+
+### Create simulated users {#create-simulated-users}
 
 The following steps show you how to create simulated users from the UI or by importing a JSON file.
 
@@ -47,7 +63,7 @@ The following steps show you how to create simulated users from the UI or by imp
     
 1. Click **[!UICONTROL Create Simulated Users]** to create new users and select whether to create users from the UI or import them from JSON.
 
-    To reuse simulated users instead, click **[!UICONTROL Select simulated users]** and choose entries you saved earlier.
+    To reuse simulated users instead, click **[!UICONTROL Select simulated users]** and choose entries you saved earlier. To let Adobe Journey Optimizer generate users for you from the journey definition, choose the AI generation option.
 
     ![Simulated user selection panel](assets/simulate-2.png)
 
@@ -77,17 +93,17 @@ The following steps show you how to create simulated users from the UI or by imp
 
     ![Simulated user selection panel](assets/simulate-4.png)
     
-1. If your journey includes a **[!UICONTROL Wait]** activity, open the **[!UICONTROL Test settings]** tab to fine-tune how long that wait lasts during the simulation.
+1. If your journey includes a **[!UICONTROL Wait]** activity, open the **[!UICONTROL Test settings]** tab to fine-tune how long that wait lasts during the simulation. For example, if the live **[!UICONTROL Wait]** activity is configured for several days, you can override it to 10 seconds so the simulated user only spends that long on the node before moving to the next activity.
 
-1. Click **[!UICONTROL Send all]** to send every simulated users in the list into the journey. A `Simulated users have been sent successfully.` confirmation message appears when the simulated users successfully enter the journey.
+1. Click **[!UICONTROL Send all]** to send every simulated user in the list into the journey, or click ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) on a row to send only that user. A `Simulated users have been sent successfully.` confirmation message appears when the simulated users successfully enter the journey.
 
     ![Simulated user selection panel](assets/simulate-5.png)
 
-1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
+1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View results](#viewing-results).
 
 After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
-### Select simulated users
+### Select simulated users {#select-simulated-users}
 
 Simulated users that you create manually are stored and can be selected from this list when Simulation is enabled on other journeys.
 
@@ -109,43 +125,95 @@ Simulated users that you create manually are stored and can be selected from thi
 
     ![Simulated user selection panel](assets/simulate-4.png)
 
-1. Click **[!UICONTROL Send all]** to send every simulated users in the list into the journey. A `Simulated users entered the journey successfully.` confirmation message appears when the simulated users successfully enter the journey.
+1. Click **[!UICONTROL Send all]** to send every simulated user in the list into the journey, or click ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) on a row to send only that user. A `Simulated users entered the journey successfully.` confirmation message appears when the simulated users successfully enter the journey.
 
     ![Simulated user selection panel](assets/simulate-5.png)
 
-1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
+1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View results](#viewing-results).
 
 After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
+### Test users table actions {#test-users-actions}
+
+Once test users are added to the **[!UICONTROL Test users]** list, the following table-level actions are available:
+
+* **[!UICONTROL Manage users]** — Generate users from the journey definition. Use this option when you want Adobe Journey Optimizer to populate the list automatically based on what the journey expects.
+* **[!UICONTROL Add users]** — Add more users to the current list, either by selecting from the simulated users inventory or by creating new ones from a form or JSON object.
+* **[!UICONTROL Clear]** — Remove every user from the list. Cleared users are not deleted from the simulated users inventory and remain available for selection.
+
+To trigger users into the journey, use the per-row and global send controls:
+
+* ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) — Send only the selected user into the journey.
+* **[!UICONTROL Send all]** — Send every user in the list at once.
+
+>[!NOTE]
+>
+>Click any row in the **[!UICONTROL Test users]** list to preview the path that user will take through the journey canvas before you trigger it.
+
 ## Trigger your events {#firing_events}
 
-If your journey includes one or more events, you can trigger them while Simulation is active.
+If your journey includes one or more unitary events, you trigger them while Simulation is active. The exact flow depends on the journey type:
+
+* **Batch journey with read audience and unitary events** — After you send simulated users into the journey, they wait at the event node. Trigger the expected event(s) to let each user progress further on the canvas.
+* **Unitary journey** — The journey starts with a unitary event. After you add (or create) a user, fire the start event for that user to enter the journey. See [Trigger the start event for a unitary journey](#unitary-trigger).
 
 1. In **[!UICONTROL Select event type]**, select the event to fire for this simulation.
 
     ![Event configuration interface with fields and drop-down for event selection](assets/simulate-10.png)
 
-1. Click **[!UICONTROL Configure events]** to open the editor and adjust the event as needed. To change the payload for a specific simulated user only, click ![Edit event](assets/do-not-localize/Smock_Edit_18_N.svg) beside that user.
+1. Configure the event payload for each user. You can:
+
+    * Click **[!UICONTROL Configure events]** to open the editor and adjust the event as needed.
+    * Click ![Edit event](assets/do-not-localize/Smock_Edit_18_N.svg) beside a user to change the payload for that simulated user only.
+    * Click **[!UICONTROL Generate event values]** beside a user to let Adobe Journey Optimizer generate the payload using AI. When values are generated, the user is marked **[!UICONTROL Ready to send]**.
 
     ![Event configuration interface with fields and drop-down for event selection](assets/simulate-9.png)
+
+1. To apply the same change to every user in the list, use the global controls:
+
+    * **[!UICONTROL Edit all]** — Open the editor and apply the same payload to every user.
+    * **[!UICONTROL Generate all]** — Generate event values for every user in a single action.
+    * **[!UICONTROL Send all]** — Trigger the event for every user marked **[!UICONTROL Ready to send]**.
 
 1. In the **[!UICONTROL Trigger event]** view, specify which simulated users to include in the execution. Event configuration applies to a single event at a time. Modifying the selected event or the set of included users resets previously entered field values. Complete the current configuration before changing either selection.
 
     ![Event configuration with Test users list and event fields](assets/simulate-8.png)
 
-1. Click **[!UICONTROL Done]**. 
+1. Click **[!UICONTROL Done]**.
 
-1. Then, in **[!UICONTROL Test events]**, either select **[!UICONTROL Send all]** to send every simulated user listed under **[!UICONTROL Test users]** into the journey, or select ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) for a single user to execute the simulation for that user only.
+1. In **[!UICONTROL Test events]**, either select **[!UICONTROL Send all]** to send every simulated user listed under **[!UICONTROL Test users]** into the journey, or select ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) for a single user to execute the simulation for that user only.
 
-1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
+1. After events are fired, the canvas updates to reflect each user's progression. Click any row in the **[!UICONTROL Test users]** list to see the new path that user took through the journey.
+
+1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View results](#viewing-results).
+
+### Trigger the start event for a unitary journey {#unitary-trigger}
+
+For journeys that start with a unitary event, the trigger step is also how the user enters the journey.
+
+1. Add a user to the **[!UICONTROL Test users]** list. To create a new user on the fly, fill in **[!UICONTROL Display name]**, **[!UICONTROL Email]**, and (optionally) **[!UICONTROL Description]**.
+1. Select the start event for the journey.
+1. Edit or generate the event payload. When editing, you can assign an **[!UICONTROL Event ID]** to the event.
+1. Mark the event as **[!UICONTROL Ready]**, then trigger it. The user enters the journey and the canvas reflects its path.
+
+<!-- TODO: new screenshot — Unitary journey: select start event and assign event ID. -->
 
 ## View results {#viewing-results}
 
 The **[!UICONTROL Results]** tab allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect.
- 
+
 <!--
 * **All simulated users**: Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. This view helps you scan the full simulation at a glance, activity, outcomes, and errors, without picking a single simulated user first.
 -->
+
+The results view summarizes the run, surfaces uncovered paths, and lets you inspect individual users:
+
+* **Run summary** — Overall outcome of the simulation across every user that was triggered.
+* **Uncovered paths** — Paths in the journey that were not reached by any simulated user during the run. Use this list to identify branches that need additional users or events to be exercised before publishing.
+* **Per-user path preview** — Click a user in the **[!UICONTROL Test users]** list to animate that user's path through the canvas. Useful when you want to confirm where a specific user ended up or where it is currently waiting.
+* **Per-node logs** — Detailed log for every node a user crossed, including entry, exit, and any errors recorded during simulation.
+
+<!-- TODO: new screenshot — Results view with uncovered paths summary and per-user path animation. -->
 
 For each activity, the log can show whether the simulated user entered or exited the step, and errors that occurred during the simulation.
 
