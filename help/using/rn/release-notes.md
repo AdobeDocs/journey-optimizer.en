@@ -471,7 +471,7 @@ The following usability improvements were also released in May 2026.
 
 #### Content authoring
 
-* **Inline profile attribute editing** - You can now insert profile attribute expressions directly in the Email Designer without opening the full personalization editor. Type `{{` in any text field to open an inline autocomplete dropdown, then browse and select the attribute you need — it is inserted at the cursor position instantly. This capability is also available in the Push channel editor. [Learn more](../personalization/personalize.md#inline-personalization)
+* **Inline profile attribute editing** - Inline profile attribute editing in the Email Designer was initially released in April. As part of the May release, this capability has been decoupled from AI Assistant and extended to the Push channel editor. [Learn more](../personalization/personalize.md#inline-personalization)
 
   ![](../personalization/assets/inline-profile-attributes.png)
 
