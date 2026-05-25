@@ -16,7 +16,7 @@ exl-id: a7c4e1b2-8f3d-4a6c-9e0b-1d2e3f4a5b6c
 
 >[!BEGINSHADEBOX]
 
-**Loyalty Challenges documentation** 
+**Table of contents**
 
 [Get started with Loyalty Challenges](get-started.md)
 
@@ -29,13 +29,11 @@ exl-id: a7c4e1b2-8f3d-4a6c-9e0b-1d2e3f4a5b6c
 
 +++
 
-+++Configure and integrate
+**Configure and integrate**
 
 <!-- * [Configure loyalty challenges](loyalty-admin.md) -->
 * **Loyalty data and datasets** ◀︎ **You are here**
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-+++
 
 >[!ENDSHADEBOX]
 

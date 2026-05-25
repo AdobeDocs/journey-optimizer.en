@@ -16,18 +16,16 @@ exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
 
 >[!BEGINSHADEBOX]
 
-**Loyalty Challenges documentation** 
+**Table of contents**
 
 [Get started with Loyalty Challenges](get-started.md)
 
-+++Create and manage challenges
+**Create and manage challenges**
 
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * **Create challenges** ◀︎ **You are here**
 * [Create tasks](create-tasks.md)
 * [Monitor loyalty challenge performance](loyalty-reporting.md)
-
-+++
 
 +++Configure and integrate
 
