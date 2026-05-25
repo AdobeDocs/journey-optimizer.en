@@ -422,6 +422,28 @@ The following capabilities and improvements have been added to content managemen
 
 * **Cross-organization repository access in the Assets Selector** - You can now seamlessly select assets from repositories across multiple organizations directly within the Adobe Experience Manager Asset Selector.
 
+### Usability {#may-26-usability}
+
+The following usability improvements have been added in this release.
+
+#### Lists
+
+* **Bulk actions** - You can now select multiple items at once in the **Campaigns**, **Fragments**, and **Templates** lists and perform bulk operations from a single action bar, including adding items to a package, moving them to a folder, editing tags, managing access, and archiving or deleting them. [Learn more](../start/search-filter-categorize.md#bulk-actions)
+
+  ![](../start/assets/bulk-actions-campaigns.png)
+
+* **Sorting and column resizing** - The **Campaigns**, **Fragments**, and **Templates** lists now support sorting by clicking any column header. In the Campaigns folders view, sorting and filtering by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** is also available. Column widths in the **Fragments** and **Templates** lists are also resizable — drag the column border to fit the data you care about most. [Learn more](../start/search-filter-categorize.md#filter-lists)
+
+#### Content authoring
+
+* **Inline profile attribute editing** - You can now insert profile attribute expressions directly in the Email Designer without opening the full personalization editor. Type `{{` in any text field to open an inline autocomplete dropdown, then browse and select the attribute you need — it is inserted at the cursor position instantly. This capability is also available in the Push channel editor. [Learn more](../personalization/personalize.md#inline-personalization)
+
+  ![](../personalization/assets/inline-profile-attributes.png)
+
+* **Link URL tooltip in Push channel editor** - When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL. [Learn more](../push/design-push.md#on-click-behavior)
+
+  ![](../rn/assets/do-not-localize/push-link-tooltip.png)
+
 ### Administration {#may-26-admin}
 
 +++ Coming soon — **Information below is subject to change.**
