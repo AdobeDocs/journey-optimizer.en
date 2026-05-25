@@ -314,13 +314,11 @@ The following usability improvements were also released in May 2026.
 
   ![](../rn/assets/do-not-localize/push-link-tooltip.png)
 
-<!--
 #### Simulation & Preview
 
 * **Redesigned preview experience** - The content preview screen has been redesigned with a side-by-side layout that lets you compare how your content renders across multiple profiles at a glance, enabling quicker and more confident reviews before sending. [Learn more](../test-approve/simulate-sample-input.md#preview)
 
   ![](../test-approve/assets/simulation-preview-redesign.png)
--->
 
 ## Coming soon {#coming-soon}
 
