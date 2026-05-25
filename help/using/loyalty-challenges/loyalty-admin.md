@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Configure the loyalty program
-description: Learn how to configure reward providers, event definitions, product inventory, exclusions, and organization-level settings for your loyalty program in Adobe [!DNL Journey Optimizer].
+title: Configure loyalty challenges
+description: Learn how to configure reward providers, event definitions, product inventory, exclusions, and organization-level settings for Loyalty Challenges in Adobe [!DNL Journey Optimizer].
 feature: Journeys
 topic: Content Management
 role: Admin
@@ -12,19 +12,32 @@ badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
 ---
-# Configure the loyalty program {#loyalty-admin}
+# Configure loyalty challenges {#loyalty-admin}
+
+<!-- Unpublished draft: Loyalty Admin UI documentation is not validated for Experience League. This page uses hide: true until review. -->
 
 >[!BEGINSHADEBOX]
 
-**Loyalty Challenges documentation:**
+**Loyalty Challenges documentation**
 
-* [Get started with Loyalty Challenges](get-started.md)
+[Get started with Loyalty Challenges](get-started.md)
+
++++Create and manage challenges
+
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * [Create challenges](create-challenges.md)
 * [Create tasks](create-tasks.md)
 * [Monitor loyalty challenge performance](loyalty-reporting.md)
-* **Configure the loyalty program** ◀︎ **You are here**
+
++++
+
++++Configure and integrate
+
+* **Configure loyalty challenges** ◀︎ **You are here**
+* [Loyalty data and datasets](loyalty-data-and-datasets.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
+
++++
 
 >[!ENDSHADEBOX]
 
@@ -34,11 +47,11 @@ exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
 
 ## Overview {#access-loyalty-admin}
 
-Loyalty program configuration connects [!DNL Journey Optimizer] to your external loyalty systems by setting up reward fulfillment, event mapping, product inventory, and exclusions before marketers author challenges.
+Loyalty Challenges configuration connects [!DNL Journey Optimizer] to your external loyalty systems by setting up reward fulfillment, event mapping, product inventory, and exclusions before marketers author challenges.
 
 >[!NOTE]
 >
->Loyalty program configuration requires administrator access to your [!DNL Journey Optimizer] instance, in addition to the permissions needed for Loyalty Challenges. Contact your Adobe administrator to gain access.
+>Loyalty Challenges configuration requires administrator access to your [!DNL Journey Optimizer] instance, in addition to the permissions needed for Loyalty Challenges. Contact your Adobe administrator to gain access.
 
 To open the configuration interface, navigate to **[!UICONTROL Loyalty]** and select **[!UICONTROL Loyal admin]**. The interface is organized into tabs:
 
@@ -53,9 +66,9 @@ To open the configuration interface, navigate to **[!UICONTROL Loyalty]** and se
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_admin_global_settings"
 >title="Global settings"
->abstract="Global settings define organization-level configuration for your loyalty program, including the identity namespace used to identify members across events and challenges."
+>abstract="Global settings define organization-level configuration for Loyalty Challenges, including the identity namespace used to identify members across events and challenges."
 
-Open the **[!UICONTROL Global settings]** tab and select the Adobe Experience Platform [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) for your loyalty program in the **[!UICONTROL Namespace]** drop-down. This namespace must match how member profiles are identified in your data.
+Open the **[!UICONTROL Global settings]** tab and select the Adobe Experience Platform [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) for Loyalty Challenges in the **[!UICONTROL Namespace]** drop-down. This namespace must match how member profiles are identified in your data.
 
 ![](assets/admin-global-settings.png)
 

@@ -16,15 +16,26 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 
 >[!BEGINSHADEBOX]
 
-**Loyalty Challenges documentation:**
+**Loyalty Challenges documentation**
 
-* **Get started with Loyalty Challenges** ◀︎ **You are here**
+**[Get started with Loyalty Challenges](get-started.md)** ◀︎ **You are here**
+
++++Create and manage challenges
+
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * [Create challenges](create-challenges.md)
 * [Create tasks](create-tasks.md)
 * [Monitor loyalty challenge performance](loyalty-reporting.md)
-<!-- * [Configure the loyalty program](loyalty-admin.md) -->
+
++++
+
++++Configure and integrate
+
+<!-- * [Configure loyalty challenges](loyalty-admin.md) -->
+* [Loyalty data and datasets](loyalty-data-and-datasets.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
+
++++
 
 >[!ENDSHADEBOX]
 
@@ -68,8 +79,6 @@ You can create these types of challenge experiences:
 ## How it works {#how-it-works}
 
 Creating and launching a loyalty challenge follows this workflow:
-
-<!-- 1. **Configure the loyalty program** (administrators) - Set up your Adobe Experience Platform namespace, reward providers, and optionally event definitions and product inventory so rewards can be fulfilled when customers complete challenges. [Learn how to configure the loyalty program](loyalty-admin.md). -->
 
 1. **Create a challenge** - Define the basic challenge properties, including name, type (Standard, Streak, Sequential, or Bring your own data when available), and date range. [Learn how to choose a challenge type](create-challenges.md#create-the-challenge).
 
