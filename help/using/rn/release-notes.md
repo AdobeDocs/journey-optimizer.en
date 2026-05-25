@@ -115,7 +115,7 @@ The following capabilities were released in May 2026.
 <td>
 <p>Journey Optimizer now uses the <strong>Content Advisor selector</strong>, a unified modal for selecting both Experience Manager Assets and Content Fragments. The new selector includes:</p>
 <ul>
-<li><strong>Browsing, searching, and filtering</strong> across all assets and fragments.</li>
+<li><strong>Browsing, searching, and filtering </strong>across all assets and fragments.</li>
 <li><strong>AI semantic search</strong>: describe what you need in plain language, e.g. "coffee in the mountains", to surface contextually relevant assets based on meaning and content, not just text matches. Multi-lingual queries are also supported.</li>
 <li><strong>Brief upload</strong>: upload a marketing brief to automatically surface assets that align with your campaign context based on its content and requirements.</li>
 <li><strong>Dynamic Media renditions</strong>: pick and apply image renditions for dynamic assets without leaving the selector.</li>
@@ -136,7 +136,7 @@ The following capabilities were released in May 2026.
 <tbody>
 <tr>
 <td>
-<p>You can now create <strong>Journey Fragments</strong> in Adobe Journey Optimizer. Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent — without rebuilding the same logic from scratch every time.</p>
+<p>You can now create <strong>Journey Fragments</strong> in Adobe Journey Optimizer. Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent, without rebuilding the same logic from scratch every time.</p>
 <p>Once created, fragments are stored in a dedicated <strong>Fragment Inventory</strong> and can be inserted into any journey using the <strong>Journey fragments</strong> activity.</p>
 <!--<p><img src="assets/do-not-localize/journey-fragments.gif"></p>-->
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
@@ -150,13 +150,14 @@ The following capabilities were released in May 2026.
 <table>
 <thead>
 <tr>
-<th><strong>Deeplinks in the Email Designer</strong><br/></th>
+<th><strong>Deep links in the Email Designer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>It is now possible to add deeplinks to your email contents through a dedicated option in the Email Designer.</p><p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
+<p>It is now possible to add deep links to your email contents through a dedicated option in the Email Designer.</p>
+<p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
 <p><img src="assets/do-not-localize/deeplinks.gif"></p>
 <p>For more information, refer to the <a href="../email/deeplinks.md">detailed documentation</a>.</p>
 <p>Availability date: May 12, 2026</p>

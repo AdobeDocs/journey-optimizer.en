@@ -420,7 +420,7 @@ The following capabilities and improvements have been added to content managemen
 </tbody>
 </table>
 
-* **Cross-organization repository access in the Assets Selector** - You can now seamlessly select assets from repositories across multiple organizations directly within the Adobe Experience Manager Asset Selector.
+* **Cross-organization repository access in the Assets Selector** - You can now seamlessly select assets from repositories across multiple organizations directly within the Adobe Experience Manager Asset Selector. 
 
 ### Usability {#may-26-usability}
 
