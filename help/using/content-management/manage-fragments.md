@@ -80,6 +80,12 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 
 ![](assets/fragment-list-more-actions.png)
 
+### Bulk actions {#bulk-actions-fragments}
+
+You can select multiple fragments at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and archiving. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
+
+You can also sort the fragment list by clicking any column header, and resize columns by dragging the column border to fit the data you need.
+
 ## Use folders to manage fragments {#folders}
 
 >[!CONTEXTUALHELP]
