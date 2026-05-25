@@ -48,7 +48,9 @@ Once you have created a push notification, you can design its content for iOS, A
 ![](assets/title-body.png)
 
 To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the personalization editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
-    
+
+You can also insert profile attributes inline directly in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields by typing `{{`. An autocomplete dropdown opens at the cursor — select any attribute to insert it as a personalization token without opening the full editor. [Learn more about inline editing →](../personalization/personalize.md#inline-personalization)
+
 Use the device preview section to visualize how the push notification displays on iOS, Android, and Web.
 
 Accelerate your content creation with AI Assistant and generate compelling push notification text with [AI Assistant for text generation](../content-management/generative-text.md) or create complete push notifications with [AI Assistant for full content generation](../content-management/generative-full-content.md).
@@ -68,10 +70,14 @@ Configure the action that occurs when recipients tap the body of your push notif
 * **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deeplink URL in the provided field.
 * **[!UICONTROL Web URL]**: Directs users to an external webpage. Enter the destination URL in the provided field.
 
-    >[!NOTE]
-    >
-    >If your push notification contains a URL that is configured as a universal link in iOS, the push will open the associated app if installed, regardless of your chosen **[!UICONTROL Web URL]** action. To force a browser open, use a domain not configured for universal links, or remove universal link registration for the domain.
-    >For more information on how the Adobe SDK handles deep links and universal links, refer to the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/push-notifications){target="_blank"}.
+When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL.
+
+![](assets/push-link-tooltip.png)
+
+>[!NOTE]
+>
+>If your push notification contains a URL that is configured as a universal link in iOS, the push will open the associated app if installed, regardless of your chosen **[!UICONTROL Web URL]** action. To force a browser open, use a domain not configured for universal links, or remove universal link registration for the domain.
+>For more information on how the Adobe SDK handles deep links and universal links, refer to the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/push-notifications){target="_blank"}.
 
 ## Add media {#add-media-push}
 

@@ -60,7 +60,7 @@ Press **Enter** to access all results and filter by business object.
 
 ## Filter lists {#filter-lists}
 
-In most of the lists, use the search bar to find specific items, and define filtering criteria.
+In most of the lists, use the search bar to find specific items, and define filtering criteria. You can also sort any list by clicking a column header. In the Campaigns folders view, sorting by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** is also supported.
 
 Filters can be accessed by clicking on the filter icon on the top left of a list. The filter menu allows you to filter the displayed elements according to different criteria: you can choose to display only elements of a certain type or status, the ones you created, or the ones modified in the last 30 days. Options differ depending on the context.
 
@@ -73,6 +73,21 @@ Additionally, you can use Unified tags to filter a list depending on the tags as
 In the lists, you can perform basic actions on each element. For example, you can duplicate or delete an item.
 
 ![](assets/journey4.png)
+
+## Bulk actions {#bulk-actions}
+
+In the **Campaigns**, **Fragments**, and **Templates** lists, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen.
+
+The following operations are available:
+
+* **[!UICONTROL Add to package]** - Export selected items to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
+* **[!UICONTROL Move to folder]** - Move selected items into a folder.
+* **[!UICONTROL Edit tags]** - Edit the tags assigned to selected items. [Learn how to use tags →](#add-tags)
+* **[!UICONTROL Manage access]** - Apply access labels to selected items. [Learn more about object-level access control →](../administration/object-based-access.md)
+* **[!UICONTROL Archive]** - Archive selected items. Available for Fragments and Templates.
+* **[!UICONTROL Delete]** - Permanently delete selected items. Available for Campaigns only.
+
+![](assets/bulk-actions-fragments.png)
 
 ## Work with Unified tags {#tags}
 

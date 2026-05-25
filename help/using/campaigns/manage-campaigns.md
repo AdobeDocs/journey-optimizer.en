@@ -100,6 +100,8 @@ Each Orchestrated campaign in the list displays information such as the campaign
 
 In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter campaigns to display only those associated to a given channel or tag, or those created during a specific date range.
 
+You can also sort the list by clicking most column headers. In the folders view, sorting and filtering by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** columns is also supported.
+
 ## Campaign operations {#operations}
 
 The ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button in the campaigns inventory allows you to perform various operations.
@@ -124,6 +126,10 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 **For Orchestrated campaigns only:**
 
 * **[!UICONTROL Back to draft]** - Unpublish and revert a campaign to draft status for error recovery. This action is available when a scheduled campaign has not yet started, or when a live campaign encounters an error before any executions are completed. [Learn more about reverting campaigns →](../orchestrated/start-monitor-campaigns.md#back-to-draft)
+
+### Bulk actions {#bulk-actions-campaigns}
+
+You can select multiple campaigns at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and deleting. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
 
 ## Understanding campaign status {#statuses}
 
