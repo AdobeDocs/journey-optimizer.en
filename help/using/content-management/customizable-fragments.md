@@ -169,11 +169,16 @@ To do so:
 
 ## Add rich text to a customizable fragment {#rich-text}
 
+>[!CONTEXTUALHELP]
+>id="ajo_editable_fragment_compatibility"
+>title="Compatibility warning"
+>abstract="Editable fields in this fragment are in text-only mode. Until you convert them, users can only enter plain text when editing this fragment in emails—rich text such as bold, italic, hyperlinks, and line breaks is not supported. Click <b>Convert</b> on the component to upgrade it to HTML-compatible mode. OR Disable edition and re-enable it again to upgrade the fragment to HTML-compatible mode."
+
 Rich text — including bold, italic, line breaks, and hyperlinks — is natively supported in **text**, **button**, and **HTML** components. When a customizable fragment is used in an email, users can edit these fields inline directly in the Email Designer canvas. [Learn how to customize editable fields](../email/use-visual-fragments.md#customize-fields)
 
 >[!NOTE]
 >
->Fragments created before this capability was introduced have editable fields set to **text-only** mode by default. A **Convert** button is available in the fragment editor to upgrade these fragments to HTML-compatible mode. Until converted, legacy text and HTML components with inline variables continue to support plain text only.
+>Fragments created before this capability was introduced / the June 2026 release have editable fields set to text-only mode by default. A **Convert** button is available in the fragment editor to upgrade these fragments to HTML-compatible mode. Until converted, legacy text and HTML components with inline variables continue to support plain text only. OR Disable edition and re-enable it again to upgrade the fragment to HTML-compatible mode. Until then, users can only enter plain text when editing this fragment in emails—rich text such as bold, italic, hyperlinks, and line breaks is not supported.
 
 The approach below (using HTML components with inline variables) remains fully supported for advanced HTML-based scenarios.
 <!--

@@ -146,6 +146,12 @@ Learn how to use implicit variables in [this section](../personalization/use-exp
 
 ## Customize editable fields {#customize-fields}
 
+>[!CONTEXTUALHELP]
+>id="ac_editable_fragment_compatibility"
+>title="Compatibility warning"
+>abstract="Some or all editable fields in this customizable fragment are text-only. Rich text formatting (bold, italic, hyperlinks, line breaks, etc.) is not available in the Email Designer until the fragment author upgrades the fragment to HTML-compatible mode using the <b>Convert</b> button in the fragment editor."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/customizable-fragments#rich-text" text="Learn how to add rich text to customizable fragments"
+
 If certain portions of the selected fragment have been made editable, you can override their default value after adding the fragment into your content. [Learn how to make fragments customizable](../content-management/customizable-fragments.md)
 
 To customize editable fields in a fragment, follow these steps.
@@ -170,7 +176,7 @@ To customize editable fields in a fragment, follow these steps.
 
     >[!IMPORTANT]
     >
-    >If the fragment was created before the ability to addd rich text to editable fields in customizable fragments was introduced, a notice in the Email Designer indicates that all editable fields are **text-only**. To enable rich text, go to the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode. [Learn how](../content-management/customizable-fragments.md#rich-text)
+    >If the fragment was created before the ability to add rich text to editable fields in customizable fragments was introduced, a notice in the Email Designer indicates that all editable fields are **text-only**. To enable rich text, go to the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode. [Learn how](../content-management/customizable-fragments.md#rich-text)
 
 >[!CAUTION]
 >
