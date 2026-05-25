@@ -15,6 +15,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2026 {#may-2026}
 
+* The **Release notes** page has been restructured with a topic-based layout. Changes are now grouped by product area instead of by change type, with a new dedicated **Usability improvements** section. Coming soon entries appear as expandable accordions within each topic. [Read more](release-notes.md)
+
 * The **Orchestrated campaigns guardrails and limitations** page now documents the **channel activities** limit per Orchestrated campaign. [Read more](../orchestrated/guardrails.md#activities-limitations)
 
 * The **Key Terminology** page has been overhauled: six new terms added, a new **Conflict & prioritization terms** section introduced, and a new **When terms look similar** disambiguation guide added for four commonly confused term pairs. Adobe Experience Platform-specific terms have been removed and replaced with a note linking to the Adobe Experience Platform glossary. [Read more](../start/terminology.md)
