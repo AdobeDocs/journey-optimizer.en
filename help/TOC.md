@@ -132,7 +132,7 @@ solution: Journey Optimizer
     + {hide-from-toc} [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
-+ Loyalty challenges {#loyalty-challenges}
++ Loyalty challenges {#loyalty-challenges} 
   + {hide-from-toc} [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
   + {hide-from-toc} [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
   + {hide-from-toc} [Create challenges](using/loyalty-challenges/create-challenges.md)

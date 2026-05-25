@@ -16,7 +16,7 @@ exl-id: c1e49173-69cc-4729-9f9a-afea2ccff3fa
 
 >[!BEGINSHADEBOX]
 
-**Loyalty Challenges documentation**
+**Loyalty Challenges documentation** 
 
 [Get started with Loyalty Challenges](get-started.md)
 
