@@ -70,11 +70,9 @@ Configure the action that occurs when recipients tap the body of your push notif
 * **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deeplink URL in the provided field.
 * **[!UICONTROL Web URL]**: Directs users to an external webpage. Enter the destination URL in the provided field.
 
-<!--
 When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL.
 
 ![](assets/push-link-tooltip.png)
--->
 
 >[!NOTE]
 >

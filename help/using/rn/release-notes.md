@@ -307,9 +307,12 @@ The following usability improvements were also released in May 2026.
 #### Content authoring
 
 * **Inline profile attribute editing** - You can now insert profile attribute expressions directly in the Email Designer without opening the full personalization editor. Type `{{` in any text field to open an inline autocomplete dropdown, then browse and select the attribute you need — it is inserted at the cursor position instantly. [Learn more](../personalization/personalize.md#inline-personalization)
-<!--This capability is also available in the Push channel editor, where a tooltip icon is always visible next to link fields — hover over it to verify the complete URL without truncation.-->
 
   ![](../personalization/assets/inline-profile-attributes.png)
+
+* **Link URL tooltip in Push channel editor** - When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL. [Learn more](../push/design-push.md#on-click-behavior)
+
+  ![](../rn/assets/do-not-localize/push-link-tooltip.png)
 
 <!--
 #### Simulation & Preview
