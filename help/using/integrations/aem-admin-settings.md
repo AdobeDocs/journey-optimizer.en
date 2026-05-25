@@ -74,5 +74,5 @@ To configure your repository:
 
 1. To edit or disable this repository integration, access your previously created configuration from the **[!UICONTROL AEM Integration]** menu.
 
-When you save, that sandbox uses the repository for the Content Fragment selector and **Adobe Experience Manager Content Advisor**.
+When you save this configuration, Journey Optimizer stores it for that repository in the current sandbox. You can then use that repository and its settings when browsing and selecting content in the **Content Advisor** selector.
 
