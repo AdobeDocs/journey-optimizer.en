@@ -16,26 +16,33 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 
 >[!BEGINSHADEBOX]
 
-**Table of contents** 
+**Table of contents**
 
 **[Get started with Loyalty Challenges](get-started.md)** ◀︎ **You are here**
 
-+++Create and manage challenges
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+<td style="vertical-align:top;">
+
+**Create and manage challenges**
 
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * [Create challenges](create-challenges.md)
 * [Create tasks](create-tasks.md)
 * [Monitor loyalty challenge performance](loyalty-reporting.md)
 
-+++
+</td>
+<td style="vertical-align:top;">
 
-+++Configure and integrate
+**Configure and integrate**
 
 <!-- * [Configure loyalty challenges](loyalty-admin.md) -->
 * [Loyalty data and datasets](loyalty-data-and-datasets.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
-+++
+</td>
+</tr>
+</table>
 
 >[!ENDSHADEBOX]
 
