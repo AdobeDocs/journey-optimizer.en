@@ -32,6 +32,10 @@ To configure your repository:
 
    ![](assets/aem-admin-settings-1.png)
 
+1. If you use **[!DNL Adobe Experience Manager Managed Services]**, enter a repository hostname ending with `adobecqms.net` in the **[!UICONTROL Custom AMS Repo ID]** field.
+
+   ![](assets/aem-admin-settings-6.png)
+
 1. Choose which repository to configure and click **[!UICONTROL Next]**.
 
     Additionally, you can click **[!UICONTROL View]** to access this repository.

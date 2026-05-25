@@ -47,10 +47,6 @@ The existing **Asset Selector** and **Content Fragment selector** experiences in
 
 >[!ENDSHADEBOX]
 
->[!AVAILABILITY]
->
->This integration applies to **Adobe Experience Manager as a Cloud Service Sites**, for **Content Fragments** only. Journey Optimizer reads fragments from the **Publish** tier (not Author). 
-
 The integration between Adobe Experience Manager and Journey Optimizer follows this data flow:
 
 1. **[Configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration){target="_blank"}**: To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first configure the Dispatcher. This is a prerequisite for the integration. 
