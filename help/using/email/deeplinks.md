@@ -18,13 +18,17 @@ When your recipients click the deep link, they are taken directly to the intende
 
 * the [configuration steps](#configuration) in Journey Optimizer;
 
-* the [mobile app implementation](#mobile-implementation) steps  for iOS and Android in your mobile app.
+* the [mobile app implementation](#mobile-implementation) steps for iOS and Android in your mobile app.
 
 >[!NOTE]
 >
 >[!DNL Adobe Journey Optimizer] supports deep linking for both iOS and Android using tracked URLs (`/ee/v1/mclick/*`) to ensure compatibility and click tracking.  
 
 ## Authoring deep links {#authoring}
+
+>[!CAUTION]
+>
+>Deep links will not work unless you have completed the [configuration](#configuration) and [mobile app implementation](#mobile-implementation) steps on this page.
 
 ### Email {#authoring-email}
 
