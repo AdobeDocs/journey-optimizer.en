@@ -244,7 +244,13 @@ The following orchestrated campaign capability is expected in the upcoming days 
 
 * **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
 
-  Availability date: June 1, 2026
+  Availability date: Early June, 2026
+
+* **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
+
+  Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
+
+  Availability date: Early June, 2026
 
 +++
 
@@ -343,18 +349,6 @@ The following capabilities and improvements have been added to the email channel
 * **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages. [Read more](../content-management/create-fragments.md#lock-visual-fragment)
 
   Availability date: May 21, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-The following email channel improvements are expected in the upcoming days or weeks.
-
-* **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
-
-  Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
-
-  Availability date: June 1, 2026
-
-+++
 
 ### Mobile messaging (SMS, MMS & RCS) {#may-26-mobile}
 
