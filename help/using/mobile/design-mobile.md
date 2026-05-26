@@ -137,7 +137,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
     >[!CAUTION]
     >
-    >To use the URL shortening function, you must first configure a subdomain that will then be linked to your configuration. [Learn more](sms-subdomains.md)
+    >To use the URL shortening function, you must first configure a subdomain that will then be linked to your configuration. [Learn more](mobile-subdomains.md)
     >
     > The lifespan of short URLs is set to 30 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
 
