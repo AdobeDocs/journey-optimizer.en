@@ -336,7 +336,7 @@ The following capabilities and improvements have been added to the email channel
 <tbody>
 <tr>
 <td>
-<p>It is now possible to add deep links to your email contents through a dedicated option in the Email Designer.</p>
+<p>It is now possible to add deep links to your email content through a dedicated option in the Email Designer.</p>
 <p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
 <p><img src="assets/do-not-localize/deeplinks.gif"></p>
 <p>For more information, refer to the <a href="../email/deeplinks.md">detailed documentation</a>.</p>
@@ -376,6 +376,8 @@ The following capabilities and improvements have been added to mobile messaging 
 * **SMS inbounds to a custom dataset** - In **SMS API credentials**, route **inbound SMS** to a **custom, profile-enabled Experience Event dataset** you select instead of only the default tracking dataset. [Read more](../mobile/mobile-webhook.md)
 
 * **Webhook interface enhancement** - When configuring SMS webhooks, the user interface now includes a built-in setup guide with practical examples, making it easier to align provider payloads and troubleshoot issues without leaving the configuration flow. [Read more](../mobile/mobile-webhook.md)
+
+* **Deep links in SMS content** - It is now possible to add deep links to your SMS content using the Url helper function. This ensures that the recipients are taken directly to the intended in-app content, without routing them through a web browser or an app store. [Read more](../email/deeplinks.md)
 
 ### WhatsApp channel {#may-26-whatsapp}
 

@@ -69,7 +69,7 @@ Add buttons for users to interact with your content cards.
 
 1. Select an **[!UICONTROL Interact event]** to define what action will be triggered when users click or interact with the button.
 
-1. In the **[!UICONTROL Target]** field, enter the web URL or deeplink where users will be directed after interacting with the button.
+1. In the **[!UICONTROL Target]** field, enter the web URL or deep link where users will be directed after interacting with the button.
 
 <!--
 +++More options with advanced formatting
@@ -116,7 +116,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 
 ![](assets/content-card-design-5.png)
 
-In the **[!UICONTROL Target URL]** field, enter the web URL or deeplink that will direct users to the desired destination after they interact with your content card. This could be an external website, a specific page within your app, or any other location you want users to be taken to based on their interaction.
+In the **[!UICONTROL Target URL]** field, enter the web URL or deep link that will direct users to the desired destination after they interact with your content card. This could be an external website, a specific page within your app, or any other location you want users to be taken to based on their interaction.
 
 ## Data tab
 
