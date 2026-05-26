@@ -9,6 +9,7 @@ role: User
 level: Intermediate
 keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
+hide: true
 ---
 # Get started with Journey simulation {#simulate-journey-gs}
 
