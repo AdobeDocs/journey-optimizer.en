@@ -377,7 +377,7 @@ The following capabilities and improvements have been added to mobile messaging 
 
 * **Webhook interface enhancement** - When configuring SMS webhooks, the user interface now includes a built-in setup guide with practical examples, making it easier to align provider payloads and troubleshoot issues without leaving the configuration flow. [Read more](../mobile/mobile-webhook.md)
 
-* **Deeplinks in SMS content** - It is now possible to add deep links to your SMS content using the Url helper function. This ensures that the recipients are taken directly to the intended in-app content, without routing them through a web browser or an app store. [Read more](../email/deeplinks.md)
+* **Deep links in SMS content** - It is now possible to add deep links to your SMS content using the Url helper function. This ensures that the recipients are taken directly to the intended in-app content, without routing them through a web browser or an app store. [Read more](../email/deeplinks.md)
 
 ### WhatsApp channel {#may-26-whatsapp}
 

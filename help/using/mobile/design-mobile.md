@@ -94,7 +94,7 @@ To define your RCS message content, follow the steps below.
 
     * **[!UICONTROL Reply]**: sends a predefined text reply back to the RCS agent on behalf of the profile. Use this to capture intent, drive conversational flows, or trigger downstream journey events. No additional fields are required, the reply text matches the button label.
 
-    * **[!UICONTROL Open URL]**: redirects the profile to a web page, deeplink, or In-App destination. Supports personalization tokens and UTM tracking parameters, e.g. `https://www.example.com/offers?id={{profile.userId}}`.
+    * **[!UICONTROL Open URL]**: redirects the profile to a web page, deep link, or In-App destination. Supports personalization tokens and UTM tracking parameters, e.g. `https://www.example.com/offers?id={{profile.userId}}`.
 
     * **[!UICONTROL Dial phone number]**: opens the device dialer with a specified phone number pre-filled, ready for the profile to call.
 
@@ -141,7 +141,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
     >
     > The lifespan of short URLs is set to 30 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
 
-1. To add a deeplink that opens a specific screen in your mobile app, use the **[!UICONTROL Url]** helper function with the `DEEPLINK` type, such as in the example below. [Learn more about deeplinks](../email/deeplinks.md)
+1. To add a deep link that opens a specific screen in your mobile app, use the **[!UICONTROL Url]** helper function with the `DEEPLINK` type, such as in the example below. [Learn more about deep links](../email/deeplinks.md)
 
       ```
       {{url originalUrl='<<deeplink_url>>' type='DEEPLINK' action='CLICK'}}
@@ -149,7 +149,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
       >[!IMPORTANT]
       >
-      >Before using deeplinking, make sure you have completed the corresponding [configuration steps](../email/deeplinks.md#configuration) in Journey Optimizer and implemented [deeplink handling](../email/deeplinks.md#mobile-implementation) in your mobile app. If you have not done so, the deeplink will not direct users to the intended in-app content.
+      >Before using deep linking, make sure you have completed the corresponding [configuration steps](../email/deeplinks.md#configuration) in Journey Optimizer and implemented [deep link handling](../email/deeplinks.md#mobile-implementation) in your mobile app. If you have not done so, the deep link will not direct users to the intended in-app content.
       >
       >Also, make sure link tracking is enabled in the **[!UICONTROL Actions]** section of your journey or campaign so that the URL is rewritten through Adobe systems.
 

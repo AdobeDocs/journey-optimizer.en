@@ -212,7 +212,7 @@ The following example lets you calculate the total sum of prices for products in
 
 ## Url {#url}
 
-The `url` helper is used to track links, shorten URLs and insert [deeplinks](../../email/deeplinks.md) in your SMS message content.
+The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your SMS message content.
 
 **Syntax**
 
