@@ -146,12 +146,6 @@ Learn how to use implicit variables in [this section](../personalization/use-exp
 
 ## Customize editable fields {#customize-fields}
 
->[!CONTEXTUALHELP]
->id="ac_editable_fragment_compatibility"
->title="Compatibility warning"
->abstract="Some or all editable fields in this customizable fragment are text-only. Rich text formatting (bold, italic, hyperlinks, line breaks, etc.) is not available in the Email Designer until the fragment author upgrades the fragment to HTML-compatible mode using the <b>Convert</b> button in the fragment editor."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/customizable-fragments#rich-text" text="Learn how to add rich text to customizable fragments"
-
 If certain portions of the selected fragment have been made editable, you can override their default value after adding the fragment into your content. [Learn how to make fragments customizable](../content-management/customizable-fragments.md)
 
 To customize editable fields in a fragment, follow these steps.
@@ -166,17 +160,21 @@ To customize editable fields in a fragment, follow these steps.
 
     ![](assets/fragment-editable-field-selected.png){width="70%" align="center"}
 
-    >[!NOTE]
-    >
-    >You can also select the editable fields on the right pane, making it easy to identify its location in your content. However, the fields in the right-hand panel are read-only for customizable fragments.
+1. You can also select the editable fields on the right pane, making it easy to identify their locations in your content. However, the fields in the right-hand panel are read-only for customizable fragments.
 
-1. Directly edit the content of the editable component inline.
+1. In the example below, the image source and alt text can be edited, as well as the "Click here" button URL.
 
-1. The Email Designer toolbar gives access to rich text options — bold, italic, hyperlinks, and more — for **text**, **button**, and **HTML** components.
+    ![](assets/fragment-editable.png)
+
+1. Directly edit the content of the editable fields inline in the Email Designer canvas.
+
+1. The Email Designer toolbar gives access to rich text options — bold, italic, hyperlinks, and more — for **Text**, **Button**, and **Html** components.
 
     >[!IMPORTANT]
     >
-    >If the fragment was created before the ability to add rich text to editable fields in customizable fragments was introduced, a notice in the Email Designer indicates that all editable fields are **text-only**. To enable rich text, go to the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode. [Learn how](../content-management/customizable-fragments.md#rich-text)
+    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable rich text, go to the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode. [Learn how](../content-management/customizable-fragments.md#rich-text-visual)
+
+    ![](assets/fragment-legacyeditable-fragment.png)
 
 >[!CAUTION]
 >
