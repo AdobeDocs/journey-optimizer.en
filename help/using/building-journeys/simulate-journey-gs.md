@@ -24,7 +24,7 @@ Adobe Journey Optimizer offers two ways to test and validate your journey:
 
 The **[!UICONTROL Simulation]** panel shows only the steps your journey needs. That depends on how profiles enter the journey. From these factors, Adobe Journey Optimizer surfaces different simulation experiences. Expand each type below to see how the run differs and which panels you use.
 
-For full procedures, see [Simulate your journey](simulate-journey.md).
+For details, see [Simulate your journey](simulate-journey.md).
 
 +++ Batch journey with a read audience
 
@@ -56,7 +56,6 @@ With **Unitary journey**, you access directly the Manual simulation menu.
 
 +++
 
-
 ## Launch Simulation {#launch}
 
 Switch the journey to **[!UICONTROL Simulation]** to test with simulated users. Step-by-step tasks are detailed in [Simulate your journey](simulate-journey.md).
@@ -69,7 +68,7 @@ Switch the journey to **[!UICONTROL Simulation]** to test with simulated users. 
 
 ## Limitations {#limitations}
 
-In this release, **[!UICONTROL Simulation]** may not support every activity, channel, or integration that **[!UICONTROL Test mode]** or a live journey supports, and behavior may change as the capability matures. Use the procedures in this article for supported workflows.
+In this release, **[!UICONTROL Simulation]** may not support every activity, channel, or integration that **[!UICONTROL Test mode]** or a live journey supports, and behavior may change as the capability matures. Use this article for supported workflows.
 
 Refer to the drop-downs below to learn more on Simulation limitations.
 
