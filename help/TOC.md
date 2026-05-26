@@ -209,6 +209,7 @@ solution: Journey Optimizer
       + [Enrichment](using/orchestrated/activities/enrichment.md)
       + [Fork](using/orchestrated/activities/fork.md)
       + [Incremental query](using/orchestrated/activities/incremental-query.md)
+      + {hide-from-toc} [Load file](using/orchestrated/activities/load-file.md)
       + [Read audience](using/orchestrated/activities/read-audience.md)
       + [Reconciliation](using/orchestrated/activities/reconciliation.md)
       + [Save audience](using/orchestrated/activities/save-audience.md)
