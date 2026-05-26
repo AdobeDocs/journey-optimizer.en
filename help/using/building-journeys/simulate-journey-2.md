@@ -57,7 +57,7 @@ Continue with [Create and manage simulated users](#test-users), [Trigger your ev
 
 >[!IMPORTANT]
 >
->You need the **Simulate journeys** permission to access the **[!UICONTROL Simulation]** feature. [Learn more](../administration/permissions.md)
+>You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
 
 Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, save them for reuse, adjust or remove them from the list, and send them into the journey.
 
@@ -109,7 +109,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
     +++
 
-1. The simulated users you created appear in the **[!UICONTROL Test users]** list. For each entry, open the options menu and select one of the following:
+1. The simulated users you created appear in the **[!UICONTROL Test users]** list. For each entry, select one of the following:
 
     * ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg): Update the simulated user's details.
     * ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg): Run the simulation for this simulated user only.
@@ -123,7 +123,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
 1. If your journey includes a **[!UICONTROL Wait]** activity, open the **[!UICONTROL Test settings]** tab to fine-tune how long that wait lasts during the simulation. For example, if the live **[!UICONTROL Wait]** activity is configured for several days, you can override it to 10 seconds so the simulated user only spends that long on the node before moving to the next activity.
 
-1. Click **[!UICONTROL Send all]** to send every simulated user in the list into the journey, or click ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) on a row to send only that user. A `Simulated users have been sent successfully.` confirmation message appears when the simulated users successfully enter the journey.
+1. Click **[!UICONTROL Send all]** to send every simulated user in the list into the journey, or click ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) on a row to send only that user. A `Simulated users have entered the journey successfully.` confirmation message appears when the simulated users successfully enter the journey.
 
     ![Simulated user selection panel](assets/simulate-5-2.png)
 
