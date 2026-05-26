@@ -63,51 +63,51 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
 1. Start by populating the **[!UICONTROL Test users]** list:
 
-    * +++ Generate users with AI
+    +++ Generate users with AI
         
-        Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
+    Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
         
-        For journeys with an Email or SMS node, the AI prompts you to confirm the email address or phone number to use. Once done, click **[!UICONTROL Generate]**.
+    For journeys with an Email or SMS node, the AI prompts you to confirm the email address or phone number to use. Once done, click **[!UICONTROL Generate]**.
 
-        ![Simulated user selection panel](assets/simulate-generate.png)
+    ![Simulated user selection panel](assets/simulate-generate.png)
 
-        +++
+    +++
 
-    * +++ Browse inventory
+    +++ Browse inventory
         
-        Choose **[!UICONTROL Browse inventory]** to add simulated users you already saved, for example, users you created from a form or JSON, or users you kept after an AI generation run.
+    Choose **[!UICONTROL Browse inventory]** to add simulated users you already saved, for example, users you created from a form or JSON, or users you kept after an AI generation run.
         
-        ![Simulated user selection panel](assets/simulate-inventory.png)
+    ![Simulated user selection panel](assets/simulate-inventory.png)
 
-        +++
+    +++
 
-    * +++ Create from form
+    +++ Create from form
 
-        1. Enter a **[!UICONTROL Display name]** and **[!UICONTROL Description]** to identify this simulated user. 
+    1. Enter a **[!UICONTROL Display name]** and **[!UICONTROL Description]** to identify this simulated user. 
             
-            ![Simulated user selection panel](assets/simulate-form.png)
+        ![Simulated user selection panel](assets/simulate-form.png)
 
-        1. Then, select the attributes from the Union schema that you want to populate for this user.
+    1. Then, select the attributes from the Union schema that you want to populate for this user.
 
-        1. Click **[!UICONTROL Add audience membership]** to simulate segment memberships.
+    1. Click **[!UICONTROL Add audience membership]** to simulate segment memberships.
 
-        1. Click **[!UICONTROL Add profile]** to create multiple simulated users in a single session.
+    1. Click **[!UICONTROL Add profile]** to create multiple simulated users in a single session.
 
-        1. From the menu, use **[!UICONTROL Duplicate]** to copy a user, **[!UICONTROL Apply to all]** to copy one user's attributes to every other user in the session, or **[!UICONTROL Delete]** to remove a user.
+    1. From the menu, use **[!UICONTROL Duplicate]** to copy a user, **[!UICONTROL Apply to all]** to copy one user's attributes to every other user in the session, or **[!UICONTROL Delete]** to remove a user.
 
-            ![Simulated user selection panel](assets/simulate-form-2.png)
+        ![Simulated user selection panel](assets/simulate-form-2.png)
 
-        1. Click **[!UICONTROL Save]** when you finish configuring users in this session.
+    1. Click **[!UICONTROL Save]** when you finish configuring users in this session.
         
-        +++
+    +++
 
-    * +++ Create from JSON
+    +++ Create from JSON
 
-        Define new simulated users by updating the corresponding fields with your simulated user data.
+    Define new simulated users by updating the corresponding fields with your simulated user data.
 
-        ![Simulated user selection panel](assets/simulate-json.png)
+    ![Simulated user selection panel](assets/simulate-json.png)
 
-        +++
+    +++
 
 1. The simulated users you created appear in the **[!UICONTROL Test users]** list. For each entry, open the options menu and select one of the following:
 
