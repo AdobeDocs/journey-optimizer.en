@@ -457,6 +457,26 @@ The following capabilities and improvements have been added to content managemen
 
 * **Cross-organization repository access in the Assets Selector** - You can now seamlessly select assets from repositories across multiple organizations directly within the Adobe Experience Manager Asset Selector.
 
+### Administration {#may-26-admin}
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
+
+  Availability date: June 1, 2026
+
++++
+
+### Reporting {#may-26-reporting}
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
+
+  Availability date: June 1, 2026
+
++++
+
 ### Usability improvements {#may-26-usability}
 
 The following usability improvements were also released in May 2026.
@@ -487,26 +507,10 @@ The following usability improvements were also released in May 2026.
   ![](../test-approve/assets/simulation-preview-redesign.png)
 -->
 
-### Administration {#may-26-admin}
-
 +++ Coming soon — **Information below is subject to change.**
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
 
   Availability date: June 2, 2026
-
-* **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
-
-  Availability date: June 1, 2026
-
-+++
-
-### Reporting {#may-26-reporting}
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
-
-  Availability date: June 1, 2026
 
 +++
