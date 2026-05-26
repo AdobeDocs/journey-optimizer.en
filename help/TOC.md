@@ -14,7 +14,6 @@ solution: Journey Optimizer
   + [Release cycle](using/rn/releases.md)
   + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)  
   + [Latest release notes](using/rn/release-notes.md)
-  + {hide-from-toc}[Release notes](using/rn/release-notes-2.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
     + [2026](using/rn/release-notes-2026.md)
@@ -135,13 +134,14 @@ solution: Journey Optimizer
     + {hide-from-toc} [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
-+ Loyalty challenges {#loyalty-challenges}
++ Loyalty challenges {#loyalty-challenges} 
   + {hide-from-toc} [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
   + {hide-from-toc} [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
   + {hide-from-toc} [Create challenges](using/loyalty-challenges/create-challenges.md)
   + {hide-from-toc} [Create tasks](using/loyalty-challenges/create-tasks.md)
   + {hide-from-toc} [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
-  + {hide-from-toc} [Configure the loyalty program](using/loyalty-challenges/loyalty-admin.md)
+  + {hide-from-toc} [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
+  + {hide-from-toc} [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
   + {hide-from-toc} [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)

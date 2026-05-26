@@ -117,6 +117,12 @@ To easily navigate your content templates, use folders to organize them more eff
 >
 >When a template is edited or deleted, campaigns or journeys including content created using this template are not impacted.
 
+## Bulk actions {#bulk-actions-templates}
+
+You can select multiple templates at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and archiving. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
+
+You can also sort the template list by clicking most column headers, and resize columns by dragging the column border to fit the data you need.
+
 ## [!BADGE limited Availability]{type=Informative} display templates as thumbnails {#template-thumbnails}
 
 Select the **[!UICONTROL Grid view]** mode to display each template as a thumbnail.
