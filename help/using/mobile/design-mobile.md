@@ -94,7 +94,7 @@ To define your RCS message content, follow the steps below.
 
     * **[!UICONTROL Reply]**: sends a predefined text reply back to the RCS agent on behalf of the profile. Use this to capture intent, drive conversational flows, or trigger downstream journey events. No additional fields are required, the reply text matches the button label.
 
-    * **[!UICONTROL Open URL]**: redirects the profile to a web page, deep link, or In-App destination. Supports personalization tokens and UTM tracking parameters, e.g. `https://www.example.com/offers?id={{profile.userId}}`.
+    * **[!UICONTROL Open URL]**: redirects the profile to a web page, deeplink, or In-App destination. Supports personalization tokens and UTM tracking parameters, e.g. `https://www.example.com/offers?id={{profile.userId}}`.
 
     * **[!UICONTROL Dial phone number]**: opens the device dialer with a specified phone number pre-filled, ready for the profile to call.
 
@@ -127,25 +127,31 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
 1. After defining your content, you can add tracked URLs to your message. To do this, access the **[!UICONTROL Helper functions]** menu and select **[!UICONTROL Helpers]**.
 
-    To use the URL shortening function, you must first configure a subdomain that will then be linked to your configuration. [Learn more](mobile-subdomains.md)
-    
-    >[!NOTE]
-    >
-    > To access and edit SMS subdomains, you must have the **[!UICONTROL Manage SMS Subdomains]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md).
-
     ![](assets/sms_tracking_1.png)
 
-1. Within the **[!UICONTROL Helper functions]** menu, click **[!UICONTROL URL function]** and then select **[!UICONTROL Add URL]**.
+1. Select **[!UICONTROL URL]** and click **[!UICONTROL Add URL]**.
 
     ![](assets/sms_tracking_2.png)
 
-    <!--The URL shortening function cannot be used within a fragment. TBC-->
-
-1. In the `originalUrl` field, paste the URL that you want to shorten and click **[!UICONTROL Save]**.
+1. To shorten the URL, paste it in the `originalUrl` field and click **[!UICONTROL Save]**.
 
     >[!CAUTION]
     >
+    >To use the URL shortening function, you must first configure a subdomain that will then be linked to your configuration. [Learn more](sms-subdomains.md)
+    >
     > The lifespan of short URLs is set to 30 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
+
+1. To add a deeplink that opens a specific screen in your mobile app, use the URL helper with the `DEEPLINK` type, such as in the example below. [Learn more about deeplinks](../email/deeplinks.md)
+
+      ```
+      {{url originalUrl='<<deeplink_url>>' type='DEEPLINK' action='CLICK'}}
+      ```
+
+      >[!IMPORTANT]
+      >
+      >Before using deeplinking, make sure you have completed the corresponding [configuration steps](../email/deeplinks.md#configuration) in Journey Optimizer and implemented [deeplink handling](../email/deeplinks.md#mobile-implementation) in your mobile app. If you have not done so, the deeplink will not direct users to the intended in-app content.
+      >
+      >Also, make sure link tracking is enabled in the **[!UICONTROL Actions]** section of your journey or campaign so that the URL is rewritten through Adobe systems.
 
 1. From the **[!UICONTROL Decisioning]** menu, you can personalize and optimize the content of your Mobile messages with **Decisioning**. This capability allows you to use Priority Scores, Formulas, or AI Models to dynamically select and display the best content to your customers.
   
