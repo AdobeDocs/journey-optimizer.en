@@ -12,7 +12,7 @@ version: Journey Orchestration
 ---
 # Simulate your journey{#simulate-journey}
 
-Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **Quick simulation** and **Manual simulation**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
+Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
 
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
 
@@ -114,7 +114,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
     * ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg): Run the simulation for this simulated user only.
     * ![Clear icon](assets/do-not-localize/Smock_Close_18_N.svg): Remove the user from this list. The simulated user is not deleted and remains available in the Simulated Users selection.
 
-    ![Simulated user selection panel](assets/simulate-4.png)
+    ![Simulated user selection panel](assets/simulate-4-2.png)
 
 1. To change the list after your selection, click **[!UICONTROL Manage users]** to add more simulated users, from the inventory or by creating new ones. To remove every user from the **[!UICONTROL Test users]** list for this run, choose **[!UICONTROL Clear all users]**.
 
@@ -124,7 +124,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
 1. Click **[!UICONTROL Send all]** to send every simulated user in the list into the journey, or click ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) on a row to send only that user. A `Simulated users have been sent successfully.` confirmation message appears when the simulated users successfully enter the journey.
 
-    ![Simulated user selection panel](assets/simulate-5.png)
+    ![Simulated user selection panel](assets/simulate-5-2.png)
 
 1. If the journey includes unitary events, you need to select the event to trigger. See [Trigger your events](#firing_events).
 
@@ -138,25 +138,25 @@ If your journey includes one or more unitary events, you trigger them while Simu
 
 1. In **[!UICONTROL Select event type]**, select the event to fire for this simulation.
 
-    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-10.png)
+    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-10-2.png)
 
 1. To apply the same change to every user in the list, use the **[!UICONTROL Manage events]** option to:
 
     * **[!UICONTROL Generate event values]** to let Adobe Journey Optimizer generate the payload using AI. When values are generated, the user is marked **[!UICONTROL Ready to send]**.
     * **[!UICONTROL Edit event date]** to change the payload for that simulated user only.
 
-    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-9.png)
+    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-9-2.png)
 
 1. Configure the event payload for each user by clicking the ![Edit event](assets/do-not-localize/Smock_Edit_18_N.svg) beside a user to:
 
     * **[!UICONTROL Generate event values]** to let Adobe Journey Optimizer generate the payload using AI. When values are generated, the user is marked **[!UICONTROL Ready to send]**.
     * **[!UICONTROL Edit event date]** to change the payload for that simulated user only.
 
-    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-8.png)
+    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-8-2.png)
 
 1. In **[!UICONTROL Test events]**, either select **[!UICONTROL Send all]** to send every simulated user listed under **[!UICONTROL Test users]** into the journey, or select ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) for a single user to execute the simulation for that user only.
 
-    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-11.png)
+    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-11-2.png)
 
 1. After events are fired, the canvas updates to reflect each user's progression. Click any row in the **[!UICONTROL Test users]** list to see the new path that user took through the journey.
 
@@ -168,7 +168,7 @@ The **[!UICONTROL Results]** tab allows you to view the test results. In the **[
 
 Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. This view helps you scan the full simulation at a glance, activities, outcomes, and errors, without picking a single simulated user first.
 
-![Logs for test users](assets/simulate-6.png)
+![Logs for test users](assets/simulate-6-2.png)
 
 For each activity, the log can show whether the simulated user entered or exited the step, and errors that occurred during the simulation.
 
