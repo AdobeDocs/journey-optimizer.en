@@ -166,7 +166,7 @@ You now need to enable your Dataset for Orchestrated campaigns.
 
 After creating your dataset, you need to explicitly enable it for Orchestrated campaigns. This step ensures your dataset is available for real-time orchestration and personalization within Adobe Journey Optimizer.
 
-Refer to [Adobe Developer documentation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset/#tag/DatasetEnablement) to validate or enable Orchestrated Campaign Extension on Dataset.
+Refer to [Adobe Developer documentation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset#tag/DatasetEnablement) to validate or enable Orchestrated Campaign Extension on Dataset.
 
 1. Locate your dataset in the **[!UICONTROL Datasets]** list.
 

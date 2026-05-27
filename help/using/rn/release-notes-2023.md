@@ -300,7 +300,7 @@ This release comes with the improvements listed below.
 <!--
 **APIs**
 
-A new API to create and manage Content Fragments is now available. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/content-templates/#tag/Content-fragment-API){target="_blank"}.
+A new API to create and manage Content Fragments is now available. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/content#tag/Content-fragment-API){target="_blank"}.
 -->
 
 <!--

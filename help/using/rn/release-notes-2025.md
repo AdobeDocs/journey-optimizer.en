@@ -1806,7 +1806,7 @@ table>
 
 **Campaigns preview API**
 
-  New APIs are available to preview campaigns, in addition to existing proof-sending capabilities. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/simulations/#operation/createCampaignPreview){target="_blank"}.
+  New APIs are available to preview campaigns, in addition to existing proof-sending capabilities. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/simulations#operation/createCampaignPreview){target="_blank"}.
 
 **Sandbox Tooling**
 
