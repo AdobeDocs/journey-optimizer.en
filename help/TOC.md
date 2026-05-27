@@ -57,8 +57,6 @@ solution: Journey Optimizer
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + [Simulate your journey](using/building-journeys/simulate-journey.md)
-    + {hide-from-toc}[Get started with Journey simulation](using/building-journeys/simulate-journey-gs.md)
-    + {hide-from-toc}[Simulate your journey](using/building-journeys/simulate-journey-2.md)
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Journey Dry run](using/building-journeys/journey-dry-run.md)
     + [Publish your journey](using/building-journeys/publish-journey.md)
@@ -214,6 +212,7 @@ solution: Journey Optimizer
       + [Reconciliation](using/orchestrated/activities/reconciliation.md)
       + [Save audience](using/orchestrated/activities/save-audience.md)
       + [Split](using/orchestrated/activities/split.md)
+      + [Load file](using/orchestrated/activities/load-file.md)
       + [Test](using/orchestrated/activities/test.md)
       + [Wait](using/orchestrated/activities/wait.md)
     + Learn through use cases {#use-cases}
@@ -317,7 +316,7 @@ solution: Journey Optimizer
       + [Header parameters](using/email/header-parameters.md)
       + [URL tracking](using/email/url-tracking.md)
       + [Personalize email configuration](using/email/surface-personalization.md)
-    + [Use and configure deep links](using/email/deeplinks.md)
+    + [Use and configure deeplinks](using/email/deeplinks.md)
     + [Manage email opt-out](using/email/email-opt-out.md)
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
