@@ -13,15 +13,11 @@ TQID: https://experienceleague.adobe.com/ffeoNY5SR6RmhqfGzpDwryo0Ss7XL4td-9gnQm1
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-    internal-label: Experience Platform
 feature_v2:
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities (AJO)
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -31,6 +27,11 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning (AJO)
 ---
 # Leverage Custom upload audiences for decisioning {#custom-upload-decisioning}
 

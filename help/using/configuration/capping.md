@@ -15,10 +15,6 @@ product_v2:
 feature_v2:
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
 subfeature_v2:

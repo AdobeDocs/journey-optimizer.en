@@ -6,6 +6,10 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b9149ad6-2be7-4bdf-82eb-7ab52780cb4e
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2: []
 ---
 # Math Functions {#math}
 

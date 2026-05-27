@@ -11,19 +11,13 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
 subfeature_v2:
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
+    internal-label: Web channel
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

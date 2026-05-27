@@ -12,21 +12,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes (AJO)
 subfeature_v2:
-  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
-    internal-label: Action configuration
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates (AJO)
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes (AJO)
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates (AJO)
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

@@ -17,8 +17,6 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 role_v2:
@@ -27,6 +25,9 @@ role_v2:
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
+subfeature_v2:
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
 ---
 # Create feedback webhooks for API triggered campaigns {#webhooks}
 

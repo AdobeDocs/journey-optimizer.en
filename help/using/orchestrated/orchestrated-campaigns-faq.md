@@ -10,31 +10,19 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration (AJO)
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
   - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
     internal-label: Business rules
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation

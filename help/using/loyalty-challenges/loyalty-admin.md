@@ -11,6 +11,8 @@ hide: true
 badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
+feature_v2: []
+subfeature_v2: []
 ---
 # Configure loyalty challenges {#loyalty-admin}
 

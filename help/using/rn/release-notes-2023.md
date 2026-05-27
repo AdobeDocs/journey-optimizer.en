@@ -9,6 +9,16 @@ hide: true
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
+feature_v2:
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes (AJO)
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates (AJO)
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes (AJO)
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates (AJO)
 ---
 # Release Notes 2023 {#release-notes-2023}
 

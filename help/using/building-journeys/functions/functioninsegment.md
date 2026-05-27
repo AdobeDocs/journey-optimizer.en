@@ -8,6 +8,8 @@ level: Experienced
 keywords: inSegment, function, expression, journey
 exl-id: 8417af75-6e97-4ad4-86b4-3ecd264a5560
 version: Journey Orchestration
+feature_v2: []
+subfeature_v2: []
 ---
 # inSegment {#inSegment}
 

@@ -11,15 +11,11 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration (AJO)
 subfeature_v2:
-  - id: fae48155-b23f-40d2-a252-a25bce350b4d
-    internal-label: Email configuration
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization

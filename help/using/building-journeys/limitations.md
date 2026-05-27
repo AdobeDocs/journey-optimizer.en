@@ -10,6 +10,8 @@ level: Intermediate
 keywords: journeys, limitation
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 version: Journey Orchestration
+feature_v2: []
+subfeature_v2: []
 ---
 # Limitations {#journey-limitations}
 

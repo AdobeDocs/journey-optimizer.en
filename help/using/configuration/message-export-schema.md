@@ -8,7 +8,10 @@ topic: Administration
 role: Admin
 level: Experienced
 keywords: export, messages, dataset, schema, emails, SMS
-
+feature_v2: []
+subfeature_v2:
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
 ---
 # AJO Message Export schema {#ajo-message-export-schema}
 

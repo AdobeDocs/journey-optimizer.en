@@ -5,6 +5,10 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 6477270c-0309-411a-8254-c7ffc4419492
+feature_v2: []
+subfeature_v2:
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
 ---
 # Preview your content using test profiles {#preview}
 

@@ -16,11 +16,11 @@ product_v2:
 feature_v2:
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
 subfeature_v2:
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
-  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
-    internal-label: Overview
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

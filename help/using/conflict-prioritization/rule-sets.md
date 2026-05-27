@@ -14,21 +14,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
-  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
-    internal-label: Communication channels
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization (AJO)
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

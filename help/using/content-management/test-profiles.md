@@ -5,6 +5,10 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: c51e4089-7f51-437d-a5ed-de10bab46cf8
+feature_v2: []
+subfeature_v2:
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
 ---
 # Select test profiles {#select-test-profiles}
 

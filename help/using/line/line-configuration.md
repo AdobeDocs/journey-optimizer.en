@@ -12,9 +12,11 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
 subfeature_v2:
+  - id: e09fc1e6-407c-418f-adc5-e2ffe8b8986e
+    internal-label: LINE channel (AJO)
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
 role_v2:

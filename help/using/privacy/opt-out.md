@@ -13,21 +13,17 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: b5cb2dff-e9ba-4e50-a3eb-6a50eef729b8
-    internal-label: Email rendering
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
+    internal-label: Consent management (AJO)
+  - id: f365ec33-2b99-4b7f-b4ee-c743dd7f615f
+    internal-label: Data governance
+  - id: c8d5f2ce-ba44-43e9-a2bf-94a3d7d85ec3
+    internal-label: Data privacy requests
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
