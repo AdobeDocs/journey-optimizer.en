@@ -23,8 +23,6 @@ feature_v2:
 subfeature_v2:
   - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
     internal-label: Data source configuration
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

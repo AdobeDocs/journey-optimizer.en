@@ -7,6 +7,12 @@ feature: SMS
 topic: Content Management
 role: User
 level: Beginner
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
+    internal-label: SMS and MMS channel
 ---
 # Design a Mobile message {#design-mobile}
 

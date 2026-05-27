@@ -8,6 +8,8 @@ topic: Content Management
 role: User, Developer
 level: Intermediate
 keywords: deeplink, deep link, universal links, app links, email, sms
+feature_v2: []
+subfeature_v2: []
 ---
  
 # Use and configure deep links in emails and SMS {#deeplinks}

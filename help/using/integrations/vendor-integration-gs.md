@@ -8,6 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: integration, vendor, third-party
+subfeature_v2: []
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
 ---
 
 # Vendors integration {#vendor-integration}

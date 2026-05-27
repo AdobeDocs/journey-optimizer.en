@@ -5,6 +5,10 @@ feature: Preview
 role: User
 level: Beginner
 exl-id: fe077a8b-9788-4723-a1e7-32816a879af9
+feature_v2: []
+subfeature_v2:
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
 ---
 # Test email rendering {#email-rendering}
 

@@ -11,6 +11,8 @@ hide: true
 badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: a7c4e1b2-8f3d-4a6c-9e0b-1d2e3f4a5b6c
+feature_v2: []
+subfeature_v2: []
 ---
 # Loyalty data and datasets {#loyalty-data-and-datasets}
 

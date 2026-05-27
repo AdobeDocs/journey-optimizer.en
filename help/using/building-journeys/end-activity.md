@@ -10,6 +10,8 @@ level: Intermediate
 keywords: journey, activity, end 
 exl-id: 76c74ca3-edaa-48c5-8d6a-0906120e31a1
 version: Journey Orchestration
+feature_v2: []
+subfeature_v2: []
 ---
 # End activity{#end-activity}
 

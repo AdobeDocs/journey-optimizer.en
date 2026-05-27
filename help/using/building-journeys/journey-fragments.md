@@ -10,6 +10,8 @@ level: Intermediate
 keywords: fragments, journey, reuse, nodes, canvas, inventory, reusable
 badge: label="Limited Availability" type="Informative"
 version: Journey Orchestration
+feature_v2: []
+subfeature_v2: []
 ---
 
 # Journey Fragments {#journey-fragments}
