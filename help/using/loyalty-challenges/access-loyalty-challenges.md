@@ -36,7 +36,7 @@ exl-id: 8907c18e-4623-4743-a76b-333f34e13baf
 
 **Configure and integrate**
 
-<!-- * [Configure loyalty challenges](loyalty-admin.md) -->
+* [Configure loyalty challenges](loyalty-admin.md)
 * [Loyalty data and datasets](loyalty-data-and-datasets.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 

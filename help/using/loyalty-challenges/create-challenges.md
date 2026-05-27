@@ -36,7 +36,7 @@ exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
 
 **Configure and integrate**
 
-<!-- * [Configure loyalty challenges](loyalty-admin.md) -->
+* [Configure loyalty challenges](loyalty-admin.md)
 * [Loyalty data and datasets](loyalty-data-and-datasets.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
@@ -131,7 +131,7 @@ The challenge schedule is now configured. Next, add the tasks that customers nee
 >title="Tasks"
 >abstract="Select tasks to perform to complete the challenge. Next, configure how the challenge is completed - the available options depend on your challenge type (Standard, Streak, or Sequential)."
 
-Tasks define the specific actions customers must complete to earn rewards. You can configure task types (purchase, spend), quantities, product filters, and other attributes.
+Tasks define the specific actions customers must complete to earn rewards. You can configure task types (purchase, spend, or custom event), quantities, product filters, and other attributes.
 
 To add tasks to your challenge, follow these steps:
 
@@ -198,9 +198,7 @@ To configure when and how rewards are delivered:
    * **[!UICONTROL Deliver rewards at task completion milestones as challenge progress is made]**: Award rewards incrementally as customers complete individual tasks (only available for challenges requiring more than one task)  
      *Example: Award 10 points after task 1, 20 points after task 2, and 50 points after task 3*
 
-1. Select your reward provider. This is your loyalty solution that manages customer points and rewards.
-
-   <!-- Reward providers are created in **[!UICONTROL Loyalty Admin]** before you author challenges. [Learn how to configure reward providers](loyalty-admin.md#reward-providers). -->
+1. Select your reward provider. This is your loyalty solution that manages customer points and rewards. Reward providers are created in the **[!UICONTROL Loyalty admin]** menu before you author challenges. [Learn how to configure reward providers](loyalty-admin.md#reward-providers)
 
    ![](assets/challenge-create-reward-type.png)
 
