@@ -212,7 +212,6 @@ solution: Journey Optimizer
       + [Reconciliation](using/orchestrated/activities/reconciliation.md)
       + [Save audience](using/orchestrated/activities/save-audience.md)
       + [Split](using/orchestrated/activities/split.md)
-      + [Load file](using/orchestrated/activities/load-file.md)
       + [Test](using/orchestrated/activities/test.md)
       + [Wait](using/orchestrated/activities/wait.md)
     + Learn through use cases {#use-cases}
