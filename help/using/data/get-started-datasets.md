@@ -83,7 +83,7 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
 * Reporting
 
     * _Reporting - Message Feedback Event Dataset_: Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset.
-    * _Reporting - Email Tracking Experience Event Dataset_: Interaction logs for Email channel which is used for reporting and audience creation purposes. Information stored informs on actions performed by the end-user on email (opens, clicks, etc).
+    * _Reporting - Email Tracking Experience Event Dataset_: Interaction logs for the Email channel, and WhatsApp channel context data under the `whatsAppChannelContext` field group. Used for reporting and audience creation. Information stored includes actions performed by the end-user on email (opens, clicks, etc.) and WhatsApp interactions.
     * _Reporting - Push Tracking Experience Event Dataset_: Interaction logs for Push channel which is used for reporting and audience creation purposes. Information stored informs on actions performed by the end-user on push notifications.
     * _Reporting - Journey Step Event_: Captures All Journey Step Experience Events generated from Journey Optimizer to be consumed by services like Reporting. Also critical for building reports in Customer Journey Analytics for YoY analysis. Tied to a Journey Metadata.
     * _Reporting - Journeys_: Metadata dataset housing information of each step in a journey.

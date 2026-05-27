@@ -120,6 +120,8 @@ You can now start designing the content of your WhatsApp message from the **[!UI
 
 1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track clicks on links in your WhatsApp message.
 
+    Journey Optimizer also tracks interactions on supported WhatsApp template buttons, **Quick reply**, **Call to action – URL** and **Call to action – phone**, alongside your other channel reporting. **Copy code** buttons are not supported and their interactions are not tracked.
+
 1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 
 1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your WhatsApp message:
@@ -177,7 +179,7 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 
 1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
-Once you have performed your tests and validated the content, you can [send your WhatsApp message](send-whatsapp.md) to your audience and monitor its performance through [reporting](../reports/campaign-global-report-cja.md). 
+Once you have performed your tests and validated the content, you can [send your WhatsApp message](send-whatsapp.md) to your audience and monitor its performance through [reporting](../reports/campaign-global-report-cja.md). For WhatsApp interaction data stored in Experience Platform, see [Analyze WhatsApp interactions](send-whatsapp.md#whatsapp-channel-context). 
 
 <!--
 * **[!UICONTROL Template message]**: Predefined message imported from Meta into Journey Optimizer. These are intended for sending notifications, alerts, or updates to your customers.

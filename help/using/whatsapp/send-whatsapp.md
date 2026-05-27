@@ -58,3 +58,28 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your text messages. [Learn more](../test-approve/gs-approval.md)
 
 When your WhatsApp message is ready, complete the configuration of your [journey](../building-journeys/publish-journey.md) or [campaign](../campaigns/review-activate-campaign.md) to send it.
+
+## Analyze WhatsApp interactions {#whatsapp-channel-context}
+
+Journey Optimizer captures additional interaction data returned from the WhatsApp channel and stores it in the **Reporting - Email Tracking Experience Event Dataset** under the `whatsAppChannelContext` field group. Use these fields to build [audiences](../audience/about-audiences.md), run [queries](../data/get-started-queries.md), and analyze WhatsApp engagement. [Learn more about system datasets](../data/get-started-datasets.md#system-datasets).
+
+The following fields are captured:
+
+| Field | Description |
+|-|-|
+| `messageType` | WhatsApp message type (for example, `templateBased`, `response`). |
+| `inboundMessage` | Inbound reply content (for example, `stop`, `start`, `subscribe`). |
+| `inboundNumber` | Sender ID where the inbound message was received. |
+| `channelType` | Channel category (`Utility`, `Marketing`, or `Promotional`). |
+| `profileNumber` | Phone number from which the inbound message was received. |
+| `origTimestamp` | Original timestamp from Meta / WhatsApp. |
+| `status` | Delivery status including standardized provider feedback (`sent`, `delivered`, `bounce`, `error`, `delay`, `duplicate`, `denylist`, `exclude`, or `unknown`) and the raw provider status message. |
+| `reactionEvent` | Content of the user response: emoji for reactions, or message text for replies to a specific message. |
+| `reactionMessageID` | ID of the original message being responded to. |
+| `reactionActionName` | Type of response action (`react`, `unreact`, or `reply`). |
+| `interactiveSelectedTitle` | User-selected title from a WhatsApp interactive message. |
+| `interactiveType` | Interactive message type (`list reply`, `button reply`, or `button`). |
+| `interactiveSelectedDescription` | Description of the selected WhatsApp interactive option. |
+| `interactiveSelectedID` | ID of the selected option from WhatsApp. |
+
+To query this dataset, use the `ajo_email_tracking_experience_event_dataset` table in Query Service. For query patterns and related use cases, see [Dataset query examples](../data/datasets-query-examples.md).
