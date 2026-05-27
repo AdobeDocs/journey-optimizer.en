@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Configure the loyalty program
-description: Learn how to configure reward providers, event definitions, product inventory, exclusions, and organization-level settings for your loyalty program in Adobe [!DNL Journey Optimizer].
+title: Configure loyalty challenges
+description: Learn how to configure reward providers, event definitions, product inventory, exclusions, and organization-level settings for Loyalty Challenges in Adobe [!DNL Journey Optimizer].
 feature: Journeys
 topic: Content Management
 role: Admin
@@ -12,19 +12,39 @@ badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
 ---
-# Configure the loyalty program {#loyalty-admin}
+# Configure loyalty challenges {#loyalty-admin}
+
+<!-- Unpublished draft: Loyalty Admin UI documentation is not validated for Experience League. This page uses hide: true until review. -->
 
 >[!BEGINSHADEBOX]
 
-**Loyalty Challenges documentation:**
+**Table of contents**
 
-* [Get started with Loyalty Challenges](get-started.md)
+[Get started with Loyalty Challenges](get-started.md)
+
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+<td style="vertical-align:top;">
+
+**Create and manage challenges**
+
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * [Create challenges](create-challenges.md)
 * [Create tasks](create-tasks.md)
 * [Monitor loyalty challenge performance](loyalty-reporting.md)
-* **Configure the loyalty program** ◀︎ **You are here**
+
+</td>
+<td style="vertical-align:top;">
+
+**Configure and integrate**
+
+* **Configure loyalty challenges** ◀︎ **You are here**
+* [Loyalty data and datasets](loyalty-data-and-datasets.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
+
+</td>
+</tr>
+</table>
 
 >[!ENDSHADEBOX]
 
@@ -34,17 +54,17 @@ exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
 
 ## Overview {#access-loyalty-admin}
 
-Loyalty program configuration connects [!DNL Journey Optimizer] to your external loyalty systems by setting up reward fulfillment, event mapping, product inventory, and exclusions before marketers author challenges.
+Loyalty Challenges configuration connects [!DNL Journey Optimizer] to your external loyalty systems by setting up reward fulfillment, event mapping, product inventory, and exclusions before marketers author challenges.
 
 >[!NOTE]
 >
->Loyalty program configuration requires administrator access to your [!DNL Journey Optimizer] instance, in addition to the permissions needed for Loyalty Challenges. Contact your Adobe administrator to gain access.
+>Loyalty Challenges configuration requires administrator access to your [!DNL Journey Optimizer] instance, in addition to the permissions needed for Loyalty Challenges. Contact your Adobe administrator to gain access.
 
 To open the configuration interface, navigate to **[!UICONTROL Loyalty]** and select **[!UICONTROL Loyal admin]**. The interface is organized into tabs:
 
 * **Global settings** — Select the Experience Platform identity namespace for your program. [Learn how to configure global settings](#global-settings)
 * **Reward providers** — Connect the APIs that fulfill rewards when customers make progress or complete challenges. [Learn how to configure reward providers](#reward-providers)
-* **Event definitions** — Map incoming experience events to activities used in **[!UICONTROL Custom AEP event]** tasks. [Learn how to configure event definitions](#event-definitions)
+* **Event definitions** — Map incoming experience events to activities used in **[!UICONTROL Custom event]** tasks. [Learn how to configure event definitions](#event-definitions)
 * **Product inventory** — Upload item-to-group mappings for use in task eligibility rules. [Learn how to configure product inventory](#product-inventory)
 * **Exclusions** — Upload organization-wide item and group exclusions for task configuration. [Learn how to configure exclusions](#exclusions)
 
@@ -53,15 +73,35 @@ To open the configuration interface, navigate to **[!UICONTROL Loyalty]** and se
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_admin_global_settings"
 >title="Global settings"
->abstract="Select the Adobe Experience Platform identity namespace for your loyalty program."
+>abstract="Global settings define organization-level configuration for Loyalty Challenges, including the identity namespace used to identify members across events and challenges."
 
-Open the **[!UICONTROL Global settings]** tab and select the Adobe Experience Platform [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) for your loyalty program in the **[!UICONTROL Namespace]** drop-down. This namespace must match how member profiles are identified in your data.
+Open the **[!UICONTROL Global settings]** tab and select the Adobe Experience Platform [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) for Loyalty Challenges in the **[!UICONTROL Namespace]** drop-down. This namespace must match how member profiles are identified in your data.
 
 ![](assets/admin-global-settings.png)
 
 ➡️ [Learn how to work with identity namespaces](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}
 
 ## Reward providers {#reward-providers}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_admin_reward_providers"
+>title="Reward providers"
+>abstract="A reward provider defines the external system that [!DNL Journey Optimizer] calls to fulfill rewards when customers complete challenges. Configure the provider endpoint, reward definitions, proxy settings, and authentication for each integration."
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_admin_reward_providers_connection"
+>title="Reward provider connection"
+>abstract="Configure how [!DNL Journey Optimizer] connects to your reward API: provider name, description, endpoint URL, and HTTP headers required for fulfillment calls."
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_admin_reward_providers_details"
+>title="Reward definitions"
+>abstract="Reward definitions specify each reward type this provider can issue (for example, points or stars) and the payload [!DNL Journey Optimizer] sends when rewards are fulfilled."
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_admin_reward_providers_proxy"
+>title="Reward proxy"
+>abstract="Optionally route fulfillment calls through a proxy server instead of sending them directly to your reward API endpoint. Configure host, port, credentials, and whether the proxy is enabled. Credentials value typically looks like: `{ "userName": "test", "password": "xxxx" }`"
 
 A **reward provider** tells [!DNL Journey Optimizer] where to send fulfillment calls when challenge progress is recorded or a challenge is completed. For example, an API that credits loyalty points or stars to a member account.
 
@@ -138,7 +178,22 @@ To edit a reward provider, open the **[!UICONTROL Reward providers]** tab, selec
 
 ## Event definitions {#event-definitions}
 
-**[!UICONTROL Event definitions]** tell [!DNL Journey Optimizer] which incoming Adobe Experience Platform experience events to process. For example, a purchase or a hotel check-in. Marketers reference these definitions when they create **[!UICONTROL Custom AEP event]** tasks. Events that do not match any definition are ignored.
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_admin_event_definitions"
+>title="Event definitions"
+>abstract="Event definitions tell [!DNL Journey Optimizer] how to identify and interpret incoming event data from your external sources. Each definition maps a specific event type — such as a purchase or check-in — so the system can track customer progress toward challenge tasks."
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_admin_event_schema"
+>title="Event schema and transformer"
+>abstract="When your organization sends events in a custom JSON format, use **[!UICONTROL Schema]** to validate the payload and **[!UICONTROL Transformer]** (for example, a JSONata expression) to map fields into the format Loyalty Challenges expects."
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_admin_event_identification"
+>title="Event identification"
+>abstract="Specify how [!DNL Journey Optimizer] recognizes the event in incoming payloads using an identifier path, identifier values, an XDM schema ID, or a combination of these fields."
+
+**[!UICONTROL Event definitions]** tell [!DNL Journey Optimizer] which incoming Adobe Experience Platform experience events to process. For example, a purchase or a hotel check-in. Marketers reference these definitions when they create **[!UICONTROL Custom event]** tasks. Events that do not match any definition are ignored.
 
 When your organization sends events in its own JSON format, **[!UICONTROL Schema]** and **[!UICONTROL Transformer]** help [!DNL Journey Optimizer] validate the payload, parse it, and decide whether to track the activity.
 
@@ -148,7 +203,7 @@ To create an event definition, follow these steps:
 
    ![](assets/admin-event-definition.png)
 
-1. Enter a **[!UICONTROL Name]** for the event (for example, `Coffee purchase`). Marketers see this name when configuring a **[!UICONTROL Custom AEP event]** task.
+1. Enter a **[!UICONTROL Name]** for the event (for example, `Coffee purchase`). Marketers see this name when configuring a **[!UICONTROL Custom event]** task.
 
 1. Specify how [!DNL Journey Optimizer] recognizes the event in incoming payloads. Provide an **[!UICONTROL Identifier path]**, an **[!UICONTROL XDM schema ID]**, or both:
 
@@ -161,9 +216,14 @@ To create an event definition, follow these steps:
    * **[!UICONTROL Schema]** — Validation string for the incoming payload.
    * **[!UICONTROL Transformer]** — Transformation expression (for example, JSONata) that maps your payload into the format Loyalty Challenges expects.
 
-1. Save the event definition. It appears in the **[!UICONTROL Event definitions]** list and is available when marketers create **[!UICONTROL Custom AEP event]** tasks. [Learn how to create tasks](create-tasks.md#choose-activity)
+1. Save the event definition. It appears in the **[!UICONTROL Event definitions]** list and is available when marketers create **[!UICONTROL Custom event]** tasks. [Learn how to create tasks](create-tasks.md#choose-activity)
 
 ## Product inventory {#product-inventory}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_admin_product_inventory"
+>title="Product inventory"
+>abstract="Upload a CSV file that maps item identifiers to product groups. Marketers can reference these groups when configuring eligible items on purchase and spend tasks without entering every item ID."
 
 The **[!UICONTROL Product inventory]** tab groups catalog items so marketers can target them in tasks without entering every item ID. Upload a **CSV file** that maps each item identifier to one or more **product groups** (the same item can belong to several groups). Imported groups are available when configuring task eligibility. [Learn how to create tasks](create-tasks.md)
 
@@ -194,6 +254,11 @@ To upload a product inventory file, follow these steps:
 1. Open **[!UICONTROL Upload history]** to view previous CSV uploads.
 
 ## Exclusions {#exclusions}
+
+>[!CONTEXTUALHELP]
+>id="ajo_loyalty_admin_exclusions"
+>title="Exclusions"
+>abstract="Upload a CSV file that defines catalog items and groups excluded program-wide. Imported exclusion groups appear when marketers configure eligible items and exclusions on tasks."
 
 The **[!UICONTROL Exclusions]** tab defines catalog items and groups that are excluded program-wide, so marketers do not have to list the same exclusions on every task. Upload a **CSV file** that maps each item identifier to one or more **exclusion groups** (the same item can belong to several groups).
 

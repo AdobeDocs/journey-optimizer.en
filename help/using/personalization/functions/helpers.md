@@ -128,7 +128,7 @@ Some edu specific content
 ## Each{#each}
 
 The `each` helper is used to iterate over an array.
-The syntax of the helper is ```{{#each ArrayName}}``` YourContent `{{/each}}` 
+The syntax of the helper is `{{#each ArrayName}}` YourContent `{{/each}}`.
 We can refer to the individual array items by using the keyword **this** inside the block. The index of the array's element can be rendered by using `{{@index}}`. 
 
 **Syntax**
@@ -212,7 +212,7 @@ The following example lets you calculate the total sum of prices for products in
 
 ## Url {#url}
 
-The `url` helper is used to track links, shorten URLs and insert [deeplinks](../../email/deeplinks.md) in your SMS message content.
+The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your SMS message content.
 
 **Syntax**
 

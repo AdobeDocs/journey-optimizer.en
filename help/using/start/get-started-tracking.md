@@ -175,9 +175,9 @@ Push tracking is automatically enabled and captures impressions (delivered), cli
 
 **Configure tracked elements:**
 
-* **Body click behavior** - Set what happens when users tap the notification: open app, navigate to a deeplink, or open a web URL. Each action is automatically tracked. [Learn more](../push/design-push.md#on-click-behavior)
+* **Body click behavior** - Set what happens when users tap the notification: open app, navigate to a deep link, or open a web URL. Each action is automatically tracked. [Learn more](../push/design-push.md#on-click-behavior)
 
-* **Add action buttons** - Include up to 3 buttons (Android) or multiple buttons (iOS) with independent tracking for each button action (open app, deeplink, web URL). [Learn more](../push/design-push.md#add-buttons-push)
+* **Add action buttons** - Include up to 3 buttons (Android) or multiple buttons (iOS) with independent tracking for each button action (open app, deep link, web URL). [Learn more](../push/design-push.md#add-buttons-push)
 
 * **Enable tracking** - Verify tracking is enabled in your push journey activity or campaign tracking settings. [Learn more](../push/create-push.md#create)
 

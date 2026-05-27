@@ -244,7 +244,13 @@ The following orchestrated campaign capability is expected in the upcoming days 
 
 * **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
 
-  Availability date: June 1, 2026
+  Availability date: Early June, 2026
+
+* **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
+
+  Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
+
+  Availability date: Early June, 2026
 
 +++
 
@@ -330,8 +336,8 @@ The following capabilities and improvements have been added to the email channel
 <tbody>
 <tr>
 <td>
-<p>It is now possible to add deep links to your email contents through a dedicated option in the Email Designer.</p>
-<p>This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
+<p>It is now possible to add deep links to your email content through a dedicated option in the Email Designer. This ensures users are taken directly to the right in-app content instead of being redirected to browsers or app stores, preserving context and engagement.</p>
+<p>Note that although the Deeplink option is available to all customers, deep links only work if you have completed the required configuration and mobile app implementation steps.</p>
 <p><img src="assets/do-not-localize/deeplinks.gif"></p>
 <p>For more information, refer to the <a href="../email/deeplinks.md">detailed documentation</a>.</p>
 <p>Availability date: May 12, 2026</p>
@@ -343,18 +349,6 @@ The following capabilities and improvements have been added to the email channel
 * **Restrict inheritance breaking in fragments** - When creating or editing a fragment, you can now choose whether it can be modified when used in emails. Locking a fragment ensures it stays synchronized everywhere it appears, preventing local edits that could break brand standards or compliance requirements. This setting can be updated later, applying to future usages. [Read more](../content-management/create-fragments.md#lock-visual-fragment)
 
   Availability date: May 21, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-The following email channel improvements are expected in the upcoming days or weeks.
-
-* **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
-
-  Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
-
-  Availability date: June 1, 2026
-
-+++
 
 ### Mobile messaging (SMS, MMS & RCS) {#may-26-mobile}
 
@@ -382,6 +376,8 @@ The following capabilities and improvements have been added to mobile messaging 
 * **SMS inbounds to a custom dataset** - In **SMS API credentials**, route **inbound SMS** to a **custom, profile-enabled Experience Event dataset** you select instead of only the default tracking dataset. [Read more](../mobile/mobile-webhook.md)
 
 * **Webhook interface enhancement** - When configuring SMS webhooks, the user interface now includes a built-in setup guide with practical examples, making it easier to align provider payloads and troubleshoot issues without leaving the configuration flow. [Read more](../mobile/mobile-webhook.md)
+
+* **Deep links in SMS content** - It is now possible to add deep links to your SMS content using the Url helper function. This ensures that the recipients are taken directly to the intended in-app content, without routing them through a web browser or an app store - provided you have completed the required configuration and mobile app implementation steps. [Read more](../email/deeplinks.md)
 
 ### WhatsApp channel {#may-26-whatsapp}
 
@@ -457,6 +453,26 @@ The following capabilities and improvements have been added to content managemen
 
 * **Cross-organization repository access in the Assets Selector** - You can now seamlessly select assets from repositories across multiple organizations directly within the Adobe Experience Manager Asset Selector.
 
+### Administration {#may-26-admin}
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
+
+  Availability date: June 1, 2026
+
++++
+
+### Reporting {#may-26-reporting}
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
+
+  Availability date: June 1, 2026
+
++++
+
 ### Usability improvements {#may-26-usability}
 
 The following usability improvements were also released in May 2026.
@@ -471,7 +487,7 @@ The following usability improvements were also released in May 2026.
 
 #### Content authoring
 
-* **Inline profile attribute editing** - You can now insert profile attribute expressions directly in the Email Designer without opening the full personalization editor. Type `{{` in any text field to open an inline autocomplete dropdown, then browse and select the attribute you need — it is inserted at the cursor position instantly. This capability is also available in the Push channel editor. [Learn more](../personalization/personalize.md#inline-personalization)
+* **Inline profile attribute editing** - Inline profile attribute editing in the Email Designer was initially released in April. As part of the May release, this capability has been decoupled from AI Assistant and extended to the Push channel editor. [Learn more](../personalization/personalize.md#inline-personalization)
 
   ![](../personalization/assets/inline-profile-attributes.png)
 
@@ -487,26 +503,10 @@ The following usability improvements were also released in May 2026.
   ![](../test-approve/assets/simulation-preview-redesign.png)
 -->
 
-### Administration {#may-26-admin}
-
 +++ Coming soon — **Information below is subject to change.**
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
 
   Availability date: June 2, 2026
-
-* **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
-
-  Availability date: June 1, 2026
-
-+++
-
-### Reporting {#may-26-reporting}
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
-
-  Availability date: June 1, 2026
 
 +++

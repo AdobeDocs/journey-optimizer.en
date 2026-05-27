@@ -122,7 +122,7 @@ To personalize your button:
 
 1. Choose your **[!UICONTROL Interact event]** which defines your button's action after users interacted with it.
 
-1. Enter your web URL or deeplink in the **[!UICONTROL Target]** field.
+1. Enter your web URL or deep link in the **[!UICONTROL Target]** field.
 
 1. To add multiple buttons, click **[!UICONTROL Add button]**.
 

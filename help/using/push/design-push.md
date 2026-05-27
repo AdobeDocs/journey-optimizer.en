@@ -67,7 +67,7 @@ Configure the action that occurs when recipients tap the body of your push notif
 ![](assets/title-body-push.png)
 
 * **[!UICONTROL Open app]**: Launches the application associated with the notification. The app is specified in your [channel configuration](../configuration/channel-surfaces.md) (i.e. message preset).
-* **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deeplink URL in the provided field.
+* **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deep link URL in the provided field.
 * **[!UICONTROL Web URL]**: Directs users to an external webpage. Enter the destination URL in the provided field.
 
 When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL.
@@ -171,7 +171,7 @@ For iOS, a notification category identifier is specified. Notification categorie
 
 Use the **[!UICONTROL Add Button]** option to define each button's label and associated action, as detailed below:
 
-* **[!UICONTROL Deeplink]**: Redirect users to a specific view, section, or tab within your app. Enter the deeplink URL in the associated field.
+* **[!UICONTROL Deeplink]**: Redirect users to a specific view, section, or tab within your app. Enter the deep link URL in the associated field.
 
 * **[!UICONTROL Web URL]**: Redirect users to an external webpage. Enter the URL in the associated field.
 
