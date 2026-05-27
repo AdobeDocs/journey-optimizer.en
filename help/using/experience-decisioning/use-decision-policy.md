@@ -164,6 +164,47 @@ Once your content is ready, review and publish your campaign or journey:
 
 For code-based experiences, as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.
 
+## View decision policy details from the campaign summary {#decision-policy-summary}
+
+When a [campaign](../campaigns/review-activate-campaign.md) uses decision policies in its content, the campaign summary page displays a **[!UICONTROL Decision policies]** section listing all policies used in the campaign.
+
+You can also access each decision policy's technical details and copy them to the clipboard, which can be useful to troubleshoot issues with Adobe Support or your engineering team.
+
+To access decision policy details and technical information, follow the steps below.
+
+1. Open the campaign summary by clicking **[!UICONTROL Review to activate]** during [configuration](../campaigns/review-activate-campaign.md#action-campaign-review), or by opening a campaign from the **[!UICONTROL Campaigns]** list.
+
+1. In the **[!UICONTROL Decision policies]** section, all the policies used in the campaign are listed.
+
+    ![](assets/campaign-summary-decision-policies.png)
+
+1. Select a decision policy or click **[!UICONTROL View all]**. You can review the details for each policy, including:
+
+    * The strategies used in the decision policy
+    * The number of items to return
+    * The collection, ranking method et eligibility rules used for each selection strategy
+    * The fallback offer used if no decision item is eligible
+
+    ![](assets/campaign-decision-policy-details.png)
+
+1. Click a collection to display all the decision items that it contains.
+    
+1. Click a decision item to access its details, and edit it if needed. It opens in a new browser tab. Alternatively, click **[!UICONTROL View item]** to display decision items that are not in a collection.
+
+    ![](assets/campaign-decision-policy-collection.png)
+
+1. You can also view information about the ranking methods and eligibility rules used for each selection strategy.
+
+    ![](assets/campaign-decision-policy-eligibility.png){width="80%"}
+
+1. Back in the campaign summary, you can also select a decision policy from the **[!UICONTROL Actions]** section and click the **Information** icon to access the decision policy's technical details.
+
+    ![](assets/campaign-decision-policy-information.png)
+
+1. Click the **Copy to clipboard** icon to copy a JSON representation of the decision policy to the clipboard.
+
+    The copied JSON includes your organization name and ID, sandbox name, decision policy ID, and the full decision policy structure. You can share this information with Adobe Support or your engineering team to troubleshoot decision policy issues faster.
+
 ## Use reporting dashboards
 
 To see how your decisions are performing, you can view out-of-the-box decisioning metrics in the campaign or journey report, or build custom Customer Journey Analytics dashboards to measure performance and gain insights into how your decision policies and offers are delivered and engaged with. [Learn more about Decisioning reporting](cja-reporting.md).

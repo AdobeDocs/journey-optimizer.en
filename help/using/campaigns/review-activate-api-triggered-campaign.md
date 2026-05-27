@@ -60,6 +60,8 @@ Once your API triggered campaign has been configured, you need to review its par
 
     ![](assets/create-campaign-summary.png)
 
+When a campaign uses [decision policies](../experience-decisioning/decisioning-policies.md) in its content, you can review each policy's structure and copy technical details directly from the campaign summary. [Learn how to view decision policy details from the campaign summary](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
+
 ## Next steps {#next}
 
 Once the API triggered campaign is ready, you can trigger its execution using APIs. [Learn more](trigger-campaigns.md)

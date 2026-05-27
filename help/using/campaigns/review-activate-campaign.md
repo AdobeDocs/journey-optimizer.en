@@ -33,7 +33,7 @@ topic_v2:
 ---
 # Review and activate the Action campaign {#action-campaign-review}
 
-Once your Action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:
+Once your Action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow the steps below.
 
 >[!IMPORTANT]
 >
@@ -62,3 +62,5 @@ Once your Action campaign has been configured, you need to review its parameter 
     You can also get additional statistics in dedicated reports by clicking the **[!UICONTROL Reports]** button. [Learn more](../reports/campaign-global-report-cja.md)
 
     ![](assets/create-campaign-summary.png)
+
+When a campaign uses [decision policies](../experience-decisioning/decisioning-policies.md) in its content, you can review each policy's structure and copy technical details directly from the campaign summary. [Learn how to view decision policy details from the campaign summary](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
