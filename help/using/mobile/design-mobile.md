@@ -129,7 +129,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
     ![](assets/sms_tracking_1.png)
 
-1. Select **[!UICONTROL Url]** and click **[!UICONTROL Add URL]**.
+1. Select **[!UICONTROL Url]** and click **[!UICONTROL Add URL]**. Learn more about the `Url` helper function in [this section](../personalization/functions/helpers.md#url).
 
     ![](assets/sms_tracking_2.png)
 
@@ -141,13 +141,13 @@ To configure your message content, follow the steps below. Settings for MMS are 
     >
     > The lifespan of short URLs is set to 30 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
 
-1. To add a deep link that opens a specific screen in your mobile app, use the **[!UICONTROL Url]** helper function with the `DEEPLINK` type, such as in the example below. [Learn more about deep links](../email/deeplinks.md)
+1. To add a deep link that opens a specific screen in your mobile app, use the `Url` helper function with the `DEEPLINK` type, such as in the example below. [Learn more about deep links](../email/deeplinks.md)
 
       ```
       {{url originalUrl='<<deeplink_url>>' type='DEEPLINK' action='CLICK'}}
       ```
 
-      >[!IMPORTANT]
+      >[!CAUTION]
       >
       >Before using deep linking, make sure you have completed the corresponding [configuration steps](../email/deeplinks.md#configuration) in Journey Optimizer and implemented [deep link handling](../email/deeplinks.md#mobile-implementation) in your mobile app. If you have not done so, the deep link will not direct users to the intended in-app content.
       >
