@@ -3,7 +3,6 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Use the Load file activity
 description: Learn how to use the Load file activity to target an Orchestrated campaign audience from a CSV or TXT file without ingesting the file into Adobe Experience Platform
-hide: true
 exl-id: a7c3e891-4f2d-4b8e-9c1a-6e8f0d3b2a41
 version: Campaign Orchestration
 product_v2:
@@ -23,7 +22,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_load_file"
 >title="Load file activity"
->abstract="The **Load file** activity is a **Data Management** activity. Use it to work with profiles and data stored in an external file on the Orchestrated campaign canvas and define the campaign audience. File data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. Rows are reconciled to existing recipients using an identity column and a targeting dimension. Contact your Adobe representative to request access."
+>abstract="The **Load file** activity is a **Data Management** activity. Use it to work with profiles and data stored in an external file on the Orchestrated campaign canvas and define the campaign audience. File data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset."
 
 The **[!UICONTROL Load file]** activity is a **[!UICONTROL Data Management]** activity. Use it to work with profiles and data stored in an external file. It supports **file-based targeting** in Orchestrated campaigns when your recipient list comes from an external system (for example, a CRM export or a partner file) and you want to run a campaign without building a full Adobe Experience Platform ingestion pipeline first.
 
@@ -31,7 +30,7 @@ The **[!UICONTROL Load file]** activity is a **[!UICONTROL Data Management]** ac
 >
 >The **Load file** activity is available in **Limited Availability** for a set of organizations. To request access, contact your Adobe representative. For availability phases, see [Journey Optimizer release cycle](../../rn/releases.md).
 >
->The activity is currently not available for use with **Healthcare Shield** or **Privacy and Security Shield**.
+>The activity is currently not available for use with **Healthcare Shield**.
 
 ## Guardrails and limitations {#limitations}
 
@@ -44,25 +43,19 @@ The following limitations apply to the Load file activity:
 
 For limits on channel and canvas activities, see [Guardrails and limitations](../guardrails.md#activities-limitations).
 
-## Prerequisites {#prerequisites}
-
-Before you configure a **[!UICONTROL Load file]** activity:
-
-1. Create the **[!UICONTROL Targeting dimension]** you need for reconciliation (for example, Recipients). [Learn how to create a targeting dimension](../target-dimension.md)
-
-1. Ensure the identity values in your file match existing records for that dimension. Rows from the uploaded file are reconciled to existing recipients, the activity does not create new profiles from the file.
-
 ## Configure the Load file activity {#load-file-configuration}
 
-Configure the activity in two parts: define the expected file structure with a sample file, then specify the file to load when the campaign runs and how rows are reconciled to your targeting dimension.
-
-Follow these steps to configure the **[!UICONTROL Load file]** activity:
+Configure the activity in two parts: define the expected file structure with a sample file, then specify the file to load when the campaign runs.
 
 1. Add a **[!UICONTROL Load file]** activity to your Orchestrated campaign canvas.
 
     ![](../assets/load-file.png)
 
 1. Enter a **[!UICONTROL Label]** for the activity.
+
+### Define the sample file {#sample-file}
+
+Use a sample file to configure **[!UICONTROL Columns]** and **[!UICONTROL Formatting]**. The sample data is not imported as the campaign audience.
 
 1. In the **[!UICONTROL Sample file]** section, select the local file that defines the expected structure.
 
@@ -78,7 +71,9 @@ Follow these steps to configure the **[!UICONTROL Load file]** activity:
 
     ![](../assets/load-file-sample-columns.png)
 
-    The following properties are available for every column. After you select a **[!UICONTROL Data type]**, additional options appear for that type. Expand the sections below for the full list per data type.
+    After you select a **[!UICONTROL Data type]**, additional options appear for that type. Expand the sections below for parameters common to all columns and for type-specific options.
+
+    +++Common column parameters
 
     * **[!UICONTROL Ignore column]** — Exclude the column from the import when selected.
     * **[!UICONTROL Label]** — Display name for the column (for example, `email`).
@@ -100,6 +95,8 @@ Follow these steps to configure the **[!UICONTROL Load file]** activity:
 
     * **[!UICONTROL Default value]** — Default value to use when **[!UICONTROL Error processing]** is set to use a default value.
     * **[!UICONTROL Value remapping]** — Map specific values to new ones. Click **[!UICONTROL Add mapping]** to define each mapping (for example, replace `True`/`False` with `1`/`0`).
+
+    +++
 
     +++String columns parameters
 
@@ -124,29 +121,29 @@ Follow these steps to configure the **[!UICONTROL Load file]** activity:
 
     +++
 
-    +++Date columns parameters
+    +++Date and time columns parameters
+
+    Options depend on whether **[!UICONTROL Data type]** is **Date**, **Time**, or **Date and time**.
+
+    **Date**
 
     * **[!UICONTROL Date format]** — Pattern that matches how dates appear in the file (for example, `yyyy/mm/dd`).
     * **[!UICONTROL Separators]**:
 
         * **[!UICONTROL Year, month, day]** — Character between the year, month, and day components (for example, `/`).
 
-    +++
-
-    +++Time columns parameters
+    **Time**
 
     * **[!UICONTROL Time format]** — Pattern that matches how times appear in the file (for example, `13:30` for 24-hour hours and minutes).
     * **[!UICONTROL Separators]**:
 
         * **[!UICONTROL Hour, minute, second]** — Character between the hour, minute, and second components (for example, `:`).
 
-    +++
-
-    +++Date and time columns parameters
+    **Date and time**
 
     * **[!UICONTROL Date format]** — Pattern that matches how the date portion appears in the file.
     * **[!UICONTROL Time format]** — Pattern that matches how the time portion appears in the file.
-    * **[!UICONTROL Separators]** — Characters between date and time components, as shown in the UI for your column.
+    * **[!UICONTROL Separators]** — Characters between date and time components.
 
     +++
 
@@ -163,55 +160,25 @@ Follow these steps to configure the **[!UICONTROL Load file]** activity:
     * **[!UICONTROL String delimiter]** — Character used to enclose string values in the file.
     * **[!UICONTROL Column separator]** — Character that separates columns in a delimited file.
 
-1. In the **[!UICONTROL Target file]** section, choose how the file is provided—for example **[!UICONTROL Upload file from local machine]** for manual upload in this release.
+1. Click **[!UICONTROL Confirm]** to validate the sample file configuration.
 
-1. Select the CSV or TXT file to upload.
+### Define the target file {#target-file}
+
+Specify the file to load at campaign execution and how each row is matched to existing recipients.
+
+1. In the **[!UICONTROL Target file]** section, select the CSV or TXT file containing to target.
+
+    ![](../assets/load-file-target.png)
 
     >[!CAUTION]
     >
-    > Ensure the target file follows the same format, column structure, and number of columns as the sample file. Mismatches can cause errors during execution.
-
-1. Select the identity column in the file—the field used to match each row to an existing recipient (for example, email address or customer ID).
-
-1. Select the **[!UICONTROL Targeting dimension]** to reconcile against.
-
-1. When configuration is complete, preview a sample of mapped rows if the UI offers it, then confirm.
+    > Ensure the target file follows the same format, column structure, and number of columns as the sample file.
 
 1. In the **[!UICONTROL Reject management]** section, define how the activity behaves when errors occur during file processing:
 
     * **[!UICONTROL Number of errors allowed]** — Maximum number of errors permitted before the activity fails.
     * **[!UICONTROL Keep rejects in a file]** — When enabled, rows that could not be loaded are written to a reject file on the server for review after execution.
 
-1. Connect the outbound transition to downstream activities.
+1. Optionally, enable **[!UICONTROL Delete file after import]** to remove the uploaded file from the server after the campaign runs.
 
-Rows that cannot be reconciled to an existing recipient are excluded from the audience. Excluded rows are recorded in the campaign execution log; the campaign does not fail solely because some rows did not match.
-
-## Use the file audience in deliveries {#downstream}
-
-After **[!UICONTROL Load file]** resolves the audience, you can use standard Orchestrated campaign activities:
-
-* **[Channel activities](channels.md)** — Email, SMS, push notification, or direct mail.
-
-* **[Enrichment](enrichment.md)** or **[Reconciliation](reconciliation.md)** — Further refine or link worktable data when needed.
-
-[Learn how to orchestrate campaign activities](../orchestrate-activities.md)
-
-## Execution and reporting {#execution}
-
-When the campaign runs:
-
-* The file is processed at **execution time**.
-
-* Accepted rows form the audience passed to downstream activities.
-
-* Rejected or unreconciled rows are excluded; counts and reasons appear in the **execution log** (for example, total rows loaded, rows accepted, rows rejected).
-
-Audience resolution is designed to complete within about **60 seconds** for a **100,000-row** CSV under standard Orchestrated campaign infrastructure.
-
-## Related content {#related}
-
-* [Create a targeting dimension](../target-dimension.md)
-* [Build audience activity](build-audience.md)
-* [Read audience activity](read-audience.md)
-* [Reconciliation activity](reconciliation.md)
-* [Guardrails and limitations](../guardrails.md)
+After **[!UICONTROL Load file]** resolves the audience,n connect the outbound transition to downstream activities. [Learn how to orchestrate campaign activities](../orchestrate-activities.md)
