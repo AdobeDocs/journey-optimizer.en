@@ -169,6 +169,17 @@ To do so:
 
 ## Add rich text to a customizable fragment {#rich-text}
 
+>[!CONTEXTUALHELP]
+>id="ajo_editable_fragment_compatibility"
+>title="Legacy fragment"
+>abstract="Editable fields in this fragment are in text-only mode. Until you convert them, users can only enter plain text when editing this fragment in emails—rich text such as bold, italic, hyperlinks, and line breaks is not supported. Click <b>Convert</b> on the component to upgrade it to HTML-compatible mode."
+
+>[!CONTEXTUALHELP]
+>id="ac_editable_fragment_compatibility"
+>title="Legacy fragment"
+>abstract="The editable fields in this customizable fragment are text-only. Rich text formatting (bold, italic, hyperlinks, line breaks, etc.) is not available in the Email Designer until the fragment author upgrades the fragment to HTML-compatible mode using the <b>Convert</b> button in the fragment editor."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments#customize-fields" text="Customize editable fields in a fragment"
+
 Rich text such as line breaks, bold, italics etc., can be added to a customizable fragment by using HTML components. To do so, follow the steps below.
 <!--
 ➡️ [Learn how to add and use rich text in a customizable fragment in this video](#video)
