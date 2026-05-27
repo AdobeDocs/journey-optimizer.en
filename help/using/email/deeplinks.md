@@ -42,11 +42,14 @@ For email messages, you have two options to insert a deep link:
     <a class="arc-link" data-nl-type="DEEPLINK" href="<<deeplink_url>>" id="acr-link-7821368" style="text-decoration:underline;" target="_blank" data-tracking-type="DEEPLINK">Click Here</a>
     ```
 
-    Replace `<<deeplink_url>>` with your actual deep link URL and use a unique `id` for each block to avoid conflicts.
+    >[!TIP]
+    >
+    >Replace `<<deeplink_url>>` with your actual deep link URL and use a unique `id` for each block to avoid conflicts.
+
 
 ### SMS {#authoring-sms}
 
-For SMS, deep links are authored using the **Url** helper function in the personalization editor. Learn more on adding links to SMS content in [this section](../mobile/design-mobile.md#sms-content).
+For SMS, deep links are authored using the [Url](../personalization/functions/helpers.md#url) helper function in the personalization editor. Learn how to add links to SMS content in [this section](../mobile/design-mobile.md#sms-content).
 
 To insert deep links in SMS content, use the following syntax:
 
@@ -54,7 +57,9 @@ To insert deep links in SMS content, use the following syntax:
 {{url originalUrl='<<url>>' type='DEEPLINK' action='CLICK'}}
 ```
 
-Replace `<<url>>` with your actual deep link URL.
+>[!TIP]
+>
+>Replace `<<url>>` with your actual deep link URL.
 
 ## Configuration in Journey Optimizer {#configuration}
 
@@ -332,3 +337,4 @@ Yes. UTM parameters you configure in [!DNL Journey Optimizer] are included in th
 The link opens in the device's default web browser (standard click tracking behavior), rather than being handled as an app deep link through the `mclick` flow described on this page.
 
 +++
+
