@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Url** helper reference has been updated with a dedicated section in the Personalization documentation. [Read more](../personalization/functions/helpers.md#url)
 
+* A limitation has been added to the **Execution Metadata** helper documentation: the function is not supported in inbound channels (Web, Code-based experience, In-App Message, Content Cards). [Read more](../personalization/functions/helpers.md#execution-metadata)
+
 * A new **Personalization recipes** page has been added, providing ready-to-use personalization patterns for the most common use cases in Journey Optimizer. It covers date and time recipes (current date formatting, countdown to expiry, days-before calculations, time-only display, and weekend vs. weekday detection), string recipes (using `replaceAll` with variable assignment), and conditional fallback recipes (empty-field fallbacks using `isEmpty`). [Read more](../personalization/personalization-recipes.md)
 
 * The **Personalization syntax** documentation has been updated with an expanded introduction clarifying the difference between Handlebars (`{{...}}`) and PQL (`{%= ... %}`) syntaxes, including a usage table, guidance on escaping literal double quotes, and a new **PQL syntax rules for special attribute keys** section covering reserved keywords, hyphenated attribute keys, and numeric event IDs. The note on backtick escaping has also been corrected: hyphenated field names can be referenced directly in `{{...}}` blocks; only backtick syntax fails there. [Read more](../personalization/personalization-syntax.md)
