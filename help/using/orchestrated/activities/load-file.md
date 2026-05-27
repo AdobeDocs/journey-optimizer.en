@@ -39,7 +39,6 @@ The following limitations apply to the Load file activity:
 * You can upload up to 50 MB per file.
 * Only flat-structure CSV and TXT files are supported.
 * Uploaded data is used when the campaign runs and is not stored as an Adobe Experience Platform dataset.
-* Each row must match an existing recipient for the targeting dimension you select. Load file activity does not create new profiles from the file.
 
 For limits on channel and canvas activities, see [Guardrails and limitations](../guardrails.md#activities-limitations).
 
