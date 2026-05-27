@@ -32,6 +32,10 @@ To configure your repository:
 
    ![](assets/aem-admin-settings-1.png)
 
+1. If you use **[!DNL Adobe Experience Manager Managed Services]**, enter a repository hostname ending with `adobecqms.net` in the **[!UICONTROL Custom AMS Repo ID]** field.
+
+   ![](assets/aem-admin-settings-6.png)
+
 1. Choose which repository to configure and click **[!UICONTROL Next]**.
 
     Additionally, you can click **[!UICONTROL View]** to access this repository.
@@ -70,9 +74,19 @@ To configure your repository:
 
     +++
 
+1. After you finish the instance setup, pick a Content Fragment to confirm that the integration works.
+
+    ![](assets/aem-admin-settings-7.png)
+
+1. In the **Content Advisor** window, select the fragment you want to test, then click **[!UICONTROL Select]**.
+
 1. Click **[!UICONTROL Save]**.
+
+1. When you save with a test Content Fragment selected, validation runs automatically. If validation fails, an error list is displayed so you can fix the configuration.
+
+    ![](assets/aem-admin-settings-8.png)
 
 1. To edit or disable this repository integration, access your previously created configuration from the **[!UICONTROL AEM Integration]** menu.
 
-When you save, that sandbox uses the repository for the Content Fragment selector and **Adobe Experience Manager Content Advisor**.
+When you save this configuration, Journey Optimizer stores it for that repository in the current sandbox. You can then use that repository and its settings when browsing and selecting content in the **Content Advisor** selector.
 
