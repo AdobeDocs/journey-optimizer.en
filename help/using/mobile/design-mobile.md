@@ -186,3 +186,4 @@ To create MMS content, follow these steps:
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed below.
 
 Once you have performed your tests and validated the content, you can send your Mobile message to your audience. These steps are detailed on [this page](send-mobile-message.md)
+

@@ -337,3 +337,4 @@ Yes. UTM parameters you configure in [!DNL Journey Optimizer] are included in th
 The link opens in the device's default web browser (standard click tracking behavior), rather than being handled as an app deep link through the `mclick` flow described on this page.
 
 +++
+
