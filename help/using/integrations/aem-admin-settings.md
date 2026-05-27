@@ -74,7 +74,17 @@ To configure your repository:
 
     +++
 
+1. After you finish the instance setup, pick a Content Fragment to confirm that the integration works.
+
+    ![](assets/aem-admin-settings-7.png)
+
+1. In the **Content Advisor** window, select the fragment you want to test, then click **[!UICONTROL Select]**.
+
 1. Click **[!UICONTROL Save]**.
+
+1. When you save with a test Content Fragment selected, validation runs automatically. If validation fails, an error list is displayed so you can fix the configuration.
+
+    ![](assets/aem-admin-settings-8.png)
 
 1. To edit or disable this repository integration, access your previously created configuration from the **[!UICONTROL AEM Integration]** menu.
 
