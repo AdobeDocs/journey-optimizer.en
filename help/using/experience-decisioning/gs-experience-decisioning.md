@@ -48,7 +48,7 @@ These decision items are seamlessly integrated into messages and experiences acr
 
 >[!IMPORTANT]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Push notification**, and **SMS** channels. Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, and **SMS** channels. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ➡️ [Discover this feature in video](#video)
 
