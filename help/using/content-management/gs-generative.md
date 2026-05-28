@@ -24,7 +24,7 @@ subfeature_v2:
   - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
     internal-label: Publish
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
-    internal-label: AI content generation (AJO)
+    internal-label: AI content generation
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
 role_v2:

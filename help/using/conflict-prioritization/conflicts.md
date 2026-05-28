@@ -12,7 +12,7 @@ feature_v2:
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
   - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
-    internal-label: Conflict & prioritization (AJO)
+    internal-label: Conflict & prioritization
 subfeature_v2:
   - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
     internal-label: Rules set configuration

@@ -21,7 +21,7 @@ subfeature_v2:
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
   - id: e09fc1e6-407c-418f-adc5-e2ffe8b8986e
-    internal-label: LINE channel (AJO)
+    internal-label: LINE channel
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

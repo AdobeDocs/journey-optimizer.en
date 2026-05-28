@@ -20,7 +20,7 @@ subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
   - id: ed2fba79-65cb-4680-96d2-2ad5d851714d
-    internal-label: Live activities (AJO)
+    internal-label: Live activities
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

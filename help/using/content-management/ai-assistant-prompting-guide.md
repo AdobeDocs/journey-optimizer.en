@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Privacy
 subfeature_v2:
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
-    internal-label: AI content generation (AJO)
+    internal-label: AI content generation
 ---
 # AI Assistant prompt best practices {#ai-assistant-prompting-guide}
 

@@ -11,7 +11,7 @@ exl-id: f0585411-c862-45f2-9a10-d8a72497c533
 feature_v2: []
 subfeature_v2:
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
-    internal-label: AI content generation (AJO)
+    internal-label: AI content generation
 ---
 # Generate images with AI Assistant {#generative-image}
 

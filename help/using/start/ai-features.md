@@ -19,7 +19,7 @@ feature_v2:
     internal-label: Journeys
 subfeature_v2:
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
-    internal-label: AI content generation (AJO)
+    internal-label: AI content generation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
