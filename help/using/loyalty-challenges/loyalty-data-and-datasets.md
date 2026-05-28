@@ -11,6 +11,8 @@ hide: true
 badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: a7c4e1b2-8f3d-4a6c-9e0b-1d2e3f4a5b6c
+feature_v2: []
+subfeature_v2: []
 ---
 # Loyalty data and datasets {#loyalty-data-and-datasets}
 
@@ -36,7 +38,7 @@ exl-id: a7c4e1b2-8f3d-4a6c-9e0b-1d2e3f4a5b6c
 
 **Configure and integrate**
 
-<!-- * [Configure loyalty challenges](loyalty-admin.md) -->
+* [Configure loyalty challenges](loyalty-admin.md)
 * **Loyalty data and datasets** ◀︎ **You are here**
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
@@ -54,13 +56,13 @@ exl-id: a7c4e1b2-8f3d-4a6c-9e0b-1d2e3f4a5b6c
 
 Loyalty Challenges relies on Adobe Experience Platform for identity, profile attributes, experience events, and audiences. Use this page to learn which data to prepare, which datasets are involved, and how **time-to-live (TTL)** affects retention before you author challenges or use the Loyalty Challenges APIs.
 
-Contact your Adobe administrator for Journey Optimizer program setup (reward fulfillment and event mapping). For REST endpoints and authentication, see the [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}.
+Contact your Adobe administrator for Journey Optimizer program setup, or configure reward fulfillment and event mapping in the **[!UICONTROL Loyalty admin]** menu. [Learn how to configure loyalty challenges](loyalty-admin.md). For REST endpoints and authentication, see the [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}.
 
 ## Adobe Experience Platform data {#aep-data}
 
 ### Profile attributes {#profile-attributes}
 
-Challenge audiences, personalization, and reporting use profiles in the **[!DNL XDM Individual Profile]** class. Align the identity [namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"} you use for Loyalty Challenges with how members are identified in your profile data.
+Challenge audiences, personalization, and reporting use profiles in the **[!DNL XDM Individual Profile]** class. Align the identity [namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"} you use for Loyalty Challenges with how members are identified in your profile data and with the namespace selected in **[!UICONTROL Global settings]** in the **[!UICONTROL Loyalty admin]** menu.
 
 For standard loyalty attributes on the profile (points, tier, program, status, and related fields), use the Experience Platform **[Loyalty Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/loyalty-details){target="_blank"}** schema field group. That field group defines the `loyalty` object and its properties (for example `points`, `tier`, `program`, and `status`).
 
@@ -68,7 +70,7 @@ For standard loyalty attributes on the profile (points, tier, program, status, a
 
 ### Experience events {#experience-events}
 
-**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, your administrator must configure matching event definitions (identifier path, optional XDM schema ID, schema, and transformer) before you can select them in the task builder.
+**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event definitions (identifier path, optional XDM schema ID, schema, and transformer) must be configured in the **[!UICONTROL Loyalty admin]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
 
 Ensure event payloads use the same identity namespace as your Loyalty Challenges configuration so progress can be attributed to the correct profile.
 
@@ -87,5 +89,3 @@ Journey Optimizer applies TTL guardrails to many system-generated datasets. Loya
 >[!NOTE]
 >
 >Organization-level loyalty configuration can include archive and retention settings (for example, archive duration) managed through the Loyalty metadata service. Coordinate with your Adobe administrator if you need to adjust retention for your private beta environment.
-
-<!-- For UI-based setup (reward providers, event definitions, product inventory, and exclusions), see [Configure loyalty challenges](loyalty-admin.md). -->

@@ -10,6 +10,8 @@ level: Intermediate
 keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
 hide: true
+feature_v2: []
+subfeature_v2: []
 ---
 # Get started with Journey simulation {#simulate-journey-gs}
  

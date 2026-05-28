@@ -11,6 +11,10 @@ hide: true
 badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
+feature_v2: []
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 # Get started with loyalty challenges {#get-started-loyalty-challenges}
 
@@ -36,7 +40,7 @@ exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 
 **Configure and integrate**
 
-<!-- * [Configure loyalty challenges](loyalty-admin.md) -->
+* [Configure loyalty challenges](loyalty-admin.md)
 * [Loyalty data and datasets](loyalty-data-and-datasets.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 
@@ -89,7 +93,7 @@ Creating and launching a loyalty challenge follows this workflow:
 
 1. **Create a challenge** - Define the basic challenge properties, including name, type (Standard, Streak, Sequential, or Bring your own data when available), and date range. [Learn how to choose a challenge type](create-challenges.md#create-the-challenge).
 
-1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend), quantities, product filters, and rewards.
+1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, or custom event), quantities, product filters, and rewards.
 
 1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices. Content cards show challenge information, progress, and rewards.
 
@@ -132,17 +136,13 @@ Contact your administrator if you cannot access the feature or need additional p
 
 +++
 
-<!--
-
 +++Configure the loyalty program (administrators)
 
-To configure **[!UICONTROL Loyalty Admin]** (reward providers, event definitions, and global settings), you need administrator access to your Journey Optimizer organization. Marketers who only create challenges do not need access to this area. [Learn how to configure the loyalty program](loyalty-admin.md).
+Administrators configure reward providers, event definitions, product inventory, exclusions, and global settings in the **[!UICONTROL Loyalty admin]** menu. Marketers who only create challenges do not need access to this menu. [Learn how to configure loyalty challenges](loyalty-admin.md)
 
-Contact your administrator if **[!UICONTROL Loyalty Admin]** is not visible in the left navigation.
+Contact your administrator if the **[!UICONTROL Loyalty admin]** menu is not visible in the left navigation.
 
 +++
-
--->
 
 +++Target audience
 
@@ -201,20 +201,19 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
     </p>
   </td>
   <!--
-
+    <a href="loyalty-admin.md"><strong>Configure the loyalty program</strong></a>
   <td>
     <a href="loyalty-admin.md">
-      <img alt="Configuration" src="assets/do-not-localize/icon-access.png" width="200"/>
+    <em>Set up reward providers, event definitions, and org settings for fulfillment</em>
     </a>
     <div>
-    <a href="loyalty-admin.md"><strong>Configure the loyalty program</strong></a>
+-->
+    <a href="loyalty-admin.md"><strong>Configure loyalty challenges</strong></a>
     </div>
     <p>
-    <em>Set up reward providers, event definitions, and org settings for fulfillment</em>
+    <em>Set up reward providers, event definitions, and org settings</em>
     </p>
   </td>
-
-  -->
 </tr>
 </table>
 

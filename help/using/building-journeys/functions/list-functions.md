@@ -21,6 +21,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
+subfeature_v2: []
 ---
 # List functions {#list-functions}
 

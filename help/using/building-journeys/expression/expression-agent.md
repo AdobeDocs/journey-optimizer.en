@@ -10,6 +10,8 @@ level: Intermediate
 badge: label="Public beta" type="Informative"
 mini-toc-levels: 2
 hide: true
+feature_v2: []
+subfeature_v2: []
 ---
 
 # Generate expressions with the Expression Assistant {#expression-agent}

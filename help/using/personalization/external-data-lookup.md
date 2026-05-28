@@ -8,6 +8,12 @@ level: Experienced
 hide: true
 badge: label="Limited availability" type="Informative"
 exl-id: eae8a09a-5d27-4a80-b21f-7f795d800602
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
+    internal-label: Main functions
 ---
 # External data lookup helper
 

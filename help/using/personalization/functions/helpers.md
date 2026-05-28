@@ -6,6 +6,10 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2: []
 ---
 # Helpers {#gs-helpers}
 
@@ -258,6 +262,11 @@ For dataset enablement, parameter details, examples, and testing, see [Use Adobe
 
 The `executionMetadata` helper allows to dynamically capture and store custom key-value pairs into the message execution context.
 
+>[!NOTE]
+>
+>* The Execution Metadata function is not supported by [custom actions](../../action/action.md) and in inbound channels (Web, Code-based experience, In-App Message, Content Cards).
+>* The Execution Metadata function is not visible when the content itself is displayed.
+
 **Syntax**
 
 ```
@@ -269,11 +278,6 @@ In this syntax, `key` refers to the metadata name and `value` is the metadata to
 **Use case**
 
 With this function, you can append contextual information to any native action from your campaigns or journeys. This enables you to export real-time delivery contextual data to external systems for various purposes such as tracking, analytics, personalization and downstream processing.
-
->[!NOTE]
->
->* The Execution Metadata function is not supported by [custom actions](../../action/action.md).
->* The Execution Metadata function is not visible when the content itself is displayed.
 
 For instance, you can use the Execution Metadata helper to append a specific ID to each delivery sent to each profile. This information is generated during runtime and the enriched execution metadata can then be exported for downstream reconciliation with an external reporting platform.
 
