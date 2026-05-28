@@ -16,6 +16,8 @@ product_v2:
 feature_v2:
   - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
     internal-label: Data management activity
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
 subfeature_v2:
   - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
     internal-label: Journey Optimizer schemas
