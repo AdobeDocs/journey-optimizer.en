@@ -169,7 +169,7 @@ When an action or API-triggered [campaign](../campaigns/get-started-with-campaig
 
 You can also access each decision policy's technical details and copy them to the clipboard, which can be useful to troubleshoot issues with Adobe Support or your engineering team.
 
-To access decision policy details and technical information, follow the steps below.
++++ To access decision policy details and technical information, follow the steps below.
 
 1. Open the campaign summary by clicking **[!UICONTROL Review to activate]** during [configuration](../campaigns/review-activate-campaign.md#action-campaign-review), or by opening a campaign from the **[!UICONTROL Campaigns]** list.
 
@@ -203,6 +203,8 @@ To access decision policy details and technical information, follow the steps be
 1. Click the **Copy to clipboard** icon to copy a JSON representation of the decision policy to the clipboard.
 
     The copied JSON includes your organization name and ID, sandbox name, decision policy ID, and the full decision policy structure. You can share this information with Adobe Support or your engineering team to troubleshoot decision policy issues faster.
+
++++
 
 ## Use reporting dashboards
 
