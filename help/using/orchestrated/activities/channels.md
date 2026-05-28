@@ -182,7 +182,7 @@ Switch to the **[!UICONTROL Content]** tab to create your message. The process s
 
 From the message editor on a channel activity, insert **[!UICONTROL Profile attributes]** and **[!UICONTROL Target attributes]** from the campaign worktable (targeting dimension and enrichment data).
 
-➡️ [Learn how to add personalization in Orchestrated campaigns](../add-personalization.md), including **loop-based personalization** for 1:N relational collections.
+➡️ [Learn how to add personalization in Orchestrated campaigns](../add-personalization.md), including enrichment collection arrays and iteration over 1:N relational data.
 
 ### Check and test your content {#simulate-content-test-profiles}
 

@@ -163,6 +163,15 @@ Finally, apply filters to ensure only relevant records are included:
 
 1. Click **[!UICONTROL Confirm]**.
 
+### Use collection data in message personalization {#collection-personalization}
+
+When you configure a collection link with **[!UICONTROL Collect data]**, the campaign worktable stores the collected records in two shapes:
+
+* **Flattened lines** — One column per retrieved line (for example, **Purchase 1**, **Purchase 2**, **Purchase 3**), each exposing the attributes you selected (such as price and order date). Use these when you need a fixed number of separate fields in targeting or personalization.
+
+* **Collection array** — A single array named after the link **[!UICONTROL Label]** (for example, **purchases**) that contains every collected record. Select it under **[!UICONTROL Target attributes] > [!UICONTROL Enrichment]** to apply [array functions](../../personalization/functions/arrays-list.md) (for example, `count` or `head` on `target.enrichment.purchases`) or to [iterate over the collection](../../orchestrated/add-personalization.md#iterate-enrichment-collections) with `{{#each}}` in the message editor.
+
+    ➡️ [Learn how to work with enrichment collection data](../add-personalization.md#enrichment-collections)
 
 <!--
 #### Define the sorting{#collection-sorting}

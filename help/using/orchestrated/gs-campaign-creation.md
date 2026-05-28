@@ -54,13 +54,19 @@ Once the campaign is created, it's time to design the logic behind it. Using a v
 
 ➡️ [Learn how to orchestrate activities](../orchestrated/orchestrate-activities.md)
 
-## Step 3: Start & monitor your campaign {#start}
+## Step 3: Add personalization {#personalize}
+
+In channel activities, personalize messages with profile attributes and **target attributes** from the worktable—including enrichment collection arrays (array functions and `{{#each}}` iteration over 1:N relational data).
+
+➡️ [Learn how to add personalization in Orchestrated campaigns](../orchestrated/add-personalization.md)
+
+## Step 4: Start & monitor your campaign {#start}
 
 You're almost there! Run your campaign in test mode first to catch any issues. Then publish it and monitor live execution in real time—track progress, check for errors, and see how profiles flow through each step.
 
 ➡️ [Learn how to start and monitor a campaign](../orchestrated/start-monitor-campaigns.md)
 
-## Step 4: Analyze & report on results {#report}
+## Step 5: Analyze & report on results {#report}
 
 After launch, use built-in reports to understand what worked—and what could be improved. Real-time dashboards and in-depth analytics help you optimize future campaigns and refine your strategy.
 
