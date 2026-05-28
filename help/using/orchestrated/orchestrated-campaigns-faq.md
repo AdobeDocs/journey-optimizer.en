@@ -377,6 +377,7 @@ Objects created in Orchestrated campaigns (for example, audiences and workflows)
 **Best practices**
 
 * Maintain **separate sandboxes** for experimentation, QA, and production.
+* Right after import, [duplicate the campaign](../campaigns/manage-campaigns.md#duplicate-a-campaign) and work from the duplicate so reporting shows feedback and tracking data correctly.
 * After each import, validate the campaign end to end in the target sandbox before you publish.
 * Document configurations and align with governance teams to reduce configuration drift between environments.
 

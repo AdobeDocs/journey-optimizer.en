@@ -29,6 +29,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Orchestrated campaigns guardrails and limitations** page now documents the **channel activities** limit per Orchestrated campaign. [Read more](../orchestrated/guardrails.md#activities-limitations)
 
+* The **Copy Journey Optimizer objects between sandboxes** documentation now includes an important note for **Orchestrated campaigns**: after import, duplicate the campaign in the target sandbox and use the duplicate for execution to ensure reporting correctly captures feedback and tracking data. [Read more](../configuration/copy-objects-to-sandbox.md#copy-to-sandbox)
+
 * The **Key Terminology** page has been overhauled: six new terms added, a new **Conflict & prioritization terms** section introduced, and a new **When terms look similar** disambiguation guide added for four commonly confused term pairs. Adobe Experience Platform-specific terms have been removed and replaced with a note linking to the Adobe Experience Platform glossary. [Read more](../start/terminology.md)
 
 * The **Deep links** documentation has been expanded with a new **Authoring deep links** section detailing the two options available for email (Email Designer UI and Personalization Editor code) and the URL function syntax for SMS. The **Create an SMS message** page now includes a deep link step in the content authoring flow. [Read more](../email/deeplinks.md)
