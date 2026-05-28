@@ -49,6 +49,8 @@ Once your Action campaign has been configured, you need to review its parameter 
 
     ![](assets/create-campaign-alerts.png)
 
+1. When a campaign uses [decision policies](../experience-decisioning/decisioning-policies.md) in its content, you can review each policy's structure and copy technical details directly from the campaign summary. [Learn how](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
+
 1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
 
 1. The campaign is activated. Its status is **[!UICONTROL Live]**, or **[!UICONTROL Scheduled]** if you entered a start date. The message configured in the campaign is sent immediately or on the specified date. 
@@ -62,5 +64,3 @@ Once your Action campaign has been configured, you need to review its parameter 
     You can also get additional statistics in dedicated reports by clicking the **[!UICONTROL Reports]** button. [Learn more](../reports/campaign-global-report-cja.md)
 
     ![](assets/create-campaign-summary.png)
-
-When a campaign uses [decision policies](../experience-decisioning/decisioning-policies.md) in its content, you can review each policy's structure and copy technical details directly from the campaign summary. [Learn how to view decision policy details from the campaign summary](../experience-decisioning/use-decision-policy.md#decision-policy-summary)

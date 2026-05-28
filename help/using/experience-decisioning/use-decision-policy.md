@@ -166,7 +166,7 @@ For code-based experiences, as soon as your developer makes an API or SDK call t
 
 ## View decision policy details from the campaign summary {#decision-policy-summary}
 
-When a [campaign](../campaigns/review-activate-campaign.md) uses decision policies in its content, the campaign summary page displays a **[!UICONTROL Decision policies]** section listing all policies used in the campaign.
+When an action or API-triggered [campaign](../campaigns/get-started-with-campaigns.md) uses decision policies in its content, the campaign summary page displays a **[!UICONTROL Decision policies]** section listing all policies used in the campaign.
 
 You can also access each decision policy's technical details and copy them to the clipboard, which can be useful to troubleshoot issues with Adobe Support or your engineering team.
 
@@ -189,7 +189,7 @@ To access decision policy details and technical information, follow the steps be
 
 1. Click a collection to display all the decision items that it contains.
     
-1. Click a decision item to access its details, and edit it if needed. It opens in a new browser tab. Alternatively, click **[!UICONTROL View item]** to display decision items that are not in a collection.
+1. Click a decision item to access its details and edit it if needed - it opens in a new browser tab. Alternatively, click **[!UICONTROL View item]** to display decision items that are not in a collection.
 
     ![](assets/campaign-decision-policy-collection.png)
 

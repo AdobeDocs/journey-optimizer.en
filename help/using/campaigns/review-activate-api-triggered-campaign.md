@@ -45,6 +45,8 @@ Once your API triggered campaign has been configured, you need to review its par
     In case of errors, you cannot activate the campaign. Resolve the errors before proceeding.
 
     ![](assets/create-campaign-alerts.png)
+
+1. When a campaign uses [decision policies](../experience-decisioning/decisioning-policies.md) in its content, you can review each policy's structure and copy technical details directly from the campaign summary. [Learn how](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
     
 1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
 
@@ -59,8 +61,6 @@ Once your API triggered campaign has been configured, you need to review its par
     You can also get additional statistics in dedicated reports by clicking the **[!UICONTROL Reports]** button. [Learn more](../reports/campaign-global-report-cja.md)
 
     ![](assets/create-campaign-summary.png)
-
-When a campaign uses [decision policies](../experience-decisioning/decisioning-policies.md) in its content, you can review each policy's structure and copy technical details directly from the campaign summary. [Learn how to view decision policy details from the campaign summary](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
 
 ## Next steps {#next}
 
