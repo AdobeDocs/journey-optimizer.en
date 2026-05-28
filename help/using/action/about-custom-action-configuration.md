@@ -195,6 +195,15 @@ You can use Mutual Transport Layer Security (mTLS) to ensure enhanced security i
 
 Mutual TLS (mTLS) authentication is supported in custom actions. There is no additional configuration required in the custom action or journey to activate mTLS; it occurs automatically when an mTLS-enabled endpoint is detected. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
+>[!IMPORTANT]
+>
+>Adobe periodically rotates the mTLS client certificate used for custom action connections. When a new certificate is issued, your endpoint's trust store must be updated to accept it — otherwise, outbound connections from Journey Optimizer to your service will fail with a certificate mismatch error. To avoid disruption:
+>
+>* Regularly check the [Adobe Public Certificate API](https://platform.adobe.io/data/core/mtls/v1/certificate/public-certificate) for updated certificates associated with your services.
+>* Configure your endpoint to accept **overlapping certificates** (both the old and new certificate simultaneously), so there is no connectivity gap during rotation.
+>* Adobe does not currently send proactive notifications when a certificate is rotated. It is your responsibility to monitor for certificate updates and keep your trust store current.
+>* Trust validation should be based on the certificate chain up to the Root CA (DigiCert) rather than pinning to a specific leaf certificate fingerprint.
+
 ## Define the payload parameters {#define-the-message-parameters}
 
 You can define the payload parameter as detailed below:
