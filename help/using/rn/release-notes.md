@@ -290,7 +290,7 @@ The following capabilities and improvements have been added to Decisioning in th
 
   Availability date: May 20, 2026
 
-* **Decision policy details from campaign summary** - From the campaign summary page, you can now review the full structure of each decision policy—including selection strategies, decision items, fallback offers, and decision policy ID—without duplicating or editing the campaign. You can copy a JSON summary (organization, sandbox, decision policy ID, and policy structure) to the clipboard for troubleshooting with Adobe Support or your engineering team. [Read more](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
+* **Decision policy details from campaign summary** - From the campaign summary page, you can now review the full structure of each decision policy—including selection strategies, decision items, andfallback offers—without duplicating or editing the campaign. You can also copy a JSON summary to the clipboard for troubleshooting with Adobe Support or your engineering team. [Read more](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
 
   Availability date: May 20, 2026
 
