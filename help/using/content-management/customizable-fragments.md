@@ -84,17 +84,17 @@ To make portions of a visual fragment editable, follow these steps:
 >
 >When both the **label** and **URL** of a button component are made editable in a fragment, tracking reports show the URL instead of the button label. [Learn more about tracking](../email/message-tracking.md)
 
-## Add rich text to a customizable visual fragment {#rich-text-visual}
+## Enable rich text editing in a customizable visual fragment {#rich-text-visual}
 
 >[!CONTEXTUALHELP]
 >id="ajo_editable_fragment_compatibility"
 >title="Legacy fragment"
->abstract="Editable fields in this fragment are in text-only mode. Until you convert them, users can only enter plain text when editing this fragment in emails—rich text such as bold, italic, hyperlinks, and line breaks is not supported. Click <b>Convert</b> on the component to upgrade it to HTML-compatible mode. //OR Disable edition and re-enable it again to upgrade the fragment to HTML-compatible mode."
+>abstract="Editable fields in this fragment are in text-only mode. This means you can only enter plain text when editing this fragment in emails—rich text such as bold, italic, hyperlinks, and line breaks is not supported. Click <b>Switch to HTML mode</b> to upgrade your fragment to HTML-compatible mode and be able to add rich text when using the fragment in an email."
 
 >[!CONTEXTUALHELP]
 >id="ac_editable_fragment_compatibility"
 >title="Legacy fragment"
->abstract="The editable fields in this customizable fragment are text-only. Rich text formatting (bold, italic, hyperlinks, line breaks, etc.) is not available in the Email Designer until the fragment author upgrades the fragment to HTML-compatible mode using the <b>Convert</b> button in the fragment editor."
+>abstract="This editable field is text-only. Rich text formatting (bold, italic, hyperlinks, line breaks, etc.) is not available until the fragment is upgraded to HTML-compatible mode."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments#customize-fields" text="Customize editable fields in a fragment"
 
 Rich text <!--— including bold, italic, line breaks, and hyperlinks —-->is now natively supported in customizable visual fragments.
