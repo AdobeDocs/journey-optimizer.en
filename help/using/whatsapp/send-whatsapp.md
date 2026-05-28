@@ -21,7 +21,7 @@ subfeature_v2:
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
   - id: b8df23d2-98a2-4406-86cc-2babe8728d36
-    internal-label: WhatsApp channel (AJO)
+    internal-label: WhatsApp channel
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

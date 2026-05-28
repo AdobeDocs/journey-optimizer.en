@@ -28,7 +28,7 @@ subfeature_v2:
   - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
     internal-label: Publish
   - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
-    internal-label: Consent management (AJO)
+    internal-label: Consent management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

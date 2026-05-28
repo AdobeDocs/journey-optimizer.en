@@ -9,7 +9,7 @@ badge: label="Limited Availability" type="Informative"
 exl-id: 3e7c3069-b022-4709-936d-acaad56b5882
 feature_v2:
   - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
-    internal-label: Conflict & prioritization (AJO)
+    internal-label: Conflict & prioritization
 subfeature_v2:
   - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
     internal-label: Rules set configuration

@@ -21,7 +21,7 @@ topic_v2:
     internal-label: Troubleshooting
 subfeature_v2:
   - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
-    internal-label: Approval workflows (AJO)
+    internal-label: Approval workflows
 ---
 # Review & approve a request {#approve-requests}
 

@@ -23,7 +23,7 @@ topic_v2:
     internal-label: Administration
 subfeature_v2:
   - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
-    internal-label: Approval workflows (AJO)
+    internal-label: Approval workflows
 ---
 # Create & manage approval policies {#approval-policies}
 

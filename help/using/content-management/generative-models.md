@@ -10,7 +10,7 @@ exl-id: 9ef6b02c-0a17-4b46-bcd3-8e922eef059a
 feature_v2: []
 subfeature_v2:
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
-    internal-label: AI content generation (AJO)
+    internal-label: AI content generation
 ---
 # Create and manage generative models {#generative-models}
 

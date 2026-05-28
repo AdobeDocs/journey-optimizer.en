@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Communication channels
 subfeature_v2:
   - id: e09fc1e6-407c-418f-adc5-e2ffe8b8986e
-    internal-label: LINE channel (AJO)
+    internal-label: LINE channel
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
 role_v2:

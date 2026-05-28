@@ -29,7 +29,7 @@ feature_v2:
     internal-label: Administration
 subfeature_v2:
   - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
-    internal-label: Consent management (AJO)
+    internal-label: Consent management
   - id: f365ec33-2b99-4b7f-b4ee-c743dd7f615f
     internal-label: Data governance
   - id: c8d5f2ce-ba44-43e9-a2bf-94a3d7d85ec3

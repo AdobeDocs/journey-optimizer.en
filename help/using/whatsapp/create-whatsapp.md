@@ -17,7 +17,7 @@ feature_v2:
     internal-label: Communication channels
 subfeature_v2:
   - id: b8df23d2-98a2-4406-86cc-2babe8728d36
-    internal-label: WhatsApp channel (AJO)
+    internal-label: WhatsApp channel
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

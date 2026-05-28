@@ -19,7 +19,7 @@ subfeature_v2:
   - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
     internal-label: SMS and MMS channel
   - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
-    internal-label: Consent management (AJO)
+    internal-label: Consent management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
