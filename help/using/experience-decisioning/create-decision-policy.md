@@ -91,6 +91,10 @@ For code-based experiences, you can add a new decision policy using either the *
 
 >[!TAB Email]
 
+>[!IMPORTANT]
+>
+>A single email supports a maximum of 10 decision policies.
+
 1. Toggle the **[!UICONTROL Enable decisioning]** option.
 
     ![](assets/decision-policy-enable.png)

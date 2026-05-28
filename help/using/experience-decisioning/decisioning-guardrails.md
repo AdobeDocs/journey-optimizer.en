@@ -63,6 +63,7 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | ------- | ------- |
 | Number of selection strategies and manual items per decision policy | 10 |
 | Max decision items returned per decision policy | 30 |
+| Max decision policies per email | 10 |
 
 ## Eligibility rules {#eligibility-rules}
 
