@@ -292,7 +292,7 @@ The following capabilities and improvements have been added to Decisioning in th
 
 * **Decision policy details from campaign summary** - From the campaign summary page, you can now review the full structure of each decision policy—including selection strategies, decision items, andfallback offers—without duplicating or editing the campaign. You can also copy a JSON summary to the clipboard for troubleshooting with Adobe Support or your engineering team. [Read more](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
 
-  Availability date: May 20, 2026
+  Availability date: May 20, 2026 
 
 * **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
 
