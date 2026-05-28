@@ -164,7 +164,7 @@ To customize editable fields in a fragment, follow these steps.
 
     >[!IMPORTANT]
     >
-    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable rich text, go to the fragment editor and use the **Convert** button to upgrade it to HTML-compatible mode. [Learn how](../content-management/customizable-fragments.md#rich-text-visual)
+    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable rich text, go to the fragment editor and use the **Switch to HTML mode** button to upgrade it to compatible mode. [Learn how](../content-management/customizable-fragments.md#rich-text-visual)
 
     ![](assets/fragment-legacyeditable-fragment.png)
 
