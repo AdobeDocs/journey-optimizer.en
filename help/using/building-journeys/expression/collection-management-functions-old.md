@@ -9,6 +9,8 @@ role: Developer
 level: Experienced
 keywords: query, collections, functions, payload, journey
 version: Journey Orchestration
+feature_v2: []
+subfeature_v2: []
 ---
 # Collection management functions 
 

@@ -8,7 +8,10 @@ topic: Content Management
 role: User
 level: Intermediate, Experienced
 keywords: url, link, personalization, tracking, encode, curly braces
-
+feature_v2: []
+subfeature_v2:
+  - id: c41e8697-e629-4c38-96b3-564faaa17acf
+    internal-label: Dynamic content
 ---
 # Personalize URLs in emails {#url-personalization}
 

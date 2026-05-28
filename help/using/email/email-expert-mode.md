@@ -8,6 +8,8 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 0c586565-0c65-435f-986d-cd08b59de159
+feature_v2: []
+subfeature_v2: []
 ---
 # Edit email content with the advanced HTML editor {#email-expert-mode}
 

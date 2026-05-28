@@ -6,6 +6,12 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 # Get started with Helper functions{#functions}
 
@@ -458,7 +464,7 @@ Helpers are detailed on [this page](helpers.md).
         <td><a href="helpers.md#url-parameter-encryption-helper">Encrypt</a></td><td>Encrypts expression values for URL query parameters at render time using an active key from the sandbox registry </td>
     </tr>
     <tr>
-        <td><a href="helpers.md#url-function">Url</a></td><td>This function handles URLs in SMS message content; use it with <code>originalUrl</code> to shorten URL and <code>type='DEEPLINK'</code> to insert deeplinks</td>
+        <td><a href="helpers.md#url-function">Url</a></td><td>This function handles URLs in SMS message content; use it with <code>originalUrl</code> to shorten URL and <code>type='DEEPLINK'</code> to insert deep links</td>
     </tr>
     <tr>
         <td><a href="helpers.md#with">With</a></td><td>This function is used to change the evaluation token of template-part</td>

@@ -13,19 +13,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: b8df23d2-98a2-4406-86cc-2babe8728d36
+    internal-label: WhatsApp channel
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -58,3 +54,28 @@ You must check alerts in the upper section of the editor. Some of them are simpl
 > If your campaign is subject to an approval policy, you will need to request approval in order to be able to send your text messages. [Learn more](../test-approve/gs-approval.md)
 
 When your WhatsApp message is ready, complete the configuration of your [journey](../building-journeys/publish-journey.md) or [campaign](../campaigns/review-activate-campaign.md) to send it.
+
+## Analyze WhatsApp interactions {#whatsapp-channel-context}
+
+Journey Optimizer captures additional interaction data returned from the WhatsApp channel and stores it in the **Reporting - Email Tracking Experience Event Dataset** under the `whatsAppChannelContext` field group. Use these fields to build [audiences](../audience/about-audiences.md), run [queries](../data/get-started-queries.md), and analyze WhatsApp engagement. [Learn more about system datasets](../data/get-started-datasets.md#system-datasets).
+
+The following fields are captured:
+
+| Field | Description |
+|-|-|
+| `messageType` | WhatsApp message type (for example, `templateBased`, `response`). |
+| `inboundMessage` | Inbound reply content (for example, `stop`, `start`, `subscribe`). |
+| `inboundNumber` | Sender ID where the inbound message was received. |
+| `channelType` | Channel category (`Utility`, `Marketing`, or `Promotional`). |
+| `profileNumber` | Phone number from which the inbound message was received. |
+| `origTimestamp` | Original timestamp from Meta / WhatsApp. |
+| `status` | Delivery status including standardized provider feedback (`sent`, `delivered`, `bounce`, `error`, `delay`, `duplicate`, `denylist`, `exclude`, or `unknown`) and the raw provider status message. |
+| `reactionEvent` | Content of the user response: emoji for reactions, or message text for replies to a specific message. |
+| `reactionMessageID` | ID of the original message being responded to. |
+| `reactionActionName` | Type of response action (`react`, `unreact`, or `reply`). |
+| `interactiveSelectedTitle` | User-selected title from a WhatsApp interactive message. |
+| `interactiveType` | Interactive message type (`list reply`, `button reply`, or `button`). |
+| `interactiveSelectedDescription` | Description of the selected WhatsApp interactive option. |
+| `interactiveSelectedID` | ID of the selected option from WhatsApp. |
+
+To query this dataset, use the `ajo_email_tracking_experience_event_dataset` table in Query Service. For query patterns and related use cases, see [Dataset query examples](../data/datasets-query-examples.md).
