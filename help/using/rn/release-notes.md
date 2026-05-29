@@ -250,15 +250,15 @@ The following orchestrated campaign capability is expected in the upcoming days 
 
 ### Campaigns {#may-26-campaigns}
 
-+++ Coming soon — **Information below is subject to change.**
-
-* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
+* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level. [Read more](../reports/alerts.md)
 
   Availability date: June 1, 2026
+
++++ Coming soon — **Information below is subject to change.**
 
 * **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
 
-  Availability date: June 1, 2026
+  Availability date: May 22, 2026
 
 +++
 
