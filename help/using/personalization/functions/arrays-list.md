@@ -374,4 +374,4 @@ This is the recommended pattern to simulate a "break on condition" — only the 
 
 >[!NOTE]
 >
-> In **Orchestrated campaigns**, apply these functions to enrichment **collection arrays** on the worktable (for example `target.enrichment.purchases`), or use `{{#each}}` on that array path to repeat content for each record. All enrichment attributes appear under **Target attributes > Enrichment**—not profile XDM arrays. [Learn how to pick the collection array in the UI](../../orchestrated/add-personalization.md#pick-enrichment-array)
+> In **Orchestrated campaigns**, apply these functions to enrichment **collection arrays** on the worktable (for example `target.enrichment.purchases`), or use `{{#each}}` on that array path to repeat content for each record. All enrichment attributes appear under **Target attributes > Enrichment**. [Learn how to tell flattened lines from the collection array](../../orchestrated/activities/enrichment.md#pick-enrichment-array)

@@ -56,9 +56,9 @@ Once the campaign is created, it's time to design the logic behind it. Using a v
 
 ## Step 3: Add personalization {#personalize}
 
-In channel activities, personalize messages with profile attributes and **target attributes** from the worktable—including enrichment collection arrays (array functions and `{{#each}}` iteration over 1:N relational data).
+In channel activities, personalize messages with profile attributes and target attributes from the worktable (including enrichment collection arrays).
 
-➡️ [Learn how to add personalization in Orchestrated campaigns](../orchestrated/add-personalization.md)
+➡️ [Learn how to use enrichment data in message personalization](../orchestrated/activities/enrichment.md#collection-personalization)
 
 ## Step 4: Start & monitor your campaign {#start}
 
