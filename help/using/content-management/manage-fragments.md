@@ -180,7 +180,7 @@ To edit a fragment, follow the steps below.
     >
     >When editing a published fragment, you can remove any personalization field, but you cannot add new ones to the fragment content. If you want to add personalized attributes, you must duplicate the fragment. [Learn more](#adding-new-attributes)
 
-1. Once your changes are ready, save them and click the **[!UICONTROL Publish]** button to make your modifications live. [Learn more](create-fragments.md#publish)
+1. Once your changes are ready, save them, then go back to the framgent details screen and click the **[!UICONTROL Publish]** button to make your modifications live. [Learn more](create-fragments.md#publish)
 
 When you edit a fragment, the changes are automatically propagated to all contents using that fragment, including live journeys and campaigns - except for contents where you have broken inheritance from the original fragment.
 

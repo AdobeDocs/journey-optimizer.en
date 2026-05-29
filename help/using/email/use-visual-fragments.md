@@ -135,31 +135,29 @@ Learn how to use implicit variables in [this section](../personalization/use-exp
 
 If certain portions of the selected fragment have been made editable, you can override their default value after adding the fragment into your content. [Learn how to make a fragment customizable](../content-management/customizable-fragments.md)
 
-To customize editable fields in a fragment, follow these steps.
+To customize editable fields in a fragment used in an email, follow these steps.
 
-1. Add a customizable fragment to your email content, and select it to open the properties pane on the right-hand side.
+1. Add a customizable fragment to your email content, and select it to open the **[!UICONTROL Fragment]** pane on the right-hand side.
 
-1. All editable fields in the fragment are displayed in the **[!UICONTROL Settings]** tab of the **[!UICONTROL Fragment]** pane on the right.
+1. All editable fields in the fragment are displayed in the **[!UICONTROL Settings]** tab, under the fragment properties.
 
-    ![](assets/fragment-editable-rich-field.png)
+    ![](assets/fragment-editable-rich-fields.png)
 
-1. 
+1. Hover over any editable field in the central canvas. The field highlights in green and a pencil icon appears when clicking on the text it contains.
 
-1. Hover over each editable component in the central canvas. The component highlights in green and a pencil icon appears when clicking on it.
+    ![](assets/fragment-editable-field-selected.png){width="100%" align="center"}
 
-    ![](assets/fragment-editable-field-selected.png){width="70%" align="center"}
+1. Edit the field text inline directly on the central Email Designer canvas.
 
     >[!NOTE]
     >
-    >You can also select the editable fields on the right pane, making it easy to identify their locations in your content. However, the fields in the right-hand panel are read-only for customizable fragments.
+    >To easily locate the editable fields in your content, you can also select them from the right-hand pane, but you can only edit these fields in the central canvas.
 
-1. Directly edit the content of the editable fields inline in the Email Designer canvas.
-
-1. The Email Designer toolbar also gives access to rich text options — bold, italic, hyperlinks, and more — for **Text**, **Button**, and **Html** components.
+1. For **[!UICONTROL Text]**, **[!UICONTROL Button]**, and **[!UICONTROL Html]** components, the Email Designer toolbar also gives access to rich text options — bold, italic, hyperlinks, and more.
 
     >[!IMPORTANT]
     >
-    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable rich text, go to the fragment editor using the **Open fragment** button and click **Switch to HTML mode** to upgrade it to compatible mode. [Learn more](../content-management/customizable-fragments.md#rich-text-visual)
+    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable rich text, go to the fragment editor using the **[!UICONTROL Open fragment]** button and click **[!UICONTROL Switch to HTML mode]** to upgrade it to compatible mode. [Learn more](../content-management/customizable-fragments.md#rich-text-visual)
     >
     >![](assets/email-custom-fragment-compatibility.png){width="60%" align="center"}
 
@@ -167,9 +165,11 @@ To customize editable fields in a fragment, follow these steps.
 
     ![](assets/fragment-editable.png)
 
+1. You can click **[!UICONTROL Simulate content]** to see how the editable content and styling render. [Learn more on previewing content](preview-test.md)
+
 >[!CAUTION]
 >
->When both the **label** and **URL** of a button component are made editable in a fragment, tracking reports show the URL instead of the button label. [Learn more about tracking](../email/message-tracking.md)
+>When both the **label** and **URL** of a button component are made editable in a fragment, tracking reports show the URL instead of the button label. [Learn more about tracking](message-tracking.md)
 
 ## Break inheritance {#break-inheritance}
 
