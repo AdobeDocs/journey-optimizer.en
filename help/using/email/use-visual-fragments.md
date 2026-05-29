@@ -101,34 +101,29 @@ To use a fragment into an email, follow the steps below.
 
 1. Add as many fragments as you want and **[!UICONTROL Save]** your changes.
 
-### Limitations when using dynamic content in fragments {#fragment-dynamic-content}
+## Manage conditional content in fragments {#fragment-dynamic-content}
+
+When working with visual fragments that contain conditional content, follow these guidelines. [Learn more about dynamic content](../personalization/dynamic-content.md#emails)
 
 >[!CAUTION]
 >
->When working with fragments that contain Dynamic Content (conditional content), be aware of the following limitation:
+>**Nesting fragments with conditional content is not supported.** You cannot place a fragment containing conditional content inside an unlocked fragment that also contains conditional content. This unsupported configuration can cause:
 >
->**Nesting fragments with Dynamic Content is not supported.** You cannot place a fragment containing Dynamic Content inside an unlocked fragment that also contains Dynamic Content. This unsupported configuration can cause:
->
->* Loss of conditional content mappings
+>* Loss of conditional content variant mappings
 >* Compatibility mode warnings in the Email Designer
 >* Inconsistent email rendering
->
->**Recommended approach:** When using multiple fragments with Dynamic Content in your email, add each fragment directly into its own structure block at the email level. This ensures proper functionality and prevents the issues mentioned above.
 
-## Best practices for fragments with dynamic content {#fragment-best-practices}
+**Structure your email properly:** When using multiple fragments with conditional content, add each fragment directly into its own structure block at the email level. Avoid nesting fragments with conditional content inside other unlocked fragments that also contain conditional content.
 
-Follow these best practices when working with visual fragments and Dynamic Content (conditional content):
+**Plan ahead:** Before adding fragments to your email, identify which ones contain conditional content and plan your layout accordingly. This helps prevent configuration issues and ensures a clean structure from the start.
 
-* **Structure your email properly**: When building emails with fragments containing Dynamic Content, add each fragment into a dedicated structure block at the email level. Avoid nesting fragments with Dynamic Content inside other unlocked fragments that also contain Dynamic Content.
+**Design reusable fragments carefully:** When creating fragments that will include conditional content, consider how they will be used. If a fragment needs to be nested within other fragments, avoid adding conditional content to both the parent and child fragments.
 
-* **Plan ahead**: Before adding fragments to your email, identify which ones contain Dynamic Content and plan your layout accordingly. This helps prevent configuration issues and ensures a clean structure from the start.
+**Troubleshooting:** If you experience lost conditional content variant mappings or compatibility mode warnings, follow the steps below.
 
-* **Design reusable fragments carefully**: When creating fragments that will include Dynamic Content, consider how they will be used. If a fragment needs to be nested within other fragments, avoid adding Dynamic Content to both the parent and child fragments.
-
-* **Troubleshooting**: If you experience lost conditional content mappings or compatibility mode warnings:
-    * Check your email structure for nested fragments containing Dynamic Content
-    * Restructure by moving each fragment with Dynamic Content into its own structure block at the email level
-    * Save and verify that conditional content mappings are properly restored
+* Check your email structure for nested fragments containing conditional content
+* Restructure by moving each fragment with conditional content into its own structure block at the email level
+* Save and verify that conditional content variants are properly restored
 
 ## Use implicit variables {#implicit-variables-in-fragments}
 
@@ -142,31 +137,35 @@ If certain portions of the selected fragment have been made editable, you can ov
 
 To customize editable fields in a fragment, follow these steps.
 
-1. Add the fragment to your email content, and select it to open the properties pane on the right-hand side.
+1. Add a customizable fragment to your email content, and select it to open the properties pane on the right-hand side.
 
-1. All editable fields in the fragment are displayed in the **[!UICONTROL Settings]** tab, under the **[!UICONTROL Fragment]** section.
+1. All editable fields in the fragment are displayed in the **[!UICONTROL Settings]** tab of the **[!UICONTROL Fragment]** pane on the right.
 
     ![](assets/fragment-editable-rich-field.png)
+
+1. 
 
 1. Hover over each editable component in the central canvas. The component highlights in green and a pencil icon appears when clicking on it.
 
     ![](assets/fragment-editable-field-selected.png){width="70%" align="center"}
 
-1. You can also select the editable fields on the right pane, making it easy to identify their locations in your content. However, the fields in the right-hand panel are read-only for customizable fragments.
+    >[!NOTE]
+    >
+    >You can also select the editable fields on the right pane, making it easy to identify their locations in your content. However, the fields in the right-hand panel are read-only for customizable fragments.
+
+1. Directly edit the content of the editable fields inline in the Email Designer canvas.
+
+1. The Email Designer toolbar also gives access to rich text options — bold, italic, hyperlinks, and more — for **Text**, **Button**, and **Html** components.
+
+    >[!IMPORTANT]
+    >
+    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable rich text, go to the fragment editor using the **Open fragment** button and click **Switch to HTML mode** to upgrade it to compatible mode. [Learn more](../content-management/customizable-fragments.md#rich-text-visual)
+    >
+    >![](assets/email-custom-fragment-compatibility.png){width="60%" align="center"}
 
 1. In the example below, the image source and alt text can be edited, as well as the "Click here" button URL.
 
     ![](assets/fragment-editable.png)
-
-1. Directly edit the content of the editable fields inline in the Email Designer canvas.
-
-1. The Email Designer toolbar gives access to rich text options — bold, italic, hyperlinks, and more — for **Text**, **Button**, and **Html** components.
-
-    >[!IMPORTANT]
-    >
-    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable rich text, go to the fragment editor and use the **Switch to HTML mode** button to upgrade it to compatible mode. [Learn how](../content-management/customizable-fragments.md#rich-text-visual)
-
-    ![](../content-management/assets/email-fragment-custom-compatibility.png){width="70%" align="center"}
 
 >[!CAUTION]
 >
