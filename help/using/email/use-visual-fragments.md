@@ -92,12 +92,12 @@ To use a fragment into an email, follow the steps below.
 1. From the **[!UICONTROL Settings]** tab, you can:
 
     * Choose the devices you want the fragment to be displayed on.
-    * Open the fragment in a new tab to edit it if needed. [Learn more](../content-management/manage-fragments.md#edit-fragments)
+    * Open the fragment in a new tab and edit it if needed. [Learn more](../content-management/manage-fragments.md#edit-fragments)
     * Explore references. [Learn more](../content-management/fragments.md#visual-expression)
 
 1. If needed, you can break the inheritance with the original fragment. [Learn more](#break-inheritance)
 
-    Once unlocked, you can further customize your fragment and use the **[!UICONTROL Styles]** tab.
+    Once unlocked, you can further customize your fragment as any other component and use the **[!UICONTROL Styles]** tab.
 
 1. Add as many fragments as you want and **[!UICONTROL Save]** your changes.
 
@@ -166,7 +166,7 @@ To customize editable fields in a fragment, follow these steps.
     >
     >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable rich text, go to the fragment editor and use the **Switch to HTML mode** button to upgrade it to compatible mode. [Learn how](../content-management/customizable-fragments.md#rich-text-visual)
 
-    ![](assets/fragment-legacyeditable-fragment.png)
+    ![](../content-management/assets/email-fragment-custom-compatibility.png){width="70%" align="center"}
 
 >[!CAUTION]
 >
