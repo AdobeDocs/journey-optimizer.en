@@ -371,7 +371,3 @@ Use the `{%#if%}` block inside `{{#each}}` to render content only when a conditi
 This is the recommended pattern to simulate a "break on condition" — only the items matching the condition produce output.
 
 +++
-
->[!NOTE]
->
-> In **Orchestrated campaigns**, apply these functions to enrichment **collection arrays** on the worktable (for example `target.enrichment.purchases`), or use `{{#each}}` on that array path to repeat content for each record. All enrichment attributes appear under **Target attributes > Enrichment**. [Learn how to tell flattened lines from the collection array](../../orchestrated/activities/enrichment.md#pick-enrichment-array)

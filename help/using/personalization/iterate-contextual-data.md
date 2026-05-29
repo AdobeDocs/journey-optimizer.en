@@ -48,7 +48,7 @@ Journey Optimizer provides access to contextual data from multiple sources durin
 * **[Dataset lookup](#dataset-lookup)**: Enriched data retrieved from Adobe Experience Platform datasets
 * **[Technical properties](#technical-properties)**: Journey metadata such as journey ID and supplemental identifiers
 * **[Journey context](#other-contexts)**: Other journey-related data accessible during execution
-* **Orchestrated campaign enrichment collections** (Orchestrated campaigns only): See [Use collection data in message personalization](../orchestrated/activities/enrichment.md#collection-personalization).
+* **Orchestrated campaign enrichment collections** (Orchestrated campaigns only): See [Add personalization in Orchestrated campaigns](../orchestrated/add-personalization.md#enrichment-collections).
 
 This guide shows you how to iterate over arrays from each of these sources in your messages, and how to work with arrays when configuring journey activities. Start with [Handlebars iteration syntax](#syntax) to understand message personalization basics, or jump to [Work with arrays in Journey expressions](#arrays-in-journeys) to learn how to pass array data to custom actions and dataset lookups.
 
@@ -523,7 +523,7 @@ While this guide focuses on iteration over arrays, other context types are avail
 * **[Profile attributes](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}** (`profile.*`): Individual profile fields from Adobe Experience Platform
 * **[Audiences](../audience/about-audiences.md)** (`inAudience()`): Audience membership checks
 * **[Offer decisions](../offers/get-started/starting-offer-decisioning.md)**: Decision management offers
-* **[Target attributes](../orchestrated/activities/enrichment.md#collection-personalization)** (Orchestrated campaigns only): Attributes calculated on the campaign canvas, including enrichment collection arrays
+* **[Target attributes](../orchestrated/add-personalization.md#attributes)** (Orchestrated campaigns only): Attributes calculated on the campaign canvas, including enrichment collection arrays
 * **Token** (`context.token`): Session or authentication tokens
 
 For complete personalization syntax and examples using these sources, refer to:

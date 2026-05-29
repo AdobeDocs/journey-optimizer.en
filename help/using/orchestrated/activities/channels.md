@@ -182,7 +182,7 @@ Switch to the **[!UICONTROL Content]** tab to create your message. The process s
 
 From the message editor on a channel activity, insert **[!UICONTROL Profile attributes]** and **[!UICONTROL Target attributes]** from the campaign worktable (targeting dimension and enrichment data).
 
-➡️ [Learn how to use enrichment data in message personalization](enrichment.md#collection-personalization), including collection arrays, array functions, and `{{#each}}` iteration.
+➡️ [Learn how to add personalization in Orchestrated campaigns](../add-personalization.md), including enrichment collection arrays, array functions, and `{{#each}}` iteration.
 
 ### Check and test your content {#simulate-content-test-profiles}
 

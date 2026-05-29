@@ -114,6 +114,6 @@ When you reach the end of a branch, you can add an **[!UICONTROL End]** activity
 
 ## Next steps {#next}
 
-After you add channel activities to the canvas, personalize messages with **[!UICONTROL Profile attributes]** and **[!UICONTROL Target attributes]** from the worktable. If you used a **[!UICONTROL Collect data]** enrichment, see [how to use collection data in personalization](activities/enrichment.md#collection-personalization).
+After you add channel activities to the canvas, [learn how to add personalization](add-personalization.md) in email, SMS, and other messages.
 
 When the canvas is ready, execute the Orchestrated campaign and track the progress of its tasks. [Learn how to start an Orchestrated campaign and monitor its execution](start-monitor-campaigns.md)

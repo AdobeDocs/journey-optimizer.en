@@ -186,7 +186,7 @@ solution: Journey Optimizer
       + [Key steps to create an Orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
       + [Create and schedule the campaign](using/orchestrated/create-orchestrated-campaign.md)
       + [Orchestrate activities](using/orchestrated/orchestrate-activities.md)
-      + [Use enrichment data in personalization](using/orchestrated/activities/enrichment.md#collection-personalization)
+      + [Add personalization](using/orchestrated/add-personalization.md)
       + [Start and monitor the campaign](using/orchestrated/start-monitor-campaigns.md)
       + [Reporting](using/orchestrated/reporting-campaigns.md)
     + Query the database {#query-database}

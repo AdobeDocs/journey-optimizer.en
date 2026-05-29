@@ -59,7 +59,7 @@ When you configure an **[!UICONTROL Enrichment]** activity with a 1:N link and *
 
 * **Flattened lines** — One field per retrieved line (for example, **Purchase 1**, **Purchase 2**, **Purchase 3**), each with the attributes you selected on the link (such as price or product). Use these when you need separate, fixed slots—for example `target.enrichment.purchase1.price`.
 
-* **Collection array** — One array for all collected lines, named from the link label (for example, **purchases**). Use this when you need to work on the full set of records—with [array functions](#array-functions) or [iterate over the collection](#iterate-enrichment-collections) with `{{#each}}` in the message body.
+* **Collection array** — One array for all collected lines, named from the link label (for example, **purchases**). Use this when you need to work on the full set of records—with [array functions](#array-functions).
 
 ![](assets/enrichment-target-attributes-picker.png)
 
@@ -69,7 +69,6 @@ To identify the flattend lines from the collection array, insert the attribute i
 | --- | --- |
 | **One collected line** | **Numbered** — for example `target.enrichment.purchase1.price` |
 | **The full collection** | **Plural and unnumbered** — for example `target.enrichment.purchases.price` |
-
 
 You can apply the same [array and list functions](../personalization/functions/arrays-list.md) used elsewhere in [!DNL Journey Optimizer] to an enrichment collection, referencing `target.enrichment.<label>`.
 

@@ -58,7 +58,7 @@ Once the campaign is created, it's time to design the logic behind it. Using a v
 
 In channel activities, personalize messages with profile attributes and target attributes from the worktable (including enrichment collection arrays).
 
-➡️ [Learn how to use enrichment data in message personalization](../orchestrated/activities/enrichment.md#collection-personalization)
+➡️ [Learn how to add personalization in Orchestrated campaigns](../orchestrated/add-personalization.md)
 
 ## Step 4: Start & monitor your campaign {#start}
 

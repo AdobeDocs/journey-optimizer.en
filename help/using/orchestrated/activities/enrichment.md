@@ -165,44 +165,9 @@ Finally, apply filters to ensure only relevant records are included:
 
 ### Use collection data in message personalization {#collection-personalization}
 
-When you configure a collection link with **[!UICONTROL Collect data]** and set **[!UICONTROL Lines to retrieve (Columns to create)]** (for example, `3`), enrichment attributes are available in the message editor under **[!UICONTROL Target attributes] > [!UICONTROL Enrichment]**. They are exposed in **two ways**:
+When you configure a collection link with **[!UICONTROL Collect data]** and set **[!UICONTROL Lines to retrieve (Columns to create)]** (for example, `3`), enrichment attributes are available in the message editor under **[!UICONTROL Target attributes] > [!UICONTROL Enrichment]**.
 
-* **Flattened lines** — One field per retrieved line (for example, **Purchase 1**, **Purchase 2**, **Purchase 3**), each with the attributes you selected on the link (such as price or product). Use these when you need separate, fixed slots—for example `target.enrichment.purchase1.price` for the first line only.
-
-* **Collection array** — One array for all collected lines, named from the link **[!UICONTROL Label]** (for example, **purchases**). Use this when you need to work on the **full set** of collected records—for example `target.enrichment.purchases` with [array functions](../../personalization/functions/arrays-list.md) or `{{#each}}` to repeat a content block for every line.
-
-#### Tell flattened lines from the collection array {#pick-enrichment-array}
-
-Several entries in **[!UICONTROL Target attributes] > [!UICONTROL Enrichment]** can look alike. **Insert the attribute in the expression editor** and read the path that is generated:
-
-| What you need | Path in the expression editor |
-| --- | --- |
-| **One collected line** | **Numbered** — for example `target.enrichment.purchase1.price` |
-| **The full collection** (array) | **Plural and unnumbered** — for example `target.enrichment.purchases.price` |
-
-If you are unsure which tree entry to pick, insert each candidate in the code and compare the paths. The collection array is always **plural** and has **no line number** in the path.
-
-#### Work with the collection array {#use-enrichment-collection}
-
-Once you have selected the array path (plural and unnumbered), you can:
-
-* **Apply array functions** — For a single value derived from the whole collection (for example, count items or read the first product name in a subject line):
-
-    ```sql
-    Hello number of Items: {%= count(target.enrichment.purchases.price) %} , Name of first item: {%= head(target.enrichment.purchases.product) %}
-    ```
-
-    See [Array and list functions](../../personalization/functions/arrays-list.md) and [Aggregation functions](../../personalization/functions/aggregation.md#count).
-
-* **Iterate with `{{#each}}`** — To render the same layout once per collected line in the message body:
-
-    ```handlebars
-    {{#each target.enrichment.purchases as |purchase|}}
-      {{purchase.price}} — {{purchase.product}}
-    {{/each}}
-    ```
-
-    See [Iterate over an array](../../personalization/functions/arrays-list.md#each-loop).
+➡️ [Learn how to use enrichment collection data in personalization](../add-personalization.md#enrichment-collections)
 
 <!--
 #### Define the sorting{#collection-sorting}
