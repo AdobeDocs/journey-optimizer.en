@@ -36,7 +36,7 @@ On a batch journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulatio
 1. Review the fields Adobe Journey Optimizer gathered for the run. Click **[!UICONTROL Update values]** to change proof or channel settings, or continue without changes.
 
     ![Quick simulation review step](assets/quick-simulation-2.png)
-
+ 
 1. If you opened **[!UICONTROL Update values]**, edit the settings, for example, the address used for message proofs, then confirm to start the simulation.
 
     ![Quick simulation update values](assets/quick-simulation-3.png)
