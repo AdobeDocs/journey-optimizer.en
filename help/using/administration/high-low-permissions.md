@@ -685,3 +685,4 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
       * queries.delete
 
   +++
+

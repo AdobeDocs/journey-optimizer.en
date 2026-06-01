@@ -83,4 +83,3 @@ Built-in permissions represent the different permissions that can be assigned to
 |Translation service|**[!DNL Manage translation in house]**: read, create, edit, and delete translation in house.</br>**[!DNL Manage translation projects]**: read, create, edit, and delete translation projects.</br> **[!DNL Manage translation reviews]**: read, create, edit, and delete translation reviews.</br>**[!DNL Manage translation settings]**: read, create, edit, and delete translation settings.</br>**[!DNL Manage translation tasks]**: read, create, edit, and delete translation tasks.</br>**[!DNL View translation in house]**: read-only access for translation in house.</br>**[!DNL View translation projects]**: read-only access for translation projects.</br>**[!DNL View translation reviews]**: read-only access for translation reviews.</br>**[!DNL View translation tasks]**: read-only access for translation tasks.|
 
 {style="table-layout:fixed"}
-
