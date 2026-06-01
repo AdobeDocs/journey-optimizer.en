@@ -357,6 +357,16 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
+* **[!DNL Manage Key Registry]** high-level permission allows users to view, create, rotate, and revoke keys in the key registry.
+
+  +++ This permission includes the following low-level permissions:  
+
+  * Journey Optimizer specific: 
+    * key-registry.read
+    * key-registry.write
+
+  +++
+
 * **[!DNL Manage landing page settings]** high-level permission allows users to read, create and edit landing page subdomains and preset settings.
 
   +++ This permission includes the following low-level permissions: 
@@ -464,6 +474,15 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
   * Journey Optimizer specific: 
 
     * file_routing.read
+
+  +++
+
+* **[!DNL View Key Registry]** high-level permission allows users to view the key registry listing and key details.
+
+  +++ This permission includes the following low-level permissions:  
+
+  * Journey Optimizer specific: 
+    * key-registry.read
 
   +++
 
