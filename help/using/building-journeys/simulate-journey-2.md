@@ -14,9 +14,9 @@ feature_v2: []
 subfeature_v2: []
 ---
 # Simulate your journey{#simulate-journey}
-
+ 
 Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
-   
+
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
 
 ## Simulation types {#simulation-types}
@@ -38,7 +38,7 @@ On a batch journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulatio
 1. Review the fields Adobe Journey Optimizer gathered for the run. Click **[!UICONTROL Update values]** to change proof or channel settings, or continue without changes.
 
     ![Quick simulation review step](assets/quick-simulation-2.png)
-
+  
 1. If you opened **[!UICONTROL Update values]**, edit the settings, for example, the address used for message proofs, then confirm to start the simulation.
 
     ![Quick simulation update values](assets/quick-simulation-3.png)
