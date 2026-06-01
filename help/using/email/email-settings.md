@@ -48,7 +48,7 @@ To start creating an email, you need to set up email channel configurations that
 
 Define the email settings in the dedicated section of the channel configuration, as detailed below. 
 
-![](assets/surface-email-settings.png){width="50%" align="left"}
+![](assets/surface-email-settings.png){width="50%"}
 
 The email configuration gets picked up for sending communications following the logic below:
 
@@ -89,7 +89,7 @@ To preserve the reputation of your domain, speed up the IP warming process and i
 
 Select the IP pool to associate with the configuration. [Learn more](../configuration/ip-pools.md)
 
-![](assets/surface-subdomain-ip-pool.png){width="50%" align="left"}
+![](assets/surface-subdomain-ip-pool.png){width="50%"}
 
 You cannot proceed with configuration creation while the selected IP pool is under [edition](../configuration/ip-pools.md#edit-ip-pool) (**[!UICONTROL Processing]** status) and has never been associated with the selected subdomain. Otherwise, the oldest version of the IP pool/subdomain association will still be used. If this is the case, save the configuration as draft and retry once the IP pool has the **[!UICONTROL Success]** status.
 

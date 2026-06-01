@@ -133,7 +133,7 @@ You can see that `products` is an array of two objects. You need to have at leas
 
 1. For each field, define the label which will be displayed in the journey canvas.
 
-   ![Filter collection function with condition builder interface](assets/uc-collection-2.png){width="70%" align="left"}
+   ![Filter collection function with condition builder interface](assets/uc-collection-2.png){width="70%"}
 
 1. Create your journey and add the custom action you created. Learn more on [this page](../building-journeys/using-custom-actions.md).
 
@@ -143,7 +143,7 @@ You can see that `products` is an array of two objects. You need to have at leas
 
 1. For each of the following object field, type the corresponding field name from the source XDM schema. If the names are identical, this is not needed. In our example, we only need to define `product id` and "color".
 
-   ![Collection sort function with ordering configuration](assets/uc-collection-4.png){width="50%" align="left"}
+   ![Collection sort function with ordering configuration](assets/uc-collection-4.png){width="50%"}
 
 For the array field, you can also use the advanced expression editor to perform data manipulation. In the following example, we use the [filter](functions/list-functions.md#filter) and [intersect](functions/list-functions.md#intersect) functions:
 
@@ -207,7 +207,7 @@ While collections in custom actions provide flexibility for passing dynamic data
 
 For heterogeneous types and arrays of arrays, the array is defined with the listAny type. You can only map individual items, but cannot change the array to variable.
 
-![Heterogeneous collection with mixed data types and field selection](assets/uc-collection-heterogeneous.png){width="70%" align="left"}
+![Heterogeneous collection with mixed data types and field selection](assets/uc-collection-heterogeneous.png){width="70%"}
 
 Example of heterogenous type:
 

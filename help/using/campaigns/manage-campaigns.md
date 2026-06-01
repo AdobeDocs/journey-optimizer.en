@@ -274,7 +274,7 @@ Archived campaigns can then be retrieved using the dedicated filter in the list.
 
 To delete a campaign, use the ellipsis ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Delete]**.
 
-![](assets/delete-a-campaign.png){width="70%" align="left"}
+![](assets/delete-a-campaign.png){width="70%"}
  
 >[!IMPORTANT]
 >

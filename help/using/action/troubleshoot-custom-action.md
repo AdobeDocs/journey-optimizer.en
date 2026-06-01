@@ -46,7 +46,7 @@ You can test your custom actions by sending API calls from the administration se
 
 As an administrator, use the **[!UICONTROL Send test request]** capability to validate your custom action configurations by making real API calls directly from Adobe Journey Optimizer. This feature ensures that the request structure, headers, authentication, and payload are correctly formatted before being used in a journey.
 
-![](assets/send-test-request.png){width="70%" align="left"}
+![](assets/send-test-request.png){width="70%"}
 
 Use this capability streamlines the testing and validation process, ensuring that custom actions function correctly in live journeys.
 
@@ -73,7 +73,7 @@ To test a custom action, follow these steps:
 
 1. Navigate to the **Actions** configuration screen, and select a custom action.
 1. Click the **[!UICONTROL Send test request]** button at the bottom of the action configuration screen. 
-  ![Send test request button in the Action configuration panel](assets/test-request.png){width="70%" align="left"}
+  ![Send test request button in the Action configuration panel](assets/test-request.png){width="70%"}
 1. In the pop-up window, allowing you to specify request parameters:
 
    * If the **custom action method is GET**, no payload is required.

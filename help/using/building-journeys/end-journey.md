@@ -109,7 +109,7 @@ You can also:
 1. In the **[!UICONTROL Journeys]** list, click the journey you want to close.
 1. On the top-right, click the down arrow.
 
-    ![Finish options menu showing end journey and alternative actions](assets/finish_drop_down_list.png){width="50%" align="left" zoomable="yes"}
+    ![Finish options menu showing end journey and alternative actions](assets/finish_drop_down_list.png){width="50%" zoomable="yes"}
 
 1. Click **[!UICONTROL Close to new entrances]**, and confirm in the dialog box.
 
@@ -129,7 +129,7 @@ You can also:
 1. In the **[!UICONTROL Journeys]** list, click the journey you want to stop.
 1. On the top-right, click the down arrow.
 
-   ![Additional finish options including close journey and cleanup](assets/finish_drop_down_list2.png){width="50%" align="left" zoomable="yes"}
+   ![Additional finish options including close journey and cleanup](assets/finish_drop_down_list2.png){width="50%" zoomable="yes"}
 
 1. Click **[!UICONTROL Stop]**, and confirm in the dialog box.
 
