@@ -11,6 +11,8 @@ hide: true
 badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
+feature_v2: []
+subfeature_v2: []
 ---
 # Configure loyalty challenges {#loyalty-admin}
 
@@ -60,7 +62,7 @@ Loyalty Challenges configuration connects [!DNL Journey Optimizer] to your exter
 >
 >Loyalty Challenges configuration requires administrator access to your [!DNL Journey Optimizer] instance, in addition to the permissions needed for Loyalty Challenges. Contact your Adobe administrator to gain access.
 
-To open the configuration interface, navigate to **[!UICONTROL Loyalty]** and select **[!UICONTROL Loyal admin]**. The interface is organized into tabs:
+To open the configuration interface, select the **[!UICONTROL Loyalty admin]** menu from the left navigation. The interface is organized into tabs:
 
 * **Global settings** — Select the Experience Platform identity namespace for your program. [Learn how to configure global settings](#global-settings)
 * **Reward providers** — Connect the APIs that fulfill rewards when customers make progress or complete challenges. [Learn how to configure reward providers](#reward-providers)
@@ -193,7 +195,7 @@ To edit a reward provider, open the **[!UICONTROL Reward providers]** tab, selec
 >title="Event identification"
 >abstract="Specify how [!DNL Journey Optimizer] recognizes the event in incoming payloads using an identifier path, identifier values, an XDM schema ID, or a combination of these fields."
 
-**[!UICONTROL Event definitions]** tell [!DNL Journey Optimizer] which incoming Adobe Experience Platform experience events to process. For example, a purchase or a hotel check-in. Marketers reference these definitions when they create **[!UICONTROL Custom event]** tasks. Events that do not match any definition are ignored.
+**[!UICONTROL Event definitions]** tell [!DNL Journey Optimizer] which incoming Adobe Experience Platform experience events to process. For example, a purchase or a hotel check-in. Marketers reference these definitions when they create **[!UICONTROL Custom event]** tasks in the task builder. Events that do not match any definition are ignored.
 
 When your organization sends events in its own JSON format, **[!UICONTROL Schema]** and **[!UICONTROL Transformer]** help [!DNL Journey Optimizer] validate the payload, parse it, and decide whether to track the activity.
 

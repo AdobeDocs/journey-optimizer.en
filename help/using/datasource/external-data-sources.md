@@ -20,13 +20,7 @@ feature_v2:
     internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
-  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
-    internal-label: Integrations
 subfeature_v2:
-  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
-    internal-label: Action configuration
   - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
     internal-label: Data source configuration
 role_v2:

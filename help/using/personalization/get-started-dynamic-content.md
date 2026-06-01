@@ -9,6 +9,14 @@ role: Developer
 level: Intermediate
 keywords: expression, editor, get started, conditions, start
 exl-id: be9a3f83-8e22-4efa-9d48-37bf554018fa
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: a757b957-83f3-4a4d-9775-a93854f84f77
+    internal-label: Conditional instruction
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 # Get started with dynamic content {#start-dynamic-content}
 

@@ -6,6 +6,16 @@ description: Learn how to store inbound SMS keywords in a profile-enabled custom
 feature: SMS, Channel Configuration
 role: Admin
 level: Intermediate
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
+    internal-label: SMS and MMS channel
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
 ---
 # Use a custom dataset for inbound keywords {#custom-dataset-inbound-keywords}
 

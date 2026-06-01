@@ -18,6 +18,9 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
+subfeature_v2:
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
 ---
 # Understand statistical calculations in Experimentation report {#experiment-report-calculations}
 

@@ -8,6 +8,12 @@ topic: Content Management, Artificial Intelligence
 role: User
 level: Intermediate
 mini-toc-levels: 1
+feature_v2: []
+subfeature_v2:
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
+  - id: c41e8697-e629-4c38-96b3-564faaa17acf
+    internal-label: Dynamic content
 ---
 # AI assistant for personalization expressions{#generative-personalization-expressions}
 

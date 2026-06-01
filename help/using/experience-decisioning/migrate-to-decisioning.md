@@ -13,23 +13,15 @@ product_v2:
 feature_v2:
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
-  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
-    internal-label: Integrations
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
 subfeature_v2:
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
   - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
     internal-label: Business rules
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -105,7 +97,7 @@ Dashboard documenting performance of decision items and selection strategies aga
 
 * **Policy enforcement**: Business user empowerment to use features like [Data Usage Labeling & Enforcement (DULE)](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/labels/overview){target="_blank"} and [Consent](../action/consent.md) within Decisioning, enabling privacy shield protection across the decisioning workflow. This ensures decisions automatically respect data usage policies and customer consent preferences.
 
-* **Native messaging channel support**: Integrated messaging and decisioning within a single framework across multiple channels: [Code-based experience](../code-based/get-started-code-based.md), [Email](../email/get-started-email.md) (Limited Availability), [SMS](../mobile/get-started-mobile.md), and [Push notifications](../push/get-started-push.md). Intuitive UI support allows users to insert decisioning components directly in message authoring workflows.
+* **Native messaging channel support**: Integrated messaging and decisioning within a single framework across multiple channels: [Code-based experience](../code-based/get-started-code-based.md), [Email](../email/get-started-email.md), [SMS](../mobile/get-started-mobile.md), and [Push notifications](../push/get-started-push.md). Intuitive UI support allows users to insert decisioning components directly in message authoring workflows.
 
 * **Experience Platform dataset lookup**: Ability to upload and reference [Adobe Experience Platform datasets](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview){target="_blank"} directly within offer selection rules, ranking, and personalized offer content. This expands flexibility for personalization and targeting by allowing decision logic to use dynamic external data sources. [Learn more](../data/lookup-aep-data.md)
 

@@ -12,21 +12,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
 subfeature_v2:
-  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
-    internal-label: Action configuration
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -172,7 +166,7 @@ The following journey capabilities are expected in the upcoming days or weeks.
 <tr>
 <td>
 <p>Previously released in Limited Availability, Journey Simulation is now available to all environments. With this General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
-<p>Availability date: early June, 2026</p>
+<p>Availability date: Early June, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -182,15 +176,15 @@ The following journey capabilities are expected in the upcoming days or weeks.
 
   Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.
 
-  Availability date: June 2, 2026
+  Availability date: Early June, 2026
 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding `subType: "certificateCredential"` to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID.
 
-  Availability date: June 2, 2026
+  Availability date: Early June, 2026
 
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
 
-  Availability date: June 1, 2026
+  Availability date: Early June, 2026
 
 +++
 
@@ -256,15 +250,15 @@ The following orchestrated campaign capability is expected in the upcoming days 
 
 ### Campaigns {#may-26-campaigns}
 
-+++ Coming soon — **Information below is subject to change.**
-
-* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level.
+* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level. [Read more](../reports/alerts.md)
 
   Availability date: June 1, 2026
+
++++ Coming soon — **Information below is subject to change.**
 
 * **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
 
-  Availability date: June 1, 2026
+  Availability date: May 22, 2026
 
 +++
 
@@ -290,15 +284,19 @@ The following capabilities and improvements have been added to Decisioning in th
 </tbody>
 </table>
 
-* **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
-
-  Availability date: May 6, 2026
-
 * **Adobe Experience Manager content fragments in Decisioning** - You can now map Adobe Experience Manager content fragments to decision items in Decisioning and leverage them inside decision policies to deliver the right fragment to the right customer at the right time. [Read more](../integrations/aem-fragments.md#aem-decisioning)
 
   This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
 
   Availability date: May 20, 2026
+
+* **Decision policy details from campaign summary** - From the campaign summary page, you can now review the full structure of each decision policy—including selection strategies, decision items, andfallback offers—without duplicating or editing the campaign. You can also copy a JSON summary to the clipboard for troubleshooting with Adobe Support or your engineering team. [Read more](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
+
+  Availability date: May 20, 2026 
+
+* **Decisioning migration workflow APIs** - The API contract for creating dependency analysis and migration workflows has been updated: pass **`request-level`** as a **query parameter** on the request URL (`sandbox`, `offer`, or `decision`). Request level must no longer be sent in the JSON body. [Read more](../experience-decisioning/decisioning-migration-api.md)
+
+  Availability date: May 6, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 

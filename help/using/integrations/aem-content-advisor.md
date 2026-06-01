@@ -6,6 +6,12 @@ description: Learn how to access and use Adobe Experience Manager Content Adviso
 role: User
 level: Beginner, Intermediate
 exl-id: 842d69e3-be7f-4a81-8161-6c6ecd571f95
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
+    internal-label: Experience Manager Assets integration
 ---
 # Work with Adobe Experience Manager Content Advisor {#aem-content-advisor}
   

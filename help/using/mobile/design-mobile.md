@@ -7,6 +7,12 @@ feature: SMS
 topic: Content Management
 role: User
 level: Beginner
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
+    internal-label: SMS and MMS channel
 ---
 # Design a Mobile message {#design-mobile}
 
@@ -129,7 +135,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
     ![](assets/sms_tracking_1.png)
 
-1. Select **[!UICONTROL Url]** and click **[!UICONTROL Add URL]**.
+1. Select **[!UICONTROL Url]** and click **[!UICONTROL Add URL]**. Learn more about the `Url` helper function in [this section](../personalization/functions/helpers.md#url).
 
     ![](assets/sms_tracking_2.png)
 
@@ -141,13 +147,13 @@ To configure your message content, follow the steps below. Settings for MMS are 
     >
     > The lifespan of short URLs is set to 30 days. After this period, these short URLs will no longer be accessible and will display the message: `404 short-code not found`.
 
-1. To add a deep link that opens a specific screen in your mobile app, use the **[!UICONTROL Url]** helper function with the `DEEPLINK` type, such as in the example below. [Learn more about deep links](../email/deeplinks.md)
+1. To add a deep link that opens a specific screen in your mobile app, use the `Url` helper function with the `DEEPLINK` type, such as in the example below. [Learn more about deep links](../email/deeplinks.md)
 
       ```
       {{url originalUrl='<<deeplink_url>>' type='DEEPLINK' action='CLICK'}}
       ```
 
-      >[!IMPORTANT]
+      >[!CAUTION]
       >
       >Before using deep linking, make sure you have completed the corresponding [configuration steps](../email/deeplinks.md#configuration) in Journey Optimizer and implemented [deep link handling](../email/deeplinks.md#mobile-implementation) in your mobile app. If you have not done so, the deep link will not direct users to the intended in-app content.
       >
@@ -186,3 +192,4 @@ To create MMS content, follow these steps:
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed below.
 
 Once you have performed your tests and validated the content, you can send your Mobile message to your audience. These steps are detailed on [this page](send-mobile-message.md)
+

@@ -14,39 +14,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
 subfeature_v2:
-  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
-    internal-label: Orchestration activities
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
-    internal-label: Data source configuration
-  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
-    internal-label: Subdomains
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: f550d0f2-143d-4093-9463-467fbec95fcc
-    internal-label: Accessibility
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
-  - id: fae48155-b23f-40d2-a252-a25bce350b4d
-    internal-label: Email configuration
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
-  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
-    internal-label: Overview
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

@@ -19,13 +19,9 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
 subfeature_v2:
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

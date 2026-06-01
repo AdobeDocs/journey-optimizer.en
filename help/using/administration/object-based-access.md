@@ -9,6 +9,10 @@ role: Admin, Developer
 level: Experienced
 keywords: object, level, access, control, labels, olac, authorization
 exl-id: 02ccdd95-426c-4b61-9834-7f2dcd5abdbb
+feature_v2:
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+subfeature_v2: []
 ---
 # Object level access control {#object-level-access}
 

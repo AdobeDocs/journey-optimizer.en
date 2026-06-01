@@ -13,21 +13,19 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
+    internal-label: Journey Optimizer schemas
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
+  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
+    internal-label: Data ingestions
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -83,7 +81,7 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
 * Reporting
 
     * _Reporting - Message Feedback Event Dataset_: Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset.
-    * _Reporting - Email Tracking Experience Event Dataset_: Interaction logs for Email channel which is used for reporting and audience creation purposes. Information stored informs on actions performed by the end-user on email (opens, clicks, etc).
+    * _Reporting - Email Tracking Experience Event Dataset_: Interaction logs for the Email channel, and WhatsApp channel context data under the `whatsAppChannelContext` field group. Used for reporting and audience creation. Information stored includes actions performed by the end-user on email (opens, clicks, etc.) and WhatsApp interactions.
     * _Reporting - Push Tracking Experience Event Dataset_: Interaction logs for Push channel which is used for reporting and audience creation purposes. Information stored informs on actions performed by the end-user on push notifications.
     * _Reporting - Journey Step Event_: Captures All Journey Step Experience Events generated from Journey Optimizer to be consumed by services like Reporting. Also critical for building reports in Customer Journey Analytics for YoY analysis. Tied to a Journey Metadata.
     * _Reporting - Journeys_: Metadata dataset housing information of each step in a journey.

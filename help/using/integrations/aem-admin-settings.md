@@ -9,6 +9,12 @@ role: Admin
 level: Experienced
 hide: true
 keywords: AEM, Content Fragments, administration, repository, authentication, author, publish
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
+    internal-label: Experience Manager Assets integration
 ---
 # Configure Adobe Experience Manager repository access {#aem-admin-settings}
 
@@ -31,6 +37,10 @@ To configure your repository:
 1. Click **[!UICONTROL Create integration]**.
 
    ![](assets/aem-admin-settings-1.png)
+
+1. If you use **[!DNL Adobe Experience Manager Managed Services]**, enter a repository hostname ending with `adobecqms.net` in the **[!UICONTROL Custom AMS Repo ID]** field.
+
+   ![](assets/aem-admin-settings-6.png)
 
 1. Choose which repository to configure and click **[!UICONTROL Next]**.
 
@@ -70,9 +80,19 @@ To configure your repository:
 
     +++
 
+1. After you finish the instance setup, pick a Content Fragment to confirm that the integration works.
+
+    ![](assets/aem-admin-settings-7.png)
+
+1. In the **Content Advisor** window, select the fragment you want to test, then click **[!UICONTROL Select]**.
+
 1. Click **[!UICONTROL Save]**.
+
+1. When you save with a test Content Fragment selected, validation runs automatically. If validation fails, an error list is displayed so you can fix the configuration.
+
+    ![](assets/aem-admin-settings-8.png)
 
 1. To edit or disable this repository integration, access your previously created configuration from the **[!UICONTROL AEM Integration]** menu.
 
-When you save, that sandbox uses the repository for the Content Fragment selector and **Adobe Experience Manager Content Advisor**.
+When you save this configuration, Journey Optimizer stores it for that repository in the current sandbox. You can then use that repository and its settings when browsing and selecting content in the **Content Advisor** selector.
 

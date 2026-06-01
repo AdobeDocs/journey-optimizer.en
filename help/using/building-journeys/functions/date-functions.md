@@ -15,8 +15,6 @@ product_v2:
 feature_v2:
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -25,6 +23,7 @@ topic_v2:
     internal-label: Customer journeys
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
+subfeature_v2: []
 ---
 # Date functions {#date-functions}
 

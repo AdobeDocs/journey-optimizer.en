@@ -15,8 +15,6 @@ feature_v2:
     internal-label: Communication channels
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
@@ -24,6 +22,8 @@ subfeature_v2:
     internal-label: Direct mail
   - id: e240d5e8-8393-4b76-8a3d-9e53a2f7306c
     internal-label: Email channel
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
