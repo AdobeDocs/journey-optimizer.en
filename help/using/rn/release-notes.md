@@ -166,7 +166,7 @@ The following journey capabilities are expected in the upcoming days or weeks.
 <tr>
 <td>
 <p>Previously released in Limited Availability, Journey Simulation is now available to all environments. With this General Availability release, you can now use Journey Agent to generate simulated users and events directly in the Simulation menu.</p>
-<p>Availability date: early June, 2026</p>
+<p>Availability date: Early June, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -176,15 +176,15 @@ The following journey capabilities are expected in the upcoming days or weeks.
 
   Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.
 
-  Availability date: June 2, 2026
+  Availability date: Early June, 2026
 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding `subType: "certificateCredential"` to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID.
 
-  Availability date: June 2, 2026
+  Availability date: Early June, 2026
 
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
 
-  Availability date: June 1, 2026
+  Availability date: Early June, 2026
 
 +++
 
