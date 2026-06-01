@@ -210,9 +210,8 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
       * campaign-read
       * campaign-publish
       <!--
-      * experiments.activate
-      
--->
+      * experiments.activate    
+      -->
 
   +++
 
@@ -226,8 +225,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
       <!--
       * experiments.read
       * experiments_report.read
-      
--->
+      -->
 
   +++
 
