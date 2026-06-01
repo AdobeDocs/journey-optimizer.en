@@ -50,7 +50,7 @@ Legacy native channel activities are also preserved in these cases:
 >id="ajo_journey_action_optimization"
 >title="Optimization"
 >abstract="Add optimization to your channel action to run content experiments, apply targeting rules, or combine both experimentation and targeting. These options allow you to test variants and deliver the most effective content to each audience member."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment" text="Get started with content experiments"
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/optimize-activity/optimize" text="Use the Optimize activity"
 
 
 >[!CONTEXTUALHELP]
