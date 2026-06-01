@@ -215,6 +215,7 @@ The following capabilities and improvements have been added to orchestrated camp
 
   Availability date: May 20, 2026
 
+<!--
 +++ Coming soon — **Information below is subject to change.**
 
 The following orchestrated campaign capability is expected in the upcoming days or weeks.
@@ -247,6 +248,7 @@ The following orchestrated campaign capability is expected in the upcoming days 
   Availability date: Early June, 2026
 
 +++
+-->
 
 ### Campaigns {#may-26-campaigns}
 
