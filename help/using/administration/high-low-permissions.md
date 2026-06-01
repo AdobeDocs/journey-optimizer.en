@@ -357,7 +357,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
-* **[!DNL Manage Key Registry]** high-level permission allows users to view, create, rotate, and revoke keys in the key registry.
+* **[!DNL Manage key registry]** high-level permission allows users to view, create, rotate, and revoke keys in the key registry.
 
   +++ This permission includes the following low-level permissions:  
 
@@ -423,7 +423,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
-* **[!DNL Manage Seedlist]** high-level permission allows users to read, create, edit and delete Seedlist.
+* **[!DNL Manage seed lists]** high-level permission allows users to read, create, edit and delete seed lists.
 
   +++ This permission includes the following low-level permissions: 
 
@@ -477,7 +477,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
-* **[!DNL View Key Registry]** high-level permission allows users to view the key registry listing and key details.
+* **[!DNL View key registry]** high-level permission allows users to view the key registry listing and key details.
 
   +++ This permission includes the following low-level permissions:  
 
