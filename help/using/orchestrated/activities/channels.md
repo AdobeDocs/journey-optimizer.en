@@ -149,6 +149,21 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 Additional settings are available depending on the selected communication channel. Expand the sections below for more information.
 
++++**Email header personalization** (Email).
+
+After selecting your channel configuration, enable **[!UICONTROL Override email delivery settings]** to replace values defined in that configuration. You can customize the following settings for this channel activity:
+
+* **Email header parameters**: **[!UICONTROL From name]**, **[!UICONTROL From email prefix]**, **[!UICONTROL Reply to name]**, and **[!UICONTROL Reply to email]**
+
+* **Execution address**: **[!UICONTROL Source]** (**[!UICONTROL Profile]** or **[!UICONTROL Target Dimension]**), and **[!UICONTROL Delivery address]**
+
+* **List unsubscribe**: **[!UICONTROL Mailto (unsubscribe)]** and **[!UICONTROL One-click unsubscribe URL]**
+
+For any field you leave blank, [!DNL Journey Optimizer] uses the value from the selected channel configuration.
+
+![image showing the Content experiment section](../assets/email-header.png)
++++
+
 +++**Track engagement** (Email and SMS).
 
 Use the **[!UICONTROL Action tracking]** section to track how your recipients react to your email or SMS deliveries. Tracking results are accessible from the campaign report once the campaign has been executed. [Learn more about campaign reports](../../reports/campaign-global-report-cja.md)
