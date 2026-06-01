@@ -25,7 +25,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2026 {#may-2026}
 
-* Two new high-level permissions have been added: **Manage Key Registry**, which allows users to view, create, rotate, and revoke keys in the key registry, and **View Key Registry**, which allows users to view the key registry listing and key details. [Read more](../administration/high-low-permissions.md#administration-permissions)
+* Two new high-level permissions have been added: **Manage Key Registry**, which allows users to view, create, rotate, and revoke keys in the key registry, and **View Key Registry**, which allows users to view the key registry listing and key details. [Read more](../administration/high-low-permissions.md#administration-permissions) 
 
 * The **Use decision policies in messages** documentation now describes how to view the full structure of a decision policy from the campaign summary and copy a JSON technical summary to the clipboard for troubleshooting. [Read more](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
 

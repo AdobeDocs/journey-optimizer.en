@@ -379,3 +379,4 @@ You can apply the helper to one parameter, several, or all parameters in a link,
 * Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
 
 * The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.
+
