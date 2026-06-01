@@ -36,7 +36,7 @@ Note that Journey Simulation is in **Limited availability**. To share feedback a
 >You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
 
 Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, from the UI or a JSON file, save them for reuse, adjust or remove them from the list, and send them into the journey.
-
+ 
 ### Create simulated users
 
 The following steps show you how to create simulated users from the UI or by importing a JSON file.
