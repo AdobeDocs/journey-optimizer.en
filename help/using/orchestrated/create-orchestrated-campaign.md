@@ -160,7 +160,7 @@ To configure the campaign schedule, follow these steps:
 
 In the following example, the activity is configured so that the Orchestrated campaign runs twice a day at 9 and 12 AM, every day of the week from October 1st, 2025 to January 1st, 2026.
 
-![Scheduler configured to run the campaign twice a day at 9 and 12 AM](assets/scheduler-sample.png){width="50%" align="left"}
+![Scheduler configured to run the campaign twice a day at 9 and 12 AM](assets/scheduler-sample.png){width="50%"}
 
 ## Next steps {#next}
 

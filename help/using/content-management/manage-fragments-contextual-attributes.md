@@ -67,7 +67,7 @@ To add contextual attributes to a published fragment, follow the steps below.
 
 1. Select the published fragment and click **[!UICONTROL Modify]** to create a draft version.
 
-    ![](assets/fragment-live-modify.png){width="70%" align="left"}
+    ![](assets/fragment-live-modify.png){width="70%"}
 
 1. Click **[!UICONTROL Edit]** to open the fragment content editor.
 
