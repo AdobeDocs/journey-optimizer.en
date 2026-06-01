@@ -14,7 +14,7 @@ hide: true
 # Simulate your journey{#simulate-journey}
 
 Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
-   
+
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
 
 ## Simulation types {#simulation-types}

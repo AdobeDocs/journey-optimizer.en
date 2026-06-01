@@ -12,7 +12,7 @@ version: Journey Orchestration
 hide: true
 ---
 # Get started with Journey simulation {#simulate-journey-gs}
-  
+
 You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profile-like entities you add, without using persistent test profiles in Adobe Experience Platform.
    
 Adobe Journey Optimizer offers two ways to test and validate your journey:
