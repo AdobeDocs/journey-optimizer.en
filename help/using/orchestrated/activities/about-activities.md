@@ -29,7 +29,7 @@ All activities are detailed in the sections below:
 * [Channel activities](#channel)
 * [Flow control activities](#flow-control)
 
-![List of activities available in the canvas](../assets/orchestrated-activities.png){width="80%" align="left"}
+![List of activities available in the canvas](../assets/orchestrated-activities.png){width="80%"}
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ See [Guardrails and limitations](../guardrails.md) for all Orchestrated campaign
 
 These activities are specific to targeting. They let you build one or more targets by defining an audience and splitting or combining these audiences using intersection, union or exclusion operations.
 
-![List of targeting activities](../assets/targeting-activities.png){width="40%" align="left"}
+![List of targeting activities](../assets/targeting-activities.png){width="40%"}
 
 Available targeting activities are:
 
@@ -79,7 +79,7 @@ Learn how to [create a channel action in an Orchestrated campaign](channels.md).
 
 The following activities are specific to organizing and executing Orchestrated campaigns. Their main task is to coordinate the other activities.
 
-![List of flow control activities](../assets/flow-control-activities.png){width="20%" align="left"}
+![List of flow control activities](../assets/flow-control-activities.png){width="20%"}
 
 Available flow control activities are:
 

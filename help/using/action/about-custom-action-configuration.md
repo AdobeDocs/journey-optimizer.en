@@ -135,7 +135,7 @@ In Journey Optimizer, you can apply data governance and consent policies to your
 
 When configuring a custom action, you need to define the following **[!UICONTROL Endpoint Configuration]** parameters:
 
-![](assets/action-response1bis.png){width="70%" align="left"}
+![](assets/action-response1bis.png){width="70%"}
 
 1. In the **[!UICONTROL URL]** field, specify the URL of the external service:
 
@@ -212,15 +212,15 @@ You can define the payload parameter as detailed below:
 
     Enable the **[!UICONTROL Allow NULL values]** option to keep Null values in the external call. Note that sending arrays of int, string, etc. with Null values within is not fully supported. For example, the following array of integers `[1, null, 2, 3]` is sent as `[1, 2, 3]` even if this option is checked. In addition to that, if such array is null, it is sent as an empty array.
 
-    ![](assets/null-values.png){width="70%" align="left"}
+    ![](assets/null-values.png){width="70%"}
 
 1. In the **[!UICONTROL Response]** section, paste an example of the payload returned when the call succeeds. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md). 
 
-    ![](assets/response-values.png){width="70%" align="left"}
+    ![](assets/response-values.png){width="70%"}
 
 1. (Optional) Select **[!UICONTROL Define a failure response payload]** to enable the error response payload field. When enabled, use the **[!UICONTROL Error Response]** section to paste an example of the payload returned when the call fails. The same requirements apply as for the response payload (field types and format). Learn how to leverage the failure response payload in journeys [here](../action/action-response.md).
 
-    ![](assets/response-values.png){width="70%" align="left"}
+    ![](assets/response-values.png){width="70%"}
 
 >[!NOTE]
 >

@@ -396,7 +396,7 @@ To **create** an exit criteria, follow these steps:
 
 You can add multiple exit criteria. The exit criteria is now active and will be evaluated at each step of the journey.
 
-![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%" align="left"}
+![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%"}
 
 
 ### Profile Attribute-based exit criteria {#profile-exit-criteria}
