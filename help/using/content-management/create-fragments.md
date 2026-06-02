@@ -56,6 +56,8 @@ Fragments can be created from scratch from the **[!UICONTROL Fragments]** left m
 
 Once saved, your fragment is available for use in a journey, a campaign or a template. You can use this fragment when building any content within journeys and campaigns. See [Add visual fragments](../email/use-visual-fragments.md) and [Leverage expression fragments](../personalization/use-expression-fragments.md).
 
+➡️ [Manage your Adobe Experience Manager content fragments](../integrations/aem-fragments-manage.md) to view synced fragments, references, tags, and manual sync on the **[!UICONTROL AEM Fragments]** tab.
+
 To create a fragment, follow the steps below.
 
 ## Define the fragment's properties {#properties}
