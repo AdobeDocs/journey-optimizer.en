@@ -1,0 +1,120 @@
+---
+title: Manage and monitor custom channels
+description: Learn how to manage the lifecycle of custom channels and channel configurations, and monitor delivery performance through Adobe Journey Optimizer reporting.
+feature: Custom Channel
+topic: Content Management
+role: User
+level: Beginner
+---
+
+# Manage and monitor custom channels {#manage-custom-channel}
+
+## Manage custom channels {#manage-channels}
+
+Access the custom channel inventory from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL CHANNEL BUILDER]** > **[!UICONTROL Custom channels]**.
+
+### Edit a channel {#edit-channel}
+
+The fields you can edit depend on the channel's current status:
+
+| Status | Editable fields |
+|--------|-----------------|
+| **Draft** | All fields |
+| **Active** | Name, description, icon, throttling configuration, retry configuration |
+
+To edit a channel, click its name in the inventory, make your changes, and save.
+
+>[!CAUTION]
+>
+>Modifying throttling or retry settings on an active channel takes effect immediately for all in-flight and future executions.
+
+### Archive a channel {#archive-channel}
+
+Archiving an active channel removes it from all selection drop-downs — Campaign action selector, Journey actions palette, Orchestrated Campaigns channel list, Channel configurations, and Content Templates. Existing journeys and campaigns that already use the channel continue to function normally.
+
+To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**.
+
+### Delete a channel {#delete-channel}
+
+A channel can only be deleted while it is in **[!UICONTROL Draft]** status. Once activated, a channel can only be archived.
+
+To delete a draft channel, open it from the inventory and click **[!UICONTROL Delete]**.
+
+## Manage channel configurations {#manage-configurations}
+
+Access channel configurations from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel configurations]**.
+
+### Activate or deactivate a configuration {#activate-deactivate}
+
+* **Active** configurations are available for selection when building new journeys and campaigns.
+* **Inactive** configurations cannot be selected in new journeys or campaigns, but do not affect existing live executions, which continue until stopped or completed.
+
+To change a configuration's status, open it from the list, toggle the **[!UICONTROL Status]** field, and click **[!UICONTROL Submit]**.
+
+### Edit a configuration {#edit-configuration}
+
+>[!CAUTION]
+>
+>Editing a configuration used by live journeys or campaigns may affect delivery. Review which journeys and campaigns reference the configuration before making changes.
+
+Click the configuration name, make your changes, and click **[!UICONTROL Submit]**. Changes take effect immediately for new executions.
+
+## Monitor delivery performance {#monitor-reporting}
+
+[!DNL Journey Optimizer] provides OOTB reporting for custom channels.
+
+### Reporting metrics {#metrics}
+
+The following metrics are available for custom channels in both live (24h) and global (CJA) reports, consistent with SMS live reports:
+
+| Metric | Description |
+|--------|-------------|
+| **Attempted deliveries** | Total number of messages sent to the external endpoint. |
+| **Successful deliveries** | Messages for which the endpoint returned an HTTP 2xx response. |
+| **Profiles targeted** | Number of unique profiles reached. |
+| **Clicks** | Number of link clicks tracked in the payload. Requires a subdomain delegated for custom channels. |
+| **Errors / Failures** | Number of failed delivery attempts, with breakdown by error reason. |
+
+### Journey reports {#journey-reports}
+
+To view delivery data for a custom channel action in a journey:
+
+1. Open the journey from the **[!UICONTROL Journeys]** list.
+1. Click **[!UICONTROL View report]** in the top-right area.
+   * **[!UICONTROL Live report]** – Data for the last 24 hours.
+   * **[!UICONTROL All time]** – Full lifetime data via Customer Journey Analytics (CJA).
+
+### Campaign reports {#campaign-reports}
+
+To view delivery data for a custom channel campaign:
+
+1. Open the campaign from the **[!UICONTROL Campaigns]** list.
+1. Click **[!UICONTROL Reports]** in the top-right area.
+
+The campaign report includes execution count, successful deliveries, errors, and click data (if link tracking is enabled).
+
+### Monitoring and observability {#monitoring}
+
+Throughput and error charts are available at both the **endpoint level** and the **channel level**, accessible from the channel detail view in the Channel Builder. These charts allow you to:
+
+* Visualize request throughput over time.
+* Identify error spikes and their causes (authentication failures, rate limiting, server errors).
+* Compare performance across multiple channels that share the same endpoint.
+
+## Troubleshooting {#troubleshooting}
+
+| Symptom | Possible cause | Resolution |
+|---------|----------------|------------|
+| **HTTP 401 / 403 errors** | Authentication failure — credentials expired or incorrect. | Update the credentials in **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL API credentials]**. |
+| **HTTP 429 errors** | External endpoint is throttling requests from [!DNL Journey Optimizer]. | Review your endpoint's rate limits. Reduce the throttling setting in the Channel Builder policy configuration. |
+| **HTTP 5xx errors** | External system is down or returning server errors. | Check your external system's health dashboard. Configure error paths on the journey action activity to handle transient failures gracefully. |
+| **Unresolved personalization tokens** | Expression references an attribute not present on the profile. | Verify the XDM attribute path is correct. Add a default value fallback: `{{profile.person.name.firstName \| default("Valued Customer")}}`. |
+| **Required field validation error** | A required payload field has no value at authoring time. | Ensure all required fields are populated in the content editor. Alternatively, remove the required constraint in the Channel Builder if the field is truly optional. |
+
+## Related resources {#related}
+
+* [Get started with custom channels](get-started-custom-channel.md)
+* [Configure a custom channel](custom-channel-configuration.md)
+* [Global report overview](../reports/report-gs-cja.md)
+* [Journey live report](../reports/live-report.md)
+* [Permissions reference](../administration/ootb-permissions.md)

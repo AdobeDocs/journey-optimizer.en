@@ -1,0 +1,178 @@
+---
+title: Configure a custom channel
+description: Learn how to use the Channel Builder in Adobe Journey Optimizer to create and configure a custom channel, manage API credentials, and create a channel configuration.
+feature: Custom Channel
+topic: Content Management
+role: Admin
+level: Experienced
+---
+
+# Configure a custom channel {#custom-channel-configuration}
+
+Before marketers can use a custom channel in campaigns or journeys, an administrator must complete the following steps:
+
+1. **Create the custom channel** in the Channel Builder.
+1. **Set up API credentials** (if the channel uses authentication).
+1. **Delegate a subdomain** (optional — required for link tracking).
+1. **Create a channel configuration** linked to the custom channel.
+
+>[!NOTE]
+>
+>Before you begin, review the [prerequisites and guardrails](custom-channel-prerequisites.md) for custom channels.
+
+## Step 1: Create a custom channel {#create-custom-channel}
+
+The **Channel Builder** is the central interface for defining new custom channels. To access it, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** in the left navigation rail, then select **[!UICONTROL Custom channels]** under the **[!UICONTROL CHANNEL BUILDER]** section.
+
+The inventory lists all custom channels in your sandbox with the following columns: **Channel display name**, **Authentication type**, **Created by**, **Last modified date**, and **Status** (Draft / Active / Archived).
+
+Click **[!UICONTROL Create custom channel]** to open the channel creation form.
+
+### General settings {#general-settings}
+
+1. Enter a **[!UICONTROL Channel name]** (required). This name appears in the Journeys canvas, Campaign action selector, and Orchestrated Campaigns channel list.
+
+1. Enter an optional **[!UICONTROL Description]**.
+
+1. Optionally, assign **[!UICONTROL Access labels]** to restrict access to this channel based on data usage policies.
+
+1. Upload a **[!UICONTROL Channel icon]** (SVG format). This icon is displayed next to the channel name in the Journeys canvas. If no icon is uploaded, a default icon is used.
+
+### Endpoint configuration {#endpoint-configuration}
+
+1. In the **[!UICONTROL Endpoint configuration]** section, enter the **[!UICONTROL Host]** URL of your external messaging system (required). The HTTP method is fixed to **POST**.
+
+1. Add **[!UICONTROL Headers]** as needed. At minimum, `Content-Type` and `Charset` are available as default headers. For each header, define whether its value is:
+
+   * **[!UICONTROL Constant]** – A static value set once and included in every request.
+   * **[!UICONTROL Variable]** – A value that can be set or overridden at the **channel configuration** level. If a default value is entered here, it is used unless overridden in the channel configuration.
+
+1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Variable query parameters are appended to the endpoint URL dynamically at send time.
+
+### Policy configuration {#policy-configuration}
+
+In the **[!UICONTROL Policy configuration]** section, define how [!DNL Journey Optimizer] handles request throughput and failures:
+
+* **[!UICONTROL Enable throttling]** – Enabled by default. Set the maximum number of requests per second (default: **5,000 req/sec**).
+* **[!UICONTROL Timeout]** – Default: **5,000 milliseconds**.
+* **[!UICONTROL Enable retry]** – Enabled by default. Set the **[!UICONTROL Retry count]** (default: **3**, configurable range: 0–10).
+
+>[!NOTE]
+>
+>The UX for policy configuration will be improved in a future update.
+
+### Authentication settings {#authentication-settings}
+
+Select the **[!UICONTROL Authentication type]** required by your endpoint:
+
+* **[!UICONTROL None]** – The request is sent without credentials.
+* **[!UICONTROL API Key]** – Provide the key name, value, and location (query parameter or header).
+* **[!UICONTROL Basic]** – Provide a username and password.
+* **[!UICONTROL OAuth 2.0]** – Configure client credentials for OAuth 2.0 authentication.
+* **[!UICONTROL Custom]** – Define the authentication configuration using a JSON payload. A **[!UICONTROL Test authentication]** button is available to validate the setup.
+
+>[!NOTE]
+>
+>When the authentication type is anything other than **None**, AJO automatically generates an initial set of API credentials for this channel when it is activated. Additional credentials can be created in the API credentials inventory. [Learn more](#api-credentials)
+
+### Payload (Authoring) configuration {#payload-configuration}
+
+The payload configuration defines the structure of the message payload and which fields marketers can author and personalize.
+
+1. In the **[!UICONTROL Authoring settings]** section, choose how to define the payload:
+
+   * **Paste a sample payload** – Paste a representative JSON object. [!DNL Journey Optimizer] automatically infers a schema from it.
+   * **Import a JSON schema** – Upload a complete JSON schema file.
+
+1. After the schema is generated, AJO displays all detected fields in a form view. For each field, configure the following metadata:
+
+   | Setting | Description |
+   |---------|-------------|
+   | **[!UICONTROL Type]** | Read-only, derived from the payload. Supported types: `string`, `integer`, `decimal`, `boolean`, `dateTime`, `dateTimeOnly`, `dateOnly`, `listObject`, `listString`, `listInteger`, `listDecimal`, `listBoolean`, `listDateTime`, `listDateTimeOnly`, `listDateOnly`. |
+   | **[!UICONTROL Default value]** | Optional. Used if no personalized value is provided at authoring time. |
+   | **[!UICONTROL Required]** | If enabled, the field must have a value when the channel is used in a campaign or journey. Missing required fields trigger a validation error that prevents saving or activating. |
+   | **[!UICONTROL Channel config]** | If enabled, the field appears in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). |
+
+   Nested fields are represented using dot notation (for example, `image.id`).
+
+### Test the connection {#test-connection}
+
+While the channel is in **[!UICONTROL Draft]** status, use the **[!UICONTROL Test]** button to send a test request to your endpoint and validate the end-to-end connection. Check your external system's logs to confirm that the request was received with the expected authentication and payload.
+
+### Save or activate {#save-activate}
+
+* Click **[!UICONTROL Save as draft]** to save your progress without making the channel available.
+* Click **[!UICONTROL Activate]** to make the channel available for use in channel configurations, campaigns, and journeys.
+
+>[!IMPORTANT]
+>
+>After a channel is activated, only the following fields remain editable: **name**, **description**, **icon**, **throttling configuration**, and **retry configuration**. Endpoint URL, headers, query parameters, authentication, and payload structure are locked.
+>
+>An activated channel can be **archived** (hidden from all selection drop-downs while existing journeys and campaigns continue to function), but it cannot be **deleted**. Deletion is only possible while the channel is in Draft status.
+
+## Step 2: Manage API credentials {#api-credentials}
+
+When a custom channel is created with an authentication type other than **None**, an initial set of API credentials is automatically generated when the channel is activated. You can view and manage credentials from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL API credentials]**.
+
+To create additional credentials for the same channel (for example, for different brands or use cases):
+
+1. Click **[!UICONTROL Create API credentials]**.
+1. Select the **[!UICONTROL Channel]** for which you are creating credentials. Only custom channels with a non-None authentication type appear in this list.
+1. The **[!UICONTROL Authentication type]** field is read-only and reflects the authentication method defined for the channel.
+1. Fill in the authentication-specific fields:
+   * **Basic** – Username and password.
+   * **API Key** – Key name, value, and location (query parameter or header).
+   * **OAuth 2.0** – Client ID, client secret, and token endpoint.
+   * **Custom** – The fields defined in the channel's authentication payload.
+1. Click **[!UICONTROL Save]**.
+
+Having multiple credentials for the same channel lets you attach different authentication values to different channel configurations without duplicating the channel definition.
+
+## Step 3: Delegate a subdomain (optional) {#subdomain-delegation}
+
+Custom channel subdomains enable link tracking within message payloads. They are distinct from email and SMS subdomains and maintained in their own inventory.
+
+To delegate a subdomain for custom channels:
+
+1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Subdomains]**.
+1. Select the **[!UICONTROL Custom channel]** tab.
+1. Follow the subdomain delegation steps to configure your domain.
+
+## Step 4: Create a channel configuration {#create-channel-config}
+
+A channel configuration links your custom channel to a named, reusable preset that marketers select when building campaigns and journeys.
+
+To create a channel configuration for a custom channel:
+
+1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel configurations]** and click **[!UICONTROL Create channel configuration]**.
+
+1. Fill in the following fields:
+
+   * **[!UICONTROL Name]** (required) – A unique, descriptive name visible to campaign and journey practitioners.
+   * **[!UICONTROL Description]** – Optional.
+   * **[!UICONTROL Access labels]** – Optional. Restrict access using data governance labels.
+   * **[!UICONTROL Marketing actions]** – Assign the appropriate marketing actions to enforce consent and data governance policies.
+   * **[!UICONTROL Channel]** (required) – Select one of your activated custom channels from the drop-down.
+   * **[!UICONTROL Communication type]** (required) – **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]**.
+
+1. If the selected channel uses authentication (type is not **None**), the **[!UICONTROL API credentials]** field appears. Select the credentials to use for this configuration.
+
+1. If the channel has headers or query parameters defined as **Variable**, the **[!UICONTROL Endpoint dynamic parameters]** section appears. Enter the value for each variable parameter. You can use the personalization editor to inject dynamic values (for example, a user identifier resolved from the profile).
+
+1. If the channel has payload fields with the **[!UICONTROL Channel config]** checkbox enabled, those fields appear in the **[!UICONTROL Payload fields]** section. Configure a value for each field as appropriate for this configuration.
+
+1. For Orchestrated Campaigns, complete the **[!UICONTROL Execution details]** section to map profile dimensions and specify the execution address.
+
+1. Click **[!UICONTROL Submit]** to save and activate the channel configuration.
+
+>[!CAUTION]
+>
+>If your organization uses approval policies, you may need to request approval before activating journeys or campaigns that use this channel configuration. [Learn more](../test-approve/gs-approval.md)
+
+## Next steps {#next-steps}
+
+Your custom channel is now fully configured. Marketers can start using it to build customer experiences:
+
+* [Create custom channel experiences](create-custom-channel.md)
+* [Test your custom channel](test-custom-channel.md)
+* [Manage and monitor custom channels](manage-custom-channel.md)

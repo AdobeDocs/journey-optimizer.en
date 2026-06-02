@@ -429,6 +429,15 @@ solution: Journey Optimizer
     + Configure Live activity channel {#configure}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
       + [Configure Live activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
+  + Custom channels {#custom-channel}
+    + [Get started with custom channels](using/custom-channel/get-started-custom-channel.md)
+    + Configure custom channel {#configure-custom-channel}
+      + [Guardrails & prerequisites](using/custom-channel/custom-channel-prerequisites.md)
+      + [Configure a custom channel](using/custom-channel/custom-channel-configuration.md)
+    + Create custom channel experiences {#create-custom-channel-experiences}
+      + [Create custom channel experiences](using/custom-channel/create-custom-channel.md)
+      + [Test custom channel experiences](using/custom-channel/test-custom-channel.md)
+      + [Manage and monitor custom channels](using/custom-channel/manage-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
