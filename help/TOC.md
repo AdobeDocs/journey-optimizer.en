@@ -18,7 +18,7 @@ solution: Journey Optimizer
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
     + [2026](using/rn/release-notes-2026.md)
     + [2025](using/rn/release-notes-2025.md)
-    + [2024](using/rn/release-notes-2024.md)
+    + {hide-from-toc} [2024](using/rn/release-notes-2024.md)
     + {hide-from-toc} [2023](using/rn/release-notes-2023.md)
     + {hide-from-toc} [2022](using/rn/release-notes-2022.md)
     + {hide-from-toc} [2021](using/rn/release-notes-2021.md)
@@ -32,6 +32,8 @@ solution: Journey Optimizer
     + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
     + [Guardrails & limitations](using/start/guardrails.md)
+    + {hide-from-toc} [Capabilities by package](using/start/ajo-packages.md)
+    + {hide-from-toc} [Packages and capabilities (v2)](using/start/ajo-packages-v2.md)
   + Get started by role {#by-role}
     + [Roles and responsibilities](using/start/quick-start.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
