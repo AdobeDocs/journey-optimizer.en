@@ -188,7 +188,7 @@ Two types of alerts can happen:
 
     * **[!UICONTROL Empty link is present in email body]**: check that all the links in your email are correct. Learn how to manage content and links in [this section](content-from-scratch.md).
 
-    * **[!UICONTROL Email size has exceeded the limit of 100KB]**: for optimal delivery, make sure the size of your email does not exceed 100KB. Learn how to edit email content in [this section](content-from-scratch.md).
+    * **[!UICONTROL Email size has exceeded the limit of 100KB]**: for optimal delivery, make sure the size of your email does not exceed 100KB. To reduce the HTML size, use the **[!UICONTROL Optimize HTML size]** option. [Learn more](#optimize-html-size)
 
 * **Errors** prevent you from testing or activating the journey/campaign as long as they are not resolved, such as:
 
@@ -203,6 +203,33 @@ Two types of alerts can happen:
 >[!CAUTION]
 >
 >To be able to test or activate the journey/campaign using the email, you must resolve all **error** alerts.
+
+## Optimize email HTML size {#optimize-html-size}
+
+>[!CONTEXTUALHELP]
+>id="ajo_email_optimize_html_size"
+>title="Optimize HTML size"
+>abstract="Enable this option to compress your email HTML during publishing by removing unnecessary whitespace, indentation, and non-essential comments. This helps prevent email clipping in clients such as Gmail, which truncates messages exceeding 100 KB."
+
+Email clients such as Gmail clip messages that exceed 100 KB, which prevents recipients from viewing the full email content. To help manage this, Journey Optimizer provides an **[!UICONTROL Optimize HTML size]** option that compresses your email HTML during the publishing process.
+
+This optimization is not applied automatically — you must manually enable it in the email editor.
+
+When enabled, the optimization:
+
+* Removes unnecessary whitespace, indentation, and non-essential HTML and CSS comments from the email HTML
+* Preserves MSO comments required for correct rendering in Microsoft Outlook
+* Does not alter your actual content, images, or videos
+
+>[!NOTE]
+>
+>The reduction in email size depends on the original HTML structure of your email. If the content is already compact or the email payload is very large, the reduction may be minimal and may not fully prevent clipping in all cases.
+
+After sending a proof, the actual rendered HTML size of your email is displayed on the proof screen. Use this information to evaluate the impact of the optimization and confirm whether the email remains within the recommended 100 KB threshold before sending to your audience.
+
+### Multilingual emails {#optimize-html-multilingual}
+
+When working with [multilingual email variants](../content-management/multilingual-gs.md), enabling the **[!UICONTROL Optimize HTML size]** option for one locale automatically applies it to all other locales within the same treatment. The option is not applied to other treatments, as each treatment is considered a separate message.
 
 ## Check and send your email
 
