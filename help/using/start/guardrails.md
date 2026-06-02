@@ -51,35 +51,31 @@ Entitlements, product limitations and performance guardrails are listed in [Adob
 
 Use this table to look up the most critical numeric limits before you build or publish. Full details and context are in the sections below.
 
-| Area | Limit | Value | Type |
-|---|---|---|---|
-| **Journeys** | Max activities per journey | **50** | Hard limit |
-| **Journeys** | Max live / paused / dry-run journeys | **100** | Soft limit (extendable) |
-| **Journeys** | Journey instance size | **1 MB** | Hard limit |
-| **Journeys** | Journey payload size (publish) | **2 MB** (warn at 90%) | Hard limit |
-| **Journeys** | Global journey timeout | **91 days** | Hard limit |
-| **Journeys** | Pending event queue per profile | **10 events** | Hard limit |
-| **Journeys** | Concurrent Read Audience instances | **5** across all sandboxes | Hard limit |
-| **Journeys** | Read Audience sandbox throughput | **20,000 profiles/sec** (shared) | Hard limit |
-| **Journeys** | Read Audience job timeout | **12 hours** | Hard limit |
-| **Channels** | Inbound requests per second | **5,000 RPS** | Hard limit |
-| **Channels** | Max active inbound actions | **500** | Hard limit |
-| **Channels** | Transactional messages/sec (campaigns) | **500** | Hard limit |
-| **Channels** | Inbound journey events per second | **5,000** | Hard limit |
-| **Custom actions** | Calls per minute (response < 0.75 s) | **300,000 / min** per host/sandbox | Hard limit (configurable) |
-| **Custom actions** | Calls per 30 s (response > 0.75 s) | **150,000 / 30 s** per host/sandbox | Hard limit (configurable) |
-| **Content** | Email message content at publish | **2 MB** (author under 1 MB) | Hard limit |
-| **Content** | In-app message content | **2 MB** | Hard limit |
-| **Content** | Visual fragment size | **100 KB** | Hard limit |
-| **Content** | Expression fragment size | **200 KB** | Hard limit |
-| **Content** | Journey fragment nodes | **20 nodes/fragment**, 200 active/sandbox | Hard limit |
-| **Audiences** | Audience compositions per sandbox | **10** | Hard limit |
-| **Datasets** | Profile store TTL (new orgs/sandboxes) | **90 days** | Hard limit |
-| **Datasets** | Data lake TTL (new orgs/sandboxes) | **13 months** | Hard limit |
-
->[!NOTE]
->
->Limits marked **Hard limit (configurable)** can be raised by contacting your Adobe representative or Adobe Customer Care.
+| Area | Limit | Value |
+|---|---|---|
+| **Journeys** | [Max activities per journey](#journeys-guardrails-journeys) | **50** |
+| **Journeys** | [Max live / paused / dry-run journeys](#journeys-guardrails-journeys) | **100** |
+| **Journeys** | [Journey instance size](#journeys-guardrails-journeys) | **1 MB** |
+| **Journeys** | [Journey payload size (publish)](#journey-payload-size) | **2 MB** (warn at 90%) |
+| **Journeys** | [Global journey timeout](#journeys-guardrails-journeys) | **91 days** |
+| **Journeys** | [Pending event queue per profile](#journeys-guardrails-journeys) | **10 events** |
+| **Journeys** | [Concurrent Read Audience instances](#read-segment-g) | **5** across all sandboxes |
+| **Journeys** | [Read Audience sandbox throughput](#read-segment-g) | **20,000 profiles/sec** (shared) |
+| **Journeys** | [Read Audience job timeout](#read-segment-g) | **12 hours** |
+| **Channels** | [Inbound requests per second](#inbound-guardrails) | **5,000 RPS** |
+| **Channels** | [Max active inbound actions](#inbound-guardrails) | **500** |
+| **Channels** | [Transactional messages/sec (campaigns)](#transactional-message-guardrails) | **500** |
+| **Channels** | [Inbound journey events per second](#events-g) | **5,000** |
+| **Custom actions** | [Calls per minute (response < 0.75 s)](#custom-actions-g) | **300,000 / min** per host/sandbox |
+| **Custom actions** | [Calls per 30 s (response > 0.75 s)](#custom-actions-g) | **150,000 / 30 s** per host/sandbox |
+| **Content** | [Email message content at publish](#message-content-size) | **2 MB** (author under 1 MB) |
+| **Content** | [In-app message content](#in-app-activity-limitations) | **2 MB** |
+| **Content** | [Visual fragment size](#fragments-guardrails) | **100 KB** |
+| **Content** | [Expression fragment size](#fragments-guardrails) | **200 KB** |
+| **Content** | [Journey fragment nodes](#fragments-journey-g) | **20 nodes/fragment**, 200 active/sandbox |
+| **Audiences** | [Audience compositions per sandbox](#audience) | **10** |
+| **Datasets** | [Profile store TTL (new orgs/sandboxes)](#datasets-guardrails) | **90 days** |
+| **Datasets** | [Data lake TTL (new orgs/sandboxes)](#datasets-guardrails) | **13 months** |
 
 
 ## System & Platform {#system-platform}
