@@ -81,7 +81,6 @@ Use this table to look up the most critical numeric limits before you build or p
 >
 >Limits marked **Hard limit (configurable)** can be raised by contacting your Adobe representative or Adobe Customer Care.
 
----
 
 ## System & Platform {#system-platform}
 
