@@ -1065,7 +1065,7 @@ To subscribe:
 * Under **Notifications**, find **Journey Optimizer New releases**
 * Enable In-app and email notifications
 
-![](assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
+![](assets/do-not-localize/pulse-notif.png){width="70%"}
 
 
 ### Change in journey conditions {#ee-change@}

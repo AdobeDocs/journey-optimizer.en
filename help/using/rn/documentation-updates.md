@@ -27,6 +27,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The limitations and best practices when using dynamic content in visual fragments have been merged into a single **Manage conditional content in fragments** section for improved readability. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
 
+* Two new high-level permissions have been added: **Manage Key Registry**, which allows users to view, create, rotate, and revoke keys in the key registry, and **View Key Registry**, which allows users to view the key registry listing and key details. [Read more](../administration/high-low-permissions.md#administration-permissions) 
+
 * The **Use decision policies in messages** documentation now describes how to view the full structure of a decision policy from the campaign summary and copy a JSON technical summary to the clipboard for troubleshooting. [Read more](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
 
 * The legacy **Decision management** [Auto-optimization models](../offers/ranking/auto-optimization-model.md) page has been rewritten to align with the updated Decisioning documentation, including reinforcement learning overview, requirements and limitations, balancing optimization with learning, and Thompson sampling details. [Read more](../offers/ranking/auto-optimization-model.md)

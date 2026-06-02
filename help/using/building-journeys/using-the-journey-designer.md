@@ -79,7 +79,7 @@ The **toolbar**, located in the top right corner of the canvas, allows you to sh
 
 <!--and show/hide timeout and error paths-->
 
-![Journey toolbar with zoom, grid, and screenshot controls](assets/toolbar.png){width="70%" align="left"}
+![Journey toolbar with zoom, grid, and screenshot controls](assets/toolbar.png){width="70%"}
 
 The **activity configuration pane** appears when you click on an activity in the palette. Fill in the required fields. Click the **[!UICONTROL Delete]** icon to delete the activity. Click **[!UICONTROL Cancel]** to cancel the modifications or **[!UICONTROL Ok]** to confirm. To delete activities, you can also select one activity (or several) and press the backspace key. Pressing the escape key will close the activity configuration pane. 
 

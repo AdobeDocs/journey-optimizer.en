@@ -12,8 +12,6 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
@@ -162,7 +160,7 @@ To configure the campaign schedule, follow these steps:
 
 In the following example, the activity is configured so that the Orchestrated campaign runs twice a day at 9 and 12 AM, every day of the week from October 1st, 2025 to January 1st, 2026.
 
-![Scheduler configured to run the campaign twice a day at 9 and 12 AM](assets/scheduler-sample.png){width="50%" align="left"}
+![Scheduler configured to run the campaign twice a day at 9 and 12 AM](assets/scheduler-sample.png){width="50%"}
 
 ## Next steps {#next}
 

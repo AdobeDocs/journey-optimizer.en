@@ -103,6 +103,7 @@ The following capabilities and improvements have been added to journeys in this 
 
 The following journey capabilities are expected in the upcoming days or weeks.
 
+<!--
 <table>
 <thead>
 <tr>
@@ -137,6 +138,7 @@ The following journey capabilities are expected in the upcoming days or weeks.
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>
@@ -215,6 +217,7 @@ The following capabilities and improvements have been added to orchestrated camp
 
   Availability date: May 20, 2026
 
+<!--
 +++ Coming soon — **Information below is subject to change.**
 
 The following orchestrated campaign capability is expected in the upcoming days or weeks.
@@ -247,6 +250,7 @@ The following orchestrated campaign capability is expected in the upcoming days 
   Availability date: Early June, 2026
 
 +++
+-->
 
 ### Campaigns {#may-26-campaigns}
 
@@ -254,13 +258,15 @@ The following orchestrated campaign capability is expected in the upcoming days 
 
   Availability date: June 1, 2026
 
+<!--
 +++ Coming soon — **Information below is subject to change.**
 
 * **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
 
-  Availability date: May 22, 2026
+  Availability date: Early June, 2026
 
 +++
+-->
 
 ### Decisioning {#may-26-decisioning}
 
@@ -313,7 +319,7 @@ The following Decisioning capability is expected in the upcoming days or weeks.
 <td>
 <p>You can now add Decision policies into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content for each audience member. Direct Mail decisioning also supports batch decisioning use cases, enabling you to export the corresponding offer items for every profile in a given Adobe Experience Platform audience.</p>
 <!--<p><img src="assets/do-not-localize/exd-dm.gif"></p>-->
-<p>Availability date: June 1, 2026</p>
+<p>Availability date: Early June, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -453,6 +459,15 @@ The following capabilities and improvements have been added to content managemen
 
 ### Administration {#may-26-admin}
 
+* **URL parameter encryption** - You can now encrypt URL parameters in tracking and landing page links added to your email messages. This provides an additional layer of security for sensitive parameter data. Previously released in Limited Availability, this capability is now available to all environments (General Availability). [Read more](../personalization/url-parameter-encryption.md)
+
+  Availability date: June 1, 2026
+
+* **New permissions for key registry** - Two new permissions are now required to access and manage the keys needed for URL parameter encryption: **Manage Key Registry** and **View Key Registry**. [Read more](../administration/high-low-permissions.md#administration-permissions)
+
+  Availability date: June 1, 2026
+
+<!--
 +++ Coming soon — **Information below is subject to change.**
 
 * **Message Feedback Event Dataset moving to batch ingestion** - The `AJO Message Feedback Event Dataset` is transitioning from streaming to batch ingestion mode. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
@@ -460,16 +475,7 @@ The following capabilities and improvements have been added to content managemen
   Availability date: June 1, 2026
 
 +++
-
-### Reporting {#may-26-reporting}
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Exclude bot clicks for email and SMS reporting** - New estimated metrics are now available to help filter out non-human (bot) interactions from email and SMS reporting. These include estimated clicks, click-through rates (CTR), and click-to-open rates (CTOR), providing a more accurate view of real customer engagement. Existing metrics remain unchanged, and these new metrics can be used alongside current reporting for improved analysis.
-
-  Availability date: June 1, 2026
-
-+++
+-->
 
 ### Usability improvements {#may-26-usability}
 
@@ -505,6 +511,6 @@ The following usability improvements were also released in May 2026.
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
 
-  Availability date: June 2, 2026
+  Availability date: Early June, 2026
 
 +++

@@ -87,15 +87,16 @@ During the Dry Run, the journey runs in simulation mode, applying the following 
 * **Channel action** nodes including Email, SMS or Push notifications are not executed. 
 * **Custom actions** are disabled during Dry run, and their responses are set to null.
 
-    To enhance readability, custom actions and channel activities appear greyed out during the execution of a Dry run.
+  To enhance readability, custom actions and channel activities appear greyed out during the execution of a Dry run.
 
-    ![Greyed out action activities in a Dry run journey](assets/dry-run-greyed-activities.png){width="80%" align="left"}
+  ![Greyed out action activities in a Dry run journey](assets/dry-run-greyed-activities.png){width="80%"}
 
 * **Data sources**, including external data sources, and **Wait** activities are disabled by default during Dry run. However you can change this behavior [when activating the Dry run mode](#journey-dry-run-start).
 
 * **Reaction** nodes are not executed: all profiles entering it will exit with success. However, the following priority rules apply:
-    * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
-    * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
+
+  * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
+  * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
 
 >[!CAUTION]
 >
@@ -116,7 +117,7 @@ To activate Dry run, follow these steps:
 
 1. Select the if you want to enable or disable **Wait** activities and **External data sources** calls, and confirm the Dry run publication.
 
-    ![Confirm the journey dry run publication](assets/dry-run-publish.png){width="50%" align="left"}
+    ![Confirm the journey dry run publication](assets/dry-run-publish.png){width="50%"}
 
     A status message, **[!UICONTROL Activating Dry run]**, appears while the transition is happening.
 
@@ -150,7 +151,7 @@ Dry run journeys can also be stopped manually. To deactivate the Dry run mode, f
 1. Select the **[!UICONTROL Close]** button to end the test.
     Links to last 24h and all time reports are available in the confirmation screen.
 
-    ![Stop the journey dry run execution](assets/dry-run-stop.png){width="50%" align="left"}
+    ![Stop the journey dry run execution](assets/dry-run-stop.png){width="50%"}
 
 1. Click **[!UICONTROL Back to Draft]** to confirm.
 
