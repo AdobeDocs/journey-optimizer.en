@@ -215,6 +215,8 @@ Email clients such as Gmail clip messages that exceed 100 KB, which prevents rec
 
 This optimization is not applied automatically — you must manually enable it in the email editor.
 
+![](assets/email-optimize-html-size.png)
+
 When enabled, the optimization:
 
 * Removes unnecessary whitespace, indentation, and non-essential HTML and CSS comments from the email HTML
