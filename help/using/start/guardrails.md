@@ -63,135 +63,6 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 
 This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
 
-## Channels & Messaging {#channel-guardrails}
-
-This section covers guardrails for all communication channels including email, SMS, inbound channels (web, in-app, code-based, content cards), and transactional messages.
-
->[!NOTE]
->
->In rare circumstances, temporary outages in a specific region can result in valid profiles being excluded from journeys, or mails wrongly marked as bounces. Once services are restored, re-check journey logs, verify consent profile fields, and re-publish the journey if needed. In the case of an ISP outage, learn how to remove profiles from the suppression list in [this section](../configuration/manage-suppression-list.md#remove-from-suppression-list).
-
-### Email guardrails {#message-guardrails}
-
-The following guardrails apply to the [email channel](../email/get-started-email.md):
-
-* You cannot use the same sending domain to send out email messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
-
-When designing email messages, the system checks for key settings and displays alerts for warnings (recommendations and best practices) and errors (blocking issues that prevent testing or activation). Learn more about email alerts and validation requirements in [this section](../email/create-email.md#check-email-alerts).
-
-#### Message content size for journey publication {#message-content-size}
-
-When publishing journeys that contain email messages, the total message content size must not exceed **2 MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
-
->[!CAUTION]
->
->If the final processed message content exceeds **2 MB**, journey publication will fail. Keep your authored message content well below 2 MB — ideally under **1 MB** — to allow a buffer of 300–400 KB for backend processing overhead.
-
-**Best practices to prevent publication failures:**
-
-* Keep authored email content under **1 MB**
-* Minimize the number of content variants
-* Optimize and compress images before adding them to messages
-* Remove unused assets and unnecessary HTML elements
-* Test message size before publishing journeys to production
-
-If journey publication fails due to content size, reduce your message content and republish the journey.
-
-### SMS guardrails {#sms-guardrails}
-
-The following guardrails apply to the [SMS channel](../mobile/get-started-mobile.md):
-
-* Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
-* Message feedback syncing is not currently available for MMS.
-* Consent management operates at the SMS channel level for MMS.
-
-### Inbound channel guardrails {#inbound-guardrails}
-
-* To use [code-based experience](../code-based/get-started-code-based.md) actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed on [this page](../code-based/code-based-prerequisites.md).
-
-* To be able to access and author [web pages](../web/get-started-web.md) in the [!DNL Journey Optimizer] user interface, follow the prerequisites listed on [this page](../web/web-prerequisites.md).
-
-* To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], follow the delivery prerequisites listed on [this page](../in-app/inapp-configuration.md).
-
-* For Adobe Journey Optimizer to correctly display content cards, you must configure the Adobe Experience Platform settings listed on [this page](../content-card/content-card-configuration-prereq.md).
-
-* Journey Optimizer supports a peak volume of **5,000 inbound requests per second**. This guardrail applies to all inbound requests, which can originate from any of the Journey Optimizer supported inbound channels ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)).
-
-* Journey Optimizer supports a maximum of **500 active inbound actions** at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
-
-#### Profile management with inbound channels {#profile-management-inbound}
-
-[!DNL Journey Optimizer] inbound channels can target pseudonymous profiles, meaning profiles that are not authenticated or not known yet because they have not been engaged before on other channels. This is the case for example when targeting all visitors or audiences based on temporary IDs like ECID.
-
-This increases your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of engageable profiles in the [license usage dashboard](../audience/license-usage.md).
-
-To keep your engageable profiles within reasonable limits, Adobe recommends setting a Time-To-Live (TTL) to automatically delete pseudonymous profiles from the Real-Time Customer Profile if they haven't been seen or engaged within a specific time window. Adobe recommends setting the TTL value to **14 days** to match the current Edge profile TTL.
-
->[!NOTE]
->
->Learn how to configure data expiration for pseudonymous profiles in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
-
-### Transactional message guardrails {#transactional-message-guardrails}
-
-Journey Optimizer supports a peak volume of **500 transactional messages per second** in campaigns.
-
-## Content & Assets {#content-assets}
-
-This section covers guardrails for content creation and management, including landing pages, subdomains, and fragments.
-
-### AI Assistant guardrails {#ai-assistant-g}
-
-Guardrails and limitations for **AI Assistant content generation** — including supported channels (email, push, web, SMS) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
-
-### Landing pages guardrails {#lp-guardrails}
-
-The following guardrails apply to the [landing pages](../landing-pages/get-started-lp.md):
-
-* Only one **Form** component can be used in a single primary page.
-* The **Form** component cannot be used in subpages.
-* You cannot add a preheader to a landing page.
-* You cannot select the **Code your own** option when designing a landing primary page.
-
-### Subdomains guardrails {#subdomain-guardrails}
-
-The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
-
-### Fragments guardrails {#fragments-guardrails}
-
-The following guardrails apply to the [fragments](../content-management/fragments.md):
-
-* To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
-* Visual fragments are only available for the Email channel.
-* Expression fragments are not available for the In-app channel.
-* Visual fragments cannot exceed **100 KB**. Expression fragments cannot exceed **200 KB**.
-* To use a fragment in a journey or campaign, it must be in the **Live** status.
-* [Contextual attributes](../personalization/personalization-build-expressions.md) are not supported within fragments.
-* Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
-* When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
-
-## Audiences & Profiles {#audiences-profiles}
-
-This section covers guardrails for audience management, profile handling, and engageable profile considerations.
-
-### Audience and profile guardrails {#audience}
-
-* You can publish up to **10 audience compositions** in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
-
-    Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
-
-* When ingesting data, emails are case-sensitive. It means that duplicate profiles may be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting the corresponding recipient in your [!DNL Journey Optimizer] journeys and campaigns.
-
-* When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
-
-## Decision Management {#decision-management}
-
-### Decisioning & Decision management guardrails {#decisioning-guardrails}
-
-Guardrails and limitations to keep in mind when working with Decisioning or Decision management are detailed in these the Decisioning & Decision management sections:
-
-* [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
-* [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
-
 ## Journeys {#journeys-guardrails}
 
 This section covers guardrails and limitations for journeys, including general journey limitations, journey components (actions, events, data sources), journey activities, and specific features like custom actions and expression editor.
@@ -262,15 +133,6 @@ For customers using the **Select** license package, the following additional lim
 >
 >**What this means for you:** If you're on the Select package and need branching logic, wait activities, or multiple actions, you must use a Read Audience journey instead, or contact your Adobe representative about upgrading your package.
 
-### General actions {#general-actions-g}
-
-The following guardrails apply to the [Actions](../building-journeys/about-journey-activities.md) in your journeys:
-
-* Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
-* The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more on [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
-* You cannot place two actions in parallel, you must add them one after the other.
-* A profile cannot be present multiple times in the same journey, at the same time, for all active [versions of the journey](../building-journeys/publish-journey.md#journey-create-new-version). If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
-
 ### Journey versions {#journey-versions-g}
 
 The following guardrails apply to the [Journey versions](../start/user-interface.md):
@@ -282,23 +144,17 @@ The following guardrails apply to the [Journey versions](../start/user-interface
 * A journey starting with a **Read Audience** cannot start with another event in next versions.
 * You cannot create a new version of a read audience journey with incremental read. You must duplicate the journey.
 
-### Custom actions {#custom-actions-g}
+### Journeys and profile creation {#journeys-limitation-profile-creation}
 
-The following guardrails apply to the [Custom Actions](../action/action.md) in your journeys:
+There is a delay associated to API based profile creation/update in Adobe Experience Platform. The Service Level Target (SLT) in terms of latency is < 1 min from ingestion to Unified Profile for 95th percentile of requests, at a volume of **20K Requests per second (RPS)**.
 
-* A capping limit of **300,000 calls over one minute** is defined for all custom actions, per host and per sandbox. This cap is enforced as a sliding window per sandbox and per endpoint for endpoints with response times less than 0.75 seconds. For endpoints with response times greater than 0.75 seconds, a separate limit of **150,000 calls per 30 seconds** (also a sliding window) applies.
-* The custom action URL does not support dynamic parameters.
-* POST, PUT and GET call methods are supported.
-* The name of the query parameter or header must not start with "." or "$".
-* IP addresses are not allowed in URLs. Use hostnames instead.
-* Internal Adobe addresses (`.adobe.*`) are not allowed in URLs and APIs.
-* Built-in custom actions cannot be removed.
-* Custom actions support JSON format only when using request or response payloads. See [this page](../action/about-custom-action-configuration.md#custom-actions-limitations).
-* Any endpoint targeted by a custom action must support at least **200 TPS**. Be cautious that a throttling configuration cannot go below 200 TPS. Depending on your expected throughput, having a high response time could impact the actual throughput.
+If a journey is triggered simultaneously to a profile creation and immediately checks/retrieves information from Profile Service, it might not work properly.
 
->[!TIP]
->
->**What this means for you:** The default 300,000 calls/min cap protects your external endpoints from being overwhelmed by journey throughput. If your endpoint can handle more load, you can raise this limit using the [Capping API](../configuration/capping.md) or [Throttling API](../configuration/throttling.md). For a broader overview of how Journey Optimizer connects to external systems, see [this page](../configuration/external-systems.md). Contact your Adobe representative if you need a higher organizational limit.
+You can choose from one of these two solutions:
+
+* Add a wait activity after the first event, to give Adobe Experience Platform the time it needs to perform the ingestion to Profile Service.
+
+* Set up a journey that does not immediately leverage the profile. For example, if the journey is designed to confirm an account creation, the experience event could contain information needed to send the first confirmation message (first name, last name, email address, etc.).
 
 ### Events {#events-g}
 
@@ -322,17 +178,32 @@ The following guardrails apply to the [Data Sources](../datasource/about-data-so
 >
 >As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases.
 
-### Journeys and profile creation {#journeys-limitation-profile-creation}
+### General actions {#general-actions-g}
 
-There is a delay associated to API based profile creation/update in Adobe Experience Platform. The Service Level Target (SLT) in terms of latency is < 1 min from ingestion to Unified Profile for 95th percentile of requests, at a volume of **20K Requests per second (RPS)**.
+The following guardrails apply to the [Actions](../building-journeys/about-journey-activities.md) in your journeys:
 
-If a journey is triggered simultaneously to a profile creation and immediately checks/retrieves information from Profile Service, it might not work properly.
+* Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
+* The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more on [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
+* You cannot place two actions in parallel, you must add them one after the other.
+* A profile cannot be present multiple times in the same journey, at the same time, for all active [versions of the journey](../building-journeys/publish-journey.md#journey-create-new-version). If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
 
-You can choose from one of these two solutions:
+### Custom actions {#custom-actions-g}
 
-* Add a wait activity after the first event, to give Adobe Experience Platform the time it needs to perform the ingestion to Profile Service.
+The following guardrails apply to the [Custom Actions](../action/action.md) in your journeys:
 
-* Set up a journey that does not immediately leverage the profile. For example, if the journey is designed to confirm an account creation, the experience event could contain information needed to send the first confirmation message (first name, last name, email address, etc.).
+* A capping limit of **300,000 calls over one minute** is defined for all custom actions, per host and per sandbox. This cap is enforced as a sliding window per sandbox and per endpoint for endpoints with response times less than 0.75 seconds. For endpoints with response times greater than 0.75 seconds, a separate limit of **150,000 calls per 30 seconds** (also a sliding window) applies.
+* The custom action URL does not support dynamic parameters.
+* POST, PUT and GET call methods are supported.
+* The name of the query parameter or header must not start with "." or "$".
+* IP addresses are not allowed in URLs. Use hostnames instead.
+* Internal Adobe addresses (`.adobe.*`) are not allowed in URLs and APIs.
+* Built-in custom actions cannot be removed.
+* Custom actions support JSON format only when using request or response payloads. See [this page](../action/about-custom-action-configuration.md#custom-actions-limitations).
+* Any endpoint targeted by a custom action must support at least **200 TPS**. Be cautious that a throttling configuration cannot go below 200 TPS. Depending on your expected throughput, having a high response time could impact the actual throughput.
+
+>[!TIP]
+>
+>**What this means for you:** The default 300,000 calls/min cap protects your external endpoints from being overwhelmed by journey throughput. If your endpoint can handle more load, you can raise this limit using the [Capping API](../configuration/capping.md) or [Throttling API](../configuration/throttling.md). For a broader overview of how Journey Optimizer connects to external systems, see [this page](../configuration/external-systems.md). Contact your Adobe representative if you need a higher organizational limit.
 
 ### Supplemental identifiers {#supplemental}
 
@@ -443,6 +314,135 @@ Specific guardrails apply to **wave sending in journeys**, including a 2–10 wa
 #### Journey simulation {#simulation-g}
 
 Specific guardrails apply to **journey simulation**. They are listed on [this page](../building-journeys/simulate-journey.md#limitations).
+
+## Audiences & Profiles {#audiences-profiles}
+
+This section covers guardrails for audience management, profile handling, and engageable profile considerations.
+
+### Audience and profile guardrails {#audience}
+
+* You can publish up to **10 audience compositions** in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+
+    Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
+
+* When ingesting data, emails are case-sensitive. It means that duplicate profiles may be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting the corresponding recipient in your [!DNL Journey Optimizer] journeys and campaigns.
+
+* When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
+
+## Channels & Messaging {#channel-guardrails}
+
+This section covers guardrails for all communication channels including email, SMS, inbound channels (web, in-app, code-based, content cards), and transactional messages.
+
+>[!NOTE]
+>
+>In rare circumstances, temporary outages in a specific region can result in valid profiles being excluded from journeys, or mails wrongly marked as bounces. Once services are restored, re-check journey logs, verify consent profile fields, and re-publish the journey if needed. In the case of an ISP outage, learn how to remove profiles from the suppression list in [this section](../configuration/manage-suppression-list.md#remove-from-suppression-list).
+
+### Email guardrails {#message-guardrails}
+
+The following guardrails apply to the [email channel](../email/get-started-email.md):
+
+* You cannot use the same sending domain to send out email messages from [!DNL Adobe Journey Optimizer] and from another product, such as [!DNL Adobe Campaign] or [!DNL Adobe Marketo Engage] for example.
+
+When designing email messages, the system checks for key settings and displays alerts for warnings (recommendations and best practices) and errors (blocking issues that prevent testing or activation). Learn more about email alerts and validation requirements in [this section](../email/create-email.md#check-email-alerts).
+
+#### Message content size for journey publication {#message-content-size}
+
+When publishing journeys that contain email messages, the total message content size must not exceed **2 MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
+
+>[!CAUTION]
+>
+>If the final processed message content exceeds **2 MB**, journey publication will fail. Keep your authored message content well below 2 MB — ideally under **1 MB** — to allow a buffer of 300–400 KB for backend processing overhead.
+
+**Best practices to prevent publication failures:**
+
+* Keep authored email content under **1 MB**
+* Minimize the number of content variants
+* Optimize and compress images before adding them to messages
+* Remove unused assets and unnecessary HTML elements
+* Test message size before publishing journeys to production
+
+If journey publication fails due to content size, reduce your message content and republish the journey.
+
+### SMS guardrails {#sms-guardrails}
+
+The following guardrails apply to the [SMS channel](../mobile/get-started-mobile.md):
+
+* Media files for MMS can be included through a supported URL. Please ensure that the media file is uploaded separately.
+* Message feedback syncing is not currently available for MMS.
+* Consent management operates at the SMS channel level for MMS.
+
+### Inbound channel guardrails {#inbound-guardrails}
+
+* To use [code-based experience](../code-based/get-started-code-based.md) actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites detailed on [this page](../code-based/code-based-prerequisites.md).
+
+* To be able to access and author [web pages](../web/get-started-web.md) in the [!DNL Journey Optimizer] user interface, follow the prerequisites listed on [this page](../web/web-prerequisites.md).
+
+* To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], follow the delivery prerequisites listed on [this page](../in-app/inapp-configuration.md).
+
+* For Adobe Journey Optimizer to correctly display content cards, you must configure the Adobe Experience Platform settings listed on [this page](../content-card/content-card-configuration-prereq.md).
+
+* Journey Optimizer supports a peak volume of **5,000 inbound requests per second**. This guardrail applies to all inbound requests, which can originate from any of the Journey Optimizer supported inbound channels ([web](../web/get-started-web.md), [In-app](../in-app/get-started-in-app.md), [code-based experiences](../code-based/get-started-code-based.md), [content cards](../../rp_landing_pages/content-card-landing-page.md)).
+
+* Journey Optimizer supports a maximum of **500 active inbound actions** at any moment in time. These inbound actions are counted if they are part of a live campaign or if they are a node used in a live journey. Once you reach this number, you need to deactivate older campaigns or journeys that are using inbound actions before being able to launch new ones.
+
+#### Profile management with inbound channels {#profile-management-inbound}
+
+[!DNL Journey Optimizer] inbound channels can target pseudonymous profiles, meaning profiles that are not authenticated or not known yet because they have not been engaged before on other channels. This is the case for example when targeting all visitors or audiences based on temporary IDs like ECID.
+
+This increases your total engageable profile count, which may have cost implications if the contractual number of engageable profiles you purchased is exceeded. License metrics for each package are listed on the [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} page. You can check the number of engageable profiles in the [license usage dashboard](../audience/license-usage.md).
+
+To keep your engageable profiles within reasonable limits, Adobe recommends setting a Time-To-Live (TTL) to automatically delete pseudonymous profiles from the Real-Time Customer Profile if they haven't been seen or engaged within a specific time window. Adobe recommends setting the TTL value to **14 days** to match the current Edge profile TTL.
+
+>[!NOTE]
+>
+>Learn how to configure data expiration for pseudonymous profiles in the [Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/pseudonymous-profiles){target="_blank"}.
+
+### Transactional message guardrails {#transactional-message-guardrails}
+
+Journey Optimizer supports a peak volume of **500 transactional messages per second** in campaigns.
+
+## Content & Assets {#content-assets}
+
+This section covers guardrails for content creation and management, including landing pages, subdomains, and fragments.
+
+### AI Assistant guardrails {#ai-assistant-g}
+
+Guardrails and limitations for **AI Assistant content generation** — including supported channels (email, push, web, SMS) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
+
+### Landing pages guardrails {#lp-guardrails}
+
+The following guardrails apply to the [landing pages](../landing-pages/get-started-lp.md):
+
+* Only one **Form** component can be used in a single primary page.
+* The **Form** component cannot be used in subpages.
+* You cannot add a preheader to a landing page.
+* You cannot select the **Code your own** option when designing a landing primary page.
+
+### Subdomains guardrails {#subdomain-guardrails}
+
+The guardrails and limitations applying to subdomain delegation in Journey Optimizer are detailed on [this page](../configuration/delegate-subdomain.md#guardrails).
+
+### Fragments guardrails {#fragments-guardrails}
+
+The following guardrails apply to the [fragments](../content-management/fragments.md):
+
+* To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
+* Visual fragments are only available for the Email channel.
+* Expression fragments are not available for the In-app channel.
+* Visual fragments cannot exceed **100 KB**. Expression fragments cannot exceed **200 KB**.
+* To use a fragment in a journey or campaign, it must be in the **Live** status.
+* [Contextual attributes](../personalization/personalization-build-expressions.md) are not supported within fragments.
+* Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
+* When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
+
+## Decision Management {#decision-management}
+
+### Decisioning & Decision management guardrails {#decisioning-guardrails}
+
+Guardrails and limitations to keep in mind when working with Decisioning or Decision management are detailed in these the Decisioning & Decision management sections:
+
+* [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
+* [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
 
 ## Campaign Orchestration {#campaign-orchestration}
 
