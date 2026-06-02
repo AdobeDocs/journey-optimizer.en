@@ -273,6 +273,18 @@ The **[!UICONTROL Mode]** option under **[!UICONTROL Image settings]** controls 
     * **[!UICONTROL Balanced]**: AI Assistant uses your reference content first. When that is not enough to cover the visuals you need, it generates images with Adobe Firefly.
     * **[!UICONTROL Creative]**: AI Assistant creates images with generative AI and does not pull images directly from your Digital Asset Management library.
 
+    ![](assets/image-mode-3.png)
+
 1. Click **[!UICONTROL Generate]** and browse the **[!UICONTROL Variation suggestions]** to find the desired Asset.
 
 1. Click **[!UICONTROL Preview]** to view a full-screen version of the selected variation.
+
+1. If the image is coming from your library, click the **[!UICONTROL Image options]** to browse through your other relevant assets.
+
+    ![](assets/image-mode-1.png)
+
+1. Click **[!UICONTROL Apply]** to change your asset.
+
+1. If AI Assistant does not find a matching image in your Digital Asset Management library, the variation shows a placeholder image. Add reference content or upload an image manually, then generate again.
+
+    ![](assets/image-mode-2.png)
