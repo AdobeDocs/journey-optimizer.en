@@ -85,7 +85,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
     +++ Create from form
 
-    1. Enter a **[!UICONTROL Display name]** and **[!UICONTROL Description]** to identify this simulated user. 
+    1. Enter a **[!UICONTROL Display name]**, **[!UICONTROL Identity namespace]** and **[!UICONTROL Description]** to identify this simulated user. 
             
         ![Simulated user selection panel](assets/simulate-form.png)
 
@@ -93,9 +93,13 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
     1. Click **[!UICONTROL Add audience membership]** to simulate segment memberships.
 
-    1. Click **[!UICONTROL Add profile]** to create multiple simulated users in a single session.
+    1. In the **[!UICONTROL Create Simulated Users]** window, click **[!UICONTROL Add simulated user]** to define several simulated users in one session.
 
-    1. From the menu, use **[!UICONTROL Duplicate]** to copy a user, **[!UICONTROL Apply to all]** to copy one user's attributes to every other user in the session, or **[!UICONTROL Delete]** to remove a user.
+        You can change how users are shown in the list, collapse every card in stacked view, or open a user's attribute metadata.
+    
+        ![Simulated user selection panel](assets/simulate-form-3.png)
+
+    1. From your Simulated user menu, use **[!UICONTROL Duplicate]** to copy a user, **[!UICONTROL Apply all attributes to other users]** to copy one user's attributes to every other user in the session, or **[!UICONTROL Delete]** to remove a user.
 
         ![Simulated user selection panel](assets/simulate-form-2.png)
 
