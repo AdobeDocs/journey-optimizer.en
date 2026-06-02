@@ -43,8 +43,6 @@ Three base offers are available. Choose the one that matches how you primarily e
 >
 >Total Data Volume entitlement differs: **Campaigns** customers receive 15 KB per addressable profile; **Journeys** and **Campaigns & Journeys** customers receive 75 KB per addressable profile.
 
----
-
 ## Step 2 — Add the channels you need {#channel-addons}
 
 Channels are not bundled into the base offer. Select the channel add-on or add-on bundle that fits your engagement strategy.
@@ -93,8 +91,6 @@ Best suited for organizations that need full omnichannel coverage across outboun
 
 **WhatsApp** is available as a separate add-on for customers who need to send messages via WhatsApp Business. [Learn how to use WhatsApp](../whatsapp/get-started-whatsapp.md)
 
----
-
 ## Step 3 — Add advanced capabilities {#advanced-addons}
 
 ### Decisioning {#decisioning-addon}
@@ -107,8 +103,6 @@ The **Decisioning** add-on enables you to define, manage, and deliver the best o
 - Decisioning policies usable in journeys, campaigns, and code-based experiences
 
 **Available on:** all three base offers, subject to your license agreement. [Learn how to use decisioning](../experience-decisioning/gs-experience-decisioning.md) | [Learn about AI models](../offers/ranking/ai-models.md)
-
----
 
 ## Compare at a glance {#comparison-matrix}
 
@@ -130,8 +124,6 @@ The **Decisioning** add-on enables you to define, manage, and deliver the best o
 | WhatsApp | ✓ | ✓ | ✓ | WhatsApp |
 | Decisioning | Depends on license | Depends on license | Depends on license | Decisioning |
 | AI-powered ranking | Depends on license | Depends on license | Depends on license | Decisioning |
-
----
 
 ## Frequently asked questions {#faq}
 
