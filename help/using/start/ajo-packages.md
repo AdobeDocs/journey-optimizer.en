@@ -21,40 +21,46 @@ Availability may also depend on channel configuration, implementation prerequisi
 
 >[!TAB Journeys & Campaigns]
 
-This tab applies to customers licensed under the current [!DNL Adobe Journey Optimizer] modular packaging model (AJO Journeys, AJO Campaigns, or AJO Campaigns & Journeys).
+This tab applies to customers licensed under the current [!DNL Adobe Journey Optimizer] modular packaging model (Journey Optimizer – Campaigns, Journey Optimizer – Journeys, or Journey Optimizer – Campaigns & Journeys).
 
 ## Base packages {#current-packages}
 
-| Package | Best suited for |
+| Package | What it includes |
 |---------|----------------|
-| **AJO Campaigns** | Scheduled, batch, and transactional messaging across outbound channels. |
-| **AJO Journeys** | Event-triggered, real-time journey orchestration and automation. |
-| **AJO Campaigns & Journeys** | The full platform — scheduled messaging and real-time orchestration combined. |
+| **Journey Optimizer – Campaigns** | Campaign Orchestration: single or multi-step audience workflows for batch engagement. Transactional messaging via email, push, and SMS included. |
+| **Journey Optimizer – Journeys** | Real-time Journey Orchestration: event-triggered journeys supporting streaming and batch processing. Transactional messaging via email, push, and SMS included. |
+| **Journey Optimizer – Campaigns & Journeys** | Campaign Orchestration and Real-time Journey Orchestration combined. Transactional messaging via email, push, and SMS included. |
 
-The following add-ons extend channel and feature coverage on top of any base package:
+>[!NOTE]
+>
+>Total Data Volume entitlement differs by package: **Campaigns** customers are entitled to 15 KB per addressable profile; **Journeys** and **Campaigns & Journeys** customers are entitled to 75 KB per addressable profile.
 
-| Add-on | What it unlocks |
+The following add-ons extend channel coverage on top of any base package. The **All Channels** add-on bundles Outbound Delivery, Mobile, and Web together.
+
+| Add-on | Channels unlocked |
 |--------|----------------|
-| **Outbound** | Email, SMS / MMS, push notifications, and direct mail |
-| **Mobile App** | In-app messaging and mobile push |
-| **Web** | Web channel, code-based experiences, and content cards |
+| **Outbound Delivery** | Email, push notifications, direct mail. Includes Deliverability Fundamentals. |
+| **Mobile** | In-app messaging, push notifications, content cards, and code-based channels for mobile surfaces |
+| **Web** | Web channel and code-based channels for web surfaces |
+| **All Channels** | Bundles Outbound Delivery + Mobile + Web |
 | **Decisioning** | Real-time offer decisioning and AI-powered optimization |
 
 ## Capability matrix {#capability-matrix-current}
 
-| Capability | What you can do | AJO Campaigns | AJO Journeys | AJO Campaigns & Journeys | Add-on required | Learn more |
-|-----------|----------------|:-------------:|:------------:|:------------------------:|:---------------:|-----------|
-| **Email** | Design and send personalized email messages | ✓ | ✓ | ✓ | Outbound | [Learn how to send email](../email/get-started-email.md) |
-| **SMS / MMS** | Send text and multimedia messages | ✓ | ✓ | ✓ | Outbound | [Learn how to send mobile messages](../mobile/get-started-mobile.md) |
-| **Push notifications** | Send mobile push alerts | ✓ | ✓ | ✓ | Outbound | [Learn how to send push notifications](../push/get-started-push.md) |
-| **Direct mail** | Create and send physical mail pieces | ✓ | ✓ | ✓ | Outbound | [Learn how to use direct mail](../direct-mail/get-started-direct-mail.md) |
-| **In-app messaging** | Display messages inside your mobile app | ✓ | ✓ | ✓ | Mobile App | [Learn how to use in-app messaging](../in-app/get-started-in-app.md) |
+| Capability | What you can do | Journey Optimizer – Campaigns | Journey Optimizer – Journeys | Journey Optimizer – Campaigns & Journeys | Add-on required | Learn more |
+|-----------|----------------|:-----------------------------:|:----------------------------:|:----------------------------------------:|:---------------:|-----------|
+| **Transactional messaging** | Send real-time triggered messages via email, push, or SMS | ✓ | ✓ | ✓ | — | [Learn about transactional messaging](../building-journeys/journey-gs.md) |
+| **Email** | Design and send personalized email messages | ✓ | ✓ | ✓ | Outbound Delivery | [Learn how to send email](../email/get-started-email.md) |
+| **Push notifications** | Send mobile push alerts | ✓ | ✓ | ✓ | Outbound Delivery | [Learn how to send push notifications](../push/get-started-push.md) |
+| **Direct mail** | Create and send physical mail pieces | ✓ | ✓ | ✓ | Outbound Delivery | [Learn how to use direct mail](../direct-mail/get-started-direct-mail.md) |
+| **SMS / MMS** | Send text and multimedia messages | ✓ | ✓ | ✓ | Outbound Delivery | [Learn how to send mobile messages](../mobile/get-started-mobile.md) |
+| **In-app messaging** | Display messages inside your mobile app | ✓ | ✓ | ✓ | Mobile | [Learn how to use in-app messaging](../in-app/get-started-in-app.md) |
+| **Content cards** | Deliver persistent, non-intrusive in-product messages | ✓ | ✓ | ✓ | Mobile | [Learn how to use content cards](../content-card/get-started-content-card.md) |
 | **Web channel** | Personalize web pages in real time | ✓ | ✓ | ✓ | Web | [Learn how to use the web channel](../web/get-started-web.md) |
-| **Code-based experiences** | Personalize any surface via API or SDK | ✓ | ✓ | ✓ | Web | [Learn how to use code-based experiences](../code-based/get-started-code-based.md) |
-| **Content cards** | Deliver persistent, non-intrusive in-product messages | ✓ | ✓ | ✓ | Web | [Learn how to use content cards](../content-card/get-started-content-card.md) |
+| **Code-based experiences** | Personalize any surface via API or SDK | ✓ | ✓ | ✓ | Mobile or Web | [Learn how to use code-based experiences](../code-based/get-started-code-based.md) |
 | **WhatsApp** | Send messages via WhatsApp Business | ✓ | ✓ | ✓ | WhatsApp | [Learn how to use WhatsApp](../whatsapp/get-started-whatsapp.md) |
-| **Batch campaigns** | Schedule one-time or recurring messages to an audience | ✓ | — | ✓ | — | [Learn how to create campaigns](../campaigns/get-started-with-campaigns.md) |
-| **Automated journeys** | Design multi-step, event-triggered customer journeys | — | ✓ | ✓ | — | [Learn how to build journeys](../building-journeys/journey-gs.md) |
+| **Orchestrated campaigns** | Design multi-step audience workflows for batch engagement. Supported channels: email, SMS, push, and direct mail only. | ✓ | — | ✓ | — | [Learn how to use orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) |
+| **Automated journeys** | Design event-triggered, real-time customer journeys | — | ✓ | ✓ | — | [Learn how to build journeys](../building-journeys/journey-gs.md) |
 | **Real-time triggers** | React to customer events as they happen | — | ✓ | ✓ | — | [Learn about journey events](../event/about-events.md) |
 | **Decisioning** | Select the best offer for each customer in real time | Depends on your license | Depends on your license | Depends on your license | Decisioning | [Learn how to use decisioning](../experience-decisioning/gs-experience-decisioning.md) |
 | **AI-powered ranking** | Optimize offer selection using machine learning | Depends on your license | Depends on your license | Depends on your license | Decisioning | [Learn about AI models](../offers/ranking/ai-models.md) |
