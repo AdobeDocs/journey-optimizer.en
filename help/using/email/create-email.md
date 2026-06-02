@@ -207,7 +207,7 @@ Two types of alerts can happen:
 ## Optimize email HTML size {#optimize-html-size}
 
 >[!CONTEXTUALHELP]
->id="ajo_email_optimize_html_size"
+>id="ajo_email_minification"
 >title="Optimize HTML size"
 >abstract="Enable this option to compress your email HTML during publishing by removing unnecessary whitespace, indentation, and non-essential comments. This helps prevent email clipping in clients such as Gmail, which truncates messages exceeding 100 KB."
 
