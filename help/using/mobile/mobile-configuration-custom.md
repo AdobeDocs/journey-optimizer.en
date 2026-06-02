@@ -52,6 +52,11 @@ subfeature_v2:
 >title="Provider payload"
 >abstract="Provide the request payload to ensure the correct data is sent for processing and response generation."
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_response_msg_id_extractor"
+>title="Provider payload"
+>abstract="Specifies how Journey Optimizer extracts a unique message ID from your provider's send response. </br>Field Match: Enter the field name (e.g. messageId). AJO will scan the response and return the first matching value. </br>Dot Notation: Enter the path to the field (e.g. messages.0.id). Use numeric segments for arrays. No $ prefix.</br> Leave blank if your provider supports passing a callback data field instead."
+
 This feature empowers you to integrate and configure your own messaging providers, offering flexibility beyond the default options (Sinch, Twilio, and Infobip). This enables seamless authoring, delivery, reporting, and consent management for Mobile messages.
 
 With custom provider configuration, you can connect third-party messaging services directly within Journey Optimizer, customize message payloads for dynamic content, and manage opt-in/opt-out preferences to ensure compliance across both SMS and RCS channels.
