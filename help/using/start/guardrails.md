@@ -145,6 +145,10 @@ Journey Optimizer supports a peak volume of 500 transactional messages per secon
 
 This section covers guardrails for content creation and management, including landing pages, subdomains, and fragments.
 
+### AI Assistant guardrails {#ai-assistant-g}
+
+Guardrails and limitations for **AI Assistant content generation** — including supported channels (email, push, web, SMS) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
+
 ### Landing pages guardrails {#lp-guardrails}
 
 The following guardrails apply to the [landing pages](../landing-pages/get-started-lp.md):
@@ -353,6 +357,8 @@ The following guardrail applies to the [Audience Qualification](../building-jour
 
 Learn more about journey processing rates and throughput limits in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 
+Additional guardrails — including recommendations on streaming vs. batch audiences and composition audience limitations — are listed on [this page](../building-journeys/audience-qualification-events.md#audience-qualification-guardrails).
+
 #### Campaign activities {#ac-g}
 
 The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
@@ -360,6 +366,10 @@ The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **
 * Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
 * **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
 * **[!UICONTROL Campaign v7/v8]** activities can be used alongside native channel activities in the same journey.
+
+#### Reaction events {#reaction-events-g}
+
+Specific guardrails apply to **[!UICONTROL Reaction]** events, including the requirement to place the activity immediately after a channel action and the inability to track messages sent in a different journey. They are listed on [this page](../building-journeys/reaction-events.md#guardrails-limitations).
 
 #### In-app activity {#in-app-activity-limitations}
 
@@ -380,6 +390,10 @@ The following guardrails apply to the **[!UICONTROL In-app message]** action. Le
 * An activation delay may happen between the moment a user profile reaches an In-app activity in the canvas and the time they start seeing that In-app message.
 
 * In-app message content size is limited to 2Mb. Including large images can hinder the publishing process.
+
+#### Content decision activity {#content-decision-g}
+
+Specific guardrails apply to the **[!UICONTROL Content decision]** activity, including a 48-hour delay before updated consent policies take effect in decision policies. They are listed on [this page](../building-journeys/content-decision.md#guardrails).
 
 #### Jump activity {#jump-g}
 
@@ -406,6 +420,26 @@ See also [recommendations and configuration](../building-journeys/read-audience.
 #### Update profile activity {#update-profile-g}
 
 Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed on [this page](../building-journeys/update-profiles.md).
+
+#### Journey Pause {#pause-g}
+
+Specific guardrails apply to **pausing journeys**, including a maximum pause duration of 14 days and a 10-million-profile cap across all paused journeys in your organization. They are listed on [this page](../building-journeys/journey-pause.md#journey-pause-guardrails).
+
+#### Journey Dry run {#dry-run-g}
+
+Specific guardrails apply to **Journey Dry run**, including counting toward engageable profile and live journey quotas. They are listed on [this page](../building-journeys/journey-dry-run.md#journey-dry-run-limitations).
+
+#### Journey Fragments {#fragments-journey-g}
+
+Specific guardrails apply to **Journey Fragments**, including a maximum of 20 nodes per fragment and 200 active fragments per sandbox. They are listed on [this page](../building-journeys/journey-fragments.md#guardrails).
+
+#### Send using waves {#waves-g}
+
+Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a 30-minute minimum interval between waves. They are listed on [this page](../building-journeys/send-using-waves.md#limitations-guardrails).
+
+#### Journey simulation {#simulation-g}
+
+Specific guardrails apply to **journey simulation**. They are listed on [this page](../building-journeys/simulate-journey.md#limitations).
 
 ## Campaign Orchestration {#campaign-orchestration}
 
