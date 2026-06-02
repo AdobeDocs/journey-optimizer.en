@@ -18,7 +18,7 @@ solution: Journey Optimizer
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
     + [2026](using/rn/release-notes-2026.md)
     + [2025](using/rn/release-notes-2025.md)
-    + [2024](using/rn/release-notes-2024.md)
+    + {hide-from-toc} [2024](using/rn/release-notes-2024.md)
     + {hide-from-toc} [2023](using/rn/release-notes-2023.md)
     + {hide-from-toc} [2022](using/rn/release-notes-2022.md)
     + {hide-from-toc} [2021](using/rn/release-notes-2021.md)
