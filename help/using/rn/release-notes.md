@@ -103,7 +103,8 @@ The following capabilities and improvements have been added to journeys in this 
 
 The following journey capabilities are expected in the upcoming days or weeks.
 
-<!--table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Journey path optimization – Targeting (General Availability)</strong><br/></th>
@@ -136,7 +137,8 @@ The following journey capabilities are expected in the upcoming days or weeks.
 </td>
 </tr>
 </tbody>
-</table-->
+</table>
+-->
 
 <table>
 <thead>
