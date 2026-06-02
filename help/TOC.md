@@ -33,6 +33,7 @@ solution: Journey Optimizer
     + [Key terminology](using/start/terminology.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + {hide-from-toc} [Capabilities by package](using/start/ajo-packages.md)
+    + {hide-from-toc} [Packages and capabilities (v2)](using/start/ajo-packages-v2.md)
   + Get started by role {#by-role}
     + [Roles and responsibilities](using/start/quick-start.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
