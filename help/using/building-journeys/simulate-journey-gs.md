@@ -19,7 +19,7 @@ You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**,
    
 Adobe Journey Optimizer offers two ways to test and validate your journey:
 
-* **[Simulation](#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users for quick runs without pre-created profiles in Adobe Experience Platform.
+* **[Simulation](#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users without pre-created profiles in Adobe Experience Platform, supporting both AI-powered and manually created users.
 
 * **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
 
@@ -85,8 +85,7 @@ If a journey contains any of the following nodes, it cannot be started in **[!UI
 | Supplemental ID (multiple re-entrance) | Concurrent re-entrance (several active instances for the same simulated user) prevents **[!UICONTROL Simulation]** from starting. |
 | Content Decision node | This activity must be removed or changed before you can simulate the journey. |
 | Dataset Lookup | Customer dataset lookups by key are not supported; journeys that include this activity cannot be run in **[!UICONTROL Simulation]**. |
-| Path Experimentation (Optimize — Experiment variant) | Not supported in **[!UICONTROL Simulation]**. You can still use **[!UICONTROL Optimize]** for flows that used to live under **[!UICONTROL Condition]** (for example, data source conditions). |
-| Path Targeting (Optimize, Targeting Rule variant) | Not supported in **[!UICONTROL Simulation]**. |
+| **[!UICONTROL Optimize]** activity | The following **[!UICONTROL Optimize]** methods are not supported in **[!UICONTROL Simulation]**: **[!UICONTROL Experiment]**, **[!UICONTROL Targeting rule]**, **[!UICONTROL Percentage split]**, **[!UICONTROL Time condition]**, **[!UICONTROL Condition]**, **[!UICONTROL Date condition]**, **[!UICONTROL Profile cap]**, and **[!UICONTROL External Data Source]**. Remove or change the node before you simulate. |
 | External audience attribute enrichment | Journeys that use personalized attributes from external audience sources will not start in **[!UICONTROL Simulation]** when this validation is active. |
 
 +++
