@@ -145,6 +145,10 @@ After accessing AI Assistant, you can adjust the generation settings to create i
 
 1. Choose your **[!UICONTROL Image settings]**:
 
+    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md)
+        * **[!UICONTROL Assets]**: Uses matching images from the Digital Asset Management as reference content, otherwise add reference content manually.
+        * **[!UICONTROL Balanced]**: Reference content first, then Firefly if needed.
+        * **[!UICONTROL Creative]**: Generative AI without relying directly on the Digital Asset Management.
     * **[!UICONTROL Generative model]**: Select from the ready-to-use **[!UICONTROL Adobe model]**, the **[!UICONTROL Partner model]** for specialized capabilities, or **[!UICONTROL Custom models]** trained on your brand assets. [Learn more](generative-models.md). To use the partner (**Gemini**) model with **text overlays** on generated images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
