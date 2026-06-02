@@ -23,7 +23,7 @@ Availability may also depend on channel configuration, implementation prerequisi
 
 This tab applies to customers licensed under the current [!DNL Adobe Journey Optimizer] modular packaging model (AJO Journeys, AJO Campaigns, or AJO Campaigns & Journeys).
 
-### Base packages {#current-packages}
+## Base packages {#current-packages}
 
 | Package | Best suited for |
 |---------|----------------|
@@ -40,7 +40,7 @@ The following add-ons extend channel and feature coverage on top of any base pac
 | **Web** | Web channel, code-based experiences, and content cards |
 | **Decisioning** | Real-time offer decisioning and AI-powered optimization |
 
-### Capability matrix {#capability-matrix-current}
+## Capability matrix {#capability-matrix-current}
 
 | Capability | What you can do | AJO Campaigns | AJO Journeys | AJO Campaigns & Journeys | Add-on required | Learn more |
 |-----------|----------------|:-------------:|:------------:|:------------------------:|:---------------:|-----------|
@@ -63,7 +63,7 @@ The following add-ons extend channel and feature coverage on top of any base pac
 
 This tab applies to customers with existing license agreements using the Select, Prime, or Ultimate packaging terminology.
 
-### Package summaries {#package-summaries}
+## Package summaries {#package-summaries}
 
 +++**Select**
 
@@ -96,7 +96,7 @@ Includes everything in Prime, plus decisioning and advanced optimization:
 
 +++
 
-### Capability matrix {#capability-matrix-legacy}
+## Capability matrix {#capability-matrix-legacy}
 
 | Capability | What you can do | Select | Prime | Ultimate | Learn more |
 |-----------|----------------|:------:|:-----:|:--------:|-----------|
