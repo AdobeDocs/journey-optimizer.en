@@ -47,36 +47,6 @@ Entitlements, product limitations and performance guardrails are listed in [Adob
 >
 >* See also [Guardrails for Data Ingestion in Real-time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
 
-## Key limits at a glance {#quick-reference}
-
-Use this table to look up the most critical numeric limits before you build or publish. Full details and context are in the sections below.
-
-| Area | Limit | Value |
-|---|---|---|
-| **Journeys** | [Max activities per journey](#journeys-guardrails-journeys) | **50** |
-| **Journeys** | [Max live / paused / dry-run journeys](#journeys-guardrails-journeys) | **100** |
-| **Journeys** | [Journey instance size](#journeys-guardrails-journeys) | **1 MB** |
-| **Journeys** | [Journey payload size (publish)](#journey-payload-size) | **2 MB** (warn at 90%) |
-| **Journeys** | [Global journey timeout](#journeys-guardrails-journeys) | **91 days** |
-| **Journeys** | [Pending event queue per profile](#journeys-guardrails-journeys) | **10 events** |
-| **Journeys** | [Concurrent Read Audience instances](#read-segment-g) | **5** across all sandboxes |
-| **Journeys** | [Read Audience sandbox throughput](#read-segment-g) | **20,000 profiles/sec** (shared) |
-| **Journeys** | [Read Audience job timeout](#read-segment-g) | **12 hours** |
-| **Channels** | [Inbound requests per second](#inbound-guardrails) | **5,000 RPS** |
-| **Channels** | [Max active inbound actions](#inbound-guardrails) | **500** |
-| **Channels** | [Transactional messages/sec (campaigns)](#transactional-message-guardrails) | **500** |
-| **Channels** | [Inbound journey events per second](#events-g) | **5,000** |
-| **Custom actions** | [Calls per minute (response < 0.75 s)](#custom-actions-g) | **300,000 / min** per host/sandbox |
-| **Custom actions** | [Calls per 30 s (response > 0.75 s)](#custom-actions-g) | **150,000 / 30 s** per host/sandbox |
-| **Content** | [Email message content at publish](#message-content-size) | **2 MB** (author under 1 MB) |
-| **Content** | [In-app message content](#in-app-activity-limitations) | **2 MB** |
-| **Content** | [Visual fragment size](#fragments-guardrails) | **100 KB** |
-| **Content** | [Expression fragment size](#fragments-guardrails) | **200 KB** |
-| **Content** | [Journey fragment nodes](#fragments-journey-g) | **20 nodes/fragment**, 200 active/sandbox |
-| **Audiences** | [Audience compositions per sandbox](#audience) | **10** |
-| **Datasets** | [Profile store TTL (new orgs/sandboxes)](#datasets-guardrails) | **90 days** |
-| **Datasets** | [Data lake TTL (new orgs/sandboxes)](#datasets-guardrails) | **13 months** |
-
 
 ## System & Platform {#system-platform}
 
@@ -316,24 +286,19 @@ The following guardrails apply to the [Journey versions](../start/user-interface
 
 The following guardrails apply to the [Custom Actions](../action/action.md) in your journeys:
 
-| Guardrail | Value | Notes |
-|---|---|---|
-| Capping limit — response < 0.75 s | **300,000 calls / min** per host and per sandbox | Sliding window. Enforced per sandbox and per endpoint. |
-| Capping limit — response > 0.75 s | **150,000 calls / 30 s** per host and per sandbox | Sliding window. Separate limit applied when endpoint latency exceeds 0.75 s. |
-| URL type | Static only | Dynamic parameters in the custom action URL are not supported. |
-| Supported HTTP methods | POST, PUT, GET | Other methods are not supported. |
-| Query param / header name format | Must not start with `.` or `$` | Names beginning with these characters are rejected. |
-| IP addresses in URL | Not allowed | Use hostnames instead of IP addresses. |
-| Internal Adobe addresses | Not allowed | `.adobe.*` addresses are not permitted in URLs and APIs. |
-| Built-in custom actions | Cannot be removed | Built-in custom actions are permanent. |
-| Payload format | JSON only | JSON format is required for both request and response payloads. See [this page](../action/about-custom-action-configuration.md#custom-actions-limitations). |
-| Minimum endpoint throughput | 200 TPS | Any endpoint targeted by a custom action must support at least 200 TPS. |
+* A capping limit of **300,000 calls over one minute** is defined for all custom actions, per host and per sandbox. This cap is enforced as a sliding window per sandbox and per endpoint for endpoints with response times less than 0.75 seconds. For endpoints with response times greater than 0.75 seconds, a separate limit of **150,000 calls per 30 seconds** (also a sliding window) applies.
+* The custom action URL does not support dynamic parameters.
+* POST, PUT and GET call methods are supported.
+* The name of the query parameter or header must not start with "." or "$".
+* IP addresses are not allowed in URLs. Use hostnames instead.
+* Internal Adobe addresses (`.adobe.*`) are not allowed in URLs and APIs.
+* Built-in custom actions cannot be removed.
+* Custom actions support JSON format only when using request or response payloads. See [this page](../action/about-custom-action-configuration.md#custom-actions-limitations).
+* Any endpoint targeted by a custom action must support at least **200 TPS**. Be cautious that a throttling configuration cannot go below 200 TPS. Depending on your expected throughput, having a high response time could impact the actual throughput.
 
 >[!TIP]
 >
->**What this means for you:** The default 300,000 calls/min cap protects your external endpoints from being overwhelmed by journey throughput. If your endpoint can handle more load, you can raise this limit using the [Capping API](../configuration/capping.md) or [Throttling API](../configuration/throttling.md). Contact your Adobe representative if you need a higher organizational limit.
-
-This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
+>**What this means for you:** The default 300,000 calls/min cap protects your external endpoints from being overwhelmed by journey throughput. If your endpoint can handle more load, you can raise this limit using the [Capping API](../configuration/capping.md) or [Throttling API](../configuration/throttling.md). For a broader overview of how Journey Optimizer connects to external systems, see [this page](../configuration/external-systems.md). Contact your Adobe representative if you need a higher organizational limit.
 
 ### Events {#events-g}
 
@@ -437,20 +402,17 @@ Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed
 
 The following guardrails apply to the [Read Audience](../building-journeys/read-audience.md) journey activity:
 
-| Guardrail | Value | Notes |
-|---|---|---|
-| Concurrent instances (all sandboxes + journeys) | **5** | Avoid scheduling more than 5 journeys with Read Audience starting at the same time; spread them 5–10 minutes apart. |
-| Sandbox throughput | **20,000 profiles/sec** (shared) | Shared across all Read Audience activities in the sandbox. If limits are reached, jobs may be queued. |
-| Configurable throughput per activity | **500–20,000 profiles/sec** | Configure per activity within the sandbox shared limit. |
-| Job processing timeout | **12 hours** | Jobs that cannot be processed within 12 hours are automatically cleaned up and will not execute. |
-| Retry window | Up to **1 hour** (10-min intervals) | Retries are applied while retrieving the export job. Journeys can execute up to 1 hour after the scheduled time. |
-| Supplemental ID read rate | **500 profiles/sec** per journey instance | Applies when supplemental IDs are in use. |
-| Read Audience instances per journey | **1** | A journey can only have one Read Audience activity. |
-| Audience types | Streamed audiences are always up-to-date | Batch audiences are only evaluated once per day at the daily batch evaluation time. |
-| Profile attribute refresh | Refreshed at **Wait** activities | At journey entry, profiles use batch snapshot values. Attributes refresh when a profile reaches a Wait activity. |
-| Positioning in journey | First activity or after a business event | The Read Audience activity can only be used as a first activity in a journey, or after a business event activity. |
-| Use with Adobe Campaign | Not supported | The Read Audience activity cannot be used with Adobe Campaign activities. |
-| Multiple audiences | Not supported directly | The Read Audience activity can target only one audience per journey. To use multiple audiences, merge them first. [Learn how](../audience/get-started-audience-orchestration.md) |
+* Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
+* At journey entry, profiles use attribute values from the batch audience snapshot. However, when a profile reaches a **Wait** activity, the journey automatically refreshes profile attributes by fetching the latest data from Unified Profile Service (UPS). This means profile attributes may change during journey execution.
+* The **Read Audience** activity cannot be used with Adobe Campaign activities.
+* The **Read Audience** activity can only be used as a first activity in a journey, or after a business event activity.
+* A journey can only have one **Read Audience** activity.
+* The **Read Audience** activity can target only one audience per journey. If multiple audiences are required, merge them into a single audience first. [Learn how to combine audiences using composition workflows](../audience/get-started-audience-orchestration.md).
+* Each organization can run up to **five** **Read Audience** instances concurrently (scheduled or business-event triggered), across all sandboxes and journeys. Avoid having more than five journeys with **Read Audience** starting at the exact same time; spread them 5 to 10 minutes apart. Learn more about journey processing rates in [this section](../building-journeys/entry-management.md#journey-processing-rate).
+* Sandbox throughput: the system manages processing per sandbox with a maximum of **20,000 profiles per second** shared across all **Read Audience** activities. Individual activities can be configured from **500 to 20,000 profiles per second**. If sandbox limits are reached, jobs may be queued.
+* Job processing timeout: **Read Audience** jobs that cannot be processed within **12 hours** are automatically cleaned up and will not execute.
+* Retries are applied by default on audience-triggered journeys while retrieving the export job. If an error occurs during export job creation, retries will be made every 10 minutes, for a maximum of **1 hour**. After that, the journey is considered failed and can therefore be executed up to 1 hour after the scheduled time.
+* For journeys using supplemental IDs, the reading rate of the **Read Audience** activity for each journey instance is limited to a maximum of **500 profiles per second**.
 
 >[!TIP]
 >
