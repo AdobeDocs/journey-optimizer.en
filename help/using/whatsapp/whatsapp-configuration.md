@@ -51,6 +51,21 @@ These steps must be performed by an Adobe Journey Optimizer [System Administrato
 
 ## Create WhatsApp API credentials {#whatsapp-credentials}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_config_name"
+>title="Name"
+>abstract="Enter a unique name for this API credential set. You will select it when you configure WhatsApp webhooks and channel configurations."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_config_api_token"
+>title="API Token"
+>abstract="Use a Meta access token from a System User in the same Business Manager as your WhatsApp assets. This user needs whatsapp_business_management, whatsapp_business_messaging, and business_management permissions, plus asset-level access to your WhatsApp Business Account. Meta tokens expire after about 60 days, renew the token before it lapses."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_config_business_account_id"
+>title="Business Account ID"
+>abstract="Enter your Meta Business portfolio ID, also called the Business Manager ID. Do not enter your WhatsApp Business Account ID in this field."
+
 1. In the left rail, browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
 1. Configure your API credentials, as detailed below:
