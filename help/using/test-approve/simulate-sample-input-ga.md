@@ -147,19 +147,15 @@ You can upload a file with predefined variants and values to speed up the proces
 
 ### Auto-generate content variants {#auto-generate-variants}
 
-[!DNL Journey Optimizer] can use AI-based simulation to automatically generate a content variant so you can validate your personalization logic without building variants by hand.
+[!DNL Journey Optimizer] can use AI-based simulation to automatically generate a content variant so you can validate your personalization logic without building variants by hand. When rendering content for simulation or proofing, the system analyzes your content, identifies personalization fields, and replaces them with meaningful values for a near-realistic preview.
 
-When rendering content for simulation or proofing, the system analyzes your content, identifies personalization fields, and replaces them with meaningful values for a near-realistic preview.
+To auto-generate a variant, click the **[!UICONTROL Generate]** button and wait for the system to generate the variant. Review the generated variant in the variants list and its rendering.
 
-To auto-generate a variant, click the **[!UICONTROL Generate]** button and wait for the system to generate the variant.
-
-  ![Generate variants button](assets/simulate-generate-variant.png)
+  ![Generate variants button](assets/simulate-variants-generate.png)
 
 >[!NOTE]
 >
 >Generation produces a single variant. Clicking **[!UICONTROL Generate]** replaces all existing content variants in the list, including any you added manually or from a file, with one generated variant.
-
-Review the generated variant in the variants list and its rendering.
 
 ### Select variants from simulated users {#simulated-users}
 
