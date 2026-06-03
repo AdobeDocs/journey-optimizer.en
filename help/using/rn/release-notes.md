@@ -54,6 +54,27 @@ topic_v2:
 >
 >Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
 
+## June '26 updates {#june-26-updates}
+
+<table>
+<thead>
+<tr>
+<th><strong>AI Assistant for Journey Expressions (Public Beta)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>This capability is available to all customers as a Public Beta.</p>
+<p><img src="assets/do-not-localize/expression-assistant.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/expression/expression-agent.md">detailed documentation</a>.</p>
+<p>Availability date: June 3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## May '26 release notes {#may-26-rn}
 
 ### Journeys {#may-26-journeys}
@@ -143,24 +164,6 @@ The following journey capabilities are expected in the upcoming days or weeks.
 <table>
 <thead>
 <tr>
-<th><strong>AI Assistant for Journey Expressions (Public Beta)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
-<p>This capability is available to all customers as a Public Beta.</p>
-<!--<p><img src="assets/do-not-localize/expression-assistant.gif"></p>-->
-<p>Availability date: Early June, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Journey Simulation (General Availability)</strong><br/></th>
 </tr>
 </thead>
@@ -193,6 +196,25 @@ The following journey capabilities are expected in the upcoming days or weeks.
 ### Orchestrated campaigns {#may-26-oc}
 
 The following capabilities and improvements have been added to orchestrated campaigns in this release. Additional changes are also expected in the upcoming days or weeks.
+
+<table>
+<thead>
+<tr>
+<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>This capability is available to all customers as a Public Beta.</p>
+<p><img src="assets/do-not-localize/expression-assistant.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/expression/expression-agent.md">detailed documentation</a>.</p>
+<p>Availability date: May 20, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
