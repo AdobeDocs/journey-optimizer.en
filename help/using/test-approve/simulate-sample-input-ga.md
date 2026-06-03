@@ -155,7 +155,7 @@ To auto-generate a variant, click the **[!UICONTROL Generate]** button and wait 
 
 >[!NOTE]
 >
->Generation produces a single variant. Clicking **[!UICONTROL Generate]** replaces all existing content variants in the list, including any you added manually or from a file, with one generated variant.
+>Generation produces a single variant. Clicking **[!UICONTROL Generate]** replaces all existing content variants in the list, including any you added manually or from a file, with one generated variant. 
 
 ### Select variants from simulated users {#simulated-users}
 
