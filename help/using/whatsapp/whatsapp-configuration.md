@@ -132,7 +132,7 @@ Once your WhatsApp API credentials have been successfully created, you can now c
 
 >[!NOTE]
 >
->Inbound WhatsApp messages are captured in the _AJO Inbound Activity Event Dataset_ system dataset. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
+>Inbound WhatsApp messages are captured in the _AJO Email Tracking Dataset_ system dataset. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
 
 Webhooks act as the communication bridge between Meta's WhatsApp Business Platform and Adobe Journey Optimizer, allowing you to receive real-time notifications about message events and user interactions.
 

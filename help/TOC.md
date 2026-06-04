@@ -34,6 +34,7 @@ solution: Journey Optimizer
     + [Guardrails & limitations](using/start/guardrails.md)
     + {hide-from-toc} [Capabilities by package](using/start/ajo-packages.md)
     + {hide-from-toc} [Packages and capabilities (v2)](using/start/ajo-packages-v2.md)
+    + {hide-from-toc} [Packages and capabilities (v3)](using/start/ajo-packages-v3.md)
   + Get started by role {#by-role}
     + [Roles and responsibilities](using/start/quick-start.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
@@ -103,7 +104,7 @@ solution: Journey Optimizer
   + Build expressions {#building-advanced-conditions-journeys}
     + [Build expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
     + [Work with the advanced expression editor](using/building-journeys/expression/expressionadvanced.md)
-    + {hide-from-toc} [Expression assistant](using/building-journeys/expression/expression-agent.md)
+    + [Generate expressions with the Expression Assistant](using/building-journeys/expression/expression-agent.md)
     + Syntax {#syntax}
       + [Syntax](/help/rp_landing_pages/syntax-landing-page.md)
       + [Advanced expression editor syntax](using/building-journeys/expression/generalities.md)
@@ -249,6 +250,7 @@ solution: Journey Optimizer
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
+    + {hide-from-toc} [Simulate content variations (GA review)](using/test-approve/simulate-sample-input-ga.md)
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)

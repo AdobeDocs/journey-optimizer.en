@@ -31,9 +31,7 @@ Consider a financial services email template with branching logic based on **inv
 
 To generate variations for your content and preview them, follow these steps:
 
-1. Open your content and select **[!UICONTROL Simulate content]** / **[!UICONTROL Simulate content variations]**.
-
-    ![Simulate content variations option](assets/simulate-sample.png)
+1. Open your content and click **[!UICONTROL Simulate content]**.
  
 2. Click the **[!UICONTROL Generate]** button.
 
