@@ -224,7 +224,7 @@ By default, journeys are configured to run once. To define a specific date/time 
 >
 >**Journey status and the 91-day global timeout:**
 >
->* **Non-recurring** Read audience journeys automatically transition to **Stopped** status once the last active profile exits — unless the journey includes nodes that cause waiting periods (Wait nodes, Reaction nodes, or event-triggered transitions), in which case the standard 91-day global timeout applies. [Learn more](end-journey.md#auto-stop-non-recurring)
+>* **One-shot** Read audience journeys move to the **Finished** status 91 days ([journey global timeout](journey-properties.md#global_timeout)) after the journey execution.
 >* **Recurring** Read audience journeys with no end date **remain Live** as long as the journey is published. They move to **Finished** status 91 days after the execution of their **last occurrence**.
 >* The 91-day timeout applies to individual **profiles** flowing through the journey (maximum time a profile can remain active), not to the journey's Live status.
 >* The 91-day **reporting window** is a separate concept: the UI shows performance data for approximately the last 91 days. Older data is not accessible in the UI but the journey continues to run. [Learn more](journey-properties.md#global_timeout)
