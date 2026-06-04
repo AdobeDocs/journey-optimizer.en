@@ -64,7 +64,7 @@ Before starting testing your content using sample input data, consider the follo
 
     >[!NOTE]
     >
-    >For now, inbox rendering and spam reports are not available in the current experience. To use these features, select the **[!UICONTROL Simulate content]** button from your content to access the previous user interface.
+    >For now, inbox rendering and spam reports are not available in the current experience. To use these features, click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to access the previous user interface.
 
 * **Attributes** - Both profile and contextual attributes are supported.
 
@@ -74,9 +74,9 @@ Before starting testing your content using sample input data, consider the follo
 
 ## Add and preview content variations
 
-To create variations for your content and preview them, click the **[!UICONTROL Simulate content]** button and choose **[!UICONTROL Simulate content variations]**.
+To create variations for your content and preview them, click the **[!UICONTROL Simulate content]** button.
 
-![Simulate content variations option](assets/simulate-sample.png)
+![Simulate content button](assets/simulate-sample.png)
 
 The main steps to test your content are as follows:
 
