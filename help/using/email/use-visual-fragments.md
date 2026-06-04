@@ -153,11 +153,11 @@ To customize editable fields in a fragment used in an email, follow these steps.
     >
     >To easily locate the editable fields in your content, you can also select them from the right-hand pane, but you can only edit these fields in the central canvas.
 
-1. For **[!UICONTROL Text]**, **[!UICONTROL Button]**, and **[!UICONTROL Html]** components, the Email Designer toolbar also gives access to rich text options — bold, italic, hyperlinks, and more.
+1. For **[!UICONTROL Text]**, **[!UICONTROL Button]**, and **[!UICONTROL Html]** components, the Email Designer toolbar also gives access to rich-text formatting options — bold, italic, hyperlinks, and more.
 
     >[!IMPORTANT]
     >
-    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable rich text, go to the fragment editor using the **[!UICONTROL Open fragment]** button and click **[!UICONTROL Switch to HTML mode]** to upgrade it to compatible mode. [Learn more](../content-management/customizable-fragments.md#rich-text-visual)
+    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable full formatting options, go to the fragment editor using the **[!UICONTROL Open fragment]** button and click **[!UICONTROL Enable]** to unlock rich-text mode. [Learn more](../content-management/customizable-fragments.md#rich-text-visual)
     >
     >![](assets/email-custom-fragment-compatibility.png){width="60%" align="center"}
 
