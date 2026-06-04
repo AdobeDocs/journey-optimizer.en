@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## June 2026 {#june-2026}
 
+* The **Get started with Decisioning** page has been updated with a process chart summarizing the end-to-end Decisioning workflow, from managing decision items and configuring selection strategies to embedding decision policies into a journey or campaign. [Read more](../experience-decisioning/gs-experience-decisioning.md#process)
+
 * The **Sender headers** documentation now clarifies that **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** must both be set or both left empty, otherwise journeys and campaigns cannot be published. [Read more](../email/header-parameters.md#sender-header)
 
 ## May 2026 {#may-2026}
