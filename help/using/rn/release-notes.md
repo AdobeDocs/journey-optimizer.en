@@ -82,7 +82,9 @@ topic_v2:
 
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From email prefix, Reply-to name, and Reply-to email, as well as the execution address, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
 
-  Header values can be set at the channel level and overridden per campaign using contextual data for more precise control. [Learn more](../orchestrated/activities/channels.md#configuration)
+  Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. [Learn more](../orchestrated/activities/channels.md#configuration)
 
   ![](../orchestrated/assets/email-header.png)
 
