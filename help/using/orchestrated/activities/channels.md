@@ -155,7 +155,7 @@ After selecting your channel configuration, enable **[!UICONTROL Override email 
 
 * **Execution address**: **[!UICONTROL Source]** (**[!UICONTROL Profile]** or **[!UICONTROL Target Dimension]**), and **[!UICONTROL Delivery address]**
 
-* **List unsubscribe**: **[!UICONTROL Mailto (unsubscribe)]** and **[!UICONTROL One-click unsubscribe URL]**
+<!--* **List unsubscribe**: **[!UICONTROL Mailto (unsubscribe)]** and **[!UICONTROL One-click unsubscribe URL]**-->
 
 For any field you leave blank, [!DNL Journey Optimizer] uses the value from the selected channel configuration.
 
