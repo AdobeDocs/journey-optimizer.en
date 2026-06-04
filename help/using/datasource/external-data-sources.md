@@ -255,6 +255,48 @@ Here is an example for the bearer authentication type:
 >* Cache duration helps to avoid too many calls to the authentication endpoints. Authentication token retention is cached in services, there is no persistence. If a service is restarted, it starts with a clean cache. The cache duration by default is 1 hour. In the custom authentication payload, it can be adapted by specifying another retention duration.
 >
 
+### Certificate-based custom authentication {#certificate-credential}
+
+For enterprise APIs that enforce certificate-based identity verification — such as Azure Entra ID — you can configure certificate-based custom authentication by adding `"subType": "certificateCredential"` to your custom authorization payload. Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token. No client secret is required.
+
+This option adds two optional fields to the standard `customAuthorization` schema: `subType` and `aud`. All other fields (`endpoint`, `method`, body params, `tokenInResponse`) remain unchanged. When `subType` is absent, behavior is identical to standard custom authentication — existing configurations are not affected.
+
+* **`subType`**: Set to `"certificateCredential"` to activate certificate-based authentication.
+* **`aud`**: The audience value included in the JWT client assertion. Defaults to the `endpoint` URL when not set — only specify this field if your Identity Provider expects a different audience value.
+
+The `client_assertion` and `client_assertion_type` fields are never authored by the user. They are automatically injected by the platform at runtime, immediately before the token endpoint call.
+
+Here is an example for the certificate credential authentication type:
+
+```json
+{
+  "type": "customAuthorization",
+  "subType": "certificateCredential",
+  "aud": "https://login.microsoftonline.com/{tenantId}/oauth2/v2.0/token",
+  "authorizationType": "bearer",
+  "endpoint": "https://login.microsoftonline.com/{tenantId}/oauth2/v2.0/token",
+  "method": "POST",
+  "body": {
+    "bodyType": "form",
+    "bodyParams": {
+      "client_id": "<your-client-id>",
+      "grant_type": "client_credentials",
+      "scope": "https://api.example.com/.default"
+    }
+  },
+  "tokenInResponse": "json://access_token"
+}
+```
+
+>[!CAUTION]
+>
+>Keep the following guardrails in mind when configuring certificate-based custom authentication:
+>
+>* **Token endpoint URL**: Must be HTTPS. Avoid URLs containing `?` — this is a sign the authorization endpoint was pasted instead of the token endpoint.
+>* **`client_id`**: Must not be blank and must have no leading or trailing whitespace. A blank value produces a valid-looking JWT that the Identity Provider will reject with an opaque error.
+>* **`scope`**: Expressed as a single space-separated string in `bodyParams`. Maximum 1000 characters total.
+>* **Certificate**: Adobe manages the certificate and private key — you never upload or enter a certificate. Before using the custom action in a live journey, you must register **Adobe's leaf certificate** (not the root CA) in your Identity Provider.
+
 Here is an example for the header authentication type:
 
 ```json
