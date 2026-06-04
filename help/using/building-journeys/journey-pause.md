@@ -18,12 +18,10 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 subfeature_v2:
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
@@ -80,7 +78,7 @@ To pause your journey, follow these steps:
 
 1. Select how to manage profiles which are currently in the journey. 
 
-    ![Pause journey options](assets/pause-confirm.png){width="50%" align="left"}
+    ![Pause journey options](assets/pause-confirm.png){width="50%"}
 
     You can:
 
@@ -93,7 +91,7 @@ To pause your journey, follow these steps:
 
 The maximum number of profiles that can be held in paused journeys for your Organization is visible in the journey inventory. It is only visible when at least one journey is paused. This indicator also shows the total number of paused journeys. It is refreshed every 30 minutes. Learn more in the [Guardrails and Limitations](#guardrails-and-limitations).
 
-![Number of paused journeys and profiles currently paused](assets/profiles-in-paused-journeys.png){width="50%" align="left"}
+![Number of paused journeys and profiles currently paused](assets/profiles-in-paused-journeys.png){width="50%"}
 
 From the list of your journeys, you can pause one or several **Live** journeys. To pause a group of journeys (_bulk pause_), select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
 

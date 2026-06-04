@@ -13,14 +13,8 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
-  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
-    internal-label: Integrations
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -33,6 +27,11 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 ---
 # Use decision policies in messages {#create-decision}
 
@@ -77,6 +76,16 @@ Once you've added a decision policy to your content, you can use attributes from
    >[!NOTE]
    >
    >If you use multiple decision policies in the same email (for example, one for the header and one for the footer), the same offer is deduplicated across placements: it is not rendered twice. The second decision policy will not return any content and will display a blank space, unless you have configured a fallback offer, in which case the fallback will be displayed instead.
+
+You can also insert the decision policy code when using the **[!UICONTROL Code your own]** mode in the Email Designer. Navigate to **[!UICONTROL Decision policies]** and select **[!UICONTROL Insert syntax]** — the placement selection UI will appear so you can assign a placement directly. [Learn how to code your own email content](../email/code-content.md).
+
+>[!AVAILABILITY]
+>
+>Inserting decision policies in **[!UICONTROL Code your own]** mode is in Limited Availability.
+
+>[!NOTE]
+>
+>In **[!UICONTROL Code your own]** mode, only one decision item can be returned per policy, because the **[!UICONTROL Repeat Grid]** component is not available.
 
 >[!TAB SMS]
 
@@ -153,6 +162,49 @@ Once your content is ready, review and publish your campaign or journey:
 * [Review and activate a campaign](../campaigns/review-activate-campaign.md)
 
 For code-based experiences, as soon as your developer makes an API or SDK call to fetch content for the surface defined in your channel configuration, the changes will be applied to your web page or app.
+
+## View decision policy details from the campaign summary {#decision-policy-summary}
+
+When an action or API-triggered [campaign](../campaigns/get-started-with-campaigns.md) uses decision policies in its content, the campaign summary page displays a **[!UICONTROL Decision policies]** section listing all policies used in the campaign.
+
+You can also access each decision policy's technical details and copy them to the clipboard, which can be useful to troubleshoot issues with Adobe Support or your engineering team.
+
++++ To access decision policy details and technical information, follow the steps below.
+
+1. Open the campaign summary by clicking **[!UICONTROL Review to activate]** during [configuration](../campaigns/review-activate-campaign.md#action-campaign-review), or by opening a campaign from the **[!UICONTROL Campaigns]** list.
+
+1. In the **[!UICONTROL Decision policies]** section, all the policies used in the campaign are listed.
+
+    ![](assets/campaign-summary-decision-policies.png)
+
+1. Select a decision policy or click **[!UICONTROL View all]**. You can review the details for each policy, including:
+
+    * The strategies used in the decision policy
+    * The number of items to return
+    * The collection, ranking method et eligibility rules used for each selection strategy
+    * The fallback offer used if no decision item is eligible
+
+    ![](assets/campaign-decision-policy-details.png)
+
+1. Click a collection to display all the decision items that it contains.
+    
+1. Click a decision item to access its details and edit it if needed - it opens in a new browser tab. Alternatively, click **[!UICONTROL View item]** to display decision items that are not in a collection.
+
+    ![](assets/campaign-decision-policy-collection.png)
+
+1. You can also view information about the ranking methods and eligibility rules used for each selection strategy.
+
+    ![](assets/campaign-decision-policy-eligibility.png){width="80%"}
+
+1. Back in the campaign summary, you can also select a decision policy from the **[!UICONTROL Actions]** section and click the **Information** icon to access the decision policy's technical details.
+
+    ![](assets/campaign-decision-policy-information.png)
+
+1. Click the **Copy to clipboard** icon to copy a JSON representation of the decision policy to the clipboard.
+
+    The copied JSON includes your organization name and ID, sandbox name, decision policy ID, and the full decision policy structure. You can share this information with Adobe Support or your engineering team to troubleshoot decision policy issues faster.
+
++++
 
 ## Use reporting dashboards
 

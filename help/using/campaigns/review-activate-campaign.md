@@ -16,11 +16,13 @@ product_v2:
 feature_v2:
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
 subfeature_v2:
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -33,7 +35,7 @@ topic_v2:
 ---
 # Review and activate the Action campaign {#action-campaign-review}
 
-Once your Action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:
+Once your Action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow the steps below.
 
 >[!IMPORTANT]
 >
@@ -48,6 +50,8 @@ Once your Action campaign has been configured, you need to review its parameter 
     In case of errors, you cannot activate the campaign. Resolve the errors before proceeding.
 
     ![](assets/create-campaign-alerts.png)
+
+1. When a campaign uses [decision policies](../experience-decisioning/create-decision.md) in its content, you can review each policy's structure and copy technical details directly from the campaign summary. [Learn how](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
 
 1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
 

@@ -10,6 +10,14 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: expression, editor, about, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: e51e8901-97d9-4f7d-a835-503025a90e32
+    internal-label: Advanced expression editor
+  - id: ac5d9310-7772-40fb-9d78-864562e1bfd6
+    internal-label: Operators
 ---
 # Add personalization {#build-personalization-expressions}
 

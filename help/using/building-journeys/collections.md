@@ -14,23 +14,13 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
@@ -143,7 +133,7 @@ You can see that `products` is an array of two objects. You need to have at leas
 
 1. For each field, define the label which will be displayed in the journey canvas.
 
-   ![Filter collection function with condition builder interface](assets/uc-collection-2.png){width="70%" align="left"}
+   ![Filter collection function with condition builder interface](assets/uc-collection-2.png){width="70%"}
 
 1. Create your journey and add the custom action you created. Learn more on [this page](../building-journeys/using-custom-actions.md).
 
@@ -153,7 +143,7 @@ You can see that `products` is an array of two objects. You need to have at leas
 
 1. For each of the following object field, type the corresponding field name from the source XDM schema. If the names are identical, this is not needed. In our example, we only need to define `product id` and "color".
 
-   ![Collection sort function with ordering configuration](assets/uc-collection-4.png){width="50%" align="left"}
+   ![Collection sort function with ordering configuration](assets/uc-collection-4.png){width="50%"}
 
 For the array field, you can also use the advanced expression editor to perform data manipulation. In the following example, we use the [filter](functions/list-functions.md#filter) and [intersect](functions/list-functions.md#intersect) functions:
 
@@ -217,7 +207,7 @@ While collections in custom actions provide flexibility for passing dynamic data
 
 For heterogeneous types and arrays of arrays, the array is defined with the listAny type. You can only map individual items, but cannot change the array to variable.
 
-![Heterogeneous collection with mixed data types and field selection](assets/uc-collection-heterogeneous.png){width="70%" align="left"}
+![Heterogeneous collection with mixed data types and field selection](assets/uc-collection-heterogeneous.png){width="70%"}
 
 Example of heterogenous type:
 

@@ -16,15 +16,11 @@ product_v2:
 feature_v2:
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 subfeature_v2:
-  - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
-    internal-label: Data source configuration
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
 role_v2:

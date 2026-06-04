@@ -9,6 +9,8 @@ role: User, Developer
 level: Intermediate, Experienced
 keywords: journey, use case
 version: Journey Orchestration
+feature_v2: []
+subfeature_v2: []
 ---
 # Use case: create a custom action to send data to [!DNL Adobe Experience Platform]{#send-data-to-aep}
 

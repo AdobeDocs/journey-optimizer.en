@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
@@ -308,10 +306,10 @@ To create an IP warmup plan, follow the steps below.
     >The campaigns you want to associate with your IP warmup plan must use the same configuration. [Learn how to create an IP warmup campaign](ip-warmup-campaign.md)
 
 1. Upload the Excel file containing your IP warmup plan. [Learn more](#prepare-file)
-    
+
     <!--
     You can also download the Excel template from the [!DNL Journey Optimizer] user interface and upload it after filling it with the IP warmup details.
--->
+    -->
 
     ![](assets/ip-warmup-upload-success.png)
 

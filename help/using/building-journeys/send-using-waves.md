@@ -10,6 +10,8 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: waves, batches, schedule, journey, read audience, deliverability
 exl-id: 1aaff17f-aa08-4f10-903c-8335a86ac6eb
+feature_v2: []
+subfeature_v2: []
 ---
 # Send using waves in journeys {#send-using-waves-journeys}
 

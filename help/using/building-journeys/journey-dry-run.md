@@ -18,12 +18,10 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 subfeature_v2:
   - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
     internal-label: Journey design
@@ -33,8 +31,6 @@ subfeature_v2:
     internal-label: Custom actions
   - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
     internal-label: Action activities
-  - id: da923278-9c80-47b0-bebd-b68c341e76fb
-    internal-label: Publishing
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
 role_v2:
@@ -91,15 +87,16 @@ During the Dry Run, the journey runs in simulation mode, applying the following 
 * **Channel action** nodes including Email, SMS or Push notifications are not executed. 
 * **Custom actions** are disabled during Dry run, and their responses are set to null.
 
-    To enhance readability, custom actions and channel activities appear greyed out during the execution of a Dry run.
+  To enhance readability, custom actions and channel activities appear greyed out during the execution of a Dry run.
 
-    ![Greyed out action activities in a Dry run journey](assets/dry-run-greyed-activities.png){width="80%" align="left"}
+  ![Greyed out action activities in a Dry run journey](assets/dry-run-greyed-activities.png){width="80%"}
 
 * **Data sources**, including external data sources, and **Wait** activities are disabled by default during Dry run. However you can change this behavior [when activating the Dry run mode](#journey-dry-run-start).
 
 * **Reaction** nodes are not executed: all profiles entering it will exit with success. However, the following priority rules apply:
-    * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
-    * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
+
+  * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
+  * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
 
 >[!CAUTION]
 >
@@ -120,7 +117,7 @@ To activate Dry run, follow these steps:
 
 1. Select the if you want to enable or disable **Wait** activities and **External data sources** calls, and confirm the Dry run publication.
 
-    ![Confirm the journey dry run publication](assets/dry-run-publish.png){width="50%" align="left"}
+    ![Confirm the journey dry run publication](assets/dry-run-publish.png){width="50%"}
 
     A status message, **[!UICONTROL Activating Dry run]**, appears while the transition is happening.
 
@@ -154,7 +151,7 @@ Dry run journeys can also be stopped manually. To deactivate the Dry run mode, f
 1. Select the **[!UICONTROL Close]** button to end the test.
     Links to last 24h and all time reports are available in the confirmation screen.
 
-    ![Stop the journey dry run execution](assets/dry-run-stop.png){width="50%" align="left"}
+    ![Stop the journey dry run execution](assets/dry-run-stop.png){width="50%"}
 
 1. Click **[!UICONTROL Back to Draft]** to confirm.
 

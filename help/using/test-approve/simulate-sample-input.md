@@ -15,17 +15,13 @@ product_v2:
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
     internal-label: Proofs
-  - id: b5cb2dff-e9ba-4e50-a3eb-6a50eef729b8
-    internal-label: Email rendering
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
+    internal-label: Approval workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -142,6 +138,14 @@ Once variants have been added, you can use them to preview your content in the r
 
 ### Preview content variations {#preview}
 
+<!--
+The preview screen uses a **side-by-side layout** that displays multiple profiles simultaneously, so you can compare how your content renders for different recipients at a glance without switching between variants.
+
+![](assets/simulation-preview-redesign.png)
+
+To preview your content, select a variant from the list — the preview pane updates to show the content rendered with that variant's values. Select multiple variants to display them side by side for quick comparison.
+-->
+
 To preview your content using a variant, select the relevant variant from the list to update the content in the preview pane with the information entered for this variant.
 
 In the example below, we have added two variants for the email subject line:
@@ -155,7 +159,7 @@ For multilingual content and experimentation, a dropdown is available to switch 
 ![Language or treatment selector](assets/simulate-custom-experiment.png)
 
 You can remove a variant at any time using the ellipsis button in the upper-right corner and selecting **[!UICONTROL Remove]**. To edit information for a variant, click the ellipsis button and select **[!UICONTROL Edit]**.
-
+ 
 ### Send proofs {#proofs}
 
 Journey Optimizer allows you to send proofs to email addresses while impersonating one or multiple variants that you have added in the simulation screen. The steps are as follows:

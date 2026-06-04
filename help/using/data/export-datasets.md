@@ -13,17 +13,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
 subfeature_v2:
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
+    internal-label: Journey Optimizer schemas
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
+  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
+    internal-label: Data ingestions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -120,7 +118,7 @@ Understand from the table below which Journey Optimizer datasets you can export.
 | AJO Entity Dataset | Dataset to store entity metadata for messages sent to the end user.  |
 | AJO Inbound Activity Event Dataset | Dataset for Journey Optimizer web & inApp channels for delivery & interaction events. |
 | AJO Interactive Messaging Profile Dataset | Stores profiles created to support API-triggered campaigns |
-| AJO Message Feedback Event Dataset | Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. This dataset includes events for all channels: Email, SMS/MMS, Direct Mail, etc.|
+| AJO Message Feedback Event Dataset | Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. This dataset includes events for all channels: Email, SMS/RCS/MMS, Direct Mail, etc.|
 | AJO Message Export Dataset | Stores sent email and SMS message content that has been marked for export. Data is retained for seven calendar days from ingestion. |
 | AJO Profile Counters Extension | Holds a map of objects containing counter_value and expiryDate, keyed by counter_id |
 | AJO Push Profile Dataset | Stores push tokens of a profile. |

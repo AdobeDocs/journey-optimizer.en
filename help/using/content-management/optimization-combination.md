@@ -22,6 +22,10 @@ topic_v2:
     internal-label: Experimentation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
+feature_v2: []
+subfeature_v2:
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
 ---
 # Combine targeting and experimentation {#combination}
 

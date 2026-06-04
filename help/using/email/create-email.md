@@ -16,8 +16,6 @@ product_v2:
 feature_v2:
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
@@ -27,8 +25,6 @@ subfeature_v2:
     internal-label: Proofs
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
   - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
     internal-label: Email design
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7

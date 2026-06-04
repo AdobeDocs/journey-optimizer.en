@@ -4,12 +4,13 @@ product: journey optimizer
 title: Generate expressions with the Expression Assistant
 description: Learn how to use the Expression Assistant in Adobe Journey Optimizer to generate expressions directly in the Journey advanced expression editor using natural language prompts.
 feature: Journeys
-topic: Content Management, Artificial Intelligence
+topic: Content Management
 role: User
 level: Intermediate
 badge: label="Public beta" type="Informative"
 mini-toc-levels: 2
-hide: true
+feature_v2: []
+subfeature_v2: []
 ---
 
 # Generate expressions with the Expression Assistant {#expression-agent}

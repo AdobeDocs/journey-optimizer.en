@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
 subfeature_v2:
   - id: c2062154-398f-466d-bbc2-4e0d0c3f37a9
     internal-label: Journeys configuration
@@ -29,8 +27,6 @@ subfeature_v2:
     internal-label: Data source configuration
   - id: efb19423-4da4-4fd1-88d8-5ee8c71ae766
     internal-label: Application settings
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

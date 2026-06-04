@@ -9,17 +9,17 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization
 subfeature_v2:
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
   - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
     internal-label: Business rules
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -93,3 +93,4 @@ Rule sets allow you to **group together multiple rules** and apply them to the j
 * **[Frequency capping by channel](channel-capping.md)** - Set channel-level frequency caps to prevent over-messaging.
 * **[Set quiet hours](quiet-hours.md)** - Define time-based exclusions for message delivery.
 * **[Conflict management tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Step-by-step video tutorials.
+* **[Journey Optimizer use cases](../building-journeys/jo-use-cases.md)** - Browse practical patterns, including frequency capping and journey suppression logic.

@@ -9,6 +9,8 @@ level: Experienced
 keywords: function, expressions, editor, journey, data, manipulation
 exl-id: 5b978eef-7d3e-41fe-bb08-0cf37c3b125d
 version: Journey Orchestration
+feature_v2: []
+subfeature_v2: []
 ---
 # Functions {#functions}
 

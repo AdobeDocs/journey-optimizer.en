@@ -12,8 +12,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
@@ -116,6 +114,12 @@ To easily navigate your content templates, use folders to organize them more eff
 >[!NOTE]
 >
 >When a template is edited or deleted, campaigns or journeys including content created using this template are not impacted.
+
+## Bulk actions {#bulk-actions-templates}
+
+You can select multiple templates at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and archiving. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
+
+You can also sort the template list by clicking most column headers, and resize columns by dragging the column border to fit the data you need.
 
 ## [!BADGE limited Availability]{type=Informative} display templates as thumbnails {#template-thumbnails}
 

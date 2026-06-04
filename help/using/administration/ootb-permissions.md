@@ -14,35 +14,11 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-subfeature_v2:
-  - id: b2044d1a-3b9b-4bf9-af40-0a221e7e1e53
-    internal-label: AI Assistant
-  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
-    internal-label: Audiences
-  - id: c343082f-e963-4f57-a96b-b64d27f8118e
-    internal-label: IP warmup plans
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
-  - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
-    internal-label: Data source configuration
-  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
-    internal-label: Subdomains
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+subfeature_v2: []
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -81,7 +57,7 @@ Built-in permissions represent the different permissions that can be assigned to
 |-|-|
 |AI assistant|**[!DNL Enable AI Assistant]**: enable or access AI-powered campaign and audience features. </br>**[!DNL Generate content]**: access to AI Assistant  in Journey Optimizer. </br>**[!DNL Manage brand kit]**: read, create, edit, and delete brands. </br>**[!DNL View operational insights]**: read-only access to system-level insights and monitoring dashboards. |
 |Campaigns| **[!DNL Approve & publish Campaigns]**: right to approve and publish campaigns when a policy is applied. </br>**[!DNL Manage campaigns]**: read, create, edit, and delete campaigns. </br>**[!DNL Publish campaigns]**: right to publish campaigns.</br>**[!DNL View campaigns]**: read-only access to campaigns. </br>**[!DNL View campaigns report]**: read and edit campaign reports.|
-|Channel configurations|**[!DNL Export suppression list]**: access to export suppression list as a CSV file.</br>**[!DNL Manage alerts]**: enable/disable alerts for campaigns, messages and entitlements.</br> **[!DNL Manage file routing]**:  read, create, edit, and delete file routing configurations. </br> **[!DNL Manage IP pools]**: read, create, edit, and delete ip pool. </br>**[!DNL Manage landing page settings]**: read, create, edit, and delete landing page settings.</br> **[!DNL Manage messages general settings]**: read, create, edit, and delete message general settings.</br>**[!DNL Manage messages presets]**: read, create, edit, and delete Channel configurations, API credentials and Webhooks.</br>**[!DNL Manage PTR records]**: read and edit PTR records. </br>**[!DNL Manage SMS settings]**: read, create, edit, and delete SMS settings. </br>**[!DNL Manage SMS subdomains]**: read, create, edit, and delete SMS subdomains.</br> **[!DNL Manage Seedlist]**: read, create, edit, and delete Seedlist. </br> **[!DNL Manage subdomains delegation]**: read, create, edit, and delete subdomain delegation. </br>**[!DNL Manage suppression rules]**: access read, create, edit and delete suppression rules.</br> **[!DNL Manage web subdomain]**: read, create, edit, and delete web subdomains. </br>**[!DNL View file routing]**: read-only access to file routing configurations. </br>**[!DNL View messages general settings]**: read-only access to message general settings.</br> **[!DNL View messages presets]**: read-only access to messages presets. </br> **[!DNL View PTR records]**: read-only access to PTR records.</br>**[!DNL View suppression list]**: read and export local suppression list.|
+|Channel configurations|**[!DNL Export suppression list]**: access to export suppression list as a CSV file.</br>**[!DNL Manage alerts]**: enable/disable alerts for campaigns, messages and entitlements.</br> **[!DNL Manage file routing]**:  read, create, edit, and delete file routing configurations. </br> **[!DNL Manage IP pools]**: read, create, edit, and delete ip pool. </br>**[!DNL Manage Key Registry]**: view, create, rotate, and revoke keys in the key registry.</br>**[!DNL Manage landing page settings]**: read, create, edit, and delete landing page settings.</br> **[!DNL Manage messages general settings]**: read, create, edit, and delete message general settings.</br>**[!DNL Manage messages presets]**: read, create, edit, and delete Channel configurations, API credentials and Webhooks.</br>**[!DNL Manage PTR records]**: read and edit PTR records. </br>**[!DNL Manage SMS settings]**: read, create, edit, and delete SMS settings. </br>**[!DNL Manage SMS subdomains]**: read, create, edit, and delete SMS subdomains.</br> **[!DNL Manage Seedlist]**: read, create, edit, and delete Seedlist. </br> **[!DNL Manage subdomains delegation]**: read, create, edit, and delete subdomain delegation. </br>**[!DNL Manage suppression rules]**: access read, create, edit and delete suppression rules.</br> **[!DNL Manage web subdomain]**: read, create, edit, and delete web subdomains. </br>**[!DNL View file routing]**: read-only access to file routing configurations. </br>**[!DNL View Key Registry]**: read-only access to the key registry listing and key details.</br>**[!DNL View messages general settings]**: read-only access to message general settings.</br> **[!DNL View messages presets]**: read-only access to messages presets. </br> **[!DNL View PTR records]**: read-only access to PTR records.</br>**[!DNL View suppression list]**: read and export local suppression list.|
 |Dashboards| **[!DNL Export dashboard data]**: export dashboard visualizations and underlying data for offline analysis. </br>**[!DNL Manage custom dashboards]**: allows you to create a new dashboard or edit an existing dashboard.</br>**[!DNL Manage standard dashboards]**: allows you to create custom widgets and edit the widget schema through the Widget library.</br>**[!DNL View custom dashboards]**: read-only access to user defined dashboards. </br>**[!DNL View license usage dashboards]**: read-only access to the [license usage dashboard](../audience/license-usage.md). </br>**[!DNL View standard dashboards]**: read-only access to the Profiles, Destinations, and Audiences dashboards.|
 |Data collection|**[!DNL Manage datastream]**: read, create, and edit datastreams.</br>**[!DNL View datastream]**: read-only access to datastreams.|
 |Data governance|**[!DNL Manage usage labels]**: read, create, edit, and delete labels.</br>**[!DNL Manage data usage policies]**: read, create, edit, and delete data usage policies.</br>**[!DNL View data usage policies]**: read-only access for data usage policies belonging to your organization.</br>**[!DNL View privacy console]**: read-only access to privacy requests and privacy-related operations for your organization.</br>**[!DNL View user activity log]**: read-only access to view recorded audit logs of Platform activities.|
@@ -107,4 +83,3 @@ Built-in permissions represent the different permissions that can be assigned to
 |Translation service|**[!DNL Manage translation in house]**: read, create, edit, and delete translation in house.</br>**[!DNL Manage translation projects]**: read, create, edit, and delete translation projects.</br> **[!DNL Manage translation reviews]**: read, create, edit, and delete translation reviews.</br>**[!DNL Manage translation settings]**: read, create, edit, and delete translation settings.</br>**[!DNL Manage translation tasks]**: read, create, edit, and delete translation tasks.</br>**[!DNL View translation in house]**: read-only access for translation in house.</br>**[!DNL View translation projects]**: read-only access for translation projects.</br>**[!DNL View translation reviews]**: read-only access for translation reviews.</br>**[!DNL View translation tasks]**: read-only access for translation tasks.|
 
 {style="table-layout:fixed"}
-

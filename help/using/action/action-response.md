@@ -20,8 +20,6 @@ feature_v2:
     internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration
@@ -96,7 +94,7 @@ The **URL configuration** section has been renamed **Endpoint configuration**.
 
 In the **Method** drop-down, you can now select **GET**.
 
-![](assets/action-response1.png){width="70%" align="left"}
+![](assets/action-response1.png){width="70%"}
 
 ### Payloads {#payloads-new}
 
@@ -109,7 +107,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 > 
 >Both these fields are optional.
 
-![](assets/action-response2.png){width="70%" align="left"}
+![](assets/action-response2.png){width="70%"}
 -->
 
 ## Configure the custom action {#config-response}
@@ -118,7 +116,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 1. Click inside the **Response** (success response) field. 
 
-    ![](assets/action-response2.png){width="80%" align="left"}
+    ![](assets/action-response2.png){width="80%"}
 
 1. Paste an example of the payload returned by the call. Verify that the field types are correct (string, integer, etc.). Here is an example of response payload captured during the call. Our local endpoint sends the number of loyalty points and the status of a profile. 
 
@@ -129,7 +127,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
     "points": 1290 }
     ```
 
-    ![](assets/action-response4.png){width="80%" align="left"}
+    ![](assets/action-response4.png){width="80%"}
 
     Each time the API is called, the system will retrieve all the fields included in the payload example.
 
@@ -145,7 +143,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 1. Let's also add the customerID as a query parameter.
 
-    ![](assets/action-response9.png){width="80%" align="left"}
+    ![](assets/action-response9.png){width="80%"}
 
 1. Click **Save**.
 
