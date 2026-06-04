@@ -159,7 +159,7 @@ After selecting your channel configuration, enable **[!UICONTROL Override email 
 
 For any field you leave blank, [!DNL Journey Optimizer] uses the value from the selected channel configuration.
 
-![image showing the Content experiment section](../assets/email-header.png)
+![image showing the email header personalization settings](../assets/email-header.png)
 +++
 
 +++**Track engagement** (Email and SMS).
