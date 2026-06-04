@@ -209,6 +209,14 @@ Mutual TLS (mTLS) authentication is supported in custom actions. There is no add
 >* Adobe does not currently send proactive notifications when a certificate is rotated. It is your responsibility to monitor for certificate updates and keep your trust store current.
 >* Trust validation should be based on the certificate chain up to the Root CA (DigiCert) rather than pinning to a specific leaf certificate fingerprint.
 
+### Certificate-based custom authentication {#certificate-based-auth}
+
+For enterprise APIs that enforce certificate-based identity verification — such as Azure Entra ID — custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
+
+Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and automatically exchange it for an access token. No client secret is required.
+
+For the full payload structure, field descriptions, and configuration guardrails, see [Certificate-based custom authentication](../datasource/external-data-sources.md#certificate-credential).
+
 ## Define the payload parameters {#define-the-message-parameters}
 
 You can define the payload parameter as detailed below:
