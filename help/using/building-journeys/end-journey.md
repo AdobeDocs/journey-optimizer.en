@@ -83,7 +83,7 @@ After the **91-day journey global timeout**, a Read audience journey switches to
 
 ### Automatic journey stop for non-recurring audiences {#auto-stop-non-recurring}
 
-A **non-recurring Read Audience journey** now automatically transitions to **[!UICONTROL Stopped]** status once the last profile exits the journey. This eliminates the previous behavior where non-recurring Read Audience journeys remained in **Live** status until the 91-day global timeout expired, even though no profiles were actively flowing through them.
+A **non-recurring Read Audience journey** automatically transitions to **[!UICONTROL Stopped]** status once the last profile exits the journey. This eliminates the previous behavior where non-recurring Read Audience journeys remained in **Live** status until the 91-day global timeout expired, even though no profiles were actively flowing through them.
 
 **How it works:**
 
