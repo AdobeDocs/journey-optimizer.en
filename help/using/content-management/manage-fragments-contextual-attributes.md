@@ -16,8 +16,6 @@ product_v2:
 feature_v2:
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
 subfeature_v2:
@@ -69,7 +67,7 @@ To add contextual attributes to a published fragment, follow the steps below.
 
 1. Select the published fragment and click **[!UICONTROL Modify]** to create a draft version.
 
-    ![](assets/fragment-live-modify.png){width="70%" align="left"}
+    ![](assets/fragment-live-modify.png){width="70%"}
 
 1. Click **[!UICONTROL Edit]** to open the fragment content editor.
 

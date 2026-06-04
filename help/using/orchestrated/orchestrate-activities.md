@@ -12,10 +12,9 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 # Orchestrate campaign activities {#orchestrate}
 
@@ -108,6 +107,8 @@ To achieve this, activities below have been added:
 * A **[!UICONTROL Combine]** activity groups together customers with an email and those who've made a purchase of at least 100$,
 * A **[!UICONTROL Combine]** activity excludes customers with less than 50 loyalty points,
 * An **[!UICONTROL Email delivery]** activity sends an email to the resulting customers. 
+
+When you reach the end of a branch, you can add an **[!UICONTROL End]** activity to mark completion on the canvas. You can also configure that **[!UICONTROL End]** activity to send a signal to another Orchestrated campaign that is set to **[!UICONTROL Triggered by a signal]**, and pass parameters in the payload. [Learn more](trigger-orchestrated-campaign.md#signal-end).
 
 ## Next steps {#next}
 

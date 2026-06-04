@@ -14,13 +14,9 @@ product_v2:
 feature_v2:
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
-subfeature_v2:
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+subfeature_v2: []
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer

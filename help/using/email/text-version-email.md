@@ -9,6 +9,8 @@ role: User
 level: Intermediate
 keywords: text, email, version, plain, editor
 exl-id: 4bb36810-65fb-4a9b-9bea-e56ed2c1eea3
+feature_v2: []
+subfeature_v2: []
 ---
 # Manage the text version of an email {#text-version-email}
 
@@ -216,7 +218,8 @@ FEATURED PRODUCTS
 
 ```
 We'd love your feedback!
-------------------------
+---------------------
+---
 
 Please take 2 minutes to complete our survey:
 https://example.com/survey/customer-feedback

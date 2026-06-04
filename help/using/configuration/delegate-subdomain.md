@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
@@ -278,7 +276,7 @@ First, perform the following steps in [!DNL Journey Optimizer]:
 
 1. Undelegate any landing page subdomains, SMS subdomains, and web subdomains associated with this subdomain.
 
-    You need to raise a dedicated request for each [landing page](../landing-pages/lp-subdomains.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-subdomain), or [web subdomain](../web/web-delegated-subdomains.md#undelegate-subdomain).
+    You need to raise a dedicated request for each [landing page](../landing-pages/lp-subdomains.md#undelegate-subdomain), [SMS](../mobile/mobile-subdomains.md#undelegate-subdomain), or [web subdomain](../web/web-delegated-subdomains.md#undelegate-subdomain).
 
 1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/manage-campaigns.md#stop)
 

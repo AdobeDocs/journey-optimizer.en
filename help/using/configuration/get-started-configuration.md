@@ -67,8 +67,8 @@ To be able to send messages, you need to go through the configuration steps list
     <table style="table-layout:fixed"><tr style="border: 0;">
     <td><a href="../email/get-started-email-config.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a>
     <div align="center"><a href="../email/get-started-email-config.md"><strong>Email</strong></a></div></td>
-    <td><a href="../sms/sms-configuration.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
-    <div align="center"><a href="../sms/sms-configuration.md"><strong>SMS</strong></a></div></td>
+    <td><a href="../mobile/mobile-configuration.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+    <div align="center"><a href="../mobile/mobile-configuration.md"><strong>SMS</strong></a></div></td>
     <td><a href="../push/push-configuration.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
     <div align="center"><a href="../push/push-configuration.md"><strong>Push notification</strong></a></div></td>
     <td><a href="../direct-mail/direct-mail-configuration.md"><img alt="direct mail" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
@@ -96,7 +96,7 @@ To be able to send messages, you need to go through the configuration steps list
 
 1. Depending on the channels you are using, your environments and your needs, you must also perform the following steps:
 
-    * Subdomain configuration and delegation for your channels, such as [emails](about-subdomain-delegation.md), [SMS](../sms/sms-subdomains.md), [landing pages](../landing-pages/lp-subdomains.md), and [web experiences](../web/web-delegated-subdomains.md).
+    * Subdomain configuration and delegation for your channels, such as [emails](about-subdomain-delegation.md), [SMS](../mobile/mobile-subdomains.md), [landing pages](../landing-pages/lp-subdomains.md), and [web experiences](../web/web-delegated-subdomains.md).
 
     * Set up IP warmup plans for optimal deliverability. [Learn more](ip-warmup-gs.md)
 

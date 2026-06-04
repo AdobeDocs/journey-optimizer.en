@@ -19,25 +19,13 @@ feature_v2:
     internal-label: Journey Optimizer campaigns
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
   - id: f7479fa1-474b-479d-8c98-f6cee5865a38
     internal-label: API triggered campaigns
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -269,7 +257,7 @@ Create compelling messages for your audience:
 
 * Use the **Email Designer** for rich email experiences
 * Configure **push notifications** with images and deep links
-* Design **SMS/MMS messages** with personalization
+* Design **SMS/RCS/MMS messages** with personalization
 * Create **in-app** and **web** experiences
 * Add **personalization** using profile attributes and contextual data
 

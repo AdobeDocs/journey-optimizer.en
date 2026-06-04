@@ -10,6 +10,14 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: expression, editor, about, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: e51e8901-97d9-4f7d-a835-503025a90e32
+    internal-label: Advanced expression editor
+  - id: ac5d9310-7772-40fb-9d78-864562e1bfd6
+    internal-label: Operators
 ---
 # Add personalization {#build-personalization-expressions}
 
@@ -149,6 +157,10 @@ In the navigation pane, additional features are available to help you build your
 * **[!UICONTROL Conditions]** - Leverage conditional rules created in the library to add dynamic content into your messages. This allows you to create multiple variants of your message based on conditions. [Learn how to create dynamic content](../personalization/get-started-dynamic-content.md)
 
 * **[!UICONTROL Fragments]** - Leverage expression fragments that have been created or saved to the current sandbox. A fragment is a reusable component that can be referenced across [!DNL Journey Optimizer] campaigns and journeys. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble contents in an improved design process. [Learn how to use expression fragments for personalization](../personalization/use-expression-fragments.md)
+
+>[!TIP]
+>
+>Looking for ready-to-use expressions? The **[Personalization recipes](personalization-recipes.md)** page provides copy-paste patterns for the most common use cases: date formatting, countdown timers, conditional fallbacks, time-only display, and more.
 
 Once your personalization expression is ready, you need to have it validated by the personalization editor. Learn more in [this section](../personalization/personalization-build-expressions.md).
 

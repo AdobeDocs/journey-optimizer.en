@@ -10,6 +10,10 @@ level: Intermediate
 badge: label="Private beta" type="Informative"
 hide: true
 exl-id: 9b7fbd43-3d90-458b-8a2f-0bf0ac5437c3
+feature_v2: []
+subfeature_v2:
+  - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
+    internal-label: Approval workflows
 ---
 # Auto-generation of content variants (Beta){#auto-generate-variants}
 
@@ -27,9 +31,7 @@ Consider a financial services email template with branching logic based on **inv
 
 To generate variations for your content and preview them, follow these steps:
 
-1. Open your content and select **[!UICONTROL Simulate content]** / **[!UICONTROL Simulate content variations]**.
-
-    ![Simulate content variations option](assets/simulate-sample.png)
+1. Open your content and click **[!UICONTROL Simulate content]**.
  
 2. Click the **[!UICONTROL Generate]** button.
 

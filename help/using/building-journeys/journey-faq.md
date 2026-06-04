@@ -19,43 +19,13 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
-  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
-    internal-label: Integrations
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
-    internal-label: Orchestration activities
-  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
-    internal-label: Wait activity
-  - id: cce82f05-fc3c-4af7-85ff-8bba603861a7
-    internal-label: Condition activities
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: d08afb72-92f6-4856-88e3-11ec34313c2f
-    internal-label: Event configuration
-  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
-    internal-label: Action activities
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
-  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
-    internal-label: Reaction events
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -136,7 +106,7 @@ Learn more about [journey types](entry-management.md#types-of-journeys).
 A journey consists of:
 
 * **Events**: Entry points that trigger the journey (e.g., profile qualification, business events)
-* **Orchestration activities**: Logic components like conditions, wait, read audience, and end
+* **Orchestration activities**: Logic components like conditions, wait, read audience, journey fragments, and end
 * **Actions**: Activities that perform tasks, such as sending messages, updating profiles, or calling external APIs
 * **Built-in channel actions**: Native messaging capabilities for email, SMS, push, and other channels
 * **Custom actions**: Integration with third-party systems
@@ -426,6 +396,29 @@ Learn more about [wait activities](wait-activity.md) and [journey capping](../co
 
 +++
 
++++ What are Journey Fragments and when should I use them?
+
+**Journey Fragments** are reusable sets of journey nodes that you build once and insert into any journey across your sandbox. They are available as an orchestration activity in the journey canvas.
+
+**When to use Journey Fragments**:
+
+* You have logic that repeats across multiple journeys (e.g., eligibility checks, preferred channel routing, welcome sequences)
+* You want to enforce consistency across teams — define the pattern once, reuse it everywhere
+* You want to speed up journey creation by avoiding rebuilding common node sequences from scratch
+
+**Key behaviors to be aware of**:
+
+* Inserting a fragment creates a **static copy** of its nodes — updates to the original fragment are **not** propagated to journeys that already use it
+* Only **Active** fragments can be inserted into a journey
+* Fragments are sandox-scoped and support a maximum of 20 nodes and 200 active fragments per sandbox
+* [Jump](jump.md) activities are not allowed inside a fragment
+
+**Difference from the Jump activity**: The [Jump activity](jump.md) redirects profiles to another live journey at runtime. Journey Fragments copy nodes into the current journey at design time — they are a build-time reuse mechanism, not a runtime routing mechanism.
+
+Learn more about [Journey Fragments](journey-fragments.md).
+
++++
+
 ## Testing and publishing
 
 +++ How do I test my journey before publishing it?
@@ -667,7 +660,7 @@ Yes. Use an **[Optimize activity](conditions.md)** to route profiles based on th
 2. Create a path for each channel by checking the preferred channel profile attribute (e.g., `profile.preferredChannel`)
 3. Configure channel-specific paths:
    * **Email path**: Add an [email action](../email/create-email.md) with email-optimized content
-   * **SMS path**: Add an [SMS action](../sms/create-sms.md) with concise messaging
+   * **SMS path**: Add an [SMS action](../mobile/create-mobile-message.md) with concise messaging
    * **Push path**: Add a [push notification action](../push/create-push.md) with short, actionable content
    * **In-app path**: Add an [in-app message action](../in-app/create-in-app.md) for engaged app users
 4. Add a default path for profiles without a preference, routing them to your primary channel
@@ -975,8 +968,8 @@ As journeys approach 50 activities, they can become very complex and difficult t
 
 **Best practice**: Keep your journeys focused and manageable. If your journey is becoming complex, consider:
 
-* Breaking it into multiple journeys using the Jump activity
-* Creating reusable patterns across simpler journeys
+* Breaking it into multiple journeys using the [Jump activity](jump.md)
+* Extracting repeated logic into [Journey Fragments](journey-fragments.md) to reuse across journeys without rebuilding from scratch
 * Simplifying logic with more efficient conditions
 * Reviewing if all activities are necessary
 

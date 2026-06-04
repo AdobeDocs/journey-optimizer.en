@@ -19,35 +19,13 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
 subfeature_v2:
-  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
-    internal-label: Audiences
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
   - id: ba62ad25-65cb-4ea9-b7aa-0fa87c4a9fa0
     internal-label: Journey properties
-  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
-    internal-label: Wait activity
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
-  - id: d23fcf83-6e65-4279-a3fc-9ed74b042ff2
-    internal-label: Timezones
-  - id: d7dd6f7f-9e2a-47ee-a2bc-b7b9caaefc1d
-    internal-label: Profile entrance management
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -172,7 +150,7 @@ The **[!UICONTROL Current journey payload size]** field in the journey propertie
 
 Use this information to monitor the complexity of your journey before publishing. If the payload size approaches or exceeds the limit, journey publication fails. To reduce the size, consider simplifying the journey logic or reducing the number of activities.
 
-The default limit is 2 MB. Contact Adobe Customer Care if you need to request a higher limit for your organization.
+The default limit is 4 MB. Contact Adobe Customer Care if you need to request a higher limit for your organization.
 
 For full details on thresholds, warning and error messages, and troubleshooting steps, refer to [Journey payload size validation](../start/guardrails.md#journey-payload-size) and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys).
 
@@ -418,7 +396,7 @@ To **create** an exit criteria, follow these steps:
 
 You can add multiple exit criteria. The exit criteria is now active and will be evaluated at each step of the journey.
 
-![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%" align="left"}
+![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%"}
 
 
 ### Profile Attribute-based exit criteria {#profile-exit-criteria}

@@ -10,6 +10,8 @@ level: Intermediate
 keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
+feature_v2: []
+subfeature_v2: []
 ---
 # Simulate your journey{#simulate-journey}
   
@@ -33,10 +35,10 @@ Note that Journey Simulation is in **Limited availability**. To share feedback a
 
 >[!IMPORTANT]
 >
->You need the **Simulate journeys** permission to access the **[!UICONTROL Simulation]** feature. [Learn more](../administration/permissions.md)
+>You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
 
 Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, from the UI or a JSON file, save them for reuse, adjust or remove them from the list, and send them into the journey.
-
+ 
 ### Create simulated users
 
 The following steps show you how to create simulated users from the UI or by importing a JSON file.
@@ -174,8 +176,7 @@ If a journey contains any of the following nodes, it cannot be started in **[!UI
 | Supplemental ID (multiple re-entrance) | Concurrent re-entrance (several active instances for the same simulated user) prevents **[!UICONTROL Simulation]** from starting. |
 | Content Decision node | This activity must be removed or changed before you can simulate the journey. |
 | Dataset Lookup | Customer dataset lookups by key are not supported; journeys that include this activity cannot be run in **[!UICONTROL Simulation]**. |
-| Path Experimentation (Optimize — Experiment variant) | Not supported in **[!UICONTROL Simulation]**. You can still use **[!UICONTROL Optimize]** for flows that used to live under **[!UICONTROL Condition]** (for example, data source conditions). |
-| Path Targeting (Optimize, Targeting Rule variant) | Not supported in **[!UICONTROL Simulation]**. |
+| **[!UICONTROL Optimize]** activity | The following **[!UICONTROL Optimize]** methods are not supported in **[!UICONTROL Simulation]**: **[!UICONTROL Experiment]**, **[!UICONTROL Targeting rule]**, **[!UICONTROL Percentage split]**, **[!UICONTROL Time condition]**, **[!UICONTROL Condition]**, **[!UICONTROL Date condition]**, **[!UICONTROL Profile cap]**, and **[!UICONTROL External Data Source]**. Remove or change the node before you simulate. |
 | External audience attribute enrichment | Journeys that use personalized attributes from external audience sources will not start in **[!UICONTROL Simulation]** when this validation is active. |
 
 +++

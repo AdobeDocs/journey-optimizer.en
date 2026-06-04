@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Get started with direct mail
 description: Learn how to create a direct mail message in Journey Optimizer
 feature: Direct Mail
@@ -12,17 +14,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: cb1f1586-9fb4-4de2-8332-02cebb88d42d
+    internal-label: Direct mail
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -40,25 +40,37 @@ You will need to work with your chosen third-party direct mail provider to obtai
 
 Your use of mailing services is subject to additional terms and conditions from the applicable third-party direct mail provider.  Adobe does not control and is not responsible for your use of third-party products. For any issues or requests for assistance related to the mailing of your direct mail campaign, contact your chosen third-party direct mail provider.
 
+## Before you start {#before-you-start}
+
+Before you create direct mail messages, configure [file routing and a direct mail channel configuration](direct-mail-configuration.md). You also need audiences and profile data (such as postal addresses) in Adobe Experience Platform.
+
 The main steps to send direct mail messages are as follows:
 
-![](assets/dm-creation-process.png)
+![Direct mail creation workflow from configuration to delivery](assets/dm-creation-process.png)
 
 >[!AVAILABILITY]
 >
 >Direct mail messages can be created in the context of journeys and campaigns. They are not available for use in API-triggered campaigns.
 
-![](../rn/assets/do-not-localize/gif-dm.gif)
+![Animated overview of the direct mail channel in Journey Optimizer](../rn/assets/do-not-localize/gif-dm.gif)
 
-## Additional resources
+## Additional resources {#additional-resources}
 
 * **[Create direct mail](create-direct-mail.md)** - Learn how to create direct mail deliveries and configure extraction files for offline channels.
 * **[Configure direct mail channel](direct-mail-configuration.md)** - Set up direct mail surfaces and file routing configurations.
 * **[Test and send direct mail](test-send-direct-mail.md)** - Learn how to test, validate, and publish your direct mail deliveries.
 * **[Direct mail tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Explore step-by-step video tutorials on direct mail features and best practices.
 
-## How-to video
+## How-to video {#how-to-video}
 
 Learn how to leverage the Direct Mail channel in Adobe Journey Optimizer to automate and schedule direct mail deliveries within your journeys.
 
++++ See video
+
 >[!VIDEO](https://video.tv.adobe.com/v/3479162?quality=12)
+
++++
+
+For a written walkthrough of the same steps, see the [direct mail channel tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}.
+
+For common questions about direct mail, see the [Additional resources](#additional-resources) section above.

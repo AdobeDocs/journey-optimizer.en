@@ -12,11 +12,9 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 # Create and schedule an Orchestrated campaign {#create-first-campaign}
 
@@ -61,17 +59,17 @@ To create an Orchestrated campaign, follow these steps:
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_scheduler"
 >title="Scheduler"
->abstract="As a campaign manager, you can schedule campaigns to automatically launch at specific times, enabling precise timing and accurate targeting data for marketing communications."
+>abstract="As a campaign manager, you can schedule campaigns to launch automatically at specific times, or set them to **Triggered by a signal** so they start when called from the REST API or from another Orchestrated campaign's **End** activity. [Learn more](trigger-orchestrated-campaign.md)"
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_schedule_validity"
 >title="Scheduler validity"
->abstract="You can define a validity period for the scheduler. It can be permanent (default), or can be valid until a specific date."
+>abstract="For scheduled campaigns, define a validity period for the scheduler. It can be permanent (default), or valid until a specific date."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_schedule_options"
 >title="Scheduler options"
->abstract="Define the frequency of the scheduler. It can be executed at a specific moment, once or several times a day, week or month."
+>abstract="Choose how the campaign starts: on a one-time or recurring schedule (once, daily, weekly, monthly, and so on), or **Triggered by a signal** so it waits for an API call or an upstream campaign's **End** activity. For signal-triggered campaigns, you can define parameters to pass in the payload. [Learn more](trigger-orchestrated-campaign.md)"
 
 By default, Orchestrated campaigns start when activated manually and end once their associated activites have been executed. If you prefer to delay execution or run the campaign on a recurring basis, you can define a schedule for the campaign.
 
@@ -162,7 +160,7 @@ To configure the campaign schedule, follow these steps:
 
 In the following example, the activity is configured so that the Orchestrated campaign runs twice a day at 9 and 12 AM, every day of the week from October 1st, 2025 to January 1st, 2026.
 
-![Scheduler configured to run the campaign twice a day at 9 and 12 AM](assets/scheduler-sample.png){width="50%" align="left"}
+![Scheduler configured to run the campaign twice a day at 9 and 12 AM](assets/scheduler-sample.png){width="50%"}
 
 ## Next steps {#next}
 

@@ -18,8 +18,6 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
   - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
     internal-label: Build expressions
 subfeature_v2:
@@ -80,6 +78,10 @@ You can access the advanced expression editor in different ways:
 
 * When you create a custom timer, the advanced editor will be directly displayed.
 * When you map action parameter, click on **[!UICONTROL Advanced mode]**.
+
+>[!NOTE]
+>
+>To generate Journey expressions using natural language prompts, use the **[Expression Assistant](expression-agent.md)** (**public beta**) via the AI control inside the advanced editor.
 
 ## Discover the interface {#discovering-the-interface}
 

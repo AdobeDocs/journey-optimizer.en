@@ -32,6 +32,9 @@ topic_v2:
     internal-label: Accessibility
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
+subfeature_v2:
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
 ---
 # Generate full content with AI Assistant {#generative-full-content}
 
@@ -133,8 +136,6 @@ After generating content variations, you can fine-tune the results to ensure the
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content. 
-
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
 1. Insert personalization fields to customize your content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
@@ -238,8 +239,6 @@ After reviewing your generated push notification variations, you can polish the 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
-
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
 1. Insert personalization fields to customize your push notification content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 

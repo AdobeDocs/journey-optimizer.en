@@ -8,6 +8,10 @@ topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: f0585411-c862-45f2-9a10-d8a72497c533
+feature_v2: []
+subfeature_v2:
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
 ---
 # Generate images with AI Assistant {#generative-image}
 
@@ -98,8 +102,6 @@ After generating image variations, you can review the results, check brand align
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
-
 1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
 1. Review and activate your content:
@@ -175,7 +177,5 @@ After generating image variations for your push notifications, you can fine-tune
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
-
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
 When you have defined your content, audience and schedule, you are ready to prepare your push campaign. [Learn more](../campaigns/review-activate-campaign.md)

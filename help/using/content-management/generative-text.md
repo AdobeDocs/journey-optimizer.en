@@ -22,6 +22,8 @@ feature_v2:
 subfeature_v2:
   - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
     internal-label: Publish
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -132,8 +134,6 @@ Learn how to review the generated text, make refinements, and apply personalizat
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
-
 1. Insert personalization fields to customize your content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 
 1. Review and activate your content:
@@ -151,13 +151,13 @@ Before you begin generating text with AI Assistant for mobile channels, you must
 
 1. Create and configure your mobile campaign:
    * **Push notifications**: After creating and configuring your push notification campaign, click **[!UICONTROL Edit content]**. [Learn more](../push/create-push.md)
-   * **SMS**: After creating and configuring your SMS campaign, click **[!UICONTROL Edit content]**. [Learn more](../sms/create-sms.md)
+   * **SMS**: After creating and configuring your SMS campaign, click **[!UICONTROL Edit content]**. [Learn more](../mobile/create-mobile-message.md)
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit content]**.
 
 1. Personalize your message as needed:
    * **Push notifications**: [Learn more](../push/design-push.md)
-   * **SMS**: [Learn more](../sms/create-sms.md)
+   * **SMS**: [Learn more](../mobile/create-mobile-message.md)
 
 1. Access AI Assistant:
    * **For Push notifications**: Click the **[!UICONTROL Edit text with AI Assistant]** menu next to your **[!UICONTROL Title]** or **[!UICONTROL Message]** fields. You can also directly access the **AI assistant** menu.
@@ -231,8 +231,6 @@ After generating text variations for your mobile messages, you can fine-tune the
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
-
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
 
 1. Insert personalization fields to customize your content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
 

@@ -8,6 +8,10 @@ topic: Building campaigns
 role: User
 level: Intermediate
 version: Campaign Orchestration
+feature_v2:
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 
 # Incremental query {#incremental-query}

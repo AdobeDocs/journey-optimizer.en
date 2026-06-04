@@ -14,16 +14,12 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
   - id: bb359667-ec7d-4d4b-8663-5850fc219d32
     internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -144,7 +140,7 @@ In Journey Optimizer, you can apply data governance and consent policies to your
 
 When configuring a custom action, you need to define the following **[!UICONTROL Endpoint Configuration]** parameters:
 
-![](assets/action-response1bis.png){width="70%" align="left"}
+![](assets/action-response1bis.png){width="70%"}
 
 1. In the **[!UICONTROL URL]** field, specify the URL of the external service:
 
@@ -204,6 +200,15 @@ You can use Mutual Transport Layer Security (mTLS) to ensure enhanced security i
 
 Mutual TLS (mTLS) authentication is supported in custom actions. There is no additional configuration required in the custom action or journey to activate mTLS; it occurs automatically when an mTLS-enabled endpoint is detected. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
+>[!IMPORTANT]
+>
+>Adobe periodically rotates the mTLS client certificate used for custom action connections. When a new certificate is issued, your endpoint's trust store must be updated to accept it — otherwise, outbound connections from Journey Optimizer to your service will fail with a certificate mismatch error. To avoid disruption:
+>
+>* Regularly check the [Adobe Public Certificate API](https://platform.adobe.io/data/core/mtls/v1/certificate/public-certificate) for updated certificates associated with your services.
+>* Configure your endpoint to accept **overlapping certificates** (both the old and new certificate simultaneously), so there is no connectivity gap during rotation.
+>* Adobe does not currently send proactive notifications when a certificate is rotated. It is your responsibility to monitor for certificate updates and keep your trust store current.
+>* Trust validation should be based on the certificate chain up to the Root CA (DigiCert) rather than pinning to a specific leaf certificate fingerprint.
+
 ## Define the payload parameters {#define-the-message-parameters}
 
 You can define the payload parameter as detailed below:
@@ -212,15 +217,15 @@ You can define the payload parameter as detailed below:
 
     Enable the **[!UICONTROL Allow NULL values]** option to keep Null values in the external call. Note that sending arrays of int, string, etc. with Null values within is not fully supported. For example, the following array of integers `[1, null, 2, 3]` is sent as `[1, 2, 3]` even if this option is checked. In addition to that, if such array is null, it is sent as an empty array.
 
-    ![](assets/null-values.png){width="70%" align="left"}
+    ![](assets/null-values.png){width="70%"}
 
 1. In the **[!UICONTROL Response]** section, paste an example of the payload returned when the call succeeds. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md). 
 
-    ![](assets/response-values.png){width="70%" align="left"}
+    ![](assets/response-values.png){width="70%"}
 
 1. (Optional) Select **[!UICONTROL Define a failure response payload]** to enable the error response payload field. When enabled, use the **[!UICONTROL Error Response]** section to paste an example of the payload returned when the call fails. The same requirements apply as for the response payload (field types and format). Learn how to leverage the failure response payload in journeys [here](../action/action-response.md).
 
-    ![](assets/response-values.png){width="70%" align="left"}
+    ![](assets/response-values.png){width="70%"}
 
 >[!NOTE]
 >

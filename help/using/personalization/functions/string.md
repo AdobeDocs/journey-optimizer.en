@@ -11,16 +11,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
+subfeature_v2: []
 ---
 # String Functions {#string}
 
@@ -674,6 +673,30 @@ The `replaceAll` function is used to replace all substrings of a text that match
 > 
 > Learn more in [Oracle documentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}.
 >
+
++++Example — Basic replacement
+
+```sql
+{%= replaceAll("Hello World","World","AJO") %}
+```
+
+Returns `Hello AJO`.
+
++++
+
++++Real-world example — Variable reassignment after replaceAll
+
+`replaceAll` returns a new string but does not modify the original value. To reuse the cleaned string multiple times, assign the result to a variable using `{% let %}`:
+
+```handlebars
+{% let cleanName = replaceAll(profile.person.name.firstName, "[^a-zA-Z]", "") %}
+Hello {{cleanName}}, your personalized offer is ready.
+Your code: WELCOME-{%= upperCase(cleanName) %}
+```
+
+The `{% let %}` assignment stores the result of `replaceAll` so it can be referenced as `{{cleanName}}` without calling the function again. This is the correct pattern — chaining `replaceAll` inside itself or trying to reassign to the same profile variable is not supported.
+
++++
 
 ## Right trim {#rightTrim}
 

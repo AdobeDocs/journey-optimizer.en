@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Direct mail configuration
 description: Learn how to configure direct mail channel in Journey Optimizer
 feature: Direct Mail, Surface
@@ -12,21 +14,11 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
 subfeature_v2:
-  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
-    internal-label: Access control
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: cb1f1586-9fb4-4de2-8332-02cebb88d42d
+    internal-label: Direct mail
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -102,15 +94,17 @@ To configure the file routing, follow the steps below.
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Direct mail settings]** > **[!UICONTROL File routing]** menu, then click **[!UICONTROL Create file routing config]**.
 
-    ![](assets/file-routing-config-button.png){width="800" align="center"}
+    ![Create file routing config button in Direct mail settings](assets/file-routing-config-button.png){width="800" align="center"}
 
 1. Set a name for your configuration.
 
 1. Select the type of server you want to use for exporting your direct mail files: Amazon S3, SFTP, Azure, or Data Landing Zone.
 
-    ![](assets/file-routing-config-type.png){width="800" align="center"}
+    ![Server type selection for a direct mail file routing configuration](assets/file-routing-config-type.png){width="800" align="center"}
 
 1. Fill in the fields specific to each server type as detailed in the tabs below.
+
+### Choose your server type {#server-type}
 
 >[!BEGINTABS]
 
@@ -126,7 +120,7 @@ If you selected **[!UICONTROL Amazon S3]** as the **[!UICONTROL Server type]**, 
 
 * **AWS region**: choose the **[!UICONTROL AWS region]** where the server infrastructure will be located. AWS regions are geographic areas that AWS uses to host its cloud infrastructures. As a general practice, it is preferred to choose the region that is closest to you direct mail provider's location.
 
-![](assets/file-routing-config-aws-region.png){width="800" align="center"}
+![AWS region selection for an Amazon S3 file routing configuration](assets/file-routing-config-aws-region.png){width="800" align="center"}
 
 >[!TAB SFTP]
 
@@ -142,7 +136,7 @@ If you selected **[!UICONTROL SFTP]** as the **[!UICONTROL Server type]**, fill 
 
 * **[!UICONTROL Password]** / **[!UICONTROL SSH Key]**:​ Password or SSH Key used to connect to the SFTP server.
 
-![](assets/file-routing-config-sftp-detail.png)
+![SFTP server connection details for file routing configuration](assets/file-routing-config-sftp-detail.png)
 
 >[!TIP]
 >
@@ -170,13 +164,13 @@ If you selected **[!UICONTROL Azure]** as the **[!UICONTROL Server type]**, fill
     >
     >To specify a path within the container for saving the file, update the direct mail campaign's **[!UICONTROL Filename]** field to include the desired path. [Learn more](create-direct-mail.md#extraction-file)
 
-    ![](assets/file-routing-config-azure-detail.png)
+    ![Azure storage connection details for file routing configuration](assets/file-routing-config-azure-detail.png)
 
 >[!TAB Data Landing Zone]
 
 If you selected **[!UICONTROL Data Landing Zone]** as the **[!UICONTROL Server type]**, no specific details are required.
 
-![](assets/file-routing-config-dlz-detail.png)
+![Data Landing Zone file routing configuration with no additional server fields](assets/file-routing-config-dlz-detail.png)
 
 All customers of [!DNL Adobe Experience Platform] are provisioned with one Data Landing Zone container per sandbox. Learn more about Data Landing Zone in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
 
@@ -186,7 +180,7 @@ To encrypt the file, copy-paste your encryption key in the **[!UICONTROL PGP/GPG
 
 If your file routing configuration is going to be sent using journeys, you can specify the frequency at which the file is going to be sent the server.
 
-![](assets/file-routing-journey.png)
+![Journey export frequency settings for a file routing configuration](assets/file-routing-journey.png)
 
 Once you filled in the details for your server type, select **[!UICONTROL Submit]**. The file routing configuration is created with the **[!UICONTROL Active]** status. It is now ready to be used in a [direct mail configuration](#direct-mail-surface).
 
@@ -248,7 +242,7 @@ A direct mail configuration must also include the file routing configuration whi
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Click the **[!UICONTROL Create channel configuration]** button. [Learn more](../configuration/channel-surfaces.md)
 
-    ![](assets/direct-mail-config-1.png)
+    ![Create channel configuration screen in Administration](assets/direct-mail-config-1.png)
 
 1. Enter a name and a description (optional) for the configuration, then select the channel to configure.
 
@@ -260,13 +254,13 @@ A direct mail configuration must also include the file routing configuration whi
 
 1. Select the **[!UICONTROL Direct mail]** channel.
 
-    ![](assets/direct-mail-config-2.png)
+    ![Direct mail channel selected when creating a channel configuration](assets/direct-mail-config-2.png)
 
 1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more](../action/consent.md#surface-marketing-actions)
 
 1. Define the direct mail settings in the dedicated section of the channel configuration.
 
-    ![](assets/surface-direct-mail-settings.png){width="800" align="center"}
+    ![Direct mail surface settings including file format and routing](assets/surface-direct-mail-settings.png){width="800" align="center"}
 
     <!--![](assets/surface-direct-mail-settings-with-insertion.png)-->
 
@@ -274,7 +268,7 @@ A direct mail configuration must also include the file routing configuration whi
 
 1. If you select **[!UICONTROL Text delimited]**, define the column separator of your choice: tabulation, semicolon, pipe, or ampersand.
 
-    ![](assets/surface-direct-mail-column-separator.png)
+    ![Text delimited column separator options for direct mail export files](assets/surface-direct-mail-column-separator.png)
 
 1. Select the **[!UICONTROL File routing configuration]** amongst the ones that you created. This defines where the file will be exported for your direct mail provider to use.
 
@@ -282,7 +276,7 @@ A direct mail configuration must also include the file routing configuration whi
     >
     >If you have not configured any file routing option, you will not be able to create a direct mail configuration. [Learn more](#file-routing-configuration)
 
-    ![](assets/surface-direct-mail-file-routing.png){width="800" align="center"}
+    ![File routing configuration selected in a direct mail channel configuration](assets/surface-direct-mail-file-routing.png){width="800" align="center"}
 
     <!--![](assets/surface-direct-mail-file-routing-with-insertion.png)-->
 
@@ -307,3 +301,12 @@ You can now [create a direct mail message](../direct-mail/create-direct-mail.md)
     >
     >NOTE You can set any number between 1 and 200,000 records, meaning each file must contain at least 1 row and no more than 200,000 rows.
 -->
+
+## Related topics {#related-topics}
+
+* [Get started with direct mail](get-started-direct-mail.md)
+* [Create a direct mail message](create-direct-mail.md)
+* [Test and send direct mail](test-send-direct-mail.md)
+* [Channel configurations](../configuration/channel-surfaces.md)
+
+For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md).

@@ -14,17 +14,11 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
@@ -40,7 +34,11 @@ topic_v2:
 ---
 # Get started with email configuration {#get-starte-email-config}
 
-To be able to send emails through journeys and campaigns in [!DNL Journey Optimizer], you need to go through a number of configuration steps.
+Configuring the email channel in Adobe Journey Optimizer is your gateway to creating impactful, personalized email experiences that effectively engage your audience.
+
+This section guides you through the essential configuration steps you need to follow to send emails through [!DNL Journey Optimizer]. You'll also discover how to set up email headers, personalize settings for multiple brands, enable URL tracking for analytics, and even add one-click unsubscribe links for user convenience. Each topic builds on the last, giving you the tools to fine-tune your email strategy while maintaining control and precision.
+
+To be able to send emails through journeys and campaigns in [!DNL Journey Optimizer], you need to go through a number of configuration steps. These steps are listed below:
 
 1. To ensure optimal deliverability and protect your reputation, start by **delegating to Adobe the subdomains** you are going to use to send your emails with [!DNL Journey Optimizer]. These subdomains will determine elements such as the web pages to be tracked and the mirror page URLs. [Learn more](../configuration/about-subdomain-delegation.md)
 
@@ -65,6 +63,8 @@ To be able to send emails through journeys and campaigns in [!DNL Journey Optimi
 
     ![](assets/preset-header.png)
 
+1. Complete your email channel configuration by setting up other advanced parameters such as enabling BCC, defining URL tracking for analytics, or adding one-click unsubscribe links for user convenience. [Learn more](email-settings.md)
+
 1. Determine which **execution fields** to use in priority for your recipients when several addresses are available in Adobe Experience Platform. [Learn more](../configuration/primary-email-addresses.md)
 
     ![](../configuration/assets/primary-address-execution-fields.png)
@@ -72,3 +72,67 @@ To be able to send emails through journeys and campaigns in [!DNL Journey Optimi
 1. Manage the number of days during which **retries** are performed before sending email addresses to the suppression list. [Learn more](../configuration/manage-suppression-list.md)
 
     ![](../configuration/assets/suppression-list-edit-retries.png)
+
+
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/circle-play.svg)
+
+Get Started with Email Configuration
+
+Learn the essential steps to configure email capabilities, including subdomain delegation, IP pools, and suppression list management.
+
+[Start configuring email](get-started-email-config.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+Define Email Configuration Settings
+
+Set up email configurations for deliverability, compliance, and customization with advanced features like BCC, suppression overrides, and URL tracking.
+
+[Configure settings](email-settings.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
+
+Enable and Configure List Unsubscribe
+
+Learn how to enable the 'List unsubscribe' feature to include one-click unsubscribe URLs in email headers for recipient opt-outs.
+
+[Set up List Unsubscribe](list-unsubscribe.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
+
+Configure Email Header Parameters
+
+Customize sender and reply email addresses, handle errors, and forward emails for effective communication.
+
+[Set up header parameters](header-parameters.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+Configure URL Tracking for Email Channel
+
+Set up URL tracking parameters to measure the effectiveness of email campaigns and integrate with analytics tools.
+
+[Set up URL tracking](url-tracking.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Personalized Email Configuration Settings
+
+Set up dynamic subdomains, personalized headers, and URL tracking to deliver tailored email experiences.
+
+[Configure personalized email](surface-personalization.md)
+:::
+
+::::

@@ -9,6 +9,14 @@ role: Developer
 level: Beginner
 keywords: expression, editor, start, personalization
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: a757b957-83f3-4a4d-9775-a93854f84f77
+    internal-label: Conditional instruction
+  - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
+    internal-label: Main functions
 ---
 # Get started with personalization{#add-personalization}
 
@@ -53,6 +61,18 @@ In the **[!UICONTROL Personalization Editor]** or from the Email Designer toolba
 
 ➡️ [Learn how to work with AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
 
+## Inline editing of profile attributes {#inline-personalization}
+
+You can insert profile attribute expressions directly while editing content in the **Email Designer** or the **Push channel** editor, without opening the full personalization editor.
+
+To do so, follow these steps:
+
+1. Type `{{` in any text field. An inline autocomplete dropdown opens at the cursor position.
+1. Start typing to filter available profile attributes.
+1. Select the attribute you need — it is inserted as a personalization token at the cursor position.
+
+![](assets/inline-profile-attributes.png)
+
 ## Let's dive deeper
 
 Now that you have an understanding of personalization in **[!DNL Journey Optimizer]**, it's time to dive deeper into these documentation sections to start working with the feature.
@@ -81,6 +101,14 @@ Now that you have an understanding of personalization in **[!DNL Journey Optimiz
 </a>
 <div>
 <a href="../personalization/functions/functions.md"><strong>Helper functions list</strong></a>
+</div>
+<p></td>
+<td>
+<a href="../personalization/personalization-recipes.md">
+<img alt="Infrequent" src="assets/do-not-localize/uc.png">
+</a>
+<div>
+<a href="../personalization/personalization-recipes.md"><strong>Personalization recipes</strong></a>
 </div>
 <p></td>
 <td>

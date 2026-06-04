@@ -13,14 +13,19 @@ product_v2:
 feature_v2:
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 ---
 # Decisioning guardrails & limitations {#decisioning-guardrails}
 
@@ -43,6 +48,7 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | Total decision items | 10K |
 | Max size of items including attributes (1KB), max of 30 attributes | 1KB |
 | Frequency rules - Max number of capping rules per decision item | 10 |
+| Max number of AEM Content Fragments per decision item | 5 |
 
 ## Item collections {#item-collections}
 
@@ -57,6 +63,7 @@ The complete list of [!DNL Journey Optimizer] guardrails & limitations is availa
 | ------- | ------- |
 | Number of selection strategies and manual items per decision policy | 10 |
 | Max decision items returned per decision policy | 30 |
+| Max decision policies per email | 10 |
 
 ## Eligibility rules {#eligibility-rules}
 

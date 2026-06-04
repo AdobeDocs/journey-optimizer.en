@@ -6,6 +6,10 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2: []
 ---
 # Helpers {#gs-helpers}
 
@@ -128,7 +132,7 @@ Some edu specific content
 ## Each{#each}
 
 The `each` helper is used to iterate over an array.
-The syntax of the helper is ```{{#each ArrayName}}``` YourContent `{{/each}}` 
+The syntax of the helper is `{{#each ArrayName}}` YourContent `{{/each}}`.
 We can refer to the individual array items by using the keyword **this** inside the block. The index of the array's element can be rendered by using `{{@index}}`. 
 
 **Syntax**
@@ -210,6 +214,30 @@ The following example lets you calculate the total sum of prices for products in
 {{sum}}
 ```
 
+## Url {#url}
+
+The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your SMS message content.
+
+**Syntax**
+
+```sql
+{{url originalUrl='<your_url>' type='<DEEPLINK>' action='CLICK'}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+|---|---|
+| `originalUrl` | The URL to shorten. |
+| `type` | The link type. Use `DEEPLINK` to open a specific screen in a mobile app. |
+| `action` | The tracking action. Use `CLICK` to track clicks on the link. |
+
+**Example**
+
+```sql
+  {{url originalUrl='https://www.mybusiness.com/offers/summer-sale' type='DEEPLINK' action='CLICK'}}
+```
+
 ## Dataset lookup {#dataset-lookup}
 
 >[!AVAILABILITY]
@@ -234,6 +262,11 @@ For dataset enablement, parameter details, examples, and testing, see [Use Adobe
 
 The `executionMetadata` helper allows to dynamically capture and store custom key-value pairs into the message execution context.
 
+>[!NOTE]
+>
+>* The Execution Metadata function is not supported by [custom actions](../../action/action.md) and in inbound channels (Web, Code-based experience, In-App Message, Content Cards).
+>* The Execution Metadata function is not visible when the content itself is displayed.
+
 **Syntax**
 
 ```
@@ -245,11 +278,6 @@ In this syntax, `key` refers to the metadata name and `value` is the metadata to
 **Use case**
 
 With this function, you can append contextual information to any native action from your campaigns or journeys. This enables you to export real-time delivery contextual data to external systems for various purposes such as tracking, analytics, personalization and downstream processing.
-
->[!NOTE]
->
->* The Execution Metadata function is not supported by [custom actions](../../action/action.md).
->* The Execution Metadata function is not visible when the content itself is displayed.
 
 For instance, you can use the Execution Metadata helper to append a specific ID to each delivery sent to each profile. This information is generated during runtime and the enriched execution metadata can then be exported for downstream reconciliation with an external reporting platform.
 
@@ -301,8 +329,6 @@ In this example, assuming `profile.person.name.firstName` = "Alex", the resultin
 
 >[!AVAILABILITY]
 >
->This feature is available in Limited Availability. Contact your Adobe representative to gain access.
->
 >This capability is currently only available for the Email channel.
 
 The `Encrypt` function lets you encrypt any expression value at render time—commonly a profile attribute, a token, or even a stringified JSON structure you build in the expression—before it is written into a query parameter on tracking links or landing pages.
@@ -353,3 +379,4 @@ You can apply the helper to one parameter, several, or all parameters in a link,
 * Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
 
 * The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.
+

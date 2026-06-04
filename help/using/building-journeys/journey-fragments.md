@@ -7,10 +7,11 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
 keywords: fragments, journey, reuse, nodes, canvas, inventory, reusable
 badge: label="Limited Availability" type="Informative"
 version: Journey Orchestration
+feature_v2: []
+subfeature_v2: []
 ---
 
 # Journey Fragments {#journey-fragments}
@@ -72,8 +73,8 @@ To save journey nodes as a fragment directly from the journey canvas:
 
 To create a fragment directly from the inventory:
 
-1. Navigate to **[!UICONTROL Journeys]** > **[!UICONTROL Fragments]** tab.
-1. Click **[!UICONTROL Create Fragment]**.
+1. Navigate to **[!UICONTROL Journeys]** > **[!UICONTROL Journey fragments]** tab.
+1. Click **[!UICONTROL Create journey fragment]**.
 1. In the fragment authoring canvas, add and configure journey activities.
 1. When done, click **[!UICONTROL Save]** to save the fragment as a draft.
 

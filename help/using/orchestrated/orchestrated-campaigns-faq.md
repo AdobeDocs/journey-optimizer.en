@@ -10,31 +10,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
@@ -389,6 +373,7 @@ Objects created in Orchestrated campaigns (for example, audiences and workflows)
 **Best practices**
 
 * Maintain **separate sandboxes** for experimentation, QA, and production.
+* Right after import, [duplicate the campaign](../campaigns/manage-campaigns.md#duplicate-a-campaign) and work from the duplicate so reporting shows feedback and tracking data correctly.
 * After each import, validate the campaign end to end in the target sandbox before you publish.
 * Document configurations and align with governance teams to reduce configuration drift between environments.
 
@@ -448,7 +433,11 @@ Answering 'Yes' suggests the best data store - but always confirm the best appro
 
 +++ What is the maximum number of activities per Orchestrated campaign?
 
-The number of activities in an Orchestrated campaign is limited to 500.
+Two separate limits apply:
+
+* **Channel activities** — A maximum of 10 channel activities per Orchestrated campaign (Email, SMS, Push, or Direct mail). Targeting and flow control activities do not count. Exceeding this limit when saving or publishing causes the operation to fail.
+
+* **Canvas size** — Up to **500 activities** on the canvas. For maintainability, keep workflows under **100 activities** in practice.
 
 **Learn more**
 

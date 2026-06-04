@@ -9,6 +9,10 @@ role: User
 level: Beginner
 keywords: email, template, image, HTML, AI, design, converter
 exl-id: d13467b7-2f3c-4707-a7e0-9b46cb6cafb1
+feature_v2: []
+subfeature_v2:
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
 ---
 # Convert images to email content templates {#image-to-html}
 
