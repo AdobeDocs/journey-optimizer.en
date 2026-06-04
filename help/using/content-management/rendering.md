@@ -16,7 +16,7 @@ You can leverage your **Litmus** account into [!DNL Journey Optimizer] to instan
 
 To check email rendering, follow these steps:
 
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button.
+1. From the edit content screen of your message or in the Email Designer, click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown.
 
 1. Select the **[!UICONTROL Render email]** button.
 

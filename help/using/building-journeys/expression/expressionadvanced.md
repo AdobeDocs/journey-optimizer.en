@@ -79,6 +79,10 @@ You can access the advanced expression editor in different ways:
 * When you create a custom timer, the advanced editor will be directly displayed.
 * When you map action parameter, click on **[!UICONTROL Advanced mode]**.
 
+>[!NOTE]
+>
+>To generate Journey expressions using natural language prompts, use the **[Expression Assistant](expression-agent.md)** (**public beta**) via the AI control inside the advanced editor.
+
 ## Discover the interface {#discovering-the-interface}
 
 This screen allows you to manually write your expression.

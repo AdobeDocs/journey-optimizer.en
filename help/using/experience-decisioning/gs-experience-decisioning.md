@@ -109,7 +109,13 @@ The main steps to work with Decisioning are as follows:
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
 
-## Additional resources
+## Decisioning process {#process}
+
+The chart below summarizes the end-to-end Decisioning process — from managing decision items and configuring selection strategies, to embedding decision policies into a code-based experience journey or campaign.
+
+![](assets/decisioning-process.png){zoomable="yes"}
+
+## Additional resources {#additional-resources}
 
 * **[Create decision items](items.md)** - Learn how to create and manage decision items including offers, content variations, and experiences.
 * **[Configure decision catalogs](catalogs.md)** - Understand how to organize decision items into catalogs for better management.
