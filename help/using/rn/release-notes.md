@@ -69,11 +69,15 @@ topic_v2:
 <p>This capability is available to all customers as a Public Beta.</p>
 <p><img src="assets/do-not-localize/expression-assistant.gif"></p>
 <p>For more information, refer to the <a href="../building-journeys/expression/expression-agent.md">detailed documentation</a>.</p>
-<p>Availability date: June 3, 2026</p>
+<p>Availability date: June 3, 2026</p> 
 </td>
 </tr>
 </tbody>
 </table>
+ 
+* **Automatic completion for non-recurring Read Audience journeys** - Non-recurring **Read Audience** journeys now automatically transition to **Stopped** status once the last active profile exits. Previously, these journeys remained **Live** until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.
+
+  Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout. [Learn more](../building-journeys/end-journey.md#auto-stop-non-recurring)
 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding `subType: "certificateCredential"` to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Azure Entra ID. [Learn more](../datasource/external-data-sources.md#certificate-credential)
 
@@ -341,7 +345,7 @@ The following Decisioning capability is expected in the upcoming days or weeks.
 <td>
 <p>You can now add Decision policies into Direct Mail journeys and campaigns. Decision policies are containers for your offers that leverage the Decisioning engine to dynamically return the best content for each audience member. Direct Mail decisioning also supports batch decisioning use cases, enabling you to export the corresponding offer items for every profile in a given Adobe Experience Platform audience.</p>
 <!--<p><img src="assets/do-not-localize/exd-dm.gif"></p>-->
-<p>Availability date: June 3, 2026</p>
+<p>Availability date: June 4, 2026</p>
 </td>
 </tr>
 </tbody>
