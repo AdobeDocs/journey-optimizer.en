@@ -12,8 +12,6 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
@@ -62,4 +60,4 @@ Here is an example of an Orchestrated campaign with two **[!UICONTROL Build audi
 
 In the example below, the **[!UICONTROL Build audience]** activity uses the rule builder to filter profiles by their subscription plan. A condition is set on the `plan` attribute to include only profiles where `plan = "basic"`, narrowing the audience to basic-tier subscribers before passing them to the next activity.
 
-![](../assets/build-audience-plan.png){width="50%" align="left"}
+![](../assets/build-audience-plan.png){width="50%"}

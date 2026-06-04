@@ -12,8 +12,6 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -31,7 +29,7 @@ All activities are detailed in the sections below:
 * [Channel activities](#channel)
 * [Flow control activities](#flow-control)
 
-![List of activities available in the canvas](../assets/orchestrated-activities.png){width="80%" align="left"}
+![List of activities available in the canvas](../assets/orchestrated-activities.png){width="80%"}
 
 >[!NOTE]
 >
@@ -49,7 +47,7 @@ See [Guardrails and limitations](../guardrails.md) for all Orchestrated campaign
 
 These activities are specific to targeting. They let you build one or more targets by defining an audience and splitting or combining these audiences using intersection, union or exclusion operations.
 
-![List of targeting activities](../assets/targeting-activities.png){width="40%" align="left"}
+![List of targeting activities](../assets/targeting-activities.png){width="40%"}
 
 Available targeting activities are:
 
@@ -81,7 +79,7 @@ Learn how to [create a channel action in an Orchestrated campaign](channels.md).
 
 The following activities are specific to organizing and executing Orchestrated campaigns. Their main task is to coordinate the other activities.
 
-![List of flow control activities](../assets/flow-control-activities.png){width="20%" align="left"}
+![List of flow control activities](../assets/flow-control-activities.png){width="20%"}
 
 Available flow control activities are:
 

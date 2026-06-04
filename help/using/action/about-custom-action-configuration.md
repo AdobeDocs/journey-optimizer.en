@@ -76,6 +76,11 @@ Here are the main steps required to configure a custom action:
 1. The number of journeys that use this action is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of  journeys using this action.
 1. Define the different **[!UICONTROL URL Configuration]** parameters. See [this page](../action/about-custom-action-configuration.md#url-configuration).
 1. Configure the **[!UICONTROL Authentication]** section. This configuration is the same as for data sources.  See [this section](../datasource/external-data-sources.md#custom-authentication-mode).
+
+    >[!NOTE]
+    >
+    >If your endpoint uses OpenID Connect and returns both an `access_token` and an `id_token` — a pattern common in banking and financial service APIs — use the optional `idTokenInResponse` field in the custom authentication payload. This instructs Journey Optimizer to use the ID token as the authentication credential instead of the access token. [Learn more about custom authentication](../datasource/external-data-sources.md#custom-authentication-mode).
+
 1. Define the **[!UICONTROL Action parameters]**. See [this page](../action/about-custom-action-configuration.md#define-the-message-parameters).
 1. Click **[!UICONTROL Save]**.
 
@@ -135,7 +140,7 @@ In Journey Optimizer, you can apply data governance and consent policies to your
 
 When configuring a custom action, you need to define the following **[!UICONTROL Endpoint Configuration]** parameters:
 
-![](assets/action-response1bis.png){width="70%" align="left"}
+![](assets/action-response1bis.png){width="70%"}
 
 1. In the **[!UICONTROL URL]** field, specify the URL of the external service:
 
@@ -204,6 +209,14 @@ Mutual TLS (mTLS) authentication is supported in custom actions. There is no add
 >* Adobe does not currently send proactive notifications when a certificate is rotated. It is your responsibility to monitor for certificate updates and keep your trust store current.
 >* Trust validation should be based on the certificate chain up to the Root CA (DigiCert) rather than pinning to a specific leaf certificate fingerprint.
 
+### Certificate-based custom authentication {#certificate-based-auth}
+
+For enterprise APIs that enforce certificate-based identity verification — such as Azure Entra ID — custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
+
+Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and automatically exchange it for an access token. No client secret is required.
+
+For the full payload structure, field descriptions, and configuration guardrails, see [Certificate-based custom authentication](../datasource/external-data-sources.md#certificate-credential).
+
 ## Define the payload parameters {#define-the-message-parameters}
 
 You can define the payload parameter as detailed below:
@@ -212,15 +225,15 @@ You can define the payload parameter as detailed below:
 
     Enable the **[!UICONTROL Allow NULL values]** option to keep Null values in the external call. Note that sending arrays of int, string, etc. with Null values within is not fully supported. For example, the following array of integers `[1, null, 2, 3]` is sent as `[1, 2, 3]` even if this option is checked. In addition to that, if such array is null, it is sent as an empty array.
 
-    ![](assets/null-values.png){width="70%" align="left"}
+    ![](assets/null-values.png){width="70%"}
 
 1. In the **[!UICONTROL Response]** section, paste an example of the payload returned when the call succeeds. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md). 
 
-    ![](assets/response-values.png){width="70%" align="left"}
+    ![](assets/response-values.png){width="70%"}
 
 1. (Optional) Select **[!UICONTROL Define a failure response payload]** to enable the error response payload field. When enabled, use the **[!UICONTROL Error Response]** section to paste an example of the payload returned when the call fails. The same requirements apply as for the response payload (field types and format). Learn how to leverage the failure response payload in journeys [here](../action/action-response.md).
 
-    ![](assets/response-values.png){width="70%" align="left"}
+    ![](assets/response-values.png){width="70%"}
 
 >[!NOTE]
 >

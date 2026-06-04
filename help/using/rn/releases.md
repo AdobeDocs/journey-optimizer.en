@@ -101,7 +101,7 @@ You can subscribe to **email and in-product alerts** for Journey Optimizer produ
 1. Under **Notifications**, find **Journey Optimizer**
 1. Enable **New releases** In-app and email notifications
 
-![](assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
+![](assets/do-not-localize/pulse-notif.png){width="70%"}
 
 ## Frequently Asked Questions {#faq}
 

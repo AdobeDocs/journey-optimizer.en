@@ -63,25 +63,33 @@ When a Content Fragment is published in Adobe Experience Manager, an event is se
 >
 >To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first [configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration){target="_blank"}.
 
-Before using your Content fragment in Journey Optimizer, you need to create a tag specifically for Journey Optimizer:
+Journey Optimizer displays a Content Fragment in the Content Fragment selector only when it carries a tag for your **organization** and **sandbox**. That requirement is deliberate: it keeps unrelated or unapproved Experience Manager content out of Journey Optimizer.
 
-1. Access your **Experience Manager** environment.
+Assign a tag whose ID follows `ajo-enabled:{AJO-OrgId}/{AJO-SandboxName}`, using your Journey Optimizer organization ID and sandbox name in place of the placeholders, for example, `ajo-enabled:123A12A123A123A12A@AdobeOrg/prod`.
 
-1. From the **Tools** menu, select **Tagging**.
+To create the tag in Experience Manager:
+
+1. Go to **Tools** > **Tagging**.
 
     ![](assets/do-not-localize/aem_tag_1.png)
 
-1. Click **Create Tag**.
+1. Create a nested tag structure so the full tag ID matches the format above:
 
-1. Ensure the ID adheres to the following syntax: `ajo-enabled:{AJO-OrgId}/{AJO-SandboxName}`.
+    1. At the root level, create a folder named `ajo-enabled`.
 
-1. Click **Create**. 
+    1. Under `ajo-enabled`, create a tag for your organization ID, for example, `123A12A123A123A12A@AdobeOrg`.
 
-1. Define your Content Fragment Model as detailed in [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models){target="_blank"} and assign your newly created Journey Optimizer tag.
+    1. Under that organization tag, create a tag for your sandbox, for example, `prod`.
 
-This real-time connection ensures that your content is always up-to-date but also means that any changes to published fragments will immediately affect active campaigns and journeys.
+    The combined path yields a tag ID such as `ajo-enabled:123A12A123A123A12A@AdobeOrg/prod`.
 
-You can now begin creating and configuring your Content Fragment for later use in Journey Optimizer. Learn more in [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing){target="_blank"}.
+1. To apply it to a Content Fragment, open the Content Fragment in the editor.
+
+1. In **Properties**, add the tag you created.
+
+1. Save the fragment.
+
+➡️ [Learn more about Tags in Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing#manage-tags)
 
 ## Add Experience Manager Content fragments {#aem-add}
 

@@ -66,7 +66,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
     Click the **[!UICONTROL More actions]** button next to your modification and select **[!UICONTROL Info]** to display its details. You can also **[!UICONTROL Delete the modification]** if needed.
 
-    ![](assets/web-non-visual-editor-ex-more.png){width="50%" align="left"}
+    ![](assets/web-non-visual-editor-ex-more.png){width="50%"}
 
     >[!NOTE]
     >
@@ -77,7 +77,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
 1. In addition, you can select any element of your website and track the clicks on that element. To enable click tracking, and define the actions to track, click the second icon on the left rail, as shown below:
     
-    ![](assets/web-campaign-click.png){width="50%" align="left"}
+    ![](assets/web-campaign-click.png){width="50%"}
 
     Use the **Add Component** button to select a new action to track. Learn more about click tracking usage in [this section](monitor-web-experiences.md#use-click-tracking).
 
