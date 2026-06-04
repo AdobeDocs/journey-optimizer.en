@@ -23,6 +23,10 @@ subfeature_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## June 2026 {#june-2026}
+
+* The **Sender headers** documentation now clarifies that **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** must both be set or both left empty, otherwise journeys and campaigns cannot be published. [Read more](../email/header-parameters.md#sender-header)
+
 ## May 2026 {#may-2026}
 
 * The limitations and best practices when using dynamic content in visual fragments have been merged into a single **Manage conditional content in fragments** section for improved readability. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)

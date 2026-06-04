@@ -159,7 +159,7 @@ For multilingual content and experimentation, a dropdown is available to switch 
 ![Language or treatment selector](assets/simulate-custom-experiment.png)
 
 You can remove a variant at any time using the ellipsis button in the upper-right corner and selecting **[!UICONTROL Remove]**. To edit information for a variant, click the ellipsis button and select **[!UICONTROL Edit]**.
-
+ 
 ### Send proofs {#proofs}
 
 Journey Optimizer allows you to send proofs to email addresses while impersonating one or multiple variants that you have added in the simulation screen. The steps are as follows:
