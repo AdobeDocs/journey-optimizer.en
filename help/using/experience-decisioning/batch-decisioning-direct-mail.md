@@ -14,7 +14,7 @@ With batch decisioning, Decisioning selects the best decision item or items for 
 
 Batch decisioning in direct mail supports two main use cases:
 
-* **Direct mail with decisioning** – Personalize physical mail per recipient. For example, choose the best image or offer for each profile using eligibility rules and ranking (priority or formulas). The extraction file includes profile data plus attributes from the selected decision item or items (for example, offer image URL) for your direct mail provider.
+* **Direct mail with decisioning** – Personalize physical mail per recipient. For example, choose the best image or offer for each profile using eligibility rules and ranking (priority or formulas). The extraction file includes profile data plus attributes from the selected decision item or items (for example, offer image URL) for your direct mail provider. 
 * **Batch export for downstream systems** – Export profiles and their decisioning results (for example, offer IDs, attributes) to use in another system. You run batch decisioning and export the file to your server; downstream tools (for example, a third party email service provider) consume that data for their own campaigns or processes.
 
 >[!NOTE]
