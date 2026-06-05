@@ -208,30 +208,34 @@ Two types of alerts can happen:
 
 >[!CONTEXTUALHELP]
 >id="ajo_email_minification"
->title="Optimize HTML size"
+>title="Reduce HTML size"
 >abstract="Enable this option to compress your email HTML during publishing by removing unnecessary whitespace, indentation, and non-essential comments. This helps prevent email clipping in clients such as Gmail, which truncates messages exceeding 100 KB."
 
-Email clients such as Gmail clip messages that exceed 100 KB, which prevents recipients from viewing the full email content. To help manage this, Journey Optimizer provides an **[!UICONTROL Optimize HTML size]** option that compresses your email HTML during the publishing process.
+[!DNL Journey Optimizer] provides an **[!UICONTROL Optimize HTML size]** option that compresses your email HTML during the publishing process by removing unnecessary whitespace, indentation, and non-essential comments. Keeping HTML size small helps you:
+
+* Avoid **email clipping** — some clients such as Gmail truncate messages larger than ~100 KB, preventing recipients from viewing the full content.
+* Improve **email load time** in the recipient's inbox.
+* Improve **deliverability** and reduce bandwidth usage.
 
 This optimization is not applied automatically — you must manually enable it in the email editor.
 
 ![](assets/email-optimize-html-size.png)
 
-When enabled, the optimization:
-
-* Removes unnecessary whitespace, indentation, and non-essential HTML and CSS comments from the email HTML
-* Preserves MSO comments required for correct rendering in Microsoft Outlook
-* Does not alter your actual content, images, or videos
+The optimization is email-client safe: it preserves MSO/Outlook conditional comments and does not alter your actual content, images, or videos.
 
 >[!NOTE]
 >
 >The reduction in email size depends on the original HTML structure of your email. If the content is already compact or the email payload is very large, the reduction may be minimal and may not fully prevent clipping in all cases.
 
-After sending a proof, the actual rendered HTML size of your email is displayed on the proof screen. Use this information to evaluate the impact of the optimization and confirm whether the email remains within the recommended 100 KB threshold before sending to your audience.
+To evaluate the impact before publishing, select **[!UICONTROL Optimize HTML size]** in the proof options when sending a proof. The **[!UICONTROL View Proof]** screen then displays the original and minified HTML sizes along with the size reduction, so you can confirm the email stays within the recommended 100 KB threshold.
 
-### Multilingual emails {#optimize-html-multilingual}
+### Optimize HTML size in multilingual emails {#optimize-html-multilingual}
 
-When working with [multilingual email variants](../content-management/multilingual-gs.md), enabling the **[!UICONTROL Optimize HTML size]** option for one locale automatically applies it to all other locales within the same treatment. The option is not applied to other treatments, as each treatment is considered a separate message.
+When working with [multilingual email variants](../content-management/multilingual-gs.md), the **[!UICONTROL Optimize HTML size]** setting is tracked at the email level, not per locale. Enabling it on any one locale applies it to all locales of that email at publish time — even locales where the checkbox still appears unchecked in the UI. You do not need to repeat the action for each locale.
+
+To disable minification, you must uncheck **[!UICONTROL Optimize HTML size]** on every locale. Leaving it enabled on even one locale is sufficient for minification to be applied across all.
+
+The option is not applied to other treatments, as each treatment is considered a separate message.
 
 ## Check and send your email
 
