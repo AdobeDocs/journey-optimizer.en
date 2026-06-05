@@ -79,7 +79,11 @@ Here are the main steps required to configure a custom action:
 
     >[!NOTE]
     >
-    >If your endpoint uses OpenID Connect and returns both an `access_token` and an `id_token` — a pattern common in banking and financial service APIs — use the optional `idTokenInResponse` field in the custom authentication payload. This instructs Journey Optimizer to use the ID token as the authentication credential instead of the access token. [Learn more about custom authentication](../datasource/external-data-sources.md#custom-authentication-mode).
+    >If your endpoint returns both an `access_token` and an `id_token`, use the `tokenInResponse` field to specify which token Journey Optimizer should use as the authentication credential:
+    >* `"tokenInResponse": "json://access_token"` — use the access token (default for OAuth 2.0)
+    >* `"tokenInResponse": "json://id_token"` — use the ID token (common in OpenID Connect flows)
+    >
+    >[Learn more about custom authentication](../datasource/external-data-sources.md#custom-authentication-mode)
 
 1. Define the **[!UICONTROL Action parameters]**. See [this page](../action/about-custom-action-configuration.md#define-the-message-parameters).
 1. Click **[!UICONTROL Save]**.
@@ -211,7 +215,7 @@ Mutual TLS (mTLS) authentication is supported in custom actions. There is no add
 
 ### Certificate-based custom authentication {#certificate-based-auth}
 
-For enterprise APIs that enforce certificate-based identity verification — such as Azure Entra ID — custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
+For enterprise APIs that enforce certificate-based identity verification — such as Microsoft Entra ID — custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
 
 Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and automatically exchange it for an access token. No client secret is required.
 
