@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Get started with direct mail
-description: Learn how to create a direct mail message in Journey Optimizer
+description: Learn how to create a direct mail message in Journey Optimizer 
 feature: Direct Mail
 topic: Content Management
 role: User
@@ -58,6 +58,7 @@ The main steps to send direct mail messages are as follows:
 
 * **[Create direct mail](create-direct-mail.md)** - Learn how to create direct mail deliveries and configure extraction files for offline channels.
 * **[Configure direct mail channel](direct-mail-configuration.md)** - Set up direct mail surfaces and file routing configurations.
+* **[Batch decisioning in direct mail](../experience-decisioning/batch-decisioning-direct-mail.md)** - Use decisioning to personalize extraction files for direct mail or to export decisioning data for downstream systems.
 * **[Test and send direct mail](test-send-direct-mail.md)** - Learn how to test, validate, and publish your direct mail deliveries.
 * **[Direct mail tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Explore step-by-step video tutorials on direct mail features and best practices.
 
