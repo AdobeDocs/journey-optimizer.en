@@ -126,7 +126,15 @@ You can now start configuring the extraction file to send to your direct mail pr
 
 The extraction file is required by direct mail providers to send mail to your customers. To define the extraction file configuration, follow these steps:
 
-1. From the campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the extraction file content.
+1. From the campaign or journey configuration screen, click the **[!UICONTROL Edit content]** button to configure the extraction file content.
+
+1. To add decision policies to your direct mail message, select a column in the **[!UICONTROL Data Fields]** section and open the personalization editor using the ![](../experience-decisioning/assets/do-no-localize/editor-icon.svg) icon. Navigate to the **[!UICONTROL Decision policies]** menu to create and insert a decision policy. You can then use decision item attributes as column data in the extraction file.
+
+   >[!AVAILABILITY]
+   >
+   >Experience Decisioning in direct mail is a new capability. Previously, direct mail extraction files could not use the Decisioning engine; you can now add decision policies and include decision item attributes as column data in the export.
+
+   [Learn how to add a decision policy in direct mail](../experience-decisioning/create-decision-policy.md#add). For batch decisioning workflows and examples (personalized direct mail or export to downstream systems), see [Batch decisioning in direct mail](../experience-decisioning/batch-decisioning-direct-mail.md).
 
 1. Adjust the extraction file properties:
 
