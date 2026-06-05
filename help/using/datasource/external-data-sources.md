@@ -266,6 +266,10 @@ This option adds two mandatory fields to the standard `customAuthorization` sche
 
 The `client_assertion` and `client_assertion_type` fields are never authored by the user. They are automatically injected by the platform at runtime, immediately before the token endpoint call.
 
+<!--
+rebuild
+-->
+
 Here is an example for the certificate credential authentication type:
 
 ```json
