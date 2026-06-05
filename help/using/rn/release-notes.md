@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Release notes
+title: Release notes 
 feature: Release Notes
 role: User
 level: Beginner, Intermediate

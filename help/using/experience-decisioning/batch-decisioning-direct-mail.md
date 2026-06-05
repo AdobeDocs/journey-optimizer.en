@@ -1,5 +1,5 @@
 ---
-title: Batch decisioning in direct mail
+title: Batch decisioning in direct mail 
 description: Use Experience Decisioning to personalize direct mail extraction files or to export decisioning data for use in downstream systems
 feature: Decisioning, Direct Mail
 topic: Integrations
