@@ -86,3 +86,4 @@ This supports batch decisioning use cases through the direct mail channel with E
 * [Create decision policies](create-decision-policy.md#add) – Add a decision policy in the Direct Mail tab
 * [Direct mail configuration](../direct-mail/direct-mail-configuration.md) – File routing and channel configuration
 * [Get started with Decisioning](gs-experience-decisioning.md) – Concepts and guardrails
+
