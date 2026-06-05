@@ -53,6 +53,9 @@ topic_v2:
 >[!NOTE]
 >
 >Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
+<!--
+Rebuild
+-->
 
 ## June '26 updates {#june-26-updates}
 
