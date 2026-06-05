@@ -5,7 +5,7 @@ title: Release notes
 feature: Release Notes
 role: User
 level: Beginner, Intermediate
-description: Adobe Journey Optimizer Release notes
+description: Adobe Journey Optimizer Release notes 
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 TQID: https://experienceleague.adobe.com/YJKQFYUi8Kw7yZZKm8blcM-1G9uYsqcsEsopH0hOMhA
 product_v2:

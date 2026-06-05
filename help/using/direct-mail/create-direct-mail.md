@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Create a direct mail message
-description: Learn how to create a direct mail message in Journey Optimizer
+description: Learn how to create a direct mail message in Journey Optimizer 
 feature: Direct Mail
 topic: Content Management
 role: User

@@ -1,6 +1,6 @@
 ---
 title: Get started with decisions policies
-description: Learn how to work with decisions policies to deliver offers.
+description: Learn how to work with decisions policies to deliver offers. 
 feature: Decisioning
 topic: Integrations
 role: User

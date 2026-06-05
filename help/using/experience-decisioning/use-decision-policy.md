@@ -1,6 +1,6 @@
 ---
 title: Use decision policies in messages
-description: Learn how to use decision policies in your messages.
+description: Learn how to use decision policies in your messages. 
 feature: Decisioning
 topic: Integrations
 role: User

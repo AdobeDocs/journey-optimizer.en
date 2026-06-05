@@ -1,6 +1,6 @@
 ---
 title: Get started with Decisioning
-description: Learn more about Decisioning
+description: Learn more about Decisioning 
 feature: Decisioning
 topic: Integrations
 role: User
