@@ -729,6 +729,7 @@ solution: Journey Optimizer
       + [Create decision policies](using/experience-decisioning/create-decision-policy.md)
       + [Use decision policies in messages](using/experience-decisioning/use-decision-policy.md)
       + [Leverage fragments in decision policies](using/experience-decisioning/fragments-decision-policies.md)
+      + [Batch decisioning in direct mail](using/experience-decisioning/batch-decisioning-direct-mail.md)
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
     + [Decisioning use case](using/experience-decisioning/experience-decisioning-uc.md)
     + Collect event data {#experience-decisioning-collect-event-data}
@@ -1007,4 +1008,5 @@ solution: Journey Optimizer
     + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)
+
 

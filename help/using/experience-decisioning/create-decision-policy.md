@@ -1,6 +1,6 @@
 ---
 title: Create decisions policies
-description: Learn how to create decisions policies
+description: Learn how to create decisions policies 
 feature: Decisioning
 topic: Integrations
 role: User
@@ -47,7 +47,7 @@ topic_v2:
 To present the best dynamic offer and experience to your customers, add a decision policy to your content in a campaign or journey then configure the items to return and the selection strategy to use. To do so, follow the steps below:
 
 1. [Add a decision policy](#add)
-1. [Configure the decision policy](#configure) - Add a name and specify the number of items to return for the email channel.
+1. [Configure the decision policy](#configure) - Add a name and, for Email and Direct mail channels, specify the number of items to return.
 1. [Set up a strategy sequence](#strategy) - Select the items to return with the decision policy.
 1. [Select fallback offers](#fallback) (optional) - Select items to display if no items or selection strategies are qualified.
 1. [Review and save](#review) the selection strategy
@@ -55,13 +55,11 @@ To present the best dynamic offer and experience to your customers, add a decisi
 
 >[!AVAILABILITY]
 >
->Decision policies are available for the **Code-based Experience**, **Push notification**, **SMS**, and **Email** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, and **Direct Mail** channels.
 
 ## Add a decision policy {#add}
 
-Open a journey or campaign, select a [channel action](../building-journeys/journey-action.md) and edit the content of your message.
-
-Edit the content of your message and browse the tabs below for more information on how to add the decision policy based on the selected channel.
+Access a configured channel action in your journey or campaign, and edit the content of your message. Browse the tabs below for more information on how to add the decision policy based on the selected channel.
 
 >[!BEGINTABS]
 
@@ -195,6 +193,22 @@ For Push notifications, you can add a new decision policy using either the **per
  
 +++
 
+>[!TAB Direct Mail]
+
+For direct mail, add a decision policy from the **extraction file** configuration. [Learn how to create a direct mail message](../direct-mail/create-direct-mail.md).
+
+1. In the **[!UICONTROL Data Fields]** section, select a column or click **[!UICONTROL Add]** to create one.
+
+1. In the formatting pane, open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
+
+    ![](assets/decision-policy-dm-add.png)
+
+1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-dm-create.png)
+
+1. In the decision policy configuration screen, use the **[!UICONTROL Number of items]** field to define how many decision items to return for each profile (for example, 2 to export the top 2 eligible offers). Continue with [strategy setup](#strategy) and [personalization](use-decision-policy.md) in your extraction file columns.
+
 >[!ENDTABS]
 
 ## Configure the decision policy {#configure}
@@ -209,7 +223,7 @@ After you have added a new decision policy into your content, the decision polic
 
     >[!NOTE]
     >
-    >This option is available for the Email and Code-based experience channels only. For all other channels, only 1 decision item can be returned per action.
+    >The **[!UICONTROL Number of items]** field is available for **Email**, **Code-based experience**, and **Direct mail** channels. For **SMS** and **Push** channels, only 1 decision item can be returned per action.
 
     To return multiple items for the Email channel, you need to add the decision policy within a **[!UICONTROL Repeat Grid]** component. Expand the section below for more details:
 
@@ -357,5 +371,5 @@ For emails, you need to define a placement for the component associated to the d
 ## Next steps {#next-steps}
 
 Now that you understand how to create a decision policy, you're ready to use it into [!DNL Journey Optimizer] channels to deliver offers.
-
+ 
 ➡️ [Learn how to use decision policies in messages](../experience-decisioning/use-decision-policy.md)
