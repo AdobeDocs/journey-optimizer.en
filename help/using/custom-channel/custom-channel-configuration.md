@@ -11,7 +11,7 @@ level: Experienced
 
 Before marketers can use a custom channel in campaigns or journeys, an administrator must complete the following steps:
 
-1. **Create the custom channel** in the Channel Builder.
+1. Create the custom channel.
 1. **Set up API credentials** (if the channel uses authentication).
 1. **Delegate a subdomain** (optional — required for link tracking).
 1. **Create a channel configuration** linked to the custom channel.
@@ -22,36 +22,76 @@ Before marketers can use a custom channel in campaigns or journeys, an administr
 
 ## Step 1: Create a custom channel {#create-custom-channel}
 
-The **Channel Builder** is the central interface for defining new custom channels. To access it, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** in the left navigation rail, then select **[!UICONTROL Custom channels]** under the **[!UICONTROL CHANNEL BUILDER]** section.
+The **Channel builder** section is the central interface for defining new custom channels.
 
-The inventory lists all custom channels in your sandbox with the following columns: **Channel display name**, **Authentication type**, **Created by**, **Last modified date**, and **Status** (Draft / Active / Archived).
+1. To access it, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** in the left navigation rail.
 
-Click **[!UICONTROL Create custom channel]** to open the channel creation form.
+1. Select **[!UICONTROL Custom channels]** under the **[!UICONTROL Channel builder]** section.
 
-### General settings {#general-settings}
+    ![](assets/custom_channels_inventory.png)
 
-1. Enter a **[!UICONTROL Channel name]** (required). This name appears in the Journeys canvas, Campaign action selector, and Orchestrated Campaigns channel list.
+1. The inventory lists all custom channels in your sandbox.
+
+      You can filter them by status or creation author. You can also search by name.
+
+1. Click the **[!UICONTROL Create custom channel]** button to open the channel creation form.
+
+### Define the general settings {#general-settings}
+
+![](assets/custom_channel_properties.png)
+
+1. In the **[!UICONTROL Properties]** section, enter a **[!UICONTROL Name]** for your custom channel. This name will appear in the journeys canvas, campaign action selector, and orchestrated campaigns channel list.
+
+   >[!NOTE]
+   >
+   >Names must begin with a letter (A-Z), include only alpha-numeric characters or special chars ( _, ., -) and should be greater than 1 character.
+   >
+   >The name must be unique and cannot be changed after the channel is created. TBC
+
+1. You can select an icon from the default icon library or select a SVG file from your computer.
+
+   >[!NOTE]
+   >
+   >The file must be no larger than 150KB.
+
+   This icon will be displayed next to the channel name in the ourneys canvas. If no icon is uploaded, the default icon is used.
 
 1. Enter an optional **[!UICONTROL Description]**.
 
-1. Optionally, assign **[!UICONTROL Access labels]** to restrict access to this channel based on data usage policies.
+<!--
+1. Optionally, assign **[!UICONTROL Access labels]** to restrict access to this channel based on data usage policies. Learn more-->
 
-1. Upload a **[!UICONTROL Channel icon]** (SVG format). This icon is displayed next to the channel name in the Journeys canvas. If no icon is uploaded, a default icon is used.
+### Set the endpoint configuration {#endpoint-configuration}
 
-### Endpoint configuration {#endpoint-configuration}
+![](assets/custom_channel_endpoint_configuration.png)
 
-1. In the **[!UICONTROL Endpoint configuration]** section, enter the **[!UICONTROL Host]** URL of your external messaging system (required). The HTTP method is fixed to **POST**.
+1. In the **[!UICONTROL Endpoint configuration]** section, enter the host **[!UICONTROL URL]** of your external messaging system.
 
-1. Add **[!UICONTROL Headers]** as needed. At minimum, `Content-Type` and `Charset` are available as default headers. For each header, define whether its value is:
+   >[!NOTE]
+   >
+   >The HTTP method to is currently set to **POST**.
+
+1. Add **[!UICONTROL Headers]** as needed.
+
+      At minimum, `Content-Type` and `Charset` are available as default headers. TBC
+
+   ![](assets/custom_channel_endpoint_headers.png)
+
+
+   For each header, you can define whether its value is:
 
    * **[!UICONTROL Constant]** – A static value set once and included in every request.
-   * **[!UICONTROL Variable]** – A value that can be set or overridden at the **channel configuration** level. If a default value is entered here, it is used unless overridden in the channel configuration.
+   * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration.
 
 1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Variable query parameters are appended to the endpoint URL dynamically at send time.
+
+   ![](assets/custom_channel_endpoint_query_param.png)
 
 ### Policy configuration {#policy-configuration}
 
 In the **[!UICONTROL Policy configuration]** section, define how [!DNL Journey Optimizer] handles request throughput and failures:
+
+   ![](assets/custom_channel_endpoint_policy_config.png)
 
 * **[!UICONTROL Enable throttling]** – Enabled by default. Set the maximum number of requests per second (default: **5,000 req/sec**).
 * **[!UICONTROL Timeout]** – Default: **5,000 milliseconds**.

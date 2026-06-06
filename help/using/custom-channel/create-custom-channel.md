@@ -4,7 +4,7 @@ description: Learn how to use a custom channel in a journey, campaign, or orches
 feature: Custom Channel
 topic: Content Management
 role: User
-level: Beginner
+level: Experienced
 ---
 
 # Create custom channel experiences {#create-custom-channel}
