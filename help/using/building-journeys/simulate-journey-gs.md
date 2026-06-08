@@ -41,10 +41,6 @@ Simulated users selected for the simulation appear in the **Test users** section
 
 ![Simulation panel for a batch journey with read audience only](assets/simulate-batch.png)
 
-For journeys with a **[!UICONTROL Read audience]**, you can access **[!UICONTROL Quick simulation]** or **[!UICONTROL Manual simulation]**.
-
-![Simulation panel for a batch journey with read audience only](assets/simulate-14.png)
-
 +++
 
 +++ Batch journey with a read audience and unitary events
@@ -54,10 +50,6 @@ Simulated users selected for the simulation and configured events will be visibl
 
 ![Simulation panel for a batch journey with read audience only](assets/simulate-batch-2.png)
 
-With **Batch journey with a read audience and unitary events**, you can access **[!UICONTROL Quick simulation]** or **[!UICONTROL Manual simulation]**.
-
-![Test mode button in journey interface](assets/simulate-12.png)
-
 +++
 
 +++ Unitary journey
@@ -66,10 +58,6 @@ The journey starts with a unitary event, not a read audience. A simulated user d
 Simulated users selected for the simulation and configured events will be visible respectively in the **Test users** and **Test events** sections. The **Test users** section does not include an action to trigger a simulated user into the journey. You trigger entry from **Test events**.
 
 ![Simulation panel for a batch journey with read audience only](assets/simulate-batch-3.png)
-
-With **Unitary journey**, you access directly the Manual simulation menu.
-
-![Simulation panel for a unitary journey](assets/simulate-13.png)
 
 +++
 
