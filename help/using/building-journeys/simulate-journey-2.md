@@ -79,7 +79,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
         
     Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
         
-    For journeys with an Email or SMS node, the AI prompts you to confirm the email address or phone number to use. Simulated users will be generated using those defined values. Once done, click **[!UICONTROL Generate]**.
+    For journeys with an Email, Push or SMS node, the AI prompts you to confirm the email address or phone number to use. Simulated users will be generated using those defined values. Once done, click **[!UICONTROL Generate]**.
 
     ![Generate simulated users dialog with execution email and phone fields and Generate button](assets/simulate-generate.png)
 
