@@ -43,7 +43,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification"
 >title="Audience qualification"
->abstract="Trigger journey entry or continuation when a profile qualifies for or exits an [!DNL Adobe Experience Platform] audience. Recommended for streaming audiences; use a Read Audience activity for batch scenarios."
+>abstract="Triggers journey entry or continuation when a profile qualifies for or exits an [!DNL Adobe Experience Platform] audience. Recommended for streaming audiences; a Read Audience activity is used for batch scenarios."
 
 ## About audience qualification events{#about-segment-qualification}
 
@@ -68,22 +68,22 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_label"
 >title="Label"
->abstract="Add an optional label to identify this activity in reporting and test mode logs."
+>abstract="An optional label to identify this activity in reporting and test mode logs."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_audience"
 >title="Audience"
->abstract="Select the [!DNL Adobe Experience Platform] audience to leverage. The journey listens for profile entrances and exits from this audience."
+>abstract="The [!DNL Adobe Experience Platform] audience to leverage. The journey listens for profile entrances and exits from this audience."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_behavior"
 >title="Behavior"
->abstract="Choose whether to listen to audience entrances, exits, or both."
+>abstract="Whether to listen to audience entrances, exits, or both."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_identity"
 >title="Identity type"
->abstract="Select the identity type used to identify individuals. Only people-based identity namespaces are available."
+>abstract="The identity type used to identify individuals. Only people-based identity namespaces are available."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_merge_policy"

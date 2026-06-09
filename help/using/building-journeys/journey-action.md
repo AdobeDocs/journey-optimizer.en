@@ -288,7 +288,7 @@ For in-app messages, you can use the **[!UICONTROL Edit triggers]** button to ch
 >[!CONTEXTUALHELP]
 >id="ajo_multi_action_journey"
 >title="Add multiple inbound actions"
->abstract="You can select several inbound actions inside a single journey. This capability enables you to deliver multiple Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, each action containing a specific content."
+>abstract="A single journey can include several inbound actions. This capability enables you to deliver multiple Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, each action containing a specific content."
 
 To simplify your journey orchestration, you can define several inbound actions inside a single journey action.
 
