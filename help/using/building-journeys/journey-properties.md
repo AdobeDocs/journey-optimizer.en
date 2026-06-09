@@ -185,7 +185,7 @@ Timeout settings control how long a journey waits for activity execution and how
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_timeout"
 >title="Timeout or error"
->abstract="Enable this option to add an alternative path in the journey when the action times out or returns an error. This ensures that profiles continue through a fallback path rather than stopping at this step.Recommended values are between 1 and 30 seconds."
+>abstract="The **Timeout or error** option defines an alternative path in the journey when the action times out or returns an error, so profiles continue through a fallback path rather than stopping at this step. Recommended values are between 1 and 30 seconds."
 
 When editing an action or condition activity, you can define an alternative path in case of error or timeout. If the processing of the activity interrogating a third-party system exceeds the timeout duration defined in **[!UICONTROL Timeout or error]** field of the journey's properties, the second path will be chosen to perform a potential fallback action.
 
