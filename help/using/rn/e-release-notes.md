@@ -269,7 +269,7 @@ The following capabilities and improvements are coming to content management and
 </tbody>
 </table>
 
-* **Native Adobe Experience Manager Content Fragments (Managed Services) Integration** - Now compatible with** Managed Services**, you can view, access, and use Adobe Experience Manager Content Fragments directly in Journey Optimizer for personalization. Simply add your Adobe Experience Manager Managed Services repository URL in the configuration settings as a one-time setup.
+* **Native Adobe Experience Manager Content Fragments (Managed Services) Integration** - Now compatible with **Managed Services**, you can view, access, and use Adobe Experience Manager Content Fragments directly in Journey Optimizer for personalization. Simply add your Adobe Experience Manager Managed Services repository URL in the configuration settings as a one-time setup.
 
 * **AI assistant integration with Adobe Experience Manager Asset Essentials** - The AI Assistant now automatically fetches **brand-approved images** directly from your Adobe Experience Manager Assets when generating Emails, Web pages, and Push notifications. This eliminates the need to manually search the Assets or rely on generic AI fallbacks, ensuring every visual is perfectly accurate and brand-compliant.
 
