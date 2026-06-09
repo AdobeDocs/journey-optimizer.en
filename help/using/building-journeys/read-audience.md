@@ -103,12 +103,12 @@ You will set: **Audience** (mandatory), **Namespace** (mandatory), **Reading rat
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_audience"
 >title="Audience"
->abstract="The [!DNL Adobe Experience Platform] audience whose profiles will enter this journey."
+>abstract="The [!DNL Adobe Experience Platform] audience whose profiles enter this journey. All qualified profiles are read in. Batch audiences are recommended for reliable, consistent counts, and only one audience can be read per activity."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_namespace"
 >title="Namespace"
->abstract="The identity (e.g. email, ECID) used to identify individuals entering the journey. By default, the field is pre-filled with the last used namespace."
+>abstract="The identity (e.g. email, ECID) used to identify individuals entering the journey. Only people-based namespaces are available, and profiles without this identity cannot enter. By default, the field is pre-filled with the last used namespace."
 
 1. Unfold the **[!UICONTROL Orchestration]** category and drop a **[!UICONTROL Read Audience]** activity into your canvas.
 
@@ -186,17 +186,17 @@ This value is stored in the journey version payload. The default value is 5,000 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_start_date"
 >title="Start date / time"
->abstract="When this journey starts."
+>abstract="The date and time when the journey starts reading the audience and profiles begin entering. Combine it with the recurrence options below to schedule recurring runs."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_until"
 >title="Repeat until"
->abstract="The end date for recurring runs."
+>abstract="The date when recurring runs stop. After this date, the journey no longer reads the audience or admits new profiles."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_every"
 >title="Repeat every"
->abstract="How often the journey runs (e.g. daily, weekly)."
+>abstract="How often the journey re-reads the audience and runs again, for example daily or weekly. Determines the recurrence interval between runs until the Repeat until date is reached."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_incremental_read"
@@ -206,12 +206,12 @@ This value is stored in the journey version payload. The default value is 5,000 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_force_reentrance"
 >title="Force reentrance"
->abstract="Clears all participants from the journey before each new audience read."
+>abstract="Clears all participants from the journey before each new audience read, so every run starts fresh and profiles can re-enter on each occurrence."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience"
 >title="Trigger after batch audience evaluation"
->abstract="Runs the journey only after the batch audience has been freshly evaluated."
+>abstract="Delays each run until the batch audience has been freshly evaluated, so the journey reads the most up-to-date audience snapshot instead of stale data. Recommended for recurring journeys that depend on the latest segmentation results."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"

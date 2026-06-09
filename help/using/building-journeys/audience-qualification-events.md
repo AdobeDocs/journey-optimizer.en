@@ -73,17 +73,17 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_audience"
 >title="Audience"
->abstract="The [!DNL Adobe Experience Platform] audience to leverage. The journey listens for profile entrances and exits from this audience."
+>abstract="The [!DNL Adobe Experience Platform] audience the journey monitors. Profiles enter or move forward as they qualify for or exit this audience. Streaming audiences are recommended so qualification is evaluated in real time."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_behavior"
 >title="Behavior"
->abstract="Whether to listen to audience entrances, exits, or both."
+>abstract="Defines which audience membership changes the journey reacts to: when profiles qualify for (enter) the audience, when they leave (exit) it, or both. Listening to both covers the full membership lifecycle, while a single option restricts the journey to one direction."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_identity"
 >title="Identity type"
->abstract="The identity type used to identify individuals. Only people-based identity namespaces are available."
+>abstract="The identity namespace used to recognize individuals as they qualify for the audience. Only people-based identity namespaces are available, and profiles without this identity cannot enter the journey."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_merge_policy"
