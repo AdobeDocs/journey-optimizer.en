@@ -117,6 +117,16 @@ With the **journey designer**, build your multistep use cases: easily drag and d
 :::
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+**Reusable Journey Fragments**
+
+Build a set of journey nodes once — such as an eligibility check or channel routing logic — and reuse them across journeys with **Journey Fragments**.
+
+[Learn about Journey Fragments](journey-fragments.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Test & optimize**

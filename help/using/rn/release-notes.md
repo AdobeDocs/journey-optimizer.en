@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Release notes
+title: Release notes 
 feature: Release Notes
 role: User
 level: Beginner, Intermediate
@@ -53,11 +53,28 @@ topic_v2:
 >[!NOTE]
 >
 >Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
-<!--
-Rebuild
--->
+
 
 ## June '26 updates {#june-26-updates}
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey Fragments (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create <strong>Journey Fragments</strong> in Adobe Journey Optimizer. Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent, without rebuilding the same logic from scratch every time.</p>
+<p>Once created, fragments are stored in a dedicated <strong>Fragment Inventory</strong> and can be inserted into any journey using the <strong>Journey fragments</strong> activity.</p>
+<p>Previously available in Limited Availability, this capability is now generally available to all customers. Journey fragments also support <strong>Sandbox tooling</strong>, allowing you to package and export fragments across sandboxes.</p>
+<p>For more information, refer to the <a href="../building-journeys/journey-fragments.md">detailed documentation</a>.</p>
+<p>Availability date: June 9, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 <table>
 <thead>
@@ -95,14 +112,34 @@ Rebuild
 </tr>
 </tbody>
 </table>
- 
-* **Automatic completion for non-recurring Read Audience journeys** - Non-recurring **Read Audience** journeys now automatically transition to **Stopped** status once the last active profile exits. Previously, these journeys remained **Live** until the 91-day global timeout expired — even when no profiles were flowing through them anymore. With this improvement, journey status reflects actual execution state as soon as it completes, keeping your journey inventory accurate without manual intervention.
 
-  Note that this behavior does not apply to journeys that include nodes causing waiting periods, such as Wait nodes, Reaction nodes, or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout. [Learn more](../building-journeys/end-journey.md#auto-stop-non-recurring)
+
 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding `subType: "certificateCredential"` to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Microsoft Entra ID. [Learn more](../datasource/external-data-sources.md#certificate-credential)
 
   Availability date: June 4, 2026
+
+* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level. [Read more](../reports/alerts.md)
+
+  Availability date: June 1, 2026
+
+* **URL parameter encryption** - You can now encrypt URL parameters in tracking and landing page links added to your email messages. This provides an additional layer of security for sensitive parameter data. Previously released in Limited Availability, this capability is now available to all environments (General Availability). [Read more](../personalization/url-parameter-encryption.md)
+
+  Availability date: June 1, 2026
+
+* **New permissions for key registry** - Two new permissions are now required to access and manage the keys needed for URL parameter encryption: **Manage Key Registry** and **View Key Registry**. [Read more](../administration/high-low-permissions.md#administration-permissions)
+
+  Availability date: June 1, 2026
+
+<!--
++++ Coming soon — **Information below is subject to change.**
+
+* **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
+
+  Availability date: Early June, 2026
+
++++
+-->
 
 ## May '26 release notes {#may-26-rn}
 
@@ -149,6 +186,7 @@ The following capabilities and improvements have been added to journeys in this 
 </tbody>
 </table>
 
+<!--
 +++ Coming soon — **Information below is subject to change.**
 
 The following journey capabilities are expected in the upcoming days or weeks.
@@ -190,6 +228,7 @@ The following journey capabilities are expected in the upcoming days or weeks.
 </table>
 -->
 
+<!--
 <table>
 <thead>
 <tr>
@@ -217,29 +256,11 @@ The following journey capabilities are expected in the upcoming days or weeks.
   Availability date: Early June, 2026
 
 +++
+-->
 
 ### Orchestrated campaigns {#may-26-oc}
 
 The following capabilities and improvements have been added to orchestrated campaigns in this release. Additional changes are also expected in the upcoming days or weeks.
-
-<table>
-<thead>
-<tr>
-<th><strong>AI Assistant for Journey Expressions</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
-<p>This capability is available to all customers as a Public Beta.</p>
-<p><img src="assets/do-not-localize/expression-assistant.gif"></p>
-<p>For more information, refer to the <a href="../building-journeys/expression/expression-agent.md">detailed documentation</a>.</p>
-<p>Availability date: May 20, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -293,22 +314,6 @@ The following orchestrated campaign capability is expected in the upcoming days 
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of email header fields, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address.
 
   Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
-
-  Availability date: Early June, 2026
-
-+++
--->
-
-### Campaigns {#may-26-campaigns}
-
-* **Customer alerts for campaign lifecycle events** - New system alerts now notify you of key lifecycle events for Action and API-triggered campaigns. Subscribe at the sandbox level. [Read more](../reports/alerts.md)
-
-  Availability date: June 1, 2026
-
-<!--
-+++ Coming soon — **Information below is subject to change.**
-
-* **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
 
   Availability date: Early June, 2026
 
@@ -413,7 +418,7 @@ The following improvements have been added to the WhatsApp channel in this relea
 
 * **WhatsApp button support and tracking** - WhatsApp templates now support **Quick reply**, **Call to action – URL**, and **Call to action – phone**, **Copy code** is not supported. Journey Optimizer sends supported buttons and tracks interactions alongside your other channel reporting.
 
-* **WhatsApp channel context data** - Journey Optimizer now captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO EmailTrackingExperienceEvent Dataset** under the `whatsAppChannelContext` field group.
+* **WhatsApp channel context data** - Journey Optimizer now captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO EmailTrackingExperienceEvent Dataset** under the `whatsAppChannelContext` field group. [Read more](../whatsapp/send-whatsapp.md#whatsapp-channel-context)
 
   +++ The following fields are captured and can be used to build audiences and analyze WhatsApp engagement
 
@@ -481,16 +486,6 @@ The following capabilities and improvements have been added to content managemen
 
 * **Cross-organization repository access in the Assets Selector** - You can now seamlessly select assets from repositories across multiple organizations directly within the Adobe Experience Manager Asset Selector.
 
-### Administration {#may-26-admin}
-
-* **URL parameter encryption** - You can now encrypt URL parameters in tracking and landing page links added to your email messages. This provides an additional layer of security for sensitive parameter data. Previously released in Limited Availability, this capability is now available to all environments (General Availability). [Read more](../personalization/url-parameter-encryption.md)
-
-  Availability date: June 1, 2026
-
-* **New permissions for key registry** - Two new permissions are now required to access and manage the keys needed for URL parameter encryption: **Manage Key Registry** and **View Key Registry**. [Read more](../administration/high-low-permissions.md#administration-permissions)
-
-  Availability date: June 1, 2026
-
 <!--
 +++ Coming soon — **Information below is subject to change.**
 
@@ -531,6 +526,7 @@ The following usability improvements were also released in May 2026.
   ![](../test-approve/assets/simulation-preview-redesign.png)
 -->
 
+<!--
 +++ Coming soon — **Information below is subject to change.**
 
 * **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders to improve navigation and management in the interface.
@@ -538,3 +534,5 @@ The following usability improvements were also released in May 2026.
   Availability date: Early June, 2026
 
 +++
+-->
+

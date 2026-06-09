@@ -85,21 +85,21 @@ You can create these types of challenge experiences:
 * **Sequential challenges**: Customers complete tasks in a defined order. Use this type to guide customers through a specific journey or onboarding process.  
   *Example: "New Member Journey" - Sign up for emails → Make your first purchase → Write a product review → Refer a friend (complete in this exact order)*
 
-* **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Content, Messaging, and Audience as you would for any other challenge type.
+* **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Settings, Content, and Messaging as you would for any other challenge type.
 
 ## How it works {#how-it-works}
 
 Creating and launching a loyalty challenge follows this workflow:
 
-1. **Create a challenge** - Define the basic challenge properties, including name, type (Standard, Streak, Sequential, or Bring your own data when available), and date range. [Learn how to choose a challenge type](create-challenges.md#create-the-challenge).
+1. **Create a challenge** - Choose the challenge type (Standard, Streak, Sequential, or Bring your own data when available). [Learn how to choose a challenge type](create-challenges.md#create-the-challenge).
 
-1. **Add tasks** - Define the specific actions customers must complete, including task types (purchase, spend, or custom event), quantities, product filters, and rewards.
+1. **Configure settings** - In the Settings tab, define challenge details, audience, schedule, rules (opt-in, progress tracking, repeat limits), and optional metadata. [Learn about challenge settings](create-challenges.md#settings).
 
-1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices. Content cards show challenge information, progress, and rewards.
+1. **Add tasks and rewards** - In the Structure tab, define tasks and rewards (not required for Bring your own data challenges).
+
+1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices.
 
 1. **Configure messaging** (optional) - Set up multi-channel messages (in-app, email, push) for key lifecycle stages: launch, in-progress, and completion.
-
-1. **Select target audience** - Define which customers can participate in your challenge by selecting an audience from Adobe Experience Platform.
 
 1. **Launch the challenge** - Publish the challenge, then generate a journey. Journey Optimizer automatically creates the journey for your challenge. Publish the auto-generated journey to make the challenge available to customers.
 

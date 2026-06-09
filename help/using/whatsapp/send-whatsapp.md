@@ -57,7 +57,7 @@ When your WhatsApp message is ready, complete the configuration of your [journey
 
 ## Analyze WhatsApp interactions {#whatsapp-channel-context}
 
-Journey Optimizer captures additional interaction data returned from the WhatsApp channel and stores it in the **Reporting - Email Tracking Experience Event Dataset** under the `whatsAppChannelContext` field group. Use these fields to build [audiences](../audience/about-audiences.md), run [queries](../data/get-started-queries.md), and analyze WhatsApp engagement. [Learn more about system datasets](../data/get-started-datasets.md#system-datasets).
+Journey Optimizer captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO - Email Tracking Experience Event Dataset** under the `whatsAppChannelContext` field group. Use these fields to build [audiences](../audience/about-audiences.md), run [queries](../data/get-started-queries.md), and analyze WhatsApp engagement. [Learn more about system datasets](../data/get-started-datasets.md#system-datasets).
 
 The following fields are captured:
 

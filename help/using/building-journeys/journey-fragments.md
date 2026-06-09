@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: fragments, journey, reuse, nodes, canvas, inventory, reusable
-badge: label="Limited Availability" type="Informative"
 version: Journey Orchestration
 feature_v2: []
 subfeature_v2: []
@@ -16,12 +15,16 @@ subfeature_v2: []
 
 # Journey Fragments {#journey-fragments}
 
->[!AVAILABILITY]
->This capability is currently in Limited Availability. To request access, contact your Adobe representative.
-
 Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent — without rebuilding the same logic from scratch every time. [See use case examples.](#examples)
 
 Once created, fragments are stored in a dedicated **[!UICONTROL Fragment Inventory]** and can be inserted into any journey using the **[!UICONTROL Journey fragments]** activity.
+
+>[!NOTE]
+>
+>**Journey Fragments** are reusable sets of journey nodes. They are different from:
+>
+>* **[Fragments](../content-management/fragments.md)** — reusable content components used in emails across campaigns and journeys.
+>* **[AEM Content Fragments](../integrations/aem-fragments.md)** — content authored in Adobe Experience Manager and used in [!DNL Journey Optimizer].
 
 >[!NOTE]
 >Journey fragments use a **copy behavior**: inserting a fragment into a journey creates a static copy of the original nodes. Any updates made to the original fragment are not reflected in journeys that have already used it.
@@ -181,6 +184,7 @@ The following guardrails apply to journey fragments:
 * [Tags](tags.md) and **Labels** are supported on fragments.
 * [Audit Logs](../privacy/audit-logs.md) are supported.
 * Journeys running on the old stack (using Inline Campaigns) do not support journey fragments. Duplicate such a journey to move to the new stack before using this feature.
+* Journey fragments support [Sandbox tooling](../configuration/copy-objects-to-sandbox.md). Fragments can be packaged and exported to another sandbox.
 
 ## Use case examples {#examples}
 

@@ -1,5 +1,5 @@
 ---
-title: Use decision policies in messages
+title: Use decision policies in messages 
 description: Learn how to use decision policies in your messages. 
 feature: Decisioning
 topic: Integrations
@@ -115,7 +115,7 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 
    ![](assets/decision-policy-add-dm-syntax.png)
 
-3. Use the returned decision item attributes as column data so that the selected offer information is included in the extraction file for each profile.
+3. Use the returned decision item attributes as column data so that the selected offer information is included in the extraction file for each profile. 
 
 >[!ENDTABS]
 

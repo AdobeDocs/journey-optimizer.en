@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create a direct mail message
+title: Create a direct mail message 
 description: Learn how to create a direct mail message in Journey Optimizer 
 feature: Direct Mail
 topic: Content Management
@@ -175,4 +175,4 @@ You can now test your direct mail message and send it to your audience. [Learn h
 * [Test and send direct mail](test-send-direct-mail.md)
 * [Preview and test content](../content-management/preview-test.md)
 
-For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md).
+For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md). 
