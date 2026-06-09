@@ -12,7 +12,7 @@ subfeature_v2:
 ---
 # Preview your content using test profiles {#preview}
 
-Once [test profiles](test-profiles.md) have been selected, you can preview your content using their data. Follow these steps:
+Once [test profiles](test-profiles.md) have been selected, you can preview your content using their data. You can use either simulation method:
 
 1. From the edit content screen of your message or in the Email Designer, click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown.
 
@@ -41,7 +41,3 @@ Once [test profiles](test-profiles.md) have been selected, you can preview your 
     >If an error is found in the configuration details, click the **[!UICONTROL View configuration details]** button. [Learn more](../email/surface-personalization.md#check-configuration)
 
 When creating code-based experiences, you can preview your personalized content right on your browser or on your mobile devices for a real-life simulation. [Learn more](../code-based/test-code-based.md#preview-on-device)
-
->[!NOTE]
->
->[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)

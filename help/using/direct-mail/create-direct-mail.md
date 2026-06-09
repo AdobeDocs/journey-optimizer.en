@@ -72,9 +72,7 @@ Browse the tabs below to learn how to add a Direct mail message in a campaign or
 
     ![Extraction file content editor for a direct mail journey activity](assets/direct-mail-journey-content.png)
 
-1. Once the content of the extraction file has been defined, you can use test profiles to preview it. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
-
-    To do so, click **[!UICONTROL Simulate content]** then add a test profile to check how the extraction file rendering using the test profile data. Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
+1. Once the content of the extraction file has been defined, preview it using **[!UICONTROL Simulate content]**. [Learn how to preview and test content](../content-management/preview-test.md)
 
     ![Simulate content preview for a direct mail extraction file](assets/direct-mail-simulate.png){width="800" align="center"}
 

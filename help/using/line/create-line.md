@@ -115,7 +115,7 @@ To configure your LINE content, follow the steps below.
 
 1. Click **[!UICONTROL Save]** and check your message in the preview.
 
-1. Use the **[!UICONTROL Simulate content]** button to preview your LINE message content and personalized content.
+1. Use **[!UICONTROL Simulate content]** to preview your LINE message content and personalized content. [Learn more](send-line.md)
 
 Once you have performed your tests and validated the content, you can send your LINE message to your audience. These steps are detailed in [this page](send-line.md)
 

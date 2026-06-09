@@ -121,7 +121,7 @@ Once a dataset has been enabled for lookup personalization, you can use its data
     * `{{flight._myorg.booking.boardingTime}}`
     * `{{flight._myorg.booking.gate}}`
 
-1. Now that your code is ready, you can complete your content as usual, and test it using the **Simulate content** button to check the personalization. [Learn how to preview and test content](../content-management/preview-test.md)
+1. Now that your code is ready, you can complete your content as usual, and test it using either simulation method: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn how to preview and test content](../content-management/preview-test.md)
 
 
     ![](assets/aep-data-sample.png)

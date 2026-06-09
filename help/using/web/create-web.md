@@ -172,9 +172,10 @@ To start authoring your web experience, follow the steps below.
 >title="Preview your web experience"
 >abstract="Get a simulation of what your web experience will look like."
 
-Once you [authored your web experience](web-visual-editor.md) using the web designer, you can use test profiles to preview your modified web pages. If you inserted personalized content, you can check how this content is displayed, using test profile data.
+Once you [authored your web experience](web-visual-editor.md) using the web designer, you can preview your modified web pages using either simulation method:
 
-To do this, click **[!UICONTROL Simulate content]** from either the journey or campaign edit content screen, then add a test profile to check your web page using the test profile data.
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles and add a test profile to check your web page.
 
 ![](assets/web-designer-preview.png)
 
