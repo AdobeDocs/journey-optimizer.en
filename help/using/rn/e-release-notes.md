@@ -198,8 +198,6 @@ The following capabilities and improvements are coming to the email channel in t
 
 * **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub One-Time Password (OTP) directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.
 
-* **Exclude Bot Clicks for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metrics are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data: Estimated Clicks (total clicks counted after removing identified bot and non-human traffic), Estimated CTR (Estimated Clicks relative to total deliveries), and Estimated CTOR for email only (Estimated Clicks relative to Estimated Opens).
-
 ### Mobile messaging (SMS, MMS, RCS & LINE) {#june-26-mobile}
 
 The following improvements are coming to mobile messaging in this release.
@@ -250,9 +248,9 @@ The following capabilities and improvements are coming to content management and
 </tbody>
 </table>
 
-* **Native AEM Content Fragments (Managed Services) Integration in AJO** - Now compatible with Managed Services, you can view, access, and use Adobe Experience Manager Content Fragments directly in Journey Optimizer for personalization. Simply add your Adobe Experience Manager Managed Services repository URL in the configuration settings as a one-time setup.
+* **Native Adobe Experience Manager Content Fragments (Managed Services) Integration** - Now compatible with Managed Services, you can view, access, and use Adobe Experience Manager Content Fragments directly in Journey Optimizer for personalization. Simply add your Adobe Experience Manager Managed Services repository URL in the configuration settings as a one-time setup.
 
-* **Emagica integration with AEM Asset Essentials** - The AI Assistant now automatically fetches brand-approved images directly from your Adobe Experience Manager Assets when generating Emails, Web pages, and Push notifications. This eliminates the need to manually search the Assets or rely on generic AI fallbacks, ensuring every visual is perfectly accurate and brand-compliant.
+* **Emagica integration with Adobe Experience Manager Asset Essentials** - The AI Assistant now automatically fetches brand-approved images directly from your Adobe Experience Manager Assets when generating Emails, Web pages, and Push notifications. This eliminates the need to manually search the Assets or rely on generic AI fallbacks, ensuring every visual is perfectly accurate and brand-compliant.
 
 ### Custom channels {#june-26-channels}
 
@@ -294,6 +292,15 @@ The following capability is coming to Loyalty in this release.
 </tr>
 </tbody>
 </table>
+
+### Reporting {#june-26-reporting}
+
+The following improvements are coming to reporting in this release.
+
+* **Exclude Bot Clicks for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metrics are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
+  * Estimated Clicks: Total clicks counted after removing identified bot and non-human traffic.
+  * Estimated CTR: Estimated Clicks relative to total deliveries.
+  * Estimated CTOR for email only: Estimated Clicks relative to Estimated Opens.
 
 ### Configuration {#june-26-configuration}
 
