@@ -131,8 +131,27 @@ topic_v2:
 </tr>
 </tbody>
 </table>
-
-
+ 
+<table>
+<thead>
+<tr>
+<th><strong>Simulate content variations — updated experience and AI variant generation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Two updates are now available to the <strong>Simulate content</strong> workflow:</p>
+<ul>
+<li><strong>New default path</strong> — Clicking <strong>Simulate content</strong> now opens the <strong>Simulate content variations</strong> experience by default. From a single screen, you can add sample input manually or from a CSV/JSON file, reuse simulated users, preview rendering, and send proofs. To preview with Adobe Experience Platform test profiles, send proofs with test profile data, or check email inbox rendering and spam reports, click <strong>Simulate content</strong>, then select <strong>Simulate content (AEP profiles)</strong> from the dropdown.</li>
+<li><strong>AI-generated content variants</strong> — In the <strong>Simulate content variations</strong> experience, click <strong>Generate</strong> to use AI to automatically create content variants. The system analyzes your message, detects personalization fields and conditional branches, and fills in realistic values so you can validate rendering without building every variant by hand.</li>
+</ul>
+<p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
+<p>Availability date: June 9, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding `subType: "certificateCredential"` to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Microsoft Entra ID. [Learn more](../datasource/external-data-sources.md#certificate-credential)
 

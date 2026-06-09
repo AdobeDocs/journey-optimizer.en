@@ -124,7 +124,7 @@ Once the Experience Manager template is available in Journey Optimizer as a cont
 
     ![](assets/aem_ajo_5.png)
 
-1. If you added personalized content to your Experience Manager template, click **[!UICONTROL Simulate Content]** to preview how it will appear in the message using test profiles. 
+1. If you added personalized content to your Experience Manager template, use either simulation method to preview how it will appear in the message: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
 
     [Learn more about preview and test profiles](../content-management/preview-test.md)
 
