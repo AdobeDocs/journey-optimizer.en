@@ -144,7 +144,7 @@ Testing and approval processes serve as essential quality gates that protect you
 | Capability | Applies to | Channel restrictions | Prerequisites | Primary purpose |
 |------------|-----------|---------------------|--------------|-----------------|
 | [Test profiles](../using/content-management/test-profiles.md) | Campaigns, Journeys | All channels | Test profiles created | Preview personalized content |
-| [Sample input data](../using/test-approve/simulate-sample-input.md) | Campaigns, Journeys | Email, SMS, Push, Web, Code-based, In-app, Content cards | CSV/JSON file | Test multiple personalization variants |
+| [Sample input data](../using/test-approve/simulate-sample-input.md) | Campaigns, Journeys | Email, SMS, Push, Web, Code-based, In-app, Content cards | CSV/JSON file, manual entry, or AI | Test multiple personalization variants |
 | [Test mode](../using/building-journeys/testing-the-journey.md) | Journeys only | N/A | Draft journey, namespace configured | Simulate profile progression |
 | [Dry run](../using/building-journeys/journey-dry-run.md) | Journeys only | N/A | Journey created | Analyze execution paths |
 | [Email rendering](../using/content-management/rendering.md) | Campaigns, Journeys | Email only | Litmus integration | Verify display across clients |
@@ -269,7 +269,7 @@ To maximize the effectiveness of your testing efforts, follow these recommended 
 
 1. **Validate personalization thoroughly** - Test with multiple [test profiles](../using/content-management/test-profiles.md) that have different attribute values to confirm personalization tokens render correctly and fallback values work. Use the [personalization playground](../using/personalization/personalize.md#playground) to experiment with personalization expressions and test code with sample data before applying them to your campaigns.
 
-1. **Test content variations with sample data** - Use [sample input data](../using/test-approve/simulate-sample-input.md) from CSV or JSON files to test up to 30 personalization scenarios without creating numerous test profiles, saving time while ensuring comprehensive coverage. Supports email, SMS, push, web, code-based experience, in-app, and content cards channels.
+1. **Test content variations with sample data** - Use [sample input data](../using/test-approve/simulate-sample-input.md) from CSV or JSON files, manual entry, or AI auto-generation to test up to 30 personalization scenarios without creating numerous test profiles.
 
 1. **Use seed lists for stakeholder monitoring** - Configure [seed lists](../using/configuration/seed-lists.md) to automatically include internal stakeholders who will receive copies of all deliveries at execution time for quality monitoring and compliance verification (email channel only).
 
@@ -358,7 +358,7 @@ Familiarize yourself with these essential testing concepts to better understand 
 
 **[Dry run](../using/building-journeys/journey-dry-run.md)** - Journey execution analysis tool that traces paths without sending messages or making API calls. Use case: Validate logic without consuming resources. [Learn about dry run](../using/building-journeys/journey-dry-run.md)
 
-**[Sample input data](../using/test-approve/simulate-sample-input.md)** - CSV or JSON files containing profile attribute values for testing personalization. Supports up to 30 variants. Alternative to creating test profiles. [How to simulate content variations](../using/test-approve/simulate-sample-input.md)
+**[Sample input data](../using/test-approve/simulate-sample-input.md)** - CSV or JSON files, manual entry, or AI auto-generation for testing personalization. Supports up to 30 variants. [How to simulate content variations](../using/test-approve/simulate-sample-input.md)
 
 **[Seed lists](../using/configuration/seed-lists.md)** - Email addresses of internal stakeholders automatically included in actual deliveries (not test sends). Email channel only. Use case: Quality monitoring and compliance. [Configure seed lists](../using/configuration/seed-lists.md)
 
@@ -380,7 +380,7 @@ Familiarize yourself with these essential testing concepts to better understand 
 
 >[!TAB Essential guides]
 
-* [Simulate Content Variations](../using/test-approve/simulate-sample-input.md) - Test up to 30 personalization scenarios using CSV or JSON files. Ideal for multilingual content testing without creating multiple test profiles. Supports email, SMS, push, web, code-based, in-app, and content cards.
+* [Simulate Content Variations](../using/test-approve/simulate-sample-input.md) - Test up to 30 personalization scenarios using CSV or JSON files, manual entry, or AI auto-generation.
 
 * [Creating Test Profiles](../using/audience/creating-test-profiles.md) - Create and manage test profiles to simulate customer scenarios. Learn how to flag profiles for testing, set attributes, and organize test segments.
 

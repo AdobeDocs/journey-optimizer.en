@@ -185,15 +185,12 @@ When using a configuration with personalized settings in a campaign or a journey
 
 ## Check your configuration {#check-configuration}
 
-When using a personalized configuration in a campaign or a journey, you can preview your email content using test profiles to check for potential errors with the dynamic settings you defined. Follow the steps below.
+When using a personalized configuration in a campaign or a journey, you can preview your email content to check for potential errors with the dynamic settings you defined. You can use either simulation method:
 
->[!NOTE]
->
->In addition to test profiles, [!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
 
-To preview your content using test profiles, follow these steps: 
-
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button. [Learn more](../content-management/preview.md)
+To preview your content using test profiles, follow these steps:
 
 1. Select a [test profile](../content-management/test-profiles.md).
 

@@ -54,6 +54,12 @@ To create direct mail messages, create a scheduled campaign or a journey, and co
 
 ## Add a Direct mail message {#create-dm-campaign}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_direct_mail"
+>title="Direct mail action"
+>abstract="A direct mail channel action generates the direct mail content for profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a direct mail configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 Browse the tabs below to learn how to add a Direct mail message in a campaign or a journey.
 
 >[!BEGINTABS]
@@ -72,9 +78,7 @@ Browse the tabs below to learn how to add a Direct mail message in a campaign or
 
     ![Extraction file content editor for a direct mail journey activity](assets/direct-mail-journey-content.png)
 
-1. Once the content of the extraction file has been defined, you can use test profiles to preview it. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
-
-    To do so, click **[!UICONTROL Simulate content]** then add a test profile to check how the extraction file rendering using the test profile data. Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
+1. Once the content of the extraction file has been defined, preview it using **[!UICONTROL Simulate content]**. [Learn how to preview and test content](../content-management/preview-test.md)
 
     ![Simulate content preview for a direct mail extraction file](assets/direct-mail-simulate.png){width="800" align="center"}
 

@@ -148,7 +148,7 @@ To start building your content, follow the steps below:
     >
     >You cannot revert back to the visual designer for this email after switching to the code editor.
 
-1. Once your content is ready, click the **[!UICONTROL Simulate content]** button to check rendering. You can choose the desktop or mobile view. Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
+1. Once your content is ready, use either simulation method to check rendering. You can choose the desktop or mobile view. Detailed information is available in the [Content Management](../content-management/preview-test.md) section.
 
     ![](assets/email_designer_simulate_content.png)
 

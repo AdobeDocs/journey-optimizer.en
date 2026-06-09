@@ -18,7 +18,7 @@ subfeature_v2: []
 >[!CONTEXTUALHELP]
 >id="ajo_path_targeting_fallback"
 >title="What is fallback path?"
->abstract="Fallback paths allow your audience to enter an alternate path when no targeting rules are qualified. </br>If you do not select this option, any audience that doesn't qualify for a targeting rule will not enter the fallback path and exit the journey."
+>abstract="Fallback paths allow your audience to enter an alternate path when no targeting rules are qualified. </br>If this option is not selected, any audience that doesn't qualify for a targeting rule will not enter the fallback path and exit the journey."
 
 >[!AVAILABILITY]
 >

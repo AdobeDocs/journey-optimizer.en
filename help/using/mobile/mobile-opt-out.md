@@ -64,7 +64,7 @@ Note that if a customer responds STOP to a Mobile message, the provider blocks a
 
 >[!NOTE]
 >
->If you plan to use two-way SMS (reply with STOP, QUIT, etc.), ensure that you have first sent at least one one-way SMS to establish the phone number to profile mapping. Expired or misconfigured provider credentials will prevent inbound keywords from updating the user profile, resulting in missing or delayed opt-out records. Inbound responses are stored in the _AJO Inbound Activity Event Dataset_ system dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
+>If you plan to use two-way SMS (reply with STOP, QUIT, etc.), ensure that you have first sent at least one one-way SMS to establish the phone number to profile mapping. Expired or misconfigured provider credentials will prevent inbound keywords from updating the user profile, resulting in missing or delayed opt-out records. Inbound responses are stored in the _AJO Email Tracking Dataset_ system dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
 
 
 ## Blocklists {#sms-blocklists}

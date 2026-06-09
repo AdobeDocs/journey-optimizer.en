@@ -57,7 +57,7 @@ Use the Read Audience activity to start journeys with defined audiences. You cho
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment"
 >title="Read Audience activity"
->abstract="Add all qualified profiles from a selected [!DNL Adobe Experience Platform] audience to this journey. Run once or on a schedule."
+>abstract="Adds all qualified profiles from a selected [!DNL Adobe Experience Platform] audience to this journey. Runs once or on a schedule."
 
 The **Read Audience** activity is the journey entry-point activity that adds all profiles from a selected [!DNL Adobe Experience Platform] audience to a journey. You can run the entrance once or on a recurring schedule. In APIs and technical references this activity is also referred to as segment-trigger or audience-based journey entry.
 
@@ -103,12 +103,12 @@ You will set: **Audience** (mandatory), **Namespace** (mandatory), **Reading rat
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_audience"
 >title="Audience"
->abstract="Select the [!DNL Adobe Experience Platform] audience whose profiles will enter this journey."
+>abstract="The [!DNL Adobe Experience Platform] audience whose profiles enter this journey. All qualified profiles are read in. Batch audiences are recommended for reliable, consistent counts, and only one audience can be read per activity."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_namespace"
 >title="Namespace"
->abstract="Choose which identity (e.g. email, ECID) is used to identify individuals entering the journey. By default, the field is pre-filled with the last used namespace."
+>abstract="The identity (e.g. email, ECID) used to identify individuals entering the journey. Only people-based namespaces are available, and profiles without this identity cannot enter. By default, the field is pre-filled with the last used namespace."
 
 1. Unfold the **[!UICONTROL Orchestration]** category and drop a **[!UICONTROL Read Audience]** activity into your canvas.
 
@@ -186,17 +186,17 @@ This value is stored in the journey version payload. The default value is 5,000 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_start_date"
 >title="Start date / time"
->abstract="Define when to start this journey."
+>abstract="The date and time when the journey starts reading the audience and profiles begin entering. Combine it with the recurrence options below to schedule recurring runs."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_until"
 >title="Repeat until"
->abstract="Define the end date for recurring runs."
+>abstract="The date when recurring runs stop. After this date, the journey no longer reads the audience or admits new profiles."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_every"
 >title="Repeat every"
->abstract="How often the journey runs (e.g. daily, weekly)."
+>abstract="How often the journey re-reads the audience and runs again, for example daily or weekly. Determines the recurrence interval between runs until the Repeat until date is reached."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_incremental_read"
@@ -206,12 +206,12 @@ This value is stored in the journey version payload. The default value is 5,000 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_force_reentrance"
 >title="Force reentrance"
->abstract="Clear all participants from the journey before each new audience read."
+>abstract="Clears all participants from the journey before each new audience read, so every run starts fresh and profiles can re-enter on each occurrence."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience"
 >title="Trigger after batch audience evaluation"
->abstract="Run the journey only after the batch audience has been freshly evaluated."
+>abstract="Delays each run until the batch audience has been freshly evaluated, so the journey reads the most up-to-date audience snapshot instead of stale data. Recommended for recurring journeys that depend on the latest segmentation results."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
@@ -284,7 +284,7 @@ For example, if a journey is scheduled for 6 PM daily, you can specify a number 
 [!CONTEXTUALHELP]
 >id="jo_segment_filters"
 >title="About segment filters"
->abstract="You can choose to target only the individuals who entered or exited a specific segment during a specific time window. For example, you can decide to only retrieve all the customers who entered the VIP segment since last week."
+>abstract="This option targets only the individuals who entered or exited a specific segment during a specific time window. For example, it can retrieve only the customers who entered the VIP segment since last week."
 
 You can choose to target only the individuals who entered or exited a specific segment during a specific time window. For example, you can decide to only retrieve all the customers who entered the VIP segment since last week. Only the new VIP customers will be targeted. All the customers who were already part of the VIP segment before will be excluded.
 

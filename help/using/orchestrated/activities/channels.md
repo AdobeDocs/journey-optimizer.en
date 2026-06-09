@@ -198,7 +198,10 @@ For a detailed overview of how to use the personalization editor, refer to [Get 
 
 ### Check and test your content {#simulate-content-test-profiles}
 
-Once the content is created, use the **[!UICONTROL Simulate Content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
+Once the content is created, you can preview and test it using either simulation method:
+
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview and test your content with test profiles. [Learn more](../../content-management/preview-test.md)
 
 ![image showing the Simulate Content button](../assets/channel-simulate.png)
 

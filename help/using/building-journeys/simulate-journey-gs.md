@@ -9,15 +9,16 @@ role: User
 level: Intermediate
 keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
-hide: true
 feature_v2: []
 subfeature_v2: []
 ---
 # Get started with Journey simulation {#simulate-journey-gs}
-
+ 
 >[!IMPORTANT]
 >
 >You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
+>
+>To use AI in **[!UICONTROL Simulation]** (**[!UICONTROL Quick simulation]**, generating simulated users with AI, **[!UICONTROL Generate event values]**), users require **[!UICONTROL Generate Content]** permission from the **[!UICONTROL AI Assistant]** capability. 
 
 You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profile-like entities you add, without using persistent test profiles in Adobe Experience Platform.
    
@@ -41,10 +42,6 @@ Simulated users selected for the simulation appear in the **Test users** section
 
 ![Simulation panel for a batch journey with read audience only](assets/simulate-batch.png)
 
-For journeys with a **[!UICONTROL Read audience]**, you can access **[!UICONTROL Quick simulation]** or **[!UICONTROL Manual simulation]**.
-
-![Simulation panel for a batch journey with read audience only](assets/simulate-14.png)
-
 +++
 
 +++ Batch journey with a read audience and unitary events
@@ -53,10 +50,6 @@ A segment-trigger journey that includes one or more unitary events along the pat
 Simulated users selected for the simulation and configured events will be visible respectively in the Test users and Test events sections. The Test events section will not be visible until a simulated user enters the journey.
 
 ![Simulation panel for a batch journey with read audience only](assets/simulate-batch-2.png)
-
-With **Batch journey with a read audience and unitary events**, you can access **[!UICONTROL Quick simulation]** or **[!UICONTROL Manual simulation]**.
-
-![Test mode button in journey interface](assets/simulate-12.png)
 
 +++
 
@@ -67,15 +60,11 @@ Simulated users selected for the simulation and configured events will be visibl
 
 ![Simulation panel for a batch journey with read audience only](assets/simulate-batch-3.png)
 
-With **Unitary journey**, you access directly the Manual simulation menu.
-
-![Simulation panel for a unitary journey](assets/simulate-13.png)
-
 +++
 
 ## Launch Simulation {#launch}
 
-Switch the journey to **[!UICONTROL Simulation]** to test with simulated users. Step-by-step tasks are detailed in [Simulate your journey](simulate-journey-2.md).
+Switch the journey to **[!UICONTROL Simulation]** to test with simulated users. Step-by-step tasks are detailed in [Simulate your journey](simulate-journey.md).
 
 1. From your journey, click **[!UICONTROL Simulate]** and choose **[!UICONTROL Simulation]**.
 
