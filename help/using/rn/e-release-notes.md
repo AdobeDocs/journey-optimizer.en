@@ -38,23 +38,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 The following capability is coming to Loyalty in this release.
 
-<table>
-<thead>
-<tr>
-<th><strong>Loyalty Challenges</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Loyalty Challenges turn loyalty initiatives into engaging, <strong>gamified experiences</strong> that motivate customers to take valuable actions, such as making purchases, writing reviews, engaging on social media, or referring friends.</p>
-<p>Administrators can use the Loyalty admin menu to connect Journey Optimizer with your loyalty ecosystem, including reward fulfillment APIs, event definitions, product inventory, exclusions, and identity settings. Marketers can then design standard, streak, or sequential challenges, define tasks and rewards, deliver branded content cards and messages, and monitor performance with built-in reporting dashboards. Journey Optimizer generates the journeys that orchestrate each challenge in the background, so teams can focus on the customer experience and business goals.</p>
-<p>This capability is now available to all environments (General Availability).</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 ### Journeys {#june-26-journeys}
 
 The following capabilities and improvements are coming to journeys in this release.
