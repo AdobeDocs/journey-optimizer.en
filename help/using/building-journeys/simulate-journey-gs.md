@@ -62,7 +62,7 @@ Simulated users selected for the simulation and configured events will be visibl
 
 ## Launch Simulation {#launch}
 
-Switch the journey to **[!UICONTROL Simulation]** to test with simulated users. Step-by-step tasks are detailed in [Simulate your journey](simulate-journey-2.md).
+Switch the journey to **[!UICONTROL Simulation]** to test with simulated users. Step-by-step tasks are detailed in [Simulate your journey](simulate-journey.md).
 
 1. From your journey, click **[!UICONTROL Simulate]** and choose **[!UICONTROL Simulation]**.
 

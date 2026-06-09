@@ -205,11 +205,6 @@ The following capabilities and improvements have been added to journeys in this 
 </table>
 
 <!--
-+++ Coming soon — **Information below is subject to change.**
-
-The following journey capabilities are expected in the upcoming days or weeks.
-
-<!--
 <table>
 <thead>
 <tr>
@@ -255,9 +250,6 @@ The following journey capabilities are expected in the upcoming days or weeks.
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
 
   Availability date: Early June, 2026
-
-+++
--->
 
 ### Orchestrated campaigns {#may-26-oc}
 
