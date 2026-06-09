@@ -87,44 +87,46 @@ The **Channel builder** section is the central interface for defining new custom
 
    ![](assets/custom_channel_endpoint_query_param.png)
 
-### Policy configuration {#policy-configuration}
-
-In the **[!UICONTROL Policy configuration]** section, define how [!DNL Journey Optimizer] handles request throughput and failures:
+1. In the **[!UICONTROL Policy configuration]** section, define how [!DNL Journey Optimizer] handles request throughput and failures.
 
    ![](assets/custom_channel_endpoint_policy_config.png)
 
-* **[!UICONTROL Enable throttling]** – Enabled by default. Set the maximum number of requests per second (default: **5,000 req/sec**).
-* **[!UICONTROL Timeout]** – Default: **5,000 milliseconds**.
-* **[!UICONTROL Enable retry]** – Enabled by default. Set the **[!UICONTROL Retry count]** (default: **3**, configurable range: 0–10).
-
->[!NOTE]
->
->The UX for policy configuration will be improved in a future update.
+   * **[!UICONTROL Enable throttling]** – Disabled by default. Set the maximum number of requests per second (default: **5,000 req/sec**).
+   * **[!UICONTROL Enable retry]** – Enabled by default. Set the **[!UICONTROL Retry count]** (default: **3**, configurable range: 0–10).
+   * **[!UICONTROL Timeout]** – Default: **5,000 milliseconds**.
 
 ### Authentication settings {#authentication-settings}
 
-Select the **[!UICONTROL Authentication type]** required by your endpoint:
+Select the **[!UICONTROL Authentication type]** required by your endpoint.
+
+![](assets/custom_channel_authentication_type.png)
 
 * **[!UICONTROL None]** – The request is sent without credentials.
 * **[!UICONTROL API Key]** – Provide the key name, value, and location (query parameter or header).
 * **[!UICONTROL Basic]** – Provide a username and password.
 * **[!UICONTROL OAuth 2.0]** – Configure client credentials for OAuth 2.0 authentication.
-* **[!UICONTROL Custom]** – Define the authentication configuration using a JSON payload. A **[!UICONTROL Test authentication]** button is available to validate the setup.
+<!--* **[!UICONTROL Custom]** – Define the authentication configuration using a JSON payload.-->
+
+A **[!UICONTROL Test connection]** button is available to validate the authentication setup. [Learn more](#test-the-connection)
 
 >[!NOTE]
 >
->When the authentication type is anything other than **None**, AJO automatically generates an initial set of API credentials for this channel when it is activated. Additional credentials can be created in the API credentials inventory. [Learn more](#api-credentials)
+>When the authentication type is anything other than **None**, Journey Optimizer automatically generates an initial set of API credentials for this channel when it is activated. Additional credentials can be created in the API credentials inventory. [Learn more](#api-credentials)
 
-### Payload (Authoring) configuration {#payload-configuration}
+### Payload configuration {#payload-configuration}
 
 The payload configuration defines the structure of the message payload and which fields marketers can author and personalize.
 
-1. In the **[!UICONTROL Authoring settings]** section, choose how to define the payload:
+1. Click **[!UICONTROL Define pyload]**, and choose how to define the payload:
 
-   * **Paste a sample payload** – Paste a representative JSON object. [!DNL Journey Optimizer] automatically infers a schema from it.
-   * **Import a JSON schema** – Upload a complete JSON schema file.
+   * **Paste sample JSON payload** – Paste a representative JSON object. [!DNL Journey Optimizer] automatically infers a schema from it.
+   * **Import JSON schema** – Upload a complete JSON schema file.
 
-1. After the schema is generated, AJO displays all detected fields in a form view. For each field, configure the following metadata:
+1. After the schema is generated, Journey Optimizer displays all detected fields in a form view.
+
+    ![](assets/custom_channel_payload_configuration.png)
+
+    For each field, configure the following metadata:
 
    | Setting | Description |
    |---------|-------------|
