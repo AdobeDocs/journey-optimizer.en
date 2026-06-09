@@ -37,6 +37,13 @@ The existing **Asset Selector** and **Content Fragment selector** experiences in
 
 >[!ENDSHADEBOX]
 
+>[!NOTE]
+>
+>**AEM Content Fragments** are authored in Adobe Experience Manager and used in [!DNL Journey Optimizer]. They are different from:
+>
+>* **[Fragments](../content-management/fragments.md)** — reusable content components created in [!DNL Journey Optimizer] and used in emails across campaigns and journeys.
+>* **[Journey Fragments](../building-journeys/journey-fragments.md)** — reusable sets of journey nodes inserted into journeys.
+
 The integration between Adobe Experience Manager and Journey Optimizer follows this data flow:
 
 1. **[Configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration){target="_blank"}**: To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first configure the Dispatcher. This is a prerequisite for the integration. 

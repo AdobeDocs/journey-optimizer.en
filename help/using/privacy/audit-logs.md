@@ -83,5 +83,6 @@ The following table outlines which actions on which Journey Optimizer resources 
 | Journey custom action | Create / Delete / Update |
 | Journey datasource | Create / Delete / Update |
 | Journey event | Create / Delete / Update |
+| Journey fragment | Create / Delete / Update / Activate / Archive |
 | Message frequency rule | Create / Delete / Update |
 | Ranking strategy | Create / Delete / Update |

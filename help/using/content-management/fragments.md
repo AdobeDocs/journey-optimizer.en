@@ -59,6 +59,15 @@ To make the best use of fragments:
 * **Create your own fragments**: Create visual or expression fragments, either from scratch or by saving content as fragment. [Learn how to create a fragment](create-fragments.md). In addition, you can leverage Journey Optimizer **Content REST API** to manage content fragments. For more on this, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"}.
 * **Reuse your fragments:** Use them as many times as needed in your content. See [Add visual fragments](../email/use-visual-fragments.md) and [Leverage expression fragments](../personalization/use-expression-fragments.md)
 
+
+>[!NOTE]
+>
+>The **[!UICONTROL Fragments]** described on this page are reusable **content** components. They are different from:
+>
+>* **[Journey Fragments](../building-journeys/journey-fragments.md)** — reusable sets of journey nodes inserted into journeys.
+>* **[AEM Content Fragments](../integrations/aem-fragments.md)** — content authored in Adobe Experience Manager and used in [!DNL Journey Optimizer].
+
+
 ## Before starting {#fragment-prerequisites}
 
 To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
