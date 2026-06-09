@@ -95,9 +95,9 @@ This behavior applies to **non-recurring Read Audience journeys** only. Recurrin
 
 >[!NOTE]
 >
->This auto-stop behavior does **not** apply to non-recurring journeys that include nodes causing waiting periods, such as **Wait** nodes (timer-based), **Reaction** nodes (waiting on events like email open or click), or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.
+>* This auto-stop behavior does **not** apply to non-recurring journeys that include nodes causing waiting periods, such as **Wait** nodes (timer-based), **Reaction** nodes (waiting on events like email open or click), or event-triggered transitions. These journeys remain subject to the standard [91-day global timeout](../building-journeys/journey-properties.md#global_timeout).
 >
->You can still close a non-recurring Read Audience journey manually at any time using the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) option. The auto-stop behavior simply ensures the journey stops automatically when it is no longer needed, without requiring manual intervention.
+>* You can still close a non-recurring Read Audience journey manually at any time using the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) option. The auto-stop behavior simply ensures the journey stops automatically when it is no longer needed, without requiring manual intervention.
 
 ### When is a journey considered "finished"? {#journey-finished-definition}
 
@@ -127,8 +127,6 @@ You can also:
     ![Finish options menu showing end journey and alternative actions](assets/finish_drop_down_list.png){width="50%" zoomable="yes"}
 
 1. Click **[!UICONTROL Close to new entrances]**, and confirm in the dialog box.
-
-
 
 
 ## Stop a journey {#stop-journey}
