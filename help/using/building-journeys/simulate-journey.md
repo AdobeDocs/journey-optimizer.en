@@ -9,7 +9,6 @@ role: User
 level: Intermediate
 keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
-badge: label="Limited Availability" type="Informative"
 feature_v2: []
 subfeature_v2: []
 ---
