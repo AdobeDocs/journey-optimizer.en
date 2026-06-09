@@ -8,16 +8,12 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: fragments, journey, reuse, nodes, canvas, inventory, reusable
-badge: label="Limited Availability" type="Informative"
 version: Journey Orchestration
 feature_v2: []
 subfeature_v2: []
 ---
 
 # Journey Fragments {#journey-fragments}
-
->[!AVAILABILITY]
->This capability is currently in Limited Availability. To request access, contact your Adobe representative.
 
 Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent — without rebuilding the same logic from scratch every time. [See use case examples.](#examples)
 
@@ -181,6 +177,7 @@ The following guardrails apply to journey fragments:
 * [Tags](tags.md) and **Labels** are supported on fragments.
 * [Audit Logs](../privacy/audit-logs.md) are supported.
 * Journeys running on the old stack (using Inline Campaigns) do not support journey fragments. Duplicate such a journey to move to the new stack before using this feature.
+* Journey fragments support [Sandbox tooling](../configuration/copy-objects-to-sandbox.md). Fragments can be packaged and exported to another sandbox.
 
 ## Use case examples {#examples}
 
