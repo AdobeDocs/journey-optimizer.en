@@ -87,8 +87,6 @@ You can create these types of challenge experiences:
 
 * **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Settings, Content, and Messaging as you would for any other challenge type.
 
-* **Repeatable challenges**: Configure how many times members can complete the same challenge and earn rewards again. [Learn about repeat limits](create-challenges.md#repeat-limits)
-
 ## How it works {#how-it-works}
 
 Creating and launching a loyalty challenge follows this workflow:
