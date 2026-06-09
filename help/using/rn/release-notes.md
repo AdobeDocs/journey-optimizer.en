@@ -112,7 +112,7 @@ topic_v2:
 <p>Once created, fragments are stored in a dedicated <strong>Fragment Inventory</strong> and can be inserted into any journey using the <strong>Journey fragments</strong> activity.</p>
 <p>Previously available in Limited Availability, this capability is now generally available to all customers. Journey fragments also support <strong>Sandbox tooling</strong>, allowing you to package and export fragments across sandboxes.</p>
 <p>For more information, refer to the <a href="../building-journeys/journey-fragments.md">detailed documentation</a>.</p>
-<p>Availability date: June 8, 2026</p>
+<p>Availability date: June 9, 2026</p>
 </td>
 </tr>
 </tbody>
