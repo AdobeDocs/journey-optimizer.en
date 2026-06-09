@@ -35,7 +35,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_time_zone"
 >title="Journey time zone"
->abstract="Select the journey's time zone. When using a fixed time zone, it is the same for all individuals entering the journey."
+>abstract="The time zone setting defines the journey's time zone. When using a fixed time zone, it is the same for all individuals entering the journey."
 
 
 You can define a time zone in the [properties](../building-journeys/journey-properties.md#timezone) of your journey.
@@ -67,7 +67,7 @@ To do so, in the **[!UICONTROL Journey Properties]** pane, select a time zone.
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_profile_time_zone"
 >title="Use profile time zone"
->abstract="Check this option to use the real-time profile time zone in **Wait** and **Condition** activities. If a time zone has been defined for a profile, it is retrieved and used in the journey. If not, the time zone is the one defined in the time zone field above."
+>abstract="This option uses the real-time profile time zone in **Wait** and **Condition** activities. If a time zone has been defined for a profile, it is retrieved and used in the journey. If not, the time zone is the one defined in the time zone field above."
 
 If the entry event of the journey has a namespace, meaning that the journey can reach the Real-time Customer Profile service of [!DNL Adobe Experience Platform], you may want to use the time zone defined at the profile level. To do so, in **Properties**, check **Use Profile time zone in waits and conditions**. This option is not checked by default.
 

@@ -35,7 +35,7 @@ role_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_sandbox_details"
 >title="Sandbox details"
->abstract="Select the destination sandbox you want to copy the journey to. Only sandboxes within your organization are available."
+>abstract="The destination sandbox is where the journey is copied to. Only sandboxes within your organization are available."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_copy_object_details"

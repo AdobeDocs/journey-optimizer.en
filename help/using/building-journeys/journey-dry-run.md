@@ -60,7 +60,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dry_run_start"
 >title="Publish a journey in dry run mode"
->abstract="Journey Dry run is a special journey publication mode in [!DNL Adobe Journey Optimizer] that allows journey practitioners to test a journey using real production data. Once you designed your journey, execute a dry run to confirm it is functional and ensure steps are correct. This publication mode lets you smoke test a journey, without sending communication to any profile."
+>abstract="Journey Dry run is a special journey publication mode in [!DNL Adobe Journey Optimizer] that allows journey practitioners to test a journey using real production data. Once a journey is designed, a dry run confirms it is functional and ensures steps are correct. This publication mode lets you smoke test a journey, without sending communication to any profile."
 
 Journey Dry run is a special journey publication mode in [!DNL Adobe Journey Optimizer] that allows journey practitioners to test a journey using real production data without contacting real customers or updating profile information.  This feature helps journey practitioners gain confidence in their journey design and audience targeting before publishing it live. 
 
