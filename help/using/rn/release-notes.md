@@ -99,6 +99,25 @@ topic_v2:
 
   Availability date: June 4, 2026
 
+<table>
+<thead>
+<tr>
+<th><strong>Journey Fragments (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now create <strong>Journey Fragments</strong> in Adobe Journey Optimizer. Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent, without rebuilding the same logic from scratch every time.</p>
+<p>Once created, fragments are stored in a dedicated <strong>Fragment Inventory</strong> and can be inserted into any journey using the <strong>Journey fragments</strong> activity.</p>
+<p>Previously available in Limited Availability, this capability is now generally available to all customers. Journey fragments also support <strong>Sandbox tooling</strong>, allowing you to package and export fragments across sandboxes.</p>
+<p>For more information, refer to the <a href="../building-journeys/journey-fragments.md">detailed documentation</a>.</p>
+<p>Availability date: June 9, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ## May '26 release notes {#may-26-rn}
 
 ### Journeys {#may-26-journeys}
