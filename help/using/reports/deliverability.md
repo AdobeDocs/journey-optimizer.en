@@ -140,9 +140,9 @@ After an end user generates a complaint which is sent back to Adobe by the ISP, 
 >Not all ISPs provide a traditional FBL, such as Gmail. Gmail does not offer individual level feedback, and it cannot be used to track spam complaints to individual recipients, focusing instead on aggregate level reporting within their Google Postmaster Tools. [Learn more](#providers-no-fbl)
 
 
-All Adobe customers are automatically enrolled in the traditional FBLs of the following ISPs:
+All Adobe customers are automatically enrolled in the traditional FBLs of the ISPs listed below.
 
-+++ ISPs providing a traditional FBL
++++ ISPs providing a traditional FBL:
 
 * 1&1
 
