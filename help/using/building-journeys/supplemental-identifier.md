@@ -28,7 +28,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
 >title="Use supplemental identifier"
->abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. To define it, select the field to be used as the supplemental identifier and choose a namespace to associate with it."
+>abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. It consists of the field used as the supplemental identifier and a namespace associated with it."
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>

@@ -18,7 +18,7 @@ subfeature_v2: []
 >[!CONTEXTUALHELP]
 >id="journeyExpAI"
 >title="Generate expressions with the Expression Assistant"
->abstract="The Expression Assistant uses generative AI to help you build and generate expressions directly in the Journey advanced expression editor. For example in conditions, **Optimize** activities, or **Wait** activities that use a custom date. Describe what you need in plain language and the assistant generates the corresponding expression for you."
+>abstract="The Expression Assistant uses generative AI to help you build and generate expressions directly in the Journey advanced expression editor. For example in conditions, **Optimize** activities, or **Wait** activities that use a custom date. When you describe what you need in plain language, the assistant generates the corresponding expression for you."
 
 >[!AVAILABILITY]
 >

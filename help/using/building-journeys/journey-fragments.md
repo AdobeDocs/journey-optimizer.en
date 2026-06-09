@@ -47,7 +47,7 @@ You can filter the list by fragment name, status, creation date, creator, last m
 >[!CONTEXTUALHELP]
 >id="ajo_journey_fragment_create_canvas"
 >title="Save as a journey fragment"
->abstract="Enter a unique name for your fragment and click Save. The selected nodes will be saved as a reusable fragment available in the Fragment Inventory."
+>abstract="A unique fragment name is entered before saving. The selected nodes are saved as a reusable fragment available in the Fragment Inventory."
 
 You can create a journey fragment in two ways: directly from the journey canvas (recommended), or from the Fragment Inventory.
 
@@ -92,7 +92,7 @@ To create a fragment directly from the inventory:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_fragment_properties"
 >title="Journey fragment properties"
->abstract="Open a fragment from the inventory to modify its nodes, properties, tags, or labels. Active fragments must be deactivated before they can be edited."
+>abstract="Opening a fragment from the inventory allows its nodes, properties, tags, or labels to be modified. Active fragments must be deactivated before they can be edited."
 
 To edit a fragment, open it from the **[!UICONTROL Fragment Inventory]** by clicking its name. In the fragment authoring UI, you can:
 
