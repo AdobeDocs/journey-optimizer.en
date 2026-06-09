@@ -225,7 +225,7 @@ When adding the fragment to your email, you can now edit the rich text content a
 
     ![](assets/fragment-use-rich-editable-fields.png)
 
-1. You can click **[!UICONTROL Simulate content]** to see how the editable content and styling render. [Learn more on previewing content](preview-test.md)
+1. Use either simulation method to see how the editable content and styling render: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more on previewing content](preview-test.md)
 
 1. Select the **[!UICONTROL Add personalization]** icon next to one of the editable fields.
 

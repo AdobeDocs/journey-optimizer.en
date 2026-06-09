@@ -96,7 +96,7 @@ To display the different offers that are part of the decision with a customer pr
 
 1. Select the test profiles to use to preview the offer:
 
-    1. Click the **[!UICONTROL Simulate Content button]** button then choose the namespace to use to identify test profiles from the **[!UICONTROL Identity namespace]** field.
+    1. Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown and choose the namespace to use to identify test profiles from the **[!UICONTROL Identity namespace]** field. To test content variations with sample input data or AI auto-generation instead, click **[!UICONTROL Simulate content]** directly. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
 
         >[!NOTE]
         >

@@ -57,7 +57,7 @@ The steps to add dynamic content in expressions are as follows:
 
     ![](assets/conditions-language-sample.png)
 
-1. Once your content is ready, you can preview the different variants using the **[!UICONTROL Simulate content]** button. [Learn how to test and preview messages](../content-management/preview-test.md)
+1. Once your content is ready, you can preview different variants using either simulation method: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn how to test and preview messages](../content-management/preview-test.md)
 
     ![](assets/conditions-preview.png)
 

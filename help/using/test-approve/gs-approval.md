@@ -139,4 +139,4 @@ No. Requestors cannot manually select which user group receives or routes the ap
 * **[Create approval policies](approval-policies.md)** - Learn how to set up approval policies to enforce review workflows for campaigns and journeys.
 * **[Request approval](request-approval.md)** - Understand how to submit content for approval and track approval status.
 * **[Review and approve requests](review-approve-request.md)** - Discover how to review, approve, or reject approval requests as an approver.
-* **[Simulate with sample inputs](simulate-sample-input.md)** - Learn how to test and validate content using sample profile data.
+* **[Simulate content variations](simulate-sample-input.md)** - Click **[!UICONTROL Simulate content]** to test content variations with sample input data, AI auto-generation, or simulated users. Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
