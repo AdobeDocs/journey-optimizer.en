@@ -74,15 +74,32 @@ If the journey has several paths, we recommend that you add a label to each end 
 
 A journey can close because of the following reasons:
 
-* A one-shot segment based journey that has finished executing, and reached the global timeout of 91 days. 
+* A non-recurring Read Audience journey **automatically stops** once the last profile exits the journey. [Learn more](#auto-stop-non-recurring)
 * After the last occurrence of a recurring audience-based journey.
-* The journey is closed manually via the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) button. 
+* The journey is closed manually via the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) button.
+* The global journey timeout of 91 days is reached.
 
 After the **91-day journey global timeout**, a Read audience journey switches to the **Finished** status. This behavior is set for 91 days only as all information about profiles who entered the journey is removed 91 days after they entered. Persons still in the journey automatically are impacted. They exit the journey after the 91-day timeout.  Learn more about [the journey global timeout](../building-journeys/journey-properties.md#global_timeout).
 
->[!TIP]
+### Automatic journey stop for non-recurring audiences {#auto-stop-non-recurring}
+
+A **non-recurring Read Audience journey** automatically transitions to **[!UICONTROL Stopped]** status once the last profile exits the journey. This eliminates the previous behavior where non-recurring Read Audience journeys remained in **Live** status until the 91-day global timeout expired, even though no profiles were actively flowing through them.
+
+**How it works:**
+
+1. The journey runs and all profiles from the audience are processed.
+1. As each profile reaches the end of the journey, it exits normally.
+1. When the **last active profile exits**, the journey automatically transitions to **[!UICONTROL Stopped]** status.
+
+This behavior applies to **non-recurring Read Audience journeys** only. Recurring journeys are not affected.
+
+>[!NOTE]
 >
->A one-shot segment-based journey keeps the **Live** status even after running once. Profiles cannot re-enter once completed, but the journey remains in **Live** status until the default global timeout expires. You can manually close it sooner using the **Close to new entrances** option.
+>This auto-stop behavior does **not** apply to non-recurring journeys that include nodes causing waiting periods, such as **Wait** nodes (timer-based), **Reaction** nodes (waiting on events like email open or click), or event-triggered transitions. These journeys remain subject to the standard 91-day global timeout.
+
+>[!NOTE]
+>
+>You can still close a non-recurring Read Audience journey manually at any time using the **[!UICONTROL Close to new entrances]** option. The auto-stop behavior simply ensures the journey stops automatically when it is no longer needed, without requiring manual intervention.
 
 ### When is a journey considered "finished"? {#journey-finished-definition}
 
@@ -90,8 +107,8 @@ The definition of "finished" varies depending on the journey type:
 
 | Journey Type | Recurring? | Has end date? | Definition of "finished" |
 |--------------|------------|---------------|--------------------------|
-| Read audience | No | n/a | 91 days after execution start |
-| Read audience | Yes | No | 91 days after execution start |
+| Read audience | No | n/a | When last profile exits (auto-stop) |
+| Read audience | Yes | No | 91 days after last occurrence start |
 | Read audience | Yes | Yes | When end date is reached |
 | Event-triggered journey | n/a | Yes | When end date is reached |
 | Event-triggered journey | n/a | No | When closed in UI or via API |
