@@ -41,7 +41,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_in_app"
 >title="In-app message action"
->abstract="Configure an in-app message inbound action for your journey. Add a label to identify the activity, then click **Configure action** to select the in-app configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default) to ensure profiles have time to view the in-app message."
+>abstract="An in-app message inbound action displays an in-app message to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references an in-app configuration that defines the content shown. The **Optimization** section can include content experiments or targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default), giving profiles time to view the in-app message."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 You can add an In-app message in a campaign or in a journey. Follow the steps detailed below to create an In-app message in both contexts.

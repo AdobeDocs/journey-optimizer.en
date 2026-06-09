@@ -35,7 +35,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_push"
 >title="Push notification action"
->abstract="Configure a push notification channel action for your journey. Add a label to identify the activity, then click **Configure action** to select the push configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules, the **Multilingual** section to deliver content in multiple languages, and the **Timeout or error** section to add an alternative path if the action fails."
+>abstract="A push notification channel action sends a push notification to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a push configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 

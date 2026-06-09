@@ -59,7 +59,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_email"
 >title="Email action"
->abstract="Configure an email channel action for your journey. Add a label to identify the activity, then click **Configure action** to select the email configuration and define your content. Use the **Optimization** section to run content experiments or apply targeting rules, the **Multilingual** section to deliver content in multiple languages, and the **Timeout or error** section to add an alternative path if the action fails."
+>abstract="An email channel action sends an email to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references an email configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** action to a journey or a campaign. Then follow the steps below, according to your case.
