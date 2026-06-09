@@ -137,9 +137,12 @@ After an end user generates a complaint which is sent back to Adobe by the ISP, 
 
 >[!IMPORTANT]
 >
->Not all ISPs provide a traditional FBL, such as Gmail. Gmail does not offer individual level feedback, and it cannot be used to track spam complaints to individual recipients, focusing instead on aggregate level reporting within their Google Postmaster Tools. [Learn more](https://support.google.com/a/answer/6254652?hl=en){target="_blank"}
+>Not all ISPs provide a traditional FBL, such as Gmail. Gmail does not offer individual level feedback, and it cannot be used to track spam complaints to individual recipients, focusing instead on aggregate level reporting within their Google Postmaster Tools. [Learn more](#providers-no-fbl)
+
 
 All Adobe customers are automatically enrolled in the traditional FBLs of the following ISPs:
+
++++ ISPs providing a traditional FBL
 
 * 1&1
 
@@ -197,7 +200,21 @@ All Adobe customers are automatically enrolled in the traditional FBLs of the fo
 
 * Ziggo
 
-Adobe audits these FBLs regularly to ensure the latest available FBLs are added.
++++
+
+Adobe performs regular audits to ensure the latest available FBLs are added.
+
+### Providers without per-recipient FBL {#providers-no-fbl}
+
+Not all ISPs provide a traditional FBL. Several major mailbox providers do not return per-recipient spam complaints, which means that the absence of an entry in the suppression list is expected for recipients using those providers.
+
+| Mailbox provider | Per-recipient complaint FBL? |
+|---|---|
+| **Gmail / Google Workspace** | No — aggregate reporting only via Google Postmaster Tools (Feedback-ID; not per-recipient). [Learn more](https://support.google.com/a/answer/6254652?hl=en){target="_blank"} |
+| **Apple iCloud** (icloud.com, me.com, mac.com) | No — [Learn more](https://support.apple.com/en-us/102322){target="_blank"} |
+| **Corporate Microsoft 365 / Exchange Online** | No — the Junk Mail Reporting Program (JMRP) covers the consumer Outlook.com network only; tenant junk reports from corporate M365 environments do not return to the sender. [Learn more](https://learn.microsoft.com/en-us/answers/questions/5787589/does-the-junk-mail-reporting-program-(jmrp)-send-c){target="_blank"} |
+
+Together, these providers represent the majority of consumer and business inboxes. Because none of them return per-recipient complaints, a recipient using any of these services who marks a message as spam will **not** automatically appear in the suppression list.
 
 ## Use SMTP relay {#smtp-relay}
 

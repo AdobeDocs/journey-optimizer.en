@@ -39,7 +39,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_advanced"
 >title="About the advanced expression editor"
->abstract="Use the advanced expression editor to build advanced expressions in various screens of the interface. For example, you can build expressions when configuring and using journeys, and when defining a data source condition."
+>abstract="The advanced expression editor builds advanced expressions in various screens of the interface. For example, you can build expressions when configuring and using journeys, and when defining a data source condition."
 
 Use the Journey advanced expression editor to build advanced expressions in various screens of the interface. For example, you can build expressions when configuring and using journeys, and when defining a data source condition.
 

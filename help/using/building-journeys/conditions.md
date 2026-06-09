@@ -77,7 +77,7 @@ To add a condition to your journey, follow the steps below.
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_simple2"
 >title="About the simple expression editor"
->abstract="The simple expression editor mode allows you to perform simple queries based on a combination of fields. All the available fields are displayed on the left side of the screen. Drag and drop fields into the main zone. To combine the different elements, interlock them into one another to create different groups and/or group levels. You can then select a logical operator to combine elements on the same level."
+>abstract="The simple expression editor mode allows you to perform simple queries based on a combination of fields. All the available fields are displayed on the left side of the screen. Fields are dragged and dropped into the main zone. To combine the different elements, they are interlocked into one another to create different groups and/or group levels. A logical operator then combines elements on the same level."
 
 When using several conditions in a journey, you can define labels for each of them to identify them more easily.
 
