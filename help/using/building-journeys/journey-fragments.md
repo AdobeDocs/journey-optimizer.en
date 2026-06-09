@@ -20,6 +20,13 @@ Journey Fragments are reusable sets of journey nodes that you can build once and
 Once created, fragments are stored in a dedicated **[!UICONTROL Fragment Inventory]** and can be inserted into any journey using the **[!UICONTROL Journey fragments]** activity.
 
 >[!NOTE]
+>
+>**Journey Fragments** are reusable sets of journey nodes. They are different from:
+>
+>* **[Fragments](../content-management/fragments.md)** — reusable content components used in emails across campaigns and journeys.
+>* **[AEM Content Fragments](../integrations/aem-fragments.md)** — content authored in Adobe Experience Manager and used in [!DNL Journey Optimizer].
+
+>[!NOTE]
 >Journey fragments use a **copy behavior**: inserting a fragment into a journey creates a static copy of the original nodes. Any updates made to the original fragment are not reflected in journeys that have already used it.
 
 ## Permissions {#journey-fragments-permissions}

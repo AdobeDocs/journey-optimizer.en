@@ -97,6 +97,7 @@ The **[!UICONTROL Tags]** field allows you to define tags for your object. Tags 
 * [Campaigns](../campaigns/create-campaign.md)
 * [Decision items](../experience-decisioning/items.md)
 * [Fragments](../content-management/fragments.md)
+* [Journey Fragments](../building-journeys/journey-fragments.md)
 * [Journeys](../building-journeys/journey-properties.md)
 * [Landing pages](../landing-pages/create-lp.md)
 * [Subscription lists](../landing-pages/subscription-list.md)
