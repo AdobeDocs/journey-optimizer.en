@@ -213,3 +213,48 @@ A timed welcome sequence — such as a series of three messages introducing a pr
 A fragment can encapsulate an Email activity followed by a [Reaction](reaction-events.md), waiting for the profile to open the email within a set number of days and sending a reminder if they did not. This logic is commonly reused in nurturing journeys and trial conversion flows. The fragment can include the Email and Reaction activities.
 
 ![Reaction-based reminder fragment example](assets/journey-fragments-uc-reminder.png)
+
++++AI Assistant — Page context
+
+- **TL;DR:** This page explains how to create, manage, and reuse Journey Fragments — sets of journey nodes saved once and inserted as static copies into any journey across a sandbox — to enforce consistency and speed up journey building.
+
+**Intents:**
+- Create a journey fragment from selected nodes directly on the journey canvas
+- Create a journey fragment from the Fragment Inventory
+- Insert an Active fragment into a journey as a static copy of its nodes
+- Manage fragment lifecycle (activate, deactivate, archive, delete)
+- Understand the copy behavior to know when fragment updates do and do not propagate to journeys
+- Export fragments to another sandbox using Sandbox tooling
+
+**Glossary:**
+- **Journey Fragment**: A reusable set of journey nodes saved in the Fragment Inventory and inserted into journeys as a static copy at design time *(product-specific)*
+- **Fragment Inventory**: The dedicated tab in the Journeys section that stores and manages all journey fragments in a sandbox *(product-specific)*
+- **Copy behavior**: The mechanism by which inserting a fragment places a static copy of its nodes into the journey; subsequent edits to the original fragment are not reflected in journeys that have already used it *(product-specific)*
+
+**Guardrails:**
+- Fragment names must be unique per sandbox
+- A fragment can have only one entry path; multi-entry-point selections cannot be saved as a fragment
+- Only connected nodes can be saved as a fragment
+- Jump activities are not allowed inside a fragment
+- Maximum of 20 nodes per fragment
+- Maximum of 200 active fragments per sandbox
+- Only Active fragments can be inserted into a journey
+- When dropped onto an empty canvas, a fragment must start with a Read Audience, Audience Qualification, or Event node
+- Test mode and simulation are not available in the fragment editor
+- Contextual attributes and governance policies are not validated at fragment activation time — they are evaluated when the fragment is used in a journey
+- Journeys running on the old stack (using Inline Campaigns) do not support journey fragments
+
+**Terminology:**
+- Canonical name: Journey Fragment — Acronym: none — variants: journey fragment, reusable nodes, fragment
+- Do not confuse: "Journey Fragment" ≠ "Content Fragment" — Journey Fragments are sets of journey nodes; Content Fragments are reusable email content components
+- Do not confuse: "Journey Fragment" ≠ "AEM Content Fragment" — AEM Content Fragments are content authored in Adobe Experience Manager
+- Do not confuse: "Journey Fragment (design-time copy)" ≠ "Jump activity (runtime redirect)" — fragments copy nodes into the current journey at design time; Jump redirects profiles to another live journey at runtime
+
+**FAQ:**
+- **Q: If I update a fragment after inserting it into a journey, does the journey automatically update?** — No; inserting a fragment creates a static copy. Updates to the original fragment are not propagated to journeys that have already used it.
+- **Q: Can I insert a fragment that is in Draft status?** — No; only Active fragments are available in the fragment picker.
+- **Q: How do I edit an Active fragment?** — Deactivate the fragment first to return it to Draft status, then edit it.
+- **Q: What is the maximum number of nodes a single fragment can contain?** — 20 nodes.
+- **Q: How is a Journey Fragment different from the Jump activity?** — A Journey Fragment copies nodes into the current journey at design time (build-time reuse). The Jump activity redirects a profile to another live journey at runtime (runtime routing).
+
++++

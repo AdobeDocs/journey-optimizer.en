@@ -53,3 +53,34 @@ Journey Optimizer allows you to copy an entire journey from one sandbox to anoth
 In addition to the journey itself, Journey Optimizer also copies most of the objects the journey depends on: audiences, schemas, events and actions.
 
 The copy process is carried out via a **package export and import** between the source and target sandboxes. Detailed information on how to export objects and import them into a target sandbox are available in this section: [Copy objects to another sandbox](../configuration/copy-objects-to-sandbox.md)
+
++++AI Assistant — Page context
+
+- **TL;DR:** This page explains how to copy an entire journey — along with its dependent objects such as audiences, schemas, events, and actions — from one sandbox to another in Journey Optimizer using the package export and import mechanism.
+
+**Intents:**
+- Copy a journey from one sandbox to another (e.g., Stage to Production)
+- Understand which dependent objects are included when copying a journey
+- Follow the package export and import process to migrate journey configurations across sandboxes
+
+**Glossary:**
+- **Sandbox**: An isolated environment within an Adobe organization used to separate development, staging, and production configurations *(product-specific)*
+- **Package export and import**: The mechanism used by Journey Optimizer to bundle a journey and its dependencies for transfer between sandboxes *(product-specific)*
+- **Dependent objects**: The associated assets a journey relies on — including audiences, schemas, events, and actions — that are copied alongside the journey itself *(product-specific)*
+
+**Guardrails:**
+- Only sandboxes within the same Adobe organization are available as copy destinations
+- The full procedure for exporting and importing the package is documented in the "Copy objects to another sandbox" section, not on this page
+
+**Terminology:**
+- Canonical name: Copy to sandbox — Acronym: none — variants: sandbox copy, journey migration, package import/export
+- Synonyms: "copy journey" = "export and import journey package"
+- Do not confuse: "copy to sandbox" ≠ "duplicate journey" (duplicate creates a copy within the same sandbox; copy to sandbox moves it to a different sandbox)
+
+**FAQ:**
+- **Q: What objects are copied alongside the journey when copying to another sandbox?** — In addition to the journey itself, most dependent objects are copied, including audiences, schemas, events, and actions.
+- **Q: Can I copy a journey to a sandbox in a different organization?** — No, only sandboxes within your own Adobe organization are available as copy destinations.
+- **Q: How is the copy performed technically?** — The copy is carried out via a package export from the source sandbox and an import into the target sandbox.
+- **Q: Where can I find the detailed steps for the export and import process?** — Detailed instructions are available in the "Copy objects to another sandbox" section linked from this page.
+
++++

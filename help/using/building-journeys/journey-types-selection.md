@@ -195,3 +195,48 @@ Now that you understand journey types, you're ready to:
 * **[Learn about the journey designer](using-the-journey-designer.md)** - Design your journey canvas
 * **[Explore journey capabilities](journey.md#capabilities)** - Discover advanced features
 * **[View journey FAQ](journey-faq.md)** - Common questions answered
+
++++AI Assistant — Page context
+
+* **TL;DR:** This page provides a comprehensive comparison of the four AJO journey types — Unitary, Read Audience, Audience Qualification, and Business Event — along with a decision guide and feature compatibility matrix to help users choose the right type for their use case.
+
+**Intents:**
+
+* Choose the correct journey type for a given business use case using the decision tree
+* Compare journey types side by side using the detailed feature compatibility matrix
+* Understand when to use Read Audience journeys for scheduled batch communications
+* Understand when to use Unitary journeys for real-time, event-triggered experiences
+* Understand when to use Audience Qualification journeys for real-time status-change responses
+* Understand when to use Business event journeys for business-condition-driven communications
+
+**Glossary:**
+
+* **Unitary journey**: A journey triggered by a specific individual customer action (e.g., purchase, login) where profiles enter one at a time in real-time. *(product-specific)*
+* **Read Audience journey**: A journey that starts with an Adobe Experience Platform audience and sends messages in batch to all profiles simultaneously on a schedule. *(product-specific)*
+* **Audience Qualification journey**: A journey that triggers when profiles qualify for or exit a specific audience segment in real-time. *(product-specific)*
+* **Business event journey**: A journey triggered by a business-level event (e.g., stock update, price change) that affects multiple profiles simultaneously. *(product-specific)*
+* **Incremental read**: A Read Audience capability that processes only profiles who joined the audience since the last execution, not the full audience each time. *(product-specific)*
+
+**Guardrails:**
+
+* Incremental read is only available for Read Audience journeys, not for Unitary, Audience Qualification, or Business Event journeys
+* Path experiments (A/B testing) are not supported for Business event journeys
+* Profile re-entrance in Read Audience journeys is limited to once per execution
+* Audience Qualification and Read Audience journeys cannot be used as the target of a Jump activity
+
+**Terminology:**
+
+* Canonical name: Unitary journey — Acronym: none — variants: event-triggered journey, unitary event journey
+* Canonical name: Read Audience journey — Acronym: none — variants: batch journey, segment trigger journey, read segment journey
+* Synonyms: "Audience Qualification journey" = "audience qualification event journey"
+* Do not confuse: "Read Audience journey" ≠ "Audience Qualification journey" — Read Audience processes all audience members in batch on schedule; Audience Qualification responds to individual membership changes in real-time
+
+**FAQ:**
+
+* **Q: Which journey type should I use for a monthly newsletter?** — Use a Read Audience journey; it is designed for scheduled batch communication to all profiles in an audience segment simultaneously.
+* **Q: Which journey type handles an order confirmation after a purchase?** — Use a Unitary journey; it provides an immediate real-time response to an individual customer action.
+* **Q: Can I run A/B path experiments in a Business event journey?** — No; path experiments are not supported for Business event journeys.
+* **Q: What is the difference between a Unitary journey and an Audience Qualification journey?** — A Unitary journey is triggered by a specific customer action (e.g., purchase); an Audience Qualification journey triggers when a profile enters or exits an audience segment based on criteria evaluation.
+* **Q: Which journey types support incremental read?** — Only Read Audience journeys support incremental read; the other three journey types do not.
+
++++
