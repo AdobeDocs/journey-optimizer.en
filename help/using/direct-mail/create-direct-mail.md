@@ -54,6 +54,12 @@ To create direct mail messages, create a scheduled campaign or a journey, and co
 
 ## Add a Direct mail message {#create-dm-campaign}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_direct_mail"
+>title="Direct mail action"
+>abstract="A direct mail channel action generates the direct mail content for profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a direct mail configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 Browse the tabs below to learn how to add a Direct mail message in a campaign or a journey.
 
 >[!BEGINTABS]

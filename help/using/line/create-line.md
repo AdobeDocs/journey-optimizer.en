@@ -34,6 +34,12 @@ topic_v2:
 
 ## Add a LINE message {#create-line-journey-campaign}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_line"
+>title="LINE action"
+>abstract="A LINE channel action sends a LINE message to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a LINE configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 Browse the tabs below to learn how to add a LINE message in a campaign or a journey.
 
 >[!BEGINTABS]
