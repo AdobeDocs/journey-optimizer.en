@@ -77,7 +77,6 @@ solution: Journey Optimizer
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
-    + [Copy a journey to another sandbox](using/configuration/copy-objects-to-sandbox.md#objects)
     + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
