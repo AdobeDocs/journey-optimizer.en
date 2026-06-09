@@ -9,6 +9,49 @@ role: User
 level: Beginner
 keywords: tracking, monitor, analytics, reporting, deliverability
 exl-id: d5e7adb7-8473-4c29-8ae6-ba979aef97f3
+TQID: https://experienceleague.adobe.com/jLHTNJlUPQm39EZvTLLBvYT92eGlCBoHpTKBfJ1Zxlk
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Get started with tracking in Journey Optimizer {#get-started-tracking}
 
@@ -116,9 +159,9 @@ Push tracking is automatically enabled and captures impressions (delivered), cli
 
 **Configure tracked elements:**
 
-* **Body click behavior** - Set what happens when users tap the notification: open app, navigate to a deeplink, or open a web URL. Each action is automatically tracked. [Learn more](../push/design-push.md#on-click-behavior)
+* **Body click behavior** - Set what happens when users tap the notification: open app, navigate to a deep link, or open a web URL. Each action is automatically tracked. [Learn more](../push/design-push.md#on-click-behavior)
 
-* **Add action buttons** - Include up to 3 buttons (Android) or multiple buttons (iOS) with independent tracking for each button action (open app, deeplink, web URL). [Learn more](../push/design-push.md#add-buttons-push)
+* **Add action buttons** - Include up to 3 buttons (Android) or multiple buttons (iOS) with independent tracking for each button action (open app, deep link, web URL). [Learn more](../push/design-push.md#add-buttons-push)
 
 * **Enable tracking** - Verify tracking is enabled in your push journey activity or campaign tracking settings. [Learn more](../push/create-push.md#create)
 
@@ -154,9 +197,9 @@ SMS tracking requires minimal setup—Journey Optimizer automatically shortens a
 
 **How it works:**
 
-* **Automatic link tracking** - Add any URL to your SMS content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../sms/sms-subdomains.md)
+* **Automatic link tracking** - Add any URL to your SMS content using the URL helper function. Journey Optimizer automatically shortens the link and tracks clicks without additional configuration. To use URL shortening, you must first configure an SMS subdomain. [Learn more](../mobile/mobile-subdomains.md)
 
-* **Inbound message tracking** - Replies from recipients are automatically captured, allowing you to monitor two-way conversations and response patterns. [Learn more](../sms/sms-opt-out.md#sms-native-keywords)
+* **Inbound message tracking** - Replies from recipients are automatically captured, allowing you to monitor two-way conversations and response patterns. [Learn more](../mobile/mobile-opt-out.md#sms-native-keywords)
 
 **View metrics:** Access link click data, inbound message volumes, and message type performance in reports. [Campaign reports](../reports/campaign-global-report-cja-sms.md) | [Journey reports](../reports/journey-global-report-cja-sms.md)
 

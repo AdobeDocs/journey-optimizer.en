@@ -7,11 +7,34 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3e777cc5-a935-4e68-9de7-60b241e78f63
+TQID: https://experienceleague.adobe.com/bgBuZlYcuJ1VpBZIlpGA4WIYZ6ufqNMnxlBoUvPpVqg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
+    internal-label: Experience Manager Assets integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-# Work with Dynamic Media {#aem-dynamic}
+# Work with dynamic media {#aem-dynamic}
 
-## Get started with Dynamic Media {#gs-aem-dynamic}
-
+## Get started with dynamic media {#gs-aem-dynamic}
+ 
 The Asset selector now supports Dynamic media allowing you to seamlessly select and use approved dynamic media renditions within Journey Optimizer. Changes made to assets in Adobe Experience Manager are instantly reflected in your Journey Optimizer content, ensuring the most up-to-date versions are always in use without requiring manual updates.
 
 Note that this integration is only available for customers using Dynamic Media Manager as a Cloud Service.
@@ -190,61 +213,6 @@ You can insert your dynamic template directly into your content using the HTML c
 1. Click **[!UICONTROL Save]**.
 
 Once you have performed your tests and validated the content, you can send your message to your audience. 
-
-<!--
-## Personalization with Text Overlay
-
-Easily customize any dynamic media by replacing the existing text overlay with new text of your choice, allowing for seamless updates and personalization.
-
-In this example, our goal is to update the existing text overlay by replacing it with a new validity date and adding a personalization block, ensuring it is customized for each profile when they open their messages.
-
-1. Drag and drop an **[!UICONTROL HTML component]** into your content.
-
-1. Select **[!UICONTROL Show the source code]**.
-
-1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
-
-    You can also simply copy and paste your assets URL.
-
-1. Browse through your AEM assets and select the one you want to add to your content.
-
-1. Replace the overlay with the desired text.
-
-    Here we change the validity date from 31st December 2024 to the 1st July 2025.
-
-1. Add the required personalization fields to your image.
-
-1. Click **[!UICONTROL Save]**.
-
-Your content now includes your updated text overlay and personalization.
-
-## Add Dynamic media conditional content
-
-Enable conditional content in your dynamic media to better target your audience and deliver a more personalized experience.
-
-1. Drag and drop an **[!UICONTROL HTML component]** into your content.
-
-1. Select **[!UICONTROL Show the source code]**.
-
-1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
-
-    You can also simply copy and paste your assets URL.
-
-1. Browse through your AEM assets and select the one you want to add to your content.
-
-1. Once your dynamic media is inserted to your content, select **[!UICONTROL Enable conditional]** content from your HTML component toolbar to create your different user experiences. 
-
-1. From the Variant - 1, click **[!UICONTROL Select condition]** to fine tune your audience.
-
-1. Choose your condition or create a new one if needed and click **[!UICONTROL Select]**.
-
-    [Learn more about conditions](../personalization/create-conditions.md)
-
-1. Select your **[!UICONTROL Component]** and access the **[!UICONTROL Settings]** menu.
-
-1. In the **[!UICONTROL Custom Attributes]** menu, populate the Dynamic Media text and personalization fields to customize the content for your audience.
-
--->
 
 ## How-to video {#video}
 

@@ -2,15 +2,34 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Pass collections into custom action parameters
-description: Learn how to pass collections dynamically in Journey Optimizer using custom actions 
+description: Learn how to pass collections dynamically in Journey Optimizer using custom actions
 feature: Journeys, Use Cases, Custom Actions, Collections
 topic: Content Management
 role: Developer
 level: Experienced
 exl-id: 8832d306-5842-4be5-9fb9-509050fcbb01
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/zhAlHWwS8UOup7yqqVc2d0lqj4JUj5gOvz7JAwVwZPk
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
+    internal-label: Action configuration
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-
 # Pass collections into custom action parameters {#passing-collection}
 
 You can pass a collection in custom action parameters that is dynamically populated at runtime.
@@ -114,7 +133,7 @@ You can see that `products` is an array of two objects. You need to have at leas
 
 1. For each field, define the label which will be displayed in the journey canvas.
 
-   ![Filter collection function with condition builder interface](assets/uc-collection-2.png){width="70%" align="left"}
+   ![Filter collection function with condition builder interface](assets/uc-collection-2.png){width="70%"}
 
 1. Create your journey and add the custom action you created. Learn more on [this page](../building-journeys/using-custom-actions.md).
 
@@ -124,7 +143,7 @@ You can see that `products` is an array of two objects. You need to have at leas
 
 1. For each of the following object field, type the corresponding field name from the source XDM schema. If the names are identical, this is not needed. In our example, we only need to define `product id` and "color".
 
-   ![Collection sort function with ordering configuration](assets/uc-collection-4.png){width="50%" align="left"}
+   ![Collection sort function with ordering configuration](assets/uc-collection-4.png){width="50%"}
 
 For the array field, you can also use the advanced expression editor to perform data manipulation. In the following example, we use the [filter](functions/list-functions.md#filter) and [intersect](functions/list-functions.md#intersect) functions:
 
@@ -188,7 +207,7 @@ While collections in custom actions provide flexibility for passing dynamic data
 
 For heterogeneous types and arrays of arrays, the array is defined with the listAny type. You can only map individual items, but cannot change the array to variable.
 
-![Heterogeneous collection with mixed data types and field selection](assets/uc-collection-heterogeneous.png){width="70%" align="left"}
+![Heterogeneous collection with mixed data types and field selection](assets/uc-collection-heterogeneous.png){width="70%"}
 
 Example of heterogenous type:
 

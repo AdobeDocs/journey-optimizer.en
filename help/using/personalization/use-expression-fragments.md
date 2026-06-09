@@ -9,6 +9,29 @@ role: Developer
 level: Intermediate
 keywords: expression, editor, library, personalization
 exl-id: 74b1be18-4829-4c67-ae45-cf13278cda65
+TQID: https://experienceleague.adobe.com/0N5waBGElHBnlsk1pHhKT8roaly-A6srIjb3UPIDNqY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+subfeature_v2:
+  - id: a757b957-83f3-4a4d-9775-a93854f84f77
+    internal-label: Conditional instruction
 ---
 # Leverage expression fragments {#use-expression-fragments}
 
@@ -67,7 +90,7 @@ To add expression fragments to your content, follow the steps below.
 
 >[!NOTE]
 >
->If you create an expression fragment that contains multiple line breaks and use it in [SMS](../sms/create-sms.md#sms-content) or [push](../push/design-push.md) content, the line breaks are preserved. Thus make sure to test your [SMS](../sms/send-sms.md) or [push](../push/send-push.md) message before sending it.
+>If you create an expression fragment that contains multiple line breaks and use it in [SMS](../mobile/create-mobile-message.md#sms-content) or [push](../push/design-push.md) content, the line breaks are preserved. Thus make sure to test your [SMS](../mobile/send-mobile-message.md) or [push](../push/send-push.md) message before sending it.
 
 ## Use implicit variables {#implicit-variables}
 

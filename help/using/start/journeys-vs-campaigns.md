@@ -8,11 +8,37 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: journey, campaign, orchestrated, comparison, choose, decision, workflow, real-time, batch, orchestration, multi-step, scheduled, API-triggered, event-driven
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
+TQID: https://experienceleague.adobe.com/RWLVSULVO0idnCs5OVQR1yVvNv1G0JwP3y-3sNXQg50
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: addf009e-030a-4310-8534-776a3e62ed48
+    internal-label: Customer lifecycle
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-# Journeys vs Campaigns: Choose the right approach {#journeys-vs-campaigns}
+# Journeys vs campaigns: choose the right approach {#journeys-vs-campaigns}
 
 [!DNL Adobe Journey Optimizer] offers two main ways to reach and engage your customers: **Journeys** and **Campaigns**. Journeys are designed for real-time, multi-step orchestration driven by customer behavior, while campaigns are better suited for one-time or scheduled broadcasts to a defined audience. Once you have decided on a campaign, you can then choose the campaign type that best fits your use case.
 
@@ -106,6 +132,10 @@ Follow this decision tree to choose the right approach. Many brands use more tha
 * Real-time decision-making based on behavior and events
 * Wait activities create personalized timing
 * Conditional branching creates unique paths per profile
+* Built-in active listening — inaction for a defined period can also trigger the next step, not just explicit events. [Learn about wait activities](../building-journeys/wait-activity.md)
+* Frequency capping — control how often a customer can enter or receive messages from a journey. [Learn about journey capping](../conflict-prioritization/journey-capping.md)
+* Audience splitting by percentage — divide profiles into random, percentage-based groups to run A/B experiments across journey paths. [Learn about percentage split](../building-journeys/condition-activity.md)
+* Test mode — validate journey logic and message delivery with test profiles before publishing live. [Learn about test mode](../building-journeys/testing-the-journey.md)
 
 **Example flow:**
 
@@ -171,7 +201,7 @@ Combines workflow complexity with batch campaign execution.
 * **Birthday campaigns**: Entry based on birthdate, personalized offers
 * **Re-engagement**: Triggered by audience qualification (inactivity), progressive outreach
 
-### Campaign use cases (Action & API-triggered)
+### Campaign use cases (action & API-triggered)
 
 **Action campaigns:**
 * **Monthly newsletters**: Scheduled batch delivery to subscriber segment
@@ -207,6 +237,8 @@ Combines workflow complexity with batch campaign execution.
 | Code-based | ✅ | ✅ | ❌ | ❌ |
 | Content cards | ✅ | ✅ | ❌ | ❌ |
 | Direct mail | ✅ | ✅ | ❌ | ✅ |
+| LINE | ✅ | ✅ | ✅ | ✅ |
+| WhatsApp | ✅ | ✅ | ✅ | ✅ |
 
 ### Advanced capabilities
 
@@ -221,7 +253,7 @@ Combines workflow complexity with batch campaign execution.
 | Multi-entity data | ❌ | ❌ | ❌ | ✅ |
 | Exact pre-send counts | ❌ | ❌ | ❌ | ✅ |
 | On-demand segmentation | ❌ | ❌ | ❌ | ✅ |
-| Send-time optimization | ✅ | ✅ | ✅ | ✅ |
+| Send-time optimization | ✅ | ❌ | ❌ | ❌ |
 | A/B testing | ✅ | ✅ | ❌ | ❌ |
 | Approval workflows | ✅ | ✅ | ✅ | ❌ |
 

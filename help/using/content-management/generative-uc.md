@@ -8,6 +8,37 @@ topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
+TQID: https://experienceleague.adobe.com/VAyIDrwFJtWtOd0h8nr9LK5F21Oe9wIWwvV-zFvCHtM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
 ---
 # AI Assistant use cases {#generative-uc}
 
@@ -18,6 +49,8 @@ exl-id: 958ad2bb-b62e-431d-8ad6-7b294cbba544
 ## Use existing content
 
 ![Animated demonstration showing AI Assistant reusing existing campaign content to generate new variations](assets/do-not-localize/gen-ai-reuse-text.gif)
+
+Generate variations from the content and context already in your campaign so they remain consistent with your message and audience.
 
 1. After setting up your campaign, select **[!UICONTROL Edit content]**.
 
@@ -36,6 +69,8 @@ When you have defined your content, audience and schedule, you are ready to prep
 ## Refine variation {#refine}
 
 ![Animated demonstration of refining AI-generated content variations using Rephrase and Summarize options](assets/do-not-localize/gen-ai-variation.gif)
+
+Adjust an AI-generated variation in place, tone, length, wording, and strategy, before you select the final text.
 
 1. Once your campaign is set up and configured, click **[!UICONTROL Edit content]**.
 
@@ -67,6 +102,8 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 ![Animated demonstration of generating similar image variations based on a selected AI-generated image](assets/do-not-localize/uc-image-similar.gif)
 
+When an image is almost suitable, generate additional options that preserve the same overall look and theme.
+
 1. After setting up your campaign, select **[!UICONTROL Edit content]**.
 
 1. Open the **[!UICONTROL AI Assistant]** section.
@@ -86,6 +123,8 @@ When you have defined your content, audience and schedule, you are ready to prep
 ## Upload a style reference
 
 ![Animated demonstration of uploading a reference image to guide AI Assistant image generation style](assets/do-not-localize/uc-image-reference.gif)
+
+Upload a reference image so that new visuals follow a desired style, palette, or composition.
 
 1. After setting up and configuring your email campaign, click **[!UICONTROL Edit content]**.
 
@@ -111,11 +150,13 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 ![Animated demonstration of AI Assistant generating content in multiple languages including French, Spanish, and German](assets/do-not-localize/gen-ai-language.gif)
 
+Produce text in the languages supported by AI Assistant by combining your prompt with explicit language settings.
+
 1. Once your campaign is set up and configured, click **[!UICONTROL Edit content]**.
 
 1. Open the **[!UICONTROL AI Assistant]** menu.
 
-1. Adjust the content by entering your desired request in the **[!UICONTROL Prompt]** box in  French, Spanish, German, Italian, Japanese, Swedish, Dutch or Norwegian.
+1. Adjust the content by entering your desired request in the **[!UICONTROL Prompt]** box in French, Spanish, German, Italian, Japanese, Swedish, Dutch or Norwegian.
 
 1. Tailor your prompt with the **[!UICONTROL Text settings]** option and select the desired **[!UICONTROL Languages]** for your generated content.
 
@@ -124,3 +165,98 @@ When you have defined your content, audience and schedule, you are ready to prep
 1. Review the **[!UICONTROL Variation suggestions]** in your selected language.
 
 1. Once you find the suitable content, click **[!UICONTROL Select]**.
+
+## Use reference content for generation
+
+![Animated demonstration of AI Assistant generating content with reference content](assets/do-not-localize/gen-url.gif)
+
+You can give AI Assistant more context by adding **reference content**, a web page or uploaded files, so generated copy and suggestions stay closer to your source material.
+
+1. When your campaign is ready, click **[!UICONTROL Edit content]**.
+
+1. Open **[!UICONTROL AI Assistant]**.
+
+1. Describe what you want in the **[!UICONTROL Prompt]** field.
+
+1. In **[!UICONTROL Reference content]**, enter the page URL and a name that identifies it.
+
+1. Click ![Upload icon](assets/do-not-localize/Smock_UploadToCloudOutline_18_N.svg) to fetch the page and add it as reference content for generation.
+
+1. To use a file instead, choose **[!UICONTROL Upload file option]** and select your document. Supported formats include .pdf, .png, .jpg, .jpeg, .zip, .md, .doc, .txt, and .docx.
+
+1. In **[!UICONTROL Uploaded reference content]**, enable or disable individual references, or delete any you no longer need.
+
+1. Adjust your prompt if needed, then click **[!UICONTROL Generate]**.
+
+1. Review **[!UICONTROL Variation suggestions]** and click **[!UICONTROL Select]** on the variation you want to use.
+
+## Use your generative model {#generative-model}
+
+![Animated demonstration of AI Assistant generating content with custom model](assets/do-not-localize/gen-ai-model.gif)
+
+Register a custom generative model and route image generation through it from AI Assistant.
+
+1. From the **[!UICONTROL Brands]** menu, open the **[!UICONTROL Generative Models]** tab and click **[!UICONTROL Add model]**.
+
+1. Enter a **[!UICONTROL Name]** for the model and the **[!UICONTROL Model ID]**.
+
+1. Optionally, enter a **[!UICONTROL Description]** to distinguish this model in the list.
+
+1. Click **[!UICONTROL Test connection]** to verify the model configuration, then click **[!UICONTROL Save]**. The model is added to the models list.
+
+1. From the campaign, click **[!UICONTROL Edit content]**.
+
+1. Select the asset to be modified with AI Assistant and open the **[!UICONTROL AI Assistant]**.
+
+1. Specify your request in the **[!UICONTROL Prompt]** field and adjust the remaining settings as appropriate.
+
+1. Open **[!UICONTROL Image settings]** and select the **[!UICONTROL Generative model]** you previously configured.
+
+1. Adjust the prompt as necessary, then click **[!UICONTROL Generate]**.
+
+1. Review the **[!UICONTROL Variation suggestions]** in the selected language and click **[!UICONTROL Select]** once a suitable variation is identified.
+
+## Use Gemini as generative model for text-overlay image
+
+![Animated demonstration of AI Assistant generating content with Gemini as generative model](assets/do-not-localize/gen-nano.gif)
+
+With **Gemini 2.5** selected as the generative model, you can produce image variants in AI Assistant, add text overlays from a URL, a file, or an AI-generated prompt, then position overlays before applying a final variation.
+
+1. When your campaign is ready, click **[!UICONTROL Edit content]**.
+
+1. Select the asset to use as the base image and open **[!UICONTROL AI Assistant]**.
+
+1. Click **[!UICONTROL Open settings]** to adjust image generation options.
+
+1. Under **[!UICONTROL Generative model]**, select **Gemini 2.5 (nano-banana)**.
+
+1. Enter your request in the **[!UICONTROL Prompt]** field.
+
+1. Choose how many variants you want, then click **[!UICONTROL Generate]**.
+
+1. After generation, preview variants or refine settings to regenerate. From the advanced menu you can also:
+
+    * **[!UICONTROL Create an image overlay]**
+    * **[!UICONTROL Generate Similar]**
+    * **[!UICONTROL Crop image]**
+    * **[!UICONTROL Save to AEM assets]**
+    * **[!UICONTROL Delete]**
+
+1. Select **[!UICONTROL Create an image overlay]**. Add an overlay from a URL, upload a file, or use **[!UICONTROL Generate text overlay with AI]** and describe the overlay in the **[!UICONTROL Prompt]**.
+
+1. Click **[!UICONTROL Generate]**.
+
+1. Review **[!UICONTROL Overlay Variations]** and click **[!UICONTROL Apply]**.
+
+1. Position the overlay on the image as needed. From the advanced menu you can:
+
+    * **[!UICONTROL Delete overlay]**
+    * **[!UICONTROL Move forward]**
+    * **[!UICONTROL Move backward]**
+    * **[!UICONTROL Duplicate]**
+
+1. When the text overlay looks right, click **[!UICONTROL Save]**, then click **[!UICONTROL Apply]** on the variation you want to use.
+
+
+
+

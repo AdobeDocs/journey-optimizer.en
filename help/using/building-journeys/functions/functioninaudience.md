@@ -8,6 +8,24 @@ level: Experienced
 keywords: inAudience, function, expression, journey, audience, segmentation
 exl-id: 8417af75-6e97-4ad4-86b4-3ecd264a5560
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/DU8HtduB2-GmakiaHBMFU1vzBBPoVTNvrOCPWQrr5SU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # inAudience function {#inAudience}
 
@@ -15,7 +33,7 @@ The `inAudience` function is an Adobe Experience Platform function that enables 
 
 Use the `inAudience` function when you need to:
 
-* Branch journey paths based on audience membership. [Learn more](../condition-activity.md#using-a-segment)
+* Branch journey paths based on audience membership. [Learn more](../conditions.md#using-a-segment)
 * Apply conditional logic that depends on whether a profile belongs to a specific segment
 * Target specific groups of customers with personalized experiences
 * Evaluate real-time audience participation within journey conditions
@@ -119,6 +137,6 @@ Learn more about using audiences in Adobe Journey Optimizer:
 * **[About audiences](../../audience/about-audiences.md)** - Understand how audiences work in Adobe Experience Platform and Journey Optimizer, including how to create and manage them
 * **[Read Audience activity](../read-audience.md)** - Use audiences to trigger journey entry and make all audience members enter a journey
 * **[Audience Qualification events](../audience-qualification-events.md)** - Listen to profile entrances and exits from audiences to trigger journey actions in real-time
-* **[Using audiences in conditions](../condition-activity.md#using-a-segment)** - Create conditional journey paths based on audience membership using the Condition activity
+* **[Using audiences in conditions](../conditions.md#using-a-segment)** - Create conditional journey paths based on audience membership using the Optimize activity
 * **[Journey properties - Merge policies](../journey-properties.md)** - Understand how merge policies work when using multiple audiences with the inAudience function
 

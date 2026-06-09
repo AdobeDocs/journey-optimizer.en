@@ -9,6 +9,42 @@ role: Developer, Admin
 level: Experienced
 keywords: action, third-party, custom, journeys, API
 exl-id: 4df2fc7c-85cb-410a-a31f-1bc1ece237bb
+TQID: https://experienceleague.adobe.com/q4zuwxmF2Gr5P5IkdZCKFHoA18-GGrlLD0f-WPCQ3q4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
+    internal-label: Action configuration
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Configure a custom action {#configure-a-custom-action}
 
@@ -40,6 +76,15 @@ Here are the main steps required to configure a custom action:
 1. The number of journeys that use this action is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of  journeys using this action.
 1. Define the different **[!UICONTROL URL Configuration]** parameters. See [this page](../action/about-custom-action-configuration.md#url-configuration).
 1. Configure the **[!UICONTROL Authentication]** section. This configuration is the same as for data sources.  See [this section](../datasource/external-data-sources.md#custom-authentication-mode).
+
+    >[!NOTE]
+    >
+    >If your endpoint returns both an `access_token` and an `id_token`, use the `tokenInResponse` field to specify which token Journey Optimizer should use as the authentication credential:
+    >* `"tokenInResponse": "json://access_token"` — use the access token (default for OAuth 2.0)
+    >* `"tokenInResponse": "json://id_token"` — use the ID token (common in OpenID Connect flows)
+    >
+    >[Learn more about custom authentication](../datasource/external-data-sources.md#custom-authentication-mode)
+
 1. Define the **[!UICONTROL Action parameters]**. See [this page](../action/about-custom-action-configuration.md#define-the-message-parameters).
 1. Click **[!UICONTROL Save]**.
 
@@ -99,7 +144,7 @@ In Journey Optimizer, you can apply data governance and consent policies to your
 
 When configuring a custom action, you need to define the following **[!UICONTROL Endpoint Configuration]** parameters:
 
-![](assets/action-response1bis.png){width="70%" align="left"}
+![](assets/action-response1bis.png){width="70%"}
 
 1. In the **[!UICONTROL URL]** field, specify the URL of the external service:
 
@@ -147,7 +192,7 @@ When configuring a custom action, you need to define the following **[!UICONTROL
     >
     >Headers are validated according to field parsing rules. Learn more in [this documentation](https://tools.ietf.org/html/rfc7230#section-3.2.4){_blank}.
 
-## Transport Security Layer {#tls} 
+## Transport security layer {#tls}
 
 ### TLS protocol support {#tls-protocol-support} 
 
@@ -159,6 +204,23 @@ You can use Mutual Transport Layer Security (mTLS) to ensure enhanced security i
 
 Mutual TLS (mTLS) authentication is supported in custom actions. There is no additional configuration required in the custom action or journey to activate mTLS; it occurs automatically when an mTLS-enabled endpoint is detected. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/encryption#mtls-protocol-support).
 
+>[!IMPORTANT]
+>
+>Adobe periodically rotates the mTLS client certificate used for custom action connections. When a new certificate is issued, your endpoint's trust store must be updated to accept it — otherwise, outbound connections from Journey Optimizer to your service will fail with a certificate mismatch error. To avoid disruption:
+>
+>* Regularly check the [Adobe Public Certificate API](https://platform.adobe.io/data/core/mtls/v1/certificate/public-certificate) for updated certificates associated with your services.
+>* Configure your endpoint to accept **overlapping certificates** (both the old and new certificate simultaneously), so there is no connectivity gap during rotation.
+>* Adobe does not currently send proactive notifications when a certificate is rotated. It is your responsibility to monitor for certificate updates and keep your trust store current.
+>* Trust validation should be based on the certificate chain up to the Root CA (DigiCert) rather than pinning to a specific leaf certificate fingerprint.
+
+### Certificate-based custom authentication {#certificate-based-auth}
+
+For enterprise APIs that enforce certificate-based identity verification — such as Microsoft Entra ID — custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
+
+Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and automatically exchange it for an access token. No client secret is required.
+
+For the full payload structure, field descriptions, and configuration guardrails, see [Certificate-based custom authentication](../datasource/external-data-sources.md#certificate-credential).
+
 ## Define the payload parameters {#define-the-message-parameters}
 
 You can define the payload parameter as detailed below:
@@ -167,15 +229,15 @@ You can define the payload parameter as detailed below:
 
     Enable the **[!UICONTROL Allow NULL values]** option to keep Null values in the external call. Note that sending arrays of int, string, etc. with Null values within is not fully supported. For example, the following array of integers `[1, null, 2, 3]` is sent as `[1, 2, 3]` even if this option is checked. In addition to that, if such array is null, it is sent as an empty array.
 
-    ![](assets/null-values.png){width="70%" align="left"}
+    ![](assets/null-values.png){width="70%"}
 
 1. In the **[!UICONTROL Response]** section, paste an example of the payload returned when the call succeeds. This field is optional and available for all calling methods. For detailed information on how to leverage API call responses in custom actions, refer to [this page](../action/action-response.md). 
 
-    ![](assets/response-values.png){width="70%" align="left"}
+    ![](assets/response-values.png){width="70%"}
 
 1. (Optional) Select **[!UICONTROL Define a failure response payload]** to enable the error response payload field. When enabled, use the **[!UICONTROL Error Response]** section to paste an example of the payload returned when the call fails. The same requirements apply as for the response payload (field types and format). Learn how to leverage the failure response payload in journeys [here](../action/action-response.md).
 
-    ![](assets/response-values.png){width="70%" align="left"}
+    ![](assets/response-values.png){width="70%"}
 
 >[!NOTE]
 >

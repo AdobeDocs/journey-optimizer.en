@@ -8,6 +8,36 @@ role: Developer, Admin
 level: Experienced
 keywords: platform, data lake, create, lake, datasets, profile
 exl-id: 08633a79-5601-4e36-b8cf-080234956d99
+TQID: https://experienceleague.adobe.com/DvcQ6AcWhNIZXnTtmPozvSTp1Ait-oo-8wlo8hQ6xlI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+subfeature_v2:
+  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
+    internal-label: Journey Optimizer schemas
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
+  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
+    internal-label: Data ingestions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+    internal-label: Audience segmentation
 ---
 # Datasets Time-to-live (TTL) guardrails {#ttl-guardrail}
 
@@ -34,7 +64,7 @@ The table below lists all impacted datasets and their respective Time-To-Live in
 |Journey Step Events|13 months|n/a|
 |ODE DecisionEvents - prod decisioning|13 months|n/a|
 
-## Frequently Asked Questions {#faq}
+## Frequently asked questions {#faq}
 
 You will find below Frequently Asked Questions about datasets Time-to-live (TTL).
 
@@ -129,6 +159,8 @@ Customers who require longer retention should consider exporting relevant data f
 +++Will customers be notified before the TTL is enforced on existing sandboxes?
 
 Yes, impacted customers will be notified in advance, and the product team will work with them to ensure a smooth transition.
+
++++
 
 +++Can I delete Journey Optimizer system-generated datasets?
 

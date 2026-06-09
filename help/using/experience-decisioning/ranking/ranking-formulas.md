@@ -7,8 +7,31 @@ role: User
 level: Intermediate
 exl-id: 35d7488b-e7d8-402f-b337-28a0c869bff0
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/WycI0aO1o4KFH1gNieayuhpyNZuoVxL6zhGJBNOht8g
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 ---
-# Use the AI formula builder {#create-ranking-formulas}
+# Create ranking formulas {#create-ranking-formulas}
 
 **Ranking formulas** allow you to define rules that determine which offer should be presented first, rather than taking into account the priority scores.
 
@@ -20,7 +43,18 @@ Once a ranking formula has been created, you can assign it to a [selection strat
 
 ➡️ [Discover this feature in video](#video)
 
-## Create a ranking formula {#create-ranking-formula}
+## Guardrails and limitations {#ranking-guardrails}
+
+Before creating ranking formulas, keep the following constraints in mind:
+
+* The AI formula builder does not support [personalized optimization models](personalized-optimization-model.md) that use continuous metrics.
+* When an AI model is used in a ranking formula, data are not reflected in the [Conversion rate for Holdout and Model Driven traffic](../../reports/campaign-global-report-cja-code.md#conversion-rate) report.
+* The nesting depth in a ranking formula is limited to 30 levels, measured by counting `)` in the PQL string.
+* A ranking formula string can be up to 8KB for UTF-8 encoded characters (8,000 ASCII characters or 2,000-4,000 non-ASCII characters).
+* Lookback periods are not supported in ranking formulas (for example, experience events from the last month). Attempts to save such formulas trigger an error.
+* [AI-powered formula optimization](#optimize) applies only to ranking formulas whose code-based PQL expression is larger than **2 KB** in UTF-8 encoded size; smaller formulas are not analyzed.
+
+## Create the ranking formula and set properties {#create-ranking-formula}
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_formulas"
@@ -41,50 +75,36 @@ To create a ranking formula, follow the steps below.
 
 1. Optionally, click **[!UICONTROL Select AI model]** to set the model that will be used as a reference to build your ranking formula.
 
-    >[!NOTE]
-    >
-    >[Personalized optimization models](personalized-optimization-model.md) using continuous metrics are not supported with the AI formula builder.
-
     Every time you refer to a model score when defining your formula below, the AI model that you selected will be used.
 
-    >[!CAUTION]
-    >
-    >When using an AI model incorporated into a ranking formula, data are not reflected in the [Conversion rate for Holdout and Model Driven traffic](../../reports/campaign-global-report-cja-code.md#conversion-rate) report.
+1. Define the conditions that will determine the ranking score for the matching decision items. You can:
 
-1. Define the conditions that will determine the ranking score for the matching decision items. You can either
+    * Fill in the **[!UICONTROL Criteria]** section using the [formula builder](#ranking-select-criteria), and/or
+    * Click **[!UICONTROL Switch to code editor]** to define or refine ranking logic with [PQL in the code editor](#ranking-code-editor).
 
-    * fill in the **[!UICONTROL Criteria]** section from the [user interface](#ranking-select-criteria),
-    * or switch to the [code editor](#ranking-code-editor).
+## Use Adobe Experience Platform data {#aep-data}
 
-    >[!NOTE]
-    >
-    >The nesting depth in a ranking formula is limited to 30 levels. This is measured by counting the `)` closing parentheses in the PQL string. A rule string can be up to 8KB in size for UTF-8 encoded characters. This is equivalent to 8,000 ASCII characters (1 byte each), or 2,000–4,000 non-ASCII characters (2–4 bytes each). [Learn more about Decisioning guardrails & limitations](../decisioning-guardrails.md#ranking-formulas)
+In the **[!UICONTROL Dataset lookup]** section, you can use data from Adobe Experience Platform to dynamically adjust the ranking logic to reflect real-world conditions.
 
-1. You can also use data from Adobe Experience Platform to dynamically adjust the ranking logic to reflect real-world conditions. This is especially useful for attributes that frequently change, such as product availability or real-time pricing. [Learn how to use Adobe Experience Platform data for decisioning](../aep-data-exd.md)
+This is especially useful for attributes that frequently change, such as product availability or real-time pricing. [Learn how to use Adobe Experience Platform data for decisioning](../aep-data-exd.md)
 
-<!--## Select an ELS dataset {#els-dataset}
-
-Journey Optimizer allows you to leverage data from Adobe Experience Platform. [Learn more](../data/aep-data-perso.md)
-
-To leverage data from an AEP dataset, follow the steps below.
-
-1. From the **[!UICONTROL ELS settings]** section, select an ELS dataset from the list.
-
-1. Select a decision attribute.
-
-    >[!NOTE]
-    >
-    >This action is mandatory.
-
-![](../assets/formula-els-settings.png){width="80%"-->
+![](../assets/ranking-formula-dataset.png)
 
 ## Define criteria using the formula builder {#ranking-select-criteria}
 
+Define the **criteria** that will determine the ranking score for the matching decision items.
+
 With an intuitive interface, you can fine-tune decisioning by adjusting AI scores (propensity), offer value (priority), contextual levers, and external profile propensities — individually or in combination — to optimize every interaction. <!--Whether you are maximizing revenue, promoting strategic offers, or balancing business goals with real-time context, the formula builder gives you total control in defining ranking strategies.-->
 
-To define criteria directly from the interface, follow the steps below.
-
 <!--![](../assets/ranking-formula-criteria.png){width="80%"}-->
+
+1. If needed, click **[!UICONTROL Switch to code editor]** to add an expression that uses **PQL syntax** alongside the formula builder. This option complements the user interface fields in the steps below, so you can combine both approaches in the same ranking formula. For more on how to use PQL syntax, refer to the [dedicated documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html). Syntax for decision item attributes and copy-paste examples are provided in the [Use the code editor](#ranking-code-editor) section.
+
+    ![](../assets/ranking-formula-code-editor-button.png)
+
+    >[!NOTE]
+    >
+    >Switching to the code editor adds expression-based input to your criteria and does not remove the other user interface fields.
 
 1. In the **[!UICONTROL Criterion 1]** section, specify the decision items that you want to apply a ranking score to by doing the following:
     * select a [decision item attribute](../items.md#attributes)
@@ -121,33 +141,33 @@ To define criteria directly from the interface, follow the steps below.
 
     ![](../assets/ranking-formula-criteria-not-met.png){width="70%"}
 
-1. Click **[!UICONTROL Create]** to complete your ranking formula. You can now select it from the list to view its details, and edit or delete it. It is ready to be used in a [selection strategy](../selection-strategies.md) to rank eligible decision items.
+    +++Ranking formula example
 
-### Ranking formula example {#ranking-formula-example}
+    ![](../assets/ranking-formula-example.png){width="80%"}
 
-Consider the example below:
+    If the decision item's region (custom attribute) equals the profile's geographical label (profile attribute), the ranking score expressed here (which is a combination of the decision item priority, the AI model score and a static value) will be applied to all decision items meeting that condition.
 
-![](../assets/ranking-formula-example.png){width="80%"}
+    +++
 
-If the decision item's region (custom attribute) equals the profile's geographical label (profile attribute), the ranking score expressed here (which is a combination of the decision item priority, the AI model score and a static value) will be applied to all decision items meeting that condition.
+1. When your formula is ready, click **[!UICONTROL Create]**.
 
-## Use the code editor {#ranking-code-editor}
+You can now access the ranking formula from the list to view its details, and edit or delete it. It is ready to be used in a [selection strategy](../selection-strategies.md) to rank eligible decision items.
 
-To express ranking formulas in **PQL syntax**, switch to the code editor using the dedicated button on top right of the screen. For more on how to use the PQL syntax, refer to the [dedicated documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html).
+## Define criteria using the code editor {#ranking-code-editor}
 
->[!CAUTION]
+Use **[!UICONTROL Switch to code editor]** when you want to write or edit ranking logic as a **PQL** expression.
+
+![](../assets/ranking-formula-switch.png)
+
+>[!NOTE]
 >
 >This action will prevent you from reverting back to the default builder view for this formula.
 
-You can then leverage profile attributes, [context data](../context-data.md), and [decision item attributes](../items.md#attributes).
+You can leverage profile attributes, [context data](../context-data.md), and [decision item attributes](../items.md#attributes).
 
-For example, you want to boost the priority of all offers with the "hot" attribute if the actual weather is hot. To do this, the **contextData.weather=hot** was passed in the decisioning call. <!--[Learn how to work with context data](context-data.md)-->
+For example, you want to boost the priority of all offers with the "hot" attribute if the actual weather is hot. To do this, the **contextData.weather=hot** was passed in the decisioning call.
 
 ![](../assets/ranking-formula-code-editor.png){width="80%"}
-
->[!IMPORTANT]
->
->When creating a ranking formula, looking back into a previous period of time is not supported, such as adding an experience event that occurred within the last month as a component of the formula. Any attempt to include a lookback period during formula creation will trigger an error when saving it.
 
 To leverage attributes related to your decision items in formulas, make sure you follow the correct syntax in your ranking formula's code. Expand each section for more information:
 
@@ -163,9 +183,7 @@ To leverage attributes related to your decision items in formulas, make sure you
 
 +++
 
-### Ranking formula PQL examples {#ranking-formula-examples}
-
-You can create many different ranking formulas according to your needs. Below are some examples.
+You can create many different code-based ranking formulas according to your needs. Below are some examples.
 
 +++Boost offers with certain offer attribute based on profile attribute
 
@@ -270,6 +288,28 @@ Note that when using the **Decisioning** API, the context data is added to the p
 ```
 
 +++
+
+## AI-powered formula optimization {#optimize}
+
+[!DNL Journey Optimizer] can automatically analyze ranking formulas and suggest simplifications that preserve the original logic. Only formulas whose PQL expression is larger than **2 KB** (UTF-8 encoded) are eligible, smaller expressions are not analyzed. When a simplification is found, a red indicator appears next to the formula name in the list.
+
+![](../assets/ranking-formula-ai.png)
+
+>[!NOTE]
+>
+>AI-powered formula optimization relies on the same generative AI capabilities as **AI Assistant**, and uses the same access controls. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. For details, refer to [Access AI Assistant](../../content-management/gs-generative.md#generative-access).
+
+To optimize a ranking formula:
+
+1. In the ranking formulas list, click the red indicator icon next to the formula name.
+
+1. The **[!UICONTROL Optimize]** window opens, displaying the original PQL expression alongside the AI-suggested version.
+
+    ![](../assets/ranking-formula-ai-details.png)
+
+1. To validate that both expressions produce identical ranking results, click **[!UICONTROL Download Optimisation Analysis (TSV)]** to download a file showing how simulated profiles are evaluated against each version.
+
+1. Once satisfied, click **[!UICONTROL Apply]** to replace the original expression with the optimized one.
 
 ## How-to video {#video}
 

@@ -9,6 +9,24 @@ role: User
 level: Experienced
 keywords: content, experiment, statistical, calculation
 exl-id: 60a1a488-a119-475b-8f80-3c6f43c80ec9
+TQID: https://experienceleague.adobe.com/FK4Ze6jAsBbzBDRxCSLVnbfeoErPniPPUAfSLYVECOI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
 ---
 # Understand statistical calculations {#experiment-calculations}
 
@@ -20,7 +38,7 @@ This article describes how the Experimentation works, and provides an intuitive 
 
 For expert users, the technical details and references are detailed on [this page](../content-management/assets/confidence_sequence_technical_details.pdf).
 
-## Statistical Testing and Controlling Errors {#statistical-testing}
+## Statistical testing and controlling errors {#statistical-testing}
 
 When you run an experiment you are trying to determine if there is a difference between two populations and the likelihood that difference is due to chance. 
 
@@ -44,7 +62,7 @@ The table above illustrates the different types of errors:
 
 Most statistical inferencing techniques will require you to fix your sample size ahead of time, based on the effect size you wish to determine, as well as your error tolerance (`\alpha` and `\beta`) ahead of time. However Adobe Journey Optimizer's methodology is designed to allow you to continuously look at your results, for any sample size.
 
-## Adobe's Statistical Methodology: Any Time Valid Confidence Sequences
+## Adobe's statistical methodology: any time valid confidence sequences
 
 A **Confidence Sequence** is a sequential analog of a **Confidence Interval**, e.g. if you repeat your experiments one hundred times, and calculate an estimate of the mean metric and its associated 95%-Confidence Sequence for every new user that enters the experiment. A 95% Confidence Sequence will include the true value of the metric in 95 out of the 100 experiments that you ran. A 95% Confidence Interval could only be calculated once per experiment in order to give the same 95% coverage guarantee; not with every single new user. Confidence Sequences therefore allow you to continuously monitor experiments, without increasing False Positive error rates.
 
@@ -64,7 +82,7 @@ The theoretical foundations of **Confidence Sequences** come from the study of s
 
 It is important to note that since confidence sequences are "any time valid", they will be more conservative than a fixed horizon methodology used at the same sample size. The confidence sequence's bounds are generally wider than a confidence interval calculation, while the any time valid confidence will be smaller than a fixed horizon confidence calculation. The benefit of this conservatism is that you can safely interpret your results at all times.
 
-## Declaring an Experiment to be Conclusive
+## Declaring an experiment to be conclusive
 
 ![](assets/experimentation_report_2.png)
 

@@ -7,82 +7,178 @@ feature: Get Started
 topic: Content Management
 role: User
 level: Beginner
+keywords: journey optimizer, what is ajo, adobe journey optimizer, get started, omnichannel, personalization, customer journey
 exl-id: 956178c0-9985-4ff8-a29e-17dd367ce4d4
+TQID: https://experienceleague.adobe.com/HYykJIqT1bcoN1oXrG6uvfNuhDNOGLfPtOAf-Y3hzsQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: addf009e-030a-4310-8534-776a3e62ed48
+    internal-label: Customer lifecycle
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
-# Get Started with Journey Optimizer {#cjm-gs}
+# Get Started with Journey Optimizer {#ajo-gs}
 
-## What is [!DNL Adobe Journey Optimizer]?{#about-cjm}
+This page introduces Adobe Journey Optimizer: what it is, who it's for, its key capabilities, and how it fits into the Adobe Experience Platform architecture. It is the recommended starting point for new users.
 
-[!DNL Adobe Journey Optimizer] helps companies deliver connected, contextual, and personalized experiences to their customers. The customer journey is the entire process of a customer's interactions with the brand, from the first moment of contact until the customer leaves. It starts with the awareness phase, where the customer learns about the brand and starts engaging. The customer will then further interact with the brand, visit online and physical sites, and make purchases, send messages or post reviews.
+## What is [!DNL Adobe Journey Optimizer]?{#about-ajo}
 
-[!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and combines a unified, real-time customer profile, an API-first open framework, centralized offer decisioning, and artificial intelligence (AI) and machine learning (ML) for personalization and optimization. Journey Optimizer allows brands to intelligently determine the next best interaction with scale, speed, and flexibility across the entire customer journey. With [!DNL Adobe Journey Optimizer], companies can create and deliver both scheduled marketing campaigns (such as weekly promotions for a retail store) and tailored individual communications (like a push notification for an item that a loyalty app customer may have looked at that was previously out of stock) within the same application.
+[!DNL Adobe Journey Optimizer] is an enterprise application for creating and delivering connected, contextual, and personalized customer experiences across all channels and touchpoints. It is built natively on [!DNL Adobe Experience Platform] and leverages a unified real-time customer profile, an API-first open framework, centralized offer decisioning, and AI/ML capabilities. Journey Optimizer enables brands to orchestrate both scheduled marketing campaigns and real-time, event-triggered communications — from a single application, at scale. The result is meaningful brand experiences that boost customer loyalty and lifetime value.
+
+This guide applies to marketing practitioners, operations teams, and administrators new to Journey Optimizer.
 
 ➡️ [Discover Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction.html){target="_blank"} (video)
 
 
-<!-- Use [!DNL Adobe Journey Optimizer] to build multi-step customer journeys that initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Learn how to build journeys in [this section](../building-journeys/journey-gs.md).
+<!--
+ Use [!DNL Adobe Journey Optimizer] to build multi-step customer journeys that initiate a sequence of interactions, offers, and messages across channels in real time. This approach ensures customers are engaged at the optimal moments based on their actions and relevant business signals. Learn how to build journeys in [this section](../building-journeys/journey-gs.md).
 
-You can also create audience-based campaigns to send messages.-->
+You can also create audience-based campaigns to send messages.
+-->
 
-
-## Use cases {#use-cases}
-
-* Marketers can use [!DNL Adobe Journey Optimizer] to send both individualized communications as well as audience-based batch communications. For example, a clothing store typically sends post-purchase surveys to all customers who have purchased products in the last week. Due to inclement weather, a few shipments experienced delays. Seeing which customers have not received their shipments, the clothing store can exclude them from the scheduled customer satisfaction send and instead send a personalized email apologizing for the delay and offering a discount code with product recommendations based on the customer's past purchases.
-    
-    Marketers can also use the application to send real-time behavior-based communications. For example, the same retailer would be able to engage a loyal customer who pulls into the store parking lot in real time by sending them a push notification about a sweater that is back in stock in the customer's size.
-
-* Non-marketers such as operations teams and customer support who are engaged in the customer experience can use [!DNL Adobe Journey Optimizer] to manage a variety of tasks such as operational notifications or even to monitor the onboarding process. Take for example, an amusement park where park visitors download a mobile app as part of their park experience. Maintenance staff can use [!DNL Adobe Journey Optimizer] to notify park visitors of rides that are currently closed due to maintenance.
 
 ## Key capabilities {#key-capabilities}
 
 [!DNL Adobe Journey Optimizer] is an agile and scalable application for creating and delivering personalized, connected, and timely customer experiences across any app, device, or channel. 
 
-![](assets/ajo-capabilities.png)
+![Diagram showing Journey Optimizer's three core capability areas: Real-time Customer Insights & Engagement, Modern Omnichannel Orchestration & Execution, and Intelligent Decisioning & Personalization, all built on Adobe Experience Platform.](assets/ajo-capabilities.png)
 
 Key capabilities include:
 
-* **Real-time Customer Insights & Engagement** – An integrated profile fuses live data from all sources across customer touchpoints, including behavioral, transactional, financial, and operational data to optimize personal and contextual experiences for customers in their time. 
+### Real-time Customer Insights & Engagement
 
-* **Modern Omnichannel Orchestration & Execution** – A single canvas on which to harmonize and optimize the customer journey for 1:1 customer engagement and marketing outreach—to help brands deliver more value across the customer lifecycle. Customer journeys designed in [!DNL Adobe Journey Optimizer] can be dynamic and event based to help brands react to real-time signals as well as connect those interactions with scheduled campaigns so the right decisions can be made about what communications to send a customer, when and through what channels.
+An integrated profile fuses live data from all sources across customer touchpoints, including behavioral, transactional, financial, and operational data to optimize personal and contextual experiences for customers in their time. [Learn about profiles and audiences](../audience/get-started-profiles.md)
 
-* **Intelligent Decisioning & Personalization** – Brands can apply centralized decisioning and incorporate artificial intelligence and machine learning to configure predictive insights throughout the customer experience, making it easier to automate decisions and optimize the experience at scale. Decisioning powers centralized offers across channels at scale through [!DNL Adobe Journey Optimizer].
+### Modern Omnichannel Orchestration & Execution
+
+A single canvas on which to harmonize and optimize the customer journey for 1:1 customer engagement and marketing outreach — to help brands deliver more value across the customer lifecycle. Customer journeys designed in [!DNL Adobe Journey Optimizer] can be dynamic and event-based to help brands react to real-time signals as well as connect those interactions with scheduled campaigns so the right decisions can be made about what communications to send a customer, when, and through what channels. Embedded content creation tools — including a drag-and-drop visual designer, reusable templates, content fragments, and a personalization editor — allow teams to author, personalize, and manage messages for every channel directly within the same workflow. [Build your first journey](../building-journeys/journey-gs.md) | [Design your content](../../rp_landing_pages/content-management-landing-page.md)
+
+### Intelligent Decisioning & Personalization
+
+Brands can apply centralized decisioning and incorporate artificial intelligence and machine learning to configure predictive insights throughout the customer experience, making it easier to automate decisions and optimize the experience at scale. Decisioning powers centralized offers across channels at scale through [!DNL Adobe Journey Optimizer]. [Explore offer decisioning](../offers/get-started/starting-offer-decisioning.md) | [Discover AI features](ai-features.md)
 
 
->[!NOTE]
->
->* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
->
->* Adobe Experience Cloud general privacy guidelines and procedures apply to [!DNL Journey Optimizer]. [Learn more about Adobe Experience Cloud privacy](https://www.adobe.com/privacy/experience-cloud.html){target="_blank"}.
+## Use cases {#use-cases}
+
+These examples illustrate how Journey Optimizer's capabilities work together across different roles, industries, and channels.
+
+### Delayed shipment recovery {#uc-delayed-shipment}
+
+**Role:** Marketer | **Core capability:** [Unified profile + audience exclusion](../audience/get-started-profiles.md)
+
+A clothing store typically sends post-purchase surveys to all customers who have purchased products in the last week. Due to inclement weather, a few shipments experienced delays. Seeing which customers have not received their shipments, the clothing store can exclude them from the scheduled customer satisfaction send and instead send a personalized email apologizing for the delay and offering a discount code with product recommendations based on the customer's past purchases.
+
+[Get started with campaigns](../campaigns/get-started-with-campaigns.md)
+
+### Real-time in-store engagement {#uc-instore}
+
+**Role:** Marketer | **Core capability:** [Geofence triggering + push](../push/get-started-push.md)
+
+The same retailer can engage a loyal customer who pulls into the store parking lot in real time by sending them a push notification about a sweater that is back in stock in the customer's size.
+
+[Get started with push notifications](../push/get-started-push.md)
+
+### Cart abandonment recovery {#uc-cart}
+
+**Role:** Marketer | **Core capability:** [Event-triggered multi-step journey](../building-journeys/journey-gs.md)
+
+When a customer adds items to an online cart but leaves without completing the purchase, Journey Optimizer detects the event in real time and starts a recovery journey automatically. The customer receives a personalized email reminding them of the items left behind. If they do not click through within 24 hours, a follow-up push notification is sent — personalized based on their browsing history and loyalty status.
+
+[Build your first journey](../building-journeys/journey-gs.md)
+
+### Streaming service welcome series {#uc-welcome}
+
+**Role:** Marketer | **Core capability:** [Event-triggered welcome journey](../building-journeys/journey-gs.md)
+
+When a customer subscribes to a streaming service, Journey Optimizer detects the sign-up event and immediately starts a multi-step welcome journey. The customer receives a welcome email encouraging them to open the app for the first time. If no login activity is detected within 48 hours, a follow-up push notification is sent with personalized content recommendations based on their stated interests during sign-up — turning a passive subscriber into an active, engaged user from day one.
+
+[Build your first journey](../building-journeys/journey-gs.md)
+
+### Reservation reminder with directions {#uc-reservation}
+
+**Role:** Marketer | **Core capability:** [Scheduled + location-aware messaging](../campaigns/get-started-with-campaigns.md)
+
+A hospitality brand sends each guest a timely reminder one hour before their reservation. The notification includes the guest's name, reservation time, and location-based directions to the venue — automatically assembled from the customer profile and booking data, with no manual effort from the marketing team.
+
+[Get started with campaigns](../campaigns/get-started-with-campaigns.md)
+
+### Proactive service outage notification {#uc-outage}
+
+**Role:** Operations | **Core capability:** [Automated audience selection at scale](../audience/about-audiences.md)
+
+When a service disruption occurs, Journey Optimizer automatically identifies the affected customers based on their account data and usage patterns. Those customers receive a proactive notification acknowledging the issue and outlining next steps — turning a potentially negative experience into a moment of transparency and trust, delivered at scale.
+
+[Build your first journey](../building-journeys/journey-gs.md)
+
+### AI-powered promotional campaign {#uc-ai-campaign}
+
+**Role:** Marketer | **Core capability:** [AI content generation + experimentation](ai-features.md)
+
+A retail brand planning a product launch uses Journey Optimizer's AI Assistant to generate multiple subject line and body copy variations in minutes — guided by a natural language prompt and their uploaded brand guidelines. Built-in content experimentation automatically identifies the best-performing variant among an initial audience sample. The winning message is then deployed to the remaining recipients, maximizing engagement without additional copywriting effort.
+
+[Explore AI & intelligent features](ai-features.md) | [Learn about content experimentation](../content-management/experiment-accelerator-gs.md)
+
+### Maintenance alerts via mobile app {#uc-maintenance}
+
+**Role:** Operations | **Core capability:** [Non-marketing journey orchestration](../building-journeys/journey-gs.md)
+
+Non-marketers such as operations teams and customer support can use [!DNL Adobe Journey Optimizer] to manage operational notifications or monitor onboarding processes. For example, an amusement park where visitors download a mobile app as part of their experience: maintenance staff can use Journey Optimizer to notify park visitors of rides currently closed due to maintenance.
+
+[Build your first journey](../building-journeys/journey-gs.md)
+
+
+## Availability & Licensing {#availability}
+
+This documentation covers the current release of Journey Optimizer and applies to both B2C and B2B edition users unless otherwise noted. Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
+
+Adobe Experience Cloud general privacy guidelines and procedures apply to [!DNL Journey Optimizer]. [Learn more about Adobe Experience Cloud privacy](https://www.adobe.com/privacy/experience-cloud.html){target="_blank"}.
 
 
 ## Architecture {#architecture}
 
-Understand the basic architecture of [!DNL Adobe Journey Optimizer], the points of integration, and the relationship between [!DNL Journey Optimizer] and [!DNL Experience Platform], in the diagram below.
-
-Adobe Experience Platform is a powerful, flexible, open, and centralized data foundation that collects, standardizes, governs, applies AI insights to, and unifies data to offer thoughtful and relevant digital customer experiences.
-
-![](assets/ajo-aep-architecture-diagram.png){width="70%" zoomable="yes"}
-
-Four applications are natively built on Experience Platform: Adobe Real-Time Customer Data Platform, Journey Optimizer, Customer Journey Analytics, and Adobe Mix Modeler.
-
-The core functionality and services of Journey Optimizer operate off the foundational components of Adobe Experience Platform, which includes the Real-Time Customer Profile. While Journey Optimizer works seamlessly and is interoperable with Real- Time CDP and Customer Journey Analytics, it can also function independently as a standalone application.
-
-![](assets/ajo-architecture-diagram.png){width="70%" zoomable="yes"}
+Journey Optimizer is built natively on Adobe Experience Platform, sharing its data foundation, identity graph, and governance services — for a detailed walkthrough of how these systems work together, see [Understanding Journey Optimizer](understanding-ajo.md).
 
 
-### Adobe Journey Optimizer Blueprints
+## Related resources {#related-resources}
 
-Digital experience blueprints provide system and data flow architecture diagrams to help better understand how Adobe Experience Platform and Applications are integrated and implemented. The blueprints provide a visual representation of inter-system and component data and content flows, sequence of operations, and dependencies to help inform use case design and architecture of Adobe Experience Platform and Applications.
-
-See [Adobe Journey Optimizer blueprints](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/customer-journeys/journey-optimizer/journey-optimizer-overview){target="_blank"}.
-
-
->[!MORELIKETHIS]
->
->* [Key steps to start](quick-start.md)
->* [Get started with data management](../data/gs-data.md)
->* [Design journeys and send messages](../building-journeys/journey-gs.md)
->* [Live reports](../reports/live-report.md)
->* [Introduction to Journey Optimizer tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction){target="_blank"}
->* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF)
->* [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.htm){target="_blank"}
+* [Key steps to start](quick-start.md) — Role-based quickstart guides for admins, marketers, and data engineers.
+* [Get started with data management](../data/gs-data.md) — Learn how data is ingested, unified, and activated in Journey Optimizer.
+* [Design journeys and send messages](../building-journeys/journey-gs.md) — Build your first customer journey and configure channel actions.
+* [Live reports](../reports/live-report.md) — Monitor campaign and journey performance in real time.
+* [Introduction to Journey Optimizer tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/introduction){target="_blank"} — A guided video walkthrough of core Journey Optimizer concepts.
+* [Journey Optimizer Security Overview](https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf) (PDF) — Security architecture, data protection, and compliance details.
+* [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"} — Official licensing terms and edition feature breakdown.

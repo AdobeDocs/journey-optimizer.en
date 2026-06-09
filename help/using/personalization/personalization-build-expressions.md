@@ -10,6 +10,14 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: expression, editor, about, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: e51e8901-97d9-4f7d-a835-503025a90e32
+    internal-label: Advanced expression editor
+  - id: ac5d9310-7772-40fb-9d78-864562e1bfd6
+    internal-label: Operators
 ---
 # Add personalization {#build-personalization-expressions}
 
@@ -40,48 +48,21 @@ It can also be added in other sections of your content. For example, for [push n
 
 +++Email Designer
 
-When editing email content in the [Email Designer](../email/get-started-email-design.md), you can add personalization in text blocks and in URLs using the icon in the contextual tool bar.
+When editing email content in the [Email Designer](../email/get-started-email-design.md), you can add personalization in most of the text elements using the icon in the contextual tool bar.
 
 ![](assets/perso_insert.png)
 
 +++
 
-+++Offers
-
-You can add personalization when using text-type content in your **offers' representations**. [Learn how to create personalized offers](../offers/offer-library/creating-personalized-offers.md)
-
-+++
-
 +++URLs
 
-Journey Optimizer also allows you to personalize **URLs** in your message.  Personalized URLs take recipients to specific pages of a website, or to a personalized microsite, depending on the profile attributes. URL personalization is available for these types of links: **External link**, **Unsubscription link** and **Opt-Out**.
-
-   Sample personalized URLs:
-
-* `https://www.adobe.com/users/{{profile.person.name.lastName}}` 
-* `https://www.adobe.com/users?uid={{profile.person.name.firstName}}`
-* `https://www.adobe.com/usera?uid={{context.journey.technicalProperties.journeyUID}}`
-* `https://www.adobe.com/users?uid={{profile.person.crmid}}&token={{context.token}}`
+Journey Optimizer also allows you to personalize **URLs** in your messages. Personalized URLs take recipients to specific pages of a website, or to a personalized microsite, depending on the profile attributes. [Learn more](../email/url-personalization.md)
 
 ![](assets/perso-url.png){width="50%"}
 
 >[!NOTE]
 >
->When editing a personalized URL in the personalization editor, helper functions and audiences membership are disabled for security reasons.
->
->Spaces are not supported in the personalization tokens used inside urls.
-
-Journey Optimizer also supports complete/base URL personalization. For example:
-
-```
-<a href="{{profile.social.link}}" />
-<a href="{{profile.social.baseUrl}}/profile" />
-<a href="https://{{profile.social.baseUrl}}/profile" />
-```
-
->[!NOTE]
->
->To enable complete or base URL personalization, contact Adobe and provide your list of accepted domains.
+>URL personalization is available for these types of links: **External link**, **Unsubscription link** and **Opt-Out**.
 
 +++
 
@@ -91,13 +72,19 @@ When creating an email channel configuration, you can define personalized values
 
 +++
 
++++Offers
+
+You can add personalization when using text-type content in your **offers' representations**. [Learn how to create personalized offers](../offers/offer-library/creating-personalized-offers.md)
+
++++
+
 ## Personalization sources {#sources}
 
 The navigation pane lets you select the source for personalization. Available sources are:
 
 * **[!UICONTROL Profile attributes]** : lists all the references associated to the profile schema described in [Adobe Experience Platform Data Model (XDM) documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
 * **[!UICONTROL Target attributes]** : This folder is specific to Orchestrated campaigns. It contains attributes calculated directly within the campaign canvas. [Learn how to add personalization in Orchestrated campaigns](../orchestrated/activities/channels.md#add-personalization)
-* **[!UICONTROL Audiences]** : lists all the audiences created in Adobe Experience Platform Segmentation service. More information on segmentation available [here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
+* **[!UICONTROL Audiences]** : lists all the audiences created in Adobe Experience Platform Segmentation service. Learn more in the [Adobe Experience Platform Segmentation documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 * **[!UICONTROL Offer decisions]** : lists all the offers associated to a specific placement. Select the placement then insert the offers in your content. For a complete documentation on how to manage offers, refer to [this section](../offers/get-started/starting-offer-decisioning.md).
 * **[!UICONTROL Contextual attributes]** : when a channel action activity (Email, push, SMS) is used in a journey or campaign, contextual attributes related to events and properties are available for personalization. An example of personalization leveraging contextual attributes is presented in [this section](personalization-use-case.md). Additionally, custom action responses can be used for personalization. [Learn how to use custom action responses in native channels](../action/action-response.md#response-in-channels).
 
@@ -170,6 +157,10 @@ In the navigation pane, additional features are available to help you build your
 * **[!UICONTROL Conditions]** - Leverage conditional rules created in the library to add dynamic content into your messages. This allows you to create multiple variants of your message based on conditions. [Learn how to create dynamic content](../personalization/get-started-dynamic-content.md)
 
 * **[!UICONTROL Fragments]** - Leverage expression fragments that have been created or saved to the current sandbox. A fragment is a reusable component that can be referenced across [!DNL Journey Optimizer] campaigns and journeys. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble contents in an improved design process. [Learn how to use expression fragments for personalization](../personalization/use-expression-fragments.md)
+
+>[!TIP]
+>
+>Looking for ready-to-use expressions? The **[Personalization recipes](personalization-recipes.md)** page provides copy-paste patterns for the most common use cases: date formatting, countdown timers, conditional fallbacks, time-only display, and more.
 
 Once your personalization expression is ready, you need to have it validated by the personalization editor. Learn more in [this section](../personalization/personalization-build-expressions.md).
 

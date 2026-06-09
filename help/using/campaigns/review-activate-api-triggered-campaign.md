@@ -9,6 +9,26 @@ role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
 exl-id: 561f1215-d13d-4ffc-b6f1-396ae67774c8
+TQID: https://experienceleague.adobe.com/nP10Q8F2mo1JIcRiFOPRXqlrhRCDKKdtmgFJhRDOTAU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Review & activate the API triggered campaign {#api-review}
 
@@ -27,6 +47,8 @@ Once your API triggered campaign has been configured, you need to review its par
     In case of errors, you cannot activate the campaign. Resolve the errors before proceeding.
 
     ![](assets/create-campaign-alerts.png)
+
+1. When a campaign uses [decision policies](../experience-decisioning/create-decision.md) in its content, you can review each policy's structure and copy technical details directly from the campaign summary. [Learn how](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
     
 1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
 

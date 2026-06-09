@@ -6,6 +6,12 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: 9b0b0d8e-a819-4d2e-a241-f3c4d104eab9
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 # Get started with Helper functions{#functions}
 
@@ -40,7 +46,7 @@ Functions are organized into three categories for easy navigation:
 
 ## Functions{#functions-helper}
 
-### Aggregation and Array Functions
+### Aggregation and array functions
  
 <table>
     <tr>
@@ -99,7 +105,7 @@ Functions are organized into three categories for easy navigation:
     </tr>
 </table>
 
-### Date Time Functions{#date-functions}
+### Date time functions{#date-functions}
 
 <table>
     <tr>
@@ -440,6 +446,9 @@ Helpers are detailed on [this page](helpers.md).
         <td><a href="helpers.md#each">Each</a></td><td>This function is used to iterate over an array</td>
     </tr>
     <tr>
+        <td><a href="helpers.md#dataset-lookup">Dataset lookup</a></td><td>This helper retrieves fields from Adobe Experience Platform record datasets at render time using a lookup key</td>
+    </tr>
+    <tr>
         <td><a href="helpers.md#execution-metadata">Execution Metadata</a></td><td>This helper captures custom key–value metadata during message rendering so that it can be stored in the runtime execution metadata object</td>
     </tr>
     <tr>
@@ -453,6 +462,9 @@ Helpers are detailed on [this page](helpers.md).
     </tr>
     <tr>
         <td><a href="helpers.md#url-parameter-encryption-helper">Encrypt</a></td><td>Encrypts expression values for URL query parameters at render time using an active key from the sandbox registry </td>
+    </tr>
+    <tr>
+        <td><a href="helpers.md#url-function">Url</a></td><td>This function handles URLs in SMS message content; use it with <code>originalUrl</code> to shorten URL and <code>type='DEEPLINK'</code> to insert deep links</td>
     </tr>
     <tr>
         <td><a href="helpers.md#with">With</a></td><td>This function is used to change the evaluation token of template-part</td>

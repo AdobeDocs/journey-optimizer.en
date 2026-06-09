@@ -10,6 +10,25 @@ level: Intermediate
 keywords: time zone, properties, journey, condition, time, date, custom
 exl-id: 3bcc08d6-1210-4ff9-92f4-edee8285b469
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/PdwGEuWqJcncbkokE0eOhMaEk9L0AmCJ--VZBxxtDDU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Time zone management {#timezone_management}
 
@@ -25,8 +44,8 @@ To access journey properties, select the pencil icon in the top-right of the scr
 
 This time zone will be used for every activity of the journey containing a time element such as:
 
-* [Time condition](../building-journeys/condition-activity.md#time_condition)
-* [Date condition](../building-journeys/condition-activity.md#date_condition)
+* [Time condition](../building-journeys/conditions.md#time_condition)
+* [Date condition](../building-journeys/conditions.md#date_condition)
 * [Custom wait](../building-journeys/wait-activity.md#custom)
 
 <!--

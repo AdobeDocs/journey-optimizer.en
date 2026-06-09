@@ -6,12 +6,46 @@ description: Comprehensive guide to get started with journey orchestration in [!
 feature: Journeys, Get Started, Overview
 role: User
 level: Beginner, Intermediate
-hide: yes
-hidefromtoc: yes
+hide: true
 keywords: journey, orchestration, getting started, onboarding, capabilities
 exl-id: 96b1d619-986d-493d-a73b-d7c63b92cca8
+TQID: https://experienceleague.adobe.com/Ht6fS6uanOs-rXoT4bAnK6eGvm9kOmH-N5B-y8KU6Rc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
+    internal-label: Journey design
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 ---
-# Journey Orchestration - Complete guide{#journey-orchestration-guide}
+# Journey orchestration - complete guide{#journey-orchestration-guide}
 
 Journeys in [!DNL Adobe Journey Optimizer] empower you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
 
@@ -57,7 +91,7 @@ Leverage **contextual data** from events, information from [!DNL Adobe Experienc
 
 **Built-in actions**
 
-Use **built-in channel actions** to send messages designed in [!DNL Journey Optimizer] across email, push, SMS/MMS, and more.
+Use **built-in channel actions** to send messages designed in [!DNL Journey Optimizer] across email, push, SMS/RCS/MMS, and more.
 
 [Send messages in journeys](journey-action.md)
 :::
@@ -83,6 +117,16 @@ With the **journey designer**, build your multistep use cases: easily drag and d
 :::
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+**Reusable Journey Fragments**
+
+Build a set of journey nodes once — such as an eligibility check or channel routing logic — and reuse them across journeys with **Journey Fragments**.
+
+[Learn about Journey Fragments](journey-fragments.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/shield-halved.svg)
 
 **Test & optimize**
@@ -98,7 +142,7 @@ Test your journeys before publishing, monitor their performance, and optimize de
 
 From within the journey designer, marketers can send real-time triggered 1:1 messages through any channel when an event occurs. For example, when a customer subscribes to a service, it can [trigger a welcome email](message-to-subscribers-uc.md), encouraging them to log into the app for the first time and set their preferences. Actions like completing the purchase, opening the email, and logging into the app can be used to advance new customers through their journeys.
 
-The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journey-action.md) that support outbound messages, such as emails, push notifications, and SMS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
+The [journey designer](using-the-journey-designer.md) provides [built-in channel actions](journey-action.md) that support outbound messages, such as emails, push notifications, and SMS/RCS/MMS, as well as inbound channels, including mobile apps, websites, and code-based experiences built directly within Journey Optimizer. You can also use third-party systems to send messages — Journey Optimizer includes [custom actions](using-custom-actions.md) to allow these systems to be integrated into journeys directly from the journey designer.
 
 
 :::: landing-cards-container

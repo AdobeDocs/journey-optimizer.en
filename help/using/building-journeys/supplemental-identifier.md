@@ -3,6 +3,25 @@ title: Use supplemental identifiers in journeys
 description: Learn how to use supplemental identifiers in journeys.
 exl-id: f6ebd706-4402-448a-a538-e9a4c2cf0f8b
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/ABOlJ-ZF0a3xLNY-hH6jjFqu53ph4PynNalGkgQ6P8k
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: d08afb72-92f6-4856-88e3-11ec34313c2f
+    internal-label: Event configuration
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Use supplemental identifiers in journeys {#supplemental-id}
 
@@ -135,13 +154,15 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
     
         After applying the non-person identity namespace to a schema, you must create a new field group in order to use the supplemental identifier. Existing entities cannot be refreshed to recognize the new identifier.
 
-<!--1. **Add the supplemental ID field to the data source**
+<!--
+1. **Add the supplemental ID field to the data source**
 
     1. Navigate to the **[!UICONTROL Configuration]** / **[!UICONTROL Data Sources]** menu, then locate the "ExperiencePlatformDataSource" data source.
 
         ![Data source configuration with supplemental identifier mapping](assets/supplemental-ID-data-source.png)
 
-    1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).-->
+    1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).
+-->
 
 1. **Add and configure a Read audience activity in the journey**
 
@@ -214,7 +235,7 @@ In an object array with the supplemental ID as `bookingNum` and an attribute at 
 
 These examples show how supplemental identifiers support multiple related records.
 
-### **Policy Renewal Notifications**
+### **Policy renewal notifications**
 
 * **Scenario**: An insurance provider sends renewal reminders for each active policy held by a customer.
 * **Execution**:

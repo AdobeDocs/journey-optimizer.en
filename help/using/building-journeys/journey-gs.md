@@ -10,6 +10,39 @@ level: Intermediate
 keywords: journey, first, start, quick-start, audience, event, action
 exl-id: d940191e-8f37-4956-8482-d2df0c4274aa
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/7zNDOi2SUTyttgR6I1iOYQb61ejxpqLYznweU8alnPw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
+    internal-label: Journey design
+  - id: a6c67b0d-bd3e-4d5d-95a8-882e3709d632
+    internal-label: Journey guardrails
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Create your first journey {#jo-quick-start}
 
@@ -53,6 +86,15 @@ What you need to configure before building depends on how your journey is trigge
 * **Audience-based entry** — The journey runs for a defined set of profiles at a scheduled time. [Create an audience](../audience/about-audiences.md) in Adobe Experience Platform before building your journey. This is the recommended starting point if you are new to Journey Optimizer.
 
 * **Event-based entry** — The journey is triggered in real time when an individual performs an action, such as a purchase or a sign-up. [Configure an event](../event/about-events.md) to define the trigger and the data it carries.
+
+**Not sure which entry point to use?** The table below maps the most common use cases to the right starting activity.
+
+| Entry point | Use when… | Profiles enter |
+|---|---|---|
+| **[Read Audience](read-audience.md)** | You want to send a scheduled or recurring message to a defined set of profiles (newsletters, promotions, onboarding series). | All profiles from a batch audience, at once or on a schedule. |
+| **[Audience Qualification](audience-qualification-events.md)** | You need to react in real time when a profile enters or exits an audience (loyalty tier upgrade, churn risk flag). | One profile at a time, as soon as they qualify in a streaming audience. |
+| **Unitary event** | A profile action triggers an immediate response (purchase confirmation, form submission, app login). | One profile at a time, in real time. |
+| **[Business event](../event/about-creating-business.md)** | A non-profile event affects multiple people at once (flight cancellation, stock replenishment, breaking news alert). | All profiles associated with the event, via an automatic Read Audience step. |
 
 The following elements are optional, but may be required depending on your use case:
 

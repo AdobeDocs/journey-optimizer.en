@@ -8,6 +8,24 @@ role: Admin
 level: Experienced
 keywords: landing, landing page, configure, environment, subdomain, presets
 exl-id: 7cf1f083-bef0-40b5-8ddd-920a9d108eca
+TQID: https://experienceleague.adobe.com/BrNNR0ayMFPS-njxDgJwdNSkvlIuA2ZJdosqdmR2PfU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Define landing page presets {#lp-presets}
 
@@ -82,7 +100,8 @@ You are now ready to [create landing pages](../landing-pages/create-lp.md) in [!
 <!--
 >[!NOTE]
 >
->Learn how to create channel configurations for push notifications and emails in [this section](channel-surfaces.md).-->
+>Learn how to create channel configurations for push notifications and emails in [this section](channel-surfaces.md).
+-->
 
 **Related topics**:
 

@@ -10,6 +10,19 @@ level: Experienced
 keywords: sandbox, journey, copy, environment
 exl-id: 8c63f2f2-5cec-4cb2-b3bf-2387eefb5002
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/uDG5JHlhzAbxwNW0C0-SJ8ndtSb8-blwf9fTCvSeWz0
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2: []
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Copy a journey to another sandbox {#copy-to-sandbox}
 

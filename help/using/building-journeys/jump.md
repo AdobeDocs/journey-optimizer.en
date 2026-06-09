@@ -10,6 +10,31 @@ level: Intermediate
 keywords: jump, actvity, journey, split, splitting
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/qCnWzqjO5YRbKO-WHUo950uoHS0skcZT6sdYyNJ4esE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Jump from one journey to another {#jump}
 
@@ -47,6 +72,20 @@ In journey B, the first event is triggered internally via the **[!UICONTROL Jump
 >[!NOTE]
 >
 >Journey B can also be triggered via an external event.
+
+### Profile behavior during a Jump {#jump-profile-behavior}
+
+When a profile reaches the **[!UICONTROL Jump]** step, it continues progressing in the origin journey (Journey A) while simultaneously entering the target journey (Journey B). The profile is therefore active in both journeys at the same time.
+
+This means:
+
+* The profile completes any remaining steps in Journey A after the Jump activity (for example, a follow-up wait or closing action).
+* The profile also starts flowing through Journey B from its first event, independently of Journey A.
+* If the profile is **already active** in Journey B when the Jump is executed, it will **not** enter Journey B again. Journey A continues normally; no error is reported.
+
+>[!NOTE]
+>
+>The case above — profile already active in Journey B — results in a **silent skip**: no error is raised and Journey A continues normally. In other situations, the Jump can **fail** and Journey A applies its standard action-error handling. See [Runtime failures](#jump-troubleshoot) for the full list of cases.
 
 ## Best practices and limitations {#jump-limitations}
 
@@ -88,7 +127,7 @@ Build each phase as a separate journey in Journey Optimizer, then use **[!UICONT
 
 >[!TIP]
 >
->For a detailed walkthrough of this approach, see [Best practices for advanced journeys in Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
+>For a worked example using a multi-phase loyalty program, see [Multi-phase loyalty journey](journeys-uc.md#multi-phase-loyalty).
 
 ## Configuring the Jump activity {#jump-configure}
 
@@ -132,10 +171,20 @@ When a **[!UICONTROL Jump]** activity is configured in a journey, a **[!UICONTRO
 
 ## Troubleshooting {#jump-troubleshoot}
 
-Errors occur if:
+### Configuration errors
 
-* The target journey no longer exists
-* The target journey is draft, closed, or stopped
-* The first event of the target journey has changed, and the mapping is broken
+The following issues prevent the Jump from working correctly and appear as errors on the journey canvas:
+
+* The target journey no longer exists.
+* The target journey is draft, closed, or stopped.
+* The first event of the target journey has changed and the mapping is broken.
 
 ![Journey analytics showing jump activity execution metrics](assets/jump6.png)
+
+### Runtime failures
+
+In the following cases, the Jump step is treated as a **failed action** in Journey A. Journey A applies the standard action-error handling and continues:
+
+* The existing target journey instance has been terminated and the target journey is non-reentrant.
+* A reentrance period is configured on the target journey. Even when re-entry is allowed in principle, the profile cannot re-enter until the period elapses (the Jump fails with a "non-reentrant for the period" status).
+* The target journey version cannot be located, has been deleted, is in a finished state, or has been stopped.

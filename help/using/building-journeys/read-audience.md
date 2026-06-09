@@ -10,6 +10,43 @@ level: Intermediate
 keywords: activity, journey, read audience, audience, segment, batch, entry point, trigger, schedule, Audience Qualification
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/XqBTB8kE-KCmI49eHBp63dX09vu5Zh1Dl2BDwH0BkU4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
+    internal-label: Wait activity
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: e57d1da4-32c2-4cc6-945c-9feb219156ff
+    internal-label: Event activities
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+    internal-label: Audience segmentation
 ---
 # Use an audience in a journey {#segment-trigger-activity}
 
@@ -31,6 +68,13 @@ The **Read Audience** activity is the journey entry-point activity that adds all
 | You want to run a journey once or on a schedule (batch). | You need profiles to enter the journey in real time as they qualify. |
 | Your audience is batch-evaluated (e.g. daily snapshot). | Your audience is streaming or event-based. |
 | You are okay with a delay between audience evaluation and journey entry. | You need immediate entry when a profile qualifies. |
+
+>[!TIP]
+>
+>**Real-world examples**
+>* **Weekly newsletter** → Read Audience. Your audience is a daily batch snapshot. You schedule the journey every Monday at 9 AM. All qualified profiles enter together.
+>* **Loyalty tier upgrade** → Audience Qualification. As soon as a profile reaches Gold status in a streaming audience, they enter the journey immediately to receive a congratulations email.
+>* **Re-engagement series** → Read Audience. You run a recurring journey every 30 days targeting profiles inactive for 90+ days.
 
 **Key limits:** One Read Audience per journey (must be the first activity); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and limitations](../start/guardrails.md#read-segment-g).
 
@@ -235,7 +279,6 @@ For example, if a journey is scheduled for 6 PM daily, you can specify a number 
 +++
 
 <!--
-
 ### Segment filters {#segment-filters}
 
 [!CONTEXTUALHELP]
@@ -250,7 +293,6 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 **Segment membership**: choose whether you want to listen to segment entrances or exits. 
 
 **Lookback window**: define when you want to start to listen to entrances or exits. This lookback window is expressed in hours, starting from the moment the journey is triggered.  If you set this duration to 0, the journey will target all members of the segment. For recurring journeys, it will take into account all entrances/exits since the last time the journey was triggered.
-
 -->
 
 ## Test and publish the journey {#testing-publishing}
@@ -389,13 +431,15 @@ For the full list of Read Audience guardrails (including retry and throughput li
 
 ## Related topics
 
-* [Build audiences](../audience/about-audiences.md)
-* [Audience Qualification activity](audience-qualification-events.md)
-* [Use supplemental identifiers in journeys](supplemental-identifier.md)
-* [Guardrails and limitations](../start/guardrails.md#read-segment-g)
-* [Journey processing rates and entry management](entry-management.md)
-* [Test a journey](testing-the-journey.md)
-* [Publish a journey](../building-journeys/publish-journey.md)
+* [Build audiences](../audience/about-audiences.md) - Create and manage the audience segments you want to target in your Read Audience journeys.
+* [Audience Qualification activity](audience-qualification-events.md) - Trigger journeys in real time as profiles enter or exit an audience, instead of processing them in batch.
+* [Use supplemental identifiers in journeys](supplemental-identifier.md) - Extend Read Audience journeys to target secondary entities such as bookings, contracts, or subscriptions linked to a profile.
+* [Guardrails and limitations](../start/guardrails.md#read-segment-g) - Review throughput limits, retry behavior, and audience size thresholds before launching at scale.
+* [Journey processing rates and entry management](entry-management.md) - Understand how profiles are injected into the journey and what controls entry and re-entry.
+* [Test a journey](testing-the-journey.md) - Validate your journey logic using test profiles before going live.
+* [Publish a journey](../building-journeys/publish-journey.md) - Activate your journey and monitor its initial execution.
+* [Send a message to subscribers](message-to-subscribers-uc.md) - End-to-end use case: target a subscription list with a Read Audience journey, from setup to delivery.
+* [Best practices for Read Audience journeys](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445){target="_blank"} - Community blog covering common pitfalls, count discrepancies, and proven best practices.
 
 ## How-to video {#video}
 

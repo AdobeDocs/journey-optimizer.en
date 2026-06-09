@@ -9,6 +9,45 @@ level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: 58bcc8b8-5828-4ceb-9d34-8add9802b19d
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/a7qFw84obtkCRDmiqMxQNgvqhI4b6t5suROeF7ZPh1I
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
+    internal-label: Journey design
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Journey Dry run {#journey-dry-run}
 
@@ -48,15 +87,16 @@ During the Dry Run, the journey runs in simulation mode, applying the following 
 * **Channel action** nodes including Email, SMS or Push notifications are not executed. 
 * **Custom actions** are disabled during Dry run, and their responses are set to null.
 
-    To enhance readability, custom actions and channel activities appear greyed out during the execution of a Dry run.
+  To enhance readability, custom actions and channel activities appear greyed out during the execution of a Dry run.
 
-    ![Greyed out action activities in a Dry run journey](assets/dry-run-greyed-activities.png){width="80%" align="left"}
+  ![Greyed out action activities in a Dry run journey](assets/dry-run-greyed-activities.png){width="80%"}
 
 * **Data sources**, including external data sources, and **Wait** activities are disabled by default during Dry run. However you can change this behavior [when activating the Dry run mode](#journey-dry-run-start).
 
 * **Reaction** nodes are not executed: all profiles entering it will exit with success. However, the following priority rules apply:
-    * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
-    * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
+
+  * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
+  * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
 
 >[!CAUTION]
 >
@@ -77,7 +117,7 @@ To activate Dry run, follow these steps:
 
 1. Select the if you want to enable or disable **Wait** activities and **External data sources** calls, and confirm the Dry run publication.
 
-    ![Confirm the journey dry run publication](assets/dry-run-publish.png){width="50%" align="left"}
+    ![Confirm the journey dry run publication](assets/dry-run-publish.png){width="50%"}
 
     A status message, **[!UICONTROL Activating Dry run]**, appears while the transition is happening.
 
@@ -111,7 +151,7 @@ Dry run journeys can also be stopped manually. To deactivate the Dry run mode, f
 1. Select the **[!UICONTROL Close]** button to end the test.
     Links to last 24h and all time reports are available in the confirmation screen.
 
-    ![Stop the journey dry run execution](assets/dry-run-stop.png){width="50%" align="left"}
+    ![Stop the journey dry run execution](assets/dry-run-stop.png){width="50%"}
 
 1. Click **[!UICONTROL Back to Draft]** to confirm.
 
@@ -125,7 +165,7 @@ Dry run journeys can also be stopped manually. To deactivate the Dry run mode, f
 * **Jump** actions are not enabled in Dry run. 
     When a source journey triggers a **Jump** event to a destination one, that jump event would not be applicable to a Dry run journey version. For instance, if the latest version of a journey is in Dry run and the previous one is **Live**, then the jump event would ignore the Dry run version and only be applicable for the **Live** one.
 
-## Journey Step Events and Dry run {#journey-step-events}
+## Journey step events and dry run {#journey-step-events}
 
 Journey Dry run generates **stepEvents**. These stepEvents have a specific flag and Dry run ID: `inDryRun` and `dryRunID`.
 

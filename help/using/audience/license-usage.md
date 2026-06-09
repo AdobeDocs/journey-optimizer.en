@@ -8,6 +8,37 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 7e91face-c8f4-4e70-9123-9e36bae7e67e
+TQID: https://experienceleague.adobe.com/KrsJKfvAPAE5yW2Lgrc-MrMUtoxi336rsmQIglfs7Mc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
+  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
+    internal-label: Audience Qualification events
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
+    internal-label: Audience guardrails
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # License usage dashboard {#license-usage}
 
@@ -26,7 +57,7 @@ To access this dashboard, go to **[!UICONTROL Administration]** > **[!UICONTROL 
 
 For [!DNL Adobe Journey Optimizer], the dashboard allows you to check the number of **Engageable Profiles**. 
 
-## What is an Engageable Profile? {#what-is-engageable-profile}
+## What is an engageable profile? {#what-is-engageable-profile}
 
 An **Engageable Profile** is a record of information representing an individual that is stored in the Profile Service and has been engaged by journeys or campaigns. 
 
@@ -47,7 +78,7 @@ Key characteristics of Engageable Profiles:
 >
 >If you observe a sudden spike in your Engageable Profiles count, refer to the [Troubleshooting section](#troubleshooting-engageable-profiles) below for detailed guidance on understanding and resolving the issue.
 
-## Troubleshooting: Significant increase in Engageable Profiles count {#troubleshooting-engageable-profiles}
+## Troubleshooting: significant increase in engageable profiles count {#troubleshooting-engageable-profiles}
 
 If you observe a sudden spike in the Engageable Profiles count (for example, profiles increasing from hundreds of thousands to millions within a day), this section provides guidance to understand and address the issue.
 

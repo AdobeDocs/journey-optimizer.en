@@ -6,9 +6,13 @@ role: User
 level: Intermediate
 version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
-hide: true
-hidefromtoc: true
 exl-id: 3e7c3069-b022-4709-936d-acaad56b5882
+feature_v2:
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization
+subfeature_v2:
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
 ---
 # Use AI models to rank journeys {#journey-ai-models}
 
@@ -22,10 +26,12 @@ Instead of using priority, you can also use **AI models** in your ranking formul
 
 ## Create an AI model {#create-ai-model}
 
-<!--Do you need specific permissions to create AI models?
+<!--
+Do you need specific permissions to create AI models?
 >[!CAUTION]
 >
->To create, edit, or delete AI models, you must have the **Manage Ranking Strategies** permission. [Learn more](../administration/high-low-permissions.md#manage-ranking-strategies)-->
+>To create, edit, or delete AI models, you must have the **Manage Ranking Strategies** permission. [Learn more](../administration/high-low-permissions.md#manage-ranking-strategies)
+-->
 
 To create an AI model for journey ranking, follow the steps below.
 
@@ -47,7 +53,8 @@ To create an AI model for journey ranking, follow the steps below.
 1. Select the type of AI model you want to create:
 
     * **[!UICONTROL Auto-optimization]** optimizes based on past performance. [Learn more](../experience-decisioning/ranking/auto-optimization-model.md)
-    * **[!UICONTROL Personalized optimization]** optimizes and personalizes based on audiences and performance. [Learn more](../experience-decisioning/ranking/personalized-optimization-model.md)-->
+    * **[!UICONTROL Personalized optimization]** optimizes and personalizes based on audiences and performance. [Learn more](../experience-decisioning/ranking/personalized-optimization-model.md)
+-->
 
 1. In the **[!UICONTROL Optimization metric]** section, all metrics from your default [!DNL Customer Journey Analytics] [data view](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views){target="_blank"} display in the list. Select the metric that you want to optimize your model on.
 

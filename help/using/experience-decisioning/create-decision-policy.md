@@ -1,12 +1,30 @@
 ---
-title: Create decisions policies
-description: Learn how to create decisions policies
+title: Create decisions policies 
+description: Learn how to create decisions policies 
 feature: Decisioning
 topic: Integrations
 role: User
 level: Experienced
 version: Journey Orchestration
 exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
+TQID: https://experienceleague.adobe.com/ooRR2Tz1Tphu4JUHgeYjfz-guj8S87NVaWKxM4jShEM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create decision policies {#create-decision}
 
@@ -29,23 +47,19 @@ exl-id: e7a89354-28ea-431f-a15d-a8c18946d266
 To present the best dynamic offer and experience to your customers, add a decision policy to your content in a campaign or journey then configure the items to return and the selection strategy to use. To do so, follow the steps below:
 
 1. [Add a decision policy](#add)
-1. [Configure the decision policy](#configure) - Add a name and specify the number of items to return for the email channel.
+1. [Configure the decision policy](#configure) - Add a name and, for Email and Direct mail channels, specify the number of items to return.
 1. [Set up a strategy sequence](#strategy) - Select the items to return with the decision policy.
 1. [Select fallback offers](#fallback) (optional) - Select items to display if no items or selection strategies are qualified.
 1. [Review and save](#review) the selection strategy
-1. [Assign a placement](#placement) (Email channel)
+1. [Assign a placement](#placement) (Email channel only)
 
 >[!AVAILABILITY]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Push notification** and SMS channels.
->
->Decisioning for the Email channel is available in Limited Availability. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, and **Direct Mail** channels.
 
 ## Add a decision policy {#add}
 
-Open a journey or campaign, select a [channel action](../building-journeys/journey-action.md) and edit the content of your message.
-
-Edit the content of your message and browse the tabs below for more information on how to add the decision policy based on the selected channel.
+Access a configured channel action in your journey or campaign, and edit the content of your message. Browse the tabs below for more information on how to add the decision policy based on the selected channel.
 
 >[!BEGINTABS]
 
@@ -74,6 +88,10 @@ For code-based experiences, you can add a new decision policy using either the *
 +++
 
 >[!TAB Email]
+
+>[!IMPORTANT]
+>
+>A single email supports a maximum of 10 decision policies.
 
 1. Toggle the **[!UICONTROL Enable decisioning]** option.
 
@@ -111,6 +129,20 @@ For code-based experiences, you can add a new decision policy using either the *
     >
     >When the same offer can be selected by more than one decision policy in the email body, the engine deduplicates offers: each placement receives a different offer, so the same offer will not appear in both places. To display the same offer in multiple placements, use **[!UICONTROL Reuse decision output]** to reuse the output of an existing decision policy in this email.
 
+    +++
+
+You can also add decision policies when using the **[!UICONTROL Code your own]** mode in the Email Designer. To do so, navigate to **[!UICONTROL Decision policies]** to insert the decision policy code — the placement selection UI will appear, allowing you to choose a placement for the decision policy. [Learn how to code your own email content](../email/code-content.md).
+
+![](assets/decision-policy-add-code-your-own.png)
+
+>[!AVAILABILITY]
+>
+>Inserting decision policies in **[!UICONTROL Code your own]** mode is in Limited Availability.
+
+>[!NOTE]
+>
+>In **[!UICONTROL Code your own]** mode, you can only return one decision item per policy, because the **[!UICONTROL Repeat Grid]** component is not available.
+
 >[!TAB SMS]
 
 For SMS, you can add a new decision policy using either the **personalization editor**, or the **Decisioning** menu available in the properties pane.
@@ -131,6 +163,8 @@ For SMS, you can add a new decision policy using either the **personalization ed
 1. Click the **[!UICONTROL Add decision policy]** button.
 
     ![](assets/decision-policy-add-sms.png)
+
++++
 
 >[!TAB Push notification]
 
@@ -155,7 +189,25 @@ For Push notifications, you can add a new decision policy using either the **per
 
 >[!IMPORTANT]
 >
->Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes/){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions/){target="_blank"}.
+>Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions){target="_blank"}.
+ 
++++
+
+>[!TAB Direct Mail]
+
+For direct mail, add a decision policy from the **extraction file** configuration. [Learn how to create a direct mail message](../direct-mail/create-direct-mail.md).
+
+1. In the **[!UICONTROL Data Fields]** section, select a column or click **[!UICONTROL Add]** to create one.
+
+1. In the formatting pane, open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
+
+    ![](assets/decision-policy-dm-add.png)
+
+1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
+
+    ![](assets/decision-policy-dm-create.png)
+
+1. In the decision policy configuration screen, use the **[!UICONTROL Number of items]** field to define how many decision items to return for each profile (for example, 2 to export the top 2 eligible offers). Continue with [strategy setup](#strategy) and [personalization](use-decision-policy.md) in your extraction file columns.
 
 >[!ENDTABS]
 
@@ -171,7 +223,7 @@ After you have added a new decision policy into your content, the decision polic
 
     >[!NOTE]
     >
-    >This option is available for the Email and Code-based experience channels only. For all other channels, only 1 decision item can be returned per action.
+    >The **[!UICONTROL Number of items]** field is available for **Email**, **Code-based experience**, and **Direct mail** channels. For **SMS** and **Push** channels, only 1 decision item can be returned per action.
 
     To return multiple items for the Email channel, you need to add the decision policy within a **[!UICONTROL Repeat Grid]** component. Expand the section below for more details:
 
@@ -319,5 +371,5 @@ For emails, you need to define a placement for the component associated to the d
 ## Next steps {#next-steps}
 
 Now that you understand how to create a decision policy, you're ready to use it into [!DNL Journey Optimizer] channels to deliver offers.
-
+ 
 ➡️ [Learn how to use decision policies in messages](../experience-decisioning/use-decision-policy.md)

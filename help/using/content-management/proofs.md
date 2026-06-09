@@ -5,14 +5,19 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: e742c04e-2987-4466-84af-bdaf4d714552
+feature_v2: []
+subfeature_v2:
+  - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
+    internal-label: Proofs
 ---
 # Send proofs using test profiles data {#send-proofs}
 
 A proof is a specific message that allows you to test a message before sending it to the main audience. Recipients of the proof are in charge of approving the message: rendering, content, personalization settings, configuration.
 
->[!NOTE]
->
->[!DNL Journey Optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+You can send proofs using either simulation method:
+
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to send proofs with test profiles.
+* Click **[!UICONTROL Simulate content]** to send proofs for content variations created with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md#proofs)
 
 ## Must-read {#must-read}
 

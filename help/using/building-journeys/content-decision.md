@@ -10,6 +10,33 @@ level: Intermediate
 keywords: activity, decisioning, content decision, decision policy, canvas, journey
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/1tZd4-NYBxu1iuUZGMKQ6DIXFxRpX0FARTEPpWqxzjY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
+    internal-label: Action configuration
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Content decision activity {#content-decision}
 
@@ -23,7 +50,7 @@ To leverage this capability, create a journey where you add a [content decision 
 
 You can then use the output of the content decision activity in:
 
-* a [condition activity](#add-condition-activity), to move profiles to specific paths based on the offers retrieved;
+* an [Optimize activity with a condition](#add-condition-activity), to move profiles to specific paths based on the offers retrieved;
 
 * a [custom action](#add-custom-action), where you can send those offers to external systems.
 
@@ -75,15 +102,15 @@ You are now ready to leverage the output of this content decision activity in yo
 
 ## Use the output of the content decision activity {#use-content-decision-output}
 
-The output of a content decision can be used in multiple journey activities. For example, you can use a [condition activity](#add-condition-activity) to move profiles to specific branches of your journey, based on the number of offers retrieved for them.
+The output of a content decision can be used in multiple journey activities. For example, you can use an [Optimize activity with a condition](#add-condition-activity) to move profiles to specific branches of your journey, based on the number of offers retrieved for them.
 
 You can also add a [custom action](#add-custom-action) to your journey in order to share the offers from the content decision activity to an external system.
 
-### In a condition activity {#add-condition-activity}
+### In an optimize activity (condition method) {#add-condition-activity}
 
-To leverage the output of a content decision activity, you can add a condition to your journey, where you define expressions to move profiles to specific paths, using data from those offers. Follow the steps below.
+To leverage the output of a content decision activity, add an **[!UICONTROL Optimize]** activity, choose the **[!UICONTROL Condition]** method, and define expressions to move profiles to specific paths using data from those offers. Follow the steps below. For more condition types and options, see [Conditions](conditions.md).
 
-1. From the **[!UICONTROL Orchestration]** category, drop a **[!UICONTROL Condition]** activity into your canvas. [Learn more](condition-activity.md#add-condition-activity)
+1. From the **[!UICONTROL Orchestration]** category, drop an **[!UICONTROL Optimize]** activity into your canvas. [Learn more](optimize.md)
 
 1. (optional) Rename **[!UICONTROL Path1]**, which corresponds to the first expression you define, to a more relevant label.
 
@@ -159,9 +186,11 @@ Below is the full example of a journey using a content decision activity combine
 
 Once the journey is [activated](publish-journey.md):
 
-<!--* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
+<!--
+* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
 
-* If no offer is returned for a profile, they are excluded from the custom action.-->
+* If no offer is returned for a profile, they are excluded from the custom action.
+-->
 
 1. Every time a profile qualifies for that audience, it enters the journey.
 

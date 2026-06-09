@@ -8,6 +8,39 @@ topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
 exl-id: 9dd3970c-cf24-424c-b734-f30571374942
+TQID: https://experienceleague.adobe.com/-XlVD0y5JOVf04u8AolPd3c5MQmt9h39gC-aulCjp6c
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+    internal-label: Web experience
 ---
 # Generate text with AI Assistant {#generative-text}
 
@@ -101,16 +134,14 @@ Learn how to review the generated text, make refinements, and apply personalizat
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
-
-1. Insert personalization fields to customize your content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
+1. Insert personalization fields to customize your content based on profiles data. Then, use either simulation method to control the rendering and check personalization settings: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more](../content-management/preview-test.md)
 
 1. Review and activate your content:
    * **Email**: When you have defined your content, audience and schedule, you are ready to prepare your email campaign. [Learn more](../campaigns/review-activate-campaign.md)
    * **Web**: Once you defined your web campaign settings and edited your content as desired, you can review and activate your web campaign. [Learn more](../web/create-web.md#activate-web-campaign)
    * **Landing Page**: Once your landing page is ready, you can publish it to make it available for use in a message. [Learn more](../landing-pages/create-lp.md#publish-landing-page)
 
-## For Mobile Channels {#mobile-channels}
+## For mobile channels {#mobile-channels}
 
 AI Assistant can generate compelling text content for your push notifications and SMS messages, helping you create engaging mobile communications that resonate with your audience across all mobile touchpoints.
 
@@ -120,13 +151,13 @@ Before you begin generating text with AI Assistant for mobile channels, you must
 
 1. Create and configure your mobile campaign:
    * **Push notifications**: After creating and configuring your push notification campaign, click **[!UICONTROL Edit content]**. [Learn more](../push/create-push.md)
-   * **SMS**: After creating and configuring your SMS campaign, click **[!UICONTROL Edit content]**. [Learn more](../sms/create-sms.md)
+   * **SMS**: After creating and configuring your SMS campaign, click **[!UICONTROL Edit content]**. [Learn more](../mobile/create-mobile-message.md)
 
 1. Fill in the **[!UICONTROL Basic details]** for your campaign. Once done, click **[!UICONTROL Edit content]**.
 
 1. Personalize your message as needed:
    * **Push notifications**: [Learn more](../push/design-push.md)
-   * **SMS**: [Learn more](../sms/create-sms.md)
+   * **SMS**: [Learn more](../mobile/create-mobile-message.md)
 
 1. Access AI Assistant:
    * **For Push notifications**: Click the **[!UICONTROL Edit text with AI Assistant]** menu next to your **[!UICONTROL Title]** or **[!UICONTROL Message]** fields. You can also directly access the **AI assistant** menu.
@@ -201,8 +232,6 @@ After generating text variations for your mobile messages, you can fine-tune the
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
-    You can also enable experiment for your content. [Learn more](generative-experimentation.md)
-
-1. Insert personalization fields to customize your content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
+1. Insert personalization fields to customize your content based on profiles data. Then, use either simulation method to control the rendering and check personalization settings: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more](../content-management/preview-test.md)
 
 When you have defined your content, audience and schedule, you are ready to prepare your mobile campaign. [Learn more](../campaigns/review-activate-campaign.md)

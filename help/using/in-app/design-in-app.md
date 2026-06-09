@@ -7,6 +7,31 @@ role: User
 level: Beginner
 keywords: in-app, message, design, formatting
 exl-id: 7d7aa721-96aa-4ebc-a51c-e693f893f34f
+TQID: https://experienceleague.adobe.com/DBRGZUXPBo-2-EX0i3RSGQc4G1-zbsee4u3oF1cU-ng
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Design your In-app content {#design-content}
 
@@ -147,7 +172,7 @@ To personalize your button:
 
 1. Choose your **[!UICONTROL Interact event]** which defines your button's action after users interacted with it.
 
-1. Enter your web URL or deeplink in the **[!UICONTROL Target]** field.
+1. Enter your web URL or deep link in the **[!UICONTROL Target]** field.
 
 1. To add multiple buttons, click **[!UICONTROL Add button]**.
 
@@ -238,7 +263,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can further
 
 From the **Data** tab, you can define a **[!UICONTROL Key]**​ and **[!UICONTROL Value]** to include custom variables in the payload. These key/value pairs allow you to pass additional data, depending on your specific configuration. 
 
-For more information, refer to the [Developer documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/in-app-message/tutorials/messaging-metadata/).
+For more information, refer to the [Developer documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/in-app-message/tutorials/messaging-metadata).
 
 1. From the **[!UICONTROL Data]** tab, select **[!UICONTROL Add key/value pair]**.
     

@@ -8,6 +8,37 @@ role: User
 level: Beginner
 keywords: platform, data lake, create, lake, datasets, profile
 exl-id: 66b5c691-ddc4-4e9b-9386-2ce6c307451c
+TQID: https://experienceleague.adobe.com/5jeWrWwq-7qu4UcfgYuum2n5o8ITy2HAdSSCfBJbg3U
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+subfeature_v2:
+  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
+    internal-label: Journey Optimizer schemas
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
+  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
+    internal-label: Data ingestions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Export datasets to cloud storage locations {#export-datasets}
 
@@ -80,14 +111,14 @@ Once the export is complete, the content of your dataset is deposited on your cl
 Understand from the table below which Journey Optimizer datasets you can export.
 
 |Dataset|Description|
-| ------- | ------- | 
-| AJO Classification Dataset | Dataset for ingesting email and push application feedback events from Journey Optimizer. Created through SDK. | 
+| ------- | ------- |
+| AJO Classification Dataset | Dataset for ingesting email and push application feedback events from Journey Optimizer. Created through SDK. |
 | AJO Consent Service Dataset | Stores consent information of a profile. |
 | AJO Email Tracking Experience Event Dataset | Interaction logs for Email channel which is used for reporting and audience creation purposes.  |
-| AJO Entity Dataset | Dataset to store entity metadata for messages sent to the end user.  | 
+| AJO Entity Dataset | Dataset to store entity metadata for messages sent to the end user.  |
 | AJO Inbound Activity Event Dataset | Dataset for Journey Optimizer web & inApp channels for delivery & interaction events. |
 | AJO Interactive Messaging Profile Dataset | Stores profiles created to support API-triggered campaigns |
-| AJO Message Feedback Event Dataset | Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. This dataset includes events for all channels: Email, SMS/MMS, Direct Mail, etc.| 
+| AJO Message Feedback Event Dataset | Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. This dataset includes events for all channels: Email, SMS/RCS/MMS, Direct Mail, etc.|
 | AJO Message Export Dataset | Stores sent email and SMS message content that has been marked for export. Data is retained for seven calendar days from ingestion. |
 | AJO Profile Counters Extension | Holds a map of objects containing counter_value and expiryDate, keyed by counter_id |
 | AJO Push Profile Dataset | Stores push tokens of a profile. |

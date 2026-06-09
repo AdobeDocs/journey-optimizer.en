@@ -9,6 +9,17 @@ role: User
 level: Experienced
 exl-id: c73b3092-e96d-4957-88e6-500e99542782
 version: Journey Orchestration
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+product_v2: []
 ---
 # Personalized optimization model {#personalized-optimization-model}
 
@@ -32,7 +43,7 @@ To train a personalized optimization model, the dataset must meet the following 
 
 Until the first time a personalized optimization model is trained, offers within a selection strategy utilizing a personalized optimization model will be served at random.
 
-## Key Model Assumptions and Limitations {#key}
+## Key model assumptions and limitations {#key}
 
 In order to maximize the advantage of using personalized optimization, there are some key assumptions and limitations to be aware of. 
 

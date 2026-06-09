@@ -7,9 +7,31 @@ feature: Fragments
 topic: Content Management
 role: User
 level: Intermediate, Experienced
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: a274656e-2570-4a9c-b72b-4e8e920b7462
+TQID: https://experienceleague.adobe.com/yweu8QtcWU42ZI2z93vIf5-LUGP7pQ16bJUQnmDKNGY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2:
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Add contextual attributes to published fragments {#adding-contextual-attributes}
 
@@ -45,7 +67,7 @@ To add contextual attributes to a published fragment, follow the steps below.
 
 1. Select the published fragment and click **[!UICONTROL Modify]** to create a draft version.
 
-    ![](assets/fragment-live-modify.png){width="70%" align="left"}
+    ![](assets/fragment-live-modify.png){width="70%"}
 
 1. Click **[!UICONTROL Edit]** to open the fragment content editor.
 

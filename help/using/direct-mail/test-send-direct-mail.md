@@ -1,4 +1,6 @@
 ---
+solution: Journey Optimizer
+product: journey optimizer
 title: Check & send a direct mail message
 description: Learn how to check and send a direct mail message in Journey Optimizer
 feature: Direct Mail, Test Profiles, Preview
@@ -7,18 +9,50 @@ role: User
 level: Beginner
 keyword: direct, mail, configuration, direct-mail, provider
 exl-id: 69a19190-d2e2-4858-a1df-ffd008226e2b
+TQID: https://experienceleague.adobe.com/4GZKFKOx-D-RT1mssiV5vpmZQSJGVbGMro8Q-suhtPE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
+  - id: cb1f1586-9fb4-4de2-8332-02cebb88d42d
+    internal-label: Direct mail
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Check & send a direct mail message {#direct-mail-test-send}
 
+Learn how to preview the extraction file, validate and activate your direct mail campaign or journey, and manage postal mail consent in Journey Optimizer.
+
+## Before you start {#before-you-start}
+
+Before you test and send a direct mail message, [create the message and configure the extraction file](create-direct-mail.md). Ensure you have also completed [direct mail channel configuration](direct-mail-configuration.md).
+
 ## Preview the extraction file {#preview-dm}
 
-Once the content of the extraction file has been defined, you can use test profiles to preview it. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
+Once the content of the extraction file has been defined, preview it using either simulation method:
 
-To do this, click **[!UICONTROL Simulate content]** then add a test profile to check how the extraction file rendering using the test profile data.
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown and add a test profile to check how the extraction file renders.
 
-![](assets/direct-mail-simulate.png){width="800" align="center"}
+Detailed information on how to preview & test content is available in the [Content Management](../content-management/preview-test.md) section.
 
-Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
+![Simulate content preview for a direct mail extraction file](assets/direct-mail-simulate.png){width="800" align="center"}
 
 Once that the file content is ready to be sent, close the simulate screen then click the **[!UICONTROL Review to activate]** button.
 
@@ -34,7 +68,7 @@ Before activating the direct mail campaign, make sure that the campaign or journ
 
 * **Errors** prevent you from publishing the campaign, as long as they are not resolved. For example, an error message warns you when the subject line is missing.
 
-![](assets/direct-mail-review.png){width="800" align="center"}
+![Review and activate screen showing direct mail campaign validation alerts](assets/direct-mail-review.png){width="800" align="center"}
 
 When your direct mail campaign is ready, complete the configuration of your [journey](../building-journeys/journey-gs.md) or [campaign](../campaigns/create-campaign.md) to send it.
 
@@ -57,3 +91,12 @@ To enable it again, the profile attribute has to be changed back to `consents.ma
 To manage a profile's attributes, go to Experience Platform and access the profile by selecting an identity namespace and a corresponding identity value. Learn more in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/user-guide.html#getting-started){target="_blank"}.
 
 Learn more about managing opt-out in Journey Optimizer in [this section](../privacy/opt-out.md).
+
+## Related topics {#related-topics}
+
+* [Get started with direct mail](get-started-direct-mail.md)
+* [Create a direct mail message](create-direct-mail.md)
+* [Configure direct mail channel](direct-mail-configuration.md)
+* [Preview and test content](../content-management/preview-test.md)
+
+For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md).

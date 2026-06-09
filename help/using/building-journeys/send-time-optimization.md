@@ -10,6 +10,35 @@ level: Intermediate
 keywords: send-time, send, message, optimization, journey, AI, Intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/r8LyWsU7OOiGZFRkiGO56xkbzW9iE2ASemZOlyaERQ8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Send-Time Optimization{#send-time-optimization}
 
@@ -39,7 +68,7 @@ Send-Time Optimization is only available for Journey Optimizer's built-in Email 
 >* Send-Time Optimization only applies to **Email** and **Push notification** channels.
 >
 
-## Use Send-Time Optimization{#use-send-time-optimization}
+## Use send-time optimization{#use-send-time-optimization}
 
 To enable and configure Send-Time Optimization on an email or push action, follow the steps below.
 
@@ -69,7 +98,7 @@ When your journey is activated and a customer reaches the Email or Push action i
 
 To monitor your journey's performance, refer to the [Overview page](../reports/channel-report-cja.md). 
 
-## How Send-Time Optimization works {#how-send-time}
+## How send-time optimization works {#how-send-time}
 
 The Send-Time Optimization model ingests your organization's [!DNL Adobe Journey Optimizer] customer behavior data and looks at user-level open and click events to determine when your customers are most likely to engage with your messaging.
 
@@ -98,7 +127,7 @@ Messages sent by Send-Time Optimization receive either an "exploration" message 
 Exploration send times are selected at random from the send times made available by your configured maximum wait time. For example, in the case that a message is selected at 9 AM Wednesday with Send-Time Optimization turned on and a 3 hour maximum wait time, Exploration send times for the message will be split evenly between 9 AM, 10 AM, 11 AM and 12 PM.
 
 
-## Frequently Asked Questions {#faq-send-time}
+## Frequently asked questions {#faq-send-time}
 
 You will find below Frequently Asked Questions about Send-Time Optimization.
 

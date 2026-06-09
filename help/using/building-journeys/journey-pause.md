@@ -9,6 +9,39 @@ level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/gIj6jGScvIDgAJxb3B4wiuqP6BKZS0tvCeqC6wRo5IQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # Pause a journey {#journey-pause}
 
@@ -45,7 +78,7 @@ To pause your journey, follow these steps:
 
 1. Select how to manage profiles which are currently in the journey. 
 
-    ![Pause journey options](assets/pause-confirm.png){width="50%" align="left"}
+    ![Pause journey options](assets/pause-confirm.png){width="50%"}
 
     You can:
 
@@ -58,7 +91,7 @@ To pause your journey, follow these steps:
 
 The maximum number of profiles that can be held in paused journeys for your Organization is visible in the journey inventory. It is only visible when at least one journey is paused. This indicator also shows the total number of paused journeys. It is refreshed every 30 minutes. Learn more in the [Guardrails and Limitations](#guardrails-and-limitations).
 
-![Number of paused journeys and profiles currently paused](assets/profiles-in-paused-journeys.png){width="50%" align="left"}
+![Number of paused journeys and profiles currently paused](assets/profiles-in-paused-journeys.png){width="50%"}
 
 From the list of your journeys, you can pause one or several **Live** journeys. To pause a group of journeys (_bulk pause_), select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
 
@@ -77,8 +110,8 @@ When a journey is paused, profile management and activity execution depends on t
 | [Unitary Event](general-events.md)      | <ul> <li>At the first node in the canvas: The event is discarded</li><li>In other nodes: Same behavior as in a live journey, however if the event is after an <strong>Action</strong> activity and the user is paused on that action, the event is discarded. </li></ul>|
 | [Read Audience](read-audience.md)     |   Same behavior as in a live journey, with a few specificities: <ol> <li> If <strong>Pause</strong> was pressed after the <strong>Read audience</strong> activity had started, profiles which have entered the journey will continue (until the next <strong>Action</strong> activity). As journey reads audiences at a certain speed, if the complete audience has not entered yet, remaining profiles in the queue will be discarded.</li><li> For single executions: No error will be shown at resume time if the scheduled date was before the resume date. That schedule would be ignored.</li><li>For incremental journeys: <ul><li>If pause happens before the first occurence then on resume the complete audience would be played. </li><li>If pause happens, for instance, on the 4th day of a daily recurrence and journey remains paused until the 9th day then on resume all the profiles that have entered from 4th-9th would be included  </li></ul></ol>|
 | [Reaction](reaction-events.md)      | Same behavior as in a live journey, however if the reaction is after an <strong>Action</strong> activity and the user is paused on that action, the reaction event is discarded.    |
-| [Wait](wait-activity.md)             | Same behavior as in a live journey | 
-| [Condition](condition-activity.md)  | Same behavior as in a live journey |
+| [Wait](wait-activity.md)             | Same behavior as in a live journey |
+| [Optimize](optimize.md)  | Same behavior as in a live journey |
 | [Content Decision](content-decision.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Channel Action](journey-action.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |

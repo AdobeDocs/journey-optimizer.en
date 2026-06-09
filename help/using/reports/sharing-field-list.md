@@ -8,6 +8,32 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: e96efa67-ee47-40b9-b680-f5119d8c3481
+TQID: https://experienceleague.adobe.com/7sYxw--oKKa6SnRgoXnwFxme5n-6L4pe9SR-AKZOmHA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+subfeature_v2:
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
+    internal-label: Metrics catalog
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Step event field list {#sharing-field-list}
 
@@ -95,6 +121,12 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
     
     **Troubleshooting**: Implement deduplication, avoid traffic spikes, optimize journey design, [contact support](../start/user-interface.md#support-ticket-guidelines) if persistent.
 
+* **maxInstanceStackEventsReached**: The journey runtime reached the internal per-profile event stack limit of 10 events for a given journey version.
+
+    **Common causes**: The profile's journey instance is blocked on a long-running step (for example, long waits, slow enrichments, or custom action retries) and events for the same profile, also being used in that journey, pile up beyond the 10-event limit.
+
+    **Troubleshooting**: Reduce long-running steps on paths that can re-trigger frequently, debounce or deduplicate upstream events, and split long scenarios into multiple journeys. This is a safety guardrail and the limit is not configurable; additional events are discarded until the stack drains. For more guidance, see [Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached).
+
 * **EVENT_WITH_NO_JOURNEY**: An event was received but no active journey is configured to respond to it
 
     **Common causes**: Event name/ID mismatch, journey not published, wrong sandbox/organization, test mode/profile mismatch.
@@ -112,5 +144,6 @@ Below are definitions, common causes, and troubleshooting steps for the most fre
 
 * [Dataset query samples - Journey Step Event](../data/datasets-query-examples.md#journey-step-event).
 * [Examples of queries - Event-based Queries](query-examples.md#event-based-queries).
+* [Examples of queries - Business rules queries](query-examples.md#business-rules-queries).
 * [Built-in schemas dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html)
 

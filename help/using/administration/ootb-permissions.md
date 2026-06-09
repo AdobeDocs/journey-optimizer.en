@@ -9,6 +9,45 @@ role: Admin, User
 level: Intermediate
 keywords: permissions, authoring, messages
 exl-id: 5d014017-ca7c-4206-b783-989677ec0e1c
+TQID: https://experienceleague.adobe.com/iQmLU1mdA4tsWnir0WS9-BLIetY0GK7Qxl2OcNDOQj0
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+subfeature_v2: []
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+    internal-label: Data modeling
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Built-in permissions {#ootb-permissions}
 
@@ -18,7 +57,7 @@ Built-in permissions represent the different permissions that can be assigned to
 |-|-|
 |AI assistant|**[!DNL Enable AI Assistant]**: enable or access AI-powered campaign and audience features. </br>**[!DNL Generate content]**: access to AI Assistant  in Journey Optimizer. </br>**[!DNL Manage brand kit]**: read, create, edit, and delete brands. </br>**[!DNL View operational insights]**: read-only access to system-level insights and monitoring dashboards. |
 |Campaigns| **[!DNL Approve & publish Campaigns]**: right to approve and publish campaigns when a policy is applied. </br>**[!DNL Manage campaigns]**: read, create, edit, and delete campaigns. </br>**[!DNL Publish campaigns]**: right to publish campaigns.</br>**[!DNL View campaigns]**: read-only access to campaigns. </br>**[!DNL View campaigns report]**: read and edit campaign reports.|
-|Channel configurations|**[!DNL Export suppression list]**: access to export suppression list as a CSV file.</br>**[!DNL Manage alerts]**: enable/disable alerts for campaigns, messages and entitlements.</br> **[!DNL Manage file routing]**:  read, create, edit, and delete file routing configurations. </br> **[!DNL Manage IP pools]**: read, create, edit, and delete ip pool. </br>**[!DNL Manage landing page settings]**: read, create, edit, and delete landing page settings.</br> **[!DNL Manage messages general settings]**: read, create, edit, and delete message general settings.</br>**[!DNL Manage messages presets]**: read, create, edit, and delete content branding.</br>**[!DNL Manage PTR records]**: read and edit PTR records. </br>**[!DNL Manage SMS settings]**: read, create, edit, and delete SMS settings. </br>**[!DNL Manage SMS subdomains]**: read, create, edit, and delete SMS subdomains.</br> **[!DNL Manage Seedlist]**: read, create, edit, and delete Seedlist. </br> **[!DNL Manage subdomains delegation]**: read, create, edit, and delete subdomain delegation. </br>**[!DNL Manage suppression rules]**: access read, create, edit and delete suppression rules.</br> **[!DNL Manage web subdomain]**: read, create, edit, and delete web subdomains. </br>**[!DNL View channel surfaces]**: read-only access to channel surfaces.</br>**[!DNL View file routing]**: read-only access to file routing configurations. </br>**[!DNL View messages general settings]**: read-only access to message general settings.</br> **[!DNL View messages presets]**: read-only access to messages presets. </br> **[!DNL View PTR records]**: read-only access to PTR records.</br>**[!DNL View suppression list]**: read and export local suppression list.|
+|Channel configurations|**[!DNL Export suppression list]**: access to export suppression list as a CSV file.</br>**[!DNL Manage alerts]**: enable/disable alerts for campaigns, messages and entitlements.</br> **[!DNL Manage file routing]**:  read, create, edit, and delete file routing configurations. </br> **[!DNL Manage IP pools]**: read, create, edit, and delete ip pool. </br>**[!DNL Manage Key Registry]**: view, create, rotate, and revoke keys in the key registry.</br>**[!DNL Manage landing page settings]**: read, create, edit, and delete landing page settings.</br> **[!DNL Manage messages general settings]**: read, create, edit, and delete message general settings.</br>**[!DNL Manage messages presets]**: read, create, edit, and delete Channel configurations, API credentials and Webhooks.</br>**[!DNL Manage PTR records]**: read and edit PTR records. </br>**[!DNL Manage SMS settings]**: read, create, edit, and delete SMS settings. </br>**[!DNL Manage SMS subdomains]**: read, create, edit, and delete SMS subdomains.</br> **[!DNL Manage Seedlist]**: read, create, edit, and delete Seedlist. </br> **[!DNL Manage subdomains delegation]**: read, create, edit, and delete subdomain delegation. </br>**[!DNL Manage suppression rules]**: access read, create, edit and delete suppression rules.</br> **[!DNL Manage web subdomain]**: read, create, edit, and delete web subdomains. </br>**[!DNL View file routing]**: read-only access to file routing configurations. </br>**[!DNL View Key Registry]**: read-only access to the key registry listing and key details.</br>**[!DNL View messages general settings]**: read-only access to message general settings.</br> **[!DNL View messages presets]**: read-only access to messages presets. </br> **[!DNL View PTR records]**: read-only access to PTR records.</br>**[!DNL View suppression list]**: read and export local suppression list.|
 |Dashboards| **[!DNL Export dashboard data]**: export dashboard visualizations and underlying data for offline analysis. </br>**[!DNL Manage custom dashboards]**: allows you to create a new dashboard or edit an existing dashboard.</br>**[!DNL Manage standard dashboards]**: allows you to create custom widgets and edit the widget schema through the Widget library.</br>**[!DNL View custom dashboards]**: read-only access to user defined dashboards. </br>**[!DNL View license usage dashboards]**: read-only access to the [license usage dashboard](../audience/license-usage.md). </br>**[!DNL View standard dashboards]**: read-only access to the Profiles, Destinations, and Audiences dashboards.|
 |Data collection|**[!DNL Manage datastream]**: read, create, and edit datastreams.</br>**[!DNL View datastream]**: read-only access to datastreams.|
 |Data governance|**[!DNL Manage usage labels]**: read, create, edit, and delete labels.</br>**[!DNL Manage data usage policies]**: read, create, edit, and delete data usage policies.</br>**[!DNL View data usage policies]**: read-only access for data usage policies belonging to your organization.</br>**[!DNL View privacy console]**: read-only access to privacy requests and privacy-related operations for your organization.</br>**[!DNL View user activity log]**: read-only access to view recorded audit logs of Platform activities.|
@@ -33,7 +72,7 @@ Built-in permissions represent the different permissions that can be assigned to
 |IP warmup configurations|**[!DNL Manage IP warmup plans]**: read, create, and edit IP warmup plans.</br>**[!DNL View IP warmup plans]**: read-only access to IP warmup plans.</br>**[!DNL View IP warmup reports]**: read and edit IP Warmup reports.|
 |Journey Optimizer Library|**[!DNL Manage Library Items]**: add and delete saved expressions in the [!DNL Journey Optimizer] Library.</br>**[!DNL Simulate content]**: access to the Simulate content option for preview and proof.</br>**[!DNL Publish fragments]**: publish content fragments.|
 |Journey Optimizer rules|**[!DNL Manage frequency rules]**: access, create, edit or delete message frequency rules.</br>**[!DNL View frequency rules]**: read-only access to rules.|
-|Journeys|**[!DNL Approve & publish Journeys]**: right to approve and publish journeys when a policy is applied. </br> **[!DNL Manage journeys]**: read, create, edit, stop (live, test mode and dry run) and delete journeys. To access and manage journeys, combine this permission with **[!DNL View journeys events, data sources and actions]**.</br>**[!DNL Manage journeys events, data sources and actions]**: read, create, edit, and delete events, sources or actions.</br>**[!DNL Publish journeys]**: publish, start test mode, start dry run, pause and resume journeys.</br>**[!DNL View journeys]**: read-only access to jouneys.</br>**[!DNL View journeys events, data sources and actions]**: Read-only access to journey events, journey custom actions and journey data sources.</br>**[!DNL View journeys report]**: read and edit journeys report.</br>|
+|Journeys|**[!DNL Approve & publish Journeys]**: right to approve and publish journeys when a policy is applied. </br> **[!DNL Manage journeys]**: read, create, edit, stop (live, test mode and dry run) and delete journeys. To access and manage journeys, combine this permission with **[!DNL View journeys events, data sources and actions]**.</br>**[!DNL Manage journeys events, data sources and actions]**: read, create, edit, and delete events, sources or actions.</br>**[!DNL Simulate Journeys]**: read, create and edit Simulation in Journeys.</br>**[!DNL Publish journeys]**: publish, start test mode, start dry run, pause and resume journeys.</br>**[!DNL View journeys]**: read-only access to jouneys.</br>**[!DNL View journeys events, data sources and actions]**: Read-only access to journey events, journey custom actions and journey data sources.</br>**[!DNL View journeys report]**: read and edit journeys report.</br>|
 |Messages|**[!DNL Manage messages]**: read, create, edit, and delete messages. </br>**[!DNL Manage messages preview and test]**: right to approve and publish messages when a policy is applied.</br>**[!DNL Publish messages]**: right to publish messages.</br>**[!DNL View messages]**: read-only access to messages. </br>**[!DNL View messages report]**: read and edit message reports. |
 |Orchestrated campaigns|**[!DNL Manage orchestrated campaigns]**: read, create, edit, and delete Orchestrated campaigns.</br>**[!DNL Manage orchestrated campaigns admin]**: read, create, edit and delete links and reconciliations between Adobe Experience Platform Profiles and Relational store entities. </br>**[!DNL Publish orchestrated campaigns]**: publish Orchestrated campaigns. This permission is also required to trigger an Orchestrated campaign using a signal. </br>**[!DNL View orchestrated campaigns admin]**: read and edit links and reconciliations between Adobe Experience Platform Profiles and Relational store entities. </br>**[!DNL View orchestrated campaigns]**: read and edit Orchestrated campaigns.</br>**[!DNL View orchestrated campaigns report]**: read and edit Orchestrated campaigns report.|
 |Profile management|**[!DNL Evaluate a segment to an audience]**: generate profiles for an audience by evaluating a segment definition.</br>**[!DNL Export audience segments]**: export an evaluated audience segment to a dataset.</br>**[!DNL Import audience segments]**: import external audience segments into Adobe Experience Platform for use in segmentation and activation.</br>**[!DNL Manage merge policies]**: read, create, edit, and delete merge policies.</br>**[!DNL Manage profiles]**: read, create, edit, and delete datasets that are used for customer profiles. Read-only access to available profiles.</br>**[!DNL Manage segments]**: read, create, edit, and delete audience segment definitions.</br>**[!DNL View merge policies]**: read-only access to available merge policies.</br>**[!DNL View profiles]**: read-only access to available profiles.</br>**[!DNL View segments]**: read-only access to available audiences.|
@@ -44,4 +83,3 @@ Built-in permissions represent the different permissions that can be assigned to
 |Translation service|**[!DNL Manage translation in house]**: read, create, edit, and delete translation in house.</br>**[!DNL Manage translation projects]**: read, create, edit, and delete translation projects.</br> **[!DNL Manage translation reviews]**: read, create, edit, and delete translation reviews.</br>**[!DNL Manage translation settings]**: read, create, edit, and delete translation settings.</br>**[!DNL Manage translation tasks]**: read, create, edit, and delete translation tasks.</br>**[!DNL View translation in house]**: read-only access for translation in house.</br>**[!DNL View translation projects]**: read-only access for translation projects.</br>**[!DNL View translation reviews]**: read-only access for translation reviews.</br>**[!DNL View translation tasks]**: read-only access for translation tasks.|
 
 {style="table-layout:fixed"}
-

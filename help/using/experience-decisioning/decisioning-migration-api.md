@@ -6,6 +6,14 @@ topic: Integrations
 role: Developer
 level: Experienced
 exl-id: 3ec084ca-af9e-4b5e-b66f-ec390328a9d6
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 ---
 # Decisioning Migration API {#decisioning-migration-api}
 
@@ -75,7 +83,7 @@ All API requests require the following headers:
 * `x-gw-ims-org-id: <IMS_ORG_ID>`
 * `Content-Type: application/json`
 
-For detailed instructions on setting up authentication, refer to the [Journey Optimizer authentication guide](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"}.
+For detailed instructions on setting up authentication, refer to the [Journey Optimizer authentication guide](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}.
 
 ### Workflow model {#workflow-model}
 
@@ -114,25 +122,24 @@ Start with a sandbox-level analysis to get a complete view of all dependencies:
 
 ```shell
 curl --request POST \
-  --url "https://decisioning-migration.adobe.io/workflows/generate-dependencies" \
+  --url "https://decisioning-migration.adobe.io/workflows/generate-dependencies?request-level=sandbox" \
   --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
   --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
   --header "Content-Type: application/json" \
   --data '{
     "imsOrgId": "<IMS_ORG_ID>",
     "sourceSandboxDetails": { "sandboxName": "<SOURCE_SANDBOX_NAME>" },
-    "targetSandboxDetails": { "sandboxName": "<TARGET_SANDBOX_NAME>" },
-    "requestLevel": "sandbox"
+    "targetSandboxDetails": { "sandboxName": "<TARGET_SANDBOX_NAME>" }
   }'
 ```
 
 **Offer-level dependency**
 
-To analyze dependencies for specific offers only, set `requestLevel: "offer"` and provide an `offersList` array with the offer IDs you want to analyze.
+To analyze dependencies for specific offers only, call the same endpoint with `request-level=offer` in the query string and provide an `offersList` array in the body with the offer IDs you want to analyze.
 
 **Decision-level dependency**
 
-To analyze dependencies for specific decisions only, set `requestLevel: "decision"` and provide a `decisionsList` array with the decision IDs you want to analyze.
+To analyze dependencies for specific decisions only, use `request-level=decision` in the query string and provide a `decisionsList` array in the body with the decision IDs you want to analyze.
 
 #### Check dependency workflow status {#poll-dependency-status}
 
@@ -180,10 +187,10 @@ To migrate all decisioning objects from one sandbox to another:
 
 ```shell
 curl --request POST \
-  --url "https://decisioning-migration.adobe.io/workflows/migration" \
-  --header "Authorization: Bearer <IMS_ACCESS_TOKEN>" \
-  --header "x-gw-ims-org-id: <IMS_ORG_ID>" \
-  --header "Content-Type: application/json" \
+  --url 'https://decisioning-migration.adobe.io/workflows/migration?request-level=sandbox' \
+  --header 'Authorization: Bearer <IMS_ACCESS_TOKEN>' \
+  --header 'Content-Type: application/json' \
+  --header 'x-gw-ims-org-id: <IMS_ORG_ID>' \
   --data '{
     "imsOrgId": "<IMS_ORG_ID>",
     "sourceSandboxDetails": { "sandboxName": "<SOURCE_SANDBOX_NAME>" },
@@ -203,22 +210,21 @@ curl --request POST \
         "sourceCtx1": "targetCtx1"
       },
       "datasetName": "<TARGET_DATASET_NAME>"
-    },
-    "requestLevel": "sandbox"
+    }
   }'
 ```
 
 **Offer-level migration**
 
-To migrate specific offers only, use `requestLevel: "offer"` and add an `offersList` array:
+To migrate specific offers only, use `request-level=offer` in the query string and add an `offersList` array to the body:
 
 ```json
 "offersList": ["offer-id-1", "offer-id-2"]
 ```
-
+ 
 **Decision-level migration**
 
-To migrate specific decisions only, use `requestLevel: "decision"` and add a `decisionsList` array:
+To migrate specific decisions only, use `request-level=decision` in the query string and add a `decisionsList` array to the body:
 
 ```json
 "decisionsList": ["decision-id-1", "decision-id-2"]
@@ -350,13 +356,15 @@ When migrating from Decision management to Decisioning, entities are mapped as f
 
 ## Workflow cleanup {#cleanup}
 
-<!--Workflow resources can be deleted by service users only. Delete operations require an `If-Match` header with the workflow's `_etag` value.
+<!--
+Workflow resources can be deleted by service users only. Delete operations require an `If-Match` header with the workflow's `_etag` value.
 
 **Available delete operations:**
 
 * `DELETE /workflows/generate-dependencies/{id}`
 * `DELETE /workflows/migration/{id}`
-* `DELETE /workflows/rollback/{id}`-->
+* `DELETE /workflows/rollback/{id}`
+-->
 
 Workflow deletion is not publicly available. If you need to delete a workflow resource, contact your system administrator.
 

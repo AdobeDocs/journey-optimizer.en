@@ -7,6 +7,27 @@ role: User
 level: Intermediate
 exl-id: 033a11b8-c848-4e4a-b6f0-62fa0a2152bf
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/yfeFpaNi0rYVeyXdzaZ7SfoZnu-BkyivCMDzED7dpsM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Build rules {#rules}
 
@@ -46,8 +67,8 @@ Many times, they are a combination of multiple attributes, in addition to custom
 
 You can use these rules either:
 
-* When creating [content optimization targeting](../content-management/optimization-targeting.md) in journeys or campaigns;
-* When building [journey path optimization](../building-journeys/optimize.md#targeting).
+* When creating [content optimization targeting](../building-journeys/path-targeting.md) in journeys or campaigns;
+* When building [journey path optimization](../building-journeys/path-targeting.md).
 
 ➡️ [Discover this feature in video](#video)
 
@@ -84,7 +105,7 @@ To create a rule, follow these steps:
     ![](assets/rules-select-entity.png){width=90%}
 
     * **[!UICONTROL Decision item]** - The rule can be applied on a [decision item](#decision-rules) in the context of Decisioning;
-    * **[!UICONTROL Targeting]** - The rule can be used when building [targeting](#targeting-rules) rules, either as part of [content optimization](../content-management/optimization-targeting.md) in a campaign or a journey, either in the [Optimize journey activity](../building-journeys/optimize.md#targeting).
+    * **[!UICONTROL Targeting]** - The rule can be used when building [targeting](#targeting-rules) rules, either as part of [content optimization](../building-journeys/path-targeting.md) in a campaign or a journey, either in the [Optimize journey activity](../building-journeys/path-targeting.md).
 
 1. If you create a **[!UICONTROL Decision item]** rule, you can select **[!UICONTROL Enable dataset lookup]** to use data from Adobe Experience Platform to enrich your decision logic with external data. This is especially useful for attributes that frequently change, such as product availability, or real-time pricing. [Learn how to use Adobe Experience Platform data for decisioning](../experience-decisioning/aep-data-exd.md)
 
@@ -122,6 +143,28 @@ To create a rule, follow these steps:
 >A rule string can be up to 15KB in size for UTF-8 encoded characters. This is equivalent to 15,000 ASCII characters (1 byte each), or 3,750–7,500 non-ASCII characters (2–4 bytes each).
 >
 >[Learn more about Eligibility rules Guardrails & limitations](decisioning-guardrails.md#eligibility-rules)
+
+## AI-powered rule optimization {#optimize}
+
+[!DNL Journey Optimizer] can automatically analyze rules and suggest simplifications that preserve the original logic. Only rules whose PQL expression is larger than **2 KB** (UTF-8 encoded) are eligible, smaller expressions are not analyzed. When a simplification is found, a red **[!UICONTROL Optimize]** indicator appears next to the rule in the inventory.
+
+>[!NOTE]
+>
+>AI-powered rule optimization relies on the same generative AI capabilities as **AI Assistant**, and uses the same access controls. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. For details, refer to [Access AI Assistant](../content-management/gs-generative.md#generative-access).
+
+![](assets/decision-rules-ai.png)
+
+To optimize a rule:
+
+1. In the rules inventory, click the red indicator icon next to the rule name.
+
+1. The **[!UICONTROL Optimize]** window opens, displaying the original PQL expression alongside the AI-suggested version.
+
+    ![](assets/decision-rules-ai-details.png)
+
+1. To validate that both expressions behave identically, click **[!UICONTROL Download Optimisation Analysis (TSV)]** to download a file showing how simulated profiles are evaluated against each version.
+
+1. Once satisfied, click **[!UICONTROL Apply]** to replace the original expression with the optimized one.
 
 ## How-to video {#video}
 

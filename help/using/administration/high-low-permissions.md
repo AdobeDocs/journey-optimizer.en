@@ -9,6 +9,28 @@ role: Admin, Developer
 level: Experienced
 keywords: permission, high-level, low-level, profile, admin console
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
+TQID: https://experienceleague.adobe.com/JmWqA2lkS0vWlssVYWycq-gvC6IRrrmAokJj1AGINxc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+subfeature_v2:
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Permission levels {#high-low-permissions}
 
@@ -170,9 +192,12 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
       * campaign.read
       * campaign.write
       * campaign.delete
-      <!--* experiments.read
+      <!--
+      * experiments.read
       * experiments.write
-      * experiments.delete-->
+      * experiments.delete
+      
+-->
 
   +++
 
@@ -184,7 +209,9 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
       * campaign-read
       * campaign-publish
-      <!--* experiments.activate-->
+      <!--
+      * experiments.activate    
+      -->
 
   +++
 
@@ -195,8 +222,10 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
     * Journey Optimizer specific:
       * campaign.read
       * campaign-report.read
-      <!--* experiments.read
-      * experiments_report.read-->
+      <!--
+      * experiments.read
+      * experiments_report.read
+      -->
 
   +++
 
@@ -326,6 +355,16 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
+* **[!DNL Manage key registry]** high-level permission allows users to view, create, rotate, and revoke keys in the key registry.
+
+  +++ This permission includes the following low-level permissions:  
+
+  * Journey Optimizer specific: 
+    * key-registry.read
+    * key-registry.write
+
+  +++
+
 * **[!DNL Manage landing page settings]** high-level permission allows users to read, create and edit landing page subdomains and preset settings.
 
   +++ This permission includes the following low-level permissions: 
@@ -382,7 +421,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
-* **[!DNL Manage Seedlist]** high-level permission allows users to read, create, edit and delete Seedlist.
+* **[!DNL Manage seed lists]** high-level permission allows users to read, create, edit and delete seed lists.
 
   +++ This permission includes the following low-level permissions: 
 
@@ -433,6 +472,15 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
   * Journey Optimizer specific: 
 
     * file_routing.read
+
+  +++
+
+* **[!DNL View key registry]** high-level permission allows users to view the key registry listing and key details.
+
+  +++ This permission includes the following low-level permissions:  
+
+  * Journey Optimizer specific: 
+    * key-registry.read
 
   +++
 
@@ -637,3 +685,4 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
       * queries.delete
 
   +++
+

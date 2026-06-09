@@ -6,6 +6,20 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: 8674ef9e-261b-49d9-800e-367f9f7ef979
+TQID: https://experienceleague.adobe.com/idwoj9f3zFS64ifjzcSASPaUQTaNYtyS-HI6c3-7AI0
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+subfeature_v2: []
 ---
 # String Functions {#string}
 
@@ -227,7 +241,7 @@ The following query determines, with case sensitivity, if the person's name is "
 
 ```
 
-## Equals Ignore Case{#equalsIgnoreCase}
+## Equals ignore case{#equalsIgnoreCase}
 
 The `equalsIgnoreCase` function is used to determine if a string is equal to the specified string, without case sensitivity.
 
@@ -383,7 +397,7 @@ The following function returns 'true' if the profile's mobile phone number is em
 {%= isEmpty(profile.mobilePhone.number) %}
 ```
 
-## Is Not Empty {#is-not-empty}
+## Is not empty {#is-not-empty}
 
 The `isNotEmpty` function is used to determine if a string is not empty.
 
@@ -572,7 +586,7 @@ The following query determines, with case sensitivity, if the person's name is n
 {%= notEqualTo(profile.person.name,"John") %}
 ```
 
-## Not Equal With Ignore Case {#not-equal-with-ignore-case}
+## Not equal with ignore case {#not-equal-with-ignore-case}
 
 The `notEqualWithIgnoreCase` function is used to compare two strings ignoring case.
 
@@ -659,6 +673,30 @@ The `replaceAll` function is used to replace all substrings of a text that match
 > 
 > Learn more in [Oracle documentation](https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html){_blank}.
 >
+
++++Example — Basic replacement
+
+```sql
+{%= replaceAll("Hello World","World","AJO") %}
+```
+
+Returns `Hello AJO`.
+
++++
+
++++Real-world example — Variable reassignment after replaceAll
+
+`replaceAll` returns a new string but does not modify the original value. To reuse the cleaned string multiple times, assign the result to a variable using `{% let %}`:
+
+```handlebars
+{% let cleanName = replaceAll(profile.person.name.firstName, "[^a-zA-Z]", "") %}
+Hello {{cleanName}}, your personalized offer is ready.
+Your code: WELCOME-{%= upperCase(cleanName) %}
+```
+
+The `{% let %}` assignment stores the result of `replaceAll` so it can be referenced as `{{cleanName}}` without calling the function again. This is the correct pattern — chaining `replaceAll` inside itself or trying to reassign to the same profile variable is not supported.
+
++++
 
 ## Right trim {#rightTrim}
 
@@ -797,7 +835,7 @@ The `toBool` function is used to convert an argument value into a boolean value,
 {= toBool(string) %}: boolean
 ```
 
-## To Date Time {#to-date-time}
+## To date time {#to-date-time}
 
 The `toDateTime` function is used to convert string to date. It returns the epoch date as output for invalid input.
 
@@ -807,7 +845,7 @@ The `toDateTime` function is used to convert string to date. It returns the epoc
 {%= toDateTime(string, string) %}: date-time
 ```
 
-## To Date Time Only {#to-date-time-only}
+## To date time only {#to-date-time-only}
 
 The `toDateTimeOnly` function is used to convert an argument value into a date time only value. It returns the epoch date as output for invalid input. This function accepts string, date, long and int field types.
 

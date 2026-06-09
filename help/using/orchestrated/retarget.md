@@ -6,6 +6,10 @@ description: Learn how to start and monitor Orchestrated campaigns with Adobe Jo
 feature: Monitoring
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
 version: Campaign Orchestration
+feature_v2:
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 
 # Building retargeting queries {#retarget}
@@ -20,7 +24,7 @@ Retargeting allows you to follow up with recipients based on how they responded 
 ![](assets/do-not-localize/retarget-schema.png){zoomable="yes"}
 
 
-## Create a Feedback-based Retargeting Rule {#feedback-retarget}
+## Create a feedback-based retargeting rule {#feedback-retarget}
 
 Feedback-based Retargeting Rule allows you to retarget recipients based on message delivery events captured in the **[!UICONTROL Message Feedback]** schema. These events include outcomes such as messages being sent, opened, bounced, or marked as spam.
 

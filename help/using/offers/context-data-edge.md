@@ -9,8 +9,30 @@ role: Developer
 level: Experienced
 exl-id: c9e14d4d-f2e2-43f9-b1c5-4b005ce858ad
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/uUlnfdFBE4-6tCklMD-ZwpyVI75hMgSoFftS8n-cC1Y
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-# Context data & Edge Decisioning requests {#edge}
+# Context data & edge decisioning requests {#edge}
 
 >[!TIP]
 >
@@ -36,7 +58,7 @@ To go further, you can also leverage context data into **ranking formulas**, or 
 
 >[!ENDSHADEBOX]
 
-## Prerequisites to pass context data in Edge Decisioning requests {#prerequisites}
+## Prerequisites to pass context data in edge decisioning requests {#prerequisites}
 
 Unlike passing context in a free format using the Decisioning API, the Edge Decisioning context requires XDM compliance. The context payload needs to be XDM Experience Event compliant. To do this, the context needs to be defined as part of the 'XDM Experience Event' that is used for data collection.
 
@@ -126,7 +148,7 @@ Create a new decision that leverages the Offer Decision Engine to pick the best 
 >
 >To go further, you can leverage context data into ranking formulas and assign them to your decision. ADD INFORMATION
 
-## Pass context data in the Edge Decisioning request {#request}
+## Pass context data in the edge decisioning request {#request}
 
 ### Endpoint
 

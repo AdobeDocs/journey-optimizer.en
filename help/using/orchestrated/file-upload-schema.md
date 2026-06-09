@@ -5,8 +5,20 @@ title: Configuration steps
 description: Learn how to create a relational schema within Adobe Experience Platform by uploading a DDL
 exl-id: 88eb1438-0fe5-4a19-bfb6-2968a427e9e8
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/0ffs03Mz3RCUtHmd66tQxonSm-P7tB5WMmKjVXsAi0g
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
-
 # Create relational schemas using a DDL file {#file-upload-schema}
 
 Define the relational data model required for Orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities such as **Recipients** or **Brands**. 
@@ -34,7 +46,8 @@ Excel-based schema file uploads are supported. Download the [provided template](
 +++The following features are supported when creating relational schemas in Adobe Experience Platform
 
 * **ENUM**  
-  ENUM fields are supported in both DDL-based and manual schema creation, allowing you to define attributes with a fixed set of allowed values.
+  ENUM fields are supported in both DDL-based and manual schema creation. When loading a schema from a DDL file, enumerations defined in the file are automatically imported, allowing you to define attributes with a fixed set of allowed values.
+
     Here is an example: 
 
     ```
@@ -48,6 +61,12 @@ Excel-based schema file uploads are supported. Download the [provided template](
     PRIMARY KEY (order_id, product_id)
     );
     ```
+
+* **Composite Key** and **Composite Relationships**  
+
+  Composite primary keys spanning multiple fields are supported in relational schema definitions, enabling the use of multiple fields together to uniquely identify records.
+
+  When loading a schema from a DDL or Excel file, composite relationships between tables are created automatically. In the entity relationship view, each composite link displays the full set of field pairings between the linked tables.
 
 * **Schema Label for Data Governance**  
   Labeling is supported at the schema field level to enforce data governance policies such as access control and usage restrictions. For more details, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
@@ -108,7 +127,7 @@ You can specify relationships directly within the DDL file when creating your sc
 
     >[!NOTE]
     >
-    >Composite keys are supported if defined in the DDL file.
+    >Composite keys spanning multiple fields are supported when defined in the DDL file. When loading from a DDL or Excel file, composite relationships between tables are created automatically. In the entity relationship view, composite links display the full set of field pairings between the linked tables.
 
     ![](assets/admin_schema_5.png)
 

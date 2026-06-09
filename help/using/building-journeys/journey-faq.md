@@ -10,8 +10,55 @@ level: Beginner, Intermediate
 keywords: journey, questions, answers, troubleshoot, help, guide, orchestration
 version: Journey Orchestration
 exl-id: cac9fc24-b78e-48d9-9c0c-f43181246f6f
+TQID: https://experienceleague.adobe.com/dsBz1iD4BaSxE-bDie1jMSABvjDN6arPcaspgMSXYhU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: addf009e-030a-4310-8534-776a3e62ed48
+    internal-label: Customer lifecycle
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+    internal-label: Web experience
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
-# Journey Orchestration - Frequently Asked Questions {#faq-journeys}
+# Journey orchestration - frequently asked questions {#faq-journeys}
 
 Find answers to common questions about Journey Orchestration in [!DNL Adobe Journey Optimizer].
 
@@ -59,7 +106,7 @@ Learn more about [journey types](entry-management.md#types-of-journeys).
 A journey consists of:
 
 * **Events**: Entry points that trigger the journey (e.g., profile qualification, business events)
-* **Orchestration activities**: Logic components like conditions, wait, read audience, and end
+* **Orchestration activities**: Logic components like conditions, wait, read audience, journey fragments, and end
 * **Actions**: Activities that perform tasks, such as sending messages, updating profiles, or calling external APIs
 * **Built-in channel actions**: Native messaging capabilities for email, SMS, push, and other channels
 * **Custom actions**: Integration with third-party systems
@@ -213,7 +260,7 @@ You can add conditions using the **Condition activity** from the orchestration p
 * Split the journey into multiple paths based on profile attributes, audience membership, events, or contextual data
 * Define timeout paths for profiles that don't meet the condition within a specified time
 
-Learn more about [conditions](condition-activity.md).
+Learn more about [conditions](conditions.md).
 
 +++
 
@@ -311,7 +358,7 @@ Use a **Condition activity** with audience membership or profile attributes:
    * **Path 3**: New customers (total purchases < $100)
 3. Add different messages or offers for each path
 
-Learn more about [conditions](condition-activity.md) and [audience qualification](audience-qualification-events.md).
+Learn more about [conditions](optimize.md#conditions) and [audience qualification](audience-qualification-events.md).
 
 +++
 
@@ -346,6 +393,29 @@ Learn more about [timezone management](timezone-management.md).
 **Tip**: Use journey capping rules to limit the total number of messages a customer receives across all journeys.
 
 Learn more about [wait activities](wait-activity.md) and [journey capping](../conflict-prioritization/journey-capping.md).
+
++++
+
++++ What are Journey Fragments and when should I use them?
+
+**Journey Fragments** are reusable sets of journey nodes that you build once and insert into any journey across your sandbox. They are available as an orchestration activity in the journey canvas.
+
+**When to use Journey Fragments**:
+
+* You have logic that repeats across multiple journeys (e.g., eligibility checks, preferred channel routing, welcome sequences)
+* You want to enforce consistency across teams — define the pattern once, reuse it everywhere
+* You want to speed up journey creation by avoiding rebuilding common node sequences from scratch
+
+**Key behaviors to be aware of**:
+
+* Inserting a fragment creates a **static copy** of its nodes — updates to the original fragment are **not** propagated to journeys that already use it
+* Only **Active** fragments can be inserted into a journey
+* Fragments are sandox-scoped and support a maximum of 20 nodes and 200 active fragments per sandbox
+* [Jump](jump.md) activities are not allowed inside a fragment
+
+**Difference from the Jump activity**: The [Jump activity](jump.md) redirects profiles to another live journey at runtime. Journey Fragments copy nodes into the current journey at design time — they are a build-time reuse mechanism, not a runtime routing mechanism.
+
+Learn more about [Journey Fragments](journey-fragments.md).
 
 +++
 
@@ -547,9 +617,11 @@ Learn more about [journey live reporting](report-journey.md).
 * **Journey not published**: The journey is still in draft mode
   Solution: Publish the journey to activate it
   
- <!-- 
-* **Message not approved**: Message content requires approval before sending
-  Solution: Submit for approval or check approval status-->
+  <!--
+ 
+  * **Message not approved**: Message content requires approval before sending
+  Solution: Submit for approval or check approval status
+  -->
   
 * **Channel configuration issue**: Email/SMS configuration is incorrect
   Solution: Verify channel configurations and authentication
@@ -582,13 +654,13 @@ Learn more about [personalization](../personalization/personalize.md).
 
 +++ Can I send different messages based on preferred channel?
 
-Yes. Use a **[Condition activity](condition-activity.md)** to route profiles based on their preferred channel:
+Yes. Use an **[Optimize activity](conditions.md)** to route profiles based on their preferred channel:
 
-1. Add a [Condition activity](condition-activity.md) in your journey
+1. Add an [Optimize activity](optimize.md) in your journey
 2. Create a path for each channel by checking the preferred channel profile attribute (e.g., `profile.preferredChannel`)
 3. Configure channel-specific paths:
    * **Email path**: Add an [email action](../email/create-email.md) with email-optimized content
-   * **SMS path**: Add an [SMS action](../sms/create-sms.md) with concise messaging
+   * **SMS path**: Add an [SMS action](../mobile/create-mobile-message.md) with concise messaging
    * **Push path**: Add a [push notification action](../push/create-push.md) with short, actionable content
    * **In-app path**: Add an [in-app message action](../in-app/create-in-app.md) for engaged app users
 4. Add a default path for profiles without a preference, routing them to your primary channel
@@ -600,7 +672,7 @@ Yes. Use a **[Condition activity](condition-activity.md)** to route profiles bas
 * Use [channel surfaces](../configuration/channel-surfaces.md) to manage channel configurations
 * Test all paths to ensure proper message delivery
 
-Learn more about [conditions](condition-activity.md), [message actions](journey-action.md), and [channel selection](../channels/gs-channels.md).
+Learn more about [conditions](conditions.md), [message actions](journey-action.md), and [channel selection](../channels/gs-channels.md).
 
 +++
 
@@ -616,7 +688,7 @@ Yes, there are several ways to exclude customers:
 
 **Within the journey**:
 
-* Add a [Condition activity](condition-activity.md) early in the journey to exit unwanted profiles
+* Add an [Optimize activity](conditions.md) early in the journey to exit unwanted profiles
 * Check for exclusion attributes (e.g., VIP status, test accounts)
 * Use [audience qualification](audience-qualification-events.md) to identify profiles to exclude
 
@@ -832,7 +904,7 @@ Learn more about [merge policies](../audience/get-started-profiles.md) and [iden
 * Wait for a period, then use a Condition to check if something happened during the wait
 * Example: Wait 7 days, then check if customer made a purchase
 
-Learn more about [conditions](condition-activity.md) and [wait activities](wait-activity.md).
+Learn more about [conditions](optimize.md#conditions) and [wait activities](wait-activity.md).
 
 +++
 
@@ -896,8 +968,8 @@ As journeys approach 50 activities, they can become very complex and difficult t
 
 **Best practice**: Keep your journeys focused and manageable. If your journey is becoming complex, consider:
 
-* Breaking it into multiple journeys using the Jump activity
-* Creating reusable patterns across simpler journeys
+* Breaking it into multiple journeys using the [Jump activity](jump.md)
+* Extracting repeated logic into [Journey Fragments](journey-fragments.md) to reuse across journeys without rebuilding from scratch
 * Simplifying logic with more efficient conditions
 * Reviewing if all activities are necessary
 
@@ -912,7 +984,7 @@ Learn more about [journey design](using-the-journey-designer.md) and [guardrails
 * Use [audience-based entry](read-audience.md) for batch communications instead of individual events
 * Implement appropriate [wait times](wait-activity.md) to spread message volume
 * Leverage [capping rules](../conflict-prioritization/journey-capping.md) to prevent system overload
-* Optimize [condition logic](condition-activity.md) to reduce processing complexity
+* Optimize [condition logic](conditions.md) to reduce processing complexity
 
 **Monitoring**:
 

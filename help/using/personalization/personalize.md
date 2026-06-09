@@ -9,6 +9,14 @@ role: Developer
 level: Beginner
 keywords: expression, editor, start, personalization
 exl-id: f448780b-91bc-455e-bf10-9a9aee0a0b24
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: a757b957-83f3-4a4d-9775-a93854f84f77
+    internal-label: Conditional instruction
+  - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
+    internal-label: Main functions
 ---
 # Get started with personalization{#add-personalization}
 
@@ -25,9 +33,7 @@ Using the **personalization editor**, you can select, arrange, customize and val
 
 Journey Optimizer employs an inline personalization syntax based on Handlebars which allows you to create expressions with contents enclosed by double curly braces **`{{}}`**.
 
-When processing the message, Journey Optimizer replaces the expression with the data contained in the Experience Platform dataset. For example, `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` dynamically becomes `Hello John Doe`.
-
-Using this syntax, you can personalize messages across multiple fields, including email subject lines, message bodies, push notifications, or URLs. 
+When processing the message, Journey Optimizer replaces the expression with the data contained in the Experience Platform dataset. For example, `Hello {{profile.person.name.firstName}} {{profile.person.name.lastName}}` dynamically becomes `Hello John Doe`. Using this syntax, you can personalize messages across multiple fields, including email subject lines, message bodies, push notifications, or URLs.
 
 ## Data used for personalization
 
@@ -46,6 +52,26 @@ This playground provides a simulated environment to write and test personalizati
 ![personalization playground](assets/playground.png)
 
 ➡️ [Access the personalization playground](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
+
+## AI assistant for personalization expressions {#ai-personalization-expressions}
+
+In the **[!UICONTROL Personalization Editor]** or from the Email Designer toolbar (**[!UICONTROL Add expression]**), **[!UICONTROL AI Assistant]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
+
+![](../content-management/assets/ai-perso-generate.png)
+
+➡️ [Learn how to work with AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
+
+## Inline editing of profile attributes {#inline-personalization}
+
+You can insert profile attribute expressions directly while editing content in the **Email Designer** or the **Push channel** editor, without opening the full personalization editor.
+
+To do so, follow these steps:
+
+1. Type `{{` in any text field. An inline autocomplete dropdown opens at the cursor position.
+1. Start typing to filter available profile attributes.
+1. Select the attribute you need — it is inserted as a personalization token at the cursor position.
+
+![](assets/inline-profile-attributes.png)
 
 ## Let's dive deeper
 
@@ -75,6 +101,14 @@ Now that you have an understanding of personalization in **[!DNL Journey Optimiz
 </a>
 <div>
 <a href="../personalization/functions/functions.md"><strong>Helper functions list</strong></a>
+</div>
+<p></td>
+<td>
+<a href="../personalization/personalization-recipes.md">
+<img alt="Infrequent" src="assets/do-not-localize/uc.png">
+</a>
+<div>
+<a href="../personalization/personalization-recipes.md"><strong>Personalization recipes</strong></a>
 </div>
 <p></td>
 <td>

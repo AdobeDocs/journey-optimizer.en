@@ -9,6 +9,36 @@ role: Developer, Admin
 level: Experienced
 keywords: dataset, optimizer, use cases
 exl-id: 26ba8093-8b6d-4ba7-becf-b41c9a06e1e8
+TQID: https://experienceleague.adobe.com/bbZLNKJ3wg--z3PcVQ4tTvMtuyR7LMsh7qJjrlZ6L7Y
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
+    internal-label: Journey Optimizer schemas
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
+  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
+    internal-label: Data ingestions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
 ---
 # Query examples {#query-examples}
 
@@ -27,7 +57,7 @@ To view the complete list of fields and attributes for each schema, consult the 
 See also several commonly used [examples to query Journey Step Events](../reports/query-examples.md). 
 
 
-## Email Tracking Experience Event Dataset{#email-tracking-experience-event-dataset}
+## Email tracking Experience event dataset{#email-tracking-experience-event-dataset}
 
 _Name in the interface : AJO Email Tracking Experience Event Dataset_
 
@@ -67,7 +97,7 @@ order by
 limit 100;
 ```
 
-## Message Feedback Event Dataset{#message-feedback-event-dataset}
+## Message feedback event dataset{#message-feedback-event-dataset}
 
 _Name in the interface: AJO Message Feedback Event Dataset_
 
@@ -177,7 +207,7 @@ Once identified, remove those addresses from Journey Optimizer suppression list.
 
 
 
-## Push Tracking Experience Event Dataset {#push-tracking-experience-event-dataset}
+## Push tracking Experience event dataset {#push-tracking-experience-event-dataset}
 
 _Name in the interface: AJO Push Tracking Experience Event Dataset_
 
@@ -195,7 +225,7 @@ select  _experience.customerJourneyManagement.pushChannelContext.platform, SUM (
   group by _experience.customerJourneyManagement.pushChannelContext.platform
 ```
 
-## Journey Step Event{#journey-step-event}
+## Journey step event{#journey-step-event}
 
 _Internal name: Journey Step Events (system dataset)_
 
@@ -268,7 +298,7 @@ See also several commonly used [examples to query Journey Step Events](../report
 
 Learn how to [troubleshoot discarded event types in journey_step_events](../reports/sharing-field-list.md#discarded-events).
 
-## Decisioning Event Dataset{#ode-decisionevents}
+## Decisioning event dataset{#ode-decisionevents}
 
 _Name in the interface: ODE DecisionEvents (system dataset)_
 
@@ -299,7 +329,7 @@ group by proposedOffers.id, proposedOffers.name, po._experience.decisioning.rank
 ```
 
 <!--
-## Consent Service Dataset{#consent-service-dataset}
+## Consent service dataset{#consent-service-dataset}
 
 _Name in the interface: CJM Consent Service Dataset (system dataset)_
 

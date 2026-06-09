@@ -8,6 +8,45 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 681532f8-1149-465e-92c8-2b5366abc3aa
+TQID: https://experienceleague.adobe.com/RqIzgHdwFqBmYLPKbMkAvscFopYMF-lt2gY4Vl34GKA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
+    internal-label: Overview
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Navigate the interface {#user-interface}
 
@@ -33,7 +72,7 @@ The Journey Optimizer interface consists of four main areas:
 
 ## Top bar features {#top-bar}
 
-### Universal search {#search}
+### Universal search {#universal-search}
 
 Use the search icon to quickly find journeys, campaigns, assets, and other objects across Journey Optimizer. Type keywords to see relevant results from all areas of the platform. [Learn more about universal search](search-filter-categorize.md#unified-search).
 
@@ -334,26 +373,42 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
 
 >[!CONTEXTUALHELP]
->id="ajo_orchestration_incrementalquery"
->title="Incremental query"
->abstract="The Incremental query is a Targeting activity that runs a database query every time the Orchestrated campaign runs. It returns only new records and excludes anyone already included in a previous run, so you avoid re-targeting the same people or re-exporting the same rows."
+>id="ajo_admin_aem_content_fragment_configuration"
+>title=""AEM Configuration Help"
+>abstract="Learn more about creating and managing a configuration"
 
 >[!CONTEXTUALHELP]
->id="ajo_orchestration_incrementalquery_processeddata"
->title="Processed data"
->abstract="Under Processed data, choose how to exclude records from earlier runs. With Exclude results of previous execution, the activity keeps a list of records returned in prior runs; each run excludes those and returns only new ones. With the Use a date field option, the activity uses a selected date field instead of tracking individual IDs, and each run returns only rows whose date is after the last execution."
+>id="ajo_admin_aem_configure_instance"
+>title="Instance Configuration"
+>abstract="Select the appropriate instance configuration type for your setup. </br>Author only setup: Use content fragments from the AEM author instance. Publish instance configuration and live updates are not supported.</br>Publish instance setup: Configure publish instance settings. Optionally enable "Send token to publish instance" to provide Service Credentials for authentication."
 
 >[!CONTEXTUALHELP]
->id="ajo_orchestration_incrementalquery_history"
->title="History in days"
->abstract="This setting controls how long that list is retained. A value of 0 means indefinite retention; no records are removed."
+>id="ajo_admin_aem_send_token"
+>title="Send token to publish instance"
+>abstract="When enabled, Service Credentials are sent to authenticate requests to the publish instance. Provide a valid Service Credential JSON below."
 
 >[!CONTEXTUALHELP]
->id="ajo_inbox_location"
->title="Location on page"
->abstract="."
+>id="ajo_admin_aem_service_credential"
+>title="Paste Service Credential JSON"
+>abstract="Paste your AEM service credential JSON after creating them by going through the public technical account documentation. It will be automatically formatted and validated."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#create-a-technical-account"
 
 >[!CONTEXTUALHELP]
->id="ajo_inbox_app_id"
->title="App ID"
->abstract="."
+>id="ajo_admin_aem_custom_domain"
+>title="Custom domain"
+>abstract="Optional. Provide a custom domain ifpublish-p16552-e147195.adobeaemcloud.comis blocked from fetching content for your org"
+
+<!-- JOURNEYS - EXPRESSION ASSISTANT -->
+
+>[!CONTEXTUALHELP]
+>id="journeyExpAI"
+>title="Expression Assistant"
+>abstract="Use Expression Assistant to generate and refine expressions in Journey Optimizer."
+
+
+<!-- OC - LOAD FILE ACTIVITY -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_load_file"
+>title="Load file activity"
+>abstract="The **Load file** activity is a **Targeting** activity. Use it to upload a CSV or TXT file on the Orchestrated campaign canvas and use it as the campaign audience. File data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. Rows are reconciled to existing recipients using an identity column and a targeting dimension."

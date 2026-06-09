@@ -10,6 +10,8 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: waves, batches, schedule, journey, read audience, deliverability
 exl-id: 1aaff17f-aa08-4f10-903c-8335a86ac6eb
+feature_v2: []
+subfeature_v2: []
 ---
 # Send using waves in journeys {#send-using-waves-journeys}
 
@@ -18,7 +20,8 @@ You can deliver outbound messages from a journey in batches (waves) over time in
 <!--
 >[!CAUTION]
 >
->Wave sending is available for read audience journeys only and applies to **outbound** actions only (Email, SMS, Push, Direct mail).-->
+>Wave sending is available for read audience journeys only and applies to **outbound** actions only (Email, SMS, Push, Direct mail).
+-->
 
 You configure it at the journey level when you define how the audience enters and how actions are scheduled. You define the number of waves, their size (as a percentage of the audience or as absolute numbers), and when each wave runs.
 

@@ -9,6 +9,14 @@ role: User
 level: Intermediate
 version: Journey Orchestration
 exl-id: 90e71c42-94f3-4cc5-bd6e-1df29def4d39
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 ---
 # Monitor your AI models {#ai-model-observability}
 
@@ -98,7 +106,7 @@ To view error details for a personalized optimization AI model whose last traini
 
 1. You can check which dataset is selected in the model's **[!UICONTROL Properties]**. Click **[!UICONTROL Edit properties]** to select another dataset. [Learn more](create-ai-models.md)
 
-    ![](../assets/ai-model-properties-edit-dataset.png){align="left" width="45%"}
+    ![](../assets/ai-model-properties-edit-dataset.png){align="center" width="45%"}
 
 ## Frequently asked questions {#faq}
 
@@ -154,7 +162,8 @@ Typically, online measures of model quality, such as lift and lift significance,
 * **In progress** – A training job is running. Some metrics may be temporarily unavailable until it finishes.
 * **Pending** – No result yet (for example, model recently activated or settings recently changed).
 
-If no model has been successfully deployed yet, the "currently deployed model" section and some performance fields will be empty or show the initial-state messaging.-->
+If no model has been successfully deployed yet, the "currently deployed model" section and some performance fields will be empty or show the initial-state messaging.
+-->
 
 ## How-to video {#video}
 

@@ -10,6 +10,37 @@ level: Intermediate, Experienced
 keywords: use case, multi-channel, messages, journey, channel, events, push
 exl-id: a1bbfcee-2235-4820-a391-d5d35f499cb0
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/o4-7bKdQzB3Yyz22khT4RHNpNvKL0sCg8YPPnaeav9I
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
+  - id: e57d1da4-32c2-4cc6-945c-9feb219156ff
+    internal-label: Event activities
+  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
+    internal-label: Reaction events
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Send multi-channel messages {#send-multi-channel-messages}
 
@@ -101,3 +132,38 @@ The event is now configured and ready to be used in the journey. Using the corre
 1. Use the **Test** toggle, located in the top right corner, to activate the test mode. Refer to this [section](testing-the-journey.md) to learn how to use the test mode.
 
 1. When the journey is ready, publish it using the **Publish** button, located in the top right corner.
+
+## Multi-phase loyalty journey {#multi-phase-loyalty}
+
+This example illustrates a key journey architecture pattern: decomposing a complex, multi-phase journey into smaller, focused sub-journeys connected with the [**[!UICONTROL Jump]**](jump.md) activity. A loyalty program serves as the scenario, but this pattern applies to any journey that spans multiple milestones or business phases.
+
+Complex multi-phase journeys quickly generate a large number of unique customer paths. Decomposing them into one sub-journey per phase keeps each journey manageable, testable, and independently maintainable.
+
+### Scenario
+
+Consider a loyalty program that guides customers through three milestones using two marketing channels ([email](../email/create-email.md) and [push](../push/create-push.md)):
+
+1. **Phase 1 — Download the mobile app:** Initial communications encourage new loyalty members to download the app. A follow-up reminder is sent if the customer has not acted within a set period.
+1. **Phase 2 — Make a first transaction:** Once the app is downloaded, targeted messages guide customers toward completing their first loyalty transaction.
+1. **Phase 3 — Make a second transaction:** After the first transaction, a final set of communications drives a second transaction to deepen loyalty engagement.
+
+Even with this straightforward strategy, this journey exposes more than 20 unique paths a customer can take. Complexity grows exponentially with each additional touchpoint or channel.
+
+### Sub-journey decomposition
+
+Break the end-to-end journey into three smaller, connected sub-journeys:
+
+| Sub-journey | Entry condition | Business objective |
+|---|---|---|
+| Phase 1 — App download | Customer joins the loyalty program | Drive mobile app download |
+| Phase 2 — First transaction | Customer downloads the app | Drive first loyalty transaction |
+| Phase 3 — Second transaction | Customer completes first transaction | Drive second loyalty transaction |
+
+Connect the sub-journeys using the [**[!UICONTROL Jump]**](jump.md) activity so that profiles pass seamlessly from one phase to the next. Each sub-journey remains simple, readable, and independently maintainable.
+
+<!--
+>[!NOTE]
+>
+>If your goal is to build a gamified loyalty program with challenges, tasks, and built-in reward tracking, Journey Optimizer also offers a dedicated **Loyalty Challenges** capability.
+-->
+

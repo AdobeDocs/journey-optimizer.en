@@ -9,6 +9,8 @@ role: User
 level: Intermediate
 keywords: text, email, version, plain, editor
 exl-id: 4bb36810-65fb-4a9b-9bea-e56ed2c1eea3
+feature_v2: []
+subfeature_v2: []
 ---
 # Manage the text version of an email {#text-version-email}
 
@@ -42,9 +44,24 @@ If you prefer using a different content for the plain text version, follow the s
 >
 > * If you re-enable the **[!UICONTROL Sync with HTML]** option  after updating your plain text content, your changes will be lost, and replaced with text content generated from the HTML version.
 
+<!--
+## Optimize the text version for AI inboxes {#optimize-plain-text-ai}
+
+You can help AI-powered inbox features (such as summaries in [!DNL Gmail], [!DNL Outlook], or [!DNL Apple Mail]) surface your key offers and details by using the **[!UICONTROL Optimize for AI Inbox]** button. That action generates an improved plain text version focused on information assistants are likely to read from the text part of the message.
+
+![Optimize for AI Inbox button in the text version view](assets/text-optimizer-for-ai-button.png){zoomable="yes" width="80%"}
+
+>[!IMPORTANT]
+>
+>When using this capability, the **[!UICONTROL Sync with HTML]** option is automatically disabled.
+
+For a full walkthrough and recommended scenarios, see [Optimize email text for AI inboxes](llm-email-optimizer.md).
+-->
+
 ## When to use custom plain text versions {#when-to-use}
 
 Understanding when to create a custom plain text version versus using auto-sync helps ensure optimal email delivery and readability.
+
 
 ### Use custom plain text (disable sync) when:
 
@@ -201,7 +218,8 @@ FEATURED PRODUCTS
 
 ```
 We'd love your feedback!
-------------------------
+---------------------
+---
 
 Please take 2 minutes to complete our survey:
 https://example.com/survey/customer-feedback

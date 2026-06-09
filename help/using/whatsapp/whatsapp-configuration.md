@@ -7,6 +7,37 @@ feature: Whatsapp, Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: d1f40cd8-f311-4df6-b401-8858095cef3e
+TQID: https://experienceleague.adobe.com/Csk1JNk8W6SGjoga5chRRE7-LUzUKK-X8sZcwszCxRE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: b8df23d2-98a2-4406-86cc-2babe8728d36
+    internal-label: WhatsApp channel
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Get started with WhatsApp configuration {#whatsapp-config}
 
@@ -19,6 +50,21 @@ Before sending your WhatsApp message, you must configure your Adobe Journey Opti
 These steps must be performed by an Adobe Journey Optimizer [System Administrator](../start/path/administrator.md).
 
 ## Create WhatsApp API credentials {#whatsapp-credentials}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_config_name"
+>title="Name"
+>abstract="Enter a unique name for this API credential set. You will select it when you configure WhatsApp webhooks and channel configurations."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_config_api_token"
+>title="API Token"
+>abstract="Use a Meta access token from a System User in the same Business Manager as your WhatsApp assets. This user needs whatsapp_business_management, whatsapp_business_messaging, and business_management permissions, plus asset-level access to your WhatsApp Business Account. Meta tokens expire after about 60 days, renew the token before it lapses."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_whatsapp_config_business_account_id"
+>title="Business Account ID"
+>abstract="Enter your Meta Business portfolio ID, also called the Business Manager ID. Do not enter your WhatsApp Business Account ID in this field."
 
 1. In the left rail, browse to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]** and select the **[!UICONTROL API Credentials]** menu. Click the **[!UICONTROL Create new API credentials]** button.
 
@@ -83,6 +129,10 @@ Once your WhatsApp API credentials have been successfully created, you can now c
 * **Capture inbound responses** for managing opt-in and opt-out consent
 * **Receive delivery reports** such as read receipts (where available) and message delivery status
 * **Enable tracking events** for analytics and reporting in Adobe Experience Platform datasets
+
+>[!NOTE]
+>
+>Inbound WhatsApp messages are captured in the _AJO Email Tracking Dataset_ system dataset. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
 
 Webhooks act as the communication bridge between Meta's WhatsApp Business Platform and Adobe Journey Optimizer, allowing you to receive real-time notifications about message events and user interactions.
 

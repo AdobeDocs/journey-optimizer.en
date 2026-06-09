@@ -8,6 +8,35 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: 1fc708e1-a993-4a2a-809c-c5dc08a4bae1
+TQID: https://experienceleague.adobe.com/zGML5v-T-z6d-r8J8lzWBl-bCo7UX9zqH1XTlw42y-k
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Manage fragments {#manage-fragments}
  
@@ -31,7 +60,7 @@ You can filter fragments on their:
 * State (archived or not)
 * Tags
 
-![](assets/fragment-list-filters.png){width="90%" align="left"}
+![](assets/fragment-list-filters.png){width="90%"}
 
 You can also choose to show all fragments, or only the items that the current user created or modified.
 
@@ -46,6 +75,12 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 * Move the fragment to a folder. [Learn more](#folders)
 
 ![](assets/fragment-list-more-actions.png)
+
+### Bulk actions {#bulk-actions-fragments}
+
+You can select multiple fragments at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and archiving. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
+
+You can also sort the fragment list by clicking any column header, and resize columns by dragging the column border to fit the data you need.
 
 ## Use folders to manage fragments {#folders}
 
@@ -129,7 +164,7 @@ To edit a fragment, follow the steps below.
 
 1. If the fragment being edited has the **[!UICONTROL Live]** status, click the **[!UICONTROL Modify]** button to create a draft version of the fragment. Click **[!UICONTROL Confirm]**.
 
-    ![](assets/fragment-live-modify.png){width="70%" align="left"}
+    ![](assets/fragment-live-modify.png){width="70%"}
 
     >[!NOTE]
     >
@@ -139,7 +174,7 @@ To edit a fragment, follow the steps below.
 
 1. To modify the fragment's content, click the **[!UICONTROL Edit]** button and update your content as you would do when creating a fragment from scratch. [Learn how to create a fragment](create-fragments.md#content)
 
-    ![](assets/fragment-edit.png){width="70%" align="left"}
+    ![](assets/fragment-edit.png){width="70%"}
 
     >[!NOTE]
     >
@@ -165,13 +200,13 @@ To incorporate additional attributes to a live fragment, follow the steps below.
 
 1. Duplicate the existing fragment using the **[!UICONTROL More actions]** button.
 
-    ![](assets/fragment-list-more-actions.png){width="70%" align="left"}
+    ![](assets/fragment-list-more-actions.png){width="70%"}
 
 1. Select the duplicated fragment to open it and click the **[!UICONTROL Edit]** button.
 
 1. [Add the new desired attributes](../personalization/personalization-build-expressions.md#add) to the duplicated fragment, such as personalization fields.
 
-    ![](assets/fragment-add-new-attribute.png){width="70%" align="left"}
+    ![](assets/fragment-add-new-attribute.png){width="70%"}
 
 1. Save your changes and publish the new fragment. [Learn how](create-fragments.md#publish)
 
@@ -184,11 +219,11 @@ To incorporate additional attributes to a live fragment, follow the steps below.
 
 You can display the list of the journeys, campaigns and content templates that are currently using a fragment. To do so, select **[!UICONTROL Explore references]** from the **[!UICONTROL More actions]** menu either in the fragment list or in the fragment properties screen.
 
-![](assets/fragment-explore-references.png){width="70%" align="left"}
+![](assets/fragment-explore-references.png){width="70%"}
 
 Select a tab to toggle between journeys, campaigns, templates and fragments. You can see their status and click a name to be redirected to the corresponding item where the fragment is referenced.
 
-![](assets/fragment-usage-screen.png){width="70%" align="left"}
+![](assets/fragment-usage-screen.png){width="70%"}
 
 >[!NOTE]
 >
@@ -200,7 +235,7 @@ You can clean the fragment list from the items that are no longer relevant to yo
 
 To do so, click the **[!UICONTROL More actions]** button next to the desired fragment and select **[!UICONTROL Archive]**. It will disappear from the fragment list, which prevents users from using it in future emails or templates.
 
-![](assets/fragment-list-archive.png){width="70%" align="left"}
+![](assets/fragment-list-archive.png){width="70%"}
 
 >[!NOTE]
 >
@@ -208,7 +243,7 @@ To do so, click the **[!UICONTROL More actions]** button next to the desired fra
 
 To unarchive a fragment, filter on the **[!UICONTROL Archived]** items and select **[!UICONTROL Unarchive]** from the **[!UICONTROL More actions]** menu. It is now again accessible from the fragment list, and can be used in any email or template.
 
-![](assets/fragment-list-unarchive.png){width="70%" align="left"}
+![](assets/fragment-list-unarchive.png){width="70%"}
 
 ## Export fragments to another sandbox {#export}
 

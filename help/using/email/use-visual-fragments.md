@@ -8,6 +8,41 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 25a00f74-ed08-479c-9a5d-4185b5f3c684
+TQID: https://experienceleague.adobe.com/YbH8cXjrh5E9v9twpwxB3ENb606W-1JAonJRxnorl9c
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: b5cb2dff-e9ba-4e50-a3eb-6a50eef729b8
+    internal-label: Email rendering
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
+  - id: d08afb72-92f6-4856-88e3-11ec34313c2f
+    internal-label: Event configuration
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Add visual fragments to your emails {#use-visual-fragments}
 
@@ -66,7 +101,7 @@ To use a fragment into an email, follow the steps below.
 
 1. Add as many fragments as you want and **[!UICONTROL Save]** your changes.
 
-### Limitations when using Dynamic Content in fragments {#fragment-dynamic-content}
+### Limitations when using dynamic content in fragments {#fragment-dynamic-content}
 
 >[!CAUTION]
 >
@@ -80,7 +115,7 @@ To use a fragment into an email, follow the steps below.
 >
 >**Recommended approach:** When using multiple fragments with Dynamic Content in your email, add each fragment directly into its own structure block at the email level. This ensures proper functionality and prevents the issues mentioned above.
 
-## Best practices for fragments with Dynamic Content {#fragment-best-practices}
+## Best practices for fragments with dynamic content {#fragment-best-practices}
 
 Follow these best practices when working with visual fragments and Dynamic Content (conditional content):
 
@@ -138,3 +173,18 @@ To break inheritance, follow the steps below:
     ![](assets/fragment-break-inheritance.png)
 
 1. That fragment becomes a standalone element that is not linked anymore to the original fragment. Edit it as any other content component in your content. [Learn more](content-components.md)
+
+### Locked fragments {#locked-fragments}
+
+If the fragment was locked by its author, the unlock icon is greyed out and cannot be used to break inheritance.
+
+![](assets/fragment-locked.png)
+
+Locked fragments remain synchronized everywhere they appear, preventing local edits that could break brand standards or compliance requirements.
+
+Learn how to lock a fragment in [this section](../content-management/create-fragments.md#lock-visual-fragment).
+
+>[!NOTE]
+>
+>The fragment author can change the setting later for future usages by resetting its behavior to **[!UICONTROL Allow inheritance to be broken]** in the fragment settings.
+

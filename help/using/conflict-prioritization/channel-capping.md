@@ -9,6 +9,27 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: 80bd5a61-1368-435c-9a9a-dd84b9e4c208
+TQID: https://experienceleague.adobe.com/sWjIVlyPh0ySD1s-TLxJu9zmItbncoxKO0u3DVjVt-8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization
+subfeature_v2:
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Frequency capping by channel and communication type {#rule-sets}
 
@@ -74,13 +95,15 @@ To create a channel rule set, follow these steps :
 
    Make sure you enter a value that matches the selected duration type: 1-23 for Hourly, 1-30 for Daily, 1-4 for Weekly, and 1-3 for Monthly.
 
-   The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this resets occurs every two days at midnight UTC.
+   The counter automatically resets to 0 when a new time window begins. For a 2-day frequency cap, this reset occurs every two days at midnight UTC.
 
-1. Select the channel you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]** or **[!UICONTROL Direct mail]**.
+1. Select the channel(s) you want to use for this rule: **[!UICONTROL Email]**, **[!UICONTROL SMS]**, **[!UICONTROL Push notification]**, **[!UICONTROL Direct mail]** or **[!UICONTROL WhatsApp]**.
 
-1. Select several channels if you want to apply capping across all selected channels as a total count.
+   ![](assets/rule-sets-channels.png)
 
-   For example, set capping to 5, and select both the email and sms channels. If a profile has already received 3 marketing emails and 2 marketing sms for the selected period, this profile will be excluded from the very next delivery of any marketing email or sms.
+   Select several channels if you want to apply capping across all selected channels as a total count.
+
+   For example, set capping to 5, and select both the Email and SMS channels. If a profile has already received 3 marketing emails and 2 marketing SMS messages for the selected period, this profile will be excluded from the very next delivery of any marketing email or SMS message.
 
 1. Click **[!UICONTROL Save]** to confirm the rule creation. Your message is added to the rule set, with the **[!UICONTROL Draft]** status.
 
@@ -155,8 +178,11 @@ You can combine several message frequency rules, such as described in the exampl
 
 In this scenario, an individual profile:
 * can receive up to 12 marketing messages per month;
-* but will be excluded from marketing push notifications after they have received 4 push notifications.-->
+* but will be excluded from marketing push notifications after they have received 4 push notifications.
+-->
 
 ## How-to video {#video}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3435531?quality=12)
+
+➡️ **See it in practice:** Learn how to implement [daily frequency capping in Adobe Journey Optimizer](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510){target="_blank"} in this community use case.
