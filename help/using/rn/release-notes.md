@@ -131,6 +131,10 @@ topic_v2:
 
   Availability date: June 1, 2026
 
+* **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the journey header next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
+
+  Availability date: TBD (early June 2026)
+
 <!--
 +++ Coming soon — **Information below is subject to change.**
 
