@@ -13,7 +13,7 @@ feature_v2: []
 subfeature_v2: []
 ---
 # Simulate your journey {#simulate-journey}
-
+ 
 >[!IMPORTANT]
 >
 >You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
