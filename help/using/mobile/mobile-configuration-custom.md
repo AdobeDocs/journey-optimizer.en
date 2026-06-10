@@ -100,7 +100,7 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 
     >[!IMPORTANT]
     >
-    >Configure your SMS send endpoint to trust the Adobe Experience Platform certificate authority chain by downloading the public certificate from the [MTLS Public Certificate API](https://platform.adobe.io/data/core/mtls/v1/certificate/public-certificate) and adding it to your server trust store (expected client CN: `ajo-sms.aep-mtls.adobe.com`), otherwise Journey Optimizer omits the client certificate and SMS delivery fails.
+    >Configure your SMS send endpoint to trust the Adobe Experience Platform certificate authority chain by downloading the public certificate from the [MTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint) and adding it to your server trust store (expected client CN: `ajo-sms.aep-mtls.adobe.com`), otherwise Journey Optimizer omits the client certificate and SMS delivery fails.
 
 1. In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add new parameter]** to specify the HTTP headers for the request message that will be sent to the external service.
 

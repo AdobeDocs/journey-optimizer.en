@@ -127,7 +127,7 @@ Adobe Intelligent Services that are native to Real Time Customer Data Platform a
 
 Customer AI allows brands to create churn or conversion machine learning based scores that will be available as profile attributes in Adobe Experience Platform and that can be used to personalize a journey.
 
-Learn more about [Journey Optimizer + Adobe Intelligent Services](../building-journeys/ai-services-overview.md).
+Learn more about [Journey Optimizer + Adobe Intelligent Services](intelligent-services.md).
 
 
 ## Adobe Campaign {#integration-ac}
