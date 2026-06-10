@@ -19,6 +19,8 @@ feature_v2:
 subfeature_v2:
   - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
     internal-label: Publish
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

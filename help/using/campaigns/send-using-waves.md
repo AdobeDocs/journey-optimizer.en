@@ -9,6 +9,14 @@ role: User
 level: Intermediate
 keywords: waves, batches, schedule, campaign, journey, deliverability
 exl-id: 6d53d817-78f6-4d00-8ff0-8a848c618435
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
 ---
 # Send using waves in campaigns {#send-using-waves}
 

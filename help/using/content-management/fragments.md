@@ -13,10 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
@@ -30,6 +26,8 @@ subfeature_v2:
     internal-label: Email design
   - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
     internal-label: Publish
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -60,6 +58,15 @@ To make the best use of fragments:
 
 * **Create your own fragments**: Create visual or expression fragments, either from scratch or by saving content as fragment. [Learn how to create a fragment](create-fragments.md). In addition, you can leverage Journey Optimizer **Content REST API** to manage content fragments. For more on this, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"}.
 * **Reuse your fragments:** Use them as many times as needed in your content. See [Add visual fragments](../email/use-visual-fragments.md) and [Leverage expression fragments](../personalization/use-expression-fragments.md)
+
+
+>[!NOTE]
+>
+>The **[!UICONTROL Fragments]** described on this page are reusable **content** components. They are different from:
+>
+>* **[Journey Fragments](../building-journeys/journey-fragments.md)** — reusable sets of journey nodes inserted into journeys.
+>* **[AEM Content Fragments](../integrations/aem-fragments.md)** — content authored in Adobe Experience Manager and used in [!DNL Journey Optimizer].
+
 
 ## Before starting {#fragment-prerequisites}
 

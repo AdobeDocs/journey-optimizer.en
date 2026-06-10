@@ -7,6 +7,14 @@ role: User
 level: Beginner
 keywords: in-app, message, creation, start
 hide: true
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
 ---
 # Design your Web In-app content {#in-app-web-design}
 
@@ -122,7 +130,7 @@ To personalize your button:
 
 1. Choose your **[!UICONTROL Interact event]** which defines your button's action after users interacted with it.
 
-1. Enter your web URL or deeplink in the **[!UICONTROL Target]** field.
+1. Enter your web URL or deep link in the **[!UICONTROL Target]** field.
 
 1. To add multiple buttons, click **[!UICONTROL Add button]**.
 

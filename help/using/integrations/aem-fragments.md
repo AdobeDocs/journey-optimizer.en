@@ -12,21 +12,11 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
 subfeature_v2:
-  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
-    internal-label: Fragments
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
+    internal-label: Experience Manager Assets integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -39,7 +29,20 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 ---
-# Work with Adobe Experience Manager content fragments {#aem-fragments}
+# Work with Adobe Experience Manager Content Fragments {#aem-fragments}
+
+>[!BEGINSHADEBOX]
+ 
+The existing **Asset Selector** and **Content Fragment selector** experiences in Adobe Journey Optimizer workflows are being replaced by **Content Advisor**. Content Advisor provides an AI-powered, unified interface for discovering and selecting Assets, Content Fragments, and Dynamic Media directly within your AJO authoring workflows. Existing integrations will continue to work during the transition period.
+
+>[!ENDSHADEBOX]
+
+>[!NOTE]
+>
+>**AEM Content Fragments** are authored in Adobe Experience Manager and used in [!DNL Journey Optimizer]. They are different from:
+>
+>* **[Fragments](../content-management/fragments.md)** — reusable content components created in [!DNL Journey Optimizer] and used in emails across campaigns and journeys.
+>* **[Journey Fragments](../building-journeys/journey-fragments.md)** — reusable sets of journey nodes inserted into journeys.
 
 The integration between Adobe Experience Manager and Journey Optimizer follows this data flow:
 
@@ -61,31 +64,39 @@ When a Content Fragment is published in Adobe Experience Manager, an event is se
 >
 >For Healthcare customers, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Extended Security for Healthcare add-on offerings.
 
-## Create and assign a tag in Experience Manager
+## Create and assign a tag in Experience Manager {#create-tag}
 
 >[!IMPORTANT]
 >
 >To enable Journey Optimizer to access Adobe Experience Manager Content Fragments via the Content Fragment Management API, you must first [configure the Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-with-journey-optimizer#dispatcher-configuration){target="_blank"}.
 
-Before using your Content fragment in Journey Optimizer, you need to create a tag specifically for Journey Optimizer:
+Journey Optimizer displays a Content Fragment in the Content Fragment selector only when it carries a tag for your **organization** and **sandbox**. That requirement is deliberate: it keeps unrelated or unapproved Experience Manager content out of Journey Optimizer.
 
-1. Access your **Experience Manager** environment.
+Assign a tag whose ID follows `ajo-enabled:{AJO-OrgId}/{AJO-SandboxName}`, using your Journey Optimizer organization ID and sandbox name in place of the placeholders, for example, `ajo-enabled:123A12A123A123A12A@AdobeOrg/prod`.
 
-1. From the **Tools** menu, select **Tagging**.
+To create the tag in Experience Manager:
+
+1. Go to **Tools** > **Tagging**.
 
     ![](assets/do-not-localize/aem_tag_1.png)
 
-1. Click **Create Tag**.
+1. Create a nested tag structure so the full tag ID matches the format above:
 
-1. Ensure the ID adheres to the following syntax: `ajo-enabled:{AJO-OrgId}/{AJO-SandboxName}`.
+    1. At the root level, create a folder named `ajo-enabled`.
 
-1. Click **Create**. 
+    1. Under `ajo-enabled`, create a tag for your organization ID, for example, `123A12A123A123A12A@AdobeOrg`.
 
-1. Define your Content Fragment Model as detailed in [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models){target="_blank"} and assign your newly created Journey Optimizer tag.
+    1. Under that organization tag, create a tag for your sandbox, for example, `prod`.
 
-This real-time connection ensures that your content is always up-to-date but also means that any changes to published fragments will immediately affect active campaigns and journeys.
+    The combined path yields a tag ID such as `ajo-enabled:123A12A123A123A12A@AdobeOrg/prod`.
 
-You can now begin creating and configuring your Content Fragment for later use in Journey Optimizer. Learn more in [Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing){target="_blank"}.
+1. To apply it to a Content Fragment, open the Content Fragment in the editor.
+
+1. In **Properties**, add the tag you created.
+
+1. Save the fragment.
+
+➡️ [Learn more about Tags in Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing#manage-tags)
 
 ## Add Experience Manager Content fragments {#aem-add}
 
@@ -97,9 +108,9 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
     ![](assets/aem_campaign_2.png)
 
-1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM CF selector]**.
+1. From the **[!UICONTROL AEM Content Fragment]** menu in the left-pane, click **[!UICONTROL Open AEM Content Advisor]**.
 
-    ![](assets/aem_campaign_3.png)
+    ![](assets/cf-variation-1.png)
 
 1. Browse the list and select a **[!UICONTROL Content Fragment]** to import into your Journey Optimizer content.
 
@@ -177,11 +188,36 @@ After creating and personalizing your AEM Content Fragments, you can now import 
 
 1. Click **[!UICONTROL Save]**. You can now test and check your message content as detailed in [this section](../content-management/preview.md).
 
-    Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM CF selector]**.
+    Note that the Content Fragment you selected stays active for this message. When you open the Personalization Editor in another field or content block, you can keep working with the same fragment from the **[!UICONTROL AEM Content Fragment]** section and add more fields without reopening **[!UICONTROL Open AEM Content Advisor]**.
 
 Once you have performed your tests and validated the content, you can [send your campaign](../campaigns/review-activate-campaign.md) or [publish your journey](../building-journeys/publish-journey.md) to your audience.
 
 Adobe Experience Manager allows you to identify the Journey Optimizer campaigns or journeys where a Content Fragment is being used. Learn more in [Adobe Experience Manager documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/extension-content-fragment-ajo-external-references){target="_blank"}. 
+
+## Use AEM Content Fragments with Experience Decisioning {#aem-decisioning}
+
+>[!AVAILABILITY]
+>
+>This feature is available in Limited Availability for outbound channels with Decisioning support. To request access, contact your Adobe representative.
+
+AEM Content Fragments can also be used as offer item attributes in **Experience Decisioning**. By mapping Content Fragment fields to decision item attributes, you can use Journey Optimizer decisioning models, formulas, and ranking criteria to optimize which fragment is served to each profile.
+
+### Prerequisites and guardrails
+
+* Content Fragments must be tagged in Adobe Experience Manager with the `ajo-enabled:{OrgId}/{SandboxName}` tag before they appear in the decisioning selector. [Learn how to create and assign a tag](#create-tag)
+* Only Content Fragments in a **published** state are available.
+* You can add up to **five** AEM Content Fragments to a single decision item.
+
+### Leverage AEM Content Fragments in Decisioning
+
+Once the AEM Content Fragment has been created and published, you need to:
+
+1. Tie it to a decision item by selecting it in the decision item's attributes.
+1. Leverage it in a decision policy to surface the right content to the right customer.
+
+➡️ [Tie an AEM Content Fragment to a decision item](../experience-decisioning/items.md#aem-fragments)
+
+➡️ [Leverage AEM Content Fragments in a decision policy](../experience-decisioning/fragments-decision-policies.md#aem-fragments-decisioning)
 
 ## Working with content fragment variations {#aem-variations}
 
@@ -206,9 +242,9 @@ To select a variation:
 
 1. Click ![Personalization icon](assets/do-not-localize/Smock_PersonalizationField_18_N.svg) in any text field, or open the HTML source from an HTML content component.
 
-1. From **[!UICONTROL AEM Content Fragment]**, click **[!UICONTROL Open CF selector]**.
+1. From **[!UICONTROL AEM Content Fragment]**, click **[!UICONTROL Open AEM Content Advisor]**.
 
-    ![](assets/aem_campaign_3.png)
+    ![](assets/cf-variation-1.png)
 
 1. To select a locale-specific Adobe Experience Manager Content Fragment in table view, use **[!UICONTROL Customize table]** to add the **[!UICONTROL Language]** column. Locale values are displayed in the table, enabling you to identify and select the appropriate fragment.
 

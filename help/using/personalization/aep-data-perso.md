@@ -23,6 +23,14 @@ level_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: cb09dcb7-3367-4b63-b02c-8a1356eb876e
+    internal-label: Main functions
+  - id: f0577040-fadd-46a1-b0ae-9c7f828bb2da
+    internal-label: Collection management functions
 ---
 # Use Adobe Experience Platform data for personalization {#aep-data}
 
@@ -113,7 +121,7 @@ Once a dataset has been enabled for lookup personalization, you can use its data
     * `{{flight._myorg.booking.boardingTime}}`
     * `{{flight._myorg.booking.gate}}`
 
-1. Now that your code is ready, you can complete your content as usual, and test it using the **Simulate content** button to check the personalization. [Learn how to preview and test content](../content-management/preview-test.md)
+1. Now that your code is ready, you can complete your content as usual, and test it using either simulation method: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn how to preview and test content](../content-management/preview-test.md)
 
 
     ![](assets/aep-data-sample.png)

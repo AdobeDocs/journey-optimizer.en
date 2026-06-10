@@ -10,13 +10,15 @@ level: Intermediate
 keywords: targeting, rules, journey, path, optimization, personalization
 exl-id: b30ce5c9-a0e2-4601-97a3-5bec648368e4
 badge: label="Limited Availability" type="Informative"
+feature_v2: []
+subfeature_v2: []
 ---
 # Leverage path targeting {#targeting}
 
 >[!CONTEXTUALHELP]
 >id="ajo_path_targeting_fallback"
 >title="What is fallback path?"
->abstract="Fallback paths allow your audience to enter an alternate path when no targeting rules are qualified. </br>If you do not select this option, any audience that doesn't qualify for a targeting rule will not enter the fallback path and exit the journey."
+>abstract="Fallback paths allow your audience to enter an alternate path when no targeting rules are qualified. </br>If this option is not selected, any audience that doesn't qualify for a targeting rule will not enter the fallback path and exit the journey."
 
 >[!AVAILABILITY]
 >

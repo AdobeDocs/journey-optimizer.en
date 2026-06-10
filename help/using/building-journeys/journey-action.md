@@ -17,16 +17,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
     internal-label: Action configuration
@@ -38,8 +30,6 @@ subfeature_v2:
     internal-label: Business rules
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -91,6 +81,27 @@ Legacy native channel activities are also preserved in these cases:
 
 ## Add a built-in channel action to a journey  {#add-action}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_auto_wait"
+>title="Automatic wait node"
+>abstract="For inbound channel actions (In-app message, Web, Content card, and Code-based experience), a **Wait** node is automatically inserted after the action (3 days by default). This gives profiles time to view the inbound experience before the journey continues to the next step."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_optimization"
+>title="Optimization"
+>abstract="The **Optimization** section adds content experiments, targeting rules, or both to a channel action. It lets you test variants and deliver the most effective content to each audience member."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/optimize-activity/optimize" text="Use the Optimize activity"
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_multilingual"
+>title="Multilingual"
+>abstract="The **Multilingual** section delivers the channel action content in multiple languages within a single journey. A language settings configuration defines the supported locales and the default language for this action."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-multilingual/multilingual-gs" text="Get started with multilingual content"
+
+
 To add a built-in channel action to your journey using the **[!UICONTROL Action]** activity, follow the steps below.
 
 >[!NOTE]
@@ -141,11 +152,11 @@ To add a built-in channel action to your journey using the **[!UICONTROL Action]
       <p>
       </td>
       <td>
-      <a href="../sms/create-sms.md">
+      <a href="../mobile/create-mobile-message.md">
       <img alt="Validation" src="../assets/do-not-localize/sms.jpg">
       </a>
       <div>
-      <a href="../sms/create-sms.md"><strong>Create text messages (SMS/MMS)</strong></a>
+      <a href="../mobile/create-mobile-message.md"><strong>Create Mobile messages (SMS/RCS/MMS)</strong></a>
       </div>
       <p>
       </td>
@@ -277,7 +288,7 @@ For in-app messages, you can use the **[!UICONTROL Edit triggers]** button to ch
 >[!CONTEXTUALHELP]
 >id="ajo_multi_action_journey"
 >title="Add multiple inbound actions"
->abstract="You can select several inbound actions inside a single journey. This capability enables you to deliver multiple Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, each action containing a specific content."
+>abstract="A single journey can include several inbound actions. This capability enables you to deliver multiple Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, each action containing a specific content."
 
 To simplify your journey orchestration, you can define several inbound actions inside a single journey action.
 

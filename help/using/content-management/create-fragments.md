@@ -13,10 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
@@ -124,6 +120,30 @@ When your content is ready, click the **[!UICONTROL Save]** button.
     
 The fragment is created and added to the fragment list with the **[!UICONTROL Draft]** status. You can preview it and publish it to make it available in journeys and campaigns.
 
+### Lock a visual fragment {#lock-visual-fragment}
+
+If you are creating or editing a visual fragment, you can lock it to prevent editors from modifying or detaching it when used in emails.
+
+Selecting this option ensures the fragment stays synchronized wherever it is used, helping enforce brand, maintain consistency and comply with legal requirements.
+
+To lock a visual fragment, follow the steps below.
+
+1. In the fragment content edition screen, go to the **[!UICONTROL Settings]** tab.
+
+1. By default, the fragment is unlocked. Select **[!UICONTROL Prevent inheritance from being broken]** to lock the fragment.
+
+1. Click **[!UICONTROL Confirm]**.
+
+    >[!NOTE]
+    >
+    >This setting can be updated at any time. However, changes apply to future usages only. Existing emails using this fragment are not modified.
+
+![](assets/fragment-lock.png){width="70%" align="center"}
+
+Now when using this fragment in an email, it is locked and cannot be detached from the original fragment. [Learn more](../email/use-visual-fragments.md#locked-fragments)
+
+New updates to the original locked fragment are automatically propagated to all emails using it.
+
 ## Preview and publish the fragment {#publish}
 
 >[!NOTE]
@@ -154,3 +174,4 @@ The fragment is now **[!UICONTROL Live]**, and becomes available when building a
 >[!CAUTION]
 >
 >Once it has been published, you cannot add new personalized attributes to a live fragment. If you want to add personalization attributes, you must duplicate the fragment. [Learn more](manage-fragments.md#adding-new-attributes)
+

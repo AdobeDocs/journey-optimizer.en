@@ -10,6 +10,14 @@ level: Beginner
 mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
 exl-id: bcb7a5e4-440d-4548-b305-c320bafe6ee7
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
 ---
 # Edit the Action campaign content {#action-campaign-content}
 
@@ -24,8 +32,8 @@ The content creation process depends on the channel you selected. Learn detailed
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><a href="../email/create-email.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a>
 <div align="center"><a href="../email/create-email.md"><strong>Email</strong></a></div></td>
-<td><a href="../sms/create-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
-<div align="center"><a href="../sms/create-sms.md"><strong>SMS</strong></a></div></td>
+<td><a href="../mobile/create-mobile-message.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><a href="../mobile/create-mobile-message.md"><strong>SMS</strong></a></div></td>
 <td><a href="../push/create-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
 <div align="center"><a href="../push/create-push.md"><strong>Push notification</strong></a></div></td>
 <td><a href="../direct-mail/create-direct-mail.md"><img alt="direct mail" src="../channels/assets/do-not-localize/direct-mail.jpg"></a>
@@ -54,7 +62,12 @@ The content creation process depends on the channel you selected. Learn detailed
 
 ## Test and check your content
 
-Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to preview and test content](../content-management/preview-test.md)
+Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content. You can use either simulation method:
+
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation.
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
+
+[Learn how to preview and test content](../content-management/preview-test.md)
 
 To browse back to the campaign creation screen, click the left arrow.
 

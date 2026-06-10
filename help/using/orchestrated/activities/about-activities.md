@@ -15,6 +15,9 @@ feature_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 # About Orchestrated campaign activities {#orchestrated-campaign-activities}
 
@@ -26,21 +29,25 @@ All activities are detailed in the sections below:
 * [Channel activities](#channel)
 * [Flow control activities](#flow-control)
 
-![List of activities available in the canvas](../assets/orchestrated-activities.png){width="80%" align="left"}
-
+![List of activities available in the canvas](../assets/orchestrated-activities.png){width="80%"}
 
 >[!NOTE]
 >
->* Depending on your licensing model, your permissions and your implementation, available activities may differ.
->
->* The number of activities in an Orchestrated campaign is limited to 500.
+>Depending on your licensing model, your permissions and your implementation, available activities may differ.
 
+## Guardrails and limitations {#activity-guardrails}
+
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, SMS, Push, or Direct mail). Targeting and flow control activities do not count toward this limit.
+
+* **Canvas activities limit** - The number of activities on the canvas is limited to 500. For maintainability and performance, keep workflows under 100 activities in practice.
+
+See [Guardrails and limitations](../guardrails.md) for all Orchestrated campaign guardrails and limitations.
 
 ## Targeting activities {#targeting}
 
 These activities are specific to targeting. They let you build one or more targets by defining an audience and splitting or combining these audiences using intersection, union or exclusion operations.
 
-![List of targeting activities](../assets/targeting-activities.png){width="40%" align="left"}
+![List of targeting activities](../assets/targeting-activities.png){width="40%"}
 
 Available targeting activities are:
 
@@ -63,16 +70,16 @@ Learn how to [create a channel action in an Orchestrated campaign](channels.md).
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_end"
 >title="End activity"
->abstract="The **End** activity allows you to graphically mark the end of an Orchestrated campaign. This activity has no functional impact and is therefore optional."
+>abstract="The **End** activity marks the end of a branch on the canvas. Optionally, use **External signal** to start a downstream Orchestrated campaign and pass parameters when the branch completes. [Learn more](../trigger-orchestrated-campaign.md#signal-end)"
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_signal"
 >title="External signal"
->abstract="external signal"
+>abstract="Select the downstream Orchestrated campaign to start when this branch ends, and map parameter names and values to send in the signal. The downstream campaign must be set to **Triggered by a signal** and published before this campaign reaches the End activity. [Learn more](../trigger-orchestrated-campaign.md#signal-end)"
 
 The following activities are specific to organizing and executing Orchestrated campaigns. Their main task is to coordinate the other activities.
 
-![List of flow control activities](../assets/flow-control-activities.png){width="20%" align="left"}
+![List of flow control activities](../assets/flow-control-activities.png){width="20%"}
 
 Available flow control activities are:
 
@@ -81,5 +88,4 @@ Available flow control activities are:
 * [Wait](wait.md): Momentarily pause execution of a part of an Orchestrated campaign.
 <!--* [Test](test.md): Enable transitions based on specified conditions.-->
 
->[!NOTE]
->The **End** activity graphically marks the end of an Orchestrated campaign. This activity has no functional impact and is therefore optional
+* **[!UICONTROL End]**: Marks the end of a branch on the canvas. You can optionally use it to send a signal to another Orchestrated campaign that starts on a signal. [Learn more](../trigger-orchestrated-campaign.md#signal-end)

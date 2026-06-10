@@ -9,17 +9,18 @@ TQID: https://experienceleague.adobe.com/dKfstmm0ilHKUATU-sz7c04IZBu2O7Ju-srPPoK
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+feature_v2: []
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
+subfeature_v2:
+  - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
+    internal-label: Approval workflows
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 # Get started with journeys & campaigns approval {#send-proofs}
 
@@ -138,4 +139,4 @@ No. Requestors cannot manually select which user group receives or routes the ap
 * **[Create approval policies](approval-policies.md)** - Learn how to set up approval policies to enforce review workflows for campaigns and journeys.
 * **[Request approval](request-approval.md)** - Understand how to submit content for approval and track approval status.
 * **[Review and approve requests](review-approve-request.md)** - Discover how to review, approve, or reject approval requests as an approver.
-* **[Simulate with sample inputs](simulate-sample-input.md)** - Learn how to test and validate content using sample profile data.
+* **[Simulate content variations](simulate-sample-input.md)** - Click **[!UICONTROL Simulate content]** to test content variations with sample input data, AI auto-generation, or simulated users. Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.

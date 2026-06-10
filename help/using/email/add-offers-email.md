@@ -14,8 +14,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
@@ -25,6 +23,8 @@ subfeature_v2:
     internal-label: Email design
   - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
     internal-label: Publish
+  - id: c41e8697-e629-4c38-96b3-564faaa17acf
+    internal-label: Dynamic content
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -96,7 +96,7 @@ To display the different offers that are part of the decision with a customer pr
 
 1. Select the test profiles to use to preview the offer:
 
-    1. Click the **[!UICONTROL Simulate Content button]** button then choose the namespace to use to identify test profiles from the **[!UICONTROL Identity namespace]** field.
+    1. Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown and choose the namespace to use to identify test profiles from the **[!UICONTROL Identity namespace]** field. To test content variations with sample input data or AI auto-generation instead, click **[!UICONTROL Simulate content]** directly. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
 
         >[!NOTE]
         >

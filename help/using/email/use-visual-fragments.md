@@ -13,16 +13,10 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
@@ -36,8 +30,6 @@ subfeature_v2:
     internal-label: Event configuration
   - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
     internal-label: Email design
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
   - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
     internal-label: Publish
 role_v2:
@@ -181,3 +173,18 @@ To break inheritance, follow the steps below:
     ![](assets/fragment-break-inheritance.png)
 
 1. That fragment becomes a standalone element that is not linked anymore to the original fragment. Edit it as any other content component in your content. [Learn more](content-components.md)
+
+### Locked fragments {#locked-fragments}
+
+If the fragment was locked by its author, the unlock icon is greyed out and cannot be used to break inheritance.
+
+![](assets/fragment-locked.png)
+
+Locked fragments remain synchronized everywhere they appear, preventing local edits that could break brand standards or compliance requirements.
+
+Learn how to lock a fragment in [this section](../content-management/create-fragments.md#lock-visual-fragment).
+
+>[!NOTE]
+>
+>The fragment author can change the setting later for future usages by resetting its behavior to **[!UICONTROL Allow inheritance to be broken]** in the fragment settings.
+

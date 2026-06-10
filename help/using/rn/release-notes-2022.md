@@ -14,43 +14,15 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
 subfeature_v2:
-  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
-    internal-label: Access control
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
-  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
-    internal-label: Subdomains
-  - id: e57d1da4-32c2-4cc6-945c-9feb219156ff
-    internal-label: Event activities
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
-  - id: fdac7813-bd56-47ae-9f6d-fa94ad1c5dee
-    internal-label: Overview
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -338,7 +310,7 @@ table>
 <td>
 <p>You can now create, personalize, and send SMS in Journey Optimizer, through an integration with <b>Sinch</b> or <b>Twilio</b>.</p>
 <img src="assets/do-not-localize/SMS.gif"/>
-<p>Learn how to create and send a SMS in this <a href="../sms/create-sms.md">detailed documentation</a>.</p>
+<p>Learn how to create and send a SMS in this <a href="../mobile/create-mobile-message.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -493,7 +465,7 @@ table>
 <p>You can now create, personalize, and send SMS in Journey Optimizer, through an integration with <b>Sinch</b> or <b>Twilio</b>.</p>
 <!--img src="assets/do-not-localize/SMS.gif"/-->
 <p>The SMS channel is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.</p>
-<p>Learn how to create and send a SMS in this <a href="../sms/create-sms.md">detailed documentation</a>.</p>
+<p>Learn how to create and send a SMS in this <a href="../mobile/create-mobile-message.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -562,7 +534,7 @@ table>
 <tr>
 <td>
 <p>You can now re-create the experiences from a Journey Optimizer sandbox to another, for example from a non-production sandbox to a production sandbox. This new capability copies an entire Journey, including any objects the Journey depends on to run correctly, from one environment to another. In addition to Journeys, you can also copy other components, such as Offers, Messages, Schemas, Datasets, Data Sources, Events, and Actions.</p>
-<p>For more information, refer to the <a href="../building-journeys/copy-to-sandbox.md">detailed documentation</a>.
+<p>For more information, refer to the <a href="../configuration/copy-objects-to-sandbox.md">detailed documentation</a>.
 </td>
 </tr>
 </tbody>

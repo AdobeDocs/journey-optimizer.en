@@ -18,12 +18,10 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 subfeature_v2:
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
@@ -50,7 +48,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_pause"
 >title="Pause your journey"
->abstract="Pause a live journey to prevent new profiles from entering. Choose whether to discard profiles currently in the journey or keep them in place. If retained, they will resume execution at the next action activity once the journey is restarted. Perfect for updates or emergency stops without losing progress."
+>abstract="Pausing a live journey prevents new profiles from entering. Profiles currently in the journey can be discarded or kept in place. If retained, they will resume execution at the next action activity once the journey is restarted. Perfect for updates or emergency stops without losing progress."
 
 You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply profile attribute exit criteria](#journey-exit-criteria) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
 
@@ -80,7 +78,7 @@ To pause your journey, follow these steps:
 
 1. Select how to manage profiles which are currently in the journey. 
 
-    ![Pause journey options](assets/pause-confirm.png){width="50%" align="left"}
+    ![Pause journey options](assets/pause-confirm.png){width="50%"}
 
     You can:
 
@@ -93,7 +91,7 @@ To pause your journey, follow these steps:
 
 The maximum number of profiles that can be held in paused journeys for your Organization is visible in the journey inventory. It is only visible when at least one journey is paused. This indicator also shows the total number of paused journeys. It is refreshed every 30 minutes. Learn more in the [Guardrails and Limitations](#guardrails-and-limitations).
 
-![Number of paused journeys and profiles currently paused](assets/profiles-in-paused-journeys.png){width="50%" align="left"}
+![Number of paused journeys and profiles currently paused](assets/profiles-in-paused-journeys.png){width="50%"}
 
 From the list of your journeys, you can pause one or several **Live** journeys. To pause a group of journeys (_bulk pause_), select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
 
@@ -129,7 +127,7 @@ Learn how to troubleshoot discards in [this section](#discards-troubleshoot).
 >[!CONTEXTUALHELP]
 >id="ajo_journey_resume"
 >title="Resume your journey"
->abstract="Resume a paused journey to allow new profiles to enter again. If profiles were waiting during the pause, they will continue their journey. Ideal for safely restarting journeys after updates or pauses."
+>abstract="Resuming a paused journey allows new profiles to enter again. If profiles were waiting during the pause, they will continue their journey. Ideal for safely restarting journeys after updates or pauses."
 
 Paused journeys are automatically resumed at the end of the maximum pause period of 14 days. They can be resumed manually at any time. Resume a paused journey allows new profiles to enter again. If profiles were waiting during the pause, they will continue their journey. Ideal for safely restarting journeys after updates or pauses.
 

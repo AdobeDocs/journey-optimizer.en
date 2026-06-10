@@ -11,19 +11,40 @@ hide: true
 badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: c1e49173-69cc-4729-9f9a-afea2ccff3fa
+feature_v2: []
+subfeature_v2: []
 ---
 # Create tasks {#create-tasks}
 
 >[!BEGINSHADEBOX]
 
-**Loyalty Challenges documentation:**
+**Table of contents**
 
-* [Get started with Loyalty Challenges](get-started.md)
+[Get started with Loyalty Challenges](get-started.md)
+
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+<td style="vertical-align:top;">
+
+**Create and manage challenges**
+
 * [Access & manage challenges and tasks](access-loyalty-challenges.md)
 * [Create challenges](create-challenges.md)
 * **Create tasks** ◀︎ **You are here**
 * [Monitor loyalty challenge performance](loyalty-reporting.md)
+
+</td>
+<td style="vertical-align:top;">
+
+**Configure and integrate**
+
+* [Configure loyalty challenges](loyalty-admin.md)
+* [Loyalty data and datasets](loyalty-data-and-datasets.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
+
+</td>
+</tr>
+</table>
 
 >[!ENDSHADEBOX]
 
@@ -31,7 +52,7 @@ exl-id: c1e49173-69cc-4729-9f9a-afea2ccff3fa
 >
 >This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
-Tasks define the specific actions or milestones that customers must complete to earn rewards in a loyalty challenge. You can configure task types, quantities, and product requirements to create engaging and personalized loyalty experiences.
+Tasks define the specific actions or milestones that customers must complete to earn rewards in a loyalty challenge. You can configure purchase and spend tasks, or **[!UICONTROL Custom event]** tasks that track Adobe Experience Platform experience events your organization already captures.
 
 Each task represents a measurable action that contributes toward challenge completion. Tasks are reusable components that can be created independently and then added to one or more challenges, or created directly within a challenge.
 
@@ -40,7 +61,7 @@ Each task represents a measurable action that contributes toward challenge compl
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_task_create"
 >title="Create a task"
->abstract="Select a customer activity (Purchase or Spend), then configure activity-specific attributes: quantities or amounts, eligible items and exclusions, and optional limits such as minimum spend or maximum transactions. In the Properties pane, set the task name and description."
+>abstract="Select a customer activity (Purchase, Spend, or Custom event), then configure activity-specific attributes. In the Properties pane, set the task name and description."
 
 You can create tasks from two entry points. The configuration process is the same regardless of where you start.
 
@@ -66,6 +87,7 @@ Select the type of activity that customers must perform to complete this task:
 
 * **[!UICONTROL Purchase]**: Customers must purchase one or more items to complete this task
 * **[!UICONTROL Spend]**: Customers must spend a specified amount to complete this task
+* **[!UICONTROL Custom event]**: Customers must perform an activity represented by an Adobe Experience Platform experience event. For example, a hotel check-in, mobile app action, or review submission. The underlying event must already be captured in Experience Platform and mapped through an event definition in the **[!UICONTROL Loyalty admin]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
 
 To select an activity, click the **+** icon and select the customer activity that best aligns with your outcome goals. Each activity type has specific configurable attributes to further define and shape the task requirements.
 ![](assets/task-create-activity.png)
@@ -97,6 +119,14 @@ Available attributes for **Spend** activities:
 
 ![](assets/task-create-spend.png)
 
+>[!TAB Custom event activity]
+
+Available attributes for **[!UICONTROL Custom event]** activities:
+
+* **[!UICONTROL Custom event values]**: Enter the values for the custom event that customers must complete. Use a comma to separate each value. These values must match event definitions configured in the **[!UICONTROL Loyalty admin]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+
+![](assets/task-create-custom.png)
+
 >[!ENDTABS]
 
 ## Define eligible items and exclusions {#eligible-items-exclusions}
@@ -104,27 +134,39 @@ Available attributes for **Spend** activities:
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_task_eligible_items_exclusion"
 >title="Eligible items & exclusions"
->abstract="For both **Purchase** and **Spend** activities, you can use the **[!UICONTROL Eligible items & exclusions]** attribute to define which items and groups are eligible and which are excluded. This allows you to target specific products, categories, or locations to align with your challenge goals. For example, you can limit a spending task to specific product categories, or exclude gift cards or promotional items from counting toward task completion."
+>abstract="For both **Purchase** and **Spend** activities, use the **[!UICONTROL Eligible items & exclusions]** attribute to select which items and groups count toward task completion and which are excluded. Search for items or groups from the product inventory configured by administrators, then include or exclude them as needed."
 
-<!-- SCREENSHOT: Eligible items & exclusions popup showing the two sections: "Eligible task purchases are limited to the following" and "The following are excluded from this task" with text input fields -->
+<!-- SCREENSHOT: Eligible items & exclusions picker showing the item and group table with Include and Exclude actions -->
 
-For both **Purchase** and **Spend** activities, you can use the **[!UICONTROL Eligible items & exclusions]** attribute to define which items and groups are eligible and which are excluded. This allows you to target specific products, categories, or locations to align with your challenge goals.
+For **Purchase** and **Spend** activities, you can use the **[!UICONTROL Eligible items & exclusions]** section to define which items and groups are eligible and which are excluded. This allows you to target specific products, categories, or locations to align with your challenge goals.
+
+The items and groups available in the picker are defined by administrator users in the **[!UICONTROL Loyalty admin]** menu. Administrators upload the product inventory used for eligible items, and configure organization-wide exclusions that are automatically applied when marketers build tasks. [Learn how to configure product inventory](loyalty-admin.md#product-inventory) and [exclusions](loyalty-admin.md#exclusions)
+
+**[!UICONTROL Custom event]** tasks do not use eligible items and exclusions; completion is driven by the **[!UICONTROL Custom event values]** you configure.
 
 For example, you can limit a task to specific product categories, or exclude gift cards or promotional items from counting toward task completion.
 
-![](assets/tasks-create-eligible.png)
+![](assets/task-create-eligible.png)
 
 ### Set eligible items for the task
 
-To define eligible items, enter specific item IDs, categories, or destination IDs, separated by commas in the **[!UICONTROL Eligible task purchases are limited to the following]** field. If you leave this field empty, all purchases are eligible by default. You can also enter `*` to explicitly make all purchases eligible.
+To define eligible items, select **[!UICONTROL Add]** from the **[!UICONTROL Eligible items & exclusions]** section.
 
-Example: `SKU001, SKU002, CategoryA`
+In the picker, select the items or groups that should count toward task completion, then select **[!UICONTROL Include]**. Included items and groups are added to the eligible list.
+
+![](assets/task-create-eligible-add.png)
+
+If no eligible items or groups are selected, purchases are not limited to a specific inventory set unless exclusions are configured.
 
 ### Exclude items from the task
 
-To exclude items from the task, enter specific item IDs, categories, or destination IDs in the **[!UICONTROL The following are excluded from this task]** field.
+To exclude items from the task, select **[!UICONTROL Add]** from the **[!UICONTROL Eligible items & exclusions]** section.
 
-Example: `CLEARANCE01, GIFTCARD, SALE_CATEGORY`
+Select the items or groups that should not count toward task completion, then select **[!UICONTROL Exclude]**.
+
+![](assets/task-create-exclusion-add.png)
+
+Items from the global exclusions list are automatically added as exclusions. Exclusions take priority over inclusions: items listed as excluded do not count, even if they are also part of an included group.
 
 ### Bring your own data for eligibility & exclusions {#byod-personalization}
 
@@ -132,7 +174,7 @@ Example: `CLEARANCE01, GIFTCARD, SALE_CATEGORY`
 >
 >The **[!UICONTROL Bring your own data]** option is currently available to a restricted set of organizations and will be made available more broadly in a future release.
 
-In addition to entering item IDs to make eligible or exclude, you can also drive eligibility from your external Loyalty Challenges data at runtime using the **[!UICONTROL Bring your own data]** option.
+In addition to selecting items and groups in Journey Optimizer, you can also drive eligibility from your external Loyalty Challenges data at runtime using the **[!UICONTROL Bring your own data]** option.
 
 When **[!UICONTROL Bring your own data]** is selected, eligibility per participant is resolved at runtime from data synchronized with your Loyalty Challenges environment instead of a list of item IDs.
 

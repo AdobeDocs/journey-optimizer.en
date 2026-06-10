@@ -17,19 +17,11 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -85,7 +77,7 @@ To add a condition to your journey, follow the steps below.
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_simple2"
 >title="About the simple expression editor"
->abstract="The simple expression editor mode allows you to perform simple queries based on a combination of fields. All the available fields are displayed on the left side of the screen. Drag and drop fields into the main zone. To combine the different elements, interlock them into one another to create different groups and/or group levels. You can then select a logical operator to combine elements on the same level."
+>abstract="The simple expression editor mode allows you to perform simple queries based on a combination of fields. All the available fields are displayed on the left side of the screen. Fields are dragged and dropped into the main zone. To combine the different elements, they are interlocked into one another to create different groups and/or group levels. A logical operator then combines elements on the same level."
 
 When using several conditions in a journey, you can define labels for each of them to identify them more easily.
 
@@ -226,3 +218,5 @@ To use an audience in a journey condition, follow these steps:
    >[!NOTE]
    >
    >Note that only the individuals with the **Realized** audience participation status will be considered as members of the audience. For more on how to evaluate an audience, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+
+➡️ **See it in practice:** Learn how to use time and day-of-week conditions to [send emails only on weekdays](weekday-email-uc.md).

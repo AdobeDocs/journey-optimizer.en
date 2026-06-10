@@ -14,12 +14,8 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
-    internal-label: Administration
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
@@ -29,6 +25,8 @@ subfeature_v2:
     internal-label: Email design
   - id: fae48155-b23f-40d2-a252-a25bce350b4d
     internal-label: Email configuration
+  - id: c41e8697-e629-4c38-96b3-564faaa17acf
+    internal-label: Dynamic content
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -187,15 +185,12 @@ When using a configuration with personalized settings in a campaign or a journey
 
 ## Check your configuration {#check-configuration}
 
-When using a personalized configuration in a campaign or a journey, you can preview your email content using test profiles to check for potential errors with the dynamic settings you defined. Follow the steps below.
+When using a personalized configuration in a campaign or a journey, you can preview your email content to check for potential errors with the dynamic settings you defined. You can use either simulation method:
 
->[!NOTE]
->
->In addition to test profiles, [!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
 
-To preview your content using test profiles, follow these steps: 
-
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button. [Learn more](../content-management/preview.md)
+To preview your content using test profiles, follow these steps:
 
 1. Select a [test profile](../content-management/test-profiles.md).
 

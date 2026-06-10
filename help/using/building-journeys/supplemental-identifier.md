@@ -10,14 +10,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: d08afb72-92f6-4856-88e3-11ec34313c2f
     internal-label: Event configuration
@@ -34,7 +28,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
 >title="Use supplemental identifier"
->abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. To define it, select the field to be used as the supplemental identifier and choose a namespace to associate with it."
+>abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. It consists of the field used as the supplemental identifier and a namespace associated with it."
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>

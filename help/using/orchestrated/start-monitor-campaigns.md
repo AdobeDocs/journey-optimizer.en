@@ -21,6 +21,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 # Start and monitor your Orchestrated campaigns {#start-monitor}
 
@@ -73,7 +76,7 @@ The **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolba
 
 You can also quickly identify failed activities using the [visual status indicators](#activities) displayed directly on each activity. For detailed troubleshooting, open the [campaign's logs](#logs-tasks), which provide in-depth information about the error and its context.
 
-If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities and simulate content](activities/channels.md#simulate-content-test-profiles).
+If you have added channel activities in the canvas, you can preview and test the content of your messages. [Learn how to work with channel activities and simulate content](activities/channels.md#simulate-content-test-profiles).
 
 >[!TIP]
 >

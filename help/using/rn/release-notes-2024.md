@@ -8,6 +8,16 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
+feature_v2:
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
 ---
 # Release Notes 2024 {#release-notes-2024}
 
@@ -271,7 +281,7 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
-* You can now edit or delete an SMS API Channel Configuration. [Learn more](../sms/sms-configuration.md)
+* You can now edit or delete an SMS API Channel Configuration. [Learn more](../mobile/mobile-configuration.md)
 
 * The following enhancements have been introduced to improve your SMS messaging capabilities with Infobip and Sinch:
 
@@ -279,7 +289,7 @@ This release comes with the improvements listed below.
 
     * You can create and deliver a default SMS message when a keyword is not recognized.
 
-    Learn more about these improvements in the SMS configuration documentation for [Infobip](../sms/sms-configuration-infobip.md) and [Sinch](../sms/sms-configuration-sinch.md). 
+    Learn more about these improvements in the SMS configuration documentation for [Infobip](../mobile/mobile-configuration-infobip.md) and [Sinch](../mobile/mobile-configuration-sinch.md). 
 
 
 <!--**Journeys**-->
@@ -668,7 +678,7 @@ This release brings the new capabilities listed below.
 <td>
 <p>You can now configure additional SMS providers within Journey Optimizer, in addition of the default providers Sinch, Infobip, and Twilio.</p>
 <img src="assets/do-not-localize/byo_sms.gif"/>
-<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../mobile/mobile-configuration-custom.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -858,7 +868,7 @@ Read more in the [content fragment](../content-management/fragments.md) document
 
 #### SMS channel
 
-* You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined. [Learn more](../sms/sms-configuration.md)
+* You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined. [Learn more](../mobile/mobile-configuration.md)
 
 * After creation, the **API Token** field on the **API credential details** page is now masked.
 
@@ -1266,7 +1276,7 @@ Previously available as Beta, the following improvements are now available to al
 
 **SMS channel**
 
-* **Opt-in/opt-out keywords** - When configuring your SMS channel, you can now customize the **Opt-in and Opt-out keywords** as per your preferences. Journey Optimizer triggers the response based on these specified keywords. [Learn more](../sms/sms-configuration.md)
+* **Opt-in/opt-out keywords** - When configuring your SMS channel, you can now customize the **Opt-in and Opt-out keywords** as per your preferences. Journey Optimizer triggers the response based on these specified keywords. [Learn more](../mobile/mobile-configuration.md)
 
 **Campaigns**
 
@@ -1334,7 +1344,7 @@ This release comes with the improvements listed below.
 
 **SMS Channel**
 
-* **Double Opt-In** - The Double Opt-In workflow for SMS guarantees that users explicitly opt-in to receive messages when the request is initiated from their device. Users initiate the consent process by sending an inbound SMS message. Upon confirming their consent, a follow-up message is sent, requesting final verification. If a user profile does not exist, it is created upon successful confirmation. [Learn more](../sms/sms-configuration.md) 
+* **Double Opt-In** - The Double Opt-In workflow for SMS guarantees that users explicitly opt-in to receive messages when the request is initiated from their device. Users initiate the consent process by sending an inbound SMS message. Upon confirming their consent, a follow-up message is sent, requesting final verification. If a user profile does not exist, it is created upon successful confirmation. [Learn more](../mobile/mobile-configuration.md) 
 
    Note that this capability is available with Sinch and Infobip SMS providers.
 

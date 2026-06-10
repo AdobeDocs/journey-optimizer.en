@@ -13,10 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
@@ -87,7 +83,7 @@ To create a content template from scratch, follow the steps below.
     Learn how to create content for the different channels in the following sections:
     * [Define email content](../email/get-started-email-design.md)
     * [Define push content](../push/design-push.md)
-    * [Define SMS content](../sms/create-sms.md#sms-content)
+    * [Define SMS content](../mobile/create-mobile-message.md#sms-content)
     * [Define direct mail content](../direct-mail/create-direct-mail.md)
     * [Define In-app content](../in-app/design-in-app.md)
     * [Define web content](../web/create-web.md#edit-web-content)   

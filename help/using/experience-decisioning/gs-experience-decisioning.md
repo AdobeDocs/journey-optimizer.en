@@ -1,6 +1,6 @@
 ---
-title: Get started with Decisioning
-description: Learn more about Decisioning
+title: Get started with Decisioning 
+description: Learn more about Decisioning 
 feature: Decisioning
 topic: Integrations
 role: User
@@ -12,12 +12,8 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: a653cc2e-bc85-4353-a306-399e5b247978
-    internal-label: Journey Optimizer campaigns
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
-  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
-    internal-label: Integrations
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -29,6 +25,13 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 # Get started with Decisioning {#get-started-experience-decisioning}
 
@@ -41,11 +44,11 @@ topic_v2:
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), email, SMS, and push notifications.
+These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), email, SMS, push notifications, and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports. Experience Decisioning support for direct mail is a new capability; previously, the Decisioning engine was not available for direct mail extraction files.
 
 >[!IMPORTANT]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Push notification**, and **SMS** channels. Decisioning for the **Email** channel is available in Limited Availability only. To request access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, and **Direct mail** channels.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -106,7 +109,13 @@ The main steps to work with Decisioning are as follows:
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
 
-## Additional resources
+## Decisioning process {#process}
+
+The chart below summarizes the end-to-end Decisioning process — from managing decision items and configuring selection strategies, to embedding decision policies into a code-based experience journey or campaign.
+
+![](assets/decisioning-process.png){zoomable="yes"}
+
+## Additional resources {#additional-resources}
 
 * **[Create decision items](items.md)** - Learn how to create and manage decision items including offers, content variations, and experiences.
 * **[Configure decision catalogs](catalogs.md)** - Understand how to organize decision items into catalogs for better management.

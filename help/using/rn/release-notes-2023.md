@@ -9,6 +9,16 @@ hide: true
 role: User
 level: Beginner, Intermediate
 exl-id: 61e6291f-c063-44a0-950c-8bb76de693f2
+feature_v2:
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
 ---
 # Release Notes 2023 {#release-notes-2023}
 
@@ -32,7 +42,7 @@ This release brings the new capabilities listed below.
 <td>
 <p>Sandbox tooling allows you to copy objects across multiple sandboxes by leveraging package export and import. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox.</p>
 <!--img src="../data/assets/dataset-export-setup.png"-->
-<p>For more information, refer to the <a href="../building-journeys/copy-to-sandbox.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../configuration/copy-objects-to-sandbox.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -49,7 +59,7 @@ This release brings the new capabilities listed below.
 <td>
 <p>With the SMS Channel, you can now enhance your communication by sending Multimedia Message Service (MMS) messages, enabling the sharing of images, GIFs, or videos with your customers. Note that this feature is currently available with Sinch only.</p>
 <img src="assets/do-not-localize/mms.gif"/>
-<p>For more information, refer to the <a href="../sms/create-sms.md#mms-content">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../mobile/create-mobile-message.md#mms-content">detailed documentation</a>.</p>
 </tr>
 </tbody>
 </table>
@@ -210,9 +220,9 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
-* Two new fields, **Opt-in message** and **Help message**, have been added to the API configuration screen, allowing users to customize responses for inbound keywords. Note that this is only available for Sinch SMS provider. [Learn more](../sms/sms-configuration.md)
+* Two new fields, **Opt-in message** and **Help message**, have been added to the API configuration screen, allowing users to customize responses for inbound keywords. Note that this is only available for Sinch SMS provider. [Learn more](../mobile/mobile-configuration.md)
 
-* SMS opt-out is no longer managed at the channel level. It is now number-specific, meaning that if some profiles opt out from a given number or short code, you are still able to send them messages from other numbers you may be using to send out SMS messages. A new option enables you to select the **Opt-out number** you want to use for a given surface. [Learn more](../sms/sms-configuration.md)
+* SMS opt-out is no longer managed at the channel level. It is now number-specific, meaning that if some profiles opt out from a given number or short code, you are still able to send them messages from other numbers you may be using to send out SMS messages. A new option enables you to select the **Opt-out number** you want to use for a given surface. [Learn more](../mobile/mobile-configuration.md)
 
 **Direct mail channel**
 
@@ -300,7 +310,7 @@ This release comes with the improvements listed below.
 <!--
 **APIs**
 
-A new API to create and manage Content Fragments is now available. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/content-templates/#tag/Content-fragment-API){target="_blank"}.
+A new API to create and manage Content Fragments is now available. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/content#tag/Content-fragment-API){target="_blank"}.
 -->
 
 <!--
@@ -618,8 +628,8 @@ Enhancements have been made to the audience picker in journeys or campaigns, wit
 
 **SMS channel**
 
-* Infobip has been added as a vendor provider when configuring your SMS channel configurations. [Read more](../sms/sms-configuration.md)
-* Twillio - API credential setup now includes the ability to add Messaging service SID for seamless integration with your Twilio account. [Read more](../sms/sms-configuration.md)
+* Infobip has been added as a vendor provider when configuring your SMS channel configurations. [Read more](../mobile/mobile-configuration.md)
+* Twillio - API credential setup now includes the ability to add Messaging service SID for seamless integration with your Twilio account. [Read more](../mobile/mobile-configuration.md)
 
 **In-app channel**
 
@@ -721,7 +731,7 @@ Information below is subject to change without prior notice until the release av
 * The journey canvas now displays the activity ID on message activities and end tags. This improves reporting and retargeting.
 * The layout of the configuration pane, which appears in actions, data sources, events and journeys, has been improved.
 * New insight to number of nodes on canvas with safeguards for helping grow: keep journeys easy to read, QA and troubleshoot with a maximum number of nodes per journey at 50. [Read more](../start/guardrails.md#journeys-guardrails-journeys)
-* When adding an [Email](../email/create-email.md), [SMS](../sms/create-sms.md) or [Push](../push/create-push.md) action in a journey, the surface is now pre-filled, by default, with the last used surface for that channel, in the current journey.
+* When adding an [Email](../email/create-email.md), [SMS](../mobile/create-mobile-message.md) or [Push](../push/create-push.md) action in a journey, the surface is now pre-filled, by default, with the last used surface for that channel, in the current journey.
 * You can now define static or dynamic query parameters in your custom actions. [Learn more](../action/about-custom-action-configuration.md#url-configuration)
 
 **Reporting**
@@ -765,7 +775,7 @@ Information below is subject to change without prior notice until the release av
 <td>
 <p>With SMS click tracking, you can monitor the performance of your shortened URLs, identify who clicked on them, and use this data to retarget those customers with subsequent campaigns.</p>
 <img src="assets/do-not-localize/sms-tracking.gif"/>
-<p>For more information, refer to the <a href="../sms/create-sms.md#sms-content">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../mobile/create-mobile-message.md#sms-content">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

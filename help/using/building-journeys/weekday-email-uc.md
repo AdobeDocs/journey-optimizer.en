@@ -17,41 +17,15 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
-    internal-label: Journey management
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
     internal-label: Journey design
-  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
-    internal-label: Audiences
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: b9d00d1b-a371-4a75-a52a-3f8ea2029020
-    internal-label: Journey testing
-  - id: ba62ad25-65cb-4ea9-b7aa-0fa87c4a9fa0
-    internal-label: Journey properties
-  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
-    internal-label: Wait activity
-  - id: cce82f05-fc3c-4af7-85ff-8bba603861a7
-    internal-label: Condition activities
-  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
-    internal-label: Action activities
-  - id: da923278-9c80-47b0-bebd-b68c341e76fb
-    internal-label: Publishing
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

@@ -13,8 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
@@ -26,8 +24,6 @@ subfeature_v2:
     internal-label: Templates
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fae48155-b23f-40d2-a252-a25bce350b4d
-    internal-label: Email configuration
   - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
     internal-label: Publish
 role_v2:
@@ -45,13 +41,9 @@ You can test the rendering of some of your email templates, whether created from
 
 1. Click **[!UICONTROL Edit content]** from the **[!UICONTROL Template properties]**.
 
-1. Click **[!UICONTROL Simulate Content]** and select a test profile to check your rendering. [Learn more](../content-management/preview-test.md)
+1. Click **[!UICONTROL Simulate content]** to preview and test your content. [Learn how to preview and test content](../content-management/preview-test.md)
 
     ![](assets/content-template-stimulate.png)
-     
-    >[!NOTE]
-    >
-    >[!DNL Journey optimizer] also allows you to test different variants of your content templates by previewing them and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
 
 1. You can send a proof to test your content and have it approved by some internal users before using it in a journey or a campaign.
 

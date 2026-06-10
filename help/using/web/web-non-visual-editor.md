@@ -11,11 +11,13 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
 subfeature_v2:
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
+  - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
+    internal-label: Web channel
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -64,7 +66,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
     Click the **[!UICONTROL More actions]** button next to your modification and select **[!UICONTROL Info]** to display its details. You can also **[!UICONTROL Delete the modification]** if needed.
 
-    ![](assets/web-non-visual-editor-ex-more.png){width="50%" align="left"}
+    ![](assets/web-non-visual-editor-ex-more.png){width="50%"}
 
     >[!NOTE]
     >
@@ -75,7 +77,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
 1. In addition, you can select any element of your website and track the clicks on that element. To enable click tracking, and define the actions to track, click the second icon on the left rail, as shown below:
     
-    ![](assets/web-campaign-click.png){width="50%" align="left"}
+    ![](assets/web-campaign-click.png){width="50%"}
 
     Use the **Add Component** button to select a new action to track. Learn more about click tracking usage in [this section](monitor-web-experiences.md#use-click-tracking).
 

@@ -10,13 +10,15 @@ level: Intermediate
 keywords: journey, first, start, quick-start, audience, event, action
 exl-id: 770bdbf2-560d-4127-bdb9-1f82495a566f
 version: Journey Orchestration
+feature_v2: []
+subfeature_v2: []
 ---
 # Browse & filter your journeys {#browse-journeys}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_view"
 >title="Journeys list and calendar views"
->abstract="In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
+>abstract="In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules. These buttons switch between the list and calendar views at any time."
 
 ## Journey dashboard {#dashboard-jo}
 

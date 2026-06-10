@@ -17,14 +17,8 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: fe338112-e2ce-4876-8989-fc4d497613f1
-    internal-label: Email
 subfeature_v2:
   - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
     internal-label: Wait activity
@@ -34,8 +28,6 @@ subfeature_v2:
     internal-label: Reaction events
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -48,12 +40,13 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
 ---
+	
 # Test your journey{#testing_the_journey}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test"
 >title="Test your journey"
->abstract="Use test profiles to test your journey before publishing it. This allows you to analyze how individuals flow in the journey and troubleshoot before publication."
+>abstract="Test profiles let you test your journey before publishing it. This allows you to analyze how individuals flow in the journey and troubleshoot before publication."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-dry-run" text="Journey Dry run"
 
 Once you have built your journey, you can test it before publishing. [!DNL Adobe Journey Optimizer] offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
@@ -160,7 +153,7 @@ To validate the journey end to end:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_configuration"
 >title="Configure the test mode"
->abstract="If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending."
+>abstract="If a journey contains several events, the drop-down list is used to select an event. For each event, the fields passed and the execution of the event sending are configured."
 
 Use the **[!UICONTROL Trigger an event]** button to configure an event that will make a person enter the journey.
 

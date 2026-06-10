@@ -19,33 +19,13 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: d556b755-390a-43f0-be32-a08cf6236126
-    internal-label: Configuration
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
-  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
-    internal-label: Use cases
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
-    internal-label: Wait activity
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: d08afb72-92f6-4856-88e3-11ec34313c2f
-    internal-label: Event configuration
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
-  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
-    internal-label: Reaction events
   - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
     internal-label: Audience Qualification events
   - id: fa683eda-48de-4558-af32-2673edcd44fe
     internal-label: Events
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -63,7 +43,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification"
 >title="Audience qualification"
->abstract="Trigger journey entry or continuation when a profile qualifies for or exits an [!DNL Adobe Experience Platform] audience. Recommended for streaming audiences; use a Read Audience activity for batch scenarios."
+>abstract="Triggers journey entry or continuation when a profile qualifies for or exits an [!DNL Adobe Experience Platform] audience. Recommended for streaming audiences; a Read Audience activity is used for batch scenarios."
 
 ## About audience qualification events{#about-segment-qualification}
 
@@ -88,22 +68,22 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_label"
 >title="Label"
->abstract="Add an optional label to identify this activity in reporting and test mode logs."
+>abstract="An optional label to identify this activity in reporting and test mode logs."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_audience"
 >title="Audience"
->abstract="Select the [!DNL Adobe Experience Platform] audience to leverage. The journey listens for profile entrances and exits from this audience."
+>abstract="The [!DNL Adobe Experience Platform] audience the journey monitors. Profiles enter or move forward as they qualify for or exit this audience. Streaming audiences are recommended so qualification is evaluated in real time."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_behavior"
 >title="Behavior"
->abstract="Choose whether to listen to audience entrances, exits, or both."
+>abstract="Defines which audience membership changes the journey reacts to: when profiles qualify for (enter) the audience, when they leave (exit) it, or both. Listening to both covers the full membership lifecycle, while a single option restricts the journey to one direction."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_identity"
 >title="Identity type"
->abstract="Select the identity type used to identify individuals. Only people-based identity namespaces are available."
+>abstract="The identity namespace used to recognize individuals as they qualify for the audience. Only people-based identity namespaces are available, and profiles without this identity cannot enter the journey."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification_merge_policy"
