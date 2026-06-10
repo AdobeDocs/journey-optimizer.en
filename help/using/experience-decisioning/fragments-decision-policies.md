@@ -175,4 +175,4 @@ In this example, the decision policy includes two decision items that have AEM f
 
     ![](assets/aem-fragment-attribute.png)
 
-1. Before activating your campaign or journey, you can use **[!UICONTROL Simulate content]** to preview how AEM Content Fragment field values will render for a specific test profile. [Learn more on simulating content](../content-management/preview-test.md)
+1. Before activating your campaign or journey, use either simulation method to preview how AEM Content Fragment field values will render: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with a specific test profile. [Learn more on simulating content](../content-management/preview-test.md)

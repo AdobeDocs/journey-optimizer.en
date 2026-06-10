@@ -74,7 +74,7 @@ Avoid using rich-text applications, as they may introduce hidden characters or l
 
 ## Check character count before sending {#check-character-count}
 
-Use plain-text applications or Journey Optimizer **[!UICONTROL Simulate content]** menu to verify character counts.
+Use plain-text applications or either simulation method in **[!UICONTROL Simulate content]** to verify character counts.
 
 While Journey Optimizer displays a character count, including spaces, during content simulation, note that:
 

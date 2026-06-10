@@ -74,7 +74,12 @@ Note that, for now, no contextual attribute is available for use in the left rai
 
 ## Test and check your content
 
-Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to preview and test content](../content-management/preview-test.md). To browse back to the campaign creation screen, click the left arrow.
+Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content. You can use either simulation method:
+
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation.
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
+
+[Learn how to preview and test content](../content-management/preview-test.md). To browse back to the campaign creation screen, click the left arrow.
 
 ![](assets/create-campaign-design.png)
 

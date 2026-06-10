@@ -49,12 +49,12 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card2"
 >title="Create journeys"
->abstract="Use **[!DNL Adobe Journey Optimizer]** to build real-time orchestration use cases using contextual data stored in events or data sources."
+>abstract="**[!DNL Adobe Journey Optimizer]** builds real-time orchestration use cases using contextual data stored in events or data sources."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_create"
 >title="Journeys"
->abstract="Design customer journeys to deliver personalized, contextual experiences. Journey Optimizer allows you to build real-time orchestration use cases with contextual data stored in events or data sources. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
+>abstract="Customer journeys deliver personalized, contextual experiences. Journey Optimizer allows you to build real-time orchestration use cases with contextual data stored in events or data sources. The **Overview** tab displays a dashboard with key metrics related to your journeys. The **Browse** tab displays the list of existing journeys."
 
 [!DNL Adobe Journey Optimizer] includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. The journey user interface is detailed on [this page](journey-ui.md).
 

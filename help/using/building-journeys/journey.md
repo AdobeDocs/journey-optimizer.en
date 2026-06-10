@@ -58,7 +58,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_canvas"
 >title="Create a journey"
->abstract="Use the drag-and-drop canvas to orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact."
+>abstract="The drag-and-drop canvas orchestrates messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs" text="Create your first journey"
 
 
@@ -365,7 +365,7 @@ Validate journeys with test profiles before going live, and preview execution wi
 
 Duplicate journeys across sandboxes to streamline testing and deployment workflows.
 
-[Copy journeys](copy-to-sandbox.md)
+[Copy journeys](../configuration/copy-objects-to-sandbox.md#objects)
 :::
 
 :::

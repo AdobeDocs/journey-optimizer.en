@@ -231,11 +231,11 @@ To define custom dark mode settings, follow the steps below.
     >
     >The live view is a generic preview designed to compare how the rendering might look across various device sizes. The final rendering may vary according to the recipient's email client.
 
-1. Once you are satisfied with the changes for dark mode, click **[!UICONTROL Simulate Content]**.
+1. Once you are satisfied with the changes for dark mode, click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to check email rendering.
 
     ![](assets/dark-mode-simulate.png)
 
-1. Select **[!UICONTROL Render email]** and connect to your Litmus account. You can see the final dark mode rendering for various email clients. Learn more on [Email rendering](../content-management/rendering.md).
+1. Select **[!UICONTROL Render email]** and connect to your Litmus account. You can see the final dark mode rendering for various email clients. Learn more on [Email rendering](../content-management/rendering.md). To test content variations with sample input data or AI auto-generation instead, click **[!UICONTROL Simulate content]** directly. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
 
     >[!WARNING]
     >

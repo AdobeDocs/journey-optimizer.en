@@ -1,5 +1,5 @@
 ---
-title: Batch decisioning in direct mail
+title: Batch decisioning in direct mail 
 description: Use Experience Decisioning to personalize direct mail extraction files or to export decisioning data for use in downstream systems
 feature: Decisioning, Direct Mail
 topic: Integrations
@@ -86,3 +86,4 @@ This supports batch decisioning use cases through the direct mail channel with E
 * [Create decision policies](create-decision-policy.md#add) – Add a decision policy in the Direct Mail tab
 * [Direct mail configuration](../direct-mail/direct-mail-configuration.md) – File routing and channel configuration
 * [Get started with Decisioning](gs-experience-decisioning.md) – Concepts and guardrails
+
