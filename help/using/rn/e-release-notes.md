@@ -89,30 +89,11 @@ The following capabilities and improvements are coming to orchestrated campaigns
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Quiet Hours support for orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now apply <strong>quiet hours</strong> to Orchestrated campaigns. Quiet hours let you define <strong>time-based exclusions</strong> to prevent messages from being sent during specific periods, helping you respect customer preferences and compliance requirements across campaign orchestration use cases.</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14054">Link to DOCAC JIRA task</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
 * **Loop-based personalization for relational data in Orchestrated campaigns** - The personalization editor now supports a **Loop block** that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14703">Link to DOCAC JIRA task</a>
 
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of **email header fields**, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13761">Link to DOCAC JIRA task</a>
-
-* **Target dimension simplification in Orchestrated campaigns** - The active **targeting dimension** is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-13554">Link to DOCAC JIRA task</a>
 
 * **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default **execution field** set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14718">Link to DOCAC JIRA task</a>
