@@ -235,7 +235,7 @@ The following capabilities and improvements are coming to content management and
 <table>
 <thead>
 <tr>
-<th><strong>Content fragments with Adobe Experience Manager</strong><br/></th>
+<th><strong>Improvements to Adobe Experience Manager Content Fragments in Journey Optimizer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -247,8 +247,12 @@ The following capabilities and improvements are coming to content management and
 <li>Once a fragment is selected, its context is preserved throughout the message, enabling authors to reuse fragment fields across content blocks without reselecting.</li>
 <li>A new dedicated Content Fragments listing page has been introduced in Journey Optimizer for improved lifecycle management; users can identify out-of-sync fragments and trigger manual syncs to stay current.</li>
 <li>Locale and variation support now allows marketers to work with alternate versions of the same Content Fragment more deliberately.</li>
+<li>You now have flexibility in how Adobe Journey Optimizer accesses your Adobe Experience Manager content. This release introduces the ability to <strong>switch the source repository</strong> for Content Fragments used in your journeys and campaigns.</li>
+<li>Now compatible with <b>Managed Services</b>, you can view, access, and use Adobe Experience Manager Content Fragments directly in Journey Optimizer for personalization. Simply add your Adobe Experience Manager Managed Services repository URL in the configuration settings as a one-time setup.</li>
 </ul>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-14686">Link to DOCAC JIRA task</a></p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14821">Link to DOCAC JIRA task</a></p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14684">Link to DOCAC JIRA task</a></p>
 </td>
 </tr>
 </tbody>
@@ -257,24 +261,18 @@ The following capabilities and improvements are coming to content management and
 <table>
 <thead>
 <tr>
-<th><strong>Adobe Experience Manager repository configuration</strong><br/></th>
+<th><strong>AI assistant integration with Adobe Experience Manager Asset Essentials</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You now have flexibility in how Adobe Journey Optimizer accesses your Adobe Experience Manager content. This release introduces the ability to <strong>switch the source repository</strong> for Content Fragments used in your journeys and campaigns.</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14684">Link to DOCAC JIRA task</a></p>
+<p>The AI Assistant now automatically fetches <b>brand-approved images</b> directly from your Adobe Experience Manager Assets when generating Emails, Web pages, and Push notifications. This eliminates the need to manually search the Assets or rely on generic AI fallbacks, ensuring every visual is perfectly accurate and brand-compliant.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14761">Link to DOCAC JIRA task</a></p>
 </td>
 </tr>
 </tbody>
 </table>
-
-* **Native Adobe Experience Manager Content Fragments (Managed Services) Integration** - Now compatible with **Managed Services**, you can view, access, and use Adobe Experience Manager Content Fragments directly in Journey Optimizer for personalization. Simply add your Adobe Experience Manager Managed Services repository URL in the configuration settings as a one-time setup.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-14821">Link to DOCAC JIRA task</a>
-
-* **AI assistant integration with Adobe Experience Manager Asset Essentials** - The AI Assistant now automatically fetches **brand-approved images** directly from your Adobe Experience Manager Assets when generating Emails, Web pages, and Push notifications. This eliminates the need to manually search the Assets or rely on generic AI fallbacks, ensuring every visual is perfectly accurate and brand-compliant.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-14761">Link to DOCAC JIRA task</a>
 
 ### Custom channels {#june-26-channels}
 
