@@ -48,8 +48,8 @@ The following capabilities and improvements are coming to journeys in this relea
 <tbody>
 <tr>
 <td>
-<p>Use the new <strong>Optimize activity</strong> to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
-<p>For each profile, Journey Optimizer evaluates the available paths and routes the profile down the one predicted to best achieve your selected goal. For example, you can let the activity determine which offer or incentive drives the most <strong>conversions</strong>, which channel or message variant maximizes engagement, or which path generates the highest <strong>revenue</strong> per customer.</p>
+<p>The <strong>Optimize activity</strong> now supports <strong>Targeting Rules</strong>. Targeting Rules enable you to define specific criteria that customers must meet to qualify for a particular journey path, based on audience segments or profile attributes.</p>
+<p>Unlike experimentation, where customers are assigned to paths randomly, targeting uses deterministic logic to ensure that the appropriate audience or customer profile is routed to the intended path.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-14720">Link to DOCAC JIRA task</a></p>
 </td>
