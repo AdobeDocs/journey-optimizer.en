@@ -45,13 +45,14 @@ Before you test and send a direct mail message, [create the message and configur
 
 ## Preview the extraction file {#preview-dm}
 
-Once the content of the extraction file has been defined, you can use test profiles to preview it. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
+Once the content of the extraction file has been defined, preview it using either simulation method:
 
-To do this, click **[!UICONTROL Simulate content]** then add a test profile to check how the extraction file rendering using the test profile data.
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown and add a test profile to check how the extraction file renders.
+
+Detailed information on how to preview & test content is available in the [Content Management](../content-management/preview-test.md) section.
 
 ![Simulate content preview for a direct mail extraction file](assets/direct-mail-simulate.png){width="800" align="center"}
-
-Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
 
 Once that the file content is ready to be sent, close the simulate screen then click the **[!UICONTROL Review to activate]** button.
 

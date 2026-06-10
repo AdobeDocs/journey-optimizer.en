@@ -1,6 +1,6 @@
 ---
-title: Use decision policies in messages
-description: Learn how to use decision policies in your messages.
+title: Use decision policies in messages 
+description: Learn how to use decision policies in your messages. 
 feature: Decisioning
 topic: Integrations
 role: User
@@ -39,7 +39,7 @@ Once you've added a decision policy to your content, you can use attributes from
 
 >[!CAUTION]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **SMS**, **Push notification**, and **Email** channels.
+>Decision policies are available to all customers for the **Code-based Experience**, **Email**, **SMS**, **Push notification**, and **Direct mail** channels.
 
 ## Insert the decision policy code {#insert}
 
@@ -107,13 +107,23 @@ You can also insert the decision policy code when using the **[!UICONTROL Code y
 >
 >Experience Decisioning with push notifications requires a specific version of the Mobile SDK. Before implementing this feature, check the [release notes](https://developer.adobe.com/client-sdks/home/release-notes){target="_blank"} to identify the required version and ensure you have upgraded accordingly. You can also view all available SDK versions for your platform in [this section](https://developer.adobe.com/client-sdks/home/current-sdk-versions){target="_blank"}.
 
+>[!TAB Direct Mail]
+
+1. From the extraction file configuration, open the **Personalization Editor** (for example, in the **[!UICONTROL Data]** field of a column).
+
+2. Navigate to **[!UICONTROL Decision policies]** and select **[!UICONTROL Insert policy]** to add the code for your decision policy.
+
+   ![](assets/decision-policy-add-dm-syntax.png)
+
+3. Use the returned decision item attributes as column data so that the selected offer information is included in the extraction file for each profile. 
+
 >[!ENDTABS]
 
 The decision policy code is added. You can now use attributes from the returned decision items to personalize your content.
 
 >[!NOTE]
 >
->For code-based experience and email channels, repeat this sequence once per decision item you want returned. For example, if you chose to return 2 items when [creating the decision](create-decision-policy.md), repeat the sequence twice. For SMS and Push channels, only one decision item can be returned.
+>For code-based experience, email and direct mail channels, repeat this sequence once per decision item you want returned. For example, if you chose to return 2 items when [creating the decision](create-decision-policy.md), repeat the sequence twice. For SMS and Push channels, only one decision item can be returned.
 
 ## Personalize with decision item attributes {#attributes}
 
@@ -129,7 +139,7 @@ Decision item attributes and contextual attributes are not supported by default 
 
 To add an attribute, click the **`+`** icon next to the attribute. You can add as many attributes as needed. You can also include other personalization attributes, such as profile data.
 
-* For **Email** and **Code-based** channels, wrap the attributes within the `#each` loop using square brackets `[ ]`, and add a comma before the closing `/each` tag.
+* For **Email**, **Code-based**, and **Direct Mail** channels, wrap the attributes within the `#each` loop using square brackets `[ ]`, and add a comma before the closing `/each` tag.
 
    +++See example
 

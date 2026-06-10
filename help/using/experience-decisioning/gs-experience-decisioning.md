@@ -1,6 +1,6 @@
 ---
-title: Get started with Decisioning
-description: Learn more about Decisioning
+title: Get started with Decisioning 
+description: Learn more about Decisioning 
 feature: Decisioning
 topic: Integrations
 role: User
@@ -44,11 +44,11 @@ subfeature_v2:
 
 Decisioning simplifies personalization by offering a centralized catalog of marketing offers known as 'decision items' and a sophisticated decision engine. This engine leverages rules and ranking criteria to select and present the most relevant decision items to each individual.
 
-These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), email, SMS, and push notifications.
+These decision items are seamlessly integrated into messages and experiences across [!DNL Adobe Journey Optimizer] channels: [code-based experience](../code-based/get-started-code-based.md), email, SMS, push notifications, and [direct mail](batch-decisioning-direct-mail.md) for batch decisioning and personalized direct mail exports. Experience Decisioning support for direct mail is a new capability; previously, the Decisioning engine was not available for direct mail extraction files.
 
 >[!IMPORTANT]
 >
->Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, and **SMS** channels. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>Decision policies are available to all customers for the **Code-based Experience**, **Email**, **Push notification**, **SMS**, and **Direct mail** channels.
 
 ➡️ [Discover this feature in video](#video)
 
@@ -109,7 +109,13 @@ The main steps to work with Decisioning are as follows:
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
 
-## Additional resources
+## Decisioning process {#process}
+
+The chart below summarizes the end-to-end Decisioning process — from managing decision items and configuring selection strategies, to embedding decision policies into a code-based experience journey or campaign.
+
+![](assets/decisioning-process.png){zoomable="yes"}
+
+## Additional resources {#additional-resources}
 
 * **[Create decision items](items.md)** - Learn how to create and manage decision items including offers, content variations, and experiences.
 * **[Configure decision catalogs](catalogs.md)** - Understand how to organize decision items into catalogs for better management.

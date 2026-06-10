@@ -47,7 +47,7 @@ Use journey properties to configure global settings for your journey, including 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties"
 >title="Journey properties"
->abstract="Configure global settings for this journey, including name, tags, entrance rules, time zone, dates, timeout, and conflict management. Read-only parameters are hidden by default. Available options vary based on journey status, your permissions, and product configuration."
+>abstract="The journey properties hold global settings for this journey, including name, tags, entrance rules, time zone, dates, timeout, and conflict management. Read-only parameters are hidden by default. Available options vary based on journey status, your permissions, and product configuration."
 
 ## Access the properties of a journey {#access-properties}
 
@@ -114,7 +114,7 @@ Profile entrance management depends on the type of journey. Learn more about pro
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_entrance"
 >title="Allow reentrance"
->abstract="By default, new journeys allow reentrance. You can uncheck the **Allow reentrance** option for example if you want to offer a one-time gift when a person enters a shop."
+>abstract="By default, new journeys allow reentrance. Unchecking the **Allow reentrance** option prevents a person from entering the journey again, for example to offer a one-time gift when a person enters a shop."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
 By default, new journeys allow reentrance. You can uncheck the **Allow reentrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop. 
@@ -124,7 +124,7 @@ By default, new journeys allow reentrance. You can uncheck the **Allow reentranc
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Reentrance wait period"
->abstract="Set the time to wait before allowing a profile to enter the journey again in unitary journeys. This prevents users from reentering the journey for a chosen duration. Maximum duration: 90 days."
+>abstract="The reentrance wait period is the time to wait before a profile can enter the journey again in unitary journeys. It prevents users from reentering the journey for a chosen duration. Maximum duration: 90 days."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
 When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days.
@@ -142,7 +142,7 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_payload_size"
 >title="Current journey payload size"
->abstract="Displays the current size of the journey payload compared to the configured limit. Use this indicator to monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded."
+>abstract="Displays the current size of the journey payload compared to the configured limit. This indicator helps monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded."
 
 The **[!UICONTROL Current journey payload size]** field in the journey properties panel displays the current size of your journey's payload in relation to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator is visible at any stage of journey authoring.
 
@@ -165,12 +165,12 @@ The timezone is defined at journey level. You can enter a fixed time zone or use
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_start_date"
 >title="Start date"
->abstract="Select the date when profiles can begin entering the journey. If no start date is set, it defaults to the journey's publication date."
+>abstract="The start date is when profiles can begin entering the journey. If no start date is set, it defaults to the journey's publication date."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_end_date"
 >title="End date"
->abstract="Set the date when the journey ends. On this date, active profiles automatically exit the journey, and no new entry is allowed."
+>abstract="The end date is when the journey ends. On this date, active profiles automatically exit the journey, and no new entry is allowed."
 
 By default, profiles can enter your journey as soon as it is published, and can stay until the [global journey timeout](#global_timeout) is reached. The only exception is recurring read audience journeys with **Force reentrance on recurrence** activated, which end at the start date of the next occurrence. 
 
@@ -183,9 +183,9 @@ Timeout settings control how long a journey waits for activity execution and how
 ### Timeout in journey activities {#timeout_and_error}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_properties_timeout"
+>id="ajo_journey_action_timeout"
 >title="Timeout or error"
->abstract="Specify how long the journey should attempt to perform an action or evaluate a condition before treating it as timed out. Recommended values are between 1 and 30 seconds."
+>abstract="The **Timeout or error** option defines an alternative path in the journey when the action times out or returns an error, so profiles continue through a fallback path rather than stopping at this step. Recommended values are between 1 and 30 seconds."
 
 When editing an action or condition activity, you can define an alternative path in case of error or timeout. If the processing of the activity interrogating a third-party system exceeds the timeout duration defined in **[!UICONTROL Timeout or error]** field of the journey's properties, the second path will be chosen to perform a potential fallback action.
 
@@ -361,7 +361,7 @@ To learn more about merge policies, refer to [[!DNL Adobe Experience Platform] d
 >[!CONTEXTUALHELP]
 >id="ajo_journey_exit_criterias"
 >title="Exit criteria"
->abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules and filters for your journey."
+>abstract="This section shows the exit criteria options, where one or multiple exit criteria rules and filters can be defined for the journey."
 
 ### Journey Exit criteria {#exit-criteria-desc}
 

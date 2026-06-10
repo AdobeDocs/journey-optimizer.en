@@ -211,6 +211,12 @@ Before you import into production, keep the following behavior and limitations i
 
 +++
 
++++ Journey Fragments
+
+* [Journey Fragments](../building-journeys/journey-fragments.md) (reusable sets of journey nodes) are supported for Sandbox tooling. When exporting a journey fragment, its latest Draft state is copied to the target sandbox.
+
++++
+
 ## Add objects as a package {#export}
 
 To copy objects to another sandbox, you first need to add them as a package in the source sandbox. Follow these steps:

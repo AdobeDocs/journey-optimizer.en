@@ -42,7 +42,7 @@ This release brings the new capabilities listed below.
 <td>
 <p>Sandbox tooling allows you to copy objects across multiple sandboxes by leveraging package export and import. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox.</p>
 <!--img src="../data/assets/dataset-export-setup.png"-->
-<p>For more information, refer to the <a href="../building-journeys/copy-to-sandbox.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../configuration/copy-objects-to-sandbox.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

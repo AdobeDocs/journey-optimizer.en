@@ -33,6 +33,13 @@ topic_v2:
 # Create a push notification {#create-push-notification}
 
 >[!CONTEXTUALHELP]
+>id="ajo_journey_action_push"
+>title="Push notification action"
+>abstract="A push notification channel action sends a push notification to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a push configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
+
+>[!CONTEXTUALHELP]
 >id="ajo_message_push"
 >title="Push message creation"
 >abstract="Add your push message and start personalizing it with the personalization editor."

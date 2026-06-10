@@ -55,9 +55,10 @@ Your In-app message can now be triggered directly on your device allowing you to
 
 ## Preview with test profiles {#simulate}
 
-Once your in-app message has been defined, you can use test profiles to preview it. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
+Once your in-app message has been defined, you can preview it using either simulation method:
 
-To do this, click **[!UICONTROL Simulate content]** then add a test profile to check your message using the test profile data.
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles and add a test profile to check your message.
 
 Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
 

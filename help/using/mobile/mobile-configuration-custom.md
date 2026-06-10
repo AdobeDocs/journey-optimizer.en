@@ -52,6 +52,11 @@ subfeature_v2:
 >title="Provider payload"
 >abstract="Provide the request payload to ensure the correct data is sent for processing and response generation."
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_response_msg_id_extractor"
+>title="Provider payload"
+>abstract="Specifies how Journey Optimizer extracts a unique message ID from your provider's send response. </br>Field Match: Enter the field name (e.g. messageId). AJO will scan the response and return the first matching value. </br>Dot Notation: Enter the path to the field (e.g. messages.0.id). Use numeric segments for arrays. No $ prefix.</br> Leave blank if your provider supports passing a callback data field instead."
+
 This feature empowers you to integrate and configure your own messaging providers, offering flexibility beyond the default options (Sinch, Twilio, and Infobip). This enables seamless authoring, delivery, reporting, and consent management for Mobile messages.
 
 With custom provider configuration, you can connect third-party messaging services directly within Journey Optimizer, customize message payloads for dynamic content, and manage opt-in/opt-out preferences to ensure compliance across both SMS and RCS channels.
@@ -90,6 +95,12 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 1. Enable the **[!UICONTROL mTLS support]** option, which ensures that both the client and server authenticate each other before establishing a secure connection.
 
     To use mTLS only, select **[!UICONTROL No Authentication]** from the **[!UICONTROL Auth Type]** drop-down and then enable **[!UICONTROL mTLS support]**.
+
+    Note that mTLS applies only to the SMS provider (message sending) endpoint. The OAuth token endpoint must not use mTLS. Ensure mTLS is disabled on the token endpoint before testing.
+
+    >[!IMPORTANT]
+    >
+    >Configure your SMS send endpoint to trust the Adobe Experience Platform certificate authority chain by downloading the public certificate from the [MTLS Public Certificate API](https://platform.adobe.io/data/core/mtls/v1/certificate/public-certificate) and adding it to your server trust store (expected client CN: `ajo-sms.aep-mtls.adobe.com`), otherwise Journey Optimizer omits the client certificate and SMS delivery fails.
 
 1. In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add new parameter]** to specify the HTTP headers for the request message that will be sent to the external service.
 
@@ -178,6 +189,8 @@ Once your API credential is created, complete the fields required for OAuth auth
 * **[!UICONTROL OAuth URL]**​: Enter the URL for obtaining the OAuth token.
 
 * **[!UICONTROL OAuth Body]**​: Provide the OAuth request body in JSON format, including parameters such as `grant_type`, `client_id`, and `client_secret`.
+
+Journey Optimizer refreshes OAuth tokens dynamically upon expiry for the custom SMS connector.
 
 ![](assets/sms-byop-oauth.png)
 
