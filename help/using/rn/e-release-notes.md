@@ -48,8 +48,8 @@ The following capabilities and improvements are coming to journeys in this relea
 <tbody>
 <tr>
 <td>
-<p>Use the new <strong>Optimize node</strong> to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
-<p>This tool allows you to develop more effective marketing campaigns that are more likely to resonate at the 1:1 level, improve marketing personalization efforts for customers and enhance critical customer engagement KPIs, such as conversions and revenue.</p>
+<p>Use the new <strong>Optimize activity</strong> to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
+<p>For each profile, Journey Optimizer evaluates the available paths and routes the profile down the one predicted to best achieve your selected goal. For example, you can let the activity determine which offer or incentive drives the most <strong>conversions</strong>, which channel or message variant maximizes engagement, or which path generates the highest <strong>revenue</strong> per customer.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-14720">Link to DOCAC JIRA task</a></p>
 </td>
