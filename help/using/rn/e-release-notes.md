@@ -66,7 +66,7 @@ The following capabilities and improvements are coming to journeys in this relea
 <tbody>
 <tr>
 <td>
-<p>You can now use <strong>formulas</strong> to automatically boost <strong>journey priority scores</strong> based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
+<p>You can now use <strong>formulas</strong> to automatically <strong>prioritize and arbitrate journeys</strong> based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-14719">Link to DOCAC JIRA task</a></p>
 </td>
