@@ -225,7 +225,7 @@ The following improvements are coming to mobile messaging in this release.
 * **LINE Channel - Authoring changes** - The LINE channel UI has been upgraded with advanced message authoring capabilities. This release introduces support for **multiple message formats**, including Text, Image, Imagemap, Carousel, and Flex (JSON Editor), alongside real-time device previews. Users can now manage grouped messages of up to five ordered messages (with add, remove, and reorder controls) and leverage the integrated personalization editor for validated, dynamic messaging.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14869">Link to DOCAC JIRA task</a>
 
-* **SMS Usage Metrics** - For customers purchasing SMS directly through Adobe Journey Optimizer, a new **SMS usage dashboard** has been introduced. You can now view and track your last 90 days of message sending metrics, categorized by Mobile Originated (MO) and Mobile Terminated (MT) messages. This data is also available for download via CSV, providing greater visibility and control over your SMS spend.
+* **SMS - Display Usage Metrics** - For customers purchasing SMS directly through Adobe Journey Optimizer, a new **SMS usage dashboard** has been introduced. You can now view and track your last 90 days of message sending metrics, categorized by Mobile Originated (MO) and Mobile Terminated (MT) messages. This data is also available for download via CSV, providing greater visibility and control over your SMS spend.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14345">Link to DOCAC JIRA task</a>
 
 ### Content & Integrations {#june-26-content}
@@ -301,7 +301,7 @@ The following capability is coming to channels in this release.
 
 The following improvements are coming to reporting in this release.
 
-* **Exclude Bot Clicks for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metrics are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
+* **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metrics are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
   * Estimated Clicks: Total clicks counted after removing identified bot and non-human traffic.
   * Estimated CTR: Estimated Clicks relative to total deliveries.
   * Estimated CTOR for email only: Estimated Clicks relative to Estimated Opens.
