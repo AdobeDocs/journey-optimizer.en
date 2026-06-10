@@ -122,7 +122,7 @@ The following example shows a JSON payload with profile personalization for a cu
 The editor supports a **[!UICONTROL Strict JSON]** toggle:
 
 * **Strict JSON: Off (default)** – The editor accepts any payload content, including personalization helpers and functions that may temporarily produce non-JSON syntax. A warning is displayed at the **Review to Activate** step if the payload is not well-formed JSON, prompting you to simulate and proof before publishing.
-* **Strict JSON: On** – The editor validates that the payload is well-formed JSON as you type. At the **Review to Activate** step, AJO validates the payload against the channel schema and flags missing required fields or type mismatches as errors that must be resolved before activation.
+* **Strict JSON: On** – The editor validates that the payload is well-formed JSON as you type. At the **Review to Activate** step, [!DNL Journey Optimizer] validates the payload against the channel schema and flags missing required fields or type mismatches as errors that must be resolved before activation.
 
 ## Activate your custom channel experience {#activate}
 

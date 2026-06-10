@@ -127,7 +127,7 @@ The payload configuration defines the structure of the message payload and which
    * **Paste sample JSON payload** – Paste a representative JSON object. [!DNL Journey Optimizer] automatically infers a schema from it.
    * **Import JSON schema** – Upload a complete JSON schema file.
 
-1. After the schema is generated, Journey Optimizer displays all detected fields in a form view.
+1. After the schema is generated, [!DNL Journey Optimizer] displays all detected fields in a form view.
 
     ![](assets/custom_channel_payload_configuration.png)
 

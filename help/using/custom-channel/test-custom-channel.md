@@ -48,7 +48,7 @@ To validate end-to-end delivery before activating, send a proof to a set of test
 
 1. In the **[!UICONTROL Simulate content]** panel, switch to the **[!UICONTROL Send proof]** tab.
 
-1. Add the profiles you want to use. You can upload a CSV file with profiles that are not defined as test profiles in AJO.
+1. Add the profiles you want to use. You can upload a CSV file with profiles that are not defined as test profiles in [!DNL Journey Optimizer].
 
 1. Click **[!UICONTROL Send proof]**. [!DNL Journey Optimizer] calls your external endpoint with the personalized payload for each selected profile.
 
