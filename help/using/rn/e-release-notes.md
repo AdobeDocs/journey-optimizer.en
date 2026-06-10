@@ -48,8 +48,8 @@ The following capabilities and improvements are coming to journeys in this relea
 <tbody>
 <tr>
 <td>
-<p>Use the new <strong>Optimize node</strong> to target specific audiences to determine the best path to meet your business-centric KPIs.</p>
-<p>This tool allows you to develop more effective marketing campaigns that are more likely to resonate at the 1:1 level, improve marketing personalization efforts for customers and enhance critical customer engagement KPIs, such as conversions and revenue.</p>
+<p>The <strong>Optimize activity</strong> now supports <strong>Targeting Rules</strong>. Targeting Rules enable you to define specific criteria that customers must meet to qualify for a particular journey path, based on audience segments or profile attributes.</p>
+<p>Unlike experimentation, where customers are assigned to paths randomly, targeting uses deterministic logic to ensure that the appropriate audience or customer profile is routed to the intended path.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-14720">Link to DOCAC JIRA task</a></p>
 </td>
@@ -66,7 +66,7 @@ The following capabilities and improvements are coming to journeys in this relea
 <tbody>
 <tr>
 <td>
-<p>You can now use <strong>formulas</strong> to automatically boost <strong>journey priority scores</strong> based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
+<p>You can now use <strong>formulas</strong> to automatically <strong>prioritize and arbitrate journeys</strong> based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-14719">Link to DOCAC JIRA task</a></p>
 </td>
@@ -228,7 +228,7 @@ The following improvements are coming to mobile messaging in this release.
 * **LINE Channel - Authoring changes** - The LINE channel UI has been upgraded with advanced message authoring capabilities. This release introduces support for **multiple message formats**, including Text, Image, Imagemap, Carousel, and Flex (JSON Editor), alongside real-time device previews. Users can now manage grouped messages of up to five ordered messages (with add, remove, and reorder controls) and leverage the integrated personalization editor for validated, dynamic messaging.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14869">Link to DOCAC JIRA task</a>
 
-* **Journey Optimizer Resell - Display Usage Metrics** - For customers purchasing SMS directly through Adobe Journey Optimizer, a new **SMS usage dashboard** has been introduced. You can now view and track your last 90 days of message sending metrics, categorized by Mobile Originated (MO) and Mobile Terminated (MT) messages. This data is also available for download via CSV, providing greater visibility and control over your SMS spend.
+* **SMS - Display Usage Metrics** - For customers purchasing SMS directly through Adobe Journey Optimizer, a new **SMS usage dashboard** has been introduced. You can now view and track your last 90 days of message sending metrics, categorized by Mobile Originated (MO) and Mobile Terminated (MT) messages. This data is also available for download via CSV, providing greater visibility and control over your SMS spend.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14345">Link to DOCAC JIRA task</a>
 
 ### Content & Integrations {#june-26-content}
@@ -304,7 +304,7 @@ The following capability is coming to channels in this release.
 
 The following improvements are coming to reporting in this release.
 
-* **Exclude Bot Clicks for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metrics are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
+* **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metrics are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
   * Estimated Clicks: Total clicks counted after removing identified bot and non-human traffic.
   * Estimated CTR: Estimated Clicks relative to total deliveries.
   * Estimated CTOR for email only: Estimated Clicks relative to Estimated Opens.
