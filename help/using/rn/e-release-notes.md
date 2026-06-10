@@ -119,7 +119,29 @@ The following capability is coming to Decisioning in this release.
 </tbody>
 </table>
 
-### Email channel {#june-26-email}
+### Channels {#june-26-channels}
+
+The following capability is introduced in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom outbound channels</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now introduces <strong>Custom channels</strong>, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code channel builder.</p>
+<p>Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement. This fills the gap previously addressed by custom actions, which were limited to journeys and lacked dedicated content authoring.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-11381">Link to DOCAC JIRA task</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Email {#june-26-email}
 
 The following capabilities and improvements are coming to the email channel in this release.
 
@@ -180,12 +202,6 @@ The following capabilities and improvements are coming to the email channel in t
 * **Text mode support in fragments** - To support text-based email workflows, you can now create and manage text versions of your visual fragments for optimal use in the plain text version of emails that include that fragment. When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered — both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14204">Link to DOCAC JIRA task</a>
 
-* **Updated batch ending throughput benchmarks with customer-facing scenarios** - Adobe Journey Optimizer's batch sending throughput benchmarks have been updated to reflect production-grade performance across multiple personalization scenarios — from basic sends to complex dynamic content with conditional logic. The refreshed metrics are now available in the product documentation to help customers accurately plan their messaging volumes.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-14816">Link to DOCAC JIRA task</a>
-
-* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub **One-Time Password (OTP)** directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-14815">Link to DOCAC JIRA task</a>
-
 ### Mobile messaging (SMS, MMS, RCS & LINE) {#june-26-mobile}
 
 The following improvements are coming to mobile messaging in this release.
@@ -245,28 +261,6 @@ The following capabilities and improvements are coming to content management and
 </tbody>
 </table>
 
-### Custom channels {#june-26-channels}
-
-The following capability is coming to channels in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom Outbound Channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now introduces <strong>Custom channels</strong>, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code channel builder.</p>
-<p>Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement. This fills the gap previously addressed by custom actions, which were limited to journeys and lacked dedicated content authoring.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-11381">Link to DOCAC JIRA task</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
 ### Campaigns {#june-26-campaigns}
 
 The following improvement is coming to campaigns in this release.
@@ -291,6 +285,12 @@ The following improvements are coming to configuration and administration in thi
 
 * **Web Application Firewall (WAF) IP whitelistings** - Adobe Journey Optimizer now supports WAF IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their Journey Optimizer-hosted landing pages.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14814">Link to DOCAC JIRA task</a>
+
+* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub **One-Time Password (OTP)** directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.
+  <a href="https://jira.corp.adobe.com/browse/DOCAC-14815">Link to DOCAC JIRA task</a>
+
+* **Updated batch ending throughput benchmarks with customer-facing scenarios** - Adobe Journey Optimizer's batch sending throughput benchmarks have been updated to reflect production-grade performance across multiple personalization scenarios — from basic sends to complex dynamic content with conditional logic. The refreshed metrics are now available in the product description to help customers accurately plan their messaging volumes.
+  <a href="https://jira.corp.adobe.com/browse/DOCAC-14816">Link to DOCAC JIRA task</a>
 
 * **Dataset moving from streaming to batch mode** - The AJO Message Feedback Event Dataset is transitioning from streaming to **batch ingestion mode**. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14771">Link to DOCAC JIRA task</a>
