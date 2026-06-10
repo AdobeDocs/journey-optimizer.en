@@ -79,6 +79,26 @@ topic_v2:
 <table>
 <thead>
 <tr>
+<th><strong>Journey path optimization - Targeting</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <strong>Optimize activity</strong> now supports <strong>Targeting rules</strong> which enable you to define specific criteria that customers must meet to qualify for a particular journey path, based on audience segments or profile attributes.</p>
+<p>Unlike experimentation, where customers are assigned to paths randomly, targeting uses deterministic logic to ensure that the appropriate audience or customer profile is routed to the intended path.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p><img src="assets/do-not-localize/optimize.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/path-targeting.md">detailed documentation</a>.</p>
+<p>Availability date: June 8, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey Fragments (General Availability)</strong><br/></th>
 </tr>
 </thead>

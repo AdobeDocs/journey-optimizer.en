@@ -42,24 +42,6 @@ The following capabilities and improvements are coming to journeys in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Journey path optimization - Targeting</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The <strong>Optimize activity</strong> now supports <strong>Targeting Rules</strong>. Targeting Rules enable you to define specific criteria that customers must meet to qualify for a particular journey path, based on audience segments or profile attributes.</p>
-<p>Unlike experimentation, where customers are assigned to paths randomly, targeting uses deterministic logic to ensure that the appropriate audience or customer profile is routed to the intended path.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14720">Link to DOCAC JIRA task</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Journey Arbitration - Formulas</strong><br/></th>
 </tr>
 </thead>
@@ -107,22 +89,6 @@ The following capabilities and improvements are coming to orchestrated campaigns
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Quiet Hours support for orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now apply <strong>quiet hours</strong> to Orchestrated campaigns. Quiet hours let you define <strong>time-based exclusions</strong> to prevent messages from being sent during specific periods, helping you respect customer preferences and compliance requirements across campaign orchestration use cases.</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14054">Link to DOCAC JIRA task</a></p>
-</td>
-</tr>
-</tbody>
-</table>
-
 * **Loop-based personalization for relational data in Orchestrated campaigns** - The personalization editor now supports a **Loop block** that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14703">Link to DOCAC JIRA task</a>
 
@@ -131,9 +97,6 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
 * **Target dimension simplification in Orchestrated campaigns** - The active **targeting dimension** is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13554">Link to DOCAC JIRA task</a>
-
-* **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default **execution field** set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-14718">Link to DOCAC JIRA task</a>
 
 ### Decisioning {#june-26-decisioning}
 
@@ -160,26 +123,28 @@ The following capability is coming to Decisioning in this release.
 
 The following capabilities and improvements are coming to the email channel in this release.
 
+<!--
 <table>
 <thead>
 <tr>
-<th><strong>Advanced Components - Layouts (Super Components)</strong><br/></th>
+<th><strong>Advanced Components</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>The Email Designer now includes a <strong>library of ready-to-use layout components</strong> — such as Headers, Product Cards (1, 2, or 3 columns), Information blocks, and Footers — that you can drag and drop directly into your email canvas. Each component comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
+<p>The Email Designer now includes a library of ready-to-use layout components — such as Headers, Product Cards (1, 2, or 3 columns), Information blocks, and Footers — that you can drag and drop directly into your email canvas. Each component comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-14877">Link to DOCAC JIRA task</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+-->
 
 <table>
 <thead>
 <tr>
-<th><strong>Content Check in Email Designer</strong><br/></th>
+<th><strong>Content check in the Email Designer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -209,10 +174,13 @@ The following capabilities and improvements are coming to the email channel in t
 </tbody>
 </table>
 
-* **Text mode support in fragments** - To support text-based email workflows, you can now create and manage **text versions** of your visual fragments for optimal use in the plain text version of emails that include that fragment. When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered — both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.
+* **Rich text in editable fields for fragments** - You can now add rich text to customizable fragments that are used in your emails content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
+  <a href="https://jira.corp.adobe.com/browse/DOCAC-14715">Link to DOCAC JIRA task</a>
+
+* **Text mode support in fragments** - To support text-based email workflows, you can now create and manage text versions of your visual fragments for optimal use in the plain text version of emails that include that fragment. When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered — both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14204">Link to DOCAC JIRA task</a>
 
-* **Updated Batch Sending Throughput Benchmarks with Customer-Facing Scenarios** - Adobe Journey Optimizer's **batch sending throughput benchmarks** have been updated to reflect production-grade performance across multiple personalization scenarios — from basic sends to complex dynamic content with conditional logic. The refreshed metrics are now available in the product documentation to help customers accurately plan their messaging volumes.
+* **Updated batch ending throughput benchmarks with customer-facing scenarios** - Adobe Journey Optimizer's batch sending throughput benchmarks have been updated to reflect production-grade performance across multiple personalization scenarios — from basic sends to complex dynamic content with conditional logic. The refreshed metrics are now available in the product documentation to help customers accurately plan their messaging volumes.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14816">Link to DOCAC JIRA task</a>
 
 * **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub **One-Time Password (OTP)** directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.
@@ -238,7 +206,7 @@ The following capabilities and improvements are coming to content management and
 <table>
 <thead>
 <tr>
-<th><strong>Content fragments with Adobe Experience Manager</strong><br/></th>
+<th><strong>Improvements to Adobe Experience Manager Content Fragments in Journey Optimizer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -250,8 +218,12 @@ The following capabilities and improvements are coming to content management and
 <li>Once a fragment is selected, its context is preserved throughout the message, enabling authors to reuse fragment fields across content blocks without reselecting.</li>
 <li>A new dedicated Content Fragments listing page has been introduced in Journey Optimizer for improved lifecycle management; users can identify out-of-sync fragments and trigger manual syncs to stay current.</li>
 <li>Locale and variation support now allows marketers to work with alternate versions of the same Content Fragment more deliberately.</li>
+<li>You now have flexibility in how Adobe Journey Optimizer accesses your Adobe Experience Manager content. This release introduces the ability to <strong>switch the source repository</strong> for Content Fragments used in your journeys and campaigns.</li>
+<li>Now compatible with <b>Managed Services</b>, you can view, access, and use Adobe Experience Manager Content Fragments directly in Journey Optimizer for personalization. Simply add your Adobe Experience Manager Managed Services repository URL in the configuration settings as a one-time setup.</li>
 </ul>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-14686">Link to DOCAC JIRA task</a></p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14821">Link to DOCAC JIRA task</a></p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14684">Link to DOCAC JIRA task</a></p>
 </td>
 </tr>
 </tbody>
@@ -260,24 +232,18 @@ The following capabilities and improvements are coming to content management and
 <table>
 <thead>
 <tr>
-<th><strong>Adobe Experience Manager repository configuration</strong><br/></th>
+<th><strong>AI assistant integration with Adobe Experience Manager Asset Essentials</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You now have flexibility in how Adobe Journey Optimizer accesses your Adobe Experience Manager content. This release introduces the ability to <strong>switch the source repository</strong> for Content Fragments used in your journeys and campaigns.</p>
-<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14684">Link to DOCAC JIRA task</a></p>
+<p>The AI Assistant now automatically fetches <b>brand-approved images</b> directly from your Adobe Experience Manager Assets when generating Emails, Web pages, and Push notifications. This eliminates the need to manually search the Assets or rely on generic AI fallbacks, ensuring every visual is perfectly accurate and brand-compliant.</p>
+<p><a href="https://jira.corp.adobe.com/browse/DOCAC-14761">Link to DOCAC JIRA task</a></p>
 </td>
 </tr>
 </tbody>
 </table>
-
-* **Native Adobe Experience Manager Content Fragments (Managed Services) Integration** - Now compatible with **Managed Services**, you can view, access, and use Adobe Experience Manager Content Fragments directly in Journey Optimizer for personalization. Simply add your Adobe Experience Manager Managed Services repository URL in the configuration settings as a one-time setup.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-14821">Link to DOCAC JIRA task</a>
-
-* **AI assistant integration with Adobe Experience Manager Asset Essentials** - The AI Assistant now automatically fetches **brand-approved images** directly from your Adobe Experience Manager Assets when generating Emails, Web pages, and Push notifications. This eliminates the need to manually search the Assets or rely on generic AI fallbacks, ensuring every visual is perfectly accurate and brand-compliant.
-  <a href="https://jira.corp.adobe.com/browse/DOCAC-14761">Link to DOCAC JIRA task</a>
 
 ### Custom channels {#june-26-channels}
 
@@ -292,13 +258,21 @@ The following capability is coming to channels in this release.
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now introduces <strong>Custom channels</strong>, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into AJO through a <strong>no-code Channel Builder</strong>. Once configured, custom channels are available across Campaigns, Journeys, and Orchestrated Campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement. This fills the gap previously addressed by Custom Actions, which were limited to Journeys and lacked dedicated content authoring.</p>
+<p>Journey Optimizer now introduces <strong>Custom channels</strong>, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code channel builder.</p>
+<p>Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement. This fills the gap previously addressed by custom actions, which were limited to journeys and lacked dedicated content authoring.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p><a href="https://jira.corp.adobe.com/browse/DOCAC-11381">Link to DOCAC JIRA task</a></p>
 </td>
 </tr>
 </tbody>
 </table>
+
+### Campaigns {#june-26-campaigns}
+
+The following improvement is coming to campaigns in this release.
+
+* **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default **execution field** set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
+  <a href="https://jira.corp.adobe.com/browse/DOCAC-14718">Link to DOCAC JIRA task</a>
 
 ### Reporting {#june-26-reporting}
 
@@ -315,7 +289,7 @@ The following improvements are coming to reporting in this release.
 
 The following improvements are coming to configuration and administration in this release.
 
-* **Web Application Firewall (WAF) IP Whitelisting for AJO Landing Pages** - Adobe Journey Optimizer now supports **Web Application Firewall (WAF) IP whitelisting** for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure AJO to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their AJO-hosted landing pages.
+* **Web Application Firewall (WAF) IP whitelistings** - Adobe Journey Optimizer now supports WAF IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their Journey Optimizer-hosted landing pages.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14814">Link to DOCAC JIRA task</a>
 
 * **Dataset moving from streaming to batch mode** - The AJO Message Feedback Event Dataset is transitioning from streaming to **batch ingestion mode**. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
