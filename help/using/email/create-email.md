@@ -217,7 +217,7 @@ Two types of alerts can happen:
 >[!CONTEXTUALHELP]
 >id="ajo_email_minification"
 >title="Reduce HTML size"
->abstract="Enable this option to compress your email HTML during publishing by removing unnecessary whitespace, indentation, and non-essential comments. This helps prevent email clipping in clients such as Gmail, which truncates messages exceeding 100 KB."
+>abstract="Enable this option to compress your email HTML during publishing by removing unnecessary whitespace, indentation, and non-essential comments. This helps prevent email clipping in clients such as Gmail, which truncates messages exceeding 100 KB. Note that when working with multilingual emails, this option is enabled by default for all locales."
 
 [!DNL Journey Optimizer] allows you to compress your email HTML version during the publishing process by removing unnecessary whitespace, indentation, and non-essential comments. Keeping HTML size small helps you:
 
@@ -228,6 +228,10 @@ Two types of alerts can happen:
 This optimization is not applied automatically — you must manually enable it in the [Edit content](#define-email-content) screen.
 
 ![](assets/email-optimize-html-size.png)
+
+>[!IMPORTANT]
+>
+> The HTML size reduction is only applied at publication time.
 
 The optimization is email-client safe:
 
