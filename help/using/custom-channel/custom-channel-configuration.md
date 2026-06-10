@@ -5,16 +5,21 @@ feature: Custom Channel
 topic: Content Management
 role: Admin
 level: Experienced
+badge: label="Limited Availability" type="Informative"
 ---
 
 # Configure a custom channel {#custom-channel-configuration}
 
+>[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+
 Before marketers can use a custom channel in campaigns or journeys, an administrator must complete the following steps:
 
-1. Create the custom channel.
-1. **Set up API credentials** (if the channel uses authentication).
-1. **Delegate a subdomain** (optional — required for link tracking).
-1. **Create a channel configuration** linked to the custom channel.
+1. Create the custom channel. [Learn more](#create-custom-channel)
+1. Set up API credentials (if the channel uses authentication). [Learn more](#api-credentials)
+1. Delegate a subdomain (optional — required for link tracking). [Learn more](#subdomain-delegation)
+1. Create a channel configuration linked to the custom channel. [Learn more](#create-channel-config)
 
 >[!NOTE]
 >
@@ -46,15 +51,15 @@ The **Channel builder** section is the central interface for defining new custom
    >
    >Names must begin with a letter (A-Z), include only alpha-numeric characters or special chars ( _, ., -) and should be greater than 1 character.
    >
-   >The name must be unique and cannot be changed after the channel is created. TBC
+   >The name must be unique and cannot be changed after the channel is created. <!--TBC-->
 
-1. You can select an icon from the default icon library or select a SVG file from your computer.
+1. You can select an icon from the default icon library, or select a SVG file from your computer.
 
    >[!NOTE]
    >
    >The file must be no larger than 150KB.
 
-   This icon will be displayed next to the channel name in the ourneys canvas. If no icon is uploaded, the default icon is used.
+   This icon will be displayed next to the channel name in the journey canvas. If no icon is uploaded, the default icon is used.
 
 1. Enter an optional **[!UICONTROL Description]**.
 
@@ -73,15 +78,14 @@ The **Channel builder** section is the central interface for defining new custom
 
 1. Add **[!UICONTROL Headers]** as needed.
 
-      At minimum, `Content-Type` and `Charset` are available as default headers. TBC
-
+      At minimum, `Content-Type` and `Charset` are available as default headers. <!--TBC-->
    ![](assets/custom_channel_endpoint_headers.png)
 
 
    For each header, you can define whether its value is:
 
    * **[!UICONTROL Constant]** – A static value set once and included in every request.
-   * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration.
+   * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration. [Learn more](#create-channel-config)
 
 1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Variable query parameters are appended to the endpoint URL dynamically at send time.
 
@@ -92,8 +96,9 @@ The **Channel builder** section is the central interface for defining new custom
    ![](assets/custom_channel_endpoint_policy_config.png)
 
    * **[!UICONTROL Enable throttling]** – Disabled by default. Set the maximum number of requests per second (default: **5,000 req/sec**).
-   * **[!UICONTROL Enable retry]** – Enabled by default. Set the **[!UICONTROL Retry count]** (default: **3**, configurable range: 0–10).
    * **[!UICONTROL Timeout]** – Default: **5,000 milliseconds**.
+   * **[!UICONTROL Enable cache]** – Disabled by default. Set the caching duration (default TTL: **600 seconds**).
+   * **[!UICONTROL Enable retry]** – Enabled by default. Set the **[!UICONTROL Retry count]** (default: **3**, configurable range: 0–10).
 
 ### Authentication settings {#authentication-settings}
 
@@ -103,15 +108,15 @@ Select the **[!UICONTROL Authentication type]** required by your endpoint.
 
 * **[!UICONTROL None]** – The request is sent without credentials.
 * **[!UICONTROL API Key]** – Provide the key name, value, and location (query parameter or header).
-* **[!UICONTROL Basic]** – Provide a username and password.
-* **[!UICONTROL OAuth 2.0]** – Configure client credentials for OAuth 2.0 authentication.
+* **[!UICONTROL Basic auth]** – Provide a username and password.
+* **[!UICONTROL OAuth 2.0]** – Configure the payload for OAuth 2.0 authentication.
 <!--* **[!UICONTROL Custom]** – Define the authentication configuration using a JSON payload.-->
 
 A **[!UICONTROL Test connection]** button is available to validate the authentication setup. [Learn more](#test-the-connection)
 
 >[!NOTE]
 >
->When the authentication type is anything other than **None**, Journey Optimizer automatically generates an initial set of API credentials for this channel when it is activated. Additional credentials can be created in the API credentials inventory. [Learn more](#api-credentials)
+>When the authentication type is anything other than **None**, [!DNL Journey Optimizer] automatically generates an initial set of API credentials for this channel when it is activated. Additional credentials can be created in the API credentials inventory. [Learn more](#api-credentials)
 
 ### Payload configuration {#payload-configuration}
 
