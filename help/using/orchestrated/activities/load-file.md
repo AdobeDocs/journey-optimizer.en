@@ -33,6 +33,15 @@ The **[!UICONTROL Load file]** activity is a **[!UICONTROL Data Management]** ac
 >
 >The activity is currently not available for use with **Healthcare Shield**.
 
+## Permissions {#permissions}
+
+To use the **[!UICONTROL Load file]** activity in an Orchestrated campaign, users must be assigned the correct permissions. Both permissions are available under **[!UICONTROL Adobe Experience Platform]** > **[!UICONTROL Adobe Journey Optimizer]** > **[!UICONTROL Orchestrated Campaigns]** in the permissions UI.
+
+* **[!UICONTROL View File in Orchestrated Campaigns]** — Grants read-only access. Users with this permission can preview results on an Orchestrated campaign that contains a **[!UICONTROL Load file]** activity, but cannot add the activity or upload a file.
+* **[!UICONTROL Manage File in Orchestrated Campaigns]** — Required to add a **[!UICONTROL Load file]** activity to the campaign canvas and upload files. Assign this permission to any user who needs to create or configure a **[!UICONTROL Load file]** activity.
+
+For instructions on assigning permissions, see [Manage users and roles](../../administration/permissions.md).
+
 ## Guardrails and limitations {#limitations}
 
 The following limitations apply to the Load file activity:
@@ -42,6 +51,42 @@ The following limitations apply to the Load file activity:
 * Uploaded data is used when the campaign runs and is not stored as an Adobe Experience Platform dataset.
 
 For limits on channel and canvas activities, see [Guardrails and limitations](../guardrails.md#activities-limitations).
+
+## Prerequisites {#prerequisites}
+
+Before you can add a **[!UICONTROL Load file]** activity to an Orchestrated campaign and connect it to a message activity, an administrator must complete the following one-time setup.
+
+### Create a File-type target dimension {#file-target-dimension}
+
+A **[!UICONTROL Profile Target Dimension]** of type **[!UICONTROL File]** lets Orchestrated campaigns resolve recipients from an uploaded file instead of an Adobe Experience Platform schema. It defines the identity namespace and the identifier field used when the file audience is processed at campaign execution.
+
+Create a target dimension from **[!UICONTROL Administration]** > **[!UICONTROL Configurations]** > **[!UICONTROL Campaign Target Dimension]**. [Learn more about target dimensions](../target-dimension.md)
+
+When creating the target dimension for file-based targeting, make sure to:
+
+* Set **[!UICONTROL Dimension source]** to **[!UICONTROL File]**.
+* Select the **[!UICONTROL Identity namespace]** that matches the identifier column in your files, for example **[!UICONTROL Email]**.
+* Enter the **[!UICONTROL Identity field path]**. Use the file field that contains the identifier, for example `email` if your uploaded files include an `email` column.
+
+>[!CAUTION]
+>
+>The schema and identity values cannot be changed after the target dimension is saved. Verify the identity namespace and identity field path before saving.
+
+### Create a channel configuration for file-based delivery {#file-channel-configuration}
+
+Create a dedicated channel configuration that uses the File-type target dimension. This configuration is selected in the message activity that follows the **[!UICONTROL Load file]** activity in your campaign canvas.
+
+1. Navigate to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel configurations]** and create a new configuration.
+
+1. Under **[!UICONTROL Execution details]**, select the **[!UICONTROL Orchestrated campaigns]** tab and enable the configuration for Orchestrated campaigns.
+
+1. In the **[!UICONTROL Profile Target Dimension]** field, select the File-type target dimension created in the previous step.
+
+1. Complete the remaining channel configuration fields and save. [Learn more about channel configurations for Orchestrated campaigns](../channel-config.md)
+
+>[!IMPORTANT]
+>
+>Standard profile-based channel configurations do not work with a file-based audience. Use a channel configuration that targets the File-type dimension for any message activity that follows a **[!UICONTROL Load file]** activity.
 
 ## Configure the Load file activity {#load-file-configuration}
 
@@ -166,7 +211,7 @@ Use a sample file to configure **[!UICONTROL Columns]** and **[!UICONTROL Format
 
 Specify the file to load at campaign execution and how each row is matched to existing recipients.
 
-1. In the **[!UICONTROL Target file]** section, select the CSV or TXT file containing to target.
+1. In the **[!UICONTROL Target file]** section, select the CSV or TXT file containing the audience to target.
 
     ![](../assets/load-file-target.png)
 
@@ -181,4 +226,4 @@ Specify the file to load at campaign execution and how each row is matched to ex
 
 1. Optionally, enable **[!UICONTROL Delete file after import]** to remove the uploaded file from the server after the campaign runs.
 
-After **[!UICONTROL Load file]** resolves the audience,n connect the outbound transition to downstream activities. [Learn how to orchestrate campaign activities](../orchestrate-activities.md)
+After **[!UICONTROL Load file]** resolves the audience, connect the outbound transition to downstream activities. [Learn how to orchestrate campaign activities](../orchestrate-activities.md)
