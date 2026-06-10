@@ -20,10 +20,6 @@ subfeature_v2: []
 >title="What is fallback path?"
 >abstract="Fallback paths allow your audience to enter an alternate path when no targeting rules are qualified. </br>If this option is not selected, any audience that doesn't qualify for a targeting rule will not enter the fallback path and exit the journey."
 
->[!AVAILABILITY]
->
->This capability is currently in Limited Availability. To request access, contact your Adobe representative.
-
 Targeting rules allow you to determine specific rules or qualifications that must be met for a customer to be eligible to enter one of the journey paths, based on specific audience segments<!-- depending on profile attributes or contextual attributes-->.
 
 Unlike experimentation, which is a random assignment of a given path, targeting is deterministic in terms of ensuring the right audience or profile enters the specified path.
