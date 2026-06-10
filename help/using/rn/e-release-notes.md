@@ -174,6 +174,9 @@ The following capabilities and improvements are coming to the email channel in t
 </tbody>
 </table>
 
+* **Rich text in editable fields for fragments** - You can now add rich text to customizable fragments that are used in your emails content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
+  <a href="https://jira.corp.adobe.com/browse/DOCAC-14715">Link to DOCAC JIRA task</a>
+
 * **Text mode support in fragments** - To support text-based email workflows, you can now create and manage text versions of your visual fragments for optimal use in the plain text version of emails that include that fragment. When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered — both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14204">Link to DOCAC JIRA task</a>
 
