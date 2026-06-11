@@ -33,7 +33,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 **Release date**: June 16-17, 2026
 
-
 ### Journeys {#june-26-journeys}
 
 The following capabilities and improvements are coming to journeys in this release.
