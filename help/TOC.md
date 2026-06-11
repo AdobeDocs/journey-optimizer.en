@@ -12,7 +12,7 @@ solution: Journey Optimizer
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
-  + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)  
+  + [Pre-release notes](using/rn/e-release-notes.md)  
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -77,8 +77,6 @@ solution: Journey Optimizer
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
-    + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
-    + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
@@ -518,6 +516,7 @@ solution: Journey Optimizer
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
+    + [Integrate with Intelligent Services](using/integrations/intelligent-services.md)
     + Integrations {#integrations}
       + [Work with Integrations](using/integrations/integrations.md)
       + [Using External integrations for personalization](using/integrations/integrations-personalization.md)

@@ -365,7 +365,7 @@ Validate journeys with test profiles before going live, and preview execution wi
 
 Duplicate journeys across sandboxes to streamline testing and deployment workflows.
 
-[Copy journeys](copy-to-sandbox.md)
+[Copy journeys](../configuration/copy-objects-to-sandbox.md#objects)
 :::
 
 :::

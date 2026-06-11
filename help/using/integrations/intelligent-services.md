@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: AI service overview
-description: AI service overview
+title: Integrate with Intelligent Services
+description: Learn how to leverage Adobe Intelligent Services and Customer AI predictions in Journey Optimizer
 feature: Journeys, Integrations
 topic: Artificial Intelligence
 role: User

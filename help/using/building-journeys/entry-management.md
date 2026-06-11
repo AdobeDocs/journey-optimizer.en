@@ -134,9 +134,9 @@ For more information, refer to this [section](../event/about-creating-business.m
 
 ## Read audience journeys {#entry-read-audience}
 
-**Read audience** journeys can be recurring or "one-shot": 
+**Read audience** journeys can be recurring or non-recurring: 
 
-* For non-recurring/"one-shot" journeys: the profile enters once and only once in the journey.
+* For non-recurring journeys: the profile enters once and only once in the journey.
 
 * For recurring journeys: by default, all the profiles belonging to the audience enter the journey on each recurrence. They must finish the journey before they can reenter in another occurrence. 
 
