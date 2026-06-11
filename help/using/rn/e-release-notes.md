@@ -225,7 +225,7 @@ The following capabilities and improvements are coming to content management and
 </tr>
 </tbody>
 </table>
-
+ 
 ### Campaigns {#june-26-campaigns}
 
 The following improvement is coming to campaigns in this release.
