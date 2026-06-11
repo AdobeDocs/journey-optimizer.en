@@ -261,7 +261,7 @@ The following improvements are coming to configuration and administration in thi
   
   Availability date: Late June, 2026
 
-++++
++++
 
 ### Usability improvements {#june-26-usability}
 
