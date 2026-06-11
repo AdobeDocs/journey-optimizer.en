@@ -59,6 +59,10 @@ Learn how to craft effective prompts and configure image settings to generate vi
 
 1. Tailor your prompt with the **[!UICONTROL Image settings]** option:
 
+    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md#image-mode)
+        * **[!UICONTROL Assets]**: Uses matching images from the Digital Asset Management as reference content, otherwise add reference content manually.
+        * **[!UICONTROL Balanced]**: Reference content first, then AI if needed.
+        * **[!UICONTROL Creative]**: Generative AI without relying directly on the Digital Asset Management.
     * **[!UICONTROL Generative model]**: Select from the ready-to-use **[!UICONTROL Adobe model]**, the **[!UICONTROL Partner model]** for specialized capabilities, or **[!UICONTROL Custom models]** trained on your brand assets. [Learn more](generative-models.md). To use the partner (**Gemini**) model with **text overlays** on generated images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Aspect ratio]**: This determines the width and height of the asset. You have the option to choose from common ratios such as 16:9, 4:3, 3:2, or 1:1, or you can enter a custom size.
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
@@ -145,9 +149,9 @@ After accessing AI Assistant, you can adjust the generation settings to create i
 
 1. Choose your **[!UICONTROL Image settings]**:
 
-    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md)
+    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md#image-mode)
         * **[!UICONTROL Assets]**: Uses matching images from the Digital Asset Management as reference content, otherwise add reference content manually.
-        * **[!UICONTROL Balanced]**: Reference content first, then Firefly if needed.
+        * **[!UICONTROL Balanced]**: Reference content first, then AI if needed.
         * **[!UICONTROL Creative]**: Generative AI without relying directly on the Digital Asset Management.
     * **[!UICONTROL Generative model]**: Select from the ready-to-use **[!UICONTROL Adobe model]**, the **[!UICONTROL Partner model]** for specialized capabilities, or **[!UICONTROL Custom models]** trained on your brand assets. [Learn more](generative-models.md). To use the partner (**Gemini**) model with **text overlays** on generated images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.

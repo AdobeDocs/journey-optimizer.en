@@ -88,9 +88,9 @@ With AI Assistant open, you can now configure the generation settings to create 
 
 1. Choose your **[!UICONTROL Image settings]**:
 
-    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md)
+    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md#image-mode)
         * **[!UICONTROL Assets]**: Uses matching images from the Digital Asset Management as reference content, otherwise add reference content manually.
-        * **[!UICONTROL Balanced]**: Reference content first, then Firefly if needed.
+        * **[!UICONTROL Balanced]**: Reference content first, then AI if needed.
         * **[!UICONTROL Creative]**: Generative AI without relying directly on the Digital Asset Management.
     * **[!UICONTROL Generative model]**: Select from available built-in models, custom Firefly models trained on your brand assets, or third-party image generation providers to create images that align with your specific needs and brand requirements. [Learn more](generative-models.md). For **Gemini** with **text overlays** on images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.

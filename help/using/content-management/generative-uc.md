@@ -257,9 +257,9 @@ With **Gemini 2.5** selected as the generative model, you can produce image vari
 
 1. When the text overlay looks right, click **[!UICONTROL Save]**, then click **[!UICONTROL Apply]** on the variation you want to use.
 
-## Use Image settings mode
+## Use Image settings mode {#image-mode}
 
-The **[!UICONTROL Mode]** option under **[!UICONTROL Image settings]** controls how images are sourced from your Digital Asset Management library and reference content.
+The **[!UICONTROL Mode]** option under **[!UICONTROL Image settings]** controls how images are sourced from your Digital Asset Management library and generated content.
 
 1. After setting up your campaign, select **[!UICONTROL Edit content]**.
 
@@ -269,8 +269,8 @@ The **[!UICONTROL Mode]** option under **[!UICONTROL Image settings]** controls 
 
 1. Choose your **[!UICONTROL Mode]** in the **[!UICONTROL Image settings]** menu:
 
-    * **[!UICONTROL Assets]**: AI Assistant looks for a matching image in your Digital Asset Management library and uses it as reference content. If no match is found, add reference content or images manually before you generate.
-    * **[!UICONTROL Balanced]**: AI Assistant uses your reference content first. When that is not enough to cover the visuals you need, it generates images with Adobe Firefly.
+    * **[!UICONTROL Assets]**: AI Assistant looks for a matching image in your Digital Asset Management library and uses it as part of the generated content. If no match is found, add reference content or images manually before you generate.
+    * **[!UICONTROL Balanced]**: AI Assistant uses matching image from your Digital Asset Management library first. When that is not enough to cover the visuals you need, it generates images with AI.
     * **[!UICONTROL Creative]**: AI Assistant creates images with generative AI and does not pull images directly from your Digital Asset Management library.
 
     ![](assets/image-mode-3.png)
