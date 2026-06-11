@@ -268,3 +268,4 @@ The following improvements are coming to configuration and administration in thi
 The following usability improvement is coming in this release.
 
 * **Folders for Journeys & Campaigns** - You can now organize your journeys and campaigns into **folders** to improve navigation and management in the interface.
+
