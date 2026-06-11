@@ -79,7 +79,7 @@ topic_v2:
 <table>
 <thead>
 <tr>
-<th><strong>Journey path optimization - Targeting</strong><br/></th>
+<th><strong>Journey path optimization - Targeting (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -175,7 +175,7 @@ topic_v2:
 </tbody>
 </table>
  
-* [!BADGE Important]{type=Informative} **AJO Message Feedback Event Dataset moving to batch ingestion** - The **AJO Message Feedback Event Dataset** is moving from streaming ingestion to batch ingestion. As a result, expect a data latency of up to 2 hours for this dataset. If you have built reports in Customer Journey Analytics or run queries using this dataset, account for this increased latency going forward. [Read more](../data/get-started-datasets.md)
+* [!BADGE Important]{type=Informative} **AJO Message Feedback Event Dataset moving to batch ingestion** - The **AJO Message Feedback Event Dataset** is moving from streaming ingestion to batch ingestion. As a result, expect a data latency of up to 2 hours for this dataset. If you have built reports in Customer Journey Analytics or run queries using this dataset, account for this increased latency going forward. [Read more](../data/datasets-query-examples.md#message-feedback-event-dataset)
 
   Availability date: June 10, 2026
 
