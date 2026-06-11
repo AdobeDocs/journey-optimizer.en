@@ -95,6 +95,13 @@ The following capability is coming to Decisioning in this release.
 </tbody>
 </table>
 
+* **Dynamic offer attributes** - Offer attributes in Decisioning can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items.
+
+* **Placement-level frequency capping in Decisioning** - Frequency capping rules in Decisioning can now be scoped to individual placements, giving you finer control over how often an offer is shown in a given surface. Two modes are available:
+
+  * Placement-specific capping: define a cap that applies only when the offer is displayed in a selected placement.
+  * Per-placement capping: apply a cap independently across every placement where the offer appears, so each placement maintains its own capping counter.
+
 ### Email {#june-26-email}
 
 The following capabilities and improvements are coming to the email channel in this release.
@@ -144,6 +151,8 @@ The following capabilities and improvements are coming to the email channel in t
 </tbody>
 </table>
 
+* **Enhanced Image to HTML converter** - A new version of the Image to HTML converter feature is now available, bringing improved accuracy for HTML generation. This update leverages higher-tier LLM models to deliver more precise and reliable HTML output from image inputs.
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -155,7 +164,8 @@ The following capabilities and improvements are coming to the email channel in t
 <tbody>
 <tr>
 <td>
-<p>The Email Designer now includes a library of ready-to-use layout components — such as Headers, Product Cards (1, 2, or 3 columns), Information blocks, and Footers — that you can drag and drop directly into your email canvas. Each component comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
+<p>The Email Designer now includes a library of ready-to-use layout modules — such as headers, product cards, information blocks, and footers — that you can drag and drop directly into your email canvas.</p>
+<p>Each module comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
 <p>Availability date: June 22, 2026</p>
 </td>
 </tr>
