@@ -225,12 +225,14 @@ The following capabilities and improvements are coming to content management and
 </tr>
 </tbody>
 </table>
- 
+
+<!--
 ### Campaigns {#june-26-campaigns}
 
 The following improvement is coming to campaigns in this release.
 
 * **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default **execution field** set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
+-->
 
 ### Reporting {#june-26-reporting}
 
