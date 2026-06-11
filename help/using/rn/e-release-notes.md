@@ -236,10 +236,18 @@ The following improvement is coming to campaigns in this release.
 
 The following improvements are coming to reporting in this release.
 
-* **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metrics are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
-  * Estimated Clicks: Total clicks counted after removing identified bot and non-human traffic.
+* **Estimated click metrics for Email and SMS reporting** - **Estimated Clicks** is now available in Journeys, Campaigns, and Channel reports. This metric reflects total clicks after excluding identified bot and non-human (NHI) traffic, giving you a clearer view of genuine customer engagement.
+
++++ Coming soon — **Information below is subject to change.**
+
+* **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
+
   * Estimated CTR: Estimated Clicks relative to total deliveries.
   * Estimated CTOR for email only: Estimated Clicks relative to Estimated Opens.
+  
+  Availability date: Late June, 2026
+
++++
 
 ### Configuration {#june-26-configuration}
 
