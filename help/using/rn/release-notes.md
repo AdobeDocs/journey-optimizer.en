@@ -79,7 +79,7 @@ topic_v2:
 <table>
 <thead>
 <tr>
-<th><strong>Journey path optimization - Targeting</strong><br/></th>
+<th><strong>Journey path optimization - Targeting (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
