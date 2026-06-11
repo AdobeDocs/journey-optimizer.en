@@ -245,9 +245,8 @@ The following improvements are coming to reporting in this release.
 
 The following improvements are coming to configuration and administration in this release.
 
-* **Web Application Firewall (WAF) IP whitelistings** - Adobe Journey Optimizer now supports WAF IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their Journey Optimizer-hosted landing pages.
-
-* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub **One-Time Password (OTP)** directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.
+<!--
+* **Web Application Firewall (WAF) IP whitelistings** - Adobe Journey Optimizer now supports WAF IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their Journey Optimizer-hosted landing pages.-->
 
 * **Updated batch ending throughput benchmarks with customer-facing scenarios** - Adobe Journey Optimizer's batch sending throughput benchmarks have been updated to reflect production-grade performance across multiple personalization scenarios — from basic sends to complex dynamic content with conditional logic. The refreshed metrics are now available in the product description to help customers accurately plan their messaging volumes.
 
