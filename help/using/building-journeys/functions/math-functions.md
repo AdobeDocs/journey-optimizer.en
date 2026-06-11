@@ -108,7 +108,7 @@ Returns 3.
 * Apply rounding in business logic where whole numbers are required from decimal calculations
 
 **Glossary:**
-* **random**: A function that returns a pseudo-random decimal value in the range [0, 1) *(product-specific)*
+* **random**: A function that returns a pseudo-random decimal value from 0 (inclusive) to 1 (exclusive) *(product-specific)*
 * **round**: A function that returns the closest integer to the input, with half-values rounding toward positive infinity
 
 **Guardrails:**
