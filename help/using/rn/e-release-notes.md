@@ -153,7 +153,7 @@ The following capabilities and improvements are coming to the email channel in t
 
 * **Enhanced Image to HTML converter** - A new version of the Image to HTML converter feature is now available, bringing improved accuracy for HTML generation. This update leverages higher-tier LLM models to deliver more precise and reliable HTML output from image inputs.
 
-+++ Coming soon — **Information below is subject to change.**
++++ Coming soon — **Information below is subject to change**
 
 <table>
 <thead>
@@ -238,7 +238,7 @@ The following improvements are coming to reporting in this release.
 
 * **Estimated clicks for Email and SMS reporting** — A new **Estimated Clicks** metric is now available in Journeys, Campaigns, and Channel reports for email and SMS. This metric excludes identified bot and non-human interaction (NHI) traffic to provide a clearer view of genuine customer engagement. The existing Clicks metric remains available and continues to report total clicks.
 
-+++ Coming soon — **Information below is subject to change.**
++++ Coming soon — **Information below is subject to change**
 
 * **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
 
@@ -255,7 +255,7 @@ The following improvements are coming to configuration and administration in thi
 
 * **Dataset moving from streaming to batch mode** - The AJO Message Feedback Event Dataset is transitioning from streaming to **batch ingestion mode**. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
 
-+++ Coming soon — **Information below is subject to change.**
++++ Coming soon — **Information below is subject to change**
 
 * **Web Application Firewall (WAF) IP whitelisting** - Adobe Journey Optimizer now supports Web Application Firewall (WAF) IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their AJO-hosted landing pages.
   
