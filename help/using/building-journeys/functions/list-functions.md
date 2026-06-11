@@ -746,43 +746,43 @@ Returns the listObject ordered by SKU attribute (ascending order)
 
 +++AI Assistant — Page context
 
-- **TL;DR:** This page documents all list functions available in AJO journey expressions, covering how to filter, sort, deduplicate, check membership, limit, serialize, and find intersections of lists and arrays.
+* **TL;DR:** This page documents all list functions available in AJO journey expressions, covering how to filter, sort, deduplicate, check membership, limit, serialize, and find intersections of lists and arrays.
 
 **Intents:**
-- Remove duplicate values from a list using `distinct` (ignoring nulls) or `distinctWithNull` (preserving nulls)
-- Filter a listObject to return only objects matching specific key values using `filter`
-- Retrieve an element at a specific index from a list using `getListItem`
-- Check whether a value exists in a list using `in`
-- Find common elements between two lists using `intersect`
-- Return the first or last N elements of a list using `limit`
-- Count the total number of elements in a list using `listSize`
-- Convert a list to a delimited string using `serializeList`
-- Sort a list in ascending or descending order using `sort`
+* Remove duplicate values from a list using `distinct` (ignoring nulls) or `distinctWithNull` (preserving nulls)
+* Filter a listObject to return only objects matching specific key values using `filter`
+* Retrieve an element at a specific index from a list using `getListItem`
+* Check whether a value exists in a list using `in`
+* Find common elements between two lists using `intersect`
+* Return the first or last N elements of a list using `limit`
+* Count the total number of elements in a list using `listSize`
+* Convert a list to a delimited string using `serializeList`
+* Sort a list in ascending or descending order using `sort`
 
 **Glossary:**
-- **listObject**: A list of complex objects that must be a field reference; cannot contain null objects *(product-specific)*
-- **keyAttributeName**: An optional string parameter used with `distinct`, `filter`, and `sort` to identify which object attribute to use for deduplication, filtering, or sorting *(product-specific)*
-- **intersect**: A set operation returning only the elements present in both input lists
+* **listObject**: A list of complex objects that must be a field reference; cannot contain null objects *(product-specific)*
+* **keyAttributeName**: An optional string parameter used with `distinct`, `filter`, and `sort` to identify which object attribute to use for deduplication, filtering, or sorting *(product-specific)*
+* **intersect**: A set operation returning only the elements present in both input lists
 
 **Guardrails:**
-- `distinctWithNull` does not support the `<listObject>` parameter type
-- `filter` requires the listObject parameter to be a field reference, not an inline literal
-- `listSize` on a listObject requires the list to be a field reference; a listObject cannot contain null objects
-- `serializeList` does not support the `listObject` type
+* `distinctWithNull` does not support the `<listObject>` parameter type
+* `filter` requires the listObject parameter to be a field reference, not an inline literal
+* `listSize` on a listObject requires the list to be a field reference; a listObject cannot contain null objects
+* `serializeList` does not support the `listObject` type
 
 **Terminology:**
-- Canonical name: List functions — Acronym: none — variants: collection functions, array functions
-- Synonyms: "listSize" = "count list elements"; "serializeList" = "join list to string"
-- Do not confuse: "distinct" (ignores nulls) ≠ "distinctWithNull" (preserves null as a distinct value)
-- Do not confuse: "limit" with third parameter `true` (returns first N items) ≠ "limit" with `false` (returns last N items)
-- Do not confuse: "intersect" (common elements between two lists) ≠ "filter" (elements matching specific key values)
+* Canonical name: List functions — Acronym: none — variants: collection functions, array functions
+* Synonyms: "listSize" = "count list elements"; "serializeList" = "join list to string"
+* Do not confuse: "distinct" (ignores nulls) ≠ "distinctWithNull" (preserves null as a distinct value)
+* Do not confuse: "limit" with third parameter `true` (returns first N items) ≠ "limit" with `false` (returns last N items)
+* Do not confuse: "intersect" (common elements between two lists) ≠ "filter" (elements matching specific key values)
 
 **FAQ:**
-- **Q: How do I get the first 3 items of a list?** — Use `limit(myList, 3)` or `limit(myList, 3, true)`; the default is to return the first items.
-- **Q: How do I get the last 3 items of a list?** — Use `limit(myList, 3, false)`.
-- **Q: What is the difference between `distinct` and `distinctWithNull`?** — `distinct` ignores null values and excludes them from the result; `distinctWithNull` treats null as a distinct value and includes one null entry if any nulls are present.
-- **Q: Can I filter a list of strings with `filter`?** — No, `filter` only works on `listObject`; for scalar lists use `in` or `distinct` for deduplication.
-- **Q: How do I check if a value is in a list?** — Use `in(value, myList)`, which returns true if the value is found in the list.
-- **Q: Can I sort a listObject by a specific attribute?** — Yes, use `sort(@event{...}, "attributeName", true)` where the second parameter is the attribute name and the third is the sort direction (true = ascending).
+* **Q: How do I get the first 3 items of a list?** — Use `limit(myList, 3)` or `limit(myList, 3, true)`; the default is to return the first items.
+* **Q: How do I get the last 3 items of a list?** — Use `limit(myList, 3, false)`.
+* **Q: What is the difference between `distinct` and `distinctWithNull`?** — `distinct` ignores null values and excludes them from the result; `distinctWithNull` treats null as a distinct value and includes one null entry if any nulls are present.
+* **Q: Can I filter a list of strings with `filter`?** — No, `filter` only works on `listObject`; for scalar lists use `in` or `distinct` for deduplication.
+* **Q: How do I check if a value is in a list?** — Use `in(value, myList)`, which returns true if the value is found in the list.
+* **Q: Can I sort a listObject by a specific attribute?** — Yes, use `sort(@event{...}, "attributeName", true)` where the second parameter is the attribute name and the third is the sort direction (true = ascending).
 
 +++

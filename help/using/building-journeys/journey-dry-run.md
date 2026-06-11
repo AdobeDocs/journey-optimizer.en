@@ -187,40 +187,40 @@ Learn how to dry run your journeys in this video.
 
 +++AI Assistant — Page context
 
-- **TL;DR:** This page explains Journey Dry run, a special publication mode that lets practitioners test a journey using real production data without contacting customers or modifying profiles, and covers how to start, monitor, stop, and filter Dry run step events.
+* **TL;DR:** This page explains Journey Dry run, a special publication mode that lets practitioners test a journey using real production data without contacting customers or modifying profiles, and covers how to start, monitor, stop, and filter Dry run step events.
 
 **Intents:**
-- Activate Dry run mode on a Draft journey to validate audience reach and branch logic with real production data
-- Monitor journey execution metrics in the canvas during a Dry run
-- Stop a Dry run manually and return the journey to Draft status
-- Filter Dry run step events out of reporting queries using the `inDryRun` flag
-- Understand which activities are disabled or simulated during a Dry run
+* Activate Dry run mode on a Draft journey to validate audience reach and branch logic with real production data
+* Monitor journey execution metrics in the canvas during a Dry run
+* Stop a Dry run manually and return the journey to Draft status
+* Filter Dry run step events out of reporting queries using the `inDryRun` flag
+* Understand which activities are disabled or simulated during a Dry run
 
 **Glossary:**
-- **Dry run**: A special journey publication mode that executes the journey against real production data without sending any communications or updating profile information *(product-specific)*
-- **stepEvent**: An automatically generated dataset record capturing every step a profile takes in a journey; Dry run step events carry `inDryRun=true` and a `dryRunID` *(product-specific)*
-- **inDryRun flag**: A boolean field on stepEvents that is `true` for Dry run executions and `null` for live or test journeys *(product-specific)*
+* **Dry run**: A special journey publication mode that executes the journey against real production data without sending any communications or updating profile information *(product-specific)*
+* **stepEvent**: An automatically generated dataset record capturing every step a profile takes in a journey; Dry run step events carry `inDryRun=true` and a `dryRunID` *(product-specific)*
+* **inDryRun flag**: A boolean field on stepEvents that is `true` for Dry run executions and `null` for live or test journeys *(product-specific)*
 
 **Guardrails:**
-- Only Draft journeys with no errors can be activated in Dry run mode
-- Starting a Dry run requires the **Publish journeys** permission; stopping it requires **Manage journeys**
-- Dry run journeys automatically revert to Draft after 14 days
-- Profiles processed during a Dry run are counted towards Engageable Profiles and the live journey quota
-- Channel action nodes (Email, SMS, Push) and Custom actions are not executed during Dry run
-- Jump actions are not enabled in Dry run
-- Reporting data is only available while the Dry run is active; once stopped, the data is no longer accessible
-- Dry run journeys do not impact business rules
+* Only Draft journeys with no errors can be activated in Dry run mode
+* Starting a Dry run requires the **Publish journeys** permission; stopping it requires **Manage journeys**
+* Dry run journeys automatically revert to Draft after 14 days
+* Profiles processed during a Dry run are counted towards Engageable Profiles and the live journey quota
+* Channel action nodes (Email, SMS, Push) and Custom actions are not executed during Dry run
+* Jump actions are not enabled in Dry run
+* Reporting data is only available while the Dry run is active; once stopped, the data is no longer accessible
+* Dry run journeys do not impact business rules
 
 **Terminology:**
-- Canonical name: Journey Dry run — Acronym: none — variants: dry run mode, Dry run publication mode
-- Synonyms: "Dry run" = "smoke test" (informally)
-- Do not confuse: "Dry run" ≠ "Test mode" — Dry run uses real production data and counts towards quotas; Test mode uses synthetic test profiles and does not
+* Canonical name: Journey Dry run — Acronym: none — variants: dry run mode, Dry run publication mode
+* Synonyms: "Dry run" = "smoke test" (informally)
+* Do not confuse: "Dry run" ≠ "Test mode" — Dry run uses real production data and counts towards quotas; Test mode uses synthetic test profiles and does not
 
 **FAQ:**
-- **Q: Does Dry run actually send emails or push notifications to customers?** — No; all channel action nodes and custom actions are disabled and not executed during a Dry run.
-- **Q: How long does a Dry run last before it automatically stops?** — 14 days, after which the journey automatically transitions back to Draft status.
-- **Q: How do I exclude Dry run data from my journey analytics queries?** — Filter out step events where `inDryRun` is `true`; include only events where `inDryRun` is `null` or `false`.
-- **Q: Are profiles counted against any limits during a Dry run?** — Yes; profiles are counted towards Engageable Profiles and the Dry run journey is counted towards the live journey quota.
-- **Q: Can I enable Wait activities and external data source calls during a Dry run?** — Both are disabled by default, but you can choose to enable or disable them when activating the Dry run.
+* **Q: Does Dry run actually send emails or push notifications to customers?** — No; all channel action nodes and custom actions are disabled and not executed during a Dry run.
+* **Q: How long does a Dry run last before it automatically stops?** — 14 days, after which the journey automatically transitions back to Draft status.
+* **Q: How do I exclude Dry run data from my journey analytics queries?** — Filter out step events where `inDryRun` is `true`; include only events where `inDryRun` is `null` or `false`.
+* **Q: Are profiles counted against any limits during a Dry run?** — Yes; profiles are counted towards Engageable Profiles and the Dry run journey is counted towards the live journey quota.
+* **Q: Can I enable Wait activities and external data source calls during a Dry run?** — Both are disabled by default, but you can choose to enable or disable them when activating the Dry run.
 
 +++

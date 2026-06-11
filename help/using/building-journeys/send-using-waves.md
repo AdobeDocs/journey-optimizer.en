@@ -127,45 +127,45 @@ You can only define the size and timing of waves. The same audience flows throug
 
 +++AI Assistant — Page context
 
-- **TL;DR:** This page explains how to configure wave sending in Adobe Journey Optimizer read audience journeys to deliver outbound messages in controlled batches over time, improving deliverability and protecting sender reputation.
+* **TL;DR:** This page explains how to configure wave sending in Adobe Journey Optimizer read audience journeys to deliver outbound messages in controlled batches over time, improving deliverability and protecting sender reputation.
 
 **Intents:**
-- Enable wave sending on a Read Audience journey to deliver messages in batches
-- Configure equal waves with a fixed interval between each wave
-- Define custom wave sizes as percentages or absolute profile counts
-- Schedule each wave with a specific start date and time using custom scheduling
-- Control delivery volume to protect sender reputation or align with operational capacity
+* Enable wave sending on a Read Audience journey to deliver messages in batches
+* Configure equal waves with a fixed interval between each wave
+* Define custom wave sizes as percentages or absolute profile counts
+* Schedule each wave with a specific start date and time using custom scheduling
+* Control delivery volume to protect sender reputation or align with operational capacity
 
 **Glossary:**
-- **Wave sending**: A delivery mode that splits the Read Audience into batches (waves) and sends messages to each batch at scheduled intervals instead of all at once *(product-specific)*
-- **Equal waves**: A wave configuration where the audience is split into equal-sized portions with a fixed interval between wave starts *(product-specific)*
-- **Custom distribution**: A wave configuration where each wave's size is defined manually as a percentage or absolute number of profiles *(product-specific)*
-- **Custom schedule**: A wave configuration where each wave has a specific start date and time, allowing non-uniform spacing *(product-specific)*
+* **Wave sending**: A delivery mode that splits the Read Audience into batches (waves) and sends messages to each batch at scheduled intervals instead of all at once *(product-specific)*
+* **Equal waves**: A wave configuration where the audience is split into equal-sized portions with a fixed interval between wave starts *(product-specific)*
+* **Custom distribution**: A wave configuration where each wave's size is defined manually as a percentage or absolute number of profiles *(product-specific)*
+* **Custom schedule**: A wave configuration where each wave has a specific start date and time, allowing non-uniform spacing *(product-specific)*
 
 **Guardrails:**
-- Wave sending is only available for Read Audience journeys with the "As soon as possible" and "Once" scheduler types; it is not available for recurring, event-triggered, business-event, test mode, or dry-run journeys.
-- A minimum of 2 waves and a maximum of 10 waves must be defined.
-- The minimum interval between the start of two consecutive waves is 30 minutes.
-- A wave start time cannot be before the journey start or in the past.
-- Splitting the audience into waves can take up to 1 hour; profiles may not enter until then.
-- Within a single journey version, two waves never run simultaneously; the next wave starts only after the previous one finishes.
-- Wave starts can be delayed by platform quota limits or heavy system load.
-- When using percentage-based custom distribution, all waves must total 100%.
-- When using number-based custom distribution, the system does not validate total coverage; the user must ensure wave sizes cover the intended audience.
-- If wave sizes exceed the audience, the first wave sends to the full audience and remaining waves do not execute.
-- If wave sizes total less than the audience, only profiles in defined waves receive the message; the rest are not retried.
+* Wave sending is only available for Read Audience journeys with the "As soon as possible" and "Once" scheduler types; it is not available for recurring, event-triggered, business-event, test mode, or dry-run journeys.
+* A minimum of 2 waves and a maximum of 10 waves must be defined.
+* The minimum interval between the start of two consecutive waves is 30 minutes.
+* A wave start time cannot be before the journey start or in the past.
+* Splitting the audience into waves can take up to 1 hour; profiles may not enter until then.
+* Within a single journey version, two waves never run simultaneously; the next wave starts only after the previous one finishes.
+* Wave starts can be delayed by platform quota limits or heavy system load.
+* When using percentage-based custom distribution, all waves must total 100%.
+* When using number-based custom distribution, the system does not validate total coverage; the user must ensure wave sizes cover the intended audience.
+* If wave sizes exceed the audience, the first wave sends to the full audience and remaining waves do not execute.
+* If wave sizes total less than the audience, only profiles in defined waves receive the message; the rest are not retried.
 
 **Terminology:**
-- Canonical name: Wave sending — Acronym: none — variants: batch delivery, wave-based delivery, phased send
-- Synonyms: "waves" = "batches" = "delivery phases"
-- Do not confuse: "Wave sending" ≠ "recurring journey" (wave sending splits a single audience read into timed batches; recurring journeys re-read the audience on a schedule)
+* Canonical name: Wave sending — Acronym: none — variants: batch delivery, wave-based delivery, phased send
+* Synonyms: "waves" = "batches" = "delivery phases"
+* Do not confuse: "Wave sending" ≠ "recurring journey" (wave sending splits a single audience read into timed batches; recurring journeys re-read the audience on a schedule)
 
 **FAQ:**
-- **Q: Can wave sending be used on recurring journeys?** — No; wave sending is only available for Read Audience journeys with the "As soon as possible" or "Once" scheduler type.
-- **Q: What is the minimum time between two waves?** — 30 minutes between the start of two consecutive waves.
-- **Q: What happens if my wave sizes total more than the audience?** — The first wave sends to the full audience and subsequent waves have no profiles left to send to; they do not execute.
-- **Q: Can I assign different content or segments to individual waves?** — No; all waves use the same audience and journey content. Only size and timing can be customized per wave.
-- **Q: How many waves can I configure?** — Between 2 and 10 waves per journey.
-- **Q: When should I use wave sending?** — Use it to protect sender reputation for high-volume sends, align delivery with downstream team capacity (e.g., call centers), or progressively ramp up volume on a new IP or platform.
+* **Q: Can wave sending be used on recurring journeys?** — No; wave sending is only available for Read Audience journeys with the "As soon as possible" or "Once" scheduler type.
+* **Q: What is the minimum time between two waves?** — 30 minutes between the start of two consecutive waves.
+* **Q: What happens if my wave sizes total more than the audience?** — The first wave sends to the full audience and subsequent waves have no profiles left to send to; they do not execute.
+* **Q: Can I assign different content or segments to individual waves?** — No; all waves use the same audience and journey content. Only size and timing can be customized per wave.
+* **Q: How many waves can I configure?** — Between 2 and 10 waves per journey.
+* **Q: When should I use wave sending?** — Use it to protect sender reputation for high-volume sends, align delivery with downstream team capacity (e.g., call centers), or progressively ramp up volume on a new IP or platform.
 
 +++
