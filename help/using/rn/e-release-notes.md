@@ -48,8 +48,10 @@ The following capabilities and improvements are coming to journeys in this relea
 * **Stop or close a paused journey directly** - You can now **stop a journey or close it to new entrances** directly from the **Paused** state. Previously, a paused journey had to be resumed to Live before it could be stopped or closed.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14229">Link to DOCAC JIRA task</a>
 
+<!--
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-14541">Link to DOCAC JIRA task</a>
+-->
   
 ### Orchestrated campaigns {#june-26-oc}
 
@@ -78,8 +80,10 @@ The following capabilities and improvements are coming to orchestrated campaigns
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of **email header fields**, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13761">Link to DOCAC JIRA task</a>
 
+<!--
 * **Target dimension simplification in Orchestrated campaigns** - The active **targeting dimension** is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.
   <a href="https://jira.corp.adobe.com/browse/DOCAC-13554">Link to DOCAC JIRA task</a>
+-->
 
 ### Decisioning {#june-26-decisioning}
 
