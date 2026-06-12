@@ -179,6 +179,40 @@ If you export stepEvent data to **external systems**, you can filter Dry run exe
 
 When analyzing **journey reporting metrics** using [!DNL Adobe Experience Platform] Query service, Dry Run-generated step events must be excluded. To do this, exclude step events where `inDryRun` is `true` (i.e. include only events where `inDryRun` is `null` or `false`).
 
+## Frequently asked questions {#faq}
+
+**Does a Dry run send messages to real customers?**
+
+No. Dry run uses real production data but does not contact profiles or update profile information. Channel actions (Email, SMS, Push) are not executed, and custom actions are disabled with their responses set to `null`.
+
+**What permissions do I need to start or stop a Dry run?**
+
+Starting a Dry run requires the **[!DNL Publish journeys]** high-level permission. Stopping a Dry run requires the **[!DNL Manage journeys]** high-level permission. Learn more in the [permissions section](../administration/permissions-overview.md).
+
+**On which journeys can I run a Dry run?**
+
+You can use Dry run on any **[!UICONTROL Draft]** journey that has no error.
+
+**How long does a Dry run last?**
+
+After 14 days, Dry run journeys automatically transition back to the **[!UICONTROL Draft]** status. You can also stop a Dry run manually at any time.
+
+**Are Wait activities and external data sources executed during a Dry run?**
+
+By default, **Wait** activities and **Data sources** (including external data sources) are disabled during a Dry run. You can change this behavior when [activating the Dry run mode](#journey-dry-run-start).
+
+**Do Dry run profiles and journeys count towards my quotas?**
+
+Yes. Profiles in Dry run mode count towards [Engageable Profiles](../audience/license-usage.md), and journeys in Dry run mode count towards the live journey quota. However, Dry run journeys do not impact business rules.
+
+**Can I still access Dry run reports after stopping the test?**
+
+No. Reporting data is available only while the Dry run is **active**. Once stopped, the data is no longer accessible — use the **Export** button above the reports to download it beforehand if needed.
+
+**How do I exclude Dry run data from my reporting?**
+
+Dry run generates **stepEvents** flagged with `inDryRun` and a `dryRunID`. When analyzing journey reporting metrics with [!DNL Adobe Experience Platform] Query service, exclude step events where `inDryRun` is `true` (include only events where `inDryRun` is `null` or `false`).
+
 ## How-to video {#dry-run-video}
 
 Learn how to dry run your journeys in this video.
