@@ -76,7 +76,35 @@ Start by defining the decision item's standard and custom attributes :
 
 1. Specify custom attributes (optional). Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are defined in the decision items' catalog schema. [Learn how to work with catalogs](catalogs.md)
 
+1. Add personalization attributes (optional). In the **[!UICONTROL Personalization Attributes]** section, define attribute values evaluated at delivery time using profile, context, journey, and audience data — so a single decision item can serve tailored content to different profiles without duplication. [Learn more](#personalization-attributes)
+
 1. Once the decision item's attributes are defined, click **[!UICONTROL Next]**.
+
+## Add personalization attributes {#personalization-attributes}
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_personalization_attributes"
+>title="Add personalization attributes"
+>abstract="Define offer attribute values to be evaluated at delivery time using profile data, context data, journey context, and audience membership. A single decision item can then serve tailored content to different profiles without duplicating items for minor variations."
+
+Unlike standard and custom attributes — which hold static values — personalization attributes are resolved at runtime for each individual profile. This lets you manage fewer, more flexible decision items while still delivering highly relevant content.
+
+To add a personalization attribute:
+
+1. In the **[!UICONTROL Personalization Attributes]** section of the item creation screen, click **[!UICONTROL Add attribute]**.
+1. Use the personalization editor to build the attribute value. You can type a static string or insert tokens using handlebar syntax (e.g., `{{profile.person.name.firstName}}`).
+1. Reference any of the following data sources:
+
+   * **Profile attributes** — Data stored in the profile, such as first name or loyalty tier.
+   * **Context data** — Data passed at request time, such as event payload or cart contents.
+   * **Journey context** — Attributes from journey events preceding the decisioning step (e.g., a city name from an abandoned cart event).
+   * **Audience membership** — Whether the profile belongs to a specific audience.
+
+1. Optionally, set a **fallback value** (default text or empty string) to use when the referenced data is unavailable at delivery time.
+
+>[!NOTE]
+>
+>Personalization attributes are separate from standard and custom attributes and have no effect on eligibility rules or capping logic.
 
 ## Configure the decision item's eligibility {#eligibility}
 
