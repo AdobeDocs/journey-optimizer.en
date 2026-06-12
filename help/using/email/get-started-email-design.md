@@ -59,6 +59,8 @@ The Email Designer also enables you to:
 
 * Enhance customers' experience by creating personalized and dynamic messages based on their profile attributes. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md).
 
+* Run **automated content checks** to catch HTML and CSS issues — such as unsupported tags, empty divs, and size limit violations — directly in the authoring panel, before sending. [Learn more](content-check.md)
+
 ➡️ [Discover this feature in video](#video)
 
 ## Key steps to create email content {#key-steps}
