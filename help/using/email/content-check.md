@@ -12,6 +12,11 @@ keywords: email, content check, HTML, CSS, validation, rendering, quality
 
 # Content checks in the Email Designer {#content-checks}
 
+>[!CONTEXTUALHELP]
+>id="ajo_email_content_check"
+>title="Content checks"
+>abstract="Detect and fix HTML and CSS issues in your email before sending. Checks cover unsupported tags, empty divs, and size thresholds that trigger rendering failures in Gmail or Microsoft Outlook. Issues are surfaced as errors, warnings, or informational notices."
+
 [!DNL Journey Optimizer] includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.
 
 Results are surfaced as errors, warnings, or informational notices in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the Email Designer.
