@@ -111,7 +111,10 @@ The following capabilities and improvements are coming to the email channel in t
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now includes content quality scoring directly in the Email Designer that analyzes your email across three dimensions before launch: spelling, grammar, and punctuation; readability and tone, including flags for long sentences, passive voice, and jargon; and subject line and CTA effectiveness, scored for clarity, urgency, and structure. Each check surfaces actionable suggestions, allowing teams to catch and resolve issues without leaving the authoring interface.</p>
+<p>Journey Optimizer now includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.</p>
+<p>Checks cover unsupported elements such as <code>&lt;script&gt;</code> and <code>&lt;base&gt;</code> tags, empty divs that can break layout in Microsoft Outlook, HTML meta refresh tags, and CSS or HTML size thresholds that trigger rendering failures in Gmail.</p>
+<p>Results are surfaced as errors, warnings, or informational notices directly in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the editor.</p>
+<p>For more information, refer to the <a href="../email/content-check.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -126,7 +129,8 @@ The following capabilities and improvements are coming to the email channel in t
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders. This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
+<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
+<p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
 </td>
 </tr>
 </tbody>
@@ -141,7 +145,8 @@ The following capabilities and improvements are coming to the email channel in t
 <tbody>
 <tr>
 <td>
-<p>You can now add rich text to customizable fragments that are used in your emails content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
+<p>You can now add rich text to customizable fragments that are used in your emails content.</p>
+<p>For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
 </td>
 </tr>
 </tbody>
