@@ -54,20 +54,20 @@ The following capabilities and improvements are coming to orchestrated campaigns
 <table>
 <thead>
 <tr>
-<th><strong>Load file activity in Orchestrated campaigns</strong><br/></th>
+<th><strong>File-based targeting in Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Orchestrated campaigns now support loading a <strong>CSV or TXT file</strong> directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. This supports ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical.</p>
+<p>Orchestrated campaigns now support loading a <strong>CSV or TXT file</strong> directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. Rows that fail validation are rejected and logged before the campaign runs, keeping the audience clean without manual pre-processing. This is particularly suited for ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Loop-based personalization for relational data in Orchestrated campaigns** - The personalization editor now supports a **Loop block** that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
+* **Loop-based personalization for relational data in Orchestrated campaigns** - The personalization editor now supports a **Loop block** that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. You can preview how looped blocks render against sample data before the campaign goes live, including handling of empty collections.
 
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of **email header fields**, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
 
@@ -109,13 +109,13 @@ The following capabilities and improvements are coming to the email channel in t
 <table>
 <thead>
 <tr>
-<th><strong>Content check in the Email Designer</strong><br/></th>
+<th><strong>Content quality checks in the Email Designer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now allows users to validate their <strong>email content quality</strong> - including readability, effectiveness, and content cohesiveness - directly within the Email Designer interface.</p>
+<p>Journey Optimizer now includes content quality scoring directly in the Email Designer that analyzes your email across three dimensions before launch: spelling, grammar, and punctuation; readability and tone, including flags for long sentences, passive voice, and jargon; and subject line and CTA effectiveness, scored for clarity, urgency, and structure. Each check surfaces actionable suggestions, allowing teams to catch and resolve issues without leaving the authoring interface.</p>
 </td>
 </tr>
 </tbody>
@@ -130,7 +130,7 @@ The following capabilities and improvements are coming to the email channel in t
 <tbody>
 <tr>
 <td>
-<p>This new option allows to <strong>reduce the size of the HTML</strong> in an email by stripping out unnecessary whitespace, comments, and redundant code — without changing how the email looks. This helps improve deliverability (some email providers reject or flag oversized emails) and can speed up load time for recipients.</p>
+<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders. This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
 </td>
 </tr>
 </tbody>
@@ -153,7 +153,7 @@ The following capabilities and improvements are coming to the email channel in t
 
 * **Enhanced Image to HTML converter** - A new version of the Image to HTML converter feature is now available, bringing improved accuracy for HTML generation. This update leverages higher-tier LLM models to deliver more precise and reliable HTML output from image inputs.
 
-+++ Coming soon — **Information below is subject to change.**
++++ Coming soon — **Information below is subject to change**
 
 <table>
 <thead>
@@ -238,9 +238,9 @@ The following improvement is coming to campaigns in this release.
 
 The following improvements are coming to reporting in this release.
 
-* **Estimated click metrics for Email and SMS reporting** - **Estimated Clicks** is now available in Journeys, Campaigns, and Channel reports. This metric reflects total clicks after excluding identified bot and non-human (NHI) traffic, giving you a clearer view of genuine customer engagement.
+* **Estimated clicks for Email and SMS reporting** — A new **Estimated Clicks** metric is now available in Journeys, Campaigns, and Channel reports for email and SMS. This metric excludes identified bot and non-human interaction (NHI) traffic to provide a clearer view of genuine customer engagement. The existing Clicks metric remains available and continues to report total clicks.
 
-+++ Coming soon — **Information below is subject to change.**
++++ Coming soon — **Information below is subject to change**
 
 * **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
 
@@ -257,7 +257,7 @@ The following improvements are coming to configuration and administration in thi
 
 * **Dataset moving from streaming to batch mode** - The AJO Message Feedback Event Dataset is transitioning from streaming to **batch ingestion mode**. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
 
-+++ Coming soon — **Information below is subject to change.**
++++ Coming soon — **Information below is subject to change**
 
 * **Web Application Firewall (WAF) IP whitelisting** - Adobe Journey Optimizer now supports Web Application Firewall (WAF) IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their AJO-hosted landing pages.
   
