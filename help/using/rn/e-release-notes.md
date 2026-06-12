@@ -43,10 +43,6 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Stop or close a paused journey directly** - You can now **stop a journey or close it to new entrances** directly from the **Paused** state. Previously, a paused journey had to be resumed to Live before it could be stopped or closed.
 
-<!--
-* **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
--->
-  
 ### Orchestrated campaigns {#june-26-oc}
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.

@@ -148,7 +148,7 @@ You will set: **Audience** (mandatory), **Namespace** (mandatory), **Reading rat
 
 You can optionally enable **Use a supplemental identifier** to run the journey in the context of a secondary identifier (for example, an order ID or booking ID) in addition to the profile ID. This allows multiple entrances of the same profile when the supplemental identifier differs.
 
-[Learn how to use supplemental identifiers in journeys](supplemental-identifier.md). For Read audience journeys, the supplemental identifier must be a profile attribute; the reading rate is limited to 500 profiles per second when supplemental ID is used.
+[Learn how to use supplemental identifiers in journeys](supplemental-identifier.md). For Read audience journeys, the supplemental identifier is prepared from the **union/profile schema** for **Unified Profile Service** audiences, or selected from eligible attributes on **external audiences** (for example, audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"} or resulting from [composition workflows](../audience/get-started-audience-orchestration.md)). The reading rate is limited to 500 profiles per second per journey instance when supplemental ID is used.
 
 ### Guardrails and recommendations {#must-read}
 

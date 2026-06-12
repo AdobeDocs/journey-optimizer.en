@@ -28,7 +28,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
 >title="Use supplemental identifier"
->abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. It consists of the field used as the supplemental identifier and a namespace associated with it."
+>abstract="The supplemental identifier is a secondary identifier that provides additional context for the execution of a journey. To define it, select any non-identity attribute (or non-person identity) from the audience or event to use as the supplemental identifier."
 
 <table style="border-collapse: collapse; width: 100%;">
   <tr>
@@ -50,9 +50,9 @@ topic_v2:
 
 * **Supported journeys**: Supplemental identifiers are supported for **event-triggered** and **Read audience** journeys. They are **not supported** for Audience qualification journeys (i.e., journeys starting with an Audience qualification activity). 
 
-* **Concurrent instance limits**: Profiles cannot have more than 10 concurrent journey instances.
+* **Inbound actions**: Supplemental identifiers are currently not supported for inbound actions, such as in-app and web actions.
 
-* **Frequency rules**: Each journey instance created from supplemental identifier usage counts towards frequency capping, even if the use of supplement identifiers results in multiple journey instances.
+* **Concurrent instance limits**: Profiles cannot have more than 10 concurrent journey instances.
 
 * **Data type and schema structure**: The supplemental identifier must be of type `string`. It can be an independent string attribute or it can be a string attribute within an array of objects. The independent string attribute will result in a single journey instance, whereas the string attribute within an array of objects will result in a unique journey instance per iteration of the object array. String arrays and maps are not supported.
 
@@ -71,10 +71,10 @@ topic_v2:
 
 * **Read audience journeys**
 
-  * Supplemental ID is disabled if you use a business event.
-  * Supplemental ID must be a field from the profile (i.e., not an event/context field).
-  * For read audience journeys using supplemental IDs, the reading rate of the read audience activity for each journey instance is limited to a maximum of 500 profiles per second.
-  * Only Unified Profile Service audiences are supported when using Read audience journeys with supplemental IDs.
+  * **Business events**: Supplemental ID is disabled if you use a business event.
+  * **Event and context fields**: The supplemental identifier must not be sourced from an event or journey context field.
+  * **Attribute selection**: Any non-identity attribute (or non-person identity) can be used as the supplemental ID, for all audience types (Unified Profile Service, CSV import, and Federated Audience Composition). Person-based identity attributes are not permitted. For external audiences, see [Supplemental identifiers with external audiences](#external-audiences) for supported data patterns and configuration requirements.
+  * **Reading rate**: For read audience journeys using an array-type supplemental ID field, the reading rate of the Read audience activity is limited to a maximum of 500 profiles per second.
 
 ## Exit criteria behavior with supplemental IDs {#exit-criteria}
 
@@ -96,37 +96,19 @@ The table below explains the behavior of profiles in a supplemental ID-enabled j
 
 To use a supplemental identifier in an event-triggered journey, follow these steps:
 
-1. **Mark the attribute as an identifier in the event schema**
-
-    1. Access the event schema and locate the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID) and mark it as an ID. [Learn how to work with schemas](../data/get-started-schemas.md)
-
-    1. Mark the identifier as an **[!UICONTROL Identity]**.
-
-        ![Schema configuration with supplemental identifier field group](assets/supplemental-ID-schema.png)
-
-        >[!IMPORTANT]
-        >
-        >Make sure you do not mark the attribute as **Primary identity**.
-
-    1. Select the namespace to associate with the supplemental ID. This must be a non-person identifier namespace.
-
-        After applying the non-person identity namespace to a schema, you must create a new event in order to use the supplemental identifier. Existing entities cannot be refreshed to recognize the new identifier.
-
 1. **Add the supplemental ID to the event**
 
     1. Create or edit the desired event. [Learn how to configure a unitary event](../event/about-creating.md)
 
     1. In the event configuration screen, check the **[!UICONTROL Use supplemental identifier]** option.
 
-        ![Event configuration with supplemental identifier namespace selection](assets/supplemental-ID-event.png)
+        ![Event configuration with supplemental identifier option](assets/supplemental-ID-event.png)
 
-    1. Use the expression editor to select the attribute you marked as the supplemental ID.
+    1. Use the expression editor to select the field you want to use as the supplemental ID (e.g., booking ID, subscription ID).
 
         >[!NOTE]
         >
         >Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
-
-    1. After selecting the supplemental ID, the associated namespace is displayed in the event configuration screen as read-only.
 
 1. **Add the event to the journey**
 
@@ -138,32 +120,6 @@ To use a supplemental identifier in an event-triggered journey, follow these ste
 
 To use a supplemental identifier in a Read audience journey, follow these steps:
 
-1. **Mark the attribute as an identifier in the union/profile schema**
-
-    1. Access the union/profile schema and locate the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID) and mark it as an ID. [Learn how to work with schemas](../data/get-started-schemas.md)
-
-    1. Mark the identifier as an **[!UICONTROL Identity]**.
-
-        ![Profile schema with supplemental identifier field configured](assets/supplemental-ID-schema-profile.png)
-
-        >[!IMPORTANT]
-        >
-        >Make sure you do not mark the attribute as **Primary identity**.
-
-    1. Select the namespace to associate with the supplemental ID. This must be a non-person identifier namespace.
-    
-        After applying the non-person identity namespace to a schema, you must create a new field group in order to use the supplemental identifier. Existing entities cannot be refreshed to recognize the new identifier.
-
-<!--
-1. **Add the supplemental ID field to the data source**
-
-    1. Navigate to the **[!UICONTROL Configuration]** / **[!UICONTROL Data Sources]** menu, then locate the "ExperiencePlatformDataSource" data source.
-
-        ![Data source configuration with supplemental identifier mapping](assets/supplemental-ID-data-source.png)
-
-    1. Open the field selector then select the attribute you want to use as a supplemental identifier (e.g., booking ID, subscription ID).
--->
-
 1. **Add and configure a Read audience activity in the journey**
 
     1. Drag a **[!UICONTROL Read audience]** activity in your journey.
@@ -172,13 +128,13 @@ To use a supplemental identifier in a Read audience journey, follow these steps:
 
         ![Read Audience activity with supplemental identifier configuration](assets/supplemental-ID-read-audience.png)
 
-    1. In the **[!UICONTROL Supplement identifier]** field, use the expression editor to select the attribute you marked as the supplemental ID.
+    1. In the **[!UICONTROL Supplemental identifier]** field, use the expression editor to select the supplemental identifier attribute.
+    
+      For audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"}, if your CSV audience contains multiple rows per profile ID, make sure Express Activation is enabled first — see [Supplemental identifiers with external audiences](#external-audiences).
 
         >[!NOTE]
         >
         >Make sure you are using the expression editor in **[!UICONTROL Advanced mode]** to select the attribute.
-  
-    1. After selecting the supplemental ID, the associated namespace is displayed in the **[!UICONTROL Supplemental namespace]** field as read-only.
 
 >[!ENDTABS]
 
@@ -230,6 +186,113 @@ In an object array with the supplemental ID as `bookingNum` and an attribute at 
   ```
 
 +++
+
+## Supplemental ID and journey arbitration {#arbitration}
+
+Journey arbitration (including concurrency caps and entry counting within rulesets) operates at the profile ID level, not the (profile ID, supplemental ID) pair level. This means a concurrency cap of 1 may block a second journey instance for the same profile even when it carries a different supplemental ID value.
+
+Contact your Adobe representative for guidance on arbitration behavior before relying on specific arbitration settings in production.
+
+**Related documentation:**
+
+* [Journey capping & arbitration](../conflict-prioritization/journey-capping.md)
+* [Work with rule sets](../conflict-prioritization/rule-sets.md)
+* [Conflict management & prioritization](../conflict-prioritization/gs-conflict-prioritization.md)
+
+## Supplemental identifiers with external audiences {#external-audiences}
+
+Supplemental ID is supported for external audiences, including audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"} and audiences created with [Federated Audience Composition](../audience/get-started-audience-orchestration.md). When configuring a journey that reads from a CSV or Federated Audience Composition audience, you can designate any non-identity attribute in that audience as the supplemental ID. Journey Optimizer then creates a separate journey instance per unique profile + supplemental ID combination.
+
+* Use case 1: One row per unique profile + supplemental ID pair
+
+  This is the primary use case for CSV and Federated Audience Composition audiences. The audience contains multiple rows where each row represents a unique combination of a profile (e.g., a customer) and a supplemental ID (e.g., an account or order ID). Each row is treated as an independent activation record.
+
+  | profile_id | account_id *(Supplemental ID)* | other_attributes |
+  | --- | --- | --- |
+  | customer_001 | ACC-1001 | … |
+  | customer_001 | ACC-1002 | … |
+  | customer_002 | ACC-2001 | … |
+
+  In this example, `customer_001` has two accounts. Journey Optimizer creates a separate journey instance for each unique profile + `account_id` pair.
+
+* Use case 2: One row per profile with an array of supplemental IDs
+
+  This use case is available for audience types that support arrays. A single row in the audience contains a profile with an array attribute holding multiple supplemental ID values. Journey Optimizer creates one journey instance per value in the array.
+
+  | profile_id | account_ids *(array, Supplemental ID)* | other_attributes |
+  | --- | --- | --- |
+  | customer_001 | [ACC-1001, ACC-1002] | … |
+  | customer_002 | [ACC-2001] | … |
+
+  In this example, Journey Optimizer generates two journey instances for `customer_001` (one per account ID) and one instance for `customer_002`. This behaves consistently with how supplemental ID works for Unified Profile Service audiences.
+
+### How to configure {#external-configuration}
+
+For CSV audiences using Use Case 1 (where the audience intentionally contains multiple rows for the same profile ID)you must enable Express Activation before configuring the journey. See the prerequisite below. For all other cases, configure the journey directly.
+
++++ Prerequisite: Enable Express Activation on CSV audiences via API
+
+>[!IMPORTANT]
+>
+>This prerequisite applies only to CSV audiences where the audience intentionally contains multiple rows for the same profile ID (Use Case 1). Federated Audience Composition audiences have Express Activation enabled by default and do not require this step. The Audience Portal UI does not support setting `expressActivation` — you must use the External Audience API.
+
+You must enable `expressActivation` on the audience at creation time. This tells Journey Optimizer to activate every record independently, without deduplication by profile ID. This flag cannot be changed after the audience is created.
+
+Use the following API call when creating the audience:
+
+Endpoint:
+
+```http
+POST https://platform.adobe.io/data/core/ais/external-audience
+```
+
+Required headers:
+
+```http
+Authorization: Bearer {ACCESS_TOKEN}
+Content-Type: application/json
+x-api-key: {API_KEY}
+x-gw-ims-org-id: {IMS_ORG}
+x-sandbox-name: {SANDBOX_NAME}
+```
+
+Request body (set `expressActivation: true`):
+
+```json
+{
+  "name": "my_audience_name",
+  "fields": [ ... ],
+  "sourceSpec": { ... },
+  "audienceType": "people",
+  "namespace": "CustomerAudienceUpload",
+  "expressActivation": true
+}
+```
+
+>[!NOTE]
+>
+>`expressActivation` defaults to `false`. It must be set at audience creation time and cannot be changed after creation. All Federated Audience Composition audiences have Express Activation enabled by default and do not require this flag.
+
+See the [create external audience API documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-external-audience#create){target="_blank"} for the full reference.
+
++++
+
+To configure the journey:
+
+1. Open or create a journey with a **[!UICONTROL Read audience]** node.
+1. In the **[!UICONTROL Read audience]** node settings, select your CSV or Federated Audience Composition audience.
+1. Toggle on the **[!UICONTROL Use supplemental identifier]** option, then in the **[!UICONTROL Supplemental identifier]** field, use the expression editor in **[!UICONTROL Advanced mode]** to choose the attribute you want to use as the secondary identifier (e.g., `account_id`, `order_number`).
+1. The selected attribute is treated as the supplemental ID for the journey — no identity registration is required.
+
+### Deduplication behavior {#external-dedup}
+
+When an audience has Express Activation enabled (always true for Federated Audience Composition - must be set explicitly for CSV), Journey Optimizer handles deduplication based on how the journey is configured:
+
+| Scenario | Example audience rows | Behavior |
+| --- | --- | --- |
+| **Journey with supplemental ID — no duplicate (profile ID, supplemental ID) pairs** | (P1, S1), (P1, S2) | Intended use case. Journey Optimizer creates a separate journey instance per unique profile + supplemental ID combination. All rows are admitted. |
+| **Journey with supplemental ID — duplicate (profile ID, supplemental ID) pairs exist** | (P1, S1), (P1, S1), (P1, S2) | Rows sharing the same (profile ID, supplemental ID) combination are filtered out by normal journey reentrance logic. Only the first matching row per unique combination is admitted. |
+| **Journey without supplemental ID configured** | (P1, S1), (P1, S2) | Without a supplemental ID, Journey Optimizer treats all rows for the same profile ID as the same profile. Only one journey instance per profile ID is admitted; additional rows for the same profile are discarded. |
 
 ## Example use cases
 
