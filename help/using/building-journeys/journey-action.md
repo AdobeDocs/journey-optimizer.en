@@ -53,15 +53,15 @@ topic_v2:
 >title="Action activity"
 >abstract="The **Action** activity lets you configure a single native channel action and multiple inbound activities with the ability to add optimization to any built-in channel action."
 
-The **Action** activity is the single entry point for all channel actions in the journey canvas.
+The **Action** activity is the single entry point for delivering content to your customers from the journey canvas. Instead of choosing from a separate activity for each channel, you drag a single **[!UICONTROL Action]** activity onto the canvas and select the channel you want to use.
 
-It replaces the previous individual built-in channel activities and consolidates Email, Push, SMS, In-app, Web, Code-based experience, and Content Card into one unified activity type.
+It consolidates all built-in channels — Email, Push, SMS, In-app, Web, Code-based experience, and Content Card — into one unified activity type, replacing the individual channel activities used previously.
 
-Use it to:
+Use the **Action** activity to:
 
 * Configure any built-in channel action from a single, streamlined interface.
-* Build multi-action inbound action groups.
-* Apply optimization to any channel action.
+* Combine several inbound experiences into one [multi-action group](#multi-action).
+* Apply [optimization](../content-management/gs-message-optimization.md), [multilingual content](../content-management/multilingual-gs.md), and channel-specific settings to any action.
 
 >[!NOTE]
 >
