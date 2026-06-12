@@ -55,7 +55,7 @@ topic_v2:
 
 The **Action** activity is the single entry point for delivering content to your customers from the journey canvas. Instead of choosing from a separate activity for each channel, you drag a single **[!UICONTROL Action]** activity onto the canvas and select the channel you want to use.
 
-It consolidates all built-in channels — Email, Push, SMS, In-app, Web, Code-based experience, and Content Card — into one unified activity type, replacing the individual channel activities used previously.
+It consolidates all legacy native built-in channels — Email, Push, SMS, In-app, Web, Code-based experience, and Content Card — into one unified activity type, replacing the individual channel activities used previously.
 
 Use the **Action** activity to:
 
