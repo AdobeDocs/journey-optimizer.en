@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # External data lookup helper
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the externalDataLookup helper to dynamically fetch data from an external endpoint and personalize content for inbound channels in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 The `externalDataLookup` helper in the [!DNL Journey Optimizer] personalization Editor can be used to dynamically fetch data from an external endpoint for use in generating content for inbound channels like the Code-based Experience, Web and In-App Message channels.
 
 >[!AVAILABILITY]

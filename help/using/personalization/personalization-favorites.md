@@ -31,6 +31,12 @@ subfeature_v2:
 ---
 # Add attributes to favorites {#fav}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add, access, and remove attributes in your favorites menu for quick reuse when building personalization expressions in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Adding different attributes to your favorites menu provides quick access to your most frequently used items. To add an attribute to your favorites click the ellipse menu and choose **[!UICONTROL Add to favorites]**.
 
 <!--
