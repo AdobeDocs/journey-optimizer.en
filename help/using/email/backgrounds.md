@@ -36,6 +36,12 @@ level_v2:
 ---
 # Personalize your email background {#backgrounds}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set background colors and images at the body, viewport, structure, and column levels of your email in the Email Designer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ac_edition_backgroundimage"
 >title="Background settings"

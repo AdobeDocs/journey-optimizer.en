@@ -34,6 +34,12 @@ level_v2:
 ---
 # Use email templates {#email-templates}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to start building email content from a sample or saved design template in the Email Designer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_use_template"
 >title="Build content from a template"

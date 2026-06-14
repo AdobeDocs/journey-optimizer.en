@@ -49,6 +49,12 @@ topic_v2:
 ---
 # Create an email {#create-email}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add an email action to a journey or campaign in Adobe Journey Optimizer, define its subject and content, check alerts, and preview before sending.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_message_email"
 >title="Email creation"

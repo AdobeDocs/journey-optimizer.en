@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Get started with email configuration {#get-starte-email-config}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the essential steps to configure the email channel in Adobe Journey Optimizer, from delegating subdomains and creating IP pools to setting up channel configurations, execution fields, and retries.
+
+>[!ENDSHADEBOX]
+
 Configuring the email channel in Adobe Journey Optimizer is your gateway to creating impactful, personalized email experiences that effectively engage your audience.
 
 This section guides you through the essential configuration steps you need to follow to send emails through [!DNL Journey Optimizer]. You'll also discover how to set up email headers, personalize settings for multiple brands, enable URL tracking for analytics, and even add one-click unsubscribe links for user convenience. Each topic builds on the last, giving you the tools to fine-tune your email strategy while maintaining control and precision.

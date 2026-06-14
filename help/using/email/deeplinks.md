@@ -13,7 +13,13 @@ subfeature_v2: []
 ---
  
 # Use and configure deep links in emails and SMS {#deeplinks}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to author deep links in email and SMS content, configure them in Adobe Journey Optimizer, and handle the tracked links in your iOS and Android apps so recipients land on the right in-app screen.
+
+>[!ENDSHADEBOX]
+
 Deep links help you take recipients from an email or SMS message to a specific screen or piece of content in your mobile app. It helps bring people straight to the intended in-app experience, without routing them through a web browser or an app store, so the journey stays relevant and on-brand.
 
 When your recipients click the deep link, they are taken directly to the intended in-app content - **provided you have completed**:
