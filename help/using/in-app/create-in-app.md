@@ -35,7 +35,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to create an in-app message in Adobe Journey Optimizer and add it to a journey or a campaign, including configuring triggers and display frequency.
+**On this page:** Learn how to create an In-app message in Adobe Journey Optimizer and add it to a journey or a campaign, including configuring triggers and display frequency.
 
 >[!ENDSHADEBOX]
 

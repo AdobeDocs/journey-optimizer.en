@@ -35,7 +35,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to preview, test, review, and activate your in-app message in Adobe Journey Optimizer before sending it to your audience.
+**On this page:** Learn how to preview, test, review, and activate your In-app message in Adobe Journey Optimizer before sending it to your audience.
 
 >[!ENDSHADEBOX]
 

@@ -37,7 +37,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Get started with the in-app messaging channel in Adobe Journey Optimizer to engage app users with notifications that promote features, offers, and onboarding.
+**On this page:** Get started with the In-app messaging channel in Adobe Journey Optimizer to engage app users with notifications that promote features, offers, and onboarding.
 
 >[!ENDSHADEBOX]
 

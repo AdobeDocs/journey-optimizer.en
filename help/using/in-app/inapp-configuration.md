@@ -46,7 +46,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to set up the delivery prerequisites and create an in-app channel configuration to send in-app messages with Adobe Journey Optimizer.
+**On this page:** Learn how to set up the delivery prerequisites and create an In-app channel configuration to send In-app messages with Adobe Journey Optimizer.
 
 >[!ENDSHADEBOX]
 

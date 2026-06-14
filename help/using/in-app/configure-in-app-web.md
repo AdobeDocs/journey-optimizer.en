@@ -20,7 +20,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to configure the Web in-app channel in Adobe Experience Platform Data Collection by setting up the Web SDK, trigger rules, and an in-app web configuration.
+**On this page:** Learn how to configure the Web In-app channel in Adobe Experience Platform Data Collection by setting up the Web SDK, trigger rules, and an In-app web configuration.
 
 >[!ENDSHADEBOX]
 
