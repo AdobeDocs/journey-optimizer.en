@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Fork {#fork}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Fork flow control activity to create multiple outbound transitions that run several activities in parallel.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_fork"
 >title="Fork activity"

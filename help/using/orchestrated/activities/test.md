@@ -21,6 +21,12 @@ subfeature_v2:
 ---
 # Test {#test}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Test flow control activity to branch an Orchestrated campaign by activating different transitions based on the conditions you define.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_test"
 >title="Test activity"

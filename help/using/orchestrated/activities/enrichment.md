@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Enrichment {#enrichment}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Enrichment targeting activity to enhance your audience with additional attributes, linked table data, and offers for more precise targeting and personalization.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment"
 >title="Enrichment activity"

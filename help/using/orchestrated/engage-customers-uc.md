@@ -26,6 +26,12 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Follow a use case that re-engages customers based on their browsing activity by reading an audience, deduplicating it, splitting it by churn risk, and sending personalized follow-up messages.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 Note that this use case starts with an audience that already exists in Experience Platform, specifically, a real-time web behavior audience that collects browsing activity as it occurs. [Learn more in Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started#audiences)
 
 **Schemas needed for this use case:**

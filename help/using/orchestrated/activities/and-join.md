@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # AND-join {#join}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the And-join flow control activity to synchronize multiple execution branches so a campaign continues only after all preceding activities have finished.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_and-join"
 >title="AND-join activity"

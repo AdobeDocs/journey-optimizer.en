@@ -30,6 +30,12 @@ topic_v2:
 ---
 # Get started with Orchestrated campaigns {#orchestrated-camp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how Orchestrated campaigns in Adobe Journey Optimizer let you query relational datasets, build audiences with exact counts, and deliver marketing and transactional messages across multiple channels.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_orchestrated"
 >title="campaigns_overview_orchestrated"

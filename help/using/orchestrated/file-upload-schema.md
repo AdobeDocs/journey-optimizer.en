@@ -21,6 +21,12 @@ subfeature_v2:
 ---
 # Create relational schemas using a DDL file {#file-upload-schema}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create relational schemas in Adobe Experience Platform by uploading a DDL file, defining relationships between tables, and linking schemas to existing entities for use in Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 Define the relational data model required for Orchestrated campaigns by creating schemas such as **Loyalty Memberships**, **Loyalty Transactions**, and **Loyalty Rewards**. Each schema must include a primary key, a versioning attribute, and appropriate relationships to reference entities such as **Recipients** or **Brands**. 
 
 Schemas can be created manually through the interface or imported in bulk using a DDL file.

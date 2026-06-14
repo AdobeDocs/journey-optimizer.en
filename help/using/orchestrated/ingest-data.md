@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Ingest data {#ingest-data}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to ingest data into Adobe Experience Platform from supported sources and configure a dataflow for your Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >To change the data source for a dataset, you must first delete the existing dataflow before creating a new one that references the same dataset and the new source.

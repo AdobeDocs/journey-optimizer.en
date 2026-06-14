@@ -19,6 +19,12 @@ subfeature_v2:
 ---
 # Edit expressions {#edit-expressions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the expression editor to manually build rules with database fields, variables, and helper functions for manipulating dates, strings, and numeric values in your Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 >[!NOTE]
 >
 >The section below provides information on how to work with the expression editor to build rules. Keep in mind that the syntax used to build rules differs from the one used to add personalization.

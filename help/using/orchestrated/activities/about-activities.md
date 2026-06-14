@@ -21,6 +21,12 @@ subfeature_v2:
 ---
 # About Orchestrated campaign activities {#orchestrated-campaign-activities}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover the targeting, channel, and flow control activities available on the canvas to build and orchestrate cross-channel campaigns.
+
+>[!ENDSHADEBOX]
+
 Orchestrated campaign activities are grouped into three categories. Depending on the context, available activities may differ. 
 
 All activities are detailed in the sections below:

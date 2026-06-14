@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Deduplication {#deduplication}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Deduplication targeting activity to remove duplicate records from the results of inbound activities before using the targeted data.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_deduplication_fields"
 >title="Fields to identify duplicates"
