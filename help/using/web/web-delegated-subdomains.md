@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Configure web subdomains {#web-subdomains}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up web subdomains in Adobe Journey Optimizer by using a subdomain already delegated to Adobe or configuring a new one to publish assets content for your web experiences.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_web_header"
 >title="Delegate a web subdomain"
