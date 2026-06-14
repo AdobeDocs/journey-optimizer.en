@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Create a channel set up {#set-mobile-ios}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the guided setup to configure mobile and web channels in Adobe Journey Optimizer, auto-create the required resources, and share the channel configuration with your campaign and journey teams.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_javascript_code"
 >title="Javascript code"

@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Export message content {#message-export}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to enable Message Export on email and SMS channel configurations to write sent message content to an Adobe Experience Platform dataset and transfer it to your own storage.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_msg_export"
 >title="Retain and export your sent content"

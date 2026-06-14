@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Manage the default execution fields {#change-primary-email}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to define and override the execution fields that determine which email address or phone number Adobe Journey Optimizer prioritizes for sending when several are available on a profile.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address"
 >title="Define which address to use"

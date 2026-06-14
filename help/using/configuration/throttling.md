@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Work with the Throttling API
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Throttling API to create, deploy, and monitor throttling configurations that limit the number of events Adobe Journey Optimizer sends per second to external endpoints.
+
+>[!ENDSHADEBOX]
+
 The Throttling API helps you create, configure and monitor your throttling configurations in order to limit the number of events sent per second.
 
 This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}.

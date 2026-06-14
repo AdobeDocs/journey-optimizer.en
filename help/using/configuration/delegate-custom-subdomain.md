@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Set up a custom subdomain {#delegate-custom-subdomain}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up a custom subdomain in Adobe Journey Optimizer using the custom delegation method, which lets you retain full ownership of your subdomains and SSL certificates.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
