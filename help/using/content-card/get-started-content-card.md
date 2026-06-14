@@ -37,7 +37,7 @@ level_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Understand how content cards deliver personalized, non-intrusive content within mobile apps and websites so you can engage users without disrupting their experience.
+**On this page:** Content cards deliver personalized, non-intrusive messages right inside your mobile apps and websites, engaging users in context without interrupting what they came to do.
 
 >[!ENDSHADEBOX]
 
