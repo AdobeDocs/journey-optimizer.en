@@ -34,6 +34,11 @@ topic_v2:
 ---
 # Permission levels {#high-low-permissions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how high-level permissions group the underlying low-level permissions for each resource, so you can grant roles exactly the feature access your users need.
+
+>[!ENDSHADEBOX]
 
 Each role is composed of permissions allowing users to access the different features. 
 
