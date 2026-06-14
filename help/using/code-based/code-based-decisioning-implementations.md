@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Decisioning in code-based experience implementations {#code-based-decisioning-implementations}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to apply deduplication and use the dry run flag when sending decisioning requests in your code-based experience implementation.
+
+>[!ENDSHADEBOX]
+
 When using Decisioning in code-based experiences, consider adding the following flags to your client implementation in the cases described below.
 
 >[!CAUTION]
