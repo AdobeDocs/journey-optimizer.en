@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Define landing page-specific content {#lp-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Add the form component to your landing page so visitors can opt in or out, manage subscriptions, or submit data through an embedded form.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ac_lp_components"
 >title="Use content components"

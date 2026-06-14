@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Manage your landing pages {#manage-lp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find, filter, and act on your existing landing pages, organizing them into folders and applying tags to keep your work structured.
+
+>[!ENDSHADEBOX]
+
 ## Access landing pages {#access-landing-pages}
 
 To access the landing page list, select **[!UICONTROL Content Management]** > **[!UICONTROL Landing pages]** from the left menu.

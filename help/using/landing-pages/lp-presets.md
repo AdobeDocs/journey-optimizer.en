@@ -29,6 +29,12 @@ topic_v2:
 ---
 # Define landing page presets {#lp-presets}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create landing page presets that pair a subdomain with tracking settings, the prerequisite for building and publishing your landing pages.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_lp_subdomain_header"
 >title="Create a landing page preset"
