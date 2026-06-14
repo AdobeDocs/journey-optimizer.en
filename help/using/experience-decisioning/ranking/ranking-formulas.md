@@ -33,6 +33,12 @@ subfeature_v2:
 ---
 # Create ranking formulas {#create-ranking-formulas}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create ranking formulas with the AI formula builder that combine AI model scores, offer priorities, profile attributes, and contextual signals, so you can control which offer is presented first and align decisioning with both your business goals and your customers' needs.
+
+>[!ENDSHADEBOX]
+
 **Ranking formulas** allow you to define rules that determine which offer should be presented first, rather than taking into account the priority scores.
 
 To create these rules, the AI formula builder in **[!UICONTROL Adobe Journey Optimizer]** provides greater flexibility and control in how offers are ranked. Instead of relying only on a static offer priority, you can now define custom ranking formulas that combine AI model scores, offer priorities, profile attributes, offer attributes, and contextual signals through a guided interface.
