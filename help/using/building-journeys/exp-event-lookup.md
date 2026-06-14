@@ -29,6 +29,12 @@ topic_v2:
 ---
 # Experience event lookup in journeys {#ee-journeys}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn scalable patterns and best practices for using Experience Events in journeys to suppress, qualify, or personalize for profiles based on their behavior and event attributes.
+
+>[!ENDSHADEBOX]
+
 >[!CAUTION]
 >
 >Starting July 8 2025, in new customer organizations, creating expressions using experience events is no longer supported in the expression editor used in journey conditions. As a result, experience events in the [Experience Platform data source](../datasource/adobe-experience-platform-data-source.md) cannot be used for creating expressions.

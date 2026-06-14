@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Use custom actions {#use-custom-actions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use custom actions to connect a journey to a third-party system through a REST API call with a JSON payload, while applying data governance and consent policies.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom"
 >title="Custom actions"

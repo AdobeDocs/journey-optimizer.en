@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Set your journey properties {#jo-properties}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set a journey's global properties — including its name, entrance rules, time zone, start and end dates, timeout, exit criteria, and conflict management — from the right rail during authoring.
+
+>[!ENDSHADEBOX]
+
 Use journey properties to configure global settings for your journey, including its name, entrance rules, timezone, start and end dates, timeout duration, exit criteria, and conflict management. Properties are accessible from the right rail at any stage of journey authoring.
 
 >[!CONTEXTUALHELP]
