@@ -20,7 +20,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how administrators configure Adobe Experience Manager repository access per sandbox, including custom domains, author-only and publish instance setups, and authentication for Content Fragments in Journey Optimizer.
+**On this page:** Learn how administrators connect a sandbox to an Adobe Experience Manager repository — setting author-only or publish access, custom domains, and authentication — so marketers can use AEM Content Fragments in their journeys and campaigns.
 
 >[!ENDSHADEBOX]
 
