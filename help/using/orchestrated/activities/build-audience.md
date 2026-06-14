@@ -20,7 +20,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the Build audience targeting activity to define the audience that enters an orchestrated campaign, using an existing audience or the rule builder.
+**On this page:** Learn how to use the Build audience targeting activity to define the audience that enters an Orchestrated campaign, using an existing audience or the rule builder.
 
 >[!ENDSHADEBOX]
 
