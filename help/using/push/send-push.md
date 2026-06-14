@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Check & send your push notification {#send-push}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview, validate, and send your push notification in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 ## Preview your push notification {#preview-push}
 
 Once your message content has been defined, you can preview its content using either simulation method:
