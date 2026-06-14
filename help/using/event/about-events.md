@@ -45,7 +45,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Understand the unitary, business, and audience qualification event types so you can choose the right trigger and start journeys from real-time events.
+**On this page:** Events are the real-time triggers that launch your journeys — compare the unitary, business, and audience qualification types to pick the right one for each use case.
 
 >[!ENDSHADEBOX]
 
