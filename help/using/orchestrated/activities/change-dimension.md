@@ -18,7 +18,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the Change dimension activity to shift the targeting dimension within a campaign, for example switching from wishlists to the recipients linked to them.
+**On this page:** Learn how to use the Change dimension activity to shift the targeting dimension within an Orchestrated campaign, for example switching from wishlists to the recipients linked to them.
 
 >[!ENDSHADEBOX]
 

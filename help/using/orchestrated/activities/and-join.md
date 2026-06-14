@@ -20,7 +20,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the And-join flow control activity to synchronize multiple execution branches so a campaign continues only after all preceding activities have finished.
+**On this page:** Learn how to use the And-join flow control activity in an Orchestrated campaign to synchronize multiple execution branches so the campaign continues only after all preceding activities have finished.
 
 >[!ENDSHADEBOX]
 

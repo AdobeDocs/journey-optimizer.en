@@ -20,7 +20,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the Enrichment targeting activity to enhance your audience with additional attributes, linked table data, and offers for more precise targeting and personalization.
+**On this page:** Learn how to use the Enrichment targeting activity in an Orchestrated campaign to enhance your audience with additional attributes, linked table data, and offers for more precise targeting and personalization.
 
 >[!ENDSHADEBOX]
 

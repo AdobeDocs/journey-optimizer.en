@@ -26,7 +26,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Follow a use case that re-engages customers based on their browsing activity by reading an audience, deduplicating it, splitting it by churn risk, and sending personalized follow-up messages.
+**On this page:** Follow an orchestrated campaign use case that re-engages customers based on their browsing activity by reading an audience, deduplicating it, splitting it by churn risk, and sending personalized follow-up messages.
 
 >[!ENDSHADEBOX]
 

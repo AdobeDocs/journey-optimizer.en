@@ -20,7 +20,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the Combine targeting activity to segment your inbound population through union, intersection, or exclusion operations.
+**On this page:** Learn how to use the Combine targeting activity in an Orchestrated campaign to segment your inbound population through union, intersection, or exclusion operations.
 
 >[!ENDSHADEBOX]
 

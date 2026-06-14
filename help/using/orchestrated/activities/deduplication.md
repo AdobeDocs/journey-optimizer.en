@@ -20,7 +20,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the Deduplication targeting activity to remove duplicate records from the results of inbound activities before using the targeted data.
+**On this page:** Learn how to use the Deduplication targeting activity in an Orchestrated campaign to remove duplicate records from the results of inbound activities before using the targeted data.
 
 >[!ENDSHADEBOX]
 

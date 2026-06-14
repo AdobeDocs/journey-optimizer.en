@@ -23,7 +23,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the targeting, channel, and flow control activities available on the canvas to build and orchestrate cross-channel campaigns.
+**On this page:** Discover the targeting, channel, and flow control activities available on the canvas to build cross-channel Orchestrated campaigns.
 
 >[!ENDSHADEBOX]
 

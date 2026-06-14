@@ -20,7 +20,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use the Fork flow control activity to create multiple outbound transitions that run several activities in parallel.
+**On this page:** Learn how to use the Fork flow control activity in an Orchestrated campaign to create multiple outbound transitions that run several activities in parallel.
 
 >[!ENDSHADEBOX]
 
