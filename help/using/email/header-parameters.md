@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Header parameters {#email-header}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up the email header parameters in a channel configuration, including the From, Reply to, Error, and optional Sender fields, plus how to manage reply handling and email forwarding.
+
+>[!ENDSHADEBOX]
+
 When configuring a new [email channel configuration](email-settings.md), in the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that configuration.
 
 >[!NOTE]

@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Design accessible content {#accessible-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn best practices for designing accessible emails and landing pages in Adobe Journey Optimizer, covering text readability, alternative text, dark mode, accessibility attributes, and testing in line with WCAG 2.1 level AA.
+
+>[!ENDSHADEBOX]
+
 The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} is a directive designed to enhance the internal market for accessible products and services by eliminating barriers caused by differing national rules across Member States.
 
 This regulation states that all digital communications, including emails, newsletters, PDFs, and downloadable content, should be accessible. When creating content for your recipients, you are therefore required to follow specific guidelines such as using accessible fonts, readable formats, and providing alternative text for images. 

@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Personalize email configuration settings {#surface-personalization} 
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to define personalized values for dynamic subdomains, header parameters, and URL tracking parameters at the email channel configuration level.
+
+>[!ENDSHADEBOX]
+
 For increased flexibility and control over your email settings, [!DNL Journey Optimizer] allows you to define personalized values for subdomains, headers and URL tracking parameters when creating email configurations.
 
 ## Add dynamic subdomains {#dynamic-subdomains}
