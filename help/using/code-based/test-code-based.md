@@ -27,6 +27,12 @@ topic_v2:
 ---
 # Test code-based experiences {#test-code-based}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview and test your code-based experiences with test profiles and on-device previews before publishing.
+
+>[!ENDSHADEBOX]
+
 ## Preview your code-based experience {#preview-code-based}
 
 >[!CONTEXTUALHELP]
