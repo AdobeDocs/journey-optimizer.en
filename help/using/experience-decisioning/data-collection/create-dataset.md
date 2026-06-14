@@ -30,6 +30,12 @@ subfeature_v2:
 ---
 # Create a dataset to collect events {#create-dataset}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Build the Experience Event schema and dataset needed to capture proposition interactions, so you can feed decisioning feedback into your AI ranking models.
+
+>[!ENDSHADEBOX]
+
 To collect experience events, you first need to create a dataset where these events will be sent.
 
 Start by creating the schema that will be used in your dataset:
