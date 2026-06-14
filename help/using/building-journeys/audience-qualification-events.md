@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Audience Qualification events {#segment-qualification}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use and configure Audience Qualification events to trigger journey entry or progression when profiles qualify for or exit an Adobe Experience Platform audience.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_segment_qualification"
 >title="Audience qualification"

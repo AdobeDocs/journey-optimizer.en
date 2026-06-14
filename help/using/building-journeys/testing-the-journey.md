@@ -43,6 +43,12 @@ topic_v2:
 	
 # Test your journey{#testing_the_journey}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to validate your journey before publishing by using simulation with simulated users or test mode with test profiles to catch errors early.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test"
 >title="Test your journey"

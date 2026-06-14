@@ -30,6 +30,12 @@ topic_v2:
 ---
 # Publish your journey {#publishing-the-journey}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to publish a journey to set it Live, including prerequisites, the publication process, version management, and republishing requirements.
+
+>[!ENDSHADEBOX]
+
 Publishing a journey activates it: it moves to the **[!UICONTROL Live]** status, becomes available for new profiles to enter, and switches to read-only mode. You cannot publish a journey that contains errors.
 
 >[!NOTE]
