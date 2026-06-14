@@ -1,0 +1,44 @@
+name: On this page boxes
+
+# Gates the "On this page" purpose-box standard (epic DOCAC-14936).
+# See .cursor/rules/on-this-page-box.mdc and scripts/on-this-page/.
+
+on:
+  pull_request:
+    paths:
+      - "help/**/*.md"
+      - "scripts/on-this-page/**"
+      - ".github/workflows/on-this-page.yml"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 1. Format gate across the whole guide: any existing box must be well-formed
+      #    (correct placement, single box, label present, no leftover TODO).
+      #    Pages without a box are 'pending' and do NOT fail (rollout is incremental).
+      - name: Validate box format
+        run: python scripts/on-this-page/validate_on_this_page.py help
+
+      # 2. Grounding / quality gate on the pages changed in this PR only:
+      #    fails on ungrounded (likely hallucinated) terms, multi-sentence boxes,
+      #    leftover TODO, or markup inside the sentence.
+      - name: Review changed pages
+        run: |
+          base="origin/${{ github.base_ref }}"
+          changed=$(git diff --name-only "$base"...HEAD -- 'help/**/*.md' || true)
+          if [ -z "$changed" ]; then
+            echo "No changed help/*.md files to review."
+            exit 0
+          fi
+          echo "Reviewing changed pages:"
+          echo "$changed"
+          python scripts/on-this-page/review_report.py $changed --flagged-only --fail-on-flag
