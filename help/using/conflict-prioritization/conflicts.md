@@ -28,6 +28,12 @@ topic_v2:
 ---
 # Detect potential conflicts in journeys & campaigns {#conflict}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Spot overlapping journeys and campaigns before they go live so you can avoid bombarding customers with too many communications at once.
+
+>[!ENDSHADEBOX]
+
 As marketers increase the volume of Campaigns and Journeys in Journey Optimizer, it becomes increasingly difficult for a marketer to know if they are bombarding their customers with too many marketing interactions. It is therefore essential to easily identify when there are overlapping campaigns and journeys to ensure they are striking the right balance of marketing communications while mitigating the risk of customer fatigue.  
 
 Key areas to monitor for potential overlap are:
