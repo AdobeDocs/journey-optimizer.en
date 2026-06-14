@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Configure LINE channel in Journey Optimizer {#line-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up a LINE channel configuration, from the interface or the API, so Adobe Journey Optimizer can authenticate with the LINE Messaging API and send messages to your customers.
+
+>[!ENDSHADEBOX]
+
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu, then click **[!UICONTROL Create channel configuration]**.
 
     ![](assets/line-config-1.png)
