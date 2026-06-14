@@ -11,7 +11,7 @@ exl-id: 0ab71b21-0085-4a93-b319-3c960bd8f7dd
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Configure the inbox layout, capacity, unread indicators, and empty state so messages render on-brand and readable, giving targeted profiles a clear, consistent experience in light and dark modes.
+**On this page:** Configure your Inbox channel's layout, capacity, unread indicators, and empty state so messages render on-brand and readable, giving targeted profiles a clear, consistent experience in light and dark modes.
 
 >[!ENDSHADEBOX]
 
