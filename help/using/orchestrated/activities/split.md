@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Split {#split}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Split targeting activity to segment the incoming population of an Orchestrated campaign into multiple subsets based on filtering rules, limits, or population size.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split"
 >title="Split activity"

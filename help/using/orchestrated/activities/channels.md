@@ -23,6 +23,12 @@ topic_v2:
 ---
 # Channel activities {#channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add and configure email, SMS, push, and direct mail channel activities to send marketing or transactional messages within an Orchestrated campaign.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_email"
 >title="Email activity"

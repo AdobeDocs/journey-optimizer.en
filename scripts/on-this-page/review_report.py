@@ -67,14 +67,28 @@ GROUNDING_IGNORE = {"learn", "adobe", "experience", "platform", "journey",
                     "journeys", "the", "a", "an"}
 
 
+# Common inflectional suffixes, longest first, used for crude stemming so that
+# e.g. "orchestrated" is recognized as grounded by "orchestration" on the page.
+_STEM_SUFFIXES = ("ization", "isation", "ation", "ition", "ing", "ion",
+                  "ed", "es", "s", "e")
+
+
+def _stem(word: str) -> str:
+    for suf in _STEM_SUFFIXES:
+        if word.endswith(suf) and len(word) - len(suf) >= 4:
+            return word[: -len(suf)]
+    return word
+
+
 def _variants(term: str) -> set[str]:
-    """Normalized lookup variants for a candidate term (handles hyphens/plurals)."""
+    """Normalized lookup variants for a candidate term (handles hyphens/plurals/stems)."""
     t = term.lower().rstrip(".,;:'s")
     out = {t, t.replace("-", " "), t.replace("-", "")}
     for part in t.replace("-", " ").split():
         if len(part) >= 3:
             out.add(part)
             out.add(part[:-1] if part.endswith("s") else part)
+            out.add(_stem(part))
     return {v for v in out if v}
 
 

@@ -27,6 +27,12 @@ subfeature_v2:
 ---
 # Guardrails and limitations {#guardrails}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the guardrails and limitations that apply to data storage, ingestion, data modeling, activities, and channels in Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 You will find below guardrails and limitations when using Orchestrated campaigns.
 
 ## Dataflow limitations
