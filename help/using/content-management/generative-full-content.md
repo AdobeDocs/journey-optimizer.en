@@ -38,6 +38,12 @@ subfeature_v2:
 ---
 # Generate full content with AI Assistant {#generative-full-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use AI Assistant in Adobe Journey Optimizer to generate, refine, and finalize complete text and image content experiences for your email, web, landing page, and push notification channels.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).

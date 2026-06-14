@@ -12,6 +12,12 @@ subfeature_v2:
 ---
 # Send proofs using test profiles data {#send-proofs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to send email proofs using test profile data so recipients can review rendering, content, and personalization before the message goes to your main audience.
+
+>[!ENDSHADEBOX]
+
 A proof is a specific message that allows you to test a message before sending it to the main audience. Recipients of the proof are in charge of approving the message: rendering, content, personalization settings, configuration.
 
 You can send proofs using either simulation method:

@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Add contextual attributes to published fragments {#adding-contextual-attributes}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how select customers can add contextual attributes to already-published fragments using the code editor, along with the guardrails and limitations to keep in mind.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is only available for select customers and involves significant risks. Confirm with your Adobe representative that this capability is enabled for your organization.
