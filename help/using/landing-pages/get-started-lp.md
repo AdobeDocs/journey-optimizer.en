@@ -39,7 +39,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Landing pages give your customers a dedicated web destination to opt in or out of communications, manage preferences, or submit data that enriches their Adobe Experience Platform profile.
+**On this page:** Landing pages turn a click from an email, ad, or campaign into a dedicated web destination where customers opt in or out, manage their preferences, and share profile data — helping you grow consented audiences and capture the first-party data that powers personalization.
 
 >[!ENDSHADEBOX]
 
