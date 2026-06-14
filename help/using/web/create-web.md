@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Create web experiences {#create-web}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a web experience through a journey or campaign, edit and test its content, redirect visitors to another URL, and publish, activate, or stop it in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_web"
 >title="Web action"
