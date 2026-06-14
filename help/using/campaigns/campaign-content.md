@@ -21,6 +21,12 @@ subfeature_v2:
 ---
 # Edit the Action campaign content {#action-campaign-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Design and test your campaign content for the channel you selected so each message is ready before you activate the campaign.
+
+>[!ENDSHADEBOX]
+
 To configure the message content, navigate to the **[!UICONTROL Content]** tab or click the **[!UICONTROL Edit content]** button.
 
 ![](assets/campaign-content.png)
