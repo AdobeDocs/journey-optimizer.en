@@ -42,6 +42,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Learn how to read the Campaign report in Adobe Journey Optimizer to review campaign KPIs, the campaign overview and funnel, tracked links, and targeting performance across all channels used in your campaign.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 You can access your Campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access.png)

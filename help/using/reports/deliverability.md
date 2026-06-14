@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Get started with deliverability {#manage-deliverability}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn deliverability best practices for Adobe Journey Optimizer, including reducing complaint rates, leveraging suppression lists, establishing sender reputation, implementing DMARC, and understanding feedback loops.
+
+>[!ENDSHADEBOX]
+
 Deliverability is a measure of the success of your deliveries reaching your recipients inboxes.
 
 >[!NOTE]

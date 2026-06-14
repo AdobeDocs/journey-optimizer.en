@@ -40,6 +40,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Learn how to read the Direct mail campaign report in Adobe Journey Optimizer to review sending statistics, delivery status, error reasons, and exclusion reasons for your direct mail messages.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 You can access your Direct mail campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access.png)

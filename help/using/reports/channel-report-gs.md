@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Get started with Channel reports {#channel-report-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with the customizable Channel reports that unify traffic and engagement metrics across your campaigns and journeys, and learn how to manage your dashboard widgets and export reports to PDF or CSV.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >The current reporting experience will be retired as of January 2025. After this date, the new reporting experience will become the standard. We recommend familiarizing yourself with the new features and functionalities to ensure a smooth transition. [Get started with Journey Optimizer new Reporting interface.](report-gs-cja.md)

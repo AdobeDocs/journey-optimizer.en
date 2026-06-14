@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Create journey reports {#design-jo-reports}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how Journey Optimizer automatically streams journey step event data to Adobe Experience Platform so you can combine it with other data and analyze journey performance in Customer Journey Analytics.
+
+>[!ENDSHADEBOX]
+
 In addition to [real-time reports](live-report.md) and built-in [reporting capabilities](report-gs-cja.md), [!DNL Journey Optimizer] can automatically send journey performance data to Adobe Experience Platform so it can be combined with other data for analysis purposes. 
 
 >[!NOTE]
