@@ -35,7 +35,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Find, filter, and act on your existing landing pages, organizing them into folders and applying tags to keep your work structured.
+**On this page:** Learn how to find, filter, and organize your existing landing pages into folders and tags so your work stays structured as your projects grow.
 
 >[!ENDSHADEBOX]
 

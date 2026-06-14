@@ -39,7 +39,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Build the experience visitors see by designing your landing page content in the content designer, whether from scratch, with AI Assistant, with your own HTML, or from a saved template.
+**On this page:** Discover how to design your landing page content in the content designer — from scratch, with AI Assistant, with your own HTML, or from a saved template — for an on-brand visitor experience.
 
 >[!ENDSHADEBOX]
 

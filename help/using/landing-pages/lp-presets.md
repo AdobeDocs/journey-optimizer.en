@@ -31,7 +31,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Create landing page presets that pair a subdomain with tracking settings, the prerequisite for building and publishing your landing pages.
+**On this page:** Discover how landing page presets pair a subdomain with tracking settings — the prerequisite you set up before building and publishing your landing pages.
 
 >[!ENDSHADEBOX]
 

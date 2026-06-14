@@ -49,7 +49,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Configure, test, and publish a landing page so customers who click through from a message reach a dedicated page where they can subscribe, share data, or opt out.
+**On this page:** Learn how to configure, test, and publish a landing page so customers who click through from a message reach a dedicated page where they can subscribe, share data, or opt out.
 
 >[!ENDSHADEBOX]
 

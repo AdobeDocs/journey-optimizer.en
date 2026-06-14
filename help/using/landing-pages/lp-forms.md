@@ -37,7 +37,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Build forms, then embed them in Data Capture landing pages to collect profile attributes from visitors and write the submissions to your Experience Platform datasets.
+**On this page:** Learn how to build forms and embed them in Data Capture landing pages to collect profile attributes from visitors and write the submissions to your Experience Platform datasets.
 
 >[!ENDSHADEBOX]
 
