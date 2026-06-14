@@ -40,7 +40,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Set up the action of your API triggered campaign — its channel and channel configuration, plus tracking, content experiment, and multilingual options — so it delivers the right message on the right channel.
+**On this page:** Choose the channel and channel configuration your API triggered campaign sends through, and set tracking, content experiment, and multilingual options, so it delivers the right message on the right channel.
 
 >[!ENDSHADEBOX]
 
