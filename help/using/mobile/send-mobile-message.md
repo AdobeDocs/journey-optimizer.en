@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Check & send your Mobile message {#send-sms}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview, validate, and send your mobile messages in Adobe Journey Optimizer, including checking character encoding and limits and resolving alerts before delivery.
+
+>[!ENDSHADEBOX]
+
 ## Preview your Mobile message {#preview-sms}
 
 Once your message content has been defined, you can preview its content using either simulation method:

@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Create a Mobile message {#create-sms}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add a Mobile message action to a journey or campaign in Adobe Journey Optimizer, then select a configuration and edit content to send text, rich communication, and multimedia messages.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Create a Mobile message"
