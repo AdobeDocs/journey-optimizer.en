@@ -1,0 +1,44 @@
+---
+description: Standard for the "On this page" purpose box at the top of AJO doc pages
+globs: help/**/*.md
+alwaysApply: false
+---
+
+# "On this page" purpose box
+
+Every AJO user-guide page must open with a shaded "On this page" box: a one-sentence
+statement of the page's purpose, placed immediately after the H1. It helps human readers
+and AI tools understand the page before reading. Tracked under epic DOCAC-14936.
+
+## Exact format
+
+```text
+# Page Title {#anchor}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** <one clear sentence describing the page's purpose>
+
+>[!ENDSHADEBOX]
+
+...original content...
+```
+
+## Rules
+
+- Place it directly after the **first H1**, and **before** any existing `>[!CONTEXTUALHELP]` block.
+- Exactly **one blank line** between the H1 and `>[!BEGINSHADEBOX]`, and after `>[!ENDSHADEBOX]`.
+- The sentence: **exactly one sentence**, plain text, American English. No links, `[!UICONTROL]`, or bold other than the `**On this page:**` label.
+- Make it accurate to the actual page; reuse/adapt the frontmatter `description` as the seed.
+- **Idempotent**: never add a second box if one already follows the H1.
+- Never modify frontmatter or other content.
+
+## Scope
+
+In scope: all pages under `help/`. **Exclude** reference/syntax pages: any `*/api-reference/*`,
+`building-journeys/expression/`, `building-journeys/functions/`, `personalization/functions/`.
+
+## Tooling
+
+- Insert: `python scripts/on-this-page/add_on_this_page.py <path> --seed-from-description`
+- Validate: `python scripts/on-this-page/validate_on_this_page.py <path> --require`
