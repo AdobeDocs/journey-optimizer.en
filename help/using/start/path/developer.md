@@ -52,6 +52,12 @@ topic_v2:
 ---
 # Get started for developers {#get-started-developers}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Implement the SDKs, event streaming, custom action endpoints, and APIs that connect your applications to Adobe Journey Optimizer so your journeys can run on real-time data.
+
+>[!ENDSHADEBOX]
+
 As a **Developer**, you are responsible for implementing and integrating [!DNL Adobe Journey Optimizer] into your applications and systems. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) and the [Data Engineer](data-engineer.md) have granted you access and prepared your environment.
 
 ## Your role in the Journey Optimizer ecosystem

@@ -53,6 +53,12 @@ topic_v2:
 ---
 # Get Started with Journey Optimizer {#ajo-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand what Adobe Journey Optimizer is, its core capabilities, and concrete use cases so you can decide how it fits your customer engagement goals.
+
+>[!ENDSHADEBOX]
+
 This page introduces Adobe Journey Optimizer: what it is, who it's for, its key capabilities, and how it fits into the Adobe Experience Platform architecture. It is the recommended starting point for new users.
 
 ## What is [!DNL Adobe Journey Optimizer]?{#about-ajo}

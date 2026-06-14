@@ -40,6 +40,12 @@ subfeature_v2:
 ---
 # Best practices {#best-practices}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Apply Journey Optimizer best practices for identity stitching, omnichannel personalization, and journey guardrails, so you can build reliable use cases and scale efficiently within system limits.
+
+>[!ENDSHADEBOX]
+
 ## Real-time use case and omnichannel personalization guidance {#real-time-guidance}
 
 Following the Identity Service 2.0 update, real-time identity stitching has evolved. 
