@@ -38,6 +38,12 @@ subfeature_v2:
 ---
 # Get Started with queries {#queries-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Use the Query Editor powered by Adobe Experience Platform Query Service so you can write, validate, and run queries on your customer experience data for analysis and data exploration within Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Query Editor is an interactive tool provided by Adobe Experience Platform Query Service, which allows you to write, validate, and run queries for customer experience data within [!DNL Adobe Journey Optimizer] user interface. 
 
 Query Editor supports developing queries for analysis and data exploration, and allows you to run interactive queries for development purposes as well as non-interactive queries to populate [datasets](get-started-datasets.md).

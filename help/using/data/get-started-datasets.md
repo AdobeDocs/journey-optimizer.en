@@ -45,6 +45,12 @@ topic_v2:
 ---
 # Get Started with datasets {#datasets-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, create, and govern Adobe Experience Platform datasets so you can store and explore the data that powers journeys, campaigns, and reporting in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 All data that is ingested into Adobe Experience Platform is persisted within the Data Lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows).
 
 ## Guardrails & limitations
