@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Integrate with Marketo Engage {#integrating-with-marketo-engage}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure and use the Marketo Engage custom action so you can sync person and custom object data from your journeys into Marketo Engage.
+
+>[!ENDSHADEBOX]
+
 Embark on a journey of seamless data integration with Marketo Engage. A specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Marketo Engage. This custom action supports the ingestion of two key data types:
 
 * **Persons** (Profiles): Marketo transforms profiles into actionable insights.

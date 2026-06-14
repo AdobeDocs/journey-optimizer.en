@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Troubleshoot your custom actions {#troubleshoot-a-custom-action}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Send real test API calls to validate your custom action configurations so you can catch errors before relying on them in live journeys.
+
+>[!ENDSHADEBOX]
+
 You can test your custom actions by sending API calls from the administration section of Journey Optimizer user interface. This capability helps you troubleshoot your custom actions before or after using them in a journey.
 
 As an administrator, use the **[!UICONTROL Send test request]** capability to validate your custom action configurations by making real API calls directly from Adobe Journey Optimizer. This feature ensures that the request structure, headers, authentication, and payload are correctly formatted before being used in a journey.
