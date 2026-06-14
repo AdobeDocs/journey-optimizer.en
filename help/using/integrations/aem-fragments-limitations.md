@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Considerations and troubleshooting {#aem-fragments-limitations}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review key considerations and troubleshooting steps for Adobe Experience Manager Content Fragments in Journey Optimizer, covering fragment types, multilingual content, repository access, personalization, and common errors.
+
+>[!ENDSHADEBOX]
+
 ## Key considerations {#considerations}
 
 Keep the following in mind when using Content Fragments from [!DNL Adobe Experience Manager] in [!DNL Journey Optimizer]:

@@ -41,6 +41,12 @@ subfeature_v2:
 ---
 # Integrations with other solutions {#integration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how to connect Adobe Journey Optimizer with other Adobe solutions and systems, including Customer Journey Analytics, Analytics, Experience Manager, Stock, Express, GenStudio, Intelligent Services, Campaign, Workfront, and custom channels.
+
+>[!ENDSHADEBOX]
+
 With Adobe Journey Optimizer, you can easily manage, retain, and export this data to platforms or systems that are part of your technology stack. These integrations help you address your specific use cases, and extend Adobe Journey Optimizer functional scope.
 
 >[!NOTE]

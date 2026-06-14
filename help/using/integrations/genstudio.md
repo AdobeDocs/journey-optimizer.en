@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Work with GenStudio for performance marketing {#ajo-genstudio}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to integrate GenStudio for Performance Marketing with Journey Optimizer to export email templates, generate on-brand content variations, and import them back for use in your email campaigns.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_genstudio_button"
 >title="Use a template built with GenStudio"
