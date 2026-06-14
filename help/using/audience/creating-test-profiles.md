@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Create test profiles {#create-test-profiles}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create test profiles by uploading a CSV file or using API calls so you can preview content and test journeys in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Test profiles are required when using the [test mode](../building-journeys/testing-the-journey.md) in a journey, and to [preview and test your content](../content-management/preview-test.md).
 
 >[!NOTE]
