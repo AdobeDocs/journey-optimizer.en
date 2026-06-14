@@ -47,7 +47,7 @@ and AI tools understand the page before reading. Tracked under epic DOCAC-14936.
 
 In scope: all pages under `help/`. **Exclude** reference/syntax pages: any `*/api-reference/*`,
 `building-journeys/expression/`, `building-journeys/functions/`, `personalization/functions/`.
-Also **exclude** `loyalty-challenges/` (private beta).
+Also **exclude** `loyalty-challenges/` (private beta), `rn/` (release notes / dated changelog pages), and `offers/` (Offers / Decision management).
 
 ## Tooling
 
