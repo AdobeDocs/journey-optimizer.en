@@ -22,6 +22,12 @@ subfeature_v2:
 ---
 # Request approval {#request-approval}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Submit a journey or campaign for review, track or cancel the request while it is in review, and resubmit after edits so nothing publishes without the required sign-off.
+
+>[!ENDSHADEBOX]
+
 Access to the approval workflow is determined by your specific use case:
 
 * **No active Approval policy exists**
