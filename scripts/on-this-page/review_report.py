@@ -206,6 +206,9 @@ def main() -> int:
     ap.add_argument("--output", help="Write to file instead of stdout")
     ap.add_argument("--flagged-only", action="store_true",
                     help="Only include rows that have flags other than 'pending'")
+    ap.add_argument("--fail-on-flag", action="store_true",
+                    help="Exit non-zero if any page has a flag other than 'pending' "
+                         "(use as a CI gate)")
     ap.add_argument("--exclude", nargs="*", default=sorted(DEFAULT_EXCLUDE_PARTS))
     args = ap.parse_args()
 
@@ -214,26 +217,30 @@ def main() -> int:
         print("No in-scope .md files found.", file=sys.stderr)
         return 1
 
-    rows = [analyze(f) for f in files]
-    if args.flagged_only:
-        rows = [r for r in rows if [f for f in r["flags"] if f != "pending"]]
+    all_rows = [analyze(f) for f in files]
 
+    def non_pending_flags(row: dict) -> list[str]:
+        return [f for f in row["flags"] if f != "pending"]
+
+    pending = sum(1 for r in all_rows if "pending" in r["flags"])
+    flagged = sum(1 for r in all_rows if non_pending_flags(r))
+
+    rows = [r for r in all_rows if non_pending_flags(r)] if args.flagged_only else all_rows
     rendered = render_md(rows) if args.format == "md" else render_csv(rows)
 
     # Summary to stderr so it doesn't pollute a redirected report.
-    total = len(files)
-    pending = sum(1 for r in (analyze(f) for f in files) if "pending" in r["flags"])
-    flagged = sum(1 for f in files
-                  for r in [analyze(f)]
-                  if [x for x in r["flags"] if x != "pending"])
-    print(f"[summary] files={total} pending={pending} flagged(non-pending)={flagged}",
-          file=sys.stderr)
+    print(f"[summary] files={len(files)} pending={pending} "
+          f"flagged(non-pending)={flagged}", file=sys.stderr)
 
     if args.output:
         Path(args.output).write_text(rendered + "\n", encoding="utf-8")
         print(f"[written] {args.output}", file=sys.stderr)
     else:
         print(rendered)
+
+    if args.fail_on_flag and flagged > 0:
+        print(f"[fail] {flagged} page(s) have non-pending flags", file=sys.stderr)
+        return 2
     return 0
 
 
