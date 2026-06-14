@@ -20,6 +20,12 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Learn how to design your Web in-app message content in Adobe Journey Optimizer, including the message layout, media, text, buttons, and advanced formatting options.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 **Table of content**
 
 * [Configure the Web In-app channel](configure-in-app-web.md)

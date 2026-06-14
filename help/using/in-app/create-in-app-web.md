@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Create a Web In-app message {#create-in-app-web}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a Web in-app message campaign in Adobe Journey Optimizer, from configuring the channel to defining the audience, triggers, and content.
+
+>[!ENDSHADEBOX]
+
 ## Configure the Web In-app channel {#configure-web-inapp}
 
 To set up your Web In-app channel, follow the steps below:

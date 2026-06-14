@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Check & send your In-app notification {#create-in-app}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview, test, review, and activate your in-app message in Adobe Journey Optimizer before sending it to your audience.
+
+>[!ENDSHADEBOX]
+
 ## Preview on device {#preview-device}
 
 If you want to get a sneak peek of the In-app notification before it goes live for all users, you have the ability to preview it on a specific device. This functionality allows you to ensure that the notification looks and functions as intended on the chosen device, providing a better user experience for your audience.
