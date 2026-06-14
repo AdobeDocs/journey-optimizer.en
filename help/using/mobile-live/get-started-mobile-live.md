@@ -37,6 +37,11 @@ topic_v2:
 ---
 # Get started with Live activities {#get-started-mobile-live}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how Live activities deliver persistent, real-time updates on the iPhone Lock Screen and Dynamic Island so you can keep users engaged during ongoing events and plan the configuration and API-triggered campaigns needed to send them with Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
 
 Live activities are persistent, glanceable UI elements displayed on the device lock screen. They let your app present real-time, up-to-date information — keeping users informed throughout an ongoing event without requiring them to open the app or receive repeated push notifications.
 
