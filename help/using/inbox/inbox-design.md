@@ -9,6 +9,12 @@ exl-id: 0ab71b21-0085-4a93-b319-3c960bd8f7dd
 ---
 # Design an Inbox {#inbox-design}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure the inbox layout, capacity, unread indicators, and empty state so messages render on-brand and readable, giving targeted profiles a clear, consistent experience in light and dark modes.
+
+>[!ENDSHADEBOX]
+
 Inbox design governs how each message is rendered to targeted profiles within the inbox surface. The configuration encompasses the inbox template, list and expanded presentations, and read-state indicators that distinguish new messages from those already viewed.
 
 For the complete procedure to create an inbox campaign, refer to [Create an Inbox](inbox-create.md).
