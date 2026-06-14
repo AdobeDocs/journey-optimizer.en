@@ -24,7 +24,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Submit a journey or campaign for review, track or cancel the request while it is in review, and resubmit after edits so nothing publishes without the required sign-off.
+**On this page:** Move your journey or campaign toward go-live with confidence by sending it to the right reviewers, and stay in control while it is in review — cancel, edit, and resubmit as needed so only approved, on-brand content ever reaches your customers.
 
 >[!ENDSHADEBOX]
 
