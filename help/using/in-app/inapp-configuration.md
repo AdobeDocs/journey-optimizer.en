@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Prerequisites and configuration {#inapp-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up the delivery prerequisites and create an In-app channel configuration to send In-app messages with Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 ## Configuration steps {#inapp-steps}
 
 To send In-app messages in your journeys and campaigns with [!DNL Journey Optimizer], you need to go through the following configuration steps.
