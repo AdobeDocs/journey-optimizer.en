@@ -35,6 +35,12 @@ topic_v2:
 ---
 # journeyStep events action execution fields {#sharing-execution-fields}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Reference the action execution fields added to journey step events when a step processes a custom action.
+
+>[!ENDSHADEBOX]
+
 This field group will be shared by the journeyStepEvent and journeyStepProfileEvent.
 
 If the step has an action to be processed, those fields will be added to the event payload. 

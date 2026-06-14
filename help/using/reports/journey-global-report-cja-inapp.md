@@ -40,6 +40,12 @@ topic_v2:
 ---
 # In-app journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the in-app message metrics in the journey report, including display and click trends, tracking data, and tracked link labels for your in-app messages.
+
+>[!ENDSHADEBOX]
+
 >[!INFO]
 >
 >Your journey report may show information from multiple journeys simultaneously, as users can be involved in more than one journey at a time. As a result, inbound communications (In-App, Web and Code-based) may show up in multiple journeys if they were triggered for a user participating in simultaneous active journeys, which can result in overlapping data.
