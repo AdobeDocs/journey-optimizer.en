@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Use seed lists {#seed-lists}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create and use seed lists in Adobe Journey Optimizer to automatically include internal seed addresses in your email deliveries for monitoring and mailing list protection.
+
+>[!ENDSHADEBOX]
+
 Seed lists in [!DNL Journey Optimizer] enable you to automatically include specific seed addresses in your deliveries.
 
 >[!CAUTION]

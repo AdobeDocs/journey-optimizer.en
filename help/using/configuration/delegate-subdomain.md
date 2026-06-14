@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Delegate a subdomain {#delegate-subdomain}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to delegate your email sending subdomains to Adobe in Adobe Journey Optimizer using full delegation or CNAME setup, and how to access, validate, and undelegate them.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname"
 >title="Subdomain delegation"
