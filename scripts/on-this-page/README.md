@@ -30,7 +30,10 @@ Run from the repository root (`journey-optimizer.en/`).
    Preview first with `--dry-run`.
 
 2. **Refine the wording.** The seed is a starting point — edit each sentence so it
-   reads as a purpose statement (one sentence, plain text, American English). If you
+   reads as a purpose statement (one sentence, plain text, American English). **Lead
+   with the why**: state the reader's outcome/benefit ("…so you can <outcome>"), not
+   just a list of what the page covers. Match house-style feature names (e.g.
+   "Orchestrated campaign", "In-app"). See `.cursor/rules/on-this-page-box.mdc`. If you
    skip `--seed-from-description`, a `{{TODO...}}` placeholder is inserted instead and
    the validator will flag any that remain.
 
