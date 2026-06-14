@@ -33,6 +33,12 @@ subfeature_v2:
 ---
 # Use experimentation {#experimentation}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use content experiments to test multiple content variations within a journey or campaign and identify which one performs best against your success metrics.
+
+>[!ENDSHADEBOX]
+
 >[!NOTE]
 >
 >This page provides an overview of how to use experimentation within content optimization. For detailed information about content experiments, including configuration options, metrics, and analysis, see the [Content experiment documentation](../content-management/get-started-experiment.md).

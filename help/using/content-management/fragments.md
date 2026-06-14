@@ -41,7 +41,13 @@ topic_v2:
     internal-label: Personalization
 ---
 # Get started with fragments {#fragments}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with visual and expression content fragments in Adobe Journey Optimizer, reusable components you can build once and reference across emails in multiple campaigns and journeys.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP] 
 >id="ajo_create_fragment"
 >title="Define your own fragments"
