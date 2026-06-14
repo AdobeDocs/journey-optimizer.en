@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Additional steps to send events {#additional-steps-to-send-events}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up your data system to push events to the Streaming Ingestion APIs so the events you configured actually reach Journey Optimizer and trigger your journeys.
+
+>[!ENDSHADEBOX]
+
 To configure events to be sent to **[!UICONTROL Streaming Ingestion APIs]** and to be used in [!DNL Journey Optimizer], you need to follow these steps:
 
 1. Get the inlet URL from Adobe Experience Platform APIs. Learn more in [Streaming Ingestion APIs overview](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html){target="_blank"}.

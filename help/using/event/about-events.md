@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Work with journey events {#about-events}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the unitary, business, and audience qualification event types so you can choose the right trigger and start journeys from real-time events.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_list"
 >title="Journey events"
