@@ -37,6 +37,12 @@ subfeature_v2:
 ---
 # Configure a custom provider {#sms-configuration-custom}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to integrate a custom messaging provider in Adobe Journey Optimizer by creating API credentials, choosing an authentication method, and configuring headers, payloads, and inbound settings to send SMS and RCS messages.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_byop_provider_url"
 >title="Provider URL"

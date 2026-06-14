@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Configure Twilio provider {#sms-configuration-twilio}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to integrate Twilio with Adobe Journey Optimizer by creating API credentials for SMS, MMS, and RCS messaging so you can deliver mobile messages in your journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 By integrating Twilio with Adobe Journey Optimizer, you can deliver Mobile messages to your profiles as part of your journeys and campaigns.
 
 To configure Twilio as your SMS provider, follow the steps below: 

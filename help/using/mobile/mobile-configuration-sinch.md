@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Configure Sinch provider {#sms-configuration-sinch}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure Sinch as your provider in Adobe Journey Optimizer by setting up separate API credentials for SMS, MMS, and RCS messages.
+
+>[!ENDSHADEBOX]
+
 When using the Sinch provider with Journey Optimizer, you can find three distinct options: 
 
 * **SMS Configuration**: Set up your Sinch API credentials to send SMS messages seamlessly.
