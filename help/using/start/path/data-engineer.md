@@ -47,6 +47,12 @@ topic_v2:
 ---
 # Get started for data engineer {#data-engineer}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Build the schemas, datasets, identities, and data sources that power Adobe Journey Optimizer so your teams can deliver real-time, personalized customer experiences.
+
+>[!ENDSHADEBOX]
+
 As a **Data Architect** or **Data Engineer**, you set up and maintain the customer profile data and other data sources that power the experiences orchestrated by [!DNL Journey Optimizer]. This includes integrating all your customer and business data—whether from web, CRM, or offline sources—into a unified 360-degree view of the customer. You model customer profile data and business data into schemas, configure source connectors for ingesting data, and ensure data flows smoothly to enable real-time customer insights and engagement. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) granted you access and prepared your environment.
 
 >[!NOTE]

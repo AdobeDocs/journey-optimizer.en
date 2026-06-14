@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Accessibility in Journey Optimizer{#accessibility}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how Journey Optimizer supports users of all abilities through WCAG-aligned accessibility features and keyboard shortcuts, so you can navigate and work in the interface efficiently.
+
+>[!ENDSHADEBOX]
+
 Accessibility refers to a series of features that make a software product usable, with as little effort as possible, for users with visual, auditory, cognitive, motor, or other kinds of disabilities. Adobe is an industry leader in accessibility and supports the creation of outstanding web experiences by encouraging developers to produce rich, engaging content that is accessible to all users. Learn more about Adobe's commitment to accessibility in the [Adobe Accessibility page](https://www.adobe.com/accessibility.html){target="_blank"}.
 
 To help meet the goal of accessibility conformance, [!DNL Journey Optimizer] follows the internationally recognized best practices in the Web Content Accessibility Guidelines (WCAG) 2.1 Level A and Level AA. Learn more in the latest [Adobe Journey Optimizer Accessibility Conformance Report](https://www.adobe.com/accessibility/compliance/adobe-journey-optimizer.html){target="_blank"}.

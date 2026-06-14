@@ -45,6 +45,12 @@ topic_v2:
 ---
 # Get started for system administrators {#get-started-sys-admins}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up users, permissions, sandboxes, and channel configurations so your teams can work in Adobe Journey Optimizer securely and efficiently.
+
+>[!ENDSHADEBOX]
+
 As a **System Administrator**, you set up the Journey Optimizer environment and manage access to enable your teams to work efficiently and securely. You perform essential configuration steps so that the [Data Engineer](data-engineer.md), [Developer](developer.md), and [Marketer](marketer.md) can start working with [!DNL Adobe Journey Optimizer].
 
 Your primary responsibilities include setting up user groups and permissions, creating and managing sandboxes for partitioning data and journeys for different user groups, and configuring delivery channels and message presets to ensure consistent branding across the various messages and assets delivered through Journey Optimizer. You ensure the right people have access to the right capabilities while maintaining security and governance.

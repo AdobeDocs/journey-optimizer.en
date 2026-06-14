@@ -13,6 +13,12 @@ hide: true
 
 # Adobe Journey Optimizer packages and capabilities {#ajo-packages-v2}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how the modular Adobe Journey Optimizer packaging works across base offers, channel add-ons, and the Decisioning add-on, so you can choose the combination that fits your engagement use cases and budget.
+
+>[!ENDSHADEBOX]
+
 [!DNL Adobe Journey Optimizer] uses a modular packaging model. Start with the base offer that matches your primary use case, then add the channels and advanced capabilities you need.
 
 >[!NOTE]
