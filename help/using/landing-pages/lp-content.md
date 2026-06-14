@@ -41,7 +41,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Add the form component to your landing page so visitors can opt in or out, manage subscriptions, or submit data through an embedded form.
+**On this page:** The form component turns a static landing page into an interactive experience — add it so visitors can opt in or out, manage their subscriptions, or submit data that flows straight into your Experience Platform datasets.
 
 >[!ENDSHADEBOX]
 
