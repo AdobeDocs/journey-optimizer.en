@@ -30,10 +30,15 @@ and AI tools understand the page before reading. Tracked under epic DOCAC-14936.
 - Exactly **one blank line** between the H1 and `>[!BEGINSHADEBOX]`, and after `>[!ENDSHADEBOX]`.
 - The sentence: **exactly one sentence**, plain text, American English. No links, `[!UICONTROL]`, or bold other than the `**On this page:**` label.
 - Make it accurate to the actual page; reuse/adapt the frontmatter `description` as the seed.
-- **Lead with the why, not just the what.** State the reader's purpose or the benefit, not only the steps on the page. Prefer "…so you can <outcome>" / "…to <outcome>" framing over a bare list of features. For task pages, name the concrete feature **and** the reason to do it.
+- **Lead with the why, not just the what.** State the reader's purpose or the benefit, not only the steps on the page. For task pages, name the concrete feature **and** the reason to do it.
   - Avoid: "Learn how administrators configure AEM repository access, custom domains, author-only and publish setups, and authentication."
   - Prefer: "Learn how administrators connect a sandbox to an AEM repository — author-only or publish access, custom domains, and authentication — **so marketers can use AEM Content Fragments in their journeys and campaigns**."
-  - For overview pages, convey the value (e.g. "extends its functional scope and helps you address your use cases") rather than enumerating every sub-topic.
+- **Vary the structure — do not template every sentence.** The pattern "Learn how to <X> so you can <Y>" is one option, not a default. Overusing it across a folder makes pages read as boilerplate. Mix openings and lead with the value the capability delivers.
+  - For **overview / get-started / "about" pages especially**, open with the capability's value or what it unlocks rather than a how-to. Convey *why the feature matters*, not a list of sub-topics.
+    - Avoid (formulaic): "Learn how loyalty challenges work, including challenge types and rewards, so you can plan gamified programs."
+    - Prefer (value-led): "Loyalty challenges turn everyday customer actions into rewarded, gamified programs that deepen engagement and brand loyalty."
+  - Useful non-"Learn how" openers: a strong verb the reader performs ("Connect…", "Set frequency caps…", "Define…"); the capability as subject ("Quiet hours prevent…", "Priority scores decide…"); or the outcome first ("Reach customers on WhatsApp by…").
+  - "…so you can <outcome>" / "…to <outcome>" is good for showing value, but it should not appear in every sentence of a folder.
 - Match house style for product/feature names (e.g. capitalized "Orchestrated campaign", "In-app"); only name "Adobe Journey Optimizer" if the page itself references the product.
 - **Idempotent**: never add a second box if one already follows the H1.
 - Never modify frontmatter or other content.
@@ -42,6 +47,7 @@ and AI tools understand the page before reading. Tracked under epic DOCAC-14936.
 
 In scope: all pages under `help/`. **Exclude** reference/syntax pages: any `*/api-reference/*`,
 `building-journeys/expression/`, `building-journeys/functions/`, `personalization/functions/`.
+Also **exclude** `loyalty-challenges/` (private beta).
 
 ## Tooling
 
