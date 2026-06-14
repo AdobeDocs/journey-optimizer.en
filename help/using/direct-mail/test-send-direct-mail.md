@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Check & send a direct mail message {#direct-mail-test-send}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Preview the extraction file, validate and activate your campaign or journey, and manage postal consent so your direct mail reaches the right recipients accurately.
+
+>[!ENDSHADEBOX]
+
 Learn how to preview the extraction file, validate and activate your direct mail campaign or journey, and manage postal mail consent in Journey Optimizer.
 
 ## Before you start {#before-you-start}
