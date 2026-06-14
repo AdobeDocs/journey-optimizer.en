@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Define the Action campaign audience {#action-campaign-audience}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Select the audience and identity type in the Audience tab so your campaign targets the right individuals.
+
+>[!ENDSHADEBOX]
+
 Use the **[!UICONTROL Audience]** tab to define the campaign audience.
 
 ![](assets/campaign-audience.png)

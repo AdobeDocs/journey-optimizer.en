@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Edit the API triggered campaign content {#api-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Design and personalize your API triggered campaign content with contextual data passed in the API payload so each message is tailored in real time for every recipient.
+
+>[!ENDSHADEBOX]
+
 To configure the message content, navigate to the **[!UICONTROL Content]** tab or click the **[!UICONTROL Edit content]** button.
 
 ![](assets/campaign-content.png)

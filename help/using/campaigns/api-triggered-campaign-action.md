@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Configure the API triggered campaign action {#api-action}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure the Actions tab to select a channel configuration and set up optimization, tracking, and multilingual content so your API triggered campaign delivers the right message on the right channel.
+
+>[!ENDSHADEBOX]
+
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
 1. **Choose the channel**.
