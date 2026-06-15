@@ -45,6 +45,12 @@ topic_v2:
 ---
 # Troubleshooting FAQ {#ajo-troubleshooting}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers and fixes for common Adobe Journey Optimizer issues across channels, data, audiences, and configuration so you can resolve problems quickly.
+
+>[!ENDSHADEBOX]
+
 The following is a list of troubleshooting articles for Adobe Journey Optimizer. Each troubleshooting section provides answers to frequently asked questions and solutions to problems.
 
 When contacting Adobe support for unresolved issues, include environment details, impact level, replication steps, logs or screenshots, and relevant IDs. [Learn what to include in support tickets](user-interface.md#support-ticket-guidelines).

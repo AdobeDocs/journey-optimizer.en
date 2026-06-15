@@ -15,6 +15,12 @@ subfeature_v2: []
 ---
 # Limitations {#journey-limitations}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the limitations and guardrails that apply to journeys, including actions, versions, custom actions, events, and data sources.
+
+>[!ENDSHADEBOX]
+
 Here are limitations related to the use of journeys.
 
 ## General actions limitations {#action-limitations}

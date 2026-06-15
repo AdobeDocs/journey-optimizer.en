@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Edit web content {#edit-web-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to edit your web content with the Adobe Journey Optimizer web designer, including adding components, personalization, navigating with breadcrumbs and browse mode, and adjusting the device size.
+
+>[!ENDSHADEBOX]
+
 Once you [added a web experience](create-web.md#create-web-experience) to a journey or a campaign, you can edit the content of your site using the web designer.
 
 [Learn how to author a web campaign in this video](#video)

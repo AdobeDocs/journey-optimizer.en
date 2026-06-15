@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Use case: limit throughput with external data sources & custom actions{#limit-throughput}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to throttle journey processing with custom actions and external data sources so that external systems are not overwhelmed beyond their supported number of requests per second.
+
+>[!ENDSHADEBOX]
+
 Use this use case to throttle journey processing when external systems must handle a capped number of requests per second.
 
 ## Description of the use case

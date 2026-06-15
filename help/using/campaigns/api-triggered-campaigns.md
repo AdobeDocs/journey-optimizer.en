@@ -30,6 +30,12 @@ topic_v2:
 ---
 # Work with API triggered campaigns {#trigger-campaigns}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create and launch API triggered campaigns through a REST API call so you can send real-time marketing and transactional messages using profile and contextual data.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_api_triggered"
 >title="API triggered campaigns"

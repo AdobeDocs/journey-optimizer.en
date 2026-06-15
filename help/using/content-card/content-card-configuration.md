@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Configure Content cards {#content-card-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create a Content card channel configuration and define its surface so you can deliver content cards to the right web or app location.
+
+>[!ENDSHADEBOX]
+
 ## What is a configuration? {#surface-definition}
 
 A **content card experience configuration** is any entity designed for user or system interaction, which is uniquely identified by an **URI**.

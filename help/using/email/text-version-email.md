@@ -14,6 +14,12 @@ subfeature_v2: []
 ---
 # Manage the text version of an email {#text-version-email}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the auto-synced default plain text version of an email or create a custom one, and when each approach works best.
+
+>[!ENDSHADEBOX]
+
 It is recommended to create a text version of your email body, which is used when HTML content cannot be displayed.
 
 From a security standpoint, offering a plain text version is important because HTML emails can carry risks such as malicious scripts, tracking pixels, or phishing attempts that rely on rich formatting and links. Plain text reduces the attack surface and is often preferred by security-conscious recipients or corporate email systems that restrict or strip HTML. Providing both versions lets recipients choose the format that fits their security and privacy requirements.

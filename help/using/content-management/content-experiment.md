@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Create a content experiment {#content-experiment}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a content experiment to define and compare multiple treatments, choose an experiment type, and scale the winning variation across your campaigns and journeys in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment"
 >title="Content experiment"

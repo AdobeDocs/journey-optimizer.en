@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Get Started with profiles {#profiles-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how Real-time Customer Profile in Adobe Journey Optimizer unifies customer data from online, offline, and third-party sources into a single view, and how to access the profiles dashboard.
+
+>[!ENDSHADEBOX]
+
 ## About profiles
 
 Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a holistic view of each individual customer by combining data from multiple channels, including online, offline, CRM, and third party. **Profiles** allows you to consolidate your customer data into a unified view offering an actionable, timestamped account of every customer interaction. 

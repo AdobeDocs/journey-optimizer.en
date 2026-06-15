@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Direct mail configuration {#direct-mail-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up file routing and a direct mail channel configuration so your extraction files are exported to the right server for your direct mail provider to retrieve.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to personalize and generate the files required by direct mail providers to send mail to your customers.
 
 When [creating a direct mail message](../direct-mail/create-direct-mail.md), you define the targeted audience data, including the chosen contact information (postal address for example). A file containing this data will then be automatically generated and exported to a server, where your direct mail provider will be able to retrieve it and take care of the actual sending.

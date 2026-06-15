@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Get started with Mobile messages {#get-started-sms}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with mobile messaging in Adobe Journey Optimizer to create, personalize, and send SMS, MMS, and RCS messages in journeys and campaigns, including provider support, configuration requirements, and RCS prerequisites.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >If this is your first time creating mobile messages, make sure the Mobile message channel has been configured. [Learn more](mobile-configuration.md)

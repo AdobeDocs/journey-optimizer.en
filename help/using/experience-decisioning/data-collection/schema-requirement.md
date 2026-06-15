@@ -35,6 +35,12 @@ subfeature_v2:
 ---
 # Configure data collection {#schema-requirements}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure the experience event fields and Proposition Interactions schema requirements for impression, click, and custom events, so decisioning can accurately attribute feedback for reporting and AI-based ranking optimization.
+
+>[!ENDSHADEBOX]
+
 To be able to get feedback on event types other than decision events, you must set the correct value for each event type in an **experience event** that is sent into Adobe Experience Platform.
 
 >[!CAUTION]

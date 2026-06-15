@@ -35,6 +35,12 @@ topic_v2:
 ---
 # journeyStep events data fetch fields {#sharing-fetch-fields}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Reference the data fetch fields added to journey step events when data is enriched from Adobe Experience Platform or a custom source during step processing.
+
+>[!ENDSHADEBOX]
+
 This field group will be shared by the journeyStepEvent and journeyStepProfileEvent.
 
 During a step processing, we can have N data fetch on field groups.

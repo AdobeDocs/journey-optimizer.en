@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Email journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the email metrics in the journey report, including delivered versus click trends, delivery status, sending and tracking statistics, email domains, tracked links, subjects, and bounce and exclusion reasons.
+
+>[!ENDSHADEBOX]
+
 >[!INFO]
 >
 >Since Apple introduced new privacy protection features for its native Mail app, including Mail Privacy Protection, senders are no longer able to use tracking pixels to collect data on profiles who have enabled Apple's Mail Privacy Protection. Consequently, Adobe Journey Optimizer ability to track email opens using tracking pixels may be impacted. 

@@ -20,6 +20,12 @@ subfeature_v2:
 ---
 # Send using waves in campaigns {#send-using-waves}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Split outbound campaign delivery into scheduled batches, called waves, so you can balance load, protect sender reputation, and improve deliverability for high-volume sends.
+
+>[!ENDSHADEBOX]
+
 You can divide the delivery of outbound campaign messages into several batches (waves) and schedule them over time. Wave sending helps balance load, avoid overwhelming downstream systems (such as call centers or landing pages), and support deliverability and sender reputation—especially for high-volume sends.
 
 <!--

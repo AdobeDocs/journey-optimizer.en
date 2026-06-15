@@ -32,6 +32,12 @@ topic_v2:
 ---
 # URL tracking {#url-tracking}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to define URL tracking parameters at the email channel configuration level so they are appended to your content links and captured in web analytics and performance reports.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_preset_utm"
 >title="Define URL tracking parameters"

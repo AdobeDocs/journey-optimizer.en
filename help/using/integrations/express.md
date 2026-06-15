@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Edit assets with [!DNL Adobe Express]{#express}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to edit your assets with the Adobe Express integration in Journey Optimizer to resize images, remove backgrounds, crop visuals, and convert assets to JPEG or PNG.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_express_menu"
 >title="Adobe Express integration"

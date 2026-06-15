@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Create Webhook {#webhook}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create inbound and feedback SMS webhooks in Adobe Journey Optimizer to capture opt-in and opt-out consent responses and delivery events for Sinch, Infobip, and custom providers.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_channels_sms_webhook_settings_create"
 >title="Create an SMS Webhook"

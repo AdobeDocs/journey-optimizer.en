@@ -12,6 +12,12 @@ subfeature_v2:
 ---
 # Preview your content using test profiles {#preview}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview your message content against selected test profiles to check how personalized fields display for each variant.
+
+>[!ENDSHADEBOX]
+
 Once [test profiles](test-profiles.md) have been selected, you can preview your content using their data. You can use either simulation method:
 
 1. From the edit content screen of your message or in the Email Designer, click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown.

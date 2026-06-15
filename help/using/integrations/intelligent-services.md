@@ -36,6 +36,12 @@ subfeature_v2: []
 ---
 # Integrate with intelligent services {#ai-overview}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to integrate Adobe Intelligent Services and Customer AI predictions with Journey Optimizer to use churn and conversion scores as profile attributes for decisioning, actions, and segment building.
+
+>[!ENDSHADEBOX]
+
 The integration with **[!DNL Adobe Intelligent Services]** enables you to leverage artificial intelligence and machine learning for customer experience use cases. This allows marketing analysts to set up predictions tailored to a company's needs using business-level configurations without requiring data science expertise.
 
 [!DNL Intelligent Services], built on [!DNL Adobe Experience Platform], provides AI-as-a-service for customer experience teams. It helps predict customer behavior, measure campaign impact, and improve returns on investment. For more details, refer to the [[!DNL Adobe Experience Platform] documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html){target="_blank"}.  

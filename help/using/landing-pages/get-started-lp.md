@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Get started with landing pages {#get-started-lp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Landing pages turn a click from an email, ad, or campaign into a dedicated web destination where customers opt in or out, manage their preferences, and share profile data — helping you grow consented audiences and capture the first-party data that powers personalization.
+
+>[!ENDSHADEBOX]
+
 A landing page is a standalone web page that a user is directed to after clicking through from an email, a website, an ad, or any other digital location.
 
 [!DNL Journey Optimizer] allows you to create and design landing pages to direct your users to online forms where they can opt in or opt out from receiving your communications or a specific service such as a newsletter.

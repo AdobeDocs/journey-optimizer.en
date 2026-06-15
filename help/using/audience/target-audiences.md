@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Audience activation in [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to target Adobe Experience Platform audiences in Adobe Journey Optimizer campaigns and journeys, including activation delays and the guardrails that apply to different audience types.
+
+>[!ENDSHADEBOX]
+
 You can select in campaigns and journeys any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition.
 
 ## Guardrails & limitations {#guardrails}

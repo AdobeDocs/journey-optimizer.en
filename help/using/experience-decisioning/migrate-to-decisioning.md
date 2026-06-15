@@ -47,6 +47,12 @@ topic_v2:
 ---
 # Benefits of migrating to Decisioning {#migrate-to-decisioning}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the capabilities and benefits Decisioning offers over Decision management, along with the available migration tooling, so you can decide whether to migrate.
+
+>[!ENDSHADEBOX]
+
 ## What is Decisioning? {#what-is-decisioning}
 
 Journey Optimizer Decisioning is an expansion of decisioning functionality that lays the groundwork for decisioning on other objects (like journeys) in the future. This new capability unifies key workflow concepts for streamlined authoring and management, introduces experimentation into decisioning, and shifts decisioning items into a schema-based approach for dynamic item rendering.

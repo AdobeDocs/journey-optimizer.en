@@ -21,6 +21,12 @@ subfeature_v2:
 ---
 # Orchestrated campaigns reporting {#report-campaigns}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover the live and all-time reports available for Orchestrated campaigns in Adobe Journey Optimizer, and learn how to measure engagement and channel performance across email, SMS, push, and direct mail.
+
+>[!ENDSHADEBOX]
+
 Orchestrated campaign offers you actionable insights through its robust reporting capabilities. These insights help you better understand audience behavior, measure the performance of each step in your customer journey, and make data-driven decisions to optimize future campaigns. With detailed metrics and visualizations, you can track engagement and fine-tune your targeting strategies for maximum impact.
 
 ![](assets/report-orchestrated.png)

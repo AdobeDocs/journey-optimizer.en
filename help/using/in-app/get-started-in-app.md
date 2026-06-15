@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Get started with In-app channel {#gs-in-app}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with the In-app messaging channel in Adobe Journey Optimizer to engage app users with notifications that promote features, offers, and onboarding.
+
+>[!ENDSHADEBOX]
+
 In-app messages are notifications that can be sent to users within your app, guiding them to specific points of interest. These notifications can be used for different purposes, such as promoting new features, presenting special offers, or facilitating user onboarding. By leveraging In-app messages, you can effectively engage with your audience and steer them towards important aspects of your application.
 
 Use Journey Optimizer to create In-app notifications, and configure experience options, including the message layout and display, text, and button options.   

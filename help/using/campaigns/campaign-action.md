@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Configure the campaign action {#action-campaign-action}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure the campaign action by selecting a channel and channel configuration along with optimization and multilingual content, and add multiple inbound actions, so your campaign delivers the right experiences across channels.
+
+>[!ENDSHADEBOX]
+
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
 1. **Choose the channel**

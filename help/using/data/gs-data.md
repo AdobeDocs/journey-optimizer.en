@@ -45,6 +45,12 @@ topic_v2:
 ---
 # Get started with data management {#about-data}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get a practical overview of how data flows into and out of Adobe Journey Optimizer, covering schemas, datasets, identities, profiles, and data sources, so your team can complete the data readiness steps before building journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 Data is the foundation of every journey, decision, and message you deliver with [!DNL Adobe Journey Optimizer].
 
 This page gives you a practical starting point to understand:

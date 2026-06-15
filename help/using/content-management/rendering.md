@@ -12,6 +12,12 @@ subfeature_v2:
 ---
 # Test email rendering {#email-rendering}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to connect your Litmus account to Adobe Journey Optimizer to test email rendering across popular desktop, mobile, and web-based clients.
+
+>[!ENDSHADEBOX]
+
 You can leverage your **Litmus** account into [!DNL Journey Optimizer] to instantly preview your **email rendering** in popular email clients. You can then ensure your email content looks great and works properly in every inbox.
 
 To check email rendering, follow these steps:

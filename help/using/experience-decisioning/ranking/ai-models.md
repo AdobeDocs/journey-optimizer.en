@@ -39,6 +39,12 @@ subfeature_v2:
 ---
 # Get started with AI models {#ai-models}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the auto-optimization and personalized optimization AI model types and the steps to build them so you can rank offers according to your business goals.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to use a trained model system that ranks offers to display for a given profile.
 
 This feature enables you to create different **AI models** based on your business goals. Using these different goal-based strategies in a decision, the trained model system will help you understand how the different AI models are impacting your goals.

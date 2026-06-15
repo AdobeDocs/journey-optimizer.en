@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Create a LINE message {#create-line}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Add a LINE action to a journey or campaign and build personalized content, from text and stickers to images, videos, locations, and Flex Messages, so you can engage customers on LINE.
+
+>[!ENDSHADEBOX]
+
 ## Add a LINE message {#create-line-journey-campaign}
 
 >[!CONTEXTUALHELP]

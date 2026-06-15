@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Access & manage campaigns {#manage-campaigns}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Access, search, and organize your campaigns, understand each lifecycle status, and use the calendar and common operations so you can keep your campaign workspace efficient and act on each campaign at the right time.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
 >title="Orchestrated campaigns inventory"

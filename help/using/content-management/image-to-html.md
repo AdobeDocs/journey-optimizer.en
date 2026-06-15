@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Convert images to email content templates {#image-to-html}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the AI-powered image to HTML converter in Adobe Journey Optimizer to turn static image designs into editable, reusable email content templates.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] helps you dramatically speed up email creation by converting static image designs into fully customizable, modular email content templates.
 
 >[!AVAILABILITY]

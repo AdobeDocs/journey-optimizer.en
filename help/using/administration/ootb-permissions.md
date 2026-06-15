@@ -51,6 +51,12 @@ topic_v2:
 ---
 # Built-in permissions {#ootb-permissions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the built-in permissions available for each capability, so you can assign roles the precise rights your users need to work in Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Built-in permissions represent the different permissions that can be assigned to a **[!UICONTROL Role]** to fine-tune your user access to Journey Optimizer. High-level permissions encompass low-level permissions, detailed on [this page](high-low-permissions.md).
  
 | Capability | Permissions|

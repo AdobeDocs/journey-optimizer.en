@@ -50,6 +50,12 @@ topic_v2:
 ---
 # Get started with campaigns {#get-started-campaigns}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand campaign fundamentals, compare the available campaign types, and follow the end-to-end creation workflow so you can choose the right approach and build campaigns that deliver targeted content across channels in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule"
 >title="Campaign schedule"

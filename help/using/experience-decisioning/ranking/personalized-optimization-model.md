@@ -33,6 +33,12 @@ subfeature_v2:
 ---
 # Personalized optimization model {#personalized-optimization-model}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how the personalized optimization model uses machine learning to learn from customer, offer, and contextual data, including its dataset requirements, assumptions, and cold-start behavior, so you can decide when to use it to serve personalized offers and maximize your KPIs.
+
+>[!ENDSHADEBOX]
+
 ## Overview {#overview}
 
 By leveraging the state-of-the-art technologies in supervised machine learning and deep learning, Personalized optimization allows a business user (marketer) to define business goals and utilizes their customer data to train business-oriented models to serve personalized offers and maximize KPIs.

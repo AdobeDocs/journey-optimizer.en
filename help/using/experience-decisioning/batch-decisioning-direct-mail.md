@@ -10,6 +10,12 @@ keywords: batch decisioning, direct mail, decisioning
 
 # Batch decisioning in direct mail {#batch-decisioning-direct-mail}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Use batch decisioning in the direct mail channel so you can personalize each recipient's extraction file with the best decision items or export profile and decisioning data to downstream systems.
+
+>[!ENDSHADEBOX]
+
 With batch decisioning, Decisioning selects the best decision item or items for each profile and includes those results in the direct mail extraction file. You can return multiple items per profile by setting **[!UICONTROL Number of items]** when configuring the decision policy. The exported file can be used for direct mail personalization or for batch use cases where you export profiles and decision attributes to another system. 
 
 Batch decisioning in direct mail supports two main use cases:

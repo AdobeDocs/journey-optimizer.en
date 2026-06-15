@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Best practices for SMS cost optimization {#sms-cost-optimization}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn best practices to reduce SMS costs in Adobe Journey Optimizer by keeping messages short, avoiding special characters and UCS-2 encoding, and checking character counts before sending.
+
+>[!ENDSHADEBOX]
+
 SMS messages are typically billed by providers based on a 160-character limit per message. Sending SMS messages can incur additional costs if messages are split into multiple parts.
 
 Follow these guidelines to optimize your messaging strategy and reduce expenses.

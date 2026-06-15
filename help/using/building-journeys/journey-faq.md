@@ -60,6 +60,12 @@ topic_v2:
 ---
 # Journey orchestration - frequently asked questions {#faq-journeys}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers to frequently asked questions about Journey Orchestration in Adobe Journey Optimizer, covering general concepts, activities, events, and troubleshooting.
+
+>[!ENDSHADEBOX]
+
 Find answers to common questions about Journey Orchestration in [!DNL Adobe Journey Optimizer].
 
 Need more details? Use the feedback options at the bottom of this page to raise your question. You can also connect with the [[!DNL Adobe Journey Optimizer] community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
