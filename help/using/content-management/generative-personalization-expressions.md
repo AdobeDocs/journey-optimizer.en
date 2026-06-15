@@ -144,62 +144,34 @@ In the Email Designer, you can use [!UICONTROL AI Assistant for personalization 
 
 ## Write effective prompts for personalization expressions {#prompt-best-practices}
 
-Unlike content generation prompts, which focus on tone, style, and brand, prompts for personalization expressions work best when you describe the **data, logic, output, and fallback** you want. Start from the customer experience you want to deliver, then let the assistant translate it into template logic.
+Prompts for personalization expressions differ from content-generation prompts, which center on tone, style, and brand. Because the assistant builds template logic that resolves against profile and contextual data, your prompt should describe that logic precisely. Start from the customer experience you want to deliver, then express it in terms the assistant can translate into an expression.
 
-Use this prompt formula:
+An effective prompt generally defines four elements:
 
->[!BEGINSHADEBOX]
->
->Use **[data path or resource]**. If **[condition]**, show **[output A]**. Otherwise show **[output B]**. If the data is missing, show **[fallback]**.
->
->[!ENDSHADEBOX]
+* **Data source** — the profile attribute, context data, segment, offer, or other resource to evaluate. Include the exact field path when you know it, such as `profile.person.name.firstName`.
+* **Condition** — the logic to apply, for example whether a value exists or matches a specific criterion.
+* **Output** — what to display when the condition is met, including any required format.
+* **Fallback** — what to display when the data is missing or the condition is not met.
 
-The examples below show how to reframe a vague request into one the assistant can act on:
+For example, a request to *take the customer's renewal date, add one year, format it as MM/dd/yy, and display nothing when the renewal date is missing* provides a data source, a transformation, an output format, and a fallback — everything the assistant needs to produce a usable expression.
 
-| Instead of | Try |
-| - | - |
-| Make this dynamic. | Use `profile.person.name.firstName`. If it exists, show "Hi [first name]". If it is empty, show "Hi there". |
-| Fix this offer logic. | Loop through the customer's offers. If `offerType` is `TRIAL` and country is `US`, show offer A. Otherwise show fallback offer B. Keep the output as JSON with `content_id` and `param1`. |
+### Recommendations {#prompt-recommendations}
 
-For example, the prompt *"Use the customer's renewal date, add one year, and format it as MM/dd/yy. If the renewal date is missing, do not show the date."* gives the assistant the data path, the transformation, the output format, and the fallback it needs to generate usable logic.
+To get the most relevant results:
 
-### Do's and don'ts {#expression-prompt-tips}
+* Keep each prompt focused on a single personalization rule rather than combining several unrelated rules in one request.
+* Reference only fields, fragments, offers, and datasets that exist in your environment. The assistant works with what the editor exposes and does not create data sources for you.
+* Describe fallback behavior for optional or potentially missing data, so the expression resolves gracefully for every profile.
+* State the expected output structure explicitly when it matters — for example, the keys an offer payload must return as JSON.
+* When you edit existing code, provide only the relevant expression as context instead of an entire message, and use **[!UICONTROL Explain]** to understand code before you apply a **[!UICONTROL Fix]** or other change.
 
-<table style="table-layout: fixed; width: 100%; border: 0;">
-<thead style="border: 0; background-color: #FFFFFF;">
-<tr>
-<th>Do</th>
-<th>Don't</th>
-</tr>
-</thead>
-<tbody>
-<tr style="border: 0;">
-<td>
-<p>Describe the customer experience you want.</p>
-<p>Include exact field paths when you know them.</p>
-<p>Mention the expected output format, especially for JSON.</p>
-<p>Add fallback behavior for missing or optional data.</p>
-<p>Use <strong>Explain</strong> before changing code you do not understand.</p>
-</td>
-<td>
-<p>Reference fields that are not available in your environment.</p>
-<p>Paste a full email when only one personalization block needs help.</p>
-<p>Combine many unrelated rules in one prompt.</p>
-<p>Skip fallback logic for optional customer data.</p>
-<p>Expect the assistant to create data, fragments, or datasets by itself.</p>
-</td>
-</tr>
-</tbody>
-</table>
+## Data and setup requirements {#requirements}
 
-## When AI Assistant may not help {#troubleshooting}
+The assistant generates expressions from the resources the [!UICONTROL Personalization Editor] already exposes, so the underlying data must be configured and available. If a prompt does not return a usable expression, confirm that:
 
-The assistant works with the data and constructs your [!UICONTROL Personalization Editor] already exposes. It may not generate a usable expression when:
+* the field you referenced belongs to a schema that is active in your environment,
+* any fragment you want to reuse is published,
+* any dataset used for a lookup is enabled for lookups, and
+* your request relates to template personalization rather than another task.
 
-* the field is not in the active schema,
-* the fragment is not published,
-* the dataset is not lookup-enabled,
-* the prompt is too vague, or
-* the request is outside template personalization.
-
-In those cases, check your AJO setup (schema, fragment, or dataset configuration) or rewrite the prompt with clearer data, logic, output, and fallback details, then try again.
+When the setup is correct, refine the prompt by clarifying the data source, condition, output, and fallback, then generate again.
