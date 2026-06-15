@@ -68,6 +68,12 @@ topic_v2:
 
 1. Select your **[!UICONTROL LINE user ID]** you want to map. This is the identifier used to link messages to individual users within your LINE channel.
 
+    >[!NOTE]
+    >
+    >The LINE user ID you map here must already exist on your customers' [!DNL Real-Time Customer Profile]. Capture the LINE user ID (for example, through LINE Login or the LIFF SDK), ingest it into Adobe Experience Platform, and stitch it to a known identifier with Identity Service so that [!DNL Journey Optimizer] can reach the unified profile. [Learn more about identity in Journey Optimizer](../audience/get-started-identity.md).
+    >
+    >For an end-to-end example of unifying LINE user IDs with customer profiles using Identity Service, see the community article [Unifying LINE User IDs with Customer Profiles using AEP Identity Stitching](https://experienceleaguecommunities.adobe.com/adobe-journey-optimizer-15/unifying-line-user-ids-with-customer-profiles-in-adobe-journey-optimizer-using-aep-identity-stitching-248680){target="_blank"}.
+
 1. Type-in your **[!UICONTROL Sender Name]**, such as your brand's name.
 
 1. Submit your changes.
