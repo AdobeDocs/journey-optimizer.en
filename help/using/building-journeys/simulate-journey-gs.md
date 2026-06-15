@@ -27,8 +27,6 @@ subfeature_v2: []
 >To create, reuse, and view simulated users, you also need permissions on the **[!UICONTROL Simulated Users]** resource: **Manage Simulated Users** to create and edit them, and **View Simulated Users** for read-only access.
 >
 >To use AI in **[!UICONTROL Simulation]** (**[!UICONTROL Quick simulation]**, generating simulated users with AI, **[!UICONTROL Generate event values]**), users require **[!UICONTROL Generate Content]** permission from the **[!UICONTROL AI Assistant]** capability. 
->
->After an administrator saves new permissions, they may take a few minutes to appear on your account.
 
 You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profile-like entities you add, without using persistent test profiles in Adobe Experience Platform.
    
