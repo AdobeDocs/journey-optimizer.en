@@ -37,7 +37,7 @@ subfeature_v2:
 * **[!UICONTROL Personalization Editor]** — wherever the editor is available across channels (subject line, body, and other fields that open it). This is the general path for AI-assisted personalization. For where and how to open the editor, see [Add personalization](../personalization/personalization-build-expressions.md#where).
 * **Email Designer toolbar** — when you author emails in the Email Designer, select a component and use **[!UICONTROL Add expression]** in the contextual toolbar to open the assistant in a toolbox without opening the full editor first. This entry point is not available outside email authoring. See [Generate from the Email Designer](#generate-email-designer).
 
-For broader AI Assistant setup and languages, see [Get started with AI Assistant](gs-generative.md). For personalization concepts, see [Get started with personalization](../personalization/personalize.md). For prompt ideas, see [AI prompt best practices](ai-assistant-prompting-guide.md).
+For broader AI Assistant setup and languages, see [Get started with AI Assistant](gs-generative.md). For personalization concepts, see [Get started with personalization](../personalization/personalize.md). To write prompts that produce usable expressions, see [Write effective prompts for personalization expressions](#prompt-best-practices). For content-generation prompt ideas (tone, style, brand), see [AI prompt best practices](ai-assistant-prompting-guide.md).
 
 Depending on your campaign or journey context, the assistant can work with data and constructs the [!UICONTROL Personalization Editor] already exposes — for example profile attributes, segment membership, helper functions, and related personalization sources.
 
@@ -141,3 +141,65 @@ In the Email Designer, you can use [!UICONTROL AI Assistant for personalization 
     * Refine the expression in the full editor - click the ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg "Edit") icon to open **[!UICONTROL Personalization Editor]**.
 
 1. When you are satisfied with the result, click **[!UICONTROL Insert]** to add the expression to your content.
+
+## Write effective prompts for personalization expressions {#prompt-best-practices}
+
+Unlike content generation prompts, which focus on tone, style, and brand, prompts for personalization expressions work best when you describe the **data, logic, output, and fallback** you want. Start from the customer experience you want to deliver, then let the assistant translate it into template logic.
+
+Use this prompt formula:
+
+>[!BEGINSHADEBOX]
+>
+>Use **[data path or resource]**. If **[condition]**, show **[output A]**. Otherwise show **[output B]**. If the data is missing, show **[fallback]**.
+>
+>[!ENDSHADEBOX]
+
+The examples below show how to reframe a vague request into one the assistant can act on:
+
+| Instead of | Try |
+| - | - |
+| Make this dynamic. | Use `profile.person.name.firstName`. If it exists, show "Hi [first name]". If it is empty, show "Hi there". |
+| Fix this offer logic. | Loop through the customer's offers. If `offerType` is `TRIAL` and country is `US`, show offer A. Otherwise show fallback offer B. Keep the output as JSON with `content_id` and `param1`. |
+
+For example, the prompt *"Use the customer's renewal date, add one year, and format it as MM/dd/yy. If the renewal date is missing, do not show the date."* gives the assistant the data path, the transformation, the output format, and the fallback it needs to generate usable logic.
+
+### Do's and don'ts {#expression-prompt-tips}
+
+<table style="table-layout: fixed; width: 100%; border: 0;">
+<thead style="border: 0; background-color: #FFFFFF;">
+<tr>
+<th>Do</th>
+<th>Don't</th>
+</tr>
+</thead>
+<tbody>
+<tr style="border: 0;">
+<td>
+<p>Describe the customer experience you want.</p>
+<p>Include exact field paths when you know them.</p>
+<p>Mention the expected output format, especially for JSON.</p>
+<p>Add fallback behavior for missing or optional data.</p>
+<p>Use <strong>Explain</strong> before changing code you do not understand.</p>
+</td>
+<td>
+<p>Reference fields that are not available in your environment.</p>
+<p>Paste a full email when only one personalization block needs help.</p>
+<p>Combine many unrelated rules in one prompt.</p>
+<p>Skip fallback logic for optional customer data.</p>
+<p>Expect the assistant to create data, fragments, or datasets by itself.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## When AI Assistant may not help {#troubleshooting}
+
+The assistant works with the data and constructs your [!UICONTROL Personalization Editor] already exposes. It may not generate a usable expression when:
+
+* the field is not in the active schema,
+* the fragment is not published,
+* the dataset is not lookup-enabled,
+* the prompt is too vague, or
+* the request is outside template personalization.
+
+In those cases, check your AJO setup (schema, fragment, or dataset configuration) or rewrite the prompt with clearer data, logic, output, and fallback details, then try again.
