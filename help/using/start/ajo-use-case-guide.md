@@ -19,13 +19,15 @@ keywords: journey optimizer, use case, decision guide, which capability, get sta
 
 [!DNL Adobe Journey Optimizer] offers many capabilities, and the right one depends on what you are trying to achieve. This guide is organized around business goals rather than product features: find the goal that matches your need, then follow the link to start with the recommended capability.
 
+Use this page as a quick router — scan for your goal and jump straight to the right capability. If you would rather follow guided, step-by-step playbooks and videos, start with the [Onboarding hub](onboarding-hub.md) instead.
+
 Where an end-to-end tutorial isn't available for a specific scenario, the link takes you to the best current starting point to learn the capability and begin.
 
 AI is built into many of these capabilities — look for the **(AI)** tag in the tables below. The conversational [AI Assistant](ai-features.md#ai-assistant) can also answer product questions and surface operational insights about your journeys at any time. For the full set of intelligent features, see [AI & intelligent features](ai-features.md).
 
 >[!TIP]
 >
->New to Journey Optimizer? Browse the full [Journey Optimizer tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/overview){target="_blank"} (videos and guided walkthroughs), follow an expert-curated [video playlist](https://experienceleague.adobe.com/en/playlists?solution=Journey+Optimizer){target="_blank"}, and practice in a [training sandbox](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/configure-a-training-sandbox/introduction-and-prerequisites){target="_blank"} or with the [hands-on challenges](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites){target="_blank"}.
+>New to Journey Optimizer? Start with the [Onboarding hub](onboarding-hub.md) for step-by-step playbooks, curated use cases, and videos. You can also browse the full [Journey Optimizer tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/overview){target="_blank"} (videos and guided walkthroughs), follow an expert-curated [video playlist](https://experienceleague.adobe.com/en/playlists?solution=Journey+Optimizer){target="_blank"}, and practice in a [training sandbox](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/configure-a-training-sandbox/introduction-and-prerequisites){target="_blank"} or with the [hands-on challenges](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites){target="_blank"}.
 
 ## Set up Journey Optimizer for your team {#setup-admin}
 
