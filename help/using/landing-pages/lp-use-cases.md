@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Landing page use cases {#lp-use-cases}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Walk through practical examples that use landing pages to drive subscriptions, capture opt-outs, and trigger follow-up journeys from form submissions.
+
+>[!ENDSHADEBOX]
+
 Below are some examples of how you can use [!DNL Journey Optimizer] landing pages to have your customers opt in/out from receiving some or all of your communications.
 
 ## Subscribe to a service {#subscription-to-a-service}

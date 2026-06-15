@@ -39,7 +39,13 @@ topic_v2:
     internal-label: Personalization
 ---
 # Create a fragment {#create-fragments}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, design, lock, preview, and publish visual and expression fragments so you can reuse content across Adobe Journey Optimizer campaigns and journeys.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_create_visual_fragment"
 >title="Select the visual type"

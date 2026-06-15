@@ -19,6 +19,12 @@ subfeature_v2:
 ---
 # Troubleshoot Live activities {#troubleshoot-mobile-live}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Systematically diagnose why your Live activities fail to appear, update, or end so you can resolve profile token, campaign configuration, payload, and delivery issues across both unitary and broadcast use cases.
+
+>[!ENDSHADEBOX]
+
 Live activities in Adobe Journey Optimizer enable real-time, dynamic updates on iOS lock screens and Dynamic Islands. They can only be triggered and managed through API Triggered Campaigns.
 
 **Use case types:**

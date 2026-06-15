@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Get started with audiences {#about-segments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to browse, build, and manage Adobe Experience Platform audiences and target them in your Adobe Journey Optimizer journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment_segment"
 >title="Audience"

@@ -33,10 +33,22 @@ topic_v2:
 ---
 # Create an In-app message {#create-in-app}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create an In-app message in Adobe Journey Optimizer and add it to a journey or a campaign, including configuring triggers and display frequency.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_triggers"
 >title="Manage In-app Triggers"
 >abstract="Efficiently control your Triggers by selecting the specific events and criteria that will activate your messages. With the Rule builder, users can define precise conditions and values. When these conditions are met, they initiate a series of actions, including the delivery of in-app messages."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_in_app"
+>title="In-app message action"
+>abstract="An in-app message inbound action displays an in-app message to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references an in-app configuration that defines the content shown. The **Optimization** section can include content experiments or targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default), giving profiles time to view the in-app message."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 You can add an In-app message in a campaign or in a journey. Follow the steps detailed below to create an In-app message in both contexts.
 

@@ -44,6 +44,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Learn how to read the Code-based campaign report in Adobe Journey Optimizer to analyze display and click engagement, tracking data, tracked link labels, and decisioning performance for your code-based experiences.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 You can access your Code-based campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access.png)

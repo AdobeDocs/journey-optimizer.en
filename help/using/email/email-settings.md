@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Configure email settings {#email-settings}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to define the email settings in a channel configuration, including email type, subdomain, IP pool, list unsubscribe, header parameters, BCC, seed list, retries, URL tracking, and execution address.
+
+>[!ENDSHADEBOX]
+
 To start creating an email, you need to set up email channel configurations that define all the technical parameters required for your messages. [Learn how to create configurations](../configuration/channel-surfaces.md)
 
 >[!NOTE]

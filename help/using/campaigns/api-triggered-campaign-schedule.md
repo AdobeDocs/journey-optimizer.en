@@ -29,6 +29,12 @@ role_v2:
 ---
 # Schedule the API triggered campaign {#api-schedule}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set start and end dates and rate control in the Schedule tab so your API triggered campaign sends at the right time without overwhelming downstream systems.
+
+>[!ENDSHADEBOX]
+
 Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
 
 ## Set start and end dates

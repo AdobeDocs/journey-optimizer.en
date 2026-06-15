@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Web journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the web channel metrics in the Adobe Journey Optimizer journey report, including impression and click trends, displays, tracking data, and tracked link labels and URLs.
+
+>[!ENDSHADEBOX]
+
 >[!INFO]
 >
 >Your journey report may show information from multiple journeys simultaneously, as users can be involved in more than one journey at a time. As a result, inbound communications (In-App, Web and Code-based) may show up in multiple journeys if they were triggered for a user participating in simultaneous active journeys, which can result in overlapping data.

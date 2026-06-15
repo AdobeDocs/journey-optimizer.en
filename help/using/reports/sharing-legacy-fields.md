@@ -35,6 +35,12 @@ topic_v2:
 ---
 # About legacy fields {#sharing-legacy-fields}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Reference the legacy fields that make up the original journey step event field groups, including common, action execution, data fetch, identity, and journey fields.
+
+>[!ENDSHADEBOX]
+
 This category contains the original step event fields. These fields are part of the following field groups:
 
 * [journeySteps events common fields](../reports/sharing-common-fields.md)

@@ -35,6 +35,12 @@ level_v2:
 ---
 # Use content templates {#use-content-templates}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to apply content templates when creating content for any channel except Web in Adobe Journey Optimizer to start building messages faster.
+
+>[!ENDSHADEBOX]
+
 When creating content for any channel (except Web) in [!DNL Journey Optimizer], you can use a custom template that you either:
  
 * Created from scratch using the **[!UICONTROL Content templates]** menu. [Learn more](#create-template-from-scratch)

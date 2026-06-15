@@ -21,6 +21,12 @@ subfeature_v2:
 ---
 # Get started with relational schemas and datasets{#gs-schemas}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the key concepts and steps to create relational schemas and datasets, link them, and ingest data for Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 This guide walks you through the process of creating a relational schema, configuring a dataset for Orchestrated campaigns and ingesting data.
 
 ![schema](assets/do-not-localize/schema_admin.png){zoomable="yes"}

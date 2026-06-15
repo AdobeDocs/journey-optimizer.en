@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Send a message with Campaign v7/v8 {#campaign-v7-v8-use-case}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to send an email from a journey using the integration with Adobe Campaign v7 and v8, including creating the transactional template, event, and action.
+
+>[!ENDSHADEBOX]
+
 This use case explains all the steps required to send an email using the integration with [!DNL Adobe Campaign] v7 and [!DNL Adobe Campaign] v8.
 
 >[!NOTE]

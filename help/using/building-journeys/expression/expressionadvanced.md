@@ -39,7 +39,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_advanced"
 >title="About the advanced expression editor"
->abstract="Use the advanced expression editor to build advanced expressions in various screens of the interface. For example, you can build expressions when configuring and using journeys, and when defining a data source condition."
+>abstract="The advanced expression editor builds advanced expressions in various screens of the interface. For example, you can build expressions when configuring and using journeys, and when defining a data source condition."
 
 Use the Journey advanced expression editor to build advanced expressions in various screens of the interface. For example, you can build expressions when configuring and using journeys, and when defining a data source condition.
 
@@ -78,6 +78,10 @@ You can access the advanced expression editor in different ways:
 
 * When you create a custom timer, the advanced editor will be directly displayed.
 * When you map action parameter, click on **[!UICONTROL Advanced mode]**.
+
+>[!NOTE]
+>
+>To generate Journey expressions using natural language prompts, use the **[Expression Assistant](expression-agent.md)** (**public beta**) via the AI control inside the advanced editor.
 
 ## Discover the interface {#discovering-the-interface}
 

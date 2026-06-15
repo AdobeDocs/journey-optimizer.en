@@ -23,6 +23,12 @@ subfeature_v2:
 
 # Get started with profiles & audiences {#gs-profiles-audiences}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get an overview of how to work with real-time customer profiles and audiences in Adobe Journey Optimizer to deliver personalized customer experiences.
+
+>[!ENDSHADEBOX]
+
 Adobe Journey Optimizer allows brands to create and manage real-time customer profiles and audiences to deliver personalized customer experiences. ​ This overview provides a general understanding of how to work with profiles and audiences in Journey Optimizer. For detailed information, refer to the specific sections on Profiles and Audiences.
 
 **Profiles**

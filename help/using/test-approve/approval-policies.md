@@ -27,6 +27,12 @@ subfeature_v2:
 ---
 # Create & manage approval policies {#approval-policies}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Approval policies determine which journeys and campaigns require sign-off before going live, letting administrators set the conditions, targeting criteria, and reviewers that govern each request.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_approval_policy_request_approval"
 >title="Request approval"

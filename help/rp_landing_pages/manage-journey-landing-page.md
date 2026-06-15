@@ -78,5 +78,5 @@ Explore how journeys end, including closing, stopping, and managing profile exit
 
 ## Additional Resources
 
-- **[Copy a Journey to Another Sandbox](../using/building-journeys/copy-to-sandbox.md)** - Learn how to transfer journeys and dependent objects between sandbox environments using package exports and imports.
-- **[Integrate with Intelligent Services](../using/building-journeys/ai-services-overview.md)** - Leverage AI and machine learning for customer behavior prediction and campaign impact measurement with Adobe Intelligent Services.
+- **[Copy a Journey to Another Sandbox](../using/configuration/copy-objects-to-sandbox.md#objects)** - Learn how to transfer journeys and dependent objects between sandbox environments using package exports and imports.
+- **[Integrate with Intelligent Services](../using/integrations/intelligent-services.md)** - Leverage AI and machine learning for customer behavior prediction and campaign impact measurement with Adobe Intelligent Services.

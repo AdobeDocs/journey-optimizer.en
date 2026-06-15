@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Monitor your web experiences {#monitor-web-experiences}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to monitor your live web experiences in Adobe Journey Optimizer by checking the web reports and setting up click tracking on specific page elements.
+
+>[!ENDSHADEBOX]
+
 ## Check the web reports {#check-web-reports}
 
 Once your web experience is live, you can check the **[!UICONTROL Web]** tab of the  [Journey report](../reports/journey-global-report-cja-web.md) and [Campaign report](../reports/campaign-global-report-cja-web.md) to compare elements such as the number of impressions, click rate and number of engagements with your web page.

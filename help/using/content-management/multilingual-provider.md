@@ -30,6 +30,12 @@ level_v2:
 ---
 # Add language providers {#multilingual-provider}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add and configure third-party translation providers and their supported locales so they can be used for your multilingual content.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 > Your use of a Translation Provider's translation services is subject to additional terms and conditions from that applicable provider. As third-party solutions, translation services are available to Adobe Journey Optimizer users via an integration. Adobe does not control and is not responsible for third-party products.

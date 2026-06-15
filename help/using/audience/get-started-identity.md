@@ -32,6 +32,12 @@ subfeature_v2:
 ---
 # Get Started with identities {#identities-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to browse customer identifiers and explore identity graphs in Adobe Journey Optimizer, including how identity namespaces and values combine to identify each customer.
+
+>[!ENDSHADEBOX]
+
 An identity is data that is unique to an entity, typically a real-world object, such as an individual person, a hardware device, or a web browser. A fully qualified identity consists of two elements:
 
 * The **identity namespace** serves as an indicator of the context to which an identity relates.

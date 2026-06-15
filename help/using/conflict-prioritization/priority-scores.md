@@ -25,6 +25,12 @@ subfeature_v2:
 ---
 # Assign priority scores {#priority}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Assign priority scores to journeys, campaigns, and inbound actions so you can control which communication takes precedence when a profile qualifies for more than one.
+
+>[!ENDSHADEBOX]
+
 Journey Optimizer allows you to assign a priority score to a journey, a campaign or to an inbound channel action within the journey **[!UICONTROL Action]** activity.
 
 Priority is essential to prioritize a journey, campaign, or action when there is an imposed constraint (such as a frequency cap).

@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Reconciliation {#reconciliation}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Reconciliation targeting activity to match external or unidentified data with existing records in the database during an Orchestrated campaign.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation"
 >title="Reconciliation activity"

@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: AI service overview
-description: AI service overview
+title: Integrate with Intelligent Services
+description: Learn how to leverage Adobe Intelligent Services and Customer AI predictions in Journey Optimizer
 feature: Journeys, Integrations
 topic: Artificial Intelligence
 role: User
@@ -35,6 +35,12 @@ topic_v2:
 subfeature_v2: []
 ---
 # Integrate with intelligent services {#ai-overview}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to integrate Adobe Intelligent Services and Customer AI predictions with Journey Optimizer to use churn and conversion scores as profile attributes for decisioning, actions, and segment building.
+
+>[!ENDSHADEBOX]
 
 The integration with **[!DNL Adobe Intelligent Services]** enables you to leverage artificial intelligence and machine learning for customer experience use cases. This allows marketing analysts to set up predictions tailored to a company's needs using business-level configurations without requiring data science expertise.
 

@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Get started with Mobile configuration {#sms-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure your Adobe Journey Optimizer environment to send SMS, MMS, and RCS messages by integrating a provider such as Sinch, Twilio, or Infobip, creating a webhook, and setting up a mobile configuration.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_header"
 >title="Configure your SMS provider with Journey Optimizer"

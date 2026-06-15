@@ -17,6 +17,12 @@ feature_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Learn how to use Adobe Journey Optimizer Integrations with any external platform that exposes a compatible API, with operational guardrails and illustrative vendor patterns to guide your setup.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 Customers are responsible for ensuring that their use of the AJO Integrations feature and any associated third-party vendors or integrations complies with all applicable laws and regulations, such as HIPAA.
 
 >[!ENDSHADEBOX]

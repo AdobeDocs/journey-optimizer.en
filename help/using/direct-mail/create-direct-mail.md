@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Create a direct mail message
-description: Learn how to create a direct mail message in Journey Optimizer
+title: Create a direct mail message 
+description: Learn how to create a direct mail message in Journey Optimizer 
 feature: Direct Mail
 topic: Content Management
 role: User
@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Create a direct mail message {#create-direct}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Add a direct mail message to a campaign or journey and configure its extraction file so your direct mail provider has the personalized data needed to send mail to your customers.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_direct_mail"
 >title="Direct mail creation"
@@ -54,6 +60,12 @@ To create direct mail messages, create a scheduled campaign or a journey, and co
 
 ## Add a Direct mail message {#create-dm-campaign}
 
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_direct_mail"
+>title="Direct mail action"
+>abstract="A direct mail channel action generates the direct mail content for profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a direct mail configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 Browse the tabs below to learn how to add a Direct mail message in a campaign or a journey.
 
 >[!BEGINTABS]
@@ -72,9 +84,7 @@ Browse the tabs below to learn how to add a Direct mail message in a campaign or
 
     ![Extraction file content editor for a direct mail journey activity](assets/direct-mail-journey-content.png)
 
-1. Once the content of the extraction file has been defined, you can use test profiles to preview it. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
-
-    To do so, click **[!UICONTROL Simulate content]** then add a test profile to check how the extraction file rendering using the test profile data. Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
+1. Once the content of the extraction file has been defined, preview it using **[!UICONTROL Simulate content]**. [Learn how to preview and test content](../content-management/preview-test.md)
 
     ![Simulate content preview for a direct mail extraction file](assets/direct-mail-simulate.png){width="800" align="center"}
 
@@ -126,7 +136,15 @@ You can now start configuring the extraction file to send to your direct mail pr
 
 The extraction file is required by direct mail providers to send mail to your customers. To define the extraction file configuration, follow these steps:
 
-1. From the campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the extraction file content.
+1. From the campaign or journey configuration screen, click the **[!UICONTROL Edit content]** button to configure the extraction file content.
+
+1. To add decision policies to your direct mail message, select a column in the **[!UICONTROL Data Fields]** section and open the personalization editor using the ![](../experience-decisioning/assets/do-no-localize/editor-icon.svg) icon. Navigate to the **[!UICONTROL Decision policies]** menu to create and insert a decision policy. You can then use decision item attributes as column data in the extraction file.
+
+   >[!AVAILABILITY]
+   >
+   >Experience Decisioning in direct mail is a new capability. Previously, direct mail extraction files could not use the Decisioning engine; you can now add decision policies and include decision item attributes as column data in the export.
+
+   [Learn how to add a decision policy in direct mail](../experience-decisioning/create-decision-policy.md#add). For batch decisioning workflows and examples (personalized direct mail or export to downstream systems), see [Batch decisioning in direct mail](../experience-decisioning/batch-decisioning-direct-mail.md).
 
 1. Adjust the extraction file properties:
 
@@ -167,4 +185,4 @@ You can now test your direct mail message and send it to your audience. [Learn h
 * [Test and send direct mail](test-send-direct-mail.md)
 * [Preview and test content](../content-management/preview-test.md)
 
-For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md).
+For common questions about direct mail, see [Get started with direct mail](get-started-direct-mail.md). 

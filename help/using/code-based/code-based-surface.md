@@ -29,6 +29,12 @@ topic_v2:
 ---
 # Code-based experience surfaces {#code-based-surface}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand what a code-based experience surface and surface URI are, and how they identify the locations where your content is delivered.
+
+>[!ENDSHADEBOX]
+
 ## What is a surface? {#surface-definition}
 
 >[!CONTEXTUALHELP]

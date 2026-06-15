@@ -47,6 +47,12 @@ topic_v2:
 ---
 # Journey orchestration - complete guide{#journey-orchestration-guide}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get a complete guide to journey orchestration in Adobe Journey Optimizer, covering how to design, manage, and refine multistep, multichannel customer journeys that adapt in real time.
+
+>[!ENDSHADEBOX]
+
 Journeys in [!DNL Adobe Journey Optimizer] empower you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
 
 Whether you're exploring real-time triggers, managing journey properties, or using advanced tools like custom actions and expressions, this guide provides a clear roadmap to confidently design and refine journeys that deliver meaningful, timely customer experiences.
@@ -114,6 +120,16 @@ Create **custom actions** if you're using a third-party system to send your mess
 With the **journey designer**, build your multistep use cases: easily drag and drop an entry event or a read audience activity, add conditions and send personalized messages.
 
 [Explore the journey designer](using-the-journey-designer.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+**Reusable Journey Fragments**
+
+Build a set of journey nodes once — such as an eligibility check or channel routing logic — and reuse them across journeys with **Journey Fragments**.
+
+[Learn about Journey Fragments](journey-fragments.md)
 :::
 
 :::

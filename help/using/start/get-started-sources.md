@@ -39,6 +39,12 @@ subfeature_v2:
 ---
 # Get started with sources connectors {#sources-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand what source connectors are and how they bring data from your CRM, cloud storage, and databases into Adobe Journey Optimizer, so you can power personalized, data-driven customer journeys.
+
+>[!ENDSHADEBOX]
+
 ## What is a source? {#what-is-source}
 
 A **source** is a connector that brings external data into Adobe Journey Optimizer. Sources allow you to import customer information from systems you already use, such as CRM platforms, cloud storage, or databases, and make that data available for creating personalized customer journeys.
