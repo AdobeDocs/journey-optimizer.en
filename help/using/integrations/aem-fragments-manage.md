@@ -25,7 +25,7 @@ When you republish a Fragment already used in a Journey or Campaign, the sync ti
 
 1. Select a Fragment to review its status and available actions:
 
-    * **[!UICONTROL Explore references]**: see the Journeys and Campaigns that use the fragment.
+    * **[!UICONTROL Explore references]**: see the Journeys, Campaigns, Orchestrated campaigns, and Templates that use the fragment.
     * **[!UICONTROL Open in AEM]**: open the Fragment in Adobe Experience Manager to edit or republish it.
     * **[!UICONTROL Sync]**: pull the latest published version from Adobe Experience Manager into Journey Optimizer, for example when republished content has not appeared after the usual sync window. If the control is disabled, the Fragment already matches the published version in Experience Manager.
 
@@ -40,6 +40,10 @@ When you republish a Fragment already used in a Journey or Campaign, the sync ti
     * **[!UICONTROL AEM Fragment Id]**: unique Content Fragment identifier in Adobe Experience Manager.
     * **[!UICONTROL Tags]**: tags assigned in Adobe Experience Manager, including Journey Optimizer enablement tags that determine whether the Fragment appears in selectors for your organization and sandbox. [Learn how to create and assign tags](aem-fragments.md#create-tag)
     * **[!UICONTROL JSON preview]**: read-only JSON structure of the Fragment content Journey Optimizer uses.
+
+1. In **[!UICONTROL Explore references]**, use the tabs to see journeys, campaigns, orchestrated campaigns, and templates that reference the Fragment.
+
+      ![](assets/fragment-list-3.png)
 
 ➡️ [Learn more about Content Fragment](aem-fragments.md)
 
