@@ -66,6 +66,12 @@ Start by defining the decision item's standard and custom attributes :
 
 1. The **Tags** field allows you to assign Adobe Experience Platform Unified Tags to your decision items. This allows you to easily classify them and improve search. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
 
+1. Optionally, specify custom attributes. They are specific attributes tailored to your needs that you can assign to a decision item, defined in the decision items' catalog schema. [Learn how to work with catalogs](catalogs.md)
+
+    You can sort the custom attributes by clicking the column headers and searching for a specific attribute using the search field.
+
+    ![Decision item creation screen with custom attributes section](assets/item-custom-attributes.png){width="80%"}
+
 1. Add fragments to your decision item to enrich its content. Two types of fragments are supported:
 
     * **Journey Optimizer content fragments** — Use reusable expression fragments created in Journey Optimizer to display different contents depending on context, for example across several mobile device models. You can leverage these fragments in your decision policies across all channels where Decisioning is available (code-based experience, Email, Push, SMS, and journeys). [Learn how](fragments-decision-policies.md#ajo-fragments)
@@ -79,8 +85,6 @@ Start by defining the decision item's standard and custom attributes :
         >This feature is available in Limited Availability for outbound channels with Decisioning support. To request access, contact your Adobe representative.
 
         For prerequisites and guardrails, refer to [Use AEM Content Fragments with Experience Decisioning](../integrations/aem-fragments.md#aem-decisioning).
-
-1. Specify custom attributes (optional). Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are defined in the decision items' catalog schema. [Learn how to work with catalogs](catalogs.md)
 
 1. Add personalization attributes (optional). In the **[!UICONTROL Personalization Attributes]** section, define attribute values evaluated at delivery time using profile, context, journey, and audience data — so a single decision item can serve tailored content to different profiles without duplication. [Learn more](#personalization-attributes)
 

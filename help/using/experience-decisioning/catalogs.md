@@ -84,7 +84,7 @@ To access the catalog's schema where decision items' attributes are stored, foll
 
     The value that is input on an attribute with a decisioning asset attribute is a public URL. Most of the time, this would point to an image. Detailed information on how to work with [!DNL Adobe Experience Platform] schemas is available in the [XDM System documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/overview.html).
 
-1. Once your desired custom attributes are added, save the schema. The new field is now available in the decision item creation screen, within the **[!UICONTROL Custom attributes]** section.
+1. Once your desired custom attributes are added, save the schema. The new field is now available in the [decision item creation](items.md#attributes) screen, within the **[!UICONTROL Custom attributes]** section.
 
     The example below shows an item creation screen with custom attributes such as objects defined in the schema.
 
