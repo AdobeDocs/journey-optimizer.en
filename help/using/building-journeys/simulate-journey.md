@@ -22,7 +22,9 @@ subfeature_v2: []
 
 >[!IMPORTANT]
 >
->You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
+>You need at least one of the following permissions on the **[!UICONTROL Journeys]** resource to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
+>
+>To create, reuse, and view simulated users, you also need permissions on the **[!UICONTROL Simulated Users]** resource: **Manage Simulated Users** to create and edit them, and **View Simulated Users** for read-only access.
 >
 >To use AI in **[!UICONTROL Simulation]** (**[!UICONTROL Quick simulation]**, generating simulated users with AI, **[!UICONTROL Generate event values]**), users require **[!UICONTROL Generate Content]** permission from the **[!UICONTROL AI Assistant]** capability. 
 
@@ -76,7 +78,9 @@ Continue with [Create and manage simulated users](#test-users), [Trigger your ev
 
 >[!IMPORTANT]
 >
->You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
+>You need at least one of the following permissions on the **[!UICONTROL Journeys]** resource to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
+>
+>To create, reuse, and view simulated users, you also need permissions on the **[!UICONTROL Simulated Users]** resource: **Manage Simulated Users** to create and edit them, and **View Simulated Users** for read-only access.
 >
 >To use AI in **[!UICONTROL Simulation]** (**[!UICONTROL Quick simulation]**, generating simulated users with AI, **[!UICONTROL Generate event values]**), users require **[!UICONTROL Generate Content]** permission from the **[!UICONTROL AI Assistant]** capability. 
 
@@ -207,13 +211,13 @@ If your journey includes one or more unitary events, you can trigger them while 
 
 ## View results {#viewing-results}
 
-The **[!UICONTROL Results]** tab allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect.
+The **[!UICONTROL Results]** tab allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect. When you select a single simulated user, the canvas highlights the exact path that user followed through the journey, so you can confirm they entered the branch you expected.
 
-Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. This view helps you scan the full simulation at a glance, including activities, outcomes, and errors, without picking a single simulated user first.
+Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. The canvas then shows every path covered by the run, which helps you compare coverage across profiles and scan the full simulation at a glance, including activities, outcomes, and errors, without picking a single simulated user first.
 
 ![Results tab with simulation summary, test user filter, and path coverage on the journey canvas](assets/simulate-6-2.png)
 
-For each activity, the log can show whether the simulated user entered or exited the step, and errors that occurred during the simulation.
+For each activity, the log can show whether the simulated user entered or exited the step, the timestamps and branch decisions for each step, and errors that occurred during the simulation.
 
 For **Wait** activities, the log includes two duration-related values:
 
