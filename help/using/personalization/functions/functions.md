@@ -15,6 +15,12 @@ subfeature_v2:
 ---
 # Get started with Helper functions{#functions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Helper functions let you transform, format, and apply conditions to data directly inside your personalized content, so you can build dynamic, tailored experiences for each customer.
+
+>[!ENDSHADEBOX]
+
 Helper functions enable you to transform and manipulate data within your personalized content. Use them to perform calculations, format data, apply conditions, and execute various operations to create dynamic, tailored experiences for your customers.
 
 These functions leverage the [!DNL Journey Optimizer] templating language. Learn about personalization syntax guidelines in [this page](../personalization-syntax.md).

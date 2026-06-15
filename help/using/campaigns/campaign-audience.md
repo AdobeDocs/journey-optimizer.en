@@ -38,7 +38,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Select the audience and identity type in the Audience tab so your campaign targets the right individuals.
+**On this page:** Select the audience and identity type in the Audience tab so your Action campaign targets the right individuals.
 
 >[!ENDSHADEBOX]
 

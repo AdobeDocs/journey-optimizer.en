@@ -23,7 +23,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Design and test your campaign content for the channel you selected so each message is ready before you activate the campaign.
+**On this page:** Design and test your Action campaign content for the channel you selected so each message is ready before you activate the campaign.
 
 >[!ENDSHADEBOX]
 
