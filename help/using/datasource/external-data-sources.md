@@ -39,6 +39,12 @@ topic_v2:
 ---
 # External data sources {#external-data-sources}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Connect to third-party REST APIs and configure authentication so you can pull external data into your journeys for conditions and personalization.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_custom"
 >title="External data sources"

@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Design a push notification {#design-push-notification}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design push notification content for iOS, Android, and web, including the title and body, on-click behavior, media, buttons, and advanced options.
+
+>[!ENDSHADEBOX]
+
 Once you have created a push notification, you can design its content for iOS, Android, and Web platforms. This page guides you through composing your message, configuring on-click behavior, adding media and buttons, and setting advanced options to create engaging push notifications that resonate with your audience.
 
 ## Title and Body {#push-title-body}

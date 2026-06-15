@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Work with journey events {#about-events}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Events are the real-time triggers that launch your journeys — compare the unitary, business, and audience qualification types to pick the right one for each use case.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_list"
 >title="Journey events"

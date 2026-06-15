@@ -35,6 +35,12 @@ subfeature_v2:
 ---
 # Mobile onboarding quick start workflow {#mobile-wf}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the mobile onboarding quick start workflow to rapidly configure the Adobe Experience Platform Mobile SDK, collect and validate mobile event data, and send push notifications.
+
+>[!ENDSHADEBOX]
+
 The new **mobile onboarding quick start workflow** is a new product feature to rapidly configure the Adobe Experience Platform Mobile SDK, start collecting and validating mobile event data, and send push notifications with [!DNL Journey Optimizer]. 
 
 This capability is accessible via the **[!DNL Adobe Experience Platform Data Collection]** home page to all customers as a public Beta.

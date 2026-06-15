@@ -32,6 +32,12 @@ level_v2:
 ---
 # Get started with direct mail {#create-direct}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how the direct mail channel works so you can generate the extraction files that third-party providers use to send physical mail to your customers.
+
+>[!ENDSHADEBOX]
+
 Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers.
 
 When creating a direct mail campaign or journey, Journey Optimizer automatically generates a file containing all the targeted profiles and selected data, such as postal addresses and profile attributes. This file is sent to the server of your choice so that it is accessible by your chosen third-party direct mail provider, who will handle the actual mailing process for you.

@@ -14,6 +14,12 @@ subfeature_v2:
 
 # Building retargeting queries {#retarget}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build feedback-based and tracking-based retargeting rules that follow up with recipients according to how they responded to a previous Orchestrated campaign.
+
+>[!ENDSHADEBOX]
+
 Retargeting allows you to follow up with recipients based on how they responded to a previous Orchestrated campaign. For example, you can send a second email to recipients who received but did not click the first one.
 
 **[!UICONTROL Orchestrated campaign]** provides two main schemas for this:

@@ -53,6 +53,12 @@ topic_v2:
 ---
 # Get started with channels configuration {#start-optimizer-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover the steps to configure your channels, subdomains, IP warmup, and business rules so you can start sending messages in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_channels_rate_controls"
 >title="Rate controls for channels"

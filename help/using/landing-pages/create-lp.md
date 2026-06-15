@@ -47,6 +47,12 @@ topic_v2:
 ---
 # Create and publish landing pages {#create-lp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure, test, and publish a landing page so customers who click through from a message reach a dedicated page where they can subscribe, share data, or opt out.
+
+>[!ENDSHADEBOX]
+
 To direct your customers to a defined web page that you want to display when they click a specific link, create a landing page in [!DNL Journey Optimizer], configure the primary page and any subpages, test it and publish it.
 
 The main steps to create landing pages are as follows:

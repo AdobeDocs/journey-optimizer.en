@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Configure a business event {#configure-a-business-event}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure a business event so you can trigger a journey for a set of profiles whenever a global occurrence happens, such as a product coming back in stock.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_business"
 >title="Business events"

@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Frequently asked questions {#faq-oc}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers to frequently asked questions about Orchestrated campaigns, including data models, channels, activities, publication, and consent.
+
+>[!ENDSHADEBOX]
+
 You will find below Frequently Asked Questions about Adobe Journey Optimizer Orchestrated campaigns.
 
 Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.

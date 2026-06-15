@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Configure and track your journey metrics {#success-metrics}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure and assign journey metrics to track performance against your KPIs and measure the effectiveness of your customer journeys in real time.
+
+>[!ENDSHADEBOX]
+
 Gain clear visibility into the effectiveness of your customer journeys with journey metrics. This feature enables you to track performance against defined KPIs, uncover insights into what's working, and identify areas for optimization. By measuring impact in real time, you can drive continuous improvement and make data-informed decisions that elevate customer engagement.
 
 ## Prerequisites {#prerequisites}

@@ -28,6 +28,12 @@ subfeature_v2:
 ---
 # Collections {#collections}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create collections that group your decision items with attribute-based rules so you can organize your offers and reuse them later in your selection strategies.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_collections"
 >title="Create collections"

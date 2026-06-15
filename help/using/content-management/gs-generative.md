@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Get started with AI Assistant {#gs-content-assistant}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access AI Assistant in Adobe Journey Optimizer, set up the required permissions, and understand the guardrails for generating text and image content.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_settings"
 >title="AI Assistant in Journey Optimizer"

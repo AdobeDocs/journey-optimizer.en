@@ -29,6 +29,12 @@ level_v2:
 ---
 # Get started with LINE {#get-started-line}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how LINE messaging works in Journey Optimizer so you can reach customers on their LINE app through journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 Use [!DNL Journey Optimizer] to send LINE messages to your customers on their LINE app. You can create, personalize, and preview messages in the LINE editor.
 
 LINE messages can be created and sent in a journey or in a campaign:

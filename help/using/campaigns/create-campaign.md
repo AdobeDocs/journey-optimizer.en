@@ -31,6 +31,12 @@ level_v2:
 ---
 # Work with Action campaigns {#gs-action-campaigns}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand what Action campaigns are and follow the key steps to create one so you can send simple scheduled batch communications, such as promotional offers, announcements, or policy updates.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_action"
 >title="Action campaigns"

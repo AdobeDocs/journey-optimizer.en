@@ -45,6 +45,12 @@ subfeature_v2:
 ---
 # Set up & manage customer managed keys {#cmk}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up and manage customer managed keys (CMK) so you can encrypt your Adobe Journey Optimizer data with your own keys and keep it protected in transit and at rest.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >[!DNL Customer Managed Keys] functionality is currently available only for organizations that have purchased the [Healthcare Shield or Privacy & Security Shield](https://experienceleague.adobe.com/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield.html){target="_blank"} add-on offering.

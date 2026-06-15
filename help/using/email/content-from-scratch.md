@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Design content from scratch with the Email Designer {#content-from-scratch}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design email content from scratch in the Adobe Journey Optimizer Email Designer by adding structures and content components, then personalizing and previewing your email.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_email"
 >title="Add Structure components"

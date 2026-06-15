@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Pass collections into custom action parameters {#passing-collection}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to pass simple and object collections into custom action parameters so they are dynamically populated at runtime.
+
+>[!ENDSHADEBOX]
+
 You can pass a collection in custom action parameters that is dynamically populated at runtime.
 
 Two types of collections are supported:

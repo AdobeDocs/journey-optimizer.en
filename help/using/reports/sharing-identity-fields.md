@@ -35,6 +35,12 @@ topic_v2:
 ---
 # journeyStep event identity fields {#sharing-identity-fields}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Reference the identity fields that journey step events use to describe the profile identity, including the profile identifier and its namespace.
+
+>[!ENDSHADEBOX]
+
 This field group is specific to journeyStepEvent: this event is in relation with journey, and doesn't have the identityMap, describing the profile identity, if any.
 
 For journeyStepEvent, we need also to add fields related to the identity:

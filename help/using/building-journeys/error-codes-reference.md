@@ -14,6 +14,12 @@ subfeature_v2: []
 ---
 # Error codes reference {#error-codes}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how Adobe Journey Optimizer error codes are structured, where to find them, and how to troubleshoot common errors across journeys, campaigns, and message configurations.
+
+>[!ENDSHADEBOX]
+
 [!DNL Adobe Journey Optimizer] uses standardized error codes to help you quickly identify and resolve issues across journeys, campaigns, and message configurations. Understanding these error codes can significantly reduce troubleshooting time and help you maintain optimal campaign performance.
 
 ## Understanding error code structure {#error-code-structure}

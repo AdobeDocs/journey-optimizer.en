@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Landing page live report {#lp-report-live}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Measure your landing page performance in real time over the last 24 hours with the Adobe Journey Optimizer live report, including visits, conversions, bounces, and visit sources.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_landing_page_live_report"
 >title="Landing page live report"

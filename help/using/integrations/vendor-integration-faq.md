@@ -15,6 +15,12 @@ feature_v2:
 ---
 # Frequently asked questions about Integrations {#vendor-integration-faq}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers to frequently asked questions about Integrations in Adobe Journey Optimizer, covering configuration, authentication, supported channels and formats, permissions, and troubleshooting.
+
+>[!ENDSHADEBOX]
+
 Below are frequently asked questions about **Integrations** in Adobe Journey Optimizer.
 
 

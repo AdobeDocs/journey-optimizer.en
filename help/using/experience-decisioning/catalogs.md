@@ -30,6 +30,12 @@ subfeature_v2:
 ---
 # Configure the item catalog {#catalog}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure the item catalog and edit its schema so you can organize your decision items and define the standard and custom attributes available when authoring them.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_custom_attributes"
 >title="Access and edit the catalog's schema"

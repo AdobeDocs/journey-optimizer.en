@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Get started with all time report {#channel-report-gs-cja}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with the all-time report experience that integrates Journey Optimizer with Customer Journey Analytics to view performance metrics for journeys, campaigns, and your overall environment.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="cja_connections_enable_cja"
 >title="Enable Customer Journey Analytics"

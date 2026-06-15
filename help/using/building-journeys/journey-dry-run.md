@@ -51,6 +51,12 @@ topic_v2:
 ---
 # Journey Dry run {#journey-dry-run}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to publish a journey in Dry run mode to test it with real production data without contacting real customers or updating profiles, so you can validate your design before going live.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dry_run"
 >title="Dry run mode"

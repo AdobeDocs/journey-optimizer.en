@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Get started for Marketers {#get-started-marketers}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Follow a getting-started path for marketers so you can build audiences, design content, and orchestrate journeys and campaigns that deliver personalized customer experiences in Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 As a **Marketer** or **Business Practitioner**, you design customer journeys to deliver personal, contextual experiences to customers. You create and manage all the various components of these personalized journeys, including email and push messages, offers, and decision components to intelligently personalize message content. Journey Optimizer provides a unified user experience where you can implement entire end-to-end use cases in one place. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) and the [Data Engineer](data-engineer.md) granted you access and prepared your environment.
 
 ## Get started with the essentials

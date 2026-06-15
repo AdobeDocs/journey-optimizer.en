@@ -20,6 +20,12 @@ subfeature_v2:
 ---
 # Load file {#load-file}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Load file data management activity to target an Orchestrated campaign audience from an external CSV or TXT file at execution time, without ingesting the file into Adobe Experience Platform.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_load_file"
 >title="Load file activity"

@@ -28,6 +28,12 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Follow this use case to build an Orchestrated campaign that re-engages recipients with personalized email reminders about the products they saved to their wishlist.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 While this example uses a **Wishlist** schema, the same method applies to any entity with a one-to-many relationship to **Recipients** such as **Purchases**, **Subscriptions**, or any custom schema in which each recipient may have multiple associated records.
 
 **Schemas needed for this use case:**

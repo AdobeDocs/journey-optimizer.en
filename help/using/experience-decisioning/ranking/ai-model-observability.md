@@ -20,6 +20,12 @@ subfeature_v2:
 ---
 # Monitor your AI models {#ai-model-observability}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Monitor the health, training status, and performance of your AI ranking models so you can confirm they are improving your business outcomes and troubleshoot when they are not.
+
+>[!ENDSHADEBOX]
+
 Whether you're a marketer, data scientist, or decisioning administrator, understanding how your personalized optimization models perform and behave helps you select the best offers for each customer using AI.
 
 To do this, you can monitor the health, training status, and evolution of your AI models directly in [!DNL Journey Optimizer].

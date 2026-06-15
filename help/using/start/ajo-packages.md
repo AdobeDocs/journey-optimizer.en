@@ -13,6 +13,12 @@ hide: true
 
 # What's available in my [!DNL Adobe Journey Optimizer] package? {#ajo-packages}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find out which Adobe Journey Optimizer capabilities your package unlocks, whether you use the current Campaigns and Journeys model or legacy Select, Prime, and Ultimate licensing, so you can confirm what is available and jump to each feature.
+
+>[!ENDSHADEBOX]
+
 [!DNL Adobe Journey Optimizer] capabilities vary based on your license agreement, enabled channels, and user permissions. Use this guide to understand which capabilities are typically available in your package, and navigate directly to the product documentation for each feature.
 
 Availability may also depend on channel configuration, implementation prerequisites, and purchased add-ons. Select the tab that matches your license model.

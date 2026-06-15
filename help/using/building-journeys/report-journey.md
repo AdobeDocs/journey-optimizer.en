@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Live report in the journey canvas {#report-journey}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use Live Reporting to monitor key journey metrics from the last 24 hours directly within the journey canvas.
+
+>[!ENDSHADEBOX]
+
 After your journey is published, on once the [Dry run mode](journey-dry-run.md) is activated, **Live Reporting** provides metrics from the last 24 hours, directly within the journey canvas.
 
 

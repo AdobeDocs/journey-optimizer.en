@@ -17,6 +17,12 @@ subfeature_v2:
 
 # Use variables in Orchestrated campaigns {#variables-oc}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set variables from a signal or from global definitions and use them to drive targeting, conditions, and Test activity logic in Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 ## How to set variables {#set}
 
 In an Orchestrated campaign, you can work with variables, i.e. values that drive targeting, **[!UICONTROL Test]** conditions, and other canvas logic. Those values can come from two places:

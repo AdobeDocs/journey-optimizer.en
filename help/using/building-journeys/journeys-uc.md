@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Send multi-channel messages {#send-multi-channel-messages}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build a multi-channel journey that combines a Read Audience, events, reaction events, and email and push messages with follow-up logic.
+
+>[!ENDSHADEBOX]
+
 This section presents a use case that combines a Read Audience, an event, reaction events and email/push messages.
 
 ![Simple journey flow with Read Audience, Wait, and Email activities](assets/jo-uc1.png)

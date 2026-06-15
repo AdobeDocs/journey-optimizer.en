@@ -63,6 +63,12 @@ topic_v2:
 ---
 # Understanding Journey Optimizer {#understanding-ajo}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** See how Adobe Journey Optimizer works with Adobe Experience Platform so you can understand the data-to-experience cycle, functional areas, and architecture behind personalized journeys.
+
+>[!ENDSHADEBOX]
+
 This page explains how Adobe Experience Platform and Journey Optimizer work together, covering the continuous data-to-experience cycle, key functional areas, architecture details, and integration points.
 
 Adobe Journey Optimizer and Adobe Experience Platform work together to enable data-driven personalization at scale. This page explains how these systems operate and how their key functional areas combine to deliver exceptional customer experiences. [Learn about key capabilities](get-started.md) | [Explore key terminology](terminology.md)

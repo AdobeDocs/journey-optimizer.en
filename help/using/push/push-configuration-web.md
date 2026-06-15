@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Configure web push notification channel {#push-notification-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure the web push notification channel in Adobe Journey Optimizer, including permissions, datasets, push credentials, channel configuration, and testing your setup.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to create your journeys and send messages to targeted audience. Before beginning to send Web push notifications with [!DNL Journey Optimizer], you need to ensure configurations and integrations are in place in Adobe Experience Platform. To understand the Push Notifications data flow in [!DNL Adobe Journey Optimizer] please refer to [this page](push-gs.md). 
 
 >[!AVAILABILITY]

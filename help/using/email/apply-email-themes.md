@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Apply themes to your email content {#apply-email-themes}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, apply, and reuse themes in the Email Designer to add brand-consistent styling on top of your email content and fragments.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_use_theme"
 >title="Apply a theme to your email"

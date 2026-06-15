@@ -15,6 +15,12 @@ subfeature_v2:
 ---
 # Generate images with AI Assistant {#generative-image}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use AI Assistant in Adobe Journey Optimizer to generate, refine, and select on-brand images for your email, web, landing page, and push notification content.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).

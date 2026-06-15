@@ -91,12 +91,7 @@ The following capability is coming to Decisioning in this release.
 </tbody>
 </table>
 
-* **Dynamic offer attributes** - Offer attributes in Decisioning can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items.
-
-* **Placement-level frequency capping in Decisioning** - Frequency capping rules in Decisioning can now be scoped to individual placements, giving you finer control over how often an offer is shown in a given surface. Two modes are available:
-
-  * Placement-specific capping: define a cap that applies only when the offer is displayed in a selected placement.
-  * Per-placement capping: apply a cap independently across every placement where the offer appears, so each placement maintains its own capping counter.
+* **Dynamic item attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items.
 
 ### Email {#june-26-email}
 
@@ -111,7 +106,9 @@ The following capabilities and improvements are coming to the email channel in t
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now includes content quality scoring directly in the Email Designer that analyzes your email across three dimensions before launch: spelling, grammar, and punctuation; readability and tone, including flags for long sentences, passive voice, and jargon; and subject line and CTA effectiveness, scored for clarity, urgency, and structure. Each check surfaces actionable suggestions, allowing teams to catch and resolve issues without leaving the authoring interface.</p>
+<p>Journey Optimizer now includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.</p>
+<p>Checks cover unsupported elements such as <code>&lt;script&gt;</code> and <code>&lt;base&gt;</code> tags, empty divs that can break layout in Microsoft Outlook, HTML meta refresh tags, and CSS or HTML size thresholds that trigger rendering failures in Gmail.</p>
+<p>Results are surfaced as errors, warnings, or informational notices directly in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the editor.</p>
 </td>
 </tr>
 </tbody>
@@ -126,7 +123,8 @@ The following capabilities and improvements are coming to the email channel in t
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders. This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
+<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
+<p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
 </td>
 </tr>
 </tbody>
@@ -141,7 +139,8 @@ The following capabilities and improvements are coming to the email channel in t
 <tbody>
 <tr>
 <td>
-<p>You can now add rich text to customizable fragments that are used in your emails content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
+<p>You can now add rich text to customizable fragments that are used in your emails content.</p>
+<p>For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
 </td>
 </tr>
 </tbody>

@@ -33,6 +33,12 @@ level_v2:
 ---
 # Schedule the Action campaign {#action-campaign-schedule}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Schedule your Action campaign by setting start and end dates, recipient timezone delivery, execution frequency, and rate control so your messages reach the right audience at the right time without overwhelming downstream systems.
+
+>[!ENDSHADEBOX]
+
 Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
 
 ## Set a campaign start date

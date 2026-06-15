@@ -12,6 +12,12 @@ subfeature_v2:
 ---
 # Select test profiles {#select-test-profiles}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to select test profiles by identity namespace in Adobe Journey Optimizer so you can preview and test your content against different profile data variants.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_preview_test_profiles"
 >title="Use test profiles to check your content"

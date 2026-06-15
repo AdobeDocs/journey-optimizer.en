@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Generate text with AI Assistant {#generative-text}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to generate, refine, and finalize on-brand text content with AI Assistant for email, web, landing page, push notification, and SMS channels in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).

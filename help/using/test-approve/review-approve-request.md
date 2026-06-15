@@ -25,6 +25,12 @@ subfeature_v2:
 ---
 # Review & approve a request {#approve-requests}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** As a designated approver, review a submitted journey or campaign and either approve and publish it or send change requests back to the creator before it goes live.
+
+>[!ENDSHADEBOX]
+
 If an approval policy applies to a journey or campaign, it needs to be submitted for approval in order to be published. To do this, the journey/campaign creator sends a request to the approver(s) defined in the approval policy and the journey/campaign gets an **[!UICONTROL In review]** status.
 
 If you have been selected as approver, you are notified through an email and a Journey Optimizer alert, which is accessible when clicking the bell icon on top right of the screen, in the **[!UICONTROL Requests]** tab.

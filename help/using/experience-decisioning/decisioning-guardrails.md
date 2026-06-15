@@ -29,6 +29,12 @@ subfeature_v2:
 ---
 # Decisioning guardrails & limitations {#decisioning-guardrails}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the guardrails and limits that apply to Decisioning across decision requests, items, policies, eligibility rules, and ranking formulas, so you can design decisioning configurations that stay within supported thresholds.
+
+>[!ENDSHADEBOX]
+
 To ensure optimal use of Decisioning, keep the following guardrails and limitations in mind.
 
 The complete list of [!DNL Journey Optimizer] guardrails & limitations is available in [this section](../start/guardrails.md).

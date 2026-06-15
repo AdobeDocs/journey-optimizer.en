@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Create a WhatsApp message {#create-whatsapp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Add a WhatsApp action to a journey or campaign and build its content from an approved Meta template, so you can deliver personalized, well-tested messages to your audience.
+
+>[!ENDSHADEBOX]
+
 With Adobe Journey Optimizer, you can design and send engaging messages on WhatsApp. Simply add a WhatsApp action to your journey or campaign and craft your message content as detailed below. Adobe Journey Optimizer also lets you test your WhatsApp messages before sending them, ensuring perfect rendering, accurate personalization, and proper configuration of all settings.
 
 Note that only Outbound messages elements are supported in Journey Optimizer. 

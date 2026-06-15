@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Get started with the Journey Optimizer experimentation accelerator {#content-experiment}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how the Adobe Journey Optimizer Experimentation Accelerator centralizes experiments from Adobe Target and Adobe Journey Optimizer to run adaptive tests, surface AI-driven insights, and track key performance metrics.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >**Journey Optimizer Experimentation Accelerator** requires a paid license for customers and integrates seamlessly with either Adobe Target or Adobe Journey Optimizer.
