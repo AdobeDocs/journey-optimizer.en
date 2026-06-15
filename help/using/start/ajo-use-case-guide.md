@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Find the right Journey Optimizer capability for your goal
+title: Which Journey Optimizer capability for this job?
 description: A goal-first decision guide that maps common practitioner goals to the right Adobe Journey Optimizer capability, with hands-on tutorials, so you can find the right tool for what you want to accomplish and start quickly.
 feature: Get Started
 topic: Content Management
@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: journey optimizer, use case, decision guide, which capability, get started, practitioner goals, tutorials
 ---
-# Find the right Journey Optimizer capability for your goal {#ajo-use-case-guide}
+# Which Journey Optimizer capability for this job? {#ajo-use-case-guide}
 
 >[!BEGINSHADEBOX]
 
