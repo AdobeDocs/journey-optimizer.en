@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Create & manage your brands {#brands}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, configure, publish, and manage brand guidelines, including setting a default brand, so AI Assistant can generate content aligned with your brand's identity in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_brand_overview"
 >title="Get started with brands"

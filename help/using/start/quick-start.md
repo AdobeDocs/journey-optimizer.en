@@ -66,6 +66,12 @@ topic_v2:
 ---
 # Roles and Responsibilities
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the key roles in an Adobe Journey Optimizer implementation and their responsibilities so you can find the right starting point and quick-start tasks for your team.
+
+>[!ENDSHADEBOX]
+
 Adobe Journey Optimizer enables brands to deliver connected, contextual, and personalized experiences throughout the customer journey. Built with an end-to-end focus on scale, speed, and flexibility, Journey Optimizer combines three main value drivers in a unified application:
 
 * **Real-time customer insights and engagement** powered by Adobe's real-time customer profile

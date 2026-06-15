@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Get started with [!DNL Adobe Journey Optimizer] channels {#get-started-email}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Adobe Journey Optimizer's native channels let you reach customers across outbound delivery and inbound experiences — compare email, SMS, push, Live activities, direct mail, WhatsApp, LINE, in-app, web, code-based, and content cards to see where each is supported in journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 In today's dynamic marketing landscape, effectively reaching your audience across various platforms is essential for building lasting relationships and driving engagement. This section provides a comprehensive overview of the communication channels available within [!DNL Adobe Journey Optimizer], helping you to understand how to utilize each channel effectively in your marketing strategies.
 
 Adobe Journey Optimizer offers a variety of native channels to engage with your audience effectively. You can combine outbound message delivery and inbound experiences.

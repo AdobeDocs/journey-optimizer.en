@@ -48,6 +48,12 @@ topic_v2:
 ---
 # IP warmup deliverability guide {#ip-warmup-deliverability-guide}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand deliverability fundamentals, reputation building, pre-flight checks, sample warmup calendars, and monitoring metrics to run a successful IP warmup in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 When launching email campaigns with new IP addresses or domains in Adobe Journey Optimizer, understanding deliverability fundamentals is crucial for building a strong sender reputation. This guide covers the key concepts, preparation steps, and best practices to help you transition from zero reputation to successful inbox placement.
 
 ➡️ Learn about deliverability fundamentals, reputation building, and best practices for IP warmup in the video from this [Adobe blog post](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/adobe-journey-optimizer-deliverability-guide-from-zero/ba-p/761950){target="_blank"}.

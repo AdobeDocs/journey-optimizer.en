@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Code-based implementation methods samples {#implementation-samples}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore client-side, server-side, and hybrid implementation samples for fetching, displaying, and tracking code-based experience content in your application.
+
+>[!ENDSHADEBOX]
+
 Code-based experience supports any type of customer implementation. On this page you can find samples for each implementation method:
 
 * [Client-side](#client-side-implementation)

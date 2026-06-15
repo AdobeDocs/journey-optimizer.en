@@ -14,6 +14,12 @@ subfeature_v2:
 ---
 # Create and manage generative models {#generative-models}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add, configure, and manage the built-in, partner, and custom Firefly generative models used for AI image generation in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Expand your AI image creation capabilities with built-in models, custom Firefly models, and third-party image generation providers to meet your specific needs and improve brand alignment.
 
 Choose the right model for your needs:

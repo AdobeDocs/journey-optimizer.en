@@ -35,6 +35,12 @@ subfeature_v2:
 ---
 # Privacy requests {#track-changes}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Use the Adobe Experience Platform Privacy Service to submit and manage data access and deletion requests for Adobe Journey Optimizer, so you can fulfill data subject rights and automate compliance with privacy regulations.
+
+>[!ENDSHADEBOX]
+
 Adobe Experience Platform **Privacy Service** provides a RESTful API and user interface to help you manage customer data requests. With Privacy Service, you can submit requests to access and delete personal customer data from Adobe Experience Cloud applications, facilitating automated compliance with legal and organizational privacy regulations.
 
 Privacy requests can be created and managed from the **[!UICONTROL Requests]** menu.

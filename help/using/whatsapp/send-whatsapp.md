@@ -31,6 +31,12 @@ level_v2:
 ---
 # Check and send your WhatsApp messages {#send-whatsapp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Preview, validate, and send your WhatsApp message, then analyze the interaction data it returns, so you can confirm your message is correct before delivery and measure how recipients engage with it.
+
+>[!ENDSHADEBOX]
+
 ## Preview your WhatsApp message {#preview-whatsapp}
 
 Once your message content has been defined, you can preview its content using either simulation method:

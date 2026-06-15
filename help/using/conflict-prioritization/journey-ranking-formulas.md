@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Use formulas to rank journeys {#journey-ranking-formulas}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create ranking formulas based on journey attributes, profile attributes, or AI scores so the best journey is selected for each profile when journey caps apply.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This feature is currently in Limited Availability. Contact your Adobe representative to gain access.

@@ -42,6 +42,12 @@ topic_v2:
 ---
 # AI Assistant use cases {#generative-uc}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore practical use cases for AI Assistant in Adobe Journey Optimizer, from reusing existing content and refining text variations to generating images, applying style references, and working across supported languages.
+
+>[!ENDSHADEBOX]
+
 >[!NOTE]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).

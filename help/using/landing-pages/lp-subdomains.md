@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Configure landing page subdomains {#lp-subdomains}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up the subdomains that define your landing page URLs, either reusing a domain already delegated to Adobe or configuring a new one.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_lp_header"
 >title="Delegate a landing page subdomain"

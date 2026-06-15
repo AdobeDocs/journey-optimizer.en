@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Customizable fragments {#customizable-fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to make specific fields in visual and expression fragments editable so users can customize them when adding the fragment to a campaign or journey, without breaking inheritance from the original fragment.
+
+>[!ENDSHADEBOX]
+
 When fragments are used in a campaign or journey action, they are locked by default due to inheritance. This means any changes made to a fragment are automatically propagated to all campaigns and journeys where the fragment is used.
 
 With **customizable fragments**, specific fields within a fragment can be defined as editable when the fragment is added to a campaign or journey action. For example, suppose you have a fragment with a banner, some text, and a button. You can designate certain fields, such as the image or button target URL, as editable. This allows users to modify these elements when they incorporate the fragment into their campaign or journey, providing a tailored experience without affecting the original fragment.

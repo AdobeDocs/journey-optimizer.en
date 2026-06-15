@@ -33,6 +33,12 @@ subfeature_v2:
 ---
 # Personalization use case: cart abandonment email {#personalization-use-case-helper-functions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Follow a cart abandonment use case that personalizes an email body using the upperCase, each, and if helper functions in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 In this example, you will personalize the body of an email message. This message targets customers who have left items in their shopping cart, but have not completed their purchase.
 
 You will use these types of helper functions:

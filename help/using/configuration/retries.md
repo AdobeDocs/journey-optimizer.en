@@ -32,6 +32,12 @@ subfeature_v2:
 ---
 # Retries {#retries}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how Adobe Journey Optimizer retries soft-bounced email messages, how the error threshold and retry time period work, and how to adjust them before an address is added to the suppression list.
+
+>[!ENDSHADEBOX]
+
 When an email message fails due to a temporary **Soft bounce** error for a given address, several retries are performed. Each error increments an error counter. When this counter reaches the limit threshold, the email address is added to the suppression list.
 
 >[!NOTE]

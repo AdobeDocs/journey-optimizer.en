@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Configure SMS subdomains {#sms-mms-subdomains}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up SMS subdomains in Adobe Journey Optimizer to shorten URLs in your messages, either by using an existing delegated subdomain or configuring a new one with a DNS record.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_sms_header"
 >title="Delegate a Mobile message subdomain"

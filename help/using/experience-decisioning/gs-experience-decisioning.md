@@ -35,6 +35,12 @@ subfeature_v2:
 ---
 # Get started with Decisioning {#get-started-experience-decisioning}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand what Decisioning is and follow the key setup steps so you can deliver the most relevant decision items to each individual across your channels.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_email_enable_experience_decisioning"
 >title="What is decisioning?"

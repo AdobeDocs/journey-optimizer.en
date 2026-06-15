@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Experimentation campaign report {#campaign-global-report-cja-experimentation}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the Experimentation campaign report in Adobe Journey Optimizer to compare variant performance using metrics such as lift, confidence, and conversion rate for your chosen success metric.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment_click"
 >title="Success metric"

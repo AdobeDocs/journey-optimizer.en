@@ -27,6 +27,12 @@ subfeature_v2:
 ---
 # Leverage fragments in decision policies {#fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Leverage Journey Optimizer content fragments and AEM Content Fragments within decision policies, so you can personalize and optimize the content decisioning delivers across channels.
+
+>[!ENDSHADEBOX]
+
 Decision items support two types of fragment content that can be leveraged when authoring messages within a decision policy:
 
 * **Journey Optimizer content fragments** — reusable expression fragments created in Journey Optimizer and added to the decision item's **[!UICONTROL Fragments]** section. [Learn more about AJO content fragments](../content-management/fragments.md)
@@ -163,6 +169,8 @@ Before leveraging AEM Content Fragments in a decision policy, make sure you have
 
 In the personalization editor, all AEM Content Fragments associated with the decision items selected by the policy are available. One folder appears per fragment key name.
 
+➡️ [Discover how to use AEM Content Fragments with Journey Optimizer Decisioning in video](#video)
+
 In this example, the decision policy includes two decision items that have AEM fragments tied to them through their reference name.
 
 ![](assets/aem-fragment-select.png)
@@ -176,3 +184,9 @@ In this example, the decision policy includes two decision items that have AEM f
     ![](assets/aem-fragment-attribute.png)
 
 1. Before activating your campaign or journey, use either simulation method to preview how AEM Content Fragment field values will render: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with a specific test profile. [Learn more on simulating content](../content-management/preview-test.md)
+
+## How-to video {#video}
+
+Learn how to use Adobe Experience Manager Content Fragments with Journey Optimizer Decisioning to personalize and optimize content.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3492215/?learn=on&enablevpops)

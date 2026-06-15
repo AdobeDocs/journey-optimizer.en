@@ -79,6 +79,26 @@ topic_v2:
 <table>
 <thead>
 <tr>
+<th><strong>Journey path optimization - Targeting (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The <strong>Optimize activity</strong> now supports <strong>Targeting rules</strong> which enable you to define specific criteria that customers must meet to qualify for a particular journey path, based on audience segments or profile attributes.</p>
+<p>Unlike experimentation, where customers are assigned to paths randomly, targeting uses deterministic logic to ensure that the appropriate audience or customer profile is routed to the intended path.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p><img src="assets/do-not-localize/optimize.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/path-targeting.md">detailed documentation</a>.</p>
+<p>Availability date: June 8, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey Fragments (General Availability)</strong><br/></th>
 </tr>
 </thead>
@@ -155,7 +175,7 @@ topic_v2:
 </tbody>
 </table>
  
-* **AJO Message Feedback Event Dataset moving to batch ingestion** - The **AJO Message Feedback Event Dataset** is moving from streaming ingestion to batch ingestion. As a result, expect a data latency of up to 2 hours for this dataset. If you have built reports in Customer Journey Analytics or run queries using this dataset, account for this increased latency going forward. [Read more](../data/get-started-datasets.md)
+* [!BADGE Important]{type=Informative} **AJO Message Feedback Event Dataset moving to batch ingestion** - The **AJO Message Feedback Event Dataset** is moving from streaming ingestion to batch ingestion. As a result, expect a data latency of up to 2 hours for this dataset. If you have built reports in Customer Journey Analytics or run queries using this dataset, account for this increased latency going forward. [Read more](../data/datasets-query-examples.md#message-feedback-event-dataset)
 
   Availability date: June 10, 2026
 
@@ -181,6 +201,10 @@ topic_v2:
 * **New permissions for key registry** - Two new permissions are now required to access and manage the keys needed for URL parameter encryption: **Manage Key Registry** and **View Key Registry**. [Read more](../administration/high-low-permissions.md#administration-permissions)
 
   Availability date: June 1, 2026
+
+* **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required. [Read more](../building-journeys/supplemental-identifier.md)
+
+  Availability date: June 11, 2026
 
 <!--
 +++ Coming soon — **Information below is subject to change.**
@@ -272,12 +296,6 @@ The following capabilities and improvements have been added to journeys in this 
 </tr>
 </tbody>
 </table>
--->
-
-<!--
-* **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
-
-  Availability date: Early June, 2026
 -->
 
 ### Orchestrated campaigns {#may-26-oc}

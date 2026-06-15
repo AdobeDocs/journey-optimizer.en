@@ -33,6 +33,12 @@ subfeature_v2:
 ---
 # Auto-optimization models {#auto-optimization-model}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how the auto-optimization reinforcement learning model explores and ranks offers to maximize click-through rate so you can decide when to use it for single-channel optimization.
+
+>[!ENDSHADEBOX]
+
 [!DNL Adobe Journey Optimizer]'s Auto-optimization model is a reinforcement learning model which maximizes offer click-through rate (CTR) by exploring all offers (or content), then ranking items based on predicted CTR, after eligibility rules and frequency caps are applied.
 
 ## Use cases and benefits {#use-cases-benefits}

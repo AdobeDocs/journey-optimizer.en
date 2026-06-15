@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Manage the suppression list {#manage-suppression-list}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, filter, add, remove, and download entries in the Adobe Journey Optimizer suppression list to control which email addresses and domains are excluded from your sending.
+
+>[!ENDSHADEBOX]
+
 With [!DNL Journey Optimizer], you can monitor all the email addresses that are automatically excluded from sending in a journey or a campaign, such as hard bounces, soft bounces, and spam complaints.
 
 Such email addresses are automatically collected into the Journey Optimizer **suppression list**. A suppression list consists of addresses and domains to exclude from your audiences. It gathers email addresses and domains that are suppressed across all mailings in a single client environment, meaning specific to an organization ID associated with a sandbox ID.

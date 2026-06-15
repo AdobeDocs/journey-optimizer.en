@@ -23,6 +23,12 @@ subfeature_v2:
 ---
 # Set up a manual relational schema {#manual-schema}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to manually create a relational schema in the user interface, add attributes, link schemas, and create and enable a dataset for Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 Relational schemas can be created directly through the user interface, enabling detailed configuration of attributes, primary keys, versioning fields, and relationships.  
 
 The following example manually defines the **Loyalty Memberships** schema to illustrate the required structure for Orchestrated campaigns.

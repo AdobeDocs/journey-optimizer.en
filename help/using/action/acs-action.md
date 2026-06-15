@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Integrate with Adobe Campaign Standard {#using_adobe_campaign_standard}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Connect Journey Optimizer to Adobe Campaign Standard so your journeys can send emails, push notifications, and SMS through its transactional messaging capabilities.
+
+>[!ENDSHADEBOX]
+
 If you have Adobe Campaign Standard, a built-in action is available to allow the connection to Adobe Campaign Standard. You can send emails, push notifications and SMS using the Adobe Campaign Standard's Transactional Messaging capabilities.
 
 The Campaign Standard transactional message and its associated event must be published in order to be used in Journey Optimizer. If the event is published but the message is not, it will not be visible in the Journey Optimizer interface. If the message is published but its associated event is not, it will be visible in the Journey Optimizer interface but it will not be usable.

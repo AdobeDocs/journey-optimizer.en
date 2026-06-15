@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Get started with custom actions {#about_actions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how actions and custom actions let you deliver personalized experiences and connect third-party systems through REST API calls, so you can extend journeys beyond built-in messaging.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_list"
 >title="Custom actions"

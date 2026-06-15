@@ -31,7 +31,13 @@ topic_v2:
     internal-label: Privacy
 ---
 # Opt-out management for Mobile messages {#sms-opt-out}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how Adobe Journey Optimizer manages opt-out for SMS, MMS, and RCS messages through native inbound keywords, blocklists, short codes, and alphanumeric sender IDs.
+
+>[!ENDSHADEBOX]
+
 In accordance with the industry standards and regulations, all SMS marketing messages must contain a way for the recipients to easily unsubscribe. [Learn more about privacy & opt-out management](../privacy/opt-out.md)
 
 >[!IMPORTANT]

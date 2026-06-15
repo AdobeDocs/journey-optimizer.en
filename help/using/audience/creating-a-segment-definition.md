@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Build segment definitions {#build-segments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build segment definitions from attributes and events to create audiences and choose the streaming, batch, or edge evaluation method for targeting in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_ao_create_rule"
 >title="Create a rule"

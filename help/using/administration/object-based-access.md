@@ -16,6 +16,12 @@ subfeature_v2: []
 ---
 # Object level access control {#object-level-access}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Use object level access control to restrict individual objects such as journeys, campaigns, and offers with access labels, so you can keep sensitive content and personal data limited to authorized users.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_olac_manage_access"
 >title="Access management labels"

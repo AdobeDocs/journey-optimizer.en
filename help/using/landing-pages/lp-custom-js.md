@@ -31,6 +31,12 @@ role_v2:
 ---
 # Use custom JavaScript in a landing page {#lp-custom-js}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Extend your landing pages with custom JavaScript to validate input, run custom form submissions, fire analytics events, or build dynamic behaviors beyond the standard editor.
+
+>[!ENDSHADEBOX]
+
 You can define your landing page content using custom JavaScript. For example, if you need to perform advanced styling or if you want to add custom behaviors to your landing pages, you can build your own controls and execute them in [!DNL Journey Optimizer].
 
 ## Insert JavaScript code into a landing page

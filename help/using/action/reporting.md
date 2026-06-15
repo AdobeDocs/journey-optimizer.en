@@ -30,6 +30,12 @@ topic_v2:
 ---
 # Monitor your custom actions {#reporting}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Monitor the reliability and performance of the API calls your journeys make to third-party systems so you can quickly spot integration issues, latency, and throttling limits.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_custom_actions_monitor"
 >title="Monitor your custom actions"

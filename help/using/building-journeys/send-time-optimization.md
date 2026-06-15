@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Send-Time Optimization{#send-time-optimization}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to enable Send-Time Optimization so Adobe's AI predicts the best time to deliver email and push messages based on each customer's historical open and click behavior.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_disabled"
 >title="About Sent time optimization"
