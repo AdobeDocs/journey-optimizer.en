@@ -1,28 +1,28 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Onboarding hub - playbooks, use cases & videos
-description: A curated onboarding hub for Adobe Journey Optimizer that brings together step-by-step playbooks, real-world use cases, and video content so new users can ramp up quickly and deliver their first customer experience.
+title: Journey Optimizer onboarding hub
+description: A curated onboarding hub for Adobe Journey Optimizer that brings together step-by-step instructions, real-world use cases, and video content so new users can ramp up quickly and deliver their first customer experience.
 feature: Get Started
 topic: Content Management
 role: User
 level: Beginner
 hide: true
-keywords: journey optimizer, onboarding, playbooks, use cases, videos, tutorials, get started, ramp up, first journey
+keywords: journey optimizer, onboarding, onboarding hub, use cases, videos, tutorials, get started, ramp up, first journey
 ---
-# Onboarding hub: playbooks, use cases & videos {#onboarding-hub}
+# Journey Optimizer onboarding hub {#onboarding-hub}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Ramp up on Adobe Journey Optimizer fast — watch a short orientation, follow an outcome-oriented playbook to ship your first experience, browse real-world use cases, and dive into curated video content.
+**On this page:** Ramp up on Adobe Journey Optimizer fast — watch a short orientation, follow step-by-step instructions to ship your first experience, browse real-world use cases, and dive into curated video content.
 
 >[!ENDSHADEBOX]
 
-New to [!DNL Adobe Journey Optimizer]? This hub gathers the resources that help you go from zero to your first live customer experience: **playbooks** (guided, step-by-step recipes for common goals), **use cases** (real-world scenarios that show what is possible), and **video content** (tutorials, walkthroughs, and hands-on practice).
+New to [!DNL Adobe Journey Optimizer]? This hub gathers the resources that help you go from zero to your first live customer experience — with step-by-step instructions for common goals, real-world use cases that show what is possible, and curated video content (tutorials, walkthroughs, and hands-on practice).
 
 >[!TIP]
 >
->Not sure which capability fits your goal? Start with the goal-first [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) guide, then come back here for a step-by-step playbook.
+>Not sure which capability fits your goal? Start with the goal-first [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) guide, then come back here for step-by-step instructions.
 
 ## Start here: watch & learn {#start-here}
 
@@ -37,11 +37,11 @@ Then build hands-on confidence with these learning resources:
 * [Training sandbox](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/configure-a-training-sandbox/introduction-and-prerequisites){target="_blank"} — A safe environment with sample data to practice in.
 * [Hands-on challenges](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites){target="_blank"} — Apply what you learn with guided exercises.
 
-## Onboarding playbooks {#playbooks}
+## Build your first experience {#build-first}
 
-Each playbook is a short, outcome-oriented recipe: what you will build, who it is for, and the steps to get there. Pick the one that matches your first goal and follow the links to the detailed documentation.
+Each one below is a short, outcome-oriented set of steps: what you will build, who it is for, and how to get there. Pick the goal that matches your first project and follow the links to the detailed documentation.
 
-### Playbook 1 — Welcome new customers {#playbook-welcome}
+### Welcome new customers {#build-welcome}
 
 **You will build:** An automated welcome series that greets every new subscriber and nudges inactive ones.
 **Best for:** Marketers · **Capability:** Event-triggered journey
@@ -53,7 +53,7 @@ Each playbook is a short, outcome-oriented recipe: what you will build, who it i
 
 ➡️ [Start with journeys](../building-journeys/journey-gs.md)
 
-### Playbook 2 — Recover abandoned carts {#playbook-cart}
+### Recover abandoned carts {#build-cart}
 
 **You will build:** A real-time recovery flow that reminds customers of items left behind.
 **Best for:** Marketers · **Capability:** Event-triggered journey
@@ -65,7 +65,7 @@ Each playbook is a short, outcome-oriented recipe: what you will build, who it i
 
 ➡️ [Start with journeys](../building-journeys/journey-gs.md)
 
-### Playbook 3 — Send transactional messages {#playbook-transactional}
+### Send transactional messages {#build-transactional}
 
 **You will build:** On-demand order, shipping, or appointment confirmations triggered by an external system.
 **Best for:** Marketers & Developers · **Capability:** API-triggered campaign
@@ -76,7 +76,7 @@ Each playbook is a short, outcome-oriented recipe: what you will build, who it i
 
 ➡️ [Work with API-triggered campaigns](../campaigns/api-triggered-campaigns.md)
 
-### Playbook 4 — Launch a campaign with A/B testing {#playbook-campaign}
+### Launch a campaign with A/B testing {#build-campaign}
 
 **You will build:** A scheduled promotion that automatically picks the best-performing content.
 **Best for:** Marketers · **Capability:** Scheduled campaign + content experimentation
@@ -87,7 +87,7 @@ Each playbook is a short, outcome-oriented recipe: what you will build, who it i
 
 ➡️ [Get started with campaigns](../campaigns/get-started-with-campaigns.md)
 
-### Playbook 5 — Personalize offers per customer {#playbook-offers}
+### Personalize offers per customer {#build-offers}
 
 **You will build:** A decision that shows the single best offer to each customer.
 **Best for:** Marketers · **Capability:** Decisioning
@@ -100,7 +100,7 @@ Each playbook is a short, outcome-oriented recipe: what you will build, who it i
 
 ## Use cases by goal {#use-cases}
 
-The playbooks above cover the most common starting points, but Journey Optimizer supports many more scenarios — from proactive outage notifications and customer re-engagement to real-time, location-aware messaging. Each scenario combines one or more capabilities working together.
+The examples above cover the most common starting points, but Journey Optimizer supports many more scenarios — from proactive outage notifications and customer re-engagement to real-time, location-aware messaging. Each scenario combines one or more capabilities working together.
 
 To find the exact capability for *your* goal, use the complete, goal-organized index in [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md). For end-to-end, worked examples, see the [Journey use cases library](../building-journeys/jo-use-cases.md).
 
