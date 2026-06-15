@@ -248,27 +248,7 @@ The optimization is email-client safe:
 >
 >The reduction in email size depends on the original HTML structure of your email. If the content is already compact or the email payload is very large, the reduction may be minimal and may not fully prevent clipping in all cases.
 
-### Test HTML size optimization {#optimize-html-proof}
-
-You can evaluate the impact of HTML size optimization before publishing when sending proofs. Follow the steps below.
-
-1. In the email editor, click **[!UICONTROL Simulate content]**. If the rendered email size exceeds 100 KB, a message displays to warn you that this may cause truncation in some email clients.
-
-    ![](assets/email-optimize-size-simulate-warning.png)
-
-1. To test the optimized version, click the **[!UICONTROL Send proof]** button and select the **[!UICONTROL Optimize HTML size]** option. This will send a proof with the reduced HTML size to your test recipients.
-
-    ![](assets/email-optimize-size-proof-option.png)
-
-    >[!NOTE]
-    >
-    >This setting is independent from the email editor — the proof reflects whatever you select in the proof, regardless of whether the option is enabled or disabled in the email itself.
-
-1. Select the test recipients and click the **[!UICONTROL Send proof]** button. Learn more about sending proofs in [this section](../content-management/proofs.md).
-1. Once sent, back in the **[!UICONTROL Simulate]** screen, click the **[!UICONTROL View Proof]** button.
-1. Review the optimization details displayed there, including the original HTML size, the optimized HTML size, and the size reduction percentage.
-
-Use this information to validate the optimized output and confirm the email stays within the recommended 100 KB threshold before publishing.
+You can test the impact of HTML size optimization before publishing when sending proofs. [Learn more](#optimize-html-proof)
 
 ### Optimize HTML size in multilingual emails {#optimize-html-multilingual}
 
@@ -300,6 +280,28 @@ When your email is ready, complete the configuration of your [journey](../buildi
 >[!NOTE]
 >
 >To track the behavior of your recipients through email openings and/or interactions, make sure that the dedicated options in the **[!UICONTROL Tracking]** section are enabled in the journey's [email activity](../building-journeys/journey-action.md) or in the email [campaign](../campaigns/create-campaign.md).<!--to move?-->
+
+### Test HTML size optimization {#optimize-html-proof}
+
+If you have enabled the [HTML size optimization](#optimize-html-size) option, you can evaluate the impact of it before publishing when sending proofs. Follow the steps below.
+
+1. In the email editor, click **[!UICONTROL Simulate content]**. If the rendered email size exceeds 100 KB, a message displays to warn you that this may cause truncation in some email clients.
+
+    ![](assets/email-optimize-size-simulate-warning.png)
+
+1. To test the optimized version, click the **[!UICONTROL Send proof]** button and select the **[!UICONTROL Optimize HTML size]** option. This will send a proof with the reduced HTML size to your test recipients.
+
+    ![](assets/email-optimize-size-proof-option.png)
+
+    >[!NOTE]
+    >
+    >This setting is independent from the email editor — the proof reflects whatever you select in the proof, regardless of whether the option is enabled or disabled in the email itself.
+
+1. Select the test recipients and click the **[!UICONTROL Send proof]** button. Learn more about sending proofs in [this section](../content-management/proofs.md).
+1. Once sent, back in the **[!UICONTROL Simulate]** screen, click the **[!UICONTROL View Proof]** button.
+1. Review the optimization details displayed there, including the original HTML size, the optimized HTML size, and the size reduction percentage.
+
+Use this information to validate the optimized output and confirm the email stays within the recommended 100 KB threshold before publishing.
 
 <!--
 ## Define your email content {#email-content}
