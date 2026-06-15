@@ -15,6 +15,12 @@ feature_v2:
 ---
 # Work with MCP clients {#ajo-mcp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get a step-by-step overview of the [!DNL Adobe Journey Optimizer] MCP server — from the Model Context Protocol basics and supported clients, to the available tools, sample prompts, setup prerequisites, connection steps, and answers to common questions.
+
+>[!ENDSHADEBOX]
+
 The [!DNL Adobe Journey Optimizer] MCP integration lets you query campaigns, journeys, and offers using plain-language prompts — without writing API calls or navigating product screens. This page explains how the integration works, what you can do with it, and how to get started.
 
 >[!AVAILABILITY]
