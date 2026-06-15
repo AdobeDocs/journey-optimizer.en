@@ -37,6 +37,23 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 The following capabilities and improvements are coming to journeys in this release.
 
+<table>
+<thead>
+<tr>
+<th><strong>Channel optimization (Limited Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now add multiple outbound channels (Email, Push, SMS) to a single journey action and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available: manual ranking, customer profile preference (XDM attribute), and AI model-based ranking using propensity scores. When the top-ranked channel is unavailable, the system falls back to the next available channel.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../building-journeys/channel-optimization.md">detailed documentation</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 * **Increased live journey limit and new guardrails** - You can now have up to **200 active journeys**, increased from the previous limit of 100.
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the **journey header** next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed.

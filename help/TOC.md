@@ -77,6 +77,7 @@ solution: Journey Optimizer
     + [Work with journey step events](using/reports/journey-step-events-overview.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
+    + [Channel optimization](using/building-journeys/channel-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
