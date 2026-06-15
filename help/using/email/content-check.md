@@ -51,6 +51,10 @@ Similary, you can click the **[!UICONTROL Show fix]** button and apply a one-cli
 
 ![Content check pane in the Email Designer with Apply fix button](assets/content-check-fix.png){width="80%"}
 
+Content checks fall into two categories. Most checks — such as unsupported HTML elements, empty divs, and HTML size — are recalculated each time you edit your email, so they always reflect your current content.
+
+The CSS size check works differently. It is calculated from the serialized content — the version of your email as it is loaded or saved — not from the live editing state in the Email Designer. CSS optimizations are applied when you save, so the saved content can differ slightly from what you see while editing. This check runs when your email is loaded and when you save. If you make edits without saving, a **[!UICONTROL Stale check]** label appears to indicate the result may no longer be accurate. Save your email to refresh the calculation.
+
 ## Fix detected issues {#fix-issues}
 
 The tables below list all possible messages and the recommended action for each. Expand the category matching the message you see in the **[!UICONTROL Content check]** pane.
@@ -74,7 +78,12 @@ The tables below list all possible messages and the recommended action for each.
 | Total CSS size is close to Gmail's 16 KB limit and could cause rendering issues if more CSS is added. | Warning | Use **[!UICONTROL Apply fix]** to remove unused CSS rules, or reduce styles before adding more content. |
 | Total CSS size for this fragment exceeds 3 KB. Combining this with other fragments could cause the total email CSS to exceed Gmail's 16 KB limit and cause rendering issues. | Warning | Simplify the CSS in this fragment to keep the combined email CSS under 16 KB. |
 | Content contains unused CSS rules. This could cause rendering issues in Gmail. | Warning | Use **[!UICONTROL Apply fix]** to automatically remove CSS rules that reference elements no longer present in the email. |
+
+<!--
+| Message | Severity | What to do |
+|---|---|---|
 | Your content has modifications to the system-generated default CSS. These changes may be overridden by future Email Designer updates. To preserve your styles, add them using the Custom CSS feature instead. | Info | Move your custom styles to [Custom CSS](custom-css.md) to ensure they are preserved across Email Designer updates. |
+-->
 
 +++
 
