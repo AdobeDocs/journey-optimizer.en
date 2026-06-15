@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Brand alignment {#brands-score}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to validate your email content against your brand guidelines and assess overall content quality using brand alignment scores in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_brand_score"
 >title="Brand Alignment score"

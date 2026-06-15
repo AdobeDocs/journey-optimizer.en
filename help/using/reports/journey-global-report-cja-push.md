@@ -40,6 +40,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Understand the push notification metrics in the Adobe Journey Optimizer journey report, including sending and tracking statistics, tracked link labels and URLs, and bounce, error, and exclusion reasons.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 You can access your Push notification journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access-jo.png)

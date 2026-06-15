@@ -31,6 +31,12 @@ subfeature_v2:
 ---
 # Create feedback webhooks for API triggered campaigns {#webhooks}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create and configure feedback webhooks that deliver real-time message status updates to your systems for transactional API-triggered campaigns in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Feedback webhooks allow you to receive real-time status updates for messages sent through transactional API triggered campaigns. By configuring a webhook, you can automatically receive delivery outcomes directly to your systems, enabling monitoring, logging, and automated processing.  
 
 You can manage webhook configurations from the **[!UICONTROL Administration]** / **[!UICONTROL Channels]** / **[!UICONTROL Feedback webhook settings]** menu. 

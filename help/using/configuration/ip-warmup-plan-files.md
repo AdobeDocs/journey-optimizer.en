@@ -30,6 +30,12 @@ topic_v2:
 ---
 # Download IP warmup plan template and sample {#ip-warmup-plan-files}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Download the blank IP warmup plan template and a filled-in sample file to prepare your plan in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 <!--
 DO NOT MAKE PUBLIC AND DO NOT DELETE
 This page is not supposed to be publicly accessible. Its only purpose is to make the referenced IP warmup plan files (template and sample) available from the UI. They should be downloaded from the UI by AJO customers but not from public documentation pages.

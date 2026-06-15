@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Work with [!DNL Journey Optimizer] APIs {#apis-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, authenticate, and use the Adobe Journey Optimizer RESTful APIs, including the Decision Management and Experience Decisioning APIs, to perform key operations programmatically.
+
+>[!ENDSHADEBOX]
+
 ## Quick access {#quick-access}
 
 Browse the [complete API reference](https://developer.adobe.com/journey-optimizer-apis){target="_blank"} to access all Journey Optimizer APIs and test them directly. To get started, make sure to [set up authentication](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} to gather the required credentials.

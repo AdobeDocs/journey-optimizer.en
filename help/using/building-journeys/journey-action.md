@@ -48,6 +48,12 @@ topic_v2:
 ---
 # Use the Action activity {#add-a-message-in-a-journey}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Action activity to deliver content from the journey canvas through a single unified activity that covers Email, Push, SMS, in-app, web, code-based experiences, and content cards.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_action_activity"
 >title="Action activity"

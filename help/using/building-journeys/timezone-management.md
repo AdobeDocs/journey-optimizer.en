@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Time zone management {#timezone_management}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set a journey's time zone — either a fixed time zone or one taken from each profile — to control when time-based activities such as time conditions, date conditions, and custom waits run.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_time_zone"
 >title="Journey time zone"

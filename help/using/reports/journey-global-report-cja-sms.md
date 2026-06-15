@@ -40,6 +40,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Understand the SMS metrics in the Adobe Journey Optimizer journey report, including delivery and click trends, tracked links, inbound messages, providers, and bounce, error, and exclusion reasons.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 You can access your SMS journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access-jo.png)

@@ -16,6 +16,12 @@ subfeature_v2:
 
 # Incremental query {#incremental-query}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Incremental query targeting activity to return only new records on each Orchestrated campaign run, excluding profiles already targeted in previous executions.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_incrementalquery"
 >title="Incremental query"

@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Subscription report {#subscription-report-global-cja}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Subscription report to analyze profile subscriptions and unsubscriptions across lists, journeys, campaigns, and channels to measure engagement.
+
+>[!ENDSHADEBOX]
+
 The **Subscription report** offers essential insights into profiles' subscriptions and unsubscriptions associated with particular lists, helping you understand the effectiveness of different subscription campaigns and initiatives in driving engagement and conversions.
 
 To access your reports, click the **[!UICONTROL Report]** icon of your selected subscription list from the advanced menu.

@@ -25,6 +25,12 @@ topic_v2:
 ---
 # Use supplemental identifiers in journeys {#supplemental-id}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use supplemental identifiers — secondary identifiers such as an order or booking ID — to run a separate journey instance per identifier and personalize messages with its attributes.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_parameters_supplemental_identifier"
 >title="Use supplemental identifier"

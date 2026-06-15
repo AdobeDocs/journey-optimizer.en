@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Journey fields {#sharing-journey-fields}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Reference the journey fields used in the journey schema to describe each journey in journey step event reporting, such as journey ID, version, name, and description.
+
+>[!ENDSHADEBOX]
+
 This field group is used in the **journey** schema (in relation with **journeyStepEvent**). It contains the fields listed below.
 
 

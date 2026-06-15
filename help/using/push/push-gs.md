@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Push notification data flow and components {#get-started-push}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the push notification data flow, the key services and components involved, and how notifications are delivered end-to-end with Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 This page helps you setup and understand key services and workflows involved with push notifications in [!DNL Journey Optimizer]. 
 
 

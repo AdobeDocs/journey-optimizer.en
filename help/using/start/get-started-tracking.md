@@ -55,6 +55,12 @@ topic_v2:
 ---
 # Get started with tracking in Journey Optimizer {#get-started-tracking}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to track customer interactions across channels and monitor deliverability and system health in Journey Optimizer, so you can measure campaign effectiveness and make data-driven decisions.
+
+>[!ENDSHADEBOX]
+
 Tracking enables you to measure campaign effectiveness, optimize customer experiences, and ensure messages reach their intended recipients. Journey Optimizer provides comprehensive tracking capabilities that capture customer interactions, delivery performance, and system health—helping you make data-driven decisions while respecting privacy and maintaining compliance.
 
 Most tracking is automatically configured when you create messages and journeys. For advanced scenarios, you can set up custom metrics, configure URL parameters, and integrate with external analytics platforms. Access your tracking data through built-in reports or export it for deeper analysis in Customer Journey Analytics.

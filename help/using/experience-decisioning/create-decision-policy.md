@@ -28,6 +28,12 @@ topic_v2:
 ---
 # Create decision policies {#create-decision}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Add and configure a decision policy in your campaign or journey content so you can return and rank the best decision items for each profile across the supported channels.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_item_number"
 >title="Define the number of items to be returned"

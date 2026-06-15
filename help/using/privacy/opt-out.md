@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Manage opt-out {#consent}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Manage how recipients unsubscribe from communications and opt out of personalization, so you can honor their consent choices and meet your legal and brand-reputation obligations.
+
+>[!ENDSHADEBOX]
+
 Providing to recipients the capability to unsubscribe from receiving communications from a brand is a legal requirement, as well as ensuring this choice is honored. Failing to comply with these regulations introduces regulatory legal risks for your brand. It helps you avoid sending unsolicited communications to your recipients, which could make them mark your messages as spam and harm your reputation.
 
 Learn more about the applicable legislation in the [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/regulations/overview.html#regulations){target="_blank"}.

@@ -31,6 +31,12 @@ level_v2:
 ---
 # Custom Upload {#custom-upload}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to import an audience from a CSV file using the Adobe Experience Platform Audience Portal and map its identity attribute to customer profiles.
+
+>[!ENDSHADEBOX]
+
 Adobe Experience Platform Audience Portal allows you to import an audience using a CSV file.
 
 During the custom upload process, specify the CSV attribute to use as the identity and the profile identity it maps to. This establishes a link between the audience data and the profile. If the CSV file contains an identity value not found in the profile, a new profile is created with that identity value.

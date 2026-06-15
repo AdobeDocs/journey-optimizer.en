@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Key Terminology {#key-terminology}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Look up the essential Adobe Journey Optimizer terms and concepts so you can navigate the platform confidently and collaborate effectively with your team.
+
+>[!ENDSHADEBOX]
+
 This reference guide defines the essential terms you'll encounter when using Adobe Journey Optimizer. Understanding these concepts helps you navigate the platform confidently and collaborate effectively with your team.
 
 For pairs of similar-sounding terms that are often confused — such as **Decisioning vs Decision Management** or **Content Cards vs In-App messages** — see [When terms look similar](#disambiguation) at the bottom of this page.

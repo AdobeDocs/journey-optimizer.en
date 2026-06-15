@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Create & edit PTR records {#ptr-records}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how PTR records are automatically created when you delegate subdomains to Adobe, and how to access, edit, and track updates to them in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ptr_record"
 >title="Subdomains' PTR records"

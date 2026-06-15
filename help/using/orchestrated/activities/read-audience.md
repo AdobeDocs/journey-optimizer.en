@@ -23,6 +23,12 @@ subfeature_v2:
 ---
 # Read audience {#read-audience}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Read audience activity to retrieve an existing saved or imported audience and reuse it in an Orchestrated campaign, optionally enriching it with profile attributes for targeting, personalization, or reporting.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_read_audience"
 >title="Build audience activity"

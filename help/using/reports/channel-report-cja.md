@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Overview report {#channel-report-cja}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Overview report to analyze unified traffic and engagement metrics across all your campaigns and journeys, with dedicated tabs for journeys, campaigns, channels, journey capping rule sets, and optimization models.
+
+>[!ENDSHADEBOX]
+
 The Overview report offers users a thorough summary of traffic and engagement metrics for all campaigns and journeys within your environment. These metrics are combined to present unified values for actions coming from different channels, encompassing various campaigns and journeys.
 
 You can access the Overview report by navigating to the **Reports** menu within the **Journey Management** section.

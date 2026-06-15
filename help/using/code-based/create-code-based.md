@@ -27,6 +27,12 @@ topic_v2:
 ---
 # Create code-based experiences {#create-code-based}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create code-based experiences in a journey or campaign and edit their content using the personalization editor.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_code_based"
 >title="Code-based experience action"

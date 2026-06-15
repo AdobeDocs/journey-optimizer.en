@@ -12,6 +12,12 @@ subfeature_v2:
 ---
 # Preview & test your content {#preview-test}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview and test your message content in Adobe Journey Optimizer using test profiles or sample input data to verify rendering, personalization, and accuracy before sending.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ac_preview_testprofiles"
 >title="Check how your content is rendering"

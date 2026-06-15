@@ -31,6 +31,12 @@ level_v2:
 ---
 # Check and send your LINE message {#send-line}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Preview, simulate, and validate your LINE message so you can resolve any warnings or errors and confidently send it through your journey or campaign.
+
+>[!ENDSHADEBOX]
+
 ## Preview your text message {#preview-line}
 
 Once your message content has been defined, you can preview its content using either simulation method:

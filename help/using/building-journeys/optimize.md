@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Get started with the Optimize activity {#journey-path-optimization}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Optimize activity to create multiple journey paths based on experimentation, targeting, and conditions, replacing the former Condition activity.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_optimize"
 >title="Optimize activity"

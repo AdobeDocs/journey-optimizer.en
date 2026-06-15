@@ -37,6 +37,12 @@ topic_v2:
 ---
 # About experienceevent schemas for [!DNL Journey Optimizer] events {#about-experienceevent-schemas}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Build XDM Experience Event schemas that meet the required structure so your streamed events can be ingested into Adobe Experience Platform and used to trigger journeys.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] events are XDM Experience Events that are sent to Adobe Experience Platform via Streaming Ingestion.
 
 As such, an important prerequisite for setting up events for [!DNL Journey Optimizer] is that you are familiar with Adobe Experience Platform's Experience Data Model (or XDM) and how to compose XDM Experience Event schemas, as well as how to stream XDM-formatted data to Adobe Experience Platform.

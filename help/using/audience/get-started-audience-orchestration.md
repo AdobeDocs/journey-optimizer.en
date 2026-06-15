@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Get started with audience composition {#get-start-audience-composition}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use audience composition to combine existing Adobe Experience Platform audiences in a visual canvas and apply activities such as split, exclude, enrich, and rank to create new audiences.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_ao_create_composition"
 >title="Create a composition"

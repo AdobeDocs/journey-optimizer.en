@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Export datasets to cloud storage locations {#export-datasets}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up live connections to cloud storage destinations so you can export your Journey Optimizer datasets for reporting, archival, and external data analysis.
+
+>[!ENDSHADEBOX]
+
 Journey Optimizer allows you to establish a live connection with cloud storage locations in order to export the content of your datasets.
 
 By periodically exporting your data, you can ensure that you have a complete and up-to-date record of your customer interactions, making it readily available for reporting, archival, or data analysis purposes.

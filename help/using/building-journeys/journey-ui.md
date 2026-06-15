@@ -15,6 +15,12 @@ subfeature_v2: []
 ---
 # Browse & filter your journeys {#browse-journeys}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to browse, search, and filter your journeys using the journey dashboard, list, and calendar views in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_view"
 >title="Journeys list and calendar views"

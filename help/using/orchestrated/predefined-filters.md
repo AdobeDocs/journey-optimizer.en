@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Work with predefined filters {#predefined-filters}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, apply, share, and manage predefined filters to reuse saved queries in the rule builder for Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 Predefined filters are saved rules that you can reuse in the rule builder. Use them to avoid rebuilding common queries and to standardize targeting logic across orchestrated campaigns.
 
 You can mark predefined filters as favorites, share them with other users, and add parameters so selected fields can be edited when the filter is applied.

@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Built-in roles {#ootb-product-profiles}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore the built-in roles and the permissions each one includes, so you can quickly grant users a ready-made level of access that matches their responsibilities.
+
+>[!ENDSHADEBOX]
+
 Built-in roles are a set of unitary rights which allows users access to certain functionalities or objects in the interface. Refer to [this page](ootb-permissions.md) for the list of available permissions to build your role.
 
 

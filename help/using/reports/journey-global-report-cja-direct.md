@@ -40,6 +40,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Learn how to read the direct mail metrics in the journey report, including sending statistics, delivery status, error reasons, and exclusion reasons for your direct mail messages.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 You can access your Direct mail journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access-jo.png)

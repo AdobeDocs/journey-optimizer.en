@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Get started with data sources {#about-data-sources}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand what data sources are and how to choose the right data access strategy so you can bring additional data into your journeys for conditions, personalization, and timing.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_list"
 >title="About data sources"

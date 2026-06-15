@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Frequently asked questions {#mobile-live-faq}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers to common questions about Live activities so you can implement, deliver, and troubleshoot them more confidently across your iOS apps and campaigns.
+
+>[!ENDSHADEBOX]
+
 ## General Questions
 
 +++What is the difference between a Live activity and a Push notification?

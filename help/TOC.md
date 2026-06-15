@@ -31,6 +31,7 @@ solution: Journey Optimizer
     + [Understanding how it works](using/start/understanding-ajo.md)
     + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
+    + {hide-from-toc} [Which capability for this job?](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + {hide-from-toc} [Capabilities by package](using/start/ajo-packages.md)
     + {hide-from-toc} [Packages and capabilities (v2)](using/start/ajo-packages-v2.md)

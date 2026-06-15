@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Create your first decision item {#items}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create and manage decision items, including their attributes, eligibility, and capping rules, so you can present the right marketing offers to the right profiles.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_items"
 >title="Manage decision items"

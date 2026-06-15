@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Add metadata to your email content {#email-metadata}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set email metadata in the Email Designer, including the preheader, document title, and document language, to improve the readability and accessibility of your email content.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ac_edition_preheader"
 >title="Define a preheader"

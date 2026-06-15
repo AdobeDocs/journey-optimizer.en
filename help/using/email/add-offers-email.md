@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Add personalized offers {#deliver-personalized-offers}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to insert and preview offer decisions in your emails so Adobe Journey Optimizer delivers the best personalized offer to each recipient.
+
+>[!ENDSHADEBOX]
+
 In [!DNL Journey Optimizer] emails, you can insert decisions that will leverage the Decision Management engine to pick the best offer to deliver to your customers.
 
 For example, you can add a decision that will display in your email a special discount offer that will vary according to the recipient's loyalty level.

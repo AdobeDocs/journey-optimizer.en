@@ -36,6 +36,12 @@ topic_v2:
 ---
 # List of components {#list-of-components-live}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Reference the definitions of the journey, email, SMS, landing page, and push notification metrics used across Adobe Journey Optimizer reports.
+
+>[!ENDSHADEBOX]
+
 The tables below give you the list of metrics used in reports and their definitions depending on the delivery type. 
 
 ## Journey metrics {#journey-metrics}
