@@ -15,6 +15,12 @@ feature_v2:
 ---
 # Work with MCP clients {#ajo-mcp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how the Adobe Journey Optimizer MCP server lets you query campaigns and offers with plain-language prompts from supported MCP clients, and review its capabilities, tools, prerequisites, and limitations.
+
+>[!ENDSHADEBOX]
+
 The [!DNL Adobe Journey Optimizer] MCP integration lets you query campaigns and offers using plain-language prompts — without writing API calls or navigating product screens. This page explains how the integration works, what you can do with it, and how to get started.
 
 >[!AVAILABILITY]

@@ -34,6 +34,12 @@ subfeature_v2:
 ---
 # Use Adobe Experience Platform data for personalization {#aep-data}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the datasetLookup helper function in the personalization editor to retrieve fields from Adobe Experience Platform record datasets and personalize your content.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This feature is currently available to all customers as a limited availability release.

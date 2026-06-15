@@ -15,6 +15,12 @@ subfeature_v2: []
 
 # Journey Fragments {#journey-fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, manage, and reuse journey fragments — reusable sets of journey nodes — to build journeys faster and stay consistent across your sandbox.
+
+>[!ENDSHADEBOX]
+
 Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent — without rebuilding the same logic from scratch every time. [See use case examples.](#examples)
 
 Once created, fragments are stored in a dedicated **[!UICONTROL Fragment Inventory]** and can be inserted into any journey using the **[!UICONTROL Journey fragments]** activity.

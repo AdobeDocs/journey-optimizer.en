@@ -28,6 +28,12 @@ subfeature_v2:
 ---
 # Report on Decisioning {#decisioning-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Access dedicated Decisioning reports and build Customer Journey Analytics dashboards so you can monitor key performance indicators and analyze how customers interact with your decision items.
+
+>[!ENDSHADEBOX]
+
 ## Decisioning reporting {#campaigns}
 
 Once journeys or campaigns with selection strategies are live, you can access dedicated reports to monitor Decisioning Key Performance Indicators (KPIs).

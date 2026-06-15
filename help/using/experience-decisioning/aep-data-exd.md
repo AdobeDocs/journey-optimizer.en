@@ -35,6 +35,12 @@ subfeature_v2:
 ---
 # Use Adobe Experience Platform data for Decisioning {#aep-data}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Use Adobe Experience Platform dataset attributes in your decision rules, ranking formulas, and capping rules so you can enrich decision logic with dynamic, external data that changes frequently, such as inventory or pricing.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_catalogs_dataset"
 >title="Dataset lookup"

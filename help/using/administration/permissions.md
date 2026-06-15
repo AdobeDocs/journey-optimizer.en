@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Manage users & roles {#manage-permissions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Assign, edit, and create roles in the Permissions product, so you can give each user exactly the access they need to do their work in Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 **[!UICONTROL Roles]** refer to a collection of users who share the same permissions and sandboxes. These roles allow you to easily manage access and permissions for different groups of users within your organization.
 
 With the [!DNL Journey Optimizer] product, you can choose from a range of pre-existing **[!UICONTROL Roles]**, each with varying levels of permissions, to assign to your users. For more information on the available **[!UICONTROL Roles]**, refer to this [page](ootb-product-profiles.md).

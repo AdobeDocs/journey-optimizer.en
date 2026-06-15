@@ -27,6 +27,12 @@ subfeature_v2:
 ---
 # Leverage fragments in decision policies {#fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Leverage Journey Optimizer content fragments and AEM Content Fragments within decision policies, so you can personalize and optimize the content decisioning delivers across channels.
+
+>[!ENDSHADEBOX]
+
 Decision items support two types of fragment content that can be leveraged when authoring messages within a decision policy:
 
 * **Journey Optimizer content fragments** — reusable expression fragments created in Journey Optimizer and added to the decision item's **[!UICONTROL Fragments]** section. [Learn more about AJO content fragments](../content-management/fragments.md)

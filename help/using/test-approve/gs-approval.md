@@ -24,6 +24,12 @@ subfeature_v2:
 ---
 # Get started with journeys & campaigns approval {#send-proofs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** An embedded approval process keeps journeys and campaigns locked during review so the right stakeholders sign off before anything goes live, with every request centrally managed and tracked.
+
+>[!ENDSHADEBOX]
+
 ## Get started with approval policies {#gs}
 
 [!DNL Journey Optimizer] allows you to set up an approval process that enables marketing teams to ensure campaigns and journeys are reviewed and signed off by the appropriate stakeholders before they go live.

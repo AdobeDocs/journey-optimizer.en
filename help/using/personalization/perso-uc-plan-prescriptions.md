@@ -29,6 +29,12 @@ subfeature_v2:
 ---
 # Health plan prescriptions email {#plan-prescription}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Follow a personalization use case that iterates over nested profile arrays with conditional rules to build a health plan email listing prescriptions that are ready for pickup or recalled.
+
+>[!ENDSHADEBOX]
+
 A profile contains health plans, and each plan includes prescriptions. Prescriptions have various states, such as "ready," "recall," or "picked up".
 
 In this use case, we want to send a single email to each profile, including all prescriptions that are either ready for pick up or recalled. Click on each tab below for more information on the syntax to use to implement this use case.

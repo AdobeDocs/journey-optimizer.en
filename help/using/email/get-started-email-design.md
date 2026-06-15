@@ -47,6 +47,12 @@ topic_v2:
 ---
 # Get started with email design {#get-started-content-design}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design your email content in the Email Designer, the key steps to build it from scratch, code, or imported HTML, and the best practices that keep your emails rendering well across clients.
+
+>[!ENDSHADEBOX]
+
 To access the Email Designer and start designing your email content, you must first [create an email](create-email.md) in a journey or a campaign.
 
 You can then use [!DNL Journey Optimizer] **email design capabilities** to import existing content or start building responsive emails from scratch. [Learn more](content-from-scratch.md)

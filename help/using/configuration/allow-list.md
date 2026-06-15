@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Set up an allowed list {#allow-list}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to activate, populate, and manage an allowed list in Adobe Journey Optimizer to restrict email sending to trusted addresses and domains at the sandbox level.
+
+>[!ENDSHADEBOX]
+
 The allowed list is a sending-safe list you can define at the [sandbox](../administration/sandboxes.md) level. It restricts email sending to specific addresses or domains, ensuring that only explicitly listed recipients can receive messages from a given sandbox.
 
 >[!CAUTION]

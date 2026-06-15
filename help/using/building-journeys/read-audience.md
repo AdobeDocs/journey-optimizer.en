@@ -50,6 +50,12 @@ topic_v2:
 ---
 # Use an audience in a journey {#segment-trigger-activity}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure the Read Audience activity to bring profiles from an Adobe Experience Platform audience into a journey, on demand or on a schedule, and personalize each profile's path.
+
+>[!ENDSHADEBOX]
+
 Use the Read Audience activity to start journeys with defined audiences. You choose the audience and when it runs; then use [conditions](#audience-targeting-in-journeys), timers, and actions to personalize each profile's path.
 
 ## About the Read Audience activity {#about-segment-trigger-activity}

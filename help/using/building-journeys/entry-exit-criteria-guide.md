@@ -49,6 +49,12 @@ topic_v2:
 ---
 # Work with journey entry and exit criteria {#entry-exit-criteria-guide}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to define and configure journey entry and exit criteria, with real-world examples and best practices for controlling when profiles enter and leave your journeys.
+
+>[!ENDSHADEBOX]
+
 In customer experience orchestration, delivering the right message at the right time requires precise control over when customers enter and exit your journeys. Understanding and properly configuring entry and exit criteria can make the difference between a successful, engaging campaign and missed opportunities or message fatigue.
 
 This guide provides practical guidance, real-world examples, and best practices for managing journey entry and exit criteria in [!DNL Adobe Journey Optimizer].

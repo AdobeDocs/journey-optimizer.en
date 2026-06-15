@@ -33,6 +33,12 @@ level_v2:
 ---
 # Get started with content templates {#content-templates}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with content templates to create standalone, reusable content for the Email, Push, In-App, SMS, and Direct Mail channels that marketers can reuse across campaigns and journeys in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!NOTE]
 >
 >Starting from March 2025, HTML-type content templates are deprecated. You can still use existing HTML content templates previously created in [!DNL Journey Optimizer].

@@ -38,6 +38,12 @@ subfeature_v2:
 ---
 # Get started with reporting capabilities {#get-started-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with the reporting capabilities in Adobe Journey Optimizer, including last 24-hour live reports and all-time reports powered by Customer Journey Analytics for your campaigns, journeys, landing pages, and subscription lists.
+
+>[!ENDSHADEBOX]
+
 Adobe Journey Optimizer offers you actionable insights through its robust reporting capabilities. Reports are available for campaigns, journeys, landing pages, subscription lists, and more. Available reports are listed below.
 
 In addition, to optimize the deliverability of your [!DNL Journey Optimizer] experiences, we recommend using the best practices listed [in this section](deliverability.md).

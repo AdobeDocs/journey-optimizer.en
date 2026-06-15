@@ -36,6 +36,12 @@ level_v2:
 ---
 # Get started with multilingual content {#multilingual-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with multilingual content to create messages in multiple languages within a single campaign or journey, using either manual or automated translation, and review the prerequisites required.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_multi_translation_homepage"
 >title="Translations"

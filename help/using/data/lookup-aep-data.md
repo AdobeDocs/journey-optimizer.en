@@ -37,6 +37,12 @@ subfeature_v2:
 ---
 # Use Adobe Experience Platform data {#aep-data}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Enable record-based Adobe Experience Platform datasets for lookup so you can enrich personalization, Decisioning, and journey orchestration with reference and transactional data retrieved at runtime in Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="lookup-aep-data"
 >title="Enable for lookup"

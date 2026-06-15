@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Create a direct mail message {#create-direct}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Add a direct mail message to a campaign or journey and configure its extraction file so your direct mail provider has the personalized data needed to send mail to your customers.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_direct_mail"
 >title="Direct mail creation"

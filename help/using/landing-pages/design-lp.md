@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Design the landing page content {#design-lp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how to design your landing page content in the content designer — from scratch, with AI Assistant, with your own HTML, or from a saved template — for an on-brand visitor experience.
+
+>[!ENDSHADEBOX]
+
 To start creating content for your landing [primary page](create-lp.md#configure-primary-page) or [subpage](create-lp.md#configure-subpages), hover the mouse over your page content and click **[!UICONTROL Open Designer]**. You can also click the corresponding button from the right palette.
 
 ![](assets/lp_open-designer.png)

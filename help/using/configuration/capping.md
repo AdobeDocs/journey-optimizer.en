@@ -29,6 +29,12 @@ level_v2:
 ---
 # Work with the Capping API {#work}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Adobe Journey Optimizer Capping API to create, configure, deploy, and monitor endpoint capping configurations that limit calls to external systems.
+
+>[!ENDSHADEBOX]
+
 The Capping API helps you create, configure and monitor your capping configurations.
 
 This section provides global information on how to work with the API. A detailed API description is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis){target="_blank"}.

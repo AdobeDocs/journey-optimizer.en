@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Landing page report {#lp-report-global-cja}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Analyze landing page performance in Adobe Journey Optimizer using Customer Journey Analytics, including conversion and bounce rates, views, and traffic by journey, campaign, and channel.
+
+>[!ENDSHADEBOX]
+
 The **Landing Page** report offers valuable insights into user behavior, engagement patterns, conversion rates, and other key metrics, empowering you to make informed decisions and optimize your landing page performance effectively.
 
 To access your reports, select **[!UICONTROL Report]** from the advanced menu of your selected landing page.

@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Datasets Time-to-live (TTL) guardrails {#ttl-guardrail}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the time-to-live retention limits on Journey Optimizer system-generated datasets so you can plan how long tracking, feedback, and journey data stays available and retain critical data before it expires.
+
+>[!ENDSHADEBOX]
+
 As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
 
 * 90 days for data in the profile store,

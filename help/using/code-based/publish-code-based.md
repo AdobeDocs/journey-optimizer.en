@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Manage code-based experiences {#publish-code-based}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to publish, activate, and stop code-based experiences in your journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 ## Make your code-based experience live {#code-based-experience-live}
 
 >[!IMPORTANT]

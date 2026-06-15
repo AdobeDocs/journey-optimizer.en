@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Get started with push notification {#gs-push-notification}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with push notifications in Adobe Journey Optimizer to reach your mobile app users and web visitors through journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >If this is your first time creating an Push Notification, make sure the Push channel has been configured. [Learn more](push-gs.md).

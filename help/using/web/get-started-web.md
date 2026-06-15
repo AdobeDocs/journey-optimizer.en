@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Get started with web channel {#get-started-web}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with the web channel in Adobe Journey Optimizer to visually author and deliver personalized web experiences across your customer journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to visually author and deliver personalized web experiences to your customers.
 
 Through an intuitive visual interface, use the web channel to modify your web properties easily to experiment, optimize and personalize your end-user campaigns.

@@ -48,6 +48,12 @@ topic_v2:
 ---
 # Configure a custom action {#configure-a-custom-action}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Connect a third-party REST API to your journeys by setting up a custom action's endpoint, authentication, security, and payload parameters so journeys can call that service.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_configuration"
 >title="Custom actions"

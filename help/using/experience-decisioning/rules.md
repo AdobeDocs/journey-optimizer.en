@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Build rules {#rules}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Build reusable decision rules and targeting rules, so you can control which decision items and personalized content are shown to which audiences across your campaigns and journeys.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_rules"
 >title="Create rules"

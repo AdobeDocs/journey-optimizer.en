@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Change dimension {#change-dimension}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Change dimension activity to shift the targeting dimension within an Orchestrated campaign, for example switching from wishlists to the recipients linked to them.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_dimension_complement"
 >title="Generate a complement"
