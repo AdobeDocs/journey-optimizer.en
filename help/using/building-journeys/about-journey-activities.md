@@ -52,6 +52,12 @@ topic_v2:
 ---
 # Get started with journey activities {#about-journey-activities}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to combine event, orchestration, and action activities to build multi-step, cross-channel journeys, with best practices for labeling activities, managing parameters, and troubleshooting.
+
+>[!ENDSHADEBOX]
+
 Combine event, orchestration, and action activities to build multi-step, cross-channel scenarios.
 
 ## Event activities {#event-activities}

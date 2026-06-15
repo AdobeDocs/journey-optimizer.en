@@ -32,6 +32,12 @@ level_v2:
 ---
 # Attach a PDF file to an email {#pdf-attachments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to attach a static PDF file to your emails, including the file size and sending volume limits that apply.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_pdf_attachments"
 >title="Add a PDF atttachment"

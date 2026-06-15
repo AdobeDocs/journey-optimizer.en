@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Personalization recipes {#personalization-recipes}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find ready-to-use personalization recipes for dates, arrays, strings, conditional logic, and PQL edge cases that you can copy directly into your Adobe Journey Optimizer content.
+
+>[!ENDSHADEBOX]
+
 This page provides ready-to-use personalization patterns for the most common use cases in Adobe Journey Optimizer. All examples use the personalization editor syntax and can be copied directly into email, SMS, or push content.
 
 For a complete reference of available functions, see [Helper functions](functions/helpers.md), [Date/time functions](functions/dates.md), [String functions](functions/string.md), and [Array functions](functions/arrays-list.md).

@@ -36,6 +36,12 @@ subfeature_v2:
 ---
 # Get started with decision capabilities in [!DNL Journey Optimizer] {#gs-decision}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Compare the Decisioning and Decision management capabilities in Journey Optimizer so you can choose the right approach for delivering personalized offers across your channels.
+
+>[!ENDSHADEBOX]
+
 The decision capabilities in [!DNL Journey Optimizer] empower you to deliver the best offers and personalized experiences to your customers across all touchpoints, at precisely the right moments. These capabilities simplify personalization through a centralized catalog of marketing offers and an advanced decision engine, which uses rules and ranking criteria to deliver the most relevant content for each individual.
 
 Key benefits:

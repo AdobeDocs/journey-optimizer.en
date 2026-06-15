@@ -24,6 +24,12 @@ subfeature_v2:
 ---
 # Work with Integrations {#external-sources}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how administrators configure, test, and activate external integrations that connect Adobe Journey Optimizer to third-party APIs for personalized, dynamic content in outbound channels.
+
+>[!ENDSHADEBOX]
+
 ## Overview
 
 The **Integrations** feature links Adobe Journey Optimizer to third-party systems whose data and composable content you already manage elsewhere. You can surface that material during authoring and at send time, which supports more responsive, personalized experiences across the channels you use in Journey Optimizer.

@@ -42,6 +42,12 @@ topic_v2:
 ---
 # [!DNL Adobe Campaign] Standard actions {#using_campaign_action}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the built-in Adobe Campaign Standard email, push, and SMS action activities in your journeys by relying on Campaign Standard Transactional Messaging templates.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_acs"
 >title="Custom actions"

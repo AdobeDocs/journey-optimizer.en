@@ -42,6 +42,12 @@ level_v2:
 ---
 # Profile entrance management {#entry-management}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how profile entrance and reentrance work for each type of journey so you can control when and how often profiles enter your journeys.
+
+>[!ENDSHADEBOX]
+
 Profile entrance management depends on the type of journey.
 
 >[!TIP]

@@ -41,6 +41,12 @@ level_v2:
 ---
 # Reaction events {#reaction-events}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Reaction activity to respond to message tracking data such as opens and clicks within the same journey, and configure timeout paths for individuals who do not engage.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_reaction"
 >title="Reaction events"

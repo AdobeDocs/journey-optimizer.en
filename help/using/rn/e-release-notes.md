@@ -33,7 +33,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 **Release date**: June 16-17, 2026
 
-
 ### Journeys {#june-26-journeys}
 
 The following capabilities and improvements are coming to journeys in this release.
@@ -44,10 +43,6 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Stop or close a paused journey directly** - You can now **stop a journey or close it to new entrances** directly from the **Paused** state. Previously, a paused journey had to be resumed to Live before it could be stopped or closed.
 
-<!--
-* **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required.
--->
-  
 ### Orchestrated campaigns {#june-26-oc}
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.
@@ -55,20 +50,20 @@ The following capabilities and improvements are coming to orchestrated campaigns
 <table>
 <thead>
 <tr>
-<th><strong>Load file activity in Orchestrated campaigns</strong><br/></th>
+<th><strong>File-based targeting in Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Orchestrated campaigns now support loading a <strong>CSV or TXT file</strong> directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. This supports ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical.</p>
+<p>Orchestrated campaigns now support loading a <strong>CSV or TXT file</strong> directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. Rows that fail validation are rejected and logged before the campaign runs, keeping the audience clean without manual pre-processing. This is particularly suited for ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Loop-based personalization for relational data in Orchestrated campaigns** - The personalization editor now supports a **Loop block** that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required.
+* **Loop-based personalization for relational data in Orchestrated campaigns** - The personalization editor now supports a **Loop block** that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. You can preview how looped blocks render against sample data before the campaign goes live, including handling of empty collections.
 
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of **email header fields**, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
 
@@ -96,58 +91,30 @@ The following capability is coming to Decisioning in this release.
 </tbody>
 </table>
 
-### Channels {#june-26-channels}
+* **Dynamic offer attributes** - Offer attributes in Decisioning can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items.
 
-The following capability is introduced in this release.
+* **Placement-level frequency capping in Decisioning** - Frequency capping rules in Decisioning can now be scoped to individual placements, giving you finer control over how often an offer is shown in a given surface. Two modes are available:
 
-<table>
-<thead>
-<tr>
-<th><strong>Custom outbound channels</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now introduces <strong>Custom channels</strong>, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code channel builder.</p>
-<p>Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement. This fills the gap previously addressed by custom actions, which were limited to journeys and lacked dedicated content authoring.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-</td>
-</tr>
-</tbody>
-</table>
+  * Placement-specific capping: define a cap that applies only when the offer is displayed in a selected placement.
+  * Per-placement capping: apply a cap independently across every placement where the offer appears, so each placement maintains its own capping counter.
 
 ### Email {#june-26-email}
 
 The following capabilities and improvements are coming to the email channel in this release.
 
-<!--
 <table>
 <thead>
 <tr>
-<th><strong>Advanced Components</strong><br/></th>
+<th><strong>Content quality checks in the Email Designer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>The Email Designer now includes a library of ready-to-use layout components — such as Headers, Product Cards (1, 2, or 3 columns), Information blocks, and Footers — that you can drag and drop directly into your email canvas. Each component comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
-</td>
-</tr>
-</tbody>
-</table>
--->
-
-<table>
-<thead>
-<tr>
-<th><strong>Content check in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now allows users to validate their <strong>email content quality</strong> - including readability, effectiveness, and content cohesiveness - directly within the Email Designer interface.</p>
+<p>Journey Optimizer now includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.</p>
+<p>Checks cover unsupported elements such as <code>&lt;script&gt;</code> and <code>&lt;base&gt;</code> tags, empty divs that can break layout in Microsoft Outlook, HTML meta refresh tags, and CSS or HTML size thresholds that trigger rendering failures in Gmail.</p>
+<p>Results are surfaced as errors, warnings, or informational notices directly in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the editor.</p>
+<p>For more information, refer to the <a href="../email/content-check.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -162,18 +129,51 @@ The following capabilities and improvements are coming to the email channel in t
 <tbody>
 <tr>
 <td>
-<p>This new option allows to <strong>reduce the size of the HTML</strong> in an email by stripping out unnecessary whitespace, comments, and redundant code — without changing how the email looks. This helps improve deliverability (some email providers reject or flag oversized emails) and can speed up load time for recipients.</p>
-<p>Availability date: June 10, 2026</p>
+<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
+<p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-* **Rich text in editable fields for fragments** - You can now add rich text to customizable fragments that are used in your emails content. For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.
+<table>
+<thead>
+<tr>
+<th><strong>Rich text in editable fields for fragments</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now add rich text to customizable fragments that are used in your emails content.</p>
+<p>For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-<!--
-* **Text mode support in fragments** - To support text-based email workflows, you can now create and manage text versions of your visual fragments for optimal use in the plain text version of emails that include that fragment. When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered — both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.
--->
+* **Enhanced Image to HTML converter** - A new version of the Image to HTML converter feature is now available, bringing improved accuracy for HTML generation. This update leverages higher-tier LLM models to deliver more precise and reliable HTML output from image inputs.
+
++++ Coming soon — **Information below is subject to change**
+
+<table>
+<thead>
+<tr>
+<th><strong>Modules in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer now includes a library of ready-to-use layout modules — such as headers, product cards, information blocks, and footers — that you can drag and drop directly into your email canvas.</p>
+<p>Each module comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
+<p>Availability date: June 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
++++
 
 ### Mobile messaging (SMS, MMS, RCS & LINE) {#june-26-mobile}
 
@@ -227,32 +227,65 @@ The following capabilities and improvements are coming to content management and
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>AI Assistant for content generation enhancements</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>This release improves the <strong>AI Assistant</strong> content generation experience with stronger image editing, more reliable brand extraction, and content authenticity support in the image flow:</p>
+<ul>
+<li><strong>AI image editing</strong> is now available in the image generation flow, including Firefly third-party model support, so you can refine source images without leaving the assistant.</li>
+<li><strong>Brand signal extraction</strong> delivers higher-quality results. When selected pages lack sufficient signal, improved fallbacks now populate colors, typography, writing guidelines, and other brand attributes.</li>
+<li><strong>Web-based brand extraction</strong> is more reliable. Improved timeout handling helps prevent slow pages, popups, and cookie banners from blocking extraction.</li>
+<li><strong>Content authenticity (CAI)</strong> is now supported in the image flow. This release also fixes reference image upload issues and improves handling for images without an existing C2PA manifest.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!--
 ### Campaigns {#june-26-campaigns}
 
 The following improvement is coming to campaigns in this release.
 
 * **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default **execution field** set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
+-->
 
 ### Reporting {#june-26-reporting}
 
 The following improvements are coming to reporting in this release.
 
-* **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metrics are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
-  * Estimated Clicks: Total clicks counted after removing identified bot and non-human traffic.
+* **Estimated clicks for Email and SMS reporting** — A new **Estimated Clicks** metric is now available in Journeys, Campaigns, and Channel reports for email and SMS. This metric excludes identified bot and non-human interaction (NHI) traffic to provide a clearer view of genuine customer engagement. The existing Clicks metric remains available and continues to report total clicks.
+
++++ Coming soon — **Information below is subject to change**
+
+* **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
+
   * Estimated CTR: Estimated Clicks relative to total deliveries.
   * Estimated CTOR for email only: Estimated Clicks relative to Estimated Opens.
+  
+  Availability date: Late June, 2026
+
++++
 
 ### Configuration {#june-26-configuration}
 
 The following improvements are coming to configuration and administration in this release.
 
-* **Web Application Firewall (WAF) IP whitelistings** - Adobe Journey Optimizer now supports WAF IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their Journey Optimizer-hosted landing pages.
-
-* **Feedback Loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub **One-Time Password (OTP)** directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification.
-
-* **Updated batch ending throughput benchmarks with customer-facing scenarios** - Adobe Journey Optimizer's batch sending throughput benchmarks have been updated to reflect production-grade performance across multiple personalization scenarios — from basic sends to complex dynamic content with conditional logic. The refreshed metrics are now available in the product description to help customers accurately plan their messaging volumes.
-
 * **Dataset moving from streaming to batch mode** - The AJO Message Feedback Event Dataset is transitioning from streaming to **batch ingestion mode**. This change ensures that data ingestion does not exceed streaming ingestion limits. If you use this dataset in Customer Journey Analytics reports or run queries against it, expect an increase in data latency of up to 2 hours going forward.
+
++++ Coming soon — **Information below is subject to change**
+
+* **Web Application Firewall (WAF) IP whitelisting** - Adobe Journey Optimizer now supports Web Application Firewall (WAF) IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their AJO-hosted landing pages.
+  
+  Availability date: Late June, 2026
+
++++
 
 ### Usability improvements {#june-26-usability}
 

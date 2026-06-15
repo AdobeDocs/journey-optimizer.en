@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Suppression list {#suppression-list}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how the suppression list excludes specific email addresses and domains from your deliveries to protect your sending reputation and delivery rates.
+
+>[!ENDSHADEBOX]
+
 A suppression list consists of addresses and domains that you want to exclude from your deliveries, because sending to these contacts could hurt your sending reputation and delivery rates.
 
 The [!DNL Journey Optimizer] suppression list is managed at your own environment level, i.e. for a given sandbox.

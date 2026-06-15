@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Wait activity {#wait-activity}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure the Wait activity to pause a path for a relative duration or until a custom calculated date before the next activity runs.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_wait"
 >title="Wait activity"

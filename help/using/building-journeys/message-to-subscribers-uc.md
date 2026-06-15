@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Send a message to the subscribers of a list {#send-a-message-to-the-subscribers-of-a-list}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build a journey that sends a message to the subscribers of a list using the Consent and Preference Details field group.
+
+>[!ENDSHADEBOX]
+
 The purpose of this use case is to create a journey to send a message to the subscribers of a list.
 
 In this example, the **[!UICONTROL Consent and Preference Details]** field group from [!DNL Adobe Experience Platform] is used. To find this field group, from the **[!UICONTROL Data Management]** menu, choose **[!UICONTROL Schemas]**. On the **[!UICONTROL Field groups]** tab, enter the name of the field group in the search field.

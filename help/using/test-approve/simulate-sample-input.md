@@ -36,7 +36,13 @@ topic_v2:
     internal-label: Personalization
 ---
 # Simulate content variations {#custom-profiles}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Confirm your personalized content renders correctly for every type of recipient by testing variants generated with AI, entered manually, imported from a file, or based on simulated users, then previewing them and sending proofs.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_sample_profiles"
 >title="Simulate using sample input"

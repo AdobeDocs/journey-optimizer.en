@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Set your journey properties {#jo-properties}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set a journey's global properties — including its name, entrance rules, time zone, start and end dates, timeout, exit criteria, and conflict management — from the right rail during authoring.
+
+>[!ENDSHADEBOX]
+
 Use journey properties to configure global settings for your journey, including its name, entrance rules, timezone, start and end dates, timeout duration, exit criteria, and conflict management. Properties are accessible from the right rail at any stage of journey authoring.
 
 >[!CONTEXTUALHELP]
@@ -459,6 +465,36 @@ The **[!UICONTROL Conflict management]** section in the journey's properties all
   For situations where this same inbound channel configuration is used in other campaigns or journeys, the inbound action with the highest priority score is shown to the recipient. If multiple journeys or campaigns have the same score, the element that was most recently modified is chosen.
 
 * **View conflicts** with other journeys, campaigns, or channel configurations. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. [Learn how to identify potential conflicts in journey](../conflict-prioritization/conflicts.md)
+
+## Frequently asked questions {#faq}
+
+**Where do I find a journey's properties?**
+
+Properties are in the right rail of the journey canvas. They appear by default when you create a new journey. For an existing journey, click the pencil icon next to the journey's name to open them. For live journeys, the panel shows only the publication date and the name of the user who published the journey. See [Access the properties of a journey](#access-properties).
+
+**Can I change properties on a live journey?**
+
+Most properties are read-only once a journey is live. To modify them, create a new journey version or duplicate the journey, make your changes in draft, and [publish](publish-journey.md) again.
+
+**What is the difference between the reentrance setting and the reentrance wait period?**
+
+**[Allow reentrance](#allow-reentrance)** controls whether a profile can enter the journey more than once at all. The **[Reentrance wait period](#reentrance-wait)** (displayed only when reentrance is allowed) defines how long to wait before the same profile can re-enter a unitary journey. The default is 5 minutes and the maximum is 90 days. For more details, see [Profile entrance management](entry-management.md).
+
+**How long can a profile stay in a journey?**
+
+A [global journey timeout](#global_timeout) stops a profile **91 days** after they enter — an individual's journey cannot last longer than that. This timeout is not displayed in the interface and cannot be changed. Because profile data is removed after 91 days, reentrance blocking cannot be guaranteed beyond that period. See also [How journeys end](end-journey.md#journey-finished-definition).
+
+**Why does my journey fail to publish because of payload size?**
+
+The **[!UICONTROL Current journey payload size]** indicator shows your journey's payload against the configured limit (4 MB by default). If the payload approaches or exceeds the limit, publication fails. Reduce the size by simplifying the journey logic or reducing the number of activities, or contact Adobe Customer Care to request a higher limit. See [Journey payload size](#journey-payload-size), [Journey payload size validation](../start/guardrails.md#journey-payload-size), and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys).
+
+**Which merge policy does my journey use?**
+
+It depends on the journey type: [Read audience](read-audience.md) and [Audience qualification](audience-qualification-events.md) journeys use the audience's merge policy, [unitary event](../event/about-events.md) journeys use the default merge policy, and [business event](../event/about-creating-business.md) journeys use the merge policy of the targeted audience in the following Read audience activity. The same merge policy applies throughout the entire journey. If an audience merge policy is updated, any active journey referencing that audience must be republished or duplicated. See [Merge policy](#merge-policies).
+
+**What is the difference between the 91-day journey timeout and the 91-day reporting window?**
+
+These are separate concepts. The **[journey global timeout](#global_timeout)** (91 days) is the maximum time an individual profile can remain active in a journey, after which the profile exits and its data is deleted. The **reporting window** (approximately 91 days) is a UI display limit: performance data older than ~91 days is no longer visible, but the journey keeps running and new profiles keep entering. For TTL and data retention details, see the [Time-to-Live (TTL) and data retention FAQ](#timeout-faq).
 
 ## Related topics {#related-topics}
 

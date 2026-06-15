@@ -15,6 +15,12 @@ subfeature_v2: []
 ---
 # Send using waves in journeys {#send-using-waves-journeys}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to deliver outbound messages from a read audience journey in scheduled batches, called waves, to balance load, protect downstream systems, and support deliverability.
+
+>[!ENDSHADEBOX]
+
 You can deliver outbound messages from a journey in batches (waves) over time instead of all at once. Wave sending helps balance load, avoid overwhelming downstream systems (such as call centers or landing pages), and support deliverability and sender reputation—especially for high-volume read audience journeys.
 
 <!--

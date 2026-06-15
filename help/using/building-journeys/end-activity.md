@@ -15,6 +15,12 @@ subfeature_v2: []
 ---
 # End activity{#end-activity}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the End activity to mark the end of each journey path and add labels that make your journey reports easier to read.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_end"
 >title="End activity"

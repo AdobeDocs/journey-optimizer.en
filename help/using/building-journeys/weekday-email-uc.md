@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Send emails only on weekdays {#send-emails-only-on-weekdays}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure a journey that sends emails only on weekdays, queuing weekend entries for Monday delivery using a condition activity and Wait activities with custom formulas.
+
+>[!ENDSHADEBOX]
+
 This use case demonstrates how to configure a journey in [!DNL Adobe Journey Optimizer] that sends emails only on weekdays (Monday through Friday). For profiles that enter the journey on weekends (Saturday or Sunday), emails are automatically queued and sent on Monday at a specified time. This ensures optimal engagement by delivering messages during the workweek.
 
 ## Use case overview

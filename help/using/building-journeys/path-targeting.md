@@ -14,6 +14,12 @@ subfeature_v2: []
 ---
 # Leverage path targeting {#targeting}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use targeting rules in the Optimize activity to deterministically route specific audiences down the right journey paths, with an optional fallback path.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_path_targeting_fallback"
 >title="What is fallback path?"

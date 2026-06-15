@@ -29,6 +29,12 @@ topic_v2:
 ---
 # Use the web non-visual editor {#web-non-visual-editor}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add CSS selector and page head modifications to your web pages with the Adobe Journey Optimizer non-visual editor, without installing a browser extension or loading the web designer.
+
+>[!ENDSHADEBOX]
+
 In addition to the [!DNL Journey Optimizer] visual [web designer](web-visual-editor.md), you can also add modifications to your web pages using a **non-visual editor**.
 
 This can be useful if you cannot, or are not allowed to, install browser extensions such as the [Adobe Experience Cloud Visual Helper](web-prerequisites.md#visual-authoring-prerequisites), which is required to load your pages in the web designer.

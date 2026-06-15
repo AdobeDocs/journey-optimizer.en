@@ -35,6 +35,12 @@ topic_v2:
 ---
 # End a journey {#journey-ending}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how journeys end both for individual profiles and overall, and how to close or stop a live journey when you need to halt new entrances or all processing.
+
+>[!ENDSHADEBOX]
+
 >[!TIP]
 >
 >Looking for practical guidance on when and how profiles should exit journeys? See our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes real-world exit scenarios, best practices, and configuration guidance.

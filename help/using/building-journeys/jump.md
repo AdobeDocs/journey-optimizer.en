@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Jump from one journey to another {#jump}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Jump activity to push individuals from one journey to another, simplifying complex designs and building reusable, common journey patterns.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_jump"
 >title="Jump activity"

@@ -45,6 +45,12 @@ topic_v2:
 ---
 # Pause a journey {#journey-pause}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to pause and resume a live journey to safely make changes or stop sends, including applying profile attribute exit criteria during the pause.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_pause"
 >title="Pause your journey"

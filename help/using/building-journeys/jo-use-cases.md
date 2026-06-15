@@ -47,6 +47,12 @@ topic_v2:
 ---
 # Learn through use cases {#jo-uc-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore a library of practical Adobe Journey Optimizer use cases and end-to-end scenarios to help you design journeys, model data, and build activation logic.
+
+>[!ENDSHADEBOX]
+
 This section brings together a collection of practical use cases to help you get the most out of [!DNL Adobe Journey Optimizer]. Whether you are looking for tactical patterns—like suppression logic, personalization techniques, or journey exit strategies—or complete end-to-end scenarios covering marketing and technical workflows, you will find links to relevant samples below.
 
 Use this library as a reference point when designing journeys, modeling data, or building activation logic. Each example includes recommendations you can tailor to your specific needs.

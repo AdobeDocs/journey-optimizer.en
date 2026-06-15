@@ -32,6 +32,12 @@ level_v2:
 ---
 # Condition activity {#condition-activity}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Condition activity to route profiles into different journey paths based on rules, data, and audience membership.
+
+>[!ENDSHADEBOX]
+
 Use the condition activity to route profiles to different paths based on rules and data.
 
 ## Add a condition activity {#add-condition-activity}

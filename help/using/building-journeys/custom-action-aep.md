@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Use custom actions to write journey events in Experience Platform {#custom-action-aep}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to write custom journey events into Adobe Experience Platform from your journeys using custom actions and authenticated API calls.
+
+>[!ENDSHADEBOX]
+
 This use case explains how to write custom events into [!DNL Adobe Experience Platform] from Journeys using Custom Actions and Authenticated calls.
 
 ## Configure a developer project {#custom-action-aep-IO}

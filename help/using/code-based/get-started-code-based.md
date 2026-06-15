@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Get started with code-based channel {#get-started-code-based}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how the code-based channel lets you deliver personalized content to granular locations across your apps and web pages, and when to use it instead of other channels.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to personalize and test the experiences you want to deliver to your customers across all your touchpoints like: web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, voice assistants, IoT devices, etc.
 
 With the **code-based experience** capability, you can define inbound experiences using a simple and intuitive non-visual editor. It allows you to insert and edit specific elements at individual and more granular locations of your apps or web pages, no matter the type of applications you have - rather than applying modifications to an entire content.

@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Conditions {#conditions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use conditions in the Optimize activity to create multiple journey paths based on data sources, time, dates, percentage splits, profile caps, or audience membership.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_conditions"
 >title="Conditions"

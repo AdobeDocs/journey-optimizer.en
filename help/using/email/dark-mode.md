@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Manage dark mode content {#dark-mode}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how email clients handle dark mode and how to preview and define custom dark mode settings in the Email Designer, along with best practices for consistent rendering.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ac_edition_darkmode"
 >title="Switch to dark mode"

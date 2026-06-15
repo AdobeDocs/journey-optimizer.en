@@ -64,6 +64,12 @@ topic_v2:
 ---
 # Work with journey step events {#work-with-journey-step-events}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn what journey step events are in Adobe Journey Optimizer, why they matter, and how to use them for analytics, monitoring, and optimization through Adobe Experience Platform.
+
+>[!ENDSHADEBOX]
+
 Journey step events are automatically generated events that capture detailed information about each step a [profile](../audience/get-started-profiles.md) takes as they progress through a [journey](../building-journeys/journey.md) in Adobe Journey Optimizer. These events provide comprehensive visibility into [journey performance](../building-journeys/report-journey.md) and enable powerful analytics capabilities.
 
 ## What are journey step events {#what-are-step-events}

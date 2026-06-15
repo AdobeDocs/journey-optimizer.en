@@ -55,6 +55,12 @@ topic_v2:
 ---
 # Get started with journeys {#jo-general-principle}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the fundamentals of journeys in Adobe Journey Optimizer, including journey types, the design workflow, key capabilities, and best practices for building personalized customer experiences.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_canvas"
 >title="Create a journey"

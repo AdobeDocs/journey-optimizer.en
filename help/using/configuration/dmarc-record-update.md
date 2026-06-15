@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Comply with new DMARC requirement {#dmarc-record-update}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn why and when you must set up a DMARC record for the subdomains you delegated to Adobe in Adobe Journey Optimizer to comply with the Google and Yahoo sender requirements.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_dmarc_banner_link"
 >title="Learn more about mandatory DMARC update"

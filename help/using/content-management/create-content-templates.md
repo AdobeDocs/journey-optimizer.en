@@ -32,7 +32,13 @@ level_v2:
     internal-label: Beginner
 ---
 # Create content templates {#create-content-templates}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create content templates from scratch or by saving existing campaign or journey content as a reusable template in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_create_template"
 >title="Define your own content template"

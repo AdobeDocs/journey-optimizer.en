@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Use the Email Designer content components {#content-components}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add and configure Email Designer content components such as buttons, text, images, dividers, HTML, social links, and offer decisions to build your email content.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ac_content_components_email"
 >title="About Content components"

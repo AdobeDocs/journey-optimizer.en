@@ -29,6 +29,12 @@ subfeature_v2:
 ---
 # Combine targeting and experimentation {#combination}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to combine targeting and experimentation within a single journey or campaign so that experiments stay specific to each targeting rule.
+
+>[!ENDSHADEBOX]
+
 Journey Optimizer also allows you to combine targeting and experiments within a single journey or campaign to create more sophisticated strategies.
 
 Indeed, you can use targeting to create several variants, and for each variant, use experimentation to further optimize each content. This ensures that experiments are specific to each targeting rule and do not span across variants.

@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Define the API triggered campaign audience {#api-audience}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Define the audience, identity type, automatic profile creation, and webhooks so your API triggered campaign reaches the right individuals and returns real-time delivery status.
+
+>[!ENDSHADEBOX]
+
 Use the **[!UICONTROL Audience]** tab to define the campaign audience.
 
 ![](assets/campaign-audience.png)

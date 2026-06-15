@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Query examples {#query-examples}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore ready-to-use SQL query examples for Journey Optimizer system datasets so you can analyze email and push tracking, message feedback, journey step, and decisioning data for reporting and troubleshooting.
+
+>[!ENDSHADEBOX]
+
 In this page, you will find the list of Adobe Journey Optimizer datasets and related use cases:
 
 * [Email Tracking Experience Event Dataset](#email-tracking-experience-event-dataset)

@@ -49,6 +49,12 @@ topic_v2:
 ---
 # Get started with content experiments {#get-started-experiment}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how content experiments in Adobe Journey Optimizer use randomized trials to test message variations, how results are calculated, and how to interpret reports to optimize your campaigns.
+
+>[!ENDSHADEBOX]
+
 ## What is a content experiment?
 
 Content experiments allow you to optimize content for the actions in your Campaigns.

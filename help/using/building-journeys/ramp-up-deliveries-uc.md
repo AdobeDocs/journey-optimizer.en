@@ -36,6 +36,12 @@ level_v2:
 ---
 # Use case: ramp up your deliveries{#use-case-ramp-up-your-deliveries}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build a journey that gradually ramps up your email deliveries using the Optimize activity and a profile cap, helping you warm up a new IP address and establish your sender reputation.
+
+>[!ENDSHADEBOX]
+
 If you recently moved to another email service provider, IP address, or email domain or subdomain, you need to establish your reputation as a sender. Otherwise, your deliveries might be blocked or moved to the spam folder of the recipients' mailbox. Learn how to increase your email reputation with IP warming in the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"}.
 
 To warm up your IP, you can gradually ramp up the number of your deliveries. Read more about [optimizing deliverability in Journey Optimizer](../reports/deliverability.md).

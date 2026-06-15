@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Create and schedule an Orchestrated campaign {#create-first-campaign}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create an Orchestrated campaign in Adobe Journey Optimizer and define its execution schedule to run it immediately, at a specific date and time, or on a recurring basis.
+
+>[!ENDSHADEBOX]
+
 Create an Orchestrated campaign in [!DNL Adobe Journey Optimizer] and configure its execution schedule to control when it starts and how often it runs. Choose to launch the campaign immediately, at a specific date and time, or on a recurring basis using flexible scheduling options such as daily, weekly, or monthly frequencies.
 
 ## Create the campaign {#create}

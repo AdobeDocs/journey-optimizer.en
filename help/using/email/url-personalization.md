@@ -15,6 +15,12 @@ subfeature_v2:
 ---
 # Personalize URLs in emails {#url-personalization}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to personalize email URLs with profile attributes, including complete or base URLs and per-link tracking parameters, while keeping links valid and trackable.
+
+>[!ENDSHADEBOX]
+
 Personalized URLs help you deliver contextual experiences through your [!DNL Journey Optimizer] email messages, such as generating recipient-specific links or appending dynamic parameters.
 
 They take recipients to specific pages of a website, or to a personalized microsite, depending on the profile attributes.

@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Configure your web experiences {#web-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a web channel configuration in Adobe Journey Optimizer, targeting either a single page URL or multiple pages with a pages matching rule and its available operators.
+
+>[!ENDSHADEBOX]
+
 ## Create a web channel configuration {#create-web-configuration}
 
 A web configuration is a web property identified by a URL where the content will be delivered. It can match a single page URL or multiple pages, allowing you to deliver modifications across one or several web pages.

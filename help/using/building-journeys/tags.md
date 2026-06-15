@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Manage tags in journeys {#journey_tags}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to organize journeys with tags and tag categories so you can classify, filter, and find your journeys more easily than with naming conventions.
+
+>[!ENDSHADEBOX]
+
 As a Journey Optimizer practitioner, you can organize your journeys using tags. Tags are a quick and easy way of classifying objects to improve search.
 
 ## Tags vs. naming conventions {#tags-vs-naming}

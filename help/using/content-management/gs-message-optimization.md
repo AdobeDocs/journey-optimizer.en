@@ -47,6 +47,12 @@ topic_v2:
 ---
 # Get started with content optimization {#message-optimization}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how content optimization in Adobe Journey Optimizer uses targeting, experimentation, or both to deliver the best-performing personalized content across your campaigns and journeys.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_optimization"
 >title="Content optimization"

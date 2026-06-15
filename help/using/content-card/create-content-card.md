@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Create content cards {#create-content-card}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Author a content card and define its content within a journey or campaign so you can deliver personalized in-app experiences with the delivery rules you choose.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_content_card"
 >title="Content Card action"

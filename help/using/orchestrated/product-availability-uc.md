@@ -26,6 +26,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Follow this use case to build a back-in-stock Orchestrated campaign that uses multi-level sending to deliver a separate, personalized email for each saved wishlist item when products become available again.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 This use case showcases multi-level sending: generating a distinct email for each wishlist item by using the email address stored with the individual item rather than the recipient record. This enables customers to receive separate notifications for every product on their wishlist even if they use different email addresses for different items.
 
 >[!ENDSHADEBOX]

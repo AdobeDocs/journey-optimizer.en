@@ -35,6 +35,12 @@ level_v2:
 ---
 # Test email content templates {#test-template}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview and test the rendering of your email content templates in Adobe Journey Optimizer and send proofs to have them approved before use.
+
+>[!ENDSHADEBOX]
+
 You can test the rendering of some of your email templates, whether created from scratch or from an existing content. To do so, follow the steps below.
 
 1. Access the content template list through the **[!UICONTROL Content Management]** > **[!UICONTROL Content Templates]** menu and select any email template.

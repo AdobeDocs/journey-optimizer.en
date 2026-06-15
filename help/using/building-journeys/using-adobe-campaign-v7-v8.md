@@ -36,6 +36,12 @@ topic_v2:
 ---
 # [!DNL Adobe Campaign] v7/v8 actions {#using_campaign_v7-v8} 
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Adobe Campaign v7 and v8 integration to send emails, push notifications, and SMS from your journeys through Campaign transactional messaging.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_acc"
 >title="Custom actions"

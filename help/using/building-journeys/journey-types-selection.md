@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Journey types and selection guide {#journey-types-selection}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to compare the four journey types — unitary, read audience, audience qualification, and business event — and use the decision guide and feature compatibility matrix to choose the right one for your use case.
+
+>[!ENDSHADEBOX]
+
 [!DNL Adobe Journey Optimizer] supports four journey types, each designed for different entry mechanisms and business scenarios. This guide helps you understand the differences and choose the right type for your use case.
 
 ## Journey types overview {#journey-types}

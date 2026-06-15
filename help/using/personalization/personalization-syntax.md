@@ -33,6 +33,12 @@ subfeature_v2:
 ---
 # Personalization syntax {#personalization-syntax}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the Handlebars and PQL personalization syntax in Adobe Journey Optimizer, including general rules, reserved keywords, type coercion, available namespaces, and best practices.
+
+>[!ENDSHADEBOX]
+
 Personalization in [!DNL Journey Optimizer] uses two complementary syntaxes that work together in the same expression:
 
 * **Handlebars** (`{{...}}`) — used to render profile attributes, loop over arrays, and call block helpers. Refer to the [HandlebarsJS documentation](https://handlebarsjs.com/) for a complete reference.

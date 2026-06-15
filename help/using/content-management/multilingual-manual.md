@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Create multilingual content with manual translation {#multilingual-manual}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create multilingual content with manual translation by configuring language settings and translating or importing content directly in your campaigns and journeys for each locale.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >For manual flow, users need to be granted the **[!UICONTROL Manage Language settings]** permission. 

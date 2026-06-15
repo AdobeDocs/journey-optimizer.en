@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Use API call responses in custom actions {#custom-action-enhancements}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Capture the response payload returned by a custom action's API call so you can orchestrate journeys, personalize messages, and handle errors based on data from the external system.
+
+>[!ENDSHADEBOX]
+
 You can leverage API call responses in custom actions and orchestrate your journeys based on these responses.
 
 <!--

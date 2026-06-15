@@ -50,6 +50,11 @@ topic_v2:
 ---
 # Design your journey {#design-your-journey}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the journey designer canvas and palette to drag and drop events, orchestration, and action activities into a sequenced flow that builds your journey.
+
+>[!ENDSHADEBOX]
 
 [!DNL Adobe Journey Optimizer] includes an omnichannel orchestration canvas which allows marketers to harmonize marketing outreach with one-to-one customer engagement. The user interface allows you to easily drag and drop activities from the palette into the canvas to build your journey. Note that you can also double-click on an activity to add it in the canvas, at the next available step. 
 

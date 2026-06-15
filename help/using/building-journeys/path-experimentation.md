@@ -14,6 +14,12 @@ subfeature_v2: []
 ---
 # Use path experimentation {#experimentation}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up path experimentation with the Optimize activity to test different journey paths using A/B or multi-armed bandit experiments, identify the best-performing treatment by success metric, and scale the winner.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_path_experiment_success_metric"
 >title="Success metric"

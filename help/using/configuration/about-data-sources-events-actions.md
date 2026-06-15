@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Get started with journeys configuration {#configure-journeys}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure the data sources, events, and actions required to trigger journeys, enrich them with external data, and send messages in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_configuration_dashboard"
 >title="About journey configuration"

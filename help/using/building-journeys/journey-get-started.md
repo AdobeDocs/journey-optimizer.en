@@ -47,6 +47,12 @@ topic_v2:
 ---
 # Journey orchestration - complete guide{#journey-orchestration-guide}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get a complete guide to journey orchestration in Adobe Journey Optimizer, covering how to design, manage, and refine multistep, multichannel customer journeys that adapt in real time.
+
+>[!ENDSHADEBOX]
+
 Journeys in [!DNL Adobe Journey Optimizer] empower you to create personalized, multistep customer journeys that adapt in real-time to your audience's behavior and needs. Using an intuitive drag-and-drop canvas, you can orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact.
 
 Whether you're exploring real-time triggers, managing journey properties, or using advanced tools like custom actions and expressions, this guide provides a clear roadmap to confidently design and refine journeys that deliver meaningful, timely customer experiences.

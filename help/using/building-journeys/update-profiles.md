@@ -33,6 +33,12 @@ level_v2:
 ---
 # Update Profile {#update-profile}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Update Profile action activity to enrich or correct an existing Adobe Experience Platform profile as a customer progresses through a journey.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_update_profiles"
 >title="Update Profile activity"

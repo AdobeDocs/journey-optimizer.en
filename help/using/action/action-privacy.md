@@ -14,6 +14,12 @@ subfeature_v2: []
 ---
 # Data Governance {#restrict-fields}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Protect sensitive data by creating governance policies that link labels to marketing actions, then applying them to journeys, campaigns, and custom actions so restricted fields cannot be shared externally.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_data_governance_policy_violation"
 >title="Data Governance policy violation"

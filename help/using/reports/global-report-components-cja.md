@@ -44,6 +44,12 @@ topic_v2:
 ---
 # List of metrics {#list-of-components-global}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find definitions for the metrics used in Adobe Journey Optimizer reports across delivery types, including journey, email, SMS, push, in-app, landing page, direct mail, content card, web, and code-based experience metrics.
+
+>[!ENDSHADEBOX]
+
 The tables below give you the list of metrics used in reports and their definitions depending on the delivery type.
 
 ## Journey metrics {#journey-metrics}

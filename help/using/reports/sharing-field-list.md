@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Step event field list {#sharing-field-list}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Reference the journey step event fields organized by category, including debug, journey, profile, and service event fields, and troubleshoot discarded event types.
+
+>[!ENDSHADEBOX]
+
 Step event fields are organized by category.
 
 * Debug information fields

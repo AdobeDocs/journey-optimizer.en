@@ -13,7 +13,13 @@ feature_v2: []
 subfeature_v2: []
 ---
 # Simulate your journey {#simulate-journey}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to run Quick simulation and Manual simulation with simulated users to validate journey paths and review results before you publish.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)

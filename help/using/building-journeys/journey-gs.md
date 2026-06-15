@@ -46,6 +46,12 @@ topic_v2:
 ---
 # Create your first journey {#jo-quick-start}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the key steps to build your first journey in Adobe Journey Optimizer, from defining the entry audience or event to adding actions and publishing it live.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card2"
 >title="Create journeys"

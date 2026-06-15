@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Use [!DNL Adobe Experience Platform] data in journeys {#datalookup}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Dataset lookup activity to dynamically retrieve data from Adobe Experience Platform record datasets at runtime and enrich your journeys with external data for personalization and decision-making.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dataset_lookup"
 >title="Dataset lookup activity"

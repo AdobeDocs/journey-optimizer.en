@@ -14,6 +14,12 @@ subfeature_v2: []
 ---
 # Use case: create a custom action to send data to [!DNL Adobe Experience Platform]{#send-data-to-aep}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build a journey that gradually ramps up your email volume using an Optimize activity with a profile cap condition to warm up your IP and protect your sender reputation.
+
+>[!ENDSHADEBOX]
+
 If you recently moved to another email service provider, IP address, or email domain or subdomain, establish your reputation as a sender. Otherwise, deliveries might be blocked or moved to recipients' spam folders. For guidance, see the [Deliverability Best Practice Guide](https://experienceleague.adobe.com/docs/deliverability-learn/deliverability-best-practice-guide/additional-resources/generic-resources/increase-reputation-with-ip-warming.html){target="_blank"}.
 
 To warm up your IP, you can gradually ramp up the number of your deliveries. Read more about [optimizing deliverability in Journey Optimizer](../reports/deliverability.md).

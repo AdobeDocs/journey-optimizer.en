@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Campaign live report {#campaign-live-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the Campaign live report in Adobe Journey Optimizer to monitor real-time campaign performance over the last 24 hours across the Email, In-app, Push, SMS, Web, and Direct mail channels.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_report"
 >title="Campaign live report"
