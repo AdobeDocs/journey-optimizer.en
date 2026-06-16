@@ -12,11 +12,16 @@ keywords: journey optimizer, onboarding, onboarding hub, use cases, videos, tuto
 ---
 # Journey Optimizer onboarding hub {#onboarding-hub}
 
+
 >[!BEGINSHADEBOX]
 
 **On this page:** Ramp up on Adobe Journey Optimizer fast — watch a short orientation, follow step-by-step instructions to ship your first experience, browse real-world use cases, and dive into curated video content.
 
 >[!ENDSHADEBOX]
+
+<!-- 
+rebuild
+-->
 
 New to [!DNL Adobe Journey Optimizer]? This hub gathers the resources that help you go from zero to your first live customer experience — with step-by-step instructions for common goals, real-world use cases that show what is possible, and curated video content (tutorials, walkthroughs, and hands-on practice).
 
