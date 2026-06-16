@@ -26,6 +26,7 @@ solution: Journey Optimizer
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
   + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
+  + {hide-from-toc} [Onboarding hub](using/start/onboarding-hub.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer?](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
