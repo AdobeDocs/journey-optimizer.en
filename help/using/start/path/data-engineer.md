@@ -160,4 +160,4 @@ Collaborate with [Marketers](marketer.md) on audiences and data:
 | Developer | [Get started for developers](developer.md) |
 | Marketer | [Get started for marketers](marketer.md) |
 
-Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../rp_landing_pages/get-started-landing-page.md)
+Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../../rp_landing_pages/get-started-landing-page.md)
