@@ -7,7 +7,6 @@ feature: Get Started
 topic: Content Management
 role: Admin
 level: Intermediate
-hide: true
 keywords: journey optimizer, onboarding, onboarding project, rollout, implementation plan, admin, csm, implementation partner, phased checklist
 ---
 # Onboarding project guide {#onboarding-hub}
