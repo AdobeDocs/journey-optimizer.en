@@ -57,6 +57,12 @@ As a **Data Architect** or **Data Engineer**, you set up and maintain the custom
 
 >[!NOTE]
 >
+>**Implementation order:** [Administrator](administrator.md) → You are here: **Data Engineer** → [Developer](developer.md) → [Marketer](marketer.md)
+>
+>Complete [Administrator setup](administrator.md) before starting data foundation work.
+
+>[!NOTE]
+>
 >Learn more about **data ingestion** in [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 
 >[!TIP]
@@ -144,3 +150,14 @@ Collaborate with [Marketers](marketer.md) on audiences and data:
 * Support multi-entity segmentation for advanced use cases
 
 >[!ENDTABS]
+
+## Other role guides {#other-role-guides}
+
+| Role | Guide |
+|------|-------|
+| Administrator | [Get started for administrators](administrator.md) |
+| Data Engineer | [Get started for data engineers](data-engineer.md) |
+| Developer | [Get started for developers](developer.md) |
+| Marketer | [Get started for marketers](marketer.md) |
+
+Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../rp_landing_pages/get-started-landing-page.md)

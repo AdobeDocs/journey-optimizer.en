@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Roles and Responsibilities
-description: Learn about the different roles involved in Adobe Journey Optimizer and their responsibilities
+title: Roles and responsibilities | Adobe Journey Optimizer
+description: Understand roles, responsibilities, and the recommended implementation order for Adobe Journey Optimizer.
 feature: Get Started
 topic: Get Started
 role: Admin, Developer, User
@@ -64,7 +64,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-# Roles and Responsibilities
+# Roles and responsibilities
 
 >[!BEGINSHADEBOX]
 
@@ -72,21 +72,11 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-Adobe Journey Optimizer enables brands to deliver connected, contextual, and personalized experiences throughout the customer journey. Built with an end-to-end focus on scale, speed, and flexibility, Journey Optimizer combines three main value drivers in a unified application:
+Adobe Journey Optimizer is implemented by four distinct roles working in sequence. This page maps each role's responsibilities and links to detailed getting-started guides.
 
-* **Real-time customer insights and engagement** powered by Adobe's real-time customer profile
-* **Modern omnichannel orchestration** through unified canvases for both real-time journeys and batch campaigns, plus a modern message designer
-* **Intelligent decisioning and personalization** through decision management and AI/ML capabilities
-
-Journey Optimizer offers two main approaches to reach and engage customers:
-
-* **Journeys** — Real-time, one-to-one orchestration where each customer moves at their own pace, triggered by behavior or events. Best for onboarding sequences, cart abandonment, and lifecycle engagement.
-* **Campaigns** — Audience-based messaging with three delivery modes depending on your use case:
-  * **Action campaigns** — Scheduled or recurring messages delivered to a defined audience all at once. Best for newsletters, promotional announcements, and product launches.
-  * **API-triggered campaigns** — On-demand messages triggered by an external system via API. Best for transactional messages such as order confirmations, shipping alerts, and account notifications.
-  * **Orchestrated campaigns** — Complex batch workflows with multi-entity segmentation and canvas-based execution. Best for seasonal promotions, multi-step batch programs, and campaigns requiring exact pre-send counts.
-
-This unified experience allows you to implement entire use cases in one place, from defining audiences and designing journeys to creating personalized content and analyzing results. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
+>[!NOTE]
+>
+>New to Journey Optimizer? Start with [What is Journey Optimizer](get-started.md) first.
 
 **Important Note:** Adobe Journey Optimizer defines distinct roles with specific responsibilities. A single individual can perform multiple roles or all roles, depending on your organization's structure.
 
@@ -312,3 +302,12 @@ For more in-depth learning and updates, explore the following resources:
 * [Product Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ask questions and share knowledge
 
 >[!ENDTABS]
+
+## Role guides {#role-guides}
+
+| Role | Guide |
+|------|-------|
+| Administrator | [Get started for administrators](path/administrator.md) |
+| Data Engineer | [Get started for data engineers](path/data-engineer.md) |
+| Developer | [Get started for developers](path/developer.md) |
+| Marketer | [Get started for marketers](path/marketer.md) |

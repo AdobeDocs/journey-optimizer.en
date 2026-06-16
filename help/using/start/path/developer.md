@@ -3,7 +3,7 @@ title: Get Started for Developers
 description: As a Developer, learn more how to work with Journey Optimizer
 feature: Get Started
 role: Developer
-level: Experienced
+level: Intermediate
 exl-id: 5053dd4f-d050-415f-bc74-d6d061bdcbe1
 TQID: https://experienceleague.adobe.com/7fRI-CPkIeBAPjtXmDgFdyNKgB4WwEc01yKrGUXnc3U
 product_v2:
@@ -59,6 +59,12 @@ topic_v2:
 >[!ENDSHADEBOX]
 
 As a **Developer**, you are responsible for implementing and integrating [!DNL Adobe Journey Optimizer] into your applications and systems. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) and the [Data Engineer](data-engineer.md) have granted you access and prepared your environment.
+
+>[!NOTE]
+>
+>**Implementation order:** [Administrator](administrator.md) → [Data Engineer](data-engineer.md) → You are here: **Developer** → [Marketer](marketer.md)
+>
+>Ensure [data schemas and events](data-engineer.md) are configured before implementing your mobile and web integrations.
 
 ## Your role in the Journey Optimizer ecosystem
 
@@ -329,3 +335,14 @@ Ready to start building? Choose your first implementation area from the sections
 4. **Custom system?** Check out [Custom actions](#custom-actions)
 
 Each section includes links to detailed technical documentation, code samples, and tutorials to guide your implementation.
+
+## Other role guides {#other-role-guides}
+
+| Role | Guide |
+|------|-------|
+| Administrator | [Get started for administrators](administrator.md) |
+| Data Engineer | [Get started for data engineers](data-engineer.md) |
+| Developer | [Get started for developers](developer.md) |
+| Marketer | [Get started for marketers](marketer.md) |
+
+Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../rp_landing_pages/get-started-landing-page.md)

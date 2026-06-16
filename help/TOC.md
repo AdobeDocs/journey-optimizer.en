@@ -25,14 +25,13 @@ solution: Journey Optimizer
   + [Documentation updates](using/rn/documentation-updates.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
-  + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
-  + {hide-from-toc} [Onboarding hub](using/start/onboarding-hub.md)
+  + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + Essentials {#essentials}
-    + [What is Journey Optimizer?](using/start/get-started.md)
+    + [What is Journey Optimizer](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
     + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
-    + {hide-from-toc} [Which capability for this job?](using/start/ajo-use-case-guide.md)
+    + [Use case overview](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + {hide-from-toc} [Capabilities by package](using/start/ajo-packages.md)
     + {hide-from-toc} [Packages and capabilities (v2)](using/start/ajo-packages-v2.md)
@@ -43,6 +42,7 @@ solution: Journey Optimizer
     + [Get started as a Data Engineer](using/start/path/data-engineer.md)
     + [Get started as a Developer](using/start/path/developer.md)
     + [Get started as a Marketer](using/start/path/marketer.md)
+  + {hide-from-toc} [Onboarding project guide](using/start/onboarding-hub.md)
   + Work efficiently {#work-efficiently}
     + [Navigate the interface](using/start/user-interface.md)
     + [Search, filter & organize](using/start/search-filter-categorize.md)
