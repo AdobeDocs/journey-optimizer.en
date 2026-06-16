@@ -237,3 +237,4 @@ Start creating right away with these essential guides:
 
 ## Looking for the implementation sequence?
 
+If your team is setting up Journey Optimizer for the first time, see [Roles and responsibilities](../using/start/quick-start.md) for the recommended order of operations across all roles.
