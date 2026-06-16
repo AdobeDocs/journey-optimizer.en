@@ -9,7 +9,6 @@ role: User
 level: Intermediate
 keywords: channel, optimization, preference, propensity, AI, outbound, email, push, SMS
 badge: label="Limited Availability" type="Informative"
-exl-id: a3f2b8c1-9d4e-4f7a-b6e5-2c1d8a0f3e9b
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
