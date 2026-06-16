@@ -34,9 +34,7 @@ solution: Journey Optimizer
     + [Key terminology](using/start/terminology.md)
     + {hide-from-toc} [Which capability for this job?](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
-    + {hide-from-toc} [Capabilities by package](using/start/ajo-packages.md)
-    + {hide-from-toc} [Packages and capabilities (v2)](using/start/ajo-packages-v2.md)
-    + {hide-from-toc} [Packages and capabilities (v3)](using/start/ajo-packages-v3.md)
+    + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
   + Get started by role {#by-role}
     + [Roles and responsibilities](using/start/quick-start.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
