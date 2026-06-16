@@ -94,6 +94,8 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 
     * **[!UICONTROL Provider URL]**: Enter the URL of your SMS provider.
 
+    * **[!UICONTROL Channel Type]**: Optional. Indicate which mobile channel this credential represents, i.e. SMS, RCS, or MMS.
+
     * **[!UICONTROL Auth Type​]**: Select your authorization type and [complete the corresponding fields](#auth-options) based on the chosen authentication method.
 
         ![](assets/sms-byop.png)
