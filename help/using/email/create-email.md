@@ -299,9 +299,11 @@ If you have enabled the [HTML size optimization](#optimize-html-size) option, yo
 
 1. Select the test recipients and click the **[!UICONTROL Send proof]** button. Learn more about sending proofs in [this section](../content-management/proofs.md).
 1. Once sent, back in the **[!UICONTROL Simulate]** screen, click the **[!UICONTROL View Proof]** button.
-1. Review the optimization details displayed there, including the original HTML size, the optimized HTML size, and the size reduction percentage.
+1. Click the Info icon next to the status of the proof. The optimization details are displayed in a pop-up window, including the original HTML size, the optimized HTML size, and the size reduction percentage.
 
-Use this information to validate the optimized output and confirm the email stays within the recommended 100 KB threshold before publishing.
+    ![Email optimization details](assets/email-optimize-size-view-proof.png)
+    
+    Use this information to validate the optimized output and confirm the email stays within the recommended 100 KB threshold before publishing.
 
 <!--
 ## Define your email content {#email-content}
