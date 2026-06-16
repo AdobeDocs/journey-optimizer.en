@@ -95,7 +95,7 @@ To make portions of a visual fragment editable, follow these steps:
 >[!CONTEXTUALHELP]
 >id="ajo_editable_fragment_compatibility"
 >title="Legacy fragment"
->abstract="Editable fields in this fragment are in text-only mode. This means you can only enter plain text when editing this fragment in emails—full formatting options such as bold, italic, hyperlinks, and line breaks is not supported. Click <b>Enable</b> to allow rich text in editable fields when using the fragment in an email."
+>abstract="Editable fields in this fragment are in text-only mode. This means you can only enter plain text when editing this fragment in emails—full formatting options such as bold, italic, hyperlinks, and line breaks are not supported. Click <b>Enable</b> to allow rich text in editable fields when using the fragment in an email."
 
 >[!CONTEXTUALHELP]
 >id="ajo_editable_field_compatibility"
