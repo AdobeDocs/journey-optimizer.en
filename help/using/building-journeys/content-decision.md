@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Content decision activity {#content-decision}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the content decision activity to include personalized offers in your journeys and deliver them to eligible profiles.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to include offers in your journeys through the dedicated **Content decision** activity in the journey canvas. You can then add other activities (such as [custom actions](../action/about-custom-action-configuration.md)) to your journeys to target your audiences with these personalized offers.
 
 >[!NOTE]

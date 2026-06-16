@@ -42,6 +42,12 @@ level_v2:
 ---
 # Profile entrance management {#entry-management}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how profile entrance and reentrance work for each type of journey so you can control when and how often profiles enter your journeys.
+
+>[!ENDSHADEBOX]
+
 Profile entrance management depends on the type of journey.
 
 >[!TIP]
@@ -134,9 +140,9 @@ For more information, refer to this [section](../event/about-creating-business.m
 
 ## Read audience journeys {#entry-read-audience}
 
-**Read audience** journeys can be recurring or "one-shot": 
+**Read audience** journeys can be recurring or non-recurring: 
 
-* For non-recurring/"one-shot" journeys: the profile enters once and only once in the journey.
+* For non-recurring journeys: the profile enters once and only once in the journey.
 
 * For recurring journeys: by default, all the profiles belonging to the audience enter the journey on each recurrence. They must finish the journey before they can reenter in another occurrence. 
 

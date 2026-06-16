@@ -34,11 +34,17 @@ topic_v2:
 ---
 # Create test profiles {#create-test-profiles}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create test profiles by uploading a CSV file or using API calls so you can preview content and test journeys in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Test profiles are required when using the [test mode](../building-journeys/testing-the-journey.md) in a journey, and to [preview and test your content](../content-management/preview-test.md).
 
 >[!NOTE]
 >
->[!DNL Journey Optimizer] allows testing different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV or JSON file, or added manually. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+>[!DNL Journey Optimizer] provides two ways to simulate content: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation; or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
 
 You can create test profiles by [uploading a CSV file](#create-test-profiles-csv) or using [API calls](#create-test-profiles-api). [!DNL Adobe Journey Optimizer] also provides a specific [in-product use case](#use-case-1) to facilitate test profile creation.
 

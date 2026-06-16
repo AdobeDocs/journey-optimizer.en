@@ -37,6 +37,12 @@ topic_v2:
 
 # Guardrails and limitations {#limitations}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the system, journey, audience, channel, and content limits of Adobe Journey Optimizer so you can plan deployments that scale without hitting failures.
+
+>[!ENDSHADEBOX]
+
 Below you will find guardrails and limitations when using [!DNL Adobe Journey Optimizer].
 
 Entitlements, product limitations and performance guardrails are listed in [Adobe Journey Optimizer product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.
@@ -46,36 +52,6 @@ Entitlements, product limitations and performance guardrails are listed in [Adob
 >* [Guardrails for Real-time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"} also apply to Adobe Journey Optimizer.
 >
 >* See also [Guardrails for Data Ingestion in Real-time Customer Profile](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"}
-
-## Key limits at a glance {#quick-reference}
-
-Use this table to look up the most critical numeric limits before you build or publish. Full details and context are in the sections below.
-
-| Area | Limit | Value |
-|---|---|---|
-| **Journeys** | [Max activities per journey](#journeys-guardrails-journeys) | **50** |
-| **Journeys** | [Max live / paused / dry-run journeys](#journeys-guardrails-journeys) | **100** |
-| **Journeys** | [Journey instance size](#journeys-guardrails-journeys) | **1 MB** |
-| **Journeys** | [Journey payload size (publish)](#journey-payload-size) | **2 MB** (warn at 90%) |
-| **Journeys** | [Global journey timeout](#journeys-guardrails-journeys) | **91 days** |
-| **Journeys** | [Pending event queue per profile](#journeys-guardrails-journeys) | **10 events** |
-| **Journeys** | [Concurrent Read Audience instances](#read-segment-g) | **5** across all sandboxes |
-| **Journeys** | [Read Audience sandbox throughput](#read-segment-g) | **20,000 profiles/sec** (shared) |
-| **Journeys** | [Read Audience job timeout](#read-segment-g) | **12 hours** |
-| **Channels** | [Inbound requests per second](#inbound-guardrails) | **5,000 RPS** |
-| **Channels** | [Max active inbound actions](#inbound-guardrails) | **500** |
-| **Channels** | [Transactional messages/sec (campaigns)](#transactional-message-guardrails) | **500** |
-| **Channels** | [Inbound journey events per second](#events-g) | **5,000** |
-| **Custom actions** | [Calls per minute (response < 0.75 s)](#custom-actions-g) | **300,000 / min** per host/sandbox |
-| **Custom actions** | [Calls per 30 s (response > 0.75 s)](#custom-actions-g) | **150,000 / 30 s** per host/sandbox |
-| **Content** | [Email message content at publish](#message-content-size) | **2 MB** (author under 1 MB) |
-| **Content** | [In-app message content](#in-app-activity-limitations) | **2 MB** |
-| **Content** | [Visual fragment size](#fragments-guardrails) | **100 KB** |
-| **Content** | [Expression fragment size](#fragments-guardrails) | **200 KB** |
-| **Content** | [Journey fragment nodes](#fragments-journey-g) | **20 nodes/fragment**, 200 active/sandbox |
-| **Audiences** | [Audience compositions per sandbox](#audience) | **10** |
-| **Datasets** | [Profile store TTL (new orgs/sandboxes)](#datasets-guardrails) | **90 days** |
-| **Datasets** | [Data lake TTL (new orgs/sandboxes)](#datasets-guardrails) | **13 months** |
 
 
 ## System & Platform {#system-platform}
@@ -92,6 +68,272 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 * **13 months** for data in the data lake
 
 This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
+
+## Journeys {#journeys-guardrails}
+
+This section covers guardrails and limitations for journeys, including general journey limitations, journey components (actions, events, data sources), journey activities, and specific features like custom actions and expression editor.
+
+### General journey guardrails {#journeys-guardrails-journeys}
+
+* The number of activities in a journey is limited to **50**. The number of activities is displayed on the upper left section of the journey canvas.
+
+  As journeys near this limit, editing and publishing performance may degrade, and save or validation failures can occur. If this happens, split your journey into smaller sub-journeys using [jump activities](../building-journeys/jump.md) or recreate it in a new version. The activity limit cannot be increased.
+
+* By default, the number of live/paused/dry run journeys at one time is limited to **100**. The current number of journeys is displayed above the journey canvas.
+
+  As you publish journeys, we automatically scale and adjust to ensure maximum throughput and stability. As you near the milestone of 100 live journeys at one time, you will see a notification appear in the UI on this achievement. If you see this notification and have a need to extend your journeys beyond 100 live journeys at a time, please create a ticket for customer care and we will help you reach your goals.
+
+* When using an audience qualification in a journey, that audience qualification activity may take up to **10 minutes** to be active and listen to profiles entering or exiting the audience.
+
+* A journey instance for a profile has a maximum size of **1 MB**. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (e.g., below **800 KB**) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
+
+* For each profile and journey version, the journey runtime keeps an internal queue of up to **10 pending events** while one is being processed. If this limit is reached, additional events are discarded with the `maxInstanceStackEventsReached` reason until the stack drains. See [Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached).
+
+* In addition to the timeout used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. This global timeout stops the progress of individuals in the journey **91 days** after they enter. [Read more](../building-journeys/journey-properties.md#global_timeout)
+
+>[!TIP]
+>
+>**What this means for you:** The **50-activity limit** and **100-live-journey limit** are the two guardrails most teams encounter first when scaling. Plan for journey splitting early, and spread Read Audience start times at least 5–10 minutes apart to avoid sandbox throughput contention.
+
+#### Journey payload size validation {#journey-payload-size}
+
+When you save or publish a journey, Journey Optimizer validates the total journey payload size to preserve stability and performance.
+
+| Scenario | Threshold | Behavior |
+|---|---|---|
+| Payload < 90% of limit | Below warning | Journey saves and publishes successfully. No warnings or errors displayed. |
+| Payload 90–99% of limit | Warning (soft) | Journey saves and publishes with a warning: **Warning**: Journey payload size is close to the limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
+| Payload ≥ 100% of limit | **Error (hard)** | Save or publish is blocked. Returns **HTTP 413 Request Entity Too Large**. Error: Journey payload size exceeds limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
+
+**Default configuration**
+
+* **Default maximum request size**: **2 MB** (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
+* **Warning threshold**: 90% of the maximum limit.
+* **Error threshold**: 100% of the maximum limit.
+
+**Troubleshooting and recommendations**
+
+* Review the largest node highlighted in the warning or error.
+* Simplify conditions, reduce data mappings, and remove unnecessary steps or parameters.
+* Consider splitting the journey into smaller journeys if needed.
+* If you believe your organization needs a higher limit, contact your Adobe representative.
+
+To monitor the current payload size of your journey before publishing, use the **[!UICONTROL Current journey payload size]** indicator in the journey properties panel. [Learn how to check the size of your journey payload](../building-journeys/journey-properties.md#journey-payload-size)
+
+### License package comparison {#select-package-limitations}
+
+>[!NOTE]
+>
+>The Select package limitations below do not apply to Read Audience or Business Event journeys. If you need more complex journey logic with multiple actions, conditions, or wait activities, consider upgrading your license package or using Read Audience journeys where applicable.
+
+For customers using the **Select** license package, the following additional limitations apply specifically to unitary journeys (journeys starting with an event or an audience qualification):
+
+| Limitation | Error code | Description |
+|---|---|---|
+| Only one action allowed | `ERR_PKG_SELECT_8` | Unitary journeys can contain only **one** action activity. Multiple email, push, SMS, or other action activities are not permitted within the same journey. |
+| No conditions allowed | `ERR_PKG_SELECT_7` | Condition activities cannot be used in unitary journeys. The journey must follow a single, linear path without branching logic. |
+| No wait activities | `ERR_PKG_SELECT_6` | Wait activities cannot be added to unitary journeys. Actions must execute immediately without delays. |
+| Timeout/error transitions must go to end node | `ERR_PKG_SELECT_2` | If you configure timeout or error transitions for an action (e.g., an email action), these paths must point directly to an end node. They cannot connect to other activities or actions in the journey. |
+
+>[!TIP]
+>
+>**What this means for you:** If you're on the Select package and need branching logic, wait activities, or multiple actions, you must use a Read Audience journey instead, or contact your Adobe representative about upgrading your package.
+
+### Journey versions {#journey-versions-g}
+
+The following guardrails apply to the [Journey versions](../start/user-interface.md):
+
+* A journey starting with an event activity in v1 cannot start with something else than an event in further versions. You cannot start a journey with a **Audience Qualification** event.
+* A journey starting with a **Audience Qualification** activity in v1 must always start with a **Audience Qualification** in further versions.
+* The audience and namespace chosen in **Audience Qualification** (first node) cannot be changed in new versions.
+* The reentrance rule must be the same in all journey versions.
+* A journey starting with a **Read Audience** cannot start with another event in next versions.
+* You cannot create a new version of a read audience journey with incremental read. You must duplicate the journey.
+
+### Journeys and profile creation {#journeys-limitation-profile-creation}
+
+There is a delay associated to API based profile creation/update in Adobe Experience Platform. The Service Level Target (SLT) in terms of latency is < 1 min from ingestion to Unified Profile for 95th percentile of requests, at a volume of **20K Requests per second (RPS)**.
+
+If a journey is triggered simultaneously to a profile creation and immediately checks/retrieves information from Profile Service, it might not work properly.
+
+You can choose from one of these two solutions:
+
+* Add a wait activity after the first event, to give Adobe Experience Platform the time it needs to perform the ingestion to Profile Service.
+
+* Set up a journey that does not immediately leverage the profile. For example, if the journey is designed to confirm an account creation, the experience event could contain information needed to send the first confirmation message (first name, last name, email address, etc.).
+
+### Events {#events-g}
+
+The following guardrails apply to the [Events](../event/about-events.md) in your journeys:
+
+* Journey Optimizer supports a peak volume of **5,000 inbound journey events per second**, across all sandboxes. Learn more about this limitation [on this page](../event/about-events.md#event-thoughput).
+* Event-triggered journeys may take up to **5 minutes** to process the first action in the journey.
+* For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
+* Business events cannot be used in conjunction with unitary events or audience qualification activities.
+* Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for **5 minutes**. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
+* Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch, events inserted via **Query Service**, or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but is not recommended as it can cause downstream challenges based on the actions used.
+
+### Data sources {#data-sources-g}
+
+The following guardrails apply to the [Data Sources](../datasource/about-data-sources.md) in your journeys:
+
+* External data sources can be leveraged within a customer journey to lookup external data in real time. These sources must be usable via REST API, support JSON and be able to handle the volume of requests.
+* Internal Adobe addresses (`.adobe.*`) are not allowed in URLs and APIs.
+
+>[!NOTE]
+>
+>As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases.
+
+### General actions {#general-actions-g}
+
+The following guardrails apply to the [Actions](../building-journeys/about-journey-activities.md) in your journeys:
+
+* Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
+* The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more on [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
+* You cannot place two actions in parallel, you must add them one after the other.
+* A profile cannot be present multiple times in the same journey, at the same time, for all active [versions of the journey](../building-journeys/publish-journey.md#journey-create-new-version). If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
+
+### Custom actions {#custom-actions-g}
+
+The following guardrails apply to the [Custom Actions](../action/action.md) in your journeys:
+
+* A capping limit of **300,000 calls over one minute** is defined for all custom actions, per host and per sandbox. This cap is enforced as a sliding window per sandbox and per endpoint for endpoints with response times less than 0.75 seconds. For endpoints with response times greater than 0.75 seconds, a separate limit of **150,000 calls per 30 seconds** (also a sliding window) applies.
+* The custom action URL does not support dynamic parameters.
+* POST, PUT and GET call methods are supported.
+* The name of the query parameter or header must not start with "." or "$".
+* IP addresses are not allowed in URLs. Use hostnames instead.
+* Internal Adobe addresses (`.adobe.*`) are not allowed in URLs and APIs.
+* Built-in custom actions cannot be removed.
+* Custom actions support JSON format only when using request or response payloads. See [this page](../action/about-custom-action-configuration.md#custom-actions-limitations).
+* Any endpoint targeted by a custom action must support at least **200 TPS**. Be cautious that a throttling configuration cannot go below 200 TPS. Depending on your expected throughput, having a high response time could impact the actual throughput.
+
+>[!TIP]
+>
+>**What this means for you:** The default 300,000 calls/min cap protects your external endpoints from being overwhelmed by journey throughput. If your endpoint can handle more load, you can raise this limit using the [Capping API](../configuration/capping.md) or [Throttling API](../configuration/throttling.md). For a broader overview of how Journey Optimizer connects to external systems, see [this page](../configuration/external-systems.md). Contact your Adobe representative if you need a higher organizational limit.
+
+### Supplemental identifiers {#supplemental}
+
+Specific guardrails apply to the use of supplemental identifiers in journeys. They are listed in [this page](../building-journeys/supplemental-identifier.md#guardrails).
+
+### Expression editor {#expression-editor}
+
+The following guardrails apply to the [journey expression editor](../building-journeys/expression/expressionadvanced.md):
+
+* Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You must create a new audience and use an `inaudience` condition in the journey.
+* `timeSeriesEvents` attributes cannot be used in the expression editor. To access Experience Events at a profile level, please create a new field group based on a `XDM ExperienceEvent` schema.
+
+### Journey activities {#activities}
+
+#### Audience Qualification activity {#audience-qualif-g}
+
+The following guardrail applies to the [Audience Qualification](../building-journeys/audience-qualification-events.md) journey activity:
+
+* The Audience qualification activity cannot be used with Adobe Campaign activities.
+* Supplemental identifiers are not supported for Audience qualification journeys.
+
+Learn more about journey processing rates and throughput limits in [this section](../building-journeys/entry-management.md#journey-processing-rate).
+
+Additional guardrails — including recommendations on streaming vs. batch audiences and composition audience limitations — are listed on [this page](../building-journeys/audience-qualification-events.md#audience-qualification-guardrails).
+
+#### Campaign activities {#ac-g}
+
+The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
+
+* Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
+* **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
+* **[!UICONTROL Campaign v7/v8]** activities can be used alongside native channel activities in the same journey.
+
+#### Reaction events {#reaction-events-g}
+
+Specific guardrails apply to **[!UICONTROL Reaction]** events, including the requirement to place the activity immediately after a channel action and the inability to track messages sent in a different journey. They are listed on [this page](../building-journeys/reaction-events.md#guardrails-limitations).
+
+#### In-app activity {#in-app-activity-limitations}
+
+The following guardrails apply to the **[!UICONTROL In-app message]** action. Learn more about In-app messages on [this page](../in-app/create-in-app.md).
+
+* This feature is currently not available for Healthcare customers.
+
+* Personalization can only contain profile attributes.
+
+* The In-app activity cannot be used with **[!UICONTROL Campaign Standard]** activities.
+
+* In-app display is tied to the journey lifespan, meaning that when the journey ends for a profile, all In-app messages within that journey will cease to be displayed for that profile. Consequently, it is not possible to stop an In-app message directly from a journey activity. Instead, you must end the entire journey to stop the In-app messages from being displayed to the profile.
+
+* In test mode, the In-app display depends on the journey's lifespan. To prevent the journey from ending too early during testing, adjust the **[!UICONTROL Wait time]** value for your **[!UICONTROL Wait]** activities.
+
+* **[!UICONTROL Reaction]** activities can not be used to react to an In-app open or click.
+
+* An activation delay may happen between the moment a user profile reaches an In-app activity in the canvas and the time they start seeing that In-app message.
+
+* In-app message content size is limited to **2 MB**. Including large images can hinder the publishing process.
+
+#### Content decision activity {#content-decision-g}
+
+Specific guardrails apply to the **[!UICONTROL Content decision]** activity, including a 48-hour delay before updated consent policies take effect in decision policies. They are listed on [this page](../building-journeys/content-decision.md#guardrails).
+
+#### Jump activity {#jump-g}
+
+Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed on [this page](../building-journeys/jump.md#jump-limitations).
+
+#### Read audience activity {#read-segment-g}
+
+The following guardrails apply to the [Read Audience](../building-journeys/read-audience.md) journey activity:
+
+* Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
+* At journey entry, profiles use attribute values from the batch audience snapshot. However, when a profile reaches a **Wait** activity, the journey automatically refreshes profile attributes by fetching the latest data from Unified Profile Service (UPS). This means profile attributes may change during journey execution.
+* The **Read Audience** activity cannot be used with Adobe Campaign activities.
+* The **Read Audience** activity can only be used as a first activity in a journey, or after a business event activity.
+* A journey can only have one **Read Audience** activity.
+* The **Read Audience** activity can target only one audience per journey. If multiple audiences are required, merge them into a single audience first. [Learn how to combine audiences using composition workflows](../audience/get-started-audience-orchestration.md).
+* Each organization can run up to **five** **Read Audience** instances concurrently (scheduled or business-event triggered), across all sandboxes and journeys. Avoid having more than five journeys with **Read Audience** starting at the exact same time; spread them 5 to 10 minutes apart. Learn more about journey processing rates in [this section](../building-journeys/entry-management.md#journey-processing-rate).
+* Sandbox throughput: the system manages processing per sandbox with a maximum of **20,000 profiles per second** shared across all **Read Audience** activities. Individual activities can be configured from **500 to 20,000 profiles per second**. If sandbox limits are reached, jobs may be queued.
+* Job processing timeout: **Read Audience** jobs that cannot be processed within **12 hours** are automatically cleaned up and will not execute.
+* Retries are applied by default on audience-triggered journeys while retrieving the export job. If an error occurs during export job creation, retries will be made every 10 minutes, for a maximum of **1 hour**. After that, the journey is considered failed and can therefore be executed up to 1 hour after the scheduled time.
+* For journeys using supplemental IDs, the reading rate of the **Read Audience** activity for each journey instance is limited to a maximum of **500 profiles per second**.
+
+>[!TIP]
+>
+>**What this means for you:** The 5-concurrent-instance limit is a hard ceiling across your entire organization. If you have multiple teams scheduling Read Audience journeys, coordinate start times carefully. Jobs that miss the 12-hour processing window are silently dropped — always confirm successful execution in the journey logs.
+
+See also [recommendations and configuration](../building-journeys/read-audience.md#must-read) for the Read Audience activity.
+
+#### Update profile activity {#update-profile-g}
+
+Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed on [this page](../building-journeys/update-profiles.md).
+
+#### Journey Pause {#pause-g}
+
+Specific guardrails apply to **pausing journeys**, including a maximum pause duration of **14 days** and a **10-million-profile cap** across all paused journeys in your organization. They are listed on [this page](../building-journeys/journey-pause.md#journey-pause-guardrails).
+
+#### Journey Dry run {#dry-run-g}
+
+Specific guardrails apply to **Journey Dry run**, including counting toward engageable profile and live journey quotas. They are listed on [this page](../building-journeys/journey-dry-run.md#journey-dry-run-limitations).
+
+#### Journey Fragments {#fragments-journey-g}
+
+Specific guardrails apply to **Journey Fragments**, including a maximum of **20 nodes per fragment** and **200 active fragments per sandbox**. They are listed on [this page](../building-journeys/journey-fragments.md#guardrails).
+
+#### Send using waves {#waves-g}
+
+Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../building-journeys/send-using-waves.md#limitations-guardrails).
+
+#### Journey simulation {#simulation-g}
+
+Specific guardrails apply to **journey simulation**. They are listed on [this page](../building-journeys/simulate-journey.md#limitations).
+
+## Audiences & Profiles {#audiences-profiles}
+
+This section covers guardrails for audience management, profile handling, and engageable profile considerations.
+
+### Audience and profile guardrails {#audience}
+
+* You can publish up to **10 audience compositions** in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
+
+    Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
+
+* When ingesting data, emails are case-sensitive. It means that duplicate profiles may be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting the corresponding recipient in your [!DNL Journey Optimizer] journeys and campaigns.
+
+* When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
 
 ## Channels & Messaging {#channel-guardrails}
 
@@ -199,20 +441,6 @@ The following guardrails apply to the [fragments](../content-management/fragment
 * Visual fragments are not cross-compatible between the Use Themes and Manual Styling modes. To be able to use a fragment in a content where you want to apply a theme, this fragment must be created in Use Themes mode. [Learn more on themes](../email/apply-email-themes.md)
 * When tracking is enabled in a journey or a campaign, if you add links to a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more on links and tracking](../email/message-tracking.md)
 
-## Audiences & Profiles {#audiences-profiles}
-
-This section covers guardrails for audience management, profile handling, and engageable profile considerations.
-
-### Audience and profile guardrails {#audience}
-
-* You can publish up to **10 audience compositions** in a given sandbox. If you have reached this threshold, you need to delete a composition to free up space and publish a new one.
-
-    Learn more about audience compositions on [this page](../audience/get-started-audience-orchestration.md).
-
-* When ingesting data, emails are case-sensitive. It means that duplicate profiles may be created (for example, one profile for John.Greene@luma.com, another profile for john.greene@luma.com) and used when targeting the corresponding recipient in your [!DNL Journey Optimizer] journeys and campaigns.
-
-* When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your engageable profile count and associated costs. [Learn more](#profile-management-inbound)
-
 ## Decision Management {#decision-management}
 
 ### Decisioning & Decision management guardrails {#decisioning-guardrails}
@@ -221,266 +449,6 @@ Guardrails and limitations to keep in mind when working with Decisioning or Deci
 
 * [Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md)
 * [Decision management guardrails & limitations](../offers/decision-management-guardrails.md)
-
-## Journeys {#journeys-guardrails}
-
-This section covers guardrails and limitations for journeys, including general journey limitations, journey components (actions, events, data sources), journey activities, and specific features like custom actions and expression editor.
-
-### General journey guardrails {#journeys-guardrails-journeys}
-
-* The number of activities in a journey is limited to **50**. The number of activities is displayed on the upper left section of the journey canvas.
-
-  As journeys near this limit, editing and publishing performance may degrade, and save or validation failures can occur. If this happens, split your journey into smaller sub-journeys using [jump activities](../building-journeys/jump.md) or recreate it in a new version. The activity limit cannot be increased.
-
-* By default, the number of live/paused/dry run journeys at one time is limited to **100**. The current number of journeys is displayed above the journey canvas.
-
-  As you publish journeys, we automatically scale and adjust to ensure maximum throughput and stability. As you near the milestone of 100 live journeys at one time, you will see a notification appear in the UI on this achievement. If you see this notification and have a need to extend your journeys beyond 100 live journeys at a time, please create a ticket for customer care and we will help you reach your goals.
-
-* When using an audience qualification in a journey, that audience qualification activity may take up to **10 minutes** to be active and listen to profiles entering or exiting the audience.
-
-* A journey instance for a profile has a maximum size of **1 MB**. All data gathered as part of the journey execution is stored in that journey instance. Therefore, data from an incoming event, profile information retrieved from Adobe Experience Platform, custom action responses, etc. are stored in that journey instance and impact the journey size. It is advised, when a journey starts with an event, to limit the maximum size of that event payload (e.g., below **800 KB**) to avoid reaching that limit after a few activities, in the journey execution. When that limit is reached, the profile is in error status and will be excluded from the journey.
-
-* For each profile and journey version, the journey runtime keeps an internal queue of up to **10 pending events** while one is being processed. If this limit is reached, additional events are discarded with the `maxInstanceStackEventsReached` reason until the stack drains. See [Events discarded due to a blocked journey instance](../building-journeys/troubleshooting-execution.md#max-instance-stack-events-reached).
-
-* In addition to the timeout used in journey activities, there is also a global journey timeout which is not displayed in the interface and cannot be changed. This global timeout stops the progress of individuals in the journey **91 days** after they enter. [Read more](../building-journeys/journey-properties.md#global_timeout)
-
->[!TIP]
->
->**What this means for you:** The **50-activity limit** and **100-live-journey limit** are the two guardrails most teams encounter first when scaling. Plan for journey splitting early, and spread Read Audience start times at least 5–10 minutes apart to avoid sandbox throughput contention.
-
-#### Journey payload size validation {#journey-payload-size}
-
-When you save or publish a journey, Journey Optimizer validates the total journey payload size to preserve stability and performance.
-
-| Scenario | Threshold | Behavior |
-|---|---|---|
-| Payload < 90% of limit | Below warning | Journey saves and publishes successfully. No warnings or errors displayed. |
-| Payload 90–99% of limit | Warning (soft) | Journey saves and publishes with a warning: **Warning**: Journey payload size is close to the limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
-| Payload ≥ 100% of limit | **Error (hard)** | Save or publish is blocked. Returns **HTTP 413 Request Entity Too Large**. Error: Journey payload size exceeds limit. Largest node: '[NodeName]' (type: '[NodeType]', size: [N] bytes). |
-
-**Default configuration**
-
-* **Default maximum request size**: **2 MB** (2,000,000 bytes). Some organizations may have custom limits configured by Adobe.
-* **Warning threshold**: 90% of the maximum limit.
-* **Error threshold**: 100% of the maximum limit.
-
-**Troubleshooting and recommendations**
-
-* Review the largest node highlighted in the warning or error.
-* Simplify conditions, reduce data mappings, and remove unnecessary steps or parameters.
-* Consider splitting the journey into smaller journeys if needed.
-* If you believe your organization needs a higher limit, contact your Adobe representative.
-
-To monitor the current payload size of your journey before publishing, use the **[!UICONTROL Current journey payload size]** indicator in the journey properties panel. [Learn how to check the size of your journey payload](../building-journeys/journey-properties.md#journey-payload-size)
-
-### License package comparison {#select-package-limitations}
-
->[!NOTE]
->
->The Select package limitations below do not apply to Read Audience or Business Event journeys. If you need more complex journey logic with multiple actions, conditions, or wait activities, consider upgrading your license package or using Read Audience journeys where applicable.
-
-For customers using the **Select** license package, the following additional limitations apply specifically to unitary journeys (journeys starting with an event or an audience qualification):
-
-| Limitation | Error code | Description |
-|---|---|---|
-| Only one action allowed | `ERR_PKG_SELECT_8` | Unitary journeys can contain only **one** action activity. Multiple email, push, SMS, or other action activities are not permitted within the same journey. |
-| No conditions allowed | `ERR_PKG_SELECT_7` | Condition activities cannot be used in unitary journeys. The journey must follow a single, linear path without branching logic. |
-| No wait activities | `ERR_PKG_SELECT_6` | Wait activities cannot be added to unitary journeys. Actions must execute immediately without delays. |
-| Timeout/error transitions must go to end node | `ERR_PKG_SELECT_2` | If you configure timeout or error transitions for an action (e.g., an email action), these paths must point directly to an end node. They cannot connect to other activities or actions in the journey. |
-
->[!TIP]
->
->**What this means for you:** If you're on the Select package and need branching logic, wait activities, or multiple actions, you must use a Read Audience journey instead, or contact your Adobe representative about upgrading your package.
-
-### General actions {#general-actions-g}
-
-The following guardrails apply to the [Actions](../building-journeys/about-journey-activities.md) in your journeys:
-
-* Three retries are systematically performed in case of an error. You cannot adjust the number of retries according to the error message received. Retries are performed for all HTTP errors except for HTTP 401, 403 and 404.
-* The built-in **Reaction** event allows you to react to out-of-the-box actions. Learn more on [this page](../building-journeys/reaction-events.md). If you want to react to a message sent via a custom action, you must configure a dedicated event.
-* You cannot place two actions in parallel, you must add them one after the other.
-* A profile cannot be present multiple times in the same journey, at the same time, for all active [versions of the journey](../building-journeys/publish-journey.md#journey-create-new-version). If reentrance is enabled, a profile can reenter a journey, but cannot do it until he fully exited that previous instance of the journey. [Read more](../building-journeys/end-journey.md)
-
-### Journey versions {#journey-versions-g}
-
-The following guardrails apply to the [Journey versions](../start/user-interface.md):
-
-* A journey starting with an event activity in v1 cannot start with something else than an event in further versions. You cannot start a journey with a **Audience Qualification** event.
-* A journey starting with a **Audience Qualification** activity in v1 must always start with a **Audience Qualification** in further versions.
-* The audience and namespace chosen in **Audience Qualification** (first node) cannot be changed in new versions.
-* The reentrance rule must be the same in all journey versions.
-* A journey starting with a **Read Audience** cannot start with another event in next versions.
-* You cannot create a new version of a read audience journey with incremental read. You must duplicate the journey.
-
-### Custom actions {#custom-actions-g}
-
-The following guardrails apply to the [Custom Actions](../action/action.md) in your journeys:
-
-| Guardrail | Value | Notes |
-|---|---|---|
-| Capping limit — response < 0.75 s | **300,000 calls / min** per host and per sandbox | Sliding window. Enforced per sandbox and per endpoint. |
-| Capping limit — response > 0.75 s | **150,000 calls / 30 s** per host and per sandbox | Sliding window. Separate limit applied when endpoint latency exceeds 0.75 s. |
-| URL type | Static only | Dynamic parameters in the custom action URL are not supported. |
-| Supported HTTP methods | POST, PUT, GET | Other methods are not supported. |
-| Query param / header name format | Must not start with `.` or `$` | Names beginning with these characters are rejected. |
-| IP addresses in URL | Not allowed | Use hostnames instead of IP addresses. |
-| Internal Adobe addresses | Not allowed | `.adobe.*` addresses are not permitted in URLs and APIs. |
-| Built-in custom actions | Cannot be removed | Built-in custom actions are permanent. |
-| Payload format | JSON only | JSON format is required for both request and response payloads. See [this page](../action/about-custom-action-configuration.md#custom-actions-limitations). |
-| Minimum endpoint throughput | 200 TPS | Any endpoint targeted by a custom action must support at least 200 TPS. |
-
->[!TIP]
->
->**What this means for you:** The default 300,000 calls/min cap protects your external endpoints from being overwhelmed by journey throughput. If your endpoint can handle more load, you can raise this limit using the [Capping API](../configuration/capping.md) or [Throttling API](../configuration/throttling.md). Contact your Adobe representative if you need a higher organizational limit.
-
-This limit has been set based on customers usage, to protect external endpoints targeted by custom actions. If needed, you can override this setting by defining a greater capping or throttling limit through our Capping/Throttling APIs. See [this page](../configuration/external-systems.md).
-
-### Events {#events-g}
-
-The following guardrails apply to the [Events](../event/about-events.md) in your journeys:
-
-* Journey Optimizer supports a peak volume of **5,000 inbound journey events per second**, across all sandboxes. Learn more about this limitation [on this page](../event/about-events.md#event-thoughput).
-* Event-triggered journeys may take up to **5 minutes** to process the first action in the journey.
-* For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
-* Business events cannot be used in conjunction with unitary events or audience qualification activities.
-* Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for **5 minutes**. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
-* Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch, events inserted via **Query Service**, or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but is not recommended as it can cause downstream challenges based on the actions used.
-
-### Data sources {#data-sources-g}
-
-The following guardrails apply to the [Data Sources](../datasource/about-data-sources.md) in your journeys:
-
-* External data sources can be leveraged within a customer journey to lookup external data in real time. These sources must be usable via REST API, support JSON and be able to handle the volume of requests.
-* Internal Adobe addresses (`.adobe.*`) are not allowed in URLs and APIs.
-
->[!NOTE]
->
->As the responses are now supported, you should use custom actions instead of data sources for external data sources use-cases.
-
-### Journeys and profile creation {#journeys-limitation-profile-creation}
-
-There is a delay associated to API based profile creation/update in Adobe Experience Platform. The Service Level Target (SLT) in terms of latency is < 1 min from ingestion to Unified Profile for 95th percentile of requests, at a volume of **20K Requests per second (RPS)**.
-
-If a journey is triggered simultaneously to a profile creation and immediately checks/retrieves information from Profile Service, it might not work properly.
-
-You can choose from one of these two solutions:
-
-* Add a wait activity after the first event, to give Adobe Experience Platform the time it needs to perform the ingestion to Profile Service.
-
-* Set up a journey that does not immediately leverage the profile. For example, if the journey is designed to confirm an account creation, the experience event could contain information needed to send the first confirmation message (first name, last name, email address, etc.).
-
-### Supplemental identifiers {#supplemental}
-
-Specific guardrails apply to the use of supplemental identifiers in journeys. They are listed in [this page](../building-journeys/supplemental-identifier.md#guardrails).
-
-### Expression editor {#expression-editor}
-
-The following guardrails apply to the [journey expression editor](../building-journeys/expression/expressionadvanced.md):
-
-* Experience event field groups can not be used in journeys starting with a Read audience, an Audience qualification or a business event activity. You must create a new audience and use an `inaudience` condition in the journey.
-* `timeSeriesEvents` attributes cannot be used in the expression editor. To access Experience Events at a profile level, please create a new field group based on a `XDM ExperienceEvent` schema.
-
-### Journey activities {#activities}
-
-#### Audience Qualification activity {#audience-qualif-g}
-
-The following guardrail applies to the [Audience Qualification](../building-journeys/audience-qualification-events.md) journey activity:
-
-* The Audience qualification activity cannot be used with Adobe Campaign activities.
-* Supplemental identifiers are not supported for Audience qualification journeys.
-
-Learn more about journey processing rates and throughput limits in [this section](../building-journeys/entry-management.md#journey-processing-rate).
-
-Additional guardrails — including recommendations on streaming vs. batch audiences and composition audience limitations — are listed on [this page](../building-journeys/audience-qualification-events.md#audience-qualification-guardrails).
-
-#### Campaign activities {#ac-g}
-
-The following guardrails apply to the **[!UICONTROL Campaign v7/v8]** and the **[!UICONTROL Campaign Standard]** activities:
-
-* Adobe Campaign activities cannot be used with a Read audience, or an Audience qualification activity.
-* **[!UICONTROL Campaign Standard]** activities cannot be used with other channel activities: Card, Code-based Experience, Email, Push, SMS, In-app messages, Web.
-* **[!UICONTROL Campaign v7/v8]** activities can be used alongside native channel activities in the same journey.
-
-#### Reaction events {#reaction-events-g}
-
-Specific guardrails apply to **[!UICONTROL Reaction]** events, including the requirement to place the activity immediately after a channel action and the inability to track messages sent in a different journey. They are listed on [this page](../building-journeys/reaction-events.md#guardrails-limitations).
-
-#### In-app activity {#in-app-activity-limitations}
-
-The following guardrails apply to the **[!UICONTROL In-app message]** action. Learn more about In-app messages on [this page](../in-app/create-in-app.md).
-
-* This feature is currently not available for Healthcare customers.
-
-* Personalization can only contain profile attributes.
-
-* The In-app activity cannot be used with **[!UICONTROL Campaign Standard]** activities.
-
-* In-app display is tied to the journey lifespan, meaning that when the journey ends for a profile, all In-app messages within that journey will cease to be displayed for that profile. Consequently, it is not possible to stop an In-app message directly from a journey activity. Instead, you must end the entire journey to stop the In-app messages from being displayed to the profile.
-
-* In test mode, the In-app display depends on the journey's lifespan. To prevent the journey from ending too early during testing, adjust the **[!UICONTROL Wait time]** value for your **[!UICONTROL Wait]** activities.
-
-* **[!UICONTROL Reaction]** activities can not be used to react to an In-app open or click.
-
-* An activation delay may happen between the moment a user profile reaches an In-app activity in the canvas and the time they start seeing that In-app message.
-
-* In-app message content size is limited to **2 MB**. Including large images can hinder the publishing process.
-
-#### Content decision activity {#content-decision-g}
-
-Specific guardrails apply to the **[!UICONTROL Content decision]** activity, including a 48-hour delay before updated consent policies take effect in decision policies. They are listed on [this page](../building-journeys/content-decision.md#guardrails).
-
-#### Jump activity {#jump-g}
-
-Specific guardrails apply to the **[!UICONTROL Jump]** activity. They are listed on [this page](../building-journeys/jump.md#jump-limitations).
-
-#### Read audience activity {#read-segment-g}
-
-The following guardrails apply to the [Read Audience](../building-journeys/read-audience.md) journey activity:
-
-| Guardrail | Value | Notes |
-|---|---|---|
-| Concurrent instances (all sandboxes + journeys) | **5** | Avoid scheduling more than 5 journeys with Read Audience starting at the same time; spread them 5–10 minutes apart. |
-| Sandbox throughput | **20,000 profiles/sec** (shared) | Shared across all Read Audience activities in the sandbox. If limits are reached, jobs may be queued. |
-| Configurable throughput per activity | **500–20,000 profiles/sec** | Configure per activity within the sandbox shared limit. |
-| Job processing timeout | **12 hours** | Jobs that cannot be processed within 12 hours are automatically cleaned up and will not execute. |
-| Retry window | Up to **1 hour** (10-min intervals) | Retries are applied while retrieving the export job. Journeys can execute up to 1 hour after the scheduled time. |
-| Supplemental ID read rate | **500 profiles/sec** per journey instance | Applies when supplemental IDs are in use. |
-| Read Audience instances per journey | **1** | A journey can only have one Read Audience activity. |
-| Audience types | Streamed audiences are always up-to-date | Batch audiences are only evaluated once per day at the daily batch evaluation time. |
-| Profile attribute refresh | Refreshed at **Wait** activities | At journey entry, profiles use batch snapshot values. Attributes refresh when a profile reaches a Wait activity. |
-| Positioning in journey | First activity or after a business event | The Read Audience activity can only be used as a first activity in a journey, or after a business event activity. |
-| Use with Adobe Campaign | Not supported | The Read Audience activity cannot be used with Adobe Campaign activities. |
-| Multiple audiences | Not supported directly | The Read Audience activity can target only one audience per journey. To use multiple audiences, merge them first. [Learn how](../audience/get-started-audience-orchestration.md) |
-
->[!TIP]
->
->**What this means for you:** The 5-concurrent-instance limit is a hard ceiling across your entire organization. If you have multiple teams scheduling Read Audience journeys, coordinate start times carefully. Jobs that miss the 12-hour processing window are silently dropped — always confirm successful execution in the journey logs.
-
-See also [recommendations and configuration](../building-journeys/read-audience.md#must-read) for the Read Audience activity.
-
-#### Update profile activity {#update-profile-g}
-
-Specific guardrails apply to the **[!UICONTROL Update profile]** activity. They are listed on [this page](../building-journeys/update-profiles.md).
-
-#### Journey Pause {#pause-g}
-
-Specific guardrails apply to **pausing journeys**, including a maximum pause duration of **14 days** and a **10-million-profile cap** across all paused journeys in your organization. They are listed on [this page](../building-journeys/journey-pause.md#journey-pause-guardrails).
-
-#### Journey Dry run {#dry-run-g}
-
-Specific guardrails apply to **Journey Dry run**, including counting toward engageable profile and live journey quotas. They are listed on [this page](../building-journeys/journey-dry-run.md#journey-dry-run-limitations).
-
-#### Journey Fragments {#fragments-journey-g}
-
-Specific guardrails apply to **Journey Fragments**, including a maximum of **20 nodes per fragment** and **200 active fragments per sandbox**. They are listed on [this page](../building-journeys/journey-fragments.md#guardrails).
-
-#### Send using waves {#waves-g}
-
-Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../building-journeys/send-using-waves.md#limitations-guardrails).
-
-#### Journey simulation {#simulation-g}
-
-Specific guardrails apply to **journey simulation**. They are listed on [this page](../building-journeys/simulate-journey.md#limitations).
 
 ## Campaign Orchestration {#campaign-orchestration}
 

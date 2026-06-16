@@ -37,6 +37,12 @@ subfeature_v2:
 ---
 # Configure a custom provider {#sms-configuration-custom}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to integrate a custom messaging provider in Adobe Journey Optimizer by creating API credentials, choosing an authentication method, and configuring headers, payloads, and inbound settings to send SMS and RCS messages.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_byop_provider_url"
 >title="Provider URL"
@@ -95,6 +101,12 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 1. Enable the **[!UICONTROL mTLS support]** option, which ensures that both the client and server authenticate each other before establishing a secure connection.
 
     To use mTLS only, select **[!UICONTROL No Authentication]** from the **[!UICONTROL Auth Type]** drop-down and then enable **[!UICONTROL mTLS support]**.
+
+    Note that mTLS applies only to the SMS provider (message sending) endpoint. The OAuth token endpoint must not use mTLS. Ensure mTLS is disabled on the token endpoint before testing.
+
+    >[!IMPORTANT]
+    >
+    >Configure your SMS send endpoint to trust the Adobe Experience Platform certificate authority chain by downloading the public certificate from the [MTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint) and adding it to your server trust store (expected client CN: `ajo-sms.aep-mtls.adobe.com`), otherwise Journey Optimizer omits the client certificate and SMS delivery fails.
 
 1. In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add new parameter]** to specify the HTTP headers for the request message that will be sent to the external service.
 
@@ -183,6 +195,8 @@ Once your API credential is created, complete the fields required for OAuth auth
 * **[!UICONTROL OAuth URL]**​: Enter the URL for obtaining the OAuth token.
 
 * **[!UICONTROL OAuth Body]**​: Provide the OAuth request body in JSON format, including parameters such as `grant_type`, `client_id`, and `client_secret`.
+
+Journey Optimizer refreshes OAuth tokens dynamically upon expiry for the custom SMS connector.
 
 ![](assets/sms-byop-oauth.png)
 

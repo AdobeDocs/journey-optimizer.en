@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Encrypt URL parameters {#url-parameter-encryption}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to encrypt sensitive URL query parameters so personally identifiable information is not exposed in plain text, including how administrators create, rotate, and revoke keys in the sandbox key registry of Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is currently only available for the Email channel.

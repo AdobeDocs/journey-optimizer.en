@@ -31,6 +31,12 @@ level_v2:
 ---
 # Define the Action campaign properties {#action-campaign-properties}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create an Action campaign and define its core properties, such as name, description, tags, and access labels, so you can identify, organize, and control access to your campaign before configuring its action.
+
+>[!ENDSHADEBOX]
+
 To create an Action campaign and define its properties, follow these steps:
 
 1. Browse to the **[!UICONTROL Campaigns]** menu and select the **[!UICONTROL Action]** tab.

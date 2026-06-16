@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Create selection strategies {#selection-strategies}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create reusable selection strategies that pair a collection with an eligibility constraint and a ranking method, so a decision policy can determine the best offers to present to each profile.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_config_strategies"
 >title="Define your selection strategies"

@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Support for archiving {#archiving-support}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to archive the messages you send with Adobe Journey Optimizer for compliance, including the built-in BCC email capability for the email channel and dataset-based options for other channels.
+
+>[!ENDSHADEBOX]
+
 ## How to archive messages {#about-archiving}
 
 Regulations such as HIPAA require that [!DNL Journey Optimizer] should provide a way to archive messages sent to individuals. Indeed, if your customers raise a claim, they should have the ability to get a copy of the sent message for verification purpose.

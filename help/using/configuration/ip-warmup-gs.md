@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Get started with IP warmup plans {#ip-warmup-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how IP warmup plans help you progressively increase sending volume to build sender reputation, and discover the key steps to implement one in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 With [!DNL Journey Optimizer], you can easily perform IP warmup workflows directly from the user interface in a standardized and efficient way that follows the best practices for optimal deliverability. When emails are sent using a new platform, Internet service providers (ISPs) are suspicious of IP addresses that are not recognized. If large volumes of emails are suddenly sent, the ISPs often mark them as spam.
 
 To avoid being marked as spam, you can progressively increase the volume sent using the IP warmup plan feature. This new option in the **[!UICONTROL Administration]** menu allows you to automate volume management and simplifies the warmup process without requiring complex journey configurations.

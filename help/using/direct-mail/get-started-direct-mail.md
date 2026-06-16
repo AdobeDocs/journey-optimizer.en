@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Get started with direct mail
-description: Learn how to create a direct mail message in Journey Optimizer
+title: Get started with direct mail 
+description: Learn how to create a direct mail message in Journey Optimizer 
 feature: Direct Mail
 topic: Content Management
 role: User
@@ -32,6 +32,12 @@ level_v2:
 ---
 # Get started with direct mail {#create-direct}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how the direct mail channel works so you can generate the extraction files that third-party providers use to send physical mail to your customers.
+
+>[!ENDSHADEBOX]
+
 Direct mail is an offline channel that allows you to personalize and generate the extraction files required by third-party direct mail providers to send mail to your customers.
 
 When creating a direct mail campaign or journey, Journey Optimizer automatically generates a file containing all the targeted profiles and selected data, such as postal addresses and profile attributes. This file is sent to the server of your choice so that it is accessible by your chosen third-party direct mail provider, who will handle the actual mailing process for you.
@@ -58,6 +64,7 @@ The main steps to send direct mail messages are as follows:
 
 * **[Create direct mail](create-direct-mail.md)** - Learn how to create direct mail deliveries and configure extraction files for offline channels.
 * **[Configure direct mail channel](direct-mail-configuration.md)** - Set up direct mail surfaces and file routing configurations.
+* **[Batch decisioning in direct mail](../experience-decisioning/batch-decisioning-direct-mail.md)** - Use decisioning to personalize extraction files for direct mail or to export decisioning data for downstream systems.
 * **[Test and send direct mail](test-send-direct-mail.md)** - Learn how to test, validate, and publish your direct mail deliveries.
 * **[Direct mail tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/direct-mail-channel/direct-mail){target="_blank"}** - Explore step-by-step video tutorials on direct mail features and best practices.
 

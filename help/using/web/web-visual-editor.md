@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Work with the web designer {#work-with-web-designer}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to author your web experience with the Adobe Journey Optimizer visual web designer, including selecting and editing elements, adding components and personalization, navigating the canvas, and changing the device size.
+
+>[!ENDSHADEBOX]
+
 <!--
 >[!CONTEXTUALHELP]
 >id="ajo_web_url_to_edit_surface"

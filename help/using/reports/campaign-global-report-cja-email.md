@@ -48,6 +48,12 @@ topic_v2:
 ---
 # Email campaign report {#campaign-global-report-cja-email}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the Email campaign report in Adobe Journey Optimizer to analyze email KPIs, click and delivery funnels, tracking statistics, bounce and error reasons, and engagement by domain, subject, and link.
+
+>[!ENDSHADEBOX]
+
 >[!INFO]
 >
 >Since Apple introduced new privacy protection features for its native Mail app, including Mail Privacy Protection, senders are no longer able to use tracking pixels to collect data on profiles who have enabled Apple's Mail Privacy Protection. Consequently, Adobe Journey Optimizer ability to track email opens using tracking pixels may be impacted. 

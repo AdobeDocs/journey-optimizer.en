@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # AI assistant for personalization expressions{#generative-personalization-expressions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use AI Assistant in Adobe Journey Optimizer to generate, fix, and explain personalization expressions from natural language in the Personalization Editor and the Email Designer.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).

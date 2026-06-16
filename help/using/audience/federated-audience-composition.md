@@ -21,6 +21,12 @@ subfeature_v2:
 ---
 # Federated Audience Composition {#fac}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use Federated Audience Composition in Adobe Journey Optimizer to query your enterprise data warehouse and enrich Adobe Experience Platform audiences without duplicating sensitive data.
+
+>[!ENDSHADEBOX]
+
 While you can use the audience composition capabilities to create valuable, highly refined audiences for targeting, you can further enrich audiences for deeper personalization using data from your enterprise data warehouse and trusted partners.
 
 The Federated Audience Composition capability available in Adobe [!DNL Journey Optimizer] can query a data warehouse for data or profile

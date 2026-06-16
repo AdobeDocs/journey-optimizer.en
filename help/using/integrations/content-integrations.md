@@ -41,6 +41,12 @@ subfeature_v2:
 ---
 # Combine solutions and apps to manage your content {#combine-solutions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to combine Adobe solutions and apps such as Experience Manager Assets, Stock, Express, and GenStudio with Adobe Journey Optimizer to author and manage your content.
+
+>[!ENDSHADEBOX]
+
 To create messages and content for activation in omnichannel customer journeys and campaigns, marketers and customer experience professionals need easy-to-use authoring options, including in-workflow generative AI, editing capabilities, assets, templates, and fragments management.  With Adobe Journey Optimizer, you can easily combine your Adobe solutions and apps to get the best out of your Adobe tools. These native integrations help you address your specific use cases, and extend Adobe Journey Optimizer functional scope.
 
 ## Adobe Experience Manager {#integration-aem}

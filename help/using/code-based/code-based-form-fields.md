@@ -29,6 +29,12 @@ topic_v2:
 ---
 # Use editable form fields in code-based experiences {#code-based-form-fields}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add editable form fields to code-based experience content templates so marketers can customize content in campaigns and journeys without editing code.
+
+>[!ENDSHADEBOX]
+
 For both more flexibility and control over the code-based experiences, [!DNL Journey Optimizer] allows your development team to create JSON or HTML content templates containing specific predefined editable fields.
 
 When creating a code-based experience, non-technical marketers can then directly edit these fields in the interface, without the need to even open the personalization editor, or to touch any other code elements in their journey or campaign.

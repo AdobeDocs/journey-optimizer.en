@@ -9,6 +9,12 @@ exl-id: 60190d0b-d8e7-4a78-9924-d948f2769f6c
 ---
 # Get started with Inbox {#inbox-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how the Inbox channel keeps marketing messages in one persistent place inside your app or website, so users can return to read and act on them at their convenience.
+
+>[!ENDSHADEBOX]
+
 Inbox delivers persistent, low-friction messages in one place inside your mobile app or website. In-app and push can disappear after a swipe or tap; Inbox keeps messages available so people can open, read, and act on them when it suits them.
 
 Inbox builds on the Content Cards channel and adds:

@@ -43,10 +43,16 @@ topic_v2:
 	
 # Test your journey{#testing_the_journey}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to validate your journey before publishing by using simulation with simulated users or test mode with test profiles to catch errors early.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test"
 >title="Test your journey"
->abstract="Use test profiles to test your journey before publishing it. This allows you to analyze how individuals flow in the journey and troubleshoot before publication."
+>abstract="Test profiles let you test your journey before publishing it. This allows you to analyze how individuals flow in the journey and troubleshoot before publication."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-dry-run" text="Journey Dry run"
 
 Once you have built your journey, you can test it before publishing. [!DNL Adobe Journey Optimizer] offers "Test mode" as a way to view test profiles as they move along the journey, detecting potential errors before activation. Running quick tests allows you to check that journeys operate correctly so that you can publish them with confidence.
@@ -153,7 +159,7 @@ To validate the journey end to end:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test_configuration"
 >title="Configure the test mode"
->abstract="If your journey contains several events, use the drop-down list to select an event. Then, for each event, configure the fields passed and the execution of the event sending."
+>abstract="If a journey contains several events, the drop-down list is used to select an event. For each event, the fields passed and the execution of the event sending are configured."
 
 Use the **[!UICONTROL Trigger an event]** button to configure an event that will make a person enter the journey.
 

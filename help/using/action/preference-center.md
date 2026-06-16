@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Manage your customers' preferences {#preference-center}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Record and honor your customers' channel and topic preferences through consent policies so you only target the people who want to hear from you.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is currently only available for organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings.

@@ -30,6 +30,12 @@ level_v2:
 ---
 # Create locale {#multilingual-locale}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create new locales from the Translation menu when a needed language or region is not available for your multilingual content.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_multi_add_locale"
 >title="Add locale"

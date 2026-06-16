@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Header parameters {#email-header}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up the email header parameters in a channel configuration, including the From, Reply to, Error, and optional Sender fields, plus how to manage reply handling and email forwarding.
+
+>[!ENDSHADEBOX]
+
 When configuring a new [email channel configuration](email-settings.md), in the **[!UICONTROL Header parameters]** section, enter the sender names and email addresses associated to the type of emails sent using that configuration.
 
 >[!NOTE]
@@ -94,15 +100,16 @@ In this case, you can set a different **Sender** name and email address to be ad
 
 When **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** are set, [!DNL Journey Optimizer] adds a **Sender** SMTP header to the email<!--as defined in [RFC 5322](https://datatracker.ietf.org/doc/html/rfc5322#section-3.6.2){target="_blank"}-->. Email clients that support this may show wording such as **Sender on behalf of From** or a **via** indicator.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->If you leave **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** empty, or if the resolved **Sender** is identical to **From**, no **Sender** header is added.
+>**[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** must be configured together — either both fields are filled in, or both are left empty. Filling in only one of them prevents journeys and campaigns from being published with this channel configuration.
 
-Notes:
+When configuring the **Sender** headers, consider the following:
 
+* If you leave both **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** fields empty, or if the resolved **Sender** is identical to **From**, no **Sender** header is added.
 * The **Sender** address is not used for SPF, DKIM, or DMARC alignment; only **format** validation is performed. SPF, DKIM, and DMARC continue to rely on the **From** fields. The [delegated subdomain](../configuration/about-subdomain-delegation.md) selected for the configuration remains the sending domain used for those checks.
 
-* If **Sender** is configured and personalization does not resolve to a value for a recipient, the message is not delivered to that recipient.
+* If the **Sender** headers are configured and personalization does not resolve to a value for a recipient, the message is not delivered to that recipient.
 
 ## Reply to email {#reply-to-email}
 

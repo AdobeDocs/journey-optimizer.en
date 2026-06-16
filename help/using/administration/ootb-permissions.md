@@ -51,6 +51,12 @@ topic_v2:
 ---
 # Built-in permissions {#ootb-permissions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the built-in permissions available for each capability, so you can assign roles the precise rights your users need to work in Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Built-in permissions represent the different permissions that can be assigned to a **[!UICONTROL Role]** to fine-tune your user access to Journey Optimizer. High-level permissions encompass low-level permissions, detailed on [this page](high-low-permissions.md).
  
 | Capability | Permissions|
@@ -80,6 +86,7 @@ Built-in permissions represent the different permissions that can be assigned to
 |Reports|**[!DNL View channel reports]**: read and edit channel reports.|
 |Sandbox administration|**[!DNL Export sandboxes]**: ability to export a sandbox.</br>**[!DNL Manage packages]**: read, create, edit, and delete packages.</br>**[!DNL Manage sandboxes]**: read, create, edit, and delete sandboxes.</br>**[!DNL Reset sandboxes]**: ability to reset a sandbox.</br>**[!DNL Share sandboxes]**: ability to share a sandbox.</br>**[!DNL View sandboxes]**: read-only access for sandboxes belonging to your organization. |
 |Sandbox administration|**[!DNL Export sandboxes]**: ability to export a sandbox.</br>**[!DNL Manage packages]**: read, create, edit, and delete packages.</br>**[!DNL Manage sandboxes]**: read, create, edit, and delete sandboxes.</br>**[!DNL View sandboxes]**: read-only access for sandboxes belonging to your organization.</br>**[!DNL Reset sandboxes]**: ability to reset a sandbox. |
+|Simulated Users|**[!DNL Manage Simulated Users]**: read, create, and edit simulated users used to test journeys in Simulation.</br>**[!DNL View Simulated Users]**: read-only access to simulated users.|
 |Translation service|**[!DNL Manage translation in house]**: read, create, edit, and delete translation in house.</br>**[!DNL Manage translation projects]**: read, create, edit, and delete translation projects.</br> **[!DNL Manage translation reviews]**: read, create, edit, and delete translation reviews.</br>**[!DNL Manage translation settings]**: read, create, edit, and delete translation settings.</br>**[!DNL Manage translation tasks]**: read, create, edit, and delete translation tasks.</br>**[!DNL View translation in house]**: read-only access for translation in house.</br>**[!DNL View translation projects]**: read-only access for translation projects.</br>**[!DNL View translation reviews]**: read-only access for translation reviews.</br>**[!DNL View translation tasks]**: read-only access for translation tasks.|
 
 {style="table-layout:fixed"}

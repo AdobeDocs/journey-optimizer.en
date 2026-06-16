@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Add a CC field to emails {#cc-email-field}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add a visible CC field to emails in an Adobe Journey Optimizer channel configuration, how it differs from BCC, and the related recommendations and limitations.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_config_cc"
 >title="Define a CC email address"

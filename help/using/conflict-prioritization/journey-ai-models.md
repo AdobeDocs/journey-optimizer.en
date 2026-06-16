@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Use AI models to rank journeys {#journey-ai-models}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Build AI models that dynamically rank journeys so the best-performing journey is selected for each profile when journey entry caps apply.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This feature is currently in Limited Availability. Contact your Adobe representative to gain access.

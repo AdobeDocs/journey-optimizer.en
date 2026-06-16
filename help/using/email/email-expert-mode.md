@@ -13,6 +13,12 @@ subfeature_v2: []
 ---
 # Edit email content with the advanced HTML editor {#email-expert-mode}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the advanced HTML editor in the Email Designer to view and edit the raw HTML source of your email content, including the guardrails to keep in mind and how to switch back to the visual view to preview and save.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access. 

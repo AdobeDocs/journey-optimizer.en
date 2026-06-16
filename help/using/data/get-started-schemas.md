@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Get Started with schemas {#schemas-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how Adobe Experience Platform standard and relational schemas define the structure of your data so you can model profiles, behavioral events, and relational entities for personalization and orchestrated campaigns in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 [!DNL Adobe Journey Optimizer] relies on **Adobe Experience Platform schemas** to describe the structure of data in a consistent and reusable way. A schema provides an abstract definition of a real-world object (such as a person) and outlines what data should be included in each instance of that object (such as name, birthday, and so on). When data is ingested into Experience Platform, it is always structured according to an **XDM schema**. 
 
 ## Standard & relational schemas

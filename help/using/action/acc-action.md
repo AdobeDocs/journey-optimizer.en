@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Integrate with Adobe Campaign v7/v8 {#integrating-with-adobe-campaign-v7-v8}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Connect Journey Optimizer to Adobe Campaign v7 or v8 so your journeys can send emails, push notifications, and SMS through Campaign transactional messaging.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_acc"
 >title="Adobe Campaign v7/v8 actions"

@@ -29,6 +29,12 @@ level_v2:
 ---
 # Get started with WhatsApp messages {#get-started-whatsapp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how the WhatsApp channel works in Journey Optimizer, along with its prerequisites and limitations, so you can decide how to add WhatsApp to your journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 You can now send WhatsApp messages directly through Journey Optimizer via Meta's [Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/). This feature enables seamless integration of WhatsApp into journeys and campaigns, enhancing communication and engagement with recipients.
 
 * In a **Journey**. Create a journey, add a **WhatsApp** activity, and define basic settings, then browse to the **[!UICONTROL Actions: WhatsApp]** right pane to create the content for the WhatsApp message. Learn how to create a journey on [this page](../building-journeys/journey-gs.md).

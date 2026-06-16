@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Check & send your In-app notification {#create-in-app}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview, test, review, and activate your In-app message in Adobe Journey Optimizer before sending it to your audience.
+
+>[!ENDSHADEBOX]
+
 ## Preview on device {#preview-device}
 
 If you want to get a sneak peek of the In-app notification before it goes live for all users, you have the ability to preview it on a specific device. This functionality allows you to ensure that the notification looks and functions as intended on the chosen device, providing a better user experience for your audience.
@@ -55,9 +61,10 @@ Your In-app message can now be triggered directly on your device allowing you to
 
 ## Preview with test profiles {#simulate}
 
-Once your in-app message has been defined, you can use test profiles to preview it. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
+Once your in-app message has been defined, you can preview it using either simulation method:
 
-To do this, click **[!UICONTROL Simulate content]** then add a test profile to check your message using the test profile data.
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles and add a test profile to check your message.
 
 Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
 

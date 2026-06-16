@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Add custom CSS to your email content {#email-metadata}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add custom CSS to your email content in the Email Designer for advanced styling, how to keep your CSS valid, and how to troubleshoot styles that are not applied.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ac_edition_css"
 >title="Enter your own CSS"

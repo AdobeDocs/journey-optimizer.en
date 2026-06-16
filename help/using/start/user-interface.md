@@ -50,6 +50,12 @@ topic_v2:
 ---
 # Navigate the interface {#user-interface}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find your way around the Adobe Journey Optimizer interface—top bar, home page, and left navigation—so you can quickly access the features and capabilities you need.
+
+>[!ENDSHADEBOX]
+
 To access Adobe Journey Optimizer, sign in to [Adobe Experience Cloud](https://experience.adobe.com) with your Adobe ID, then select [!DNL Journey Optimizer].
 
 >[!NOTE]

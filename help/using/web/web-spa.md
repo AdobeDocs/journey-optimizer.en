@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Author single-page applications {#web-author-spas}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to author single-page applications in Adobe Journey Optimizer by defining views in the Web SDK implementation, discovering them in the web designer with browse mode, and applying modifications to selected views.
+
+>[!ENDSHADEBOX]
+
 ## About views {#about-views}
 
 >[!CONTEXTUALHELP]

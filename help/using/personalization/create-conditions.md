@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Work with conditional rules {#conditions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build conditional rules from profile attributes, contextual events, and audiences in the personalization editor, and save them to the library for reuse across your content.
+
+>[!ENDSHADEBOX]
+
 Conditional rules are sets of rules that define which content should be displayed in your messages, depending on various criteria like profiles' attributes, audience membership or contextual events.
 
 Conditional rules are created using the personalization editor and can be stored if you want to reuse them across your contents. [Learn how to save a conditional rule to the library](#save)

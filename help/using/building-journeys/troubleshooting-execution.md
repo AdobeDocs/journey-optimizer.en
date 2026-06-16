@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Troubleshoot your live journey execution {#troubleshooting-execution}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to troubleshoot a live journey's execution, including verifying that events are sent, confirming profiles enter and progress through the journey, and checking that messages are delivered.
+
+>[!ENDSHADEBOX]
+
 In this section, learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messages are sent.
 
 You can also troubleshoot errors before testing or publishing a journey. Learn how [on this page](troubleshooting.md).

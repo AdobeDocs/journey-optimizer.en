@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Query examples {#query-examples}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore ready-to-use SQL query examples for Journey Optimizer system datasets so you can analyze email and push tracking, message feedback, journey step, and decisioning data for reporting and troubleshooting.
+
+>[!ENDSHADEBOX]
+
 In this page, you will find the list of Adobe Journey Optimizer datasets and related use cases:
 
 * [Email Tracking Experience Event Dataset](#email-tracking-experience-event-dataset)
@@ -104,6 +110,10 @@ _Name in the interface: AJO Message Feedback Event Dataset_
 Dataset for ingesting email and push application feedback events from Journey Optimizer.       
 
 The related schema is AJO Message Feedback Event Schema.
+
+>[!NOTE]
+>
+>This dataset uses batch ingestion. Expect a data latency of up to 2 hours when querying this dataset or using it for reporting purposes.
 
 This query shows the counts of different email feedback status (sent, bounce, etc) for a given message:
 

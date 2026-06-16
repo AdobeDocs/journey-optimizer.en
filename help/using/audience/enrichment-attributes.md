@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Use audiences enrichment attributes {#enrichment}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use audience enrichment attributes from composition workflows, custom uploads, and Federated Audience Composition to create journey paths and personalize messages in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 When targeting an audience generated using composition workflows, custom (CSV file) audience, or Federated Audience Composition, you can use enrichment attributes from these audiences to build your journey and personalize your messages.
 
 >[!NOTE]

@@ -29,6 +29,12 @@ subfeature_v2: []
 ---
 # Use targeting {#targeting}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use targeting rules to deliver personalized content to specific audience segments based on profile attributes, contextual data, or audience membership.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_content_targeting_fallback"
 >title="What is fallback content?"

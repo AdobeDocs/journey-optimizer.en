@@ -23,6 +23,20 @@ subfeature_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## June 2026 {#june-2026}
+
+* The **Get started with deliverability** page has been updated with a new **Providers without per-recipient FBL** subsection. It lists the major mailbox providers that do not return per-recipient spam complaints — Gmail / Google Workspace, Apple iCloud, and Corporate Microsoft 365 / Exchange Online — and explains why the absence of a suppression list entry is expected for recipients using these services. [Read more](../reports/deliverability.md#providers-no-fbl)
+
+* **Experience Decisioning is now available for the direct mail channel.** A new **Batch decisioning in direct mail** page describes how to use the Decisioning engine to personalize direct mail extraction files, or to export profiles and their decisioning results for use in downstream systems. **Direct mail** has been added as a supported channel across the Decisioning documentation (Get started, Create a decision policy, Use decision policies in messages, Get started with decisions policies), including the ability to return multiple decision items per profile through the **[!UICONTROL Number of items]** field. [Read more](../experience-decisioning/batch-decisioning-direct-mail.md)
+
+* The **Journey Fragments** documentation is no longer flagged as Limited Availability. The page now includes a note disambiguating Journey Fragments from content **[!UICONTROL Fragments]** and **AEM Content Fragments** (cross-linked from all three pages), and documents support for **Sandbox tooling**, **Audit Logs**, and **tagging**. Journey Fragments have also been added to the **Get started with journeys** page. [Read more](../building-journeys/journey-fragments.md)
+
+* The **External data sources** and **custom action** documentation has been updated for custom authentication. The `tokenInResponse` field now lets you specify whether the `access_token` or `id_token` is used as the authentication credential when an endpoint returns both. For certificate-based custom authentication, the `subType` and `aud` fields are now mandatory, the token endpoint `method` must be `POST`, and references to "Azure Entra ID" have been corrected to "Microsoft Entra ID". [Read more](../datasource/external-data-sources.md#certificate-credential)
+
+* The **Get started with Decisioning** page has been updated with a process chart summarizing the end-to-end Decisioning workflow, from managing decision items and configuring selection strategies to embedding decision policies into a journey or campaign. [Read more](../experience-decisioning/gs-experience-decisioning.md#process)
+
+* The **Sender headers** documentation now clarifies that **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** must both be set or both left empty, otherwise journeys and campaigns cannot be published. [Read more](../email/header-parameters.md#sender-header)
+
 ## May 2026 {#may-2026}
 
 * Two new high-level permissions have been added: **Manage Key Registry**, which allows users to view, create, rotate, and revoke keys in the key registry, and **View Key Registry**, which allows users to view the key registry listing and key details. [Read more](../administration/high-low-permissions.md#administration-permissions) 

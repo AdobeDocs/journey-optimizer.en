@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Configure a data source {#configure-data-source}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure a data source and define field groups so you can retrieve only the specific data your journeys need.
+
+>[!ENDSHADEBOX]
+
 >[!NOTE]
 >
 >The data source configuration is always performed by a **technical user**.

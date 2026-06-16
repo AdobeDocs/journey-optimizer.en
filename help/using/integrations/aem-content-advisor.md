@@ -14,7 +14,13 @@ subfeature_v2:
     internal-label: Experience Manager Assets integration
 ---
 # Work with Adobe Experience Manager Content Advisor {#aem-content-advisor}
-  
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access and use Adobe Experience Manager Content Advisor to discover assets, dynamic media, and Content Fragments through AI-powered semantic search directly in Journey Optimizer authoring workflows.
+
+>[!ENDSHADEBOX]
+
 Adobe Experience Manager Content Advisor replaces deterministic discovery with standardized intent-driven discovery from a unified surface. It enables unified, AI-powered discovery of Assets, Dynamic media and Content Fragments directly within Journey Optimizer authoring workflows, improving marketer productivity and campaign efficiency.
 
 ➡️ [Learn more about Adobe Experience Manager Content Advisor in Adobe Experience Manager documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications)

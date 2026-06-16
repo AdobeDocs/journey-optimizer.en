@@ -18,6 +18,12 @@ subfeature_v2:
 
 # Using External integrations for personalization {#integrations-personalization}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how marketers apply configured integrations to personalize email, SMS, and push content and chain one API call to another for richer, dynamic messaging.
+
+>[!ENDSHADEBOX]
+
 Before you use external integrations in your content, confirm an administrator has **configured and activated** each integration (endpoint, authentication, policies, response payload, and activation) as described in [Work with Integrations](integrations.md).
 
 You can add up to **3** integrations per **[!UICONTROL Fragment]** and up to **5** on the message. Integrations that come only from fragments do not count toward the **5**.

@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Content experiment with AI Assistant{#generative-experimentation}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use AI Assistant in Adobe Journey Optimizer to generate content variations and turn them into experiment treatments that measure performance across your target audience.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).

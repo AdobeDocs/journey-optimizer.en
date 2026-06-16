@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Configure Adobe Experience Manager repository access {#aem-admin-settings}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how administrators connect a sandbox to an Adobe Experience Manager repository — setting author-only or publish access, custom domains, and authentication — so marketers can use AEM Content Fragments in their journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 Adobe Journey Optimizer integrates with **[!DNL Adobe Experience Manager as a Cloud Service]** so you can use **Content Fragments** in Journeys and Campaigns. **Content Fragments** are read from the Adobe Experience Manager publish repository by default, administrators can switch to author-only or adjust publish access in the **[!UICONTROL AEM Integration]** menu.
 
 ➡️ When the repository is configured, continue with [Work with Experience Manager Content Fragments](../integrations/aem-fragments.md) for authoring and selection tasks in Journey Optimizer.
