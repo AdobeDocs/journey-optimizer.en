@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Review & activate the API triggered campaign {#api-review}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review your API triggered campaign's configuration and content to catch errors before activating it, so you can confidently make the campaign live and ready to trigger through APIs.
+
+>[!ENDSHADEBOX]
+
 Once your API triggered campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:
 
 >[!IMPORTANT]

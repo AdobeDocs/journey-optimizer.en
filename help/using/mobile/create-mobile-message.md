@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Create a Mobile message {#create-sms}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add a Mobile message action to a journey or campaign in Adobe Journey Optimizer, then select a configuration and edit content to send text, rich communication, and multimedia messages.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_message_sms"
 >title="Create a Mobile message"
@@ -48,6 +54,12 @@ You can design and send text (SMS), rich communication (RCS) and multimedia (MMS
 In accordance with the industry standards and regulations, all SMS/RCS/MMS marketing messages must contain a way for the recipients to easily unsubscribe. To do this, SMS recipients can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#opt-out-decision-management)
 
 ## Add a Mobile message {#create-sms-journey-campaign}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_sms"
+>title="Mobile message action"
+>abstract="A Mobile message channel action sends a text (SMS), multimedia (MMS), or rich communication (RCS) message to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a Mobile message configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 Browse the tabs below to learn how to add a Mobile message in a campaign or a journey.
 

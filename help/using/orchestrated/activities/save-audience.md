@@ -25,6 +25,12 @@ subfeature_v2:
 ---
 # Save audience {#save-audience}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Save audience targeting activity to create or overwrite a reusable audience from the population built earlier in an Orchestrated campaign.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_save_audience"
 >title="Save audience activity"

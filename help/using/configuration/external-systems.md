@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Integrate with external systems {#external-systems}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the guardrails and best practices for integrating Adobe Journey Optimizer with external systems, including capping and throttling APIs, journey timeouts, and retries.
+
+>[!ENDSHADEBOX]
+
 This page presents the different guardrails provided by Journey Optimizer when integrating an external system, as well as best practices: how to optimize the protection of your external system using the capping API, how to configure journey timeout, and how retries work. 
 
 Journey Optimizer allows you to configure connections to external systems via [custom data sources](../datasource/about-data-sources.md) and [custom actions](../action/action.md). This allows you, for example, to enrich your journeys with data coming from an external reservation system, or send messages using a third-party system such as Epsilon or Facebook.

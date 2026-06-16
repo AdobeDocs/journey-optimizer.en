@@ -39,7 +39,13 @@ topic_v2:
     internal-label: Personalization
 ---
 # Manage fragments {#manage-fragments}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, organize, edit, archive, and export your content fragments, including using folders, tracking fragment statuses, and exploring where each fragment is referenced.
+
+>[!ENDSHADEBOX]
+
 ## Access fragments {#access-fragments}
 
 To manage your fragments, access the fragment list from the **[!UICONTROL Content Management]** > **[!UICONTROL Fragments]** left menu.

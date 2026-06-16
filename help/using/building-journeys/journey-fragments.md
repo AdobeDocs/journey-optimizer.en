@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Intermediate
 keywords: fragments, journey, reuse, nodes, canvas, inventory, reusable
-badge: label="Limited Availability" type="Informative"
 version: Journey Orchestration
 feature_v2: []
 subfeature_v2: []
@@ -16,8 +15,11 @@ subfeature_v2: []
 
 # Journey Fragments {#journey-fragments}
 
->[!AVAILABILITY]
->This capability is currently in Limited Availability. To request access, contact your Adobe representative.
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, manage, and reuse journey fragments — reusable sets of journey nodes — to build journeys faster and stay consistent across your sandbox.
+
+>[!ENDSHADEBOX]
 
 Journey Fragments are reusable sets of journey nodes that you can build once and drop into any journey across your sandbox. Whether it's an eligibility check, a preferred channel routing logic, or a welcome sequence, fragments help teams move faster and stay consistent — without rebuilding the same logic from scratch every time. [See use case examples.](#examples)
 
@@ -44,7 +46,7 @@ You can filter the list by fragment name, status, creation date, creator, last m
 >[!CONTEXTUALHELP]
 >id="ajo_journey_fragment_create_canvas"
 >title="Save as a journey fragment"
->abstract="Enter a unique name for your fragment and click Save. The selected nodes will be saved as a reusable fragment available in the Fragment Inventory."
+>abstract="A unique fragment name is entered before saving. The selected nodes are saved as a reusable fragment available in the Fragment Inventory."
 
 You can create a journey fragment in two ways: directly from the journey canvas (recommended), or from the Fragment Inventory.
 
@@ -89,7 +91,7 @@ To create a fragment directly from the inventory:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_fragment_properties"
 >title="Journey fragment properties"
->abstract="Open a fragment from the inventory to modify its nodes, properties, tags, or labels. Active fragments must be deactivated before they can be edited."
+>abstract="Opening a fragment from the inventory allows its nodes, properties, tags, or labels to be modified. Active fragments must be deactivated before they can be edited."
 
 To edit a fragment, open it from the **[!UICONTROL Fragment Inventory]** by clicking its name. In the fragment authoring UI, you can:
 
@@ -181,6 +183,7 @@ The following guardrails apply to journey fragments:
 * [Tags](tags.md) and **Labels** are supported on fragments.
 * [Audit Logs](../privacy/audit-logs.md) are supported.
 * Journeys running on the old stack (using Inline Campaigns) do not support journey fragments. Duplicate such a journey to move to the new stack before using this feature.
+* Journey fragments support [Sandbox tooling](../configuration/copy-objects-to-sandbox.md). Fragments can be packaged and exported to another sandbox.
 
 ## Use case examples {#examples}
 
@@ -209,3 +212,17 @@ A timed welcome sequence — such as a series of three messages introducing a pr
 A fragment can encapsulate an Email activity followed by a [Reaction](reaction-events.md), waiting for the profile to open the email within a set number of days and sending a reminder if they did not. This logic is commonly reused in nurturing journeys and trial conversion flows. The fragment can include the Email and Reaction activities.
 
 ![Reaction-based reminder fragment example](assets/journey-fragments-uc-reminder.png)
+
+## Frequently asked questions {#faq}
+
+**How is a Journey Fragment different from a Fragment (content fragment)?**
+
+**Journey Fragments** are reusable sets of journey nodes — such as eligibility checks or channel routing logic — that you insert into a journey using the **[!UICONTROL Journey fragments]** activity. **[Fragments](../content-management/fragments.md)** are reusable content components (for example, a header or footer) used inside emails across campaigns and journeys. In short, Journey Fragments are reusable *logic*, while content Fragments are reusable *content*.
+
+**How is a Journey Fragment different from an AEM Content Fragment?**
+
+**[AEM Content Fragments](../integrations/aem-fragments.md)** are content authored in Adobe Experience Manager and reused in [!DNL Journey Optimizer] messages. They are not journey logic. Journey Fragments, by contrast, are built and stored within [!DNL Journey Optimizer] and represent sets of connected journey nodes.
+
+**If I update a Journey Fragment, do existing journeys update too?**
+
+No. Journey fragments use a **copy behavior**: inserting a fragment creates a static copy of its nodes. Any updates made to the original fragment are not reflected in journeys that have already used it.

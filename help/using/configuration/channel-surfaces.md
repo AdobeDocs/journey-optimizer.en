@@ -46,6 +46,12 @@ topic_v2:
 ---
 # Set up channel configurations {#set-up-channel-surfaces}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, monitor, edit, and deactivate channel configurations in Adobe Journey Optimizer to define the technical parameters used to send your messages.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_channel_surfaces"
 >title="Channel configuration"

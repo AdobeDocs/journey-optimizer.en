@@ -42,6 +42,12 @@ topic_v2:
 ---
 # License usage dashboard {#license-usage}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Adobe Journey Optimizer license usage dashboard to monitor engageable profiles and troubleshoot unexpected increases in your profile count.
+
+>[!ENDSHADEBOX]
+
 The [!DNL Adobe Journey Optimizer] [user interface](../start/user-interface.md) provides a dashboard that displays important information about your organization's license usage, as captured during a daily snapshot.
 
 To access this dashboard, go to **[!UICONTROL Administration]** > **[!UICONTROL License Usage]**. This opens the **[!UICONTROL Overview]** tab, which displays the dashboard.

@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Lock content in email templates {#lock-content-email-templates}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to lock content in email templates, at the structure or component level or as read-only, to prevent unintended edits when marketers reuse your templates in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_locking_governance"
 >title="Governance"

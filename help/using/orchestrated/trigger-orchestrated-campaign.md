@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Trigger Orchestrated campaigns using a signal {#trigger-signal}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to trigger an Orchestrated campaign with a signal from the REST API or from another campaign's End activity, and how to pass payload parameters that become variables for targeting, conditions, and expressions.
+
+>[!ENDSHADEBOX]
+
 You can start an Orchestrated campaign with a signal instead of a fixed schedule. When the campaign receives the signal, it runs and you can pass parameters in the payload. They become available as variables for targeting, conditions, or expressions.
 
 The signal can come from either of the following:

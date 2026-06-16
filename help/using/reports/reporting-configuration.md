@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Reporting & experimentation prerequisites {#reporting-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure a reporting data source by adding datasets so Journey Optimizer can retrieve the additional metrics used in your experimentation and campaign reports.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_reporting_config"
 >title="Set up datasets for reporting"

@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Manage your reports {#channel-cja-manage}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Manage your Adobe Journey Optimizer reports by analyzing data in Customer Journey Analytics, setting report periods, exporting and scheduling reports, building custom metrics, and creating audiences.
+
+>[!ENDSHADEBOX]
+
 ## Analyze in Customer Journey Analytics {#analyze}
 
 >[!AVAILABILITY]

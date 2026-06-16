@@ -32,6 +32,12 @@ level_v2:
 ---
 # Work with landing page templates {#work-with-templates}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Save a finished landing page as a reusable content template, then apply it to speed up the design of future pages.
+
+>[!ENDSHADEBOX]
+
 ## Save a page as template {#save-as-template}
 
 Once you designed your [landing page content](lp-content.md), you can save it for future reuse. To do this, follow the steps below.

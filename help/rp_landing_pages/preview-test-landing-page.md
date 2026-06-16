@@ -76,7 +76,7 @@ Integrate Litmus to preview email rendering across popular email clients and ens
 
 How to Simulate and Test Content Variations
 
-Simulate content variations using sample input data to test personalized content and ensure accuracy.
+Simulate content variations using sample input data or AI-generated variants to test personalized content and ensure accuracy.
 
 [Simulate content variations](../using/test-approve/simulate-sample-input.md)
 :::
@@ -117,7 +117,7 @@ Follow this sequence for comprehensive validation:
 **Context:** Real-world examples showing how to apply testing tools in typical use cases.
 
 **Scenario 1: Testing personalized emails for a multi-segment campaign**
-→ Use [sample input data](../using/test-approve/simulate-sample-input.md) to test 20-30 variations without creating individual test profiles. Upload a CSV with different customer attributes and preview all at once.
+→ Use [sample input data](../using/test-approve/simulate-sample-input.md) to test up to 30 variations without creating individual test profiles. Upload a CSV with different customer attributes, add values manually, or auto-generate variants with AI and preview all at once.
 
 **Scenario 2: Validating email rendering before a major send**
 → Run [Litmus tests](../using/content-management/rendering.md) to check display across top email clients, then check the [spam report](../using/content-management/spam-report.md) to ensure inbox placement.

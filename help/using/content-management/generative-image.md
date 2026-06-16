@@ -15,6 +15,12 @@ subfeature_v2:
 ---
 # Generate images with AI Assistant {#generative-image}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use AI Assistant in Adobe Journey Optimizer to generate, refine, and select on-brand images for your email, web, landing page, and push notification content.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
@@ -102,7 +108,7 @@ After generating image variations, you can review the results, check brand align
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
-1. After defining your message content, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
+1. After defining your message content, use either simulation method to control the rendering and check personalization settings: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more](../content-management/preview-test.md)
 
 1. Review and activate your content:
    * **Email**: When you have defined your content, audience and schedule, you are ready to prepare your email campaign. [Learn more](../campaigns/review-activate-campaign.md)

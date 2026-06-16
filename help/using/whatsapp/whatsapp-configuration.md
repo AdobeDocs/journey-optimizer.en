@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Get started with WhatsApp configuration {#whatsapp-config}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up WhatsApp API credentials, webhooks, and a channel configuration to connect your WhatsApp Business account, so your environment is ready to send WhatsApp messages with Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Before sending your WhatsApp message, you must configure your Adobe Journey Optimizer environment and associate with your WhatsApp account. To perform this:
 
 1. [Create your WhatsApp API credentials](#WhatsApp-credentials)
@@ -132,7 +138,7 @@ Once your WhatsApp API credentials have been successfully created, you can now c
 
 >[!NOTE]
 >
->Inbound WhatsApp messages are captured in the _AJO Inbound Activity Event Dataset_ system dataset. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
+>Inbound WhatsApp messages are captured in the _AJO Email Tracking Dataset_ system dataset. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured in this dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
 
 Webhooks act as the communication bridge between Meta's WhatsApp Business Platform and Adobe Journey Optimizer, allowing you to receive real-time notifications about message events and user interactions.
 

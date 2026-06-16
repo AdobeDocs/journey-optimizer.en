@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Prerequisites and guardrails {#web-prerequisites}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the implementation, visual authoring, delivery, and reporting prerequisites and guardrails you must meet to access, author, deliver, and report on web experiences in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 To be able to access and author web pages in the [!DNL Journey Optimizer] user interface, follow the prerequisites below: 
 
 * To add modifications to your website, you need to have a specific implementation. [Learn more](#implementation-prerequisites)

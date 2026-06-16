@@ -27,6 +27,12 @@ topic_v2:
 ---
 # Test code-based experiences {#test-code-based}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview and test your code-based experiences with test profiles and on-device previews before publishing.
+
+>[!ENDSHADEBOX]
+
 ## Preview your code-based experience {#preview-code-based}
 
 >[!CONTEXTUALHELP]
@@ -40,9 +46,14 @@ To display a preview of your modified code-based experience, follow the steps be
 >
 >You must have test profiles available to simulate which offers will be delivered to them. Learn how to [create test profiles](../audience/creating-test-profiles.md).
 
-1. In the journey or campaign, from either the personalization editor or edit content screen, select **[!UICONTROL Simulate content]**.
+From the journey or campaign edit content screen or personalization editor, use either simulation method:
 
-    ![](assets/code-based-campaign-simulate.png)
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
+
+![](assets/code-based-campaign-simulate.png)
+
+**To preview with test profiles**, follow these steps:
 
 1. Click **[!UICONTROL Manage test profiles]** to select one or more test profiles.
 

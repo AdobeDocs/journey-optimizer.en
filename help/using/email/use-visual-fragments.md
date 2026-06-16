@@ -46,6 +46,12 @@ topic_v2:
 ---
 # Add visual fragments to your emails {#use-visual-fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to insert reusable visual fragments into your emails, customize their editable fields, and break or keep their inheritance with the original fragment.
+
+>[!ENDSHADEBOX]
+
 A fragment is a reusable component that can be referenced in one or more emails across Journey Optimizer campaigns, journeys or content template. This functionality allows to prebuilt multiple custom content blocks that can be used by marketing users to quickly assemble email contents in an improved design process. [Learn how to create and manage fragments](../content-management/fragments.md).
 
 ➡️ [Learn how to manage, author and use fragments in this video](../content-management/fragments.md#video-fragments)

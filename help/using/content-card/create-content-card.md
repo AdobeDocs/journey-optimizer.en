@@ -16,7 +16,24 @@ subfeature_v2:
     internal-label: Mobile SDK
 ---
 # Create content cards {#create-content-card}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Author a content card and define its content within a journey or campaign so you can deliver personalized in-app experiences with the delivery rules you choose.
+
+>[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_content_card"
+>title="Content Card action"
+>abstract="A content card inbound action displays a content card to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a content card configuration that defines the content shown. The **Optimization** section can include content experiments or targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default), giving profiles time to view the content card."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
  
+Content cards are inbound, in-app experiences that display personalized content—such as promotions, announcements, or recommendations—directly within a dedicated surface of your mobile app. Unlike interruptive messages, they remain available in the app until the user dismisses them or your delivery rules hide them.
+
+This page explains how to author a content card and define its content, either as part of a [journey](../building-journeys/journey-gs.md) or a [campaign](../campaigns/create-campaign.md). Once added, you can design the card, set additional delivery rules that control when it is shown, dismissed, or permanently hidden, and run content experiments to optimize its performance.
+
 >[!IMPORTANT]
 >
 >By default, the close button hides the card. To add more functionality, you can manually define dismissal or disqualification rules.

@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Access and subscribe to system alerts {#alerts}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, subscribe to, and manage system alerts in Adobe Journey Optimizer to proactively monitor journey and campaign lifecycle events, custom action errors, profile issues, and email deliverability.
+
+>[!ENDSHADEBOX]
+
 ## Overview
 
 Alerts are automated notifications that help you monitor and troubleshoot issues in Adobe Journey Optimizer. They provide real-time awareness of potential problems in your journeys, campaigns, and channel configurations, enabling you to take corrective action before customer experiences are impacted.

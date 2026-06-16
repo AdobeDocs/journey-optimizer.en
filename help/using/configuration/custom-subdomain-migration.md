@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Migrate an email subdomain from CNAME to custom delegation {#migrate-cname-to-custom}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to migrate an email or landing page subdomain from CNAME delegation to custom delegation in Adobe Journey Optimizer by deleting the existing DNS records, uploading your SSL certificate, completing the feedback loop, and creating the new DNS records.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.

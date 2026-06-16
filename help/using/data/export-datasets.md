@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Export datasets to cloud storage locations {#export-datasets}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up live connections to cloud storage destinations so you can export your Journey Optimizer datasets for reporting, archival, and external data analysis.
+
+>[!ENDSHADEBOX]
+
 Journey Optimizer allows you to establish a live connection with cloud storage locations in order to export the content of your datasets.
 
 By periodically exporting your data, you can ensure that you have a complete and up-to-date record of your customer interactions, making it readily available for reporting, archival, or data analysis purposes.
@@ -118,7 +124,7 @@ Understand from the table below which Journey Optimizer datasets you can export.
 | AJO Entity Dataset | Dataset to store entity metadata for messages sent to the end user.  |
 | AJO Inbound Activity Event Dataset | Dataset for Journey Optimizer web & inApp channels for delivery & interaction events. |
 | AJO Interactive Messaging Profile Dataset | Stores profiles created to support API-triggered campaigns |
-| AJO Message Feedback Event Dataset | Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. This dataset includes events for all channels: Email, SMS/RCS/MMS, Direct Mail, etc.|
+| AJO Message Feedback Event Dataset | Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. This dataset includes events for all channels: Email, SMS/RCS/MMS, Direct Mail, etc. **This dataset uses batch ingestion — expect a data latency of up to 2 hours.**|
 | AJO Message Export Dataset | Stores sent email and SMS message content that has been marked for export. Data is retained for seven calendar days from ingestion. |
 | AJO Profile Counters Extension | Holds a map of objects containing counter_value and expiryDate, keyed by counter_id |
 | AJO Push Profile Dataset | Stores push tokens of a profile. |

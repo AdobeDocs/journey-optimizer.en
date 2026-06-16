@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Create an IP warmup plan {#ip-warmup}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up the required permissions, prepare the Excel plan file with domain groups, and create an IP warmup plan in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Once you created one or more [IP warmup campaigns](ip-warmup-campaign.md) with a dedicated configuration and the corresponding option enabled, you can start creating your IP warmup plan.
 
 To access, create, edit and delete the IP warmup plans, you must have the **[!UICONTROL Deliverability Consultant]** role or IP warmup plans related permissions. 

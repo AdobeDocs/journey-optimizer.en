@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Customizable fragments {#customizable-fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to make specific fields in visual and expression fragments editable so users can customize them when adding the fragment to a campaign or journey, without breaking inheritance from the original fragment.
+
+>[!ENDSHADEBOX]
+
 When fragments are used in a campaign or journey action, they are locked by default due to inheritance. This means any changes made to a fragment are automatically propagated to all campaigns and journeys where the fragment is used.
 
 With **customizable fragments**, specific fields within a fragment can be defined as editable when the fragment is added to a campaign or journey action. For example, suppose you have a fragment with a banner, some text, and a button. You can designate certain fields, such as the image or button target URL, as editable. This allows users to modify these elements when they incorporate the fragment into their campaign or journey, providing a tailored experience without affecting the original fragment.
@@ -249,7 +255,7 @@ When adding the fragment to your email, you can now edit the rich text content a
 
     ![](assets/fragment-use-rich-editable-fields.png)
 
-1. You can click **[!UICONTROL Simulate content]** to see how the editable content and styling render. [Learn more on previewing content](preview-test.md)
+1. Use either simulation method to see how the editable content and styling render: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more on previewing content](preview-test.md)
 
 1. Select the **[!UICONTROL Add personalization]** icon next to one of the editable fields.
 

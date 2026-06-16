@@ -51,6 +51,12 @@ topic_v2:
 ---
 # Add links & track messages {#tracking}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to insert and manage links, add a mirror page, and enable open and click tracking to monitor recipient engagement with your emails.
+
+>[!ENDSHADEBOX]
+
 Use [!DNL Journey Optimizer] to add links to your content and track the messages sent in order to monitor the behavior of your recipients.
 
 >[!NOTE]

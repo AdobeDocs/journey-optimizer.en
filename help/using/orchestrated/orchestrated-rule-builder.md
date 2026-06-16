@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Work with the rule builder {#orchestrated-rule-builder}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the rule builder to filter data and create the queries that target audiences in your Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 Orchestrated campaigns comes with a rule builder that simplifies the process of filtering the database based on various criteria. The rule builder manages very complex and long queries efficiently, offering enhanced flexibility and precision.
 
 It also supports predefined filters within conditions, empowering you to refine queries with ease while utilizing advanced expressions and operators for comprehensive audience targeting and segmentation strategies.

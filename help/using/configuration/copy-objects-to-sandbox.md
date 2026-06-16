@@ -54,6 +54,12 @@ topic_v2:
 ---
 # Export objects to another sandbox {#copy-to-sandbox}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to copy Adobe Journey Optimizer objects such as journeys, campaigns, custom actions, content templates, and fragments between sandboxes using package export and import.
+
+>[!ENDSHADEBOX]
+
 You can copy objects such as journeys, campaigns, custom actions, content templates, or fragments, across multiple sandboxes by using package export and import capabilities. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox.
 
 This page describes the Sandbox tooling use case in the context of Journey Optimizer. For more information on the feature itself, refer to the Adobe Experience Platform [Sandbox tooling guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
@@ -208,6 +214,12 @@ Before you import into production, keep the following behavior and limitations i
 * Fragments can have multiple statuses such as Live, Draft and Live with draft in progress. When exporting a fragment, its latest Draft state is copied to the target sandbox.
 
 * When exporting a fragment, all nested Fragments are also copied along with it.
+
++++
+
++++ Journey Fragments
+
+* [Journey Fragments](../building-journeys/journey-fragments.md) (reusable sets of journey nodes) are supported for Sandbox tooling. When exporting a journey fragment, its latest Draft state is copied to the target sandbox.
 
 +++
 

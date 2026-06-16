@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Get started with Adobe Experience Manager content fragments {#aem-fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with Adobe Experience Manager Content Fragments and understand how their author and publish lifecycle determines which fragments are available in Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >For Healthcare customers, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Enhanced Security add-on offerings.

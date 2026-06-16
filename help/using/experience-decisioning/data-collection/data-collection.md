@@ -33,6 +33,12 @@ subfeature_v2:
 ---
 # Decision management data collection {#data-collection}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how decisioning feedback on impressions, clicks, and custom events is collected in Adobe Experience Platform, so you can power decisioning reports, capping rules, and AI ranking models.
+
+>[!ENDSHADEBOX]
+
 ## Understanding data collection
 
 You can collect offer decisioning feedback in Adobe Experience Platform, including which offers are displayed and how users interact with them. This data can be used for:

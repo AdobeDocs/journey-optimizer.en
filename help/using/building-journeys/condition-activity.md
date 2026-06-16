@@ -32,6 +32,12 @@ level_v2:
 ---
 # Condition activity {#condition-activity}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Condition activity to route profiles into different journey paths based on rules, data, and audience membership.
+
+>[!ENDSHADEBOX]
+
 Use the condition activity to route profiles to different paths based on rules and data.
 
 ## Add a condition activity {#add-condition-activity}
@@ -68,7 +74,7 @@ You can also base a condition on audience membership. See these sections:
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_simple"
 >title="About the simple expression editor"
->abstract="The simple expression editor mode allows you to perform simple queries based on a combination of fields. All the available fields are displayed on the left side of the screen. Drag and drop fields into the main zone. To combine the different elements, interlock them into one another to create different groups and/or group levels. You can then select a logical operator to combine elements on the same level."
+>abstract="The simple expression editor mode allows you to perform simple queries based on a combination of fields. All the available fields are displayed on the left side of the screen. Fields are dragged and dropped into the main zone. To combine the different elements, they are interlocked into one another to create different groups and/or group levels. A logical operator then combines elements on the same level."
 
 When using several conditions in a journey, you can define labels for each of them to identify them more easily.
 

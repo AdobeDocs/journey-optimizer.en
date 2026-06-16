@@ -45,6 +45,12 @@ topic_v2:
 ---
 # Get Started with datasets {#datasets-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, create, and govern Adobe Experience Platform datasets so you can store and explore the data that powers journeys, campaigns, and reporting in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 All data that is ingested into Adobe Experience Platform is persisted within the Data Lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows).
 
 ## Guardrails & limitations
@@ -80,7 +86,7 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
 
 * Reporting
 
-    * _Reporting - Message Feedback Event Dataset_: Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset.
+    * _Reporting - Message Feedback Event Dataset_: Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. **This dataset uses batch ingestion — expect a data latency of up to 2 hours.**
     * _Reporting - Email Tracking Experience Event Dataset_: Interaction logs for the Email channel, and WhatsApp channel context data under the `whatsAppChannelContext` field group. Used for reporting and audience creation. Information stored includes actions performed by the end-user on email (opens, clicks, etc.) and WhatsApp interactions.
     * _Reporting - Push Tracking Experience Event Dataset_: Interaction logs for Push channel which is used for reporting and audience creation purposes. Information stored informs on actions performed by the end-user on push notifications.
     * _Reporting - Journey Step Event_: Captures All Journey Step Experience Events generated from Journey Optimizer to be consumed by services like Reporting. Also critical for building reports in Customer Journey Analytics for YoY analysis. Tied to a Journey Metadata.

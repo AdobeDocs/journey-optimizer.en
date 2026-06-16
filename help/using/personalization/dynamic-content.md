@@ -33,6 +33,12 @@ subfeature_v2:
 ---
 # Create dynamic content {#dynamic-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use conditional rules to add dynamic content into your messages, both in personalization expressions and as content component variants in the Email Designer.
+
+>[!ENDSHADEBOX]
+
 Adobe Journey Optimizer allows you to leverage conditional rules created in the library to add dynamic content into your messages.
 
 Dynamic content can be created into any field where you can add personalization using the personalization editor. This includes subject line, links, push notifications content, or text-type offers' representations. [Learn more about personalization](personalize.md)
@@ -57,7 +63,7 @@ The steps to add dynamic content in expressions are as follows:
 
     ![](assets/conditions-language-sample.png)
 
-1. Once your content is ready, you can preview the different variants using the **[!UICONTROL Simulate content]** button. [Learn how to test and preview messages](../content-management/preview-test.md)
+1. Once your content is ready, you can preview different variants using either simulation method: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn how to test and preview messages](../content-management/preview-test.md)
 
     ![](assets/conditions-preview.png)
 

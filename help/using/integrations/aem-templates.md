@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Work with Adobe Experience Manager templates {#aem-templates}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design templates in Adobe Experience Manager, export them to Journey Optimizer, and personalize them as content templates in the Email Designer.
+
+>[!ENDSHADEBOX]
+
 ## Get started with Adobe Experience Manager templates {#gs-aem-templates}
 
 With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's Email Designer, simplifying the process of crafting and sending messages to your desired audience.
@@ -124,7 +130,7 @@ Once the Experience Manager template is available in Journey Optimizer as a cont
 
     ![](assets/aem_ajo_5.png)
 
-1. If you added personalized content to your Experience Manager template, click **[!UICONTROL Simulate Content]** to preview how it will appear in the message using test profiles. 
+1. If you added personalized content to your Experience Manager template, use either simulation method to preview how it will appear in the message: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
 
     [Learn more about preview and test profiles](../content-management/preview-test.md)
 

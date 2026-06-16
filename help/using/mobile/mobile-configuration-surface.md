@@ -31,6 +31,12 @@ topic_v2:
 ---
 # Create a Mobile message configuration {#message-preset-sms}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a Mobile message channel configuration in Adobe Journey Optimizer by setting the message type, mobile configuration, sender number, subdomain, and execution field to send SMS, RCS, and MMS messages.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_surface_sms_type"
 >title="Define the message category"

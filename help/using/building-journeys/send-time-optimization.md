@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Send-Time Optimization{#send-time-optimization}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to enable Send-Time Optimization so Adobe's AI predicts the best time to deliver email and push messages based on each customer's historical open and click behavior.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_disabled"
 >title="About Sent time optimization"
@@ -50,12 +56,12 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_email"
 >title="Activate Send-Time Optimization"
->abstract="Choose whether to optimize on email opens or email click-throughs by selecting the appropriate radio button. You can also choose to bracket the send times used by the system by entering a value for the Send within the next option."
+>abstract="A radio button determines whether to optimize on email opens or email click-throughs. The send times used by the system can also be bracketed with a value for the Send within the next option."
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_push"
 >title="Activate Send-Time Optimization"
->abstract="Push messages defaults to the opens option, as clicks are not applicable for push messaging. You can also choose to bracket the send times used by the system by entering a value for the Send within the next option."
+>abstract="Push messages defaults to the opens option, as clicks are not applicable for push messaging. The send times used by the system can also be bracketed with a value for the Send within the next option."
 
 [!DNL Adobe Journey Optimizer]'s Send-Time Optimization feature, powered by Adobe's Journey AI services, chooses the optimal send time for email and push messages to maximize customer engagement, based on your customers' historical open and click behavior.
 

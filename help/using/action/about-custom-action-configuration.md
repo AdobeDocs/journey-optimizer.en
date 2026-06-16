@@ -48,6 +48,12 @@ topic_v2:
 ---
 # Configure a custom action {#configure-a-custom-action}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Connect a third-party REST API to your journeys by setting up a custom action's endpoint, authentication, security, and payload parameters so journeys can call that service.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_custom_configuration"
 >title="Custom actions"
@@ -76,6 +82,15 @@ Here are the main steps required to configure a custom action:
 1. The number of journeys that use this action is displayed in the **[!UICONTROL Used in]** field. You can click the **[!UICONTROL View journeys]** button to display the list of  journeys using this action.
 1. Define the different **[!UICONTROL URL Configuration]** parameters. See [this page](../action/about-custom-action-configuration.md#url-configuration).
 1. Configure the **[!UICONTROL Authentication]** section. This configuration is the same as for data sources.  See [this section](../datasource/external-data-sources.md#custom-authentication-mode).
+
+    >[!NOTE]
+    >
+    >If your endpoint returns both an `access_token` and an `id_token`, use the `tokenInResponse` field to specify which token Journey Optimizer should use as the authentication credential:
+    >* `"tokenInResponse": "json://access_token"` — use the access token (default for OAuth 2.0)
+    >* `"tokenInResponse": "json://id_token"` — use the ID token (common in OpenID Connect flows)
+    >
+    >[Learn more about custom authentication](../datasource/external-data-sources.md#custom-authentication-mode)
+
 1. Define the **[!UICONTROL Action parameters]**. See [this page](../action/about-custom-action-configuration.md#define-the-message-parameters).
 1. Click **[!UICONTROL Save]**.
 
@@ -203,6 +218,14 @@ Mutual TLS (mTLS) authentication is supported in custom actions. There is no add
 >* Configure your endpoint to accept **overlapping certificates** (both the old and new certificate simultaneously), so there is no connectivity gap during rotation.
 >* Adobe does not currently send proactive notifications when a certificate is rotated. It is your responsibility to monitor for certificate updates and keep your trust store current.
 >* Trust validation should be based on the certificate chain up to the Root CA (DigiCert) rather than pinning to a specific leaf certificate fingerprint.
+
+### Certificate-based custom authentication {#certificate-based-auth}
+
+For enterprise APIs that enforce certificate-based identity verification — such as Microsoft Entra ID — custom actions support **Certificate-Based Custom Authentication**. To enable it, set `"subType": "certificateCredential"` in the custom authorization payload configured in the **[!UICONTROL Authentication]** section.
+
+Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and automatically exchange it for an access token. No client secret is required.
+
+For the full payload structure, field descriptions, and configuration guardrails, see [Certificate-based custom authentication](../datasource/external-data-sources.md#certificate-credential).
 
 ## Define the payload parameters {#define-the-message-parameters}
 

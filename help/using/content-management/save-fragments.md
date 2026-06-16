@@ -37,7 +37,13 @@ topic_v2:
     internal-label: Personalization
 ---
 # Save content as fragment {#save-as-fragment}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to save all or part of your content as visual or expression fragments in Adobe Journey Optimizer so you can reuse it across journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 When editing content in [!DNL Journey Optimizer], you can save all or part of your content as fragment for future reuse. You can save content as fragment either [from the Email Designer](#save-as-visual-fragment), or [from the expression editor](#save-as-expression-fragment).
 
 >[!NOTE]

@@ -12,6 +12,12 @@ subfeature_v2:
 ---
 # Select test profiles {#select-test-profiles}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to select test profiles by identity namespace in Adobe Journey Optimizer so you can preview and test your content against different profile data variants.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_preview_test_profiles"
 >title="Use test profiles to check your content"
@@ -21,7 +27,7 @@ Test profiles are additional recipients who do not match the defined targeting c
 
 Before using test profiles to test your content, you first need to select them. To do this, follow these steps:
 
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button and select **[!UICONTROL Simulate content]**.
+1. From the edit content screen of your message or in the Email Designer, click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown.
 
 1. Click the **[!UICONTROL Manage test profiles]** button then select the namespace to use to identify test profiles by clicking the **[!UICONTROL Identity namespace]** selection icon. [Learn more about Adobe Experience Platform identity namespaces](../audience/get-started-identity.md).
     

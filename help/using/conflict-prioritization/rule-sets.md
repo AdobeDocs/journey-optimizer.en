@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Work with rule sets {#rule-sets}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Group frequency capping, quiet hours, and journey capping rules into rule sets so you can control how often and how many communications each customer receives.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_rule_sets"
 >title="Rule Sets"

@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Work with Adobe Analytics data {#analytics-data}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Connect the web behavioral data you already capture with Adobe Analytics or Web SDK so you can trigger journeys and automate timely experiences from your customers' real-time activity.
+
+>[!ENDSHADEBOX]
+
 You can leverage all of the web behavioral event data which you are already capturing through Adobe Analytics or Web SDK, and streaming into Adobe Experience Platform, in order to trigger journeys and automate experiences for your customers.
 
 For this to work with Adobe Analytics, you must:

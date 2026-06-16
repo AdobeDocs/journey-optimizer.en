@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Troubleshoot your journeys {#troubleshooting}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find troubleshooting resources organized by common problem area to help you diagnose and resolve journey errors, execution inconsistencies, inbound action issues, and custom action problems.
+
+>[!ENDSHADEBOX]
+
 When a customer journey does not behave as expected, identifying the root cause can be challenging. To help you resolve issues efficiently, you can find below troubleshooting resources by the most common problem areas. Whether you see journey failures, execution inconsistencies, or action-level problems, each section provides targeted guidance to investigate and resolve them.
 
 Explore the pages below to dive into specific troubleshooting topics:

@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Create IP warmup campaigns {#create-ip-warmup-campaign}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create and activate email campaigns dedicated to IP warmup so they can be scheduled and used within an IP warmup plan.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_ip_warmup"
 >title="Activate the IP warmup plan option"

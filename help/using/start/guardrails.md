@@ -37,6 +37,12 @@ topic_v2:
 
 # Guardrails and limitations {#limitations}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the system, journey, audience, channel, and content limits of Adobe Journey Optimizer so you can plan deployments that scale without hitting failures.
+
+>[!ENDSHADEBOX]
+
 Below you will find guardrails and limitations when using [!DNL Adobe Journey Optimizer].
 
 Entitlements, product limitations and performance guardrails are listed in [Adobe Journey Optimizer product description page](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}.

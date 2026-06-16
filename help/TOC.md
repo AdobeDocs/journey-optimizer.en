@@ -12,7 +12,7 @@ solution: Journey Optimizer
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
-  + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)  
+  + [Pre-release notes](using/rn/e-release-notes.md)  
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -26,14 +26,17 @@ solution: Journey Optimizer
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
   + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
+  + {hide-from-toc} [Onboarding hub](using/start/onboarding-hub.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer?](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
     + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
+    + {hide-from-toc} [Which capability for this job?](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + {hide-from-toc} [Capabilities by package](using/start/ajo-packages.md)
     + {hide-from-toc} [Packages and capabilities (v2)](using/start/ajo-packages-v2.md)
+    + {hide-from-toc} [Packages and capabilities (v3)](using/start/ajo-packages-v3.md)
   + Get started by role {#by-role}
     + [Roles and responsibilities](using/start/quick-start.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
@@ -58,9 +61,9 @@ solution: Journey Optimizer
     + [Send using waves in journeys](using/building-journeys/send-using-waves.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
-    + [Simulate your journey](using/building-journeys/simulate-journey.md)
-    + {hide-from-toc}[Get started with Journey simulation](using/building-journeys/simulate-journey-gs.md) 
-    + {hide-from-toc}[Simulate your journey](using/building-journeys/simulate-journey-2.md) 
+    + Simulation {#simulate-journey}
+      + [Get started with journey simulation](using/building-journeys/simulate-journey-gs.md) 
+      + [Simulate your journey](using/building-journeys/simulate-journey.md) 
     + [Test your journey](using/building-journeys/testing-the-journey.md)
     + [Journey Dry run](using/building-journeys/journey-dry-run.md)
     + [Publish your journey](using/building-journeys/publish-journey.md)
@@ -76,8 +79,6 @@ solution: Journey Optimizer
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
-    + [Copy a journey to another sandbox](using/building-journeys/copy-to-sandbox.md)
-    + [Integrate with Intelligent Services](using/building-journeys/ai-services-overview.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
@@ -249,7 +250,6 @@ solution: Journey Optimizer
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
     + [Simulate content variations](using/test-approve/simulate-sample-input.md)
-    + {hide-from-toc} [Simulate content variations (GA review)](using/test-approve/simulate-sample-input-ga.md)
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
@@ -518,6 +518,7 @@ solution: Journey Optimizer
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
     + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
+    + [Integrate with Intelligent Services](using/integrations/intelligent-services.md)
     + Integrations {#integrations}
       + [Work with Integrations](using/integrations/integrations.md)
       + [Using External integrations for personalization](using/integrations/integrations-personalization.md)
@@ -719,6 +720,7 @@ solution: Journey Optimizer
       + [Create decision policies](using/experience-decisioning/create-decision-policy.md)
       + [Use decision policies in messages](using/experience-decisioning/use-decision-policy.md)
       + [Leverage fragments in decision policies](using/experience-decisioning/fragments-decision-policies.md)
+      + [Batch decisioning in direct mail](using/experience-decisioning/batch-decisioning-direct-mail.md) 
     + [Report on Decisioning](using/experience-decisioning/cja-reporting.md)
     + [Decisioning use case](using/experience-decisioning/experience-decisioning-uc.md)
     + Collect event data {#experience-decisioning-collect-event-data}
@@ -997,4 +999,5 @@ solution: Journey Optimizer
     + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)
+
 

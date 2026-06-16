@@ -33,6 +33,12 @@ level_v2:
 ---
 # General events {#general-events}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use general events to trigger journeys unitarily in real time and configure event timeouts and timeout paths to listen for an event only during a defined period.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_custom"
 >title="Unitary events"
