@@ -270,5 +270,6 @@ Now that you understand how [!DNL Adobe Journey Optimizer] is packaged, here's w
 
 - **Get started with the product** — Set up your environment and learn the core concepts. [Get started with Journey Optimizer](get-started.md)
 - **Plan your implementation** — Follow the structured onboarding path for your project. [Onboarding project guide](onboarding-hub.md)
+- **Check feature availability** — See which features are live, their lifecycle status (GA / LA / Beta), and when they shipped. [Feature availability](ajo-features-availability.md)
 - **Find the right use case** — Map your engagement goals to the capabilities that support them. [Use case guide](ajo-use-case-guide.md)
 - **Configure your channels** — Once you know which add-ons you have, set up the channels you need: [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [SMS / MMS](../mobile/get-started-mobile.md), [in-app messaging](../in-app/get-started-in-app.md), [content cards](../content-card/get-started-content-card.md), [the web channel](../web/get-started-web.md), and [code-based experiences](../code-based/get-started-code-based.md).
