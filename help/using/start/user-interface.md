@@ -419,31 +419,4 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Load file activity"
 >abstract="The **Load file** activity is a **Targeting** activity. Use it to upload a CSV or TXT file on the Orchestrated campaign canvas and use it as the campaign audience. File data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. Rows are reconciled to existing recipients using an identity column and a targeting dimension."
 
-<!-- SMS Sinch Usage metrics -->
 
->[!CONTEXTUALHELP]
->id="ajo_admin_sms_usage_metrics"
->title="SMS usage metrics"
->abstract="Generate SMS usage reports to reconcile messaging volume with vendor billing. Reports list mobile-terminated (MT) and mobile-originated (MO) counts for each short code or phone number, aggregated by day."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_sms_usage_report_name"
->title="Report name"
->abstract="Enter a label that helps you recognize this report in the list later, for example, May 2026 billing review."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_sms_usage_credential"
->title="SMS credentials"
->abstract="Select the Sinch API credential whose send and receive traffic should appear in this report. To add or update credentials, go to **Administration** > **Channels** > **API credentials**, then choose **SMS Vendor** > **Sinch MMS**."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_sms_usage_start_date"
->title="Start date"
->abstract="First day of the date range to include in the report. Usage data is available only for the last 90 days."
-
-<!--  channel type in Custom Provider in API credential  -->
-
->[!CONTEXTUALHELP]
->id="ajo_admin_sms_api_byop_channel_type"
->title="Channel type"
->abstract="Optional. Classify messages sent with this custom SMS provider credential, for example, SMS or RCS. Journey Optimizer writes the value to XDM experience events so you can report on and track delivery by channel."
