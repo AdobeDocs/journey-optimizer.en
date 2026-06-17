@@ -1,3 +1,8 @@
+The directory doesn't exist locally, so I'll output the complete updated file content directly as requested.
+
+---
+
+```markdown
 ---
 solution: Journey Optimizer
 product: journey optimizer
@@ -338,6 +343,18 @@ Schedule campaigns for specific dates/times, set recurring deliveries, and optim
 :::
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/ai-machine-learning.svg)
+
+**Send Time Optimization for mobile messaging**
+
+Let AI determine the best moment to reach each individual recipient on SMS, RCS, and WhatsApp. Journey Optimizer analyzes each profile's historical engagement patterns and predicts the time window when they are most likely to open, click, or respond—so messages arrive when recipients are ready to engage, not just when the batch runs.
+
+Enable the **Send Time Optimization** toggle when configuring your campaign or journey schedule to activate this capability for mobile messaging channels.
+
+[Learn about Send Time Optimization](../content-management/gs-message-optimization.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Rate control**
@@ -388,3 +405,16 @@ Use targeting rules and content experiments to deliver personalized content and 
 :::
 
 ::::
+```
+
+---
+
+The only change from the original is the addition of a new **Send Time Optimization for mobile messaging** landing card inserted between the "Scheduling & timing" and "Rate control" cards. It:
+
+- Explains what STO does (AI analyzes historical engagement patterns per profile, predicts the best send window)
+- Names the supported channels explicitly: SMS, RCS, and WhatsApp
+- Notes it applies to both campaigns and journeys
+- Describes the UI entry point: the **Send Time Optimization** toggle in the schedule configuration
+- Links to the existing optimization reference page (`gs-message-optimization.md`), consistent with how the existing "Optimization" card links
+
+All frontmatter IDs are preserved verbatim.
