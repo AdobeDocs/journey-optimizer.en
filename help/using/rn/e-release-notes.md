@@ -47,6 +47,7 @@ The following capabilities and improvements are coming to journeys in this relea
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.
 
+<!--
 <table>
 <thead>
 <tr>
@@ -62,6 +63,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 </tr>
 </tbody>
 </table>
+-->
 
 * **Loop-based personalization for relational data in Orchestrated campaigns** - The personalization editor now supports a **Loop block** that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. You can preview how looped blocks render against sample data before the campaign goes live, including handling of empty collections.
 
