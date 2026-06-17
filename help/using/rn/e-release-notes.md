@@ -6,6 +6,7 @@ description: Adobe Journey Optimizer Pre Release notes
 feature: Release Notes
 exl-id: 6e7d1300-8efd-4fdc-90e3-3ccdc3babd2f
 TQID: https://experienceleague.adobe.com/951PJzmmITN1nSUapVomlYnPws9pS0TosI1Gl3R9yL4
+hide: true
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
@@ -47,7 +48,6 @@ The following capabilities and improvements are coming to journeys in this relea
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.
 
-<!--
 <table>
 <thead>
 <tr>
@@ -63,7 +63,6 @@ The following capabilities and improvements are coming to orchestrated campaigns
 </tr>
 </tbody>
 </table>
--->
 
 * **Loop-based personalization for relational data in Orchestrated campaigns** - The personalization editor now supports a **Loop block** that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. You can preview how looped blocks render against sample data before the campaign goes live, including handling of empty collections.
 
