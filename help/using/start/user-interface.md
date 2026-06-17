@@ -447,3 +447,8 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_admin_sms_api_byop_channel_type"
 >title="Channel type"
 >abstract="Optional. Classify messages sent with this custom SMS provider credential, for example, SMS or RCS. Journey Optimizer writes the value to XDM experience events so you can report on and track delivery by channel."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_require_auth"
+>title="Authentication"
+>abstract="When enabled, only requests authenticated via Adobe IMS are accepted. Callers must include a valid OAuth token when sending data to this endpoint."
