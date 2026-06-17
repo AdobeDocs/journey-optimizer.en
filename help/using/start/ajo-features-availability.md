@@ -1,7 +1,4 @@
-The documentation source file lives in the docs repo, not this pipeline project. Since the instructions say to output the complete updated markdown, here it is:
-
 ---
-
 solution: Journey Optimizer
 product: journey optimizer
 title: Journey Optimizer feature availability
