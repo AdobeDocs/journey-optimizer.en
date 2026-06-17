@@ -81,6 +81,11 @@ To configure your custom provider, follow the steps below:
 >title="Channel type"
 >abstract="Optional. Classify messages sent with this custom SMS provider credential, for example, SMS or RCS. Journey Optimizer writes the value to XDM experience events so you can report on and track delivery by channel."
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_require_auth"
+>title="Authentication"
+>abstract="When enabled, only requests authenticated via Adobe IMS are accepted. Callers must include a valid OAuth token when sending data to this endpoint."
+
 To send Mobile message in Journey Optimizer using a custom provider not available out of the box by Adobe (e.g., Sinch, Infobip, Twilio), follow these steps:
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL API Credentials]** menu under **[!UICONTROL SMS settings]**, and click the **[!UICONTROL Create new API credentials]** button.
