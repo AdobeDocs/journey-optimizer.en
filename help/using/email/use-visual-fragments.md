@@ -167,7 +167,7 @@ To customize editable fields in a fragment used in an email, follow these steps.
     >
     >![](assets/email-custom-fragment-compatibility.png){width="70%" align="center"}
 
-1. In the example below, the image source and alt text can be edited, as well as the "Click here" button URL.
+1. In the example below, the image source and alt text can be edited, as well as the "More info" button URL.
 
     ![](assets/fragment-editable.png)
 
