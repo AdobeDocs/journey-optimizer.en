@@ -163,9 +163,9 @@ To customize editable fields in a fragment used in an email, follow these steps.
 
     >[!IMPORTANT]
     >
-    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable full formatting options, go to the fragment editor using the **[!UICONTROL Open fragment]** button and click **[!UICONTROL Enable]** to unlock rich-text mode. [Learn more](../content-management/customizable-fragments.md#rich-text-visual)
+    >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable full formatting options, go to the fragment editor using the **[!UICONTROL Open fragment]** button, click **[!UICONTROL Enable]** to unlock rich-text mode and **[!UICONTROL Save]** the fragment. [Learn more](../content-management/customizable-fragments.md#rich-text-visual)
     >
-    >![](assets/email-custom-fragment-compatibility.png){width="60%" align="center"}
+    >![](assets/email-custom-fragment-compatibility.png){width="70%" align="center"}
 
 1. In the example below, the image source and alt text can be edited, as well as the "Click here" button URL.
 

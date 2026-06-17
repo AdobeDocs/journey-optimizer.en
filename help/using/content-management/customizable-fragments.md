@@ -119,13 +119,13 @@ However, if you created fragments and defined editable fields before the rich-te
 
     ![](assets/fragment-custom-compatibility.png)
 
-    To unlock rich-text mode for these editable fields when using the fragment in an email, click the **Enable** button.
+    To unlock rich-text mode for these editable fields when using the fragment in an email, click the **Enable** button and save the fragment.
 
 * Once you added the fragment to an email, a compatibility warning is also displayed when selecting the fragment in the Email Designer.
 
     ![](assets/email-fragment-custom-compatibility.png)
 
-    To upgrade the fragment to rich-text mode, use the **Open fragment** button to access the fragment editor and click the **Enable** button.
+    To upgrade the fragment to rich-text mode, use the **Open fragment** button to access the fragment editor and click the **Enable** button and save the fragment.
 
 Until the rich-text mode is unlocked, the legacy customizable visual fragments continue to support plain text only. Users cannot enter rich text into the editable fields of these fragments.
 
