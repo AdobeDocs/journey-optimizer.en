@@ -27,13 +27,9 @@ Content checks are always available in the Email Designer. To view them, click t
 
 ![Content check pane in the Email Designer with issues](assets/content-check.png)
 
-Checks are automatically run against the current state of your email and after each edit.
-
-When no issues are detected, the pane displays **No issues detected** and the corresponding icon is green.
-
-![Content check pane in the Email Designer with no issues](assets/content-check-no-issues.png)
-
-## Understand severity levels {#severity}
+>[!NOTE]
+>
+>Checks are automatically run against the current state of your email and after each edit. [Learn more](#recalculation)
 
 Checks are surfaced with three severity levels:
 
@@ -43,17 +39,24 @@ Checks are surfaced with three severity levels:
 | **Warning** | Orange | A potential issue that may affect rendering in specific email clients. Recommended to review and resolve. |
 | **Info** | Blue | Informational notice about a condition that does not block sending but may affect the long-term maintainability of your content. |
 
-For some detected issue, you can click the **[!UICONTROL Show details]** button to see more context. Click **[!UICONTROL Hide details]** to collapse.
+When no issues are detected, the pane displays **No issues detected** and the corresponding icon is green.
 
-![Content check pane in the Email Designer with details](assets/content-check-details.png){width="80%"}
+![Content check pane in the Email Designer with no issues](assets/content-check-no-issues.png)
 
-Similary, you can click the **[!UICONTROL Show fix]** button and apply a one-click fix where available. If the fix cannot be applied automatically, a messsage is displayed and you must manually solve the issue.
+Depending on the issue, you can view more context, apply a one-click fix, or save your email to refresh a check result.
 
-![Content check pane in the Email Designer with Apply fix button](assets/content-check-fix.png){width="80%"}
+* For some detected issue, you can click the **[!UICONTROL Show details]** button to see more context. Click **[!UICONTROL Hide details]** to collapse.
+    ![Content check pane in the Email Designer with details](assets/content-check-details.png){width="80%"}
+* Similary, you can click the **[!UICONTROL Show fix]** button and apply a one-click fix where available. If the fix cannot be applied automatically, a messsage is displayed and you must manually solve the issue.
+    ![Content check pane in the Email Designer with Apply fix button](assets/content-check-fix.png){width="80%"}
 
-Content checks fall into two categories. Most checks — such as unsupported HTML elements, empty divs, and HTML size — are recalculated each time you edit your email, so they always reflect your current content.
+### Recalculation of checks {#recalculation}
 
-The CSS size check works differently. It is calculated from the serialized content — the version of your email as it is loaded or saved — not from the live editing state in the Email Designer. CSS optimizations are applied when you save, so the saved content can differ slightly from what you see while editing. This check runs when your email is loaded and when you save. If you make edits without saving, a **[!UICONTROL Stale check]** label appears to indicate the result may no longer be accurate. Save your email to refresh the calculation.
+Most checks — such as unsupported HTML elements, empty divs, and HTML size — are recalculated each time you edit your email, so they always reflect your current content.
+
+Other checks, such as CSS size, are calculated from the serialized content — the version of your email as it is loaded or saved — not from the live editing state in the Email Designer. In this case, the saved content can differ slightly from what you see while editing. If you make edits without saving, a **[!UICONTROL Stale check]** label appears to indicate the result may no longer be accurate. Save your email to refresh the calculation.
+
+![Content check pane in the Email Designer with Stale check label](assets/content-check-stale.png){width="100%"}
 
 ## Fix detected issues {#fix-issues}
 
