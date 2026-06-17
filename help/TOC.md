@@ -509,7 +509,7 @@ solution: Journey Optimizer
     + [Work with Adobe Express](using/integrations/express.md)
     + Experience Manager Content Fragments {#aem}
       + [Get started with Experience Manager Content Fragments](using/integrations/aem-fragments-gs.md)
-      + {hide-from-toc} [Configure your repository for Content Fragments](using/integrations/aem-admin-settings.md)
+      + [Configure your repository for Content Fragments](using/integrations/aem-admin-settings.md)
       + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
       + [Manage your Adobe Experience Manager Content Fragments](using/integrations/aem-fragments-manage.md)
       + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)

@@ -7,7 +7,6 @@ feature: Integrations
 topic: Administration
 role: Admin
 level: Experienced
-hide: true
 keywords: AEM, Content Fragments, administration, repository, authentication, author, publish
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
