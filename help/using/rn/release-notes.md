@@ -54,7 +54,6 @@ topic_v2:
 >
 >Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
 
-
 ## June '26 release notes {#june-26-rn}
 
 The June 2026 release brings several flagship capabilities to General Availability — including **Journey Simulation**, **Journey path optimization targeting**, and **Journey Fragments** — alongside new AI-assisted authoring in journeys and content, expanded Decisioning support for the Direct Mail channel, and additional security and administration controls. The capabilities and improvements below are organized by theme. Additional changes are also expected in the upcoming days or weeks.
@@ -154,6 +153,34 @@ The following capabilities and improvements have been added to journeys in this 
 * **Certificate-Based Custom Authentication in custom actions** - Custom actions now support Certificate-Based Custom Authentication. By adding `subType: "certificateCredential"` to a custom authorization configuration, Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token — no client secret required. Designed for enterprise APIs that enforce certificate-based identity verification, such as Microsoft Entra ID. [Learn more](../datasource/external-data-sources.md#certificate-credential)
 
   Availability date: June 4, 2026
+
+### Orchestrated campaigns {#june-26-oc}
+
+The following capabilities and improvements are coming to orchestrated campaigns in this release.
+
+* **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
+
+  Availability date: June 17, 2026
+
++++ Coming soon — **Information below is subject to change.**
+
+<table>
+<thead>
+<tr>
+<th><strong>File-based targeting in Orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Orchestrated campaigns now support loading a <strong>CSV or TXT file</strong> directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. Rows that fail validation are rejected and logged before the campaign runs, keeping the audience clean without manual pre-processing. This is particularly suited for ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p> Availability date: June 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 
 ### Decisioning {#june-26-decisioning}
 
