@@ -23,7 +23,7 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
-Adobe Journey Optimizer integrates with **[!DNL Adobe Experience Manager as a Cloud Service]** so you can use **Content Fragments** in Journeys and Campaigns. **Content Fragments** are read from the Adobe Experience Manager publish repository by default, administrators can switch to author-only or adjust publish access in the **[!UICONTROL AEM Integration]** menu.
+Adobe Journey Optimizer integrates with **[!DNL Adobe Experience Manager as a Cloud Service]** and **[!DNL Adobe Experience Manager Managed Service]** so you can use **Content Fragments** in Journeys and Campaigns. **Content Fragments** are read from the Adobe Experience Manager publish repository by default, administrators can switch to author-only or adjust publish access in the **[!UICONTROL AEM Integration]** menu.
 
 ➡️ When the repository is configured, continue with [Work with Experience Manager Content Fragments](../integrations/aem-fragments.md) for authoring and selection tasks in Journey Optimizer.
 
