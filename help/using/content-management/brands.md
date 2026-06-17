@@ -1,6 +1,164 @@
-Please approve the write permission so I can save the updated file. The content is ready — it preserves the full original file unchanged and adds a new H2 section **"Fix brand violations with AI-generated suggestions"** at the end, covering:
+---
+solution: Journey Optimizer
+product: journey optimizer
+title: Manage brand
+description: Learn how to create and manage your brand guidelines
+topic: Content Management
+role: User
+level: Beginner, Intermediate
+exl-id: b1b7abbe-8600-4a8d-b0b5-0dbd49abc275
+TQID: https://experienceleague.adobe.com/z-uBnjTprUGtSOa6yxa7WKs5zc7ZvY5PaF5snrOsGuE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: e6ff21d3-dec6-4298-8590-7c749fffaf78
+    internal-label: Content and assets
+---
+# Create & manage your brands {#brands}
 
-- How AI Assistant auto-generates corrected text when Brand QA flags a violation
-- The inline preview-and-replace workflow
-- Support across Email, SMS, Push, and Web
-- A note reminding users to review suggestions before applying
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, configure, publish, and manage brand guidelines, including setting a default brand, so AI Assistant can generate content aligned with your brand's identity in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_overview"
+>title="Get started with brands"
+>abstract="Create and customize your own brands to define your unique visual and verbal identity while making it easier to generate content that matches your brand's style and voice."
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_ai_menu"
+>title="Select your Brand"
+>abstract="Choose your brand to ensure that all AI-generated content is tailored to align with your brand's specifications and guidelines."
+
+>[!CONTEXTUALHELP]
+>id="ajo_brand_score_overview"
+>title="Brand selection"
+>abstract="Select your brand to ensure that your content is crafted in alignment with its specific guidelines, standards, and identity, maintaining consistency and brand integrity."
+
+
+Brand guidelines are a detailed set of rules and standards that establish a brand's visual and verbal identity. They act as a reference to maintain consistent brand representation across all marketing and communication platforms.
+
+In [!DNL Journey Optimizer], you now have the option to manually input and organize your brand details or upload brand guideline documents for automatic information extraction.
+
+>[!AVAILABILITY]
+>
+>You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
+
+
+## Access brands {#generative-access}
+
+To access the **[!UICONTROL Brands]** menu in [!DNL Adobe Journey Optimizer], users need to be granted the **[!UICONTROL Manage brand kit]** or **[!UICONTROL Enable AI assistant]** permissions. [Learn more](../administration/permissions.md)
+
++++  Learn how to assign brand related permissions
+
+To assign permissions for brands, follow these steps:
+
+1. In the **Permissions** product, go to the **Roles** tab and select the desired **Role**.
+
+1. Click **Edit** to modify the permissions.
+
+1. Add the **AI Assistant** resource, then select **Manage brand kit** or **[!UICONTROL Enable Ai assistant]** from the drop-down menu. 
+
+    Note that **[!UICONTROL Enable Ai assistant]** permission only provides read-only access to the **[!UICONTROL Brands]** menu.
+
+    ![](assets/brands-permission.png){zoomable="yes"}
+
+1. Click **Save** to apply changes.
+
+    Any users already assigned to this role will have their permissions automatically updated.
+
+1. To assign this role to new users, navigate to the **Users** tab within the **Roles** dashboard and click **Add User**.
+
+1. Enter the user's name, email address, or choose from the list, then click **Save**.
+
+1. If the user was not previously created, refer to the [this documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/abac/permissions-ui/users).
+
++++
+
+## Create and manage your brand {#create-brand-kit}
+
+>[!CONTEXTUALHELP]
+>id="ajo_brands_create"
+>title="Create your brand"
+>abstract="Enter your brand name and upload your brand guidelines file. The tool will automatically extract key details, making it easier to maintain your brand's identity."
+
+To create and manage your brand guideline, you can either enter the details yourself, or upload your brand guidelines document to have the information extracted automatically:
+
+1. In the **[!UICONTROL Brands]** menu, click **[!UICONTROL Create brand]**.
+
+    ![](assets/brands-1.png)
+
+1. Enter a **[!UICONTROL Name]** for your brand.
+
+1. Drag and drop or select your file to upload your brand guidelines and extract automatically relevant brand information. Click **[!UICONTROL Create brand]**.
+
+    The information extraction process now begins. Note that it may take several minutes to complete.
+
+    ![](assets/brands-2.png)
+
+1. Your Content and visual creation standards are now automatically populated. Browse through the different tabs to adapt the information as needed. [Learn more](#personalize)
+
+1. From the advanced menu in each section or category, you can add references to automatically extract relevant brand information or re-run the extraction to update existing guidelines.
+
+    To remove existing content, use the **[!UICONTROL Clear section]** or **[!UICONTROL Clear category]** options.
+
+    ![](assets/brands-15.png)
+
+1. Click **[!UICONTROL Filter]** to filter guidelines by channel or element type.
+
+    ![](assets/brands-18.png)
+
+1. Once configured, click **[!UICONTROL Save]**, then **[!UICONTROL Publish]** to make your brand guideline available in AI Assistant.
+
+1. To make modifications to your published brand, click **[!UICONTROL Edit brand]**. 
+
+    >[!NOTE]
+    >
+    >This creates a temporary copy in edit mode, replacing the live version once published.
+
+    ![](assets/brands-8.png)
+
+1. From your **[!UICONTROL Brands]** dashboard, open the advanced menu by clicking the ![](assets/do-not-localize/Smock_More_18_N.svg) icon to: 
+
+    * View brand
+    * Open in new tab
+    * Edit
+    * Mark as default brand
+    * Duplicate
+    * Publish
+    * Unpublish
+    * Delete
+
+    ![](assets/brands-6.png)
+
+Your brand guidelines are now accessible from the **[!UICONTROL Brand]** drop-down in AI Assistant menu, enabling it to generate content and assets aligned with your specifications. [Learn more about AI Assistant](gs-generative.md)
+
+![](assets/brands-7.png)
+
+### Set a default brand {#default-brand}
+
+You can designate a default brand to be automatically applied when generating content and calculating alignment scores during campaign creation.
+
+To set a default brand, go to your **[!UICONTROL Brands]** dashboard. Open the advanced menu by clicking the by clicking the ![](assets/do-not-localize/Smock_More_18_N.svg) icon and select **[!UICONTROL Mark as default brand]**.
+
+![](assets/brands-9.png)
+
