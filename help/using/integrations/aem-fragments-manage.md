@@ -19,7 +19,7 @@ When you republish a Fragment already used in a Journey or Campaign, the sync ti
 
 1. Open the **[!UICONTROL AEM Fragments]** tab to view Content Fragments available from Adobe Experience Manager.
 
-1. From the Fragment list, click ![advanced menu](assets/do-not-localize/Smock_MoreSmallList_18_N.svg) to **[!UICONTROL Explore references]** or **[!UICONTROL Edit Tags]** to manage [Journey Optimizer tags](../start/search-filter-categorize.md#tags) on the Fragment. 
+1. From the Fragment list, click ![advanced menu](assets/do-not-localize/Smock_FolderSearch_18_N.svg) to **[!UICONTROL Explore references]**. 
 
     ![](assets/fragment-list-1.png)
 
