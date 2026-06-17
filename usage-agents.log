@@ -53,5 +53,8 @@
 {"timestamp":"2026-04-13T13:47:41Z","agent":"create-agent","version":"1.0.0","repo":"journey-optimizer.en","action":"start","status":"started"}
 {"timestamp":"2026-04-13T14:13:02Z","agent":"sanity-check-agent","version":"2.0.0","repo":"journey-optimizer.en","action":"start","status":"started"}
 {"timestamp":"2026-04-13T14:28:21Z","agent":"sanity-check-agent","version":"2.0.0","repo":"journey-optimizer.en","action":"complete","status":"success","check_type":"all","scan_type":"current_file","files_analyzed":1,"checks_performed":["grammar","links","scoring","accessibility","structure","ai-readiness"],"jira_tasks_created":1,"handoff_to_update_agent":true}
+{"timestamp":"2026-05-04T13:53:43Z","agent":"update-agent","version":"3.0.0","repo":"journey-optimizer.en","action":"start","status":"started"}
+{"timestamp":"2026-06-02T14:57:00+02:00","agent":"update-agent","version":"2.0.0","repo":"journey-optimizer.en","action":"start","status":"started"}
+{"timestamp":"2026-06-02T15:28:00+02:00","agent":"update-agent","version":"2.0.0","repo":"journey-optimizer.en","action":"complete","status":"success","update_type":"targeted","mode":"trust","files_modified":1,"modifications_applied":2,"jira_updated":1,"jira_created":0}
 {"timestamp":"2026-04-16T12:47:35Z","agent":"update-agent","version":"2.0.0","repo":"journey-optimizer.en","action":"start","status":"started"}
 {"timestamp":"2026-04-16T12:47:40Z","agent":"update-agent","version":"2.0.0","repo":"journey-optimizer.en","action":"complete","status":"error","error":"MCP pre-flight failed: Jira auth failed; Wiki MCP not verified"}
