@@ -174,7 +174,7 @@ After adding the email action to your journey or campaign, you need to define th
     >
     >If you already created or imported content through the Email Designer, this content will display in HTML.
 
-7. If needed, enable the **[!UICONTROL Optimize HTML size]** option to reduce the size of your email HTML during the publishing process. [Learn more](#optimize-html-size)
+1. If needed, enable the **[!UICONTROL Optimize HTML size]** option to reduce the size of your email HTML during the publishing process. [Learn more](#optimize-html-size)
     
 ## Check alerts {#check-email-alerts}
 
@@ -285,7 +285,7 @@ When your email is ready, complete the configuration of your [journey](../buildi
 
 If you have enabled the [HTML size optimization](#optimize-html-size) option, you can evaluate its impact before publishing when sending proofs. Follow the steps below.
 
-1. In the Email Designer, click the Issues icon in the right rail. If the rendered email size exceeds 100 KB, a message displays to warn you that this may cause truncation in some email clients. Learn more about content checks in [this section](content-check.md).
+1. In the Email Designer, click the Issues icon in the right rail. If the rendered email size exceeds 100 KB, a message displays to warn you that this may cause truncation in some email clients. <!--Learn more about content checks in [this section](#check-email-alerts).-->
 
     ![Email optimization issues](assets/email-optimize-size-issues.png)
 
