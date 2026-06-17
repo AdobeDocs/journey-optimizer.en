@@ -372,6 +372,7 @@ solution: Journey Optimizer
       + [Web channel prerequisites](using/web/web-prerequisites.md)
       + [Configure web subdomains](using/web/web-delegated-subdomains.md)
       + [Create web channel configuration](using/web/web-configuration.md)
+      + [Personalization use cases overview (Web SDK)](using/web/personalization-use-cases-overview.md)
     + [Create web experiences](using/web/create-web.md)
     + Author web pages {#author-web-pages}
       + [Author web pages](/help/rp_landing_pages/author-web-pages-landing-page.md)
