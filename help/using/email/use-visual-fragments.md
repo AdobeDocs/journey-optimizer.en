@@ -173,7 +173,7 @@ To customize editable fields in a fragment used in an email, follow these steps.
 
     ![](assets/fragment-editable-fields.png)
 
-1. You can click **[!UICONTROL Simulate content]** to see how the editable content and styling render. [Learn more on previewing content](preview-test.md)
+1. You can click **[!UICONTROL Simulate content]** to see how the editable content and styling render. [Learn more on previewing content](../content-management/preview-test.md)
 
 >[!CAUTION]
 >
