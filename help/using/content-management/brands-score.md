@@ -1,3 +1,5 @@
+Since the file doesn't exist in this repo and write access wasn't approved, here is the complete updated markdown file as requested:
+
 ---
 title: Brand alignment
 description: Learn how to create, validate, and manage on-brand content using brand score.
@@ -63,6 +65,11 @@ topic_v2:
 >title="Logos score"
 >abstract="Logos score"
 
+>[!CONTEXTUALHELP]
+>id="ajo_brand_suggestions"
+>title="AI-generated suggestions"
+>abstract="When content is flagged during brand alignment or quality evaluation, AI Assistant automatically generates corrected alternatives that you can review and apply inline."
+
 >[!AVAILABILITY]
 >
 >You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
@@ -93,7 +100,7 @@ Once [your brand is set up and published](brands.md), assess your brand alignmen
 
     ![](assets/brand-score-5.png)
 
-1. Select any flagged guideline to view specific feedback and suggestions. Brand alignment evaluates the following categories:
+1. Select any flagged guideline to view specific feedback and AI-generated suggestions. Brand alignment evaluates the following categories:
 
     * **[!UICONTROL Writing style]**:
         * **[!UICONTROL Brand communication style]**: Defines the personality and emotional tone to ensure consistent brand voice across all channels.
@@ -110,7 +117,7 @@ Once [your brand is set up and published](brands.md), assess your brand alignmen
 
     ![](assets/brand-score-4.png)
 
-1. Edit your content based on the recommendations to improve brand alignment.
+1. For flagged writing style issues, review the AI-generated suggestion displayed beneath each violation, then click **[!UICONTROL Apply]** to replace the flagged content inline, or dismiss it to keep your original text. [Learn more about applying AI-generated suggestions](#apply-suggestions).
 
 1. Manually re-evaluate the content after making changes to refresh your alignment score.
 
@@ -142,7 +149,7 @@ To evaluate your content quality:
 
     ![](assets/brand-score-7.png)
 
-1. Select any flagged item to view specific feedback and actionable suggestions for improvement. Scores are based on the following categories:
+1. Select any flagged item to view specific feedback and AI-generated suggestions for improvement. Scores are based on the following categories:
 
     * **[!UICONTROL CTA effectiveness]**: Evaluates how well your call-to-action motivates readers to take the desired action.
     * **[!UICONTROL Subject Line]**: Assesses clarity, relevance, and attention-grabbing quality to encourage email opens.
@@ -153,9 +160,29 @@ To evaluate your content quality:
 
     ![](assets/brand-score-8.png)
 
-1. Edit your content based on the recommendations to enhance readability, content cohesiveness, and overall quality.
+1. For flagged text items, review the AI-generated suggestion displayed beneath each issue, then click **[!UICONTROL Apply]** to replace the content inline, or dismiss it to keep your original text. [Learn more about applying AI-generated suggestions](#apply-suggestions).
 
 1. Click **[!UICONTROL Re-evaluate score]** after making changes to refresh your quality score.
+
+## Apply AI-generated suggestions {#apply-suggestions}
+
+When content is flagged during brand alignment or quality evaluation, AI Assistant automatically generates corrected or improved alternatives directly in the feedback panel. This fix-as-you-go workflow helps you resolve violations without leaving the editor, reducing manual editing effort and accelerating content production.
+
+AI-generated suggestions are available for text-based violations across all supported content types: Email, SMS, Push, and Web.
+
+To apply an AI-generated suggestion:
+
+1. Run a brand alignment or quality evaluation, then select a flagged guideline or quality item to expand its feedback panel.
+
+1. Review the AI-generated suggestion displayed beneath the flagged content.
+
+1. Click **[!UICONTROL Apply]** to replace the flagged content with the suggested alternative.
+
+    To keep your original text, click **[!UICONTROL Dismiss]**.
+
+1. Repeat for any remaining flagged items.
+
+1. Re-evaluate your score to confirm all improvements have been applied.
 
 ## How-to video {#video}
 
