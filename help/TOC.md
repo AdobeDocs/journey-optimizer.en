@@ -351,6 +351,7 @@ solution: Journey Optimizer
     + [Manage Mobile message opt-out](using/mobile/mobile-opt-out.md)
     + [Set up SMS subdomains](using/mobile/mobile-subdomains.md)  
     + [Best practices for SMS cost optimization](using/mobile/mobile-cost-optimization.md)
+    + [Generate SMS usage report](using/mobile/sms-usage-report.md)
     + Configure Mobile channel {#configure-mobile}
       + [Get started with Mobile configuration](using/mobile/mobile-configuration.md)
       + [Configure Sinch provider](using/mobile/mobile-configuration-sinch.md)
