@@ -533,6 +533,8 @@ The following improvements have been added to administration and data management
 
 * **SMS - Display Usage Metrics** - For customers purchasing SMS directly through Adobe Journey Optimizer, a new **SMS usage dashboard** has been introduced. You can now view and track your last 90 days of message sending metrics, categorized by Mobile Originated (MO) and Mobile Terminated (MT) messages. This data is also available for download via CSV, providing greater visibility and control over your SMS spend.
 
+* **Estimated Clicks for SMS report** - A new Estimated Clicks metric is now available in Journeys, Campaigns, and Channel reports for email and SMS. This metric excludes identified bot and non-human interaction (NHI) traffic to provide a clearer view of genuine customer engagement. The existing Clicks metric remains available and continues to report total clicks.
+
 +++
 
 ### Usability improvements {#june-26-usability}
