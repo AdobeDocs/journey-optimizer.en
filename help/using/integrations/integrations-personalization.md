@@ -133,6 +133,7 @@ On **[!UICONTROL Simulation]** or send, Journey Optimizer runs integrations in o
 
 ![](assets/uc-integrations-7.png)
 
+<!--
 ## Use Adobe Target data in templates {#use-adobe-target-in-templates}
 
 This section explains how to use **Integrations** in Adobe Journey Optimizer to fetch personalization data from **[!DNL Adobe Target]** at send time and use it in message templates. It assumes the Target Delivery API has already been configured as an integration.
@@ -252,6 +253,8 @@ Fetch and extract the mbox, then render `content` directly. Skip `parseJson`.
 > Use **triple braces** `{{{...}}}` to render HTML content as-is. Double braces `{{...}}` will escape HTML entities and render raw tag strings instead of the HTML.
 
 >[!ENDTABS]
+
+-->
 
 ## How-to video {#video}
 
