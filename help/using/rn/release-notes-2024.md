@@ -762,7 +762,7 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.</p>
+<p>AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across [!DNL Adobe CX Enterprise], including Adobe Journey Optimizer.</p>
 <p>For more information, refer to the <a href="../start/ai-features.md#ai-assistant">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -1041,7 +1041,7 @@ From beta to this release, the following improvements have been added:
 
 **Globalization**
 
-As part of our ongoing effort to deliver a unified user experience, we harmonize the terminology used in the Adobe Experience Cloud products and apps. This affects the German term "Titel" which is changed to "Label" when it relates to the name of an object. The changes will be progressively rolled out in the UI and documentation.
+As part of our ongoing effort to deliver a unified user experience, we harmonize the terminology used in the [!DNL Adobe CX Enterprise] products and apps. This affects the German term "Titel" which is changed to "Label" when it relates to the name of an object. The changes will be progressively rolled out in the UI and documentation.
 
 
 ## April '24 release {#apr-2024}

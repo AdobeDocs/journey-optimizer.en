@@ -56,7 +56,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-To access Adobe Journey Optimizer, sign in to [Adobe Experience Cloud](https://experience.adobe.com) with your Adobe ID, then select [!DNL Journey Optimizer].
+To access Adobe Journey Optimizer, sign in to [[!DNL Adobe CX Enterprise]](https://experience.adobe.com) with your Adobe ID, then select [!DNL Journey Optimizer].
 
 >[!NOTE]
 >
