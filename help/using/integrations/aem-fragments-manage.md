@@ -9,6 +9,12 @@ level: Beginner
 ---
 # Manage your Adobe Experience Manager Content fragments {#aem-fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Manage AEM Content Fragments from the Content Management Fragments list to monitor status and metadata, see where fragments are used in journeys and campaigns, sync published updates from Experience Manager, and open fragments for editing without leaving Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 By integrating Adobe Experience Manager as a Cloud Service or Managed Services with Adobe Journey Optimizer, you can use AEM Content Fragments in your content and check Fragment statuses without leaving Journey Optimizer.
 
 When you republish a Fragment already used in a Journey or Campaign, the sync timer starts after the Fragment is **published** in Adobe Experience Manager. Updated content is typically available in Journey Optimizer within about **5 minutes** for unitary journeys and campaigns, for batch deliveries, the change appears in the **next processing batch**. See [Work with Adobe Experience Manager Content Fragments](aem-fragments.md). If delays occur, you can manually sync that Fragment from Journey Optimizer to pull the latest published version.
