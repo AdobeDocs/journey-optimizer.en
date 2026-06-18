@@ -327,6 +327,7 @@ solution: Journey Optimizer
     + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
     + [Create a mobile In-app message](using/in-app/create-in-app.md)
     + [Create a web In-app message](using/in-app/create-in-app-web.md)
+    + [Configure Web In-app Messaging in Web SDK](using/in-app/web-in-app-messaging.md)
     + [Design your In-app content](using/in-app/design-in-app.md)
     + [Check & send your In-app notification](using/in-app/send-in-app.md)
   + Push notification channel {#push}
@@ -381,6 +382,8 @@ solution: Journey Optimizer
       + [Manage modifications](using/web/manage-web-modifications.md)
       + [Monitor your web experiences](using/web/monitor-web-experiences.md)
       + [Author single-page applications](using/web/web-spa.md)
+      + [Implement single-page applications](using/web/web-spa-implementation.md)
+      + [AJO with Experience Platform Web SDK](using/web/web-sdk.md)
   + Code-based experience {#code-based-experience}
     + [Code-based experience](/help/rp_landing_pages/code-based-experience-landing-page.md)
     + [Get started with code-based channel](using/code-based/get-started-code-based.md)
