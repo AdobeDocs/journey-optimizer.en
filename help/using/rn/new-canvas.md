@@ -61,7 +61,7 @@ In the below screenshot, you can see the redesigned UI for the journey canvas (o
 
 ## Improved journey canvas design
 
-With the new journey model, we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the Adobe Experience Cloud solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the new model will be on that new design.
+With the new journey model, we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the [!DNL Adobe CX Enterprise] solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the new model will be on that new design.
 
 ![](assets/new-canvas3.gif)
 
