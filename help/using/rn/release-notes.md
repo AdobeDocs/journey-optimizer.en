@@ -219,6 +219,8 @@ The following capabilities and improvements have been added to Decisioning in th
 
 +++ Coming soon — **Information below is subject to change.**
 
+* **Leverage Adobe Experience Manager content fragments in Decisioning** - You can now map Adobe Experience Manager content fragments to decision items in Decisioning and leverage them inside decision policies to deliver the right fragment to the right customer at the right time. Previously released in Limited Availability, this capability is now available to all environments (General Availability).
+
 * **Dynamic item attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items.
 
   Availability date: June 22, 2026
