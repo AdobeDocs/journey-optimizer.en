@@ -147,11 +147,13 @@ To customize editable fields in a fragment used in an email, follow these steps.
 
 1. All editable fields in the fragment are displayed in the **[!UICONTROL Settings]** tab, under the fragment properties.
 
-    ![](assets/fragment-editable-rich-fields.png)
+    In the example below, the image source and alt text can be edited, as well as the "Title"/"Subtitle" fields and the "More info" button URL.
+
+    ![](assets/fragment-editable-fields.png)
 
 1. Hover over any editable field in the central canvas. The field highlights in green and a pencil icon appears when clicking on the text it contains.
 
-    ![](assets/fragment-editable-field-selected.png){width="100%" align="center"}
+    ![](assets/fragment-editable-field-selected.png){width="80%" align="center"}
 
 1. Edit the field text inline directly on the central Email Designer canvas.
 
@@ -163,15 +165,11 @@ To customize editable fields in a fragment used in an email, follow these steps.
 
     ![Rich-text formatting options in the Email Designer toolbar](assets/fragment-editable-fields-rich-text.png)
 
-    >[!IMPORTANT]
+    >[!TIP]
     >
     >Fragments created before the rich-text editing capability was introduced have editable fields set to text-only mode by default. To enable full formatting options, go to the fragment editor using the **[!UICONTROL Open fragment]** button, click **[!UICONTROL Enable]** to unlock rich-text mode and **[!UICONTROL Save]** the fragment. [Learn more](../content-management/customizable-fragments.md#rich-text-visual)
-    >
-    >![](assets/email-custom-fragment-compatibility.png){width="70%" align="center"}
-
-1. In the example below, the image source and alt text can be edited, as well as the "Title"/"Subtitle" fields and the "More info" button URL.
-
-    ![](assets/fragment-editable-fields.png)
+    
+    ![Compatibility warning in the Email Designer](assets/email-custom-fragment-compatibility.png){width="50%" align="center" zoomable="yes"}
 
 1. You can click **[!UICONTROL Simulate content]** to see how the editable content and styling render. [Learn more on previewing content](../content-management/preview-test.md)
 
