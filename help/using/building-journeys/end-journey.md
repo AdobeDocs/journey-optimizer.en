@@ -53,6 +53,10 @@ If you need to terminate a live journey, we recommend that [you close it](#close
 
 You can also [stop a journey](#stop-journey), only in case of an emergency and if all journey processing must to be ended immediately. People who already entered a journey are all stopped in their progress. 
 
+>[!NOTE]
+>
+>You can close or stop a journey from both the **Live** and the **Paused** states. There is no need to resume a paused journey before stopping it or closing it to new entrances. [Learn more about paused journeys](journey-pause.md#stop-close-paused).
+
 >[!IMPORTANT]
 >
 >* You cannot restart or delete a [closed](#close-journey) or [stopped](#stop-journey) journey. You can [create a new version](publish-journey.md#journey-versions) of it or [duplicate it](journey-ui.md#duplicate-a-journey). 
