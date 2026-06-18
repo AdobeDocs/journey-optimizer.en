@@ -12,7 +12,7 @@ solution: Journey Optimizer
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
-  + [Pre-release notes](using/rn/e-release-notes.md)  
+  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)  
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -190,6 +190,7 @@ solution: Journey Optimizer
       + [Key steps to create an Orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
       + [Create and schedule the campaign](using/orchestrated/create-orchestrated-campaign.md)
       + [Orchestrate activities](using/orchestrated/orchestrate-activities.md)
+      + [Add personalization](using/orchestrated/add-personalization.md)
       + [Start and monitor the campaign](using/orchestrated/start-monitor-campaigns.md)
       + [Reporting](using/orchestrated/reporting-campaigns.md)
     + Query the database {#query-database}
@@ -311,6 +312,7 @@ solution: Journey Optimizer
         + [Add custom CSS](using/email/custom-css.md)
         + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
+      + [Content check](using/email/content-check.md)
     + Configure email channel {#configure-email}
       + {hide-from-toc} [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
       + [Get started with email configuration](using/email/get-started-email-config.md)

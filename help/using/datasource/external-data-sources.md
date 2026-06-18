@@ -295,7 +295,9 @@ Adobe manages the certificate and its associated private key. The following tabl
 | Algorithm | RS256 (RSA) |
 | What to register in your Identity Provider | Adobe's leaf certificate only — not the intermediate or root CA |
 | How to obtain | Retrieve it from the [mTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint){target="_blank"} (see the **Certificate** guardrail below) |
-| Rotation | Adobe manages rotation and provides at least 30 days advance notice |
+| Rotation | Adobe automatically rotates the certificate 60 days before expiry (certificate lifetime: 13 months). The previous certificate remains valid until 30 days before expiry. Customers are not currently notified of rotation — periodically call the [mTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint){target="_blank"} to check the `expiryDate` and re-configure your IDP before the old certificate is revoked. |
+
+Adobe automatically rotates the certificate 60 days before expiry. The previous certificate remains valid until 30 days before expiry. Customers are not currently notified — see the [**Certificate rotation** guardrail](#certificate-credential-guardrails) below for how to monitor rotation programmatically.
 
 #### JWT assertion structure {#certificate-credential-jwt}
 
@@ -373,6 +375,8 @@ Here is an example for the same certificate credential authentication type, for 
 }
 ```
 
+<a id="certificate-credential-guardrails"></a>
+
 >[!CAUTION]
 >
 >Keep the following guardrails in mind when configuring certificate-based custom authentication:
@@ -381,7 +385,7 @@ Here is an example for the same certificate credential authentication type, for 
 >* **`method`**: Must be `POST`. OAuth token endpoints only accept POST requests.
 >* **`client_id`**: Must not be blank and must have no leading or trailing whitespace. A blank value produces a valid-looking JWT that the Identity Provider will reject with an opaque error.
 >* **`scope`**: Expressed as a single space-separated string in `bodyParams`. Maximum 1000 characters total.
->* **Certificate**: Adobe manages the certificate and private key — you never upload or enter a certificate. Before using the custom action in a live journey, you must register **Adobe's leaf certificate** in your Identity Provider. To retrieve it, call the [mTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint){target="_blank"} and look for the entry where `certCommonName` is `ajo-journeys.aep-mtls.adobe.com`. Register the `publicCertificate` value from that entry — do not use the intermediate or root CA certificates.
+>* **Certificate**: Adobe manages the certificate and private key — you never upload or enter a certificate. Before using the custom action in a live journey, you must register **Adobe's leaf certificate** in your Identity Provider. To retrieve it, call the [mTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint){target="_blank"} and look for the entry where `certCommonName` is `ajo-journeys.aep-mtls.adobe.com`. Register the `publicCertificate` value from that entry — do not use the intermediate or root CA certificates. Since customers are not currently notified of certificate rotation, you must periodically call the mTLS Public Certificate API to check the `expiryDate` and update the registered certificate in your IDP before the old certificate is revoked 30 days before expiry.
 
 Here is an example for the header authentication type:
 
