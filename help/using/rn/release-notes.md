@@ -346,12 +346,31 @@ The following improvements have been added to the email channel in this release.
 
   Availability date: June 1, 2026
 
+<table>
+<thead>
+<tr>
+<th><strong>Rich text in editable fields for fragments</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now add rich text to customizable fragments that are used in your emails content.</p>
+<p>For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
+<p><img src="assets/do-not-localize/rich-text-editable-fields.gif"></p>
+<p>For more information, refer to the <a href="../content-management/customizable-fragments.md#rich-text-visual">detailed documentation</a>.</p>
+<p>Availability date: Late June, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
 <thead>
 <tr>
-<th><strong>Content quality checks in the Email Designer</strong><br/></th>
+<th><strong>Content check in the Email Designer</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -376,22 +395,6 @@ The following improvements have been added to the email channel in this release.
 <td>
 <p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
 <p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Rich text in editable fields for fragments</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now add rich text to customizable fragments that are used in your emails content.</p>
-<p>For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
 </td>
 </tr>
 </tbody>
