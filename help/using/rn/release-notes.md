@@ -221,6 +221,8 @@ The following capabilities and improvements have been added to Decisioning in th
 
 * **Dynamic item attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items.
 
+  Availability date: June 22, 2026
+
 +++
 
 ### Content management {#june-26-content}
@@ -385,6 +387,10 @@ The following improvements have been added to the email channel in this release.
 </tbody>
 </table>
 
+* **Enhanced Image to HTML converter** - A new version of the Image to HTML converter feature is now available, bringing improved accuracy for HTML generation. This update leverages higher-tier LLM models to deliver more precise and reliable HTML output from image inputs.
+
+  Availability date: June 18, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -419,9 +425,6 @@ The following improvements have been added to the email channel in this release.
 </tr>
 </tbody>
 </table>
-
-
-* **Enhanced Image to HTML converter** - A new version of the Image to HTML converter feature is now available, bringing improved accuracy for HTML generation. This update leverages higher-tier LLM models to deliver more precise and reliable HTML output from image inputs.
 
 +++
 
