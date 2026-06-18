@@ -55,6 +55,6 @@ Content Fragments follow different lifecycle stages depending on the Adobe Exper
 
 Content is created and managed on the **Author tier**, where fragments can have statuses such as New, Draft, Published, Modified, or Unpublished. These statuses apply only on the **Author tier** and support content creation and review.
 
-When a Content Fragment is published, a copy is created on the **Publish tier** and exposed through a public, unauthenticated endpoint. Journey Optimizer integrates exclusively with this **Publish tier**.
+When a Content Fragment is published, a copy is created on the **Publish tier** and exposed through a public, unauthenticated endpoint. For **[!DNL Adobe Experience Manager as a Cloud Service]**, Journey Optimizer supports integration with both the **Author tier** and the **Publish tier**.
 
 As a result, Journey Optimizer surfaces only Published or Modified Content Fragments and always uses the latest published version. Any changes made after publication are not reflected in Journey Optimizer until the Content Fragment is republished.
