@@ -25,14 +25,14 @@ solution: Journey Optimizer
   + [Documentation updates](using/rn/documentation-updates.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
 + Get started {#get-started}
-  + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
-  + {hide-from-toc} [Onboarding hub](using/start/onboarding-hub.md)
+  + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
+  + [Onboarding hub](using/start/onboarding-hub.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer?](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
     + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
-    + {hide-from-toc} [Which capability for this job?](using/start/ajo-use-case-guide.md)
+    + [Which capability for this job?](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
     + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
