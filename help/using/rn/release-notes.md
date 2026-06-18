@@ -154,9 +154,11 @@ The following capabilities and improvements have been added to journeys in this 
 
   Availability date: June 4, 2026
 
-+++ Coming soon — **Information below is subject to change.**
+* **Increased live journey limit and new guardrails** - You can now have up to **200 active journeys**, increased from the previous limit of 100. [Read more](../start/guardrails.md#journeys-guardrails-journeys)
 
-* **Increased live journey limit and new guardrails** - You can now have up to **200 active journeys**, increased from the previous limit of 100.
+  Availability date: June 18, 2026. This capability is being gradually rolled out to all regions over the next few days.
+
++++ Coming soon — **Information below is subject to change.**
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the **journey header** next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed.
 
