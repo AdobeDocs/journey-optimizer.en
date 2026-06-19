@@ -144,7 +144,7 @@ The following capabilities and improvements have been added to journeys in this 
 
   Availability date: June 11, 2026
 
-* **Stop or close a paused journey directly** - You can now stop a journey or close it to new entrances directly from the **Paused** state. Previously, a paused journey had to be resumed to **Live** before it could be stopped or closed. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
+* **Stop a paused journey directly** - You can now stop a journey directly from the **Paused** state. Previously, a paused journey had to be resumed to **Live** before it could be stopped. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
 
   Availability date: June 18, 2026
 

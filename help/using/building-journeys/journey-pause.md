@@ -56,7 +56,7 @@ topic_v2:
 >title="Pause your journey"
 >abstract="Pausing a live journey prevents new profiles from entering. Profiles currently in the journey can be discarded or kept in place. If retained, they will resume execution at the next action activity once the journey is restarted. Perfect for updates or emergency stops without losing progress."
 
-You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply profile attribute exit criteria](#journey-exit-criteria) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps), or [stop the journey or close it to new entrances](#stop-close-paused) from the **Paused** state without resuming it first.
+You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply profile attribute exit criteria](#journey-exit-criteria) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps), or [stop the journey](#stop-close-paused) from the **Paused** state without resuming it first.
 
 ## Key benefits {#journey-pause-benefits}
 
@@ -149,20 +149,17 @@ To resume a paused journey, and start listening to journey events again, follow 
 
 From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
 
-## Stop or close a paused journey {#stop-close-paused}
+## Stop a paused journey {#stop-close-paused}
 
-If you decide not to resume a paused journey, you can end it from the **Paused** state. Choose the option that matches your goal:
+If you decide not to resume a paused journey, you can end it from the **Paused** state. End all journey processing immediately and stop every profile still in the journey. [Learn more about stopping a journey](end-journey.md#stop-journey).
 
-* **[!UICONTROL Close to new entrances]** - Block new profiles from entering while profiles already in the journey finish their path. Use this to wind down a paused journey gracefully. [Learn more about closing a journey](end-journey.md#close-journey).
-* **[!UICONTROL Stop]** - End all journey processing immediately and stop every profile still in the journey. Use this only in an emergency. [Learn more about stopping a journey](end-journey.md#stop-journey).
-
-To stop or close a paused journey from the journey canvas, follow these steps:
+To stop a paused journey from the journey canvas, follow these steps:
 
 1. Open the **Paused** journey you want to stop or close.
 1. Click the **...More** button on the upper-right section of the journey canvas.
-1. Select **[!UICONTROL Stop]** or **[!UICONTROL Close to new entrances]**, and confirm in the dialog box.
+1. Select **[!UICONTROL Stop]**, and confirm in the dialog box.
 
-From the list of your journeys, you can also click the **[!UICONTROL Ellipsis]** button to the right of the journey name and select **[!UICONTROL Stop]** or **[!UICONTROL Close to new entrances]**.
+From the list of your journeys, you can also click the **[!UICONTROL Ellipsis]** button to the right of the journey name and select **[!UICONTROL Stop]**.
 
 >[!IMPORTANT]
 >
