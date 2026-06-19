@@ -299,26 +299,26 @@ Trigger transactional or marketing messages from an external system using the In
 * Calls have a **timeout of 60 seconds**; internal retries handle unexpected timeouts.
 * If campaign start/end dates are configured, API calls outside those dates will fail.
 * To build your payload, retrieve the generated sample cURL request from the **cURL request** section of your live campaign in the Journey Optimizer UI — it includes all personalization variables for that campaign.
-* Standard and [high-throughput campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) use different endpoints.
+* Standard and [high-throughput campaigns](../../campaigns/api-triggered-high-throughput.md) use different endpoints.
 
-[API reference](https://developer.adobe.com/journey-optimizer-apis/references/messaging){target="_blank"} · [Code samples](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples){target="_blank"} · [Work with API-triggered campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-campaigns)
+[API reference](https://developer.adobe.com/journey-optimizer-apis/references/messaging){target="_blank"} · [Code samples](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples){target="_blank"} · [Work with API-triggered campaigns](../../campaigns/api-triggered-campaigns.md)
 
 ### Capping and throttling for external endpoints {#capping-throttling}
 
 When journeys call external systems via custom actions or data sources, the Capping and Throttling APIs protect those systems from overload. Capping rejects calls that exceed the configured limit; throttling queues them for up to 6 hours (production sandboxes, custom actions only).
 
-[Capping API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling){target="_blank"} · [Work with the Capping API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/external-systems/capping) · [Work with the Throttling API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/external-systems/throttling)
+[Capping API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling){target="_blank"} · [Work with the Capping API](../../configuration/capping.md) · [Work with the Throttling API](../../configuration/throttling.md)
 
 ### More REST APIs {#more-rest-apis}
 
 | What you need to do | API reference |
 | ------------------- | ------------- |
-| Programmatically exclude email addresses or domains from sending | [Suppression API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"} · [Manage the suppression list](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list) |
+| Programmatically exclude email addresses or domains from sending | [Suppression API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"} · [Manage the suppression list](../../configuration/manage-suppression-list.md) |
 | Retrieve journey metadata for auditing or external sync | [Journeys API](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"} |
-| Create and manage content templates and fragments from an external pipeline | [Content API](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"} · [Templates](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates) · [Fragments](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/fragments) |
+| Create and manage content templates and fragments from an external pipeline | [Content API](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"} · [Templates](../../content-management/content-templates.md) · [Fragments](../../content-management/fragments.md) |
 | Retrieve and filter Action campaigns | [Campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve){target="_blank"} |
 | Preview campaigns and send proofs programmatically | [Simulations API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"} |
-| Validate datasets and trigger Orchestrated campaign execution | [Dataset validation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset){target="_blank"} · [Trigger](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} · [Enable datasets](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/schemas-datasets/manual-schema) |
+| Validate datasets and trigger Orchestrated campaign execution | [Dataset validation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset){target="_blank"} · [Trigger](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} · [Enable datasets](../../orchestrated/manual-schema.md) |
 
 ## Additional resources {#additional-resources}
 
