@@ -151,7 +151,7 @@ From the list of your journeys, you can resume one or several **Paused** journey
 
 ## Stop a paused journey {#stop-close-paused}
 
-If you decide not to resume a paused journey, you can end it from the **Paused** state. End all journey processing immediately and stop every profile still in the journey. [Learn more about stopping a journey](end-journey.md#stop-journey).
+If you decide not to resume a paused journey, you can end it from the **Paused** state. This ends all journey processing immediately and stops every profile still in the journey. [Learn more about stopping a journey](end-journey.md#stop-journey).
 
 To stop a paused journey from the journey canvas, follow these steps:
 
@@ -159,7 +159,7 @@ To stop a paused journey from the journey canvas, follow these steps:
 1. Click the **...More** button on the upper-right section of the journey canvas.
 1. Select **[!UICONTROL Stop]**, and confirm in the dialog box.
 
-From the list of your journeys, you can also click the **[!UICONTROL Ellipsis]** button to the right of the journey name and select **[!UICONTROL Stop]**.
+From the list of your journeys, you can also click the **[!UICONTROL Ellipsis]** button to the right of the paused journey name and select **[!UICONTROL Stop]**.
 
 >[!IMPORTANT]
 >
