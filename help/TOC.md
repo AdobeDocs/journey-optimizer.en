@@ -28,7 +28,7 @@ solution: Journey Optimizer
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
   + Essentials {#essentials}
-    + [What is Journey Optimizer?](using/start/get-started.md)
+    + [What is Journey Optimizer](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
     + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
