@@ -51,11 +51,38 @@ For scenarios where you react to a customer action or event as it happens.
 | I want to... | Recommended capability | Start here |
 | --- | --- | --- |
 | Welcome a new customer or subscriber automatically | Event-triggered journey | [Get started with journeys](../building-journeys/journey-gs.md) · [Introduction to building a journey](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"} |
+
+>[!BEGINSHADEBOX]
+
+**Before you build:** make sure you have (1) a [journey entry event configured](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events) to capture the sign-up trigger, (2) an [email or push channel surface](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/channel-surfaces) set up for your sandbox, and (3) at least one [test profile](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/profiles/creating-test-profiles) available to validate the journey before publishing.
+
+>[!ENDSHADEBOX]
+
+| I want to... | Recommended capability | Start here |
+| --- | --- | --- |
 | Recover an abandoned cart or browse session | Event-triggered journey | [Get started with journeys](../building-journeys/journey-gs.md) · [Abandoned browse tutorial](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/use-cases/personalization-insights-engagement/use-cases-luma){target="_blank"} |
+
+>[!BEGINSHADEBOX]
+
+**Before you build:** you need (1) a [behavioral event](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events) that captures the cart or browse action from your web or mobile SDK, (2) a [wait activity](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/wait-activity) strategy decided (typically 1–4 hours before the first nudge), and (3) a channel surface ready for the follow-up message. Note: the journey must include a condition to exit profiles who complete the purchase before the wait period ends.
+
+>[!ENDSHADEBOX]
+
+| I want to... | Recommended capability | Start here |
+| --- | --- | --- |
 | Trigger a journey from a website form submission | Event-triggered journey | [Get started with journeys](../building-journeys/journey-gs.md) · [Tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/trigger-journey-on-form-submission/introduction){target="_blank"} |
 | React to in-app behavior (app open, screen view) | Journeys + In-app | [Get started with In-app](../in-app/get-started-in-app.md) |
 | Send order, shipping, or appointment confirmations | API-triggered campaign | [Work with API-triggered campaigns](../campaigns/api-triggered-campaigns.md) |
 | Re-engage inactive or lapsing customers | Journeys + audiences | [Get started with profiles & audiences](../audience/get-started-profiles.md) · [Create audiences using the rule builder](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/profiles-audiences-subscriptions/create-audiences-using-the-rule-builder){target="_blank"} |
+
+>[!BEGINSHADEBOX]
+
+**Before you build:** you need (1) an [audience defined in Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) that identifies inactive profiles (e.g. no purchase or login in 60 days), (2) a decision on re-engagement channel (email, push, or SMS), and (3) a suppression rule or [frequency cap](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/conflict-prioritization/capping-rules/channel-capping) to avoid contacting recently messaged profiles. Use a **Read Audience** journey entry — not an event — for this scenario.
+
+>[!ENDSHADEBOX]
+
+| I want to... | Recommended capability | Start here |
+| --- | --- | --- |
 | Test a journey with real data before activating it | Journey dry run | [Test your journey with dry run](../building-journeys/journey-dry-run.md) |
 | Pause a live journey to make edits without stopping in-flight profiles | Journey pause & resume | [Pause and resume a journey](../building-journeys/journey-pause.md) |
 | Build or optimize a journey from a natural-language prompt | Journey Agent **(AI)** | [AI agents](ai-features.md#ai-agents) · [Journey Agent tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-agent-overview){target="_blank"} |
@@ -67,6 +94,15 @@ For scheduled, one-to-many outreach to a defined audience.
 | I want to... | Recommended capability | Start here |
 | --- | --- | --- |
 | Send a newsletter or promotion to a segment | Scheduled campaign | [Get started with campaigns](../campaigns/get-started-with-campaigns.md) |
+
+>[!BEGINSHADEBOX]
+
+**Before you build:** you need (1) a [published audience segment](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/audiences-profiles-identities/audiences/about-audiences) in Adobe Experience Platform, (2) an [email channel surface](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/channel-surfaces) with a verified sending domain, and (3) any [content fragments or templates](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/fragments) you plan to reuse already published. Scheduled campaigns are the right choice here — not journeys — if this is a one-time or recurring send with no branching logic.
+
+>[!ENDSHADEBOX]
+
+| I want to... | Recommended capability | Start here |
+| --- | --- | --- |
 | Launch a product with an A/B test | Content experimentation **(AI)** | [Get started with content experimentation](../content-management/experiment-accelerator-gs.md) · [Create content experiments for email campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/experimentation/content-experiments-for-emails){target="_blank"} |
 | Notify customers of an outage or service update | Scheduled campaign + audiences | [About audiences](../audience/about-audiences.md) |
 | Design a multi-step campaign with branching logic | Orchestrated campaigns | [Get started with orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) |
@@ -82,6 +118,15 @@ For tailoring offers and content to each individual.
 | I want to... | Recommended capability | Start here |
 | --- | --- | --- |
 | Show the best offer for each customer | Decisioning | [Get started with offer decisioning](../offers/get-started/starting-offer-decisioning.md) · [Web offers tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"} |
+
+>[!BEGINSHADEBOX]
+
+**Before you build:** decisioning requires a specific setup sequence. You need (1) [decision items (offers) created](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/items) with eligibility rules and attributes, (2) a [selection strategy](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/experience-decisioning-selection/selection-strategies) or ranking formula configured, and (3) a [decision policy](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/experience-decisioning/decision-policies/create-decision) attached to the surface where offers will appear. Skipping this sequence is the most common reason first-time decisioning setups fail to return results.
+
+>[!ENDSHADEBOX]
+
+| I want to... | Recommended capability | Start here |
+| --- | --- | --- |
 | Rank offers using a formula (zip code, income, weather) | Decisioning — ranking formula | [Ranking formula tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-ranking-formulas-based-on-user-zip-code-and-income/introduction){target="_blank"} · [Weather data tutorial](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/personalizing-offers-with-real-time-weather-data/introduction){target="_blank"} |
 | Use external product or CRM data to personalize offers | Decisioning — AEP dataset lookup | [Use dataset lookup in decisioning](../experience-decisioning/context-data.md) |
 | Tailor message content with profile data | Personalization | [Personalize your content](../personalization/personalize.md) |
