@@ -46,6 +46,7 @@ After activation, batch journeys with read audience entry offer two ways to run 
 
 On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]** runs the journey with generated users, event values and pre-filled settings.
 
+
 1. Select **[!UICONTROL Quick simulation]**.
 
 1. Review the fields Adobe Journey Optimizer gathered for the run. Click **[!UICONTROL Update values]** to change test settings and execution addresses, or continue without changes. 
@@ -55,6 +56,10 @@ On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]**
     ![Quick Simulation dialog on the Gathering information step with Update values and Continue to next step](assets/quick-simulation-2.png)
   
 1. If you opened **[!UICONTROL Update values]**, edit the settings, for example, the address used for message proofs, then confirm to start the simulation.
+
+    >[!NOTE]
+    >
+    >Pre-filled execution email and phone fields come from the email address and phone number on your Adobe IMS user profile.
 
     ![Quick Simulation Update values step with wait time override and proof email and phone fields](assets/quick-simulation-3.png)
 
@@ -85,6 +90,10 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
     Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
         
     For journeys with an Email, Push or SMS node, the AI prompts you to confirm the email address or phone number to use. Simulated users will be generated using those defined values. Once done, click **[!UICONTROL Generate]**.
+
+    >[!NOTE]
+    >
+    >The email and phone fields are pre-filled from your Adobe IMS user profile.
 
     ![Generate simulated users dialog with execution email and phone fields and Generate button](assets/simulate-generate.png)
 
@@ -124,9 +133,35 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
     +++ Create from JSON
 
-    Define new simulated users by updating the corresponding fields with your simulated user data.
+    In **[!UICONTROL Create Simulated Users]**, edit the JSON template to define users, then click **[!UICONTROL Format JSON]** and **[!UICONTROL Save]**.
 
     ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json.png)
+
+    To reuse attribute values from a profile or [test profile](../audience/creating-test-profiles.md) in [!DNL Adobe Experience Platform]:
+
+    1. Browse to the profile you want to use as a reference. On the profile detail page, click **[!UICONTROL View JSON]**. [Learn more](../audience/get-started-profiles.md)
+
+        ![Profile JSON view in Adobe Experience Platform](assets/simulate-json-1.png)
+
+    1. Copy the JSON from the viewer.
+
+    1. In the journey, open **[!UICONTROL Simulation settings]**, start **[!UICONTROL Create Simulated Users]**, and choose **Create from JSON**.
+
+    1. Paste the JSON into the matching part of the simulated user template (for example, the attribute block for one user). Click **[!UICONTROL Format JSON]** to validate the structure.
+
+        ![Create Simulated Users JSON editor with pasted profile attributes](assets/simulate-json-2.png)
+
+    1. Remove properties that exist on the [!DNL Adobe Experience Platform] profile only tied to the source profile, such as mergePolicyId or lastModifiedAt.
+
+    1. Set the fields required by the simulated user template: **[!UICONTROL Display name]**, **[!UICONTROL Identity namespace]**, identity value, and channel execution addresses.
+
+    1. Click **[!UICONTROL Save]**. Use ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg) on the saved simulated user to review the data before you run **[!UICONTROL Simulation]**.
+
+        ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json-3.png)
+
+        >[!WARNING]
+        >
+        >If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
 
     +++
 
