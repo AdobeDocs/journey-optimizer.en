@@ -96,6 +96,8 @@ By clicking on the name of any journey listed in this table, you can easily expl
 
 +++ Learn more about Journey metrics
 
+* **[!UICONTROL Journey Engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
+
 * **[!UICONTROL Journey Enters]**: Total number of individuals who reached the entry event of the journey.
 
 * **[!UICONTROL Journey Exits]**: Total number of individuals who exited the journey.
@@ -126,6 +128,8 @@ By clicking on the name of any campaign listed in this table, you can easily exp
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your messages.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
 +++
 
 ## Channels {#channel}
@@ -147,6 +151,8 @@ The **[!UICONTROL Channels]** table provides a detailed breakdown of your profil
 * **[!UICONTROL Displays]**: Number of times the message was opened.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your messages.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
 +++
 

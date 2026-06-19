@@ -109,7 +109,7 @@ To find the capability that fits your goal, see the [Journey Optimizer use cases
 
 This documentation covers the current release of Journey Optimizer and applies to both B2C and B2B edition users unless otherwise noted. Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
 
-Adobe Experience Cloud general privacy guidelines and procedures apply to [!DNL Journey Optimizer]. [Learn more about Adobe Experience Cloud privacy](https://www.adobe.com/privacy/experience-cloud.html){target="_blank"}.
+[!DNL Adobe CX Enterprise] general privacy guidelines and procedures apply to [!DNL Journey Optimizer]. [Learn more about [!DNL Adobe CX Enterprise] privacy](https://www.adobe.com/privacy/experience-cloud.html){target="_blank"}.
 
 
 ## Architecture {#architecture}
