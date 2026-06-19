@@ -160,7 +160,7 @@ If your decision policy qualifies for two offers and each has a fragment—for e
 
 >[!AVAILABILITY]
 >
->This feature is available for outbound channels with Decisioning support.
+>This feature is available for channels with Decisioning support.
 
 Before leveraging AEM Content Fragments in a decision policy, make sure you have:
 
