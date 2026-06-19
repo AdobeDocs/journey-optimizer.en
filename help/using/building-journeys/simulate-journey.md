@@ -151,7 +151,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
         ![Create Simulated Users JSON editor with pasted profile attributes](assets/simulate-json-2.png)
 
-    1. Remove properties that exist on the [!DNL Adobe Experience Platform] profile only, such as system identifiers, merge metadata, and identity collections tied to the source profile.
+    1. Remove properties that exist on the [!DNL Adobe Experience Platform] profile only tied to the source profile, such as mergePolicyId or lastModifiedAt.
 
     1. Set the fields required by the simulated user template: **[!UICONTROL Display name]**, **[!UICONTROL Identity namespace]**, identity value, and channel execution addresses.
 
@@ -161,7 +161,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
         >[!WARNING]
         >
-        >If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation can send messages using the data you provide.
+        >If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
 
     +++
 
