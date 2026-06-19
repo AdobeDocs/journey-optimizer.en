@@ -160,7 +160,7 @@ If your decision policy qualifies for two offers and each has a fragment—for e
 
 >[!AVAILABILITY]
 >
->This feature is available in Limited Availability for outbound channels with Decisioning support. To request access, contact your Adobe representative.
+>This feature is available for outbound channels with Decisioning support.
 
 Before leveraging AEM Content Fragments in a decision policy, make sure you have:
 
@@ -173,7 +173,7 @@ In the personalization editor, all AEM Content Fragments associated with the dec
 
 In this example, the decision policy includes two decision items that have AEM fragments tied to them through their reference name.
 
-![](assets/aem-fragment-select.png)
+![Personalization editor showing AEM Content Fragments available per fragment key name in a decision policy.](assets/aem-fragment-select.png)
 
 1. Click the + button to add the desired fragment into your expression.
 
@@ -181,9 +181,112 @@ In this example, the decision policy includes two decision items that have AEM f
 
 1. Once the fragment has been selected, you can leverage its attributes, such as image URLs, text fields, or other content, and use Decisioning to surface the right content to the right customer at the right time.
 
-    ![](assets/aem-fragment-attribute.png)
+    ![Selected AEM Content Fragment attributes available for personalization in the decision policy expression.](assets/aem-fragment-attribute.png)
 
-1. Before activating your campaign or journey, use either simulation method to preview how AEM Content Fragment field values will render: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with a specific test profile. [Learn more on simulating content](../content-management/preview-test.md)
+1. Before activating your campaign or journey, use either simulation method to preview how AEM Content Fragment field values will render. [Learn more on simulating content](../content-management/preview-test.md)
+
+### Use AEM Content Fragments across channels {#aem-fragments-channels}
+
+How you insert AEM Content Fragment attributes from a decision policy depends on the channel you are working in.
+
+>[!BEGINTABS]
+
+>[!TAB Email]
+
+To insert AEM Content Fragment attributes into your email using a decision policy:
+
+1. Open your email draft in the Email Designer and click the **[!UICONTROL Decisioning]** icon in the right rail to open the decision policy panel.
+1. Select the selection strategy you assembled and specify a **placement** to define the area of the email where the offer will populate.
+1. Click the **+** icon and select the specific field from the AEM content fragment that should render in that area — for example, the hero image URL field.
+
+    ![Email Designer decision policy panel with an AEM Content Fragment field selected for a placement.](assets/aem-fragment-email.png)
+
+1. Before publishing, click **[!UICONTROL Simulate content]** to preview the result and verify that the highest-priority offer and its content fragment render as expected for a test profile.
+
+>[!TAB Code-based experience (JSON)]
+
+When building a JSON-based code-based experience, use the following structure to render AEM Content Fragment attributes from a decision policy.
+
+```handlebars
+[
+{{#each decisionPolicy.YOUR_POLICY_ID.items as |item|}}
+{% let frag = get(item._experience.decisioning.offeritem.aemContentReferencesMap, "YOUR_REFERENCE_KEY").id %}
+{{fragment id = frag result='YOUR_REFERENCE_KEY' required=false}}
+{
+  "fieldName": "{{{YOUR_REFERENCE_KEY.fieldName}}}"
+},
+{{/each}}
+]
+```
+
+>[!NOTE]
+>
+>AEM Content Fragments use `aemContentReferencesMap` to look up fragments by reference key. This is different from `contentReferencesMap`, which is used for Journey Optimizer content fragments.
+
+Keep the following in mind when building your JSON payload:
+
+* Place the JSON array brackets `[` and `]` **outside** the `#each` loop.
+* Use **triple braces** `{{{ }}}` for field values inside JSON strings to prevent HTML escaping of special characters and ensure valid JSON output.
+* The `result='YOUR_REFERENCE_KEY'` parameter captures the resolved fragment content under that name so you can reference its fields with `YOUR_REFERENCE_KEY.fieldName`.
+
+![Code-based experience editor showing AEM Content Fragment attributes rendered from a decision policy in JSON.](assets/aem-fragments-cbe.png)
+
+>[!TAB Code-based experience (HTML)]
+
+For HTML-based code-based experiences, use standard double braces for field rendering:
+
+```handlebars
+{{#each decisionPolicy.YOUR_POLICY_ID.items as |item|}}
+{% let frag = get(item._experience.decisioning.offeritem.aemContentReferencesMap, "YOUR_REFERENCE_KEY").id %}
+{{fragment id = frag result='YOUR_REFERENCE_KEY' required=false}}
+<div>{{YOUR_REFERENCE_KEY.fieldName}}</div>
+{{/each}}
+```
+
+>[!ENDTABS]
+
+### Use assets from AEM Content Fragments {#aem-cf-assets}
+
+AEM Content Fragments may include image fields that reference assets stored in AEM. Because Journey Optimizer receives only the **relative path** of those assets, images may not load unless the full publish URL is prepended.
+
+>[!NOTE]
+>
+>Native resolution of AEM asset references inside Content Fragments is not yet supported. The approaches below are workarounds available until that support is added.
+
+>[!BEGINTABS]
+
+>[!TAB Prepend the AEM publish domain]
+
+1. From your AEM instance URL, identify the author domain — for example, `author-p12345-e67890.adobeaemcloud.com`.
+
+    ![AEM instance URL showing the author domain used to derive the publish domain.](assets/aem-fragment-author-domain.png)
+
+1. Replace `author` with `publish` to obtain the publish domain: `publish-p12345-e67890.adobeaemcloud.com`.
+
+1. In the Journey Optimizer personalization editor, prepend that publish domain to the asset reference field from the Content Fragment.
+
+    ![Personalization editor with the AEM publish domain prepended to a Content Fragment asset reference field.](assets/aem-fragment-publish-domain.png)
+
+The image will now resolve to its full publish URL at delivery time.
+
+>[!TAB Store the publish URL in a text field]
+
+1. Open your Content Fragment in AEM.
+1. Go to the JSON preview and check the **References** section to locate the published asset URL.
+
+    ![AEM Content Fragment JSON preview References section showing the published asset URL.](assets/aem-fragment-published-url.png)
+
+1. Copy the publish URL and paste it into a dedicated text field within the Content Fragment.
+
+    ![AEM Content Fragment text field containing the copied publish URL for the referenced asset.](assets/aem-fragment-copy-url.png)
+
+1. In Journey Optimizer, reference that text field directly as the image source in your personalization expression.
+
+    ![Journey Optimizer personalization expression referencing the Content Fragment text field as the image source.](assets/aem-fragment-use-url.png)
+
+This approach avoids manual URL construction and keeps the publish URL within the Content Fragment itself.
+
+>[!ENDTABS]
 
 ## How-to video {#video}
 
