@@ -339,30 +339,30 @@ Your implementation work intersects with other team members:
 
 >[!TAB Work with Data Engineers]
 
-Collaborate with [Data Engineers](data-engineer.md) on data and event configurations:
+Collaborate with [Data Engineers](data-engineer.md) on data and event configurations. Every journey that reacts to user behavior depends on events you send — the Data Engineer defines the schemas, you implement the code that produces them.
 
-* Get the XDM schemas and event structures you need to implement
-* Understand which events you need to send and their required payload format
-* Align on data collection requirements and data quality standards
-* Test event delivery and data ingestion together
+* Get the [XDM schemas](../../data/get-started-schemas.md) and event structures you need to implement
+* Understand which events you need to send and their required payload format — see [working with journey events](../../event/about-events.md)
+* Confirm which fields are required vs. optional in each event payload, and what happens in journeys when expected fields are missing or malformed — see [schema requirements](../../event/experience-event-schema.md#schema-requirements)
+* Test event delivery and data ingestion together using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}
 
 >[!TAB Work with Administrators]
 
-Collaborate with [Administrators](administrator.md) on access and configurations:
+Collaborate with [Administrators](administrator.md) on access and channel configurations. Journeys can only reach users through channels the Administrator has set up — coordinate early so your SDK work and their configuration stay in sync.
 
-* Provide API specifications for custom actions they'll configure
-* Request necessary permissions and API credentials
-* Coordinate on channel configuration requirements (e.g., push certificates)
-* Align on testing environments and sandbox strategy
+* Provide API specifications for [custom actions](../../action/about-custom-action-configuration.md) they'll configure in Journey Optimizer
+* Request necessary permissions and API credentials via [Adobe Developer Console](https://developer.adobe.com){target="_blank"}
+* Coordinate on channel configuration requirements — push certificates for [iOS](../../push/push-configuration.md) and Android, [web push](../../push/push-configuration-web.md) settings, [SMS webhook](../../mobile/mobile-webhook.md) endpoints
+* Align on sandbox strategy and testing environments before running [journey test mode](../../building-journeys/testing-the-journey.md)
 
 >[!TAB Work with Marketers]
 
-Collaborate with [Marketers](marketer.md) on journey requirements and testing:
+Collaborate with [Marketers](marketer.md) on journey design and testing. Marketers build the journeys and content that depend entirely on the events you send and the surfaces you expose — the closer you align, the faster journeys go live.
 
-* Understand which user interactions should trigger events
-* Implement tracking for content performance and user engagement
-* Support testing of journeys with your implemented features
-* Troubleshoot issues with message delivery or personalization
+* Review journey designs in [Journey Optimizer](../../building-journeys/journey.md) together to understand which user interactions must trigger events and which surfaces need personalization
+* Implement tracking so Marketers can measure [content performance and user engagement](../../reports/report-gs-cja.md)
+* Run [journey test mode](../../building-journeys/testing-the-journey.md) together using test profiles to validate the full flow end-to-end
+* Troubleshoot issues with message delivery, personalization rendering, or [custom action](../../action/action.md) responses
 
 >[!ENDTABS]
 
