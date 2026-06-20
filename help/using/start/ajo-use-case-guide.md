@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journey Optimizer use cases overview | Adobe Journey Optimizer
+title: Choose the right capability for your goal | Adobe Journey Optimizer
 description: Discover the core use cases Adobe Journey Optimizer is designed for, with guidance on which AJO capabilities best fit each scenario.
 feature: Get Started
 topic: Content Management
@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: journey optimizer, use case, decision guide, which capability, get started, practitioner goals, tutorials
 ---
-# Find the right Journey Optimizer capability for your goal {#ajo-use-case-guide}
+# Choose the right capability for your goal {#ajo-use-case-guide}
 
 >[!BEGINSHADEBOX]
 
@@ -44,7 +44,7 @@ For administrators and technical users who need to configure the environment bef
 | Set up roles, permissions, and access control | Access control | [Get started with access control](../administration/permissions-overview.md) |
 | Work across multiple environments or regions | Sandboxes | [Work with sandboxes](../administration/sandboxes.md) |
 
-## Engage customers in real time {#engage-real-time}
+## Engage customers as events happen {#engage-real-time}
 
 For scenarios where you react to a customer action or event as it happens.
 
@@ -193,7 +193,7 @@ Each starter flow below is a short, outcome-oriented set of steps: what you will
 
 ### Recover abandoned carts {#flow-cart}
 
-**You will build:** A real-time recovery flow that reminds customers of items left behind.
+**You will build:** An automated recovery flow that reminds customers of items left behind.
 **Best for:** Marketers · **Capability:** Event-triggered journey
 
 1. Make sure the cart-abandonment event reaches Journey Optimizer (work with your [data team](../data/gs-data.md) if needed).
@@ -252,7 +252,7 @@ A clothing store typically sends post-purchase surveys to all customers who have
 
 **Role:** Marketer | **Core capability:** [Geofence triggering + push](../push/get-started-push.md)
 
-The same retailer can engage a loyal customer who pulls into the store parking lot in real time by sending them a push notification about a sweater that is back in stock in the customer's size.
+The same retailer can engage a loyal customer who pulls into the store parking lot by sending them a push notification about a sweater that is back in stock in the customer's size.
 
 [Get started with push notifications](../push/get-started-push.md)
 
@@ -260,7 +260,7 @@ The same retailer can engage a loyal customer who pulls into the store parking l
 
 **Role:** Marketer | **Core capability:** [Event-triggered multi-step journey](../building-journeys/journey-gs.md)
 
-When a customer adds items to an online cart but leaves without completing the purchase, Journey Optimizer detects the event in real time and starts a recovery journey automatically. The customer receives a personalized email reminding them of the items left behind. If they do not click through within 24 hours, a follow-up push notification is sent — personalized based on their browsing history and loyalty status.
+When a customer adds items to an online cart but leaves without completing the purchase, Journey Optimizer detects the event and starts a recovery journey automatically. The customer receives a personalized email reminding them of the items left behind. If they do not click through within 24 hours, a follow-up push notification is sent — personalized based on their browsing history and loyalty status.
 
 [Build your first journey](../building-journeys/journey-gs.md)
 
@@ -327,7 +327,7 @@ Browse curated video content by topic. Each tab links to the relevant tutorials 
 
 >[!TAB Reporting & optimization]
 
-* [Monitor & analyze your journey with live reports](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/report-and-monitor/monitor-and-analyze-your-journey-with-live-reports){target="_blank"} — Track performance in real time.
+* [Monitor & analyze your journey with live reports](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/report-and-monitor/monitor-and-analyze-your-journey-with-live-reports){target="_blank"} — Track performance as your journeys run.
 * [Create content experiments for email campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/experimentation/content-experiments-for-emails){target="_blank"} — Test and optimize content.
 
 >[!ENDTABS]
