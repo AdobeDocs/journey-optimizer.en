@@ -48,7 +48,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Implement the SDKs, event streaming, custom action endpoints, and APIs that connect your applications to Adobe Journey Optimizer so your journeys can run on real-time data.
+**On this page:** Implement the SDKs, event streaming, custom action endpoints, and APIs that connect your applications to Adobe Journey Optimizer so your journeys can run on live data.
 
 >[!ENDSHADEBOX]
 
@@ -98,7 +98,7 @@ Before diving into implementation, familiarize yourself with the core technical 
 
 ### Configure the Adobe Experience Platform Mobile SDK
 
-To enable push notifications, in-app messages, and other mobile capabilities, integrate the Adobe Experience Platform Mobile SDK into your mobile applications.
+The Mobile SDK is a collection of libraries you embed directly in your iOS or Android app. It acts as the communication layer between your app and Adobe Experience Platform: it identifies users, collects behavioral events, and delivers instructions from Journey Optimizer — including push notifications, in-app messages, and personalized content. Without it, Journey Optimizer has no visibility into what your app users are doing and no way to reach them.
 
 1. **Install and configure the Mobile SDK**: Follow the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started){target="_blank"} to get started with SDK integration.
 
@@ -123,7 +123,7 @@ Code-based experiences let you deliver personalized content to any surface in yo
 
 ### Set up the Adobe Experience Platform Web SDK
 
-For web-based implementations, the Web SDK is your primary integration point:
+The Web SDK (`alloy.js`) is a single JavaScript library that replaces the patchwork of separate Adobe tags your site might otherwise need. It collects behavioral data, streams it to Adobe Experience Platform through a datastream you configure, and receives personalization instructions back — all in one network round-trip. Once it's in place, Journey Optimizer can identify visitors, trigger journeys from their actions, and deliver tailored content to your pages immediately.
 
 1. **Install the Web SDK**: Follow the [Web SDK implementation guide](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"} to set up the SDK on your website.
 
@@ -133,7 +133,7 @@ For web-based implementations, the Web SDK is your primary integration point:
 
 ### Implement code-based experiences (Web SDK)
 
-Code-based experiences allow you to personalize any digital touchpoint:
+Unlike visual channels where marketers control the layout entirely, code-based experiences give you full ownership of how personalized content is rendered on the page. Journey Optimizer returns a JSON payload with the personalization data; your code decides where and how to display it. This model works for any web surface — hero banners, recommendation carousels, search result rankings, A/B test variants — without needing a visual editor or page publishing workflow.
 
 1. **Choose your implementation method**: Client-side, server-side, or hybrid. Review [implementation samples](../../code-based/code-based-implementation-samples.md) for each approach.
 
@@ -151,7 +151,7 @@ Learn more about [getting started with code-based experiences](../../code-based/
 
 ### Send events to trigger journeys
 
-As a developer, you'll implement the code to send events that trigger journeys. Your [Data Engineer](data-engineer.md) will configure the event schemas and definitions in Journey Optimizer.
+Journeys run on events — a user logs in, adds an item to a cart, completes a purchase, abandons a form. Your job is to emit those events from your application at exactly the right moment. Each event is an XDM-structured JSON payload sent to the Experience Platform Streaming Ingestion API; Journey Optimizer picks it up within milliseconds and routes the profile into any matching journey. The event schema and payload structure are defined by your [Data Engineer](data-engineer.md) — coordinate with them before you start coding.
 
 1. **Understand the event payload**: Work with your Data Engineer to get the event schema and required payload structure. The payload must conform to the XDM schema they've configured. Learn about [event schema requirements](../../event/experience-event-schema.md).
 
@@ -197,7 +197,7 @@ Learn more about [working with journey events](../../event/about-events.md).
 
 ## Develop custom action endpoints {#custom-actions}
 
-Custom actions allow journeys to call your APIs. As a developer, you'll build the API endpoints that custom actions invoke:
+When a journey reaches a custom action step, Journey Optimizer makes an outbound HTTP call to a URL you provide — your backend, a CRM, a loyalty platform, any REST endpoint. Your job is to build and expose that endpoint: define the request contract (payload shape, authentication method, response format), implement the business logic behind it, and make sure it can handle the call volume Journey Optimizer will generate. Your [Administrator](administrator.md) then registers the endpoint in Journey Optimizer so marketers can use it as a step in their journeys.
 
 1. **Build your API endpoint**: Create RESTful API endpoints that Journey Optimizer will call during journey execution. Your endpoint should:
    * Accept JSON payloads
@@ -219,7 +219,7 @@ Custom actions allow journeys to call your APIs. As a developer, you'll build th
 
 ## Work with Journey Optimizer APIs {#apis}
 
-Journey Optimizer provides comprehensive REST APIs for programmatic access:
+Not everything needs to happen through the Journey Optimizer UI. Sometimes you need to trigger a campaign from your own backend, suppress an email address after a privacy request, or sync content templates from an external CMS. Journey Optimizer's REST APIs give you programmatic access to the platform's core capabilities. All calls use OAuth Server-to-Server authentication — the older JWT method is deprecated.
 
 1. **Understand API capabilities**: Journey Optimizer APIs allow you to create, read, update, and delete various resources programmatically. Learn about [Journey Optimizer APIs](../../configuration/ajo-apis.md).
 
@@ -237,7 +237,9 @@ Journey Optimizer provides comprehensive REST APIs for programmatic access:
 
 ## Testing and debugging {#testing}
 
-1. **Debug SDK implementation**: Use Adobe Experience Platform Assurance to inspect SDK events, validate data collection, and troubleshoot integration issues in real-time. [Learn more about Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+Before your implementation goes live, you need confidence that events fire at the right moment, journeys trigger as expected, custom actions behave under realistic load, and personalized content renders correctly. This section covers the tools and techniques to catch issues early — from low-level SDK logging to end-to-end journey test runs with real profiles.
+
+1. **Debug SDK implementation**: Use Adobe Experience Platform Assurance to inspect SDK events, validate data collection, and troubleshoot integration issues as they happen. [Learn more about Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 1. **Test event delivery**: Verify that events from your application are correctly received by Adobe Experience Platform and trigger journeys as expected. Monitor event ingestion and validate payload structure.
 
@@ -259,19 +261,25 @@ Journey Optimizer provides comprehensive REST APIs for programmatic access:
 
 ## Advanced developer topics {#advanced-topics}
 
+Once your core SDKs, events, and APIs are in place, these topics help you go further: enriching journey data at runtime without bloating the profile, handling consent signals so opt-outs propagate through every integration, and tuning your implementation for the throughput and reliability that production scale demands.
+
 ### Working with contextual data and enrichment
+
+Journeys often need more data than what arrives in the triggering event — a product name, a loyalty tier, an order line-item list. Rather than pre-loading all of this into every profile, contextual enrichment lets your journey look it up at runtime from AEP datasets or carry it forward from a custom action response. Your messages and branch conditions can then reference that data without it ever being stored permanently on the profile.
 
 * **Iterate over arrays**: Use Handlebars syntax to display dynamic lists from events, custom action responses, and dataset lookups in messages. Learn about [iterating contextual data](../../personalization/iterate-contextual-data.md).
 * **Dataset lookup**: Implement dataset lookups to enrich journey data from Adobe Experience Platform datasets. Work with your Data Engineer on configuration. Learn about [dataset lookup](../../building-journeys/dataset-lookup.md).
 
 ### Working with consent and governance
 
-Implement data governance and consent policies in your integrations:
+Journey Optimizer enforces data governance and consent policies at the platform level, but your integration needs to respect them too. When a customer opts out of marketing communications, or when a data usage label restricts how a field can be used, those rules need to propagate through your custom actions and dataset lookups — not just block actions in the UI.
 
 * **Data governance**: Apply data usage policies to custom actions. Learn more about [data governance](../../action/action-privacy.md).
 * **Consent management**: Handle customer consent preferences in your implementations. Learn about [consent](../../action/consent.md).
 
 ### Optimization and best practices
+
+Production Journey Optimizer implementations regularly handle millions of events and thousands of journey executions per second. These resources help you tune your integration for that scale — understanding rate limits before you hit them, avoiding common journey design pitfalls that silently drop profiles, and building error handling that degrades gracefully rather than failing opaquely.
 
 * **Capping and throttling**: Understand rate limits and implement appropriate throttling. Learn about [external systems](../../configuration/external-systems.md).
 * **Journey optimization**: Follow best practices for [journey optimization](../../building-journeys/optimize.md).
@@ -304,6 +312,8 @@ When journeys call external systems via custom actions or data sources, the Capp
 [Capping API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling){target="_blank"} · [Work with the Capping API](../../configuration/capping.md) · [Work with the Throttling API](../../configuration/throttling.md)
 
 ### More REST APIs {#more-rest-apis}
+
+Beyond messaging and capping, Journey Optimizer exposes REST endpoints for suppression management, content templating, campaign retrieval, proofing, and orchestrated campaign execution. Use these when you need to automate operations that would otherwise require manual steps in the UI — for example, bulk-suppressing addresses after a data pull, or syncing templates from an external content pipeline.
 
 | What you need to do | API reference |
 | ------------------- | ------------- |
