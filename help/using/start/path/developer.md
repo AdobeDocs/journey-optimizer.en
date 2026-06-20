@@ -114,7 +114,7 @@ Detailed steps to configure push notifications are available on [this page](../.
 
 ### Implement code-based experiences (Mobile SDK)
 
-For native mobile app personalization using code-based experiences:
+Code-based experiences let you deliver personalized content to any surface in your native mobile app — from onboarding screens and product detail pages to in-app banners and feature flags — without requiring a new app release. Use the Mobile SDK to fetch and render personalized content at runtime, giving your team full control over placement and presentation:
 
 * Follow [this tutorial](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/code-based/tutorial){target="_blank"} for Mobile SDK implementation
 * Review sample implementations for [iOS](https://github.com/adobe/aepsdk-messaging-ios/tree/main/TestApps/MessagingDemoAppSwiftUI){target="_blank"} and [Android](https://github.com/adobe/aepsdk-messaging-android/tree/main/code/testapp){target="_blank"}
