@@ -27,8 +27,6 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
 topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-    internal-label: Reporting
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
     internal-label: Data quality
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
@@ -37,14 +35,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
     internal-label: Web experience
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
@@ -299,26 +293,26 @@ Trigger transactional or marketing messages from an external system using the In
 * Calls have a **timeout of 60 seconds**; internal retries handle unexpected timeouts.
 * If campaign start/end dates are configured, API calls outside those dates will fail.
 * To build your payload, retrieve the generated sample cURL request from the **cURL request** section of your live campaign in the Journey Optimizer UI — it includes all personalization variables for that campaign.
-* Standard and [high-throughput campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) use different endpoints.
+* Standard and [high-throughput campaigns](../../campaigns/api-triggered-high-throughput.md) use different endpoints.
 
-[API reference](https://developer.adobe.com/journey-optimizer-apis/references/messaging){target="_blank"} · [Code samples](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples){target="_blank"} · [Work with API-triggered campaigns](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-campaigns)
+[API reference](https://developer.adobe.com/journey-optimizer-apis/references/messaging){target="_blank"} · [Code samples](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples){target="_blank"} · [Work with API-triggered campaigns](../../campaigns/api-triggered-campaigns.md)
 
 ### Capping and throttling for external endpoints {#capping-throttling}
 
 When journeys call external systems via custom actions or data sources, the Capping and Throttling APIs protect those systems from overload. Capping rejects calls that exceed the configured limit; throttling queues them for up to 6 hours (production sandboxes, custom actions only).
 
-[Capping API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling){target="_blank"} · [Work with the Capping API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/external-systems/capping) · [Work with the Throttling API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/connect-systems/external-systems/throttling)
+[Capping API reference](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling){target="_blank"} · [Work with the Capping API](../../configuration/capping.md) · [Work with the Throttling API](../../configuration/throttling.md)
 
 ### More REST APIs {#more-rest-apis}
 
 | What you need to do | API reference |
 | ------------------- | ------------- |
-| Programmatically exclude email addresses or domains from sending | [Suppression API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"} · [Manage the suppression list](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configuration/monitor-reputation/manage-suppression-list) |
+| Programmatically exclude email addresses or domains from sending | [Suppression API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"} · [Manage the suppression list](../../configuration/manage-suppression-list.md) |
 | Retrieve journey metadata for auditing or external sync | [Journeys API](https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve){target="_blank"} |
-| Create and manage content templates and fragments from an external pipeline | [Content API](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"} · [Templates](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-templates/content-templates) · [Fragments](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/fragments/fragments) |
+| Create and manage content templates and fragments from an external pipeline | [Content API](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"} · [Templates](../../content-management/content-templates.md) · [Fragments](../../content-management/fragments.md) |
 | Retrieve and filter Action campaigns | [Campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve){target="_blank"} |
 | Preview campaigns and send proofs programmatically | [Simulations API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"} |
-| Validate datasets and trigger Orchestrated campaign execution | [Dataset validation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset){target="_blank"} · [Trigger](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} · [Enable datasets](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/orchestrated-campaigns/data-configuration/schemas-datasets/manual-schema) |
+| Validate datasets and trigger Orchestrated campaign execution | [Dataset validation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset){target="_blank"} · [Trigger](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} · [Enable datasets](../../orchestrated/manual-schema.md) |
 
 ## Additional resources {#additional-resources}
 
