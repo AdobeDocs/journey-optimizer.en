@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Choose the right capability for your goal | Adobe Journey Optimizer
+title: Start from your goal | Adobe Journey Optimizer
 description: Discover the core use cases Adobe Journey Optimizer is designed for, with guidance on which AJO capabilities best fit each scenario.
 feature: Get Started
 topic: Content Management
@@ -9,7 +9,7 @@ role: User
 level: Beginner
 keywords: journey optimizer, use case, decision guide, which capability, get started, practitioner goals, tutorials
 ---
-# Choose the right capability for your goal {#ajo-use-case-guide}
+# Start from your goal {#ajo-use-case-guide}
 
 >[!BEGINSHADEBOX]
 
@@ -335,7 +335,7 @@ Browse curated video content by topic. Each tab links to the relevant tutorials 
 ## Choosing between journeys, campaigns, and orchestrated campaigns {#choosing}
 
 | Scenario | Use |
-|----------|-----|
+| -------- | --- |
 | Behavior-driven, multi-step, each customer moves at their own pace | Journey |
 | Simple scheduled or API-triggered message to an audience | Campaign |
 | Complex batch workflow with multi-entity segmentation | Orchestrated campaign |
