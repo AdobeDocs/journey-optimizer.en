@@ -27,8 +27,6 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
 topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-    internal-label: Reporting
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
     internal-label: Data quality
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
@@ -37,14 +35,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
     internal-label: Web experience
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
