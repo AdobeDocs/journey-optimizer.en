@@ -27,7 +27,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **[Get started with Adobe Journey Optimizer](../../rp_landing_pages/get-started-landing-page.md)** onboarding hub is now available. New users can choose their path by role, explore fundamentals, or jump to day-to-day areas if already onboarded — without needing to know where to look first.
 
-* A new **[Choose the right capability for your goal](../start/ajo-use-case-guide.md)** page lets you start from what you want to accomplish rather than a feature name. It maps business goals to the recommended Journey Optimizer capability across setup, journeys, campaigns, personalization, decisioning, and reporting.
+* A new **[Start from your goal](../start/ajo-use-case-guide.md)** page lets you start from what you want to accomplish rather than a feature name. It maps business goals to the recommended Journey Optimizer capability across setup, journeys, campaigns, personalization, decisioning, and reporting.
 
 * The **[Get started for developers](../start/path/developer.md)** role guide has been updated with clearer introductions for each section and improved **Collaborate across roles** tabs that reference journeys and link to key implementation pages.
 
