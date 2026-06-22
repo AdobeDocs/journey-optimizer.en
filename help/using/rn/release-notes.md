@@ -56,8 +56,6 @@ topic_v2:
 
 ## June '26 release notes {#june-26-rn}
 
-The June 2026 release brings several flagship capabilities to General Availability — including **Journey Simulation**, **Journey path optimization targeting**, and **Journey Fragments** — alongside new AI-assisted authoring in journeys and content, expanded Decisioning support for the Direct Mail channel, and additional security and administration controls. The capabilities and improvements below are organized by theme. Additional changes are also expected in the upcoming days or weeks.
-
 ### Journeys {#june-26-journeys}
 
 The following capabilities and improvements have been added to journeys in this release. Additional changes are also expected in the upcoming days or weeks.
