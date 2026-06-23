@@ -64,7 +64,7 @@ topic_v2:
 
 **Perfect for:** Order confirmations after purchase, welcome emails when someone subscribes, password reset notifications, and post-login personalization.
 
-➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md) | [Build a Unitary event journey](#build-unitary-event)
+➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md) | [Create your first journey](journey-gs.md)
 
 >[!TAB Read Audience journeys]
 
@@ -74,7 +74,7 @@ topic_v2:
 
 **Perfect for:** Monthly newsletters, promotional campaigns to target segments, product announcements, recurring re-engagement series, and seasonal marketing campaigns.
 
-➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md) | [Build a Read Audience journey](#build-read-audience)
+➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md) | [Create your first journey](journey-gs.md)
 
 >[!TAB Audience Qualification journeys]
 
@@ -84,7 +84,7 @@ topic_v2:
 
 **Perfect for:** VIP tier upgrade notifications, first purchase celebration messages, churn risk alerts, and loyalty lifecycle stage transitions.
 
-➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md) | [Build an Audience Qualification journey](#build-audience-qualification)
+➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md) | [Create your first journey](journey-gs.md)
 
 >[!TAB Business event journeys]
 
@@ -94,7 +94,7 @@ topic_v2:
 
 **Perfect for:** Low inventory alerts to interested customers, flash sale announcements, price drop notifications, and product back-in-stock alerts.
 
-➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md) | [Build a Business event journey](#build-business-event)
+➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md) | [Create your first journey](journey-gs.md)
 
 >[!ENDTABS]
 
@@ -108,7 +108,7 @@ Use the table below to match your goal to the right journey type. For most new u
 | Send monthly newsletter to subscribers | Read Audience | Scheduled batch communication |
 | Notify customers when they reach VIP status | Audience Qualification | Real-time response to streaming audience entry |
 | Alert customers about low stock on watched items | Business event | Business condition affects multiple customers |
-| Welcome new app users | Unitary event | Triggered by signup event |
+| Welcome new app users | Unitary event or Audience Qualification | Signup event (unitary event) or entry into a new-user streaming audience (Audience Qualification) |
 | Re-engage inactive customers (recurring, scheduled) | Read Audience | Recurring batch run against inactivity audience |
 | Seasonal promotion to target segment | Read Audience | Scheduled campaign to audience |
 | Flash sale announcement | Business event | Business decision affects multiple customers |
@@ -125,7 +125,7 @@ Use the table below to match your goal to the right journey type. For most new u
 | **Best for** | Transactional messages, behavioral responses | Marketing campaigns, newsletters, recurring programs | Loyalty programs, lifecycle stage transitions | Inventory alerts, promotions, business conditions |
 | **Use when** | Immediate response to individual actions needed | Reaching large audience segments on schedule | Responding to customer status changes in real time | Business events affect multiple customers simultaneously |
 | **Examples** | Order confirmation, password reset | Monthly newsletter, seasonal campaign | VIP upgrade, churn risk alert | Low stock alert, flash sale, price drop |
-| **Re-entrance** | Configurable | Once per execution | Configurable per qualification event; a profile already in the journey cannot re-enter the same version | Multiple profiles can be affected by same event |
+| **Re-entrance** | Configurable | Once per execution by default; [Force reentrance on recurrence](read-audience.md#schedule) available on scheduled runs | Configurable per qualification event; a profile already in the journey cannot re-enter the same version | Multiple profiles can be affected by same event |
 | **Max throughput** | 5,000 TPS (shared org-level with Audience Qualification) | 20,000 TPS per sandbox | 5,000 TPS (shared org-level with Unitary event) | Business event: 5,000 TPS; Read Audience step: 20,000 TPS |
 | **Data requirements** | Event schema with trigger data | [!DNL Adobe Experience Platform] audience | Streaming audience (required for real-time entry); batch audience supported but delays entry | Business event schema |
 
@@ -143,11 +143,11 @@ Not all features are available for all journey types. Use this matrix to underst
 | Wait activities | ✅ | ✅ | ✅ | ✅ |
 | Condition activities | ✅ | ✅ | ✅ | ✅ |
 | Custom actions | ✅ | ✅ | ✅ | ✅ |
-| Read Audience activity (inside journey) | ✅ | ✅ | ✅ | ✅ |
+| Read Audience activity (journey entry) | ❌ | ✅ | ❌ | ✅ (automatic step after business event) |
 | Audience Qualification activity (inside journey) | ✅ | ✅ | ✅ | ✅ |
 | Jump activity | ✅ | ❌ | ❌ | ✅ |
 | **Profile management** | | | | |
-| Profile re-entrance | ✅ Configurable | ❌ Once per execution | ✅ Configurable (profile already in journey cannot re-enter same version) | ✅ Per event |
+| Profile re-entrance | ✅ Configurable | ❌ Once per execution by default ([Force reentrance on recurrence](read-audience.md#schedule) on scheduled runs) | ✅ Configurable (profile already in journey cannot re-enter same version) | ✅ Per event |
 | Namespace configuration | ✅ Required | ✅ Optional | ✅ Required | ✅ Required |
 | Profile cap | ✅ | ✅ | ✅ | ✅ |
 | **Testing & optimization** | | | | |
@@ -164,7 +164,6 @@ Not all features are available for all journey types. Use this matrix to underst
 | Content cards | ✅ | ✅ | ✅ | ✅ |
 | **Advanced capabilities** | | | | |
 | Incremental read | ❌ | ✅ | ❌ | ❌ |
-| Export audience | ✅ | ✅ | ✅ | ✅ |
 | Time zone management | ✅ | ✅ | ✅ | ✅ |
 | Reaction events | ✅ | ✅ | ✅ | ✅ |
 | External data sources | ✅ | ✅ | ✅ | ✅ |
@@ -175,17 +174,18 @@ Not all features are available for all journey types. Use this matrix to underst
 >[!NOTE]
 >
 >Jump activity limitations: a journey starting with a Read Audience or Audience Qualification activity cannot contain a Jump activity, and cannot be the target of a Jump activity from another journey.
+>
+>Read Audience activity as journey entry is only available in **Read Audience** and **Business event** journeys — it cannot be added to Unitary event or Audience Qualification entry journeys.
 
 ## Next steps {#next-steps}
 
-Each table lists configure-through-manage steps for that journey type.
+Now that you have chosen a journey type:
 
-### Unitary event journeys {#build-unitary-event}
-
-* **[Create your first journey](journey-gs.md)** - Step-by-step guide
-* **[Learn about the journey designer](using-the-journey-designer.md)** - Design your journey canvas
-* **[Explore journey capabilities](journey.md#capabilities)** - Discover advanced features
-* **[View journey FAQ](journey-faq.md)** - Common questions answered
+* **[Create your first journey](journey-gs.md)** — Step-by-step guide from entry to publish
+* **[Learn about the journey designer](using-the-journey-designer.md)** — Design your journey canvas
+* **[Profile entrance in journeys](entry-management.md)** — Entry rules, re-entrance, and throughput by type
+* **[Get started with journeys](journey.md)** — Fundamentals and capabilities overview
+* **[Journey Orchestration FAQ](journey-faq.md)** — Common questions answered
 
 +++ AI Knowledge Reference
 
@@ -218,10 +218,12 @@ For complete understanding, this information should be combined with the documen
 
 * Incremental read is only available for Read Audience journeys, not for Unitary event, Audience Qualification, or Business event journeys
 * Path experiments (A/B testing) are not supported for Business event journeys
-* Profile re-entrance in Read Audience journeys is limited to once per execution
+* Profile re-entrance in Read Audience journeys is limited to once per execution by default; use Force reentrance on recurrence on scheduled runs to allow profiles to re-enter on the next execution
+* The Read Audience activity is only available as a journey entry in Read Audience and Business event journeys — not in Unitary event or Audience Qualification entry journeys
 * Audience Qualification and Read Audience journeys cannot contain a Jump activity, and cannot be the target of a Jump activity from another journey
 * Audience Qualification journeys require a streaming-evaluated audience for real-time entry; batch-evaluated audiences cause entry delays of up to 24 hours
 * Unitary event and Audience Qualification journeys share a 5,000 TPS throughput limit at the organization level; Read Audience journeys support up to 20,000 TPS per sandbox
+* Simulation is supported for most journey types but not Business event entry; see Simulation limitations for node-level restrictions
 * A profile already present in a journey cannot re-enter the same version of that journey, regardless of re-entrance configuration
 
 **Terminology:**
@@ -240,7 +242,9 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I run A/B path experiments in a Business event journey?** — No; path experiments are not supported for Business event journeys.
 * **Q: What is the difference between a Unitary event journey and an Audience Qualification journey?** — A Unitary event journey is triggered by a specific customer action (e.g., purchase); an Audience Qualification journey triggers when a profile enters or exits an audience segment based on streaming criteria evaluation.
 * **Q: Which journey types support incremental read?** — Only Read Audience journeys support incremental read; the other three journey types do not.
+* **Q: Can I add a Read Audience activity to a Unitary event journey?** — No; the Read Audience activity is only available as journey entry in Read Audience and Business event journeys.
 * **Q: Can I use a Jump activity in a Read Audience journey?** — No; journeys starting with a Read Audience or Audience Qualification activity cannot contain a Jump activity and cannot be the target of a Jump from another journey.
+* **Q: Can I welcome new app users with an Audience Qualification journey?** — Yes, if entry is driven by a streaming audience (for example, when a profile joins a new-user segment); a signup unitary event journey is also a common pattern.
 * **Q: My Audience Qualification journey is not triggering in real time. Why?** — Audience Qualification journeys require a streaming-evaluated audience. If the audience is batch-evaluated (e.g., a daily snapshot), entry is delayed until the next evaluation window, which can be up to 24 hours.
 * **Q: What is the throughput difference between Unitary event and Read Audience journeys?** — Unitary event journeys share a 5,000 TPS limit with Audience Qualification journeys at the organization level. Read Audience journeys support up to 20,000 TPS per sandbox, making them better suited for large-scale batch campaigns.
 

@@ -282,6 +282,7 @@ For complete understanding, this information should be combined with the documen
 * AI features (Quick simulation, Generate with AI, Generate event values) require the Generate Content permission from the AI Assistant capability
 * For event-triggered journeys, the per-user Send icon is not available; entry is triggered through the Test events section
 * Wait duration overrides and execution address settings are only shown if the journey includes Wait or Channel activities
+* Channel proofs and custom actions or external data sources can execute real outbound calls during Simulation; use non-production contact points and avoid real customer PII in simulated users
 * Errors in the Results log require leaving Simulation, fixing the journey, and re-running before publishing
 
 **Terminology:**

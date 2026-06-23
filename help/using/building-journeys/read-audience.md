@@ -502,6 +502,6 @@ For complete understanding, this information should be combined with the documen
 * **Q: What does Incremental read do on the first run?** — On the first execution, all audience profiles enter. On subsequent runs, only profiles newly added to the audience since the last execution are processed.
 * **Q: What happens if the export job fails?** — The system retries every 10 minutes for up to 1 hour. Failures are reported in Alerts. After 1 hour without success, the run is considered failed.
 * **Q: Can the same profile enter a Read Audience journey multiple times?** — Yes, if a supplemental identifier is configured and differs between entries, or if Force reentrance on recurrence is enabled. Without these, a profile cannot be present multiple times at the same time.
-* **Q: How long does a one-shot Read Audience journey remain live?** — It moves to Finished status 91 days after execution (the global journey timeout).
+* **Q: How long does a one-shot Read Audience journey remain live?** — It auto-stops to Stopped when the last profile exits, unless the journey includes Wait, Reaction, or event-triggered transitions — in which case the 91-day global timeout applies. It does not remain Live until Finished at 91 days by default.
 
 +++

@@ -198,7 +198,7 @@ For complete understanding, this information should be combined with the documen
 * Only journeys in Finished status can be deleted.
 * Stopping a journey requires the Manage journeys permission; journeys with inline campaigns or messaging nodes also require Campaigns > Publish Campaigns permission.
 * After the 91-day global timeout, all profile journey data is removed and remaining profiles are automatically exited.
-* A one-shot Read audience journey stays in Live status after execution; it must be manually closed or will close after 91 days.
+* A non-recurring Read Audience journey without long-running Wait, Reaction, or event-triggered nodes automatically transitions to Stopped when the last profile exits. Journeys with those nodes remain subject to the 91-day global timeout unless manually closed.
 
 **Terminology:**
 
@@ -209,7 +209,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: What is the difference between closing and stopping a journey?** — Closing blocks new entrances but lets existing profiles finish; stopping immediately halts all profiles in their tracks.
-* **Q: When does a Read audience journey reach Finished status?** — 91 days after execution start (non-recurring), when the end date is reached (recurring with end date), or 91 days after start (recurring without end date).
+* **Q: When does a Read audience journey reach Finished status?** — For a non-recurring Read Audience journey: it auto-stops to Stopped when the last profile exits (or after 91 days if Wait, Reaction, or event nodes keep profiles active). Finished is reached when a Closed journey hits the 91-day global timeout, or per recurring-journey rules in the finished-definition table.
 * **Q: Can I delete a Closed journey?** — No, only Finished journeys can be deleted.
 * **Q: What happens to profiles still in a journey when the 91-day timeout hits?** — They are automatically exited from the journey at that point.
 * **Q: Do I need special permissions to stop a journey?** — Yes, the Manage journeys permission is required, plus Campaigns > Publish Campaigns if the journey contains inline campaigns or messaging nodes.
