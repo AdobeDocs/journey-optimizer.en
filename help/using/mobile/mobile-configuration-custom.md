@@ -167,6 +167,10 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 
 After creating and configuring your API credential, you now need to set up [the inbound settings for the Webhook](#webhook) for SMS messages. 
 
+>[!TIP]
+>
+>Always create and maintain separate agent configurations for each sandbox (production, development, etc.) to prevent cross-environment webhook response issues. Do not reuse the same API credentials, webhooks, or provider callback URLs (including RCS agents) across sandboxes.
+
 ### Authentication options for custom SMS Providers {#auth-options}
 
 >[!CONTEXTUALHELP]
