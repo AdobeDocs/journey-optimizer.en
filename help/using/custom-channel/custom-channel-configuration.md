@@ -92,8 +92,8 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
    For each header, you can define whether its value is:
 
-   * **[!UICONTROL Constant]** – A static value set once and included in every request.
-   * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration. [Learn more](#create-channel-config)
+   * **[!UICONTROL Constant]** – A static value set once and included in every request. For example, you can define the`Content-Type`parameter with the value `application/json` or the `Charset` parameter with the value `UTF-8`.
+   * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration. For example, you can define a variable for the user ID that is resolved at runtime. [Learn more](#create-channel-config) <!--From Custom actions section: For these parameters, you can define where to get this information (example: events, data sources), pass values manually or use the advanced expression editor for advanced use cases. Advanced uses cases can be data manipulation and other function usage. Refer to this [page](expression/expressionadvanced.md).-->
 
 1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Variable query parameters are appended to the endpoint URL dynamically at send time. For example, you can use a variable query parameter to pass a user identifier resolved from the profile.
 
