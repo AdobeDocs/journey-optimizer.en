@@ -305,7 +305,9 @@ What you configure before opening the canvas depends on your journey type. See [
 
 ### Build by journey type {#build-by-type}
 
-#### Unitary event journeys {#build-unitary-event}
+Each table lists configure-through-manage steps for that journey type.
+
+### Unitary event journeys {#build-unitary-event}
 
 | Step | Documentation |
 |------|---------------|
@@ -317,7 +319,7 @@ What you configure before opening the canvas depends on your journey type. See [
 | **Use cases** | [Send a message to subscribers](message-to-subscribers-uc.md) · [Send multi-channel messages](journeys-uc.md) |
 | **Manage** | [Profile entrance](entry-management.md) · [Supplemental identifiers](supplemental-identifier.md) |
 
-#### Read Audience journeys {#build-read-audience}
+### Read Audience journeys {#build-read-audience}
 
 | Step | Documentation |
 |------|---------------|
@@ -328,7 +330,7 @@ What you configure before opening the canvas depends on your journey type. See [
 | **Use cases** | [Send multi-channel messages](journeys-uc.md) · [Send emails only on weekdays](weekday-email-uc.md) · [Ramp up deliveries](ramp-up-deliveries-uc.md) |
 | **Manage** | [Profile entrance](entry-management.md) — once per execution · [Time zone management](timezone-management.md) |
 
-#### Audience Qualification journeys {#build-audience-qualification}
+### Audience Qualification journeys {#build-audience-qualification}
 
 | Step | Documentation |
 |------|---------------|
@@ -339,7 +341,7 @@ What you configure before opening the canvas depends on your journey type. See [
 | **Use cases** | [Journey entry and exit criteria](entry-exit-criteria-guide.md) · [Learn through use cases](jo-use-cases.md) |
 | **Manage** | [Profile entrance](entry-management.md) — re-entrance and namespace (required) |
 
-#### Business event journeys {#build-business-event}
+### Business event journeys {#build-business-event}
 
 | Step | Documentation |
 |------|---------------|
