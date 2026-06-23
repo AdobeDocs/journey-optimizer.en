@@ -61,7 +61,7 @@ This guide helps you choose based on execution style, data needs, and use case�
 
 >[!TIP]
 >
->**Quick rule of thumb:** Need each customer to move at their own pace with real-time logic? Use **Journeys**. Sending one message to an audience on a schedule? Use **Action campaigns**. Triggering from an external system via API? Use **API-triggered campaigns**. Need multi-entity data, exact counts, or a batch canvas? Use **Orchestrated campaigns**.
+>**Quick rule of thumb:** Need each customer to move at their own pace with real-time logic? Use **Journeys**. Sending one message to an audience on a schedule? Use **Action campaigns**. Triggering a single message from an external system via API? Use **API-triggered campaigns** — or a **Unitary event journey** if you need multi-step orchestration after the API-sent event. Need multi-entity data, exact counts, or a batch canvas? Use **Orchestrated campaigns**.
 
 ## Detailed comparison {#detailed-comparison}
 
@@ -103,10 +103,10 @@ Follow this decision tree to choose the right approach. Many brands use more tha
 * No complex multi-step logic needed
 
 **Immediate message triggered by an external system?**
-→ **Use API-triggered campaigns**
-* Triggered on demand via API call
+→ **Use API-triggered campaigns** (single message) **or a Unitary event journey** (multi-step orchestration)
+* Triggered on demand via API call — campaigns deliver one message; unitary journeys ingest the event via [Experience Platform ingestion](../event/additional-steps-to-send-events-to-journey.md) and run a full journey flow
 * Payload-driven personalization
-* No complex multi-step logic needed
+* Choose campaigns when no multi-step logic is needed
 
 **Complex batch workflow with advanced segmentation?**
 → **Use Orchestrated campaigns**
@@ -125,7 +125,8 @@ Follow this decision tree to choose the right approach. Many brands use more tha
 | Re-engage inactive users based on behavior | Journeys | Triggered by audience qualification, personalized path |
 | Flash sale triggered by business event | Journeys (Business Event) | Real-time trigger affecting multiple customers |
 | Seasonal promotion with product catalog integration | Orchestrated campaigns | Multi-entity data, complex segmentation, exact counts |
-| API-triggered transactional message | API-triggered campaigns | External system trigger, immediate delivery |
+| API-triggered transactional message (single send) | API-triggered campaigns | External system trigger, immediate one-shot delivery |
+| API-triggered multi-step flow | Journeys (Unitary event) | External system sends unitary event via API; journey orchestrates follow-up steps |
 | Multi-level sending per booking | Orchestrated campaigns | Multi-entity relationships, one message per booking |
 
 ## Key distinctions explained {#key-distinctions}
@@ -255,7 +256,7 @@ Combines workflow complexity with batch campaign execution.
 | Wait activities | ✅ | ❌ | ❌ | ✅ |
 | Conditional branching | ✅ | ❌ | ❌ | ✅ |
 | Scheduled execution | ✅ | ✅ | ✅ | ✅ |
-| API triggering | ❌ | ❌ | ✅ | ❌ |
+| API triggering | ✅ (unitary event only — event sent via API) | ❌ | ✅ | ❌ |
 | Multi-entity data | ❌ | ❌ | ❌ | ✅ |
 | Exact pre-send counts | ❌ | ❌ | ❌ | ✅ |
 | On-demand segmentation | ❌ | ❌ | ❌ | ✅ |
