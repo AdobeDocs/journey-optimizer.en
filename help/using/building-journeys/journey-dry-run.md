@@ -252,13 +252,14 @@ For complete understanding, this information should be combined with the documen
 * Profiles processed during a Dry run are counted towards Engageable Profiles and the live journey quota
 * Channel action nodes (Email, SMS, Push) and Custom actions are not executed during Dry run
 * Jump actions are not enabled in Dry run
+* Reaction nodes are not executed during Dry run; profiles exit successfully, with priority rules for parallel unitary and reaction branches
 * Reporting data is only available while the Dry run is active; once stopped, the data is no longer accessible
 * Dry run journeys do not impact business rules
 
 **Terminology:**
 * Canonical name: Journey Dry run — Acronym: none — variants: dry run mode, Dry run publication mode
 * Synonyms: "Dry run" = "smoke test" (informally)
-* Do not confuse: "Dry run" ≠ "Test mode" — Dry run uses real production data and counts towards quotas; Test mode uses synthetic test profiles and does not
+* Do not confuse: "Dry run" ≠ "Test mode" ≠ "Simulation" — Dry run uses real production data and counts toward Engageable Profiles and live journey quota; Test mode uses persistent AEP test profiles in a draft journey; Simulation uses temporary simulated users that do not persist in AEP
 
 **FAQ:**
 * **Q: Does Dry run actually send emails or push notifications to customers?** — No; all channel action nodes and custom actions are disabled and not executed during a Dry run.

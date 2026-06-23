@@ -210,7 +210,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 * Canonical name: Publish Journey — Acronym: none — variants: activate journey, go live
 * Synonyms: "Publish" = "activate" = "go live"
-* Do not confuse: "Stop journey" ≠ "Close journey" (stopping is a manual action; Closed is an automatic status applied to previous versions when a new version is published)
+* Do not confuse: Stop (emergency halt of all profiles) ≠ Close to new entrances (manual graceful close; existing profiles finish) ≠ Closed status (automatic when a new version is published, or after manual close to new entrances)
 
 **FAQ:**
 * **Q: Can I edit a journey after it is published?** — Only labels, descriptions, and the journey name can be changed. To make other modifications, create a new version of the journey.

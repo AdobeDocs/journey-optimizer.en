@@ -1058,7 +1058,7 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: Journey — Acronym: none — variants: customer journey, orchestration, flow
 * Synonyms: "Close to new entrances" = "graceful stop"; "Stop" = "immediate stop"
 * Do not confuse: "Journey" ≠ "Campaign" — journeys support multi-step event-triggered orchestration; campaigns are one-time or scheduled audience-based sends
-* Do not confuse: "Test mode" ≠ "Dry run" — test mode uses synthetic test profiles; dry run uses real production data without contacting customers
+* Do not confuse: "Simulation" ≠ "Test mode" ≠ "Dry run" — Simulation uses temporary simulated users; Test mode uses persistent AEP test profiles; Dry run uses real production data without contacting customers or updating profiles
 
 **FAQ:**
 * **Q: What is the maximum number of activities in a journey?** — 50 activities; keeping journeys simpler improves maintainability and performance.

@@ -283,6 +283,8 @@ For complete understanding, this information should be combined with the documen
 * Maximum 100 test profiles per single test session
 * Events can only be triggered from the test mode UI; external API triggering is not supported
 * Custom upload audience attribute enrichment is not supported in test mode
+* Events triggered in Test mode generate real experience events that can also trigger other journeys listening to the same event
+* In Test mode, Wait activities and most event timeouts default to 10 seconds; Reaction event timeouts default to a minimum of 40 seconds
 * Automatic deactivation — Journeys that remain inactive in test mode for over a week automatically exit test mode and return to Draft status. No journey content is lost; only the test mode session ends.
 * Journey edits are blocked while test mode is active, but direct publishing is allowed
 * At a split, the top branch is always selected; reorder branches to test different paths
