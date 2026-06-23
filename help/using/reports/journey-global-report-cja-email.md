@@ -121,7 +121,7 @@ The **[!UICONTROL Sending Statistics]** table provides a clear view of how your 
 
 +++
 
-## Email - Tracking statistics {#email-tracking}
+## Tracking statistics {#email-tracking}
 
 ![](assets/cja-journey-email-track-stat.png)
 

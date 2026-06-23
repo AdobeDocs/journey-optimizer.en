@@ -32,7 +32,7 @@ solution: Journey Optimizer
     + [Understanding how it works](using/start/understanding-ajo.md)
     + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
-    + [Use case overview](using/start/ajo-use-case-guide.md)
+    + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
     + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
     + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
@@ -51,7 +51,7 @@ solution: Journey Optimizer
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
   + {hide-from-toc} [Journey Get Started Guide](using/building-journeys/journey-get-started.md)
-  + {hide-from-toc} [Journey types and selection guide](using/building-journeys/journey-types-selection.md)
+  + {hide-from-toc} [Journey types: choose the right one](using/building-journeys/journey-types-selection.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)

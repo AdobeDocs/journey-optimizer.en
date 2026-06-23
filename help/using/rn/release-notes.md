@@ -56,8 +56,6 @@ topic_v2:
 
 ## June '26 release notes {#june-26-rn}
 
-The June 2026 release brings several flagship capabilities to General Availability — including **Journey Simulation**, **Journey path optimization targeting**, and **Journey Fragments** — alongside new AI-assisted authoring in journeys and content, expanded Decisioning support for the Direct Mail channel, and additional security and administration controls. The capabilities and improvements below are organized by theme. Additional changes are also expected in the upcoming days or weeks.
-
 ### Journeys {#june-26-journeys}
 
 The following capabilities and improvements have been added to journeys in this release. Additional changes are also expected in the upcoming days or weeks.
@@ -140,6 +138,10 @@ The following capabilities and improvements have been added to journeys in this 
 </tbody>
 </table>
 
+* **Stop a paused journey directly** - You can now stop a journey directly from the **Paused** state. Previously, a paused journey had to be resumed to **Live** before it could be stopped. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
+
+  Availability date: June 18-22, 2026
+
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required. [Read more](../building-journeys/supplemental-identifier.md)
 
   Availability date: June 11, 2026
@@ -189,7 +191,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
 * **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
 
-  Availability date: End of June, 2026
+  Availability date: Late June, 2026
 
 * **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of **email header fields**, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
 
@@ -225,7 +227,7 @@ The following capabilities and improvements have been added to Decisioning in th
 
 * **Dynamic item attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items.
 
-  Availability date: June 22, 2026
+  Availability date: Late June, 2026
 
 +++
 
@@ -272,7 +274,7 @@ The following capabilities and improvements have been added to content managemen
 <li><strong>AI-generated content variants</strong> — In the <strong>Simulate content variations</strong> experience, click <strong>Generate</strong> to use AI to automatically create content variants. The system analyzes your message, detects personalization fields and conditional branches, and fills in realistic values so you can validate rendering without building every variant by hand.</li>
 </ul>
 <p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
-<p>Availability date: June 9, 2026</p>
+<p>Availability date: Late June, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -424,7 +426,7 @@ The following improvements have been added to the email channel in this release.
 <td>
 <p>The Email Designer now includes a library of ready-to-use layout modules — such as headers, product cards, information blocks, and footers — that you can drag and drop directly into your email canvas.</p>
 <p>Each module comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
-<p>Availability date: June 22, 2026</p>
+<p>Availability date: Late June, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -498,21 +500,6 @@ The following capabilities and improvements are coming to content management and
 </tr>
 </tbody>
 </table>
-
-+++
-
-### Reporting {#june-26-reporting}
-
-+++ Coming soon — **Information below is subject to change**
-
-* **Estimated clicks for Email and SMS reporting** — A new **Estimated Clicks** metric is now available in Journeys, Campaigns, and Channel reports for email and SMS. This metric excludes identified bot and non-human interaction (NHI) traffic to provide a clearer view of genuine customer engagement. The existing Clicks metric remains available and continues to report total clicks.
-
-* **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
-
-  * Estimated CTR: Estimated Clicks relative to total deliveries.
-  * Estimated CTOR for email only: Estimated Clicks relative to Estimated Opens.
-  
-  Availability date: Late June, 2026
 
 +++
 
