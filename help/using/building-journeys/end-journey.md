@@ -168,4 +168,50 @@ When stopped, the journey status is set to **[!UICONTROL Stopped]**.
 * [Profile entrance management](entry-management.md) - Configure how profiles enter journeys
 * [Configure exit criteria](journey-properties.md#exit-criteria) - Set up automatic profile removal from journeys
 * [Pause a journey](journey-pause.md) - Temporarily halt journey execution
-* [Stop or close a paused journey](journey-pause.md#stop-close-paused) - End a paused journey without resuming it first
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains the different ways a live journey can end — including the global 91-day timeout, manual closure to new entrances, and emergency stop — along with their effects on in-progress profiles.
+
+**Intents:**
+
+* Close a live journey to new entrances while allowing current profiles to complete it
+* Stop a journey immediately to halt all in-progress profiles
+* Understand the difference between Closed, Stopped, and Finished journey statuses
+* Determine when a journey is considered "finished" based on its type and configuration
+* Delete a journey once it has reached the Finished status
+
+**Glossary:**
+
+* **End tag**: An auto-generated, non-removable node displayed at the end of each journey path during authoring; its label can be changed *(product-specific)*
+* **Close to new entrances**: A manual action that prevents new profiles from entering a journey while allowing existing profiles to complete their path *(product-specific)*
+* **Global journey timeout**: The 91-day maximum duration after which a journey automatically switches to Finished status and all profile data is removed *(product-specific)*
+* **Stopped status**: A journey state in which all in-progress profiles are immediately halted; used only for emergencies *(product-specific)*
+
+**Guardrails:**
+
+* Closed and Stopped journeys cannot be restarted or deleted; only a new version or duplicate can be created.
+* Only journeys in Finished status can be deleted.
+* Stopping a journey requires the Manage journeys permission; journeys with inline campaigns or messaging nodes also require Campaigns > Publish Campaigns permission.
+* After the 91-day global timeout, all profile journey data is removed and remaining profiles are automatically exited.
+* A one-shot Read audience journey stays in Live status after execution; it must be manually closed or will close after 91 days.
+
+**Terminology:**
+
+* Canonical name: Close to new entrances — Acronym: n/a — variants: close journey, manually close
+* Synonyms: "Stopped" journey ≠ "Closed" journey — stopped halts all profiles immediately; closed only blocks new entrances
+* Do not confuse: "End tag" ≠ "End activity" — the End tag is auto-generated and cannot be removed; the End activity is a placeable canvas node
+
+**FAQ:**
+
+* **Q: What is the difference between closing and stopping a journey?** — Closing blocks new entrances but lets existing profiles finish; stopping immediately halts all profiles in their tracks.
+* **Q: When does a Read audience journey reach Finished status?** — 91 days after execution start (non-recurring), when the end date is reached (recurring with end date), or 91 days after start (recurring without end date).
+* **Q: Can I delete a Closed journey?** — No, only Finished journeys can be deleted.
+* **Q: What happens to profiles still in a journey when the 91-day timeout hits?** — They are automatically exited from the journey at that point.
+* **Q: Do I need special permissions to stop a journey?** — Yes, the Manage journeys permission is required, plus Campaigns > Publish Campaigns if the journey contains inline campaigns or messaging nodes.
+
++++

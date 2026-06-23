@@ -466,3 +466,50 @@ Set up **[journey alerts](../reports/alerts.md)** to receive real-time notificat
 * **[Troubleshooting inbound activities](troubleshooting-inbound.md)** - Fix entry and qualification issues
 
 **Ready to build your first journey?** [Get started now →](journey-gs.md)
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page is the getting-started hub for Adobe Journey Optimizer journeys, explaining what journeys are, the four journey types, the six-step creation workflow, real-world use cases, and links to advanced capabilities.
+
+**Intents:**
+
+* Understand what journeys are and how they differ from campaigns and orchestrated campaigns
+* Choose the right journey type (Unitary, Read Audience, Audience Qualification, or Business event) for a use case
+* Follow the six-step journey creation workflow: Plan, Design, Test, Publish, Monitor, Optimize
+* Use test mode or dry run to validate a journey before going live
+* Publish a journey and monitor performance through reports and alerts
+* Explore advanced capabilities such as expressions, timezone management, copy to sandbox, and throughput control
+
+**Glossary:**
+
+* **Journey**: An automated, multistep customer experience that orchestrates personalized interactions across channels in response to customer behavior, business events, or scheduled campaigns. *(product-specific)*
+* **Journey designer**: The visual drag-and-drop canvas in AJO used to build and configure journey flows without writing code. *(product-specific)*
+* **Test mode**: A journey validation mode that simulates execution with test profiles to catch issues before going live. *(product-specific)*
+* **Dry run**: A journey preview mode that simulates execution without affecting real profile data or sending messages. *(product-specific)*
+* **Orchestrated campaigns**: Multi-step batch workflows in AJO that use relational data (profiles + products/stores/bookings) and process all profiles together with exact pre-send counts. *(product-specific)*
+
+**Guardrails:**
+
+* Live journeys cannot be structurally edited; changes require creating a new version
+* Test mode and dry run must be used before publishing to catch issues
+
+**Terminology:**
+
+* Canonical name: Journey — Acronym: none — variants: customer journey, AJO journey
+* Synonyms: "journey designer" = "canvas" = "journey canvas"
+* Do not confuse: "Journey" ≠ "Campaign" — Journeys maintain individual customer state for real-time, multi-step behavior-driven experiences; Campaigns deliver messages in batch to audiences on a schedule or via API trigger
+* Do not confuse: "Dry run" ≠ "Test mode" — Dry run previews execution without touching real data; Test mode simulates the journey with actual test profiles
+
+**FAQ:**
+
+* **Q: What is the difference between a journey and a campaign in Journey Optimizer?** — Journeys provide 1:1 real-time orchestration where each profile progresses at its own pace through conditional logic; Campaigns deliver messages simultaneously to an audience on a schedule or via API trigger; Orchestrated campaigns are batch canvas workflows for complex multi-entity segmentation.
+* **Q: Can I edit a live journey?** — Limited elements such as name and message content can be edited; structural changes require creating a new version of the journey.
+* **Q: What are the steps to build a journey?** — The six-step workflow is: Plan, Design in the canvas, Test (test mode or dry run), Publish, Monitor performance, and Optimize/iterate.
+* **Q: How do I validate a journey without sending real messages?** — Use dry run mode, which previews journey execution without affecting real data or sending messages.
+* **Q: What journey type should I use for a welcome email triggered by a subscription?** — Use a Unitary journey, which is triggered by a specific individual event such as a subscription sign-up.
+
++++
