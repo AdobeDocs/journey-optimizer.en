@@ -248,7 +248,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 * Only Draft journeys with no errors can be activated in Dry run mode
 * Starting a Dry run requires the **Publish journeys** permission; stopping it requires **Manage journeys**
-* Dry run journeys automatically revert to Draft after 14 days
+* Dry run journeys automatically exit Dry run mode and return to Draft status after 14 days. No journey content is lost; only the Dry run session ends.
 * Profiles processed during a Dry run are counted towards Engageable Profiles and the live journey quota
 * Channel action nodes (Email, SMS, Push) and Custom actions are not executed during Dry run
 * Jump actions are not enabled in Dry run
