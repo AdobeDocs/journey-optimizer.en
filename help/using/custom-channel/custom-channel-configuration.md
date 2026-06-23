@@ -27,11 +27,11 @@ Before marketers can use a custom channel in campaigns or journeys, an administr
 
 ## Step 1: Create a custom channel {#create-custom-channel}
 
-The **Channel builder** section is the central interface for defining new custom channels. It is accessible to users with the **[!UICONTROL Administrator]** role. It enables you to create and configure custom channels, but also manage API credentials, and delegate subdomains.
+The **Channel Builder** section is the central interface for defining new custom channels. It is accessible to users with the **[!UICONTROL Administrator]** role. It enables you to create and configure custom channels, but also manage API credentials, and delegate subdomains.
 
 ## Access the Channel Builder {#access-channel-builder}
 
-To access the **Channel builder**, follow the steps below.
+To access the **Channel Builder**, follow the steps below.
 
 1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** in the left navigation rail.
 
@@ -99,18 +99,18 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
    ![Query parameters](assets/custom_channel_endpoint_query_param.png){width="70%"}
 
-1. In the **[!UICONTROL Policy configuration]** section, define how [!DNL Journey Optimizer] handles request throughput and failures.
+1. In the **[!UICONTROL Policy configuration]** section, define how [!DNL Journey Optimizer] handles request throughput and failures. This is important to ensure that your external system can handle the volume of requests and to avoid overwhelming it.
 
-   ![](assets/custom_channel_endpoint_policy_config.png)
+   ![Policy configuration](assets/custom_channel_endpoint_policy_config.png)
 
-   * **[!UICONTROL Enable throttling]** – Disabled by default. Set the maximum number of requests per second (default: **5,000 req/sec**).
-   * **[!UICONTROL Timeout]** – Default: **5,000 milliseconds**.
-   * **[!UICONTROL Enable cache]** – Disabled by default. Set the caching duration (default TTL: **600 seconds**).
-   * **[!UICONTROL Enable retry]** – Enabled by default. Set the **[!UICONTROL Retry count]** (default: **3**, configurable range: 0–10).
+   * **[!UICONTROL Enable throttling]** – Disabled by default. Set the maximum number of requests per second (default: **5,000c**). Once the limit is reached, requests are queued and sent as soon as possible.
+   * **[!UICONTROL Enable retry]** – Enabled by default. Set the maximum retry count (default: **3**, configurable range: 0–10) for failed requests. This helps to avoid overwhelming the endpoint during transient failures.
+   * **[!UICONTROL Timeout]** – Default: **5,000 milliseconds**. Set the maximum time to wait for a response from the endpoint before considering the request failed.
+   <!--* **[!UICONTROL Enable cache]** – Disabled by default. Set the caching duration (default TTL: **600 seconds**). After the TTL (Time To Live) expires, the next request is sent to the endpoint. Caching is useful for endpoints that return the same response for identical requests, reducing load and improving performance.-->
 
 ### Authentication settings {#authentication-settings}
 
-Select the **[!UICONTROL Authentication type]** that you need to use for this channel.
+Select the **[!UICONTROL Authentication type]** that you need to use for this channel. The available options depend on the authentication methods supported by your external messaging system.
 
 ![Authentication type](assets/custom_channel_authentication_type.png){width="70%"}
 
@@ -130,7 +130,7 @@ A **[!UICONTROL Test connection]** button is available to validate the authentic
 
 ### Payload configuration {#payload-configuration}
 
-The payload configuration defines the structure of the message payload and which fields marketers can author and personalize.
+The payload is sent to the endpoint when a profile qualifies in a campaign or journey. In the payload configuration, define the structure of the message payload and which fields marketers can author and personalize.
 
 1. Click **[!UICONTROL Define payload]**, and choose how to define the payload:
 
@@ -144,7 +144,7 @@ The payload configuration defines the structure of the message payload and which
     For each field, configure the following settings:
 
    | Setting | Description |
-   |---------|-------------|
+   | --- | --- |
    | **[!UICONTROL Default value]** | Optional. Used if no personalized value is provided at authoring time. |
    | **[!UICONTROL Type]** | Read-only, derived from the payload. Supported types: `string`, `integer`, `decimal`, `boolean`, `dateTime`, `dateTimeOnly`, `dateOnly`, `listObject`, `listString`, `listInteger`, `listDecimal`, `listBoolean`, `listDateTime`, `listDateTimeOnly`, `listDateOnly`. |
    | **[!UICONTROL Required]** | If enabled, the field must have a value when the channel is used in a campaign or journey. Missing required fields trigger a validation error that prevents saving or activating. |
@@ -241,7 +241,7 @@ To create a channel configuration for a custom channel:
 
    ![Dynamic parameters](assets/custom_channel_config_dynamic_parameters.png){width="100%"}
 
-1. If the channel has payload fields with the **[!UICONTROL Channel config]** checkbox enabled, those fields appear in the **[!UICONTROL Payload fields]** section. [Learn more](#payload-configuration)
+1. If the channel has payload fields with the **[!UICONTROL Channel config]** checkbox enabled, those fields appear in the **[!UICONTROL Payload configuration]** section. [Learn more](#payload-configuration)
 
    ![Payload fields](assets/custom_channel_config_payload.png){width="100%"}
 

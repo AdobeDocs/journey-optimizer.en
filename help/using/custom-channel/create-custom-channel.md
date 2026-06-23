@@ -5,9 +5,14 @@ feature: Custom Channel
 topic: Content Management
 role: User
 level: Experienced
+badge: label="Limited Availability" type="Informative"
 ---
 
 # Create custom channel experiences {#create-custom-channel}
+
+[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
 In [!DNL Journey Optimizer], you can deliver messages using custom channels in campaigns, journeys, and orchestrated campaigns. Follow the steps below to set up your custom channel experience.
 
