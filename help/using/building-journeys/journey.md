@@ -112,7 +112,7 @@ Use [!DNL Journey Optimizer] to:
 
 <!--
  waiting for DOCAC-13912 
-➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix 
+➡️ **[Journey types: choose the right one](journey-types-selection.md)** - Detailed comparison, decision guide, and feature compatibility matrix 
 -->
 
 ## Build with the journey designer {#journey-designer}
