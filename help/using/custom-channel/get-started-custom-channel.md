@@ -54,8 +54,8 @@ Three personas are involved in setting up and using custom channels:
 
 Setting up and using a custom channel follows three main stages:
 
-1. **Configure (Admin)** – An administrator creates a custom channel in the **Channel Builder**, defining the endpoint, authentication, throttling policy, and message payload structure. A channel configuration is then created and linked to the custom channel.
-1. **Create (Marketer)** – A marketer adds the custom channel to a journey, campaign, or orchestrated campaign, selects a channel configuration, and authors the message payload using [!DNL Journey Optimizer]'s expression editor.
+1. **Configure (Admin)** – An administrator creates a custom channel in the **Channel Builder**, defining the endpoint, authentication, throttling policy, and message payload structure. A channel configuration is then created and linked to the custom channel. [Learn more](custom-channel-configuration.md).
+1. **Create (Marketer)** – A marketer adds the custom channel to a journey, campaign, or orchestrated campaign, selects a channel configuration, and authors the message payload using [!DNL Journey Optimizer]'s expression editor. [Learn more](create-custom-channel.md)
 1. **Send** – When a profile qualifies, [!DNL Journey Optimizer] calls the configured endpoint with the personalized payload. The external system processes the call and delivers the message.
 
 ## Use cases {#use-cases}

@@ -27,11 +27,13 @@ Before marketers can use a custom channel in campaigns or journeys, an administr
 
 ## Step 1: Create a custom channel {#create-custom-channel}
 
-The **Channel builder** section is the central interface for defining new custom channels.
+The **Channel builder** section is the central interface for defining new custom channels. It is accessible to users with the **[!UICONTROL Administrator]** role. It enables you to create and configure custom channels, but also manage API credentials, and delegate subdomains.
 
 ## Access the Channel Builder {#access-channel-builder}
 
-1. To access it, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** in the left navigation rail.
+To access the **Channel builder**, follow the steps below.
+
+1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** in the left navigation rail.
 
 1. Select **[!UICONTROL Custom channels]** under the **[!UICONTROL Channel builder]** section.
 
@@ -44,6 +46,8 @@ The **Channel builder** section is the central interface for defining new custom
 1. Click the **[!UICONTROL Create custom channel]** button to open the channel creation form.
 
 ### Define the general settings {#general-settings}
+
+Start by defining the general settings for your custom channel.
 
 ![General settings](assets/custom_channel_properties.png){width="70%"}
 
@@ -70,6 +74,8 @@ The **Channel builder** section is the central interface for defining new custom
 
 ### Set the endpoint configuration {#endpoint-configuration}
 
+You must configure the endpoint, which is the HTTP URL of your external messaging system. [!DNL Journey Optimizer] sends a POST request to this endpoint with the personalized payload when a profile qualifies in a campaign or journey.
+
 ![Endpoint configuration](assets/custom_channel_endpoint_configuration.png){width="70%"}
 
 1. In the **[!UICONTROL Endpoint configuration]** section, enter the host **[!UICONTROL URL]** of your external messaging system.
@@ -78,18 +84,18 @@ The **Channel builder** section is the central interface for defining new custom
    >
    >The HTTP method to is currently set to **POST**.
 
-1. Add **[!UICONTROL Headers]** as needed.
+1. Add **[!UICONTROL Headers]** as needed. Headers are key-value pairs that are sent with every request to the endpoint. They can be used for authentication, content type specification, or any other purpose required by your external system.
 
-      At minimum, `Content-Type` and `Charset` are available as default headers. <!--TBC-->
-   ![](assets/custom_channel_endpoint_headers.png)
+   At minimum, `Content-Type` and `Charset` are available as default headers. <!--TBC-->
 
+   ![Headers configuration](assets/custom_channel_endpoint_headers.png)
 
    For each header, you can define whether its value is:
 
    * **[!UICONTROL Constant]** – A static value set once and included in every request.
    * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration. [Learn more](#create-channel-config)
 
-1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Variable query parameters are appended to the endpoint URL dynamically at send time.
+1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Variable query parameters are appended to the endpoint URL dynamically at send time. For example, you can use a variable query parameter to pass a user identifier resolved from the profile.
 
    ![Query parameters](assets/custom_channel_endpoint_query_param.png){width="70%"}
 
