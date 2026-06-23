@@ -6,22 +6,6 @@ topic: Content Management
 role: Developer
 level: Intermediate
 keywords: in-app, message, web sdk, configuration
-exl-id: 90a19ef4-e94c-4f16-a26a-8919ad2dbd6f
-feature_v2:
-  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
-    internal-label: Communication channels
-subfeature_v2:
-  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
-    internal-label: In App channel
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-    internal-label: Developer
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-    internal-label: Intermediate
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-    internal-label: Implementation
 ---
 # Configure Web In-app Messaging support in Web SDK
 
@@ -31,13 +15,6 @@ You can use these notifications for different purposes, such as promoting new fe
 
 By using in-app messages, you can effectively engage with your audience and steer them towards important aspects of your application.
 
->[!IMPORTANT]
->
->Web In-App Messaging is an [Adobe Journey Optimizer](get-started-web.md) feature, which uses the Web SDK to deliver the personalized content.
->
->For detailed instructions on how to configure your Web In-App Messaging campaign, see the [Adobe Journey Optimizer documentation](create-in-app-web.md).
-
-
 ## Prerequisites {#prerequisites}
 
 ### Web SDK tag extension version {#extension-version}
@@ -46,13 +23,13 @@ The Web In-app messaging functionality requires the latest version of the Web SD
 
 ### Configure a CSP for Web In-app Messaging {#csp}
 
-When you configure [Web In-App Messaging](web-in-app-messaging.md), you must include the following directive in your CSP:
+When you configure Web In-App Messaging, you must include the following directive in your CSP:
 
 ```
 default-src  blob:;
 ```
 
-For more information about configuring a CSP, see the [dedicated documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/use-cases/configuring-a-csp.html){target="_blank"}.
+For more information about configuring a CSP, refer to [Data Collection documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/use-cases/configuring-a-csp.html){target="_blank"}.
 
 ## Configure Web In-App Messaging using the Web SDK tag extension {#tag-extension}
 
@@ -74,83 +51,80 @@ Refer to the following sections to configure the Web SDK tag extension according
 
 ### Configuration steps for the **[!UICONTROL Send data to Experience Platform]** trigger {#send-data-platform}
 
-Select the tag property which contains your Web SDK extension, and [create a new rule](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/managing-resources/rules.html#create-a-rule){target="_blank"} with the following settings:
+1. Select the tag property which contains your Web SDK extension and [create a new rule](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/managing-resources/rules.html#create-a-rule){target="_blank"} with the following settings:
 
-1. **[!UICONTROL Extension]**: [!UICONTROL Core]
-2. **[!UICONTROL Event Type]**: [!UICONTROL Library Loaded (Page Top)]
+    * **[!UICONTROL Extension]**: [!UICONTROL Core]
+    * **[!UICONTROL Event Type]**: [!UICONTROL Library Loaded (Page Top)]
 
     ![Image showing the event configuration screen.](assets/web-in-app-messaging/rule-configuration.png)
 
-3. Select **[!UICONTROL Keep Changes]** to save the event configuration.
+1. Select **[!UICONTROL Keep Changes]** to save the event configuration.
 
-Next, you must add an action to the rule that you created.
+1. You now need to add an action to the rule that you created, in the [!DNL Actions] section, select **[!UICONTROL Add]**.
+    
+    Use the following **[!UICONTROL Action]** settings:
 
-1. In the [!DNL Actions] section, select **[!UICONTROL Add]**.
-    ![Image showing the edit rule screen.](assets/web-in-app-messaging/add-action.png)
-
-2. Use the following **[!UICONTROL Action]** settings:
     * **[!UICONTROL Extension]**: [!UICONTROL Adobe Experience Platform Web SDK]
     * **[!UICONTROL Action Type]**: [!UICONTROL Send event]
 
-        ![Image showing the action configuration screen.](assets/web-in-app-messaging/action-configuration.png)
+    ![Image showing the edit rule screen.](assets/web-in-app-messaging/add-action.png)
 
-3. On the right side of the screen, in the **[!UICONTROL Personalization]** section, enable the **[!UICONTROL Render visual personalization decisions]** option.
+1. On the right side of the screen, in the **[!UICONTROL Personalization]** section, enable the **[!UICONTROL Render visual personalization decisions]** option.
+
     ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/render-visual-personalization.png)
 
-4. On the right side of the screen, in the **[!UICONTROL Decision context]** section, define the **[!UICONTROL Key]**/**[!UICONTROL Value]** pairs which you used in your campaign configuration, to qualify for the in-app message.
+1. On the right side of the screen, in the **[!UICONTROL Decision context]** section, define the **[!UICONTROL Key]**/**[!UICONTROL Value]** pairs which you used in your campaign configuration, to qualify for the in-app message.
+
     ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/decision-context.png)
 
-5. Select **[!UICONTROL Keep Changes]** to save your configuration.
+1. Select **[!UICONTROL Keep Changes]** to save your configuration.
 
+1. Next, you must add the newly created rule to the tag property library. To do this, go to **[!UICONTROL Publishing Flow]** and select the rule that you previously created.
 
-Next, you must add the newly created rule to the tag property library. To do this, go to **[!UICONTROL Publishing Flow]** and select the rule that you previously created.
+    ![Image showing the library screen.](assets/web-in-app-messaging/add-rule-to-library.png)
 
-![Image showing the library screen.](assets/web-in-app-messaging/add-rule-to-library.png)
+1. After you have added the rule to the library, select **[!UICONTROL Save & Build to Development]**.
 
-After you have added the rule to the library, select **[!UICONTROL Save & Build to Development]**.
-
-![Image showing the personalization configuration screen.](assets/web-in-app-messaging/publish-flow.png)
+    ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/publish-flow.png)
 
 The configuration process is now completed and your message is ready to be shown to your users.
 
 ### Configuration steps for using manual triggers {#manual-trigger}
 
-Select the tag property which contains your Web SDK extension, and [create a new rule](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/managing-resources/rules.html#create-a-rule){target="_blank"} with the following settings:
+1. Select the tag property which contains your Web SDK extension, and [create a new rule](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/managing-resources/rules.html#create-a-rule){target="_blank"} with the following settings:
 
-1. **[!UICONTROL Extension]**: [!UICONTROL Core]
-2. **[!UICONTROL Event Type]**: [!UICONTROL Click]
-3. Set the trigger for a specific element on the page, identified by a CSS selector of your choosing.
+    * **[!UICONTROL Extension]**: [!UICONTROL Core]
+    * **[!UICONTROL Event Type]**: [!UICONTROL Click]
+
+1. Set the trigger for a specific element on the page, identified by a CSS selector of your choosing.
 
     ![Image showing the event configuration screen.](assets/web-in-app-messaging/event-configuration-manual.png)
 
+1. You need to add an action to the rule that you created. In the [!DNL Actions] section, select **[!UICONTROL Add]** and use the following **[!UICONTROL Action]** settings:
 
-Next, you must add an action to the rule that you created.
-
-1. In the [!DNL Actions] section, select **[!UICONTROL Add]**.
-    ![Image showing the edit rule screen.](assets/web-in-app-messaging/add-action.png)
-
-2. Use the following **[!UICONTROL Action]** settings:
     * **[!UICONTROL Extension]**: [!UICONTROL Adobe Experience Platform Web SDK]
     * **[!UICONTROL Action Type]**: [!UICONTROL Evaluate rulesets]
 
-        ![Image showing the action configuration screen.](assets/web-in-app-messaging/manual-trigger-action.png)
+    ![Image showing the edit rule screen.](assets/web-in-app-messaging/add-action.png)
 
-3. On the right side of the screen, enable the **[!UICONTROL Render visual personalization decisions]** option.
+1. On the right side of the screen, enable the **[!UICONTROL Render visual personalization decisions]** option.
+
     ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/manual-trigger-render.png)
 
 
-4. On the right side of the screen, in the **[!UICONTROL Decision context]** section, define the **[!UICONTROL Key]**/**[!UICONTROL Value]** pairs which you used in your campaign configuration, to qualify for the in-app message.
+1. On the right side of the screen, in the **[!UICONTROL Decision context]** section, define the **[!UICONTROL Key]**/**[!UICONTROL Value]** pairs which you used in your campaign configuration, to qualify for the in-app message.
+
     ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/manual-trigger-decision-context.png)
 
-5. Select **[!UICONTROL Keep Changes]** to save your configuration.
+1. Select **[!UICONTROL Keep Changes]** to save your configuration.
 
-Next, you must add the newly created rule to the tag property library. To do this, go to **[!UICONTROL Publishing Flow]** and select the rule that you previously created.
+1. Add the newly created rule to the tag property library. To do this, go to **[!UICONTROL Publishing Flow]** and select the rule that you previously created.
 
-![Image showing the library screen.](assets/web-in-app-messaging/add-rule-to-library.png)
+    ![Image showing the library screen.](assets/web-in-app-messaging/add-rule-to-library.png)
 
-After you have added the rule to the library, select **[!UICONTROL Save & Build to Development]**.
+1. After you have added the rule to the library, select **[!UICONTROL Save & Build to Development]**.
 
-![Image showing the personalization configuration screen.](assets/web-in-app-messaging/publish-flow.png)
+    ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/publish-flow.png)
 
 The configuration process is now completed and your message is ready to be shown to your users.
 
@@ -196,5 +170,5 @@ You can choose to show in-app messages to users for a set number of times, or ev
 
 In the [Web SDK configuration](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html){target="_blank"} set the `personalizationStorageEnabled` option according to your needs:
 
-* `personalizationStorageEnabled: true` triggers the in-app message with the frequency you defined in the [Adobe Journey Optimizer campaign](create-in-app-web.md#configure-inapp).
+* `personalizationStorageEnabled: true` triggers the in-app message with the frequency you defined in your [campaign](create-in-app-web.md#configure-inapp).
 * `personalizationStorageEnabled: false` triggers the in-app message on every page load.
