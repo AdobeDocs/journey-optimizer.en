@@ -22,9 +22,11 @@ subfeature_v2: []
 
 >[!IMPORTANT]
 >
->You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
+>* To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. The same permissions let you create and manage simulated users, **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
 >
->To use AI in **[!UICONTROL Simulation]** (**[!UICONTROL Quick simulation]**, generating simulated users with AI, **[!UICONTROL Generate event values]**), users require **[!UICONTROL Generate Content]** permission from the **[!UICONTROL AI Assistant]** capability. 
+>* To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
+>
+>* For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
 
 Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
 
@@ -44,6 +46,7 @@ After activation, batch journeys with read audience entry offer two ways to run 
 
 On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]** runs the journey with generated users, event values and pre-filled settings.
 
+
 1. Select **[!UICONTROL Quick simulation]**.
 
 1. Review the fields Adobe Journey Optimizer gathered for the run. Click **[!UICONTROL Update values]** to change test settings and execution addresses, or continue without changes. 
@@ -53,6 +56,10 @@ On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]**
     ![Quick Simulation dialog on the Gathering information step with Update values and Continue to next step](assets/quick-simulation-2.png)
   
 1. If you opened **[!UICONTROL Update values]**, edit the settings, for example, the address used for message proofs, then confirm to start the simulation.
+
+    >[!NOTE]
+    >
+    >Pre-filled execution email and phone fields come from the email address and phone number on your Adobe IMS user profile.
 
     ![Quick Simulation Update values step with wait time override and proof email and phone fields](assets/quick-simulation-3.png)
 
@@ -74,12 +81,6 @@ Continue with [Create and manage simulated users](#test-users), [Trigger your ev
 
 ## Create and manage simulated users {#test-users}
 
->[!IMPORTANT]
->
->You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
->
->To use AI in **[!UICONTROL Simulation]** (**[!UICONTROL Quick simulation]**, generating simulated users with AI, **[!UICONTROL Generate event values]**), users require **[!UICONTROL Generate Content]** permission from the **[!UICONTROL AI Assistant]** capability. 
-
 Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, save them for reuse, adjust or remove them from the list, and send them into the journey.
 
 1. Start by populating the **[!UICONTROL Test users]** list:
@@ -89,6 +90,10 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
     Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
         
     For journeys with an Email, Push or SMS node, the AI prompts you to confirm the email address or phone number to use. Simulated users will be generated using those defined values. Once done, click **[!UICONTROL Generate]**.
+
+    >[!NOTE]
+    >
+    >The email and phone fields are pre-filled from your Adobe IMS user profile.
 
     ![Generate simulated users dialog with execution email and phone fields and Generate button](assets/simulate-generate.png)
 
@@ -128,9 +133,35 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
     +++ Create from JSON
 
-    Define new simulated users by updating the corresponding fields with your simulated user data.
+    In **[!UICONTROL Create Simulated Users]**, edit the JSON template to define users, then click **[!UICONTROL Format JSON]** and **[!UICONTROL Save]**.
 
     ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json.png)
+
+    To reuse attribute values from a profile or [test profile](../audience/creating-test-profiles.md) in [!DNL Adobe Experience Platform]:
+
+    1. Browse to the profile you want to use as a reference. On the profile detail page, click **[!UICONTROL View JSON]**. [Learn more](../audience/get-started-profiles.md)
+
+        ![Profile JSON view in Adobe Experience Platform](assets/simulate-json-1.png)
+
+    1. Copy the JSON from the viewer.
+
+    1. In the journey, open **[!UICONTROL Simulation settings]**, start **[!UICONTROL Create Simulated Users]**, and choose **Create from JSON**.
+
+    1. Paste the JSON into the matching part of the simulated user template (for example, the attribute block for one user). Click **[!UICONTROL Format JSON]** to validate the structure.
+
+        ![Create Simulated Users JSON editor with pasted profile attributes](assets/simulate-json-2.png)
+
+    1. Remove properties that exist on the [!DNL Adobe Experience Platform] profile only tied to the source profile, such as mergePolicyId or lastModifiedAt.
+
+    1. Set the fields required by the simulated user template: **[!UICONTROL Display name]**, **[!UICONTROL Identity namespace]**, identity value, and channel execution addresses.
+
+    1. Click **[!UICONTROL Save]**. Use ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg) on the saved simulated user to review the data before you run **[!UICONTROL Simulation]**.
+
+        ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json-3.png)
+
+        >[!WARNING]
+        >
+        >If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
 
     +++
 
@@ -207,13 +238,13 @@ If your journey includes one or more unitary events, you can trigger them while 
 
 ## View results {#viewing-results}
 
-The **[!UICONTROL Results]** tab allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect.
+The **[!UICONTROL Results]** tab allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect. When you select a single simulated user, the canvas highlights the exact path that user followed through the journey, so you can confirm they entered the branch you expected.
 
-Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. This view helps you scan the full simulation at a glance, including activities, outcomes, and errors, without picking a single simulated user first.
+Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. The canvas then shows every path covered by the run, which helps you compare coverage across profiles and scan the full simulation at a glance, including activities, outcomes, and errors, without picking a single simulated user first.
 
 ![Results tab with simulation summary, test user filter, and path coverage on the journey canvas](assets/simulate-6-2.png)
 
-For each activity, the log can show whether the simulated user entered or exited the step, and errors that occurred during the simulation.
+For each activity, the log can show whether the simulated user entered or exited the step, the timestamps and branch decisions for each step, and errors that occurred during the simulation.
 
 For **Wait** activities, the log includes two duration-related values:
 
