@@ -56,8 +56,6 @@ topic_v2:
 
 ## June '26 release notes {#june-26-rn}
 
-The June 2026 release brings several flagship capabilities to General Availability — including **Journey Simulation**, **Journey path optimization targeting**, and **Journey Fragments** — alongside new AI-assisted authoring in journeys and content, expanded Decisioning support for the Direct Mail channel, and additional security and administration controls. The capabilities and improvements below are organized by theme. Additional changes are also expected in the upcoming days or weeks.
-
 ### Journeys {#june-26-journeys}
 
 The following capabilities and improvements have been added to journeys in this release. Additional changes are also expected in the upcoming days or weeks.
@@ -139,6 +137,10 @@ The following capabilities and improvements have been added to journeys in this 
 </tr>
 </tbody>
 </table>
+
+* **Stop a paused journey directly** - You can now stop a journey directly from the **Paused** state. Previously, a paused journey had to be resumed to **Live** before it could be stopped. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
+
+  Availability date: June 18-22, 2026
 
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required. [Read more](../building-journeys/supplemental-identifier.md)
 
