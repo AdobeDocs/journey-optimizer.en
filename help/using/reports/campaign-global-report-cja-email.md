@@ -48,6 +48,12 @@ topic_v2:
 ---
 # Email campaign report {#campaign-global-report-cja-email}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the Email campaign report in Adobe Journey Optimizer to analyze email KPIs, click and delivery funnels, tracking statistics, bounce and error reasons, and engagement by domain, subject, and link.
+
+>[!ENDSHADEBOX]
+
 >[!INFO]
 >
 >Since Apple introduced new privacy protection features for its native Mail app, including Mail Privacy Protection, senders are no longer able to use tracking pixels to collect data on profiles who have enabled Apple's Mail Privacy Protection. Consequently, Adobe Journey Optimizer ability to track email opens using tracking pixels may be impacted. 
@@ -147,11 +153,11 @@ The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis
 
 +++
 
-## Unique sending statistics {#unique-sending-statistics-email}
+## Unique send statistics {#unique-sending-statistics-email}
 
 ![](assets/cja-unique-email-sending-stat.png)
 
-The **[!UICONTROL Unique Sending Statistics]** table presents a detailed overview of unique email performance metrics in your campaigns. It focuses on individual profiles, such as those uniquely targeted, delivered to, bounced, or excluded—providing deeper insights into how your emails are reaching and engaging your audience.
+The **[!UICONTROL Unique Send Statistics]** table presents a detailed overview of unique email performance metrics in your campaigns. It focuses on individual profiles, such as those uniquely targeted, delivered to, bounced, or excluded—providing deeper insights into how your emails are reaching and engaging your audience.
 
 +++ Learn more about Unique Sending Statistics metrics
 
@@ -229,9 +235,13 @@ The **[!UICONTROL Email - Tracking statistics]** table offers a detailed account
 
 * **[!UICONTROL Click through open rate (CTOR)]**: Number of times the email was opened.
 
+* **[!UICONTROL Open rate]**: Percentage of profiles who opened the email at least once, relative to the number of delivered emails.
+
 * **[!UICONTROL Estimated Email Opens]**: Estimate of total email opens that accounts for both direct opens by profiles and automated opens triggered by mail servers. This metric adjusts for opens triggered by mail servers for privacy or security scanning by applying an open rate calculated from recipients who manually opened the email to those whose emails were only opened by mail servers.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
 * **[!UICONTROL Spam complaints]**: Number of times a message was declared as spam or junk.
 
@@ -261,17 +271,19 @@ The **[!UICONTROL Email Domains]** table offers an in-depth breakdown of emails 
 
 +++
 
-## Tracked link labels {#track-link-label}
+## Tracked labels {#track-link-label}
 
 ![](assets/cja-email-tracked-link.png)
 
-The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your emails, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
+The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your emails, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
 +++ Learn more about Tracked link labels metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in an email.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
 +++
 
@@ -286,6 +298,8 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in an email.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
 +++
 

@@ -45,6 +45,12 @@ topic_v2:
 ---
 # Get started with data management {#about-data}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get a practical overview of how data flows into and out of Adobe Journey Optimizer, covering schemas, datasets, identities, profiles, and data sources, so your team can complete the data readiness steps before building journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 Data is the foundation of every journey, decision, and message you deliver with [!DNL Adobe Journey Optimizer].
 
 This page gives you a practical starting point to understand:
@@ -61,7 +67,7 @@ Use this guide together with your data engineers, administrators, and marketers 
 
 ## How Journey Optimizer uses Adobe Experience Platform data {#aep-data}
 
-[!DNL Adobe Journey Optimizer] is built on [!DNL Adobe Experience Platform]. It does not maintain a separate, isolated data store. Instead, it uses the same data foundation as other Experience Cloud applications.
+[!DNL Adobe Journey Optimizer] is built on [!DNL Adobe Experience Platform]. It does not maintain a separate, isolated data store. Instead, it uses the same data foundation as other [!DNL CX Enterprise] applications.
 
 Schemas and datasets live in Adobe Experience Platform. Identities and the [Real-Time Customer Profile](../audience/get-started-profiles.md) are managed by Identity Service and Profile Service. Journey Optimizer reads profile and event data from Adobe Experience Platform to evaluate journey conditions, personalize messages, and select offers. It writes interaction data — such as send, open, click, and bounce events, and journey step events — back into Experience Platform datasets. It can also look up additional datasets at runtime without copying that data into the profile.
 

@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Build audience {#build-audience}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Build audience targeting activity to define the audience that enters an Orchestrated campaign, using an existing audience or the rule builder.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_build_audience"
 >title="Build audience activity"

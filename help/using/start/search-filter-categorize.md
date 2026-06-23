@@ -32,11 +32,17 @@ topic_v2:
 ---
 # Search, filter, organize {#search-filter-organize}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Quickly locate and organize journeys, campaigns, and assets with universal search, list filters, and tags so you can stay productive as your Journey Optimizer projects grow.
+
+>[!ENDSHADEBOX]
+
 As your Adobe Journey Optimizer projects grow, finding and organizing content becomes essential for efficient work. This page shows you how to quickly locate journeys, campaigns, and assets using universal search; filter lists to focus on specific items; and organize your work with tags and categories. These tools help you navigate large volumes of content, maintain consistency across teams, and streamline your daily workflows.
 
 ## Search {#unified-search}
 
-From Adobe Journey Optimizer interface, use the unified Adobe Experience Cloud search capability on the center of the top bar to find assets, journeys, datasets, and more across your sandboxes. 
+From Adobe Journey Optimizer interface, use the unified [!DNL Adobe CX Enterprise] search capability on the center of the top bar to find assets, journeys, datasets, and more across your sandboxes. 
 
 Start entering content to display top results. Help articles about the entered keywords also show up in the results.
 

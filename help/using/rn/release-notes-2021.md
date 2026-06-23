@@ -301,7 +301,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 
 **User interface**
 
-* **Search** - On every page, you can now search business objects and help articles directly from the Unified Experience Cloud search field. [Learn more](../start/user-interface.md#unified-search)
+* **Search** - On every page, you can now search business objects and help articles directly from the Unified [!DNL CX Enterprise] search field. [Learn more](../start/user-interface.md#unified-search)
 * **Recents** - The display of recents elements from Adobe Journey Optimizer home page is now extended to additional business objects. With this update, shortcuts to your recently accessed include Messages, Journeys, Audiences, Schemas, Datasets, Data Sources, Events, Actions, Sources, and Destinations. [Learn more](../action/about-custom-action-configuration.md#passing-collection)
 
 **Content Design**

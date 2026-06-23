@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Work with placements {#create-decision}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create placements and associate them with decision policies in your emails so the right decision items appear in the right location and you can track their performance.
+
+>[!ENDSHADEBOX]
+
 ## About placements {#about}
 
 A placement is a container that is used to showcase decision items. It helps ensure that the right offer content shows up in the right location within your message.

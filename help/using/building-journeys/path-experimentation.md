@@ -14,6 +14,12 @@ subfeature_v2: []
 ---
 # Use path experimentation {#experimentation}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up path experimentation with the Optimize activity to test different journey paths using A/B or multi-armed bandit experiments, identify the best-performing treatment by success metric, and scale the winner.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_path_experiment_success_metric"
 >title="Success metric"
@@ -60,12 +66,6 @@ Let's say you want to compare three paths:
     >
     >Switching on the toggle bar will automatically take 10% of your population. You can adjust this percentage if needed.
 
-    <!--
-    DOES THIS APPLY TO PATH EXPERIMENT?
-    IMPORTANT: When a holdout group is used in an action for path experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.
-    
--->
-
 1. You can allocate a precise percentage to each **[!UICONTROL Treatment]**, or simply switch on the **[!UICONTROL Distribute evenly]** toggle bar.
 
     ![Treatment allocation slider with percentage distribution](assets/journey-optimize-experiment-treatments.png){width=80%}
@@ -88,27 +88,17 @@ Let's say you want to compare three paths:
 
 1. [Publish](publish-journey.md) your journey.
 
-<!--
-    Select a channel action and use the **[!UICONTROL Edit content]** button to access the design tools.
-
-    ![Edit content button in channel action activity](assets/journey-optimize-experiment-edit-content.png){width=70%}
-
-    From there, using the left pane you can navigate between the different contents for each action in your experiment. Select each content and design it as needed.
-
-    ![Content selection panel showing treatments for experiment](assets/journey-optimize-experiment-content.png){width=100%}
--->
-
 Once the journey is live, users are randomly assigned to go down different paths. [!DNL Journey Optimizer] tracks which path performs best and provides actionable insights.
 
 Follow the success of your journey with the Journey Path Experiment report. [Learn more](../reports/journey-global-report-cja-experimentation.md)
 
-<!--
-REMOVED WITH GA
+## Path assignment on journey re-entrance {#path-assignment}
 
->[!CAUTION]
->
->Do not edit the metadata of a path experiment once it has been published. Editing the metadata will disrupt the calculation and reporting of experiment results.
--->
+Path assignment is persistent for a profile across multiple entrances into the same journey version. For example, if a profile enters a journey on day 1 and is assigned to path A and then re-enters the journey on day 2, it will again be assigned to path A. This ensures a consistent experience for the user and is required for statistically valid reporting and analysis.
+
+However, the assignments are only persistent within a given journey version. Once you publish a new journey version, the randomization changes and a profile can end up getting assigned to a different path.
+
+If you have multiple path experimentation activities in a journey, each activity applies an independent random assignment.
 
 ## Experiment use cases {#uc-experiment}
 

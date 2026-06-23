@@ -27,6 +27,12 @@ subfeature_v2:
 ---
 # Start and monitor your Orchestrated campaigns {#start-monitor}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to test, publish, and monitor Orchestrated campaigns in Adobe Journey Optimizer, including the campaign lifecycle, execution logs, and activity status indicators.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_publication"
 >title="Publish Orchestrated campaign"

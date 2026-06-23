@@ -49,6 +49,12 @@ topic_v2:
 ---
 # Email opt-out management {#email-opt-out}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add unsubscribe options to your emails, including one-click opt-out links in the email header or body and two-step opt-out through a landing page, so recipients can stop future communications.
+
+>[!ENDSHADEBOX]
+
 When sending messages from journeys or campaigns, you must always ensure that customers can unsubscribe from future communications. Once unsubscribed, the profiles are automatically removed from the audience of future marketing messages.  [Learn more about privacy & opt-out management](../privacy/opt-out.md)
 
 >[!NOTE]

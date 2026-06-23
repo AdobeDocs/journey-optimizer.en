@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Execute an API triggered campaign {#execute}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Retrieve the generated cURL request and use it to trigger your live API triggered campaign through the APIs, with troubleshooting guidance so you can resolve delivery delays and authentication errors.
+
+>[!ENDSHADEBOX]
+
 Once your campaign has been activated, you need to retrieve the generated sample cURL request and use it into the API to build your payload and trigger the campaign.
 
 ## Must-read {#must-read}

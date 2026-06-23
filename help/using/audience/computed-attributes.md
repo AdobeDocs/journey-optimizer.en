@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Work with computed attributes {#computed-attributes}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create computed attributes that aggregate behavioral events into profile attributes and use them for segmentation, personalization, and journey logic in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Computed attributes summarize individual behavioral events into computed profile attributes available on Adobe Experience Platform. These attributes are based on Profile-enabled Experience Event datasets ingested into Adobe Experience Platform and serve as aggregated data points stored within customer profiles.
 
 Each computed attribute is a profile attribute that you can leverage for segmentation, personalization, and activation in journeys and campaigns. This simplification enhances the ability to deliver timely and meaningful personalized experiences to your customers.

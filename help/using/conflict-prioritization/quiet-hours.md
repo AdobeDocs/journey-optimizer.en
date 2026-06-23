@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Set quiet hours {#quiet-hours}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Define time-based exclusions for email, SMS, push, and WhatsApp so you can avoid messaging customers at the wrong times and respect their preferences and compliance requirements.
+
+>[!ENDSHADEBOX]
+
 ## What are quiet hours 
 
 **Quiet hours** let you define time-based exclusions for **Email**, **SMS**, **Push**, and **WhatsApp** channels. They ensure that no messages are sent during specific periods of time, helping you respect customer preferences and compliance requirements.

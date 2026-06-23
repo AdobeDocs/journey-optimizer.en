@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Experimentation journey report {#campaign-global-report-cja-experimentation}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the experimentation metrics in the journey report, including experiment KPIs, lift and confidence, and variant performance by success metric for your content and path experiments.
+
+>[!ENDSHADEBOX]
+
 Your Journey report gives you a complete view of how your experiment is performing, along with the key metrics you need to understand its impact.
 
 In Journey Optimizer, journey experimentation is divided into two types:

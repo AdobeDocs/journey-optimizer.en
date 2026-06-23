@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Attribute-based access control {#attribute-based-access}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Use attribute-based access control in Adobe Journey Optimizer to restrict sensitive schema fields, profile attributes, and audiences to authorized roles, so you can protect personal data and prevent unauthorized users from acting on it.
+
+>[!ENDSHADEBOX]
+
 The attribute-based access control capability allows you to define authorizations to manage data access for specific teams or groups of users. Its purpose is to protect sensitive digital assets from unauthorized users, providing further protection of personal data.
 
 Use the attribute-based access control in Adobe Journey Optimizer to protect data and grant specific access to specific field elements including Experience Data Model (XDM) schemas, Profile attributes, and audiences.

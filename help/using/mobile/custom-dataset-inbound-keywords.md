@@ -19,6 +19,12 @@ subfeature_v2:
 ---
 # Use a custom dataset for inbound keywords {#custom-dataset-inbound-keywords}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to store inbound SMS keywords in a profile-enabled custom dataset by creating an Adobe Experience Platform schema and dataset, then referencing them in your Adobe Journey Optimizer SMS API credentials.
+
+>[!ENDSHADEBOX]
+
 Inbound SMS keywords can be stored in a profile-enabled custom dataset. The configuration consists of an Adobe Experience Platform schema, a dataset created from that schema, and Journey Optimizer SMS API credentials that reference the dataset for inbound messages.  
 
 >[!NOTE]

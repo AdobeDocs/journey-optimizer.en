@@ -35,6 +35,12 @@ subfeature_v2:
 ---
 # Personalization use case: order status notification {#personalization-use-case}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Follow an order status use case that combines profile, offer decision, and contextual journey data to personalize a push notification in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 In this use case, you will see how to use multiple types of personalization in a single push notification message. Three types of personalization will be used:
 
 * **Profile**: message personalization based on a profile field

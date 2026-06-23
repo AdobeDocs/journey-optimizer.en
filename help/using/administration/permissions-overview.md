@@ -37,9 +37,15 @@ topic_v2:
 ---
 # Get started with access control {#permissions-overview}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get familiar with the core access control concepts in Journey Optimizer, including roles, permissions, sandboxes, and object- and attribute-based access control, so you can plan how to grant users the right access.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to define and manage the permissions assigned to different users. Permissions are a set of rights and restrictions that authorize or deny access to in-product features and capabilities. 
 
-Access control for [!DNL Journey Optimizer] is provided through **Permissions** in Adobe Experience Cloud. This functionality leverages roles and policies, which link users with permissions and sandboxes.
+Access control for [!DNL Journey Optimizer] is provided through **Permissions** in [!DNL Adobe CX Enterprise]. This functionality leverages roles and policies, which link users with permissions and sandboxes.
 
 In order to configure access control for Journey Optimizer, you must have system or product administrator privileges for your organization. The minimum role that can grant or withdraw permissions is a product administrator. Other administrator roles that can manage permissions are system administrators (no restrictions). See the [Adobe Help Center article](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} on administrative roles for more information.
 

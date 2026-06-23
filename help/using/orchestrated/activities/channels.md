@@ -23,6 +23,12 @@ topic_v2:
 ---
 # Channel activities {#channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add and configure email, SMS, push, and direct mail channel activities to send marketing or transactional messages within an Orchestrated campaign.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_email"
 >title="Email activity"
@@ -76,7 +82,7 @@ By using channel activities, you can create comprehensive and personalized campa
 
 * **Supported channels** - Only SMS, Push, Email and Direct mail channels are supported in Orchestrated campaigns.
 
-* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities (Email, SMS, Push, or Direct mail). Only channel activities count toward this limit; targeting and flow control activities do not.
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities (Email, SMS, Push, or Direct mail). Only channel activities count toward this limit, targeting and flow control activities do not.
 
     If you exceed the limit when saving or publishing, the operation fails. To stay within the limit, reduce the number of channel activities or split message delivery across multiple Orchestrated campaigns.
 
@@ -176,25 +182,11 @@ Switch to the **[!UICONTROL Content]** tab to create your message. The process s
 <td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Create a push notification</strong></a></td><td><a href="../../direct-mail/create-direct-mail.md"><img alt="direct mail" src="../../channels/assets/do-not-localize/direct-mail.jpg"></a><a href="../../direct-mail/create-direct-mail.md"><strong>Create a direct mail</strong></a></td>
 </tr></table>
 
-### Add personalization
+### Add personalization {#add-personalization}
 
-Personalization in Orchestrated campaigns works similarly to other [!DNL Journey Optimizer] campaigns or journeys, with a few key differences specific to the orchestrated canvas.
+From the message editor on a channel activity, insert **[!UICONTROL Profile attributes]** and **[!UICONTROL Target attributes]** from the campaign worktable (targeting dimension and enrichment data).
 
-When you access the personalization editor from an Orchestrated campaign, two main folders contain attributes available for personalization detailed below.
-
-* **[!UICONTROL Profile attributes]**
-
-    This folder includes all profile-related data from [!DNL Adobe Experience Platform]. These are standard attributes such as name, email address, location, or any other traits captured in the user profile.
-
-* **[!UICONTROL Target attributes]** (specific to Orchestrated campaigns)
-
-    This folder is unique to Orchestrated campaigns. It contains attributes calculated directly within the campaign canvas. It contains two subfolders:
-
-    * **`<Targeting dimension>`** (e.g., "Recipients", "Purchases"): Contains all attributes related to the dimension targeted by your campaign.
-    
-    * **`Enrichment`**: Includes data added via **[!UICONTROL Enrichment]** activities in your canvas. This allows you to personalize messages based on external datasets or additional logic incorporated during orchestration. [Learn how to use an Enrichment activity](../activities/enrichment.md)
-
-For a detailed overview of how to use the personalization editor, refer to [Get started with personalization](../../personalization/personalize.md).
+➡️ [Learn how to add personalization in Orchestrated campaigns](../add-personalization.md), including enrichment collection arrays, array functions, and `{{#each}}` iteration.
 
 ### Check and test your content {#simulate-content-test-profiles}
 

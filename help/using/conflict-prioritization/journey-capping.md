@@ -30,6 +30,12 @@ subfeature_v2:
 ---
 # Journey capping & arbitration {#journey-capping}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Limit how many journeys a profile can enter or be enrolled in at once so you can prevent communication overload and prioritize the most important journeys.
+
+>[!ENDSHADEBOX]
+
 Journey capping helps you limit the number of journeys a profile can be enrolled in, preventing communication overload. In Journey Optimizer, you can set two types of capping rules:
 
 * **Entry capping** limits the number of journey entries over a given period for a profile.

@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Subscription lists {#create-subscription-list}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Subscription lists gather the profiles who opt in to a newsletter, event, or interest, giving you an audience to target, message, and report on.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_subscription_list"
 >title="Set up a subscription list"

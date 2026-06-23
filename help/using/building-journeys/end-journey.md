@@ -35,6 +35,12 @@ topic_v2:
 ---
 # End a journey {#journey-ending}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how journeys end both for individual profiles and overall, and how to close or stop a live journey when you need to halt new entrances or all processing.
+
+>[!ENDSHADEBOX]
+
 >[!TIP]
 >
 >Looking for practical guidance on when and how profiles should exit journeys? See our [comprehensive guide to journey entry and exit criteria](entry-exit-criteria-guide.md), which includes real-world exit scenarios, best practices, and configuration guidance.
@@ -115,6 +121,8 @@ The definition of "finished" varies depending on the journey type:
 
 Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Profiles already in the journey can finish the journey normally. After the default global timeout of 91 days, the journey will switch to the **Finished** status. 
 
+You can stop a journey from the **Live** or **Paused** state. When the journey is **Paused**, you do not need to resume it to **Live** first. [Learn more about stopping a paused journey](journey-pause.md#stop-close-paused).
+
 To close a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Close to new entrances]**.
 
 ![Finish action dropdown in quick actions menu for ending journey](assets/journey-finish-quick-action.png)
@@ -132,6 +140,8 @@ You can also:
 ## Stop a journey {#stop-journey}
 
 In case you need to stop the progress of all individuals in the journey, you can stop it. Stopping the journey timeout all individuals in the journey. However, stopping a journey involves that people who already entered a journey are all stopped in their progress. The journey is basically switched off. If you want to end to a journey, best practice is [to close it](#close-journey). 
+
+You can also stop a **Paused** journey directly, without resuming it to **Live** first. [Learn more](journey-pause.md#stop-close-paused).
 
 You can stop a journey, for example, if a marketer realizes that the journey targets the wrong audience or a custom action supposed to deliver messages is not working correctly. To stop a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Stop]**.
 
@@ -158,3 +168,4 @@ When stopped, the journey status is set to **[!UICONTROL Stopped]**.
 * [Profile entrance management](entry-management.md) - Configure how profiles enter journeys
 * [Configure exit criteria](journey-properties.md#exit-criteria) - Set up automatic profile removal from journeys
 * [Pause a journey](journey-pause.md) - Temporarily halt journey execution
+* [Stop or close a paused journey](journey-pause.md#stop-close-paused) - End a paused journey without resuming it first

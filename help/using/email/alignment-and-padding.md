@@ -34,6 +34,12 @@ level_v2:
 ---
 # Adjust vertical alignment & padding {#alignment-and-padding}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to adjust the vertical alignment and padding of columns and structures in the Email Designer, including how to fix residual fragment padding for correct mobile rendering.
+
+>[!ENDSHADEBOX]
+
 In this example, we will adjust padding and vertical alignment inside a structure component composed of three columns.
 
 1. Select the structure component directly in the email or using the **[!UICONTROL Navigation tree]** available in the left-hand menu.

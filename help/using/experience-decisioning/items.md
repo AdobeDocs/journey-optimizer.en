@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Create your first decision item {#items}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create and manage decision items, including their attributes, eligibility, and capping rules, so you can present the right marketing offers to the right profiles.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_exd_items"
 >title="Manage decision items"
@@ -70,7 +76,7 @@ Start by defining the decision item's standard and custom attributes :
 
         >[!AVAILABILITY]
         >
-        >This feature is available in Limited Availability for outbound channels with Decisioning support. To request access, contact your Adobe representative.
+        >This feature is available for channels with Decisioning support.
 
         For prerequisites and guardrails, refer to [Use AEM Content Fragments with Experience Decisioning](../integrations/aem-fragments.md#aem-decisioning).
 

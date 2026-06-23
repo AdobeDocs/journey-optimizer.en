@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore the Adobe Journey Optimizer journey report in Customer Journey Analytics to analyze journey KPIs, statistics, exclusions, action and event performance, and the journey canvas.
+
+>[!ENDSHADEBOX]
+
 The **Journey report** functions as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your journey. This encompasses details such as the count of entered profiles and instances of failed individual journeys, offering a comprehensive insight into your journey's effectiveness and level of engagement.
 
 **Journey report** can be accessed directly from your journey with the **[!UICONTROL View report]** button. 

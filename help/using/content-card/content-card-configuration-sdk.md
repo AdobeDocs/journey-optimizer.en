@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Configure content cards support in Web SDK {#content-card-configuration-sdk}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up and run the sample that fetches and renders content cards with the Adobe Experience Platform Web SDK so you can deliver client-side personalized content on your web pages.
+
+>[!ENDSHADEBOX]
+
 This sample showcases how to retrieve Content Cards from Adobe Journey Optimizer (AJO) using Adobe Experience Platform. By leveraging the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home), the personalization content is fetched and rendered entirely on the client side.
 
 Upon the initial page load, the page displays its default state. However, if you interact with the **Deposit Funds** or **Share on social media** buttons, additional content cards will appear. These cards are triggered by client-side conditions, ensuring they are displayed only when specific actions are taken.

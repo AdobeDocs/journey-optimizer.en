@@ -19,6 +19,12 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Analyze content card metrics such as displays, clicks, and tracked links so you can measure engagement and improve your campaign's effectiveness.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 **Table of content**
 
 * [Get started with content cards](../../rp_landing_pages/content-card-landing-page.md)

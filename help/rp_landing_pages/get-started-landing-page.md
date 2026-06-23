@@ -2,17 +2,17 @@
 solution: Journey Optimizer
 product: Journey Optimizer
 title: Get started
-description: Get started with Adobe Journey Optimizer
+description: Start here — everything you need to get up and running with Adobe Journey Optimizer.
+role: User, Admin, Developer
+level: Beginner
 redpen-status: CREATED_||_2025-08-11_20-05-24
 exl-id: fee218bf-8c60-442d-ac41-a3856fc71b70
 ---
-# Get Started with Adobe Journey Optimizer{#get-started}
+# Get started with Adobe Journey Optimizer{#get-started}
 
-Adobe Journey Optimizer empowers you to deliver personalized, real-time customer experiences across every channel — from a single application, at scale. The result is meaningful brand experiences that boost customer loyalty and lifetime value.
+Whether you are new to Journey Optimizer or returning to explore a new capability, this page is your starting point. Choose the path that fits your role and goal.
 
-Whether you're new to Journey Optimizer or an experienced user looking to expand your skills, this section provides everything you need to get started quickly and effectively.
-
-## Start with the Essentials {#essentials}
+## New to Journey Optimizer? {#essentials}
 
 Learn the fundamentals of Adobe Journey Optimizer and how it enables data-driven personalization at scale.
 
@@ -108,6 +108,62 @@ Integrate mobile apps, implement web SDKs, configure events, and build custom in
 
 [See all roles and responsibilities →](../using/start/quick-start.md)
 
+## Explore use cases {#explore-use-cases}
+
+Not sure where to start? Find the capability that matches your goal.
+
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
+
+Find the right capability for your goal
+
+Browse use cases by business goal and jump to the recommended Journey Optimizer capability.
+
+[Explore use cases](../using/start/ajo-use-case-guide.md)
+:::
+
+::::
+
+## Already onboarded? {#already-onboarded}
+
+Jump straight to the areas where you do your day-to-day work.
+
+:::: landing-cards-container
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
+
+Journeys
+
+[Design journeys and send messages](../using/building-journeys/journey-gs.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/bullhorn.svg)
+
+Campaigns
+
+[Get started with campaigns](../using/campaigns/get-started-with-campaigns.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
+
+Content management
+
+[Design your content](content-management-landing-page.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/chart-line.svg)
+
+Reporting
+
+[Monitor performance with live reports](../using/reports/live-report.md)
+:::
+
+::::
+
 ## Work Efficiently {#work-efficiently}
 
 Master the interface and leverage intelligent features to accelerate your work.
@@ -162,15 +218,6 @@ Find answers to frequently asked questions and solutions to common problems acro
 * **[Community Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}** - Connect with other users, ask questions, and share best practices
 * **[Documentation Updates](../using/rn/documentation-updates.md)** - Stay informed about recent changes and additions to the documentation
 
-## Ready to get started?
-
-Choose the path that's right for you:
-
-* **New to Journey Optimizer?** Start with [What is Journey Optimizer?](../using/start/get-started.md) to understand the basics
-* **Know your role?** Jump to the [role-specific guide](../using/start/quick-start.md) that matches your responsibilities
-* **Want to explore?** Browse the [AI features](../using/start/ai-features.md) or try [Use Case Playbooks](../using/start/ai-features.md#playbooks)
-* **Need help?** Check the [Troubleshooting Guide](../using/start/troubleshooting.md) or visit the [Community Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
-
 ## Quick Links {#quick-links}
 
 Start creating right away with these essential guides:
@@ -187,3 +234,7 @@ Start creating right away with these essential guides:
 >[!NOTE]
 >
 >Components and capabilities available in your environment depend on your [permissions](../using/administration/permissions.md) and [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. Contact your Adobe Customer Success Manager for questions about your specific setup.
+
+## Looking for the implementation sequence?
+
+If your team is setting up Journey Optimizer for the first time, see [Roles and responsibilities](../using/start/quick-start.md) for the recommended order of operations across all roles.

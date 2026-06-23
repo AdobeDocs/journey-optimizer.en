@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Subdomain delegation in [!DNL Journey Optimizer] {#subdomain-delegation}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn why and how to set up email sending subdomains in Adobe Journey Optimizer, comparing the full delegation, CNAME, and custom delegation methods to protect your domain reputation and deliverability.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_delegated_subdomains"
 >title="Your delegated subdomains display here."

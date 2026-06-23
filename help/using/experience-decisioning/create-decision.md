@@ -32,6 +32,12 @@ subfeature_v2:
 ---
 # Get started with decision policies {#create-decision}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how decision policies use the Decisioning engine, along with their guardrails and key steps, so you can deliver the best offers to each audience member.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_decision"
 >title="What is a decision?"

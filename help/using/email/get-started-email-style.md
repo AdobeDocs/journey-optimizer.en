@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Get started with email style {#get-started-email-style}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to adjust the style of your email content from the Email Designer Styles pane, applying settings such as colors, fonts, borders, margins, and padding to the body, structure, or content components.
+
+>[!ENDSHADEBOX]
+
 Once you started creating your email content in [!DNL Journey Optimizer], you can adjust a number of styling parameters and attributes from the Email Designer **[!UICONTROL Styles]** pane.
 
 You can either apply your changes to the email body, to a structure component or to a content component.

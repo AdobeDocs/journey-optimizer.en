@@ -28,6 +28,12 @@ subfeature_v2:
 ---
 # Ranking methods {#rankings}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create ranking methods, either formulas or AI models, and assign them to a selection strategy, so the decisioning engine knows which eligible items to present first for each profile.
+
+>[!ENDSHADEBOX]
+
 Ranking methods allow you to rank items to display for a given profile. Once a ranking method has been created, you can assign it to a selection strategy to define which items should be selected first.
 
 Two types of ranking methods are available:

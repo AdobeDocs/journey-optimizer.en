@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Design content cards content {#design-content-card}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Design and personalize your content card's layout, text, media, buttons, and dismiss behavior so you can deliver an engaging, on-brand message to your audience.
+
+>[!ENDSHADEBOX]
+
 The authoring construct for Cards provides a form-based authoring experience that provides marketers with basic inputs that can be rendered by developers.
 
 Once your content is defined and personalized, you can review and activate it. Your campaign will be sent according to the set schedule. [Learn more on this page](../campaigns/review-activate-campaign.md).

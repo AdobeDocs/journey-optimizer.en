@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Create a push notification {#create-push-notification}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a push notification within a journey or campaign for mobile and web, including using rapid delivery mode for high-volume sending.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_action_push"
 >title="Push notification action"

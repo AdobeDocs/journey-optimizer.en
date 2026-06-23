@@ -46,6 +46,12 @@ topic_v2:
 ---
 # DMARC record {#dmarc-record}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn what DMARC is, how its policies work, and how to set up and manage DMARC records for your delegated subdomains directly in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_dmarc_record"
 >title="Set DMARC record"

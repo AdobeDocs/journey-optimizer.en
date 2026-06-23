@@ -45,6 +45,12 @@ topic_v2:
 ---
 # Create multilingual content with automated translation {#multilingual-automated}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create multilingual content with automated translation by setting up a translation project and language settings, then sending your campaign or journey content to a translation provider for review and publishing.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_multi_add_provider"
 >title="Add provider"

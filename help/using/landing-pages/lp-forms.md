@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Use forms in your landing pages {#lp-forms}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build forms and embed them in Data Capture landing pages to collect profile attributes from visitors and write the submissions to your Experience Platform datasets.
+
+>[!ENDSHADEBOX]
+
 To capture profile data with your [!DNL Journey Optimizer] landing pages and enrich your [!DNL Experience Platform] datasets, you can leverage forms in your landing pages. For an overview of data capture scenarios and requirements, see [Data capture with landing pages](get-started-lp.md#data-capture-lp).
 
 ## Create a form preset {#create-form-preset}

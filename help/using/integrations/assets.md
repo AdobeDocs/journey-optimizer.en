@@ -39,6 +39,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Learn how to use Experience Manager Assets in Adobe Journey Optimizer to store, manage, and insert digital assets into your email content.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 The existing **Asset Selector** and **Content Fragment selector** experiences in Adobe Journey Optimizer workflows are being replaced by **Content Advisor**. Content Advisor provides an AI-powered, unified interface for discovering and selecting Assets, Content Fragments, and Dynamic Media directly within your AJO authoring workflows. Existing integrations will continue to work during the transition period.
 
 >[!ENDSHADEBOX]
