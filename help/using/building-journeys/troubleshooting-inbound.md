@@ -244,7 +244,11 @@ Go through the same debugging steps as for [Scenario 1](#debugging-steps) to che
 - [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html)
 -->
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page provides a step-by-step self-service debugging guide for two inbound action scenarios in Adobe Journey Optimizer journeys: a profile entering an inbound step but not receiving the content, and a profile continuing to receive content after exiting the journey.
 

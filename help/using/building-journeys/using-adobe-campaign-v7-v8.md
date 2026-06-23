@@ -73,7 +73,11 @@ An end-to-end use case is presented in this [section](../building-journeys/ajo-a
 
 ![[!DNL Adobe Campaign] v7/v8 action configuration and integration settings](assets/accintegration2.png)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to use Adobe Campaign v7/v8 as an action in Journey Optimizer journeys to send emails, push notifications, and SMS via Campaign Transactional Messaging.
 

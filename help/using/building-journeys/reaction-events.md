@@ -83,7 +83,11 @@ Follow these steps to configure the reaction events:
 * Reaction events track clicks on links of the type "tracked". Unsubscription and mirror page links are not taken into account.
 * Email opens are tracked using a 0-pixel image included in the email. If email clients (such as Gmail) block images, email opens will not be taken into account.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to use the built-in Reaction event activity in Adobe Journey Optimizer to branch journey paths based on real-time message engagement data such as email opens and link clicks.
 

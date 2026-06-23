@@ -197,7 +197,11 @@ If you encounter persistent errors that cannot be resolved using this guide:
 * [Demystifying [!DNL Adobe Journey Optimizer] Error Codes: Part 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884){target="_blank"}
 * [Demystifying [!DNL Adobe Journey Optimizer] Error Codes: Part 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661){target="_blank"}
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page is a reference guide to standardized Adobe Journey Optimizer error codes organized by service prefix, explaining each error's root cause and providing step-by-step resolution guidance.
 

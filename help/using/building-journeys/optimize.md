@@ -97,7 +97,11 @@ Select the optimization method that best fits your use case:
 * Want to send different audiences down specific paths? → Go to [Path targeting](path-targeting.md)
 * Want to create conditional logic (if/then scenarios)? → Go to [Conditions](conditions.md)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page introduces the Optimize activity, the replacement for the former Condition activity, which lets users create multiple journey paths using experimentation, targeting rules, or conditional logic.
 

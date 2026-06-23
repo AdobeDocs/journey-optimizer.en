@@ -177,7 +177,11 @@ Learn how to publish a journey in this video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to publish an Adobe Journey Optimizer journey, manage journey versions, and understand the constraints that apply once a journey is live.
 

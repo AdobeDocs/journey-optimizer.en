@@ -173,7 +173,11 @@ Connect the sub-journeys using the [**[!UICONTROL Jump]**](jump.md) activity so 
 >If your goal is to build a gamified loyalty program with challenges, tasks, and built-in reward tracking, Journey Optimizer also offers a dedicated **Loyalty Challenges** capability.
 -->
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page presents two practical journey use cases: a multi-channel message flow combining Read Audience, reaction events, email, and push; and a multi-phase loyalty journey pattern using the Jump activity to decompose complex journeys into manageable sub-journeys.
 

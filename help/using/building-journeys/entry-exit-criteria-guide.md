@@ -251,7 +251,11 @@ Start by clearly mapping your customer triggers and exit points, test thoroughly
 
 [Audience qualification events](audience-qualification-events.md) | [Success metrics and goals](success-metrics.md) | [Conflict management](../conflict-prioritization/conflicts.md) | [Frequency capping](../conflict-prioritization/rule-sets.md) | [Testing journeys](testing-the-journey.md) | [Optimize activity](optimize.md) | [Reaction events](reaction-events.md) | [Wait activity](wait-activity.md)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This guide explains how to define, configure, and optimize journey entry and exit criteria in Adobe Journey Optimizer, with real-world examples and best practices to ensure the right profiles are reached at the right time.
 

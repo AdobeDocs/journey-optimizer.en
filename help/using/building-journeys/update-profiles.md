@@ -119,7 +119,11 @@ For more information on how to turn an existing profile into a test profile, ref
 * Up to five field/value pairs can be updated in a single **[!UICONTROL Update Profile]** action. Use the **[!UICONTROL Update another field]** button to add more pairs.
 * For better performance, group multiple attribute updates into a single **[!UICONTROL Update Profile]** action rather than using one action per attribute.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to configure the Update Profile activity to enrich or correct an existing Adobe Experience Platform profile with data from journey events, datasources, or static values as a customer progresses through a journey.
 

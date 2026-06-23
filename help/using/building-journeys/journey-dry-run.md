@@ -225,7 +225,11 @@ Learn how to dry run your journeys in this video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464681/?learn=on&enablevpops)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains Journey Dry run, a special publication mode that lets practitioners test a journey using real production data without contacting customers or modifying profiles, and covers how to start, monitor, stop, and filter Dry run step events.
 

@@ -159,7 +159,11 @@ After 91 days, a Read audience journey switches to the **Finished** status. This
 * [End a journey](end-journey.md) - Understand how journeys close and finish
 * [Journey use cases](jo-use-cases.md) - See complete examples with entry and exit configurations
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how profile entry management works across the four journey types in Adobe Journey Optimizer, including throughput limits, reentrance settings, and the behavior of Wait and action activities on processing rate.
 

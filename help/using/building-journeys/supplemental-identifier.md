@@ -334,7 +334,11 @@ Learn how to enable and apply a supplemental identifier in [!DNL Adobe Journey O
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to use supplemental identifiers in Adobe Journey Optimizer journeys to allow a single profile to have multiple concurrent journey instances, each scoped to a distinct secondary ID such as a booking, subscription, or policy ID.
 

@@ -169,7 +169,11 @@ When stopped, the journey status is set to **[!UICONTROL Stopped]**.
 * [Configure exit criteria](journey-properties.md#exit-criteria) - Set up automatic profile removal from journeys
 * [Pause a journey](journey-pause.md) - Temporarily halt journey execution
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains the different ways a live journey can end — including the global 91-day timeout, manual closure to new entrances, and emergency stop — along with their effects on in-progress profiles.
 

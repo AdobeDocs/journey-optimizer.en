@@ -365,7 +365,11 @@ Instead of using the built-in message capabilities, you can use custom actions t
    * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
    * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to use the unified Action activity in the journey canvas to configure built-in channel actions (email, push, SMS, in-app, web, content card, code-based experience), build multi-inbound-action groups, and apply optimization or multilingual settings.
 

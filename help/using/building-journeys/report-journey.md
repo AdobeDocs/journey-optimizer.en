@@ -95,7 +95,11 @@ If issues persist after verifying these items, contact your Adobe administrator 
 >* [Configure and track your journey metrics](success-metrics.md)
 >* [Custom journey reports](../reports/sharing-overview.md)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to view and interpret the live report embedded in the journey canvas, covering the key profile flow metrics available for published journeys and journeys in Dry run mode.
 

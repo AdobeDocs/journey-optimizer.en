@@ -297,7 +297,11 @@ Discover the components of a journey and understand the basics of building a jou
 * **[Journey Tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Learn journey building through hands-on video tutorials
 * **[Journey guardrails & limitations](../start/guardrails.md)** - Check guardrails and limitations when using [!DNL Adobe Journey Optimizer]
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This is the comprehensive getting-started guide for journey orchestration in Adobe Journey Optimizer, covering key capabilities (real-time and batch delivery, contextual data, built-in and custom actions, the visual designer, Journey Fragments, and testing), common use cases, and links to all major learning resources.
 

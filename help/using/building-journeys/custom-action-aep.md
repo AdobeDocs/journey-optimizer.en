@@ -204,7 +204,11 @@ For this example, follow these steps:
 
     ![Advanced mode editor for complex field mapping](assets/custom-action-aep-9.png)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 - **TL;DR:** This use case explains how to configure a custom action in Journey Optimizer that writes journey event data into Adobe Experience Platform using an HTTP API inlet and OAuth Server-to-Server authenticated calls.
 

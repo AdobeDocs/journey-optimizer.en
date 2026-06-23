@@ -256,7 +256,11 @@ If tracking URLs in sent emails contain empty placeholders such as `cid=em-acou-
 
 To resolve this, either republish the journey ([create a new version and publish it](publish-journey.md#journey-create-new-version)), or remove the reference to the affected context field from the [URL tracking parameters](../email/url-tracking.md) in the channel configuration or email content.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page is a comprehensive troubleshooting reference for live journey execution in Adobe Journey Optimizer, covering event delivery, profile entry failures, test mode transition issues, discarded events, duplicate step event logs, message delivery checks, and dashboard metric discrepancies.
 

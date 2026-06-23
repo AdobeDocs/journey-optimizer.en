@@ -263,7 +263,11 @@ For each content decision activity, the step event includes decisioning data at 
 }
 ```
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to configure and use the Content Decision activity in Journey Optimizer journeys to retrieve personalized offers via a decision policy and route or forward them using conditions and custom actions.
 
