@@ -267,7 +267,7 @@ For complete understanding, this information should be combined with the documen
 * Only strings or lists of strings are supported as lookup keys.
 * The lookup key must be defined in advanced mode; using simple mode causes the activity output to be unavailable as a context attribute downstream.
 * Enriched data is transient and available only during journey runtime and in outbound activity personalization.
-* For performance, up to 5 lookup activities per journey and up to 20 attributes per lookup are recommended.
+* For best performance, limit to 5 lookup activities per journey (recommended); the hard limit enforced by the system is 10 activities per journey. Up to 20 attributes per lookup are also recommended.
 
 **Terminology:**
 

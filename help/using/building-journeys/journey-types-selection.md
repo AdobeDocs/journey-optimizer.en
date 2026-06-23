@@ -223,6 +223,7 @@ For complete understanding, this information should be combined with the documen
 * Audience Qualification and Read Audience journeys cannot contain a Jump activity, and cannot be the target of a Jump activity from another journey
 * Audience Qualification journeys require a streaming-evaluated audience for real-time entry; batch-evaluated audiences cause entry delays of up to 24 hours
 * Unitary event and Audience Qualification journeys share a 5,000 TPS throughput limit at the organization level; Read Audience journeys support up to 20,000 TPS per sandbox
+* Simulation is supported for most journey types but not Business event entry; see Simulation limitations for node-level restrictions
 * A profile already present in a journey cannot re-enter the same version of that journey, regardless of re-entrance configuration
 
 **Terminology:**

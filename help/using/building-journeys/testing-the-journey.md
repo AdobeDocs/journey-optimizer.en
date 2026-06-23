@@ -85,7 +85,7 @@ Review these notes before running tests in your journey.
 
 * **Disabling test mode** - When you disable test mode, all profiles currently in or previously entered in the journey are removed, and reporting is cleared.  
 * **Reactivation flexibility** - You can enable and disable test mode as many times as needed.  
-* **Automatic deactivation** -  Journeys that remain inactive in test mode for **over a week** automatically revert to Draft status to optimize performance and prevent obsolete resource usage.
+* **Automatic deactivation** — Journeys that remain inactive in test mode for **over a week** automatically exit test mode and return to Draft status. No journey content is lost; only the test mode session ends.
 * **Editing and publishing** -  While test mode is active, you cannot modify the journey. You can, however, directly publish the journey, no need to deactivate the test mode before.  
 
 ### Execution
@@ -283,7 +283,9 @@ For complete understanding, this information should be combined with the documen
 * Maximum 100 test profiles per single test session
 * Events can only be triggered from the test mode UI; external API triggering is not supported
 * Custom upload audience attribute enrichment is not supported in test mode
-* Journeys inactive in test mode for over a week automatically revert to Draft status
+* Events triggered in Test mode generate real experience events that can also trigger other journeys listening to the same event
+* In Test mode, Wait activities and most event timeouts default to 10 seconds; Reaction event timeouts default to a minimum of 40 seconds
+* Automatic deactivation — Journeys that remain inactive in test mode for over a week automatically exit test mode and return to Draft status. No journey content is lost; only the test mode session ends.
 * Journey edits are blocked while test mode is active, but direct publishing is allowed
 * At a split, the top branch is always selected; reorder branches to test different paths
 * Reaction event timeout minimum and default wait time is 40 seconds

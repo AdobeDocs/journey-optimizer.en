@@ -328,8 +328,9 @@ For complete understanding, this information should be combined with the documen
 * **Bulk pause / Bulk resume**: The ability to pause or resume multiple live or paused journeys simultaneously from the journey inventory list *(product-specific)*
 
 **Guardrails:**
-* Only users with the **Publish journeys** permission can pause and resume journeys
-* A journey can be paused for a maximum of 14 days; after that it automatically resumes
+* Only users with the **Publish journeys** permission can pause and resume journeys; stopping a paused journey requires **Manage journeys** (and **Campaigns > Publish Campaigns** if inline campaigns or messaging nodes are present)
+* Pause duration is configurable from 1 to 14 days; after that the journey auto-resumes
+* Profiles held during pause resume at up to 5,000 TPS; the journey remains in Resuming until all held profiles have resumed
 * Maximum of 10 million profiles can be held across all paused journeys in an organisation; excess profiles are automatically discarded
 * Only one Profile Attribute-based exit criteria can be set per journey
 * Profile Attribute-based exit criteria can only be created, updated, or deleted while the journey is paused
@@ -347,7 +348,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 * **Q: What happens to profiles already in a journey when it is paused?** — Depending on the option chosen at pause time, profiles are either held (waiting at the next action node) or discarded (exited from the journey at the next action node).
-* **Q: How long can a journey remain paused?** — A maximum of 14 days; after that it automatically resumes.
+* **Q: How long can a journey remain paused?** — Between 1 and 14 days (chosen at pause time); after that it automatically resumes.
 * **Q: Can I exclude certain profiles while a journey is paused?** — Yes; apply a Profile Attribute-based exit criteria (one per journey) while the journey is paused to exclude matching profiles at the next action node upon resume.
 * **Q: Does pausing a journey stop in-app or web messages already triggered?** — No; inbound communications already triggered before the pause continue to be delivered. To stop all inbound communications, you must stop the journey entirely.
 * **Q: How do I find out which profiles were discarded during a pause?** — Query the `journey_step_events` dataset in Adobe Experience Platform Query Service using the `PAUSED_JOURNEY_VERSION` or `JOURNEY_IN_PAUSED_STATE` event type filters with the journey version ID.
