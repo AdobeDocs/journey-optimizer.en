@@ -64,7 +64,7 @@ topic_v2:
 
 **Perfect for:** Order confirmations after purchase, welcome emails when someone subscribes, password reset notifications, and post-login personalization.
 
-➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md)
+➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md) | [Build a Unitary event journey](#build-unitary-event)
 
 >[!TAB Read Audience journeys]
 
@@ -74,7 +74,7 @@ topic_v2:
 
 **Perfect for:** Monthly newsletters, promotional campaigns to target segments, product announcements, recurring re-engagement series, and seasonal marketing campaigns.
 
-➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md)
+➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md) | [Build a Read Audience journey](#build-read-audience)
 
 >[!TAB Audience Qualification journeys]
 
@@ -84,7 +84,7 @@ topic_v2:
 
 **Perfect for:** VIP tier upgrade notifications, first purchase celebration messages, churn risk alerts, and loyalty lifecycle stage transitions.
 
-➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md)
+➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md) | [Build an Audience Qualification journey](#build-audience-qualification)
 
 >[!TAB Business event journeys]
 
@@ -94,7 +94,7 @@ topic_v2:
 
 **Perfect for:** Low inventory alerts to interested customers, flash sale announcements, price drop notifications, and product back-in-stock alerts.
 
-➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md)
+➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md) | [Build a Business event journey](#build-business-event)
 
 >[!ENDTABS]
 
@@ -178,7 +178,9 @@ Not all features are available for all journey types. Use this matrix to underst
 
 ## Next steps {#next-steps}
 
-Now that you understand journey types, you're ready to:
+Each table lists configure-through-manage steps for that journey type.
+
+### Unitary event journeys {#build-unitary-event}
 
 * **[Create your first journey](journey-gs.md)** - Step-by-step guide
 * **[Learn about the journey designer](using-the-journey-designer.md)** - Design your journey canvas
