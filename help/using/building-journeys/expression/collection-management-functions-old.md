@@ -258,7 +258,11 @@ This expression retrieves the name of the last product in the product list of a 
 currentDataPackField.eventType == "commerce.productListAdds").productListItems.last(currentDataPackField.priceTotal >= 150).name}
 ```
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains the collection management functions `all()`, `first()`, `last()`, and `at()` available in the Journey expression language, with examples using push notification token payloads and experience event data.
 

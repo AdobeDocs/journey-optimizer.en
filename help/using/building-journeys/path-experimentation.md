@@ -208,7 +208,11 @@ To manually scale the winner of your experiments:
 
 Note that scaling the treatment may take up to one hour. You will receive a notification once the manual scaling process is finished.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to configure and run path experimentation in Adobe Journey Optimizer journeys using A/B or Multi-armed bandit methods, and how to scale the winning treatment automatically or manually.
 

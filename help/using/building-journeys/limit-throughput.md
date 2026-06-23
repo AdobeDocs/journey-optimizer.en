@@ -107,7 +107,11 @@ As an additional guardrail, you can also use Capping capabilities.
 >
 >Unlike Capping capabilities, which protect an endpoint by being global to all journeys of a sandbox, this workaround works only at journey level. This means that if multiple journeys are running in parallel and are targeting the same endpoint, you will need to take that into account while designing your journey. This workaround is therefore not suitable for every use case.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to limit journey throughput when external data sources or custom actions have a capped number of requests per second, using Read Audience rate configuration, percentage splits, and wait activities.
 

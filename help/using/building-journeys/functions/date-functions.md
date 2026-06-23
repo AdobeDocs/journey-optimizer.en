@@ -570,7 +570,11 @@ If the value of the timestamp field is `2021-11-16T16:55:12.939318+01:00`, then 
 
 +++
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page documents all date and time functions available in AJO journey expressions, covering how to get the current time, check whether a date falls within a relative time window, and modify date/time components.
 

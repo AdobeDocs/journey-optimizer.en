@@ -75,7 +75,11 @@ You can choose from one of these two solutions:
 
 * Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page lists the hard technical limitations that apply to journey actions, journey versions, custom actions, events, reaction events, data sources, and audience reading in Adobe Journey Optimizer.
 

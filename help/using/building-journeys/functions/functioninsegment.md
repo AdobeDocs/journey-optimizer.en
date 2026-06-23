@@ -62,7 +62,11 @@ Explanation:
 
 The function will return **[!UICONTROL true]** if the individual within the journey instance is part of the Adobe Experience Platform audience named "men over 50", **[!UICONTROL false]** otherwise.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page documents the legacy `inSegment` function, which checks whether a journey profile belongs to a named Adobe Experience Platform audience and returns a boolean.
 

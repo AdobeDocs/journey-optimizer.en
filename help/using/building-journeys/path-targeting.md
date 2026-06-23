@@ -141,7 +141,11 @@ Customers who have recently purchased can go into a short "Thank you + Cross-sel
 
 +++
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 - **TL;DR:** This page explains how to use path targeting in Adobe Journey Optimizer journeys to deterministically route specific audience segments into designated journey paths based on defined rules.
 

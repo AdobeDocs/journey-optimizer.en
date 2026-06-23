@@ -183,7 +183,11 @@ This expression returns the second push notification token of the list.
 
 The result is `token_2`.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page documents the `all()`, `first()`, `last()`, and `at()` collection management functions used in the Journey advanced expression editor, illustrated with push notification token payload examples.
 

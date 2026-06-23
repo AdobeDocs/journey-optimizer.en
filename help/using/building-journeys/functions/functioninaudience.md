@@ -140,7 +140,11 @@ Learn more about using audiences in Adobe Journey Optimizer:
 * **[Using audiences in conditions](../conditions.md#using-a-segment)** - Create conditional journey paths based on audience membership using the Optimize activity
 * **[Journey properties - Merge policies](../journey-properties.md)** - Understand how merge policies work when using multiple audiences with the inAudience function
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page documents the `inAudience` function, which checks in real-time whether a journey profile belongs to a named Adobe Experience Platform audience and returns a boolean used in journey conditions.
 

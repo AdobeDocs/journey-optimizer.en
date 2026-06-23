@@ -346,7 +346,11 @@ Polymorphism is not supported, hence all the expressions contained in the list s
 [toDuration(500),toDuration(800)]
 ```
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page describes every data type supported in the Journey advanced expression editor — string, integer, decimal, boolean, dateOnly, dateTimeOnly, dateTime, duration, and list — with their JSON formats, serialization rules, and literal representation syntax.
 

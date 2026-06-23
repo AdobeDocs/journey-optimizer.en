@@ -254,7 +254,11 @@ When an event is triggered using the test mode, a dataset is automatically gener
 
 The test mode automatically creates an Experience Event and sends it to [!DNL Adobe Experience Platform]. The name of the source for this experience Event is "Journey Orchestration Test Events".
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to use Test mode in Adobe Journey Optimizer to validate a journey with persistent test profiles before publishing, including activating test mode, triggering events, reading logs, and handling business and rule-based events.
 

@@ -184,7 +184,11 @@ Here are the steps to copy/paste activities:
 1. In any journey, press **Ctrl/Command + V** to paste the activities without linking them to an existing node. Pasted activities are placed in the same order. After being pasted, activities stay selected so you can easily move them. You can also place the cursor on an empty place holder and hit **Ctrl/Command + V**. Pasted activities will be linked to the node. 
     ![Pasted activities in journey canvas ready to be connected](assets/copy-paste3.png)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page introduces the Journey Optimizer journey designer canvas, explaining how to build multi-step journeys by dragging and dropping events, orchestration, and action activities from the palette.
 

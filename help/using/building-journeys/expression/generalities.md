@@ -56,7 +56,11 @@ Depending on the context of use, the expression editor can return different valu
 |Custom timer|dateTimeOnly|
 |Action parameters mapping|Any|
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page covers the core syntax rules of the Journey advanced expression editor — operator precedence with parentheses, case sensitivity for operators and functions, and the expected return type for each editor context.
 

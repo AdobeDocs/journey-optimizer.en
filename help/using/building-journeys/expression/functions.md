@@ -196,7 +196,11 @@ Now that you understand the available functions, explore:
 * **[Operators](operators.md)** - Discover operators you can use with functions to build logic
 * **[Field references](field-references.md)** - Understand how to reference data fields in your expressions
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page is a categorized reference of all 60+ built-in functions available in the Journey advanced expression editor, covering aggregation, conversion, date/time, list, math, string, and Adobe Experience Platform audience functions.
 

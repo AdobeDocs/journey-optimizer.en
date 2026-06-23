@@ -90,7 +90,11 @@ When a **[!UICONTROL Wait]** activity uses a custom date, you define when the pr
 * [Work with the advanced expression editor](expressionadvanced.md) — Overview of the expression editor interface and supported syntax.
 * [Get started with AI Assistant in Journey Optimizer](../../content-management/gs-generative.md) — General guardrails, access, and setup for generative AI features.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains the Expression Assistant, an AI-powered feature in the Journey advanced expression editor that generates valid journey expressions from plain language prompts.
 

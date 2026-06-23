@@ -146,7 +146,11 @@ You also need to define the **[!UICONTROL Registration Token]**. The expression 
 
 These are the fields expected by the transactional template used in your [!DNL Adobe Campaign] Standard message. These fields can be used to personalize your message, apply conditional formatting, or pick a specific message variant.
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to use the built-in Adobe Campaign Standard Email, SMS, and Push action activities in Journey Optimizer journeys via Campaign Transactional Messaging templates.
 

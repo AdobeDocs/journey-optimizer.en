@@ -194,7 +194,11 @@ If your use case cannot be solved using one of the alternative approaches listed
 
 +++
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page outlines alternative patterns and best practices for using Experience Event data in Adobe Journey Optimizer journeys, in the context of the deprecation of direct experience event lookup in the journey expression editor.
 

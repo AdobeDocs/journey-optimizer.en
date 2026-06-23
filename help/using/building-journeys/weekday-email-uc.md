@@ -221,7 +221,11 @@ Once testing is complete:
 * [Expression editor](expression/expressionadvanced.md) - Build complex expressions
 * [Journey best practices](journey-gs.md#best-practices) - Recommended approaches for journey design
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page provides a step-by-step use case for configuring a journey that sends emails only on weekdays by using a day-of-week condition and custom Wait formulas to delay weekend entries until Monday.
 

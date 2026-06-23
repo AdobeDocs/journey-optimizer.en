@@ -131,7 +131,11 @@ To begin tracking your journey metrics, follow the steps outlined below:
 
     ![Success metrics dropdown showing available events for goal tracking](assets/success_metric_2.png)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page explains how to configure and track journey success metrics in Adobe Journey Optimizer by assigning a KPI to a journey and reviewing its performance in journey reports.
 

@@ -467,7 +467,11 @@ Set up **[journey alerts](../reports/alerts.md)** to receive real-time notificat
 
 **Ready to build your first journey?** [Get started now →](journey-gs.md)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page is the getting-started hub for Adobe Journey Optimizer journeys, explaining what journeys are, the four journey types, the six-step creation workflow, real-world use cases, and links to advanced capabilities.
 

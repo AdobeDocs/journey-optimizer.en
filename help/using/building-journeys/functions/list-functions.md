@@ -744,7 +744,11 @@ Returns the listObject ordered by SKU attribute (ascending order)
 
 +++
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page documents all list functions available in AJO journey expressions, covering how to filter, sort, deduplicate, check membership, limit, serialize, and find intersections of lists and arrays.
 

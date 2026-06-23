@@ -494,7 +494,11 @@ Returns a _dateTime_ (with UTC time zone) one hour later from current time
 
 Returns a _duration_ PT2H
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 * **TL;DR:** This page is a complete reference of operators available in the Journey advanced expression editor, covering logical (`and`, `or`, `not`), comparison (`==`, `!=`, `>`, `>=`, `<`, `<=`, `is null`, `is not null`, `has null`), arithmetic (`+`, `-`, `/`, `*`, `%`), math type-check (`is numeric`, `is integer`, `is decimal`), string concatenation, and date arithmetic operators.
 
