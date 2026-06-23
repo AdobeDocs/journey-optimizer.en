@@ -42,7 +42,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to compare the four journey types — unitary, read audience, audience qualification, and business event — and use the decision guide and feature compatibility matrix to choose the right one for your use case.
+**On this page:** Learn how to compare the four journey types — unitary event, read audience, audience qualification, and business event — use the decision guide and feature compatibility matrix to choose the right one, and find links to every key section you need to build and go live.
 
 >[!ENDSHADEBOX]
 
@@ -60,7 +60,7 @@ topic_v2:
 
 **Perfect for:** Order confirmations after purchase, welcome emails when someone subscribes, cart abandonment triggered by browsing, and password reset notifications.
 
-➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md)
+➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md) | [Build a Unitary event journey](#build-unitary-event)
 
 >[!TAB Read Audience journeys]
 
@@ -70,7 +70,7 @@ topic_v2:
 
 **Perfect for:** Monthly newsletters, promotional campaigns to target segments, product announcements, and seasonal marketing campaigns.
 
-➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md)
+➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md) | [Build a Read Audience journey](#build-read-audience)
 
 >[!TAB Audience Qualification journeys]
 
@@ -80,7 +80,7 @@ topic_v2:
 
 **Perfect for:** VIP tier upgrade notifications, re-engagement when customers become inactive, first purchase celebration messages, and geographic targeting when customers move.
 
-➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md)
+➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md) | [Build an Audience Qualification journey](#build-audience-qualification)
 
 >[!TAB Business event journeys]
 
@@ -90,7 +90,7 @@ topic_v2:
 
 **Perfect for:** Low inventory alerts to interested customers, flash sale announcements, weather-based promotions, price drop notifications, and product back-in-stock alerts.
 
-➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md)
+➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md) | [Build a Business event journey](#build-business-event)
 
 >[!ENDTABS]
 
@@ -193,11 +193,253 @@ Not all features are available for all journey types. Use this matrix to underst
 
 **Legend:** ✅ = Supported | ❌ = Not supported
 
-## Next steps {#next-steps}
+>[!NOTE]
+>
+>Jump activity limitations: a journey starting with a Read Audience or Audience Qualification activity cannot contain a Jump activity, and cannot be the target of a Jump activity from another journey.
 
-Now that you understand journey types, you're ready to:
+## Build your journey {#build-your-journey}
 
-* **[Create your first journey](journey-gs.md)** - Step-by-step guide
-* **[Learn about the journey designer](using-the-journey-designer.md)** - Design your journey canvas
-* **[Explore journey capabilities](journey.md#capabilities)** - Discover advanced features
-* **[View journey FAQ](journey-faq.md)** - Common questions answered
+Once you have chosen a journey type, use this documentation map to configure prerequisites, build on the canvas, validate, publish, and manage your journey. Jump to your journey type in [Build by journey type](#build-by-type), or follow the full lifecycle below.
+
+### Documentation hubs {#documentation-hubs}
+
+Start from these overview pages, then drill into the sections that match your use case:
+
+* [Create a journey](../../rp_landing_pages/create-journey-landing-page.md) — create, design, test, and publish
+* [Manage your journeys](../../rp_landing_pages/manage-journey-landing-page.md) — browse, entry rules, optimization, lifecycle
+* [Journey activities](../../rp_landing_pages/about-journey-building-landing-page.md) — entry, orchestration, action, and data activities
+* [Journey configuration](../../rp_landing_pages/configure-journeys-landing-page.md) — events, data sources, and actions prerequisites
+* [Journey use cases](../../rp_landing_pages/journey-use-cases-landing-page.md) — step-by-step recipes
+* [Monitor & troubleshoot journeys](../../rp_landing_pages/troubleshoot-journey-landing-page.md) — reporting, errors, and diagnostics
+
+### Configure prerequisites {#configure-prerequisites}
+
+What you configure before opening the canvas depends on your journey type. See [Get started with journeys configuration](../configuration/about-data-sources-events-actions.md) for the full picture.
+
+**Events** (Unitary event and Business event journeys)
+
+* [Work with journey events](../event/about-events.md)
+* [Configure a unitary event](../event/about-creating.md)
+* [About ExperienceEvent schemas](../event/experience-event-schema.md)
+* [Configure a business event](../event/about-creating-business.md)
+* [Send events to Journey Optimizer](../event/additional-steps-to-send-events-to-journey.md)
+* [Work with Adobe Analytics data](../event/about-analytics.md)
+
+**Audiences** (Read Audience and Audience Qualification journeys)
+
+* [Get started with audiences](../audience/about-audiences.md)
+* [Create an audience](../audience/creating-a-segment-definition.md)
+
+**Data sources** (optional — enrich conditions and personalization)
+
+* [Get started with data sources](../datasource/about-data-sources.md)
+* [Configure a data source](../datasource/configure-data-sources.md)
+* [Adobe Experience Platform data source](../datasource/adobe-experience-platform-data-source.md)
+* [External data sources](../datasource/external-data-sources.md)
+
+**Actions and channels**
+
+* [Get started with communication channels](../channels/gs-channels.md)
+* [Action activity](journey-action.md) — built-in email, push, SMS, in-app, web, and content card actions
+* [Get started with custom actions](../action/action.md)
+* [Configure a custom action](../action/about-custom-action-configuration.md)
+* [Adobe Campaign Standard action](../action/acs-action.md) | [Campaign v7/v8 action](../action/acc-action.md) | [Marketo Engage action](../action/marketo-engage.md)
+
+### Create and design {#create-and-design}
+
+* [Create your first journey](journey-gs.md) — end-to-end walkthrough from entry to publish
+* [Set your journey properties](journey-properties.md) — name, re-entrance, namespace, and caps
+* [Design your journey](using-the-journey-designer.md) — canvas, palette, and versioning
+* [Get started with journey activities](about-journey-activities.md) — how activities connect on the canvas
+* [Send using waves in journeys](send-using-waves.md) — stagger large Read Audience sends
+* [Configure and track journey metrics](success-metrics.md) — define success KPIs
+
+### Journey activities {#journey-activities}
+
+**Event activities**
+
+* [General events](general-events.md) — unitary event entry inside a journey
+* [Reaction events](reaction-events.md) — respond to profile behavior after entry
+* [Audience Qualification](audience-qualification-events.md) — entry or in-journey qualification
+* [Read Audience](read-audience.md) — batch entry, schedule, and incremental read
+
+**Orchestration activities**
+
+* [Get started with the Optimize activity](optimize.md)
+* [Path experimentation](path-experimentation.md) — A/B testing (not supported on Business event entry journeys)
+* [Path targeting](path-targeting.md)
+* [Conditions](conditions.md)
+* [Wait](wait-activity.md)
+* [Jump](jump.md) — connect sub-journeys (not available on Read Audience or Audience Qualification entry journeys)
+* [Journey Fragments](journey-fragments.md)
+
+**Action activities**
+
+* [Action](journey-action.md)
+* [Content decision](content-decision.md)
+* [Custom actions](using-custom-actions.md)
+* [Adobe Campaign Standard actions](using-adobe-campaign-standard.md)
+* [Adobe Campaign v7/v8 actions](using-adobe-campaign-v7-v8.md)
+
+**Data activities**
+
+* [Dataset lookup](dataset-lookup.md)
+* [Update profile](update-profiles.md)
+
+### Validate before going live {#validate-journey}
+
+* [Test your journey](testing-the-journey.md) — test mode with test profiles
+* [Journey Dry run](journey-dry-run.md) — run against production data without contacting customers
+* [Get started with journey simulation](simulate-journey-gs.md) | [Simulate your journey](simulate-journey.md)
+
+### Publish, manage, and optimize {#publish-and-manage}
+
+* [Publish your journey](publish-journey.md)
+* [Pause a journey](journey-pause.md) | [End your journey](end-journey.md)
+* [Browse and filter your journeys](journey-ui.md) | [Organize with tags](tags.md)
+* [Profile entrance in journeys](entry-management.md) — throughput, re-entrance, and entry rules by type
+* [Journey entry and exit criteria](entry-exit-criteria-guide.md)
+* [Use supplemental identifiers](supplemental-identifier.md) — Unitary event and Read Audience journeys
+* [Time zone management](timezone-management.md) | [Send-Time optimization](send-time-optimization.md)
+* [Live report in your journey](report-journey.md) | [Work with journey step events](../reports/journey-step-events-overview.md)
+
+### Build by journey type {#build-by-type}
+
+#### Unitary event journeys {#build-unitary-event}
+
+| Step | Documentation |
+|------|---------------|
+| **Configure** | [Configure a unitary event](../event/about-creating.md) → [Send events](../event/additional-steps-to-send-events-to-journey.md) |
+| **Entry** | [General events](general-events.md) or unitary event as the journey entry activity |
+| **Orchestrate** | [Conditions](conditions.md), [Wait](wait-activity.md), [Reaction events](reaction-events.md), [Jump](jump.md) |
+| **Send messages** | [Action activity](journey-action.md) or [Custom actions](using-custom-actions.md) |
+| **Enrich** | [Data sources](../datasource/about-data-sources.md), [Dataset lookup](dataset-lookup.md) |
+| **Use cases** | [Send a message to subscribers](message-to-subscribers-uc.md) · [Send multi-channel messages](journeys-uc.md) |
+| **Manage** | [Profile entrance](entry-management.md) · [Supplemental identifiers](supplemental-identifier.md) |
+
+#### Read Audience journeys {#build-read-audience}
+
+| Step | Documentation |
+|------|---------------|
+| **Configure** | [Create an audience](../audience/creating-a-segment-definition.md) in [!DNL Adobe Experience Platform] |
+| **Entry** | [Read Audience activity](read-audience.md) — schedule, recurring runs, [incremental read](read-audience.md) |
+| **Orchestrate** | [Conditions](conditions.md), [Wait](wait-activity.md), [Path experimentation](path-experimentation.md) |
+| **Send messages** | [Action activity](journey-action.md) · [Send using waves](send-using-waves.md) for large audiences |
+| **Use cases** | [Send multi-channel messages](journeys-uc.md) · [Send emails only on weekdays](weekday-email-uc.md) · [Ramp up deliveries](ramp-up-deliveries-uc.md) |
+| **Manage** | [Profile entrance](entry-management.md) — once per execution · [Time zone management](timezone-management.md) |
+
+#### Audience Qualification journeys {#build-audience-qualification}
+
+| Step | Documentation |
+|------|---------------|
+| **Configure** | [Create a streaming audience](../audience/creating-a-segment-definition.md) — batch audiences delay entry up to 24 hours |
+| **Entry** | [Audience Qualification activity](audience-qualification-events.md) — entry or exit qualification |
+| **Orchestrate** | [Conditions](conditions.md), [Wait](wait-activity.md), [Reaction events](reaction-events.md) |
+| **Expressions** | [inAudience function](functions/functioninaudience.md) for in-journey audience checks |
+| **Use cases** | [Journey entry and exit criteria](entry-exit-criteria-guide.md) · [Learn through use cases](jo-use-cases.md) |
+| **Manage** | [Profile entrance](entry-management.md) — re-entrance and namespace (required) |
+
+#### Business event journeys {#build-business-event}
+
+| Step | Documentation |
+|------|---------------|
+| **Configure** | [Configure a business event](../event/about-creating-business.md) → [Send events](../event/additional-steps-to-send-events-to-journey.md) |
+| **Entry** | Business event trigger + automatic [Read Audience](read-audience.md) step for profile ingestion |
+| **Orchestrate** | [Conditions](conditions.md), [Wait](wait-activity.md), [Jump](jump.md) — no [path experiments](path-experimentation.md) |
+| **Throughput** | Business event trigger: 5,000 TPS · Read Audience ingestion: 20,000 TPS per sandbox — see [Profile entrance](entry-management.md) |
+| **Use cases** | [Limit throughput with external data sources](limit-throughput.md) · [Learn through use cases](jo-use-cases.md) |
+| **Manage** | [Profile entrance](entry-management.md) · [Namespace configuration](journey-properties.md) (required) |
+
+### Expressions and advanced logic {#expressions}
+
+* [Work with the advanced expression editor](expression/expressionadvanced.md)
+* [Generate expressions with the Expression Assistant](expression/expression-agent.md)
+* [Expression syntax and functions](../../rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
+* [Experience event lookup](exp-event-lookup.md)
+
+### Use cases and tutorials {#use-cases}
+
+* [Learn through use cases](jo-use-cases.md) — hub with videos and recipes
+* [Send multi-channel messages](journeys-uc.md)
+* [Send a message to subscribers](message-to-subscribers-uc.md)
+* [Send a message using Campaign v7/v8](ajo-ac.md)
+* [Send emails only on weekdays](weekday-email-uc.md)
+* [Pass collections into custom action parameters](collections.md)
+* [Limit throughput with external data sources & custom actions](limit-throughput.md)
+* [Use custom actions to write journey events in Experience Platform](custom-action-aep.md)
+
+### Report, monitor, and troubleshoot {#report-troubleshoot}
+
+* [Tracking in Journey Optimizer](../start/get-started-tracking.md)
+* [Live reporting](../reports/live-report.md) | [Journey step events](../reports/journey-step-events-overview.md)
+* [Error codes reference](error-codes-reference.md) | [System alerts](../reports/alerts.md)
+* [Troubleshoot journey errors](troubleshooting.md) | [Troubleshoot journey execution](troubleshooting-execution.md) | [Troubleshoot inbound actions](troubleshooting-inbound.md)
+* [Troubleshoot custom actions](../action/troubleshoot-custom-action.md)
+* [Guardrails & limitations](../start/guardrails.md) | [Journey Orchestration FAQ](journey-faq.md)
+
+### Still deciding? {#still-deciding}
+
+* **[Get started with journeys](journey.md)** — fundamentals, designer, and capabilities overview
+* **[Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** — when to use journeys vs Action, API-triggered, or Orchestrated campaigns
+* **[Work with Journey Optimizer APIs](../configuration/ajo-apis.md)** — automate journey operations
+* **[Get started with access control](../administration/permissions-overview.md)** — permissions for journey authors
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page compares the four AJO journey types, provides a decision guide and feature compatibility matrix, and links to the full Journeys documentation map — configuration, activities, validation, publishing, use cases, and troubleshooting — so users can choose a type and start implementing.
+
+**Intents:**
+
+* Understand how to start implementing each journey type using the build paths and workflow links
+* Choose the correct journey type for a given business use case using the decision table
+* Compare journey types side by side using the detailed feature compatibility matrix
+* Understand when to use Read Audience journeys for scheduled batch communications
+* Understand when to use Unitary event journeys for real-time, event-triggered experiences
+* Understand when to use Audience Qualification journeys for real-time status-change responses
+* Understand when to use Business event journeys for business-condition-driven communications
+* Understand throughput limits per journey type when planning high-volume deployments
+
+**Glossary:**
+
+* **Unitary event journey**: A journey triggered by a specific individual customer action (e.g., purchase, login) where profiles enter one at a time in real time. *(product-specific)*
+* **Read Audience journey**: A journey that starts with an Adobe Experience Platform audience and sends messages in batch to all profiles simultaneously on a schedule. *(product-specific)*
+* **Audience Qualification journey**: A journey that triggers when profiles qualify for or exit a specific audience segment. Requires a streaming-evaluated audience for real-time entry behavior. *(product-specific)*
+* **Business event journey**: A journey triggered by a business-level event (e.g., stock update, price change) that affects multiple profiles simultaneously; always paired with an internal Read Audience step for profile ingestion. *(product-specific)*
+* **Incremental read**: A Read Audience capability that processes only profiles who joined the audience since the last execution, not the full audience each time. Available for Read Audience journeys only. *(product-specific)*
+* **Streaming audience**: An Adobe Experience Platform audience evaluated continuously in real time, as opposed to a batch audience evaluated on a schedule (e.g., daily). Required for Audience Qualification journeys to achieve real-time entry behavior. *(product-specific)*
+
+**Guardrails:**
+
+* Incremental read is only available for Read Audience journeys, not for Unitary event, Audience Qualification, or Business event journeys
+* Path experiments (A/B testing) are not supported for Business event journeys
+* Profile re-entrance in Read Audience journeys is limited to once per execution
+* Audience Qualification and Read Audience journeys cannot contain a Jump activity, and cannot be the target of a Jump activity from another journey
+* Audience Qualification journeys require a streaming-evaluated audience for real-time entry; batch-evaluated audiences cause entry delays of up to 24 hours
+* Unitary event and Audience Qualification journeys share a 5,000 TPS throughput limit at the organization level; Read Audience journeys support up to 20,000 TPS per sandbox
+* A profile already present in a journey cannot re-enter the same version of that journey, regardless of re-entrance configuration
+
+**Terminology:**
+
+* Canonical name: Unitary event journey — variants: event-triggered journey, unitary journey
+* Canonical name: Read Audience journey — variants: batch journey, segment trigger journey, read segment journey
+* Canonical name: Audience Qualification journey — variants: audience qualification event journey
+* Canonical name: Business event journey — variants: business event-triggered journey
+* Do not confuse: "Read Audience journey" ≠ "Audience Qualification journey" — Read Audience processes all audience members in batch on schedule; Audience Qualification responds to individual membership changes in real time (streaming audiences only for immediate entry)
+* Do not confuse: "Unitary event journey" ≠ "Business event journey" — Unitary is triggered by a customer action affecting one profile; Business event is triggered by a business condition and ingests multiple profiles via an internal Read Audience step
+
+**FAQ:**
+
+* **Q: Which journey type should I use for a monthly newsletter?** — Use a Read Audience journey; it is designed for scheduled batch communication to all profiles in an audience segment simultaneously.
+* **Q: Which journey type handles an order confirmation after a purchase?** — Use a Unitary event journey; it provides an immediate real-time response to an individual customer action.
+* **Q: Can I run A/B path experiments in a Business event journey?** — No; path experiments are not supported for Business event journeys.
+* **Q: What is the difference between a Unitary event journey and an Audience Qualification journey?** — A Unitary event journey is triggered by a specific customer action (e.g., purchase); an Audience Qualification journey triggers when a profile enters or exits an audience segment based on streaming criteria evaluation.
+* **Q: Which journey types support incremental read?** — Only Read Audience journeys support incremental read; the other three journey types do not.
+* **Q: Can I use a Jump activity in a Read Audience journey?** — No; journeys starting with a Read Audience or Audience Qualification activity cannot contain a Jump activity and cannot be the target of a Jump from another journey.
+* **Q: My Audience Qualification journey is not triggering in real time. Why?** — Audience Qualification journeys require a streaming-evaluated audience. If the audience is batch-evaluated (e.g., a daily snapshot), entry is delayed until the next evaluation window, which can be up to 24 hours.
+* **Q: What is the throughput difference between Unitary event and Read Audience journeys?** — Unitary event journeys share a 5,000 TPS limit with Audience Qualification journeys at the organization level. Read Audience journeys support up to 20,000 TPS per sandbox, making them better suited for large-scale batch campaigns.
+
++++
