@@ -32,13 +32,16 @@ Starting August 3, 2026, Journey Optimizer will block publication for journeys t
 
 ## Why this change {#why}
 
-The **Audience Qualification** node is designed to react in near-real time as individual profiles enter or exit an audience — qualification events arrive continuously, one by one. It is intended for **streaming audiences**.
+The **[Audience Qualification](audience-qualification-events.md)** node is designed to react in near-real time as individual profiles enter or exit an audience — qualification events arrive continuously, one by one. It is intended for **[streaming audiences](../audience/creating-a-segment-definition.md#evaluation-method-in-journey-optimizer)**.
 
 When a batch audience is used with an Audience Qualification node instead, all qualification events arrive simultaneously during the ingestion window. This can trigger tens of thousands or millions of journey entries at the same instant, causing severe system strain and unpredictable behavior in downstream systems. This is not the intended design of the Audience Qualification node.
 
-The **[!UICONTROL Read Audience]** activity is the right tool for batch-based use cases: it is built to handle scheduled, bulk processing in a controlled and predictable way.
+The **[Read Audience](read-audience.md)** activity is the right tool for batch-based use cases: it is built to handle scheduled, bulk processing in a controlled and predictable way.
 
 ## How your journeys are affected {#impact}
+
+A live journey that uses a batch audience in an Audience Qualification node continues to run after August 3, 2026. However, if you stop, duplicate, or republish the journey, it will be blocked until the configuration is updated.
+
 
 | Journey status | Impact after August 3, 2026 |
 | --- | --- |
@@ -47,9 +50,6 @@ The **[!UICONTROL Read Audience]** activity is the right tool for batch-based us
 | **Draft journeys** | Blocked from publication until the batch audience is replaced. |
 | **Duplicated journeys** | Blocked from publication until the batch audience is replaced. |
 
->[!NOTE]
->
->A live journey that uses a batch audience in an Audience Qualification node continues to run after August 3, 2026. However, if you stop, duplicate, or republish the journey, it will be blocked until the configuration is updated.
 
 ## Migration guide {#migration-paths}
 
@@ -57,15 +57,19 @@ If you are using a batch audience in an Audience Qualification node, identify yo
 
 ### Use case 1 — Audience built on AJO message tracking events {#use-case-1}
 
-**What it looks like:** Your Audience Qualification audience uses conditions based on email sends, opens, or clicks from AJO's internal tracking datasets — for example, *"profile received an email"* or *"profile opened an email."*
+**What it looks like:** Your Audience Qualification audience uses conditions based on email sends, opens, or clicks from Journey Optimizer's internal tracking datasets — for example, *"profile received an email"* or *"profile opened an email."*
+
+>[!NOTE]
+>
+>Since November 2024, streaming segmentation no longer supports send and open events from Journey Optimizer tracking datasets. Audiences based on these events are now evaluated in batch mode. [Learn more about audience evaluation methods](../audience/creating-a-segment-definition.md#evaluation-method-in-journey-optimizer)
 
 **Recommended alternatives:**
 
-* **Reacting to opens or clicks within the same journey** — Use the **[!UICONTROL Reaction]** event node. It is purpose-built to respond to opens and clicks from a message sent within that same journey, without requiring a separate audience.
+* **Reacting to opens or clicks within the same journey** — Use the **[Reaction event](reaction-events.md)** node. It is purpose-built to respond to opens and clicks from a message sent within that same journey, without requiring a separate audience.
 
-* **Cross-journey click targeting** — Build a streaming audience from click events and use the Audience Qualification node with that streaming audience instead.
+* **Cross-journey click targeting** — Build a [streaming audience](../audience/creating-a-segment-definition.md#evaluation-method-in-journey-optimizer) from click events and use the Audience Qualification node with that streaming audience instead.
 
-* **Bounce-based suppression** — Use Journey Optimizer's native suppression list rather than modeling bounce behavior as an audience condition.
+* **Bounce-based suppression** — Use Journey Optimizer's native [suppression list](../configuration/manage-suppression-list.md) rather than modeling bounce behavior as an audience condition.
 
 * **Any remaining send/open logic** — Switch to a **[Read Audience](read-audience.md)** journey on a scheduled run to process the batch audience safely.
 
@@ -76,7 +80,7 @@ If you are using a batch audience in an Audience Qualification node, identify yo
 
 **Recommended alternative:**
 
-Use a **[Read Audience](read-audience.md)** journey with the **Trigger after batch audience evaluation** option enabled. This built-in feature holds journey execution until the segmentation job completes, then starts immediately when fresh data is available — without requiring an Audience Qualification node.
+Use a **[Read Audience](read-audience.md)** journey with the **[!UICONTROL Trigger after batch audience evaluation]** option enabled. This built-in feature holds journey execution until the segmentation job completes, then starts immediately when fresh data is available — without requiring an Audience Qualification node. [Learn how to configure this option](read-audience.md#schedule)
 
 
 ### Use case 3 — Large periodic batch audience activation {#use-case-3}
@@ -95,4 +99,8 @@ If your use case cannot be solved using any of the migration paths above, contac
 
 * [Audience Qualification events](audience-qualification-events.md) — full configuration guide and guardrails
 * [Read Audience activity](read-audience.md) — how to configure scheduled batch audience entry
+* [Reaction events](reaction-events.md) — how to react to opens and clicks within the same journey
+* [Audience evaluation methods](../audience/creating-a-segment-definition.md#evaluation-method-in-journey-optimizer) — batch, streaming, and edge segmentation explained
+* [About audiences](../audience/about-audiences.md) — audience types and how they are built in Journey Optimizer
+* [Manage the suppression list](../configuration/manage-suppression-list.md) — how to access and configure bounce suppression
 * [Journey guardrails and limitations](limitations.md)
