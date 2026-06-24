@@ -162,7 +162,8 @@ Choose a primary identity for your customers (such as ECID, email, or CRMID) and
 
 Create **XDM Individual Profile** schemas to capture customer attributes such as name and contact information, preferences and interests, and lifecycle stage or consent state. Create **XDM ExperienceEvent** schemas to capture behavioral and transactional data such as web and app events, purchases, and offline interactions. Mark the correct fields as identities and profile attributes where appropriate.
 
-➡️ [Learn more about schemas](get-started-schemas.md)
+➡️ [Learn more about schemas](get-started-schemas.md)  
+➡️ [Profile enablement planning](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/profile-enablement-planning){target="_blank"}
 
 +++
 
@@ -170,7 +171,9 @@ Create **XDM Individual Profile** schemas to capture customer attributes such as
 
 In Adobe Experience Platform, create datasets based on your XDM schemas and enable Profile on any dataset that should contribute to Real-Time Customer Profile. Confirm that system-generated datasets created by Journey Optimizer are visible in the Datasets workspace.
 
-➡️ [Learn more about datasets](get-started-datasets.md)
+➡️ [Learn more about datasets](get-started-datasets.md)  
+➡️ [Profile enablement planning](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/profile-enablement-planning){target="_blank"}  
+➡️ [Managing profile-enabled schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices#managing-profile-enabled-schemas){target="_blank"}
 
 +++
 
