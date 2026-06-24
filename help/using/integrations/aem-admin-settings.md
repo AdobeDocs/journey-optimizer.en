@@ -65,33 +65,35 @@ To configure your repository:
 
 1. Choose your setup in the drop-down below:
 
-    * +++ Author only setup
+    +++ Author only setup
 
-        Select **[!UICONTROL Author only setup]** when Journey Optimizer should read Content Fragments from the Adobe Experience Manager **author** environment only. Replication from author to publish and live publish updates are not supported.
+    Select **[!UICONTROL Author only setup]** when Journey Optimizer should read Content Fragments from the Adobe Experience Manager **author** environment only. Replication from author to publish and live publish updates are not supported.
 
-        ![](assets/aem-admin-settings-3.png)
-    
-      +++
+    ![](assets/aem-admin-settings-3.png)
 
-    * +++ Publish instance setup
+    +++
 
-        By default, every **[!DNL Adobe Experience Manager as a Cloud Service]** repository is configured to use the **publish** instance. You can continue to the Content Fragment test step without changing these settings.
+    </br>
 
-        If your publish instance is **authenticated**, or you must use a custom publish domain, follow the steps below.
+    +++ Publish instance setup
 
-        1. Select **[!UICONTROL Publish instance setup]** to turn on publish instance settings.
-        
-            ![](assets/aem-admin-settings-4.png)
+    By default, every **[!DNL Adobe Experience Manager as a Cloud Service]** repository is configured to use the **publish** instance. You can continue to the Content Fragment test step without changing these settings.
 
-        1. Enable **[!UICONTROL Send token to publish instance]** so service credentials are included with requests to the publish instance.
+    If your publish instance is **authenticated**, or you must use a custom publish domain, follow the steps below.
 
-        1. Paste a valid **[!UICONTROL Service Credential JSON]** for authentication.
+    1. Select **[!UICONTROL Publish instance setup]** to turn on publish instance settings.
 
-        1. Optionally provide a custom domain if your organization cannot reach the default AEM publish host (`publish-XX-XX.adobeaemcloud.com`) to fetch content.
+        ![](assets/aem-admin-settings-4.png)
 
-            ![](assets/aem-admin-settings-5.png)
+    1. Enable **[!UICONTROL Send token to publish instance]** so service credentials are included with requests to the publish instance.
 
-        +++
+    1. Paste a valid **[!UICONTROL Service Credential JSON]** for authentication.
+
+    1. Optionally provide a custom domain if your organization cannot reach the default AEM publish host (`publish-XX-XX.adobeaemcloud.com`) to fetch content.
+
+        ![](assets/aem-admin-settings-5.png)
+
+    +++
 
 1. After you finish the instance setup, pick a Content Fragment to confirm that the integration works.
 
