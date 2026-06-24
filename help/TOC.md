@@ -84,6 +84,7 @@ solution: Journey Optimizer
     + [General events](using/building-journeys/general-events.md)
     + [Reaction events](using/building-journeys/reaction-events.md)
     + [Audience qualification](using/building-journeys/audience-qualification-events.md)
+    + {hide-from-toc} [Migrate batch audiences from Audience Qualification](using/building-journeys/aq-batch-audiences-migration.md)
     + Optimize {#optimize-activity}
       + [Get started with the Optimize activity](using/building-journeys/optimize.md)
       + [Path experimentation](using/building-journeys/path-experimentation.md)
