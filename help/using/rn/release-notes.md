@@ -395,7 +395,7 @@ The following improvements have been added to the email channel in this release.
 
 * **Enhanced Image to HTML converter** - A new version of the Image to HTML converter feature is now available, bringing improved accuracy for HTML generation. This update leverages higher-tier LLM models to deliver more precise and reliable HTML output from image inputs.
 
-  Availability date: Late June, 2026
+  Availability date: June 18, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 
