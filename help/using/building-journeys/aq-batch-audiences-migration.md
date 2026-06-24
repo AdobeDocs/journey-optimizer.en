@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Migrate batch audiences from Audience Qualification journeys
-description: Learn how to migrate journeys that use batch audiences in an Audience Qualification node before the August 2026 enforcement date.
+description: Learn how to migrate journeys that use batch audiences in an Audience Qualification node before the enforcement date.
 feature: Journeys, Activities, Audiences
 topic: Content Management
 role: User
