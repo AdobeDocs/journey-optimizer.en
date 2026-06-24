@@ -24,7 +24,7 @@ feature_v2:
 
 # Migrate batch audiences from Audience Qualification journeys {#aq-batch-migration}
 
-Starting August 3, 2026, Journey Optimizer will block publication for journeys that use a batch audience in an Audience Qualification node. Identify your use case below and follow the recommended migration path.
+Starting August 3, 2026, Journey Optimizer will block publication for journeys that use a batch audience in an Audience Qualification node. Identify your use case below and follow the recommended migration path. 
 
 >[!CAUTION]
 >
