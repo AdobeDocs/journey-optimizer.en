@@ -154,6 +154,10 @@ The reception speed of this information is high. Measurements show 10,000 events
 
 ### Batch audiences {#batch-speed-segment-qualification}
 
+>[!CAUTION]
+>
+>**Deprecation notice – August 2026**: Starting **August 2026**, Journey Optimizer will block publication for any journey that uses a batch audience in an **Audience Qualification** node. Existing live journeys are not affected. New, draft, and duplicated journeys with this configuration must be updated before August 2026. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
+
 When using Audience Qualification for a batch audience, note that a peak of entrance occurs at the time of the daily calculation. The size of the peak depends on how many individuals enter or exit the audience each day.
 
 Moreover, if the batch audience is newly created and immediately used in a journey, the first batch of calculation can drive many entries. Plan for this spike.
