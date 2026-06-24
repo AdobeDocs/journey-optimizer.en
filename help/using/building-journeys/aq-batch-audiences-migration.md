@@ -7,7 +7,6 @@ feature: Journeys, Activities, Audiences
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
 keywords: audience qualification, batch audience, deprecation, migration, read audience, streaming audience
 exl-id: f3c2a7d1-b58e-4a92-c3d5-0e871f2a9b4c
 product_v2:
