@@ -92,7 +92,7 @@ An **audience qualification** event is triggered when a profile enters or exits 
 |---|---|---|
 | **Linked to a profile?** | Yes — triggered by a specific individual's action. | No — triggered by an external occurrence not tied to one person. |
 | **Entry behavior** | One profile enters the journey in real time. | Multiple profiles enter via an automatic Read Audience step. |
-| **Typical use cases** | Purchase confirmation, form submission, app login, loyalty milestone. | Flight cancellation, stock replenishment alert, breaking news, weather event. |
+| **Typical use cases** | Cart abandonment recovery, form submission, app login, loyalty milestone. | Flight cancellation, stock replenishment alert, breaking news, weather event. |
 | **How it starts the journey** | Event-based entry — no audience needed. | Business event + automatic Read Audience (added by Journey Optimizer). |
 | **Multiple per journey?** | Yes — you can listen to several unitary events across journey steps. | No — only one business event per journey, placed at the start. |
 | **Event ID type** | Rule-based or system-generated. | Always rule-based. |
