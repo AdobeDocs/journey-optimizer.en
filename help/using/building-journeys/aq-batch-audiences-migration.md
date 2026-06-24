@@ -20,18 +20,6 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-subfeature_v2:
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-    internal-label: Intermediate
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-    internal-label: Troubleshooting
 ---
 
 # Migrate batch audiences from Audience Qualification journeys {#aq-batch-migration}
@@ -102,8 +90,6 @@ Use a **[Read Audience](read-audience.md)** journey with the **Trigger after bat
 **Recommended alternative:**
 
 Use a **[Read Audience](read-audience.md)** journey. It is purpose-built for processing large audiences in bulk, handling profiles in controlled batches and delivering more predictable, reliable journey execution at scale.
-
----
 
 ## What if none of the alternatives work for your use case? {#exceptions}
 
