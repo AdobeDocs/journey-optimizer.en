@@ -365,7 +365,7 @@ The following improvements have been added to the email channel in this release.
 <p>For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
 <p><img src="assets/do-not-localize/rich-text-editable-fields.gif"></p>
 <p>For more information, refer to the <a href="../content-management/customizable-fragments.md#rich-text-visual">detailed documentation</a>.</p>
-<p>Availability date: Late June, 2026</p>
+<p>Availability date: June 19, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -393,7 +393,7 @@ The following improvements have been added to the email channel in this release.
 
 * **Enhanced Image to HTML converter** - A new version of the Image to HTML converter feature is now available, bringing improved accuracy for HTML generation. This update leverages higher-tier LLM models to deliver more precise and reliable HTML output from image inputs.
 
-  Availability date: June 18, 2026
+  Availability date: Late June, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -408,6 +408,7 @@ The following improvements have been added to the email channel in this release.
 <td>
 <p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
 <p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
+<p>Availability date: Late June, 2026</p>
 </td>
 </tr>
 </tbody>
