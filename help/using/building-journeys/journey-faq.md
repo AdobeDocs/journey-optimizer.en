@@ -199,7 +199,7 @@ Learn more about [audiences](../audience/about-audiences.md), [creating segments
 
 Use **unitary journeys** when:
 
-* You need to react to individual customer actions in real-time (e.g., purchase confirmation, cart abandonment)
+* You need to react to individual customer actions in real-time (e.g., cart abandonment, new member onboarding)
 * Each customer should progress at their own pace
 * You want to trigger based on specific events
 
@@ -300,17 +300,17 @@ Learn more about [profile updates](update-profiles.md).
 
 +++
 
-+++ How do I send an email immediately after someone makes a purchase?
++++ How do I send an email immediately after a cart is abandoned?
 
 Create a **unitary event-triggered journey**:
 
-1. Configure a "Purchase" event with the order details
+1. Configure a "Cart Abandonment" event with the relevant cart details
 2. Add the event as your journey entry point
 3. Immediately follow with an Email action
-4. Design your order confirmation email with personalized order details
+4. Design your cart recovery email with personalized product details
 5. Publish the journey
 
-The journey will automatically trigger whenever a purchase event is received, sending the confirmation email in real-time.
+The journey will automatically trigger whenever a cart abandonment event is received, sending the recovery email in real time.
 
 Learn more about [event configuration](../event/about-events.md) and [email actions](journey-action.md).
 
@@ -383,7 +383,7 @@ Learn more about [timezone management](timezone-management.md).
 
 **Best practices for wait times**:
 
-* **Transactional messages** (order confirmations): Send immediately
+* **Triggered marketing messages** (cart abandonment recovery): Send immediately
 * **Welcome series**: 1-3 days between emails
 * **Educational content**: 3-7 days between messages
 * **Promotional campaigns**: At least 7 days between offers
