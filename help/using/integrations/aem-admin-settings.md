@@ -71,7 +71,7 @@ To configure your repository:
 
         ![](assets/aem-admin-settings-3.png)
     
-        +++
+      +++
 
     * +++ Publish instance setup
 
