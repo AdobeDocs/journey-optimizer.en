@@ -35,6 +35,8 @@ Adobe Journey Optimizer integrates with **[!DNL Adobe Experience Manager as a Cl
   
 Journey Optimizer stores one integration per organization, sandbox, and Adobe Experience Manager repository. If you save a new integration for that same combination, it replaces the previous settings, only the latest configuration is kept.
 
+➡️ [Discover this feature for Adobe Experience Manager Managed Service in video](#video)
+
 To configure your repository:
 
 1. Access **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL AEM Integration]**.
@@ -105,3 +107,8 @@ To configure your repository:
 
 When you save this configuration, Journey Optimizer stores it for that repository in the current sandbox. You can then use that repository and its settings when browsing and selecting content in the **Content Advisor** selector.
 
+## How-to video {#video}
+
+Learn how administrators configure Adobe Experience Manager Managed Services repository settings in Journey Optimizer so marketers can use Content Fragments in journeys and campaigns.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3492529?quality=12)

@@ -56,8 +56,6 @@ topic_v2:
 
 ## June '26 release notes {#june-26-rn}
 
-The June 2026 release brings several flagship capabilities to General Availability — including **Journey Simulation**, **Journey path optimization targeting**, and **Journey Fragments** — alongside new AI-assisted authoring in journeys and content, expanded Decisioning support for the Direct Mail channel, and additional security and administration controls. The capabilities and improvements below are organized by theme. Additional changes are also expected in the upcoming days or weeks.
-
 ### Journeys {#june-26-journeys}
 
 The following capabilities and improvements have been added to journeys in this release. Additional changes are also expected in the upcoming days or weeks.
@@ -140,10 +138,9 @@ The following capabilities and improvements have been added to journeys in this 
 </tbody>
 </table>
 
+* **Stop a paused journey directly** - You can now stop a journey directly from the **Paused** state. Previously, a paused journey had to be resumed to **Live** before it could be stopped. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
 
-* **Stop or close a paused journey directly** - You can now **stop a journey or close it to new entrances** directly from the **Paused** state. Previously, a paused journey had to be resumed to Live before it could be stopped or closed. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
-
-  Availability date: June 17, 2026
+  Availability date: June 18-22, 2026
 
 * **Supplemental identifier support for external audiences** - Supplemental identifiers in journeys are now supported for external audiences, including audiences imported from a CSV file and audiences created with Federated Audience Composition. You can designate any non-identity attribute or non-person identity attribute from the audience as the supplemental ID, no schema labeling is required. [Read more](../building-journeys/supplemental-identifier.md)
 
@@ -194,9 +191,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
 * **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
 
-  Availability date: End of June, 2026
-
-* **Personalize email sender details per recipient and campaign** - Orchestrated campaigns now support personalization of **email header fields**, including From name, From address, and Reply-To, using profile attributes or relational data. This allows sender details to reflect the relevant advisor, location, or branch for each recipient, rather than routing all sends through a single corporate address. Header values can be set at the channel level and overridden per campaign using contextual data for more precise control.
+  Availability date: Late June, 2026
 
 +++
 
@@ -222,11 +217,15 @@ The following capabilities and improvements have been added to Decisioning in th
 </tbody>
 </table>
 
+* **Leverage Adobe Experience Manager content fragments in Decisioning** - You can now map Adobe Experience Manager content fragments to decision items in Decisioning and leverage them inside decision policies to deliver the right fragment to the right customer at the right time. Previously released in Limited Availability, this capability is now available to all environments (General Availability). [Read more](../experience-decisioning/fragments-decision-policies.md)
+
+  Availability date: June 18, 2026
+
 +++ Coming soon — **Information below is subject to change.**
 
 * **Dynamic item attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items.
 
-  Availability date: June 22, 2026
+  Availability date: Late June, 2026
 
 +++
 
@@ -273,7 +272,7 @@ The following capabilities and improvements have been added to content managemen
 <li><strong>AI-generated content variants</strong> — In the <strong>Simulate content variations</strong> experience, click <strong>Generate</strong> to use AI to automatically create content variants. The system analyzes your message, detects personalization fields and conditional branches, and fills in realistic values so you can validate rendering without building every variant by hand.</li>
 </ul>
 <p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
-<p>Availability date: June 9, 2026</p>
+<p>Availability date: Late June, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -425,7 +424,7 @@ The following improvements have been added to the email channel in this release.
 <td>
 <p>The Email Designer now includes a library of ready-to-use layout modules — such as headers, product cards, information blocks, and footers — that you can drag and drop directly into your email canvas.</p>
 <p>Each module comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
-<p>Availability date: June 22, 2026</p>
+<p>Availability date: Late June, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -502,21 +501,6 @@ The following capabilities and improvements are coming to content management and
 
 +++
 
-### Reporting {#june-26-reporting}
-
-+++ Coming soon — **Information below is subject to change**
-
-* **Estimated clicks for Email and SMS reporting** — A new **Estimated Clicks** metric is now available in Journeys, Campaigns, and Channel reports for email and SMS. This metric excludes identified bot and non-human interaction (NHI) traffic to provide a clearer view of genuine customer engagement. The existing Clicks metric remains available and continues to report total clicks.
-
-* **New Estimated Click Metrics for Email and SMS Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports. These metrics help filter out non-human interactions (NHI) and bot clicks from reporting data:
-
-  * Estimated CTR: Estimated Clicks relative to total deliveries.
-  * Estimated CTOR for email only: Estimated Clicks relative to Estimated Opens.
-  
-  Availability date: Late June, 2026
-
-+++
-
 ### Administration {#june-26-administration}
 
 The following improvements have been added to administration and data management in this release.
@@ -541,15 +525,17 @@ The following improvements have been added to administration and data management
 
 ### Mobile messaging (SMS, MMS, RCS & LINE) {#june-26-mobile}
 
-+++ Coming soon — **Information below is subject to change.**
+The following improvements are coming to mobile messaging in this release.
 
 * **Unique Clicks for SMS reports** - A new **Unique Clicks** module has been introduced to SMS reports, bringing the same level of granular performance tracking to SMS that is currently available for Email reports.
 
-* **LINE Channel - Authoring changes** - The LINE channel UI has been upgraded with advanced message authoring capabilities. This release introduces support for **multiple message formats**, including Text, Image, Imagemap, Carousel, and Flex (JSON Editor), alongside real-time device previews. Users can now manage grouped messages of up to five ordered messages (with add, remove, and reorder controls) and leverage the integrated personalization editor for validated, dynamic messaging.
-
-* **SMS - Display Usage Metrics** - For customers purchasing SMS directly through Adobe Journey Optimizer, a new **SMS usage dashboard** has been introduced. You can now view and track your last 90 days of message sending metrics, categorized by Mobile Originated (MO) and Mobile Terminated (MT) messages. This data is also available for download via CSV, providing greater visibility and control over your SMS spend.
+* **SMS - Display Usage Metrics** - For customers purchasing SMS directly through Adobe Journey Optimizer, a new **SMS usage dashboard** has been introduced. You can now view and track your last 90 days of message sending metrics, categorized by Mobile Originated (MO) and Mobile Terminated (MT) messages. This data is also available for download via CSV, providing greater visibility and control over your SMS spend. [Learn more](../mobile/sms-usage-report.md)
 
 * **Estimated Clicks for SMS report** - A new Estimated Clicks metric is now available in Journeys, Campaigns, and Channel reports for email and SMS. This metric excludes identified bot and non-human interaction (NHI) traffic to provide a clearer view of genuine customer engagement. The existing Clicks metric remains available and continues to report total clicks.
+
++++ Coming soon — **Information below is subject to change.**
+
+* **LINE Channel - Authoring changes** - The LINE channel UI has been upgraded with advanced message authoring capabilities. This release introduces support for **multiple message formats**, including Text, Image, Imagemap, Carousel, and Flex (JSON Editor), alongside real-time device previews. Users can now manage grouped messages of up to five ordered messages (with add, remove, and reorder controls) and leverage the integrated personalization editor for validated, dynamic messaging.
 
 +++
 

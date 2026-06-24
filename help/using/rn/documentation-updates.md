@@ -25,6 +25,15 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## June 2026 {#june-2026}
 
+* The **Get started with datasets** and **Get started with schemas** pages have been updated with guidance on enabling datasets and schemas for Real-Time Customer Profile, including key considerations, the distinction between disabling a dataset versus its underlying schema, and links to the Adobe Experience Platform planning and best practices documentation. [Learn more about datasets](../data/get-started-datasets.md) and [Learn more about schemas](../data/get-started-schemas.md)
+
+* A new **Get started with Adobe Journey Optimizer** onboarding hub is now available. New users can choose their path by role, explore fundamentals, or jump to day-to-day areas if already onboarded — without needing to know where to look first. [Read more](../../rp_landing_pages/get-started-landing-page.md)
+
+* A new **Start from your goal** page lets you start from what you want to accomplish rather than a feature name. It maps business goals to the recommended Journey Optimizer capability across setup, journeys, campaigns, personalization, decisioning, and reporting. [Read more](../start/ajo-use-case-guide.md)
+
+* The **Get started for developers** role guide has been updated with clearer introductions for each section and improved **Collaborate across roles** tabs that reference journeys and link to key implementation pages. [Read more](../start/path/developer.md)
+
+* A new **Path assignment on journey re-entrance** subsection has been added to the **Path experimentation** documentation. It clarifies that path assignment is persistent for a profile across multiple entrances into the same journey version, but only within that journey version. Assignments reset when a new journey version is published, and each path experimentation activity in a journey applies an independent random assignment. [Read more](../building-journeys/path-experimentation.md#path-assignment)
 * References to **Adobe Experience Cloud** have been aligned with the **[!DNL Adobe CX Enterprise]** brand across the [!DNL Journey Optimizer] documentation.
 
 * The **Get started with deliverability** page has been updated with a new **Providers without per-recipient FBL** subsection. It lists the major mailbox providers that do not return per-recipient spam complaints — Gmail / Google Workspace, Apple iCloud, and Corporate Microsoft 365 / Exchange Online — and explains why the absence of a suppression list entry is expected for recipients using these services. [Read more](../reports/deliverability.md#providers-no-fbl)
