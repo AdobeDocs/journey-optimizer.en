@@ -24,7 +24,7 @@ solution: Journey Optimizer
     + {hide-from-toc} [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
-  + [Migrate batch audiences from Audience Qualification](using/building-journeys/aq-batch-audiences-migration.md)
+  + {hide-from-toc} [Migrate batch audiences from Audience Qualification](using/building-journeys/aq-batch-audiences-migration.md)
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
