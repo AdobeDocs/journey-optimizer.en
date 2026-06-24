@@ -110,6 +110,8 @@ The **[!UICONTROL Campaign overview]** table serves as a dashboard for SMS perfo
 
 The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your SMS messages, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
+![](assets/journey_sms_tracked_labels.png)
+
 +++ Learn more about Tracked link labels metrics
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
@@ -123,6 +125,8 @@ The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the
 ## Tracked link URLs {#track-link-url-sms}
 
 The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your SMS messages that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your SMS messages.
+
+![](assets/journey_sms_tracked_urls.png)
 
 +++ Learn more about Tracked link URLs metrics
 
