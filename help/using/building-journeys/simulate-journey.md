@@ -201,6 +201,10 @@ After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UI
 
 ## Trigger your events {#firing-events}
 
+>[!NOTE]
+>
+>Events triggered in Simulation are stored in dedicated datasets in Adobe Experience Platform, labeled as follows: ``JOtestmode - <schema of your event>``.
+
 If your journey includes one or more unitary events, you can trigger them while Simulation is active. For journeys not starting from an Event but containing one, this section will not be visible until a simulated user enters the journey.
 
 1. In **[!UICONTROL Select event type]**, select the event to fire for this simulation.
