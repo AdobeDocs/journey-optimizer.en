@@ -71,7 +71,7 @@ To configure your repository:
 
         ![](assets/aem-admin-settings-3.png)
     
-    +++
+        +++
 
     * +++ Publish instance setup
 
@@ -91,7 +91,7 @@ To configure your repository:
 
             ![](assets/aem-admin-settings-5.png)
 
-    +++
+        +++
 
 1. After you finish the instance setup, pick a Content Fragment to confirm that the integration works.
 
