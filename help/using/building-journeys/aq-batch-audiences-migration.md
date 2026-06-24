@@ -65,7 +65,7 @@ If you are using a batch audience in an Audience Qualification node, identify yo
 
 **Recommended alternatives:**
 
-* **Reacting to opens or clicks within the same journey** — Use the **[Reaction event](reaction-events.md)** node. It is purpose-built to respond to opens and clicks from a message sent within that same journey, without requiring a separate audience.
+* **Reacting to opens or clicks within the same journey** — Use the **[Reaction event](reaction-events.md)** node. It is purpose-built to respond to opens and clicks from a message sent within that same journey, without requiring a separate audience. [See an end-to-end example using Reaction events](journeys-uc.md#send-multi-channel-messages)
 
 * **Cross-journey click targeting** — Build a [streaming audience](../audience/creating-a-segment-definition.md#evaluation-method-in-journey-optimizer) from click events and use the Audience Qualification node with that streaming audience instead.
 
@@ -89,7 +89,7 @@ Use a **[Read Audience](read-audience.md)** journey with the **[!UICONTROL Trigg
 
 **Recommended alternative:**
 
-Use a **[Read Audience](read-audience.md)** journey. It is purpose-built for processing large audiences in bulk, handling profiles in controlled batches and delivering more predictable, reliable journey execution at scale.
+Use a **[Read Audience](read-audience.md)** journey. It is purpose-built for processing large audiences in bulk, handling profiles in controlled batches and delivering more predictable, reliable journey execution at scale. [See an end-to-end example](message-to-subscribers-uc.md)
 
 ## What if none of the alternatives work for your use case? {#exceptions}
 
@@ -104,3 +104,6 @@ If your use case cannot be solved using any of the migration paths above, contac
 * [About audiences](../audience/about-audiences.md) — audience types and how they are built in Journey Optimizer
 * [Manage the suppression list](../configuration/manage-suppression-list.md) — how to access and configure bounce suppression
 * [Journey guardrails and limitations](limitations.md)
+* [Journey entry and exit criteria](entry-exit-criteria-guide.md) — understand real-time vs batch entry patterns with real-world examples
+* [Send multi-channel messages](journeys-uc.md#send-multi-channel-messages) — end-to-end use case combining Read Audience, Reaction events, email, and push
+* [Send a message to subscribers](message-to-subscribers-uc.md) — end-to-end use case for bulk audience activation with Read Audience
