@@ -59,6 +59,8 @@ All data that is ingested into Adobe Experience Platform is persisted within the
 
 * As of February 2025, a time-to-live (TTL) guardrail is being rolled out to Journey Optimizer system-generated datasets. [Learn more](datasets-ttl.md)
 
+* Enabling a dataset for Profile has permanent implications at the schema level. Plan your schema and identity design carefully before enabling. [Learn more](#profile-datasets)
+
 ## Access datasets {#access}
 
 The **Datasets** workspace in [!DNL Adobe Journey Optimizer] user interface allows you to explore data and create datasets. To open the Datasets dashboard, select **Datasets** in the left-navigation.
@@ -126,6 +128,21 @@ Watch this video to learn how to create a dataset, map it to a schema, add data 
 
 >[!VIDEO](https://video.tv.adobe.com/v/334293?quality=12)
 
+## Enable datasets for Profile {#profile-datasets}
+
+When you create a dataset, you can enable it to contribute to [Real-Time Customer Profile](../audience/get-started-profiles.md). This allows the data it contains to be used for segmentation, personalization, and journey conditions in [!DNL Journey Optimizer].
+
+Before enabling, keep the following in mind:
+
+* **Schema enablement is permanent.** Once the schema underlying a dataset is enabled for Profile, this cannot be reversed — the schema cannot be disabled or deleted. Only the dataset itself can be disabled or deleted separately.
+* **Disabling a dataset has consequences.** You can disable or delete a dataset for Profile independently of its schema, but doing so removes the associated profile records and may disrupt segmentation and activation workflows.
+* **Plan your configuration before enabling.** Identity fields and field group selections become harder to change after Profile enablement. Finalize your schema design first.
+
+For detailed guidance, refer to the Adobe Experience Platform documentation:
+
+* [Profile enablement planning](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/profile-enablement-planning){target="_blank"} — pre-enablement checklist covering identity configuration, field group selection, and dataset purpose validation.
+* [Managing profile-enabled schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices#managing-profile-enabled-schemas){target="_blank"} — guidance on deprecating profile-enabled schemas, including renaming strategies.
+
 ## Data Governance
 
 In a dataset, browse the **Data Governance** tab to check labels at the dataset and field level. Data Governance categorize data according to the type of policies that apply.
@@ -148,3 +165,4 @@ Learn more about Data Governance and data usage labels in the [Data Governance d
 >* [Datasets documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}
 >* [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 >* [Data management license entitlement best practices](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/data-management-best-practices#data-management-best-practices){target="_blank"}
+>* [Managing profile-enabled schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices#managing-profile-enabled-schemas){target="_blank"}
