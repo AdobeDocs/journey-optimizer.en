@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## June 2026 {#june-2026}
 
+* The **Split** activity documentation has been updated to document the **[!UICONTROL Segment code]** field available in each subset settings, which allows you to assign a unique identifier to each audience segment for tracking and reporting purposes. [Read more](../orchestrated/activities/split.md)
+
 * The **Configure a Targeting dimension** page has been updated to document the two targeting dimension types available in Orchestrated campaigns: the built-in **profile targeting dimension** (no configuration required) and **custom targeting dimensions** based on relational schemas. [Read more](../orchestrated/target-dimension.md)
 
 * The **Leverage themes in a fragment** documentation has been clarified to explicitly document the 5-theme compatibility limit (including the Adobe default theme constraint) and to explain that fragment insertion is blocked when the email theme is not one of the fragment-associated themes. [Read more](../email/apply-email-themes.md#leverage-themes-fragment)
