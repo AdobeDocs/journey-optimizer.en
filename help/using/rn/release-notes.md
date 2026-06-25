@@ -506,6 +506,18 @@ The following capabilities and improvements are coming to content management and
 
 +++
 
+### Reporting {#june-26-reporting}
+
+The following improvements have been added to reporting in this release.
+
+* **New Estimated Click Metrics for Email Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports.
+
+  * **Estimated CTR** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
+  * **Estimated CTOR** (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
+  
+  Availability date: June 25, 2026
+
 ### Administration {#june-26-administration}
 
 The following improvements have been added to administration and data management in this release.
