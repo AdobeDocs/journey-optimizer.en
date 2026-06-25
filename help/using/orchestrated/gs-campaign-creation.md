@@ -12,8 +12,6 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -26,6 +24,12 @@ subfeature_v2:
     internal-label: Get started
 ---
 # Key steps to create an Orchestrated campaign {#orchestrated-campaign-creation}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the key steps to build and launch an Orchestrated campaign in Adobe Journey Optimizer, from creating and scheduling it to orchestrating activities, monitoring execution, and analyzing results.
+
+>[!ENDSHADEBOX]
 
 This page walks you through the essential steps to build and launch an Orchestrated campaign—from setup and design to monitoring and reporting.
 

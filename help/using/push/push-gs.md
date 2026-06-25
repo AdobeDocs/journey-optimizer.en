@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Push notification data flow and components {#get-started-push}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the push notification data flow, the key services and components involved, and how notifications are delivered end-to-end with Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 This page helps you setup and understand key services and workflows involved with push notifications in [!DNL Journey Optimizer]. 
 
 
@@ -78,7 +84,7 @@ The following pictorial shows the systems and services involved with associated 
     * [Firebase Cloud Messaging (FCM)](https://firebase.google.com/docs/cloud-messaging) - to send notifications to Android mobile app
     * [Apple Push Notification Service (APNs)](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/APNSOverview.html) - to send notifications to iOS mobile app
 
-* **Adobe Experience Platform Mobile SDK** which provides client-side integration APIs for your mobiles via Android and iOS compatible SDKs. The SDK provides an [!DNL Adobe Journey Optimizer] extension exposing a variety of APIs specific for push messaging and enable data flow like registering the push token or sending push tracking events or any other custom experience events to Adobe Experience Platform. The SDK also provides a variety of other extensions that enable other Adobe Experience Cloud as well as 3rd party partner capabilities.
+* **Adobe Experience Platform Mobile SDK** which provides client-side integration APIs for your mobiles via Android and iOS compatible SDKs. The SDK provides an [!DNL Adobe Journey Optimizer] extension exposing a variety of APIs specific for push messaging and enable data flow like registering the push token or sending push tracking events or any other custom experience events to Adobe Experience Platform. The SDK also provides a variety of other extensions that enable other [!DNL Adobe CX Enterprise] as well as 3rd party partner capabilities.
 
     SDK integration also requires setup of Adobe Experience Platform [Data Collection](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html){target="_blank"} services such as:
 

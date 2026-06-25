@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Adobe Experience Platform data source {#adobe-experience-platform-data-source}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up field groups on the built-in Adobe Experience Platform data source so you can retrieve and use Real-time Customer Profile data in your journeys.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_built_in"
 >title="Adobe Experience Platform data source"

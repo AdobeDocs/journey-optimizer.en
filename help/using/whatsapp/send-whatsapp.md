@@ -31,11 +31,18 @@ level_v2:
 ---
 # Check and send your WhatsApp messages {#send-whatsapp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Preview, validate, and send your WhatsApp message, then analyze the interaction data it returns, so you can confirm your message is correct before delivery and measure how recipients engage with it.
+
+>[!ENDSHADEBOX]
+
 ## Preview your WhatsApp message {#preview-whatsapp}
 
-Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. If you inserted personalized content, you can check how this content is displayed in the message.
+Once your message content has been defined, you can preview its content using either simulation method:
 
-To do this, click **[!UICONTROL Simulate content]** then check your message using the test profile data.
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
 
 Detailed information on how to preview & test content is available in the [Content Management](../content-management/preview-test.md) section.
 
@@ -57,7 +64,7 @@ When your WhatsApp message is ready, complete the configuration of your [journey
 
 ## Analyze WhatsApp interactions {#whatsapp-channel-context}
 
-Journey Optimizer captures additional interaction data returned from the WhatsApp channel and stores it in the **Reporting - Email Tracking Experience Event Dataset** under the `whatsAppChannelContext` field group. Use these fields to build [audiences](../audience/about-audiences.md), run [queries](../data/get-started-queries.md), and analyze WhatsApp engagement. [Learn more about system datasets](../data/get-started-datasets.md#system-datasets).
+Journey Optimizer captures additional interaction data returned from the WhatsApp channel and stores it in the **AJO - Email Tracking Experience Event Dataset** under the `whatsAppChannelContext` field group. Use these fields to build [audiences](../audience/about-audiences.md), run [queries](../data/get-started-queries.md), and analyze WhatsApp engagement. [Learn more about system datasets](../data/get-started-datasets.md#system-datasets).
 
 The following fields are captured:
 

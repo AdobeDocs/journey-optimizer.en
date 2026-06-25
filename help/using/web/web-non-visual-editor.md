@@ -29,6 +29,12 @@ topic_v2:
 ---
 # Use the web non-visual editor {#web-non-visual-editor}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add CSS selector and page head modifications to your web pages with the Adobe Journey Optimizer non-visual editor, without installing a browser extension or loading the web designer.
+
+>[!ENDSHADEBOX]
+
 In addition to the [!DNL Journey Optimizer] visual [web designer](web-visual-editor.md), you can also add modifications to your web pages using a **non-visual editor**.
 
 This can be useful if you cannot, or are not allowed to, install browser extensions such as the [Adobe Experience Cloud Visual Helper](web-prerequisites.md#visual-authoring-prerequisites), which is required to load your pages in the web designer.
@@ -66,7 +72,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
     Click the **[!UICONTROL More actions]** button next to your modification and select **[!UICONTROL Info]** to display its details. You can also **[!UICONTROL Delete the modification]** if needed.
 
-    ![](assets/web-non-visual-editor-ex-more.png){width="50%" align="left"}
+    ![](assets/web-non-visual-editor-ex-more.png){width="50%"}
 
     >[!NOTE]
     >
@@ -77,7 +83,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
 1. In addition, you can select any element of your website and track the clicks on that element. To enable click tracking, and define the actions to track, click the second icon on the left rail, as shown below:
     
-    ![](assets/web-campaign-click.png){width="50%" align="left"}
+    ![](assets/web-campaign-click.png){width="50%"}
 
     Use the **Add Component** button to select a new action to track. Learn more about click tracking usage in [this section](monitor-web-experiences.md#use-click-tracking).
 

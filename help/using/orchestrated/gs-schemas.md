@@ -10,8 +10,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
@@ -22,6 +20,12 @@ subfeature_v2:
     internal-label: Get started
 ---
 # Get started with relational schemas and datasets{#gs-schemas}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the key concepts and steps to create relational schemas and datasets, link them, and ingest data for Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
 
 This guide walks you through the process of creating a relational schema, configuring a dataset for Orchestrated campaigns and ingesting data.
 

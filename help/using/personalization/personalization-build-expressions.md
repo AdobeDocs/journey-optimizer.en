@@ -21,6 +21,12 @@ subfeature_v2:
 ---
 # Add personalization {#build-personalization-expressions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the personalization editor to add, customize, and validate personalization expressions from sources such as profile attributes, audiences, offer decisions, and contextual attributes.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_perso_editor"
 >title="About the personalization editor"

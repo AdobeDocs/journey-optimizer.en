@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Create a content experiment {#content-experiment}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a content experiment to define and compare multiple treatments, choose an experiment type, and scale the winning variation across your campaigns and journeys in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_content_experiment"
 >title="Content experiment"
@@ -257,7 +263,7 @@ Note that Bring your own Multi-armed bandit experiment is only available with th
 
     ![](assets/content_experiment_19.png)
 
-1. Once your message content has been defined, click the **[!UICONTROL Simulate content]** button to control the rendering of your delivery, and check personalization settings with test profiles. [Learn more](../content-management/preview-test.md)
+1. Once your message content has been defined, use either simulation method to control the rendering of your delivery and check personalization settings: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more](../content-management/preview-test.md)
 
 After configuring your experimentation, you can follow the success of your delivery with your report. [Learn more](../reports/campaign-global-report-cja-experimentation.md)
 

@@ -10,13 +10,17 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
 ---
 # Change dimension {#change-dimension}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Change dimension activity to shift the targeting dimension within an Orchestrated campaign, for example switching from wishlists to the recipients linked to them.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_dimension_complement"

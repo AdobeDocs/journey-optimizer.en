@@ -534,7 +534,7 @@ table>
 <tr>
 <td>
 <p>You can now re-create the experiences from a Journey Optimizer sandbox to another, for example from a non-production sandbox to a production sandbox. This new capability copies an entire Journey, including any objects the Journey depends on to run correctly, from one environment to another. In addition to Journeys, you can also copy other components, such as Offers, Messages, Schemas, Datasets, Data Sources, Events, and Actions.</p>
-<p>For more information, refer to the <a href="../building-journeys/copy-to-sandbox.md">detailed documentation</a>.
+<p>For more information, refer to the <a href="../configuration/copy-objects-to-sandbox.md">detailed documentation</a>.
 </td>
 </tr>
 </tbody>

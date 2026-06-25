@@ -32,7 +32,19 @@ topic_v2:
 ---
 # Create a LINE message {#create-line}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Add a LINE action to a journey or campaign and build personalized content, from text and stickers to images, videos, locations, and Flex Messages, so you can engage customers on LINE.
+
+>[!ENDSHADEBOX]
+
 ## Add a LINE message {#create-line-journey-campaign}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_line"
+>title="LINE action"
+>abstract="A LINE channel action sends a LINE message to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a LINE configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 Browse the tabs below to learn how to add a LINE message in a campaign or a journey.
 
@@ -115,7 +127,7 @@ To configure your LINE content, follow the steps below.
 
 1. Click **[!UICONTROL Save]** and check your message in the preview.
 
-1. Use the **[!UICONTROL Simulate content]** button to preview your LINE message content and personalized content.
+1. Use **[!UICONTROL Simulate content]** to preview your LINE message content and personalized content. [Learn more](send-line.md)
 
 Once you have performed your tests and validated the content, you can send your LINE message to your audience. These steps are detailed in [this page](send-line.md)
 

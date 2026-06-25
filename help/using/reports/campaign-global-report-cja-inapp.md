@@ -40,6 +40,12 @@ topic_v2:
 ---
 # In-app campaign report {#campaign-global-report-cja-inapp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the In-app campaign report in Adobe Journey Optimizer to analyze display and click trends, tracking data, and tracked links for your in-app messages.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >Before you can report on your In-App campaigns and journeys, make sure to follow the reporting prerequisites provided on [this page](../in-app/inapp-configuration.md#experiment-prerequisites).

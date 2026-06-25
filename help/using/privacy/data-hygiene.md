@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Perform data lifecycle operations {#data-hygiene}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure and schedule data lifecycle operations so you can keep your records accurate, used as intended, and deleted in line with your organizational policies.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >Data lifecycle capabilities are currently only available for organizations that have purchased the **Healthcare Shield** and **Privacy and Security Shield** add-on offerings.

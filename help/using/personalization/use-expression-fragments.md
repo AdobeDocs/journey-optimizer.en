@@ -35,6 +35,12 @@ subfeature_v2:
 ---
 # Leverage expression fragments {#use-expression-fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to insert and reuse expression fragments in the personalization editor, work with implicit variables, use fragments inside loops, customize editable fields, and break inheritance in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 When using the **personalization editor**, you can leverage all the expression fragments that have been created or saved to the current sandbox.
 
 A fragment is a reusable component that can be referenced across [!DNL Journey Optimizer] campaigns and journeys. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble contents in an improved design process. [Learn more on fragments](../content-management/fragments.md)

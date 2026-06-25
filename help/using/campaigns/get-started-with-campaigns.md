@@ -50,6 +50,12 @@ topic_v2:
 ---
 # Get started with campaigns {#get-started-campaigns}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand campaign fundamentals, compare the available campaign types, and follow the end-to-end creation workflow so you can choose the right approach and build campaigns that deliver targeted content across channels in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule"
 >title="Campaign schedule"
@@ -193,6 +199,10 @@ Use [!DNL Journey Optimizer] campaigns to:
 Before working with campaigns, make sure you have the following in place:
 
 * **Audiences** - Audiences must be available in Adobe Experience Platform before creating campaigns. [Get started with audiences →](../audience/about-audiences.md)
+
+    >[!NOTE]
+    >
+    >Every profile engaged by a campaign counts toward your organization's **Engageable Profiles** license metric (rolling 12-month window, counted once per sandbox). Activating a campaign to a large or new audience can cause a significant increase in this count. [Monitor your Engageable Profiles count](../audience/license-usage.md)
 
 * **Channel configurations** - Channel configurations (presets) must be created and available for the channels you want to use. [Set up channel configurations →](../configuration/channel-surfaces.md)
 

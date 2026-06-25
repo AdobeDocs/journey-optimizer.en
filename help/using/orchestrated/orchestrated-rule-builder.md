@@ -10,13 +10,17 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
 ---
 # Work with the rule builder {#orchestrated-rule-builder}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the rule builder to filter data and create the queries that target audiences in your Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
 
 Orchestrated campaigns comes with a rule builder that simplifies the process of filtering the database based on various criteria. The rule builder manages very complex and long queries efficiently, offering enhanced flexibility and precision.
 

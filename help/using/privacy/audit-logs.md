@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Audit actions on Journey Optimizer resources {#track-changes}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the audit logs that record user actions on Journey Optimizer resources, so you can increase visibility, troubleshoot issues, and demonstrate compliance with regulations and data stewardship policies.
+
+>[!ENDSHADEBOX]
+
 ## About audit logs {#audit-logs}
 
 >[!IMPORTANT]
@@ -83,5 +89,6 @@ The following table outlines which actions on which Journey Optimizer resources 
 | Journey custom action | Create / Delete / Update |
 | Journey datasource | Create / Delete / Update |
 | Journey event | Create / Delete / Update |
+| Journey fragment | Create / Delete / Update / Activate / Archive |
 | Message frequency rule | Create / Delete / Update |
 | Ranking strategy | Create / Delete / Update |

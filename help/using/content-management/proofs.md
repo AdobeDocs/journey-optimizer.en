@@ -12,11 +12,18 @@ subfeature_v2:
 ---
 # Send proofs using test profiles data {#send-proofs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to send email proofs using test profile data so recipients can review rendering, content, and personalization before the message goes to your main audience.
+
+>[!ENDSHADEBOX]
+
 A proof is a specific message that allows you to test a message before sending it to the main audience. Recipients of the proof are in charge of approving the message: rendering, content, personalization settings, configuration.
 
->[!NOTE]
->
->[!DNL Journey Optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+You can send proofs using either simulation method:
+
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to send proofs with test profiles.
+* Click **[!UICONTROL Simulate content]** to send proofs for content variations created with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md#proofs)
 
 ## Must-read {#must-read}
 

@@ -10,14 +10,18 @@ level: Intermediate
 version: Campaign Orchestration
 exl-id: 7a4e8f2c-91d3-4b65-8e10-2c9f4a6b8d1e
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
 ---
 
 # Define global variables in Orchestrated campaigns {#define-global-variables}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add and manage global variables on an Orchestrated campaign so you can reuse shared name-value pairs across the rule builder, test conditions, and other canvas logic.
+
+>[!ENDSHADEBOX]
 
 **Global variables** are name–value pairs you set on a single Orchestrated campaign and reuse on each run, so you can steer **[!UICONTROL Test]** conditions, the rule builder, and other canvas logic with shared values (for example, a default channel or test email) without pasting the same value into every activity.
 

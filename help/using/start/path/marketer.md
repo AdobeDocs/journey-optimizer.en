@@ -44,16 +44,25 @@ topic_v2:
 ---
 # Get started for Marketers {#get-started-marketers}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Follow a getting-started path for marketers so you can build audiences, design content, and orchestrate journeys and campaigns that deliver personalized customer experiences in Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 As a **Marketer** or **Business Practitioner**, you design customer journeys to deliver personal, contextual experiences to customers. You create and manage all the various components of these personalized journeys, including email and push messages, offers, and decision components to intelligently personalize message content. Journey Optimizer provides a unified user experience where you can implement entire end-to-end use cases in one place. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) and the [Data Engineer](data-engineer.md) granted you access and prepared your environment.
+
+>[!NOTE]
+>
+>**Implementation order:** [Administrator](administrator.md) → [Data Engineer](data-engineer.md) → [Developer](developer.md) → You are here: **Marketer**
+>
+>Confirm [environment setup](administrator.md) and [data configuration](data-engineer.md) are complete before building journeys.
 
 ## Get started with the essentials
 
-Journey Optimizer brings together real-time customer insights, modern omnichannel orchestration, and intelligent decisioning in a single application. Create personalized, connected customer experiences across email, SMS, push, web push, in-app, web, direct mail, content cards, and more.
-
-Journey Optimizer offers two powerful orchestration approaches:
-
-* **Journeys**: Real-time, one-to-one engagement where each customer moves through at their own pace, triggered by behavior or events
-* **Orchestrated campaigns**: Complex, multi-step batch campaigns at scale where audiences progress together through workflows—perfect for brand-initiated campaigns like seasonal promotions, product launches, or account-based communications
+>[!NOTE]
+>
+>New to Journey Optimizer? Read [What is Journey Optimizer](../get-started.md) before starting this guide.
 
 Work with your [Administrators](administrator.md) to gain access and with [Data Engineers](data-engineer.md) to set up audiences, data, and relational schemas for advanced segmentation. See the [Get started with data management](../../data/gs-data.md) overview to understand what data setup is needed before you can build journeys and campaigns.
 
@@ -237,3 +246,14 @@ Collaborate with [Administrators](administrator.md) on access and configurations
 2. **Leverage AI**: Use AI Assistant to ask questions and accelerate content creation
 3. **Join the community**: Connect with other Journey Optimizer users in the [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
 4. **Explore tutorials**: Watch step-by-step videos on [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}
+
+## Other role guides {#other-role-guides}
+
+| Role | Guide |
+|------|-------|
+| Administrator | [Get started for administrators](administrator.md) |
+| Data Engineer | [Get started for data engineers](data-engineer.md) |
+| Developer | [Get started for developers](developer.md) |
+| Marketer | [Get started for marketers](marketer.md) |
+
+Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../../rp_landing_pages/get-started-landing-page.md)

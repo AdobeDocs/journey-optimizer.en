@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Configure a unitary event {#configure-an-event}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure a unitary event so you can trigger a journey in real time for a specific person based on their behavior, such as a purchase or a loyalty milestone.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_unitary"
 >title="Unitary events"

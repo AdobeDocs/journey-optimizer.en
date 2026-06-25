@@ -20,6 +20,12 @@ subfeature_v2:
 ---
 # Get started with personalization{#add-personalization}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with personalization in Adobe Journey Optimizer, including how the personalization editor works, the profile data you can use, the learning playground, and inline editing.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_homepage_card5"
 >title="Personalize experiences"

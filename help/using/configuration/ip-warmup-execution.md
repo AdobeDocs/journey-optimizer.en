@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Execute the IP warmup plan {#ip-warmup-running}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to define the phases and runs of your IP warmup plan, activate them, and monitor progress through statuses and reports.
+
+>[!ENDSHADEBOX]
+
 Once you have [created an IP warmup plan](ip-warmup-plan.md) and uploaded the file prepared with your deliverability consultant, you can define the phases and runs in your plan.
 
 Each phase is composed of several runs, to which you assign a single campaign.

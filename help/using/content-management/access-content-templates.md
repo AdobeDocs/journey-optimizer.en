@@ -30,6 +30,12 @@ level_v2:
 ---
 # Access and manage content templates {#access-manage-templates}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, search, organize into folders, edit, delete, and export content templates across sandboxes in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 ## Prerequisites {#prerequisites}
 
 To access and manage content templates, ensure the following:

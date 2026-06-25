@@ -50,7 +50,13 @@ topic_v2:
 ---
 # Navigate the interface {#user-interface}
 
-To access Adobe Journey Optimizer, sign in to [Adobe Experience Cloud](https://experience.adobe.com) with your Adobe ID, then select [!DNL Journey Optimizer].
+>[!BEGINSHADEBOX]
+
+**On this page:** Find your way around the Adobe Journey Optimizer interface—top bar, home page, and left navigation—so you can quickly access the features and capabilities you need.
+
+>[!ENDSHADEBOX]
+
+To access Adobe Journey Optimizer, sign in to [[!DNL Adobe CX Enterprise]](https://experience.adobe.com) with your Adobe ID, then select [!DNL Journey Optimizer].
 
 >[!NOTE]
 >
@@ -412,3 +418,6 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_orchestration_load_file"
 >title="Load file activity"
 >abstract="The **Load file** activity is a **Targeting** activity. Use it to upload a CSV or TXT file on the Orchestrated campaign canvas and use it as the campaign audience. File data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. Rows are reconciled to existing recipients using an identity column and a targeting dimension."
+
+
+

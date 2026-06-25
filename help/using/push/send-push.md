@@ -34,11 +34,18 @@ topic_v2:
 ---
 # Check & send your push notification {#send-push}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview, validate, and send your push notification in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 ## Preview your push notification {#preview-push}
 
-Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. If you inserted personalized content, you can check how this content is displayed in the message.
+Once your message content has been defined, you can preview its content using either simulation method:
 
-To do this, click **[!UICONTROL Simulate content]**. You can then select the type of device to preview content: **[!UICONTROL iOS]**, **[!UICONTROL Android]**, or **[!UICONTROL Web]**.
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. You can then select the type of device to preview content: **[!UICONTROL iOS]**, **[!UICONTROL Android]**, or **[!UICONTROL Web]**.
 
 ![](assets/push_preview_3.png)
 

@@ -14,13 +14,9 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
 topic_v2:
@@ -38,6 +34,12 @@ topic_v2:
     internal-label: Customer profiles
 ---
 # Frequently asked questions {#faq-oc}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers to frequently asked questions about Orchestrated campaigns, including data models, channels, activities, publication, and consent.
+
+>[!ENDSHADEBOX]
 
 You will find below Frequently Asked Questions about Adobe Journey Optimizer Orchestrated campaigns.
 

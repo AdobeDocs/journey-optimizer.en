@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Configure your code-based experience {#code-based-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a code-based experience channel configuration that defines the surface, platform, and location where your content is delivered and consumed inside your application or web page.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_surface"
 >title="Define a code-based experience configuration"

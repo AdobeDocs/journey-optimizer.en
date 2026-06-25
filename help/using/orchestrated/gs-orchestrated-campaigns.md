@@ -15,8 +15,6 @@ feature_v2:
     internal-label: Guardrails and limitations
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
@@ -31,6 +29,12 @@ topic_v2:
     internal-label: Insights
 ---
 # Get started with Orchestrated campaigns {#orchestrated-camp}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how Orchestrated campaigns in Adobe Journey Optimizer let you query relational datasets, build audiences with exact counts, and deliver marketing and transactional messages across multiple channels.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_orchestrated"

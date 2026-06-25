@@ -45,11 +45,23 @@ topic_v2:
 ---
 # Get started for system administrators {#get-started-sys-admins}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up users, permissions, sandboxes, and channel configurations so your teams can work in Adobe Journey Optimizer securely and efficiently.
+
+>[!ENDSHADEBOX]
+
 As a **System Administrator**, you set up the Journey Optimizer environment and manage access to enable your teams to work efficiently and securely. You perform essential configuration steps so that the [Data Engineer](data-engineer.md), [Developer](developer.md), and [Marketer](marketer.md) can start working with [!DNL Adobe Journey Optimizer].
 
 Your primary responsibilities include setting up user groups and permissions, creating and managing sandboxes for partitioning data and journeys for different user groups, and configuring delivery channels and message presets to ensure consistent branding across the various messages and assets delivered through Journey Optimizer. You ensure the right people have access to the right capabilities while maintaining security and governance.
 
 These capabilities can be managed by **[!UICONTROL Product administrators]** that have access to the Permissions product. [Learn more about Permissions](../../administration/permissions.md){target="_blank"}.
+
+>[!NOTE]
+>
+>**Implementation order:** You are here: **Administrator** → [Data Engineer](data-engineer.md) → [Developer](developer.md) → [Marketer](marketer.md)
+>
+>The Administrator sets up the environment first. Data engineers, developers, and marketers depend on this work being complete before they can begin.
 
 ## Set up access and permissions
 
@@ -165,3 +177,14 @@ Once the environment is configured:
 1. **Verify setup**: Confirm that all team members can access their required features
 2. **Monitor usage**: Use the administration dashboards to track system usage and identify issues
 3. **Maintain permissions**: Regularly review and update permissions as team roles evolve
+
+## Other role guides {#other-role-guides}
+
+| Role | Guide |
+|------|-------|
+| Administrator | [Get started for administrators](administrator.md) |
+| Data Engineer | [Get started for data engineers](data-engineer.md) |
+| Developer | [Get started for developers](developer.md) |
+| Marketer | [Get started for marketers](marketer.md) |
+
+Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../../rp_landing_pages/get-started-landing-page.md)

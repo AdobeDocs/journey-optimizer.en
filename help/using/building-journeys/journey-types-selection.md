@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Journey types and selection guide
+title: "Journey types: choose the right one"
 description: Compare journey types and choose the right one for your use case with decision guides and feature compatibility matrix
 feature: Journeys, Get Started, Overview
 role: User
@@ -38,131 +38,120 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
 ---
-# Journey types and selection guide {#journey-types-selection}
+# Journey types: choose the right one {#journey-types-selection}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to compare the four journey types — unitary event, read audience, audience qualification, and business event — and use the decision guide and feature compatibility matrix to choose the right one for your use case.
+
+>[!ENDSHADEBOX]
 
 [!DNL Adobe Journey Optimizer] supports four journey types, each designed for different entry mechanisms and business scenarios. This guide helps you understand the differences and choose the right type for your use case.
+
+>[!NOTE]
+>
+>Not sure which type to choose? Start with **Unitary event journeys** for event-based experiences or **Read Audience journeys** for scheduled campaigns — these cover most common use cases.
 
 ## Journey types overview {#journey-types}
 
 >[!BEGINTABS]
 
->[!TAB Unitary journeys]
+>[!TAB Unitary event journeys]
 
 **When to use:** Real-time, event-triggered experiences
 
-**Unitary journeys** are triggered individually when a specific action occurs (purchase, app sign-in, form submission). Profiles enter one at a time in real-time, making this ideal for immediate, behavior-driven responses.
+**Unitary event journeys** are triggered individually when a specific action occurs (purchase, app sign-in, form submission). Profiles enter one at a time in real time, making this ideal for immediate, behavior-driven responses.
 
-**Perfect for:** Order confirmations after purchase, welcome emails when someone subscribes, cart abandonment triggered by browsing, and password reset notifications.
+**Perfect for:** Cart abandonment recovery, new member onboarding, welcome emails when someone subscribes, and post-login personalization.
 
-➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md)
+➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md) | [Create your first journey](journey-gs.md)
 
 >[!TAB Read Audience journeys]
 
 **When to use:** Scheduled campaigns to audience segments
 
-**Read Audience journeys** start with an [!DNL Adobe Experience Platform] audience and send messages in batch to all profiles simultaneously. This journey type is ideal for scheduled, large-scale communications.
+**Read Audience journeys** start with an [!DNL Adobe Experience Platform] audience and send messages in batch to all profiles simultaneously. This journey type is ideal for scheduled, large-scale communications. Use the **incremental read** option on recurring journeys to process only profiles who joined the audience since the last execution, rather than re-processing the full audience each time.
 
-**Perfect for:** Monthly newsletters, promotional campaigns to target segments, product announcements, and seasonal marketing campaigns.
+**Perfect for:** Monthly newsletters, promotional campaigns to target segments, product announcements, recurring re-engagement series, and seasonal marketing campaigns.
 
-➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md)
+➡️ [Learn about Read Audience](read-audience.md) | [Get started with audiences](../audience/about-audiences.md) | [Create your first journey](journey-gs.md)
 
 >[!TAB Audience Qualification journeys]
 
 **When to use:** Real-time responses to audience membership changes
 
-**Audience Qualification journeys** trigger when profiles qualify for (or exit from) a specific audience. Profiles enter individually as they meet criteria in real-time, enabling immediate engagement when customer behavior changes.
+**Audience Qualification journeys** trigger when profiles qualify for (or exit from) a specific audience. Profiles enter individually as they meet criteria, enabling immediate engagement when customer behavior changes. Use **streaming-evaluated** audiences — these are the only supported audience type for this activity.
 
-**Perfect for:** VIP tier upgrade notifications, re-engagement when customers become inactive, first purchase celebration messages, and geographic targeting when customers move.
+>[!CAUTION]
+>
+>Starting **August 2026**, journeys using a batch audience in an Audience Qualification node cannot be published. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
 
-➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md)
+**Perfect for:** VIP tier upgrade notifications, first purchase celebration messages, churn risk alerts, and loyalty lifecycle stage transitions.
+
+➡️ [Learn about Audience Qualification](audience-qualification-events.md) | [Creating audiences](../audience/creating-a-segment-definition.md) | [Create your first journey](journey-gs.md)
 
 >[!TAB Business event journeys]
 
 **When to use:** Business conditions affecting multiple customers
 
-**Business event journeys** are triggered by business-level events (stock updates, weather alerts, price changes) that affect multiple profiles simultaneously. These respond to broader business conditions rather than individual actions.
+**Business event journeys** are triggered by a business-level event (stock updates, price changes) that affects multiple profiles simultaneously. Internally, the business event trigger is always followed by a Read Audience step that ingests the relevant profiles — so profile entry follows Read Audience throughput rules, not unitary event throughput.
 
-**Perfect for:** Low inventory alerts to interested customers, flash sale announcements, weather-based promotions, price drop notifications, and product back-in-stock alerts.
+**Perfect for:** Low inventory alerts to interested customers, flash sale announcements, price drop notifications, and product back-in-stock alerts.
 
-➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md)
+➡️ [Learn about business events](../event/about-creating-business.md) | [Entry management](entry-management.md) | [Create your first journey](journey-gs.md)
 
 >[!ENDTABS]
 
-## Decision guide: Choosing your journey type {#decision-guide}
+## Decision guide: choosing your journey type {#decision-guide}
 
-Follow this decision tree to select the right journey type for your use case:
-
-### Step 1: What triggers the journey?
-
-* **Customer performs specific action** (purchase, click, login) → Go to Step 2
-* **Time/schedule** (send at specific time or recurring) → **Use Read Audience journey**
-* **Customer status changes** (joins/leaves a segment) → Go to Step 3
-* **Business condition** (stock level, price change, weather) → **Use Business event journey**
-
-### Step 2: Individual customer action triggers
-
-* **Is immediate, real-time response needed?** 
-  * Yes → **Use Unitary journey**
-  * No → Consider Read Audience journey with scheduled execution
-
-### Step 3: Customer status changes
-
-* **Need to respond when customers enter OR exit a segment?**
-  * Yes → **Use Audience Qualification journey**
-  * No, only when entering → Consider Unitary journey with event or Read Audience with audience filter
-
-### Quick selection by use case
+Use the table below to match your goal to the right journey type. For most new users, **Unitary event** or **Read Audience** journeys cover the majority of use cases.
 
 | Your goal | Recommended journey type | Why |
-|-----------|------------------------|-----|
-| Send order confirmation after purchase | Unitary | Immediate response to individual action |
+|-----------|--------------------------|-----|
+| Recover an abandoned cart | Unitary event | Immediate response to individual behavior |
 | Send monthly newsletter to subscribers | Read Audience | Scheduled batch communication |
-| Notify customers when they reach VIP status | Audience Qualification | Real-time response to status change |
+| Notify customers when they reach VIP status | Audience Qualification | Real-time response to streaming audience entry |
 | Alert customers about low stock on watched items | Business event | Business condition affects multiple customers |
-| Welcome new app users | Unitary | Triggered by signup event |
-| Re-engage inactive customers | Audience Qualification | Responds to inactivity segment entry |
+| Welcome new app users | Unitary event or Audience Qualification | Signup event (unitary event) or entry into a new-user streaming audience (Audience Qualification) |
+| Re-engage inactive customers (recurring, scheduled) | Read Audience | Recurring batch run against inactivity audience |
 | Seasonal promotion to target segment | Read Audience | Scheduled campaign to audience |
 | Flash sale announcement | Business event | Business decision affects multiple customers |
-
->[!NOTE]
->
->Not sure which type to choose? Start with **Unitary journeys** for event-based experiences or **Read Audience journeys** for scheduled campaigns—these cover most common use cases.
+| React as soon as a customer hits Gold loyalty tier | Audience Qualification | Streaming audience, real-time individual entry |
 
 ## Journey types detailed comparison {#journey-types-comparison}
 
-Use this table to quickly compare journey types and choose the right one for your use case:
-
-| Aspect | Unitary journeys | Read Audience journeys | Audience Qualification journeys | Business event journeys |
-|--------|------------------|------------------------|--------------------------------|------------------------|
-| **Entry mechanism** | Individual event trigger | Scheduled batch | Real-time audience membership change | Business-level event |
-| **Entry timing** | Real-time, as events occur | Scheduled (one-time or recurring) | Real-time, as qualification occurs | Real-time, when business event fires |
-| **Profile entry** | One at a time | All at once (batch) | One at a time | Multiple profiles simultaneously |
-| **Trigger source** | Customer action (purchase, click, login) | Time-based schedule | Audience membership (entry/exit) | Business condition (stock, weather, price) |
-| **Best for** | Transactional messages, behavioral responses | Marketing campaigns, newsletters | Loyalty programs, lifecycle stages | Inventory alerts, promotions, business conditions |
-| **Use when** | Immediate response to individual actions needed | Reaching large audience segments on schedule | Responding to customer status changes | Business events affect multiple customers |
-| **Examples** | Order confirmation, password reset | Monthly newsletter, seasonal campaign | VIP upgrade, inactivity alert | Low stock alert, flash sale, price drop |
-| **Re-entrance** | Configurable (allow multiple entries per profile) | Each profile enters once per execution | Configurable per qualification event | Multiple profiles can be affected by same event |
-| **Data requirements** | Event schema with trigger data | [!DNL Adobe Experience Platform] audience | Streaming or batch audience | Business event schema |
+| Aspect | Unitary event journeys | Read Audience journeys | Audience Qualification journeys | Business event journeys |
+|--------|------------------------|------------------------|--------------------------------|------------------------|
+| **Entry mechanism** | Individual event trigger | Scheduled batch | Real-time streaming audience membership change | Business-level event + Read Audience step |
+| **Entry timing** | Real-time, as events occur | Scheduled (one-time or recurring) | Real-time, as qualification occurs (streaming audiences); delayed for batch-evaluated audiences | Real-time trigger; profile ingestion follows Read Audience throughput |
+| **Profile entry** | One at a time | All at once (batch) | One at a time | Multiple profiles via internal Read Audience step |
+| **Trigger source** | Customer action (purchase, click, login) | Time-based schedule | Audience membership entry or exit | Business condition (stock, price) |
+| **Best for** | Transactional messages, behavioral responses | Marketing campaigns, newsletters, recurring programs | Loyalty programs, lifecycle stage transitions | Inventory alerts, promotions, business conditions |
+| **Use when** | Immediate response to individual actions needed | Reaching large audience segments on schedule | Responding to customer status changes in real time | Business events affect multiple customers simultaneously |
+| **Examples** | Cart abandonment recovery, new member onboarding | Monthly newsletter, seasonal campaign | VIP upgrade, churn risk alert | Low stock alert, flash sale, price drop |
+| **Re-entrance** | Configurable | Once per execution by default; [Force reentrance on recurrence](read-audience.md#schedule) available on scheduled runs | Configurable per qualification event; a profile already in the journey cannot re-enter the same version | Multiple profiles can be affected by same event |
+| **Max throughput** | 5,000 TPS (shared org-level with Audience Qualification) | 20,000 TPS per sandbox | 5,000 TPS (shared org-level with Unitary event) | Business event: 5,000 TPS; Read Audience step: 20,000 TPS |
+| **Data requirements** | Event schema with trigger data | [!DNL Adobe Experience Platform] audience | Streaming audience required. Batch audiences deprecated from August 2026 — [migrate now](aq-batch-audiences-migration.md) | Business event schema |
 
 ## Feature compatibility by journey type {#feature-compatibility}
 
 Not all features are available for all journey types. Use this matrix to understand which capabilities work with which journey types:
 
-| Feature / Capability | Unitary | Read Audience | Audience Qualification | Business event |
+| Feature / Capability | Unitary event | Read Audience | Audience Qualification | Business event |
 |---------------------|:-------:|:-------------:|:----------------------:|:--------------:|
 | **Entry mechanisms** | | | | |
-| Event-triggered entry | ✅ | ❌ | ❌ | ✅ |
+| Event-triggered entry | ✅ | ❌ | ❌ | ✅ (business event triggers the journey; profiles enter via an internal Read Audience step) |
 | Scheduled entry | ❌ | ✅ | ❌ | ❌ |
-| Audience-based entry | ❌ | ✅ | ✅ | ❌ |
+| Audience-based entry | ❌ | ✅ (batch) | ✅ (streaming) | ❌ |
 | **Orchestration features** | | | | |
 | Wait activities | ✅ | ✅ | ✅ | ✅ |
 | Condition activities | ✅ | ✅ | ✅ | ✅ |
 | Custom actions | ✅ | ✅ | ✅ | ✅ |
-| Read audience activity (inside journey) | ✅ | ✅ | ✅ | ✅ |
-| Audience qualification activity | ✅ | ✅ | ✅ | ✅ |
-| Jump activity | ✅ | ✅ | ✅ | ✅ |
+| Read Audience activity (journey entry) | ❌ | ✅ | ❌ | ✅ (automatic step after business event) |
+| Audience Qualification activity (inside journey) | ✅ | ✅ | ✅ | ✅ |
+| Jump activity | ✅ | ❌ | ❌ | ✅ |
 | **Profile management** | | | | |
-| Profile re-entrance | ✅ Configurable | ❌ Once per execution | ✅ Configurable | ✅ Per event |
+| Profile re-entrance | ✅ Configurable | ❌ Once per execution by default ([Force reentrance on recurrence](read-audience.md#schedule) on scheduled runs) | ✅ Configurable (profile already in journey cannot re-enter same version) | ✅ Per event |
 | Namespace configuration | ✅ Required | ✅ Optional | ✅ Required | ✅ Required |
 | Profile cap | ✅ | ✅ | ✅ | ✅ |
 | **Testing & optimization** | | | | |
@@ -179,7 +168,6 @@ Not all features are available for all journey types. Use this matrix to underst
 | Content cards | ✅ | ✅ | ✅ | ✅ |
 | **Advanced capabilities** | | | | |
 | Incremental read | ❌ | ✅ | ❌ | ❌ |
-| Export audience | ✅ | ✅ | ✅ | ✅ |
 | Time zone management | ✅ | ✅ | ✅ | ✅ |
 | Reaction events | ✅ | ✅ | ✅ | ✅ |
 | External data sources | ✅ | ✅ | ✅ | ✅ |
@@ -187,11 +175,81 @@ Not all features are available for all journey types. Use this matrix to underst
 
 **Legend:** ✅ = Supported | ❌ = Not supported
 
+>[!NOTE]
+>
+>Jump activity limitations: a journey starting with a Read Audience or Audience Qualification activity cannot contain a Jump activity, and cannot be the target of a Jump activity from another journey.
+>
+>Read Audience activity as journey entry is only available in **Read Audience** and **Business event** journeys — it cannot be added to Unitary event or Audience Qualification entry journeys.
+
 ## Next steps {#next-steps}
 
-Now that you understand journey types, you're ready to:
+Now that you have chosen a journey type:
 
-* **[Create your first journey](journey-gs.md)** - Step-by-step guide
-* **[Learn about the journey designer](using-the-journey-designer.md)** - Design your journey canvas
-* **[Explore journey capabilities](journey.md#capabilities)** - Discover advanced features
-* **[View journey FAQ](journey-faq.md)** - Common questions answered
+* **[Create your first journey](journey-gs.md)** — Step-by-step guide from entry to publish
+* **[Learn about the journey designer](using-the-journey-designer.md)** — Design your journey canvas
+* **[Profile entrance in journeys](entry-management.md)** — Entry rules, re-entrance, and throughput by type
+* **[Get started with journeys](journey.md)** — Fundamentals and capabilities overview
+* **[Journey Orchestration FAQ](journey-faq.md)** — Common questions answered
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page provides a comprehensive comparison of the four AJO journey types — Unitary event, Read Audience, Audience Qualification, and Business event — along with a decision guide and feature compatibility matrix to help users choose the right type for their use case.
+
+**Intents:**
+
+* Choose the correct journey type for a given business use case using the decision table
+* Compare journey types side by side using the detailed feature compatibility matrix
+* Understand when to use Read Audience journeys for scheduled batch communications
+* Understand when to use Unitary event journeys for real-time, event-triggered experiences
+* Understand when to use Audience Qualification journeys for real-time status-change responses
+* Understand when to use Business event journeys for business-condition-driven communications
+* Understand throughput limits per journey type when planning high-volume deployments
+
+**Glossary:**
+
+* **Unitary event journey**: A journey triggered by a specific individual customer action (e.g., purchase, login) where profiles enter one at a time in real time. *(product-specific)*
+* **Read Audience journey**: A journey that starts with an Adobe Experience Platform audience and sends messages in batch to all profiles simultaneously on a schedule. *(product-specific)*
+* **Audience Qualification journey**: A journey that triggers when profiles qualify for or exit a specific audience segment. Requires a streaming-evaluated audience for real-time entry behavior. *(product-specific)*
+* **Business event journey**: A journey triggered by a business-level event (e.g., stock update, price change) that affects multiple profiles simultaneously; always paired with an internal Read Audience step for profile ingestion. *(product-specific)*
+* **Incremental read**: A Read Audience capability that processes only profiles who joined the audience since the last execution, not the full audience each time. Available for Read Audience journeys only. *(product-specific)*
+* **Streaming audience**: An Adobe Experience Platform audience evaluated continuously in real time, as opposed to a batch audience evaluated on a schedule (e.g., daily). Required for Audience Qualification journeys to achieve real-time entry behavior. *(product-specific)*
+
+**Guardrails:**
+
+* Incremental read is only available for Read Audience journeys, not for Unitary event, Audience Qualification, or Business event journeys
+* Path experiments (A/B testing) are not supported for Business event journeys
+* Profile re-entrance in Read Audience journeys is limited to once per execution by default; use Force reentrance on recurrence on scheduled runs to allow profiles to re-enter on the next execution
+* The Read Audience activity is only available as a journey entry in Read Audience and Business event journeys — not in Unitary event or Audience Qualification entry journeys
+* Audience Qualification and Read Audience journeys cannot contain a Jump activity, and cannot be the target of a Jump activity from another journey
+* Audience Qualification journeys require a streaming-evaluated audience. Starting August 2026, batch-evaluated audiences cannot be used in an Audience Qualification node — see the [migration guide](aq-batch-audiences-migration.md)
+* Unitary event and Audience Qualification journeys share a 5,000 TPS throughput limit at the organization level; Read Audience journeys support up to 20,000 TPS per sandbox
+* Simulation is supported for most journey types but not Business event entry; see Simulation limitations for node-level restrictions
+* A profile already present in a journey cannot re-enter the same version of that journey, regardless of re-entrance configuration
+
+**Terminology:**
+
+* Canonical name: Unitary event journey — variants: event-triggered journey, unitary journey
+* Canonical name: Read Audience journey — variants: batch journey, segment trigger journey, read segment journey
+* Canonical name: Audience Qualification journey — variants: audience qualification event journey
+* Canonical name: Business event journey — variants: business event-triggered journey
+* Do not confuse: "Read Audience journey" ≠ "Audience Qualification journey" — Read Audience processes all audience members in batch on schedule; Audience Qualification responds to individual membership changes in real time (streaming audiences only for immediate entry)
+* Do not confuse: "Unitary event journey" ≠ "Business event journey" — Unitary is triggered by a customer action affecting one profile; Business event is triggered by a business condition and ingests multiple profiles via an internal Read Audience step
+
+**FAQ:**
+
+* **Q: Which journey type should I use for a monthly newsletter?** — Use a Read Audience journey; it is designed for scheduled batch communication to all profiles in an audience segment simultaneously.
+* **Q: Which journey type should I use to recover an abandoned cart?** — Use a Unitary event journey; it triggers immediately when the abandonment event occurs and responds to the individual's behavior in real time.
+* **Q: Can I run A/B path experiments in a Business event journey?** — No; path experiments are not supported for Business event journeys.
+* **Q: What is the difference between a Unitary event journey and an Audience Qualification journey?** — A Unitary event journey is triggered by a specific customer action (e.g., purchase); an Audience Qualification journey triggers when a profile enters or exits an audience segment based on streaming criteria evaluation.
+* **Q: Which journey types support incremental read?** — Only Read Audience journeys support incremental read; the other three journey types do not.
+* **Q: Can I add a Read Audience activity to a Unitary event journey?** — No; the Read Audience activity is only available as journey entry in Read Audience and Business event journeys.
+* **Q: Can I use a Jump activity in a Read Audience journey?** — No; journeys starting with a Read Audience or Audience Qualification activity cannot contain a Jump activity and cannot be the target of a Jump from another journey.
+* **Q: Can I welcome new app users with an Audience Qualification journey?** — Yes, if entry is driven by a streaming audience (for example, when a profile joins a new-user segment); a signup unitary event journey is also a common pattern.
+* **Q: My Audience Qualification journey is not triggering in real time. Why?** — Audience Qualification journeys require a streaming-evaluated audience. Using a batch-evaluated audience is deprecated and will be blocked from August 2026. [See the migration guide](aq-batch-audiences-migration.md)
+* **Q: What is the throughput difference between Unitary event and Read Audience journeys?** — Unitary event journeys share a 5,000 TPS limit with Audience Qualification journeys at the organization level. Read Audience journeys support up to 20,000 TPS per sandbox, making them better suited for large-scale batch campaigns.
+
++++

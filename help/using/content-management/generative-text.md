@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Generate text with AI Assistant {#generative-text}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to generate, refine, and finalize on-brand text content with AI Assistant for email, web, landing page, push notification, and SMS channels in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
@@ -134,7 +140,7 @@ Learn how to review the generated text, make refinements, and apply personalizat
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
-1. Insert personalization fields to customize your content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
+1. Insert personalization fields to customize your content based on profiles data. Then, use either simulation method to control the rendering and check personalization settings: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more](../content-management/preview-test.md)
 
 1. Review and activate your content:
    * **Email**: When you have defined your content, audience and schedule, you are ready to prepare your email campaign. [Learn more](../campaigns/review-activate-campaign.md)
@@ -232,6 +238,6 @@ After generating text variations for your mobile messages, you can fine-tune the
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
-1. Insert personalization fields to customize your content based on profiles data. Then, click the **[!UICONTROL Simulate content]** button to control the rendering, and check personalization settings with test profiles. [Learn more](../personalization/personalize.md)
+1. Insert personalization fields to customize your content based on profiles data. Then, use either simulation method to control the rendering and check personalization settings: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more](../content-management/preview-test.md)
 
 When you have defined your content, audience and schedule, you are ready to prepare your mobile campaign. [Learn more](../campaigns/review-activate-campaign.md)

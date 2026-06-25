@@ -23,9 +23,52 @@ subfeature_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## June 2026 {#june-2026}
+
+* The **High throughput mode** page has been updated to reflect the expanded regional availability: the feature is now available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on. [Read more](../campaigns/api-triggered-high-throughput.md)
+
+* A new **Engageable Profiles and license usage** section has been added to the **Get started with profiles** page as the single source of truth for this concept, with targeted references added across the Audiences, Campaigns, and Decisioning sections. [Read more](../audience/get-started-profiles.md#engageable-profiles)
+
+* The **Split** activity documentation has been updated to document the **[!UICONTROL Segment code]** field available in each subset settings, which allows you to assign a unique identifier to each audience segment for tracking and reporting purposes. [Read more](../orchestrated/activities/split.md)
+
+* The **Configure a Targeting dimension** page has been updated to document the two targeting dimension types available in Orchestrated campaigns: the built-in **profile targeting dimension** (no configuration required) and **custom targeting dimensions** based on relational schemas. [Read more](../orchestrated/target-dimension.md)
+
+* The **Leverage themes in a fragment** documentation has been clarified to explicitly document the 5-theme compatibility limit (including the Adobe default theme constraint) and to explain that fragment insertion is blocked when the email theme is not one of the fragment-associated themes. [Read more](../email/apply-email-themes.md#leverage-themes-fragment)
+
+* The **Get started with datasets** and **Get started with schemas** pages have been updated with guidance on enabling datasets and schemas for Real-Time Customer Profile, including key considerations, the distinction between disabling a dataset versus its underlying schema, and links to the Adobe Experience Platform planning and best practices documentation. [Learn more about datasets](../data/get-started-datasets.md) and [Learn more about schemas](../data/get-started-schemas.md)
+
+* A new **Get started with Adobe Journey Optimizer** onboarding hub is now available. New users can choose their path by role, explore fundamentals, or jump to day-to-day areas if already onboarded — without needing to know where to look first. [Read more](../../rp_landing_pages/get-started-landing-page.md)
+
+* A new **Start from your goal** page lets you start from what you want to accomplish rather than a feature name. It maps business goals to the recommended Journey Optimizer capability across setup, journeys, campaigns, personalization, decisioning, and reporting. [Read more](../start/ajo-use-case-guide.md)
+
+* The **Get started for developers** role guide has been updated with clearer introductions for each section and improved **Collaborate across roles** tabs that reference journeys and link to key implementation pages. [Read more](../start/path/developer.md)
+
+* A new **Path assignment on journey re-entrance** subsection has been added to the **Path experimentation** documentation. It clarifies that path assignment is persistent for a profile across multiple entrances into the same journey version, but only within that journey version. Assignments reset when a new journey version is published, and each path experimentation activity in a journey applies an independent random assignment. [Read more](../building-journeys/path-experimentation.md#path-assignment)
+* References to **Adobe Experience Cloud** have been aligned with the **[!DNL Adobe CX Enterprise]** brand across the [!DNL Journey Optimizer] documentation.
+
+* The **`nowWithDelta()` date function** documentation has been updated to clarify month-end behavior: when the target month has fewer days than the current day-of-month, the result is normalized to the last valid day of that month. [Read more](../building-journeys/functions/date-functions.md#nowWithDelta)
+
+* The **Get started with deliverability** page has been updated with a new **Providers without per-recipient FBL** subsection. It lists the major mailbox providers that do not return per-recipient spam complaints — Gmail / Google Workspace, Apple iCloud, and Corporate Microsoft 365 / Exchange Online — and explains why the absence of a suppression list entry is expected for recipients using these services. [Read more](../reports/deliverability.md#providers-no-fbl)
+
+* **Experience Decisioning is now available for the direct mail channel.** A new **Batch decisioning in direct mail** page describes how to use the Decisioning engine to personalize direct mail extraction files, or to export profiles and their decisioning results for use in downstream systems. **Direct mail** has been added as a supported channel across the Decisioning documentation (Get started, Create a decision policy, Use decision policies in messages, Get started with decisions policies), including the ability to return multiple decision items per profile through the **[!UICONTROL Number of items]** field. [Read more](../experience-decisioning/batch-decisioning-direct-mail.md)
+
+* The **Journey Fragments** documentation is no longer flagged as Limited Availability. The page now includes a note disambiguating Journey Fragments from content **[!UICONTROL Fragments]** and **AEM Content Fragments** (cross-linked from all three pages), and documents support for **Sandbox tooling**, **Audit Logs**, and **tagging**. Journey Fragments have also been added to the **Get started with journeys** page. [Read more](../building-journeys/journey-fragments.md)
+
+* The **External data sources** and **custom action** documentation has been updated for custom authentication. The `tokenInResponse` field now lets you specify whether the `access_token` or `id_token` is used as the authentication credential when an endpoint returns both. For certificate-based custom authentication, the `subType` and `aud` fields are now mandatory, the token endpoint `method` must be `POST`, and references to "Azure Entra ID" have been corrected to "Microsoft Entra ID". [Read more](../datasource/external-data-sources.md#certificate-credential)
+
+* The **Get started with Decisioning** page has been updated with a process chart summarizing the end-to-end Decisioning workflow, from managing decision items and configuring selection strategies to embedding decision policies into a journey or campaign. [Read more](../experience-decisioning/gs-experience-decisioning.md#process)
+
+* The **Sender headers** documentation now clarifies that **[!UICONTROL Sender name]** and **[!UICONTROL Sender email]** must both be set or both left empty, otherwise journeys and campaigns cannot be published. [Read more](../email/header-parameters.md#sender-header)
+
 ## May 2026 {#may-2026}
 
+* The limitations and best practices when using dynamic content in visual fragments have been merged into a single **Manage conditional content in fragments** section for improved readability. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
+
+* Two new high-level permissions have been added: **Manage Key Registry**, which allows users to view, create, rotate, and revoke keys in the key registry, and **View Key Registry**, which allows users to view the key registry listing and key details. [Read more](../administration/high-low-permissions.md#administration-permissions) 
+
 * The **Use decision policies in messages** documentation now describes how to view the full structure of a decision policy from the campaign summary and copy a JSON technical summary to the clipboard for troubleshooting. [Read more](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
+
+* The legacy **Decision management** [Auto-optimization models](../offers/ranking/auto-optimization-model.md) page has been rewritten to align with the updated Decisioning documentation, including reinforcement learning overview, requirements and limitations, balancing optimization with learning, and Thompson sampling details. [Read more](../offers/ranking/auto-optimization-model.md)
 
 * The **Release notes** page has been restructured with a topic-based layout. Changes are now grouped by product area instead of by change type, with a new dedicated **Usability improvements** section. Coming soon entries appear as expandable accordions within each topic. [Read more](release-notes.md)
 
@@ -280,7 +323,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new section has been added to the Campaign v7/v8 integration documentation explaining how to update existing custom actions when the Real-Time (RT) endpoint changes. The section includes step-by-step instructions for updating the endpoint URL, testing the connection, and validating changes before saving. [Read more](../action/acc-action.md#update-action)
 
-* New limitations and best practices sections have been added to the visual fragments documentation to warn users about unsupported nesting of fragments containing Dynamic Content inside other unlocked fragments with Dynamic Content. The guidance includes troubleshooting steps for compatibility mode issues and recommendations for proper email structure design. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
+* New limitations and best practices sections have been added to the visual fragments documentation to warn users about unsupported nesting of fragments containing conditional content inside other unlocked fragments with conditional content. The guidance includes troubleshooting steps for compatibility mode issues and recommendations for proper email structure design. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
 
 * A troubleshooting section has been added to the journey live reporting documentation to help users resolve missing reporting data issues. The section covers journey name synchronization with reporting datasets, data refresh timing, access permissions verification, and journey status requirements. [Read more](../building-journeys/report-journey.md#troubleshooting-missing-data)
 

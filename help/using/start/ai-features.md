@@ -46,6 +46,12 @@ topic_v2:
 ---
 # AI & intelligent features {#ai-features}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore the AI and machine learning features across Adobe Journey Optimizer, from the AI Assistant and agents to content generation, send-time optimization, and decisioning, so you can work faster and deliver more relevant customer experiences.
+
+>[!ENDSHADEBOX]
+
 Adobe Journey Optimizer harnesses the power of artificial intelligence and machine learning to help you create, optimize, and deliver exceptional customer experiences. From generating personalized content to predicting optimal send times, AI capabilities streamline your workflow and maximize impact. Use Case Playbooks provide pre-built templates to quickly implement common marketing scenarios.
 
 ## AI Assistant {#ai-assistant}
@@ -88,7 +94,7 @@ Click the AI Assistant icon in the top bar to open the assistant panel on the ri
 4. Click **Show sources** to access related documentation
 5. Use thumbs up/down to rate the response quality
 
-![](assets/do-not-localize/ai-assistant-answer.png){width="40%" align="left"}
+![](assets/do-not-localize/ai-assistant-answer.png){width="40%"}
 
 [Learn more about AI Assistant in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home){target="_blank"}
 

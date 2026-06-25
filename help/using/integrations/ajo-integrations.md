@@ -41,6 +41,12 @@ subfeature_v2:
 ---
 # Integrations with other solutions {#integration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how connecting Adobe Journey Optimizer to other Adobe solutions and third-party systems — such as Customer Journey Analytics, Experience Manager, Stock, GenStudio, Campaign, and Workfront — extends its functional scope and helps you address your specific use cases.
+
+>[!ENDSHADEBOX]
+
 With Adobe Journey Optimizer, you can easily manage, retain, and export this data to platforms or systems that are part of your technology stack. These integrations help you address your specific use cases, and extend Adobe Journey Optimizer functional scope.
 
 >[!NOTE]
@@ -127,7 +133,7 @@ Adobe Intelligent Services that are native to Real Time Customer Data Platform a
 
 Customer AI allows brands to create churn or conversion machine learning based scores that will be available as profile attributes in Adobe Experience Platform and that can be used to personalize a journey.
 
-Learn more about [Journey Optimizer + Adobe Intelligent Services](../building-journeys/ai-services-overview.md).
+Learn more about [Journey Optimizer + Adobe Intelligent Services](intelligent-services.md).
 
 
 ## Adobe Campaign {#integration-ac}

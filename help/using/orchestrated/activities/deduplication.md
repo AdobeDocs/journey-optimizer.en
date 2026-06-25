@@ -12,13 +12,17 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
 ---
 # Deduplication {#deduplication}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Deduplication targeting activity in an Orchestrated campaign to remove duplicate records from the results of inbound activities before using the targeted data.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_deduplication_fields"

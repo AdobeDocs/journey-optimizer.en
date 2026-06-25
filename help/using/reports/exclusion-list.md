@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Exclusion reasons {#exclusion-list}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the exclusion reasons, error codes, and affected channels that prevent messages from being sent, and learn how exclusions are counted in your campaign reports.
+
+>[!ENDSHADEBOX]
+
 ## How exclusions are counted in Campaign reports
 
 When viewing campaign reports, note that the *Exclusions* metric is calculated as follows:

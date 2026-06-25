@@ -31,7 +31,13 @@ topic_v2:
     internal-label: Privacy
 ---
 # Opt-out management for Mobile messages {#sms-opt-out}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how Adobe Journey Optimizer manages opt-out for SMS, MMS, and RCS messages through native inbound keywords, blocklists, short codes, and alphanumeric sender IDs.
+
+>[!ENDSHADEBOX]
+
 In accordance with the industry standards and regulations, all SMS marketing messages must contain a way for the recipients to easily unsubscribe. [Learn more about privacy & opt-out management](../privacy/opt-out.md)
 
 >[!IMPORTANT]
@@ -64,7 +70,7 @@ Note that if a customer responds STOP to a Mobile message, the provider blocks a
 
 >[!NOTE]
 >
->If you plan to use two-way SMS (reply with STOP, QUIT, etc.), ensure that you have first sent at least one one-way SMS to establish the phone number to profile mapping. Expired or misconfigured provider credentials will prevent inbound keywords from updating the user profile, resulting in missing or delayed opt-out records. Inbound responses are stored in the _AJO Inbound Activity Event Dataset_ system dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
+>If you plan to use two-way SMS (reply with STOP, QUIT, etc.), ensure that you have first sent at least one one-way SMS to establish the phone number to profile mapping. Expired or misconfigured provider credentials will prevent inbound keywords from updating the user profile, resulting in missing or delayed opt-out records. Inbound responses are stored in the _AJO Email Tracking Dataset_ system dataset. [Learn more](../data/get-started-datasets.md#system-datasets)
 
 
 ## Blocklists {#sms-blocklists}

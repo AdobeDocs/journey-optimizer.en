@@ -10,8 +10,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
@@ -24,6 +22,12 @@ subfeature_v2:
     internal-label: Orchestration activities
 ---
 # Set up a manual relational schema {#manual-schema}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to manually create a relational schema in the user interface, add attributes, link schemas, and create and enable a dataset for Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
 
 Relational schemas can be created directly through the user interface, enabling detailed configuration of attributes, primary keys, versioning fields, and relationships.  
 

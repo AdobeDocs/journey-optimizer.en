@@ -9,14 +9,18 @@ role: User
 level: Intermediate
 version: Campaign Orchestration
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
 ---
 
 # Incremental query {#incremental-query}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Incremental query targeting activity to return only new records on each Orchestrated campaign run, excluding profiles already targeted in previous executions.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_incrementalquery"
@@ -42,7 +46,9 @@ Typical uses:
 * **Messaging and audiences**: Pull only new sign-ups, new purchasers, or other "new since last run" segments into the next step (e.g. email, SMS).
 * **Ongoing exports**: Send only new or updated rows to files for reporting or BI tools, without duplicating what you already exported.
 
-When a run returns no rows, the Orchestrated campaign stops at the **Incremental query**. Activities after the Incremental query are not executed until there is data, when the campaign runs again.
+>[!IMPORTANT]
+>
+>When a run returns no rows, the Orchestrated campaign stops at the **Incremental query**. Activities after the Incremental query are not executed until there is data, when the campaign runs again.
 
 ## Configure the Incremental query activity {#incremental-query-configuration}
 

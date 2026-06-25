@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Examples of queries{#query-examples}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find ready-to-use SQL query examples for analyzing and troubleshooting journey step events in the Adobe Experience Platform Data Lake.
+
+>[!ENDSHADEBOX]
+
 This section provides commonly used examples to query Journey Step Events in Data Lake. Before diving into specific use cases, it's important to understand the key identifiers used in journey event data.
 
 ## Prerequisites {#prerequisites}

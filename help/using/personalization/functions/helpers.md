@@ -329,8 +329,6 @@ In this example, assuming `profile.person.name.firstName` = "Alex", the resultin
 
 >[!AVAILABILITY]
 >
->This feature is available in Limited Availability. Contact your Adobe representative to gain access.
->
 >This capability is currently only available for the Email channel.
 
 The `Encrypt` function lets you encrypt any expression value at render time—commonly a profile attribute, a token, or even a stringified JSON structure you build in the expression—before it is written into a query parameter on tracking links or landing pages.
@@ -381,3 +379,4 @@ You can apply the helper to one parameter, several, or all parameters in a link,
 * Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
 
 * The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.
+

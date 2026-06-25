@@ -12,8 +12,6 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
@@ -26,6 +24,12 @@ subfeature_v2:
     internal-label: Orchestration activities
 ---
 # Save audience {#save-audience}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Save audience targeting activity to create or overwrite a reusable audience from the population built earlier in an Orchestrated campaign.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_save_audience"

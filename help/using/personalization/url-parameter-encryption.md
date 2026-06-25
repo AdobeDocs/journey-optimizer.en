@@ -7,7 +7,6 @@ feature: Personalization
 topic: Personalization
 role: Admin
 level: Intermediate
-badge: label="Limited availability" type="Informative"
 keywords: encryption, URL, tracking, landing page, key registry, personalization, security, privacy, sandbox
 exl-id: 82e2b6e4-769f-4bdc-b2e2-19352fbaec8e
 feature_v2:
@@ -19,9 +18,13 @@ subfeature_v2:
 ---
 # Encrypt URL parameters {#url-parameter-encryption}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to encrypt sensitive URL query parameters so personally identifiable information is not exposed in plain text, including how administrators create, rotate, and revoke keys in the sandbox key registry of Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
->
->This feature is available in Limited Availability. Contact your Adobe representative to gain access.
 >
 >This capability is currently only available for the Email channel.
 
@@ -50,15 +53,9 @@ A landing page URL might use a query parameter such as `token` whose value is a 
 
 Before being able to use the URL parameter encryption helper, you need to create a key. To do so, follow the steps below.
 
->[!NOTE]
->
->Currently there are no specific permissions to access and manage keys. Roles that grant access to the **[!UICONTROL Configurations]** section under **[!UICONTROL Administration]** also grant access to the key registry. However, specific permissions are planned for a future release.
-
-<!--
 >[!IMPORTANT]
 >
->To access and manage keys, you you must have the **View Key Registry** and **Manage Key Registry** permissions granted. [Learn more](../administration/high-low-permissions.md)
--->
+>To access and manage keys, you you must have the **View Key Registry** and **Manage Key Registry** permissions granted. [Learn more](../administration/high-low-permissions.md#administration-permissions)
 
 1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Configurations]**.
 
@@ -101,4 +98,3 @@ To manage keys, follow the steps below.
     >[!NOTE]
     >
     >Only active keys should be selected to encrypt new values in the personalization editor. Do not use revoked keys for new content.
-

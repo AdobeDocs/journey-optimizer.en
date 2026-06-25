@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Iterate over contextual data {#personalization-contexts}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use Handlebars iteration syntax to loop over arrays from contextual data sources such as events, custom action responses, and dataset lookups to display dynamic lists in your messages.
+
+>[!ENDSHADEBOX]
+
 Learn how to use Handlebars iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
 
 ## Overview {#overview}

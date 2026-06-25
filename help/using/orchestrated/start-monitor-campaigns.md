@@ -14,8 +14,6 @@ product_v2:
 feature_v2:
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
@@ -28,6 +26,12 @@ subfeature_v2:
     internal-label: Orchestration activities
 ---
 # Start and monitor your Orchestrated campaigns {#start-monitor}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to test, publish, and monitor Orchestrated campaigns in Adobe Journey Optimizer, including the campaign lifecycle, execution logs, and activity status indicators.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_publication"
@@ -78,7 +82,7 @@ The **[!UICONTROL Alerts]** / **[!UICONTROL Warning]** icon in the canvas toolba
 
 You can also quickly identify failed activities using the [visual status indicators](#activities) displayed directly on each activity. For detailed troubleshooting, open the [campaign's logs](#logs-tasks), which provide in-depth information about the error and its context.
 
-If you have added channel activities in the canvas, you can preview and test the content of your messages using the **[!UICONTROL Simulate Content]** button. [Learn how to work with channel activities and simulate content](activities/channels.md#simulate-content-test-profiles).
+If you have added channel activities in the canvas, you can preview and test the content of your messages. [Learn how to work with channel activities and simulate content](activities/channels.md#simulate-content-test-profiles).
 
 >[!TIP]
 >

@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Subscription live report {#subscription-report-live}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Subscription live report to monitor your subscribers' subscriptions and unsubscriptions in real time over the last 24 hours.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_subscription_live_report"
 >title="Subscription live report"

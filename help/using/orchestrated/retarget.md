@@ -7,14 +7,18 @@ feature: Monitoring
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
 version: Campaign Orchestration
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
 ---
 
 # Building retargeting queries {#retarget}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build feedback-based and tracking-based retargeting rules that follow up with recipients according to how they responded to a previous Orchestrated campaign.
+
+>[!ENDSHADEBOX]
 
 Retargeting allows you to follow up with recipients based on how they responded to a previous Orchestrated campaign. For example, you can send a second email to recipients who received but did not click the first one.
 

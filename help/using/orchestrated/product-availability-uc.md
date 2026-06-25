@@ -11,8 +11,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
 subfeature_v2:
@@ -25,6 +23,12 @@ topic_v2:
     internal-label: Insights
 ---
 # Notify users about product availability {#product-availability-uc}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Follow this use case to build a back-in-stock Orchestrated campaign that uses multi-level sending to deliver a separate, personalized email for each saved wishlist item when products become available again.
+
+>[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 

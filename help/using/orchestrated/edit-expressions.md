@@ -10,8 +10,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
@@ -20,6 +18,12 @@ subfeature_v2:
     internal-label: Orchestration activities
 ---
 # Edit expressions {#edit-expressions}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the expression editor to manually build rules with database fields, variables, and helper functions for manipulating dates, strings, and numeric values in your Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
 
 >[!NOTE]
 >

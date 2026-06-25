@@ -10,14 +10,18 @@ level: Intermediate
 version: Campaign Orchestration
 exl-id: 3f2a1c0d-8e9b-4a7c-b5d1-0f2e3a4b5c6d
 feature_v2:
-  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
-    internal-label: Campaign Orchestration
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities
 ---
 
 # Use variables in Orchestrated campaigns {#variables-oc}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set variables from a signal or from global definitions and use them to drive targeting, conditions, and Test activity logic in Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
 
 ## How to set variables {#set}
 

@@ -24,6 +24,12 @@ subfeature_v2:
 ---
 # Understand statistical calculations in Experimentation report {#experiment-report-calculations}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore the detailed statistical calculations used in the Experimentation report for campaigns in Adobe Journey Optimizer, including conversion rate, lift, anytime valid confidence sequences, and how the best performing arm is determined.
+
+>[!ENDSHADEBOX]
+
 This page documents the detailed statistical calculations used in the Experimentation report for Campaigns in Adobe Journey Optimizer. 
 
 Note that this page is intended for technical users.

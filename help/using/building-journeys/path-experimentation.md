@@ -14,6 +14,12 @@ subfeature_v2: []
 ---
 # Use path experimentation {#experimentation}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up path experimentation with the Optimize activity to test different journey paths using A/B or multi-armed bandit experiments, identify the best-performing treatment by success metric, and scale the winner.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_path_experiment_success_metric"
 >title="Success metric"
@@ -60,12 +66,6 @@ Let's say you want to compare three paths:
     >
     >Switching on the toggle bar will automatically take 10% of your population. You can adjust this percentage if needed.
 
-    <!--
-    DOES THIS APPLY TO PATH EXPERIMENT?
-    IMPORTANT: When a holdout group is used in an action for path experimentation, the holdout assignment only applies to that specific action. After the action is completed, profiles in the holdout group will continue down the journey path and can receive messages from other actions. Therefore, ensure that any subsequent messages do not rely on the receipt of a message by a profile that might be in a holdout group. If they do, you may need to remove the holdout assignment.
-    
--->
-
 1. You can allocate a precise percentage to each **[!UICONTROL Treatment]**, or simply switch on the **[!UICONTROL Distribute evenly]** toggle bar.
 
     ![Treatment allocation slider with percentage distribution](assets/journey-optimize-experiment-treatments.png){width=80%}
@@ -88,27 +88,17 @@ Let's say you want to compare three paths:
 
 1. [Publish](publish-journey.md) your journey.
 
-<!--
-    Select a channel action and use the **[!UICONTROL Edit content]** button to access the design tools.
-
-    ![Edit content button in channel action activity](assets/journey-optimize-experiment-edit-content.png){width=70%}
-
-    From there, using the left pane you can navigate between the different contents for each action in your experiment. Select each content and design it as needed.
-
-    ![Content selection panel showing treatments for experiment](assets/journey-optimize-experiment-content.png){width=100%}
--->
-
 Once the journey is live, users are randomly assigned to go down different paths. [!DNL Journey Optimizer] tracks which path performs best and provides actionable insights.
 
 Follow the success of your journey with the Journey Path Experiment report. [Learn more](../reports/journey-global-report-cja-experimentation.md)
 
-<!--
-REMOVED WITH GA
+## Path assignment on journey re-entrance {#path-assignment}
 
->[!CAUTION]
->
->Do not edit the metadata of a path experiment once it has been published. Editing the metadata will disrupt the calculation and reporting of experiment results.
--->
+Path assignment is persistent for a profile across multiple entrances into the same journey version. For example, if a profile enters a journey on day 1 and is assigned to path A and then re-enters the journey on day 2, it will again be assigned to path A. This ensures a consistent experience for the user and is required for statistically valid reporting and analysis.
+
+However, the assignments are only persistent within a given journey version. Once you publish a new journey version, the randomization changes and a profile can end up getting assigned to a different path.
+
+If you have multiple path experimentation activities in a journey, each activity applies an independent random assignment.
 
 ## Experiment use cases {#uc-experiment}
 
@@ -217,3 +207,48 @@ To manually scale the winner of your experiments:
     ![Scale treatment selection in path experiment](assets/journey-optimize-scale-treatment.png){width=80%}
 
 Note that scaling the treatment may take up to one hour. You will receive a notification once the manual scaling process is finished.
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to configure and run path experimentation in Adobe Journey Optimizer journeys using A/B or Multi-armed bandit methods, and how to scale the winning treatment automatically or manually.
+
+**Intents:**
+* Set up an A/B or Multi-armed bandit path experiment in a journey
+* Define success metrics to evaluate experiment performance
+* Allocate traffic between treatment paths evenly or by custom percentage
+* Add a holdout group to exclude a portion of the audience from all treatments
+* Enable auto-scaling to automatically roll out the winning treatment
+* Manually scale the winning treatment after reviewing experiment results
+
+**Glossary:**
+* **Optimize activity**: A journey canvas activity used to split profiles into different paths for experimentation or targeting *(product-specific)*
+* **Treatment**: A single path variant in a path experiment (e.g., Treatment A, Treatment B) *(product-specific)*
+* **Success metric**: The KPI used to evaluate which treatment performs best in an experiment *(product-specific)*
+* **Multi-armed bandit**: An experiment type where traffic split is adjusted automatically every 7 days based on primary metric performance *(product-specific)*
+* **Scale the Winner**: A feature that rolls out the winning treatment to the full remaining audience, either automatically or manually *(product-specific)*
+* **Holdout group**: A segment of the audience excluded from all experiment treatments, used as a control group *(product-specific)*
+
+**Guardrails:**
+* Scale the Winner is only available for unitary journeys (event-triggered and Audience Qualification); it is not available for Read Audience journeys.
+* Auto-scale time must be scheduled before the experiment's end date, or the journey will not publish.
+* Once auto-scaling has occurred, manual scaling is no longer available.
+* Manual scaling the winner before the scheduled auto-scale time cancels the auto-scale.
+* Scaling the treatment may take up to one hour.
+
+**Terminology:**
+* Canonical name: Path Experimentation — Acronym: none — variants: journey experimentation, A/B path test
+* Synonyms: "Optimize activity" = "experiment activity" = "path split activity"
+* Do not confuse: "A/B experiment" ≠ "Multi-armed bandit" (A/B has fixed traffic split; Multi-armed bandit adjusts weights dynamically every 7 days)
+
+**FAQ:**
+* **Q: What is the difference between A/B experiment and Multi-armed bandit?** — A/B experiment uses a fixed traffic split defined at the start, while Multi-armed bandit automatically adjusts traffic weights every 7 days based on the primary metric performance.
+* **Q: Can I use Scale the Winner in a Read Audience journey?** — No; Scale the Winner is only available for unitary (event-triggered and Audience Qualification) journeys.
+* **Q: What happens if no winner is found by the auto-scale time?** — You can configure a fallback: either continue the experiment until its scheduled end, or scale an alternative treatment after a specified time.
+* **Q: How is traffic distributed if I do not configure treatment percentages manually?** — You can enable the Distribute evenly toggle to split traffic equally across all treatments.
+* **Q: Can I edit a path experiment after the journey is published?** — The journey enters read-only mode after publishing; to make changes, create a new version of the journey.
+
++++

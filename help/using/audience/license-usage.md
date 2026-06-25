@@ -42,6 +42,12 @@ topic_v2:
 ---
 # License usage dashboard {#license-usage}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to navigate the Adobe Journey Optimizer license usage dashboard and troubleshoot unexpected increases in your Engageable Profiles count.
+
+>[!ENDSHADEBOX]
+
 The [!DNL Adobe Journey Optimizer] [user interface](../start/user-interface.md) provides a dashboard that displays important information about your organization's license usage, as captured during a daily snapshot.
 
 To access this dashboard, go to **[!UICONTROL Administration]** > **[!UICONTROL License Usage]**. This opens the **[!UICONTROL Overview]** tab, which displays the dashboard.
@@ -54,25 +60,7 @@ To access this dashboard, go to **[!UICONTROL Administration]** > **[!UICONTROL 
 >
 >* Certain metrics (e.g., compute hours, emails) are not displayed for development sandboxes, as indicated by `N/A` in the quota column. Only non-null values are displayed in the dashboard: when metrics are zero or close to zero, they are not populated.
 
-
-For [!DNL Adobe Journey Optimizer], the dashboard allows you to check the number of **Engageable Profiles**. 
-
-## What is an engageable profile? {#what-is-engageable-profile}
-
-An **Engageable Profile** is a record of information representing an individual that is stored in the Profile Service and has been engaged by journeys or campaigns. 
-
-Key characteristics of Engageable Profiles:
-
-* **12-month rolling window**: Engageable Profiles are counted based on engagement over the past 12 months. This metric shows the number of unique profiles that you have attempted to engage with using Journey Optimizer's authoring, decisioning, delivery, experimentation, or orchestration capabilities.
-
-* **Unique count per sandbox**: If a profile enters multiple journeys or campaigns within a sandbox, it is counted only once as a single Engageable Profile for that sandbox.
-
-* **Based on Addressable Audience**: Engageable Profiles are calculated from your Addressable Audience. The count represents the audience engaged in the past 12 months using any of Journey Optimizer's capabilities, out of your total Addressable Audience.
-
-* **Metric behavior**: The Engageable Profiles count:
-    * Can increase when new profiles are engaged through journeys or campaigns
-    * Cannot decrease unless there is no engagement with certain profiles for over 12 months
-    * Can decrease when pseudonymous profiles are stitched to known profiles
+For [!DNL Adobe Journey Optimizer], the dashboard allows you to check the number of **Engageable Profiles** — unique profiles engaged through journeys, campaigns, or decisioning over a rolling 12-month window. For a full explanation of how Engageable Profiles are defined and calculated, see [Engageable Profiles and license usage](get-started-profiles.md#engageable-profiles).
 
 >[!NOTE]
 >

@@ -42,12 +42,18 @@ topic_v2:
 ---
 # Set your journey properties {#jo-properties}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set a journey's global properties — including its name, entrance rules, time zone, start and end dates, timeout, exit criteria, and conflict management — from the right rail during authoring.
+
+>[!ENDSHADEBOX]
+
 Use journey properties to configure global settings for your journey, including its name, entrance rules, timezone, start and end dates, timeout duration, exit criteria, and conflict management. Properties are accessible from the right rail at any stage of journey authoring.
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties"
 >title="Journey properties"
->abstract="Configure global settings for this journey, including name, tags, entrance rules, time zone, dates, timeout, and conflict management. Read-only parameters are hidden by default. Available options vary based on journey status, your permissions, and product configuration."
+>abstract="The journey properties hold global settings for this journey, including name, tags, entrance rules, time zone, dates, timeout, and conflict management. Read-only parameters are hidden by default. Available options vary based on journey status, your permissions, and product configuration."
 
 ## Access the properties of a journey {#access-properties}
 
@@ -114,7 +120,7 @@ Profile entrance management depends on the type of journey. Learn more about pro
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_entrance"
 >title="Allow reentrance"
->abstract="By default, new journeys allow reentrance. You can uncheck the **Allow reentrance** option for example if you want to offer a one-time gift when a person enters a shop."
+>abstract="By default, new journeys allow reentrance. Unchecking the **Allow reentrance** option prevents a person from entering the journey again, for example to offer a one-time gift when a person enters a shop."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
 By default, new journeys allow reentrance. You can uncheck the **Allow reentrance** option for "one shot" journeys, for example if you want to offer a one-time gift when a person enters a shop. 
@@ -124,7 +130,7 @@ By default, new journeys allow reentrance. You can uncheck the **Allow reentranc
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_re-entrance_wait"
 >title="Reentrance wait period"
->abstract="Set the time to wait before allowing a profile to enter the journey again in unitary journeys. This prevents users from reentering the journey for a chosen duration. Maximum duration: 90 days."
+>abstract="The reentrance wait period is the time to wait before a profile can enter the journey again in unitary journeys. It prevents users from reentering the journey for a chosen duration. Maximum duration: 90 days."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/manage-journey/entry-management" text="Profile entrance management"
 
 When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. This field allows you to define the time to wait before allowing a profile to enter the journey again in unitary journeys (starting with an event or an audience qualification). This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days.
@@ -142,7 +148,7 @@ To assign custom data usage labels to the journey, click the **[!UICONTROL Manag
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_payload_size"
 >title="Current journey payload size"
->abstract="Displays the current size of the journey payload compared to the configured limit. Use this indicator to monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded."
+>abstract="Displays the current size of the journey payload compared to the configured limit. This indicator helps monitor journey complexity before publishing and avoid errors caused by the payload size limit being exceeded."
 
 The **[!UICONTROL Current journey payload size]** field in the journey properties panel displays the current size of your journey's payload in relation to the configured limit — for example, *1.5 MB (out of 2 MB)*. This read-only indicator is visible at any stage of journey authoring.
 
@@ -165,12 +171,12 @@ The timezone is defined at journey level. You can enter a fixed time zone or use
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_start_date"
 >title="Start date"
->abstract="Select the date when profiles can begin entering the journey. If no start date is set, it defaults to the journey's publication date."
+>abstract="The start date is when profiles can begin entering the journey. If no start date is set, it defaults to the journey's publication date."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_properties_end_date"
 >title="End date"
->abstract="Set the date when the journey ends. On this date, active profiles automatically exit the journey, and no new entry is allowed."
+>abstract="The end date is when the journey ends. On this date, active profiles automatically exit the journey, and no new entry is allowed."
 
 By default, profiles can enter your journey as soon as it is published, and can stay until the [global journey timeout](#global_timeout) is reached. The only exception is recurring read audience journeys with **Force reentrance on recurrence** activated, which end at the start date of the next occurrence. 
 
@@ -183,9 +189,9 @@ Timeout settings control how long a journey waits for activity execution and how
 ### Timeout in journey activities {#timeout_and_error}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_properties_timeout"
+>id="ajo_journey_action_timeout"
 >title="Timeout or error"
->abstract="Specify how long the journey should attempt to perform an action or evaluate a condition before treating it as timed out. Recommended values are between 1 and 30 seconds."
+>abstract="The **Timeout or error** option defines an alternative path in the journey when the action times out or returns an error, so profiles continue through a fallback path rather than stopping at this step. Recommended values are between 1 and 30 seconds."
 
 When editing an action or condition activity, you can define an alternative path in case of error or timeout. If the processing of the activity interrogating a third-party system exceeds the timeout duration defined in **[!UICONTROL Timeout or error]** field of the journey's properties, the second path will be chosen to perform a potential fallback action.
 
@@ -361,7 +367,7 @@ To learn more about merge policies, refer to [[!DNL Adobe Experience Platform] d
 >[!CONTEXTUALHELP]
 >id="ajo_journey_exit_criterias"
 >title="Exit criteria"
->abstract="This section shows the exit criteria options. You can create one or multiple exit criteria rules and filters for your journey."
+>abstract="This section shows the exit criteria options, where one or multiple exit criteria rules and filters can be defined for the journey."
 
 ### Journey Exit criteria {#exit-criteria-desc}
 
@@ -396,7 +402,7 @@ To **create** an exit criteria, follow these steps:
 
 You can add multiple exit criteria. The exit criteria is now active and will be evaluated at each step of the journey.
 
-![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%" align="left"}
+![Exit criteria panel showing audience conditions for journey termination](assets/exitcriteria-sample.png){width="40%"}
 
 
 ### Profile Attribute-based exit criteria {#profile-exit-criteria}
@@ -460,6 +466,36 @@ The **[!UICONTROL Conflict management]** section in the journey's properties all
 
 * **View conflicts** with other journeys, campaigns, or channel configurations. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. [Learn how to identify potential conflicts in journey](../conflict-prioritization/conflicts.md)
 
+## Frequently asked questions {#faq}
+
+**Where do I find a journey's properties?**
+
+Properties are in the right rail of the journey canvas. They appear by default when you create a new journey. For an existing journey, click the pencil icon next to the journey's name to open them. For live journeys, the panel shows only the publication date and the name of the user who published the journey. See [Access the properties of a journey](#access-properties).
+
+**Can I change properties on a live journey?**
+
+Most properties are read-only once a journey is live. To modify them, create a new journey version or duplicate the journey, make your changes in draft, and [publish](publish-journey.md) again.
+
+**What is the difference between the reentrance setting and the reentrance wait period?**
+
+**[Allow reentrance](#allow-reentrance)** controls whether a profile can enter the journey more than once at all. The **[Reentrance wait period](#reentrance-wait)** (displayed only when reentrance is allowed) defines how long to wait before the same profile can re-enter a unitary journey. The default is 5 minutes and the maximum is 90 days. For more details, see [Profile entrance management](entry-management.md).
+
+**How long can a profile stay in a journey?**
+
+A [global journey timeout](#global_timeout) stops a profile **91 days** after they enter — an individual's journey cannot last longer than that. This timeout is not displayed in the interface and cannot be changed. Because profile data is removed after 91 days, reentrance blocking cannot be guaranteed beyond that period. See also [How journeys end](end-journey.md#journey-finished-definition).
+
+**Why does my journey fail to publish because of payload size?**
+
+The **[!UICONTROL Current journey payload size]** indicator shows your journey's payload against the configured limit (4 MB by default). If the payload approaches or exceeds the limit, publication fails. Reduce the size by simplifying the journey logic or reducing the number of activities, or contact Adobe Customer Care to request a higher limit. See [Journey payload size](#journey-payload-size), [Journey payload size validation](../start/guardrails.md#journey-payload-size), and [General journey guardrails](../start/guardrails.md#journeys-guardrails-journeys).
+
+**Which merge policy does my journey use?**
+
+It depends on the journey type: [Read audience](read-audience.md) and [Audience qualification](audience-qualification-events.md) journeys use the audience's merge policy, [unitary event](../event/about-events.md) journeys use the default merge policy, and [business event](../event/about-creating-business.md) journeys use the merge policy of the targeted audience in the following Read audience activity. The same merge policy applies throughout the entire journey. If an audience merge policy is updated, any active journey referencing that audience must be republished or duplicated. See [Merge policy](#merge-policies).
+
+**What is the difference between the 91-day journey timeout and the 91-day reporting window?**
+
+These are separate concepts. The **[journey global timeout](#global_timeout)** (91 days) is the maximum time an individual profile can remain active in a journey, after which the profile exits and its data is deleted. The **reporting window** (approximately 91 days) is a UI display limit: performance data older than ~91 days is no longer visible, but the journey keeps running and new profiles keep entering. For TTL and data retention details, see the [Time-to-Live (TTL) and data retention FAQ](#timeout-faq).
+
 ## Related topics {#related-topics}
 
 * [Profile entrance management](entry-management.md) - Configure how profiles enter and re-enter journeys
@@ -468,3 +504,61 @@ The **[!UICONTROL Conflict management]** section in the journey's properties all
 * [Pause a journey](journey-pause.md) - Pause and resume journeys with profile attribute exit criteria
 * [Timezone management](timezone-management.md) - Configure journey and profile timezones
 * [Conflict management and prioritization](../conflict-prioritization/conflicts.md) - Identify and resolve conflicts across journeys and campaigns
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to configure and manage all global settings for a journey, including entrance rules, timezones, start/end dates, timeout behavior, exit criteria, payload size, and conflict management.
+
+**Intents:**
+
+* Configure journey entrance and reentrance rules for profiles
+* Set start and end dates to control when profiles can enter or exit a journey
+* Define exit criteria to automatically remove profiles when a business condition is met
+* Manage access to a journey using object-level access control labels
+* Monitor journey payload size to prevent publish failures
+* Resolve conflicts and assign priority scores across journeys and campaigns
+
+**Glossary:**
+
+* **Journey properties**: The global settings panel (right rail) that controls name, entrance rules, timezone, dates, timeout, payload size, and conflict management for a journey. *(product-specific)*
+* **Reentrance wait period**: The minimum time a profile must wait before being allowed to re-enter a unitary journey; maximum is 90 days. *(product-specific)*
+* **Global journey timeout (TTL)**: The maximum duration a profile can remain active within a journey — currently 91 days, after which the profile is exited and its data deleted. *(product-specific)*
+* **Exit criteria**: Rules defined at the journey level that automatically remove profiles from a journey when a specified event occurs or an audience condition is met. *(product-specific)*
+* **Profile Attribute–Based Exit Criteria**: Exit rules based on profile attributes (e.g., location, status) that are evaluated at action steps and are only editable when a journey is paused. *(product-specific)*
+* **Merge policy**: The rule set used by Adobe Experience Platform to combine profile data from multiple sources; applied consistently throughout the entire journey. *(product-specific)*
+* **Conflict management**: Tools in journey properties for assigning priority scores, applying rule sets, and identifying overlapping journeys or campaigns. *(product-specific)*
+* **Journey payload size**: The current size of the journey's definition payload compared to the configured limit; exceeding the limit blocks publication. *(product-specific)*
+* **OLAC (Object Level Access Control)**: A permission model that restricts access to individual journeys using data usage labels.
+
+**Guardrails:**
+
+* Reentrance wait period maximum is 90 days
+* Global journey timeout is 91 days; after this period, profile data is deleted and the profile is exited
+* Journey payload default limit is 4 MB; exceeding it prevents publication — contact Adobe Customer Care for a higher limit
+* Exit criteria are only configurable in draft state (event/audience types); Profile Attribute exit criteria are only editable when the journey is paused
+* Only one Profile Attribute exit criteria rule is allowed per journey
+* Profile Attribute exit criteria are evaluated at action steps only, not globally
+* When an audience merge policy is updated, any active journey referencing that audience must be republished
+* Inconsistent merge policies in a journey block publication; inconsistencies in message personalization do not raise an alert
+* For live journeys, the properties panel shows only the publication date and publisher name
+
+**Terminology:**
+
+* Canonical name: Journey properties — Acronym: none — variants: journey settings, journey configuration panel
+* Synonyms: "global journey timeout" = "TTL" = "Time-to-Live"
+* Do not confuse: "global journey timeout (91 days)" ≠ "reporting window (~91 days)" — the timeout limits individual profile duration in a journey; the reporting window is a UI display limit for analytics data
+
+**FAQ:**
+
+* **Q: How long can a profile stay in a journey?** — A maximum of 91 days (the global journey timeout); after this period, the profile is automatically exited and its data deleted.
+* **Q: Can I edit journey properties while the journey is live?** — For live journeys, the properties panel shows only the publication date and publisher name; structural changes require a new version.
+* **Q: What happens when multiple exit criteria are configured?** — They are evaluated from top to bottom with OR logic at every step of the journey; a profile exits when any one criterion is met.
+* **Q: How do I prevent a profile from re-entering a journey?** — Uncheck the "Allow reentrance" option in journey properties; this is suitable for one-time experiences such as a gift offer.
+* **Q: What is the difference between journey timeout and end date?** — The end date stops all new entries and automatically exits active profiles on that specific date; the 91-day global timeout applies per profile from the moment they enter, regardless of the journey's end date.
+* **Q: How is the merge policy determined for a journey?** — It depends on the journey type: Read Audience and Audience Qualification journeys use the audience's merge policy; Unitary event journeys use the default merge policy; Business event journeys use the merge policy from the targeted audience in the subsequent Read Audience activity.
+
++++

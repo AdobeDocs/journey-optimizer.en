@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Use API call responses in custom actions {#custom-action-enhancements}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Capture the response payload returned by a custom action's API call so you can orchestrate journeys, personalize messages, and handle errors based on data from the external system.
+
+>[!ENDSHADEBOX]
+
 You can leverage API call responses in custom actions and orchestrate your journeys based on these responses.
 
 <!--
@@ -94,7 +100,7 @@ The **URL configuration** section has been renamed **Endpoint configuration**.
 
 In the **Method** drop-down, you can now select **GET**.
 
-![](assets/action-response1.png){width="70%" align="left"}
+![](assets/action-response1.png){width="70%"}
 
 ### Payloads {#payloads-new}
 
@@ -107,7 +113,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 > 
 >Both these fields are optional.
 
-![](assets/action-response2.png){width="70%" align="left"}
+![](assets/action-response2.png){width="70%"}
 -->
 
 ## Configure the custom action {#config-response}
@@ -116,7 +122,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 1. Click inside the **Response** (success response) field. 
 
-    ![](assets/action-response2.png){width="80%" align="left"}
+    ![](assets/action-response2.png){width="80%"}
 
 1. Paste an example of the payload returned by the call. Verify that the field types are correct (string, integer, etc.). Here is an example of response payload captured during the call. Our local endpoint sends the number of loyalty points and the status of a profile. 
 
@@ -127,7 +133,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
     "points": 1290 }
     ```
 
-    ![](assets/action-response4.png){width="80%" align="left"}
+    ![](assets/action-response4.png){width="80%"}
 
     Each time the API is called, the system will retrieve all the fields included in the payload example.
 
@@ -143,7 +149,7 @@ The **Action parameters** section has been renamed **Payloads**. Two fields are 
 
 1. Let's also add the customerID as a query parameter.
 
-    ![](assets/action-response9.png){width="80%" align="left"}
+    ![](assets/action-response9.png){width="80%"}
 
 1. Click **Save**.
 

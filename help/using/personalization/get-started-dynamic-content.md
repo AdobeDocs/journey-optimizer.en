@@ -20,6 +20,12 @@ subfeature_v2:
 ---
 # Get started with dynamic content {#start-dynamic-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how dynamic content uses conditional rules built from profile attributes, contextual events, and audiences to adapt your messages to targeted profiles.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_conditions_list"
 >title="Conditions"

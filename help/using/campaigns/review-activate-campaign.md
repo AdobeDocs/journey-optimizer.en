@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Review and activate the Action campaign {#action-campaign-review}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review your Action campaign's configuration and content to catch any errors before activating it, so you can confidently send your message immediately or on its scheduled date.
+
+>[!ENDSHADEBOX]
+
 Once your Action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow the steps below.
 
 >[!IMPORTANT]
