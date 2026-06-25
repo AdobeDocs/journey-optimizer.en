@@ -65,6 +65,26 @@ Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a h
 
 **Data Sharing** - Share customer profiles with top cloud storage providers like Amazon Web Services, Microsoft Azure, and Google Cloud. Use shared profiles for reporting, data archiving, or deeper analysis with business intelligence tools.
 
+## Engageable Profiles and license usage {#engageable-profiles}
+
+An **Engageable Profile** is a record of information representing an individual that is stored in the Profile Service and has been engaged by journeys or campaigns. It is the key license metric for [!DNL Adobe Journey Optimizer].
+
+Key characteristics:
+
+* **12-month rolling window**: The count reflects unique profiles you have attempted to engage over the past 12 months using Journey Optimizer's authoring, decisioning, delivery, experimentation, or orchestration capabilities.
+* **Counted once per sandbox**: A profile that enters multiple journeys or campaigns within a sandbox counts as a single Engageable Profile for that sandbox.
+* **Based on your Addressable Audience**: Engageable Profiles are calculated from your Addressable Audience. The count represents the audience engaged in the past 12 months using any of Journey Optimizer's capabilities, out of your total Addressable Audience.
+* **Metric behavior**: The Engageable Profiles count:
+    * Can increase when new profiles are engaged through journeys or campaigns
+    * Cannot decrease unless there is no engagement with certain profiles for over 12 months
+    * Can decrease when pseudonymous profiles are stitched to known profiles
+
+>[!TIP]
+>
+>When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels such as web, in-app, or code-based experiences, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your Engageable Profiles count and associated costs. [Learn more about inbound channel guardrails](../start/guardrails.md#profile-management-inbound)
+
+Monitor your organization's Engageable Profiles count at any time from **[!UICONTROL Administration]** > **[!UICONTROL License Usage]**. If you observe a sudden spike in the count, refer to the [Troubleshooting section](license-usage.md#troubleshooting-engageable-profiles) for detailed guidance. [Learn more about the License Usage dashboard](license-usage.md)
+
 >[!MORELIKETHIS]
 >
 >* [Get started with data management in Journey Optimizer](../data/gs-data.md)

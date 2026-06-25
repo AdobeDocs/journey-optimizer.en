@@ -32,7 +32,7 @@ subfeature_v2:
 Adobe Journey Optimizer allows brands to create and manage real-time customer profiles and audiences to deliver personalized customer experiences. ​ This overview provides a general understanding of how to work with profiles and audiences in Journey Optimizer. For detailed information, refer to the specific sections on Profiles and Audiences.
 
 **Profiles**
-Adobe Journey Optimizer offers a range of features to work with real-time customer profiles, enabling brands to create a unified, 360-degree view of their customers. ​ Key features include real-time data ingestion, identity graph creation, and customer engagement tools. [Get started with profiles](get-started-profiles.md)
+Adobe Journey Optimizer offers a range of features to work with real-time customer profiles, enabling brands to create a unified, 360-degree view of their customers. ​ Key features include real-time data ingestion, identity graph creation, and customer engagement tools. Profiles engaged through journeys, campaigns, or decisioning count toward your **Engageable Profiles** license metric. [Get started with profiles](get-started-profiles.md) | [Monitor license usage](license-usage.md)
 
 **Audiences**
 Adobe Journey Optimizer provides robust tools for creating, managing, and enriching audiences to enhance marketing efforts. ​Key features include audience segmentation, enrichment, management, and activation, along with governance and privacy tools. [Get started with audiences](about-audiences.md)
