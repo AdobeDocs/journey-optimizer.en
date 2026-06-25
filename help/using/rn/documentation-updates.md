@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## June 2026 {#june-2026}
 
+* The **Configure a Targeting dimension** page has been updated to document the two targeting dimension types available in Orchestrated campaigns: the built-in **profile targeting dimension** (no configuration required) and **custom targeting dimensions** based on relational schemas. [Read more](../orchestrated/target-dimension.md)
+
 * The **Leverage themes in a fragment** documentation has been clarified to explicitly document the 5-theme compatibility limit (including the Adobe default theme constraint) and to explain that fragment insertion is blocked when the email theme is not one of the fragment-associated themes. [Read more](../email/apply-email-themes.md#leverage-themes-fragment)
 
 * The **Get started with datasets** and **Get started with schemas** pages have been updated with guidance on enabling datasets and schemas for Real-Time Customer Profile, including key considerations, the distinction between disabling a dataset versus its underlying schema, and links to the Adobe Experience Platform planning and best practices documentation. [Learn more about datasets](../data/get-started-datasets.md) and [Learn more about schemas](../data/get-started-schemas.md)
