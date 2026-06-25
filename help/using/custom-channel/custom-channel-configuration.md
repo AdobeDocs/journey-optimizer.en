@@ -150,9 +150,9 @@ However, the authentication details are needed here to test the connection to yo
 
 >[!CONTEXTUALHELP]
 >id="ajo_custom_channel_payload_config"
->title="Enable for channel configuration"
+>title="Enable field for channel configuration"
 >abstract="If enabled, the fields in this column appear in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates."
-additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/create-custom-channel-config.html" text="Learn more on custom channel configuration"
+additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/custom-channel-configuration.html#create-channel-config" text="Configure dynamic parameters in the custom channel configuration"
 
 <!--Create a page on Custom channel config to explain how to use the payload in a channel configuration.-->
 
@@ -235,7 +235,7 @@ To create additional credentials for the same channel, follow the steps below.
 <!--TBC if optional or required for custom channels.-->
 To allow link tracking within message payloads, you need to delegate a subdomain for your custom channel. They are distinct from email, SMS or landing page subdomains and need to be created and managed in their own inventory.
 
-To delegate a subdomain for custom channels:
+To delegate a subdomain for custom channels, follow the steps below.
 
 1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel builder]** > **[!UICONTROL Subdomains]**.
 
@@ -247,13 +247,17 @@ To delegate a subdomain for custom channels:
 
    ![Use existing subdomain](assets/custom_channel_create_subdomain.png){width="100%"}
 
+   * If you are using an existing delegated subdomain, enter a prefix and select a subdomain from the list. The prefix is used to create a unique subdomain for this custom channel. For example, if you enter `promo` and select the subdomain `luma.com`, the resulting subdomain will be `promo.luma.com`.
+
+   * If you are creating a new subdomain, enter the subdomain name. You will need to update your DNS records to delegate the subdomain to Adobe Journey Optimizer.<!--TBC-->
+
 1. **[!UICONTROL Submit]** to create the subdomain.
 
 ## Step 4: Create a channel configuration {#create-channel-config}
 
 A channel configuration links your custom channel to a named, reusable preset that marketers select when building campaigns and journeys.
 
-To create a channel configuration for a custom channel:
+To create a channel configuration for a custom channel, follow the steps below.
 
 1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel configurations]** and click **[!UICONTROL Create channel configuration]**. Learn more on [creating a channel configuration](../configuration/channel-configurations.md).
 
@@ -265,15 +269,17 @@ To create a channel configuration for a custom channel:
 
    ![Select API credentials](assets/custom_channel_config_api_credentials.png){width="100%"}
 
-1. If the channel has headers or query parameters defined as **Variable**, the **[!UICONTROL Dynamic parameters]** section appears. Enter the value for each variable parameter. You can use the personalization editor to inject dynamic values (for example, a user identifier resolved from the profile).
+1. If you have set up subdomains for custom channels in [!DNL Journey Optimizer], you can select a delegated subdomain to use for tracking links present in the payload for this configuration. [Learn how to delegate a subdomain](#subdomain-delegation)
+
+1. If thechannel has headers or query parameters defined as **Variable**, the **[!UICONTROL Dynamic parameters]** section appears. Enter the value for each variable parameter. You can use the personalization editor to inject dynamic values (for example, a user identifier resolved from the profile).
 
    ![Dynamic parameters](assets/custom_channel_config_dynamic_parameters.png){width="100%"}
 
-1. If the channel has payload fields with the **[!UICONTROL Channel config]** checkbox enabled, those fields appear in the **[!UICONTROL Payload configuration]** section. [Learn more](#payload-configuration)
+1. If the custom channel has payload fields with the **[!UICONTROL Channel config]** checkbox enabled, those fields appear in the **[!UICONTROL Payload configuration]** section. [Learn more on ](#payload-configuration)
 
    ![Payload fields](assets/custom_channel_config_payload.png){width="100%"}
 
-   Configure a value for each field as appropriate for this configuration.
+   Configure a value for each field as appropriate for this configuration. If enabled, the fields in this column appear in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates.
 
 <!-->
 1. For Orchestrated Campaigns, complete the **[!UICONTROL Execution details]** section to map profile dimensions and specify the execution address.
