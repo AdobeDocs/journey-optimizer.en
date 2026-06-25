@@ -85,12 +85,6 @@ Key characteristics:
 
 Monitor your organization's Engageable Profiles count at any time from **[!UICONTROL Administration]** > **[!UICONTROL License Usage]**. If you observe a sudden spike in the count, refer to the [Troubleshooting section](license-usage.md#troubleshooting-engageable-profiles) for detailed guidance. [Learn more about the License Usage dashboard](license-usage.md)
 
->[!MORELIKETHIS]
->
->* [Get started with data management in Journey Optimizer](../data/gs-data.md)
->* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
->* [Default guardrails for Real-Time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}
->* ​[Data Ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home){target="_blank"}
 
 ## Profiles dashboard
 
@@ -109,3 +103,12 @@ You can bring data fragments together from multiple sources and combine them to 
 Learn how Adobe Experience Platform assembles and updates Real-Time Customer Profiles and how you can access and use these profiles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12)
+
+
+
+>[!MORELIKETHIS]
+>
+>* [Get started with data management in Journey Optimizer](../data/gs-data.md)
+>* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
+>* [Default guardrails for Real-Time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}
+>* ​[Data Ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home){target="_blank"}
