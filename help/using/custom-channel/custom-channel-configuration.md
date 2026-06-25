@@ -27,7 +27,21 @@ Before marketers can use a custom channel in campaigns or journeys, an administr
 
 ## Step 1: Create a custom channel {#create-custom-channel}
 
-The **Channel Builder** section is the central interface for defining new custom channels. It is accessible to users with the **[!UICONTROL Administrator]** role. It enables you to create and configure custom channels, but also manage API credentials, and delegate subdomains.
+>[!CONTEXTUALHELP]
+>id="ajo_custom_channel_settings"
+>title="About custom channels"
+>abstract="A custom channel lets Adobe Journey Optimizer send personalized messages to an external system through your own API endpoint. Define the general properties, endpoint, authentication, and payload, then test and activate your new custom channel. Once done, you can use it when creating a channel configuration so marketers can use it in journeys and campaigns."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/get-started-custom-channel.html" text="Get started with custom channels"
+
+<!--Contextual help final location TBC (here or in Settings subsection-->
+
+To be able to use a custom channel in campaigns and journeys, an administrator must first create the channel. This involves defining the endpoint, authentication, throttling policy, and message payload structure.
+
+The **Channel Builder** section is the central interface for defining new custom channels. <!--It is accessible to users with the **[!UICONTROL Administrator]** role. -->It enables you to create and configure custom channels, but also manage API credentials, and delegate subdomains.
+
+>[!IMPORTANT]
+>
+>To access the Channel Builder and manage custom channels, you must have the **[!UICONTROL Administrator]** role. Learn more about [roles and permissions](../administration/roles-permissions.md). <!--TBC-->
 
 ## Access the Channel Builder {#access-channel-builder}
 
@@ -45,7 +59,7 @@ To access the **Channel Builder**, follow the steps below.
 
 1. Click the **[!UICONTROL Create custom channel]** button to open the channel creation form.
 
-### Define the general settings {#general-settings}
+### Define custom channel general settings {#general-settings}
 
 Start by defining the general settings for your custom channel.
 
@@ -110,6 +124,11 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
 ### Authentication settings {#authentication-settings}
 
+>[!CONTEXTUALHELP]
+>id="ajo_custom_channel_authentication"
+>title="Define the authentication type"
+>abstract="Authentication is the process of verifying the identity of a user or system. In the context of custom channels, authentication ensures that only authorized requests are sent to your external messaging system. You can choose from several authentication methods, including API Key, Basic Auth, and OAuth 2.0. Each method has its own configuration requirements."
+
 Select the **[!UICONTROL Authentication type]** that you need to use for this channel. The available options depend on the authentication methods supported by your external messaging system.
 
 ![Authentication type](assets/custom_channel_authentication_type.png){width="70%"}
@@ -122,15 +141,23 @@ Provide the authentication details as required by your endpoint.
 * **[!UICONTROL OAuth 2.0]** – Configure the payload for OAuth 2.0 authentication.
 <!--* **[!UICONTROL Custom]** – Define the authentication configuration using a JSON payload.-->
 
-A **[!UICONTROL Test connection]** button is available to validate the authentication setup. [Learn more](#test-the-connection)
+When the authentication type is anything other than **None**, [!DNL Journey Optimizer] automatically generates an initial set of API credentials for this channel when it is activated. You can change these credentials and create new ones in the API credentials inventory. [Learn more](#api-credentials) <!--TBC-->
 
->[!NOTE]
->
->When the authentication type is anything other than **None**, [!DNL Journey Optimizer] automatically generates an initial set of API credentials for this channel when it is activated. Additional credentials can be created in the API credentials inventory. [Learn more](#api-credentials) <!--TBC-->
+However, the authentication details are needed here to test the connection to your endpoint before activating the channel. A **[!UICONTROL Test connection]** button is available to validate the authentication setup. [Learn more](#test-the-connection)
 
 ### Payload configuration {#payload-configuration}
 
-The payload is sent to the endpoint when a profile qualifies in a campaign or journey. In the payload configuration, define the structure of the message payload and which fields marketers can author and personalize.
+>[!CONTEXTUALHELP]
+>id="ajo_custom_channel_payload_config"
+>title="Enable for channel configuration"
+>abstract="If enabled, the fields in this column appear in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates."
+additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/create-custom-channel-config.html" text="Learn more on custom channel configuration"
+
+<!--Create a page on Custom channel config to explain how to use the payload in a channel configuration.-->
+
+The payload is sent to the endpoint when a profile qualifies in a campaign or journey.
+
+In the payload configuration, define the structure of the message payload and which fields marketers can author and personalize.
 
 1. Click **[!UICONTROL Define payload]**, and choose how to define the payload:
 
