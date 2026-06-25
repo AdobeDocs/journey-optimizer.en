@@ -83,11 +83,7 @@ Key characteristics:
 >
 >When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels such as web, in-app, or code-based experiences, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your Engageable Profiles count and associated costs. [Learn more about inbound channel guardrails](../start/guardrails.md#profile-management-inbound)
 
->[!NOTE]
->
->If you observe a sudden spike in your Engageable Profiles count, refer to the [Troubleshooting section](license-usage.md#troubleshooting-engageable-profiles) in the License Usage dashboard documentation for detailed guidance on understanding and resolving the issue.
-
-Monitor your organization's Engageable Profiles count at any time from **[!UICONTROL Administration]** > **[!UICONTROL License Usage]**. [Learn more about the License Usage dashboard](license-usage.md)
+Monitor your organization's Engageable Profiles count at any time from **[!UICONTROL Administration]** > **[!UICONTROL License Usage]**. If you observe a sudden spike in the count, refer to the [Troubleshooting section](license-usage.md#troubleshooting-engageable-profiles) for detailed guidance. [Learn more about the License Usage dashboard](license-usage.md)
 
 >[!MORELIKETHIS]
 >
