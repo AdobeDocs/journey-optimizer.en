@@ -146,11 +146,16 @@ For system-generated events, the Pipeline filters events which have a payload co
 
 ## About Journey event throughput {#event-thoughput}
 
-Adobe Journey Optimizer supports a peak volume of 5,000 journey events per second at an organization level, across all sandboxes. This quota applies to all events that are used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. When this quota is reached, new events get queued with a processing rate of 5,000 per second. The maximum time an event can spend in the queue is **24 hours**.
+Adobe Journey Optimizer enforces separate throughput limits per event type, at an organization level across all sandboxes:
+
+* **Unitary events**: 5,000 events per second
+* **Read Audience based journey events**: 5,000 events per second
+
+These limits apply to all events used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. When a limit is reached, new events get queued and processed at 5,000 per second until the queue is drained.
 
 For more details on journey processing rates and how different journey types impact throughput, refer to [this section](../building-journeys/entry-management.md#journey-processing-rate).
 
-The following types of events are counted toward the 5,000 TPS quota:
+The following types of events are counted toward these quotas:
 
 * **External Unitary Events**: Includes both rule-based and system-generated events. If the same raw event qualifies for multiple rule definitions, each qualified rule counts as a separate event. More details below.
 
