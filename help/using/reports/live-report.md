@@ -54,6 +54,10 @@ Use the **[!UICONTROL Live report]** to measure and visualize in real-time the i
 
 For a detailed list of every metric available in Adobe Journey Optimizer, refer to [this page](#list-of-components-live).
 
+>[!NOTE]
+>
+>Short-term discrepancies between the live report and the all-time report are expected. The live report uses near-real-time data feeds, while the all-time report relies on aggregated data. Should discrepancies occur, allow a minimum of two hours before reconciling the two reports, as data typically propagates to the aggregated view within that timeframe.
+
 ## Customize dashboard {#modify-dashboard}
 
 Each reporting dashboard can be modified by resizing or removing widgets. Changing the widgets only impacts the current user's dashboard. Other users will see their own dashboards or the ones set by default. 

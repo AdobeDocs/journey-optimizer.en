@@ -7,7 +7,6 @@ feature: Integrations
 topic: Administration
 role: Admin
 level: Experienced
-hide: true
 keywords: AEM, Content Fragments, administration, repository, authentication, author, publish
 feature_v2:
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
@@ -20,11 +19,11 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how administrators connect a sandbox to an Adobe Experience Manager repository — setting author-only or publish access, custom domains, and authentication — so marketers can use AEM Content Fragments in their journeys and campaigns.
+**On this page:** Learn how administrators connect a sandbox to an Adobe Experience Manager repository, setting author-only or publish access, custom domains, and authentication, so marketers can use AEM Content Fragments in their journeys and campaigns.
 
 >[!ENDSHADEBOX]
 
-Adobe Journey Optimizer integrates with **[!DNL Adobe Experience Manager as a Cloud Service]** so you can use **Content Fragments** in Journeys and Campaigns. **Content Fragments** are read from the Adobe Experience Manager publish repository by default, administrators can switch to author-only or adjust publish access in the **[!UICONTROL AEM Integration]** menu.
+Adobe Journey Optimizer integrates with **[!DNL Adobe Experience Manager as a Cloud Service]** and **[!DNL Adobe Experience Manager Managed Service]** so you can use **Content Fragments** in Journeys and Campaigns. **Content Fragments** are read from the Adobe Experience Manager publish repository by default, administrators can switch to author-only or adjust publish access in the **[!UICONTROL AEM Integration]** menu.
 
 ➡️ When the repository is configured, continue with [Work with Experience Manager Content Fragments](../integrations/aem-fragments.md) for authoring and selection tasks in Journey Optimizer.
 
@@ -36,47 +35,57 @@ Adobe Journey Optimizer integrates with **[!DNL Adobe Experience Manager as a Cl
   
 Journey Optimizer stores one integration per organization, sandbox, and Adobe Experience Manager repository. If you save a new integration for that same combination, it replaces the previous settings, only the latest configuration is kept.
 
+➡️ [Discover this feature for Adobe Experience Manager Managed Service in video](#video)
+
 To configure your repository:
 
 1. Access **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL AEM Integration]**.
 
-1. Click **[!UICONTROL Create integration]**.
+1. Click **[!UICONTROL Create configuration]**.
 
    ![](assets/aem-admin-settings-1.png)
 
-1. If you use **[!DNL Adobe Experience Manager Managed Services]**, enter a repository hostname ending with `adobecqms.net` in the **[!UICONTROL Custom AMS Repo ID]** field.
+1. Choose a configuration method:
 
-   ![](assets/aem-admin-settings-6.png)
+    * For **[!DNL Adobe Experience Manager Managed Services]** repository, enter a repository hostname ending with `adobecqms.net` in the **[!UICONTROL AMS repository hostname]** field.
 
-1. Choose which repository to configure and click **[!UICONTROL Next]**.
+        ![](assets/aem-admin-settings-6.png)
 
-    Additionally, you can click **[!UICONTROL View]** to access this repository.
+    * If you use **[!DNL Adobe Experience as a Cloud Service]**, choose which repository to configure and click **[!UICONTROL Next]**.
 
-    >[!IMPORTANT]
-    >
-    >Saving a new configuration for the same organization, sandbox, and repository **replaces** the default configuration, i.e **publish** repository. 
+        Additionally, you can click **[!UICONTROL View]** to access this repository.
 
-   ![](assets/aem-admin-settings-2.png)
+        >[!IMPORTANT]
+        >
+        >Saving a new configuration for the same organization, sandbox, and repository **replaces** the default configuration, i.e **publish** repository. 
+
+        ![](assets/aem-admin-settings-2.png)
 
 1. Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]**.
 
-1. Choose your setup:
+1. Choose your setup in the drop-down below:
 
     +++ Author only setup
 
     Select **[!UICONTROL Author only setup]** when Journey Optimizer should read Content Fragments from the Adobe Experience Manager **author** environment only. Replication from author to publish and live publish updates are not supported.
 
     ![](assets/aem-admin-settings-3.png)
-    
+
     +++
+
+    </br>
 
     +++ Publish instance setup
 
+    By default, every **[!DNL Adobe Experience Manager as a Cloud Service]** repository is configured to use the **publish** instance. You can continue to the Content Fragment test step without changing these settings.
+
+    If your publish instance is **authenticated**, or you must use a custom publish domain, follow the steps below.
+
     1. Select **[!UICONTROL Publish instance setup]** to turn on publish instance settings.
-        
+
         ![](assets/aem-admin-settings-4.png)
 
-    1. Optionally enable **[!UICONTROL Send token to publish instance]** so service credentials are included with requests to the publish instance.
+    1. Enable **[!UICONTROL Send token to publish instance]** so service credentials are included with requests to the publish instance.
 
     1. Paste a valid **[!UICONTROL Service Credential JSON]** for authentication.
 
@@ -102,3 +111,8 @@ To configure your repository:
 
 When you save this configuration, Journey Optimizer stores it for that repository in the current sandbox. You can then use that repository and its settings when browsing and selecting content in the **Content Advisor** selector.
 
+## How-to video {#video}
+
+Learn how administrators configure Adobe Experience Manager Managed Services repository settings in Journey Optimizer so marketers can use Content Fragments in journeys and campaigns.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3492529?quality=12)

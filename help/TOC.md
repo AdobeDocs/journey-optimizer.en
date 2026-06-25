@@ -12,7 +12,7 @@ solution: Journey Optimizer
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
-  + [Pre-release notes](using/rn/e-release-notes.md)  
+  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)  
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -24,18 +24,19 @@ solution: Journey Optimizer
     + {hide-from-toc} [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
+  + {hide-from-toc} [Migrate batch audiences from Audience Qualification](using/building-journeys/aq-batch-audiences-migration.md)
 + Get started {#get-started}
-  + [Get started](/help/rp_landing_pages/get-started-landing-page.md)
+  + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
+  + [Onboarding hub](using/start/onboarding-hub.md)
   + Essentials {#essentials}
-    + [What is Journey Optimizer?](using/start/get-started.md)
+    + [What is Journey Optimizer](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
     + [AI & intelligent features](using/start/ai-features.md)
     + [Key terminology](using/start/terminology.md)
-    + {hide-from-toc} [Which capability for this job?](using/start/ajo-use-case-guide.md)
+    + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
-    + {hide-from-toc} [Capabilities by package](using/start/ajo-packages.md)
-    + {hide-from-toc} [Packages and capabilities (v2)](using/start/ajo-packages-v2.md)
-    + {hide-from-toc} [Packages and capabilities (v3)](using/start/ajo-packages-v3.md)
+    + {hide-from-toc} [Packages and capabilities](using/start/ajo-packages.md)
+    + {hide-from-toc} [Feature availability](using/start/ajo-features-availability.md)
   + Get started by role {#by-role}
     + [Roles and responsibilities](using/start/quick-start.md)
     + [Get started as an Administrator](using/start/path/administrator.md)
@@ -51,7 +52,7 @@ solution: Journey Optimizer
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
   + {hide-from-toc} [Journey Get Started Guide](using/building-journeys/journey-get-started.md)
-  + {hide-from-toc} [Journey types and selection guide](using/building-journeys/journey-types-selection.md)
+  + {hide-from-toc} [Journey types: choose the right one](using/building-journeys/journey-types-selection.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
@@ -190,6 +191,7 @@ solution: Journey Optimizer
       + [Key steps to create an Orchestrated campaign](using/orchestrated/gs-campaign-creation.md)
       + [Create and schedule the campaign](using/orchestrated/create-orchestrated-campaign.md)
       + [Orchestrate activities](using/orchestrated/orchestrate-activities.md)
+      + [Add personalization](using/orchestrated/add-personalization.md)
       + [Start and monitor the campaign](using/orchestrated/start-monitor-campaigns.md)
       + [Reporting](using/orchestrated/reporting-campaigns.md)
     + Query the database {#query-database}
@@ -311,6 +313,7 @@ solution: Journey Optimizer
         + [Add custom CSS](using/email/custom-css.md)
         + [Manage dark mode content](using/email/dark-mode.md)
       + [Create accessible content](using/email/accessible-content.md)
+      + [Content check](using/email/content-check.md)
     + Configure email channel {#configure-email}
       + {hide-from-toc} [Configure email channel](/help/rp_landing_pages/configure-email-landing-page.md)
       + [Get started with email configuration](using/email/get-started-email-config.md)
@@ -349,6 +352,7 @@ solution: Journey Optimizer
     + [Manage Mobile message opt-out](using/mobile/mobile-opt-out.md)
     + [Set up SMS subdomains](using/mobile/mobile-subdomains.md)  
     + [Best practices for SMS cost optimization](using/mobile/mobile-cost-optimization.md)
+    + [Generate SMS usage report](using/mobile/sms-usage-report.md)
     + Configure Mobile channel {#configure-mobile}
       + [Get started with Mobile configuration](using/mobile/mobile-configuration.md)
       + [Configure Sinch provider](using/mobile/mobile-configuration-sinch.md)
@@ -507,11 +511,11 @@ solution: Journey Optimizer
     + [Work with Experience Manager Assets](using/integrations/assets.md)
     + [Work with Adobe Stock](using/integrations/stock.md)
     + [Work with Adobe Express](using/integrations/express.md)
-    + {hide-from-toc} [Work with Experience Manager templates](using/integrations/aem-templates.md)
     + Experience Manager Content Fragments {#aem}
       + [Get started with Experience Manager Content Fragments](using/integrations/aem-fragments-gs.md)
-      + {hide-from-toc} [Configure your repository for Content Fragments](using/integrations/aem-admin-settings.md)
+      + [Configure your repository for Content Fragments](using/integrations/aem-admin-settings.md)
       + [Work with Experience Manager Content Fragments](using/integrations/aem-fragments.md)
+      + [Manage your Adobe Experience Manager Content Fragments](using/integrations/aem-fragments-manage.md)
       + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
     + [Work with Experience Manager Content Advisor](using/integrations/aem-content-advisor.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)

@@ -42,7 +42,7 @@ As your Adobe Journey Optimizer projects grow, finding and organizing content be
 
 ## Search {#unified-search}
 
-From Adobe Journey Optimizer interface, use the unified Adobe Experience Cloud search capability on the center of the top bar to find assets, journeys, datasets, and more across your sandboxes. 
+From Adobe Journey Optimizer interface, use the unified [!DNL Adobe CX Enterprise] search capability on the center of the top bar to find assets, journeys, datasets, and more across your sandboxes. 
 
 Start entering content to display top results. Help articles about the entered keywords also show up in the results.
 
