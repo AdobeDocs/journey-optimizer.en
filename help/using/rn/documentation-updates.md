@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## June 2026 {#june-2026}
 
+* The **High throughput mode** page has been updated to reflect the expanded regional availability: the feature is now available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on. [Read more](../campaigns/api-triggered-high-throughput.md)
+
 * A new **Engageable Profiles and license usage** section has been added to the **Get started with profiles** page as the single source of truth for this concept, with targeted references added across the Audiences, Campaigns, and Decisioning sections. [Read more](../audience/get-started-profiles.md#engageable-profiles)
 
 * The **Split** activity documentation has been updated to document the **[!UICONTROL Segment code]** field available in each subset settings, which allows you to assign a unique identifier to each audience segment for tracking and reporting purposes. [Read more](../orchestrated/activities/split.md)
