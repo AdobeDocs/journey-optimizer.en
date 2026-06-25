@@ -138,6 +138,9 @@ The following capabilities and improvements have been added to journeys in this 
 </tbody>
 </table>
 
+
+* [!BADGE Deprecation]{type=Negative} **Batch audiences deprecated in Audience Qualification node** - Starting **August 2026**, Journey Optimizer will block publication for any journey using a batch audience in an **Audience Qualification** node. A validation warning is already surfaced in the journey canvas. Existing live journeys are not affected. New, draft, and duplicated journeys that include this configuration must be updated before August 2026. Use a streaming audience in the Audience Qualification node, or switch to a **Read Audience** activity. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
+
 * **Stop a paused journey directly** - You can now stop a journey directly from the **Paused** state. Previously, a paused journey had to be resumed to **Live** before it could be stopped. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
 
   Availability date: June 18-22, 2026
@@ -159,6 +162,7 @@ The following capabilities and improvements have been added to journeys in this 
 * **Increased live journey limit and new guardrails** - You can now have up to **200 active journeys**, increased from the previous limit of 100. [Read more](../start/guardrails.md#journeys-guardrails-journeys)
 
   Availability date: June 18, 2026. This capability is being gradually rolled out to all regions over the next few days.
+
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -365,7 +369,7 @@ The following improvements have been added to the email channel in this release.
 <p>For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
 <p><img src="assets/do-not-localize/rich-text-editable-fields.gif"></p>
 <p>For more information, refer to the <a href="../content-management/customizable-fragments.md#rich-text-visual">detailed documentation</a>.</p>
-<p>Availability date: Late June, 2026</p>
+<p>Availability date: June 19, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -408,6 +412,7 @@ The following improvements have been added to the email channel in this release.
 <td>
 <p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
 <p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
+<p>Availability date: Late June, 2026</p>
 </td>
 </tr>
 </tbody>

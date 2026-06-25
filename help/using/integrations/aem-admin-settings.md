@@ -45,31 +45,35 @@ To configure your repository:
 
    ![](assets/aem-admin-settings-1.png)
 
-1. If you use **[!DNL Adobe Experience Manager Managed Services]**, enter a repository hostname ending with `adobecqms.net` in the **[!UICONTROL Custom AMS Repo ID]** field.
+1. Choose a configuration method:
 
-   ![](assets/aem-admin-settings-6.png)
+    * For **[!DNL Adobe Experience Manager Managed Services]** repository, enter a repository hostname ending with `adobecqms.net` in the **[!UICONTROL AMS repository hostname]** field.
 
-1. If you use **[!DNL Adobe Experience as a Cloud Service]**, choose which repository to configure and click **[!UICONTROL Next]**.
+        ![](assets/aem-admin-settings-6.png)
 
-    Additionally, you can click **[!UICONTROL View]** to access this repository.
+    * If you use **[!DNL Adobe Experience as a Cloud Service]**, choose which repository to configure and click **[!UICONTROL Next]**.
 
-    >[!IMPORTANT]
-    >
-    >Saving a new configuration for the same organization, sandbox, and repository **replaces** the default configuration, i.e **publish** repository. 
+        Additionally, you can click **[!UICONTROL View]** to access this repository.
 
-   ![](assets/aem-admin-settings-2.png)
+        >[!IMPORTANT]
+        >
+        >Saving a new configuration for the same organization, sandbox, and repository **replaces** the default configuration, i.e **publish** repository. 
+
+        ![](assets/aem-admin-settings-2.png)
 
 1. Enter a **[!UICONTROL Name]** and **[!UICONTROL Description]**.
 
-1. Choose your setup:
+1. Choose your setup in the drop-down below:
 
     +++ Author only setup
 
     Select **[!UICONTROL Author only setup]** when Journey Optimizer should read Content Fragments from the Adobe Experience Manager **author** environment only. Replication from author to publish and live publish updates are not supported.
 
     ![](assets/aem-admin-settings-3.png)
-    
+
     +++
+
+    </br>
 
     +++ Publish instance setup
 
@@ -78,7 +82,7 @@ To configure your repository:
     If your publish instance is **authenticated**, or you must use a custom publish domain, follow the steps below.
 
     1. Select **[!UICONTROL Publish instance setup]** to turn on publish instance settings.
-        
+
         ![](assets/aem-admin-settings-4.png)
 
     1. Enable **[!UICONTROL Send token to publish instance]** so service credentials are included with requests to the publish instance.

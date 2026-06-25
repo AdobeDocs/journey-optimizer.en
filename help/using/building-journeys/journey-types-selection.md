@@ -62,7 +62,7 @@ topic_v2:
 
 **Unitary event journeys** are triggered individually when a specific action occurs (purchase, app sign-in, form submission). Profiles enter one at a time in real time, making this ideal for immediate, behavior-driven responses.
 
-**Perfect for:** Order confirmations after purchase, welcome emails when someone subscribes, password reset notifications, and post-login personalization.
+**Perfect for:** Cart abandonment recovery, new member onboarding, welcome emails when someone subscribes, and post-login personalization.
 
 ➡️ [Learn about events](../event/about-events.md) | [Message to subscribers use case](message-to-subscribers-uc.md) | [Create your first journey](journey-gs.md)
 
@@ -104,7 +104,7 @@ Use the table below to match your goal to the right journey type. For most new u
 
 | Your goal | Recommended journey type | Why |
 |-----------|--------------------------|-----|
-| Send order confirmation after purchase | Unitary event | Immediate response to individual action |
+| Recover an abandoned cart | Unitary event | Immediate response to individual behavior |
 | Send monthly newsletter to subscribers | Read Audience | Scheduled batch communication |
 | Notify customers when they reach VIP status | Audience Qualification | Real-time response to streaming audience entry |
 | Alert customers about low stock on watched items | Business event | Business condition affects multiple customers |
@@ -124,7 +124,7 @@ Use the table below to match your goal to the right journey type. For most new u
 | **Trigger source** | Customer action (purchase, click, login) | Time-based schedule | Audience membership entry or exit | Business condition (stock, price) |
 | **Best for** | Transactional messages, behavioral responses | Marketing campaigns, newsletters, recurring programs | Loyalty programs, lifecycle stage transitions | Inventory alerts, promotions, business conditions |
 | **Use when** | Immediate response to individual actions needed | Reaching large audience segments on schedule | Responding to customer status changes in real time | Business events affect multiple customers simultaneously |
-| **Examples** | Order confirmation, password reset | Monthly newsletter, seasonal campaign | VIP upgrade, churn risk alert | Low stock alert, flash sale, price drop |
+| **Examples** | Cart abandonment recovery, new member onboarding | Monthly newsletter, seasonal campaign | VIP upgrade, churn risk alert | Low stock alert, flash sale, price drop |
 | **Re-entrance** | Configurable | Once per execution by default; [Force reentrance on recurrence](read-audience.md#schedule) available on scheduled runs | Configurable per qualification event; a profile already in the journey cannot re-enter the same version | Multiple profiles can be affected by same event |
 | **Max throughput** | 5,000 TPS (shared org-level with Audience Qualification) | 20,000 TPS per sandbox | 5,000 TPS (shared org-level with Unitary event) | Business event: 5,000 TPS; Read Audience step: 20,000 TPS |
 | **Data requirements** | Event schema with trigger data | [!DNL Adobe Experience Platform] audience | Streaming audience (required for real-time entry); batch audience supported but delays entry | Business event schema |
@@ -238,7 +238,7 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: Which journey type should I use for a monthly newsletter?** — Use a Read Audience journey; it is designed for scheduled batch communication to all profiles in an audience segment simultaneously.
-* **Q: Which journey type handles an order confirmation after a purchase?** — Use a Unitary event journey; it provides an immediate real-time response to an individual customer action.
+* **Q: Which journey type should I use to recover an abandoned cart?** — Use a Unitary event journey; it triggers immediately when the abandonment event occurs and responds to the individual's behavior in real time.
 * **Q: Can I run A/B path experiments in a Business event journey?** — No; path experiments are not supported for Business event journeys.
 * **Q: What is the difference between a Unitary event journey and an Audience Qualification journey?** — A Unitary event journey is triggered by a specific customer action (e.g., purchase); an Audience Qualification journey triggers when a profile enters or exits an audience segment based on streaming criteria evaluation.
 * **Q: Which journey types support incremental read?** — Only Read Audience journeys support incremental read; the other three journey types do not.
