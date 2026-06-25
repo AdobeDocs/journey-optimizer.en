@@ -127,7 +127,8 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 >[!CONTEXTUALHELP]
 >id="ajo_custom_channel_authentication"
 >title="Define the authentication type"
->abstract="Authentication is the process of verifying the identity of a user or system. In the context of custom channels, authentication ensures that only authorized requests are sent to your external messaging system. You can choose from several authentication methods, including API Key, Basic Auth, and OAuth 2.0. Each method has its own configuration requirements."
+>abstract="Authentication ensures that only authorized requests are sent to your external messaging system. You can choose from several authentication methods, including API Key, Basic Auth, and OAuth 2.0. Upon activation, Adobe Journey Optimizer automatically generates an initial set of API credentials for the channel, which can be managed in the API credentials inventory. However, even if you can change the credentials later, you must provide the authentication details here to test the connection to your endpoint before activating the channel."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/create-custom-channel-config.html#api-credentials" text="Learn more about API credentials"
 
 Select the **[!UICONTROL Authentication type]** that you need to use for this channel. The available options depend on the authentication methods supported by your external messaging system.
 
