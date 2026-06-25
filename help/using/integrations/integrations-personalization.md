@@ -133,7 +133,6 @@ On **[!UICONTROL Simulation]** or send, Journey Optimizer runs integrations in o
 
 ![](assets/uc-integrations-7.png)
 
-<!--
 ## Use Adobe Target data in templates {#use-adobe-target-in-templates}
 
 This section explains how to use **Integrations** in Adobe Journey Optimizer to fetch personalization data from **[!DNL Adobe Target]** at send time and use it in message templates. It assumes the Target Delivery API has already been configured as an integration.
@@ -169,6 +168,8 @@ When `type` is `json`, the `content` field is a **JSON string**. Parse it before
 Use three helpers in sequence to fetch, extract, and parse the Target response.
 
 1. **Fetch the Target response.** Call your configured Target integration with `externalDataLookup`. Set `integrationName` to the **[!UICONTROL Name]** of that integration (replace the example placeholder `target_recommendations`). Use the `result` parameter to name the template variable that holds the full Delivery API payload—for example, `targetResponse`.
+
+    You can also select the integration directly from the **[!UICONTROL Integrations]** menu in the left navigation of the personalization editor. See [Apply integration personalization to your content](#apply-integration-personalization).
 
     ```handlebars
     {{externalDataLookup integrationName="target_recommendations" result="targetResponse"}}
@@ -254,10 +255,8 @@ Fetch and extract the mbox, then render `content` directly. Skip `parseJson`.
 
 >[!ENDTABS]
 
--->
-
 ## How-to video {#video}
 
-This video shows how **Integrations** connect Adobe Journey Optimizer to external APIs so you can pull live data and content into **outbound** channels, Email, SMS, and Push, for more relevant personalization.
+This video demonstrates the end-to-end flow for **Adobe Target Recommendations** in Journey Optimizer: selecting the integration in the personalization editor, using the template syntax documented on this page, then simulating delivery to confirm that data is flowing and the experience can be rendered.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3484118/?learn=on)
