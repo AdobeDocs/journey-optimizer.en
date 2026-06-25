@@ -138,7 +138,7 @@ The extraction file is required by direct mail providers to send mail to your cu
 
 1. From the campaign or journey configuration screen, click the **[!UICONTROL Edit content]** button to configure the extraction file content.
 
-1. To add decision policies to your direct mail message, select a column in the **[!UICONTROL Data Fields]** section and open the personalization editor using the ![](../experience-decisioning/assets/do-no-localize/editor-icon.svg) icon. Navigate to the **[!UICONTROL Decision policies]** menu to create and insert a decision policy. You can then use decision item attributes as column data in the extraction file.
+1. To add decision policies to your direct mail message, select a column in the **[!UICONTROL Data Fields]** section and open the personalization editor using the ![](../experience-decisioning/assets/do-not-localize/editor-icon.svg) icon. Navigate to the **[!UICONTROL Decision policies]** menu to create and insert a decision policy. You can then use decision item attributes as column data in the extraction file.
 
    >[!AVAILABILITY]
    >
