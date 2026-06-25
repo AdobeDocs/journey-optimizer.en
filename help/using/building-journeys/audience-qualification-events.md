@@ -118,6 +118,10 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 
    ![Copy button to copy audience name and ID in JSON format](assets/segment-copy.png)
 
+   >[!TIP]
+   >
+   >To identify an audience's evaluation method before using it, open the **[!UICONTROL Audiences]** menu, select the audience, and check the **[!UICONTROL Evaluation method]** field — **Streaming**, **Batch**, or **Edge**. You can also add the **[!UICONTROL Evaluation method]** column to the audience list in this activity. The evaluation method affects entry timing and which best practices apply — see [Batch audiences](#batch-speed-segment-qualification) and [Streamed audiences](#streamed-speed-segment-qualification).
+
 1. In the **[!UICONTROL Behaviour]** field, choose whether you want to listen to audience entrances, exits or both.
 
    >[!NOTE]
@@ -176,9 +180,7 @@ See the [[!DNL Adobe Experience Platform] streaming segmentation documentation](
 
 >[!NOTE]
 >
->Propagation timing for streaming segment membership depends on how the membership is evaluated and where it is used in the journey:
->
->* **Audience Qualification node + streaming segment:** When a profile qualifies for a streaming segment at the Edge, that membership is projected from Edge to Hub before the journey can act on it. This Edge-to-Hub propagation typically takes **15 to 30 minutes**. If profiles are not entering an Audience Qualification journey as expected, allow for this propagation window (by adding a wait activity if appropriate) before investigating further. For use cases requiring true real-time entry, consider a unitary event trigger instead.
+>When a profile qualifies for a streaming segment at the Edge, that membership is projected from Edge to Hub before the journey can act on it. This Edge-to-Hub propagation typically takes **15 to 30 minutes**. If profiles are not entering an Audience Qualification journey as expected, allow for this propagation window (by adding a wait activity if appropriate) before investigating further. For use cases requiring true real-time entry, consider a unitary event trigger instead.
 
 #### Why not all qualified profiles may enter the journey {#streaming-entry-caveats}
 

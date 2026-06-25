@@ -93,6 +93,10 @@ Note that metrics will vary based on the channels used in your campaign.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your message.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your message.
 
 * **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent messages.
