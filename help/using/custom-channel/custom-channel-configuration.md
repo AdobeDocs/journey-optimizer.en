@@ -235,7 +235,10 @@ To create additional credentials for the same channel, follow the steps below.
 <!--TBC if optional or required for custom channels.-->
 To allow link tracking within message payloads, you need to delegate a subdomain for your custom channel. They are distinct from email, SMS or landing page subdomains and need to be created and managed in their own inventory.
 
-To delegate a subdomain for custom channels, follow the steps below.
+To delegate a subdomain for custom channels, follow the steps listed in [this section](../using/custom-channel/custom-channel-subdomains.md).
+
+<!--Are there specific guardrails for custom channel subdomains? If so,can we link to email subdomain guardrails? journey-optimizer.en/help/using/configuration/delegate-subdomain.md#guardrails 
+Same for subdomain statuses?
 
 1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel builder]** > **[!UICONTROL Subdomains]**.
 
@@ -249,7 +252,7 @@ To delegate a subdomain for custom channels, follow the steps below.
 
    * If you are using an existing delegated subdomain, enter a prefix and select a subdomain from the list. The prefix is used to create a unique subdomain for this custom channel. For example, if you enter `promo` and select the subdomain `luma.com`, the resulting subdomain will be `promo.luma.com`.
 
-   * If you are creating a new subdomain, enter the subdomain name. You will need to update your DNS records to delegate the subdomain to Adobe Journey Optimizer.<!--TBC-->
+   * If you are creating a new subdomain, enter the subdomain name. You will need to update your DNS records to delegate the subdomain to Adobe Journey Optimizer.TBC?-->
 
 1. **[!UICONTROL Submit]** to create the subdomain.
 
@@ -271,7 +274,7 @@ To create a channel configuration for a custom channel, follow the steps below.
 
 1. If you have set up subdomains for custom channels in [!DNL Journey Optimizer], you can select a delegated subdomain to use for tracking links present in the payload for this configuration. [Learn how to delegate a subdomain](#subdomain-delegation)
 
-1. If thechannel has headers or query parameters defined as **Variable**, the **[!UICONTROL Dynamic parameters]** section appears. Enter the value for each variable parameter. You can use the personalization editor to inject dynamic values (for example, a user identifier resolved from the profile).
+1. If thechannel has headers or query parameters defined as **Variable**, the **[!UICONTROL Dynamic parameters]** section appears. Enter the value for each variable parameter. You can use the personalization editor to inject dynamic values (for example, a user identifier resolved from the profile). This 
 
    ![Dynamic parameters](assets/custom_channel_config_dynamic_parameters.png){width="100%"}
 
