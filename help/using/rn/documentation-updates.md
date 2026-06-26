@@ -25,6 +25,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## June 2026 {#june-2026}
 
+* A new **Journey types: choose the right one** page is now available. It compares all journey entry points — Read Audience, Audience Qualification, Unitary event, and Business event — with decision guides and a feature compatibility matrix to help you select the right type for your use case. [Read more](../building-journeys/journey-types-selection.md)
+
+* A new **Journeys vs. campaigns** page is now available. It compares Journeys, Action campaigns, and API-triggered campaigns across execution style, data model, and use case — including inbound channel activation for low-latency edge personalization, multi-surface inbound delivery, and guidance on when to use Orchestrated campaigns (ad-hoc audience composition, federated data). [Read more](../start/journeys-vs-campaigns.md)
+
 * The **High throughput mode** page has been updated to reflect the expanded regional availability: the feature is now available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on. [Read more](../campaigns/api-triggered-high-throughput.md)
 
 * A new **Engageable Profiles and license usage** section has been added to the **Get started with profiles** page as the single source of truth for this concept, with targeted references added across the Audiences, Campaigns, and Decisioning sections. [Read more](../audience/get-started-profiles.md#engageable-profiles)
