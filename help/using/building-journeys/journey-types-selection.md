@@ -226,13 +226,12 @@ For complete understanding, this information should be combined with the documen
 * Audience Qualification and Read Audience journeys cannot contain a Jump activity, and cannot be the target of a Jump activity from another journey
 * Audience Qualification journeys require a streaming-evaluated audience. Starting August 2026, batch-evaluated audiences cannot be used in an Audience Qualification node — see the [migration guide](aq-batch-audiences-migration.md)
 * Unitary event and Audience Qualification journeys share a 5,000 TPS throughput limit at the organization level; Read Audience journeys support up to 20,000 TPS per sandbox
-* Simulation is supported for most journey types but not Business event entry; see Simulation limitations for node-level restrictions
 * A profile already present in a journey cannot re-enter the same version of that journey, regardless of re-entrance configuration
 
 **Terminology:**
 
 * Canonical name: Unitary event journey — variants: event-triggered journey, unitary journey
-* Canonical name: Read Audience journey — variants: batch journey, segment trigger journey, read segment journey
+* Canonical name: Read Audience journey — variants: batch journey
 * Canonical name: Audience Qualification journey — variants: audience qualification event journey
 * Canonical name: Business event journey — variants: business event-triggered journey
 * Do not confuse: "Read Audience journey" ≠ "Audience Qualification journey" — Read Audience processes all audience members in batch on schedule; Audience Qualification responds to individual membership changes in real time (streaming audiences only for immediate entry)
