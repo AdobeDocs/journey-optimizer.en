@@ -359,6 +359,25 @@ The following improvements have been added to the email channel in this release.
 <table>
 <thead>
 <tr>
+<th><strong>Enable email size reduction</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
+<p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
+<p><img src="assets/do-not-localize/email-size-optimization.gif"></p>
+<p>For more information, refer to the <a href="../email/create-email.md#optimize-html-size">detailed documentation</a>.</p>
+<p>Availability date: June 26, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Rich text in editable fields for fragments</strong><br/></th>
 </tr>
 </thead>
@@ -400,23 +419,6 @@ The following improvements have been added to the email channel in this release.
   Availability date: June 18, 2026
 
 +++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Enable email size reduction</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
-<p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
-<p>Availability date: Late June, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
