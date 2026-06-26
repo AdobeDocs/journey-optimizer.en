@@ -118,6 +118,10 @@ To configure the **[!UICONTROL Audience Qualification]** activity, follow these 
 
    ![Copy button to copy audience name and ID in JSON format](assets/segment-copy.png)
 
+   >[!TIP]
+   >
+   >To identify an audience's evaluation method before using it, open the **[!UICONTROL Audiences]** menu, select the audience, and check the **[!UICONTROL Evaluation method]** field — **Streaming**, **Batch**, or **Edge**. You can also add the **[!UICONTROL Evaluation method]** column to the audience list in this activity. The evaluation method affects entry timing and which best practices apply — see [Batch audiences](#batch-speed-segment-qualification) and [Streamed audiences](#streamed-speed-segment-qualification).
+
 1. In the **[!UICONTROL Behaviour]** field, choose whether you want to listen to audience entrances, exits or both.
 
    >[!NOTE]
@@ -154,6 +158,10 @@ The reception speed of this information is high. Measurements show 10,000 events
 
 ### Batch audiences {#batch-speed-segment-qualification}
 
+>[!CAUTION]
+>
+>**Deprecation notice – August 2026**: Starting **August 2026**, Journey Optimizer will block publication for any journey that uses a batch audience in an **Audience Qualification** node. Existing live journeys are not affected. New, draft, and duplicated journeys with this configuration must be updated before August 2026. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
+
 When using Audience Qualification for a batch audience, note that a peak of entrance occurs at the time of the daily calculation. The size of the peak depends on how many individuals enter or exit the audience each day.
 
 Moreover, if the batch audience is newly created and immediately used in a journey, the first batch of calculation can drive many entries. Plan for this spike.
@@ -172,9 +180,7 @@ See the [[!DNL Adobe Experience Platform] streaming segmentation documentation](
 
 >[!NOTE]
 >
->Propagation timing for streaming segment membership depends on how the membership is evaluated and where it is used in the journey:
->
->* **Audience Qualification node + streaming segment:** When a profile qualifies for a streaming segment at the Edge, that membership is projected from Edge to Hub before the journey can act on it. This Edge-to-Hub propagation typically takes **15 to 30 minutes**. If profiles are not entering an Audience Qualification journey as expected, allow for this propagation window (by adding a wait activity if appropriate) before investigating further. For use cases requiring true real-time entry, consider a unitary event trigger instead.
+>When a profile qualifies for a streaming segment at the Edge, that membership is projected from Edge to Hub before the journey can act on it. This Edge-to-Hub propagation typically takes **15 to 30 minutes**. If profiles are not entering an Audience Qualification journey as expected, allow for this propagation window (by adding a wait activity if appropriate) before investigating further. For use cases requiring true real-time entry, consider a unitary event trigger instead.
 
 #### Why not all qualified profiles may enter the journey {#streaming-entry-caveats}
 

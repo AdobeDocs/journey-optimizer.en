@@ -2,12 +2,11 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Migrate batch audiences from Audience Qualification journeys
-description: Learn how to migrate journeys that use batch audiences in an Audience Qualification node before the August 3, 2026 enforcement date.
+description: Learn how to migrate journeys that use batch audiences in an Audience Qualification node before the enforcement date.
 feature: Journeys, Activities, Audiences
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
 keywords: audience qualification, batch audience, deprecation, migration, read audience, streaming audience
 exl-id: f3c2a7d1-b58e-4a92-c3d5-0e871f2a9b4c
 product_v2:
@@ -24,11 +23,11 @@ feature_v2:
 
 # Migrate batch audiences from Audience Qualification journeys {#aq-batch-migration}
 
-Starting August 3, 2026, Journey Optimizer will block publication for journeys that use a batch audience in an Audience Qualification node. Identify your use case below and follow the recommended migration path. 
+Starting August 2026, Journey Optimizer will block publication for journeys that use a batch audience in an Audience Qualification node. Identify your use case below and follow the recommended migration path. 
 
 >[!CAUTION]
 >
->**Enforcement date: August 3, 2026.** New, draft, and duplicated journeys using a batch audience in an Audience Qualification node cannot be published after this date. A validation warning is already surfaced in the journey canvas since the June 2026 release.
+>**Enforcement date: August 2026.** New, draft, and duplicated journeys using a batch audience in an Audience Qualification node cannot be published after this date. A validation warning is already surfaced in the journey canvas since the June 2026 release.
 
 ## Why this change {#why}
 
@@ -40,10 +39,10 @@ The **[Read Audience](read-audience.md)** activity is the right tool for batch-b
 
 ## How your journeys are affected {#impact}
 
-A live journey that uses a batch audience in an Audience Qualification node continues to run after August 3, 2026. However, if you stop, duplicate, or republish the journey, it will be blocked until the configuration is updated.
+A live journey that uses a batch audience in an Audience Qualification node continues to run after August 2026. However, if you stop, duplicate, or republish the journey, it will be blocked until the configuration is updated.
 
 
-| Journey status | Impact after August 3, 2026 |
+| Journey status | Impact after August 2026 |
 | --- | --- |
 | **Live journeys** | Not impacted. Existing live journeys continue to run. No automatic stopping. |
 | **New journeys** | Blocked from publication until the batch audience is replaced. |

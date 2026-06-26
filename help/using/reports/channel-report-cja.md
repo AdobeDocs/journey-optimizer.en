@@ -130,6 +130,8 @@ By clicking on the name of any campaign listed in this table, you can easily exp
 
 * **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
 +++
 
 ## Channels {#channel}
@@ -153,6 +155,8 @@ The **[!UICONTROL Channels]** table provides a detailed breakdown of your profil
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your messages.
 
 * **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
 
 +++
 

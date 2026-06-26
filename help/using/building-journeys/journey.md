@@ -105,7 +105,7 @@ Use [!DNL Journey Optimizer] to:
 
 [!DNL Adobe Journey Optimizer] supports four journey types, each designed for different entry mechanisms and business scenarios:
 
-* **Unitary journeys**: Real-time, event-triggered experiences (order confirmations, welcome emails)
+* **Unitary journeys**: Real-time, event-triggered experiences (cart abandonment recovery, welcome emails)
 * **Read Audience journeys**: Scheduled batch communications to audience segments (newsletters, promotional campaigns)
 * **Audience Qualification journeys**: Real-time responses to audience membership changes (VIP upgrades, re-engagement)
 * **Business event journeys**: Business conditions affecting multiple customers (inventory alerts, flash sales)

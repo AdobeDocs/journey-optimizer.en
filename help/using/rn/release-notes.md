@@ -138,6 +138,9 @@ The following capabilities and improvements have been added to journeys in this 
 </tbody>
 </table>
 
+
+* [!BADGE Deprecation]{type=Negative} **Batch audiences deprecated in Audience Qualification node** - Starting **August 2026**, Journey Optimizer will block publication for any journey using a batch audience in an **Audience Qualification** node. A validation warning is already surfaced in the journey canvas. Existing live journeys are not affected. New, draft, and duplicated journeys that include this configuration must be updated before August 2026. Use a streaming audience in the Audience Qualification node, or switch to a **Read Audience** activity. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
+
 * **Stop a paused journey directly** - You can now stop a journey directly from the **Paused** state. Previously, a paused journey had to be resumed to **Live** before it could be stopped. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
 
   Availability date: June 18-22, 2026
@@ -160,7 +163,6 @@ The following capabilities and improvements have been added to journeys in this 
 
   Availability date: June 18, 2026. This capability is being gradually rolled out to all regions over the next few days.
 
-<!--* [!BADGE Deprecation]{type=Negative} **Batch audiences deprecated in Audience Qualification node** - Starting **August 3, 2026**, Journey Optimizer will block publication for any journey using a batch audience in an **Audience Qualification** node. A validation warning is already surfaced in the journey canvas. Existing live journeys are not affected. New, draft, and duplicated journeys that include this configuration must be updated before August 3. Use a streaming audience in the Audience Qualification node, or switch to a **Read Audience** activity. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)-->
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -503,6 +505,18 @@ The following capabilities and improvements are coming to content management and
 </table>
 
 +++
+
+### Reporting {#june-26-reporting}
+
+The following improvements have been added to reporting in this release.
+
+* **New Estimated Click Metrics for Email Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports.
+
+  * **Estimated CTR** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
+  * **Estimated CTOR** (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
+  
+  Availability date: June 25, 2026
 
 ### Administration {#june-26-administration}
 
