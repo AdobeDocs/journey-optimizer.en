@@ -110,8 +110,13 @@ Follow this decision tree to choose the right approach. Many brands use more tha
 * Payload-driven personalization
 * Choose campaigns when no multi-step logic is needed
 
-**Complex batch workflow with advanced segmentation, multi-entity data, exact pre-send counts — or need ad-hoc audience composition without pre-evaluation, or federated data from external sources?**
+**Complex batch workflow with advanced segmentation, multi-entity data, or exact pre-send counts?**
 → **Use Orchestrated campaigns** — see [Get started with Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) for detailed guidance.
+
+>[!NOTE]
+>
+>* **Ad-hoc audience composition** — Orchestrated campaigns let you define your target audience directly in the campaign canvas using the built-in rule builder, without needing to pre-create and evaluate an Adobe Experience Platform audience first. [Learn how to build your first rule](../orchestrated/build-query.md)
+>* **Federated data** — Use Federated Audience Composition to query your enterprise data warehouse and build or enrich audiences without importing sensitive data into Adobe Experience Platform. [Learn about Federated Audience Composition](../audience/federated-audience-composition.md)
 
 ### Step 2: Validate your choice
 
