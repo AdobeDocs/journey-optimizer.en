@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Beginner
 keywords: journey, campaign, comparison, choose, decision, workflow, real-time, batch, orchestration, multi-step, scheduled, API-triggered, event-driven
-hide: true
 exl-id: 8b4d010e-4278-49fd-a7d3-dcc706829577
 TQID: https://experienceleague.adobe.com/RWLVSULVO0idnCs5OVQR1yVvNv1G0JwP3y-3sNXQg50
 product_v2:
@@ -46,7 +45,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-[!DNL Adobe Journey Optimizer] offers two main ways to reach and engage your customers: **Journeys** and **Campaigns**. Journeys are designed for real-time, multi-step orchestration driven by customer behavior, while campaigns are better suited for one-time or scheduled broadcasts to a defined audience. Once you have decided on a campaign, you can then choose the campaign type that best fits your use case.
+[!DNL Adobe Journey Optimizer] offers two main ways to reach and engage your customers: **Journeys** and **Campaigns**. Journeys are designed for real-time, multi-step orchestration driven by customer behavior, while campaigns are better suited for one-time or scheduled broadcasts to a defined audience — or for inbound channel activations to the edge for low-latency personalization. Once you have decided on a campaign, you can then choose the campaign type that best fits your use case.
 
 This guide helps you choose between Journeys, Action campaigns, and API-triggered campaigns based on execution style, data needs, and use case — with a quick comparison, decision tree, and concrete examples.
 
@@ -59,12 +58,12 @@ This guide helps you choose between Journeys, Action campaigns, and API-triggere
 | Approach | Best for | Execution style |
 |----------|----------|-----------------|
 | **Journeys** | Multi-step, real-time customer experiences with conditional logic | 1:1 orchestration - each profile at their own pace |
-| **Action campaigns** | Scheduled or recurring broadcasts to audiences | Batch execution - audience processed together at send time |
+| **Action campaigns** | Scheduled or recurring activations to audiences | Batch execution - audience processed together at send time |
 | **API-triggered campaigns** | Event-driven or transactional messages from external systems | On-demand execution - triggered by API call with payload |
 
 >[!TIP]
 >
->**Quick rule of thumb:** Need each customer to move at their own pace with real-time logic? Use **Journeys**. Sending one message to an audience on a schedule? Use **Action campaigns**. Triggering a single message from an external system via API? Use **API-triggered campaigns** — or a **Unitary event journey** if you need multi-step orchestration after the API-sent event.
+>**Quick rule of thumb:** Need each customer to move at their own pace with real-time logic? Use **Journeys**. Sending one message to an audience on a schedule? Use **Action campaigns**. Triggering a single message from an external system via API? Use **API-triggered campaigns** — or a **Unitary event journey** if you need multi-step orchestration after the API-sent event. Need inbound, edge-based personalization? Use **Action campaigns**.
 
 ## Detailed comparison {#detailed-comparison}
 
@@ -114,6 +113,11 @@ Follow this decision tree to choose the right approach. Many brands use more tha
 **Complex batch workflow with advanced segmentation, multi-entity data, or exact pre-send counts?**
 → **Use Orchestrated campaigns** — see [Get started with Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) for detailed guidance.
 
+>[!NOTE]
+>
+>* **Ad-hoc audience composition** — Orchestrated campaigns let you define your target audience directly in the campaign canvas using the built-in rule builder, without needing to pre-create and evaluate an Adobe Experience Platform audience first. [Learn how to build your first rule](../orchestrated/build-query.md)
+>* **Federated data** — Use Federated Audience Composition to query your enterprise data warehouse and build or enrich audiences without importing sensitive data into Adobe Experience Platform. [Learn about Federated Audience Composition](../audience/federated-audience-composition.md)
+
 ### Step 2: Validate your choice
 
 | Your need | Recommended approach | Why |
@@ -161,6 +165,7 @@ Each customer experiences their own journey timeline based on their actions.
 * Stateless execution - no context maintained
 * Simple scheduling or API triggering
 * Ideal for broadcast communications
+* Multi-surface inbound delivery — Add up to 10 inbound channel actions (Code-based experience, In-app, Content Card, Web) in a single campaign, using targeting rules to create message variants based on audience membership or profile attributes. [Learn more](../campaigns/campaign-action.md#multi-action)
 
 **Example flow:**
 
@@ -219,7 +224,7 @@ Everyone gets the same message at the same time.
 
 >[!NOTE]
 >
->For Orchestrated campaigns channel availability, see [Orchestrated campaigns — Supported channels](../orchestrated/gs-orchestrated-campaigns.md).
+>For Orchestrated campaigns channel availability, see [Channels in journeys & campaigns](../channels/gs-channels.md#channels).
 
 ### Advanced capabilities
 
@@ -249,7 +254,7 @@ Everyone gets the same message at the same time.
 Yes. Many organizations use all approaches for different scenarios:
 
 * **Journeys** for behavioral, real-time engagement
-* **Action campaigns** for scheduled broadcast communications
+* **Action campaigns** for scheduled communications or inbound activations
 * **API-triggered campaigns** for transactional messages
 * **Orchestrated campaigns** for complex, data-intensive batch campaigns — see [Get started with Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)
 
@@ -265,7 +270,7 @@ No, you must rebuild the experience in the appropriate format. However, you can 
 
 +++ Which approach is easier to build?
 
-Action campaigns are typically the simplest (single message to audience), followed by API-triggered campaigns, then Journeys (more complex with multi-step logic).
+Action campaigns are typically the simplest (single touch-point or engagement delivered to an audience), followed by API-triggered campaigns, then Journeys (more complex with multi-step logic).
 
 +++
 
@@ -300,3 +305,47 @@ Ready to start building? Explore the detailed documentation for your chosen appr
 >* [Campaign types comparison](../campaigns/get-started-with-campaigns.md#campaign-types)
 >* [Journey FAQ](../building-journeys/journey-faq.md)
 >* [Orchestrated campaigns FAQ](../orchestrated/orchestrated-campaigns-faq.md)
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** Choose between Journeys, Action campaigns, and API-triggered campaigns based on whether you need real-time 1:1 orchestration, scheduled or inbound batch delivery, or on-demand API-triggered execution.
+
+**Intents:**
+* Understand the key differences between Journeys, Action campaigns, and API-triggered campaigns
+* Select the right approach for a given marketing use case using the decision guide and comparison tables
+* Understand when Action campaigns support inbound channel activations vs. outbound broadcasts
+* Know when to escalate to Orchestrated campaigns (ad-hoc composition, federated data, multi-entity)
+* Combine multiple approaches effectively in a marketing strategy
+
+**Glossary:**
+* **Journey**: A multi-step, real-time orchestration flow where each profile progresses at their own pace based on behavior and events. *(product-specific)*
+* **Action campaign**: A campaign delivering scheduled or recurring activations to audiences — outbound broadcast or inbound channel activations to the edge for low-latency personalization. *(product-specific)*
+* **API-triggered campaign**: A campaign initiated by an external system via API call, delivering a single on-demand message with payload-driven personalization. *(product-specific)*
+* **Orchestrated campaign**: A Hub-side batch campaign supporting multi-entity relational data, ad-hoc audience composition, and federated data sources; not covered by the comparison tables on this page. *(product-specific)*
+* **Unitary event journey**: A journey triggered by a single profile action in real time; use when multi-step orchestration is needed after an API-sent event. *(product-specific)*
+* **Inbound channel activation**: Delivering personalized experiences to the edge (Code-based experience, In-app, Content Card, Web) for low-latency rendering, supported in Action campaigns. *(product-specific)*
+
+**Guardrails:**
+* Up to 10 inbound channel actions per Action campaign (hard limit) — applies to inbound channels only: Code-based experience, In-app, Content Card, Web
+* Orchestrated campaigns are excluded from the comparison tables on this page to avoid oversimplification; see dedicated Orchestrated campaigns documentation for architectural details
+
+**Terminology:**
+* Canonical name: Action campaigns — variants: "scheduled campaigns", "broadcast campaigns"
+* Canonical name: API-triggered campaigns — variants: "transactional campaigns", "event-driven campaigns"
+* Do not confuse: "Action campaigns" (scheduled/inbound delivery to audiences) ≠ "API-triggered campaigns" (on-demand, payload-driven, no pre-built audience) ≠ "Orchestrated campaigns" (Hub-side batch with relational data)
+* Do not confuse: "Unitary event journey" (triggered by a profile's real-time action) ≠ "Business event journey" (triggered by a non-profile event affecting multiple people via an internal Read Audience step)
+* Synonyms: "inbound channel activation" = "inbound channel action" (used interchangeably on this page for edge-delivered experiences in Action campaigns)
+
+**FAQ:**
+* **Q: When should I use a Journey instead of an Action campaign?** — Use Journeys when customers need to move at their own pace with real-time conditional logic across multiple touchpoints; use Action campaigns for scheduled or inbound delivery to a pre-defined audience.
+* **Q: Can Action campaigns deliver to inbound channels?** — Yes. Action campaigns support inbound channel activation (Code-based experience, In-app, Content Card, Web) to the edge for low-latency personalization, with up to 10 inbound actions per campaign and targeting rules for message variants.
+* **Q: What distinguishes Orchestrated campaigns from Action campaigns?** — Orchestrated campaigns run Hub-side batch execution with multi-entity relational data, exact pre-send counts, ad-hoc audience composition, and federated data support; Action campaigns are stateless single-execution deliveries to Experience Platform audiences.
+* **Q: When should I use an API-triggered campaign vs. a Unitary event journey?** — Use an API-triggered campaign when an external system needs to trigger a single message immediately with payload data; use a Unitary event journey when multi-step orchestration is needed after the API-sent event.
+* **Q: Can I combine Journeys and campaigns in the same marketing strategy?** — Yes. Use Journeys for behavioral real-time engagement, Action campaigns for scheduled broadcasts or inbound activations, API-triggered campaigns for transactional messages, and Orchestrated campaigns for complex batch workflows.
+
++++
+<!-- ai-accordion-version: 1 | source-hash: 873097f5 -->
