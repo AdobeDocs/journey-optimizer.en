@@ -174,6 +174,10 @@ The following capabilities and improvements have been added to journeys in this 
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.
 
+* **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
+
+  Availability date: Late June, 2026
+  
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -192,10 +196,6 @@ The following capabilities and improvements are coming to orchestrated campaigns
 </tr>
 </tbody>
 </table>
-
-* **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
-
-  Availability date: Late June, 2026
 
 +++
 
