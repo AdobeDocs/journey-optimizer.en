@@ -97,7 +97,7 @@ What you need to configure before building depends on how your journey is trigge
 
 | Entry point | Use when… | Profiles enter |
 |---|---|---|
-| **[Read Audience](read-audience.md)** | You want to send a scheduled or recurring message to a defined set of profiles (newsletters, promotions, onboarding series). | All profiles from a batch audience, at once or on a schedule. |
+| **[Read Audience](read-audience.md)** | You want to send a scheduled or recurring message to a defined set of profiles (newsletters, promotions, onboarding series). | All profiles from a batch audience, at once or on a schedule. [Learn about audience exports and timing](https://experienceleague.adobe.com/en/docs/experience-platform/run-and-operate/overview){target="_blank"} |
 | **[Audience Qualification](audience-qualification-events.md)** | You need to react in real time when a profile enters or exits an audience (loyalty tier upgrade, churn risk flag). | One profile at a time, as soon as they qualify in a streaming audience. |
 | **Unitary event** | A profile action triggers an immediate response (cart abandonment, form submission, app login). | One profile at a time, in real time. |
 | **[Business event](../event/about-creating-business.md)** | A non-profile event affects multiple people at once (flight cancellation, stock replenishment, breaking news alert). | All profiles associated with the event, via an automatic Read Audience step. |
