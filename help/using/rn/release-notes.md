@@ -561,6 +561,24 @@ The following improvements are coming to mobile messaging in this release.
 
 ### Usability improvements {#june-26-usability}
 
+The following usability improvements were released in June 2026.
+
+#### Inventories
+
+* **Quick launch shortcuts in Fragments inventory** - You can now quickly access common actions from the Fragments list using the **[!UICONTROL More actions]** button. Available shortcuts include editing the fragment, opening its details, and discarding the draft version. [Learn more](../content-management/manage-fragments.md#quick-launch-fragments)
+
+  ![](../content-management/assets/fragment-quick-launch.png)
+
+* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. For email templates, additional shortcuts let you edit the subject line and email body, view or send a proof, run a spam report, and render the email. [Learn more](../content-management/access-content-templates.md#quick-launch-templates)
+
+  ![](../content-management/assets/content-template-quick-launch.png)
+
+#### Journeys
+
+* **Journey canvas capabilities** - The journey canvas is built to scale with your most complex use cases, delivering improved performance for large journeys, automatic layout for better readability, and a guided authoring experience. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+
+  ![](../building-journeys/assets/journey-new-canvas.png)
+
 +++ Coming soon — **Information below is subject to change.**
 
 * **Folders for Journeys & Campaigns** - You can now organize your journeys and campaigns into **folders** to improve navigation and management in the interface.

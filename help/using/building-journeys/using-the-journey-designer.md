@@ -96,6 +96,16 @@ Depending on the journey's status, you can perform different actions on your jou
 
 ![Journey action buttons: Publish, Duplicate, Delete, Test mode, Manage access, Alerts](assets/journey41.png)
 
+## Journey canvas capabilities {#canvas-capabilities}
+
+The journey canvas is built to scale with your most complex use cases:
+
+* **Performance** — Handles large journeys with many steps and branches efficiently.
+* **Automatic layout** — Automatically organizes activities for better readability.
+* **Guided authoring** — Provides a structured authoring experience to help you build journeys with ease and efficiency.
+
+![](assets/journey-new-canvas.png)
+
 ## Start your journey {#start-your-journey}
 
 When you design your journey, the first question you want to ask is how profiles will enter the journey. 
