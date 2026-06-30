@@ -78,29 +78,65 @@ The campaign report includes execution count, successful deliveries, errors, and
 
 In addition to campaign and journey reports, [!DNL Journey Optimizer] provides a dedicated **Custom channels monitoring** dashboard. Access it from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel builder]** > **[!UICONTROL Custom channels monitoring]**.
 
-The dashboard is similar to the Custom actions monitoring view and provides throughput and error charts at both the **endpoint level** and the **channel level**. Use it to:
+This dashboard lets you monitor the reliability and performance of the API calls [!DNL Journey Optimizer] makes to your external endpoints when delivering custom channel messages. Use it to quickly spot integration issues, latency, and throttling limits.
 
-* Visualize request throughput over time.
-* Identify error spikes and their causes.
-* Compare performance across multiple channels or configurations that share the same endpoint.
+The Custom channels monitoring dashboard functions like other all-time reports in [!DNL Journey Optimizer]. For details on dashboard functionalities, refer to [this documentation](../reports/report-cja-manage.md).
 
-The dashboard surfaces the following metric in addition to standard delivery metrics:
+#### KPIs {#monitoring-kpis}
 
-| Metric | Description |
-|--------|-------------|
-| **Pre-call failures** | Number of custom channel sends that failed before the HTTP call was ever made to the external endpoint. These failures occur in [!DNL Journey Optimizer]'s own infrastructure layer — not in your external system — and break down into three categories: authentication failures, request generation errors, and HTTP parse errors. |
+The Key Performance Indicators (KPIs) provide a consolidated view of the operational health and reliability of your custom channel calls.
 
-**Pre-call failure categories:**
++++ Learn more about Custom channel KPIs
 
-| Category | Description |
-|----------|-------------|
-| **Authentication failures** (`AUTH_*`) | [!DNL Journey Optimizer] could not obtain or refresh the OAuth token or credentials needed to call the endpoint. Check that the API credentials linked to the channel configuration are valid and have not expired. |
-| **Request generation errors** (`REQUEST_GENERATION_ERROR`) | [!DNL Journey Optimizer] could not construct a valid HTTP request — for example, because a URL template could not be resolved or a required personalization field was missing. |
-| **HTTP parse errors** (`HTTP_PARSE_ERROR`) | [!DNL Journey Optimizer] received a response from the endpoint but could not parse it into a usable structure. |
+* **[!UICONTROL Successful calls]**: Total number of HTTP calls that returned a valid response without error.
 
->[!TIP]
->
->Pre-call failures indicate a problem on the [!DNL Journey Optimizer] side or in the channel configuration, rather than an issue with your external endpoint. Start troubleshooting by reviewing your API credentials and required payload fields.
+* **[!UICONTROL 4xx/5xx errors]**: Number of failed calls due to client-side (4xx) or server-side (5xx) errors, highlighting configuration issues or endpoint failures.
+
+* **[!UICONTROL Timeouts]**: Number of calls that failed because they exceeded the maximum response time. This helps surface latency or performance issues with external endpoints.
+
+* **[!UICONTROL Capped calls]**: Number of calls that were blocked due to capping limits, ensuring downstream systems are not overloaded.
+
+* **[!UICONTROL Average RPS]**: Number of requests per second processed by the custom channel over the selected time range.
+
+* **[!UICONTROL Average latency]**: Average end-to-end response time (in milliseconds) for all HTTP calls, including successful calls, errors, and timeouts.
+
+* **[!UICONTROL Average successful latency]**: Average end-to-end response time (in milliseconds) for successful calls only, excluding failed requests and timeouts.
+
+* **[!UICONTROL Average queue time]**: Average time (in milliseconds) calls spent waiting in the execution queue before being sent. This only applies to throttled endpoints, where [!DNL Journey Optimizer] queues calls when the throughput limit is reached.
+
+* **[!UICONTROL Pre-call failures]**: Number of custom channel sends that failed before the HTTP call was ever made to the external endpoint. These failures occur in [!DNL Journey Optimizer]'s own infrastructure layer — not in your external system. There are three categories:
+
+  | Category | Description |
+  |----------|-------------|
+  | **Authentication failures** (`AUTH_*`) | [!DNL Journey Optimizer] could not obtain or refresh the OAuth token or credentials needed to call the endpoint. Check that the API credentials linked to the channel configuration are valid and have not expired. |
+  | **Request generation errors** (`REQUEST_GENERATION_ERROR`) | [!DNL Journey Optimizer] could not construct a valid HTTP request — for example, because a URL template could not be resolved or a required personalization field was missing. |
+  | **HTTP parse errors** (`HTTP_PARSE_ERROR`) | [!DNL Journey Optimizer] received a response from the endpoint but could not parse it into a usable structure. |
+
+  >[!TIP]
+  >
+  >Pre-call failures indicate a problem on the [!DNL Journey Optimizer] side or in the channel configuration, rather than an issue with your external endpoint. Start troubleshooting by reviewing your API credentials and required payload fields.
+
++++
+
+#### Custom channels outcomes over time {#outcomes-overtime}
+
+The **[!UICONTROL Custom channels outcomes over time]** graph shows the HTTP call KPI trend over the selected time period. The granularity of the time series depends on the selected time range:
+
+* For a 7-day report, each data point shows the KPIs for one day.
+* For a 1-day time range, the graph shows the KPIs per hour.
+* For a 1-hour time range, the graph shows the KPIs per minute.
+
+#### Latency over time {#latency-overtime}
+
+The **[!UICONTROL Latency over time]** graph visualizes the trend of latency metrics over the selected time period. This time-series view allows you to track performance patterns, identify peak latency periods, and monitor the impact of optimizations or system changes over time.
+
+#### Custom channel outcome breakdown {#outcome-breakdown}
+
+The **[!UICONTROL Custom channel outcome breakdown]** table provides a hierarchical breakdown of HTTP call metrics — from overall metrics per endpoint at the top level, to metrics per custom channel using that endpoint, down to the campaigns and journeys that rely on them at the bottom level.
+
+#### Latency breakdown {#latency-breakdown}
+
+The **[!UICONTROL Latency breakdown]** table provides a detailed breakdown of latency metrics across your custom channels. This view helps you identify which specific endpoints or channels are experiencing performance issues, enabling you to pinpoint and address latency bottlenecks effectively.
 
 ## Troubleshooting {#troubleshooting}
 
