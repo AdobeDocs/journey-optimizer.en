@@ -359,7 +359,7 @@ The following improvements have been added to the email channel in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Enable email size reduction</strong><br/></th>
+<th><strong>Email size optimization</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -533,7 +533,7 @@ The following improvements have been added to administration and data management
 
   Availability date: June 1, 2026
 
-
+<!--
 +++ Coming soon — **Information below is subject to change**
 
 * **Web Application Firewall (WAF) IP whitelisting** - Adobe Journey Optimizer now supports Web Application Firewall (WAF) IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their AJO-hosted landing pages.
@@ -541,7 +541,7 @@ The following improvements have been added to administration and data management
   Availability date: Late June, 2026
 
 +++
-
+-->
 
 ### Mobile messaging (SMS, MMS, RCS & LINE) {#june-26-mobile}
 
