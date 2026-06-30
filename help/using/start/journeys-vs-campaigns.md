@@ -156,7 +156,7 @@ Customer B: Abandoned cart → Wait 2 hours → Already purchased → End immedi
 
 Each customer experiences their own journey timeline based on their actions.
 
-[Learn more about Journeys](../building-journeys/journey.md)
+[Learn more about Journeys](../building-journeys/journey.md) | [Journey types: choose the right one](../building-journeys/journey-types-selection.md)
 
 ### Campaigns: Simple batch or triggered delivery
 
@@ -296,11 +296,13 @@ Yes. Audiences created in [!DNL Adobe Experience Platform] can be used in Journe
 Ready to start building? Explore the detailed documentation for your chosen approach:
 
 * **[Get started with Journeys](../building-journeys/journey.md)** – Journey types, designer, and workflow
+* **[Journey types: choose the right one](../building-journeys/journey-types-selection.md)** – Unitary event, read audience, audience qualification, and business event
 * **[Get started with Campaigns](../campaigns/get-started-with-campaigns.md)** – Action and API-triggered campaigns
 * **[Get started with Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md)** – Batch canvas workflows with multi-entity data (separate guidance)
 
 >[!MORELIKETHIS]
 >
+>* [Journey types: choose the right one](../building-journeys/journey-types-selection.md)
 >* [Journey types comparison](../building-journeys/journey.md#journey-types-comparison)
 >* [Campaign types comparison](../campaigns/get-started-with-campaigns.md#campaign-types)
 >* [Journey FAQ](../building-journeys/journey-faq.md)

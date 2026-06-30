@@ -184,6 +184,7 @@ Not all features are available for all journey types. Use this matrix to underst
 
 Now that you have chosen a journey type:
 
+* **[Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** — Not sure whether Journeys or Campaigns is the right tool? Step back up to the higher-level decision first
 * **[Create your first journey](journey-gs.md)** — Step-by-step guide from entry to publish
 * **[Learn about the journey designer](using-the-journey-designer.md)** — Design your journey canvas
 * **[Profile entrance in journeys](entry-management.md)** — Entry rules, re-entrance, and throughput by type
