@@ -18,7 +18,7 @@ In [!DNL Journey Optimizer], you can deliver messages using custom channels in c
 
 >[!NOTE]
 >
->Before creating a custom channel experience, ensure that a custom channel configuration has been set up by your administrator. [Learn more](custom-channel-configuration.md)
+>Before creating a custom channel experience, ensure that a custom channel has been configured by your administrator. [Learn more](custom-channel-configuration.md)
 
 ## Add a custom channel through a journey or a campaign {#create-custom-channel-experience}
 
@@ -35,10 +35,6 @@ To add a custom channel action to a journey:
 1. Start your journey with an [Event](../building-journeys/general-events.md) or a [Read Audience](../building-journeys/read-audience.md) activity.
 
 1. Drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
-
-    >[!IMPORTANT]
-    >
-    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. In the **[!UICONTROL Action]** drop-down, select the custom channel you want to use. Custom channels are listed by the name and icon assigned in the Channel Builder.
 
@@ -61,15 +57,20 @@ To use a custom channel in a campaign:
 
 1. Complete the campaign setup: campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
 
-1. In the **[!UICONTROL Action]** section, select the custom channel from the channel selector. Custom channels appear alongside native channels.
+1. In the **[!UICONTROL Actions]** section, select the custom channel from the channel selector. All the custom channels configured on your sandbox appear alongside native channels.
 
-1. Select or create the **[!UICONTROL Channel configuration]** to use.
+    ![](assets/custom_channel_campaign_action.png){width="80%"}
+
+1. Select or create the **[!UICONTROL Channel configuration]** to use. [Learn how to create a channel configuration](custom-channel-configuration.md#create-channel-config)
+
+1. Optionally, enable **[!UICONTROL Action tracking]** to automatically track links included in your message payload (requires a subdomain configured for custom channels). [Learn how to delegate a subdomain for custom channels](custom-channel-subdomains.md#subdomain-delegation)
+
+1. In the **[!UICONTROL Optimization]** section, you can:
+
+    * **[!UICONTROL Create targeting rules]** to send different messages to different segments of your audience. [Learn more](../campaigns/create-campaign.md#targeting)
+    * Click **[!UICONTROL Create experiment]** to run A/B tests on your custom channel messages. [Learn more](../campaigns/create-campaign.md#content-experiment)
 
 1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
-
-1. Optionally, enable **[!UICONTROL Content experiment]** to run A/B tests on your custom channel messages.
-
-1. Optionally, enable **[!UICONTROL Action tracking]** to automatically track links included in your message payload (requires a subdomain configured for custom channels).
 
 1. Review and activate the campaign. [Learn more](../campaigns/create-campaign.md)
 
@@ -91,7 +92,11 @@ To add a custom channel in an orchestrated campaign:
 
 ## Author your custom channel content {#author-content}
 
-The content editor for custom channels starts with an empty payload. Click **[!UICONTROL Edit code]** to open the payload editor and enter your message content.
+The content editor reflects the payload structure you defined when configuring the custom channel. Click **[!UICONTROL Edit code]** to open the payload editor and enter your message content.
+
+![](assets/custom_channel_payload_editor.png){width="80%"}
+
+The fields you can author and personalize are displayed. You can leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
 ### Personalize the payload {#personalize}
 
