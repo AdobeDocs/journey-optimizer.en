@@ -81,7 +81,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
    >
    >The HTTP method to is currently set to **POST**.
 
-1. Add **[!UICONTROL Headers]** as needed. Headers are key-value pairs transmitted at the HTTP request level — they are not part of the message body payload. They are sent alongside every request to your endpoint and are typically used for authentication tokens, content type specification, or any other metadata required by your external system.
+1. Add **[!UICONTROL Headers]** as needed. Headers are key-value pairs transmitted at the HTTP request level. They are sent alongside every request to your endpoint and are typically used for authentication tokens, content type specification, or any other metadata required by your external system.
 
    At minimum, `Content-Type` and `Charset` are available as default headers. <!--TBC-->
 
@@ -92,7 +92,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
    * **[!UICONTROL Constant]** – A static value set once and included in every request. For example, you can define the`Content-Type`parameter with the value `application/json` or the `Charset` parameter with the value `UTF-8`.
    * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration. For example, you can define a variable for the user ID that is resolved at runtime. [Learn more](custom-channel-config.md) <!--From Custom actions section: For these parameters, you can define where to get this information (example: events, data sources), pass values manually or use the advanced expression editor for advanced use cases. Advanced uses cases can be data manipulation and other function usage. Refer to this [page](expression/expressionadvanced.md).-->
 
-1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Query parameters are appended to the endpoint URL at delivery time — they are not part of the message body payload. Constant parameters are always added with the same value; variable parameters are resolved at send time, for example to pass a user identifier from the profile.
+1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Query parameters are appended to the endpoint URL at delivery time. Constant parameters are always added with the same value; variable parameters are resolved at send time, for example to pass a user identifier from the profile.
 
    ![Query parameters](assets/custom_channel_endpoint_query_param.png){width="70%"}
 
