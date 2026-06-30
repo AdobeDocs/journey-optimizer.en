@@ -340,6 +340,8 @@ Browse curated video content by topic. Each tab links to the relevant tutorials 
 | Simple scheduled or API-triggered message to an audience | Campaign |
 | Complex batch workflow with multi-entity segmentation | Orchestrated campaign |
 
+For a detailed comparison with a decision tree and feature tables, see [Journeys vs Campaigns: choose the right approach](journeys-vs-campaigns.md). Once you have decided on Journeys, see [Journey types: choose the right one](../building-journeys/journey-types-selection.md) to pick between unitary event, read audience, audience qualification, and business event journeys.
+
 ## Not sure? {#not-sure}
 
 If your goal maps to a term you are unfamiliar with, or you are unsure which capability the table points to, start with the [Journey Optimizer key terminology](terminology.md) page to clarify the concepts behind each capability.
