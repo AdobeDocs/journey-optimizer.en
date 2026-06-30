@@ -148,6 +148,7 @@ Collaborate with [Marketers](marketer.md) on audiences and data:
 * Build audiences based on their campaign and journey requirements
 * Configure relational schemas for Orchestrated campaigns
 * Support multi-entity segmentation for advanced use cases
+* When marketers are choosing between journeys and campaigns, share [Journeys vs Campaigns](../journeys-vs-campaigns.md) and [Journey types: choose the right one](../../building-journeys/journey-types-selection.md) to help them pick the right data architecture for their use case
 
 >[!ENDTABS]
 

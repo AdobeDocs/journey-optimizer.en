@@ -27,16 +27,8 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
 topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-    internal-label: Reporting
   - id: c13ff12d-60f1-49cd-833a-d43359628223
     internal-label: Mobile messaging
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-    internal-label: Customer journeys
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-    internal-label: Privacy
 ---
 # Get started with Mobile messages {#get-started-sms}
 
@@ -46,15 +38,15 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
->[!IMPORTANT]
->
->If this is your first time creating mobile messages, make sure the Mobile message channel has been configured. [Learn more](mobile-configuration.md)
-
 Use [!DNL Journey Optimizer] to send mobile messages to your customers across three channels, **SMS**, **MMS**, and **RCS**, from a single SMS/MMS/RCS editor where you can create, personalize, and preview your content.
 
 * **SMS (Short Message Service)**: Send text-only messages of up to 160 characters, supported across all mobile devices.
 * **MMS (Multimedia Message Service)**: Enrich your messages with images, videos, audio clips, and GIFs, plus up to 1,600 characters of text. [Learn more about MMS limitations](../start/guardrails.md#sms-guardrails)
 * **RCS (Rich Communication Services)**:Deliver branded, interactive content directly in your customers' native messaging app, with no additional app download required.
+
+>[!IMPORTANT]
+>
+>If this is your first time creating mobile messages, make sure the Mobile message channel has been configured. [Learn more](mobile-configuration.md)
 
 Mobile messages can be created and sent in a journey or in a campaign using the Mobile message action:
 

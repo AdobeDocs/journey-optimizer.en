@@ -48,7 +48,7 @@ solution: Journey Optimizer
     + [Search, filter & organize](using/start/search-filter-categorize.md)
     + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
     + [Accessibility](using/start/accessibility.md)
-    + [Journeys vs Campaigns](using/start/journeys-vs-campaigns.md)
+    + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
     + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
