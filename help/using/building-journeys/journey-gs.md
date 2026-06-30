@@ -93,7 +93,7 @@ What you need to configure before building depends on how your journey is trigge
 
 * **Event-based entry** — The journey is triggered in real time when an individual performs an action, such as a purchase or a sign-up. [Configure an event](../event/about-events.md) to define the trigger and the data it carries.
 
-**Not sure which entry point to use?** The table below maps the most common use cases to the right starting activity.
+**Not sure which entry point to use?** The table below maps the most common use cases to the right starting activity. Learn more in the [Journey type selection matrix](journey-types-selection.md).
 
 | Entry point | Use when… | Profiles enter |
 |---|---|---|
