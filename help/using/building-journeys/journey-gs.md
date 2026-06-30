@@ -124,13 +124,15 @@ To create a multi-step journey, follow these steps:
 
 1. Edit the journey's configuration pane to define the name of the journey and set its properties. Learn how to set your journey's properties on [this page](journey-properties.md).
 
-   >[!TIP]
-   >
-   >**Which journey type should I choose?** If you are new to Journey Optimizer, start with an audience-based journey using a **[!UICONTROL Read Audience]** activity — it requires no prior event configuration and is the easiest way to get familiar with the canvas. For real-time, event-triggered experiences (for example, reacting to a purchase or a form submission), configure an event first and use an event-based entry. Ready to go deeper? [Discover all journey types and their entry rules](entry-management.md#types-of-journeys).
-
     ![Journey properties panel with settings and configuration options](assets/jo-properties.png)
 
 You can then start designing your journey.
+
+>[!TIP]
+>
+>**Which journey type should I choose?** 
+>
+>If you are new to Journey Optimizer, start with an audience-based journey using a **[!UICONTROL Read Audience]** activity — it requires no prior event configuration and is the easiest way to get familiar with the canvas. For real-time, event-triggered experiences (for example, reacting to a purchase or a form submission), configure an event first and use an event-based entry. Ready to go deeper? [Discover all journey types and their entry rules](entry-management.md#types-of-journeys).
 
 ## Design the journey {#jo-design}
 
