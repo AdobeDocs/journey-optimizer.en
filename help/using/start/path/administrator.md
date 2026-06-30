@@ -167,6 +167,7 @@ Collaborate with [Marketers](marketer.md) on permissions and channel setup:
 * Configure channels they'll use (email, push, SMS, etc.)
 * Support testing environments and approval workflows
 * Enable access to new features and capabilities
+* Share decision guides to help your team choose the right approach: [Journeys vs Campaigns](../journeys-vs-campaigns.md) and [Journey types: choose the right one](../../building-journeys/journey-types-selection.md)
 
 >[!ENDTABS]
 
