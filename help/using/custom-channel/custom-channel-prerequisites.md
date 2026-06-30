@@ -44,6 +44,8 @@ The following permissions are required depending on the task. For a complete lis
 
 ## Guardrails and limitations {#guardrails}
 
+<!--
+
 ### Phase 1 availability {#phase-1}
 
 The following capabilities are available at GA. Features listed as *Future release* are not yet available.
@@ -74,6 +76,8 @@ The following capabilities are available at GA. Features listed as *Future relea
 | AEM Content Fragment integration | Future release |
 | AI Content Accelerator | Future release |
 | Sandbox tooling (promote channel to another sandbox) | Future release |
+
+-->
 
 ### Throughput and throttling {#throughput}
 
