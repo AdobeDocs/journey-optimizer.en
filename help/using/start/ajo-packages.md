@@ -21,13 +21,11 @@ hide: true
 
 [!DNL Adobe Journey Optimizer] uses a modular packaging model. Start with the base offer that matches your primary use case, then add the channels and advanced capabilities you need.
 
+Package availability and included capabilities may vary based on your agreement, selected add-ons, and regional availability. Contact your Adobe representative for details specific to your organization.
+
 >[!TIP]
 >
 >**Not sure which model you're on?** If you purchased [!DNL Adobe Journey Optimizer] under the modular packaging model, the base offers and add-ons described on this page apply to you. If you see **Select**, **Prime**, or **Ultimate** referenced in your contract, you are on a legacy packaging model — contact your Adobe representative to confirm your current entitlements.
-
->[!NOTE]
->
->Package availability and included capabilities may vary based on your agreement, selected add-ons, and regional availability. Contact your Adobe representative for details specific to your organization.
 
 ## Quick answers {#quick-answers}
 
@@ -71,13 +69,13 @@ Three base offers are available. Each one matches a different way of engaging cu
 
 | | Journey Optimizer – Campaigns | Journey Optimizer – Journeys | Journey Optimizer – Campaigns & Journeys |
 |--|:-----------------------------:|:----------------------------:|:----------------------------------------:|
-| [Audience-based batch orchestration](../campaigns/get-started-with-campaigns.md) | ✓ | Limited¹ | ✓ |
+| [Audience-based batch orchestration](../campaigns/get-started-with-campaigns.md) | ✓ | Limited<sup>1</sup> | ✓ |
 | [Real-time event-driven orchestration](../building-journeys/journey-gs.md) | — | ✓ | ✓ |
 | Transactional messaging (email, push, SMS) | ✓ | ✓ | ✓ |
 | [Channel add-ons available](#channel-addons) | ✓ | ✓ | ✓ |
 | [Decisioning add-on available](#decisioning-addon) | ✓ | ✓ | ✓ |
 
-¹ In **Journey Optimizer – Journeys**, audience-based orchestration is supported only within journey use cases, not as standalone batch campaigns.
+<sup>1</sup> In **Journey Optimizer – Journeys**, audience-based orchestration is supported only within journey use cases, not as standalone batch campaigns.
 
 ## Step 2 — Add the channels you need {#channel-addons}
 

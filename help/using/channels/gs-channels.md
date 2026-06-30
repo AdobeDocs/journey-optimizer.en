@@ -92,11 +92,11 @@ Understand how to create, manage, and configure SMS, MMS, and RCS messages for m
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg)
 
-Direct Mail Campaigns
+Direct Mail
 
 Discover how to create and manage direct mail campaigns, including exporting extraction files for third-party providers and ensuring compliance with user consent.
 
-[Learn more about Direct mail campaigns](../../rp_landing_pages/direct-mail-landing-page.md)
+[Learn more about Direct mail](../../rp_landing_pages/direct-mail-landing-page.md)
 :::
 
 :::
