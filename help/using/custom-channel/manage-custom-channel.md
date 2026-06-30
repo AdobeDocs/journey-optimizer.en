@@ -40,25 +40,6 @@ A channel can only be deleted while it is in **[!UICONTROL Draft]** status. Once
 
 To delete a draft channel, open it from the inventory and click **[!UICONTROL Delete]**.
 
-## Manage channel configurations {#manage-configurations}
-
-Access channel configurations from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel configurations]**.
-
-### Activate or deactivate a configuration {#activate-deactivate}
-
-* **Active** configurations are available for selection when building new journeys and campaigns.
-* **Inactive** configurations cannot be selected in new journeys or campaigns, but do not affect existing live executions, which continue until stopped or completed.
-
-To change a configuration's status, open it from the list, toggle the **[!UICONTROL Status]** field, and click **[!UICONTROL Submit]**.
-
-### Edit a configuration {#edit-configuration}
-
->[!CAUTION]
->
->Editing a configuration used by live journeys or campaigns may affect delivery. Review which journeys and campaigns reference the configuration before making changes.
-
-Click the configuration name, make your changes, and click **[!UICONTROL Submit]**. Changes take effect immediately for new executions.
-
 ## Monitor delivery performance {#monitor-reporting}
 
 [!DNL Journey Optimizer] provides OOTB reporting for custom channels.
