@@ -1,146 +1,191 @@
 ---
-title: Create custom channel experiences
-description: Learn how to use a custom channel in a journey, campaign, or orchestrated campaign in Adobe Journey Optimizer.
+title: Create a custom channel
+description: Learn how to create and configure a custom channel in Adobe Journey Optimizer using the Channel Builder.
 feature: Custom Channel
 topic: Content Management
-role: User
+role: Admin
 level: Experienced
 badge: label="Limited Availability" type="Informative"
 ---
 
-# Create custom channel experiences {#create-custom-channel}
+# Create a custom channel {#create-custom-channel}
 
-[!AVAILABILITY]
->
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
+>[!CONTEXTUALHELP]
+>id="ajo_custom_channel_settings"
+>title="About custom channels"
+>abstract="A custom channel lets Adobe Journey Optimizer send personalized messages to an external system through your own API endpoint. Define the general properties, endpoint, authentication, and payload, then test and activate your new custom channel. Once done, you can use it when creating a channel configuration so marketers can use it in journeys and campaigns."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/get-started-custom-channel.html" text="Get started with custom channels"
 
-In [!DNL Journey Optimizer], you can deliver messages using custom channels in campaigns, journeys, and orchestrated campaigns. Follow the steps below to set up your custom channel experience.
+<!--Contextual help final location TBC (here or in Settings subsection-->
 
->[!NOTE]
->
->Before creating a custom channel experience, ensure that a custom channel has been configured by your administrator. [Learn more](custom-channel-configuration.md)
+To be able to use a custom channel in campaigns and journeys, an administrator must first create the channel. This involves defining the endpoint, authentication, throttling policy, and message payload structure.
 
-## Add a custom channel through a journey or a campaign {#create-custom-channel-experience}
-
->[!BEGINTABS]
-
->[!TAB Add a custom channel to a journey]
-
-Custom channels appear in the **[!UICONTROL Actions]** section of the journey canvas palette, listed by their display name and custom icon as defined in the Channel Builder.
-
-To add a custom channel action to a journey:
-
-1. [Create a journey](../building-journeys/journey-gs.md).
-
-1. Start your journey with an [Event](../building-journeys/general-events.md) or a [Read Audience](../building-journeys/read-audience.md) activity.
-
-1. Drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
-
-1. In the **[!UICONTROL Action]** drop-down, select the custom channel you want to use. Custom channels are listed by the name and icon assigned in the Channel Builder.
-
-1. Select the **[!UICONTROL Channel configuration]** to use.
-
-1. In the **[!UICONTROL Message]** section, click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
-
-1. Complete your journey flow by adding additional steps as needed, then publish the journey. [Learn more](../building-journeys/journey-gs.md)
-
->[!TAB Create a custom channel campaign]
-
-To use a custom channel in a campaign:
-
-1. [Create a campaign](../campaigns/create-campaign.md).
-
-1. Select the campaign type:
-
-   * **[!UICONTROL Scheduled - Marketing]** – Executed immediately or on a specified date. Designed for marketing messages, configured from the UI.
-   * **[!UICONTROL API-triggered - Marketing/Transactional]** – Executed via an API call. Designed for event-triggered messaging (for example, order confirmations or password resets). [Learn more](../campaigns/api-triggered-campaigns.md)
-
-1. Complete the campaign setup: campaign properties, [audience](../audience/about-audiences.md), and [schedule](../campaigns/create-campaign.md#schedule).
-
-1. In the **[!UICONTROL Actions]** section, select the custom channel from the channel selector. All the custom channels configured on your sandbox appear alongside native channels.
-
-    ![](assets/custom_channel_campaign_action.png){width="80%"}
-
-1. Select or create the **[!UICONTROL Channel configuration]** to use. [Learn how to create a channel configuration](custom-channel-configuration.md#create-channel-config)
-
-1. Optionally, enable **[!UICONTROL Action tracking]** to automatically track links included in your message payload (requires a subdomain configured for custom channels). [Learn how to delegate a subdomain for custom channels](custom-channel-subdomains.md#subdomain-delegation)
-
-1. In the **[!UICONTROL Optimization]** section, you can:
-
-    * **[!UICONTROL Create targeting rules]** to send different messages to different segments of your audience. [Learn more](../campaigns/create-campaign.md#targeting)
-    * Click **[!UICONTROL Create experiment]** to run A/B tests on your custom channel messages. [Learn more](../campaigns/create-campaign.md#content-experiment)
-
-1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
-
-1. Review and activate the campaign. [Learn more](../campaigns/create-campaign.md)
-
->[!TAB Add a custom channel to an orchestrated campaign]
-
-Custom channels appear in the channel selection list in the Orchestrated Campaigns canvas, below the native channels, with their custom icon and display name.
-
-To add a custom channel in an orchestrated campaign:
-
-1. Open or create an orchestrated campaign.
-
-1. In the canvas, add a channel action node and select your custom channel from the list.
-
-1. Select the **[!UICONTROL Channel configuration]** to use. Ensure the configuration includes the **[!UICONTROL Execution details]** section required for orchestrated campaigns.
-
-1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
-
->[!ENDTABS]
-
-## Author your custom channel content {#author-content}
-
-The content editor reflects the payload structure you defined when configuring the custom channel. Click **[!UICONTROL Edit code]** to open the payload editor and enter your message content.
-
-![](assets/custom_channel_payload_editor.png){width="80%"}
-
-The fields you can author and personalize are displayed. You can leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
-
-### Personalize the payload {#personalize}
-
-[!DNL Journey Optimizer]'s full personalization capabilities are available in the payload editor:
-
-* **Profile attributes** – Inject any XDM profile attribute, such as `{{profile.person.name.firstName}}` or a custom identity like a messaging platform user ID stored in a custom namespace.
-* **Image assets** – Reference image assets from your asset library.
-* **Contextual attributes** – Use journey event attributes or campaign contextual data resolved at send time.
-* **Helper functions** – Format values using built-in string, date, or arithmetic functions. [Learn more](../personalization/functions/helpers.md)
-* **Expression fragments** – Reuse shared personalization logic across multiple channels and campaigns. [Learn more](../content-management/customizable-fragments.md)
-
->[!NOTE]
->
->[!DNL Adobe Experience Decisioning] (ExD) integration through the personalization editor is planned for a future release.
-
-### Example payload {#example-payload}
-
-The following example shows a JSON payload with profile personalization for a custom messaging channel:
-
-```json
-{
-  "recipient_id": "{{profile.mobilePhone.number}}",
-  "message_text": "Hello {{profile.person.name.firstName}}, your order {{context.journey.events.0.commerce.order.purchaseID}} has been confirmed.",
-  "channel": "my-custom-channel",
-  "image": {
-    "id": "{{profile.preferences.imageId | default('default-image-001')}}"
-  }
-}
-```
-
-### Strict JSON mode {#strict-json}
-
-The editor supports a **[!UICONTROL Strict JSON]** toggle:
-
-* **Strict JSON: Off (default)** – The editor accepts any payload content, including personalization helpers and functions that may temporarily produce non-JSON syntax. A warning is displayed at the **Review to Activate** step if the payload is not well-formed JSON, prompting you to simulate and proof before publishing.
-* **Strict JSON: On** – The editor validates that the payload is well-formed JSON as you type. At the **Review to Activate** step, [!DNL Journey Optimizer] validates the payload against the channel schema and flags missing required fields or type mismatches as errors that must be resolved before activation.
-
-## Activate your custom channel experience {#activate}
+The **Channel Builder** section is the central interface for defining new custom channels. <!--It is accessible to users with the **[!UICONTROL Administrator]** role. -->It enables you to create and configure custom channels, but also manage API credentials, and delegate subdomains.
 
 >[!IMPORTANT]
 >
->Preview and test your custom channel payload before activating. [Learn how](test-custom-channel.md)
->
->If your campaign or journey is subject to an approval policy, you must request approval before activation. [Learn more](../test-approve/gs-approval.md)
+>To access the Channel Builder and manage custom channels, you must have the **[!UICONTROL Administrator]** role. Learn more about [roles and permissions](../administration/roles-permissions.md). <!--TBC-->
 
-* **From a journey** – Click **[!UICONTROL Publish]** in the top-right area. The journey goes live and starts calling your external endpoint for qualifying profiles.
-* **From a campaign** – Click **[!UICONTROL Review to activate]**, review your settings, then click **[!UICONTROL Activate]**. The campaign takes the **[!UICONTROL Live]** status (or **[!UICONTROL Scheduled]** if a future start date was defined).
+## Access the Channel Builder {#access-channel-builder}
+
+To access the **Channel Builder**, follow the steps below.
+
+1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** in the left navigation rail.
+
+1. Select **[!UICONTROL Custom channels]** under the **[!UICONTROL Channel builder]** section.
+
+   ![Custom channels inventory](assets/custom_channels_inventory.png){width="70%"}
+
+1. The inventory lists all custom channels in your sandbox.
+
+   You can filter them by status or creation author. You can also search by name.
+
+1. Click the **[!UICONTROL Create custom channel]** button to open the channel creation form.
+
+## Define general settings {#general-settings}
+
+Start by defining the general settings for your custom channel.
+
+![General settings](assets/custom_channel_properties.png){width="70%"}
+
+1. In the **[!UICONTROL Properties]** section, enter a **[!UICONTROL Name]** for your custom channel. This name will appear in the journeys canvas, campaign action selector, and orchestrated campaigns channel list.
+
+   >[!NOTE]
+   >
+   >Names must begin with a letter (A-Z), include only alpha-numeric characters or special chars ( _, ., -) and should be greater than 1 character.
+   >
+   >The name must be unique and cannot be changed after the channel is created. <!--TBC-->
+
+1. You can select an icon from the default icon library, or select a SVG file from your computer.
+
+   >[!NOTE]
+   >
+   >The file must be no larger than 150KB.
+
+   This icon will be displayed next to the channel name in the journey canvas. If no icon is uploaded, the default icon is used.
+
+1. Enter an optional **[!UICONTROL Description]**.
+
+<!--
+1. Optionally, assign **[!UICONTROL Access labels]** to restrict access to this channel based on data usage policies. Learn more-->
+
+## Set the endpoint configuration {#endpoint-configuration}
+
+You must configure the endpoint, which is the HTTP URL of your external messaging system. [!DNL Journey Optimizer] sends a POST request to this endpoint with the personalized payload when a profile qualifies in a campaign or journey.
+
+![Endpoint configuration](assets/custom_channel_endpoint_configuration.png){width="70%"}
+
+1. In the **[!UICONTROL Endpoint configuration]** section, enter the host **[!UICONTROL URL]** of your external messaging system.
+
+   >[!NOTE]
+   >
+   >The HTTP method to is currently set to **POST**.
+
+1. Add **[!UICONTROL Headers]** as needed. Headers are key-value pairs transmitted at the HTTP request level — they are not part of the message body payload. They are sent alongside every request to your endpoint and are typically used for authentication tokens, content type specification, or any other metadata required by your external system.
+
+   At minimum, `Content-Type` and `Charset` are available as default headers. <!--TBC-->
+
+   ![Headers configuration](assets/custom_channel_endpoint_headers.png)
+
+   For each header, you can define whether its value is:
+
+   * **[!UICONTROL Constant]** – A static value set once and included in every request. For example, you can define the`Content-Type`parameter with the value `application/json` or the `Charset` parameter with the value `UTF-8`.
+   * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration. For example, you can define a variable for the user ID that is resolved at runtime. [Learn more](custom-channel-config.md) <!--From Custom actions section: For these parameters, you can define where to get this information (example: events, data sources), pass values manually or use the advanced expression editor for advanced use cases. Advanced uses cases can be data manipulation and other function usage. Refer to this [page](expression/expressionadvanced.md).-->
+
+1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Query parameters are appended to the endpoint URL at delivery time — they are not part of the message body payload. Constant parameters are always added with the same value; variable parameters are resolved at send time, for example to pass a user identifier from the profile.
+
+   ![Query parameters](assets/custom_channel_endpoint_query_param.png){width="70%"}
+
+1. In the **[!UICONTROL Policy configuration]** section, define how [!DNL Journey Optimizer] handles request throughput and failures. This is important to ensure that your external system can handle the volume of requests and to avoid overwhelming it.
+
+   ![Policy configuration](assets/custom_channel_endpoint_policy_config.png)
+
+   * **[!UICONTROL Enable throttling]** – Disabled by default. Set the maximum number of requests per second (default: **5,000c**). Once the limit is reached, requests are queued and sent as soon as possible.
+   * **[!UICONTROL Enable retry]** – Enabled by default. Set the maximum retry count (default: **3**, configurable range: 0–10) for failed requests. This helps to avoid overwhelming the endpoint during transient failures.
+   * **[!UICONTROL Timeout]** – Default: **5,000 milliseconds**. Set the maximum time to wait for a response from the endpoint before considering the request failed.
+   <!--* **[!UICONTROL Enable cache]** – Disabled by default. Set the caching duration (default TTL: **600 seconds**). After the TTL (Time To Live) expires, the next request is sent to the endpoint. Caching is useful for endpoints that return the same response for identical requests, reducing load and improving performance.-->
+
+## Authentication settings {#authentication-settings}
+
+>[!CONTEXTUALHELP]
+>id="ajo_custom_channel_authentication"
+>title="Define the authentication type"
+>abstract="Authentication ensures that only authorized requests are sent to your external messaging system. You can choose from several authentication methods, including API Key, Basic Auth, and OAuth 2.0. Upon activation, Adobe Journey Optimizer automatically generates an initial set of API credentials for the channel, which can be managed in the API credentials inventory. However, even if you can change the credentials later, you must provide the authentication details here to test the connection to your endpoint before activating the channel."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/custom-channel-api-credentials.html" text="Learn more about API credentials"
+
+Select the **[!UICONTROL Authentication type]** that you need to use for this channel. The available options depend on the authentication methods supported by your external messaging system.
+
+![Authentication type](assets/custom_channel_authentication_type.png){width="70%"}
+
+Provide the authentication details as required by your endpoint.
+
+* **[!UICONTROL None]** – The request is sent without credentials.
+* **[!UICONTROL API Key]** – Provide the key name, value, and location (query parameter or header).
+* **[!UICONTROL Basic auth]** – Provide a username and password.
+* **[!UICONTROL OAuth 2.0]** – Configure the payload for OAuth 2.0 authentication.
+<!--* **[!UICONTROL Custom]** – Define the authentication configuration using a JSON payload.-->
+
+When the authentication type is anything other than **None**, [!DNL Journey Optimizer] automatically generates an initial set of API credentials for this channel when it is activated. You can change these credentials and create new ones in the API credentials inventory. [Learn more](custom-channel-api-credentials.md) <!--TBC-->
+
+However, the authentication details are needed here to test the connection to your endpoint before activating the channel. A **[!UICONTROL Test connection]** button is available to validate the authentication setup. [Learn more](#test-activate)
+
+## Payload configuration {#payload-configuration}
+
+>[!CONTEXTUALHELP]
+>id="ajo_custom_channel_payload_config"
+>title="Enable field for channel configuration"
+>abstract="If enabled, the fields in this column appear in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates."
+>additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/custom-channel-config.html" text="Configure dynamic parameters in the custom channel configuration"
+
+<!--Create a page on Custom channel config to explain how to use the payload in a channel configuration.-->
+
+The payload is sent to the endpoint when a profile qualifies in a campaign or journey.
+
+In the payload configuration, define the structure of the message payload and which fields marketers can author and personalize.
+
+1. Click **[!UICONTROL Define payload]**, and choose how to define the payload:
+
+   * **[!UICONTROL Paste sample JSON payload]** – Paste a representative JSON object, and [!DNL Journey Optimizer] automatically infers a schema from it.
+   * **[!UICONTROL Import JSON schema]** – Upload a complete JSON schema file.
+
+1. After the schema is generated, [!DNL Journey Optimizer] displays all detected fields in a form view.
+
+    ![](assets/custom_channel_payload_configuration.png)
+
+1. For each field, configure the following settings:
+
+   | Setting | Description |
+   | --- | --- |
+   | **[!UICONTROL Default value]** | Optional. Used if no personalized value is provided at authoring time. |
+   | **[!UICONTROL Type]** | Read-only, derived from the payload. Supported types: `string`, `integer`, `decimal`, `boolean`, `dateTime`, `dateTimeOnly`, `dateOnly`, `listObject`, `listString`, `listInteger`, `listDecimal`, `listBoolean`, `listDateTime`, `listDateTimeOnly`, `listDateOnly`. |
+   | **[!UICONTROL Required]** | If enabled, the field must have a value when the channel is used in a campaign or journey. Missing required fields trigger a validation error that prevents saving or activating. |
+   | **[!UICONTROL Channel config]** | If enabled, the field appears in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). [Learn how](custom-channel-config.md) |
+
+   Nested fields are represented using dot notation (for example, `image.id`).<!--TBC-->
+
+## Test and activate {#test-activate}
+
+While the channel is in **[!UICONTROL Draft]** status, use the **[!UICONTROL Test connection]** button on top of the screen to send a test request to your endpoint and validate the end-to-end connection.
+
+![Test connection button](assets/custom_channel_test_connection.png){width="70%"}
+
+Check your external system's logs to confirm that the request was received with the expected authentication and payload.
+
+Once the test is successful, you can save or activate the channel.
+
+* Click **[!UICONTROL Save as draft]** to save your progress without making the channel available.
+* Click **[!UICONTROL Activate]** to make the channel available for use in channel configurations, campaigns, and journeys.
+
+>[!IMPORTANT]
+>
+>After a channel is activated, only the following fields remain editable: name, description, icon, throttling, and retry configuration. Endpoint URL, headers, query parameters, authentication, and payload structure are locked.<!--TBC-->
+
+<!--TBC: An activated channel can be **archived** (hidden from all selection drop-downs while existing journeys and campaigns continue to function), but it cannot be **deleted**. Deletion is only possible while the channel is in **[!UICONTROL Draft]** status.TBC-->
+
+## Next steps {#next-steps}
+
+Your custom channel is now created. Complete the configuration by following the remaining steps:
+
+* [Set up API credentials](custom-channel-api-credentials.md) (if the channel uses authentication)
+* [Delegate a subdomain](custom-channel-subdomains.md) (optional — required for link tracking)
+* [Create a channel configuration](custom-channel-config.md)

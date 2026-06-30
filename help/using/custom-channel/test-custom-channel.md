@@ -83,4 +83,4 @@ Before activating your journey or campaign, confirm the following:
 * A proof was sent and received correctly by your external system.
 * Error paths on the journey action activity (if configured) handle failure scenarios as expected.
 
-Once testing is complete, proceed to activate. [Learn how](create-custom-channel.md#activate)
+Once testing is complete, proceed to activate. [Learn how](create-custom-experience.md#activate)
