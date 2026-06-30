@@ -95,11 +95,31 @@ The campaign report includes execution count, successful deliveries, errors, and
 
 ### Monitoring and observability {#monitoring}
 
-Throughput and error charts are available at both the **endpoint level** and the **channel level**, accessible from the channel detail view in the Channel Builder. These charts allow you to:
+In addition to campaign and journey reports, [!DNL Journey Optimizer] provides a dedicated **Custom channels monitoring** dashboard. Access it from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel builder]** > **[!UICONTROL Custom channels monitoring]**.
+
+The dashboard is similar to the Custom actions monitoring view and provides throughput and error charts at both the **endpoint level** and the **channel level**. Use it to:
 
 * Visualize request throughput over time.
-* Identify error spikes and their causes (authentication failures, rate limiting, server errors).
-* Compare performance across multiple channels that share the same endpoint.
+* Identify error spikes and their causes.
+* Compare performance across multiple channels or configurations that share the same endpoint.
+
+The dashboard surfaces the following metric in addition to standard delivery metrics:
+
+| Metric | Description |
+|--------|-------------|
+| **Pre-call failures** | Number of custom channel sends that failed before the HTTP call was ever made to the external endpoint. These failures occur in [!DNL Journey Optimizer]'s own infrastructure layer — not in your external system — and break down into three categories: authentication failures, request generation errors, and HTTP parse errors. |
+
+**Pre-call failure categories:**
+
+| Category | Description |
+|----------|-------------|
+| **Authentication failures** (`AUTH_*`) | [!DNL Journey Optimizer] could not obtain or refresh the OAuth token or credentials needed to call the endpoint. Check that the API credentials linked to the channel configuration are valid and have not expired. |
+| **Request generation errors** (`REQUEST_GENERATION_ERROR`) | [!DNL Journey Optimizer] could not construct a valid HTTP request — for example, because a URL template could not be resolved or a required personalization field was missing. |
+| **HTTP parse errors** (`HTTP_PARSE_ERROR`) | [!DNL Journey Optimizer] received a response from the endpoint but could not parse it into a usable structure. |
+
+>[!TIP]
+>
+>Pre-call failures indicate a problem on the [!DNL Journey Optimizer] side or in the channel configuration, rather than an issue with your external endpoint. Start troubleshooting by reviewing your API credentials and required payload fields.
 
 ## Troubleshooting {#troubleshooting}
 
