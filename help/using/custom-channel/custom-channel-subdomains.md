@@ -150,3 +150,8 @@ If the custom channel subdomain points to a CNAME record, you can delete the CNA
 >A custom channel subdomain can point to a CNAME record because it was either an [existing subdomain](#custom-channel-use-existing-subdomain) delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-setup), or a [new custom channel subdomain](#custom-channel-configure-new-subdomain) that you configured.
 
 After your request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.-->
+
+
+## Next steps {#next-steps}
+
+* [Create a channel configuration](custom-channel-config.md) to link your custom channel to a subdomain, credentials, and payload defaults that marketers will select in campaigns and journeys.
