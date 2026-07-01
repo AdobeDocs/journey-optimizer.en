@@ -13,7 +13,7 @@ Before activating a journey or campaign that uses a custom channel, validate tha
 
 ## Test the connection from the Channel Builder {#test-connection}
 
-While a custom channel is in **[!UICONTROL Draft]** status, use the **[!UICONTROL Test]** button in the Channel Builder to send a test request to your endpoint and validate the end-to-end connection before activating.
+While a custom channel is in **[!UICONTROL Draft]** status, use the **[!UICONTROL Test]** button in the Channel Builder to send a test request to your endpoint and validate the end-to-end connection before activating. [Learn more](create-custom-channel.md#test-connection)
 
 This test confirms:
 
@@ -56,6 +56,8 @@ To validate end-to-end delivery before activating, send a proof to a set of test
 
 The proof result is displayed using the same validation patterns as email proofing: required fields, type mismatches, and schema validation errors are surfaced before the proof is sent.
 
+Learn more on sending proofs in [campaigns](../campaigns/create-campaign.md#send-proof) and [journeys](../journeys/create-journey.md#send-proof).
+
 ## Test in journey test mode {#test-journey}
 
 For end-to-end journey validation, activate the journey in **[!UICONTROL Test mode]**:
@@ -71,6 +73,8 @@ For end-to-end journey validation, activate the journey in **[!UICONTROL Test mo
 1. Check your external system's logs to confirm the request was received correctly.
 
 1. Click **[!UICONTROL Stop test]** when done.
+
+Learn more on testing journeys in [test mode](../journeys/create-journey.md#test-journey).
 
 ## Pre-activation checklist {#checklist}
 

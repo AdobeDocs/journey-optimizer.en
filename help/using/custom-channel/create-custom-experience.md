@@ -18,7 +18,7 @@ In [!DNL Journey Optimizer], you can deliver messages using custom channels in c
 
 >[!NOTE]
 >
->Before creating a custom channel experience, ensure that a custom channel has been configured by your administrator. [Learn more](custom-channel-configuration.md)
+>Before creating a custom channel experience, ensure that a custom channel has been configured by your administrator. [Learn more](configure-custom-channel.md)
 
 ## Add a custom channel through a journey or a campaign {#create-custom-channel-experience}
 
@@ -78,7 +78,7 @@ To use a custom channel in a campaign:
 
 >[!TAB Add a custom channel to an orchestrated campaign]
 
-Custom channels appear in the channel selection list in the Orchestrated Campaigns canvas, below the native channels, with their custom icon and display name.
+Custom channels appear in the channel selection list in the orchestrated Campaigns canvas, below the native channels, with their custom icon and display name.
 
 To add a custom channel in an orchestrated campaign:
 
@@ -100,23 +100,32 @@ The content editor reflects the payload structure you defined when configuring t
 
 The fields you can author and personalize are displayed. You can leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
+>[!NOTE]
+>
+>Only JSON payloads are supported. If your custom channel payload is not JSON, you can use a JSON wrapper to encapsulate your content. For example, if your payload is XML, you can wrap it in a JSON object like this:
+>
+>```json
+>{
+>  "payload": "<xml>...</xml>"
+>}
+>```
+
 ### Personalize the payload {#personalize}
 
 [!DNL Journey Optimizer]'s full personalization capabilities are available in the payload editor:
 
 * **Profile attributes** – Inject any XDM profile attribute, such as `{{profile.person.name.firstName}}` or a custom identity like a messaging platform user ID stored in a custom namespace.
-* **Image assets** – Reference image assets from your asset library.
 * **Contextual attributes** – Use journey event attributes or campaign contextual data resolved at send time.
 * **Helper functions** – Format values using built-in string, date, or arithmetic functions. [Learn more](../personalization/functions/helpers.md)
 * **Expression fragments** – Reuse shared personalization logic across multiple channels and campaigns. [Learn more](../content-management/customizable-fragments.md)
 
->[!NOTE]
+>[!CAUTION]
 >
->[!DNL Adobe Experience Decisioning] (ExD) integration through the personalization editor is planned for a future release.
+>Currently there is no validation of the payload at authoring time. You can use the **[!UICONTROL Simulate content]** feature to validate that your payload is well-formed JSON and that all personalization expressions resolve correctly for your test profiles. [Learn more](test-custom-channel.md#simulate-content)
 
 ### Example payload {#example-payload}
 
-The following example shows a JSON payload with profile personalization for a custom messaging channel:
+The following example shows a JSON payload with profile personalization for a custom messaging channel *(to be replaced with a meaningful realistic example)*:
 
 ```json
 {
@@ -128,13 +137,13 @@ The following example shows a JSON payload with profile personalization for a cu
   }
 }
 ```
-
+<!--
 ### Strict JSON mode {#strict-json}
 
 The editor supports a **[!UICONTROL Strict JSON]** toggle:
 
 * **Strict JSON: Off (default)** – The editor accepts any payload content, including personalization helpers and functions that may temporarily produce non-JSON syntax. A warning is displayed at the **Review to Activate** step if the payload is not well-formed JSON, prompting you to simulate and proof before publishing.
-* **Strict JSON: On** – The editor validates that the payload is well-formed JSON as you type. At the **Review to Activate** step, [!DNL Journey Optimizer] validates the payload against the channel schema and flags missing required fields or type mismatches as errors that must be resolved before activation.
+* **Strict JSON: On** – The editor validates that the payload is well-formed JSON as you type. At the **Review to Activate** step, [!DNL Journey Optimizer] validates the payload against the channel schema and flags missing required fields or type mismatches as errors that must be resolved before activation.-->
 
 ## Activate your custom channel experience {#activate}
 
