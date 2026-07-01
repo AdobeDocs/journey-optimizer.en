@@ -1204,9 +1204,7 @@ Adobe Target includes Recommendations and delivery APIs for server-side or integ
 
 Typical use cases include injecting recommendations into experiences you author in Journey Optimizer and aligning keys with profile or Experience Platform context.
 
-<!--
-➡️ After you activate the integration, learn how to [use Adobe Target data in message templates](integrations-personalization.md#use-adobe-target-in-templates).
--->
+➡️ After you activate the integration, learn how to [add the integration in content authoring](integrations-personalization.md#apply-integration-personalization) and [use Adobe Target data in message templates](integrations-personalization.md#use-adobe-target-in-templates).
 
 >[!ENDSHADEBOX]
 
