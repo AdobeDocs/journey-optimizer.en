@@ -33,7 +33,7 @@ To archive a channel, open it from the inventory and click **[!UICONTROL Archive
 
 ### Reporting metrics {#metrics}
 
-The following metrics are available for custom channels in both live (24h) and global (CJA) reports.
+The following metrics are available for custom channels in both live (24h) and global (CJA) reports.<!--TBC and add or replace with CJA link when available-->
 
 | Metric | Description |
 |--------|-------------|
@@ -43,9 +43,7 @@ The following metrics are available for custom channels in both live (24h) and g
 | **Clicks** | Number of link clicks tracked in the payload. Requires a subdomain delegated for custom channels. |
 | **Errors / Failures** | Number of failed delivery attempts, with breakdown by error reason. |
 
-Learn more about [live reports](../reports/live-report.md) and [global reports](../reports/report-gs-cja.md).
-
-For details on reporting functionalities, refer to [this documentation](../reports/report-cja-manage.md).
+Learn more about [live reports](../reports/live-report.md) and [global reports](../reports/report-gs-cja.md). For details on reporting functionalities, refer to [this documentation](../reports/report-cja-manage.md).
 
 <!--
 ### Journey reports {#journey-reports}
@@ -72,7 +70,7 @@ In addition to campaign and journey reports, [!DNL Journey Optimizer] provides a
 
 This dashboard lets you monitor the reliability and performance of the API calls [!DNL Journey Optimizer] makes to your external endpoints when delivering custom channel messages. Use it to quickly spot integration issues, latency, and throttling limits.
 
-The Custom channels monitoring dashboard functions like other all-time reports in [!DNL Journey Optimizer]. You can select a time range, filter by channel or endpoint, and drill down to see the campaigns and journeys that rely on each custom channel.
+The Custom channels monitoring dashboard functions like other all-time reports in [!DNL Journey Optimizer]. You can select a time range, filter by channel or endpoint, and drill down to see the campaigns and journeys that rely on each custom channel. [Learn more](../reports/report-cja-manage.md)
 
 #### Custom channel metrics {#monitoring-kpis}
 
