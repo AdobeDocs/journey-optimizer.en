@@ -7,7 +7,7 @@ role: User
 level: Beginner
 ---
 
-# Monitor custom channels {#manage-custom-channel}
+# Monitor custom channels {#monitor-custom-channel}
 
 Once a custom channel is created and activated, you can [manage its lifecycle](create-custom-channel.md#access-channel-builder) and monitor delivery performance through the [!DNL Journey Optimizer] interface.
 

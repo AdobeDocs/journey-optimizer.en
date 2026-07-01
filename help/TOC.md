@@ -448,7 +448,7 @@ solution: Journey Optimizer
     + Create custom channel experiences {#create-custom-channel-experiences}
       + [Create a custom channel experience](using/custom-channel/create-custom-experience.md)
       + [Test your custom channel experience](using/custom-channel/test-custom-channel.md)
-    + [Monitor custom channels](using/custom-channel/configure-custom-channel.md)
+    + [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
