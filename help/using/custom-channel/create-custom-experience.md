@@ -38,6 +38,8 @@ To add a custom channel action to a journey:
 
 1. In the **[!UICONTROL Action]** drop-down, select the custom channel you want to use. Custom channels are listed by the name and icon assigned in the Channel Builder.
 
+    ![](assets/custom_channel_journey_action.png){width="80%"}
+
 1. Select the **[!UICONTROL Channel configuration]** to use.
 
 1. In the **[!UICONTROL Message]** section, click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)

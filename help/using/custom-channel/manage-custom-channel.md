@@ -15,17 +15,23 @@ Once a custom channel is created and activated, you can manage its lifecycle and
 
 Access the custom channel inventory from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel Builder]** > **[!UICONTROL Custom channels]**.
 
+>[!IMPORTANT]
+>
+>To access the Channel Builder and manage custom channels, you must have the **Create custom channel** and **Manage custom channel** permissions granted. [Learn more](../administration/high-low-permissions.md)
+
 All custom channels are listed in the inventory, along with their current status and the authentification type used to connect to the external endpoint.
 
-You can filter the custom channels by status (Draft, Active, or Archived), who created them, and search by name.
+* You can filter the custom channels by status (Draft, Active, or Archived), who created them, and search by name.
 
-To edit a channel, click its name in the inventory, make your changes, and save. For active channels, you can only edit the following fields: Name, Description, Icon, Throttling configuration, Retry configuration
+* To edit a channel, click its name in the inventory, make your changes, and save. For active channels, you can only edit the following fields: Name, Description, Icon, Throttling configuration, Retry configuration
 
->[!CAUTION]
->
->Modifying throttling or retry settings on an active channel takes effect immediately for all in-flight and future executions.
+  >[!CAUTION]
+  >
+  >Modifying throttling or retry settings on an active channel takes effect immediately for all in-flight and future executions.
 
-To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**. Archiving an active channel removes it from all selection drop-downs — campaign action selector, journey actions palette, orchestrated campaigns channel list, channel configurations, and content templates. Existing journeys and campaigns that already use the channel continue to function normally.
+* To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**.
+
+  Archiving an active channel removes it from all selection drop-downs — campaign action selector, journey actions palette, orchestrated campaigns channel list, channel configurations, and content templates. Existing journeys and campaigns that already use the channel continue to function normally.
 
 ## Monitor delivery performance {#monitor-reporting}
 
@@ -66,7 +72,7 @@ The campaign report includes execution count, successful deliveries, errors, and
 
 ### Monitoring {#monitoring}
 
-In addition to campaign and journey reports, [!DNL Journey Optimizer] provides a dedicated custom channels monitoring dashboard. Access it from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel Builder]** > **[!UICONTROL Custom channels monitoring]**.
+In addition to campaign and journey reports, [!DNL Journey Optimizer] provides a dedicated custom channel monitoring dashboard. Access it from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel Builder]** > **[!UICONTROL Custom channels monitoring]**.
 
 This dashboard lets you monitor the reliability and performance of the API calls [!DNL Journey Optimizer] makes to your external endpoints when delivering custom channel messages. Use it to quickly spot integration issues, latency, and throttling limits.
 

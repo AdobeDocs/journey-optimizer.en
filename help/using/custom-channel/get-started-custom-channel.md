@@ -26,13 +26,19 @@ badge: label="Limited Availability" type="Informative"
 
 Custom channels fill this gap: they enable you to use any outbound HTTP endpoint as a full [!DNL Journey Optimizer] channel, unlocking:
 
-* **Full channel capabilities** – Content experimentation, OOTB reporting, consent and governance enforcement, and expression fragments. <!--Multilingual and business rules are planned for a future release.-->
+* **Full channel capabilities** – Content experimentation, OOTB reporting and monitoring, consent and governance enforcement, and expression fragments. <!--Multilingual and business rules are planned for a future release.-->
 * **Unified orchestration** – Manage all your messaging channels in a single place, regardless of the underlying delivery provider.
 * **No-code setup** – Admins configure the channel through the Channel Builder UI; no custom code or engineering effort is required.
 
-## Custom Channel vs. Custom Action {#custom-channel-vs-custom-action}
+## Custom channel vs. custom actions {#custom-channel-vs-custom-action}
 
-If you have used [Custom Actions](../custom-actions/custom-actions.md) in [!DNL Journey Optimizer] journeys before, Custom Channels address a different set of use cases. The table below summarizes the main differences:
+If you have used [custom actions](../action/action.md) in [!DNL Journey Optimizer] journeys before, custom channels address a different set of use cases. 
+
+Custom actions are designed to retrieve data from or send information to external systems (for example, call centers, offline systems, or logging), while **custom channels** are designed to send messages to end users through channels not natively supported in [!DNL Journey Optimizer].
+
+They are available in different contexts: custom actions are available in journeys only, while custom channels are available in campaigns, journeys, and orchestrated campaigns. Custom channels also support full personalization, a visual/form editor, preview and proof, content experimentation, and RBAC/ABAC.
+
+<!--The table below summarizes the main differences:
 
 | | Custom Action | Custom Channel |
 | --- | --- | --- |
@@ -46,6 +52,7 @@ If you have used [Custom Actions](../custom-actions/custom-actions.md) in [!DNL 
 | **Multilingual** | No | Future release |
 | **Business rules** | No | Future release |
 | **RBAC/ABAC** | No | Yes |
+-->
 
 ## Use cases {#use-cases}
 
@@ -58,14 +65,16 @@ Custom channels are ideal for:
 
 ## How it works {#how-it-works}
 
-Setting up and using a custom channel follows three main stages:
+Setting up and using a custom channel follows the main stages below:
 
-1. **Configure (Admin)** – An administrator creates a custom channel in the **Channel Builder**, defining the endpoint, authentication, throttling policy, and message payload structure. A channel configuration is then created and linked to the custom channel. [Learn how](custom-channel-configuration.md)
-1. **Create (Marketer)** – A marketer adds the custom channel to a journey, campaign, or orchestrated campaign, selects a channel configuration, and authors the message payload using [!DNL Journey Optimizer]'s expression editor. [Learn how](create-custom-experience.md)
+1. **Configure** (Admin) – An administrator creates a custom channel in the **Channel Builder**, defining the endpoint, authentication, throttling policy, and message payload structure. A channel configuration is then created and linked to the custom channel. [Learn more](configure-custom-channel.md)
+1. **Create** (Marketer) – A marketer adds the custom channel to a journey, campaign, or orchestrated campaign, selects a channel configuration, and authors the message payload using [!DNL Journey Optimizer]'s expression editor. [Learn more](create-custom-experience.md)
 1. **Send** – When a profile qualifies, [!DNL Journey Optimizer] calls the configured endpoint with the personalized payload. The external system processes the call and delivers the message.
+1. **Monitor** (Admin/Marketer) – Administrators and marketers can monitor the custom channel's performance and reliability through [!DNL Journey Optimizer]'s reporting and monitoring dashboards. [Learn more](manage-custom-channel.md)
 
+<!--
 ## Next steps {#next-steps}
 
 * Review the prerequisites and permissions before setting up your first custom channel. [Learn more](custom-channel-prerequisites.md)
 * Configure your first custom channel using the Channel Builder. [Learn more](custom-channel-configuration.md)
-* Create a custom channel experience in a journey or campaign. [Learn more](create-custom-experience.md)
+* Create a custom channel experience in a journey or campaign. [Learn more](create-custom-experience.md)-->

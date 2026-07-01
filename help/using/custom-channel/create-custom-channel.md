@@ -24,7 +24,7 @@ The **Channel Builder** section is the central interface for defining new custom
 
 >[!IMPORTANT]
 >
->To access the Channel Builder and manage custom channels, you must have the **[!UICONTROL Administrator]** role. Learn more about [roles and permissions](../administration/roles-permissions.md). <!--TBC-->
+>To access the Channel Builder and manage custom channels, you must have the **Create custom channel** and **Manage custom channel** permissions granted. [Learn more](../administration/high-low-permissions.md)
 
 ## Access the Channel Builder {#access-channel-builder}
 
@@ -77,9 +77,14 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
 1. In the **[!UICONTROL Endpoint configuration]** section, enter the host **[!UICONTROL URL]** of your external messaging system.
 
-   >[!NOTE]
+   <!--The HTTP method to is currently set to **POST**.-->
+
+   >[!IMPORTANT]
+   >Your external messaging system must expose an HTTPS endpoint that [!DNL Journey Optimizer] can call via HTTP POST. The endpoint must:
    >
-   >The HTTP method to is currently set to **POST**.
+   >* Accept the payload format your channel defines (JSON).
+   >* Support one of the authentication methods available in the Channel Builder. [Learn more](#authentication-settings)
+   >* Return an HTTP 2xx response to acknowledge successful receipt of the request.
 
 1. Add **[!UICONTROL Headers]** as needed. Headers are key-value pairs transmitted at the HTTP request level. They are sent alongside every request to your endpoint and are typically used for authentication tokens, content type specification, or any other metadata required by your external system.
 
