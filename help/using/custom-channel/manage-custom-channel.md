@@ -139,6 +139,10 @@ The **[!UICONTROL Custom channel outcome breakdown]** table provides a hierarchi
 
 The **[!UICONTROL Latency breakdown]** table provides a detailed breakdown of latency metrics across your custom channels. This view helps you identify which specific endpoints or channels are experiencing performance issues, enabling you to pinpoint and address latency bottlenecks effectively.
 
+#### Insight Builder {#insight-builder}
+
+Use the **[!UICONTROL Insight Builder]** to create custom visualizations and dashboards based on the custom channel metrics. This tool allows you to combine multiple KPIs, apply filters, and create tailored views that align with your monitoring and reporting needs. [Learn more](../reports/report-cja-manage.md#insight-builder)
+
 ## Troubleshooting {#troubleshooting}
 
 If you encounter issues with your custom channel, the following table lists common symptoms, possible causes, and recommended resolutions.
