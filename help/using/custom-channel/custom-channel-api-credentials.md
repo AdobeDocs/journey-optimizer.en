@@ -42,4 +42,4 @@ To create additional credentials for the same channel, follow the steps below.
 ## Next steps {#next-steps}
 
 * [Delegate a subdomain](custom-channel-subdomains.md) (optional — required for link tracking)
-* [Create a channel configuration](custom-channel-config.md)
+* [Create a channel configuration](custom-channel-configuration.md)

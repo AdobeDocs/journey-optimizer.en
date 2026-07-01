@@ -90,7 +90,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
    For each header, you can define whether its value is:
 
    * **[!UICONTROL Constant]** – A static value set once and included in every request. For example, you can define the`Content-Type`parameter with the value `application/json` or the `Charset` parameter with the value `UTF-8`.
-   * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration. For example, you can define a variable for the user ID that is resolved at runtime. [Learn more](custom-channel-config.md) <!--From Custom actions section: For these parameters, you can define where to get this information (example: events, data sources), pass values manually or use the advanced expression editor for advanced use cases. Advanced uses cases can be data manipulation and other function usage. Refer to this [page](expression/expressionadvanced.md).-->
+   * **[!UICONTROL Variable]** – If a default value is entered here, it is used unless overridden in the channel configuration. For example, you can define a variable for the user ID that is resolved at runtime. [Learn more](custom-channel-configuration.md) <!--From Custom actions section: For these parameters, you can define where to get this information (example: events, data sources), pass values manually or use the advanced expression editor for advanced use cases. Advanced uses cases can be data manipulation and other function usage. Refer to this [page](expression/expressionadvanced.md).-->
 
 1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Query parameters are appended to the endpoint URL at delivery time. Constant parameters are always added with the same value; variable parameters are resolved at send time, for example to pass a user identifier from the profile.
 
@@ -159,7 +159,7 @@ In the payload configuration, define the structure of the message payload and wh
    | **[!UICONTROL Default value]** | Optional. Used if no personalized value is provided at authoring time. |
    | **[!UICONTROL Type]** | Read-only, derived from the payload. Supported types: `string`, `integer`, `decimal`, `boolean`, `dateTime`, `dateTimeOnly`, `dateOnly`, `listObject`, `listString`, `listInteger`, `listDecimal`, `listBoolean`, `listDateTime`, `listDateTimeOnly`, `listDateOnly`. |
    | **[!UICONTROL Required]** | If enabled, the field must have a value when the channel is used in a campaign or journey. Missing required fields trigger a validation error that prevents saving or activating. |
-   | **[!UICONTROL Channel config]** | If enabled, the field appears in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). [Learn how](custom-channel-config.md) |
+   | **[!UICONTROL Channel config]** | If enabled, the field appears in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). [Learn how](custom-channel-configuration.md) |
 
    Nested fields are represented using dot notation (for example, `image.id`).<!--TBC-->
 
@@ -188,4 +188,4 @@ Your custom channel is now created. Complete the configuration by following the 
 
 * [Set up API credentials](custom-channel-api-credentials.md) (if the channel uses authentication)
 * [Delegate a subdomain](custom-channel-subdomains.md) (optional — required for link tracking)
-* [Create a channel configuration](custom-channel-config.md)
+* [Create a channel configuration](custom-channel-configuration.md)

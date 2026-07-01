@@ -445,11 +445,11 @@ solution: Journey Optimizer
       + [Create a custom channel](using/custom-channel/create-custom-channel.md)
       + [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
       + [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
-      + [Create a channel configuration](using/custom-channel/custom-channel-config.md)
+      + [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
     + Create custom channel experiences {#create-custom-channel-experiences}
       + [Create custom channel experiences](using/custom-channel/create-custom-experience.md)
       + [Test custom channel experiences](using/custom-channel/test-custom-channel.md)
-      + [Manage and monitor custom channels](using/custom-channel/manage-custom-channel.md)
+      + [Manage and monitor custom channels](using/custom-channel/configure-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}

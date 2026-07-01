@@ -154,4 +154,4 @@ After your request is handled by Adobe, the undelegated domain is no longer disp
 
 ## Next steps {#next-steps}
 
-* [Create a channel configuration](custom-channel-config.md) to link your custom channel to a subdomain, credentials, and payload defaults that marketers will select in campaigns and journeys.
+* [Create a channel configuration](custom-channel-configuration.md) to link your custom channel to a subdomain, credentials, and payload defaults that marketers will select in campaigns and journeys.
