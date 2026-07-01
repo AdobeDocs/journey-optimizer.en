@@ -7,37 +7,13 @@ role: User
 level: Beginner
 ---
 
-# Manage and monitor custom channels {#manage-custom-channel}
+# Monitor custom channels {#manage-custom-channel}
 
-Once a custom channel is created and activated, you can manage its lifecycle and monitor delivery performance through the [!DNL Journey Optimizer] interface.
+Once a custom channel is created and activated, you can [manage its lifecycle](create-custom-channel.md#access-channel-builder) and monitor delivery performance through the [!DNL Journey Optimizer] interface.
 
-## Manage custom channels {#manage-channels}
-
-Access the custom channel inventory from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel Builder]** > **[!UICONTROL Custom channels]**.
-
->[!IMPORTANT]
->
->To access the Channel Builder and manage custom channels, you must have the **Create custom channel** and **Manage custom channel** permissions granted. [Learn more](../administration/high-low-permissions.md)
-
-All custom channels are listed in the inventory, along with their current status and the authentification type used to connect to the external endpoint.
-
-* You can filter the custom channels by status (Draft, Active, or Archived), who created them, and search by name.
-
-* To edit a channel, click its name in the inventory, make your changes, and save. For active channels, you can only edit the following fields: Name, Description, Icon, Throttling configuration, Retry configuration
-
-  >[!CAUTION]
-  >
-  >Modifying throttling or retry settings on an active channel takes effect immediately for all in-flight and future executions.
-
-* To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**.
-
-  Archiving an active channel removes it from all selection drop-downs — campaign action selector, journey actions palette, orchestrated campaigns channel list, channel configurations, and content templates. Existing journeys and campaigns that already use the channel continue to function normally.
-
-## Monitor delivery performance {#monitor-reporting}
+## Leverage campaign and journey reports {#reporting}
 
 [!DNL Journey Optimizer] provides out-of-the-box reporting for custom channels.
-
-### Reporting metrics {#metrics}
 
 The following metrics are available for custom channels in both live (24h) and global (CJA) reports.<!--TBC and add or replace with CJA link when available-->
 
@@ -70,15 +46,17 @@ To view delivery data for a custom channel campaign:
 
 The campaign report includes execution count, successful deliveries, errors, and click data (if link tracking is enabled).-->
 
-### Monitoring {#monitoring}
+## Monitor delivery performance {#monitoring}
 
 In addition to campaign and journey reports, [!DNL Journey Optimizer] provides a dedicated custom channel monitoring dashboard. Access it from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel Builder]** > **[!UICONTROL Custom channels monitoring]**.
 
+![Custom channel monitoring dashboard](assets/custom_channel_monitoring_dashboard.png){width="100%"}
+
 This dashboard lets you monitor the reliability and performance of the API calls [!DNL Journey Optimizer] makes to your external endpoints when delivering custom channel messages. Use it to quickly spot integration issues, latency, and throttling limits.
 
-The Custom channels monitoring dashboard functions like other all-time reports in [!DNL Journey Optimizer]. You can select a time range, filter by channel or endpoint, and drill down to see the campaigns and journeys that rely on each custom channel. [Learn more](../reports/report-cja-manage.md)
+The **[!UICONTROL Custom channels monitoring]** dashboard functions like other all-time reports in [!DNL Journey Optimizer]. You can select a time range, filter by channel or endpoint, and drill down to see the campaigns and journeys that rely on each custom channel. [Learn more](../reports/report-cja-manage.md)
 
-#### Custom channel metrics {#monitoring-kpis}
+### Custom channel metrics {#monitoring-kpis}
 
 The **[!UICONTROL Custom channel metrics]** section provides a consolidated view of the operational health and reliability of your custom channel calls.
 
@@ -117,7 +95,7 @@ The **[!UICONTROL Custom channel metrics]** section provides a consolidated view
 
 +++
 
-#### Custom channels outcomes over time {#outcomes-overtime}
+### Custom channels outcomes over time {#outcomes-overtime}
 
 ![Custom channel outcomes over time](assets/custom_channel_metrics.png){width="100%"}
 
@@ -127,23 +105,23 @@ The **[!UICONTROL Custom channels outcomes over time]** graph shows the HTTP cal
 * For a 1-day time range, the graph shows the KPIs per hour.
 * For a 1-hour time range, the graph shows the KPIs per minute.
 
-#### Latency over time {#latency-overtime}
+### Latency over time {#latency-overtime}
 
 ![Custom channel latency over time](assets/custom_channel_latency.png){width="100%"}
 
 The **[!UICONTROL Latency over time]** graph visualizes the trend of latency metrics over the selected time period. This time-series view allows you to track performance patterns, identify peak latency periods, and monitor the impact of optimizations or system changes over time.
 
-#### Custom channel outcome breakdown {#outcome-breakdown}
+### Custom channel outcome breakdown {#outcome-breakdown}
 
 ![Custom channel outcome breakdown](assets/custom_channel_latency.png){width="100%"}
 
 The **[!UICONTROL Custom channel outcome breakdown]** table provides a hierarchical breakdown of HTTP call metrics — from overall metrics per endpoint at the top level, to metrics per custom channel using that endpoint, down to the campaigns and journeys that rely on them at the bottom level.
 
-#### Latency breakdown {#latency-breakdown}
+### Latency breakdown {#latency-breakdown}
 
 The **[!UICONTROL Latency breakdown]** table provides a detailed breakdown of latency metrics across your custom channels. This view helps you identify which specific endpoints or channels are experiencing performance issues, enabling you to pinpoint and address latency bottlenecks effectively.
 
-#### Insight Builder {#insight-builder}
+### Insight Builder {#insight-builder}
 
 Use the **[!UICONTROL Insight Builder]** to create custom visualizations and dashboards based on the custom channel metrics. This tool allows you to combine multiple KPIs, apply filters, and create tailored views that align with your monitoring and reporting needs. [Learn more](../reports/report-cja-manage.md#insight-builder)
 
