@@ -561,11 +561,9 @@ The following improvements are coming to mobile messaging in this release.
 
 ### Usability improvements {#june-26-usability}
 
-+++ Coming soon — **Information below is subject to change.**
+* **Folders for Journeys** - You can now organize your journeys into **folders** to improve navigation and management in the interface. [Read more](../building-journeys/journey-ui.md#journeys-folders)
 
-* **Folders for Journeys & Campaigns** - You can now organize your journeys and campaigns into **folders** to improve navigation and management in the interface.
-
-+++
+  Availability date: June 30, 2026
 
 <!--
 +++ Coming soon — **Information below is subject to change.**
