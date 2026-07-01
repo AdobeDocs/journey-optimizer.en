@@ -19,29 +19,21 @@ All custom channels are listed in the inventory, along with their current status
 
 You can filter the custom channels by status (Draft, Active, or Archived), who created them, and search by name.
 
-### Edit a channel {#edit-channel}
-
-To edit a channel, click its name in the inventory, make your changes, and save.
-
-For active channels, you can only edit the following fields: Name, Description, Icon, Throttling configuration, Retry configuration
+To edit a channel, click its name in the inventory, make your changes, and save. For active channels, you can only edit the following fields: Name, Description, Icon, Throttling configuration, Retry configuration
 
 >[!CAUTION]
 >
 >Modifying throttling or retry settings on an active channel takes effect immediately for all in-flight and future executions.
 
-### Archive a channel {#archive-channel}
-
-Archiving an active channel removes it from all selection drop-downs — Campaign action selector, Journey actions palette, Orchestrated Campaigns channel list, Channel configurations, and Content Templates. Existing journeys and campaigns that already use the channel continue to function normally.
-
-To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**.
+To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**. Archiving an active channel removes it from all selection drop-downs — campaign action selector, journey actions palette, orchestrated campaigns channel list, channel configurations, and content templates. Existing journeys and campaigns that already use the channel continue to function normally.
 
 ## Monitor delivery performance {#monitor-reporting}
 
-[!DNL Journey Optimizer] provides OOTB reporting for custom channels.
+[!DNL Journey Optimizer] provides out-of-the-box reporting for custom channels.
 
 ### Reporting metrics {#metrics}
 
-The following metrics are available for custom channels in both live (24h) and global (CJA) reports, consistent with SMS live reports:
+The following metrics are available for custom channels in both live (24h) and global (CJA) reports.
 
 | Metric | Description |
 |--------|-------------|
@@ -51,6 +43,11 @@ The following metrics are available for custom channels in both live (24h) and g
 | **Clicks** | Number of link clicks tracked in the payload. Requires a subdomain delegated for custom channels. |
 | **Errors / Failures** | Number of failed delivery attempts, with breakdown by error reason. |
 
+Learn more about [live reports](../reports/live-report.md) and [global reports](../reports/report-gs-cja.md).
+
+For details on reporting functionalities, refer to [this documentation](../reports/report-cja-manage.md).
+
+<!--
 ### Journey reports {#journey-reports}
 
 To view delivery data for a custom channel action in a journey:
@@ -67,37 +64,29 @@ To view delivery data for a custom channel campaign:
 1. Open the campaign from the **[!UICONTROL Campaigns]** list.
 1. Click **[!UICONTROL Reports]** in the top-right area.
 
-The campaign report includes execution count, successful deliveries, errors, and click data (if link tracking is enabled).
+The campaign report includes execution count, successful deliveries, errors, and click data (if link tracking is enabled).-->
 
-### Monitoring and observability {#monitoring}
+### Monitoring {#monitoring}
 
-In addition to campaign and journey reports, [!DNL Journey Optimizer] provides a dedicated **Custom channels monitoring** dashboard. Access it from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel builder]** > **[!UICONTROL Custom channels monitoring]**.
+In addition to campaign and journey reports, [!DNL Journey Optimizer] provides a dedicated custom channels monitoring dashboard. Access it from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel Builder]** > **[!UICONTROL Custom channels monitoring]**.
 
 This dashboard lets you monitor the reliability and performance of the API calls [!DNL Journey Optimizer] makes to your external endpoints when delivering custom channel messages. Use it to quickly spot integration issues, latency, and throttling limits.
 
-The Custom channels monitoring dashboard functions like other all-time reports in [!DNL Journey Optimizer]. For details on dashboard functionalities, refer to [this documentation](../reports/report-cja-manage.md).
+The Custom channels monitoring dashboard functions like other all-time reports in [!DNL Journey Optimizer]. You can select a time range, filter by channel or endpoint, and drill down to see the campaigns and journeys that rely on each custom channel.
 
-#### KPIs {#monitoring-kpis}
+#### Custom channel metrics {#monitoring-kpis}
 
-The Key Performance Indicators (KPIs) provide a consolidated view of the operational health and reliability of your custom channel calls.
+The **[!UICONTROL Custom channel metrics]** section provides a consolidated view of the operational health and reliability of your custom channel calls.
 
-+++ Learn more about Custom channel KPIs
+![Custom channel metrics](assets/custom_channel_metrics.png){width="100%"}
+
++++ Learn more about custom channel metrics
 
 * **[!UICONTROL Successful calls]**: Total number of HTTP calls that returned a valid response without error.
 
 * **[!UICONTROL 4xx/5xx errors]**: Number of failed calls due to client-side (4xx) or server-side (5xx) errors, highlighting configuration issues or endpoint failures.
 
-* **[!UICONTROL Timeouts]**: Number of calls that failed because they exceeded the maximum response time. This helps surface latency or performance issues with external endpoints.
-
-* **[!UICONTROL Capped calls]**: Number of calls that were blocked due to capping limits, ensuring downstream systems are not overloaded.
-
-* **[!UICONTROL Average RPS]**: Number of requests per second processed by the custom channel over the selected time range.
-
-* **[!UICONTROL Average latency]**: Average end-to-end response time (in milliseconds) for all HTTP calls, including successful calls, errors, and timeouts.
-
-* **[!UICONTROL Average successful latency]**: Average end-to-end response time (in milliseconds) for successful calls only, excluding failed requests and timeouts.
-
-* **[!UICONTROL Average queue time]**: Average time (in milliseconds) calls spent waiting in the execution queue before being sent. This only applies to throttled endpoints, where [!DNL Journey Optimizer] queues calls when the throughput limit is reached.
+* **[!UICONTROL Timeout calls]**: Number of calls that failed because they exceeded the maximum response time. This helps surface latency or performance issues with external endpoints.
 
 * **[!UICONTROL Pre-call failures]**: Number of custom channel sends that failed before the HTTP call was ever made to the external endpoint. These failures occur in [!DNL Journey Optimizer]'s own infrastructure layer — not in your external system. There are three categories:
 
@@ -111,9 +100,22 @@ The Key Performance Indicators (KPIs) provide a consolidated view of the operati
   >
   >Pre-call failures indicate a problem on the [!DNL Journey Optimizer] side or in the channel configuration, rather than an issue with your external endpoint. Start troubleshooting by reviewing your API credentials and required payload fields.
 
+* **[!UICONTROL Average latency]**: Average end-to-end response time (in milliseconds) for all HTTP calls, including successful calls, errors, and timeouts.
+
+<!--
+* **[!UICONTROL Capped calls]**: Number of calls that were blocked due to capping limits, ensuring downstream systems are not overloaded.
+
+* **[!UICONTROL Average RPS]**: Number of requests per second processed by the custom channel over the selected time range.
+
+* **[!UICONTROL Average successful latency]**: Average end-to-end response time (in milliseconds) for successful calls only, excluding failed requests and timeouts.
+
+* **[!UICONTROL Average queue time]**: Average time (in milliseconds) calls spent waiting in the execution queue before being sent. This only applies to throttled endpoints, where [!DNL Journey Optimizer] queues calls when the throughput limit is reached.-->
+
 +++
 
 #### Custom channels outcomes over time {#outcomes-overtime}
+
+![Custom channel outcomes over time](assets/custom_channel_metrics.png){width="100%"}
 
 The **[!UICONTROL Custom channels outcomes over time]** graph shows the HTTP call KPI trend over the selected time period. The granularity of the time series depends on the selected time range:
 
@@ -123,9 +125,13 @@ The **[!UICONTROL Custom channels outcomes over time]** graph shows the HTTP cal
 
 #### Latency over time {#latency-overtime}
 
+![Custom channel latency over time](assets/custom_channel_latency.png){width="100%"}
+
 The **[!UICONTROL Latency over time]** graph visualizes the trend of latency metrics over the selected time period. This time-series view allows you to track performance patterns, identify peak latency periods, and monitor the impact of optimizations or system changes over time.
 
 #### Custom channel outcome breakdown {#outcome-breakdown}
+
+![Custom channel outcome breakdown](assets/custom_channel_latency.png){width="100%"}
 
 The **[!UICONTROL Custom channel outcome breakdown]** table provides a hierarchical breakdown of HTTP call metrics — from overall metrics per endpoint at the top level, to metrics per custom channel using that endpoint, down to the campaigns and journeys that rely on them at the bottom level.
 
@@ -134,6 +140,8 @@ The **[!UICONTROL Custom channel outcome breakdown]** table provides a hierarchi
 The **[!UICONTROL Latency breakdown]** table provides a detailed breakdown of latency metrics across your custom channels. This view helps you identify which specific endpoints or channels are experiencing performance issues, enabling you to pinpoint and address latency bottlenecks effectively.
 
 ## Troubleshooting {#troubleshooting}
+
+If you encounter issues with your custom channel, the following table lists common symptoms, possible causes, and recommended resolutions.
 
 | Symptom | Possible cause | Resolution |
 |---------|----------------|------------|
@@ -149,4 +157,3 @@ The **[!UICONTROL Latency breakdown]** table provides a detailed breakdown of la
 * [Configure a custom channel](custom-channel-configuration.md)
 * [Global report overview](../reports/report-gs-cja.md)
 * [Journey live report](../reports/live-report.md)
-* [Permissions reference](../administration/ootb-permissions.md)
