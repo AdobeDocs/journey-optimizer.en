@@ -257,6 +257,6 @@ Fetch and extract the mbox, then render `content` directly. Skip `parseJson`.
 
 ## How-to video {#video}
 
-This video demonstrates the end-to-end flow for **Adobe Target Recommendations** in Journey Optimizer: selecting the integration in the personalization editor, using the template syntax documented on this page, then simulating delivery to confirm that data is flowing and the experience can be rendered.
+This video shows how **Integrations** connect Adobe Journey Optimizer to external APIs so you can pull live data and content into **outbound** channels, Email, SMS, and Push, for more relevant personalization.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3484118/?learn=on)
