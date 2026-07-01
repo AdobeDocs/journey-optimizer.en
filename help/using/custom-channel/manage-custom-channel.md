@@ -9,20 +9,21 @@ level: Beginner
 
 # Manage and monitor custom channels {#manage-custom-channel}
 
+Once a custom channel is created and activated, you can manage its lifecycle and monitor delivery performance through the [!DNL Journey Optimizer] interface.
+
 ## Manage custom channels {#manage-channels}
 
-Access the custom channel inventory from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL CHANNEL BUILDER]** > **[!UICONTROL Custom channels]**.
+Access the custom channel inventory from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel Builder]** > **[!UICONTROL Custom channels]**.
+
+All custom channels are listed in the inventory, along with their current status and the authentification type used to connect to the external endpoint.
+
+You can filter the custom channels by status (Draft, Active, or Archived), who created them, and search by name.
 
 ### Edit a channel {#edit-channel}
 
-The fields you can edit depend on the channel's current status:
-
-| Status | Editable fields |
-|--------|-----------------|
-| **Draft** | All fields |
-| **Active** | Name, description, icon, throttling configuration, retry configuration |
-
 To edit a channel, click its name in the inventory, make your changes, and save.
+
+For active channels, you can only edit the following fields: Name, Description, Icon, Throttling configuration, Retry configuration
 
 >[!CAUTION]
 >
@@ -33,12 +34,6 @@ To edit a channel, click its name in the inventory, make your changes, and save.
 Archiving an active channel removes it from all selection drop-downs — Campaign action selector, Journey actions palette, Orchestrated Campaigns channel list, Channel configurations, and Content Templates. Existing journeys and campaigns that already use the channel continue to function normally.
 
 To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**.
-
-### Delete a channel {#delete-channel}
-
-A channel can only be deleted while it is in **[!UICONTROL Draft]** status. Once activated, a channel can only be archived.
-
-To delete a draft channel, open it from the inventory and click **[!UICONTROL Delete]**.
 
 ## Monitor delivery performance {#monitor-reporting}
 
