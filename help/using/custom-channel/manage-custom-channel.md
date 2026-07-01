@@ -159,9 +159,11 @@ If you encounter issues with your custom channel, the following table lists comm
 | **Unresolved personalization tokens** | Expression references an attribute not present on the profile. | Verify the XDM attribute path is correct. Add a default value fallback: `{{profile.person.name.firstName \| default("Valued Customer")}}`. |
 | **Required field validation error** | A required payload field has no value at authoring time. | Ensure all required fields are populated in the content editor. Alternatively, remove the required constraint in the Channel Builder if the field is truly optional. |
 
+<!--
 ## Related resources {#related}
 
 * [Get started with custom channels](get-started-custom-channel.md)
 * [Configure a custom channel](custom-channel-configuration.md)
 * [Global report overview](../reports/report-gs-cja.md)
-* [Journey live report](../reports/live-report.md)
+* [Journey live report](../reports/live-report.md
+-->

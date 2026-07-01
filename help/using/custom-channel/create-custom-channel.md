@@ -8,13 +8,13 @@ level: Experienced
 badge: label="Limited Availability" type="Informative"
 ---
 
-# Create a custom channel {#create-custom-channel}
+# Set up a custom channel {#create-custom-channel}
 
 >[!CONTEXTUALHELP]
 >id="ajo_custom_channel_settings"
 >title="About custom channels"
 >abstract="A custom channel lets Adobe Journey Optimizer send personalized messages to an external system through your own API endpoint. Define the general properties, endpoint, authentication, and payload, then test and activate your new custom channel. Once done, you can use it when creating a channel configuration so marketers can use it in journeys and campaigns."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/get-started-custom-channel.html" text="Get started with custom channels"
+>additional-url="<https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/get-started-custom-channel.html>" text="Get started with custom channels"
 
 <!--Contextual help final location TBC (here or in Settings subsection-->
 
@@ -24,11 +24,11 @@ The **Channel Builder** section is the central interface for defining new custom
 
 >[!IMPORTANT]
 >
->To access the Channel Builder and manage custom channels, you must have the **Create custom channel** and **Manage custom channel** permissions granted. [Learn more](../administration/high-low-permissions.md)
+>To access the Channel Builder, create and manage custom channels, you must have the **Create custom channel** and **Manage custom channel** permissions granted. [Learn more](../administration/high-low-permissions.md)
 
-## Access the Channel Builder {#access-channel-builder}
+## Access and manage custom channels {#access-channel-builder}
 
-To access the **Channel Builder**, follow the steps below.
+To access the **Channel Builder** and manage your custom channels, follow the steps below.
 
 1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** in the left navigation rail.
 
@@ -36,17 +36,27 @@ To access the **Channel Builder**, follow the steps below.
 
    ![Custom channels inventory](assets/custom_channels_inventory.png){width="70%"}
 
-1. The inventory lists all custom channels in your sandbox.
+1. The inventory lists all custom channels in your sandbox, including their current status and the authentification type used to connect to the external endpoint.
 
-   You can filter them by status or creation author. You can also search by name.
+1. You can filter the custom channels by status (**Draft**, **Active**, or **Archived**), who created them, and search by name.
 
-1. Click the **[!UICONTROL Create custom channel]** button to open the channel creation form.
+1. To edit a channel, click its name in the inventory, make your changes, and save. For active channels, you can only edit certain fields - [learn more](#test-activate).
 
-## Define general settings {#general-settings}
+   >[!CAUTION]
+   >
+   >Modifying throttling or retry settings on an active channel takes effect immediately for all in-flight and future executions.
 
-Start by defining the general settings for your custom channel.
+1. To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**.
 
-![General settings](assets/custom_channel_properties.png){width="70%"}
+   Archiving an active channel removes it from all selection drop-downs — campaign action selector, journey actions palette, orchestrated campaigns channel list, channel configurations, and content templates. Existing journeys and campaigns that already use the channel continue to function normally.
+
+## Create a custom channel {#create-channel}
+
+To create a new custom channel, follow the steps below.
+
+1. Click the **[!UICONTROL Create custom channel]** button to open the channel creation form. Start by defining the general settings for your custom channel.
+
+   ![General settings](assets/custom_channel_properties.png){width="70%"}
 
 1. In the **[!UICONTROL Properties]** section, enter a **[!UICONTROL Name]** for your custom channel. This name will appear in the journeys canvas, campaign action selector, and orchestrated campaigns channel list.
 
@@ -88,7 +98,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
 1. Add **[!UICONTROL Headers]** as needed. Headers are key-value pairs transmitted at the HTTP request level. They are sent alongside every request to your endpoint and are typically used for authentication tokens, content type specification, or any other metadata required by your external system.
 
-   At minimum, `Content-Type` and `Charset` are available as default headers. <!--TBC-->
+   <!--At minimum, `Content-Type` and `Charset` are available as default headers.-->
 
    ![Headers configuration](assets/custom_channel_endpoint_headers.png)
 
@@ -116,7 +126,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 >id="ajo_custom_channel_authentication"
 >title="Define the authentication type"
 >abstract="Authentication ensures that only authorized requests are sent to your external messaging system. You can choose from several authentication methods, including API Key, Basic Auth, and OAuth 2.0. Upon activation, Adobe Journey Optimizer automatically generates an initial set of API credentials for the channel, which can be managed in the API credentials inventory. However, even if you can change the credentials later, you must provide the authentication details here to test the connection to your endpoint before activating the channel."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/custom-channel-api-credentials.html" text="Learn more about API credentials"
+>additional-url="<https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/custom-channel-api-credentials.html>" text="Learn more about API credentials"
 
 Select the **[!UICONTROL Authentication type]** that you need to use for this channel. The available options depend on the authentication methods supported by your external messaging system.
 
@@ -140,7 +150,7 @@ However, the authentication details are needed here to test the connection to yo
 >id="ajo_custom_channel_payload_config"
 >title="Enable field for channel configuration"
 >abstract="If enabled, the fields in this column appear in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates."
->additional-url="https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/custom-channel-config.html" text="Configure dynamic parameters in the custom channel configuration"
+>additional-url="<https://experienceleague.adobe.com/docs/journey-optimizer/using/custom-channel/custom-channel-config.html>" text="Configure dynamic parameters in the custom channel configuration"
 
 <!--Create a page on Custom channel config to explain how to use the payload in a channel configuration.-->
 

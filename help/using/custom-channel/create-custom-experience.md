@@ -40,7 +40,7 @@ To add a custom channel action to a journey:
 
     ![](assets/custom_channel_journey_action.png){width="80%"}
 
-1. Select the **[!UICONTROL Channel configuration]** to use.
+1. Add a label to your action, click **[!DNL Configure action]** in the right panel, and select the **[!UICONTROL Channel configuration]** to use. [Learn how to create a custom channel configuration](custom-channel-configuration.md#create-channel-config)
 
 1. In the **[!UICONTROL Message]** section, click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
 

@@ -33,7 +33,7 @@ To enable link tracking in your custom channel messages, you must set up the sub
 
 You can either use a subdomain that is already delegated to Adobe, or configure another subdomain. Learn more about delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 
-Custom channel subdomain configuration is **shared between all environments**. Therefore, any modification to a custom channel subdomain also impacts other production sandboxes.
+Custom channel subdomain configuration is shared between all environments. Therefore, any modification to a custom channel subdomain also impacts other production sandboxes.
 
 <!--TBC
 >[!NOTE]
@@ -44,7 +44,7 @@ Custom channel subdomain configuration is **shared between all environments**. T
 
 To use a subdomain that is already delegated to Adobe, follow the steps below.
 
-1. Browse to the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, and select **[!UICONTROL Channel builder]** > **[!UICONTROL Subdomains]**.
+1. Browse to the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, and select **[!UICONTROL Channel Builder]** > **[!UICONTROL Subdomains]**.
 
     ![](assets/custom_channel_subdomains.png){width="100%"}
 
@@ -87,7 +87,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
 To configure a new subdomain, follow the steps below.
 
-1. Browse to the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Channel builder]** > **[!UICONTROL Subdomains]**.
+1. Browse to the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, then select **[!UICONTROL Channel Builder]** > **[!UICONTROL Subdomains]**.
 
 1. Click **[!UICONTROL Create custom channel subdomain]**.
 
