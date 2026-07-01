@@ -105,15 +105,13 @@ Use [!DNL Journey Optimizer] to:
 
 [!DNL Adobe Journey Optimizer] supports four journey types, each designed for different entry mechanisms and business scenarios:
 
-* **Unitary journeys**: Real-time, event-triggered experiences (order confirmations, welcome emails)
+* **Unitary journeys**: Real-time, event-triggered experiences (cart abandonment recovery, welcome emails)
 * **Read Audience journeys**: Scheduled batch communications to audience segments (newsletters, promotional campaigns)
 * **Audience Qualification journeys**: Real-time responses to audience membership changes (VIP upgrades, re-engagement)
 * **Business event journeys**: Business conditions affecting multiple customers (inventory alerts, flash sales)
 
-<!--
- waiting for DOCAC-13912 
 ➡️ **[Journey types: choose the right one](journey-types-selection.md)** - Detailed comparison, decision guide, and feature compatibility matrix 
--->
+
 
 ## Build with the journey designer {#journey-designer}
 
@@ -425,14 +423,12 @@ Get a visual introduction to journey components and learn the basics of building
 
 +++
 
-<!--
- Waiting for DOCAC-13912
 +++ Which journey type should I use?
 
-Use the [decision guide](#decision-guide) or [comparison table](#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.
+Use the [decision guide](journey-types-selection.md#decision-guide) or [comparison table](journey-types-selection.md#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.
 
 +++
--->
+
 
 +++ Can I edit a live journey?
 

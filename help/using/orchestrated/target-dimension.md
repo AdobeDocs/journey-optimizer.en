@@ -27,9 +27,12 @@ subfeature_v2:
 
 With **[!UICONTROL Orchestrated campaigns]**, you can design and deliver targeted communications at the entity level, leveraging Adobe Experience Platform's relational schema capabilities. Experience Platform uses schemas to describe the structure of data in a consistent and reusable way. When data is ingested into Experience Platform, it is structured according to an XDM schema.
 
-Although segmentation for **[!UICONTROL Orchestrated campaigns]** operates primarily on relational schemas, the actual message delivery always occurs at the **Profile** level.
+**[!UICONTROL Orchestrated campaigns]** support two types of targeting dimensions:
 
-When configuring targeting, you define two key aspects:
+* **Profile targeting dimension**: The built-in default, which targets recipients directly using the **Profile** schema.
+* **Custom targeting dimension**: Targets recipients through a relational schema (for example, `Recipients`, `Visitors`, `Customers`). Use this when you need to deliver messages at the entity level — such as per subscription or per contract — rather than at the profile level.
+
+When configuring a custom targeting dimension, you define two key aspects:
 
 * **Targetable Schemas**
      

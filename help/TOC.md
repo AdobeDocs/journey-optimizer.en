@@ -24,6 +24,7 @@ solution: Journey Optimizer
     + {hide-from-toc} [2021](using/rn/release-notes-2021.md)
   + [Documentation updates](using/rn/documentation-updates.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
+  + {hide-from-toc} [Migrate batch audiences from Audience Qualification](using/building-journeys/aq-batch-audiences-migration.md)
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
@@ -47,11 +48,12 @@ solution: Journey Optimizer
     + [Search, filter & organize](using/start/search-filter-categorize.md)
     + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
     + [Accessibility](using/start/accessibility.md)
-    + {hide-from-toc} [Journeys vs Campaigns](using/start/journeys-vs-campaigns.md)
+    + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
+    + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
   + {hide-from-toc} [Journey Get Started Guide](using/building-journeys/journey-get-started.md)
-  + {hide-from-toc} [Journey types: choose the right one](using/building-journeys/journey-types-selection.md)
+  + {hide-from-toc} [Journey types: choose the right one-2](using/building-journeys/journey-types-selection-v2.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
   + Create a journey {#create-journey}
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
@@ -81,6 +83,7 @@ solution: Journey Optimizer
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
+    + [Journey types: choose the right one](using/building-journeys/journey-types-selection.md)
     + [General events](using/building-journeys/general-events.md)
     + [Reaction events](using/building-journeys/reaction-events.md)
     + [Audience qualification](using/building-journeys/audience-qualification-events.md)

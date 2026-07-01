@@ -104,6 +104,10 @@ Audiences can be generated using different methods:
 
 Once your audiences are ready, you can select them when building journeys or creating campaigns, enabling you to reach the right people at the right time with relevant messages. [Learn more about Audience activation in Journey Optimizer](target-audiences.md).
 
+>[!NOTE]
+>
+>Profiles engaged through an audience activation — whether in a journey, campaign, or decisioning activity — count toward your organization's **Engageable Profiles** license metric. Each profile is counted once per sandbox over a rolling 12-month window. [Monitor your Engageable Profiles count](license-usage.md)
+
 ## How-to video {#video}
 
 Learn about unified customer profiles and audiences in Journey Optimizer.

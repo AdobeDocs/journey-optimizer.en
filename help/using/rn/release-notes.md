@@ -138,6 +138,9 @@ The following capabilities and improvements have been added to journeys in this 
 </tbody>
 </table>
 
+
+* [!BADGE Deprecation]{type=Negative} **Batch audiences deprecated in Audience Qualification node** - Starting **August 2026**, Journey Optimizer will block publication for any journey using a batch audience in an **Audience Qualification** node. A validation warning is already surfaced in the journey canvas. Existing live journeys are not affected. New, draft, and duplicated journeys that include this configuration must be updated before August 2026. Use a streaming audience in the Audience Qualification node, or switch to a **Read Audience** activity. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
+
 * **Stop a paused journey directly** - You can now stop a journey directly from the **Paused** state. Previously, a paused journey had to be resumed to **Live** before it could be stopped. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
 
   Availability date: June 18-22, 2026
@@ -160,6 +163,7 @@ The following capabilities and improvements have been added to journeys in this 
 
   Availability date: June 18, 2026. This capability is being gradually rolled out to all regions over the next few days.
 
+
 +++ Coming soon — **Information below is subject to change.**
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the **journey header** next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed.
@@ -170,6 +174,10 @@ The following capabilities and improvements have been added to journeys in this 
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.
 
+* **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
+
+  Availability date: June 26, 2026
+  
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -188,10 +196,6 @@ The following capabilities and improvements are coming to orchestrated campaigns
 </tr>
 </tbody>
 </table>
-
-* **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
-
-  Availability date: Late June, 2026
 
 +++
 
@@ -355,6 +359,25 @@ The following improvements have been added to the email channel in this release.
 <table>
 <thead>
 <tr>
+<th><strong>Email size optimization</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
+<p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
+<p><img src="assets/do-not-localize/email-size-optimization.gif"></p>
+<p>For more information, refer to the <a href="../email/create-email.md#optimize-html-size">detailed documentation</a>.</p>
+<p>Availability date: June 26, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Rich text in editable fields for fragments</strong><br/></th>
 </tr>
 </thead>
@@ -365,7 +388,7 @@ The following improvements have been added to the email channel in this release.
 <p>For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
 <p><img src="assets/do-not-localize/rich-text-editable-fields.gif"></p>
 <p>For more information, refer to the <a href="../content-management/customizable-fragments.md#rich-text-visual">detailed documentation</a>.</p>
-<p>Availability date: Late June, 2026</p>
+<p>Availability date: June 19, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -383,6 +406,7 @@ The following improvements have been added to the email channel in this release.
 <p>Journey Optimizer now includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.</p>
 <p>Checks cover unsupported elements such as <code>&lt;script&gt;</code> and <code>&lt;base&gt;</code> tags, empty divs that can break layout in Microsoft Outlook, HTML meta refresh tags, and CSS or HTML size thresholds that trigger rendering failures in Gmail.</p>
 <p>Results are surfaced as errors, warnings, or informational notices directly in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the editor.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p><img src="assets/do-not-localize/content-check.gif"></p>
 <p>For more information, refer to the <a href="../email/content-check.md">detailed documentation</a>.</p>
 <p>Availability date: June 18, 2026</p>
@@ -396,22 +420,6 @@ The following improvements have been added to the email channel in this release.
   Availability date: June 18, 2026
 
 +++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Enable email size reduction</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
-<p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
@@ -501,6 +509,18 @@ The following capabilities and improvements are coming to content management and
 
 +++
 
+### Reporting {#june-26-reporting}
+
+The following improvements have been added to reporting in this release.
+
+* **New Estimated Click Metrics for Email Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports.
+
+  * **Estimated CTR** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
+  * **Estimated CTOR** (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
+  
+  Availability date: June 25, 2026
+
 ### Administration {#june-26-administration}
 
 The following improvements have been added to administration and data management in this release.
@@ -513,7 +533,7 @@ The following improvements have been added to administration and data management
 
   Availability date: June 1, 2026
 
-
+<!--
 +++ Coming soon — **Information below is subject to change**
 
 * **Web Application Firewall (WAF) IP whitelisting** - Adobe Journey Optimizer now supports Web Application Firewall (WAF) IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their AJO-hosted landing pages.
@@ -521,7 +541,7 @@ The following improvements have been added to administration and data management
   Availability date: Late June, 2026
 
 +++
-
+-->
 
 ### Mobile messaging (SMS, MMS, RCS & LINE) {#june-26-mobile}
 
@@ -541,11 +561,9 @@ The following improvements are coming to mobile messaging in this release.
 
 ### Usability improvements {#june-26-usability}
 
-+++ Coming soon — **Information below is subject to change.**
+* **Folders for Journeys** - You can now organize your journeys into **folders** to improve navigation and management in the interface. [Read more](../building-journeys/journey-ui.md#journeys-folders)
 
-* **Folders for Journeys & Campaigns** - You can now organize your journeys and campaigns into **folders** to improve navigation and management in the interface.
-
-+++
+  Availability date: June 30, 2026
 
 <!--
 +++ Coming soon — **Information below is subject to change.**

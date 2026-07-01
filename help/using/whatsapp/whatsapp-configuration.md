@@ -214,7 +214,7 @@ Now that your Webhook is configured, you can create your WhatsApp configuration.
 
     ![](assets/whatsapp-config-3.png){width=80%}
 
-1. Enter the **[!UICONTROL Sender Phone Number]** ​you want to use for your communications.
+1. Enter the **[!UICONTROL Sender Phone Number]** ​you want to use for your communications. Do not include a '+' sign before the number, as this can prevent the opt-out flow from working correctly.
 
 1. Use the **[!UICONTROL WhatsApp Execution Field]** to select amongst the profile attributes the phone number that you want to use in priority if several numbers are available in the database. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
 

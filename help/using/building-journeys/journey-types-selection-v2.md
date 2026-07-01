@@ -8,50 +8,19 @@ role: User
 level: Beginner
 keywords: journey types, unitary, read audience, audience qualification, business event, comparison, decision guide, choose, selection, real-time, scheduled, batch, event-triggered
 version: Journey Orchestration
-exl-id: 0c894dc1-76b6-4b33-baf8-eaf6686f7d38
-TQID: https://experienceleague.adobe.com/rEANha6Lppyd5vog-0kZ3aL9VvZHc9kziW-d-jiWqeA
-product_v2:
-  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
-    internal-label: Journey Optimizer
-feature_v2:
-  - id: b3538224-471e-4c63-a444-9b19d89ae29c
-    internal-label: Activities
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
-subfeature_v2:
-  - id: cce82f05-fc3c-4af7-85ff-8bba603861a7
-    internal-label: Condition activities
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
-    internal-label: Reaction events
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-    internal-label: User
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-    internal-label: Beginner
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-    internal-label: Optimization
 ---
+
 # Journey types: choose the right one {#journey-types-selection}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to compare the four journey types — unitary event, read audience, audience qualification, and business event — and use the decision guide and feature compatibility matrix to choose the right one for your use case.
+**On this page:** Learn about the four AJO journey types — unitary event, read audience, audience qualification, and business event — and find out which one fits your use case.
 
 >[!ENDSHADEBOX]
 
-[!DNL Adobe Journey Optimizer] supports four journey types, each designed for different entry mechanisms and business scenarios. This guide helps you understand the differences and choose the right type for your use case.
+[!DNL Adobe Journey Optimizer] supports four journey types, each designed for a different kind of trigger and business scenario. Understanding the difference helps you build the right experience from the start.
 
->[!NOTE]
->
->Not sure which type to choose? Start with **Unitary event journeys** for event-based experiences or **Read Audience journeys** for scheduled campaigns — these cover most common use cases.
-
-## Journey types overview {#journey-types}
+## The four journey types {#journey-types}
 
 >[!BEGINTABS]
 
@@ -101,9 +70,21 @@ topic_v2:
 
 >[!ENDTABS]
 
-## Decision guide: choosing your journey type {#decision-guide}
+## Which type should you use? {#decision-guide}
 
-Use the table below to match your goal to the right journey type. For most new users, **Unitary event** or **Read Audience** journeys cover the majority of use cases.
+The answer usually comes down to one question: *what starts the journey?*
+
+If a **customer does something specific** — abandons a cart, signs up, makes a purchase — use a **Unitary event journey**. It fires immediately when the action happens, one profile at a time.
+
+If you want to **reach an audience on a schedule** — a monthly newsletter, a seasonal campaign, a recurring re-engagement series — use a **Read Audience journey**. You define the audience and the timing; AJO processes everyone at once.
+
+If you want to respond **the moment a customer reaches a milestone** — joining a loyalty tier, hitting a churn risk threshold, completing a first purchase — use an **Audience Qualification journey**. It triggers as soon as the streaming audience membership changes, not on a fixed schedule.
+
+If something changes **in your business** that affects multiple customers at once — a stock level drops, a price changes, a sale starts — use a **Business event journey**.
+
+>[!TIP]
+>
+>**Not sure where to start?** Most teams begin with **Unitary event** for behavior-triggered experiences and **Read Audience** for campaigns. These two cover the majority of use cases.
 
 | Your goal | Recommended journey type | Why |
 |-----------|--------------------------|-----|
@@ -117,62 +98,9 @@ Use the table below to match your goal to the right journey type. For most new u
 | Flash sale announcement | Business event | Business decision affects multiple customers |
 | React as soon as a customer hits Gold loyalty tier | Audience Qualification | Streaming audience, real-time individual entry |
 
-## Journey types detailed comparison {#journey-types-comparison}
+## Feature availability reference {#feature-compatibility}
 
-| Aspect | Unitary event journeys | Read Audience journeys | Audience Qualification journeys | Business event journeys |
-|--------|------------------------|------------------------|--------------------------------|------------------------|
-| **Entry mechanism** | Individual event trigger | Scheduled batch | Real-time streaming audience membership change | Business-level event + Read Audience step |
-| **Entry timing** | Real-time, as events occur | Scheduled (one-time or recurring) | Real-time, as qualification occurs (streaming audiences); delayed for batch-evaluated audiences | Real-time trigger; profile ingestion follows Read Audience throughput |
-| **Profile entry** | One at a time | All at once (batch) | One at a time | Multiple profiles via internal Read Audience step |
-| **Trigger source** | Customer action (purchase, click, login) | Time-based schedule | Audience membership entry or exit | Business condition (stock, price) |
-| **Best for** | Transactional messages, behavioral responses | Marketing campaigns, newsletters, recurring programs | Loyalty programs, lifecycle stage transitions | Inventory alerts, promotions, business conditions |
-| **Use when** | Immediate response to individual actions needed | Reaching large audience segments on schedule | Responding to customer status changes in real time | Business events affect multiple customers simultaneously |
-| **Examples** | Cart abandonment recovery, new member onboarding | Monthly newsletter, seasonal campaign | VIP upgrade, churn risk alert | Low stock alert, flash sale, price drop |
-| **Re-entrance** | Configurable | Once per execution by default; [Force reentrance on recurrence](read-audience.md#schedule) available on scheduled runs | Configurable per qualification event; a profile already in the journey cannot re-enter the same version | Multiple profiles can be affected by same event |
-| **Max throughput** | 5,000 TPS (shared org-level with Audience Qualification) | 20,000 TPS per sandbox | 5,000 TPS (shared org-level with Unitary event) | Business event: 5,000 TPS; Read Audience step: 20,000 TPS |
-| **Data requirements** | Event schema with trigger data | [!DNL Adobe Experience Platform] audience | Streaming audience required. Batch audiences deprecated from August 2026 — [migrate now](aq-batch-audiences-migration.md) | Business event schema |
-
-## Feature compatibility by journey type {#feature-compatibility}
-
-Not all features are available for all journey types. Use this matrix to understand which capabilities work with which journey types:
-
-| Feature / Capability | Unitary event | Read Audience | Audience Qualification | Business event |
-|---------------------|:-------:|:-------------:|:----------------------:|:--------------:|
-| **Entry mechanisms** | | | | |
-| Event-triggered entry | ✅ | ❌ | ❌ | ✅ (business event triggers the journey; profiles enter via an internal Read Audience step) |
-| Scheduled entry | ❌ | ✅ | ❌ | ❌ |
-| Audience-based entry | ❌ | ✅ (batch) | ✅ (streaming) | ❌ |
-| **Orchestration features** | | | | |
-| Wait activities | ✅ | ✅ | ✅ | ✅ |
-| Condition activities | ✅ | ✅ | ✅ | ✅ |
-| Custom actions | ✅ | ✅ | ✅ | ✅ |
-| Read Audience activity (journey entry) | ❌ | ✅ | ❌ | ✅ (automatic step after business event) |
-| Audience Qualification activity (inside journey) | ✅ | ✅ | ✅ | ✅ |
-| Jump activity | ✅ | ❌ | ❌ | ✅ |
-| **Profile management** | | | | |
-| Profile re-entrance | ✅ Configurable | ❌ Once per execution by default ([Force reentrance on recurrence](read-audience.md#schedule) on scheduled runs) | ✅ Configurable (profile already in journey cannot re-enter same version) | ✅ Per event |
-| Namespace configuration | ✅ Required | ✅ Optional | ✅ Required | ✅ Required |
-| Profile cap | ✅ | ✅ | ✅ | ✅ |
-| **Testing & optimization** | | | | |
-| Test mode | ✅ | ✅ | ✅ | ✅ |
-| Dry run | ✅ | ✅ | ✅ | ✅ |
-| Path experiments (A/B testing) | ✅ | ✅ | ✅ | ❌ |
-| Send-time optimization | ✅ | ✅ | ✅ | ✅ |
-| **Channels** | | | | |
-| Email | ✅ | ✅ | ✅ | ✅ |
-| Push notifications | ✅ | ✅ | ✅ | ✅ |
-| SMS / MMS | ✅ | ✅ | ✅ | ✅ |
-| In-app messages | ✅ | ✅ | ✅ | ✅ |
-| Web | ✅ | ✅ | ✅ | ✅ |
-| Content cards | ✅ | ✅ | ✅ | ✅ |
-| **Advanced capabilities** | | | | |
-| Incremental read | ❌ | ✅ | ❌ | ❌ |
-| Time zone management | ✅ | ✅ | ✅ | ✅ |
-| Reaction events | ✅ | ✅ | ✅ | ✅ |
-| External data sources | ✅ | ✅ | ✅ | ✅ |
-| Throttling / Capping | ✅ | ✅ | ✅ | ✅ |
-
-**Legend:** ✅ = Supported | ❌ = Not supported
+All journey types support the full AJO channel set (email, push, SMS, in-app, web, content cards), core orchestration activities (wait, condition, custom actions), test mode, dry run, and send-time optimization. The table below shows only the capabilities that differ across types.
 
 >[!NOTE]
 >
@@ -180,11 +108,29 @@ Not all features are available for all journey types. Use this matrix to underst
 >
 >Read Audience activity as journey entry is only available in **Read Audience** and **Business event** journeys — it cannot be added to Unitary event or Audience Qualification entry journeys.
 
+| Capability | Unitary event | Read Audience | Audience Qualification | Business event |
+|-----------|:-------:|:-------------:|:----------------------:|:--------------:|
+| **Entry** | | | | |
+| Event-triggered entry | ✅ | ❌ | ❌ | ✅ (business event triggers the journey; profiles enter via an internal Read Audience step) |
+| Scheduled entry | ❌ | ✅ | ❌ | ❌ |
+| Audience-based entry | ❌ | ✅ (batch) | ✅ (streaming only) | ❌ |
+| **Orchestration** | | | | |
+| Read Audience activity (journey entry) | ❌ | ✅ | ❌ | ✅ (automatic step after business event) |
+| Jump activity | ✅ | ❌ | ❌ | ✅ |
+| **Profile management** | | | | |
+| Profile re-entrance | ✅ Configurable | ❌ Once per execution by default ([Force reentrance on recurrence](read-audience.md#schedule) available) | ✅ Configurable (profile already in journey cannot re-enter same version) | ✅ Per event |
+| **Optimization** | | | | |
+| Path experiments (A/B testing) | ✅ | ✅ | ✅ | ❌ |
+| **Advanced** | | | | |
+| Incremental read | ❌ | ✅ | ❌ | ❌ |
+| Max throughput | 5,000 TPS (shared org-level with Audience Qualification) | 20,000 TPS per sandbox | 5,000 TPS (shared org-level with Unitary event) | Business event: 5,000 TPS; Read Audience step: 20,000 TPS |
+
+**Legend:** ✅ = Supported | ❌ = Not supported
+
 ## Next steps {#next-steps}
 
 Now that you have chosen a journey type:
 
-* **[Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** — Not sure whether Journeys or Campaigns is the right tool? Step back up to the higher-level decision first
 * **[Create your first journey](journey-gs.md)** — Step-by-step guide from entry to publish
 * **[Learn about the journey designer](using-the-journey-designer.md)** — Design your journey canvas
 * **[Profile entrance in journeys](entry-management.md)** — Entry rules, re-entrance, and throughput by type
