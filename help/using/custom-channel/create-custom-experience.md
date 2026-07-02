@@ -20,7 +20,15 @@ In [!DNL Journey Optimizer], you can deliver messages using custom channels in c
 >
 >Before creating a custom channel experience, ensure that a custom channel has been configured by your administrator. [Learn more](configure-custom-channel.md)
 
-## Add a custom channel through a journey or a campaign {#create-custom-channel-experience}
+## Add a custom action through a journey or a campaign {#create-custom-channel-experience}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_custom_channel"
+>title="Custom channel action"
+>abstract="A custom channel action delivers a message to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a custom channel configuration that defines the endpoint, payload, and credentials used to deliver the message. The **Optimization** section can include content experiments or targeting rules, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with custom channels"
+
+
 
 >[!BEGINTABS]
 
@@ -76,6 +84,7 @@ To use a custom channel in a campaign:
 
 1. Review and activate the campaign. [Learn more](../campaigns/create-campaign.md)
 
+<!--
 >[!TAB Add a custom channel to an orchestrated campaign]
 
 Custom channels appear in the channel selection list in the orchestrated Campaigns canvas, below the native channels, with their custom icon and display name.
@@ -88,7 +97,7 @@ To add a custom channel in an orchestrated campaign:
 
 1. Select the **[!UICONTROL Channel configuration]** to use. Ensure the configuration includes the **[!UICONTROL Execution details]** section required for orchestrated campaigns.
 
-1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
+1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)-->
 
 >[!ENDTABS]
 
