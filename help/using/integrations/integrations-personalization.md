@@ -133,9 +133,9 @@ On **[!UICONTROL Simulation]** or send, Journey Optimizer runs integrations in o
 
 ![](assets/uc-integrations-7.png)
 
-## Use Adobe Target data in templates {#use-adobe-target-in-templates}
+## Use Adobe Target Recommendations in your content {#use-adobe-target-in-templates}
 
-This section explains how to use **Integrations** in Adobe Journey Optimizer to fetch personalization data from **[!DNL Adobe Target]** at send time and use it in message templates. It assumes the Target Delivery API has already been configured as an integration.
+This section explains how to use **Integrations** in Adobe Journey Optimizer to fetch personalization data from **[!DNL Adobe Target]** at send time and use it in your message content, whether authored in a template or inline. It assumes the Target Delivery API has already been configured as an integration.
 
 For configuration steps, see [Work with Integrations](integrations.md) and the [Adobe Target Recommendations](vendor-integration.md#adobe-target-recommendations) sample.
 
