@@ -34,12 +34,20 @@ Custom channels fill this gap: they enable you to use any outbound HTTP endpoint
 
 If you have used [custom actions](../action/action.md) in [!DNL Journey Optimizer] journeys before, custom channels address a different set of use cases. 
 
-Custom actions are designed to retrieve data from or send information to external systems (for example, call centers, offline systems, or logging), while **custom channels** are designed to send messages to end users through channels not natively supported in [!DNL Journey Optimizer].
+**Use custom channels when** you need to send messages to end users through a platform not natively supported in [!DNL Journey Optimizer]—such as WeChat, Kakao Talk, or a custom messaging gateway. Custom channels are available in campaigns, journeys, and orchestrated campaigns, and support:
 
-They are available in different contexts: custom actions are available in journeys only, while custom channels are available in campaigns, journeys, and orchestrated campaigns. Custom channels also support full personalization, a visual/form editor, preview and proof, content optimization, and RBAC/ABAC.
+* Full personalization through the personalization editor, similar to native outbound channels
+* Visual/form payload editor, preview and proof
+* Content experimentation and targeting
+* OOTB reporting and monitoring
+* Multiple API credentials and channel configurations
+* RBAC/ABAC
 
-The table below summarizes the main differences:
+Custom channels support POST as the only HTTP method.
 
+**Use custom actions when** you need to retrieve data from or push information to an external system—such as a call center, logging platform, or offline database—as a step within a journey. Custom actions are available in journeys only and support GET, PUT, and POST methods.
+
+<!--
 | | Custom Action | Custom Channel |
 | --- | --- | --- |
 | **Primary use case** | Retrieve data from or send information to external systems (call centers, offline systems, logging) | Send messages to end users through channels not natively supported in [!DNL Journey Optimizer] |
@@ -53,6 +61,7 @@ The table below summarizes the main differences:
 | **OOTB Reporting** | Yes | Yes |
 | **Multiple API credentials and channel configurations** | No | Yes |
 | **RBAC/ABAC** | No | Yes |
+-->
 
 >[!TIP]
 >
