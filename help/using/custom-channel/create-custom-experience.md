@@ -134,7 +134,7 @@ The fields you can author and personalize are displayed. You can leverage the [!
 
 ### Example payload {#example-payload}
 
-The following example shows a JSON payload with profile personalization for a custom messaging channel *(to be replaced with a meaningful realistic example)*:
+The following example shows a JSON payload with profile personalization for a custom messaging channel<!--(to be replaced with a meaningful realistic example)-->:
 
 ```json
 {
@@ -146,6 +146,37 @@ The following example shows a JSON payload with profile personalization for a cu
   }
 }
 ```
+
+### Track links in the payload {#track-links}
+
+To include a tracked link in your custom channel payload—so that clicks are automatically tracked and visible in the channel's reporting dashboards—wrap the URL using the following handlebar syntax:
+
+```
+{{url trackedUrl='' originalUrl='https://example.com/' type='TRACKED'}}
+```
+
+* `originalUrl` – The destination URL you want to redirect the recipient to.
+* `trackedUrl` – Leave this empty; [!DNL Journey Optimizer] automatically populates it with the tracking-enabled redirect URL at send time.
+* `type` – Must be set to `TRACKED`.
+
+>[!NOTE]
+>
+>Link tracking requires a subdomain configured for custom channels. [Learn how to delegate a subdomain for custom channels](custom-channel-subdomains.md#subdomain-delegation)
+
+**Example – tracked link in a LINE payload:**
+
+```json
+{
+  "to": "{{profile.mobilePhone.number}}",
+  "messages": [
+    {
+      "type": "text",
+      "text": "Hello! Check out our latest offer: {{url trackedUrl='' originalUrl='https://example.com/' type='TRACKED'}}"
+    }
+  ]
+}
+```
+
 <!--
 ### Strict JSON mode {#strict-json}
 

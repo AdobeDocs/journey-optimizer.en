@@ -24,7 +24,7 @@ The **Channel Builder** section is the central interface for defining new custom
 
 >[!IMPORTANT]
 >
->To access the Channel Builder, create and manage custom channels, you must have the **Create custom channel** and **Manage custom channel** permissions granted. [Learn more](../administration/high-low-permissions.md)
+>To access the Channel Builder, create and manage custom channels, you must have the **View custom channel** and **Manage custom channel** permissions granted. [Learn more](../administration/high-low-permissions.md)
 
 ## Access and manage custom channels {#access-channel-builder}
 
@@ -62,9 +62,7 @@ To create a new custom channel, follow the steps below.
 
    >[!NOTE]
    >
-   >Names must begin with a letter (A-Z), include only alpha-numeric characters or special chars ( _, ., -) and should be greater than 1 character.
-   >
-   >The name must be unique and cannot be changed after the channel is created. <!--TBC-->
+   >The name must be unique, begin with a letter (A-Z), include only alpha-numeric characters or special chars ( _, ., -) and should be greater than 1 character.
 
 1. You can select an icon from the default icon library, or select a SVG file from your computer.
 
@@ -161,7 +159,11 @@ In the payload configuration, define the structure of the message payload and wh
 1. Click **[!UICONTROL Define payload]**, and choose how to define the payload:
 
    * **[!UICONTROL Paste sample JSON payload]** – Paste a representative JSON object, and [!DNL Journey Optimizer] automatically infers a schema from it.
-   * **[!UICONTROL Import JSON schema]** – Upload a complete JSON schema file.
+   * **[!UICONTROL Import JSON schema]** (Coming soon) – Upload a complete JSON schema file.
+
+      >[!AVAILABILITY]
+      >
+      >This capability is not available yet. It will be added in a future release.
 
 1. After the schema is generated, [!DNL Journey Optimizer] displays all detected fields in a form view.
 
@@ -173,7 +175,7 @@ In the payload configuration, define the structure of the message payload and wh
    | --- | --- |
    | **[!UICONTROL Default value]** | Optional. Used if no personalized value is provided at authoring time. |
    | **[!UICONTROL Type]** | Read-only, derived from the payload. Supported types: `string`, `integer`, `decimal`, `boolean`, `dateTime`, `dateTimeOnly`, `dateOnly`, `listObject`, `listString`, `listInteger`, `listDecimal`, `listBoolean`, `listDateTime`, `listDateTimeOnly`, `listDateOnly`. |
-   | **[!UICONTROL Required]** | If enabled, the field must have a value when the channel is used in a campaign or journey. Missing required fields trigger a validation error that prevents saving or activating. |
+   | **[!UICONTROL Required]** | If enabled, the field must have a value when the channel is used in a campaign or journey. Missing required fields trigger a validation error that prevents activation. |
    | **[!UICONTROL Channel config]** | If enabled, the field appears in the channel configuration, allowing administrators to set different values per configuration (for example, a different sender ID per brand or region). [Learn how](custom-channel-configuration.md) |
 
    Nested fields are represented using dot notation (for example, `image.id`).<!--TBC-->

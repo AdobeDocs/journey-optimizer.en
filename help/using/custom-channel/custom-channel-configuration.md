@@ -20,15 +20,15 @@ To create a channel configuration for a custom channel, follow the steps below.
 
    ![Select channel](assets/custom_channel_select_channel.png){width="100%"}
 
-1. If the selected channel uses authentication (type is not **None**), the **[!UICONTROL API credentials]** field appears. Select the credentials to use for this configuration.
+1. If the selected channel uses authentication (type is not **None**), the **[!UICONTROL API credentials]** field appears. Select the credentials to use for this configuration. [Learn more on API credentials](custom-channel-api-credentials.md)
 
    ![Select API credentials](assets/custom_channel_config_api_credentials.png){width="100%"}
 
 1. If you have set up subdomains for custom channels in [!DNL Journey Optimizer], you can select a delegated subdomain to use for tracking links present in the payload for this configuration. [Learn how to delegate a subdomain](custom-channel-subdomains.md)
 
-1. If the channel has headers or query parameters defined as **Variable**, the **[!UICONTROL Dynamic parameters]** section appears. Enter the value for each variable parameter.
+1. If the selected channel has headers or query parameters [defined as variable](create-custom-channel.md#endpoint-configuration) for the endpoint URL, the **[!UICONTROL Dynamic parameters]** section appears.
 
-   You can use the personalization editor to inject dynamic values (for example, a user identifier resolved from the profile). This allows you to customize the request for each recipient based on their profile data.
+   Enter the value for each parameter. You can use the personalization editor to inject dynamic values (for example, a user identifier resolved from the profile). This allows you to customize the request for each recipient based on their profile data.
 
    ![Dynamic parameters](assets/custom_channel_config_dynamic_parameters.png){width="100%"}
 
@@ -38,9 +38,9 @@ To create a channel configuration for a custom channel, follow the steps below.
 
    Configure a value for each field as appropriate for this configuration. This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates.
 
-<!-->
-1. For Orchestrated Campaigns, complete the **[!UICONTROL Execution details]** section to map profile dimensions and specify the execution address.
--->
+1. For orchestrated campaigns, complete the **[!UICONTROL Execution details]** section to map profile dimensions and specify the execution address.
+
+   ![Execution details in orchestrated campaigns](assets/custom_channel_oc_execution_details.png){width="80%"}
 
 1. Click **[!UICONTROL Submit]** to save and activate the channel configuration.
 
