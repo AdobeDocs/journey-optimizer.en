@@ -170,7 +170,7 @@ Before activating the campaign, use the campaign proofing API to verify that the
 
 1. If the fragment content is missing or incorrect, verify that the fragment ID is valid, the fragment is published, and all required profile attributes are present.
 
-For more on the campaign proofing API, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/campaigns){target="_blank"}.
+For more on the campaign API, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve){target="_blank"}.
 
 ## Guardrails and limitations {#guardrails}
 
