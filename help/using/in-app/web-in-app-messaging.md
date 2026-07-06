@@ -39,8 +39,7 @@ After you have [installed](https://experienceleague.adobe.com/docs/experience-pl
 
 In the **[!UICONTROL Personalization]** section, check the **[!UICONTROL Enable personalization storage]** option. This option allows the Web SDK to keep track of which experiences have been seen by the user across page loads.
 
-![Image showing the personalization storage option in the tag extension configuration page.](assets/web-in-app-messaging/enable-personalization-storage.png)
-
+![Image showing the personalization storage option in the tag extension configuration page.](assets/enable-personalization-storage.png)
 
 Web In-app Messaging supports two types of triggers:
 
@@ -56,7 +55,7 @@ Refer to the following sections to configure the Web SDK tag extension according
     * **[!UICONTROL Extension]**: [!UICONTROL Core]
     * **[!UICONTROL Event Type]**: [!UICONTROL Library Loaded (Page Top)]
 
-    ![Image showing the event configuration screen.](assets/web-in-app-messaging/rule-configuration.png)
+    ![Image showing the event configuration screen.](assets/rule-configuration.png)
 
 1. Select **[!UICONTROL Keep Changes]** to save the event configuration.
 
@@ -67,25 +66,25 @@ Refer to the following sections to configure the Web SDK tag extension according
     * **[!UICONTROL Extension]**: [!UICONTROL Adobe Experience Platform Web SDK]
     * **[!UICONTROL Action Type]**: [!UICONTROL Send event]
 
-    ![Image showing the edit rule screen.](assets/web-in-app-messaging/add-action.png)
+    ![Image showing the edit rule screen.](assets/add-action.png)
 
 1. On the right side of the screen, in the **[!UICONTROL Personalization]** section, enable the **[!UICONTROL Render visual personalization decisions]** option.
 
-    ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/render-visual-personalization.png)
+    ![Image showing the personalization configuration screen.](assets/render-visual-personalization.png)
 
 1. On the right side of the screen, in the **[!UICONTROL Decision context]** section, define the **[!UICONTROL Key]**/**[!UICONTROL Value]** pairs which you used in your campaign configuration, to qualify for the in-app message.
 
-    ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/decision-context.png)
+    ![Image showing the personalization configuration screen.](assets/decision-context.png)
 
 1. Select **[!UICONTROL Keep Changes]** to save your configuration.
 
 1. Next, you must add the newly created rule to the tag property library. To do this, go to **[!UICONTROL Publishing Flow]** and select the rule that you previously created.
 
-    ![Image showing the library screen.](assets/web-in-app-messaging/add-rule-to-library.png)
+    ![Image showing the library screen.](assets/add-rule-to-library.png)
 
 1. After you have added the rule to the library, select **[!UICONTROL Save & Build to Development]**.
 
-    ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/publish-flow.png)
+    ![Image showing the personalization configuration screen.](assets/publish-flow.png)
 
 The configuration process is now completed and your message is ready to be shown to your users.
 
@@ -98,33 +97,32 @@ The configuration process is now completed and your message is ready to be shown
 
 1. Set the trigger for a specific element on the page, identified by a CSS selector of your choosing.
 
-    ![Image showing the event configuration screen.](assets/web-in-app-messaging/event-configuration-manual.png)
+    ![Image showing the event configuration screen.](assets/event-configuration-manual.png)
 
 1. You need to add an action to the rule that you created. In the [!DNL Actions] section, select **[!UICONTROL Add]** and use the following **[!UICONTROL Action]** settings:
 
     * **[!UICONTROL Extension]**: [!UICONTROL Adobe Experience Platform Web SDK]
     * **[!UICONTROL Action Type]**: [!UICONTROL Evaluate rulesets]
 
-    ![Image showing the edit rule screen.](assets/web-in-app-messaging/add-action.png)
+    ![Image showing the edit rule screen.](assets/add-action.png)
 
 1. On the right side of the screen, enable the **[!UICONTROL Render visual personalization decisions]** option.
 
-    ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/manual-trigger-render.png)
-
+    ![Image showing the personalization configuration screen.](assets/manual-trigger-render.png)
 
 1. On the right side of the screen, in the **[!UICONTROL Decision context]** section, define the **[!UICONTROL Key]**/**[!UICONTROL Value]** pairs which you used in your campaign configuration, to qualify for the in-app message.
 
-    ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/manual-trigger-decision-context.png)
+    ![Image showing the personalization configuration screen.](assets/manual-trigger-decision-context.png)
 
 1. Select **[!UICONTROL Keep Changes]** to save your configuration.
 
 1. Add the newly created rule to the tag property library. To do this, go to **[!UICONTROL Publishing Flow]** and select the rule that you previously created.
 
-    ![Image showing the library screen.](assets/web-in-app-messaging/add-rule-to-library.png)
+    ![Image showing the library screen.](assets/add-rule-to-library.png)
 
 1. After you have added the rule to the library, select **[!UICONTROL Save & Build to Development]**.
 
-    ![Image showing the personalization configuration screen.](assets/web-in-app-messaging/publish-flow.png)
+    ![Image showing the personalization configuration screen.](assets/publish-flow.png)
 
 The configuration process is now completed and your message is ready to be shown to your users.
 
