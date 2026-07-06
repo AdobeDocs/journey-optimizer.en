@@ -324,12 +324,13 @@ solution: Journey Optimizer
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
-    + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
     + [Create a mobile In-app message](using/in-app/create-in-app.md)
     + [Create a web In-app message](using/in-app/create-in-app-web.md)
-    + [Configure Web In-app Messaging in Web SDK](using/in-app/web-in-app-messaging.md)
     + [Design your In-app content](using/in-app/design-in-app.md)
     + [Check & send your In-app notification](using/in-app/send-in-app.md)
+    + Configure In-app channel {#configure-inapp}
+      + [In-app channel configuration & prerequisites](using/in-app/inapp-configuration.md)
+      + [Configure Web In-app Messaging in Web SDK](using/in-app/web-in-app-messaging.md)
   + Push notification channel {#push}
     + [Push notification channel](/help/rp_landing_pages/push-landing-page.md)
     + [Get started with push notifications](using/push/get-started-push.md)
@@ -380,9 +381,10 @@ solution: Journey Optimizer
       + [Use the non-visual editor](using/web/web-non-visual-editor.md)
       + [Manage modifications](using/web/manage-web-modifications.md)
       + [Monitor your web experiences](using/web/monitor-web-experiences.md)
+    + Single-page applications and Web SDK {#web-sdk}
       + [Author single-page applications](using/web/web-spa.md)
       + [Implement single-page applications](using/web/web-spa-implementation.md)
-      + [AJO with Experience Platform Web SDK](using/web/web-sdk.md)
+      + [Journey Optimizer with Experience Platform Web SDK](using/web/web-sdk.md)
   + Code-based experience {#code-based-experience}
     + [Code-based experience](/help/rp_landing_pages/code-based-experience-landing-page.md)
     + [Get started with code-based channel](using/code-based/get-started-code-based.md)
