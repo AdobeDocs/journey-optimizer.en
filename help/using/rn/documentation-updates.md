@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## June 2026 {#june-2026}
 
+* The **Check & send a direct mail message** page has been updated to clarify Direct Mail export timing and batching behavior, including the fixed 4-hour UTC export schedule, why multiple files can be generated in a single day, when **[!UICONTROL Update profile]** executes in journeys, and recommendations for one-file-per-day scenarios. [Read more](../direct-mail/test-send-direct-mail.md#dm-export-timing)
+
 * A new **Journey types: choose the right one** page is now available. It compares all journey entry points — Read Audience, Audience Qualification, Unitary event, and Business event — with decision guides and a feature compatibility matrix to help you select the right type for your use case. [Read more](../building-journeys/journey-types-selection.md)
 
 * A new **Journeys vs. campaigns** page is now available. It compares Journeys, Action campaigns, and API-triggered campaigns across execution style, data model, and use case — including inbound channel activation for low-latency edge personalization, multi-surface inbound delivery, and guidance on when to use Orchestrated campaigns (ad-hoc audience composition, federated data). [Read more](../start/journeys-vs-campaigns.md)
