@@ -505,6 +505,7 @@ solution: Journey Optimizer
     + [Create a fragment](using/content-management/create-fragments.md)
     + [Save existing content as fragment](using/content-management/save-fragments.md)
     + [Customizable fragments](using/content-management/customizable-fragments.md)
+    + [Dynamic fragments](using/content-management/dynamic-fragments.md)
     + [Manage fragments](using/content-management/manage-fragments.md)
     + {hide-from-toc} [Add contextual attributes to published fragments](using/content-management/manage-fragments-contextual-attributes.md)
   + Dynamic content {#dynamic} 
