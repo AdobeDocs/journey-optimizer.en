@@ -1,6 +1,3 @@
-The updated file content is ready. Here is the complete updated markdown — copy and save it as your `send-time-optimization.md`:
-
-```markdown
 ---
 solution: Journey Optimizer
 product: journey optimizer
@@ -47,14 +44,14 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to enable Send-Time Optimization so Adobe's AI predicts the best time to deliver email, push, SMS, RCS, and WhatsApp messages based on each customer's historical open, click, and engagement behavior.
+**On this page:** Learn how to enable Send-Time Optimization so Adobe's AI predicts the best time to deliver email and push messages based on each customer's historical open and click behavior.
 
 >[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_disabled"
 >title="About Sent time optimization"
->abstract="[!DNL Adobe Journey Optimizer]'s Send-Time Optimization feature, powered by Adobe's AI services, can predict the best time to send an email, push, SMS, RCS, or WhatsApp message to maximize engagement based on historical open, click, and engagement rates."
+>abstract="[!DNL Adobe Journey Optimizer]'s Send-Time Optimization feature, powered by Adobe's AI services, can predict the best time to send an email or push message to maximize engagement based on historical open and click rates."
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_email"
@@ -66,29 +63,24 @@ topic_v2:
 >title="Activate Send-Time Optimization"
 >abstract="Push messages defaults to the opens option, as clicks are not applicable for push messaging. The send times used by the system can also be bracketed with a value for the Send within the next option."
 
->[!CONTEXTUALHELP]
->id="jo_bestsendtime_mobile"
->title="Activate Send-Time Optimization"
->abstract="SMS, RCS, and WhatsApp messages are optimized for clicks on links contained in the message. The send times used by the system can also be bracketed with a value for the Send within the next option."
+[!DNL Adobe Journey Optimizer]'s Send-Time Optimization feature, powered by Adobe's Journey AI services, chooses the optimal send time for email and push messages to maximize customer engagement, based on your customers' historical open and click behavior.
 
-[!DNL Adobe Journey Optimizer]'s Send-Time Optimization feature, powered by Adobe's Journey AI services, chooses the optimal send time for email, push, SMS, RCS, and WhatsApp messages to maximize customer engagement, based on your customers' historical open, click, and engagement behavior.
-
-Send-Time Optimization is only available for Journey Optimizer's built-in Email, Push, SMS, RCS, and WhatsApp action types and is not currently available for messages sent through custom actions or for other action types. Send-Time Optimization is available for these action types within both Journeys and Campaigns.
+Send-Time Optimization is only available for Journey Optimizer's built-in Email and Push action types and is not currently available for messages sent through custom actions or for other action types. Send-Time Optimization is only available for Email and Push actions within Journeys and is not currently available for messages sent through Campaigns.
 
 >[!AVAILABILITY]
 >
 >* The Send-Time Optimization feature is enabled for [!DNL Adobe Journey Optimizer] customers upon request. Contact Adobe Customer Care or your Adobe representative to activate the feature for your organization.
 >
->* Send-Time Optimization applies to **Email**, **Push notification**, **SMS**, **RCS**, and **WhatsApp** channels.
+>* Send-Time Optimization only applies to **Email** and **Push notification** channels.
 >
 
 ## Use send-time optimization{#use-send-time-optimization}
 
-To enable and configure Send-Time Optimization on an email, push, SMS, RCS, or WhatsApp action, follow the steps below.
+To enable and configure Send-Time Optimization on an email or push action, follow the steps below.
 
-Before starting, consider which messages are a good fit before you turn it on. Send-Time Optimization should not be used for urgent, time-sensitive operational messages, for example, an order confirmation, a password reset notification, or a flight gate change notification. It works best for less-urgent marketing communications, such as a weekly ad, promotional information on a new product, or information about a month-long sale.
+Before starting, csonsider which messages are a good fit before you turn it on. Send-Time Optimization should not be used for urgent, time-sensitive operational messages, for example, an order confirmation, a password reset notification, or a flight gate change notification. It works best for less-urgent marketing communications, such as a weekly ad, promotional information on a new product, or information about a month-long sale.
 
-1. From your Journey or Campaign, open the **[!UICONTROL Configure action]** menu.
+1. From your Journey, open the **[!UICONTROL Configure action]** menu.
 
     ![Send-Time Optimization toggle in email channel configuration](assets/sto-1.png)
 
@@ -96,11 +88,11 @@ Before starting, consider which messages are a good fit before you turn it on. S
 
     ![Send-Time Optimization toggle in email channel configuration](assets/sto-2.png)
 
-1. For Email messages, choose whether to optimize for opens or for click-throughs by selecting the appropriate option. Push messages are always optimized for opens. SMS, RCS, and WhatsApp messages are always optimized for clicks on links contained in the message.
+1. For Email messages, choose whether to optimize for opens or for click-throughs by selecting the appropriate option. Push messages are always optimized for opens.
 
     For best results, optimize most emails for **Clicks**. Choose **Opens** when the message is informational and not meant to drive a specific action.
 
-1. For all channel types, set **[!UICONTROL Send within next]** to the maximum number of hours (1–168) the system will wait before sending the message.
+1. For both Email and Push messages, set **[!UICONTROL Send within next]** to the maximum number of hours (1–168) the system will wait before sending the message.
 
     For best results, choose a value between 6 and 24 hours. A lower value reduces the number of available send times and can limit the benefit of Send-Time Optimization. A higher value may mean the message is outdated or less relevant by the time it is sent.
 
@@ -108,13 +100,13 @@ Before starting, consider which messages are a good fit before you turn it on. S
 
 1. For Email messages, choose how your action tracking is configured. You can track Email opens and track clicks on links and buttons in the Email.
 
-When your journey or campaign is activated and a customer reaches the action, Send-Time Optimization will choose the best predicted send time available for each user within your specified limits.
+When your journey is activated and a customer reaches the Email or Push action in the journey, Send-Time Optimization will choose the best predicted send time available for each user within your specified limits.
 
 To monitor your journey's performance, refer to the [Overview page](../reports/channel-report-cja.md). 
 
 ## How send-time optimization works {#how-send-time}
 
-The Send-Time Optimization model ingests your organization's [!DNL Adobe Journey Optimizer] customer behavior data and looks at user-level open, click, and engagement events to determine when your customers are most likely to engage with your messaging.
+The Send-Time Optimization model ingests your organization's [!DNL Adobe Journey Optimizer] customer behavior data and looks at user-level open and click events to determine when your customers are most likely to engage with your messaging.
 
 Send-Time Optimization makes predictions for each hour of the week, for each user, based on three types of behavioral data:
 
@@ -122,7 +114,7 @@ Send-Time Optimization makes predictions for each hour of the week, for each use
 1. The behavior of lookalike users in the same time zone
 1. The behavior of that individual user
 
-These predictions are weighted and combined using a Bayesian approach, resulting in a "heat map" for each metric (email opens, email clicks, push opens, and mobile message clicks), for each customer, that indicates the hours of the week that contacting that user is most and least likely to result in the desired engagement outcome (open/click), as illustrated in the below example heatmap:
+These predictions are weighted and combined using a Bayesian approach, resulting in a "heat map" for each metric (email opens, email clicks, and push opens), for each customer, that indicates the hours of the week that contacting that user is most and least likely to result in the desired engagement outcome (open/click), as illustrated in the below example heatmap:
 
 ![Engagement heatmap showing optimal send times for email by day and hour](assets/heatmap-1.png)
 
@@ -132,7 +124,7 @@ If a user with the above predicted probabilities is targeted for a message at 9 
 
 ## Send-Time Optimization model training and scoring details  {#model-send-time}
 
-Once the Send-Time Optimization feature is enabled for your organization, the Journey AI model is trained on email and push send, open and click events, as well as SMS, RCS, and WhatsApp send and click events, across all your organization's journeys, actions, and campaigns over the last 16 weeks – regardless of whether those actions use Send-Time Optimization. This allows Send-Time Optimization to benefit from all data generated by your customers.
+Once the Send-Time Optimization feature is enabled for your organization, the Journey AI model is trained on email and push send, open and click events across all your organization's journeys and actions over the last 16 weeks – regardless of whether those actions use Send-Time Optimization. This allows Send-Time Optimization to benefit from all data generated by your customers.
 
 Models are initially trained and scored weekly. After 16 weeks, models are retrained and rescored monthly. Model scoring includes all customer profiles – both existing and new since the last scoring run.
 
@@ -153,9 +145,7 @@ Your organization should use the Email action within Journey Optimizer for a min
 
 Your organization should use the Push action within Journey Optimizer for a minimum of 30 days before using Send-Time Optimization within Push to allow for the collection of some push send and open events.
 
-Your organization should use the SMS, RCS, or WhatsApp action within Journey Optimizer for a minimum of 30 days before using Send-Time Optimization for those channels to allow for the collection of some send and click events.
-
-If your organization has already been using the relevant action types for at least 30 days, your organization does not need to wait longer to use Send-Time Optimization after it has been enabled by Adobe. Results will continue to improve as your organization gathers data for up to 16 weeks.
+If your organization has already been using the Email and/or Push action types for at least 30 days, your organization does not need to wait longer to use Send-Time Optimization after it has been enabled by Adobe. Results will continue to improve as your organization gathers data for up to 16 weeks.
 
 +++
 
@@ -168,7 +158,7 @@ In order to minimize the model's impact on profile richness, model scores are st
 
 +++What is the average benefit of Send-Time Optimization?
 
-Send-Time Optimization may increase email click rate, push open rate, and mobile message click rate in the range of approximately 2% to 10% across all messages optimized by an organization.
+Send-Time Optimization may increase email click rate and push open rate in the range of approximately 2% to 10% across all messages optimized by an organization.
 
 For example, if an organization sending email without send time optimization has a 5.0% click rate on average, the same set of emails with send time optimization might result in as much as a 5.5% click rate on average (5.0% * (1+10%) = 5.5%).
 
@@ -178,7 +168,7 @@ Organizations are more likely to experience greater benefits from using Send-Tim
 
 * Existing journeys use send times that are fixed and not well-optimized
 * Variability in customer behavior (clicks and opens) corresponds to customer location and customer preferences
-* Organizations use Send-Time Optimization on a larger fraction of email, push, and mobile messages
+* Organizations use Send-Time Optimization on a larger fraction of email & push messages
 * Organizations choose maximum wait times within the recommended range of 6-12 hours
 
 +++
@@ -200,34 +190,61 @@ Send-Time Optimization uses the `timeZone` profile field to determine a user's t
 +++
 
 
-+++Will Send-Time Optimization send Push or mobile messages to users during the night in their local time zone?
++++Will Send-Time Optimization send Push messages to users during the night in their local time zone?
 
-Send-Time Optimization may send Push, SMS, RCS, or WhatsApp messages to users during the night in their local time zone in the following circumstances:
+Send-Time Optimization may send Push messages to users during the night in their local time zone in the following circumstances:
 
 * When users exhibit behavior that indicates they are likely to interact with a message sent at night
 * When the model chooses an "Exploration" send time
 
-To avoid sending messages to customers during night time hours, schedule batch message sends to occur in the morning or early afternoon and choose a shorter duration for Send-Time Optimization. (For example, a 9 AM send time and 8 hour maximum wait time.)
+To avoid sending Push messages to customers during night time hours, schedule batch Push message sends to occur in the morning or early afternoon and choose a shorter duration for Send-Time Optimization. (For example, a 9 AM send time and 8 hour maximum wait time.)
 
 +++
-```
 
----
++++ AI Knowledge Reference
 
-Here is a summary of every change made:
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
 
-**Beginshadebox / intro copy** — added SMS, RCS, and WhatsApp to the channel list and updated "open and click" to "open, click, and engagement behavior."
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-**Contextual help blocks** — updated `jo_bestsendtime_disabled` to include mobile channels; added a new `jo_bestsendtime_mobile` block for SMS/RCS/WhatsApp explaining those channels optimize for link clicks.
+* **TL;DR:** This page explains how to configure and use Send-Time Optimization in Adobe Journey Optimizer, an AI-powered feature that predicts the best time to send email or push messages to each individual to maximize engagement.
 
-**Scope paragraph** — removed the Campaigns restriction ("not currently available for messages sent through Campaigns") and added SMS, RCS, and WhatsApp to the channel list. The sentence now reads: *available for these action types within both Journeys and Campaigns.*
+**Intents:**
+* Enable Send-Time Optimization on an email or push action in a journey
+* Choose whether to optimize for opens or click-throughs on email messages
+* Set the maximum wait window (Send within next) for delayed delivery
+* Understand how the AI model predicts optimal send times using behavioral data
+* Determine whether Send-Time Optimization is appropriate for a given message type
 
-**Availability note** — updated the channel bullet to include SMS, RCS, and WhatsApp.
+**Glossary:**
+* **Send-Time Optimization (STO)**: An AI-powered feature that delays message delivery to each profile until the predicted optimal engagement hour within a configured time window *(product-specific)*
+* **Journey AI**: Adobe's AI services powering Send-Time Optimization within Journey Optimizer *(product-specific)*
+* **Exploration send time**: A randomly selected send time (used for 5% of sends) to test different times and improve model accuracy *(product-specific)*
+* **Optimized send time**: A model-predicted send time selected to maximize click or open rates (used for 95% of sends) *(product-specific)*
+* **Send within next**: The maximum number of hours (1–168) the system will wait before sending the message to a given profile *(product-specific)*
 
-**Use STO section** — step 1 now says "Journey or Campaign"; step 3 adds the mobile messaging optimization rule (always clicks); step 4 generalizes "for both Email and Push" to "for all channel types"; closing sentence updated from "journey" to "journey or campaign."
+**Guardrails:**
+* Send-Time Optimization must be enabled by Adobe for the organization; contact Adobe Customer Care or your Adobe representative to activate it.
+* Send-Time Optimization only applies to Email and Push notification channels within Journeys; it is not available for Campaigns or custom actions.
+* The organization must have used Email or Push actions in Journey Optimizer for at least 30 days before Send-Time Optimization produces meaningful results.
+* Do not use Send-Time Optimization for urgent or time-sensitive operational messages (e.g., order confirmations, password resets, flight gate changes).
+* Maximum wait time range is 1–168 hours; recommended range is 6–24 hours for best results.
+* Model scores are stored in profile attributes at `_experience.intelligentServices.journeyAI.sendTimeOptimization` and are not human-readable.
+* Models are trained weekly initially, then retrained and rescored monthly after 16 weeks.
 
-**How it works section** — updated the heatmap metric list to include "mobile message clicks."
+**Terminology:**
+* Canonical name: Send-Time Optimization — Acronym: STO — variants: best send time, send time AI, intelligent send time
+* Synonyms: "Send-Time Optimization" = "optimal send time" = "AI send time"
+* Do not confuse: "Exploration send time" ≠ "Optimized send time" (exploration is random for model testing; optimized is model-predicted for engagement)
 
-**Model training section** — added SMS, RCS, and WhatsApp send and click events to the training data description; added "and campaigns" to scope.
+**FAQ:**
+* **Q: Which channels support Send-Time Optimization?** — Only Email and Push notification channels within Journeys; Campaigns and custom actions are not supported.
+* **Q: Should I optimize for opens or clicks on email?** — Optimize for Clicks for most emails. Choose Opens when the message is informational and not intended to drive a specific action.
+* **Q: How long does the organization need to wait before enabling STO?** — At least 30 days of Email or Push usage in Journey Optimizer is needed to collect sufficient behavioral data. Results continue to improve for up to 16 weeks.
+* **Q: Can STO send push notifications at night?** — Yes, if a user's behavior suggests night-time engagement or if an exploration send time is selected. To avoid this, use a morning send time with a short maximum wait window.
+* **Q: What is the expected benefit of Send-Time Optimization?** — Approximately 2–10% improvement in email click rate or push open rate across all optimized messages, though benefits may not be observable on individual small-volume sends.
 
-**FAQs** — added a 30-day readiness paragraph for SMS/RCS/WhatsApp; updated the benefit FAQ to include "mobile message click rate"; updated the night-time FAQ question and body to name SMS, RCS, and WhatsApp alongside Push.
++++
+
+
+

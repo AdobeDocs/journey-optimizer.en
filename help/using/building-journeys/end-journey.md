@@ -121,6 +121,8 @@ The definition of "finished" varies depending on the journey type:
 
 Closing a journey manually ensures that customers who already entered the journey can finish their path but new users are not able to enter the journey. When a journey is closed (for any of the reasons above), it will have the status **[!UICONTROL Closed]**. The journey stops letting new individuals enter the journey. Profiles already in the journey can finish the journey normally. After the default global timeout of 91 days, the journey will switch to the **Finished** status. 
 
+You can stop a journey from the **Live** or **Paused** state. When the journey is **Paused**, you do not need to resume it to **Live** first. [Learn more about stopping a paused journey](journey-pause.md#stop-close-paused).
+
 To close a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Close to new entrances]**.
 
 ![Finish action dropdown in quick actions menu for ending journey](assets/journey-finish-quick-action.png)
@@ -138,6 +140,8 @@ You can also:
 ## Stop a journey {#stop-journey}
 
 In case you need to stop the progress of all individuals in the journey, you can stop it. Stopping the journey timeout all individuals in the journey. However, stopping a journey involves that people who already entered a journey are all stopped in their progress. The journey is basically switched off. If you want to end to a journey, best practice is [to close it](#close-journey). 
+
+You can also stop a **Paused** journey directly, without resuming it to **Live** first. [Learn more](journey-pause.md#stop-close-paused).
 
 You can stop a journey, for example, if a marketer realizes that the journey targets the wrong audience or a custom action supposed to deliver messages is not working correctly. To stop a journey from the list of journeys, click the **[!UICONTROL Ellipsis]** button that is located to the right of the journey name and select **[!UICONTROL Stop]**.
 
@@ -164,3 +168,50 @@ When stopped, the journey status is set to **[!UICONTROL Stopped]**.
 * [Profile entrance management](entry-management.md) - Configure how profiles enter journeys
 * [Configure exit criteria](journey-properties.md#exit-criteria) - Set up automatic profile removal from journeys
 * [Pause a journey](journey-pause.md) - Temporarily halt journey execution
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains the different ways a live journey can end — including the global 91-day timeout, manual closure to new entrances, and emergency stop — along with their effects on in-progress profiles.
+
+**Intents:**
+
+* Close a live journey to new entrances while allowing current profiles to complete it
+* Stop a journey immediately to halt all in-progress profiles
+* Understand the difference between Closed, Stopped, and Finished journey statuses
+* Determine when a journey is considered "finished" based on its type and configuration
+* Delete a journey once it has reached the Finished status
+
+**Glossary:**
+
+* **End tag**: An auto-generated, non-removable node displayed at the end of each journey path during authoring; its label can be changed *(product-specific)*
+* **Close to new entrances**: A manual action that prevents new profiles from entering a journey while allowing existing profiles to complete their path *(product-specific)*
+* **Global journey timeout**: The 91-day maximum duration after which a journey automatically switches to Finished status and all profile data is removed *(product-specific)*
+* **Stopped status**: A journey state in which all in-progress profiles are immediately halted; used only for emergencies *(product-specific)*
+
+**Guardrails:**
+
+* Closed and Stopped journeys cannot be restarted or deleted; only a new version or duplicate can be created.
+* Only journeys in Finished status can be deleted.
+* Stopping a journey requires the Manage journeys permission; journeys with inline campaigns or messaging nodes also require Campaigns > Publish Campaigns permission.
+* After the 91-day global timeout, all profile journey data is removed and remaining profiles are automatically exited.
+* A non-recurring Read Audience journey without long-running Wait, Reaction, or event-triggered nodes automatically transitions to Stopped when the last profile exits. Journeys with those nodes remain subject to the 91-day global timeout unless manually closed.
+
+**Terminology:**
+
+* Canonical name: Close to new entrances — Acronym: n/a — variants: close journey, manually close
+* Synonyms: "Stopped" journey ≠ "Closed" journey — stopped halts all profiles immediately; closed only blocks new entrances
+* Do not confuse: "End tag" ≠ "End activity" — the End tag is auto-generated and cannot be removed; the End activity is a placeable canvas node
+
+**FAQ:**
+
+* **Q: What is the difference between closing and stopping a journey?** — Closing blocks new entrances but lets existing profiles finish; stopping immediately halts all profiles in their tracks.
+* **Q: When does a Read audience journey reach Finished status?** — For a non-recurring Read Audience journey: it auto-stops to Stopped when the last profile exits (or after 91 days if Wait, Reaction, or event nodes keep profiles active). Finished is reached when a Closed journey hits the 91-day global timeout, or per recurring-journey rules in the finished-definition table.
+* **Q: Can I delete a Closed journey?** — No, only Finished journeys can be deleted.
+* **Q: What happens to profiles still in a journey when the 91-day timeout hits?** — They are automatically exited from the journey at that point.
+* **Q: Do I need special permissions to stop a journey?** — Yes, the Manage journeys permission is required, plus Campaigns > Publish Campaigns if the journey contains inline campaigns or messaging nodes.
+
++++

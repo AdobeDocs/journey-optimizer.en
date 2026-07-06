@@ -121,7 +121,7 @@ The **[!UICONTROL Sending Statistics]** table provides a clear view of how your 
 
 +++
 
-## Email - Tracking statistics {#email-tracking}
+## Tracking statistics {#email-tracking}
 
 ![](assets/cja-journey-email-track-stat.png)
 
@@ -133,19 +133,22 @@ The **[!UICONTROL Email - Tracking statistics]** table offers a detailed account
 
 * **[!UICONTROL Click through open rate (CTOR)]**: Number of times the email was opened.
 
+* **[!UICONTROL Open rate]**: Percentage of profiles who opened the email at least once, relative to the number of delivered emails.
+
+* **[!UICONTROL Estimated Email Opens]**: Estimate of total email opens that accounts for both direct opens by profiles and automated opens triggered by mail servers. This metric adjusts for opens triggered by mail servers for privacy or security scanning by applying an open rate calculated from recipients who manually opened the email to those whose emails were only opened by mail servers.
+
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
 
-* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in an email.
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
-* **[!UICONTROL Email Opens]**: Number of times your emails were opened in a campaign.
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
 
-* **[!UICONTROL Unique Email Opens]**: Number of profiles who opened emails.
+* **[!UICONTROL Estimated CTOR]** (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
 
 * **[!UICONTROL Spam complaints]**: Number of times a message was declared as spam or junk.
 
-* **[!UICONTROL Unsubscribes]**: Number of clicks on the unsubscription link.
+* **[!UICONTROL Unsubscribes]**: Number of clicks on the unsubscription link or on the associated landing page.
 
-* **[!UICONTROL Unique Email Unsubscribes]**: Number of profiles who unsubscribed from your emails.
 +++
 
 ## Email domains {#email-domains}
@@ -172,11 +175,11 @@ The **[!UICONTROL Email Domains]** table offers an in-depth breakdown of emails 
 
 +++
 
-## Tracked link labels {#track-link-label}
+## Tracked labels {#track-link-label}
 
 ![](assets/cja-journey-tracked-link-labels.png)
 
-The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your emails, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
+The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your emails, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
 +++ Learn more about Tracked link labels metrics
 
@@ -184,6 +187,7 @@ The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview o
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 +++
 
 ## Tracked link URLs {#track-link-url}
@@ -198,6 +202,7 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 +++
 
 
