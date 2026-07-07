@@ -18,9 +18,7 @@ keywords: CNIL, tracking, pixel, email, consent, opt-out, privacy
 
 >[!ENDSHADEBOX]
 
->[!NOTE]
->
->This page is for informational purposes only. It is not legal advice and does not warrant your compliance with applicable law. The Adobe Journey Optimizer product capabilities described below are building blocks that, configured and operated appropriately, may support a compliant implementation. Each customer is responsible for determining and complying with their obligations under applicable law.
+This page is for informational purposes only. It is not legal advice and does not warrant your compliance with applicable law. The Adobe Journey Optimizer product capabilities described below are building blocks that, configured and operated appropriately, may support a compliant implementation. Each customer is responsible for determining and complying with their obligations under applicable law.
 
 ## Overview {#overview}
 
@@ -32,11 +30,11 @@ As CNIL and other regulators clarify guidance on tracking pixels and related iss
 
 Adobe Journey Optimizer provides controls that can help customers manage open tracking at the delivery level. Customers are responsible for determining their own compliance obligations under applicable CNIL guidance and other laws, but these capabilities may support customer compliance efforts.
 
-## What is an email tracking pixel {#tracking-pixel}
+### What is an email tracking pixel {#tracking-pixel}
 
 An email tracking pixel is a 1x1 transparent image embedded in the HTML of an email. When the recipient's email client loads that image, the pixel pings a server that records data such as a timestamp, device type, email client, and sometimes an IP address for approximate location. That log is then tied to a recipient's record, allowing marketers to see whether an email is opened.
 
-## Customer support {#support}
+### Customer support {#support}
 
 Customers seeking assistance implementing the changes described above may engage with their existing Adobe ecosystem. For technical questions about the Adobe capabilities referenced, contact your Customer Success Manager or technical account manager.
 
