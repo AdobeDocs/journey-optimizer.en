@@ -33,11 +33,11 @@ subfeature_v2:
 
 The **[!UICONTROL Load file]** activity is a **[!UICONTROL Data Management]** activity. Use it to work with profiles and data stored in an external file. It supports **file-based targeting** in Orchestrated campaigns when your recipient list comes from an external system (for example, a CRM export or a partner file) and you want to run a campaign without building a full Adobe Experience Platform ingestion pipeline first.
 
+During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. Rows that fail validation are rejected and logged before the campaign runs, keeping the audience clean without manual pre-processing.
+
 >[!AVAILABILITY]
 >
->The **Load file** activity is available in **Limited Availability** for a set of organizations. To request access, contact your Adobe representative. For availability phases, see [Journey Optimizer release cycle](../../rn/releases.md).
->
->The activity is currently not available for use with **Healthcare Shield**.
+>The **Load file** activity is currently not available for use with **Healthcare Shield**.
 
 ## Permissions {#permissions}
 

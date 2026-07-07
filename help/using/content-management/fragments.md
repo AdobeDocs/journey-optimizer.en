@@ -64,6 +64,7 @@ To make the best use of fragments:
 
 * **Create your own fragments**: Create visual or expression fragments, either from scratch or by saving content as fragment. [Learn how to create a fragment](create-fragments.md). In addition, you can leverage Journey Optimizer **Content REST API** to manage content fragments. For more on this, refer to the [Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"}.
 * **Reuse your fragments:** Use them as many times as needed in your content. See [Add visual fragments](../email/use-visual-fragments.md) and [Leverage expression fragments](../personalization/use-expression-fragments.md)
+* **Use dynamic fragments:** Resolve which fragment to inject at runtime per recipient, based on profile attributes, dataset lookups, or context data. [Learn how to use dynamic fragments](dynamic-fragments.md)
 
 
 >[!NOTE]

@@ -1,0 +1,9 @@
+email,customer_id,first_name,last_name,loyalty_tier,last_purchase_date,offer_code
+jane.doe@example.com,CUST-10001,Jane,Doe,Gold,2026-04-15,SPRING-20
+john.smith@example.com,CUST-10002,John,Smith,Silver,2026-03-22,SPRING-15
+maria.garcia@example.com,CUST-10003,Maria,Garcia,Gold,2026-05-01,SPRING-20
+alex.chen@example.com,CUST-10004,Alex,Chen,Bronze,2026-02-10,SPRING-10
+samira.khan@example.com,CUST-10005,Samira,Khan,Silver,2026-04-28,SPRING-15
+lucas.martin@example.com,CUST-10006,Lucas,Martin,Gold,2026-03-05,SPRING-20
+emma.wilson@example.com,CUST-10007,Emma,Wilson,Bronze,2026-01-18,SPRING-10
+noah.brown@example.com,CUST-10008,Noah,Brown,Silver,2026-05-12,SPRING-15

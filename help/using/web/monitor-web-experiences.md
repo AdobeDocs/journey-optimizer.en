@@ -50,6 +50,11 @@ To further improve your web experience monitoring, you can also track the clicks
 
 ## Use click tracking {#use-click-tracking}
 
+>[!CONTEXTUALHELP]
+>id="ajo_web_designer_click_tracking"
+>title="Use click tracking"
+>abstract="Track clicks on any element of your web page to monitor user interactions. Select an element, choose **Click track element** from the contextual menu, and add a meaningful label. The tracked data appears in your web reports, helping you understand how users engage with your content."
+
 The web designer allows you to select any element of your website and track the clicks on that element.
 
 This information can be useful to improve your website users' experience. For example, if the [web reports](../reports/campaign-global-report-cja-web.md) show that many users click an element that is not actually clickable, you may want to add a link to that element.

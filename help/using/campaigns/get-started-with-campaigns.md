@@ -200,6 +200,10 @@ Before working with campaigns, make sure you have the following in place:
 
 * **Audiences** - Audiences must be available in Adobe Experience Platform before creating campaigns. [Get started with audiences →](../audience/about-audiences.md)
 
+    >[!NOTE]
+    >
+    >Every profile engaged by a campaign counts toward your organization's **Engageable Profiles** license metric (rolling 12-month window, counted once per sandbox). Activating a campaign to a large or new audience can cause a significant increase in this count. [Monitor your Engageable Profiles count](../audience/license-usage.md)
+
 * **Channel configurations** - Channel configurations (presets) must be created and available for the channels you want to use. [Set up channel configurations →](../configuration/channel-surfaces.md)
 
 * **Permissions** - You need appropriate permissions based on the campaign type. Contact your administrator if you cannot access campaign functionalities. [Learn about built-in roles →](../administration/ootb-product-profiles.md)
