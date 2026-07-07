@@ -62,8 +62,10 @@ Adobe Journey Optimizer enables marketers to control open tracking (i.e., the 1x
 
 To disable open tracking for a specific email, uncheck the **[!UICONTROL Email opens]** option when creating your message. When disabled, the option prevents open tracking data from being collected for that delivery. For organizations sending to French subscribers, review open tracking settings for all active journeys and campaigns before the enforcement date.
 
-<!-- EDITORIAL NOTE – ENGINEERING CONFIRMATION NEEDED before publish:
-Clarify whether unchecking "Email opens" fully removes the 1x1 tracking pixel from the delivered HTML, or whether the pixel is still present in the HTML but open data is suppressed at the data processing layer only. The current wording ("prevents open tracking data from being collected") is intentionally neutral. If the pixel is removed: update to state this explicitly. If the pixel remains but data is not processed: reword to make that distinction clear, to avoid misleading customers seeking CNIL compliance. -->
+<!--
+EDITORIAL NOTE – ENGINEERING CONFIRMATION NEEDED before publish:
+Clarify whether unchecking "Email opens" fully removes the 1x1 tracking pixel from the delivered HTML, or whether the pixel is still present in the HTML but open data is suppressed at the data processing layer only. The current wording ("prevents open tracking data from being collected") is intentionally neutral. If the pixel is removed: update to state this explicitly. If the pixel remains but data is not processed: reword to make that distinction clear, to avoid misleading customers seeking CNIL compliance.
+-->
 
 [Learn how to track your messages](../email/message-tracking.md)
 
@@ -130,8 +132,10 @@ Adobe Journey Optimizer automatically manages a suppression list that includes e
 
 The Journey Optimizer Suppression REST API provides additional programmatic control over outgoing messages, enabling organizations to manage suppression and allowlist behavior via API.
 
-<!-- EDITORIAL NOTE – ENGINEERING CONFIRMATION NEEDED before publish:
-AJO has no native equivalent of Campaign v8's "lastPixelRefusalDate" field or re-solicitation typology rule. If re-solicitation governance for pixel consent refusal is required, customers would likely need to: (a) create a custom XDM date field to capture the pixel refusal date, and (b) build an AEP audience that filters out profiles where that date falls within the last six months, then use that audience as a suppression filter in campaigns/journeys. Confirm with Engineering: (1) whether this guidance should be included in this article, and (2) whether any native AJO improvements are planned in this area. -->
+<!--
+EDITORIAL NOTE – ENGINEERING CONFIRMATION NEEDED before publish:
+AJO has no native equivalent of Campaign v8's "lastPixelRefusalDate" field or re-solicitation typology rule. If re-solicitation governance for pixel consent refusal is required, customers would likely need to: (a) create a custom XDM date field to capture the pixel refusal date, and (b) build an AEP audience that filters out profiles where that date falls within the last six months, then use that audience as a suppression filter in campaigns/journeys. Confirm with Engineering: (1) whether this guidance should be included in this article, and (2) whether any native AJO improvements are planned in this area.
+-->
 
 ### Reporting {#reporting}
 
