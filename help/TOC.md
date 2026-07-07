@@ -25,6 +25,7 @@ solution: Journey Optimizer
   + [Documentation updates](using/rn/documentation-updates.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
   + {hide-from-toc} [Migrate batch audiences from Audience Qualification](using/building-journeys/aq-batch-audiences-migration.md)
+  + {hide-from-toc} [CNIL guidance on email tracking pixels](using/privacy/cnil-pixel-tracking.md)
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
