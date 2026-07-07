@@ -72,6 +72,12 @@ Start by defining the decision item's standard and custom attributes :
 
     ![Decision item creation screen with custom attributes section](assets/item-custom-attributes.png){width="80%"}
 
+1. For any custom attribute defined with the **[!UICONTROL Decisioning Content]** type in the catalog schema, click the personalization editor icon next to the field to open the expression editor, where you can write code and add attribute references using handlebar syntax (e.g., `{{profile.person.name.firstName}}`).
+
+    This enables you to define a value evaluated at delivery time using profile, context, journey, and audience data, and lets a single decision item serve tailored content to different profiles without duplication. [Learn more on adding personalization](../personalization/personalization-build-expressions.md)
+
+    ![Decision item creation screen with personalization editor icon](assets/item-custom-attribute-personalization.png){width="80%"}
+
 1. Add fragments to your decision item to enrich its content. Two types of fragments are supported:
 
     * **Journey Optimizer content fragments** — Use reusable expression fragments created in Journey Optimizer to display different contents depending on context, for example across several mobile device models. You can leverage these fragments in your decision policies across all channels where Decisioning is available (code-based experience, Email, Push, SMS, and journeys). [Learn how](fragments-decision-policies.md#ajo-fragments)
@@ -86,8 +92,6 @@ Start by defining the decision item's standard and custom attributes :
 
         For prerequisites and guardrails, refer to [Use AEM Content Fragments with Experience Decisioning](../integrations/aem-fragments.md#aem-decisioning).
 
-1. Add personalization attributes (optional). In the **[!UICONTROL Personalization Attributes]** section, define attribute values evaluated at delivery time using profile, context, journey, and audience data — so a single decision item can serve tailored content to different profiles without duplication. [Learn more](#personalization-attributes)
-
 1. Once the decision item's attributes are defined, click **[!UICONTROL Next]**.
 
 ## Add personalization attributes {#personalization-attributes}
@@ -99,11 +103,11 @@ Start by defining the decision item's standard and custom attributes :
 
 Unlike standard and custom attributes — which hold static values — personalization attributes are resolved at runtime for each individual profile. This lets you manage fewer, more flexible decision items while still delivering highly relevant content.
 
-To add a personalization attribute:
+Personalization attributes are based on custom attribute fields defined as **[!UICONTROL Decisioning Content]** type in the catalog schema. To configure and use them:
 
-1. In the **[!UICONTROL Personalization Attributes]** section of the item creation screen, click **[!UICONTROL Add attribute]**.
-1. Use the personalization editor to build the attribute value. You can type a static string or insert tokens using handlebar syntax (e.g., `{{profile.person.name.firstName}}`).
-1. Reference any of the following data sources:
+1. In the offer schema, create a new field and select **[!UICONTROL Decisioning Content]** under **[!UICONTROL Type]**. Fill in all other required properties, then click **[!UICONTROL Save]**. [Learn how to edit the catalog schema](catalogs.md)
+
+1. In offer creation, locate the newly created field in the **[!UICONTROL Custom Attributes]** section. Click the personalization editor icon next to the field to open the expression editor, where you can write code and add attribute references using handlebar syntax (e.g., `{{profile.person.name.firstName}}`). Reference any of the following data sources:
 
    * **Profile attributes** — Data stored in the profile, such as first name or loyalty tier.
    * **Context data** — Data passed at request time, such as event payload or cart contents.
