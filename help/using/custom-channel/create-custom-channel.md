@@ -24,7 +24,7 @@ The **Channel Builder** section is the central interface for defining new custom
 
 >[!IMPORTANT]
 >
->To access the Channel Builder, create and manage custom channels, you must have the **View custom channel** and **Manage custom channel** permissions granted. [Learn more](../administration/high-low-permissions.md)
+>To access the Channel Builder, create and manage custom channels, you must have the **View custom channels** and **Manage custom channels** permissions granted. <!--[Learn more](../administration/high-low-permissions.md)--> Learn how to manage permissions in [this section](../administration/permissions.md).
 
 ## Access and manage custom channels {#access-channel-builder}
 
