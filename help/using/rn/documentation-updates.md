@@ -23,6 +23,12 @@ subfeature_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## July 2026 {#july-2026}
+
+* A note has been added to the **Journey arbitration ranking formulas** page to specify that ranking formulas are only available to organizations that have purchased the **Decisioning** add-on offering. [Read more](../conflict-prioritization/journey-ranking-formulas.md)
+
+* A new **Dynamic fragments** page is now available. It documents how to use dynamic fragment resolution in [!DNL Journey Optimizer] to select which published fragment is injected into a message at runtime, based on profile attributes, dataset lookups, or context data passed at send time. [Read more](../content-management/dynamic-fragments.md)
+
 ## June 2026 {#june-2026}
 
 * The **Check & send a direct mail message** page has been updated to clarify Direct Mail export timing and batching behavior, including the fixed 4-hour UTC export schedule, why multiple files can be generated in a single day, when **[!UICONTROL Update profile]** executes in journeys, and recommendations for one-file-per-day scenarios. [Read more](../direct-mail/test-send-direct-mail.md#dm-export-timing)

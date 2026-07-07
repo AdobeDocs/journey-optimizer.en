@@ -25,6 +25,7 @@ solution: Journey Optimizer
   + [Documentation updates](using/rn/documentation-updates.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
   + {hide-from-toc} [Migrate batch audiences from Audience Qualification](using/building-journeys/aq-batch-audiences-migration.md)
+  + {hide-from-toc} [CNIL guidance on email tracking pixels](using/privacy/cnil-pixel-tracking.md)
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
@@ -517,6 +518,7 @@ solution: Journey Optimizer
     + [Create a fragment](using/content-management/create-fragments.md)
     + [Save existing content as fragment](using/content-management/save-fragments.md)
     + [Customizable fragments](using/content-management/customizable-fragments.md)
+    + [Dynamic fragments](using/content-management/dynamic-fragments.md)
     + [Manage fragments](using/content-management/manage-fragments.md)
     + {hide-from-toc} [Add contextual attributes to published fragments](using/content-management/manage-fragments-contextual-attributes.md)
   + Dynamic content {#dynamic} 
