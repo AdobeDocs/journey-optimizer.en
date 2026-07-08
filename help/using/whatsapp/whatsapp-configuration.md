@@ -142,6 +142,8 @@ Once your WhatsApp API credentials have been successfully created, you can now c
 
 Webhooks act as the communication bridge between Meta's WhatsApp Business Platform and Adobe Journey Optimizer, allowing you to receive real-time notifications about message events and user interactions.
 
+Note that Meta allows only one webhook, callback URL and Verify Token, per WhatsApp Business Account, even across multiple sandboxes or WhatsApp credentials. **Feedback events** (Sent, Delivered, Read, Error, button click) are still captured correctly in every sandbox. **Inbound events** (replies, opt-in/opt-out/help keywords) are only received in the single sandbox where the webhook is registered, register it against your **production sandbox** to receive inbound events there.
+
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL WhatsApp Webhooks]** menu under **[!UICONTROL WhatsApp settings]**, and click the **[!UICONTROL Create Webhook]** button.
 
     ![](assets/webhook-1.png)
