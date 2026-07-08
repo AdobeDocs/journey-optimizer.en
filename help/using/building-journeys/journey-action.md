@@ -67,7 +67,7 @@ Use the **Action** activity to:
 
 * Configure any built-in channel action from a single, streamlined interface.
 * Combine several inbound experiences into one [multi-action group](#multi-action).
-* Add multiple outbound channels to a single action and use [channel optimization](channel-optimization.md) to automatically select the best channel per customer.
+* Add multiple outbound channels to a single action and use [channel optimization](channel-optimization.md) to automatically select the best channel per customer (Limited Availability).
 * Apply [optimization](../content-management/gs-message-optimization.md), [multilingual content](../content-management/multilingual-gs.md), and channel-specific settings to any action.
 
 >[!NOTE]
