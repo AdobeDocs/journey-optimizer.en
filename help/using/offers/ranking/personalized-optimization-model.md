@@ -131,7 +131,7 @@ The contextual bandit is a second personalized arm that also predicts the best o
 
 ### New offer booster (non-personalized arm) {#new-offer-booster}
 
-The new offer booster is a non-personalized arm that makes optimistic assumptions about the performance of new offers — those with few recorded impression events within the model lookback period. This gives promising new offers the early exposure they need to prove themselves, addressing the cold-start issue for new offers.
+The new offer booster is an overall-winner Thompson Sampling bandit (non-personalized) that makes optimistic assumptions about the performance of new offers — those with few recorded impression events within the model lookback period. This gives promising new offers the early exposure they need to prove themselves, addressing a known cold-start shortcoming in which the model otherwise struggled to direct enough traffic to new or high-performing but restrictively eligible offers.
 
 * As true impression and conversion data is collected, each offer's estimated performance quickly approaches its true underlying performance, and the impact of the optimistic assumptions falls to near zero.
 * When no offers are relatively new — for example, when all offers have a similar number of impressions, or all have more than 1,000 impressions — the optimistic effect is near zero and this arm behaves, in effect, as a non-personalized overall-winner model.
@@ -140,7 +140,7 @@ The new offer booster is a non-personalized arm that makes optimistic assumption
 
 ### How traffic is allocated across the arms {#traffic-allocation}
 
-At initialization, no model has trained yet, so 100% of traffic goes to the uniform random baseline. After the first successful training run, each arm receives a minimum traffic floor (5%), and the supervisory bandit allocates the remaining traffic based on observed performance. As the model trains across successive rounds, traffic converges toward the highest-performing arms with a maximum possible allocation of 85% traffic.
+At initialization, no model has trained yet, so 100% of traffic goes to the uniform random baseline — the only arm with a learned distribution to sample from. After the first successful training run, each arm receives a minimum traffic floor (5%), and the supervisory bandit allocates the remaining traffic based on observed performance. As the model trains across successive rounds, traffic converges toward the highest-performing arms with a maximum possible allocation of 85% traffic.
 
 ![Traffic allocation across the four ensemble arms over successive training rounds](../assets/perso-ranking-traffic-allocation.png)
 
@@ -151,7 +151,7 @@ At initialization, no model has trained yet, so 100% of traffic goes to the unif
 In order to maximize the advantage of using personalized optimization, there are some key assumptions and limitations to be aware of.
 
 * **Offers are different enough so that users will have different preferences among the offers in consideration**. If offers are too similar, a resulting model will have less impact as the responses are seemingly random.
-For example if a bank has two credit cards offers with the only difference being color, then it may not matter which card is recommended, but if each card has different terms, this provides rationale for why certain customers would choose one and provide enough difference between offers to build a more impactful model.
+For example, if a bank has two credit cards offers with the only difference being color, then it may not matter which card is recommended, but if each card has different terms, this provides rationale for why certain customers would choose one and provide enough difference between offers to build a more impactful model.
 * **User traffic composition is stable**. If user traffic composition changes dramatically during model training and predicting, model performance could degrade. For example, suppose in model training phase, only data for users in audience A is available, but the trained model is used to generate predictions for users in audience B, then model performance could be impacted.
 * **Offers performances do not change dramatically over a short period of time** as this model updates weekly and changes to performance are conveyed as the model updates. For example, a product was very popular before, but a public report identifies the product to be harmful to our health, and this product becomes unpopular extremely fast. In this scenario, the model could continue to predict this product until the model updates with changes in user behavior.
 
