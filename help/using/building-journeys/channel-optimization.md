@@ -56,11 +56,11 @@ Channel optimization lets you add multiple outbound channels (Email, Push, SMS) 
 
 * **Quiet hours**: All channels within a single channel optimization action must share the same quiet hours rule. If different quiet hours settings are required per channel, create separate journey actions instead of combining channels into a single action. In campaigns, the form validates that the same quiet hours rule is applied to all actions.
 
-* **Send-Time Optimization incompatibility**: Send-Time Optimization (STO) and channel optimization cannot be used together — choose one or the other. The UI prevents enabling both features simultaneously on the same action.
+* **Send-Time Optimization incompatibility**: Currently [Send-Time Optimization](send-time-optimization.md) (STO) and channel optimization cannot be used together — choose one or the other. The UI prevents enabling both features simultaneously on the same action.
 
 * **Reaction events**: Reaction events on the journey canvas currently reference only the first channel in a multi-channel action. Support for selecting any valid reaction event when multiple channels are present is planned for GA.
 
-## Configure channel optimization in a journey {#configure}
+## Use channel optimization in a journey {#configure}
 
 To add multiple outbound channels with channel optimization to a journey action, follow the steps below.
 
@@ -94,11 +94,11 @@ To add multiple outbound channels with channel optimization to a journey action,
 
 ## Optimization modes {#optimization-modes}
 
-Three modes are available to determine which channel to use for each customer.
+Channel optimization supports three modes, each using a different method to select the best channel for each customer at send time.
 
 ### Manual ranking {#manual-ranking}
 
-You define the preferred channel order directly in the journey action. Journey Optimizer delivers through the first channel in your list that the customer is opted into and under frequency cap.
+You define the preferred channel order directly in the journey action. Journey Optimizer delivers through the first channel in your list that the customer is opted into and is not frequency-capped, then falls back to the next channel if needed.
 
 ![Manual ranking channel optimization](assets/journey-channel-optimization-manual.png){width="90%"}
 
