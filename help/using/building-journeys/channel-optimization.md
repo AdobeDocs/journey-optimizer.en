@@ -46,6 +46,8 @@ topic_v2:
 
 Channel optimization lets you add multiple outbound channels (Email, Push, SMS) to a single journey action and have Journey Optimizer automatically select the best one for each customer at send time. Instead of choosing one channel upfront or messaging customers across all channels at once, the system picks the highest-ranked channel each customer is opted into and falls back gracefully when that channel is unavailable.
 
+➡️ [Learn more about channel optimization in this video](#video)
+
 ## Guardrails and limitations {#limitations}
 
 * **Supported channels**: Only native Email, Push, and SMS (mobile messaging) channels are supported. Other outbound channels such as WhatsApp are not supported. Channel optimization requires the use of AJO's native email, push, and mobile messaging capabilities; execution through custom actions is not supported.
@@ -54,7 +56,7 @@ Channel optimization lets you add multiple outbound channels (Email, Push, SMS) 
 
 * **Click tracking required for AI ranking**: When using AI model-based ranking, AJO click tracking must be enabled for all configured channels. The model relies on click data to compute propensity scores; if tracking is disabled, the AI ranking mode cannot function correctly.
 
-* **Quiet hours**: All channels within a single channel optimization action must share the same quiet hours rule. If different quiet hours settings are required per channel, create separate journey actions instead of combining channels into a single action. In campaigns, the form validates that the same quiet hours rule is applied to all actions.
+* **Quiet hours**: All channels within a single channel optimization action must share the same quiet hours rule. If different quiet hours settings are required per channel, create separate journey actions instead of combining channels into a single action. <!--In campaigns, the form validates that the same quiet hours rule is applied to all actions.-->
 
 * **Send-Time Optimization incompatibility**: Currently [Send-Time Optimization](send-time-optimization.md) (STO) and channel optimization cannot be used together — choose one or the other. The UI prevents enabling both features simultaneously on the same action.
 
@@ -92,7 +94,12 @@ To add multiple outbound channels with channel optimization to a journey action,
 
 1. Save and publish your journey.
 
-## Optimization modes {#optimization-modes}
+## Set the channel optimization method {#optimization-modes}
+
+>[!CONTEXTUALHELP]
+>id="ajo_channel_optimization_method"
+>title="Define how channel selection works"
+>abstract="The customer's first available channel, based on the selected prioritization method, is used for this action. Availability is determined by the customer's subscription preferences and marketing consent rules for the selected channel configurations, as well as any business rules — such as frequency capping — configured for the campaign or journey."
 
 Channel optimization supports three modes, each using a different method to select the best channel for each customer at send time.
 
@@ -134,6 +141,12 @@ Regardless of the optimization mode, Journey Optimizer falls back to the next av
 * The customer's profile preference or AI model score for that channel is not populated.
 
 Under **manual ranking** and **customer preference** modes, fallback follows the marketer's configured channel priority list. Under **AI model-based ranking**, fallback selects a random available channel.
+
+## How-to video {#video}
+
+Learn how Adobe Journey Optimizer's channel optimization feature helps you reach customers on the most effective channel using manual priority, profile attributes, or Adobe's AI model.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3492132?quality=12)
 
 <!--
 **Related topics**
