@@ -56,6 +56,8 @@ The [!DNL Adobe Journey Optimizer] MCP server lets you inspect, summarize, and t
 * **Spot problems early** — Surface stopped campaigns, orphaned drafts, and channel configuration issues the moment you ask, so your team can act fast.
 * **Collaborate around live data** — Marketers, campaign managers, and stakeholders can all query the same live [!DNL Adobe Journey Optimizer] data through their AI assistant, making it easier to align, decide, and move together.
 * **Audit your orchestration portfolio** — Review the full status of campaigns without parsing JSON or jumping across product screens.
+* **Verify channel configuration details** — Check sender domains, unsubscribe settings, and IP pools before using a channel configuration in a journey or campaign.
+* **Confirm governance policies** — See which marketing actions and governance policies are attached to a channel configuration.
 
 ## Available tools {#mcp-tools}
 
@@ -67,7 +69,6 @@ The following tools are exposed by the [!DNL Adobe Journey Optimizer] MCP server
 |---|---|
 | **List Campaigns** | Browse your [!DNL Adobe Journey Optimizer] marketing campaigns. Supports filtering by status (DRAFT, LIVE, STOPPED, COMPLETED). |
 | **Get Campaign** | Fetch full details and configuration for a specific campaign by ID, including audience targeting, schedule, channel, and content settings. |
-| **List Channel Configurations** | View surface presets and branding settings for email, SMS, push, or WhatsApp channels. |
 
 **Journey tools**
 
@@ -76,6 +77,16 @@ The following tools are exposed by the [!DNL Adobe Journey Optimizer] MCP server
 | **Get All Journeys** | Browse all the journeys in your [!DNL Adobe Journey Optimizer] sandbox. |
 | **Get Journey** | Fetch full details for a specific journey by ID, including its branching, conditions, and actions. |
 | **Visualize your journeys** | Render your journeys with interactive tools so you can explore their structure and flow visually. |
+
+**Channel configuration tools**
+
+| Tool | Description |
+|---|---|
+| **List Channel Configurations** | Filter channel configurations by name, status (draft, active, archived, deactivated), or channel type across all AJO channels: Email, Mobile message, Push notification, WhatsApp, Direct Mail, In-App messaging, Web, Code-based experience, Content cards, LINE, Live Activity. |
+| **Get Channel Configuration** | Retrieve full configuration details for a specific channel configuration, including sender/reply-to addresses, subdomains, IP pools, and unsubscribe settings. |
+| **List Configuration Resources** | List supporting resources referenced by channel configurations, such as push credentials, email subdomains, IP pools, SMS credentials, WhatsApp credentials, direct mail routing, LINE channel settings, and Live Activity registry. |
+| **Get Configuration Resource** | Retrieve full details for a single configuration resource by type and ID. |
+| **List Marketing Actions** | List available marketing actions for data governance policy enforcement. |
 
 >[!NOTE]
 >
@@ -93,8 +104,9 @@ The following examples show how to interact with the [!DNL Adobe Journey Optimiz
 | **Audience & targeting** | What audience is targeted in campaign/journey [ID]? / What eligibility rules are set on campaign/journey [ID]? |
 | **Schedule & timing** | When is campaign [ID] scheduled to run? / Is campaign [ID] a one-time send or recurring? |
 | **Troubleshooting** | Why might campaign [ID] not be sending? / Review the setup of campaign [ID] for any issues. |
-| **Channel configuration** | What channel presets are available in my sandbox? / Show me all my email channel configurations. |
+| **Channel configuration** | What channel presets are available in my sandbox? / Show me all my email channel configurations. / Do I have any WhatsApp configs set up? / What sender address and reply-to are configured for my marketing email config? |
 | **Channel audit** | Which channel configurations are missing or incomplete? / How many channel configurations do I have across all channels? |
+| **Governance** | What marketing actions are available in my sandbox? |
 
 ## Prerequisites {#mcp-prerequisites}
 
@@ -131,7 +143,7 @@ The [!DNL Adobe Journey Optimizer] MCP server is currently available for **Claud
 
 +++What [!DNL Adobe Journey Optimizer] objects can I access via MCP?
 
-You can access campaigns, journeys, offers and sandbox information. Operations are read-only (retrieve APIs); write operations are not supported in the current release.
+You can access campaigns, journeys, offers, channel configurations, configuration resources, and sandbox information. Operations are read-only (retrieve APIs); write operations are not supported in the current release.
 +++
 
 +++Do I need developer access to use the [!DNL Adobe Journey Optimizer] MCP server?
