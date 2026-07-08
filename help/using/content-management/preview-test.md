@@ -62,6 +62,8 @@ Journey Optimizer provides two experiences to test your content:
 
     ➡️ [Simulate content variations](../test-approve/simulate-sample-input.md)
 
+For API-triggered and Action (scheduled) campaigns, you can also send proofs programmatically using the [Simulations API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"}. This is not supported for Orchestrated campaigns.
+
 ## Must-read
 
 * **Required permissions** - You need to have the **[!DNL Manage Simulate Content]** permission included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager).

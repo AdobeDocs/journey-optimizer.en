@@ -25,6 +25,8 @@ You can send proofs using either simulation method:
 * Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to send proofs with test profiles.
 * Click **[!UICONTROL Simulate content]** to send proofs for content variations created with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md#proofs)
 
+For API-triggered and Action (scheduled) campaigns, you can also send proofs programmatically using the [Simulations API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"}. This is not supported for Orchestrated campaigns.
+
 ## Must-read {#must-read}
 
 **Frequency capping rules** - All existing frequency capping rules apply to proofs. If you have set [frequency capping rules](../conflict-prioritization/channel-capping.md) (e.g., maximum sends per profile), these limits also apply when sending proofs. If a test profile has already reached the frequency cap limit, proofs will show as finished but no email will be delivered. For repeated testing, consider using unique test profiles or adjusting frequency caps for proofing scenarios as needed.

@@ -153,6 +153,10 @@ The **[!UICONTROL Action overview]** table serves as a comprehensive dashboard, 
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your actions.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
 * **[!UICONTROL Delivered]**:  Number of actions successfully sent, in relation to the total number of sent actions.
 
 +++

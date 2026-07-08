@@ -56,7 +56,7 @@ topic_v2:
 
 Audiences are collections of people who share similar behaviors and/or characteristics. They are centrally configured and maintained on Adobe Experience Platform using the Adobe Experience Platform Segmentation Service and readily accessible within Journey Optimizer to be activated in your journeys and campaigns. 
 
-Adobe Journey Optimizer provides robust tools for creating, managing, and enriching audiences to enhance marketing efforts. When combined with Adobe Real-Time Customer Data Platform, Journey Optimizer lets you layer in audiences for more complex segmentation and bidirectionally share audiences with other Adobe Experience Cloud solutions.
+Adobe Journey Optimizer provides robust tools for creating, managing, and enriching audiences to enhance marketing efforts. When combined with Adobe Real-Time Customer Data Platform, Journey Optimizer lets you layer in audiences for more complex segmentation and bidirectionally share audiences with other [!DNL Adobe CX Enterprise] solutions.
 
 As real-time data streams or batch uploads occur, datasets update, and Journey Optimizer dynamically moves individuals in and out of audiences and journeys in real time.
 
@@ -103,6 +103,10 @@ Audiences can be generated using different methods:
 ## Target audiences in journeys and campaigns {#target-audiences}
 
 Once your audiences are ready, you can select them when building journeys or creating campaigns, enabling you to reach the right people at the right time with relevant messages. [Learn more about Audience activation in Journey Optimizer](target-audiences.md).
+
+>[!NOTE]
+>
+>Profiles engaged through an audience activation — whether in a journey, campaign, or decisioning activity — count toward your organization's **Engageable Profiles** license metric. Each profile is counted once per sandbox over a rolling 12-month window. [Monitor your Engageable Profiles count](license-usage.md)
 
 ## How-to video {#video}
 

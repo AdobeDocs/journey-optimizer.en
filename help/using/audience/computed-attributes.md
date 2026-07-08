@@ -99,7 +99,11 @@ Since computed attributes are profile attribute fields created on your profile u
 
 ![](assets/computed-attributes-ajo.png)
 
-+++AI Assistant — Page context
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
 - **TL;DR:** Learn how to create computed attributes on Adobe Experience Platform and leverage them in Journey Optimizer for segmentation, personalization, and journey logic.
 

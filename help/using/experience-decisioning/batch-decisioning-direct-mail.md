@@ -36,7 +36,7 @@ Batch decisioning in direct mail supports two main use cases:
 1. **Add a decision policy**:
 
     1. Click **[!UICONTROL Edit content]** to configure the extraction file.
-    1. Add a column to the extraction file and open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
+    1. Add a column to the extraction file and open the personalization editor using the ![](assets/do-not-localize/editor-icon.svg) icon.
 
         ![](assets/decision-policy-dm-add.png)
 
