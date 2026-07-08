@@ -103,11 +103,15 @@ For Offer A, conversion is more likely when both signals agree (both high or bot
 
 ![](../assets/perso-ranking-binary-response.png)
 
+*Figure 1: For Offer A, conversion is more likely when both signals agree (both high or both low). For Offer B, conversion is more likely when the email was opened, regardless of loyalty tier. In the highlighted mismatch row, Offer A was shown when the signals disagreed and did not convert. Based on the learned pattern, Offer B would be the better recommendation for that customer next time.*
+
 This is the essence of the approach: learning and memorizing historical feature interactions and applying them to generate personalized predictions for each customer.
 
 The model supports optimization of continuous variables (such as revenue and customer lifetime value) in addition to binary variables (such as clicks and conversions). Predicted values for a binary metric such as clicks will always be between 0 and 1. Predicted values for a continuous metric such as order value will always be a number greater than or equal to zero. Ranking scores are normalized to ensure consistent behavior across both metric types when used in formulas or comparisons.
 
 ![](../assets/perso-ranking-continuous-response.png)
+
+*Figure 2: Predicted revenue for two offers across four customer segments. For high-loyalty customers who opened the email, Offer A is expected to drive the most revenue; for low-loyalty customers who opened the email, Offer B is the stronger choice. The model selects the offer with the highest predicted value for each segment rather than applying one rule to all customers.*
 
 ## Ensemble model components {#ensemble}
 
@@ -152,6 +156,8 @@ The new offer booster is a non-personalized arm that makes optimistic assumption
 At initialization, no model has trained yet, so 100% of traffic goes to the uniform random baseline. After the first successful training run, each arm receives a minimum traffic floor (5%), and the supervisory bandit allocates the remaining traffic based on observed performance. As the model trains across successive rounds, traffic converges toward the highest-performing arms with a maximum possible allocation of 85% traffic.
 
 ![](../assets/perso-ranking-traffic-allocation.png)
+
+*Figure 3: A possible traffic allocation trajectory across the four ensemble arms at initialization and across successive training rounds. At initialization, all traffic flows to the random baseline. After each training run, the supervisory Thompson Sampling bandit shifts allocation toward better-performing arms, while maintaining minimum 5% traffic. Actual allocation will vary based on observed arm performance.*
 
 ## Cold-start Problem {#cold-start}
 
