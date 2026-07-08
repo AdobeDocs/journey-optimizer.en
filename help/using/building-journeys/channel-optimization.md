@@ -98,7 +98,7 @@ Once an outbound action is selected in the **[!UICONTROL Actions]** tab, continu
     >
     >Only one action per channel type is supported in a single multi-channel action. For example, you cannot add two separate Email actions with different configurations.
 
-    You can add up to three outbound channels (**[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]**) to a single action.
+    You can add up to three outbound channels (**[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]**) to a single journey action or campaign.
 
 1. In the **[!UICONTROL Channel optimization]** section, set the method to determine how the system selects the best channel for each customer. [Learn more](#optimization-modes)
 
@@ -119,7 +119,7 @@ Channel optimization supports three modes, each using a different method to sele
 
 ### Manual ranking {#manual-ranking}
 
-You define the preferred channel order directly in the journey action. Journey Optimizer delivers through the first channel in your list that the customer is opted into and is not frequency-capped, then falls back to the next channel if needed.
+You define the preferred channel order directly in the action. Journey Optimizer delivers through the first channel in your list that the customer is opted into and is not frequency-capped, then falls back to the next channel if needed.
 
 ![Manual ranking channel optimization](assets/journey-channel-optimization-manual.png){width="90%"}
 
@@ -150,7 +150,7 @@ Use this mode to let AI infer the most effective channel for each customer witho
 Regardless of the optimization mode, Journey Optimizer falls back to the next available channel when the top-ranked channel cannot be used. A channel is considered unavailable when any of the following conditions apply:
 
 * The customer is not opted into the channel.
-* The channel is not configured in the journey action.
+* The channel is not configured in the action.
 * The channel has reached its frequency cap.
 * The customer's profile preference or AI model score for that channel is not populated.
 
