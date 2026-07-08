@@ -46,6 +46,38 @@ topic_v2:
 
 Channel optimization lets you add multiple outbound channels (Email, Push, SMS) to a single journey action and have Journey Optimizer automatically select the best one for each customer at send time. Instead of choosing one channel upfront or messaging customers across all channels at once, the system picks the highest-ranked channel each customer is opted into and falls back gracefully when that channel is unavailable.
 
+## Configure channel optimization in a journey {#configure}
+
+To add multiple outbound channels with channel optimization to a journey action, follow the steps below.
+
+1. Start your journey with an [Event](general-events.md) or a [Read Audience](read-audience.md) activity.
+
+1. From the **[!UICONTROL Actions]** section of the palette, drag and drop an **[!UICONTROL Action]** activity into the canvas.
+
+1. Select an outbound channel (Email, Push, or SMS) and click **[!UICONTROL Add]**.
+
+    ![Add an outbound channel to a journey action](assets/journey-channel-optimization-add-outbound.png){width="60%"}
+
+1. Enter a label for your action and click **[!UICONTROL Configure action]**.
+
+1. In the **[!UICONTROL Action]** tab, select a channel configuration and click **[!UICONTROL Add action]** to select another outbound channel.
+
+    ![Add another outbound channel to a journey action](assets/journey-channel-optimization-add-outbound-action.png){width="1000%"}
+
+    >[!NOTE]
+    >
+    >Only one action per channel type is supported in a single multi-channel action. For example, you cannot add two separate Email actions with different configurations.
+
+    You can add up to three outbound channels (**[!UICONTROL Email]**, **[!UICONTROL Push]**, **[!UICONTROL SMS]**) to a single action.
+
+1. In the **[!UICONTROL Channel optimization]** section, set the method to determine how the system selects the best channel for each customer. [Learn more](#optimization-modes)
+
+    ![Select a channel optimization mode](assets/journey-channel-optimization-modes.png){width="100%"}
+
+1. Set your fallback channel order (for manual ranking and customer preference modes). [  Learn more](#fallback)
+
+1. Save and publish your journey.
+
 ## Optimization modes {#optimization-modes}
 
 Three modes are available to determine which channel to use for each customer.
@@ -54,11 +86,15 @@ Three modes are available to determine which channel to use for each customer.
 
 You define the preferred channel order directly in the journey action. Journey Optimizer delivers through the first channel in your list that the customer is opted into and under frequency cap.
 
+![Manual ranking channel optimization](assets/journey-channel-optimization-manual.png){width="90%"}
+
 Use this mode when you have a clear, consistent channel preference and do not need per-profile personalization.
 
 ### Customer preference {#customer-preference}
 
 Journey Optimizer reads the customer's declared preferred channel from their profile, using the `preferred` attribute in the [Consents and Preferences XDM field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/consents). Supported values are `email`, `push`, and `sms`.
+
+![Customer preference channel optimization](assets/journey-channel-optimization-profile.png){width="90%"}
 
 If the preferred channel is unavailable (not configured, not opted-in, or frequency-capped), Journey Optimizer falls back to the next channel in your configured fallback list.
 
@@ -67,6 +103,8 @@ Use this mode when customers have explicitly stated their preferred communicatio
 ### AI model-based ranking {#ai-ranking}
 
 Journey Optimizer uses a machine learning model that computes a per-channel propensity score for each customer based on their historical engagement (opens, clicks). Scores are stored in the customer's profile and the channel with the highest predicted propensity is selected at send time.
+
+![AI model-based ranking channel optimization](assets/journey-channel-optimization-ai.png){width="90%"}
 
 When a customer has insufficient engagement history, the system falls back to a randomly available channel.
 
@@ -83,26 +121,15 @@ Regardless of the optimization mode, Journey Optimizer falls back to the next av
 
 Under **manual ranking** and **customer preference** modes, fallback follows the marketer's configured channel priority list. Under **AI model-based ranking**, fallback selects a random available channel.
 
-## Configure channel optimization in a journey {#configure}
+## Guardrails and limitations {#limitations}
 
-To add multiple outbound channels with channel optimization to a journey action:
 
-1. Open your journey and drag an **[!UICONTROL Action]** activity onto the canvas.
 
-1. In the configuration panel, expand the **[!UICONTROL Channel optimization]** section and select the optimization mode.
 
-1. Add the outbound channels (Email, Push, SMS) you want to include and configure the content for each.
-
-1. Set your fallback channel order (for manual ranking and customer preference modes).
-
-1. Save and publish your journey.
-
->[!NOTE]
->
->Only one action per channel type is supported in a single multi-channel action. For example, you cannot add two separate Email actions with different configurations.
-
+<!--
 **Related topics**
 
 * [Use the Action activity](journey-action.md)
 * [Send-Time optimization](send-time-optimization.md)
 * [Content optimization](../content-management/gs-message-optimization.md)
+-->

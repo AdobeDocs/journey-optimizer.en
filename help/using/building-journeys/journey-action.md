@@ -67,7 +67,7 @@ Use the **Action** activity to:
 
 * Configure any built-in channel action from a single, streamlined interface.
 * Combine several inbound experiences into one [multi-action group](#multi-action).
-* Add multiple outbound channels to a single action and use [channel optimization](channel-optimization.md) to automatically select the best one per customer.
+* Add multiple outbound channels to a single action and use [channel optimization](channel-optimization.md) to automatically select the best channel per customer.
 * Apply [optimization](../content-management/gs-message-optimization.md), [multilingual content](../content-management/multilingual-gs.md), and channel-specific settings to any action.
 
 >[!NOTE]
@@ -135,7 +135,11 @@ To add a built-in channel action to your journey using the **[!UICONTROL Action]
 
 1. If you selected an inbound channel, you can add multiple actions. [Learn more](#multi-action)
 
-   For outbound channels (Email, Push, SMS), you can add multiple channels and use channel optimization to automatically select the best one per customer. [Learn more](channel-optimization.md)
+1. If you selected an outbound channel (Email, Push, SMS), you can add multiple channels and use channel optimization to automatically select the best channel per customer. [Learn more](channel-optimization.md)
+
+    >[!AVAILABILITY]
+    >
+    >This capability is available in Limited Availability. Contact your Adobe representative to enable it for your organization.
 
 1. Configure your activity according to the selected channel. Detailed configuration guidelines are available in the links below.
    
@@ -303,7 +307,7 @@ To simplify your journey orchestration, you can define several inbound actions i
 
 >[!NOTE]
 >
->This capacity is available for inbound channels. For outbound channels (Email, Push, SMS), use [channel optimization](channel-optimization.md) to add multiple channels and automatically select the best one per customer.
+>This capacity is available for inbound channels. For outbound channels (Email, Push, SMS), use [channel optimization](channel-optimization.md) to add multiple channels and automatically select the best channel per customer.
 
 This capacity enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple journey actions. It makes the deployment of your journey easier and allows for smoother reporting, with all the data consolidated into one single journey.
 
