@@ -101,11 +101,13 @@ Here is a simplified example to illustrate the basic idea behind personalized op
 
 For Offer A, conversion is more likely when both signals agree (both high or both low). For Offer B, conversion is more likely when the email was opened, regardless of loyalty tier. Based on the learned pattern, the model can predict the better offer for each customer based on their signals.
 
+![](../assets/perso-ranking-binary-response.png)
+
 This is the essence of the approach: learning and memorizing historical feature interactions and applying them to generate personalized predictions for each customer.
 
-![](../assets/perso-ranking-schema.png)
-
 The model supports optimization of continuous variables (such as revenue and customer lifetime value) in addition to binary variables (such as clicks and conversions). Predicted values for a binary metric such as clicks will always be between 0 and 1. Predicted values for a continuous metric such as order value will always be a number greater than or equal to zero. Ranking scores are normalized to ensure consistent behavior across both metric types when used in formulas or comparisons.
+
+![](../assets/perso-ranking-continuous-response.png)
 
 ## Ensemble model components {#ensemble}
 
@@ -148,6 +150,8 @@ The new offer booster is a non-personalized arm that makes optimistic assumption
 ## How traffic is allocated across the arms {#traffic-allocation}
 
 At initialization, no model has trained yet, so 100% of traffic goes to the uniform random baseline. After the first successful training run, each arm receives a minimum traffic floor (5%), and the supervisory bandit allocates the remaining traffic based on observed performance. As the model trains across successive rounds, traffic converges toward the highest-performing arms with a maximum possible allocation of 85% traffic.
+
+![](../assets/perso-ranking-traffic-allocation.png)
 
 ## Cold-start Problem {#cold-start}
 
