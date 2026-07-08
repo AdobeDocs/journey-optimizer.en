@@ -54,17 +54,21 @@ Channel optimization lets you add multiple outbound channels (Email, Push, SMS) 
 
 * **AI optimization metric**: The AI model optimizes for engagement (clicks) only. It does not optimize for orders, revenue, or other business metrics. If optimization for orders or revenue is required, a custom model can be trained offline by your data science team and applied via the customer profile attribute feature.
 
-* **Click tracking required for AI ranking**: When using AI model-based ranking, AJO click tracking must be enabled for all configured channels. The model relies on click data to compute propensity scores; if tracking is disabled, the AI ranking mode cannot function correctly.
+* **Click tracking required for AI ranking**: When using AI model-based ranking, click tracking must be enabled for all configured channels. The model relies on click data to compute propensity scores; if tracking is disabled, the AI ranking mode cannot function correctly. [Learn how to enable click tracking in email](../email/message-tracking.md)
 
-* **Quiet hours**: All channels within a single channel optimization action must share the same quiet hours rule. If different quiet hours settings are required per channel, create separate journey actions instead of combining channels into a single action. <!--In campaigns, the form validates that the same quiet hours rule is applied to all actions.-->
+* **Quiet hours**: All channels within a single channel optimization action must share the same quiet hours rule. If different quiet hours settings are required per channel, create separate journey actions instead of combining channels into a single action. In campaigns, the form validates that the same quiet hours rule is applied to all actions.
 
-* **Send-Time Optimization incompatibility**: Currently [Send-Time Optimization](send-time-optimization.md) (STO) and channel optimization cannot be used together — choose one or the other. The UI prevents enabling both features simultaneously on the same action.
+* **Send-Time Optimization incompatibility**: Currently [Send-Time Optimization](send-time-optimization.md) and channel optimization cannot be used together — choose one or the other. The UI prevents enabling both features simultaneously on the same action.
 
 * **Reaction events**: Reaction events on the journey canvas currently reference only the first channel in a multi-channel action. Support for selecting any valid reaction event when multiple channels are present is planned for GA.
 
-## Use channel optimization in a journey {#configure}
+## Use channel optimization in a journey or a campaign {#configure}
 
-To add multiple outbound channels with channel optimization to a journey action, follow the steps below.
+To add multiple outbound channels with channel optimization, follow the steps below.
+
+>[!BEGINTABS]
+
+>[!TAB In a journey]
 
 1. Start your journey with an [Event](general-events.md) or a [Read Audience](read-audience.md) activity.
 
@@ -76,7 +80,17 @@ To add multiple outbound channels with channel optimization to a journey action,
 
 1. Enter a label for your action and click **[!UICONTROL Configure action]**.
 
-1. In the **[!UICONTROL Action]** tab, select a channel configuration and click **[!UICONTROL Add action]** to select another outbound channel.
+>[!TAB In a campaign]
+
+1. [Create an Action campaign](../campaigns/create-campaign.md) and navigate to the **[!UICONTROL Actions]** tab.
+
+1. Click the **[!UICONTROL Add action]** button and select an outbound channel (Email, Push, or SMS).
+
+>[!ENDTABS]
+
+Once an outbound action is selected in the **[!UICONTROL Actions]** tab, continue with the following steps:
+
+1. Select a channel configuration and click **[!UICONTROL Add action]** to select another outbound channel.
 
     ![Add another outbound channel to a journey action](assets/journey-channel-optimization-add-outbound-action.png){width="1000%"}
 
@@ -90,9 +104,9 @@ To add multiple outbound channels with channel optimization to a journey action,
 
     ![Select a channel optimization mode](assets/journey-channel-optimization-modes.png){width="100%"}
 
-1. Set your fallback channel order (for manual ranking and customer preference modes). [  Learn more](#fallback)
+1. Set your fallback channel order (for manual ranking and customer preference modes). [Learn more](#fallback)
 
-1. Save and publish your journey.
+1. Save and publish your journey, or review and activate your campaign.
 
 ## Set the channel optimization method {#optimization-modes}
 
