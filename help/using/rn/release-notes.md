@@ -73,6 +73,12 @@ topic_v2:
 </tbody>
 </table>
 
+### Improvements {#july-26-improvements}
+
+* **AJO MCP Server – channel configuration tools** – The [AJO MCP documentation](../integrations/ajo-mcp.md) has been updated to reflect five new read-only **channel configuration tools** now exposed by the AJO MCP server. A dedicated **Channel Configuration Operations** subsection has been added to the Available Tools section, covering: **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
+
+  Availability date: July 9, 2026
+
 ## June '26 release notes {#june-26-rn}
 
 ### Journeys {#june-26-journeys}
