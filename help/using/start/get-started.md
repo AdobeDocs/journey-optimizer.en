@@ -104,6 +104,8 @@ Journey Optimizer supports a wide range of scenarios — from real-time triggere
 
 To find the capability that fits your goal, see the [Journey Optimizer use cases overview](ajo-use-case-guide.md). For end-to-end, worked examples, browse the [journey use cases library](../building-journeys/jo-use-cases.md).
 
+Not sure whether to use Journeys or Campaigns for your goal? See [Journeys vs Campaigns: choose the right approach](journeys-vs-campaigns.md).
+
 
 ## Availability & Licensing {#availability}
 
@@ -134,4 +136,5 @@ Journey Optimizer is built natively on Adobe Experience Platform, sharing its da
 | Understand how Journey Optimizer integrates with Adobe Experience Platform | [Understanding Journey Optimizer](understanding-ajo.md) |
 | Get started for my specific role | [Roles and responsibilities](quick-start.md) |
 | Explore use cases | [Journey Optimizer use cases overview](ajo-use-case-guide.md) |
+| Decide between Journeys and Campaigns | [Journeys vs Campaigns](journeys-vs-campaigns.md) |
 | See key terminology | [Terminology](terminology.md) |

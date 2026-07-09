@@ -17,6 +17,32 @@ subfeature_v2:
 ---
 # Configure Adobe Experience Manager repository access {#aem-admin-settings}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_aem_content_fragment_configuration"
+>title=""Adobe Experience Manager Configuration"
+>abstract="Connect a sandbox to an Adobe Experience Manager repository by setting author-only or publish access, custom domains, and authentication, so marketers can use Adobe Experience Manager Content Fragments in their journeys and campaigns."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_aem_configure_instance"
+>title="Instance Configuration"
+>abstract="Select the appropriate instance configuration type for your setup. </br>Author only setup: Use content fragments from the AEM author instance. Publish instance configuration and live updates are not supported.</br>Publish instance setup: Configure publish instance settings. Optionally enable "Send token to publish instance" to provide Service Credentials for authentication."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_aem_send_token"
+>title="Send token to publish instance"
+>abstract="When enabled, service credentials are sent to authenticate requests to the publish instance. Enter a valid service credential JSON below."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_aem_service_credential"
+>title="Paste Service Credential JSON"
+>abstract="Paste your Adobe Experience Manager service credential JSON. It will be automatically formatted and validated."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#create-a-technical-account"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_aem_custom_domain"
+>title="Custom domain"
+>abstract="Optional. Provide a custom domain if "your-publish-instance.adobeaemcloud.com" is blocked from fetching content for your organization."
+
 >[!BEGINSHADEBOX]
 
 **On this page:** Learn how administrators connect a sandbox to an Adobe Experience Manager repository, setting author-only or publish access, custom domains, and authentication, so marketers can use AEM Content Fragments in their journeys and campaigns.

@@ -53,6 +53,29 @@ There are two ways to implement decision management with the [Platform Web SDK](
 
 Refer to the Adobe Experience Platform documentation on [decision management](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html#enabling-offer-decisioning) for more information on how to deliver personalized offers using Adobe Experience Platform Web SDK.
 
+### Decision scopes {#decision-scopes}
+
+A decision scope is the Base64 encoded string of a JSON object containing the activity and placement IDs you want the offer decisioning service to use to propose offers.
+
+*Decision scope JSON:*
+
+```json
+{
+  "activityId":"xcore:offer-activity:11cfb1fa93381aca",
+  "placementId":"xcore:offer-placement:1175009612b0100c"
+}
+```
+
+*Decision scope Base64 encoded string:*
+
+```json
+"eyJhY3Rpdml0eUlkIjoieGNvcmU6b2ZmZXItYWN0aXZpdHk6MTFjZmIxZmE5MzM4MWFjYSIsInBsYWNlbWVudElkIjoieGNvcmU6b2ZmZXItcGxhY2VtZW50OjExNzUwMDk2MTJiMDEwMGMifQ=="
+```
+
+>[!TIP]
+>
+>You can copy the decision scope value from the **Activity Overview** page in the UI.
+
 ## Adobe Experience Platform Web SDK {#aep-web-sdk}
 
 Platform Web SDK replaces the following SDKs:
@@ -289,6 +312,99 @@ let offerImageURL = offer['image'];
 document.getElementById("offerDescription").innerHTML = offerDescription;
 document.getElementById('offerImage').src = offerImageURL;
 
+```
+
+### Multiple decisionScopes values {#multiple-decision-scopes}
+
+You can also send multiple decision scopes in a single `sendEvent` call. In this example, the response returns a proposition for each requested scope.
+
+**Example**:
+
+```javascript
+alloy("sendEvent", {
+    "decisionScopes":
+    [
+    "eyJhY3Rpdml0eUlkIjoieGNvcmU6b2ZmZXItYWN0aXZpdHk6MTFjZmIxZmE5MzM4MWFjYSIsInBsYWNlbWVudElkIjoieGNvcmU6b2ZmZXItcGxhY2VtZW50OjExNzUwMDk2MTJiMDEwMGMifQ==",
+    "eyJhY3Rpdml0eUlkIjoieGNvcmU6b2ZmZXItYWN0aXZpdHk6MTIyMjA4YjNhODc0MDU1OCIsInBsYWNlbWVudElkIjoieGNvcmU6b2ZmZXItcGxhY2VtZW50OjEyMjIwNDUyOTUxNGEyYzAifQ=="
+    ]
+});
+```
+
+The response contains one payload entry per resolved scope:
+
+```json
+{
+    "requestId": "94c4f2f1-9218-43ce-afd3-eb0d853c5174",
+    "handle": [
+        {
+            "payload": [
+                {
+                    "id": "a2804dfb-a0ec-4df9-8311-59d3ecdeb642",
+                    "scope": "eyJhY3Rpdml0eUlkIjoieGNvcmU6b2ZmZXItYWN0aXZpdHk6MTFjZmIxZmE5MzM4MTEyMyIsInBsYWNlbWVudElkIjoieGNvcmU6b2ZmZXItcGxhY2VtZW50OjExNzUwMDk2MTJiMDExMjMifQ==",
+                    "activity": {
+                        "id": "xcore:offer-activity:11cfb1fa93381123",
+                        "etag": "1"
+                    },
+                    "placement": {
+                        "id": "xcore:offer-placement:1175009612b01123",
+                        "etag": "3"
+                    },
+                    "items": [
+                        {
+                            "id": "xcore:personalized-offer:11e36d4a22954123",
+                            "schema": "https://ns.adobe.com/experience/offer-management/content-component-text",
+                            "etag": "2",
+                            "data": {
+                                "id": "xcore:personalized-offer:11e36d4a22954123",
+                                "format": "text/text",
+                                "language": [
+                                    "en"
+                                ],
+                                "content": "20% Off on shipping",
+                                "characteristics": {
+                                    "foo2": "bar2"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "a2804dfb-a0ec-4df9-8311-59d3ecdeb642",
+                    "scope": "eyJhY3Rpdml0eUlkIjoieGNvcmU6b2ZmZXItYWN0aXZpdHk6MTFjZmIxZmE5MzM4MWFjYSIsInBsYWNlbWVudElkIjoieGNvcmU6b2ZmZXItcGxhY2VtZW50OjExNzUwMDk2MTJiMDEwMGMifQ==",
+                    "activity": {
+                        "id": "xcore:offer-activity:11cfb1fa93381aca",
+                        "etag": "2"
+                    },
+                    "placement": {
+                        "id": "xcore:offer-placement:1175009612b0100c",
+                        "etag": "1"
+                    },
+                    "items": [
+                        {
+                            "id": "xcore:personalized-offer:11e36d4a2295415d",
+                            "schema": "https://ns.adobe.com/experience/offer-management/content-component-imagelink",
+                            "etag": "1",
+                            "data": {
+                                "id": "xcore:personalized-offer:11e36d4a2295415d",
+                                "format": "image/png",
+                                "language": [
+                                    "en"
+                                ],
+                                "deliveryURL": "https://image.jpeg",
+                                "characteristics": {
+                                    "foo": "bar",
+                                    "foo1": "bar1"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "type": "personalization:decisions",
+            "eventIndex": 0
+        }
+    ]
+}
 ```
 
 <!--

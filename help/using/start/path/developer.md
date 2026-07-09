@@ -322,6 +322,11 @@ Beyond messaging and capping, Journey Optimizer exposes REST endpoints for suppr
 | Create and manage content templates and fragments from an external pipeline | [Content API](https://developer.adobe.com/journey-optimizer-apis/references/content){target="_blank"} · [Templates](../../content-management/content-templates.md) · [Fragments](../../content-management/fragments.md) |
 | Retrieve and filter Action campaigns | [Campaigns API](https://developer.adobe.com/journey-optimizer-apis/references/campaigns-retrieve){target="_blank"} |
 | Preview campaigns and send proofs programmatically | [Simulations API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"} |
+
+>[!NOTE]
+>
+>The Simulations API is available for API-triggered and Action (scheduled) campaigns. It is **not supported for Orchestrated campaigns**: use the preview and proof workflow in the Orchestrated campaigns user interface for those instead.
+
 | Validate datasets and trigger Orchestrated campaign execution | [Dataset validation](https://developer.adobe.com/journey-optimizer-apis/references/orchestrated-campaign-dataset){target="_blank"} · [Trigger](https://developer.adobe.com/journey-optimizer-apis/references/oc-trigger){target="_blank"} · [Enable datasets](../../orchestrated/manual-schema.md) |
 
 ## Additional resources {#additional-resources}

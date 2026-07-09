@@ -28,7 +28,7 @@ subfeature_v2: []
 
 ## Journey dashboard {#dashboard-jo}
 
-In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tabs are available: **[!UICONTROL Overview]** and **[!UICONTROL Browse]**.
+In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Three dedicated tabs are available: **[!UICONTROL Overview]** (dashboard), **[!UICONTROL Browse]** (list and calendar), and **[!UICONTROL Folders view]** (organize journeys in folders).
 
 ### Journeys overview
 
@@ -47,7 +47,7 @@ The **[!UICONTROL Overview]** tab displays a dashboard with key metrics related 
 
 ### Journeys list
 
-The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can search for journeys, use filters and perform basic actions on each element. For example, you can duplicate or delete an item. 
+The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can search for journeys, use filters, and perform basic actions on each element. For example, you can duplicate or delete an item. 
 
 ![journey dashboard highlighting the Browse tab](assets/journeys-browse.png)  
  
@@ -103,6 +103,15 @@ To navigate in your Journeys calendar:
 
     ![campaign list with the information pane opened](assets/journey-calendar-4.png)
 
+### Folders view {#journeys-folders}
+
+Open the journeys folder view with the **[!UICONTROL Show folders]** icon on the journey list, or use the **[!UICONTROL Folders view]** tab. [Learn how to work with folders](../start/search-filter-categorize.md#organize-folders)
+
+![](assets/folders-view-journeys.png)
+
+>[!AVAILABILITY]
+>
+>Folders for journeys are in limited availability. For current release status, see the [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Filter your journeys {#journey-filter}
 

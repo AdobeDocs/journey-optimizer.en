@@ -230,6 +230,12 @@ To customize the fields, follow these steps:
 
 An example showing how to add editable fields into an expression fragments and override their values when creating an email is available in [this section](../content-management/customizable-fragments.md#example).
 
+## Use dynamic fragment resolution {#dynamic-resolution}
+
+Instead of statically embedding a fragment ID at design time, you can resolve the fragment ID dynamically at runtime per recipient. This allows different profiles to receive entirely different content blocks within the same campaign or journey, based on profile attributes, dataset lookups, or context data.
+
+[Learn how to use dynamic fragments](../content-management/dynamic-fragments.md)
+
 ## Break inheritance {#break-inheritance}
 
 When adding a fragment ID to the personalization editor, the changes made to the original expression fragment are synchronized.

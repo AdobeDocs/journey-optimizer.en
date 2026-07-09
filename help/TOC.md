@@ -25,6 +25,7 @@ solution: Journey Optimizer
   + [Documentation updates](using/rn/documentation-updates.md)
   + {hide-from-toc} [Improved journey canvas](using/rn/new-canvas.md)
   + {hide-from-toc} [Migrate batch audiences from Audience Qualification](using/building-journeys/aq-batch-audiences-migration.md)
+  + {hide-from-toc} [CNIL guidance on email tracking pixels](using/privacy/cnil-pixel-tracking.md)
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
@@ -48,12 +49,11 @@ solution: Journey Optimizer
     + [Search, filter & organize](using/start/search-filter-categorize.md)
     + [Troubleshooting FAQ](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/monitor/troubleshooting/troubleshooting)
     + [Accessibility](using/start/accessibility.md)
-    + [Journeys vs Campaigns](using/start/journeys-vs-campaigns.md)
+    + [Journeys vs campaigns](using/start/journeys-vs-campaigns.md)
     + {hide-from-toc} [Journeys vs Campaigns - 2](using/start/journeys-vs-campaigns-v2.md)
 + Journeys {#orchestrate-journeys}
   + [Get started with journeys](using/building-journeys/journey.md)
   + {hide-from-toc} [Journey Get Started Guide](using/building-journeys/journey-get-started.md)
-  + [Journey types: choose the right one](using/building-journeys/journey-types-selection.md)
   + {hide-from-toc} [Journey types: choose the right one-2](using/building-journeys/journey-types-selection-v2.md)
   + [Journey Orchestration FAQ](using/building-journeys/journey-faq.md)
   + Create a journey {#create-journey}
@@ -84,6 +84,7 @@ solution: Journey Optimizer
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
     + [Get started with journey activities](using/building-journeys/about-journey-activities.md)
+    + [Journey types: choose the right one](using/building-journeys/journey-types-selection.md)
     + [General events](using/building-journeys/general-events.md)
     + [Reaction events](using/building-journeys/reaction-events.md)
     + [Audience qualification](using/building-journeys/audience-qualification-events.md)
@@ -215,7 +216,7 @@ solution: Journey Optimizer
       + [Enrichment](using/orchestrated/activities/enrichment.md)
       + [Fork](using/orchestrated/activities/fork.md)
       + [Incremental query](using/orchestrated/activities/incremental-query.md)
-      + {hide-from-toc} [Load file](using/orchestrated/activities/load-file.md)
+      + [Load file](using/orchestrated/activities/load-file.md)
       + [Read audience](using/orchestrated/activities/read-audience.md)
       + [Reconciliation](using/orchestrated/activities/reconciliation.md)
       + [Save audience](using/orchestrated/activities/save-audience.md)
@@ -329,11 +330,13 @@ solution: Journey Optimizer
   + In-app channel {#in-app}
     + [In-app channel](/help/rp_landing_pages/in-app-landing-page.md)
     + [Get started with In-app](using/in-app/get-started-in-app.md)
-    + [In-app channel prerequisites](using/in-app/inapp-configuration.md)
     + [Create a mobile In-app message](using/in-app/create-in-app.md)
     + [Create a web In-app message](using/in-app/create-in-app-web.md)
     + [Design your In-app content](using/in-app/design-in-app.md)
     + [Check & send your In-app notification](using/in-app/send-in-app.md)
+    + Configure In-app channel {#configure-inapp}
+      + [In-app channel configuration & prerequisites](using/in-app/inapp-configuration.md)
+      + [Configure Web In-app Messaging in Web SDK](using/in-app/web-in-app-messaging.md)
   + Push notification channel {#push}
     + [Push notification channel](/help/rp_landing_pages/push-landing-page.md)
     + [Get started with push notifications](using/push/get-started-push.md)
@@ -385,7 +388,10 @@ solution: Journey Optimizer
       + [Use the non-visual editor](using/web/web-non-visual-editor.md)
       + [Manage modifications](using/web/manage-web-modifications.md)
       + [Monitor your web experiences](using/web/monitor-web-experiences.md)
+    + Single-page applications and Web SDK {#web-sdk}
       + [Author single-page applications](using/web/web-spa.md)
+      + [Implement single-page applications](using/web/web-spa-implementation.md)
+      + [Journey Optimizer with Experience Platform Web SDK](using/web/web-sdk.md)
   + Code-based experience {#code-based-experience}
     + [Code-based experience](/help/rp_landing_pages/code-based-experience-landing-page.md)
     + [Get started with code-based channel](using/code-based/get-started-code-based.md)
@@ -500,6 +506,7 @@ solution: Journey Optimizer
     + [Create a fragment](using/content-management/create-fragments.md)
     + [Save existing content as fragment](using/content-management/save-fragments.md)
     + [Customizable fragments](using/content-management/customizable-fragments.md)
+    + [Dynamic fragments](using/content-management/dynamic-fragments.md)
     + [Manage fragments](using/content-management/manage-fragments.md)
     + {hide-from-toc} [Add contextual attributes to published fragments](using/content-management/manage-fragments-contextual-attributes.md)
   + Dynamic content {#dynamic} 
