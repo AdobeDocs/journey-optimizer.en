@@ -22,6 +22,8 @@ A message inbox is a persistent notification inbox driven by two Adobe Journey O
 
 ## Configure Adobe Journey Optimizer {#ajo-setup}
 
+Before you implement the Web SDK, set up the datastream, channels, and campaigns in Journey Optimizer that deliver content to the inbox.
+
 1. Configure a **datastream** configured with **Adobe Experience Platform** as a service, with **Journey Optimizer** enabled and an **event dataset** selected.
 
 1. Create two channel configurations that share the same surface: one **Content Cards** channel and one **Inbox** channel. [Learn how to configure a content card channel](../content-card/content-card-configuration.md) and [learn how to configure an Inbox channel](inbox-configuration.md).
@@ -40,7 +42,11 @@ A message inbox is a persistent notification inbox driven by two Adobe Journey O
 
 ## Implement the Web SDK {#web-sdk-implementation}
 
-The inbox relies on two Web SDK commands: `subscribeRulesetItems`, which registers a callback that runs whenever the propositions eligible for display change, and `sendEvent`, which fetches them. Additional events can update which messages qualify for display.
+The inbox relies on two Web SDK commands:
+
+* `subscribeRulesetItems` registers a callback that runs each time the propositions eligible for display change.
+
+* `sendEvent` fetches those propositions. You can send additional events later to update which messages qualify for display.
 
 1. Define the content card and inbox schemas, and the surface that matches your AJO channel configuration:
 
