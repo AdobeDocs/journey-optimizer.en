@@ -56,6 +56,8 @@ topic_v2:
 
 ## July '26 updates {#july-26-updates}
 
+### New capabilities {#july-26-new-capabilities}
+
 <table>
 <thead>
 <tr>
@@ -72,6 +74,12 @@ topic_v2:
 </tr>
 </tbody>
 </table>
+
+### Improvements {#july-26-improvements}
+
+* **AJO MCP server new tools** - The [!DNL Adobe Journey Optimizer] MCP server now exposes five additional read-only **channel configuration tools**, enabling you to query channel configurations, supporting resources, and marketing actions directly from your AI assistant. You can now use **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
+
+  Availability date: July 9, 2026
 
 ## June '26 release notes {#june-26-rn}
 

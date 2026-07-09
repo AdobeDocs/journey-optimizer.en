@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## July 2026 {#july-2026}
 
+* The **Send-Time Optimization** documentation has been updated to reflect the new **[!UICONTROL Send within next]** limit of **2-100 hours** (previously 1-168), and to document supported AEP Hub regions for this capability. [Read more](../building-journeys/send-time-optimization.md#use-send-time-optimization)
+
 * The **Personalized optimization model** pages have been updated to reflect the latest model improvements, covering how the ensemble model works, dataset requirements, use cases, key assumptions, and cold-start behavior. Read more in the [Experience Decisioning](../experience-decisioning/ranking/personalized-optimization-model.md) and [Offer Decisioning](../offers/ranking/personalized-optimization-model.md) sections.
 
 * A note has been added to the **Journey arbitration ranking formulas** page to specify that ranking formulas are only available to organizations that have purchased the **Decisioning** add-on offering. [Read more](../conflict-prioritization/journey-ranking-formulas.md)
