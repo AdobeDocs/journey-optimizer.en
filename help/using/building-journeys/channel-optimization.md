@@ -123,7 +123,13 @@ Once an outbound action is selected in the **[!UICONTROL Actions]** tab, continu
 >[!CONTEXTUALHELP]
 >id="ajo_channel_optimization_method"
 >title="Define how channel selection works"
->abstract="The customer's first available channel, based on the selected prioritization method, is used for this action. Availability is determined by the customer's subscription preferences and marketing consent rules for the selected channel configurations, as well as any business rules — such as frequency capping — configured for the campaign or journey."
+>abstract="Choose how Journey Optimizer selects the best channel for each customer: **Manual priority** — channels are tried in the order you define; Availability is determined by applying subscription preferences and marketing consent rules associated with the selected channel configurations, and all business rules (e.g. channel frequency capping) associated with the campaign or journey. **Customer profile attribute** — the channel matching the customer's declared preference in their profile is selected first. If no preference is found, manual priority is applied. **AI optimized** — a machine learning model scores each channel based on the customer's historical engagement, and the highest-scoring available channel is selected.
+
+<!--
+Previous content for contextual help: "The customer's first available channel, based on the selected prioritization method, is used for this action. Availability is determined by the customer's subscription preferences and marketing consent rules for the selected channel configurations, as well as any business rules — such as frequency capping — configured for the campaign or journey." TBC which to keep.
+
+Additional content for contextual help: For **Manual priority** and **Customer profile attribute** modes, Journey Optimizer falls back through your configured channel order when the top-ranked channel cannot be used. For **AI optimized**, it falls back to a random available channel."
+-->
 
 Channel optimization supports three modes, each using a different method to select the best channel for each customer at send time.
 
