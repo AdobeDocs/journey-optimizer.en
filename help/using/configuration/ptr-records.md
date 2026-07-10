@@ -120,13 +120,13 @@ To edit a PTR record with a subdomain that is delegated to Adobe using the [CNAM
 
     ![](assets/ptr-record-subdomain-confirm.png)
 
-    >[!WARNING]
-    >
-    >When adding a new forward DNS record for the new subdomain on your hosting platform, do not remove the forward DNS record for the old subdomain until the move completes. Removing the old record before the process is finished will cause editing the PTR record to fail.
-
 1. If you get this message: "Please create forward DNS first and then try again", follow the steps below:
     * Check on the DNS provider if the forward DNS record was successfully created.
     * Records across the DNS may not synchronize immediately. Wait for a few minutes, and try again.
+
+    >[!WARNING]
+    >
+    >When adding a new forward DNS record for the new subdomain on your hosting platform, do not remove the forward DNS record for the old subdomain until the move completes. Removing the old record before the process is finished will cause editing the PTR record to fail.
 
 1. Click **[!UICONTROL Save]** to confirm your changes. Note that the **[!UICONTROL IP]** and **[!UICONTROL PTR record]** fields cannot be modified.
 
