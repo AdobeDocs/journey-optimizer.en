@@ -61,6 +61,27 @@ topic_v2:
 <table>
 <thead>
 <tr>
+<th><strong>Content check in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.</p>
+<p>Checks cover unsupported elements such as <code>&lt;script&gt;</code> and <code>&lt;base&gt;</code> tags, empty divs that can break layout in Microsoft Outlook, HTML meta refresh tags, and CSS or HTML size thresholds that trigger rendering failures in Gmail.</p>
+<p>Results are surfaced as errors, warnings, or informational notices directly in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the editor.</p>
+<p>Previously available in Limited Availability, this capability is now generally available to all customers.</p>
+<p><img src="assets/do-not-localize/content-check.gif"></p>
+<p>For more information, refer to the <a href="../email/content-check.md">detailed documentation</a>.</p>
+<p>Availability date: July 10, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>File-based targeting in Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
