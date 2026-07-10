@@ -245,6 +245,14 @@ By default, journeys are configured to run once. To define a specific date/time 
 
 For recurring journeys, specific options are available to help you manage the entry of profiles into the journey. Expand the sections below for more information on each option.
 
+>[!NOTE]
+>
+>**How audience snapshots are used**
+>
+>Each Read Audience execution uses the audience membership available at the time that execution runs. For batch audiences, [!DNL Journey Optimizer] reads from the latest available batch audience snapshot. It does not recalculate the audience in real time when the journey starts.
+>
+>For recurring journeys, each occurrence uses the snapshot available for that occurrence. If you want the journey to wait for the latest batch audience evaluation before it runs, enable **[!UICONTROL Trigger after batch audience evaluation]**.
+
 ![Read audience recurring options: Incremental read, Force reentrance, Trigger after batch](assets/read-audience-options.png)
 
 +++**[!UICONTROL Incremental read]**
@@ -273,6 +281,30 @@ This option allows you to make all profiles still present in the journey automat
 For example, if you have a 2-day wait in a daily recurring journey, activating this option moves profiles to the next journey execution. This happens the day after, whether they are in the next run audience or not.
 
 If the lifespan of your profiles in this journey may be longer than the recurrence frequency, do not activate this option to make sure that profiles can finish their journey.
+
++++
+
++++**How [!UICONTROL Incremental read] and [!UICONTROL Force reentrance on recurrence] work together**
+
+These two options control different parts of the journey execution:
+
+* **[!UICONTROL Incremental read]** controls **which profiles are selected from the audience** for the next recurring run.
+* **[!UICONTROL Force reentrance on recurrence]** controls **what happens to profiles who are still active in the journey** when the next recurring run starts.
+
+Use the table below to understand the combined behavior on the next run.
+
+| [!UICONTROL Incremental read] | [!UICONTROL Force reentrance on recurrence] | Behavior on the next run |
+| ------------------------------ | ------------------------------------------- | ------------------------ |
+| Off | Off | [!DNL Journey Optimizer] reads the full audience for that run. Profiles who are still active in the journey are not reset automatically. |
+| On | Off | [!DNL Journey Optimizer] reads only profiles who were added to the audience since the last execution. Profiles who are still active in the journey are not reset automatically. |
+| Off | On | [!DNL Journey Optimizer] removes active participants from the current journey execution before starting the next run, then reads the full audience again. This allows profiles to start fresh on the new occurrence. |
+| On | On | [!DNL Journey Optimizer] removes active participants from the current journey execution before starting the next run, then reads only profiles who were added to the audience since the last execution. Force reentrance resets active journey participation, but incremental read still limits selection to newly added audience members. |
+
+In other words, **[!UICONTROL Force reentrance on recurrence] does not disable [!UICONTROL Incremental read]**. If both options are enabled, profiles are removed from their active journey instance before the next occurrence starts, but the next occurrence still selects only the audience members considered new since the last execution.
+
+>[!IMPORTANT]
+>
+>A profile removed by **[!UICONTROL Force reentrance on recurrence]** is not automatically treated as a new audience member for **[!UICONTROL Incremental read]**. Audience selection still depends on whether the profile was newly added to the audience since the last execution.
 
 +++
 
