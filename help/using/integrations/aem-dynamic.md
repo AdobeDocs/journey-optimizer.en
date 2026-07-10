@@ -64,6 +64,8 @@ Enhance and optimize your content for any screen or browser by inserting dynamic
 
 Dynamic media integration with Adobe Journey Optimizer is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
 
+For Dynamic Media Scene7 assets, Journey Optimizer adds default modifiers (`bfc=off&fmt=png-alpha`) at the start of the URL. If your preset also sets `fmt` or `bfc`, it takes precedence, since Scene7 uses the last occurrence of a repeated parameter. To avoid unexpected results, remove `fmt`/`bfc` from the preset, or move it before the default modifiers in the URL.
+
 <!--
 >[!AVAILABILITY]
 >
