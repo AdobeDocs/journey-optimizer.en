@@ -2,19 +2,56 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: FAQ
-description: Live activity FAQ
+description: Live activities FAQ
 topic: Content Management
 role: User
 level: Beginner
 exl-id: e7e994ca-aa0c-4e86-8710-c87430b74188
+TQID: https://experienceleague.adobe.com/gV4buzcc5mqsvceDj1O-5XZ3eJHtfD26h1c5g3h81Ps
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+  - id: ed2fba79-65cb-4680-96d2-2ad5d851714d
+    internal-label: Live activities
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+    internal-label: Content structure
 ---
 # Frequently asked questions {#mobile-live-faq}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers to common questions about Live activities so you can implement, deliver, and troubleshoot them more confidently across your iOS apps and campaigns.
+
+>[!ENDSHADEBOX]
 
 ## General Questions
 
 +++What is the difference between a Live activity and a Push notification?
 
-Live activity provides persistent, real-time updates on the Lock Screen and Dynamic Island without requiring users to unlock their device. Push notifications are temporary alerts that disappear once dismissed. Live activity stays visible and can be updated multiple times until explicitly ended.
+A Live activity provides persistent, real-time updates on the Lock Screen and Dynamic Island without requiring users to unlock their device. Push notifications are temporary alerts that disappear once dismissed. A Live activity stays visible and can be updated multiple times until explicitly ended.
 
 +++
 
@@ -36,15 +73,15 @@ In practice:
 
 +++Do users need to have the app open to receive Live activity updates?
 
-No. Live activity can be started, updated, and ended remotely even when the app is completely closed, one of the key benefits of the feature.
+No. A Live activity can be started, updated, and ended remotely even when the app is completely closed, one of the key benefits of the feature.
 
 +++
 
-+++What iOS versions support Live activity?
++++What iOS versions support Live activities?
 
-* iOS 16.1+: Basic Live activity support
+* iOS 16.1+: Basic Live activities support
 * iOS 17.2+: Push-to-start functionality (remotely start without opening the app)
-* iOS 18+: Broadcast channel support for audience-based Live activity
+* iOS 18+: Broadcast channel support for audience-based Live activities
 +++
 
 +++How long can a Live activity remain active?
@@ -61,16 +98,16 @@ Campaigns have a default rate limit of 500 transactional messages per second acr
 
 ### Developer Questions
 
-+++Do I need to create a separate widget extension for Live activity?
++++Do I need to create a separate widget extension for Live activities?
 
-Yes. Live activity is displayed through WidgetKit, so you need to create a widget extension in your Xcode project and implement the `ActivityConfiguration`.
+Yes. Live activities are displayed through WidgetKit, so you need to create a widget extension in your Xcode project and implement the `ActivityConfiguration`.
 [Learn more about Widget configuration](mobile-live-configuration-sdk.md)
 
 +++
 
-+++Can I use the same `LiveActivityAttributes` class for both local and remote Live activity?
++++Can I use the same `LiveActivityAttributes` class for both local and remote Live activities?
 
-Yes. The same attributes class works for both locally-started and remotely-started (push-to-start) Live activity. You need to ensure you register it with `Messaging.registerLiveActivity()`.
+Yes. The same attributes class works for both locally-started and remotely-started (push-to-start) Live activities. You need to ensure you register it with `Messaging.registerLiveActivity()`.
 
 +++
 
@@ -80,11 +117,11 @@ If you send an update or end event for a non-existent `liveActivityID` or `chann
 
 +++
 
-+++Can I test Live activity in the iOS Simulator?
++++Can I test Live activities in the iOS Simulator?
 
-Yes, you can test locally-started as well as remotely-started Live activity in the iOS Simulator.
+Yes, you can test locally-started as well as remotely-started Live activities in the iOS Simulator.
 
-* **Local**: This includes creating, updating, and ending Live activity directly from your app using **ActivityKit APIs**.
+* **Local**: This includes creating, updating, and ending a Live activity directly from your app using **ActivityKit APIs**.
 
 * **Remote**: To test Live activity functionality remotely, integrate our Messaging SDK into your app and use the provided execution APIs to send remote start, update and end to your test device or iOS Simulator. Similar to how push notifications can be tested currently with Adobe SDKs integration.
 
@@ -92,7 +129,7 @@ Yes, you can test locally-started as well as remotely-started Live activity in t
 
 +++How do I handle updates when the app is in the background?
 
-The SDK handles this automatically. Once registered, Live activity receives updates even when the app is terminated. No additional background modes are required.
+The SDK handles this automatically. Once registered, a Live activity receives updates even when the app is terminated. No additional background modes are required.
 +++
 
 +++What is the difference between `liveActivityID` and `channelID`?
@@ -108,10 +145,10 @@ Yes. The `ActivityConfiguration` has separate closures for Lock Screen content a
 
 +++Do I need to store push tokens manually?
 
-No. When you register a Live Activity type with `Messaging.registerLiveActivity()`, the SDK automatically collects and manages push tokens for you.
+No. When you register a Live activity type with `Messaging.registerLiveActivity()`, the SDK automatically collects and manages push tokens for you.
 +++
 
-+++Are there limits on remote starts of Live activity?
++++Are there limits on remote starts of Live activities?
 
 Yes. Remote starts via `ActivityKit` are subject to system-enforced limits. If you attempt multiple start requests in quick succession, iOS may reject further starts due to Live activity quotas or budget constraints. After about 5 consecutive start attempts, subsequent requests begin failing until a brief cooldown period passes.
 
@@ -141,14 +178,14 @@ Broadcast campaigns send the same content to all users in the audience. For pers
 [Monitor your campaign analytics](../reports/campaign-global-report-cja-activity.md) in Adobe Journey Optimizer. You can track delivery rates, failures, and engagement metrics. Also consider implementing custom analytics events in your app.
 +++
 
-+++Can I schedule Live activity in advance?
++++Can I schedule Live activities in advance?
 
 The API call triggers the Live activity immediately. However, you can schedule your API calls through your backend systems or use Journey Optimizer's orchestration capabilities to time them appropriately.
 +++
 
 +++What happens if I send a "start" event for a Live activity that already exists?
 
-When remotely starting Live activity through Adobe's Execution APIs:
+When remotely starting a Live activity through Adobe's Execution APIs:
 
 * You can include an `x-request-id` header in your request. Ideally, there should be a one-to-one relationship between each `liveActivityID` and its corresponding `x-request-id`. This ensures that if multiple requests are made with the same `x-request-id` and `liveActivityID` combination, only one Live activity instance will be started on the device, and duplicate requests will be ignored.
 
@@ -170,7 +207,7 @@ Update only when meaningful information changes since too-frequent updates can d
 
 +++
 
-+++Can I target users based on whether they have Live activity enabled?
++++Can I target users based on whether they have Live activities enabled?
 
 You will need to work with your development team to track and pass this preference to Adobe Experience Platform as a user attribute, then segment based on that attribute.
 
@@ -209,7 +246,7 @@ No. Each API request should have a unique `requestId` to ensure idempotency and 
 
 +++What authentication is required for the Headless API?
 
-Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/) for authentication requirements, including OAuth tokens and API keys.
+Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging) for authentication requirements, including OAuth tokens and API keys.
 
 +++
 
@@ -235,7 +272,7 @@ No. You can use the same campaign and change the `event` field in the payload. H
 
 >[!TIP]
 >
->For comprehensive troubleshooting guidance, see [Troubleshoot Live Activities](troubleshoot-mobile-live.md).
+>For comprehensive troubleshooting guidance, see [Troubleshoot Live activities](troubleshoot-mobile-live.md).
 
 +++My Live activity starts but does not update. What could be the issue?
 
@@ -254,13 +291,13 @@ Common causes:
 * Ensure the class name matches **exactly** (case-sensitive) with your Swift struct name
 * Verify the struct is properly defined and registered
 * Check for typos in the JSON payload
-* Confirm the app version installed has the Live Activity implementation
+* Confirm the app version installed has the Live activity implementation
 
 +++
 
 +++Users only see the Live activity update and not the alert notification, is this a known issue?
 
-No. The `alert` field is optional and may be suppressed by iOS in certain conditions, for example Do Not Disturb mode. Live activity can update silently, which is often the intended behavior. The alert field is mandatory for sending remote starts otherwise apple treats it like a silent background notification.
+No. The `alert` field is optional and may be suppressed by iOS in certain conditions, for example Do Not Disturb mode. A Live activity can update silently, which is often the intended behavior. The alert field is mandatory for sending remote starts otherwise apple treats it like a silent background notification.
 
 +++
 

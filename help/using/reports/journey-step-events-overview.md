@@ -8,8 +8,67 @@ role: Developer, Admin, User
 level: Intermediate, Experienced
 keywords: journey, step events, analytics, reporting, monitoring, XDM
 exl-id: 2e7c5ea5-d8c5-416d-ab88-d2bc02043558
+TQID: https://experienceleague.adobe.com/PSXSN-31GNlM0zBKcCvdKPciHt5zhQPPCffFrUoIxUs
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+subfeature_v2:
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
+    internal-label: Metrics catalog
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Work with journey step events {#work-with-journey-step-events}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn what journey step events are in Adobe Journey Optimizer, why they matter, and how to use them for analytics, monitoring, and optimization through Adobe Experience Platform.
+
+>[!ENDSHADEBOX]
 
 Journey step events are automatically generated events that capture detailed information about each step a [profile](../audience/get-started-profiles.md) takes as they progress through a [journey](../building-journeys/journey.md) in Adobe Journey Optimizer. These events provide comprehensive visibility into [journey performance](../building-journeys/report-journey.md) and enable powerful analytics capabilities.
 
@@ -27,8 +86,8 @@ There are two main types of journey step events:
 Journey step events are generated automatically for various journey activities:
 
 - **Entry events**: When a profile [enters a journey](../building-journeys/entry-management.md)
-- **Action execution**: When [messages are sent](../building-journeys/journey-action.md) or [custom actions](../building-journeys/using-custom-actions.md) are performed  
-- **Condition evaluation**: When profiles pass through [conditions](../building-journeys/condition-activity.md) and decision points
+- **Action execution**: When [messages are sent](../building-journeys/journey-action.md) or [custom actions](../building-journeys/using-custom-actions.md) are performed 
+- **Condition evaluation**: When profiles pass through [conditions](../building-journeys/conditions.md) and decision points
 - **Wait activities**: When profiles enter and exit [wait nodes](../building-journeys/wait-activity.md)
 - **Exit events**: When profiles complete or [exit a journey](../building-journeys/end-journey.md)
 - **Error handling**: When errors occur during journey execution

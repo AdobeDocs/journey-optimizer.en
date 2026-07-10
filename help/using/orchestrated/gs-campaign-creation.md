@@ -5,9 +5,31 @@ title: Key steps to create an Orchestrated campaign
 description: Learn key principles of Orchestrated campaigns creation with Adobe Journey Optimizer
 exl-id: b04aa15a-71bf-4683-bcbf-f611c189ffe1
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/Bu0hEY7jDkL3FkdX09SyUVk80ZFYBUW2fGs9qeSEC5w
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
-
 # Key steps to create an Orchestrated campaign {#orchestrated-campaign-creation}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the key steps to build and launch an Orchestrated campaign in Adobe Journey Optimizer, from creating and scheduling it to orchestrating activities, monitoring execution, and analyzing results.
+
+>[!ENDSHADEBOX]
 
 This page walks you through the essential steps to build and launch an Orchestrated campaign—from setup and design to monitoring and reporting.
 
@@ -17,7 +39,8 @@ This page walks you through the essential steps to build and launch an Orchestra
 <td><a href="#orchestrate"><img alt="Orchestrate campaign activities" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="#orchestrate"><strong>Orchestrate campaign activities</strong></a></td>
 <td><a href="#start"><img alt="Start & monitor your campaign" src="../../channels/assets/do-not-localize/push.png"></a><a href="#start"><strong>Start & monitor your campaign</strong></a></td>
 <td><a href="#report"><img alt="Analyze & report on results" src="../../channels/assets/do-not-localize/push.png"></a><a href="#report"><strong>Analyze & report on results</strong></a></td>
-</tr></table>-->
+</tr></table>
+-->
 
 >[!IMPORTANT]
 >
@@ -35,13 +58,19 @@ Once the campaign is created, it's time to design the logic behind it. Using a v
 
 ➡️ [Learn how to orchestrate activities](../orchestrated/orchestrate-activities.md)
 
-## Step 3: Start & monitor your campaign {#start}
+## Step 3: Add personalization {#personalize}
+
+In channel activities, personalize messages with profile attributes and target attributes from the worktable (including enrichment collection arrays).
+
+➡️ [Learn how to add personalization in Orchestrated campaigns](../orchestrated/add-personalization.md)
+
+## Step 4: Start & monitor your campaign {#start}
 
 You're almost there! Run your campaign in test mode first to catch any issues. Then publish it and monitor live execution in real time—track progress, check for errors, and see how profiles flow through each step.
 
 ➡️ [Learn how to start and monitor a campaign](../orchestrated/start-monitor-campaigns.md)
 
-## Step 4: Analyze & report on results {#report}
+## Step 5: Analyze & report on results {#report}
 
 After launch, use built-in reports to understand what worked—and what could be improved. Real-time dashboards and in-depth analytics help you optimize future campaigns and refine your strategy.
 

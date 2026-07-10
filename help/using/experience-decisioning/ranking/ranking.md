@@ -7,8 +7,32 @@ role: User
 level: Intermediate
 exl-id: c1d69bc9-4486-4037-b218-f4f704b2ba9c
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/1qUj05fLaRqqJGfaoL-y5uwtknp7HDkWKocHMde-8lc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 ---
 # Ranking methods {#rankings}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Create ranking methods, either formulas or AI models, and assign them to a selection strategy, so the decisioning engine knows which eligible items to present first for each profile.
+
+>[!ENDSHADEBOX]
 
 Ranking methods allow you to rank items to display for a given profile. Once a ranking method has been created, you can assign it to a selection strategy to define which items should be selected first.
 

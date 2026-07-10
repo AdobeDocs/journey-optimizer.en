@@ -8,8 +8,41 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
+TQID: https://experienceleague.adobe.com/vQ5RWPuVasXeyWXqU0OZzARI0rAtj-a1wVZ5z2mDY6o
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
+    internal-label: Audience Qualification events
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
+    internal-label: Audience guardrails
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Get started with audience composition {#get-start-audience-composition}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use audience composition to combine existing Adobe Experience Platform audiences in a visual canvas and apply activities such as split, exclude, enrich, and rank to create new audiences.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_create_composition"
@@ -71,10 +104,12 @@ exl-id: af71d24d-77eb-44df-8216-b0aeaf4c4fa4
 >title="Add profile limit"
 >abstract="Toggle this option on to specify a maximum number of profiles to include in the composition."
 
-<!-- [!CONTEXTUALHELP]
+<!--
+ [!CONTEXTUALHELP]
 >id="ajo_ao_control_group_text"
 >title="Control Group"
->abstract="Use control groups to isolate a portion of the profiles. This allows you to measure the impact of a marketing activity and make a comparison with the behavior of the rest of the population."-->
+>abstract="Use control groups to isolate a portion of the profiles. This allows you to measure the impact of a marketing activity and make a comparison with the behavior of the rest of the population."
+-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_ao_split"

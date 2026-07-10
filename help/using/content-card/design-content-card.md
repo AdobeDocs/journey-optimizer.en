@@ -6,8 +6,22 @@ feature: Content Cards
 role: User
 level: Beginner
 exl-id: b83bdade-7275-4eef-9c49-fc1d157cee0d
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
 ---
 # Design content cards content {#design-content-card}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Design and personalize your content card's layout, text, media, buttons, and dismiss behavior so you can deliver an engaging, on-brand message to your audience.
+
+>[!ENDSHADEBOX]
 
 The authoring construct for Cards provides a form-based authoring experience that provides marketers with basic inputs that can be rendered by developers.
 
@@ -21,15 +35,15 @@ From the **[!UICONTROL Content card layout]** section, choose one of the three i
 
 * **[!UICONTROL Small image]**: Displays a compact image alongside text, ideal for messages where content takes priority over visuals. 
     
-    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/smallimage-template/) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/smallimagecarduistate/) to learn more.
+    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/smallimage-template) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/smallimagecarduistate) to learn more.
 
 * **[!UICONTROL Large image]**: Features a prominent image above or beside the text, making visuals the main focus of your message. 
 
-    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/largeimage-template/) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/largeimagecarduistate/) to learn more.
+    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/largeimage-template) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/largeimagecarduistate) to learn more.
 
 * **[!UICONTROL Image only]**: Shows the image without accompanying text, perfect for visual-driven messages or standalone imagery. 
     
-    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/imageonly-template/) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/imageonlycarduistate/) to learn more.
+    See the Adobe Developer Documentation [for iOS](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/iOS/templates/imageonly-template) and [for Android](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/content-card-ui/Android/public-classes/state/imageonlycarduistate) to learn more.
 
 ## Content tab {#content-tab}
 
@@ -69,7 +83,7 @@ Add buttons for users to interact with your content cards.
 
 1. Select an **[!UICONTROL Interact event]** to define what action will be triggered when users click or interact with the button.
 
-1. In the **[!UICONTROL Target]** field, enter the web URL or deeplink where users will be directed after interacting with the button.
+1. In the **[!UICONTROL Target]** field, enter the web URL or deep link where users will be directed after interacting with the button.
 
 <!--
 +++More options with advanced formatting
@@ -116,7 +130,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 
 ![](assets/content-card-design-5.png)
 
-In the **[!UICONTROL Target URL]** field, enter the web URL or deeplink that will direct users to the desired destination after they interact with your content card. This could be an external website, a specific page within your app, or any other location you want users to be taken to based on their interaction.
+In the **[!UICONTROL Target URL]** field, enter the web URL or deep link that will direct users to the desired destination after they interact with your content card. This could be an external website, a specific page within your app, or any other location you want users to be taken to based on their interaction.
 
 ## Data tab
 

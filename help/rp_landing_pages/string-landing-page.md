@@ -4,15 +4,14 @@ product: Journey Optimizer
 title: String
 description: String
 redpen-status: CREATED_||_2025-08-11_20-18-34
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 1085e570-10b8-4d96-912a-994979358b65
 ---
 # String{#section-overview}
 
 Strings are the building blocks of text-based data, and Adobe Journey Optimizer's string functions give you powerful tools to manage and transform them effortlessly. 
 
-## String Functions Overview
+## String functions overview
 
 :::: landing-cards-container
 :::

@@ -7,8 +7,35 @@ feature: Accessibility
 role: User
 level: Beginner
 exl-id: d971c04c-9b37-4cd7-8a2d-b915e394079b
+TQID: https://experienceleague.adobe.com/ONswG5tDxJQKJ7xm-7zlXk1HE0G7Y927Qbsdiahzf5E
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+    internal-label: Web experience
 ---
 # Accessibility in Journey Optimizer{#accessibility}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how Journey Optimizer supports users of all abilities through WCAG-aligned accessibility features and keyboard shortcuts, so you can navigate and work in the interface efficiently.
+
+>[!ENDSHADEBOX]
 
 Accessibility refers to a series of features that make a software product usable, with as little effort as possible, for users with visual, auditory, cognitive, motor, or other kinds of disabilities. Adobe is an industry leader in accessibility and supports the creation of outstanding web experiences by encouraging developers to produce rich, engaging content that is accessible to all users. Learn more about Adobe's commitment to accessibility in the [Adobe Accessibility page](https://www.adobe.com/accessibility.html){target="_blank"}.
 
@@ -100,7 +127,8 @@ You can use these shortcuts in specific areas of [!DNL Journey Optimizer] user i
     <td>Discard changes and close the configuration pane</td>
     <td>Esc</td>
   </tr>
-<!-- //Ajouter ce raccourci quand il marchera (actuellement, le raccourci Ctrl/Cmd+F du navigateur a priorité sur celui de AJO).//
+<!--
+ //Ajouter ce raccourci quand il marchera (actuellement, le raccourci Ctrl/Cmd+F du navigateur a priorité sur celui de AJO).//
   <tr>
     <td>Page with a search bar</td>
     <td>Select the search bar</td>

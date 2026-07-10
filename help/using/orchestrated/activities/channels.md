@@ -5,9 +5,29 @@ title: Add a channel activity in a multistep campaign
 description: Learn how to add a channel activity in a multistep campaign
 exl-id: ffe1e77c-6c4f-4f23-9183-d715a4c7c402
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/ouwufvPEUXGewSP5TvsfI0qPxpVqaqso3me4qEc2WQM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-
 # Channel activities {#channel}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add and configure email, SMS, push, and direct mail channel activities to send marketing or transactional messages within an Orchestrated campaign.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_email"
@@ -41,7 +61,6 @@ UNUSED IDs in BJ
 >id="ajo_orchestration_push_android"
 >title="Push Android activity"
 >abstract="The Push Android activity lets you send Android Push notifications as part of your Orchestrated campaign. It enables the delivery of both one-time and recurring messages, automating the sending of Android Push notifications to a predefined target within the same Orchestrated campaign. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
-
 -->
 
 >[!CONTEXTUALHELP]
@@ -49,7 +68,7 @@ UNUSED IDs in BJ
 >title="Direct mail activity"
 >abstract="The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data."
 
-[!DNL Adobe Journey Optimizer] allows you to automate and execute **marketing** campaigns across channels—email, SMS, push notifications, and direct mail. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns. These campaigns can trigger actions based on customer behavior and data.
+[!DNL Adobe Journey Optimizer] allows you to automate and execute campaigns across channels—email, SMS, push notifications, and direct mail—for both marketing and transactional messages. You can combine these channel activities into the campaign canvas to create cross-channel Orchestrated campaigns. These campaigns can trigger actions based on customer behavior and data.
 
 For example:
 
@@ -59,16 +78,22 @@ For example:
 
 By using channel activities, you can create comprehensive and personalized campaigns that engage customers across multiple touchpoints and drive conversions.
 
->[!CAUTION]
->
->Only SMS, Push, Email and Direct mail channels are supported in Orchestrated campaigns.
+## Guardrails and limitations {#channel-guardrails}
+
+* **Supported channels** - Only SMS, Push, Email and Direct mail channels are supported in Orchestrated campaigns.
+
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities (Email, SMS, Push, or Direct mail). Only channel activities count toward this limit, targeting and flow control activities do not.
+
+    If you exceed the limit when saving or publishing, the operation fails. To stay within the limit, reduce the number of channel activities or split message delivery across multiple Orchestrated campaigns.
+
+See [Guardrails and limitations](../guardrails.md) for all Orchestrated campaign guardrails and limitations.
 
 ## Add a channel activity and define its properties {#add}
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_category"
->title="Target"
->abstract="Placeholder for Category field"
+>title="Category"
+>abstract="Choose Marketing or Transactional for this channel activity. Marketing messages use marketing channel configurations and follow your standard business rules. Transactional messages are for operational communications — often triggered by an individual's action (for example, a password reset or purchase confirmation) or for time-sensitive notices such as disruptions or cancellations. They use transactional channel configurations, business rules are bypassed, and opt-in is not required."
 
 >[!PREREQUISITES]
 >
@@ -79,6 +104,8 @@ By using channel activities, you can create comprehensive and personalized campa
     ![image showing the canvas with available activities](../assets/channel-add.png)
 
 1. In the right rail, use the **[!UICONTROL Category]** field to choose **[!UICONTROL Marketing]** or **[!UICONTROL Transactional]** for this message. Transactional messages do not require opt-in and are suited for time-sensitive communications such as disruptions, emergencies, or cancellations.
+
+1. Select the activity and click **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]**, or **[!UICONTROL Edit direct mail]** depending on the chosen channel.
 
 1. In the **[!UICONTROL Target]** section, configure the target of the delivery:
 
@@ -96,6 +123,22 @@ By using channel activities, you can create comprehensive and personalized campa
     For more information on targeting dimensions and how to configure them, refer to this page: [Configure a Targeting dimension](../target-dimension.md)
 
 1. Click **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]**, or **[!UICONTROL Edit direct mail]** depending on the chosen channel to create the message as usual, then return to the **right rail** to finish **[!UICONTROL Actions]**.
+
+## Marketing vs Transactional messages {#marketing-vs-transactional}
+
+Choosing the right category determines how messages are delivered and which rules apply:
+
+| | Marketing | Transactional |
+| --- | --- | --- |
+| **Opt-in required** | Yes | No |
+| **Business rules** | Applied (frequency capping, fatigue rules) | Bypassed |
+| **Channel configuration type** | Marketing channel configuration | Transactional channel configuration |
+| **Typical use cases** | Promotions, newsletters, seasonal campaigns | Order confirmations, password resets, disruption alerts |
+| **Audience** | Opted-in subscribers only | Any profile, regardless of opt-in status |
+
+>[!NOTE]
+>
+>Use Transactional only for operational or time-sensitive communications. Misclassifying a promotional message as Transactional bypasses consent and business rules, which may violate regulatory requirements.
 
 ## Set up the channel configuration and settings {#configuration}
 
@@ -149,37 +192,32 @@ Switch to the **[!UICONTROL Content]** tab to create your message. The process s
 
 <table style="table-layout:fixed"><tr style="border: 0; text-align: center;" >
 <td><a href="../../email/create-email.md"><img alt="email" src="../../channels/assets/do-not-localize/email.png"></a><br/><a href="../../email/create-email.md"><strong>Create an email</strong></a></td>
-<td><a href="../../sms/create-sms.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../sms/create-sms.md"><strong>Create an SMS</strong></a></td>
+<td><a href="../../mobile/create-mobile-message.md"><img alt="sms" src="../../channels/assets/do-not-localize/sms.png"></a><br/><a href="../../mobile/create-mobile-message.md"><strong>Create an SMS</strong></a></td>
 <td><a href="../../push/create-push.md"><img alt="push" src="../../channels/assets/do-not-localize/push.png"></a><a href="../../push/create-push.md"><strong>Create a push notification</strong></a></td><td><a href="../../direct-mail/create-direct-mail.md"><img alt="direct mail" src="../../channels/assets/do-not-localize/direct-mail.jpg"></a><a href="../../direct-mail/create-direct-mail.md"><strong>Create a direct mail</strong></a></td>
 </tr></table>
 
-### Add personalization
+### Add personalization {#add-personalization}
 
-Personalization in Orchestrated campaigns works similarly to other [!DNL Journey Optimizer] campaigns or journeys, with a few key differences specific to the orchestrated canvas.
+From the message editor on a channel activity, insert **[!UICONTROL Profile attributes]** and **[!UICONTROL Target attributes]** from the campaign worktable (targeting dimension and enrichment data).
 
-When you access the personalization editor from an Orchestrated campaign, two main folders contain attributes available for personalization detailed below.
+➡️ [Learn how to add personalization in Orchestrated campaigns](../add-personalization.md), including enrichment collection arrays, array functions, and `{{#each}}` iteration.
 
-* **[!UICONTROL Profile attributes]**
+### Check and test your content {#simulate-content-test-profiles}
 
-    This folder includes all profile-related data from [!DNL Adobe Experience Platform]. These are standard attributes such as name, email address, location, or any other traits captured in the user profile.
+Once the content is created, you can preview and test it using either simulation method:
 
-* **[!UICONTROL Target attributes]** (specific to Orchestrated campaigns)
-
-    This folder is unique to Orchestrated campaigns. It contains attributes calculated directly within the campaign canvas. It contains two subfolders:
-
-    * **`<Targeting dimension>`** (e.g., "Recipients", "Purchases"): Contains all attributes related to the dimension targeted by your campaign.
-    
-    * **`Enrichment`**: Includes data added via **[!UICONTROL Enrichment]** activities in your canvas. This allows you to personalize messages based on external datasets or additional logic incorporated during orchestration. [Learn how to use an Enrichment activity](../activities/enrichment.md)
-
-For a detailed overview of how to use the personalization editor, refer to [Get started with personalization](../../personalization/personalize.md).
-
-### Check and test your content
-
-Once the content is created, use the **[!UICONTROL Simulate Content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn more](../../content-management/preview-test.md)
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview and test your content with test profiles. [Learn more](../../content-management/preview-test.md)
 
 ![image showing the Simulate Content button](../assets/channel-simulate.png)
 
-## Confirm message sending {#confirm-message-sending}
+When you simulate content with **test profiles** in an Orchestrated campaign, two important constraints apply:
+
+* **Execution must have reached the channel activity in test** - Run the campaign in test using the **[!UICONTROL Start]** button so the workflow reaches the channel activity you want to simulate. In test mode, the workflow pauses at the channel activity, so a channel activity that comes after another channel activity is never reached. You cannot use **[!UICONTROL Simulate Content]** for those downstream channel activities. See [Test your campaign before publishing](../start-monitor-campaigns.md#test).
+
+* **The test profile must match the channel activity target** - Use a test profile that belongs to the audience targeted by that channel activity. If the profile is not in that audience, selecting it will not render a preview of your content. See [Select test profiles](../../content-management/test-profiles.md).
+
+## Confirm message sending
 
 By default, for non-recurring orchestrated campaigns, message delivery is paused until you explicitly approve the send. After publishing the campaign, confirm the send request from **[!UICONTROL Properties]** in the **right rail** while the channel activity is selected.
 
@@ -234,14 +272,16 @@ how to add and configure the activity
 
 example of a configured activity within a workflow
 The Email delivery activity allows you to configure the sending an email in a workflow. 
-
 -->
 
-<!--You can also create a recurring Orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
+<!--
+You can also create a recurring Orchestrated campaign to send a personalized SMS every first day of the month at 8 PM to all customers living in Paris.
 
-![](../assets/workflow-channel-example2.png)-->
+![](../assets/workflow-channel-example2.png)
+-->
 
-<!-- Scheduled emails available?
+<!--
+ Scheduled emails available?
 
 This can be a single send email and sent just once, or it can be a recurring email.
 * Single send emails are standard emails, sent once.
@@ -249,7 +289,6 @@ This can be a single send email and sent just once, or it can be a recurring ema
 
 When linked to a scheduler, you can define recurring emails.
 Email recipients are defined upstream of the activity in the same workflow, via an Audience targeting activity.
-
 -->
 
 

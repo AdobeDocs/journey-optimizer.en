@@ -7,13 +7,48 @@ role: User
 level: Beginner
 keywords: in-app, message, creation, start
 exl-id: b3b79fe2-7db3-490d-9c3d-87267aa55eea
+TQID: https://experienceleague.adobe.com/rCvifXOYsVI8eaUhNs-tjF-N50BakY-58rqGgTrYzpw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create an In-app message {#create-in-app}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create an In-app message in Adobe Journey Optimizer and add it to a journey or a campaign, including configuring triggers and display frequency.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_triggers"
 >title="Manage In-app Triggers"
 >abstract="Efficiently control your Triggers by selecting the specific events and criteria that will activate your messages. With the Rule builder, users can define precise conditions and values. When these conditions are met, they initiate a series of actions, including the delivery of in-app messages."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_in_app"
+>title="In-app message action"
+>abstract="An in-app message inbound action displays an in-app message to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references an in-app configuration that defines the content shown. The **Optimization** section can include content experiments or targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default), giving profiles time to view the in-app message."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 You can add an In-app message in a campaign or in a journey. Follow the steps detailed below to create an In-app message in both contexts.
 
@@ -29,7 +64,7 @@ To add an In-app message in a journey, follow these steps:
 
     >[!IMPORTANT]
     >
-    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL In-app]** as the action type.
 
@@ -53,7 +88,7 @@ To add an In-app message in a journey, follow these steps:
 
     1. Click the event drop-down to change your Trigger if needed.
         
-        +++See available Triggers.
+        +++ See available Triggers
         
         | Package | Trigger | Definition |
         |---|---|---|
@@ -70,7 +105,7 @@ To add an In-app message in a journey, follow these steps:
         |Places|Exit POI| Triggered by the Places SDK when your customer exits the Point of Interest (POI) that you configured.|
 
         +++
-    
+ 
     1. Click **[!UICONTROL Add condition]** if you want the trigger to consider multiple events or criteria.
 
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
@@ -79,7 +114,7 @@ To add an In-app message in a journey, follow these steps:
 
     1. Choose the **[!UICONTROL And]** condition if you want to add **[!UICONTROL Traits]** and better fine-tune your rule.
 
-        +++See available Traits.
+        +++ See available Traits
         
         | Package | Traits | Definition |
         |---|---|---|
@@ -89,7 +124,7 @@ To add an In-app message in a journey, follow these steps:
         |Device info|OS version|Triggered when one of the specified OS version is met.|
         |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
         |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.| 
+        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -102,7 +137,7 @@ To add an In-app message in a journey, follow these steps:
         |Places|Last exited POI|Triggered by the Places SDK depending on your customer last exited Point of Interest (POI).|
 
         +++
-        
+
         ![](assets/in_app_create_8.png)
 
     1. Click **[!UICONTROL Make group]** to group triggers together.
@@ -159,7 +194,7 @@ To add an In-app message in a campaign, follow these steps:
 
     1. Click the event drop-down to change your Trigger if needed.
         
-        +++See available Triggers.
+        +++ See available Triggers
         
         | Package | Trigger | Definition |
         |---|---|---|
@@ -176,7 +211,7 @@ To add an In-app message in a campaign, follow these steps:
         |Places|Exit POI| Triggered by the Places SDK when your customer exits the Point of Interest (POI) that you configured.|
 
         +++
-    
+
     1. Click **[!UICONTROL Add condition]** if you want the trigger to consider multiple events or criteria.
 
     1. Choose the **[!UICONTROL Or]** condition if you want to add more **[!UICONTROL Triggers]** to further expand your rule.
@@ -185,7 +220,7 @@ To add an In-app message in a campaign, follow these steps:
 
     1. Choose the **[!UICONTROL And]** condition if you want to add **[!UICONTROL Traits]** and better fine-tune your rule.
 
-        +++See available Traits.
+        +++ See available Traits
         
         | Package | Traits | Definition |
         |---|---|---|
@@ -195,7 +230,7 @@ To add an In-app message in a campaign, follow these steps:
         |Device info|OS version|Triggered when one of the specified OS version is met.|
         |Device info|Previous OS version|Triggered when one of the specified Previous OS version is met.|
         |Device info|Run mode|Triggered if Run mode is either application or extension.|
-        |Application lifecycle|App ID| Triggered when the specified App ID is met.| 
+        |Application lifecycle|App ID| Triggered when the specified App ID is met.|
         |Application lifecycle|Day of week|Triggered when the specified day of week is met.|
         |Application lifecycle|Day since first use|Triggered when the specified number of day since first use is met.|
         |Application lifecycle|Day since last use|Triggered when the specified number of day since last use is met.|
@@ -208,7 +243,7 @@ To add an In-app message in a campaign, follow these steps:
         |Places|Last exited POI|Triggered by the Places SDK depending on your customer last exited Point of Interest (POI).|
 
         +++
-        
+
         ![](assets/in_app_create_8.png)
 
     1. Click **[!UICONTROL Make group]** to group triggers together.

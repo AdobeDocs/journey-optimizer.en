@@ -9,9 +9,36 @@ role: Admin, Developer
 level: Experienced
 keywords: permission, high-level, low-level, profile, admin console
 exl-id: 1b286f9d-43ef-4b80-b4ee-136da857bb95
+TQID: https://experienceleague.adobe.com/JmWqA2lkS0vWlssVYWycq-gvC6IRrrmAokJj1AGINxc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+subfeature_v2:
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Permission levels {#high-low-permissions}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how high-level permissions group the underlying low-level permissions for each resource, so you can grant roles exactly the feature access your users need.
+
+>[!ENDSHADEBOX]
 
 Each role is composed of permissions allowing users to access the different features. 
 
@@ -170,9 +197,12 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
       * campaign.read
       * campaign.write
       * campaign.delete
-      <!--* experiments.read
+      <!--
+      * experiments.read
       * experiments.write
-      * experiments.delete-->
+      * experiments.delete
+      
+-->
 
   +++
 
@@ -184,7 +214,9 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
       * campaign-read
       * campaign-publish
-      <!--* experiments.activate-->
+      <!--
+      * experiments.activate    
+      -->
 
   +++
 
@@ -195,8 +227,10 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
     * Journey Optimizer specific:
       * campaign.read
       * campaign-report.read
-      <!--* experiments.read
-      * experiments_report.read-->
+      <!--
+      * experiments.read
+      * experiments_report.read
+      -->
 
   +++
 
@@ -326,6 +360,16 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
+* **[!DNL Manage key registry]** high-level permission allows users to view, create, rotate, and revoke keys in the key registry.
+
+  +++ This permission includes the following low-level permissions:  
+
+  * Journey Optimizer specific: 
+    * key-registry.read
+    * key-registry.write
+
+  +++
+
 * **[!DNL Manage landing page settings]** high-level permission allows users to read, create and edit landing page subdomains and preset settings.
 
   +++ This permission includes the following low-level permissions: 
@@ -382,7 +426,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
 
   +++
 
-* **[!DNL Manage Seedlist]** high-level permission allows users to read, create, edit and delete Seedlist.
+* **[!DNL Manage seed lists]** high-level permission allows users to read, create, edit and delete seed lists.
 
   +++ This permission includes the following low-level permissions: 
 
@@ -433,6 +477,15 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
   * Journey Optimizer specific: 
 
     * file_routing.read
+
+  +++
+
+* **[!DNL View key registry]** high-level permission allows users to view the key registry listing and key details.
+
+  +++ This permission includes the following low-level permissions:  
+
+  * Journey Optimizer specific: 
+    * key-registry.read
 
   +++
 
@@ -637,3 +690,43 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
       * queries.delete
 
   +++
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** Journey Optimizer roles are built from high-level permissions, each of which bundles the specific low-level API rights users need to read, write, publish, or delete resources across journeys, campaigns, decisions, channel configurations, and more.
+
+**Intents:**
+
+* Understand the distinction between high-level and low-level permissions
+* Identify which low-level permissions are granted by each high-level permission
+* Configure roles precisely for journeys, campaigns, decision management, channel configurations, and orchestrated campaigns
+* Grant AI Assistant access for content generation
+* Understand what the Publish journeys permission allows compared to the Manage journeys permission
+
+**Glossary:**
+
+* **High-level permission**: A named permission assigned to a role (e.g., Manage journeys, Publish journeys) that encompasses one or more low-level permissions *(product-specific)*
+* **Low-level permission**: A granular API-level right (e.g., journeys.read, journeys.write) derived from and included within a high-level permission *(product-specific)*
+* **Role**: A collection of users sharing the same permissions and sandboxes within the organization *(product-specific)*
+
+**Terminology:**
+
+* Do not confuse: "High-level permission" (named right assignable to a role) ≠ "Low-level permission" (underlying granular API right, not directly assignable)
+* Do not confuse: "Manage journeys" (allows create, edit, delete, stop — including live, test mode, and dry run) ≠ "Publish journeys" (allows publish, start test mode, start dry run, pause, and resume journeys)
+* Do not confuse: "Manage journeys events, data sources and actions" (full CRUD on events, sources, actions) ≠ "View journeys events, data sources and actions" (read-only access to those objects)
+* Do not confuse: "Generate content" (access to AI Assistant in Journey Optimizer) ≠ other journey or campaign permissions
+* Do not confuse: "Test mode" (referenced in Publish journeys and Manage journeys as a journey execution mode that can be started or stopped) ≠ "Dry run" (a separate journey execution mode also referenced in those same permissions)
+
+**FAQ:**
+
+* **Q: Does the Manage journeys permission allow a user to publish journeys?** — No; publishing journeys requires the separate Publish journeys high-level permission.
+* **Q: What does the Generate content permission grant?** — Access to AI Assistant in Journey Optimizer.
+* **Q: Can a user configure journey events without the Manage journeys permission?** — Yes; Manage journeys events, data sources and actions is a separate high-level permission covering event, data source, and action configuration.
+* **Q: What low-level permissions are included in View journeys report?** — journeys_report.read and messages_report.read, plus datasets.read, queries.read, queries.write, and queries.delete from Adobe Experience Platform.
+
++++
+<!-- ai-accordion-version: 1 | source-hash: d1d9ebf9 -->

@@ -9,8 +9,34 @@ role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
 exl-id: b7f12c65-c1af-4c49-b126-c13a51940a43
+TQID: https://experienceleague.adobe.com/bGwpeOAxkX8JWh2c-CNrq7-L1YphGT0aoQvUJBia4IE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Edit the API triggered campaign content {#api-content}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Design and personalize your API triggered campaign content with contextual data passed in the API payload so each message is tailored in real time for every recipient.
+
+>[!ENDSHADEBOX]
 
 To configure the message content, navigate to the **[!UICONTROL Content]** tab or click the **[!UICONTROL Edit content]** button.
 
@@ -23,8 +49,8 @@ The content creation process depends on the channel you selected. Learn detailed
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><a href="../email/create-email.md"><img alt="email" src="../channels/assets/do-not-localize/email.png"></a>
 <div align="center"><a href="../email/create-email.md"><strong>Email</strong></a></div></td>
-<td><a href="../sms/create-sms.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
-<div align="center"><a href="../sms/create-sms.md"><strong>SMS</strong></a></div></td>
+<td><a href="../mobile/create-mobile-message.md"><img alt="sms" src="../channels/assets/do-not-localize/sms.png"></a>
+<div align="center"><a href="../mobile/create-mobile-message.md"><strong>SMS</strong></a></div></td>
 <td><a href="../push/create-push.md"><img alt="push" src="../channels/assets/do-not-localize/push.png"></a>
 <div align="center"><a href="../push/create-push.md"><strong>Push notification</strong></a></div></td>
 </tr></table>
@@ -54,7 +80,12 @@ Note that, for now, no contextual attribute is available for use in the left rai
 
 ## Test and check your content
 
-Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to preview and test content](../content-management/preview-test.md). To browse back to the campaign creation screen, click the left arrow.
+Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content. You can use either simulation method:
+
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation.
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
+
+[Learn how to preview and test content](../content-management/preview-test.md). To browse back to the campaign creation screen, click the left arrow.
 
 ![](assets/create-campaign-design.png)
 

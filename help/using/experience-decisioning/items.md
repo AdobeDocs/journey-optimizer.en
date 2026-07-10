@@ -7,8 +7,22 @@ role: User
 level: Intermediate
 exl-id: 5c866814-d79a-4a49-bfcb-7a767d802e90
 version: Journey Orchestration
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 ---
 # Create your first decision item {#items}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Create and manage decision items, including their attributes, eligibility, and capping rules, so you can present the right marketing offers to the right profiles.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_exd_items"
@@ -28,6 +42,16 @@ To create a decision item, navigate to **[!UICONTROL Decisioning]** > **[!UICONT
 >title="Define the decision item's priority"
 >abstract="If a profile qualifies for multiple items, the priority enables to compare this decision item to others. A higher priority grants the item precedence over others."
 
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_ajo_fragment"
+>title="Map a Journey Optimizer content fragment to this decision item"
+>abstract="Attach a content fragment from your Journey Optimizer fragment library."
+
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_aem_fragment"
+>title="Map an AEM content fragment to this decision item"
+>abstract="By attaching a content fragment to this decision item, you can leverage your content directly from Adobe Experience Manager."
+
 Start by defining the decision item's standard and custom attributes :
 
 ![](assets/item-attributes.png)
@@ -39,26 +63,22 @@ Start by defining the decision item's standard and custom attributes :
     >[!NOTE]
     >
     >The priority is an integer data type. All attributes that are integer data types should contain integer values (no decimals).
-    
+
 1. The **Tags** field allows you to assign Adobe Experience Platform Unified Tags to your decision items. This allows you to easily classify them and improve search. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
 
-1. Use fragments to add multiple contents to the decision item - for example, if you want to display different contents for several mobile device models. [Learn more on fragments](../content-management/fragments.md)
+1. Add fragments to your decision item to enrich its content. Two types of fragments are supported:
 
-    >[!AVAILABILITY]
-    >
-    >This capability is currently only available for the Code-based experience channel.
+    * **Journey Optimizer content fragments** — Use reusable expression fragments created in Journey Optimizer to display different contents depending on context, for example across several mobile device models. You can leverage these fragments in your decision policies across all channels where Decisioning is available (code-based experience, Email, Push, SMS, and journeys). [Learn how](fragments-decision-policies.md#ajo-fragments)
 
-    In the **[!UICONTROL Fragments]** section, select the published fragments you want to use and assign them a reference key. You can then leverage these fragments in you decision policies. [Learn how](fragments-decision-policies.md)
+        When using these fragments in your decision policies, you can make a fragment optional so that it is skipped if temporarily unavailable on Edge. [Learn how](fragments-decision-policies.md#temporary-unavailable-fragments)
 
-    ![](assets/item-fragments.png){width=70%}
+    * **AEM content fragments** — Map Adobe Experience Manager content fragments directly to your decision item's attributes. Fill in the **Fragment reference key** field and select the fragment in the **Value** field. Once mapped, the content fragment fields can be selected in the decision policy, and Journey Optimizer can optimize which fragment is served to each profile. [Learn how](fragments-decision-policies.md#aem-fragments-decisioning)
 
-    You can only select published fragments and add up to six fragments in a decision item.
+        >[!AVAILABILITY]
+        >
+        >This feature is available for channels with Decisioning support.
 
-    >[!WARNING]
-    >
-    >Currently only [expression fragments](../personalization/use-expression-fragments.md) are supported.
-    >
-    >Nested fragments (fragments referencing other fragments) cannot be used. The decision item's [approval](#approve) will fail if you add such a fragment.
+        For prerequisites and guardrails, refer to [Use AEM Content Fragments with Experience Decisioning](../integrations/aem-fragments.md#aem-decisioning).
 
 1. Specify custom attributes (optional). Custom attributes are specific attributes tailored to your needs that you can assign to a decision item. They are defined in the decision items' catalog schema. [Learn how to work with catalogs](catalogs.md)
 
@@ -194,8 +214,10 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
 
     ![](assets/item-capping-rules.png)
 
-<!--* Identifying how many times a given customer has been shown a decision item. 
-If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event-->
+<!--
+* Identifying how many times a given customer has been shown a decision item. 
+If a marketer wants to determine how many times a specific customer has been shown an offer, they can do that. Go to Profiles menu, Attributes tab. You'll see all counter values. The alphanumeric string is associated to the offer. To make the map, go to an item, in the URL check the last alphanumeric strings. D stands for day, w stands for week, m for month. "Ce" custom event
+-->
 
 ## Review and approved the decision item {#approve}
 

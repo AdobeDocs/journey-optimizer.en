@@ -9,8 +9,38 @@ role: Admin
 level: Experienced
 keywords: IP, pools, group, subdomais, deliverability
 exl-id: 606334c3-e3e6-41c1-a10e-63508a3ed747
+TQID: https://experienceleague.adobe.com/z-91TIrSp9KXlFcJRG9wmTRNRA2RU-AaEoMtaLcmNWM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Create IP pools {#create-ip-pools}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, edit, and delete IP pools that group your subdomain IP addresses to improve email deliverability and protect sender reputation.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_pool_header"

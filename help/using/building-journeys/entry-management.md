@@ -9,9 +9,44 @@ level: Intermediate
 keywords: reentrance, journey, profile, recurring
 exl-id: 8874377c-6594-4a5a-9197-ba5b28258c02
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/li1WSyhVKq58N-FiTEL51gX-u911JVyZXcnBZtwNhDE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
+    internal-label: Wait activity
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
+  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
+    internal-label: Audience Qualification events
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
-
 # Profile entrance management {#entry-management}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how profile entrance and reentrance work for each type of journey so you can control when and how often profiles enter your journeys.
+
+>[!ENDSHADEBOX]
 
 Profile entrance management depends on the type of journey.
 
@@ -73,7 +108,7 @@ In **Unitary event** and **Audience qualification** journeys, you can enable or 
 
 * If reentrance is disabled, a profile cannot enter multiple times the same journey, within the global journey timeout period. See this [section](../building-journeys/journey-properties.md#global_timeout).
 
-By default, journeys allow reentrance. When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. It allows you to define the time to wait before allowing a profile to enter the journey again. This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 91 days ([global timeout](journey-properties.md#global_timeout)).
+By default, journeys allow reentrance. When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. It allows you to define the time to wait before allowing a profile to enter the journey again. This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days ([global timeout](journey-properties.md#global_timeout)).
 
 <!--
 When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. 
@@ -84,7 +119,8 @@ When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can 
 After the reentrance period, profiles can reenter the journey. To avoid this, and fully disable reentrance for those profiles, you can add a condition to test if the profile entered already or not, using profile or audience data.
 
 <!--
-Due to the 30-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago. -->
+Due to the 30-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago. 
+-->
 
 ## Business journeys {#entry-business}
 
@@ -104,9 +140,9 @@ For more information, refer to this [section](../event/about-creating-business.m
 
 ## Read audience journeys {#entry-read-audience}
 
-**Read audience** journeys can be recurring or "one-shot": 
+**Read audience** journeys can be recurring or non-recurring: 
 
-* For non-recurring/"one-shot" journeys: the profile enters once and only once in the journey.
+* For non-recurring journeys: the profile enters once and only once in the journey.
 
 * For recurring journeys: by default, all the profiles belonging to the audience enter the journey on each recurrence. They must finish the journey before they can reenter in another occurrence. 
 
@@ -122,3 +158,56 @@ After 91 days, a Read audience journey switches to the **Finished** status. This
 * [Configure exit criteria](journey-properties.md#exit-criteria) - Define when profiles should leave your journey
 * [End a journey](end-journey.md) - Understand how journeys close and finish
 * [Journey use cases](jo-use-cases.md) - See complete examples with entry and exit configurations
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how profile entry management works across the four journey types in Adobe Journey Optimizer, including throughput limits, reentrance settings, and the behavior of Wait and action activities on processing rate.
+
+**Intents:**
+
+* Understand the entry behavior and throughput limits for each journey type (Unitary event, Business event, Read audience, Audience qualification)
+* Enable or disable profile reentrance and configure the reentrance wait period
+* Allow multiple business event executions for a Business journey
+* Identify how Wait activities and action activities affect journey processing rate
+* Ensure a profile is not present in the same journey at the same time
+
+**Glossary:**
+
+* **Reentrance**: The ability for a profile to enter the same journey again after previously exiting it; configurable with a wait period *(product-specific)*
+* **Reentrance wait period**: The minimum time that must pass before a profile can re-enter a journey; default is 5 minutes, maximum is 90 days in journey properties *(product-specific)*
+* **TPS (Transactions Per Second)**: The throughput rate at which profiles can enter or be processed in a journey *(product-specific)*
+* **Unitary event journey**: A journey triggered by a single event associated with one profile *(product-specific)*
+* **Read audience journey**: A journey that processes a batch of profiles belonging to a defined audience, either once or on a recurring schedule *(product-specific)*
+* **Business event journey**: A journey triggered by a business event that targets an audience, creating one journey instance per profile *(product-specific)*
+* **Audience qualification journey**: A journey triggered when a profile enters or exits a streaming audience in real-time *(product-specific)*
+
+**Guardrails:**
+
+* A profile cannot be present multiple times in the same journey at the same time across all active versions.
+* Read audience journeys: maximum 20,000 TPS (sandbox-level quota; shared across all concurrent Read Audience journeys in the same sandbox)
+* Audience qualification and Unitary event journeys: maximum 5,000 TPS (org-level quota; shared with each other across all sandboxes in the org)
+* Business events count toward the 5,000 TPS org-level quota; the subsequent Read audience activity shares the 20,000 TPS sandbox-level quota
+* Default reentrance wait period is 5 minutes; maximum configurable value is 90 days in journey properties
+* Fixed-time Wait activities can cause profile surges exceeding 20,000 TPS and are not recommended.
+* Custom action default capping is 300,000 calls per minute.
+* For Business journeys, audience data from the first execution is reused for 1 hour.
+
+**Terminology:**
+
+* Canonical name: Profile entrance management — Acronym: n/a — variants: profile entry management, journey entry
+* Synonyms: "reentrance" = "re-entry"
+* Do not confuse: "Unitary event journey" ≠ "Audience qualification journey" — both are unitary scenarios but triggered differently (event emission vs. audience membership change)
+
+**FAQ:**
+
+* **Q: Can a profile enter the same journey twice simultaneously?** — No, the system uses the profile identity as a key and prevents the same profile from being at different places in the same journey at the same time.
+* **Q: What is the default reentrance wait period?** — 5 minutes, configurable up to a maximum of 90 days in journey properties.
+* **Q: How many profiles per second can a Read audience journey process?** — Up to 20,000 TPS at sandbox level, though this maximum may not be achievable if multiple journeys run simultaneously in the same sandbox.
+* **Q: What happens to throughput after a Wait activity with a fixed time?** — Multiple profiles may exit the wait simultaneously, potentially exceeding 20,000 TPS; relative-time Wait activities are recommended to avoid this.
+* **Q: Can a profile appear in a Business journey multiple times at the same time?** — Yes, but only in the context of different business events.
+
++++

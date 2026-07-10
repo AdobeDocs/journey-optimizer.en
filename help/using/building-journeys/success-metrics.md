@@ -10,8 +10,43 @@ level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: 95d0267e-fab4-4057-8ab5-6f7c9c866b0f
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/iHr0CFVSDz-4tOxNKyCyPZdwva3nfDyuU0Y5XHZEdjk
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Configure and track your journey metrics {#success-metrics}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure and assign journey metrics to track performance against your KPIs and measure the effectiveness of your customer journeys in real time.
+
+>[!ENDSHADEBOX]
 
 Gain clear visibility into the effectiveness of your customer journeys with journey metrics. This feature enables you to track performance against defined KPIs, uncover insights into what's working, and identify areas for optimization. By measuring impact in real time, you can drive continuous improvement and make data-informed decisions that elevate customer engagement.
 
@@ -96,3 +131,48 @@ To begin tracking your journey metrics, follow the steps outlined below:
 
     ![Success metrics dropdown showing available events for goal tracking](assets/success_metric_2.png)
 
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to configure and track journey success metrics in Adobe Journey Optimizer by assigning a KPI to a journey and reviewing its performance in journey reports.
+
+**Intents:**
+* Add the required AEP dataset field groups (Commerce Details, Web, Mobile) as a prerequisite for journey metrics
+* Assign a journey metric (KPI) to a journey during journey creation or configuration
+* Understand which metrics are available based on the configured dataset field groups
+* Interpret attribution models for journey metrics under Journey Optimizer and Customer Journey Analytics licenses
+* Create custom success metrics using a Customer Journey Analytics license
+* Track journey performance against the assigned KPI in journey reports
+
+**Glossary:**
+* **Journey metrics**: KPIs assigned to a journey to measure its effectiveness, visible in journey reports *(product-specific)*
+* **Last Touch attribution**: The default attribution model that credits the most recent interaction before a conversion
+* **Commerce Details field group**: An XDM field group enabling commerce-related metrics such as Purchases, Checkouts, and Cart events
+* **Lookback window**: The time range over which attribution is evaluated; set to a maximum of 7 days with Journey Optimizer license only
+
+**Guardrails:**
+* Only one journey metric is allowed per journey
+* Dataset field groups (Commerce Details, Web, Mobile) must be selected from built-in options, not custom groups, and added under Configuration > Reporting in Adobe Experience Platform
+* Without a configured dataset, only Clicks, Unique Clicks, Clickthrough Rate, and Open Rate are available
+* The maximum lookback window is 7 days with a Journey Optimizer license only
+* Custom metrics and custom attribution settings require a Customer Journey Analytics license
+
+**Terminology:**
+* Canonical name: Journey metrics — Acronym: none — variants: success metrics, journey success metrics
+* Canonical name: Clickthrough Rate — Acronym: CTR — variants: none
+* Canonical name: Clickthrough Open Rate — Acronym: CTOR — variants: none
+* Synonyms: "journey metrics" = "success metrics" (used interchangeably in the UI and documentation)
+* Do not confuse: "Journey Optimizer license attribution" ≠ "Customer Journey Analytics attribution" — CJA license enables custom attribution models and longer lookback windows
+
+**FAQ:**
+* **Q: How many journey metrics can I assign to a single journey?** — Only one journey metric is allowed per journey.
+* **Q: What metrics are available if I haven't configured a dataset with field groups?** — Only Clicks, Unique Clicks, Clickthrough Rate, and Open Rate are available without additional field group configuration.
+* **Q: What field groups do I need to enable purchase and commerce metrics?** — You need to add the Commerce Details field group to your reporting dataset in Adobe Experience Platform.
+* **Q: What is the default attribution model for journey metrics?** — Last Touch, which credits the most recent interaction before conversion, with a maximum 7-day lookback window under a Journey Optimizer license.
+* **Q: Can I create custom success metrics?** — Yes, but only with a Customer Journey Analytics license.
+* **Q: Where can I see the journey metrics results after publishing?** — In the journey report's KPIs and Journey Stats table.
+
++++

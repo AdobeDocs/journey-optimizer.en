@@ -9,8 +9,41 @@ role: Admin, User
 level: Intermediate
 keywords: permissions, authoring, messages
 exl-id: 5a968bd8-cf76-4242-aa80-3cfb3d551511
+TQID: https://experienceleague.adobe.com/LkOCFOSH-AzwWMoteNN-XI3R2yYkO5iBrVwMtobd4iI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+subfeature_v2: []
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Built-in roles {#ootb-product-profiles}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore the built-in roles and the permissions each one includes, so you can quickly grant users a ready-made level of access that matches their responsibilities.
+
+>[!ENDSHADEBOX]
 
 Built-in roles are a set of unitary rights which allows users access to certain functionalities or objects in the interface. Refer to [this page](ootb-permissions.md) for the list of available permissions to build your role.
 
@@ -211,6 +244,52 @@ This role includes the following permissions:
 |Decision management| <ul><li>**[!DNL View decisions]**: read-only access to decisions entities.</li></ul>|
 |Journey Optimizer rules|<ul> <li>**[!DNL View frequency rules]**: read-only access to frequency rules.</li></ul>|
 |Orchestrated campaigns| <ul><li>**[!DNL View orchestrated campaigns]**: read-only access to Orchestrated campaigns.</li><li>**[!DNL View orchestrated campaigns report]**: read-only access to Orchestrated campaigns reports.</li></ul>|
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** Journey Optimizer ships with built-in roles — from Campaign Administrator to Orchestrated Campaign Viewer — each bundling a ready-made permission set, so administrators can quickly grant users a level of access that matches their responsibilities without building a role from scratch.
+
+**Intents:**
+
+* Identify which built-in role best fits a user's job responsibilities
+* Understand what each built-in role can and cannot do (including publish rights)
+* Compare roles across journey, campaign, and orchestrated campaign domains
+* Assign a ready-made role instead of creating a custom one
+* Understand which roles include AI Assistant access
+
+**Glossary:**
+
+* **Built-in role**: A pre-defined set of permissions and resource rights ready to assign to users without custom configuration *(product-specific)*
+* **Journey Administrator**: Built-in role enabling management and publication of Journeys and Decision management, including channel configuration and data governance permissions *(product-specific)*
+* **Campaign Administrator**: Built-in role enabling management and publication of Campaigns and Decision management, including channel configurations *(product-specific)*
+* **Decisioning manager**: Built-in role providing access exclusively to the Decision management menu; can manage, view, and publish decisions *(product-specific)*
+* **Content Library Manager**: Built-in role providing access only to the Content templates menu; cannot access journeys or campaigns *(product-specific)*
+* **Test mode**: A journey execution mode referenced in Manage journeys and Publish journeys permissions (Journey Administrator can stop journeys in test mode; Publish journeys permission includes starting test mode) *(product-specific)*
+* **Dry run**: A journey execution mode referenced in Manage journeys and Publish journeys permissions alongside test mode *(product-specific)*
+
+**Terminology:**
+
+* Canonical name: Built-in roles — variants: out-of-the-box roles, OOTB roles, product profiles
+* Do not confuse: "Campaign Approver" (can approve and publish campaigns) ≠ "Campaign Manager" (can create and edit campaigns but cannot publish them)
+* Do not confuse: "Journey Approver" (can approve and publish journeys) ≠ "Journey Manager" (can create and edit journeys but cannot publish them)
+* Do not confuse: "Journey Viewer" (read-only access to journeys and decision management) ≠ "Campaign Viewer" (read-only access to campaigns and decision management)
+* Do not confuse: "Orchestrated Campaign Administrator" (manages orchestrated campaigns, includes AI Assistant and data ingestion/management) ≠ "Campaign Administrator" (manages standard campaigns; does not include orchestrated campaign permissions)
+* Do not confuse: "Test mode" (referenced as a journey execution state that can be stopped or started via Manage journeys / Publish journeys) ≠ "Dry run" (a separate journey execution mode also referenced in those same permissions)
+
+**FAQ:**
+
+* **Q: Which built-in roles can publish journeys?** — Journey Administrator and Journey Approver can publish journeys.
+* **Q: Can a Journey Manager publish journeys?** — No; Journey Manager can create and edit journeys but the Publish journeys permission is not included in that role.
+* **Q: Which role grants access only to the Decision management menu?** — Decisioning manager.
+* **Q: Which role provides access only to content templates?** — Content Library Manager.
+* **Q: Which built-in roles include the Enable AI Assistant permission?** — Orchestrated Campaign Administrator, Orchestrated Campaign Approver, Orchestrated Campaign Manager, and Orchestrated Campaign Viewer.
+
++++
+<!-- ai-accordion-version: 1 | source-hash: b9740765 -->
 
 
 

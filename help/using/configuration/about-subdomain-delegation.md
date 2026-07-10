@@ -9,8 +9,38 @@ role: Admin
 level: Experienced
 keywords: subdomain, optimizer, delegation
 exl-id: 1b5ca4db-44d9-49e2-ab39-a1abba223ec7
+TQID: https://experienceleague.adobe.com/s6dJd1ZWjFDyQvTGShiAR-IDsKkOdfpYXCKw0bRdTI8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Subdomain delegation in [!DNL Journey Optimizer] {#subdomain-delegation}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn why and how to set up email sending subdomains in Adobe Journey Optimizer, comparing the full delegation, CNAME, and custom delegation methods to protect your domain reputation and deliverability.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_delegated_subdomains"
@@ -95,7 +125,8 @@ The table below provides a summary of how these methods work, as well as the imp
 | Configuration method | How it works | Level of effort |
 |---|---|---|
 | **Full delegation** | Create the subdomain and namespace record. Adobe will then configure all DNS records required for Adobe Journey Optimizer.<br/><br/>In this setup, Adobe is fully responsible for managing the subdomain and all the DNS records. | Low |
-| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Journey Optimizer DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |-->
+| **CNAME method** |  Create the subdomain and namespace record. Adobe will then provide the records to be placed in your DNS servers and will configure the corresponding values in Adobe Journey Optimizer DNS servers.<br/><br/>In this setup, both you and Adobe share responsibility for maintaining DNS. | High |
+-->
 
 
 | Configuration method | How it works | Level of effort |

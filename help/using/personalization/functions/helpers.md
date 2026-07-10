@@ -6,10 +6,14 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2: []
 ---
 # Helpers {#gs-helpers}
 
-## Default Fallback Value{#default-value}
+## Default fallback value{#default-value}
 
 The `Default Fallback Value` helper is used to return a default fallback value if an attribute is empty or null. This mechanism works for Profile attributes and Journey events.
 
@@ -128,7 +132,7 @@ Some edu specific content
 ## Each{#each}
 
 The `each` helper is used to iterate over an array.
-The syntax of the helper is ```{{#each ArrayName}}``` YourContent `{{/each}}` 
+The syntax of the helper is `{{#each ArrayName}}` YourContent `{{/each}}`.
 We can refer to the individual array items by using the keyword **this** inside the block. The index of the array's element can be rendered by using `{{@index}}`. 
 
 **Syntax**
@@ -210,9 +214,58 @@ The following example lets you calculate the total sum of prices for products in
 {{sum}}
 ```
 
+## Url {#url}
+
+The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your SMS message content.
+
+**Syntax**
+
+```sql
+{{url originalUrl='<your_url>' type='<DEEPLINK>' action='CLICK'}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+|---|---|
+| `originalUrl` | The URL to shorten. |
+| `type` | The link type. Use `DEEPLINK` to open a specific screen in a mobile app. |
+| `action` | The tracking action. Use `CLICK` to track clicks on the link. |
+
+**Example**
+
+```sql
+  {{url originalUrl='https://www.mybusiness.com/offers/summer-sale' type='DEEPLINK' action='CLICK'}}
+```
+
+## Dataset lookup {#dataset-lookup}
+
+>[!AVAILABILITY]
+>
+>This feature is currently available to all customers as a limited availability release.
+>
+>For now, the `datasetLookup` helper function can be used within expression fragments for a limited set of customers. To gain access, contact your Adobe representative.
+
+The `datasetLookup` helper retrieves data from Adobe Experience Platform record datasets during personalization so you can use field values that are not stored on the profile or in the event payload.
+
+**Syntax**
+
+```sql
+{{datasetLookup datasetId="datasetId" id="key" result="store" required=false}}
+```
+
+Reference retrieved fields with `{{result.fieldId}}`, where `result` is the value you pass to the `result` parameter.
+
+For dataset enablement, parameter details, examples, and testing, see [Use Adobe Experience Platform data for personalization](../aep-data-perso.md).
+
 ## Execution Metadata {#execution-metadata}
 
 The `executionMetadata` helper allows to dynamically capture and store custom key-value pairs into the message execution context.
+
+>[!NOTE]
+>
+>* The Execution Metadata function is not supported by [custom actions](../../action/action.md) and in inbound channels (Web, Code-based experience, In-App Message, Content Cards).
+>* The Execution Metadata function is not visible when the content itself is displayed.
 
 **Syntax**
 
@@ -225,11 +278,6 @@ In this syntax, `key` refers to the metadata name and `value` is the metadata to
 **Use case**
 
 With this function, you can append contextual information to any native action from your campaigns or journeys. This enables you to export real-time delivery contextual data to external systems for various purposes such as tracking, analytics, personalization and downstream processing.
-
->[!NOTE]
->
->* The Execution Metadata function is not supported by [custom actions](../../action/action.md).
->* The Execution Metadata function is not visible when the content itself is displayed.
 
 For instance, you can use the Execution Metadata helper to append a specific ID to each delivery sent to each profile. This information is generated during runtime and the enriched execution metadata can then be exported for downstream reconciliation with an external reporting platform.
 
@@ -276,4 +324,59 @@ In this example, assuming `profile.person.name.firstName` = "Alex", the resultin
   "value": "Alex"
 }
 ```
+
+## Encrypt {#url-parameter-encryption-helper}
+
+>[!AVAILABILITY]
+>
+>This capability is currently only available for the Email channel.
+
+The `Encrypt` function lets you encrypt any expression value at render time—commonly a profile attribute, a token, or even a stringified JSON structure you build in the expression—before it is written into a query parameter on tracking links or landing pages.
+
+Values that would appear as plain text in the URL (including PII or other sensitive data) are not readable when the link is inspected or forwarded. Only the values you wrap with this helper are encrypted; the rest of the URL is unchanged.
+
+**Use case**
+
+This helper allows you to protect sensitive profile data (PII) before including it in rendered output.
+
+**Prerequisite**
+
+An administrator must create at least one active key in the sandbox-level key registry. [Learn how to create and manage keys](../url-parameter-encryption.md#create-keys)
+
+>[!NOTE]
+>
+>Using a revoked or otherwise non-active key should cause the personalization to fail at render time so a message is not sent with an invalid key.
+
+**Syntax**
+
+```text
+{{encrypt dataPath keyName="keyName" version="version" result="variableName"}}
+```
+
+**Usage**
+
+This helper encrypts sensitive data and stores the result in a template variable. <!--The encryption is performed using the AES-256-GCM algorithm.-->
+
+You can apply the helper to one parameter, several, or all parameters in a link, depending on your URL design and length constraints.
+
+* **Input**: `dataPath` (data reference that must resolve to a string), `keyName` (encryption key identifier), `version` (optional key version), `result` (variable name for encrypted output)
+* **Output**: Makes the encrypted value available in the specified `result` variable.
+* **Result format**: The result variable contains a dot-separated string: `keyName.version.nonce.authTag.cipherText` (all segments except `keyName` and `version` are URL-safe Base64 encoded without padding).
+* **Static key requirements**: The `keyName` and `version` must be static string literals (dynamic references are not supported).
+* **Default version**: The `version` parameter is optional; if omitted, the encryption key service resolves the default version
+
+**Examples**
+
+| Example expression | Result |
+| --- | --- |
+| `{{encrypt profile.person.email keyName="email-key" version="1" result="enc"}}{{enc}}` | `email-key.1.RkFrZU5vbmNlQUJD.T3V0cHV0QXV0aFRhZ0Fh.am9obkBleGFtcGxlLmNvbQ` |
+| `{{encrypt profile.person.name.firstName keyName="pii-key" version="2" result="encName"}}{{encName}}` | `pii-key.2.U29tZVJhbmRvbUlW.QXV0aGVudGljYXRpb25UYQ.Sm9obg` |
+
+**Guardrails**
+
+* Decryption is handled outside [!DNL Journey Optimizer] on your landing pages, apps, or APIs. Plan key lifecycle and rotation with your security team so historical payloads can still be decrypted where needed.
+
+* Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
+
+* The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.
 

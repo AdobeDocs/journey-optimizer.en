@@ -8,8 +8,43 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: c5bae757-a109-45f8-bf8d-182044a73cca
+TQID: https://experienceleague.adobe.com/aZO-1xrS-34tIqadKDzZQBr-1x3W3tKgkQAM7q3FhLM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
+    internal-label: Consent management
+  - id: f365ec33-2b99-4b7f-b4ee-c743dd7f615f
+    internal-label: Data governance
+  - id: c8d5f2ce-ba44-43e9-a2bf-94a3d7d85ec3
+    internal-label: Data privacy requests
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
+    internal-label: Data modeling
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Manage opt-out {#consent}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Manage how recipients unsubscribe from communications and opt out of personalization, so you can honor their consent choices and meet your legal and brand-reputation obligations.
+
+>[!ENDSHADEBOX]
 
 Providing to recipients the capability to unsubscribe from receiving communications from a brand is a legal requirement, as well as ensuring this choice is honored. Failing to comply with these regulations introduces regulatory legal risks for your brand. It helps you avoid sending unsolicited communications to your recipients, which could make them mark your messages as spam and harm your reputation.
 
@@ -23,8 +58,21 @@ While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails a
 
 >[!NOTE]
 >
->In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression/){target="_blank"}
+>In addition, you can leverage Journey Optimizer **Suppression REST API** to control your outgoing messages using suppression and allow lists. [Learn how to work with the Suppression REST API](https://developer.adobe.com/journey-optimizer-apis/references/suppression){target="_blank"}
 
+### Check push opt-out status {#push-opt-out-status}
+
+Push opt-out for mobile apps is handled at the device level: when a user disables notifications on their device, the push token is removed from their profile. The **presence of a push token** on a profile is therefore the indicator of implicit push consent.
+
+To verify a profile's push consent status in Adobe Experience Platform:
+
+1. Open the profile in the **[!UICONTROL Profiles]** section of Adobe Experience Platform.
+1. Go to the **[!UICONTROL Attributes]** tab and look for the **[!UICONTROL Push Notification Details]** field group.
+1. If a push token is present, the profile has implicitly consented to receive push notifications. If no token is found, the user has opted out at the device level.
+
+>[!NOTE]
+>
+>For compliance use cases requiring explicit push consent tracking, use the **`consents.marketing.push.val`** attribute from the [Consents and Preferences field group](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. A value of `y` indicates explicit opt-in; `n` indicates explicit opt-out.
 
 Learn how to manage opt-out in Journey Optimizer email and SMS messages in these sections: 
 
@@ -38,11 +86,11 @@ Learn how to manage opt-out in Journey Optimizer email and SMS messages in these
 <p>
 </td>
 <td>
-<a href="../sms/sms-opt-out.md">
+<a href="../mobile/mobile-opt-out.md">
 <img alt="Infrequent" src="../assets/do-not-localize/privacy-sms-opt-out.jpeg" width="50%">
 </a>
 <div>
-<a href="../sms/sms-opt-out.md"><strong>SMS opt-out management</strong></a>
+<a href="../mobile/mobile-opt-out.md"><strong>SMS opt-out management</strong></a>
 </div>
 <p></td>
 </tr></table>
@@ -55,7 +103,7 @@ Learn how to manage opt-out in Journey Optimizer email and SMS messages in these
 
 Your customers can also opt out from being presented personalized contents. Once a profile has opted out from personalization, you need to ensure that their data is not used for personalization and you must replace any personalized content with a fallback variant.
 
-### In Decision Management {#opt-out-decision-management}
+### In decision management {#opt-out-decision-management}
 
 When leveraging offers, personalization preferences are not automatically implemented in [decision scopes](../offers/offer-activities/create-offer-activities.md#add-decision-scopes) used from a [decisioning](../offers/api-reference/offer-delivery-api/decisioning-api.md) API request or [edge decisioning](../offers/api-reference/offer-delivery-api/edge-decisioning-api.md) API request. In this case, you need to manually enforce personalization consent. To do so, follow the steps below.
 

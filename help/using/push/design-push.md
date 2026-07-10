@@ -8,8 +8,35 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 6f6d693d-11f2-48b7-82a8-171829bf8045
+TQID: https://experienceleague.adobe.com/YOE-hCnG978CvBHe2WeFekMjx4oBlsv4hBbSVaUjgWA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Design a push notification {#design-push-notification}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design push notification content for iOS, Android, and web, including the title and body, on-click behavior, media, buttons, and advanced options.
+
+>[!ENDSHADEBOX]
 
 Once you have created a push notification, you can design its content for iOS, Android, and Web platforms. This page guides you through composing your message, configuring on-click behavior, adding media and buttons, and setting advanced options to create engaging push notifications that resonate with your audience.
 
@@ -23,7 +50,9 @@ Once you have created a push notification, you can design its content for iOS, A
 ![](assets/title-body.png)
 
 To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the personalization editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
-    
+
+You can also insert profile attributes inline directly in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields by typing `{{`. An autocomplete dropdown opens at the cursor — select any attribute to insert it as a personalization token without opening the full editor. [Learn more about inline editing →](../personalization/personalize.md#inline-personalization)
+
 Use the device preview section to visualize how the push notification displays on iOS, Android, and Web.
 
 Accelerate your content creation with AI Assistant and generate compelling push notification text with [AI Assistant for text generation](../content-management/generative-text.md) or create complete push notifications with [AI Assistant for full content generation](../content-management/generative-full-content.md).
@@ -40,13 +69,17 @@ Configure the action that occurs when recipients tap the body of your push notif
 ![](assets/title-body-push.png)
 
 * **[!UICONTROL Open app]**: Launches the application associated with the notification. The app is specified in your [channel configuration](../configuration/channel-surfaces.md) (i.e. message preset).
-* **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deeplink URL in the provided field.
+* **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deep link URL in the provided field.
 * **[!UICONTROL Web URL]**: Directs users to an external webpage. Enter the destination URL in the provided field.
 
-    >[!NOTE]
-    >
-    >If your push notification contains a URL that is configured as a universal link in iOS, the push will open the associated app if installed, regardless of your chosen **[!UICONTROL Web URL]** action. To force a browser open, use a domain not configured for universal links, or remove universal link registration for the domain.
-    >For more information on how the Adobe SDK handles deep links and universal links, refer to the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/push-notifications/){target="_blank"}.
+When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL.
+
+![](assets/push-link-tooltip.png)
+
+>[!NOTE]
+>
+>If your push notification contains a URL that is configured as a universal link in iOS, the push will open the associated app if installed, regardless of your chosen **[!UICONTROL Web URL]** action. To force a browser open, use a domain not configured for universal links, or remove universal link registration for the domain.
+>For more information on how the Adobe SDK handles deep links and universal links, refer to the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer/push-notifications){target="_blank"}.
 
 ## Add media {#add-media-push}
 
@@ -75,7 +108,7 @@ Once added, the media displays on the right of the notification body.
 
 >[!NOTE]
 >
->When including media attachments in the push notification payload (such as images in custom data fields like `adb_media`), your mobile application must implement specific client-side handling for the images to render on devices. Your app must implement the [automatic display and tracking workflow](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/push-notification/android/automatic-display-and-tracking/){target="_blank"} to handle image attachments from the payload. 
+>When including media attachments in the push notification payload (such as images in custom data fields like `adb_media`), your mobile application must implement specific client-side handling for the images to render on devices. Your app must implement the [automatic display and tracking workflow](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/push-notification/android/automatic-display-and-tracking){target="_blank"} to handle image attachments from the payload. 
 
 >[!TAB iOS]
 
@@ -140,7 +173,7 @@ For iOS, a notification category identifier is specified. Notification categorie
 
 Use the **[!UICONTROL Add Button]** option to define each button's label and associated action, as detailed below:
 
-* **[!UICONTROL Deeplink]**: Redirect users to a specific view, section, or tab within your app. Enter the deeplink URL in the associated field.
+* **[!UICONTROL Deeplink]**: Redirect users to a specific view, section, or tab within your app. Enter the deep link URL in the associated field.
 
 * **[!UICONTROL Web URL]**: Redirect users to an external webpage. Enter the URL in the associated field.
 

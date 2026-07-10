@@ -5,9 +5,25 @@ title: New journey interface
 feature: Release Notes
 topic: Content Management
 description: New journey interface
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
+TQID: https://experienceleague.adobe.com/-QKSnBRN9yPYEq5ay9wD-uf4lLduJqmtlFWDnLYt1gk
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Welcome to the Improved Journey Designer {#new-canvas}
 
@@ -45,7 +61,7 @@ In the below screenshot, you can see the redesigned UI for the journey canvas (o
 
 ## Improved journey canvas design
 
-With the new journey model, we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the Adobe Experience Cloud solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the new model will be on that new design.
+With the new journey model, we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the [!DNL Adobe CX Enterprise] solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the new model will be on that new design.
 
 ![](assets/new-canvas3.gif)
 
@@ -74,7 +90,8 @@ For each activity within every live journey using the new model, you have access
 
 ![](assets/new-canvas6bis.png)
 
-<!--`
+<!--
+`
 With every live journey on the new model, you will be able to see two types of "last 24 hours" reporting information:
 
 * On a **new insert**, you will see:

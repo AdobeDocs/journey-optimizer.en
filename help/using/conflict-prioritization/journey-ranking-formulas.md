@@ -7,12 +7,26 @@ level: Intermediate
 version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
 exl-id: b172e0e1-b78e-4d96-ab88-254507b55f48
+feature_v2:
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization
+subfeature_v2:
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
 ---
 # Use formulas to rank journeys {#journey-ranking-formulas}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Create ranking formulas based on journey attributes, profile attributes, or AI scores so the best journey is selected for each profile when journey caps apply.
+
+>[!ENDSHADEBOX]
 
 >[!AVAILABILITY]
 >
 >This feature is currently in Limited Availability. Contact your Adobe representative to gain access.
+>
+>Ranking formulas are only available to organizations that have purchased the **Decisioning** add-on offering.
 
 [!DNL Adobe Journey Optimizer] helps you control which journeys a profile can enter when they qualify for more than the system allows. To do so, you can use [rule sets](rule-sets.md) to define caps on journey entry or concurrency. When a profile is eligible for more journeys than the cap allows, the priority assigned to each journey determines which journeys are selected.
 
@@ -23,7 +37,8 @@ Formulas give you more flexibility than static priority. For example, you can bo
 <!--
 >[!NOTE]
 >
->Journey ranking formulas follow the same guardrails as decisioning ranking formulas (nesting depth, rule string size). [Learn more about Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md#ranking-formulas).-->
+>Journey ranking formulas follow the same guardrails as decisioning ranking formulas (nesting depth, rule string size). [Learn more about Decisioning guardrails & limitations](../experience-decisioning/decisioning-guardrails.md#ranking-formulas).
+-->
 
 ## Create a ranking formula {#create-journey-ranking-formula}
 
@@ -43,7 +58,8 @@ To create a ranking formula for your journeys, follow the steps below.
     >The ranking object is the entity that the ranking formula will apply to. By default, the ranking object is set to **[!UICONTROL Journey]**.
 
     <!--
-    Selecting a formula entity specifies which type of item—such as journeys or other entities—the ranking formula will apply to. This determines the context in which the formula operates, allowing you to define rules that influence how those items are ranked.-->
+    Selecting a formula entity specifies which type of item—such as journeys or other entities—the ranking formula will apply to. This determines the context in which the formula operates, allowing you to define rules that influence how those items are ranked.
+-->
 
 1. Optionally, click **[!UICONTROL Select AI model]** to set the model that will be used as a reference to build your ranking formula. [Learn more](journey-ai-models.md)
 
@@ -52,7 +68,8 @@ To create a ranking formula for your journeys, follow the steps below.
     >
     >[Personalized optimization models](../experience-decisioning/ranking/personalized-optimization-model.md) using continuous metrics are not supported with the AI formula builder.
 
-    Every time you refer to a model score when defining your formula below, the AI model that you selected will be used. [Learn more on AI models](../experience-decisioning/ranking/ai-models.md)-->
+    Every time you refer to a model score when defining your formula below, the AI model that you selected will be used. [Learn more on AI models](../experience-decisioning/ranking/ai-models.md)
+-->
 
 1. In the **[!UICONTROL Criterion 1]** section, specify which journeys you want to apply a ranking score to by doing the following:
 
@@ -177,7 +194,7 @@ To assign the rule set to a journey, follow the steps below.
 
 All journeys that use this rule set will be ranked with the selected formula when the cap is applied.
 
-To monitor how your rule sets and ranking formulas perform, see the [Journey Capping and Conflicts](../reports/channel-report-cja.md#rule-sets) section in the Overview report.
+To monitor how your rule sets and ranking formulas perform, see the [Journey Capping and Conflicts](../reports/channel-report-cja.md#rule-sets) section in the Overview report. To investigate discards at the Data Lake level and identify whether a profile was excluded due to a cap being reached (`CAP_REACHED`) or a lower priority (`LOWER_PRIORITY`), use the queries available in [this section](../reports/query-examples.md#business-rules-queries).
 
 <!--
 ## Reporting {#reporting}
@@ -188,4 +205,5 @@ Reporting for journey arbitration helps you understand how rule sets and ranking
 * **Rule set performance** – For each rule set, metrics such as journey enters, journey exclusions, journey engagement, and other optimization metrics.
 * **Cross-journey view** – Time-based view of profiles across journeys (e.g. journey enters, failures, exclusions) to see the impact of capping and ranking.
 
-Use these reports to validate that your formulas and caps are behaving as intended and to tune ranking logic over time.-->
+Use these reports to validate that your formulas and caps are behaving as intended and to tune ranking logic over time.
+-->

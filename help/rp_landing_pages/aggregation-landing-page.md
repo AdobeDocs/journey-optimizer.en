@@ -5,8 +5,7 @@ title: Aggregation
 description: Aggregation
 redpen-status: CREATED_||_2025-08-11_20-12-06
 exl-id: fd46c749-c77a-4cda-94ec-58c58d136595
-hide: yes
-hidefromtoc: yes
+hide: true
 ---
 # Aggregation{#section-overview}
 

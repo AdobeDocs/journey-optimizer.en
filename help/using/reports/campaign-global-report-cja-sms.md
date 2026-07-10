@@ -8,8 +8,41 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: bd743a3b-0317-45d9-8e76-98d5cc258752
+TQID: https://experienceleague.adobe.com/dFM14bh1Yil9GUsCk3mkcqz6QNH3fUWmQCNtj-FnWfA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+subfeature_v2:
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
+    internal-label: Metrics catalog
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # SMS campaign report {#campaign-global-report-cja-sms}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the SMS campaign report in Adobe Journey Optimizer to analyze delivery and click trends, delivery status, tracked links, inbound messages, and bounce, error, and exclusion reasons for your SMS messages.
+
+>[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
@@ -43,23 +76,51 @@ The **[!UICONTROL Delivery status]** table offers a detailed account of profile 
 
 * **[!UICONTROL Delivered]**: Number of SMS messages successfully sent, in relation to the total number of SMS messages.
 
-* **[!UICONTROL Bounces for outbound channels]**: Total of errors cumulated during the sending process and automatic return processing in relation to the total number of sent SMS messages.
+* **[!UICONTROL Bounces]**: Total of errors cumulated during the sending process and automatic return processing in relation to the total number of sent SMS messages.
 
-* **[!UICONTROL Outbound errors]**: Total number of errors that occurred preventing it from being sent to profiles.
+* **[!UICONTROL Send errors]**: Total number of errors that occurred preventing it from being sent to profiles.
 
-* **[!UICONTROL Outbound exclusions]**: Number of profiles which have been excluded by Adobe Journey Optimizer.
+* **[!UICONTROL Send exclusions]**: Number of profiles which have been excluded by Adobe Journey Optimizer.
 
 +++
 
-## Tracked link labels {#track-link-label-sms}
+## Campaign overview {#campaign-global}
 
-The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your SMS messages, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
+The **[!UICONTROL Campaign overview]** table serves as a dashboard for SMS performance in your campaign. It summarizes targeted profiles, click and click-through metrics (including estimated clicks that exclude bot and non-human interaction traffic), and delivery outcomes such as bounces, send errors, and exclusions.
+
++++ Learn more about Campaign overview metrics
+
+* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
+
+* **[!UICONTROL Click through rate]**: Percentage of users who interacted with the message.
+
+* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your message.
+
+* **[!UICONTROL Unique Clicks]**: Number of unique profiles who clicked on at least one piece of content in the mobile message.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent messages.
+
+* **[!UICONTROL Bounces]**: Total number of errors cumulated during the sending process and automatic return processing in relation to the total number of sent messages.
+
+* **[!UICONTROL Send errors]**: Total number of errors that occurred during the sending process preventing it from being sent to profiles.
+
+* **[!UICONTROL Send Exclusions]**: Number of profiles which have been excluded by Adobe Journey Optimizer. [Learn more about how exclusions are counted](exclusion-list.md#exclusion-list).
+
++++
+
+## Tracked labels {#track-label-sms}
+
+The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your SMS messages, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
 +++ Learn more about Tracked link labels metrics
 
-* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your SMS message.
-
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Unique Clicks]**: Number of unique profiles who clicked on at least one piece of content in the mobile message.
 
 +++
 
@@ -69,9 +130,11 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 
 +++ Learn more about Tracked link URLs metrics
 
-* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your SMS message.
-
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Unique Clicks]**: Number of unique profiles who clicked on at least one piece of content in the mobile message.
 
 * **[!UICONTROL Displays]**: Number of times the message was opened.
 

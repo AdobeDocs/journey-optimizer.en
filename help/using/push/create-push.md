@@ -8,8 +8,42 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 2ebbcd7d-dcfc-4528-974d-6230fc0dca3d
+TQID: https://experienceleague.adobe.com/BK2V-ZJRK8UXekZpzOal7uG4Lx4rAMsPL9n4a3--63w
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create a push notification {#create-push-notification}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a push notification within a journey or campaign for mobile and web, including using rapid delivery mode for high-volume sending.
+
+>[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_push"
+>title="Push notification action"
+>abstract="A push notification channel action sends a push notification to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a push configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
 
 >[!CONTEXTUALHELP]
 >id="ajo_message_push"
@@ -30,7 +64,7 @@ To create a push notification, follow the steps below:
 
     >[!IMPORTANT]
     >
-    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL Push]** as the action type.
 

@@ -9,8 +9,48 @@ role: Admin
 level: Experienced
 keywords: channel, surface, technical, parameters, optimizer
 exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
+TQID: https://experienceleague.adobe.com/tdx7MWEI1dzl2d8XsgStZmt2ccngiRJapEF-yxfv5vw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Set up channel configurations {#set-up-channel-surfaces}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, monitor, edit, and deactivate channel configurations in Adobe Journey Optimizer to define the technical parameters used to send your messages.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_channel_surfaces"
@@ -22,13 +62,13 @@ exl-id: 9038528f-3da0-4e0e-9b82-b72c67b42391
 >title="Marketing action"
 >abstract="Choose the Marketing actions to link consent policies to the messages using this setup. All consent policies connected to the marketing action will be used to honor your customers' preferences."
 
-With [!DNL Journey Optimizer], you can set up channel configurations (i.e. message presets) that define all the technical parameters required for your messages: email type, sender email and name, mobile apps, SMS configuration, and more. 
+With [!DNL Journey Optimizer], you can set up channel configurations (i.e. message presets) that define all the technical parameters required for your messages: email type, sender email and name, reply and error routing, mobile apps, SMS configuration, and more. 
 
 >[!CAUTION]
 >
 > * To create, edit and delete channel configurations, you must have the [Manage messages presets](../administration/high-low-permissions.md#administration-permissions) permission.
 >
-> * You must perform the [Email configuration](../email/get-started-email-config.md), [Push configuration](../push/push-configuration.md), [SMS configuration](../sms/sms-configuration.md), [In-app configuration](../in-app/inapp-configuration.md), [Code-based configuration](../code-based/code-based-configuration.md), [Web configuration](../web/web-configuration.md) and [Direct mail configuration](../direct-mail/direct-mail-configuration.md) steps before creating channel configurations.
+> * You must perform the [Email configuration](../email/get-started-email-config.md), [Push configuration](../push/push-configuration.md), [SMS configuration](../mobile/mobile-configuration.md), [In-app configuration](../in-app/inapp-configuration.md), [Code-based configuration](../code-based/code-based-configuration.md), [Web configuration](../web/web-configuration.md) and [Direct mail configuration](../direct-mail/direct-mail-configuration.md) steps before creating channel configurations.
 
 Once channel configurations have been configured, you will be able to select them when creating messages from a journey or a campaign.
 

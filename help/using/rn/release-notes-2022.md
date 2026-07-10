@@ -7,9 +7,47 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-hidefromtoc: yes
-hide: yes
+hide: true
 exl-id: 0997a640-3f89-4460-ba93-ea21a9d4efc5
+TQID: https://experienceleague.adobe.com/C8d6L0NrvfiqCKnEFxitLC-X-6mrG3oWvNTV2LwyWyI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Release Notes 2022 {#release-notes-2022}
 
@@ -20,7 +58,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 ## October 2022 Release {#oct-2022-release}
 
 <!--
-
 ### New capability{#oct-2022-features}
 
 <table>
@@ -38,7 +75,6 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tr>
 </tbody>
 </table>
-
 -->
 
 ### Improvements {#oct-2022-improvements}
@@ -184,7 +220,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </table>
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Data Hygiene</strong><br/></th>
@@ -200,7 +237,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements{#sept-2022-improvements}
 
@@ -273,13 +310,14 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <td>
 <p>You can now create, personalize, and send SMS in Journey Optimizer, through an integration with <b>Sinch</b> or <b>Twilio</b>.</p>
 <img src="assets/do-not-localize/SMS.gif"/>
-<p>Learn how to create and send a SMS in this <a href="../sms/create-sms.md">detailed documentation</a>.</p>
+<p>Learn how to create and send a SMS in this <a href="../mobile/create-mobile-message.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>New Dynamic Expression Builder</strong><br/></th>
@@ -294,7 +332,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 ### Improvements
@@ -427,7 +465,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <p>You can now create, personalize, and send SMS in Journey Optimizer, through an integration with <b>Sinch</b> or <b>Twilio</b>.</p>
 <!--img src="assets/do-not-localize/SMS.gif"/-->
 <p>The SMS channel is currently only available for a set of organizations (Limited Availability). For more information, contact your Adobe representative.</p>
-<p>Learn how to create and send a SMS in this <a href="../sms/create-sms.md">detailed documentation</a>.</p>
+<p>Learn how to create and send a SMS in this <a href="../mobile/create-mobile-message.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -466,7 +504,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tbody>
 </table>
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Automatically use the best performing offer in your decisions</strong><br/></th>
@@ -482,7 +521,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
 <table>
 <thead>
@@ -494,7 +534,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>You can now re-create the experiences from a Journey Optimizer sandbox to another, for example from a non-production sandbox to a production sandbox. This new capability copies an entire Journey, including any objects the Journey depends on to run correctly, from one environment to another. In addition to Journeys, you can also copy other components, such as Offers, Messages, Schemas, Datasets, Data Sources, Events, and Actions.</p>
-<p>For more information, refer to the <a href="../building-journeys/copy-to-sandbox.md">detailed documentation</a>.
+<p>For more information, refer to the <a href="../configuration/copy-objects-to-sandbox.md">detailed documentation</a>.
 </td>
 </tr>
 </tbody>
@@ -562,7 +602,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Attribute-based Access Control (ABAC)</strong><br/></th>
@@ -577,7 +618,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -716,7 +757,8 @@ As an Adobe Campaign Standard customer, you can now send emails, push notificati
 </table>
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>API Developer Site and Suppression API</strong><br/></th>
@@ -729,11 +771,11 @@ As an Adobe Campaign Standard customer, you can now send emails, push notificati
 Developer SDK for Journey Optimizer is now available with the Suppression API (beta).</p>
 <p>With this API, you can control your outgoing messages using suppression and allow lists.
 The suppression list helps you with honoring the ISPs' feedback to preserve sending IP reputation. The allow list helps you ensure that you send only to those email addresses which are in the allowed list, and typically to ensure that you do not send mails to customers from your development sandbox.</p>
-<p>See <a href="https://developer.adobe.com/journey-optimizer-apis/">Adobe Journey Optimizer APIs</a>.</p>
+<p>See <a href="https://developer.adobe.com/journey-optimizer-apis">Adobe Journey Optimizer APIs</a>.</p>
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -786,7 +828,7 @@ The suppression list helps you with honoring the ISPs' feedback to preserve send
 <tr>
 <td>
 <p>When configuring a <strong>Condition</strong> activity in a journey, you can now define a profile cap. This new condition type allows you to set a maximum number of profiles for a journey path. When this limit is reached, the entering profiles take an alternate path. This allows you to ramp up the volume of your deliveries (IP ramp up). For example, you may want to ramp up your deliveries on a domain by splitting the execution: send 1000 messages on day 1, 2000 on day 2, etc.</p>
-<p>For more information, refer to the <a href="../building-journeys/condition-activity.md#profile_cap">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../building-journeys/conditions.md#profile_cap">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>

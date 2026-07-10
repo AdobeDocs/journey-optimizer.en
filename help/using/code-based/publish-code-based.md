@@ -6,8 +6,36 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: a1daf6f7-c26c-4d70-984b-0b4eeb04a1a8
+TQID: https://experienceleague.adobe.com/7obMSbnxBNQoGUsf-g-v1dDipisLUw0ulGpx5UiUHxw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: bc543dba-f0db-4234-b5da-877a5c1664e2
+    internal-label: Content cards
+  - id: f88eedcc-cf3e-46b8-9e94-0293589325f3
+    internal-label: Code based channel
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Manage code-based experiences {#publish-code-based}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to publish, activate, and stop code-based experiences in your journeys and campaigns.
+
+>[!ENDSHADEBOX]
 
 ## Make your code-based experience live {#code-based-experience-live}
 
@@ -93,13 +121,16 @@ When a code-based experience is live, you can stop it to prevent your audience f
 >
 >Once a code-based journey or campaign is stopped, you cannot edit or activate it again. You can only duplicate it and activate the duplicated journey/campaign.
 
-<!--Reporting TBC
+<!--
+Reporting TBC
 
 ## Check the code-based experience reports {#check-code-based-reports}
 
-Once your code-based experience is live, you can check the **[!UICONTROL Code-based]** tab of the  [Journey report](../reports/journey-global-report-cja.md#web-cja) and [Campaign report](../reports/campaign-global-report-cja.md#web) to compare elements such as the number of experiences delivered to your audience, and the number of engagements with your content.-->
+Once your code-based experience is live, you can check the **[!UICONTROL Code-based]** tab of the  [Journey report](../reports/journey-global-report-cja.md#web-cja) and [Campaign report](../reports/campaign-global-report-cja.md#web) to compare elements such as the number of experiences delivered to your audience, and the number of engagements with your content.
+-->
 
-<!--## Code-based reports
+<!--
+## Code-based reports
 
 You can access code-based journey or campaign reports from the summary screen.
 
@@ -146,5 +177,4 @@ The **[!UICONTROL Code-based experience summary]** graph shows the evolution of 
 
 TBC: The **[!UICONTROL Interactions by element]** table details the main information relative to your visitors' engagement with the various elements on your apps/pages.
 +++
-
 -->

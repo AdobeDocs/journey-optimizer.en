@@ -6,9 +6,22 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3847ac1d-2c0a-4f80-8df9-e8e304faf261
-
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
+    internal-label: Web channel
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
 ---
 # Edit web content {#edit-web-content}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to edit your web content with the Adobe Journey Optimizer web designer, including adding components, personalization, navigating with breadcrumbs and browse mode, and adjusting the device size.
+
+>[!ENDSHADEBOX]
 
 Once you [added a web experience](create-web.md#create-web-experience) to a journey or a campaign, you can edit the content of your site using the web designer.
 

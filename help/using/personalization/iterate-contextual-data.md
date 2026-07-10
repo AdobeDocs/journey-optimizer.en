@@ -9,14 +9,43 @@ role: Developer
 level: Intermediate
 keywords: expression, editor, handlebars, iteration, arrays, context, personalization
 exl-id: 1a7c490f-6490-4785-a44d-bddd5482754d
+TQID: https://experienceleague.adobe.com/fOnI9VWpgrFCfUhnvkaiK-Ecsa-LOn8YJpdWZNnQilY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: f0577040-fadd-46a1-b0ae-9c7f828bb2da
+    internal-label: Collection management functions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Iterate over contextual data {#personalization-contexts}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use Handlebars iteration syntax to loop over arrays from contextual data sources such as events, custom action responses, and dataset lookups to display dynamic lists in your messages.
+
+>[!ENDSHADEBOX]
 
 Learn how to use Handlebars iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
 
 ## Overview {#overview}
 
-Journey Optimizer provides access to contextual data from multiple sources during [message personalization](personalize.md). You can iterate over arrays from these sources using Handlebars syntax in native channels ([email](../email/get-started-email-design.md), [push](../push/create-push.md), [SMS](../sms/create-sms.md)) to display dynamic content like product lists, recommendations, or other repeating elements.
+Journey Optimizer provides access to contextual data from multiple sources during [message personalization](personalize.md). You can iterate over arrays from these sources using Handlebars syntax in native channels ([email](../email/get-started-email-design.md), [push](../push/create-push.md), [SMS](../mobile/create-mobile-message.md)) to display dynamic content like product lists, recommendations, or other repeating elements.
 
 **Available context sources:**
 
@@ -25,6 +54,7 @@ Journey Optimizer provides access to contextual data from multiple sources durin
 * **[Dataset lookup](#dataset-lookup)**: Enriched data retrieved from Adobe Experience Platform datasets
 * **[Technical properties](#technical-properties)**: Journey metadata such as journey ID and supplemental identifiers
 * **[Journey context](#other-contexts)**: Other journey-related data accessible during execution
+* **Orchestrated campaign enrichment collections** (Orchestrated campaigns only): See [Add personalization in Orchestrated campaigns](../orchestrated/add-personalization.md#enrichment-collections).
 
 This guide shows you how to iterate over arrays from each of these sources in your messages, and how to work with arrays when configuring journey activities. Start with [Handlebars iteration syntax](#syntax) to understand message personalization basics, or jump to [Work with arrays in Journey expressions](#arrays-in-journeys) to learn how to pass array data to custom actions and dataset lookups.
 
@@ -249,10 +279,6 @@ To display dynamic benefits based on loyalty status, see the below example.
 ## Iterate over dataset lookup results {#dataset-lookup}
 
 The [Dataset Lookup activity](../building-journeys/dataset-lookup.md) allows you to retrieve data from [Adobe Experience Platform datasets](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"} during journey runtime. The enriched data is stored as an array and can be iterated over in your messages.
-
->[!AVAILABILITY]
->
->The Dataset Lookup activity is only available for a limited set of organizations. To gain access, contact your Adobe representative.
 
 Learn more about configuring the Dataset Lookup activity in [this section](../building-journeys/dataset-lookup.md). Dataset lookup is particularly powerful when combined with event data - see [Example: Event data enriched with dataset lookup](#combine-sources) for a practical use case.
 
@@ -503,7 +529,7 @@ While this guide focuses on iteration over arrays, other context types are avail
 * **[Profile attributes](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}** (`profile.*`): Individual profile fields from Adobe Experience Platform
 * **[Audiences](../audience/about-audiences.md)** (`inAudience()`): Audience membership checks
 * **[Offer decisions](../offers/get-started/starting-offer-decisioning.md)**: Decision management offers
-* **[Target attributes](../orchestrated/activities/channels.md#add-personalization)** (Orchestrated campaigns only): Attributes calculated in the campaign canvas
+* **[Target attributes](../orchestrated/add-personalization.md#attributes)** (Orchestrated campaigns only): Attributes calculated on the campaign canvas, including enrichment collection arrays
 * **Token** (`context.token`): Session or authentication tokens
 
 For complete personalization syntax and examples using these sources, refer to:
@@ -1046,4 +1072,4 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 
 **Personalization use cases:** [Cart abandonment email](personalization-use-case-helper-functions.md) | [Order status notification](personalization-use-case.md)
 
-**Message design:** [Get started with email design](../email/get-started-email-design.md) | [Create push notifications](../push/create-push.md) | [Create SMS messages](../sms/create-sms.md) | [Preview and test your content](../content-management/preview-test.md)
+**Message design:** [Get started with email design](../email/get-started-email-design.md) | [Create push notifications](../push/create-push.md) | [Create SMS messages](../mobile/create-mobile-message.md) | [Preview and test your content](../content-management/preview-test.md)

@@ -6,13 +6,23 @@ description: Learn how to start and monitor Orchestrated campaigns with Adobe Jo
 feature: Monitoring
 exl-id: 3c1cad30-3ed7-4df1-a46a-60394a834e79
 version: Campaign Orchestration
+feature_v2:
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 
 # Building retargeting queries {#retarget}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build feedback-based and tracking-based retargeting rules that follow up with recipients according to how they responded to a previous Orchestrated campaign.
+
+>[!ENDSHADEBOX]
+
 Retargeting allows you to follow up with recipients based on how they responded to a previous Orchestrated campaign. For example, you can send a second email to recipients who received but did not click the first one.
 
-**[!UICONTROL Orchestrated Campaign]** provides two main schemas for this:
+**[!UICONTROL Orchestrated campaign]** provides two main schemas for this:
 
 * **[!UICONTROL Message Feedback]**: captures delivery-related events, e.g. message sent, opened, bounced, etc.
 * **[!UICONTROL Email Tracking]**: captures user actions, e.g. clicks and opens.
@@ -20,13 +30,13 @@ Retargeting allows you to follow up with recipients based on how they responded 
 ![](assets/do-not-localize/retarget-schema.png){zoomable="yes"}
 
 
-## Create a Feedback-based Retargeting Rule {#feedback-retarget}
+## Create a feedback-based retargeting rule {#feedback-retarget}
 
 Feedback-based Retargeting Rule allows you to retarget recipients based on message delivery events captured in the **[!UICONTROL Message Feedback]** schema. These events include outcomes such as messages being sent, opened, bounced, or marked as spam.
 
 Using this data, you can define rules to identify recipients who received a previous message enabling follow-up communication based on specific delivery statuses.
 
-1. Create a new **[!UICONTROL Orchestrated Campaign]**.
+1. Create a new **[!UICONTROL Orchestrated campaign]**.
 
 1. Add a **[!UICONTROL Build Audience]** activity and set the targeting dimension to **[!UICONTROL Recipient (caas)]**. Click **[!UICONTROL Continue]**.
 
@@ -113,7 +123,7 @@ Tracking-based retargeting rule targets recipients based on their interactions w
 
 To retarget recipients based on message interactions (e.g., open or click), use the **[!UICONTROL Email Tracking]** entity as follows:
 
-1. Create a new **[!UICONTROL Orchestrated Campaign]**.
+1. Create a new **[!UICONTROL Orchestrated campaign]**.
 
 1. Add a **[!UICONTROL Build Audience]** activity and set the targeting dimension to **[!UICONTROL Recipient (caas)]** to focus on previous Orchestrated campaign recipients.
 

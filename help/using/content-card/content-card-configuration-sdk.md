@@ -6,8 +6,40 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: bb67b55f-2eac-4775-a9f5-78288009477e
+TQID: https://experienceleague.adobe.com/g6SvbQdYTKgvcbEggw4RmjGY-25x7Abm-byZ4UqT4NE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: bc543dba-f0db-4234-b5da-877a5c1664e2
+    internal-label: Content cards
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Configure content cards support in Web SDK {#content-card-configuration-sdk}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up and run the sample that fetches and renders content cards with the Adobe Experience Platform Web SDK so you can deliver client-side personalized content on your web pages.
+
+>[!ENDSHADEBOX]
 
 This sample showcases how to retrieve Content Cards from Adobe Journey Optimizer (AJO) using Adobe Experience Platform. By leveraging the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home), the personalization content is fetched and rendered entirely on the client side.
 
@@ -20,6 +52,8 @@ Upon the initial page load, the page displays its default state. However, if you
 >[!PREREQUISITES]
 >
 >You need to install node and npm. [Refer to this documentation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+>
+>To use disqualification rules with content cards, Web SDK version 2.28.0 or later is required.
 
 
 1. Set up local SSL certificates for HTTPS. These samples require locally signed SSL certificates to serve content over HTTPS: 

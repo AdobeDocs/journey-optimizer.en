@@ -9,8 +9,51 @@ level: Intermediate
 keywords: entry, exit, criteria, journey, profile, reentrance, best practices
 version: Journey Orchestration
 exl-id: e879a0f6-b969-4de0-a733-f2880d58d59b
+TQID: https://experienceleague.adobe.com/6OJQsorJ9p7gtO1ep-rIss60J2TmKzqiNS3Btfhh8Gs
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
+    internal-label: Wait activity
+  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
+    internal-label: Reaction events
+  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
+    internal-label: Audience Qualification events
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Work with journey entry and exit criteria {#entry-exit-criteria-guide}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to define and configure journey entry and exit criteria, with real-world examples and best practices for controlling when profiles enter and leave your journeys.
+
+>[!ENDSHADEBOX]
 
 In customer experience orchestration, delivering the right message at the right time requires precise control over when customers enter and exit your journeys. Understanding and properly configuring entry and exit criteria can make the difference between a successful, engaging campaign and missed opportunities or message fatigue.
 
@@ -34,7 +77,7 @@ This guide provides practical guidance, real-world examples, and best practices 
 
 * **Success metric achievement** - Profiles exit when they complete the [journey objective](success-metrics.md), such as making a purchase or downloading an app, eliminating unnecessary follow-up communications.
 
-* **Condition-based** - Profiles exit when [specific conditions](condition-activity.md) are met, like inactivity over a set period or changes in profile attributes.
+* **Condition-based** - Profiles exit when [specific conditions](conditions.md) are met, like inactivity over a set period or changes in profile attributes.
 
 * **Event-based** - Profiles exit when [specific events occur](../event/about-events.md), such as subscription cancelation or product return.
 
@@ -100,7 +143,7 @@ Gather insights about customer satisfaction and product performance by requestin
 
 * **[Audience Qualification Entry](audience-qualification-events.md)**: Trigger journeys when profiles qualify for or exit from specific audiences in real-time. Define [streaming audiences](../audience/about-audiences.md), add an **[!UICONTROL Audience Qualification]** event from the **[!UICONTROL Events]** palette, and choose the trigger type.
 
-* **[Attribute Filters](condition-activity.md)**: Refine entry criteria by combining events or audiences with profile attributes and context using AND/OR logic. Use [conditions](conditions.md) to reference [profile attributes](../audience/get-started-profiles.md), events, or [external data](../datasource/about-data-sources.md).
+* **[Attribute Filters](conditions.md)**: Refine entry criteria by combining events or audiences with profile attributes and context using AND/OR logic. Use [conditions](conditions.md) to reference [profile attributes](../audience/get-started-profiles.md), events, or [external data](../datasource/about-data-sources.md).
 
 * **[Time Windows and Scheduling](journey-properties.md#schedule)**: Set temporal constraints to keep journeys timely and relevant. Configure [schedules on Read Audience activities](read-audience.md), use [Wait activities](wait-activity.md), and add [time-based conditions](conditions.md) to control timing.
 
@@ -116,7 +159,7 @@ Gather insights about customer satisfaction and product performance by requestin
 
 * **[Success Metric Achievement](journey-properties.md#exit-criteria)**: Define success metrics (like purchase or subscription) and exit profiles upon completion. Click **[!UICONTROL Show exit criteria]** icon, select **[!UICONTROL Add exit criteria]**, and choose an [Event](../event/about-events.md) or [Audience](../audience/about-audiences.md) as the exit trigger.
 
-* **[Inactivity Timeouts](wait-activity.md)**: Exit profiles if no engagement occurs within a set timeframe. Use [Exit Criteria](journey-properties.md#exit-criteria) with audiences that check last engagement date, set [Wait activities](wait-activity.md) with defined durations, and use [conditions](condition-activity.md) to check for activity.
+* **[Inactivity Timeouts](wait-activity.md)**: Exit profiles if no engagement occurs within a set timeframe. Use [Exit Criteria](journey-properties.md#exit-criteria) with audiences that check last engagement date, set [Wait activities](wait-activity.md) with defined durations, and use [conditions](conditions.md) to check for activity.
 
 * **[Re-entry Rules](entry-management.md)**: Decide if profiles can re-enter the journey multiple times or only once, depending on your campaign strategy. Configure **[!UICONTROL Re-entrance]** settings in journey **[!UICONTROL Properties]** to set wait periods, enable forced re-entrance, or use [supplemental identifiers](supplemental-identifier.md) for context-specific re-entrance.
 
@@ -206,4 +249,52 @@ Start by clearly mapping your customer triggers and exit points, test thoroughly
 
 **Related capabilities**
 
-[Audience qualification events](audience-qualification-events.md) | [Success metrics and goals](success-metrics.md) | [Conflict management](../conflict-prioritization/conflicts.md) | [Frequency capping](../conflict-prioritization/rule-sets.md) | [Testing journeys](testing-the-journey.md) | [Condition activity](condition-activity.md) | [Reaction events](reaction-events.md) | [Wait activity](wait-activity.md)
+[Audience qualification events](audience-qualification-events.md) | [Success metrics and goals](success-metrics.md) | [Conflict management](../conflict-prioritization/conflicts.md) | [Frequency capping](../conflict-prioritization/rule-sets.md) | [Testing journeys](testing-the-journey.md) | [Optimize activity](optimize.md) | [Reaction events](reaction-events.md) | [Wait activity](wait-activity.md)
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This guide explains how to define, configure, and optimize journey entry and exit criteria in Adobe Journey Optimizer, with real-world examples and best practices to ensure the right profiles are reached at the right time.
+
+**Intents:**
+
+* Configure event-based, audience-based, or attribute-based entry criteria for a journey
+* Set up exit criteria based on journey completion, success metrics, inactivity timeouts, or audience disqualification
+* Apply re-entry rules to control whether profiles can enter a journey multiple times
+* Avoid overlapping journeys using conflict management and priority scores
+* Monitor and optimize entry and exit rates using journey reports
+
+**Glossary:**
+
+* **Entry criteria**: The conditions that determine when a customer profile qualifies to enter a journey *(product-specific)*
+* **Exit criteria**: The conditions that define when and how a profile leaves or is removed from a journey *(product-specific)*
+* **Audience qualification**: A journey entry mechanism that triggers when a profile enters or exits a streaming audience in real-time *(product-specific)*
+* **Re-entrance**: The ability for a profile to enter the same journey more than once, configurable with a wait period *(product-specific)*
+* **Frequency capping**: A rule that limits how many messages a profile can receive within a given time window *(product-specific)*
+
+**Guardrails:**
+
+* A profile cannot be present multiple times in the same journey at the same time.
+* Re-entrance must be explicitly enabled; the default reentrance wait period is 5 minutes with a maximum of 91 days.
+* For advanced multi-journey frequency management, use journey capping and arbitration rather than individual exit criteria.
+* Journey overlaps must be managed proactively; use conflict management and priority scores to resolve competing journeys.
+
+**Terminology:**
+
+* Canonical name: Entry criteria — Acronym: n/a — variants: entry conditions, journey triggers
+* Canonical name: Exit criteria — Acronym: n/a — variants: exit conditions, profile removal rules
+* Synonyms: "audience disqualification" = "audience exit" as an exit trigger
+* Do not confuse: "Close to new entrances" ≠ "exit criteria" — the former blocks new entries; exit criteria removes in-progress profiles
+
+**FAQ:**
+
+* **Q: Can a profile be in the same journey twice at the same time?** — No, a profile cannot be present in the same journey at the same time. The profile identity is used as a key to enforce this.
+* **Q: How do I prevent a profile from re-entering a journey?** — Disable re-entrance in the journey Properties panel, or add a condition to check whether the profile has already entered.
+* **Q: What is the difference between exit criteria and closing a journey?** — Exit criteria removes individual profiles from a live journey based on conditions; closing a journey stops all new entrances while letting current profiles finish.
+* **Q: How do I stop over-communicating with customers across multiple journeys?** — Use frequency capping rules and journey capping and arbitration to enforce cross-journey message limits.
+* **Q: What is audience disqualification as an exit trigger?** — When a profile no longer meets the target audience segment criteria, it is automatically removed from the journey to keep communications relevant.
+
++++

@@ -9,8 +9,37 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: 07f5f0b4-417e-408e-8d9e-86615c8a3fbf
+TQID: https://experienceleague.adobe.com/lGYAilnXh7r01VhcdRj-lGArRw7OK3gg2npwBKY5VWw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Work with rule sets {#rule-sets}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Group frequency capping, quiet hours, and journey capping rules into rule sets so you can control how often and how many communications each customer receives.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_business_rules_rule_sets"
@@ -27,8 +56,8 @@ You can create two types of rule sets:
 
 * **Channel** rule sets apply rules to communication channels. They allow you to set:
 
-   * **Frequency capping rules** - *Do not send more than 1 email or SMS communication per day.*
-   * **Quiet hours rules** - *Do not send email messages ouside of the 8AM - 9PM timeslot.*
+   * **Frequency capping rules** - *Do not send more than 1 Email, SMS, Push, Direct mail, or WhatsApp communication per day.*
+   * **Quiet hours rules** - *Do not send email messages outside of the 8AM - 9PM timeslot.*
 
 * **Journey** rule sets apply entry and concurrency capping rules to a journey. For example, do not enter profiles into more than one journey simultaneously.
 
@@ -65,11 +94,13 @@ In addition to this "Global Default Rule Set" rule set, you can create **rule se
 >title="Select the message rule category"
 >abstract="When activated and applied to a message, all the frequency rules matching the selected category will be automatically applied to this message. Currently only the Marketing category is available."
 
-<!--NOT USED?
+<!--
+NOT USED?
 [!CONTEXTUALHELP]
 >id="ajo_rule_sets_capping"
 >title="Set the capping for your rule"
->abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."-->
+>abstract="Specify the maximum number of messages sent to a customer profile within the chosen time frame. The frequency cap will be based on the selected calendar period and will be reset at the beginning of the corresponding time frame."
+-->
 
 >[!CONTEXTUALHELP]
 >id="ajo_rule_type"

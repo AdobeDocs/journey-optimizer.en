@@ -5,9 +5,24 @@ title: Use the Reconciliation activity
 description: Learn how to use the Reconciliation activity in an Orchestrated campaign
 exl-id: 0d5cfffe-bc6c-40bc-b3e1-5b44368ac76f
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/lWFTptRrn3B5r0sHSaN5qCWDLBZC74H3N-7eo8rRgdU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
-
 # Reconciliation {#reconciliation}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Reconciliation targeting activity to match external or unidentified data with existing records in the database during an Orchestrated campaign.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_reconciliation"
@@ -93,6 +108,6 @@ Follow these steps to configure the **[!UICONTROL Reconciliation]** activity:
 
 ## Example {#example-reconciliation}
 
-This example uses the **[!UICONTROL Reconciliation]** activity in Adobe Journey Optimizer to ensure that emails are sent only to recognized customers. The data flows in through a **[!UICONTROL Read Audience]** activity that targets users with previous orders. The **[!UICONTROL Reconciliation]** activity then matches this incoming data to existing profiles in the database using the email field.
+This example uses the **[!UICONTROL Reconciliation]** activity in Adobe Journey Optimizer to ensure that emails are sent only to recognized customers. The data flows in through a **[!UICONTROL Build audience]** activity that targets users with previous orders. The **[!UICONTROL Reconciliation]** activity then matches this incoming data to existing profiles in the database using the email field.
 
 ![](../assets/workflow-reconciliation-sample-1.0.png)

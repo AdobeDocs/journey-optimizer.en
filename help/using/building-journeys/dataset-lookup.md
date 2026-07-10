@@ -10,15 +10,50 @@ level: Intermediate
 version: Journey Orchestration
 badge: label="Limited Availability" type="Informative"
 exl-id: b6f54a79-b9e7-4b3a-9a6f-72d5282c01d3
+TQID: https://experienceleague.adobe.com/4sQ3A15j47fQ6hI1G9oS6T6ne9nbxIaeqc-95zSUIq4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2: []
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Use [!DNL Adobe Experience Platform] data in journeys {#datalookup}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Dataset lookup activity to dynamically retrieve data from Adobe Experience Platform record datasets at runtime and enrich your journeys with external data for personalization and decision-making.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_dataset_lookup"
 >title="Dataset lookup activity"
->abstract="The **[!UICONTROL Dataset lookup]** activity allows you to to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
+>abstract="The **[!UICONTROL Dataset lookup]** activity allows you to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely."
 
 The **[!UICONTROL Dataset lookup]** activity allows you to dynamically retrieve data from [!DNL Adobe Experience Platform] record datasets during runtime. By leveraging this capability, you can access data that may not reside in the profile or event payload, ensuring your customer interactions are both relevant and timely.
+
+>[!AVAILABILITY]
+>
+>This feature is currently available to all customers as a limited availability release.
 
 Key Benefits:
 
@@ -26,17 +61,13 @@ Key Benefits:
 * **Dynamic decision-making**: Use external data to drive journey logic and actions.
 * **Enhanced data Access**: Retrieve product metadata, pricing tables, or relational data tied to specific keys.
 
->[!AVAILABILITY]
->
->This activity is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 ## Must-read {#must-read}
 
 Review these requirements before you configure dataset lookups.
 
 ### Dataset enablement
 
-The dataset must be enabled for lookup in [!DNL Adobe Experience Platform]. Detailed information are available in this section: [Use [!DNL Adobe Experience Platform] data](../data/lookup-aep-data.md). 
+The dataset must be enabled for lookup in [!DNL Adobe Experience Platform]. Detailed information is available in this section: [Use [!DNL Adobe Experience Platform] data](../data/lookup-aep-data.md).
 
 ### Limits & restrictions
 
@@ -201,3 +232,55 @@ The data retrieved by the **[!UICONTROL Dataset lookup]** activity is stored in 
 **Cause:** The lookup key in the dataset lookup activity was set using simple mode. When the key is not defined in advanced mode, the activity output is not exposed as a context attribute in downstream activities.
 
 **Fix:** Open the dataset lookup activity, locate the **[!UICONTROL Lookup key(s)]** field, and switch to **advanced mode** to redefine the key expression. Save the activity and republish the journey.
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to configure the Dataset lookup activity to dynamically retrieve AEP record dataset data at journey runtime for real-time personalization and conditional logic.
+
+**Intents:**
+
+* Add a Dataset lookup activity to a journey to fetch external AEP record data at runtime
+* Select specific dataset fields (leaf nodes / primitive values) to retrieve during lookup
+* Define a lookup key in advanced mode to join journey context with dataset records
+* Use enriched dataset data in the journey expression editor or personalization editor
+* Troubleshoot "Dataset lookup not found" errors caused by using simple mode for the lookup key
+
+**Glossary:**
+
+* **Dataset lookup activity**: A journey orchestration activity that retrieves data from AEP record datasets at runtime using a joining key *(product-specific)*
+* **Leaf node**: A field at the lowest level of a schema hierarchy that holds a primitive value (string, number, boolean, date) *(product-specific)*
+* **Lookup key**: The joining expression (string or list of strings) used to match journey context data against records in the selected dataset *(product-specific)*
+* **Enriched data**: Data retrieved by a Dataset lookup activity and stored transiently in the journey context for use in downstream activities *(product-specific)*
+
+**Guardrails:**
+
+* Maximum of 10 Dataset lookup activities per journey.
+* Maximum of 20 selected fields per lookup activity.
+* Maximum of 50 keys in the lookup keys array.
+* Enriched data size is limited to 10KB.
+* The dataset must be enabled for lookup in Adobe Experience Platform before it appears in the activity configuration.
+* Only leaf nodes (primitive values) can be selected; arrays and maps cannot be selected.
+* Only strings or lists of strings are supported as lookup keys.
+* The lookup key must be defined in advanced mode; using simple mode causes the activity output to be unavailable as a context attribute downstream.
+* Enriched data is transient and available only during journey runtime and in outbound activity personalization.
+* For best performance, limit to 5 lookup activities per journey (recommended); the hard limit enforced by the system is 10 activities per journey. Up to 20 attributes per lookup are also recommended.
+
+**Terminology:**
+
+* Canonical name: Dataset lookup activity — Acronym: n/a — variants: AEP data lookup, data enrichment activity
+* Synonyms: "lookup key" = "joining key"
+* Do not confuse: "Dataset lookup activity" ≠ "Experience event lookup" — dataset lookup retrieves record dataset data, not time-series experience events
+
+**FAQ:**
+
+* **Q: Why doesn't my dataset appear in the Dataset field dropdown?** — The dataset must be enabled for lookup in Adobe Experience Platform. Follow the instructions in the Must-read section to enable it.
+* **Q: Why does `@datasetLookup{}` return a "Dataset lookup not found" error in a condition?** — The lookup key was defined using simple mode instead of advanced mode. Redefine it in advanced mode and republish the journey.
+* **Q: Can I retrieve arrays or map fields from the dataset?** — No, only primitive leaf node fields (string, number, boolean, date) can be selected.
+* **Q: How do I access enriched data in an email?** — Use the personalization editor with the syntax `{{context.journey.datasetLookup.<activityId>.entities}}`.
+* **Q: Is enriched data persisted after the journey ends?** — No, enriched data is transient and only available during the journey runtime session.
+
++++

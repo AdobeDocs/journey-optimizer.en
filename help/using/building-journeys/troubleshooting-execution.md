@@ -10,8 +10,39 @@ level: Intermediate
 keywords: troubleshoot, troubleshooting, journey, check, errors
 exl-id: fd670b00-4ebb-4a3b-892f-d4e6f158d29e
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/2YZ6Cjph9Le-HtwKdz4GBgEdhwIMPpVtj9yWKlV3hQ4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: d08afb72-92f6-4856-88e3-11ec34313c2f
+    internal-label: Event configuration
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Troubleshoot your live journey execution {#troubleshooting-execution}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to troubleshoot a live journey's execution, including verifying that events are sent, confirming profiles enter and progress through the journey, and checking that messages are delivered.
+
+>[!ENDSHADEBOX]
 
 In this section, learn how to troubleshoot journey events, check if profiles entered your journey, how they navigate through it, and if messages are sent.
 
@@ -108,6 +139,20 @@ Here are a few things to check:
 * Is it due to a condition excluding the person? For example, the condition is "gender = male" and the person is a woman. This check can be performed by a business user if the condition is not too complex.
 * Is it due to a call to a data source not responding? When the journey is in test, this information can be seen in test mode logs. When the journey is live, an administrator can test direct calls to the data source and check the answer received. An administrator can also duplicate the journey and test it.
 
+## Events discarded due to a blocked journey instance {#max-instance-stack-events-reached}
+
+If you see events discarded with the `maxInstanceStackEventsReached` reason, the journey runtime has reached its internal per-profile event stack limit of 10 events for a specific journey version. This is a safety guardrail that prevents too many pending events from stacking up while another event for the same profile is still being processed.
+
+This is **not** a time-window or throughput limit. It occurs when the profile's journey instance is blocked on a long-running step (for example, a long wait, enrichment, or custom action retries) and events for the same profile, also being used in that journey, pile up beyond the 10-event limit.
+
+To identify it, query journey step events where the discard reason equals `maxInstanceStackEventsReached` (for example, in `serviceEvents.stateMachine.eventType` or similar fields). Learn more about discarded event types in the [step event field list](../reports/sharing-field-list.md#discarded-events).
+
+**What you can do**
+
+* Reduce long waits or slow steps on paths that can re-trigger frequently.
+* Deduplicate or debounce upstream events when possible.
+* Split long-running scenarios into multiple journeys to avoid stacking.
+
 ## Check that messages are sent successfully {#checking-that-messages-are-sent-successfully}
 
 If individuals flow the right way in the journey but do not receive messages they should receive, you can check if:
@@ -117,11 +162,11 @@ If individuals flow the right way in the journey but do not receive messages the
 
 In case of a message sent via a custom action, the only thing that can be checked during journey test is the fact that the call of the custom action's system leads to an error or not. If the call to the external system associated with the custom action does not lead to an error but does not lead to a message sending, some investigations should be done on the external system's side.
 
-## Understanding duplicate entries in Journey Step Events {#duplicate-step-events}
+## Understanding duplicate entries in Journey step events {#duplicate-step-events}
 
 Use this section to understand why duplicate rows can appear in Journey Step Events.
 
-### Why do I see multiple entries with the same journey instance, profile, node, and request IDs?
+### Why do i see multiple entries with the same journey instance, profile, node, and request ids?
 
 When querying Journey Step Events data, you may occasionally observe what appears to be duplicate log entries for the same journey execution. These entries share identical values for:
 
@@ -183,7 +228,7 @@ When analyzing Journey Step Events data:
       AND _experience.journeyOrchestration.stepEvents.profileID = '<profileID>'
     ```
 
-### What should I do if I observe this?
+### What should i do if i observe this?
 
 This is normal system behavior and **no action is required**. The duplicate logging does not indicate a problem with your journey configuration or message delivery. 
 
@@ -210,3 +255,51 @@ If discrepancies persist, [contact Adobe Support](../start/user-interface.md#sup
 If tracking URLs in sent emails contain empty placeholders such as `cid=em-acou-adob{}`, this may indicate that a context field such as `context.system.source.actionId` could not be resolved. This typically happens when a journey was closed and has not been republished after a relevant product change — only republished journeys correctly populate these context fields in tracking URLs.
 
 To resolve this, either republish the journey ([create a new version and publish it](publish-journey.md#journey-create-new-version)), or remove the reference to the affected context field from the [URL tracking parameters](../email/url-tracking.md) in the channel configuration or email content.
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page is a comprehensive troubleshooting reference for live journey execution in Adobe Journey Optimizer, covering event delivery, profile entry failures, test mode transition issues, discarded events, duplicate step event logs, message delivery checks, and dashboard metric discrepancies.
+
+**Intents:**
+* Diagnose why events are not triggering journey entry by checking payload structure, headers, and qualification conditions
+* Verify whether profiles are entering and progressing through a live or test-mode journey
+* Resolve test mode transition failures caused by future start dates or misconfigured identity namespaces
+* Understand and handle the `maxInstanceStackEventsReached` discard reason for blocked journey instances
+* Identify and correctly query duplicate Journey Step Event log entries caused by backend auto-scaling
+* Investigate missing messages by checking journey reporting and custom action call results
+* Fix empty tracking URL placeholders in emails from closed journeys
+
+**Glossary:**
+* **Journey Step Events**: A dataset that logs each step a profile executes within a journey, used for reporting and debugging *(product-specific)*
+* **notSuitableInitialEvent**: A discard code indicating an event was received but dropped because the qualification condition was not met *(product-specific)*
+* **maxInstanceStackEventsReached**: A discard code indicating the per-profile journey instance event stack limit of 10 has been exceeded *(product-specific)*
+* **isValidTransition**: A UI-only property in journey technical details; a null value may indicate a future start date or corrupted node connection, but does not affect backend processing *(product-specific)*
+* **Qualification condition**: A rule defined on an event that must be satisfied for the event to trigger a journey; events failing this condition are discarded
+* **Rebalancing**: A backend auto-scaling operation in AJO microservices that can create duplicate Journey Step Event log entries with different `_id` values
+
+**Guardrails:**
+* Events sent outside the journey's active date/time window are silently discarded with no error message
+* The per-profile journey instance event stack limit is 10 events; exceeding this causes events to be discarded with `maxInstanceStackEventsReached`
+* Duplicate Journey Step Event entries with different `_id` values are expected system behavior and do not indicate message duplication
+* Dashboard Overview metrics only include journeys with traffic in the last 24 hours; metrics may take up to 30 minutes to refresh
+* Closed journeys that have not been republished after a product change may produce empty placeholders in tracking URLs
+
+**Terminology:**
+* Canonical name: Journey Step Events — Acronym: none — variants: step events, journey execution logs
+* Canonical name: Qualification condition — Acronym: none — variants: event qualification rule, event condition
+* Synonyms: "rebalancing" = "auto-scaling" (backend operation causing duplicate log entries)
+* Do not confuse: "duplicate `_id`" ≠ "duplicate log entries from rebalancing" — true duplicates share the same `_id`; rebalancing duplicates have different `_id` values
+
+**FAQ:**
+* **Q: Why are my events not triggering a journey even though they are being sent successfully?** — Check that the journey is live or in test mode, the payload matches the event schema structure, the qualification condition is satisfied, and the correct headers (`X-gw-ims-org-id`, `Content-type`) are included.
+* **Q: Why do test profiles enter the journey but not advance past the first step?** — The most common cause is a journey start date set in the future; events are silently discarded outside the active date window. Also verify the test profile flag and identity namespace match.
+* **Q: What does `maxInstanceStackEventsReached` mean?** — The journey runtime has hit the internal 10-event stack limit for a specific profile instance, typically because a long-running step is blocking processing. Reduce long waits, deduplicate upstream events, or split the scenario into multiple journeys.
+* **Q: I see duplicate rows in Journey Step Events — is something wrong?** — No. Duplicate entries with different `_id` values are expected and result from backend auto-scaling. Only one message is actually sent; verify with the `ajo_message_feedback_event_dataset`.
+* **Q: Why do tracking URLs in emails show empty placeholders like `cid=em-acou-adob{}`?** — The journey was closed and not republished after a product change; context fields cannot be resolved. Republish the journey or remove the affected context field reference from the URL tracking parameters.
+* **Q: Why does the Overview dashboard show different numbers than the Browse tab?** — The dashboard only counts journeys with traffic in the last 24 hours, metrics take up to 30 minutes to refresh, and access permissions may limit visibility.
+
++++

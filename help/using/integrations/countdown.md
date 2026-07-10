@@ -6,11 +6,20 @@ description: Use Dynamic media with Journey Optimizer
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
+hide: true
 exl-id: 4c1d39c4-3154-4bec-ac3c-c2ead7164d69
+subfeature_v2: []
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
 ---
 # Insert countdown timer {#countdown}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to insert a Dynamic Media countdown timer into your Journey Optimizer emails to create urgency for flash sales and time-sensitive promotions.
+
+>[!ENDSHADEBOX]
 
 Create urgency and maximize conversions with Dynamic Media countdown timers that update in real-time when recipients open your emails. This feature is ideal for flash sales, limited-time offers, and time-sensitive promotions.
 

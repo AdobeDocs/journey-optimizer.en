@@ -9,8 +9,49 @@ level: Intermediate, Experienced
 keywords: use case, multi-channel, journey, events
 exl-id: 28f3f06b-3576-43a7-9c1b-8e616390907b
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/2CSLnzEioabgXOTNK8fm-uq6gjq63tVdry3UWMai4oU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Learn through use cases {#jo-uc-gs}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore a library of practical Adobe Journey Optimizer use cases and end-to-end scenarios to help you design journeys, model data, and build activation logic.
+
+>[!ENDSHADEBOX]
 
 This section brings together a collection of practical use cases to help you get the most out of [!DNL Adobe Journey Optimizer]. Whether you are looking for tactical patterns—like suppression logic, personalization techniques, or journey exit strategies—or complete end-to-end scenarios covering marketing and technical workflows, you will find links to relevant samples below.
 
@@ -226,3 +267,40 @@ Browse the following blog posts to find more guidance and best practices when bu
 </div>
 </td>
 </tr></table>
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+- **TL;DR:** This page is a curated library of practical journey use cases — covering experience events, dataset queries, business scenarios, technical patterns, video tutorials, and community blog posts — to help practitioners get the most out of Adobe Journey Optimizer.
+
+**Intents:**
+- Find practical use case examples covering business scenarios such as multi-channel messaging, subscriber campaigns, and weekday-only email delivery
+- Locate technical use case patterns for custom actions, throughput limiting, and removing profiles from a live journey
+- Access video tutorials for common journey patterns including customer onboarding, cart abandonment, and re-engagement
+- Query Adobe Journey Optimizer datasets (step events, tracking events, offer propositions) to build custom analytics and reporting
+- Use Experience Event lookup patterns to manage opt-outs, frequency, and real-time personalization
+
+**Glossary:**
+- **Experience Event**: A time-stamped record of a customer interaction (e.g., purchase, click, page view) stored in Adobe Experience Platform and used to trigger or personalise journeys *(product-specific)*
+- **Step event**: An automatically generated dataset record that captures every step a profile takes in a journey, used for custom reporting and debugging *(product-specific)*
+- **Custom action**: A journey activity that calls an external API to send data to or receive data from a third-party system *(product-specific)*
+
+**Guardrails:**
+- Each use case example includes recommendations that should be tailored to specific needs; they are starting points, not prescriptive configurations
+- Dataset queries require access to Adobe Experience Platform Query Service
+- Video tutorials reference external learning resources on Experience League
+
+**Terminology:**
+- Canonical name: Use cases — Acronym: none — variants: journey use cases, practical examples, recipes
+- Synonyms: "business use case" = "marketing use case"; "technical use case" = "developer use case"
+
+**FAQ:**
+- **Q: Where do I start if I am new to journey entry and exit criteria?** — Begin with the comprehensive guide to journey entry and exit criteria, which includes real-world use cases, best practices, and step-by-step configuration guidance.
+- **Q: How do I query journey step events for custom reporting?** — Use the Adobe Experience Platform Query Service to query the journey step events dataset; example queries are available in the linked datasets query examples page.
+- **Q: Where can I find a use case for sending emails only on weekdays?** — See the weekday email use case page, also available as a community blog post.
+- **Q: How can I remove profiles from a live journey?** — Use the profile attribute exit criteria feature on a paused journey, as described in the technical use case for removing profiles from a live journey.
+
++++

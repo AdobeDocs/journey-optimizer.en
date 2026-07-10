@@ -6,8 +6,29 @@ description: Engage customers by browsing activity
 feature: Use Cases
 version: Campaign Orchestration
 exl-id: 915ebafe-935b-49b6-8b8c-0e7a8bf546a4
+TQID: https://experienceleague.adobe.com/q30GcOzIEJ0HUjEauFfp1CaP-oQdSGiBFSRcfNgdap8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 # Engage customers by browsing activity {#engage-customers-uc}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Follow an Orchestrated campaign use case that re-engages customers based on their browsing activity by reading an audience, deduplicating it, splitting it by churn risk, and sending personalized follow-up messages.
+
+>[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
@@ -89,7 +110,7 @@ For customers identified as having a high risk of churn, create a dedicated audi
 
     ![](assets/uc-interest-8.png){zoomable="yes"}
 
-This audience is then saved to Experience Cloud, where it can later be used for a specific targeted campaign.
+This audience is then saved in [!DNL Adobe Experience Platform], where it can later be used for a specific targeted campaign.
 
 ## Low/medium risk segments {#low-medium-risk}
 

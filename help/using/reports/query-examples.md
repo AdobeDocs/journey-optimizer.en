@@ -8,8 +8,42 @@ topic: Content Management
 role: Developer, Admin
 level: Experienced
 exl-id: 26ad12c3-0a2b-4f47-8f04-d25a6f037350
+TQID: https://experienceleague.adobe.com/-JJssuHJ4-RPjn8TpxLWRANyjoOOyK6BZEb1ABO0Qps
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+subfeature_v2:
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
+    internal-label: Metrics catalog
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Examples of queries{#query-examples}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Find ready-to-use SQL query examples for analyzing and troubleshooting journey step events in the Adobe Experience Platform Data Lake.
+
+>[!ENDSHADEBOX]
 
 This section provides commonly used examples to query Journey Step Events in Data Lake. Before diving into specific use cases, it's important to understand the key identifiers used in journey event data.
 
@@ -35,6 +69,7 @@ Before running any query on this page, ensure the following:
 | Investigate Read Audience execution or errors | [Read Audience queries](#read-segment-queries) |
 | Troubleshoot message or action errors | [Message & Action errors](#message-action-errors) |
 | Analyze Audience Qualification discards | [Audience Qualification queries](#segment-qualification-queries) |
+| Investigate business rules discards | [Business rules queries](#business-rules-queries) |
 | Debug external or business events | [Event-based queries](#event-based-queries) |
 | Monitor custom action endpoint performance | [Custom Action queries](#query-custom-action) |
 | Track Engageable Profiles and license usage | [Engageable Profiles queries](#engageable-profiles-queries) |
@@ -382,6 +417,8 @@ FROM journey_step_event
 
 WHERE _experience.journeyOrchestration.serviceType is not null;
 ```
+
++++
 
 ## Message/Action Errors {#message-action-errors}
 
@@ -957,6 +994,60 @@ This query returns all events (external events / audience qualification events) 
 
 +++
 
+## Queries related to business rules {#business-rules-queries}
+
++++Check all discards due to journey frequency capping exclusions on a specific journey after a specific date
+
+This query returns the rejected ruleset and rule details for all profiles discarded due to frequency capping rules on a specific journey, starting from a given date.
+
+_Data Lake query_
+
+```sql
+SELECT
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCodeReason,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.ID AS RULESET_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.name AS RULESET_NAME,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.ID AS RULE_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.name AS RULE_NAME
+FROM
+    journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
+AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID='<journeyVersionId>'
+AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.ID is not null
+AND
+    timestamp >= to_date('<YYYY-MM-DD>')
+```
+
+_Example_
+
+```sql
+SELECT
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventType,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCodeReason,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.ID AS RULESET_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.name AS RULESET_NAME,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.ID AS RULE_ID,
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.rejectedRules.name AS RULE_NAME
+FROM
+    journey_step_events
+WHERE
+    _experience.journeyOrchestration.serviceEvents.dispatcher.eventCode = 'discard'
+AND
+    _experience.journeyOrchestration.stepEvents.journeyVersionID='3855072d-79c3-438a-a5c3-c77fd6843812'
+AND
+    _experience.journeyOrchestration.serviceEvents.dispatcher.rejectedRuleset.ID is not null
+AND
+    timestamp >= to_date('2025-05-16')
+```
+
+This query returns all discards where a ruleset was matched (non-null `rejectedRuleset.ID`). The `eventCodeReason` field provides the sub-reason for the discard: `LOWER_PRIORITY` (profile discarded due to journey arbitration) or `CAP_REACHED` (profile discarded because the frequency cap was reached). The results show which specific frequency capping rulesets and rules caused profiles to be excluded from the journey after the specified date.
+
++++
+
 ## Event-based queries {#event-based-queries}
 
 +++Check if a business event was received for a journey
@@ -1041,17 +1132,16 @@ Learn how to [troubleshoot discarded event types in journey_step_events](../repo
 
 +++
 
-## Queries for Engageable Profiles {#engageable-profiles-queries}
+## Queries for engageable profiles {#engageable-profiles-queries}
 
 These queries help you monitor and analyze your Engageable Profiles count. An Engageable Profile is a unique profile that has been engaged through journeys or campaigns in the past 12 months. Learn more about [Engageable Profiles and license usage](../audience/license-usage.md#what-is-engageable-profile).
 
->[!IMPORTANT]
->
->**Best practices for querying Engageable Profiles:**
->* Ensure each non-aggregate field is included in the `GROUP BY` clause
->* Avoid referencing datasets that don't exist in your sandbox - confirm dataset names in the Platform UI
->* Use `distinct` when counting unique profiles to avoid duplicates across identity namespaces
->* When using `LIMIT`, place it at the end of the query after `ORDER BY` clauses
+**Best practices for querying Engageable Profiles:**
+
+* Ensure each non-aggregate field is included in the `GROUP BY` clause
+* Avoid referencing datasets that don't exist in your sandbox - confirm dataset names in the Platform UI
+* Use `distinct` when counting unique profiles to avoid duplicates across identity namespaces
+* When using `LIMIT`, place it at the end of the query after `ORDER BY` clauses
 
 +++Count unique profiles engaged by a specific journey
 
@@ -1458,7 +1548,7 @@ ORDER BY
 
 +++
 
-## Queries related to Custom Action performance metrics {#query-custom-action}
+## Queries related to custom action performance metrics {#query-custom-action}
 
 +++ Total number of successful calls, errors and requests per second of each endpoint over a specific time period
 

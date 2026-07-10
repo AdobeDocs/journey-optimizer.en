@@ -6,8 +6,38 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 25c2c448-9380-47b0-97c5-16d9afb794c5
+TQID: https://experienceleague.adobe.com/sXmKdCTKfU1Kjq2k7CeibiUw6z1DlW3J2vVOtCSiVFQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: f88eedcc-cf3e-46b8-9e94-0293589325f3
+    internal-label: Code based channel
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create code-based experiences {#create-code-based}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create code-based experiences in a journey or campaign and edit their content using the personalization editor.
+
+>[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_code_based"
+>title="Code-based experience action"
+>abstract="A code-based experience inbound action delivers a code-based experience to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a code-based configuration that defines the content shown. The **Optimization** section can include content experiments or targeting rules. A **Wait** node is automatically inserted after this activity (3 days by default), giving profiles time to view the experience."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 In [!DNL Journey Optimizer], you can create code-based experiences in a journey or a campaign.
 
@@ -29,7 +59,7 @@ To add a **code-based experience** activity to a journey, follow these steps:
 
     >[!IMPORTANT]
     >
-    >All native channels being now accessible through the Action activity, legacy native channel activities will be deprecated with the March release. Existing journeys that include legacy actions will continue to function as is—no migration is required.
+    >Legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) are deprecated as of the March 2026 release. Existing journeys using these activities continue to work without any changes—no migration is required.
 
 1. Select **[!UICONTROL Code-based experience]** as the action type.
 

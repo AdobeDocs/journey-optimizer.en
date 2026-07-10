@@ -5,9 +5,24 @@ title: Use the AND-join activity
 description: Learn how to use the AND-join activity in an Orchestrated campaign
 exl-id: 1b99313e-f131-44f7-a129-f85e1977fb05
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/6mTYgjWPoUUos8rWCE5qWwPWBl4387c9SRq1U4QgreQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
-
 # AND-join {#join}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the And-join flow control activity in an Orchestrated campaign to synchronize multiple execution branches so the campaign continues only after all preceding activities have finished.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_and-join"

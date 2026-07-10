@@ -7,9 +7,45 @@ feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
+mini-toc-levels: 1
 exl-id: 6e291ce3-f324-4e5d-975b-5229dea4d581
+TQID: https://experienceleague.adobe.com/lACM3Joa-M9aAfD0YOX4jOndjrcoiLMDAEBdFxgjt8o
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
 ---
 # Get started with AI Assistant {#gs-content-assistant}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access AI Assistant in Adobe Journey Optimizer, set up the required permissions, and understand the guardrails for generating text and image content.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_generation_settings"
@@ -71,7 +107,7 @@ Use AI Assistant in Adobe Journey Optimizer to optimize your message's impact by
 
 >[!IMPORTANT]
 >
->* Before starting using this capability, read out related [Guardrails and Limitations](#generative-guardrails).
+>* Before you start using this capability, read the related [Guardrails and limitations](#generative-guardrails).
 >
 >
 >* You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
@@ -108,23 +144,41 @@ The user will receive an email with instructions to access your instance.
 
 General guidelines for using AI Assistant in Adobe Journey Optimizer for email generation are listed below:
 
+### Supported channels
+
+* Only available for the email, push, web and SMS channels.
+
+### Content quality, prompts, and feedback
+
 * The quality of the generated content is strongly impacted by the marketing objective / prompt you define. Use well defined prompt for the GenAI model to accurately interpret. 
+* GenAI content might not always be accurate: please share your feedback so that our engineers can refine the models.
+* Make sure to report any problematic outputs using the thumb up, thumb down or flag icons when selecting variants.
+
+### Brand assets
+
 * Upload brand asset to have accurate, on brand content. Else, content is based on publicly available info. The uploaded content can be in the following formats: PDF, JPEG, PNG, or ZIP files (with supported file formats).
 * The maximum size for uploaded brand asset is 50MB. Larger files or lots of images can work but the processing time is increased.
+* You may upload multiple brand assets, but can leverage only one for a specific generation.
+
+### Email templates and imagery
+
 * Use brand specific or custom template to create your email content using AI Assistant in Adobe Journey Optimizer. Email templates with up to 8-10 images is recommended.
-* Make sure to report any problematic outputs using the thumb up, thumb down or flag icons when selecting variants.
+
+### Legal use and transparency
+
 * Your use of AI Assistant is subject to the Adobe Experience Cloud Generative AI User Guidelines. [Learn more](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html)
 * As part of Adobe's commitment to promote transparency in the use of generative AI tools in media creation, Adobe will apply Content Credentials when content or a project that included a Firefly generated asset is downloaded or exported. [Learn more](https://helpx.adobe.com/firefly/using/content-credentials.html)
 
-The following limitations apply to AI Assistant in Adobe Journey Optimizer:
+### AI assistant for personalization expressions {#ai-assistant-personalization-editor-guardrails}
 
-* Only available for the email, push, web and SMS channels.
-* GenAI content might not always be accurate: please share your feedback so that our engineers can refine the models.
-* You may upload multiple brand assets, but can leverage only one for a specific generation.
+The following guardrails apply to [AI Assistant for personalization expressions](generative-personalization-expressions.md) in the [!UICONTROL Personalization Editor] and in the Email Designer.
 
+* **Offer and Experience Decisioning** — Not supported.
+* **Favorites** — Not supported.
+* **Saved conditions** — Not supported.
+* **Adobe Experience Manager Content Fragments** — Not supported.
 
 ## AI Assistant content generation capabilities {#generative-features}
-
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
@@ -156,6 +210,5 @@ The following limitations apply to AI Assistant in Adobe Journey Optimizer:
 
 ## Additional resources
 
-* **[Generative experimentation](generative-experimentation.md)** - Understand how to combine AI-generated content with experimentation.
 * **[AI Assistant use cases](generative-uc.md)** - Learn through use cases how to use AI Assistant
 * **[AI Assistant tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/introduction-to-journey-optimizer/ai-assistant){target="_blank"}** - Explore step-by-step video tutorials on AI Assistant features and best practices.

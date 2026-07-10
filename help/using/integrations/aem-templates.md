@@ -3,16 +3,42 @@ solution: Journey Optimizer
 product: journey optimizer
 title: Work with AEM templates
 description: Learn how to create templates in AEM and export them into Journey Optimizer
-hide: yes
-hidefromtoc: yes
+hide: true
 feature: Overview
 topic: Content Management
 role: User
 level: Beginner
 badge: label="Beta" type="Informative"
 exl-id: e4935129-c1cb-41b1-b84d-cd419053c303
+TQID: https://experienceleague.adobe.com/VniMggDTid9M3NPQakAMWLIeAXT8hlHolGknjeb91Dg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
+    internal-label: Experience Manager Assets integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Work with Adobe Experience Manager templates {#aem-templates}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design templates in Adobe Experience Manager, export them to Journey Optimizer, and personalize them as content templates in the Email Designer.
+
+>[!ENDSHADEBOX]
 
 ## Get started with Adobe Experience Manager templates {#gs-aem-templates}
 
@@ -104,7 +130,7 @@ Once the Experience Manager template is available in Journey Optimizer as a cont
 
     ![](assets/aem_ajo_5.png)
 
-1. If you added personalized content to your Experience Manager template, click **[!UICONTROL Simulate Content]** to preview how it will appear in the message using test profiles. 
+1. If you added personalized content to your Experience Manager template, use either simulation method to preview how it will appear in the message: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
 
     [Learn more about preview and test profiles](../content-management/preview-test.md)
 

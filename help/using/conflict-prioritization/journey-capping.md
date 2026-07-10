@@ -4,8 +4,37 @@ description: Learn how to create capping rules for your journeys and how to arbi
 role: User
 level: Beginner
 exl-id: 4c0ee178-81fb-41ae-b7f5-22da995e6fc6
+TQID: https://experienceleague.adobe.com/8QpErWykIh4UPZIZpe43QS2RDkjgWdvrOMK52At3tWM
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+subfeature_v2:
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
 ---
 # Journey capping & arbitration {#journey-capping}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Limit how many journeys a profile can enter or be enrolled in at once so you can prevent communication overload and prioritize the most important journeys.
+
+>[!ENDSHADEBOX]
 
 Journey capping helps you limit the number of journeys a profile can be enrolled in, preventing communication overload. In Journey Optimizer, you can set two types of capping rules:
 
@@ -109,7 +138,7 @@ Once a journey is live, you can check in the journey report if the rule set has 
 
 ![](assets/journey-report.png)
 
-In addition, you can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to build queries to identify which rule caused a profile to not enter into a given journey. A query example is available in [this section](../reports/query-examples.md#common-queries).
+In addition, you can use the [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html){target="_blank"} to build queries to identify which rule caused a profile to not enter into a given journey. Query examples, including the discard sub-reason (`CAP_REACHED` or `LOWER_PRIORITY`), are available in [this section](../reports/query-examples.md#business-rules-queries).
 
 ## How-to video {#video}
 

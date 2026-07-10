@@ -1,32 +1,57 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Condition activity
-description: Learn about condition activity
+title: Conditions
+description: Configure conditions in the Optimize activity for journey paths
 feature: Journeys, Activities
 topic: Content Management
 role: User
 level: Intermediate
 keywords: activity, condition, canvas, journey
-hidefromtoc: yes
-hide: yes
 exl-id: 496c7666-a133-4aeb-be8e-c37b3b9bf5f9
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/8gtrjnNNob-iRXdjSytSYOMyDswVxsrd8knipi4i1gI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Conditions {#conditions}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use conditions in the Optimize activity to create multiple journey paths based on data sources, time, dates, percentage splits, profile caps, or audience membership.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_conditions"
 >title="Conditions"
->abstract="Conditions let you define how individuals progress through your journey by creating multiple paths based on specific criteria. You can also configure an alternate path to handle timeouts or errors, ensuring a seamless experience."
+>abstract="Conditions let you define how individuals progress through your journey by creating multiple paths based on specific criteria. You can also configure an alternate path to handle timeouts or errors, ensuring a seamless experience. Note that the conditions are now configured in the Optimize activity, which replaces the former Condition activity."
 
 With **conditions** you can define how individuals progress through your journey by creating multiple paths based on specific criteria. You can also configure an alternate path to handle timeouts or errors, ensuring a seamless experience.
 
->[!AVAILABILITY]
+>[!NOTE]
 >
->These conditions are available through the **Optimize** activity, which can be accessed on demand in Limited Availability. Contact your Adobe representative to gain access.
+>The new vehicle for creating conditional paths in journeys is the [Optimize](optimize.md) activity. It replaces the former **Condition** activity, which has been removed from the UI. All conditional logic is now handled through the Optimize activity's conditions presented on this page.
 >
->If you don't have access to this capacity, you can still use the legacy [Condition activity](condition-activity.md).
+>If you have existing journeys that used **[!UICONTROL Condition]** activities, you can continue to use them as before. They now appear with a new icon as **[!UICONTROL Optimize]** activities using the **[!UICONTROL Condition]** method, but the behavior is unchanged. Any custom label you had set on the node is preserved.
 
 ## Add a condition {#add-condition-activity}
 
@@ -49,12 +74,16 @@ To add a condition to your journey, follow the steps below.
    * [Profile cap](#profile_cap)
    * You can also use an audience in a journey condition. [Learn more](#using-a-segment)
 
+>[!NOTE]
+>
+>Condition evaluation will fail for profiles that include more than two cross-device identities in the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
+
 ## Manage condition paths {#condition_paths}
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_expression_simple2"
 >title="About the simple expression editor"
->abstract="The simple expression editor mode allows you to perform simple queries based on a combination of fields. All the available fields are displayed on the left side of the screen. Drag and drop fields into the main zone. To combine the different elements, interlock them into one another to create different groups and/or group levels. You can then select a logical operator to combine elements on the same level."
+>abstract="The simple expression editor mode allows you to perform simple queries based on a combination of fields. All the available fields are displayed on the left side of the screen. Fields are dragged and dropped into the main zone. To combine the different elements, they are interlocked into one another to create different groups and/or group levels. A logical operator then combines elements on the same level."
 
 When using several conditions in a journey, you can define labels for each of them to identify them more easily.
 
@@ -81,7 +110,7 @@ The simple mode allows you to perform simple queries based on a combination of f
 
 ![Simple expression editor with drag-and-drop fields and logical operators](assets/journey64.png){width=80%}
 
-If you are using the [[!DNL Adobe Experience Platform] Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Using audience in conditions](../building-journeys/condition-activity.md#using-a-segment).
+If you are using the [Adobe Experience Platform Segmentation Service](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"} to create your audiences, you can leverage them in your journey conditions. Refer to [Use audience in conditions](#using-a-segment).
 
 >[!NOTE]
 >
@@ -96,6 +125,14 @@ In the simple editor, you will also find the Journey Properties category, below 
 Use a **[!UICONTROL Data source condition]** to define a condition based on fields from the data sources or the events previously positioned in the journey. This type of condition is defined with the expression editor. [Learn how to use the expression editor](expression/expressionadvanced.md)
 
 For example, if you are targeting an audience with enrichment attributes generated using a composition workflow or a custom upload (CSV file), you can leverage these enrichment attributes to build your condition.
+
+>[!IMPORTANT]
+>
+>**Handling missing or non-ingested attributes**
+>
+>If a schema field is defined in your Profile schema but no data has been ingested for that field, Journey Optimizer and the underlying Real-Time Customer Profile interpret the field as `null`. As a result, conditions that check for `isEmpty()`, `isNull()`, or similar functions will evaluate to `true` even if the attribute was never ingested. This can lead to unexpected journey behavior if you are not aware that the field has no data.
+>
+>To avoid confusion, ensure that the attributes you use in condition expressions have been ingested with actual data before the profile enters the journey. You can verify attribute values in the [Real-Time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"} to confirm whether data exists for the fields used in your conditions.
 
 Using the advanced expression editor, you can setup more advanced conditions manipulating collections or using data sources requiring the passing of parameters. [Learn more](../datasource/external-data-sources.md)
 
@@ -187,3 +224,51 @@ To use an audience in a journey condition, follow these steps:
    >[!NOTE]
    >
    >Note that only the individuals with the **Realized** audience participation status will be considered as members of the audience. For more on how to evaluate an audience, refer to the [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html#interpret-segment-results){target="_blank"}.
+
+➡️ **See it in practice:** Learn how to use time and day-of-week conditions to [send emails only on weekdays](weekday-email-uc.md).
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to configure conditions within the Optimize activity in Journey Optimizer, covering five condition types — Data Source, Time, Percentage Split, Date, and Profile Cap — that route profiles to different journey paths based on rules, time, or audience membership.
+
+**Intents:**
+* Add a condition to a journey using the Optimize activity and select a condition method
+* Create multiple branching paths and manage their priority order in the journey canvas
+* Configure a Data Source condition using the expression editor to evaluate profile or event attributes
+* Set up a Time condition to route profiles based on hour of day or day of week
+* Apply a Profile Cap to limit the number of profiles routed down a specific path
+* Use an audience membership check as a condition in a journey path
+
+**Glossary:**
+* **Optimize activity**: The current journey activity that replaces the former Condition activity; all conditional branching logic is now configured through its Method drop-down *(product-specific)*
+* **Data source condition**: A condition method that evaluates fields from data sources or journey events using the expression editor *(product-specific)*
+* **Percentage split**: A condition method that randomly distributes profiles across paths using a statistical Java random mechanism *(product-specific)*
+* **Profile cap**: A condition method that routes profiles to an alternate path once a defined maximum count is reached on the nominal path *(product-specific)*
+* **Nominal path**: The primary journey path associated with a Profile Cap condition; it always has priority over the alternate path *(product-specific)*
+
+**Guardrails:**
+* Condition evaluation fails for profiles with more than two cross-device identities in the Profile Store
+* Schema fields with no ingested data are interpreted as null; isEmpty() and isNull() evaluate to true for such fields
+* Time zone is defined at the journey level, not at the individual condition level
+* The "Show path for other cases" option is not available in Percentage Split conditions
+* Profile cap default is 1,000; counter resets on journey duplication or new version creation, but not between recurrences
+* For caps above 10,000, inject at least 1.3x the cap; for caps below 10,000, inject at least 1,000 plus the cap
+* Profile cap is not applied in test mode; in test mode, the top branch is always chosen for Percentage Split
+
+**Terminology:**
+* Canonical name: Conditions — Acronym: none — variants: condition activity, condition method, conditional branching
+* Synonyms: "Optimize activity (Condition method)" = "former Condition activity"
+* Do not confuse: "Percentage split" ≠ "Profile cap" (percentage split distributes all profiles statistically; profile cap stops routing to the nominal path after a count threshold)
+
+**FAQ:**
+* **Q: The Condition activity is gone from my UI — what replaced it?** — The Condition activity has been replaced by the Optimize activity. Select "Condition" from the Method drop-down to get the same behavior. Existing journeys with Condition activities continue to work and now display with an Optimize icon.
+* **Q: When multiple paths are eligible for a profile, which path is taken?** — Only the first eligible path (highest on the canvas) is executed; you can reprioritize by reordering paths vertically.
+* **Q: Why does my isEmpty() condition unexpectedly evaluate to true?** — If the schema field exists but no data has been ingested for it, Journey Optimizer interprets it as null, causing isEmpty() and isNull() to return true.
+* **Q: Does the profile cap counter reset on a recurring journey?** — No, the counter does not reset between recurrences; it only resets when the journey is duplicated or a new version is created.
+* **Q: Can I use an Adobe Experience Platform audience as a condition?** — Yes, drop an Optimize activity, select "Data source condition," add a path, and drag the audience from the Audiences node in the expression editor.
+
++++

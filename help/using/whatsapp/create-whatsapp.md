@@ -8,21 +8,49 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: cac6f675-59e0-431d-8c20-f24ef16d7bf2
+TQID: https://experienceleague.adobe.com/fio2Etyk9FdkyTiHwRMkadrJ4bbsFz7--KvzQvUQrbc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: b8df23d2-98a2-4406-86cc-2babe8728d36
+    internal-label: WhatsApp channel
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-
 # Create a WhatsApp message {#create-whatsapp}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Add a WhatsApp action to a journey or campaign and build its content from an approved Meta template, so you can deliver personalized, well-tested messages to your audience.
+
+>[!ENDSHADEBOX]
 
 With Adobe Journey Optimizer, you can design and send engaging messages on WhatsApp. Simply add a WhatsApp action to your journey or campaign and craft your message content as detailed below. Adobe Journey Optimizer also lets you test your WhatsApp messages before sending them, ensuring perfect rendering, accurate personalization, and proper configuration of all settings.
 
 Note that only Outbound messages elements are supported in Journey Optimizer. 
 
-+++ Learn more about supported message elements and calls to actions
++++ Learn more about supported message elements and interactive buttons
 
 The following message types are supported in WhatsApp:
 
 | Message Feature | Description |
 |-|-|
-| Headers |  Optional text that appears above the body of your message.|
+| Headers | Optional text that appears above the body of your message.|
 | Text | Supports dynamic content through parameters. |
 | Images (JPEG, PNG) | Must be in 8-bit RGB or RGBA format and under 5 MB in size. |
 | Videos | Must be 3GPP or MP4, under 16 MB, and hosted via URL. |
@@ -31,17 +59,28 @@ The following message types are supported in WhatsApp:
 | Body Text | Supports dynamic content through parameters. |
 | Footer Text | Supports dynamic content through parameters. |
 
-The following call-to-action option is available for your WhatsApp messages:
+The following call-to-action options are available for your WhatsApp messages:
 
 | Call to actions | Description |
 |-|-|
-| Visit website| Only one button is permitted, with variable parameters included.|
-| Call on WhatsApp| Provides a button that opens a WhatsApp chat with the specified phone number directly from the message.|
-| Call phone number | Provides a button that initiates a phone call to the specified number when tapped by the user.|
+| Quick reply | Short preset replies the user can tap to respond to your message. |
+| Visit website | Only one button is permitted, with variable parameters included. |
+| Call on WhatsApp | Provides a button that opens a WhatsApp chat with the specified phone number directly from the message. |
+| Call phone number | Provides a button that initiates a phone call to the specified number when tapped by the user. |
+| Call to action – URL | Opens a URL (**Visit website**). Only one URL button is permitted, with variable parameters included. |
+| Call to action – phone | Uses the phone number from the template, for example **Call phone number** (places a call) or **Call on WhatsApp** (opens a chat with that number in WhatsApp). |
+
+Note that **Copy code** interactive buttons are not supported.
 
 +++
 
 ## Add a WhatsApp message {#create-whatsapp-journey-campaign}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_whatsapp"
+>title="WhatsApp action"
+>abstract="A WhatsApp channel action sends a WhatsApp message to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a WhatsApp configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 Browse the tabs below to learn how to add a WhatsApp message in a campaign or a journey.
 
@@ -58,6 +97,10 @@ Browse the tabs below to learn how to add a WhatsApp message in a campaign or a 
     For more information on how to configure a journey, refer to [this page](../building-journeys/journey-gs.md)
 
     The **[!UICONTROL configuration]** field is pre-filled, by default, with the last configuration used for that channel by the user.
+
+1. In the **[!UICONTROL Business rules]** section, you can apply a rule set to control communication pressure on WhatsApp messages.
+
+    Learn more about [rule sets](../conflict-prioritization/rule-sets.md), [channel frequency capping](../conflict-prioritization/channel-capping.md), and [quiet hours](../conflict-prioritization/quiet-hours.md).
 
 You can now start designing the content of your WhatsApp message from the **[!UICONTROL Edit content]** button, as detailed below.
 
@@ -82,6 +125,8 @@ You can now start designing the content of your WhatsApp message from the **[!UI
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
 1. In the **[!UICONTROL Actions tracking]** section, specify if you want to track clicks on links in your WhatsApp message.
+
+    Journey Optimizer also tracks interactions on supported WhatsApp template buttons, **Quick reply**, **Call to action – URL** and **Call to action – phone**, alongside your other channel reporting. **Copy code** buttons are not supported and their interactions are not tracked.
 
 1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 
@@ -138,9 +183,9 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 
     ![](assets/whatsapp-design-4.png)
 
-1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
+1. Use **[!UICONTROL Simulate content]** to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
-Once you have performed your tests and validated the content, you can [send your WhatsApp message](send-whatsapp.md) to your audience and monitor its performance through [reporting](../reports/campaign-global-report-cja.md). 
+Once you have performed your tests and validated the content, you can [send your WhatsApp message](send-whatsapp.md) to your audience and monitor its performance through [reporting](../reports/campaign-global-report-cja.md). For WhatsApp interaction data stored in Experience Platform, see [Analyze WhatsApp interactions](send-whatsapp.md#whatsapp-channel-context). 
 
 <!--
 * **[!UICONTROL Template message]**: Predefined message imported from Meta into Journey Optimizer. These are intended for sending notifications, alerts, or updates to your customers.
@@ -161,7 +206,7 @@ Once you have performed your tests and validated the content, you can [send your
 
 1. Use the personalization editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 
-1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
+1. Use **[!UICONTROL Simulate content]** to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
 Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed on [this page](send-whatsapp.md)
 
@@ -175,7 +220,7 @@ Once you have performed your tests and validated the content, you can send your 
 
 1. Use the personalization editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 
-1. Use the **[!UICONTROL Simulate content]** button to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
+1. Use **[!UICONTROL Simulate content]** to preview your WhatsApp message content, shortened URLs, and personalized content. [Learn more](send-whatsapp.md)
 
 Once you have performed your tests and validated the content, you can send your WhatsApp message to your audience. These steps are detailed on [this page](send-whatsapp.md)
 

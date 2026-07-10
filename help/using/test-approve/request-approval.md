@@ -5,8 +5,28 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: 75dafecd-805d-4aa2-86c6-99e6da4d378b
+TQID: https://experienceleague.adobe.com/UQ-5ddCbDJsF6muK1Am74fpx4ptRvHvB5VKwiIxd9d4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2: []
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+subfeature_v2:
+  - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
+    internal-label: Approval workflows
 ---
 # Request approval {#request-approval}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Move your journey or campaign toward go-live with confidence by sending it to the right reviewers, and stay in control while it is in review — cancel, edit, and resubmit as needed so only approved, on-brand content ever reaches your customers.
+
+>[!ENDSHADEBOX]
 
 Access to the approval workflow is determined by your specific use case:
 

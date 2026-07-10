@@ -7,8 +7,43 @@ feature: Profiles
 role: User
 level: Beginner
 exl-id: be3936e4-8185-4031-9daf-95eea58077d0
+TQID: https://experienceleague.adobe.com/QpLGV-y5qbtmksC-99GU5PtaV-mUA-imew8JDj7-weA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
+    internal-label: Audience Qualification events
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
+    internal-label: Audience guardrails
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Get Started with profiles {#profiles-gs}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how Real-time Customer Profile in Adobe Journey Optimizer unifies customer data from online, offline, and third-party sources into a single view, and how to access the profiles dashboard.
+
+>[!ENDSHADEBOX]
 
 ## About profiles
 
@@ -30,11 +65,26 @@ Leverage Real-time Customer Profile in [!DNL Adobe Journey Optimizer] to see a h
 
 **Data Sharing** - Share customer profiles with top cloud storage providers like Amazon Web Services, Microsoft Azure, and Google Cloud. Use shared profiles for reporting, data archiving, or deeper analysis with business intelligence tools.
 
->[!MORELIKETHIS]
+## Engageable Profiles and license usage {#engageable-profiles}
+
+An **Engageable Profile** is a record of information representing an individual that is stored in the Profile Service and has been engaged by journeys or campaigns. It is the key license metric for [!DNL Adobe Journey Optimizer].
+
+Key characteristics:
+
+* **12-month rolling window**: The count reflects unique profiles you have attempted to engage over the past 12 months using Journey Optimizer's authoring, decisioning, delivery, experimentation, or orchestration capabilities.
+* **Counted once per sandbox**: A profile that enters multiple journeys or campaigns within a sandbox counts as a single Engageable Profile for that sandbox.
+* **Based on your Addressable Audience**: Engageable Profiles are calculated from your Addressable Audience. The count represents the audience engaged in the past 12 months using any of Journey Optimizer's capabilities, out of your total Addressable Audience.
+* **Metric behavior**: The Engageable Profiles count:
+    * Can increase when new profiles are engaged through journeys or campaigns
+    * Cannot decrease unless there is no engagement with certain profiles for over 12 months
+    * Can decrease when pseudonymous profiles are stitched to known profiles
+
+>[!TIP]
 >
->* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
->* [Default guardrails for Real-Time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}
->* ​[Data Ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home){target="_blank"}
+>When targeting pseudonymous profiles (unauthenticated visitors) with inbound channels such as web, in-app, or code-based experiences, consider setting a Time-To-Live (TTL) for automatic profile deletion to manage your Engageable Profiles count and associated costs. [Learn more about inbound channel guardrails](../start/guardrails.md#profile-management-inbound)
+
+Monitor your organization's Engageable Profiles count at any time from **[!UICONTROL Administration]** > **[!UICONTROL License Usage]**. If you observe a sudden spike in the count, refer to the [Troubleshooting section](license-usage.md#troubleshooting-engageable-profiles) for detailed guidance. [Learn more about the License Usage dashboard](license-usage.md)
+
 
 ## Profiles dashboard
 
@@ -53,3 +103,12 @@ You can bring data fragments together from multiple sources and combine them to 
 Learn how Adobe Experience Platform assembles and updates Real-Time Customer Profiles and how you can access and use these profiles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12)
+
+
+
+>[!MORELIKETHIS]
+>
+>* [Get started with data management in Journey Optimizer](../data/gs-data.md)
+>* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html){target="_blank"}
+>* [Default guardrails for Real-Time Customer Profile data and segmentation](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}
+>* ​[Data Ingestion documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/home){target="_blank"}

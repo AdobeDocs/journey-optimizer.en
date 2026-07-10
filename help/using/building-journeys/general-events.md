@@ -10,8 +10,34 @@ level: Intermediate
 keywords: custom, general, events, journey
 exl-id: b1813122-7031-452e-9ac5-a4ea7c6dc57c
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/jKMddtFlzmUinPK5-onY2u-kRAd1MD126biQVwq3aAg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
+    internal-label: Reaction events
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 ---
 # General events {#general-events}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use general events to trigger journeys unitarily in real time and configure event timeouts and timeout paths to listen for an event only during a defined period.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_event_custom"
@@ -64,3 +90,44 @@ The defined timeout applies to all the events positioned after the **[!UICONTROL
 * If no event is received within the timeout duration, the individual flows into the timeout branch of the event where the timeout has been defined.
 
 ![Multiple events with timeout configurations in journey](assets/event-timeout-group.png)
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to use general (unitary and business) events in journeys to trigger real-time, individual-level message delivery, including how to configure event timeouts and timeout paths.
+
+**Intents:**
+* Add a general event activity to a journey canvas to trigger real-time profile entry
+* Configure an event timeout to limit how long a journey listens for an event
+* Set up a timeout path to handle profiles that do not trigger the expected event in time
+* Distinguish between unitary events and business events and understand when each is added automatically
+* Combine event timeouts with Wait activities to control multi-event timeout behaviour
+
+**Glossary:**
+* **Unitary event**: An event that triggers the journey for one individual at a time, in real-time *(product-specific)*
+* **Business event**: A non-profile-related event that triggers a journey for an audience of profiles, automatically adding a Read Audience activity *(product-specific)*
+* **Event timeout**: A configurable duration (up to 90 days) after which the journey stops waiting for a specific event and routes the profile to a timeout path *(product-specific)*
+* **Timeout path**: An optional journey branch that profiles follow when the expected event is not received within the timeout window *(product-specific)*
+
+**Guardrails:**
+* Event label and description are the only editable fields for a general event on the canvas; all other configuration is performed by a technical user and cannot be changed from the journey
+* Maximum event timeout duration is 90 days
+* When multiple events follow a Wait activity, the timeout must be configured on only one of those events; the defined timeout then applies to all events after the Wait
+* If no timeout path is defined, the timeout acts as a Wait activity; profiles that do not receive the event remain in the journey until the timeout elapses
+
+**Terminology:**
+* Canonical name: General event — Acronym: none — variants: unitary event, custom event
+* Synonyms: "general event" = "unitary event" (in the context of the canvas activity)
+* Do not confuse: "business event" ≠ "unitary event" — a business event targets an audience of profiles, while a unitary event targets a single individual
+
+**FAQ:**
+* **Q: Can I change the event configuration from the journey canvas?** — No; only the label and description can be edited on the canvas. The full event configuration is set by a technical user and cannot be modified from the journey.
+* **Q: What happens if no event is received before the timeout expires?** — If a timeout path is defined, the profile flows into that path. If no timeout path is set, the timeout behaves like a Wait activity and the profile continues the journey after the timeout period.
+* **Q: What is the maximum event timeout duration?** — 90 days.
+* **Q: When should I enable the timeout path option?** — Always enable it if you want profiles to exit that branch after the timeout; without a timeout path, profiles remain in the journey waiting for the event.
+* **Q: How does a business event differ from a unitary event in the journey canvas?** — Dropping a business event automatically adds a Read Audience activity, because business events target multiple profiles simultaneously rather than a single individual.
+
++++

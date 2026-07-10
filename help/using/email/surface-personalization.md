@@ -9,8 +9,40 @@ role: Admin
 level: Experienced
 keywords: settings, email, configuration, subdomain
 exl-id: 1e004a76-5d6d-43a1-b198-5c9b41f5332c
+TQID: https://experienceleague.adobe.com/NcnCL11koNfpNF-RDrVPyBsBgMuvpfSNlUcAfwOeGBg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
+  - id: c41e8697-e629-4c38-96b3-564faaa17acf
+    internal-label: Dynamic content
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Personalize email configuration settings {#surface-personalization} 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to define personalized values for dynamic subdomains, header parameters, and URL tracking parameters at the email channel configuration level.
+
+>[!ENDSHADEBOX]
 
 For increased flexibility and control over your email settings, [!DNL Journey Optimizer] allows you to define personalized values for subdomains, headers and URL tracking parameters when creating email configurations.
 
@@ -86,14 +118,14 @@ You can also use personalization for all the header parameters defined in a conf
 
 >[!NOTE]
 >
->* All **[!UICONTROL Header parameters]** fields can be personalized, except the **[!UICONTROL Error email prefix]** field.
+>* All **[!UICONTROL Header parameters]** and optional **[!UICONTROL Sender headers]** fields can be personalized, except the **[!UICONTROL Error email prefix]** field.
 >* When [editing an email configuration](../configuration/channel-surfaces.md#edit-channel-surface), you cannot add new [profile attributes](../personalization/personalization-build-expressions.md#sources) to header parameters — you must create a new channel configuration instead.
 
 For example, if you have multiple brands, you can create a single configuration and use personalized values for your email headers. This allows you to make sure that all emails sent from your different brands are addressed to each of your customers with the correct **From** names and emails. Similarly, when your recipients hit the **Reply** button in their email client software, you want the **Reply to** names and emails correspond to the correct brand for the right user.
 
 To use personalized variables for your configuration header parameters, follow the steps below.
 
-1. Define your header parameters as you would usually do. [Learn how](email-settings.md#email-header)
+1. Define your header parameters as you would usually do. [Learn how](header-parameters.md)
 
 1. For each field, select the Edit icon.
 
@@ -109,15 +141,17 @@ To use personalized variables for your configuration header parameters, follow t
 
     For example, you want to handle dynamically emails sent on behalf of a relationship manager, whose details are stored in the customer profile, so that every customer is linked to a relationship manager. In a [journey](../building-journeys/journey-gs.md), the email header (sender name, sender email, reply to address) can be personalized with the relationship manager's parameters, taken from the profile attributes.
     
-    <!--The examples below use event parameters, which are currently not available.
+    <!--
+    The examples below use event parameters, which are currently not available.
     
-    Let's say you want to handle dynamically emails sent on behalf of a sales assistant, where the sales assistant is retrieved from an event or campaign contextual parameters. For example: In a [journey](../building-journeys/journey-gs.md), when a purchase event is linked to the sales assistant of a specific shop, the email header (sender name, sender email, reply to address) can be personalized with the sales assistant parameters, taken from the event attributes. In an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), initiated externally by a sales assistant, the triggered email can be sent on behalf of the sales assistant and the header personalization values taken from campaign contextual parameters.-->
+    Let's say you want to handle dynamically emails sent on behalf of a sales assistant, where the sales assistant is retrieved from an event or campaign contextual parameters. For example: In a [journey](../building-journeys/journey-gs.md), when a purchase event is linked to the sales assistant of a specific shop, the email header (sender name, sender email, reply to address) can be personalized with the sales assistant parameters, taken from the event attributes. In an [API-triggered campaign](../campaigns/api-triggered-campaigns.md), initiated externally by a sales assistant, the triggered email can be sent on behalf of the sales assistant and the header personalization values taken from campaign contextual parameters.
+    -->
 
 1. Repeat the steps above for each parameter you want to add personalization to.
 
 >[!NOTE]
 >
->If you added one or more dynamic subdomains to your configuration, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains).
+>If you added one or more dynamic subdomains to your configuration, the **From email** and **Error email** suffixes will be populated based on the resolved [dynamic subdomain](#dynamic-subdomains). **[!UICONTROL Sender email]**, when set, is a full address and is not built from that subdomain suffix.
 
 ## Use personalized URL tracking {#personalize-url-tracking}
 
@@ -157,15 +191,12 @@ When using a configuration with personalized settings in a campaign or a journey
 
 ## Check your configuration {#check-configuration}
 
-When using a personalized configuration in a campaign or a journey, you can preview your email content using test profiles to check for potential errors with the dynamic settings you defined. Follow the steps below.
+When using a personalized configuration in a campaign or a journey, you can preview your email content to check for potential errors with the dynamic settings you defined. You can use either simulation method:
 
->[!NOTE]
->
->In addition to test profiles, [!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
 
-To preview your content using test profiles, follow these steps: 
-
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button. [Learn more](../content-management/preview.md)
+To preview your content using test profiles, follow these steps:
 
 1. Select a [test profile](../content-management/test-profiles.md).
 

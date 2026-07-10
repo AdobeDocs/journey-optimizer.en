@@ -7,8 +7,37 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 9864a136-e129-4279-bb09-081b72f584df
+TQID: https://experienceleague.adobe.com/orXAhry8onHXUejP5pzOyHdKbAcD8fiDmvRk-s74xLo
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+  - id: ed2fba79-65cb-4680-96d2-2ad5d851714d
+    internal-label: Live activities
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Create a Live activity {#create-mobile-live}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Build an API-triggered campaign in Journey Optimizer so you can remotely start, update, and end Live activities for individual users or audiences.
+
+>[!ENDSHADEBOX]
 
 After configuring your mobile configuration and implement your Adobe Experience Platform mobile SDK, you can start creating your Live activity in Journey Optimizer:
 
@@ -50,7 +79,7 @@ After configuring your mobile configuration and implement your Adobe Experience 
 
     Ensure that you also copy the **[!UICONTROL Campaign ID]** identifiers to include in your payload.
 
-    ➡️ Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/) for authentication requirements, including OAuth tokens and API keys.
+    ➡️ Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging) for authentication requirements, including OAuth tokens and API keys.
 
     ![](assets/create-live-3.png)
 
@@ -149,10 +178,10 @@ After designing your Live activity, you can track measuring the impact of your L
 
 >[!TIP]
 >
->If your Live Activity is not appearing or updating as expected, see [Troubleshoot Live Activities](troubleshoot-mobile-live.md) for step-by-step debugging guidance.
+>If your Live activity is not appearing or updating as expected, see [Troubleshoot Live activities](troubleshoot-mobile-live.md) for step-by-step debugging guidance.
 
 ## How-to video
 
-Discover how to configure iOS Live activity with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
+Discover how to configure iOS Live activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479864)

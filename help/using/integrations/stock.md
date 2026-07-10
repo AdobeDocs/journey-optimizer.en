@@ -9,8 +9,30 @@ role: User
 level: Beginner
 keywords: stock, images, integration, photos
 exl-id: 0715f65f-04bd-4dc2-a152-98111f4c42e6
+TQID: https://experienceleague.adobe.com/vTlX-g-0KOflNFEE82-eaivCmII6bqdYyGHtzDvYylc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+subfeature_v2:
+  - id: c08fcc42-2918-421a-a25e-e1bd9464c290
+    internal-label: Adobe Stock integration
 ---
 # Work with [!DNL Adobe Stock] images {#stock}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to find, license, and insert Adobe Stock images, including similar photos, directly from the Email Designer in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
 
 ## Get started with [!DNL Adobe Stock] {#get-started-stock}
 

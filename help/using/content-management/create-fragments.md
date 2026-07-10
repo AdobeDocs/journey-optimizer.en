@@ -8,9 +8,44 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
+TQID: https://experienceleague.adobe.com/NlC-JLidAL9r-1-8rX4hX-WxCkr-Nv1e6YKSisx1n28
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create a fragment {#create-fragments}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, design, lock, preview, and publish visual and expression fragments so you can reuse content across Adobe Journey Optimizer campaigns and journeys.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_create_visual_fragment"
 >title="Select the visual type"
@@ -26,6 +61,8 @@ exl-id: da3ffe9c-a244-4246-b4b5-a3a1d0508676
 Fragments can be created from scratch from the **[!UICONTROL Fragments]** left menu. In addition, you can also save a portion of existing content as fragment when designing content. [Learn how](save-fragments.md#)
 
 Once saved, your fragment is available for use in a journey, a campaign or a template. You can use this fragment when building any content within journeys and campaigns. See [Add visual fragments](../email/use-visual-fragments.md) and [Leverage expression fragments](../personalization/use-expression-fragments.md).
+
+➡️ [Manage your Adobe Experience Manager content fragments](../integrations/aem-fragments-manage.md) to view synced fragments, references, tags, and manual sync on the **[!UICONTROL AEM Fragments]** tab.
 
 To create a fragment, follow the steps below.
 
@@ -91,6 +128,30 @@ When your content is ready, click the **[!UICONTROL Save]** button.
     
 The fragment is created and added to the fragment list with the **[!UICONTROL Draft]** status. You can preview it and publish it to make it available in journeys and campaigns.
 
+### Lock a visual fragment {#lock-visual-fragment}
+
+If you are creating or editing a visual fragment, you can lock it to prevent editors from modifying or detaching it when used in emails.
+
+Selecting this option ensures the fragment stays synchronized wherever it is used, helping enforce brand, maintain consistency and comply with legal requirements.
+
+To lock a visual fragment, follow the steps below.
+
+1. In the fragment content edition screen, go to the **[!UICONTROL Settings]** tab.
+
+1. By default, the fragment is unlocked. Select **[!UICONTROL Prevent inheritance from being broken]** to lock the fragment.
+
+1. Click **[!UICONTROL Confirm]**.
+
+    >[!NOTE]
+    >
+    >This setting can be updated at any time. However, changes apply to future usages only. Existing emails using this fragment are not modified.
+
+![](assets/fragment-lock.png){width="70%" align="center"}
+
+Now when using this fragment in an email, it is locked and cannot be detached from the original fragment. [Learn more](../email/use-visual-fragments.md#locked-fragments)
+
+New updates to the original locked fragment are automatically propagated to all emails using it.
+
 ## Preview and publish the fragment {#publish}
 
 >[!NOTE]
@@ -121,3 +182,4 @@ The fragment is now **[!UICONTROL Live]**, and becomes available when building a
 >[!CAUTION]
 >
 >Once it has been published, you cannot add new personalized attributes to a live fragment. If you want to add personalization attributes, you must duplicate the fragment. [Learn more](manage-fragments.md#adding-new-attributes)
+

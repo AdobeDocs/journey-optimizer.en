@@ -7,8 +7,32 @@ role: User
 level: Intermediate
 exl-id: ddc4b681-020b-4433-b4b3-3791c41907c9
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/tL3mwS9sDtSkSVljry1EeqPnYn4U34TvXCg5jX2ej3M
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 ---
 # Leverage context data in Decisioning {#context}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Define and feed context data from Adobe Experience Platform into Decisioning so you can use real-time information sent at the time of the decision request in your decision rules and ranking formulas.
+
+>[!ENDSHADEBOX]
 
 With Decisioning, you can leverage any information available in Adobe Experience Platform to perform various actions such as creating [decision rules](rules.md) or [ranking formulas](ranking/ranking.md).
 

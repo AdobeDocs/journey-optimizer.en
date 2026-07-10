@@ -10,7 +10,7 @@ exl-id: 9f74019a-9a29-40f3-8f94-253814b984c0
 
 Managing your journeys in Adobe Journey Optimizer is all about giving you the tools to organize and refine how customer experiences unfold across channels. This section explores key concepts like journey types, statuses, and filtering criteria, helping you make sense of the different ways journeys can start, progress, and end. You'll learn how to visualize schedules, optimize send times, and even transfer journeys between environments. Whether you're building personalized experiences or leveraging AI for smarter engagement, this guide will provide practical steps and insights to help you design and manage journeys with confidence.
 
-## Manage Your Journeys
+## Manage your journeys
 
 :::: landing-cards-container
 :::
@@ -18,7 +18,7 @@ Managing your journeys in Adobe Journey Optimizer is all about giving you the to
 
 Browse & Filter Your Journeys
 
-Learn how to navigate, filter, and manage journeys effectively, including journey dashboard metrics, calendar views, and duplication processes.
+Learn how to navigate, filter, organize journeys in folders, and manage journeys effectively, including journey dashboard metrics, calendar views, and duplication processes.
 
 [Explore Journey Management](../using/building-journeys/journey-ui.md)
 :::
@@ -78,5 +78,5 @@ Explore how journeys end, including closing, stopping, and managing profile exit
 
 ## Additional Resources
 
-- **[Copy a Journey to Another Sandbox](../using/building-journeys/copy-to-sandbox.md)** - Learn how to transfer journeys and dependent objects between sandbox environments using package exports and imports.
-- **[Integrate with Intelligent Services](../using/building-journeys/ai-services-overview.md)** - Leverage AI and machine learning for customer behavior prediction and campaign impact measurement with Adobe Intelligent Services.
+- **[Copy a Journey to Another Sandbox](../using/configuration/copy-objects-to-sandbox.md#objects)** - Learn how to transfer journeys and dependent objects between sandbox environments using package exports and imports.
+- **[Integrate with Intelligent Services](../using/integrations/intelligent-services.md)** - Leverage AI and machine learning for customer behavior prediction and campaign impact measurement with Adobe Intelligent Services.

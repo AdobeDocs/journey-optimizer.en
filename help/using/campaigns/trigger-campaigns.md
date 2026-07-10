@@ -9,9 +9,39 @@ role: User
 level: Intermediate
 keywords: campaign, review, validation, activation, activating, optimizer
 exl-id: 86f35987-f0b7-406e-9ae6-0e4a2e651610
+TQID: https://experienceleague.adobe.com/Q9UQEnAqQNFD869w4lQOQxcbH82SwDZyT8Q-9RvRD5k
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-
 # Execute an API triggered campaign {#execute}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Retrieve the generated cURL request and use it to trigger your live API triggered campaign through the APIs, with troubleshooting guidance so you can resolve delivery delays and authentication errors.
+
+>[!ENDSHADEBOX]
 
 Once your campaign has been activated, you need to retrieve the generated sample cURL request and use it into the API to build your payload and trigger the campaign.
 
@@ -31,9 +61,9 @@ Once your campaign has been activated, you need to retrieve the generated sample
     >
     >The endpoints in the cURL section differ between standard and [High throughput campigns](../campaigns/api-triggered-high-throughput.md).
 
-1. Use this cURL request into the APIs to build your payload and trigger the campaign. For more information, refer to the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution), where all endpoints for standard and High throughput campaigns are listed.
+1. Use this cURL request into the APIs to build your payload and trigger the campaign. For more information, refer to the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging#tag/execution), where all endpoints for standard and High throughput campaigns are listed.
 
-    API call examples are also available on [this page](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples/).
+    API call examples are also available on [this page](https://developer.adobe.com/journey-optimizer-apis/references/messaging-samples).
 
 ## Troubleshooting {#troubleshooting}
 
@@ -41,7 +71,7 @@ Once your campaign has been activated, you need to retrieve the generated sample
 
 If email delivery times exceed expectations, investigate potential outages or performance issues with external services, such as cloud infrastructure providers or email service providers. Journey Optimizer logs record message departure timestamps, which can help determine whether delays occurred downstream in the delivery pipeline.
 
-### Azure Cosmos DB authentication errors (500 Internal Server Error) {#cosmosdb-auth-errors}
+### Azure cosmos DB authentication errors (500 internal server error) {#cosmosdb-auth-errors}
 
 If you encounter **500 Internal Server Errors** when triggering API-triggered campaigns, and the system logs show a **403 Forbidden** error from Azure Cosmos DB with a message such as:
 

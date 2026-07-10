@@ -5,9 +5,22 @@ title: Work with the rule builder
 description: Learn how to create rules for your Orchestrated campaigns
 exl-id: fb7a0eb2-b2ff-49fa-af1f-f1c10f219b00
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/-qNlZ2dLqShJwhcIlEe3a9W8eJ-JCoTt8AzT-DU-vJA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
-
 # Work with the rule builder {#orchestrated-rule-builder}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the rule builder to filter data and create the queries that target audiences in your Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
 
 Orchestrated campaigns comes with a rule builder that simplifies the process of filtering the database based on various criteria. The rule builder manages very complex and long queries efficiently, offering enhanced flexibility and precision.
 

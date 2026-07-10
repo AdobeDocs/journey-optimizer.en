@@ -9,15 +9,54 @@ level: Intermediate
 keywords: publish, journey, live, validity, check
 exl-id: a2892f0a-5407-497c-97af-927de81055ac
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/gIj6jGScvIDgAJxb3B4wiuqP6BKZS0tvCeqC6wRo5IQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # Pause a journey {#journey-pause}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to pause and resume a live journey to safely make changes or stop sends, stop or close a paused journey without resuming it first, and apply profile attribute exit criteria during the pause.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_pause"
 >title="Pause your journey"
->abstract="Pause a live journey to prevent new profiles from entering. Choose whether to discard profiles currently in the journey or keep them in place. If retained, they will resume execution at the next action activity once the journey is restarted. Perfect for updates or emergency stops without losing progress."
+>abstract="Pausing a live journey prevents new profiles from entering. Profiles currently in the journey can be discarded or kept in place. If retained, they will resume execution at the next action activity once the journey is restarted. Perfect for updates or emergency stops without losing progress."
 
-You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply profile attribute exit criteria](#journey-exit-criteria) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps).
+You can pause your live journeys, perform all changes needed, and resume them again at any time.<!--You can choose whether the journey is resumed at the end of the pause period, or whether it stops completely. --> During the pause, you can [apply profile attribute exit criteria](#journey-exit-criteria) to exclude profiles based on their attributes. The journey is automatically resumed at the end of the pause period. You can also [resume it manually](#journey-resume-steps), or [stop the journey](#stop-close-paused) from the **Paused** state without resuming it first.
 
 ## Key benefits {#journey-pause-benefits}
 
@@ -45,7 +84,7 @@ To pause your journey, follow these steps:
 
 1. Select how to manage profiles which are currently in the journey. 
 
-    ![Pause journey options](assets/pause-confirm.png){width="50%" align="left"}
+    ![Pause journey options](assets/pause-confirm.png){width="50%"}
 
     You can:
 
@@ -58,7 +97,7 @@ To pause your journey, follow these steps:
 
 The maximum number of profiles that can be held in paused journeys for your Organization is visible in the journey inventory. It is only visible when at least one journey is paused. This indicator also shows the total number of paused journeys. It is refreshed every 30 minutes. Learn more in the [Guardrails and Limitations](#guardrails-and-limitations).
 
-![Number of paused journeys and profiles currently paused](assets/profiles-in-paused-journeys.png){width="50%" align="left"}
+![Number of paused journeys and profiles currently paused](assets/profiles-in-paused-journeys.png){width="50%"}
 
 From the list of your journeys, you can pause one or several **Live** journeys. To pause a group of journeys (_bulk pause_), select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
 
@@ -77,8 +116,8 @@ When a journey is paused, profile management and activity execution depends on t
 | [Unitary Event](general-events.md)      | <ul> <li>At the first node in the canvas: The event is discarded</li><li>In other nodes: Same behavior as in a live journey, however if the event is after an <strong>Action</strong> activity and the user is paused on that action, the event is discarded. </li></ul>|
 | [Read Audience](read-audience.md)     |   Same behavior as in a live journey, with a few specificities: <ol> <li> If <strong>Pause</strong> was pressed after the <strong>Read audience</strong> activity had started, profiles which have entered the journey will continue (until the next <strong>Action</strong> activity). As journey reads audiences at a certain speed, if the complete audience has not entered yet, remaining profiles in the queue will be discarded.</li><li> For single executions: No error will be shown at resume time if the scheduled date was before the resume date. That schedule would be ignored.</li><li>For incremental journeys: <ul><li>If pause happens before the first occurence then on resume the complete audience would be played. </li><li>If pause happens, for instance, on the 4th day of a daily recurrence and journey remains paused until the 9th day then on resume all the profiles that have entered from 4th-9th would be included  </li></ul></ol>|
 | [Reaction](reaction-events.md)      | Same behavior as in a live journey, however if the reaction is after an <strong>Action</strong> activity and the user is paused on that action, the reaction event is discarded.    |
-| [Wait](wait-activity.md)             | Same behavior as in a live journey | 
-| [Condition](condition-activity.md)  | Same behavior as in a live journey |
+| [Wait](wait-activity.md)             | Same behavior as in a live journey |
+| [Optimize](optimize.md)  | Same behavior as in a live journey |
 | [Content Decision](content-decision.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Channel Action](journey-action.md)  | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
 | [Custom Action](../action/action.md)   | Profiles are parked or discarded based on what the user has chosen when the journey has been paused |
@@ -94,7 +133,7 @@ Learn how to troubleshoot discards in [this section](#discards-troubleshoot).
 >[!CONTEXTUALHELP]
 >id="ajo_journey_resume"
 >title="Resume your journey"
->abstract="Resume a paused journey to allow new profiles to enter again. If profiles were waiting during the pause, they will continue their journey. Ideal for safely restarting journeys after updates or pauses."
+>abstract="Resuming a paused journey allows new profiles to enter again. If profiles were waiting during the pause, they will continue their journey. Ideal for safely restarting journeys after updates or pauses."
 
 Paused journeys are automatically resumed at the end of the maximum pause period of 14 days. They can be resumed manually at any time. Resume a paused journey allows new profiles to enter again. If profiles were waiting during the pause, they will continue their journey. Ideal for safely restarting journeys after updates or pauses.
 
@@ -109,6 +148,24 @@ To resume a paused journey, and start listening to journey events again, follow 
 
 
 From the list of your journeys, you can resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
+
+## Stop a paused journey {#stop-close-paused}
+
+If you decide not to resume a paused journey, you can end it from the **Paused** state. This ends all journey processing immediately and stops every profile still in the journey. [Learn more about stopping a journey](end-journey.md#stop-journey).
+
+To stop a paused journey from the journey canvas, follow these steps:
+
+1. Open the **Paused** journey you want to stop or close.
+1. Click the **...More** button on the upper-right section of the journey canvas.
+1. Select **[!UICONTROL Stop]**, and confirm in the dialog box.
+
+From the list of your journeys, you can also click the **[!UICONTROL Ellipsis]** button to the right of the paused journey name and select **[!UICONTROL Stop]**.
+
+>[!IMPORTANT]
+>
+>You cannot restart or delete a [closed](end-journey.md#close-journey) or [stopped](end-journey.md#stop-journey) journey. You can [create a new version](publish-journey.md#journey-versions) of it or [duplicate it](journey-ui.md#duplicate-a-journey).
+>
+>Stopping a journey requires the **[!DNL Manage journeys]** permission. If the journey includes inline campaigns or messaging nodes, users also need **Campaigns > Publish Campaigns** permissions. [Learn more about stop permissions](end-journey.md#stop-journey).
 
 ## View when a journey was paused or resumed {#view-pause-resume-info}
 
@@ -247,5 +304,53 @@ You can use the [[!DNL Adobe Experience Platform] Query Service](https://experie
 
     1. If the journey was paused with the hold option selected but profiles were discarded due to exceeding the 10-million quota, those profiles will still be discarded when they reach the next action node.
 
++++ AI Knowledge Reference
 
-    
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to pause and resume a live journey in Adobe Journey Optimizer, including profile hold or discard behavior during the pause, how to apply profile attribute exit criteria while paused, and how to troubleshoot profile discards using Query Service.
+
+**Intents:**
+* Pause a live journey to prevent new profile entries and hold or discard in-flight profiles at the next action node
+* Resume a paused journey manually or understand when it auto-resumes after the maximum pause period
+* Apply a profile attribute exit criteria to exclude specific profiles (e.g., by country) when a journey is paused
+* Bulk-pause or bulk-resume multiple live journeys from the journey inventory list
+* Troubleshoot profile discards in a paused journey using Adobe Experience Platform Query Service step event queries
+* View the audit trail of who paused or resumed a journey and when
+
+**Glossary:**
+* **Pause (journey)**: A state that temporarily suspends a live journey, preventing new entrances and halting profile progress at the next action node; no communications are sent while paused *(product-specific)*
+* **Hold mode**: A pause option that keeps in-flight profiles waiting at the next action node until the journey resumes *(product-specific)*
+* **Discard mode**: A pause option that exits in-flight profiles from the journey when they reach the next action node *(product-specific)*
+* **Profile Attribute-based exit criteria**: A filter applied to a paused journey that excludes profiles matching a defined expression at the next action node upon resume *(product-specific)*
+* **Bulk pause / Bulk resume**: The ability to pause or resume multiple live or paused journeys simultaneously from the journey inventory list *(product-specific)*
+
+**Guardrails:**
+* Only users with the **Publish journeys** permission can pause and resume journeys; stopping a paused journey requires **Manage journeys** (and **Campaigns > Publish Campaigns** if inline campaigns or messaging nodes are present)
+* Pause duration is configurable from 1 to 14 days; after that the journey auto-resumes
+* Profiles held during pause resume at up to 5,000 TPS; the journey remains in Resuming until all held profiles have resumed
+* Maximum of 10 million profiles can be held across all paused journeys in an organisation; excess profiles are automatically discarded
+* Only one Profile Attribute-based exit criteria can be set per journey
+* Profile Attribute-based exit criteria can only be created, updated, or deleted while the journey is paused
+* Paused journeys count towards the live journey quota
+* Journey global timeout (91 days) still applies during a pause
+* Inbound activity communications already triggered before the pause continue to be delivered; to stop them, the journey must be stopped entirely
+* Alerts for batch segment do not fire in paused journeys
+* Fresh entrances are always discarded when a journey is paused, regardless of Hold or Discard mode
+
+**Terminology:**
+* Canonical name: Pause a journey — Acronym: none — variants: journey pause, pause/resume
+* Synonyms: "Hold" = "park profiles"; "Discard" = "exit profiles"
+* Do not confuse: "Pause" ≠ "Stop" — Pause is temporary and allows resume; Stop immediately exits all profiles and cannot be undone to a live state
+* Do not confuse: "Pause" ≠ "Close to new entrances" — Close to new entrances lets existing profiles finish but does not suspend them; Pause suspends all in-flight profiles at the next action node
+
+**FAQ:**
+* **Q: What happens to profiles already in a journey when it is paused?** — Depending on the option chosen at pause time, profiles are either held (waiting at the next action node) or discarded (exited from the journey at the next action node).
+* **Q: How long can a journey remain paused?** — Between 1 and 14 days (chosen at pause time); after that it automatically resumes.
+* **Q: Can I exclude certain profiles while a journey is paused?** — Yes; apply a Profile Attribute-based exit criteria (one per journey) while the journey is paused to exclude matching profiles at the next action node upon resume.
+* **Q: Does pausing a journey stop in-app or web messages already triggered?** — No; inbound communications already triggered before the pause continue to be delivered. To stop all inbound communications, you must stop the journey entirely.
+* **Q: How do I find out which profiles were discarded during a pause?** — Query the `journey_step_events` dataset in Adobe Experience Platform Query Service using the `PAUSED_JOURNEY_VERSION` or `JOURNEY_IN_PAUSED_STATE` event type filters with the journey version ID.
+
++++

@@ -5,10 +5,23 @@ feature: Reporting, Content Cards
 topic: Content Management
 role: User
 level: Beginner
-hide: yes
-hidefromtoc: yes
+hide: true
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
 ---
 # Content cards report {#content-card-report}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Analyze content card metrics such as displays, clicks, and tracked links so you can measure engagement and improve your campaign's effectiveness.
+
+>[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 

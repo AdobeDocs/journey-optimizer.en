@@ -2,17 +2,65 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Copy Journey Optimizer objects between sandboxes
-description: Learn how to copy journeys, content templates and fragments between sandboxes.
+description: Learn how to copy journeys, campaigns, content templates, and fragments between sandboxes.
 feature: Journeys, Sandboxes
 topic: Content Management
 role: User, Developer
 level: Experienced
 keywords: sandbox, journey, copy, environment
 exl-id: 356d56a5-9a90-4eba-9875-c7ba96967da9
+TQID: https://experienceleague.adobe.com/FfasSBtxSzc20knTVljqAJi4MVyoK9-RApQcTfDAa3Q
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
+  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
+    internal-label: Business rules
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Export objects to another sandbox {#copy-to-sandbox}
 
-You can copy objects such as journeys, custom actions, content templates, or fragments, across multiple sandboxes by using package export and import capabilities. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox. 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to copy Adobe Journey Optimizer objects such as journeys, campaigns, custom actions, content templates, and fragments between sandboxes using package export and import.
+
+>[!ENDSHADEBOX]
+
+You can copy objects such as journeys, campaigns, custom actions, content templates, or fragments, across multiple sandboxes by using package export and import capabilities. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox.
 
 This page describes the Sandbox tooling use case in the context of Journey Optimizer. For more information on the feature itself, refer to the Adobe Experience Platform [Sandbox tooling guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
 
@@ -32,7 +80,7 @@ The copy process is carried via a package export and import between the source a
 
 ## Exported objects & best practices {#objects}
 
-Journey Optimizer allows the export of journeys, custom actions, content templates, fragments and other objects to another sandbox. The following sections provide information and best practices for each type of object.
+Journey Optimizer allows the export of journeys, campaigns (Action, API-triggered, and Orchestrated), custom actions, content templates, fragments, and other objects to another sandbox. The following sections provide information and best practices for each type of object.
 
 ### General best practices {#global}
 
@@ -64,20 +112,64 @@ Journey Optimizer allows the export of journeys, custom actions, content templat
 
 +++
 
-+++ Campaigns
++++ Action & API triggered campaigns
 
-Campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects. However, the following items are **not** copied:
+You can copy **Action** campaigns, **API-triggered** campaigns between sandboxes using package export and import.
+
+These types of campaigns are copied along with all items related to the profile, audience, schema, inline messages, and dependent objects.
+
+However, the following items are not copied:
 
 * Multi-lingual variants and language settings,
 * Business rules,
 * Tags,
 * Data Usage Labelling and Enforcement (DULE) labels.
 
-When copying campaigns, ensure that the object listed below are validated in the target sandbox to avoid misconfigurations:
+When copying **Action** or **API-triggered** campaigns, ensure that the object listed below are validated in the target sandbox to avoid misconfigurations:
 
 * **Channel configurations**: Channel configurations are copied along with campaigns. After campaigns are copied, channel configurations must be selected manually in the target sandbox.
 * **Experimentation variants and settings**: Experiment variants and settings are included in the campaign copy process. Validate these settings in the target sandbox after import.
 * **Unified decisioning**: Decision policies and decision items are supported for export and import. Ensure that decision-related dependencies are correctly mapped in the target sandbox.
+
++++
+
++++Orchestrated campaigns
+
+You can copy Orchestrated campaigns between sandboxes using package export and import. Orchestrated campaigns follow the same overall pattern as other objects, but what is included in the package and what you must prepare in the target sandbox differs from Action or API triggered campaigns.
+
+To export an orchestrated campaign, [add it to a sandbox package](#add-objects-as-a-package-export) in the source sandbox (regardless its status), [publish the package](#publish), then [import the package](#import) into the target sandbox.
+
+>[!IMPORTANT]
+>
+>Right after import, [duplicate the orchestrated campaign](../campaigns/manage-campaigns.md#duplicate-a-campaign) in the target sandbox and use that duplicate for configuration, testing, and execution. If you run or publish the imported copy instead, campaign reporting may not show feedback and tracking data. This limitation will be removed in a future release.
+
+Before you import into production, keep the following behavior and limitations in mind:
+
+* **Draft copy** - The imported orchestrated campaign is always created in draft in the target sandbox, regardless the status of the source Orchestrated campaign.
+
+* **New object on each import** - Importing a package again creates a new orchestrated campaign. It does not overwrite or update a campaign you imported earlier.
+
+* **Re-exporting the same package is not supported** - Publishing the same package a second time after it was already exported causes activities inside the imported campaign to enter an error state. If this occurs, you must delete the affected activities and recreate them manually. This limitation will be addressed in a future release.
+
+* **Dependencies are not all copied automatically** - Adding only the orchestrated campaign to a package does not include a full dependency chain by itself. Channel configurations, relational store schemas, datasets, and business rules are not included unless you address them explicitly (see the next bullet for more details).
+
+   During [package import](#import), Journey Optimizer lists objects to resolve in the target sandbox. The following rules apply to the most common objects:
+
+   * **Campaign** — Always select **Create new**.
+   * **Audiences** — For Adobe Experience Platform audiences, you can select **Create new** or **Use existing**. For Orchestrated campaign audiences, you must select **Use existing** and map to the corresponding audience in the target sandbox.
+   * **Merge policies** — Select **Use existing** and map to the appropriate merge policy, or use the default one in the target sandbox.
+
+   After import, use alerts in the orchestrated campaign to find remaining gaps (for example, a profile or targeting resource that does not exist yet in the target sandbox may leave an activity with an empty target until you fix it).
+
+* **What you must add or align separately** - The following are not included with the orchestrated campaign export:
+
+   * **Channel configurations** — They are not exported or imported with the package. For email and other channel activities to work without manual fixes, the target sandbox must already have a channel configuration whose name matches the source exactly (case-sensitive) and that uses the same channel. Otherwise you will see alerts on activities after import. Open each affected activity and select or create the correct channel configuration.
+
+   * **Relational store schemas and datasets** — If your campaign depends on a given data model, plan schema and dataset export/import order so dependencies exist when you need them (exporting a dataset typically pulls related schema needs, exporting a schema alone does not include its dataset). Note that imported datasets are not automatically enabled for Orchestrated Campaigns — you must enable them manually in the target sandbox after import.
+
+   * **Business rules and similar policy objects** — They are not included inside the orchestrated campaign export. If your campaign depends on them, confirm they exist in the target sandbox or recreate them there.
+
+   * **Profile target dimension** — The profile target dimension is not included in the export. If it does not exist in the target sandbox, the corresponding activities in the imported orchestrated campaign will be empty until you configure it manually.
 
 +++
 
@@ -122,6 +214,12 @@ When copying campaigns, ensure that the object listed below are validated in the
 * Fragments can have multiple statuses such as Live, Draft and Live with draft in progress. When exporting a fragment, its latest Draft state is copied to the target sandbox.
 
 * When exporting a fragment, all nested Fragments are also copied along with it.
+
++++
+
++++ Journey Fragments
+
+* [Journey Fragments](../building-journeys/journey-fragments.md) (reusable sets of journey nodes) are supported for Sandbox tooling. When exporting a journey fragment, its latest Draft state is copied to the target sandbox.
 
 +++
 

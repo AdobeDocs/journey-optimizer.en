@@ -1,0 +1,236 @@
+---
+solution: Journey Optimizer
+product: journey optimizer
+title: Configure your custom provider
+description: Learn how to configure your environment to send Mobile messages with Journey Optimizer with a custom provider
+feature: SMS, Channel Configuration
+role: Admin
+level: Intermediate
+exl-id: fd713864-96b9-4687-91bd-84e3533273ff
+TQID: https://experienceleague.adobe.com/v5gRCHjcQjn0kXPdtakSZRNlRIA-PVyGpctdn7zwXSI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+subfeature_v2:
+  - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
+    internal-label: SMS and MMS channel
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+---
+# Configure a custom provider {#sms-configuration-custom}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to integrate a custom messaging provider in Adobe Journey Optimizer by creating API credentials, choosing an authentication method, and configuring headers, payloads, and inbound settings to send SMS and RCS messages.
+
+>[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_provider_url"
+>title="Provider URL"
+>abstract="Specify the URL of the external API you plan to connect to. This URL serves as the endpoint for accessing the API's features and functionalities."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_header_parameters"
+>title="Header parameters"
+>abstract="Specify the label, type, and value of additional headers to enable proper authentication, content formatting, and effective API communication. "
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_provider_payload"
+>title="Provider payload"
+>abstract="Provide the request payload to ensure the correct data is sent for processing and response generation."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_response_msg_id_extractor"
+>title="Provider payload"
+>abstract="Specifies how Journey Optimizer extracts a unique message ID from your provider's send response. </br>Field Match: Enter the field name (e.g. messageId). AJO will scan the response and return the first matching value. </br>Dot Notation: Enter the path to the field (e.g. messages.0.id). Use numeric segments for arrays. No $ prefix.</br> Leave blank if your provider supports passing a callback data field instead."
+
+This feature empowers you to integrate and configure your own messaging providers, offering flexibility beyond the default options (Sinch, Twilio, and Infobip). This enables seamless authoring, delivery, reporting, and consent management for Mobile messages.
+
+With custom provider configuration, you can connect third-party messaging services directly within Journey Optimizer, customize message payloads for dynamic content, and manage opt-in/opt-out preferences to ensure compliance across both SMS and RCS channels.
+
+To configure your custom provider, follow the steps below:
+
+1. [Create API Credential](#api-credential)
+1. [Create Webhook](mobile-webhook.md)
+1. [Create Channel configuration](mobile-configuration-surface.md)
+1. [Create Journey or Campaign with SMS channel action](create-mobile-message.md)
+
+## Create your API credential {#api-credential}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_channel_type"
+>title="Channel type"
+>abstract="Optional. Classify messages sent with this custom SMS provider credential, for example, SMS or RCS. Journey Optimizer writes the value to XDM experience events so you can report on and track delivery by channel."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_require_auth"
+>title="Authentication"
+>abstract="When enabled, only requests authenticated via Adobe IMS are accepted. Callers must include a valid OAuth token when sending data to this endpoint."
+
+To send Mobile message in Journey Optimizer using a custom provider not available out of the box by Adobe (e.g., Sinch, Infobip, Twilio), follow these steps:
+
+1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL API Credentials]** menu under **[!UICONTROL SMS settings]**, and click the **[!UICONTROL Create new API credentials]** button.
+
+    ![](assets/sms_byo_1.png)
+
+1. Configure your SMS API credentials, as detailed below: 
+
+    * **[!UICONTROL SMS vendor]**: Custom.
+
+    * **[!UICONTROL Name]**: Enter a name for your API Credential.
+
+    * **[!UICONTROL Provider AppId]**: Enter the application ID provided by your SMS provider.
+
+    * **[!UICONTROL Provider Name]**: Enter the name of your SMS provider.
+
+    * **[!UICONTROL Provider URL]**: Enter the URL of your SMS provider.
+
+    * **[!UICONTROL Channel Type]**: Optional. Indicate which mobile channel this credential represents, i.e. SMS, RCS, or MMS.
+
+    * **[!UICONTROL Auth Type​]**: Select your authorization type and [complete the corresponding fields](#auth-options) based on the chosen authentication method.
+
+        ![](assets/sms-byop.png)
+
+1. Enable the **[!UICONTROL mTLS support]** option, which ensures that both the client and server authenticate each other before establishing a secure connection.
+
+    To use mTLS only, select **[!UICONTROL No Authentication]** from the **[!UICONTROL Auth Type]** drop-down and then enable **[!UICONTROL mTLS support]**.
+
+    Note that mTLS applies only to the SMS provider (message sending) endpoint. The OAuth token endpoint must not use mTLS. Ensure mTLS is disabled on the token endpoint before testing.
+
+    >[!IMPORTANT]
+    >
+    >Configure your SMS send endpoint to trust the Adobe Experience Platform certificate authority chain by downloading the public certificate from the [MTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint) and adding it to your server trust store (expected client CN: `ajo-sms.aep-mtls.adobe.com`), otherwise Journey Optimizer omits the client certificate and SMS delivery fails.
+
+1. In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add new parameter]** to specify the HTTP headers for the request message that will be sent to the external service.
+
+    The **Content-Type** and **Charset** header fields are set by default and cannot be deleted.
+
+    ![](assets/sms_byo_2.png)
+
+1. Add your **[!UICONTROL Provider Payload]** to validate and customize your request payloads. 
+   
+   For RCS messages, this payload is later used during [content design](create-mobile-message.md#sms-content).
+
+    >[!NOTE]
+    >
+    >When configuring a custom SMS provider with Basic or Bearer authentication, you must include the `authOption` parameter in the JSON payload. In addition, the **Provider Payload** must reference the template variables `{{fromNumber}}`, `{{toNumber}}`, and `{{message}}`.
+
+1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about using a custom dataset for inbound keywords](custom-dataset-inbound-keywords.md)
+
+    >[!NOTE]
+    >
+    >The dataset schema must be **[!UICONTROL XDM ExperienceEvent]** and include at least these field groups:
+    >* Adobe CJM ExperienceEvent - Message interaction details
+    >* Adobe CJM ExperienceEvent - Message Execution Details
+    >* Adobe CJM ExperienceEvent - Message Profile Details
+    >
+    >The schema and dataset must be enabled for Profile.
+
+1. Click **[!UICONTROL Submit]** when you finished the configuration of your API credentials.
+
+1. In the **[!UICONTROL API Credentials]** menu,  click the ![bin icon](assets/do-not-localize/Smock_Delete_18_N.svg) to delete your API credentials.
+
+    ![](assets/sms_byo_3.png)
+
+1. To modify existing credentials, locate the desired API credentials and click the **[!UICONTROL Edit]** option to make the necessary changes.
+
+    ![](assets/sms_byo_4.png)
+
+1. Click **[!UICONTROL Verify SMS connection]**, from your existing API credentials, to test and verify your SMS API credentials by sending a sample message to a designated device.
+
+1. Fill in the **Number** and **Message** fields and click **[!UICONTROL Verify connection]**.
+
+    >[!IMPORTANT]
+    >
+    >The message must be structured to align with the provider's payload format.
+
+    ![](assets/verify-connection.png)
+
+After creating and configuring your API credential, you now need to set up [the inbound settings for the Webhook](#webhook) for SMS messages. 
+
+>[!TIP]
+>
+>Always create and maintain separate agent configurations for each sandbox (production, development, etc.) to prevent cross-environment webhook response issues. Do not reuse the same API credentials, webhooks, or provider callback URLs (including RCS agents) across sandboxes.
+
+### Authentication options for custom SMS Providers {#auth-options}
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_auth_type"
+>title="Authentication type"
+>abstract="Specify the authentication method needed to access the API, this ensures secure and authorized communication with the external service."
+
+>[!BEGINTABS]
+
+>[!TAB API key]
+
+Once your API credential is created, complete the fields required for API key authentication:
+
+* **[!UICONTROL Name]**​: Enter a name for your API key configuration.
+* **[!UICONTROL API Token]**​: Enter the API Token provided by your SMS provider.
+
+![](assets/sms-byop-api-key.png)
+
+>[!TAB MAC authentication]
+
+Once your API credential is created, complete the fields required for MAC authentication:
+
+* **[!UICONTROL Name]**​: Enter a name for your MAC authentication configuration.
+* **[!UICONTROL API Token]**​: Enter the API Token provided by your SMS provider.
+* **[!UICONTROL API Secret Key]**: Enter the API Secret Key provided by your SMS provider. This key is used to generate the MAC (Message Authentication Code) for secure communication.
+* **[!UICONTROL Mac Authorization Hash Format]**: Choose the hash format for the MAC authentication.
+
+![](assets/sms-byop-mac.png)
+
+>[!TAB OAuth authentication]
+
+Once your API credential is created, complete the fields required for OAuth authentication:
+
+* **[!UICONTROL Name]**​: Enter a name for your OAuth authentication configuration.
+
+* **[!UICONTROL API Token]**​: Enter the API Token provided by your SMS provider.
+
+* **[!UICONTROL OAuth URL]**​: Enter the URL for obtaining the OAuth token.
+
+* **[!UICONTROL OAuth Body]**​: Provide the OAuth request body in JSON format, including parameters such as `grant_type`, `client_id`, and `client_secret`.
+
+Journey Optimizer refreshes OAuth tokens dynamically upon expiry for the custom SMS connector.
+
+![](assets/sms-byop-oauth.png)
+
+>[!TAB JWT authentication]
+
+Once your API credential is created, complete the fields required for JWT authentication:
+
+* **[!UICONTROL Name]**​: Enter a name for your JWT authentication configuration.
+
+* **[!UICONTROL API Token]**​: Enter the API Token provided by your SMS provider.
+
+* **[!UICONTROL JWT Payload]**​: Enter the JSON payload containing the claims required for JWT, such as the issuer, subject, audience, and expiration.
+
+![](assets/sms-byop-jwt.png)
+
+>[!ENDTABS]
+
+## How-to video {#video}
+
+>[!VIDEO](https://video.tv.adobe.com/v/3431625)
+

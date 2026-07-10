@@ -8,8 +8,47 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 82558447-9d42-4fac-8fc1-fded9bf4bfcc
+TQID: https://experienceleague.adobe.com/nZejBuTk9AqwR77k6-odCK66c2UbGwMspElt2-1riz4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+subfeature_v2:
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
+    internal-label: Metrics catalog
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Email journey report {#journey-global-report}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the email metrics in the journey report, including delivered versus click trends, delivery status, sending and tracking statistics, email domains, tracked links, subjects, and bounce and exclusion reasons.
+
+>[!ENDSHADEBOX]
 
 >[!INFO]
 >
@@ -82,7 +121,7 @@ The **[!UICONTROL Sending Statistics]** table provides a clear view of how your 
 
 +++
 
-## Email - Tracking statistics {#email-tracking}
+## Tracking statistics {#email-tracking}
 
 ![](assets/cja-journey-email-track-stat.png)
 
@@ -94,19 +133,22 @@ The **[!UICONTROL Email - Tracking statistics]** table offers a detailed account
 
 * **[!UICONTROL Click through open rate (CTOR)]**: Number of times the email was opened.
 
+* **[!UICONTROL Open rate]**: Percentage of profiles who opened the email at least once, relative to the number of delivered emails.
+
+* **[!UICONTROL Estimated Email Opens]**: Estimate of total email opens that accounts for both direct opens by profiles and automated opens triggered by mail servers. This metric adjusts for opens triggered by mail servers for privacy or security scanning by applying an open rate calculated from recipients who manually opened the email to those whose emails were only opened by mail servers.
+
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
 
-* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in an email.
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
-* **[!UICONTROL Email Opens]**: Number of times your emails were opened in a campaign.
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
 
-* **[!UICONTROL Unique Email Opens]**: Number of profiles who opened emails.
+* **[!UICONTROL Estimated CTOR]** (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
 
 * **[!UICONTROL Spam complaints]**: Number of times a message was declared as spam or junk.
 
-* **[!UICONTROL Unsubscribes]**: Number of clicks on the unsubscription link.
+* **[!UICONTROL Unsubscribes]**: Number of clicks on the unsubscription link or on the associated landing page.
 
-* **[!UICONTROL Unique Email Unsubscribes]**: Number of profiles who unsubscribed from your emails.
 +++
 
 ## Email domains {#email-domains}
@@ -133,11 +175,11 @@ The **[!UICONTROL Email Domains]** table offers an in-depth breakdown of emails 
 
 +++
 
-## Tracked link labels {#track-link-label}
+## Tracked labels {#track-link-label}
 
 ![](assets/cja-journey-tracked-link-labels.png)
 
-The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your emails, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
+The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your emails, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
 +++ Learn more about Tracked link labels metrics
 
@@ -145,6 +187,7 @@ The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview o
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 +++
 
 ## Tracked link URLs {#track-link-url}
@@ -159,6 +202,7 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 +++
 
 

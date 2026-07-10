@@ -8,6 +8,16 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: bae533c5-1bfc-48bf-9f8d-1145383c040c
+feature_v2:
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
 ---
 # Release Notes 2024 {#release-notes-2024}
 
@@ -271,7 +281,7 @@ This release comes with the improvements listed below.
 
 **SMS channel**
 
-* You can now edit or delete an SMS API Channel Configuration. [Learn more](../sms/sms-configuration.md)
+* You can now edit or delete an SMS API Channel Configuration. [Learn more](../mobile/mobile-configuration.md)
 
 * The following enhancements have been introduced to improve your SMS messaging capabilities with Infobip and Sinch:
 
@@ -279,7 +289,7 @@ This release comes with the improvements listed below.
 
     * You can create and deliver a default SMS message when a keyword is not recognized.
 
-    Learn more about these improvements in the SMS configuration documentation for [Infobip](../sms/sms-configuration-infobip.md) and [Sinch](../sms/sms-configuration-sinch.md). 
+    Learn more about these improvements in the SMS configuration documentation for [Infobip](../mobile/mobile-configuration-infobip.md) and [Sinch](../mobile/mobile-configuration-sinch.md). 
 
 
 <!--**Journeys**-->
@@ -393,7 +403,8 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Email Content Locking</strong><br/></th>
@@ -408,7 +419,8 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
 <table>
 <thead>
@@ -496,12 +508,12 @@ You can now export content templates and fragments between sandboxes. [Learn mor
 
 **APIs**
 
-* **Campaign Simulation API** - Use this API to trigger proof job of a Campaign. Sending Campaign proof is an async process, the API will return a proofJobId which can be used to check the status of the proof. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"}
+* **Campaign Simulation API** - Use this API to trigger proof job of a Campaign. Sending Campaign proof is an async process, the API will return a proofJobId which can be used to check the status of the proof. [Learn more](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"}
 
-* (Availability date: Sept 10) The [Adobe Journey Optimizer API documentation](https://developer.adobe.com/journey-optimizer-apis/references/simulations/){target="_blank"} is now interactive. Explore the API endpoints directly from the documentation pages to get immediate feedback and speed up your technical implementation. 
+* (Availability date: Sept 10) The [Adobe Journey Optimizer API documentation](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"} is now interactive. Explore the API endpoints directly from the documentation pages to get immediate feedback and speed up your technical implementation. 
 
 
-    All the API reference pages now have a **Try it** functionality that you can use to test API calls directly on the documentation website page. [Get the required authentication credentials](https://developer.adobe.com/journey-optimizer-apis/references/authentication/){target="_blank"} and start using the functionality to explore the API endpoints. 
+    All the API reference pages now have a **Try it** functionality that you can use to test API calls directly on the documentation website page. [Get the required authentication credentials](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"} and start using the functionality to explore the API endpoints. 
 
     Use this new functionality to explore the requests to and the responses from API endpoints, to get immediate feedback and speed up your technical implementation. 
 
@@ -514,7 +526,8 @@ You can now export content templates and fragments between sandboxes. [Learn mor
 * **IP warmup plans** - This capability is now available to all customers, including organizations that have purchased the Adobe **Healthcare Shield** or **Privacy and Security Shield** add-on offerings. [Learn more](../configuration/ip-warmup-gs.md)
 
 <!--
-![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.-->
+![Newsletter](../assets/do-not-localize/nl-icon.png) Sign up for the [Adobe Journey Optimizer quarterly newsletter](https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html){target="_blank"} today, and receive the latest product updates, exciting stories, use cases, tips and more delivered directly to your inbox every quarter.
+-->
 
 
 
@@ -543,7 +556,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -624,7 +637,7 @@ This release brings the improvements listed below.
 
 **Journeys**
 
-* In the **Condition** activity, by default, the **[!UICONTROL Time condition]** is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/condition-activity.md#time_condition)
+* In the **Condition** activity, by default, the **[!UICONTROL Time condition]** is now set by hour, from 00:00 to 12:00. [Read more](../building-journeys/conditions.md#time_condition)
 * When building your journeys, alerts are now displayed from the **Alerts** button, to align with other alerts and bring a consistent user experience. [Read more](../building-journeys/troubleshooting.md#activity-errors)
 * Zoom options in the journey toolbar have been improved: the zoom percentage is now visible and you can now more easily reset the zoom value.
 
@@ -665,7 +678,7 @@ This release brings the new capabilities listed below.
 <td>
 <p>You can now configure additional SMS providers within Journey Optimizer, in addition of the default providers Sinch, Infobip, and Twilio.</p>
 <img src="assets/do-not-localize/byo_sms.gif"/>
-<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../mobile/mobile-configuration-custom.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -749,7 +762,7 @@ This release brings the new capabilities detailed below.
 <tbody>
 <tr>
 <td>
-<p>The AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across Adobe Experience Cloud, including Adobe Journey Optimizer.</p>
+<p>AI Assistant is a user interface feature that you can use to navigate and understand Adobe concepts and get operational insights for your specific environment. It is available in several products across [!DNL Adobe CX Enterprise], including Adobe Journey Optimizer.</p>
 <p>For more information, refer to the <a href="../start/ai-features.md#ai-assistant">detailed documentation</a>.</p>
 </td>
 </tr>
@@ -789,7 +802,8 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Extended personalization data - Beta</strong><br/></th>
@@ -803,7 +817,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements {#june24-improvements}
 
@@ -854,7 +868,7 @@ Read more in the [content fragment](../content-management/fragments.md) document
 
 #### SMS channel
 
-* You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined. [Learn more](../sms/sms-configuration.md)
+* You can now add unique short codes for each sandbox with a single API configuration, making the process more efficient and streamlined. [Learn more](../mobile/mobile-configuration.md)
 
 * After creation, the **API Token** field on the **API credential details** page is now masked.
 
@@ -917,7 +931,8 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>IP Warmup Workflow</strong><br/></th>
@@ -931,9 +946,10 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Business rules - Beta</strong><br/></th>
@@ -948,10 +964,11 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Extended personalization data - Beta</strong><br/></th>
@@ -965,7 +982,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements {#e-improvements}
 
@@ -982,10 +999,12 @@ From beta to this release, the following improvements have been added:
 * **Reporting** - You can now create custom reporting dashboards of Experience Decisioning campaigns using [!DNL Customer Journey Analytics]. [Read more](../experience-decisioning/cja-reporting.md)
 
 
-<!--**Decision Management**
+<!--
+**Decision Management**
 
 * **Multi-rule support** - You can now add up to 10 capping rules for a given offer in Decision Management. This allows you to increase the level of control over the way offers are sent.
-* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. -->
+* **Audits** - The **Change log** tab allowing you to see all the changes that have been made to an offer or a decision has been removed. Changes related to offers and decisions can now be seen in the **Audits** menu. 
+-->
 
 
 **Email channel**
@@ -1003,11 +1022,14 @@ From beta to this release, the following improvements have been added:
 <!--
 **Audiences**
 
-* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.-->
+* The use of audiences and attributes from audience composition and custom upload (CSV file) is now available for use with Healthcare Shield or Privacy and Security Shield.
+-->
 
-<!--**Personalization**
+<!--
+**Personalization**
 
-* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)-->
+* **Expression fragment** - Expression fragments are now available for the **In-app channel**. [Read more](../personalization/use-expression-fragments.md)
+-->
 
 **Journeys**
 
@@ -1019,7 +1041,7 @@ From beta to this release, the following improvements have been added:
 
 **Globalization**
 
-As part of our ongoing effort to deliver a unified user experience, we harmonize the terminology used in the Adobe Experience Cloud products and apps. This affects the German term "Titel" which is changed to "Label" when it relates to the name of an object. The changes will be progressively rolled out in the UI and documentation.
+As part of our ongoing effort to deliver a unified user experience, we harmonize the terminology used in the [!DNL Adobe CX Enterprise] products and apps. This affects the German term "Titel" which is changed to "Label" when it relates to the name of an object. The changes will be progressively rolled out in the UI and documentation.
 
 
 ## April '24 release {#apr-2024}
@@ -1066,7 +1088,8 @@ This release brings the new capabilities detailed below.
 </tbody>
 </table>
 
-<!-- table>
+<!--
+ table>
 <thead>
 <tr>
 <th><strong>AI Assistant - Experience Variant Generation - Beta</strong><br/></th>
@@ -1079,10 +1102,11 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Email Surface Personalization - Private beta </strong><br/></th>
@@ -1095,7 +1119,7 @@ This release brings the new capabilities detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 ### Improvements {#apr-improvements}
 
@@ -1252,7 +1276,7 @@ Previously available as Beta, the following improvements are now available to al
 
 **SMS channel**
 
-* **Opt-in/opt-out keywords** - When configuring your SMS channel, you can now customize the **Opt-in and Opt-out keywords** as per your preferences. Journey Optimizer triggers the response based on these specified keywords. [Learn more](../sms/sms-configuration.md)
+* **Opt-in/opt-out keywords** - When configuring your SMS channel, you can now customize the **Opt-in and Opt-out keywords** as per your preferences. Journey Optimizer triggers the response based on these specified keywords. [Learn more](../mobile/mobile-configuration.md)
 
 **Campaigns**
 
@@ -1262,9 +1286,11 @@ Previously available as Beta, the following improvements are now available to al
 
 * In addition to Email and Push, you can now create Frequency rules for SMS and Direct Mail channels. Frequency rules automatically exclude over-solicited profiles from messages and actions when the frequency cap is reached. [Read more](../conflict-prioritization/rule-sets.md) 
 
-<!--**Decision management**
+<!--
+**Decision management**
 
-* **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.-->
+* **Capping rules** - You can now add **multiple capping rules** for one offer. This allows you to increase the level of control over the way offers are sent.
+-->
 
 
 ## January '24 release {#jan-2024}
@@ -1318,7 +1344,7 @@ This release comes with the improvements listed below.
 
 **SMS Channel**
 
-* **Double Opt-In** - The Double Opt-In workflow for SMS guarantees that users explicitly opt-in to receive messages when the request is initiated from their device. Users initiate the consent process by sending an inbound SMS message. Upon confirming their consent, a follow-up message is sent, requesting final verification. If a user profile does not exist, it is created upon successful confirmation. [Learn more](../sms/sms-configuration.md) 
+* **Double Opt-In** - The Double Opt-In workflow for SMS guarantees that users explicitly opt-in to receive messages when the request is initiated from their device. Users initiate the consent process by sending an inbound SMS message. Upon confirming their consent, a follow-up message is sent, requesting final verification. If a user profile does not exist, it is created upon successful confirmation. [Learn more](../mobile/mobile-configuration.md) 
 
    Note that this capability is available with Sinch and Infobip SMS providers.
 
@@ -1345,3 +1371,4 @@ This release comes with the improvements listed below.
 **Decision management**
 
 * **Frequency capping on Edge** - The frequency capping counter is now updated and available in an Edge Decisioning API decision in less than 3 seconds. [Learn more](../offers/api-reference/offer-delivery-api/start-offer-delivery-apis.md)
+

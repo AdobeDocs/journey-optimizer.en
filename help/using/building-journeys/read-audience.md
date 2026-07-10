@@ -10,8 +10,51 @@ level: Intermediate
 keywords: activity, journey, read audience, audience, segment, batch, entry point, trigger, schedule, Audience Qualification
 exl-id: 7b27d42e-3bfe-45ab-8a37-c55b231052ee
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/XqBTB8kE-KCmI49eHBp63dX09vu5Zh1Dl2BDwH0BkU4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: c3f67a94-f1ff-4f5e-bf6f-bc22405930a3
+    internal-label: Wait activity
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: e57d1da4-32c2-4cc6-945c-9feb219156ff
+    internal-label: Event activities
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+    internal-label: Audience segmentation
 ---
 # Use an audience in a journey {#segment-trigger-activity}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure the Read Audience activity to bring profiles from an Adobe Experience Platform audience into a journey, on demand or on a schedule, and personalize each profile's path.
+
+>[!ENDSHADEBOX]
 
 Use the Read Audience activity to start journeys with defined audiences. You choose the audience and when it runs; then use [conditions](#audience-targeting-in-journeys), timers, and actions to personalize each profile's path.
 
@@ -20,7 +63,7 @@ Use the Read Audience activity to start journeys with defined audiences. You cho
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment"
 >title="Read Audience activity"
->abstract="Add all qualified profiles from a selected [!DNL Adobe Experience Platform] audience to this journey. Run once or on a schedule."
+>abstract="Adds all qualified profiles from a selected [!DNL Adobe Experience Platform] audience to this journey. Runs once or on a schedule."
 
 The **Read Audience** activity is the journey entry-point activity that adds all profiles from a selected [!DNL Adobe Experience Platform] audience to a journey. You can run the entrance once or on a recurring schedule. In APIs and technical references this activity is also referred to as segment-trigger or audience-based journey entry.
 
@@ -31,6 +74,13 @@ The **Read Audience** activity is the journey entry-point activity that adds all
 | You want to run a journey once or on a schedule (batch). | You need profiles to enter the journey in real time as they qualify. |
 | Your audience is batch-evaluated (e.g. daily snapshot). | Your audience is streaming or event-based. |
 | You are okay with a delay between audience evaluation and journey entry. | You need immediate entry when a profile qualifies. |
+
+>[!TIP]
+>
+>**Real-world examples**
+>* **Weekly newsletter** → Read Audience. Your audience is a daily batch snapshot. You schedule the journey every Monday at 9 AM. All qualified profiles enter together.
+>* **Loyalty tier upgrade** → Audience Qualification. As soon as a profile reaches Gold status in a streaming audience, they enter the journey immediately to receive a congratulations email.
+>* **Re-engagement series** → Read Audience. You run a recurring journey every 30 days targeting profiles inactive for 90+ days.
 
 **Key limits:** One Read Audience per journey (must be the first activity); one audience per activity; up to five concurrent Read Audience runs per organization; 20,000 profiles per second per sandbox; 12-hour job timeout. Full details in [Guardrails and limitations](../start/guardrails.md#read-segment-g).
 
@@ -59,12 +109,12 @@ You will set: **Audience** (mandatory), **Namespace** (mandatory), **Reading rat
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_audience"
 >title="Audience"
->abstract="Select the [!DNL Adobe Experience Platform] audience whose profiles will enter this journey."
+>abstract="The [!DNL Adobe Experience Platform] audience whose profiles enter this journey. All qualified profiles are read in. Batch audiences are recommended for reliable, consistent counts, and only one audience can be read per activity."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_namespace"
 >title="Namespace"
->abstract="Choose which identity (e.g. email, ECID) is used to identify individuals entering the journey. Pick the top option in the list for best compatibility with Business Rules and Capping."
+>abstract="The identity (e.g. email, ECID) used to identify individuals entering the journey. Only people-based namespaces are available, and profiles without this identity cannot enter. By default, the field is pre-filled with the last used namespace."
 
 1. Unfold the **[!UICONTROL Orchestration]** category and drop a **[!UICONTROL Read Audience]** activity into your canvas.
 
@@ -104,7 +154,7 @@ You will set: **Audience** (mandatory), **Namespace** (mandatory), **Reading rat
 
 You can optionally enable **Use a supplemental identifier** to run the journey in the context of a secondary identifier (for example, an order ID or booking ID) in addition to the profile ID. This allows multiple entrances of the same profile when the supplemental identifier differs.
 
-[Learn how to use supplemental identifiers in journeys](supplemental-identifier.md). For Read audience journeys, the supplemental identifier must be a profile attribute; the reading rate is limited to 500 profiles per second when supplemental ID is used.
+[Learn how to use supplemental identifiers in journeys](supplemental-identifier.md). For Read audience journeys, the supplemental identifier is prepared from the **union/profile schema** for **Unified Profile Service** audiences, or selected from eligible attributes on **external audiences** (for example, audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience){target="_blank"} or resulting from [composition workflows](../audience/get-started-audience-orchestration.md)). The reading rate is limited to 500 profiles per second per journey instance when supplemental ID is used.
 
 ### Guardrails and recommendations {#must-read}
 
@@ -114,7 +164,7 @@ All guardrails and limitations for the **Read Audience** activity (concurrency, 
 
 * As a best practice, use batch audiences in a **Read audience** activity for reliable and consistent counts. Read audience is designed for batch use cases. If your use case needs real-time data, use the [Audience qualification](audience-qualification-events.md) activity instead.
 * Audiences [imported from a CSV file](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html#import-audience) or resulting from [composition workflows](../audience/get-started-audience-orchestration.md) can be selected in the **Read Audience** activity. These audiences are not available in the **Audience Qualification** activity.
-* When using batch segments, ensure ingestion and daily snapshot updates complete well before the journey starts. Consider an additional wait period if segments must reflect data ingested the same day. If immediate profile freshness is critical, use an event-based or streaming approach, or add a **Wait** activity to allow updated data to propagate before evaluation.
+* For information about audience snapshot timing, batch segmentation completion windows, and how to ensure your journey always runs on the freshest data, see [Timing and data propagation](#timing-and-data-propagation). For recurring journeys, consider enabling the **[!UICONTROL Trigger after batch audience evaluation]** option to automatically delay execution until the latest audience snapshot is ready. [Learn more](#schedule).
 
 >[!CAUTION]
 >
@@ -142,17 +192,17 @@ This value is stored in the journey version payload. The default value is 5,000 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_start_date"
 >title="Start date / time"
->abstract="Define when to start this journey."
+>abstract="The date and time when the journey starts reading the audience and profiles begin entering. Combine it with the recurrence options below to schedule recurring runs."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_until"
 >title="Repeat until"
->abstract="Define the end date for recurring runs."
+>abstract="The date when recurring runs stop. After this date, the journey no longer reads the audience or admits new profiles."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_repeat_every"
 >title="Repeat every"
->abstract="How often the journey runs (e.g. daily, weekly)."
+>abstract="How often the journey re-reads the audience and runs again, for example daily or weekly. Determines the recurrence interval between runs until the Repeat until date is reached."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_incremental_read"
@@ -162,12 +212,12 @@ This value is stored in the journey version payload. The default value is 5,000 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_force_reentrance"
 >title="Force reentrance"
->abstract="Clear all participants from the journey before each new audience read."
+>abstract="Clears all participants from the journey before each new audience read, so every run starts fresh and profiles can re-enter on each occurrence."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience"
 >title="Trigger after batch audience evaluation"
->abstract="Run the journey only after the batch audience has been freshly evaluated."
+>abstract="Delays each run until the batch audience has been freshly evaluated, so the journey reads the most up-to-date audience snapshot instead of stale data. Recommended for recurring journeys that depend on the latest segmentation results."
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_read_segment_scheduler_synchronize_audience_wait_time"
@@ -180,7 +230,7 @@ By default, journeys are configured to run once. To define a specific date/time 
 >
 >**Journey status and the 91-day global timeout:**
 >
->* **One-shot** Read audience journeys move to the **Finished** status 91 days ([journey global timeout](journey-properties.md#global_timeout)) after the journey execution.
+>* **Non-recurring** Read audience journeys automatically transition to **Stopped** status once the last active profile exits — unless the journey includes nodes that cause waiting periods (Wait nodes, Reaction nodes, or event-triggered transitions), in which case the standard [91-day global timeout](journey-properties.md#global_timeout) applies. [Learn more](end-journey.md#auto-stop-non-recurring)
 >* **Recurring** Read audience journeys with no end date **remain Live** as long as the journey is published. They move to **Finished** status 91 days after the execution of their **last occurrence**.
 >* The 91-day timeout applies to individual **profiles** flowing through the journey (maximum time a profile can remain active), not to the journey's Live status.
 >* The 91-day **reporting window** is a separate concept: the UI shows performance data for approximately the last 91 days. Older data is not accessible in the UI but the journey continues to run. [Learn more](journey-properties.md#global_timeout)
@@ -235,13 +285,12 @@ For example, if a journey is scheduled for 6 PM daily, you can specify a number 
 +++
 
 <!--
-
 ### Segment filters {#segment-filters}
 
 [!CONTEXTUALHELP]
 >id="jo_segment_filters"
 >title="About segment filters"
->abstract="You can choose to target only the individuals who entered or exited a specific segment during a specific time window. For example, you can decide to only retrieve all the customers who entered the VIP segment since last week."
+>abstract="This option targets only the individuals who entered or exited a specific segment during a specific time window. For example, it can retrieve only the customers who entered the VIP segment since last week."
 
 You can choose to target only the individuals who entered or exited a specific segment during a specific time window. For example, you can decide to only retrieve all the customers who entered the VIP segment since last week. Only the new VIP customers will be targeted. All the customers who were already part of the VIP segment before will be excluded.
 
@@ -250,7 +299,6 @@ To activate this mode, click the **Segment Filters** toggle. Two fields are disp
 **Segment membership**: choose whether you want to listen to segment entrances or exits. 
 
 **Lookback window**: define when you want to start to listen to entrances or exits. This lookback window is expressed in hours, starting from the moment the journey is triggered.  If you set this duration to 0, the journey will target all members of the segment. For recurring journeys, it will take into account all entrances/exits since the last time the journey was triggered.
-
 -->
 
 ## Test and publish the journey {#testing-publishing}
@@ -350,6 +398,8 @@ If the issue persists after these checks, see [Timing and data propagation](#tim
 
 * **Add a Wait activity**: For streaming audiences with recently ingested data, consider adding a **Wait** activity at the beginning of the journey to allow time for data propagation and profile qualification. [Learn more about the Wait activity](wait-activity.md)
 
+* **`inAudience()` condition timing:** When using `inAudience()` in a condition node within a Read Audience journey, segment membership is read from the batch projection of the profile. Data in this projection is refreshed within **2 hours** after ingestion. For full details on propagation timing scenarios, refer to the [inAudience function documentation](functions/functioninaudience.md#propagation-timing).
+
 ### Data validation {#data-validation-and-monitoring}
 
 * **Check segmentation job status**: Monitor batch segmentation job completion times in the [!DNL Adobe Experience Platform] [monitoring dashboard](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html){target="_blank"}. Use it to verify when audience data is ready.
@@ -387,16 +437,71 @@ For the full list of Read Audience guardrails (including retry and throughput li
 
 ## Related topics
 
-* [Build audiences](../audience/about-audiences.md)
-* [Audience Qualification activity](audience-qualification-events.md)
-* [Use supplemental identifiers in journeys](supplemental-identifier.md)
-* [Guardrails and limitations](../start/guardrails.md#read-segment-g)
-* [Journey processing rates and entry management](entry-management.md)
-* [Test a journey](testing-the-journey.md)
-* [Publish a journey](../building-journeys/publish-journey.md)
+* [Build audiences](../audience/about-audiences.md) - Create and manage the audience segments you want to target in your Read Audience journeys.
+* [Audience Qualification activity](audience-qualification-events.md) - Trigger journeys in real time as profiles enter or exit an audience, instead of processing them in batch.
+* [Use supplemental identifiers in journeys](supplemental-identifier.md) - Extend Read Audience journeys to target secondary entities such as bookings, contracts, or subscriptions linked to a profile.
+* [Guardrails and limitations](../start/guardrails.md#read-segment-g) - Review throughput limits, retry behavior, and audience size thresholds before launching at scale.
+* [Journey processing rates and entry management](entry-management.md) - Understand how profiles are injected into the journey and what controls entry and re-entry.
+* [Test a journey](testing-the-journey.md) - Validate your journey logic using test profiles before going live.
+* [Publish a journey](../building-journeys/publish-journey.md) - Activate your journey and monitor its initial execution.
+* [Send a message to subscribers](message-to-subscribers-uc.md) - End-to-end use case: target a subscription list with a Read Audience journey, from setup to delivery.
+* [Best practices for Read Audience journeys](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/mastering-read-audience-journeys-in-adobe-journey-optimizer-a/ba-p/761445){target="_blank"} - Community blog covering common pitfalls, count discrepancies, and proven best practices.
 
 ## How-to video {#video}
 
 Understand the applicable use cases for a journey that is triggered by the read audience activity. Learn how to build batch-based journeys and which best practices to apply.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424997?quality=12)
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to configure and use the Read Audience activity in Adobe Journey Optimizer to add profiles from an Adobe Experience Platform audience into a journey, either once or on a recurring schedule, with guidance on scheduling, throughput, troubleshooting, and best practices.
+
+**Intents:**
+* Configure a Read Audience activity as the entry point of a journey
+* Select an Adobe Experience Platform audience and identity namespace for the journey
+* Set the reading rate to control how many profiles enter per second
+* Schedule a journey to run once, daily, weekly, or on a custom recurrence
+* Enable Incremental read to process only new audience members on recurring runs
+* Troubleshoot audience count mismatches, zero-profile runs, and delayed entries
+* Decide between Read Audience and Audience Qualification based on batch vs. real-time needs
+
+**Glossary:**
+* **Read Audience activity**: The journey entry-point activity that reads all qualified profiles from a selected Adobe Experience Platform audience and adds them to the journey *(product-specific)*
+* **Reading rate**: The maximum number of profiles that can enter the journey per second (500–20,000; default 5,000) *(product-specific)*
+* **Incremental read**: A recurring journey option that processes only profiles newly added to the audience since the last journey execution *(product-specific)*
+* **Force reentrance on recurrence**: A scheduling option that removes all active journey participants before each new run so profiles can re-enter fresh *(product-specific)*
+* **Trigger after batch audience evaluation**: A scheduling option that delays journey execution until a fresh batch audience snapshot is available (up to 6 hours) *(product-specific)*
+* **Supplemental identifier**: A secondary identifier (e.g., order ID) that allows the same profile to enter the journey multiple times when the identifier differs *(product-specific)*
+
+**Guardrails:**
+* Only one Read Audience activity is allowed per journey, and it must be the first activity.
+* Only one audience can be selected per Read Audience activity.
+* Up to five concurrent Read Audience runs per organization.
+* Maximum reading rate is 20,000 profiles per second per sandbox (sum of all concurrent Read Audience activities).
+* Reading rate is limited to 500 profiles per second when a supplemental identifier is used.
+* Only profiles with Realized audience participation status enter the journey.
+* Only people-based identity namespaces are available; profiles without the selected namespace cannot enter.
+* The 12-hour job timeout applies to Read Audience export jobs.
+* Retries for failed export jobs occur every 10 minutes for up to 1 hour.
+* For custom upload audiences with Incremental read enabled, profiles are only retrieved on the first recurrence (these audiences are fixed).
+* Scale the Winner is not available for Read Audience journeys (path experimentation).
+
+**Terminology:**
+* Canonical name: Read Audience — Acronym: none — variants: segment-trigger, audience-based journey entry, Read Segment (legacy API name)
+* Synonyms: "Read Audience" = "segment trigger" = "audience-triggered journey"
+* Do not confuse: "Read Audience" ≠ "Audience Qualification" (Read Audience is batch/scheduled; Audience Qualification is real-time streaming)
+
+**FAQ:**
+* **Q: When should I use Read Audience instead of Audience Qualification?** — Use Read Audience for batch, scheduled use cases (e.g., weekly newsletters, re-engagement campaigns). Use Audience Qualification when profiles must enter the journey immediately as they qualify in real time.
+* **Q: Why are fewer profiles entering the journey than the audience size?** — Common causes include profiles not having the selected namespace, batch segmentation jobs not yet completed before the journey ran, or profiles not being in Realized status. Enable "Trigger after batch audience evaluation" and check namespace configuration.
+* **Q: What does Incremental read do on the first run?** — On the first execution, all audience profiles enter. On subsequent runs, only profiles newly added to the audience since the last execution are processed.
+* **Q: What happens if the export job fails?** — The system retries every 10 minutes for up to 1 hour. Failures are reported in Alerts. After 1 hour without success, the run is considered failed.
+* **Q: Can the same profile enter a Read Audience journey multiple times?** — Yes, if a supplemental identifier is configured and differs between entries, or if Force reentrance on recurrence is enabled. Without these, a profile cannot be present multiple times at the same time.
+* **Q: How long does a one-shot Read Audience journey remain live?** — It auto-stops to Stopped when the last profile exits, unless the journey includes Wait, Reaction, or event-triggered transitions — in which case the 91-day global timeout applies. It does not remain Live until Finished at 91 days by default.
+
++++

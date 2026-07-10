@@ -9,8 +9,51 @@ role: User
 level: Intermediate
 keywords: opt-out, email, link, unsubscribe
 exl-id: 4bb51bef-5dab-4a72-8511-1a5e528f4b95
+TQID: https://experienceleague.adobe.com/F77MDJH94Db-fXGpbhKBUGok48jNIiFu3x2R6x2DYeA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+  - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
+    internal-label: Consent management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Email opt-out management {#email-opt-out}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add unsubscribe options to your emails, including one-click opt-out links in the email header or body and two-step opt-out through a landing page, so recipients can stop future communications.
+
+>[!ENDSHADEBOX]
 
 When sending messages from journeys or campaigns, you must always ensure that customers can unsubscribe from future communications. Once unsubscribed, the profiles are automatically removed from the audience of future marketing messages.  [Learn more about privacy & opt-out management](../privacy/opt-out.md)
 

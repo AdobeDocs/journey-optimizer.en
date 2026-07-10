@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Work with API triggered campaigns 
+title: Work with API triggered campaigns
 description: Learn how to trigger campaigns using Journey Optimizer APIs.
 feature: Campaigns, API
 topic: Content Management
@@ -9,9 +9,32 @@ role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
 exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
+TQID: https://experienceleague.adobe.com/DNNZWQjgdcranVpuJV9WCKW8RRENVJ6iZnIt1k-Easc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-
 # Work with API triggered campaigns {#trigger-campaigns}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Create and launch API triggered campaigns through a REST API call so you can send real-time marketing and transactional messages using profile and contextual data.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="campaigns_overview_api_triggered"
@@ -22,7 +45,7 @@ exl-id: 0ef03d33-da11-43fa-8e10-8e4b80c90acb
 
 API triggered campaigns allow either for marketing communications to reach out to an audience at the right time, or for transactional/operational messages to an individual like a password reset, where the need may involve personalization not just using profile attributes but also real-time context data in the trigger, which is a REST API payload.
 
-To do this, you first need to create an API triggered campaign in Journey Optimizer, and then launch its execution through an API call using the [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging/#tag/execution).
+To do this, you first need to create an API triggered campaign in Journey Optimizer, and then launch its execution through an API call using the [Interactive Message Execution REST API](https://developer.adobe.com/journey-optimizer-apis/references/messaging#tag/execution).
 
 ➡️ [Discover this feature in video](#video) 
 

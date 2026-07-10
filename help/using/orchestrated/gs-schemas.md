@@ -5,9 +5,27 @@ title: Configuration steps
 description: Learn how to create a relational schema within Adobe Experience Platform by uploading a DDL
 exl-id: 327597f6-8a53-42dc-966a-baae49b58bb3
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/tNL6BkFKuOWMyEnR-FWc38mYrcA15wAdsHzZntCEwVw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
+# Get started with relational schemas and datasets{#gs-schemas}
 
-# Get started with relational Schemas and Datasets{#gs-schemas}
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the key concepts and steps to create relational schemas and datasets, link them, and ingest data for Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
 
 This guide walks you through the process of creating a relational schema, configuring a dataset for Orchestrated campaigns and ingesting data.
 
@@ -27,7 +45,7 @@ It describes:
 * The attributes of those entities (e.g., Customer Name, Campaign Start Date)
 * The relationships between entities (e.g., Customers belong to Segments, Campaigns target Segments)
 
-A data model is logical and conceptual, not tied to a physical implementation in Orchestrated Campaign
+A data model is logical and conceptual, not tied to a physical implementation in Orchestrated campaign
 
 In a **relational data model**, data is organized into tables relating to other tables.
 
@@ -68,7 +86,7 @@ To ingest data and create relational schema, follow these steps:
 
 1. [Enable Orchestrated campaigns](manual-schema.md#enable)
 
-    The dataset stores your ingested data and must be enabled for Orchestrated Campaigns to ensure it is accessible in Adobe Journey Optimizer.
+    The dataset stores your ingested data and must be enabled for Orchestrated campaigns to ensure it is accessible in Adobe Journey Optimizer.
 
 1. [Ingest Data](ingest-data.md)
 

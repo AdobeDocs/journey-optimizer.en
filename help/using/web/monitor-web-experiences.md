@@ -6,8 +6,39 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: d89795bb-c51d-4d1f-b7ed-2b2c5d278922
+TQID: https://experienceleague.adobe.com/CEjKwnKx1ixUKA-mO7FfWGXaW9FyO-I-ZYyYm0scs88
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
+    internal-label: Web channel
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+    internal-label: Web experience
 ---
 # Monitor your web experiences {#monitor-web-experiences}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to monitor your live web experiences in Adobe Journey Optimizer by checking the web reports and setting up click tracking on specific page elements.
+
+>[!ENDSHADEBOX]
 
 ## Check the web reports {#check-web-reports}
 
@@ -18,6 +49,11 @@ Once your web experience is live, you can check the **[!UICONTROL Web]** tab of 
 To further improve your web experience monitoring, you can also track the clicks on any specific element of your website. This allows you to display the number of clicks on that element in the web reports. [Learn how](#use-click-tracing)
 
 ## Use click tracking {#use-click-tracking}
+
+>[!CONTEXTUALHELP]
+>id="ajo_web_designer_click_tracking"
+>title="Use click tracking"
+>abstract="Track clicks on any element of your web page to monitor user interactions. Select an element, choose **Click track element** from the contextual menu, and add a meaningful label. The tracked data appears in your web reports, helping you understand how users engage with your content."
 
 The web designer allows you to select any element of your website and track the clicks on that element.
 

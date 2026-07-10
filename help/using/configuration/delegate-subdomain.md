@@ -9,8 +9,40 @@ role: Admin
 level: Experienced
 keywords: subdomain, delegation, domain, DNS
 exl-id: 8021f66e-7725-475b-8722-e6f8d74c9023
+TQID: https://experienceleague.adobe.com/DwAI8P5ACNyZ8IGCsMoLglZ-EK0HE99ZV0yap51EfKo
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Delegate a subdomain {#delegate-subdomain}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to delegate your email sending subdomains to Adobe in Adobe Journey Optimizer using full delegation or CNAME setup, and how to access, validate, and undelegate them.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomainname"
@@ -33,6 +65,7 @@ You can either:
 
 * Fully delegate a subdomain - [Learn how](#set-up-subdomain)
 * Create a subdomain using CNAMEs to point to Adobe-specific records - [Learn how](#set-up-subdomain)
+* Delegate a custom subdomain - [Learn how](delegate-custom-subdomain.md)
 
 The **full subdomain delegation** is the recommended method. Learn more about the differences between the different subdomain configuration methods in [this section](about-subdomain-delegation.md#subdomain-delegation-methods).
 
@@ -88,7 +121,8 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 <!--
 >[!NOTE]
 >
->This section describes how to set up a subdomain using the full delegation. The custom delegation method is detailed in [this section](#setup-custom-subdomain).-->
+>This section describes how to set up a subdomain using the full delegation. The custom delegation method is detailed in [this section](#setup-custom-subdomain).
+-->
 
 1. Access the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Subdomains]** menu, then click **[!UICONTROL Set up subdomain]**.
 
@@ -111,7 +145,8 @@ To set up a new subdomain in [!DNL Journey Optimizer], follow the steps below.
 
     ![](assets/subdomain-name.png)
 
-<!-- >[!CAUTION]
+<!--
+ >[!CAUTION]
     >
     >Delegating an invalid subdomain to Adobe is not allowed. Make sure you enter a valid subdomain which is owned by your organization, such as marketing.yourcompany.com.
     >
@@ -182,7 +217,8 @@ To complete your subdomain delegation, follow the steps below.
 <!--
     >[!NOTE]
     >
-    >If an error occurs while trying to submit a custom subdomain, refer to [this section](delegate-custom-subdomain.md#check-list).-->
+    >If an error occurs while trying to submit a custom subdomain, refer to [this section](delegate-custom-subdomain.md#check-list).
+-->
 
 1. You can create the records and submit the subdomain configuration later on using the **[!UICONTROL Save as draft]** button.
 
@@ -246,7 +282,7 @@ First, perform the following steps in [!DNL Journey Optimizer]:
 
 1. Undelegate any landing page subdomains, SMS subdomains, and web subdomains associated with this subdomain.
 
-    You need to raise a dedicated request for each [landing page](../landing-pages/lp-subdomains.md#undelegate-subdomain), [SMS](../sms/sms-subdomains.md#undelegate-subdomain), or [web subdomain](../web/web-delegated-subdomains.md#undelegate-subdomain).
+    You need to raise a dedicated request for each [landing page](../landing-pages/lp-subdomains.md#undelegate-subdomain), [SMS](../mobile/mobile-subdomains.md#undelegate-subdomain), or [web subdomain](../web/web-delegated-subdomains.md#undelegate-subdomain).
 
 1. Stop the active campaigns associated with the subdomains. [Learn how](../campaigns/manage-campaigns.md#stop)
 

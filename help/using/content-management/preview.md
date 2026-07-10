@@ -5,12 +5,22 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 6477270c-0309-411a-8254-c7ffc4419492
+feature_v2: []
+subfeature_v2:
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
 ---
 # Preview your content using test profiles {#preview}
 
-Once [test profiles](test-profiles.md) have been selected, you can preview your content using their data. Follow these steps:
+>[!BEGINSHADEBOX]
 
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button and select **[!UICONTROL Simulate content]**.
+**On this page:** Learn how to preview your message content against selected test profiles to check how personalized fields display for each variant.
+
+>[!ENDSHADEBOX]
+
+Once [test profiles](test-profiles.md) have been selected, you can preview your content using their data. You can use either simulation method:
+
+1. From the edit content screen of your message or in the Email Designer, click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown.
 
 1. Select a test profile. You can check the values available in the columns. Use the right/left arrows to browse data.
 
@@ -37,7 +47,3 @@ Once [test profiles](test-profiles.md) have been selected, you can preview your 
     >If an error is found in the configuration details, click the **[!UICONTROL View configuration details]** button. [Learn more](../email/surface-personalization.md#check-configuration)
 
 When creating code-based experiences, you can preview your personalized content right on your browser or on your mobile devices for a real-life simulation. [Learn more](../code-based/test-code-based.md#preview-on-device)
-
->[!NOTE]
->
->[!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)

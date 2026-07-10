@@ -5,15 +5,34 @@ title: Create your Targeting dimension
 description: Learn how to map a relational schema to the customer profile
 exl-id: 2479c109-cd6f-407e-8a53-77e4477dc36f
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/6IPCwJE4-ktVWFENfoVe25VqPV-OZ7J-oVq4gmOsAz4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
-
 # Configure a Targeting dimension {#configuration}
 
-With **[!UICONTROL Orchestrated Campaigns]**, you can design and deliver targeted communications at the entity level, leveraging Adobe Experience Platform's relational schema capabilities. Experience Platform uses schemas to describe the structure of data in a consistent and reusable way. When data is ingested into Experience Platform, it is structured according to an XDM schema.
+>[!BEGINSHADEBOX]
 
-Although segmentation for **[!UICONTROL Orchestrated Campaigns]** operates primarily on relational schemas, the actual message delivery always occurs at the **Profile** level.
+**On this page:** Learn how to configure a targeting dimension for Orchestrated campaigns by mapping a relational schema to the customer profile so you can deliver messages at the entity level.
 
-When configuring targeting, you define two key aspects:
+>[!ENDSHADEBOX]
+
+With **[!UICONTROL Orchestrated campaigns]**, you can design and deliver targeted communications at the entity level, leveraging Adobe Experience Platform's relational schema capabilities. Experience Platform uses schemas to describe the structure of data in a consistent and reusable way. When data is ingested into Experience Platform, it is structured according to an XDM schema.
+
+**[!UICONTROL Orchestrated campaigns]** support two types of targeting dimensions:
+
+* **Profile targeting dimension**: The built-in default, which targets recipients directly using the **Profile** schema.
+* **Custom targeting dimension**: Targets recipients through a relational schema (for example, `Recipients`, `Visitors`, `Customers`). Use this when you need to deliver messages at the entity level — such as per subscription or per contract — rather than at the profile level.
+
+When configuring a custom targeting dimension, you define two key aspects:
 
 * **Targetable Schemas**
      
@@ -21,7 +40,7 @@ When configuring targeting, you define two key aspects:
 
      >[!IMPORTANT]
      >
-     > Orchestrated Campaigns allow targeting on any schema that has a direct or related relationship to the **Profile** schema. While its usage is primarily intended on 1:1 relationships, it also supports 1:N relationships, such as Account `>` Recipients, as long as the relationship path is properly modeled in the data model. This enables targeting based on account-level data while still resolving the correct profile identity for message delivery.
+     > Orchestrated campaigns allow targeting on any schema that has a direct or related relationship to the **Profile** schema. While its usage is primarily intended on 1:1 relationships, it also supports 1:N relationships, such as Account `>` Recipients, as long as the relationship path is properly modeled in the data model. This enables targeting based on account-level data while still resolving the correct profile identity for message delivery.
 
 * **Profile Linkage**
      

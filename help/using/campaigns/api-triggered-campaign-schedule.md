@@ -9,8 +9,31 @@ role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
 exl-id: e04b0d38-6b3d-4086-a0f0-c1b8f6d9634f
+TQID: https://experienceleague.adobe.com/4cCtvRATLk-gNyMcY-jESte82DKpgVbhA75pE4fNKmQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Schedule the API triggered campaign {#api-schedule}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Set start and end dates and rate control in the Schedule tab so your API triggered campaign sends at the right time without overwhelming downstream systems.
+
+>[!ENDSHADEBOX]
 
 Use the **[!UICONTROL Schedule]** tab to define the campaign schedule.
 

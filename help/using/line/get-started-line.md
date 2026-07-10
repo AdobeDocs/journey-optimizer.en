@@ -8,8 +8,32 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: dc1bddaf-968f-405d-b8cc-b9443a838fa6
+TQID: https://experienceleague.adobe.com/fsaAAzI8lWdm37orBCXNoPFiY6tKBJ4q-N3-mpWlue8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: e09fc1e6-407c-418f-adc5-e2ffe8b8986e
+    internal-label: LINE channel
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Get started with LINE {#get-started-line}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how LINE messaging works in Journey Optimizer so you can reach customers on their LINE app through journeys and campaigns.
+
+>[!ENDSHADEBOX]
 
 Use [!DNL Journey Optimizer] to send LINE messages to your customers on their LINE app. You can create, personalize, and preview messages in the LINE editor.
 
