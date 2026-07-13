@@ -108,6 +108,9 @@ The journey canvas is built to scale with your most complex use cases:
 
 To switch to the new canvas experience, click the **[!UICONTROL New experience]** button in the journey canvas. Once switched, this setting is saved at the journey level, so the journey will open in the new experience by default on subsequent visits. To revert, click the **[!UICONTROL Old experience]** button.
 
+![](assets/journey-new-experience-switch.png){width="50%" align="center" zoomable="yes"}
+
+
 ## Start your journey {#start-your-journey}
 
 When you design your journey, the first question you want to ask is how profiles will enter the journey. 
