@@ -47,7 +47,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_target"
 >title="Target"
->abstract="Placeholder for Target section"
+>abstract="The **[!UICONTROL Target]** section sets the target of the delivery for this channel activity. Use **[!UICONTROL Target dimension]** to select which target dimension applies to this send. Then choose **[!UICONTROL One message per profile]** to send a single message per person, or **[!UICONTROL One message per secondary dimension]** to send one message per qualifying secondary dimension — for example, one email per flight when the same traveler has several matching flights."
 
 <!--
 UNUSED IDs in BJ
