@@ -52,6 +52,8 @@ Upon the initial page load, the page displays its default state. However, if you
 >[!PREREQUISITES]
 >
 >You need to install node and npm. [Refer to this documentation](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+>
+>To use disqualification rules with content cards, Web SDK version 2.28.0 or later is required.
 
 
 1. Set up local SSL certificates for HTTPS. These samples require locally signed SSL certificates to serve content over HTTPS: 

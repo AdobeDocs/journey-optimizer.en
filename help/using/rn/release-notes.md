@@ -56,6 +56,8 @@ topic_v2:
 
 ## July '26 updates {#july-26-updates}
 
+### New capabilities {#july-26-new-capabilities}
+
 <table>
 <thead>
 <tr>
@@ -73,25 +75,11 @@ topic_v2:
 </tbody>
 </table>
 
-### Usability improvements {#july-26-usability}
+### Improvements {#july-26-improvements}
 
-The following usability improvements were released in July 2026.
+* **AJO MCP server new tools** - The [!DNL Adobe Journey Optimizer] MCP server now exposes five additional read-only **channel configuration tools**, enabling you to query channel configurations, supporting resources, and marketing actions directly from your AI assistant. You can now use **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
 
-#### Content management
-
-* **Quick launch shortcuts in Fragments inventory** - You can now quickly access common actions from the Fragments list using the **[!UICONTROL More actions]** button. Available shortcuts include editing the fragment, opening its details, and discarding the draft version. [Learn more](../content-management/manage-fragments.md#quick-launch-fragments)
-
-  ![](../content-management/assets/fragment-quick-launch.png)
-
-* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. For email templates, additional shortcuts let you edit the subject line and email body, view or send a proof, run a spam report, and render the email. [Learn more](../content-management/access-content-templates.md#quick-launch-templates)
-
-  ![](../content-management/assets/content-template-quick-launch.png)
-
-#### Journeys
-
-* **Journey canvas capabilities** - The journey canvas is built to scale with your most complex use cases, delivering improved performance for large journeys, automatic layout for better readability, and a guided authoring experience. To switch to the new canvas, click the **[!UICONTROL New experience]** button. This setting is saved at the journey level, so the journey reopens in the new experience by default. To revert, click **[!UICONTROL Old experience]**. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
-
-  ![](../building-journeys/assets/journey-new-canvas.png)
+  Availability date: July 9, 2026
 
 ## June '26 release notes {#june-26-rn}
 
@@ -465,3 +453,18 @@ The following improvements are coming to mobile messaging in this release.
 
 +++
 
+### Usability improvements {#june-26-usability}
+
+* **Folders for Journeys** - You can now organize your journeys into **folders** to improve navigation and management in the interface. [Read more](../building-journeys/journey-ui.md#journeys-folders)
+
+  Availability date: June 30, 2026
+
+<!--
++++ Coming soon — **Information below is subject to change.**
+
+* **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters.
+
+  Availability date: Early June, 2026
+
++++
+-->
