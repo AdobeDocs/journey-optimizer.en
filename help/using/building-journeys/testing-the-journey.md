@@ -91,7 +91,7 @@ Review these notes before running tests in your journey.
 
 ### Execution
 
-* **Split behavior** - When the journey reaches a split, the top branch is always selected. Reorder branches if you want a different path tested.  
+* **Split behavior** - When the journey reaches a split, the top branch is always selected in test mode. This does not reflect the statistically selected path during live execution. Reorder branches if you want a different path tested.
 * **Event timing** - If the journey includes multiple events, trigger each event in sequence. Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event. The profile will then be sent to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window. 
 * **Active date window** -  Make sure the journey's configured [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded with the log message `DISPATCHER DISCARD #16 — unqualified on journey version enablements`. To work around this during testing, temporarily set the journey start date to a time before the current moment, then restore it before publishing. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
 * **Reaction events** -  For reaction events with a timeout, the minimum and default wait time is 40 seconds.  
@@ -155,6 +155,17 @@ To validate the journey end to end:
 >* The profile identifier you entered is flagged as a test profile in [!DNL Adobe Experience Platform].
 >* The journey's configured start and end dates include the current time. Events triggered outside this window are silently discarded. [Learn more](troubleshooting-execution.md#troubleshooting-test-transitions).
 
+## Troubleshoot test mode {#troubleshoot-test-mode}
+
+Use this table to self-diagnose common test mode failures before opening a support ticket.
+
+| Symptom | Likely cause | Resolution |
+| --- | --- | --- |
+| Event sends successfully but profile never appears in the journey log | Namespace mismatch in the Profile Identifier — the namespace value does not match the namespace defined in the event schema | Verify the identifier format: `@{<EventName>.identityMap.entry('<NamespaceName>').first().id}`. `<NamespaceName>` must match the event schema exactly (case-sensitive). See [Prerequisites](#trigger-events-prerequisites). |
+| Events accepted (200 response) but journey never triggers; log shows `DISPATCHER DISCARD #16 — unqualified on journey version enablements` | Journey start date is set in the future; test events are silently discarded outside the active date window | Temporarily set the journey start date to before the current time. Restore it before publishing. See [journey dates](journey-properties.md#dates). |
+| Read Audience journey shows a batch segment evaluation log but no profile entries | Batch segment evaluation is logged separately from individual profile entry; the batch log does not confirm profiles have entered the journey | Wait for the batch processing window to complete. For real-time log feedback, test with a unitary event journey. |
+| Test mode cannot be enabled; error `ERR_MODEL_RULES_16` | The event does not include an identity namespace, required when the journey uses a channel action | Add an [identity namespace](../audience/get-started-identity.md) to the event configuration. |
+
 ## Trigger your events {#firing_events}
 
 >[!CONTEXTUALHELP]
@@ -168,8 +179,6 @@ Use the **[!UICONTROL Trigger an event]** button to configure an event that will
 ### Prerequisites {#trigger-events-prerequisites}
 
 As a prerequisite, you must know which profiles are flagged as test profiles in [!DNL Adobe Experience Platform]. Indeed, the test mode only allows these profiles in the journey.
-
-**Required permission** — The **[!UICONTROL Manage Profile]** permission is required to trigger test events from the UI. Without it, the **[!UICONTROL Trigger an event]** button is not available.
 
 The event must contain an ID. The expected ID depends on the event configuration. It can be an ECID or an email address for example. The value of this key needs to be added in the **Profile Identifier** field.
 

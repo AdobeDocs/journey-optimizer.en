@@ -25,10 +25,7 @@ subfeature_v2:
 
 Test profiles are additional recipients who do not match the defined targeting criteria. [Learn how to create test profiles](../audience/creating-test-profiles.md)
 
-Before selecting test profiles, ensure the following prerequisites are met:
-
-* **Manage Profile permission** — The **[!UICONTROL Manage Profile]** permission is required to access and use test profiles in Journey Optimizer. Contact your administrator if the option is unavailable.
-* **Namespace match** — The identity namespace you select must match the namespace used to identify profiles in your event schema (for example, **Email** or **Phone**). A mismatch prevents test profiles from being correctly resolved.
+Before selecting test profiles, ensure the identity namespace you plan to use matches the namespace under which your test profiles are stored in Adobe Experience Platform (for example, **Email** or **Phone**). A mismatch prevents test profiles from being correctly resolved in the search field.
 
 Before using test profiles to test your content, you first need to select them. To do this, follow these steps:
 
