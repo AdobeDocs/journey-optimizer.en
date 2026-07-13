@@ -170,7 +170,7 @@ You can choose from one of these two solutions:
 
 The following guardrails apply to the [Events](../event/about-events.md) in your journeys:
 
-* Journey Optimizer supports a peak volume of **5,000 inbound journey events per second**, across all sandboxes. Learn more about this limitation [on this page](../event/about-events.md#event-thoughput).
+* Journey Optimizer supports a peak volume of **5,000 inbound journey events per second** for unitary events, and **5,000 inbound journey events per second** for Read Audience based journey events, across all sandboxes. Learn more about this limitation [on this page](../event/about-events.md#event-thoughput).
 * Event-triggered journeys may take up to **5 minutes** to process the first action in the journey.
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.

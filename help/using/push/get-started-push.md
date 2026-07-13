@@ -60,6 +60,8 @@ Use the dedicated tabs to define the push notification settings for **iOS**, **A
 >
 >While **[!DNL Journey Optimizer]** provides ways of managing opt-out in emails and SMS messages, push notifications do not require any action on your side, as recipients can unsubscribe through their devices themselves. For example, upon downloading or when using your app, they can select to stop notifications. Similarly, they can change the notification settings through the mobile operating system or web browser settings. To verify a profile's push consent status in the AEP profile viewer, see [Check push opt-out status](../privacy/opt-out.md#push-opt-out-status).
 
+</br>
+
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="create-push.md">
@@ -96,3 +98,26 @@ Use the dedicated tabs to define the push notification settings for **iOS**, **A
 <p>
 </td>
 </tr></table>
+
+## Use cases
+
+Push notifications work best when you need to reach users quickly and directly on their device, without relying on them to be inside your app or checking their inbox.
+
+| Benefit | Why | Example use cases |
+| --- | --- | --- |
+| Time-sensitive updates | Delivered instantly, even when users are not actively using your app | Flight delay alerts, order status changes, breaking news |
+| Re-engagement | Prompts users to return to your app after a period of inactivity | Cart abandonment reminders, win-back campaigns |
+| Cost reduction vs. SMS | No per-message carrier fees, unlike SMS | High-volume promotional or transactional notifications |
+| Rich, interactive content | Supports images, action buttons, and deep links | Product promotions with tap-to-buy buttons, rich media previews |
+| Device-native capabilities | Leverages OS-level features not available to other channels | Vibration alerts, app icon badges, geofenced location triggers |
+| High opt-in likelihood | Users are prompted to opt in as early as app install or first launch | Onboarding flows, day-one engagement campaigns |
+
+## When not to use
+
+Push notifications are not the right fit for every message. Consider another channel in the following situations:
+
+* Your audience has low push opt-in rates or has shown resistance to notifications, since the message may never reach them
+* The message requires long-form content, which email handles better and allows for more detailed formatting
+* The content is sensitive or private and should not be visible on a lock screen, where anyone near the device could see it
+* Most of your users access your service from desktop rather than a mobile app, where push notifications have limited or no reach
+

@@ -8,6 +8,7 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: email, content check, HTML, CSS, validation, rendering, quality
+badge: label="Limited Availability" type="Informative"
 ---
 
 # Content check in the Email Designer {#content-check}
@@ -16,6 +17,10 @@ keywords: email, content check, HTML, CSS, validation, rendering, quality
 >id="ajo_email_content_check"
 >title="Validate your email content"
 >abstract="Content checks automatically detect HTML and CSS issues in your email before you send. They flag unsupported tags, empty divs, and size limits that can break rendering in Gmail or Microsoft Outlook. Issues are surfaced as errors, warnings, or informational notices, with contextual details and one-click fixes where available."
+
+>[!AVAILABILITY]
+>
+>This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
 [!DNL Journey Optimizer] includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.
 

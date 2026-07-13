@@ -44,7 +44,7 @@ This page explains how High throughput campaigns differ from standard API trigge
 
 ## Guardrails & limitations
 
-*  **Access** - Available only in the US region for organizations licensed with the High Throughput transactional messaging add-on.
+*  **Access** - Available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on.
 
 * **Channels**: Currently available only for email.  
 

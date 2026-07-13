@@ -23,7 +23,33 @@ subfeature_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## July 2026 {#july-2026}
+
+* A warning has been added to the **Edit PTR records** page to inform customers that when adding a new forward DNS record to their platform, the forward DNS record for the old subdomain must not be removed until the move completes, as doing so will cause the edit to fail. [Read more](../configuration/ptr-records.md#edit-ptr-subdomains-cname)
+
+* The **Send using waves** pages have been updated to clarify audience re-evaluation behavior across waves: audience membership is fixed at activation time (snapshot), but profile attributes and consent are evaluated at the time each wave processes. This means opt-outs occurring between waves are respected. Read more in the [journeys](../building-journeys/send-using-waves.md#faq) and [campaigns](../campaigns/send-using-waves.md#faq) FAQ sections.
+
+* The **Data Governance** page has been updated to clarify that DULE policy enforcement applies to **profile attribute fields only**. Event-based fields (context attributes such as journey event fields) are not supported: labels applied to those fields in the UI will not restrict data usage. [Read more](../action/action-privacy.md)
+
+* The **Send-Time Optimization** documentation has been updated to reflect the new **[!UICONTROL Send within next]** limit of **2-100 hours** (previously 1-168), and to document supported AEP Hub regions for this capability. [Read more](../building-journeys/send-time-optimization.md#use-send-time-optimization)
+
+* The **Personalized optimization model** pages have been updated to reflect the latest model improvements, covering how the ensemble model works, dataset requirements, use cases, key assumptions, and cold-start behavior. Read more in the [Experience Decisioning](../experience-decisioning/ranking/personalized-optimization-model.md) and [Offer Decisioning](../offers/ranking/personalized-optimization-model.md) sections.
+
+* A note has been added to the **Journey arbitration ranking formulas** page to specify that ranking formulas are only available to organizations that have purchased the **Decisioning** add-on offering. [Read more](../conflict-prioritization/journey-ranking-formulas.md)
+
+* A new **Dynamic fragments** page is now available. It documents how to use dynamic fragment resolution in [!DNL Journey Optimizer] to select which published fragment is injected into a message at runtime, based on profile attributes, dataset lookups, or context data passed at send time. [Read more](../content-management/dynamic-fragments.md)
+
 ## June 2026 {#june-2026}
+
+* The **Check & send a direct mail message** page has been updated to clarify Direct Mail export timing and batching behavior, including the fixed 4-hour UTC export schedule, why multiple files can be generated in a single day, when **[!UICONTROL Update profile]** executes in journeys, and recommendations for one-file-per-day scenarios. [Read more](../direct-mail/test-send-direct-mail.md#dm-export-timing)
+
+* A new **Journey types: choose the right one** page is now available. It compares all journey entry points — Read Audience, Audience Qualification, Unitary event, and Business event — with decision guides and a feature compatibility matrix to help you select the right type for your use case. [Read more](../building-journeys/journey-types-selection.md)
+
+* A new **Journeys vs. campaigns** page is now available. It compares Journeys, Action campaigns, and API-triggered campaigns across execution style, data model, and use case — including inbound channel activation for low-latency edge personalization, multi-surface inbound delivery, and guidance on when to use Orchestrated campaigns (ad-hoc audience composition, federated data). [Read more](../start/journeys-vs-campaigns.md)
+
+* The **High throughput mode** page has been updated to reflect the expanded regional availability: the feature is now available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on. [Read more](../campaigns/api-triggered-high-throughput.md)
+
+* A new **Engageable Profiles and license usage** section has been added to the **Get started with profiles** page as the single source of truth for this concept, with targeted references added across the Audiences, Campaigns, and Decisioning sections. [Read more](../audience/get-started-profiles.md#engageable-profiles)
 
 * The **Split** activity documentation has been updated to document the **[!UICONTROL Segment code]** field available in each subset settings, which allows you to assign a unique identifier to each audience segment for tracking and reporting purposes. [Read more](../orchestrated/activities/split.md)
 
@@ -41,6 +67,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Path assignment on journey re-entrance** subsection has been added to the **Path experimentation** documentation. It clarifies that path assignment is persistent for a profile across multiple entrances into the same journey version, but only within that journey version. Assignments reset when a new journey version is published, and each path experimentation activity in a journey applies an independent random assignment. [Read more](../building-journeys/path-experimentation.md#path-assignment)
 * References to **Adobe Experience Cloud** have been aligned with the **[!DNL Adobe CX Enterprise]** brand across the [!DNL Journey Optimizer] documentation.
+
+* The **`nowWithDelta()` date function** documentation has been updated to clarify month-end behavior: when the target month has fewer days than the current day-of-month, the result is normalized to the last valid day of that month. [Read more](../building-journeys/functions/date-functions.md#nowWithDelta)
 
 * The **Get started with deliverability** page has been updated with a new **Providers without per-recipient FBL** subsection. It lists the major mailbox providers that do not return per-recipient spam complaints — Gmail / Google Workspace, Apple iCloud, and Corporate Microsoft 365 / Exchange Online — and explains why the absence of a suppression list entry is expected for recipients using these services. [Read more](../reports/deliverability.md#providers-no-fbl)
 

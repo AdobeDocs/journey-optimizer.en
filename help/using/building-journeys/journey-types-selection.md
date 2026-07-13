@@ -8,7 +8,6 @@ role: User
 level: Beginner
 keywords: journey types, unitary, read audience, audience qualification, business event, comparison, decision guide, choose, selection, real-time, scheduled, batch, event-triggered
 version: Journey Orchestration
-hide: true
 exl-id: 0c894dc1-76b6-4b33-baf8-eaf6686f7d38
 TQID: https://experienceleague.adobe.com/rEANha6Lppyd5vog-0kZ3aL9VvZHc9kziW-d-jiWqeA
 product_v2:
@@ -80,7 +79,11 @@ topic_v2:
 
 **When to use:** Real-time responses to audience membership changes
 
-**Audience Qualification journeys** trigger when profiles qualify for (or exit from) a specific audience. Profiles enter individually as they meet criteria, enabling immediate engagement when customer behavior changes. For real-time entry behavior, the audience must be **streaming-evaluated**; batch-evaluated audiences trigger entry only at the next evaluation window (up to 24 hours).
+**Audience Qualification journeys** trigger when profiles qualify for (or exit from) a specific audience. Profiles enter individually as they meet criteria, enabling immediate engagement when customer behavior changes. Use **streaming-evaluated** audiences — these are the only supported audience type for this activity.
+
+>[!CAUTION]
+>
+>Starting **August 2026**, journeys using a batch audience in an Audience Qualification node cannot be published. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
 
 **Perfect for:** VIP tier upgrade notifications, first purchase celebration messages, churn risk alerts, and loyalty lifecycle stage transitions.
 
@@ -127,7 +130,7 @@ Use the table below to match your goal to the right journey type. For most new u
 | **Examples** | Cart abandonment recovery, new member onboarding | Monthly newsletter, seasonal campaign | VIP upgrade, churn risk alert | Low stock alert, flash sale, price drop |
 | **Re-entrance** | Configurable | Once per execution by default; [Force reentrance on recurrence](read-audience.md#schedule) available on scheduled runs | Configurable per qualification event; a profile already in the journey cannot re-enter the same version | Multiple profiles can be affected by same event |
 | **Max throughput** | 5,000 TPS (shared org-level with Audience Qualification) | 20,000 TPS per sandbox | 5,000 TPS (shared org-level with Unitary event) | Business event: 5,000 TPS; Read Audience step: 20,000 TPS |
-| **Data requirements** | Event schema with trigger data | [!DNL Adobe Experience Platform] audience | Streaming audience (required for real-time entry); batch audience supported but delays entry | Business event schema |
+| **Data requirements** | Event schema with trigger data | [!DNL Adobe Experience Platform] audience | Streaming audience required. Batch audiences deprecated from August 2026 — [migrate now](aq-batch-audiences-migration.md) | Business event schema |
 
 ## Feature compatibility by journey type {#feature-compatibility}
 
@@ -181,6 +184,7 @@ Not all features are available for all journey types. Use this matrix to underst
 
 Now that you have chosen a journey type:
 
+* **[Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** — Not sure whether Journeys or Campaigns is the right tool? Step back up to the higher-level decision first
 * **[Create your first journey](journey-gs.md)** — Step-by-step guide from entry to publish
 * **[Learn about the journey designer](using-the-journey-designer.md)** — Design your journey canvas
 * **[Profile entrance in journeys](entry-management.md)** — Entry rules, re-entrance, and throughput by type
@@ -221,15 +225,14 @@ For complete understanding, this information should be combined with the documen
 * Profile re-entrance in Read Audience journeys is limited to once per execution by default; use Force reentrance on recurrence on scheduled runs to allow profiles to re-enter on the next execution
 * The Read Audience activity is only available as a journey entry in Read Audience and Business event journeys — not in Unitary event or Audience Qualification entry journeys
 * Audience Qualification and Read Audience journeys cannot contain a Jump activity, and cannot be the target of a Jump activity from another journey
-* Audience Qualification journeys require a streaming-evaluated audience for real-time entry; batch-evaluated audiences cause entry delays of up to 24 hours
+* Audience Qualification journeys require a streaming-evaluated audience. Starting August 2026, batch-evaluated audiences cannot be used in an Audience Qualification node — see the [migration guide](aq-batch-audiences-migration.md)
 * Unitary event and Audience Qualification journeys share a 5,000 TPS throughput limit at the organization level; Read Audience journeys support up to 20,000 TPS per sandbox
-* Simulation is supported for most journey types but not Business event entry; see Simulation limitations for node-level restrictions
 * A profile already present in a journey cannot re-enter the same version of that journey, regardless of re-entrance configuration
 
 **Terminology:**
 
 * Canonical name: Unitary event journey — variants: event-triggered journey, unitary journey
-* Canonical name: Read Audience journey — variants: batch journey, segment trigger journey, read segment journey
+* Canonical name: Read Audience journey — variants: batch journey
 * Canonical name: Audience Qualification journey — variants: audience qualification event journey
 * Canonical name: Business event journey — variants: business event-triggered journey
 * Do not confuse: "Read Audience journey" ≠ "Audience Qualification journey" — Read Audience processes all audience members in batch on schedule; Audience Qualification responds to individual membership changes in real time (streaming audiences only for immediate entry)
@@ -245,7 +248,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I add a Read Audience activity to a Unitary event journey?** — No; the Read Audience activity is only available as journey entry in Read Audience and Business event journeys.
 * **Q: Can I use a Jump activity in a Read Audience journey?** — No; journeys starting with a Read Audience or Audience Qualification activity cannot contain a Jump activity and cannot be the target of a Jump from another journey.
 * **Q: Can I welcome new app users with an Audience Qualification journey?** — Yes, if entry is driven by a streaming audience (for example, when a profile joins a new-user segment); a signup unitary event journey is also a common pattern.
-* **Q: My Audience Qualification journey is not triggering in real time. Why?** — Audience Qualification journeys require a streaming-evaluated audience. If the audience is batch-evaluated (e.g., a daily snapshot), entry is delayed until the next evaluation window, which can be up to 24 hours.
+* **Q: My Audience Qualification journey is not triggering in real time. Why?** — Audience Qualification journeys require a streaming-evaluated audience. Using a batch-evaluated audience is deprecated and will be blocked from August 2026. [See the migration guide](aq-batch-audiences-migration.md)
 * **Q: What is the throughput difference between Unitary event and Read Audience journeys?** — Unitary event journeys share a 5,000 TPS limit with Audience Qualification journeys at the organization level. Read Audience journeys support up to 20,000 TPS per sandbox, making them better suited for large-scale batch campaigns.
 
 +++
