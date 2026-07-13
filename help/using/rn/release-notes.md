@@ -98,11 +98,11 @@ The following usability improvements were released in July 2026.
 
 #### Journeys
 
-* **Journey canvas capabilities** - The journey canvas is built to scale with your most complex use cases, delivering improved performance for large journeys, automatic layout for better readability, and a guided authoring experience.
+* A **new user interface** has been introduced for the journey canvas, delivering improved performance for large journeys, automatic layout for better readability, and a guided authoring experience.
 
   ![](../building-journeys/assets/journey-new-canvas.png)
 
-   To switch to the new canvas, click the **[!UICONTROL New experience]** button. This setting is saved at the journey level, so the journey reopens in the new experience by default. To revert, click **[!UICONTROL Old experience]**. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+   To switch to the new UI, click the **[!UICONTROL New experience]** button. This setting is saved at the journey level, so the journey reopens in the new experience by default. To revert, click **[!UICONTROL Old experience]**. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
 
   ![](../building-journeys/assets/journey-new-experience-switch.png){width="50%" align="center" zoomable="yes"}
 
