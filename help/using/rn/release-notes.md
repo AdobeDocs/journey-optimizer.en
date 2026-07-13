@@ -81,6 +81,32 @@ topic_v2:
 
   Availability date: July 9, 2026
 
+
+### Usability improvements {#july-26-usability}
+
+The following usability improvements were released in July 2026.
+
+#### Content management
+
+* **Quick launch shortcuts in Fragments inventory** - You can now quickly access common actions from the Fragments list using the **[!UICONTROL More actions]** button. Available shortcuts include editing the fragment, opening its details, and discarding the draft version. [Learn more](../content-management/manage-fragments.md#quick-launch-fragments)
+
+  ![](../content-management/assets/fragment-quick-launch.png)
+
+* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. For email templates, additional shortcuts let you edit the subject line and email body, view or send a proof, run a spam report, and render the email. [Learn more](../content-management/access-content-templates.md#quick-launch-templates)
+
+  ![](../content-management/assets/content-template-quick-launch.png)
+
+#### Journeys
+
+* **Journey canvas capabilities** - The journey canvas is built to scale with your most complex use cases, delivering improved performance for large journeys, automatic layout for better readability, and a guided authoring experience.
+
+  ![](../building-journeys/assets/journey-new-canvas.png)
+
+   To switch to the new canvas, click the **[!UICONTROL New experience]** button. This setting is saved at the journey level, so the journey reopens in the new experience by default. To revert, click **[!UICONTROL Old experience]**. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+
+  ![](../building-journeys/assets/journey-new-experience-switch.png){width="50%" align="center" zoomable="yes"}
+
+
 ## June '26 release notes {#june-26-rn}
 
 ### Journeys {#june-26-journeys}
