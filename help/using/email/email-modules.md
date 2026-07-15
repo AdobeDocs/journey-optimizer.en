@@ -31,11 +31,11 @@ Unlike [content components](content-components.md), which are empty placeholders
 >
 >Modules are not fragments. They exist only within the email you are designing and cannot be shared across other emails or messages. To share reusable content across multiple emails, use [visual fragments](use-visual-fragments.md) instead.
 
-## Access modules {#access-modules}
+## Access and insert modules {#access-modules}
 
-Modules are available in the **[!UICONTROL Modules]** tab in the Email Designer left pane.
+To display and leverage the available modules in the Email Designer, follow the steps below.
 
-1. Open your email in the Email Designer.
+1. Open your email in the [Email Designer](get-started-email-design.md).
 
 1. In the left pane, click the **[!UICONTROL Modules]** tab.
 
@@ -45,113 +45,36 @@ Modules are available in the **[!UICONTROL Modules]** tab in the Email Designer 
 
 1. Click the **>** arrow next to a category to expand it and view available layout variants.
 
-## Insert a module {#insert-module}
-
-1. In the **[!UICONTROL Modules]** tab, locate the module you want to use.
-
-1. Drag and drop it directly onto your email canvas.
+1. Locate the module variant you want to use, then drag and drop it directly onto your email canvas.
 
     ![](assets/email_designer_modules_drag.png)
 
-1. The module is inserted with its default content. Click any element on the canvas to start editing.
+1. The module is inserted with its default content. Click any element on the canvas to start editing content inline. Click any text area to type directly, or click an image to replace it using your asset library.
 
-1. Use the **[!UICONTROL Settings]** and **[!UICONTROL Styles]** tabs in the right pane to adjust properties and styling.
+    >[!NOTE]
+    >
+    >When email themes are applied to your content, theme styles are inherited automatically by modules, ensuring brand consistency across your design. [Learn more about email themes](apply-email-themes.md)
+
+1. Use the **[!UICONTROL Settings]** and **[!UICONTROL Styles]** tabs in the right pane to adjust properties and [styling](get-started-email-style.md), just as you would for any other email element.
+
+    ![](assets/email_designer_modules_settings.png){width="70%"}
+
+1. You can also add [content components](content-components.md) directly to the module. Switch to the **[!UICONTROL Components]** tab in the left pane, then drag and drop a component into the module. The component inherits the module's styling by default, but you can override it as needed.
+
+    ![](assets/email_designer_modules_components.png){width="60%"}
 
 ## Available modules {#available-modules}
 
-The following module categories are available out of the box. Each category may include multiple layout variants.
+The following module categories are available out of the box. Multiple layout variants are available for each module — for example, single-column, two-column, and three-column grids. Expand the module categories to select the variant that fits your layout.
 
-### Headers {#header-module}
-
-Use **[!UICONTROL Headers]** modules to add a branded email header with your logo, navigation links, and introductory text.
-
-**Editable properties:**
-
-| Property | Description |
+| Module | Description |
 |---|---|
-| Logo | Brand logo image. |
-| Title | Main header title. |
-| Headline | Secondary heading or tagline. |
-| Menu items | Navigation links displayed in the header bar. |
+| **[!UICONTROL Headers]** | Branded email header with your logo, navigation links, and introductory text. |
+| **[!UICONTROL Hero]** | Full-width banner section — ideal for promotions, announcements, or campaign openers. |
+| **[!UICONTROL Testimonial]** | Customer quotes or social proof in a consistent, styled format. |
+| **[!UICONTROL Cards]** | Products, articles, or content items in single- or multi-column grid layouts. |
+| **[!UICONTROL Teams]** | Team members, authors, or speakers with a photo, name, and role. |
+| **[!UICONTROL Footers]** | Complete email footer with navigation links, social media icons, legal copy, and required opt-out and mirror-page links. |
 
-### Hero {#hero-module}
 
-Use **[!UICONTROL Hero]** modules to create an impactful full-width banner section — ideal for promotions, announcements, or campaign openers.
 
-**Editable properties:**
-
-| Property | Description |
-|---|---|
-| Image | Background or foreground hero image. |
-| Title | Main headline. |
-| Text | Supporting copy or description. |
-| Button | Call-to-action button with a configurable URL. |
-
-### Testimonial {#testimonial-module}
-
-Use **[!UICONTROL Testimonial]** modules to highlight customer quotes or social proof in a consistent, styled format.
-
-**Editable properties:**
-
-| Property | Description |
-|---|---|
-| Image | Author photo or avatar. |
-| Quote | Testimonial text. |
-| Author | Author name. |
-| Role | Author job title or company. |
-
-### Cards {#cards-module}
-
-Use **[!UICONTROL Cards]** modules to display products, articles, or content items in single- or multi-column grid layouts.
-
-**Editable properties:**
-
-| Property | Description |
-|---|---|
-| Image | Product or content image. |
-| Title | Card heading or product name. |
-| Text | Short description or promotional copy. |
-| Button | Call-to-action button with a configurable URL. |
-
->[!NOTE]
->
->Multiple layout variants are available for this module — for example, single-column, two-column, and three-column card grids. Expand the **[!UICONTROL Cards]** category to select the variant that fits your layout.
-
-### Teams {#teams-module}
-
-Use **[!UICONTROL Teams]** modules to introduce team members, authors, or speakers with a photo, name, and role.
-
-**Editable properties:**
-
-| Property | Description |
-|---|---|
-| Image | Team member photo. |
-| Name | Full name. |
-| Role | Job title or department. |
-
-### Footers {#footer-module}
-
-Use **[!UICONTROL Footers]** modules to add a complete email footer with navigation links, social media icons, legal copy, and required opt-out and mirror-page links.
-
-**Editable properties:**
-
-| Property | Description |
-|---|---|
-| Menu items | Footer navigation links. |
-| Social | Social media icons with configurable URLs. |
-| Text | Legal copy or general footer text. |
-| Unsubscribe link | Opt-out link (required for compliance). |
-| Mirror page link | Link to the online version of the email. |
-| Other link | Additional custom link. |
-
-## Customize a module {#customize-module}
-
-After dropping a module onto your canvas:
-
-* **Edit content inline** — click any text area to type directly, or click an image to replace it using your asset library.
-* **Adjust styles** — use the **[!UICONTROL Styles]** tab in the right pane to change colors, fonts, padding, borders, and spacing.
-* **Edit the underlying HTML** — for full structural control, switch to the [advanced HTML editor](email-expert-mode.md).
-
->[!NOTE]
->
->When email themes are applied to your content, theme styles are inherited automatically by modules, ensuring brand consistency across your design. [Learn more about email themes](apply-email-themes.md)
