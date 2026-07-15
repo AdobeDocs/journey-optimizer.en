@@ -402,7 +402,6 @@ This page walks through a cart abandonment email use case using three helper fun
 >[!TAB Terminology]
 
 * **Canonical name:** cart abandonment email — variants: cart abandonment use case
-* **Canonical name:** cart abandonment email — variants: cart abandonment use case
 * **Do not confuse:** `context.journey.events.event_ID.productListItems` (event-sourced array, accessed via Contextual attributes) ≠ `profile.*` attributes (profile-sourced, always available)
 
 >[!TAB Guardrails & Limitations]
