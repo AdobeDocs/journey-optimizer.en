@@ -43,11 +43,11 @@ subfeature_v2:
 >abstract="A fallback offer is the default offer displayed when an end user is not eligible for any of the personalized offers."
 
 >[!CONTEXTUALHELP]
->id="ajo_decisioning_fallback_offer_details "
+>id="ajo_decisioning_fallback_offer_details"
 >title="Fallback offer details"
 >abstract="Specify the fallback offer's name. You can also associate one or several existing collection qualifier(s) to it, allowing you to search and organize the Offer Library more easily."
 
-The fallback offer is sent to customers if they are not eligible for other offers. The steps to create a fallback offer consist in creating one or several representations, like when creating an offer.
+The fallback offer is sent to customers if they are not eligible for other offers. The steps to create a fallback offer consist in creating one or several representations, like when creating an offer. 
 
 ➡️ [Discover this feature in video](#video)
 

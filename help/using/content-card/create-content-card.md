@@ -37,6 +37,8 @@ This page explains how to author a content card and define its content, either a
 >[!IMPORTANT]
 >
 >By default, the close button hides the card. To add more functionality, you can manually define dismissal or disqualification rules.
+>
+>Disqualification rules require Web SDK version 2.28.0 or later.
 
 >[!BEGINTABS]
 
