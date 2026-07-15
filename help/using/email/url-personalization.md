@@ -68,9 +68,15 @@ Journey Optimizer also supports personalizing the **entire** URL or the **base d
 <a href="https://{{profile.social.baseUrl}}/profile" />
 ```
 
->[!IMPORTANT]
+>[!CAUTION]
 >
->To enable complete or base URL personalization, contact Adobe and provide your list of accepted domains. This is required to help prevent unsafe redirects.
+>* To enable complete or base URL personalization, contact Adobe and provide your list of accepted domains. This is required to help prevent unsafe redirects.
+>
+>* Dynamically generated URLs — where the entire URL or base domain resolves from a profile attribute at send time — have a known tracking limitation: Journey Optimizer cannot reliably track clicks for these links, and **click data may not appear in journey or campaign reports**. This occurs because the tracking redirect is applied at design time, before the final URL is known. When the resolved value differs per recipient, the redirect chain breaks and clicks go unrecorded. Additionally, the resolved URL must start with `http` or `https` for every recipient — if it does not, tracking is silently skipped for that link. To maintain reliable click tracking, use one of the following approaches:
+>
+>   * Use a fixed base URL and append personalized parameters only (for example, `https://www.example.com/page?uid={{profile.person.crmid}}`).
+>   
+>   * Pre-generate a personalized URL per recipient, store it as a profile attribute, and reference it in your email content.
 
 ## Personalize URL tracking parameters {#personalize-url-tracking-parameters}
 
