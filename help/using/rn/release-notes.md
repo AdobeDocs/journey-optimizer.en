@@ -54,6 +54,33 @@ topic_v2:
 >
 >Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
 
+## July '26 updates {#july-26-updates}
+
+### New capabilities {#july-26-new-capabilities}
+
+<table>
+<thead>
+<tr>
+<th><strong>File-based targeting in Orchestrated campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Orchestrated campaigns now support loading a <strong>CSV or TXT file</strong> directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. Rows that fail validation are rejected and logged before the campaign runs, keeping the audience clean without manual pre-processing. This is particularly suited for ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical.</p>
+<p>For more information, refer to the <a href="../orchestrated/activities/load-file.md">detailed documentation</a>.</p>
+<p> Availability date: July, 6 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Improvements {#july-26-improvements}
+
+* **AJO MCP server new tools** - The [!DNL Adobe Journey Optimizer] MCP server now exposes five additional read-only **channel configuration tools**, enabling you to query channel configurations, supporting resources, and marketing actions directly from your AI assistant. You can now use **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
+
+  Availability date: July 9, 2026
+
 ## June '26 release notes {#june-26-rn}
 
 ### Journeys {#june-26-journeys}
@@ -138,6 +165,9 @@ The following capabilities and improvements have been added to journeys in this 
 </tbody>
 </table>
 
+
+* [!BADGE Deprecation]{type=Negative} **Batch audiences deprecated in Audience Qualification node** - Starting **August 2026**, Journey Optimizer will block publication for any journey using a batch audience in an **Audience Qualification** node. A validation warning is already surfaced in the journey canvas. Existing live journeys are not affected. New, draft, and duplicated journeys that include this configuration must be updated before August 2026. Use a streaming audience in the Audience Qualification node, or switch to a **Read Audience** activity. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
+
 * **Stop a paused journey directly** - You can now stop a journey directly from the **Paused** state. Previously, a paused journey had to be resumed to **Live** before it could be stopped. [Read more](../building-journeys/journey-pause.md#stop-close-paused)
 
   Availability date: June 18-22, 2026
@@ -160,6 +190,7 @@ The following capabilities and improvements have been added to journeys in this 
 
   Availability date: June 18, 2026. This capability is being gradually rolled out to all regions over the next few days.
 
+
 +++ Coming soon — **Information below is subject to change.**
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the **journey header** next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed.
@@ -170,30 +201,9 @@ The following capabilities and improvements have been added to journeys in this 
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.
 
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>File-based targeting in Orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Orchestrated campaigns now support loading a <strong>CSV or TXT file</strong> directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. Rows that fail validation are rejected and logged before the campaign runs, keeping the audience clean without manual pre-processing. This is particularly suited for ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p> Availability date: June 30, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
 * **Loop-based personalization for relational data** - The personalization editor now supports a Loop block that iterates over relational collections, such as orders, accounts, or bookings, and renders one content block per record inside a single email or SMS. Collections are configured through the data picker using personalization tokens, with no expression writing required. [Read more](../orchestrated/add-personalization.md#enrichment-collections)
 
-  Availability date: Late June, 2026
-
-+++
+  Availability date: June 26, 2026
 
 ### Decisioning {#june-26-decisioning}
 
@@ -221,14 +231,6 @@ The following capabilities and improvements have been added to Decisioning in th
 
   Availability date: June 18, 2026
 
-+++ Coming soon — **Information below is subject to change.**
-
-* **Dynamic item attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items.
-
-  Availability date: Late June, 2026
-
-+++
-
 ### Content management {#june-26-content}
 
 The following capabilities and improvements have been added to content management in this release.
@@ -255,91 +257,6 @@ The following capabilities and improvements have been added to content managemen
 </table>
 
 
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Simulate content variations — updated experience and AI variant generation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Two updates are now available to the <strong>Simulate content</strong> workflow:</p>
-<ul>
-<li><strong>New default path</strong> — Clicking <strong>Simulate content</strong> now opens the <strong>Simulate content variations</strong> experience by default. From a single screen, you can add sample input manually or from a CSV/JSON file, reuse simulated users, preview rendering, and send proofs. To preview with Adobe Experience Platform test profiles, send proofs with test profile data, or check email inbox rendering and spam reports, click <strong>Simulate content</strong>, then select <strong>Simulate content (AEP profiles)</strong> from the dropdown.</li>
-<li><strong>AI-generated content variants</strong> — In the <strong>Simulate content variations</strong> experience, click <strong>Generate</strong> to use AI to automatically create content variants. The system analyzes your message, detects personalization fields and conditional branches, and fills in realistic values so you can validate rendering without building every variant by hand.</li>
-</ul>
-<p>For more information, refer to the <a href="../test-approve/simulate-sample-input.md">detailed documentation</a>.</p>
-<p>Availability date: Late June, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Improvements to Adobe Experience Manager Content Fragments in Journey Optimizer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>This release brings several enhancements to make <strong>Adobe Experience Manager Content Fragments</strong> more usable, more governable, and more production-ready within Journey Optimizer authoring workflows:</p>
-<ul>
-<li>Journey Optimizer now supports fetching Content Fragments from multiple Adobe Experience Manager configurations, including author, publish and authenticated publish tiers.</li>
-<li>Once a fragment is selected, its context is preserved throughout the message, enabling authors to reuse fragment fields across content blocks without reselecting.</li>
-<li>A new dedicated Content Fragments listing page has been introduced in Journey Optimizer for improved lifecycle management; users can identify out-of-sync fragments and trigger manual syncs to stay current.</li>
-<li>Locale and variation support now allows marketers to work with alternate versions of the same Content Fragment more deliberately.</li>
-<li>You now have flexibility in how Adobe Journey Optimizer accesses your Adobe Experience Manager content. This release introduces the ability to <strong>switch the source repository</strong> for Content Fragments used in your journeys and campaigns.</li>
-<li>Now compatible with <b>Managed Services</b>, you can view, access, and use Adobe Experience Manager Content Fragments directly in Journey Optimizer for personalization. Simply add your Adobe Experience Manager Managed Services repository URL in the configuration settings as a one-time setup.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>AI assistant integration with Adobe Experience Manager Asset Essentials</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The AI Assistant now automatically fetches <b>brand-approved images</b> directly from your Adobe Experience Manager Assets when generating Emails, Web pages, and Push notifications. This eliminates the need to manually search the Assets or rely on generic AI fallbacks, ensuring every visual is perfectly accurate and brand-compliant.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>AI Assistant for content generation enhancements</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>This release improves the <strong>AI Assistant</strong> content generation experience with stronger image editing, more reliable brand extraction, and content authenticity support in the image flow:</p>
-<ul>
-<li><strong>AI image editing</strong> is now available in the image generation flow, including Firefly third-party model support, so you can refine source images without leaving the assistant.</li>
-<li><strong>Brand signal extraction</strong> delivers higher-quality results. When selected pages lack sufficient signal, improved fallbacks now populate colors, typography, writing guidelines, and other brand attributes.</li>
-<li><strong>Web-based brand extraction</strong> is more reliable. Improved timeout handling helps prevent slow pages, popups, and cookie banners from blocking extraction.</li>
-<li><strong>Content authenticity (CAI)</strong> is now supported in the image flow. This release also fixes reference image upload issues and improves handling for images without an existing C2PA manifest.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-
-+++
-
-
 ### Email channel {#june-26-email}
 
 The following improvements have been added to the email channel in this release.
@@ -355,6 +272,25 @@ The following improvements have been added to the email channel in this release.
 <table>
 <thead>
 <tr>
+<th><strong>Email size optimization</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
+<p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
+<p><img src="assets/do-not-localize/email-size-optimization.gif"></p>
+<p>For more information, refer to the <a href="../email/create-email.md#optimize-html-size">detailed documentation</a>.</p>
+<p>Availability date: June 26, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Rich text in editable fields for fragments</strong><br/></th>
 </tr>
 </thead>
@@ -365,7 +301,7 @@ The following improvements have been added to the email channel in this release.
 <p>For example, when using the Text component as an editable field in the Email Designer, you can directly format the content (for example, bold and italics) and insert hyperlinks.</p>
 <p><img src="assets/do-not-localize/rich-text-editable-fields.gif"></p>
 <p>For more information, refer to the <a href="../content-management/customizable-fragments.md#rich-text-visual">detailed documentation</a>.</p>
-<p>Availability date: Late June, 2026</p>
+<p>Availability date: June 19, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -383,6 +319,7 @@ The following improvements have been added to the email channel in this release.
 <p>Journey Optimizer now includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.</p>
 <p>Checks cover unsupported elements such as <code>&lt;script&gt;</code> and <code>&lt;base&gt;</code> tags, empty divs that can break layout in Microsoft Outlook, HTML meta refresh tags, and CSS or HTML size thresholds that trigger rendering failures in Gmail.</p>
 <p>Results are surfaced as errors, warnings, or informational notices directly in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the editor.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p><img src="assets/do-not-localize/content-check.gif"></p>
 <p>For more information, refer to the <a href="../email/content-check.md">detailed documentation</a>.</p>
 <p>Availability date: June 18, 2026</p>
@@ -394,43 +331,6 @@ The following improvements have been added to the email channel in this release.
 * **Enhanced Image to HTML converter** - A new version of the Image to HTML converter feature is now available, bringing improved accuracy for HTML generation. This update leverages higher-tier LLM models to deliver more precise and reliable HTML output from image inputs.
 
   Availability date: June 18, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Enable email size reduction</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now includes an option to reduce the size of your email's HTML by stripping unnecessary whitespace, comments, and redundant code — without affecting how the email renders.</p>
-<p>This can improve deliverability by avoiding size thresholds that some email providers use to flag or reject messages and may reduce load time for recipients.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Modules in the Email Designer</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The Email Designer now includes a library of ready-to-use layout modules — such as headers, product cards, information blocks, and footers — that you can drag and drop directly into your email canvas.</p>
-<p>Each module comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
-<p>Availability date: Late June, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-+++
 
 ### Content & Integrations {#june-26-integration}
 
@@ -461,6 +361,7 @@ The following capabilities and improvements are coming to content management and
 </tbody>
 </table>
 
+<!--
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -500,6 +401,19 @@ The following capabilities and improvements are coming to content management and
 </table>
 
 +++
+-->
+
+### Reporting {#june-26-reporting}
+
+The following improvements have been added to reporting in this release.
+
+* **New Estimated Click Metrics for Email Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel reports.
+
+  * **Estimated CTR** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
+  * **Estimated CTOR** (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
+  
+  Availability date: June 25, 2026
 
 ### Administration {#june-26-administration}
 
@@ -513,7 +427,7 @@ The following improvements have been added to administration and data management
 
   Availability date: June 1, 2026
 
-
+<!--
 +++ Coming soon — **Information below is subject to change**
 
 * **Web Application Firewall (WAF) IP whitelisting** - Adobe Journey Optimizer now supports Web Application Firewall (WAF) IP whitelisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured WAF infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the WAF layer, ensuring that security policies defined in tools such as Imperva are consistently applied. This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their AJO-hosted landing pages.
@@ -521,7 +435,7 @@ The following improvements have been added to administration and data management
   Availability date: Late June, 2026
 
 +++
-
+-->
 
 ### Mobile messaging (SMS, MMS, RCS & LINE) {#june-26-mobile}
 
@@ -541,11 +455,9 @@ The following improvements are coming to mobile messaging in this release.
 
 ### Usability improvements {#june-26-usability}
 
-+++ Coming soon — **Information below is subject to change.**
+* **Folders for Journeys** - You can now organize your journeys into **folders** to improve navigation and management in the interface. [Read more](../building-journeys/journey-ui.md#journeys-folders)
 
-* **Folders for Journeys & Campaigns** - You can now organize your journeys and campaigns into **folders** to improve navigation and management in the interface.
-
-+++
+  Availability date: June 30, 2026
 
 <!--
 +++ Coming soon — **Information below is subject to change.**

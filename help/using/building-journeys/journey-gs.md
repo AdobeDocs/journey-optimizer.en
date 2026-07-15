@@ -93,13 +93,13 @@ What you need to configure before building depends on how your journey is trigge
 
 * **Event-based entry** — The journey is triggered in real time when an individual performs an action, such as a purchase or a sign-up. [Configure an event](../event/about-events.md) to define the trigger and the data it carries.
 
-**Not sure which entry point to use?** The table below maps the most common use cases to the right starting activity.
+**Not sure which entry point to use?** The table below maps the most common use cases to the right starting activity. Learn more in the [Journey type selection matrix](journey-types-selection.md).
 
 | Entry point | Use when… | Profiles enter |
 |---|---|---|
-| **[Read Audience](read-audience.md)** | You want to send a scheduled or recurring message to a defined set of profiles (newsletters, promotions, onboarding series). | All profiles from a batch audience, at once or on a schedule. |
+| **[Read Audience](read-audience.md)** | You want to send a scheduled or recurring message to a defined set of profiles (newsletters, promotions, onboarding series). | All profiles from a batch audience, at once or on a schedule. [Learn about audience exports and timing](https://experienceleague.adobe.com/en/docs/experience-platform/run-and-operate/overview){target="_blank"} |
 | **[Audience Qualification](audience-qualification-events.md)** | You need to react in real time when a profile enters or exits an audience (loyalty tier upgrade, churn risk flag). | One profile at a time, as soon as they qualify in a streaming audience. |
-| **Unitary event** | A profile action triggers an immediate response (purchase confirmation, form submission, app login). | One profile at a time, in real time. |
+| **Unitary event** | A profile action triggers an immediate response (cart abandonment, form submission, app login). | One profile at a time, in real time. |
 | **[Business event](../event/about-creating-business.md)** | A non-profile event affects multiple people at once (flight cancellation, stock replenishment, breaking news alert). | All profiles associated with the event, via an automatic Read Audience step. |
 
 The following elements are optional, but may be required depending on your use case:
@@ -124,13 +124,15 @@ To create a multi-step journey, follow these steps:
 
 1. Edit the journey's configuration pane to define the name of the journey and set its properties. Learn how to set your journey's properties on [this page](journey-properties.md).
 
-   >[!TIP]
-   >
-   >**Which journey type should I choose?** If you are new to Journey Optimizer, start with an audience-based journey using a **[!UICONTROL Read Audience]** activity — it requires no prior event configuration and is the easiest way to get familiar with the canvas. For real-time, event-triggered experiences (for example, reacting to a purchase or a form submission), configure an event first and use an event-based entry. Ready to go deeper? [Discover all journey types and their entry rules](entry-management.md#types-of-journeys).
-
     ![Journey properties panel with settings and configuration options](assets/jo-properties.png)
 
 You can then start designing your journey.
+
+>[!TIP]
+>
+>**Which journey type should I choose?** 
+>
+>If you are new to Journey Optimizer, start with an audience-based journey using a **[!UICONTROL Read Audience]** activity — it requires no prior event configuration and is the easiest way to get familiar with the canvas. For real-time, event-triggered experiences (for example, reacting to a purchase or a form submission), configure an event first and use an event-based entry. Ready to go deeper? [Discover all journey types and their entry rules](entry-management.md#types-of-journeys).
 
 ## Design the journey {#jo-design}
 

@@ -27,16 +27,8 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
 topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-    internal-label: Reporting
   - id: c13ff12d-60f1-49cd-833a-d43359628223
     internal-label: Mobile messaging
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-    internal-label: Customer journeys
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-    internal-label: Privacy
 ---
 # Get started with Mobile messages {#get-started-sms}
 
@@ -46,15 +38,15 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
->[!IMPORTANT]
->
->If this is your first time creating mobile messages, make sure the Mobile message channel has been configured. [Learn more](mobile-configuration.md)
-
 Use [!DNL Journey Optimizer] to send mobile messages to your customers across three channels, **SMS**, **MMS**, and **RCS**, from a single SMS/MMS/RCS editor where you can create, personalize, and preview your content.
 
 * **SMS (Short Message Service)**: Send text-only messages of up to 160 characters, supported across all mobile devices.
 * **MMS (Multimedia Message Service)**: Enrich your messages with images, videos, audio clips, and GIFs, plus up to 1,600 characters of text. [Learn more about MMS limitations](../start/guardrails.md#sms-guardrails)
 * **RCS (Rich Communication Services)**:Deliver branded, interactive content directly in your customers' native messaging app, with no additional app download required.
+
+>[!IMPORTANT]
+>
+>If this is your first time creating mobile messages, make sure the Mobile message channel has been configured. [Learn more](mobile-configuration.md)
 
 Mobile messages can be created and sent in a journey or in a campaign using the Mobile message action:
 
@@ -62,6 +54,26 @@ Mobile messages can be created and sent in a journey or in a campaign using the 
 
 * In a **Campaign**:Create a campaign, select Mobile message as your action, define basic settings, then edit the message content. Learn how to create [an action campaign](../campaigns/campaign-action.md#action-campaign-action) | [an API-triggered campaign](../campaigns/api-triggered-campaigns.md) | [an orchestrated campaign](../orchestrated/create-orchestrated-campaign.md#create)
 
+## Use cases {#use-cases}
+
+SMS, MMS, and RCS work best when you need to reach users reliably, regardless of whether they have your app installed or an internet connection available.
+
+| Benefit | Why | Example use cases |
+| --- | --- | --- |
+| Maximum reach and immediacy | No app or internet connection required to receive the message | Reaching users without a smartphone app installed |
+| Guaranteed visibility | SMS has open rates above 90% | OTP codes, appointment reminders, delivery notifications |
+| Rich content via MMS/RCS | Adds images, video, and interactive elements beyond plain text | Branded promotions, product catalogs |
+| Reach users without app access | Works for recipients who have not installed or opened your app | Re-engaging lapsed app users, onboarding non-app customers |
+| High-urgency CTAs | Delivered directly to a device users check frequently | Flash sales, fraud alerts, service outage notices |
+| Layering with other channels | Complements push, email, and in-app messaging for broader coverage | Multi-channel journeys with SMS as a fallback channel |
+
+## When not to use {#when-not-to-use}
+
+SMS, MMS, and RCS are not always the most efficient or appropriate choice. Consider another channel in the following situations:
+
+* Cost is a concern at high sending volumes, since SMS and MMS are billed per message and per-message costs add up quickly at scale
+* The content is long-form or complex and better suited to email, which supports richer formatting and longer text
+* Recipients have not explicitly opted in, which carries legal and compliance risk in most regions and messaging regulations
 
 ## Key features {#key-features}
 
@@ -97,7 +109,7 @@ The following prerequisites are required to use RCS in Journey Optimizer:
 
 ## Additional resources {#additional-resources}
 
-Browse the topics below to learn more about Mobile messaging in Journey Optimizer.
+Browse the topics below to learn more about Mobile messaging in Journey Optimizer. See also the [SMS/MMS/RCS overview](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/mobile-learning-hub/mobile-channels-overview/sms-mms-rcs-overview){target="_blank"} in the Mobile Learning Hub for more use cases and best practices.
 
 +++Configuration guides
 

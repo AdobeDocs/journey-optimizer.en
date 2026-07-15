@@ -18,7 +18,7 @@ Managing your journeys in Adobe Journey Optimizer is all about giving you the to
 
 Browse & Filter Your Journeys
 
-Learn how to navigate, filter, and manage journeys effectively, including journey dashboard metrics, calendar views, and duplication processes.
+Learn how to navigate, filter, organize journeys in folders, and manage journeys effectively, including journey dashboard metrics, calendar views, and duplication processes.
 
 [Explore Journey Management](../using/building-journeys/journey-ui.md)
 :::

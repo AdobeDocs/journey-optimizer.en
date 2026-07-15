@@ -73,6 +73,8 @@ Send-Time Optimization is only available for Journey Optimizer's built-in Email 
 >
 >* Send-Time Optimization only applies to **Email** and **Push notification** channels.
 >
+>* Send-Time Optimization is supported in the following AEP Hub regions: **VA7, NLD2, AUS5, CAN2, GBR9, IND2, CHE2**. These are Adobe deployment region codes, contact your Adobe representative if you are unsure which region your organization uses.
+>
 
 ## Use send-time optimization{#use-send-time-optimization}
 
@@ -92,7 +94,7 @@ Before starting, csonsider which messages are a good fit before you turn it on. 
 
     For best results, optimize most emails for **Clicks**. Choose **Opens** when the message is informational and not meant to drive a specific action.
 
-1. For both Email and Push messages, set **[!UICONTROL Send within next]** to the maximum number of hours (1–168) the system will wait before sending the message.
+1. For both Email and Push messages, set **[!UICONTROL Send within next]** to the maximum number of hours (2–100) the system will wait before sending the message.
 
     For best results, choose a value between 6 and 24 hours. A lower value reduces the number of available send times and can limit the benefit of Send-Time Optimization. A higher value may mean the message is outdated or less relevant by the time it is sent.
 
@@ -221,14 +223,14 @@ For complete understanding, this information should be combined with the documen
 * **Journey AI**: Adobe's AI services powering Send-Time Optimization within Journey Optimizer *(product-specific)*
 * **Exploration send time**: A randomly selected send time (used for 5% of sends) to test different times and improve model accuracy *(product-specific)*
 * **Optimized send time**: A model-predicted send time selected to maximize click or open rates (used for 95% of sends) *(product-specific)*
-* **Send within next**: The maximum number of hours (1–168) the system will wait before sending the message to a given profile *(product-specific)*
+* **Send within next**: The maximum number of hours (2–100) the system will wait before sending the message to a given profile *(product-specific)*
 
 **Guardrails:**
 * Send-Time Optimization must be enabled by Adobe for the organization; contact Adobe Customer Care or your Adobe representative to activate it.
 * Send-Time Optimization only applies to Email and Push notification channels within Journeys; it is not available for Campaigns or custom actions.
 * The organization must have used Email or Push actions in Journey Optimizer for at least 30 days before Send-Time Optimization produces meaningful results.
 * Do not use Send-Time Optimization for urgent or time-sensitive operational messages (e.g., order confirmations, password resets, flight gate changes).
-* Maximum wait time range is 1–168 hours; recommended range is 6–24 hours for best results.
+* Maximum wait time range is 2–100 hours; recommended range is 6–24 hours for best results.
 * Model scores are stored in profile attributes at `_experience.intelligentServices.journeyAI.sendTimeOptimization` and are not human-readable.
 * Models are trained weekly initially, then retrained and rescored monthly after 16 weeks.
 

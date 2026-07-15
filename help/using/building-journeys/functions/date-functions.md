@@ -445,6 +445,12 @@ Returns a dateTime.
 
 Returns a dateTime exactly 2 hours ago.
 
+`nowWithDelta(1, "months", "Asia/Tokyo")`
+
+When evaluated on 2026-01-31, returns 2026-02-28T...; when evaluated on 2026-05-31, returns 2026-06-30T...
+
+`nowWithDelta()` uses calendar-month arithmetic. If the target month has fewer days than the current day-of-month, the result is normalized to the last valid day of that month. The function does not roll over into the following month.
+
 +++
 
 ## setHours {#setHours}
@@ -610,5 +616,6 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I get the current time offset by 2 hours in the past?** — Use `nowWithDelta(-2, "hours")`.
 * **Q: What does `updateTimeZone` do differently from `setHours`?** — `updateTimeZone` keeps the same instant in time but expresses it in a different timezone, while `setHours` actually changes the hour component of the datetime value.
 * **Q: Can the timezone parameter in `nowWithDelta` be a profile field?** — No, the timezone ID must be a string constant; field references are not supported.
+* **Q: What happens when `nowWithDelta()` is used with months and the current date is a month-end date?** — The function uses calendar-month arithmetic and normalizes the result to the last valid day of the target month. For example, adding 1 month to January 31 returns February 28 (not March 3).
 
 +++
