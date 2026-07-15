@@ -59,7 +59,7 @@ On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]**
 
     >[!NOTE]
     >
-    >Pre-filled execution email and phone fields come from the email address and phone number on your Adobe IMS user profile.
+    >Pre-filled execution email and phone fields come from values previously used in journey simulation and cached in your browser.
 
     ![Quick Simulation Update values step with wait time override and proof email and phone fields](assets/quick-simulation-3.png)
 
@@ -93,7 +93,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
     >[!NOTE]
     >
-    >The email and phone fields are pre-filled from your Adobe IMS user profile.
+    >The email and phone fields are pre-filled from values previously used in journey simulation and cached in your browser.
 
     ![Generate simulated users dialog with execution email and phone fields and Generate button](assets/simulate-generate.png)
 
