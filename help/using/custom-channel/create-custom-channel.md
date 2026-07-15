@@ -1,7 +1,7 @@
 ---
 title: Create a custom channel
 description: Learn how to create and configure a custom channel in Adobe Journey Optimizer using the Channel Builder.
-feature: Custom Channel
+feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
@@ -75,7 +75,8 @@ To create a new custom channel, follow the steps below.
 1. Enter an optional **[!UICONTROL Description]**.
 
 <!--
-1. Optionally, assign **[!UICONTROL Access labels]** to restrict access to this channel based on data usage policies. Learn more-->
+1. Optionally, assign **[!UICONTROL Access labels]** to restrict access to this channel based on data usage policies. Learn more
+-->
 
 ## Set the endpoint configuration {#endpoint-configuration}
 

@@ -1,7 +1,7 @@
 ---
 title: Create custom channel experiences
 description: Learn how to use a custom channel in a journey, campaign, or orchestrated campaign in Adobe Journey Optimizer.
-feature: Custom Channel
+feature: Channel Configuration
 topic: Content Management
 role: User
 level: Experienced
@@ -10,7 +10,7 @@ badge: label="Limited Availability" type="Informative"
 
 # Create custom channel experiences {#create-custom-channel}
 
-[!AVAILABILITY]
+>[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
@@ -97,7 +97,8 @@ To add a custom channel in an orchestrated campaign:
 
 1. Select the **[!UICONTROL Channel configuration]** to use. Ensure the configuration includes the **[!UICONTROL Execution details]** section required for orchestrated campaigns.
 
-1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)-->
+1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
+-->
 
 >[!ENDTABS]
 
@@ -183,7 +184,8 @@ To include a tracked link in your custom channel payload—so that clicks are au
 The editor supports a **[!UICONTROL Strict JSON]** toggle:
 
 * **Strict JSON: Off (default)** – The editor accepts any payload content, including personalization helpers and functions that may temporarily produce non-JSON syntax. A warning is displayed at the **Review to Activate** step if the payload is not well-formed JSON, prompting you to simulate and proof before publishing.
-* **Strict JSON: On** – The editor validates that the payload is well-formed JSON as you type. At the **Review to Activate** step, [!DNL Journey Optimizer] validates the payload against the channel schema and flags missing required fields or type mismatches as errors that must be resolved before activation.-->
+* **Strict JSON: On** – The editor validates that the payload is well-formed JSON as you type. At the **Review to Activate** step, [!DNL Journey Optimizer] validates the payload against the channel schema and flags missing required fields or type mismatches as errors that must be resolved before activation.
+-->
 
 ## Activate your custom channel experience {#activate}
 

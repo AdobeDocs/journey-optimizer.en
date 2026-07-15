@@ -1,7 +1,7 @@
 ---
 title: Manage API credentials for custom channels
 description: Learn how to manage API credentials for custom channels in Adobe Journey Optimizer.
-feature: Custom Channel
+feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced

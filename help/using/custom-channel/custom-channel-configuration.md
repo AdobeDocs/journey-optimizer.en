@@ -1,7 +1,7 @@
 ---
 title: Create a channel configuration for a custom channel
 description: Learn how to create a channel configuration for a custom channel in Adobe Journey Optimizer.
-feature: Custom Channel
+feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
@@ -14,7 +14,7 @@ A channel configuration links your custom channel to a named, reusable preset th
 
 To create a channel configuration for a custom channel, follow the steps below.
 
-1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel configurations]** and click **[!UICONTROL Create channel configuration]**. Learn more on [creating a channel configuration](../configuration/channel-configurations.md).
+1. Go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel configurations]** and click **[!UICONTROL Create channel configuration]**. Learn more on [creating a channel configuration](../configuration/channel-surfaces.md).
 
 1. From the **[!UICONTROL Select channel]** drop-down list, select one of your activated custom channels.
 
@@ -44,7 +44,7 @@ To create a channel configuration for a custom channel, follow the steps below.
 
 1. Click **[!UICONTROL Submit]** to save and activate the channel configuration.
 
-<!--TBC
+<!--
 >[!CAUTION]
 >
 >If your organization uses approval policies, you may need to request approval before activating journeys or campaigns that use this channel configuration. [Learn more](../test-approve/gs-approval.md)

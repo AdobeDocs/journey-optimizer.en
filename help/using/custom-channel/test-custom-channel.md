@@ -1,7 +1,7 @@
 ---
 title: Test your custom channel
 description: Learn how to test the connection, simulate content, and proof your custom channel messages in Adobe Journey Optimizer before activating.
-feature: Custom Channel
+feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
@@ -56,7 +56,7 @@ To validate end-to-end delivery before activating, send a proof to a set of test
 
 The proof result is displayed using the same validation patterns as email proofing: required fields, type mismatches, and schema validation errors are surfaced before the proof is sent.
 
-Learn more on sending proofs in [campaigns](../campaigns/create-campaign.md#send-proof) and [journeys](../journeys/create-journey.md#send-proof).
+Learn more on sending proofs in [campaigns](../campaigns/create-campaign.md#send-proof) and [journeys](../building-journeys/testing-the-journey.md).
 
 ## Test in journey test mode {#test-journey}
 
@@ -74,7 +74,7 @@ For end-to-end journey validation, activate the journey in **[!UICONTROL Test mo
 
 1. Click **[!UICONTROL Stop test]** when done.
 
-Learn more on testing journeys in [test mode](../journeys/create-journey.md#test-journey).
+Learn more on testing journeys in [test mode](../building-journeys/testing-the-journey.md).
 
 ## Simulate a journey {#simulate-journey}
 

@@ -1,7 +1,7 @@
 ---
 title: Configure a custom channel – overview
 description: Learn the steps an administrator must complete to configure a custom channel in Adobe Journey Optimizer, from creating the channel to setting up a channel configuration.
-feature: Custom Channel
+feature: Channel Configuration
 topic: Content Management
 role: Admin
 level: Experienced
@@ -20,7 +20,7 @@ The configuration process covers four steps: defining the channel itself (endpoi
 
 >[!NOTE]
 >
->Before you begin, review the [prerequisites and guardrails](custom-channel-prerequisites.md) for custom channels, including the required permissions and supported authentication methods.
+>Before you begin, review the prerequisites and guardrails for custom channels, including the required permissions and supported authentication methods.
 
 ## Configuration steps {#steps}
 

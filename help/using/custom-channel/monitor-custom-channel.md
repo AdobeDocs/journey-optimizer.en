@@ -1,7 +1,7 @@
 ---
 title: Manage and monitor custom channels
 description: Learn how to manage the lifecycle of custom channels and channel configurations, and monitor delivery performance through Adobe Journey Optimizer reporting.
-feature: Custom Channel
+feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
@@ -44,7 +44,8 @@ To view delivery data for a custom channel campaign:
 1. Open the campaign from the **[!UICONTROL Campaigns]** list.
 1. Click **[!UICONTROL Reports]** in the top-right area.
 
-The campaign report includes execution count, successful deliveries, errors, and click data (if link tracking is enabled).-->
+The campaign report includes execution count, successful deliveries, errors, and click data (if link tracking is enabled).
+-->
 
 ## Monitor delivery performance {#monitoring}
 
@@ -91,7 +92,8 @@ The **[!UICONTROL Custom channel metrics]** section provides a consolidated view
 
 * **[!UICONTROL Average successful latency]**: Average end-to-end response time (in milliseconds) for successful calls only, excluding failed requests and timeouts.
 
-* **[!UICONTROL Average queue time]**: Average time (in milliseconds) calls spent waiting in the execution queue before being sent. This only applies to throttled endpoints, where [!DNL Journey Optimizer] queues calls when the throughput limit is reached.-->
+* **[!UICONTROL Average queue time]**: Average time (in milliseconds) calls spent waiting in the execution queue before being sent. This only applies to throttled endpoints, where [!DNL Journey Optimizer] queues calls when the throughput limit is reached.
+-->
 
 +++
 

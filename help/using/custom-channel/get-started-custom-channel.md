@@ -1,7 +1,7 @@
 ---
 title: Get started with custom channels
 description: Learn how to use [!DNL Journey Optimizer]'s Channel Builder to bring any outbound messaging channel into [!DNL Journey Optimizer] and use it in campaigns, journeys, and orchestrated campaigns.
-feature: Custom Channel
+feature: Channel Configuration
 topic: Content Management
 role: User
 level: Beginner
@@ -90,4 +90,5 @@ Setting up and using a custom channel follows the main stages below:
 
 * Review the prerequisites and permissions before setting up your first custom channel. [Learn more](custom-channel-prerequisites.md)
 * Configure your first custom channel using the Channel Builder. [Learn more](custom-channel-configuration.md)
-* Create a custom channel experience in a journey or campaign. [Learn more](create-custom-experience.md)-->
+* Create a custom channel experience in a journey or campaign. [Learn more](create-custom-experience.md)
+-->

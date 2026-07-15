@@ -2,7 +2,7 @@
 title: Configure subdomains for custom channels
 description: Learn how to configure custom channel subdomains with Journey Optimizer
 role: Admin
-feature: Custom Channel, Channel Configuration
+feature: Channel Configuration
 level: Intermediate
 keywords: custom channel, subdomains, configuration
 badge: label="Limited Availability" type="Informative"
@@ -35,7 +35,8 @@ You can either use a subdomain that is already delegated to Adobe, or configure 
 
 Custom channel subdomain configuration is shared between all environments. Therefore, any modification to a custom channel subdomain also impacts other production sandboxes.
 
-<!--TBC
+<!--
+TBC
 >[!NOTE]
 >
 >To access and edit custom channel subdomains, you must have the **[!UICONTROL Manage Custom Channel Subdomains]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md).-->
@@ -149,7 +150,8 @@ If the custom channel subdomain points to a CNAME record, you can delete the CNA
 >
 >A custom channel subdomain can point to a CNAME record because it was either an [existing subdomain](#custom-channel-use-existing-subdomain) delegated to Adobe using the [CNAME method](../configuration/delegate-subdomain.md#cname-subdomain-setup), or a [new custom channel subdomain](#custom-channel-configure-new-subdomain) that you configured.
 
-After your request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.-->
+After your request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.
+-->
 
 
 ## Next steps {#next-steps}
