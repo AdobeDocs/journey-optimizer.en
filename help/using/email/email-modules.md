@@ -41,7 +41,7 @@ Modules are available in the **[!UICONTROL Modules]** tab in the Email Designer 
 
     ![](assets/email_designer_modules_tab.png)
 
-1. Browse the available module categories, or use the **search bar** to filter by name.
+1. Browse the available module categories, or use the search bar to filter by name.
 
 1. Click the **>** arrow next to a category to expand it and view available layout variants.
 
