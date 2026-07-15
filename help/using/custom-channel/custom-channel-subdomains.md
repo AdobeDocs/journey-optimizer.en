@@ -39,8 +39,8 @@ Custom channel subdomain configuration is shared between all environments. There
 TBC
 >[!NOTE]
 >
->To access and edit custom channel subdomains, you must have the **[!UICONTROL Manage Custom Channel Subdomains]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md).-->
-
+>To access and edit custom channel subdomains, you must have the **[!UICONTROL Manage Custom Channel Subdomains]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md).
+-->
 ## Use an existing subdomain {#custom-channel-use-existing-subdomain}
 
 To use a subdomain that is already delegated to Adobe, follow the steps below.
