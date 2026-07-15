@@ -444,6 +444,18 @@ solution: Journey Optimizer
     + Configure Live activity channel {#configure}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
       + [Configure Live activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
+  + Custom channels {#custom-channel}
+    + {hide-from-toc} [Get started with custom channels](using/custom-channel/get-started-custom-channel.md)
+    + Configure custom channels {#configure-custom-channel}
+      + {hide-from-toc} [Set up your custom channels](using/custom-channel/configure-custom-channel.md)
+      + {hide-from-toc} [Create a custom channel](using/custom-channel/create-custom-channel.md)
+      + {hide-from-toc} [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
+      + {hide-from-toc} [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
+      + {hide-from-toc} [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
+    + Create custom channel experiences {#create-custom-channel-experiences}
+      + {hide-from-toc} [Create a custom channel experience](using/custom-channel/create-custom-experience.md)
+      + {hide-from-toc} [Test your custom channel experience](using/custom-channel/test-custom-channel.md)
+    + {hide-from-toc} [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
