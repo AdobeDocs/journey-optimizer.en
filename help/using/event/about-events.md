@@ -45,7 +45,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Events are the real-time triggers that launch your journeys — compare the unitary, business, and audience qualification types to pick the right one for each use case.
+**On this page:** Understand the three event types, their schema requirements, key constraints, and how to choose the right one for your use case.
 
 >[!ENDSHADEBOX]
 
@@ -54,17 +54,15 @@ topic_v2:
 >title="Journey events"
 >abstract="Journey Optimizer supports three types of events in journeys: unitary events, linked to a specific person's behavior (such as a purchase or a loyalty milestone); business events, triggered by a global occurrence (such as a flight cancellation or a stock update); and audience qualification events, triggered when a profile enters or exits an audience. Use events to trigger journeys and orchestrate the right actions for your profiles."
 
-Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey.
-
-In the event configuration, you configure the events expected in the journeys. You can use multiple events (in different steps of a journey) and several journeys can use the same event.
+Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey. In the event configuration, you configure the events expected in the journeys. You can use multiple events (in different steps of a journey) and several journeys can use the same event.
 
 Event configuration is **mandatory** and must be performed by a Data engineer.
 
 >[!IMPORTANT]
 >
->Before configuring events, make sure you have: the **Journey Optimizer Administrator** or **Data Engineer** role, an XDM schema with **Real-Time Customer Profile** enabled, an active streaming endpoint, and access to the correct sandbox. 
+>* Before configuring events, make sure you have: the **Journey Optimizer Administrator** or **Data Engineer** role, an XDM schema with **Real-Time Customer Profile** enabled, an active streaming endpoint, and access to the correct sandbox. 
 >
->For event requirements and limitations (streaming, Query Service, batch ingestion), see [Journey guardrails - Events](../start/guardrails.md#events-g).
+>* For event requirements and limitations (streaming, Query Service, batch ingestion), see [Journey guardrails - Events](../start/guardrails.md#events-g).
 
 **Who does what:**
 
@@ -80,34 +78,51 @@ You can configure three types of events: **Unitary events**, **Business events**
 
 ➡️ [Discover this feature in video](#video)
 
+➡️ [Discover this feature in video](#video)
+
 ## Unitary events {#unitary-events}
 
-**Unitary** events are linked to a person. They relate to the behavior of a person (for example, a person bought a product, visited a shop, exited a website, etc.) or something happening linked to a person (for example, a person reached 10,000 loyalty points). This is what [!DNL Journey Optimizer] will listen to in journeys to orchestrate the best next actions. Unitary events can be rule-based or system generated. To learn how to create a unitary event, refer to this [page](../event/about-creating.md).
+**Unitary** events are linked to a person. They relate to the behavior of a person (for example, a person bought a product, visited a shop, exited a website, etc.) or something happening linked to a person (for example, a person reached 10,000 loyalty points). This is what [!DNL Journey Optimizer] will listen to in journeys to orchestrate the best next actions. Unitary events can be rule-based or system generated. [Learn how to create a unitary event](../event/about-creating.md).
 
-Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for 5 minutes. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
+**Schema requirement:** An XDM ExperienceEvent schema with a person-based primary identity and **Real-Time Customer Profile** enabled.
+
+**Example:** A customer adds items to their cart and closes the browser. A cart-abandoned event fires, the profile enters the journey in real time, and receives a recovery email one hour later.
+
+>[!NOTE]
+>
+>Unitary journeys include a reentrance guardrail: profile reentrance is blocked by default for 5 minutes after the journey triggers. For example, if an event triggers a journey at 12:01 for a profile and another arrives at 12:03, the journey does not restart for that profile.
 
 ## Business events {#business-events}
 
-**Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancelation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after. Learn how to create a business event [on this page](../event/about-creating-business.md).
+**Business** events are not linked to a specific profile. For example, it can be a news alert, a sports update, a flight change or cancelation, an inventory update, weather events, etc. While these events are not specific to a profile, they may be of interest to any number of profiles: individuals subscribed to particular news topics, passengers on a flight, shoppers interested in an out-of-stock product, etc. Business events are always rule-based. When you drop a business event in a journey, it automatically adds a **Read audience** activity right after. [Learn how to create a business event](../event/about-creating-business.md).
+
+**Schema requirement:** A time-series XDM schema with a non-person primary identity, and the `_id` and `timestamp` fields populated. Plan for an audience export delay of 15 minutes to up to one hour.
+
+**Example:** An airline cancels a flight. A business event fires, [!DNL Journey Optimizer] reads the audience of affected passengers, and sends each a rebooking notification.
 
 ## Audience qualification events {#audience-qualification-events}
 
 An **audience qualification** event is triggered when a profile enters or exits an audience. For example, a customer crossing a loyalty spend threshold enters the Gold tier audience — that qualification triggers the journey for that profile in real time (for streaming audiences) or at the next batch evaluation. Unlike unitary events, audience qualification lets you build complex triggering logic using the full power of audience definitions, without requiring implementation changes to send a new event. Learn more on [audience qualification events](../building-journeys/audience-qualification-events.md).
 
+**Schema requirement:** No additional schema required — the event relies on existing audience definitions already built in Adobe Experience Platform.
+
+**Example:** A customer's loyalty spend crosses the Gold tier threshold. Their profile qualifies for the Gold audience, the journey triggers automatically, and sends a welcome reward.
+
 >[!NOTE]
 >
 >Audience qualification events are not configured in **Administration > Events** — they are selected directly on the journey canvas as the first step of a journey.
 
-## Unitary vs business events at a glance {#event-comparison}
+## Event types at a glance {#event-comparison}
 
-| | Unitary event | Business event |
-|---|---|---|
-| **Linked to a profile?** | Yes — triggered by a specific individual's action. | No — triggered by an external occurrence not tied to one person. |
-| **Entry behavior** | One profile enters the journey in real time. | Multiple profiles enter via an automatic Read Audience step. |
-| **Typical use cases** | Cart abandonment recovery, form submission, app login, loyalty milestone. | Flight cancellation, stock replenishment alert, breaking news, weather event. |
-| **How it starts the journey** | Event-based entry — no audience needed. | Business event + automatic Read Audience (added by Journey Optimizer). |
-| **Multiple per journey?** | Yes — you can listen to several unitary events across journey steps. | No — only one business event per journey, placed at the start. |
-| **Event ID type** | Rule-based or system-generated. | Always rule-based. |
+| | Unitary event | Business event | Audience qualification event |
+| --- | --- | --- | --- |
+| **Linked to a profile?** | Yes — triggered by a specific individual's action. | No — triggered by an external occurrence not tied to one person. | Yes — triggered when a profile enters or exits an audience. |
+| **Entry behavior** | One profile enters the journey in real time. | Multiple profiles enter via an automatic Read Audience step. | One profile enters when audience membership changes. |
+| **Typical use cases** | Cart abandonment recovery, form submission, app login, loyalty milestone. | Flight cancellation, stock replenishment alert, breaking news, weather event. | Re-engagement of lapsed customers, loyalty tier changes, VIP offboarding flows. |
+| **How it starts the journey** | Event-based entry — no audience needed. | Business event + automatic Read Audience (added by Journey Optimizer). | Profile enters or exits a defined audience. |
+| **Multiple per journey?** | Yes — you can listen to several unitary events across journey steps. | No — only one business event per journey, placed at the start. | Yes — can be combined with other activities. |
+| **Event ID type** | Rule-based or system-generated. | Always rule-based. | No event ID — based on audience membership evaluation. |
+| **Configured in Administration?** | Yes | Yes | No — selected directly on the journey canvas. |
 
 >[!NOTE]
 >
@@ -129,11 +144,25 @@ For **unitary** events, there are two types of event ID:
 
 >[!NOTE]
 >
->Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch, events inserted via **Query Service**, or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, please build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but can cause downstream challenges based on the actions used. This data does not necessarily need to go to the Real-Time Profile. If you would like to use the events for segmentation, we recommend you enable the dataset for profile.
+>Only streamed events can trigger journeys. The following **cannot** be used to trigger a journey:
+>
+>* Events ingested in batch
+>* Events inserted via **Query Service**
+>* Events from internal [!DNL Journey Optimizer] datasets (Message Feedback, Email Tracking, and similar)
+>
+>If you cannot get streamed events, build an audience based on those events and use a **Read Audience** activity instead. To use events for segmentation only, enable the dataset for **Real-Time Customer Profile**.
 
 ## How to choose {#choose-event-type}
 
 Use the following criteria to select the right event type for your journey — the key question is: **are you triggering an action for one specific person, or broadcasting to many profiles?** [Learn more on journey types](../building-journeys/journey.md#journey-types).
+
+Each event type maps to a specific journey pattern:
+
+| Event type | Journey pattern |
+| --- | --- |
+| Unitary event | Real-time, single-profile journey — triggers immediately when a person acts |
+| Business event | Broadcast journey — targets many profiles via an automatic Read Audience step |
+| Audience qualification event | Segment-triggered journey — fires when a profile enters or exits an audience |
 
 * **Choose a unitary event** when the trigger is tied to a specific individual — for example, a purchase, a form submission, or a loyalty milestone. Unitary events require a person-based primary identity in the schema and start the journey immediately for that profile. [Learn how to configure a unitary event](../event/about-creating.md).
 
@@ -145,18 +174,28 @@ Use the following criteria to select the right event type for your journey — t
 >
 >Business events cannot be used in the same journey as unitary events or audience qualification activities.
 
-## Data cycle {#data-cycle}
+## Key constraints {#key-constraints}
 
-Events are POST API calls. Events are sent to Adobe Experience Platform through Streaming Ingestion APIs. The URL destination of events sent through transactional messaging APIs is called an "inlet". The payload of events follows XDM formatting. 
+Use this summary to plan your implementation before configuring events.
 
-The payload contains information required by Streaming Ingestion APIs to work (in the header) and the information required by [!DNL Journey Optimizer] to work  and information to be used in journeys (in the body, for example, the amount of an abandoned cart). There are two modes for the streaming ingestion, authenticated and unauthenticated. For details on Streaming Ingestion APIs, refer to [this link](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html){target="_blank"}.
+| Constraint | Details |
+| --- | --- |
+| Throughput limit | 5,000 events per second per organization, across all sandboxes (unitary and Read Audience journeys) |
+| Reentrance block | Profile reentrance blocked for 5 minutes after a unitary journey triggers |
+| Business events per journey | Maximum 1, must be the first step |
+| Mix business + unitary in one journey | Not supported |
+| Batch events | Cannot trigger journeys — use a **Read Audience** activity instead |
+| Audience qualification — Administration | Not configured in **Administration > Events** — selected directly on the journey canvas |
+| Edit a live event | Can only change the name, description, or add payload fields |
 
-After arriving through Streaming Ingestion APIs, events flow into an internal service called Pipeline and then in Adobe Experience Platform. If the event schema has the Real-time Customer Profile Service flag enabled and a dataset ID that also has the Real-time Customer Profile flag, it flows into the Real-time Customer Profile Service.
+## How events reach Journey Optimizer {#data-cycle}
 
-For system-generated events, the Pipeline filters events which have a payload containing [!DNL Journey Optimizer] eventIDs (see the event creation process below) provided by [!DNL Journey Optimizer] and contained in event payload. For rule-based events, the system identifies the event using the eventID condition. These events are listened by [!DNL Journey Optimizer] and the corresponding journey is triggered.
+Events must be sent to [!DNL Journey Optimizer] as POST calls through [Adobe Experience Platform Streaming Ingestion APIs](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html){target="_blank"}. The payload must follow XDM formatting, and the event schema must have **Real-Time Customer Profile** enabled.
+
+Both authenticated and unauthenticated streaming modes are supported. Batch-ingested events and events from internal [!DNL Journey Optimizer] datasets (message feedback, email tracking, and similar) cannot be used to trigger journeys — use a **Read Audience** activity instead for those use cases.
 
 
-## About Journey event throughput {#event-thoughput}
+## Event throughput limits {#event-throughput}
 
 Adobe Journey Optimizer enforces separate throughput limits per event type, at an organization level across all sandboxes:
 
@@ -165,11 +204,11 @@ Adobe Journey Optimizer enforces separate throughput limits per event type, at a
 
 These limits apply to all events used in active journeys, which includes **Live**, **Dry run**, **Closed** and **Paused** journeys. When a limit is reached, new events get queued and processed at 5,000 per second until the queue is drained.
 
-For more details on journey processing rates and how different journey types impact throughput, refer to [this section](../building-journeys/entry-management.md#journey-processing-rate).
+For more details on journey processing rates and how different journey types impact throughput, [learn more on journey processing rates](../building-journeys/entry-management.md#journey-processing-rate).
 
 The following types of events are counted toward these quotas:
 
-* **External Unitary Events**: Includes both rule-based and system-generated events. If the same raw event qualifies for multiple rule definitions, each qualified rule counts as a separate event. More details below.
+* **External Unitary Events**: Includes both rule-based and system-generated events. If the same raw event qualifies for multiple rule definitions, each matched rule counts as a separate event toward the quota.
 
 * **Audience Qualification Events**: If the same streaming audience is used in multiple journeys, each usage counts separately. For instance, using the same audience in an audience qualification activity in two journeys results in two counted events.
 
@@ -187,24 +226,44 @@ The following types of events are counted toward these quotas:
 >
 >Except for wait and resume events, all other event types also count toward the quota when used in journeys based on read audiences.
 
-### About raw events qualifying for multiple rule definitions
-
-Same raw event can qualify for multiple rule definitions in journeys. When an event is configured in the **Administration** section, for the same event schema, multiple event rules can be defined. Let's say for example that we have a purchase event which has fields city and purchaseValue. Let's consider the following scenarios:
-
-1. An event **E1** named `newYorkPurchases` is created with a rule definition saying that `city=='New York'`. This event might be used in 10 journeys but will still be counted only as 1 event, when it will come.
-
-1. Now let's say that an event **E2** named `highValuePurchases` with `purchaseValue > 1000` as a rule definition is also created, on the same event schema than **E1**. In this case, the same incoming event will be evaluated against two rules: `newYorkPurchases` and `highValuePurchases`. Now it may happen that a newYork purchase is also a high value purchase. 
-
-   In this case Journey Optimizer will create two events, **E1** and **E2**, out of the same incoming event, which will make this single incoming event count as two events. 
-
-   Note that these events start getting counted when they are used in an active journey, including **Live**, **Dry run**, **Closed** and **Paused** journey.
-
 ## Updating and deleting an event {#update-event}
 
 
 To avoid breaking existing journeys, when you edit an event used in a **Draft**, **Live** or **Closed** journey, you can only change the name, the description or add payload fields. 
 
-Any event used in **Live**, **Draft** or **Closed** journeys cannot be deleted. To delete a used event, you must stop journeys using it, and/or remove it from the Draft journeys where it are used. You can check the **[!UICONTROL Used in]** field. It displays the number of journeys that use that particular event. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
+Any event used in **Live**, **Draft** or **Closed** journeys cannot be deleted. To delete a used event, you must stop journeys using it, and/or remove it from the Draft journeys where it is used. You can check the **[!UICONTROL Used in]** field. It displays the number of journeys that use that particular event. You can click the **[!UICONTROL View journeys]** button to display the list of corresponding journeys.
+
+## Frequently asked questions {#faq}
+
+**Can I use the same event in multiple journeys?**
+Yes — several journeys can listen to the same event simultaneously.
+
+**Can I combine a business event and a unitary event in the same journey?**
+No — business events cannot be used in the same journey as unitary events or audience qualification activities.
+
+**Do I need to configure anything for audience qualification events?**
+No — audience qualification events are not configured in **Administration > Events**. Select the audience directly on the journey canvas as the first step.
+
+**Can I use batch-ingested data to trigger a journey?**
+No — only streamed events can trigger journeys. For batch data, build an audience and use a **Read Audience** activity instead.
+
+**My journey isn't triggering — what should I check?**
+
+* Verify that your event schema has **Real-Time Customer Profile** enabled.
+* Confirm that events are streamed — batch-ingested events cannot trigger journeys.
+* For rule-based events, verify that the rule condition matches the incoming payload fields.
+* Check that the journey is in **Live** status and that the profile meets any entry conditions.
+
+## Next steps {#next-steps}
+
+* [Configure a unitary event](../event/about-creating.md)
+* [Configure a business event](../event/about-creating-business.md)
+* [Learn more on audience qualification events](../building-journeys/audience-qualification-events.md)
+* [Manage journey entry and reentrance](../building-journeys/entry-management.md)
+
+>[!TIP]
+>
+>If your journey is not triggering, verify that your event schema has **Real-Time Customer Profile** enabled and that events are streamed — batch-ingested events cannot trigger journeys.
 
 ## How-to videos {#video}
 

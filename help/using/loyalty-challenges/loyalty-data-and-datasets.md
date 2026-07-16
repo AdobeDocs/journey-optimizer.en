@@ -58,6 +58,18 @@ Loyalty Challenges relies on Adobe Experience Platform for identity, profile att
 
 Contact your Adobe administrator for Journey Optimizer program setup, or configure reward fulfillment and event mapping in the **[!UICONTROL Loyalty admin]** menu. [Learn how to configure loyalty challenges](loyalty-admin.md). For REST endpoints and authentication, see the [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}.
 
+## Loyalty connectors via Sources {#loyalty-connectors-sources}
+
+If your loyalty data is managed in an external rewards platform, you can ingest that data into Adobe Experience Platform using **Sources** connectors, then use it in Loyalty Challenges.
+
+Loyalty and rewards connectors listed in Journey Optimizer documentation include:
+
+* **Talon.One**
+* **Capillary**
+* **Kobie**
+
+For connector onboarding and end-to-end setup, see [Get started with sources connectors](../start/get-started-sources.md) and the [Experience Platform sources catalog](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"}.
+
 ## Adobe Experience Platform data {#aep-data}
 
 ### Profile attributes {#profile-attributes}

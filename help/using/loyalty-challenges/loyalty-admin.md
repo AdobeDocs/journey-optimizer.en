@@ -77,11 +77,26 @@ To open the configuration interface, select the **[!UICONTROL Loyalty admin]** m
 >title="Global settings"
 >abstract="Global settings define organization-level configuration for Loyalty Challenges, including the identity namespace used to identify members across events and challenges."
 
-Open the **[!UICONTROL Global settings]** tab and select the Adobe Experience Platform [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) for Loyalty Challenges in the **[!UICONTROL Namespace]** drop-down. This namespace must match how member profiles are identified in your data.
+Open the **[!UICONTROL Global settings]** tab to configure global settings for Loyalty Challenges.
 
 ![](assets/admin-global-settings.png)
 
-➡️ [Learn how to work with identity namespaces](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}
+* In the **[!UICONTROL Organization configuration]** section, select the Adobe Experience Platform [identity namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces) for Loyalty Challenges. This namespace must match how member profiles are identified in your data.
+
+   ➡️ [Learn how to work with identity namespaces](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"}
+
+* Use the **[!UICONTROL Reporting]** section to set your organization's priority metric for the Loyalty Insights dashboard. This setting determines which insights receive emphasis in your feed, allowing you to focus on the metric that matters most to your business.
+
+   Select one of the following KPI options:
+
+   * **[!UICONTROL Revenue]** — Prioritize insights related to monetary transactions and sales performance
+   * **[!UICONTROL Engagement]** — Prioritize insights related to member activity and participation
+   * **[!UICONTROL Redemptions]** — Prioritize insights related to reward redemption rates and activity
+   * **[!UICONTROL Conversions]** — Prioritize insights related to conversion metrics and goal completion
+
+   When you select a KPI, insights related to that metric receive a scoring boost, which causes them to rise to the top of the feed. This means the most relevant insights for your selected KPI appear first. No insights are hidden: your complete insight feed continues to display, ranked by significance with your selected KPI prioritized above other metrics. This setting only affects how insights are ranked in the feed and does not modify how your loyalty program operates or how challenges are evaluated. You can change your KPI selection at any time, and the insight feed re-prioritizes on the next refresh cycle to reflect your new priority.
+
+   For more information about loyalty insights and performance monitoring, see [Monitor loyalty challenge performance](loyalty-reporting.md).
 
 ## Reward providers {#reward-providers}
 
@@ -249,7 +264,7 @@ To upload a product inventory file, follow these steps:
 
    ![](assets/admin-inventory-imported.png)
 
-1. To see all items in a product group, select that group’s pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
+1. To see all items in a product group, select that group's pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
 
    ![](assets/admin-inventory-group.png)
 
@@ -286,7 +301,7 @@ To upload exclusions, follow these steps:
 
 <!-- SCREENSHOT: Exclusions list after CSV upload -->
 
-1. To see all items in an exclusion group, select that group’s pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
+1. To see all items in an exclusion group, select that group's pill in the **[!UICONTROL Groups included in]** column on any row. The group details view lists every item in the group.
 
 <!-- SCREENSHOT: Exclusion group details -->
 

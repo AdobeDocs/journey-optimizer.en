@@ -2,7 +2,7 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Monitor loyalty challenge performance
-description: Learn how to use the Loyalty Challenges reporting dashboards to track challenge performance and task metrics in Adobe Journey Optimizer.
+description: Learn how to use the Loyalty Challenges reporting dashboards to track challenge performance and insights in Adobe Journey Optimizer.
 feature: Journeys
 topic: Content Management
 role: User
@@ -52,66 +52,73 @@ subfeature_v2: []
 >
 >This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
-Loyalty Challenges reporting provides challenge-level dashboards so you can track key metrics such as audience funnel performance, task completion rates, reward issuance, and revenue impact. All data is sourced from Adobe Customer Journey Analytics and presented in a custom, purpose-built interface.
+Use Loyalty Challenges reporting to see how your challenges are performing. Check who is signing up, who is completing challenges, and how much revenue your program is generating — all in one place. Data comes from Adobe Customer Journey Analytics.
+
+To open the reporting dashboards, go to **[!UICONTROL Loyalty Challenges (Beta)]** in Journey Optimizer and select **[!UICONTROL Loyalty reports]** in the left navigation.
+
+The reporting interface has two tabs:
+
+* **[Reports](#reports-view)**: Numbers and charts for your challenges.
+* **[Insights](#insights-cards)**: Cards that highlight what deserves your attention right now.
+
+## Reports view {#reports-view}
+
+The **Reports** tab gives you an overview of how your program is doing for the selected period. Use the date picker at the top of the page and select the **[!UICONTROL Apply filter]** button to change the reporting period and see updated numbers and charts. 
+
+![](assets/reporting-challenge-key.png)
+
+The **Key metrics** area shows four numbers at a glance. Each metric also displays a percentage change compared to the previous period.
+
+* **Loyalty members**: How many loyalty members were active during the period.
+* **Challenge signups**: How many times members enrolled in a challenge.
+* **Revenue**: Total revenue tied to challenge activity.
+* **Average completion rate**: The percentage of enrolled members who finished at least one challenge.
+
+The **Latest insights** panel on the right shows the most recent AI-generated insights from your program. Select **[!UICONTROL View all]** to open the full **Insights** tab.
+
+Below the key metrics, the **Challenges** section gives you two views of challenge activity.
+
+![](assets/reporting-challenge-challenges.png)
+
+* **Challenge engagement**: A timeline showing how many members started, are in progress, and completed challenges over the period.
+* **Challenge reports**: A table of all your challenges with details like type, tasks, status, and enrollment numbers. Use the search bar to find a specific challenge. Select a challenge to see its full report with engagement trends and performance details.
+
+    +++Challenge report example
+
+    ![](assets/reporting-challenge-report.png)
+
+    +++
+
+## Insights tab {#insights-cards}
+
+The **Insights** tab surfaces AI-generated cards that flag anomalies, trends, and opportunities in your loyalty program. Each card represents a single observation and is ranked by how significant it is relative to your current program data.
+
+![](assets/reporting-insights.png)
+
+A **Last crawled** timestamp at the top right shows when the insight engine last processed your program data.
+
+### Card actions {#insight-card-actions}
+
+Each card has a ![](assets/do-not-localize/Smock_More_18_N.svg) menu with two actions:
+
+* **Dismiss**: Permanently removes the card from the insights list.
+* **Snooze**: Hides the card temporarily. Choose to snooze for **1 day**, **3 days**, or **7 days**. The card reappears after the snooze period ends.
 
 <!--
-A direct **Analyze in CJA** button will be added to the reporting interface before the feature reaches general availability.
+### Priority badges {#insight-badges}
+
+Each card has a priority badge — **High**, **Medium**, or **Low** — based on how significant the underlying signal is relative to your current program data. These levels are relative: there are always a few **High** cards, even in a quiet week. **High** means "most relevant right now", not that a fixed threshold was crossed.
 -->
 
-## Access loyalty reports {#access-reports}
+### Category tags {#insight-category-tags}
 
-To open the loyalty reporting dashboards, navigate to **[!UICONTROL Loyalty Challenges (Beta)]** in Journey Optimizer and select **[!UICONTROL Loyalty reports]** from the left navigation.
+Each card carries a **category tag** that identifies which part of your program the insight relates to.
 
-![](assets/reporting-home.png)
-
-The reporting interface provides three views, each offering a different level of detail. The **[Overview](#overview)** displays a summary across all your active challenges. Below it, two tabs let you switch between more granular views:
-
-* **[Challenges](#challenges-view)**: A per-challenge breakdown with drill-down capability,
-* **[Tasks](#tasks-view)**: A task-level view of revenue and completion metrics.
-
-You can adjust the date range for all views using the date picker at the top of the page. Standard date presets are also available.
-
-![](assets/reporting-date.png)
-
-## Overview {#overview}
-
-The **Overview** page shows metrics aggregated across all active challenges for the selected period.
-
-![](assets/reporting-overview.png)
-
-The top of the page displays the following metrics:
-
-**Loyalty Members** - Number of loyalty program members who were active during the selected period.
-**Challenge Signups** - Total number of new challenge enrollments across all challenges.
-**Revenue** - Total revenue tied to challenge activity during the period.
-**Avg Completion rate** - Percentage of enrolled customers who completed at least one challenge.
-
-Below these metrics, a **Daily Challenge Engagement** timeline shows how challenge participation evolved over the period, plotting three series:
-
-* Customers who **started** a challenge,
-* Customers who moved to **in-progress** status,
-* Customers who **completed** a challenge.
-
-## Challenges view {#challenges-view}
-
-The **Challenges** tab breaks down performance by individual challenge. Each challenge is listed with key columns such as Type, Status, Enrollment, Completion, and more. The list is sorted by last modification date and displays ten challenges at a time. Use the **Next** button at the bottom to browse further.
-
-![](assets/reporting-challenges-tab.png)
-
-Select any challenge from the list to open its detail view. The report includes several metric blocks such as Total Revenue, Enrollment, Completion Rate, and trend charts, as well as a Daily Breakdown.
-
-+++Challenge report example
-
-![](assets/reporting-challenge-report.png)
-
-+++
-
-## Tasks view {#tasks-view}
-
-The **Tasks** tab provides a cross-challenge view of task performance. You can toggle between top tasks by revenue and top tasks by completions to focus on the metric most relevant to you.
-
-The tab also highlights the top 6 tasks by revenue, giving a quick view of which tasks drive the most value.
-
-Below the radar graph, a task list displays every task with key columns such as Completions, Revenue, and the challenges each task belongs to. The list is sorted by revenue and shows ten tasks at a time. Use the **Next** button to browse further.
-
-![](assets/reporting-task-report.png)
+| Category | What it covers |
+| --- | --- |
+| **Program-wide** | Overall health and performance of your loyalty program |
+| **Tier-level** | Earn rates, movement, and distribution across member tiers |
+| **Challenge** | Activity, completion rates, and anomalies for a specific challenge or across challenges |
+| **Product** | Product catalog performance, including views, redemptions, and catalog-level trends |
+| **Member lifecycle** | How members progress through enrollment, engagement, and churn stages |
+| **Trend** | Time-based patterns such as weekly cycles, seasonal spikes, or trend reversals |

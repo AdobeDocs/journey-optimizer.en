@@ -80,7 +80,7 @@ If the journey has several paths, we recommend that you add a label to each end 
 
 A journey can close because of the following reasons:
 
-* A non-recurring Read Audience journey **automatically stops** once the last profile exits the journey. [Learn more](#auto-stop-non-recurring)
+* A non-recurring Read Audience journey **automatically stops** after a safety buffer following its scheduled run. [Learn more](#auto-stop-non-recurring)
 * After the last occurrence of a recurring audience-based journey.
 * The journey is closed manually via the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) button.
 * The global journey timeout of 91 days is reached.
@@ -89,21 +89,24 @@ After the **91-day journey global timeout**, a Read audience journey switches to
 
 ### Automatic journey stop for non-recurring audiences {#auto-stop-non-recurring}
 
-A **non-recurring Read Audience journey** automatically transitions to **[!UICONTROL Stopped]** status once the last profile exits the journey. This eliminates the previous behavior where non-recurring Read Audience journeys remained in **Live** status until the 91-day global timeout expired, even though no profiles were actively flowing through them.
+A **non-recurring Read Audience journey** automatically transitions to **[!UICONTROL Stopped]** status after a safety buffer following its scheduled run. This eliminates the previous behavior where non-recurring Read Audience journeys remained in **Live** status until the 91-day global timeout expired, even though no profiles were actively flowing through them.
 
 **How it works:**
 
 1. The journey runs and all profiles from the audience are processed.
 1. As each profile reaches the end of the journey, it exits normally.
-1. When the **last active profile exits**, the journey automatically transitions to **[!UICONTROL Stopped]** status.
+1. When the **last active profile exits**, the journey enters a safety buffer period and remains in **[!UICONTROL Live]** status.
+1. After the safety buffer elapses (~96 hours after the journey's scheduled run time), the journey automatically transitions to **[!UICONTROL Stopped]** status on the next scanner pass.
 
 This behavior applies to **non-recurring Read Audience journeys** only. Recurring journeys are not affected.
 
->[!NOTE]
->
->* This auto-stop behavior does **not** apply to non-recurring journeys that include nodes causing waiting periods, such as **Wait** nodes (timer-based), **Reaction** nodes (waiting on events like email open or click), or event-triggered transitions. These journeys remain subject to the standard [91-day global timeout](../building-journeys/journey-properties.md#global_timeout).
->
->* You can still close a non-recurring Read Audience journey manually at any time using the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) option. The auto-stop behavior simply ensures the journey stops automatically when it is no longer needed, without requiring manual intervention.
+* **Auto-stop timing:** The safety buffer accounts for two windows: a **24-hour idle window** to allow any in-flight sends to complete, and a **72-hour Quiet Hours allowance** (Quiet Hours can defer sends by up to 72 hours and is not visible to the scanner). The total buffer is approximately **96 hours (~4 days)** after the journey's scheduled run time. The journey remains in **[!UICONTROL Live]** status during this period. This is expected behavior and does not indicate a problem.
+
+* **Waves-based journeys are excluded:** This auto-stop behavior does not apply to waves-based journeys, including journeys that use Send-Time Optimization. These journeys remain active across all scheduled waves and are stopped only by the standard [91-day global timeout](../building-journeys/journey-properties.md#global_timeout), unless they are closed or stopped manually.
+
+* This auto-stop behavior does **not** apply to non-recurring journeys that include nodes causing waiting periods, such as **Wait** nodes (timer-based), **Reaction** nodes (waiting on events like email open or click), or event-triggered transitions. These journeys remain subject to the standard [91-day global timeout](../building-journeys/journey-properties.md#global_timeout).
+
+* You can still close a non-recurring Read Audience journey manually at any time using the [**[!UICONTROL Close to new entrances]**](#close-to-new-entrances) option. The auto-stop behavior simply ensures the journey stops automatically when it is no longer needed, without requiring manual intervention.
 
 ### When is a journey considered "finished"? {#journey-finished-definition}
 
@@ -111,7 +114,7 @@ The definition of "finished" varies depending on the journey type:
 
 | Journey Type | Recurring? | Has end date? | Definition of "finished" |
 |--------------|------------|---------------|--------------------------|
-| Read audience | No | n/a | When last profile exits (auto-stop) |
+| Read audience | No | n/a | ~96h after last profile exits (auto-stop buffer) |
 | Read audience | Yes | No | 91 days after last occurrence start |
 | Read audience | Yes | Yes | When end date is reached |
 | Event-triggered journey | n/a | Yes | When end date is reached |
@@ -198,7 +201,7 @@ For complete understanding, this information should be combined with the documen
 * Only journeys in Finished status can be deleted.
 * Stopping a journey requires the Manage journeys permission; journeys with inline campaigns or messaging nodes also require Campaigns > Publish Campaigns permission.
 * After the 91-day global timeout, all profile journey data is removed and remaining profiles are automatically exited.
-* A non-recurring Read Audience journey without long-running Wait, Reaction, or event-triggered nodes automatically transitions to Stopped when the last profile exits. Journeys with those nodes remain subject to the 91-day global timeout unless manually closed.
+* A non-recurring Read Audience journey without long-running Wait, Reaction, or event-triggered nodes automatically transitions to Stopped approximately 96 hours (~4 days) after the last profile exits. The journey remains in Live status during this buffer. Waves-based journeys, including Send-Time Optimization use cases, are excluded from this auto-stop and remain subject to the 91-day global timeout unless manually closed or stopped.
 
 **Terminology:**
 
@@ -209,7 +212,9 @@ For complete understanding, this information should be combined with the documen
 **FAQ:**
 
 * **Q: What is the difference between closing and stopping a journey?** — Closing blocks new entrances but lets existing profiles finish; stopping immediately halts all profiles in their tracks.
-* **Q: When does a Read audience journey reach Finished status?** — For a non-recurring Read Audience journey: it auto-stops to Stopped when the last profile exits (or after 91 days if Wait, Reaction, or event nodes keep profiles active). Finished is reached when a Closed journey hits the 91-day global timeout, or per recurring-journey rules in the finished-definition table.
+* **Q: Why does a non-recurring journey remain in Live status for several days after its run?** — This is expected. After the last profile exits, AJO applies a safety buffer of ~96 hours (~4 days): 24 hours to allow in-flight sends to complete, plus 72 hours for Quiet Hours deferrals. The journey transitions to Stopped on the next scanner pass after the buffer elapses.
+* **Q: Do waves-based journeys auto-stop after ~96 hours?** — No. Waves-based journeys, including journeys that use Send-Time Optimization, are excluded from this automatic stop so they can stay active across all scheduled waves. They follow the standard 91-day journey timeout unless closed or stopped manually.
+* **Q: When does a Read audience journey reach Finished status?** — For a non-recurring Read Audience journey: it auto-stops to Stopped approximately 96 hours (~4 days) after the last profile exits (safety buffer: 24h idle window + 72h Quiet Hours allowance). The journey remains in Live status during this buffer. If Wait, Reaction, or event nodes keep profiles active, the standard 91-day global timeout applies instead. Finished is reached when a Closed journey hits the 91-day global timeout, or per recurring-journey rules in the finished-definition table.
 * **Q: Can I delete a Closed journey?** — No, only Finished journeys can be deleted.
 * **Q: What happens to profiles still in a journey when the 91-day timeout hits?** — They are automatically exited from the journey at that point.
 * **Q: Do I need special permissions to stop a journey?** — Yes, the Manage journeys permission is required, plus Campaigns > Publish Campaigns if the journey contains inline campaigns or messaging nodes.

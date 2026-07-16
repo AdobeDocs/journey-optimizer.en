@@ -94,6 +94,13 @@ To create an IP warmup campaign, follow the steps below.
 
     For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 
+1. Optionally, from the **[!UICONTROL Optimization]** section, add targeting rules to deliver different content to subsets of the audience based on profile attributes. [Learn more](../content-management/optimization-targeting.md)
+
+    If using targeting rules, keep in mind the following:
+
+    * The IP warmup campaign audience is evaluated **once** through the daily batch segmentation cycle. Profile membership is fixed at run activation and is not re-evaluated per run.
+    * Profile attributes used in targeting rules are read at the time each run is executed, reflecting the most recently ingested batch profile data — not real-time profile updates.
+
 1. [Activate](../campaigns/review-activate-campaign.md) the campaign. Its status changes to **[!UICONTROL Live]**.
 
     >[!NOTE]
