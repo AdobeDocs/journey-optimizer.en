@@ -360,7 +360,7 @@ No. `{{#each}}` is available only in message personalization content (email, SMS
 
 **Q: How do I reference a field whose name contains a hyphen?**
 
-Wrap the hyphenated key in backticks inside a PQL expression: `{%= profile.events.\`order-total\` > 100 %}`. Backticks are not supported in plain Handlebars interpolation — use a `{% let %}` variable as an intermediate step if needed.
+Wrap the hyphenated key in backticks inside a PQL expression: ``{%= profile.events.`order-total` > 100 %}``. Backticks are not supported in plain Handlebars interpolation — use a `{% let %}` variable as an intermediate step if needed.
 
 **Q: Why does `topN` need `{% let %}` before a `{{#each}}` loop?**
 
