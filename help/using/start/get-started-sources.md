@@ -100,6 +100,11 @@ Journey Optimizer supports various types of sources to connect with your existin
 * Salesforce
 * Salesforce Marketing Cloud
 
+**Loyalty and rewards:**
+* Talon.One
+* Capillary
+* Kobie
+
 ➡️ See the complete list in the [Experience Platform sources catalog](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"}
 
 ## Before you begin {#prerequisites}
