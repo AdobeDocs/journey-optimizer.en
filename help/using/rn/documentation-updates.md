@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## July 2026 {#july-2026}
 
+* The **Create IP warmup campaigns** page has been updated to clarify that targeting rules can be applied to IP warmup campaigns, and to document the evaluation behavior: audience membership is fixed at run activation (daily batch segmentation), while profile attributes are read at run execution time from the most recently ingested batch data. [Read more](../configuration/ip-warmup-campaign.md)
+
 * A warning has been added to the **Edit PTR records** page to inform customers that when adding a new forward DNS record to their platform, the forward DNS record for the old subdomain must not be removed until the move completes, as doing so will cause the edit to fail. [Read more](../configuration/ptr-records.md#edit-ptr-subdomains-cname)
 
 * The **Send using waves** pages have been updated to clarify audience re-evaluation behavior across waves: audience membership is fixed at activation time (snapshot), but profile attributes and consent are evaluated at the time each wave processes. This means opt-outs occurring between waves are respected. Read more in the [journeys](../building-journeys/send-using-waves.md#faq) and [campaigns](../campaigns/send-using-waves.md#faq) FAQ sections.
