@@ -104,6 +104,10 @@ During the Dry Run, the journey runs in simulation mode, applying the following 
   * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
   * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
 
+>[!NOTE]
+>
+>For journeys using a **Read Audience** activity with a scheduled execution time (daily, weekly, or monthly), the Dry run does not follow the time configured in the journey. Instead, the schedule is anchored to the moment Dry run was activated. For example, if your journey is set to run daily at 10 AM but you activate the Dry run at 8 AM, all subsequent scheduled reads during the Dry run execute at 8 AM.
+
 >[!CAUTION]
 >
 >* Permissions to start a Dry run are restricted to users with the **[!DNL Publish journeys]** high-level permission. Permissions to stop a Dry run are restricted to users with the **[!DNL Manage journeys]** high-level permission. Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
@@ -219,6 +223,10 @@ No. Reporting data is available only while the Dry run is **active**. Once stopp
 
 Dry run generates **stepEvents** flagged with `inDryRun` and a `dryRunID`. When analyzing journey reporting metrics with [!DNL Adobe Experience Platform] Query service, exclude step events where `inDryRun` is `true` (include only events where `inDryRun` is `null` or `false`).
 
+**Does the scheduled execution time of a Read Audience activity change in Dry run?**
+
+Yes. For journeys using a **Read Audience** activity with a scheduled time (daily, weekly, or monthly), the Dry run anchors the schedule to the moment Dry run was activated — not the time configured in the journey. For example, if the journey is set to run at 10 AM but you activate the Dry run at 8 AM, all daily reads during the Dry run execute at 8 AM.
+
 ## How-to video {#dry-run-video}
 
 Learn how to dry run your journeys in this video.
@@ -255,6 +263,7 @@ For complete understanding, this information should be combined with the documen
 * Reaction nodes are not executed during Dry run; profiles exit successfully, with priority rules for parallel unitary and reaction branches
 * Reporting data is only available while the Dry run is active; once stopped, the data is no longer accessible
 * Dry run journeys do not impact business rules
+* For journeys using a **Read Audience** activity with a scheduled time (daily, weekly, or monthly), the Dry run does not follow the configured journey schedule — the schedule is anchored to the moment Dry run was activated (e.g. journey set to 10 AM, Dry run activated at 8 AM → all reads during Dry run execute at 8 AM)
 
 **Terminology:**
 * Canonical name: Journey Dry run — Acronym: none — variants: dry run mode, Dry run publication mode
@@ -267,5 +276,6 @@ For complete understanding, this information should be combined with the documen
 * **Q: How do I exclude Dry run data from my journey analytics queries?** — Filter out step events where `inDryRun` is `true`; include only events where `inDryRun` is `null` or `false`.
 * **Q: Are profiles counted against any limits during a Dry run?** — Yes; profiles are counted towards Engageable Profiles and the Dry run journey is counted towards the live journey quota.
 * **Q: Can I enable Wait activities and external data source calls during a Dry run?** — Both are disabled by default, but you can choose to enable or disable them when activating the Dry run.
+* **Q: Does Dry run respect the scheduled execution time configured in a Read Audience journey?** — No. The Dry run anchors the schedule to the activation time, not the configured journey time. If the journey is set to run at 10 AM but Dry run is activated at 8 AM, all scheduled reads during Dry run execute at 8 AM.
 
 +++
