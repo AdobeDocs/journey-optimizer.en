@@ -160,6 +160,10 @@ Configure how members opt in, when task progress counts toward the challenge, an
 
    * **[!UICONTROL Number of times it can be completed]**: When repeat is enabled, specify how many times a member can complete the challenge.
 
+* **[!UICONTROL Completion requirements]** *(Standard challenges only)*:
+
+   * **[!UICONTROL Complete in a single transaction]**: When enabled, customers must complete all tasks within a single transaction. When disabled, tasks can be completed across separate transactions.
+
 ### Custom metadata {#custom-metadata}
 
 In the **[!UICONTROL Custom metadata]** section, select **[!UICONTROL Add key/value pair]** to add custom metadata. Use metadata for tracking or integration with external systems.
@@ -272,28 +276,31 @@ To configure when and how rewards are delivered:
 
    +++
 
-After configuring the challenge structure with tasks and rewards, design the content cards to display the challenge to customers.
+After configuring the challenge structure with tasks and rewards, you can optionally configure how the challenge is represented to customers. If you do not need challenge content, skip this step and proceed directly to [Configure messaging](#configure-messaging).
 
-## Configure content cards {#configure-content-cards}
+## Configure challenge content (optional) {#configure-content-cards}
 
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_challenge_content"
 >title="Content"
->abstract="Configure the content card that represents your challenge on customer devices and shows challenge information, progress, and rewards. Enter a name for the card, select a channel configuration so delivery uses the right technical settings (for example headers, subdomain, or mobile apps), then select Edit content to design and personalize the card experience."
+>abstract="Configure how your challenge is represented in locations where loyalty members access challenges and track their progress. Use Add action to choose Content card to display a card-style experience, or Code-based experience to deliver content through your own custom implementation."
 
-Content cards visually represent your challenge on customer devices, displaying challenge information, progress, and rewards. [Learn more about content cards](../content-card/create-content-card.md).
+The **[!UICONTROL Content]** tab controls how the challenge is represented in locations where loyalty members access challenges and track their progress.
 
-To configure content cards for your challenge:
+To configure challenge content:
 
-1. Navigate to the **[!UICONTROL Content]** tab and enter a **[!UICONTROL Name]** for the content card.
+1. Navigate to the **[!UICONTROL Content]** tab and click **[!UICONTROL Add action]**.
 
-1. Select the **[!UICONTROL Channel configuration]**. Channel configurations contain all the technical parameters for sending messages, such as header parameters, subdomain, mobile apps, etc. [Learn more about channel configurations](../configuration/channel-surfaces.md).
+1. Choose the action type:
 
-1. Select **[!UICONTROL Edit content]** to design your content card. [Learn how to design and personalize content cards](../content-card/design-content-card.md).
+   * **[!UICONTROL Content card]**: Displays the challenge as a card-style experience on customer devices. Select a **[!UICONTROL Channel configuration]** and click **[!UICONTROL Edit content]** to design and personalize the card. [Learn more about content cards](../content-card/create-content-card.md).
+   * **[!UICONTROL Code-based experience]**: Delivers challenge content through your own custom implementation using Journey Optimizer's code-based channel. Select a **[!UICONTROL Channel configuration]** and click **[!UICONTROL Edit content]** to define the content. [Learn more about code-based experiences](../code-based/create-code-based.md).
 
    ![](assets/challenge-create-content.png)
 
-After configuring the content card, set up messaging to engage customers throughout the challenge lifecycle.
+   You can add multiple actions to represent the challenge across different surfaces.
+
+After configuring the content, set up messaging to engage customers throughout the challenge lifecycle.
 
 ### Configure messaging {#configure-messaging}
 
