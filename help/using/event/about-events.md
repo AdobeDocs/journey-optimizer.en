@@ -56,17 +56,15 @@ topic_v2:
 
 Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey.
 
->[!IMPORTANT]
->
->For event requirements and limitations (streaming, Query Service, batch ingestion), see [Journey guardrails - Events](../start/guardrails.md#events-g).
-
 In the event configuration, you configure the events expected in the journeys. You can use multiple events (in different steps of a journey) and several journeys can use the same event.
 
 Event configuration is **mandatory** and must be performed by a Data engineer.
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Before configuring events, make sure you have: the **Journey Optimizer Administrator** or **Data Engineer** role, an XDM schema with **Real-Time Customer Profile** enabled, an active streaming endpoint, and access to the correct sandbox.
+>* Before configuring events, make sure you have: the **Journey Optimizer Administrator** or **Data Engineer** role, an XDM schema with **Real-Time Customer Profile** enabled, an active streaming endpoint, and access to the correct sandbox. 
+>
+>* For event requirements and limitations (streaming, Query Service, batch ingestion), see [Journey guardrails - Events](../start/guardrails.md#events-g).
 
 **Who does what:**
 
@@ -79,6 +77,8 @@ Event configuration is **mandatory** and must be performed by a Data engineer.
 | Configure audience qualification events (selected on the canvas) | Journey practitioner |
 
 You can configure three types of events: **Unitary events**, **Business events**, and **Audience qualification events**.
+
+➡️ [Discover this feature in video](#video)
 
 ➡️ [Discover this feature in video](#video)
 
