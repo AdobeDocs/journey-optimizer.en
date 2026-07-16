@@ -5,6 +5,7 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Use Journey Optimizer to build and deliver connected, contextual, and personalized experiences to your customers
 type: Documentation
 solution: Journey Optimizer
+nudge: true
 ---
 
 # Adobe Journey Optimizer Help {#using}
