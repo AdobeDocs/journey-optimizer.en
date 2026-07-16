@@ -24,10 +24,9 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
-
 >[!CONTEXTUALHELP]
 >id="ajo_admin_aem_content_fragment_configuration"
->title=""Adobe Experience Manager Configuration"
+>title="Adobe Experience Manager Configuration"
 >abstract="Connect a sandbox to an Adobe Experience Manager repository by setting author-only or publish access, custom domains, and authentication, so marketers can use Adobe Experience Manager Content Fragments in their journeys and campaigns."
 
 >[!CONTEXTUALHELP]
