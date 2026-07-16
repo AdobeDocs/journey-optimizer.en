@@ -45,7 +45,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Events are the real-time triggers that launch your journeys — compare the unitary, business, and audience qualification types to pick the right one for each use case.
+**On this page:** Understand the three event types, their schema requirements, key constraints, and how to choose the right one for your use case.
 
 >[!ENDSHADEBOX]
 
