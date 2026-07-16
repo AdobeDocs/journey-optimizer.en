@@ -104,9 +104,7 @@ During the Dry Run, the journey runs in simulation mode, applying the following 
   * If a **Reaction** node is used with one or multiple **unitary event** nodes in parallel, profiles will always go through the reaction event.
   * If a **Reaction** node is used with one or multiple **reaction event** nodes in parallel, profiles will always go though the first one in the canvas (the one at the top).
 
->[!NOTE]
->
->For journeys using a **Read Audience** activity with a scheduled execution time (daily, weekly, or monthly), the Dry run does not follow the time configured in the journey. Instead, the schedule is anchored to the moment Dry run was activated. For example, if your journey is set to run daily at 10 AM but you activate the Dry run at 8 AM, all subsequent scheduled reads during the Dry run execute at 8 AM.
+* **Read Audience** activities with a scheduled execution time (daily, weekly, or monthly) do not follow the time configured in the journey — the schedule is anchored to the moment Dry run was activated. For example, if your journey is set to run daily at 10 AM but you activate the Dry run at 8 AM, all subsequent scheduled reads during the Dry run execute at 8 AM.
 
 >[!CAUTION]
 >
