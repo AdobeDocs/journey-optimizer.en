@@ -25,6 +25,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## July 2026 {#july-2026}
 
+* The **Content check** page has been updated with a new **About HTML and CSS size** section that explains what is included in the authoring-time estimate (HTML structure, inlined CSS, personalization tokens, fragments, conditional blocks, and image references), why the estimate differs from the delivered size, and what the size warnings mean for authors. [Read more](../email/content-check.md#size-estimation)
+
 * The **Create IP warmup campaigns** page has been updated to clarify that targeting rules can be applied to IP warmup campaigns, and to document the evaluation behavior: audience membership is fixed at run activation (daily batch segmentation), while profile attributes are read at run execution time from the most recently ingested batch data. [Read more](../configuration/ip-warmup-campaign.md)
 * The **End a journey** page has been updated to clarify automatic stop timing for non-recurring Read Audience journeys: a safety buffer of approximately **96 hours (~4 days)** after the scheduled run, during which the journey can remain in **Live** status before transitioning to **Stopped** on the next scanner pass. The page now also clarifies that waves-based journeys, including Send-Time Optimization use cases, are excluded from this auto-stop and instead follow the standard 91-day journey timeout. [Read more](../building-journeys/end-journey.md#auto-stop-non-recurring)
 
