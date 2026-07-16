@@ -108,7 +108,7 @@ A **new user interface** is available for the journey canvas, built to scale wit
 
 To switch to the new experience, click the **[!UICONTROL New experience]** button in the journey canvas. Once switched, this setting is saved at the journey level, so the journey will open in the new experience by default on subsequent visits. To revert, click the **[!UICONTROL Old experience]** button.
 
-![](assets/journey-new-experience-switch.png){width="50%" align="center" zoomable="yes"}
+![](assets/journey-new-experience-switch.png)
 
 
 ## Start your journey {#start-your-journey}
