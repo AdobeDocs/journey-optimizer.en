@@ -71,7 +71,7 @@ Event configuration is **mandatory** and must be performed by a Data engineer.
 **Who does what:**
 
 | Task | Role |
-|---|---|
+| --- | --- |
 | Design and create the XDM schema | Data Engineer |
 | Set up the streaming endpoint | Data Engineer |
 | Configure unitary and business events (**Administration > Events**) | Data Engineer or Admin |
@@ -117,7 +117,7 @@ An **audience qualification** event is triggered when a profile enters or exits 
 ## Event types at a glance {#event-comparison}
 
 | | Unitary event | Business event | Audience qualification event |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Linked to a profile?** | Yes — triggered by a specific individual's action. | No — triggered by an external occurrence not tied to one person. | Yes — triggered when a profile enters or exits an audience. |
 | **Entry behavior** | One profile enters the journey in real time. | Multiple profiles enter via an automatic Read Audience step. | One profile enters when audience membership changes. |
 | **Typical use cases** | Cart abandonment recovery, form submission, app login, loyalty milestone. | Flight cancellation, stock replenishment alert, breaking news, weather event. | Re-engagement of lapsed customers, loyalty tier changes, VIP offboarding flows. |
@@ -161,7 +161,7 @@ Use the following criteria to select the right event type for your journey — t
 Each event type maps to a specific journey pattern:
 
 | Event type | Journey pattern |
-|---|---|
+| --- | --- |
 | Unitary event | Real-time, single-profile journey — triggers immediately when a person acts |
 | Business event | Broadcast journey — targets many profiles via an automatic Read Audience step |
 | Audience qualification event | Segment-triggered journey — fires when a profile enters or exits an audience |
@@ -181,7 +181,7 @@ Each event type maps to a specific journey pattern:
 Use this summary to plan your implementation before configuring events.
 
 | Constraint | Details |
-|---|---|
+| --- | --- |
 | Throughput limit | 5,000 events per second per organization, across all sandboxes (unitary and Read Audience journeys) |
 | Reentrance block | Profile reentrance blocked for 5 minutes after a unitary journey triggers |
 | Business events per journey | Maximum 1, must be the first step |
