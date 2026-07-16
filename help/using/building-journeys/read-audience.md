@@ -262,7 +262,9 @@ To minimize the risk of missing profiles:
 
 >[!CAUTION]
 >
->If you are targeting a [custom upload audience](../audience/about-audiences.md#about-segments) in your journey, profiles are only retrieved on the first recurrence when this option is enabled in a recurring journey. These audiences are fixed.
+>For [custom upload audiences](../audience/custom-upload.md) (CSV upload) and other external audiences (for example, Federated Audience Composition), **[!UICONTROL Incremental read]** is not functionally supported today. On each recurrence, the **entire audience** is processed, regardless of the Incremental read toggle setting.
+>
+>To control recurring entries, use [Force reentrance on recurrence](#schedule).
 
 +++
 

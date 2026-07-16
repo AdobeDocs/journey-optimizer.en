@@ -25,6 +25,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## July 2026 {#july-2026}
 
+* The **End a journey** page has been updated to clarify automatic stop timing for non-recurring Read Audience journeys: a safety buffer of approximately **96 hours (~4 days)** after the scheduled run, during which the journey can remain in **Live** status before transitioning to **Stopped** on the next scanner pass. The page now also clarifies that waves-based journeys, including Send-Time Optimization use cases, are excluded from this auto-stop and instead follow the standard 91-day journey timeout. [Read more](../building-journeys/end-journey.md#auto-stop-non-recurring)
+
+* The **Custom Upload** and **Read Audience** pages have been corrected to clarify Incremental Read behavior for external/custom audiences (including CSV upload and Federated Audience Composition): Incremental Read is not functionally supported for these audience types today, and the full audience is processed on each recurrence regardless of the Incremental Read toggle setting. Guidance now cross-links recurrence controls including **Force reentrance on recurrence**. [Read more about Custom Upload](../audience/custom-upload.md) and [Read more about Read Audience scheduling](../building-journeys/read-audience.md#schedule)
+
 * A warning has been added to the **Edit PTR records** page to inform customers that when adding a new forward DNS record to their platform, the forward DNS record for the old subdomain must not be removed until the move completes, as doing so will cause the edit to fail. [Read more](../configuration/ptr-records.md#edit-ptr-subdomains-cname)
 
 * The **Send using waves** pages have been updated to clarify audience re-evaluation behavior across waves: audience membership is fixed at activation time (snapshot), but profile attributes and consent are evaluated at the time each wave processes. This means opt-outs occurring between waves are respected. Read more in the [journeys](../building-journeys/send-using-waves.md#faq) and [campaigns](../campaigns/send-using-waves.md#faq) FAQ sections.
