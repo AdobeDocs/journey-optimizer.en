@@ -54,9 +54,7 @@ topic_v2:
 >title="Journey events"
 >abstract="Journey Optimizer supports three types of events in journeys: unitary events, linked to a specific person's behavior (such as a purchase or a loyalty milestone); business events, triggered by a global occurrence (such as a flight cancellation or a stock update); and audience qualification events, triggered when a profile enters or exits an audience. Use events to trigger journeys and orchestrate the right actions for your profiles."
 
-Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey.
-
-In the event configuration, you configure the events expected in the journeys. You can use multiple events (in different steps of a journey) and several journeys can use the same event.
+Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey. In the event configuration, you configure the events expected in the journeys. You can use multiple events (in different steps of a journey) and several journeys can use the same event.
 
 Event configuration is **mandatory** and must be performed by a Data engineer.
 
