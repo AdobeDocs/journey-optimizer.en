@@ -125,7 +125,9 @@ A **new user interface** has been introduced for the journey canvas, delivering 
 
 To switch to the new UI, click the **[!UICONTROL New experience]** button. This setting is saved at the journey level, so the journey reopens in the new experience by default. To revert, click **[!UICONTROL Old experience]**. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
 
-![](../building-journeys/assets/journey-new-experience-switch.png){width="50%" align="center" zoomable="yes"}
+![](../building-journeys/assets/journey-new-experience-switch.png)
+
+Availability date: July 16, 2026
 
 
 ## June '26 release notes {#june-26-rn}
