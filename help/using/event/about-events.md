@@ -56,13 +56,25 @@ topic_v2:
 
 Use events to trigger journeys individually, delivering real-time messages to each user as they enter the journey.
 
+In the event configuration, you configure the events expected in the journeys. You can use multiple events (in different steps of a journey) and several journeys can use the same event.
+
+Event configuration is **mandatory** and must be performed by a Data engineer.
+
 >[!IMPORTANT]
+>
+>Before configuring events, make sure you have: the **Journey Optimizer Administrator** or **Data Engineer** role, an XDM schema with **Real-Time Customer Profile** enabled, an active streaming endpoint, and access to the correct sandbox. 
 >
 >For event requirements and limitations (streaming, Query Service, batch ingestion), see [Journey guardrails - Events](../start/guardrails.md#events-g).
 
-In the event configuration, you configure the events expected in the journeys. The incoming events' data is normalized following Adobe Experience Data Model (XDM). Events come from Streaming Ingestion APIs for authenticated and unauthenticated events (such as Adobe Mobile SDK events). You can use multiple events (in different steps of a journey) and several journeys can use the same event.
+**Who does what:**
 
-Event configuration is **mandatory** and must be performed by a Data engineer.
+| Task | Role |
+| --- | --- |
+| Design and create the XDM schema | Data Engineer |
+| Set up the streaming endpoint | Data Engineer |
+| Configure unitary and business events (**Administration > Events**) | Data Engineer or Admin |
+| Use events in a journey | Journey practitioner |
+| Configure audience qualification events (selected on the canvas) | Journey practitioner |
 
 You can configure three types of events: **Unitary events**, **Business events**, and **Audience qualification events**.
 
