@@ -73,7 +73,7 @@ topic_v2:
 <p>Previously available in Limited Availability, this capability is now generally available to all customers.</p>
 <p><img src="assets/do-not-localize/content-check.gif"></p>
 <p>For more information, refer to the <a href="../email/content-check.md">detailed documentation</a>.</p>
-<p>Availability date: July 10, 2026</p>
+<p>Availability date: July 16, 2026</p>
 </td>
 </tr>
 </tbody>
