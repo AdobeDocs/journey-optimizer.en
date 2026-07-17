@@ -23,9 +23,9 @@ Discover the latest Journey Optimizer features and improvements in the Release N
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
 
->[!TAB AI Assistant for personalization]
+>[!TAB AI Generated content for personalization]
 
-Use **AI Assistant** in the Personalization Editor or from the Email Designer toolbar (**Add expression**) to describe what you want in plain language and get a personalization expression, or select existing code to explain it, fix issues, or suggest improvements.
+Use **AI Generated Content** in the Personalization Editor or from the Email Designer toolbar (**Add expression**) to describe what you want in plain language and get a personalization expression, or select existing code to explain it, fix issues, or suggest improvements.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/generative-personalization-expressions.md)
 

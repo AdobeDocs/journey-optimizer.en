@@ -143,7 +143,7 @@ A successful Journey Optimizer implementation typically follows this sequence, w
 4. **Marketer**: Designs and executes customer experiences  
    Marketers leverage all the foundational work to build journeys, create content, and optimize customer experiences across all channels.  
    * Build audiences using segmentation, CSV upload, or audience composition  
-   * Design personalized content with AI Assistant and templates  
+   * Design personalized content with Generate Content and templates  
    * Create multi-channel journeys with event and audience triggers
    * Test with approval workflows before launch
    * Monitor performance and optimize based on reporting insights  

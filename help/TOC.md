@@ -553,17 +553,15 @@ nudge: yes
         + [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
         + [Sample Vendor configurations](using/integrations/vendor-integration.md)  
     + [Work with AI tools via MCP](/help/using/integrations/ajo-mcp.md)
-  + AI Assistant for content generation {#ai-assistant}
-    + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
-    + [Get started with AI Assistant](using/content-management/gs-generative.md)
+  + Generate content {#generate-content}
+    + [Get started with Generate content](using/content-management/gs-generative.md)
     + [AI prompt best pratices](using/content-management/ai-assistant-prompting-guide.md)
     + [Generate full content with AI](using/content-management/generative-full-content.md)
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
-    + [AI Assistant for Personalization Expressions](using/content-management/generative-personalization-expressions.md)
-    + [AI Assistant use cases](using/content-management/generative-uc.md)
+    + [Generate content for personalization expressions](using/content-management/generative-personalization-expressions.md)
+    + [Generate content use cases](using/content-management/generative-uc.md)
     + Brands {#brands}
-      + [Brands](/help/rp_landing_pages/brands-landing-page.md)
       + [Create & manage your Brands](using/content-management/brands.md)
       + [Personalize your Brands](using/content-management/brands-personalize.md)
       + [Create & manage generative models](using/content-management/generative-models.md)

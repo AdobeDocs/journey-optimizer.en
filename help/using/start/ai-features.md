@@ -202,15 +202,15 @@ The [Experimentation Agent](https://experienceleague.adobe.com/en/docs/experienc
 
 ## AI-Powered content generation {#content-generation}
 
-Use generative AI to create and personalize content across multiple channels, accelerating your content creation process while maintaining brand consistency. AI Assistant for content generation is available for [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [SMS](../mobile/get-started-mobile.md), and [web](../web/get-started-web.md) experiences - helping you generate subject lines, body text, images, and complete message variations.
+Use generative AI to create and personalize content across multiple channels, accelerating your content creation process while maintaining brand consistency. Generate Content is available for [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [SMS](../mobile/get-started-mobile.md), and [web](../web/get-started-web.md) experiences - helping you generate subject lines, body text, images, and complete message variations.
 
 ### Key Features
 
-* **Full Content Generation** - Generate complete content experiences (text and images) in one flow for email, web, landing pages, and push. [Generate full content with AI Assistant](../content-management/generative-full-content.md)
+* **Full Content Generation** - Generate complete content experiences (text and images) in one flow for email, web, landing pages, and push. [Generate full content with AI](../content-management/generative-full-content.md)
 * **Text Generation** - Create compelling copy based on your brand voice and objectives. [Generate text with AI](../content-management/generative-text.md)
 * **Image Generation** - Generate custom images using Adobe Firefly. [Generate images with AI](../content-management/generative-image.md)
 * **Content Variations** - Produce multiple variations for A/B testing. [Content experiment with AI](../content-management/generative-experimentation.md)
-* **Personalization** - Generate new expressions, explain existing code, or fix issues with AI Assistant from the Personalization Editor or from the Email Designer toolbar (**Add expression**). [AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
+* **Personalization** - Generate new expressions, explain existing code, or fix issues with Generate Content from the Personalization Editor or from the Email Designer toolbar (**Add expression**). [Generate content for personalization expressions](../content-management/generative-personalization-expressions.md)
 * **Brand Alignment** - Ensure generated content matches your brand guidelines. [Evaluate brand alignment](../content-management/brands-score.md)
 * **Template Support** - Leverage your existing email templates. [Work with content templates](../content-management/content-templates.md)
 
@@ -279,7 +279,7 @@ Only rules and ranking formulas whose PQL expression is larger than **2 KB** (UT
 
 ### Permissions
 
-This capability uses the same generative AI access controls as **AI Assistant**. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. [Learn more about AI Assistant access](../content-management/gs-generative.md#generative-access)
+This capability uses the same generative AI access controls as **Generate Content**. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. [Learn more about Generate Content access](../content-management/gs-generative.md#generative-access)
 
 [Optimize Decisioning rules](../experience-decisioning/rules.md#optimize) | [Optimize ranking formulas](../experience-decisioning/ranking/ranking-formulas.md#optimize)
 
@@ -359,7 +359,7 @@ Connect Adobe Journey Optimizer to MCP-compatible AI applications like Claude We
 
 +++**What permissions do I need for AI features?**
 
-* **[AI Assistant for content generation](#content-generation)** - Requires the "Generate Content" permission
+* **[Generate Content](#content-generation)** - Requires the "Generate Content" permission
 * **[AI Assistant](#ai-assistant)** product knowledge - Requires agreement to Adobe Generative AI User Guidelines
 * **[Journey Analyze Agent](#journey-agent)** - Requires View/Manage Journeys and View/Manage Segments permissions
 * **[Journey Create Agent](#journey-create-agent)** - Requires Manage Journeys, View Journey Events/Data Sources/Actions, View Segments, and Manage Segments permissions
@@ -395,7 +395,7 @@ Most AI features are included with Adobe Journey Optimizer. Some capabilities li
 >
 >* [What is Journey Optimizer?](get-started.md) — Overview of key capabilities, use cases, and architecture.
 >* [Understanding how it works](understanding-ajo.md) — How Journey Optimizer and Experience Platform work together.
->* [AI content generation](../content-management/gs-generative.md) — Generate emails, push, SMS, and web content with AI Assistant.
+>* [AI content generation](../content-management/gs-generative.md) — Generate emails, push, SMS, and web content with Generate Content.
 >* [Send-Time Optimization](../building-journeys/send-time-optimization.md) — Predict and optimize message delivery timing per individual.
 >* [AI models for decisioning](../experience-decisioning/ranking/ai-models.md) — Rank and personalize offers automatically with AI ranking models.
 >* [Work with MCP clients](../integrations/ajo-mcp.md) — Query campaigns, journeys, and offers from Claude Web, Claude Desktop, or Cursor using the Journey Optimizer MCP server.
