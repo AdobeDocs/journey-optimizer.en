@@ -59,9 +59,9 @@ On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]**
 
     >[!NOTE]
     >
-    >Pre-filled execution email and phone fields come from values previously used in journey simulation and cached in your browser.
+    >Pre-filled execution email, phone and push token fields come from values previously used in journey simulation and cached in your browser.
 
-    ![Quick Simulation Update values step with wait time override and proof email and phone fields](assets/quick-simulation-3.png)
+    ![Quick Simulation Update values step with wait time override and proof email, phone and push token fields](assets/quick-simulation-3.png)
 
 1. The Journey Agent generates a set of simulated users from the journey definition.
 
@@ -89,13 +89,13 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
         
     Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
         
-    For journeys with an Email, Push or SMS node, the AI prompts you to confirm the email address or phone number to use. Simulated users will be generated using those defined values. Once done, click **[!UICONTROL Generate]**.
+    For journeys with an Email, Push or SMS node, the AI prompts you to confirm the email address, phone number or push token to use. Simulated users will be generated using those defined values. Once done, click **[!UICONTROL Generate]**.
 
     >[!NOTE]
     >
-    >The email and phone fields are pre-filled from values previously used in journey simulation and cached in your browser.
+    >The email, phone and push token fields are pre-filled from values previously used in journey simulation and cached in your browser.
 
-    ![Generate simulated users dialog with execution email and phone fields and Generate button](assets/simulate-generate.png)
+    ![Generate simulated users dialog with execution email, phone and push token fields and Generate button](assets/simulate-generate.png)
 
     +++
 
