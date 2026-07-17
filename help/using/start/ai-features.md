@@ -349,6 +349,12 @@ Evaluate how well your content aligns with your brand guidelines using AI-powere
 
 [Learn more about Brand Alignment](../content-management/brands-score.md)
 
+### Adobe Journey Optimizer MCP server (Beta) {#mcp-server}
+
+Connect Adobe Journey Optimizer to MCP-compatible AI applications like Claude Web, Claude Desktop, and Cursor using the Model Context Protocol (MCP). The MCP server lets you query campaigns, journeys, offers, and channel configurations with plain-language prompts — no API calls or UI navigation required. All operations are currently read-only.
+
+[Learn more about the Journey Optimizer MCP server](../integrations/ajo-mcp.md)
+
 ## Frequently asked questions {#faq}
 
 +++**What permissions do I need for AI features?**
@@ -392,3 +398,4 @@ Most AI features are included with Adobe Journey Optimizer. Some capabilities li
 >* [AI content generation](../content-management/gs-generative.md) — Generate emails, push, SMS, and web content with AI Assistant.
 >* [Send-Time Optimization](../building-journeys/send-time-optimization.md) — Predict and optimize message delivery timing per individual.
 >* [AI models for decisioning](../experience-decisioning/ranking/ai-models.md) — Rank and personalize offers automatically with AI ranking models.
+>* [Work with MCP clients](../integrations/ajo-mcp.md) — Query campaigns, journeys, and offers from Claude Web, Claude Desktop, or Cursor using the Journey Optimizer MCP server.
