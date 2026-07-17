@@ -54,6 +54,17 @@ topic_v2:
 
 Adobe Journey Optimizer harnesses the power of artificial intelligence and machine learning to help you create, optimize, and deliver exceptional customer experiences. From generating personalized content to predicting optimal send times, AI capabilities streamline your workflow and maximize impact. Use Case Playbooks provide pre-built templates to quickly implement common marketing scenarios.
 
+## Quick navigation {#quick-navigation}
+
+Use these grouped links to jump to the feature you need:
+
+* **Conversational AI and agents:** [AI Assistant](#ai-assistant), [Journey Agent](#journey-agent), [Experimentation Agent](#experimentation-agent), [Additional AI Agents](#additional-ai-agents)
+* **Content creation:** [AI-powered content generation](#content-generation), [Image to HTML Converter](#image-to-html), [GenStudio for performance marketing](#genstudio), [Brand alignment scoring](#brand-alignment)
+* **Optimization and decisioning:** [Send-Time Optimization](#send-time-optimization), [AI models for decisioning](#ai-decisioning), [AI-powered rule and formula optimization](#decisioning-optimization)
+* **Experimentation:** [Content Experimentation with AI](#experimentation)
+* **Templates and integrations:** [Use case playbooks](#playbooks), [Adobe Journey Optimizer MCP server](#mcp-server)
+* **Help:** [FAQ](#faq)
+
 ## AI Assistant {#ai-assistant}
 
 AI Assistant is your conversational guide to Adobe Journey Optimizer. Use it to get instant answers about product features, operational insights about your journeys, and help navigating the platform.
@@ -194,7 +205,7 @@ The [Experimentation Agent](https://experienceleague.adobe.com/en/docs/experienc
 
 +++
 
-### Additional AI Agents
+### Additional AI Agents {#additional-ai-agents}
 
 **Audience Agent** - For conversational audience exploration and management across Adobe Experience Platform, including duplicate detection and size tracking. [Learn more about Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience){target="_blank"}
 
@@ -331,19 +342,19 @@ Browse Journey Optimizer playbooks for common scenarios like:
 
 ## Additional AI Capabilities {#additional-capabilities}
 
-### Image to HTML Converter
+### Image to HTML Converter {#image-to-html}
 
 Transform static image designs (JPEG, PNG) into editable HTML email templates using AI-powered conversion technology.
 
 [Learn more about Image to HTML](../content-management/image-to-html.md)
 
-### GenStudio for performance marketing
+### GenStudio for performance marketing {#genstudio}
 
 Integrate with Adobe GenStudio for Performance Marketing to create AI-powered email content and import templates into Journey Optimizer for orchestration. Export Journey Optimizer templates to GenStudio, generate variations with AI, and bring them back for deployment. (Limited availability, email channel only.)
 
 [Learn more about GenStudio](../integrations/genstudio.md)
 
-### Brand alignment scoring
+### Brand alignment scoring {#brand-alignment}
 
 Evaluate how well your content aligns with your brand guidelines using AI-powered scoring that measures tone, voice, and messaging consistency.
 
