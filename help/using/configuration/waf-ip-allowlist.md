@@ -38,7 +38,7 @@ Once both are in place, the traffic flow works as follows:
    - **IP matches** → the request went through the WAF → processed normally.
    - **IP does not match** → the request bypassed the WAF → **rejected with a 403 Forbidden error**. The recipient sees a broken link.
 
-Requests for subdomains without an allowed list configured are not affected and continue to work as before.
+Requests for subdomains without allowed IPs configured are not affected and continue to work as before.
 
 ## Guardrails and constraints {#waf-ip-allowlist-guardrails}
 
@@ -57,7 +57,9 @@ Requests for subdomains without an allowed list configured are not affected and 
 
 ## Access and manage allowed IPs {#waf-ip-allowlist-access}
 
-To access the list of subdomains for which you have allowed IPs for your Web Application Firewall, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General Settings]**, and select **[!UICONTROL Allowed list IPs]**.
+To access the list of subdomains for which you have allowed IPs for your Web Application Firewall, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General Settings]**, and select **[!UICONTROL Allowed list - IPs]**.
+
+![WAF IP allowed list inventory](assets/waf-ip-allowlist.png)
 
 The inventory page lists all subdomains that have at least one WAF IP allowed, across all channel types (Email, Landing page, SMS, Web).
 
@@ -65,9 +67,9 @@ The inventory page lists all subdomains that have at least one WAF IP allowed, a
 >
 >To access and manage the WAF IP allowed list, you must have the **[!UICONTROL View Allowed IPs]** and **[!UICONTROL Manage Allowed IPs]** permission. <!--The **[!UICONTROL Manage Email Settings]**, **[!UICONTROL View Email Settings]**, and **[!UICONTROL Manage Channel Configurations]** permissions are also needed??.--> [Learn more](../administration/high-low-permissions.md#administration-permissions)
 
-You can filter the inventory by channel type, and search by subdomain name.
-
 The inventory shows the number of allowed IPs per subdomain, and the author of the last modification.
+
+You can filter the inventory by channel type, and search by subdomain name.
 
 <!--
 ## Subdomain scope {#waf-ip-allowlist-subdomains}
@@ -96,13 +98,15 @@ To add  Web Application Firewall IPs to the allowed list for a given subdomain, 
 
 1. Select the target subdomain from the **[!UICONTROL Subdomain]** drop-down list. Only delegated subdomains are listed, across all supported channel types: Email, Landing page, SMS, and Web.
 
-1. In the **[!UICONTROL IP address]** field, enter the public egress IPs of your WAF. IPv4, IPv6, and CIDR ranges are supported (for example, `203.0.113.42`, `2001:db8::1`, `203.0.113.0/24`). Each valid, non-duplicate entry is validated inline before being added.
+1. In the **[!UICONTROL IP address]** field, enter the public egress IPs of your WAF. IPv4, IPv6, and CIDR ranges are supported (for example, `203.0.113.42`, `2001:db8::1`, `203.0.113.0/24`).
+
+   Each valid, non-duplicate entry is validated inline before being added. You can add up to **50 IP entries per subdomain**.
+
+   ![Add WAF allowed IPs for a subdomain](assets/waf-ip-allowlist-add-ip.png)
 
    >[!CAUTION]
    >
    >A warning is displayed when private or reserved IP ranges (RFC 1918, loopback, link-local) are entered. WAF egress IPs are normally public addresses.
-
-   You can add up to **50 IP entries per subdomain**.
 
 1. If needed, you can remove an IP from the list by clicking the **✕** icon on its chip.
 
@@ -120,11 +124,15 @@ The **Subdomain** field is read-only <!--as well as the Channel field--> — it 
 
 Add new IPs using the input field, or remove existing IPs by clicking the **✕** icon on each chip.
 
+![Edit or remove WAF allowed IPs](assets/waf-ip-allowlist-edit-ip.png)
+
 >[!IMPORTANT]
 >
 >Removing the last IP from a subdomain reopens it to all inbound traffic. The editor displays an explicit warning before you save such a change.
 
 ## Remove allowed IPs {#waf-ip-allowlist-remove}
+
+*TBC as I cannot see the Delete icon on stage.*
 
 To remove all IPs from the allowed list for a subdomain, use the Delete icon from the row menu in the inventory. This fully lifts the WAF restriction for that subdomain.
 
