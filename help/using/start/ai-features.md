@@ -256,21 +256,19 @@ Send-Time Optimization analyzes historical engagement data (opens and clicks) to
 
 ## AI models for decisioning {#ai-decisioning}
 
-Create intelligent ranking models that automatically optimize which offers to show to each customer, maximizing business objectives.
+Create intelligent ranking models that rank offers by conversion rate (conversions ÷ impressions), automatically showing each customer the offer most likely to convert.
 
 ### Model Types
 
-**Auto-optimization** - Learns from customer interactions to automatically improve offer performance over time
-
-**Personalized optimization** - Uses customer profile attributes and behavior to predict the best offer for each individual
+* **Auto-optimization** - Learns from the overall, non-personalized performance of your offers to automatically improve conversion over time. A good fit when offers change often, since the model retrains roughly every 6 hours.
+* **Personalized optimization** - Uses customer profile attributes, behavior, and audience membership to predict the best offer for each individual. Choose this when you need a different ranking per customer rather than one overall winner.
 
 ### Requirements
 
-* At least 2 offers with sufficient interaction data:
-  * 100+ display events
-  * 5+ click events  
-  * Within the last 14 days
-* Maximum 5 AI ranking models per organization
+Minimum data requirements differ by model type:
+
+* **Auto-optimization** - At least 2 offers with 100+ display events and 5+ click events each within the last 14 days. Offers below this threshold are treated as new and only served through exploration traffic.
+* **Personalized optimization** - Uses a rolling 30-day window. Adobe recommends at least 1,000 impressions and 100 conversion events per offer per week; by default, offers with fewer than 1,000 impressions or 50 conversions won't get a model trained for them. Up to 5 audiences can be selected to train a single model.
 
 [Learn more about AI models for decisioning](../experience-decisioning/ranking/ai-models.md) | [Create AI ranking models](../experience-decisioning/ranking/create-ai-models.md)
 
