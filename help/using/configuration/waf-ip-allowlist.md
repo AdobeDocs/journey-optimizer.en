@@ -13,28 +13,28 @@ exl-id:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Add and manage your Web Application Firewall (WAF) egress IPs per delegated subdomain directly in Journey Optimizer, so that only traffic routed through your Web Application Firewall can reach your Journey Optimizer-hosted links.
+**On this page:** Add and manage your Web Application Firewall (WAF) egress IPs per delegated subdomain directly in [!DNL Journey Optimizer], so that only traffic routed through your firewall can reach your [!DNL Journey Optimizer]-hosted links.
 
 >[!ENDSHADEBOX]
 
 
-Organizations with strict network security requirements — such as those in the financial sector — can mandate that all requests to links hosted by Adobe Journey Optimizer must flow through a customer-managed **Web Application Firewall** (WAF) before reaching the Adobe network. Any request that bypasses the WAF must be rejected.
+Organizations with strict network security requirements — such as those in the financial sector — can mandate that all requests to links hosted by [!DNL Adobe Journey Optimizer] must flow through a customer-managed **Web Application Firewall** (WAF) before reaching the Adobe network. Any request that bypasses the firewall must be rejected.
 
-The Journey Optimizer **WAF IP allowed list feature** lets administrators configure, per delegated subdomain, the public egress IPs of their WAF. Once set, Journey Optimizer enforces that only traffic originating from those IPs can reach the corresponding subdomain. All other inbound requests — including direct requests that bypass the WAF — are rejected.
+[!DNL Journey Optimizer] lets administrators configure, per delegated subdomain, the public egress IPs of their WAF. Once set, only traffic originating from those IPs can reach the corresponding subdomain. All other inbound requests — including direct requests that bypass the firewall — are rejected.
 
 ## How it works {#waf-ip-allowlist-how-it-works}
 
 Enabling WAF-only routing for a subdomain requires two steps as detailed below.
 
 1. **DNS re-pointing**: the subdomain's DNS records must be updated to route traffic to your organization's WAF instead of directly to Adobe's network edge.
-1. **WAF egress IP declaration**: your organization provides the public egress IPs of your WAF in Journey Optimizer. These are the IPs from which the WAF sends requests onward to Adobe.
+1. **WAF egress IP declaration**: your organization provides the public egress IPs of your WAF in [!DNL Journey Optimizer]. These are the IPs from which the firewall sends requests onward to Adobe.
 
 Once both are in place, the traffic flow works as follows:
 
-1. A recipient clicks a link in an Adobe Journey Optimizer communication.
+1. A recipient clicks a link in an [!DNL Adobe Journey Optimizer] communication.
 1. The request reaches your organization's WAF, which inspects and filters it according to your security policies.
 1. The WAF forwards the request to Adobe's network edge, from one of its declared egress IPs.
-1. Journey Optimizer checks the source IP of the incoming request against the subdomain's allowed list.
+1. [!DNL Journey Optimizer] checks the source IP of the incoming request against the subdomain's allowed list.
    - **IP matches** → the request went through the WAF → processed normally.
    - **IP does not match** → the request bypassed the WAF → **rejected with a 403 Forbidden error**. The recipient sees a broken link.
 
@@ -49,12 +49,11 @@ Requests for subdomains without an allowed list configured are not affected and 
 | **Reserved-range warning** | A non-blocking warning is shown when private/reserved ranges are entered (WAF egress IPs are normally public). |
 | **Delegated subdomains only** | Only delegated and verified subdomains are selectable. |
 | **Per-subdomain cap** | Maximum **50 IP entries** per subdomain. |
-| **Audit log** | Every add, edit, and remove event is recorded in the [Journey Optimizer Audit Log](../privacy/audit-logs.md) with actor, subdomain, before/after IPs, and timestamp. |
 | **Lock-out safeguards** | Type-to-confirm on full removal; explicit warnings whenever an action would reopen a subdomain to all traffic. |
 
 >[!CAUTION]
 >
->**Misconfiguration immediately breaks all links on the affected subdomain.** If incorrect WAF egress IPs are saved, Journey Optimizer will reject every incoming request for that subdomain — including legitimate ones from real recipients clicking links in communications, who will receive a 403 error page. Always confirm the exact egress IPs with your security team before saving, and test on a non-production subdomain first if possible.
+>**Misconfiguration immediately breaks all links on the affected subdomain.** If incorrect WAF egress IPs are saved, [!DNL Journey Optimizer] will reject every incoming request for that subdomain — including legitimate ones from real recipients clicking links in communications, who will receive a 403 error page. Always confirm the exact egress IPs with your security team before saving, and test on a non-production subdomain first if possible.
 
 ## Access and manage allowed IPs {#waf-ip-allowlist-access}
 
@@ -65,6 +64,10 @@ The inventory page lists all subdomains that have at least one WAF IP allowed, a
 >[!NOTE]
 >
 >To access and manage the WAF IP allowed list, you must have the **[!UICONTROL View Allowed IPs]** and **[!UICONTROL Manage Allowed IPs]** permission. <!--The **[!UICONTROL Manage Email Settings]**, **[!UICONTROL View Email Settings]**, and **[!UICONTROL Manage Channel Configurations]** permissions are also needed??.--> [Learn more](../administration/high-low-permissions.md#administration-permissions)
+
+You can filter the inventory by channel type, and search by subdomain name.
+
+The inventory shows the number of allowed IPs per subdomain, and the author of the last modification.
 
 <!--
 ## Subdomain scope {#waf-ip-allowlist-subdomains}
@@ -85,15 +88,15 @@ If a subdomain is later un-delegated upstream, its allowed list entry is flagged
 >[!CONTEXTUALHELP]
 >id="ajo_waf_allowed_ips"
 >title="Enter WAF allowed IPs for the selected subdomain"
->abstract="Select a delegated subdomain and enter the public egress IPs of your Web Application Firewall. Once saved, Journey Optimizer will reject any inbound request to that subdomain that does not originate from one of the declared IPs. Always confirm the exact egress IPs with your security team before saving."
+>abstract="Select a delegated subdomain and enter the public egress IPs of your Web Application Firewall. Once saved, [!DNL Journey Optimizer] will reject any inbound request to that subdomain that does not originate from one of the declared IPs. Always confirm the exact egress IPs with your security team before saving."
 
 To add  Web Application Firewall IPs to the allowed list for a given subdomain, follow the steps below.
 
-1. From the IP inventory, click the **[!UICONTROL Allowed list IPs]** button.
+1. From the **[!UICONTROL Allowed list - IPs]** inventory, click the **[!UICONTROL Add allowed IPs]** button.
 
 1. Select the target subdomain from the **[!UICONTROL Subdomain]** drop-down list. Only delegated subdomains are listed, across all supported channel types: Email, Landing page, SMS, and Web.
 
-1. In the **[!UICONTROL IP address]** field, enter the public egress IPs of your WAF. IPv4, IPv6, and CIDR ranges are supported (for example, `203.0.113.0/24`). Each valid, non-duplicate entry is validated inline before being added.
+1. In the **[!UICONTROL IP address]** field, enter the public egress IPs of your WAF. IPv4, IPv6, and CIDR ranges are supported (for example, `203.0.113.42`, `2001:db8::1`, `203.0.113.0/24`). Each valid, non-duplicate entry is validated inline before being added.
 
    >[!CAUTION]
    >
