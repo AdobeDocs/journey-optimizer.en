@@ -16,11 +16,6 @@ subfeature_v2: []
 
 # Generate expressions with the Expression Assistant {#expression-agent}
 
->[!CONTEXTUALHELP]
->id="journeyExpAI"
->title="Generate expressions with the Expression Assistant"
->abstract="The Expression Assistant uses generative AI to help you build and generate expressions directly in the Journey advanced expression editor. For example in conditions, **Optimize** activities, or **Wait** activities that use a custom date. When you describe what you need in plain language, the assistant generates the corresponding expression for you."
-
 >[!AVAILABILITY]
 >
 >This feature is currently in **public beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../../rn/releases.md).
