@@ -956,6 +956,7 @@ nudge: yes
     + [Suppression list](using/configuration/manage-suppression-list.md)
     + [Retries](using/configuration/retries.md)
     + [Allowed list](using/configuration/allow-list.md)
+  + [WAF IP allowed list](using/configuration/waf-ip-allowlist.md)
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for email archiving](using/configuration/archiving-support.md)
   + [Add a CC field to emails](using/configuration/cc-email-field.md)
