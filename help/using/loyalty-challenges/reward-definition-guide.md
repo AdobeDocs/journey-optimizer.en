@@ -169,11 +169,11 @@ When `rewardJsonata` is evaluated, it receives a single root object containing e
 
 +++
 
-## Writing the `rewardJsonata` expression
+## Writing the rewardJsonata expression
 
 The expression receives the reward context as its input and must return a JSON object — the payload POSTed to the provider's endpoint. The shape of that object is entirely up to the provider's API; you map context fields onto whatever structure the provider expects.
 
-### Simple fixed payload
++++Simple fixed payload
 
 The simplest case: the provider needs a point count and a member ID, both known from the context.
 
@@ -197,7 +197,9 @@ The simplest case: the provider needs a point count and a member ID, both known 
 
 > `rewardContext.rewardValue` is always a string. Use `$number()` to convert it if your provider expects a numeric value.
 
-### Using `kvpCustom` for provider-specific metadata
++++
+
++++Using `kvpCustom` for provider-specific metadata
 
 Providers often require fields like campaign IDs or source system codes that are specific to each challenge run. Store these in `challenge.kvpCustom` when authoring the challenge, then reference them in the expression — keeping the expression reusable across campaigns.
 
@@ -212,7 +214,9 @@ Providers often require fields like campaign IDs or source system codes that are
 
 You can also use `reward.kvpCustom` for constants that are fixed for a given reward type rather than per-challenge.
 
-### Using task accumulator data
++++
+
++++Using task accumulator data
 
 Task accumulators hold a record of every qualifying event. Use `item_list[-1]` to access the most recently applied item — its `transactionId` and `timestamp` are useful for audit trails and deduplication on the provider side.
 
@@ -225,7 +229,9 @@ Task accumulators hold a record of every qualifying event. Use `item_list[-1]` t
 }
 ```
 
-### Constructing a text message
++++
+
++++Constructing a text message
 
 For notification-based providers (Slack, SMS, email), you can build a message string directly using JSONata's `&` concatenation operator:
 
@@ -242,6 +248,8 @@ For notification-based providers (Slack, SMS, email), you can build a message st
   "text": "You just earned 50 Stars!"
 }
 ```
+
++++
 
 ## Examples
 
