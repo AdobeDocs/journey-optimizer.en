@@ -69,7 +69,7 @@ The inventory page lists all subdomains that have at least one WAF IP allowed, a
 
 >[!NOTE]
 >
->To access and manage the WAF IP allowed list, you must have the **[!UICONTROL View Allowed IPs]** and **[!UICONTROL Manage Allowed IPs]** permission. <!--The **[!UICONTROL Manage Email Settings]**, **[!UICONTROL View Email Settings]**, and **[!UICONTROL Manage Channel Configurations]** permissions are also needed??.--> [Learn more](../administration/high-low-permissions.md#administration-permissions)
+>To access and manage the WAF IP allowed list, you must have the **[!UICONTROL View Allowed IPs]** and **[!UICONTROL Manage Allowed IPs]** permission. <!--The **[!UICONTROL Manage Email Settings]**, **[!UICONTROL View Email Settings]**, and **[!UICONTROL Manage Channel Configurations]** permissions are also needed??.--> [Learn more](../administration/ootb-permissions.md)
 
 The inventory shows the number of allowed IPs per subdomain, and the author of the last modification.
 
