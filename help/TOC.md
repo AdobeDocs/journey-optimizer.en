@@ -149,6 +149,8 @@ nudge: yes
   + {hide-from-toc} [Create tasks](using/loyalty-challenges/create-tasks.md)
   + {hide-from-toc} [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
   + {hide-from-toc} [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
+  + {hide-from-toc} [Reward Definition guide](using/loyalty-challenges/reward-definition-guide.md)
+  + {hide-from-toc} [Event Transformer guide](using/loyalty-challenges/event-transformer-guide.md)
   + {hide-from-toc} [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
   + {hide-from-toc} [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
 + Campaigns {#campaigns}
