@@ -108,7 +108,8 @@ nudge: yes
   + Build expressions {#building-advanced-conditions-journeys}
     + [Build expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
     + [Work with the advanced expression editor](using/building-journeys/expression/expressionadvanced.md)
-    + [Generate expressions with the Expression Assistant](using/building-journeys/expression/expression-agent.md)
+    + [Generate expressions with AI](using/building-journeys/expression/generate-expression.md)
+    + {hide-from-toc} [Generate expressions with the Expression Assistant](using/building-journeys/expression/expression-agent.md)
     + Syntax {#syntax}
       + [Syntax](/help/rp_landing_pages/syntax-landing-page.md)
       + [Advanced expression editor syntax](using/building-journeys/expression/generalities.md)
@@ -148,6 +149,8 @@ nudge: yes
   + {hide-from-toc} [Create tasks](using/loyalty-challenges/create-tasks.md)
   + {hide-from-toc} [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
   + {hide-from-toc} [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
+  + {hide-from-toc} [Reward Definition guide](using/loyalty-challenges/reward-definition-guide.md)
+  + {hide-from-toc} [Event Transformer guide](using/loyalty-challenges/event-transformer-guide.md)
   + {hide-from-toc} [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
   + {hide-from-toc} [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
 + Campaigns {#campaigns}
