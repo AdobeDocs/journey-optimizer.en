@@ -43,7 +43,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to add and configure Email Designer content components such as buttons, text, images, dividers, HTML, social links, offer decisions, and tables to build your email content.
+**On this page:** Learn how to add and configure Email Designer content components such as buttons, text, images, dividers, HTML, social links, offer decisions, grids, and tables to build your email content.
 
 >[!ENDSHADEBOX]
 
@@ -257,13 +257,37 @@ Learn how to add personalized offers into an email in [this section](add-offers-
 >
 >If changes are made to an offer decision which is being used in a journey's message, you need to unpublish the journey and republish it.  This will ensure that the changes are incorporated into the journey's message and that the message is consistent with the latest updates.
 
+## Grid {#grid}
+
+Use the **[!UICONTROL Grid]** component to organize content into a structure composed of rows and columns, where each cell can contain other content components.
+
+![](assets/email_designer_grid_component.png){width="90%"}
+
+1. Just like the [Container](#container) component, drag and drop other content components into each cell of the grid.
+
+    For example, you can add a **[!UICONTROL Text]** component, an **[!UICONTROL Image]** component, and two **[!UICONTROL Button]** components. You can then add an image and edit the content of each component individually.
+
+    ![](assets/email_designer_grid_component_2.png){width="90%"}
+
+1. To adjust the structure of your grid, select it and go to the **[!UICONTROL Settings]** tab of the Email Designer right pane.
+
+    ![](assets/email_designer_grid_component_3.png){width="90%"}
+
+1. You can define how many columns and rows the grid contains, edit the spacing between columns and rows, and change the width of each individual column in percentage.
+
+    >[!NOTE]
+    >
+    >Use the **[!UICONTROL Do not stack columns on mobile]** option to preserve the grid layout on mobile devices instead of stacking columns vertically.
+
+1. Drop other content components into each cell as needed, and adjust styling from the **[!UICONTROL Styles]** tab for each component.
+
 ## Table {#table}
 
 Use the **[!UICONTROL Table]** component to structure content in rows and columns directly within your email, creating clear, organized layouts without relying on custom HTML.
 
-![](assets/email_designer_table_component.png)
+![](assets/email_designer_table_component.png){width="90%"}
 
-1. Once added, click the component and select the **[!UICONTROL Settings]** tab in the Email Designer right pane.
+1. Once added, click the component and select the **[!UICONTROL Settings]** tab of the Email Designer right pane.
 
 1. From there, you can adjust the number of rows and columns for your table.
 
