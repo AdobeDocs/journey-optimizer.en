@@ -80,7 +80,7 @@ With Generate Content open, you can now configure the generation settings to cre
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns. [Learn more on prompt best practices](ai-assistant-prompting-guide.md)
 
-    ![Prompt field with Prompt Library button](assets/full-email-2.png){zoomable="yes"}
+    ![Prompt field with Prompt Library button](assets/full-email-2-bis.png){zoomable="yes"}
 
 1. **For Emails**, you can toggle the **[!UICONTROL Subject line]** and **[!UICONTROL Preheader]** options to include them in the variant generation.
 
@@ -137,7 +137,7 @@ After generating content variations, you can fine-tune the results to ensure the
 
     * **[!UICONTROL Change Communication strategy]**: Modify the messaging approach based on your objectives, such as creating urgency, or emphasizing exciting appeal.
 
-        ![Refine menu displaying options](assets/full-email-5.png){zoomable="yes"}
+        ![Refine menu displaying options](assets/full-email-5-bis.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 

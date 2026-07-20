@@ -96,7 +96,6 @@ Learn how to craft clear prompts, fine-tune settings, and generate tailored text
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
     * **[!UICONTROL Languages]**: Choose the language of your generated content.
     * **[!UICONTROL Tone]**: The tone should resonate with your audience. Whether you want to sound informative, playful, or persuasive, Generate Content can adapt the message accordingly.
-    * **Text Length**: Use the slider to select the desired length of your text.
 
     ![Text settings expanded showing options](assets/text-genai-4.png){zoomable="yes"} 
     
