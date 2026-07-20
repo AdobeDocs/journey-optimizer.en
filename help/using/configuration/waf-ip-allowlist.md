@@ -150,6 +150,6 @@ A confirmation pop-up opens. Type the exact subdomain name to confirm, then clic
 >
 >Upon confirming, this action removes all allowed list IPs for the subdomain you entered. Inbound traffic will once again be accepted from any source, including requests that bypass your Web Application Firewall. This cannot be undone — IPs must be re-entered to restore the restriction.
 
-After removing all IPs, the subdomain no longer appears in the inventory. You can reconfigure it at any time by adding IPs again.
+After removing all IPs, the subdomain no longer appears in the inventory. You can reconfigure it at any time by adding IPs again for this subdomain.
 
 -->
