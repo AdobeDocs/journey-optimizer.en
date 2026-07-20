@@ -26,6 +26,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## July 2026 {#july-2026}
 
+* The **Grid** component section has been added to the **Use the Email Designer content components** page. The Grid component lets you organize content into a structured grid of rows and columns, where each cell can contain other content components. [Read more](../email/content-components.md#grid)
+
 * The **End a journey** page has been updated to clarify automatic stop timing for non-recurring Read Audience journeys: a safety buffer of approximately **96 hours (~4 days)** after the scheduled run (24-hour idle window + 72-hour Quiet Hours allowance), during which the journey can remain in **Live** status before transitioning to **Stopped** shortly after the buffer elapses. The page now also clarifies that waves-based (multi-wave) journeys, and journeys that use Send-Time Optimization, are excluded from this auto-stop and instead follow the standard 91-day journey timeout. [Read more](../building-journeys/end-journey.md#auto-stop-non-recurring)
 
 * A warning has been added to the **Edit PTR records** page to inform customers that when adding a new forward DNS record to their platform, the forward DNS record for the old subdomain must not be removed until the move completes, as doing so will cause the edit to fail. [Read more](../configuration/ptr-records.md#edit-ptr-subdomains-cname)
