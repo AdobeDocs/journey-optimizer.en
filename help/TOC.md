@@ -959,12 +959,12 @@ nudge: yes
     + [Suppression list](using/configuration/manage-suppression-list.md)
     + [Retries](using/configuration/retries.md)
     + [Allowed list](using/configuration/allow-list.md)
-  + [WAF IP allowed list](using/configuration/waf-ip-allowlist.md)
   + [Use seed lists](using/configuration/seed-lists.md)
   + [Support for email archiving](using/configuration/archiving-support.md)
   + [Add a CC field to emails](using/configuration/cc-email-field.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
+  + [Manage allowed IPs](using/configuration/waf-ip-allowlist.md)
 + Journey configuration {#configure-journeys}
   + [Journey configuration](/help/rp_landing_pages/configure-journeys-landing-page.md)
   + [Get started with journeys configuration](using/configuration/about-data-sources-events-actions.md)
