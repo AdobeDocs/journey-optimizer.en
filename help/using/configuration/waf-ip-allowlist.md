@@ -53,7 +53,11 @@ Requests for subdomains without allowed IPs configured are not affected and cont
 
 >[!CAUTION]
 >
->**Misconfiguration immediately breaks all links on the affected subdomain.** If incorrect WAF egress IPs are saved, [!DNL Journey Optimizer] will reject every incoming request for that subdomain — including legitimate ones from real recipients clicking links in communications, who will receive a 403 error page. Always confirm the exact egress IPs with your security team before saving, and test on a non-production subdomain first if possible.
+>Misconfiguration immediately breaks all links on the affected subdomain.
+
+If incorrect WAF egress IPs are saved, [!DNL Journey Optimizer] will reject every incoming request for that subdomain — including legitimate ones from real recipients clicking links in communications, who will receive a 403 error page.
+
+Always confirm the exact egress IPs with your security team before saving, and test on a non-production subdomain first if possible.
 
 ## Access and manage allowed IPs {#waf-ip-allowlist-access}
 
@@ -104,17 +108,19 @@ To add  Web Application Firewall IPs to the allowed list for a given subdomain, 
 
    ![Add WAF allowed IPs for a subdomain](assets/waf-ip-allowlist-add-ip.png)
 
-   >[!CAUTION]
+   >[!IMPORTANT]
    >
    >A warning is displayed when private or reserved IP ranges (RFC 1918, loopback, link-local) are entered. WAF egress IPs are normally public addresses.
 
 1. If needed, you can remove an IP from the list by clicking the **✕** icon on its chip.
 
-<!-->
-1. Review the caution notice: *"Requests to this subdomain from any IP not on this list will be rejected. Confirm these IPs with your security team — incorrect values will break all links on this subdomain."*
--->
-
 1. Click **[!UICONTROL Save]**. The allowed list is applied and propagated to the edge. The subdomain appears in the inventory and its IPs are enforced immediately.
+
+Now any requests to this subdomain from any IP not on this list will be rejected.
+
+>[!CAUTION]
+>
+>Make sure you confirmed these IPs with your security team — incorrect values will break all links on this subdomain.
 
 ## Edit allowed IPs {#waf-ip-allowlist-edit}
 
@@ -128,7 +134,9 @@ Add new IPs using the input field, or remove existing IPs by clicking the **✕*
 
 >[!IMPORTANT]
 >
->Removing the last IP from a subdomain reopens it to all inbound traffic. The editor displays an explicit warning before you save such a change.
+>Removing the last IP from a subdomain reopens it to all inbound traffic.
+
+<!--
 
 ## Remove allowed IPs {#waf-ip-allowlist-remove}
 
@@ -143,3 +151,5 @@ A confirmation pop-up opens. Type the exact subdomain name to confirm, then clic
 >Upon confirming, this action removes all allowed list IPs for the subdomain you entered. Inbound traffic will once again be accepted from any source, including requests that bypass your Web Application Firewall. This cannot be undone — IPs must be re-entered to restore the restriction.
 
 After removing all IPs, the subdomain no longer appears in the inventory. You can reconfigure it at any time by adding IPs again.
+
+-->
