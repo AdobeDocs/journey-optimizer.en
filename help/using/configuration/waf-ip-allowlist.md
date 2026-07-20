@@ -1,15 +1,15 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: WAF IP allowed list
-description: Learn how to configure a WAF IP allowed list in Journey Optimizer to ensure all inbound traffic to your Journey Optimizer-hosted links flows exclusively through your Web Application Firewall.
-feature: Configuration, Security
+title: Manage allowed IPs
+description: Learn how to configure an IP allowed list in Journey Optimizer to ensure all inbound traffic to your Journey Optimizer-hosted links flows exclusively through your Web Application Firewall.
+feature: Channel Configuration, Deliverability
 role: Admin
 level: Experienced
-keywords: waf, firewall, ip, allowed list, subdomain, security, traffic, inbound
-exl-id:
+keywords: waf, firewall, ip, subdomain, security, traffic, inbound
+
 ---
-# WAF IP allowed list {#waf-ip-allowlist}
+# Manage allowed IPs {#waf-ip-allowlist}
 
 >[!BEGINSHADEBOX]
 
@@ -61,33 +61,19 @@ Always confirm the exact egress IPs with your security team before saving, and t
 
 ## Access and manage allowed IPs {#waf-ip-allowlist-access}
 
+>[!NOTE]
+>
+>To access and manage the IP allowed list, you must have the **[!UICONTROL View Allowed IPs]** and **[!UICONTROL Manage Allowed IPs]** permission. [Learn more](../administration/ootb-permissions.md)
+
 To access the list of subdomains for which you have allowed IPs for your Web Application Firewall, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General Settings]**, and select **[!UICONTROL Allowed list - IPs]**.
 
 ![WAF IP allowed list inventory](assets/waf-ip-allowlist.png)
 
-The inventory page lists all subdomains that have at least one WAF IP allowed, across all channel types (Email, Landing page, SMS, Web).
+The inventory page lists all subdomains that have at least one WAF IP allowed, across all channel types (Email, Landing page, SMS, Web). Learn more on subdomains in [this section](about-subdomain-delegation.md).
 
->[!NOTE]
->
->To access and manage the WAF IP allowed list, you must have the **[!UICONTROL View Allowed IPs]** and **[!UICONTROL Manage Allowed IPs]** permission. <!--The **[!UICONTROL Manage Email Settings]**, **[!UICONTROL View Email Settings]**, and **[!UICONTROL Manage Channel Configurations]** permissions are also needed??.--> [Learn more](../administration/ootb-permissions.md)
-
-The inventory shows the number of allowed IPs per subdomain, and the author of the last modification.
+The list shows the number of allowed IPs per subdomain, and the author of the last modification.
 
 You can filter the inventory by channel type, and search by subdomain name.
-
-<!--
-## Subdomain scope {#waf-ip-allowlist-subdomains}
-
-The WAF IP allowed list is managed at the **subdomain level**. Only delegated and verified subdomains are available for selection — free-text subdomain entry is not allowed. All four channel types are supported:
-
-| Channel | Source of delegated subdomains |
-| --- | --- |
-| **Email** | Channels > Email Settings > Subdomains |
-| **Landing page** | Channels > Landing Page Settings > Landing page subdomains |
-| **SMS** | Channels > SMS Settings > Subdomains |
-| **Web** | Channels > Web Settings > Web subdomains |
-
-If a subdomain is later un-delegated upstream, its allowed list entry is flagged with an error icon and the restriction is automatically lifted.-->
 
 ## Add IPs to the allowed list {#waf-ip-allowlist-add}
 
@@ -100,7 +86,7 @@ To add  Web Application Firewall IPs to the allowed list for a given subdomain, 
 
 1. From the **[!UICONTROL Allowed list - IPs]** inventory, click the **[!UICONTROL Add allowed IPs]** button.
 
-1. Select the target subdomain from the **[!UICONTROL Subdomain]** drop-down list. Only delegated subdomains are listed, across all supported channel types: Email, Landing page, SMS, and Web.
+1. Select the target subdomain from the **[!UICONTROL Subdomain]** drop-down list. Only [delegated subdomains](delegate-subdomain.md) are listed, across all supported channel types: Email, Landing page, SMS, and Web.
 
 1. In the **[!UICONTROL IP address]** field, enter the public egress IPs of your WAF. IPv4, IPv6, and CIDR ranges are supported (for example, `203.0.113.42`, `2001:db8::1`, `203.0.113.0/24`).
 
