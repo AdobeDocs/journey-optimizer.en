@@ -61,7 +61,7 @@ Learn how to craft effective prompts and configure image settings to generate vi
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
-    ![Generate Content image generation panel with options](assets/image-genai-2.png){zoomable="yes"}
+    ![Generate Content image generation panel with options](assets/image-genai-2-bis.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Image settings]** option:
 
@@ -104,7 +104,7 @@ After generating image variations, you can review the results, check brand align
 
     * **[!UICONTROL Save]** to store the assets for later access.
 
-        ![Refine options showing available actions](assets/image-genai-5.png){zoomable="yes"}
+        ![Refine options showing available actions](assets/image-genai-5-bis.png){zoomable="yes"}
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
@@ -143,7 +143,7 @@ After accessing Generate Content, you can adjust the generation settings to crea
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
     
-    ![Generate Content image generation for push](assets/push-gen-img.png){zoomable="yes"}
+    ![Generate Content image generation for push](assets/push-gen-img-bis.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Image]** as field to generate.
 
