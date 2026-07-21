@@ -145,7 +145,7 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 
 1. **Apply capping rules**
 
-    In the **[!UICONTROL Rule set]** drop-down list, select a channel rule set to apply capping rules to your campaign. Leveraging channel rule sets allows you to set frequency capping by communication type to prevent overloading customers with similar messages. [Learn how to work with rule sets](../../conflict-prioritization/rule-sets.md).
+    In the **[!UICONTROL Rule set]** drop-down list, select a channel rule set to apply capping rules to your campaign. Leveraging channel rule sets allows you to set rules including frequency capping and quiet hours by communication type to prevent overloading customers with similar messages and to avoid messaging them during configured quiet hours. [Learn how to work with rule sets](../../conflict-prioritization/rule-sets.md).
 
 1. **Create a content experiment**
 
