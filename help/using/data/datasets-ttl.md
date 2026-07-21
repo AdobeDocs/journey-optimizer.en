@@ -106,13 +106,13 @@ TTLs extensions are not currently supported. However, work is planned to optimiz
 
 >[!NOTE]
 >
->Data stored in the profile is subject to the Total Data Volume entitlement. Therefore, any data storage increase on the profile as a result of a TTL extension would count against the Total Data Volume entitlement. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html){target="_blank}
+>Data stored in the profile is subject to the Total Data Volume entitlement. Therefore, any data storage increase on the profile as a result of a TTL extension would count against the Total Data Volume entitlement. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html){target="_blank"}
 
 +++
 
 +++Can customers increase the TTL for [!DNL Journey Optimizer] system dataset data in data lake? 
 
-TTLs extensions are not currently supported. Customers can export data through Destinations to retain data longer. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}. Additionally, customers with a **[!DNL Data Distiller]** entitlement can create derived datasets to store the data in data lake without a TTL. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank}
+TTLs extensions are not currently supported. Customers can export data through Destinations to retain data longer. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank"}. Additionally, customers with a **[!DNL Data Distiller]** entitlement can create derived datasets to store the data in data lake without a TTL. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank"}
 
 +++
 
@@ -152,8 +152,8 @@ The new TTL policy will limit the look-back period for system-generated dataset 
 
 Customers who require longer retention have two options:
 
-* **Export to external storage**: export relevant data from AJO datasets before the TTL expiration. Adobe Journey Optimizer supports exporting datasets to various cloud storage destinations (Amazon S3, Azure Blob, Google Cloud Storage, etc.). [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}
-* **Data Distiller derived datasets**: customers with a Data Distiller entitlement can set up automated queries to copy critical data into a derived dataset in the data lake, which can be stored without a TTL. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank}
+* **Export to external storage**: export relevant data from AJO datasets before the TTL expiration. Adobe Journey Optimizer supports exporting datasets to various cloud storage destinations (Amazon S3, Azure Blob, Google Cloud Storage, etc.). [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank"}
+* **Data Distiller derived datasets**: customers with a Data Distiller entitlement can set up automated queries to copy critical data into a derived dataset in the data lake, which can be stored without a TTL. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank"}
 
 +++
 
