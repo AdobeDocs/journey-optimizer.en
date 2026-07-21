@@ -29,7 +29,7 @@ Unlike [content components](content-components.md), which are empty placeholders
 
 >[!NOTE]
 >
->Modules are not fragments. They exist only within the email you are designing and cannot be shared across other emails or messages. To share reusable content across multiple emails, use [visual fragments](use-visual-fragments.md) instead.
+>Modules are not fragments — they exist within the email you are designing. However, once you have customized a module to your needs, you can save it as a [visual fragment](use-visual-fragments.md) to reuse it across other emails and messages. [Learn how to save content as a fragment](../content-management/save-fragments.md)
 
 ## Access and insert modules {#access-modules}
 
