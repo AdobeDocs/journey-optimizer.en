@@ -8,7 +8,6 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: email, content check, HTML, CSS, validation, rendering, quality
-badge: label="Limited Availability" type="Informative"
 ---
 
 # Content check in the Email Designer {#content-check}
@@ -17,10 +16,6 @@ badge: label="Limited Availability" type="Informative"
 >id="ajo_email_content_check"
 >title="Validate your email content"
 >abstract="Content checks automatically detect HTML and CSS issues in your email before you send. They flag unsupported tags, empty divs, and size limits that can break rendering in Gmail or Microsoft Outlook. Issues are surfaced as errors, warnings, or informational notices, with contextual details and one-click fixes where available."
-
->[!AVAILABILITY]
->
->This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
 [!DNL Journey Optimizer] includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.
 
@@ -107,6 +102,26 @@ The tables below list all possible messages and the recommended action for each.
 
 ## About HTML and CSS size {#size-estimation}
 
-HTML and CSS size values are **estimates computed at authoring time** and may differ from the actual size delivered to recipients — for example, when your email uses conditional blocks (only one branch renders per recipient) or when HTML minification is enabled at send time.
+HTML and CSS size values shown in the Email Designer are **estimates computed at authoring time**. They reflect the full rendered payload as it exists in the editor at that moment, and include:
 
-Size warnings are proactive signals to help you optimize content before sending, not hard blocks.
+* **HTML structure** – all markup, tags, layout wrappers, and inline styles
+* **Inlined CSS** – Email Designer inlines styles before calculating size, which is standard for email clients but inflates the raw figure compared to an external stylesheet
+* **Text content** – all copy and personalization tokens, counted at their placeholder length (not their resolved value)
+* **Fragments** – all referenced fragments are expanded inline, so each fragment contributes its full HTML/CSS weight to the total
+* **Conditional blocks (if-else)** – **all branches** are included in the size estimate at authoring time, because conditions are not evaluated until send time
+* **Images** – only the image reference (src URL) is counted, not the binary image data itself
+
+### Why the estimate can differ from the delivered size {#size-estimate-difference}
+
+The size shown is a worst-case upper-bound estimate, not the exact email a recipient will receive. It may differ for the following reasons:
+
+* **Conditional content**: At send time, only the branch matching the recipient's profile is rendered. A template showing 120 KB in the editor might produce a 60 KB email for most recipients.
+* **Personalization tokens**: Placeholder tokens are counted at their raw token length. Resolved values are usually shorter.
+* **HTML size optimization**: If the **[!UICONTROL Optimize HTML size]** option is enabled, whitespace, comments, and redundant characters are stripped at send time, reducing the final payload. [Learn more](create-email.md#optimize-html-size)
+
+### What size warnings mean for authors {#size-warnings}
+
+Size warnings (for example, HTML exceeding 100 KB) are **proactive signals** to help you optimize your email before sending — they are not hard blocks, and they do not reflect the exact size recipients will see. They exist to help avoid:
+
+* Emails being clipped by Gmail, which clips messages at approximately 102 KB of HTML
+* Slow rendering on mobile devices or on low-bandwidth connections
