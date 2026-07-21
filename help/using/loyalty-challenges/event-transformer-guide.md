@@ -102,40 +102,28 @@ Every event definition must produce a JSON object in the following format. This 
 | Field                          | Required           | Notes |
 |--------------------------------|--------------------|-------|
 | `loyalty_identity`             | **Yes**            | Must contain `id` — the member's loyalty ID. |
-| `item_list`                    | **Yes**            | Must contain at least one item. An empty `item_list` causes the event to be rejected as invalid. |
-| `item_set`                     | **Yes** (per item) | The identifiers in this array are what challenge task include/exclude lists match against. Include every relevant identifier — SKU, product category, department code, event name — so task filters work correctly. |
+| `item_list`                    | **Yes**            | Must have ≥1 item; empty item_list is rejected. |
+| `item_set`                     | **Yes** (per item) | Identifiers task include/exclude lists match against. |
 | `timestamp`                    | **Yes**            | Used for date-window evaluation. Must be ISO 8601. |
-| `utc_offset`                   | Recommended        | Required for daypart window matching and for computing consecutive-day streaks. If omitted, both daypart evaluation and streak day counting are skipped. |
-| `_id`                          | No                 | If duplicate detection is enabled for the org, the Challenge Service rejects an event whose `_id` has already been processed. |
-| `sub_total`                    | No                 | Used by spend-threshold tasks. If omitted, the item contributes zero spend. |
+| `utc_offset`                   | Recommended        | Needed for daypart matching and streak-day counting. |
+| `_id`                          | No                 | Used for dedup if org has duplicate detection enabled. |
+| `sub_total`                    | No                 | Spend-threshold tasks use this; omit means zero spend. |
 
 ## Event Definition Fields
 
 | Field                          | Type             | Required             | Description |
 |--------------------------------|------------------|----------------------|-------------|
-| `guid`                         | String           | No (system-assigned) | Unique identifier assigned on creation. Read-only. |
+| `guid`                         | String           | No (system-assigned) | System-assigned unique ID; read-only. |
 | `name`                         | String           | **Yes**              | Human-readable label, e.g. `"Starbucks POS Purchase"`. |
-| `xdmSchemaId`                  | String           | No*                  | XDM schema ID used to match events arriving via the **DCCS ingestion route**. The platform reads the schema reference embedded in the incoming event and compares it to this value. |
-| `identifierPath`               | String           | No*                  | Dot-notation path into the event JSON used to match events arriving via the **direct HTTP route (adobe.io)**. The platform reads the value at this path and checks it against `identifier`. |
-| `identifier`                   | Array of Strings | No                   | Expected values at `identifierPath`. If provided and non-empty, the value at the path must match one of these values. If empty, any event that has a value at the path is matched. |
-| `schema`                       | String           | No                   | A [JSON Schema](https://json-schema.org/) document (as a JSON string) used to validate the incoming event before transformation. If validation fails, the event is rejected with a descriptive error. |
-| `transformer`                  | String           | **Yes**              | JSONata expression that maps the incoming event to the Adobe Loyalty Event format. |
-
-\* At least one of `xdmSchemaId` or `identifierPath` must be provided.
+| `xdmSchemaId`                  | String           | **Yes**              | Matches events by XDM schema ID (see How Matching Works). |
+| `schema`                       | String           | No                   | [JSON Schema](https://json-schema.org/) (as a string) to validate incoming events. |
+| `transformer`                  | String           | **Yes**              | JSONata expression mapping the event to Loyalty format. |
 
 ## How Matching Works
 
-The matching strategy depends on how the event reaches the platform:
+Events arriving through the Data Collection Core Service (DCCS) carry an XDM schema reference in their envelope. The platform reads the schema ID from `/body/xdmMeta/schemaRef/id` and compares it against each definition's `xdmSchemaId`.
 
-**DCCS ingestion route** — Events arriving through the Data Collection Core Service (DCCS) carry an XDM schema reference in their envelope. The platform reads the schema ID from `/body/xdmMeta/schemaRef/id` and compares it against each definition's `xdmSchemaId`. Configure `xdmSchemaId` on definitions intended for this route.
-
-**Direct HTTP route (adobe.io)** — Events posted directly to the platform via the adobe.io API do not carry an XDM schema reference. The platform instead traverses the event JSON using `identifierPath` and checks the value found there:
-* If `identifier` is non-empty: the value must match one of the configured strings.
-* If `identifier` is empty: any event that has a non-null value at the path is matched.
-
-Configure `identifierPath` (and optionally `identifier`) on definitions intended for this route.
-
-The platform walks the org's event definitions **in order** and applies the first match. Once a match is found, the `xdmEntity` body (for DCCS events) or the full event body (for direct HTTP events) is passed to the transformer.
+The platform walks the org's event definitions **in order** and applies the first match. Once a match is found, the `xdmEntity` body is passed to the transformer.
 
 ## Writing the Transformer
 
@@ -285,10 +273,9 @@ The full JSONata function library is available. Useful examples:
 
 ```json
 {
-  "name":           "Mobile Store Check-In",
-  "identifierPath": "eventName",
-  "identifier":     ["store-checkin"],
-  "transformer":    "{\"_id\": _id, \"event_name\": eventName, \"timestamp\": timestamp, \"location_id\": storeId, \"loyalty_identity\": {\"id\": member.loyaltyId}, \"item_list\": [{\"item_set\": [eventName], \"quantity\": 1}]}"
+  "name":        "Mobile Store Check-In",
+  "xdmSchemaId": "https://ns.adobe.com/yourtenant/schemas/store-checkin-v1",
+  "transformer": "{\"_id\": _id, \"event_name\": eventName, \"timestamp\": timestamp, \"location_id\": storeId, \"loyalty_identity\": {\"id\": member.loyaltyId}, \"item_list\": [{\"item_set\": [eventName], \"quantity\": 1}]}"
 }
 ```
 
@@ -360,10 +347,9 @@ A challenge task with no include/exclude restrictions will count this event as a
 
 ```json
 {
-  "name":           "Retail POS Purchase",
-  "identifierPath": "transaction.transactionId",
-  "identifier":     [],
-  "transformer":    "{\"_id\": _id, \"event_name\": \"purchase\", \"timestamp\": timestamp, \"utc_offset\": storeInfo.utcOffset, \"location_id\": storeInfo.storeId, \"transaction_id\": transaction.transactionId, \"loyalty_identity\": {\"id\": member.loyaltyId}, \"item_list\": transaction.items.{\"item_set\": [sku, category], \"quantity\": qty, \"unit_price\": unitPrice, \"sub_total\": lineTotal}}"
+  "name":        "Retail POS Purchase",
+  "xdmSchemaId": "https://ns.adobe.com/yourtenant/schemas/retail-pos-purchase-v1",
+  "transformer": "{\"_id\": _id, \"event_name\": \"purchase\", \"timestamp\": timestamp, \"utc_offset\": storeInfo.utcOffset, \"location_id\": storeInfo.storeId, \"transaction_id\": transaction.transactionId, \"loyalty_identity\": {\"id\": member.loyaltyId}, \"item_list\": transaction.items.{\"item_set\": [sku, category], \"quantity\": qty, \"unit_price\": unitPrice, \"sub_total\": lineTotal}}"
 }
 ```
 
@@ -544,10 +530,9 @@ x-sandbox-name: {SANDBOX}
 Content-Type: application/json
 
 {
-  "name":           "Retail POS Purchase",
-  "identifierPath": "transaction.transactionId",
-  "identifier":     [],
-  "transformer":    "{ ... }"
+  "name":        "Retail POS Purchase",
+  "xdmSchemaId": "https://ns.adobe.com/yourtenant/schemas/retail-pos-purchase-v1",
+  "transformer": "{ ... }"
 }
 ```
 
