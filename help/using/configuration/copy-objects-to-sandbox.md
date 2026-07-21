@@ -139,10 +139,6 @@ You can copy Orchestrated campaigns between sandboxes using package export and i
 
 To export an orchestrated campaign, [add it to a sandbox package](#add-objects-as-a-package-export) in the source sandbox (regardless its status), [publish the package](#publish), then [import the package](#import) into the target sandbox.
 
->[!IMPORTANT]
->
->Right after import, [duplicate the orchestrated campaign](../campaigns/manage-campaigns.md#duplicate-a-campaign) in the target sandbox and use that duplicate for configuration, testing, and execution. If you run or publish the imported copy instead, campaign reporting may not show feedback and tracking data. This limitation will be removed in a future release.
-
 Before you import into production, keep the following behavior and limitations in mind:
 
 * **Draft copy** - The imported orchestrated campaign is always created in draft in the target sandbox, regardless the status of the source Orchestrated campaign.
