@@ -150,7 +150,10 @@ The new TTL policy will limit the look-back period for system-generated dataset 
 
 +++What alternatives are available for retaining data longer than the TTL?
 
-Customers who require longer retention should consider exporting relevant data from AJO datasets to external storage before the TTL expiration. Adobe Journey Optimizer supports exporting datasets to various cloud storage destinations (Amazon S3, Azure Blob, Google Cloud Storage, etc.). [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}
+Customers who require longer retention have two options:
+
+* **Export to external storage**: export relevant data from AJO datasets before the TTL expiration. Adobe Journey Optimizer supports exporting datasets to various cloud storage destinations (Amazon S3, Azure Blob, Google Cloud Storage, etc.). [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}
+* **Data Distiller derived datasets**: customers with a Data Distiller entitlement can set up automated queries to copy critical data into a derived dataset in the data lake, which can be stored without a TTL. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank}
 
 +++
 
