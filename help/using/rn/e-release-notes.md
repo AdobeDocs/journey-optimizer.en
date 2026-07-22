@@ -79,6 +79,8 @@ Journey Optimizer introduces Loyalty, a new capability in this release.
 </tbody>
 </table>
 
+<!--
+
 ### Onboarding {#july-26-onboarding}
 
 Journey Optimizer introduces the Onboarding Assistant, a new capability in this release.
@@ -94,13 +96,15 @@ Journey Optimizer introduces the Onboarding Assistant, a new capability in this 
 <td>
 <p>Transitioning to Adobe Journey Optimizer from another marketing platform is easier with guided capabilities that help you move existing email content and journeys into Journey Optimizer. A dedicated workspace lets you reuse what you have instead of rebuilding from scratch.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!-- GIF placeholder: to be added -->
+<GIF placeholder: to be added>
 <p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15180">DOCAC-15180</a></p>
-<!-- Documentation link: TBD -->
+<Documentation link: TBD>
 </td>
 </tr>
 </tbody>
 </table>
+
+-->
 
 ### Journeys {#july-26-journeys}
 
