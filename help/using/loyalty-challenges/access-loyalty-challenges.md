@@ -39,6 +39,8 @@ subfeature_v2: []
 **Configure and integrate**
 
 * [Configure loyalty challenges](loyalty-admin.md)
+* [Reward Definition guide](reward-definition-guide.md)
+* [Event Transformer guide](event-transformer-guide.md)
 * [Loyalty data and datasets](loyalty-data-and-datasets.md)
 * [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
 

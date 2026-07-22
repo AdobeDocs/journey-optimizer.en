@@ -379,12 +379,12 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
 
 
-<!-- JOURNEYS - EXPRESSION ASSISTANT -->
+<!-- JOURNEYS - GENERATE EXPRESSIONS WITH AI -->
 
 >[!CONTEXTUALHELP]
 >id="journeyExpAI"
->title="Expression Assistant"
->abstract="Use Expression Assistant to generate and refine expressions in Journey Optimizer."
+>title="Generate expressions with AI"
+>abstract="Use AI to generate and refine expressions in Journey Optimizer."
 
 
 <!-- OC - LOAD FILE ACTIVITY -->

@@ -61,7 +61,7 @@ topic_v2:
 <table>
 <thead>
 <tr>
-<th><strong>Content check in the Email Designer</strong><br/></th>
+<th><strong>Content check in the Email Designer (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -101,6 +101,8 @@ topic_v2:
 * **AJO MCP server new tools** - The [!DNL Adobe Journey Optimizer] MCP server now exposes five additional read-only **channel configuration tools**, enabling you to query channel configurations, supporting resources, and marketing actions directly from your AI assistant. You can now use **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
 
   Availability date: July 9, 2026
+
+* **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on **existing customer sandboxes and organizations** starting **October 1, 2026**. [Learn more](../data/datasets-ttl.md#ttl-guardrail)
 
 
 ### Usability improvements {#july-26-usability}
@@ -207,7 +209,7 @@ The following capabilities and improvements have been added to journeys in this 
 <p>AI Assistant now operates in the journey advanced expression editor to convert natural-language prompts into valid expressions and conditional logic. Describe the expression you want to build, and AI Assistant generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
 <p>This capability is available to all customers as a Public Beta.</p>
 <p><img src="assets/do-not-localize/expression-assistant.gif"></p>
-<p>For more information, refer to the <a href="../building-journeys/expression/expression-agent.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../building-journeys/expression/generate-expression.md">detailed documentation</a>.</p>
 <p>Availability date: June 3, 2026</p> 
 </td>
 </tr>
@@ -359,7 +361,7 @@ The following improvements have been added to the email channel in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Content check in the Email Designer</strong><br/></th>
+<th><strong>Content check in the Email Designer (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
