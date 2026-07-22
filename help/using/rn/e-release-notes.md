@@ -303,7 +303,7 @@ The following capabilities and improvements have been added to channels in this 
 <tr>
 <td>
 <p>Journey Optimizer now introduces Custom channels, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across Campaigns, Journeys, and Orchestrated Campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement. This fills a gap previously addressed by Custom Actions, which are limited only to Journeys and lack dedicated channel capabilities.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Custom outbound channels is currently available as Limited Availability. To gain access, contact your Adobe representative.</p>
 <!-- GIF placeholder: to be added -->
 <p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-11381">DOCAC-11381</a></p>
 <!-- Documentation link: TBD -->
