@@ -109,42 +109,6 @@ The following capabilities and improvements have been added to journeys in this 
 <table>
 <thead>
 <tr>
-<th><strong>Journey Arbitration - Formulas</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now use formulas to automatically prioritize and arbitrate journeys based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
-<p>Previously released in Limited Availability, this capability is now available to all customers (General Availability).</p>
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-14719">DOCAC-14719</a></p>
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Arbitration - AI Models</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now use AI models in your ranking formulas to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
-<p>Previously released in Limited Availability, this capability is now available to all customers (General Availability).</p>
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-14713">DOCAC-14713</a></p>
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
 <th><strong>Channel optimization</strong><br/></th>
 </tr>
 </thead>
