@@ -17,10 +17,25 @@ If you are moving to [!DNL Journey Optimizer] from another marketing platform, t
 
 To import content or journeys through an API, first connect [!DNL Journey Optimizer] to your source platform:
 
-1. In the migration workspace, select **Manage connections**.
-2. Select **Create connection** and provide a connection name, base URL, client ID, client secret, and token URL.
-3. Select **Create**.
-4. Optionally, mark a connection as default so it is pre-selected the next time you import content or journeys.
+1. In the Migration workspace, select **[!UICONTROL Manage connections]**.
+
+1. Click **[!UICONTROL New connection]**.
+
+    ![Manage connection window](assets/onboarding-hub-1.png)
+
+1. Fill in the details below:
+
+    * Connection Name  
+    * Base API URL  
+    * Description
+    * Authentication Method   API Key OAuth 2.0
+    * Client ID  
+    * Client Secret  
+    * Token URL
+
+1. Select **Create**.
+
+1. Optionally, mark a connection as default so it is pre-selected the next time you import content or journeys.
 
 >[!TIP]
 >
