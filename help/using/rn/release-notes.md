@@ -61,7 +61,7 @@ topic_v2:
 <table>
 <thead>
 <tr>
-<th><strong>Content check in the Email Designer</strong><br/></th>
+<th><strong>Content check in the Email Designer (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -361,7 +361,7 @@ The following improvements have been added to the email channel in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Content check in the Email Designer</strong><br/></th>
+<th><strong>Content check in the Email Designer (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
