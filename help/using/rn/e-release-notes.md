@@ -327,6 +327,14 @@ The following capabilities and improvements have been added to channels in this 
 
 * **Performance Add-on for throughput - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. ([DOCAC-14717](https://jira.corp.adobe.com/browse/DOCAC-14717)) <!-- Documentation link: TBD -->
 
+* **Enhanced Custom Provider Integrations - Mobile** - Custom provider integrations now offer expanded flexibility with key messaging and header updates:
+
+  * Header Customization: You can now edit the default Content-Type header value and add up to 10 custom header parameters.
+
+  * SMS Payload Support: Added support for Adobe Journey Optimizer helper functions within the SMS payload, including encode64.
+
+  ([DOCAC-15269](https://jira.corp.adobe.com/browse/DOCAC-15269))
+
 ### Administration {#july-26-administration}
 
 The following capabilities have been added to administration in this release.
