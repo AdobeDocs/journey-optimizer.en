@@ -109,33 +109,21 @@ The following capabilities and improvements have been added to journeys in this 
 <table>
 <thead>
 <tr>
-<th><strong>Journey Arbitration - Formulas</strong><br/></th>
+<th><strong>Channel optimization</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now use formulas to automatically prioritize and arbitrate journeys based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
-<p>Previously released in Limited Availability, this capability is now available to all customers (General Availability).</p>
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-14719">DOCAC-14719</a></p>
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Arbitration - AI Models</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now use AI models in your ranking formulas to automatically boost journey priority scores based on customer profile attributes and contextual factors, ensuring customers enter the most relevant journeys.</p>
-<p>Previously released in Limited Availability, this capability is now available to all customers (General Availability).</p>
-<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-14713">DOCAC-14713</a></p>
+<p>You can now configure a journey action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
+<ul>
+<li>Manual ranking: specify your preferred channel order.</li>
+<li>Customer preference: use the customer's preferred channel from their profile (Experience Data Model Consents & Preferences attribute).</li>
+<li>AI model-based ranking: use machine learning propensity scores to infer the most effective channel per customer.</li>
+</ul>
+<p>When the top-ranked channel is unavailable (not opted-in, frequency-capped, or not configured), the system falls back to the next available channel.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-14900">DOCAC-14900</a></p>
 <!-- Documentation link: TBD -->
 </td>
 </tr>
