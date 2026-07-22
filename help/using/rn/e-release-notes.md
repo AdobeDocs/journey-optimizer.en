@@ -201,14 +201,16 @@ The following capabilities and improvements have been added to campaigns in this
 <table>
 <thead>
 <tr>
-<th><strong>Personalized PDF attachment for transactional messaging in API Triggered campaigns</strong><br/></th>
+<th><strong>Personalized PDF attachments in API-triggered emails</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now attach up to five dynamic, personalized PDFs per email in API-triggered transactional campaigns by passing the file locations in the API payload. This enables industries like aviation to send boarding passes or travel confirmations, financial services to deliver individualized invoices or statements, and retail to include order receipts or return labels — each document tailored to the recipient at send time.</p>
-<p>Personalized and static PDF attachments share the same quota; exceeding the fair usage limit requires the PDF attachment add-on. This feature is not available in journey or action campaigns.</p>
+<p>Journey Optimizer now supports attaching up to five recipient-specific PDFs per email in API-triggered campaigns. PDF files are fetched securely from Azure or AWS storage and attached at send time, with each file's location passed directly in the API payload. This allows existing upstream document generation systems to remain in place, with Journey Optimizer handling delivery.</p>
+<p>Supported use cases include invoices, statements, tickets, contracts, shipping labels, and similar documents that vary per recipient. Personalized PDF attachments are available in API-triggered campaigns only and are not supported in journey or action campaigns.</p>
+<p>Larger attachment volumes and sizes are supported via the PDF attachment add-on; for information, contact your Adobe representative.</p>
+<p></p>
 <p>Jira: <a href="https://jira.corp.adobe.com/browse/DOCAC-15186">DOCAC-15186</a></p>
 <!-- Documentation link: TBD -->
 </td>
