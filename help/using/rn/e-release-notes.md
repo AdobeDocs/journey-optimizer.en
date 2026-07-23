@@ -134,8 +134,6 @@ The following capabilities and improvements have been added to journeys in this 
 
 * **Document support of external audiences in Journey Simulation** - Journey Simulation now supports External Audiences. When simulating journeys targeting CSV or Federated Audience Composition audiences, you can mock enrichment attributes from those audiences directly through the UI form or a JSON import. The UI dynamically displays only the specific enrichment attributes used in your journey logic, enabling precise validation of decision branches and personalization rules prior to going live. <!-- Documentation link: TBD -->
 
-* **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the journey header next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed. <!-- Documentation link: TBD -->
-
 ### Campaigns {#july-26-campaigns}
 
 The following capabilities and improvements have been added to campaigns in this release.
