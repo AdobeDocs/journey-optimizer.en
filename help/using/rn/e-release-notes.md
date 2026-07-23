@@ -220,9 +220,13 @@ The following improvement has been added to orchestrated campaigns in this relea
 
 The following improvements have been added to Decisioning in this release.
 
-* **Decisioning rules creation from natural language expression** - You can now describe the Decisioning rule you want to create in plain language and let AI generate it for you. This capability is available to customers with access to Adobe AI capabilities. <!-- Documentation link: TBD -->
+* **Decisioning rules creation from natural language expression** - You can now describe the Decisioning rule you want to create in plain language and let AI generate it for you. This capability is available to customers with access to Adobe AI capabilities.
 
-* **Decisioning rules and ranking formulas simulation** - You can now simulate your Decisioning rules and ranking formulas directly from the rule or formula editor. Add manual test variants or generate them using AI, then run the expression against your test data to validate eligibility and review ranked results, all before deploying to production. Variants generation is available to customers with access to Adobe AI capabilities. <!-- Documentation link: TBD -->
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. <!-- Documentation link: TBD -->
+
+* **Decisioning rules and ranking formulas simulation** - You can now simulate your Decisioning rules and ranking formulas directly from the rule or formula editor. Add manual test variants or generate them using AI, then run the expression against your test data to validate eligibility and review ranked results, all before deploying to production. Variants generation is available to customers with access to Adobe AI capabilities.
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. <!-- Documentation link: TBD -->
 
 * **Personalization at the offer level** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items. <!-- Documentation link: TBD -->
 
