@@ -11,7 +11,7 @@ badge: label="Limited Availability" type="Informative"
 ---
 # Migrate content and journeys {#migrate-content-and-journeys}
 
-If you are moving to [!DNL Journey Optimizer] from another marketing platform, you do not have to start from a blank slate. Journey Optimizer includes a migration workspace that imports your existing email content and journeys, converting them into [!DNL Journey Optimizer] content templates and journeys so you can pick up where you left off instead of rebuilding everything from scratch.
+If you are moving to [!DNL Journey Optimizer] from another marketing platform, you do not have to start from a blank slate. Journey Optimizer includes a migration workspace that imports your existing email content and journeys. It converts them into [!DNL Journey Optimizer] content templates and journeys, so you can pick up where you left off instead of rebuilding everything from scratch.
 
 ## Set up a connection {#set-up-a-connection}
 
@@ -58,25 +58,25 @@ To import content or journeys through an API, first connect [!DNL Journey Optimi
 
 1. Click **[!UICONTROL New connection]**.
 
-    ![Manage connection window](assets/onboarding-hub-1.png)
+    ![Manage connections window with the New connection button highlighted](assets/onboarding-hub-1.png)
 
 1. Fill in the details below:
 
     * **[!UICONTROL Connection Name]**: A name that identifies the source system, such as `Marketing-Automation-Prod`. Names must start with a letter and can only contain letters, numbers, underscores, or hyphens, between 4 and 50 characters long.
     * **[!UICONTROL Base API URL]**: The root URL of the source system's API, without any resource path or query string, such as `https://api.example.com`.
     * **[!UICONTROL Description]**: Optional context to help you and other users identify the purpose of this connection.
-    * **[!UICONTROL Authentication Method]**: How [!DNL Journey Optimizer] authenticates to the source system. Choose **API Key** to send a single credential with each request, or **OAuth 2.0** to use a token-based protocol that is better suited to enterprise and third-party APIs.
+    * **[!UICONTROL Authentication Method]**: How [!DNL Journey Optimizer] authenticates to the source system. Choose **API Key** to send a single credential with each request. Choose **OAuth 2.0** to use a token-based protocol that is better suited to enterprise and third-party APIs.
     * **[!UICONTROL Client ID]**: The public identifier assigned to your application when you registered it with the authorization server. Required for OAuth 2.0 connections.
     * **[!UICONTROL Client Secret]**: The confidential credential associated with your client ID. Keep it private, as it is known only to your application and the authorization server. Required for OAuth 2.0 connections.
     * **[!UICONTROL Token URL]**: The authorization server endpoint that issues access tokens for the client credentials flow, typically ending in `/oauth/token` or `/token`. Required for OAuth 2.0 connections.
 
-        ![Manage connection window](assets/onboarding-hub-2.png)
+        ![New connection form with fields for connection name, base API URL, and authentication details](assets/onboarding-hub-2.png)
 
 1. Select **[!UICONTROL Create]**.
 
 1. Once your connection is set up, use the advanced menu to delete it, or to mark it as default so it is pre-selected the next time you import content or journeys.
 
-    ![Manage connection window](assets/onboarding-hub-3.png)
+    ![Advanced menu with options to delete a connection or mark it as default](assets/onboarding-hub-3.png)
 
 ## Import Email content {#import-email-content}
 
@@ -88,13 +88,13 @@ Once you have a source for your content, either an HTML file or a connection to 
 
     * **[!UICONTROL Browse from connection]**: Browse and select emails directly from your connected marketing platform, without needing to export and upload files manually.
 
-    ![Manage connection window](assets/onboarding-hub-6.png)
+    ![Email content tab with options to upload HTML or browse from a connection](assets/onboarding-hub-6.png)
 
 1. For an HTML upload, browse for your file or drag and drop it into the upload area. Click **[!UICONTROL Upload]** once done.
     
      Files must be in `.html` or `.htm` format and no larger than 10 MB.
 
-    ![Manage connection window](assets/onboarding-hub-7.png)
+    ![HTML file upload area for email content](assets/onboarding-hub-7.png)
 
 1. For import from connection, choose from the Emails list and click **[!UICONTROL Import]**.
 
@@ -104,15 +104,15 @@ Once you have a source for your content, either an HTML file or a connection to 
     
     The migration workspace converts the source scripting syntax to Handlebars syntax automatically.
 
-    ![Manage connection window](assets/onboarding-hub-8.png)
+    ![Imported email editor with subject line field and personalization placeholder mapping](assets/onboarding-hub-8.png)
 
 1. Select a folder to upload the email's images to [!DNL Experience Manager Assets] and click **[!UICONTROL Upload assets]**.
 
-    ![Manage connection window](assets/onboarding-hub-9.png)
+    ![Folder selection window for uploading email images to Experience Manager Assets](assets/onboarding-hub-9.png)
 
 1. Once your email is ready, select **[!UICONTROL Migrate]**, then select **View in [!DNL Journey Optimizer]** to open the new content template.
 
-    ![Manage connection window](assets/onboarding-hub-10.png)
+    ![Migrate button and View in Journey Optimizer option for a completed email](assets/onboarding-hub-10.png)
 
 Your content template is now available in [!DNL Journey Optimizer] and ready to use in your journeys.
 
@@ -128,23 +128,26 @@ Recreate your journeys by importing a screenshot of the journey flow, or by conn
 
     * **[!UICONTROL Browse from connection]**: Browse and select journeys directly from your connected marketing platform, without needing to export and upload screenshots manually.
 
-    ![Manage connection window](assets/onboarding-hub-11.png)
+    ![Journeys tab with options to upload screenshots or browse from a connection](assets/onboarding-hub-11.png)
 
 1. For an HTML upload, browse for your file or drag and drop it into the upload area. Click **[!UICONTROL Upload]** once done.
     
     Files must be in .png, .jpg, .gif, .webp format and no larger than 5 MB.
 
-    ![Manage connection window](assets/onboarding-hub-13.png)
+    ![Screenshot upload area for journey images](assets/onboarding-hub-13.png)
 
 1. For import from connection, choose from the journeys list and click **[!UICONTROL Import]**.
 
 1. Preview the journey that the migration workspace generates from your source.
 
-1. From the **[!UICONTROL Action items]** pane, resolve each item based on the type of activity it belongs to. For example, select a channel configuration and content template for each message step, or select the audience for each **[!UICONTROL Audience]** activity.
+1. From the **[!UICONTROL Action items]** pane, resolve each item based on the type of activity it belongs to:
+
+    * For each message step, select a channel configuration and content template.
+    * For each **[!UICONTROL Audience]** activity, select the audience.
 
 1. Select **[!UICONTROL Apply changes]**, then select **View in [!DNL Journey Optimizer]** to open the journey canvas.
 
-    ![Manage connection window](assets/onboarding-hub-12.png)
+    ![Action items pane with resolved activities and the Apply changes button](assets/onboarding-hub-12.png)
 
 Your journey is now available in [!DNL Journey Optimizer], where you can review the canvas, make any final adjustments, and activate it when you are ready to go live.
 
@@ -159,7 +162,7 @@ The migration workspace overview helps you keep track of every email you have im
 * **Migrated**: Items that were successfully converted and are available in [!DNL Journey Optimizer].
 * **Failed**: Items that could not be migrated and need attention.
 
-![Manage connection window](assets/onboarding-hub-4.png)
+![Migration workspace overview with KPIs for total, in progress, migrated, and failed items](assets/onboarding-hub-4.png)
 
 A set of filters lets you narrow down the list of imported email content so you can focus on a specific subset instead of scrolling through every item. Combine one or more of the following filters to find what you are looking for:
 
@@ -167,6 +170,6 @@ A set of filters lets you narrow down the list of imported email content so you 
 * **[!UICONTROL Created]**: Show emails imported within a specific date range.
 * **[!UICONTROL Updated]**: Show emails last modified within a specific date range.
 
-![Manage connection window](assets/onboarding-hub-5.png)
+![Filter options for status, created date, and updated date in the migration workspace](assets/onboarding-hub-5.png)
 
 
