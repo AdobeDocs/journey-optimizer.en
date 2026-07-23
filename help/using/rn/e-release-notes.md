@@ -133,7 +133,7 @@ The following capabilities and improvements have been added to journeys in this 
 </tbody>
 </table>
 
-* **Document support of external audiences in Journey Simulation** - Journey Simulation now supports External Audiences. When simulating journeys targeting CSV or Federated Audience Composition audiences, you can mock enrichment attributes from those audiences directly through the UI form or a JSON import. The UI dynamically displays only the specific enrichment attributes used in your journey logic, enabling precise validation of decision branches and personalization rules prior to going live. <!-- Documentation link: TBD -->
+* **External audiences in Journey Simulation** - Journey Simulation now supports External Audiences. When simulating journeys targeting CSV or Federated Audience Composition audiences, you can mock enrichment attributes from those audiences directly through the UI form or a JSON import. The UI dynamically displays only the specific enrichment attributes used in your journey logic, enabling precise validation of decision branches and personalization rules prior to going live. <!-- Documentation link: TBD -->
 
 ### Campaigns {#july-26-campaigns}
 
