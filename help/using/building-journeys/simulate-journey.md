@@ -83,6 +83,8 @@ Continue with [Create and manage simulated users](#test-users), [Trigger your ev
 
 Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, save them for reuse, adjust or remove them from the list, and send them into the journey.
 
+If your journey uses an external audience, for example a CSV or Federated Audience Composition audience, and your conditions, expressions, or personalization rely on enrichment attributes from it, you can mock those attributes on a simulated user just like profile attributes. This lets you drive the user into a specific branch based on the value you set, without running the actual audience.
+
 1. Start by populating the **[!UICONTROL Test users]** list:
 
     +++ Generate users with AI
@@ -117,7 +119,9 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
             
         ![Create Simulated Users form with display name, identity namespace, description, and Union schema attributes](assets/simulate-form.png)
 
-    1. Then, select the attributes from the Union schema that you want to populate for this user. Note that only the attributes used in the current journey, for example in expressions or personalization, are available here.
+    1. Then, select the attributes from the Union schema that you want to populate for this user. Note that only the attributes used in the current journey, for example in expressions or personalization, are available here. 
+    
+        Attributes are grouped by origin, in separate sections for profile attributes and, if your journey reads an external audience such as a CSV or Federated Audience Composition audience, for that audience's enrichment attributes.
 
     1. Click **[!UICONTROL Add audience membership]** to simulate segment memberships.
 
@@ -139,7 +143,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
     In **[!UICONTROL Create Simulated Users]**, edit the JSON template to define users, then click **[!UICONTROL Format JSON]** and **[!UICONTROL Save]**.
 
-    Note that **[!UICONTROL Create from JSON]** and **[!UICONTROL Update from JSON]** give you access to every attribute, regardless of what the current journey uses.
+    Note that **[!UICONTROL Create from JSON]** and **[!UICONTROL Update from JSON]** give you access to every attribute stored on the simulated user, including profile attributes and, if applicable, enrichment attributes from an external audience such as a CSV or Federated Audience Composition audience.
 
     ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json.png)
 
