@@ -47,7 +47,19 @@ topic_v2:
 ---
 # Get started for data engineer {#data-engineer}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Build the schemas, datasets, identities, and data sources that power Adobe Journey Optimizer so your teams can deliver real-time, personalized customer experiences.
+
+>[!ENDSHADEBOX]
+
 As a **Data Architect** or **Data Engineer**, you set up and maintain the customer profile data and other data sources that power the experiences orchestrated by [!DNL Journey Optimizer]. This includes integrating all your customer and business data—whether from web, CRM, or offline sources—into a unified 360-degree view of the customer. You model customer profile data and business data into schemas, configure source connectors for ingesting data, and ensure data flows smoothly to enable real-time customer insights and engagement. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) granted you access and prepared your environment.
+
+>[!NOTE]
+>
+>**Implementation order:** [Administrator](administrator.md) → You are here: **Data Engineer** → [Developer](developer.md) → [Marketer](marketer.md)
+>
+>Complete [Administrator setup](administrator.md) before starting data foundation work.
 
 >[!NOTE]
 >
@@ -136,5 +148,17 @@ Collaborate with [Marketers](marketer.md) on audiences and data:
 * Build audiences based on their campaign and journey requirements
 * Configure relational schemas for Orchestrated campaigns
 * Support multi-entity segmentation for advanced use cases
+* When marketers are choosing between journeys and campaigns, share [Journeys vs Campaigns](../journeys-vs-campaigns.md) and [Journey types: choose the right one](../../building-journeys/journey-types-selection.md) to help them pick the right data architecture for their use case
 
 >[!ENDTABS]
+
+## Other role guides {#other-role-guides}
+
+| Role | Guide |
+|------|-------|
+| Administrator | [Get started for administrators](administrator.md) |
+| Data Engineer | [Get started for data engineers](data-engineer.md) |
+| Developer | [Get started for developers](developer.md) |
+| Marketer | [Get started for marketers](marketer.md) |
+
+Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../../rp_landing_pages/get-started-landing-page.md)

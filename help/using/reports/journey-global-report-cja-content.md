@@ -40,6 +40,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Learn how to read the content card metrics in the journey report, including display and click data, tracking data, and tracked link labels for your content cards.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 You can access your Content card journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access-jo.png)

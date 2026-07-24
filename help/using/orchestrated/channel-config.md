@@ -23,6 +23,12 @@ subfeature_v2:
 ---
 # Configure your Channel configuration {#channel-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up a channel configuration for Orchestrated campaigns by defining the delivery level, target dimension, and execution address, and how to add URL tracking parameters to your links.
+
+>[!ENDSHADEBOX]
+
 After setting up your [Target Dimension](target-dimension.md), you need to configure your **[!UICONTROL Channel Configuration]** and define the appropriate **[!UICONTROL Execution Details]**. This allows you to define :
 
 * **The level of message delivery**: for example, sending one message per recipient, such as a single email per individual.

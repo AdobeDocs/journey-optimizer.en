@@ -39,6 +39,12 @@ subfeature_v2:
 ---
 # AI Assistant prompt best practices {#ai-assistant-prompting-guide}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to write effective AI Assistant prompts using the prompt assistant and the CO-STAR framework to generate high-converting, on-brand marketing content in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_ai_assistant_prompt"
 >title="Prompt examples"

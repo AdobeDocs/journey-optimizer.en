@@ -35,6 +35,12 @@ subfeature_v2:
 ---
 # Use decision policies in messages {#create-decision}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Insert decision policy code into your code-based experience, email, SMS, push notification, and direct mail content, so you can personalize messages with attributes from the returned decision items.
+
+>[!ENDSHADEBOX]
+
 Once you've added a decision policy to your content, you can use attributes from returned decision items for personalization. To do so, first insert the decision policy code into your content.
 
 >[!CAUTION]

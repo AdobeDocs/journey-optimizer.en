@@ -19,6 +19,12 @@ subfeature_v2:
 ---
 # Build your first rule {#build-query}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the rule builder to create targeted queries for your Orchestrated campaigns by adding conditions from database attributes and expressions, combining them with logical operators, and validating the results.
+
+>[!ENDSHADEBOX]
+
 The main steps to build rules for your Orchestrated campaigns are as follows:
 
 1. **Add conditions** - Create custom conditions to filter your query by building your own condition with attributes from the database and advanced expressions.

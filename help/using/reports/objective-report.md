@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Campaign global report {#objective-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Use the Adobe Journey Optimizer campaign global report to review delivery statistics, target specific objectives, and compare variant performance in the experimentation report.
+
+>[!ENDSHADEBOX]
+
 Campaign global report can be accessed directly from your Campaign with the **[!UICONTROL View report]** button.
 
 The Campaign **[!UICONTROL Global report]** is divided into different widgets detailing your campaign's success and errors. Each widget can be resized and deleted if needed. For more information on this, refer to this <!--[section](../reports/global-report.md#modify-dashboard)-->.

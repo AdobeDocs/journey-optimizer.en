@@ -28,6 +28,12 @@ subfeature_v2:
 ---
 # Leverage context data in Decisioning {#context}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Define and feed context data from Adobe Experience Platform into Decisioning so you can use real-time information sent at the time of the decision request in your decision rules and ranking formulas.
+
+>[!ENDSHADEBOX]
+
 With Decisioning, you can leverage any information available in Adobe Experience Platform to perform various actions such as creating [decision rules](rules.md) or [ranking formulas](ranking/ranking.md).
 
 For example, you can design a decision rule that requires the current weather to be ≥80 degrees at the time the decision request is made.

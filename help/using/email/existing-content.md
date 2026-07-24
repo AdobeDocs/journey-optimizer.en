@@ -32,6 +32,12 @@ level_v2:
 ---
 # Import your email content {#existing-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to import existing HTML content, either as an HTML file or a .zip folder, and convert it so you can edit and personalize it with the Email Designer.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to import existing HTML content to design your emails. This content can be:
 
 * An **HTML file** with an incorporated style sheet;

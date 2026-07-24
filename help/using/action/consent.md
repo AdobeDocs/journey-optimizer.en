@@ -44,6 +44,12 @@ topic_v2:
 ---
 # Work with consent policies {#consent-management}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Apply Adobe Experience Platform consent policies in Journey Optimizer so that your communications respect each customer's consent choices and stay compliant with data usage rules.
+
+>[!ENDSHADEBOX]
+
 Your data may be subject to usage restrictions defined by your organization or by legal regulations. It is therefore important to ensure that your data operations within Journey Optimizer are compliant with [data usage policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html){target="_blank"}. These policies are Adobe Experience Platform rules defining which marketing actions you are allowed to perform on data.
 
 By default, if a profile has opted out from receiving communications from you, the corresponding profile is excluded from subsequent deliveries. You can create a **consent policy** that overrides this default logic. For example, you can create a consent policy in Experience Platform to exclude customers who have not consented to receive communication for a given channel. In the absence of a custom policy, the default policy applies.

@@ -29,6 +29,12 @@ role_v2:
 ---
 # Define the API triggered campaign properties {#api-properties}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create an API triggered campaign and set its type, name, tags, and access labels so it is correctly scoped and easy to find from the start.
+
+>[!ENDSHADEBOX]
+
 To create a new API triggered campaign, follow these steps:
 
 1. Browse to the **[!UICONTROL Campaigns]** menu and select the **[!UICONTROL API triggered]** tab.

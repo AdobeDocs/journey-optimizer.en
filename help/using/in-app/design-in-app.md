@@ -35,6 +35,12 @@ topic_v2:
 ---
 # Design your In-app content {#design-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design your In-app message content in Adobe Journey Optimizer, including the message layout, media, text, buttons, and advanced formatting options.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_inapp_content"
 >title="Define your In-app content"

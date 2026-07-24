@@ -14,7 +14,13 @@ feature_v2:
     internal-label: Integrations
 ---
 # Insert countdown timer {#countdown}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to insert a Dynamic Media countdown timer into your Journey Optimizer emails to create urgency for flash sales and time-sensitive promotions.
+
+>[!ENDSHADEBOX]
+
 Create urgency and maximize conversions with Dynamic Media countdown timers that update in real-time when recipients open your emails. This feature is ideal for flash sales, limited-time offers, and time-sensitive promotions.
 
 For example, as a marketer for a retail brand, you're running a 48-hour flash sale. By using the countdown timer in your promotional emails:

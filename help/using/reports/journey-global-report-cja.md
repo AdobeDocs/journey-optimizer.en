@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Journey report {#journey-global-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Explore the Adobe Journey Optimizer journey report in Customer Journey Analytics to analyze journey KPIs, statistics, exclusions, action and event performance, and the journey canvas.
+
+>[!ENDSHADEBOX]
+
 The **Journey report** functions as an all-encompassing dashboard, delivering an analysis of essential metrics associated with your journey. This encompasses details such as the count of entered profiles and instances of failed individual journeys, offering a comprehensive insight into your journey's effectiveness and level of engagement.
 
 **Journey report** can be accessed directly from your journey with the **[!UICONTROL View report]** button. 
@@ -146,6 +152,10 @@ The **[!UICONTROL Action overview]** table serves as a comprehensive dashboard, 
 * **[!UICONTROL Click through rate]**: Percentage of users who interacted with the action.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your actions.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
 
 * **[!UICONTROL Delivered]**:  Number of actions successfully sent, in relation to the total number of sent actions.
 

@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Get started with live report {#live-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get started with the Adobe Journey Optimizer live report to visualize journey and campaign performance in real time, customize dashboard widgets, and export your reports.
+
+>[!ENDSHADEBOX]
+
 Use the **[!UICONTROL Live report]** to measure and visualize in real-time the impact and performances of your journeys and your messages in a built-in dashboard. Data are available in the **[!UICONTROL Live report]** as soon as your delivery is sent or your journey is executed from the **[!UICONTROL Last 24hrs]** tab. 
 
 * If you want to target a journey in the context of a journey, from the **[!UICONTROL Journeys]** menu, access your journey's **[!UICONTROL More actions]** menu and click the **[!UICONTROL View last 24hrs report]** button. 
@@ -47,6 +53,10 @@ Use the **[!UICONTROL Live report]** to measure and visualize in real-time the i
     ![](assets/report_campaign.png)
 
 For a detailed list of every metric available in Adobe Journey Optimizer, refer to [this page](#list-of-components-live).
+
+>[!NOTE]
+>
+>Short-term discrepancies between the live report and the all-time report are expected. The live report uses near-real-time data feeds, while the all-time report relies on aggregated data. Should discrepancies occur, allow a minimum of two hours before reconciling the two reports, as data typically propagates to the aggregated view within that timeframe.
 
 ## Customize dashboard {#modify-dashboard}
 

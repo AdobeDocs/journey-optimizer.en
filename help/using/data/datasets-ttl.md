@@ -41,12 +41,18 @@ topic_v2:
 ---
 # Datasets Time-to-live (TTL) guardrails {#ttl-guardrail}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the time-to-live retention limits on Journey Optimizer system-generated datasets so you can plan how long tracking, feedback, and journey data stays available and retain critical data before it expires.
+
+>[!ENDSHADEBOX]
+
 As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Optimizer system-generated datasets in **new sandboxes and new organizations** as follows:
 
 * 90 days for data in the profile store,
 * 13 months for data in the data lake.
 
-This change is being rolled out to **existing customer sandboxes** in a subsequent phase.
+This change will be enforced on **existing customer sandboxes** starting **October 1, 2026**.
 
 ## Impacted datasets {#datasets}
 
@@ -100,13 +106,13 @@ TTLs extensions are not currently supported. However, work is planned to optimiz
 
 >[!NOTE]
 >
->Data stored in the profile is subject to the Total Data Volume entitlement. Therefore, any data storage increase on the profile as a result of a TTL extension would count against the Total Data Volume entitlement. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html){target="_blank}
+>Data stored in the profile is subject to the Total Data Volume entitlement. Therefore, any data storage increase on the profile as a result of a TTL extension would count against the Total Data Volume entitlement. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/landing/license/total-data-volume.html){target="_blank"}
 
 +++
 
 +++Can customers increase the TTL for [!DNL Journey Optimizer] system dataset data in data lake? 
 
-TTLs extensions are not currently supported. Customers can export data through Destinations to retain data longer. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}. Additionally, customers with a **[!DNL Data Distiller]** entitlement can create derived datasets to store the data in data lake without a TTL. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank}
+TTLs extensions are not currently supported. Customers can export data through Destinations to retain data longer. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank"}. Additionally, customers with a **[!DNL Data Distiller]** entitlement can create derived datasets to store the data in data lake without a TTL. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank"}
 
 +++
 
@@ -119,9 +125,9 @@ TTLs extensions are not currently supported. Customers can export data through D
 * **Message frequency capping** (i.e., Business rules): No 
 * **Reporting**: No
 
-    >[!NOTE]
-    >
-    >A TTL is already implemented on the [!DNL Customer Journey Analytics] (CJA) connection, which reduces effective max look-back period of impacted dataset data to 13 months.
+  >[!NOTE]
+  >
+  >A TTL is already implemented on the [!DNL Customer Journey Analytics] (CJA) connection, which reduces effective max look-back period of impacted dataset data to 13 months.
 
 * **Experience Platform data source**: Not applicable - Experience event retrieval is not supported via data sources. 
 * **Computed attributes**: Yes - Initial backfill calculation will be limited to last 90 days of data; computed attribute will be updated based on incremental events for subsequent updates. As soon as the subsequent updates reach the look-back period (max 6 months), the TTL essentially no longer affects the computed attribute. Learn more. 
@@ -144,7 +150,10 @@ The new TTL policy will limit the look-back period for system-generated dataset 
 
 +++What alternatives are available for retaining data longer than the TTL?
 
-Customers who require longer retention should consider exporting relevant data from AJO datasets to external storage before the TTL expiration. Adobe Journey Optimizer supports exporting datasets to various cloud storage destinations (Amazon S3, Azure Blob, Google Cloud Storage, etc.). [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank}
+Customers who require longer retention have two options:
+
+* **Export to external storage**: export relevant data from AJO datasets before the TTL expiration. Adobe Journey Optimizer supports exporting datasets to various cloud storage destinations (Amazon S3, Azure Blob, Google Cloud Storage, etc.). [Learn more](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html){target="_blank"}
+* **Data Distiller derived datasets**: customers with a Data Distiller entitlement can set up automated queries to copy critical data into a derived dataset in the data lake, which can be stored without a TTL. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/derived-datasets/overview){target="_blank"}
 
 +++
 
@@ -156,9 +165,9 @@ Customers who require longer retention should consider exporting relevant data f
 
 +++
 
-+++Will customers be notified before the TTL is enforced on existing sandboxes?
++++How are customers notified before the TTL is enforced on existing sandboxes?
 
-Yes, impacted customers will be notified in advance, and the product team will work with them to ensure a smooth transition.
+Adobe notifies impacted customers before enforcing the TTL on existing sandboxes. For this rollout, Adobe sent an in-product notification and published this change in the product release notes, giving customers about two months' notice before the guardrail takes effect on October 1, 2026.
 
 +++
 

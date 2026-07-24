@@ -30,6 +30,12 @@ topic_v2:
 ---
 # Understand statistical calculations {#experiment-calculations}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the statistical methodology behind experiments in Adobe Journey Optimizer, including anytime valid confidence sequences and confidence that let you continuously monitor results and determine when an experiment is conclusive.
+
+>[!ENDSHADEBOX]
+
 This article describes the statistical calculations used when you run Experiments in Adobe Journey Optimizer. 
 
 Experimentation uses [advanced statistical methods](../content-management/assets/confidence_sequence_technical_details.pdf) to calculate **Confidence sequences** and **Confidence**, which allow you to run your experiments for as long as needed, and to monitor your results continuously.

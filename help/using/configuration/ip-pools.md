@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Create IP pools {#create-ip-pools}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, edit, and delete IP pools that group your subdomain IP addresses to improve email deliverability and protect sender reputation.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ip_pool_header"
 >title="Set up an IP pool"

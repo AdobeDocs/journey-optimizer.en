@@ -21,11 +21,16 @@ subfeature_v2:
 ---
 # About Orchestrated campaign activities {#orchestrated-campaign-activities}
 
-Orchestrated campaign activities are grouped into three categories. Depending on the context, available activities may differ. 
+>[!BEGINSHADEBOX]
 
-All activities are detailed in the sections below:
+**On this page:** Discover the targeting, channel, and flow control activities available on the canvas to build cross-channel Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
+Orchestrated campaign activities are grouped into several categories. Depending on the context, available activities may differ. All activities are detailed in the sections below:
 
 * [Targeting activities](#targeting)
+* [Data Management activities](#data-management)
 * [Channel activities](#channel)
 * [Flow control activities](#flow-control)
 
@@ -37,7 +42,7 @@ All activities are detailed in the sections below:
 
 ## Guardrails and limitations {#activity-guardrails}
 
-* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, SMS, Push, or Direct mail). Targeting and flow control activities do not count toward this limit.
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, SMS, Push, or Direct mail). Targeting, Data Management, and flow control activities do not count toward this limit.
 
 * **Canvas activities limit** - The number of activities on the canvas is limited to 500. For maintainability and performance, keep workflows under 100 activities in practice.
 
@@ -58,6 +63,14 @@ Available targeting activities are:
 * [Enrichment](enrichment.md): Define additional data to process in your Orchestrated campaign. With this activity, you can leverage the inbound transition and configure the activity to complete the output transition with additional data.
 * [Reconciliation](reconciliation.md): Define the link between the data in Journey Optimizer data and the data in a work table, for example data loaded from an external file.
 * [Split](split.md): Segment incoming population into several subsets.
+
+## Data Management activities {#data-management}
+
+These activities let you work with data stored in external files and make it available for targeting, personalization, or downstream activities on the canvas.
+
+Available Data Management activities are:
+
+* [Load file](load-file.md) (Limited Availability): Upload a CSV or TXT file on the canvas and use it to define the campaign audience (file-based targeting) without ingesting the file into Adobe Experience Platform first. To request access, contact your Adobe representative.
 
 ## Channel activities {#channel}
 

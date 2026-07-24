@@ -15,14 +15,20 @@ subfeature_v2: []
 ---
 # Browse & filter your journeys {#browse-journeys}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to browse, search, and filter your journeys using the journey dashboard, list, and calendar views in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_view"
 >title="Journeys list and calendar views"
->abstract="In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules. You can switch between the list and calendar views at any times using these buttons."
+>abstract="In addition to the journeys list, [!DNL Journey Optimizer] provides a calendar view of your journeys, offering a clear visual representation of their schedules. These buttons switch between the list and calendar views at any time."
 
 ## Journey dashboard {#dashboard-jo}
 
-In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Two tabs are available: **[!UICONTROL Overview]** and **[!UICONTROL Browse]**.
+In the JOURNEY MANAGEMENT menu section, click **[!UICONTROL Journeys]**. Three dedicated tabs are available: **[!UICONTROL Overview]** (dashboard), **[!UICONTROL Browse]** (list and calendar), and **[!UICONTROL Folders view]** (organize journeys in folders).
 
 ### Journeys overview
 
@@ -41,7 +47,7 @@ The **[!UICONTROL Overview]** tab displays a dashboard with key metrics related 
 
 ### Journeys list
 
-The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can search for journeys, use filters and perform basic actions on each element. For example, you can duplicate or delete an item. 
+The **[!UICONTROL Browse]** tab shows the list of existing journeys. You can search for journeys, use filters, and perform basic actions on each element. For example, you can duplicate or delete an item. 
 
 ![journey dashboard highlighting the Browse tab](assets/journeys-browse.png)  
  
@@ -97,6 +103,15 @@ To navigate in your Journeys calendar:
 
     ![campaign list with the information pane opened](assets/journey-calendar-4.png)
 
+### Folders view {#journeys-folders}
+
+Open the journeys folder view with the **[!UICONTROL Show folders]** icon on the journey list, or use the **[!UICONTROL Folders view]** tab. [Learn how to work with folders](../start/search-filter-categorize.md#organize-folders)
+
+![](assets/folders-view-journeys.png)
+
+>[!AVAILABILITY]
+>
+>Folders for journeys are in limited availability. For current release status, see the [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Filter your journeys {#journey-filter}
 
@@ -182,4 +197,52 @@ You can also resume one or several **Paused** journeys. To resume a group of jou
 >[!NOTE]
 >
 >You can pause/resume until 10 journeys per operation.
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to browse, filter, view (list and calendar), duplicate, and perform bulk operations on journeys from the Journey Optimizer dashboard.
+
+**Intents:**
+
+* Browse and search journeys from the Overview and Browse tabs
+* Filter journeys by status, type, version, tags, creation date, or publication date
+* Switch between list view and calendar view to visualize journey schedules
+* Add and manage external calendars by uploading CSV files
+* Duplicate an existing journey to reuse its settings
+* Bulk pause or resume multiple live or paused journeys at once
+
+**Glossary:**
+
+* **Journey dashboard**: The main journeys interface with an Overview tab showing key metrics and a Browse tab listing all journeys. *(product-specific)*
+* **Discard rate**: The ratio of profiles not eligible to enter the journey (e.g., due to incorrect namespace or reentrance rules) compared to total profiles who attempted entry over the last 24 hours. *(product-specific)*
+* **Journeys calendar view**: A visual weekly calendar representation of live and scheduled journeys, accessible by clicking the calendar icon in the journeys list. *(product-specific)*
+* **Bulk pause**: An operation that pauses multiple Live journeys at once (up to 10 per operation) from the journeys list. *(product-specific)*
+
+**Guardrails:**
+
+* Dashboard metrics refresh every 30 minutes and only when new data is available; they cover the last 24 hours only
+* Draft journeys and journeys in test mode are not shown in the calendar view
+* Bulk pause/resume is limited to 10 journeys per operation
+* The Resume button is only active when Paused journeys are selected; the Pause button is only active when Live journeys are selected
+* The calendar displays journeys as 1-hour timespans regardless of actual send or completion time
+
+**Terminology:**
+
+* Canonical name: Journey dashboard — Acronym: none — variants: journeys list, journeys overview
+* Synonyms: "Browse tab" = "journeys list"
+* Do not confuse: "Discard rate" ≠ "Error rate" — Discard rate counts profiles ineligible to enter; Error rate counts profiles that entered but encountered a processing error
+
+**FAQ:**
+
+* **Q: Where can I see key journey performance metrics at a glance?** — On the Overview tab of the Journey dashboard, which shows profiles processed, live journeys, error rate, and discard rate for the last 24 hours.
+* **Q: How do I find journeys that use a specific event or action?** — Use the Activity filters and Data filters in the journey list to display journeys referencing a specific event, field group, or action.
+* **Q: Can I pause multiple journeys at once?** — Yes; select multiple Live journeys in the list and click the Pause button in the bottom bar. Up to 10 journeys can be paused per operation.
+* **Q: How do I add external events to the journey calendar?** — Click the calendar add icon, then drag and drop a CSV file with event name, start date, and end date columns; uploaded events are visible to all users in the organization.
+* **Q: Why does the calendar show a journey as 1 hour even though it runs longer?** — The calendar displays all journeys as 1-hour timespans for visual consistency; this does not reflect actual send or completion time.
+
++++
 

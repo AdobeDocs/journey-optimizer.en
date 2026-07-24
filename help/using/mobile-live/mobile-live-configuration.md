@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Get started with Live activity configuration {#mobile-live-config}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up your push credentials and Live activity channel configuration so you can authorize Adobe Journey Optimizer to deliver real-time updates to your iOS app.
+
+>[!ENDSHADEBOX]
+
 Before sending Live activities, you must configure your Adobe Journey Optimizer environment. To perform this:
 
 ## Step 1: Add your app push credentials in Journey Optimizer (optional){#push-credentials-launch}

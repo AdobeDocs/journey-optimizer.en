@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Add a Google TXT record to a subdomain {#google-txt-record}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add and update a Google site verification TXT record on your subdomain to ensure successful delivery of emails to Gmail addresses.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_subdomain_google"
 >title="Google TXT records"

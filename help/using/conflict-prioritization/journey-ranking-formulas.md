@@ -16,9 +16,17 @@ subfeature_v2:
 ---
 # Use formulas to rank journeys {#journey-ranking-formulas}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create ranking formulas based on journey attributes, profile attributes, or AI scores so the best journey is selected for each profile when journey caps apply.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This feature is currently in Limited Availability. Contact your Adobe representative to gain access.
+>
+>Ranking formulas are only available to organizations that have purchased the **Decisioning** add-on offering.
 
 [!DNL Adobe Journey Optimizer] helps you control which journeys a profile can enter when they qualify for more than the system allows. To do so, you can use [rule sets](rule-sets.md) to define caps on journey entry or concurrency. When a profile is eligible for more journeys than the cap allows, the priority assigned to each journey determines which journeys are selected.
 

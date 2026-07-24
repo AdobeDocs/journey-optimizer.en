@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Author single-page applications {#web-author-spas}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to author single-page applications in Adobe Journey Optimizer by defining views in the Web SDK implementation, discovering them in the web designer with browse mode, and applying modifications to selected views.
+
+>[!ENDSHADEBOX]
+
 ## About views {#about-views}
 
 >[!CONTEXTUALHELP]
@@ -54,9 +60,9 @@ One-time developer setup is needed to define the views in the Adobe Experience P
 
 ## Define views in the Web SDK implementation {#define-views}
 
-XDM views can be leveraged in Adobe [!DNL Journey Optimizer] to empower marketers to run web personalization and experimentation campaigns on SPAs via the web visual editor. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
+XDM views can be leveraged in Adobe [!DNL Journey Optimizer] to empower marketers to run web personalization and experimentation campaigns on SPAs via the web visual editor. [Learn more](web-spa-implementation.md)
 
-To be able to access and author views in the [!DNL Journey Optimizer] user interface, make sure you follow the steps listed in [this section](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html#implement-xdm-views){target="_blank"}.
+To be able to access and author views in the [!DNL Journey Optimizer] user interface, make sure you follow the steps listed in [this section](web-spa-implementation.md#implement-xdm-views).
 
 ## Discover views in the web designer {#discover-views}
 

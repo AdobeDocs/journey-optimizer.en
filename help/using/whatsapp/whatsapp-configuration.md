@@ -41,6 +41,12 @@ topic_v2:
 ---
 # Get started with WhatsApp configuration {#whatsapp-config}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up WhatsApp API credentials, webhooks, and a channel configuration to connect your WhatsApp Business account, so your environment is ready to send WhatsApp messages with Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 Before sending your WhatsApp message, you must configure your Adobe Journey Optimizer environment and associate with your WhatsApp account. To perform this:
 
 1. [Create your WhatsApp API credentials](#WhatsApp-credentials)
@@ -136,6 +142,8 @@ Once your WhatsApp API credentials have been successfully created, you can now c
 
 Webhooks act as the communication bridge between Meta's WhatsApp Business Platform and Adobe Journey Optimizer, allowing you to receive real-time notifications about message events and user interactions.
 
+Note that Meta allows only one webhook, callback URL and Verify Token, per WhatsApp Business Account, even across multiple sandboxes or WhatsApp credentials. **Feedback events** (Sent, Delivered, Read, Error, button click) are still captured correctly in every sandbox. **Inbound events** (replies, opt-in/opt-out/help keywords) are only received in the single sandbox where the webhook is registered, register it against your **production sandbox** to receive inbound events there.
+
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL WhatsApp Webhooks]** menu under **[!UICONTROL WhatsApp settings]**, and click the **[!UICONTROL Create Webhook]** button.
 
     ![](assets/webhook-1.png)
@@ -208,7 +216,7 @@ Now that your Webhook is configured, you can create your WhatsApp configuration.
 
     ![](assets/whatsapp-config-3.png){width=80%}
 
-1. Enter the **[!UICONTROL Sender Phone Number]** ​you want to use for your communications.
+1. Enter the **[!UICONTROL Sender Phone Number]** ​you want to use for your communications. Do not include a '+' sign before the number, as this can prevent the opt-out flow from working correctly.
 
 1. Use the **[!UICONTROL WhatsApp Execution Field]** to select amongst the profile attributes the phone number that you want to use in priority if several numbers are available in the database. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
 

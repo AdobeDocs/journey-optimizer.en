@@ -9,6 +9,12 @@ exl-id: 7d650278-4a62-4666-b8d7-f0b79ec527ea
 ---
 # Create an Inbox {#inbox-create}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Build a campaign that uses the Inbox action, target an audience, and schedule or trigger it, so you can deliver persistent messages that users can revisit in their inbox.
+
+>[!ENDSHADEBOX]
+
 Prior to creating an inbox, complete the steps in [Inbox configuration](inbox-configuration.md). The channel configuration identifies the target application or website, the page or rule, and the placement where the inbox is rendered.
 
 To create a message inbox through a campaign, follow these steps:

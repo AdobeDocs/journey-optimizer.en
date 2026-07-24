@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Manage web modifications {#manage-web-modifications}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to review, delete, and undo the changes applied to your web page from the Modifications pane, and how to add CSS selector and page head modifications directly in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_web_designer_modifications"
 >title="Easily manage all your changes"

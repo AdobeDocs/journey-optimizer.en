@@ -306,9 +306,9 @@ Upon runtime, the metadata value is added to the existing **[!UICONTROL Message 
 
 **Limitations**
 
-There is an upper limit of 2kb on the key value pairs per action. If the 2Kb limit is exceeded, the message is still delivered, but any of the key value pairs can be truncated.
-
-Metadata is not captured for profiles excluded from the action. When a profile is excluded from receiving a message, no metadata entry is created for that profile in the dataset.
+* You can pass a maximum of 50 key-value pairs per action.
+* The total metadata payload is limited to 2 KB per action. If the 2 KB limit is exceeded, the message is still delivered, but any key-value pair can be truncated.
+* Metadata is not captured for profiles excluded from the action. When a profile is excluded from receiving a message, no metadata entry is created for that profile in the dataset.
 
 **Example**
 

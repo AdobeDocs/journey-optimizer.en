@@ -34,6 +34,12 @@ level_v2:
 ---
 # Add inline styling attributes {#inline-styling}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to apply and customize CSS-compliant inline styling attributes on individual elements in the Email Designer.
+
+>[!ENDSHADEBOX]
+
 In the Email Designer interface, when you select an element and display its settings on the side panel, you can customize the inline attributes and their value for that specific element.
 
 1. Select an element in your content.

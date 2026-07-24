@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Create multilingual content with manual translation {#multilingual-manual}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create multilingual content with manual translation by configuring language settings and translating or importing content directly in your campaigns and journeys for each locale.
+
+>[!ENDSHADEBOX]
+
 >[!IMPORTANT]
 >
 >For manual flow, users need to be granted the **[!UICONTROL Manage Language settings]** permission. 
@@ -106,7 +112,7 @@ In this section, you can set your different locales for managing your multilingu
     >
     >These prerequisites are required for the In-app and Content cards channels only.
 
-    1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+    1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules){target="_blank"}
 
     2. In the rule's **[!UICONTROL IF]** section, add an event configured as below:
 

@@ -42,6 +42,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Learn how to read the Campaign report in Adobe Journey Optimizer to review campaign KPIs, the campaign overview and funnel, tracked links, and targeting performance across all channels used in your campaign.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 You can access your Campaign report by clicking the **[!UICONTROL Reports]** button from your campaign, then selecting **[!UICONTROL View all time report]**. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access.png)
@@ -86,6 +92,10 @@ Note that metrics will vary based on the channels used in your campaign.
 * **[!UICONTROL Click through rate]**: Percentage of users who interacted with the message.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your message.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your message.
 

@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Journey live report {#journey-live-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Measure your journey's performance in real time over the last 24 hours with the Adobe Journey Optimizer live report, covering journey, email, push, SMS, and in-app metrics.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_live_report"
 >title="Journey live report"

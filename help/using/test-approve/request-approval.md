@@ -22,6 +22,12 @@ subfeature_v2:
 ---
 # Request approval {#request-approval}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Move your journey or campaign toward go-live with confidence by sending it to the right reviewers, and stay in control while it is in review — cancel, edit, and resubmit as needed so only approved, on-brand content ever reaches your customers.
+
+>[!ENDSHADEBOX]
+
 Access to the approval workflow is determined by your specific use case:
 
 * **No active Approval policy exists**

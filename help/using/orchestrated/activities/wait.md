@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Wait {#wait}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Wait flow control activity to introduce a timed delay between two activities in an Orchestrated campaign for better-timed follow-ups.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_wait"
 >title="Wait activity"

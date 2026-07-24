@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Customizable fragments {#customizable-fragments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to make specific fields in visual and expression fragments editable so users can customize them when adding the fragment to a campaign or journey, without breaking inheritance from the original fragment.
+
+>[!ENDSHADEBOX]
+
 When fragments are used in a campaign or journey action, they are locked by default due to inheritance. This means any changes made to a fragment are automatically propagated to all campaigns and journeys where the fragment is used.
 
 With **customizable fragments**, specific fields within a fragment can be defined as editable when the fragment is added to a campaign or journey action. For example, suppose you have a fragment with a banner, some text, and a button. You can designate certain fields, such as the image or button target URL, as editable. This allows users to modify these elements when they incorporate the fragment into their campaign or journey, providing a tailored experience without affecting the original fragment.
@@ -83,6 +89,45 @@ To make portions of a visual fragment editable, follow these steps:
 >[!CAUTION]
 >
 >When both the **label** and **URL** of a button component are made editable in a fragment, tracking reports show the URL instead of the button label. [Learn more about tracking](../email/message-tracking.md)
+
+## Enable rich text editing in a customizable visual fragment {#rich-text-visual}
+
+>[!CONTEXTUALHELP]
+>id="ajo_editable_fragment_compatibility"
+>title="Legacy fragment"
+>abstract="Editable fields in this fragment are in text-only mode. This means you can only enter plain text when editing this fragment in emails—full formatting options such as bold, italic, hyperlinks, and line breaks are not supported. Click <b>Enable</b> to allow rich text in editable fields when using the fragment in an email."
+
+>[!CONTEXTUALHELP]
+>id="ajo_editable_field_compatibility"
+>title="Legacy fragment"
+>abstract="This editable field is in text-only mode. Full formatting options (bold, italic, hyperlinks, line breaks, etc.) are not available until the fragment is upgraded to rich-text mode. Go to the fragment body settings and click <b>Enable</b> to unlock rich text in editable fields."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments#customize-fields" text="Customize editable fields in a fragment"
+
+>[!CONTEXTUALHELP]
+>id="ac_editable_fragment_compatibility"
+>title="Legacy fragment"
+>abstract="Editable fields in this fragment are in text-only mode. Full formatting options (bold, italic, hyperlinks, line breaks, etc.) are not available until the fragment is upgraded to rich-text mode. To unlock this mode, open the fragment editor and click <b>Enable</b>."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments#customize-fields" text="Customize editable fields in a fragment"
+
+Rich text <!--— including bold, italic, line breaks, and hyperlinks —-->is now natively supported in customizable visual fragments.
+
+When a customizable visual fragment is used in an email, you can leverage full formatting options such as bold, italic, line breaks, bulleted lists, and hyperlinks, directly within any editable field in the **[!UICONTROL Text]**, **[!UICONTROL Button]**, and **[!UICONTROL Html]** components of the fragment. [Learn how to customize editable fields](../email/use-visual-fragments.md#customize-fields) 
+
+However, if you created fragments and defined editable fields before the rich-text capability was introduced, the editable fields are set to text-only mode by default.
+
+* A compatibility warning is displayed in the fragment editor.
+
+    ![](assets/fragment-custom-compatibility.png)
+
+    To unlock rich-text mode for these editable fields when using the fragment in an email, click the **Enable** button and save the fragment.
+
+* Once you added the fragment to an email, a compatibility warning is also displayed when selecting the fragment in the Email Designer.
+
+    ![](assets/email-fragment-custom-compatibility.png)
+
+    To upgrade the fragment to rich-text mode, use the **Open fragment** button to access the fragment editor and click the **Enable** button and save the fragment.
+
+Until the rich-text mode is unlocked, the legacy customizable visual fragments continue to support plain text only. Users cannot enter rich text into the editable fields of these fragments.
 
 ## Add editable fields to HTML components and expression fragments {#expression}
 
@@ -165,31 +210,16 @@ To do so:
 
     ![](assets/fragment-expression-use.png)
 
+<!--
 ## Add rich text to a customizable fragment {#rich-text}
 
->[!CONTEXTUALHELP]
->id="ajo_editable_fragment_compatibility"
->title="Legacy fragment"
->abstract="Editable fields in this fragment are in text-only mode. This means you can only enter plain text when editing this fragment in emails—rich text such as bold, italic, hyperlinks, and line breaks is not supported. Click <b>Switch to HTML mode</b> to enable rich text in editable fields when using the fragment in an email."
-
->[!CONTEXTUALHELP]
->id="ajo_editable_field_compatibility"
->title="Legacy fragment"
->abstract="This editable field is in text-only mode. Rich text formatting (bold, italic, hyperlinks, line breaks, etc.) is not available until the fragment is upgraded to HTML-compatible mode. Go to the fragment body settings and click <b>Switch to HTML mode</b> to enable rich text editing."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments#customize-fields" text="Customize editable fields in a fragment"
-
->[!CONTEXTUALHELP]
->id="ac_editable_fragment_compatibility"
->title="Legacy fragment"
->abstract="Editable fields in this fragment are in text-only mode. Rich text formatting (bold, italic, hyperlinks, line breaks, etc.) is not available until the fragment is upgraded to HTML-compatible mode. To do so, open the fragment editor and click <b>Switch to HTML mode</b>."
->additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/email/design-email/add-content/use-visual-fragments#customize-fields" text="Customize editable fields in a fragment"
-
 Rich text such as line breaks, bold, italics etc., can be added to a customizable fragment by using HTML components. To do so, follow the steps below.
-<!--
+
 ➡️ [Learn how to add and use rich text in a customizable fragment in this video](#video)
--->
 
 ### Create a fragment including rich text {#add-rich-text}
+
+The approach below (using HTML components with inline variables) remains fully supported for advanced HTML-based scenarios??
 
 1. Create a visual [fragment](create-fragments.md) and start adding components.
 
@@ -225,15 +255,14 @@ When adding the fragment to your email, you can now edit the rich text content a
 
     ![](assets/fragment-use-rich-editable-fields.png)
 
-1. You can click **[!UICONTROL Simulate content]** to see how the editable content and styling render. [Learn more on previewing content](preview-test.md)
+1. Use either simulation method to see how the editable content and styling render: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more on previewing content](preview-test.md)
 
 1. Select the **[!UICONTROL Add personalization]** icon next to one of the editable fields.
 
-1. In the personalization editor that opens, update the <!--CSS-->styling and/or content as wanted by adding or removing elements of the editable field.
+1. In the personalization editor that opens, update the styling and/or content as wanted by adding or removing elements of the editable field.
 
     ![](assets/fragment-rich-editable-fields-update-styling.png)
 
-<!--
 ## How-to video {#video}
 
 This video shows how to make HTML components within a fragment editable, allowing for dynamic updates to both content and styling.

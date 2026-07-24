@@ -28,6 +28,12 @@ topic_v2:
 ---
 # Create decision policies {#create-decision}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Add and configure a decision policy in your campaign or journey content so you can return and rank the best decision items for each profile across the supported channels.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_code_based_item_number"
 >title="Define the number of items to be returned"
@@ -79,7 +85,7 @@ For code-based experiences, you can add a new decision policy using either the *
 
 +++Add a decison policy from the Decisioning menu
 
-1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
+1. Click the ![](assets/do-not-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
 
 1. Click the **[!UICONTROL Add decision policy]** button.
 
@@ -105,7 +111,7 @@ For code-based experiences, you can add a new decision policy using either the *
 
     +++Add a decision policy from the Personalization editor
 
-    1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon available in the subject line field or in any field in the email body where you can add personalization.
+    1. Open the personalization editor using the ![](assets/do-not-localize/editor-icon.svg) icon available in the subject line field or in any field in the email body where you can add personalization.
 
     1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
 
@@ -117,7 +123,7 @@ For code-based experiences, you can add a new decision policy using either the *
 
     1. Open the Email Designer and select any component in the email structure.
 
-    1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
+    1. Click the ![](assets/do-not-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
 
     1. Click the **[!UICONTROL Add new policy]** button.
 
@@ -149,7 +155,7 @@ For SMS, you can add a new decision policy using either the **personalization ed
 
 +++Add a decision policy from the personalization editor
 
-1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
+1. Open the personalization editor using the ![](assets/do-not-localize/editor-icon.svg) icon.
 1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
 
     ![](assets/decision-policy-add-sms-editor.png)
@@ -158,7 +164,7 @@ For SMS, you can add a new decision policy using either the **personalization ed
 
 +++Add a decison policy from the Decisioning menu
 
-1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
+1. Click the ![](assets/do-not-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
 
 1. Click the **[!UICONTROL Add decision policy]** button.
 
@@ -172,7 +178,7 @@ For Push notifications, you can add a new decision policy using either the **per
 
 +++Add a decision policy from the personalization editor
 
-1. Open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
+1. Open the personalization editor using the ![](assets/do-not-localize/editor-icon.svg) icon.
 1. Navigate to the **[!UICONTROL Decision policies]** menu then click the **[!UICONTROL Add decision policy]** button.
 
     ![](assets/decision-policy-add-push.png)
@@ -181,7 +187,7 @@ For Push notifications, you can add a new decision policy using either the **per
     
 +++Add a decison policy from the Decisioning menu
 
-1. Click the ![](assets/do-no-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
+1. Click the ![](assets/do-not-localize/decisioning-icon.png) icon from the properties pane to access the **[!UICONTROL Decisioning]** menu.
 
 1. Click the **[!UICONTROL Add decision policy]** button.
 
@@ -199,7 +205,7 @@ For direct mail, add a decision policy from the **extraction file** configuratio
 
 1. In the **[!UICONTROL Data Fields]** section, select a column or click **[!UICONTROL Add]** to create one.
 
-1. In the formatting pane, open the personalization editor using the ![](assets/do-no-localize/editor-icon.svg) icon.
+1. In the formatting pane, open the personalization editor using the ![](assets/do-not-localize/editor-icon.svg) icon.
 
     ![](assets/decision-policy-dm-add.png)
 

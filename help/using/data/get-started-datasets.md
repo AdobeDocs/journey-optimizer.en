@@ -45,6 +45,12 @@ topic_v2:
 ---
 # Get Started with datasets {#datasets-gs}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, create, and govern Adobe Experience Platform datasets so you can store and explore the data that powers journeys, campaigns, and reporting in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 All data that is ingested into Adobe Experience Platform is persisted within the Data Lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows).
 
 ## Guardrails & limitations
@@ -52,6 +58,8 @@ All data that is ingested into Adobe Experience Platform is persisted within the
 * As of November 1st, 2024, streaming segmentation no longer supports send and open events from [!DNL Journey Optimizer] tracking and feedback datasets. For implementing Frequency Capping or Fatigue Management, please use Business Rules instead. You can find more details in [this section](../conflict-prioritization/rule-sets.md), including a use case explanation for daily capping [here](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/elevate-customer-experience-with-daily-frequency-capping-in-ajo/ba-p/761510){target="_blank"}.
 
 * As of February 2025, a time-to-live (TTL) guardrail is being rolled out to Journey Optimizer system-generated datasets. [Learn more](datasets-ttl.md)
+
+* Enabling a dataset for Profile has permanent implications at the schema level. Plan your schema and identity design carefully before enabling. [Learn more](#profile-datasets)
 
 ## Access datasets {#access}
 
@@ -80,7 +88,7 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
 
 * Reporting
 
-    * _Reporting - Message Feedback Event Dataset_: Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset.
+    * _Reporting - Message Feedback Event Dataset_: Message delivery logs. Information on all message delivery from Journey Optimizer for reporting and audience creation purposes. Feedback from Email ISPs on bounces is also recorded in this dataset. **This dataset uses batch ingestion — expect a data latency of up to 2 hours.**
     * _Reporting - Email Tracking Experience Event Dataset_: Interaction logs for the Email channel, and WhatsApp channel context data under the `whatsAppChannelContext` field group. Used for reporting and audience creation. Information stored includes actions performed by the end-user on email (opens, clicks, etc.) and WhatsApp interactions.
     * _Reporting - Push Tracking Experience Event Dataset_: Interaction logs for Push channel which is used for reporting and audience creation purposes. Information stored informs on actions performed by the end-user on push notifications.
     * _Reporting - Journey Step Event_: Captures All Journey Step Experience Events generated from Journey Optimizer to be consumed by services like Reporting. Also critical for building reports in Customer Journey Analytics for YoY analysis. Tied to a Journey Metadata.
@@ -120,6 +128,21 @@ Watch this video to learn how to create a dataset, map it to a schema, add data 
 
 >[!VIDEO](https://video.tv.adobe.com/v/334293?quality=12)
 
+## Enable datasets for Profile {#profile-datasets}
+
+When you create a dataset, you can enable it to contribute to [Real-Time Customer Profile](../audience/get-started-profiles.md). This allows the data it contains to be used for segmentation, personalization, and journey conditions in [!DNL Journey Optimizer].
+
+Before enabling, keep the following in mind:
+
+* **Schema enablement is permanent.** Once the schema underlying a dataset is enabled for Profile, this cannot be reversed — the schema cannot be disabled or deleted. Only the dataset itself can be disabled or deleted separately.
+* **Disabling a dataset has consequences.** You can disable or delete a dataset for Profile independently of its schema, but doing so removes the associated profile records and may disrupt segmentation and activation workflows.
+* **Plan your configuration before enabling.** Identity fields and field group selections become harder to change after Profile enablement. Finalize your schema design first.
+
+For detailed guidance, refer to the Adobe Experience Platform documentation:
+
+* [Profile enablement planning](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/profile-enablement-planning){target="_blank"} — pre-enablement checklist covering identity configuration, field group selection, and dataset purpose validation.
+* [Managing profile-enabled schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices#managing-profile-enabled-schemas){target="_blank"} — guidance on deprecating profile-enabled schemas, including renaming strategies.
+
 ## Data Governance
 
 In a dataset, browse the **Data Governance** tab to check labels at the dataset and field level. Data Governance categorize data according to the type of policies that apply.
@@ -142,3 +165,4 @@ Learn more about Data Governance and data usage labels in the [Data Governance d
 >* [Datasets documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html){target="_blank"}
 >* [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html){target="_blank"}.
 >* [Data management license entitlement best practices](https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/data-management-best-practices#data-management-best-practices){target="_blank"}
+>* [Managing profile-enabled schemas](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices#managing-profile-enabled-schemas){target="_blank"}

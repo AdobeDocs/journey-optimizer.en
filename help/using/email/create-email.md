@@ -49,12 +49,24 @@ topic_v2:
 ---
 # Create an email {#create-email}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add an email action to a journey or campaign in Adobe Journey Optimizer, define its subject and content, check alerts, and preview before sending.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_message_email"
 >title="Email creation"
 >abstract="Define your email subject line, and open the Email Designer to create the content of the email."
 
 ## Add an email action {#email-action}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_email"
+>title="Email action"
+>abstract="An email channel action sends an email to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references an email configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 To create an email in [!DNL Journey Optimizer], add an **[!UICONTROL Email]** action to a journey or a campaign. Then follow the steps below, according to your case.
 
@@ -161,6 +173,8 @@ After adding the email action to your journey or campaign, you need to define th
     >[!NOTE]
     >
     >If you already created or imported content through the Email Designer, this content will display in HTML.
+
+1. If needed, enable the **[!UICONTROL Optimize HTML size]** option to reduce the size of your email HTML during the publishing process. [Learn more](#optimize-html-size)
     
 ## Check alerts {#check-email-alerts}
 
@@ -188,7 +202,7 @@ Two types of alerts can happen:
 
     * **[!UICONTROL Empty link is present in email body]**: check that all the links in your email are correct. Learn how to manage content and links in [this section](content-from-scratch.md).
 
-    * **[!UICONTROL Email size has exceeded the limit of 100KB]**: for optimal delivery, make sure the size of your email does not exceed 100KB. Learn how to edit email content in [this section](content-from-scratch.md).
+    * **[!UICONTROL Email size has exceeded the limit of 100KB]**: for optimal delivery, make sure the size of your email does not exceed 100KB. To reduce the HTML size, use the **[!UICONTROL Optimize HTML size]** option. [Learn more](#optimize-html-size)
 
 * **Errors** prevent you from testing or activating the journey/campaign as long as they are not resolved, such as:
 
@@ -204,17 +218,62 @@ Two types of alerts can happen:
 >
 >To be able to test or activate the journey/campaign using the email, you must resolve all **error** alerts.
 
-## Check and send your email
+## Optimize email HTML size {#optimize-html-size}
 
-Once your message content has been defined, you can use test profiles to preview it, send proofs and control its rendering in popular desktop, mobile and web-based clients. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
+>[!CONTEXTUALHELP]
+>id="ajo_email_minification"
+>title="Reduce HTML size"
+>abstract="Enable this option to compress your email HTML during publishing by removing unnecessary whitespace and indentation. This helps prevent email clipping in clients such as Gmail, which truncates messages exceeding 100 KB. Note that when working with multilingual emails, this option is enabled by default for all locales."
 
-You can also validate your content quality to assess readability, effectiveness, and content cohesiveness. [Learn more about content quality validation](../content-management/brands-score.md#validate-quality)
+[!DNL Journey Optimizer] allows you to compress your email HTML version during the publishing process by removing unnecessary whitespace and indentation. Keeping HTML size small helps you:
 
 >[!NOTE]
 >
->In addition to test profiles, [!DNL Journey optimizer] also allows you to test different variants of your content by previewing it and sending proofs using sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+>Removal of non-essential HTML comments is also part of optimization, but this capability has been temporarily disabled as of July 10, 2026.
 
-To do this, click **[!UICONTROL Simulate content]** then add a test profile to check your message using the test profile data.
+* Avoid **email clipping** — some clients such as Gmail truncate messages larger than ~100 KB, preventing recipients from viewing the full content.
+* Improve **email load time** in the recipient's inbox.
+* Improve **deliverability** and reduce bandwidth usage.
+
+This optimization is not applied automatically — you must manually enable it in the [Edit content](#define-email-content) screen.
+
+![](assets/email-optimize-html-size.png)
+
+>[!IMPORTANT]
+>
+> The HTML size reduction is only applied at publication time.
+
+The optimization is email-client safe:
+
+* It preserves MSO/Outlook conditional comments.
+* It does not alter your actual content, images, or videos.
+
+>[!NOTE]
+>
+>The reduction in email size depends on the original HTML structure of your email. If the content is already compact or the email payload is very large, the reduction may be minimal and may not fully prevent clipping in all cases.
+
+You can test the impact of HTML size optimization before publishing when sending proofs. [Learn more](#optimize-html-proof)
+
+### Optimize HTML size in multilingual emails {#optimize-html-multilingual}
+
+When working with [multilingual email variants](../content-management/multilingual-gs.md), the **[!UICONTROL Optimize HTML size]** setting is tracked at the email level, not per locale.
+
+Therefore, enabling this setting on any one locale applies it to all locales of that email at publish time — even locales where the checkbox still appears unchecked in the UI. You do not need to repeat the action for each locale.
+
+To disable HTML size optimization, you must uncheck **[!UICONTROL Optimize HTML size]** on every locale. Leaving it enabled on even one locale is sufficient for the optimization to be applied across all locales.
+
+>[!NOTE]
+>
+>If you are running a [content experiment](../content-management/content-experiment.md), the **[!UICONTROL Optimize HTML size]** setting is managed independently for each treatment, as each treatment is considered a separate message.
+
+## Check and send your email
+
+Once your message content has been defined, you can preview its content using either simulation method:
+
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles, send proofs, and check email rendering.
+
+You can also validate your content quality to assess readability, effectiveness, and content cohesiveness. [Learn more about content quality validation](../content-management/brands-score.md#validate-quality)
 
 ![](assets/email_designer_edit_simulate.png)
 
@@ -225,6 +284,34 @@ When your email is ready, complete the configuration of your [journey](../buildi
 >[!NOTE]
 >
 >To track the behavior of your recipients through email openings and/or interactions, make sure that the dedicated options in the **[!UICONTROL Tracking]** section are enabled in the journey's [email activity](../building-journeys/journey-action.md) or in the email [campaign](../campaigns/create-campaign.md).<!--to move?-->
+
+### Test HTML size optimization {#optimize-html-proof}
+
+If you have enabled the [HTML size optimization](#optimize-html-size) option, you can evaluate its impact before publishing when sending proofs. Follow the steps below.
+
+1. In the Email Designer, click the Issues icon in the right rail. If the rendered email size exceeds 100 KB, a message displays to warn you that this may cause truncation in some email clients. <!--Learn more about content checks in [this section](#check-email-alerts).-->
+
+    ![Email optimization issues](assets/email-optimize-size-issues.png)
+
+1. Click **[!UICONTROL Simulate content]**.
+
+    <!--![](assets/email-optimize-size-simulate-warning.png)-->
+
+1. To test the optimized version, click the **[!UICONTROL Send proof]** button and select the **[!UICONTROL Optimize HTML size]** option. This will send a proof with the reduced HTML size to your test recipients.
+
+    ![](assets/email-optimize-size-proof-option.png)
+
+    >[!NOTE]
+    >
+    >This setting is independent from the email editor — the proof reflects whatever you select in the proof, regardless of whether the option is enabled or disabled in the email itself.
+
+1. Select the test recipients and click the **[!UICONTROL Send proof]** button. Learn more about sending proofs in [this section](../content-management/proofs.md).
+1. Once sent, back in the **[!UICONTROL Simulate]** screen, click the **[!UICONTROL View Proof]** button.
+1. Click the Info icon next to the status of the proof. The optimization details are displayed in a pop-up window, including the original HTML size, the optimized HTML size, and the size reduction percentage.
+
+    ![Email optimization details](assets/email-optimize-size-view-proof.png)
+    
+    Use this information to validate the optimized output and confirm the email stays within the recommended 100 KB threshold before publishing.
 
 <!--
 ## Define your email content {#email-content}
@@ -251,4 +338,3 @@ Control the rendering of your email, and check personalization settings with tes
 
 You must also check alerts in the upper section of the editor.  Some of them are simple warnings, but others can prevent you from using the message. 
 -->
-

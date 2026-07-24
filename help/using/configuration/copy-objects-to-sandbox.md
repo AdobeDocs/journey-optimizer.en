@@ -54,6 +54,12 @@ topic_v2:
 ---
 # Export objects to another sandbox {#copy-to-sandbox}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to copy Adobe Journey Optimizer objects such as journeys, campaigns, custom actions, content templates, and fragments between sandboxes using package export and import.
+
+>[!ENDSHADEBOX]
+
 You can copy objects such as journeys, campaigns, custom actions, content templates, or fragments, across multiple sandboxes by using package export and import capabilities. A package can consist of a single object or multiple objects. Any objects that are included in a package must be from the same sandbox.
 
 This page describes the Sandbox tooling use case in the context of Journey Optimizer. For more information on the feature itself, refer to the Adobe Experience Platform [Sandbox tooling guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html#abobe-journey-optimizer-objects){target="_blank"}.
@@ -132,10 +138,6 @@ When copying **Action** or **API-triggered** campaigns, ensure that the object l
 You can copy Orchestrated campaigns between sandboxes using package export and import. Orchestrated campaigns follow the same overall pattern as other objects, but what is included in the package and what you must prepare in the target sandbox differs from Action or API triggered campaigns.
 
 To export an orchestrated campaign, [add it to a sandbox package](#add-objects-as-a-package-export) in the source sandbox (regardless its status), [publish the package](#publish), then [import the package](#import) into the target sandbox.
-
->[!IMPORTANT]
->
->Right after import, [duplicate the orchestrated campaign](../campaigns/manage-campaigns.md#duplicate-a-campaign) in the target sandbox and use that duplicate for configuration, testing, and execution. If you run or publish the imported copy instead, campaign reporting may not show feedback and tracking data. This limitation will be removed in a future release.
 
 Before you import into production, keep the following behavior and limitations in mind:
 
@@ -284,3 +286,4 @@ Once the package is published, you need to import it into the target sandbox. Fo
    ![](assets/journey-sandbox8.png)
 
 1. Access your target sandbox and perform a thorough check of all the copied objects.
+
