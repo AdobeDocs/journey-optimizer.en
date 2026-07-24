@@ -176,7 +176,7 @@ The following capabilities and improvements have been added to campaigns in this
 </tbody>
 </table>
 
-* **Folders for Campaigns** - You can now organize your campaigns into folders to improve navigation and management in the interface. <!-- Documentation link: TBD -->
+* **Folders for Campaigns** - You can now organize your campaigns into folders to improve navigation and management in the interface. This capability is available for Action and API-triggered campaigns only. <!-- Documentation link: TBD -->
 
 * **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters. <!-- Documentation link: TBD -->
 
