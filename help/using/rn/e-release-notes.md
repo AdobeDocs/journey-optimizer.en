@@ -355,3 +355,11 @@ The following capabilities have been added to administration in this release.
 </tr>
 </tbody>
 </table>
+
+### Usability improvements {#july-26-usability}
+
+The following usability improvements are coming in this release.
+
+* **Quick launch shortcuts for SMS, Push, In-App, and Codebase channels in Content Templates** - The **More actions** button in the Content Templates list now provides additional channel-specific shortcuts. For SMS templates, quickly edit the message or check the character count/segments. For Push templates, edit the title, body, or media. For In-App templates, edit the message header, message body, or media URL. For Codebase channel templates, edit the code directly. These shortcuts extend the Email channel quick launch shortcuts already available. <!-- Documentation link: TBD -->
+
+* **New Content Simulation experience for content testing** - The **Simulate content** workflow introduces a redesigned experience: all variants now render together in a single scrollable grid (side-by-side, stacked, or wrapped layouts), replacing the one-variant-at-a-time view. A single bottom action bar consolidates navigating between test variants, zoom, viewport switching (desktop/mobile), locale switching, adding sample inputs, generating variants with AI, picking and saving simulated users, and importing or exporting variants. Removing the left rail and collapsing extra header layers gives previews significantly more room. A **Switch to classic experience** option in the bottom action bar lets you revert to the previous experience at any time. <!-- Documentation link: TBD -->
