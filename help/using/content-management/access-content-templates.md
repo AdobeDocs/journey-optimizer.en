@@ -40,9 +40,9 @@ level_v2:
 
 To access and manage content templates, ensure the following:
 
-* **Content Templates permission** — Your role must include the **[!UICONTROL Manage content templates]** permission (under the **Content Management** resource). Without it, the **Content Templates** menu is not visible in the left navigation. [Learn how to manage permissions](../administration/permissions.md)
-* **Sandbox scope** — Content templates are sandbox-specific. Templates created in one sandbox are not available in another. Ensure you are in the correct sandbox before searching for a template.
-* **HTML templates (deprecated)** — Starting March 2025, HTML-type content templates are deprecated. Existing HTML templates remain accessible but new ones cannot be created.
+* **Content Templates permission**: Your role must include the **[!UICONTROL Manage content templates]** permission (under the **Content Management** resource). Without it, the **Content Templates** menu is not visible in the left navigation. [Learn how to manage permissions](../administration/permissions.md)
+* **Sandbox scope**: Content templates are sandbox-specific. Templates created in one sandbox are not available in another. Ensure you are in the correct sandbox before searching for a template.
+* **HTML templates (deprecated)**: Starting March 2025, HTML-type content templates are deprecated. Existing HTML templates remain accessible but new ones cannot be created.
 
 ## Access content templates {#access}
 
@@ -111,20 +111,62 @@ To easily navigate your content templates, use folders to organize them more eff
 
 From the **[!UICONTROL More actions]** button next to each template, you can access the following shortcuts and actions:
 
-* **[!UICONTROL Edit details]** — Edit the template name, description, and tags.
-* **[!UICONTROL Simulate content]** — Preview and test the template content.
-* **[!UICONTROL Delete]** — Delete the template.
+* **[!UICONTROL Edit details]**: Edit the template name, description, and tags.
+* **[!UICONTROL Simulate content]**: Preview and test the template content.
+* **[!UICONTROL Delete]**: Delete the template.
 
-For email templates, the following additional shortcuts are available:
+Additional shortcuts are available depending on the channel, access the drop-down below to learn more:
 
-* **[!UICONTROL Edit subject line]** — Quickly update the email subject line.
-* **[!UICONTROL Edit email body]** — Open the email designer to modify the template content.
-* **[!UICONTROL View proof]** — View a proof of the email template.
-* **[!UICONTROL Send proof]** — Send a proof of the template to designated recipients.
-* **[!UICONTROL Spam report]** — Analyze the template against spam filters.
-* **[!UICONTROL Render email]** — Preview how the email renders across different email clients.
+* +++ For email templates
 
-![](assets/content-template-quick-launch.png)
+  * **[!UICONTROL Edit subject line]**: Quickly update the email subject line.
+  * **[!UICONTROL Edit email body]**: Open the email designer to modify the template content.
+  * **[!UICONTROL View proof]**: View a proof of the email template.
+  * **[!UICONTROL Send proof]**: Send a proof of the template to designated recipients.
+  * **[!UICONTROL Spam report]**: Analyze the template against spam filters.
+  * **[!UICONTROL Render email]**: Preview how the email renders across different email clients.
+
+  ![](assets/content-template-quick-launch.png)
+
+  +++ 
+
+* +++ For SMS templates
+
+  * **[!UICONTROL Edit message]**: Quickly update the SMS message content.
+  * **[!UICONTROL Check character count/segments]**: Check the character count and number of segments used by the message.
+
+  ![](assets/content-template-quick-launch-sms.png)
+
+  +++ 
+
+* +++ For Push notification templates
+
+  * **[!UICONTROL Edit title]**: Quickly update the push notification title.
+  * **[!UICONTROL Edit body]**: Quickly update the push notification body text.
+  * **[!UICONTROL Edit media]**: Update the media attached to the push notification.
+
+  ![](assets/content-template-quick-launch-push.png)
+
+  +++ 
+
+* +++ For In-app templates
+
+  * **[!UICONTROL Edit message heard]**: Quickly update the in-app notification header.
+  * **[!UICONTROL Edit message body]**: Quickly update the in-app notification body text.
+  * **[!UICONTROL Edit media URL]**: Update the media URL displayed in the in-app notification.
+
+  ![](assets/content-template-quick-launch-in-app.png)
+
+  +++ 
+
+* +++ For Code-based templates
+
+  * **[!UICONTROL Edit code]**: Open the code editor to modify the template content.
+
+  ![](assets/content-template-quick-launch-code.png)
+
+  +++ 
+
 
 To edit a template's full content, click the desired item from the list and make the desired changes. You can also edit the content template properties by clicking the edit button next to the template's name.
 
