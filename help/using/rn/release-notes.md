@@ -244,7 +244,7 @@ The following capabilities and improvements have been added to journeys in this 
 
 +++ Coming soon — **Information below is subject to change.**
 
-* **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the **journey header** next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed.
+* **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the **journey header** next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed.
 
 +++
 
@@ -320,7 +320,7 @@ The following improvements have been added to the email channel in this release.
 
   Availability date: June 1, 2026
 
-* **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the journey header next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
+* **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
 
   Availability date: TBD
 

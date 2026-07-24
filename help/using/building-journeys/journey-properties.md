@@ -182,7 +182,7 @@ By default, profiles can enter your journey as soon as it is published, and can 
 
 If needed, you can define custom **Start date** and **End date**. This allows profiles to enter your journey on a specific date, and exit automatically when the end date is reached.
 
-Once the journey is live, any configured start and end dates are surfaced directly in the **journey header**, next to the live status badge. This gives you an at-a-glance view of the journey schedule without opening the properties panel. The displayed label adapts based on each date's status:
+Any configured start and end dates are surfaced directly in the **journey header**, next to the status badge. This gives you an at-a-glance view of the journey schedule without opening the properties panel. The displayed label adapts based on each date's status:
 
 * **Start date upcoming** — the header shows the configured start date.
 * **Start date passed** — the header indicates the journey has already started.
