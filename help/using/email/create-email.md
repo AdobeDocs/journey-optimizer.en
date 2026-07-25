@@ -59,7 +59,7 @@ topic_v2:
 >id="ajo_message_email"
 >title="Email creation"
 >abstract="Define your email subject line, and open the Email Designer to create the content of the email."
->additional-url="https://experienceleague.adobe.com/en/courses/ajo-ai-powered-on-brand-content-creation-for-marketers" text="AI-powered, on-brand content creation course"
+>additional-url="https://experienceleague.adobe.com/en/courses/ajo-ai-powered-on-brand-content-creation-for-marketers" text="Take the AI content course"
 
 
 ## Add an email action {#email-action}
