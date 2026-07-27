@@ -61,7 +61,7 @@ topic_v2:
 <table>
 <thead>
 <tr>
-<th><strong>Content check in the Email Designer</strong><br/></th>
+<th><strong>Content check in the Email Designer (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -241,13 +241,6 @@ The following capabilities and improvements have been added to journeys in this 
 
   Availability date: June 18, 2026. This capability is being gradually rolled out to all regions over the next few days.
 
-
-+++ Coming soon — **Information below is subject to change.**
-
-* **Start and end dates in the journey header** - When start and/or end dates are configured on a live journey, they are now surfaced in the **journey header** next to the live status badge. The displayed label adapts based on whether each date is upcoming or has already passed.
-
-+++
-
 ### Orchestrated campaigns {#june-26-oc}
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.
@@ -361,7 +354,7 @@ The following improvements have been added to the email channel in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Content check in the Email Designer</strong><br/></th>
+<th><strong>Content check in the Email Designer (Limited Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
@@ -498,12 +491,6 @@ The following improvements are coming to mobile messaging in this release.
 
 * **Estimated Clicks for SMS report** - A new Estimated Clicks metric is now available in Journeys, Campaigns, and Channel reports for email and SMS. This metric excludes identified bot and non-human interaction (NHI) traffic to provide a clearer view of genuine customer engagement. The existing Clicks metric remains available and continues to report total clicks.
 
-+++ Coming soon — **Information below is subject to change.**
-
-* **LINE Channel - Authoring changes** - The LINE channel UI has been upgraded with advanced message authoring capabilities. This release introduces support for **multiple message formats**, including Text, Image, Imagemap, Carousel, and Flex (JSON Editor), alongside real-time device previews. Users can now manage grouped messages of up to five ordered messages (with add, remove, and reorder controls) and leverage the integrated personalization editor for validated, dynamic messaging.
-
-+++
-
 ### Usability improvements {#june-26-usability}
 
 * **Folders for Journeys** - You can now organize your journeys into **folders** to improve navigation and management in the interface. [Read more](../building-journeys/journey-ui.md#journeys-folders)
@@ -519,3 +506,4 @@ The following improvements are coming to mobile messaging in this release.
 
 +++
 -->
+

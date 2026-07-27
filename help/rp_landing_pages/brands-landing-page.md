@@ -54,3 +54,7 @@ Discover how to create and manage custom generative AI models trained on your br
 :::
 
 ::::
+
+## Additional Resources
+
+- **[Take the course: AI-powered, on-brand content creation](https://experienceleague.adobe.com/en/courses/ajo-ai-powered-on-brand-content-creation-for-marketers){target="_blank"}** - Learn how to create on-brand content in Adobe Journey Optimizer for marketers using AI-powered tools.
