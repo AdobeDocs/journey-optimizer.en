@@ -62,4 +62,4 @@ Your custom channel is now fully configured. Marketers can start using it to bui
 
 * [Create custom channel experiences](create-custom-experience.md)
 * [Test your custom channel](test-custom-channel.md)
-* [Monitor custom channels](configure-custom-channel.md)
+* [Monitor custom channels](monitor-custom-channel.md)
