@@ -94,33 +94,6 @@ Start by defining the decision item's standard and custom attributes :
 
 1. Once the decision item's attributes are defined, click **[!UICONTROL Next]**.
 
-<!--
-## Add personalization attributes {#personalization-attributes}
-
->[!CONTEXTUALHELP]
->id="ajo_exd_item_personalization_attributes"
->title="Add personalization attributes"
->abstract="Define offer attribute values to be evaluated at delivery time using profile data, context data, journey context, and audience membership. A single decision item can then serve tailored content to different profiles without duplicating items for minor variations."
-
-Unlike standard and custom attributes — which hold static values — personalization attributes are resolved at runtime for each individual profile. This lets you manage fewer, more flexible decision items while still delivering highly relevant content.
-
-Personalization attributes are based on custom attribute fields defined as **[!UICONTROL Decisioning Content]** type in the catalog schema. To configure and use them:
-
-1. In the offer schema, create a new field and select **[!UICONTROL Decisioning Content]** under **[!UICONTROL Type]**. Fill in all other required properties, then click **[!UICONTROL Save]**. [Learn how to edit the catalog schema](catalogs.md)
-
-1. In offer creation, locate the newly created field in the **[!UICONTROL Custom Attributes]** section. Click the personalization editor icon next to the field to open the expression editor, where you can write code and add attribute references using handlebar syntax (e.g., `{{profile.person.name.firstName}}`). Reference any of the following data sources:
-
-   * **Profile attributes** — Data stored in the profile, such as first name or loyalty tier.
-   * **Context data** — Data passed at request time, such as event payload or cart contents.
-   * **Journey context** — Attributes from journey events preceding the decisioning step (e.g., a city name from an abandoned cart event).
-   * **Audience membership** — Whether the profile belongs to a specific audience.
-
-1. Optionally, set a **fallback value** (default text or empty string) to use when the referenced data is unavailable at delivery time.
-
->[!NOTE]
->
->Personalization attributes are separate from standard and custom attributes and have no effect on eligibility rules or capping logic.-->
-
 ## Configure the decision item's eligibility {#eligibility}
 
 >[!CONTEXTUALHELP]
