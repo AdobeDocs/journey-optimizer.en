@@ -123,6 +123,10 @@ topic_v2:
 
 ### Improvements {#july-26-improvements}
 
+* **Personalization at the offer level** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items. [Read more](../experience-decisioning/items.md#attributes)
+
+  Availability date: July 27, 2026
+
 * **AJO MCP server new tools** - The [!DNL Adobe Journey Optimizer] MCP server now exposes five additional read-only **channel configuration tools**, enabling you to query channel configurations, supporting resources, and marketing actions directly from your AI assistant. You can now use **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
 
   Availability date: July 9, 2026
