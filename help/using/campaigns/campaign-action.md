@@ -44,7 +44,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Configure the campaign action by selecting a channel and channel configuration along with optimization and multilingual content, and add multiple inbound actions, so your campaign delivers the right experiences across channels.
+**On this page:** Configure the campaign action by selecting a channel and channel configuration along with optimization and multilingual content, add multiple inbound actions, or use channel optimization to automatically select the best outbound channel for each customer, so your campaign delivers the right experiences across channels.
 
 >[!ENDSHADEBOX]
 
@@ -63,6 +63,8 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
     >Available channels vary based on your licensing model and add-ons.
     
     If you select an inbound channel (Code-based experience, In-app message, Content Card or Web action), you can add more inbound actions - for a total of up to 10 actions in a single campaign. [Learn how](#multi-action)
+
+    If you select multiple outbound channels (Email, Push, SMS), you can use channel optimization to automatically select the best channel for each customer at send time. [Learn how](../building-journeys/channel-optimization.md)
 
 1. **Select a channel configuration**
 
@@ -134,7 +136,7 @@ To simplify your campaign orchestration, you can define several inbound actions 
 
 >[!NOTE]
 >
->This capability is only available for inbound channels. Currently outbound channels such as Email are not supported.
+>This capability is only available for inbound channels. For outbound channels (Email, Push, SMS), use [channel optimization](../building-journeys/channel-optimization.md) to automatically select the best channel per customer.
 
 This capability enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple campaigns. It makes the deployment of your campaign easier and allows for smoother reporting, with all the data consolidated into one single campaign.
 
