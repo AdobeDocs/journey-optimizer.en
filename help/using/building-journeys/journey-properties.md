@@ -505,15 +505,21 @@ These are separate concepts. The **[journey global timeout](#global_timeout)** (
 * [Timezone management](timezone-management.md) - Configure journey and profile timezones
 * [Conflict management and prioritization](../conflict-prioritization/conflicts.md) - Identify and resolve conflicts across journeys and campaigns
 
-+++ AI Knowledge Reference
+## Quick reference {#quick-reference}
 
 This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page explains how to configure and manage all global settings for a journey, including entrance rules, timezones, start/end dates, timeout behavior, exit criteria, payload size, and conflict management.
+>[!BEGINTABS]
 
-**Intents:**
+>[!TAB Overview]
+
+**TL;DR**
+
+This page explains how to configure and manage all global settings for a journey, including entrance rules, timezones, start/end dates, timeout behavior, exit criteria, payload size, and conflict management.
+
+**Intents**
 
 * Configure journey entrance and reentrance rules for profiles
 * Set start and end dates to control when profiles can enter or exit a journey
@@ -522,7 +528,7 @@ For complete understanding, this information should be combined with the documen
 * Monitor journey payload size to prevent publish failures
 * Resolve conflicts and assign priority scores across journeys and campaigns
 
-**Glossary:**
+>[!TAB Glossary]
 
 * **Journey properties**: The global settings panel (right rail) that controls name, entrance rules, timezone, dates, timeout, payload size, and conflict management for a journey. *(product-specific)*
 * **Reentrance wait period**: The minimum time a profile must wait before being allowed to re-enter a unitary journey; maximum is 90 days. *(product-specific)*
@@ -534,7 +540,13 @@ For complete understanding, this information should be combined with the documen
 * **Journey payload size**: The current size of the journey's definition payload compared to the configured limit; exceeding the limit blocks publication. *(product-specific)*
 * **OLAC (Object Level Access Control)**: A permission model that restricts access to individual journeys using data usage labels.
 
-**Guardrails:**
+>[!TAB Terminology]
+
+* **Canonical name:** Journey properties — Acronym: none — variants: journey settings, journey configuration panel
+* **Synonyms:** "global journey timeout" = "TTL" = "Time-to-Live"
+* **Do not confuse:** "global journey timeout (91 days)" ≠ "reporting window (~91 days)" — the timeout limits individual profile duration in a journey; the reporting window is a UI display limit for analytics data
+
+>[!TAB Guardrails & Limitations]
 
 * Reentrance wait period maximum is 90 days
 * Global journey timeout is 91 days; after this period, profile data is deleted and the profile is exited
@@ -546,19 +558,30 @@ For complete understanding, this information should be combined with the documen
 * Inconsistent merge policies in a journey block publication; inconsistencies in message personalization do not raise an alert
 * For live journeys, the properties panel shows only the publication date and publisher name
 
-**Terminology:**
+>[!TAB FAQ]
 
-* Canonical name: Journey properties — Acronym: none — variants: journey settings, journey configuration panel
-* Synonyms: "global journey timeout" = "TTL" = "Time-to-Live"
-* Do not confuse: "global journey timeout (91 days)" ≠ "reporting window (~91 days)" — the timeout limits individual profile duration in a journey; the reporting window is a UI display limit for analytics data
+**Q: How long can a profile stay in a journey?**
 
-**FAQ:**
+A maximum of 91 days (the global journey timeout); after this period, the profile is automatically exited and its data deleted.
 
-* **Q: How long can a profile stay in a journey?** — A maximum of 91 days (the global journey timeout); after this period, the profile is automatically exited and its data deleted.
-* **Q: Can I edit journey properties while the journey is live?** — For live journeys, the properties panel shows only the publication date and publisher name; structural changes require a new version.
-* **Q: What happens when multiple exit criteria are configured?** — They are evaluated from top to bottom with OR logic at every step of the journey; a profile exits when any one criterion is met.
-* **Q: How do I prevent a profile from re-entering a journey?** — Uncheck the "Allow reentrance" option in journey properties; this is suitable for one-time experiences such as a gift offer.
-* **Q: What is the difference between journey timeout and end date?** — The end date stops all new entries and automatically exits active profiles on that specific date; the 91-day global timeout applies per profile from the moment they enter, regardless of the journey's end date.
-* **Q: How is the merge policy determined for a journey?** — It depends on the journey type: Read Audience and Audience Qualification journeys use the audience's merge policy; Unitary event journeys use the default merge policy; Business event journeys use the merge policy from the targeted audience in the subsequent Read Audience activity.
+**Q: Can I edit journey properties while the journey is live?**
 
-+++
+For live journeys, the properties panel shows only the publication date and publisher name; structural changes require a new version.
+
+**Q: What happens when multiple exit criteria are configured?**
+
+They are evaluated from top to bottom with OR logic at every step of the journey; a profile exits when any one criterion is met.
+
+**Q: How do I prevent a profile from re-entering a journey?**
+
+Uncheck the "Allow reentrance" option in journey properties; this is suitable for one-time experiences such as a gift offer.
+
+**Q: What is the difference between journey timeout and end date?**
+
+The end date stops all new entries and automatically exits active profiles on that specific date; the 91-day global timeout applies per profile from the moment they enter, regardless of the journey's end date.
+
+**Q: How is the merge policy determined for a journey?**
+
+It depends on the journey type: Read Audience and Audience Qualification journeys use the audience's merge policy; Unitary event journeys use the default merge policy; Business event journeys use the merge policy from the targeted audience in the subsequent Read Audience activity.
+
+>[!ENDTABS]

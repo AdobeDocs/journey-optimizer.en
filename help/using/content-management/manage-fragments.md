@@ -82,6 +82,16 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 
 ![](assets/fragment-list-more-actions.png)
 
+### Quick launch shortcuts {#quick-launch-fragments}
+
+From the **[!UICONTROL More actions]** button next to each fragment, the following quick launch shortcuts are also available:
+
+* **[!UICONTROL Edit]** — Open the fragment editor directly.
+* **[!UICONTROL Open]** — Open the fragment details and preview screen.
+* **[!UICONTROL Discard draft]** — Discard the current draft version and revert to the last published version.
+
+![](assets/fragment-quick-launch.png)
+
 ### Bulk actions {#bulk-actions-fragments}
 
 You can select multiple fragments at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and archiving. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
