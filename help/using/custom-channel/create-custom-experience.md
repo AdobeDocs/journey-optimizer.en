@@ -52,7 +52,7 @@ To add a custom channel action to a journey:
 
 1. In the **[!UICONTROL Action]** drop-down, select the custom channel you want to use. Custom channels are listed by the name and icon assigned in the Channel Builder.
 
-    ![](assets/custom_channel_journey_action.png){width="80%"}
+    ![Custom channel action selection in journey canvas](assets/custom_channel_journey_action.png){width="80%"}
 
 1. Add a label to your action, click **[!DNL Configure action]** in the right panel, and select the **[!UICONTROL Channel configuration]** to use. [Learn how to create a custom channel configuration](custom-channel-configuration.md#create-channel-config)
 
@@ -75,9 +75,11 @@ To use a custom channel in a campaign:
 
 1. In the **[!UICONTROL Actions]** section, select the custom channel from the channel selector. All the custom channels configured on your sandbox appear alongside native channels.
 
-    ![](assets/custom_channel_campaign_action.png){width="80%"}
+    ![Campaign custom action selection](assets/custom_channel_campaign_action.png){width="80%"}
 
 1. Select or create the **[!UICONTROL Channel configuration]** to use. [Learn how to create a channel configuration](custom-channel-configuration.md#create-channel-config)
+
+    ![Custom channel configuration selection](assets/custom_channel_campaign_action_config.png){width="80%"}
 
 1. Optionally, enable **[!UICONTROL Action tracking]** to automatically track links included in your message payload (requires a subdomain configured for custom channels). [Learn how to delegate a subdomain for custom channels](custom-channel-subdomains.md#subdomain-delegation)
 
@@ -112,7 +114,7 @@ To add a custom channel in an orchestrated campaign:
 
 The content editor reflects the payload structure you defined when configuring the custom channel. Click **[!UICONTROL Edit code]** to open the payload editor and enter your message content.
 
-![](assets/custom_channel_payload_editor.png){width="80%"}
+![Custom channel payload editor](assets/custom_channel_payload_editor.png){width="80%"}
 
 The fields you can author and personalize are displayed. You can leverage the [!DNL Journey Optimizer] personalization editor with all its personalization and authoring capabilities. [Learn more](../personalization/personalization-build-expressions.md)
 
@@ -139,17 +141,32 @@ The fields you can author and personalize are displayed. You can leverage the [!
 >
 >Currently there is no validation of the payload at authoring time. You can use the **[!UICONTROL Simulate content]** feature to validate that your payload is well-formed JSON and that all personalization expressions resolve correctly for your test profiles. [Learn more](test-custom-channel.md#simulate-content)
 
-### Example payload {#example-payload}
-
-The following example shows a JSON payload with profile personalization for a custom messaging channel<!--(to be replaced with a meaningful realistic example)-->:
+The following examples show JSON payloads with profile personalization:
 
 ```json
 {
-  "recipient_id": "{{profile.mobilePhone.number}}",
-  "message_text": "Hello {{profile.person.name.firstName}}, your order {{context.journey.events.0.commerce.order.purchaseID}} has been confirmed.",
-  "channel": "my-custom-channel",
+  "message": {
+    "template": "Limited offer just for you, {{profile.person.name.firstName}}!",
+    "header": "You have a FREE drink when you buy a King menu!"
+  },
+  "campaign_ref": {
+    "id": "2grjya",
+    "type": "loyalty",
+    "url": "/companies/wNmRsLbu/campaigns/wallet/2grjya"
+  }
+}
+```
+
+```json
+{
+  "messaging_product": "mess",
+  "recipient_type": "individual",
+  "to": "{{profile.mobilePhone.number}}",
+  "zipCode": 4001,
+  "type": "image",
   "image": {
-    "id": "{{profile.preferences.imageId | default('default-image-001')}}"
+    "id": "1479537139650973",
+    "caption": "The best succulent ever?"
   }
 }
 ```
@@ -170,17 +187,19 @@ To include a tracked link in your custom channel payload—so that clicks are au
 >
 >Link tracking requires a subdomain configured for custom channels. [Learn how to delegate a subdomain for custom channels](custom-channel-subdomains.md#subdomain-delegation)
 
-**Example – tracked link in a LINE payload:**
+**Example – tracked link in a Viber payload:**
 
 ```json
 {
-  "to": "{{profile.mobilePhone.number}}",
-  "messages": [
-    {
-      "type": "text",
-      "text": "Hello! Check out our latest offer: {{url trackedUrl='' originalUrl='https://example.com/' type='TRACKED'}}"
-    }
-  ]
+  "receiver": "{{profile.mobilePhone.number}}",
+  "min_api_version": 1,
+  "sender": {
+    "name": "Luma Rewards",
+    "avatar": "https://avatar.example.com"
+  },
+  "tracking_data": "{{profile.person.name.firstName}}",
+  "type": "text",
+  "text": "Hello {{profile.person.name.firstName}}! Discover our new collection: {{url trackedUrl='' originalUrl='https://luma.com/collection' type='TRACKED'}}"
 }
 ```
 
