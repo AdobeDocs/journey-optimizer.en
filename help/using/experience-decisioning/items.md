@@ -94,6 +94,7 @@ Start by defining the decision item's standard and custom attributes :
 
 1. Once the decision item's attributes are defined, click **[!UICONTROL Next]**.
 
+<!--
 ## Add personalization attributes {#personalization-attributes}
 
 >[!CONTEXTUALHELP]
@@ -118,7 +119,7 @@ Personalization attributes are based on custom attribute fields defined as **[!U
 
 >[!NOTE]
 >
->Personalization attributes are separate from standard and custom attributes and have no effect on eligibility rules or capping logic.
+>Personalization attributes are separate from standard and custom attributes and have no effect on eligibility rules or capping logic.-->
 
 ## Configure the decision item's eligibility {#eligibility}
 
