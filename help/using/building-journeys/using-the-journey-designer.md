@@ -96,6 +96,24 @@ Depending on the journey's status, you can perform different actions on your jou
 
 ![Journey action buttons: Publish, Duplicate, Delete, Test mode, Manage access, Alerts](assets/journey41.png)
 
+## Journey interface new experience {#canvas-capabilities}
+
+A **new user interface** is available for the journey canvas, built to scale with your most complex use cases:
+
+* **Performance** — Handles large journeys with many steps and branches efficiently.
+* **Automatic layout** — Automatically organizes activities for better readability.
+* **Guided authoring** — Provides a structured authoring experience to help you build journeys with ease and efficiency.
+
+![](assets/journey-new-canvas.png)
+
+To switch to the new experience, click the **[!UICONTROL New experience]** button in the journey canvas. Once switched, this setting is saved at the journey level, so the journey will open in the new experience by default on subsequent visits. To revert, click the **[!UICONTROL Old experience]** button.
+
+![](assets/journey-new-experience-switch.png)
+
+Watch this video for a video overview of the new journey canvas experience:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496193)
+
 ## Start your journey {#start-your-journey}
 
 When you design your journey, the first question you want to ask is how profiles will enter the journey. 
