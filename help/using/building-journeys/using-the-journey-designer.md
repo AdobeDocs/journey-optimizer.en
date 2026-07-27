@@ -110,6 +110,9 @@ To switch to the new experience, click the **[!UICONTROL New experience]** butto
 
 ![](assets/journey-new-experience-switch.png)
 
+Watch this video for a video overview of the new journey canvas experience:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496193)
 
 ## Start your journey {#start-your-journey}
 
