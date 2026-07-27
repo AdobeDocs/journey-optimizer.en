@@ -34,17 +34,19 @@ topic_v2:
 
 # Channel optimization {#channel-optimization}
 
->[!AVAILABILITY]
->
->Channel optimization is currently available to a limited set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 >[!BEGINSHADEBOX]
 
 **On this page:** Learn how to configure a journey or campaign action to deliver messages through the best outbound channel for each customer, using manual ranking, profile preferences, or AI-powered propensity scores.
 
 >[!ENDSHADEBOX]
 
-Channel optimization lets you add multiple outbound channels (Email, Push, Mobile message) to a single journey or campaign action and have Journey Optimizer automatically select the best one for each customer at send time. Instead of choosing one channel upfront or messaging customers across all channels at once, the system picks the highest-ranked channel each customer is opted into and falls back gracefully when that channel is unavailable.
+>[!AVAILABILITY]
+>
+>Channel optimization is currently available to a limited set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+Channel optimization lets you add multiple outbound channels (Email, Push, Mobile message) to a single journey or campaign action and have Journey Optimizer automatically select the best one for each customer at send time.
+
+Instead of choosing one channel upfront or messaging customers across all channels at once, the system picks the highest-ranked channel each customer is opted into and falls back gracefully when that channel is unavailable.
 
 ➡️ [Learn more about channel optimization in this video](#video)
 
