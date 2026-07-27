@@ -10,6 +10,12 @@ badge: label="Limited Availability" type="Informative"
 
 # Create custom channel experiences {#create-custom-channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add a custom channel to a journey, campaign, or orchestrated campaign in Adobe Journey Optimizer, and author personalized message payloads using the expression editor.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.

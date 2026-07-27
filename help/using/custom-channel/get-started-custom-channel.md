@@ -10,6 +10,12 @@ badge: label="Limited Availability" type="Informative"
 
 # Get started with custom channels {#get-started-custom-channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn what custom channels are in Adobe Journey Optimizer, how they compare to custom actions, and the overall workflow for bringing any outbound HTTP endpoint into AJO so you can use it in campaigns, journeys, and orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.

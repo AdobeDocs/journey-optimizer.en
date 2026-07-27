@@ -10,6 +10,12 @@ badge: label="Limited Availability" type="Informative"
 
 # Set up a custom channel {#create-custom-channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a custom channel in Adobe Journey Optimizer using the Channel Builder, by defining the endpoint URL, headers, authentication, throttling policy, and message payload structure.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_custom_channel_settings"
 >title="About custom channels"
