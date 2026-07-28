@@ -76,7 +76,7 @@ To assign permissions for brands, follow these steps:
 
 1. Click **Edit** to modify the permissions.
 
-1. Add the **AI Assistant** resource, then select **Manage brand kit** or **[!UICONTROL Enable Ai assistant]** from the drop-down menu. 
+1. Add the **AI Assistant** resource, then select **Manage brand kit** or **[!UICONTROL Enable AI assistant]** from the drop-down menu. 
 
     Note that **[!UICONTROL Enable Ai assistant]** permission only provides read-only access to the **[!UICONTROL Brands]** menu.
 

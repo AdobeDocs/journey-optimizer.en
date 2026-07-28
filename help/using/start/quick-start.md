@@ -287,7 +287,7 @@ For more in-depth learning and updates, explore the following resources:
 * [Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Step-by-step video tutorials for all roles
 * [Get started with data management](../data/gs-data.md) - Schemas, datasets, identities, and the data readiness checklist for Journey Optimizer
 * [Journey Use Cases Library](../building-journeys/jo-use-cases.md) - Practical examples and implementation patterns
-* [AI & Intelligent Features](ai-features.md) - Learn about AI Assistant, send-time optimization, and content generation
+* [AI & Intelligent Features](ai-features.md) - Learn about AI, send-time optimization, and content generation
 * [User Interface Guide](user-interface.md) - Navigate Journey Optimizer effectively
 
 >[!TAB Stay Updated]
