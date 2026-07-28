@@ -59,16 +59,26 @@ topic_v2:
 ### Journeys {#july-26-journeys}
 
 The following capabilities and improvements have been added to journeys in this release.
+<table>
+<thead>
+<tr>
+<th><strong>New user interface</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A <b>new user interface</b> has been introduced for the journey canvas, delivering improved performance for large journeys, automatic layout for better readability, and a guided authoring experience.</p>
+<p><img src="../building-journeys/assets/journey-new-canvas.png"></p>
+<p>To switch to the new UI, click the <b>New experience</b> button. This setting is saved at the journey level, so the journey reopens in the new experience by default. To revert, click <b>Old experience</b>. <a href="../building-journeys/using-the-journey-designer.md#canvas-capabilities">Learn more</a>.</p>
+<p><img src="../building-journeys/assets/journey-new-experience-switch.png"></p>
+<p> Availability date: July 16, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-A **new user interface** has been introduced for the journey canvas, delivering improved performance for large journeys, automatic layout for better readability, and a guided authoring experience.
-
-![](../building-journeys/assets/journey-new-canvas.png)
-
-To switch to the new UI, click the **[!UICONTROL New experience]** button. This setting is saved at the journey level, so the journey reopens in the new experience by default. To revert, click **[!UICONTROL Old experience]**. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
-
-![](../building-journeys/assets/journey-new-experience-switch.png)
-
-Availability date: July 16, 2026
+* [!BADGE Deprecation]{type=Negative} Batch audiences no longer supported in Audience Qualification node - As of August 3, 2026, Journey Optimizer blocks publication for any journey using a batch audience in an Audience Qualification node. This enforcement replaces the canvas warning introduced in June release. Existing live journeys are not affected. Use a streaming audience in the Audience Qualification node, or switch to a Read Audience activity. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
 
 ### Orchestrated campaigns {#july-26-oc}
 
