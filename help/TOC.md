@@ -425,6 +425,7 @@ nudge: yes
   + Inbox {#inbox}
     + [Get started with Inbox](using/inbox/inbox-gs.md)
     + [Configure Inbox channel in Journey Optimizer](using/inbox/inbox-configuration.md)
+    + [Configure Inbox support in Web SDK](using/inbox/inbox-configuration-sdk.md)
     + [Create your Inbox](using/inbox/inbox-create.md)
     + [Design your Inbox](using/inbox/inbox-design.md)
   + WhatsApp {#whatsapp}
