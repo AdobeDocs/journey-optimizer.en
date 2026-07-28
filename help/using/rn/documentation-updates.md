@@ -2,7 +2,8 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Documentation Updates
-description: Learn about latest documentation updates
+description: Learn about the latest documentation updates for Adobe Journey Optimizer, including new pages, reorganizations, and clarifications.
+keywords: documentation updates, release notes, journey optimizer, changelog
 feature: Release Notes
 topic: Content Management
 role: User
@@ -24,6 +25,18 @@ subfeature_v2:
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
 ## July 2026 {#july-2026}
+
+* The **To Precision** function documentation has been updated to clarify that `toPrecision` behaves like JavaScript `toFixed()`: it returns a string with a fixed number of decimal places, including zero-padding when needed. [Read more](../personalization/functions/math.md#to-precision)
+
+* The **End a journey** page has been updated to clarify automatic stop timing for non-recurring Read Audience journeys: a safety buffer of approximately **96 hours (~4 days)** after the scheduled run (24-hour idle window + 72-hour Quiet Hours allowance), during which the journey can remain in **Live** status before transitioning to **Stopped** shortly after the buffer elapses. The page now also clarifies that waves-based (multi-wave) journeys, and journeys that use Send-Time Optimization, are excluded from this auto-stop and instead follow the standard 91-day journey timeout. [Read more](../building-journeys/end-journey.md#auto-stop-non-recurring)
+
+* The **Create IP warmup campaigns** page has been updated to clarify that targeting rules can be applied to IP warmup campaigns, and to document the evaluation behavior: audience membership is fixed at run activation (daily batch segmentation), while profile attributes are read at run execution time from the most recently ingested batch data. [Read more](../configuration/ip-warmup-campaign.md)
+
+* A warning has been added to the **Edit PTR records** page to inform customers that when adding a new forward DNS record to their platform, the forward DNS record for the old subdomain must not be removed until the move completes, as doing so will cause the edit to fail. [Read more](../configuration/ptr-records.md#edit-ptr-subdomains-cname)
+
+* The **Send using waves** pages have been updated to clarify audience re-evaluation behavior across waves: audience membership is fixed at activation time (snapshot), but profile attributes and consent are evaluated at the time each wave processes. This means opt-outs occurring between waves are respected. Read more in the [journeys](../building-journeys/send-using-waves.md#faq) and [campaigns](../campaigns/send-using-waves.md#faq) FAQ sections.
+
+* The **Data Governance** page has been updated to clarify that DULE policy enforcement applies to **profile attribute fields only**. Event-based fields (context attributes such as journey event fields) are not supported: labels applied to those fields in the UI will not restrict data usage. [Read more](../action/action-privacy.md)
 
 * The **Send-Time Optimization** documentation has been updated to reflect the new **[!UICONTROL Send within next]** limit of **2-100 hours** (previously 1-168), and to document supported AEP Hub regions for this capability. [Read more](../building-journeys/send-time-optimization.md#use-send-time-optimization)
 
@@ -55,7 +68,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Get started with Adobe Journey Optimizer** onboarding hub is now available. New users can choose their path by role, explore fundamentals, or jump to day-to-day areas if already onboarded — without needing to know where to look first. [Read more](../../rp_landing_pages/get-started-landing-page.md)
 
-* A new **Start from your goal** page lets you start from what you want to accomplish rather than a feature name. It maps business goals to the recommended Journey Optimizer capability across setup, journeys, campaigns, personalization, decisioning, and reporting. [Read more](../start/ajo-use-case-guide.md)
+* A new **Start from your goal** page lets you start from what you want to accomplish rather than a feature name. It maps business goals to the recommended [!DNL Journey Optimizer] capability across setup, journeys, campaigns, personalization, decisioning, and reporting. [Read more](../start/ajo-use-case-guide.md)
 
 * The **Get started for developers** role guide has been updated with clearer introductions for each section and improved **Collaborate across roles** tabs that reference journeys and link to key implementation pages. [Read more](../start/path/developer.md)
 
@@ -100,7 +113,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A limitation has been added to the **Execution Metadata** helper documentation: the function is not supported in inbound channels (Web, Code-based experience, In-App Message, Content Cards). [Read more](../personalization/functions/helpers.md#execution-metadata)
 
-* A new **Personalization recipes** page has been added, providing ready-to-use personalization patterns for the most common use cases in Journey Optimizer. It covers date and time recipes (current date formatting, countdown to expiry, days-before calculations, time-only display, and weekend vs. weekday detection), string recipes (using `replaceAll` with variable assignment), and conditional fallback recipes (empty-field fallbacks using `isEmpty`). [Read more](../personalization/personalization-recipes.md)
+* A new **Personalization recipes** page has been added, providing ready-to-use personalization patterns for the most common use cases in [!DNL Journey Optimizer]. It covers date and time recipes (current date formatting, countdown to expiry, days-before calculations, time-only display, and weekend vs. weekday detection), string recipes (using `replaceAll` with variable assignment), and conditional fallback recipes (empty-field fallbacks using `isEmpty`). [Read more](../personalization/personalization-recipes.md)
 
 * The **Personalization syntax** documentation has been updated with an expanded introduction clarifying the difference between Handlebars (`{{...}}`) and PQL (`{%= ... %}`) syntaxes, including a usage table, guidance on escaping literal double quotes, and a new **PQL syntax rules for special attribute keys** section covering reserved keywords, hyphenated attribute keys, and numeric event IDs. The note on backtick escaping has also been corrected: hyphenated field names can be referenced directly in `{{...}}` blocks; only backtick syntax fails there. [Read more](../personalization/personalization-syntax.md)
 
@@ -288,7 +301,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new communication channels availability table has been added to the Get started with channels page, showing which channels are supported across journeys and campaigns (Action campaigns, API-triggered campaigns, and Orchestrated campaigns). [Read more](../channels/gs-channels.md#channels)
 
-* A new comprehensive tracking landing page has been created to help users discover and access all tracking and monitoring capabilities available in Journey Optimizer. [Read more](../start/get-started-tracking.md)
+* A new comprehensive tracking landing page has been created to help users discover and access all tracking and monitoring capabilities available in [!DNL Journey Optimizer]. [Read more](../start/get-started-tracking.md)
 
 * The Email opt-out management page has been enhanced with detailed information about the unsubscribe flow, explaining the expected order of events for landing page opt-out. [Read more](../email/email-opt-out.md#send-message-unsubscribe-link)
 
@@ -302,7 +315,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new use case is now available demonstrating how to configure a journey to send emails only on weekdays (Monday-Friday), with automatic queuing for weekend entries to be sent on Monday at a specified time. [Read more](../building-journeys/weekday-email-uc.md)
 
-* A new page is now available explaining Journey Optimizer's decision capabilities, including the differences between the next-generation Decisioning framework and the established Decision management solution, and their key benefits for delivering personalized offers across channels. [Read more](../experience-decisioning/gs-decision.md)
+* A new page is now available explaining [!DNL Journey Optimizer]'s decision capabilities, including the differences between the next-generation Decisioning framework and the established Decision management solution, and their key benefits for delivering personalized offers across channels. [Read more](../experience-decisioning/gs-decision.md)
 
 * A new section has been added to the Audience activation documentation explaining how to activate non-supported audience types (such as Customer Journey Analytics audiences) in [!DNL Journey Optimizer] by wrapping them in a new segment definition in the Audience portal. [Read more](../audience/target-audiences.md#activation-non-supported)
 
@@ -365,7 +378,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * Documentation on how to work with journey step events is now available. [Read more](../reports/journey-step-events-overview.md)
 
-* A new comprehensive guide on journey entry and exit criteria is now available, covering best practices, real-world examples, and practical guidance for managing when profiles enter and exit journeys in Adobe Journey Optimizer. [Read more](../building-journeys/entry-exit-criteria-guide.md)
+* A new comprehensive guide on journey entry and exit criteria is now available, covering best practices, real-world examples, and practical guidance for managing when profiles enter and exit journeys in [!DNL Adobe Journey Optimizer]. [Read more](../building-journeys/entry-exit-criteria-guide.md)
 
 * A new page explaining how to iterate over contextual data in messages is now available. This guide covers how to use Handlebars syntax to display dynamic lists from events, custom action responses, dataset lookups, and other context sources in your personalization. [Read more](../personalization/iterate-contextual-data.md)
 
@@ -377,7 +390,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * You can now convert images to HTML templates using the image to HTML converter. [Read more](../content-management/image-to-html.md)
 
-* Information about the Adobe Journey Optimizer release cycle is now available. [Read more](releases.md)
+* Information about the [!DNL Adobe Journey Optimizer] release cycle is now available. [Read more](releases.md)
 
 * A new Journeys Frequently Asked Questions page is now available. [Read more](../building-journeys/journey-faq.md)
 
@@ -423,7 +436,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The documentation on how to use supplemental identifiers in journeys now includes a table that details how profiles behave when exit criteria are applied in journeys using supplemental IDs. [Read more](../building-journeys/supplemental-identifier.md#exit-criteria)
 
-* A troubleshooting section has been added to understant profile discards in paused journeys. [Read more](../building-journeys/journey-pause.md#discards-troubleshoot)
+* A troubleshooting section has been added to understand profile discards in paused journeys. [Read more](../building-journeys/journey-pause.md#discards-troubleshoot)
 
 * Information has been added in the schemas overview documentation to differentiate standard and relational schemas used for Orchestrated campaigns. [Read more](../data/gs-data.md)
 
@@ -459,7 +472,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A note has been added to the Fragments section, specifying that when tracking is enabled in a journey or a campaign, if links are present in a fragment and if this fragment is used in a message, these links are tracked such as all other links included in the message. [Learn more](../content-management/create-fragments.md#content)
 
-* The guardrails and limitations applying to subdomain delegation in Journey Optimizer have been enriched and consolidated into one dedicated section. [Read more](../configuration/delegate-subdomain.md#guardrails)
+* The guardrails and limitations applying to subdomain delegation in [!DNL Journey Optimizer] have been enriched and consolidated into one dedicated section. [Read more](../configuration/delegate-subdomain.md#guardrails)
 
 * A note has been added to the Create fallback offers and Create decision pages to mention that fallback offers should contain all representations used within a decision. [Read more](../offers/offer-library/creating-fallback-offers.md)
 
@@ -497,11 +510,11 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## May 2025 {#may-2025}
 
-* Adobe integrations available with Journey Optimizer are now listed in the "Connect your systems and environments" section. [Read more](../integrations/ajo-integrations.md)
+* Adobe integrations available with [!DNL Journey Optimizer] are now listed in the "Connect your systems and environments" section. [Read more](../integrations/ajo-integrations.md)
 
 * The content integrations are now grouped in the Content Management section. [Read more](../integrations/content-integrations.md)
 
-* Architecture diagrams for Adobe Experience Platform and Journey Optimizer have been updated. [Read more](../start/get-started.md#architecture)
+* Architecture diagrams for Adobe Experience Platform and [!DNL Journey Optimizer] have been updated. [Read more](../start/get-started.md#architecture)
 
 * Added a video about the personalization editor playground to help you learn how to write and test personalization code using sample data. [Read more](../personalization/personalize.md#video-perso)
 
@@ -541,7 +554,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * The missing Landing Page built-in permissions have been added to the documentation. [Read more](../administration/ootb-permissions.md)
 * A note has been added about scheduling recurring campaigns. [Read more](../campaigns/create-campaign.md)
 * The section about inserting links and enabling tracking in an email message has been updated and reorganized. [Read more](../email/message-tracking.md)
-* The section about personalization capabilities into Adobe Journey Optimizer has been reorganized and improved. [Read more](../personalization/personalize.md)
+* The section about personalization capabilities into [!DNL Adobe Journey Optimizer] has been reorganized and improved. [Read more](../personalization/personalize.md)
 * Decision management API to list personalized offers has been updated with a sample to perform pagination if multiple personalized offers are missing from the response. [Read more](../offers/api-reference/offers-api/personalized-offers/offers-list.md)
 * A new page gathering all information regarding the List unsubscribe feature has been created for improved clarity. [Read more](../email/list-unsubscribe.md)
 * The Frequency capping section has been updated with information on how the frequency capping counter is updated for the Decisioning and Batch Decisioning APIs, in addition to the Edge Decisioning API. [Read more](../offers/offer-library/add-constraints.md#frequency-capping)
@@ -550,7 +563,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The Read Audience activity guardrails have been updated to specify that only one activity can be used in a journey and that it can target only one audience. [Read more](../building-journeys/read-audience.md)
 * Journey guardrails when using Adobe Campaign activities have been updated. [Read more](../start/guardrails.md#ac-g)
-* Steps to create your first journeys have been detailed, and links to documentation section have been added. [Read more](../building-journeys/journey-gs.md)
+* Steps to create your first journeys have been detailed, and links to the documentation section have been added. [Read more](../building-journeys/journey-gs.md)
 * A new page is now available to detail the journey dashboard and filtering user interface. [Read more](../building-journeys/journey-ui.md)
 * Documentation for **[!UICONTROL Send-Time optimization]** and its related FAQ have been updated, improved and moved to a new dedicated page. [Read more](../building-journeys/send-time-optimization.md)
 * New guardrails have been added for journey events. [Read more](../start/guardrails.md#events-g)
@@ -562,7 +575,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## January 2025 {#jan-2025}
 
-* A new section on the **[!UICONTROL Execution address]** option in the email configuration has been added. The primary address is defined at the sandbox level, but the default setting can be overidden for a specific email configuration. [Read more](../email/email-settings.md#execution-address)
+* A new section on the **[!UICONTROL Execution address]** option in the email configuration has been added. The primary address is defined at the sandbox level, but the default setting can be overridden for a specific email configuration. [Read more](../email/email-settings.md#execution-address)
 
 * The **Get started with deliverability** page has been updated with the possibility to create IP warmup workflows directly from the user interface. [Read more](../reports/deliverability.md#reputation)
 
@@ -582,7 +595,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 +++ 2024
 
-## December 2024 {#nov-2024}
+## December 2024 {#december-2024}
 
 * A note has been added to help troubleshoot a potential error message when making an API call to enable datasets for personalization using Adobe Experience Platform data. [Read more](../personalization/aep-data-perso.md)
 
@@ -595,7 +608,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * A note about the upcoming time-to-live (TTL) guardrail for system-generated datasets has been added. [Read more](../data/get-started-datasets.md)
 * A new section has been added to describe how to preview your code-based personalized experiences right on your browser or on your mobile devices, using the **Preview on device** option when simulating content in a journey or a campaign. [Read more](../code-based/test-code-based.md#preview-on-device)
 * A new page has been added on how to leverage Custom upload audiences for decisioning. [Read more](../offers/custom-upload-decisioning.md)
-* A new page has been added to introduce the decision capabilities available in Journey Optimizer. [Read more](../experience-decisioning/gs-decision.md)
+* A new page has been added to introduce the decision capabilities available in [!DNL Journey Optimizer]. [Read more](../experience-decisioning/gs-decision.md)
 * Guardrails and limitations have been added to the Decisioning documentation. [Read more](../experience-decisioning/gs-experience-decisioning.md#guardrails)
 
 ## September 2024 {#sept-2024}
@@ -1043,4 +1056,3 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 +++
 -->
-

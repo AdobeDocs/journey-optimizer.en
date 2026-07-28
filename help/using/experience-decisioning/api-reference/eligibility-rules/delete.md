@@ -23,7 +23,7 @@ It may occasionally be necessary to remove (DELETE) an eligibility rule. This is
 **API format**
 
 ```http
-DELETE /{ENDPOINT_PATH}/eligibility-rules/{ID}
+DELETE /{ENDPOINT_PATH}/offer-rules/{ID}
 ```
 
 | Parameter | Description | Example |

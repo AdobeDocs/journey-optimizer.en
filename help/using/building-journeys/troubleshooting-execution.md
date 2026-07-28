@@ -103,14 +103,14 @@ If test profiles fail to progress through your journey in test mode or the visua
 
 If test profiles enter the journey but do not advance past the initial step, check the following:
 
-* **Journey start date** - The most common cause is when the journey's start date is set in the future. Test profiles are immediately discarded if the current time falls outside the journey's configured [start and end dates/time](journey-properties.md#dates) window. To resolve:
+* **Journey start date** - The most common cause is when the journey's start date is set in the future. Test profiles are immediately discarded if the current time falls outside the journey's configured [start and end dates/time](journey-properties.md#dates) window, producing the log entry: `DISPATCHER DISCARD #16 — unqualified on journey version enablements`. To resolve:
     * Verify the journey start date is not set in the future
     * Ensure the current time falls within the journey's active date window
-    * If necessary, update the journey properties to adjust the start date
+    * If necessary, temporarily set the start date to a time before the current moment for testing, then restore it before publishing
 
 * **Test profile configuration** - Confirm that the profile is correctly flagged as a test profile in [!DNL Adobe Experience Platform]. See [how to create test profiles](../audience/creating-test-profiles.md) for more information.
 
-* **Identity namespace** - Ensure the identity namespace used in the event configuration matches the namespace of your test profile.
+* **Identity namespace mismatch** - A namespace mismatch causes a silent drop: the event is accepted and returns a success response, but the profile never enters the journey and no error is surfaced in the UI. Ensure the namespace in the **Profile Identifier** matches the namespace defined in the event schema exactly (case-sensitive). See the [Profile Identifier expression format](testing-the-journey.md#trigger-events-prerequisites) for details.
 
 ### Null transition indicators
 
@@ -128,7 +128,7 @@ If you encounter persistent transition issues:
 
 >[!NOTE]
 >
->Remember that events sent outside the journey's active date window are silently discarded with no error message. Always verify your journey timing configuration first when troubleshooting test profile progression.
+>Events sent outside the journey's active date window are silently discarded with the log entry `DISPATCHER DISCARD #16 — unqualified on journey version enablements` and no UI error. Always verify your journey timing configuration first when troubleshooting test profile progression.
 
 ## Check how people navigate through the journey {#checking-how-people-navigate-through-the-journey}
 
