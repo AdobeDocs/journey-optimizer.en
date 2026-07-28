@@ -34,6 +34,10 @@ Once labels and marketing actions are defined, you can create **data governance 
 After you have created the governance policies, you can apply the marketing actions to your journeys/campaigns and journeys custom actions.
 [Learn how to apply marketing actions in Journey Optimizer](#apply-marketing-actions)
 
+>[!IMPORTANT]
+>
+>DULE policy enforcement only applies to **profile attributes**. Event-based fields (context attributes), such as journey event fields, are not supported by DULE policies. Labels applied to event fields in the UI will have no effect and will not restrict data usage.
+
 When building a journey or campaign, after selecting a channel configuration or adding a custom action, the system verifies if the marketing action in the message channel configuration or the custom action is part of a data governance policy. If so, the systems checks whether any fields from the targeted audience or message personalization are labeled and restricted by the policy. If such a label is detected, publishing the journey or campaign is blocked. [Learn how to detect data governance policy violation](#violation)
 
 ## Create labels and marketing actions {#labels-marketing-actions}
@@ -49,6 +53,10 @@ The first step to enforce data governance policy is to create label and attach t
 1. In the left menu, under **Data management**, click **Schemas**, and click the **Apply access and data governance labels** button. Select your schema and field (for example "blood type") and select the label previously created, _ePHI1_ in our example.
 
     ![](assets/action-privacy3.png)
+
+    >[!NOTE]
+    >
+    >Labels can only be applied to **profile attribute fields**. Event-based fields (e.g. journey context event fields) are not supported: labels applied to those fields will not restrict data usage.
 
 1. Go back to the **Policies** menu, select the **Marketing action** tab and click **Create marketing action**. We recommend that you create one marketing action for each channel and each third-party custom action used in your journeys. For example, let's create a _Slack marketing action_ which will be used for your Slack custom action.
 

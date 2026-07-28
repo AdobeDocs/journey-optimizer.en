@@ -37,7 +37,7 @@ subfeature_v2:
 * **[!UICONTROL Personalization Editor]** — wherever the editor is available across channels (subject line, body, and other fields that open it). This is the general path for AI-assisted personalization. For where and how to open the editor, see [Add personalization](../personalization/personalization-build-expressions.md#where).
 * **Email Designer toolbar** — when you author emails in the Email Designer, select a component and use **[!UICONTROL Add expression]** in the contextual toolbar to open the assistant in a toolbox without opening the full editor first. This entry point is not available outside email authoring. See [Generate from the Email Designer](#generate-email-designer).
 
-For broader AI Assistant setup and languages, see [Get started with AI Assistant](gs-generative.md). For personalization concepts, see [Get started with personalization](../personalization/personalize.md). For prompt ideas, see [AI prompt best practices](ai-assistant-prompting-guide.md).
+For broader AI Assistant setup and languages, see [Get started with AI Assistant](gs-generative.md). For personalization concepts, see [Get started with personalization](../personalization/personalize.md). To write prompts that produce usable expressions, see [Write effective prompts for personalization expressions](#prompt-best-practices). For content-generation prompt ideas (tone, style, brand), see [AI prompt best practices](ai-assistant-prompting-guide.md).
 
 Depending on your campaign or journey context, the assistant can work with data and constructs the [!UICONTROL Personalization Editor] already exposes — for example profile attributes, segment membership, helper functions, and related personalization sources.
 
@@ -141,3 +141,37 @@ In the Email Designer, you can use [!UICONTROL AI Assistant for personalization 
     * Refine the expression in the full editor - click the ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg "Edit") icon to open **[!UICONTROL Personalization Editor]**.
 
 1. When you are satisfied with the result, click **[!UICONTROL Insert]** to add the expression to your content.
+
+## Write effective prompts for personalization expressions {#prompt-best-practices}
+
+Prompts for personalization expressions differ from content-generation prompts, which center on tone, style, and brand. Because the assistant builds template logic that resolves against profile and contextual data, your prompt should describe that logic precisely. Start from the customer experience you want to deliver, then express it in terms the assistant can translate into an expression.
+
+An effective prompt generally defines four elements:
+
+* **Data source** — the profile attribute, context data, segment, offer, or other resource to evaluate. Include the exact field path when you know it, such as `profile.person.name.firstName`.
+* **Condition** — the logic to apply, for example whether a value exists or matches a specific criterion.
+* **Output** — what to display when the condition is met, including any required format.
+* **Fallback** — what to display when the data is missing or the condition is not met.
+
+For example, a request to *take the customer's renewal date, add one year, format it as MM/dd/yy, and display nothing when the renewal date is missing* provides a data source, a transformation, an output format, and a fallback — everything the assistant needs to produce a usable expression.
+
+### Recommendations {#prompt-recommendations}
+
+To get the most relevant results:
+
+* Keep each prompt focused on a single personalization rule rather than combining several unrelated rules in one request.
+* Reference only fields, fragments, offers, and datasets that exist in your environment. The assistant works with what the editor exposes and does not create data sources for you.
+* Describe fallback behavior for optional or potentially missing data, so the expression resolves gracefully for every profile.
+* State the expected output structure explicitly when it matters — for example, the keys an offer payload must return as JSON.
+* When you edit existing code, provide only the relevant expression as context instead of an entire message, and use **[!UICONTROL Explain]** to understand code before you apply a **[!UICONTROL Fix]** or other change.
+
+## Data and setup requirements {#requirements}
+
+The assistant generates expressions from the resources the [!UICONTROL Personalization Editor] already exposes, so the underlying data must be configured and available. If a prompt does not return a usable expression, confirm that:
+
+* the field you referenced belongs to a schema that is active in your environment,
+* any fragment you want to reuse is published,
+* any dataset used for a lookup is enabled for lookups, and
+* your request relates to template personalization rather than another task.
+
+When the setup is correct, refine the prompt by clarifying the data source, condition, output, and fallback, then generate again.

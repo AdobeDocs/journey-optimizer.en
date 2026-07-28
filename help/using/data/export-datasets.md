@@ -141,3 +141,9 @@ Understand from the table below which Journey Optimizer datasets you can export.
 | Journey Step Events | Captures All Journey Step Experience Events generated from Journey Optimizer to be consumed by services like Reporting. |
 | Journeys | Metadata dataset housing information of each step in a journey |
 | ODE DecisionEvents - prod decisioning | Anytime we make a decision based on a request, we count that as a decision event |
+
+## Reporting datasets and payload metadata mapping {#reporting-payload-metadata-mapping}
+
+For custom reporting on code-based experience and decisioning responses, use **`scopeDetails.correlationID`** to join interaction or feedback data to the **AJO Entity Dataset** and retrieve campaign, journey, and message metadata. Use **`exdRequestID`** to tie a single decision request to analytics events.
+
+If `correlationID` is missing (for example, holdout audiences), use exported datasets and documented join keys instead of decoding undocumented payload fields. [Entity dataset query examples](datasets-query-examples.md#entity-dataset) show how to join on `correlationID`.

@@ -96,6 +96,24 @@ Depending on the journey's status, you can perform different actions on your jou
 
 ![Journey action buttons: Publish, Duplicate, Delete, Test mode, Manage access, Alerts](assets/journey41.png)
 
+## Journey interface new experience {#canvas-capabilities}
+
+A **new user interface** is available for the journey canvas, built to scale with your most complex use cases:
+
+* **Performance** — Handles large journeys with many steps and branches efficiently.
+* **Automatic layout** — Automatically organizes activities for better readability.
+* **Guided authoring** — Provides a structured authoring experience to help you build journeys with ease and efficiency.
+
+![](assets/journey-new-canvas.png)
+
+To switch to the new experience, click the **[!UICONTROL New experience]** button in the journey canvas. Once switched, this setting is saved at the journey level, so the journey will open in the new experience by default on subsequent visits. To revert, click the **[!UICONTROL Old experience]** button.
+
+![](assets/journey-new-experience-switch.png)
+
+Watch this video for a video overview of the new journey canvas experience:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496193)
+
 ## Start your journey {#start-your-journey}
 
 When you design your journey, the first question you want to ask is how profiles will enter the journey. 
@@ -103,7 +121,6 @@ When you design your journey, the first question you want to ask is how profiles
 There are two possibilities:
 
 1. **Start with an event**: when a journey is set to listen to events, individuals enter the journey **unitarily** in real-time. Messages included in your journey are sent to the person currently flowing into the journey. [Learn more about events](../event/about-events.md)
-
 1. **Start with a Read Audience**: you can set your journey to listen to [!DNL Adobe Experience Platform] audiences. In this case, all individuals belonging to the specified audience enter the journey. Messages included in your journey are sent to the individuals belonging to the audience. Learn more about [read audience](read-audience.md). For more information on how to generate and target audiences in Journey Optimizer, refer to [this section](../audience/about-audiences.md).
 
 ## Define the next steps{#define-next-steps}
@@ -183,3 +200,52 @@ Here are the steps to copy/paste activities:
     ![Copy icon in activity configuration pane](assets/copy-paste2.png)
 1. In any journey, press **Ctrl/Command + V** to paste the activities without linking them to an existing node. Pasted activities are placed in the same order. After being pasted, activities stay selected so you can easily move them. You can also place the cursor on an empty place holder and hit **Ctrl/Command + V**. Pasted activities will be linked to the node. 
     ![Pasted activities in journey canvas ready to be connected](assets/copy-paste3.png)
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page introduces the Journey Optimizer journey designer canvas, explaining how to build multi-step journeys by dragging and dropping events, orchestration, and action activities from the palette.
+
+**Intents:**
+
+* Navigate the journey designer interface (palette, canvas, toolbar, activity configuration pane)
+* Add events, orchestration activities, and action activities to a journey canvas
+* Configure a fallback alternative path for Condition and Action activities on timeout or error
+* Copy and paste activities within the same journey or across different journeys in the same instance
+* Start a journey using an event trigger or a Read Audience entry point
+
+**Glossary:**
+
+* **Palette**: The left-hand panel in the journey designer listing all available events, orchestration, and action activities for drag-and-drop onto the canvas *(product-specific)*
+* **Canvas**: The central design area of the journey designer where activities are placed, connected, and configured *(product-specific)*
+* **Activity configuration pane**: The right-hand panel that opens when an activity is selected on the canvas, used to fill in activity settings *(product-specific)*
+* **Journey Fragments**: Reusable sets of pre-built journey nodes that can be inserted directly into the canvas to avoid rebuilding common logic *(product-specific)*
+* **Reaction event**: An event activity placed after a message to branch the journey based on recipient tracking interactions (open, click) *(product-specific)*
+
+**Guardrails:**
+
+* Actions, conditions, wait activities, and reaction events cannot be placed as the first step in a new journey.
+* Copy/paste is only supported within the same instance; cross-instance copy/paste is not supported.
+* You cannot copy/paste an event into a destination journey that uses a different namespace.
+* Pasted activities from a different sandbox may reference data that does not exist in the destination journey.
+* Only event and wait activities can be set in parallel; other activity types cannot run in parallel.
+* Alternative paths (timeout/error fallback) are available only for Condition and Action activities.
+
+**Terminology:**
+
+* Canonical name: Journey Designer — Acronym: none — variants: journey canvas, orchestration canvas
+* Synonyms: "palette" = "activity panel"; "canvas" = "design area"
+* Do not confuse: "events" (trigger journey entry or branching) ≠ "actions" (what happens to the customer, e.g. send a message)
+
+**FAQ:**
+
+* **Q: How do profiles enter a journey?** — Profiles enter either unitarily in real time when a configured event is received, or in batch when a Read Audience activity triggers the journey.
+* **Q: Can I add multiple events to a journey?** — Yes, you can add several events as long as they all use the same namespace.
+* **Q: How do I define a fallback when an action fails?** — In the activity properties, enable the "Add an alternative path in case of a timeout or an error" option to add a fallback path after the activity.
+* **Q: Can I copy activities from a read-only journey?** — Yes, you can copy activities from any journey regardless of its status, but you can only paste within the same instance.
+* **Q: What is a Journey Fragment?** — A reusable set of pre-built journey nodes (e.g. eligibility checks, welcome sequences) that can be inserted directly onto the canvas to avoid rebuilding common logic from scratch.
+
++++

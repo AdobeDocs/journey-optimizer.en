@@ -56,7 +56,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-To access Adobe Journey Optimizer, sign in to [Adobe Experience Cloud](https://experience.adobe.com) with your Adobe ID, then select [!DNL Journey Optimizer].
+To access Adobe Journey Optimizer, sign in to [[!DNL Adobe CX Enterprise]](https://experience.adobe.com) with your Adobe ID, then select [!DNL Journey Optimizer].
 
 >[!NOTE]
 >
@@ -378,38 +378,13 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Header Parameters"
 >abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
 
->[!CONTEXTUALHELP]
->id="ajo_admin_aem_content_fragment_configuration"
->title=""AEM Configuration Help"
->abstract="Learn more about creating and managing a configuration"
 
->[!CONTEXTUALHELP]
->id="ajo_admin_aem_configure_instance"
->title="Instance Configuration"
->abstract="Select the appropriate instance configuration type for your setup. </br>Author only setup: Use content fragments from the AEM author instance. Publish instance configuration and live updates are not supported.</br>Publish instance setup: Configure publish instance settings. Optionally enable "Send token to publish instance" to provide Service Credentials for authentication."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_aem_send_token"
->title="Send token to publish instance"
->abstract="When enabled, Service Credentials are sent to authenticate requests to the publish instance. Provide a valid Service Credential JSON below."
-
->[!CONTEXTUALHELP]
->id="ajo_admin_aem_service_credential"
->title="Paste Service Credential JSON"
->abstract="Paste your AEM service credential JSON after creating them by going through the public technical account documentation. It will be automatically formatted and validated."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials#create-a-technical-account"
-
->[!CONTEXTUALHELP]
->id="ajo_admin_aem_custom_domain"
->title="Custom domain"
->abstract="Optional. Provide a custom domain ifpublish-p16552-e147195.adobeaemcloud.comis blocked from fetching content for your org"
-
-<!-- JOURNEYS - EXPRESSION ASSISTANT -->
+<!-- JOURNEYS - GENERATE EXPRESSIONS WITH AI -->
 
 >[!CONTEXTUALHELP]
 >id="journeyExpAI"
->title="Expression Assistant"
->abstract="Use Expression Assistant to generate and refine expressions in Journey Optimizer."
+>title="Generate expressions with AI"
+>abstract="Use AI to generate and refine expressions in Journey Optimizer."
 
 
 <!-- OC - LOAD FILE ACTIVITY -->
@@ -418,3 +393,46 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_orchestration_load_file"
 >title="Load file activity"
 >abstract="The **Load file** activity is a **Targeting** activity. Use it to upload a CSV or TXT file on the Orchestrated campaign canvas and use it as the campaign audience. File data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. Rows are reconciled to existing recipients using an identity column and a targeting dimension."
+
+
+<!-- OC - LINE ACTIVITY -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_line"
+>title="Line activity"
+>abstract="The **Line** activity lets you add a LINE action to your Orchestrated campaign. Build personalized content, from text and stickers to images, videos, locations, and Flex Messages, to engage customers on LINE."
+
+
+<!-- Onboarding hub -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_migration_connection_name"
+>title="Connection Name"
+>abstract="A descriptive name identifying the source system (e.g. 'Marketing-Automation-Prod'). Must start with a letter and contain only alphanumerics, underscores, or hyphens (4-50 characters)."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_migration_base_api_url"
+>title="Base API URL"
+>abstract="The root URL of the API, without resource paths or query strings, e.g. https://api.example.com."
+
+>[!CONTEXTUALHELP]
+>id="ajo_migration_authentication_method"
+>title="Choosing an authentication method"
+>abstract="API Key sends a single credential with each request, while OAuth 2.0 uses a token-based protocol better suited for enterprise and third-party APIs."
+
+>[!CONTEXTUALHELP]
+>id="ajo_migration_client_id"
+>title="Client ID"
+>abstract="The public identifier for your application, issued when you register with the authorization server."
+
+>[!CONTEXTUALHELP]
+>id="ajo_migration_client_secret"
+>title="Client Secret"
+>abstract="A confidential credential known only to your app and the authorization server. Never expose it in client-side code."
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_migration_token_url"
+>title="Token URL"
+>abstract="The authorization server endpoint that issues access tokens for the client credentials flow, typically ending in /oauth/token or /token."
