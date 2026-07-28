@@ -80,6 +80,35 @@ Journey Optimizer introduces Loyalty Challenges, a new capability in this releas
 </tbody>
 </table>
 
+### Outbound channels {#july-26-outbound-channels}
+
+The following capability has been introduced in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Channel optimization</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now configure a journey or campaign action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
+<ul>
+<li>Manual ranking: specify your preferred channel order.</li>
+<li>Customer preference: use the customer's preferred channel from their profile (Experience Data Model Consents & Preferences attribute).</li>
+<li>AI model-based ranking: use machine learning propensity scores to infer the most effective channel per customer.</li>
+</ul>
+<p>When the top-ranked channel is unavailable (not opted-in, frequency-capped, or not configured), the system falls back to the next available channel.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/channel-optimization.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/channel-optimization.md">detailed documentation</a>.</p>
+<p>Availability date: July 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Journeys {#july-26-journeys}
 
 The following capabilities and improvements have been added to journeys in this release.
@@ -103,6 +132,31 @@ The following capabilities and improvements have been added to journeys in this 
 </table>
 
 * [!BADGE Deprecation]{type=Negative} Batch audiences no longer supported in Audience Qualification node - As of August 3, 2026, Journey Optimizer blocks publication for any journey using a batch audience in an Audience Qualification node. This enforcement replaces the canvas warning introduced in June release. Existing live journeys are not affected. Use a streaming audience in the Audience Qualification node, or switch to a Read Audience activity. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
+
+### Email channel {#july-26-email}
+
+The following capability has been added to the email channel in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Content check in the Email Designer (General Availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.</p>
+<p>Checks cover unsupported elements such as <code>&lt;script&gt;</code> and <code>&lt;base&gt;</code> tags, empty divs that can break layout in Microsoft Outlook, HTML meta refresh tags, and CSS or HTML size thresholds that trigger rendering failures in Gmail.</p>
+<p>Results are surfaced as errors, warnings, or informational notices directly in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the editor.</p>
+<p>Previously available in Limited Availability, this capability is now generally available to all customers.</p>
+<p><img src="assets/do-not-localize/content-check.gif"></p>
+<p>For more information, refer to the <a href="../email/content-check.md">detailed documentation</a>.</p>
+<p>Availability date: July 16, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Orchestrated campaigns {#july-26-oc}
 
@@ -136,56 +190,6 @@ The following capabilities and improvements have been added to content managemen
 * **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. For email templates, additional shortcuts let you edit the subject line and email body, view or send a proof, run a spam report, and render the email. [Learn more](../content-management/access-content-templates.md#quick-launch-templates)
 
   ![](../content-management/assets/content-template-quick-launch.png)
-
-### Email channel {#july-26-email}
-
-The following improvements have been added to the email channel in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Channel optimization</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now configure a journey or campaign action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
-<ul>
-<li>Manual ranking: specify your preferred channel order.</li>
-<li>Customer preference: use the customer's preferred channel from their profile (Experience Data Model Consents & Preferences attribute).</li>
-<li>AI model-based ranking: use machine learning propensity scores to infer the most effective channel per customer.</li>
-</ul>
-<p>When the top-ranked channel is unavailable (not opted-in, frequency-capped, or not configured), the system falls back to the next available channel.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p><img src="assets/do-not-localize/channel-optimization.gif"></p>
-<p>For more information, refer to the <a href="../building-journeys/channel-optimization.md">detailed documentation</a>.</p>
-<p>Availability date: July 22, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Content check in the Email Designer (General Availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.</p>
-<p>Checks cover unsupported elements such as <code>&lt;script&gt;</code> and <code>&lt;base&gt;</code> tags, empty divs that can break layout in Microsoft Outlook, HTML meta refresh tags, and CSS or HTML size thresholds that trigger rendering failures in Gmail.</p>
-<p>Results are surfaced as errors, warnings, or informational notices directly in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the editor.</p>
-<p>Previously available in Limited Availability, this capability is now generally available to all customers.</p>
-<p><img src="assets/do-not-localize/content-check.gif"></p>
-<p>For more information, refer to the <a href="../email/content-check.md">detailed documentation</a>.</p>
-<p>Availability date: July 16, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 ### Content & Integrations {#july-26-integration}
 
