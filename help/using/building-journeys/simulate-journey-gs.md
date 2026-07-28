@@ -93,6 +93,7 @@ Some nodes prevent **[!UICONTROL Simulation]** from starting. Others run in simu
 | Restricted node | Notes |
 | --- | --- |
 | Business Events | You cannot run journeys that start with a business event in **[!UICONTROL Simulation]**. |
+| Inbound channels | You cannot run journeys that include an inbound channel node in **[!UICONTROL Simulation]**. |
 | Supplemental ID (multiple re-entrance) | **[!UICONTROL Simulation]** does not start when multiple re-entrance is enabled and the same simulated user could have several active instances at once. |
 | Content Decision node | Remove or change this activity before you simulate the journey. |
 | Dataset Lookup | **[!UICONTROL Simulation]** does not support customer dataset lookups by key. Remove or change this activity before you run a simulation. |

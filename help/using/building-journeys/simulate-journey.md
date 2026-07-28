@@ -245,10 +245,10 @@ If your journey includes one or more unitary events, you can trigger them while 
 
 1. When you finish testing, open the **[!UICONTROL Manage simulation]** menu:
 
-    * **[!UICONTROL Close simulation]** to exit the current simulation session.
+    * **[!UICONTROL Stop simulation]** to exit the current simulation session.
     * **[!UICONTROL Reset simulation]** to clear all data from the current run, selected simulated users, defined event values, and other test settings, so you can start a new simulation from scratch.
 
-        ![Manage simulation menu open with Reset simulation and Close simulation options](assets/simulate-15.png)
+        ![Manage simulation menu open with Reset simulation and Stop simulation options](assets/simulate-15.png)
 
 ## View results {#viewing-results}
 
