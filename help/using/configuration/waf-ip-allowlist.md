@@ -122,20 +122,18 @@ Add new IPs using the input field, or remove existing IPs by clicking the **✕*
 >
 >Removing the last IP from a subdomain reopens it to all inbound traffic.
 
-<!--
-
 ## Remove allowed IPs {#waf-ip-allowlist-remove}
 
-*TBC as I cannot see the Delete icon on stage.*
+To remove all IPs from the allowed list for a subdomain, use the Delete icon from the Actions column in the inventory. This fully lifts the WAF restriction for that subdomain.
 
-To remove all IPs from the allowed list for a subdomain, use the Delete icon from the row menu in the inventory. This fully lifts the WAF restriction for that subdomain.
+![Delete icon in the Actions column of the Allowed IP list](assets/waf-ip-allowlist-delete-icon.png)
 
 A confirmation pop-up opens. Type the exact subdomain name to confirm, then click **[!UICONTROL Remove]**.
+
+![Confirm removal of all WAF allowed IPs for a subdomain](assets/waf-ip-allowlist-remove.png){width="80%"}
 
 >[!WARNING]
 >
 >Upon confirming, this action removes all allowed list IPs for the subdomain you entered. Inbound traffic will once again be accepted from any source, including requests that bypass your Web Application Firewall. This cannot be undone — IPs must be re-entered to restore the restriction.
 
 After removing all IPs, the subdomain no longer appears in the inventory. You can reconfigure it at any time by adding IPs again for this subdomain.
-
--->
