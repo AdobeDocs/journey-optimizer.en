@@ -683,3 +683,4 @@ Without `utc_offset`, daypart window matching and consecutive-day streak countin
 For DCCS events, the transformer receives only the `xdmEntity` body — not the outer AJO envelope. All paths must be relative to the XDM entity root. If your expression references fields that live in the outer envelope (e.g. `/body/xdmMeta/...`) they will not be found and will silently produce null.
 
 +++
+

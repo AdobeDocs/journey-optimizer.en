@@ -151,3 +151,4 @@ This query returns "12".
 ```sql
 {%= toString(12) %} 
 ```
+
