@@ -2,16 +2,19 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Migrate content and journeys
-description: Learn how to migrate email content templates and import journeys from external platforms using the Journey Optimizer onboarding hub.
+description: Learn how to migrate email content templates and import journeys from external platforms.
 feature: Get Started
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Limited Availability" type="Informative"
 ---
 # Migrate content and journeys {#migrate-content-and-journeys}
 
 If you are moving to [!DNL Journey Optimizer] from another marketing platform, you do not have to start from a blank slate. Journey Optimizer includes a dedicated workspace that imports your existing email content and journeys. It converts them into [!DNL Journey Optimizer] content templates and journeys, so you can pick up where you left off instead of rebuilding everything from scratch.
+
+You can access this workspace directly from the [!DNL Journey Optimizer] homepage.
+
+![Access to the migration workspace](assets/onboarding-hub-15.png)
 
 ## Set up a connection {#set-up-a-connection}
 
