@@ -76,3 +76,4 @@ From the Tasks tab, you can perform actions on tasks:
   >[!IMPORTANT]
   >
   >You can delete a task even when it is used in one or more challenges. Consider the impact on challenges that reference the task before deleting.
+

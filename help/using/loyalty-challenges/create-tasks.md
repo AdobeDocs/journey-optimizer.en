@@ -157,3 +157,4 @@ In the task **[!UICONTROL Properties]** pane, configure the basic task informati
 ![](assets/tasks-create-properties.png)
 
 After configuring all attributes and properties, select **[!UICONTROL Create]** to save the task. The task is saved to your Tasks inventory and, if created from within a challenge, is automatically added to that challenge.
+

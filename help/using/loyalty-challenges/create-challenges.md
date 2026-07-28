@@ -357,3 +357,4 @@ You have two options for launching your challenge:
    ![](assets/challenge-create-journey.png)
 
 1. Once your challenge is live, monitor program KPIs, challenge results, and task-level metrics in the [loyalty challenge reports](loyalty-reporting.md). You can also monitor message delivery in the [journey report](../reports/journey-global-report-cja.md).
+
