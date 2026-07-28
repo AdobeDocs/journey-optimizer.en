@@ -81,6 +81,7 @@ nudge: yes
     + [Work with journey step events](using/reports/journey-step-events-overview.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
+    + [Channel optimization](using/building-journeys/channel-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
@@ -109,7 +110,6 @@ nudge: yes
     + [Build expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
     + [Work with the advanced expression editor](using/building-journeys/expression/expressionadvanced.md)
     + [Generate expressions with AI](using/building-journeys/expression/generate-expression.md)
-    + {hide-from-toc} [Generate expressions with the Expression Assistant](using/building-journeys/expression/expression-agent.md)
     + Syntax {#syntax}
       + [Syntax](/help/rp_landing_pages/syntax-landing-page.md)
       + [Advanced expression editor syntax](using/building-journeys/expression/generalities.md)
@@ -425,6 +425,7 @@ nudge: yes
   + Inbox {#inbox}
     + [Get started with Inbox](using/inbox/inbox-gs.md)
     + [Configure Inbox channel in Journey Optimizer](using/inbox/inbox-configuration.md)
+    + [Configure Inbox support in Web SDK](using/inbox/inbox-configuration-sdk.md)
     + [Create your Inbox](using/inbox/inbox-create.md)
     + [Design your Inbox](using/inbox/inbox-design.md)
   + WhatsApp {#whatsapp}

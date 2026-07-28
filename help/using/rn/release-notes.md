@@ -110,6 +110,31 @@ The following improvements have been added to the email channel in this release.
 <table>
 <thead>
 <tr>
+<th><strong>Channel optimization</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now configure a journey or campaign action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
+<ul>
+<li>Manual ranking: specify your preferred channel order.</li>
+<li>Customer preference: use the customer's preferred channel from their profile (Experience Data Model Consents & Preferences attribute).</li>
+<li>AI model-based ranking: use machine learning propensity scores to infer the most effective channel per customer.</li>
+</ul>
+<p>When the top-ranked channel is unavailable (not opted-in, frequency-capped, or not configured), the system falls back to the next available channel.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/channel-optimization.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/channel-optimization.md">detailed documentation</a>.</p>
+<p>Availability date: July 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Content check in the Email Designer (General Availability)</strong><br/></th>
 </tr>
 </thead>
@@ -131,6 +156,10 @@ The following improvements have been added to the email channel in this release.
 ### Content & Integrations {#july-26-integration}
 
 The following capabilities and improvements are coming to content management and integrations in this release.
+
+* **Decision items' dynamic custom attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items. [Read more](../experience-decisioning/items.md#attributes)
+
+  Availability date: July 27, 2026
 
 * **AJO MCP server new tools** - The [!DNL Adobe Journey Optimizer] MCP server now exposes five additional read-only **channel configuration tools**, enabling you to query channel configurations, supporting resources, and marketing actions directly from your AI assistant. You can now use **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
 
