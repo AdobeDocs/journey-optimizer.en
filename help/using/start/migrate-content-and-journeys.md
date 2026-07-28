@@ -11,7 +11,7 @@ badge: label="Limited Availability" type="Informative"
 ---
 # Migrate content and journeys {#migrate-content-and-journeys}
 
-If you are moving to [!DNL Journey Optimizer] from another marketing platform, you do not have to start from a blank slate. Journey Optimizer includes a migration workspace that imports your existing email content and journeys. It converts them into [!DNL Journey Optimizer] content templates and journeys, so you can pick up where you left off instead of rebuilding everything from scratch.
+If you are moving to [!DNL Journey Optimizer] from another marketing platform, you do not have to start from a blank slate. Journey Optimizer includes a dedicated workspace that imports your existing email content and journeys. It converts them into [!DNL Journey Optimizer] content templates and journeys, so you can pick up where you left off instead of rebuilding everything from scratch.
 
 ## Set up a connection {#set-up-a-connection}
 
@@ -54,7 +54,9 @@ If you are moving to [!DNL Journey Optimizer] from another marketing platform, y
 
 To import content or journeys through an API, first connect [!DNL Journey Optimizer] to your source platform:
 
-1. In the Migration workspace, select **[!UICONTROL Manage connections]**.
+1. In the workspace, select **[!UICONTROL Manage connections]**.
+
+    ![Manage connections button](assets/onboarding-hub-14.png)
 
 1. Click **[!UICONTROL New connection]**.
 
@@ -80,7 +82,7 @@ To import content or journeys through an API, first connect [!DNL Journey Optimi
 
 ## Import Email content {#import-email-content}
 
-Once you have a source for your content, either an HTML file or a connection to your source platform, import it into the migration workspace to convert it into a [!DNL Journey Optimizer] content template.
+Once you have a source for your content, either an HTML file or a connection to your source platform, import it into the workspace to convert it into a [!DNL Journey Optimizer] content template.
 
 1. From the **[!UICONTROL Email content]** tab, choose how you want to import your email content:
 
@@ -102,7 +104,7 @@ Once you have a source for your content, either an HTML file or a connection to 
 
 1. Add your **[!UICONTROL Subject line]** and map each personalization placeholder to the corresponding profile attribute. 
     
-    The migration workspace converts the source scripting syntax to Handlebars syntax automatically.
+    The workspace converts the source scripting syntax to Handlebars syntax automatically. For a list of supported operators, see [Operators](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/personalization/functions/operators).
 
     ![Imported email editor with subject line field and personalization placeholder mapping](assets/onboarding-hub-8.png)
 
@@ -138,7 +140,7 @@ Recreate your journeys by importing a screenshot of the journey flow, or by conn
 
 1. For import from connection, choose from the journeys list and click **[!UICONTROL Import]**.
 
-1. Preview the journey that the migration workspace generates from your source.
+1. Preview the journey that the workspace generates from your source.
 
 1. From the **[!UICONTROL Action items]** pane, resolve each item based on the type of activity it belongs to:
 
@@ -155,14 +157,14 @@ Your journey is now available in [!DNL Journey Optimizer], where you can review 
 
 ## Track migration {#track-migration-progress}
 
-The migration workspace overview helps you keep track of every email you have imported and quickly find the ones still awaiting action. Each imported email shows a status of needs review, migrated, or failed, so you can see where it stands at a glance. A set of KPIs at the top of the screen gives you an at-a-glance count of items in each status:
+The workspace overview helps you keep track of every email you have imported and quickly find the ones still awaiting action. Each imported email shows a status of needs review, migrated, or failed, so you can see where it stands at a glance. A set of KPIs at the top of the screen gives you an at-a-glance count of items in each status:
 
-* **Total emails** (or **Total journeys**): The overall number of items imported into the migration workspace.
+* **Total emails** (or **Total journeys**): The overall number of items imported into the workspace.
 * **In Progress**: Items that are still being reviewed or mapped before they can be migrated.
 * **Migrated**: Items that were successfully converted and are available in [!DNL Journey Optimizer].
 * **Failed**: Items that could not be migrated and need attention.
 
-![Migration workspace overview with KPIs for total, in progress, migrated, and failed items](assets/onboarding-hub-4.png)
+![Workspace overview with KPIs for total, in progress, migrated, and failed items](assets/onboarding-hub-4.png)
 
 A set of filters lets you narrow down the list of imported email content so you can focus on a specific subset instead of scrolling through every item. Combine one or more of the following filters to find what you are looking for:
 
@@ -170,6 +172,6 @@ A set of filters lets you narrow down the list of imported email content so you 
 * **[!UICONTROL Created]**: Show emails imported within a specific date range.
 * **[!UICONTROL Updated]**: Show emails last modified within a specific date range.
 
-![Filter options for status, created date, and updated date in the migration workspace](assets/onboarding-hub-5.png)
+![Filter options for status, created date, and updated date in the workspace](assets/onboarding-hub-5.png)
 
 
