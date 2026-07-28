@@ -7,8 +7,6 @@ feature: Journeys
 topic: Content Management
 role: Admin
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: 9b0fd9d8-18d1-4a51-8b6f-b2e2a4c6f1d7
 feature_v2: []
@@ -54,10 +52,6 @@ subfeature_v2: []
 </table>
 
 >[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases in [!DNL Journey Optimizer], see [release cycle](../rn/releases.md).
 
 When a challenge task, milestone, or challenge completes **and has a reward value configured**, the platform issues a reward by calling your reward provider's HTTP endpoint with a JSON payload. A **Reward Definition** describes what reward to issue and provides a [JSONata](https://docs.jsonata.org/overview) expression — `rewardJsonata` — that shapes the exact payload your provider expects.
 
