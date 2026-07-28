@@ -61,7 +61,6 @@ nudge: yes
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
-    + [Send using waves in journeys](using/building-journeys/send-using-waves.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + Simulation {#simulate-journey}
@@ -80,8 +79,6 @@ nudge: yes
     + [Use supplemental identifiers in journeys](using/building-journeys/supplemental-identifier.md)
     + [Work with journey step events](using/reports/journey-step-events-overview.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
-    + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
-    + [Channel optimization](using/building-journeys/channel-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
@@ -165,7 +162,6 @@ nudge: yes
     + [Edit the campaign content](using/campaigns/campaign-content.md)
     + [Define the campaign audience](using/campaigns/campaign-audience.md)
     + [Schedule the campaign](using/campaigns/campaign-schedule.md)
-    + [Send using waves](using/campaigns/send-using-waves.md)
     + [Review & activate an Action campaign](using/campaigns/review-activate-campaign.md)
   + API-triggered campaigns {#api-triggered-campaigns}
     + [API-triggered campaigns](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
@@ -248,6 +244,10 @@ nudge: yes
   + Journey arbitration {#journey-arbitration}
     + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
     + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
++ Delivery settings {#delivery-settings}
+  + [Send using waves](using/delivery/send-using-waves.md)
+  + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
+  + [Channel optimization](using/building-journeys/channel-optimization.md)
 + Test & approve {#test}
   + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
