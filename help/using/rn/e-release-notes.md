@@ -126,30 +126,7 @@ Journey Optimizer introduces the Onboarding Assistant, a new capability in this 
 
 ### Journeys {#july-26-journeys}
 
-The following capabilities and improvements have been added to journeys in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Channel optimization</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now configure a journey action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
-<ul>
-<li>Manual ranking: specify your preferred channel order.</li>
-<li>Customer preference: use the customer's preferred channel from their profile (Experience Data Model Consents & Preferences attribute).</li>
-<li>AI model-based ranking: use machine learning propensity scores to infer the most effective channel per customer.</li>
-</ul>
-<p>When the top-ranked channel is unavailable (not opted-in, frequency-capped, or not configured), the system falls back to the next available channel.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
+The following improvement has been added to journeys in this release.
 
 * **External audiences in Journey Simulation** - Journey Simulation now supports External Audiences. When simulating journeys targeting CSV or Federated Audience Composition audiences, you can mock enrichment attributes from those audiences directly through the UI form or a JSON import. The UI dynamically displays only the specific enrichment attributes used in your journey logic, enabling precise validation of decision branches and personalization rules prior to going live. <!-- Documentation link: TBD -->
 
@@ -187,8 +164,8 @@ The following capabilities and improvements have been added to campaigns in this
 <td>
 <p>You can now simulate inbound channel actions in Action campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<GIF placeholder: to be added>
-<Documentation link: TBD>
+<!-- GIF placeholder: to be added -->
+<!-- Documentation link: TBD -->
 </td>
 </tr>
 </tbody>
@@ -202,9 +179,39 @@ The following capabilities and improvements have been added to campaigns in this
 
 ### Orchestrated campaigns {#july-26-oc}
 
-The following improvement has been added to orchestrated campaigns in this release.
+The following improvements have been added to orchestrated campaigns in this release.
 
 * **View Orchestrated Campaign Transitions permission** - Added a new **View Orchestrated Campaign Transitions** permission to replace the legacy **View File in Orchestrated Campaigns** option. This change allows you to hide preview results within campaign transitions to support personally identifiable information compliance.
+
+<!--
+* **Send messages in waves** - You can now schedule outbound messages from orchestrated campaigns to be delivered in controlled batches over time. Ideal for high-volume or time-sensitive campaigns, wave sending also supports better deliverability and helps maintain a strong sender reputation by reducing the risk of being flagged as spam.
+-->
+
+<!--
+### Optimization {#july-26-optimization}
+
+<table>
+<thead>
+<tr>
+<th><strong>Channel optimization</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now configure a journey or campaign action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
+<ul>
+<li>Manual ranking: specify your preferred channel order.</li>
+<li>Customer preference: use the customer's preferred channel from their profile (Experience Data Model Consents & Preferences attribute).</li>
+<li>AI model-based ranking: use machine learning propensity scores to infer the most effective channel per customer.</li>
+</ul>
+<p>When the top-ranked channel is unavailable (not opted-in, frequency-capped, or not configured), the system falls back to the next available channel.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+</td>
+</tr>
+</tbody>
+</table>
+-->
 
 <!--
 <table>
@@ -234,6 +241,40 @@ The following improvement has been added to orchestrated campaigns in this relea
 * **Target dimension simplification in Orchestrated campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.
 
 -->
+
+### Channels {#july-26-channels}
+
+The following capabilities and improvements have been added to channels in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom outbound channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now introduces Custom channels, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder.</p >
+<p>Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
+<p>This fills a gap previously addressed by custom actions, which are limited only to journeys and lack dedicated channel capabilities.</p>
+<p>Custom outbound channels are currently available as Limited Availability. To gain access, contact your Adobe representative.</p>
+<!-- GIF placeholder: to be added -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
+
+* **WhatsApp Channel: Support WhatsApp Flow templates** - You can now send WhatsApp Flow templates in Adobe Journey Optimizer to deliver interactive multi-screen experiences like surveys and lead capture. Responses are captured upon submission and stored as raw JSON payloads in the new Journey Optimizer Channel Tracking Event Dataset. <!-- Documentation link: TBD -->
+
+* **Performance Add-on for throughput - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. <!-- Documentation link: TBD -->
+
+* **Enhanced Custom Provider Integrations - Mobile** - Custom provider integrations now offer expanded flexibility with key messaging and header updates:
+
+  * Header Customization: You can now edit the default Content-Type header value and add up to 10 custom header parameters.
+
+  * SMS Payload Support: Added support for Adobe Journey Optimizer helper functions within the SMS payload, including encode64.
 
 ### Decisioning {#july-26-decisioning}
 
@@ -300,7 +341,7 @@ The following improvements have been added to personalization in this release.
 
 <!-- Documentation link: TBD -->
 
-### Email channel {#july-26-email}
+### Email Designer {#july-26-email}
 
 The following capabilitiy has been added to the email channel in this release.
 
@@ -313,7 +354,8 @@ The following capabilitiy has been added to the email channel in this release.
 <tbody>
 <tr>
 <td>
-<p>The Email Designer now includes a library of ready-to-use layout modules — such as headers, product cards, information blocks, and footers — that you can drag and drop directly into your email canvas. Each module comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
+<p>The Email Designer now includes a library of ready-to-use layout modules — such as headers, product cards, information blocks, and footers — that you can drag and drop directly into your email canvas.</p>
+<p>Each module comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -321,37 +363,6 @@ The following capabilitiy has been added to the email channel in this release.
 </tbody>
 </table>
 
-### Channels {#july-26-channels}
-
-The following capabilities and improvements have been added to channels in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom outbound channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now introduces Custom channels, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder. Once configured, custom channels are available across Campaigns, Journeys, and Orchestrated Campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement. This fills a gap previously addressed by Custom Actions, which are limited only to Journeys and lack dedicated channel capabilities.</p>
-<p>Custom outbound channels is currently available as Limited Availability. To gain access, contact your Adobe representative.</p>
-<!-- GIF placeholder: to be added -->
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-* **WhatsApp Channel: Support WhatsApp Flow templates** - You can now send WhatsApp Flow templates in Adobe Journey Optimizer to deliver interactive multi-screen experiences like surveys and lead capture. Responses are captured upon submission and stored as raw JSON payloads in the new Journey Optimizer Channel Tracking Event Dataset. <!-- Documentation link: TBD -->
-
-* **Performance Add-on for throughput - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. <!-- Documentation link: TBD -->
-
-* **Enhanced Custom Provider Integrations - Mobile** - Custom provider integrations now offer expanded flexibility with key messaging and header updates:
-
-  * Header Customization: You can now edit the default Content-Type header value and add up to 10 custom header parameters.
-
-  * SMS Payload Support: Added support for Adobe Journey Optimizer helper functions within the SMS payload, including encode64.
 
 ### Administration {#july-26-administration}
 
