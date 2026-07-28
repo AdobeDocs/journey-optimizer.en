@@ -133,7 +133,7 @@ The following capabilities and improvements have been added to journeys in this 
 
 * [!BADGE Deprecation]{type=Negative} Batch audiences no longer supported in Audience Qualification node - As of August 3, 2026, Journey Optimizer blocks publication for any journey using a batch audience in an Audience Qualification node. This enforcement replaces the canvas warning introduced in June release. Existing live journeys are not affected. Use a streaming audience in the Audience Qualification node, or switch to a Read Audience activity. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
 
-### Email channel {#july-26-email}
+### Email Designer {#july-26-email}
 
 The following capability has been added to the email channel in this release.
 
