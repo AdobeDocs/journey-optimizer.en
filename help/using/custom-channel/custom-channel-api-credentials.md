@@ -10,6 +10,12 @@ badge: label="Limited Availability" type="Informative"
 
 # Manage API credentials {#api-credentials}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to view, manage, and create API credential sets for custom channels in Adobe Journey Optimizer, so you can authenticate requests to your endpoint across different brands or environments without duplicating the channel.
+
+>[!ENDSHADEBOX]
+
 When a custom channel is created with an authentication type other than **None**, an initial set of API credentials is automatically generated when the channel is activated.
 
 You can view, manage and edit credentials from **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Channel builder]** > **[!UICONTROL API credentials]**.
