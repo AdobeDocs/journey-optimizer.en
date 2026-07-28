@@ -83,3 +83,4 @@ Each card carries a **category tag** that identifies which part of your program 
 | **Product** | Product catalog performance, including views, redemptions, and catalog-level trends |
 | **Member lifecycle** | How members progress through enrollment, engagement, and churn stages |
 | **Trend** | Time-based patterns such as weekly cycles, seasonal spikes, or trend reversals |
+

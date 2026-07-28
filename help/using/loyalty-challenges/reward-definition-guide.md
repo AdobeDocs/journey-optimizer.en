@@ -469,3 +469,4 @@ To develop and test an expression before publishing, use the [JSONata Exerciser]
 | `task.accumulators.item_list[-1]` is null | No items were applied before reward issued (non-purchase event) | Guard with a conditional or use `timestamp` from context instead |
 | `milestone` accessed when source is `"task"` or `"challenge"` | `milestone` is null; expression throws or produces null fields | Check `rewardContext.source` before accessing `milestone`, or only use `milestone` in definitions attached to milestone rewards |
 | Expression returns an array instead of an object | Provider receives unexpected payload structure | Wrap array-returning expressions in an outer object: `{ "items": [...] }` |
+

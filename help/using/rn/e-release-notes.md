@@ -296,25 +296,6 @@ The following improvements have been added to personalization in this release.
 
 * **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe Support. <!-- Documentation link: TBD -->
 
-* **New helper functions in personalization expressions** - New helper functions are now available in personalization expressions:
-
-  * `appendQueryParams`: Appends a query parameter to a URL, or replaces it if the key already exists.
-  * `dateBetween`: Checks whether a date falls within a start and end date range (inclusive).
-  * `equalsAnyIgnoreCase`: Returns true when a string matches any provided value, ignoring case.
-  * `getUrlFragment`: Extracts the fragment portion of a URL (the part after #).
-  * `join`: Concatenates array elements into a single string using a separator.
-  * `decode64`: Decodes a Base64-encoded string. If the input is not valid Base64, the original input string is returned unchanged.
-  * `parseJson`: Parses a JSON string into a structured variable that can be used in the template.
-  * `valueAtPath`: Assigns a value from a data path to a template variable, with optional indexing to extract a specific element from arrays or collections.
-
-  The `concat` function has also been enhanced and now supports two or more arguments.
-
-  In addition, the following Template Migration Functions are now available to assist with migrating existing templates to Journey Optimizer:
-
-  * `ampCompare`: Compares two values using the specified comparison operator.
-  * `ampSubstr`: Returns a portion of a string between the specified start and end indices.
-  * `compareTo`: Compares two strings lexicographically.
-
 <!-- Documentation link: TBD -->
 
 ### Email Designer {#july-26-email}

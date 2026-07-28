@@ -15,8 +15,6 @@ subfeature_v2:
 ---
 # Get started with loyalty challenges {#get-started-loyalty-challenges}
 
-## Overview {#overview}
-
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_inventory"
 >title="Loyalty challenges"
@@ -25,6 +23,8 @@ subfeature_v2:
 >[!AVAILABILITY]
 >
 >* Journey Optimizer Loyalty is not currently available to Healthcare Shield and Privacy and Security Shield customers. Availability for Healthcare Shield and Privacy and Security Shield customers will be updated upon future feature readiness.
+
+## Overview {#overview}
 
 Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends.
 
@@ -167,3 +167,4 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
 ## API reference {#api-reference}
 
 To manage loyalty challenges programmatically, use the [Loyalty Challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}. The API lets you create, update, and manage challenges and tasks via REST endpoints.
+

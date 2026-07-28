@@ -141,3 +141,4 @@ If a user cannot access Loyalty Challenges or a related feature, check the follo
 * The organization and sandbox are enabled for Loyalty Challenges.
 
 If access issues persist after permissions are updated, contact your Adobe representative.
+
