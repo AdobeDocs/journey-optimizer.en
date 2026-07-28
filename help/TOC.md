@@ -142,17 +142,20 @@ nudge: yes
     + {hide-from-toc} [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
-+ Loyalty challenges {#loyalty-challenges} 
-  + {hide-from-toc} [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
-  + {hide-from-toc} [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
-  + {hide-from-toc} [Create challenges](using/loyalty-challenges/create-challenges.md)
-  + {hide-from-toc} [Create tasks](using/loyalty-challenges/create-tasks.md)
-  + {hide-from-toc} [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
-  + {hide-from-toc} [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
-  + {hide-from-toc} [Reward Definition guide](using/loyalty-challenges/reward-definition-guide.md)
-  + {hide-from-toc} [Event Transformer guide](using/loyalty-challenges/event-transformer-guide.md)
-  + {hide-from-toc} [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
-  + {hide-from-toc} [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
++ Loyalty challenges {#loyalty-challenges}
+  + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + Create and manage challenges {#create-manage-challenges}
+    + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
+    + [Create challenges](using/loyalty-challenges/create-challenges.md)
+    + [Create tasks](using/loyalty-challenges/create-tasks.md)
+    + [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
+  + Configure and integrate {#configure-integrate-loyalty}
+    + [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
+    + [Reward Definition guide](using/loyalty-challenges/reward-definition-guide.md)
+    + [Event Transformer guide](using/loyalty-challenges/event-transformer-guide.md)
+    + [Loyalty Challenges permissions](using/loyalty-challenges/loyalty-permissions.md)
+    + [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
+    + [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)

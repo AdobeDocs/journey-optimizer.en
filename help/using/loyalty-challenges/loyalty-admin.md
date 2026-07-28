@@ -7,54 +7,11 @@ feature: Journeys
 topic: Content Management
 role: Admin
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
-mini-toc-levels: 1
 exl-id: f8a3b2c1-4d5e-6f7a-8b9c-0d1e2f3a4b5c
 feature_v2: []
 subfeature_v2: []
 ---
 # Configure loyalty challenges {#loyalty-admin}
-
-<!-- Unpublished draft: Loyalty Admin UI documentation is not validated for Experience League. This page uses hide: true until review. -->
-
->[!BEGINSHADEBOX]
-
-**Table of contents**
-
-[Get started with Loyalty Challenges](get-started.md)
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-<td style="vertical-align:top;">
-
-**Create and manage challenges**
-
-* [Access & manage challenges and tasks](access-loyalty-challenges.md)
-* [Create challenges](create-challenges.md)
-* [Create tasks](create-tasks.md)
-* [Monitor loyalty challenge performance](loyalty-reporting.md)
-
-</td>
-<td style="vertical-align:top;">
-
-**Configure and integrate**
-
-* **Configure loyalty challenges** ◀︎ **You are here**
-* [Reward Definition guide](reward-definition-guide.md)
-* [Event Transformer guide](event-transformer-guide.md)
-* [Loyalty data and datasets](loyalty-data-and-datasets.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-</td>
-</tr>
-</table>
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases in [!DNL Journey Optimizer], see [release cycle](../rn/releases.md).
 
 ## Overview {#access-loyalty-admin}
 
@@ -299,7 +256,7 @@ To upload exclusions, follow these steps:
 
    ![](assets/admin-exclusions-upload.png)
 
-1. Review the imported data in the exclusions list. The list shows one row per item. The **[!UICONTROL Groups included in]** column shows every exclusion group for that item as a pill, or several pills when the item belongs to multiple groups.
+1. Review the imported data in the exclusions list. The list shows one row per item. The **[!UICONTROL Groups included in]** column s'ows every exclusion group for that item as a pill, or several pills when the item belongs to multiple groups.
 
 <!-- SCREENSHOT: Exclusions list after CSV upload -->
 

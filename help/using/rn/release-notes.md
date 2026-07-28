@@ -56,6 +56,30 @@ topic_v2:
 
 ## July '26 release notes {#july-26-updates}
 
+### Loyalty Challenges {#july-26-loyalty}
+
+Journey Optimizer introduces Loyalty Challenges, a new capability in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Loyalty Challenges</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Loyalty Challenges turn loyalty initiatives into engaging, gamified experiences that motivate customers to take valuable actions, such as making purchases, writing reviews, or any desired behavior.</p>
+<p>Administrators can use the Loyalty admin menu to connect Journey Optimizer with your loyalty ecosystem, including reward fulfillment APIs, event definitions, product inventory, exclusions, and identity settings. Marketers can then design standard, streak, or sequential challenges, define tasks and rewards, deliver branded content cards and messages, and monitor performance with AI-powered reporting dashboards. Journey Optimizer generates the journeys that orchestrate each challenge in the background, so teams can focus on the customer experience and business goals.</p>
+<p>Loyalty also introduces Coworker skills that let teams perform key challenge operations more efficiently, including creating challenges, setting challenge properties, managing audiences and related configuration, and reviewing insights to monitor challenge participation and reward performance.</p>
+<p>This capability is only available for organizations licensed for Journey Optimizer Loyalty. To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../loyalty-challenges/get-started.md">detailed documentation</a>.</p>
+<p> Availability date: July 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Journeys {#july-26-journeys}
 
 The following capabilities and improvements have been added to journeys in this release.

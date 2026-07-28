@@ -7,52 +7,11 @@ feature: Journeys
 topic: Content Management
 role: Admin, Developer
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
-mini-toc-levels: 1
 exl-id: a7c4e1b2-8f3d-4a6c-9e0b-1d2e3f4a5b6c
 feature_v2: []
 subfeature_v2: []
 ---
 # Loyalty data and datasets {#loyalty-data-and-datasets}
-
->[!BEGINSHADEBOX]
-
-**Table of contents**
-
-[Get started with Loyalty Challenges](get-started.md)
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-<td style="vertical-align:top;">
-
-**Create and manage challenges**
-
-* [Access & manage challenges and tasks](access-loyalty-challenges.md)
-* [Create challenges](create-challenges.md)
-* [Create tasks](create-tasks.md)
-* [Monitor loyalty challenge performance](loyalty-reporting.md)
-
-</td>
-<td style="vertical-align:top;">
-
-**Configure and integrate**
-
-* [Configure loyalty challenges](loyalty-admin.md)
-* [Reward Definition guide](reward-definition-guide.md)
-* [Event Transformer guide](event-transformer-guide.md)
-* **Loyalty data and datasets** ◀︎ **You are here**
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-</td>
-</tr>
-</table>
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
 
 ## Overview {#overview}
 
@@ -82,6 +41,8 @@ For standard loyalty attributes on the profile (points, tier, program, status, a
 
 ➡️ [Loyalty Details schema field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/loyalty-details){target="_blank"}
 
+➡️ [AJO schema dictionary](https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html?lang=en){target="_blank"}
+
 ### Experience events {#experience-events}
 
 **[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event definitions (identifier path, optional XDM schema ID, schema, and transformer) must be configured in the **[!UICONTROL Loyalty admin]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
@@ -102,4 +63,4 @@ Journey Optimizer applies TTL guardrails to many system-generated datasets. Loya
 
 >[!NOTE]
 >
->Organization-level loyalty configuration can include archive and retention settings (for example, archive duration) managed through the Loyalty metadata service. Coordinate with your Adobe administrator if you need to adjust retention for your private beta environment.
+>Organization-level loyalty configuration can include archive and retention settings (for example, archive duration) managed through the Loyalty metadata service. Coordinate with your Adobe administrator if you need to adjust retention for your organization.
