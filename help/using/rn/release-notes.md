@@ -67,7 +67,7 @@ topic_v2:
 <tbody>
 <tr>
 <td>
-<p>You can now configure a journey action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
+<p>You can now configure a journey or campaign action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
 <ul>
 <li>Manual ranking: specify your preferred channel order.</li>
 <li>Customer preference: use the customer's preferred channel from their profile (Experience Data Model Consents & Preferences attribute).</li>
