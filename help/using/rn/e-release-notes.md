@@ -141,8 +141,8 @@ The following capabilities and improvements have been added to campaigns in this
 <td>
 <p>You can now simulate inbound channel actions in Action campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<!-- GIF placeholder: to be added -->
-<!-- Documentation link: TBD -->
+[GIF placeholder: to be added]
+[Documentation link: TBD]
 </td>
 </tr>
 </tbody>
