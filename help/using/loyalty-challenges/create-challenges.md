@@ -7,52 +7,12 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
-mini-toc-levels: 1
 exl-id: c950bee8-4ea9-4b64-810d-91371e8b3e4c
 ---
+
 # Create challenges {#create-challenges}
 
->[!BEGINSHADEBOX]
-
-**Table of contents**
-
-[Get started with Loyalty Challenges](get-started.md)
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-<td style="vertical-align:top;">
-
-**Create and manage challenges**
-
-* [Access & manage challenges and tasks](access-loyalty-challenges.md)
-* **Create challenges** ◀︎ **You are here**
-* [Create tasks](create-tasks.md)
-* [Monitor loyalty challenge performance](loyalty-reporting.md)
-
-</td>
-<td style="vertical-align:top;">
-
-**Configure and integrate**
-
-* [Configure loyalty challenges](loyalty-admin.md)
-* [Reward Definition guide](reward-definition-guide.md)
-* [Event Transformer guide](event-transformer-guide.md)
-* [Loyalty data and datasets](loyalty-data-and-datasets.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-</td>
-</tr>
-</table>
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
-
-This page covers the complete process of creating a loyalty challenge, from selecting the challenge type and configuring settings, structure, content, and messaging to generating and publishing the journey that delivers the challenge to your customers.
+This page covers the complete process of creating and publishing a loyalty challenge in Adobe Journey Optimizer.
 
 Creating a challenge involves the following steps:
 
@@ -64,9 +24,11 @@ Creating a challenge involves the following steps:
 1. **[Publish the challenge](#launch)** — Make the challenge available for journey generation.
 1. **[Generate and publish the journey](#launch)** — Trigger the auto-generated journey that delivers the challenge to customers.
 
+➡️ [Watch how to create challenges](#video)
+
 ## Create the challenge {#create-the-challenge}
 
-1. Navigate to **[!UICONTROL Loyalty Challenges (Beta)]** in Journey Optimizer.
+1. Navigate to **[!UICONTROL Loyalty Challenges]** in Journey Optimizer.
 
 1. Select the **[!UICONTROL Challenges]** tab and select **[!UICONTROL Create Challenge]**.
 
@@ -387,3 +349,16 @@ You have two options for launching your challenge:
    ![](assets/challenge-create-journey.png)
 
 1. Once your challenge is live, monitor program KPIs, challenge results, and task-level metrics in the [loyalty challenge reports](loyalty-reporting.md). You can also monitor message delivery in the [journey report](../reports/journey-global-report-cja.md).
+
+## How-to videos {#video}
+
+Learn how to create and configure loyalty challenges with these step-by-step video tutorials:
+
+**Set up a loyalty challenge** - Create and configure a new loyalty challenge
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496471?quality=12)
+
+**Configure rewards** - Set up reward delivery and fulfillment
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496481?quality=12)
+
