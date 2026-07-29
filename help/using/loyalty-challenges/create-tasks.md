@@ -17,6 +17,8 @@ Tasks define the specific actions or milestones that customers must complete to 
 
 Each task represents a measurable action that contributes toward challenge completion. Tasks are reusable components that can be created independently and then added to one or more challenges, or created directly within a challenge.
 
+➡️ [Watch how to create tasks](#video)
+
 ## Create a task {#create-task}
 
 >[!CONTEXTUALHELP]
@@ -157,4 +159,10 @@ In the task **[!UICONTROL Properties]** pane, configure the basic task informati
 ![](assets/tasks-create-properties.png)
 
 After configuring all attributes and properties, select **[!UICONTROL Create]** to save the task. The task is saved to your Tasks inventory and, if created from within a challenge, is automatically added to that challenge.
+
+## How-to video {#video}
+
+Learn how to create and configure tasks with this step-by-step tutorial:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496442?quality=12)
 
