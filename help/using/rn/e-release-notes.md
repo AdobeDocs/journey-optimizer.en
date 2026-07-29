@@ -74,30 +74,6 @@ See also [Adobe Experience Platform Pre-release notes](https://experienceleague.
 
 **Release date**: July 28-29, 2026
 
-### Loyalty {#july-26-loyalty}
-
-Journey Optimizer introduces Loyalty, a new capability in this release.
-
-<table>
-<thead>
-<tr>
-<th><strong>Loyalty Challenges</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Loyalty Challenges turn loyalty initiatives into engaging, gamified experiences that motivate customers to take valuable actions, such as making purchases, writing reviews, or any desired behavior.</p>
-<p>Administrators can use the Loyalty admin menu to connect Journey Optimizer with your loyalty ecosystem, including reward fulfillment APIs, event definitions, product inventory, exclusions, and identity settings. Marketers can then design standard, streak, or sequential challenges, define tasks and rewards, deliver branded content cards and messages, and monitor performance with AI-powered reporting dashboards. Journey Optimizer generates the journeys that orchestrate each challenge in the background, so teams can focus on the customer experience and business goals.</p>
-<p>Loyalty also introduces Coworker skills that let teams perform key challenge operations more efficiently, including creating challenges, setting challenge properties, managing audiences and related configuration, and reviewing insights to monitor challenge participation and reward performance.</p>
-<p>This capability is only available for organizations licensed for Journey Optimizer Loyalty. To gain access, contact your Adobe representative.</p>
-<!-- GIF placeholder: to be added -->
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
 <!--
 
 ### Onboarding {#july-26-onboarding}
@@ -280,14 +256,6 @@ The following capabilities and improvements have been added to channels in this 
 
 The following improvements have been added to Decisioning in this release.
 
-* **Decisioning rules creation from natural language expression** - You can now describe the Decisioning rule you want to create in plain language and let AI generate it for you. This capability is available to customers with access to Adobe AI capabilities.
-
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. <!-- Documentation link: TBD -->
-
-* **Decisioning rules and ranking formulas simulation** - You can now simulate your Decisioning rules and ranking formulas directly from the rule or formula editor. Add manual test variants or generate them using AI, then run the expression against your test data to validate eligibility and review ranked results, all before deploying to production. Variants generation is available to customers with access to Adobe AI capabilities.
-
-  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. <!-- Documentation link: TBD -->
-
 * **Personalization at the offer level** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items. <!-- Documentation link: TBD -->
 
 <!--
@@ -319,25 +287,6 @@ The following improvements have been added to integrations in this release.
 The following improvements have been added to personalization in this release.
 
 * **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe Support. <!-- Documentation link: TBD -->
-
-* **New helper functions in personalization expressions** - New helper functions are now available in personalization expressions:
-
-  * `appendQueryParams`: Appends a query parameter to a URL, or replaces it if the key already exists.
-  * `dateBetween`: Checks whether a date falls within a start and end date range (inclusive).
-  * `equalsAnyIgnoreCase`: Returns true when a string matches any provided value, ignoring case.
-  * `getUrlFragment`: Extracts the fragment portion of a URL (the part after #).
-  * `join`: Concatenates array elements into a single string using a separator.
-  * `decode64`: Decodes a Base64-encoded string. If the input is not valid Base64, the original input string is returned unchanged.
-  * `parseJson`: Parses a JSON string into a structured variable that can be used in the template.
-  * `valueAtPath`: Assigns a value from a data path to a template variable, with optional indexing to extract a specific element from arrays or collections.
-
-  The `concat` function has also been enhanced and now supports two or more arguments.
-
-  In addition, the following Template Migration Functions are now available to assist with migrating existing templates to Journey Optimizer:
-
-  * `ampCompare`: Compares two values using the specified comparison operator.
-  * `ampSubstr`: Returns a portion of a string between the specified start and end indices.
-  * `compareTo`: Compares two strings lexicographically.
 
 <!-- Documentation link: TBD -->
 

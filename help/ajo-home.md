@@ -22,6 +22,11 @@ Discover the latest Journey Optimizer features and improvements in the Release N
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
+>[!TAB Loyalty Challenges]
+
+Discover how to create and manage **Loyalty Challenges** to engage and reward your most loyal customers with gamification capabilities.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/loyalty-challenges/get-started.md)
 
 >[!TAB AI Assistant for personalization]
 
@@ -35,14 +40,6 @@ Use **AI Assistant** in the Personalization Editor or from the Email Designer to
 Learn how to use iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/personalization/iterate-contextual-data.md)
-
-
->[!TAB Campaign Orchestration]
-
-Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns.
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
-
 
 >[!ENDTABS]
 

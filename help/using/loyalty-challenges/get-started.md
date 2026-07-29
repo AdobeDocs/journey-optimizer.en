@@ -15,8 +15,6 @@ subfeature_v2:
 ---
 # Get started with loyalty challenges {#get-started-loyalty-challenges}
 
-## Overview {#overview}
-
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_inventory"
 >title="Loyalty challenges"
@@ -24,7 +22,9 @@ subfeature_v2:
 
 >[!AVAILABILITY]
 >
->* Journey Optimizer Loyalty is not currently available to Healthcare Shield and Privacy and Security Shield customers. Availability for Healthcare Shield and Privacy and Security Shield customers will be updated upon future feature readiness.
+>Journey Optimizer Loyalty is not currently available to Healthcare Shield and Privacy and Security Shield customers. Availability for Healthcare Shield and Privacy and Security Shield customers will be updated upon future feature readiness.
+
+## Overview {#overview}
 
 Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends.
 
@@ -51,6 +51,11 @@ You can create these types of challenge experiences:
   *Example: "New Member Journey" - Sign up for emails → Make your first purchase → Write a product review → Refer a friend (complete in this exact order)*
 
 * **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Settings, Content, and Messaging as you would for any other challenge type.
+
+>[!TIP]
+>You can also create and manage loyalty challenges using **Loyalty Challenge Management** in [CX Coworker Journey Skills](../start/ajo-coworker-skills.md#loyalty-challenge-management) with natural language prompts for faster challenge creation.
+
+➡️ [Watch an overview of the feature](#video)
 
 ## How it works {#how-it-works}
 
@@ -164,3 +169,10 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
 ## API reference {#api-reference}
 
 To manage loyalty challenges programmatically, use the [Loyalty Challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}. The API lets you create, update, and manage challenges and tasks via REST endpoints.
+
+## How-to video {#video}
+
+**New to Loyalty Challenges?** Watch this overview to understand the capabilities and benefits:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496441?quality=12)
+
