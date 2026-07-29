@@ -243,6 +243,8 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
   Availability date: July 29, 2026
 
+  [Learn more](..administration/ootb-permissions.md)
+
 ### Decisioning {#decisioning}
 
 * **Decisioning rules creation from natural language expression** - You can now describe the Decisioning rule you want to create in plain language and let AI generate it for you. This capability is available to customers with access to Adobe AI capabilities.
