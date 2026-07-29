@@ -180,7 +180,7 @@ The following capability has been added to the email channel in this release.
 
 +++ Coming soon
 
-* **Folders for Campaigns** - You can now organize your campaigns into folders to improve navigation and management in the interface. This capability is available for Action and API-triggered campaigns only. <!-- Documentation link: TBD -->
+* **Folders for Campaigns** - You can now organize your campaigns into folders to improve navigation and management in the interface. This capability is available for Action and API-triggered campaigns only.
 
 +++
 
@@ -304,13 +304,3 @@ The following improvement is coming to reporting in this release.
 The following improvements have been added to administration and data management in this release.
 
 * **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on **existing customer sandboxes and organizations** starting **October 1, 2026**. [Learn more](../data/datasets-ttl.md#ttl-guardrail)
-
-### Usability improvements {#july-26-usability}
-
-The following usability improvements are coming in this release.
-
-+++ Coming soon
-
-* **Quick launch shortcuts for SMS, Push, In-App, and Codebase channels in Content Templates** - The **More actions** button in the Content Templates list now provides additional channel-specific shortcuts. For SMS templates, quickly edit the message or check the character count/segments. For Push templates, edit the title, body, or media. For In-App templates, edit the message header, message body, or media URL. For Codebase channel templates, edit the code directly. These shortcuts extend the Email channel quick launch shortcuts already available.
-
-+++
