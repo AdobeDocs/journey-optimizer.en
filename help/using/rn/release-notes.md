@@ -239,11 +239,9 @@ The following capabilities and improvements are coming to orchestrated campaigns
 </tbody>
 </table>
 
-+++ Coming soon
-
 * **View Orchestrated Campaign Transitions permission** - Added a new **View Orchestrated Campaign Transitions** permission to replace the legacy **View File in Orchestrated Campaigns** option. This change allows you to hide preview results within campaign transitions to support personally identifiable information compliance.
 
-+++
+  Availability date: July 29, 2026
 
 ### Decisioning {#decisioning}
 
