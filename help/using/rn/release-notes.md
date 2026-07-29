@@ -131,7 +131,7 @@ The following capabilities and improvements have been added to journeys in this 
 </tbody>
 </table>
 
-* [!BADGE Deprecation]{type=Negative} Batch audiences no longer supported in Audience Qualification node - As of August 3, 2026, Journey Optimizer blocks publication for any journey using a batch audience in an Audience Qualification node. This enforcement replaces the canvas warning introduced in June release. Existing live journeys are not affected. Use a streaming audience in the Audience Qualification node, or switch to a Read Audience activity. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
+* * [!BADGE Deprecation]{type=Negative} **Batch audiences no longer supported in Audience Qualification node and Exit Criteria** - Starting September 2026, Journey Optimizer will block publication for any journey using a batch audience in an Audience Qualification node or in Exit Criteria. A validation warning is already surfaced in the journey canvas.  Existing live journeys are not affected. New, draft, and duplicated journeys that include this configuration must be updated before September 2026. Use a streaming audience in the Audience Qualification node, or switch to a Read Audience activity. For Exit Criteria, use a streaming audience. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
 
 ### Email Designer {#july-26-email}
 
