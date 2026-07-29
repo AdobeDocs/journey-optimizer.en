@@ -7,10 +7,13 @@ feature: Get Started
 topic: Content Management
 role: User
 level: Intermediate
+hide: true
 ---
 # Migrate content and journeys {#migrate-content-and-journeys}
 
 If you are moving to [!DNL Journey Optimizer] from another marketing platform, you do not have to start from a blank slate. Journey Optimizer includes a dedicated workspace that imports your existing email content and journeys. It converts them into [!DNL Journey Optimizer] content templates and journeys, so you can pick up where you left off instead of rebuilding everything from scratch.
+
+To migrate your content and journeys to Journey Optimizer, you need the following permissions: Manage Campaigns, Manage Journeys, Manage Message, Manage Segments, Manage Library items, View and Manage sandboxes and Manage AJO integration configuration. [Learn more on roles and permissions](../administration/permissions.md)
 
 You can access this workspace directly from the [!DNL Journey Optimizer] homepage.
 
