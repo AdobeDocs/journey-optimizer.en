@@ -358,7 +358,7 @@ The following improvements have been added to administration and data management
 </tbody>
 </table>
 
-* **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe support. <!--[Learn more](../email/url-personalization.md#personalize-complete-base-url)-->
+* **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe support. [Learn more](../email/url-personalization.md#personalize-complete-base-url)
 
 +++
 
