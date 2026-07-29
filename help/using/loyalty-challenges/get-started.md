@@ -87,9 +87,9 @@ Contact your administrator if you cannot access the feature or need additional p
 
 +++Configure the loyalty program (administrators)
 
-Administrators configure reward providers, event definitions, product inventory, exclusions, and global settings in the **[!UICONTROL Loyalty admin]** menu. Marketers who only create challenges do not need access to this menu. [Learn how to configure loyalty challenges](loyalty-admin.md)
+Administrators configure reward providers, event definitions, product inventory, exclusions, and global settings in the **[!UICONTROL Loyalty configurations]** menu. Marketers who only create challenges do not need access to this menu. [Learn how to configure loyalty challenges](loyalty-admin.md)
 
-Contact your administrator if the **[!UICONTROL Loyalty admin]** menu is not visible in the left navigation.
+Contact your administrator if the **[!UICONTROL Loyalty configurations]** menu is not visible in the left navigation.
 
 +++
 

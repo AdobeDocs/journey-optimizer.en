@@ -17,7 +17,7 @@ subfeature_v2: []
 
 Loyalty Challenges relies on Adobe Experience Platform for identity, profile attributes, experience events, and audiences. Use this page to learn which data to prepare, which datasets are involved, and how **time-to-live (TTL)** affects retention before you author challenges or use the Loyalty Challenges APIs.
 
-Contact your Adobe administrator for Journey Optimizer program setup, or configure reward fulfillment and event mapping in the **[!UICONTROL Loyalty admin]** menu. [Learn how to configure loyalty challenges](loyalty-admin.md). For REST endpoints and authentication, see the [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}.
+Contact your Adobe administrator for Journey Optimizer program setup, or configure reward fulfillment and event mapping in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure loyalty challenges](loyalty-admin.md). For REST endpoints and authentication, see the [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}.
 
 ## Loyalty connectors via Sources {#loyalty-connectors-sources}
 
@@ -35,7 +35,7 @@ For connector onboarding and end-to-end setup, see [Get started with sources con
 
 ### Profile attributes {#profile-attributes}
 
-Challenge audiences, personalization, and reporting use profiles in the **[!DNL XDM Individual Profile]** class. Align the identity [namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"} you use for Loyalty Challenges with how members are identified in your profile data and with the namespace selected in **[!UICONTROL Global settings]** in the **[!UICONTROL Loyalty admin]** menu.
+Challenge audiences, personalization, and reporting use profiles in the **[!DNL XDM Individual Profile]** class. Align the identity [namespace](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces){target="_blank"} you use for Loyalty Challenges with how members are identified in your profile data and with the namespace selected in **[!UICONTROL Global settings]** in the **[!UICONTROL Loyalty configurations]** menu.
 
 For standard loyalty attributes on the profile (points, tier, program, status, and related fields), use the Experience Platform **[Loyalty Details](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/loyalty-details){target="_blank"}** schema field group. That field group defines the `loyalty` object and its properties (for example `points`, `tier`, `program`, and `status`).
 
@@ -45,7 +45,7 @@ For standard loyalty attributes on the profile (points, tier, program, status, a
 
 ### Experience events {#experience-events}
 
-**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event definitions (identifier path, optional XDM schema ID, schema, and transformer) must be configured in the **[!UICONTROL Loyalty admin]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event definitions (identifier path, optional XDM schema ID, schema, and transformer) must be configured in the **[!UICONTROL Loyalty configurations]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
 
 Ensure event payloads use the same identity namespace as your Loyalty Challenges configuration so progress can be attributed to the correct profile.
 

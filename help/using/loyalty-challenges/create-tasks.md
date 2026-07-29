@@ -50,7 +50,7 @@ Select the type of activity that customers must perform to complete this task:
 
 * **[!UICONTROL Purchase]**: Customers must purchase one or more items to complete this task
 * **[!UICONTROL Spend]**: Customers must spend a specified amount to complete this task
-* **[!UICONTROL Custom event]**: Customers must perform an activity represented by an Adobe Experience Platform experience event. For example, a hotel check-in, mobile app action, or review submission. The underlying event must already be captured in Experience Platform and mapped through an event definition in the **[!UICONTROL Loyalty admin]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+* **[!UICONTROL Custom event]**: Customers must perform an activity represented by an Adobe Experience Platform experience event. For example, a hotel check-in, mobile app action, or review submission. The underlying event must already be captured in Experience Platform and mapped through an event definition in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
 
 To select an activity, click the **+** icon and select the customer activity that best aligns with your outcome goals. Each activity type has specific configurable attributes to further define and shape the task requirements.
 ![](assets/task-create-activity.png)
@@ -86,7 +86,7 @@ Available attributes for **Spend** activities:
 
 Available attributes for **[!UICONTROL Custom event]** activities:
 
-* **[!UICONTROL Custom event values]**: Enter the values for the custom event that customers must complete. Use a comma to separate each value. These values must match event definitions configured in the **[!UICONTROL Loyalty admin]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+* **[!UICONTROL Custom event values]**: Enter the values for the custom event that customers must complete. Use a comma to separate each value. These values must match event definitions configured in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
 
 ![](assets/task-create-custom.png)
 
@@ -103,7 +103,7 @@ Available attributes for **[!UICONTROL Custom event]** activities:
 
 For **Purchase** and **Spend** activities, you can use the **[!UICONTROL Eligible items & exclusions]** section to define which items and groups are eligible and which are excluded. This allows you to target specific products, categories, or locations to align with your challenge goals.
 
-The items and groups available in the picker are defined by administrator users in the **[!UICONTROL Loyalty admin]** menu. Administrators upload the product inventory used for eligible items, and configure organization-wide exclusions that are automatically applied when marketers build tasks. [Learn how to configure product inventory](loyalty-admin.md#product-inventory) and [exclusions](loyalty-admin.md#exclusions)
+The items and groups available in the picker are defined by administrator users in the **[!UICONTROL Loyalty configurations]** menu. Administrators upload the product inventory used for eligible items, and configure organization-wide exclusions that are automatically applied when marketers build tasks. [Learn how to configure product inventory](loyalty-admin.md#product-inventory) and [exclusions](loyalty-admin.md#exclusions)
 
 **[!UICONTROL Custom event]** tasks do not use eligible items and exclusions; completion is driven by the **[!UICONTROL Custom event values]** you configure.
 
