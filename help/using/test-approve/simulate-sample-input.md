@@ -43,6 +43,10 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
+>[!AVAILABILITY]
+>
+>A redesigned simulation experience is now available, featuring all variants in a scrollable side-by-side grid, a consolidated bottom action bar, and more screen real estate for previews. [Explore the new experience](simulate-content-variations.md)
+
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_sample_profiles"
 >title="Simulate using sample input"
