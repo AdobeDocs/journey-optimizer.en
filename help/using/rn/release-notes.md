@@ -243,7 +243,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
   Availability date: July 29, 2026
 
-  [Learn more](..administration/ootb-permissions.md)
+  [Learn more](../administration/ootb-permissions.md)
 
 ### Decisioning {#decisioning}
 
