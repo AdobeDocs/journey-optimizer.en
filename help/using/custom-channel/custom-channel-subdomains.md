@@ -47,13 +47,13 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
 1. Browse to the **[!UICONTROL Administration]** > **[!UICONTROL Channels]** menu, and select **[!UICONTROL Channel Builder]** > **[!UICONTROL Subdomains]**.
 
-    ![](assets/custom_channel_subdomains.png){width="100%"}
+    ![Custom channel subdomains inventory](assets/custom_channel_subdomains.png){width="100%"}
 
 1. Click **[!UICONTROL Create custom channel subdomain]**.
 
 1. Select **[!UICONTROL Use delegated subdomain]** from the **[!UICONTROL Configuration type]** section.
 
-    ![](assets/custom_channel_create_subdomain.png){width="100%"}
+    ![Use delegated subdomain configuration form](assets/custom_channel_create_subdomain.png){width="100%"}
 
 1. Enter the prefix that will display in your custom channel URL. Only alpha-numeric characters and hyphens are allowed.
 
@@ -94,7 +94,7 @@ To configure a new subdomain, follow the steps below.
 
 1. Select **[!UICONTROL Add your own domain]** from the **[!UICONTROL Configuration type]** section.
 
-    ![](assets/custom_channel_new_subdomain.png){width="70%"}
+    ![Add your own domain configuration form](assets/custom_channel_new_subdomain.png){width="70%"}
 
 1. Specify the subdomain to delegate.
 
@@ -112,7 +112,7 @@ To configure a new subdomain, follow the steps below.
 
 1. Make sure that DNS record has been generated into your domain-hosting solution. If everything is configured properly, check the box "I confirm...", then click **[!UICONTROL Submit]**.
 
-    ![](assets/custom_channel_new_subdomain_confirm.png)
+    ![DNS record confirmation checkbox before subdomain submission](assets/custom_channel_new_subdomain_confirm.png)
 
     When you configure a new custom channel subdomain, it always points to a CNAME record.
 

@@ -10,6 +10,12 @@ badge: label="Limited Availability" type="Informative"
 
 # Set up a custom channel {#create-custom-channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a custom channel in Adobe Journey Optimizer using the Channel Builder, by defining the endpoint URL, headers, authentication, throttling policy, and message payload structure.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_custom_channel_settings"
 >title="About custom channels"
@@ -82,9 +88,9 @@ To create a new custom channel, follow the steps below.
 
 You must configure the endpoint, which is the HTTP URL of your external messaging system. [!DNL Journey Optimizer] sends a POST request to this endpoint with the personalized payload when a profile qualifies in a campaign or journey.
 
-![Endpoint configuration](assets/custom_channel_endpoint_configuration.png){width="70%"}
+![Endpoint configuration](assets/custom_channel_endpoint_configuration.png){width="80%"}
 
-1. In the **[!UICONTROL Endpoint configuration]** section, enter the host **[!UICONTROL URL]** of your external messaging system.
+1. In the **[!UICONTROL Endpoint configuration]** section, enter the host **[!UICONTROL URL]** of your external messaging system. For example: `https://api.my-messaging-provider.com/v1/messages`.
 
    <!--The HTTP method to is currently set to **POST**.-->
 
@@ -99,7 +105,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
    <!--At minimum, `Content-Type` and `Charset` are available as default headers.-->
 
-   ![Headers configuration](assets/custom_channel_endpoint_headers.png)
+   ![Headers configuration](assets/custom_channel_endpoint_headers.png){width="70%"}
 
    For each header, you can define whether its value is:
 
@@ -129,7 +135,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
 Select the **[!UICONTROL Authentication type]** that you need to use for this channel. The available options depend on the authentication methods supported by your external messaging system.
 
-![Authentication type](assets/custom_channel_authentication_type.png){width="70%"}
+![Authentication type](assets/custom_channel_authentication_type.png){width="85%"}
 
 Provide the authentication details as required by your endpoint.
 
@@ -159,7 +165,17 @@ In the payload configuration, define the structure of the message payload and wh
 
 1. Click **[!UICONTROL Define payload]**, and choose how to define the payload:
 
-   * **[!UICONTROL Paste sample JSON payload]** – Paste a representative JSON object, and [!DNL Journey Optimizer] automatically infers a schema from it.
+   * **[!UICONTROL Paste sample JSON payload]** – Paste a representative JSON object, and [!DNL Journey Optimizer] automatically infers a schema from it. For example:
+
+     ```json
+     {
+       "channelId": "KakaoTalk08",
+       "title": "Flash Sale: 48 Hours Only",
+       "body": "New arrivals just dropped. Shop now before they're gone!",
+       "image": "https://demo-system-next.s3.amazonaws.com/assets/luma/luma-flash-sale-banner.jpg"
+     }
+     ```
+
    * **[!UICONTROL Import JSON schema]** (Coming soon) – Upload a complete JSON schema file.
 
       >[!AVAILABILITY]
@@ -168,7 +184,7 @@ In the payload configuration, define the structure of the message payload and wh
 
 1. After the schema is generated, [!DNL Journey Optimizer] displays all detected fields in a form view.
 
-    ![](assets/custom_channel_payload_configuration.png)
+    ![Payload configuration](assets/custom_channel_payload_configuration.png){width="80%"}
 
 1. For each field, configure the following settings:
 

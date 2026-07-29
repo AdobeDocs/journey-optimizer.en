@@ -125,9 +125,9 @@ TTLs extensions are not currently supported. Customers can export data through D
 * **Message frequency capping** (i.e., Business rules): No 
 * **Reporting**: No
 
-    >[!NOTE]
-    >
-    >A TTL is already implemented on the [!DNL Customer Journey Analytics] (CJA) connection, which reduces effective max look-back period of impacted dataset data to 13 months.
+  >[!NOTE]
+  >
+  >A TTL is already implemented on the [!DNL Customer Journey Analytics] (CJA) connection, which reduces effective max look-back period of impacted dataset data to 13 months.
 
 * **Experience Platform data source**: Not applicable - Experience event retrieval is not supported via data sources. 
 * **Computed attributes**: Yes - Initial backfill calculation will be limited to last 90 days of data; computed attribute will be updated based on incremental events for subsequent updates. As soon as the subsequent updates reach the look-back period (max 6 months), the TTL essentially no longer affects the computed attribute. Learn more. 
