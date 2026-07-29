@@ -55,6 +55,8 @@ You can create these types of challenge experiences:
 >[!TIP]
 >You can also create and manage loyalty challenges using **Loyalty Challenge Management** in [CX Coworker Journey Skills](../start/ajo-coworker-skills.md#loyalty-challenge-management) with natural language prompts for faster challenge creation.
 
+➡️ [Watch an overview of the feature](#video)
+
 ## How it works {#how-it-works}
 
 Using Loyalty Challenges involves three broad phases — setup, execution, and measurement — typically shared across admin and practitioner roles.
@@ -167,4 +169,10 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
 ## API reference {#api-reference}
 
 To manage loyalty challenges programmatically, use the [Loyalty Challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}. The API lets you create, update, and manage challenges and tasks via REST endpoints.
+
+## How-to video {#video}
+
+**New to Loyalty Challenges?** Watch this overview to understand the capabilities and benefits:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496441?quality=12)
 

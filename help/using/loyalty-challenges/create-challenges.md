@@ -24,15 +24,7 @@ Creating a challenge involves the following steps:
 1. **[Publish the challenge](#launch)** — Make the challenge available for journey generation.
 1. **[Generate and publish the journey](#launch)** — Trigger the auto-generated journey that delivers the challenge to customers.
 
-Creating a challenge involves the following steps:
-
-1. **[Create the challenge](#create-the-challenge)** — Select a challenge type and open the challenge editor.
-1. **[Configure settings](#settings)** — Define the challenge name, audience, schedule, opt-in rules, and repeat limits.
-1. **[Configure structure](#structure)** — Add tasks and rewards (not applicable for Bring your own data challenges).
-1. **[Configure content](#configure-content-cards)** *(optional)* — Define how the challenge appears to members using a content card or code-based experience.
-1. **[Configure messaging](#configure-messaging)** *(optional)* — Set up channel messages for the Launch, In-progress, and End stages.
-1. **[Publish the challenge](#launch)** — Make the challenge available for journey generation.
-1. **[Generate and publish the journey](#launch)** — Trigger the auto-generated journey that delivers the challenge to customers.
+➡️ [Watch how to create challenges](#video)
 
 ## Create the challenge {#create-the-challenge}
 
@@ -357,4 +349,16 @@ You have two options for launching your challenge:
    ![](assets/challenge-create-journey.png)
 
 1. Once your challenge is live, monitor program KPIs, challenge results, and task-level metrics in the [loyalty challenge reports](loyalty-reporting.md). You can also monitor message delivery in the [journey report](../reports/journey-global-report-cja.md).
+
+## How-to videos {#video}
+
+Learn how to create and configure loyalty challenges with these step-by-step video tutorials:
+
+* **Set up a loyalty challenge** - Create and configure a new loyalty challenge
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496471?quality=12)
+
+* **Configure rewards** - Set up reward delivery and fulfillment
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496481?quality=12)
 
