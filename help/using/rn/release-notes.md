@@ -197,6 +197,8 @@ The following capabilities and improvements have been added to the email channel
 
 * **Expression fragments support in `<head>`** - Expression fragments can now be used in the `<head>` of email templates. This allows you to centralize styling or any custom code in a single fragment and reuse it across multiple templates. When a fragment is updated and republished, all emails built from templates referencing it automatically inherit the latest code — eliminating the need to manually update each email individually. [Learn more](../personalization/use-expression-fragments.md)
 
+  Availability date: July 29, 2026
+
 ### Journeys {#july-26-journeys}
 
 The following capabilities and improvements have been added to journeys in this release.
@@ -362,6 +364,8 @@ The following improvements have been added to administration and data management
 </tr>
 </tbody>
 </table>
+
+* **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe support. [Learn more](../email/url-personalization.md#personalize-complete-base-url)
 
 +++
 
