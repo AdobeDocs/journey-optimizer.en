@@ -308,6 +308,7 @@ nudge: yes
       + Author your content {#add-content}
         + {hide-from-toc} [Design your content](/help/rp_landing_pages/add-content-landing-page.md)
         + [Use content components](using/email/content-components.md)
+        + [Use modules](using/email/email-modules.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
         + [Personalize URLs](using/email/url-personalization.md)

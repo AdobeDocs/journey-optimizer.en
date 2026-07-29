@@ -68,7 +68,11 @@ To add expression fragments to your content, follow the steps below.
     >
     >If some fragments were modified or added while you are editing your content, the list will be updated with the latest changes.
 
-1. Click the + icon next to an expression fragment to insert the corresponding fragment ID into the editor.
+1. Place the cursor at the desired location in the content, then click the + icon next to an expression fragment to insert the corresponding fragment ID into the editor.
+
+    >[!NOTE]
+    >
+    >You can also add expression fragments to the `<head>` section of an email or content template.
 
     ![](assets/expression-fragment-add.png)
 
