@@ -150,7 +150,7 @@ For a full overview of how these roles work together, see [Roles and responsibil
 
 ## Related resources {#related-resources}
 
-* [Migrate content and journeys](migrate-content-and-journeys.md) — Import email content and journeys from another marketing platform.
+<!--* [Migrate content and journeys](migrate-content-and-journeys.md) — Import email content and journeys from another marketing platform.-->
 * [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) — Goal-first decision guide to every capability.
 * [Journey use cases library](../building-journeys/jo-use-cases.md) — Practical examples and implementation patterns.
 * [Key terminology](terminology.md) — Clarify the concepts behind each capability.
