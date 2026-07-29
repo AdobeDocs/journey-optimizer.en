@@ -157,7 +157,6 @@ nudge: yes
     + [Event Transformer guide](using/loyalty-challenges/event-transformer-guide.md)
     + [Loyalty Challenges permissions](using/loyalty-challenges/loyalty-permissions.md)
     + [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
-    + [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
