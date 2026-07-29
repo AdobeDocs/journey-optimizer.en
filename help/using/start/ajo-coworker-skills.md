@@ -106,10 +106,10 @@ Journey Create offers capabilities that can be leveraged to accelerate marketing
    * Create decision branches based on customer attributes.
    * Design split paths that adapt to customer preferences.
 
-1. **Create journey from image**
+<!-1. **Create journey from image**
 
     * Upload a reference image into coworker and ask to create a journey using the image as reference
-    * Journey creation skill will extract an editable prompt from your reference image
+    * Journey creation skill will extract an editable prompt from your reference image-->
 
 With this skill, natural language requirements are translated into structured journey configurations.
 
