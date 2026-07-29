@@ -132,6 +132,19 @@ You can only define the size and timing of waves. Recipient selection is the sam
 
 +++
 
++++ Is the audience re-evaluated before each wave, or is it fixed at campaign start?
+
+The audience is **evaluated once** when the campaign is activated. A snapshot of qualifying profiles is taken at that point and used for all waves — audience membership is not re-evaluated before each subsequent wave.
+
+However, **profile attributes are read at the time each wave processes**, not at campaign activation. This means that for waves spread across multiple days:
+
+* Personalization attributes (for example, a profile's first name or loyalty tier) reflect the profile's state at the time that wave runs.
+* **Consent and suppression checks are applied at send time for each wave.** If a profile opts out between two waves, they will not receive messages from the subsequent waves.
+
+In summary: *who* is included in the campaign is fixed upfront, but *the data used to send to those profiles* reflects their current state when their wave is processed.
+
++++
+
 ## Next steps {#next}
 
 * [Schedule the Action campaign](campaign-schedule.md)—set start date, end date, frequency, and rate control.

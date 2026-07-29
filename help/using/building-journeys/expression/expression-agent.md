@@ -7,6 +7,7 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
+hide: true
 badge: label="Public beta" type="Informative"
 mini-toc-levels: 2
 feature_v2: []
@@ -14,11 +15,6 @@ subfeature_v2: []
 ---
 
 # Generate expressions with the Expression Assistant {#expression-agent}
-
->[!CONTEXTUALHELP]
->id="journeyExpAI"
->title="Generate expressions with the Expression Assistant"
->abstract="The Expression Assistant uses generative AI to help you build and generate expressions directly in the Journey advanced expression editor. For example in conditions, **Optimize** activities, or **Wait** activities that use a custom date. When you describe what you need in plain language, the assistant generates the corresponding expression for you."
 
 >[!AVAILABILITY]
 >
@@ -132,6 +128,6 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens if the assistant cannot generate a valid expression?** — An error message appears; you should revise your prompt to use field names and data sources that exist in your journey configuration.
 * **Q: How do I insert a generated expression into the editor?** — Click the **Apply** button in the assistant panel to insert it directly at the current cursor position in the advanced expression editor.
 * **Q: Can the Expression Assistant generate `dateTimeOnly` expressions for Wait activities?** — Yes; for example prompting "30 days from now at 10 PM as date time only" generates the appropriate `dateTimeOnly` expression.
-* **Q: Is the Expression Assistant generally available?** — No; it is currently in public beta. Check the Journey Optimizer release cycle page for availability updates.
+* **Q: Is the Expression Assistant generally available?** — No, it is currently in public beta. Check the Journey Optimizer release cycle page for availability updates.
 
 +++

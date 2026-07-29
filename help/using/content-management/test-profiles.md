@@ -25,6 +25,8 @@ subfeature_v2:
 
 Test profiles are additional recipients who do not match the defined targeting criteria. [Learn how to create test profiles](../audience/creating-test-profiles.md)
 
+Before selecting test profiles, ensure the identity namespace you plan to use matches the namespace under which your test profiles are stored in Adobe Experience Platform (for example, **Email** or **Phone**). A mismatch prevents test profiles from being correctly resolved in the search field.
+
 Before using test profiles to test your content, you first need to select them. To do this, follow these steps:
 
 1. From the edit content screen of your message or in the Email Designer, click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown.

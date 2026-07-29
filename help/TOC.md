@@ -5,6 +5,7 @@ user-guide-title: Journey Optimizer Guide
 user-guide-description: Use Journey Optimizer to build and deliver connected, contextual, and personalized experiences to your customers
 type: Documentation
 solution: Journey Optimizer
+nudge: yes
 ---
 
 # Adobe Journey Optimizer Help {#using}
@@ -12,7 +13,7 @@ solution: Journey Optimizer
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new}
   + [Release cycle](using/rn/releases.md)
-  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)  
+  + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -29,10 +30,12 @@ solution: Journey Optimizer
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
+  + {hide-from-toc}[Migrate content and journeys](using/start/migrate-content-and-journeys.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
     + [AI & intelligent features](using/start/ai-features.md)
+    + [Journey Optimizer skills in CX Coworker](using/start/ajo-coworker-skills.md)
     + [Key terminology](using/start/terminology.md)
     + [Start from your goal](using/start/ajo-use-case-guide.md)
     + [Guardrails & limitations](using/start/guardrails.md)
@@ -80,6 +83,7 @@ solution: Journey Optimizer
     + [Work with journey step events](using/reports/journey-step-events-overview.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
     + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
+    + [Channel optimization](using/building-journeys/channel-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
@@ -107,7 +111,7 @@ solution: Journey Optimizer
   + Build expressions {#building-advanced-conditions-journeys}
     + [Build expressions](/help/rp_landing_pages/building-advanced-conditions-journeys-landing-page.md)
     + [Work with the advanced expression editor](using/building-journeys/expression/expressionadvanced.md)
-    + [Generate expressions with the Expression Assistant](using/building-journeys/expression/expression-agent.md)
+    + [Generate expressions with AI](using/building-journeys/expression/generate-expression.md)
     + Syntax {#syntax}
       + [Syntax](/help/rp_landing_pages/syntax-landing-page.md)
       + [Advanced expression editor syntax](using/building-journeys/expression/generalities.md)
@@ -140,15 +144,20 @@ solution: Journey Optimizer
     + {hide-from-toc} [Ramp up deliveries](using/building-journeys/ramp-up-deliveries-uc.md)
     + [Limit throughput with external data sources & custom actions](using/building-journeys/limit-throughput.md)
     + [Use custom actions to write journey events in Experience Platform](using/building-journeys/custom-action-aep.md)
-+ Loyalty challenges {#loyalty-challenges} 
-  + {hide-from-toc} [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
-  + {hide-from-toc} [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
-  + {hide-from-toc} [Create challenges](using/loyalty-challenges/create-challenges.md)
-  + {hide-from-toc} [Create tasks](using/loyalty-challenges/create-tasks.md)
-  + {hide-from-toc} [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
-  + {hide-from-toc} [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
-  + {hide-from-toc} [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
-  + {hide-from-toc} [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
++ Loyalty challenges {#loyalty-challenges}
+  + [Get started with Loyalty Challenges](using/loyalty-challenges/get-started.md)
+  + Create and manage challenges {#create-manage-challenges}
+    + [Access & manage challenges and tasks](using/loyalty-challenges/access-loyalty-challenges.md)
+    + [Create challenges](using/loyalty-challenges/create-challenges.md)
+    + [Create tasks](using/loyalty-challenges/create-tasks.md)
+    + [Monitor loyalty challenge performance](using/loyalty-challenges/loyalty-reporting.md)
+  + Configure and integrate {#configure-integrate-loyalty}
+    + [Configure loyalty challenges](using/loyalty-challenges/loyalty-admin.md)
+    + [Reward Definition guide](using/loyalty-challenges/reward-definition-guide.md)
+    + [Event Transformer guide](using/loyalty-challenges/event-transformer-guide.md)
+    + [Loyalty Challenges permissions](using/loyalty-challenges/loyalty-permissions.md)
+    + [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
+    + [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
@@ -299,6 +308,7 @@ solution: Journey Optimizer
       + Author your content {#add-content}
         + {hide-from-toc} [Design your content](/help/rp_landing_pages/add-content-landing-page.md)
         + [Use content components](using/email/content-components.md)
+        + [Use modules](using/email/email-modules.md)
         + [Leverage visual fragments](using/email/use-visual-fragments.md)
         + [Add links & track messages](using/email/message-tracking.md)
         + [Personalize URLs](using/email/url-personalization.md)
@@ -421,6 +431,7 @@ solution: Journey Optimizer
   + Inbox {#inbox}
     + [Get started with Inbox](using/inbox/inbox-gs.md)
     + [Configure Inbox channel in Journey Optimizer](using/inbox/inbox-configuration.md)
+    + [Configure Inbox support in Web SDK](using/inbox/inbox-configuration-sdk.md)
     + [Create your Inbox](using/inbox/inbox-create.md)
     + [Design your Inbox](using/inbox/inbox-design.md)
   + WhatsApp {#whatsapp}
@@ -443,6 +454,18 @@ solution: Journey Optimizer
     + Configure Live activity channel {#configure}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
       + [Configure Live activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
+  + Custom channels {#custom-channel}
+    + {hide-from-toc} [Get started with custom channels](using/custom-channel/get-started-custom-channel.md)
+    + Configure custom channels {#configure-custom-channel}
+      + {hide-from-toc} [Set up your custom channels](using/custom-channel/configure-custom-channel.md)
+      + {hide-from-toc} [Create a custom channel](using/custom-channel/create-custom-channel.md)
+      + {hide-from-toc} [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
+      + {hide-from-toc} [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
+      + {hide-from-toc} [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
+    + Create custom channel experiences {#create-custom-channel-experiences}
+      + {hide-from-toc} [Create a custom channel experience](using/custom-channel/create-custom-experience.md)
+      + {hide-from-toc} [Test your custom channel experience](using/custom-channel/test-custom-channel.md)
+    + {hide-from-toc} [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
@@ -1011,5 +1034,3 @@ solution: Journey Optimizer
     + [Manage your customers' preferences](using/action/preference-center.md)
   + [Data Governance](using/action/action-privacy.md)
   + [Set up & manage Customer Managed Keys](using/privacy/cmk.md)
-
-

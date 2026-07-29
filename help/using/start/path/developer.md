@@ -129,7 +129,7 @@ The Web SDK (`alloy.js`) is a single JavaScript library that replaces the patchw
 
 1. **Configure datastreams**: Create and configure a datastream in [!DNL Adobe Experience Platform Data Collection] with Journey Optimizer enabled. Learn more in the [datastreams documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html){target="_blank"}.
 
-1. **Enable web push notifications** (optional): Web push notifications are now generally available. Configure the [pushNotifications property](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/pushnotifications){target="_blank"} in your Web SDK configuration and use the [sendPushSubscription command](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendpushsubscription){target="_blank"} to register push subscriptions. [Learn about web push configuration](../../push/push-configuration-web.md).
+1. **Enable web push notifications** (optional): Web push notifications are now generally available. Configure the [pushNotifications property](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/pushnotifications){target="_blank"} in your Web SDK configuration and use the [sendPushSubscription command](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendpushsubscription){target="_blank"} to register push subscriptions. [Learn about web push configuration](../../push/push-configuration-web.md).
 
 ### Implement code-based experiences (Web SDK)
 
