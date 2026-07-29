@@ -145,6 +145,8 @@ These guardrails apply to **[!UICONTROL Simulation]**. Numeric caps are enforced
 | Maximum journeys that can run in **[!UICONTROL Simulation]** at the same time in one sandbox | 20 | Cap is shared by every **[!UICONTROL Simulation]** journey in that sandbox at once. |
 | Maximum active simulated users in one sandbox | 2,000 | Maximum simulated users that can exist in the sandbox at one time. Adobe may adjust this limit based on customer feedback. |
 | Event Pre-fill (Browser Only) | — | You can pre-fill event payload fields only in the browser-based simulation UI. Pre-filled values stay in that browser and are not synced to other browsers, devices, or sessions, so you may see different pre-fill data in each place you test. |
+| AI-generated simulated user retention | 10 days | AI-generated simulated users are automatically deleted 10 days after creation. |
+| Global simulated user retention | 12 months | Global simulated users are automatically deleted 12 months after creation. |
 
 +++
 
