@@ -176,6 +176,14 @@ The following capability has been added to the email channel in this release.
 </tbody>
 </table>
 
+### Campaigns {#campaigns}
+
++++ Coming soon
+
+* **Folders for Campaigns** - You can now organize your campaigns into folders to improve navigation and management in the interface. This capability is available for Action and API-triggered campaigns only. <!-- Documentation link: TBD -->
+
++++
+
 ### Orchestrated campaigns {#july-26-oc}
 
 The following capabilities and improvements are coming to orchestrated campaigns in this release.

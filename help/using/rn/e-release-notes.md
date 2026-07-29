@@ -129,6 +129,7 @@ The following capabilities and improvements have been added to campaigns in this
 </tbody>
 </table>
 
+<!--
 <table>
 <thead>
 <tr>
@@ -147,7 +148,7 @@ The following capabilities and improvements have been added to campaigns in this
 </tbody>
 </table>
 
-* **Folders for Campaigns** - You can now organize your campaigns into folders to improve navigation and management in the interface. This capability is available for Action and API-triggered campaigns only. <!-- Documentation link: TBD -->
+-->
 
 ### Orchestrated campaigns {#july-26-oc}
 
