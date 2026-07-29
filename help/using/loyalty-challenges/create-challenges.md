@@ -354,11 +354,11 @@ You have two options for launching your challenge:
 
 Learn how to create and configure loyalty challenges with these step-by-step video tutorials:
 
-* **Set up a loyalty challenge** - Create and configure a new loyalty challenge
+**Set up a loyalty challenge** - Create and configure a new loyalty challenge
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496471?quality=12)
 
-* **Configure rewards** - Set up reward delivery and fulfillment
+**Configure rewards** - Set up reward delivery and fulfillment
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496481?quality=12)
 
