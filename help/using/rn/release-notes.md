@@ -80,9 +80,9 @@ Journey Optimizer introduces Loyalty Challenges, a new capability in this releas
 </tbody>
 </table>
 
-### Outbound channels {#july-26-outbound-channels}
+### Channels {#july-26-channels}
 
-The following capability has been introduced in this release.
+The following capabilities and improvements have been introduced in this release.
 
 <table>
 <thead>
@@ -151,7 +151,7 @@ The following capabilities and improvements have been added to journeys in this 
 
 +++
 
-### Email Designer {#july-26-email}
+### Email Design {#july-26-email}
 
 The following capabilities and improvements have been added to the email channel in this release.
 
@@ -167,6 +167,7 @@ The following capabilities and improvements have been added to the email channel
 <p>The Email Designer now includes a library of ready-to-use layout modules — such as headers, product cards, information blocks, and footers — that you can drag and drop directly into your email canvas.</p>
 <p>Each module comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
 <p><img src="assets/do-not-localize/email-modules.gif"></p>
+<p>For more information, refer to the <a href="../email/email-modules.md">detailed documentation</a>.</p>
 <p>Availability date: July 29, 2026</p>
 </td>
 </tr>
@@ -194,7 +195,31 @@ The following capabilities and improvements have been added to the email channel
 </tbody>
 </table>
 
-* **Expression fragments support in `<head>` of email templates** - Expression fragments can now be used in the `<head>` of email templates. This allows you to centralize styling or any custom code in a single fragment and reuse it across multiple templates. When a fragment is updated and republished, all emails built from templates referencing it automatically inherit the latest code — eliminating the need to manually update each email individually. [Learn more](../personalization/use-expression-fragments.md)
+* **Expression fragments support in `<head>`** - Expression fragments can now be used in the `<head>` of email templates. This allows you to centralize styling or any custom code in a single fragment and reuse it across multiple templates. When a fragment is updated and republished, all emails built from templates referencing it automatically inherit the latest code — eliminating the need to manually update each email individually. [Learn more](../personalization/use-expression-fragments.md)
+
+### Journeys {#july-26-journeys}
+
+The following capabilities and improvements have been added to journeys in this release.
+<table>
+<thead>
+<tr>
+<th><strong>New user interface</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>A <b>new user interface</b> has been introduced for the journey canvas, delivering improved performance for large journeys, automatic layout for better readability, and a guided authoring experience.</p>
+<p><img src="../building-journeys/assets/journey-new-canvas.png"></p>
+<p>To switch to the new UI, click the <b>New experience</b> button. This setting is saved at the journey level, so the journey reopens in the new experience by default. To revert, click <b>Old experience</b>. <a href="../building-journeys/using-the-journey-designer.md#canvas-capabilities">Learn more</a>.</p>
+<p><img src="../building-journeys/assets/journey-new-experience-switch.png"></p>
+<p> Availability date: July 16, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* [!BADGE Deprecation]{type=Negative} **Batch audiences no longer supported in Audience Qualification node and Exit Criteria** - Starting September 2026, Journey Optimizer will block publication for any journey using a batch audience in an Audience Qualification node or in Exit Criteria. A validation warning is already surfaced in the journey canvas.  Existing live journeys are not affected. New, draft, and duplicated journeys that include this configuration must be updated before September 2026. Use a streaming audience in the Audience Qualification node, or switch to a Read Audience activity. For Exit Criteria, use a streaming audience. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
 
 ### Campaigns {#campaigns}
 
@@ -241,7 +266,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 
   [Learn more](../experience-decisioning/rules.md#build-rule-with-ai)
 
-* **Decision items' dynamic custom attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items. [Read more](../experience-decisioning/items.md#attributes)
+* **Decision items' dynamic custom attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items. [Learn more](../experience-decisioning/items.md#attributes)
 
   Availability date: July 27, 2026
 
