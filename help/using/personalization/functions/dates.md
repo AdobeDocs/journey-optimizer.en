@@ -280,6 +280,29 @@ Output (example): `Your points expire in 7 days — use them before they're gone
 
 +++
 
+## Date between {#date-between}
+
+The `dateBetween` function checks whether a given date falls between a start date and an end date, inclusive on both bounds.
+
+**Syntax**
+
+```sql
+{%= dateBetween(date, startDate, endDate) %}
+```
+
+| Argument | Description |
+| --------- | ----------- |
+| `date` | Date to evaluate. |
+| `startDate` | Start date of the range (inclusive). |
+| `endDate` | End date of the range (inclusive). |
+
+++Example
+
+* Input: `{%= dateBetween(stringToDate("2024-06-15T00:00:00Z"), stringToDate("2024-06-01T00:00:00Z"), stringToDate("2024-06-30T00:00:00Z")) %}`
+* Output: `true`
+
+++
+
 ## Day of month {#day-month}
 
 The `dayOfMonth` returns the number representing the day of the month.

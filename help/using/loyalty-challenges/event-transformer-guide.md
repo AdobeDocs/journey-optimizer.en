@@ -7,8 +7,6 @@ feature: Journeys
 topic: Content Management
 role: Admin
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: d3ad85f0-7f7e-40ab-b8c4-fc0c1234be87
 feature_v2: []
@@ -54,10 +52,6 @@ subfeature_v2: []
 </table>
 
 >[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases in [!DNL Journey Optimizer], see [release cycle](../rn/releases.md).
 
 Before a customer transaction can be applied to a loyalty challenge, it must be in the **Adobe Loyalty Event** format that the Challenge Service understands. Customer events — from a POS system, a mobile app, an e-commerce platform, or any other source — typically use the customer's own data schema. **Event Transformers** bridge this gap without requiring any changes to the upstream system.
 
@@ -683,4 +677,5 @@ Without `utc_offset`, daypart window matching and consecutive-day streak countin
 For DCCS events, the transformer receives only the `xdmEntity` body — not the outer AJO envelope. All paths must be relative to the XDM entity root. If your expression references fields that live in the outer envelope (e.g. `/body/xdmMeta/...`) they will not be found and will silently produce null.
 
 +++
+
 

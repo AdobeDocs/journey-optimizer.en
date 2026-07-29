@@ -7,56 +7,15 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
-mini-toc-levels: 1
 exl-id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
 feature_v2: []
 subfeature_v2: []
 ---
 # Monitor loyalty challenge performance {#loyalty-reporting}
 
->[!BEGINSHADEBOX]
-
-**Table of contents**
-
-[Get started with Loyalty Challenges](get-started.md)
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-<td style="vertical-align:top;">
-
-**Create and manage challenges**
-
-* [Access & manage challenges and tasks](access-loyalty-challenges.md)
-* [Create challenges](create-challenges.md)
-* [Create tasks](create-tasks.md)
-* **Monitor loyalty challenge performance** ◀︎ **You are here**
-
-</td>
-<td style="vertical-align:top;">
-
-**Configure and integrate**
-
-* [Configure loyalty challenges](loyalty-admin.md)
-* [Reward Definition guide](reward-definition-guide.md)
-* [Event Transformer guide](event-transformer-guide.md)
-* [Loyalty data and datasets](loyalty-data-and-datasets.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-</td>
-</tr>
-</table>
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
-
 Use Loyalty Challenges reporting to see how your challenges are performing. Check who is signing up, who is completing challenges, and how much revenue your program is generating — all in one place. Data comes from Adobe Customer Journey Analytics.
 
-To open the reporting dashboards, go to **[!UICONTROL Loyalty Challenges (Beta)]** in Journey Optimizer and select **[!UICONTROL Loyalty reports]** in the left navigation.
+To open the reporting dashboards, go to **[!UICONTROL Loyalty Challenges]** in Journey Optimizer and select **[!UICONTROL Loyalty reports]** in the left navigation.
 
 The reporting interface has two tabs:
 
@@ -124,3 +83,4 @@ Each card carries a **category tag** that identifies which part of your program 
 | **Product** | Product catalog performance, including views, redemptions, and catalog-level trends |
 | **Member lifecycle** | How members progress through enrollment, engagement, and churn stages |
 | **Trend** | Time-based patterns such as weekly cycles, seasonal spikes, or trend reversals |
+
