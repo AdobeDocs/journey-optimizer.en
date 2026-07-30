@@ -21,7 +21,7 @@ Loyalty Challenges configuration connects [!DNL Journey Optimizer] to your exter
 >
 >Loyalty Challenges configuration requires administrator access to your [!DNL Journey Optimizer] instance, in addition to the permissions needed for Loyalty Challenges. Contact your Adobe administrator to gain access.
 
-To open the configuration interface, select the **[!UICONTROL Loyalty admin]** menu from the left navigation. The interface is organized into tabs:
+To open the configuration interface, select the **[!UICONTROL Loyalty configurations]** menu from the left navigation. The interface is organized into tabs:
 
 * **Global settings** — Select the Experience Platform identity namespace for your program. [Learn how to configure global settings](#global-settings)
 * **Reward providers** — Connect the APIs that fulfill rewards when customers make progress or complete challenges. [Learn how to configure reward providers](#reward-providers).

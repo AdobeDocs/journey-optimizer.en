@@ -19,7 +19,7 @@ level: Beginner
 
 ## Overview {#overview}
 
-CX Coworker brings AI-powered capabilities to Adobe Journey Optimizer. [CX Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/home){target="_blank"} is Adobe's conversational AI assistant that integrates with your business applications to help you work more efficiently.
+CX Coworker brings AI-powered capabilities to Adobe Journey Optimizer. [CX Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/home){target="_blank"} is Adobe's conversational experience that integrates with your business applications to help you work more efficiently.
 
 With its AI-powered skills, CX Coworker enables Journey Optimizer users to create, analyze, and optimize marketing journeys using a natural language interface. With Journey Skills, practitioners can quickly build journeys, detect and resolve schedule or audience conflicts, analyze performance and drop-off points, and identify top-performing journeys to replicate for future campaigns. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
 
@@ -51,15 +51,15 @@ Journey Create enables Journey Optimizer users to build and configure marketing 
 
 >[!AVAILABILITY]
 >
->Journey Create is available to customers that are a part of the Agent Orchestrator Explorer program. You will also need the following permissions in order to fully use Journey Create features:
+>You need the following permissions in order to fully use Journey Create features:
 >
->**Manage Journeys**: This permission lets you create new journeys directly in AI Assistant.
+>**Manage Journeys**: This permission lets you create new journeys directly in CX Coworker.
 >
->**View Journey Events, Data Sources and Actions**: This permission ensures that the AI Assistant can search through Journey Events and Custom Actions. 
+>**View Journey Events, Data Sources and Actions**: This permission ensures that CX Coworker can search through Journey Events and Custom Actions. 
 >
->**View Segments**: This permission ensures that AI Assistant can search for audience segments when creating a Journey.
+>**View Segments**: This permission ensures that CX Coworker can search for audience segments when creating a Journey.
 >
->**Manage Segments**: This permission lets you create new audiences directly in AI Assistant.
+>**Manage Segments**: This permission lets you create new audiences directly in CX Coworker.
 
 ### Key use cases
 
@@ -288,19 +288,17 @@ The following functionalities are currently not supported:
 
 Journey Skills will enable Journey Optimizer users to analyze and optimize journeys using a natural language interface. With Journey Skills, practitioners can quickly identify and resolve schedule and/or audience conflicts, detect points of user abandonment in a journey and provide insights or recommendations. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
 
-Learn more and discover the agent at a glance in this [overview](https://experienceleague.adobe.com/en/slides/journey-agent-overview).
-
 >[!AVAILABILITY]
 >
->Journey Skills are available for all customers who have access to AI Assistant. However, you will need the following permissions in order to fully use the Journey Skills features:
+>Journey Skills are available for all customers who have access to CX Coworker. However, you will need the following permissions in order to fully use the Journey Skills features:
 >
->**View Journeys**: This permission lets you view insights into the journey directly in AI Assistant.
+>**View Journeys**: This permission lets you view insights into the journey directly in CX Coworker.
 >
->**Manage Journeys**: To permission lets you create new journeys directly in AI Assistant.
+>**Manage Journeys**: This permission lets you create new journeys directly in CX Coworker.
 >
->**View Segments**: This permission lets you view insights into the audiences directly in AI Assistant.
+>**View Segments**: This permission lets you view insights into the audiences directly in CX Coworker.
 >
->**Manage Segments**: This permission lets you create new audiences directly in AI Assistant.
+>**Manage Segments**: This permission lets you create new audiences directly in CX Coworker.
 
 ### Key use cases
 
@@ -358,8 +356,8 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
 The following capabilities are supported by Journey Analyze:
 
 * **Reactive Queries**: Allows users to ask specific questions about journey performance, audience usage, and scheduling conflicts.
-* **Integration with Other Agents**: Collaborates with Audience Agent and Data Insights Agent for deeper analysis.
-* **Agent response structuration**: reasoning (explain the logic), analysis summary (highlight key points), issue details (describe the problem), and recommendation (propose next steps).
+* **Integration with Other Skills**: Collaborates with Audience and Data Insights capabilities for deeper analysis.
+* **Response structuration**: reasoning (explain the logic), analysis summary (highlight key points), issue details (describe the problem), and recommendation (propose next steps).
 
 ### Out of Scope skills
 
@@ -377,7 +375,7 @@ The following functionalities are currently not supported:
 To maximize the effectiveness of Journey Analyze, follow these best practices:
 
 1. **Be Specific**: Use clear and concise prompts to get targeted insights. For example, instead of asking "What are my journeys?", specify "List all journeys created in the last month."
-1. **Combine Insights**: Integrate insights from Audience Agent and Data Insights Agent for a holistic view of journey performance.
+1. **Combine Insights**: Integrate insights from Audience and Data Insights capabilities for a holistic view of journey performance.
 1. **Iterative Refinement**: Use fallout and overlap analysis to iteratively refine journey design and scheduling.
 
 ### Setup Best Practices

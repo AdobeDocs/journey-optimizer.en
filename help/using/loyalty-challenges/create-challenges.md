@@ -218,7 +218,7 @@ To configure when and how rewards are delivered:
    * **[!UICONTROL Deliver rewards at task completion milestones as challenge progress is made]**: Award rewards incrementally as customers complete individual tasks (only available for challenges requiring more than one task)  
      *Example: Award 10 points after task 1, 20 points after task 2, and 50 points after task 3*
 
-1. Select your reward provider. This is your loyalty solution that manages customer points and rewards. Reward providers are created in the **[!UICONTROL Loyalty admin]** menu before you author challenges. [Learn how to configure reward providers](loyalty-admin.md#reward-providers)
+1. Select your reward provider. This is your loyalty solution that manages customer points and rewards. Reward providers are created in the **[!UICONTROL Loyalty configurations]** menu before you author challenges. [Learn how to configure reward providers](loyalty-admin.md#reward-providers)
 
    ![](assets/challenge-create-reward-type.png)
 

@@ -71,7 +71,7 @@ Follow these core steps to start building experiences:
 1. **Create audiences**. Build audiences through segment definitions, upload CSV files, or use audience composition. Journey Optimizer offers multiple ways to target the right customers. Learn more about [audiences](../../audience/about-audiences.md) and [creating segment definitions](../../audience/creating-a-segment-definition.md).
 
 1. **Design content**. Create compelling messages across all channels including email, SMS, push, web push, in-app, web, direct mail, and content cards:
-   * Use the **AI Assistant** to generate email content, subject lines, and images based on your brand guidelines. [Learn about AI content generation](../../content-management/gs-generative.md)
+   * Use AI to generate email content, subject lines, and images based on your brand guidelines. [Learn about AI content generation](../../content-management/gs-generative.md)
    * **Personalize messages** with customer data, dynamic content, and conditional logic. [Learn about personalization](../../personalization/personalize.md)
    * **Iterate over contextual data** to display dynamic lists from events, custom actions, and dataset lookups. [Learn about iterating contextual data](../../personalization/iterate-contextual-data.md)
    * Create reusable **content templates** and **fragments** to maintain brand consistency. [Work with templates](../../content-management/content-templates.md)
@@ -138,7 +138,7 @@ Follow these core steps to start building experiences:
 
 * **Start with templates**: Use pre-built templates and content fragments to speed up creation and maintain consistency
 * **Test early, test often**: Always preview content across devices and use test profiles to validate personalization
-* **Leverage AI wisely**: Use AI Assistant for initial drafts and variations, but always review and refine for your brand voice
+* **Leverage AI wisely**: Use AI for initial drafts and variations, but always review and refine for your brand voice
 * **Keep it simple**: Clear, concise messages with strong calls-to-action perform better than complex layouts
 
 ### Journey design
@@ -243,7 +243,7 @@ Collaborate with [Administrators](administrator.md) on access and configurations
 ## Next steps
 
 1. **Start small**: Create a simple welcome journey or single-message campaign to learn the platform
-2. **Leverage AI**: Use AI Assistant to ask questions and accelerate content creation
+2. **Leverage AI**: Use AI to ask questions and accelerate content creation
 3. **Join the community**: Connect with other Journey Optimizer users in the [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
 4. **Explore tutorials**: Watch step-by-step videos on [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}
 

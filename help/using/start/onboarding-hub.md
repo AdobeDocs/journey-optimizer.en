@@ -127,7 +127,7 @@ Browse curated video content by topic. Each tab links to the relevant tutorials 
 
 >[!TAB Personalization & AI]
 
-* [AI Assistant for content generation](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/ai-assistant/ai-assistant-for-content-generation-overview){target="_blank"} — Generate copy, images, and variations.
+* [Generate Content](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/ai-assistant/ai-assistant-for-content-generation-overview){target="_blank"} — Generate copy, images, and variations.
 * [Use decisioning to personalize web offers](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"} — Tailor offers per customer.
 
 >[!TAB Reporting & optimization]
@@ -150,7 +150,7 @@ For a full overview of how these roles work together, see [Roles and responsibil
 
 ## Related resources {#related-resources}
 
-<!--* [Migrate content and journeys](migrate-content-and-journeys.md) — Import email content and journeys from another marketing platform.-->
+* [Migrate content and journeys](migrate-content-and-journeys.md) — Import email content and journeys from another marketing platform.
 * [Find the right Journey Optimizer capability for your goal](ajo-use-case-guide.md) — Goal-first decision guide to every capability.
 * [Journey use cases library](../building-journeys/jo-use-cases.md) — Practical examples and implementation patterns.
 * [Key terminology](terminology.md) — Clarify the concepts behind each capability.

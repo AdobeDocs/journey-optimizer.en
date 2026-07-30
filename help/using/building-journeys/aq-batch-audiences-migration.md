@@ -21,7 +21,7 @@ feature_v2:
     internal-label: Journeys
 ---
 
-# Migrate batch audiences from Audience Qualification journeys {#aq-batch-migration}
+# Migrate batch audiences from Audience Qualification journeys and Exit criteria{#aq-batch-migration}
 
 Starting September 2026, Journey Optimizer will block publication for journeys that use a batch audience in an Audience Qualification node or in Exit Criteria. Identify your use case below and follow the recommended migration path. 
 
