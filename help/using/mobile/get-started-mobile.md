@@ -140,7 +140,7 @@ Create, personalize, and manage your Mobile message content:
 * [Preview, test and send messages](send-mobile-message.md)
 * [Personalization in Mobile messages](../personalization/personalize.md)
 * [Dynamic content](../personalization/get-started-dynamic-content.md)
-* [Generate SMS content with AI Assistant](../content-management/generative-text.md)
+* [Generate SMS content with AI](../content-management/generative-text.md)
 
 +++
 

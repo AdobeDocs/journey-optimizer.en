@@ -59,13 +59,13 @@ This playground provides a simulated environment to write and test personalizati
 
 ➡️ [Access the personalization playground](https://experienceleague.adobe.com/en/apps/journey-optimizer/ajo-personalization){target="_blank"}
 
-## AI assistant for personalization expressions {#ai-personalization-expressions}
+## Generate content for personalization expressions {#ai-personalization-expressions}
 
-In the **[!UICONTROL Personalization Editor]** or from the Email Designer toolbar (**[!UICONTROL Add expression]**), **[!UICONTROL AI Assistant]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
+In the **[!UICONTROL Personalization Editor]** or from the Email Designer toolbar (**[!UICONTROL Add expression]**), **[!UICONTROL Generate Content]** helps you generate new expressions from natural language, explain what existing code does, and fix issues in a selection, then apply the output when it matches your intent.
 
 ![](../content-management/assets/ai-perso-generate.png)
 
-➡️ [Learn how to work with AI Assistant for Personalization Expressions](../content-management/generative-personalization-expressions.md)
+➡️ [Learn how to work with Generate content for personalization expressions](../content-management/generative-personalization-expressions.md)
 
 ## Inline editing of profile attributes {#inline-personalization}
 
@@ -155,14 +155,14 @@ For complete understanding, this information should be combined with the documen
 
 **TL;DR**
 
-This page introduces personalization in Journey Optimizer — how the Handlebars-based personalization editor works, what data it uses, the interactive playground, AI Assistant for expressions, and inline attribute editing in the Email Designer and Push editor.
+This page introduces personalization in Journey Optimizer — how the Handlebars-based personalization editor works, what data it uses, the interactive playground, Generate Content for expressions, and inline attribute editing in the Email Designer and Push editor.
 
 **Intents**
 
 * Understand how Journey Optimizer personalization works (Handlebars syntax with double curly braces)
 * Identify the data sources available for personalization (XDM Individual Profile schema, computed attributes, AEP dataset lookup in beta)
 * Experiment with personalization using the interactive playground without a live sandbox
-* Use AI Assistant to generate, explain, or fix personalization expressions from natural language
+* Use AI to generate, explain, or fix personalization expressions from natural language
 * Insert profile attributes inline in the Email Designer or Push editor by typing `{{`
 
 >[!TAB Glossary]
@@ -172,7 +172,7 @@ This page introduces personalization in Journey Optimizer — how the Handlebars
 * **Computed attributes**: Pre-calculated profile attributes summarizing individual behavioral events into profile-level values; available as personalization data alongside standard XDM profile fields. *(product-specific)*
 * **Personalization playground**: An interactive, simulated environment on Experience League for writing and testing personalization code with sample data — no live datasets or sandbox required. *(product-specific)*
 * **Inline editing**: The ability to type `{{` in any text field in the Email Designer or Push channel editor to trigger an autocomplete dropdown and insert profile attributes without opening the full personalization editor. *(product-specific)*
-* **AI Assistant (personalization expressions)**: An AI tool in the personalization editor and Email Designer that generates personalization expressions from natural language, explains existing code, and fixes issues in a selection. *(product-specific)*
+* **Generate Content (personalization expressions)**: An AI tool in the personalization editor and Email Designer that generates personalization expressions from natural language, explains existing code, and fixes issues in a selection. *(product-specific)*
 
 >[!TAB Terminology]
 
@@ -202,7 +202,7 @@ An interactive, simulated environment on Experience League where you can write a
 
 Type `{{` in any text field in the Email Designer or Push channel editor to open an autocomplete dropdown at the cursor position. Start typing to filter profile attributes, then select one to insert it as a personalization token. Only profile attributes are available inline.
 
-**Q: What can AI Assistant do in the personalization editor?**
+**Q: What can Generate Content do in the personalization editor?**
 
 It can generate new personalization expressions from natural language descriptions, explain what existing code does, and fix issues in a selected expression — then apply the output when it matches your intent.
 

@@ -58,6 +58,10 @@ topic_v2:
 
 To be able to [create landing page presets](lp-presets.md), you must set up the subdomains you will use for your landing pages.
 
+>[!NOTE]
+>
+>Once a landing page subdomain is delegated, you can configure a WAF IP allowlist to enforce that all inbound traffic to that subdomain flows exclusively through your Web Application Firewall. [Learn how to configure a WAF IP allowed list](../configuration/waf-ip-allowlist.md)
+
 You can use a subdomain that is already delegated to Adobe, or you can configure another subdomain. Learn more about delegating subdomains to Adobe in [this section](../configuration/delegate-subdomain.md).
 
 Landing page subdomain configuration is **common to all environments**. Therefore:
