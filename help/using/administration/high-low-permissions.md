@@ -201,8 +201,7 @@ For example, the **[!DNL Journey administrator]** role is assigned the **[!DNL M
       * experiments.read
       * experiments.write
       * experiments.delete
-      
--->
+      -->
 
   +++
 
