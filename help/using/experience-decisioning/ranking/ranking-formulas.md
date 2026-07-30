@@ -96,7 +96,9 @@ This is especially useful for attributes that frequently change, such as product
 
 ![](../assets/ranking-formula-dataset.png)
 
-## Define criteria using the formula builder {#ranking-select-criteria}
+## Define criteria
+
+### Define criteria using the formula builder {#ranking-select-criteria}
 
 Define the **criteria** that will determine the ranking score for the matching decision items.
 
@@ -159,7 +161,7 @@ With an intuitive interface, you can fine-tune decisioning by adjusting AI score
 
 You can now access the ranking formula from the list to view its details, and edit or delete it. It is ready to be used in a [selection strategy](../selection-strategies.md) to rank eligible decision items.
 
-## Define criteria using the code editor {#ranking-code-editor}
+### Define criteria using the code editor {#ranking-code-editor}
 
 Use **[!UICONTROL Switch to code editor]** when you want to write or edit ranking logic as a **PQL** expression.
 
@@ -295,6 +297,42 @@ Note that when using the **Decisioning** API, the context data is added to the p
 
 +++
 
+## Simulate your ranking formula {#simulate-ranking-formula}
+
+Before applying a ranking formula to your selection strategy, you can test it with sample or generated data to validate the ranking results and ensure it delivers the expected behavior.
+
+1. Open an existing formula or [create a new one](#create-ranking-formula) then click the **[!UICONTROL Simulate formula]** button.
+
+    ![](../assets/ranking-formula-simulate-button.png)
+
+1. The simulation screen opens with several sections:
+
+    ![](../assets/ranking-formula-simulate-new.png)
+
+    * **Test Variants**: Where you generate or create manual test variants
+    * **Ranking expression**: Displays the formula expression for reference
+    * **Simulation result**: Shows ranked offers when a variant is selected
+
+1. Add test variants using one of the two methods below:
+
+    * To create a manual sample, select the **[!UICONTROL Create sample]** button then select the offer items you want to use for testing. 
+    * To generate test variants using AI, click the **[!UICONTROL Generate]** button.
+
+    >[!NOTE]
+    >
+    >AI-based test variant generation is available to organizations with access to Adobe AI capabilities.
+
+The Test variants section is automatically populated with the selected items or generated samples. Each variant includes  attributes used in your expression. You can edit the field values directly to simulate different scenarios.
+
+To view the ranking result of your simulation, select a test variant from the list. The Simulation result area displays the ranked offers with their scores, showing how your formula ranks the items based on the variant data.
+
+For each selected variant, the simulation returns an ordered result:
+
+* The top-ranked offers are those with the highest computed scores for that variant.
+* Lower-ranked offers remain eligible but are ordered after higher-scoring offers.
+
+![](../assets/ranking-formula-simulate-result.png)
+
 ## AI-powered formula optimization {#optimize}
 
 [!DNL Journey Optimizer] can automatically analyze ranking formulas and suggest simplifications that preserve the original logic. Only formulas whose PQL expression is larger than **2 KB** (UTF-8 encoded) are eligible, smaller expressions are not analyzed. When a simplification is found, a red indicator appears next to the formula name in the list.
@@ -303,7 +341,7 @@ Note that when using the **Decisioning** API, the context data is added to the p
 
 >[!NOTE]
 >
->AI-powered formula optimization relies on the same generative AI capabilities as **AI Assistant**, and uses the same access controls. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. For details, refer to [Access AI Assistant](../../content-management/gs-generative.md#generative-access).
+>AI-powered formula optimization relies on the same generative AI capabilities as **Generate Content**, and uses the same access controls. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. For details, refer to [Access Generate Content](../../content-management/gs-generative.md#generative-access).
 
 To optimize a ranking formula:
 

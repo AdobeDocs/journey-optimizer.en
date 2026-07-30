@@ -125,7 +125,8 @@ The `toPercentage` function is used to convert a number to percentage.
 
 ## To Precision {#to-precision}
 
-The `toPrecision` function is used to convert a number to required precision.
+The `toPrecision` function converts a number to a fixed number of decimal places and returns a zero-padded string.
+This function is equivalent to JavaScript `toFixed()` behavior.
 
 **Syntax**
 
@@ -150,3 +151,4 @@ This query returns "12".
 ```sql
 {%= toString(12) %} 
 ```
+

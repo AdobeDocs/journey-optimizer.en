@@ -100,7 +100,7 @@ To create an AI model, follow the steps below:
 
     >[!NOTE]
     >
-    >You can select up to 5 audiences.
+    >You can select up to 50 audiences.
 
 1. Save and activate the AI model.
 

@@ -10,6 +10,12 @@ badge: label="Limited Availability" type="Informative"
 
 # Create a channel configuration {#create-channel-config}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a channel configuration for a custom channel in Adobe Journey Optimizer, linking it to API credentials, an optional subdomain, and payload defaults, so marketers can select it when building campaigns and journeys.
+
+>[!ENDSHADEBOX]
+
 A channel configuration links your custom channel to a named, reusable preset that marketers select when building campaigns and journeys.
 
 To create a channel configuration for a custom channel, follow the steps below.

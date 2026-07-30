@@ -149,6 +149,14 @@ In this section, you can set your different locales for managing your multilingu
 
     +++
 
+1. Once you have created a condition for a locale, you can reuse it for other locales instead of rebuilding it from scratch. Click **[!UICONTROL Copy to...]** then select one or more target locales to apply the condition to.
+
+    ![](assets/multilingual-settings-7.png)
+
+    >[!NOTE]
+    >
+    >Copying a condition overwrites any existing condition on the selected target locales.
+
 1. Drag and drop the locales to reorder them and manage their priority in the list.
 
 1. To delete a locale, click the bin icon.
@@ -158,6 +166,10 @@ In this section, you can set your different locales for managing your multilingu
 1. Click **[!UICONTROL Submit]** to create your **[!UICONTROL Language settings]**.
 
 Note that after setting up your language preferences, you will no longer have the option to edit them.
+
+To add a locale or change the conditions of an active **[!UICONTROL Language settings]**, access ![](assets/do-not-localize/Smock_More_18_N.svg) and select **[!UICONTROL Duplicate]**. This creates a copy of the existing setting that you can then edit.
+
+![](assets/multilingual-settings-8.png)
 
 <!--
 1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.

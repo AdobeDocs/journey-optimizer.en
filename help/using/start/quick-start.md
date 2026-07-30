@@ -143,7 +143,7 @@ A successful Journey Optimizer implementation typically follows this sequence, w
 4. **Marketer**: Designs and executes customer experiences  
    Marketers leverage all the foundational work to build journeys, create content, and optimize customer experiences across all channels.  
    * Build audiences using segmentation, CSV upload, or audience composition  
-   * Design personalized content with AI Assistant and templates  
+   * Design personalized content with Generate Content and templates  
    * Create multi-channel journeys with event and audience triggers
    * Test with approval workflows before launch
    * Monitor performance and optimize based on reporting insights  
@@ -287,7 +287,7 @@ For more in-depth learning and updates, explore the following resources:
 * [Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Step-by-step video tutorials for all roles
 * [Get started with data management](../data/gs-data.md) - Schemas, datasets, identities, and the data readiness checklist for Journey Optimizer
 * [Journey Use Cases Library](../building-journeys/jo-use-cases.md) - Practical examples and implementation patterns
-* [AI & Intelligent Features](ai-features.md) - Learn about AI Assistant, send-time optimization, and content generation
+* [AI & Intelligent Features](ai-features.md) - Learn about AI, send-time optimization, and content generation
 * [User Interface Guide](user-interface.md) - Navigate Journey Optimizer effectively
 
 >[!TAB Stay Updated]

@@ -88,7 +88,7 @@ When a **[!UICONTROL Wait]** activity uses a custom date, you define when the pr
 ## Related resources {#related}
 
 * [Work with the advanced expression editor](expressionadvanced.md) — Overview of the expression editor interface and supported syntax.
-* [Get started with AI Assistant in Journey Optimizer](../../content-management/gs-generative.md) — General guardrails, access, and setup for generative AI features.
+* [Get started with Generate Content in Journey Optimizer](../../content-management/gs-generative.md) — General guardrails, access, and setup for generative AI features.
 
 +++ AI Knowledge Reference
 
@@ -116,7 +116,7 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Generate expressions with AI is currently in **public beta** — availability and behavior may change
-* Generative AI guardrails and limitations from the main AI Assistant documentation apply to this feature
+* Generative AI guardrails and limitations from the main Generate Content documentation apply to this feature
 * If the assistant references fields not present in your journey's data sources, it returns an error — revise the prompt to use available field names
 * The exact generated expression syntax depends on the fields and activities configured in your specific journey
 

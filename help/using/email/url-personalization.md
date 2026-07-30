@@ -37,7 +37,7 @@ To personalize a URL, follow the steps below.
 
 1. Select the personalization icon.
 
-    ![](assets/message-tracking-insert-link-perso.png)
+    ![Personalization icon in the Email Designer contextual toolbar](assets/message-tracking-insert-link-perso.png)
 
 1. Use the personalization editor to add the profile attributes you want to personalize the URL with.
 
@@ -60,7 +60,7 @@ For reliable rendering and tracking, follow the [best practices and guardrails](
 
 ## Personalize a complete/base URL {#personalize-complete-base-url}
 
-Journey Optimizer also supports personalizing the **entire** URL or the **base domain** of a URL, for example:
+Journey Optimizer supports personalizing the **entire** URL or the **base domain** of a URL, for example:
 
 ```html
 <a href="{{profile.social.link}}" />
@@ -70,13 +70,58 @@ Journey Optimizer also supports personalizing the **entire** URL or the **base d
 
 >[!CAUTION]
 >
->* To enable complete or base URL personalization, contact Adobe and provide your list of accepted domains. This is required to help prevent unsafe redirects.
+>To enable complete or base URL personalization, you must first add your accepted domains to the allowed list. [Learn how](#manage-accepted-domains)
 >
->* Dynamically generated URLs — where the entire URL or base domain resolves from a profile attribute at send time — have a known tracking limitation: Journey Optimizer cannot reliably track clicks for these links, and **click data may not appear in journey or campaign reports**. This occurs because the tracking redirect is applied at design time, before the final URL is known. When the resolved value differs per recipient, the redirect chain breaks and clicks go unrecorded. Additionally, the resolved URL must start with `http` or `https` for every recipient — if it does not, tracking is silently skipped for that link. To maintain reliable click tracking, use one of the following approaches:
+>Dynamically generated URLs have a known limitation: click data may not appear in journey or campaign reports. [Learn more](#click-tracking-limitation)
+
+
+### Add domains for complete/base URL personalization {#manage-accepted-domains}
+
+To enable complete or base URL personalization, you must first add your accepted domains to the allowed list.
+
+This ensures that only approved domains are used in your personalized URLs and to help prevent unsafe redirects.
+
+>[!NOTE]
 >
->   * Use a fixed base URL and append personalized parameters only (for example, `https://www.example.com/page?uid={{profile.person.crmid}}`).
->   
->   * Pre-generate a personalized URL per recipient, store it as a profile attribute, and reference it in your email content.
+>To view, add or remove domains from the allowed list, you need the **[!UICONTROL Manage messages general settings]** and the **[!UICONTROL View messages general settings]** permissions. [Learn more](../administration/ootb-permissions.md)
+
+To manage your allowed domains, follow the steps below.
+
+1. In Adobe Journey Optimizer, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL Email settings]** > **[!UICONTROL Allowed list - domains]**.
+
+    ![Allowed list - domains page showing approved domains with their added by and date information](assets/allowed-list-domains.png)
+
+    From there, you can browse all approved domains, add new ones, and delete existing ones.
+
+1. Click the **[!UICONTROL Add domain]** button.
+
+1. Enter the full subdomain or root domain.
+
+    ![Form to add a new domain to the allowed list](assets/allowed-list-domains-add.png){width="80%"}
+
+    >[!NOTE]
+    >
+    >Do not include https:// or a trailing slash as this will cause the domain to be rejected. For example, enter `www.example.com` or `example.com`, not `https://www.example.com/`.
+
+1. Click **[!UICONTROL Confirm]**. The domain is added to the allowed list and can now be used in complete or base URL personalization.
+
+1. To remove a domain, click the **[!UICONTROL Delete]** icon next to that domain.
+
+    >[!CAUTION]
+    >
+    >If you remove a domain that is already in use in a personalized URL, the safety of the link cannot be guaranteed. Make sure to update any personalized URLs that reference this domain before removing it from the allowed list.
+
+### Click tracking limitation {#click-tracking-limitation}
+
+Dynamically generated URLs — where the entire URL or base domain resolves from a profile attribute at send time — have a known tracking limitation: Journey Optimizer cannot reliably track clicks for these links, and **click data may not appear in journey or campaign reports**.
+
+This occurs because the tracking redirect is applied at design time, before the final URL is known. When the resolved value differs per recipient, the redirect chain breaks and clicks go unrecorded. Additionally, the resolved URL must start with `http` or `https` for every recipient — if it does not, tracking is silently skipped for that link.
+    
+To maintain reliable click tracking, use one of the following approaches:
+
+* Use a fixed base URL and append personalized parameters only (for example, `https://www.example.com/page?uid={{profile.person.crmid}}`).
+
+* Pre-generate a personalized URL per recipient, store it as a profile attribute, and reference it in your email content.
 
 ## Personalize URL tracking parameters {#personalize-url-tracking-parameters}
 
@@ -84,7 +129,7 @@ Journey Optimizer also supports personalizing the **entire** URL or the **base d
 
 To do so, [insert a link](message-tracking.md#insert-links), select the personalization icon, add the URL tracking parameter and select the profile attribute of your choice from the [personalization editor](../personalization/personalization-build-expressions.md).
 
-![](assets/message-tracking-perso-parameter.png)
+![Personalization icon for URL tracking parameter in the Email Designer](assets/message-tracking-perso-parameter.png)
 
 Repeat the steps above for each link you want to add this tracking parameter to.
 

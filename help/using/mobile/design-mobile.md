@@ -133,7 +133,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
     ![](assets/sms-content.png)
 
-1. Generate engaging Mobile messages tailored to your audience using [AI Assistant for text generation](../content-management/generative-text.md).
+1. Generate engaging Mobile messages tailored to your audience using [Generate text with AI](../content-management/generative-text.md).
 
 1. Use the personalization editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 

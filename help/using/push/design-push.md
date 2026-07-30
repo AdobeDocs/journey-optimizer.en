@@ -55,7 +55,7 @@ You can also insert profile attributes inline directly in the **[!UICONTROL Titl
 
 Use the device preview section to visualize how the push notification displays on iOS, Android, and Web.
 
-Accelerate your content creation with AI Assistant and generate compelling push notification text with [AI Assistant for text generation](../content-management/generative-text.md) or create complete push notifications with [AI Assistant for full content generation](../content-management/generative-full-content.md).
+Accelerate your content creation with Generate Content and generate compelling push notification text with [Generate text with AI](../content-management/generative-text.md) or create complete push notifications with [Generate full content with AI](../content-management/generative-full-content.md).
 
 ## On click behavior {#on-click-behavior}
 
@@ -100,7 +100,7 @@ For Android, you can only add an image icon, and an image for expanded notificat
 
 You can add media using either of the following methods:
 
-* **[!UICONTROL Add media]** button: Select an asset from [Adobe Experience Manager Assets](../integrations/assets.md) or access the AI Assistant to generate [engaging images](../content-management/generative-image.md) for push notifications. 
+* **[!UICONTROL Add media]** button: Select an asset from [Adobe Experience Manager Assets](../integrations/assets.md) or access Generate Content to generate [engaging images](../content-management/generative-image.md) for push notifications. 
     
 * **[!UICONTROL Add media]** field: Enter the media URL directly. You can include personalization tokens in the URL.
 
@@ -132,7 +132,7 @@ Once added, the media displays on the right of the notification body.
 
 Enter the media URL in the **[!UICONTROL Add media]** field. You can also include personalization tokens in the URL to customize the content for each user.
 
-Click ![Edit text with the AI assistant](assets/do-not-localize/Smock_ImageAdd_18_N.svg) to quickly generate media using the Journey Optimizer AI Assistant.
+Click ![Edit text with Generate Content](assets/do-not-localize/Smock_ImageAdd_18_N.svg) to quickly generate media using Journey Optimizer's Generate Content.
 
 ![](assets/web-media.png)
 

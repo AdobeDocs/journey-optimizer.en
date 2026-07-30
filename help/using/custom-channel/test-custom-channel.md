@@ -9,6 +9,12 @@ level: Beginner
 
 # Test your custom channel {#test-custom-channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to validate your custom channel before going live, by testing the endpoint connection from the Channel Builder, simulating content with test profiles, and sending proofs.
+
+>[!ENDSHADEBOX]
+
 Before activating a journey or campaign that uses a custom channel, validate that your endpoint is reachable, that authentication works, and that personalization tokens resolve correctly for your target profiles.
 
 ## Test the connection from the Channel Builder {#test-connection}

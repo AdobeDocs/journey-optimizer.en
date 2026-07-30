@@ -118,4 +118,4 @@ The Optimize email for AI inboxes capability helps you prepare a version of your
 ## Related topics {#related-topics}
 
 * [Get started with email design](get-started-email-design.md)
-* For Adobe generative features more broadly, see [Get started with AI Assistant to create content](../content-management/gs-generative.md).
+* For Adobe generative features more broadly, see [Get started with Generate Content](../content-management/gs-generative.md).

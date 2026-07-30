@@ -561,7 +561,7 @@ The **[!DNL Manage web subdomain]** high-level permission allows users to read, 
 
 ## AI assistance resource {#ai-permissions} 
 
-* **[!DNL Generate content]** high-level permission allows users to access to AI Assistant in Journey Optimizer.
+* **[!DNL Generate content]** high-level permission allows users to access to Generate content menu in Journey Optimizer.
 
   +++ It includes the following low-level permission:  
 
@@ -704,7 +704,7 @@ For complete understanding, this information should be combined with the documen
 * Understand the distinction between high-level and low-level permissions
 * Identify which low-level permissions are granted by each high-level permission
 * Configure roles precisely for journeys, campaigns, decision management, channel configurations, and orchestrated campaigns
-* Grant AI Assistant access for content generation
+* Grant Generate content access for content generation
 * Understand what the Publish journeys permission allows compared to the Manage journeys permission
 
 **Glossary:**

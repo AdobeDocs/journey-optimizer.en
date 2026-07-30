@@ -111,9 +111,9 @@ Email deliveries can be created:
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td>
 <a href="../content-management/generative-full-content.md">
-<img alt="AI Assistant" src="../assets/do-not-localize/email-generate.jpg">
+<img alt="Generate Content" src="../assets/do-not-localize/email-generate.jpg">
 </a>
-<div><a href="../content-management/generative-full-content.md"><strong>AI Assistant for Content Generation</strong>
+<div><a href="../content-management/generative-full-content.md"><strong>Generate Content</strong>
 </div>
 <p>
 </td>

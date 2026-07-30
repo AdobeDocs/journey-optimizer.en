@@ -153,6 +153,10 @@ The **[!UICONTROL Sending metrics by Email]** table offers a comprehensive summa
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
 * **[!UICONTROL Unsubscribe]**: Number of clicks on the unsubscription link.
 
 * **[!UICONTROL Spam complaints]**: Number of times a message was declared as spam or junk.

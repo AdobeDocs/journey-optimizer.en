@@ -292,7 +292,7 @@ When a service disruption occurs, Journey Optimizer automatically identifies the
 
 **Role:** Marketer | **Core capability:** [Content generation + experimentation](ai-features.md)
 
-A retail brand planning a product launch uses Journey Optimizer's AI Assistant to generate multiple subject line and body copy variations in minutes — guided by a natural language prompt and their uploaded brand guidelines. Built-in content experimentation automatically identifies the best-performing variant among an initial audience sample. The winning message is then deployed to the remaining recipients, maximizing engagement without additional copywriting effort.
+A retail brand planning a product launch uses Journey Optimizer's Generate Content to generate multiple subject line and body copy variations in minutes — guided by a natural language prompt and their uploaded brand guidelines. Built-in content experimentation automatically identifies the best-performing variant among an initial audience sample. The winning message is then deployed to the remaining recipients, maximizing engagement without additional copywriting effort.
 
 [Explore intelligent features](ai-features.md) | [Learn about content experimentation](../content-management/experiment-accelerator-gs.md)
 
@@ -322,7 +322,7 @@ Browse curated video content by topic. Each tab links to the relevant tutorials 
 
 >[!TAB Personalization & intelligence]
 
-* [AI Assistant for content generation](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/ai-assistant/ai-assistant-for-content-generation-overview){target="_blank"} — Generate copy, images, and variations.
+* [Generate Content](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/ai-assistant/ai-assistant-for-content-generation-overview){target="_blank"} — Generate copy, images, and variations.
 * [Use decisioning to personalize web offers](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"} — Tailor offers per customer.
 
 >[!TAB Reporting & optimization]

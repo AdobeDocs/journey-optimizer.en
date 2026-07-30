@@ -107,6 +107,8 @@ When an endpoint has a response time greater than 0.75 seconds, its custom actio
 
 This slow custom action service applies a capping limit of 150,000 calls every 30 seconds. The limit is enforced using a sliding window, which can begin at any millisecond within that 30-second period. Once the window is full, additional calls are rejected with capping errors. The system does not wait for the next fixed interval but begins capping immediately after the 30-second threshold is reached.
 
+Additionally, to help prevent overloading an already slow endpoint, the slow custom action service temporarily caps all calls for up to 5 minutes if more than 20% of calls in any 120-second window exceed 10 seconds. This circuit breaker mechanism only applies if there are at least 200 calls in the 120-second window. This protection is currently available in a few regions and is being progressively rolled out to all regions in the upcoming days.
+
 Because slow endpoints can cause delays across all queued actions in the pipeline, it is recommended not to configure custom actions with endpoints that have slow response times. Routing such actions to the slow service helps protect overall system performance and prevents added latency for other custom actions.
 
 ## Timeout and retries {#timeout}
