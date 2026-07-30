@@ -70,9 +70,9 @@ Journey Optimizer supports personalizing the **entire** URL or the **base domain
 
 >[!IMPORTANT]
 >
->To enable complete or base URL personalization, you must first add your accepted domains to the allowed list for your personalized URLs to resolve correctly. Follow the steps listed in [this section](#manage-accepted-domains).
+>To enable complete or base URL personalization, you must first add your accepted domains to the allowed list in order to prevent unsafe redirects. Follow the steps listed in [this section](#manage-accepted-domains).
 
-### Guardrails {#guardrails}
+### Click tracking limitation {#click-tracking-limitation}
 
 Dynamically generated URLs — where the entire URL or base domain resolves from a profile attribute at send time — have a known tracking limitation: Journey Optimizer cannot reliably track clicks for these links, and **click data may not appear in journey or campaign reports**.
 
@@ -86,9 +86,7 @@ To maintain reliable click tracking, use one of the following approaches:
 
 ### Add domains for complete/base URL personalization {#manage-accepted-domains}
 
-To enable complete or base URL personalization, you must first add your accepted domains to the allowed list. This ensures that only approved domains are used in your personalized URLs.
-
-If using a domain that is not on the allowed list, the link will not resolve correctly and may break for recipients.
+To enable complete or base URL personalization, you must first add your accepted domains to the allowed list. This ensures that only approved domains are used in your personalized URLs and to help prevent unsafe redirects.
 
 >[!NOTE]
 >
@@ -118,7 +116,7 @@ To manage your allowed domains, follow the steps below.
 
     >[!CAUTION]
     >
-    >If you remove a domain that is already in use in a personalized URL, the link may not resolve correctly. Make sure to update any personalized URLs that reference this domain before removing it from the allowed list.
+    >If you remove a domain that is already in use in a personalized URL, the safety of the link cannot be guaranteed. Make sure to update any personalized URLs that reference this domain before removing it from the allowed list.
 
 ## Personalize URL tracking parameters {#personalize-url-tracking-parameters}
 
