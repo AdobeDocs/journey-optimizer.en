@@ -171,8 +171,6 @@ The following capabiolities and improvements have been added to administration a
 
 * **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on **existing customer sandboxes and organizations** starting **October 1, 2026**. [Learn more](../data/datasets-ttl.md#ttl-guardrail)
 
-+++
-
 ### Email Design {#july-26-email}
 
 The following capabilities and improvements have been added to email design in this release.
