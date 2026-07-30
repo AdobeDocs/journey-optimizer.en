@@ -26,7 +26,15 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## July 2026 {#july-2026}
 
+* The **Decisioning Migration API** documentation has been updated with a clarification that the target sandbox **can be the same as the source sandbox**. The migration process handles this scenario and ensures data integrity regardless of whether objects are migrated within the same sandbox or to a different one. [Read more](../experience-decisioning/decisioning-migration-api.md#target-sandbox-preparation)
+
+* A new **CX Coworker Skills** page is now available. It provides comprehensive documentation of all Journey Skills available in Journey Optimizer, including Journey Create, Channel Content Create, Loyalty Challenge Management, and Journey Analyze, with use cases, sample prompts, and best practices for each skill. [Read more](../start/ajo-coworker-skills.md)
+
+* The **To Precision** function documentation has been updated to clarify that `toPrecision` behaves like JavaScript `toFixed()`: it returns a string with a fixed number of decimal places, including zero-padding when needed. [Read more](../personalization/functions/math.md#to-precision)
+
 * The **End a journey** page has been updated to clarify automatic stop timing for non-recurring Read Audience journeys: a safety buffer of approximately **96 hours (~4 days)** after the scheduled run (24-hour idle window + 72-hour Quiet Hours allowance), during which the journey can remain in **Live** status before transitioning to **Stopped** shortly after the buffer elapses. The page now also clarifies that waves-based (multi-wave) journeys, and journeys that use Send-Time Optimization, are excluded from this auto-stop and instead follow the standard 91-day journey timeout. [Read more](../building-journeys/end-journey.md#auto-stop-non-recurring)
+
+* The **Create IP warmup campaigns** page has been updated to clarify that targeting rules can be applied to IP warmup campaigns, and to document the evaluation behavior: audience membership is fixed at run activation (daily batch segmentation), while profile attributes are read at run execution time from the most recently ingested batch data. [Read more](../configuration/ip-warmup-campaign.md)
 
 * A warning has been added to the **Edit PTR records** page to inform customers that when adding a new forward DNS record to their platform, the forward DNS record for the old subdomain must not be removed until the move completes, as doing so will cause the edit to fail. [Read more](../configuration/ptr-records.md#edit-ptr-subdomains-cname)
 
@@ -1052,4 +1060,3 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 +++
 -->
-

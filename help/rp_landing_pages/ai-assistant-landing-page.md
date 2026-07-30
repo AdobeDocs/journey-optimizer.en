@@ -61,3 +61,4 @@ Use AI to create and customize images for use across email, push notifications, 
 - **[Content Experimentation with AI](../using/content-management/generative-experimentation.md)** - Test and measure the performance of multiple content variations using the Content Experiment feature.
 - **[Generate Content Use Cases](../using/content-management/generative-uc.md)** - Explore various ways to use Generate Content for content generation, refinement, and customization.
 - **[Brand Management and Alignment](brands-landing-page.md)** - Manage brand guidelines and ensure consistent alignment across AI-generated content and campaigns.
+- **[Take the course: AI-powered, on-brand content creation](https://experienceleague.adobe.com/en/courses/ajo-ai-powered-on-brand-content-creation-for-marketers){target="_blank"}** - Learn how to create on-brand content in Adobe Journey Optimizer for marketers using AI-powered tools.
