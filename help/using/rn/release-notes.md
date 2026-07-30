@@ -342,19 +342,38 @@ The following capabilities and improvements have been added to content managemen
 
   Availability date: July 30, 2026
 
+* **Multilingual improvements** - Language Settings can now be duplicated from an existing active setting, so you no longer need to fully rebuild a configuration to make changes. You can also copy a condition from one locale to another while authoring Language Settings, streamlining setup for sites with many languages.
+
+  Availability date: July 30, 2026
+
 +++ Coming soon
 
 * **Flexible Image Sourcing for AI Content Generation** - Generating content in Journey Optimizer now sources brand-approved images directly from Adobe Experience Manager Assets Essentials and up. Three modes control the balance: Assets (Digital Asset Management-sourced, default), Balanced (Digital Asset Management-first, AI fills gaps), and Creative (AI-first). This ensures every visual is accurate, brand-compliant, and production-ready for journeys and campaigns.
-
-* **Multilingual improvements** - Language Settings can now be duplicated from an existing active setting, so you no longer need to fully rebuild a configuration to make changes. You can also copy a condition from one locale to another while authoring Language Settings, streamlining setup for sites with many languages.
-
-
 
 +++
 
 ### Content & Integrations {#july-26-integration}
 
 The following improvements are coming to content management and integrations in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Countdown timer using Dynamic Media</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Journey Optimizer and Adobe Experience Manager Dynamic Media integration</strong> enables open-time personalization for Dynamic Media templates, unlocking hyper-personalized use cases. Customers can create and publish personalized templates in Adobe Experience Manager and use them in Journey Optimizer, with data rendered at open time.</p>
+<p>For more information, refer to the <a href="../integrations/aem-dynamic.md#countdown">detailed documentation</a>.</p>
+<p> Availability date: July 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 * **AJO MCP server new tools** - The [!DNL Adobe Journey Optimizer] MCP server now exposes five additional read-only **channel configuration tools**, enabling you to query channel configurations, supporting resources, and marketing actions directly from your AI assistant. You can now use **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
 
