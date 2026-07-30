@@ -67,7 +67,7 @@ Always confirm the exact egress IPs with your security team before saving, and t
 
 To access the list of subdomains for which you have allowed IPs for your Web Application Firewall, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General Settings]**, and select **[!UICONTROL Allowed list - IPs]**.
 
-![WAF IP allowed list inventory](assets/waf-ip-allowlist.png)
+![WAF IP allowed list inventory](assets/waf-ip-allowlist.png){width="90%"}
 
 The inventory page lists all subdomains that have at least one WAF IP allowed, across all channel types (Email, Landing page, SMS, Web). Learn more on subdomains in [this section](about-subdomain-delegation.md).
 

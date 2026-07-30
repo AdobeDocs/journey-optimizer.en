@@ -165,13 +165,11 @@ The following capabiolities and improvements have been added to administration a
 </tbody>
 </table>
 
+* **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe support. [Learn more](../email/url-personalization.md#personalize-complete-base-url)
+
+    Availability date: July 30, 2026
+
 * **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on **existing customer sandboxes and organizations** starting **October 1, 2026**. [Learn more](../data/datasets-ttl.md#ttl-guardrail)
-
-+++Coming soon
-
-* **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe support. <!--[Learn more](../email/url-personalization.md#personalize-complete-base-url)-->
-
-+++
 
 ### Email Design {#july-26-email}
 
