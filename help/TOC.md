@@ -641,6 +641,7 @@ nudge: yes
       + [Campaign report](using/reports/campaign-global-report-cja.md)
       + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
       + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
+      + [Custom channel campaign report](using/reports/campaign-global-report-cja-custom-channel.md)
       + [Direct mail campaign report](using/reports/campaign-global-report-cja-direct.md)
       + [Email campaign report](using/reports/campaign-global-report-cja-email.md)
       + [Experimentation campaign report](using/reports/campaign-global-report-cja-experimentation.md)
