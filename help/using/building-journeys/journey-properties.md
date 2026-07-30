@@ -364,6 +364,10 @@ To learn more about merge policies, refer to [[!DNL Adobe Experience Platform] d
 
 ## Exit criteria {#exit-criteria}
 
+>[!CAUTION]
+>
+>**Deprecation notice – September 2026**: Starting **September 2026**, Journey Optimizer will block publication for any journey that uses a batch audience in an **Exit criteria**. Existing live journeys are not affected. New, draft, and duplicated journeys with this configuration must be updated before September 2026. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_exit_criterias"
 >title="Exit criteria"
