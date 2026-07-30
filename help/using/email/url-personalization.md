@@ -68,25 +68,18 @@ Journey Optimizer supports personalizing the **entire** URL or the **base domain
 <a href="https://{{profile.social.baseUrl}}/profile" />
 ```
 
->[!IMPORTANT]
+>[!CAUTION]
 >
->To enable complete or base URL personalization, you must first add your accepted domains to the allowed list in order to prevent unsafe redirects. Follow the steps listed in [this section](#manage-accepted-domains).
+>To enable complete or base URL personalization, you must first add your accepted domains to the allowed list. [Learn how](#manage-accepted-domains)
+>
+>Dynamically generated URLs have a known limitation: click data may not appear in journey or campaign reports. [Learn more](#click-tracking-limitation)
 
-### Click tracking limitation {#click-tracking-limitation}
-
-Dynamically generated URLs — where the entire URL or base domain resolves from a profile attribute at send time — have a known tracking limitation: Journey Optimizer cannot reliably track clicks for these links, and **click data may not appear in journey or campaign reports**.
-
-This occurs because the tracking redirect is applied at design time, before the final URL is known. When the resolved value differs per recipient, the redirect chain breaks and clicks go unrecorded. Additionally, the resolved URL must start with `http` or `https` for every recipient — if it does not, tracking is silently skipped for that link.
-    
-To maintain reliable click tracking, use one of the following approaches:
-
-* Use a fixed base URL and append personalized parameters only (for example, `https://www.example.com/page?uid={{profile.person.crmid}}`).
-
-* Pre-generate a personalized URL per recipient, store it as a profile attribute, and reference it in your email content.
 
 ### Add domains for complete/base URL personalization {#manage-accepted-domains}
 
-To enable complete or base URL personalization, you must first add your accepted domains to the allowed list. This ensures that only approved domains are used in your personalized URLs and to help prevent unsafe redirects.
+To enable complete or base URL personalization, you must first add your accepted domains to the allowed list.
+
+This ensures that only approved domains are used in your personalized URLs and to help prevent unsafe redirects.
 
 >[!NOTE]
 >
@@ -117,6 +110,18 @@ To manage your allowed domains, follow the steps below.
     >[!CAUTION]
     >
     >If you remove a domain that is already in use in a personalized URL, the safety of the link cannot be guaranteed. Make sure to update any personalized URLs that reference this domain before removing it from the allowed list.
+
+### Click tracking limitation {#click-tracking-limitation}
+
+Dynamically generated URLs — where the entire URL or base domain resolves from a profile attribute at send time — have a known tracking limitation: Journey Optimizer cannot reliably track clicks for these links, and **click data may not appear in journey or campaign reports**.
+
+This occurs because the tracking redirect is applied at design time, before the final URL is known. When the resolved value differs per recipient, the redirect chain breaks and clicks go unrecorded. Additionally, the resolved URL must start with `http` or `https` for every recipient — if it does not, tracking is silently skipped for that link.
+    
+To maintain reliable click tracking, use one of the following approaches:
+
+* Use a fixed base URL and append personalized parameters only (for example, `https://www.example.com/page?uid={{profile.person.crmid}}`).
+
+* Pre-generate a personalized URL per recipient, store it as a profile attribute, and reference it in your email content.
 
 ## Personalize URL tracking parameters {#personalize-url-tracking-parameters}
 
