@@ -49,9 +49,7 @@ If you prefer the previous layout, click **[!UICONTROL Switch to classic experie
 
 ## Create and manage variants {#manage-variants}
 
-Variants can be created in different ways: manually one by one or by importing a file, by generating them with AI, or by selecting existing simulated users.
-
-You can add up to 30 variants manually or via file upload. When using AI generation, up to 40 variants can be created depending on your content's complexity.
+Variants can be created in different ways: manually one by one or by importing a file, by generating them with AI, or by selecting existing simulated users. You can add up to 30 variants manually or via file upload. When using AI generation, up to 40 variants can be created depending on your content's complexity.
 
 ### Add variants manually {#add-variants}
 
@@ -59,7 +57,7 @@ To add a blank variant manually, click **[!UICONTROL +]** in the bottom action b
 
 ![](assets/simulate-variations-create.png)
 
-You can also use **[!UICONTROL ...]** > **Upload data** to import a CSV, JSON, or JSONLINES file where each row or entry becomes a variant. Download the file template from the upload dialog to use the correct format.
+You can also use **[!UICONTROL ...]** > **Upload variants** to import a CSV, JSON, or JSONLINES file where each row or entry becomes a variant. Download the file template from the upload dialog to use the correct format.
 
 ![](assets/simulate-variations-upload.png)
 
@@ -94,7 +92,7 @@ You can export all current variants, whether added manually, generated with AI, 
 
 ![](assets/simulate-variations-upload.png)
 
-## Preview variants in the grid {#preview-grid}
+## Preview variants {#preview-grid}
 
 ### Switch between variants {#switch-variants}
 
@@ -105,6 +103,8 @@ When in preview mode, all variants render side by side with a numbered indicator
 ### Display variants in preview or editing mode {#edit-variants}
 
 You can display variants either in preview or editing mode, where you can edit the content and attribute values directly. Click **[!UICONTROL Preview]** or **[!UICONTROL Edit]** in the bottom action bar to switch all previews at once between the two modes.
+
+![](assets/simulate-variations-mode.png)
 
 To toggle a single variant individually, either click the **[!UICONTROL Show preview]** or **[!UICONTROL Show variant details]** button at the top of its card, or long-press its number in the bottom action bar (or use Alt + Up/Down).
 
