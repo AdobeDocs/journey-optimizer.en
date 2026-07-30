@@ -166,10 +166,6 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
 </tr>
 </table>
 
-## API reference {#api-reference}
-
-To manage loyalty challenges programmatically, use the [Loyalty Challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}. The API lets you create, update, and manage challenges and tasks via REST endpoints.
-
 ## How-to video {#video}
 
 **New to Loyalty Challenges?** Watch this overview to understand the capabilities and benefits:

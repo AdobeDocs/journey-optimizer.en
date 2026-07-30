@@ -28,11 +28,11 @@ Discover how to create and manage **Loyalty Challenges** to engage and reward yo
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/loyalty-challenges/get-started.md)
 
->[!TAB AI Assistant for personalization]
+>[!TAB Journey Optimizer skills in CX Coworker]
 
-Use **AI Assistant** in the Personalization Editor or from the Email Designer toolbar (**Add expression**) to describe what you want in plain language and get a personalization expression, or select existing code to explain it, fix issues, or suggest improvements.
+We've added a new documentation page for **Journey Optimizer skills in CX Coworker**, including both **journey-focused** and **loyalty-focused** skills, with guidance and sample prompts.
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/generative-personalization-expressions.md)
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/start/ajo-coworker-skills.md)
 
 
 >[!TAB Iterate over contextual data]

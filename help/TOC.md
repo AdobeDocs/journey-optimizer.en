@@ -157,7 +157,6 @@ nudge: yes
     + [Event Transformer guide](using/loyalty-challenges/event-transformer-guide.md)
     + [Loyalty Challenges permissions](using/loyalty-challenges/loyalty-permissions.md)
     + [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
-    + [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
@@ -552,7 +551,6 @@ nudge: yes
       + [Considerations and troubleshooting](using/integrations/aem-fragments-limitations.md)
     + [Work with Experience Manager Content Advisor](using/integrations/aem-content-advisor.md)
     + [Work with Dynamic Media](using/integrations/aem-dynamic.md)
-    + {hide-from-toc} [Insert countdown timer](using/integrations/countdown.md)
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
     + [Integrate with Intelligent Services](using/integrations/intelligent-services.md)
     + Integrations {#integrations}
@@ -563,17 +561,16 @@ nudge: yes
         + [Get started with Vendors integration](using/integrations/vendor-integration-gs.md)
         + [Sample Vendor configurations](using/integrations/vendor-integration.md)  
     + [Work with AI tools via MCP](/help/using/integrations/ajo-mcp.md)
-  + AI Assistant for content generation {#ai-assistant}
-    + [AI Assistant for content generation](/help/rp_landing_pages/ai-assistant-landing-page.md)
-    + [Get started with AI Assistant](using/content-management/gs-generative.md)
+  + Generate content {#generate-content}
+    + [Get started with Generate content](using/content-management/gs-generative.md)
     + [AI prompt best pratices](using/content-management/ai-assistant-prompting-guide.md)
+    + {hide-from-toc}[Content Credentials in AI Assistant](using/content-management/generative-content-credentials.md)
     + [Generate full content with AI](using/content-management/generative-full-content.md)
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
-    + [AI Assistant for Personalization Expressions](using/content-management/generative-personalization-expressions.md)
-    + [AI Assistant use cases](using/content-management/generative-uc.md)
+    + [Generate content for personalization expressions](using/content-management/generative-personalization-expressions.md)
+    + [Generate content use cases](using/content-management/generative-uc.md)
     + Brands {#brands}
-      + [Brands](/help/rp_landing_pages/brands-landing-page.md)
       + [Create & manage your Brands](using/content-management/brands.md)
       + [Personalize your Brands](using/content-management/brands-personalize.md)
       + [Create & manage generative models](using/content-management/generative-models.md)
@@ -972,6 +969,7 @@ nudge: yes
   + [Add a CC field to emails](using/configuration/cc-email-field.md)
   + [Manage execution fields](using/configuration/primary-email-addresses.md)
   + [Create feedback webhooks](using/configuration/feedback-webhooks.md)
+  + [Manage allowed IPs](using/configuration/waf-ip-allowlist.md)
 + Journey configuration {#configure-journeys}
   + [Journey configuration](/help/rp_landing_pages/configure-journeys-landing-page.md)
   + [Get started with journeys configuration](using/configuration/about-data-sources-events-actions.md)

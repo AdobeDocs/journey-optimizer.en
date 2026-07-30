@@ -142,6 +142,35 @@ The following capabilities and improvements have been introduced in this release
 
 +++
 
+### Administration {#july-26-administration}
+
+The following capabiolities and improvements have been added to administration and data management in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Web Application Firewall IP allowlisting</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now supports Web Application Firewall IP allowlisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured Web Application Firewall infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the Web Application Firewall layer, ensuring that security policies defined in tools such as Imperva are consistently applied.</p>
+<p>This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their Journey Optimizer-hosted landing pages.</p>
+<p><img src="assets/do-not-localize/allowed-ips.gif"></p>
+<p>For more information, refer to the <a href="../configuration/waf-ip-allowlist.md">detailed documentation</a>.</p>
+<p>Availability date: July 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe support. [Learn more](../email/url-personalization.md#personalize-complete-base-url)
+
+    Availability date: July 30, 2026
+
+* **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on **existing customer sandboxes and organizations** starting **October 1, 2026**. [Learn more](../data/datasets-ttl.md#ttl-guardrail)
+
 ### Email Design {#july-26-email}
 
 The following capabilities and improvements have been added to email design in this release.
@@ -217,6 +246,10 @@ The following capabilities and improvements have been added to journeys in this 
 * **External audiences in Journey Simulation** - Journey Simulation now supports External Audiences. When simulating journeys targeting CSV or Federated Audience Composition audiences, you can mock enrichment attributes from those audiences directly through the UI form or a JSON import. The UI dynamically displays only the specific enrichment attributes used in your journey logic, enabling precise validation of decision branches and personalization rules prior to going live. [Learn more](../building-journeys/simulate-journey.md)
 
   Availability date: July 29, 2026
+
+* **Circuit breaker protection for slow custom action endpoints** - For endpoints routed through the slow custom action service, Journey Optimizer now temporarily caps all calls for up to 5 minutes when more than 20% of calls in a 120-second window exceed 10 seconds, if there are at least 200 calls in the 120-second observation window. This helps prevent overloading endpoints that are already slow. [Learn more](../configuration/external-systems.md#response-time)
+
+  Availability date: July 29, 2026. This capability is being gradually rolled out across regions.
 
 ### Orchestrated campaigns {#july-26-oc}
 
@@ -303,19 +336,42 @@ The following capabilities and improvements have been added to content managemen
 
   Availability date: July 28, 2026
 
-+++ Coming soon
+* **"AI Assistant" renamed to "Generate content"** - AI Assistant has been renamed to Generate Content throughout Adobe Journey Optimizer. This update is limited to naming and terminology; no functional changes have been introduced. Navigation labels, buttons, menus, and dialogs for content generation, image generation, personalization expressions, and content experimentation have been renamed from "AI Assistant" to "Generate Content."
 
-* **Flexible Image Sourcing for AI Content Generation** - Generating content in Journey Optimizer now sources brand-approved images directly from Adobe Experience Manager Assets Essentials and up. Three modes control the balance: Assets (Digital Asset Management-sourced, default), Balanced (Digital Asset Management-first, AI fills gaps), and Creative (AI-first). This ensures every visual is accurate, brand-compliant, and production-ready for journeys and campaigns.
+  Availability date: July 30, 2026
 
 * **Multilingual improvements** - Language Settings can now be duplicated from an existing active setting, so you no longer need to fully rebuild a configuration to make changes. You can also copy a condition from one locale to another while authoring Language Settings, streamlining setup for sites with many languages.
 
-* **"AI Assistant" renamed to "Generate content"** - AI Assistant has been renamed to Generate Content throughout Adobe Journey Optimizer. This update is limited to naming and terminology; no functional changes have been introduced. Navigation labels, buttons, menus, and dialogs for content generation, image generation, personalization expressions, and content experimentation have been renamed from "AI Assistant" to "Generate Content."
+  Availability date: July 30, 2026
+
++++ Coming soon
+
+* **Flexible Image Sourcing for AI Content Generation** - Generating content in Journey Optimizer now sources brand-approved images directly from Adobe Experience Manager Assets Essentials and up. Three modes control the balance: Assets (Digital Asset Management-sourced, default), Balanced (Digital Asset Management-first, AI fills gaps), and Creative (AI-first). This ensures every visual is accurate, brand-compliant, and production-ready for journeys and campaigns.
 
 +++
 
 ### Content & Integrations {#july-26-integration}
 
 The following improvements are coming to content management and integrations in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Countdown timer using Dynamic Media</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><strong>Journey Optimizer and Adobe Experience Manager Dynamic Media integration</strong> enables open-time personalization for Dynamic Media templates, unlocking hyper-personalized use cases. Customers can create and publish personalized templates in Adobe Experience Manager and use them in Journey Optimizer, with data rendered at open time.</p>
+<p>For more information, refer to the <a href="../integrations/aem-dynamic.md#countdown">detailed documentation</a>.</p>
+<p> Availability date: July 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
 
 * **AJO MCP server new tools** - The [!DNL Adobe Journey Optimizer] MCP server now exposes five additional read-only **channel configuration tools**, enabling you to query channel configurations, supporting resources, and marketing actions directly from your AI assistant. You can now use **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
 
@@ -332,35 +388,6 @@ The following improvement is coming to reporting in this release.
   * Estimated CTOR (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
 
     Availability date: July 29, 2026
-
-### Administration {#july-26-administration}
-
-The following improvements have been added to administration and data management in this release.
-
-* **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on **existing customer sandboxes and organizations** starting **October 1, 2026**. [Learn more](../data/datasets-ttl.md#ttl-guardrail)
-
-+++Coming soon
-
-<table>
-<thead>
-<tr>
-<th><strong>Web Application Firewall IP allowlisting</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Adobe Journey Optimizer now supports Web Application Firewall IP allowlisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured Web Application Firewall infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the Web Application Firewall layer, ensuring that security policies defined in tools such as Imperva are consistently applied.</p>
-<p>This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their Journey Optimizer-hosted landing pages.</p>
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe support. <!--[Learn more](../email/url-personalization.md#personalize-complete-base-url)-->
-
-+++
 
 ### Campaigns {#campaigns}
 
@@ -384,8 +411,6 @@ The following improvements have been added to administration and data management
 </tr>
 </tbody>
 </table>
-
-* **Folders for Campaigns** - You can now organize your campaigns into folders to improve navigation and management in the interface. This capability is available for Action and API-triggered campaigns only.
 
 * **Performance Add-on for throughput in API-triggered campaigns - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. <!-- Documentation link: TBD -->
 
