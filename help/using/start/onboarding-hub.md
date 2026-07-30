@@ -127,7 +127,7 @@ Browse curated video content by topic. Each tab links to the relevant tutorials 
 
 >[!TAB Personalization & AI]
 
-* [AI Assistant for content generation](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/ai-assistant/ai-assistant-for-content-generation-overview){target="_blank"} — Generate copy, images, and variations.
+* [Generate Content](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/content-management/ai-assistant/ai-assistant-for-content-generation-overview){target="_blank"} — Generate copy, images, and variations.
 * [Use decisioning to personalize web offers](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/use-decisioning-to-personalize-web-offers/introduction){target="_blank"} — Tailor offers per customer.
 
 >[!TAB Reporting & optimization]
