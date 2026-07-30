@@ -65,7 +65,7 @@ topic_v2:
 
 >[!AVAILABILITY]
 >
->You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use the AI Assistant in Adobe Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to the [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"} before you can use Generate Content in Adobe Journey Optimizer. For more information, contact your Adobe representative.
 
 The Brand Alignment feature helps you create, review, and manage content that adheres to your brand guidelines. It ensures consistency in tone, messaging, and visual identity across your email campaigns, while also serving as a quality check before your content goes live.
 

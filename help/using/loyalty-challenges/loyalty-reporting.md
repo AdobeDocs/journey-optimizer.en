@@ -15,7 +15,7 @@ subfeature_v2: []
 
 Use Loyalty Challenges reporting to see how your challenges are performing. Check who is signing up, who is completing challenges, and how much revenue your program is generating — all in one place. Data comes from Adobe Customer Journey Analytics.
 
-To open the reporting dashboards, go to **[!UICONTROL Loyalty Challenges]** in Journey Optimizer and select **[!UICONTROL Loyalty reports]** in the left navigation.
+To open the reporting dashboards, go to **[!UICONTROL Loyalty Challenges]** in Journey Optimizer and select **[!UICONTROL Performance]** in the left navigation.
 
 The reporting interface has two tabs:
 
