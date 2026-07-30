@@ -60,7 +60,7 @@ For reliable rendering and tracking, follow the [best practices and guardrails](
 
 ## Personalize a complete/base URL {#personalize-complete-base-url}
 
-Journey Optimizer also supports personalizing the **entire** URL or the **base domain** of a URL, for example:
+Journey Optimizer supports personalizing the **entire** URL or the **base domain** of a URL, for example:
 
 ```html
 <a href="{{profile.social.link}}" />
@@ -68,27 +68,31 @@ Journey Optimizer also supports personalizing the **entire** URL or the **base d
 <a href="https://{{profile.social.baseUrl}}/profile" />
 ```
 
-### Prerequisites and guardrails {#prerequisites-guardrails}
+>[!IMPORTANT]
+>
+>To enable complete or base URL personalization, you must first add your accepted domains to the allowed list for your personalized URLs to resolve correctly. Follow the steps listed in [this section](#manage-accepted-domains).
 
-* To enable complete or base URL personalization, you must first add your accepted domains to the allowed list. [Learn more](#manage-accepted-domains)
+### Guardrails {#guardrails}
 
-* Dynamically generated URLs — where the entire URL or base domain resolves from a profile attribute at send time — have a known tracking limitation: Journey Optimizer cannot reliably track clicks for these links, and **click data may not appear in journey or campaign reports**.
+Dynamically generated URLs — where the entire URL or base domain resolves from a profile attribute at send time — have a known tracking limitation: Journey Optimizer cannot reliably track clicks for these links, and **click data may not appear in journey or campaign reports**.
 
-    This occurs because the tracking redirect is applied at design time, before the final URL is known. When the resolved value differs per recipient, the redirect chain breaks and clicks go unrecorded. Additionally, the resolved URL must start with `http` or `https` for every recipient — if it does not, tracking is silently skipped for that link.
+This occurs because the tracking redirect is applied at design time, before the final URL is known. When the resolved value differs per recipient, the redirect chain breaks and clicks go unrecorded. Additionally, the resolved URL must start with `http` or `https` for every recipient — if it does not, tracking is silently skipped for that link.
     
-    To maintain reliable click tracking, use one of the following approaches:
+To maintain reliable click tracking, use one of the following approaches:
 
-    * Use a fixed base URL and append personalized parameters only (for example, `https://www.example.com/page?uid={{profile.person.crmid}}`).
+* Use a fixed base URL and append personalized parameters only (for example, `https://www.example.com/page?uid={{profile.person.crmid}}`).
 
-    * Pre-generate a personalized URL per recipient, store it as a profile attribute, and reference it in your email content.
+* Pre-generate a personalized URL per recipient, store it as a profile attribute, and reference it in your email content.
 
 ### Add domains for complete/base URL personalization {#manage-accepted-domains}
 
 To enable complete or base URL personalization, you must first add your accepted domains to the allowed list. This ensures that only approved domains are used in your personalized URLs.
 
+If using a domain that is not on the allowed list, the link will not resolve correctly and may break for recipients.
+
 >[!NOTE]
 >
->To view, add or remove domains from the allowed list, you need the **[!UICONTROL Manage Messages General Settings]** (`manage-cjm-message-general-settings`) and the **[!UICONTROL View Messages General Settings]** (`view-cjm-message-general-settings`) permissions. [Learn more](../administration/permissions.md)
+>To view, add or remove domains from the allowed list, you need the **[!UICONTROL Manage messages general settings]** and the **[!UICONTROL View messages general settings]** permissions. [Learn more](../administration/ootb-permissions.md)
 
 To manage your allowed domains, follow the steps below.
 
@@ -106,11 +110,15 @@ To manage your allowed domains, follow the steps below.
 
     >[!NOTE]
     >
-    >Do not include https:// or a trailing slash.
+    >Do not include https:// or a trailing slash as this will cause the domain to be rejected. For example, enter `www.example.com` or `example.com`, not `https://www.example.com/`.
 
 1. Click **[!UICONTROL Confirm]**. The domain is added to the allowed list and can now be used in complete or base URL personalization.
 
-1. To remove a domain, click the **[!UICONTROL Delete]** icon next to the domain you want to remove. This domain cannot be used in complete or base URL personalization anymore.
+1. To remove a domain, click the **[!UICONTROL Delete]** icon next to that domain.
+
+    >[!CAUTION]
+    >
+    >If you remove a domain that is already in use in a personalized URL, the link may not resolve correctly. Make sure to update any personalized URLs that reference this domain before removing it from the allowed list.
 
 ## Personalize URL tracking parameters {#personalize-url-tracking-parameters}
 
