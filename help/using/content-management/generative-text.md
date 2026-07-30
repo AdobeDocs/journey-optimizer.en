@@ -164,14 +164,9 @@ Before you begin generating text with Generate Content for mobile channels, you 
    * **Push notifications**: [Learn more](../push/design-push.md)
    * **SMS**: [Learn more](../mobile/create-mobile-message.md)
 
-1. Access Generate Content:
-   * **For Push notifications**: Click the **[!UICONTROL Edit text with AI]** menu next to your **[!UICONTROL Title]** or **[!UICONTROL Message]** fields. You can also directly access the **Generate Content** menu.
+1. Access the **[!UICONTROL Show Generate Content]** menu.
    
-       ![Push notification composition screen with Edit text with Generate Content button](assets/push-text-1.png){zoomable="yes"}
-   
-   * **For SMS**: Click the **[!UICONTROL Edit text with AI]** menu next to your **[!UICONTROL Message]** or access the **[!UICONTROL Show Generate Content]** menu.
-   
-       ![SMS message editor with Generate Content panel opened](assets/sms-genai-1.png){zoomable="yes"}
+    ![Push notification editor with Generate Content panel opened](assets/push-genai-full-1.png){zoomable="yes"}
 
 ### Generate text {#mobile-generate-content}
 
