@@ -78,6 +78,6 @@ Integrate Adobe solutions like Experience Manager, Stock, and GenStudio for stre
 
 ## Additional Resources
 
-- **[AI Assistant for Content Generation](ai-assistant-landing-page.md)** - Leverage AI tools to generate and personalize content across emails, SMS, web pages, and experiments.
+- **[Generate Content](ai-assistant-landing-page.md)** - Use AI to generate and personalize content across emails, SMS, web pages, and experiments.
 - **[Multilingual Content Management](content-multilingual-landing-page.md)** - Create and manage multilingual content using manual and automated translation workflows.
 - **[Content Experimentation](../using/content-management/get-started-experiment.md)** - Set up and analyze experiments to optimize audience engagement and campaign outcomes.

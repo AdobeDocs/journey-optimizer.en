@@ -286,3 +286,4 @@ Once the package is published, you need to import it into the target sandbox. Fo
    ![](assets/journey-sandbox8.png)
 
 1. Access your target sandbox and perform a thorough check of all the copied objects.
+

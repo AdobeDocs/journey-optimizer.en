@@ -107,9 +107,13 @@ A **new user interface** is available for the journey canvas, built to scale wit
 ![](assets/journey-new-canvas.png)
 
 To switch to the new experience, click the **[!UICONTROL New experience]** button in the journey canvas. Once switched, this setting is saved at the journey level, so the journey will open in the new experience by default on subsequent visits. To revert, click the **[!UICONTROL Old experience]** button.
+In addition, your last selected experience (Old or New) is now remembered at the user level. Going forward, this preference is automatically applied whenever you create a new journey, so you don't need to switch manually each time.
 
 ![](assets/journey-new-experience-switch.png)
 
+Watch this video for a video overview of the new journey canvas experience:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496193)
 
 ## Start your journey {#start-your-journey}
 
@@ -118,7 +122,6 @@ When you design your journey, the first question you want to ask is how profiles
 There are two possibilities:
 
 1. **Start with an event**: when a journey is set to listen to events, individuals enter the journey **unitarily** in real-time. Messages included in your journey are sent to the person currently flowing into the journey. [Learn more about events](../event/about-events.md)
-
 1. **Start with a Read Audience**: you can set your journey to listen to [!DNL Adobe Experience Platform] audiences. In this case, all individuals belonging to the specified audience enter the journey. Messages included in your journey are sent to the individuals belonging to the audience. Learn more about [read audience](read-audience.md). For more information on how to generate and target audiences in Journey Optimizer, refer to [this section](../audience/about-audiences.md).
 
 ## Define the next steps{#define-next-steps}
