@@ -11,12 +11,16 @@ keywords: waf, firewall, ip, subdomain, security, traffic, inbound
 ---
 # Manage allowed IPs {#waf-ip-allowlist}
 
+>[!CONTEXTUALHELP]
+>id="ajo_waf_allowed_ips"
+>title="Enter allowed IPs for the selected subdomain"
+>abstract="Select a delegated subdomain and enter the public egress IPs of your Web Application Firewall. Once saved, [!DNL Journey Optimizer] will reject any inbound request to that subdomain that does not originate from one of the declared IPs. Always confirm the exact egress IPs with your security team before saving."
+
 >[!BEGINSHADEBOX]
 
 **On this page:** Add and manage your Web Application Firewall (WAF) egress IPs per delegated subdomain directly in [!DNL Journey Optimizer], so that only traffic routed through your firewall can reach your [!DNL Journey Optimizer]-hosted links.
 
 >[!ENDSHADEBOX]
-
 
 Organizations with strict network security requirements — such as those in the financial sector — can mandate that all requests to links hosted by [!DNL Adobe Journey Optimizer] must flow through a customer-managed **Web Application Firewall** (WAF) before reaching the Adobe network. Any request that bypasses the firewall must be rejected.
 
@@ -65,11 +69,11 @@ Always confirm the exact egress IPs with your security team before saving, and t
 >
 >To access and manage the IP allowed list, you must have the **[!UICONTROL View Allowed IPs]** and **[!UICONTROL Manage Allowed IPs]** permission. [Learn more](../administration/ootb-permissions.md)
 
-To access the list of subdomains for which you have allowed IPs for your Web Application Firewall, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General Settings]**, and select **[!UICONTROL Allowed list - IPs]**.
+To access the list of subdomains for which you have allowed the IPs of your Web Application Firewall, go to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** > **[!UICONTROL General Settings]**, and select **[!UICONTROL Allowed list - IPs]**.
 
-![WAF IP allowed list inventory](assets/waf-ip-allowlist.png){width="90%"}
+![IP allowed list inventory](assets/waf-ip-allowlist.png){width="90%"}
 
-The inventory page lists all subdomains that have at least one WAF IP allowed, across all channel types (Email, Landing page, SMS, Web). Learn more on subdomains in [this section](about-subdomain-delegation.md).
+The inventory page lists all subdomains that have at least one IP allowed, across all channel types (Email, Landing page, SMS, Web). Learn more on subdomains in [this section](about-subdomain-delegation.md).
 
 The list shows the number of allowed IPs per subdomain, and the author of the last modification.
 
@@ -77,12 +81,7 @@ You can filter the inventory by channel type, and search by subdomain name.
 
 ## Add IPs to the allowed list {#waf-ip-allowlist-add}
 
->[!CONTEXTUALHELP]
->id="ajo_waf_allowed_ips"
->title="Enter WAF allowed IPs for the selected subdomain"
->abstract="Select a delegated subdomain and enter the public egress IPs of your Web Application Firewall. Once saved, [!DNL Journey Optimizer] will reject any inbound request to that subdomain that does not originate from one of the declared IPs. Always confirm the exact egress IPs with your security team before saving."
-
-To add  Web Application Firewall IPs to the allowed list for a given subdomain, follow the steps below.
+To add IPs to the allowed list for a given subdomain, follow the steps below.
 
 1. From the **[!UICONTROL Allowed list - IPs]** inventory, click the **[!UICONTROL Add allowed IPs]** button.
 
@@ -92,7 +91,7 @@ To add  Web Application Firewall IPs to the allowed list for a given subdomain, 
 
    Each valid, non-duplicate entry is validated inline before being added. You can add up to **50 IP entries per subdomain**.
 
-   ![Add WAF allowed IPs for a subdomain](assets/waf-ip-allowlist-add-ip.png)
+   ![Add allowed IPs for a subdomain](assets/waf-ip-allowlist-add-ip.png)
 
    >[!IMPORTANT]
    >
@@ -112,11 +111,11 @@ Now any requests to this subdomain from any IP not on this list will be rejected
 
 To update the allowed IPs for an existing subdomain, click the subdomain name in the inventory.
 
-The **Subdomain** field is read-only <!--as well as the Channel field--> — it cannot be changed after creation.
+The **[!UICONTROL Subdomain]** field is read-only <!--as well as the Channel field--> — it cannot be changed after creation.
 
 Add new IPs using the input field, or remove existing IPs by clicking the **✕** icon on each chip.
 
-![Edit or remove WAF allowed IPs](assets/waf-ip-allowlist-edit-ip.png)
+![Edit or remove allowed IPs](assets/waf-ip-allowlist-edit-ip.png)
 
 >[!IMPORTANT]
 >
@@ -124,16 +123,16 @@ Add new IPs using the input field, or remove existing IPs by clicking the **✕*
 
 ## Remove allowed IPs {#waf-ip-allowlist-remove}
 
-To remove all IPs from the allowed list for a subdomain, use the Delete icon from the Actions column in the inventory. This fully lifts the WAF restriction for that subdomain.
+To remove all IPs from the allowed list for a subdomain, use the **Delete** icon from the **[!UICONTROL Actions]** column in the inventory. This fully lifts the WAF restriction for that subdomain.
 
-![Delete icon in the Actions column of the Allowed IP list](assets/waf-ip-allowlist-delete-icon.png)
+![Delete icon in the Actions column of the allowed IP list](assets/waf-ip-allowlist-delete-icon.png)
 
 A confirmation pop-up opens. Type the exact subdomain name to confirm, then click **[!UICONTROL Remove]**.
 
-![Confirm removal of all WAF allowed IPs for a subdomain](assets/waf-ip-allowlist-remove.png){width="80%"}
+![Confirm removal of all allowed IPs for a subdomain](assets/waf-ip-allowlist-remove.png){width="80%"}
 
 >[!WARNING]
 >
->Upon confirming, this action removes all allowed list IPs for the subdomain you entered. Inbound traffic will once again be accepted from any source, including requests that bypass your Web Application Firewall. This cannot be undone — IPs must be re-entered to restore the restriction.
+>Upon confirming, this action removes all allowed IPs for the subdomain you entered. Inbound traffic will once again be accepted from any source, including requests that bypass your Web Application Firewall. This cannot be undone — IPs must be re-entered to restore the restriction.
 
 After removing all IPs, the subdomain no longer appears in the inventory. You can reconfigure it at any time by adding IPs again for this subdomain.
