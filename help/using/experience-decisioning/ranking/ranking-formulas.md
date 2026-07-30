@@ -341,7 +341,7 @@ For each selected variant, the simulation returns an ordered result:
 
 >[!NOTE]
 >
->AI-powered formula optimization relies on the same generative AI capabilities as **AI Assistant**, and uses the same access controls. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. For details, refer to [Access AI Assistant](../../content-management/gs-generative.md#generative-access).
+>AI-powered formula optimization relies on the same generative AI capabilities as **Generate Content**, and uses the same access controls. Users must be granted the **[!UICONTROL Generate Content]** permission on the **[!UICONTROL AI Assistant]** resource. For details, refer to [Access Generate Content](../../content-management/gs-generative.md#generative-access).
 
 To optimize a ranking formula:
 
