@@ -322,7 +322,7 @@ Specific guardrails apply to **Journey Fragments**, including a maximum of **20 
 
 #### Send using waves {#waves-g}
 
-Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../building-journeys/send-using-waves.md#limitations-guardrails).
+Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../delivery/send-using-waves.md#limitations-guardrails).
 
 #### Journey simulation {#simulation-g}
 

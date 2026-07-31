@@ -26,6 +26,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## July 2026 {#july-2026}
 
+* A new **Delivery settings** section has been added to the documentation navigation. It groups delivery-related features that apply across journeys, campaigns, and orchestrated campaigns: **Send using waves**, **Send-Time optimization**, and **Channel optimization** have all been moved there from the Journeys section.
+
+* The separate **Send using waves** documentation pages for journeys and action campaigns have been merged into a single page, now also covering orchestrated campaigns. [Read more](../delivery/send-using-waves.md)
+
 * A tip pointing to the Experience League community article on **how to detach and rejoin nodes** in the new journey canvas has been added to the **Design your journey** page. [Read more](../building-journeys/using-the-journey-designer.md)
 
 * The **Grid** component section has been added to the **Email Designer content components** page. It lets you organize content into a structured grid of rows and columns, where each cell can contain other content components. [Read more](../email/content-components.md#grid)
@@ -42,7 +46,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A warning has been added to the **Edit PTR records** page to inform customers that when adding a new forward DNS record to their platform, the forward DNS record for the old subdomain must not be removed until the move completes, as doing so will cause the edit to fail. [Read more](../configuration/ptr-records.md#edit-ptr-subdomains-cname)
 
-* The **Send using waves** pages have been updated to clarify audience re-evaluation behavior across waves: audience membership is fixed at activation time (snapshot), but profile attributes and consent are evaluated at the time each wave processes. This means opt-outs occurring between waves are respected. Read more in the [journeys](../building-journeys/send-using-waves.md#faq) and [campaigns](../campaigns/send-using-waves.md#faq) FAQ sections.
+* The **Send using waves** pages have been updated to clarify audience re-evaluation behavior across waves: audience membership is fixed at activation time (snapshot), but profile attributes and consent are evaluated at the time each wave processes. This means opt-outs occurring between waves are respected. Read more in the [FAQ section](../delivery/send-using-waves.md#faq).
 
 * The **Data Governance** page has been updated to clarify that DULE policy enforcement applies to **profile attribute fields only**. Event-based fields (context attributes such as journey event fields) are not supported: labels applied to those fields in the UI will not restrict data usage. [Read more](../action/action-privacy.md)
 
@@ -191,7 +195,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Read Audience** activity documentation has been updated to clarify that a **Business Event** activity is an exception to the rule that Read Audience must be the first activity in a journey. A note has also been added referencing the **Optimize** activity as an advanced alternative for controlling audience targeting. [Read more](../building-journeys/read-audience.md)
 
-* **Send using waves** in journeys is now generally available. The Limited Availability flag has been removed from the documentation. [Read more](../building-journeys/send-using-waves.md)
+* **Send using waves** in journeys is now generally available. The Limited Availability flag has been removed from the documentation. [Read more](../delivery/send-using-waves.md)
 
 * The **Jump** activity documentation has been enriched with a new design strategy section — **Bite-sized sub-journeys** — explaining how to break complex end-to-end flows into smaller, focused sub-journeys connected via the Jump activity. [Read more](../building-journeys/jump.md#jump-strategy)
 
