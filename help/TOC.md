@@ -249,7 +249,7 @@ nudge: yes
   + Journey arbitration {#journey-arbitration}
     + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
     + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
-+ Delivery settings {#delivery-settings}
++ Delivery settings {#delivery-settings} 
   + [Send using waves](using/delivery/send-using-waves.md)
   + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
   + [Channel optimization](using/building-journeys/channel-optimization.md)
