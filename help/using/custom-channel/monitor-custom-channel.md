@@ -21,6 +21,10 @@ Once a custom channel is created and activated, you can [manage its lifecycle](c
 
 [!DNL Journey Optimizer] provides out-of-the-box reporting for custom channels.
 
+The Custom channel campaign report is detailed in [this section](../reports/campaign-global-report-cja-custom-channel.md).
+
+<!--The Custom channel journey report is detailed in this section. TBC-->
+
 The following metrics are available for custom channels in both live (24h) and global (CJA) reports.<!--TBC and add or replace with CJA link when available-->
 
 | Metric | Description |

@@ -88,6 +88,27 @@ The following capabilities and improvements have been introduced in this release
 <table>
 <thead>
 <tr>
+<th><strong>Custom outbound channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now introduces Custom channels, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder.</p >
+<p>Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
+<p>This fills a gap previously addressed by custom actions, which are limited only to journeys and lack dedicated channel capabilities.</p>
+<p>Custom outbound channels are currently available as Limited Availability. To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/custom-channel.gif"></p>
+<p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
+<p> Availability date: July 31, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Channel optimization</strong><br/></th>
 </tr>
 </thead>
@@ -110,37 +131,13 @@ The following capabilities and improvements have been introduced in this release
 </tbody>
 </table>
 
-+++ Coming soon
-
-<table>
-<thead>
-<tr>
-<th><strong>Custom outbound channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer now introduces Custom channels, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder.</p >
-<p>Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
-<p>This fills a gap previously addressed by custom actions, which are limited only to journeys and lack dedicated channel capabilities.</p>
-<p>Custom outbound channels are currently available as Limited Availability. To gain access, contact your Adobe representative.</p>
-<!-- GIF placeholder: to be added -->
-<!-- Documentation link: TBD -->
-</td>
-</tr>
-</tbody>
-</table>
-
-* **WhatsApp Channel: Support WhatsApp Flow templates** - You can now send WhatsApp Flow templates in Adobe Journey Optimizer to deliver interactive multi-screen experiences like surveys and lead capture. Responses are captured upon submission and stored as raw JSON payloads in the new Journey Optimizer Channel Tracking Event Dataset. 
+* **WhatsApp Channel: Support WhatsApp Flow templates** - You can now send WhatsApp Flow templates in Adobe Journey Optimizer to deliver interactive multi-screen experiences like surveys and lead capture. Responses are captured upon submission and stored as raw JSON payloads in the new Journey Optimizer Channel Tracking Event Dataset. [Learn more](../data/get-started-datasets.md)
 
 * **Enhanced Custom Provider Integrations - Mobile** - Custom provider integrations now offer expanded flexibility with key messaging and header updates:
 
   * Header Customization: You can now edit the default Content-Type header value and add up to 10 custom header parameters.
 
   * SMS Payload Support: Added support for Adobe Journey Optimizer helper functions within the SMS payload, including encode64.
-
-+++
 
 ### Administration {#july-26-administration}
 
@@ -303,6 +300,25 @@ The following capabilities and improvements are coming to orchestrated campaigns
 ### Content management {#july-26-content}
 
 The following capabilities and improvements have been added to content management in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Guided Adoption Capabilities</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Transitioning to Adobe Journey Optimizer from another marketing platform is easier with guided capabilities that help you move existing email content and journeys into Journey Optimizer. A dedicated workspace lets you reuse what you have instead of rebuilding from scratch.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/guided-adoption.gif"></p>
+<p>For more information, refer to the <a href="../start/migrate-content-and-journeys.md">detailed documentation</a>.</p>
+<p> Availability date: July 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 * **Quick launch shortcuts in Fragments inventory** - You can now quickly access common actions from the Fragments list using the **[!UICONTROL More actions]** button. Available shortcuts include editing the fragment, opening its details, and discarding the draft version. [Learn more](../content-management/manage-fragments.md#quick-launch-fragments)
 

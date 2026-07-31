@@ -21,6 +21,8 @@ Before activating a journey or campaign that uses a custom channel, validate tha
 
 While a custom channel is in **[!UICONTROL Draft]** status, use the **[!UICONTROL Test]** button in the Channel Builder to send a test request to your endpoint and validate the end-to-end connection before activating. [Learn more](create-custom-channel.md#test-connection)
 
+![Test connection button](assets/custom_channel_test_connection.png){width="70%"}
+
 This test confirms:
 
 * That the endpoint is reachable from [!DNL Journey Optimizer]'s outbound IPs.
@@ -29,7 +31,13 @@ This test confirms:
 
 Check your external system's logs to confirm that the test request was received with the expected headers and payload structure.
 
-## Simulate content with test profiles {#simulate-content}
+## Preview and test your custom channel experience {#preview-test}
+
+Once you have created a custom channel experience, you can validate the end-to-end delivery of personalized content before activating a journey or campaign.
+
+Use the following features to preview and test your custom channel payload and verify the end-to-end experience.
+
+### Simulate content with test profiles {#simulate-content}
 
 The **[!UICONTROL Simulate content]** feature resolves personalization expressions against test profiles so you can inspect the exact payload that would be sent before any real message is delivered.
 
@@ -44,17 +52,23 @@ The **[!UICONTROL Simulate content]** feature resolves personalization expressio
    * Required payload fields are populated.
    * Helper functions produce the expected formatted output.
 
+   ![Simulate content with test profiles](assets/custom_channel_simulate_content.png){width="70%"}
+
 >[!TIP]
 >
 >Test with multiple profiles representing different audience segments to catch edge cases — for example, profiles with missing optional attributes, non-Latin character sets, or null values in personalized fields.
 
-## Send a proof {#send-proof}
+Learn more on previewing and testing content in [this section](../content-management/preview-test.md).
+
+### Send a proof {#send-proof}
 
 To validate end-to-end delivery before activating, send a proof to a set of test recipients:
 
 1. In the **[!UICONTROL Simulate content]** panel, switch to the **[!UICONTROL Send proof]** tab.
 
-1. Add the profiles you want to use. You can upload a CSV file with profiles that are not defined as test profiles in [!DNL Journey Optimizer].
+1. Add the profiles you want to use. You can upload a CSV file with profiles that are not defined as test profiles in [!DNL Journey Optimizer]. Learn more on [creating test profiles](../audience/creating-test-profiles.md)
+
+   ![Send proof tab](assets/custom_channel_send_proof.png){width="70%"}
 
 1. Click **[!UICONTROL Send proof]**. [!DNL Journey Optimizer] calls your external endpoint with the personalized payload for each selected profile.
 
@@ -62,9 +76,9 @@ To validate end-to-end delivery before activating, send a proof to a set of test
 
 The proof result is displayed using the same validation patterns as email proofing: required fields, type mismatches, and schema validation errors are surfaced before the proof is sent.
 
-Learn more on sending proofs in [campaigns](../campaigns/create-campaign.md#send-proof) and [journeys](../building-journeys/testing-the-journey.md).
+Learn more on sending proofs in [this section](../content-management/proofs.md)
 
-## Test in journey test mode {#test-journey}
+### Test in journey test mode {#test-journey}
 
 For end-to-end journey validation, activate the journey in **[!UICONTROL Test mode]**:
 
@@ -80,9 +94,9 @@ For end-to-end journey validation, activate the journey in **[!UICONTROL Test mo
 
 1. Click **[!UICONTROL Stop test]** when done.
 
-Learn more on testing journeys in [test mode](../building-journeys/testing-the-journey.md).
+Learn more on testing journeys in test mode in [this section](../building-journeys/testing-the-journey.md).
 
-## Simulate a journey {#simulate-journey}
+### Simulate a journey {#simulate-journey}
 
 [!DNL Journey Optimizer]'s **Simulation** mode lets you validate your journey end-to-end using simulated users—temporary profile-like entities that do not persist in Adobe Experience Platform—without requiring pre-created test profiles.
 
@@ -102,9 +116,9 @@ To simulate a journey using a custom channel:
 >
 >Simulation is available for both draft and live journeys, and uses temporary simulated users that do not count toward profile quotas or real endpoint calls.
 
-[Learn more about journey simulation](../building-journeys/simulate-journey-gs.md)
+Learn more about journey simulation in [this section](../building-journeys/simulate-journey-gs.md).
 
-## Pre-activation checklist {#checklist}
+### Pre-activation checklist {#checklist}
 
 Before activating your journey or campaign, confirm the following:
 

@@ -26,6 +26,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## July 2026 {#july-2026}
 
+* A tip pointing to the Experience League community article on **how to detach and rejoin nodes** in the new journey canvas has been added to the **Design your journey** page. [Read more](../building-journeys/using-the-journey-designer.md)
+
+* The **Grid** component section has been added to the **Email Designer content components** page. It lets you organize content into a structured grid of rows and columns, where each cell can contain other content components. [Read more](../email/content-components.md#grid)
+
 * The **Decisioning Migration API** documentation has been updated with a clarification that the target sandbox **can be the same as the source sandbox**. The migration process handles this scenario and ensures data integrity regardless of whether objects are migrated within the same sandbox or to a different one. [Read more](../experience-decisioning/decisioning-migration-api.md#target-sandbox-preparation)
 
 * A new **CX Coworker Skills** page is now available. It provides comprehensive documentation of all Journey Skills available in Journey Optimizer, including Journey Create, Channel Content Create, Loyalty Challenge Management, and Journey Analyze, with use cases, sample prompts, and best practices for each skill. [Read more](../start/ajo-coworker-skills.md)

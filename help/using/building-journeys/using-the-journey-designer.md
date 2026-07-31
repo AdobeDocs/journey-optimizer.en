@@ -178,6 +178,10 @@ In the canvas, when two activities are disconnected, a warning is displayed. Pla
 
  ![Warning icon showing disconnected activities in canvas](assets/canvas-disconnected.png)
 
+>[!TIP]
+>
+>For step-by-step guidance on detaching and rejoining nodes in the journey canvas, see this [Experience League community article](https://experienceleaguecommunities.adobe.com/adobe-journey-optimizer-15/how-to-detach-rejoin-nodes-in-the-new-journey-canvas-251908){target="_blank"}.
+
 ## Copy and paste activities {#copy-paste}
 
 You can copy one or several activities of a journey and paste them either in the same journey or a different one. This allows you to save time if you want to reuse numerous activities that have been already configured in a previous journey. 

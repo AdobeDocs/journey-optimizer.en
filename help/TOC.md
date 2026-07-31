@@ -30,7 +30,7 @@ nudge: yes
 + Get started {#get-started}
   + [Start here](/help/rp_landing_pages/get-started-landing-page.md)
   + [Onboarding hub](using/start/onboarding-hub.md)
-  + {hide-from-toc}[Migrate content and journeys](using/start/migrate-content-and-journeys.md)
+  + [Migrate content and journeys](using/start/migrate-content-and-journeys.md)
   + Essentials {#essentials}
     + [What is Journey Optimizer](using/start/get-started.md)
     + [Understanding how it works](using/start/understanding-ajo.md)
@@ -157,6 +157,7 @@ nudge: yes
     + [Event Transformer guide](using/loyalty-challenges/event-transformer-guide.md)
     + [Loyalty Challenges permissions](using/loyalty-challenges/loyalty-permissions.md)
     + [Loyalty data and datasets](using/loyalty-challenges/loyalty-data-and-datasets.md)
+    + [Loyalty Challenges APIs](using/loyalty-challenges/loyalty-challenges-api.md)
 + Campaigns {#campaigns}
   + {hide-from-toc} [Campaigns](/help/rp_landing_pages/campaigns-landing-page.md)
   + [Get started with campaigns](using/campaigns/get-started-with-campaigns.md)
@@ -455,17 +456,17 @@ nudge: yes
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
       + [Configure Live activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
   + Custom channels {#custom-channel}
-    + {hide-from-toc} [Get started with custom channels](using/custom-channel/get-started-custom-channel.md)
+    + [Get started with custom channels](using/custom-channel/get-started-custom-channel.md)
     + Configure custom channels {#configure-custom-channel}
-      + {hide-from-toc} [Set up your custom channels](using/custom-channel/configure-custom-channel.md)
-      + {hide-from-toc} [Create a custom channel](using/custom-channel/create-custom-channel.md)
-      + {hide-from-toc} [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
-      + {hide-from-toc} [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
-      + {hide-from-toc} [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
+      + [Set up your custom channels](using/custom-channel/configure-custom-channel.md)
+      + [Create a custom channel](using/custom-channel/create-custom-channel.md)
+      + [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
+      + [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
+      + [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
     + Create custom channel experiences {#create-custom-channel-experiences}
-      + {hide-from-toc} [Create a custom channel experience](using/custom-channel/create-custom-experience.md)
-      + {hide-from-toc} [Test your custom channel experience](using/custom-channel/test-custom-channel.md)
-    + {hide-from-toc} [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
+      + [Create a custom channel experience](using/custom-channel/create-custom-experience.md)
+      + [Test your custom channel experience](using/custom-channel/test-custom-channel.md)
+    + [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
@@ -640,6 +641,7 @@ nudge: yes
       + [Campaign report](using/reports/campaign-global-report-cja.md)
       + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
       + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
+      + [Custom channel campaign report](using/reports/campaign-global-report-cja-custom-channel.md)
       + [Direct mail campaign report](using/reports/campaign-global-report-cja-direct.md)
       + [Email campaign report](using/reports/campaign-global-report-cja-email.md)
       + [Experimentation campaign report](using/reports/campaign-global-report-cja-experimentation.md)

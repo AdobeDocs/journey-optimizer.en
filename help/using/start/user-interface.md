@@ -403,3 +403,10 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >abstract="The **Line** activity lets you add a LINE action to your Orchestrated campaign. Build personalized content, from text and stickers to images, videos, locations, and Flex Messages, to engage customers on LINE."
 
 
+
+<!-- Asset selector content generation -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_assets_selection_mode"
+>title="Assets selection mode"
+>abstract="X"
