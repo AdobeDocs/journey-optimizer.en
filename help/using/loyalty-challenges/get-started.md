@@ -7,9 +7,6 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
-mini-toc-levels: 1
 exl-id: 1c84d9d0-cef7-4764-9f72-5428597a7203
 feature_v2: []
 subfeature_v2:
@@ -18,48 +15,16 @@ subfeature_v2:
 ---
 # Get started with loyalty challenges {#get-started-loyalty-challenges}
 
->[!BEGINSHADEBOX]
-
-**Table of contents**
-
-**[Get started with Loyalty Challenges](get-started.md)** ◀︎ **You are here**
-
-<table style="table-layout:fixed">
-<tr style="border: 0;">
-<td style="vertical-align:top;">
-
-**Create and manage challenges**
-
-* [Access & manage challenges and tasks](access-loyalty-challenges.md)
-* [Create challenges](create-challenges.md)
-* [Create tasks](create-tasks.md)
-* [Monitor loyalty challenge performance](loyalty-reporting.md)
-
-</td>
-<td style="vertical-align:top;">
-
-**Configure and integrate**
-
-* [Configure loyalty challenges](loyalty-admin.md)
-* [Loyalty data and datasets](loyalty-data-and-datasets.md)
-* [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}
-
-</td>
-</tr>
-</table>
-
->[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
-
-## Overview {#overview}
-
 >[!CONTEXTUALHELP]
 >id="ajo_loyalty_inventory"
 >title="Loyalty challenges"
 >abstract="Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends."
+
+>[!AVAILABILITY]
+>
+>Journey Optimizer Loyalty is not currently available to Healthcare Shield and Privacy and Security Shield customers. Availability for Healthcare Shield and Privacy and Security Shield customers will be updated upon future feature readiness.
+
+## Overview {#overview}
 
 Loyalty Challenges enable you to create engaging, gamified loyalty programs that drive customer behavior and deepen brand relationships. Build challenges that reward customers for specific actions—from making purchases and writing reviews to engaging on social media and referring friends.
 
@@ -87,23 +52,26 @@ You can create these types of challenge experiences:
 
 * **Bring your own data challenges** (restricted availability): The challenge framework (tasks and rewards) is assembled from your Loyalty Challenges data integration. You configure Settings, Content, and Messaging as you would for any other challenge type.
 
+>[!TIP]
+>You can also create and manage loyalty challenges using **Loyalty Challenge Management** in [CX Coworker Journey Skills](../start/ajo-coworker-skills.md#loyalty-challenge-management) with natural language prompts for faster challenge creation.
+
+➡️ [Watch an overview of the feature](#video)
+
 ## How it works {#how-it-works}
 
-Creating and launching a loyalty challenge follows this workflow:
+Using Loyalty Challenges involves three broad phases — setup, execution, and measurement — typically shared across admin and practitioner roles.
 
-1. **Create a challenge** - Choose the challenge type (Standard, Streak, Sequential, or Bring your own data when available). [Learn how to choose a challenge type](create-challenges.md#create-the-challenge).
+**1. Set up your program** *(admin)*
 
-1. **Configure settings** - In the Settings tab, define challenge details, audience, schedule, rules (opt-in, progress tracking, repeat limits), and optional metadata. [Learn about challenge settings](create-challenges.md#settings).
+Before challenges can be authored, an administrator configures the program foundations: reward providers, event definitions that map customer actions to task completions, product inventory, and exclusion lists. [Learn how to configure loyalty challenges](loyalty-admin.md).
 
-1. **Add tasks and rewards** - In the Structure tab, define tasks and rewards (not required for Bring your own data challenges).
+**2. Author and launch challenges** *(practitioner)*
 
-1. **Design content cards** - Create the visual representation of your challenge using Journey Optimizer content cards that display on customer devices.
+Marketers create challenges by selecting a type (Standard, Streak, Sequential, or Bring your own data), configuring settings (audience, schedule, rules), and defining tasks and rewards. They can optionally surface the challenge on member-facing interfaces using a **content card** or **code-based experience**, and set up channel notifications for key moments across the challenge lifecycle. Once configured, they publish the challenge, generate the auto-built journey, and publish it to make the challenge live. [Learn how to create challenges](create-challenges.md).
 
-1. **Configure messaging** (optional) - Set up multi-channel messages (in-app, email, push) for key lifecycle stages: launch, in-progress, and completion.
+**3. Monitor performance** *(practitioner / analyst)*
 
-1. **Launch the challenge** - Publish the challenge, then generate a journey. Journey Optimizer automatically creates the journey for your challenge. Publish the auto-generated journey to make the challenge available to customers.
-
-For detailed step-by-step instructions, see [Create challenges](create-challenges.md).
+Once a challenge is live, built-in reporting dashboards provide challenge-level metrics: audience funnel performance, task completion rates, reward issuance, and revenue impact. The AI-powered insights engine also surfaces contextual recommendations to help optimize program performance. [Learn about loyalty reporting](loyalty-reporting.md).
 
 ## Prerequisites {#prerequisites}
 
@@ -111,36 +79,17 @@ Before using Loyalty Challenges, ensure you have:
 
 +++Required permissions
 
-To use Loyalty Challenges, you need appropriate permissions in Journey Optimizer and Adobe Experience Platform.
+To use Loyalty Challenges, you must be assigned to a Loyalty role. Default roles are available for administrators, practitioners, and analysts in the Prod sandbox. For non-Prod sandboxes, your administrator must create a custom role with the required Loyalty permissions.
 
-**Journey Optimizer:**
-
-* `journeys.read`
-* `journeys.write`
-* `journeys.delete`
-* `journeys.publish`
-* `journeys_events.read`
-* `journeys_events.write`
-* `journeys_events.delete`
-* `journeys_report.read`
-* `messages.read`
-* `messages_report.read`
-
-**Adobe Experience Platform:**
-
-* `segments.read`
-* `profiles.read`
-* `identity_namespace.read`
-
-Contact your administrator if you cannot access the feature or need additional permissions.
+Contact your administrator if you cannot access the feature or need additional permissions. [Learn how to configure Loyalty Challenges permissions](loyalty-permissions.md).
 
 +++
 
 +++Configure the loyalty program (administrators)
 
-Administrators configure reward providers, event definitions, product inventory, exclusions, and global settings in the **[!UICONTROL Loyalty admin]** menu. Marketers who only create challenges do not need access to this menu. [Learn how to configure loyalty challenges](loyalty-admin.md)
+Administrators configure reward providers, event definitions, product inventory, exclusions, and global settings in the **[!UICONTROL Loyalty configurations]** menu. Marketers who only create challenges do not need access to this menu. [Learn how to configure loyalty challenges](loyalty-admin.md)
 
-Contact your administrator if the **[!UICONTROL Loyalty admin]** menu is not visible in the left navigation.
+Contact your administrator if the **[!UICONTROL Loyalty configurations]** menu is not visible in the left navigation.
 
 +++
 
@@ -217,6 +166,18 @@ Now that you know what Loyalty Challenges are and how they work, it's time to di
 </tr>
 </table>
 
-## API reference {#api-reference}
+## Developer resources {#developer-resources}
 
-To manage loyalty challenges programmatically, use the [Loyalty Challenges API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}. The API lets you create, update, and manage challenges and tasks via REST endpoints.
+Loyalty Challenges exposes REST APIs that let you programmatically manage challenges and track profile participation:
+
+* **[Loyalty challenge metadata API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}** — Create, retrieve, update, publish, archive, and duplicate challenges.
+* **[Loyalty challenge state API](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges-state){target="_blank"}** — Query and update challenge participation state for individual profiles.
+
+For authentication and required headers, see the [authentication tutorial](https://developer.adobe.com/journey-optimizer-apis/references/authentication){target="_blank"}.
+
+## How-to video {#video}
+
+**New to Loyalty Challenges?** Watch this overview to understand the capabilities and benefits:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496441?quality=12)
+

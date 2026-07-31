@@ -379,12 +379,12 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >abstract="In this section, you can configure additional custom headers to be sent with each webhook request."
 
 
-<!-- JOURNEYS - EXPRESSION ASSISTANT -->
+<!-- JOURNEYS - GENERATE EXPRESSIONS WITH AI -->
 
 >[!CONTEXTUALHELP]
 >id="journeyExpAI"
->title="Expression Assistant"
->abstract="Use Expression Assistant to generate and refine expressions in Journey Optimizer."
+>title="Generate expressions with AI"
+>abstract="Use AI to generate and refine expressions in Journey Optimizer."
 
 
 <!-- OC - LOAD FILE ACTIVITY -->
@@ -401,3 +401,12 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >id="ajo_orchestration_line"
 >title="Line activity"
 >abstract="The **Line** activity lets you add a LINE action to your Orchestrated campaign. Build personalized content, from text and stickers to images, videos, locations, and Flex Messages, to engage customers on LINE."
+
+
+
+<!-- Asset selector content generation -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_assets_selection_mode"
+>title="Assets selection mode"
+>abstract="X"

@@ -199,7 +199,7 @@ In this section, you can set your different locales for managing your multilingu
 
     1. In Adobe Experience Platform Data Collection, access your Tag Properties. 
     
-    1. Access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+    1. Access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules){target="_blank"}
 
     1. In the rule's **[!UICONTROL IF]** section, add an event configured as below:
 
