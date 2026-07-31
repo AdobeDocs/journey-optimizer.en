@@ -58,7 +58,7 @@ The **[!UICONTROL Simulate content]** feature resolves personalization expressio
 >
 >Test with multiple profiles representing different audience segments to catch edge cases — for example, profiles with missing optional attributes, non-Latin character sets, or null values in personalized fields.
 
-Learn more on previewing and testing content in [this section](preview-test.md).
+Learn more on previewing and testing content in [this section](../content-management/preview-test.md).
 
 ### Send a proof {#send-proof}
 
