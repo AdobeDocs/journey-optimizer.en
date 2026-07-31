@@ -47,7 +47,8 @@ To create a channel configuration for a custom channel, follow the steps below.
 <!--
 1. For orchestrated campaigns, complete the **[!UICONTROL Execution details]** section to map profile dimensions and specify the execution address.
 
-   ![Execution details in orchestrated campaigns](assets/custom_channel_oc_execution_details.png){width="80%"}-->
+   ![Execution details in orchestrated campaigns](assets/custom_channel_oc_execution_details.png){width="80%"}
+-->
 
 1. Click **[!UICONTROL Submit]** to save and activate the channel configuration.
 
