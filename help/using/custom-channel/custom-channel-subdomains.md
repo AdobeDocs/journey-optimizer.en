@@ -53,7 +53,7 @@ To use a subdomain that is already delegated to Adobe, follow the steps below.
 
 1. Select **[!UICONTROL Use delegated subdomain]** from the **[!UICONTROL Configuration type]** section.
 
-    ![Use delegated subdomain configuration form](assets/custom_channel_create_subdomain.png){width="100%"}
+    ![Use delegated subdomain configuration form](assets/custom_channel_create_subdomain.png){width="90%"}
 
 1. Enter the prefix that will display in your custom channel URL. Only alpha-numeric characters and hyphens are allowed.
 

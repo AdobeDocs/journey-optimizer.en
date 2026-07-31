@@ -24,7 +24,7 @@ To create a channel configuration for a custom channel, follow the steps below.
 
 1. From the **[!UICONTROL Select channel]** drop-down list, select one of your activated custom channels.
 
-   ![Select channel](assets/custom_channel_select_channel.png){width="100%"}
+   <!--![Select channel](assets/custom_channel_select_channel.png){width="100%"}-->
 
 1. If the selected channel uses authentication (type is not **None**), the **[!UICONTROL API credentials]** field appears. Select the credentials to use for this configuration. [Learn more on API credentials](custom-channel-api-credentials.md)
 
@@ -36,11 +36,11 @@ To create a channel configuration for a custom channel, follow the steps below.
 
    Enter the value for each parameter. You can use the personalization editor to inject dynamic values (for example, a user identifier resolved from the profile). This allows you to customize the request for each recipient based on their profile data.
 
-   ![Dynamic parameters](assets/custom_channel_config_dynamic_parameters.png){width="100%"}
+   ![Dynamic parameters](assets/custom_channel_config_dynamic_parameters.png){width="70%"}
 
 1. If the custom channel has payload fields with the **[!UICONTROL Channel config]** checkbox enabled, those fields appear in the **[!UICONTROL Payload configuration]** section. [Learn more](create-custom-channel.md#payload-configuration)
 
-   ![Payload fields](assets/custom_channel_config_payload.png){width="100%"}
+   ![Payload fields](assets/custom_channel_config_payload.png){width="70%"}
 
    Configure a value for each field as appropriate for this configuration. This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates.
    
