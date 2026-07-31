@@ -1,6 +1,6 @@
 ---
 title: Create custom channel experiences
-description: Learn how to use a custom channel in a journey, campaign, or orchestrated campaign in Adobe Journey Optimizer.
+description: Learn how to use a custom channel in a journey or a campaign in Adobe Journey Optimizer.
 feature: Channel Configuration
 topic: Content Management
 role: User
@@ -12,7 +12,7 @@ badge: label="Limited Availability" type="Informative"
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to add a custom channel to a journey, campaign, or orchestrated campaign in Adobe Journey Optimizer, and author personalized message payloads using the expression editor.
+**On this page:** Learn how to add a custom channel to a journey or a campaign in Adobe Journey Optimizer, and author personalized message payloads using the expression editor.
 
 >[!ENDSHADEBOX]
 
@@ -20,7 +20,7 @@ badge: label="Limited Availability" type="Informative"
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
-In [!DNL Journey Optimizer], you can deliver messages using custom channels in campaigns, journeys, and orchestrated campaigns. Follow the steps below to set up your custom channel experience.
+In [!DNL Journey Optimizer], you can deliver messages using custom channels in campaigns and journeys. Follow the steps below to set up your custom channel experience.
 
 >[!NOTE]
 >

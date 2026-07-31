@@ -40,7 +40,7 @@ To access the **Channel Builder** and manage your custom channels, follow the st
 
 1. Select **[!UICONTROL Custom channels]** under the **[!UICONTROL Channel builder]** section.
 
-   ![Custom channels inventory](assets/custom_channels_inventory.png){width="70%"}
+   ![Custom channels inventory](assets/custom_channels_inventory.png){width="100%"}
 
 1. The inventory lists all custom channels in your sandbox, including their current status and the authentification type used to connect to the external endpoint.
 
@@ -54,7 +54,7 @@ To access the **Channel Builder** and manage your custom channels, follow the st
 
 1. To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**.
 
-   Archiving an active channel removes it from all selection drop-downs — campaign action selector, journey actions palette, orchestrated campaigns channel list, channel configurations, and content templates. Existing journeys and campaigns that already use the channel continue to function normally.
+   Archiving an active channel removes it from all selection drop-downs — campaign action selector, journey actions palette, <!--orchestrated campaigns channel list,--> channel configurations, and content templates. Existing journeys and campaigns that already use the channel continue to function normally.
 
 ## Create a custom channel {#create-channel}
 
@@ -64,7 +64,7 @@ To create a new custom channel, follow the steps below.
 
    ![General settings](assets/custom_channel_properties.png){width="70%"}
 
-1. In the **[!UICONTROL Properties]** section, enter a **[!UICONTROL Name]** for your custom channel. This name will appear in the journeys canvas, campaign action selector, and orchestrated campaigns channel list.
+1. In the **[!UICONTROL Properties]** section, enter a **[!UICONTROL Name]** for your custom channel. This name will appear in the journeys canvas and campaign action selector<!--and orchestrated campaigns channel list-->.
 
    >[!NOTE]
    >

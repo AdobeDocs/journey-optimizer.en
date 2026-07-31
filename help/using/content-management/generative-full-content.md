@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Generate full content with AI Assistant
-description: Learn how to generate complete content experiences with AI Assistant in Journey Optimizer.
+title: Generate full content with AI
+description: Learn how to generate complete content experiences with Generate Content in Journey Optimizer.
 feature: Content Assistant
 topic: Artificial Intelligence
 role: User
@@ -36,11 +36,11 @@ subfeature_v2:
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
     internal-label: AI content generation
 ---
-# Generate full content with AI Assistant {#generative-full-content}
+# Generate full content with AI {#generative-full-content}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to use AI Assistant in Adobe Journey Optimizer to generate, refine, and finalize complete text and image content experiences for your email, web, landing page, and push notification channels.
+**On this page:** Learn how to use AI in Adobe Journey Optimizer to generate, refine, and finalize complete text and image content experiences for your email, web, landing page, and push notification channels.
 
 >[!ENDSHADEBOX]
 
@@ -49,30 +49,30 @@ subfeature_v2:
 >Before starting using this capability, read out related [Guardrails and Limitations](gs-generative.md#generative-guardrails).
 ></br>
 >
->You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use AI Assistant in Journey Optimizer. For more information, contact your Adobe representative.
+>You must agree to a [user agreement](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html) before you can use Generate Content in Journey Optimizer. For more information, contact your Adobe representative.
 
-Use AI Assistant in Journey Optimizer to generate complete content experiences across your email, web, landing pages, and push notification channels. AI Assistant helps you optimize the impact of your deliveries by creating comprehensive content that resonates with your audience.
+Use AI to generate complete content experiences across your email, web, landing pages, and push notification channels. Generate Content helps you optimize the impact of your deliveries by creating comprehensive content that resonates with your audience.
 
 ## For Email and Web Channels {#email-web-channels}
 
-AI Assistant can produce complete content experiences for your email campaigns, web pages, and landing pages, generating both text and images. This robust functionality helps you create compelling, on-brand content that connects with your audience across all digital touchpoints.
+Generate Content can produce complete content experiences for your email campaigns, web pages, and landing pages, generating both text and images. This robust functionality helps you create compelling, on-brand content that connects with your audience across all digital touchpoints.
 
 ### Access and configure {#access-configure}
 
-Before you begin creating content with AI Assistant, you will need to set up your campaign or journey and open the content editor. Use the steps below to prepare your workspace and access the AI Assistant panel.
+Before you begin creating content with Generate Content, you will need to set up your campaign or journey and open the content editor. Use the steps below to prepare your workspace and access the Generate Content panel.
 
 1. Create and configure your campaign or journey:
    * **Email**: After creating and configuring your email campaign, click **[!UICONTROL Edit content]**. [Learn more](../campaigns/create-campaign.md)
    * **Web**: After creating and configuring your web page, click **[!UICONTROL Edit web page]**. [Learn more](../web/create-web.md)
    * **Landing Page**: After creating and configuring your landing page, click **[!UICONTROL Open designer]**. [Learn more](../landing-pages/create-lp.md)
 
-1. From the right-hand menu, select **[!UICONTROL AI Assistant]** (or **[!UICONTROL Show Content Assistant]** for web).
+1. From the right-hand menu, select **[!UICONTROL Generate Content]** (or **[!UICONTROL Show Content Assistant]** for web).
 
-    ![AI Assistant panel showing brand selection and prompt field](assets/full-email-1.png){zoomable="yes"}
+    ![Generate Content panel showing brand selection and prompt field](assets/full-email-1.png){zoomable="yes"}
 
-### Generate content {#generate-content}
+### Generate full content {#generate-content}
 
-With AI Assistant open, you can now configure the generation settings to create content that matches your brand and campaign goals. Customize text and image parameters, add brand assets, and provide prompts to guide the AI in generating relevant variations for your audience.
+With Generate Content open, you can now configure the generation settings to create content that matches your brand and campaign goals. Customize text and image parameters, add brand assets, and provide prompts to guide the AI in generating relevant variations for your audience.
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
 
@@ -80,7 +80,7 @@ With AI Assistant open, you can now configure the generation settings to create 
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns. [Learn more on prompt best practices](ai-assistant-prompting-guide.md)
 
-    ![Prompt field with Prompt Library button](assets/full-email-2.png){zoomable="yes"}
+    ![Prompt field with Prompt Library button](assets/full-email-2-bis.png){zoomable="yes"}
 
 1. **For Emails**, you can toggle the **[!UICONTROL Subject line]** and **[!UICONTROL Preheader]** options to include them in the variant generation.
 
@@ -88,7 +88,7 @@ With AI Assistant open, you can now configure the generation settings to create 
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
     * **[!UICONTROL Languages]**: Choose the language of your generated content.
-    * **[!UICONTROL Tone]**: The tone should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
+    * **[!UICONTROL Tone]**: The tone should resonate with your audience. Whether you want to sound informative, playful, or persuasive, Generate Content can adapt the message accordingly.
 
         ![Text settings panel showing Communication strategy, Languages, and Tone options](assets/full-email-4.png){zoomable="yes"}
 
@@ -107,7 +107,7 @@ With AI Assistant open, you can now configure the generation settings to create 
 
         ![Image settings panel displaying Content type, Visual intensity, Color and tone, Lighting, and Composition options](assets/full-email-6.png){zoomable="yes"}
 
-1. From the **[!UICONTROL Reference content]** menu, click **[!UICONTROL Upload file]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
+1. From the **[!UICONTROL Reference content]** menu, click **[!UICONTROL Upload file]** to add any brand asset which contains content that can provide additional context to Generate Content or select a previously uploaded one.
 
     Previously uploaded files are available in the **[!UICONTROL Uploaded reference content]** drop-down. Simply toggle the assets you wish to include in your generation.
 
@@ -133,7 +133,7 @@ After generating content variations, you can fine-tune the results to ensure the
 
     * **[!UICONTROL Rephrase]**: Rewrite the message while preserving its meaning. This option helps you generate alternative wording, improve flow, or adjust phrasing without changing the core message.
 
-    * **[!UICONTROL Use simpler language]**: Leverage AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
+    * **[!UICONTROL Use simpler language]**: Use AI to simplify your language, ensuring clarity and accessibility for a wider audience.
 
     * **[!UICONTROL Translate]**: Simplify your language to ensure clarity and accessibility for a wider audience.
 
@@ -141,7 +141,7 @@ After generating content variations, you can fine-tune the results to ensure the
 
     * **[!UICONTROL Change Communication strategy]**: Modify the messaging approach based on your objectives, such as creating urgency, or emphasizing exciting appeal.
 
-        ![Refine menu displaying options](assets/full-email-5.png){zoomable="yes"}
+        ![Refine menu displaying options](assets/full-email-5-bis.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -156,12 +156,12 @@ After generating content variations, you can fine-tune the results to ensure the
 
 ## For mobile channels {#mobile-channels}
 
-AI Assistant also supports content generation for mobile push notifications, enabling you to create engaging titles, messages, and images for your mobile apps. This helps you maintain consistent, high-quality communication across all customer touchpoints, including mobile.
+Generate Content also supports content generation for mobile push notifications, enabling you to create engaging titles, messages, and images for your mobile apps. This helps you maintain consistent, high-quality communication across all customer touchpoints, including mobile.
 
 
 ### Access and configure {#mobile-access-configure}
 
-To use AI Assistant for push notifications, first set up your push campaign and open the content editor. The steps below will guide you through preparing your campaign and accessing the AI Assistant tools.
+To use Generate Content for push notifications, first set up your push campaign and open the content editor. The steps below will guide you through preparing your campaign and accessing the Generate Content tools.
 
 1. After creating and configuring your push notification campaign, click **[!UICONTROL Edit content]**.
 
@@ -171,25 +171,23 @@ To use AI Assistant for push notifications, first set up your push campaign and 
 
 1. Personalize your push notification as needed. [Learn more](../push/design-push.md)
 
-1. Access the **[!UICONTROL Show AI Assistant]** menu.
+1. Access the **[!UICONTROL Show Generate Content]** menu.
 
-    ![Push notification editor with AI Assistant panel opened](assets/push-genai-full-1.png){zoomable="yes"}
+    ![Push notification editor with Generate Content panel opened](assets/push-genai-full-1.png){zoomable="yes"}
 
-### Generate content {#mobile-generate-content}
+### Generate full content {#mobile-generate-content}
 
-Once you have accessed AI Assistant for push notifications, you can configure the generation settings to create compelling mobile content. Define your text and image preferences, select brand assets, and use prompts to generate push notification variations that engage your mobile users.
+Once you have accessed Generate Content for push notifications, you can configure the generation settings to create compelling mobile content. Define your text and image preferences, select brand assets, and use prompts to generate push notification variations that engage your mobile users.
 
-1. Enable the **[!UICONTROL Use original content]** option for AI Assistant to personalize new content based on the selected content.
+1. Enable the **[!UICONTROL Use original content]** option for Generate Content to personalize new content based on the selected content.
 
 1. Select your **[!UICONTROL Brand]** to ensure AI-generated content aligns with your brand specifications. [Learn more](brands.md) on Brands.
-
-   Note that Brands feature is released as a private beta and will be progressively available to all customers in future releases.
 
 1. Fine tune the content by describing what you want to generate in the **[!UICONTROL Prompt]** field. 
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
     
-    ![AI Assistant with Prompt field and options](assets/push-genai-full-2.png){zoomable="yes"}
+    ![Generate Content with Prompt field and options](assets/push-genai-full-2.png){zoomable="yes"}
 
 1. Choose which field you want to generate: **[!UICONTROL Title]**, **[!UICONTROL Message]** and/or **[!UICONTROL Image]**.
 
@@ -197,7 +195,7 @@ Once you have accessed AI Assistant for push notifications, you can configure th
 
     * **[!UICONTROL Communication strategy]**: Choose the most suitable communication style for your generated text.
     * **[!UICONTROL Languages]**: Choose the language of your generated content.
-    * **[!UICONTROL Tone]**: The tone of your push notifications should resonate with your audience. Whether you want to sound informative, playful, or persuasive, AI Assistant can adapt the message accordingly.
+    * **[!UICONTROL Tone]**: The tone of your push notifications should resonate with your audience. Whether you want to sound informative, playful, or persuasive, Generate Content can adapt the message accordingly.
 
         ![Text settings panel for push notifications](assets/push-genai-full-3.png){zoomable="yes"} 
 
@@ -216,7 +214,7 @@ Once you have accessed AI Assistant for push notifications, you can configure th
 
         ![Image settings for push notifications](assets/push-genai-full-5.png){zoomable="yes"} 
 
-1. From the **[!UICONTROL Reference content]** menu, click **[!UICONTROL Upload file]** to add any brand asset which contains content that can provide additional context AI Assistant or select a previously uploaded one.
+1. From the **[!UICONTROL Reference content]** menu, click **[!UICONTROL Upload file]** to add any brand asset which contains content that can provide additional context to Generate Content or select a previously uploaded one.
 
     Previously uploaded files are available in the **[!UICONTROL Uploaded reference content]** drop-down. Simply toggle the assets you wish to include in your generation.
 
@@ -242,7 +240,7 @@ After reviewing your generated push notification variations, you can polish the 
 
     * **[!UICONTROL Rephrase]**: Rewrite the message while preserving its meaning. This option helps you generate alternative wording, improve flow, or adjust phrasing without changing the core message.
 
-    * **[!UICONTROL Use simpler language]**: Leverage AI Assistant to simplify your language, ensuring clarity and accessibility for a wider audience.
+    * **[!UICONTROL Use simpler language]**: Use AI to simplify your language, ensuring clarity and accessibility for a wider audience.
 
     * **[!UICONTROL Change tone]**: Adjust the tone of the message to better match your communication style, i.e. making it more friendly, professional, urgent, or inspirational.
 
@@ -260,6 +258,6 @@ When you have defined your content, audience and schedule, you are ready to prep
 
 ## How-to video {#video}
 
-Learn how to use AI Assistant in Journey Optimizer to generate full content experiences.
+Learn how to use Generate Content in Journey Optimizer to generate full content experiences.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433552)

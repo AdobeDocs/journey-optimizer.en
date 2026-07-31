@@ -122,7 +122,7 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 
 1. In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add new parameter]** to specify the HTTP headers for the request message that will be sent to the external service.
 
-    The **Content-Type** and **Charset** header fields are set by default and cannot be deleted.
+    The **Content-Type** and **Charset** header fields are set by default and cannot be deleted, though you can edit the default **Content-Type** value. You can add up to 10 custom header parameters.
 
     ![](assets/sms_byo_2.png)
 
@@ -133,6 +133,8 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
     >[!NOTE]
     >
     >When configuring a custom SMS provider with Basic or Bearer authentication, you must include the `authOption` parameter in the JSON payload. In addition, the **Provider Payload** must reference the template variables `{{fromNumber}}`, `{{toNumber}}`, and `{{message}}`.
+    >
+    >The **Provider Payload** also supports Adobe Journey Optimizer [personalization helper functions](../personalization/functions/string.md), including [`encode64`](../personalization/functions/string.md#encode64).
 
 1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about using a custom dataset for inbound keywords](custom-dataset-inbound-keywords.md)
 
