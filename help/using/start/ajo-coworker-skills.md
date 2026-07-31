@@ -227,68 +227,6 @@ The following functionalities are currently not supported:
 1. **Define Tone**: Specify the desired tone (friendly, formal, casual, urgent).
 1. **Iterate and Refine**: Use the regenerate action to refine content until it meets your requirements.
 
-## Loyalty skills {#loyalty-skills}
-
-### Loyalty Challenge Management {#loyalty-challenge-management}
-
->[!AVAILABILITY]
->
->Loyalty skills are available in CX Coworker for eligible organizations. Customers with a Loyalty license can access these loyalty skills, even if they do not have an additional CX Coworker license.
-
-Loyalty Challenge Management enables Journey Optimizer users to create and manage loyalty challenges in CX Coworker using natural language prompts. For comprehensive documentation on creating, configuring, and managing loyalty challenges, including detailed setup instructions, refer to the [Loyalty Challenges guide](../loyalty-challenges/get-started.md).
-
-#### Key use cases
-
-1. **Multi-step onboarding challenge**
-
-   "Build a challenge called "New Account Kickstart" for newly enrolled customers that requires them to complete these steps in order: open a checking account, fund it with at least $500, and download the mobile app. When all steps are done, reward them with 5,000 bonus points. Run it from September 1 to October 31, Eastern timezone."
-
-1. **Cumulative activity threshold challenge**
-
-   "Create a challenge called "Spend & Earn Summer" for cardholders where members earn a $50 statement credit once they spend $1,500 on their credit card during the third quarter. Start it July 1, Eastern timezone."
-
-1. **Frequency streak challenge**
-
-   "Create a challenge called "Frequent Flyer Sprint" for elite tier members that requires 3 flights per month for two consecutive months. Reward completion with a tier-status extension and 10,000 bonus miles. Start the first of next month, Pacific timezone."
-
-1. **Single qualifying action challenge**
-
-   "Set up a challenge named "Go Paperless" that rewards postpaid subscribers with 500 bonus points after they enroll in autopay and switch to paperless billing within 30 days. Begin on the first of next month, Central timezone."
-
-1. **Engagement / consumption goal challenge**
-
-   "Create a challenge called "Explorer Badge" for members that requires them to complete 5 activities across at least 3 different categories during the month of August. Reward them with 1,000 points and an "Explorer" badge on completion. Start August 1, Mountain timezone."
-
-1. **Daily action challenge**
-
-   "Help me create a challenge for matcha lovers that requires them to come into the store every day this week and buy a matcha drink. Their reward should be an extra 200 points if they complete the challenge. Call it "Mad about Matcha", use SKU matcha-001, start it Monday next week, Eastern timezone."
-
-#### In scope skills
-
-The following capabilities are supported by Loyalty Challenge Management:
-
-* **Challenge creation**: Create challenge configuration from natural language (audience, action criteria, timing, reward, naming).
-* **Challenge updates**: Modify challenge details through iterative prompts.
-* **Challenge publishing**: Publish supported challenge configurations directly from the conversation.
-* **Challenge context visibility**: Retrieve and review challenge information while iterating.
-
-#### Out of scope skills
-
-The following functionalities are currently not supported:
-
-* Challenge deletion
-* Loyalty insights and recommendations skills
-* Full content authoring automation for challenge messaging in all cases
-
-#### Prompting best practices
-
-1. **Name it**: Give the challenge a clear, memorable title in quotes.
-1. **Specify the audience**: Who qualifies (e.g., all members, a tier, a segment, new enrollees, cardholders, subscribers).
-1. **Define the action and how much**: What members must do, and the frequency, threshold, or sequence that counts as completion.
-1. **Set the time window**: A start date (and end date if fixed-duration) plus the timezone.
-1. **State the reward**: Points, miles, statement credits, status extensions, vouchers, or perks granted on completion.
-1. **Reference the qualifying event**: Point to the specific SKU, product, account action, or engagement event the challenge tracks.
-
 ### Journey Analyze {#journey-analyze}
 
 Journey Skills will enable Journey Optimizer users to analyze and optimize journeys using a natural language interface. With Journey Skills, practitioners can quickly identify and resolve schedule and/or audience conflicts, detect points of user abandonment in a journey and provide insights or recommendations. It empowers practitioners to make data-driven decisions, improve customer engagement, and streamline journey orchestration.
@@ -389,8 +327,71 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 * **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 * **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
 
+## Loyalty skills {#loyalty-skills}
+
+### Loyalty Challenge Management {#loyalty-challenge-management}
+
+>[!AVAILABILITY]
+>
+>Loyalty skills are available in CX Coworker for eligible organizations. Customers with a Loyalty license can access these loyalty skills, even if they do not have an additional CX Coworker license.
+
+Loyalty Challenge Management enables Journey Optimizer users to create and manage loyalty challenges in CX Coworker using natural language prompts. For comprehensive documentation on creating, configuring, and managing loyalty challenges, including detailed setup instructions, refer to the [Loyalty Challenges guide](../loyalty-challenges/get-started.md).
+
+#### Key use cases
+
+1. **Multi-step onboarding challenge**
+
+   "Build a challenge called "New Account Kickstart" for newly enrolled customers that requires them to complete these steps in order: open a checking account, fund it with at least $500, and download the mobile app. When all steps are done, reward them with 5,000 bonus points. Run it from September 1 to October 31, Eastern timezone."
+
+1. **Cumulative activity threshold challenge**
+
+   "Create a challenge called "Spend & Earn Summer" for cardholders where members earn a $50 statement credit once they spend $1,500 on their credit card during the third quarter. Start it July 1, Eastern timezone."
+
+1. **Frequency streak challenge**
+
+   "Create a challenge called "Frequent Flyer Sprint" for elite tier members that requires 3 flights per month for two consecutive months. Reward completion with a tier-status extension and 10,000 bonus miles. Start the first of next month, Pacific timezone."
+
+1. **Single qualifying action challenge**
+
+   "Set up a challenge named "Go Paperless" that rewards postpaid subscribers with 500 bonus points after they enroll in autopay and switch to paperless billing within 30 days. Begin on the first of next month, Central timezone."
+
+1. **Engagement / consumption goal challenge**
+
+   "Create a challenge called "Explorer Badge" for members that requires them to complete 5 activities across at least 3 different categories during the month of August. Reward them with 1,000 points and an "Explorer" badge on completion. Start August 1, Mountain timezone."
+
+1. **Daily action challenge**
+
+   "Help me create a challenge for matcha lovers that requires them to come into the store every day this week and buy a matcha drink. Their reward should be an extra 200 points if they complete the challenge. Call it "Mad about Matcha", use SKU matcha-001, start it Monday next week, Eastern timezone."
+
+#### In scope skills
+
+The following capabilities are supported by Loyalty Challenge Management:
+
+* **Challenge creation**: Create challenge configuration from natural language (audience, action criteria, timing, reward, naming).
+* **Challenge updates**: Modify challenge details through iterative prompts.
+* **Challenge publishing**: Publish supported challenge configurations directly from the conversation.
+* **Challenge context visibility**: Retrieve and review challenge information while iterating.
+
+#### Out of scope skills
+
+The following functionalities are currently not supported:
+
+* Challenge deletion
+* Loyalty insights and recommendations skills
+* Full content authoring automation for challenge messaging in all cases
+
+#### Prompting best practices
+
+1. **Name it**: Give the challenge a clear, memorable title in quotes.
+1. **Specify the audience**: Who qualifies (e.g., all members, a tier, a segment, new enrollees, cardholders, subscribers).
+1. **Define the action and how much**: What members must do, and the frequency, threshold, or sequence that counts as completion.
+1. **Set the time window**: A start date (and end date if fixed-duration) plus the timezone.
+1. **State the reward**: Points, miles, statement credits, status extensions, vouchers, or perks granted on completion.
+1. **Reference the qualifying event**: Point to the specific SKU, product, account action, or engagement event the challenge tracks.
+
+
 <!--
-Journey analysis new skills to document:
+Journey new skills to document:
 
 Journey Custom Action Error Analysis
 - Identify when custom actions are failing or error rates spike within a journey.
