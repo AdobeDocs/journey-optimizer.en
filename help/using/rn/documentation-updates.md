@@ -29,7 +29,6 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Delivery settings** section has been added to the documentation navigation. It groups delivery-related features that apply across journeys, campaigns, and orchestrated campaigns: **Send using waves**, **Send-Time optimization**, and **Channel optimization** have all been moved there from the Journeys section.
 
-
 * The separate **Send using waves** documentation pages for journeys and action campaigns have been merged into a single page, now also covering orchestrated campaigns. [Read more](../delivery/send-using-waves.md)
 
 * A tip pointing to the Experience League community article on **how to detach and rejoin nodes** in the new journey canvas has been added to the **Design your journey** page. [Read more](../building-journeys/using-the-journey-designer.md)
@@ -53,6 +52,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * The **Data Governance** page has been updated to clarify that DULE policy enforcement applies to **profile attribute fields only**. Event-based fields (context attributes such as journey event fields) are not supported: labels applied to those fields in the UI will not restrict data usage. [Read more](../action/action-privacy.md)
 
 * The **Send-Time Optimization** documentation has been updated to reflect the new **[!UICONTROL Send within next]** limit of **2-100 hours** (previously 1-168), and to document supported AEP Hub regions for this capability. [Read more](../building-journeys/send-time-optimization.md#use-send-time-optimization)
+
 
 * The **Personalized optimization model** pages have been updated to reflect the latest model improvements, covering how the ensemble model works, dataset requirements, use cases, key assumptions, and cold-start behavior. Read more in the [Experience Decisioning](../experience-decisioning/ranking/personalized-optimization-model.md) and [Offer Decisioning](../offers/ranking/personalized-optimization-model.md) sections.
 
@@ -923,7 +923,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * A new section about Privacy requests has been added to the documentation. [Read more](../privacy/requests.md)
 * A new section about Audit logs on resources has been added to the documentation. [Read more](../privacy/audit-logs.md)
 * A new section about how to add HTML or JSON content coming from Adobe Experience Cloud Asset library to an offer representation has been added to the documentation. [Read more](../offers/offer-library/add-representations.md#html-json)
-* Added a new page on journey lifecyle. [Read more](../building-journeys/journey.md)
+* Added a new page on journey lifecyle. [Read more](../building-journeys/journey.md) 
 * Updated the Wait activity page. [Read more](../building-journeys/wait-activity.md)
 * Added the list of Adobe Journey Optimizer datasets with query examples. [Read more](../data/datasets-query-examples.md)
 * The Allowed list page has been moved to the Configuration section. [Read more](../configuration/allow-list.md)
