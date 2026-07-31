@@ -107,6 +107,7 @@ A **new user interface** is available for the journey canvas, built to scale wit
 ![](assets/journey-new-canvas.png)
 
 To switch to the new experience, click the **[!UICONTROL New experience]** button in the journey canvas. Once switched, this setting is saved at the journey level, so the journey will open in the new experience by default on subsequent visits. To revert, click the **[!UICONTROL Old experience]** button.
+In addition, your last selected experience (Old or New) is now remembered at the user level. Going forward, this preference is automatically applied whenever you create a new journey, so you don't need to switch manually each time.
 
 ![](assets/journey-new-experience-switch.png)
 
@@ -176,6 +177,10 @@ To delete the path, place your cursor on it and click the **[!UICONTROL Delete p
 In the canvas, when two activities are disconnected, a warning is displayed. Place your cursor on the warning icon to display the error message. To fix the issue, simply move the disconnected activity and connect it to the previous activity.
 
  ![Warning icon showing disconnected activities in canvas](assets/canvas-disconnected.png)
+
+>[!TIP]
+>
+>For step-by-step guidance on detaching and rejoining nodes in the journey canvas, see this [Experience League community article](https://experienceleaguecommunities.adobe.com/adobe-journey-optimizer-15/how-to-detach-rejoin-nodes-in-the-new-journey-canvas-251908){target="_blank"}.
 
 ## Copy and paste activities {#copy-paste}
 

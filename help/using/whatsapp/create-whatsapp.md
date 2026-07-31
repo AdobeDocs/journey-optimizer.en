@@ -173,6 +173,10 @@ Note that your WhatsApp template must first be approved by Meta before using it 
 
     ![](assets/whatsapp-design-2.png)
 
+    >[!NOTE]
+    >
+    >You can select a **WhatsApp Flow** template to deliver interactive multi-screen experiences, such as surveys or lead capture forms, directly within the WhatsApp conversation. All inbound WhatsApp responses, including those submitted through WhatsApp Flow templates, are captured in the _AJO Channels Tracking Event Dataset_. [Learn more about system datasets](../data/get-started-datasets.md#system-datasets).
+
 1. In the **[!UICONTROL Image URL]** field, add media URLs to replace any placeholders in your template. Meta's template media are only placeholders. To display images, audio, or video correctly, you must use external URLs from Adobe Experience Manager or other sources.
 
     ![](assets/whatsapp-design-3.png)

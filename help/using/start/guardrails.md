@@ -418,9 +418,9 @@ Journey Optimizer supports a peak volume of **500 transactional messages per sec
 
 This section covers guardrails for content creation and management, including landing pages, subdomains, and fragments.
 
-### AI Assistant guardrails {#ai-assistant-g}
+### Generate Content guardrails {#ai-assistant-g}
 
-Guardrails and limitations for **AI Assistant content generation** — including supported channels (email, push, web, SMS) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
+Guardrails and limitations for **Generate Content** — including supported channels (email, push, web, SMS) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
 
 ### Landing pages guardrails {#lp-guardrails}
 

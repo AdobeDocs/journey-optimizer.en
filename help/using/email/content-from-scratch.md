@@ -104,7 +104,7 @@ To start building your content, follow the steps below:
     ![](assets/email_designer.png)
 
 
-1. Accelerate your email creation with AI Assistant and generate complete email content with text and images using [AI Assistant for full content generation](../content-management/generative-full-content.md).
+1. Accelerate your email creation with Generate Content and generate complete email content with text and images using [Generate full content with AI](../content-management/generative-full-content.md).
 
 1. Start designing your content by drag and dropping **[!UICONTROL Structures]** into the canvas to define the layout of your email.
 

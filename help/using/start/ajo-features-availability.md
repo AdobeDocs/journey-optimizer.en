@@ -92,7 +92,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Action activity in journeys | GA | Journeys; Campaigns & Journeys | February 20, 2026 | Replaces deprecated native channel activities |
 | Content decision activity | GA | Journeys; Campaigns & Journeys | February 10, 2026 | Previously LA |
 | Quiet hours (time-based exclusions) | GA | Journeys; Campaigns & Journeys | January 29, 2026 | Previously LA |
-| AI Assistant for journey expressions | Beta | Journeys; Campaigns & Journeys | June 3, 2026 | Public Beta |
+| Generate content for journey expressions | Beta | Journeys; Campaigns & Journeys | June 3, 2026 | Public Beta |
 | Journey arbitration | LA | Journeys; Campaigns & Journeys | February 24, 2026 | Contact your Adobe representative |
 | Journey arbitration – AI models | LA | Journeys; Campaigns & Journeys | April 2026 | Contact your Adobe representative |
 | Dataset lookup support in journeys | LA | Journeys; Campaigns & Journeys | March 2026 | For customers entitled to dataset lookup |
@@ -125,7 +125,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Integrations (third-party data sources) | GA | All base offers | May 4, 2026 | Previously Beta |
 | Restrict inheritance breaking in fragments | GA | All base offers | May 21, 2026 | Lock fragments against local edits |
 | Adobe Express integration | GA | All base offers | April 23, 2026 | Previously LA |
-| AI Assistant for personalization expressions | GA | All base offers | April 13, 2026 | In personalization editor and Email Designer |
+| Generate content for personalization expressions | GA | All base offers | April 13, 2026 | In personalization editor and Email Designer |
 | Convert images to email content templates | GA | All base offers | March 31, 2026 | Previously LA |
 | Landing page custom forms | GA | All base offers | March 26, 2026 | Previously LA (US and Australia) |
 | Integration of custom Firefly and third-party image models | GA | All base offers | March 2, 2026 | Adobe, Partner (Gemini), and custom models |
@@ -136,7 +136,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Content fragments | GA | All base offers | Core capability | Reusable content blocks |
 | Content templates | GA | All base offers | Core capability | — |
 | Personalization editor | GA | All base offers | Core capability | Expression-based personalization |
-| AI Assistant for content generation | GA | All base offers | Core capability | Requires AI licensing terms |
+| Generate Content | GA | All base offers | Core capability | Requires AI licensing terms |
 
 >[!TAB Decisioning]
 
