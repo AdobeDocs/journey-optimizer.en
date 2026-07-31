@@ -1,6 +1,6 @@
 ---
 title: Get started with custom channels
-description: Learn how to use [!DNL Journey Optimizer]'s Channel Builder to bring any outbound messaging channel into [!DNL Journey Optimizer] and use it in campaigns, journeys, and orchestrated campaigns.
+description: Learn how to use [!DNL Journey Optimizer]'s Channel Builder to bring any outbound messaging channel into [!DNL Journey Optimizer] and use it in campaigns and journeys.
 feature: Channel Configuration
 topic: Content Management
 role: User
@@ -10,13 +10,19 @@ badge: label="Limited Availability" type="Informative"
 
 # Get started with custom channels {#get-started-custom-channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn what custom channels are in Adobe Journey Optimizer, how they compare to custom actions, and the overall workflow for bringing any outbound HTTP endpoint into AJO so you can use it in campaigns and journeys.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
 <!--Multilingual support, business rules enforcement, and [!DNL Adobe Experience Decisioning] integration are planned for a future release.-->
 
-[!DNL Journey Optimizer]'s **Custom channels** capability lets you bring any outbound channel into [!DNL Journey Optimizer] so you can use it in campaigns, journeys, and orchestrated campaigns—just like any native channel. Using the **Channel Builder**, administrators can create and configure new channels without engineering involvement, and marketers can immediately start using them to communicate with customers.
+[!DNL Journey Optimizer]'s **Custom channels** capability lets you bring any outbound channel into [!DNL Journey Optimizer] so you can use it in campaigns and journeys—just like any native channel. Using the **Channel Builder**, administrators can create and configure new channels without engineering involvement, and marketers can immediately start using them to communicate with customers.
 
 ## What problem does it solve? {#why-custom-channels}
 
@@ -34,7 +40,7 @@ Custom channels fill this gap: they enable you to use any outbound HTTP endpoint
 
 If you have used [custom actions](../action/action.md) in [!DNL Journey Optimizer] journeys before, custom channels address a different set of use cases. 
 
-**Use custom channels when** you need to send messages to end users through a platform not natively supported in [!DNL Journey Optimizer]—such as WeChat, Kakao Talk, or a custom messaging gateway. Custom channels are available in campaigns, journeys, and orchestrated campaigns, and support:
+**Use custom channels when** you need to send messages to end users through a platform not natively supported in [!DNL Journey Optimizer]—such as WeChat, Kakao Talk, or a custom messaging gateway. Custom channels are available in campaigns and journeys, and support:
 
 * Full personalization through the personalization editor, similar to native outbound channels
 * Visual/form payload editor, preview and proof
@@ -81,7 +87,7 @@ Custom channels are ideal for:
 Setting up and using a custom channel follows the main stages below:
 
 1. **Configure** (Admin) – An administrator creates a custom channel in the **Channel Builder**, defining the endpoint, authentication, throttling policy, and message payload structure. A channel configuration is then created and linked to the custom channel. [Learn more](configure-custom-channel.md)
-1. **Create** (Marketer) – A marketer adds the custom channel to a journey, campaign, or orchestrated campaign, selects a channel configuration, and authors the message payload using [!DNL Journey Optimizer]'s personalization editor. [Learn more](create-custom-experience.md)
+1. **Create** (Marketer) – A marketer adds the custom channel to a journey or campaign, selects a channel configuration, and authors the message payload using [!DNL Journey Optimizer]'s personalization editor. [Learn more](create-custom-experience.md)
 1. **Send** – When a profile qualifies, [!DNL Journey Optimizer] sends the personalized payload to the configured endpoint. The external system processes the call and delivers the message.
 1. **Monitor** (Admin/Marketer) – Administrators and marketers can monitor the custom channel's performance and reliability through [!DNL Journey Optimizer]'s reporting and monitoring dashboards. [Learn more](monitor-custom-channel.md)
 
