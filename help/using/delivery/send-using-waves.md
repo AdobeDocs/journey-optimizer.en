@@ -53,14 +53,28 @@ Additional context-specific constraints apply:
 * Wave sending applies to **outbound** actions only (Email, SMS, Push, Direct mail).
 * A wave start cannot be before the campaign start.
 
+<!--
 >[!TAB Orchestrated campaigns]
 
 * Wave sending applies to **outbound** channel activities only (Email, SMS, Push, Direct mail).
 * Wave sending is configured at the **channel activity level**, independently for each channel activity in the campaign.
+-->
 
 >[!ENDTABS]
 
 ## Configure wave sending {#configure-wave-sending}
+
+>[!CONTEXTUALHELP]
+>id="ajo_wave_sending"
+>title="Send using waves"
+>abstract="Split message delivery into scheduled batches (waves) to control volume over time. You can define up to 10 waves with equal or custom sizes and timing."
+
+>[!CONTEXTUALHELP]
+>id="ajo_orchestration_wave_sending"
+>title="Send using waves"
+>abstract="Split message delivery into scheduled batches (waves) to control volume over time. You can define up to 10 waves with equal or custom sizes and timing."
+
+The steps to enable wave sending depend on your context — read-audience journey or action campaign. Select the relevant tab below, then refer to the [Wave size and timing](#wave-options) section to finish configuration.
 
 >[!BEGINTABS]
 
@@ -102,6 +116,7 @@ Additional context-specific constraints apply:
 
 1. Choose how to define wave size and timing as detailed in the [Wave size and timing](#wave-options) section below.
 
+<!--
 >[!TAB Orchestrated campaigns]
 
 1. Open a channel activity (Email, SMS, Push, or Direct mail) in your orchestrated campaign canvas.
@@ -119,10 +134,17 @@ Additional context-specific constraints apply:
    >You must define at least 2 waves and can add up to 10 waves.
 
 1. Choose how to define wave size and timing as detailed in the [Wave size and timing](#wave-options) section below.
+-->
 
 >[!ENDTABS]
 
 ## Wave size and timing {#wave-options}
+
+Once you have set the number of waves, define how the audience is distributed across them and when each wave runs. Three options are available:
+
+* [Equal waves](#equal-waves) — Split the audience into equal-sized portions with a fixed interval between wave starts. Best for straightforward, evenly timed sends.
+* [Custom distribution](#custom-distribution) — Manually set each wave's size as a percentage or an absolute number of profiles. Best for progressive ramp-ups or uneven audience splits.
+* [Custom schedule](#custom-schedule) — Assign a specific start date and time to each wave. Best when you need precise timing that does not follow a regular interval.
 
 ### Equal waves {#equal-waves}
 
@@ -145,7 +167,9 @@ Select **[!UICONTROL Numbers]** to define the size of each wave as an absolute n
 ![Custom distribution configuration with wave sizes defined as absolute profile numbers](assets/campaign-wave-numbers.png){width="80%"}
 
 >[!NOTE]
+>
 >* When using percentages, all waves must total 100%. A warning is displayed if this is not the case.
+>
 >* When using numbers, the system does not validate total coverage — ensure your wave sizes cover the intended audience. [Learn more](#faq)
 
 ### Custom schedule {#custom-schedule}
@@ -164,15 +188,15 @@ Wave sending helps you control when and how many messages go out, which improves
 
 * **Call center or response management:** Limit how many messages go out per day or per hour so that downstream teams (for example, customer care) can handle responses at a manageable rate.
 
-   ![Wave sending example: 20 messages per day configured to match call center response capacity](assets/campaign-waves-ex-call-center.png){width="75%"}
+   ![Wave sending example: 20 messages per day configured to match call center response capacity](assets/journey-waves-ex-call-center.png){width="50%"}
 
 * **High volume and deliverability:** Avoid sending a very large audience in one shot. Spreading delivery over time helps maintain sender reputation and reduces the risk of being flagged as spam.
 
-   ![Wave sending example: delivery spread across multiple days to support sender reputation for a high-volume send](assets/campaign-waves-ex-high-volume.png){width="75%"}
+   ![Wave sending example: delivery spread across multiple days to support sender reputation for a high-volume send](assets/journey-waves-ex-high-volume.png){width="50%"}
 
 * **IP warm-up:** When using a new platform or IP address, progressively increase volume (for example, 10% in the first wave, then 15%, 20%, and so on) to build sending reputation gradually.
 
-   ![Wave sending example: progressive volume increase across waves for IP warm-up, starting at 10% and growing each wave](assets/campaign-waves-ex-ramp-up.png){width="75%"}
+   ![Wave sending example: progressive volume increase across waves for IP warm-up, starting at 10% and growing each wave](assets/journey-waves-ex-ramp-up.png){width="50%"}
 
 ## Frequently asked questions {#faq}
 
@@ -212,7 +236,7 @@ No. Wave sending applies to **outbound** channel actions only: Email, SMS, Push 
 
 * [Use an audience in a journey](../building-journeys/read-audience.md) — configure the Read Audience activity
 * [Schedule an Action campaign](../campaigns/campaign-schedule.md) — set start date, end date, and frequency
-* [Channel activities in Orchestrated campaigns](../orchestrated/activities/channels.md) — configure channel activities in the orchestrated canvas
+<!-- * [Channel activities in Orchestrated campaigns](../orchestrated/activities/channels.md) — configure channel activities in the orchestrated canvas -->
 
 +++ AI Knowledge Reference
 
@@ -238,7 +262,7 @@ For complete understanding, this information should be combined with the documen
 **Contexts where wave sending is available:**
 * Read audience journeys ("As soon as possible" or "Once" scheduler only — not for recurring, event-triggered, business-event, test, or dry-run journeys)
 * Action campaigns (outbound channel actions only)
-* Orchestrated campaigns (outbound channel activities only, configured per channel activity)
+<!-- * Orchestrated campaigns (outbound channel activities only, configured per channel activity) -->
 
 **Common guardrails (all contexts):**
 * Minimum 2 waves, maximum 10 waves
