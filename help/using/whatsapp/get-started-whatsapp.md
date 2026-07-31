@@ -52,6 +52,7 @@ WhatsApp works best when your audience already uses the platform and you want to
 | High global engagement | Widely used messaging platform with strong adoption in many regions | Reaching international audiences already active on WhatsApp |
 | Rich, interactive messages | Supports images, videos, buttons, and quick replies | Product catalogs, appointment confirmations with quick-reply options |
 | Two-way conversational experiences | Recipients can reply within the same thread | Customer support conversations, order tracking questions |
+| Interactive multi-screen experiences | WhatsApp Flow templates let you build guided, multi-step interactions within the chat | Surveys, lead capture forms |
 | Compliance and trust via official API | Delivered through Meta's verified Cloud API with sender verification | Brand-verified communications that build recipient trust |
 | Integration with other channels | Can be layered with journeys and campaigns alongside other channels | Multi-channel journeys using WhatsApp as a complementary touchpoint |
 
