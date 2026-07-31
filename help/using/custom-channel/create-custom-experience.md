@@ -187,7 +187,7 @@ To include a tracked link in your custom channel payload—so that clicks are au
 >
 >Link tracking requires a subdomain configured for custom channels. [Learn how to delegate a subdomain for custom channels](custom-channel-subdomains.md#subdomain-delegation)
 
-**Example – tracked link in a Viber payload:**
+**Example – tracked link in a payload:**
 
 ```json
 {
@@ -216,9 +216,9 @@ The editor supports a **[!UICONTROL Strict JSON]** toggle:
 
 >[!IMPORTANT]
 >
->Preview and test your custom channel payload before activating. [Learn how](test-custom-channel.md)
+>Preview and test your custom channel payload before activating. [Learn how](test-custom-channel.md#preview-test)
 >
 >If your campaign or journey is subject to an approval policy, you must request approval before activation. [Learn more](../test-approve/gs-approval.md)
 
-* **From a journey** – Click **[!UICONTROL Publish]** in the top-right area. The journey goes live and starts calling your external endpoint for qualifying profiles.
-* **From a campaign** – Click **[!UICONTROL Review to activate]**, review your settings, then click **[!UICONTROL Activate]**. The campaign takes the **[!UICONTROL Live]** status (or **[!UICONTROL Scheduled]** if a future start date was defined).
+* **From a journey** – Click **[!UICONTROL Publish]** in the top-right area. The journey goes live and starts calling your external endpoint for qualifying profiles. Learn more about [publishing journeys](../building-journeys/journey-gs.md#publish-journey).
+* **From a campaign** – Click **[!UICONTROL Review to activate]**, review your settings, then click **[!UICONTROL Activate]**. The campaign takes the **[!UICONTROL Live]** status (or **[!UICONTROL Scheduled]** if a future start date was defined). Learn more about [activating campaigns](../campaigns/create-campaign.md#review-activate).
