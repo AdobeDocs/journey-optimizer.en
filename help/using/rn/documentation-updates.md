@@ -20,6 +20,7 @@ subfeature_v2:
   - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
     internal-label: Documentation updates
 ---
+
 # Documentation updates {#latest-updates}
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
