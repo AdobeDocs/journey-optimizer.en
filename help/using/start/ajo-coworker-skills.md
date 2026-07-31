@@ -294,6 +294,18 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "How many live journeys do I have?"
    * "Give me a list of all scheduled recurring journeys and their expected run times."
 
+1. **Journey Custom Action Error Analysis**
+
+   * Identify when custom actions are failing or error rates spike within a journey.
+   * Diagnose root causes before failures cascade into broader journey disruption.
+   * Use specific remediation steps to restore custom action reliability quickly.
+
+   Sample prompts:
+   * "Why are custom actions failing in journey [Journey Name]?"
+   * "What is the error rate for custom action [Custom Action Name] in journey [Journey Name]?"
+   * "Show me the root cause of custom action failures in journey [Journey Name]."
+   * "Are there any custom action errors affecting journey [Journey Name] right now?"
+
 #### In scope skills
 
 The following capabilities are supported by Journey Analyze:
@@ -301,6 +313,7 @@ The following capabilities are supported by Journey Analyze:
 * **Reactive Queries**: Allows users to ask specific questions about journey performance, audience usage, and scheduling conflicts.
 * **Integration with Other Skills**: Collaborates with Audience and Data Insights capabilities for deeper analysis.
 * **Response structuration**: reasoning (explain the logic), analysis summary (highlight key points), issue details (describe the problem), and recommendation (propose next steps).
+* **Custom action error analysis**: Detect and diagnose custom action failures and error spikes within a journey.
 
 #### Out of scope skills
 
@@ -389,20 +402,6 @@ The following functionalities are currently not supported:
 1. **State the reward**: Points, miles, statement credits, status extensions, vouchers, or perks granted on completion.
 1. **Reference the qualifying event**: Point to the specific SKU, product, account action, or engagement event the challenge tracks.
 
-
-<!--
-Journey new skills to document:
-
-Journey Custom Action Error Analysis
-- Identify when custom actions are failing or error rates spike within a journey.
-- Diagnose root causes before failures cascade into broader journey disruption.
-- Use specific remediation steps to restore custom action reliability quickly.
-
-Journey Anomaly Detection
-- Detect unexpected spikes or drops in journey sends and exits against historical baselines.
-- Catch send or exit volume issues early, before they affect a large share of your audience.
-- Use the insights to pinpoint the root cause and keep the journey performing as expected.
--->
 
 <!--
 Feedback from Ivan: Journey simulate is not ready as a skill
