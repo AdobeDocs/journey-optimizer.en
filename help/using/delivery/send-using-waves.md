@@ -9,7 +9,6 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 keywords: waves, batches, schedule, journey, campaign, orchestrated, deliverability
-
 ---
 # Send using waves {#send-using-waves}
 

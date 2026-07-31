@@ -11,7 +11,7 @@ nudge: yes
 # Adobe Journey Optimizer Help {#using}
   
 + [Journey Optimizer documentation](ajo-home.md)
-+ What's new? {#whats-new}
++ What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md)
   + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
@@ -249,10 +249,10 @@ nudge: yes
   + Journey arbitration {#journey-arbitration}
     + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
     + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
-+ Delivery settings {#delivery-settings} 
++ Delivery settings {#delivery-settings}
   + [Send using waves](using/delivery/send-using-waves.md)
-  + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
   + [Channel optimization](using/building-journeys/channel-optimization.md)
+  + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
 + Test & approve {#test}
   + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
