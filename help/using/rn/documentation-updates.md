@@ -195,7 +195,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * The **Read Audience** activity documentation has been updated to clarify that a **Business Event** activity is an exception to the rule that Read Audience must be the first activity in a journey. A note has also been added referencing the **Optimize** activity as an advanced alternative for controlling audience targeting. [Read more](../building-journeys/read-audience.md)
 
-* **Send using waves** in journeys is now generally available. The Limited Availability flag has been removed from the documentation. [Read more](../building-journeys/send-using-waves.md)
+* **Send using waves** in journeys is now generally available. The Limited Availability flag has been removed from the documentation. [Read more](../delivery/send-using-waves.md)
 
 * The **Jump** activity documentation has been enriched with a new design strategy section — **Bite-sized sub-journeys** — explaining how to break complex end-to-end flows into smaller, focused sub-journeys connected via the Jump activity. [Read more](../building-journeys/jump.md#jump-strategy)
 
