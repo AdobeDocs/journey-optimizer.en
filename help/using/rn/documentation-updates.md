@@ -25,9 +25,10 @@ subfeature_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
-## July 2026 {#july-2026}
+## July 2026 {#july-2026} 
 
 * A new **Delivery settings** section has been added to the documentation navigation. It groups delivery-related features that apply across journeys, campaigns, and orchestrated campaigns: **Send using waves**, **Send-Time optimization**, and **Channel optimization** have all been moved there from the Journeys section.
+
 
 * The separate **Send using waves** documentation pages for journeys and action campaigns have been merged into a single page, now also covering orchestrated campaigns. [Read more](../delivery/send-using-waves.md)
 
