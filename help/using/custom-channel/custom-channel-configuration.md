@@ -43,10 +43,12 @@ To create a channel configuration for a custom channel, follow the steps below.
    ![Payload fields](assets/custom_channel_config_payload.png){width="100%"}
 
    Configure a value for each field as appropriate for this configuration. This is useful for fields that may vary based on the context of the campaign or journey, such as sender information or message templates.
-
+   
+<!--
 1. For orchestrated campaigns, complete the **[!UICONTROL Execution details]** section to map profile dimensions and specify the execution address.
 
    ![Execution details in orchestrated campaigns](assets/custom_channel_oc_execution_details.png){width="80%"}
+-->
 
 1. Click **[!UICONTROL Submit]** to save and activate the channel configuration.
 
@@ -62,4 +64,4 @@ Your custom channel is now fully configured. Marketers can start using it to bui
 
 * [Create custom channel experiences](create-custom-experience.md)
 * [Test your custom channel](test-custom-channel.md)
-* [Monitor custom channels](configure-custom-channel.md)
+* [Monitor custom channels](monitor-custom-channel.md)
