@@ -265,19 +265,26 @@ With **Gemini 2.5** selected as the generative model, you can produce image vari
 
 ## Use Image settings mode {#image-mode}
 
+>[!CONTEXTUALHELP]
+>id="ajo_assets_selection_mode"
+>title="Assets selection mode"
+>abstract="The [!UICONTROL Assets Mode] setting controls the origin of your visual assets. It allows you to define whether images are retrieved directly from your Digital Asset Management (DAM) library or dynamically produced using AI-generated content."
+
 The **[!UICONTROL Mode]** option under **[!UICONTROL Image settings]** controls how images are sourced from your Digital Asset Management library and generated content.
 
 1. After setting up your campaign, select **[!UICONTROL Edit content]**.
 
-1. Open the **[!UICONTROL AI Assistant]** section.
+1. Open the **[!UICONTROL Generate content]** section.
 
 1. Adjust the content by specifying your request in the **[!UICONTROL Prompt]** box and customize the settings as necessary.
 
 1. Choose your **[!UICONTROL Mode]** in the **[!UICONTROL Image settings]** menu:
 
-    * **[!UICONTROL Assets]**: AI Assistant looks for a matching image in your Digital Asset Management library and uses it as part of the generated content. If no match is found, add reference content or images manually before you generate.
-    * **[!UICONTROL Balanced]**: AI Assistant uses matching image from your Digital Asset Management library first. When that is not enough to cover the visuals you need, it generates images with AI.
-    * **[!UICONTROL Creative]**: AI Assistant creates images with generative AI and does not pull images directly from your Digital Asset Management library.
+    * **[!UICONTROL DAM]** (Digital Asset Management): AI looks for a matching image in your Digital Asset Management library and uses it as part of the generated content. If no match is found, add reference content or images manually before you generate. 
+      Choose a folder from your Digital Asset Management library to set your DAM path.
+    * **[!UICONTROL Balanced]**: AI uses matching image from your Digital Asset Management library first. When that is not enough to cover the visuals you need, it generates images with AI.
+      To use this, enable Use images from DAM, then choose a folder from your Digital Asset Management library to set your DAM path.
+    * **[!UICONTROL Creative]**: AI creates images with generative AI and does not pull images directly from your Digital Asset Management library.
 
     ![](assets/image-mode-3.png)
 
@@ -291,6 +298,6 @@ The **[!UICONTROL Mode]** option under **[!UICONTROL Image settings]** controls 
 
 1. Click **[!UICONTROL Apply]** to change your asset.
 
-1. If AI Assistant does not find a matching image in your Digital Asset Management library, the variation shows a placeholder image. Add reference content or upload an image manually, then generate again.
+1. If AI does not find a matching image in your Digital Asset Management library, the variation shows a placeholder image. Add reference content or upload an image manually, then generate again.
 
     ![](assets/image-mode-2.png)
