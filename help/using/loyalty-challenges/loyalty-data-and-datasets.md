@@ -17,7 +17,7 @@ subfeature_v2: []
 
 Loyalty Challenges relies on Adobe Experience Platform for identity, profile attributes, experience events, and audiences. Use this page to learn which data to prepare, which datasets are involved, and how **time-to-live (TTL)** affects retention before you author challenges or use the Loyalty Challenges APIs.
 
-Contact your Adobe administrator for Journey Optimizer program setup, or configure reward fulfillment and event mapping in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure loyalty challenges](loyalty-admin.md). For REST endpoints and authentication, see the [Loyalty Challenges API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"}.
+Contact your Adobe administrator for Journey Optimizer program setup, or configure reward fulfillment and event mapping in the **[!UICONTROL Loyalty configurations]** menu. [Learn how to configure loyalty challenges](loyalty-admin.md). For REST endpoints and authentication, see the [Loyalty challenge metadata API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges){target="_blank"} and the [Loyalty challenge state API reference](https://developer.adobe.com/journey-optimizer-apis/references/loyalty-challenges-state){target="_blank"}.
 
 ## Loyalty connectors via Sources {#loyalty-connectors-sources}
 
@@ -45,7 +45,7 @@ For standard loyalty attributes on the profile (points, tier, program, status, a
 
 ### Experience events {#experience-events}
 
-**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event definitions (identifier path, optional XDM schema ID, schema, and transformer) must be configured in the **[!UICONTROL Loyalty configurations]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
+**[!UICONTROL Purchase]**, **[!UICONTROL Spend]**, and **[!UICONTROL Custom event]** tasks depend on experience events ingested into Adobe Experience Platform. For **[!UICONTROL Custom event]** tasks, matching event definitions (identifier path, XDM schema ID, schema, and transformer) must be configured in the **[!UICONTROL Loyalty configurations]** menu before marketers can enter custom event values in the task builder. [Learn how to configure event definitions](loyalty-admin.md#event-definitions)
 
 Ensure event payloads use the same identity namespace as your Loyalty Challenges configuration so progress can be attributed to the correct profile.
 
