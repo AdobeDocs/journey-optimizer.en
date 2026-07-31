@@ -363,11 +363,9 @@ The following capabilities and improvements have been added to content managemen
 
   Availability date: July 30, 2026
 
-+++ Coming soon
-
 * **Flexible Image Sourcing for AI Content Generation** - Generating content in Journey Optimizer now sources brand-approved images directly from Adobe Experience Manager Assets Essentials and up. Three modes control the balance: Assets (Digital Asset Management-sourced, default), Balanced (Digital Asset Management-first, AI fills gaps), and Creative (AI-first). This ensures every visual is accurate, brand-compliant, and production-ready for journeys and campaigns.
 
-+++
+    [Learn more about Image settings mode](../content-management/generative-uc.md#image-mode)
 
 ### Content & Integrations {#july-26-integration}
 
