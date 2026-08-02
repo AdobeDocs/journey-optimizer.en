@@ -7,7 +7,6 @@ type: Documentation
 solution: Journey Optimizer
 nudge: yes
 ---
-
 # Adobe Journey Optimizer Help {#using}
   
 + [Journey Optimizer documentation](ajo-home.md)

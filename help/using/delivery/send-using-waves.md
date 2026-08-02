@@ -284,3 +284,4 @@ For complete understanding, this information should be combined with the documen
 * **Q: Is the audience re-evaluated per wave?** — No; the audience is snapshotted at activation. Profile attributes (personalization, consent) are read at wave processing time.
 
 +++
+
