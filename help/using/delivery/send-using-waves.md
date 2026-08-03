@@ -14,7 +14,7 @@ keywords: waves, batches, schedule, journey, campaign, orchestrated, deliverabil
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to split outbound message delivery into scheduled batches (waves) to balance load, protect sender reputation, and improve deliverability, available in read-audience journeys, action campaigns, and orchestrated campaigns.
+**On this page:** Learn how to split outbound message delivery into scheduled batches, called waves, to balance load, protect sender reputation, and improve deliverability. Wave sending is available in read-audience journeys, action campaigns, and orchestrated campaigns.
 
 >[!ENDSHADEBOX]
 
