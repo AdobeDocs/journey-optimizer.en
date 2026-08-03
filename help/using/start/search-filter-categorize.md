@@ -81,7 +81,9 @@ The following operations are available:
 * **[!UICONTROL Archive]** - Archive selected items. Available for Fragments, Journeys, and Templates.
 * **[!UICONTROL Delete]** - Permanently delete selected items. Available for Campaigns and Journeys.
 
-For journeys specifically, you can also bulk **[!UICONTROL Pause]** or **[!UICONTROL Resume]** selected items. [Learn more about bulk pause and resume →](../building-journeys/journey-ui.md#bulk-operations)
+>[!NOTE]
+>
+>Journeys also support bulk **[!UICONTROL Pause]** and **[!UICONTROL Resume]**. [Learn more →](../building-journeys/journey-ui.md#bulk-operations)
 
 ![](assets/bulk-actions-fragments.png)
 

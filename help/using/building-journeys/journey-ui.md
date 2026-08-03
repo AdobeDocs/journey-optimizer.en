@@ -184,19 +184,26 @@ To perform this, follow the steps below:
 
 ## Bulk operations {#bulk-operations}
 
-From the list of your journeys, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen. Available operations include adding journeys to a package, moving them to a folder, editing tags, managing access, archiving, and deleting, in addition to pausing and resuming. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
+From the list of your journeys, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen.
 
-From the list of your journeys, you can pause multiple **Live** journeys. To pause a group of journeys (_bulk pause_), select them in the list and click the **Pause** button in the blue bar at the bottom of the screen. The **Pause** button is only available when **Live** journeys are selected.
+The following operations are available:
+
+* **[!UICONTROL Add to package]** - Export selected journeys to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
+* **[!UICONTROL Move to folder]** - Move selected journeys into a folder.
+* **[!UICONTROL Edit tags]** - Edit the tags assigned to selected journeys. [Learn how to use tags →](../start/search-filter-categorize.md#add-tags)
+* **[!UICONTROL Manage access]** - Apply access labels to selected journeys. [Learn more about object-level access control →](../administration/object-based-access.md)
+* **[!UICONTROL Archive]** - Archive selected journeys.
+* **[!UICONTROL Delete]** - Permanently delete selected journeys.
+* **[!UICONTROL Pause]** - Pause selected **Live** journeys (_bulk pause_). Only available when **Live** journeys are selected.
+* **[!UICONTROL Resume]** - Resume selected **Paused** journeys (_bulk resume_). Only available when **Paused** journeys are selected.
 
 ![Bulk pause two live journeys from the bottom bar](assets/bulk-pause-journeys.png)
 
-You can also resume one or several **Paused** journeys. To resume a group of journeys (_bulk resume_), select them and click the **Resume** button located in the blue bar at the bottom of the screen. Please note that the **Resume** button will only be available when **Paused** journeys are selected.
-
-[Learn more about Pause/Resume journeys](journey-pause.md).
+[Learn more about Pause/Resume journeys](journey-pause.md). [Learn more about the other bulk actions →](../start/search-filter-categorize.md#bulk-actions)
 
 >[!NOTE]
 >
->You can pause/resume until 10 journeys per operation.
+>You can pause/resume up to 10 journeys per operation.
 
 +++ AI Knowledge Reference
 
@@ -213,16 +220,15 @@ For complete understanding, this information should be combined with the documen
 * Switch between list view and calendar view to visualize journey schedules
 * Add and manage external calendars by uploading CSV files
 * Duplicate an existing journey to reuse its settings
-* Bulk pause or resume multiple live or paused journeys at once
-* Apply bulk operations to multiple selected journeys: add to package, move to folder, edit tags, manage access, archive, or delete
+* Apply bulk operations to multiple selected journeys from the bulk action bar: add to package, move to folder, edit tags, manage access, archive, delete, pause, or resume
 
 **Glossary:**
 
 * **Journey dashboard**: The main journeys interface with an Overview tab showing key metrics and a Browse tab listing all journeys. *(product-specific)*
 * **Discard rate**: The ratio of profiles not eligible to enter the journey (e.g., due to incorrect namespace or reentrance rules) compared to total profiles who attempted entry over the last 24 hours. *(product-specific)*
 * **Journeys calendar view**: A visual weekly calendar representation of live and scheduled journeys, accessible by clicking the calendar icon in the journeys list. *(product-specific)*
-* **Bulk pause**: An operation that pauses multiple Live journeys at once (up to 10 per operation) from the journeys list. *(product-specific)*
-* **Bulk action bar**: The action bar that appears at the bottom of the journeys list once one or more journeys are selected, offering operations such as add to package, move to folder, edit tags, manage access, archive, delete, pause, and resume. *(product-specific)*
+* **Bulk action bar**: The action bar that appears at the bottom of the journeys list once one or more journeys are selected, offering add to package, move to folder, edit tags, manage access, archive, delete, pause, and resume. *(product-specific)*
+* **Bulk pause/resume**: The pause and resume operations available from the bulk action bar, limited to Live journeys (pause) or Paused journeys (resume), up to 10 per operation. *(product-specific)*
 
 **Guardrails:**
 
@@ -237,7 +243,7 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: Journey dashboard — Acronym: none — variants: journeys list, journeys overview
 * Synonyms: "Browse tab" = "journeys list"
 * Do not confuse: "Discard rate" ≠ "Error rate" — Discard rate counts profiles ineligible to enter; Error rate counts profiles that entered but encountered a processing error
-* Do not confuse: "Bulk pause/resume" (Live/Paused journeys only, up to 10 per operation) ≠ "Bulk actions" (add to package, move to folder, edit tags, manage access, archive, delete — shared with Campaigns, Fragments, and Templates lists)
+* Note: Add to package, move to folder, edit tags, manage access, archive, and delete are shared with the Campaigns, Fragments, and Templates lists; pause and resume are journey-specific
 
 **FAQ:**
 
