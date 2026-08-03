@@ -52,14 +52,14 @@ Additional context-specific constraints apply:
 * Wave sending applies to **outbound** actions only (Email, SMS, Push, Direct mail).
 * A wave start cannot be before the campaign start.
 
+>[!ENDTABS]
+
 <!--
 >[!TAB Orchestrated campaigns]
 
 * Wave sending applies to **outbound** channel activities only (Email, SMS, Push, Direct mail).
 * Wave sending is configured at the **channel activity level**, independently for each channel activity in the campaign.
 -->
-
->[!ENDTABS]
 
 ## Configure wave sending {#configure-wave-sending}
 
