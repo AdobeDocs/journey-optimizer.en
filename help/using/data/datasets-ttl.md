@@ -77,6 +77,10 @@ The table below lists all Journey Optimizer system-generated datasets with their
 |AJO Profile Counters Extension|13 months|90 days|
 |Journey Inbound|13 months|90 days|
 |AJO Classification Dataset|n/a|n/a|
+|AJO Channel Tracking Event Dataset|13 months|90 days|
+|Adobe Loyalty Challenge State Change Event Dataset|13 months|n/a|
+|AJO Message Export Dataset|30 days|n/a|
+|AJO Message Event Metadata Dataset|30 days|n/a|
 
 ## Frequently asked questions {#faq}
 
