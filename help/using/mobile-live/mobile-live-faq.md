@@ -7,8 +7,45 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: e7e994ca-aa0c-4e86-8710-c87430b74188
+TQID: https://experienceleague.adobe.com/gV4buzcc5mqsvceDj1O-5XZ3eJHtfD26h1c5g3h81Ps
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+  - id: ed2fba79-65cb-4680-96d2-2ad5d851714d
+    internal-label: Live activities
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+    internal-label: Content structure
 ---
 # Frequently asked questions {#mobile-live-faq}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers to common questions about Live activities so you can implement, deliver, and troubleshoot them more confidently across your iOS apps and campaigns.
+
+>[!ENDSHADEBOX]
 
 ## General Questions
 
@@ -209,7 +246,7 @@ No. Each API request should have a unique `requestId` to ensure idempotency and 
 
 +++What authentication is required for the Headless API?
 
-Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging/) for authentication requirements, including OAuth tokens and API keys.
+Refer to the [API Triggered Campaigns Documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging) for authentication requirements, including OAuth tokens and API keys.
 
 +++
 

@@ -9,8 +9,49 @@ role: User
 level: Beginner, Intermediate
 keywords: email, design, stock, assets
 exl-id: e4f91870-f06a-4cd3-98b7-4c413233e310
+TQID: https://experienceleague.adobe.com/fyUHQD4jpIUI2KdyrGbgktEhNNc4OWYRJ8AkgZhrIoQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: f550d0f2-143d-4093-9463-467fbec95fcc
+    internal-label: Accessibility
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Get started with email design {#get-started-content-design}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design your email content in the Email Designer, the key steps to build it from scratch, code, or imported HTML, and the best practices that keep your emails rendering well across clients.
+
+>[!ENDSHADEBOX]
 
 To access the Email Designer and start designing your email content, you must first [create an email](create-email.md) in a journey or a campaign.
 
@@ -52,17 +93,25 @@ Once you have created an email, you can start designing your email content.
 
     ![](assets/email_designer_create_options.png)
 
-1. Once your email content has been defined and personalized, you can export your content for validation or for later use. Click **[!UICONTROL Export HTML]** to save on your computer a zip file which will include your HTML and assets.
+1. Once your email content has been defined and personalized, you can verify your email content with **automated content checks** to catch HTML and CSS issues — such as unsupported tags, empty divs, and size limit violations — directly in the authoring panel, before sending. [Learn more](content-check.md)
 
-   ![](assets/email_designer_export.png)
+    ![Content check pane in the Email Designer with issues](assets/content-check.png)
 
 1. You can also validate your content quality to identify potential issues with readability, content cohesiveness, and effectiveness. [Learn more about content quality validation](../content-management/brands-score.md#validate-quality)
+
+    ![](../content-management/assets/brand-score-7.png)
+
+1. Finally, you can export your content for validation or for later use. Click **[!UICONTROL Export HTML]** to save on your computer a zip file which will include your HTML and assets.
+
+   ![](assets/email_designer_export.png)
 
 ## Email design best practices {#best-practices}
 
 When sending emails, it's important to consider that recipients may forward them, which can sometimes cause issues with the email's rendering. This is particularly true when using CSS classes that may not be supported by the email provider used for forwarding, for example, if you are using the "is-desktop-hidden" CSS class to hide an image on mobile devices.
 
-To minimize these rendering issues, we recommend keeping your email design structure as simple as possible. Try to use a single design that works well for both desktop and mobile devices, and avoid using complex CSS classes or other design elements that may not be fully supported by all email clients. By following these best practices, you can help ensure that your emails are consistently rendered correctly, regardless of how they are viewed or forwarded by recipients.
+To minimize these rendering issues, we recommend keeping your email design structure as simple as possible. Try to use a single design that works well for both desktop and mobile devices, and avoid using complex CSS classes or other design elements that may not be fully supported by all email clients.
+
+By following these best practices, you can help ensure that your emails are consistently rendered correctly, regardless of how they are viewed or forwarded by recipients.
 
 Refer to the table below for best practices for email design:
 

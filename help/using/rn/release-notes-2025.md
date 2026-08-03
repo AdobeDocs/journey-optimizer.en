@@ -8,6 +8,16 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 exl-id: aa8c74de-748b-4947-a972-14703f6ab4a7
+feature_v2:
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
 ---
 # Release Notes 2025 {#release-notes-2025}
 
@@ -93,7 +103,8 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>RCS Basic Messaging</strong><br/></th>
@@ -110,14 +121,17 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <li><strong>Fallback to SMS:</strong> Automatic fallback to SMS when the recipient's device does not support RCS or is temporarily unreachable via RCS.</li>
 <li><strong>Basic message composition:</strong> Send basic text-based RCS messages.</li>
 </ul>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-<!--/td>
+<!--img src="assets/do-not-localize/FILE.gif"
+-->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.-->
+<!--
+/td>
 </tr>
 </tbody>
-</table-->
+-->
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Direct mail channel in Orchestrated campaigns</strong><br/></th>
@@ -127,14 +141,17 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>Direct mail channel is now available in orchestrated campaigns. The Direct mail activity facilitates direct mail sending within your Orchestrated campaign, for both one-time and recurring messages. It serves to automate the process of generating the extraction file required by direct mail providers. You can combine channel activities into the Orchestrated campaign canvas to create cross-channel campaigns that can trigger actions based on customer behavior and data.</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-<!--/td>
+<!--img src="assets/do-not-localize/FILE.gif"
+-->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.-->
+<!--
+/td>
 </tr>
 </tbody>
-</table-->
+-->
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Direct Mail channel in journeys</strong><br/></th>
@@ -145,14 +162,17 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <td>
 <p>Previously limited to Campaigns, Direct Mail channel is now available on the journey canvas, enabling you to incorporate Direct Mail into your journeys. Direct Mail can now be used in both batch and 1:1 journey scenarios, with support for file extraction configuration and time-based frequency settings.</p>
 <p> Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<!--img src="assets/do-not-localize/FILE.gif"-->
-<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.</p -->
-<!--/td>
+<!--img src="assets/do-not-localize/FILE.gif"
+-->
+<!-- p>For more information, refer to the <a href="../FILE.md">detailed documentation</a>.-->
+<!--
+/td>
 </tr>
 </tbody>
-</table-->
+-->
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>New source connectors for loyalty apps</strong><br/></th>
@@ -167,9 +187,11 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Decisioning support in email channel</strong><br/></th>
@@ -186,7 +208,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -315,7 +337,7 @@ This page lists all the features and improvements for [!DNL Journey Optimizer] r
 <tr>
 <td>
 <p>A new Journey Optimizer API is now available to retrieve journeys and their associated objects such as campaigns and surfaces.</p>
-<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve/">detailed documentation</a></p>
+<p>For more information, refer to the <a href="https://developer.adobe.com/journey-optimizer-apis/references/journeys-retrieve">detailed documentation</a></p>
 <p>Availability date: Sept 25, 2025</p>
 </td>
 </tr>
@@ -426,7 +448,6 @@ You can now use AI models to optimize the best content in your email through the
 </tr>
 </tbody>
 </table>
-
 -->
 
 
@@ -570,7 +591,7 @@ You can now use AI models to optimize the best content in your email through the
   Availability date: Sept 29, 2025
 
 * **mTLS Support for SMS Channel**
-  When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established. [Read more](../sms/sms-configuration-custom.md) - Availability date: Sept 23, 2025 
+  When setting up a custom SMS provider, you now have the option to enable mutual TLS (mTLS) authentication, which requires both the client and the server to confirm each other's identities before a secure connection is established. [Read more](../mobile/mobile-configuration-custom.md) - Availability date: Sept 23, 2025 
 
 * **Relational Schemas**  
 Relational schemas can now be used by to support your relational modeling needs in Orchestrated campaigns. [Read more](../orchestrated/gs-schemas.md) - Availability date: Sept 23,2025 
@@ -603,13 +624,13 @@ Relational schemas can now be used by to support your relational modeling needs 
 
 * **Webhooks** - This release introduces the following enhancements for Webhooks when configuring a custom SMS provider:
 
-  * You can now define your webhook's purpose, either Inbound or Feedback, depending on the type of data you want to capture. [Read more](../sms/sms-configuration-custom.md#webhook) - Availability date: Sept 23, 2025
+  * You can now define your webhook's purpose, either Inbound or Feedback, depending on the type of data you want to capture. [Read more](../mobile/mobile-configuration-custom.md#webhook) - Availability date: Sept 23, 2025
 
-  * The interface for configuring keywords has been improved for easier setup. [Read more](../sms/sms-configuration-custom.md#webhook) - Availability date: Sept 23, 2025
+  * The interface for configuring keywords has been improved for easier setup. [Read more](../mobile/mobile-configuration-custom.md#webhook) - Availability date: Sept 23, 2025
 
 * **SMS**
 
-  * When setting up a custom SMS provider, you can now define a **Default** keyword used when an incoming SMS contains an unrecognized keyword. You can also create **Custom** keywords for specific actions. [Read more](../sms/sms-configuration-custom.md) - Availability date: Sept 23, 2025
+  * When setting up a custom SMS provider, you can now define a **Default** keyword used when an incoming SMS contains an unrecognized keyword. You can also create **Custom** keywords for specific actions. [Read more](../mobile/mobile-configuration-custom.md) - Availability date: Sept 23, 2025
 
   * You can now access undefined inbound keywords responses that are sent via an SMS messag, including typos, words, or sentences that are not explicitly defined in the configuration. They are stored in the **AJO Email Tracking Experience Event** dataset, under **InboundMessage** for 13 months. Only available with Sinch, Infobip, and custom SMS provider. - Availability date: Sept 23, 2025
 
@@ -664,7 +685,8 @@ New capabilities coming with this release are detailed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Use Adobe Experience Platform data for personalization</strong><br/></th>
@@ -685,9 +707,10 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Use Decisioning in email channel</strong><br/></th>
@@ -703,7 +726,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -839,13 +862,13 @@ Improvements coming with this release are listed below.
 
 * **Channel - SMS**
 
-  * **Fuzzy Opt-out** - When enabled, the **Fuzzy Opt-out** option detects inbound messages that closely resemble defined opt-out keywords (e.g., 'CANCIL') and automatically sends a confirmation reply to verify the user's unsubscribe intent. If the user confirms via the defined prompt, they are unsubscribed. [Read more](../sms/sms-configuration-sinch.md)
+  * **Fuzzy Opt-out** - When enabled, the **Fuzzy Opt-out** option detects inbound messages that closely resemble defined opt-out keywords (e.g., 'CANCIL') and automatically sends a confirmation reply to verify the user's unsubscribe intent. If the user confirms via the defined prompt, they are unsubscribed. [Read more](../mobile/mobile-configuration-sinch.md)
 
     >[!NOTE]
     >
     >**Fuzzy Opt-out** is only available with Sinch and Infobip.
 
-  * **Verify SMS Connection** -  You can now easily test and verify your SMS API credentials within Adobe Journey Optimizer by sending a sample message to a designated device. [Read more](../sms/sms-configuration-sinch.md)
+  * **Verify SMS Connection** -  You can now easily test and verify your SMS API credentials within Adobe Journey Optimizer by sending a sample message to a designated device. [Read more](../mobile/mobile-configuration-sinch.md)
 
 * **Configuration**
 
@@ -1042,7 +1065,7 @@ To subscribe:
 * Under **Notifications**, find **Journey Optimizer New releases**
 * Enable In-app and email notifications
 
-![](assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
+![](assets/do-not-localize/pulse-notif.png){width="70%"}
 
 
 ### Change in journey conditions {#ee-change@}
@@ -1136,7 +1159,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>You can now configure, customize, and deliver Rich Communication Services (RCS) messages through a third-party provider by integrating with custom SMS provider solution.</p>
-<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../mobile/mobile-configuration-custom.md">detailed documentation</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -1308,7 +1331,7 @@ Improvements coming with this release are listed below.
 
 * **Interactive Message Execution API update** - Availability date: June 6th, 2025 
 
-  The Interactive Message Execution API now allows you to delete the schedule of upcoming campaigns execution. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/messaging/){target="_blank"}
+  The Interactive Message Execution API now allows you to delete the schedule of upcoming campaigns execution. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/messaging){target="_blank"}
 
 
 ## May '25 release notes {#25-5-rn}
@@ -1350,8 +1373,10 @@ New capabilities coming with this release are detailed below.
 <p>With the integration of Adobe Experience Manager and Adobe Journey Optimizer, you can now effortlessly use Adobe Experience Manager Content Fragments within your Journey Optimizer content. This seamless connection makes it easier to access and use your AEM content directly in Journey Optimizer.</p>
 <p>Previously available for a limited set of organizations (LA), this capability is now GA with the following enhancement: you can now define placeholders and map personalization values within the fragment signature using the Editor mode.</p>
 <ul>
-<!--li>Create offers by directly selecting an AEM Content Fragment.</li>
-<li>Define placeholders and map personalization values within the fragment signature using the Editor mode.</li-->
+<!--
+li>Create offers by directly selecting an AEM Content Fragment.</li>
+<li>Define placeholders and map personalization values within the fragment signature using the Editor mode.</li
+-->
 </ul>
 </br>
 <img src="assets/do-not-localize/content-fragment.gif">
@@ -1453,7 +1478,7 @@ New capabilities coming with this release are detailed below.
 <tr>
 <td>
 <p>Journey Optimizer now allows you to configure additional SMS providers beyond the default options: Sinch, Infobip, and Twilio. With custom SMS provider configuration, you can integrate third-party providers directly, leverage advanced payload customization for dynamic messaging, and manage consent preferences (opt-in/opt-out) to ensure compliance.</p>
-<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p>
+<p>For more information, refer to the <a href="../mobile/mobile-configuration-custom.md">detailed documentation</a>.</p>
 <p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
 <p>Availability date: May 20, 2025</p>
 </td>
@@ -1539,19 +1564,24 @@ Improvements coming with this release are listed below.
 <!--
 * **Decisioning - Leverage Adobe Experience Platform datasets** 
   
-  Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.-->
+  Journey Optimizer now allows you to leverage Adobe Experience Platform datasets in the following Decisioning objects: eligibility rules, ranking formulas, and capping rules.
+-->
 
 * **Right rail in campaigns list** - Availability date: May 20, 2025
 
   In the campaign list, selecting a campaign now opens a pane displaying its details.
 
-<!--* **Form fields in code-based experience content**
+<!--
+* **Form fields in code-based experience content**
 
-  In content templates, you can now define specific JSON or HTML fields which enable non-technical users to easily edit content in code-based experiences without the need to manipulate code.-->
+  In content templates, you can now define specific JSON or HTML fields which enable non-technical users to easily edit content in code-based experiences without the need to manipulate code.
+-->
 
-<!--* **Subdomains - 'Custom delegation' method**  
+<!--
+* **Subdomains - 'Custom delegation' method**  
   In addition to the full delegation and the CNAME method, a new subdomain configuration method is now available: the Custom delegation method, which enables you to fully own controlling and maintaining all aspects of DNS that are required for delivering, rendering, and tracking messages.
-  -->
+  
+-->
 
 
 
@@ -1581,7 +1611,8 @@ New capabilities coming with this release are listed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Adobe Experience Manager as a Cloud Service integration</strong><br/></th>
@@ -1595,9 +1626,10 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Simulate content variations (General Availability)</strong><br/></th>
@@ -1612,7 +1644,8 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
 <table>
 <thead>
@@ -1631,7 +1664,8 @@ New capabilities coming with this release are listed below.
 </table>
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Custom SMS provider (General Availability)</strong><br/></th>
@@ -1641,10 +1675,10 @@ New capabilities coming with this release are listed below.
 <tr>
 <td>
 <p>Adobe Journey Optimizer now supports custom SMS providers, allowing you to integrate your preferred SMS services for enhanced communication flexibility.</p>
-<p>For more information, refer to the <a href="../sms/sms-configuration-custom.md">detailed documentation</a>.</p></td>
+<p>For more information, refer to the <a href="../mobile/mobile-configuration-custom.md">detailed documentation</a>.</p></td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 <table>
@@ -1668,7 +1702,8 @@ New capabilities coming with this release are listed below.
 
 
 
-<!--<table>
+<!--
+<table>
 <thead>
 <tr>
 <th><strong>Calendar view for campaign and journey inventory (Limited Availability)</strong><br/></th>
@@ -1682,7 +1717,8 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table>-->
+</table>
+-->
 
 <table>
 <thead>
@@ -1719,7 +1755,8 @@ New capabilities coming with this release are listed below.
 </tbody>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Themes in the Email Designer (Beta)</strong><br/></th>
@@ -1736,7 +1773,7 @@ New capabilities coming with this release are listed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -1779,7 +1816,7 @@ New capabilities coming with this release are listed below.
 
 **Campaigns preview API**
 
-  New APIs are available to preview campaigns, in addition to existing proof-sending capabilities. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/simulations/#operation/createCampaignPreview){target="_blank"}.
+  New APIs are available to preview campaigns, in addition to existing proof-sending capabilities. [Read more](https://developer.adobe.com/journey-optimizer-apis/references/simulations#operation/createCampaignPreview){target="_blank"}.
 
 **Sandbox Tooling**
 
@@ -1825,21 +1862,25 @@ New capabilities coming with this release are listed below.
     >
     >This improvement is only available for a set of organizations (Limited Availability).
 
-<!--- **Folders for content templates and fragments** - Availability date: May 5, 2025
+<!--
+**Folders for content templates and fragments** - Availability date: May 5, 2025
 
   Previously available for a set of organizations (LA), folders are now available to all users (GA) to manage their content templates and fragments. Folders let you organize your content templates and fragments more easily and effectively into a structured hierarchy.
 
 
 
-<!--- **Right rail in campaigns list**  
+**Right rail in campaigns list**  
 
-  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.-->
+  A right rail has been added to the campaigns list, providing detailed information when a campaign is selected.
+-->
 
-<!--**Playbooks**
+<!--
+**Playbooks**
 
 - **Create your own playbooks (Beta)**
   
-  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.-->
+  You can now create your own playbooks in Adobe Journey Optimizer, enabling greater customization and flexibility in journey planning.
+-->
 
 
 
@@ -1849,7 +1890,8 @@ New capabilities coming with this release are listed below.
 
 New capabilities coming with this release are detailed below.
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Integration with Adobe Express (Limited Availability)</strong><br/></th>
@@ -1866,10 +1908,11 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>Journey metrics</strong><br/></th>
@@ -1884,9 +1927,10 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
-<!-- table>
+<!--
+ table>
 <thead>
 <tr>
 <th><strong>Calendar view for journeys (Limited Availability)</strong><br/></th>
@@ -1901,7 +1945,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 <table>
 <thead>
@@ -1963,7 +2007,8 @@ New capabilities coming with this release are detailed below.
 </table>
 </table>
 
-<!--table>
+<!--
+table>
 <thead>
 <tr>
 <th><strong>LINE channel (Limited Availability)</strong><br/></th>
@@ -1978,7 +2023,7 @@ New capabilities coming with this release are detailed below.
 </td>
 </tr>
 </tbody>
-</table-->
+-->
 
 
 ### Improvements {#25-03-improv}
@@ -2027,9 +2072,11 @@ HTML type content templates are now deprecated. Note that you can still use exis
 
 You can now leverage custom consent policies through marketing actions in transactional email channel configurations. [Learn more](../action/consent.md#surface-marketing-actions)
 
-<!--**Deliverability**
+<!--
+**Deliverability**
 
-You can now choose to have your emails relayed to your SMTP servers instead of being sent directly from Journey Optimizer to ISPs. This allows you to route final email deliveries through your own Mail Transfer Agents and IPs, or to perform final validations on the emails before sending them to your recipients. The SMTP relay capacity is available on demand - contact your Adobe representative.-->
+You can now choose to have your emails relayed to your SMTP servers instead of being sent directly from Journey Optimizer to ISPs. This allows you to route final email deliveries through your own Mail Transfer Agents and IPs, or to perform final validations on the emails before sending them to your recipients. The SMTP relay capacity is available on demand - contact your Adobe representative.
+-->
 
 
 
@@ -2150,13 +2197,14 @@ The improvements below come with the February update.
 
 * **Direct mail** - A new server type, Data landing zone, is now supported for file routing  in the direct mail channel configuration. [Read more](../direct-mail/direct-mail-configuration.md#file-routing-configuration)
 
-* **SMS** - You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only. [Read more](../sms/sms-configuration-sinch.md)
+* **SMS** - You can now manage SMS message delivery from multi-regional endpoints by overriding delivery, feedback, inbound, and callback URLs. To support this, a new field Override URL has been added to API Credentials configuration. This change is available with Sinch provider only. [Read more](../mobile/mobile-configuration-sinch.md)
 
 * **Personalization** (Availability date: Jan 29, 2025) - New date/time helper functions are available for use in the personalization editor. [Read more](../personalization/functions/dates.md)
 
 
 <!--
-* The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes.--> 
+* The personalization editor has been enhanced with new capabilities such as Auto-complete, Search, and filtering options. You can also show or hide deprecated attributes.
+--> 
 
 
 * **Email configuration** - If you are managing consent outside of Adobe, you can now set a custom unsubscribe email address and a custom one-click unsubscribe URL as part of your email channel configuration settings. [Read more](../email/list-unsubscribe.md#custom-managed)

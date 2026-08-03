@@ -8,8 +8,51 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: d11dd1cb-041b-48cd-b1fc-bcbe12338a07
+TQID: https://experienceleague.adobe.com/QtGuPZnO3Bka3GI9JaMjBJmho4Cry5qgl61h3Ohe3ek
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+subfeature_v2:
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
+    internal-label: Metrics catalog
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
+    internal-label: Email marketing
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+    internal-label: Audience segmentation
 ---
 # Email campaign report {#campaign-global-report-cja-email}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the Email campaign report in Adobe Journey Optimizer to analyze email KPIs, click and delivery funnels, tracking statistics, bounce and error reasons, and engagement by domain, subject, and link.
+
+>[!ENDSHADEBOX]
 
 >[!INFO]
 >
@@ -110,11 +153,11 @@ The **[!UICONTROL Delivered vs Click trend]** graph presents a detailed analysis
 
 +++
 
-## Unique Sending Statistics {#unique-sending-statistics-email}
+## Unique send statistics {#unique-sending-statistics-email}
 
 ![](assets/cja-unique-email-sending-stat.png)
 
-The **[!UICONTROL Unique Sending Statistics]** table presents a detailed overview of unique email performance metrics in your campaigns. It focuses on individual profiles, such as those uniquely targeted, delivered to, bounced, or excluded—providing deeper insights into how your emails are reaching and engaging your audience.
+The **[!UICONTROL Unique Send Statistics]** table presents a detailed overview of unique email performance metrics in your campaigns. It focuses on individual profiles, such as those uniquely targeted, delivered to, bounced, or excluded—providing deeper insights into how your emails are reaching and engaging your audience.
 
 +++ Learn more about Unique Sending Statistics metrics
 
@@ -192,9 +235,15 @@ The **[!UICONTROL Email - Tracking statistics]** table offers a detailed account
 
 * **[!UICONTROL Click through open rate (CTOR)]**: Number of times the email was opened.
 
+* **[!UICONTROL Open rate]**: Percentage of profiles who opened the email at least once, relative to the number of delivered emails.
+
 * **[!UICONTROL Estimated Email Opens]**: Estimate of total email opens that accounts for both direct opens by profiles and automated opens triggered by mail servers. This metric adjusts for opens triggered by mail servers for privacy or security scanning by applying an open rate calculated from recipients who manually opened the email to those whose emails were only opened by mail servers.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
 
 * **[!UICONTROL Spam complaints]**: Number of times a message was declared as spam or junk.
 
@@ -224,17 +273,19 @@ The **[!UICONTROL Email Domains]** table offers an in-depth breakdown of emails 
 
 +++
 
-## Tracked link labels {#track-link-label}
+## Tracked labels {#track-link-label}
 
 ![](assets/cja-email-tracked-link.png)
 
-The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your emails, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
+The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your emails, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
 
 +++ Learn more about Tracked link labels metrics
 
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in an email.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
 +++
 
@@ -249,6 +300,8 @@ The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of
 * **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in an email.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your emails.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
 
 +++
 

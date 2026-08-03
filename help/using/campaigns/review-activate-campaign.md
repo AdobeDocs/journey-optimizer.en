@@ -9,11 +9,39 @@ role: User
 level: Intermediate
 keywords: campaign, review, validation, activation, activating, optimizer
 exl-id: 7c4afc98-0d79-4e26-90f8-558bac037169
+TQID: https://experienceleague.adobe.com/BKGXccq-kwZJA-cZ4SAyf3zJBIvyJnr5V01xmbQgwmo
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
-
 # Review and activate the Action campaign {#action-campaign-review}
 
-Once your Action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow these steps:
+>[!BEGINSHADEBOX]
+
+**On this page:** Review your Action campaign's configuration and content to catch any errors before activating it, so you can confidently send your message immediately or on its scheduled date.
+
+>[!ENDSHADEBOX]
+
+Once your Action campaign has been configured, you need to review its parameter and content before activating it. To do this, follow the steps below.
 
 >[!IMPORTANT]
 >
@@ -28,6 +56,8 @@ Once your Action campaign has been configured, you need to review its parameter 
     In case of errors, you cannot activate the campaign. Resolve the errors before proceeding.
 
     ![](assets/create-campaign-alerts.png)
+
+1. When a campaign uses [decision policies](../experience-decisioning/create-decision.md) in its content, you can review each policy's structure and copy technical details directly from the campaign summary. [Learn how](../experience-decisioning/use-decision-policy.md#decision-policy-summary)
 
 1. Check that your campaign is correctly configured, then click **[!UICONTROL Activate]**.
 

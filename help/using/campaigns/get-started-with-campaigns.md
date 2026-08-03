@@ -10,8 +10,51 @@ level: Beginner
 mini-toc-levels: 1
 keywords: campaign, how to , start, optimizer
 exl-id: e2506a43-e4f5-48af-bd14-ab76c54b7c90
+TQID: https://experienceleague.adobe.com/3yMQM-hovd-3HgT9PlhNvpKlxG3m4NMqnZwv-dbZACU
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
+    internal-label: Audience segmentation
 ---
 # Get started with campaigns {#get-started-campaigns}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand campaign fundamentals, compare the available campaign types, and follow the end-to-end creation workflow so you can choose the right approach and build campaigns that deliver targeted content across channels in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule"
@@ -157,6 +200,10 @@ Before working with campaigns, make sure you have the following in place:
 
 * **Audiences** - Audiences must be available in Adobe Experience Platform before creating campaigns. [Get started with audiences →](../audience/about-audiences.md)
 
+    >[!NOTE]
+    >
+    >Every profile engaged by a campaign counts toward your organization's **Engageable Profiles** license metric (rolling 12-month window, counted once per sandbox). Activating a campaign to a large or new audience can cause a significant increase in this count. [Monitor your Engageable Profiles count](../audience/license-usage.md)
+
 * **Channel configurations** - Channel configurations (presets) must be created and available for the channels you want to use. [Set up channel configurations →](../configuration/channel-surfaces.md)
 
 * **Permissions** - You need appropriate permissions based on the campaign type. Contact your administrator if you cannot access campaign functionalities. [Learn about built-in roles →](../administration/ootb-product-profiles.md)
@@ -208,7 +255,7 @@ Set up the foundation of your campaign:
 2. **Select campaign type** (Action, API-triggered, or Orchestrated)
 3. **Choose your audience** 
 4. **Set priority** if using conflict management
-5. **Configure schedule** (for Action campaigns) or API details (for API-triggered). For Action campaigns, you can also [send using waves](send-using-waves.md) to deliver the message in batches over time.
+5. **Configure schedule** (for Action campaigns) or API details (for API-triggered). For Action campaigns, you can also [send using waves](../delivery/send-using-waves.md) to deliver the message in batches over time.
 
 **Type-specific guides:** [Action campaign properties](campaign-properties.md) | [API-triggered campaign properties](api-triggered-campaign-properties.md) | [Orchestrated campaign setup](../orchestrated/create-orchestrated-campaign.md)
 
@@ -220,7 +267,7 @@ Create compelling messages for your audience:
 
 * Use the **Email Designer** for rich email experiences
 * Configure **push notifications** with images and deep links
-* Design **SMS/MMS messages** with personalization
+* Design **SMS/RCS/MMS messages** with personalization
 * Create **in-app** and **web** experiences
 * Add **personalization** using profile attributes and contextual data
 

@@ -9,14 +9,62 @@ level: Beginner, Intermediate
 keywords: journey, discover, get-start, unitary, read audience, audience qualification, business event, real-time, scheduled, batch, event-triggered, workflow, orchestration, personalization, multi-channel
 exl-id: 73cfd48b-72e6-4b72-bbdf-700a32a34bda
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/FsZLMlzVj6CcTqVp9BPUmiCf2piZL8zaj2WfWv8FMSQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
+    internal-label: Journey design
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
-
 # Get started with journeys {#jo-general-principle}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the fundamentals of journeys in Adobe Journey Optimizer, including journey types, the design workflow, key capabilities, and best practices for building personalized customer experiences.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_canvas"
 >title="Create a journey"
->abstract="Use the drag-and-drop canvas to orchestrate messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact."
+>abstract="The drag-and-drop canvas orchestrates messages and actions across multiple channels, leveraging contextual data and audience targeting for maximum impact."
 >additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/create-journey/journey-gs" text="Create your first journey"
 
 
@@ -38,7 +86,7 @@ Use [!DNL Journey Optimizer] to:
 
 ➡️ **Ready to start building?** [Create your first journey](journey-gs.md) in 5 minutes.
 
-### Journeys vs Campaigns: When to use each {#journeys-vs-campaigns-intro}
+### Journeys vs campaigns: when to use each {#journeys-vs-campaigns-intro}
 
 [!DNL Adobe Journey Optimizer] offers three approaches to reach customers: **Journeys** (1:1 real-time orchestration), **Campaigns** (simple batch or API-triggered delivery), and **Orchestrated campaigns** (batch canvas workflows with multi-entity data).
 
@@ -48,20 +96,22 @@ Use [!DNL Journey Optimizer] to:
 * Use **Action and API-triggered campaigns** for simple, scheduled or triggered message delivery to audiences
 * Use **Orchestrated campaigns** for complex batch workflows requiring multi-entity segmentation and exact pre-send counts
 
-<!-- waiting for DOCAC-13912
-➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability-->
+<!--
+ waiting for DOCAC-13912
+➡️ **[View detailed comparison: Journeys vs Campaigns](../start/journeys-vs-campaigns.md)** - Includes decision guide, use cases, and feature availability
+-->
 
 ## Choose your journey type {#journey-types}
 
 [!DNL Adobe Journey Optimizer] supports four journey types, each designed for different entry mechanisms and business scenarios:
 
-* **Unitary journeys**: Real-time, event-triggered experiences (order confirmations, welcome emails)
+* **Unitary journeys**: Real-time, event-triggered experiences (cart abandonment recovery, welcome emails)
 * **Read Audience journeys**: Scheduled batch communications to audience segments (newsletters, promotional campaigns)
 * **Audience Qualification journeys**: Real-time responses to audience membership changes (VIP upgrades, re-engagement)
 * **Business event journeys**: Business conditions affecting multiple customers (inventory alerts, flash sales)
 
-<!-- waiting for DOCAC-13912 
-➡️ **[Journey types and selection guide](journey-types-selection.md)** - Detailed comparison, decision tree, and feature compatibility matrix -->
+➡️ **[Journey types: choose the right one](journey-types-selection.md)** - Detailed comparison, decision guide, and feature compatibility matrix 
+
 
 ## Build with the journey designer {#journey-designer}
 
@@ -88,7 +138,7 @@ Choose how customers enter: through an event, audience segment, or audience qual
 
 **Send messages**
 
-Use built-in channel actions for email, push, SMS/MMS, in-app, web, and more—all designed in Journey Optimizer.
+Use built-in channel actions for email, push, SMS/RCS/MMS, in-app, web, and more—all designed in Journey Optimizer.
 
 [Send messages in journeys](journey-action.md)
 :::
@@ -100,7 +150,7 @@ Use built-in channel actions for email, push, SMS/MMS, in-app, web, and more—a
 
 Branch your journey based on profile attributes, audience membership, or real-time events.
 
-[Use conditions](condition-activity.md)
+[Use conditions](conditions.md)
 :::
 
 :::
@@ -169,7 +219,7 @@ Use the journey designer to build your flow:
 Always test your journey to catch issues before customers experience them:
 
 * Use **test mode** to simulate the journey with test profiles
-* Use **dry run** to preview journey execution without affecting real data or sending messages
+* Use **dry run** to execute the journey against real production data without sending communications or updating profiles
 * Verify all conditions, messages, and actions work as expected
 * Check timing, data flows, and personalization
 
@@ -307,7 +357,7 @@ Handle global audiences with automatic time zone adjustments and optimal send ti
 
 **Test mode & dry run**
 
-Validate journeys with test profiles before going live, and preview execution without affecting real data.
+Validate journeys with test profiles before going live, and preview execution using real production data without sending communications or updating profiles.
 
 [Use dry run](journey-dry-run.md)
 :::
@@ -319,7 +369,7 @@ Validate journeys with test profiles before going live, and preview execution wi
 
 Duplicate journeys across sandboxes to streamline testing and deployment workflows.
 
-[Copy journeys](copy-to-sandbox.md)
+[Copy journeys](../configuration/copy-objects-to-sandbox.md#objects)
 :::
 
 :::
@@ -373,13 +423,12 @@ Get a visual introduction to journey components and learn the basics of building
 
 +++
 
-<!-- Waiting for DOCAC-13912
 +++ Which journey type should I use?
 
-Use the [decision guide](#decision-guide) or [comparison table](#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.
+Use the [decision guide](journey-types-selection.md#decision-guide) or [comparison table](journey-types-selection.md#journey-types-comparison) to choose between Unitary, Read Audience, Audience Qualification, and Business Event journeys based on your trigger mechanism and use case.
 
 +++
--->
+
 
 +++ Can I edit a live journey?
 
@@ -413,3 +462,51 @@ Set up **[journey alerts](../reports/alerts.md)** to receive real-time notificat
 * **[Troubleshooting inbound activities](troubleshooting-inbound.md)** - Fix entry and qualification issues
 
 **Ready to build your first journey?** [Get started now →](journey-gs.md)
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page is the getting-started hub for Adobe Journey Optimizer journeys, explaining what journeys are, the four journey types, the six-step creation workflow, real-world use cases, and links to advanced capabilities.
+
+**Intents:**
+
+* Understand what journeys are and how they differ from campaigns and orchestrated campaigns
+* Choose the right journey type (Unitary, Read Audience, Audience Qualification, or Business event) for a use case
+* Follow the six-step journey creation workflow: Plan, Design, Test, Publish, Monitor, Optimize
+* Use Simulation, Test mode, or Dry run to validate a journey before going live
+* Publish a journey and monitor performance through reports and alerts
+* Explore advanced capabilities such as expressions, timezone management, copy to sandbox, and throughput control
+
+**Glossary:**
+
+* **Journey**: An automated, multistep customer experience that orchestrates personalized interactions across channels in response to customer behavior, business events, or scheduled campaigns. *(product-specific)*
+* **Journey designer**: The visual drag-and-drop canvas in AJO used to build and configure journey flows without writing code. *(product-specific)*
+* **Test mode**: A journey validation mode that uses persistent Adobe Experience Platform test profiles (explicitly flagged as test profiles) to traverse a draft journey before it is published. *(product-specific)*
+* **Dry run**: A special publication mode that executes the journey against real production data without sending communications or updating profiles. *(product-specific)*
+* **Simulation**: A validation mode that uses temporary simulated users generated on the fly; simulated users do not persist in Adobe Experience Platform. *(product-specific)*
+* **Orchestrated campaigns**: Multi-step batch workflows in AJO that use relational data (profiles + products/stores/bookings) and process all profiles together with exact pre-send counts. *(product-specific)*
+
+**Guardrails:**
+
+* Live journeys cannot be structurally edited; changes require creating a new version
+* Test mode and dry run must be used before publishing to catch issues
+
+**Terminology:**
+
+* Canonical name: Journey — Acronym: none — variants: customer journey, AJO journey
+* Synonyms: "journey designer" = "canvas" = "journey canvas"
+* Do not confuse: "Journey" ≠ "Campaign" — Journeys maintain individual customer state for real-time, multi-step behavior-driven experiences; Campaigns deliver messages in batch to audiences on a schedule or via API trigger
+* Do not confuse: "Simulation" ≠ "Test mode" ≠ "Dry run" — Simulation uses temporary simulated users; Test mode uses persistent AEP test profiles in a draft journey; Dry run executes against real production data without contacting customers or updating profiles
+
+**FAQ:**
+
+* **Q: What is the difference between a journey and a campaign in Journey Optimizer?** — Journeys provide 1:1 real-time orchestration where each profile progresses at its own pace through conditional logic; Campaigns deliver messages simultaneously to an audience on a schedule or via API trigger; Orchestrated campaigns are batch canvas workflows for complex multi-entity segmentation.
+* **Q: Can I edit a live journey?** — Limited elements such as name and message content can be edited; structural changes require creating a new version of the journey.
+* **Q: What are the steps to build a journey?** — The six-step workflow is: Plan, Design in the canvas, Test (test mode or dry run), Publish, Monitor performance, and Optimize/iterate.
+* **Q: How do I validate a journey without sending real messages?** — Use Simulation (temporary simulated users), Test mode (persistent AEP test profiles), or Dry run (real production data without customer contact or profile updates). Dry run profiles count toward Engageable Profiles and live journey quota.
+* **Q: What journey type should I use for a welcome email triggered by a subscription?** — Use a Unitary journey, which is triggered by a specific individual event such as a subscription sign-up.
+
++++

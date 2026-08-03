@@ -7,8 +7,45 @@ feature: Integrations
 role: User
 level: Intermediate
 exl-id: 700dc66e-ae2d-418f-b75e-ece15af57ab3
+TQID: https://experienceleague.adobe.com/i5xKfvLh9J1Ec3ux19XJhWDGhAdQ2ZVIbvyMk2W6UW4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
+subfeature_v2:
+  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
+    internal-label: Experience Manager Assets integration
+  - id: c08fcc42-2918-421a-a25e-e1bd9464c290
+    internal-label: Adobe Stock integration
+  - id: c6fdb8b1-45ee-460a-a859-9031c59118b7
+    internal-label: Analytics integration
+  - id: d16f7424-4847-4b90-a37c-4b52cbdabee5
+    internal-label: Intelligent Services integration
 ---
 # Integrations with other solutions {#integration}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how connecting Adobe Journey Optimizer to other Adobe solutions and third-party systems — such as Customer Journey Analytics, Experience Manager, Stock, GenStudio, Campaign, and Workfront — extends its functional scope and helps you address your specific use cases.
+
+>[!ENDSHADEBOX]
 
 With Adobe Journey Optimizer, you can easily manage, retain, and export this data to platforms or systems that are part of your technology stack. These integrations help you address your specific use cases, and extend Adobe Journey Optimizer functional scope.
 
@@ -52,7 +89,6 @@ Bring marketing and creative workflows together using **[!DNL Adobe Experience M
 With Adobe Journey Optimizer, you can create custom-tailored messages through Adobe Experience Manager sites. Start by designing your templates using Adobe Experience Manager's content sources, then send them to Adobe Journey Optimizer. Once shared, these templates can be accessed in Adobe Journey Optimizer's Email Designer, simplifying the process of crafting and sending messages to your desired audience.
 
 [![learn more](../assets/do-not-localize/learn-more-button.svg)](../integrations/aem-templates.md)
-
 -->
 
 >[!TAB AEM Fragments]
@@ -84,20 +120,20 @@ The Adobe Express integration in Adobe Journey Optimizer allows you to easily ac
 
 Learn more about [Journey Optimizer + Adobe Express](../integrations/express.md).
 
-## GenStudio for Performance Marketing
+## GenStudio for performance marketing
 
 Adobe GenStudio for Performance Marketing is a generative AI-first application that lets marketing teams create their own ads and emails to drive impactful, personalized marketing campaigns that adhere to your brand standards and complies with your enterprise policies. By leveraging Adobe AI technology, it provides a comprehensive suite of tools that simplify the complexities of content creation and management so that creatives can focus on innovation.
 
 Learn more about [Journey Optimizer + GenStudio for Performance Marketing](../integrations/genstudio.md).
 
 
-## Adobe Intelligent Services {#integration-intelligent-service}
+## Adobe intelligent services {#integration-intelligent-service}
 
 Adobe Intelligent Services that are native to Real Time Customer Data Platform allows you to leverage the power of artificial intelligence and machine learning in customer experience use cases. This allows for marketing analysts to set up predictions specific to a company's needs using business-level configurations without the need for data science expertise.
 
 Customer AI allows brands to create churn or conversion machine learning based scores that will be available as profile attributes in Adobe Experience Platform and that can be used to personalize a journey.
 
-Learn more about [Journey Optimizer + Adobe Intelligent Services](../building-journeys/ai-services-overview.md).
+Learn more about [Journey Optimizer + Adobe Intelligent Services](intelligent-services.md).
 
 
 ## Adobe Campaign {#integration-ac}
@@ -132,3 +168,11 @@ Learn more about [custom actions](../action/about-custom-action-configuration.md
 Journey Optimizer allows you to configure connections to external systems via custom data sources and custom actions. This allows you, for example, to enrich your journeys with data coming from an external reservation system.
 
 Learn how to use external data sources to define a connection to a third-party system in [this section](../datasource/external-data-sources.md).
+
+<!--
+## AI tools via MCP (Beta) {#integration-mcp}
+
+[!DNL Adobe Journey Optimizer] provides a Model Context Protocol (MCP) server that lets you query campaign and offer data using plain-language prompts directly from MCP-compatible AI tools such as Claude Web and Claude Desktop — without writing API calls or navigating product screens.
+
+Learn more about [Journey Optimizer + MCP](../integrations/ajo-mcp.md).
+-->

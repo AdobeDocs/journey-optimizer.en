@@ -7,8 +7,43 @@ feature: Privacy, Consent Management
 role: User
 level: Intermediate
 exl-id: b1ff5780-d453-46b3-8cf4-abea085782ef
+TQID: https://experienceleague.adobe.com/eXN1Ndwwwn7SoKryd-d5WU1c3aqxloumQZ4SfHDmhSQ
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+feature_v2:
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
+    internal-label: Consent management
+  - id: f365ec33-2b99-4b7f-b4ee-c743dd7f615f
+    internal-label: Data governance
+  - id: c8d5f2ce-ba44-43e9-a2bf-94a3d7d85ec3
+    internal-label: Data privacy requests
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 # Get started with privacy {#privacy}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover the Adobe Journey Optimizer and Adobe Experience Platform tools for managing data requests, audit logs, consent, and governance policies, so you can handle personal data responsibly and comply with regulations such as GDPR.
+
+>[!ENDSHADEBOX]
 
 Journey Optimizer is a powerful tool for collecting and processing extremely large amounts of data, including personal information and sensitive data. This is why privacy needs to be managed carefully.
 

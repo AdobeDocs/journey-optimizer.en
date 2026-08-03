@@ -15,7 +15,7 @@ exl-id: b73438e0-8ebe-4188-bb63-1095dcfc4679
 
 Exporting your offer catalog in Adobe Journey Optimizer is like opening the door to seamless data integration with Adobe Experience Platform. This feature ensures your personalized offers, fallback options, placements, and decisions are automatically updated and organized into datasets, ready for advanced analysis and decisioning. Whether you're previewing exported datasets, understanding their structure, or diving into specific details like rankings or constraints, the process is designed to be intuitive and efficient. By exploring the topics ahead, you'll gain the tools to harness this feature for driving more precise, data-driven customer experiences.
 
-## Export Your Offer Catalog
+## Export your offer catalog
 
 :::: landing-cards-container
 :::

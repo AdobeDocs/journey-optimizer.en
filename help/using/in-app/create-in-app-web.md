@@ -7,8 +7,39 @@ role: User
 level: Beginner
 keywords: in-app, message, creation, start
 exl-id: 5a67177e-a7cf-41a8-9e7d-37f7fe3d34dc
+TQID: https://experienceleague.adobe.com/zx6HVM0XO9qNBejwUIkpb257rr7bkt9ThZ1MLAAuPSY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create a Web In-app message {#create-in-app-web}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a Web In-app message campaign in Adobe Journey Optimizer, from configuring the channel to defining the audience, triggers, and content.
+
+>[!ENDSHADEBOX]
 
 ## Configure the Web In-app channel {#configure-web-inapp}
 

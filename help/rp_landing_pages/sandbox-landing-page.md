@@ -3,8 +3,7 @@ solution: Journey Optimizer
 product: Journey Optimizer
 title: Sandboxes management
 description: Sandboxes management
-hide: yes
-hidefromtoc: yes
+hide: true
 redpen-status: CREATED_||_2025-08-11_21-17-32
 exl-id: 5dce56d9-0c3d-4eb1-8d44-d69a98925e8c
 ---

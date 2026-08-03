@@ -5,12 +5,50 @@ title: Manage your customers' preferences
 description: Learn how to manage users' preferences through the use of consent policies
 feature: Journeys, Privacy, Consent Management, Landing Pages
 topic: Administration
-role: Data Engineer, Data Architect, Admin
+role: Developer, Admin
 level: Experienced
 keywords: policies, governance, platform, consent, healthcare shield
 exl-id: a3e68015-c8f8-4b01-8171-f39d70b7e59d
+TQID: https://experienceleague.adobe.com/TPg5xSOHgXIBE4trUJiI3MoKjSGqvT1NtGI2Cg7ynFo
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Manage your customers' preferences {#preference-center}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Record and honor your customers' channel and topic preferences through consent policies so you only target the people who want to hear from you.
+
+>[!ENDSHADEBOX]
 
 >[!AVAILABILITY]
 >
@@ -18,7 +56,8 @@ exl-id: a3e68015-c8f8-4b01-8171-f39d70b7e59d
 
 In a modern marketing automation ecosystem, brands engage with customers accross various touchpoints, facing the risk of irrelevant or excessive communication, leading to disengagement, spam complaints, and compliance risks. This is why they need to manage their customers' preferences in order to gain real-time insights over their audience and deliver personalized, respectful communication.
 
-With [!DNL Adobe Journey Optimizer], through the use of [consent policies](consent.md), you can honor your customers' preferences<!-- in terms of **channels** and **topics**-->. This ensures that [!DNL Journey Optimizer] only targets customers based on their choices<!-- their preferred channels and on the subscription topics-->, while respecting their consent.
+With [!DNL Adobe Journey Optimizer], through the use of [consent policies](consent.md), you can honor your customers' preferences<!-- in terms of **channels** and **topics**-->. This ensures that [!DNL Journey Optimizer] only targets customers based on their choices, while respecting their consent.
+<!-- their preferred channels and on the subscription topics-->
 
 To manage your users' preferences with [!DNL Journey Optimizer], you can:
 
@@ -32,7 +71,8 @@ To manage your users' preferences with [!DNL Journey Optimizer], you can:
 
 >[!IMPORTANT]
 >
->Consent takes precedence over preferences. For example, one of your customers indicated that their preferred channel is email and that they agreed to receive newsletters<!-- they are interested in yoga-->; however, if they opted out from receving any communications from you, they cannot be targeted by an email newsletter that you are sending<!-- on yoga-->.
+>Consent takes precedence over preferences. For example, one of your customers indicated that their preferred channel is email and that they agreed to receive newsletters<!-- they are interested in yoga-->; however, if they opted out from receving any communications from you, they cannot be targeted by an email newsletter that you are sending.
+<!-- on yoga-->
 
 ## Record and honor preferences {#manage-preferences}
 
@@ -76,11 +116,13 @@ Let's say you want to target your customers through journeys and campaigns based
 
     ![](assets/profile-preference-attributes.png){width=80%}
 
-<!--The corresponding profile dataset is updated as follows:
+<!--
+The corresponding profile dataset is updated as follows:
 
 |Attribute = Email id | Attribute = Offers_Push | Attribute = Newsletters_Email |
 |---------|----------|---------|
-| john.black@lumamail.com | Y | N |-->
+| john.black@lumamail.com | Y | N |
+-->
 
     >[!NOTE]
     >
@@ -96,11 +138,13 @@ Let's say you want to target your customers through journeys and campaigns based
 
 1. Choose the **[!UICONTROL Consent policy]** type and configure a condition as follows. [Learn how to configure consent policies](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html#consent-policy){target="_blank"}
 
-<!--Consent policies are comprised of two logical components:
+<!--
+Consent policies are comprised of two logical components:
 
 * **If**: The condition that will trigger the policy check, based on a certain marketing action (email, SMS, push, custom action, etc.) being performed, the presence of certain data usage labels, or a combination of the two.
 
-* **Then**: The consent attribute must be present for a profile to be included in the action that triggered the policy. More than one field can also be selected.-->
+* **Then**: The consent attribute must be present for a profile to be included in the action that triggered the policy. More than one field can also be selected.
+-->
 
     For example, to send communications only to your customers who have not opted out from receiving email newsletters, create a custom policy and define the following condition:
 

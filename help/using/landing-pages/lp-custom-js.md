@@ -9,8 +9,33 @@ role: Developer
 level: Experienced
 keywords: landing, landing page, javascript, code
 exl-id: 2a7ebead-5f09-4ea5-8f00-8b5625963290
+TQID: https://experienceleague.adobe.com/h-F683Mfa0y21OXjFHlow5FHQA-EOgFanOyMP7R7jug
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b19d9237-76be-466d-a869-aacf2d72205f
+    internal-label: Landing pages
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Use custom JavaScript in a landing page {#lp-custom-js}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Extend your landing pages with custom JavaScript to validate input, run custom form submissions, fire analytics events, or build dynamic behaviors beyond the standard editor.
+
+>[!ENDSHADEBOX]
 
 You can define your landing page content using custom JavaScript. For example, if you need to perform advanced styling or if you want to add custom behaviors to your landing pages, you can build your own controls and execute them in [!DNL Journey Optimizer].
 

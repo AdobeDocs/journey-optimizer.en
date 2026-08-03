@@ -8,9 +8,37 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a205539b-b7ea-4832-92b0-49637c4dac47
+TQID: https://experienceleague.adobe.com/E9gFX9CtjkzhDBeVqcaOE-7kNWygH2CVIikDLZ3ZqR8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Create content templates {#create-content-templates}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create content templates from scratch or by saving existing campaign or journey content as a reusable template in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_create_template"
 >title="Define your own content template"
@@ -61,7 +89,7 @@ To create a content template from scratch, follow the steps below.
     Learn how to create content for the different channels in the following sections:
     * [Define email content](../email/get-started-email-design.md)
     * [Define push content](../push/design-push.md)
-    * [Define SMS content](../sms/create-sms.md#sms-content)
+    * [Define SMS content](../mobile/create-mobile-message.md#sms-content)
     * [Define direct mail content](../direct-mail/create-direct-mail.md)
     * [Define In-app content](../in-app/design-in-app.md)
     * [Define web content](../web/create-web.md#edit-web-content)   

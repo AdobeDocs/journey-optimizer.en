@@ -5,8 +5,31 @@ role: User
 level: Beginner
 feature: Approval
 exl-id: 8f4260b5-98df-4350-bd9b-680c3986ffe6
+TQID: https://experienceleague.adobe.com/I7beoyvv-vzc39XjLlPl8iIpxtxOmSkD5AtxW0bCCwA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2: []
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+subfeature_v2:
+  - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
+    internal-label: Approval workflows
 ---
 # Review & approve a request {#approve-requests}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** As a designated approver, review a submitted journey or campaign and either approve and publish it or send change requests back to the creator before it goes live.
+
+>[!ENDSHADEBOX]
 
 If an approval policy applies to a journey or campaign, it needs to be submitted for approval in order to be published. To do this, the journey/campaign creator sends a request to the approver(s) defined in the approval policy and the journey/campaign gets an **[!UICONTROL In review]** status.
 
@@ -43,4 +66,4 @@ After sending the request, the journey/campaign creator is notified through an e
 
 >[!NOTE]
 >
-> If you are not receiving approval notification through an email, you need to update your subscription preferences in your Experience Cloud profiles. [Learn more](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences)
+> If you are not receiving approval notification through an email, you need to update your subscription preferences in your [!DNL CX Enterprise] profile. [Learn more](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences)

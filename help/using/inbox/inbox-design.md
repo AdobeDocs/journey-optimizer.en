@@ -9,6 +9,12 @@ exl-id: 0ab71b21-0085-4a93-b319-3c960bd8f7dd
 ---
 # Design an Inbox {#inbox-design}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure your Inbox channel's layout, capacity, unread indicators, and empty state so messages render on-brand and readable, giving targeted profiles a clear, consistent experience in light and dark modes.
+
+>[!ENDSHADEBOX]
+
 Inbox design governs how each message is rendered to targeted profiles within the inbox surface. The configuration encompasses the inbox template, list and expanded presentations, and read-state indicators that distinguish new messages from those already viewed.
 
 For the complete procedure to create an inbox campaign, refer to [Create an Inbox](inbox-create.md).
@@ -47,8 +53,15 @@ For the complete procedure to create an inbox campaign, refer to [Create an Inbo
 
     ![](assets/inbox-design-3.png)
 
+1. Click the ![rail icon](assets/do-not-localize/Smock_Rail_18_N.svg) to open the preview panel and review how the empty inbox appears.
+
+    ![](assets/inbox-design-3.png)
+
 1. In the **[!UICONTROL Data]** section, click **[!UICONTROL Add meta]** to add custom key/value pairs to the payload.
 
 1. Click the ![](assets/do-not-localize/Smock_StarOutline_18_N.svg) icon to open a dark mode preview of the inbox and confirm your dark theme colors and images.
 
     ![](assets/inbox-design-4.png)
+
+When you are ready, review your settings and activate the inbox. After activation, you can use it with [Content cards](../content-card/create-content-card.md).
+

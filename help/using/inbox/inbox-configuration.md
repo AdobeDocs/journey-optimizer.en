@@ -9,6 +9,12 @@ exl-id: d308ab4a-843c-4729-ad18-97d89c708357
 ---
 # Configure Inbox {#inbox-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Define an Inbox channel configuration that sets consent, optional access labels, and where the inbox appears on the web or in your iOS or Android app, so you can deliver Content card experiences through the inbox.
+
+>[!ENDSHADEBOX]
+
 Before you can deliver Content card experiences through the Inbox, you must define an **Inbox** channel configuration in **[!UICONTROL Channel configurations]**. That configuration ties the surface to consent, optional access labels, and where the experience appears on the web or in your iOS or Android app. Follow the steps below to create a configuration:
 
 1. Access the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu, then click **[!UICONTROL Create channel configuration]**.

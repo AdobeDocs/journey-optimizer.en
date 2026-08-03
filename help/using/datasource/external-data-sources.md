@@ -9,8 +9,41 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: external, sources, data, configuration, connection, third-party
 exl-id: f3cdc01a-9f1c-498b-b330-1feb1ba358af
+TQID: https://experienceleague.adobe.com/B7ByDzFxOmtiWSNyc35w28v3j1osGVOyU8LYJrzxGSE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
+    internal-label: Data source configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # External data sources {#external-data-sources}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Connect to third-party REST APIs and configure authentication so you can pull external data into your journeys for conditions and personalization.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_custom"
@@ -227,6 +260,132 @@ Here is an example for the bearer authentication type:
 >
 >* Cache duration helps to avoid too many calls to the authentication endpoints. Authentication token retention is cached in services, there is no persistence. If a service is restarted, it starts with a clean cache. The cache duration by default is 1 hour. In the custom authentication payload, it can be adapted by specifying another retention duration.
 >
+
+### Certificate-based custom authentication {#certificate-credential}
+
+For enterprise APIs that enforce certificate-based identity verification — such as Microsoft Entra ID — you can configure certificate-based custom authentication by adding `"subType": "certificateCredential"` to your custom authorization payload. Journey Optimizer uses Adobe's managed certificate to sign a JWT client assertion and exchange it for an access token. No client secret is required.
+
+This option adds two mandatory fields to the standard `customAuthorization` schema: `subType` and `aud`. All other fields (`endpoint`, `method`, body params, `tokenInResponse`) remain unchanged. When `subType` is absent, behavior is identical to standard custom authentication — existing configurations are not affected.
+
+* **`subType`**: Set to `"certificateCredential"` to activate certificate-based authentication.
+* **`aud`**: The audience value included in the JWT client assertion. For Microsoft Entra ID, this is the same as the `endpoint` URL, but it must always be explicitly set.
+
+The `client_assertion` and `client_assertion_type` fields are never authored by the user. They are automatically injected by the platform at runtime, immediately before the token endpoint call.
+
+#### How it works {#certificate-credential-how-it-works}
+
+Certificate-based custom authentication implements OAuth 2.0 client credentials with a JWT client assertion, as defined in [RFC 7523](https://datatracker.ietf.org/doc/html/rfc7523){target="_blank"} — the same standard supported by Microsoft Entra ID and Okta. Instead of a client secret, Journey Optimizer proves its identity using a JWT signed with Adobe's managed private key. Your Identity Provider verifies the signature using Adobe's public certificate, which you register once in your Identity Provider.
+
+The token exchange follows these steps:
+
+1. Journey Optimizer builds a JWT client assertion signed with Adobe's private key.
+1. The assertion is sent to your token endpoint alongside your `client_id`, `grant_type`, and `scope`.
+1. Your Identity Provider verifies the JWT signature against Adobe's registered public certificate.
+1. Your Identity Provider returns a Bearer access token.
+1. Journey Optimizer uses that token to call your custom action endpoint.
+
+#### Adobe certificate details {#certificate-credential-details}
+
+Adobe manages the certificate and its associated private key. The following table summarizes its key properties:
+
+| Property | Value |
+| --- | --- |
+| Issued by | DigiCert (public CA) |
+| Managed by | Adobe |
+| Algorithm | RS256 (RSA) |
+| What to register in your Identity Provider | Adobe's leaf certificate only — not the intermediate or root CA |
+| How to obtain | Retrieve it from the [mTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint){target="_blank"} (see the **Certificate** guardrail below) |
+| Rotation | Adobe automatically rotates the certificate 60 days before expiry (certificate lifetime: 13 months). The previous certificate remains valid until 30 days before expiry. Customers are not currently notified of rotation — periodically call the [mTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint){target="_blank"} to check the `expiryDate` and re-configure your IDP before the old certificate is revoked. |
+
+Adobe automatically rotates the certificate 60 days before expiry. The previous certificate remains valid until 30 days before expiry. Customers are not currently notified — see the [**Certificate rotation** guardrail](#certificate-credential-guardrails) below for how to monitor rotation programmatically.
+
+#### JWT assertion structure {#certificate-credential-jwt}
+
+You do not author the JWT client assertion — Journey Optimizer generates and signs it for you. The expected structure is provided here so your Identity Provider team can validate the claims.
+
+Header:
+
+```json
+{
+  "alg": "RS256",
+  "x5t": "<base64url SHA-1 thumbprint of Adobe's leaf certificate>"
+}
+```
+
+Payload:
+
+```json
+{
+  "iss": "<client_id>",
+  "sub": "<client_id>",
+  "aud": "<token endpoint URL>",
+  "iat": "<current unix timestamp>",
+  "exp": "<iat + 600 seconds>",
+  "jti": "<unique UUID per request>"
+}
+```
+
+Note the following:
+
+* `exp` − `iat` is always ≤ 10 minutes — consistent with Okta and Entra ID requirements.
+* Each assertion uses a unique `jti`, which makes it replay-attack safe.
+* `client_assertion` and `client_assertion_type` are injected by the platform automatically and are never authored.
+
+Here is an example for the certificate credential authentication type, for Microsoft Entra ID:
+
+```json
+{
+  "type": "customAuthorization",
+  "subType": "certificateCredential",
+  "aud": "https://login.microsoftonline.com/{tenantId}/oauth2/v2.0/token",
+  "authorizationType": "Bearer",
+  "endpoint": "https://login.microsoftonline.com/{tenantId}/oauth2/v2.0/token",
+  "method": "POST",
+  "body": {
+    "bodyType": "form",
+    "bodyParams": {
+      "client_id": "<your-client-id>",
+      "grant_type": "client_credentials",
+      "scope": "https://api.example.com/.default"
+    }
+  },
+  "tokenInResponse": "json://access_token"
+}
+```
+
+Here is an example for the same certificate credential authentication type, for Okta:
+
+```json
+{
+  "type": "customAuthorization",
+  "subType": "certificateCredential",
+  "authorizationType": "bearer",
+  "endpoint": "https://<your-okta-domain>/oauth2/v1/token",
+  "aud": "https://<your-okta-domain>/oauth2/v1/token",
+  "method": "POST",
+  "body": {
+    "bodyType": "form",
+    "bodyParams": {
+      "client_id": "<your-okta-app-client-id>",
+      "grant_type": "client_credentials",
+      "scope": "<your-api-scope>"
+    }
+  },
+  "tokenInResponse": "json://access_token"
+}
+```
+
+<a id="certificate-credential-guardrails"></a>
+
+>[!CAUTION]
+>
+>Keep the following guardrails in mind when configuring certificate-based custom authentication:
+>
+>* **Token endpoint URL**: Must be HTTPS. Avoid URLs containing `?` — this is a sign the authorization endpoint was pasted instead of the token endpoint.
+>* **`method`**: Must be `POST`. OAuth token endpoints only accept POST requests.
+>* **`client_id`**: Must not be blank and must have no leading or trailing whitespace. A blank value produces a valid-looking JWT that the Identity Provider will reject with an opaque error.
+>* **`scope`**: Expressed as a single space-separated string in `bodyParams`. Maximum 1000 characters total.
+>* **Certificate**: Adobe manages the certificate and private key — you never upload or enter a certificate. Before using the custom action in a live journey, you must register **Adobe's leaf certificate** in your Identity Provider. To retrieve it, call the [mTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint){target="_blank"} and look for the entry where `certCommonName` is `ajo-journeys.aep-mtls.adobe.com`. Register the `publicCertificate` value from that entry — do not use the intermediate or root CA certificates. Since customers are not currently notified of certificate rotation, you must periodically call the mTLS Public Certificate API to check the `expiryDate` and update the registered certificate in your IDP before the old certificate is revoked 30 days before expiry.
 
 Here is an example for the header authentication type:
 

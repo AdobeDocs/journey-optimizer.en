@@ -4,8 +4,32 @@ description: Learn how to assign priority scores to journeys & campaigns.
 role: User
 level: Beginner
 exl-id: f33ca0a8-ed33-4964-a85c-8705a4ff728e
+TQID: https://experienceleague.adobe.com/An8xmTbO8yWDFizK1B8uvSFkr0t6e9a59ntUoLqhosw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+subfeature_v2:
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
 ---
 # Assign priority scores {#priority}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Assign priority scores to journeys, campaigns, and inbound actions so you can control which communication takes precedence when a profile qualifies for more than one.
+
+>[!ENDSHADEBOX]
 
 Journey Optimizer allows you to assign a priority score to a journey, a campaign or to an inbound channel action within the journey **[!UICONTROL Action]** activity.
 

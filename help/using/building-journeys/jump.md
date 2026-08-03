@@ -10,8 +10,39 @@ level: Intermediate
 keywords: jump, actvity, journey, split, splitting
 exl-id: 46d8950b-8b02-4160-89b4-1c492533c0e2
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/qCnWzqjO5YRbKO-WHUo950uoHS0skcZT6sdYyNJ4esE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Jump from one journey to another {#jump}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Jump activity to push individuals from one journey to another, simplifying complex designs and building reusable, common journey patterns.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_jump"
@@ -47,6 +78,20 @@ In journey B, the first event is triggered internally via the **[!UICONTROL Jump
 >[!NOTE]
 >
 >Journey B can also be triggered via an external event.
+
+### Profile behavior during a Jump {#jump-profile-behavior}
+
+When a profile reaches the **[!UICONTROL Jump]** step, it continues progressing in the origin journey (Journey A) while simultaneously entering the target journey (Journey B). The profile is therefore active in both journeys at the same time.
+
+This means:
+
+* The profile completes any remaining steps in Journey A after the Jump activity (for example, a follow-up wait or closing action).
+* The profile also starts flowing through Journey B from its first event, independently of Journey A.
+* If the profile is **already active** in Journey B when the Jump is executed, it will **not** enter Journey B again. Journey A continues normally; no error is reported.
+
+>[!NOTE]
+>
+>The case above — profile already active in Journey B — results in a **silent skip**: no error is raised and Journey A continues normally. In other situations, the Jump can **fail** and Journey A applies its standard action-error handling. See [Runtime failures](#jump-troubleshoot) for the full list of cases.
 
 ## Best practices and limitations {#jump-limitations}
 
@@ -88,7 +133,7 @@ Build each phase as a separate journey in Journey Optimizer, then use **[!UICONT
 
 >[!TIP]
 >
->For a detailed walkthrough of this approach, see [Best practices for advanced journeys in Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
+>For a worked example using a multi-phase loyalty program, see [Multi-phase loyalty journey](journeys-uc.md#multi-phase-loyalty).
 
 ## Configuring the Jump activity {#jump-configure}
 
@@ -132,10 +177,70 @@ When a **[!UICONTROL Jump]** activity is configured in a journey, a **[!UICONTRO
 
 ## Troubleshooting {#jump-troubleshoot}
 
-Errors occur if:
+### Configuration errors
 
-* The target journey no longer exists
-* The target journey is draft, closed, or stopped
-* The first event of the target journey has changed, and the mapping is broken
+The following issues prevent the Jump from working correctly and appear as errors on the journey canvas:
+
+* The target journey no longer exists.
+* The target journey is draft, closed, or stopped.
+* The first event of the target journey has changed and the mapping is broken.
 
 ![Journey analytics showing jump activity execution metrics](assets/jump6.png)
+
+### Runtime failures
+
+In the following cases, the Jump step is treated as a **failed action** in Journey A. Journey A applies the standard action-error handling and continues:
+
+* The existing target journey instance has been terminated and the target journey is non-reentrant.
+* A reentrance period is configured on the target journey. Even when re-entry is allowed in principle, the profile cannot re-enter until the period elapses (the Jump fails with a "non-reentrant for the period" status).
+* The target journey version cannot be located, has been deleted, is in a finished state, or has been stopped.
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains the Jump activity, which pushes profiles from one journey to another to simplify complex journey designs through reusable sub-journey patterns.
+
+**Intents:**
+
+* Use the Jump activity to transfer profiles from an origin journey to a target journey
+* Decompose a complex journey into smaller, manageable sub-journeys connected by Jump activities
+* Configure the Jump activity by selecting a target journey and mapping action parameters
+* Understand profile behavior when a Jump is executed (profile active in both journeys simultaneously)
+* Troubleshoot Jump configuration errors and runtime failures
+* Avoid loop patterns when chaining multiple journeys with Jump activities
+
+**Glossary:**
+
+* **Jump activity**: An action activity that sends an internal event to the first event of a target journey, causing the profile to begin flowing through that journey. *(product-specific)*
+* **Origin journey**: The journey that contains the Jump activity and initiates the transfer of a profile to another journey. *(product-specific)*
+* **Target journey**: The journey that receives the profile via the Jump activity's internal event trigger. *(product-specific)*
+* **Silent skip**: The behavior when a profile is already active in the target journey at the time of a Jump — the Jump is skipped without an error, and the origin journey continues normally. *(product-specific)*
+
+**Guardrails:**
+
+* Jump activity is only available in journeys that use a namespace; origin and target journeys must share the same namespace
+* Cannot jump to a journey starting with an Audience Qualification event or Read Audience
+* Cannot use a Jump activity and an Audience Qualification event or Read Audience in the same journey
+* Loop patterns (circular journey chains) are not supported and are prevented by the configuration UI
+* At runtime, the latest live version of the target journey is triggered
+* A profile can only be present once in the same journey at a time; if already active in the target journey, the Jump is silently skipped
+* If the target journey is draft, closed, stopped, deleted, or its first event mapping is broken, the Jump results in a configuration error
+
+**Terminology:**
+
+* Canonical name: Jump activity — Acronym: none — variants: Jump action, journey jump
+* Synonyms: "origin journey" = "source journey"; "target journey" = "destination journey"
+* Do not confuse: "silent skip" ≠ "runtime failure" — A silent skip occurs when the profile is already in the target journey (no error raised); a runtime failure occurs when the target journey is unreachable or non-reentrant (treated as a failed action)
+
+**FAQ:**
+
+* **Q: What happens to a profile in the origin journey after a Jump?** — The profile continues progressing through any remaining steps in the origin journey after the Jump step while simultaneously entering the target journey; it is active in both journeys at the same time.
+* **Q: Can I jump to a Read Audience journey?** — No; you cannot jump to a journey that starts with a Read Audience or Audience Qualification event.
+* **Q: What triggers the target journey when a Jump is executed?** — An internal event is sent to the first event of the target journey by the Jump activity; the profile then flows through the target journey from that first event.
+* **Q: How do I prevent infinite loops when chaining journeys with Jump?** — Loop patterns are blocked by the Jump activity configuration UI, which filters out target journeys that would create a circular chain.
+* **Q: What version of the target journey is triggered by a Jump?** — The latest live (or test mode) version of the target journey is triggered at runtime.
+
++++

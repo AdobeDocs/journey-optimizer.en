@@ -9,8 +9,34 @@ role: Developer
 level: Experienced
 keywords: campaigns, API-triggered, REST, optimizer, messages
 exl-id: 2b3e87dc-097a-4d05-873c-f421d11338c3
+TQID: https://experienceleague.adobe.com/SwmK1epuhZUf4EWnaLRHTBH-eE1hEV02Z8nqXGtMb6U
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Activate High throughput mode for API triggered campaigns {#high-throughput}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Activate High throughput mode for API triggered campaigns so you can send very large-scale, real-time transactional email at up to 5000 transactions per second without relying on profiles.
+
+>[!ENDSHADEBOX]
 
 High Throughput mode is designed for organizations that need **very large-scale, real-time transactional messaging** (up to 5000 transactions per second). Unlike regular API triggered campaigns, High throughput campaigns operate independently of Adobe Profiles and require a different configuration model.  
 
@@ -18,7 +44,7 @@ This page explains how High throughput campaigns differ from standard API trigge
 
 ## Guardrails & limitations
 
-*  **Access** - Available only in the US region for organizations licensed with the High Throughput transactional messaging add-on.
+*  **Access** - Available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on.
 
 * **Channels**: Currently available only for email.  
 

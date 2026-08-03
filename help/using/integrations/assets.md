@@ -9,8 +9,45 @@ role: User
 level: Beginner
 keywords: assets, experience manager, integration
 exl-id: d4fde14b-e2da-40bf-a387-ee9f2f7ff204
+TQID: https://experienceleague.adobe.com/Sy-GvPP4hQgCvYvwJX6mEodMLIuCmHsd4utqI33SjJ4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
+    internal-label: Experience Manager Assets integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: da3860b0-d637-47df-bef0-273751180266
+    internal-label: Digital asset management
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
 ---
 # Create and manage assets with [!DNL Experience Manager Assets]{#experience-manager-assets}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use Experience Manager Assets in Adobe Journey Optimizer to store, manage, and insert digital assets into your email content.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
+The existing **Asset Selector** and **Content Fragment selector** experiences in Adobe Journey Optimizer workflows are being replaced by **Content Advisor**. Content Advisor provides an AI-powered, unified interface for discovering and selecting Assets, Content Fragments, and Dynamic Media directly within your AJO authoring workflows. Existing integrations will continue to work during the transition period.
+
+>[!ENDSHADEBOX]
 
 ## Get started with [!DNL Experience Manager Assets] {#get-started-assets}
 
@@ -103,10 +140,11 @@ To import files to **[!DNL Assets Essentials]** or **[!DNL Assets as a Cloud Ser
     Note that this option is available for licensed/unlicensed Stock images and images from your Assets folder. 
 
     ![](assets/media_library_14.png)
-    -->
+    
+-->
 
 
-## Frequently Asked Questions {#faq-assets}
+## Frequently asked questions {#faq-assets}
 
 You will find below Frequently Asked Questions about Adobe Experience Manager Assets.
 

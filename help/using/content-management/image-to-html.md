@@ -9,8 +9,18 @@ role: User
 level: Beginner
 keywords: email, template, image, HTML, AI, design, converter
 exl-id: d13467b7-2f3c-4707-a7e0-9b46cb6cafb1
+feature_v2: []
+subfeature_v2:
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
 ---
 # Convert images to email content templates {#image-to-html}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the AI-powered image to HTML converter in Adobe Journey Optimizer to turn static image designs into editable, reusable email content templates.
+
+>[!ENDSHADEBOX]
 
 [!DNL Journey Optimizer] helps you dramatically speed up email creation by converting static image designs into fully customizable, modular email content templates.
 
@@ -35,8 +45,10 @@ The main key benefits are as follows:
 * **Reusable across campaigns** - Save templates to your library and use them in any journey or campaign.
 * **Stays true to the design** - Output matches your layout and styling while being fully compatible with the Email Designer.
 
-<!--* **Design fidelity**: Maintain visual consistency with your original design while creating fully editable content
-* **Email compatibility**: Generate HTML that works seamlessly with the Email Designer and across email clients-->
+<!--
+* **Design fidelity**: Maintain visual consistency with your original design while creating fully editable content
+* **Email compatibility**: Generate HTML that works seamlessly with the Email Designer and across email clients
+-->
 
 +++ Common use cases
 
@@ -95,7 +107,8 @@ Be aware of the following limitations and recommendations when converting images
 <!--
 * **Background processing**: The AI processing happens in the background, so you can work on other tasks without keeping the screen open. The template is automatically saved as a draft once the conversion is complete.
 
-**Feedback is welcome!** Use the dedicated section to share your thoughts and suggestions with Adobe to help us improve the feature.-->
+**Feedback is welcome!** Use the dedicated section to share your thoughts and suggestions with Adobe to help us improve the feature.
+-->
 
 ## Convert an image to an HTML template {#convert-image}
 

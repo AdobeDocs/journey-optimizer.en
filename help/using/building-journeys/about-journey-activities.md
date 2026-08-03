@@ -10,8 +10,53 @@ level: Beginner, Intermediate
 keywords: journey, activities, get started, events, action
 exl-id: 239b3d72-3be0-4a82-84e6-f219e33ddca4
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/8M5qgoXuziyVXMHPOwiM3xztCSNmglc2fBu-BaXn9mc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
+  - id: e57d1da4-32c2-4cc6-945c-9feb219156ff
+    internal-label: Event activities
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
 ---
 # Get started with journey activities {#about-journey-activities}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to combine event, orchestration, and action activities to build multi-step, cross-channel journeys, with best practices for labeling activities, managing parameters, and troubleshooting.
+
+>[!ENDSHADEBOX]
 
 Combine event, orchestration, and action activities to build multi-step, cross-channel scenarios.
 
@@ -40,6 +85,7 @@ From the palette, on the left-hand side of the screen, the following orchestrati
 * [Optimize](optimize.md)
 * [Read Audience](read-audience.md)
 * [Wait](wait-activity.md)
+* [Journey Fragments](journey-fragments.md)
 * [Content decision](content-decision.md)
 * [Dataset lookup](dataset-lookup.md)
 
@@ -116,3 +162,44 @@ Before testing and publishing your journey, verify that all the activities are p
 Learn how to troubleshoot errors in activities and in the journey [on this page](troubleshooting.md).
 
 See also [Monitoring & troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page introduces the three categories of journey activities — events, orchestration, and actions — and explains best practices for labeling, managing parameters, and handling errors in Adobe Journey Optimizer journeys.
+
+**Intents:**
+* Identify and distinguish between event, orchestration, and action activities in a journey
+* Add labels and descriptions to journey activities for easier identification and reporting
+* Configure an alternative path to handle timeouts or errors in a journey activity
+* Override advanced parameters on a specific journey activity
+* Combine multiple activity types to build cross-channel journey scenarios
+* Troubleshoot activity configuration errors before publishing a journey
+
+**Glossary:**
+* **Event activity**: A journey activity triggered by an incoming event (e.g., purchase, audience qualification) that starts or advances a profile through the journey *(product-specific)*
+* **Orchestration activity**: A journey activity (e.g., Optimize, Read Audience, Wait) that controls the flow and branching logic of a journey *(product-specific)*
+* **Action activity**: A journey activity that delivers a communication or calls an external system as the result of a trigger *(product-specific)*
+* **Custom action**: A user-configured action that connects Journey Optimizer to a third-party system for sending messages or data *(product-specific)*
+* **Alternative path**: A fallback branch added to an activity so the journey continues even when a timeout or error occurs *(product-specific)*
+
+**Guardrails:**
+* Tests and publications cannot be performed if configuration errors are still detected in any activity
+* Advanced/technical parameters on most activities are read-only and cannot be modified without using the parameter override feature
+
+**Terminology:**
+* Canonical name: Journey Activity — Acronym: none — variants: activity, node, step
+* Synonyms: "action activity" = "channel action" = "message action"
+* Do not confuse: "Orchestration activity" ≠ "Action activity" (orchestration controls flow; actions deliver communications)
+
+**FAQ:**
+* **Q: What is the difference between event, orchestration, and action activities?** — Event activities trigger journey entry or progression; orchestration activities control branching and flow logic; action activities deliver messages or call external systems.
+* **Q: How do I add a label to a journey activity?** — Open the activity properties pane and fill in the Label field; the label appears as a suffix under the activity node on the canvas.
+* **Q: What happens when an error occurs in an action or condition activity?** — The profile's journey stops unless you check the "Add an alternative path in case of a timeout or an error" option on that activity.
+* **Q: Can I use Adobe Campaign to send messages from a journey?** — Yes, Journey Optimizer supports integration with Adobe Campaign v7/v8, Campaign Standard, and Marketo Engage for sending messages via custom action activities.
+* **Q: How do I override a read-only advanced parameter on an activity?** — Click the "Enable parameter override" icon to the right of the parameter field to force a custom value.
+
++++

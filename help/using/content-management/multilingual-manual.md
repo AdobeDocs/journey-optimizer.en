@@ -9,8 +9,41 @@ role: User
 level: Beginner
 keywords: get started, start, content, experiment
 exl-id: 6244d717-fbd6-468e-9164-60451d0d62f0
+TQID: https://experienceleague.adobe.com/CO90KA9aqX6vclGmYWk6Z3LQJmewlylQvJA36yx44eI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: ea4139d9-3405-4b34-ad6e-c3ca120cc269
+    internal-label: Multilingual content
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Create multilingual content with manual translation {#multilingual-manual}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create multilingual content with manual translation by configuring language settings and translating or importing content directly in your campaigns and journeys for each locale.
+
+>[!ENDSHADEBOX]
 
 >[!IMPORTANT]
 >
@@ -79,7 +112,7 @@ In this section, you can set your different locales for managing your multilingu
     >
     >These prerequisites are required for the In-app and Content cards channels only.
 
-    1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/collection/e2e#create-a-rule){target="_blank"}
+    1. In Adobe Experience Platform Data Collection, access the **[!UICONTROL Rules]** menu and create a new rule. Detailed information on how to create rules is available in [!DNL Adobe Experience Platform] [Data Collection documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/ui/rules){target="_blank"}
 
     2. In the rule's **[!UICONTROL IF]** section, add an event configured as below:
 
@@ -116,6 +149,14 @@ In this section, you can set your different locales for managing your multilingu
 
     +++
 
+1. Once you have created a condition for a locale, you can reuse it for other locales instead of rebuilding it from scratch. Click **[!UICONTROL Copy to...]** then select one or more target locales to apply the condition to.
+
+    ![](assets/multilingual-settings-7.png)
+
+    >[!NOTE]
+    >
+    >Copying a condition overwrites any existing condition on the selected target locales.
+
 1. Drag and drop the locales to reorder them and manage their priority in the list.
 
 1. To delete a locale, click the bin icon.
@@ -125,6 +166,10 @@ In this section, you can set your different locales for managing your multilingu
 1. Click **[!UICONTROL Submit]** to create your **[!UICONTROL Language settings]**.
 
 Note that after setting up your language preferences, you will no longer have the option to edit them.
+
+To add a locale or change the conditions of an active **[!UICONTROL Language settings]**, access ![](assets/do-not-localize/Smock_More_18_N.svg) and select **[!UICONTROL Duplicate]**. This creates a copy of the existing setting that you can then edit.
+
+![](assets/multilingual-settings-8.png)
 
 <!--
 1. Access the **[!UICONTROL channel configurations]** menu and create a new channel configuration or select an existing one.
@@ -193,5 +238,4 @@ You can now activate your campaign or journey. Once sent, you can measure the im
 1. Create your journey with a Delivery and personalize your content as needed.
 1. From your delivery action, click Edit content.
 1. Click Add languages.
-
 -->

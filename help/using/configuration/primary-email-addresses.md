@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Change the execution addresses 
+title: Change the execution addresses
 description: Learn how to determine which email address to use from the profile service.
 feature: Application Settings
 topic: Administration
@@ -9,8 +9,39 @@ role: Admin
 level: Intermediate
 keywords: primary, execution, email, target, profile, optimizer
 exl-id: fe2f6516-7790-4501-a3a1-3d7cb94d7874
+TQID: https://experienceleague.adobe.com/bW7YGYcmbpwNJtZHadjsbuMXjBRFDnt3uSk0Ap8IJ5U
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: efb19423-4da4-4fd1-88d8-5ee8c71ae766
+    internal-label: Application settings
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Manage the default execution fields {#change-primary-email}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to define and override the execution fields that determine which email address or phone number Adobe Journey Optimizer prioritizes for sending when several are available on a profile.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_execution_address"

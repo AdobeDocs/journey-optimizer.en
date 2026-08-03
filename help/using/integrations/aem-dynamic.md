@@ -7,11 +7,40 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 3e777cc5-a935-4e68-9de7-60b241e78f63
+TQID: https://experienceleague.adobe.com/bgBuZlYcuJ1VpBZIlpGA4WIYZ6ufqNMnxlBoUvPpVqg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: c7dc31c0-c4f7-42a7-8cf5-a8c5aeb0de74
+    internal-label: Experience Manager Assets integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
-# Work with Dynamic Media {#aem-dynamic}
+# Work with dynamic media {#aem-dynamic}
 
-## Get started with Dynamic Media {#gs-aem-dynamic}
+>[!BEGINSHADEBOX]
 
+**On this page:** Learn how to insert, adjust, and personalize Adobe Experience Manager dynamic media, including text overlays and dynamic media templates, within Journey Optimizer content.
+
+>[!ENDSHADEBOX]
+
+## Get started with dynamic media {#gs-aem-dynamic}
+ 
 The Asset selector now supports Dynamic media allowing you to seamlessly select and use approved dynamic media renditions within Journey Optimizer. Changes made to assets in Adobe Experience Manager are instantly reflected in your Journey Optimizer content, ensuring the most up-to-date versions are always in use without requiring manual updates.
 
 Note that this integration is only available for customers using Dynamic Media Manager as a Cloud Service.
@@ -22,18 +51,21 @@ To learn more about Dynamic Media in Adobe Experience Manager as a Cloud Service
 >
 >For Healthcare customer, the integration is enabled only upon licensing the Journey Optimizer Healthcare Shield and Adobe Experience Manager Extended Security for Healthcare add-on offerings.
 
+## Considerations
+
+* Ensure that Dynamic Media with OpenAPI is enabled in Adobe Experience Manager as a Cloud Service. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis){target="_blank"}.
+
+* Dynamic media integration with Adobe Journey Optimizer is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
+
+* For Dynamic Media Scene7 assets, Journey Optimizer adds default modifiers (`bfc=off&fmt=png-alpha`) at the start of the URL. If your preset also sets `fmt` or `bfc`, it takes precedence, since Scene7 uses the last occurrence of a repeated parameter. To avoid unexpected results, remove `fmt`/`bfc` from the preset, or move it before the default modifiers in the URL.
+
+* By design, the asset selector returns a `/images`-based URL format. If you want to deliver an asset in its original formatm, for example, GIF or SVG, you need to manually update the URL to use the `/content` path instead. Learn more in [Dynamic Media best practices documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-best-practices#deliver-gif-images){target="_blank"}.
+
 
 ## Add and manage Dynamic media {#dynamic-media}
 
-
 Enhance and optimize your content for any screen or browser by inserting dynamic media from Adobe Experience Manager as a Cloud Service directly into your Journey Optimizer content.  You can then resize, crop, enhance, and make other adjustments as needed.
 
-
->[!IMPORTANT]
->
->Ensure that Dynamic Media with OpenAPI is enabled in Adobe Experience Manager as a Cloud Service. [Learn more](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview#enable-dynamic-media-open-apis){target="_blank"}.
-
-Dynamic media integration with Adobe Journey Optimizer is available for both Dynamic Media [Scene7 mode](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/config-dms7){target="_blank"} and [with OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview){target="_blank"}.
 
 <!--
 >[!AVAILABILITY]
@@ -191,60 +223,58 @@ You can insert your dynamic template directly into your content using the HTML c
 
 Once you have performed your tests and validated the content, you can send your message to your audience. 
 
-<!--
-## Personalization with Text Overlay
+## Insert countdown timer {#countdown}
 
-Easily customize any dynamic media by replacing the existing text overlay with new text of your choice, allowing for seamless updates and personalization.
+Create urgency and maximize conversions with Dynamic Media countdown timers that update in real-time when recipients open your emails. This feature is ideal for flash sales, limited-time offers, and time-sensitive promotions.
 
-In this example, our goal is to update the existing text overlay by replacing it with a new validity date and adding a personalization block, ensuring it is customized for each profile when they open their messages.
+For example, as a marketer for a retail brand, you're running a 48-hour flash sale. By using the countdown timer in your promotional emails:
 
-1. Drag and drop an **[!UICONTROL HTML component]** into your content.
+* Recipients who open immediately see "47 hours remaining"
+* Recipients who open 24 hours later see "23 hours remaining"  
+* Recipients who open after the sale ends see "Time's up!"
 
-1. Select **[!UICONTROL Show the source code]**.
+For more information on how to add countdown timers to your Dynamic Media template in Adobe Experience Manager, refer [to this document](assets/do-not-localize/countdown.pdf).
 
-1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
 
-    You can also simply copy and paste your assets URL.
+1. In **[!DNL Adobe Experience Manager]**, create a Dynamic Media template and add a countdown timer component to it.
 
-1. Browse through your AEM assets and select the one you want to add to your content.
+    ![](assets/timer-1.png)
 
-1. Replace the overlay with the desired text.
+1. In **[!DNL Journey Optimizer]**, create a new campaign or open an existing one, then access the Email Designer.
 
-    Here we change the validity date from 31st December 2024 to the 1st July 2025.
+1. Drag and drop an **HTML** or **Asset** component into your email content.
 
-1. Add the required personalization fields to your image.
+1. Hover over the component and click **[!UICONTROL Show the source code]** (for HTML components) or **[!UICONTROL Browse]** (for Asset components).
 
-1. Click **[!UICONTROL Save]**.
+    ![](assets/timer-2.png)
 
-Your content now includes your updated text overlay and personalization.
+1. From the **[!UICONTROL Edit HTML]** menu, navigate to **[!UICONTROL Assets]** and click **[!UICONTROL Open asset selector]** to browse and select your published Dynamic Media template.
 
-## Add Dynamic media conditional content
+    ![](assets/timer-3.png)
 
-Enable conditional content in your dynamic media to better target your audience and deliver a more personalized experience.
+1. Enable the pills experience by toggling Pills to On. This improves readability by hiding long attribute paths.
 
-1. Drag and drop an **[!UICONTROL HTML component]** into your content.
+    ![](assets/timer-6.png)
 
-1. Select **[!UICONTROL Show the source code]**.
+1. In the **[!UICONTROL Custom attributes]** menu, configure any customizable URL parameters as needed for your template.
 
-1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
+    Click **[!UICONTROL Save]** when finished.
 
-    You can also simply copy and paste your assets URL.
+    ![](assets/timer-4.png)
 
-1. Browse through your AEM assets and select the one you want to add to your content.
+1. Alternatively, you can also access the parameters of the Dynamic Media template by selecting the asset in the Email Designer, then accessing the **[!UICONTROL Settings]** menu.
 
-1. Once your dynamic media is inserted to your content, select **[!UICONTROL Enable conditional]** content from your HTML component toolbar to create your different user experiences. 
+    Configure the following:
 
-1. From the Variant - 1, click **[!UICONTROL Select condition]** to fine tune your audience.
+    * **Banner text**: The text displayed with your timer
+    * **End time**: The date and time when the countdown expires. Enter the time in GMT (Greenwich Mean Time) only. The system does not accept other time zones.
+    * **Fallback text**: The message shown after the timer ends
 
-1. Choose your condition or create a new one if needed and click **[!UICONTROL Select]**.
+    ![](assets/timer-5.png)
 
-    [Learn more about conditions](../personalization/create-conditions.md)
+1. Click **[!UICONTROL Preview]** to view the timer with real-time countdown updates and verify your configuration.
 
-1. Select your **[!UICONTROL Component]** and access the **[!UICONTROL Settings]** menu.
-
-1. In the **[!UICONTROL Custom Attributes]** menu, populate the Dynamic Media text and personalization fields to customize the content for your audience.
-
--->
+When recipients open the email, they see the accurate time remaining for your flash sale. If they reopen the email later, the countdown automatically updates to reflect the current time remaining. After the end date, the default message appears automatically.
 
 ## How-to video {#video}
 

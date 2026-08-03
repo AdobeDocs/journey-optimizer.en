@@ -9,14 +9,43 @@ role: Developer
 level: Intermediate
 keywords: expression, editor, handlebars, iteration, arrays, context, personalization
 exl-id: 1a7c490f-6490-4785-a44d-bddd5482754d
+TQID: https://experienceleague.adobe.com/fOnI9VWpgrFCfUhnvkaiK-Ecsa-LOn8YJpdWZNnQilY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: f0577040-fadd-46a1-b0ae-9c7f828bb2da
+    internal-label: Collection management functions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Iterate over contextual data {#personalization-contexts}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use Handlebars iteration syntax to loop over arrays from contextual data sources such as events, custom action responses, and dataset lookups to display dynamic lists in your messages.
+
+>[!ENDSHADEBOX]
 
 Learn how to use Handlebars iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
 
 ## Overview {#overview}
 
-Journey Optimizer provides access to contextual data from multiple sources during [message personalization](personalize.md). You can iterate over arrays from these sources using Handlebars syntax in native channels ([email](../email/get-started-email-design.md), [push](../push/create-push.md), [SMS](../sms/create-sms.md)) to display dynamic content like product lists, recommendations, or other repeating elements.
+Journey Optimizer provides access to contextual data from multiple sources during [message personalization](personalize.md). You can iterate over arrays from these sources using Handlebars syntax in native channels ([email](../email/get-started-email-design.md), [push](../push/create-push.md), [SMS](../mobile/create-mobile-message.md)) to display dynamic content like product lists, recommendations, or other repeating elements.
 
 **Available context sources:**
 
@@ -25,6 +54,7 @@ Journey Optimizer provides access to contextual data from multiple sources durin
 * **[Dataset lookup](#dataset-lookup)**: Enriched data retrieved from Adobe Experience Platform datasets
 * **[Technical properties](#technical-properties)**: Journey metadata such as journey ID and supplemental identifiers
 * **[Journey context](#other-contexts)**: Other journey-related data accessible during execution
+* **Orchestrated campaign enrichment collections** (Orchestrated campaigns only): See [Add personalization in Orchestrated campaigns](../orchestrated/add-personalization.md#enrichment-collections).
 
 This guide shows you how to iterate over arrays from each of these sources in your messages, and how to work with arrays when configuring journey activities. Start with [Handlebars iteration syntax](#syntax) to understand message personalization basics, or jump to [Work with arrays in Journey expressions](#arrays-in-journeys) to learn how to pass array data to custom actions and dataset lookups.
 
@@ -499,7 +529,7 @@ While this guide focuses on iteration over arrays, other context types are avail
 * **[Profile attributes](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html){target="_blank"}** (`profile.*`): Individual profile fields from Adobe Experience Platform
 * **[Audiences](../audience/about-audiences.md)** (`inAudience()`): Audience membership checks
 * **[Offer decisions](../offers/get-started/starting-offer-decisioning.md)**: Decision management offers
-* **[Target attributes](../orchestrated/activities/channels.md#add-personalization)** (Orchestrated campaigns only): Attributes calculated in the campaign canvas
+* **[Target attributes](../orchestrated/add-personalization.md#attributes)** (Orchestrated campaigns only): Attributes calculated on the campaign canvas, including enrichment collection arrays
 * **Token** (`context.token`): Session or authentication tokens
 
 For complete personalization syntax and examples using these sources, refer to:
@@ -1042,4 +1072,81 @@ Use [journey test mode](../building-journeys/testing-the-journey.md) to verify y
 
 **Personalization use cases:** [Cart abandonment email](personalization-use-case-helper-functions.md) | [Order status notification](personalization-use-case.md)
 
-**Message design:** [Get started with email design](../email/get-started-email-design.md) | [Create push notifications](../push/create-push.md) | [Create SMS messages](../sms/create-sms.md) | [Preview and test your content](../content-management/preview-test.md)
+**Message design:** [Get started with email design](../email/get-started-email-design.md) | [Create push notifications](../push/create-push.md) | [Create SMS messages](../mobile/create-mobile-message.md) | [Preview and test your content](../content-management/preview-test.md)
+
+## Quick reference {#quick-reference}
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+>[!BEGINTABS]
+
+>[!TAB Overview]
+
+**TL;DR**
+
+This page explains how to use Handlebars `{{#each}}` syntax to loop over arrays from contextual sources — events, custom action responses, dataset lookups, and technical properties — in message personalization, and how to work with arrays in journey expression syntax when configuring journey activities.
+
+**Intents**
+
+* Iterate over event array data (e.g., cart items, order items) in message personalization using `{{#each}}`
+* Iterate over custom action response arrays (e.g., product recommendations) in messages
+* Iterate over dataset lookup result arrays in messages
+* Combine data from multiple contextual sources in a single personalized message
+* Pass array values to custom action parameters using journey expression syntax
+* Use arrays as lookup keys in Dataset Lookup activities
+* Apply best practices for empty array fallbacks, variable naming, performance, and expression fragment scoping
+
+>[!TAB Glossary]
+
+* **Handlebars**: A templating language used in Journey Optimizer message personalization for iteration (`{{#each}}`) and conditional rendering (`{{#if}}`). *(product-specific)*
+* **`{{#each}}` helper**: Handlebars syntax for iterating over an array; each iteration exposes the current item via a named variable (e.g., `|product|`). *(product-specific)*
+* **Contextual data**: Data available at message send time from journey sources — events, custom action responses, dataset lookups, and journey technical properties — as opposed to static profile attributes. *(product-specific)*
+* **`currentEventField`**: A reference used in journey expressions (not Handlebars) to refer to each item in an event array during filtering or mapping operations.
+* **`currentActionField`**: Used in journey expressions to refer to each item in a custom action response collection.
+* **`currentDataPackField`**: Used in journey expressions to refer to each item in a data source collection.
+* **`serializeList`**: A journey expression function that converts a list of values into a delimited string (e.g., comma-separated), suitable for use as a query parameter.
+* **Supplemental identifier**: A journey-level identifier that distinguishes concurrent journey instances triggered by the same profile; used to filter an array to the item relevant to the current instance.
+
+>[!TAB Terminology]
+
+* **Canonical name:** Handlebars iteration — variants: `{{#each}}` loop, each loop, array iteration
+* **Do not confuse:** Handlebars `{{#each}}` syntax (used in message content for iteration and display) ≠ journey expression syntax (used in journey activity configuration — uses functions like `first`, `all`, `serializeList`)
+* **Do not confuse:** `currentEventField` (journey expressions over event arrays) ≠ `currentActionField` (custom action response collections) ≠ `currentDataPackField` (data source collections)
+* **Do not confuse:** `@index` / `@first` / `@last` (Handlebars special variables, only available within `{{#each}}` loops in message content) ≠ `first` / `head` functions (journey expression functions for extracting single items, used in journey activity configuration)
+
+>[!TAB Guardrails & Limitations]
+
+* Journeys cannot create dynamic loops where one action node executes multiple times per array item — this is by design to prevent performance issues. Pass the entire array or a serialized list to a single custom action instead.
+* Keep event payloads under 50KB total.
+* Custom action response payloads should be under 100KB.
+* Limit the number of dataset lookup keys and returned entities for performance.
+* Expression fragments cannot receive loop-scoped variables (e.g., the current `{{#each}}` iteration item) as parameters — this is a known limitation. Use global variables or inline logic instead.
+* Numeric event IDs must be wrapped in backticks in expression paths (e.g., `` context.journey.events.`1697323153`.fieldName ``); without backticks, the PQL parser raises a syntax error.
+
+>[!TAB FAQ]
+
+**Q: What is the difference between Handlebars syntax and journey expression syntax when working with arrays?**
+
+Handlebars `{{#each}}` is used in message content for iteration and display. Journey expression syntax — using functions like `first`, `all`, and `serializeList` — is used in journey activity configuration (e.g., custom action parameters, conditions). They are distinct syntaxes used in different contexts.
+
+**Q: Can I loop a journey action node so it executes once per array item?**
+
+No. Journeys cannot create dynamic loops that execute an action node multiple times per item. Instead, pass the entire array or a serialized list to a single custom action that processes all items, or use external aggregation.
+
+**Q: Can I pass the current loop item to an expression fragment inside a `{{#each}}` loop?**
+
+No. Expression fragments cannot receive loop-scoped variables as parameters. Use global variables defined outside the loop, or include the personalization logic directly within the loop instead of using a fragment.
+
+**Q: How do I display fallback content when an array is empty?**
+
+Use the `{{else}}` clause within the `{{#each}}` block. Content inside `{{else}}` is rendered when the array has no items.
+
+**Q: What do `@index`, `@first`, and `@last` mean inside a `{{#each}}` loop?**
+
+These are special Handlebars variables available only within `{{#each}}` loops in message content: `@index` is the 0-based current iteration index, `@first` is true for the first iteration, and `@last` is true for the last iteration.
+
+>[!ENDTABS]
+
+<!-- ai-section-version: 1 | source-hash: f85f9dea -->

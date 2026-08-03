@@ -10,7 +10,7 @@ exl-id: 159ae1bf-e1bd-48c7-b91b-2ac8bdfffaf2
 
 Adobe Journey Optimizer's Content Management features empower you to create, personalize, and organize content seamlessly across campaigns, channels, and regions. Whether you're crafting dynamic messages, building reusable templates, or experimenting with new ideas, this section provides the tools and strategies to streamline your workflow and maximize impact. Dive into topics like personalization, multilingual content, AI-assisted generation, and cross-solution integrations to discover how these capabilities fit together to deliver tailored, engaging customer experiences. With practical guides and intuitive features, you'll be ready to manage content with confidence and creativity.
 
-## Content Management Features
+## Content management features
 
 :::: landing-cards-container
 :::
@@ -78,6 +78,6 @@ Integrate Adobe solutions like Experience Manager, Stock, and GenStudio for stre
 
 ## Additional Resources
 
-- **[AI Assistant for Content Generation](ai-assistant-landing-page.md)** - Leverage AI tools to generate and personalize content across emails, SMS, web pages, and experiments.
+- **[Generate Content](ai-assistant-landing-page.md)** - Use AI to generate and personalize content across emails, SMS, web pages, and experiments.
 - **[Multilingual Content Management](content-multilingual-landing-page.md)** - Create and manage multilingual content using manual and automated translation workflows.
 - **[Content Experimentation](../using/content-management/get-started-experiment.md)** - Set up and analyze experiments to optimize audience engagement and campaign outcomes.

@@ -5,8 +5,41 @@ title: Orchestrated campaigns Frequently Asked Questions
 description: Frequently Asked Questions about Journey Optimizer Orchestrated campaigns
 version: Campaign Orchestration
 exl-id: 6a660605-5f75-4c0c-af84-9c19d82d30a0
+TQID: https://experienceleague.adobe.com/25WjNcE8jmkqH2TvJnyST510xamIV-seDXTmHj0QEYs
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
-# Frequently Asked Questions {#faq-oc}
+# Frequently asked questions {#faq-oc}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers to frequently asked questions about Orchestrated campaigns, including data models, channels, activities, publication, and consent.
+
+>[!ENDSHADEBOX]
 
 You will find below Frequently Asked Questions about Adobe Journey Optimizer Orchestrated campaigns.
 
@@ -133,7 +166,8 @@ Yes. Campaign orchestration is natively integrated with:
 
 * **Customer Journey Analytics**: Campaign orchestration reports are available.  
 * **Real-Time CDP**: Audiences built in Campaigns can be read in Real-Time CDP.  
-* **Federated Audience Composition (FAC)**: Available as an add-on.  -->
+* **Federated Audience Composition (FAC)**: Available as an add-on.  
+-->
 
 +++ How do I test a signal-triggered orchestrated campaign before publishing?
 
@@ -146,6 +180,66 @@ While the campaign is in **Draft**, you can test it by defining **parameters** i
 Yes, in specific situations. The **[!UICONTROL Back to draft]** option is designed as a recovery mechanism to unpublish and revert a campaign to draft status.
 
 This option is available for scheduled campaigns awaiting execution, or for live campaigns with execution errors. [Learn how to revert a live campaign back to draft](start-monitor-campaigns.md#back-to-draft)
+
++++
+
++++ What happens internally when I publish an Orchestrated campaign?
+
+When you click **[!UICONTROL Publish]**, the following sequence occurs:
+
+1. **Scheduler activation** — If a schedule is configured, the scheduler kicks in and triggers execution at the defined time.
+1. **Save Audience activities run first** — Any Save audience activities execute before message activities. The audience shell is created in the Audience Portal and qualified profiles begin ingesting.
+1. **Message execution begins** — Channel activities start processing for the first message activity in the workflow.
+1. **Profile snapshot lookup** — Profile data is resolved against a snapshot taken at publication time, not the real-time profile, ensuring consistency across the entire execution.
+1. **Consent evaluation** — Consent is honored directly from the profile record and is not re-evaluated at send time.
+1. **Profile reconciliation** — Recipients are reconciled against Adobe Experience Platform Profiles at send time.
+1. **Delivery log creation** — Delivery events are recorded in the `ajo_message_feedback_event` dataset.
+
+**Learn more**
+
+* [Publication-time execution sequence](start-monitor-campaigns.md#publication-sequence)
+* [Start and monitor your Orchestrated campaigns](start-monitor-campaigns.md)
+
++++
+
++++ Why are my messages not sending after I publish the campaign?
+
+Several situations can prevent messages from being sent after publication. Check the following in order:
+
+1. **Sending confirmation pending (most common)** — For non-recurring campaigns, message delivery is paused by default until you explicitly confirm the send from the channel activity's properties pane. The campaign shows as **Live** but no messages go out until confirmed. [Learn more](start-monitor-campaigns.md#confirm-sending)
+
+1. **Campaign is scheduled for a future time** — If a schedule is configured, the campaign is Live but execution has not started yet. Check the schedule settings and wait for the configured start time. [Learn more](create-orchestrated-campaign.md#schedule)
+
+1. **Save Audience activities still ingesting** — Save Audience activities run before message activities at publication time. If audience ingestion is still in progress, message execution has not started yet. Monitor the activity status indicators in the canvas. [Learn more](start-monitor-campaigns.md#activities)
+
+1. **Audience is empty** — The targeting query returned zero profiles. Review your segmentation rules and validate the audience count before republishing.
+
+1. **All profiles opted out** — Consent is evaluated at send time against each profile. If all targeted profiles have opted out on the relevant channel, no messages are sent. [Learn more](../action/consent.md)
+
+1. **Channel activity in error state** — An orange or red status indicator on the channel activity signals a blocking issue. Open the **[!UICONTROL Logs]** for details on the error and how to resolve it. [Learn more](start-monitor-campaigns.md#logs-tasks)
+
+1. **Rate control throttling delivery** — If rate control is enabled on the channel activity, delivery may be slower than expected. Check the rate control settings in the channel activity properties pane. [Learn more](activities/channels.md#rate-control)
+
+**Learn more**
+
+* [Start and monitor your Orchestrated campaigns](start-monitor-campaigns.md)
+* [Add a channel activity in an Orchestrated campaign](activities/channels.md)
+
++++
+
++++ Does publication use the real-time profile or a snapshot?
+
+At publication time, profile data is resolved against a **snapshot taken at publication time**, not the real-time profile. This ensures consistency across the entire campaign execution — all activities process the same profile state regardless of how long the campaign runs.
+
+Consent, however, is always honored from the current profile record and is not re-evaluated at send time.
+
+Note that segmentation in Orchestrated campaigns is performed on Recipients (relational store), while message sending and consent checks are resolved against the Adobe Experience Platform Profile.
+
+**Learn more**
+
+* [Publication-time execution sequence](start-monitor-campaigns.md#publication-sequence)
+* [What is the relationship between Recipient and Profile Entities?](#faq-oc)
+* [Work with consent policies](../action/consent.md)
 
 +++
 
@@ -280,16 +374,18 @@ No, Orchestrated campaigns do not support decisioning capabilities. For decision
 
 +++ How does deployment across environments work?
 
-Objects created in Orchestrated campaigns (e.g., audiences, workflows) are tied to the sandbox in which they are built. Standard packaging and deployment workflows across environments (dev, stage, prod) are not currently available for Orchestrated campaigns.  
+Objects created in Orchestrated campaigns (for example, audiences and workflows) belong to the sandbox where they were created. To reuse an orchestrated campaign in another sandbox (for example, dev, stage, or production), copy it with **Sandbox tooling**: add the campaign to a package, publish the package, and import it into the target sandbox. The imported copy is created in **draft**, and **re-importing the same package creates a new campaign** rather than updating an existing one. A complete move often takes **more than one step**: you may need to align **channel configurations** (matching names in the target), **schemas**, and **datasets** through the same package or additional package imports—channel configurations are not copied with the campaign. There is no full pre-export checklist in the UI; use the import mapping flow and **post-import alerts** to finish setup. For details and limitations, see [Copy Journey Optimizer objects between sandboxes](../configuration/copy-objects-to-sandbox.md).
 
 **Best practices**
 
-* Maintain **separate sandboxes** for experimentation, QA, and production.  
-* Document configurations thoroughly to enable manual replication if needed.  
-* Align with governance teams to reduce configuration drift between environments.   
+* Maintain **separate sandboxes** for experimentation, QA, and production.
+* Right after import, [duplicate the campaign](../campaigns/manage-campaigns.md#duplicate-a-campaign) and work from the duplicate so reporting shows feedback and tracking data correctly.
+* After each import, validate the campaign end to end in the target sandbox before you publish.
+* Document configurations and align with governance teams to reduce configuration drift between environments.
 
 **Learn more**
 
+* [Copy Journey Optimizer objects between sandboxes](../configuration/copy-objects-to-sandbox.md)
 * [Get started with Orchestrated campaigns](gs-orchestrated-campaigns.md)
 * [Guardrails and limitations](guardrails.md)
 
@@ -325,13 +421,13 @@ Segmentation is performed on Recipients while sending against the Adobe Experien
 
 Answering 'Yes' suggests the best data store - but always confirm the best approach based on your use case and constraints with your Adobe representative.
 
-|Relational Store | Real-Time Customer Profile | 
+|Relational Store | Real-Time Customer Profile |
 |---------|----------|
-| Is the source the data relational already? | Is the source of the data streaming? | 
-| Do you plan to ingest data as-it for marketing use cases? | Is data freshness a major requirement? | 
-| Is there a large volume of historical data (`>` 2 months) that is needed for marketing activation use cases? | Are there scenarios where in-the-moment action or decision require data? | 
-| Are there ad-hoc needs for audience creation, evaluation, and activation? | Can the behavioral data be limited to `<` 90 days using pre-computed aggregates?| 
-|  | Is data needed for personalizing messages in real-time?| 
+| Is the source the data relational already? | Is the source of the data streaming? |
+| Do you plan to ingest data as-it for marketing use cases? | Is data freshness a major requirement? |
+| Is there a large volume of historical data (`>` 2 months) that is needed for marketing activation use cases? | Are there scenarios where in-the-moment action or decision require data? |
+| Are there ad-hoc needs for audience creation, evaluation, and activation? | Can the behavioral data be limited to `<` 90 days using pre-computed aggregates?|
+|  | Is data needed for personalizing messages in real-time?|
 
 **Learn more**
 
@@ -343,7 +439,11 @@ Answering 'Yes' suggests the best data store - but always confirm the best appro
 
 +++ What is the maximum number of activities per Orchestrated campaign?
 
-The number of activities in an Orchestrated campaign is limited to 500.
+Two separate limits apply:
+
+* **Channel activities** — A maximum of 10 channel activities per Orchestrated campaign (Email, SMS, Push, or Direct mail). Targeting and flow control activities do not count. Exceeding this limit when saving or publishing causes the operation to fail.
+
+* **Canvas size** — Up to **500 activities** on the canvas. For maintainability, keep workflows under **100 activities** in practice.
 
 **Learn more**
 

@@ -8,8 +8,39 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: 78b95ccd-bc28-46cd-937a-f68e3f34cc1e
+TQID: https://experienceleague.adobe.com/tcx8KXGtorgevwLUj6rnvoE1mFYESJ4VaLL2vn3aZfA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
+    internal-label: Audience Qualification events
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
+    internal-label: Audience guardrails
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Audience activation in [!DNL Journey Optimizer] {#segments-in-journey-optimizer}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to target Adobe Experience Platform audiences in Adobe Journey Optimizer campaigns and journeys, including activation delays and the guardrails that apply to different audience types.
+
+>[!ENDSHADEBOX]
 
 You can select in campaigns and journeys any audience generated using segment definitions, custom upload, composition workflows or Federated Audience Composition.
 
@@ -47,7 +78,7 @@ You can leverage audiences in **[!DNL Journey Optimizer]** in different ways:
 
     For journeys using audiences from audience composition or custom upload, profile attributes are as fresh as the last batch evaluation at journey entry. However, after a **Wait** activity, the journey refreshes profile attributes from the Unified Profile Service (UPS), fetching the latest available data, which means profile attributes may change during journey execution. [Learn more about profile refresh after a Wait activity](../building-journeys/wait-activity.md#profile-refresh)
 
-* Use the **Condition** activity in a journey to build conditions based on audience membership. [Learn how to use audiences in conditions](../building-journeys/condition-activity.md#using-a-segment).
+* Use the **Optimize** activity in a journey to build conditions based on audience membership. [Learn how to use audiences in conditions](../building-journeys/conditions.md#using-a-segment).
 
 * Use the **Audience Qualification** event activity in a journey to make individuals enter or move forward in the journey based on Adobe Experience Platform audience entrances and exits. For example, you can make all new silver customers enter a journey and send them messages. [Learn how to configure an Audience qualification activity](../building-journeys/audience-qualification-events.md).
 

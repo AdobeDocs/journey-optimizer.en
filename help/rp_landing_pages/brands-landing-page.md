@@ -8,7 +8,7 @@ exl-id: f1e3cb9d-83a8-48af-9121-4ebc56dce251
 ---
 # Brands{#section-overview}
 
-In Adobe Journey Optimizer, the 'Brands' feature empowers you to define and maintain your brand’s unique identity across all your marketing efforts. By setting up clear visual and verbal guidelines—like colors, logos, writing styles, and imagery—you ensure every piece of content resonates with your audience and reinforces your brand. You’ll explore how to create and personalize these guidelines, set default preferences for seamless integration, and use tools like the AI Assistant to generate consistent, on-brand content. Dive into topics like writing style, visual content, and brand alignment to see how these elements work together to create a unified experience for your customers.
+In Adobe Journey Optimizer, the 'Brands' feature empowers you to define and maintain your brand’s unique identity across all your marketing efforts. By setting up clear visual and verbal guidelines—like colors, logos, writing styles, and imagery—you ensure every piece of content resonates with your audience and reinforces your brand. You’ll explore how to create and personalize these guidelines, set default preferences for seamless integration, and use tools like Generate Content to generate consistent, on-brand content. Dive into topics like writing style, visual content, and brand alignment to see how these elements work together to create a unified experience for your customers.
 
 ## Brands Features
 
@@ -54,3 +54,7 @@ Discover how to create and manage custom generative AI models trained on your br
 :::
 
 ::::
+
+## Additional Resources
+
+- **[Take the course: AI-powered, on-brand content creation](https://experienceleague.adobe.com/en/courses/ajo-ai-powered-on-brand-content-creation-for-marketers){target="_blank"}** - Learn how to create on-brand content in Adobe Journey Optimizer for marketers using AI-powered tools.

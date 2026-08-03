@@ -1,12 +1,43 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Release notes
+title: Release notes 
 feature: Release Notes
 role: User
 level: Beginner, Intermediate
-description: Adobe Journey Optimizer Release notes
+description: Adobe Journey Optimizer Release notes 
 exl-id: 06fa956a-b500-416e-9d42-b683c328e837
+TQID: https://experienceleague.adobe.com/YJKQFYUi8Kw7yZZKm8blcM-1G9uYsqcsEsopH0hOMhA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Release notes {#release-notes}
 
@@ -14,30 +45,62 @@ exl-id: 06fa956a-b500-416e-9d42-b683c328e837
 >id="ajo_homepage_card1"
 >title="What's new?"
 >abstract="**Adobe Journey Optimizer** continuously delivers new capabilities, enhancements to existing capabilities, and bug fixes. All changes are consolidated on the last week of each month in these release notes."
-
-[!DNL Adobe Journey Optimizer] follows a continuous delivery model, allowing Adobe to deliver new capabilities, enhancements, and fixes on an ongoing basis. This approach enables a scalable, phased rollout of capabilities to ensure performance and stability across all environments.
-
-Because of this model, release notes are updated between monthly releases. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](releases.md).
+ 
+[!DNL Adobe Journey Optimizer] follows a continuous delivery model, allowing Adobe to deliver new capabilities, enhancements, and fixes on an ongoing basis. This approach enables a scalable, phased rollout of capabilities to ensure performance and stability across all environments. Because of this model, release notes are updated between monthly releases. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](releases.md).
 
 [!DNL Adobe Journey Optimizer] is built natively on [!DNL Adobe Experience Platform] and inherits from its latest innovations and improvements. Learn more about these changes in [Adobe Experience Platform Release Notes](https://experienceleague.adobe.com/docs/experience-platform/release-notes/latest.html){target="_blank"}.
 
-## April '26 updates {#april-26-rn}
+>[!NOTE]
+>
+>Capabilities listed in these release notes include an **Availability date** indicating when each change becomes accessible in your environment. Entries in the **Coming soon** accordions are expected in the upcoming days or weeks. Information in these sections is subject to change. 
 
-### New capabilities {#april-26-features}
+## July '26 release notes {#july-26-updates}
+
+### Loyalty Challenges {#july-26-loyalty}
+
+Journey Optimizer introduces Loyalty Challenges, a new capability in this release.
 
 <table>
 <thead>
 <tr>
-<th><strong>Inbox</strong><br/></th>
+<th><strong>Loyalty Challenges</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p><strong>Inbox</strong> is a mobile functionality, available with Content Cards, that enables customers to create a centralized location within their app or website to display messages sent to their users. This extends the lifetime of marketing communications by ensuring messages remain accessible even after they are dismissed.</p>
-<p><img src="assets/do-not-localize/inbox.gif"/></p>
-<p>For more information, refer to the <a href="../inbox/inbox-gs.md">detailed documentation</a>.</p>
-<p>Availability date: April 7, 2026</p>
+<p>Loyalty Challenges turn loyalty initiatives into engaging, gamified experiences that motivate customers to take valuable actions, such as making purchases, writing reviews, or any desired behavior.</p>
+<p>Administrators can use the Loyalty configurations menu to connect Journey Optimizer with your loyalty ecosystem, including reward fulfillment APIs, event definitions, product inventory, exclusions, and identity settings. Marketers can then design standard, streak, or sequential challenges, define tasks and rewards, deliver branded content cards and messages, and monitor performance with AI-powered reporting dashboards. Journey Optimizer generates the journeys that orchestrate each challenge in the background, so teams can focus on the customer experience and business goals.</p>
+<p>Loyalty also introduces Coworker skills that let teams perform key challenge operations more efficiently, including creating challenges, setting challenge properties, managing audiences and related configuration, and reviewing insights to monitor challenge participation and reward performance.</p>
+<p><img src="assets/do-not-localize/loyalty.png"></p>
+<p>This capability is only available for organizations licensed for Journey Optimizer Loyalty. To gain access, contact your Adobe representative.</p>
+<p>For more information, refer to the <a href="../loyalty-challenges/get-started.md">detailed documentation</a>.</p>
+<p> Availability date: July 28, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Channels {#july-26-channels}
+
+The following capabilities and improvements have been introduced in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Custom outbound channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer now introduces Custom channels, a new capability that lets administrators bring any outbound HTTP-based messaging channel — such as WeChat, Kakao Talk, Messenger, or a proprietary provider — directly into Journey Optimizer through a no-code Channel Builder.</p >
+<p>Once configured, custom channels are available across campaigns, journeys, and orchestrated campaigns, with the same full set of capabilities as native channels: personalization with the expression editor, content experimentation, preview and proof, out-of-the-box reporting, and consent and governance enforcement.</p>
+<p>This fills a gap previously addressed by custom actions, which are limited only to journeys and lack dedicated channel capabilities.</p>
+<p>Custom outbound channels are currently available as Limited Availability. To gain access, contact your Adobe representative.</p>
+<p><img src="assets/do-not-localize/custom-channel.gif"></p>
+<p>For more information, refer to the <a href="../custom-channel/get-started-custom-channel.md">detailed documentation</a>.</p>
+<p> Availability date: July 31, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -46,84 +109,83 @@ Because of this model, release notes are updated between monthly releases. For f
 <table>
 <thead>
 <tr>
-<th><strong>Optimize email text for AI inboxes</strong><br/></th>
+<th><strong>Channel optimization</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Adobe Journey Optimizer now includes a new capability that ensures your emails are optimally structured for AI-powered inboxes such as Apple Intelligence and Google Gemini in Gmail.</p>
-<p>As AI assistants increasingly control how recipients read and act on email, this feature helps you author content that performs well across downstream AI tasks including summarization, triage, prioritization, and intent extraction.</p>
-<p><img src="assets/do-not-localize/text-optimizer.gif"></p>
-<p>For more information, refer to the <a href="../content-management/llm-email-optimizer.md">detailed documentation</a>.</p>
-<p>Availability date: April 3, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in email channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now use <strong>Decisioning</strong> to personalize and optimize the content of your email messages. Leverage Priority Scores, Formulas, or AI Models to display the most relevant offers and content to each recipient.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). With this General Availability release, mirror pages are now supported.</p>
-<p><img src="assets/do-not-localize/exd-email.gif"></p>
-<p>For more information, refer to the <a href="../experience-decisioning/create-decision-policy.md">detailed documentation</a>.</p>
-<p>Availability date: April 6, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-### Improvements {#april-26-improv}
-
-#### Adobe Experience Manager Integrations
-
-<!--* **Adobe Experience Manager Content Fragment context while authoring** - Your Content Fragment selection stays active as you move between text fields and content blocks, so you can add more fragment fields without reopening **Open AEM Content advisor** each time. [Read more](../integrations/aem-fragments.md)
-
-  Availability date: April 1, 2026-->
-
-* **Adobe Experience Manager Content fragment Varition Support** - You can select **Content Fragment variations** (for example language or channel variants) when inserting Adobe Experience Manager Content Fragments, with improved handling for locale and multilingual scenarios. [Read more](../integrations/aem-fragments.md#aem-variations)
-
-  Availability date: April 3, 2026
-
-## March '26 release notes {#march-26-rn}
-
-The [New capabilities](#march-26-features) and [Improvements](#march-26-improv) sections cover capabilities already available. The [Coming soon](#coming-soon) section lists features and improvements scheduled for release later in March.
-
-<!--
-**The pre-release notes below are subject to change without prior notice until the release availability date**. Links, screens and updated documentation are published in the release notes, at the release date.
-
-See also [Adobe Experience Platform pre-release notes](https://experienceleague.adobe.com/en/docs/experience-platform/release-notes/pre-release-notes){target="_blank"}.-->
-
-**Release date**: March 24-25, 2026
-
-### New capabilities {#march-26-features}
-
-<table>
-<thead>
-<tr>
-<th><strong>URL parameter encryption</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>URL parameters in tracking and landing page links added to your email messages can now be encrypted, providing an additional layer of security for sensitive parameter data.</p>
+<p>You can now configure a journey or campaign action to include multiple outbound channels (Email, Push, SMS) and let Journey Optimizer automatically deliver through the best channel for each customer. Three optimization modes are available:</p>
 <ul>
-<li>Register and manage encryption keys in the dedicated <strong>Administration</strong> registry.</li>
-<li>Use the new `Encrypt` helper function in expressions to encrypt sensitive data in URLs for the query parameters you want to protect at render time.</li>
+<li>Manual ranking: specify your preferred channel order.</li>
+<li>Customer preference: use the customer's preferred channel from their profile (Experience Data Model Consents & Preferences attribute).</li>
+<li>AI model-based ranking: use machine learning propensity scores to infer the most effective channel per customer.</li>
 </ul>
+<p>When the top-ranked channel is unavailable (not opted-in, frequency-capped, or not configured), the system falls back to the next available channel.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p><img src="assets/do-not-localize/encrypt-helper.gif"></p>
-<p>For more information, refer to the <a href="../personalization/url-parameter-encryption.md">detailed documentation</a>.</p>
-<p>Availability date: March 31, 2026</p>
+<p><img src="assets/do-not-localize/channel-optimization.gif"></p>
+<p>For more information, refer to the <a href="../building-journeys/channel-optimization.md">detailed documentation</a>.</p>
+<p>Availability date: July 22, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **WhatsApp Channel: Support WhatsApp Flow templates** - You can now send WhatsApp Flow templates in Adobe Journey Optimizer to deliver interactive multi-screen experiences like surveys and lead capture. Responses are captured upon submission and stored as raw JSON payloads in the new Journey Optimizer Channel Tracking Event Dataset. [Learn more](../data/get-started-datasets.md)
+
+* **Enhanced Custom Provider Integrations - Mobile** - Custom provider integrations now offer expanded flexibility with key messaging and header updates:
+
+  * Header Customization: You can now edit the default Content-Type header value and add up to 10 custom header parameters.
+
+  * SMS Payload Support: Added support for Adobe Journey Optimizer helper functions within the SMS payload, including encode64.
+
+### Administration {#july-26-administration}
+
+The following capabiolities and improvements have been added to administration and data management in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Web Application Firewall IP allowlisting</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Adobe Journey Optimizer now supports Web Application Firewall IP allowlisting for landing pages, enabling organizations to enforce that all incoming requests are routed exclusively through their configured Web Application Firewall infrastructure. With this enhancement, customers can configure Journey Optimizer to reject any direct requests that bypass the Web Application Firewall layer, ensuring that security policies defined in tools such as Imperva are consistently applied.</p>
+<p>This capability strengthens the security posture for enterprises with strict network access requirements, giving them full control over the traffic flow to their Journey Optimizer-hosted landing pages.</p>
+<p><img src="assets/do-not-localize/allowed-ips.gif"></p>
+<p>For more information, refer to the <a href="../configuration/waf-ip-allowlist.md">detailed documentation</a>.</p>
+<p>Availability date: July 30, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Manage domains for complete/base URL personalization** - You can now create and manage approved domains for complete and base URL personalization directly from the Administration settings in Adobe Journey Optimizer, without having to contact Adobe support. [Learn more](../email/url-personalization.md#personalize-complete-base-url)
+
+    Availability date: July 30, 2026
+
+* **Dataset Time-to-live (TTL) guardrail — existing sandboxes** - The time-to-live (TTL) guardrail for Journey Optimizer system-generated datasets (90 days in the profile store, 13 months in the data lake) will be enforced on **existing customer sandboxes and organizations** starting **October 1, 2026**. [Learn more](../data/datasets-ttl.md#ttl-guardrail)
+
+### Email Design {#july-26-email}
+
+The following capabilities and improvements have been added to email design in this release.
+
+<table>
+<thead>
+<tr>
+<th><strong>Modules in the Email Designer</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The Email Designer now includes a library of ready-to-use layout modules — such as headers, product cards, information blocks, and footers — that you can drag and drop directly into your email canvas.</p>
+<p>Each module comes pre-configured with editable properties (image, title, text, button, links) and can be fully customized through the WYSIWYG interface, speeding up email creation without requiring you to build structures from scratch.</p>
+<p><img src="assets/do-not-localize/email-modules.gif"></p>
+<p>For more information, refer to the <a href="../email/email-modules.md">detailed documentation</a>.</p>
+<p>Availability date: July 29, 2026</p>
 </td>
 </tr>
 </tbody>
@@ -132,343 +194,248 @@ See also [Adobe Experience Platform pre-release notes](https://experienceleague.
 <table>
 <thead>
 <tr>
-<th><strong>Convert images to email content templates</strong><br/></th>
+<th><strong>Content check in the Email Designer (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now convert images into email content templates directly in Journey Optimizer. Use AI-powered analysis to automatically generate structured HTML templates from visual references, significantly reducing email design time.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p><img src="assets/do-not-localize/image-converter.gif"></p>
-<p>For more information, refer to the <a href="../content-management/image-to-html.md">detailed documentation</a>.</p>
-<p>Availability date: March 31, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th><strong>Inbox</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p><strong>Inbox</strong> is a mobile functionality, available with Content Cards, that enables customers to create a centralized location within their app or website to display messages sent to their users. This extends the lifetime of marketing communications by ensuring messages remain accessible even after they are dismissed.</p>
-<p><img src="assets/do-not-localize/inbox.gif"/></p>
-<p>For more information, refer to the <a href="../inbox/inbox-gs.md">detailed documentation</a>.</p>
-<p>Availability date: March 31, 2026</p>
+<p>Journey Optimizer now includes automated technical validation directly in the Email Designer, helping you catch HTML and CSS issues before sending.</p>
+<p>Checks cover unsupported elements such as <code>&lt;script&gt;</code> and <code>&lt;base&gt;</code> tags, empty divs that can break layout in Microsoft Outlook, HTML meta refresh tags, and CSS or HTML size thresholds that trigger rendering failures in Gmail.</p>
+<p>Results are surfaced as errors, warnings, or informational notices directly in the authoring panel, with contextual details and one-click fixes where available, so issues can be resolved without leaving the editor.</p>
+<p>Previously available in Limited Availability, this capability is now generally available to all customers.</p>
+<p><img src="assets/do-not-localize/content-check.gif"></p>
+<p>For more information, refer to the <a href="../email/content-check.md">detailed documentation</a>.</p>
+<p>Availability date: July 16, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
+* **Expression fragments support in `<head>`** - Expression fragments can now be used in the `<head>` of email templates. This allows you to centralize styling or any custom code in a single fragment and reuse it across multiple templates. When a fragment is updated and republished, all emails built from templates referencing it automatically inherit the latest code — eliminating the need to manually update each email individually. [Learn more](../personalization/use-expression-fragments.md)
+
+  Availability date: July 29, 2026
+
+### Journeys {#july-26-journeys}
+
+The following capabilities and improvements have been added to journeys in this release.
 <table>
 <thead>
 <tr>
-<th><strong>Landing page custom forms</strong><br/></th>
+<th><strong>New user interface</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>With [!DNL Journey Optimizer], you can capture profile attributes through your landing pages.</p>
-<p>Create, design and manage custom forms tailored to your needs based on a specific dataset. You can then leverage these forms in landing pages to add the profile attributes of your choice into the dataset defined for each form.</p>
-<p>Previously released in Limited Availability for customers in the United States and Australia, this capability is now available to all environments (General Availability).</p>
-<p><img src="assets/do-not-localize/forms.gif"/></p>
-<p>For more information, refer to the <a href="../landing-pages/lp-forms.md">detailed documentation</a>.</p>
-<p>Availability date: March 26, 2026.</p>
+<p>A <b>new user interface</b> has been introduced for the journey canvas, delivering improved performance for large journeys, automatic layout for better readability, and a guided authoring experience.</p>
+<p><img src="../building-journeys/assets/journey-new-canvas.png"></p>
+<p>To switch to the new UI, click the <b>New experience</b> button. This setting is saved at the journey level, so the journey reopens in the new experience by default. To revert, click <b>Old experience</b>. <a href="../building-journeys/using-the-journey-designer.md#canvas-capabilities">Learn more</a>.</p>
+<p><img src="../building-journeys/assets/journey-new-experience-switch.png"></p>
+<p> Availability date: July 16, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
+* [!BADGE Deprecation]{type=Negative} **Batch audiences no longer supported in Audience Qualification node and Exit Criteria** - Starting September 2026, Journey Optimizer will block publication for any journey using a batch audience in an Audience Qualification node or in Exit Criteria. A validation warning is already surfaced in the journey canvas.  Existing live journeys are not affected. New, draft, and duplicated journeys that include this configuration must be updated before September 2026. Use a streaming audience in the Audience Qualification node, or switch to a Read Audience activity. For Exit Criteria, use a streaming audience. [Learn how to migrate your journeys](../building-journeys/aq-batch-audiences-migration.md)
+
+* **External audiences in Journey Simulation** - Journey Simulation now supports External Audiences. When simulating journeys targeting CSV or Federated Audience Composition audiences, you can mock enrichment attributes from those audiences directly through the UI form or a JSON import. The UI dynamically displays only the specific enrichment attributes used in your journey logic, enabling precise validation of decision branches and personalization rules prior to going live. [Learn more](../building-journeys/simulate-journey.md)
+
+  Availability date: July 29, 2026
+
+* **Circuit breaker protection for slow custom action endpoints** - For endpoints routed through the slow custom action service, Journey Optimizer now temporarily caps all calls for up to 5 minutes when more than 20% of calls in a 120-second window exceed 10 seconds, if there are at least 200 calls in the 120-second observation window. This helps prevent overloading endpoints that are already slow. [Learn more](../configuration/external-systems.md#response-time)
+
+  Availability date: July 29, 2026. This capability is being gradually rolled out across regions.
+
+### Orchestrated campaigns {#july-26-oc}
+
+The following capabilities and improvements are coming to orchestrated campaigns in this release.
+
 <table>
 <thead>
 <tr>
-<th><strong>Test activity in Orchestrated Campaigns</strong><br/></th>
+<th><strong>File-based targeting in Orchestrated campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>A new <strong>Test</strong> activity is now available in Orchestrated Campaigns. This activity routes workflow execution to different branches based on defined conditions, enabling you to validate campaign logic and configurations before activating live deliveries.</p>
-<p><img src="../orchestrated/assets/test-1.png"></p>
-<p>For more information, refer to the <a href="../orchestrated/activities/test.md">detailed documentation</a>.</p>
+<p>Orchestrated campaigns now support loading a <strong>CSV or TXT file</strong> directly into the campaign canvas as the targeting audience, without first ingesting the file into Adobe Experience Platform. The file data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. Rows that fail validation are rejected and logged before the campaign runs, keeping the audience clean without manual pre-processing. This is particularly suited for ad-hoc sends or partner list campaigns where building a full ingestion pipeline is not practical.</p>
+<p>For more information, refer to the <a href="../orchestrated/activities/load-file.md">detailed documentation</a>.</p>
+<p> Availability date: July, 6 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Dataset lookup support in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>A new <strong>Dataset lookup</strong> activity in journeys lets you dynamically retrieve data from Adobe Experience Platform record datasets at runtime — giving you access to information that is not part of the profile or event payload, so customer interactions stay relevant and timely.</p>
-<p>Previously released in Limited Availability to a restricted set of organizations, the Dataset lookup activity in journeys is now available to all customers entitled to [dataset lookup](../data/lookup-aep-data.md), while remaining in Limited Availability.</p>
-<p><img src="../building-journeys/assets/aep-data-activity.png"></p>
-<p>For more information, refer to the <a href="../building-journeys/dataset-lookup.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
+* **View Orchestrated Campaign Transitions permission** - Added a new **View Orchestrated Campaign Transitions** permission to replace the legacy **View File in Orchestrated Campaigns** option. This change allows you to hide preview results within campaign transitions to support personally identifiable information compliance.
+
+  Availability date: July 29, 2026
+
+  [Learn more](../administration/ootb-permissions.md)
+
+### Decisioning {#decisioning}
+
+* **Decisioning rules creation from natural language expression** - You can now describe the Decisioning rule you want to create in plain language and let AI generate it for you. This capability is available to customers with access to Adobe AI capabilities.
+
+  This capability is available to organizations with access to Adobe AI capabilities. It is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: July 29, 2026
+
+  [Learn more](../experience-decisioning/rules.md#build-rule-with-ai)
+
+* **Decision items' dynamic custom attributes** - Decision item custom attributes can now be personalized at delivery time using profile, contextual, and audience data. This removes the need to maintain duplicate offers for minor content variations, allowing marketers to manage fewer, more flexible decision items. [Learn more](../experience-decisioning/items.md#attributes)
+
+  Availability date: July 27, 2026
+
+* **Decisioning rules and ranking formulas simulation** - You can now simulate your Decisioning rules and ranking formulas directly from the rule or formula editor. Add manual test variants or generate them using AI, then run the expression against your test data to validate eligibility and review ranked results, all before deploying to production. Variants generation is available to customers with access to Adobe AI capabilities.
+
+  This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
+
+  Availability date: July 29, 2026
+
+  [Learn more about rules simulation](../experience-decisioning/rules.md) | [Learn more about ranking formulas simulation](../experience-decisioning/ranking/ranking-formulas.md)
+
+### Content management {#july-26-content}
+
+The following capabilities and improvements have been added to content management in this release.
 
 <table>
 <thead>
 <tr>
-<th><strong>Action activity replaces channel-specific journey activities</strong><br/></th>
+<th><strong>Guided Adoption Capabilities</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Following the General Availability of the <strong>Action activity</strong> in February 2026, legacy native channel activities (Email, Push, SMS, In-app, Web, Code-based experience, and Content Card) in the journey canvas are now deprecated.</p>
-<p>You must now use the single Action activity to configure all channel actions, replacing the need for separate channel-specific nodes.</p>
-<p>Existing journeys using legacy channel activities continue to function without any changes or migration required.</p>
-<p><img src="assets/do-not-localize/action-activity.gif"></p>
-<p>For more information, refer to the <a href="../building-journeys/journey-action.md">detailed documentation</a>.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Advanced HTML editor for email templates</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Advanced HTML mode for email content templates lets you edit the HTML source of your content in the Email Designer, add advanced expressions (such as conditions) in the source, and toggle between HTML view and Desktop view without losing your changes.</p>
-<p>This capability is available in content templates for the Email channel only. It is currently in Limited Availability — contact your Adobe representative to gain access.</p>
-<p><img src="assets/do-not-localize/expert-mode.gif"/></p>
-<p>For more information, refer to the <a href="../content-management/email-template-expert-mode.md">detailed documentation</a>.</p>
-<p>Availability date: March 10, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Integration of custom Firefly models and third-party image generation models</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Enable seamless integration of standard and custom Firefly models, along with approved third-party image models, to provide greater flexibility, control, and brand alignment when generating images.</p>
-<p>Choose the right model for your needs:</p>
-<ul><li> <strong>Adobe model</strong> (powered by Firefly Image Model 4) for immediate image generation without additional setup</li><li> <strong>Partner model</strong> (powered by Gemini 2.5 Flash) for specialized capabilities</li><li><strong>Custom models</strong> (brand-specific models trained on your own assets) for on-brand generation that aligns precisely with your brand identity, style, and visual guidelines.</li></ul>
-<p>For more information, refer to the <a href="../content-management/generative-models.md">detailed documentation</a>.</p>
-<p>Availability date: March 2, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Live Activity for iOS</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Bring real-time experiences directly to your customers' Lock Screens and Dynamic Island with <strong>iOS Live Activity</strong> in Adobe Journey Optimizer. Deliver live updates, from order tracking and flight status to event countdowns, live scores and delivery progress, without requiring users to open your app. Keep your audience informed and engaged at exactly the right moment, right where they are.</p>
-<p>Previously released in beta, this capability is now available to all environments (General Availability).</p>
-<p>For more information, refer to the <a href="../mobile-live/get-started-mobile-live.md">detailed documentation</a>.</p>
-<p>Availability date: March 3, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey Agent: Channel content create</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Powered by <strong>Adobe Experience Platform Agent Orchestrator</strong>, <strong>Journey Agent</strong> is available in Journey Optimizer and enables you to analyze journeys through a natural language interface. You can now also generate and manage channel-specific content directly in Journey Agent, creating content for channels such as email and push, applying and previewing templates, refining tone and style through prompts, and opening content in <strong>Content Designer</strong> for in-context editing.</p>
+<p>Transitioning to Adobe Journey Optimizer from another marketing platform is easier with guided capabilities that help you move existing email content and journeys into Journey Optimizer. A dedicated workspace lets you reuse what you have instead of rebuilding from scratch.</p>
 <p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
-<p>For more information, refer to the <a href="https://experienceleague.adobe.com/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent.html" target="_blank">detailed documentation</a>.</p>
-<p>Availability date: March 4, 2026</p>
+<p><img src="assets/do-not-localize/guided-adoption.gif"></p>
+<p>For more information, refer to the <a href="../start/migrate-content-and-journeys.md">detailed documentation</a>.</p>
+<p> Availability date: July 30, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
+* **Quick launch shortcuts in Fragments inventory** - You can now quickly access common actions from the Fragments list using the **[!UICONTROL More actions]** button. Available shortcuts include editing the fragment, opening its details, and discarding the draft version. [Learn more](../content-management/manage-fragments.md#quick-launch-fragments)
+
+  ![](../content-management/assets/fragment-quick-launch.png)
+
+* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. For email templates, additional shortcuts let you edit the subject line and email body, view or send a proof, run a spam report, and render the email. [Learn more](../content-management/access-content-templates.md#quick-launch-templates)
+
+  ![](../content-management/assets/content-template-quick-launch.png)
+
+* **New helper functions in personalization expressions** - New helper functions are now available in personalization expressions:
+
+  * `appendQueryParams`: Appends a query parameter to a URL, or replaces it if the key already exists.
+  * `dateBetween`: Checks whether a date falls within a start and end date range (inclusive).
+  * `equalsAnyIgnoreCase`: Returns true when a string matches any provided value, ignoring case.
+  * `getUrlFragment`: Extracts the fragment portion of a URL (the part after #).
+  * `join`: Concatenates array elements into a single string using a separator.
+  * `decode64`: Decodes a Base64-encoded string. If the input is not valid Base64, the original input string is returned unchanged.
+  * `parseJson`: Parses a JSON string into a structured variable that can be used in the template.
+  * `valueAtPath`: Assigns a value from a data path to a template variable, with optional indexing to extract a specific element from arrays or collections.
+  * `abort`: Stops message delivery when reached during rendering.
+
+  The `concat` function has also been enhanced and now supports two or more arguments.
+
+  In addition, the following Template Migration Functions are now available to assist with migrating existing templates to Journey Optimizer:
+
+  * `ampCompare`: Compares two values using the specified comparison operator.
+  * `ampSubstr`: Returns a portion of a string between the specified start and end indices.
+  * `compareTo`: Compares two strings lexicographically.
+
+  [Learn more about helper functions](../personalization/functions/functions.md)
+
+  Availability date: July 28, 2026
+
+* **"AI Assistant" renamed to "Generate content"** - AI Assistant has been renamed to Generate Content throughout Adobe Journey Optimizer. This update is limited to naming and terminology; no functional changes have been introduced. Navigation labels, buttons, menus, and dialogs for content generation, image generation, personalization expressions, and content experimentation have been renamed from "AI Assistant" to "Generate Content."
+
+  Availability date: July 30, 2026
+
+* **Multilingual improvements** - Language Settings can now be duplicated from an existing active setting, so you no longer need to fully rebuild a configuration to make changes. You can also copy a condition from one locale to another while authoring Language Settings, streamlining setup for sites with many languages.
+
+  Availability date: July 30, 2026
+
++++ Coming soon
+
+* **Flexible Image Sourcing for AI Content Generation** - Generating content in Journey Optimizer now sources brand-approved images directly from Adobe Experience Manager Assets Essentials and up. Three modes control the balance: Assets (Digital Asset Management-sourced, default), Balanced (Digital Asset Management-first, AI fills gaps), and Creative (AI-first). This ensures every visual is accurate, brand-compliant, and production-ready for journeys and campaigns.
+
++++
+ 
+### Content & Integrations {#july-26-integration}
+
+The following improvements are coming to content management and integrations in this release.
+
 <table>
 <thead>
 <tr>
-<th><strong>AI model monitoring</strong><br/></th>
+<th><strong>Countdown timer using Dynamic Media</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now allows you to monitor the health, training status, and performance of your Decisioning AI models. This allows you to verify training success, troubleshoot failures, and understand impact on your outcomes in order to select the best offers for each customer using AI. Note that this capability is available for <strong>Decisioning</strong> only (not for legacy Decision Management models).</p>
-<p>This capability is currently available for <strong>personalized optimization</strong> models only (not auto-optimization).</p>
-<p><img src="assets/do-not-localize/ai-model-observability.gif"/></p>
-<p>For more information, refer to the <a href="../experience-decisioning/ranking/ai-model-observability.md">detailed documentation</a>.</p>
-<p>Availability date: March 9, 2026</p>
+<p><strong>Journey Optimizer and Adobe Experience Manager Dynamic Media integration</strong> enables open-time personalization for Dynamic Media templates, unlocking hyper-personalized use cases. Customers can create and publish personalized templates in Adobe Experience Manager and use them in Journey Optimizer, with data rendered at open time.</p>
+<p>For more information, refer to the <a href="../integrations/aem-dynamic.md#countdown">detailed documentation</a>.</p>
+<p> Availability date: July 30, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
+
+
+* **AJO MCP server new tools** - The [!DNL Adobe Journey Optimizer] MCP server now exposes five additional read-only **channel configuration tools**, enabling you to query channel configurations, supporting resources, and marketing actions directly from your AI assistant. You can now use **List Channel Configurations** (across all AJO channels), **Get Channel Configuration**, **List Configuration Resources**, **Get Configuration Resource**, and **List Marketing Actions**. [Read more](../integrations/ajo-mcp.md#mcp-tools)
+
+  Availability date: July 9, 2026
+
+### Reporting {#july-26-reporting}
+
+The following improvement is coming to reporting in this release.
+
+* **New Estimated Click Metrics for Email Reporting** - To provide a more accurate view of real customer engagement, new estimated metric are now available across Journeys, Campaigns, and Channel Live reports.
+
+  * Estimated CTR (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
+  * Estimated CTOR (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
+
+    Availability date: July 29, 2026
+
+### Campaigns {#campaigns}
+
++++ Coming soon
+
 <table>
 <thead>
 <tr>
-<th><strong>Trigger Orchestrated campaigns using a signal</strong><br/></th>
+<th><strong>Personalized PDF attachments in API-triggered emails</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>Orchestrated campaigns can now be triggered via an <strong>API signal</strong>. To set this up, configure the target campaign as <strong>Triggered by a signal</strong>, publish it, then fire it using an API call. Any parameters included in the API call are available as variables within the running campaign. Note that signal-triggered orchestrated campaigns remain <strong>batch</strong> campaigns and are distinct from API-triggered campaigns.</p>
-<p><img src="assets/do-not-localize/oc-triggered.gif"></p>
-<p>For more information, refer to the <a href="../orchestrated/trigger-orchestrated-campaign.md">detailed documentation</a>.</p>
+<p>Journey Optimizer now supports attaching up to five recipient-specific PDFs per email in API-triggered campaigns. PDF files are fetched securely from Azure or AWS storage and attached at send time, with each file's location passed directly in the API payload. This allows existing upstream document generation systems to remain in place, with Journey Optimizer handling delivery.</p>
+<p>Supported use cases include invoices, statements, tickets, contracts, shipping labels, and similar documents that vary per recipient. Personalized PDF attachments are available in API-triggered campaigns only and are not supported in journeys or other campaign types (action, orchestrated).</p>
+<p>Larger attachment volumes and sizes are supported via the PDF attachment add-on; for information, contact your Adobe representative.</p>
+<p></p>
+<!-- Documentation link: TBD -->
 </td>
 </tr>
 </tbody>
 </table>
 
-<table>
-<thead>
-<tr>
-<th><strong>Transactional category in Orchestrated campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>In Orchestrated campaigns, you can now set a channel activity to the <strong>Transactional</strong> category. This applies transactional channel configurations to that activity and is useful when business rules should not apply or when customers' opt-in is not required.</p>
-<p><img src="assets/do-not-localize/oc-transactional.gif"></p>
-<p>For more information, refer to the <a href="../orchestrated/activities/channels.md#add">detailed documentation</a>.</p>
-<p>This capability will be gradually rolled out to all regions over the next few days.</p>
-</td>
-</tr>
-</tbody>
-</table>
+* **Performance Add-on for throughput in API-triggered campaigns - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. <!-- Documentation link: TBD -->
 
-### Improvements {#march-26-improv}
++++
 
-Improvements coming with this release are listed below.
+### Usability improvements {#july-26-usability}
 
-#### Personalization
++++Coming soon
 
-* **Complete/base URL personalization** - You can personalize destination URLs using profile attributes (for example, for the domain or path). To enable this capability, provide Adobe with your list of accepted domains. [Read more](../personalization/personalization-build-expressions.md#where)
+* **New Content Simulation experience for content testing** - The **Simulate content** workflow introduces a redesigned experience: all variants now render together in a single scrollable grid (side-by-side, stacked, or wrapped layouts), replacing the one-variant-at-a-time view. A single bottom action bar consolidates navigating between test variants, zoom, viewport switching (desktop/mobile), locale switching, adding sample inputs, generating variants with AI, picking and saving simulated users, and importing or exporting variants. Removing the left rail and collapsing extra header layers gives previews significantly more room. A **Switch to classic experience** option in the bottom action bar lets you revert to the previous experience at any time.
 
-  Previously released in Limited Availability for use in journeys, this capability is now available to all environments (General Availability).
-
-  Availability date: April 1, 2026
-
-#### Reporting
-
-* **Send-Time Optimization: updated controls location and new lift report** - Send-Time Optimization (STO) controls have been relocated to the Action configuration menu. Additionally, a new lift report is now available in Journeys reports to measure the impact of STO on your campaign performance metrics. [Read more](../reports/channel-report-cja.md#optimization-models)
-  
-  Availability date: March 27, 2026
-
-<!--
-
-
-* **Exclude bot clicks for email and SMS reporting** - Email and SMS reporting now automatically filters out bot clicks from click metrics, providing more accurate engagement data and preventing automated traffic from inflating your performance figures.
-
-#### Email Designer
-
-* **Email Designer displayed in Unified Shell** - The Email Designer is now displayed within the Unified Shell experience, providing a consistent navigation and header experience that aligns with other Adobe applications.
-
-* **Text mode support in fragments** - To support text-based email workflows, you can now create and manage text versions of your visual fragments for optimal use in the plain text version of emails that include that fragment.
-
-  **Caution:** When using a fragment that was created before the current release, the fragment text version may be incorrectly rendered—both in the Email Designer and in the final email delivered to your recipients. For best results with older fragments, edit, save and republish each fragment.-->
-<!--
-#### Decisioning
-
-* **Optional fragments in decision items** - When using fragments in decision items, you can now make a fragment optional so that if it is temporarily unavailable on Edge, it is skipped and the journey or campaign continues rendering instead of failing.
--->
-
-#### Configuration
-
-<!--* **Folders for journeys and campaigns** - You can now organize your journeys and campaigns into folders, enabling structured navigation and easier management for teams working with large volumes of content. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.-->
-
-* **AJO domain certificates renewal unsuccessful** - You can now subscribe to receive system alerts, either by email or in the Journey Optimizer notification center, when a domain certificate used for email deliverability is nearing expiration or has already expired. [Read more](../reports/alerts.md#alert-certificates-renewal-unsuccessful)
-
-  Availability date: March 26, 2026
-
-* **AJO Secondary Recipient Feedback Event Dataset rename** - The `AJO Email BCC Feedback Event` Dataset has been renamed to `AJO Secondary Recipient Feedback Event` Dataset. The impact varies depending on your situation:
-
-  * **Existing users**: Only the display name is updated. The underlying table name remains unchanged.
-  * **New users and sandboxes**: Both the display name and the table name reflect the new name.
-  * **Existing users with new sandboxes**: Both the display name and the table name are updated to the new name.
-
-  Availability date: March 2, 2026
-
-
-#### Journeys
-
-* **Update Profile action: support for multiple profile attributes** - The **Update Profile** action activity now supports updating up to five profile attributes in a single node. Previously, each action could only update one attribute at a time, requiring multiple nodes to update several attributes. Use the new **Update another field** button to add additional field/value pairs, reducing canvas complexity and improving performance. [Learn more](../building-journeys/update-profiles.md)
-
-* **Wave sending of outbound messages in journeys** - You can now schedule messages from Journey Optimizer journeys to be delivered in controlled batches over time. [Learn more](../building-journeys/send-using-waves.md)
-
-  Previously released in Limited Availability for use in journeys, this capability is now available to all environments (General Availability).
-
-  Availability date: March 16, 2026
-
-* **Pause and resume details in journey technical details** - The journey **technical details** now include additional pause and resume information: the date and time of the last pause and resume, the display name and internal identifier of the user who performed each action, and a full set of paused journey settings such as pause behavior, maximum pause duration, and auto-resume state. [Learn more](../building-journeys/journey-properties.md)
-
-  Availability date: March 2, 2026
-
-## Coming soon {#coming-soon}
-
-The features and improvements below are planned for release later in March/early April. Release dates and scope are **subject to change without prior notice**.
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey path experimentation</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Use the new <strong>Optimize</strong> node to run A/B tests or multi-armed bandit experiments to determine the best path to meet your business-centric KPIs. This tool allows you to test and vary, and customize communications, sequencing, and timing to best reach your customers.
-</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability). <a href="../building-journeys/optimize.md">Learn more</a></p>
-<p><img src="assets/do-not-localize/optimize.gif"></p>
-<p>As part of the General Availability, this release introduces <strong>experiment type</strong> selection (A/B or multi-armed bandit) and <strong>Scale the winner</strong> for unitary journeys.</p>
-<p>Availability date: April 7, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<!--WAITING RELEASE DATE CONFIRMATION * **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.-->
-<!--
-WAITING RELEASE DATE CONFIRMATION
-* **Target dimension simplification in Orchestrated Campaigns** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level.
-
-<--
-TO ADD when Path optimization is GA:
-
-* **Experiment type** - You can now choose between A/B experiment (fixed split at the start) or Multi-armed bandit (automatic split with weekly weight updates) when configuring a path experiment.
-
-* **Path experimentation: Scale the Winner** - You can now automatically or manually roll out the winning path of an experiment to your full audience. Once a winner is determined, you can amplify its reach and effectiveness without constantly monitoring the experiment.
-This capability is available only in unitary journeys (event-triggered and Audience qualifications). It is not available for Read audience journeys.
-
--->
++++

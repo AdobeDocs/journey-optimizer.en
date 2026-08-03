@@ -6,8 +6,41 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: b33e4bca-d2e9-4610-9f04-008d47f686d0
+TQID: https://experienceleague.adobe.com/clX0VeCEzwDOgxyFrzVaBIx-eH90KEYaHGTMzf2xvQc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
+    internal-label: Web channel
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+    internal-label: Web experience
 ---
 # Author single-page applications {#web-author-spas}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to author single-page applications in Adobe Journey Optimizer by defining views in the Web SDK implementation, discovering them in the web designer with browse mode, and applying modifications to selected views.
+
+>[!ENDSHADEBOX]
 
 ## About views {#about-views}
 
@@ -27,9 +60,9 @@ One-time developer setup is needed to define the views in the Adobe Experience P
 
 ## Define views in the Web SDK implementation {#define-views}
 
-XDM views can be leveraged in Adobe [!DNL Journey Optimizer] to empower marketers to run web personalization and experimentation campaigns on SPAs via the web visual editor. [Learn more](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html){target="_blank"}
+XDM views can be leveraged in Adobe [!DNL Journey Optimizer] to empower marketers to run web personalization and experimentation campaigns on SPAs via the web visual editor. [Learn more](web-spa-implementation.md)
 
-To be able to access and author views in the [!DNL Journey Optimizer] user interface, make sure you follow the steps listed in [this section](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/ajo/web-spa-implementation.html#implement-xdm-views){target="_blank"}.
+To be able to access and author views in the [!DNL Journey Optimizer] user interface, make sure you follow the steps listed in [this section](web-spa-implementation.md#implement-xdm-views).
 
 ## Discover views in the web designer {#discover-views}
 

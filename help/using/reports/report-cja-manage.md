@@ -2,14 +2,49 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Reporting
-description: Get started with Reporting 
+description: Get started with Reporting
 feature: Reporting
 topic: Content Management
 role: User
 level: Intermediate
 exl-id: d2ff175a-8bca-4b62-931c-a909cfd9308d
+TQID: https://experienceleague.adobe.com/xxARWBrCc61gvHReQfoliwB378PrDbsxM8ONSHrg9a4
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+subfeature_v2:
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
+    internal-label: Metrics catalog
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Manage your reports {#channel-cja-manage}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Manage your Adobe Journey Optimizer reports by analyzing data in Customer Journey Analytics, setting report periods, exporting and scheduling reports, building custom metrics, and creating audiences.
+
+>[!ENDSHADEBOX]
 
 ## Analyze in Customer Journey Analytics {#analyze}
 
@@ -171,7 +206,8 @@ Use the Insight builder tool to easily create tables and visualizations from you
 
 You can now analyze your data using your customized table and visualization tools.
 
-<!--## Create a down-funnel metric {#down-funnel}
+<!--
+## Create a down-funnel metric {#down-funnel}
 
 1. Create a new journey or open an existing one. [Learn more about journey creation](../building-journeys/journey-gs.md)
 

@@ -9,8 +9,51 @@ role: User
 level: Beginner
 keywords: get started, start, content, experiment
 exl-id: 7fe4b24e-f60a-4107-a064-00010b0cbbfc
+TQID: https://experienceleague.adobe.com/6RWh7aUUasaT-BIe90rkSJf66-G3Ika81AhufKSnqjw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Get started with content experiments {#get-started-experiment}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how content experiments in Adobe Journey Optimizer use randomized trials to test message variations, how results are calculated, and how to interpret reports to optimize your campaigns.
+
+>[!ENDSHADEBOX]
 
 ## What is a content experiment?
 
@@ -43,7 +86,7 @@ In detail, the MumurHash3 32-bit algorithm is used to hash the user identity str
 
 Note that as part of configuring every campaign with a content experiment, you must choose an identity namespace from which the userId will be selected for the randomization algorithm. This is independent of the [execution addresses](../configuration/primary-email-addresses.md).
 
-### Data Collection and Analysis
+### Data collection and analysis
 
 At the time of assignment i.e., when the message is sent in outbound channels, or when the user enters the campaign in inbound channels, an "assignment record" is logged to the appropriate system dataset. This will record which treatment the user was assigned to, along with experiment and campaign identifiers. 
 
@@ -123,7 +166,7 @@ When you compare the performance of two treatments, you should always compare th
     
 For example, if the experiment objective is set to **[!UICONTROL Unique Opens]**, and a given treatment was shown to 10,000 Profiles with 200 Unique Opens recorded, then this represents a **[!UICONTROL Conversion Rate]** of 2%. For non-unique metrics, e.g. Opens metric, the normalized metric is shown as a **[!UICONTROL Count per Profile]**, while for continuous metrics like Price Total, the normalized metric is shown as a **[!UICONTROL Total per Profile]**.
 
-### 2. Focus on Confidence intervals {#confidence-intervals}
+### 2. focus on confidence intervals {#confidence-intervals}
 
 When you run experiments on samples of your profiles, the conversion rate observed for a given treatment represents an estimate of the true underlying conversion rate.
     
@@ -135,17 +178,17 @@ If the confidence intervals for two treatments are barely overlapping, this mean
 
 Adobe uses 95% Anytime Valid Confidence Intervals, or Confidence Sequences, which means the results can be safely viewed at any time during the experiment.
 
-### 3. Understand Lift {#understand-lift}
+### 3. understand lift {#understand-lift}
 
 The Experiment report summary shows the **[!UICONTROL Lift over Baseline]**, which is a measure of the percentage improvement in conversion rate of a given treatment over the baseline. Defined precisely, it is the difference in performance between a given treatment and the baseline, divided by the performance of the baseline, expressed as a percentage.
 
-### 3. Understand Confidence {#understand-confidence}
+### 3. understand confidence {#understand-confidence}
 
 While you should primarily focus on the **[!UICONTROL Confidence interval]** for the performance of each treatment, Adobe also shows the Confidence, which is a probabilistic measure of how much evidence there is that a given treatment is the same as the baseline treatment. A higher confidence indicates less evidence for the assumption that baseline and non-baseline treatments have equal performance. More precisely, the confidence that is displayed is a probability (expressed as a percentage) that we would have observed a smaller difference in conversion rates between a given treatment and the baseline, if in reality there is no difference in the true underlying conversion rates. In terms of p-values, the confidence displayed is 1 - p-value.
 
 Adobe uses "Anytime Valid" Confidence, and "Anytime Valid" p-values that are consistent with the Confidence Sequences described above.
 
-### 4. Statistical Significance
+### 4. statistical significance
 
 When running Experiments, a result is deemed statistically significant if it was very unlikely to have been observed given a null hypothesis that a given treatment and the baseline have identical true underlying conversion rates/performance. 
 

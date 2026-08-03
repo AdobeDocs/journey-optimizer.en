@@ -6,8 +6,34 @@ topic: Content Management
 role: User
 level: Experienced
 exl-id: 00d2fc73-3ac8-421c-982a-0f3ec7e3dacd
+TQID: https://experienceleague.adobe.com/AVN9LN-KzTpcMx-dexxN7i1i2nB4496dzSZ473a3NJE
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
+    internal-label: Web channel
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+    internal-label: Web experience
 ---
 # Use the web non-visual editor {#web-non-visual-editor}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add CSS selector and page head modifications to your web pages with the Adobe Journey Optimizer non-visual editor, without installing a browser extension or loading the web designer.
+
+>[!ENDSHADEBOX]
 
 In addition to the [!DNL Journey Optimizer] visual [web designer](web-visual-editor.md), you can also add modifications to your web pages using a **non-visual editor**.
 
@@ -46,7 +72,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
     Click the **[!UICONTROL More actions]** button next to your modification and select **[!UICONTROL Info]** to display its details. You can also **[!UICONTROL Delete the modification]** if needed.
 
-    ![](assets/web-non-visual-editor-ex-more.png){width="50%" align="left"}
+    ![](assets/web-non-visual-editor-ex-more.png){width="50%"}
 
     >[!NOTE]
     >
@@ -57,7 +83,7 @@ To author your web experiences with the non-visual editor, follow the steps belo
 
 1. In addition, you can select any element of your website and track the clicks on that element. To enable click tracking, and define the actions to track, click the second icon on the left rail, as shown below:
     
-    ![](assets/web-campaign-click.png){width="50%" align="left"}
+    ![](assets/web-campaign-click.png){width="50%"}
 
     Use the **Add Component** button to select a new action to track. Learn more about click tracking usage in [this section](monitor-web-experiences.md#use-click-tracking).
 

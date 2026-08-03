@@ -10,7 +10,7 @@ exl-id: e77acb57-66a5-49cc-b98b-84886d6736e3
 
 The Configure Code-Based Channel section in Adobe Journey Optimizer helps you unlock powerful personalization capabilities by enabling code-driven delivery of tailored experiences across web, mobile, and other platforms. You’ll learn how to set up surfaces specific app locations where content is rendered and explore methods like client-side, server-side, and hybrid implementations to suit your needs. Dive into topics like deduplication for decisioning logic and platform-specific configurations, gaining the knowledge to create flexible, data-driven interactions that adapt to your users' behavior. Whether you're an admin or developer, this guide equips you to optimize engagement with precision and control.
 
-## Configure Code-Based Channel
+## Configure code-based channel
 
 :::: landing-cards-container
 :::

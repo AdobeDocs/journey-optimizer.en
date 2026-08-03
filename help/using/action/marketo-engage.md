@@ -9,8 +9,43 @@ role: Developer, Admin
 level: Intermediate
 keywords: marketo, marketo engage integration
 exl-id: 70d1ef5a-743b-4362-bb65-93a8c996209f
+TQID: https://experienceleague.adobe.com/-aRINahKmp9bI1tyW-XA-LzZOFeoEPXpWoH8JydG6Rk
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
+    internal-label: Action configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+    internal-label: Data integration
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Integrate with Marketo Engage {#integrating-with-marketo-engage}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure and use the Marketo Engage custom action so you can sync person and custom object data from your journeys into Marketo Engage.
+
+>[!ENDSHADEBOX]
 
 Embark on a journey of seamless data integration with Marketo Engage. A specific custom action is available in your journeys to integrate Adobe Journey Optimizer and Marketo Engage. This custom action supports the ingestion of two key data types:
 
@@ -33,15 +68,15 @@ In Journey Optimizer, you must configure a custom action for Marketo Engage. Fol
 1. Select **[!UICONTROL Configurations]** in the ADMINISTRATION menu section. 
 1. In the  **[!UICONTROL Actions]** section, click **[!UICONTROL Create Action]**. The action configuration pane opens on the right side of the screen.
 1. Enter Name, Description, and select **Adobe Marketo Engage** as **Action type**
-  ![](assets/engage-customaction-creation.png){width="40%" align="left"}
+  ![](assets/engage-customaction-creation.png){width="40%"}
 1. Click the **Edit payload** icon for your **Request** and **Response** payloads.
 1. For both, compose your payload and paste it in the dedicated popup.
-  ![](assets/engage-customaction-payload.png){width="70%" align="left"}
+  ![](assets/engage-customaction-payload.png){width="70%"}
 1. Inspect and configure payload values
 
     Note: To pass values dynamically, for each field change **Constant** to **Variable**.
   
-    ![](assets/engage-customaction-payload-fields.png){width="70%" align="left"}
+    ![](assets/engage-customaction-payload-fields.png){width="70%"}
 
 1. Click **Save** in the Field configuration screen, then **Save** your custom action.
 
@@ -114,4 +149,4 @@ To use it, follow these steps:
 
 1. In the **Request parameters** section, click the **Edit** icon for each of the parameters and select the dynamic values that you have configured in the payload.
 
-  ![](assets/engage-use-canvas.png){width="70%" align="left"}
+  ![](assets/engage-use-canvas.png){width="70%"}

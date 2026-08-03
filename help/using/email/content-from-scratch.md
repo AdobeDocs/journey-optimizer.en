@@ -9,8 +9,45 @@ role: User
 level: Beginner, Intermediate
 keywords: content, editor, email, start
 exl-id: 151594f2-85e4-4c79-9c15-334fbd3768c4
+TQID: https://experienceleague.adobe.com/mDgavy5F5CYnLmKBh84OSXFl-BHE82t-diUX6UXU27k
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: c41e8697-e629-4c38-96b3-564faaa17acf
+    internal-label: Dynamic content
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Design content from scratch with the Email Designer {#content-from-scratch}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design email content from scratch in the Adobe Journey Optimizer Email Designer by adding structures and content components, then personalizing and previewing your email.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ac_structure_components_email"
@@ -67,7 +104,7 @@ To start building your content, follow the steps below:
     ![](assets/email_designer.png)
 
 
-1. Accelerate your email creation with AI Assistant and generate complete email content with text and images using [AI Assistant for full content generation](../content-management/generative-full-content.md).
+1. Accelerate your email creation with Generate Content and generate complete email content with text and images using [Generate full content with AI](../content-management/generative-full-content.md).
 
 1. Start designing your content by drag and dropping **[!UICONTROL Structures]** into the canvas to define the layout of your email.
 
@@ -117,7 +154,7 @@ To start building your content, follow the steps below:
     >
     >You cannot revert back to the visual designer for this email after switching to the code editor.
 
-1. Once your content is ready, click the **[!UICONTROL Simulate content]** button to check rendering. You can choose the desktop or mobile view. Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
+1. Once your content is ready, use either simulation method to check rendering. You can choose the desktop or mobile view. Detailed information is available in the [Content Management](../content-management/preview-test.md) section.
 
     ![](assets/email_designer_simulate_content.png)
 

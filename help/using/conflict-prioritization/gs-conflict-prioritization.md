@@ -4,8 +4,41 @@ description: Learn how to leverage Journey Optimizer conflict & prioritization t
 role: User
 level: Beginner
 exl-id: 9dc0cd89-d29a-42d2-a73f-d95f9c39c86e
+TQID: https://experienceleague.adobe.com/vx-CmsYwj7QyN2sVMrpJ9VUNDgnXq8qt1nT9lHOFV3s
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization
+subfeature_v2:
+  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
+    internal-label: Business rules
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
 ---
 # Conflict management & prioritization {#conflict-prioritization}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how conflict detection, priority scores, and rule sets work together so you can avoid overlapping communications and control how often customers are messaged.
+
+>[!ENDSHADEBOX]
 
 In Journey Optimizer, managing the volume and timing of campaigns and journeys is essential to avoid overwhelming customers with too many interactions. Conflict management and prioritization tools help you deliver thoughtful, well-timed communications—preventing customer fatigue and ensuring the right messages reach your audience. By using conflict detection, priority scores, and rule sets, you can streamline campaigns and journeys to avoid overlaps and balance frequency across channels.
 
@@ -65,4 +98,6 @@ Rule sets allow you to **group together multiple rules** and apply them to the j
 * **[Journey capping & arbitration](journey-capping.md)** - Set up journey-level capping rules and arbitration.
 * **[Frequency capping by channel](channel-capping.md)** - Set channel-level frequency caps to prevent over-messaging.
 * **[Set quiet hours](quiet-hours.md)** - Define time-based exclusions for message delivery.
+* **[Rank journeys using formulas](journey-ranking-formulas.md) and [AI models](journey-ai-models.md)** - Learn how to build formulas and AI models to rank journeys when caps apply.
 * **[Conflict management tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Step-by-step video tutorials.
+* **[Journey Optimizer use cases](../building-journeys/jo-use-cases.md)** - Browse practical patterns, including frequency capping and journey suppression logic.

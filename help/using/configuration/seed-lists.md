@@ -9,8 +9,43 @@ role: User
 level: Intermediate
 keywords: seed list, seedlist, seed, configuration
 exl-id: 0172f6bc-da8b-4a83-a0fc-4ed41324568f
+TQID: https://experienceleague.adobe.com/eec0MMgNbimonw-XcC7mA39iPu36GJ5WDqfy0rLx4ZY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Use seed lists {#seed-lists}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create and use seed lists in Adobe Journey Optimizer to automatically include internal seed addresses in your email deliveries for monitoring and mailing list protection.
+
+>[!ENDSHADEBOX]
 
 Seed lists in [!DNL Journey Optimizer] enable you to automatically include specific seed addresses in your deliveries.
 
@@ -51,7 +86,8 @@ To access the seed lists already created, go to **[!UICONTROL Administration]** 
 <!--
 >[!CAUTION]
 >
->Permissions to view, export and manage the seed lists are restricted to [Journey Administrators](../administration/ootb-product-profiles.md#journey-administrator). Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).-->
+>Permissions to view, export and manage the seed lists are restricted to [Journey Administrators](../administration/ootb-product-profiles.md#journey-administrator). Learn more about managing [!DNL Journey Optimizer] users' access rights in [this section](../administration/permissions-overview.md).
+-->
 
 >[!CAUTION]
 >

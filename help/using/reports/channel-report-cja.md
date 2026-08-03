@@ -8,8 +8,41 @@ topic: Content Management
 role: User
 level: Intermediate
 exl-id: 393f02c0-f54c-4222-b668-0931b67590ce
+TQID: https://experienceleague.adobe.com/OJek9bJ53fdDbGpGNpbRR9X-kD9zkQnDRvppsevqO44
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a9f73820-6899-47c2-a597-3fec28ab756a
+    internal-label: Reporting
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+subfeature_v2:
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
+  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
+    internal-label: Deliverability
+  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
+    internal-label: Metrics catalog
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
 ---
 # Overview report {#channel-report-cja}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Overview report to analyze unified traffic and engagement metrics across all your campaigns and journeys, with dedicated tabs for journeys, campaigns, channels, journey capping rule sets, and optimization models.
+
+>[!ENDSHADEBOX]
 
 The Overview report offers users a thorough summary of traffic and engagement metrics for all campaigns and journeys within your environment. These metrics are combined to present unified values for actions coming from different channels, encompassing various campaigns and journeys.
 
@@ -63,6 +96,8 @@ By clicking on the name of any journey listed in this table, you can easily expl
 
 +++ Learn more about Journey metrics
 
+* **[!UICONTROL Journey Engagement]**: Total number of unique individuals who received messages sent through the journey, representing distinct profiles that reached a designated action point in the journey.
+
 * **[!UICONTROL Journey Enters]**: Total number of individuals who reached the entry event of the journey.
 
 * **[!UICONTROL Journey Exits]**: Total number of individuals who exited the journey.
@@ -93,6 +128,10 @@ By clicking on the name of any campaign listed in this table, you can easily exp
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your messages.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
 +++
 
 ## Channels {#channel}
@@ -115,6 +154,10 @@ The **[!UICONTROL Channels]** table provides a detailed breakdown of your profil
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your messages.
 
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
+
 +++
 
 ### Outbound errors
@@ -129,7 +172,7 @@ The **[!UICONTROL Outbound errors]** table empowers you to pinpoint the precise 
 
 The **[!UICONTROL Outbound exclusions]** table present a comprehensive view of the different factors that resulted in the exclusion of user profiles from the targeted audience, resulting in the message not being received.
 
-## Journey Capping and Conflicts {#rule-sets}
+## Journey capping and conflicts {#rule-sets}
 
 The **[!UICONTROL Journey Capping and Conflicts]** table provides insights into how journey arbitration rule sets are performing, showing journey entrances and exclusions based on the capping rules and priority scores applied to your journeys.
 
@@ -150,6 +193,8 @@ The **[!UICONTROL Exclusions]** column shows the number of profiles that were ex
 * **Lower priority**: The cap has not been reached, but other higher priority journeys meet the constraints. The profile was excluded from this journey and entered a higher priority journey instead.
 
 +++
+
+To investigate these exclusions at the Data Lake level using Adobe Experience Platform Query Service, see [Business rules queries](query-examples.md#business-rules-queries).
 
 ➡️ [Learn more about journey capping & arbitration](../conflict-prioritization/journey-capping.md)
 

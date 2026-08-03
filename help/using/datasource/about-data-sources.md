@@ -9,8 +9,43 @@ role: Developer, Admin
 level: Intermediate, Experienced
 keywords: data, source, journey, platform
 exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
+TQID: https://experienceleague.adobe.com/eG1QcfpHtxpabUt5e7RZiMIpSAJD6Z6bjO-4wtZEUOg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: dd51b532-b93f-4bcf-8dbf-0d007f593aca
+    internal-label: Data source configuration
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Get started with data sources {#about-data-sources}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand what data sources are and how to choose the right data access strategy so you can bring additional data into your journeys for conditions, personalization, and timing.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_data_source_list"
@@ -22,7 +57,7 @@ exl-id: e0cb261f-7cf7-42de-8e56-576492e3b5cc
 
 The data source configuration allows you to define a connection to a system to retrieve additional information that will be used in your journeys, for:
 
-* [condition definition](../building-journeys/condition-activity.md)
+* [condition definition](../building-journeys/conditions.md)
 * parameter and personalization data in [actions](../action/action.md)
 * [custom wait definition](../building-journeys/wait-activity.md#custom)
 * [time zone definition](../building-journeys/timezone-management.md)
@@ -59,6 +94,12 @@ Connect directly to an external API at journey runtime without persisting data i
 
 Learn more about [custom actions](../action/action.md) and [custom action responses](../action/action-response.md).
 
+>[!TIP]
+>
+>This option is a good fit if you answer **yes** to both questions:
+>* Is the data only useful inside the journey context and not needed elsewhere? If the data is also needed for audiences or other channels, consider Options 2 or 3.
+>* Is the external system accessible through an API endpoint that returns the required attributes? If not, you will need to ingest the data into the Data Lake first.
+
 **Option 2 — Dataset in Data Lake, not enabled for Profile**
 
 Ingest data into a dataset to trigger and personalize journeys based on contextual event data, without contributing to the Real-Time Customer Profile. Best suited when:
@@ -66,12 +107,26 @@ Ingest data into a dataset to trigger and personalize journeys based on contextu
 * Records contain an identity field usable to access profiles already stored in Experience Platform.
 * The data is not needed for audience creation or identity stitching outside of Journey Optimizer.
 
+>[!TIP]
+>
+>This option is a good fit if you answer **yes** to both questions:
+>* Do records contain an identity field that can be used to access profiles already stored in Experience Platform? If not, journeys will not be able to access and deliver to profiles.
+>* Is the data NOT needed for [audience](../audience/about-audiences.md) creation or identity stitching outside of Journey Optimizer? If it is, use Option 3 instead.
+
 **Option 3 — Profile-enabled dataset in Data Lake**
 
 Ingest data into a [profile-enabled dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#enable-profile){target="_blank"} to create audiences, enrich identity graphs, and leverage data across multiple journeys and RT-CDP destinations. Best suited when:
 
 * The data is useful for audience definitions used in channels beyond Journey Optimizer.
 * The data contains multiple identities that contribute to richer, stitched profile fragments.
+
+>[!CAUTION]
+>
+>**Before you enable a dataset for Profile**, assess the following areas:
+>* **Data synchronization** — External databases must be synchronized, with alerts in place to identify ingestion failures.
+>* **[Profile guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails){target="_blank"}** — Profile-specific guardrails apply in addition to the [general data ingestion guardrails](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails){target="_blank"} for Experience Platform.
+>* **Identity integrity** — Identity data in your source systems must be carefully planned to maintain healthy identity graphs.
+>* **Data Lake utilization** — Overall storage consumption, table relationships, and addressable profiles must be assessed before ingestion.
 
 | | Data persisted in Data Lake | Dataset enabled for Profile |
 | --- | --- | --- |

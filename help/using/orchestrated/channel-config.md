@@ -5,8 +5,29 @@ title: Configure your Channel configuration
 description: Learn how to configure your Channel configuration
 version: Campaign Orchestration
 exl-id: 6793e9b8-06ca-403b-8cb0-3bcaef089837
+TQID: https://experienceleague.adobe.com/unthUbZA8ZMksa2MlgVDbuON-lpr70-v21JZVGyIc3U
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 # Configure your Channel configuration {#channel-configuration}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to set up a channel configuration for Orchestrated campaigns by defining the delivery level, target dimension, and execution address, and how to add URL tracking parameters to your links.
+
+>[!ENDSHADEBOX]
 
 After setting up your [Target Dimension](target-dimension.md), you need to configure your **[!UICONTROL Channel Configuration]** and define the appropriate **[!UICONTROL Execution Details]**. This allows you to define :
 

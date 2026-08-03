@@ -10,6 +10,31 @@ role: User
 level: Intermediate
 exl-id: 81d07ec8-e808-4bc6-97b1-b9f7db2aec22
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/B33mvmBY4p0K43oK-NeaWGfbwhvHMyiLkM7dhxT8-WI
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a4cb03e1-327e-499d-9de8-e0c0db8a63a2
+    internal-label: Decision capabilities
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+subfeature_v2:
+  - id: a7a194a0-75e2-4913-8a83-14714fbf68e6
+    internal-label: Decisioning API
+  - id: eb547372-2a95-4d13-b0fd-f720c9895880
+    internal-label: Edge Decisioning
 ---
 # Create AI models {#ai-rankings}
 
@@ -75,17 +100,19 @@ To create an AI model, follow the steps below:
 
     >[!NOTE]
     >
-    >You can select up to 5 audiences.
+    >You can select up to 50 audiences.
 
 1. Save and activate the AI model.
 
     ![](../assets/ai-ranking-save-activate.png)
 
-<!--At this point, you must have:
+<!--
+At this point, you must have:
 
 * created the AI model,
 * defined which type of event you want to capture - offer displayed (impression) and/or offer clicked (conversion),
-* and in which dataset you want to collect the event data.-->
+* and in which dataset you want to collect the event data.
+-->
 
 Now each time an offer is displayed and/or clicked, you want the corresponding event to be automatically captured by the **[!UICONTROL Experience Event - Proposition Interactions]** field group using the [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/web-sdk-faq.html#what-is-adobe-experience-platform-web-sdk%3F){target="_blank"} or Mobile SDK.
 

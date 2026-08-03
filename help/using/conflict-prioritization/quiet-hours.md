@@ -9,8 +9,39 @@ role: User
 level: Intermediate
 keywords: message, frequency, rules, pressure
 exl-id: defebd53-fa80-4720-acdc-0f41ceb00214
+TQID: https://experienceleague.adobe.com/I-zCSU3tp4n-i-EEkx118svN7R9bfUh0phCB-B5ZZ5Q
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: fd59660e-de8a-4bfb-85dc-7fa546030c49
+    internal-label: Conflict & prioritization
+subfeature_v2:
+  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
+    internal-label: Business rules
+  - id: f3fe4813-f254-4f8f-99cc-24bd67f119e1
+    internal-label: Rules set configuration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
 ---
 # Set quiet hours {#quiet-hours}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Define time-based exclusions for email, SMS, push, and WhatsApp so you can avoid messaging customers at the wrong times and respect their preferences and compliance requirements.
+
+>[!ENDSHADEBOX]
 
 ## What are quiet hours 
 
@@ -164,7 +195,6 @@ Once your journey or campaigns has been activated and executed, you can view the
 
 
 <!--
-
 >[!TAB Apply Quiet hours to custom actions]
 
 1. Open your journey and add or select a custom action in the canvas.
@@ -178,7 +208,6 @@ Once your journey or campaigns has been activated and executed, you can view the
    >Only [activated](#activate-rule) rule sets display in the list.
 
 1. Activate your journey.
-
 -->
 
 

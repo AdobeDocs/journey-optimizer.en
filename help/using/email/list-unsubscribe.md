@@ -9,8 +9,42 @@ role: Admin
 level: Experienced
 keywords: settings, email, configuration
 exl-id: c6c77975-ec9c-44c8-a8d8-50ca6231fea6
+TQID: https://experienceleague.adobe.com/WyaT1gRFAeGUCWn74PC3qyRpLn3hHMOniVbzifStsxA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # List unsubscribe{#list-unsubscribe}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to enable and configure the List-Unsubscribe header so recipients can opt out directly from their inbox using a mailto address or a one-click unsubscribe URL.
+
+>[!ENDSHADEBOX]
 
 <!--Do not modify - Legal Review Done -->
 

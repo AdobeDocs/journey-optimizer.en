@@ -10,23 +10,65 @@ level: Intermediate
 keywords: journey, message, push, sms, email, in-app, web, content card, code-based experience
 exl-id: 0ed97ffa-8efc-45a2-99ae-7bcb872148d5
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/MK5SCefAZ1P2CqX-Y3TmweUyfUI297edZXCMAZSvhT0
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
+    internal-label: Action configuration
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
+    internal-label: Action activities
+  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
+    internal-label: Business rules
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Use the Action activity {#add-a-message-in-a-journey}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Action activity to deliver content from the journey canvas through a single unified activity that covers Email, Push, SMS, in-app, web, code-based experiences, and content cards.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_action_activity"
 >title="Action activity"
 >abstract="The **Action** activity lets you configure a single native channel action and multiple inbound activities with the ability to add optimization to any built-in channel action."
 
-The **Action** activity is the single entry point for all channel actions in the journey canvas.
+The **Action** activity is the single entry point for delivering content to your customers from the journey canvas. Instead of choosing from a separate activity for each channel, you drag a single **[!UICONTROL Action]** activity onto the canvas and select the channel you want to use.
 
-It replaces the previous individual built-in channel activities and consolidates Email, Push, SMS, In-app, Web, Code-based experience, and Content Card into one unified activity type.
+It consolidates all legacy native built-in channels — Email, Push, SMS, In-app, Web, Code-based experience, and Content Card — into one unified activity type, replacing the individual channel activities used previously.
 
-Use it to:
+Use the **Action** activity to:
 
 * Configure any built-in channel action from a single, streamlined interface.
-* Build multi-action inbound action groups.
-* Apply optimization to any channel action.
+* Combine several inbound experiences into one [multi-action group](#multi-action).
+* Add multiple outbound channels to a single action and use [channel optimization](channel-optimization.md) to automatically select the best channel per customer (Limited Availability).
+* Apply [optimization](../content-management/gs-message-optimization.md), [multilingual content](../content-management/multilingual-gs.md), and channel-specific settings to any action.
 
 >[!NOTE]
 >
@@ -45,6 +87,27 @@ Legacy native channel activities are also preserved in these cases:
 * **Copy and paste legacy activities in a journey** — Pasted activities remain legacy activities. You can edit and publish them as is; no migration is required.
 
 ## Add a built-in channel action to a journey  {#add-action}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_auto_wait"
+>title="Automatic wait node"
+>abstract="For inbound channel actions (In-app message, Web, Content card, and Code-based experience), a **Wait** node is automatically inserted after the action (3 days by default). This gives profiles time to view the inbound experience before the journey continues to the next step."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_optimization"
+>title="Optimization"
+>abstract="The **Optimization** section adds content experiments, targeting rules, or both to a channel action. It lets you test variants and deliver the most effective content to each audience member."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/optimize-activity/optimize" text="Use the Optimize activity"
+
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_multilingual"
+>title="Multilingual"
+>abstract="The **Multilingual** section delivers the channel action content in multiple languages within a single journey. A language settings configuration defines the supported locales and the default language for this action."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-multilingual/multilingual-gs" text="Get started with multilingual content"
+
 
 To add a built-in channel action to your journey using the **[!UICONTROL Action]** activity, follow the steps below.
 
@@ -72,6 +135,12 @@ To add a built-in channel action to your journey using the **[!UICONTROL Action]
 
 1. If you selected an inbound channel, you can add multiple actions. [Learn more](#multi-action)
 
+1. If you selected an outbound channel (Email, Push, SMS), you can add multiple channels and use channel optimization to automatically select the best channel per customer. [Learn more](channel-optimization.md)
+
+    >[!AVAILABILITY]
+    >
+    >This capability is available in Limited Availability. Contact your Adobe representative to enable it for your organization.
+
 1. Configure your activity according to the selected channel. Detailed configuration guidelines are available in the links below.
    
    * Learn the detailed steps to create your outbound action as follows:
@@ -96,11 +165,11 @@ To add a built-in channel action to your journey using the **[!UICONTROL Action]
       <p>
       </td>
       <td>
-      <a href="../sms/create-sms.md">
+      <a href="../mobile/create-mobile-message.md">
       <img alt="Validation" src="../assets/do-not-localize/sms.jpg">
       </a>
       <div>
-      <a href="../sms/create-sms.md"><strong>Create text messages (SMS/MMS)</strong></a>
+      <a href="../mobile/create-mobile-message.md"><strong>Create Mobile messages (SMS/RCS/MMS)</strong></a>
       </div>
       <p>
       </td>
@@ -232,13 +301,13 @@ For in-app messages, you can use the **[!UICONTROL Edit triggers]** button to ch
 >[!CONTEXTUALHELP]
 >id="ajo_multi_action_journey"
 >title="Add multiple inbound actions"
->abstract="You can select several inbound actions inside a single journey. This capability enables you to deliver multiple Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, each action containing a specific content."
+>abstract="A single journey can include several inbound actions. This capability enables you to deliver multiple Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, each action containing a specific content."
 
 To simplify your journey orchestration, you can define several inbound actions inside a single journey action.
 
 >[!NOTE]
 >
->This capacity is only available for inbound channels. Currently outbound channels such as Email are not supported.
+>This capacity is available for inbound channels. For outbound channels (Email, Push, SMS), use [channel optimization](channel-optimization.md) to add multiple channels and automatically select the best channel per customer.
 
 This capacity enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple journey actions. It makes the deployment of your journey easier and allows for smoother reporting, with all the data consolidated into one single journey.
 
@@ -302,3 +371,47 @@ Instead of using the built-in message capabilities, you can use custom actions t
 
    * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
    * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to use the unified Action activity in the journey canvas to configure built-in channel actions (email, push, SMS, in-app, web, content card, code-based experience), build multi-inbound-action groups, and apply optimization or multilingual settings.
+
+**Intents:**
+* Add a built-in channel action (email, push, SMS, in-app, web, content card, code-based experience) to a journey using the Action activity
+* Configure a multi-action group to deliver multiple inbound actions simultaneously from a single journey node
+* Apply frequency capping rules to an outbound channel action to prevent message fatigue
+* Update message content in a live journey without republishing
+* Connect a third-party messaging system to a journey using custom actions
+* Enable Rapid delivery mode for high-volume urgent push notifications
+
+**Glossary:**
+* **Action activity**: The unified journey canvas activity that serves as the single entry point for all built-in channel actions, replacing individual legacy channel activities *(product-specific)*
+* **Multi-action**: A configuration within a single Action activity node that allows up to 10 inbound channel actions to be delivered simultaneously *(product-specific)*
+* **Rapid delivery mode**: An add-on that enables very fast, high-volume push message sending for time-critical alerts *(product-specific)*
+* **Automatic Wait node**: A 3-day Wait activity automatically inserted after each inbound channel action to give profiles time to view the experience before the journey advances *(product-specific)*
+* **Priority score**: A value assigned to a journey action to determine which inbound experience takes precedence when multiple actions compete for the same channel configuration *(product-specific)*
+
+**Guardrails:**
+* Legacy individual channel activities (Email, Push, SMS, In-app, Web, Code-based experience, Content Card) are deprecated as of the March 2026 release; existing journeys continue to work without migration
+* Multi-action is only available for inbound channels; outbound channels such as Email are not supported in multi-action groups
+* A multi-action group supports a maximum of 10 inbound actions
+* In a live journey, personalization attributes (profile attributes and contextual data) cannot be changed; only message content can be updated
+* In-app triggers cannot be modified in a live journey
+
+**Terminology:**
+* Canonical name: Action activity — Acronym: none — variants: channel action, message activity, built-in channel action
+* Synonyms: "Action activity" = "channel action activity"
+* Do not confuse: "Action activity" ≠ "custom action" — the Action activity uses built-in native channels, while a custom action integrates with a third-party system via API
+
+**FAQ:**
+* **Q: What channels are available in the Action activity?** — Email, Push, SMS/RCS/MMS, In-app, Web, Code-based experience, and Content Card.
+* **Q: Can I send to multiple inbound endpoints in the same journey node?** — Yes, using the Multi action type you can add up to 10 inbound actions (Code-based experience, In-app, Content Card, Web) in a single Action activity node.
+* **Q: What happens to journeys that use the deprecated legacy channel activities?** — They continue to work without any changes; no migration is required.
+* **Q: Can I change the email subject line of a live journey?** — You can update message content in a live journey, but you cannot change personalization attributes or contextual data used in that content.
+* **Q: How do I apply frequency capping to a channel action?** — Use the Business rules drop-down in the action configuration to select a rule set that applies capping rules for the selected channel.
+
++++

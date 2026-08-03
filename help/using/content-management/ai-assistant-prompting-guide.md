@@ -1,14 +1,49 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: AI Assistant content prompting guide
+title: Generate content prompting guide
 description: Learn how to craft effective prompts for AI-powered content generation using the CO-STAR framework to create high-converting, brand-aligned marketing content.
 topic: Artificial Intelligence
 role: User
 level: Intermediate
 exl-id: f931372e-6cf2-4f27-b12a-ed5ca0c1b87b
+TQID: https://experienceleague.adobe.com/SxuygPzpfRd-fvB9fOSZo6JR428cRzLukvbawfYwcFs
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
+subfeature_v2:
+  - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
+    internal-label: AI content generation
 ---
-# AI Assistant prompt best practices {#ai-assistant-prompting-guide}
+# Generate content prompt best practices {#ai-assistant-prompting-guide}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to write effective Generate Content prompts using the prompt assistant and the CO-STAR framework to generate high-converting, on-brand marketing content in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_assistant_prompt"
@@ -16,11 +51,41 @@ exl-id: f931372e-6cf2-4f27-b12a-ed5ca0c1b87b
 >abstract="Explore Journey Optimizer documentation to learn how to create effective prompts that produce high-converting, on-brand marketing content."
 
 This guide helps you structure your requests, communicate intent with clarity, and ensure the AI produces messaging that aligns with your brand guidelines, audience needs, and campaign goals.
-Learn how to write effective prompts that enable AI Assistant to generate high-quality, on-brand marketing content tailored to your objectives. 
+Learn how to write effective prompts that enable you to use AI to generate high-quality, on-brand marketing content tailored to your objectives. 
+
+## Use the Prompt assistant {#prompt-assistant}
+ 
+The prompt assistant helps you strengthen your opening prompt so content generation needs less back-and-forth. From that first input, you may get suggestions, a suggested rewrite, optional enhancements, and clarifying questions. Your answers refine the prompt that is used to generate the content.
+
+1. From the **[!UICONTROL Generate Content]** menu, open **[!UICONTROL Prompt assistant]** to refine your prompt before you generate content.
+
+    ![](assets/prompt-assistant-1.png)
+
+1. Enter your prompt. Suggestions may show inline after your text and in a list below. Click **[!UICONTROL Try this]** on a suggestion to replace your current prompt with that version.
+
+    ![](assets/prompt-assistant-2.png)
+
+1. Click **[!UICONTROL Analyze prompt]** when you want the prompt assistant to review your text.
+
+1. The message area summarizes issues or gaps the assistant found in your prompt. If a suggested rewrite appears, review it and apply it when you want that wording.
+
+    ![](assets/prompt-assistant-3.png)
+
+1. Answer clarifying questions to give the assistant the context it needs. Your answers are incorporated into the refined prompt used for generation.
+
+    Click **[!UICONTROL Update context]**, then click **[!UICONTROL Analyze prompt]** again if you want another pass.
+
+    ![](assets/prompt-assistant-4.png)
+
+1. After you review the assistant feedback and are satisfied with your prompt, click **[!UICONTROL Use this prompt]** to apply it and continue with content generation.
+
+    ![](assets/prompt-assistant-5.png)
+
+Following this workflow establishes objectives and required detail in the prompt prior to generation, which tends to improve relevance and reduce subsequent revision.
 
 ## Use the CO-STAR framework {#costar-framework}
 
-For best results with AI Assistant, organize your prompts using the CO-STAR framework. This structured approach ensures AI understands exactly what you need.
+For best results with Generate Content, organize your prompts using the CO-STAR framework. This structured approach ensures AI understands exactly what you need.
 
 | Component | What it means | Why it matters |
 |-|-|-|
@@ -291,9 +356,9 @@ Once content is generated, use the **Refine** feature to iterate and enhance it 
 | **Change Tone** | Adapt content for different audiences | "Change tone to more casual for younger demographic" |
 | **Transcreate** | Cultural adaptation beyond translation | "Transcreate this campaign for the Japanese market" |
 
-## Scenario-Based Prompt Examples
+## Scenario-Based prompt examples
 
-### Based on Content Type {#content-type-practices}
+### Based on content type {#content-type-practices}
 
 <table style="table-layout: fixed; border: 0;">
 <thead>
@@ -322,7 +387,7 @@ Once content is generated, use the **Refine** feature to iterate and enhance it 
 </tbody>
 </table>
 
-### Based on Industry-Specific Approaches {#industry-approaches}
+### Based on industry-specific approaches {#industry-approaches}
 
 <table style="table-layout: fixed; border-collapse: collapse; border: 0;">
 <thead>

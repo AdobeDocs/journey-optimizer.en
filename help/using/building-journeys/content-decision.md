@@ -10,8 +10,41 @@ level: Intermediate
 keywords: activity, decisioning, content decision, decision policy, canvas, journey
 exl-id: 6188644a-6a3b-4926-9ae9-0c6b42c96bae
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/1tZd4-NYBxu1iuUZGMKQ6DIXFxRpX0FARTEPpWqxzjY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
+    internal-label: Action configuration
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Content decision activity {#content-decision}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the content decision activity to include personalized offers in your journeys and deliver them to eligible profiles.
+
+>[!ENDSHADEBOX]
 
 [!DNL Journey Optimizer] allows you to include offers in your journeys through the dedicated **Content decision** activity in the journey canvas. You can then add other activities (such as [custom actions](../action/about-custom-action-configuration.md)) to your journeys to target your audiences with these personalized offers.
 
@@ -23,7 +56,7 @@ To leverage this capability, create a journey where you add a [content decision 
 
 You can then use the output of the content decision activity in:
 
-* a [condition activity](#add-condition-activity), to move profiles to specific paths based on the offers retrieved;
+* an [Optimize activity with a condition](#add-condition-activity), to move profiles to specific paths based on the offers retrieved;
 
 * a [custom action](#add-custom-action), where you can send those offers to external systems.
 
@@ -75,15 +108,15 @@ You are now ready to leverage the output of this content decision activity in yo
 
 ## Use the output of the content decision activity {#use-content-decision-output}
 
-The output of a content decision can be used in multiple journey activities. For example, you can use a [condition activity](#add-condition-activity) to move profiles to specific branches of your journey, based on the number of offers retrieved for them.
+The output of a content decision can be used in multiple journey activities. For example, you can use an [Optimize activity with a condition](#add-condition-activity) to move profiles to specific branches of your journey, based on the number of offers retrieved for them.
 
 You can also add a [custom action](#add-custom-action) to your journey in order to share the offers from the content decision activity to an external system.
 
-### In a condition activity {#add-condition-activity}
+### In an optimize activity (condition method) {#add-condition-activity}
 
-To leverage the output of a content decision activity, you can add a condition to your journey, where you define expressions to move profiles to specific paths, using data from those offers. Follow the steps below.
+To leverage the output of a content decision activity, add an **[!UICONTROL Optimize]** activity, choose the **[!UICONTROL Condition]** method, and define expressions to move profiles to specific paths using data from those offers. Follow the steps below. For more condition types and options, see [Conditions](conditions.md).
 
-1. From the **[!UICONTROL Orchestration]** category, drop a **[!UICONTROL Condition]** activity into your canvas. [Learn more](condition-activity.md#add-condition-activity)
+1. From the **[!UICONTROL Orchestration]** category, drop an **[!UICONTROL Optimize]** activity into your canvas. [Learn more](optimize.md)
 
 1. (optional) Rename **[!UICONTROL Path1]**, which corresponds to the first expression you define, to a more relevant label.
 
@@ -159,9 +192,11 @@ Below is the full example of a journey using a content decision activity combine
 
 Once the journey is [activated](publish-journey.md):
 
-<!--* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
+<!--
+* Profiles who enter the journey and are eligible for at least one offer are targeted by the custom action.
 
-* If no offer is returned for a profile, they are excluded from the custom action.-->
+* If no offer is returned for a profile, they are excluded from the custom action.
+-->
 
 1. Every time a profile qualifies for that audience, it enters the journey.
 
@@ -227,3 +262,48 @@ For each content decision activity, the step event includes decisioning data at 
   }
 }
 ```
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to configure and use the Content Decision activity in Journey Optimizer journeys to retrieve personalized offers via a decision policy and route or forward them using conditions and custom actions.
+
+**Intents:**
+* Add a Content Decision activity to a journey and configure a decision policy
+* Select and sequence decision items and selection strategies within a decision policy
+* Use the content decision output in an Optimize activity condition to branch profiles based on retrieved offers
+* Forward retrieved offers to an external system using a custom action
+* Inspect decisioning data in journey step events for audit and troubleshooting purposes
+
+**Glossary:**
+* **Content decision activity**: A journey orchestration activity that evaluates a decision policy and retrieves the best eligible offers for each profile *(product-specific)*
+* **Decision policy**: A configuration that specifies which decision items and selection strategies to evaluate, and how many items to return *(product-specific)*
+* **Selection strategy**: A ranked evaluation method used within a decision policy to determine which offers are eligible and how they are scored *(product-specific)*
+* **Proposition**: The output unit of a decision policy execution, containing the selected items and associated scope and ranking metadata *(product-specific)*
+* **listSize function**: An expression editor function used to count the number of items returned by a content decision, e.g. `listSize(@decision{Name.items})>0` *(product-specific)*
+* **Offers catalog schema**: The schema that defines the attributes available on decision items; accessible via the Context node in advanced expression editor mode *(product-specific)*
+
+**Guardrails:**
+* The output of a Content Decision activity cannot be used in native channel activities (email, push, SMS, etc.)
+* The content decision output is only accessible in Advanced mode of the expression editor; it is not available in simple mode
+* Decisioning permissions are required to author a decision policy
+* Consent policy updates take up to 48 hours to take effect for attributes referenced in a decision policy
+* Consent policies are only available to organizations with the Adobe Healthcare Shield or Privacy and Security Shield add-on
+* Restricted data usage labels (DULE) on offer schema attributes can result in governance policy violations
+
+**Terminology:**
+* Canonical name: Content decision activity — Acronym: none — variants: content decision node, decisioning activity
+* Synonyms: "decision policy" = "offer selection policy" ; "proposition" = "decision output"
+* Do not confuse: "Content decision activity" ≠ "native channel action" (content decision retrieves offers but does not deliver them directly; a custom action or condition is needed to act on the output)
+
+**FAQ:**
+* **Q: Can I use the offers returned by a Content Decision activity directly in an email?** — No, the output of a content decision activity cannot be used in native channel activities; you must pass the offers to a custom action to send them to an external system.
+* **Q: How do I check whether any offers were returned for a profile?** — Use the listSize function in the advanced expression editor: `listSize(@decision{ContentdecisionName.items})>0`.
+* **Q: Where do I access content decision output in the expression editor?** — Switch to Advanced mode, unfold the Context node, and navigate to your decision policy to see all available offer catalog schema attributes.
+* **Q: How long does it take for a consent policy update to apply to a decision policy?** — Up to 48 hours after the consent policy is updated.
+* **Q: What decisioning data is available in journey step events?** — Each step event includes exdRequestID, propositionEventType, and an array of propositions — each containing an id, scopeDetails (decision provider, correlationID, decision policy), and an items array with id, name, score, and itemSelection details.
+
++++

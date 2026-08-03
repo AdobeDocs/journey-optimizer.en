@@ -5,8 +5,18 @@ feature: Preview, Proofs
 role: User
 level: Beginner
 exl-id: 736fc861-17f2-47b7-8635-9afd261ea3a8
+feature_v2: []
+subfeature_v2:
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
 ---
 # Preview & test your content {#preview-test}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview and test your message content in Adobe Journey Optimizer using test profiles or sample input data to verify rendering, personalization, and accuracy before sending.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ac_preview_testprofiles"
@@ -22,7 +32,7 @@ Once your content has been defined, you can preview its content before sending t
 
 You can also send test deliveries of your email messages to specific recipients or subscribers for testing and validation, and check their rendering in popular desktop, mobile and web-based clients. Additionally, you can evaluate general content quality aspects such as readability and effectiveness. [Learn more about content quality validation](brands-score.md#validate-quality)
 
-All these actions can be performed using the **[!UICONTROL Simulate Content]** button, which is accessible from the edit content screen of your message, or from the email and web designers for the email and web channels.
+All these actions can be performed using the **[!UICONTROL Simulate content]** button, which is accessible from the edit content screen of your message, or from the email and web designers for the email and web channels. Click **[!UICONTROL Simulate content]** to test content variations using sample input data. To preview with test profiles, send proofs, or check email rendering, select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown.
 
 ![](../email/assets/email-preview-button.png)
 
@@ -51,6 +61,8 @@ Journey Optimizer provides two experiences to test your content:
     All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.
 
     ➡️ [Simulate content variations](../test-approve/simulate-sample-input.md)
+
+For API-triggered and Action (scheduled) campaigns, you can also send proofs programmatically using the [Simulations API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"}. This is not supported for Orchestrated campaigns.
 
 ## Must-read
 

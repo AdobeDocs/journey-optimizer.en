@@ -8,10 +8,43 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: a93d4dc9-f0e9-400c-b9a4-6cdac84390fd
+TQID: https://experienceleague.adobe.com/OgI9e9LWYpO8nXHQXoDK-y0ys-EpHJzaFRHx9V9pAus
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: e09fc1e6-407c-418f-adc5-e2ffe8b8986e
+    internal-label: LINE channel
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Create a LINE message {#create-line}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Add a LINE action to a journey or campaign and build personalized content, from text and stickers to images, videos, locations, and Flex Messages, so you can engage customers on LINE.
+
+>[!ENDSHADEBOX]
+
 ## Add a LINE message {#create-line-journey-campaign}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_action_line"
+>title="LINE action"
+>abstract="A LINE channel action sends a LINE message to profiles when they reach this step of the journey. The label identifies the activity in the journey canvas, and the action references a LINE configuration that defines the content delivered. The **Optimization** section can include content experiments or targeting rules, the **Multilingual** section can deliver content in multiple languages, and the **Timeout or error** section can define an alternative path if the action fails."
+>additional-url="https://experienceleague.adobe.com/en/docs/journey-optimizer/using/orchestrate-journeys/about-journey-building/journey-action#add-action" text="Get started with channel actions"
 
 Browse the tabs below to learn how to add a LINE message in a campaign or a journey.
 
@@ -94,7 +127,7 @@ To configure your LINE content, follow the steps below.
 
 1. Click **[!UICONTROL Save]** and check your message in the preview.
 
-1. Use the **[!UICONTROL Simulate content]** button to preview your LINE message content and personalized content.
+1. Use **[!UICONTROL Simulate content]** to preview your LINE message content and personalized content. [Learn more](send-line.md)
 
 Once you have performed your tests and validated the content, you can send your LINE message to your audience. These steps are detailed in [this page](send-line.md)
 

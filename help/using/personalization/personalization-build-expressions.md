@@ -10,8 +10,22 @@ level: Intermediate
 mini-toc-levels: 1
 keywords: expression, editor, about, start
 exl-id: 1ac2a376-a3a8-41ae-9b04-37886697f0fc
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: e51e8901-97d9-4f7d-a835-503025a90e32
+    internal-label: Advanced expression editor
+  - id: ac5d9310-7772-40fb-9d78-864562e1bfd6
+    internal-label: Operators
 ---
 # Add personalization {#build-personalization-expressions}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the personalization editor to add, customize, and validate personalization expressions from sources such as profile attributes, audiences, offer decisions, and contextual attributes.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_perso_editor"
@@ -40,48 +54,21 @@ It can also be added in other sections of your content. For example, for [push n
 
 +++Email Designer
 
-When editing email content in the [Email Designer](../email/get-started-email-design.md), you can add personalization in text blocks and in URLs using the icon in the contextual tool bar.
+When editing email content in the [Email Designer](../email/get-started-email-design.md), you can add personalization in most of the text elements using the icon in the contextual tool bar.
 
 ![](assets/perso_insert.png)
 
 +++
 
-+++Offers
-
-You can add personalization when using text-type content in your **offers' representations**. [Learn how to create personalized offers](../offers/offer-library/creating-personalized-offers.md)
-
-+++
-
 +++URLs
 
-Journey Optimizer also allows you to personalize **URLs** in your message.  Personalized URLs take recipients to specific pages of a website, or to a personalized microsite, depending on the profile attributes. URL personalization is available for these types of links: **External link**, **Unsubscription link** and **Opt-Out**.
-
-   Sample personalized URLs:
-
-* `https://www.adobe.com/users/{{profile.person.name.lastName}}` 
-* `https://www.adobe.com/users?uid={{profile.person.name.firstName}}`
-* `https://www.adobe.com/usera?uid={{context.journey.technicalProperties.journeyUID}}`
-* `https://www.adobe.com/users?uid={{profile.person.crmid}}&token={{context.token}}`
+Journey Optimizer also allows you to personalize **URLs** in your messages. Personalized URLs take recipients to specific pages of a website, or to a personalized microsite, depending on the profile attributes. [Learn more](../email/url-personalization.md)
 
 ![](assets/perso-url.png){width="50%"}
 
 >[!NOTE]
 >
->When editing a personalized URL in the personalization editor, helper functions and audiences membership are disabled for security reasons.
->
->Spaces are not supported in the personalization tokens used inside urls.
-
-Journey Optimizer also supports complete/base URL personalization. For example:
-
-```
-<a href="{{profile.social.link}}" />
-<a href="{{profile.social.baseUrl}}/profile" />
-<a href="https://{{profile.social.baseUrl}}/profile" />
-```
-
->[!NOTE]
->
->To enable complete or base URL personalization, contact Adobe and provide your list of accepted domains.
+>URL personalization is available for these types of links: **External link**, **Unsubscription link** and **Opt-Out**.
 
 +++
 
@@ -91,13 +78,19 @@ When creating an email channel configuration, you can define personalized values
 
 +++
 
++++Offers
+
+You can add personalization when using text-type content in your **offers' representations**. [Learn how to create personalized offers](../offers/offer-library/creating-personalized-offers.md)
+
++++
+
 ## Personalization sources {#sources}
 
 The navigation pane lets you select the source for personalization. Available sources are:
 
 * **[!UICONTROL Profile attributes]** : lists all the references associated to the profile schema described in [Adobe Experience Platform Data Model (XDM) documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html){target="_blank"}.
-* **[!UICONTROL Target attributes]** : This folder is specific to Orchestrated campaigns. It contains attributes calculated directly within the campaign canvas. [Learn how to add personalization in Orchestrated campaigns](../orchestrated/activities/channels.md#add-personalization)
-* **[!UICONTROL Audiences]** : lists all the audiences created in Adobe Experience Platform Segmentation service. More information on segmentation available [here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
+* **[!UICONTROL Target attributes]** : This folder is specific to Orchestrated campaigns. It contains attributes calculated directly within the campaign canvas. [Learn how to add personalization in Orchestrated campaigns](../orchestrated/add-personalization.md)
+* **[!UICONTROL Audiences]** : lists all the audiences created in Adobe Experience Platform Segmentation service. Learn more in the [Adobe Experience Platform Segmentation documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html){target="_blank"}.
 * **[!UICONTROL Offer decisions]** : lists all the offers associated to a specific placement. Select the placement then insert the offers in your content. For a complete documentation on how to manage offers, refer to [this section](../offers/get-started/starting-offer-decisioning.md).
 * **[!UICONTROL Contextual attributes]** : when a channel action activity (Email, push, SMS) is used in a journey or campaign, contextual attributes related to events and properties are available for personalization. An example of personalization leveraging contextual attributes is presented in [this section](personalization-use-case.md). Additionally, custom action responses can be used for personalization. [Learn how to use custom action responses in native channels](../action/action-response.md#response-in-channels).
 
@@ -170,6 +163,10 @@ In the navigation pane, additional features are available to help you build your
 * **[!UICONTROL Conditions]** - Leverage conditional rules created in the library to add dynamic content into your messages. This allows you to create multiple variants of your message based on conditions. [Learn how to create dynamic content](../personalization/get-started-dynamic-content.md)
 
 * **[!UICONTROL Fragments]** - Leverage expression fragments that have been created or saved to the current sandbox. A fragment is a reusable component that can be referenced across [!DNL Journey Optimizer] campaigns and journeys. This functionality allows to prebuild multiple custom content blocks that can be used by marketing users to quickly assemble contents in an improved design process. [Learn how to use expression fragments for personalization](../personalization/use-expression-fragments.md)
+
+>[!TIP]
+>
+>Looking for ready-to-use expressions? The **[Personalization recipes](personalization-recipes.md)** page provides copy-paste patterns for the most common use cases: date formatting, countdown timers, conditional fallbacks, time-only display, and more.
 
 Once your personalization expression is ready, you need to have it validated by the personalization editor. Learn more in [this section](../personalization/personalization-build-expressions.md).
 
@@ -277,3 +274,77 @@ HTML: content<br/></td>
 </table>
 
 +++
+
+## Quick reference {#quick-reference}
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+>[!BEGINTABS]
+
+>[!TAB Overview]
+
+**TL;DR**
+
+This page explains how to use the Journey Optimizer personalization editor to select, build, customize, and validate personalization expressions from sources including profile attributes, audiences, offer decisions, and contextual attributes.
+
+**Intents**
+
+* Understand where personalization can be added in Journey Optimizer (messages, Email Designer, URLs, email configuration, offers)
+* Select the appropriate personalization source for an expression
+* Add attributes and build expressions in the editor workspace
+* Use editor tools: Find/Replace, Auto complete, Validate, Pills, Save as fragment
+* Use navigation pane features: Helper functions, Favorites, Conditions, Fragments
+* Validate expressions and resolve common errors
+
+>[!TAB Glossary]
+
+* **Personalization editor**: The central UI tool in Journey Optimizer for building, customizing, and validating personalization expressions; available wherever personalization can be defined. *(product-specific)*
+* **Personalization sources**: The data categories available for building expressions — Profile attributes, Target attributes, Audiences, Offer decisions, and Contextual attributes.
+* **Contextual attributes**: Journey- or campaign-specific data (events, properties, custom action responses) available for personalization only when a channel action is used in a journey or campaign. *(product-specific)*
+* **Pills**: A personalization editor display mode that renders long attribute paths as compact, clickable tokens for improved readability. Available only for profile attributes, contextual attributes, and dynamic media. *(product-specific)*
+* **Auto complete**: An editor feature that automatically suggests and completes code as you type; available only for HTML and Text formats, supporting Profile and Context attributes only. *(product-specific)*
+* **Expression fragment**: A reusable personalization expression component that can be referenced across campaigns and journeys. *(product-specific)*
+* **Fallback text**: A default string displayed when a string-type profile attribute is empty for a given profile; configured per attribute via "Insert with fallback text".
+
+>[!TAB Terminology]
+
+* **Canonical name:** personalization editor
+* **Do not confuse:** Personalization editor (used to build content expressions in messages, emails, push notifications, and offers — supports both Handlebars and PQL syntax) ≠ Advanced expression editor (used in the journey for conditions on data sources and event information, custom wait activities, and action parameters mapping — provides built-in functions and operators that differ from those in the personalization editor)
+* **Do not confuse:** Profile attributes (XDM schema-based, available in all contexts) ≠ Contextual attributes (journey/campaign-specific, only available in that context) ≠ Target attributes (Orchestrated campaigns only)
+* **Do not confuse:** Auto complete for HTML/Text (suggests personalization attribute completions) ≠ native HTML code auto-completion (the editor default when the toggle is disabled)
+
+>[!TAB Guardrails & Limitations]
+
+* Auto complete is available only for HTML and Text formats; it supports Profile and Context attributes only.
+* Pills display mode is available only for profile attributes, contextual attributes, and dynamic media.
+* URL personalization is available for External link, Unsubscription link, and Opt-Out link types only.
+* By default, the attributes pane shows only populated attributes; toggle off "Show only populated attributes" to display all schema attributes.
+* Offers model usage must contain only profile attributes; non-profile attributes in a decision cause a validation error.
+
+>[!TAB FAQ]
+
+**Q: Where can personalization be added in Journey Optimizer?**
+
+In any field with the add personalization icon — including the email subject line, push notification fields (Title, Body, Custom sound, Badges, Custom data), Email Designer text elements, URLs (External link, Unsubscription link, Opt-Out), email configuration subdomains/headers/URL tracking parameters, and offer text-type representations.
+
+**Q: What are the available personalization sources?**
+
+Profile attributes, Target attributes (Orchestrated campaigns only), Audiences, Offer decisions, and Contextual attributes (journey/campaign events and custom action responses).
+
+**Q: How is an expression validated?**
+
+Validation runs automatically when you click Add to close the editor. You can also trigger it manually with the Validate button. Common errors include: path not found (field not in schema), type mismatch (iterating a string as array), invalid Handlebars syntax, and invalid segment definition.
+
+**Q: What does the Pills option do?**
+
+It renders long attribute paths as compact, clickable tokens for better readability in the editor. Available only for profile attributes, contextual attributes, and dynamic media.
+
+**Q: Why do I see only some attributes in the attributes pane?**
+
+By default, the pane shows only populated attributes. Select the settings icon above the search field and toggle off "Show only populated attributes" to display all schema attributes.
+
+>[!ENDTABS]
+
+<!-- ai-section-version: 1 | source-hash: 54973b31 -->

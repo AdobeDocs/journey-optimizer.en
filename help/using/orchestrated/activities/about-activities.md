@@ -5,33 +5,54 @@ title: Work with Orchestrated campaign activities
 description: Learn how to Orchestrated campaign activities
 exl-id: 02f986b2-8200-4e0e-8918-44e528a6a3ec
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/OUKBJeSTaPJKav-NNCCxKZ8esY-62JkdRMmcwoJpZJ0
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
-
 # About Orchestrated campaign activities {#orchestrated-campaign-activities}
 
-Orchestrated campaign activities are grouped into three categories. Depending on the context, available activities may differ. 
+>[!BEGINSHADEBOX]
 
-All activities are detailed in the sections below:
+**On this page:** Discover the targeting, channel, and flow control activities available on the canvas to build cross-channel Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
+Orchestrated campaign activities are grouped into several categories. Depending on the context, available activities may differ. All activities are detailed in the sections below:
 
 * [Targeting activities](#targeting)
+* [Data Management activities](#data-management)
 * [Channel activities](#channel)
 * [Flow control activities](#flow-control)
 
-![List of activities available in the canvas](../assets/orchestrated-activities.png){width="80%" align="left"}
-
+![List of activities available in the canvas](../assets/orchestrated-activities.png){width="80%"}
 
 >[!NOTE]
 >
->* Depending on your licensing model, your permissions and your implementation, available activities may differ.
->
->* The number of activities in an Orchestrated campaign is limited to 500.
+>Depending on your licensing model, your permissions and your implementation, available activities may differ.
 
+## Guardrails and limitations {#activity-guardrails}
+
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities at publication (Email, SMS, Push, or Direct mail). Targeting, Data Management, and flow control activities do not count toward this limit.
+
+* **Canvas activities limit** - The number of activities on the canvas is limited to 500. For maintainability and performance, keep workflows under 100 activities in practice.
+
+See [Guardrails and limitations](../guardrails.md) for all Orchestrated campaign guardrails and limitations.
 
 ## Targeting activities {#targeting}
 
 These activities are specific to targeting. They let you build one or more targets by defining an audience and splitting or combining these audiences using intersection, union or exclusion operations.
 
-![List of targeting activities](../assets/targeting-activities.png){width="40%" align="left"}
+![List of targeting activities](../assets/targeting-activities.png){width="40%"}
 
 Available targeting activities are:
 
@@ -42,6 +63,14 @@ Available targeting activities are:
 * [Enrichment](enrichment.md): Define additional data to process in your Orchestrated campaign. With this activity, you can leverage the inbound transition and configure the activity to complete the output transition with additional data.
 * [Reconciliation](reconciliation.md): Define the link between the data in Journey Optimizer data and the data in a work table, for example data loaded from an external file.
 * [Split](split.md): Segment incoming population into several subsets.
+
+## Data Management activities {#data-management}
+
+These activities let you work with data stored in external files and make it available for targeting, personalization, or downstream activities on the canvas.
+
+Available Data Management activities are:
+
+* [Load file](load-file.md) (Limited Availability): Upload a CSV or TXT file on the canvas and use it to define the campaign audience (file-based targeting) without ingesting the file into Adobe Experience Platform first. To request access, contact your Adobe representative.
 
 ## Channel activities {#channel}
 
@@ -54,16 +83,16 @@ Learn how to [create a channel action in an Orchestrated campaign](channels.md).
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_end"
 >title="End activity"
->abstract="The **End** activity allows you to graphically mark the end of an Orchestrated campaign. This activity has no functional impact and is therefore optional."
+>abstract="The **End** activity marks the end of a branch on the canvas. Optionally, use **External signal** to start a downstream Orchestrated campaign and pass parameters when the branch completes. [Learn more](../trigger-orchestrated-campaign.md#signal-end)"
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_signal"
 >title="External signal"
->abstract="external signal"
+>abstract="Select the downstream Orchestrated campaign to start when this branch ends, and map parameter names and values to send in the signal. The downstream campaign must be set to **Triggered by a signal** and published before this campaign reaches the End activity. [Learn more](../trigger-orchestrated-campaign.md#signal-end)"
 
 The following activities are specific to organizing and executing Orchestrated campaigns. Their main task is to coordinate the other activities.
 
-![List of flow control activities](../assets/flow-control-activities.png){width="20%" align="left"}
+![List of flow control activities](../assets/flow-control-activities.png){width="20%"}
 
 Available flow control activities are:
 
@@ -72,5 +101,4 @@ Available flow control activities are:
 * [Wait](wait.md): Momentarily pause execution of a part of an Orchestrated campaign.
 <!--* [Test](test.md): Enable transitions based on specified conditions.-->
 
->[!NOTE]
->The **End** activity graphically marks the end of an Orchestrated campaign. This activity has no functional impact and is therefore optional
+* **[!UICONTROL End]**: Marks the end of a branch on the canvas. You can optionally use it to send a signal to another Orchestrated campaign that starts on a signal. [Learn more](../trigger-orchestrated-campaign.md#signal-end)

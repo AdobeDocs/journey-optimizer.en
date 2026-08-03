@@ -9,6 +9,19 @@ level: Experienced
 keywords: query, collections, functions, payload, journey
 exl-id: 09b38179-9ace-4921-985b-ddd17eb64681
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/sNFI7l-UMGmRV2wRcvYa56tILLoWFxXeG3N5txgrUiw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 ---
 # Collection management functions {#collection-management-functions}
 
@@ -73,7 +86,7 @@ The **[!UICONTROL all]** function enables the definition of a filter on a given 
 
 **Conceptual example:** Among all the app users, you can get the ones using IOS 13 (boolean expression "app used == IOS 13"). The result of this function is the filtered list containing items matching the boolean expression (example: app user 1, app user 34, app user 432).
 
-In a Data Source Condition activity you can check if the result of the **[!UICONTROL all]** function is null or not. You can also combine this **[!UICONTROL all]** function with other functions such as **[!UICONTROL count]**. For more information, see [Data Source Condition activity](../condition-activity.md#data_source_condition).
+In a Data Source Condition activity you can check if the result of the **[!UICONTROL all]** function is null or not. You can also combine this **[!UICONTROL all]** function with other functions such as **[!UICONTROL count]**. For more information, see [Data Source Condition activity](../conditions.md#data_source_condition).
 
 **Code examples using the LobbyBeacon payload:**
 
@@ -169,3 +182,52 @@ This expression returns the second push notification token of the list.
 ```
 
 The result is `token_2`.
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page documents the `all()`, `first()`, `last()`, and `at()` collection management functions used in the Journey advanced expression editor, illustrated with push notification token payload examples.
+
+**Intents:**
+
+* Filter a collection of event or data source fields using a boolean condition with `all(<condition>)`
+* Count filtered or unfiltered collection elements using `count()` combined with collection functions
+* Retrieve the first or last matching element of a collection using `first()` or `last()`
+* Access a collection element at a specific zero-based index using `at(<index>)`
+* Understand which loop variable (`currentEventField`, `currentDataPackField`, `currentActionField`) applies to each collection context
+
+**Glossary:**
+
+* **all(condition)**: Filters a collection and returns all items matching the given boolean expression *(product-specific)*
+* **first(condition)**: Returns the first (most recent for experience events) element in a collection matching the condition *(product-specific)*
+* **last(condition)**: Returns the last (oldest for experience events) element in a collection matching the condition *(product-specific)*
+* **at(index)**: Returns the element at the specified zero-based index of a collection *(product-specific)*
+* **currentEventField**: Loop variable available only when iterating over event collections *(product-specific)*
+* **currentDataPackField**: Loop variable available only when iterating over data source collections *(product-specific)*
+* **currentActionField**: Loop variable available only when iterating over custom action response collections *(product-specific)*
+
+**Guardrails:**
+
+* Using experience events in journey expressions/conditions is not supported; consider alternative methods such as computed attributes
+* `currentEventField`, `currentDataPackField`, and `currentActionField` are only available inside their respective collection contexts
+* The `all` function is not required to count collection elements — `count()` can be applied directly to the field path
+* When `all()` is called with an empty condition, all elements in the collection are returned
+
+**Terminology:**
+
+* Canonical name: Collection Management Functions — Acronym: none — variants: collection functions, query collection functions
+* Synonyms: "all()" = "collection filter function"; "at()" = "index accessor"
+* Do not confuse: `first()` (most recent experience event) ≠ first inserted element in general lists
+
+**FAQ:**
+
+* **Q: What is the difference between `all()` with an empty condition and `all()` with a condition?** — An empty `all()` returns every element; a condition-based `all()` returns only elements matching that boolean expression.
+* **Q: How do I count push notification tokens without using `all()`?** — Call `count()` directly on the token field path, e.g. `count(@event{LobbyBeacon...pushNotificationTokens.token})`.
+* **Q: Which variable do I use to reference the current element when looping over a data source collection?** — Use `currentDataPackField` inside `all()`, `first()`, or `last()` on data source collections.
+* **Q: How do I get the second item in a collection?** — Use `at(1)` because index 0 is the first element.
+* **Q: Why does `last()` return the oldest experience event?** — Experience events are stored in reverse chronological order, so the last position in the collection corresponds to the oldest event.
+
++++

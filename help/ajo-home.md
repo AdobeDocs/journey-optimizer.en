@@ -22,6 +22,18 @@ Discover the latest Journey Optimizer features and improvements in the Release N
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
+>[!TAB Loyalty Challenges]
+
+Discover how to create and manage **Loyalty Challenges** to engage and reward your most loyal customers with gamification capabilities.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/loyalty-challenges/get-started.md)
+
+>[!TAB Journey Optimizer skills in CX Coworker]
+
+We've added a new documentation page for **Journey Optimizer skills in CX Coworker**, including both **journey-focused** and **loyalty-focused** skills, with guidance and sample prompts.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/start/ajo-coworker-skills.md)
+
 
 >[!TAB Iterate over contextual data]
 
@@ -29,26 +41,12 @@ Learn how to use iteration syntax to display dynamic lists of data from various 
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/personalization/iterate-contextual-data.md)
 
-
->[!TAB Campaign Orchestration]
-
-Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns.
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
-
->[!TAB Quiet Hours]
-
-Quiet hours let you define time-based exclusions for Email, SMS, Push, and WhatsApp channels.
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/conflict-prioritization/quiet-hours.md)
-
-
 >[!ENDTABS]
 
 
 ## Start Exploring {#section-explore}
 
-:::: landing-cards-container
+::::landing-cards-container
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
@@ -129,7 +127,7 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Adobe Journey Optimizer</strong><br/>
-<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Product description</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Security overview (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis/" target="_blank">APIs reference</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schema Dictionary</a>
+<a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html" target="_blank">Tutorials</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html" target="_blank">Product description</a> - <a href="https://www.adobe.com/content/dam/cc/en/security/pdfs/AJO_SecurityOverview.pdf" target="_blank">Security overview (PDF)</a> - <a href="https://developer.adobe.com/journey-optimizer-apis" target="_blank">APIs reference</a> - <a href="https://experienceleague.adobe.com/tools/ajo-schemas/schema-dictionary.html" target="_blank">Journey Optimizer Schema Dictionary</a>
 
 </td>
 <td><strong>Adobe Experience Platform</strong><br/>
@@ -137,5 +135,7 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 </td>
 </tr></table>
 
-<!--table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
-<b>Stay informed and elevate your Adobe Journey Optimizer experience!</b><br/>Sign up for our quarterly newsletter. Gain exclusive access to the latest product updates, captivating stories, real-world use cases, valuable tips, and more – all delivered directly to your inbox every quarter. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Sign up today!</a></td></tr></table-->
+<!--
+table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
+<b>Stay informed and elevate your Adobe Journey Optimizer experience!</b><br/>Sign up for our quarterly newsletter. Gain exclusive access to the latest product updates, captivating stories, real-world use cases, valuable tips, and more – all delivered directly to your inbox every quarter. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Sign up today!</a></td></tr></table
+-->

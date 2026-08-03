@@ -4,7 +4,29 @@ product: journey optimizer
 title: Adobe Journey Optimizer release cycle
 feature: Release Notes
 description: Understanding Adobe Journey Optimizer Release Cycle
+keywords: release cycle, beta, limited availability, general availability, GA, LA, release notes
+role: User
+level: Beginner, Intermediate
 exl-id: 344ae3cf-923c-4f0e-b3bc-0313993243c8
+TQID: https://experienceleague.adobe.com/u8FJOgdav9VhwCk4CzrJoLrbFkVAa7BO83BCZ4SWsBc
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
+    internal-label: Use cases
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
 ---
 # Journey Optimizer release cycle {#releases}
 
@@ -32,12 +54,12 @@ As part of this model:
 >
 > At the end of each quarter, releases can be anticipated and rolled out up to two weeks before the end of the month to align with quarterly schedules or dependent product releases.
 
-While the monthly release introduces the main set of new capabilities and fixes, the continuous delivery approach allows additional updates to be deployed between cycles when ready. Release notes are then updated accordingly in the  _Latest updates_ section, and the availability date is mentioned. All changes released during the month are consolidated in the monthly release notes at the release date.
+While the monthly release introduces the main set of new capabilities and fixes, the continuous delivery approach allows additional updates to be deployed between cycles when ready. Release notes are then updated accordingly in the _Latest updates_ section, and the availability date is mentioned. All changes released during the month are consolidated in the monthly release notes at the release date.
 
 
 ## Release paths {#release-paths}
 
-Features in Journey Optimizer follow different release paths depending on their complexity, dependencies, and scope. The platform uses several availability labels (Beta, Limited Availability, General Availability), but not every feature passes through all of them.
+Features in [!DNL Journey Optimizer] follow different release paths depending on their complexity, dependencies, and scope. The platform uses several availability labels (Beta, Limited Availability, General Availability), but not every feature passes through all of them.
 
 Common release paths include:
 
@@ -52,6 +74,8 @@ Common release paths include:
 
 
 ## Availability labels {#availability-labels}
+
+The table below describes each availability label used across the release paths, what it means for access and support, and what to expect at each stage.
 
 | **Label** | **Purpose** | **Availability** | **Key Notes** |
 |------------|-------------|------------------|----------------|
@@ -76,21 +100,21 @@ To stay up to date:
 * Monitor **Pre-Release Notes** (when available) for a preview of upcoming features.  
 * Contact your Adobe representative for Beta or Limited Availability access or entitlement information.
 
-You can subscribe to **email and in-product alerts** for Journey Optimizer product releases. To subscribe:
+You can subscribe to **email and in-product alerts** for [!DNL Journey Optimizer] product releases. To subscribe:
 
 1. Navigate to **Adobe Experience Cloud Preferences**
 1. Under **Notifications**, find **Journey Optimizer**
 1. Enable **New releases** In-app and email notifications
 
-![](assets/do-not-localize/pulse-notif.png){width="70%" align="left"}
+![Adobe Experience Cloud notification preferences panel for Journey Optimizer, with In-app and Email notifications enabled for Alerts, Approvals, and New releases categories](assets/do-not-localize/pulse-notif.png){width="70%"}
 
 ## Frequently Asked Questions {#faq}
 
-You will find below Frequently Asked Questions about Adobe Journey Optimizer release cycle.
+You will find below Frequently Asked Questions about [!DNL Adobe Journey Optimizer] release cycle.
 
 Need more details? Use the feedback options at the bottom of this page to raise your question, or connect with [Adobe Journey Optimizer community](https://experienceleaguecommunities.adobe.com/t5/adobe-journey-optimizer/ct-p/journey-optimizer?profile.language=en){target="_blank"}.
 
-+++ When are Adobe Journey Optimizer releases scheduled?
++++ When are [!DNL Adobe Journey Optimizer] releases scheduled?
 
 [!DNL Adobe Journey Optimizer] typically releases updates during the last week of each month. At the end of each quarter, the release may be advanced by up to two weeks to align with cross-solution or platform-wide updates.
 
@@ -112,7 +136,7 @@ Some GA features are rolled out progressively to ensure platform stability and p
 
 +++ Do all features go through Beta and Limited Availability?
 
-No. Some features are released directly to GA or only to LA, depending on their nature and readiness.The release path is tailored to each capability to balance agility, quality, and stability.
+No. Some features are released directly to GA or only to LA, depending on their nature and readiness. The release path is tailored to each capability to balance agility, quality, and stability.
 
 +++
 

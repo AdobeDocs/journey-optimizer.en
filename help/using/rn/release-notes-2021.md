@@ -7,9 +7,45 @@ feature: Release Notes
 topic: Content Management
 role: User
 level: Beginner, Intermediate
-hidefromtoc: yes
-hide: yes
+hide: true
 exl-id: 0e43be98-f471-4860-be84-8f99ab93e983
+TQID: https://experienceleague.adobe.com/3i0k1Wzvdf3Z3NccHSFE-nzIrYC45iLqs-ftmQZIeVw
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Release notes
+subfeature_v2:
+  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
+    internal-label: Product updates
+  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
+    internal-label: Pre-release notes
+  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
+    internal-label: Documentation updates
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Release Notes 2021 {#release-notes-2021}
 
@@ -265,7 +301,7 @@ See also [Adobe Experience Platform October Release Notes](https://experiencelea
 
 **User interface**
 
-* **Search** - On every page, you can now search business objects and help articles directly from the Unified Experience Cloud search field. [Learn more](../start/user-interface.md#unified-search)
+* **Search** - On every page, you can now search business objects and help articles directly from the Unified [!DNL CX Enterprise] search field. [Learn more](../start/user-interface.md#unified-search)
 * **Recents** - The display of recents elements from Adobe Journey Optimizer home page is now extended to additional business objects. With this update, shortcuts to your recently accessed include Messages, Journeys, Audiences, Schemas, Datasets, Data Sources, Events, Actions, Sources, and Destinations. [Learn more](../action/about-custom-action-configuration.md#passing-collection)
 
 **Content Design**

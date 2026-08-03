@@ -10,8 +10,43 @@ level: Intermediate
 keywords: send-time, send, message, optimization, journey, AI, Intelligent
 exl-id: ec604e91-4c7f-459c-b6ff-d825919e7181
 version: Journey Orchestration
+TQID: https://experienceleague.adobe.com/r8LyWsU7OOiGZFRkiGO56xkbzW9iE2ASemZOlyaERQ8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+subfeature_v2:
+  - id: fa683eda-48de-4558-af32-2673edcd44fe
+    internal-label: Events
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+    internal-label: Customer engagement
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+    internal-label: Artificial intelligence
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+    internal-label: Customer profiles
 ---
 # Send-Time Optimization{#send-time-optimization}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to enable Send-Time Optimization so Adobe's AI predicts the best time to deliver email and push messages based on each customer's historical open and click behavior.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_disabled"
@@ -21,16 +56,18 @@ version: Journey Orchestration
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_email"
 >title="Activate Send-Time Optimization"
->abstract="Choose whether to optimize on email opens or email click-throughs by selecting the appropriate radio button. You can also choose to bracket the send times used by the system by entering a value for the Send within the next option."
+>abstract="A radio button determines whether to optimize on email opens or email click-throughs. The send times used by the system can also be bracketed with a value for the Send within the next option."
 
 >[!CONTEXTUALHELP]
 >id="jo_bestsendtime_push"
 >title="Activate Send-Time Optimization"
->abstract="Push messages defaults to the opens option, as clicks are not applicable for push messaging. You can also choose to bracket the send times used by the system by entering a value for the Send within the next option."
+>abstract="Push messages defaults to the opens option, as clicks are not applicable for push messaging. The send times used by the system can also be bracketed with a value for the Send within the next option."
+
+>[!NOTE]
+>
+>Send-Time Optimization is only available for built-in Email and Push actions within journeys. It is not currently available for messages sent through campaigns or for messages sent through custom actions or for other action types.
 
 [!DNL Adobe Journey Optimizer]'s Send-Time Optimization feature, powered by Adobe's Journey AI services, chooses the optimal send time for email and push messages to maximize customer engagement, based on your customers' historical open and click behavior.
-
-Send-Time Optimization is only available for Journey Optimizer's built-in Email and Push action types and is not currently available for messages sent through custom actions or for other action types. Send-Time Optimization is only available for Email and Push actions within Journeys and is not currently available for messages sent through Campaigns.
 
 >[!AVAILABILITY]
 >
@@ -38,8 +75,10 @@ Send-Time Optimization is only available for Journey Optimizer's built-in Email 
 >
 >* Send-Time Optimization only applies to **Email** and **Push notification** channels.
 >
+>* Send-Time Optimization is supported in the following AEP Hub regions: **VA7, NLD2, AUS5, CAN2, GBR9, IND2, CHE2**. These are Adobe deployment region codes, contact your Adobe representative if you are unsure which region your organization uses.
+>
 
-## Use Send-Time Optimization{#use-send-time-optimization}
+## Use send-time optimization{#use-send-time-optimization}
 
 To enable and configure Send-Time Optimization on an email or push action, follow the steps below.
 
@@ -57,7 +96,7 @@ Before starting, csonsider which messages are a good fit before you turn it on. 
 
     For best results, optimize most emails for **Clicks**. Choose **Opens** when the message is informational and not meant to drive a specific action.
 
-1. For both Email and Push messages, set **[!UICONTROL Send within next]** to the maximum number of hours (1–168) the system will wait before sending the message.
+1. For both Email and Push messages, set **[!UICONTROL Send within next]** to the maximum number of hours (2–100) the system will wait before sending the message.
 
     For best results, choose a value between 6 and 24 hours. A lower value reduces the number of available send times and can limit the benefit of Send-Time Optimization. A higher value may mean the message is outdated or less relevant by the time it is sent.
 
@@ -69,7 +108,7 @@ When your journey is activated and a customer reaches the Email or Push action i
 
 To monitor your journey's performance, refer to the [Overview page](../reports/channel-report-cja.md). 
 
-## How Send-Time Optimization works {#how-send-time}
+## How send-time optimization works {#how-send-time}
 
 The Send-Time Optimization model ingests your organization's [!DNL Adobe Journey Optimizer] customer behavior data and looks at user-level open and click events to determine when your customers are most likely to engage with your messaging.
 
@@ -98,7 +137,7 @@ Messages sent by Send-Time Optimization receive either an "exploration" message 
 Exploration send times are selected at random from the send times made available by your configured maximum wait time. For example, in the case that a message is selected at 9 AM Wednesday with Send-Time Optimization turned on and a 3 hour maximum wait time, Exploration send times for the message will be split evenly between 9 AM, 10 AM, 11 AM and 12 PM.
 
 
-## Frequently Asked Questions {#faq-send-time}
+## Frequently asked questions {#faq-send-time}
 
 You will find below Frequently Asked Questions about Send-Time Optimization.
 
@@ -166,5 +205,49 @@ To avoid sending Push messages to customers during night time hours, schedule ba
 
 +++
 
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** This page explains how to configure and use Send-Time Optimization in Adobe Journey Optimizer, an AI-powered feature that predicts the best time to send email or push messages to each individual to maximize engagement.
+
+**Intents:**
+* Enable Send-Time Optimization on an email or push action in a journey
+* Choose whether to optimize for opens or click-throughs on email messages
+* Set the maximum wait window (Send within next) for delayed delivery
+* Understand how the AI model predicts optimal send times using behavioral data
+* Determine whether Send-Time Optimization is appropriate for a given message type
+
+**Glossary:**
+* **Send-Time Optimization (STO)**: An AI-powered feature that delays message delivery to each profile until the predicted optimal engagement hour within a configured time window *(product-specific)*
+* **Journey AI**: Adobe's AI services powering Send-Time Optimization within Journey Optimizer *(product-specific)*
+* **Exploration send time**: A randomly selected send time (used for 5% of sends) to test different times and improve model accuracy *(product-specific)*
+* **Optimized send time**: A model-predicted send time selected to maximize click or open rates (used for 95% of sends) *(product-specific)*
+* **Send within next**: The maximum number of hours (2–100) the system will wait before sending the message to a given profile *(product-specific)*
+
+**Guardrails:**
+* Send-Time Optimization must be enabled by Adobe for the organization; contact Adobe Customer Care or your Adobe representative to activate it.
+* Send-Time Optimization only applies to Email and Push notification channels within Journeys; it is not available for Campaigns or custom actions.
+* The organization must have used Email or Push actions in Journey Optimizer for at least 30 days before Send-Time Optimization produces meaningful results.
+* Do not use Send-Time Optimization for urgent or time-sensitive operational messages (e.g., order confirmations, password resets, flight gate changes).
+* Maximum wait time range is 2–100 hours; recommended range is 6–24 hours for best results.
+* Model scores are stored in profile attributes at `_experience.intelligentServices.journeyAI.sendTimeOptimization` and are not human-readable.
+* Models are trained weekly initially, then retrained and rescored monthly after 16 weeks.
+
+**Terminology:**
+* Canonical name: Send-Time Optimization — Acronym: STO — variants: best send time, send time AI, intelligent send time
+* Synonyms: "Send-Time Optimization" = "optimal send time" = "AI send time"
+* Do not confuse: "Exploration send time" ≠ "Optimized send time" (exploration is random for model testing; optimized is model-predicted for engagement)
+
+**FAQ:**
+* **Q: Which channels support Send-Time Optimization?** — Only Email and Push notification channels within Journeys; Campaigns and custom actions are not supported.
+* **Q: Should I optimize for opens or clicks on email?** — Optimize for Clicks for most emails. Choose Opens when the message is informational and not intended to drive a specific action.
+* **Q: How long does the organization need to wait before enabling STO?** — At least 30 days of Email or Push usage in Journey Optimizer is needed to collect sufficient behavioral data. Results continue to improve for up to 16 weeks.
+* **Q: Can STO send push notifications at night?** — Yes, if a user's behavior suggests night-time engagement or if an exploration send time is selected. To avoid this, use a morning send time with a short maximum wait window.
+* **Q: What is the expected benefit of Send-Time Optimization?** — Approximately 2–10% improvement in email click rate or push open rate across all optimized messages, though benefits may not be observable on individual small-volume sends.
+
++++
 
 

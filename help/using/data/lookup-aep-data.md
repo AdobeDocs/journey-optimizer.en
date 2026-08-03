@@ -11,8 +11,37 @@ keywords: expression, editor
 mini-toc-levels: 1
 badge: label="Limited Availability" type="Informative"
 exl-id: 44a8bc87-5ab0-45cb-baef-e9cd75432bde
+TQID: https://experienceleague.adobe.com/8D-sZ8--lEZSWcfVb9Q-dT59WqBQM2tRV5ses3PX0Ps
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: aeebb91a-f216-4d5f-8da1-3a7e6f696ed0
+    internal-label: Data management activity
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+subfeature_v2:
+  - id: a1cdc218-59b7-4eef-b5cf-2a7ad74b3371
+    internal-label: Journey Optimizer schemas
+  - id: d6e5c7fd-c1d6-4137-98cd-138ccde6752f
+    internal-label: Datasets
+  - id: cf3fbcd7-c075-4ae4-8de5-96e736ab2ea3
+    internal-label: Data ingestions
 ---
 # Use Adobe Experience Platform data {#aep-data}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Enable record-based Adobe Experience Platform datasets for lookup so you can enrich personalization, Decisioning, and journey orchestration with reference and transactional data retrieved at runtime in Journey Optimizer.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="lookup-aep-data"
@@ -103,7 +132,7 @@ In the dataset management user interface, use the toggle to enable the dataset f
 
 ### API Method
 
-Follow the directions detailed in [this documentation](https://developer.adobe.com/journey-optimizer-apis/references/authentication/) to configure your environment to send API commands. 
+Follow the directions detailed in [this documentation](https://developer.adobe.com/journey-optimizer-apis/references/authentication) to configure your environment to send API commands. 
 
 #### Prerequisites
 

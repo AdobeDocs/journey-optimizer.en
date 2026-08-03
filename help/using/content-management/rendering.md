@@ -5,14 +5,24 @@ feature: Preview
 role: User
 level: Beginner
 exl-id: fe077a8b-9788-4723-a1e7-32816a879af9
+feature_v2: []
+subfeature_v2:
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
 ---
 # Test email rendering {#email-rendering}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to connect your Litmus account to Adobe Journey Optimizer to test email rendering across popular desktop, mobile, and web-based clients.
+
+>[!ENDSHADEBOX]
 
 You can leverage your **Litmus** account into [!DNL Journey Optimizer] to instantly preview your **email rendering** in popular email clients. You can then ensure your email content looks great and works properly in every inbox.
 
 To check email rendering, follow these steps:
 
-1. From the edit content screen of your message or in the Email Designer, click the **[!UICONTROL Simulate content]** button.
+1. From the edit content screen of your message or in the Email Designer, click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown.
 
 1. Select the **[!UICONTROL Render email]** button.
 

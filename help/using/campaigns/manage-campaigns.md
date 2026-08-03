@@ -10,8 +10,39 @@ mini-toc-levels: 1
 level: Beginner
 keywords: manage campaigns, status, schedule, access, optimizer
 exl-id: 1b88c84e-9d92-4cc1-b9bf-27a2f1d29569
+TQID: https://experienceleague.adobe.com/k-BZOO4BOzdW2TVlBrDx1CH-Wte7KEXffXqZYRvUI7w
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Access & manage campaigns {#manage-campaigns}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Access, search, and organize your campaigns, understand each lifecycle status, and use the calendar and common operations so you can keep your campaign workspace efficient and act on each campaign at the right time.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_targeting_workflow_list"
@@ -73,6 +104,8 @@ Each Orchestrated campaign in the list displays information such as the campaign
 
 In addition, a search bar and filters are available to facilitate easy searching within the list. For example, you can filter campaigns to display only those associated to a given channel or tag, or those created during a specific date range.
 
+You can also sort the list by clicking most column headers. In the folders view, sorting and filtering by **[!UICONTROL Priority]** and **[!UICONTROL Channel configuration]** columns is also supported.
+
 ## Campaign operations {#operations}
 
 The ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button in the campaigns inventory allows you to perform various operations.
@@ -91,12 +124,20 @@ The ![image showing the More actions button](assets/do-not-localize/rule-builder
 
 **For Action and API triggered campaigns only:**
 
+<!--
+Per-campaign alert subscription is deferred (CJM-112845, CJM-112849). Campaign lifecycle alerts can currently be subscribed to at the sandbox level only. See ../reports/alerts.md#subscribe-alerts
+* **[!UICONTROL Subscribe to alerts]** - Choose which campaign lifecycle system alerts apply to this campaign only (in addition to any sandbox-wide alert subscriptions). [Learn more about system alerts →](../reports/alerts.md#subscribe-alerts)
+-->
 * **[!UICONTROL Add to package]** - Add the campaign to a package in order to export it to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
 * **[!UICONTROL Open draft version]** - If a new version of the campaign has been created and has not been activated yet, you can access its draft version using this action.
 
 **For Orchestrated campaigns only:**
 
 * **[!UICONTROL Back to draft]** - Unpublish and revert a campaign to draft status for error recovery. This action is available when a scheduled campaign has not yet started, or when a live campaign encounters an error before any executions are completed. [Learn more about reverting campaigns →](../orchestrated/start-monitor-campaigns.md#back-to-draft)
+
+### Bulk actions {#bulk-actions-campaigns}
+
+You can select multiple campaigns at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and deleting. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
 
 ## Understanding campaign status {#statuses}
 
@@ -119,7 +160,7 @@ Each campaign moves through a lifecycle that is reflected by its status in the i
 >
 >For Action and API-triggered campaigns, the "Open draft version" icon next to a **[!UICONTROL Live]** or **[!UICONTROL Scheduled]** status indicates that a new version has been created and has not been activated yet.
 
-### Error indicators
+### Error indicators {#error-indicators}
 
 When an error occurs within one of your campaigns, a warning icon appears alongside the campaign's status. Click on it to display information regarding the alert. These alerts may occur in various situations, such as when the campaign message has not been published or if the chosen configuration is incorrect.
 
@@ -239,7 +280,7 @@ Archived campaigns can then be retrieved using the dedicated filter in the list.
 
 To delete a campaign, use the ellipsis ![image showing the More actions button](assets/do-not-localize/rule-builder-icon-more.svg) button and select **[!UICONTROL Delete]**.
 
-![](assets/delete-a-campaign.png){width="70%" align="left"}
+![](assets/delete-a-campaign.png){width="70%"}
  
 >[!IMPORTANT]
 >

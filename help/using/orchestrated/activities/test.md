@@ -5,9 +5,27 @@ title: Use the Test activity in your Orchestrated campaigns
 description: Learn how to use the Test activity
 exl-id: edd70849-0a21-45f2-91f3-4774a0cad9dd
 version: Campaign Orchestration
+TQID: https://experienceleague.adobe.com/OzqcBFe2GTNsnrphPL-osBkMUsjQZBJ5DO1GHO13oBg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
-
 # Test {#test}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Test flow control activity to branch an Orchestrated campaign by activating different transitions based on the conditions you define.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_test"
@@ -35,7 +53,7 @@ To set up the **[!UICONTROL Test]** activity:
 
    * **Label**: A name for the transition so you can identify it on the canvas.
 
-   * **Condition type**: The data to evaluate, by default, population count. 
+   * **Condition type**: The data to evaluate, by default, population count.  Variables (coming from global variables or a trigger signal) are also listed here and can be selected to base a condition on a variable value. [Learn how to use variables in Orchestrated campaigns](../variables-orchestrated-campaigns.md)
 
    * **Operator**: The comparison to apply, e.g. equal to, greater than, less than. The list of operators depends on the condition type's data type.
 

@@ -9,8 +9,38 @@ role: Admin
 level: Experienced
 keywords: subdomain, PTR, records, DNS, domain, mail
 exl-id: 4c930792-0677-4ad5-a46c-8d40fc3c4d3a
+TQID: https://experienceleague.adobe.com/sdx-XnJMWY5UAkd9-O2Rayjoww3CfeCAgGQgarO2TlY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Create & edit PTR records {#ptr-records}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how PTR records are automatically created when you delegate subdomains to Adobe, and how to access, edit, and track updates to them in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_admin_ptr_record"
@@ -90,11 +120,13 @@ To edit a PTR record with a subdomain that is delegated to Adobe using the [CNAM
 
     ![](assets/ptr-record-subdomain-confirm.png)
 
-    >[!NOTE]
+1. If you get this message: "Please create forward DNS first and then try again", follow the steps below:
+    * Check on the DNS provider if the forward DNS record was successfully created.
+    * Records across the DNS may not synchronize immediately. Wait for a few minutes, and try again.
+
+    >[!WARNING]
     >
-    >If you get this message: "Please create forward DNS first and then try again", follow the steps below:
-    >   * Check on the DNS provider if the forward DNS record was successfully created.
-    >   * Records across the DNS may not synchronize immediately. Wait for a few minutes, and try again.
+    >When adding a new forward DNS record for the new subdomain on your hosting platform, do not remove the forward DNS record for the old subdomain until the move completes. Removing the old record before the process is finished will cause editing the PTR record to fail.
 
 1. Click **[!UICONTROL Save]** to confirm your changes. Note that the **[!UICONTROL IP]** and **[!UICONTROL PTR record]** fields cannot be modified.
 

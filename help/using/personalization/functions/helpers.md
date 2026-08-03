@@ -6,10 +6,14 @@ topic: Personalization
 role: Developer
 level: Experienced
 exl-id: b08dc0f8-c85f-4aca-85eb-92dc76b0e588
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2: []
 ---
 # Helpers {#gs-helpers}
 
-## Default Fallback Value{#default-value}
+## Default fallback value{#default-value}
 
 The `Default Fallback Value` helper is used to return a default fallback value if an attribute is empty or null. This mechanism works for Profile attributes and Journey events.
 
@@ -128,7 +132,7 @@ Some edu specific content
 ## Each{#each}
 
 The `each` helper is used to iterate over an array.
-The syntax of the helper is ```{{#each ArrayName}}``` YourContent `{{/each}}` 
+The syntax of the helper is `{{#each ArrayName}}` YourContent `{{/each}}`.
 We can refer to the individual array items by using the keyword **this** inside the block. The index of the array's element can be rendered by using `{{@index}}`. 
 
 **Syntax**
@@ -210,9 +214,141 @@ The following example lets you calculate the total sum of prices for products in
 {{sum}}
 ```
 
+## Abort {#abort}
+
+>[!AVAILABILITY]
+>
+>This feature is currently in Limited Availability.
+
+The `abort` helper stops message delivery when it is reached during rendering.
+
+Use a conditional block such as `{%#if%}` to control when the helper runs. When `abort` is executed, delivery is aborted.
+
+**Syntax**
+
+```handlebars
+{{abort code='code' description='description'}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+| --- | --- |
+| `code` | Optional abort code included in the raised error. |
+| `description` | Optional human-readable reason for aborting. |
+
+**Example**
+
+```handlebars
+{%#if profile.person.email = ""%}
+  {{abort code='ERR_001' description='Missing email'}}
+{%/if%}
+Hello {{profile.person.name.firstName}}!
+```
+
+In this example, rendering proceeds when `email` is present. When the condition matches, delivery is aborted with the provided `code` and `description`.
+
+## Parse JSON {#parse-json}
+
+The `parseJson` helper parses a JSON string and stores the parsed object in a template variable so you can access fields directly in personalization expressions.
+
+**Syntax**
+
+```handlebars
+{{parseJson jsonStr=jsonStringPath result="variableName"}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+| --- | --- |
+| `jsonStr` | The JSON string to parse. This can be a data reference or a literal JSON string. |
+| `result` | The variable name that stores the parsed object. |
+
+**Example**
+
+```handlebars
+{{parseJson jsonStr=targetResponse.options.content result="offerContent"}}
+{{offerContent.title}}
+```
+
+## Value at path {#value-at-path}
+
+The `valueAtPath` helper assigns a value from a data path to a template variable. You can optionally use an index to extract a specific element from arrays or collections.
+
+**Syntax**
+
+```handlebars
+{{valueAtPath path idx=indexPath result="value"}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+| --- | --- |
+| `path` | The source path from which to extract the value (positional parameter). |
+| `idx` | Optional 0-based index used to extract a specific element from an array or collection. |
+| `result` | The variable name that stores the extracted value. |
+
+**Example**
+
+```handlebars
+{{valueAtPath targetResponse.prefetch.mboxes idx=0 result="firstMbox"}}
+{{firstMbox.name}}
+```
+
+## Url {#url}
+
+The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your SMS message content.
+
+**Syntax**
+
+```sql
+{{url originalUrl='<your_url>' type='<DEEPLINK>' action='CLICK'}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+|---|---|
+| `originalUrl` | The URL to shorten. |
+| `type` | The link type. Use `DEEPLINK` to open a specific screen in a mobile app. |
+| `action` | The tracking action. Use `CLICK` to track clicks on the link. |
+
+**Example**
+
+```sql
+  {{url originalUrl='https://www.mybusiness.com/offers/summer-sale' type='DEEPLINK' action='CLICK'}}
+```
+
+## Dataset lookup {#dataset-lookup}
+
+>[!AVAILABILITY]
+>
+>This feature is currently available to all customers as a limited availability release.
+>
+>For now, the `datasetLookup` helper function can be used within expression fragments for a limited set of customers. To gain access, contact your Adobe representative.
+
+The `datasetLookup` helper retrieves data from Adobe Experience Platform record datasets during personalization so you can use field values that are not stored on the profile or in the event payload.
+
+**Syntax**
+
+```sql
+{{datasetLookup datasetId="datasetId" id="key" result="store" required=false}}
+```
+
+Reference retrieved fields with `{{result.fieldId}}`, where `result` is the value you pass to the `result` parameter.
+
+For dataset enablement, parameter details, examples, and testing, see [Use Adobe Experience Platform data for personalization](../aep-data-perso.md).
+
 ## Execution Metadata {#execution-metadata}
 
 The `executionMetadata` helper allows to dynamically capture and store custom key-value pairs into the message execution context.
+
+>[!NOTE]
+>
+>* The Execution Metadata function is not supported by [custom actions](../../action/action.md) and in inbound channels (Web, Code-based experience, In-App Message, Content Cards).
+>* The Execution Metadata function is not visible when the content itself is displayed.
 
 **Syntax**
 
@@ -225,11 +361,6 @@ In this syntax, `key` refers to the metadata name and `value` is the metadata to
 **Use case**
 
 With this function, you can append contextual information to any native action from your campaigns or journeys. This enables you to export real-time delivery contextual data to external systems for various purposes such as tracking, analytics, personalization and downstream processing.
-
->[!NOTE]
->
->* The Execution Metadata function is not supported by [custom actions](../../action/action.md).
->* The Execution Metadata function is not visible when the content itself is displayed.
 
 For instance, you can use the Execution Metadata helper to append a specific ID to each delivery sent to each profile. This information is generated during runtime and the enriched execution metadata can then be exported for downstream reconciliation with an external reporting platform.
 
@@ -258,9 +389,9 @@ Upon runtime, the metadata value is added to the existing **[!UICONTROL Message 
 
 **Limitations**
 
-There is an upper limit of 2kb on the key value pairs per action. If the 2Kb limit is exceeded, the message is still delivered, but any of the key value pairs can be truncated.
-
-Metadata is not captured for profiles excluded from the action. When a profile is excluded from receiving a message, no metadata entry is created for that profile in the dataset.
+* You can pass a maximum of 50 key-value pairs per action.
+* The total metadata payload is limited to 2 KB per action. If the 2 KB limit is exceeded, the message is still delivered, but any key-value pair can be truncated.
+* Metadata is not captured for profiles excluded from the action. When a profile is excluded from receiving a message, no metadata entry is created for that profile in the dataset.
 
 **Example**
 
@@ -280,8 +411,6 @@ In this example, assuming `profile.person.name.firstName` = "Alex", the resultin
 ## Encrypt {#url-parameter-encryption-helper}
 
 >[!AVAILABILITY]
->
->This feature is available in Limited Availability. Contact your Adobe representative to gain access.
 >
 >This capability is currently only available for the Email channel.
 
@@ -333,3 +462,4 @@ You can apply the helper to one parameter, several, or all parameters in a link,
 * Revoked keys must not be used for new encryption. Follow your security policy for rotation and decommissioning.
 
 * The encryption process being ressource-intensive, using the `Encrypt` function may impact throughput at render time.
+

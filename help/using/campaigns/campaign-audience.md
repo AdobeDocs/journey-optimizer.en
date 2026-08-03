@@ -10,8 +10,37 @@ level: Beginner
 mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
 exl-id: 5635ef04-c69d-4397-9762-7a6f1265d453
+TQID: https://experienceleague.adobe.com/3lWwW0Lru2D5D83QqHl48Gsxv7JVKjX8ZBmZAiMFiB0
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 ---
 # Define the Action campaign audience {#action-campaign-audience}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Select the audience and identity type in the Audience tab so your Action campaign targets the right individuals.
+
+>[!ENDSHADEBOX]
 
 Use the **[!UICONTROL Audience]** tab to define the campaign audience.
 

@@ -10,8 +10,43 @@ level: Beginner
 mini-toc-levels: 1
 keywords: create, optimizer, campaign, surface, messages
 exl-id: fed96e48-2e54-4bd4-ae17-77434d1b90eb
+TQID: https://experienceleague.adobe.com/NYmffTrdeExP-YY92lHKD21uvDN8IeUqW46P6Rrkek8
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: a653cc2e-bc85-4353-a306-399e5b247978
+    internal-label: Journey Optimizer campaigns
+subfeature_v2:
+  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
+    internal-label: Business rules
+  - id: f7479fa1-474b-479d-8c98-f6cee5865a38
+    internal-label: API triggered campaigns
+  - id: ee67bd4a-25ee-4cdd-9eab-0d7549fde0c6
+    internal-label: Campaign management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
 ---
 # Configure the campaign action {#action-campaign-action}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure the campaign action by selecting a channel and channel configuration along with optimization and multilingual content, add multiple inbound actions, or use channel optimization to automatically select the best outbound channel for each customer, so your campaign delivers the right experiences across channels.
+
+>[!ENDSHADEBOX]
 
 Use the **[!UICONTROL Actions]** tab to select a channel configuration for your message and configure additional settings such as tracking, content experiment, or multilingual content.
 
@@ -29,6 +64,8 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
     
     If you select an inbound channel (Code-based experience, In-app message, Content Card or Web action), you can add more inbound actions - for a total of up to 10 actions in a single campaign. [Learn how](#multi-action)
 
+    If you select multiple outbound channels (Email, Push, SMS), you can use channel optimization to automatically select the best channel for each customer at send time. [Learn how](../building-journeys/channel-optimization.md)
+
 1. **Select a channel configuration**
 
     A configuration is defined by a [System Administrator](../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../configuration/channel-surfaces.md)
@@ -41,7 +78,8 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 <!--
 1. **Create a content experiment**
 
-    Use the **[!UICONTROL Content experiment]** section to define multiple delivery treatments in order to measure which one performs best for your target audience. Click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment](../content-management/content-experiment.md).-->
+    Use the **[!UICONTROL Content experiment]** section to define multiple delivery treatments in order to measure which one performs best for your target audience. Click the **[!UICONTROL Create experiment]** button then follow the steps detailed in this section: [Create a content experiment](../content-management/content-experiment.md).
+-->
 
 1. **Add multilingual content**
 
@@ -98,7 +136,7 @@ To simplify your campaign orchestration, you can define several inbound actions 
 
 >[!NOTE]
 >
->This capability is only available for inbound channels. Currently outbound channels such as Email are not supported.
+>This capability is only available for inbound channels. For outbound channels (Email, Push, SMS), use [channel optimization](../building-journeys/channel-optimization.md) to automatically select the best channel per customer.
 
 This capability enables you to deliver various Code-based experiences, In-app messages, Content Cards or Web actions to different locations at the same time, without the need to create multiple campaigns. It makes the deployment of your campaign easier and allows for smoother reporting, with all the data consolidated into one single campaign.
 

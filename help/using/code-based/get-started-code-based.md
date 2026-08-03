@@ -6,8 +6,42 @@ topic: Content Management
 role: User, Developer, Admin
 level: Experienced
 exl-id: 987de2bf-cebe-4753-98b4-01eb3fded492
+TQID: https://experienceleague.adobe.com/ZOCKgdEGK0G3GOhNbwxSXVOQo0We6-QdjzItFtZ5T3E
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: f88eedcc-cf3e-46b8-9e94-0293589325f3
+    internal-label: Code based channel
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Get started with code-based channel {#get-started-code-based}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how the code-based channel lets you deliver personalized content to granular locations across your apps and web pages, and when to use it instead of other channels.
+
+>[!ENDSHADEBOX]
 
 [!DNL Journey Optimizer] allows you to personalize and test the experiences you want to deliver to your customers across all your touchpoints like: web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, voice assistants, IoT devices, etc.
 
@@ -25,6 +59,28 @@ With the **code-based experience** capability, you can define inbound experience
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
 ➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presented in [this section](../experience-decisioning/experience-decisioning-uc.md).
+
+## Use cases {#use-cases}
+
+The code-based channel works best when your use case goes beyond what a visual editor can support, and you have development resources available to build and maintain the implementation.
+
+| Benefit | Why | Example use cases |
+| --- | --- | --- |
+| Deep personalization | Supports complex logic and real-time data beyond what visual editors expose | Personalization driven by real-time inventory or user context |
+| Integration with external systems | Content can be composed using data from outside systems | Weather-based promotions, real-time inventory-driven offers |
+| Advanced, multi-step conditional workflows | Not limited to the pre-defined actions of visual channels | Multi-step decisioning logic across touchpoints |
+| Going beyond platform limits | Lets developers build custom interactive elements | Custom UI components not supported by out-of-the-box channels |
+| Improved campaign flexibility | Content and logic are defined by your own implementation | Headless, API-based, or non-browser digital properties |
+
+## When not to use {#when-not-to-use}
+
+The code-based channel requires development effort, so it is not the right choice for every scenario. Consider another channel in the following situations:
+
+* Your campaign is quick or simple and can be built with a no-code channel like web or in-app, without any development effort
+* You do not have developer resources or a testing environment available to build and validate a custom implementation
+* Your timeline or budget is limited for custom development, since code-based experiences require more upfront planning
+* Standard messaging already fits the built-in channel capabilities, making custom development unnecessary
+* Long-term maintainability of custom code is a concern, since surfaces and implementations need ongoing developer support
 
 ## When to use code-based vs. other channels {#code-based-vs-other-channels}
 
@@ -104,4 +160,5 @@ The key steps to create and deliver a code-based experience are as follows.
 * **[Test code-based experiences](test-code-based.md)** - Learn how to preview and test your code-based experiences before publishing.
 * **[Implementation samples](code-based-implementation-samples.md)** - Explore code examples and implementation patterns for various use cases.
 * **[Code-based experiences tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/code-based-experience-channel/create-a-code-based-experience-campaign){target="_blank"}** - Explore step-by-step video tutorials on code-based features and best practices.
+
 

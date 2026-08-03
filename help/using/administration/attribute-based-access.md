@@ -9,8 +9,39 @@ role: Admin,Leader
 level: Intermediate
 keywords: abac, attribute, authorizations, data, access, sensitive, assets
 exl-id: 162b0848-313a-447e-9237-5a6dbc8102c6
+TQID: https://experienceleague.adobe.com/PrmjDN7KDV5Y1NRxfEyQ-3ADOIWjgMv2OuRXitt-Wzk
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+subfeature_v2:
+  - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
+    internal-label: Access control
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Attribute-based access control {#attribute-based-access}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Use attribute-based access control in Adobe Journey Optimizer to restrict sensitive schema fields, profile attributes, and audiences to authorized roles, so you can protect personal data and prevent unauthorized users from acting on it.
+
+>[!ENDSHADEBOX]
 
 The attribute-based access control capability allows you to define authorizations to manage data access for specific teams or groups of users. Its purpose is to protect sensitive digital assets from unauthorized users, providing further protection of personal data.
 
@@ -153,3 +184,51 @@ If User Y, without access to label C2 objects, needs to access this journey with
 * User Y can delete the expression.
 * User Y will not be able to test the journey.
 * User Y will not be able to publish the journey.
+
++++ AI Knowledge Reference
+
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+
+* **TL;DR:** Protect sensitive data fields in Journey Optimizer by applying governance labels to schema fields and assigning matching labels to roles, so unauthorized users cannot view, edit, test, or publish journeys that use those restricted fields.
+
+**Intents:**
+
+* Create a role and assign a governance label to restrict access to specific schema fields
+* Apply a label to a schema field in Adobe Experience Platform to enforce access restrictions
+* Use a labeled schema field in a Journey Optimizer journey
+* Understand how users without the required label experience access restrictions in journeys
+* Manage Roles, Policies, and Products via the attribute-based access control API
+
+**Glossary:**
+
+* **ABAC (Attribute-based access control)**: A capability to define authorizations to manage data access for specific teams or groups of users based on attributes such as labels *(product-specific)*
+* **Role**: A set of users sharing the same permissions, labels, and sandboxes within an organization *(product-specific)*
+* **Label**: A governance marker (e.g., C2) applied to schema fields, datasets, or audiences to control which roles can access them *(product-specific)*
+* **Policy**: A configuration that must be created before managing permissions for a role — prerequisite for ABAC *(product-specific)*
+* **XDM schema**: Experience Data Model schema used to define data structure in Adobe Experience Platform *(product-specific)*
+
+**Guardrails:**
+
+* A policy must be created before managing permissions for a role (prerequisite, as stated in the Important note on the page)
+* Incorrect label usage can break access for people and trigger policy violations (as stated in the Warning on the page)
+* Users without a label matching a restricted field cannot: view the restricted field name, edit expressions referencing it in advanced mode, test the journey, or publish the journey
+
+**Terminology:**
+
+* Canonical name: Attribute-based access control — Acronym: ABAC — variants: attribute-based access management
+* Canonical name: Experience Data Model — Acronym: XDM — variants: XDM schema, XDM schemas
+* Synonyms: "Label" = "governance label" = "data governance label"
+* Do not confuse: "Role" (a group of users with shared permissions and labels) ≠ "Policy" (rules governing enforcement of data access based on labels)
+* Do not confuse: ABAC (controls access to schema fields, datasets, and audiences via label policies at the platform level) ≠ OLAC (controls access to specific Journey Optimizer objects like journeys and campaigns)
+
+**FAQ:**
+
+* **Q: Can labels be added to built-in roles?** — Yes, labels can be added to both custom and built-in roles.
+* **Q: What happens to a user who lacks the label for a restricted field in a journey?** — The field is not visible to them; they cannot edit expressions referencing it, test the journey, or publish the journey.
+* **Q: Can labels be applied to objects other than schema fields?** — Yes; labels can also be applied to schemas, datasets, and audiences.
+* **Q: Is there an API for managing roles, policies, and products with ABAC?** — Yes; Roles, Policies, and Products can be accessed via the attribute-based access control API.
+
++++
+<!-- ai-accordion-version: 1 | source-hash: aa94c226 -->

@@ -7,8 +7,34 @@ topic: Content Management
 role: User
 level: Beginner
 exl-id: ef6110c4-1aa6-4835-b0b0-b3c4fe0e7024
+TQID: https://experienceleague.adobe.com/ForlM8q0qc7dVSLKtCdhHh7ZVEuprPYbqTLHuOUXo8I
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 ---
 # Access and manage content templates {#access-manage-templates}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, search, organize into folders, edit, delete, and export content templates across sandboxes in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
 
 ## Prerequisites {#prerequisites}
 
@@ -83,19 +109,38 @@ To easily navigate your content templates, use folders to organize them more eff
 
 ## Edit and delete content templates {#edit}
 
-* To edit a template content, click the desired item from the list and make the desired changes. You can also edit the content template properties by clicking the edit button next to the template's name.
+From the **[!UICONTROL More actions]** button next to each template, you can access the following shortcuts and actions:
+
+* **[!UICONTROL Edit details]** — Edit the template name, description, and tags.
+* **[!UICONTROL Simulate content]** — Preview and test the template content.
+* **[!UICONTROL Delete]** — Delete the template.
+
+For email templates, the following additional shortcuts are available:
+
+* **[!UICONTROL Edit subject line]** — Quickly update the email subject line.
+* **[!UICONTROL Edit email body]** — Open the email designer to modify the template content.
+* **[!UICONTROL View proof]** — View a proof of the email template.
+* **[!UICONTROL Send proof]** — Send a proof of the template to designated recipients.
+* **[!UICONTROL Spam report]** — Analyze the template against spam filters.
+* **[!UICONTROL Render email]** — Preview how the email renders across different email clients.
+
+![](assets/content-template-quick-launch.png)
+
+To edit a template's full content, click the desired item from the list and make the desired changes. You can also edit the content template properties by clicking the edit button next to the template's name.
 
     ![](assets/content-template-edit.png)
-
-* To delete a template, select the **[!UICONTROL More actions]** button next to the desired template and select **[!UICONTROL Delete]**.
-
-    ![](assets/content-template-list-delete.png)
 
 >[!NOTE]
 >
 >When a template is edited or deleted, campaigns or journeys including content created using this template are not impacted.
 
-## [!BADGE Limited Availability]{type=Informative} Display templates as thumbnails {#template-thumbnails}
+## Bulk actions {#bulk-actions-templates}
+
+You can select multiple templates at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and archiving. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
+
+You can also sort the template list by clicking most column headers, and resize columns by dragging the column border to fit the data you need.
+
+## [!BADGE limited Availability]{type=Informative} display templates as thumbnails {#template-thumbnails}
 
 Select the **[!UICONTROL Grid view]** mode to display each template as a thumbnail.
 

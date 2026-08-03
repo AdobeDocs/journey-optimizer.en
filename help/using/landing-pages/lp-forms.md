@@ -9,8 +9,37 @@ role: User
 level: Beginner
 keywords: landing, landing page, creation, page, form
 exl-id: c688ac5e-eb09-445b-a3f0-1627b40cddc8
+TQID: https://experienceleague.adobe.com/ecrWN9KOSy0Ha4OgJ9pW7RHp2X3pnGtxsH5tOfXvDgA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b19d9237-76be-466d-a869-aacf2d72205f
+    internal-label: Landing pages
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Use forms in your landing pages {#lp-forms}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to build forms and embed them in Data Capture landing pages to collect profile attributes from visitors and write the submissions to your Experience Platform datasets.
+
+>[!ENDSHADEBOX]
 
 To capture profile data with your [!DNL Journey Optimizer] landing pages and enrich your [!DNL Experience Platform] datasets, you can leverage forms in your landing pages. For an overview of data capture scenarios and requirements, see [Data capture with landing pages](get-started-lp.md#data-capture-lp).
 
@@ -27,6 +56,12 @@ To capture profile data with your [!DNL Journey Optimizer] landing pages and enr
 >title="Select a dataset"
 >abstract="Define a dataset where the form responses will be stored and reflected. You can type to search a specific dataset or select it from the list."
 
+<!--
+>[!NOTE]
+>
+>To access and edit form presets, you must have the **[!UICONTROL View form presets]**, **[!UICONTROL Manage form presets]**, and **[!UICONTROL Publish form presets]** permissions. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).
+-->
+
 Before being able to create a form, you need to create a dedicated preset where you select the connection endpoint where form submission data is sent, and the dataset where the data captured through the form will be stored.
 
 Once data lands on the streaming endpoint, it is linked with the dataset information. Using the generated source/target connections and source flow, the data is then pushed into the dataset.
@@ -39,12 +74,6 @@ When creating a preset:
     * **Source connection** – where the data originates.
     * **Target connection** – where the data is stored or consumed.
     * **Source flow** – the pipeline that moves data from the source connection into [!DNL Experience Platform], handling mapping, transformation, and validation.
-
-<!--
->[!NOTE]
->
-> To access and edit form presets, you must have the **[!UICONTROL Manage form presets]** permission on the production sandbox. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).TBC
--->
 
 To create a form preset, follow the steps below.
 
@@ -78,6 +107,12 @@ To create a form preset, follow the steps below.
 1. Click **[!UICONTROL Publish]**. Your preset is now ready to be used in a form.
 
 ## Access and manage forms {#access-forms}
+
+<!--
+>[!NOTE]
+>
+>To access and edit forms, you must have the **[!UICONTROL View forms]**, **[!UICONTROL Manage forms]**, and **[!UICONTROL Publish forms]** permissions. Learn more about permissions in [this section](../administration/high-low-permissions.md#administration-permissions).
+-->
 
 To access the form list, select **[!UICONTROL Content Management]** > **[!UICONTROL Forms]** from the left menu.
 

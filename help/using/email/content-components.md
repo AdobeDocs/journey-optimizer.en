@@ -9,8 +9,43 @@ role: User
 level: Beginner, Intermediate
 keywords: components, Email Designer, editor, email
 exl-id: a4aaa814-3fd4-439e-8f34-faf97208378a
+TQID: https://experienceleague.adobe.com/t-8ADluALsr8pglh8Rv1y9TvObyUjjTAfXaagM-N7cs
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
+    internal-label: Fragments
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
+  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
+    internal-label: Publish
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 ---
 # Use the Email Designer content components {#content-components}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to add and configure Email Designer content components such as buttons, text, images, dividers, HTML, social links, and offer decisions to build your email content.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ac_content_components_email"
@@ -229,3 +264,27 @@ Learn how to add personalized offers into an email in [this section](add-offers-
 >[!IMPORTANT]
 >
 >If changes are made to an offer decision which is being used in a journey's message, you need to unpublish the journey and republish it.  This will ensure that the changes are incorporated into the journey's message and that the message is consistent with the latest updates.
+
+## Grid {#grid}
+
+Use the **[!UICONTROL Grid]** component to organize content into a structure composed of rows and columns, where each cell can contain other content components.
+
+![](assets/email_designer_grid_component.png){width="90%"}
+
+1. Just like the [Container](#container) component, drag and drop other content components into each cell of the grid.
+
+    For example, you can add a **[!UICONTROL Text]** component, an **[!UICONTROL Image]** component, and two **[!UICONTROL Button]** components. You can then add an image and edit the content of each component individually.
+
+    ![](assets/email_designer_grid_component_2.png){width="90%"}
+
+1. To adjust the structure of your grid, select it and go to the **[!UICONTROL Settings]** tab of the Email Designer right pane.
+
+    ![](assets/email_designer_grid_component_3.png){width="90%"}
+
+1. You can define how many columns and rows the grid contains, edit the spacing between columns and rows, and change the width of each individual column in percentage.
+
+    >[!NOTE]
+    >
+    >Use the **[!UICONTROL Do not stack columns on mobile]** option to preserve the grid layout on mobile devices instead of stacking columns vertically.
+
+1. Drop other content components into each cell as needed, and adjust styling from the **[!UICONTROL Styles]** tab for each component.

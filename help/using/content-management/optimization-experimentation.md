@@ -7,8 +7,37 @@ role: User
 level: Intermediate
 keywords: experimentation, optimization, A/B testing, content experiment, treatments
 exl-id: 4e8537c4-944f-4a39-be2b-af8ebfb6e099
+TQID: https://experienceleague.adobe.com/2ponHAr61o0hTMYuG5l9mQuh79-WeQz9eRuCF7dZjdA
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2: []
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
+subfeature_v2:
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
 ---
 # Use experimentation {#experimentation}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use content experiments to test multiple content variations within a journey or campaign and identify which one performs best against your success metrics.
+
+>[!ENDSHADEBOX]
 
 >[!NOTE]
 >

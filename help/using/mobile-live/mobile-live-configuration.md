@@ -7,8 +7,43 @@ feature: Channel Configuration
 role: Admin
 level: Intermediate
 exl-id: db85a563-9630-4d87-bf10-9f2515fe8a45
+TQID: https://experienceleague.adobe.com/LThNKcpBCCkin2G-y4n-tty4bcGLxMA4ObiodBrpBwY
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
+    internal-label: Track and monitor
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+  - id: ed2fba79-65cb-4680-96d2-2ad5d851714d
+    internal-label: Live activities
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Get started with Live activity configuration {#mobile-live-config}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Set up your push credentials and Live activity channel configuration so you can authorize Adobe Journey Optimizer to deliver real-time updates to your iOS app.
+
+>[!ENDSHADEBOX]
 
 Before sending Live activities, you must configure your Adobe Journey Optimizer environment. To perform this:
 
@@ -42,7 +77,7 @@ Step 1 is optional if your push credentials have already been configured, as the
 
 1. Click **[!UICONTROL Submit]** to create your app configuration.
 
-## Step 2: Create your Live activity configuration {#config-live-activity}
+## Step 2: create your live activity configuration {#config-live-activity}
 
 1. In the left rail, browse to **[!UICONTROL Administration]** > **[!UICONTROL Channels]** and select **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]**. Click the **[!UICONTROL Create channel configuration]** button.
 

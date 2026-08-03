@@ -8,8 +8,39 @@ role: User
 level: Beginner
 keywords: external, API, optimizer, capping
 exl-id: 27859689-dc61-4f7a-b942-431cdf244455
+TQID: https://experienceleague.adobe.com/qIF3fCfcp54WIlVhIbL1FYU-RYOP8s9I4SxuznN-zxg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
+    internal-label: Action configuration
+  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
+    internal-label: Sandboxes
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
 ---
 # Integrate with external systems {#external-systems}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn the guardrails and best practices for integrating Adobe Journey Optimizer with external systems, including capping and throttling APIs, journey timeouts, and retries.
+
+>[!ENDSHADEBOX]
 
 This page presents the different guardrails provided by Journey Optimizer when integrating an external system, as well as best practices: how to optimize the protection of your external system using the capping API, how to configure journey timeout, and how retries work. 
 
@@ -31,7 +62,7 @@ When Journey Optimizer executes a call to an external API, the technical guardra
 
 ## Capping & throttling APIs {#capping}
 
-### About Capping & Throttling APIs
+### About capping & throttling apis
 
 When configuring a datasource or an action, you establish a connection to a system to either retrieve additional information to use in your journeys or send messages or API calls.
 
@@ -54,7 +85,7 @@ For more information on how to work with the APIs, refer to these sections:
 * [Capping API](capping.md)
 * [Throttling API](throttling.md)
 
-A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling/)
+A detailed description of the APIs is available in [Adobe Journey Optimizer APIs documentation](https://developer.adobe.com/journey-optimizer-apis/references/journeys-throttling)
 
 ### Data sources & custom actions capacity {#capacity}
 
@@ -75,6 +106,8 @@ For **custom actions**, you need to evaluate the capacity of your external API. 
 When an endpoint has a response time greater than 0.75 seconds, its custom action calls are routed through a dedicated **slow custom action service** instead of the default service.
 
 This slow custom action service applies a capping limit of 150,000 calls every 30 seconds. The limit is enforced using a sliding window, which can begin at any millisecond within that 30-second period. Once the window is full, additional calls are rejected with capping errors. The system does not wait for the next fixed interval but begins capping immediately after the 30-second threshold is reached.
+
+Additionally, to help prevent overloading an already slow endpoint, the slow custom action service temporarily caps all calls for up to 5 minutes if more than 20% of calls in any 120-second window exceed 10 seconds. This circuit breaker mechanism only applies if there are at least 200 calls in the 120-second window. This protection is currently available in a few regions and is being progressively rolled out to all regions in the upcoming days.
 
 Because slow endpoints can cause delays across all queued actions in the pipeline, it is recommended not to configure custom actions with endpoints that have slow response times. Routing such actions to the slow service helps protect overall system performance and prevents added latency for other custom actions.
 
@@ -100,7 +133,7 @@ Let's take an example for a timeout of 5 seconds.
     * If one of the three retries is successful before the end of the 5 seconds, the call is performed, and there is no error.
     * If the end of the timeout duration is reached during the retries, the call is canceled and counted as a timeout error in reporting. 
 
-## Frequently Asked Questions {#faq}
+## Frequently asked questions {#faq}
 
 You will find below Frequently Asked Questions about integrating Journey Optimizer with external systems.
 

@@ -9,8 +9,45 @@ role: Admin
 level: Intermediate
 keywords: IP, pools, deliverability
 exl-id: a9995ca1-d7eb-4f8d-a9d9-fe56198ac325
+TQID: https://experienceleague.adobe.com/mzP9buvUwW2h0QahDBXWxefokjZv-XziM-uFaPwg3Wg
+product_v2:
+  - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2:
+  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
+    internal-label: Best practices
+  - id: c343082f-e963-4f57-a96b-b64d27f8118e
+    internal-label: IP warmup plans
+  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
+    internal-label: Business rules
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 ---
 # Create IP warmup campaigns {#create-ip-warmup-campaign}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create and activate email campaigns dedicated to IP warmup so they can be scheduled and used within an IP warmup plan.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_ip_warmup"
@@ -56,6 +93,13 @@ To create an IP warmup campaign, follow the steps below.
     >CSV upload audiences are not supported for IP warmup campaigns and will result in an error upon campaign activation.
 
     For more information on how to configure a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
+
+1. Optionally, from the **[!UICONTROL Optimization]** section, add targeting rules to deliver different content to subsets of the audience based on profile attributes. [Learn more](../content-management/optimization-targeting.md)
+
+    If using targeting rules, keep in mind the following:
+
+    * The IP warmup campaign audience is evaluated **once** through the daily batch segmentation cycle. Profile membership is fixed at run activation and is not re-evaluated per run.
+    * Profile attributes used in targeting rules are read at the time each run is executed, reflecting the most recently ingested batch profile data — not real-time profile updates.
 
 1. [Activate](../campaigns/review-activate-campaign.md) the campaign. Its status changes to **[!UICONTROL Live]**.
 
