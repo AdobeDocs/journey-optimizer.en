@@ -83,11 +83,11 @@ The steps to enable wave sending depend on your context — read-audience journe
 
 1. Double-click the **[!UICONTROL Read Audience]** activity to open its properties and select the **[!UICONTROL Deliver journey action in waves]** option.
 
-    ![Read Audience activity properties panel showing the Deliver journey action in waves option enabled](assets/journey-wave-option.png){width="100%"}
+   ![Read Audience activity properties panel showing the Deliver journey action in waves option enabled](assets/journey-wave-option.png){width="100%"}
 
 1. Set the **number of waves** (for example, 4).
 
-    ![Number of waves field in the Read Audience activity set to 4](assets/journey-wave-number.png){width="80%"}
+   ![Number of waves field in the Read Audience activity set to 4](assets/journey-wave-number.png){width="80%"}
 
    >[!NOTE]
    >
@@ -101,7 +101,7 @@ The steps to enable wave sending depend on your context — read-audience journe
 
 1. In the **[!UICONTROL Schedule]** tab of your campaign, select **[!UICONTROL Deliver campaign actions in waves]**.
 
-    ![Campaign Schedule tab with the Deliver campaign actions in waves option selected](assets/campaign-wave-option.png){width="100%"}
+   ![Campaign Schedule tab with the Deliver campaign actions in waves option selected](assets/campaign-wave-option.png){width="100%"}
 
    >[!NOTE]
    >
@@ -114,6 +114,8 @@ The steps to enable wave sending depend on your context — read-audience journe
    >You must define at least 2 waves and can add up to 10 waves.
 
 1. Choose how to define wave size and timing as detailed in the [Wave size and timing](#wave-options) section below.
+
+>[!ENDTABS]
 
 <!--
 >[!TAB Orchestrated campaigns]
@@ -134,8 +136,6 @@ The steps to enable wave sending depend on your context — read-audience journe
 
 1. Choose how to define wave size and timing as detailed in the [Wave size and timing](#wave-options) section below.
 -->
-
->[!ENDTABS]
 
 ## Wave size and timing {#wave-options}
 
@@ -246,6 +246,7 @@ For complete understanding, this information should be combined with the documen
 * **TL;DR:** This page explains how to configure wave sending in Adobe Journey Optimizer to deliver outbound messages in controlled batches over time, improving deliverability and protecting sender reputation. Wave sending is available in read-audience journeys, action campaigns, and orchestrated campaigns.
 
 **Intents:**
+
 * Enable wave sending on a Read Audience journey, an Action campaign, or an Orchestrated campaign channel activity
 * Configure equal waves with a fixed interval between each wave
 * Define custom wave sizes as percentages or absolute profile counts
@@ -253,17 +254,20 @@ For complete understanding, this information should be combined with the documen
 * Control delivery volume to protect sender reputation or align with operational capacity
 
 **Glossary:**
+
 * **Wave sending**: A delivery mode that splits the audience into batches (waves) and sends messages to each batch at scheduled intervals instead of all at once *(product-specific)*
 * **Equal waves**: A configuration where the audience is split into equal-sized portions with a fixed interval between wave starts *(product-specific)*
 * **Custom distribution**: A configuration where each wave's size is defined manually as a percentage or absolute number of profiles *(product-specific)*
 * **Custom schedule**: A configuration where each wave has a specific start date and time, allowing non-uniform spacing *(product-specific)*
 
 **Contexts where wave sending is available:**
+
 * Read audience journeys ("As soon as possible" or "Once" scheduler only — not for recurring, event-triggered, business-event, test, or dry-run journeys)
 * Action campaigns (outbound channel actions only)
 <!-- * Orchestrated campaigns (outbound channel activities only, configured per channel activity) -->
 
 **Common guardrails (all contexts):**
+
 * Minimum 2 waves, maximum 10 waves
 * Minimum 30 minutes between the start of two consecutive waves
 * Wave start cannot be in the past
@@ -271,12 +275,14 @@ For complete understanding, this information should be combined with the documen
 * Number-based custom distribution does not auto-validate total coverage
 
 **Journey-specific guardrails:**
+
 * Wave start cannot be before journey start
 * Audience splitting can take up to 1 hour; profiles may be delayed
 * Two waves never run simultaneously within the same journey version
 * Wave starts can be delayed by platform quota limits or heavy system load
 
 **FAQ:**
+
 * **Q: Does wave sending apply to inbound channels?** — No; outbound only (Email, SMS, Push, Direct mail).
 * **Q: Can I assign different content to individual waves?** — No; same audience and content for all waves. Only size and timing can differ.
 * **Q: What is the minimum time between two waves?** — 30 minutes between the start of two consecutive waves.
@@ -284,4 +290,3 @@ For complete understanding, this information should be combined with the documen
 * **Q: Is the audience re-evaluated per wave?** — No; the audience is snapshotted at activation. Profile attributes (personalization, consent) are read at wave processing time.
 
 +++
-
