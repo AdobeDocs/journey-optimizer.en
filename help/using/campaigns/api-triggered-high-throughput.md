@@ -44,13 +44,9 @@ This page explains how High throughput campaigns differ from standard API trigge
 
 ## Guardrails & limitations
 
-*  **Access** - Available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on.
+* **Access** - Available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on.
 
 * **Channels**: Email and push notifications.
-
-  >[!NOTE]
-  >
-  >**Web push** — High Throughput web push campaigns run on shared infrastructure and do not benefit from the dedicated capacity reserved for High Throughput mobile push.
 
 * **Personalization**:  
 
@@ -72,11 +68,14 @@ This page explains how High throughput campaigns differ from standard API trigge
   * **AJO Message Feedback Event Dataset - Non Profile** — used for both email and push feedback.
   * **AJO Email Tracking Experience Event Dataset - Non Profile** — used for email tracking only. A dedicated non-profile tracking dataset for push is not yet available.
 
-* **Denylist behavior (push)** - For High Throughput push campaigns, when a message hits a denylist, delivery feedback is retained but no profile-update feedback is produced. This means denylist responses do not trigger profile updates or token invalidation in Adobe Experience Platform.
-
 * **Throughput allocation** - The throughput provisioned under the High Throughput add-on is exclusively reserved for high throughput campaigns. There is no sharing of throughput between standard and high throughput API triggered campaigns.
 
 * **Personalized PDF attachments** - Not supported when a High throughput campaign fails over to another region. [Learn more about personalized PDF attachments](../email/pdf-attachments.md#personalized-attachments)
+* **Push notifications**:
+
+  * **Web push** — High Throughput web push campaigns run on shared infrastructure and do not benefit from the dedicated capacity reserved for High Throughput mobile push.
+  * **Payload size** — The maximum payload size is 5 KB.
+  * **Denylist behavior** — When a message hits a denylist, delivery feedback is retained but no profile-update feedback is produced. This means denylist responses do not trigger profile updates or token invalidation in Adobe Experience Platform.
 
 ## Choosing between standard vs. High throughput campaigns
 
