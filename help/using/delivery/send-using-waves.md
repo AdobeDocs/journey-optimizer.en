@@ -28,7 +28,7 @@ You define the number of waves, their size (as a percentage of the audience or a
 
 ## Limitations and guardrails {#limitations-guardrails}
 
-The following limitations apply in all contexts:
+The following limitations apply to wave sending in any context:
 
 * You must define at least **2 waves** and you can add up to **10 waves**.
 * The minimum interval between the start of two waves is **30 minutes**.
