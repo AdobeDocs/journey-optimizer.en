@@ -63,9 +63,9 @@ The table below lists all Journey Optimizer system-generated datasets with their
 |AJO Message Feedback Event Dataset|Included|13 months|90 days|
 |AJO Email Tracking Experience Event Dataset|Included|13 months|90 days|
 |AJO Push Tracking Experience Event Dataset|Included|13 months|90 days|
-|AJO Surfaces Dataset|Included|n/a|n/a|
-|AJO Inbound Activity Event Dataset|Included|13 months|90 days|
-|AJO BCC Feedback Event Dataset *(formerly: AJO Secondary Recipient Feedback Event Dataset)*|Included|13 months|n/a|
+|AJO Surfaces Dataset|Included|13 months|n/a|
+|AJO Inbound Activity Event Dataset|Included|13 months|n/a|
+|AJO Secondary Recipient Feedback Event Dataset|Included|13 months|n/a|
 |AJO Entity Dataset *(formerly: Entity Event Dataset)*|Included|n/a|n/a|
 |Journey Step Events|Included|13 months|n/a|
 |AJO ExD Decision Event Dataset *(formerly: ODE DecisionEvents - prod decisioning)*|Requires Decisioning add-on|13 months|n/a|
