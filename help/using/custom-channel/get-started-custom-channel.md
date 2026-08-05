@@ -86,10 +86,40 @@ Custom channels are ideal for:
 
 Setting up and using a custom channel follows the main stages below:
 
-1. **Configure** (Admin) – An administrator creates a custom channel in the **Channel Builder**, defining the endpoint, authentication, throttling policy, and message payload structure. A channel configuration is then created and linked to the custom channel. [Learn more](configure-custom-channel.md)
-1. **Create** (Marketer) – A marketer adds the custom channel to a journey or campaign, selects a channel configuration, and authors the message payload using [!DNL Journey Optimizer]'s personalization editor. [Learn more](create-custom-experience.md)
+1. **Configure** (Admin) – An administrator creates a custom channel in the **Channel Builder**, defining the endpoint, authentication, throttling policy, and message payload structure. A channel configuration is then created and linked to the custom channel.
+1. **Create** (Marketer) – A marketer adds the custom channel to a journey or campaign, selects a channel configuration, and authors the message payload using [!DNL Journey Optimizer]'s personalization editor.
 1. **Send** – When a profile qualifies, [!DNL Journey Optimizer] sends the personalized payload to the configured endpoint. The external system processes the call and delivers the message.
-1. **Monitor** (Admin/Marketer) – Administrators and marketers can monitor the custom channel's performance and reliability through [!DNL Journey Optimizer]'s reporting and monitoring dashboards. [Learn more](monitor-custom-channel.md)
+1. **Monitor** (Admin/Marketer) – Administrators and marketers can monitor the custom channel's performance and reliability through [!DNL Journey Optimizer]'s reporting and monitoring dashboards.
+
+<table style="table-layout:fixed"><tr style="border: 0;">
+<td>
+<a href="configure-custom-channel.md">
+<img alt="Configure" src="../assets/do-not-localize/inapp-config.jpg">
+</a>
+<div>
+<a href="configure-custom-channel.md"><strong>Configure a custom channel</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="create-custom-experience.md">
+<img alt="Create" src="../assets/do-not-localize/inapp-create.jpeg">
+</a>
+<div>
+<a href="create-custom-experience.md"><strong>Create a custom channel experience</strong></a>
+</div>
+<p>
+</td>
+<td>
+<a href="monitor-custom-channel.md">
+<img alt="Monitor" src="../assets/do-not-localize/inapp-report.jpg">
+</a>
+<div>
+<a href="monitor-custom-channel.md"><strong>Monitor a custom channel</strong></a>
+</div>
+<p>
+</td>
+</tr></table>
 
 <!--
 ## Next steps {#next-steps}

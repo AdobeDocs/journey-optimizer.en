@@ -105,7 +105,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
    <!--At minimum, `Content-Type` and `Charset` are available as default headers.-->
 
-   ![Headers configuration](assets/custom_channel_endpoint_headers.png){width="70%"}
+   ![Headers configuration](assets/custom_channel_endpoint_headers.png){width="60%"}
 
    For each header, you can define whether its value is:
 
@@ -114,11 +114,11 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
 1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Query parameters are appended to the endpoint URL at delivery time. Constant parameters are always added with the same value; variable parameters are resolved at send time, for example to pass a user identifier from the profile.
 
-   ![Query parameters](assets/custom_channel_endpoint_query_param.png){width="70%"}
+   ![Query parameters](assets/custom_channel_endpoint_query_param.png){width="60%"}
 
 1. In the **[!UICONTROL Policy configuration]** section, define how [!DNL Journey Optimizer] handles request throughput and failures. This is important to ensure that your external system can handle the volume of requests and to avoid overwhelming it.
 
-   ![Policy configuration](assets/custom_channel_endpoint_policy_config.png)
+   ![Policy configuration](assets/custom_channel_endpoint_policy_config.png){width="70%"}
 
    * **[!UICONTROL Enable throttling]** – Disabled by default. Set the maximum number of requests per second (default: **5,000c**). Once the limit is reached, requests are queued and sent as soon as possible.
    * **[!UICONTROL Enable retry]** – Enabled by default. Set the maximum retry count (default: **3**, configurable range: 0–10) for failed requests. This helps to avoid overwhelming the endpoint during transient failures.

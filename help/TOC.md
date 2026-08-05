@@ -7,11 +7,10 @@ type: Documentation
 solution: Journey Optimizer
 nudge: yes
 ---
-
 # Adobe Journey Optimizer Help {#using}
   
 + [Journey Optimizer documentation](ajo-home.md)
-+ What's new? {#whats-new}
++ What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md)
   + {hide-from-toc}[Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
@@ -63,7 +62,6 @@ nudge: yes
     + [Create a journey](/help/rp_landing_pages/create-journey-landing-page.md)
     + [Create your first journey](using/building-journeys/journey-gs.md)
     + [Set your journey properties](using/building-journeys/journey-properties.md)
-    + [Send using waves in journeys](using/building-journeys/send-using-waves.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + Simulation {#simulate-journey}
@@ -82,8 +80,6 @@ nudge: yes
     + [Use supplemental identifiers in journeys](using/building-journeys/supplemental-identifier.md)
     + [Work with journey step events](using/reports/journey-step-events-overview.md)
     + [Time zone management](using/building-journeys/timezone-management.md)
-    + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
-    + [Channel optimization](using/building-journeys/channel-optimization.md)
     + [End your journey](using/building-journeys/end-journey.md)
   + Activities {#about-journey-building}
     + [Activities](/help/rp_landing_pages/about-journey-building-landing-page.md)
@@ -170,7 +166,6 @@ nudge: yes
     + [Edit the campaign content](using/campaigns/campaign-content.md)
     + [Define the campaign audience](using/campaigns/campaign-audience.md)
     + [Schedule the campaign](using/campaigns/campaign-schedule.md)
-    + [Send using waves](using/campaigns/send-using-waves.md)
     + [Review & activate an Action campaign](using/campaigns/review-activate-campaign.md)
   + API-triggered campaigns {#api-triggered-campaigns}
     + [API-triggered campaigns](/help/rp_landing_pages/api-triggered-campaigns-landing-page.md)
@@ -253,6 +248,10 @@ nudge: yes
   + Journey arbitration {#journey-arbitration}
     + [Use formulas to rank journeys](using/conflict-prioritization/journey-ranking-formulas.md)
     + [Use AI models to rank journeys](using/conflict-prioritization/journey-ai-models.md)
++ Delivery settings {#delivery-settings}
+  + [Send using waves](using/delivery/send-using-waves.md)
+  + [Send-Time optimization](using/building-journeys/send-time-optimization.md)
+  + [Channel optimization](using/building-journeys/channel-optimization.md)
 + Test & approve {#test}
   + [Test, validate & approve](/help/rp_landing_pages/test-landing-page.md)
   + Preview & test content {#preview-test}
@@ -455,17 +454,17 @@ nudge: yes
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
       + [Configure Live activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
   + Custom channels {#custom-channel}
-    + {hide-from-toc} [Get started with custom channels](using/custom-channel/get-started-custom-channel.md)
+    + [Get started with custom channels](using/custom-channel/get-started-custom-channel.md)
     + Configure custom channels {#configure-custom-channel}
-      + {hide-from-toc} [Set up your custom channels](using/custom-channel/configure-custom-channel.md)
-      + {hide-from-toc} [Create a custom channel](using/custom-channel/create-custom-channel.md)
-      + {hide-from-toc} [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
-      + {hide-from-toc} [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
-      + {hide-from-toc} [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
+      + [Set up your custom channels](using/custom-channel/configure-custom-channel.md)
+      + [Create a custom channel](using/custom-channel/create-custom-channel.md)
+      + [Manage API credentials](using/custom-channel/custom-channel-api-credentials.md)
+      + [Delegate a subdomain](using/custom-channel/custom-channel-subdomains.md)
+      + [Create a channel configuration](using/custom-channel/custom-channel-configuration.md)
     + Create custom channel experiences {#create-custom-channel-experiences}
-      + {hide-from-toc} [Create a custom channel experience](using/custom-channel/create-custom-experience.md)
-      + {hide-from-toc} [Test your custom channel experience](using/custom-channel/test-custom-channel.md)
-    + {hide-from-toc} [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
+      + [Create a custom channel experience](using/custom-channel/create-custom-experience.md)
+      + [Test your custom channel experience](using/custom-channel/test-custom-channel.md)
+    + [Monitor custom channels](using/custom-channel/monitor-custom-channel.md)
 + Content management {#content-management}
   + [Content management](/help/rp_landing_pages/content-management-landing-page.md)
   + Personalization {#personalization}
@@ -640,7 +639,7 @@ nudge: yes
       + [Campaign report](using/reports/campaign-global-report-cja.md)
       + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
       + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
-      + [Custom channel campaign report](using/reports/campaign-global-report-cja-custom-channel.md)
+      + [Custom channel campaign report](using/reports/campaign-global-report-cja-custom.md)
       + [Direct mail campaign report](using/reports/campaign-global-report-cja-direct.md)
       + [Email campaign report](using/reports/campaign-global-report-cja-email.md)
       + [Experimentation campaign report](using/reports/campaign-global-report-cja-experimentation.md)
