@@ -188,5 +188,3 @@ The following capabilities have been added to administration in this release.
 ### Usability improvements {#july-26-usability}
 
 The following usability improvements are coming in this release.
-
-* **Quick launch shortcuts for SMS, Push, In-App, and Codebase channels in Content Templates** - The **More actions** button in the Content Templates list now provides additional channel-specific shortcuts. For SMS templates, quickly edit the message or check the character count/segments. For Push templates, edit the title, body, or media. For In-App templates, edit the message header, message body, or media URL. For Codebase channel templates, edit the code directly. These shortcuts extend the Email channel quick launch shortcuts already available. <!-- Documentation link: TBD -->
