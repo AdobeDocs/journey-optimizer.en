@@ -322,7 +322,7 @@ Specific guardrails apply to **Journey Fragments**, including a maximum of **20 
 
 #### Send using waves {#waves-g}
 
-Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../building-journeys/send-using-waves.md#limitations-guardrails).
+Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../delivery/send-using-waves.md#limitations-guardrails).
 
 #### Journey simulation {#simulation-g}
 
@@ -418,9 +418,9 @@ Journey Optimizer supports a peak volume of **500 transactional messages per sec
 
 This section covers guardrails for content creation and management, including landing pages, subdomains, and fragments.
 
-### AI Assistant guardrails {#ai-assistant-g}
+### Generate Content guardrails {#ai-assistant-g}
 
-Guardrails and limitations for **AI Assistant content generation** — including supported channels (email, push, web, SMS) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
+Guardrails and limitations for **Generate Content** — including supported channels (email, push, web, SMS) and personalization editor limitations — are listed on [this page](../content-management/gs-generative.md#generative-guardrails).
 
 ### Landing pages guardrails {#lp-guardrails}
 

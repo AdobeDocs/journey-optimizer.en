@@ -7,8 +7,6 @@ feature: Journeys
 topic: Content Management
 role: Admin
 level: Intermediate
-hide: true
-badge: label="Private beta" type="Informative"
 mini-toc-levels: 1
 exl-id: d3ad85f0-7f7e-40ab-b8c4-fc0c1234be87
 feature_v2: []
@@ -54,10 +52,6 @@ subfeature_v2: []
 </table>
 
 >[!ENDSHADEBOX]
-
->[!AVAILABILITY]
->
->This feature is currently in **private beta**. For full details about the release cycle and availability phases in [!DNL Journey Optimizer], see [release cycle](../rn/releases.md).
 
 Before a customer transaction can be applied to a loyalty challenge, it must be in the **Adobe Loyalty Event** format that the Challenge Service understands. Customer events — from a POS system, a mobile app, an e-commerce platform, or any other source — typically use the customer's own data schema. **Event Transformers** bridge this gap without requiring any changes to the upstream system.
 
@@ -116,7 +110,7 @@ Every event definition must produce a JSON object in the following format. This 
 | `guid`                         | String           | No (system-assigned) | System-assigned unique ID; read-only. |
 | `name`                         | String           | **Yes**              | Human-readable label, e.g. `"Starbucks POS Purchase"`. |
 | `xdmSchemaId`                  | String           | **Yes**              | Matches events by XDM schema ID (see How Matching Works). |
-| `schema`                       | String           | No                   | [JSON Schema](https://json-schema.org/) (as a string) to validate incoming events. |
+| `schema`                       | String           | **Yes**              | [JSON Schema](https://json-schema.org/) (as a string) to validate incoming events. |
 | `transformer`                  | String           | **Yes**              | JSONata expression mapping the event to Loyalty format. |
 
 ## How Matching Works
@@ -461,9 +455,9 @@ A challenge task with `include: ["BEVERAGE"]` would see the coffee line item qua
 
 +++
 
-## Adding JSON Schema Validation (Optional)
+## Adding JSON Schema Validation
 
-If you want the platform to validate the structure of incoming events before attempting transformation, set the `schema` field to a [JSON Schema](https://json-schema.org/draft-04) document encoded as a JSON string.
+The `schema` field is required. Set it to a [JSON Schema](https://json-schema.org/draft-04) document encoded as a JSON string to validate the structure of incoming events before transformation runs.
 
 Events that fail schema validation are rejected before transformation runs. The error response includes the specific validation failure, making it easy to diagnose malformed upstream events.
 
@@ -683,4 +677,5 @@ Without `utc_offset`, daypart window matching and consecutive-day streak countin
 For DCCS events, the transformer receives only the `xdmEntity` body — not the outer AJO envelope. All paths must be relative to the XDM entity root. If your expression references fields that live in the outer envelope (e.g. `/body/xdmMeta/...`) they will not be found and will silently produce null.
 
 +++
+
 

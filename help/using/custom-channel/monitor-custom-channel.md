@@ -9,11 +9,21 @@ level: Beginner
 
 # Monitor custom channels {#monitor-custom-channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to manage the lifecycle of your custom channels and monitor delivery performance through Adobe Journey Optimizer's out-of-the-box reporting, including metrics such as successful deliveries, errors, and link clicks.
+
+>[!ENDSHADEBOX]
+
 Once a custom channel is created and activated, you can [manage its lifecycle](create-custom-channel.md#access-channel-builder) and monitor delivery performance through the [!DNL Journey Optimizer] interface.
 
 ## Leverage campaign and journey reports {#reporting}
 
 [!DNL Journey Optimizer] provides out-of-the-box reporting for custom channels.
+
+The Custom channel campaign report is detailed in [this section](../reports/campaign-global-report-cja-custom.md).
+
+<!--The Custom channel journey report is detailed in this section. TBC-->
 
 The following metrics are available for custom channels in both live (24h) and global (CJA) reports.<!--TBC and add or replace with CJA link when available-->
 

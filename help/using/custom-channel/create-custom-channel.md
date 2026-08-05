@@ -10,6 +10,12 @@ badge: label="Limited Availability" type="Informative"
 
 # Set up a custom channel {#create-custom-channel}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create a custom channel in Adobe Journey Optimizer using the Channel Builder, by defining the endpoint URL, headers, authentication, throttling policy, and message payload structure.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_custom_channel_settings"
 >title="About custom channels"
@@ -34,7 +40,7 @@ To access the **Channel Builder** and manage your custom channels, follow the st
 
 1. Select **[!UICONTROL Custom channels]** under the **[!UICONTROL Channel builder]** section.
 
-   ![Custom channels inventory](assets/custom_channels_inventory.png){width="70%"}
+   ![Custom channels inventory](assets/custom_channels_inventory.png){width="100%"}
 
 1. The inventory lists all custom channels in your sandbox, including their current status and the authentification type used to connect to the external endpoint.
 
@@ -48,7 +54,7 @@ To access the **Channel Builder** and manage your custom channels, follow the st
 
 1. To archive a channel, open it from the inventory and click **[!UICONTROL Archive]**.
 
-   Archiving an active channel removes it from all selection drop-downs — campaign action selector, journey actions palette, orchestrated campaigns channel list, channel configurations, and content templates. Existing journeys and campaigns that already use the channel continue to function normally.
+   Archiving an active channel removes it from all selection drop-downs — campaign action selector, journey actions palette, <!--orchestrated campaigns channel list,--> channel configurations, and content templates. Existing journeys and campaigns that already use the channel continue to function normally.
 
 ## Create a custom channel {#create-channel}
 
@@ -58,7 +64,7 @@ To create a new custom channel, follow the steps below.
 
    ![General settings](assets/custom_channel_properties.png){width="70%"}
 
-1. In the **[!UICONTROL Properties]** section, enter a **[!UICONTROL Name]** for your custom channel. This name will appear in the journeys canvas, campaign action selector, and orchestrated campaigns channel list.
+1. In the **[!UICONTROL Properties]** section, enter a **[!UICONTROL Name]** for your custom channel. This name will appear in the journeys canvas and campaign action selector<!--and orchestrated campaigns channel list-->.
 
    >[!NOTE]
    >
@@ -82,9 +88,9 @@ To create a new custom channel, follow the steps below.
 
 You must configure the endpoint, which is the HTTP URL of your external messaging system. [!DNL Journey Optimizer] sends a POST request to this endpoint with the personalized payload when a profile qualifies in a campaign or journey.
 
-![Endpoint configuration](assets/custom_channel_endpoint_configuration.png){width="70%"}
+![Endpoint configuration](assets/custom_channel_endpoint_configuration.png){width="80%"}
 
-1. In the **[!UICONTROL Endpoint configuration]** section, enter the host **[!UICONTROL URL]** of your external messaging system.
+1. In the **[!UICONTROL Endpoint configuration]** section, enter the host **[!UICONTROL URL]** of your external messaging system. For example: `https://api.my-messaging-provider.com/v1/messages`.
 
    <!--The HTTP method to is currently set to **POST**.-->
 
@@ -99,7 +105,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
    <!--At minimum, `Content-Type` and `Charset` are available as default headers.-->
 
-   ![Headers configuration](assets/custom_channel_endpoint_headers.png)
+   ![Headers configuration](assets/custom_channel_endpoint_headers.png){width="60%"}
 
    For each header, you can define whether its value is:
 
@@ -108,11 +114,11 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
 1. Optionally, add **[!UICONTROL Query parameters]** using the same constant/variable pattern. Query parameters are appended to the endpoint URL at delivery time. Constant parameters are always added with the same value; variable parameters are resolved at send time, for example to pass a user identifier from the profile.
 
-   ![Query parameters](assets/custom_channel_endpoint_query_param.png){width="70%"}
+   ![Query parameters](assets/custom_channel_endpoint_query_param.png){width="60%"}
 
 1. In the **[!UICONTROL Policy configuration]** section, define how [!DNL Journey Optimizer] handles request throughput and failures. This is important to ensure that your external system can handle the volume of requests and to avoid overwhelming it.
 
-   ![Policy configuration](assets/custom_channel_endpoint_policy_config.png)
+   ![Policy configuration](assets/custom_channel_endpoint_policy_config.png){width="70%"}
 
    * **[!UICONTROL Enable throttling]** – Disabled by default. Set the maximum number of requests per second (default: **5,000c**). Once the limit is reached, requests are queued and sent as soon as possible.
    * **[!UICONTROL Enable retry]** – Enabled by default. Set the maximum retry count (default: **3**, configurable range: 0–10) for failed requests. This helps to avoid overwhelming the endpoint during transient failures.
@@ -129,7 +135,7 @@ You must configure the endpoint, which is the HTTP URL of your external messagin
 
 Select the **[!UICONTROL Authentication type]** that you need to use for this channel. The available options depend on the authentication methods supported by your external messaging system.
 
-![Authentication type](assets/custom_channel_authentication_type.png){width="70%"}
+![Authentication type](assets/custom_channel_authentication_type.png){width="85%"}
 
 Provide the authentication details as required by your endpoint.
 
@@ -159,7 +165,17 @@ In the payload configuration, define the structure of the message payload and wh
 
 1. Click **[!UICONTROL Define payload]**, and choose how to define the payload:
 
-   * **[!UICONTROL Paste sample JSON payload]** – Paste a representative JSON object, and [!DNL Journey Optimizer] automatically infers a schema from it.
+   * **[!UICONTROL Paste sample JSON payload]** – Paste a representative JSON object, and [!DNL Journey Optimizer] automatically infers a schema from it. For example:
+
+     ```json
+     {
+       "channelId": "KakaoTalk08",
+       "title": "Flash Sale: 48 Hours Only",
+       "body": "New arrivals just dropped. Shop now before they're gone!",
+       "image": "https://demo-system-next.s3.amazonaws.com/assets/luma/luma-flash-sale-banner.jpg"
+     }
+     ```
+
    * **[!UICONTROL Import JSON schema]** (Coming soon) – Upload a complete JSON schema file.
 
       >[!AVAILABILITY]
@@ -168,7 +184,7 @@ In the payload configuration, define the structure of the message payload and wh
 
 1. After the schema is generated, [!DNL Journey Optimizer] displays all detected fields in a form view.
 
-    ![](assets/custom_channel_payload_configuration.png)
+    ![Payload configuration](assets/custom_channel_payload_configuration.png){width="80%"}
 
 1. For each field, configure the following settings:
 
