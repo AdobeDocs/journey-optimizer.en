@@ -117,55 +117,55 @@ From the **[!UICONTROL More actions]** button next to each template, you can acc
 
 Additional shortcuts are available depending on the channel, access the drop-down below to learn more:
 
-* +++ For email templates
++++ For email templates
 
-  * **[!UICONTROL Edit subject line]**: Quickly update the email subject line.
-  * **[!UICONTROL Edit email body]**: Open the email designer to modify the template content.
-  * **[!UICONTROL View proof]**: View a proof of the email template.
-  * **[!UICONTROL Send proof]**: Send a proof of the template to designated recipients.
-  * **[!UICONTROL Spam report]**: Analyze the template against spam filters.
-  * **[!UICONTROL Render email]**: Preview how the email renders across different email clients.
+* **[!UICONTROL Edit subject line]**: Quickly update the email subject line.
+* **[!UICONTROL Edit email body]**: Open the email designer to modify the template content.
+* **[!UICONTROL View proof]**: View a proof of the email template.
+* **[!UICONTROL Send proof]**: Send a proof of the template to designated recipients.
+* **[!UICONTROL Spam report]**: Analyze the template against spam filters.
+* **[!UICONTROL Render email]**: Preview how the email renders across different email clients.
 
-  ![](assets/content-template-quick-launch.png)
+![](assets/content-template-quick-launch.png)
 
-  +++ 
++++
 
-* +++ For SMS templates
++++ For SMS templates
 
-  * **[!UICONTROL Edit message]**: Quickly update the SMS message content.
-  * **[!UICONTROL Check character count/segments]**: Check the character count and number of segments used by the message.
+* **[!UICONTROL Edit message]**: Quickly update the SMS message content.
+* **[!UICONTROL Check character count/segments]**: Check the character count and number of segments used by the message.
 
-  ![](assets/content-template-quick-launch-sms.png)
+![](assets/content-template-quick-launch-sms.png)
 
-  +++ 
++++
 
-* +++ For Push notification templates
++++ For Push notification templates
 
-  * **[!UICONTROL Edit title]**: Quickly update the push notification title.
-  * **[!UICONTROL Edit body]**: Quickly update the push notification body text.
-  * **[!UICONTROL Edit media]**: Update the media attached to the push notification.
+* **[!UICONTROL Edit title]**: Quickly update the push notification title.
+* **[!UICONTROL Edit body]**: Quickly update the push notification body text.
+* **[!UICONTROL Edit media]**: Update the media attached to the push notification.
 
-  ![](assets/content-template-quick-launch-push.png)
+![](assets/content-template-quick-launch-push.png)
 
-  +++ 
++++
 
-* +++ For In-app templates
++++ For In-app templates
 
-  * **[!UICONTROL Edit message heard]**: Quickly update the in-app notification header.
-  * **[!UICONTROL Edit message body]**: Quickly update the in-app notification body text.
-  * **[!UICONTROL Edit media URL]**: Update the media URL displayed in the in-app notification.
+* **[!UICONTROL Edit message header]**: Quickly update the in-app notification header.
+* **[!UICONTROL Edit message body]**: Quickly update the in-app notification body text.
+* **[!UICONTROL Edit media URL]**: Update the media URL displayed in the in-app notification.
 
-  ![](assets/content-template-quick-launch-in-app.png)
+![](assets/content-template-quick-launch-in-app.png)
 
-  +++ 
++++
 
-* +++ For Code-based templates
++++ For Code-based templates
 
-  * **[!UICONTROL Edit code]**: Open the code editor to modify the template content.
+* **[!UICONTROL Edit code]**: Open the code editor to modify the template content.
 
-  ![](assets/content-template-quick-launch-code.png)
+![](assets/content-template-quick-launch-code.png)
 
-  +++ 
++++
 
 
 To edit a template's full content, click the desired item from the list and make the desired changes. You can also edit the content template properties by clicking the edit button next to the template's name.
