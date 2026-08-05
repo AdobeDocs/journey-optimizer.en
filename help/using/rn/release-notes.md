@@ -58,11 +58,23 @@ topic_v2:
 
 ### Content Management
 
-* **Flexible Image Sourcing for AI Content Generation** - Generating content in Journey Optimizer now sources brand-approved images directly from Adobe Experience Manager Assets Essentials and up. Three modes control the balance: Balanced (Digital Asset Management-first, AI fills gaps, default), Assets (Digital Asset Management-sourced), and Creative (AI-first). This ensures every visual is accurate, brand-compliant, and production-ready for journeys and campaigns. [Learn more](../content-management/generative-uc.md#image-mode)
-
-  Availability date: August 5, 2026
-
-  ![](../content-management/assets/image-mode-3.png)
+<table>
+<thead>
+<tr>
+<th><strong>Flexible Image Sourcing for AI Content Generation</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Generating content in Journey Optimizer now sources brand-approved images directly from Adobe Experience Manager Assets Essentials and up. Three modes control the balance: Balanced (Digital Asset Management-first, AI fills gaps, default), Assets (Digital Asset Management-sourced), and Creative (AI).</p>
+<p><img src="../content-management/assets/image-mode-3.png"></p>
+<p>For more information, refer to the <a href="../content-management/generative-uc.md#image-mode">detailed documentation</a>.</p>
+<p> Availability date: August 5, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 ## July '26 release notes {#july-26-updates}
