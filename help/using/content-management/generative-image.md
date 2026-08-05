@@ -61,10 +61,14 @@ Learn how to craft effective prompts and configure image settings to generate vi
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
 
-    ![Generate Content image generation panel with options](assets/image-genai-2-bis.png){zoomable="yes"}
+    ![Generate Content image generation panel with options](assets/image-genai-2.png){zoomable="yes"}
 
 1. Tailor your prompt with the **[!UICONTROL Image settings]** option:
 
+    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md#image-mode)
+        * **[!UICONTROL Assets]**: Uses matching images from the Digital Asset Management as reference content, otherwise add reference content manually.
+        * **[!UICONTROL Balanced]**: Reference content first, then AI if needed.
+        * **[!UICONTROL Creative]**: Generative AI without relying directly on the Digital Asset Management.
     * **[!UICONTROL Generative model]**: Select from the ready-to-use **[!UICONTROL Adobe model]**, the **[!UICONTROL Partner model]** for specialized capabilities, or **[!UICONTROL Custom models]** trained on your brand assets. [Learn more](generative-models.md). To use the partner (**Gemini**) model with **text overlays** on generated images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Aspect ratio]**: This determines the width and height of the asset. You have the option to choose from common ratios such as 16:9, 4:3, 3:2, or 1:1, or you can enter a custom size.
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
@@ -104,7 +108,7 @@ After generating image variations, you can review the results, check brand align
 
     * **[!UICONTROL Save]** to store the assets for later access.
 
-        ![Refine options showing available actions](assets/image-genai-5-bis.png){zoomable="yes"}
+        ![Refine options showing available actions](assets/image-genai-5.png){zoomable="yes"}
 
 1. Click **[!UICONTROL Select]** once you found the appropriate content.
 
@@ -143,12 +147,16 @@ After accessing Generate Content, you can adjust the generation settings to crea
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns.
     
-    ![Generate Content image generation for push](assets/push-gen-img-bis.png){zoomable="yes"}
+    ![Generate Content image generation for push](assets/push-gen-img.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Image]** as field to generate.
 
 1. Choose your **[!UICONTROL Image settings]**:
 
+    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md#image-mode)
+        * **[!UICONTROL Assets]**: Uses matching images from the Digital Asset Management as reference content, otherwise add reference content manually.
+        * **[!UICONTROL Balanced]**: Reference content first, then AI if needed.
+        * **[!UICONTROL Creative]**: Generative AI without relying directly on the Digital Asset Management.
     * **[!UICONTROL Generative model]**: Select from the ready-to-use **[!UICONTROL Adobe model]**, the **[!UICONTROL Partner model]** for specialized capabilities, or **[!UICONTROL Custom models]** trained on your brand assets. [Learn more](generative-models.md). To use the partner (**Gemini**) model with **text overlays** on generated images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
