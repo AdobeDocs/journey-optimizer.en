@@ -96,7 +96,7 @@ TTL applies only to time-series datasets. Record-type datasets (such as entity d
 
 +++Will this change apply to production sandboxes only or will it apply to dev sandboxes as well?
 
-This change will apply to all sandbox types.
+This change applies to all sandbox types.
 
 +++
 
