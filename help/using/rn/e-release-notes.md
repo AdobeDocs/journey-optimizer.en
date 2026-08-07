@@ -212,9 +212,11 @@ The following improvement has been added to administration in this release.
 
 ### Usability improvements {#august-26-usability}
 
-The following improvement has been added to usability in this release.
+The following improvements have been added to usability in this release.
 
 * **New content simulation experience for content variants** - The **Simulate content** workflow introduces a redesigned experience: all variants now render together in a single scrollable grid (side-by-side, stacked, or wrapped layouts), replacing the one-variant-at-a-time view. A single bottom action bar consolidates navigating between test variants, zoom, viewport switching (desktop/mobile), locale switching, adding sample inputs, generating variants with AI, picking and saving simulated users, and importing or exporting variants. Removing the left rail and collapsing extra header layers gives previews significantly more room. A **Switch to classic experience** option in the bottom action bar lets you revert to the previous experience at any time. <a href="https://jira.corp.adobe.com/browse/DOCAC-15285">DOCAC-15285</a> <!-- Documentation link: TBD -->
+
+* **Bulk operations in journey inventory** - You can now perform new bulk actions directly from the journey inventory list, making it faster to manage multiple journeys at once. Select several journeys and apply any of the following new actions in a single step: add to package, delete, move to folder, edit tags, or manage access. This reduces the need to repeat the same action one journey at a time, streamlining journey management for teams working with large numbers of journeys. <a href="https://jira.corp.adobe.com/browse/DOCAC-15358">DOCAC-15358</a> <!-- Documentation link: TBD -->
 
 <!--
 ## June '26 pre-release notes {#june-26-rn}
