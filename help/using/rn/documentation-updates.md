@@ -25,6 +25,12 @@ subfeature_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
+## August 2026 {#august-2026}
+
+* The **Datasets Time-to-live (TTL) guardrails** page has been updated with a significantly expanded **Impacted datasets** table, now covering all Journey Optimizer system-generated datasets (including several not previously listed, such as the AJO Consent Service, Interactive Messaging Profile, Push Profile, and Message Export datasets) along with a new **Availability** column indicating whether each dataset is included by default or requires a specific add-on or license. The **Guardrails and limitations** page has also been updated to reflect the confirmed enforcement date for this guardrail: the change will be enforced on **existing customer sandboxes** starting **October 1, 2026**. [Read more](../data/datasets-ttl.md#datasets)
+
+* A new **Use Image settings mode** section has been added to the generative content documentation. It explains the **Balanced**, **DAM**, and **Creative** modes available under **[!UICONTROL Image settings]**, which control whether AI-generated content sources images from your Digital Asset Management library, generates them with AI, or blends both. [Read more](../content-management/generative-uc.md#image-mode)
+
 ## July 2026 {#july-2026} 
 
 * A new **Delivery settings** section has been added to the documentation navigation. It groups delivery-related features that apply across journeys, campaigns, and orchestrated campaigns: **Send using waves**, **Send-Time optimization**, and **Channel optimization** have all been moved there from the Journeys section.
