@@ -347,9 +347,9 @@ The following capabilities and improvements have been added to content managemen
 
   ![](../content-management/assets/fragment-quick-launch.png)
 
-* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. Additional channel-specific shortcuts are also available: for email templates, edit the subject line and email body, view or send a proof, run a spam report, and render the email; for SMS templates, edit the message or check the character count and number of segments; for push templates, edit the title, body, or media; for in-app templates, edit the message header, message body, or media URL; and for code-based templates, edit the code directly. [Learn more](../content-management/access-content-templates.md#edit)
+* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. Additional channel-specific shortcuts are also available: for email templates, edit the email body, view or send a proof, run a spam report, and render the email; for SMS templates, check the character count and number of segments. [Learn more](../content-management/access-content-templates.md#edit)
 
-  ![](../content-management/assets/content-template-quick-launch.png)
+  ![](../content-management/assets/content-template-quick-launch-email.png)
 
 * **New helper functions in personalization expressions** - New helper functions are now available in personalization expressions:
 
