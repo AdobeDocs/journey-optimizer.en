@@ -115,6 +115,10 @@ The main steps to work with Decisioning are as follows:
     ➡️ [Learn how to work with decision policies](create-decision.md)
     ➡️ To successfully deliver the offer via the code-based experience channel, follow the implementation steps in [this section](../code-based/code-based-implementation-samples.md).
 
+>[!NOTE]
+>
+>Profiles that receive a decision through a journey or campaign count toward your organization's **Engageable Profiles** license metric, along with profiles engaged through other Journey Optimizer capabilities. [Monitor your Engageable Profiles count](../audience/license-usage.md)
+
 ## Decisioning process {#process}
 
 The chart below summarizes the end-to-end Decisioning process — from managing decision items and configuring selection strategies, to embedding decision policies into a code-based experience journey or campaign.

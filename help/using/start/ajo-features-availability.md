@@ -57,7 +57,6 @@ Channel, content, and platform features marked **All base offers** are available
 
 | Feature | Status | Applies to | Available since | Notes |
 |---------|--------|-----------|-----------------|-------|
-| Send Time Optimization (STO) for mobile messaging | Beta | All base offers | H2 2026 | AI-driven per-profile optimal send time for SMS, RCS, and WhatsApp; available in journeys and campaigns |
 | New Mobile Message channel (SMS, MMS, RCS) | GA | All base offers | May 20, 2026 | Unifies SMS/MMS/RCS; native RCS authoring (images, carousels) |
 | Deep links in the Email Designer | GA | All base offers | May 12, 2026 | Requires mobile app configuration |
 | Optimize email for AI inboxes | GA | All base offers | April 17, 2026 | Apple Intelligence, Gmail Gemini |
@@ -93,8 +92,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Action activity in journeys | GA | Journeys; Campaigns & Journeys | February 20, 2026 | Replaces deprecated native channel activities |
 | Content decision activity | GA | Journeys; Campaigns & Journeys | February 10, 2026 | Previously LA |
 | Quiet hours (time-based exclusions) | GA | Journeys; Campaigns & Journeys | January 29, 2026 | Previously LA |
-| AI Assistant for journey expressions | Beta | Journeys; Campaigns & Journeys | June 3, 2026 | Public Beta |
-| Send Time Optimization (STO) for mobile messaging | Beta | Journeys; Campaigns & Journeys | H2 2026 | AI-driven per-profile optimal send time for SMS, RCS, and WhatsApp; see Channels tab |
+| Generate content for journey expressions | Beta | Journeys; Campaigns & Journeys | June 3, 2026 | Public Beta |
 | Journey arbitration | LA | Journeys; Campaigns & Journeys | February 24, 2026 | Contact your Adobe representative |
 | Journey arbitration – AI models | LA | Journeys; Campaigns & Journeys | April 2026 | Contact your Adobe representative |
 | Dataset lookup support in journeys | LA | Journeys; Campaigns & Journeys | March 2026 | For customers entitled to dataset lookup |
@@ -115,7 +113,6 @@ Channel, content, and platform features marked **All base offers** are available
 | Trigger orchestrated campaigns using a signal | GA | Campaigns; Campaigns & Journeys | March 2026 | Remains a batch campaign |
 | Transactional category in orchestrated campaigns | GA | Campaigns; Campaigns & Journeys | March 2026 | Rolled out gradually by region |
 | Wave sending of outbound messages (campaigns) | GA | Campaigns; Campaigns & Journeys | February 19, 2026 | LA in journeys |
-| Send Time Optimization (STO) for mobile messaging | Beta | Campaigns; Campaigns & Journeys | H2 2026 | AI-driven per-profile optimal send time for SMS, RCS, and WhatsApp; see Channels tab |
 | Batch campaigns | GA | Campaigns; Campaigns & Journeys | Core capability | Scheduled, audience-based sends |
 | Orchestrated campaigns (multi-step workflows) | GA | Campaigns; Campaigns & Journeys | Core capability | email, SMS, push, direct mail only |
 | Transactional messaging | GA | All base offers | Core capability | email, push, SMS; included with every base offer |
@@ -128,7 +125,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Integrations (third-party data sources) | GA | All base offers | May 4, 2026 | Previously Beta |
 | Restrict inheritance breaking in fragments | GA | All base offers | May 21, 2026 | Lock fragments against local edits |
 | Adobe Express integration | GA | All base offers | April 23, 2026 | Previously LA |
-| AI Assistant for personalization expressions | GA | All base offers | April 13, 2026 | In personalization editor and Email Designer |
+| Generate content for personalization expressions | GA | All base offers | April 13, 2026 | In personalization editor and Email Designer |
 | Convert images to email content templates | GA | All base offers | March 31, 2026 | Previously LA |
 | Landing page custom forms | GA | All base offers | March 26, 2026 | Previously LA (US and Australia) |
 | Integration of custom Firefly and third-party image models | GA | All base offers | March 2, 2026 | Adobe, Partner (Gemini), and custom models |
@@ -139,7 +136,7 @@ Channel, content, and platform features marked **All base offers** are available
 | Content fragments | GA | All base offers | Core capability | Reusable content blocks |
 | Content templates | GA | All base offers | Core capability | — |
 | Personalization editor | GA | All base offers | Core capability | Expression-based personalization |
-| AI Assistant for content generation | GA | All base offers | Core capability | Requires AI licensing terms |
+| Generate Content | GA | All base offers | Core capability | Requires AI licensing terms |
 
 >[!TAB Decisioning]
 
@@ -194,7 +191,3 @@ All Decisioning features require the **Decisioning** add-on. See [Packages and c
 - **Understand what's in your package** — [Packages and capabilities](ajo-packages.md)
 - **See everything that shipped** — [Release notes](../rn/release-notes.md) | [2026 release notes](../rn/release-notes-2026.md)
 - **Get started** — [Get started with Journey Optimizer](get-started.md)
-
----
-
-Three rows added — one in each of the **Channels**, **Journeys**, and **Campaigns** tabs — following the same cross-tab pattern used for wave sending. The feature is marked **Beta / H2 2026** since the ticket targets second-half 2026 and the capability is not yet GA. The Channels tab carries the authoritative description; the Journeys and Campaigns rows are short cross-references pointing readers to the Channels tab for details.

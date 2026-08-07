@@ -82,6 +82,16 @@ From the **[!UICONTROL More actions]** button next to each fragment, you can:
 
 ![](assets/fragment-list-more-actions.png)
 
+### Quick launch shortcuts {#quick-launch-fragments}
+
+From the **[!UICONTROL More actions]** button next to each fragment, the following quick launch shortcuts are also available:
+
+* **[!UICONTROL Edit]** — Open the fragment editor directly.
+* **[!UICONTROL Open]** — Open the fragment details and preview screen.
+* **[!UICONTROL Discard draft]** — Discard the current draft version and revert to the last published version.
+
+![](assets/fragment-quick-launch.png)
+
 ### Bulk actions {#bulk-actions-fragments}
 
 You can select multiple fragments at once and apply bulk operations to all of them. Available operations include adding items to a package, moving them to a folder, editing tags, managing access, and archiving. [Learn more about bulk actions →](../start/search-filter-categorize.md#bulk-actions)
@@ -186,7 +196,7 @@ To edit a fragment, follow the steps below.
     >
     >When editing a published fragment, you can remove any personalization field, but you cannot add new ones to the fragment content. If you want to add personalized attributes, you must duplicate the fragment. [Learn more](#adding-new-attributes)
 
-1. Once your changes are ready, save them and click the **[!UICONTROL Publish]** button to make your modifications live. [Learn more](create-fragments.md#publish)
+1. Once your changes are ready, save them, then go back to the framgent details screen and click the **[!UICONTROL Publish]** button to make your modifications live. [Learn more](create-fragments.md#publish)
 
 When you edit a fragment, the changes are automatically propagated to all contents using that fragment, including live journeys and campaigns - except for contents where you have broken inheritance from the original fragment.
 

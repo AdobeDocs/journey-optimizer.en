@@ -86,6 +86,29 @@ Once sent, you can measure the impact of your direct mail campaign or journey wi
 * [Direct mail campaign report](../reports/campaign-global-report-cja-direct.md)
 * [Direct mail journey report](../reports/journey-global-report-cja-direct.md)
 
+## Understand export timing and file generation {#dm-export-timing}
+
+Direct mail exports run on fixed 4-hour UTC cycles at **02:01**, **06:01**, **10:01**, **14:01**, **18:01**, and **22:01**.
+
+Profiles are included in the *next* export cycle after they reach the Direct mail activity. This means file creation is based on when profiles arrive at the Direct mail node, not when the campaign or journey was first activated.
+
+* **Why you can receive multiple files in one day** - If profiles reach the Direct mail activity in different 4-hour windows, Journey Optimizer generates separate export files for each window. This is expected behavior.
+
+  For example:
+
+  * Profiles arriving before **14:01** are exported at **14:01**.
+  * Profiles arriving from **14:02** to **18:01** are exported at **18:01**.
+
+  This does not duplicate profiles, it batches them by arrival window.
+
+* **Update Profile activity timing** - In journeys, the **[!UICONTROL Update profile]** activity executes immediately at journey runtime when a profile reaches that activity. It does not wait for the Direct mail export cycle.
+
+* **Recommendations for one-file-per-day scenarios** - If you need one file per day, consider the following options:
+
+  * **24-hour routing frequency**: Guarantees one file per day, but introduces delivery latency.
+  * **Wait Until Time of Day**: Can align profiles into the same export window, but results depend on journey timing.
+  * **4-hour routing frequency**: Provides the lowest latency, but may generate multiple files per day.
+
 ## Manage consent for direct mail {#dm-consent-management}
 
 In [!DNL Journey Optimizer], consent is handled by the Experience Platform [Consent schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/consents.html){target="_blank"}. By default, the value for the consent field is empty and treated as consent to receive your communications.

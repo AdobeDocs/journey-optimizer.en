@@ -214,6 +214,89 @@ The following example lets you calculate the total sum of prices for products in
 {{sum}}
 ```
 
+## Abort {#abort}
+
+>[!AVAILABILITY]
+>
+>This feature is currently in Limited Availability.
+
+The `abort` helper stops message delivery when it is reached during rendering.
+
+Use a conditional block such as `{%#if%}` to control when the helper runs. When `abort` is executed, delivery is aborted.
+
+**Syntax**
+
+```handlebars
+{{abort code='code' description='description'}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+| --- | --- |
+| `code` | Optional abort code included in the raised error. |
+| `description` | Optional human-readable reason for aborting. |
+
+**Example**
+
+```handlebars
+{%#if profile.person.email = ""%}
+  {{abort code='ERR_001' description='Missing email'}}
+{%/if%}
+Hello {{profile.person.name.firstName}}!
+```
+
+In this example, rendering proceeds when `email` is present. When the condition matches, delivery is aborted with the provided `code` and `description`.
+
+## Parse JSON {#parse-json}
+
+The `parseJson` helper parses a JSON string and stores the parsed object in a template variable so you can access fields directly in personalization expressions.
+
+**Syntax**
+
+```handlebars
+{{parseJson jsonStr=jsonStringPath result="variableName"}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+| --- | --- |
+| `jsonStr` | The JSON string to parse. This can be a data reference or a literal JSON string. |
+| `result` | The variable name that stores the parsed object. |
+
+**Example**
+
+```handlebars
+{{parseJson jsonStr=targetResponse.options.content result="offerContent"}}
+{{offerContent.title}}
+```
+
+## Value at path {#value-at-path}
+
+The `valueAtPath` helper assigns a value from a data path to a template variable. You can optionally use an index to extract a specific element from arrays or collections.
+
+**Syntax**
+
+```handlebars
+{{valueAtPath path idx=indexPath result="value"}}
+```
+
+**Parameters**
+
+| Parameter | Description |
+| --- | --- |
+| `path` | The source path from which to extract the value (positional parameter). |
+| `idx` | Optional 0-based index used to extract a specific element from an array or collection. |
+| `result` | The variable name that stores the extracted value. |
+
+**Example**
+
+```handlebars
+{{valueAtPath targetResponse.prefetch.mboxes idx=0 result="firstMbox"}}
+{{firstMbox.name}}
+```
+
 ## Url {#url}
 
 The `url` helper is used to track links, shorten URLs and insert [deep links](../../email/deeplinks.md) in your SMS message content.
@@ -306,9 +389,9 @@ Upon runtime, the metadata value is added to the existing **[!UICONTROL Message 
 
 **Limitations**
 
-There is an upper limit of 2kb on the key value pairs per action. If the 2Kb limit is exceeded, the message is still delivered, but any of the key value pairs can be truncated.
-
-Metadata is not captured for profiles excluded from the action. When a profile is excluded from receiving a message, no metadata entry is created for that profile in the dataset.
+* You can pass a maximum of 50 key-value pairs per action.
+* The total metadata payload is limited to 2 KB per action. If the 2 KB limit is exceeded, the message is still delivered, but any key-value pair can be truncated.
+* Metadata is not captured for profiles excluded from the action. When a profile is excluded from receiving a message, no metadata entry is created for that profile in the dataset.
 
 **Example**
 

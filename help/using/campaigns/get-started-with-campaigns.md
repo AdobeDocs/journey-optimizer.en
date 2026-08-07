@@ -1,8 +1,3 @@
-The directory doesn't exist locally, so I'll output the complete updated file content directly as requested.
-
----
-
-```markdown
 ---
 solution: Journey Optimizer
 product: journey optimizer
@@ -205,6 +200,10 @@ Before working with campaigns, make sure you have the following in place:
 
 * **Audiences** - Audiences must be available in Adobe Experience Platform before creating campaigns. [Get started with audiences →](../audience/about-audiences.md)
 
+    >[!NOTE]
+    >
+    >Every profile engaged by a campaign counts toward your organization's **Engageable Profiles** license metric (rolling 12-month window, counted once per sandbox). Activating a campaign to a large or new audience can cause a significant increase in this count. [Monitor your Engageable Profiles count](../audience/license-usage.md)
+
 * **Channel configurations** - Channel configurations (presets) must be created and available for the channels you want to use. [Set up channel configurations →](../configuration/channel-surfaces.md)
 
 * **Permissions** - You need appropriate permissions based on the campaign type. Contact your administrator if you cannot access campaign functionalities. [Learn about built-in roles →](../administration/ootb-product-profiles.md)
@@ -256,7 +255,7 @@ Set up the foundation of your campaign:
 2. **Select campaign type** (Action, API-triggered, or Orchestrated)
 3. **Choose your audience** 
 4. **Set priority** if using conflict management
-5. **Configure schedule** (for Action campaigns) or API details (for API-triggered). For Action campaigns, you can also [send using waves](send-using-waves.md) to deliver the message in batches over time.
+5. **Configure schedule** (for Action campaigns) or API details (for API-triggered). For Action campaigns, you can also [send using waves](../delivery/send-using-waves.md) to deliver the message in batches over time.
 
 **Type-specific guides:** [Action campaign properties](campaign-properties.md) | [API-triggered campaign properties](api-triggered-campaign-properties.md) | [Orchestrated campaign setup](../orchestrated/create-orchestrated-campaign.md)
 
@@ -343,18 +342,6 @@ Schedule campaigns for specific dates/times, set recurring deliveries, and optim
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/ai-machine-learning.svg)
-
-**Send Time Optimization for mobile messaging**
-
-Let AI determine the best moment to reach each individual recipient on SMS, RCS, and WhatsApp. Journey Optimizer analyzes each profile's historical engagement patterns and predicts the time window when they are most likely to open, click, or respond—so messages arrive when recipients are ready to engage, not just when the batch runs.
-
-Enable the **Send Time Optimization** toggle when configuring your campaign or journey schedule to activate this capability for mobile messaging channels.
-
-[Learn about Send Time Optimization](../content-management/gs-message-optimization.md)
-:::
-
-:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
 **Rate control**
@@ -405,16 +392,3 @@ Use targeting rules and content experiments to deliver personalized content and 
 :::
 
 ::::
-```
-
----
-
-The only change from the original is the addition of a new **Send Time Optimization for mobile messaging** landing card inserted between the "Scheduling & timing" and "Rate control" cards. It:
-
-- Explains what STO does (AI analyzes historical engagement patterns per profile, predicts the best send window)
-- Names the supported channels explicitly: SMS, RCS, and WhatsApp
-- Notes it applies to both campaigns and journeys
-- Describes the UI entry point: the **Send Time Optimization** toggle in the schedule configuration
-- Links to the existing optimization reference page (`gs-message-optimization.md`), consistent with how the existing "Optimization" card links
-
-All frontmatter IDs are preserved verbatim.

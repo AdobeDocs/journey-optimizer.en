@@ -127,8 +127,6 @@ For you content experiment, you can choose between three types of experiment:
 
 1. When setting up an experiment using the In-app or Web channel and choosing the **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]**, **[!UICONTROL Page Views]** , or **[!UICONTROL Unique Page Views metrics]** , the **[!UICONTROL Dimensions]** field enables you to precisely track and monitor clicks and views on specific pages.
 
-    ![](assets/content_experiment_20.png)
-
 1. If you created an API-triggered campaign, select **[!UICONTROL A/B Experiment]** from the **[!UICONTROL Experiment type]** drop-down.
 
 1. Click **[!UICONTROL Add treatment]** to create as many new treatment as needed.
@@ -154,8 +152,6 @@ For you content experiment, you can choose between three types of experiment:
     ![](assets/content_experiment_12.png)
 
 1. You can then choose to allocate a precise percentage to each **[!UICONTROL Treatment]** or simply switch on the **[!UICONTROL Distribute evenly]** toggle bar.
-
-    ![](assets/content_experiment_13.png)
 
 1. Enable the auto-scale experiment to automatically roll out the winning variation of your experiment. [Learn more on how to scale the winner](#scale-winner)
 
@@ -245,7 +241,7 @@ Note that Bring your own Multi-armed bandit experiment is only available with th
 
 ## Design your treatments {#treatment-experiment}
 
-1. From the **[!UICONTROL Edit content]** window, select your treatment B to change the content.
+1. From the **[!UICONTROL Content]** tab, select your treatment B to change the content.
 
     Here, we choose to not specify the offer in the **[!UICONTROL Subject line]**.
 
@@ -255,15 +251,14 @@ Note that Bring your own Multi-armed bandit experiment is only available with th
 
     ![](assets/content_experiment_9.png)
 
-1. After designing your treatments, click **[!UICONTROL More actions]** to access options related to your treatments: **[!UICONTROL Rename]**, **[!UICONTROL Duplicate]** and **[!UICONTROL Delete]**.
-
-    ![](assets/content_experiment_7.png)
-
-1. If needed, access the **[!UICONTROL Experiment settings]** menu to change your treatments configuration.
+1. If needed, from the **[!UICONTROL Action]** tab, access the **[!UICONTROL Experiment settings]** menu to change your treatments configuration.
 
     ![](assets/content_experiment_19.png)
 
-1. Once your message content has been defined, use either simulation method to control the rendering of your delivery and check personalization settings: click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation, or click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more](../content-management/preview-test.md)
+1. Once your message content has been defined, use either simulation method to control the rendering of your delivery and check personalization settings: 
+
+   * Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation.
+   * Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles. [Learn more](../content-management/preview-test.md)
 
 After configuring your experimentation, you can follow the success of your delivery with your report. [Learn more](../reports/campaign-global-report-cja-experimentation.md)
 

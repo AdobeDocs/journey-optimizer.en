@@ -73,8 +73,29 @@ This feature enables marketers to present relevant, rich media content to users,
 </td>
 </tr></table>
 
+## Use cases
+
+Content cards work best when you want a message to stay available for users to act on at their own pace, rather than interrupting them the moment it arrives.
+
+| Benefit | Why | Example use cases |
+| --- | --- | --- |
+| Persistent visibility | Cards remain in the app or website until the user dismisses them | Ongoing promotions, feature highlights users can revisit |
+| Non-intrusive delivery | Integrates into the interface instead of interrupting the user | Passive updates shown alongside other content |
+| Works without push opt-in | Delivered in-app or on-site, independent of push notification consent | Reaching users who have disabled push notifications |
+| Visually rich messaging | Supports media and call-to-action buttons | Product spotlights with images and a "Shop now" button |
+
+## When not to use
+
+Content cards are meant for content users can view at their own pace, so they are not suited to every scenario. Consider another channel in the following situations:
+
+* The message is a time-sensitive alert, since users may not open the app or website in time to see the card
+* The target users are inactive, since content cards only display within the app or website and inactive users will never see them
+* The content is sensitive or requires secure handling that a persistent, visible card cannot guarantee
+* The message needs an urgent call to action, such as a flash sale, where a push notification or email would prompt faster action
+
 ## Additional resources
 
 * **[Content cards in landing pages](content-card-lp.md)** - Discover how to implement content cards in landing pages for enhanced engagement.
 * **[Content card reporting](content-card-report.md)** - Track and analyze content card performance with detailed metrics and insights.
 * **[Content card tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/content-cards/create-content-cards){target="_blank"}** - Explore step-by-step video tutorials on content card features and best practices.
+

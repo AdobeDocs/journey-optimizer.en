@@ -88,3 +88,7 @@ Using [!DNL Journey Optimizer] with [!DNL Customer Journey Analytics] might lead
 * **Reports are being served from a different datasource.** 
     
     This could lead to between 1-2% data discrepancies between products.
+
+* **A dataset was recently added to the reporting connection.** 
+
+    The automatic historical backfill for a newly added dataset can take a couple of days to complete. Until it finishes, historical reporting for that dataset may show as incomplete or zero, even though new data is already flowing in correctly. Note that this is expected behavior, not data loss.

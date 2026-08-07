@@ -52,14 +52,17 @@ topic_v2:
 
 As a **Marketer** or **Business Practitioner**, you design customer journeys to deliver personal, contextual experiences to customers. You create and manage all the various components of these personalized journeys, including email and push messages, offers, and decision components to intelligently personalize message content. Journey Optimizer provides a unified user experience where you can implement entire end-to-end use cases in one place. You can start working with [!DNL Adobe Journey Optimizer] once the [System Administrator](administrator.md) and the [Data Engineer](data-engineer.md) granted you access and prepared your environment.
 
+>[!NOTE]
+>
+>**Implementation order:** [Administrator](administrator.md) → [Data Engineer](data-engineer.md) → [Developer](developer.md) → You are here: **Marketer**
+>
+>Confirm [environment setup](administrator.md) and [data configuration](data-engineer.md) are complete before building journeys.
+
 ## Get started with the essentials
 
-Journey Optimizer brings together real-time customer insights, modern omnichannel orchestration, and intelligent decisioning in a single application. Create personalized, connected customer experiences across email, SMS, push, web push, in-app, web, direct mail, content cards, and more.
-
-Journey Optimizer offers two powerful orchestration approaches:
-
-* **Journeys**: Real-time, one-to-one engagement where each customer moves through at their own pace, triggered by behavior or events
-* **Orchestrated campaigns**: Complex, multi-step batch campaigns at scale where audiences progress together through workflows—perfect for brand-initiated campaigns like seasonal promotions, product launches, or account-based communications
+>[!NOTE]
+>
+>New to Journey Optimizer? Read [What is Journey Optimizer](../get-started.md) before starting this guide.
 
 Work with your [Administrators](administrator.md) to gain access and with [Data Engineers](data-engineer.md) to set up audiences, data, and relational schemas for advanced segmentation. See the [Get started with data management](../../data/gs-data.md) overview to understand what data setup is needed before you can build journeys and campaigns.
 
@@ -68,7 +71,7 @@ Follow these core steps to start building experiences:
 1. **Create audiences**. Build audiences through segment definitions, upload CSV files, or use audience composition. Journey Optimizer offers multiple ways to target the right customers. Learn more about [audiences](../../audience/about-audiences.md) and [creating segment definitions](../../audience/creating-a-segment-definition.md).
 
 1. **Design content**. Create compelling messages across all channels including email, SMS, push, web push, in-app, web, direct mail, and content cards:
-   * Use the **AI Assistant** to generate email content, subject lines, and images based on your brand guidelines. [Learn about AI content generation](../../content-management/gs-generative.md)
+   * Use AI to generate email content, subject lines, and images based on your brand guidelines. [Learn about AI content generation](../../content-management/gs-generative.md)
    * **Personalize messages** with customer data, dynamic content, and conditional logic. [Learn about personalization](../../personalization/personalize.md)
    * **Iterate over contextual data** to display dynamic lists from events, custom actions, and dataset lookups. [Learn about iterating contextual data](../../personalization/iterate-contextual-data.md)
    * Create reusable **content templates** and **fragments** to maintain brand consistency. [Work with templates](../../content-management/content-templates.md)
@@ -135,7 +138,7 @@ Follow these core steps to start building experiences:
 
 * **Start with templates**: Use pre-built templates and content fragments to speed up creation and maintain consistency
 * **Test early, test often**: Always preview content across devices and use test profiles to validate personalization
-* **Leverage AI wisely**: Use AI Assistant for initial drafts and variations, but always review and refine for your brand voice
+* **Leverage AI wisely**: Use AI for initial drafts and variations, but always review and refine for your brand voice
 * **Keep it simple**: Clear, concise messages with strong calls-to-action perform better than complex layouts
 
 ### Journey design
@@ -150,7 +153,7 @@ Follow these core steps to start building experiences:
 
 ### Campaign orchestration
 
-* **Choose the right approach**: [Compare journey types](../../building-journeys/journey.md#journey-types) for real-time, behavior-triggered experiences or [campaign types](../../campaigns/get-started-with-campaigns.md#campaign-types) for scheduled, batch campaigns
+* **Choose the right approach**: See [Journeys vs Campaigns](../journeys-vs-campaigns.md) to decide between real-time orchestration and scheduled delivery, then [Journey types: choose the right one](../../building-journeys/journey-types-selection.md) to pick the right journey type
 * **Define clear campaign objectives**: Establish goals before designing multi-step workflows
 * **Start with pilot audiences**: Validate counts and segmentation logic before scaling
 * **Leverage relational data**: Use multi-entity segmentation to connect customer data with accounts, purchases, subscriptions for precise targeting
@@ -240,6 +243,17 @@ Collaborate with [Administrators](administrator.md) on access and configurations
 ## Next steps
 
 1. **Start small**: Create a simple welcome journey or single-message campaign to learn the platform
-2. **Leverage AI**: Use AI Assistant to ask questions and accelerate content creation
+2. **Leverage AI**: Use AI to ask questions and accelerate content creation
 3. **Join the community**: Connect with other Journey Optimizer users in the [Experience League Community](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"}
 4. **Explore tutorials**: Watch step-by-step videos on [Experience League](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"}
+
+## Other role guides {#other-role-guides}
+
+| Role | Guide |
+|------|-------|
+| Administrator | [Get started for administrators](administrator.md) |
+| Data Engineer | [Get started for data engineers](data-engineer.md) |
+| Developer | [Get started for developers](developer.md) |
+| Marketer | [Get started for marketers](marketer.md) |
+
+Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../../rp_landing_pages/get-started-landing-page.md)

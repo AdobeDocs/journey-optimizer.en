@@ -110,7 +110,7 @@ For customers identified as having a high risk of churn, create a dedicated audi
 
     ![](assets/uc-interest-8.png){zoomable="yes"}
 
-This audience is then saved to Experience Cloud, where it can later be used for a specific targeted campaign.
+This audience is then saved in [!DNL Adobe Experience Platform], where it can later be used for a specific targeted campaign.
 
 ## Low/medium risk segments {#low-medium-risk}
 

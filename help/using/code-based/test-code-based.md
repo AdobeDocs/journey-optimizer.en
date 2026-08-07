@@ -123,7 +123,7 @@ When building code-based experiences for web pages or mobile apps, you can previ
        
         >[!NOTE]
         >
-        >**Adobe Experience Platform Assurance** is a product from Adobe Experience Cloud to help you inspect, proof, simulate, and validate how you collect data or serve experiences in your mobile app. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}
+        >**Adobe Experience Platform Assurance** is a product from [!DNL Adobe CX Enterprise] to help you inspect, proof, simulate, and validate how you collect data or serve experiences in your mobile app. [Learn more](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home){target="_blank"}
 
 1. If you are using any [other platform](code-based-configuration.md#other) in your code-based configuration, choose the [surface URI](code-based-surface.md#surface-uri) that you want to preview from the drop-down list.
 

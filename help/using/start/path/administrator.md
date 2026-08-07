@@ -57,6 +57,12 @@ Your primary responsibilities include setting up user groups and permissions, cr
 
 These capabilities can be managed by **[!UICONTROL Product administrators]** that have access to the Permissions product. [Learn more about Permissions](../../administration/permissions.md){target="_blank"}.
 
+>[!NOTE]
+>
+>**Implementation order:** You are here: **Administrator** → [Data Engineer](data-engineer.md) → [Developer](developer.md) → [Marketer](marketer.md)
+>
+>The Administrator sets up the environment first. Data engineers, developers, and marketers depend on this work being complete before they can begin.
+
 ## Set up access and permissions
 
 Follow these steps to configure access management:
@@ -161,6 +167,7 @@ Collaborate with [Marketers](marketer.md) on permissions and channel setup:
 * Configure channels they'll use (email, push, SMS, etc.)
 * Support testing environments and approval workflows
 * Enable access to new features and capabilities
+* Share decision guides to help your team choose the right approach: [Journeys vs Campaigns](../journeys-vs-campaigns.md) and [Journey types: choose the right one](../../building-journeys/journey-types-selection.md)
 
 >[!ENDTABS]
 
@@ -171,3 +178,14 @@ Once the environment is configured:
 1. **Verify setup**: Confirm that all team members can access their required features
 2. **Monitor usage**: Use the administration dashboards to track system usage and identify issues
 3. **Maintain permissions**: Regularly review and update permissions as team roles evolve
+
+## Other role guides {#other-role-guides}
+
+| Role | Guide |
+|------|-------|
+| Administrator | [Get started for administrators](administrator.md) |
+| Data Engineer | [Get started for data engineers](data-engineer.md) |
+| Developer | [Get started for developers](developer.md) |
+| Marketer | [Get started for marketers](marketer.md) |
+
+Back to [Roles and responsibilities overview](../quick-start.md) · Back to [Get started](../../../rp_landing_pages/get-started-landing-page.md)

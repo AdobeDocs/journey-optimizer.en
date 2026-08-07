@@ -43,6 +43,29 @@ You can now send WhatsApp messages directly through Journey Optimizer via Meta's
 
 ![](assets/do-not-localize/whatsapp-beta.png){zoomable="yes"}
 
+## Use cases {#use-cases}
+
+WhatsApp works best when your audience already uses the platform and you want to combine rich content with a genuinely two-way conversation.
+
+| Benefit | Why | Example use cases |
+| --- | --- | --- |
+| High global engagement | Widely used messaging platform with strong adoption in many regions | Reaching international audiences already active on WhatsApp |
+| Rich, interactive messages | Supports images, videos, buttons, and quick replies | Product catalogs, appointment confirmations with quick-reply options |
+| Two-way conversational experiences | Recipients can reply within the same thread | Customer support conversations, order tracking questions |
+| Interactive multi-screen experiences | WhatsApp Flow templates let you build guided, multi-step interactions within the chat | Surveys, lead capture forms |
+| Compliance and trust via official API | Delivered through Meta's verified Cloud API with sender verification | Brand-verified communications that build recipient trust |
+| Integration with other channels | Can be layered with journeys and campaigns alongside other channels | Multi-channel journeys using WhatsApp as a complementary touchpoint |
+
+## When not to use {#when-not-to-use}
+
+WhatsApp depends on audience adoption and explicit consent, so it is not suited to every scenario. Consider another channel in the following situations:
+
+* Your audience does not use WhatsApp, since adoption varies widely by region and demographic
+* Recipients have not given explicit opt-in, which is required by Meta's messaging policies
+* The message is urgent and needs guaranteed delivery, which SMS or push handles better given WhatsApp's delivery and template review constraints
+* The content is lengthy or complex and better suited to email, which offers more space and richer formatting
+* Real-time conversational support is not feasible on your side, since two-way WhatsApp threads set an expectation of a timely reply
+
 ## Pre-requisites {#prereq}
 
 Integrating WhatsApp with Journey Optimizer requires the following:

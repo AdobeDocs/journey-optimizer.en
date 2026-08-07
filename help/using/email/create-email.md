@@ -59,6 +59,8 @@ topic_v2:
 >id="ajo_message_email"
 >title="Email creation"
 >abstract="Define your email subject line, and open the Email Designer to create the content of the email."
+>additional-url="https://experienceleague.adobe.com/en/courses/ajo-ai-powered-on-brand-content-creation-for-marketers" text="Take the AI content course"
+
 
 ## Add an email action {#email-action}
 
@@ -223,9 +225,13 @@ Two types of alerts can happen:
 >[!CONTEXTUALHELP]
 >id="ajo_email_minification"
 >title="Reduce HTML size"
->abstract="Enable this option to compress your email HTML during publishing by removing unnecessary whitespace, indentation, and non-essential comments. This helps prevent email clipping in clients such as Gmail, which truncates messages exceeding 100 KB. Note that when working with multilingual emails, this option is enabled by default for all locales."
+>abstract="Enable this option to compress your email HTML during publishing by removing unnecessary whitespace and indentation. This helps prevent email clipping in clients such as Gmail, which truncates messages exceeding 100 KB. Note that when working with multilingual emails, this option is enabled by default for all locales."
 
-[!DNL Journey Optimizer] allows you to compress your email HTML version during the publishing process by removing unnecessary whitespace, indentation, and non-essential comments. Keeping HTML size small helps you:
+[!DNL Journey Optimizer] allows you to compress your email HTML version during the publishing process by removing unnecessary whitespace and indentation. Keeping HTML size small helps you:
+
+>[!NOTE]
+>
+>Removal of non-essential HTML comments is also part of optimization, but this capability has been temporarily disabled as of July 10, 2026.
 
 * Avoid **email clipping** — some clients such as Gmail truncate messages larger than ~100 KB, preventing recipients from viewing the full content.
 * Improve **email load time** in the recipient's inbox.

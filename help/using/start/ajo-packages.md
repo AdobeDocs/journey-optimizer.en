@@ -21,13 +21,11 @@ hide: true
 
 [!DNL Adobe Journey Optimizer] uses a modular packaging model. Start with the base offer that matches your primary use case, then add the channels and advanced capabilities you need.
 
+Package availability and included capabilities may vary based on your agreement, selected add-ons, and regional availability. Contact your Adobe representative for details specific to your organization.
+
 >[!TIP]
 >
 >**Not sure which model you're on?** If you purchased [!DNL Adobe Journey Optimizer] under the modular packaging model, the base offers and add-ons described on this page apply to you. If you see **Select**, **Prime**, or **Ultimate** referenced in your contract, you are on a legacy packaging model — contact your Adobe representative to confirm your current entitlements.
-
->[!NOTE]
->
->Package availability and included capabilities may vary based on your agreement, selected add-ons, and regional availability. Contact your Adobe representative for details specific to your organization.
 
 ## Quick answers {#quick-answers}
 
@@ -41,9 +39,9 @@ No. [!DNL Adobe Journey Optimizer] uses a modular model: the base offer determin
 
 +++**What is the difference between Campaigns and Journeys?**
 
-**Campaigns** are audience-based and marketer-planned — you define an audience, create a message, and schedule or trigger it as a batch send. They are best for promotional outreach, newsletters, and multi-step audience workflows.
+**[Campaigns](../campaigns/get-started-with-campaigns.md)** are audience-based and marketer-planned — you define an audience, create a message, and schedule or trigger it as a batch send. They are best for promotional outreach, newsletters, and multi-step audience workflows.
 
-**Journeys** are real-time and event-driven — they react to individual customer behavior as it happens and orchestrate 1:1 experiences across touchpoints. They are best for onboarding flows, post-purchase sequences, and real-time triggered messages.
+**[Journeys](../building-journeys/journey-gs.md)** are real-time and event-driven — they react to individual customer behavior as it happens and orchestrate 1:1 experiences across touchpoints. They are best for onboarding flows, post-purchase sequences, and real-time triggered messages.
 
 **Campaigns & Journeys** gives you both capabilities in a single license.
 
@@ -59,8 +57,8 @@ Three base offers are available. Each one matches a different way of engaging cu
 
 | Base offer | Best for | Core behavior |
 |-----------|---------|--------------|
-| **Journey Optimizer – Campaigns** | Batch, marketer-planned outreach | Audience-based, scheduled orchestration. Single or multi-step campaign workflows for batch engagement and marketer-planned outreach. |
-| **Journey Optimizer – Journeys** | Real-time customer engagement | Event-driven, 1:1 orchestration. Supports both real-time and scheduled journey delivery. |
+| **[Journey Optimizer – Campaigns](../campaigns/get-started-with-campaigns.md)** | Batch, marketer-planned outreach | Audience-based, scheduled orchestration. Single or multi-step campaign workflows for batch engagement and marketer-planned outreach. |
+| **[Journey Optimizer – Journeys](../building-journeys/journey-gs.md)** | Real-time customer engagement | Event-driven, 1:1 orchestration. Supports both real-time and scheduled journey delivery. |
 | **Journey Optimizer – Campaigns & Journeys** | Customers needing both | Combines audience-based campaign orchestration and real-time journey orchestration. |
 
 >[!IMPORTANT]
@@ -71,13 +69,13 @@ Three base offers are available. Each one matches a different way of engaging cu
 
 | | Journey Optimizer – Campaigns | Journey Optimizer – Journeys | Journey Optimizer – Campaigns & Journeys |
 |--|:-----------------------------:|:----------------------------:|:----------------------------------------:|
-| Audience-based batch orchestration | ✓ | Limited¹ | ✓ |
-| Real-time event-driven orchestration | — | ✓ | ✓ |
+| [Audience-based batch orchestration](../campaigns/get-started-with-campaigns.md) | ✓ | Limited<sup>1</sup> | ✓ |
+| [Real-time event-driven orchestration](../building-journeys/journey-gs.md) | — | ✓ | ✓ |
 | Transactional messaging (email, push, SMS) | ✓ | ✓ | ✓ |
-| Channel add-ons available | ✓ | ✓ | ✓ |
-| Decisioning add-on available | ✓ | ✓ | ✓ |
+| [Channel add-ons available](#channel-addons) | ✓ | ✓ | ✓ |
+| [Decisioning add-on available](#decisioning-addon) | ✓ | ✓ | ✓ |
 
-¹ In **Journey Optimizer – Journeys**, audience-based orchestration is supported only within journey use cases, not as standalone batch campaigns.
+<sup>1</sup> In **Journey Optimizer – Journeys**, audience-based orchestration is supported only within journey use cases, not as standalone batch campaigns.
 
 ## Step 2 — Add the channels you need {#channel-addons}
 
@@ -89,7 +87,7 @@ Channels are not bundled into the base offer. Select the channel add-on or add-o
 
 Reach audiences through outbound messaging channels.
 
-**Includes:** email, push notifications, direct mail
+**Includes:** [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [direct mail](../direct-mail/get-started-direct-mail.md)
 
 **Typical use cases:** promotional emails, transactional push alerts, physical mail campaigns
 
@@ -101,7 +99,7 @@ Includes Deliverability Fundamentals for IP warming support on new instances. Fo
 
 Engage app users with in-session and persistent mobile experiences.
 
-**Includes:** in-app messaging, push notifications, content cards, code-based channels for mobile surfaces
+**Includes:** [in-app messaging](../in-app/get-started-in-app.md), [push notifications](../push/get-started-push.md), [content cards](../content-card/get-started-content-card.md), [code-based channels](../code-based/get-started-code-based.md) for mobile surfaces
 
 **Typical use cases:** onboarding flows, feature announcements, loyalty nudges, real-time in-app offers
 
@@ -111,7 +109,7 @@ Engage app users with in-session and persistent mobile experiences.
 
 Personalize web experiences without deploying code.
 
-**Includes:** web channel (visual and non-visual editor), code-based channels for web surfaces
+**Includes:** [web channel](../web/get-started-web.md) (visual and non-visual editor), [code-based channels](../code-based/get-started-code-based.md) for web surfaces
 
 **Typical use cases:** homepage banners, landing page personalization, A/B testing, headless web personalization via API
 
@@ -121,7 +119,7 @@ Personalize web experiences without deploying code.
 
 The **All Channels** add-on bundles Outbound Delivery + Mobile + Web in a single purchase.
 
-**Includes:** every channel from the three individual add-ons — email, push notifications, direct mail, in-app messaging, content cards, web channel, and code-based channels
+**Includes:** every channel from the three individual add-ons — [email](../email/get-started-email.md), [push notifications](../push/get-started-push.md), [direct mail](../direct-mail/get-started-direct-mail.md), [in-app messaging](../in-app/get-started-in-app.md), [content cards](../content-card/get-started-content-card.md), [web channel](../web/get-started-web.md), and [code-based channels](../code-based/get-started-code-based.md)
 
 **Typical use cases:** coordinated omnichannel programs that span outbound, mobile app, and web — for example, a campaign that follows up an email with an in-app message and a personalized web banner
 
@@ -168,11 +166,11 @@ Determined by your base offer.
 
 | Capability | Campaigns | Journeys | Campaigns & Journeys |
 |-----------|:---------:|:--------:|:--------------------:|
-| Transactional messaging (email, push, SMS) | ✓ | ✓ | ✓ |
-| Batch campaigns | ✓ | — | ✓ |
-| Orchestrated campaigns _(email, SMS, push, direct mail only)_ | ✓ | — | ✓ |
-| Automated journeys | — | ✓ | ✓ |
-| Real-time event triggers | — | ✓ | ✓ |
+| Transactional messaging ([email](../email/get-started-email.md), [push](../push/get-started-push.md), [SMS](../mobile/get-started-mobile.md)) | ✓ | ✓ | ✓ |
+| [Batch campaigns](../campaigns/get-started-with-campaigns.md) | ✓ | — | ✓ |
+| [Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) _(email, SMS, push, direct mail only)_ | ✓ | — | ✓ |
+| [Automated journeys](../building-journeys/journey-gs.md) | — | ✓ | ✓ |
+| [Real-time event triggers](../event/about-events.md) | — | ✓ | ✓ |
 
 ### Channels and advanced capabilities {#channel-capabilities}
 
@@ -180,17 +178,17 @@ Most channels are available on all three base offers and require the listed add-
 
 | Capability | Availability | Add-on required |
 |-----------|-------------|----------------|
-| Email | All base offers | Outbound Delivery |
-| Push notifications | All base offers | Outbound Delivery |
-| Direct mail | All base offers | Outbound Delivery |
-| SMS / MMS | Based on your licensed configuration | Based on your licensed configuration |
-| In-app messaging | All base offers | Mobile |
-| Content cards | All base offers | Mobile |
-| Web channel | All base offers | Web |
-| Code-based experiences | All base offers | Mobile or Web |
-| WhatsApp | Based on your licensed configuration | WhatsApp |
-| Decisioning | Depends on license | Decisioning |
-| AI-powered ranking | Depends on license | Decisioning |
+| [Email](../email/get-started-email.md) | All base offers | Outbound Delivery |
+| [Push notifications](../push/get-started-push.md) | All base offers | Outbound Delivery |
+| [Direct mail](../direct-mail/get-started-direct-mail.md) | All base offers | Outbound Delivery |
+| [SMS / MMS](../mobile/get-started-mobile.md) | Based on your licensed configuration | Based on your licensed configuration |
+| [In-app messaging](../in-app/get-started-in-app.md) | All base offers | Mobile |
+| [Content cards](../content-card/get-started-content-card.md) | All base offers | Mobile |
+| [Web channel](../web/get-started-web.md) | All base offers | Web |
+| [Code-based experiences](../code-based/get-started-code-based.md) | All base offers | Mobile or Web |
+| [WhatsApp](../whatsapp/get-started-whatsapp.md) | Based on your licensed configuration | WhatsApp |
+| [Decisioning](../experience-decisioning/gs-experience-decisioning.md) | Depends on license | Decisioning |
+| [AI-powered ranking](../offers/ranking/ai-models.md) | Depends on license | Decisioning |
 
 >[!NOTE]
 >
@@ -200,7 +198,7 @@ Most channels are available on all three base offers and require the listed add-
 
 +++**Which channels are supported in Orchestrated campaigns?**
 
-Orchestrated campaigns (multi-step audience workflows using the Campaign Orchestration feature) support **email, SMS, push notifications, and direct mail** only. Web, in-app, code-based, and content card channels are not supported in orchestrated campaign workflows.
+[Orchestrated campaigns](../orchestrated/gs-orchestrated-campaigns.md) (multi-step audience workflows using the Campaign Orchestration feature) support **email, SMS, push notifications, and direct mail** only. Web, in-app, code-based, and content card channels are not supported in orchestrated campaign workflows.
 
 +++
 
