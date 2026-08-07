@@ -83,7 +83,7 @@ The following capabilities and improvements have been added to journeys in this 
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. <a href="https://jira.corp.adobe.com/browse/DOCAC-14702">DOCAC-14702</a> <!-- Documentation link: TBD -->
 
-### Campaigns {#august-26-campaigns}
+### Campaigns {#august-26-camp}
 
 The following capabilities and improvements have been added to campaigns in this release.
 
