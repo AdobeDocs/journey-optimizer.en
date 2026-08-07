@@ -77,6 +77,10 @@ topic_v2:
 </table>
 
 
+* **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
+
+Availability date: August 10, 2026
+
 ## July '26 release notes {#july-26-updates}
 
 ### Loyalty Challenges {#july-26-loyalty}
