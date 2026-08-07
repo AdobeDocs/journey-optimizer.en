@@ -186,13 +186,14 @@ To perform this, follow the steps below:
 
 From the list of your journeys, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen.
 
+![Bulk action bar with multiple journeys selected](assets/bulk-actions-journeys.png)
+
 The following operations are available:
 
 * **[!UICONTROL Add to package]** - Export selected journeys to another sandbox. [Learn how to export objects →](../configuration/copy-objects-to-sandbox.md)
-* **[!UICONTROL Move to folder]** - Move selected journeys into a folder.
+* **[!UICONTROL Move to folder]** - Move selected journeys into a folder. [Learn how to work with folders →](#journeys-folders)
 * **[!UICONTROL Edit tags]** - Edit the tags assigned to selected journeys. [Learn how to use tags →](../start/search-filter-categorize.md#add-tags)
 * **[!UICONTROL Manage access]** - Apply access labels to selected journeys. [Learn more about object-level access control →](../administration/object-based-access.md)
-* **[!UICONTROL Archive]** - Archive selected journeys.
 * **[!UICONTROL Delete]** - Permanently delete selected journeys.
 * **[!UICONTROL Pause]** - Pause selected **Live** journeys (_bulk pause_). Only available when **Live** journeys are selected.
 * **[!UICONTROL Resume]** - Resume selected **Paused** journeys (_bulk resume_). Only available when **Paused** journeys are selected.
@@ -220,14 +221,14 @@ For complete understanding, this information should be combined with the documen
 * Switch between list view and calendar view to visualize journey schedules
 * Add and manage external calendars by uploading CSV files
 * Duplicate an existing journey to reuse its settings
-* Apply bulk operations to multiple selected journeys from the bulk action bar: add to package, move to folder, edit tags, manage access, archive, delete, pause, or resume
+* Apply bulk operations to multiple selected journeys from the bulk action bar: add to package, move to folder, edit tags, manage access, delete, pause, or resume
 
 **Glossary:**
 
 * **Journey dashboard**: The main journeys interface with an Overview tab showing key metrics and a Browse tab listing all journeys. *(product-specific)*
 * **Discard rate**: The ratio of profiles not eligible to enter the journey (e.g., due to incorrect namespace or reentrance rules) compared to total profiles who attempted entry over the last 24 hours. *(product-specific)*
 * **Journeys calendar view**: A visual weekly calendar representation of live and scheduled journeys, accessible by clicking the calendar icon in the journeys list. *(product-specific)*
-* **Bulk action bar**: The action bar that appears at the bottom of the journeys list once one or more journeys are selected, offering add to package, move to folder, edit tags, manage access, archive, delete, pause, and resume. *(product-specific)*
+* **Bulk action bar**: The action bar that appears at the bottom of the journeys list once one or more journeys are selected, offering add to package, move to folder, edit tags, manage access, delete, pause, and resume. *(product-specific)*
 * **Bulk pause/resume**: The pause and resume operations available from the bulk action bar, limited to Live journeys (pause) or Paused journeys (resume), up to 10 per operation. *(product-specific)*
 
 **Guardrails:**
@@ -243,7 +244,7 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: Journey dashboard — Acronym: none — variants: journeys list, journeys overview
 * Synonyms: "Browse tab" = "journeys list"
 * Do not confuse: "Discard rate" ≠ "Error rate" — Discard rate counts profiles ineligible to enter; Error rate counts profiles that entered but encountered a processing error
-* Note: Add to package, move to folder, edit tags, manage access, archive, and delete are shared with the Campaigns, Fragments, and Templates lists; pause and resume are journey-specific
+* Note: Add to package, move to folder, edit tags, manage access, and delete are shared with the Campaigns, Fragments, and Templates lists; pause and resume are journey-specific
 
 **FAQ:**
 
@@ -252,7 +253,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: Can I pause multiple journeys at once?** — Yes; select multiple Live journeys in the list and click the Pause button in the bottom bar. Up to 10 journeys can be paused per operation.
 * **Q: How do I add external events to the journey calendar?** — Click the calendar add icon, then drag and drop a CSV file with event name, start date, and end date columns; uploaded events are visible to all users in the organization.
 * **Q: Why does the calendar show a journey as 1 hour even though it runs longer?** — The calendar displays all journeys as 1-hour timespans for visual consistency; this does not reflect actual send or completion time.
-* **Q: What bulk operations can I perform on multiple journeys at once?** — Besides pause and resume, you can select multiple journeys and add them to a package, move them to a folder, edit their tags, manage their access, archive them, or delete them, using the bulk action bar at the bottom of the journeys list.
+* **Q: What bulk operations can I perform on multiple journeys at once?** — Besides pause and resume, you can select multiple journeys and add them to a package, move them to a folder, edit their tags, manage their access, or delete them, using the bulk action bar at the bottom of the journeys list.
 
 +++
 

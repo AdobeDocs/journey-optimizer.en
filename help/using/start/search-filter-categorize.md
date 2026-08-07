@@ -78,7 +78,7 @@ The following operations are available:
 * **[!UICONTROL Move to folder]** - Move selected items into a folder.
 * **[!UICONTROL Edit tags]** - Edit the tags assigned to selected items. [Learn how to use tags →](#add-tags)
 * **[!UICONTROL Manage access]** - Apply access labels to selected items. [Learn more about object-level access control →](../administration/object-based-access.md)
-* **[!UICONTROL Archive]** - Archive selected items. Available for Fragments, Journeys, and Templates.
+* **[!UICONTROL Archive]** - Archive selected items. Available for Fragments and Templates.
 * **[!UICONTROL Delete]** - Permanently delete selected items. Available for Campaigns and Journeys.
 
 >[!NOTE]
