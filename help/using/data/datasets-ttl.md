@@ -90,7 +90,7 @@ Need more details? Use the feedback options at the bottom of this page to raise 
 
 +++Which types of datasets are subject to TTL?
 
-TTL applies only to time-series datasets. Record-type datasets (such as entity datasets, classification datasets, and decision object repositories) are not subject to TTL. They are listed in the table above for reference, with `n/a` indicated in both the Data Lake TTL and Profile Store TTL columns.
+TTL applies only to time-series datasets. Record-type datasets (such as entity datasets and classification datasets) are not subject to TTL. They are listed in the table above for reference, with `n/a` indicated in both the Data Lake TTL and Profile Store TTL columns.
 
 +++
 
