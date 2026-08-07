@@ -10,11 +10,17 @@ badge: label="Limited Availability" type="Informative"
 
 # Configure a custom channel {#custom-channel-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Get an overview of the four steps an administrator must complete to configure a custom channel in Adobe Journey Optimizer: creating the channel, managing API credentials, optionally delegating a subdomain for link tracking, and creating a channel configuration for marketers.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This capability is available in Limited Availability. Contact your Adobe representative to gain access.
 
-Configuring a custom channel is an administrator task that happens once per channel. After the channel is configured, marketers can immediately select it in campaigns, journeys, and orchestrated campaigns — just like any native [!DNL Journey Optimizer] channel.
+Configuring a custom channel is an administrator task that happens once per channel. After the channel is configured, marketers can immediately select it in campaigns and journeys — just like any native [!DNL Journey Optimizer] channel.
 
 The configuration process covers four steps: defining the channel itself (endpoint, authentication, payload), managing the API credentials used to authenticate requests, optionally delegating a subdomain for link tracking, and finally creating a channel configuration that marketers will select at authoring time.
 

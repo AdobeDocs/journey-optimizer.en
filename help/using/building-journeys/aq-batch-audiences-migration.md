@@ -21,13 +21,13 @@ feature_v2:
     internal-label: Journeys
 ---
 
-# Migrate batch audiences from Audience Qualification journeys {#aq-batch-migration}
+# Migrate batch audiences from Audience Qualification journeys and Exit criteria{#aq-batch-migration}
 
-Starting August 2026, Journey Optimizer will block publication for journeys that use a batch audience in an Audience Qualification node. Identify your use case below and follow the recommended migration path. 
+Starting September 2026, Journey Optimizer will block publication for journeys that use a batch audience in an Audience Qualification node or in Exit Criteria. Identify your use case below and follow the recommended migration path. 
 
 >[!CAUTION]
 >
->**Enforcement date: August 2026.** New, draft, and duplicated journeys using a batch audience in an Audience Qualification node cannot be published after this date. A validation warning is already surfaced in the journey canvas since the June 2026 release.
+>**Enforcement date: September 2026.** New, draft, and duplicated journeys using a batch audience in an Audience Qualification node or in Exit Criteria cannot be published after this date. A validation warning is already surfaced in the journey canvas since the June 2026 release.
 
 ## Why this change {#why}
 
@@ -37,12 +37,14 @@ When a batch audience is used with an Audience Qualification node instead, all q
 
 The **[Read Audience](read-audience.md)** activity is the right tool for batch-based use cases: it is built to handle scheduled, bulk processing in a controlled and predictable way.
 
+**[Exit criteria](journey-properties.md#exit-criteria)** relies on the same **[!UICONTROL Audience Qualification]** mechanism as the entry node, so it is subject to the same limitations. Going forward, use a streaming audience when configuring **[!UICONTROL Exit Criteria]**.
+
 ## How your journeys are affected {#impact}
 
-A live journey that uses a batch audience in an Audience Qualification node continues to run after August 2026. However, if you stop, duplicate, or republish the journey, it will be blocked until the configuration is updated.
+A live journey that uses a batch audience in an Audience Qualification node or Exit criteria continues to run after September 2026. However, if you stop, duplicate, or republish the journey, it will be blocked until the configuration is updated.
 
 
-| Journey status | Impact after August 2026 |
+| Journey status | Impact after September 2026 |
 | --- | --- |
 | **Live journeys** | Not impacted. Existing live journeys continue to run. No automatic stopping. |
 | **New journeys** | Blocked from publication until the batch audience is replaced. |

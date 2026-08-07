@@ -373,6 +373,10 @@ To learn more about merge policies, refer to [[!DNL Adobe Experience Platform] d
 
 ## Exit criteria {#exit-criteria}
 
+>[!CAUTION]
+>
+>**Deprecation notice – September 2026**: Starting **September 2026**, Journey Optimizer will block publication for any journey that uses a batch audience in an **Exit criteria**. Existing live journeys are not affected. New, draft, and duplicated journeys with this configuration must be updated before September 2026. [Learn how to migrate your journeys](aq-batch-audiences-migration.md)
+
 >[!CONTEXTUALHELP]
 >id="ajo_journey_exit_criterias"
 >title="Exit criteria"
@@ -460,7 +464,7 @@ The **[!UICONTROL Schedule]** section is only available when a **[!UICONTROL Rea
 
 >[!TIP]
 >
->When scheduling the journey, you can also configure wave sending to deliver journey actions in batches over time. [Learn how to send using waves in journeys](send-using-waves.md)
+>When scheduling the journey, you can also configure wave sending to deliver journey actions in batches over time. [Learn how to send using waves in journeys](../delivery/send-using-waves.md)
 
 
 ## Conflict management {#conflict}

@@ -403,36 +403,6 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >abstract="The **Line** activity lets you add a LINE action to your Orchestrated campaign. Build personalized content, from text and stickers to images, videos, locations, and Flex Messages, to engage customers on LINE."
 
 
-<!-- Onboarding hub -->
 
->[!CONTEXTUALHELP]
->id="ajo_migration_connection_name"
->title="Connection Name"
->abstract="A descriptive name identifying the source system (e.g. 'Marketing-Automation-Prod'). Must start with a letter and contain only alphanumerics, underscores, or hyphens (4-50 characters)."
+<!-- Asset selector content generation -->
 
-
->[!CONTEXTUALHELP]
->id="ajo_migration_base_api_url"
->title="Base API URL"
->abstract="The root URL of the API, without resource paths or query strings, e.g. https://api.example.com."
-
->[!CONTEXTUALHELP]
->id="ajo_migration_authentication_method"
->title="Choosing an authentication method"
->abstract="API Key sends a single credential with each request, while OAuth 2.0 uses a token-based protocol better suited for enterprise and third-party APIs."
-
->[!CONTEXTUALHELP]
->id="ajo_migration_client_id"
->title="Client ID"
->abstract="The public identifier for your application, issued when you register with the authorization server."
-
->[!CONTEXTUALHELP]
->id="ajo_migration_client_secret"
->title="Client Secret"
->abstract="A confidential credential known only to your app and the authorization server. Never expose it in client-side code."
-
-
->[!CONTEXTUALHELP]
->id="ajo_migration_token_url"
->title="Token URL"
->abstract="The authorization server endpoint that issues access tokens for the client credentials flow, typically ending in /oauth/token or /token."
