@@ -406,7 +406,3 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 
 <!-- Asset selector content generation -->
 
->[!CONTEXTUALHELP]
->id="ajo_assets_selection_mode"
->title="Assets selection mode"
->abstract="X"

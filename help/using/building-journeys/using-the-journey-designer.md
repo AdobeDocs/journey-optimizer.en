@@ -111,6 +111,10 @@ In addition, your last selected experience (Old or New) is now remembered at the
 
 ![](assets/journey-new-experience-switch.png)
 
+>[!TIP]
+>
+>For step-by-step guidance on detaching and rejoining nodes in the journey canvas, see this [Experience League community article](https://experienceleaguecommunities.adobe.com/adobe-journey-optimizer-15/how-to-detach-rejoin-nodes-in-the-new-journey-canvas-251908){target="_blank"}.
+
 Watch this video for a video overview of the new journey canvas experience:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496193)
@@ -177,10 +181,6 @@ To delete the path, place your cursor on it and click the **[!UICONTROL Delete p
 In the canvas, when two activities are disconnected, a warning is displayed. Place your cursor on the warning icon to display the error message. To fix the issue, simply move the disconnected activity and connect it to the previous activity.
 
  ![Warning icon showing disconnected activities in canvas](assets/canvas-disconnected.png)
-
->[!TIP]
->
->For step-by-step guidance on detaching and rejoining nodes in the journey canvas, see this [Experience League community article](https://experienceleaguecommunities.adobe.com/adobe-journey-optimizer-15/how-to-detach-rejoin-nodes-in-the-new-journey-canvas-251908){target="_blank"}.
 
 ## Copy and paste activities {#copy-paste}
 
