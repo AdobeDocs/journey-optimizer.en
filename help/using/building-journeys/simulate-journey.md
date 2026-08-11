@@ -147,7 +147,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 
     ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json.png)
 
-    To reuse attribute values from a profile or [test profile](../audience/creating-test-profiles.md) in [!DNL Adobe Experience Platform]:
+    <!--To reuse attribute values from a profile or [test profile](../audience/creating-test-profiles.md) in [!DNL Adobe Experience Platform]:
 
     1. Browse to the profile you want to use as a reference. On the profile detail page, click **[!UICONTROL View JSON]**. [Learn more](../audience/get-started-profiles.md)
 
@@ -172,6 +172,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
         >[!WARNING]
         >
         >If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
+    -->
 
     +++
 
