@@ -105,6 +105,8 @@ The following capabilities and improvements are coming to campaigns in this rele
 </tbody>
 </table>
 
+* **Campaign authoring flow redesign** - Adobe Journey Optimizer Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
+
 * **Folders for Campaigns** - You can now organize your campaigns into folders to improve navigation and management in the interface. <!-- Documentation link: TBD -->
 
 <!--* **Brand alignment score in Campaign dashboard** - You can now assess your brand alignment score directly within your Campaign dashboard to ensure content stays on-brand. This allows you to verify guidelines at a glance without having to open the content designer.  Documentation link: TBD -->
