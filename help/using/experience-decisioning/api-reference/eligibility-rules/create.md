@@ -22,7 +22,7 @@ You can create an eligibility rule by making a POST request to the Offer Library
 **API format**
 
 ```http
-POST /{ENDPOINT_PATH}/eligibility-rules 
+POST /{ENDPOINT_PATH}/offer-rules 
 ```
 
 | Parameter | Description | Example |

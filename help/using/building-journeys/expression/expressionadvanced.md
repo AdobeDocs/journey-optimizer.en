@@ -81,7 +81,7 @@ You can access the advanced expression editor in different ways:
 
 >[!NOTE]
 >
->To generate Journey expressions using natural language prompts, use the **[Expression Assistant](expression-agent.md)** (**public beta**) via the AI control inside the advanced editor.
+>To generate Journey expressions using natural language prompts, use **[Generate expressions with AI](generate-expression.md)** (**public beta**) via the AI control inside the advanced editor.
 
 ## Discover the interface {#discovering-the-interface}
 
@@ -140,14 +140,14 @@ For complete understanding, this information should be combined with the documen
 * Build advanced boolean conditions using event fields, data source fields, audience membership, and journey properties
 * Switch between simple mode and advanced mode when configuring conditions
 * Reference external data source parameters directly within the main expression using the `params` keyword
-* Use the AI-powered Expression Assistant to generate expressions from natural language prompts
+* Use AI-powered expression generation to create expressions from natural language prompts
 
 **Glossary:**
 
 * **Advanced expression editor**: The Journey Optimizer code editor for writing complex expressions; distinct from the simpler point-and-click condition editor *(product-specific)*
 * **Simple mode**: A point-and-click condition editor; less flexible than the advanced editor but easier for non-developers *(product-specific)*
 * **Journey properties**: Technical fields about the journey instance (ID, version, errors, current node) accessible in the expression editor *(product-specific)*
-* **Expression Assistant**: An AI-powered tool (public beta) inside the advanced editor that generates expressions from plain language prompts *(product-specific)*
+* **Generate expressions with AI**: An AI-powered capability (public beta) inside the advanced editor that generates expressions from plain language prompts *(product-specific)*
 
 **Guardrails:**
 
@@ -168,7 +168,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: When must I use the advanced expression editor instead of the simple mode?** — Use the advanced editor when you need to query collections, use functions, reference journey properties, or build multi-condition logic that the simple editor cannot express.
 * **Q: How do I pass a parameter to an external data source in the expression?** — Use the `params` keyword in the expression syntax, e.g. `#{DataSource.fieldGroup.field, params: {paramName: value}}`.
 * **Q: What does the autocompletion mechanism do?** — It displays contextual field and function suggestions as you type, helping you build valid expressions faster.
-* **Q: Where is the Expression Assistant accessed?** — Via the AI control inside the advanced expression editor; it is currently in public beta.
+* **Q: Where is Generate expressions with AI accessed?** — Via the AI control inside the advanced expression editor; it is currently in public beta.
 * **Q: Do conditions in the advanced editor return a different type than in simple mode?** — No; conditions always return a boolean in both modes.
 
 +++

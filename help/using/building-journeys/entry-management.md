@@ -108,7 +108,7 @@ In **Unitary event** and **Audience qualification** journeys, you can enable or 
 
 * If reentrance is disabled, a profile cannot enter multiple times the same journey, within the global journey timeout period. See this [section](../building-journeys/journey-properties.md#global_timeout).
 
-By default, journeys allow reentrance. When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. It allows you to define the time to wait before allowing a profile to enter the journey again. This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 91 days ([global timeout](journey-properties.md#global_timeout)).
+By default, journeys allow reentrance. When the **Allow reentrance** option is activated, the **Reentrance wait period** field is displayed. It allows you to define the time to wait before allowing a profile to enter the journey again. This prevents journeys from being erroneously triggered multiple times for the same event. By default the field is set to 5 minutes. The maximum duration is 90 days ([global timeout](journey-properties.md#global_timeout)).
 
 <!--
 When a journey ends, its status is **[!UICONTROL Closed]**. New individuals can no longer enter the journey. Persons already in the journey automatically exit the journey. 
@@ -121,6 +121,35 @@ After the reentrance period, profiles can reenter the journey. To avoid this, an
 <!--
 Due to the 30-day journey timeout, when journey reentrance is not allowed, we cannot make sure the reentrance blocking will work more than 91 days. Indeed, as we remove all information about persons who entered the journey 91 days after they enter, we cannot know the person entered previously, more than 91 days ago. 
 -->
+
+### Re-entrance across journey versions {#reentrance-versions}
+
+A profile cannot be active in the same journey more than once at the same time, including across active versions of that journey.
+
+Re-entrance settings are configured on the current journey version, but [!DNL Journey Optimizer] also checks whether the profile is already active in another active version of the same journey. If the profile is still progressing through an earlier version, a new entry is blocked until that active instance ends or the profile is removed.
+
+Publishing a new journey version does not move in-flight profiles to the new version. Profiles who already entered a previous version stay in that version until they exit the journey. If they become eligible again later, they enter the latest live version.
+
+**Example**
+
+To understand how cross-version blocking works, consider the following sequence:
+
+1. Version 1 of a journey is live and a profile enters it.
+1. You publish Version 2 of the same journey.
+1. If the profile is still active in Version 1, it cannot start a new active instance in Version 2 at the same time.
+1. After the profile exits the earlier instance, it can enter the latest live version again, subject to the journey's re-entrance configuration.
+
+>[!WARNING]
+>
+>**Why do I see `exportedsegment_existinginstance`?**
+>
+>If you see the error `exportedsegment_existinginstance`, it generally means the profile already has an active instance in the same journey. This most often occurs when a recurring or repeated entry attempts to start while the profile is still active in another instance of that journey, including an earlier active version.
+>
+>When troubleshooting this error, check the following:
+>
+>* Whether the profile is still in progress in another active version of the journey.
+>* Whether a previous recurring execution is still active.
+>* Whether the journey design includes long waits or other activities that keep profiles active for an extended period.
 
 ## Business journeys {#entry-business}
 

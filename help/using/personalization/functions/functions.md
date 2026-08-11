@@ -154,6 +154,9 @@ Functions are organized into three categories for easy navigation:
         <td><a href="dates.md#date-diff">Date difference</a></td><td>This function retrieves the difference between two dates in number of days.</td>
     </tr>
     <tr>
+        <td><a href="dates.md#date-between">Date between</a></td><td>This function checks whether a given date falls between a start date and an end date, inclusive on both bounds.</td>
+    </tr>
+    <tr>
         <td><a href="dates.md#day-month">Day of month</a></td><td>This function returns the number representing the day of the month.</td>
     </tr>
     <tr>
@@ -298,10 +301,16 @@ Functions are organized into three categories for easy navigation:
         <td><a href="string.md#char-code-at">Char code at</a></td><td>This function returns ASCII value of a character, like the charCodeAt function in JavaScript</td>
     </tr>
     <tr>
-        <td><a href="string.md#concat">Concat</a></td><td>This function is used to combine two strings into one</td>
+        <td><a href="string.md#concate">Concat</a></td><td>This function concatenates two or more strings into one.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#append-query-params">Append query params</a></td><td>This function appends or replaces a query parameter in a URL.</td>
     </tr>
     <tr>
         <td><a href="string.md#contains">Contains</a></td><td>This function is used to determine if a string contains a specified substring</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#decode64">Decode 64</a></td><td>This function decodes a Base64-encoded string</td>
     </tr>
     <tr>
         <td><a href="string.md#doesNotContain">Does not contain</a></td><td>This function is used to determine if a string does not contain a specified substring</td>
@@ -326,6 +335,9 @@ Functions are organized into three categories for easy navigation:
         <td><a href="string.md#equalsIgnoreCase">Equals Ignore Case</a></td><td>This function is used to determine if a string does not start with a specified substring, without case sensitivity</td>
     </tr>
     <tr>
+        <td><a href="string.md#equals-any-ignore-case">Equals any ignore case</a></td><td>This function checks whether a string equals any of the provided comparison values, ignoring letter case.</td>
+    </tr>
+    <tr>
         <td><a href="string.md#extractEmailDomain">Extract Email Domain</a></td><td>This function is used to extract the domain of an email address</td>
     </tr>
     <tr>
@@ -341,6 +353,9 @@ Functions are organized into three categories for easy navigation:
         <td><a href="string.md#get-url-protocol">Get url protocol</a></td><td>This function is used to get url protocol</td>
     </tr>
     <tr>
+        <td><a href="string.md#get-url-fragment">Get url fragment</a></td><td>This function is used to get url fragment</td>
+    </tr>
+    <tr>
         <td><a href="string.md#index-of">Index Of</a></td><td>This function returns the position (in the first argument) of the first occurrence of the second parameter. Returns -1 if there is no match</td>
     </tr>
     <tr>
@@ -348,6 +363,9 @@ Functions are organized into three categories for easy navigation:
     </tr>
     <tr>
         <td><a href="string.md#is-not-empty">Is Not Empty</a></td><td>This function returns true if the string in the parameter is not empty.</td>
+    </tr>
+    <tr>
+        <td><a href="string.md#join">Join</a></td><td>This function concatenates array elements into a single string using a separator.</td>
     </tr>
     <tr>
         <td><a href="string.md#last-index-of">Last Index Of</a></td><td>This function returns the position (in the first argument) of the last occurrence of the second parameter. Returns -1 if there is no match.</td>
@@ -449,6 +467,9 @@ Helpers are detailed on [this page](helpers.md).
         <td><a href="helpers.md#default">Default fallback value</a></td><td>This function is used to render a variable with default</td>
     </tr>
     <tr>
+        <td><a href="helpers.md#abort">Abort</a></td><td>This helper stops message delivery when invoked during rendering (Limited Availability)</td>
+    </tr>
+    <tr>
         <td><a href="helpers.md#each">Each</a></td><td>This function is used to iterate over an array</td>
     </tr>
     <tr>
@@ -464,10 +485,16 @@ Helpers are detailed on [this page](helpers.md).
         <td><a href="helpers.md#let">Let</a></td><td>This function allows an expression to be stored as a variable to be used later in a query</td>
     </tr>
     <tr>
+        <td><a href="helpers.md#parse-json">Parse JSON</a></td><td>This helper parses a JSON string and stores the parsed object in a template variable</td>
+    </tr>
+    <tr>
         <td><a href="helpers.md#unless">Unless</a></td><td>This function is used to define a conditional block - if the expression evaluation returns false, the block is rendered</td>
     </tr>
     <tr>
         <td><a href="helpers.md#url-parameter-encryption-helper">Encrypt</a></td><td>Encrypts expression values for URL query parameters at render time using an active key from the sandbox registry </td>
+    </tr>
+    <tr>
+        <td><a href="helpers.md#value-at-path">Value at path</a></td><td>This helper assigns a value from a data path to a template variable, with optional array indexing</td>
     </tr>
     <tr>
         <td><a href="helpers.md#url-function">Url</a></td><td>This function handles URLs in SMS message content; use it with <code>originalUrl</code> to shorten URL and <code>type='DEEPLINK'</code> to insert deep links</td>
@@ -535,6 +562,23 @@ Comparison functions are used to compare between different expressions and value
     </tr>
     <tr>
         <td><a href="operators.md#notequal">Not equals to</a></td><td>This operator checks if given expression not equal to give value</td>
+    </tr>
+</table>
+
+
+### Template Migration Functions {#template-migration-functions}
+
+Template Migration Functions are available to assist with migrating existing templates to Journey Optimizer.
+
+<table>
+    <tr>
+        <td><a href="operators.md#amp-compare">Compare via operator</a></td><td>This function compares two values using the specified comparison operator</td>
+    </tr>
+    <tr>
+        <td><a href="operators.md#amp-substr">Substring range</a></td><td>This function returns a portion of a string between the specified start and end indices</td>
+    </tr>
+    <tr>
+        <td><a href="operators.md#compare-to">Compare To</a></td><td>This function compares two strings lexicographically</td>
     </tr>
 </table>
 

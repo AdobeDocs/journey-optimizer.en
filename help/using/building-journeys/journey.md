@@ -219,7 +219,7 @@ Use the journey designer to build your flow:
 Always test your journey to catch issues before customers experience them:
 
 * Use **test mode** to simulate the journey with test profiles
-* Use **dry run** to preview journey execution without affecting real data or sending messages
+* Use **dry run** to execute the journey against real production data without sending communications or updating profiles
 * Verify all conditions, messages, and actions work as expected
 * Check timing, data flows, and personalization
 
@@ -357,7 +357,7 @@ Handle global audiences with automatic time zone adjustments and optimal send ti
 
 **Test mode & dry run**
 
-Validate journeys with test profiles before going live, and preview execution without affecting real data.
+Validate journeys with test profiles before going live, and preview execution using real production data without sending communications or updating profiles.
 
 [Use dry run](journey-dry-run.md)
 :::

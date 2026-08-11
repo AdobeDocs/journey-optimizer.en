@@ -30,7 +30,7 @@ Once that you have [created an Orchestrated campaign](gs-campaign-creation.md), 
 
 At this stage of the configuration, the Orchestrated campaign canvas is displayed with a start icon, representing the beginning of your Orchestrated campaign. To add your first activity, click the **+** button connected to the start icon.
 
-A list of activities that can be added to the Orchestrated campaign canvas appears. The available activities depend on your position within the Orchestrated campaign canvas. For example, when adding your first activity, you can start your Orchestrated campaign by targeting an audience, splitting the Orchestrated campaign path, or setting a **Wait** activity to delay the Orchestrated campaign execution. On the other hand, after a **Build audience** activity, you can refine your target with targeting activities, send a delivery to your audience with channel activities, or organize the Orchestrated campaign process with flow control activities.
+A list of activities that can be added to the Orchestrated campaign canvas appears. The available activities depend on your position within the Orchestrated campaign canvas. For example, when adding your first activity, you can start your Orchestrated campaign by defining an audience (for example, with **Build audience**, **Read audience**, or **Load file**), splitting the Orchestrated campaign path, or setting a **Wait** activity to delay the Orchestrated campaign execution. On the other hand, after a **Build audience** activity, you can refine your target with targeting activities, send a delivery to your audience with channel activities, or organize the Orchestrated campaign process with flow control activities.
 
 ![](assets/orchestrated-start.png){zoomable="yes"}
 

@@ -22,12 +22,17 @@ Discover the latest Journey Optimizer features and improvements in the Release N
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/rn/release-notes.md)
 
+>[!TAB Loyalty Challenges]
 
->[!TAB AI Assistant for personalization]
+Discover how to create and manage **Loyalty Challenges** to engage and reward your most loyal customers with gamification capabilities.
 
-Use **AI Assistant** in the Personalization Editor or from the Email Designer toolbar (**Add expression**) to describe what you want in plain language and get a personalization expression, or select existing code to explain it, fix issues, or suggest improvements.
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/loyalty-challenges/get-started.md)
 
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/content-management/generative-personalization-expressions.md)
+>[!TAB Journey Optimizer skills in CX Coworker]
+
+We've added a new documentation page for **Journey Optimizer skills in CX Coworker**, including both **journey-focused** and **loyalty-focused** skills, with guidance and sample prompts.
+
+[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/start/ajo-coworker-skills.md)
 
 
 >[!TAB Iterate over contextual data]
@@ -35,14 +40,6 @@ Use **AI Assistant** in the Personalization Editor or from the Email Designer to
 Learn how to use iteration syntax to display dynamic lists of data from various sources in your messages, including events, custom action responses, and other contextual data.
 
 [![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/personalization/iterate-contextual-data.md)
-
-
->[!TAB Campaign Orchestration]
-
-Journey Optimizer now includes **Campaign Orchestration**, a new capability purpose-built for brand-initiated, batch campaigns.
-
-[![learn more](using/assets/do-not-localize/learn-more-button.svg)](using/orchestrated/gs-orchestrated-campaigns.md)
-
 
 >[!ENDTABS]
 
@@ -142,3 +139,4 @@ Learn how to prioritize and manage communication conflicts across campaigns and 
 table style="table-layout:auto"><tr style="border: 0;"><td><img src="using/assets/do-not-localize/newsletter.png"></td><td>
 <b>Stay informed and elevate your Adobe Journey Optimizer experience!</b><br/>Sign up for our quarterly newsletter. Gain exclusive access to the latest product updates, captivating stories, real-world use cases, valuable tips, and more – all delivered directly to your inbox every quarter. <a href="https://www.adobe.com/subscription/Adobe_Journey_Optimizer_NL.html">Sign up today!</a></td></tr></table
 -->
+

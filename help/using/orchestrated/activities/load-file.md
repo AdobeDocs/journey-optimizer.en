@@ -33,20 +33,11 @@ subfeature_v2:
 
 The **[!UICONTROL Load file]** activity is a **[!UICONTROL Data Management]** activity. Use it to work with profiles and data stored in an external file. It supports **file-based targeting** in Orchestrated campaigns when your recipient list comes from an external system (for example, a CRM export or a partner file) and you want to run a campaign without building a full Adobe Experience Platform ingestion pipeline first.
 
+During file setup, you can define column mappings, data types, NULL handling, and per-column error policies. Rows that fail validation are rejected and logged before the campaign runs, keeping the audience clean without manual pre-processing.
+
 >[!AVAILABILITY]
 >
->The **Load file** activity is available in **Limited Availability** for a set of organizations. To request access, contact your Adobe representative. For availability phases, see [Journey Optimizer release cycle](../../rn/releases.md).
->
->The activity is currently not available for use with **Healthcare Shield**.
-
-## Permissions {#permissions}
-
-To use the **[!UICONTROL Load file]** activity in an Orchestrated campaign, users must be assigned the correct permissions. Both permissions are available under **[!UICONTROL Adobe Experience Platform]** > **[!UICONTROL Adobe Journey Optimizer]** > **[!UICONTROL Orchestrated Campaigns]** in the permissions UI.
-
-* **[!UICONTROL View File in Orchestrated Campaigns]** — Grants read-only access. Users with this permission can preview results on an Orchestrated campaign that contains a **[!UICONTROL Load file]** activity, but cannot add the activity or upload a file.
-* **[!UICONTROL Manage File in Orchestrated Campaigns]** — Required to add a **[!UICONTROL Load file]** activity to the campaign canvas and upload files. Assign this permission to any user who needs to create or configure a **[!UICONTROL Load file]** activity.
-
-For instructions on assigning permissions, see [Manage users and roles](../../administration/permissions.md).
+>The **Load file** activity is currently not available for use with **Healthcare Shield**.
 
 ## Guardrails and limitations {#limitations}
 
@@ -61,6 +52,10 @@ For limits on channel and canvas activities, see [Guardrails and limitations](..
 ## Prerequisites {#prerequisites}
 
 Before you can add a **[!UICONTROL Load file]** activity to an Orchestrated campaign and connect it to a message activity, an administrator must complete the following one-time setup.
+
+To use the **[!UICONTROL Load file]** activity in an Orchestrated campaign, users must be assigned **[!UICONTROL Manage File in Orchestrated Campaigns]** permission.
+
+For instructions on assigning permissions, see [Manage users and roles](../../administration/permissions.md).
 
 ### Create a File-type target dimension {#file-target-dimension}
 
