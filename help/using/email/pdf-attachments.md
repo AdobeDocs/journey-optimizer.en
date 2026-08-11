@@ -112,7 +112,7 @@ Personalized PDF attachments must be uploaded to the attachment-specific [Data L
 
 1. Generate the PDF files with the tool of your choice, and upload them to your Data Landing Zone container. 
   
-  Note that Data Landing Zone automatically deletes files after seven days, so make sure your PDF files remain available in the container until the message and any retries have been delivered.
+    Note that Data Landing Zone automatically deletes files after seven days, so make sure your PDF files remain available in the container until the message and any retries have been delivered.
 
 1. In the API payload, for each recipient, add an `attachments` array containing the file name, content type, and Data Landing Zone path of the PDF to send. [Learn how to personalize your API-triggered campaign content](../campaigns/api-triggered-campaign-content.md#contextual)
 
