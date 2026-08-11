@@ -7,7 +7,6 @@ feature: Email, Email Rendering, Personalization, Preview, Proofs
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
 exl-id: 2744974b-62cc-4d25-acc3-edd4c53a9a58
 TQID: https://experienceleague.adobe.com/Y8qsGW8XqSVqag4yqRinnem9w2PYJyKIDIWvuGqAchU
 product_v2:

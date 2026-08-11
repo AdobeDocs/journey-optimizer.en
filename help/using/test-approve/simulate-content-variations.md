@@ -7,7 +7,6 @@ feature: Email, Email Rendering, Personalization, Preview, Proofs
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
 exl-id: d9f7e0a3-b8c2-4e5f-92a1-3c1d7e8a4f65
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
