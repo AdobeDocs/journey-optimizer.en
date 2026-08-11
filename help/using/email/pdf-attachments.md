@@ -116,6 +116,19 @@ Personalized PDF attachments must be uploaded to the attachment-specific [Data L
 
 1. In the API payload, for each recipient, add an `attachments` array containing the file name, content type, and Data Landing Zone path of the PDF to send. [Learn how to personalize your API-triggered campaign content](../campaigns/api-triggered-campaign-content.md#contextual)
 
+    ```json
+    "attachments": [
+      {
+        "name": "invoice-12345.pdf",
+        "contentType": "application/pdf",
+        "source": {
+          "type": "dlzPath",
+          "path": "attachments/invoice-12345.pdf"
+        }
+      }
+    ]
+    ```
+
 At send time, [!DNL Journey Optimizer] fetches the file from the specified location and attaches it to the message for that recipient. Personalized PDF attachments are supported for [High Throughput](../campaigns/api-triggered-high-throughput.md) campaigns in the primary region. They are not supported during regional failover.
 
 For the full API payload reference, see the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging#tag/execution){target="_blank"}.
