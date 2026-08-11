@@ -106,9 +106,9 @@ The combined size of all static and personalized PDF attachments in an email is 
 >
 >* Personalized and static PDF attachments count toward the same quota. [Learn more](#pdf-attachments)
 
-To attach personalized PDF files, upload them to your [Data Landing Zone](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"} container, then reference them in the API payload. Data Landing Zone is currently the only supported storage location for personalized PDF attachments.
+Personalized PDF attachments must be uploaded to the attachment-specific [Data Landing Zone](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"} container, then referenced in the API payload. Data Landing Zone is currently the only supported storage location for personalized PDF attachments.
 
-1. Retrieve the Data Landing Zone credentials for your sandbox, as described in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}.
+1. Retrieve the Data Landing Zone credentials for your sandbox using `type=ajoemailattachments` for the same IMS organization and sandbox as the execution request, as described in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}. Depending on the cloud provider, use the Azure container or AWS bucket and folder returned by the API.
 
 1. Generate the PDF files with the tool of your choice, and upload them to your Data Landing Zone container. 
   
