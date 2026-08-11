@@ -169,9 +169,7 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 
         ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json-3.png)
 
-        >[!WARNING]
-        >
-        >If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
+        If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
     -->
 
     +++
