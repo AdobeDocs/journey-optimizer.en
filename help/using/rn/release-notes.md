@@ -76,7 +76,7 @@ topic_v2:
 </tbody>
 </table>
 
-### Usability improvements {#july-26-usability}
+### Usability improvements {#august-26-usability}
 
 * **New Content Simulation experience for content testing** - The **Simulate content** workflow introduces a redesigned experience: all variants now render together in a single scrollable grid (side-by-side, stacked, or wrapped layouts), replacing the one-variant-at-a-time view. A single bottom action bar consolidates navigating between test variants, zoom, viewport switching (desktop/mobile), locale switching, adding sample inputs, generating variants with AI, picking and saving simulated users, and importing or exporting variants. Removing the left rail and collapsing extra header layers gives previews significantly more room. A **Switch to classic experience** option in the bottom action bar lets you revert to the previous experience at any time. [Learn more](../test-approve/simulate-content-variations.md)
 
@@ -348,14 +348,6 @@ The following capabilities and improvements have been added to content managemen
 </tbody>
 </table>
 
-* **Quick launch shortcuts in Fragments inventory** - You can now quickly access common actions from the Fragments list using the **[!UICONTROL More actions]** button. Available shortcuts include editing the fragment, opening its details, and discarding the draft version. [Learn more](../content-management/manage-fragments.md#quick-launch-fragments)
-
-  ![](../content-management/assets/fragment-quick-launch.png)
-
-* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. Additional channel-specific shortcuts are also available: for email templates, edit the email body, view or send a proof, run a spam report, and render the email; for SMS templates, check the character count and number of segments. [Learn more](../content-management/access-content-templates.md#edit)
-
-  ![](../content-management/assets/content-template-quick-launch-email.png)
-
 * **New helper functions in personalization expressions** - New helper functions are now available in personalization expressions:
 
   * `appendQueryParams`: Appends a query parameter to a URL, or replaces it if the key already exists.
@@ -453,3 +445,14 @@ The following improvement is coming to reporting in this release.
 * **Performance Add-on for throughput in API-triggered campaigns - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. <!-- Documentation link: TBD -->
 
 +++
+
+### Usability improvements {#july-26-usability}
+
+* **Quick launch shortcuts in Fragments inventory** - You can now quickly access common actions from the Fragments list using the **[!UICONTROL More actions]** button. Available shortcuts include editing the fragment, opening its details, and discarding the draft version. [Learn more](../content-management/manage-fragments.md#quick-launch-fragments)
+
+  ![](../content-management/assets/fragment-quick-launch.png)
+
+* **Quick launch shortcuts in Templates inventory** - The **[!UICONTROL More actions]** button in the Content Templates list now provides quick access to common actions: editing template details, simulating content, and deleting a template. Additional channel-specific shortcuts are also available: for email templates, edit the email body, view or send a proof, run a spam report, and render the email; for SMS templates, check the character count and number of segments. [Learn more](../content-management/access-content-templates.md#edit)
+
+  ![](../content-management/assets/content-template-quick-launch-email.png)
+
