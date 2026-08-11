@@ -103,6 +103,12 @@ You cannot assign a **[!UICONTROL Visual fragment]** to a decision item, only **
 
 +++
 
++++Mirror pages in visual fragments and decisioning attributes
+
+A [mirror page link](../email/message-tracking.md#mirror-page) inserted in a **[!UICONTROL Visual fragment]** only reflects decisioning attributes if it was added **before** the fragment's last publication. If you add it afterwards, republish the fragment's campaigns or journeys.
+
++++
+
 +++Decision item and context attributes
 
 Decision item attributes and contextual attributes are not supported by default in [!DNL Journey Optimizer] fragments. However, you can use global variables instead, such as described below.
