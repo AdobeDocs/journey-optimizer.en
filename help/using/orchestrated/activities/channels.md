@@ -163,10 +163,6 @@ Additional settings are available depending on the selected communication channe
 
 After selecting your channel configuration, enable **[!UICONTROL Override email delivery settings]** to replace values defined in that configuration. You can customize the following settings for this channel activity:
 
->[!AVAILABILITY]
->
->This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.
-
 * **Email header parameters**: **[!UICONTROL From name]**, **[!UICONTROL From email prefix]**, **[!UICONTROL Reply to name]**, and **[!UICONTROL Reply to email]**
 
 * **Execution address**: **[!UICONTROL Source]** (**[!UICONTROL Profile]** or **[!UICONTROL Target Dimension]**), and **[!UICONTROL Delivery address]**
