@@ -11,7 +11,7 @@ nudge: yes
   
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
-  + [Release cycle](using/rn/releases.md)
+  + [Release cycle](using/rn/releases.md) 
   + [Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
