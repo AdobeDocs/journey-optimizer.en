@@ -83,9 +83,9 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. <!-- Documentation link: TBD -->
 
-### Action Campaigns {#august-26-camp}
+### Campaigns {#august-26-camp}
 
-The following capabilities and improvements are coming to Action Campaigns in this release.
+The following capabilities and improvements are coming to campaigns in this release.
 
 <table>
 <thead>
