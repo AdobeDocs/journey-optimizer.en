@@ -47,6 +47,10 @@ The following example manually defines the **Loyalty Memberships** schema to ill
 
 ## Create your schema {#schema}
 
+>[!NOTE]
+>
+> The **[!UICONTROL View relationships diagram]** from the **[!UICONTROL Relationship]** tab is read-only. To create or edit a relationship, open the schema from the **[!UICONTROL Browse]** tab instead.
+
 Start by creating a new relational schema manually in Adobe Experience Platform. This process allows you to define the schema structure from scratch, including its name and behavior.
 
 1. Log in to Adobe Experience Platform.
