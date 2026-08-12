@@ -56,6 +56,27 @@ topic_v2:
 
 ## August '26 updates {#aug-26-updates}
 
+<!--
+### Loyalty {#aug-26-loyalty}
+
+<table>
+<thead>
+<tr>
+<th><strong>Loyalty Insights skill</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer introduces <strong>Loyalty Insights</strong>, a new CX Coworker skill for asking questions about challenge performance and other loyalty program data ingested into the Loyalty field groups in Adobe Experience Platform.</p>
+<p>For more information, refer to the <a href="../start/ajo-coworker-skills.md">detailed documentation</a>.</p>
+<p>Availability date: August 12, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+-->
+
 ### Content Management
 
 <table>
