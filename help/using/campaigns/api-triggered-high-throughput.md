@@ -70,6 +70,8 @@ This page explains how High throughput campaigns differ from standard API trigge
 
 * **Throughput allocation** - The throughput provisioned under the High Throughput add-on is exclusively reserved for high throughput campaigns. There is no sharing of throughput between standard and high throughput API triggered campaigns.
 
+* **Personalized PDF attachments** - Not supported when a High throughput campaign fails over to another region. [Learn more about personalized PDF attachments](../email/pdf-attachments.md#personalized-attachments)
+
 ## Choosing between standard vs. High throughput campaigns
 
 Use this table to decide which API triggered campaign type fits your use case:  
