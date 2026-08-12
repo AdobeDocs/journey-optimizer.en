@@ -83,9 +83,9 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. <!-- Documentation link: TBD -->
 
-### Campaigns {#august-26-camp}
+### Action Campaigns {#august-26-camp}
 
-The following capabilities and improvements are coming to campaigns in this release.
+The following capabilities and improvements are coming to Action Campaigns in this release.
 
 <table>
 <thead>
@@ -105,13 +105,13 @@ The following capabilities and improvements are coming to campaigns in this rele
 </tbody>
 </table>
 
-* **Campaign authoring flow redesign** - Adobe Journey Optimizer Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
+* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
 
-* **Folders for Campaigns** - You can now organize your campaigns into folders to improve navigation and management in the interface. <!-- Documentation link: TBD -->
+* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface. <!-- Documentation link: TBD -->
 
-<!--* **Brand alignment score in Campaign dashboard** - You can now assess your brand alignment score directly within your Campaign dashboard to ensure content stays on-brand. This allows you to verify guidelines at a glance without having to open the content designer.  Documentation link: TBD -->
+<!--* **Brand alignment score in Action Campaign dashboard** - You can now assess your brand alignment score directly within your Action Campaign dashboard to ensure content stays on-brand. This allows you to verify guidelines at a glance without having to open the content designer.  Documentation link: TBD -->
 
-* **Override the default execution field in campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the campaign parameters. <!-- Documentation link: TBD -->
+* **Override the default execution field in Action Campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the Action Campaign parameters. <!-- Documentation link: TBD -->
 
 ### Orchestrated campaigns {#august-26-oc}
 
