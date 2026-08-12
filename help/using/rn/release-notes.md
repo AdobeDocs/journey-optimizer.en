@@ -87,8 +87,8 @@ topic_v2:
 <tbody>
 <tr>
 <td>
-<p>Journey Optimizer now supports attaching up to five recipient-specific PDFs per email in API-triggered campaigns. PDF files are fetched securely from Data Landing Zone and attached at send time, with each file's location passed directly in the API payload. This allows existing upstream document generation systems to remain in place, with Journey Optimizer handling delivery.</p>
-<p>Supported use cases include invoices, statements, tickets, contracts, shipping labels, and similar documents that vary per recipient. Personalized PDF attachments are available in API-triggered campaigns only and are not supported in journeys or orchestrated campaigns.</p>
+<p>Journey Optimizer now supports up to <b>five PDF attachments</b> total per email in API-triggered campaigns, including both static and recipient-specific PDFs. Recipient-specific PDF files are fetched securely from Data Landing Zone and attached at send time, with each file's location passed directly in the API payload. This allows existing upstream document generation systems to remain in place, with Journey Optimizer handling delivery.</p>
+<p>Supported use cases include invoices, statements, tickets, contracts, shipping labels, and similar documents that vary per recipient. Personalized PDF attachments are available only for transactional API-triggered email campaigns and are not supported in journeys or orchestrated campaigns.</p>
 <p>Larger attachment volumes and sizes are supported via the PDF attachment add-on; for information, contact your Adobe representative.</p>
 <p>For more information, refer to the <a href="../email/pdf-attachments.md#personalized-attachments">detailed documentation</a>.</p>
 <p>Availability date: August 12, 2026</p>

@@ -51,9 +51,9 @@ Note that personalized PDF attachments require additional file retrieval and pro
 >
 >* You can send up to 6 messages with a PDF attachment per profile per year, whether the attachment is static or personalized.
 >
->* The maximum allowed file size for each attachment is 5 MB.
+>* The maximum allowed file size for each attachment is 5 MB. For emails with [personalized attachments](#personalized-attachments), all static and personalized PDF attachments in the email share a combined 5 MB limit by default.
 >
->For any additional size or volume, you can purchase the PDF Attachments add-on. For more details, contact your Adobe representative.
+> For any additional size or volume, you can purchase the PDF Attachments add-on, which raises the combined limit for personalized attachments to 10 MB. For more details, contact your Adobe representative.
 
 To attach a PDF file to an email message, follow the steps below.
 
@@ -112,7 +112,7 @@ Personalized PDF attachments must be uploaded to the attachment-specific [Data L
 
 1. Generate the PDF files with the tool of your choice, and upload them to your Data Landing Zone container. 
   
-    Note that Data Landing Zone automatically deletes files after seven days, so make sure your PDF files remain available in the container until the message and any retries have been delivered.
+    Note that Data Landing Zone automatically deletes files after seven days, make sure the PDF files remain available in the container until message delivery and any retries are complete.
 
 1. In the API payload, for each recipient, add an `attachments` array containing the file name, content type, and Data Landing Zone path of the PDF to send. [Learn how to personalize your API-triggered campaign content](../campaigns/api-triggered-campaign-content.md#contextual)
 
@@ -128,6 +128,8 @@ Personalized PDF attachments must be uploaded to the attachment-specific [Data L
       }
     ]
     ```
+
+    Note that `source.path` is the object path relative to the attachment-specific Data Landing Zone container retrieved with `type=ajoemailattachments`. Do not include the Azure container name, the AWS bucket or folder, credentials, or a full storage URL.
 
 At send time, [!DNL Journey Optimizer] fetches the file from the specified location and attaches it to the message for that recipient. Personalized PDF attachments are supported for [High Throughput](../campaigns/api-triggered-high-throughput.md) campaigns in the primary region. They are not supported during regional failover.
 
