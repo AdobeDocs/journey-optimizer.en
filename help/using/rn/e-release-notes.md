@@ -65,13 +65,14 @@ The following capabilities and improvements are coming to journeys in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Journey-level holdout</strong><br/></th>
+<th><strong>Journey-level holdout (Limited availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
 <p>You can now configure a holdout group for your journeys directly from journey properties. A holdout is a configurable percentage of your target audience that is excluded from entering the journey and receives no communication. By comparing holdout profiles against active profiles in Customer Journey Analytics reporting, you can measure the incremental lift - the true impact - that your journey delivers.</p>
+<p> This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -85,18 +86,18 @@ The following capabilities and improvements are coming to journeys in this relea
 
 ### Campaigns {#august-26-camp}
 
-The following capabilities and improvements are coming to campaigns in this release.
+The following capabilities and improvements are coming to Campaigns in this release.
 
 <table>
 <thead>
 <tr>
-<th><strong>Inbound experience simulation in Action campaigns</strong><br/></th>
+<th><strong>Inbound experience simulation in Action Campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>You can now simulate inbound channel actions in Action campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
+<p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
 <p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
@@ -111,11 +112,11 @@ The following capabilities and improvements are coming to campaigns in this rele
 
 <!--* **Brand alignment score in Action Campaign dashboard** - You can now assess your brand alignment score directly within your Action Campaign dashboard to ensure content stays on-brand. This allows you to verify guidelines at a glance without having to open the content designer.  Documentation link: TBD -->
 
-* **Override the default execution field in Action Campaigns** - Previously available at the journey level, you can now override the default execution field set globally for your Email, SMS and WhatsApp deliveries in the Action Campaign parameters. <!-- Documentation link: TBD -->
+* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters. <!-- Documentation link: TBD -->
 
-### Orchestrated campaigns {#august-26-oc}
+### Orchestrated Campaigns {#august-26-oc}
 
-The following capabilities and improvements are coming to orchestrated campaigns in this release.
+The following capabilities and improvements are coming to Orchestrated Campaigns in this release.
 
 <table>
 <thead>
@@ -126,7 +127,7 @@ The following capabilities and improvements are coming to orchestrated campaigns
 <tbody>
 <tr>
 <td>
-<p>You can now apply quiet hours. Quiet hours let you define time-based exclusions to prevent messages from being sent during specific periods, helping you respect customer preferences and compliance requirements across campaign orchestration use cases.</p>
+<p>You can now apply Quiet Hours. Quiet Hours let you define time-based exclusions to prevent messages from being sent during specific periods, helping you respect customer preferences and compliance requirements across campaign orchestration use cases.</p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
