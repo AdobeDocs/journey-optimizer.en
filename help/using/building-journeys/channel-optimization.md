@@ -187,4 +187,3 @@ Learn how Adobe Journey Optimizer's channel optimization feature helps you reach
 * [Send-Time optimization](send-time-optimization.md)
 * [Content optimization](../content-management/gs-message-optimization.md)
 -->
-

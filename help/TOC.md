@@ -261,7 +261,8 @@ nudge: yes
     + [Preview using test profiles](using/content-management/preview.md)
     + [Send proofs using test profile data](using/content-management/proofs.md)
     + [Test email rendering](using/content-management/rendering.md)
-    + [Simulate content variations](using/test-approve/simulate-sample-input.md)
+    + [Simulate content variations (classic experience)](using/test-approve/simulate-sample-input.md)
+    + [Simulate content variations (new experience)](using/test-approve/simulate-content-variations.md)
     + [Email Spam report](using/content-management/spam-report.md)
   + Approve journeys & campaigns {#approve}
     + [Approve journeys & campaigns](/help/rp_landing_pages/approve-landing-page.md)
@@ -563,7 +564,7 @@ nudge: yes
   + Generate content {#generate-content}
     + [Get started with Generate content](using/content-management/gs-generative.md)
     + [AI prompt best pratices](using/content-management/ai-assistant-prompting-guide.md)
-    + {hide-from-toc}[Content Credentials in AI Assistant](using/content-management/generative-content-credentials.md)
+    + {hide-from-toc}[Content Credentials in AI Assistant](using/content-management/generative-c2pa-metadata.md)
     + [Generate full content with AI](using/content-management/generative-full-content.md)
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
