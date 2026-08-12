@@ -86,13 +86,14 @@ Review these notes before running tests in your journey.
 * **Disabling test mode** - When you disable test mode, all profiles currently in or previously entered in the journey are removed, and reporting is cleared.  
 * **Reactivation flexibility** - You can enable and disable test mode as many times as needed.  
 * **Automatic deactivation** — Journeys that remain inactive in test mode for **over a week** automatically exit test mode and return to Draft status. No journey content is lost; only the test mode session ends.
-* **Editing and publishing** -  While test mode is active, you cannot modify the journey. You can, however, directly publish the journey, no need to deactivate the test mode before.  
+* **Editing and publishing** -  While test mode is active, you cannot modify the journey. You can, however, directly publish the journey, no need to deactivate the test mode before.
+* **Message delivery** - In test mode, messages are sent to the actual inboxes of test profiles using the same delivery pipeline as production. This differs from [Journey Dry Run](journey-dry-run.md), which simulates journey execution without delivering messages or triggering real channel actions. Neither method replicates every aspect of a live send; use a staging environment for full end-to-end validation.
 
 ### Execution
 
-* **Split behavior** - When the journey reaches a split, the top branch is always selected. Reorder branches if you want a different path tested.  
+* **Split behavior** - When the journey reaches a split, the top branch is always selected in test mode. This does not reflect the statistically selected path during live execution. Reorder branches if you want a different path tested.
 * **Event timing** - If the journey includes multiple events, trigger each event in sequence. Sending an event too early (before the first wait node finishes) or too late (after the configured timeout) will discard the event. The profile will then be sent to a timeout path. Always confirm any references to event payload fields remain valid by sending the payload within the defined window. 
-* **Active date window** -  Make sure the journey's configured [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
+* **Active date window** -  Make sure the journey's configured [start and end dates/time](journey-properties.md#dates) window includes the current time when initiating test mode. Otherwise, triggered test events are silently discarded with the log message `DISPATCHER DISCARD #16 — unqualified on journey version enablements`. To work around this during testing, temporarily set the journey start date to a time before the current moment, then restore it before publishing. Learn more about troubleshooting this issue [on this page](troubleshooting-execution.md#troubleshooting-test-transitions).
 * **Reaction events** -  For reaction events with a timeout, the minimum and default wait time is 40 seconds.  
 * **Test datasets** - Events triggered in test mode are stored in dedicated datasets labeled as follows: `JOtestmode - <schema of your event>`
 * **Shared infrastructure** - Test Mode runs on the same infrastructure as production. During high traffic periods, you may notice delays in email sends or event processing. In this case, check platform traffic dashboards or retry your tests during off-peak hours.
@@ -154,6 +155,17 @@ To validate the journey end to end:
 >* The profile identifier you entered is flagged as a test profile in [!DNL Adobe Experience Platform].
 >* The journey's configured start and end dates include the current time. Events triggered outside this window are silently discarded. [Learn more](troubleshooting-execution.md#troubleshooting-test-transitions).
 
+## Troubleshoot test mode {#troubleshoot-test-mode}
+
+Use this table to self-diagnose common test mode failures before opening a support ticket.
+
+| Symptom | Likely cause | Resolution |
+| --- | --- | --- |
+| Event sends successfully but profile never appears in the journey log | Namespace mismatch in the Profile Identifier — the namespace value does not match the namespace defined in the event schema | Verify the identifier format: `@{<EventName>.identityMap.entry('<NamespaceName>').first().id}`. `<NamespaceName>` must match the event schema exactly (case-sensitive). See [Prerequisites](#trigger-events-prerequisites). |
+| Events accepted (200 response) but journey never triggers; log shows `DISPATCHER DISCARD #16 — unqualified on journey version enablements` | Journey start date is set in the future; test events are silently discarded outside the active date window | Temporarily set the journey start date to before the current time. Restore it before publishing. See [journey dates](journey-properties.md#dates). |
+| Read Audience journey shows a batch segment evaluation log but no profile entries | Batch segment evaluation is logged separately from individual profile entry; the batch log does not confirm profiles have entered the journey | Wait for the batch processing window to complete. For real-time log feedback, test with a unitary event journey. |
+| Test mode cannot be enabled; error `ERR_MODEL_RULES_16` | The event does not include an identity namespace, required when the journey uses a channel action | Add an [identity namespace](../audience/get-started-identity.md) to the event configuration. |
+
 ## Trigger your events {#firing_events}
 
 >[!CONTEXTUALHELP]
@@ -168,7 +180,13 @@ Use the **[!UICONTROL Trigger an event]** button to configure an event that will
 
 As a prerequisite, you must know which profiles are flagged as test profiles in [!DNL Adobe Experience Platform]. Indeed, the test mode only allows these profiles in the journey.
 
-The event must contain an ID. The expected ID depends on the event configuration. It can be an ECID or an email address for example. The value of this key needs to be added in the **Profile Identifier** field.  
+The event must contain an ID. The expected ID depends on the event configuration. It can be an ECID or an email address for example. The value of this key needs to be added in the **Profile Identifier** field.
+
+The **Profile Identifier** value must match the identity stored in the event schema exactly. The format used to reference an identity in the event payload is:
+
+`@{<EventName>.identityMap.entry('<NamespaceName>').first().id}`
+
+Replace `<NamespaceName>` with the namespace exactly as defined in your event schema (for example, `Email` or `Phone`). A namespace mismatch causes a **silent drop**: the event is accepted and returns a success response, but the profile never enters the journey and no error is surfaced in the UI. If a profile does not appear in the test logs after triggering an event, verify that the namespace in your **Profile Identifier** matches the event schema namespace exactly.
 
 If your journey fails to enable test mode with error `ERR_MODEL_RULES_16`, ensure the event used includes an [identity namespace](../audience/get-started-identity.md) when using a channel action.
 
@@ -242,6 +260,10 @@ The number of individuals (technically called instances) currently inside the jo
 * _enrichedData_: the data that the journey has retrieved if the journey uses data sources.
 * _transitionHistory_: the list of steps that the individual followed. For events, the payload is displayed.
 * _actionExecutionErrors_ : information on the errors that occurred.
+
+>[!NOTE]
+>
+>The test log shows entries for **unitary profile entry events** only. If you are testing a Read Audience journey, the batch segment evaluation log is separate from the individual profile entry log. A batch segment being evaluated does not confirm that individual profiles have progressed through the journey steps. If no profile entries appear after triggering a Read Audience journey, wait for the batch processing window to complete before drawing conclusions.
 
 Here are the different statuses of an individual's journey:
 

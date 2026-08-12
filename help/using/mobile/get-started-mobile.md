@@ -54,6 +54,26 @@ Mobile messages can be created and sent in a journey or in a campaign using the 
 
 * In a **Campaign**:Create a campaign, select Mobile message as your action, define basic settings, then edit the message content. Learn how to create [an action campaign](../campaigns/campaign-action.md#action-campaign-action) | [an API-triggered campaign](../campaigns/api-triggered-campaigns.md) | [an orchestrated campaign](../orchestrated/create-orchestrated-campaign.md#create)
 
+## Use cases {#use-cases}
+
+SMS, MMS, and RCS work best when you need to reach users reliably, regardless of whether they have your app installed or an internet connection available.
+
+| Benefit | Why | Example use cases |
+| --- | --- | --- |
+| Maximum reach and immediacy | No app or internet connection required to receive the message | Reaching users without a smartphone app installed |
+| Guaranteed visibility | SMS has open rates above 90% | OTP codes, appointment reminders, delivery notifications |
+| Rich content via MMS/RCS | Adds images, video, and interactive elements beyond plain text | Branded promotions, product catalogs |
+| Reach users without app access | Works for recipients who have not installed or opened your app | Re-engaging lapsed app users, onboarding non-app customers |
+| High-urgency CTAs | Delivered directly to a device users check frequently | Flash sales, fraud alerts, service outage notices |
+| Layering with other channels | Complements push, email, and in-app messaging for broader coverage | Multi-channel journeys with SMS as a fallback channel |
+
+## When not to use {#when-not-to-use}
+
+SMS, MMS, and RCS are not always the most efficient or appropriate choice. Consider another channel in the following situations:
+
+* Cost is a concern at high sending volumes, since SMS and MMS are billed per message and per-message costs add up quickly at scale
+* The content is long-form or complex and better suited to email, which supports richer formatting and longer text
+* Recipients have not explicitly opted in, which carries legal and compliance risk in most regions and messaging regulations
 
 ## Key features {#key-features}
 
@@ -89,7 +109,7 @@ The following prerequisites are required to use RCS in Journey Optimizer:
 
 ## Additional resources {#additional-resources}
 
-Browse the topics below to learn more about Mobile messaging in Journey Optimizer.
+Browse the topics below to learn more about Mobile messaging in Journey Optimizer. See also the [SMS/MMS/RCS overview](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/mobile-learning-hub/mobile-channels-overview/sms-mms-rcs-overview){target="_blank"} in the Mobile Learning Hub for more use cases and best practices.
 
 +++Configuration guides
 
@@ -120,7 +140,7 @@ Create, personalize, and manage your Mobile message content:
 * [Preview, test and send messages](send-mobile-message.md)
 * [Personalization in Mobile messages](../personalization/personalize.md)
 * [Dynamic content](../personalization/get-started-dynamic-content.md)
-* [Generate SMS content with AI Assistant](../content-management/generative-text.md)
+* [Generate SMS content with AI](../content-management/generative-text.md)
 
 +++
 

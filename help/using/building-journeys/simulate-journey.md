@@ -20,6 +20,8 @@ subfeature_v2: []
 
 >[!ENDSHADEBOX]
 
+Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
+
 >[!IMPORTANT]
 >
 >* To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. The same permissions let you create and manage simulated users, **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
@@ -27,8 +29,6 @@ subfeature_v2: []
 >* To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
 >
 >* For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
-
-Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
 
 For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
 
@@ -59,9 +59,9 @@ On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]**
 
     >[!NOTE]
     >
-    >Pre-filled execution email and phone fields come from the email address and phone number on your Adobe IMS user profile.
+    >Pre-filled execution email, phone and push token fields come from values previously used in journey simulation and cached in your browser.
 
-    ![Quick Simulation Update values step with wait time override and proof email and phone fields](assets/quick-simulation-3.png)
+    ![Quick Simulation Update values step with wait time override and proof email, phone and push token fields](assets/quick-simulation-3.png)
 
 1. The Journey Agent generates a set of simulated users from the journey definition.
 
@@ -83,26 +83,32 @@ Continue with [Create and manage simulated users](#test-users), [Trigger your ev
 
 Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, save them for reuse, adjust or remove them from the list, and send them into the journey.
 
+If your journey uses an external audience, for example a CSV or Federated Audience Composition audience, and your conditions, expressions, or personalization rely on enrichment attributes from it, you can mock those attributes on a simulated user just like profile attributes. This lets you drive the user into a specific branch based on the value you set, without running the actual audience.
+
 1. Start by populating the **[!UICONTROL Test users]** list:
 
     +++ Generate users with AI
         
     Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
         
-    For journeys with an Email, Push or SMS node, the AI prompts you to confirm the email address or phone number to use. Simulated users will be generated using those defined values. Once done, click **[!UICONTROL Generate]**.
+    For journeys with an Email, Push, or SMS node, the AI prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those defined values. Once done, click [!UICONTROL Generate].
+
+    Generated simulated users only show the attributes used in the current journey, for example in expressions or personalization.
 
     >[!NOTE]
     >
-    >The email and phone fields are pre-filled from your Adobe IMS user profile.
+    >The email, phone and push token fields are pre-filled from values previously used in journey simulation and cached in your browser.
 
-    ![Generate simulated users dialog with execution email and phone fields and Generate button](assets/simulate-generate.png)
+    ![Generate simulated users dialog with execution email, phone and push token fields and Generate button](assets/simulate-generate.png)
 
     +++
 
     +++ Browse inventory
         
     Choose **[!UICONTROL Browse inventory]** to add simulated users you already saved, for example, users you created from a form or JSON, or users you kept after an AI generation run.
-        
+
+    Note that when you select a simulated user from the inventory, only the attributes used in the current journey are shown, even if the user has values for other attributes set in a different journey.
+
     ![Simulated Users inventory dialog with search, user table, and Select button](assets/simulate-inventory.png)
 
     +++
@@ -113,7 +119,9 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
             
         ![Create Simulated Users form with display name, identity namespace, description, and Union schema attributes](assets/simulate-form.png)
 
-    1. Then, select the attributes from the Union schema that you want to populate for this user.
+    1. Then, select the attributes from the Union schema that you want to populate for this user. Note that only the attributes used in the current journey, for example in expressions or personalization, are available here. 
+    
+        Attributes are grouped by origin, in separate sections for profile attributes and, if your journey reads an external audience such as a CSV or Federated Audience Composition audience, for that audience's enrichment attributes.
 
     1. Click **[!UICONTROL Add audience membership]** to simulate segment memberships.
 
@@ -135,8 +143,13 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
     In **[!UICONTROL Create Simulated Users]**, edit the JSON template to define users, then click **[!UICONTROL Format JSON]** and **[!UICONTROL Save]**.
 
+    Note that **[!UICONTROL Create from JSON]** and **[!UICONTROL Update from JSON]** give you access to every attribute stored on the simulated user, including profile attributes and, if applicable, enrichment attributes from an external audience such as a CSV or Federated Audience Composition audience.
+
     ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json.png)
 
+    +++
+
+<!--
     To reuse attribute values from a profile or [test profile](../audience/creating-test-profiles.md) in [!DNL Adobe Experience Platform]:
 
     1. Browse to the profile you want to use as a reference. On the profile detail page, click **[!UICONTROL View JSON]**. [Learn more](../audience/get-started-profiles.md)
@@ -159,11 +172,8 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
         ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json-3.png)
 
-        >[!WARNING]
-        >
-        >If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
-
-    +++
+        If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
+-->
 
 1. The simulated users you created appear in the **[!UICONTROL Test users]** list. For each entry, select one of the following:
 
@@ -192,7 +202,7 @@ Simulated users are temporary profile-like entities you define in **[!UICONTROL 
 
 1. When you finish testing, open the **[!UICONTROL Manage simulation]** menu:
 
-    * **[!UICONTROL Close simulation]** to exit the current simulation session.
+    * **[!UICONTROL Stop simulation]** to exit the current simulation session.
     * **[!UICONTROL Reset simulation]** to clear all data from the current run, selected simulated users, defined event values, and other test settings, so you can start a new simulation from scratch.
 
         ![Manage simulation menu open with Reset simulation and Close simulation options](assets/simulate-15.png)
@@ -235,10 +245,10 @@ If your journey includes one or more unitary events, you can trigger them while 
 
 1. When you finish testing, open the **[!UICONTROL Manage simulation]** menu:
 
-    * **[!UICONTROL Close simulation]** to exit the current simulation session.
+    * **[!UICONTROL Stop simulation]** to exit the current simulation session.
     * **[!UICONTROL Reset simulation]** to clear all data from the current run, selected simulated users, defined event values, and other test settings, so you can start a new simulation from scratch.
 
-        ![Manage simulation menu open with Reset simulation and Close simulation options](assets/simulate-15.png)
+        ![Manage simulation menu open with Reset simulation and Stop simulation options](assets/simulate-15.png)
 
 ## View results {#viewing-results}
 

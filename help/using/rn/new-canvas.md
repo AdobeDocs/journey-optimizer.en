@@ -4,7 +4,10 @@ product: journey optimizer
 title: New journey interface
 feature: Release Notes
 topic: Content Management
-description: New journey interface
+description: Learn about the new simplified journey model, redesigned journey canvas UI, and live reporting introduced for Journey Optimizer journeys.
+keywords: journey canvas, new journey model, live reporting, journey designer
+role: User
+level: Beginner, Intermediate
 hide: true
 exl-id: 03828fca-dde7-4b3b-b890-2c007d1245cc
 TQID: https://experienceleague.adobe.com/-QKSnBRN9yPYEq5ay9wD-uf4lLduJqmtlFWDnLYt1gk
@@ -27,7 +30,7 @@ topic_v2:
 ---
 # Welcome to the Improved Journey Designer {#new-canvas}
 
-Journey Optimizer now offers a **simplified journey model** that aims to improve user experience and internal processes. Starting April release, you can benefit from the following features:
+[!DNL Journey Optimizer] now offers a **simplified journey model** that aims to improve user experience and internal processes. Starting April release, you can benefit from the following features:
 
 * A **re-designed journey canvas** made for a modernized UI experience
 * A **live reporting** UI directly available in the journey canvas
@@ -36,7 +39,9 @@ Journey Optimizer now offers a **simplified journey model** that aims to improve
 >
 >Be aware that the rollout for this feature will be progressive. You might not see the changes right away.
 
-## Updates on the journey model
+To learn more about building journeys on the new canvas, see [using the journey designer](../building-journeys/using-the-journey-designer.md#canvas-capabilities).
+
+## Updates on the journey model {#updates-journey-model}
 
 The new journey model will live alongside the existing one, meaning that there will be journeys using **two different models**:
 
@@ -45,42 +50,42 @@ The new journey model will live alongside the existing one, meaning that there w
 
 All journeys in the legacy model will stay in it. You will still be able to edit, test or publish them. Any new version created from a journey on the legacy model will also stay in it. There are **no functional changes** around those journeys.
 
-As you see in the below screenshot, the nodes are round-shaped, which is the old UI for journeys on the legacy model.
+As you see in the screenshot below, the nodes are round-shaped, which is the old UI for journeys on the legacy model.
 
-![](assets/new-canvas.png)
+![Legacy journey canvas showing round-shaped activity nodes for AirportBeacon and Email, connected in a simple horizontal flow](assets/new-canvas.png)
 
 However, when you **create a new journey** or **duplicate an existing one**, it will be on the new model. Journeys on the legacy model will still be supported until a majority of customers are transitioned to the new one.
 
 There is one limitation to the new journey model; it will **not be possible to copy and paste activities from the legacy model to the new one and vice versa**. If you want to do this, we advise you to duplicate your legacy journey to switch it to the new model, and then copy your activities.
 
-In the below screenshot, you can see the redesigned UI for the journey canvas (only available with the new model):
+In the screenshot below, you can see the redesigned UI for the journey canvas (only available with the new model):
 
-![](assets/new-canvas2.png)
+![Redesigned journey canvas showing square activity boxes (Loyalty members read audience, Condition) branching into Welcome email and Slack message activities](assets/new-canvas2.png)
 
 **Any new feature added to the journey designer (including live reporting) will only be available for journeys on the new model from this point forward.**
 
-## Improved journey canvas design
+## Improved journey canvas design {#improved-canvas-design}
 
-With the new journey model, we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the [!DNL Adobe CX Enterprise] solutions & app ecosystem, making for an intuitive and efficient user experience. Any journey in the new model will be on that new design.
+With the new journey model, we're introducing a new-and-improved **journey canvas UI**, which fits seamlessly within the [!DNL Adobe CX Enterprise] solutions and app ecosystem, making for an intuitive and efficient user experience. Any journey in the new model will be on that new design.
 
-![](assets/new-canvas3.gif)
+![Animated demonstration of the new journey canvas design, showing a journey with Start, a Loyalty members read-audience activity, and End nodes](assets/new-canvas3.gif)
 
 Activities will now be represented by square boxes with the following capabilities:
 
-* The first line representing the activity type which will often be overwritten by more contextual information (on Read Audiences, it will contain the name of the selected audience), or by a custom label if you define one. 
-* The second line always representing the activity type.
+* The first line represents the activity type which will often be overwritten by more contextual information (on Read Audiences, it will contain the name of the selected audience), or by a custom label if you define one. 
+* The second line always represents the activity type.
 
-![](assets/new-canvas4.png)
+![Activity box showing the activity label "Loyalty members" on the first line and the activity type "Read audience" on the second line](assets/new-canvas4.png)
 
 This new UI improves the readability of the journey canvas by providing **clearer activity labels and types**.
 
 It also allows the product team to add more information on the canvas with fewer clicks. One example of "more information" would be the inclusion of live reporting in the journey canvas, where you can see profiles entering and exiting your activities because of errors. 
 
-![](assets/new-canvas5.png)
+![Activity box with live reporting metrics showing 56 profiles entered and 0 errors for the Loyalty members activity](assets/new-canvas5.png)
 
-## Live reporting in the journey canvas
+## Live reporting in the journey canvas {#live-reporting-canvas}
 
-In addition to the improved journey canvas layout, a new feature is being introduced to allow users to view real-time reporting metrics from **the last 24 hours**, called live reporting, directly within the journey canvas. 
+In addition to the improved journey canvas layout, a new feature is being introduced to allow users to view real-time reporting metrics from **the last 24 hours**, called live reporting, directly within the journey canvas. This complements the existing [journey live report](../reports/journey-live-report.md).
 
 For each activity within every live journey using the new model, you have access to:
 
@@ -88,7 +93,7 @@ For each activity within every live journey using the new model, you have access
 * The count of profiles entering this activity.
 * The count of profiles exiting this activity due to an error.
 
-![](assets/new-canvas6bis.png)
+![Live journey canvas showing entered and error counts for each activity, including Test profiles, Condition, and multiple Slack custom actions across different paths](assets/new-canvas6bis.png)
 
 <!--
 `

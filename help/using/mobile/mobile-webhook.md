@@ -259,7 +259,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
     +++ Custom
 
-    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
+    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL AJO Email Tracking]** Dataset for reporting and audience building.
 
     * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 
