@@ -35,6 +35,12 @@ subfeature_v2:
 ---
 # Decisioning frequently asked questions {#decisioning-faq}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Find answers to common questions about Decisioning capabilities, including capping rules, ranking formulas, and AI model behavior, so you can configure and troubleshoot decisioning with confidence.
+
+>[!ENDSHADEBOX]
+
 This page provides answers to frequently asked questions about Decisioning capabilities in Adobe Journey Optimizer.
 
 ## Capping rules {#capping-rules}

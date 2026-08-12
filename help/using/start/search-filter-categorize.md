@@ -32,11 +32,17 @@ topic_v2:
 ---
 # Search, filter, organize {#search-filter-organize}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Quickly locate and organize journeys, campaigns, and assets with universal search, list filters, and tags so you can stay productive as your Journey Optimizer projects grow.
+
+>[!ENDSHADEBOX]
+
 As your Adobe Journey Optimizer projects grow, finding and organizing content becomes essential for efficient work. This page shows you how to quickly locate journeys, campaigns, and assets using universal search; filter lists to focus on specific items; and organize your work with tags and categories. These tools help you navigate large volumes of content, maintain consistency across teams, and streamline your daily workflows.
 
 ## Search {#unified-search}
 
-From Adobe Journey Optimizer interface, use the unified Adobe Experience Cloud search capability on the center of the top bar to find assets, journeys, datasets, and more across your sandboxes. 
+From Adobe Journey Optimizer interface, use the unified [!DNL Adobe CX Enterprise] search capability on the center of the top bar to find assets, journeys, datasets, and more across your sandboxes. 
 
 Start entering content to display top results. Help articles about the entered keywords also show up in the results.
 
@@ -64,7 +70,7 @@ In the lists, you can perform basic actions on each element. For example, you ca
 
 ## Bulk actions {#bulk-actions}
 
-In the **Campaigns**, **Fragments**, and **Templates** lists, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen.
+In the **Campaigns**, **Fragments**, **Journeys**, and **Templates** lists, you can select multiple items at once using the checkboxes and apply operations to all of them from a bulk action bar that appears at the bottom of the screen.
 
 The following operations are available:
 
@@ -73,7 +79,11 @@ The following operations are available:
 * **[!UICONTROL Edit tags]** - Edit the tags assigned to selected items. [Learn how to use tags →](#add-tags)
 * **[!UICONTROL Manage access]** - Apply access labels to selected items. [Learn more about object-level access control →](../administration/object-based-access.md)
 * **[!UICONTROL Archive]** - Archive selected items. Available for Fragments and Templates.
-* **[!UICONTROL Delete]** - Permanently delete selected items. Available for Campaigns only.
+* **[!UICONTROL Delete]** - Permanently delete selected items. Available for Campaigns and Journeys.
+
+>[!NOTE]
+>
+>Journeys also support bulk **[!UICONTROL Pause]** and **[!UICONTROL Resume]**. [Learn more →](../building-journeys/journey-ui.md#bulk-operations)
 
 ![](assets/bulk-actions-fragments.png)
 
@@ -97,6 +107,7 @@ The **[!UICONTROL Tags]** field allows you to define tags for your object. Tags 
 * [Campaigns](../campaigns/create-campaign.md)
 * [Decision items](../experience-decisioning/items.md)
 * [Fragments](../content-management/fragments.md)
+* [Journey Fragments](../building-journeys/journey-fragments.md)
 * [Journeys](../building-journeys/journey-properties.md)
 * [Landing pages](../landing-pages/create-lp.md)
 * [Subscription lists](../landing-pages/subscription-list.md)

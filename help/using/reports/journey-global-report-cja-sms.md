@@ -40,6 +40,12 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Understand the SMS metrics in the Adobe Journey Optimizer journey report, including delivery and click trends, tracked links, inbound messages, providers, and bounce, error, and exclusion reasons.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 You can access your SMS journey report by clicking the **[!UICONTROL View report]** button within your journey. [Learn more](report-gs-cja.md)
 
 ![](assets/report-access-jo.png)
@@ -66,23 +72,53 @@ The **[!UICONTROL Delivery status]** table offers a detailed account of profile 
 
 * **[!UICONTROL Delivered]**: Number of SMS messages successfully sent, in relation to the total number of SMS messages.
 
-* **[!UICONTROL Bounces for outbound channels]**: Total of errors cumulated during the sending process and automatic return processing in relation to the total number of sent SMS messages.
+* **[!UICONTROL Bounces]**: Total of errors cumulated during the sending process and automatic return processing in relation to the total number of sent SMS messages.
 
-* **[!UICONTROL Outbound errors]**: Total number of errors that occurred preventing it from being sent to profiles.
+* **[!UICONTROL Send errors]**: Total number of errors that occurred preventing it from being sent to profiles.
 
-* **[!UICONTROL Outbound exclusions]**: Number of profiles which have been excluded by Adobe Journey Optimizer.
+* **[!UICONTROL Send exclusions]**: Number of profiles which have been excluded by Adobe Journey Optimizer.
 
 +++
 
-## Tracked link labels {#track-link-label-sms}
+## Campaign overview {#campaign-global}
 
-The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview of the link labels within your SMS messages, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
+The **[!UICONTROL Campaign overview]** table serves as a dashboard for SMS performance for each campaign action in your journey. It summarizes targeted profiles, click and click-through metrics (including estimated clicks that exclude bot and non-human interaction traffic), and delivery outcomes such as bounces, send errors, and exclusions.
+
++++ Learn more about Campaign overview metrics
+
+* **[!UICONTROL People]**: Number of user profiles who qualify as target profiles for your messages.
+
+* **[!UICONTROL Click through rate]**: Percentage of users who interacted with the message.
+
+* **[!UICONTROL Clicks]**: Number of times a content was clicked on in your message.
+
+* **[!UICONTROL Unique Clicks]**: Number of unique profiles who clicked on at least one piece of content in the mobile message.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Delivered]**: Number of emails successfully sent, in relation to the total number of sent messages.
+
+* **[!UICONTROL Bounces]**: Total number of errors cumulated during the sending process and automatic return processing in relation to the total number of sent messages.
+
+* **[!UICONTROL Send errors]**: Total number of errors that occurred during the sending process preventing it from being sent to profiles.
+
+* **[!UICONTROL Send Exclusions]**: Number of profiles which have been excluded by Adobe Journey Optimizer. [Learn more about how exclusions are counted](exclusion-list.md#exclusion-list).
+
++++
+
+## Tracked labels {#track-label-sms}
+
+The **[!UICONTROL Tracked labels]** table offers a comprehensive overview of the link labels within your SMS messages, highlighting those that generate the highest visitor traffic. This feature empowers you to identify and prioritize the most popular links.
+
+![](assets/journey_sms_tracked_labels.png)
 
 +++ Learn more about Tracked link labels metrics
 
-* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your SMS message.
-
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Unique Clicks]**: Number of unique profiles who clicked on at least one piece of content in the mobile message.
 
 +++
 
@@ -90,9 +126,11 @@ The **[!UICONTROL Tracked link labels]** table offers a comprehensive overview o
 
 The **[!UICONTROL Tracked link URLs]** table provide a comprehensive overview of the URLs within your SMS messages that attract the highest visitor traffic. This enables you to identify and prioritize the most popular links, enhancing your understanding of profile engagement with specific content in your SMS messages.
 
+![](assets/journey_sms_tracked_urls.png)
+
 +++ Learn more about Tracked link URLs metrics
 
-* **[!UICONTROL Unique Clicks]**: Number of profiles who clicked on a content in your SMS message.
+* **[!UICONTROL Unique Clicks]**: Number of unique profiles who clicked on at least one piece of content in the mobile message.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on in your SMS messages.
 

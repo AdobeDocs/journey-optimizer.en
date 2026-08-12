@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Code your own content {#code-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to write or paste raw HTML in the Email Designer code editor to build email content, including how to add personalization and the available date and time functions.
+
+>[!ENDSHADEBOX]
+
 **[!UICONTROL Code your own]** lets you write or paste raw HTML to build email content directly in the [!DNL Journey Optimizer] Email Designer. Use this mode when you need full control over markup or when importing existing HTML.
 
 You must have HTML skills, and once you choose this mode, you stay in the code editor—you cannot switch to the visual editor.

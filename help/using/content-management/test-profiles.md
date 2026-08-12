@@ -12,12 +12,20 @@ subfeature_v2:
 ---
 # Select test profiles {#select-test-profiles}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to select test profiles by identity namespace in Adobe Journey Optimizer so you can preview and test your content against different profile data variants.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_preview_test_profiles"
 >title="Use test profiles to check your content"
 >abstract="Use test profiles to preview and test your content. If you have added personalized fields, you can check how they are displayed using test profile data."
 
 Test profiles are additional recipients who do not match the defined targeting criteria. [Learn how to create test profiles](../audience/creating-test-profiles.md)
+
+Before selecting test profiles, ensure the identity namespace you plan to use matches the namespace under which your test profiles are stored in Adobe Experience Platform (for example, **Email** or **Phone**). A mismatch prevents test profiles from being correctly resolved in the search field.
 
 Before using test profiles to test your content, you first need to select them. To do this, follow these steps:
 

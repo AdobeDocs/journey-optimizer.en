@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Get started with Guided channel setup {#set-mobile-config}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how the Guided Channel Setup workflow automatically creates the tag properties, datastreams, and channel configurations needed to set up mobile and web channels in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_mobile_web_setup_name"
 >title="Mobile and web configuration name"

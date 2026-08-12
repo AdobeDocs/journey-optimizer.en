@@ -28,6 +28,12 @@ subfeature_v2:
 ---
 # Work with [!DNL Adobe Stock] images {#stock}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to find, license, and insert Adobe Stock images, including similar photos, directly from the Email Designer in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 ## Get started with [!DNL Adobe Stock] {#get-started-stock}
 
 The [!DNL Adobe Stock] and [!DNL Adobe Journey Optimizer] Email Designer integration plugin provides customers an easy way to navigate, license, and save imagery for use in message authoring.

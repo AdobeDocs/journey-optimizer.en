@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Configure mobile app push notification channel {#push-notification-configuration}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to configure the mobile app push notification channel in Adobe Journey Optimizer, including permissions, push credentials, channel configuration, and integrating your app with the Adobe Experience Platform Mobile SDK.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to create your journeys and send messages to targeted audience. Before beginning to send push notifications with [!DNL Journey Optimizer], you need to ensure configurations and integrations are in place on the mobile app and for tags in Adobe Experience Platform. To understand the Push Notifications data flow in [!DNL Adobe Journey Optimizer] please refer to [this page](push-gs.md). 
 
 >[!AVAILABILITY]

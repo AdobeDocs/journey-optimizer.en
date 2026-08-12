@@ -16,6 +16,12 @@ subfeature_v2:
 ---
 # Design a Mobile message {#design-mobile}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to design and personalize SMS, RCS, and MMS message content in Adobe Journey Optimizer, including RCS rich media, fallback text, suggested actions, tracked URLs, and added media.
+
+>[!ENDSHADEBOX]
+
 You can design and send text (SMS), rich communication (RCS), and multimedia (MMS) messages with Adobe Journey Optimizer. You first need to add a Mobile message action in a journey or a campaign, and then define the content of the Mobile message, as detailed below. Adobe Journey Optimizer also offers capabilities to test your Mobile messages before sending, so that you can check the rendering, personalization attributes, and all other settings.
 
 In accordance with the industry standards and regulations, all SMS/RCS/MMS marketing messages must contain a way for the profiles to easily unsubscribe. To do this, SMS profiles can reply with opt-in and opt-out keywords. [Learn how to manage opt-out](../privacy/opt-out.md#opt-out-decision-management)
@@ -127,7 +133,7 @@ To configure your message content, follow the steps below. Settings for MMS are 
 
     ![](assets/sms-content.png)
 
-1. Generate engaging Mobile messages tailored to your audience using [AI Assistant for text generation](../content-management/generative-text.md).
+1. Generate engaging Mobile messages tailored to your audience using [Generate text with AI](../content-management/generative-text.md).
 
 1. Use the personalization editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 

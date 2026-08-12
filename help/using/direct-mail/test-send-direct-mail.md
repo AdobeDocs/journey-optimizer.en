@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Check & send a direct mail message {#direct-mail-test-send}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Preview the extraction file, validate and activate your campaign or journey, and manage postal consent so your direct mail reaches the right recipients accurately.
+
+>[!ENDSHADEBOX]
+
 Learn how to preview the extraction file, validate and activate your direct mail campaign or journey, and manage postal mail consent in Journey Optimizer.
 
 ## Before you start {#before-you-start}
@@ -45,13 +51,14 @@ Before you test and send a direct mail message, [create the message and configur
 
 ## Preview the extraction file {#preview-dm}
 
-Once the content of the extraction file has been defined, you can use test profiles to preview it. If you inserted personalized content, you can check how this content is displayed in the message, using test profile data.
+Once the content of the extraction file has been defined, preview it using either simulation method:
 
-To do this, click **[!UICONTROL Simulate content]** then add a test profile to check how the extraction file rendering using the test profile data.
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown and add a test profile to check how the extraction file renders.
+
+Detailed information on how to preview & test content is available in the [Content Management](../content-management/preview-test.md) section.
 
 ![Simulate content preview for a direct mail extraction file](assets/direct-mail-simulate.png){width="800" align="center"}
-
-Detailed information on how to select test profiles and preview your content is available in the [Content Management](../content-management/preview-test.md) section.
 
 Once that the file content is ready to be sent, close the simulate screen then click the **[!UICONTROL Review to activate]** button.
 
@@ -78,6 +85,29 @@ When your direct mail campaign is ready, complete the configuration of your [jou
 Once sent, you can measure the impact of your direct mail campaign or journey within the reports. For more about direct mail reporting, refer to these sections:
 * [Direct mail campaign report](../reports/campaign-global-report-cja-direct.md)
 * [Direct mail journey report](../reports/journey-global-report-cja-direct.md)
+
+## Understand export timing and file generation {#dm-export-timing}
+
+Direct mail exports run on fixed 4-hour UTC cycles at **02:01**, **06:01**, **10:01**, **14:01**, **18:01**, and **22:01**.
+
+Profiles are included in the *next* export cycle after they reach the Direct mail activity. This means file creation is based on when profiles arrive at the Direct mail node, not when the campaign or journey was first activated.
+
+* **Why you can receive multiple files in one day** - If profiles reach the Direct mail activity in different 4-hour windows, Journey Optimizer generates separate export files for each window. This is expected behavior.
+
+  For example:
+
+  * Profiles arriving before **14:01** are exported at **14:01**.
+  * Profiles arriving from **14:02** to **18:01** are exported at **18:01**.
+
+  This does not duplicate profiles, it batches them by arrival window.
+
+* **Update Profile activity timing** - In journeys, the **[!UICONTROL Update profile]** activity executes immediately at journey runtime when a profile reaches that activity. It does not wait for the Direct mail export cycle.
+
+* **Recommendations for one-file-per-day scenarios** - If you need one file per day, consider the following options:
+
+  * **24-hour routing frequency**: Guarantees one file per day, but introduces delivery latency.
+  * **Wait Until Time of Day**: Can align profiles into the same export window, but results depend on journey timing.
+  * **4-hour routing frequency**: Provides the lowest latency, but may generate multiple files per day.
 
 ## Manage consent for direct mail {#dm-consent-management}
 

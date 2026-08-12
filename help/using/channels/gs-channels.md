@@ -30,17 +30,14 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-    internal-label: Customer experience
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-    internal-label: Troubleshooting
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-    internal-label: Personalization
-  - id: e9001ce2-5245-4a8e-8601-dd958009072f
-    internal-label: Web experience
 ---
 # Get started with [!DNL Adobe Journey Optimizer] channels {#get-started-email}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Adobe Journey Optimizer's native channels let you reach customers across outbound delivery and inbound experiences — compare email, SMS, push, Live activities, direct mail, WhatsApp, LINE, in-app, web, code-based, and content cards to see where each is supported in journeys and campaigns.
+
+>[!ENDSHADEBOX]
 
 In today's dynamic marketing landscape, effectively reaching your audience across various platforms is essential for building lasting relationships and driving engagement. This section provides a comprehensive overview of the communication channels available within [!DNL Adobe Journey Optimizer], helping you to understand how to utilize each channel effectively in your marketing strategies.
 
@@ -85,21 +82,21 @@ Deliver persistent, real-time updates directly on the iPhone Lock Screen and Dyn
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/comment-dots.svg)
 
-SMS / MMS / RCS Messaging
+Mobile messages
 
 Understand how to create, manage, and configure SMS, MMS, and RCS messages for marketing and transactional purposes, including compliance and personalization.
 
-[Learn more about SMS/MMS/RCS messaging](../../rp_landing_pages/sms-landing-page.md)
+[Learn more about Mobile messages](../mobile/get-started-mobile.md)
 :::
 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/mail-bulk.svg)
 
-Direct Mail Campaigns
+Direct Mail
 
 Discover how to create and manage direct mail campaigns, including exporting extraction files for third-party providers and ensuring compliance with user consent.
 
-[Learn more about Direct mail campaigns](../../rp_landing_pages/direct-mail-landing-page.md)
+[Learn more about Direct mail](../../rp_landing_pages/direct-mail-landing-page.md)
 :::
 
 :::

@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Code-based experience prerequisites {#code-based-prerequisites}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the implementation, delivery, and reporting prerequisites required to deliver code-based experiences to your apps and web pages.
+
+>[!ENDSHADEBOX]
+
 To be able to use code-based experience actions in [!DNL Journey Optimizer] and deliver code content payload that can be used by your applications, follow the prerequisites below:
 
 * To add modifications to your applications, you must have a specific implementation. [Learn more](#implementation-prerequisites)

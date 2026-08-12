@@ -42,6 +42,12 @@ topic_v2:
 ---
 # Apply themes to your email content {#apply-email-themes}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, apply, and reuse themes in the Email Designer to add brand-consistent styling on top of your email content and fragments.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_use_theme"
 >title="Apply a theme to your email"
@@ -245,11 +251,15 @@ To create a fragment compatible with themes, follow the steps below.
 
 1. You can navigate between the **[!UICONTROL Adobe themes]** and **[!UICONTROL My themes]** tabs, and select up to five compatible themes (from both tabs) for your fragment.
 
+   >[!NOTE]
+   >
+   >This limit is enforced for compatibility and performance reasons. The **[!UICONTROL Adobe default theme]** cannot be removed, so you can select up to four additional custom themes.
+
    ![](assets/fragment-select-compatible-themes.png){width=70%}
 
    >[!CAUTION]
    >
-   >When using the fragment in an email content, make sure you [apply a theme](#apply-themes-email) that you have defined for this fragment. Failing to do so may cause display issues, especially in Outlook 2021 and previous versions.
+   >When using this fragment in an email content, the email theme must be one of the themes associated with the fragment. If the theme does not match, the fragment insertion is blocked.
 
 1. Click **[!UICONTROL Close]**.
 

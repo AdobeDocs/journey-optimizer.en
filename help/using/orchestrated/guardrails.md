@@ -27,6 +27,12 @@ subfeature_v2:
 ---
 # Guardrails and limitations {#guardrails}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Review the guardrails and limitations that apply to data storage, ingestion, data modeling, activities, and channels in Orchestrated campaigns.
+
+>[!ENDSHADEBOX]
+
 You will find below guardrails and limitations when using Orchestrated campaigns.
 
 ## Dataflow limitations
@@ -83,13 +89,7 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 * **Composite primary keys** - Support for composite primary keys with file-upload flows is not available at this time.
 
-## Activities limitations {#activities-limitations}
-
-* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities (Email, SMS, Push, or Direct mail). Only channel activities count toward this limit. Targeting and flow control activities do not count (for example, Build audience, Wait, Split, Enrichment, Reconciliation, Fork, End, or Test).
-
-  If you exceed the limit when saving or publishing, the operation fails. To stay within the limit, reduce the number of channel activities or split message delivery across multiple Orchestrated campaigns.
-
-* **Canvas activities limit** - The number of activities on an Orchestrated campaign canvas is limited to 500. This limit applies to all activity types on the canvas. It is separate from the channel activities limit enforced at publication. For maintainability and performance, keep workflows under 100 activities in practice.
+## Audiences
 
 * **Scalar attributes only** - Only scalar attributes are supported in audience definitions; maps and arrays are not allowed.
 
@@ -103,9 +103,19 @@ You will find below guardrails and limitations when using Orchestrated campaigns
 
 * **Audience optimization** - Optimization is strongly recommended when working with large or complex audience definitions to ensure performance.
 
-* **Saved audiences are static** - Saved audience activities are static; they reflect the data available at the time of campaign execution.
+* **Saved audiences**
+
+  * **Saved audiences are static** - Saved audience activities are static; they reflect the data available at the time of campaign execution.
 
 * **No append to Saved Audience** - Appending to a Saved Audience activity is not supported. Any modifications require a full overwrite of the audience.
+
+## Activities limitations {#activities-limitations}
+
+* **Channel activities limit** - An Orchestrated campaign supports a maximum of 10 channel activities (Email, SMS, Push, or Direct mail). Only channel activities count toward this limit. Targeting, Data Management, and flow control activities do not count (for example, Build audience, Load file, Wait, Split, Enrichment, Reconciliation, Fork, End, or Test).
+
+  If you exceed the limit when saving or publishing, the operation fails. To stay within the limit, reduce the number of channel activities or split message delivery across multiple Orchestrated campaigns.
+
+* **Canvas activities limit** - The number of activities on an Orchestrated campaign canvas is limited to 500. This limit applies to all activity types on the canvas. It is separate from the channel activities limit enforced at publication. For maintainability and performance, keep workflows under 100 activities in practice.
 
 ## Channel limitations
 

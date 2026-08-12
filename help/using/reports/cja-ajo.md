@@ -36,6 +36,12 @@ topic_v2:
 ---
 # Manually configure [!DNL Customer Journey Analytics] {#cja-ajo}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to manually configure the integration between Adobe Journey Optimizer and Customer Journey Analytics by creating a connection and data view to analyze your journey and message data.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] integration with [!DNL Customer Journey Analytics] provides a holistic view of all your journeys with automated report distribution and custom visualizations of the data.
 
 The following section outlines how to manually leverage Journey Optimizer-generated data for in-depth analysis within Customer Journey Analytics. Note that this integration can be automatically set up. [Learn more](report-gs-cja.md) 
@@ -57,7 +63,7 @@ Before using [!DNL Customer Journey Analytics] for your journeys, you must first
 
     The following [!DNL Journey Optimizer] can be configured:
     * [Journey Step Event](../data/datasets-query-examples.md#journey-step-event): allows you to view who enters your journeys and how far they get. 
-    * [Message Feedback/Tracking datasets](../data/datasets-query-examples.md#message-feedback-event-dataset): allows you to view delivery information about your messages sent through [!DNL Journey Optimizer].
+    * [Message Feedback/Tracking datasets](../data/datasets-query-examples.md#message-feedback-event-dataset): allows you to view delivery information about your messages sent through [!DNL Journey Optimizer]. Note that the Message Feedback Event Dataset uses batch ingestion — expect a data latency of up to 2 hours in your CJA reports.
     * [Entity and Journey datasets](../data/datasets-query-examples.md#entity-dataset): allows you to search Friendly names and use them in your reporting. 
 
 1. [Create a data view](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html){target="_blank"} to configure the dimensions and metrics you want to use for your report.
@@ -82,3 +88,7 @@ Using [!DNL Journey Optimizer] with [!DNL Customer Journey Analytics] might lead
 * **Reports are being served from a different datasource.** 
     
     This could lead to between 1-2% data discrepancies between products.
+
+* **A dataset was recently added to the reporting connection.** 
+
+    The automatic historical backfill for a newly added dataset can take a couple of days to complete. Until it finishes, historical reporting for that dataset may show as incomplete or zero, even though new data is already flowing in correctly. Note that this is expected behavior, not data loss.

@@ -33,6 +33,12 @@ topic_v2:
 ---
 # Create a Live activity {#create-mobile-live}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Build an API-triggered campaign in Journey Optimizer so you can remotely start, update, and end Live activities for individual users or audiences.
+
+>[!ENDSHADEBOX]
+
 After configuring your mobile configuration and implement your Adobe Experience Platform mobile SDK, you can start creating your Live activity in Journey Optimizer:
 
 1. Access the **[!UICONTROL Campaigns]** menu, then click **[!UICONTROL Create campaign]**.

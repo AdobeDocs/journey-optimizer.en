@@ -26,6 +26,12 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
+**On this page:** Follow an Orchestrated campaign use case that re-engages customers based on their browsing activity by reading an audience, deduplicating it, splitting it by churn risk, and sending personalized follow-up messages.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
+
 Note that this use case starts with an audience that already exists in Experience Platform, specifically, a real-time web behavior audience that collects browsing activity as it occurs. [Learn more in Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/get-started#audiences)
 
 **Schemas needed for this use case:**
@@ -104,7 +110,7 @@ For customers identified as having a high risk of churn, create a dedicated audi
 
     ![](assets/uc-interest-8.png){zoomable="yes"}
 
-This audience is then saved to Experience Cloud, where it can later be used for a specific targeted campaign.
+This audience is then saved in [!DNL Adobe Experience Platform], where it can later be used for a specific targeted campaign.
 
 ## Low/medium risk segments {#low-medium-risk}
 

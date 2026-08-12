@@ -40,6 +40,12 @@ topic_v2:
 ---
 # List unsubscribe{#list-unsubscribe}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to enable and configure the List-Unsubscribe header so recipients can opt out directly from their inbox using a mailto address or a one-click unsubscribe URL.
+
+>[!ENDSHADEBOX]
+
 <!--Do not modify - Legal Review Done -->
 
 In [!DNL Adobe Journey Optimizer], when configuring a new email channel configuration, upon [selecting a subdomain](email-settings.md#ip-pools) from the list, the **[!UICONTROL Enable List-Unsubscribe]** option displays. It is enabled by default.

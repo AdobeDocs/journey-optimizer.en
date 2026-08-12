@@ -40,6 +40,12 @@ topic_v2:
 ---
 # Campaign live report {#campaign-live-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to read the Campaign live report in Adobe Journey Optimizer to monitor real-time campaign performance over the last 24 hours across the Email, In-app, Push, SMS, Web, and Direct mail channels.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaign_live_report"
 >title="Campaign live report"
@@ -146,6 +152,10 @@ The **[!UICONTROL Sending metrics by Email]** table offers a comprehensive summa
 * **[!UICONTROL Opens]**: Number of times a message was opened.
 
 * **[!UICONTROL Clicks]**: Number of times a content was clicked on.
+
+* **[!UICONTROL Estimated Clicks]**: Number of times a content was clicked on in your message, excluding identified bot and non-human interaction (NHI) traffic.
+
+* **[!UICONTROL Estimated CTR]** (Click-through rate): Calculated as estimated clicks relative to the total number of delivered messages.
 
 * **[!UICONTROL Unsubscribe]**: Number of clicks on the unsubscription link.
 

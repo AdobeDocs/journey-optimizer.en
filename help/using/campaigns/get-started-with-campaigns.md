@@ -50,6 +50,12 @@ topic_v2:
 ---
 # Get started with campaigns {#get-started-campaigns}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand campaign fundamentals, compare the available campaign types, and follow the end-to-end creation workflow so you can choose the right approach and build campaigns that deliver targeted content across channels in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_schedule"
 >title="Campaign schedule"
@@ -194,6 +200,10 @@ Before working with campaigns, make sure you have the following in place:
 
 * **Audiences** - Audiences must be available in Adobe Experience Platform before creating campaigns. [Get started with audiences →](../audience/about-audiences.md)
 
+    >[!NOTE]
+    >
+    >Every profile engaged by a campaign counts toward your organization's **Engageable Profiles** license metric (rolling 12-month window, counted once per sandbox). Activating a campaign to a large or new audience can cause a significant increase in this count. [Monitor your Engageable Profiles count](../audience/license-usage.md)
+
 * **Channel configurations** - Channel configurations (presets) must be created and available for the channels you want to use. [Set up channel configurations →](../configuration/channel-surfaces.md)
 
 * **Permissions** - You need appropriate permissions based on the campaign type. Contact your administrator if you cannot access campaign functionalities. [Learn about built-in roles →](../administration/ootb-product-profiles.md)
@@ -245,7 +255,7 @@ Set up the foundation of your campaign:
 2. **Select campaign type** (Action, API-triggered, or Orchestrated)
 3. **Choose your audience** 
 4. **Set priority** if using conflict management
-5. **Configure schedule** (for Action campaigns) or API details (for API-triggered). For Action campaigns, you can also [send using waves](send-using-waves.md) to deliver the message in batches over time.
+5. **Configure schedule** (for Action campaigns) or API details (for API-triggered). For Action campaigns, you can also [send using waves](../delivery/send-using-waves.md) to deliver the message in batches over time.
 
 **Type-specific guides:** [Action campaign properties](campaign-properties.md) | [API-triggered campaign properties](api-triggered-campaign-properties.md) | [Orchestrated campaign setup](../orchestrated/create-orchestrated-campaign.md)
 

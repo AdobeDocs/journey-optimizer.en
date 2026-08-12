@@ -11,6 +11,12 @@ subfeature_v2: []
 ---
 # Optimize email for AI inboxes {#email-text-optimizer}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to generate and refine a dedicated version of your email in the Email Designer so AI-assisted inbox clients ground their summaries and answers in your offers and calls to action.
+
+>[!ENDSHADEBOX]
+
 [!DNL Adobe Journey Optimizer] comes with an email-channel capability that helps you structure a specific version of your messages for improved AI-assisted inbox experiences—such as [!DNL Apple Intelligence] and [!DNL Google Gemini] in [!DNL Gmail]—so they can answer questions and summarize mail based on your content more accurately, with better results.
 
 You can use this capability to generate and refine a dedicated version of your messages so AI-assisted inbox experiences are more likely to surface the offers, calls to action, and details you intend—rather than thin auto-generated text or unrelated context.
@@ -112,4 +118,4 @@ The Optimize email for AI inboxes capability helps you prepare a version of your
 ## Related topics {#related-topics}
 
 * [Get started with email design](get-started-email-design.md)
-* For Adobe generative features more broadly, see [Get started with AI Assistant to create content](../content-management/gs-generative.md).
+* For Adobe generative features more broadly, see [Get started with Generate Content](../content-management/gs-generative.md).

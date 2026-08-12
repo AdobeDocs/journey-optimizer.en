@@ -12,6 +12,12 @@ subfeature_v2:
 ---
 # Preview & test your content {#preview-test}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to preview and test your message content in Adobe Journey Optimizer using test profiles or sample input data to verify rendering, personalization, and accuracy before sending.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ac_preview_testprofiles"
 >title="Check how your content is rendering"
@@ -55,6 +61,8 @@ Journey Optimizer provides two experiences to test your content:
     All the profiles attributes used in your content for personalization are automatically detected by the system and can be used for your tests to create multiple variants.
 
     ➡️ [Simulate content variations](../test-approve/simulate-sample-input.md)
+
+For API-triggered and Action (scheduled) campaigns, you can also send proofs programmatically using the [Simulations API](https://developer.adobe.com/journey-optimizer-apis/references/simulations){target="_blank"}. This is not supported for Orchestrated campaigns.
 
 ## Must-read
 

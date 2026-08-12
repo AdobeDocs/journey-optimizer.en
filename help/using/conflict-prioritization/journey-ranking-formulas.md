@@ -16,9 +16,17 @@ subfeature_v2:
 ---
 # Use formulas to rank journeys {#journey-ranking-formulas}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Create ranking formulas based on journey attributes, profile attributes, or AI scores so the best journey is selected for each profile when journey caps apply.
+
+>[!ENDSHADEBOX]
+
 >[!AVAILABILITY]
 >
 >This feature is currently in Limited Availability. Contact your Adobe representative to gain access.
+>
+>Ranking formulas are only available to organizations that have purchased the **Decisioning** add-on offering.
 
 [!DNL Adobe Journey Optimizer] helps you control which journeys a profile can enter when they qualify for more than the system allows. To do so, you can use [rule sets](rule-sets.md) to define caps on journey entry or concurrency. When a profile is eligible for more journeys than the cap allows, the priority assigned to each journey determines which journeys are selected.
 
@@ -51,14 +59,12 @@ To create a ranking formula for your journeys, follow the steps below.
 
     <!--
     Selecting a formula entity specifies which type of item—such as journeys or other entities—the ranking formula will apply to. This determines the context in which the formula operates, allowing you to define rules that influence how those items are ranked.
--->
+    -->
 
 1. Optionally, click **[!UICONTROL Select AI model]** to set the model that will be used as a reference to build your ranking formula. [Learn more](journey-ai-models.md)
 
 <!--
-    >[!NOTE]
-    >
-    >[Personalized optimization models](../experience-decisioning/ranking/personalized-optimization-model.md) using continuous metrics are not supported with the AI formula builder.
+    [Personalized optimization models](../experience-decisioning/ranking/personalized-optimization-model.md) using continuous metrics are not supported with the AI formula builder.
 
     Every time you refer to a model score when defining your formula below, the AI model that you selected will be used. [Learn more on AI models](../experience-decisioning/ranking/ai-models.md)
 -->

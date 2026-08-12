@@ -2,12 +2,12 @@
 solution: Journey Optimizer
 product: journey optimizer
 title: Attach a PDF file to an email
-description: Learn how to attach static PDF files to an email
+description: Learn how to attach static or personalized PDF files to an email
 feature: Email Design
 topic: Content Management
 role: User
 level: Beginner
-keywords: email, messsage, attachment, pdf, editor
+keywords: email, message, attachment, pdf, editor, personalized, API-triggered
 exl-id: 71e218d0-5b3b-4db5-8b7b-d08df8f088c4
 TQID: https://experienceleague.adobe.com/9IgYERskcUrIAhTb3xlNgWTRyY-04O58ZB8I0lYFh4g
 product_v2:
@@ -32,20 +32,28 @@ level_v2:
 ---
 # Attach a PDF file to an email {#pdf-attachments}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to attach static or personalized PDF files to emails, including the supported campaign types and applicable count, size, and volume limits.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_pdf_attachments"
->title="Add a PDF atttachment"
->abstract="Browse to select a PDF file to attach to your email.</br>You can send up to 6 messages with a PDF attachement per profile per year. The maximum allowed file size for each attachment is 5 MB.</br>For any additional size or volume, you can purchase an attachment pack add-on. For more details, contact your Adobe representative."
+>title="Add a PDF attachment"
+>abstract="Browse to select a PDF file to attach to your email.</br>You can send up to 6 messages with a PDF attachment per profile per year. The maximum allowed file size for each attachment is 5 MB.</br>For any additional size or volume, you can purchase the PDF Attachments add-on. For more details, contact your Adobe representative."
 
-You can attach a static PDF file to the email messages that you send with [!DNL Journey Optimizer].
+You can attach a static PDF file to the email messages that you send with [!DNL Journey Optimizer]. If you use [API-triggered campaigns](../campaigns/api-triggered-campaigns.md), you can also attach a [personalized PDF file for each recipient](#personalized-attachments).
+
+Note that personalized PDF attachments require additional file retrieval and processing. Campaigns using them may have higher processing latency and lower throughput than campaigns without attachments, particularly when using multiple or larger PDF files.
 
 >[!IMPORTANT]
 >
->* You can send up to 6 messages with a PDF attachement per profile per year.
+>* You can send up to 6 messages with a PDF attachment per profile per year, whether the attachment is static or personalized.
 >
->* The maximum allowed file size for each attachment is 5 MB.
+>* The maximum allowed file size for each attachment is 5 MB. For emails with [personalized attachments](#personalized-attachments), all static and personalized PDF attachments in the email share a combined 5 MB limit by default.
 >
->For any additional size or volume, you can purchase the PDF Attachments add-on. For more details, contact your Adobe representative.
+> For any additional size or volume, you can purchase the PDF Attachments add-on, which raises the combined limit for personalized attachments to 10 MB. For more details, contact your Adobe representative.
 
 To attach a PDF file to an email message, follow the steps below.
 
@@ -83,3 +91,46 @@ To attach a PDF file to an email message, follow the steps below.
 >[!NOTE]
 >
 >When you save your message as [content template](../content-management/create-content-templates.md), the PDF attachment is not retained with the template. If you create a new email from the saved content template, you need to reattach the file.
+
+## Attach personalized PDF files for API-triggered campaigns {#personalized-attachments}
+
+You can also attach recipient-specific PDF files to a single email sent through an [API-triggered campaign](../campaigns/api-triggered-campaigns.md). Unlike a static attachment, each recipient can receive a different file, such as an invoice, a boarding pass, a contract, or a shipping label. 
+
+The combined size of all static and personalized PDF attachments in an email is limited to 5 MB by default. Organizations with the applicable PDF Attachments add-on can use a combined limit of up to 10 MB.
+
+>[!IMPORTANT]
+>
+>* Personalized PDF attachments are supported only for transactional API-triggered email campaigns.
+>
+>* You can include up to five PDF attachments in an email. This limit includes both static and personalized attachments. For example, an email containing one static PDF can include up to four personalized PDFs. If you need to send more, split them across multiple communications.
+>
+>* Personalized and static PDF attachments count toward the same quota. [Learn more](#pdf-attachments)
+
+Personalized PDF attachments must be uploaded to the attachment-specific [Data Landing Zone](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"} container, then referenced in the API payload. Data Landing Zone is currently the only supported storage location for personalized PDF attachments.
+
+1. Retrieve the Data Landing Zone credentials for your sandbox using `type=ajoemailattachments` for the same IMS organization and sandbox as the execution request, as described in the [Adobe Experience Platform documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/data-landing-zone){target="_blank"}. Depending on the cloud provider, use the Azure container or AWS bucket and folder returned by the API.
+
+1. Generate the PDF files with the tool of your choice, and upload them to your Data Landing Zone container. 
+  
+    Note that Data Landing Zone automatically deletes files after seven days, make sure the PDF files remain available in the container until message delivery and any retries are complete.
+
+1. In the API payload, for each recipient, add an `attachments` array containing the file name, content type, and Data Landing Zone path of the PDF to send. [Learn how to personalize your API-triggered campaign content](../campaigns/api-triggered-campaign-content.md#contextual)
+
+    ```json
+    "attachments": [
+      {
+        "name": "invoice-12345.pdf",
+        "contentType": "application/pdf",
+        "source": {
+          "type": "dlzPath",
+          "path": "attachments/invoice-12345.pdf"
+        }
+      }
+    ]
+    ```
+
+    Note that `source.path` is the object path relative to the attachment-specific Data Landing Zone container retrieved with `type=ajoemailattachments`. Do not include the Azure container name, the AWS bucket or folder, credentials, or a full storage URL.
+
+At send time, [!DNL Journey Optimizer] fetches the file from the specified location and attaches it to the message for that recipient. Personalized PDF attachments are supported for [High Throughput](../campaigns/api-triggered-high-throughput.md) campaigns in the primary region. They are not supported during regional failover.
+
+For the full API payload reference, see the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging#tag/execution){target="_blank"}.

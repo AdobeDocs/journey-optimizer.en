@@ -37,6 +37,12 @@ subfeature_v2:
 ---
 # Configure a custom provider {#sms-configuration-custom}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to integrate a custom messaging provider in Adobe Journey Optimizer by creating API credentials, choosing an authentication method, and configuring headers, payloads, and inbound settings to send SMS and RCS messages.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_admin_sms_api_byop_provider_url"
 >title="Provider URL"
@@ -70,6 +76,16 @@ To configure your custom provider, follow the steps below:
 
 ## Create your API credential {#api-credential}
 
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_api_byop_channel_type"
+>title="Channel type"
+>abstract="Optional. Classify messages sent with this custom SMS provider credential, for example, SMS or RCS. Journey Optimizer writes the value to XDM experience events so you can report on and track delivery by channel."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_require_auth"
+>title="Authentication"
+>abstract="When enabled, only requests authenticated via Adobe IMS are accepted. Callers must include a valid OAuth token when sending data to this endpoint."
+
 To send Mobile message in Journey Optimizer using a custom provider not available out of the box by Adobe (e.g., Sinch, Infobip, Twilio), follow these steps:
 
 1. In the left rail, navigate to **[!UICONTROL Administration]** `>` **[!UICONTROL Channels]**, select the **[!UICONTROL API Credentials]** menu under **[!UICONTROL SMS settings]**, and click the **[!UICONTROL Create new API credentials]** button.
@@ -88,6 +104,8 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 
     * **[!UICONTROL Provider URL]**: Enter the URL of your SMS provider.
 
+    * **[!UICONTROL Channel Type]**: Optional. Indicate which mobile channel this credential represents, i.e. SMS, RCS, or MMS.
+
     * **[!UICONTROL Auth Type​]**: Select your authorization type and [complete the corresponding fields](#auth-options) based on the chosen authentication method.
 
         ![](assets/sms-byop.png)
@@ -96,9 +114,15 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
 
     To use mTLS only, select **[!UICONTROL No Authentication]** from the **[!UICONTROL Auth Type]** drop-down and then enable **[!UICONTROL mTLS support]**.
 
+    Note that mTLS applies only to the SMS provider (message sending) endpoint. The OAuth token endpoint must not use mTLS. Ensure mTLS is disabled on the token endpoint before testing.
+
+    >[!IMPORTANT]
+    >
+    >Configure your SMS send endpoint to trust the Adobe Experience Platform certificate authority chain by downloading the public certificate from the [MTLS Public Certificate API](https://experienceleague.adobe.com/en/docs/experience-platform/data-governance/mtls-api/public-certificate-endpoint) and adding it to your server trust store (expected client CN: `ajo-sms.aep-mtls.adobe.com`), otherwise Journey Optimizer omits the client certificate and SMS delivery fails.
+
 1. In the **[!UICONTROL Headers]** section, click **[!UICONTROL Add new parameter]** to specify the HTTP headers for the request message that will be sent to the external service.
 
-    The **Content-Type** and **Charset** header fields are set by default and cannot be deleted.
+    The **Content-Type** and **Charset** header fields are set by default and cannot be deleted, though you can edit the default **Content-Type** value. You can add up to 10 custom header parameters.
 
     ![](assets/sms_byo_2.png)
 
@@ -109,6 +133,8 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
     >[!NOTE]
     >
     >When configuring a custom SMS provider with Basic or Bearer authentication, you must include the `authOption` parameter in the JSON payload. In addition, the **Provider Payload** must reference the template variables `{{fromNumber}}`, `{{toNumber}}`, and `{{message}}`.
+    >
+    >The **Provider Payload** also supports Adobe Journey Optimizer [personalization helper functions](../personalization/functions/string.md), including [`encode64`](../personalization/functions/string.md#encode64).
 
 1. Select **[!UICONTROL Use custom dataset for inbound]** to route this credential's inbound SMS to a pre-created dataset you choose from the dropdown. [Learn more about using a custom dataset for inbound keywords](custom-dataset-inbound-keywords.md)
 
@@ -142,6 +168,10 @@ To send Mobile message in Journey Optimizer using a custom provider not availabl
     ![](assets/verify-connection.png)
 
 After creating and configuring your API credential, you now need to set up [the inbound settings for the Webhook](#webhook) for SMS messages. 
+
+>[!TIP]
+>
+>Always create and maintain separate agent configurations for each sandbox (production, development, etc.) to prevent cross-environment webhook response issues. Do not reuse the same API credentials, webhooks, or provider callback URLs (including RCS agents) across sandboxes.
 
 ### Authentication options for custom SMS Providers {#auth-options}
 
@@ -183,6 +213,8 @@ Once your API credential is created, complete the fields required for OAuth auth
 * **[!UICONTROL OAuth URL]**​: Enter the URL for obtaining the OAuth token.
 
 * **[!UICONTROL OAuth Body]**​: Provide the OAuth request body in JSON format, including parameters such as `grant_type`, `client_id`, and `client_secret`.
+
+Journey Optimizer refreshes OAuth tokens dynamically upon expiry for the custom SMS connector.
 
 ![](assets/sms-byop-oauth.png)
 

@@ -17,6 +17,12 @@ subfeature_v2:
 ---
 # Decisioning Migration API {#decisioning-migration-api}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Use the Decisioning Migration Service API to move Decision management objects between sandboxes with automated dependency analysis and rollback support, so you can transition decisioning content across environments while preserving data integrity.
+
+>[!ENDSHADEBOX]
+
 The Decisioning Migration Service API enables you to migrate Decision management objects from one sandbox to another. The migration process runs as asynchronous workflows that include dependency analysis, execution, and optional rollback capabilities.
 
 This API allows you to seamlessly transition your decisioning content between environments <!--(e.g., from development to staging, or staging to production) -->while maintaining data integrity and relationships.
@@ -65,6 +71,10 @@ Before running a migration, ensure your target sandbox is properly configured:
 * **Datastream** - Decide whether the migration should create a datastream (`createDataStream`).
 
 For more information about sandbox management, refer to [Use and assign sandboxes](../administration/sandboxes.md).
+
+>[!NOTE]
+>
+>The target sandbox can be the same as the source sandbox. The migration process handles this scenario and ensures data integrity regardless of whether objects are migrated within the same sandbox or to a different one.
 
 ## API basics {#api-basics}
 

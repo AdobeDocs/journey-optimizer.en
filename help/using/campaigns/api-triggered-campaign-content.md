@@ -32,6 +32,12 @@ topic_v2:
 ---
 # Edit the API triggered campaign content {#api-content}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Design and personalize your API triggered campaign content with contextual data passed in the API payload so each message is tailored in real time for every recipient.
+
+>[!ENDSHADEBOX]
+
 To configure the message content, navigate to the **[!UICONTROL Content]** tab or click the **[!UICONTROL Edit content]** button.
 
 ![](assets/campaign-content.png)
@@ -51,7 +57,11 @@ The content creation process depends on the channel you selected. Learn detailed
 
 >[!IMPORTANT]
 >
->[High Throughput campaigns](../campaigns/api-triggered-high-throughput.md) do not rely on Adobe profiles: all personalization must be included in the API payload as context data, as detailed below. This mode is available only for the email channel andi n the US region.
+>[High Throughput campaigns](../campaigns/api-triggered-high-throughput.md) do not rely on Adobe profiles: all personalization must be included in the API payload as context data, as detailed below. This mode is available only for the email channel and in the US region.
+
+## Attach personalized PDF files {#attachments}
+
+For transactional API-triggered email campaigns, you can include up to five PDF attachments in an email, including both static and personalized attachments. Each recipient can receive different personalized PDFs. [Learn how to attach personalized PDF files](../email/pdf-attachments.md#personalized-attachments)
 
 ## Personalize content using contextual data {#contextual}
 
@@ -74,7 +84,12 @@ Note that, for now, no contextual attribute is available for use in the left rai
 
 ## Test and check your content
 
-Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content with test profiles or sample input data uploaded from a CSV / JSON file, or added manually. [Learn how to preview and test content](../content-management/preview-test.md). To browse back to the campaign creation screen, click the left arrow.
+Once your content is defined, use the **[!UICONTROL Simulate content]** button to preview and test your content. You can use either simulation method:
+
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation.
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
+
+[Learn how to preview and test content](../content-management/preview-test.md). To browse back to the campaign creation screen, click the left arrow.
 
 ![](assets/create-campaign-design.png)
 

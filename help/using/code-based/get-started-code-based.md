@@ -37,6 +37,12 @@ topic_v2:
 ---
 # Get started with code-based channel {#get-started-code-based}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how the code-based channel lets you deliver personalized content to granular locations across your apps and web pages, and when to use it instead of other channels.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] allows you to personalize and test the experiences you want to deliver to your customers across all your touchpoints like: web apps, mobile apps, desktop apps, video consoles, TV connected devices, smart TVs, kiosks, ATMs, voice assistants, IoT devices, etc.
 
 With the **code-based experience** capability, you can define inbound experiences using a simple and intuitive non-visual editor. It allows you to insert and edit specific elements at individual and more granular locations of your apps or web pages, no matter the type of applications you have - rather than applying modifications to an entire content.
@@ -53,6 +59,28 @@ With the **code-based experience** capability, you can define inbound experience
 <!--[Learn how to create a code-based campaign in this video](#video)-->
 
 ➡️ An end-to-end use case showing how to use content experiments to compare decisions with the code-based experience channel is presented in [this section](../experience-decisioning/experience-decisioning-uc.md).
+
+## Use cases {#use-cases}
+
+The code-based channel works best when your use case goes beyond what a visual editor can support, and you have development resources available to build and maintain the implementation.
+
+| Benefit | Why | Example use cases |
+| --- | --- | --- |
+| Deep personalization | Supports complex logic and real-time data beyond what visual editors expose | Personalization driven by real-time inventory or user context |
+| Integration with external systems | Content can be composed using data from outside systems | Weather-based promotions, real-time inventory-driven offers |
+| Advanced, multi-step conditional workflows | Not limited to the pre-defined actions of visual channels | Multi-step decisioning logic across touchpoints |
+| Going beyond platform limits | Lets developers build custom interactive elements | Custom UI components not supported by out-of-the-box channels |
+| Improved campaign flexibility | Content and logic are defined by your own implementation | Headless, API-based, or non-browser digital properties |
+
+## When not to use {#when-not-to-use}
+
+The code-based channel requires development effort, so it is not the right choice for every scenario. Consider another channel in the following situations:
+
+* Your campaign is quick or simple and can be built with a no-code channel like web or in-app, without any development effort
+* You do not have developer resources or a testing environment available to build and validate a custom implementation
+* Your timeline or budget is limited for custom development, since code-based experiences require more upfront planning
+* Standard messaging already fits the built-in channel capabilities, making custom development unnecessary
+* Long-term maintainability of custom code is a concern, since surfaces and implementations need ongoing developer support
 
 ## When to use code-based vs. other channels {#code-based-vs-other-channels}
 
@@ -132,4 +160,5 @@ The key steps to create and deliver a code-based experience are as follows.
 * **[Test code-based experiences](test-code-based.md)** - Learn how to preview and test your code-based experiences before publishing.
 * **[Implementation samples](code-based-implementation-samples.md)** - Explore code examples and implementation patterns for various use cases.
 * **[Code-based experiences tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/channels/code-based-experience-channel/create-a-code-based-experience-campaign){target="_blank"}** - Explore step-by-step video tutorials on code-based features and best practices.
+
 

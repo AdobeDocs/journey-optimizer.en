@@ -34,6 +34,12 @@ topic_v2:
 ---
 # Conflict management & prioritization {#conflict-prioritization}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Discover how conflict detection, priority scores, and rule sets work together so you can avoid overlapping communications and control how often customers are messaged.
+
+>[!ENDSHADEBOX]
+
 In Journey Optimizer, managing the volume and timing of campaigns and journeys is essential to avoid overwhelming customers with too many interactions. Conflict management and prioritization tools help you deliver thoughtful, well-timed communications—preventing customer fatigue and ensuring the right messages reach your audience. By using conflict detection, priority scores, and rule sets, you can streamline campaigns and journeys to avoid overlaps and balance frequency across channels.
 
 These tools are available for campaigns and for unitary, Audience Qualification, and Read audience journeys. Whether you're setting limits on how often messages are sent or deciding which campaigns take precedence, these features work together to simplify decision-making and optimize your marketing strategy.
@@ -92,5 +98,6 @@ Rule sets allow you to **group together multiple rules** and apply them to the j
 * **[Journey capping & arbitration](journey-capping.md)** - Set up journey-level capping rules and arbitration.
 * **[Frequency capping by channel](channel-capping.md)** - Set channel-level frequency caps to prevent over-messaging.
 * **[Set quiet hours](quiet-hours.md)** - Define time-based exclusions for message delivery.
+* **[Rank journeys using formulas](journey-ranking-formulas.md) and [AI models](journey-ai-models.md)** - Learn how to build formulas and AI models to rank journeys when caps apply.
 * **[Conflict management tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/conflict-management/identify-potential-conflicts){target="_blank"}** - Step-by-step video tutorials.
 * **[Journey Optimizer use cases](../building-journeys/jo-use-cases.md)** - Browse practical patterns, including frequency capping and journey suppression logic.

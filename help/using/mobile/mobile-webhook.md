@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Create Webhook {#webhook}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create inbound and feedback SMS webhooks in Adobe Journey Optimizer to capture opt-in and opt-out consent responses and delivery events for Sinch, Infobip, and custom providers.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_channels_sms_webhook_settings_create"
 >title="Create an SMS Webhook"
@@ -52,7 +58,7 @@ When setting up a webhook, you can define its purpose based on the type of data 
 
 >[!NOTE]
 >
->Inbound keyword data is stored in the _AJO Inbound Activity Event Dataset_ system dataset, unless a custom dataset is configured. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured. [Learn more](../data/get-started-datasets.md#system-datasets)
+>Inbound keyword data is stored in the _AJO Email Tracking Dataset_ system dataset, unless a custom dataset is configured. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured. [Learn more](../data/get-started-datasets.md#system-datasets)
 
 Depending on your provider, there will be different expectations on what needs to be set up to have a successful SMS implementation:
 
@@ -253,7 +259,7 @@ For Infobip, create two separate webhooks: one for Feedback events and one for I
 
     +++ Custom
 
-    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL Message Feedback tracking]** dataset for reporting and audience building.
+    * Configure a single custom keyword. When a user's message matches this keyword, the keyword is written to the **[!UICONTROL AJO Email Tracking]** Dataset for reporting and audience building.
 
     * Build an Audience (streaming or batch) that references this keyword for use in your journeys and campaigns.
 

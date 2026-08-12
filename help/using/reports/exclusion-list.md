@@ -38,6 +38,12 @@ topic_v2:
 ---
 # Exclusion reasons {#exclusion-list}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand the exclusion reasons, error codes, and affected channels that prevent messages from being sent, and learn how exclusions are counted in your campaign reports.
+
+>[!ENDSHADEBOX]
+
 ## How exclusions are counted in Campaign reports
 
 When viewing campaign reports, note that the *Exclusions* metric is calculated as follows:
@@ -82,6 +88,7 @@ For more details on the specific exclusion reasons, see the table below.
 | EmailNoMessageFoundForTreatment | 050027 | Email | An exclusion event is generated when the experiment is enabled for the message and no message is found for the qualified treatment. |
 | EmailMalformedAddress | 050024 | Email | An exclusion event is generated when the email contains a malformed address. |
 | UnsubscribeLinkNotValid | 050081 | Email | An exclusion event is generated when the List-Unsubscribe mailTo subject length is greater than the RFC limit of 998 characters. |
+| AttachmentResolutionFailed | 050083 | Email | An exclusion event is generated when one or more PDF attachments encounter a permanent resolution or retrieval failure. The affected email is excluded and is not sent. |
 | InAppNoVariantDefined | 050041 | InApp | An exclusion event is generated when no variant is defined for InApp message. |
 | InAppNoMessageFoundForTreatment | 050042 | InApp | An exclusion event is generated when the experiment is enabled for the message and no message is found for the qualified treatment. |
 | PushNoTokenFoundInProfile | 050030 | Push | An exclusion event is generated when the profile does not have push tokens. |

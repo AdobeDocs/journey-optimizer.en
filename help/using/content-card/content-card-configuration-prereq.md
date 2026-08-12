@@ -19,6 +19,12 @@ subfeature_v2:
 ---
 # Content cards prerequisites {#content-card-configuration-prereq}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Configure the required Adobe Experience Platform settings so Adobe Journey Optimizer can correctly deliver and report on your content cards.
+
+>[!ENDSHADEBOX]
+
 For Adobe Journey Optimizer to correctly display content cards, you must configure the following Adobe Experience Platform settings:
 
 * **Adobe Experience Platform Data Collection**

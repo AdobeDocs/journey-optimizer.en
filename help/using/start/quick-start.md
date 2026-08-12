@@ -1,8 +1,8 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Roles and Responsibilities
-description: Learn about the different roles involved in Adobe Journey Optimizer and their responsibilities
+title: Roles and responsibilities | Adobe Journey Optimizer
+description: Understand roles, responsibilities, and the recommended implementation order for Adobe Journey Optimizer.
 feature: Get Started
 topic: Get Started
 role: Admin, Developer, User
@@ -64,23 +64,19 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
 ---
-# Roles and Responsibilities
+# Roles and responsibilities
 
-Adobe Journey Optimizer enables brands to deliver connected, contextual, and personalized experiences throughout the customer journey. Built with an end-to-end focus on scale, speed, and flexibility, Journey Optimizer combines three main value drivers in a unified application:
+>[!BEGINSHADEBOX]
 
-* **Real-time customer insights and engagement** powered by Adobe's real-time customer profile
-* **Modern omnichannel orchestration** through unified canvases for both real-time journeys and batch campaigns, plus a modern message designer
-* **Intelligent decisioning and personalization** through decision management and AI/ML capabilities
+**On this page:** Understand the key roles in an Adobe Journey Optimizer implementation and their responsibilities so you can find the right starting point and quick-start tasks for your team.
 
-Journey Optimizer offers two main approaches to reach and engage customers:
+>[!ENDSHADEBOX]
 
-* **Journeys** — Real-time, one-to-one orchestration where each customer moves at their own pace, triggered by behavior or events. Best for onboarding sequences, cart abandonment, and lifecycle engagement.
-* **Campaigns** — Audience-based messaging with three delivery modes depending on your use case:
-  * **Action campaigns** — Scheduled or recurring messages delivered to a defined audience all at once. Best for newsletters, promotional announcements, and product launches.
-  * **API-triggered campaigns** — On-demand messages triggered by an external system via API. Best for transactional messages such as order confirmations, shipping alerts, and account notifications.
-  * **Orchestrated campaigns** — Complex batch workflows with multi-entity segmentation and canvas-based execution. Best for seasonal promotions, multi-step batch programs, and campaigns requiring exact pre-send counts.
+Adobe Journey Optimizer is implemented by four distinct roles working in sequence. This page maps each role's responsibilities and links to detailed getting-started guides.
 
-This unified experience allows you to implement entire use cases in one place, from defining audiences and designing journeys to creating personalized content and analyzing results. This documentation explains the key roles in using Journey Optimizer effectively, their responsibilities, and how to get started.
+>[!NOTE]
+>
+>New to Journey Optimizer? Start with [What is Journey Optimizer](get-started.md) first.
 
 **Important Note:** Adobe Journey Optimizer defines distinct roles with specific responsibilities. A single individual can perform multiple roles or all roles, depending on your organization's structure.
 
@@ -88,7 +84,7 @@ This unified experience allows you to implement entire use cases in one place, f
 >
 >* Components and capabilities available in your environment depend on your [permissions](../administration/permissions.md) and on your [licensing package](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}. For any question, reach out to your Adobe Customer Success Manager or your Adobe representative.
 >
->* Adobe Experience Cloud general privacy guidelines and procedures apply to [!DNL Journey Optimizer]. [Learn more about Adobe Experience Cloud privacy](https://www.adobe.com/privacy/experience-cloud.html){target="_blank"}.
+>* [!DNL Adobe CX Enterprise] general privacy guidelines and procedures apply to [!DNL Journey Optimizer]. [Learn more about [!DNL Adobe CX Enterprise] privacy](https://www.adobe.com/privacy/experience-cloud.html){target="_blank"}.
 
 ## Before you begin {#before-you-begin}
 
@@ -147,7 +143,7 @@ A successful Journey Optimizer implementation typically follows this sequence, w
 4. **Marketer**: Designs and executes customer experiences  
    Marketers leverage all the foundational work to build journeys, create content, and optimize customer experiences across all channels.  
    * Build audiences using segmentation, CSV upload, or audience composition  
-   * Design personalized content with AI Assistant and templates  
+   * Design personalized content with Generate Content and templates  
    * Create multi-channel journeys with event and audience triggers
    * Test with approval workflows before launch
    * Monitor performance and optimize based on reporting insights  
@@ -291,7 +287,7 @@ For more in-depth learning and updates, explore the following resources:
 * [Tutorial Videos](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/overview.html){target="_blank"} - Step-by-step video tutorials for all roles
 * [Get started with data management](../data/gs-data.md) - Schemas, datasets, identities, and the data readiness checklist for Journey Optimizer
 * [Journey Use Cases Library](../building-journeys/jo-use-cases.md) - Practical examples and implementation patterns
-* [AI & Intelligent Features](ai-features.md) - Learn about AI Assistant, send-time optimization, and content generation
+* [AI & Intelligent Features](ai-features.md) - Learn about AI, send-time optimization, and content generation
 * [User Interface Guide](user-interface.md) - Navigate Journey Optimizer effectively
 
 >[!TAB Stay Updated]
@@ -306,3 +302,12 @@ For more in-depth learning and updates, explore the following resources:
 * [Product Forum](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer/ct-p/journey-optimizer){target="_blank"} - Ask questions and share knowledge
 
 >[!ENDTABS]
+
+## Role guides {#role-guides}
+
+| Role | Guide |
+|------|-------|
+| Administrator | [Get started for administrators](path/administrator.md) |
+| Data Engineer | [Get started for data engineers](path/data-engineer.md) |
+| Developer | [Get started for developers](path/developer.md) |
+| Marketer | [Get started for marketers](path/marketer.md) |

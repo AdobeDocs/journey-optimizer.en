@@ -29,6 +29,12 @@ level_v2:
 ---
 # Get started with WhatsApp messages {#get-started-whatsapp}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Understand how the WhatsApp channel works in Journey Optimizer, along with its prerequisites and limitations, so you can decide how to add WhatsApp to your journeys and campaigns.
+
+>[!ENDSHADEBOX]
+
 You can now send WhatsApp messages directly through Journey Optimizer via Meta's [Cloud API](https://developers.facebook.com/docs/whatsapp/cloud-api/). This feature enables seamless integration of WhatsApp into journeys and campaigns, enhancing communication and engagement with recipients.
 
 * In a **Journey**. Create a journey, add a **WhatsApp** activity, and define basic settings, then browse to the **[!UICONTROL Actions: WhatsApp]** right pane to create the content for the WhatsApp message. Learn how to create a journey on [this page](../building-journeys/journey-gs.md).
@@ -36,6 +42,29 @@ You can now send WhatsApp messages directly through Journey Optimizer via Meta's
 * In a **Campaign**. Create a campaign, select **WhatsApp** as your action and define basic settings, then edit the message content to define the WhatsApp message to send. Learn how to create [an action campaign](../campaigns/campaign-action.md#action-campaign-action) | [an API-triggered campaign](../campaigns/api-triggered-campaigns.md) | [an orchestrated campaign](../orchestrated/create-orchestrated-campaign.md#create)
 
 ![](assets/do-not-localize/whatsapp-beta.png){zoomable="yes"}
+
+## Use cases {#use-cases}
+
+WhatsApp works best when your audience already uses the platform and you want to combine rich content with a genuinely two-way conversation.
+
+| Benefit | Why | Example use cases |
+| --- | --- | --- |
+| High global engagement | Widely used messaging platform with strong adoption in many regions | Reaching international audiences already active on WhatsApp |
+| Rich, interactive messages | Supports images, videos, buttons, and quick replies | Product catalogs, appointment confirmations with quick-reply options |
+| Two-way conversational experiences | Recipients can reply within the same thread | Customer support conversations, order tracking questions |
+| Interactive multi-screen experiences | WhatsApp Flow templates let you build guided, multi-step interactions within the chat | Surveys, lead capture forms |
+| Compliance and trust via official API | Delivered through Meta's verified Cloud API with sender verification | Brand-verified communications that build recipient trust |
+| Integration with other channels | Can be layered with journeys and campaigns alongside other channels | Multi-channel journeys using WhatsApp as a complementary touchpoint |
+
+## When not to use {#when-not-to-use}
+
+WhatsApp depends on audience adoption and explicit consent, so it is not suited to every scenario. Consider another channel in the following situations:
+
+* Your audience does not use WhatsApp, since adoption varies widely by region and demographic
+* Recipients have not given explicit opt-in, which is required by Meta's messaging policies
+* The message is urgent and needs guaranteed delivery, which SMS or push handles better given WhatsApp's delivery and template review constraints
+* The content is lengthy or complex and better suited to email, which offers more space and richer formatting
+* Real-time conversational support is not feasible on your side, since two-way WhatsApp threads set an expectation of a timely reply
 
 ## Pre-requisites {#prereq}
 

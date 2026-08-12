@@ -43,6 +43,12 @@ topic_v2:
 ---
 # Work with GenStudio for performance marketing {#ajo-genstudio}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to integrate GenStudio for Performance Marketing with Journey Optimizer to export email templates, generate on-brand content variations, and import them back for use in your email campaigns.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_genstudio_button"
 >title="Use a template built with GenStudio"
@@ -91,7 +97,7 @@ Guardrails and limitations {#genstudio-guardrails}
 
 General guidelines for using the GenStudio integration in [!DNL Adobe Journey Optimizer] for email generation are listed below:
 
-See if guidelines/limitations such as the ones listed [here](../content-management/gs-generative.md#generative-guardrails) for AI Assistant can apply.
+See if guidelines/limitations such as the ones listed [here](../content-management/gs-generative.md#generative-guardrails) for Generate Content can apply.
 
 The following limitations apply to GenStudio integration in [!DNL Adobe Journey Optimizer]:
 -->

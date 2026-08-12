@@ -26,6 +26,12 @@ level_v2:
 ---
 # Email spam report {#spam-report}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the spam report in Adobe Journey Optimizer to check your email content spam scoring and apply advice that improves deliverability before sending.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_spam_report"
 >title="Email spam report"

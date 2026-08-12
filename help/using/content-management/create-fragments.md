@@ -39,7 +39,13 @@ topic_v2:
     internal-label: Personalization
 ---
 # Create a fragment {#create-fragments}
- 
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to create, design, lock, preview, and publish visual and expression fragments so you can reuse content across Adobe Journey Optimizer campaigns and journeys.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_create_visual_fragment"
 >title="Select the visual type"
@@ -55,6 +61,8 @@ topic_v2:
 Fragments can be created from scratch from the **[!UICONTROL Fragments]** left menu. In addition, you can also save a portion of existing content as fragment when designing content. [Learn how](save-fragments.md#)
 
 Once saved, your fragment is available for use in a journey, a campaign or a template. You can use this fragment when building any content within journeys and campaigns. See [Add visual fragments](../email/use-visual-fragments.md) and [Leverage expression fragments](../personalization/use-expression-fragments.md).
+
+➡️ [Manage your Adobe Experience Manager content fragments](../integrations/aem-fragments-manage.md) to view synced fragments, references, tags, and manual sync on the **[!UICONTROL AEM Fragments]** tab.
 
 To create a fragment, follow the steps below.
 

@@ -30,13 +30,19 @@ level_v2:
 ---
 # Access and manage content templates {#access-manage-templates}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to access, search, organize into folders, edit, delete, and export content templates across sandboxes in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 ## Prerequisites {#prerequisites}
 
 To access and manage content templates, ensure the following:
 
-* **Content Templates permission** — Your role must include the **[!UICONTROL Manage content templates]** permission (under the **Content Management** resource). Without it, the **Content Templates** menu is not visible in the left navigation. [Learn how to manage permissions](../administration/permissions.md)
-* **Sandbox scope** — Content templates are sandbox-specific. Templates created in one sandbox are not available in another. Ensure you are in the correct sandbox before searching for a template.
-* **HTML templates (deprecated)** — Starting March 2025, HTML-type content templates are deprecated. Existing HTML templates remain accessible but new ones cannot be created.
+* **Content Templates permission**: Your role must include the **[!UICONTROL Manage content templates]** permission (under the **Content Management** resource). Without it, the **Content Templates** menu is not visible in the left navigation. [Learn how to manage permissions](../administration/permissions.md)
+* **Sandbox scope**: Content templates are sandbox-specific. Templates created in one sandbox are not available in another. Ensure you are in the correct sandbox before searching for a template.
+* **HTML templates (deprecated)**: Starting March 2025, HTML-type content templates are deprecated. Existing HTML templates remain accessible but new ones cannot be created.
 
 ## Access content templates {#access}
 
@@ -103,13 +109,37 @@ To easily navigate your content templates, use folders to organize them more eff
 
 ## Edit and delete content templates {#edit}
 
-* To edit a template content, click the desired item from the list and make the desired changes. You can also edit the content template properties by clicking the edit button next to the template's name.
+From the **[!UICONTROL More actions]** button next to each template, you can access the following shortcuts and actions:
+
+* **[!UICONTROL Edit details]**: Edit the template name, description, and tags.
+* **[!UICONTROL Simulate content]**: Preview and test the template content.
+* **[!UICONTROL Delete]**: Delete the template.
+
+Additional shortcuts are available depending on the channel, access the drop-down below to learn more:
+
++++ For email templates
+
+* **[!UICONTROL Edit email body]**: Open the email designer to modify the template content.
+* **[!UICONTROL View proof]**: View a proof of the email template.
+* **[!UICONTROL Send proof]**: Send a proof of the template to designated recipients.
+* **[!UICONTROL Spam report]**: Analyze the template against spam filters.
+* **[!UICONTROL Render email]**: Preview how the email renders across different email clients.
+
+![](assets/content-template-quick-launch-email.png)
+
++++
+
++++ For SMS templates
+
+* **[!UICONTROL Check character count/segments]**: Check the character count and number of segments used by the message.
+
+![](assets/content-template-quick-launch-sms.png)
+
++++
+
+To edit a template's full content, click the desired item from the list and make the desired changes. You can also edit the content template properties by clicking the edit button next to the template's name.
 
     ![](assets/content-template-edit.png)
-
-* To delete a template, select the **[!UICONTROL More actions]** button next to the desired template and select **[!UICONTROL Delete]**.
-
-    ![](assets/content-template-list-delete.png)
 
 >[!NOTE]
 >

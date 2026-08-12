@@ -34,6 +34,12 @@ level_v2:
 ---
 # Personalize your brand {#brands-personalize}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to personalize your brand guidelines by defining brand identity, writing style, and visual content rules in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
+
 ## About the brand {#about-brand}
 
 Use the **[!UICONTROL About the brand]** tab to establish the core identity of your brand—outlining its purpose, personality, tagline, and other defining attributes.

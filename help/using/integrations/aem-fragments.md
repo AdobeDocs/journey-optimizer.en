@@ -32,10 +32,23 @@ topic_v2:
 # Work with Adobe Experience Manager Content Fragments {#aem-fragments}
 
 >[!BEGINSHADEBOX]
+
+**On this page:** Learn how to tag, add, and personalize Adobe Experience Manager Content Fragments in Journey Optimizer campaigns and journeys, including working with variations and Experience Decisioning.
+
+>[!ENDSHADEBOX]
+
+>[!BEGINSHADEBOX]
  
 The existing **Asset Selector** and **Content Fragment selector** experiences in Adobe Journey Optimizer workflows are being replaced by **Content Advisor**. Content Advisor provides an AI-powered, unified interface for discovering and selecting Assets, Content Fragments, and Dynamic Media directly within your AJO authoring workflows. Existing integrations will continue to work during the transition period.
 
 >[!ENDSHADEBOX]
+
+>[!NOTE]
+>
+>**AEM Content Fragments** are authored in Adobe Experience Manager and used in [!DNL Journey Optimizer]. They are different from:
+>
+>* **[Fragments](../content-management/fragments.md)** — reusable content components created in [!DNL Journey Optimizer] and used in emails across campaigns and journeys.
+>* **[Journey Fragments](../building-journeys/journey-fragments.md)** — reusable sets of journey nodes inserted into journeys.
 
 The integration between Adobe Experience Manager and Journey Optimizer follows this data flow:
 
@@ -189,9 +202,10 @@ Adobe Experience Manager allows you to identify the Journey Optimizer campaigns 
 
 ## Use AEM Content Fragments with Experience Decisioning {#aem-decisioning}
 
+
 >[!AVAILABILITY]
 >
->This feature is available in Limited Availability for outbound channels with Decisioning support. To request access, contact your Adobe representative.
+>This feature is available for channels with Decisioning support.
 
 AEM Content Fragments can also be used as offer item attributes in **Experience Decisioning**. By mapping Content Fragment fields to decision item attributes, you can use Journey Optimizer decisioning models, formulas, and ranking criteria to optimize which fragment is served to each profile.
 

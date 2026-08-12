@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Enrichment {#enrichment}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Enrichment targeting activity in an Orchestrated campaign to enhance your audience with additional attributes, linked table data, and offers for more precise targeting and personalization.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_enrichment"
 >title="Enrichment activity"
@@ -161,6 +167,11 @@ Finally, apply filters to ensure only relevant records are included:
 
 1. Click **[!UICONTROL Confirm]**.
 
+### Use collection data in message personalization {#collection-personalization}
+
+When you configure a collection link with **[!UICONTROL Collect data]** and set **[!UICONTROL Lines to retrieve (Columns to create)]** (for example, `3`), enrichment attributes are available in the message editor under **[!UICONTROL Target attributes] > [!UICONTROL Enrichment]**.
+
+➡️ [Learn how to use enrichment collection data in personalization](../add-personalization.md#enrichment-collections)
 
 <!--
 #### Define the sorting{#collection-sorting}

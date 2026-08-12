@@ -39,6 +39,12 @@ topic_v2:
 ---
 # Key Terminology {#key-terminology}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Look up the essential Adobe Journey Optimizer terms and concepts so you can navigate the platform confidently and collaborate effectively with your team.
+
+>[!ENDSHADEBOX]
+
 This reference guide defines the essential terms you'll encounter when using Adobe Journey Optimizer. Understanding these concepts helps you navigate the platform confidently and collaborate effectively with your team.
 
 For pairs of similar-sounding terms that are often confused — such as **Decisioning vs Decision Management** or **Content Cards vs In-App messages** — see [When terms look similar](#disambiguation) at the bottom of this page.
@@ -62,7 +68,7 @@ For pairs of similar-sounding terms that are often confused — such as **Decisi
 |------|------------|
 | **Audience** | A group of customers who share common characteristics or behaviors, such as "customers who purchased in the last 30 days" or "loyalty program members." Audiences are used to target specific customer segments. [Learn more](../audience/about-audiences.md) |
 | **Audience Qualification** | The automatic process that occurs when a customer joins or leaves an audience. Journey Optimizer can trigger actions when someone enters or exits an audience, ensuring timely and relevant communications. [Learn more](../building-journeys/audience-qualification-events.md) |
-| **Engageable Audience** | The number of customer profiles you can actively contact through Adobe Journey Optimizer based on your license agreement. This typically refers to profiles engaged within the last 12 months. |
+| **Engageable Profiles** | The unique customer profiles engaged through journeys, campaigns, or decisioning activities over a rolling 12-month window. This is the key license metric for Journey Optimizer: each profile is counted once per sandbox regardless of how many journeys or campaigns it enters. Monitor the count at **[!UICONTROL Administration]** > **[!UICONTROL License Usage]**. [Learn more](../audience/license-usage.md) |
 | **Test Profile** | Fictitious profiles used for testing and previewing messages before sending to real customers. Test profiles help verify personalization, content, and journey logic. [Learn more](../audience/creating-test-profiles.md) |
 
 ## Content & personalization terms {#content-terms}

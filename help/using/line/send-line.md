@@ -31,11 +31,18 @@ level_v2:
 ---
 # Check and send your LINE message {#send-line}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Preview, simulate, and validate your LINE message so you can resolve any warnings or errors and confidently send it through your journey or campaign.
+
+>[!ENDSHADEBOX]
+
 ## Preview your text message {#preview-line}
 
-Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. If you inserted personalized content, you can check how this content is displayed in the message. [Learn how to test your content using sample input data](../test-approve/simulate-sample-input.md)
+Once your message content has been defined, you can preview its content using either simulation method:
 
-To do this, click **[!UICONTROL Simulate content]** then check your message using the test profile data.
+* Click **[!UICONTROL Simulate content]** to test content variations with sample input data or AI auto-generation. [Learn how to simulate content variations](../test-approve/simulate-sample-input.md)
+* Click **[!UICONTROL Simulate content]**, then select **[!UICONTROL Simulate content (AEP profiles)]** from the dropdown to preview with test profiles.
 
 Detailed information on how to preview & test content is available in the [Content Management](../content-management/preview-test.md) section.
 

@@ -37,6 +37,12 @@ subfeature_v2:
 ---
 # Use decisioning in a code-based experience with content experiment {#experience-decisioning-uc}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Follow a use case that builds two selection strategies and compares ranking methods in a code-based experience content experiment, so you can determine which decisioning approach performs best for your audience.
+
+>[!ENDSHADEBOX]
+
 This use case presents all the steps needed to use Decisioning with the [!DNL Journey Optimizer] code-based channel.
 
 ➡️ [Discover a use case in video](#video)

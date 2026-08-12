@@ -37,6 +37,12 @@ subfeature_v2:
 ---
 # Build AI models {#create-ai-models}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Build auto-optimization or personalized optimization AI models and connect them to your conversion datasets, so the decisioning engine can automatically rank offers and serve the highest-converting one to each profile.
+
+>[!ENDSHADEBOX]
+
 [!DNL Journey Optimizer] enables you to create **AI models** to rank offers based on your business goals.
 
 >[!CAUTION]
@@ -123,7 +129,7 @@ To create an AI model, follow the steps below:
 
     >[!NOTE]
     >
-    >You can select up to 5 audiences.
+    >You can select up to 50 audiences.
 
 1. Save and activate the AI model. Once your model is live, you can [monitor its training status and performance](ai-model-observability.md).
 

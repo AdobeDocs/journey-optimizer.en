@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: AI Assistant content prompting guide
+title: Generate content prompting guide
 description: Learn how to craft effective prompts for AI-powered content generation using the CO-STAR framework to create high-converting, brand-aligned marketing content.
 topic: Artificial Intelligence
 role: User
@@ -37,7 +37,13 @@ subfeature_v2:
   - id: d6e0d39b-5df3-4c72-8263-fd834397ee97
     internal-label: AI content generation
 ---
-# AI Assistant prompt best practices {#ai-assistant-prompting-guide}
+# Generate content prompt best practices {#ai-assistant-prompting-guide}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to write effective Generate Content prompts using the prompt assistant and the CO-STAR framework to generate high-converting, on-brand marketing content in Adobe Journey Optimizer.
+
+>[!ENDSHADEBOX]
 
 >[!CONTEXTUALHELP]
 >id="ajo_ai_assistant_prompt"
@@ -45,13 +51,13 @@ subfeature_v2:
 >abstract="Explore Journey Optimizer documentation to learn how to create effective prompts that produce high-converting, on-brand marketing content."
 
 This guide helps you structure your requests, communicate intent with clarity, and ensure the AI produces messaging that aligns with your brand guidelines, audience needs, and campaign goals.
-Learn how to write effective prompts that enable AI Assistant to generate high-quality, on-brand marketing content tailored to your objectives. 
+Learn how to write effective prompts that enable you to use AI to generate high-quality, on-brand marketing content tailored to your objectives. 
 
 ## Use the Prompt assistant {#prompt-assistant}
  
 The prompt assistant helps you strengthen your opening prompt so content generation needs less back-and-forth. From that first input, you may get suggestions, a suggested rewrite, optional enhancements, and clarifying questions. Your answers refine the prompt that is used to generate the content.
 
-1. From the **[!UICONTROL AI Assistant]** menu, open **[!UICONTROL Prompt assistant]** to refine your prompt before you generate content.
+1. From the **[!UICONTROL Generate Content]** menu, open **[!UICONTROL Prompt assistant]** to refine your prompt before you generate content.
 
     ![](assets/prompt-assistant-1.png)
 
@@ -79,7 +85,7 @@ Following this workflow establishes objectives and required detail in the prompt
 
 ## Use the CO-STAR framework {#costar-framework}
 
-For best results with AI Assistant, organize your prompts using the CO-STAR framework. This structured approach ensures AI understands exactly what you need.
+For best results with Generate Content, organize your prompts using the CO-STAR framework. This structured approach ensures AI understands exactly what you need.
 
 | Component | What it means | Why it matters |
 |-|-|-|

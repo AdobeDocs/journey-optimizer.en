@@ -30,6 +30,12 @@ subfeature_v2:
 ---
 # A/B vs Multi-armed bandit experiments {#mab-vs-ab}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Compare A/B and multi-armed bandit experiments in Adobe Journey Optimizer, including their strengths, limitations, and the scenarios where each traffic allocation method works best.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_ab_test_mab"
 >title="Experiment type"

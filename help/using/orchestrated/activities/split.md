@@ -18,6 +18,12 @@ subfeature_v2:
 ---
 # Split {#split}
 
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to use the Split targeting activity to segment the incoming population of an Orchestrated campaign into multiple subsets based on filtering rules, limits, or population size.
+
+>[!ENDSHADEBOX]
+
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_split"
 >title="Split activity"
@@ -81,7 +87,7 @@ Follow these steps to configure the **[!UICONTROL Split]** activity:
     >
     >Before running your Orchestrated campaign, make sure the subsets are ordered as intended. Use the arrow buttons to adjust their position.
 
-1. Once subsets have been added, the activity shows as many output transitions as there are subsets. We strongly recommend changing the label of each subset to identify them easily in the Orchestrated campaign canvas. 
+1. Once subsets have been added, the activity shows as many output transitions as there are subsets. We strongly recommend changing the label of each subset to identify them easily in the Orchestrated campaign canvas.
 
 1. Configure filters for each subset:
 
@@ -90,6 +96,8 @@ Follow these steps to configure the **[!UICONTROL Split]** activity:
     1. Click **[!UICONTROL Create filter]** to define filtering rules using the rule builder, for example, select profiles with a valid email address.
 
         ![](../assets/orchestrated-split-1.png)
+
+    1. In the **[!UICONTROL Segment code]** field, enter a code to identify the subset in logs. This code is stored alongside the profile data and can be used to track and measure the performance of each segment. If left empty, the subset label is used automatically.
 
     1. To limit the number of selected profiles, enable **[!UICONTROL Enable limit]** and specify a number or percentage.
 

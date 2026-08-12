@@ -9,149 +9,256 @@ role: User
 level: Intermediate
 keywords: test, journey, check, error, troubleshooting
 version: Journey Orchestration
-badge: label="Limited Availability" type="Informative"
 feature_v2: []
 subfeature_v2: []
 ---
-# Simulate your journey{#simulate-journey}
-  
+# Simulate your journey {#simulate-journey}
+
+>[!BEGINSHADEBOX]
+
+**On this page:** Learn how to run Quick simulation and Manual simulation with simulated users to validate journey paths and review results before you publish.
+
+>[!ENDSHADEBOX]
+
+Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
+
 >[!IMPORTANT]
 >
-> This capability is available to all customers as a Limited Availability with essential capabilities.
+>* To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. The same permissions let you create and manage simulated users, **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
+>
+>* To manage simulated users without **[!UICONTROL Simulation]**, assign **Manage Simulated Users** or **View Simulated Users** from the **[!UICONTROL Simulated Users]** capability.
+>
+>* For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
 
-You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profile-like entities you add, without using persistent test profiles in Adobe Experience Platform.
- 
-Adobe Journey Optimizer offers two ways to test and validate your journey:
+For an overview by journey type, see [Get started with Journey simulation](simulate-journey-gs.md).
 
-* **[Simulation](#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users for quick runs without pre-created profiles in Adobe Experience Platform.
+## Simulation types {#simulation-types}
 
-* **[Test mode](testing-the-journey.md)**: Use persistent profiles flagged as test profiles in Adobe Experience Platform, reusable across sessions. Choose this approach when you need consistent, predefined data. [Learn how to create test profiles](../audience/creating-test-profiles.md).
- 
-Note that Journey Simulation is in **Limited availability**. To share feedback and help us improve the experience, open **[!UICONTROL Feedback]** from the top bar.
- 
-![Beta feedback menu](assets/beta-feedback.png)
+After activation, batch journeys with read audience entry offer two ways to run a simulation:
+
+* **[!UICONTROL Quick simulation]** runs end-to-end with generated users, generated event values, and default test settings, powered by the Journey Agent. It is a quick way to simulate a journey end to end with minimal intervention. Quick simulation starts as soon as you select this option.
+
+* **[!UICONTROL Manual simulation]** lets you run a simulation step by step, manually. Create simulated users (manually or with the Journey Agent), trigger them into the journey, define event payloads (manually or with the Journey Agent), and override waits.
+
+![Simulation settings panel with Quick simulation and Manual simulation options next to the journey canvas](assets/quick-simulation-1.png)
+
+### Quick simulation {#quick-simulation}
+
+On any journey in **[!UICONTROL Simulation]**, **[!UICONTROL Quick simulation]** runs the journey with generated users, event values and pre-filled settings.
+
+
+1. Select **[!UICONTROL Quick simulation]**.
+
+1. Review the fields Adobe Journey Optimizer gathered for the run. Click **[!UICONTROL Update values]** to change test settings and execution addresses, or continue without changes. 
+
+    This step appears only if the journey uses Waits or Channels. You can adjust all Wait durations and execution addresses for simulated users, for example, use your own email so messages from the run go to your inbox.
+
+    ![Quick Simulation dialog on the Gathering information step with Update values and Continue to next step](assets/quick-simulation-2.png)
+  
+1. If you opened **[!UICONTROL Update values]**, edit the settings, for example, the address used for message proofs, then confirm to start the simulation.
+
+    >[!NOTE]
+    >
+    >Pre-filled execution email, phone and push token fields come from values previously used in journey simulation and cached in your browser.
+
+    ![Quick Simulation Update values step with wait time override and proof email, phone and push token fields](assets/quick-simulation-3.png)
+
+1. The Journey Agent generates a set of simulated users from the journey definition.
+
+    For journeys with an Email, SMS, or Push node, the Agent prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those values. Once done, click **[!UICONTROL Generate]**.
+
+1. When the run completes, click **[!UICONTROL View results]** to review paths, errors, and uncovered branches. See [View results](#viewing-results).
+
+    ![Quick Simulation completed with all steps succeeded and View Results available](assets/quick-simulation-4.png)
+
+Quick simulation also supports event-triggered journeys and journeys that include event activities. Event values are set and fired automatically for every generated simulated user. Once a user enters the journey, each event is triggered as soon as they reach the corresponding Wait.
+
+### Manual simulation {#manual-simulation}
+
+Choose **[!UICONTROL Manual simulation]** when you need to pick each simulated user, control send order, configure event payloads, and override **[!UICONTROL Wait]** durations for the run.
+
+Continue with [Create and manage simulated users](#test-users), [Trigger your events](#firing-events), and [View results](#viewing-results).
 
 ## Create and manage simulated users {#test-users}
 
->[!IMPORTANT]
->
->You need at least one of the following permissions to access the **[!UICONTROL Simulation]** feature: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. [Learn more](../administration/permissions.md)
+Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, save them for reuse, adjust or remove them from the list, and send them into the journey.
 
-Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, from the UI or a JSON file, save them for reuse, adjust or remove them from the list, and send them into the journey.
- 
-### Create simulated users
+If your journey uses an external audience, for example a CSV or Federated Audience Composition audience, and your conditions, expressions, or personalization rely on enrichment attributes from it, you can mock those attributes on a simulated user just like profile attributes. This lets you drive the user into a specific branch based on the value you set, without running the actual audience.
 
-The following steps show you how to create simulated users from the UI or by importing a JSON file.
+1. Start by populating the **[!UICONTROL Test users]** list:
 
-1. From your Journey, open **[!UICONTROL Simulate]** and choose **[!UICONTROL Simulation]**.
+    +++ Generate users with AI
+        
+    Adobe Journey Optimizer generates a set of simulated users from the journey definition. 
+        
+    For journeys with an Email, Push, or SMS node, the AI prompts you to confirm the email address, phone number, or push token to use. Simulated users are generated using those defined values. Once done, click [!UICONTROL Generate].
 
-    ![Test mode button in journey interface](assets/test-mode-simulated.png)
+    Generated simulated users only show the attributes used in the current journey, for example in expressions or personalization.
+
+    >[!NOTE]
+    >
+    >The email, phone and push token fields are pre-filled from values previously used in journey simulation and cached in your browser.
+
+    ![Generate simulated users dialog with execution email, phone and push token fields and Generate button](assets/simulate-generate.png)
+
+    +++
+
+    +++ Browse inventory
+        
+    Choose **[!UICONTROL Browse inventory]** to add simulated users you already saved, for example, users you created from a form or JSON, or users you kept after an AI generation run.
+
+    Note that when you select a simulated user from the inventory, only the attributes used in the current journey are shown, even if the user has values for other attributes set in a different journey.
+
+    ![Simulated Users inventory dialog with search, user table, and Select button](assets/simulate-inventory.png)
+
+    +++
+
+    +++ Create from form
+
+    1. Enter a **[!UICONTROL Display name]**, **[!UICONTROL Identity namespace]** and **[!UICONTROL Description]** to identify this simulated user. 
+            
+        ![Create Simulated Users form with display name, identity namespace, description, and Union schema attributes](assets/simulate-form.png)
+
+    1. Then, select the attributes from the Union schema that you want to populate for this user. Note that only the attributes used in the current journey, for example in expressions or personalization, are available here. 
     
-1. Click **[!UICONTROL Create Simulated Users]** to create new users and select whether to create users from the UI or import them from JSON.
+        Attributes are grouped by origin, in separate sections for profile attributes and, if your journey reads an external audience such as a CSV or Federated Audience Composition audience, for that audience's enrichment attributes.
 
-    To reuse simulated users instead, click **[!UICONTROL Select simulated users]** and choose entries you saved earlier.
+    1. Click **[!UICONTROL Add audience membership]** to simulate segment memberships.
 
-    ![Simulated user selection panel](assets/simulate-2.png)
+    1. In the **[!UICONTROL Create Simulated Users]** window, click **[!UICONTROL Add simulated user]** to define several simulated users in one session.
 
-1. If you create simulated users from JSON, update the corresponding fields with your simulated user data.
+        You can change how users are shown in the list, collapse every card in stacked view, or open a user's attribute metadata.
+    
+        ![Create Simulated Users footer with Add simulated user, Collapse all, and layout view controls](assets/simulate-form-3.png)
 
-1. If you create simulated users from UI, enter a **[!UICONTROL Display name]** and **[!UICONTROL Description]** to identify this simulated user. Then, select the attributes from the Union schema that you want to populate for this user.
+    1. From your Simulated user menu, use **[!UICONTROL Duplicate]** to copy a user, **[!UICONTROL Apply all attributes to other users]** to copy one user's attributes to every other user in the session, or **[!UICONTROL Delete]** to remove a user.
 
-    ![Attribute selection from Union schema](assets/simulate-3.png)
+        ![Create Simulated Users cards with Duplicate, Apply all attributes to other users, and Delete on each user](assets/simulate-form-2.png)
 
-1. Click add **[!UICONTROL Audience membership]** to simulate segment memberships.
+    1. Click **[!UICONTROL Save]** when you finish configuring users in this session.
+        
+    +++
 
-1. Click **[!UICONTROL Add profile]** to create multiple simulated users in a single session.
+    +++ Create from JSON
 
-1. For each simulated user you added in this session, you can use the following actions:
+    In **[!UICONTROL Create Simulated Users]**, edit the JSON template to define users, then click **[!UICONTROL Format JSON]** and **[!UICONTROL Save]**.
 
-    * **[!UICONTROL Duplicate]**: Adds a new simulated user that replicates the completed configuration of an existing entry, you can then edit the duplicate as needed.
-    * **[!UICONTROL Apply to all]**: Propagates the attribute values or settings from one simulated user to every other simulated user in the list.
-    * **[!UICONTROL Delete]**: Removes the selected simulated user from the list.
+    Note that **[!UICONTROL Create from JSON]** and **[!UICONTROL Update from JSON]** give you access to every attribute stored on the simulated user, including profile attributes and, if applicable, enrichment attributes from an external audience such as a CSV or Federated Audience Composition audience.
 
-1. Click **[!UICONTROL Save]** to store one or more simulated users for future use.
+    ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json.png)
 
-1. After you save, the simulated users you created appear in the **[!UICONTROL Test users]** list. For each entry, open the options menu and select one of the following:
+    +++
+
+<!--
+    To reuse attribute values from a profile or [test profile](../audience/creating-test-profiles.md) in [!DNL Adobe Experience Platform]:
+
+    1. Browse to the profile you want to use as a reference. On the profile detail page, click **[!UICONTROL View JSON]**. [Learn more](../audience/get-started-profiles.md)
+
+        ![Profile JSON view in Adobe Experience Platform](assets/simulate-json-1.png)
+
+    1. Copy the JSON from the viewer.
+
+    1. In the journey, open **[!UICONTROL Simulation settings]**, start **[!UICONTROL Create Simulated Users]**, and choose **Create from JSON**.
+
+    1. Paste the JSON into the matching part of the simulated user template (for example, the attribute block for one user). Click **[!UICONTROL Format JSON]** to validate the structure.
+
+        ![Create Simulated Users JSON editor with pasted profile attributes](assets/simulate-json-2.png)
+
+    1. Remove properties that exist on the [!DNL Adobe Experience Platform] profile only tied to the source profile, such as mergePolicyId or lastModifiedAt.
+
+    1. Set the fields required by the simulated user template: **[!UICONTROL Display name]**, **[!UICONTROL Identity namespace]**, identity value, and channel execution addresses.
+
+    1. Click **[!UICONTROL Save]**. Use ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg) on the saved simulated user to review the data before you run **[!UICONTROL Simulation]**.
+
+        ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json-3.png)
+
+        If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
+-->
+
+1. The simulated users you created appear in the **[!UICONTROL Test users]** list. For each entry, select one of the following:
 
     * ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg): Update the simulated user's details.
     * ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg): Run the simulation for this simulated user only.
+        
+        This option is not available for journeys starting with an Event, as the simulated user entrance is triggered by the event being sent. [Learn more](#firing-events)
+
     * ![Clear icon](assets/do-not-localize/Smock_Close_18_N.svg): Remove the user from this list. The simulated user is not deleted and remains available in the Simulated Users selection.
 
-    ![Simulated user selection panel](assets/simulate-4.png)
-    
-1. If your journey includes a **[!UICONTROL Wait]** activity, open the **[!UICONTROL Test settings]** tab to fine-tune how long that wait lasts during the simulation.
+    ![Test users list with edit, send, and remove actions and simulated path highlighted on the canvas](assets/simulate-4-2.png)
 
-1. Click **[!UICONTROL Send all]** to send every simulated users in the list into the journey. A `Simulated users have been sent successfully.` confirmation message appears when the simulated users successfully enter the journey.
+1. To change the list after your selection, click **[!UICONTROL Manage users]** to add more simulated users, from the inventory or by creating new ones. To remove every user from the **[!UICONTROL Test users]** list for this run, choose **[!UICONTROL Clear all users]**.
 
-    ![Simulated user selection panel](assets/simulate-5.png)
+    ![Manage users menu open with add-user options and Clear all users](assets/simulate-manage.png)
 
-1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
+1. If your journey includes a **[!UICONTROL Wait]** activity, open the **[!UICONTROL Test settings]** tab to fine-tune how long that wait lasts during the simulation. For example, if the live **[!UICONTROL Wait]** activity is configured for several days, you can override it to 10 seconds so the simulated user only spends that long on the node before moving to the next activity.
 
-After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
+1. Click **[!UICONTROL Send all]** to send every simulated user in the list into the journey, or click ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) on a row to send only that user. A `Simulated users have entered the journey successfully.` confirmation message appears when the simulated users successfully enter the journey.
 
-### Select simulated users
+    ![Test users tab after users enter the journey with success message and path on the canvas](assets/simulate-5-2.png)
 
-Simulated users that you create manually are stored and can be selected from this list when Simulation is enabled on other journeys.
+1. If the journey includes unitary events, you need to select the event to trigger. See [Trigger your events](#firing-events).
 
-1. Set the journey to **[!UICONTROL Simulation]**. Open the **[!UICONTROL Simulate]** entry point and choose **[!UICONTROL Simulation]** so the journey uses the Simulation feature, for example alongside Test mode or Live, depending on your workspace.
+1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View results](#viewing-results).
 
-    ![Test mode button in journey interface](assets/test-mode-simulated.png)
+1. When you finish testing, open the **[!UICONTROL Manage simulation]** menu:
 
-1. In the **[!UICONTROL Simulation settings]** panel, you can either select previously created simulated users clicking **[!UICONTROL Select simulated users]**.
+    * **[!UICONTROL Stop simulation]** to exit the current simulation session.
+    * **[!UICONTROL Reset simulation]** to clear all data from the current run, selected simulated users, defined event values, and other test settings, so you can start a new simulation from scratch.
 
-    ![Test mode in journey interface](assets/simulate-11.png)
-
-1. Select from the list of simulated users that were previously created and saved.
-
-1. Once you have selected your simulated users, they are now available in the **[!UICONTROL Test users]** list. From the options menu, choose between the following option:
-
-    * ![Edit icon](assets/do-not-localize/Smock_Edit_18_N.svg) to edit users and change its details.
-    * ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) to send your simulation to only one simulated user.
-    * ![Clear icon](assets/do-not-localize/Smock_Close_18_N.svg) to clear your simulated users from the list. Note that clearing it does not delete it, it can still be selectable from the Simulated users list.
-
-    ![Simulated user selection panel](assets/simulate-4.png)
-
-1. Click **[!UICONTROL Send all]** to send every simulated users in the list into the journey. A `Simulated users entered the journey successfully.` confirmation message appears when the simulated users successfully enter the journey.
-
-    ![Simulated user selection panel](assets/simulate-5.png)
-
-1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
+        ![Manage simulation menu open with Reset simulation and Close simulation options](assets/simulate-15.png)
 
 After you validate the journey in **[!UICONTROL Simulation]**, review the **[!UICONTROL Results]** log. If errors appear, leave **[!UICONTROL Simulation]**, apply the required changes to the journey, and run **[!UICONTROL Simulation]** again until the run looks correct. You can then publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
-## Trigger your events {#firing_events}
+## Trigger your events {#firing-events}
 
-If your journey includes one or more events, you can trigger them while Simulation is active.
+>[!NOTE]
+>
+>Events triggered in Simulation are stored in dedicated datasets in Adobe Experience Platform, labeled as follows: ``JOtestmode - <schema of your event>``.
+
+If your journey includes one or more unitary events, you can trigger them while Simulation is active. For journeys not starting from an Event but containing one, this section will not be visible until a simulated user enters the journey.
 
 1. In **[!UICONTROL Select event type]**, select the event to fire for this simulation.
 
-    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-10.png)
+    ![Select event type dropdown open in the Test events section of Simulation settings](assets/simulate-10-2.png)
 
-1. Click **[!UICONTROL Configure events]** to open the editor and adjust the event as needed. To change the payload for a specific simulated user only, click ![Edit event](assets/do-not-localize/Smock_Edit_18_N.svg) beside that user.
+1. To apply the same change to every user in the list, use the **[!UICONTROL Manage events]** option to:
 
-    ![Event configuration interface with fields and drop-down for event selection](assets/simulate-9.png)
+    * **[!UICONTROL Generate event values]** to let the Journey Agent generate all payloads using AI. When values are generated, the user is marked **[!UICONTROL Ready to send]**.
+    * **[!UICONTROL Edit event data]** to change the payload for every simulated user in the list.
 
-1. In the **[!UICONTROL Trigger event]** view, specify which simulated users to include in the execution. Event configuration applies to a single event at a time. Modifying the selected event or the set of included users resets previously entered field values. Complete the current configuration before changing either selection.
+    ![Manage events menu in Test events with Generate with AI and Edit all options](assets/simulate-9-2.png)
 
-    ![Event configuration with Test users list and event fields](assets/simulate-8.png)
+1. Configure the event payload for each user by clicking the ![Edit event](assets/do-not-localize/Smock_Edit_18_N.svg) beside a user to:
 
-1. Click **[!UICONTROL Done]**. 
+    * **[!UICONTROL Generate event values]** to let the Journey Agent generate the payload using AI. When values are generated, the user is marked **[!UICONTROL Ready to send]**.
+    * **[!UICONTROL Edit event data]** to change the payload for that simulated user only.
 
-1. Then, in **[!UICONTROL Test events]**, either select **[!UICONTROL Send all]** to send every simulated user listed under **[!UICONTROL Test users]** into the journey, or select ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) for a single user to execute the simulation for that user only.
+    ![Per-user menu in Test events with Generate event values and Edit event data options](assets/simulate-8-2.png)
 
-1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View Results](#viewing-results).
+1. In **[!UICONTROL Test events]**, either select **[!UICONTROL Send all]** to send this event for all simulated users listed under **[!UICONTROL Test users]**, or select ![Send icon](assets/do-not-localize/Smock_Send_18_N.svg) for a single event to be triggered for that user only.
+
+    ![Test events section with Send all and per-user send controls for users marked Ready](assets/simulate-11-2.png)
+
+1. After events are fired, the canvas updates to reflect each user's progression.
+
+1. Access the **[!UICONTROL Results]** tab to open the execution log and review how each step ran. For more information, see [View results](#viewing-results).
+
+1. When you finish testing, open the **[!UICONTROL Manage simulation]** menu:
+
+    * **[!UICONTROL Stop simulation]** to exit the current simulation session.
+    * **[!UICONTROL Reset simulation]** to clear all data from the current run, selected simulated users, defined event values, and other test settings, so you can start a new simulation from scratch.
+
+        ![Manage simulation menu open with Reset simulation and Stop simulation options](assets/simulate-15.png)
 
 ## View results {#viewing-results}
 
-The **[!UICONTROL Results]** tab allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect.
- 
-<!--
-* **All simulated users**: Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. This view helps you scan the full simulation at a glance, activity, outcomes, and errors, without picking a single simulated user first.
--->
+The **[!UICONTROL Results]** tab allows you to view the test results. In the **[!UICONTROL Test user]** drop-down, select the simulated user whose execution you want to inspect. When you select a single simulated user, the canvas highlights the exact path that user followed through the journey, so you can confirm they entered the branch you expected.
 
-For each activity, the log can show whether the simulated user entered or exited the step, and errors that occurred during the simulation.
+Select **[!UICONTROL All]** to see results aggregated across every simulated user in the run. The canvas then shows every path covered by the run, which helps you compare coverage across profiles and scan the full simulation at a glance, including activities, outcomes, and errors, without picking a single simulated user first.
 
-![Logs for test users](assets/simulate-6.png)
+![Results tab with simulation summary, test user filter, and path coverage on the journey canvas](assets/simulate-6-2.png)
+
+For each activity, the log can show whether the simulated user entered or exited the step, the timestamps and branch decisions for each step, and errors that occurred during the simulation.
 
 For **Wait** activities, the log includes two duration-related values:
 
@@ -160,65 +267,51 @@ For **Wait** activities, the log includes two duration-related values:
 
 When errors appear in the log, leave **Simulation**, apply the required changes to the journey, and run **Simulation** again. After validation succeeds, publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
-## Limitations {#limitations}
++++ AI Knowledge Reference
 
-In this release, **[!UICONTROL Simulation]** may not support every activity, channel, or integration that **[!UICONTROL Test mode]** or a live journey supports, and behavior may change as the capability matures. Use the procedures in this article for supported workflows.
+This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
 
-Refer to the drop-downs below to learn more on Simulation limitations.
+For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-+++ Node-level restrictions
+* **TL;DR:** This page provides step-by-step instructions for running Quick simulation and Manual simulation in Adobe Journey Optimizer, including how to create and manage simulated users, trigger unitary events, override Wait durations, and interpret the Results log.
 
-If a journey contains any of the following nodes, it cannot be started in **[!UICONTROL Simulation]**. The journey must be modified, or the relevant node removed, before simulation can run.
+**Intents:**
+* Run a Quick simulation to validate a journey end-to-end with minimal manual input
+* Set up Manual simulation to control simulated user creation, event payloads, and wait overrides
+* Create simulated users via AI generation, inventory browse, form entry, or JSON
+* Trigger unitary events for simulated users during an active simulation session
+* Review the Results log to identify errors and uncovered branches after a simulation run
+* Reset or close a simulation session to start fresh or exit
 
-| Restricted node | Notes |
-| --- | --- |
-| Business Events | Journeys that start with a business event cannot be run in **[!UICONTROL Simulation]**. |
-| Supplemental ID (multiple re-entrance) | Concurrent re-entrance (several active instances for the same simulated user) prevents **[!UICONTROL Simulation]** from starting. |
-| Content Decision node | This activity must be removed or changed before you can simulate the journey. |
-| Dataset Lookup | Customer dataset lookups by key are not supported; journeys that include this activity cannot be run in **[!UICONTROL Simulation]**. |
-| **[!UICONTROL Optimize]** activity | The following **[!UICONTROL Optimize]** methods are not supported in **[!UICONTROL Simulation]**: **[!UICONTROL Experiment]**, **[!UICONTROL Targeting rule]**, **[!UICONTROL Percentage split]**, **[!UICONTROL Time condition]**, **[!UICONTROL Condition]**, **[!UICONTROL Date condition]**, **[!UICONTROL Profile cap]**, and **[!UICONTROL External Data Source]**. Remove or change the node before you simulate. |
-| External audience attribute enrichment | Journeys that use personalized attributes from external audience sources will not start in **[!UICONTROL Simulation]** when this validation is active. |
+**Glossary:**
+* **Quick simulation**: An automated simulation mode that generates users and event values using the Journey Agent and runs the full journey with minimal manual steps *(product-specific)*
+* **Manual simulation**: A step-by-step simulation mode where practitioners control user creation, event payloads, and timing individually *(product-specific)*
+* **Simulated users**: Temporary profile-like entities used in Simulation that do not persist in Adobe Experience Platform *(product-specific)*
+* **Journey Agent**: The AI component that generates simulated users and event payloads during AI-assisted simulation *(product-specific)*
+* **Test settings**: The Simulation panel tab where Wait durations and execution addresses (email, phone, push token) can be overridden for the simulation run *(product-specific)*
+* **Results log**: The execution log accessible from the Results tab showing per-activity outcomes, durations, and errors for each simulated user *(product-specific)*
 
-+++
+**Guardrails:**
+* Requires at least one of: Simulate journeys, Publish journeys, or Approve and Publish journeys permissions
+* AI features (Quick simulation, Generate with AI, Generate event values) require the Generate Content permission from the AI Assistant capability
+* For event-triggered journeys, the per-user Send icon is not available; entry is triggered through the Test events section
+* Wait duration overrides and execution address settings are only shown if the journey includes Wait or Channel activities
+* Channel proofs and custom actions or external data sources can execute real outbound calls during Simulation; use non-production contact points and avoid real customer PII in simulated users
+* Errors in the Results log require leaving Simulation, fixing the journey, and re-running before publishing
 
-</br>
+**Terminology:**
+* Canonical name: Quick simulation — Acronym: none — variants: none
+* Canonical name: Manual simulation — Acronym: none — variants: none
+* Canonical name: Simulated users — Acronym: none — variants: test users (UI label in Test users list)
+* Synonyms: "Send all" = trigger all listed simulated users into the journey simultaneously
+* Do not confuse: "Reset simulation" ≠ "Close simulation" — Reset clears all data and settings; Close merely exits the current session
 
-+++ Functional limitations
-
-The following capabilities are not supported in **[!UICONTROL Simulation]**.
-
-| Capability | Notes |
-| --- | --- |
-| Exit criteria | Exit criteria are not applied when you run **[!UICONTROL Simulation]**. |
-| [!DNL Adobe Journey Optimizer] decisioning inside an action (for example, email content with Adobe Journey Optimizer decisioning) | Action proofs for content that uses [!DNL Adobe Journey Optimizer] decisioning are not generated. |
-| Mock custom action response | [!UICONTROL Custom actions] perform a real outbound call by default. Mocking the response so no external call runs is not supported. |
-| Consent policy evaluation | Consent cannot be mocked at the simulated-user level. |
-| Journey capping and arbitration | Not supported in **[!UICONTROL Simulation]**. |
-| Frequency capping (by channel or communication type) | Not supported in **[!UICONTROL Simulation]**. |
-| Opt-out management, suppression, and allow lists | Follows messaging routing configuration where it applies. |
-| Dynamic subdomain and dynamic attributes in channel configurations | Follows messaging routing configuration where it applies. |
-| Send Time Optimization (STO) | Not supported in **[!UICONTROL Simulation]**. |
-| Sandbox tooling (copy simulated users across sandboxes) | Not supported. |
-| Wave sending in journeys | Not supported. |
-| Quiet hours | Not supported. |
-| Opt-out management, suppression, and allow lists | Not supported. |
-| Dynamic subdomain and dynamic attributes in channel configurations | Not supported. |
-| Privacy service | Simulated users are not GDPR-compliant persistent profiles. Do not include real customer data in simulated users. |
-
-+++
-
-</br>
-
-+++ Quantitative guardrails 
-
-These guardrails apply to **[!UICONTROL Simulation]**. Numeric caps are enforced in the journey interface and at runtime. Limits may change in a later release; if you run near a ceiling, verify behavior in your sandbox.
-
-| Guardrail | Limit | Notes |
-| --- | --- | --- |
-| Maximum simulated users that can be selected and triggered in one batch (batch journeys, event-triggered flows, and audience-qualification flows) | 20 | Counted for each **[!UICONTROL Send all]** or **[!UICONTROL Trigger selected events]**; not a cumulative cap for the whole journey. |
-| Maximum unique simulated users tested in a single simulation run | 100 | Reaching **100** unique users in one run blocks **[!UICONTROL Select simulated users]** for new simulated users. If you are at **90**, you can add at most **10** more before the same block. |
-| Maximum journeys that can run in **[!UICONTROL Simulation]** at the same time in one sandbox | 20 | Cap is shared by every **[!UICONTROL Simulation]** journey in that sandbox at once. |
-| Maximum active simulated users in one sandbox | 2,000 | Maximum simulated users that can exist in the sandbox at one time. Adobe may adjust this limit based on customer feedback. |
-| Event Pre-fill (Browser Only) | — | You can pre-fill event payload fields only in the browser-based simulation UI. Pre-filled values stay in that browser and are not synced to other browsers, devices, or sessions, so you may see different pre-fill data in each place you test. |
+**FAQ:**
+* **Q: What is the difference between Quick simulation and Manual simulation?** — Quick simulation runs the entire journey automatically using AI-generated users and events; Manual simulation lets you create users and events step by step with full control over payloads and timing.
+* **Q: Can I reuse simulated users across simulation sessions?** — Yes. Users saved to the inventory can be retrieved via Browse inventory in subsequent sessions.
+* **Q: How do I override Wait activity durations during simulation?** — Open the Test settings tab and set a shorter duration, for example 10 seconds, so simulated users move through Wait nodes quickly.
+* **Q: How do I trigger a unitary event for a specific simulated user?** — In the Test events section, click the edit icon next to the user to configure the event payload, then click the send icon on that row to trigger only that user's event.
+* **Q: What do the Defined duration and Actual duration fields mean in the Results log for Wait activities?** — Defined duration is the live journey's configured wait time; Actual duration is the overridden test duration the simulated user actually spent on the Wait node.
+* **Q: What should I do when errors appear in the Results log?** — Leave Simulation, apply the required fixes to the journey, then re-run Simulation until the run shows no errors before publishing.
 
 +++
