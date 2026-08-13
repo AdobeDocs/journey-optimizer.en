@@ -65,7 +65,7 @@ topic_v2:
 
 >[!NOTE]
 >
->Send-Time Optimization is only available for built-in Email and Push actions within journeys. It is not currently available for messages sent through campaigns or for messages sent through custom actions or for other action types.
+>Send-Time Optimization is available for built-in Email and Push actions within journeys, and for the [Wait activity](wait-activity.md#sto-wait), where it determines the optimal time to continue to the next activity. It is not currently available for messages sent through campaigns or for other action types.
 
 [!DNL Adobe Journey Optimizer]'s Send-Time Optimization feature, powered by Adobe's Journey AI services, chooses the optimal send time for email and push messages to maximize customer engagement, based on your customers' historical open and click behavior.
 
@@ -73,7 +73,7 @@ topic_v2:
 >
 >* The Send-Time Optimization feature is enabled for [!DNL Adobe Journey Optimizer] customers upon request. Contact Adobe Customer Care or your Adobe representative to activate the feature for your organization.
 >
->* Send-Time Optimization only applies to **Email** and **Push notification** channels.
+>* Send-Time Optimization only applies to **Email** and **Push notification** channels, and to the **[!UICONTROL Wait]** activity.
 >
 >* Send-Time Optimization is supported in the following AEP Hub regions: **VA7, NLD2, AUS5, CAN2, GBR9, IND2, CHE2**. These are Adobe deployment region codes, contact your Adobe representative if you are unsure which region your organization uses.
 >
@@ -107,6 +107,16 @@ Before starting, csonsider which messages are a good fit before you turn it on. 
 When your journey is activated and a customer reaches the Email or Push action in the journey, Send-Time Optimization will choose the best predicted send time available for each user within your specified limits.
 
 To monitor your journey's performance, refer to the [Overview page](../reports/channel-report-cja.md). 
+
+## Send-Time Optimization in the Wait activity {#sto-wait-activity}
+
+In addition to the Email and Push actions, you can use Send-Time Optimization in a **[!UICONTROL Wait]** activity. The Wait activity uses the same Send-Time Optimization model to determine each profile's optimal wait time, but decouples that wait from the send itself, so it can be followed by any activity, such as a Custom action, rather than being tied only to an Email or Push action.
+
+>[!IMPORTANT]
+>
+>Send-Time Optimization has no visibility into [quiet hours](../conflict-prioritization/quiet-hours.md) rules. Because quiet hours are only evaluated when a profile reaches a message action, a Send-Time Optimization Wait activity can select a time that falls inside a quiet-hours window for a downstream channel action.
+
+[Learn how to configure Send-Time Optimization in a Wait activity](wait-activity.md#sto-wait).
 
 ## How send-time optimization works {#how-send-time}
 
@@ -220,6 +230,7 @@ For complete understanding, this information should be combined with the documen
 * Set the maximum wait window (Send within next) for delayed delivery
 * Understand how the AI model predicts optimal send times using behavioral data
 * Determine whether Send-Time Optimization is appropriate for a given message type
+* Use Send-Time Optimization within a Wait activity to delay before any downstream activity, decoupled from the message send
 
 **Glossary:**
 
@@ -232,7 +243,8 @@ For complete understanding, this information should be combined with the documen
 **Guardrails:**
 
 * Send-Time Optimization must be enabled by Adobe for the organization; contact Adobe Customer Care or your Adobe representative to activate it.
-* Send-Time Optimization only applies to Email and Push notification channels within Journeys; it is not available for Campaigns or custom actions.
+* Send-Time Optimization applies to Email and Push notification channels within Journeys, and to the Wait activity; it is not available for Campaigns or custom actions.
+* Send-Time Optimization has no visibility into quiet hours rules; a Send-Time Optimization Wait activity can select a time inside a quiet-hours window for a downstream channel action, which may then queue or discard the message depending on the quiet hours rule configuration.
 * The organization must have used Email or Push actions in Journey Optimizer for at least 30 days before Send-Time Optimization produces meaningful results.
 * Do not use Send-Time Optimization for urgent or time-sensitive operational messages (e.g., order confirmations, password resets, flight gate changes).
 * Maximum wait time range is 2–100 hours; recommended range is 6–24 hours for best results.
@@ -247,7 +259,8 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 
-* **Q: Which channels support Send-Time Optimization?** — Only Email and Push notification channels within Journeys; Campaigns and custom actions are not supported.
+* **Q: Which channels support Send-Time Optimization?** — Email and Push notification channels within Journeys, and the Wait activity; Campaigns and custom actions are not supported.
+* **Q: Does Send-Time Optimization know about quiet hours?** — No. Quiet hours are only evaluated when a profile reaches a message action, so a Send-Time Optimization Wait activity can pick a time inside a quiet-hours window. Depending on the quiet hours rule, the message is then queued until quiet hours end, or discarded and the profile exits the journey. [Learn more](wait-activity.md#sto-wait).
 * **Q: Should I optimize for opens or clicks on email?** — Optimize for Clicks for most emails. Choose Opens when the message is informational and not intended to drive a specific action.
 * **Q: How long does the organization need to wait before enabling STO?** — At least 30 days of Email or Push usage in Journey Optimizer is needed to collect sufficient behavioral data. Results continue to improve for up to 16 weeks.
 * **Q: Can STO send push notifications at night?** — Yes, if a user's behavior suggests night-time engagement or if an exploration send time is selected. To avoid this, use a morning send time with a short maximum wait window.
