@@ -394,15 +394,5 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >title="Load file activity"
 >abstract="The **Load file** activity is a **Targeting** activity. Use it to upload a CSV or TXT file on the Orchestrated campaign canvas and use it as the campaign audience. File data is consumed at execution time and is not persisted as an Adobe Experience Platform dataset. Rows are reconciled to existing recipients using an identity column and a targeting dimension."
 
-
-<!-- OC - LINE ACTIVITY -->
-
->[!CONTEXTUALHELP]
->id="ajo_orchestration_line"
->title="Line activity"
->abstract="The **Line** activity lets you add a LINE action to your Orchestrated campaign. Build personalized content, from text and stickers to images, videos, locations, and Flex Messages, to engage customers on LINE."
-
-
-
 <!-- Asset selector content generation -->
 
