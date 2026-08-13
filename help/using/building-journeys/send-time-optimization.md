@@ -110,11 +110,9 @@ To monitor your journey's performance, refer to the [Overview page](../reports/c
 
 ## Send-Time Optimization in the Wait activity {#sto-wait-activity}
 
-In addition to the Email and Push actions, you can use Send-Time Optimization in a **[!UICONTROL Wait]** activity. The Wait activity uses the same Send-Time Optimization model to determine each profile's optimal wait time, but decouples that wait from the send itself, so it can be followed by any activity, such as a Custom action, rather than being tied only to an Email or Push action.
+![Send-Time Optimization toggle in Wait activity](../building-journeys/assets/wait_sto.png)
 
->[!IMPORTANT]
->
->Send-Time Optimization has no visibility into [quiet hours](../conflict-prioritization/quiet-hours.md) rules. Because quiet hours are only evaluated when a profile reaches a message action, a Send-Time Optimization Wait activity can select a time that falls inside a quiet-hours window for a downstream channel action.
+Besides the Email and Push actions, you can also apply Send-Time Optimization to a **[!UICONTROL Wait]** activity. It relies on the same Send-Time Optimization model to work out each profile's optimal wait time, but here the wait is decoupled from the send: instead of being tied only to an Email or Push action, it can be followed by any activity, such as a Custom action.
 
 [Learn how to configure Send-Time Optimization in a Wait activity](wait-activity.md#sto-wait).
 
