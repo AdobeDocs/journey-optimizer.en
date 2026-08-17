@@ -164,9 +164,10 @@ The following capabilities and improvements are coming to Orchestrated Campaigns
 
 * **Send using waves** - You can now schedule outbound messages to be delivered in controlled batches over time. Ideal for high-volume or time-sensitive campaigns, wave sending also supports better deliverability and helps maintain a strong sender reputation by reducing the risk of being flagged as spam. <!-- Documentation link: TBD -->
 
-### Channels {#august-26-channels}
 
-The following capabilities and improvements are coming to channels in this release.
+### Decisioning {#august-26-decisioning}
+
+The following capabilities and improvements are coming to Decisioning in this release.
 
 <table>
 <thead>
@@ -185,22 +186,9 @@ The following capabilities and improvements are coming to channels in this relea
 </tbody>
 </table>
 
-
-* **Performance Add-on for throughput - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. <!-- Documentation link: TBD -->
-
-### Decisioning {#august-26-decisioning}
-
-The following improvement is coming to Decisioning in this release.
-
 * **Placement-level frequency capping in Decisioning** - Frequency capping rules in Decisioning can now be scoped to individual placements, giving you finer control over how often an offer is shown in a given surface. Two modes are available: placement-specific capping, which defines a cap that applies only when the offer is displayed in a selected placement, and per-placement capping, which applies a cap independently across every placement where the offer appears, so each placement maintains its own capping counter. Note that placement-related capping does not apply to offers capped using rules based on Adobe Experience Platform data. <!-- Documentation link: TBD -->  
 
 * **Mirror pages in Visual Fragments** - You can now insert mirror pages into a Visual Fragment. Decisioning attributes render correctly on the mirror page link, even when the fragment is used in an email campaign that leverages Decisioning. The mirror page must be added to the Visual Fragment before the fragment is published in order for decisioning attributes to display. <!-- Documentation link: TBD -->
-
-### Email Designer {#august-26-email}
-
-The following improvement is coming to the Email Designer in this release.
-
-* **New Table component in the Email Designer** - The Email Designer now includes a built-in Table component, allowing you to structure content in rows and columns directly within your email. Drag and drop the component onto your canvas, customize the number of rows and columns, and style each cell independently to create clear, organized layouts without relying on custom HTML. <!-- Documentation link: TBD -->
 
 ### Administration {#august-26-administration}
 

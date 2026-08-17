@@ -137,6 +137,12 @@ topic_v2:
 </tbody>
 </table>
 
+### Channels {#august-26-channels}
+
+* **Performance Add-on for throughput - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. [Learn more](../campaigns/api-triggered-high-throughput.md)
+
+  Availability date: August 11, 2026
+
 ### Usability improvements {#august-26-usability}
 
 * **Bulk operations in journey inventory** - You can now perform new bulk actions directly from the journey inventory list, making it faster to manage multiple journeys at once. Select several journeys and apply any of the following new actions in a single step: **add to package**, **delete**, **move to folder**, **edit tags**, or **manage access**. This reduces the need to repeat the same action one journey at a time, streamlining journey management for teams working with large numbers of journeys. [Learn more](../building-journeys/journey-ui.md)
@@ -146,8 +152,6 @@ topic_v2:
 * **New Content Simulation experience for content testing** - The **Simulate content** workflow introduces a redesigned experience: all variants now render together in a single scrollable grid (side-by-side, stacked, or wrapped layouts), replacing the one-variant-at-a-time view. A single bottom action bar consolidates navigating between test variants, zoom, viewport switching (desktop/mobile), locale switching, adding sample inputs, generating variants with AI, picking and saving simulated users, and importing or exporting variants. Removing the left rail and collapsing extra header layers gives previews significantly more room. A **Switch to classic experience** option in the bottom action bar lets you revert to the previous experience at any time. [Learn more](../test-approve/simulate-content-variations.md)
 
   Availability date: August 11, 2026
-
-### Journeys {#august-26-journeys}
 
 * **Multi-selection in the new journey canvas** - You can now select multiple nodes at once in the new journey canvas experience to run bulk actions, such as copy, delete, or save as a journey fragment, on several nodes at once. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
 
@@ -493,14 +497,6 @@ The following improvement is coming to reporting in this release.
   * Estimated CTOR (Click-to-open rate): Calculated as estimated clicks relative to the total number of estimated opens.
 
     Availability date: July 29, 2026
-
-### Campaigns {#campaigns}
-
-+++ Coming soon
-
-* **Performance Add-on for throughput in API-triggered campaigns - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. <!-- Documentation link: TBD -->
-
-+++
 
 ### Usability improvements {#july-26-usability}
 
