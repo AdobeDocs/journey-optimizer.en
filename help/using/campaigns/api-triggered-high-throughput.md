@@ -82,15 +82,15 @@ This page explains how High throughput campaigns differ from standard API trigge
 Use this table to decide which API triggered campaign type fits your use case:  
 
 | Feature / Requirement | Standard API triggered Campaign | High Throughput Campaign |
-|------------------------|---------------------------------|---------------------------|
+| ------------------------ | --------------------------------- | --------------------------- |
 | **Availability** | Included in base offering | Requires High Throughput transactional messaging add-on. |
 | **Throughput** | Up to 500 transactions per second | Up to 5000 transactions per second |
 | **Channels** | Email, SMS, Push | Email, Push |
 | **Personalization** | Profile + contextual in the API payload | Contextual in the API payload only |
-| **Profile & stitching** | Exists or gets created with events stitched to profile | No profile|
-| **Message volume** | Standard entitlement & message packs | Separate tiered message volumes|
+| **Profile & stitching** | Exists or gets created with events stitched to profile | No profile |
+| **Message volume** | Standard entitlement & message packs | Separate tiered message volumes |
 | **Infrastructure** | Standard | Enhanced |
-| **Uptime** | 99,9% | 99,99%|
+| **Uptime** | 99,9% | 99,99% |
 | **Health check API** | Yes | Yes |
 
 In other words:
@@ -107,6 +107,7 @@ In other words:
   * You don't require profile stitching.  
   * You can pass all personalization in the API payload.  
   * You want to use the Email or Push channel.
+
 ## Setup guidelines
 
 To configure High Throughput campaigns correctly, follow these guidelines: 
