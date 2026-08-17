@@ -228,6 +228,7 @@ Be aware that profile exclusions for profiles currently in the journey and for n
 * Even after the pause, as events continue to be processed, these events would be counted towards the number of Journey Events per second quota after which throttling comes to picture for unitary
 * When profiles hold in a paused journey, at resume time, profile attributes are refreshed
 * Conditions are still executed in paused journeys so if a journey has been paused because of data quality issues, any condition prior to an action node can be evaluated with wrong data
+* Profiles that have already passed through an **Optimize** activity before the journey was paused keep the path assignment made at that time. This assignment is not re-evaluated retroactively, even if the underlying audience or criteria definition changes during the pause. Only profiles that reach the activity after the journey resumes are evaluated against the latest definition.
 * For incremental audience based **Read audience** journeys, paused duration is taken into consideration. This is not the case for audience qualification or event-based journeys (if an audience qualification or an event are received during a pause, and they are the first activity in the journey, those events are discarded)
 * If profiles are held in a journey and this journey automatically resumes after a few days, profiles continue the journey and are not dropped. If you want to drop them, you must stop the journey
 * In paused journeys, alerts do not fire for [batch segment alerting](../reports/alerts.md#alert-read-audiences)
@@ -249,11 +250,11 @@ When pausing this journey, you select if profiles are **Discarded** or **Hold**,
 
 1. **AddToCart** activity:  all new profiles entrances are blocked. If a profile has already entered the journey before a pause, they continue up to the next action node.
 1. **Wait** activity: profiles continue to wait normally on the node and will exit it, even if the journey is in pause.
-1. **Condition**: profiles continue to go through conditions and move to the right branch, based on the expression defined on the condition.
+1. **Optimize (Condition)**: profiles continue to go through conditions and move to the right branch, based on the expression defined on the condition.
 1. **Push**/**Email** activities: during a paused journey, profiles start waiting or get discarded (based on the choice made by the user at the time of pause) on the next action node. So profiles will start waiting or get discarded there.
 1. **Events** after **Action** nodes: if a profile is waiting on an **Action** node and there is an **Event** activity after it, if that event is fired, the event is discarded.
 
-As per this behavior, you can see profile numbers increasing on paused journey, mostly in activities before **Action** activities. For instance, in that example, the **Wait** activity is still enabled, increasing the number of profiles going through the **Condition** activity, as they exit it.
+As per this behavior, you can see profile numbers increasing on paused journey, mostly in activities before **Action** activities. For instance, in that example, the **Wait** activity is still enabled, increasing the number of profiles going through the **Optimize (Condition)** activity, as they exit it.
 
 When you resume this journey:
 
