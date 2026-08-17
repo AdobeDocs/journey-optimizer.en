@@ -147,6 +147,12 @@ topic_v2:
 
   Availability date: August 11, 2026
 
+### Journeys {#august-26-journeys}
+
+* **Multi-selection in the new journey canvas** - You can now select multiple nodes at once in the new journey canvas experience to run bulk actions, such as copy, delete, or save as a journey fragment, on several nodes at once. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+
+  Availability date: August 17, 2026
+
 ## July '26 release notes {#july-26-updates}
 
 ### Loyalty Challenges {#july-26-loyalty}
