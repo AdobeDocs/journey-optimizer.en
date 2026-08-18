@@ -36,7 +36,7 @@ For an overview by journey type, see [Get started with Journey simulation](simul
 
 After activation, batch journeys with read audience entry offer two ways to run a simulation:
 
-* **[!UICONTROL Quick simulation]** runs end-to-end with generated users, generated event values, and default test settings, powered by the Journey Agent. It is a quick way to simulate a journey end to end with minimal intervention. Quick simulation starts as soon as you select this option.
+* **[!UICONTROL Quick simulation]** runs end-to-end with generated users, generated event values, and default test settings, powered by the Journey Agent. It is a quick way to simulate a journey end to end with minimal intervention. Quick simulation starts as soon as you select this option. [Watch the Quick simulation video](simulate-journey-gs.md#video)
 
 * **[!UICONTROL Manual simulation]** lets you run a simulation step by step, manually. Create simulated users (manually or with the Journey Agent), trigger them into the journey, define event payloads (manually or with the Journey Agent), and override waits.
 
