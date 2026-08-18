@@ -61,7 +61,6 @@ By streamlining these processes, you can enhance customer experience, save time,
 ## Guardrails & limitations
 
 * **Supported channels** - Email, SMS, Push, and WhatsApp.
-* **Orchestrated campaigns** - Quiet hours are not supported for Orchestrated campaigns.
 * **Propagation delay** – Updates to a quiet hours rule may take up to 12 hours to be applied to channel actions that already use that rule.
 * **High-volume latency** – In cases of high-volume communications, the system may take additional time to begin successfully enforcing quiet hour suppressions.
 

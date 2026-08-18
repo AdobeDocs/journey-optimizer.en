@@ -34,7 +34,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Activate High throughput mode for API triggered campaigns so you can send very large-scale, real-time transactional email at up to 5000 transactions per second without relying on profiles.
+**On this page:** Activate High throughput mode for API triggered campaigns so you can send very large-scale, real-time transactional messages (email and push) at up to 5000 transactions per second without relying on profiles.
 
 >[!ENDSHADEBOX]
 
@@ -44,9 +44,9 @@ This page explains how High throughput campaigns differ from standard API trigge
 
 ## Guardrails & limitations
 
-*  **Access** - Available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on.
+* **Access** - Available across all regions except Switzerland for organizations licensed with the High Throughput transactional messaging add-on.
 
-* **Channels**: Currently available only for email.  
+* **Channels**: Email and push notifications.
 
 * **Personalization**:  
 
@@ -65,27 +65,32 @@ This page explains how High throughput campaigns differ from standard API trigge
 
   The datasets used are: 
 
-  * **AJO Message Feedback Event Dataset - Non Profile**  
-  * **AJO Email Tracking Experience Event Dataset - Non Profile**
+  * **AJO Message Feedback Event Dataset - Non Profile** — used for both email and push feedback.
+  * **AJO Email Tracking Experience Event Dataset - Non Profile** — used for email tracking only. A dedicated non-profile tracking dataset for push is not yet available.
 
 * **Throughput allocation** - The throughput provisioned under the High Throughput add-on is exclusively reserved for high throughput campaigns. There is no sharing of throughput between standard and high throughput API triggered campaigns.
 
 * **Personalized PDF attachments** - Not supported when a High throughput campaign fails over to another region. [Learn more about personalized PDF attachments](../email/pdf-attachments.md#personalized-attachments)
+* **Push notifications**:
+
+  * **Web push** — High Throughput web push campaigns run on shared infrastructure and do not benefit from the dedicated capacity reserved for High Throughput mobile push.
+  * **Payload size** — The maximum payload size is 5 KB.
+  * **Denylist behavior** — When a message hits a denylist, delivery feedback is retained but no profile-update feedback is produced. This means denylist responses do not trigger profile updates or token invalidation in Adobe Experience Platform.
 
 ## Choosing between standard vs. High throughput campaigns
 
 Use this table to decide which API triggered campaign type fits your use case:  
 
 | Feature / Requirement | Standard API triggered Campaign | High Throughput Campaign |
-|------------------------|---------------------------------|---------------------------|
+| ------------------------ | --------------------------------- | --------------------------- |
 | **Availability** | Included in base offering | Requires High Throughput transactional messaging add-on. |
 | **Throughput** | Up to 500 transactions per second | Up to 5000 transactions per second |
-| **Channels** | Email, SMS, Push | Email |
+| **Channels** | Email, SMS, Push | Email, Push |
 | **Personalization** | Profile + contextual in the API payload | Contextual in the API payload only |
-| **Profile & stitching** | Exists or gets created with events stitched to profile | No profile|
-| **Message volume** | Standard entitlement & message packs | Separate tiered message volumes|
+| **Profile & stitching** | Exists or gets created with events stitched to profile | No profile |
+| **Message volume** | Standard entitlement & message packs | Separate tiered message volumes |
 | **Infrastructure** | Standard | Enhanced |
-| **Uptime** | 99,9% | 99,99%|
+| **Uptime** | 99,9% | 99,99% |
 | **Health check API** | Yes | Yes |
 
 In other words:
@@ -95,13 +100,13 @@ In other words:
   * Your throughput needs are <500 TPS.  
   * You require personalization based on Adobe Profiles.  
   * You want campaign data stitched to profiles for future targeting.
-  * You want to use another channel than Email.
+  * You want to use another channel than Email or Push.
 
 * Choose **High throughput** campaigns if:  
   * You need throughput >500 TPS.  
   * You don't require profile stitching.  
   * You can pass all personalization in the API payload.  
-  * You want to use the Email channel.  
+  * You want to use the Email or Push channel.
 
 ## Setup guidelines
 
