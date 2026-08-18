@@ -65,7 +65,7 @@ Understand common error codes in Adobe Journey Optimizer and find quick resoluti
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/list-check.svg)
 
-Troubleshoot Errors Before Testing or Publishing Your Journey
+Troubleshoot Journey Errors
 
 Identify and resolve journey-wide errors, activity issues, and set fallback actions to ensure smooth testing and publishing.
 
@@ -75,7 +75,7 @@ Identify and resolve journey-wide errors, activity issues, and set fallback acti
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/code-branch.svg)
 
-Troubleshooting Live Journey Execution
+Troubleshoot Journey Execution
 
 Diagnose issues with event validation, profile entry, journey navigation, and message delivery during live execution.
 
@@ -85,7 +85,7 @@ Diagnose issues with event validation, profile entry, journey navigation, and me
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/puzzle-piece.svg)
 
-Troubleshoot Inbound Actions in Journeys
+Troubleshoot Inbound Actions
 
 Debug inbound action issues such as missing content or continued delivery after profile exit using detailed step-by-step guides.
 
@@ -95,7 +95,7 @@ Debug inbound action issues such as missing content or continued delivery after 
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/gear.svg)
 
-Troubleshooting Custom Actions
+Troubleshoot Custom Actions
 
 Validate and debug custom actions using the **Send test request** feature to ensure API calls and authentication settings are correct.
 
@@ -115,7 +115,7 @@ Diagnose why Live activities fail to appear, update, or end, covering profile to
 :::
 ![icon](https://cdn.experienceleague.adobe.com/icons/file-alt.svg)
 
-AEM Content Fragments Troubleshooting
+Troubleshoot AEM Content Fragments
 
 Review key considerations and common issues when working with Adobe Experience Manager Content Fragments in Journey Optimizer, including fragment types, repository access, and personalization.
 

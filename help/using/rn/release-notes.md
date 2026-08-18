@@ -99,6 +99,16 @@ The following capabilities and improvements have been introduced to Content mana
 </tbody>
 </table>
 
+### Journeys {#aug-26-journeys}
+
+* **New list functions in the advanced expression editor** - Two new functions are available in the advanced expression editor: `mergeLists` combines two lists, with or without deduplication, and `differenceLists` returns the items of one list that are not present in another. [Learn more](../building-journeys/functions/list-functions.md)
+
+    Availability date: August 13, 2026
+
+* **Send-Time Optimization in the Wait activity** - Send-Time Optimization is now available in the Wait activity, letting Adobe's AI determine the optimal time to continue to any downstream activity. [Learn more](../building-journeys/wait-activity.md#sto-wait)
+
+    Availability date: August 13, 2026
+
 ### Campaigns {#aug-26-campaigns}
 
 The following capabilities and improvements have been introduced to Campaigns in this release.
@@ -121,6 +131,9 @@ The following capabilities and improvements have been introduced to Campaigns in
 </tr>
 </tbody>
 </table>
+
+* **Per-campaign lifecycle alert subscriptions** - You can now subscribe to supported campaign lifecycle alerts for a single campaign, in addition to the existing sandbox-level subscription. This lets you monitor individual high-priority campaigns without receiving the same alert for every campaign in the sandbox. [Learn more](../reports/alerts.md#subscribe-alerts)
+    Availability date: August 13, 2026
 
 ### Orchestrated Campaigns {#august-26-oc}
 
@@ -212,3 +225,10 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 17, 2026
 
+### Decisioning {#decisioning-august}
+
+* **Mirror Page in Visual Fragment** - You can now insert mirror pages into a Visual Fragment. Decisioning attributes render correctly on the mirror page link, even when the fragment is used in an email campaign that leverages Decisioning. The mirror page must be added to the Visual Fragment before the fragment is published in order for decisioning attributes to display.
+
+  Availability date: August 11, 2026
+
+  [Learn more](../email/message-tracking.md#decisioning-mirror-page)
