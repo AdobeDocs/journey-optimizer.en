@@ -163,7 +163,7 @@ topic_v2:
 
   Availability date: August 11, 2026
 
-  [Learn more](../experience-decisioning/fragments-decision-policies.md#fragments-guardrails)
+  [Learn more](../email/message-tracking.md#decisioning-mirror-page)
 
 ## July '26 release notes {#july-26-updates}
 
