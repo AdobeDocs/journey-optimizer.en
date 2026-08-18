@@ -47,6 +47,5 @@ Some ways of bringing images into your content, such as extracting an image from
 
 ## Additional resources
 
-* [Adobe C2PA metadata](https://helpx.adobe.com/firefly/using/content-credentials.html){target="_blank"}: Learn more about how C2PA metadata work across Adobe products.
 * [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"}
 * [Guardrails and limitations](gs-generative.md#generative-guardrails)
