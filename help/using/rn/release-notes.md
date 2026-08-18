@@ -129,7 +129,7 @@ topic_v2:
 <tbody>
 <tr>
 <td>
-<p>With release of Custom outbound channels feature, you can now add LINE actions directly into your Orchestrated campaigns. This new activity allows you to build and deliver highly personalized content, including text, stickers, images, videos, location data, and rich Flex Messages, to engage your customers seamlessly on the LINE platform. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>You can now add LINE actions into your Orchestrated campaigns. This new activity allows you to build and deliver highly personalized content, including text, stickers, images, videos, location data, and rich Flex Messages, to engage your customers seamlessly on the LINE platform. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>For more information, refer to the <a href="../orchestrated/activities/channels.md">detailed documentation</a>.</p>
 <p>Availability date: August 12, 2026</p>
 </td>
@@ -153,7 +153,7 @@ topic_v2:
 
   Availability date: August 11, 2026
 
-* **Multi-selection in the new journey canvas** - You can now select multiple nodes at once in the new journey canvas experience to run bulk actions, such as copy, delete, or save as a journey fragment, on several nodes at once. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+* **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
 
   Availability date: August 17, 2026
 
