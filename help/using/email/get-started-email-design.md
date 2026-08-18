@@ -121,8 +121,20 @@ Refer to the table below for best practices for email design:
 
 >[!NOTE]
 >
-
 >The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} states that all digital communications should be accessible. In addition to the email design best practices listed in this section, make sure you also follow the guidelines listed on [this page](accessible-content.md) specific to building accessible content with the Email Designer.
+
+### Outlook rendering considerations {#outlook-tips}
+
+Outlook has a number of rendering quirks that can affect your email layout if not accounted for during design:
+
+* Use even numbers for padding, font sizes, and widths. Outlook converts pixels to points internally, which can introduce uneven spacing and unwanted white lines when odd numbers are used.
+* Set table widths in pixels, not percentages. Percentage-based widths can break the layout in Outlook. Apply width values directly in the style attribute of each table.
+* Always set image widths using the `width` attribute. Outlook ignores CSS `width` and `height` properties on images and falls back to the file's native dimensions if no HTML attribute is present.
+* Include ALT text on all images. This prevents display and security issues when images are blocked.
+* Apply borders to table cells, not to the table element itself. If a border is not rendering as expected, move it from the `<table>` to the `<td>`.
+* Avoid rounded corners. CSS `border-radius` is not reliably supported in Outlook — square corners are the safe default.
+
+For dark mode design considerations, including how to use media queries and Outlook.com-specific image swap techniques, refer to [this page](dark-mode.md).
 
 ## How-to videos {#video}
 
