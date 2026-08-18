@@ -103,6 +103,26 @@ Validate and debug custom actions using the **Send test request** feature to ens
 :::
 
 :::
+![icon](https://cdn.experienceleague.adobe.com/icons/mobile.svg)
+
+Troubleshoot Live Activities
+
+Diagnose why Live activities fail to appear, update, or end, covering profile token, campaign configuration, payload, and delivery issues for unitary and broadcast use cases.
+
+[Fix Live activity issues](../using/mobile-live/troubleshoot-mobile-live.md)
+:::
+
+:::
+![icon](https://cdn.experienceleague.adobe.com/icons/file-alt.svg)
+
+AEM Content Fragments Troubleshooting
+
+Review key considerations and common issues when working with Adobe Experience Manager Content Fragments in Journey Optimizer, including fragment types, repository access, and personalization.
+
+[Resolve Content Fragment issues](../using/integrations/aem-fragments-limitations.md)
+:::
+
+:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/question.svg)
 
 Support Ticket Guidelines
@@ -116,6 +136,22 @@ Learn what to include when contacting Adobe support—environment details, impac
 
 ## Additional resources
 
+### Journeys
+
 * [Journey FAQ](../using/building-journeys/journey-faq.md) - Comprehensive answers to common questions about journeys, covering journey types, execution, configuration, and troubleshooting best practices.
 
 * [Guardrails and limitations](../using/start/guardrails.md) - Learn about Journey Optimizer guardrails, product limitations, performance considerations, and supported browsers to ensure optimal usage.
+
+### Campaigns
+
+* [Troubleshoot campaign activation](../using/campaigns/trigger-campaigns.md#troubleshooting) - Resolve common issues encountered when reviewing and activating campaigns.
+
+### Channels and integrations
+
+* [Troubleshoot WhatsApp channel setup](../using/whatsapp/whatsapp-configuration.md#troubleshooting) - Diagnose and fix common configuration issues when setting up the WhatsApp channel.
+
+* [Integrations troubleshooting FAQ](../using/integrations/vendor-integration-faq.md#troubleshooting) - Find answers to common connection and test-connection failures for third-party integrations.
+
+### Configuration
+
+* [Troubleshoot custom subdomain delegation](../using/configuration/delegate-custom-subdomain.md#check-list) - Work through a checklist to resolve issues submitting a custom subdomain.
