@@ -95,6 +95,10 @@ Once you have created an email, you can start designing your email content.
 
 1. Once your email content has been defined and personalized, you can verify your email content with **automated content checks** to catch HTML and CSS issues — such as unsupported tags, empty divs, and size limit violations — directly in the authoring panel, before sending. [Learn more](content-check.md)
 
+    >[!NOTE]
+    >
+    >The system also checks for key settings as you design and displays alerts for warnings (recommendations and best practices) and errors (blocking issues that prevent testing or activation). [Learn more about email alerts](create-email.md#check-email-alerts)
+
     ![Content check pane in the Email Designer with issues](assets/content-check.png)
 
 1. You can also validate your content quality to identify potential issues with readability, content cohesiveness, and effectiveness. [Learn more about content quality validation](../content-management/brands-score.md#validate-quality)
@@ -109,7 +113,11 @@ Once you have created an email, you can start designing your email content.
 
 When sending emails, it's important to consider that recipients may forward them, which can sometimes cause issues with the email's rendering. This is particularly true when using CSS classes that may not be supported by the email provider used for forwarding, for example, if you are using the "is-desktop-hidden" CSS class to hide an image on mobile devices.
 
-To minimize these rendering issues, we recommend keeping your email design structure as simple as possible. Try to use a single design that works well for both desktop and mobile devices, and avoid using complex CSS classes or other design elements that may not be fully supported by all email clients. The same applies when emails are opened in Gmail or Outlook via a mobile web browser, where CSS handling differs significantly from native apps — simple, table-based layouts with fully inlined styles are the safest choice. [Learn more](../content-management/rendering.md#rendering-limitations)
+To minimize these rendering issues, we recommend keeping your email design structure as simple as possible. Try to use a single design that works well for both desktop and mobile devices, and avoid using complex CSS classes or other design elements that may not be fully supported by all email clients.
+
+>[!NOTE]
+>
+>The same applies when emails are opened in Gmail or Outlook via a mobile web browser, where CSS handling differs significantly from native apps — simple, table-based layouts with fully inlined styles are the safest choice. [Learn more](#mobile-web-limitations)
 
 By following these best practices, you can help ensure that your emails are consistently rendered correctly, regardless of how they are viewed or forwarded by recipients.
 
@@ -123,14 +131,36 @@ Refer to the table below for best practices for email design:
 >
 >The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} states that all digital communications should be accessible. In addition to the email design best practices listed in this section, make sure you also follow the guidelines listed on [this page](accessible-content.md) specific to building accessible content with the Email Designer.
 
+## Specific guardrails and limitations {#email-guardrails}
+
+Even well-structured emails can render differently depending on the client or environment where they are opened. The sections below document known limitations and client-specific behaviors to keep in mind when designing your emails.
+
+### Mobile web browser limitations {#mobile-web-limitations}
+
+Email rendering may differ when recipients open Gmail or Outlook **via a mobile web browser** (e.g., Chrome on a phone), rather than using a native mobile app or desktop client. This is a known limitation of mobile webmail environments and is not specific to Journey Optimizer.
+
+This rendering difference stems from how webmail clients behave inside a mobile browser. The browser renders the full desktop webmail UI first, placing the email two layers deep — beyond the reach of any responsive CSS or media queries. Gmail Web additionally strips CSS `<style>` blocks and wraps email content in its own `<div>`, which can override your styles and create alignment conflicts.
+
+Typical symptoms include text alignment shifting (left-aligned text appearing centered), extra white separator lines between content sections, and an overall layout that differs from the template design.
+
+These issues only occur in Gmail Web and Outlook Web when accessed via a mobile browser. Outlook and Gmail native mobile apps, as well as all desktop clients, are not affected.
+
+>[!TIP]
+>
+>To minimize the impact:
+>
+>* Use simple table-based layouts with fully inlined CSS.
+>
+>* Avoid relying on media queries or `<style>` blocks for critical layout properties such as text alignment.
+
 ### Outlook rendering considerations {#outlook-tips}
 
-Outlook has a number of rendering quirks that can affect your email layout if not accounted for during design:
+Outlook has a number of rendering quirks that can affect your email layout if not accounted for during design. To help ensure your emails render correctly in Outlook, follow these best practices:
 
 * Use even numbers for padding, font sizes, and widths. Outlook converts pixels to points internally, which can introduce uneven spacing and unwanted white lines when odd numbers are used.
 * Set table widths in pixels, not percentages. Percentage-based widths can break the layout in Outlook. Apply width values directly in the style attribute of each table.
 * Always set image widths using the `width` attribute. Outlook ignores CSS `width` and `height` properties on images and falls back to the file's native dimensions if no HTML attribute is present.
-* Include ALT text on all images. This prevents display and security issues when images are blocked.
+* Include Alt text on all images. This prevents display and security issues when images are blocked.
 * Apply borders to table cells, not to the table element itself. If a border is not rendering as expected, move it from the `<table>` to the `<td>`.
 * Avoid rounded corners. CSS `border-radius` is not reliably supported in Outlook — square corners are the safe default.
 
