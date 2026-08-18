@@ -109,18 +109,19 @@ Once you have created an email, you can start designing your email content.
 
 When sending emails, it's important to consider that recipients may forward them, which can sometimes cause issues with the email's rendering. This is particularly true when using CSS classes that may not be supported by the email provider used for forwarding, for example, if you are using the "is-desktop-hidden" CSS class to hide an image on mobile devices.
 
-To minimize these rendering issues, we recommend keeping your email design structure as simple as possible. Try to use a single design that works well for both desktop and mobile devices, and avoid using complex CSS classes or other design elements that may not be fully supported by all email clients.
+To minimize these rendering issues, we recommend keeping your email design structure as simple as possible. Try to use a single design that works well for both desktop and mobile devices, and avoid using complex CSS classes or other design elements that may not be fully supported by all email clients. The same applies when emails are opened in Gmail or Outlook via a mobile web browser, where CSS handling differs significantly from native apps — simple, table-based layouts with fully inlined styles are the safest choice. [Learn more](../content-management/rendering.md#rendering-limitations)
 
 By following these best practices, you can help ensure that your emails are consistently rendered correctly, regardless of how they are viewed or forwarded by recipients.
 
 Refer to the table below for best practices for email design:
 
-| Recommended|Use with Care|Not recommended|
+| Recommended|Use with care|Not recommended|
 |-|-|-|
 | <ul><li><b>Static, table-based layouts</b> for structure</li> <li><b>HTML tables and nested tables</b> for layout consistency</li> <li><b>Template widths</b> between 600px and 800px </li> <li><b>Simple, inline CSS</b> for styling </li> <li><b>Web-safe fonts</b> for universal compatibility</li>| <ul><li><b>Background images</b> may not appear on certain email platforms.</li><li><b>Custom web fonts</b> lack universal support.</li><li><b>Wide layouts</b> can display poorly on smaller screens.</li><li><b>Image maps</b> offer limited functionality.</li><li><b>Embedded CSS</b> is sometimes removed during email delivery.</li>| <ul><li><b>JavaScript</b> is generally unsupported in email environments.</li> <li> <b>`<iframe>`</b> tags are blocked on most platforms. </li> <li><b>Flash</b> is outdated and no longer supported.</li> <li><b>Embedded audio</b> often fails to play.</li> <li><b>Embedded video</b> is incompatible with many email platforms.</li> <li> <b>Forms</b> do not work within emails.</li> <li> `<div>` layering can lead to rendering issues.</li>|
 
 >[!NOTE]
 >
+
 >The [European accessibility act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L0882){target="_blank"} states that all digital communications should be accessible. In addition to the email design best practices listed in this section, make sure you also follow the guidelines listed on [this page](accessible-content.md) specific to building accessible content with the Email Designer.
 
 ## How-to videos {#video}
