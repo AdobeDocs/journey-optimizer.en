@@ -180,13 +180,13 @@ To set capping rules for the decision item, follow the steps detailed below.
 
     +++
 
-1. Use the **[!UICONTROL Capping scope]** section to define how the capping rule applies across placements.
+1. Use the **[!UICONTROL Capping scope]** section to define how the capping rule applies across placements. [Learn more about placements](placements.md#about)
 
     ![](assets/item-capping-scope.png)
 
     * **[!UICONTROL Offer level]** (default): The cap applies per offer, regardless of the placement where it is displayed. The same offer shown in multiple placements counts once per decision event.
-    * **[!UICONTROL Each placement]**: The cap applies to every placement this offer appears in. Each placement maintains its own capping counter, and new placements are tracked automatically the first time they are seen.
-    * **[!UICONTROL Specific placement]**: The cap applies only when the offer is displayed in selected placements. Click **[!UICONTROL Select placements]** to pick which placements to cap. Other placements pass through uncapped.
+    * **[!UICONTROL Each placement]**: The cap applies to every placement this offer appears in. Each placement maintains its own capping counter, and new placements are tracked automatically the first time they are seen. For example, if an offer appears in a Hero Banner and a Sidebar, each placement tracks impressions independently — capping the offer in one placement does not affect the other.
+    * **[!UICONTROL Specific placement]**: The cap applies only when the offer is displayed in selected placements. Click **[!UICONTROL Select placements]** to pick which placements to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
 
         ![](assets/item-capping-scope-specific.png)
 
