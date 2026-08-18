@@ -84,6 +84,12 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. <!-- Documentation link: TBD -->
 
+### Channels {#august-26-channels}
+
+The following improvement is coming to Campaigns in this release:
+
+* **Live activity execution metadata (executionMetadata)** - API-triggered Live activity campaigns (Transactional and Marketing) now support an optional executionMetadata field on each recipient. This lets you attach custom key/value data, such as an order ID, loyalty tier, or region code, to an execution. 
+
 ### Campaigns {#august-26-camp}
 
 The following capabilities and improvements are coming to Campaigns in this release.
@@ -138,13 +144,13 @@ The following capabilities and improvements are coming to Orchestrated Campaigns
 <table>
 <thead>
 <tr>
-<th><strong>LINE channel support (Limited Availability)</strong><br/></th>
+<th><strong>Send using waves</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>With release of Custom outbound channels feature, you can now add LINE actions directly into your campaigns. This new activity allows you to build and deliver highly personalized content, including text, stickers, images, videos, location data, and rich Flex Messages, to engage your customers seamlessly on the LINE platform. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>You can now schedule outbound messages to be delivered in controlled batches over time. Ideal for high-volume or time-sensitive campaigns, wave sending also supports better deliverability and helps maintain a strong sender reputation by reducing the risk of being flagged as spam. </p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -162,7 +168,6 @@ The following capabilities and improvements are coming to Orchestrated Campaigns
 
 * **Target dimension simplification** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level. <!-- Documentation link: TBD -->
 
-* **Send using waves** - You can now schedule outbound messages to be delivered in controlled batches over time. Ideal for high-volume or time-sensitive campaigns, wave sending also supports better deliverability and helps maintain a strong sender reputation by reducing the risk of being flagged as spam. <!-- Documentation link: TBD -->
 
 
 ### Decisioning {#august-26-decisioning}

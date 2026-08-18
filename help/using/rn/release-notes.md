@@ -97,6 +97,16 @@ topic_v2:
 </tbody>
 </table>
 
+### Journeys {#aug-26-journeys}
+
+* **New list functions in the advanced expression editor** - Two new functions are available in the advanced expression editor: `mergeLists` combines two lists, with or without deduplication, and `differenceLists` returns the items of one list that are not present in another. [Learn more](../building-journeys/functions/list-functions.md)
+
+    Availability date: August 13, 2026
+
+* **Send-Time Optimization in the Wait activity** - Send-Time Optimization is now available in the Wait activity, letting Adobe's AI determine the optimal time to continue to any downstream activity. [Learn more](../building-journeys/wait-activity.md#sto-wait)
+
+    Availability date: August 13, 2026
+
 ### Campaigns {#aug-26-campaigns}
 
 <table>
@@ -118,6 +128,9 @@ topic_v2:
 </tbody>
 </table>
 
+* **Per-campaign lifecycle alert subscriptions** - You can now subscribe to supported campaign lifecycle alerts for a single campaign, in addition to the existing sandbox-level subscription. This lets you monitor individual high-priority campaigns without receiving the same alert for every campaign in the sandbox. [Learn more](../reports/alerts.md#subscribe-alerts)
+    Availability date: August 13, 2026
+
 ### Orchestrated Campaigns {#august-26-oc}
 
 <table>
@@ -129,7 +142,7 @@ topic_v2:
 <tbody>
 <tr>
 <td>
-<p>With release of Custom outbound channels feature, you can now add LINE actions directly into your Orchestrated campaigns. This new activity allows you to build and deliver highly personalized content, including text, stickers, images, videos, location data, and rich Flex Messages, to engage your customers seamlessly on the LINE platform. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+<p>You can now add LINE actions into your Orchestrated campaigns. This new activity allows you to build and deliver highly personalized content, including text, stickers, images, videos, location data, and rich Flex Messages, to engage your customers seamlessly on the LINE platform. This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
 <p>For more information, refer to the <a href="../orchestrated/activities/channels.md">detailed documentation</a>.</p>
 <p>Availability date: August 12, 2026</p>
 </td>
@@ -153,9 +166,17 @@ topic_v2:
 
   Availability date: August 11, 2026
 
-* **Multi-selection in the new journey canvas** - You can now select multiple nodes at once in the new journey canvas experience to run bulk actions, such as copy, delete, or save as a journey fragment, on several nodes at once. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+* **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
 
   Availability date: August 17, 2026
+
+### Decisioning {#decisioning-august}
+
+* **Mirror Page in Visual Fragment** - You can now insert mirror pages into a Visual Fragment. Decisioning attributes render correctly on the mirror page link, even when the fragment is used in an email campaign that leverages Decisioning. The mirror page must be added to the Visual Fragment before the fragment is published in order for decisioning attributes to display.
+
+  Availability date: August 11, 2026
+
+  [Learn more](../email/message-tracking.md#decisioning-mirror-page)
 
 ## July '26 release notes {#july-26-updates}
 
