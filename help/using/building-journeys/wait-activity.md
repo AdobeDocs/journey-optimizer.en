@@ -130,7 +130,7 @@ To validate that the wait activity works as expected, you can use step events. [
 ### Send-time optimization wait {#sto-wait}
 
 >[!CONTEXTUALHELP]
->id="ajo_journey_wait_optimization channel"
+>id="ajo_journey_wait_optimization_channel"
 >title="Optimization channel"
 >abstract="Choose which channel's Send-Time Optimization model to use when calculating each profile's optimal wait time: Email or Push notification. The wait activity reuses the engagement scores already computed for that channel, so the channel you select should match the messaging behavior you want the wait to be optimized around."
 

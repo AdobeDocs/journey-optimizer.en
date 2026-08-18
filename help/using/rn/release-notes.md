@@ -103,6 +103,10 @@ topic_v2:
 
     Availability date: August 13, 2026
 
+* **Send-Time Optimization in the Wait activity** - Send-Time Optimization is now available in the Wait activity, letting Adobe's AI determine the optimal time to continue to any downstream activity. [Learn more](../building-journeys/wait-activity.md#sto-wait)
+
+    Availability date: August 13, 2026
+
 ### Campaigns {#aug-26-campaigns}
 
 <table>
