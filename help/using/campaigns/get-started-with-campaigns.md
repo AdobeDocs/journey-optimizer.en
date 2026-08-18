@@ -99,7 +99,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_orchestration"
 >title="Campaigns"
->abstract="Create your segmentation flow, craft your cross channel messages and plan your campaigns. Supported channels: Email, SMS, Push notifications, Direct mail."
+>abstract="Create your segmentation flow, craft your cross channel messages and plan your campaigns. Support outbound channels."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_scheduled_marketing"
@@ -109,7 +109,7 @@ topic_v2:
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_scheduled_transactional"
 >title="Campaigns"
->abstract="Deliver single or recurring outbound transactional actions. Supported channels: Email, SMS, Push notifications."
+>abstract="Deliver single or recurring outbound transactional actions."
 
 >[!CONTEXTUALHELP]
 >id="ajo_campaigns_create_api_marketing"
