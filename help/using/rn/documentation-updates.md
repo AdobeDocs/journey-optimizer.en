@@ -27,8 +27,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## August 2026 {#august-2026}
 
+* A new **Mobile web browser limitations** section has been added to the **Get started with email design** page, documenting why emails may render differently in Gmail or Outlook when accessed via a mobile browser, along with a workaround tip. [Read more](../email/get-started-email-design.md#mobile-web-limitations)
 
-* A new **Mobile web browser limitations** section has been added to the **Test email rendering** page, documenting why emails may render differently in Gmail or Outlook when accessed via a mobile browser, along with a workaround tip. [Read more](../content-management/rendering.md#rendering-limitations)
 * A new **Outlook rendering considerations** section has been added to the **Get started with email design** page, listing common Outlook quirks to account for during design: even numbers for padding and widths, pixel-based table widths, HTML image width attributes, ALT text, borders on table cells, and rounded corners. [Read more](../email/get-started-email-design.md#outlook-tips)
 
 * The **Datasets Time-to-live (TTL) guardrails** page has been updated with a significantly expanded **Impacted datasets** table, now covering all Journey Optimizer system-generated datasets (including several not previously listed, such as the AJO Consent Service, Interactive Messaging Profile, Push Profile, and Message Export datasets) along with a new **Availability** column indicating whether each dataset is included by default or requires a specific add-on or license. The **Guardrails and limitations** page has also been updated to reflect the confirmed enforcement date for this guardrail: the change will be enforced on **existing customer sandboxes** starting **October 1, 2026**. [Read more](../data/datasets-ttl.md#datasets)

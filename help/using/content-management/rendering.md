@@ -1,6 +1,6 @@
 ---
 title: Test email rendering
-description: Learn how to test email rendering and understand known rendering limitations across email clients and environments.
+description: Learn how to test email rendering.
 feature: Preview
 role: User
 level: Beginner
@@ -14,7 +14,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to connect your Litmus account to Adobe Journey Optimizer to test email rendering across popular email clients, and understand known rendering limitations including mobile web browser environments.
+**On this page:** Learn how to connect your Litmus account to Adobe Journey Optimizer to test email rendering across popular desktop, mobile, and web-based clients.
 
 >[!ENDSHADEBOX]
 
@@ -45,21 +45,3 @@ To check email rendering, follow these steps:
 >[!CAUTION]
 >
 >When connecting your **Litmus** account with [!DNL Journey Optimizer], you agree that test messages are sent to Litmus: once sent, these emails are no longer managed by Adobe. As a consequence, Litmus data retention email policy applies to these emails, including personalization data that may be included in these test messages.
-
-## Mobile web browser limitations {#rendering-limitations}
-
-Email rendering may differ when recipients open Gmail or Outlook **via a mobile web browser** (e.g., Chrome on a phone), rather than using a native mobile app or desktop client. This is a known limitation of mobile webmail environments and is not specific to Journey Optimizer.
-
-This rendering difference stems from how webmail clients behave inside a mobile browser. The browser renders the full desktop webmail UI first, placing the email two layers deep — beyond the reach of any responsive CSS or media queries. Gmail Web additionally strips CSS `<style>` blocks and wraps email content in its own `<div>`, which can override your styles and create alignment conflicts.
-
-Typical symptoms include text alignment shifting (left-aligned text appearing centered), extra white separator lines between content sections, and an overall layout that differs from the template design.
-
-These issues only occur in Gmail Web and Outlook Web when accessed via a mobile browser. Outlook and Gmail native mobile apps, as well as all desktop clients, are not affected.
-
->[!TIP]
->
->To minimize the impact:
->
->* Use simple table-based layouts with fully inlined CSS.
->
->* Avoid relying on media queries or `<style>` blocks for critical layout properties such as text alignment.
