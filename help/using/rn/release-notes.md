@@ -124,6 +124,8 @@ topic_v2:
 </tbody>
 </table>
 
+* **Per-campaign lifecycle alert subscriptions** - You can now subscribe to supported campaign lifecycle alerts for a single campaign, in addition to the existing sandbox-level subscription. This lets you monitor individual high-priority campaigns without receiving the same alert for every campaign in the sandbox. [Learn more](../reports/alerts.md#subscribe-alerts)
+
 ### Orchestrated Campaigns {#august-26-oc}
 
 <table>
