@@ -121,9 +121,9 @@ Basically, the output of an audience is a list of profiles, whereas a decision r
 
 * To limit the presentation of the decision item to the members of one or several Adobe Experience Platform audiences, select the **[!UICONTROL Visitors who fall into one or multiple audiences]** option, then add one or several audiences from the left pane and combine them using the **[!UICONTROL And]** / **[!UICONTROL Or]** logical operators. [Learn more about audiences](../audience/about-audiences.md)
 
-* To associate a specific decision rule to the decision item, select **[!UICONTROL By rule]**, then drag the desired rule from the left pane into the central area. [Learn more about decision rules](rules.md)
+    ![](assets/item-constraints.png)
 
-![](assets/item-constraints.png)
+* To associate a specific decision rule to the decision item, select **[!UICONTROL By rule]**, then drag the desired rule from the left pane into the central area. [Learn more about decision rules](rules.md)
 
 When you select audiences or decision rules, you can see information on the estimated qualified profiles. Click **[!UICONTROL Refresh]** to update data.
 
@@ -140,7 +140,7 @@ When you select audiences or decision rules, you can see information on the esti
 
 Capping is used as a constraint to define the maximum number of times an offer item can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer. You can create up to 10 cappings for a given decision item.
 
-![](assets/item-capping.png)
+![](assets/item-capping.png){width="80%"}
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ Capping is used as a constraint to define the maximum number of times an offer i
 
 When configuring capping rules, you can reference attributes stored in Adobe Experience Platform datasets to define thresholds. To use a dataset, select it in the **[!UICONTROL Dataset]** section. [Learn how to use Adobe Experience Platform data for Decisioning](../experience-decisioning/aep-data-exd.md)
 
-![](assets/exd-lookup-capping.png)
+![](assets/exd-lookup-capping.png){width="80%"}
 
-To set capping rules for the decision item, click the **[!UICONTROL Create capping]** button then follow the steps detailed below.
+To set capping rules for the decision item, follow the steps detailed below.
 
-![](assets/item-capping-create.png)
+![](assets/item-capping-event.png){width="80%"}
 
 1. Define which **[!UICONTROL Capping event]** will be taken into account to increase the counter.
 
@@ -179,7 +179,21 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
     * [Configure data collection](data-collection/schema-requirement.md)
 
     +++
-    
+
+1. Use the **[!UICONTROL Capping scope]** section to define how the capping rule applies across placements.
+
+    ![](assets/item-capping-scope.png)
+
+    * **[!UICONTROL Offer level]** (default): The cap applies per offer, regardless of the placement where it is displayed. The same offer shown in multiple placements counts once per decision event.
+    * **[!UICONTROL Each placement]**: The cap applies to every placement this offer appears in. Each placement maintains its own capping counter, and new placements are tracked automatically the first time they are seen.
+    * **[!UICONTROL Specific placement]**: The cap applies only when the offer is displayed in selected placements. Click **[!UICONTROL Select placements]** to pick which placements to cap. Other placements pass through uncapped.
+
+        ![](assets/item-capping-scope-specific.png)
+
+    >[!NOTE]
+    >
+    >Placement-level capping does not apply to offers capped using rules based on Adobe Experience Platform data.
+
 1. Choose the capping type:
 
     * Select **[!UICONTROL In total]** to define how many times the item can be proposed across the combined target audience, meaning across all users. For example, if you are an electronics retailer having a 'TV doorbuster deal', you want the offer to be only returned 200 times across all profiles.
@@ -220,7 +234,9 @@ To set capping rules for the decision item, click the **[!UICONTROL Create cappi
 
     * There may be a buffer time of up to 15 minutes before events are counted toward frequency capping constraints, either when the decision item is approved, or when the capping is created - whichever occurs last.
 
-1. Click **[!UICONTROL Create]** to confirm the capping rule creation. You can create up to 10 rules for a single decision item. To do so, click the **[!UICONTROL Create capping]** button and repeat the steps above.
+1. Click **[!UICONTROL Create]** to confirm the capping rule creation.
+
+1. You can create up to 10 rules for a single decision item. To do so, click the **[!UICONTROL Create capping]** button and repeat the steps above.
 
     ![](assets/item-capping-rules.png)
 
