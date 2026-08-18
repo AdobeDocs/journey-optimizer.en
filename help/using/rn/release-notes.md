@@ -166,6 +166,7 @@ The following capabilities and improvements have been introduced to Orchestrated
 <tr>
 <td>
 <p>You can now schedule outbound messages to be delivered in controlled batches over time. Ideal for high-volume or time-sensitive campaigns, wave sending also supports better deliverability and helps maintain a strong sender reputation by reducing the risk of being flagged as spam. </p>
+<p>For more information, refer to the <a href="../delivery/send-using-waves.md">detailed documentation</a>.</p>
 <p>Availability date: August 18, 2026</p>
 </td>
 </tr>
