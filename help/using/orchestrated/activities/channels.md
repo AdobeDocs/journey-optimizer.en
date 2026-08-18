@@ -120,9 +120,22 @@ See [Guardrails and limitations](../guardrails.md) for all Orchestrated campaign
 
 1. Select the activity and click **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]**, or **[!UICONTROL Edit direct mail]** depending on the chosen channel.
 
-    ![image showing the canvas with an Email activity](../assets/channel-edit.png)
+1. In the **[!UICONTROL Target]** section, configure the target of the delivery:
 
-1. In the **[!UICONTROL Properties]** tab, enter a description then switch to the **[!UICONTROL Actions]** tab to configure the activity.
+    * Select the **[!UICONTROL Target dimension]** for this send from the drop-down list.
+
+    * When a secondary dimension applies (related tables linked to each profile), choose how many messages to send:
+
+       * **[!UICONTROL One message per profile]**: Send one message per profile, even when several rows from the secondary dimension exist.
+       * **[!UICONTROL One message per secondary dimension]**: Send one message per qualifying row from the secondary dimension. When several rows match the same profile, that profile can receive multiple messages.
+
+    ![image showing the Target section with secondary dimension options](../assets/secondary-dimension.png)
+
+    **Example** – Suppose a "flights" table is linked to your recipients table and you want each profile to receive one message per flight that applies to them. Select **[!UICONTROL One message per secondary dimension]**. Use **[!UICONTROL One message per profile]** when you only want one message per profile regardless of how many related flight rows qualify.
+
+    For more information on targeting dimensions and how to configure them, refer to this page: [Configure a Targeting dimension](../target-dimension.md)
+
+1. Click **[!UICONTROL Edit email]**, **[!UICONTROL Edit SMS]**, **[!UICONTROL Edit Push]**, or **[!UICONTROL Edit direct mail]** depending on the chosen channel to create the message as usual, then return to the **right rail** to finish **[!UICONTROL Actions]**.
 
 ## Marketing vs Transactional messages {#marketing-vs-transactional}
 
@@ -147,6 +160,8 @@ Use the **[!UICONTROL Actions]** tab to select a channel configuration for your 
 1. **Select a channel configuration**
 
     A configuration is defined by a [System Administrator](../../start/path/administrator.md). It contains all the technical parameters for sending the message, such as header parameters, subdomain, mobile apps, etc. [Learn how to set up channel configurations](../../configuration/channel-surfaces.md)
+
+    The list of channel configurations is filtered according to the target you set for the delivery in the properties pane when selecting it from the canvas. Only configurations that are compatible with that target appear.
 
     ![image showing the Actions section](../assets/channel-actions.png)
 
@@ -203,7 +218,6 @@ When your channel activity has been configured, select the **[!UICONTROL Content
 
 ## Define the content {#content}
 
-
 ### Create the message content
 
 Switch to the **[!UICONTROL Content]** tab to create your message. The process steps vary based on the selected channel. Learn detailed steps to create your message content in the following pages.
@@ -236,11 +250,11 @@ When you simulate content with **test profiles** in an Orchestrated campaign, tw
 
 ## Confirm message sending
 
-By default, for non-recurring orchestrated campaigns, message delivery is paused until you explicitly approve the send. After publishing the campaign, confirm the send request from the channel activity's properties pane.
+By default, for non-recurring orchestrated campaigns, message delivery is paused until you explicitly approve the send. After publishing the campaign, confirm the send request from **[!UICONTROL Properties]** in the **right rail** while the channel activity is selected.
 
 ![image showing the Confirm button](../assets/confirm-sending.png)
 
-Sending confirmation can be disabled before publishing the orchestrated campaign. To do so, select the channel activity in the canvas to display its properties, and turn on **[!UICONTROL Send without confirmation]**.
+Sending confirmation can be disabled before publishing the orchestrated campaign. To do so, select the channel activity on the canvas, go to **[!UICONTROL Properties]** in the **right rail**, and turn on **[!UICONTROL Send without confirmation]**.
 
 ![image showing the Send without confirmation button](../assets/send-without-confirmation.png)
 
