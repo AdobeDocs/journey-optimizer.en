@@ -97,6 +97,12 @@ topic_v2:
 </tbody>
 </table>
 
+### Journeys {#aug-26-journeys}
+
+* **New list functions in the advanced expression editor** - Two new functions are available in the advanced expression editor: `mergeLists` combines two lists, with or without deduplication, and `differenceLists` returns the items of one list that are not present in another. [Learn more](../building-journeys/functions/list-functions.md)
+
+    Availability date: August 13, 2026
+
 ### Campaigns {#aug-26-campaigns}
 
 <table>
