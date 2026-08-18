@@ -82,4 +82,5 @@ Discover how to create and manage direct mail campaigns, including exporting ext
 - **[Code-Based Experience](code-based-experience-landing-page.md)** - Dive into code-based experiences to deliver personalized content across digital platforms using SDKs and APIs.
 - **[Content Cards](content-card-landing-page.md)** - Discover how to configure, create, and design content cards for engaging and personalized messaging in mobile apps and websites.
 - **[WhatsApp Messaging](whatsapp-landing-page.md)** - Learn how to integrate and use WhatsApp messaging via Meta's Cloud API for personalized and compliant communication campaigns.
+- **[Monitoring & Troubleshooting](troubleshoot-journey-landing-page.md)** - Diagnose and resolve channel issues quickly, including troubleshooting WhatsApp channel setup and configuration.
 - **[LINE Messaging](line-landing-page.md)** - Discover how to configure, create, and personalize LINE messages for effective communication in campaigns and journeys.

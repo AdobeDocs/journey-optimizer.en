@@ -67,7 +67,7 @@ As of February 2025, a time-to-live (TTL) guardrail is rolled out to Journey Opt
 * **90 days** for data in the profile store
 * **13 months** for data in the data lake
 
-This change will be rolled out to **existing customer sandboxes** in a subsequent phase. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
+This change will be enforced on **existing customer sandboxes** starting **October 1, 2026**. [Learn more about datasets Time-To-Live (TTL) guardrails](../data/datasets-ttl.md)
 
 ## Journeys {#journeys-guardrails}
 
@@ -322,7 +322,7 @@ Specific guardrails apply to **Journey Fragments**, including a maximum of **20 
 
 #### Send using waves {#waves-g}
 
-Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../building-journeys/send-using-waves.md#limitations-guardrails).
+Specific guardrails apply to **wave sending in journeys**, including a 2–10 wave range and a **30-minute minimum interval** between waves. They are listed on [this page](../delivery/send-using-waves.md#limitations-guardrails).
 
 #### Journey simulation {#simulation-g}
 
