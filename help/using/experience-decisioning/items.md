@@ -54,7 +54,7 @@ To create a decision item, navigate to **[!UICONTROL Decisioning]** > **[!UICONT
 
 Start by defining the decision item's standard and custom attributes :
 
-![](assets/item-attributes.png)
+![Decision item creation form showing attribute fields including name, description, start and end dates, priority, and tags](assets/item-attributes.png)
 
 1. Provide a name and a description.
 1. Specify start and end dates. The item will only be considered by the decisioning engine within these dates.
@@ -121,7 +121,7 @@ Basically, the output of an audience is a list of profiles, whereas a decision r
 
 * To limit the presentation of the decision item to the members of one or several Adobe Experience Platform audiences, select the **[!UICONTROL Visitors who fall into one or multiple audiences]** option, then add one or several audiences from the left pane and combine them using the **[!UICONTROL And]** / **[!UICONTROL Or]** logical operators. [Learn more about audiences](../audience/about-audiences.md)
 
-    ![](assets/item-constraints.png)
+    ![Decision item eligibility section showing audience selection options](assets/item-constraints.png)
 
 * To associate a specific decision rule to the decision item, select **[!UICONTROL By rule]**, then drag the desired rule from the left pane into the central area. [Learn more about decision rules](rules.md)
 
@@ -140,7 +140,7 @@ When you select audiences or decision rules, you can see information on the esti
 
 Capping is used as a constraint to define the maximum number of times an offer item can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer. You can create up to 10 cappings for a given decision item.
 
-![](assets/item-capping.png){width="80%"}
+![Decision item showing the capping rules panel with a Create capping button](assets/item-capping.png){width="80%"}
 
 >[!NOTE]
 >
@@ -149,11 +149,11 @@ Capping is used as a constraint to define the maximum number of times an offer i
 
 When configuring capping rules, you can reference attributes stored in Adobe Experience Platform datasets to define thresholds. To use a dataset, select it in the **[!UICONTROL Dataset]** section. [Learn how to use Adobe Experience Platform data for Decisioning](../experience-decisioning/aep-data-exd.md)
 
-![](assets/exd-lookup-capping.png){width="80%"}
+![Dataset selection field in the capping configuration for referencing Adobe Experience Platform attributes as thresholds](assets/exd-lookup-capping.png){width="80%"}
 
 To set capping rules for the decision item, follow the steps detailed below.
 
-![](assets/item-capping-event.png){width="80%"}
+![Create capping rule form showing capping event, scope, type, threshold, and reset frequency settings](assets/item-capping-event.png){width="80%"}
 
 1. Define which **[!UICONTROL Capping event]** will be taken into account to increase the counter.
 
@@ -168,7 +168,7 @@ To set capping rules for the decision item, follow the steps detailed below.
 
     For push notifications, tracking events from the mobile channel include the Experience Cloud ID (ECID). It is recommended to use ECID in the Campaign or Journey configuration to maintain identity consistency and ensure capping works as expected.
 
-    ![](assets/push-capping.png)
+    ![Push capping configuration showing Custom event option with Push Tracking event type selection](assets/push-capping.png)
 
     +++
 
@@ -182,13 +182,13 @@ To set capping rules for the decision item, follow the steps detailed below.
 
 1. Use the **[!UICONTROL Capping scope]** section to define how the capping rule applies across placements. [Learn more about placements](placements.md#about)
 
-    ![](assets/item-capping-scope.png)
+    ![Capping scope section showing Offer level, Each placement, and Specific placement radio options](assets/item-capping-scope.png){width="50%"}
 
     * **[!UICONTROL Offer level]** (default): The cap applies per offer, regardless of the placement where it is displayed. The same offer shown in multiple placements counts once per decision event.
     * **[!UICONTROL Each placement]**: The cap applies to every placement this offer appears in. Each placement maintains its own capping counter, and new placements are tracked automatically the first time they are seen. For example, if an offer appears in a Hero Banner and a Sidebar, each placement tracks impressions independently — capping the offer in one placement does not affect the other.
     * **[!UICONTROL Specific placement]**: The cap applies only when the offer is displayed in selected placements. Click **[!UICONTROL Select placements]** to pick which placements to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
 
-        ![](assets/item-capping-scope-specific.png)
+        ![Specific placement capping scope selected, showing the Select placements button and selected placement tags](assets/item-capping-scope-specific.png){width="60%"}
 
     >[!NOTE]
     >
@@ -222,7 +222,7 @@ To set capping rules for the decision item, follow the steps detailed below.
     
     To use an expression, enable the **[!UICONTROL Expression]** option then edit the expression as desired.
 
-    ![](assets/exd-lookup-capping-expression.png)
+    ![Expression editor for defining a dynamic capping threshold using decision or dataset attributes](assets/exd-lookup-capping-expression.png)
 
     +++
 
@@ -238,7 +238,7 @@ To set capping rules for the decision item, follow the steps detailed below.
 
 1. You can create up to 10 rules for a single decision item. To do so, click the **[!UICONTROL Create capping]** button and repeat the steps above.
 
-    ![](assets/item-capping-rules.png)
+    ![Decision item showing multiple capping rules listed with a Create capping button to add more](assets/item-capping-rules.png)
 
 <!--
 * Identifying how many times a given customer has been shown a decision item. 
@@ -251,7 +251,7 @@ If a marketer wants to determine how many times a specific customer has been sho
 
 1. The decision item now appears in the list, with the **[!UICONTROL Draft]** status. When it is ready to be presented to profiles, click the ellipsis button and select **[!UICONTROL Approve]**. 
 
-    ![](assets/item-approve.png)
+    ![Decision items list with ellipsis menu open showing the Approve option](assets/item-approve.png)
 
 ## Manage decision items {#manage}
 
@@ -272,7 +272,7 @@ Selecting a decision item or clicking the ellipsis button enables the actions de
 
     Approved offer items cannot be deleted if they are used in a collection or a decision. To delete them, change their status to "Draft". To do so, click the ellipsis button and select **[!UICONTROL Undo approve]**.
 
-    ![](assets/item-undo.png)
+    ![Decision item ellipsis menu showing the Undo approve option](assets/item-undo.png)
 
 * **[!UICONTROL Archive]**: Sets the decision item status to **[!UICONTROL Archived]**. The decision item is still available from the list, but you cannot set its status back to **[!UICONTROL Draft]** or **[!UICONTROL Approved]**. You can only duplicate or delete it.
 
