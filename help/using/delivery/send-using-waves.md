@@ -30,6 +30,7 @@ You define the number of waves, their size (as a percentage of the audience or a
 
 The following limitations apply to wave sending in any context:
 
+* Wave sending applies to **outbound** channels only (Email, SMS, Push, Direct mail).
 * You must define at least **2 waves** and you can add up to **10 waves**.
 * The minimum interval between the start of two waves is **30 minutes**.
 * A wave start cannot be set in the past.
@@ -49,17 +50,13 @@ Additional context-specific constraints apply:
 
 >[!TAB Action campaigns]
 
-* Wave sending applies to **outbound** actions only (Email, SMS, Push, Direct mail).
 * A wave start cannot be before the campaign start.
 
->[!ENDTABS]
-
-<!--
 >[!TAB Orchestrated campaigns]
 
-* Wave sending applies to **outbound** channel activities only (Email, SMS, Push, Direct mail).
 * Wave sending is configured at the **channel activity level**, independently for each channel activity in the campaign.
--->
+
+>[!ENDTABS]
 
 ## Configure wave sending {#configure-wave-sending}
 
@@ -115,10 +112,6 @@ The steps to enable wave sending depend on your context — read-audience journe
 
 1. Choose how to define wave size and timing as detailed in the [Wave size and timing](#wave-options) section below.
 
->[!ENDTABS]
-
-
-<!--
 >[!TAB Orchestrated campaigns]
 
 1. Open a channel activity (Email, SMS, Push, or Direct mail) in your orchestrated campaign canvas.
@@ -136,7 +129,8 @@ The steps to enable wave sending depend on your context — read-audience journe
    >You must define at least 2 waves and can add up to 10 waves.
 
 1. Choose how to define wave size and timing as detailed in the [Wave size and timing](#wave-options) section below.
--->
+
+>[!ENDTABS]
 
 ## Wave size and timing {#wave-options}
 
@@ -188,15 +182,15 @@ Wave sending helps you control when and how many messages go out, which improves
 
 * **Call center or response management:** Limit how many messages go out per day or per hour so that downstream teams (for example, customer care) can handle responses at a manageable rate.
 
-   ![Wave sending example: 20 messages per day configured to match call center response capacity](assets/journey-waves-ex-call-center.png){width="50%"}
+   ![Wave sending example: 20 messages per day configured to match call center response capacity](assets/journey-waves-ex-call-center.png){width="30%"}
 
 * **High volume and deliverability:** Avoid sending a very large audience in one shot. Spreading delivery over time helps maintain sender reputation and reduces the risk of being flagged as spam.
 
-   ![Wave sending example: delivery spread across multiple days to support sender reputation for a high-volume send](assets/journey-waves-ex-high-volume.png){width="50%"}
+   ![Wave sending example: delivery spread across multiple days to support sender reputation for a high-volume send](assets/journey-waves-ex-high-volume.png){width="30%"}
 
 * **IP warm-up:** When using a new platform or IP address, progressively increase volume (for example, 10% in the first wave, then 15%, 20%, and so on) to build sending reputation gradually.
 
-   ![Wave sending example: progressive volume increase across waves for IP warm-up, starting at 10% and growing each wave](assets/journey-waves-ex-ramp-up.png){width="50%"}
+   ![Wave sending example: progressive volume increase across waves for IP warm-up, starting at 10% and growing each wave](assets/journey-waves-ex-ramp-up.png){width="30%"}
 
 ## Frequently asked questions {#faq}
 
@@ -236,7 +230,7 @@ No. Wave sending applies to **outbound** channel actions only: Email, SMS, Push 
 
 * [Use an audience in a journey](../building-journeys/read-audience.md) — configure the Read Audience activity
 * [Schedule an Action campaign](../campaigns/campaign-schedule.md) — set start date, end date, and frequency
-<!-- * [Channel activities in Orchestrated campaigns](../orchestrated/activities/channels.md) — configure channel activities in the orchestrated canvas -->
+* [Channel activities in Orchestrated campaigns](../orchestrated/activities/channels.md) — configure channel activities in the orchestrated canvas
 
 +++ AI Knowledge Reference
 
@@ -265,7 +259,7 @@ For complete understanding, this information should be combined with the documen
 
 * Read audience journeys ("As soon as possible" or "Once" scheduler only — not for recurring, event-triggered, business-event, test, or dry-run journeys)
 * Action campaigns (outbound channel actions only)
-<!-- * Orchestrated campaigns (outbound channel activities only, configured per channel activity) -->
+* Orchestrated campaigns (outbound channel activities only, configured per channel activity)
 
 **Common guardrails (all contexts):**
 

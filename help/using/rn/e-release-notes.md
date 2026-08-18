@@ -193,8 +193,6 @@ The following capabilities and improvements are coming to Decisioning in this re
 
 * **Placement-level frequency capping in Decisioning** - Frequency capping rules in Decisioning can now be scoped to individual placements, giving you finer control over how often an offer is shown in a given surface. Two modes are available: placement-specific capping, which defines a cap that applies only when the offer is displayed in a selected placement, and per-placement capping, which applies a cap independently across every placement where the offer appears, so each placement maintains its own capping counter. Note that placement-related capping does not apply to offers capped using rules based on Adobe Experience Platform data. <!-- Documentation link: TBD -->  
 
-* **Mirror pages in Visual Fragments** - You can now insert mirror pages into a Visual Fragment. Decisioning attributes render correctly on the mirror page link, even when the fragment is used in an email campaign that leverages Decisioning. The mirror page must be added to the Visual Fragment before the fragment is published in order for decisioning attributes to display. <!-- Documentation link: TBD -->
-
 ### Administration {#august-26-administration}
 
 The following improvement is coming to administration in this release.
