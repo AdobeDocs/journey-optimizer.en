@@ -157,6 +157,14 @@ topic_v2:
 
   Availability date: August 17, 2026
 
+### Decisioning {#decisioning-august}
+
+* **Mirror Page in Visual Fragment** - You can now insert mirror pages into a Visual Fragment. Decisioning attributes render correctly on the mirror page link, even when the fragment is used in an email campaign that leverages Decisioning. The mirror page must be added to the Visual Fragment before the fragment is published in order for decisioning attributes to display.
+
+  Availability date: August 11, 2026
+
+  [Learn more](../email/message-tracking.md#decisioning-mirror-page)
+
 ## July '26 release notes {#july-26-updates}
 
 ### Loyalty Challenges {#july-26-loyalty}
