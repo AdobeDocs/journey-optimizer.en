@@ -258,6 +258,10 @@ Sending confirmation can be disabled before publishing the orchestrated campaign
 
 ![image showing the Send without confirmation button](../assets/send-without-confirmation.png)
 
+>[!NOTE]
+>
+>Before confirming, you can split delivery into scheduled batches using wave sending. This option only applies to outbound channel activities (Email, SMS, Push, or Direct mail). [Learn how to send using waves](../../delivery/send-using-waves.md)
+
 ## Set rate control {#rate-control}
 
 [!DNL Journey Optimizer] allows you to enable rate control for outbound actions in Orchestrated campaigns.
