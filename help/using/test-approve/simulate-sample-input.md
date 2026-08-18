@@ -7,7 +7,6 @@ feature: Email, Email Rendering, Personalization, Preview, Proofs
 topic: Content Management
 role: User
 level: Intermediate
-hide: true
 exl-id: 2744974b-62cc-4d25-acc3-edd4c53a9a58
 TQID: https://experienceleague.adobe.com/Y8qsGW8XqSVqag4yqRinnem9w2PYJyKIDIWvuGqAchU
 product_v2:
@@ -42,6 +41,10 @@ topic_v2:
 **On this page:** Confirm your personalized content renders correctly for every type of recipient by testing variants generated with AI, entered manually, imported from a file, or based on simulated users, then previewing them and sending proofs.
 
 >[!ENDSHADEBOX]
+
+>[!AVAILABILITY]
+>
+>A redesigned simulation experience is now available, featuring all variants in a scrollable side-by-side grid, a consolidated bottom action bar, and more screen real estate for previews. [Explore the new experience](simulate-content-variations.md)
 
 >[!CONTEXTUALHELP]
 >id="ajo_simulate_sample_profiles"

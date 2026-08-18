@@ -45,6 +45,10 @@ This section provides step-by-step guidance on how to create a relational schema
 
 ## Upload a DDL file{#ddl-upload}
 
+>[!NOTE]
+>
+> The **[!UICONTROL View relationships diagram]** from the **[!UICONTROL Relationship]** tab is read-only. To create or edit a relationship, open the schema from the **[!UICONTROL Browse]** tab instead.
+
 By uploading a DDL file, you can define the structure of your data model in advance, including tables, attributes, keys, and relationships. 
 
 Excel-based schema file uploads are supported. Download the [provided template](assets/template.zip) to easily prepare your schema definitions.

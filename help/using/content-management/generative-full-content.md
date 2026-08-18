@@ -80,7 +80,7 @@ With Generate Content open, you can now configure the generation settings to cre
 
     If you are looking for assistance in crafting your prompt, access the **[!UICONTROL Prompt Library]** which provides a diverse range of prompt ideas to improve your campaigns. [Learn more on prompt best practices](ai-assistant-prompting-guide.md)
 
-    ![Prompt field with Prompt Library button](assets/full-email-2-bis.png){zoomable="yes"}
+    ![Prompt field with Prompt Library button](assets/full-email-2.png){zoomable="yes"}
 
 1. **For Emails**, you can toggle the **[!UICONTROL Subject line]** and **[!UICONTROL Preheader]** options to include them in the variant generation.
 
@@ -94,6 +94,10 @@ With Generate Content open, you can now configure the generation settings to cre
 
 1. Choose your **[!UICONTROL Image settings]**:
 
+    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md#image-mode)
+        * **[!UICONTROL Assets]**: Uses matching images from the Digital Asset Management as reference content, otherwise add reference content manually.
+        * **[!UICONTROL Balanced]**: Reference content first, then AI if needed.
+        * **[!UICONTROL Creative]**: Generative AI without relying directly on the Digital Asset Management.
     * **[!UICONTROL Generative model]**: Select from available built-in models, custom Firefly models trained on your brand assets, or third-party image generation providers to create images that align with your specific needs and brand requirements. [Learn more](generative-models.md). For **Gemini** with **text overlays** on images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
@@ -137,7 +141,7 @@ After generating content variations, you can fine-tune the results to ensure the
 
     * **[!UICONTROL Change Communication strategy]**: Modify the messaging approach based on your objectives, such as creating urgency, or emphasizing exciting appeal.
 
-        ![Refine menu displaying options](assets/full-email-5-bis.png){zoomable="yes"}
+        ![Refine menu displaying options](assets/full-email-5.png){zoomable="yes"}
 
 1. Open the **[!UICONTROL Brand Alignment]** tab to see how your content aligns with your [brand guidelines](brands.md).
 
@@ -197,6 +201,10 @@ Once you have accessed Generate Content for push notifications, you can configur
 
 1. Choose your **[!UICONTROL Image settings]**:
 
+    * **[!UICONTROL Mode]**: How images are sourced from your Digital Asset Management library and reference content. [Learn more](generative-uc.md)
+        * **[!UICONTROL Assets]**: Uses matching images from the Digital Asset Management as reference content, otherwise add reference content manually.
+        * **[!UICONTROL Balanced]**: Reference content first, then Firefly if needed.
+        * **[!UICONTROL Creative]**: Generative AI without relying directly on the Digital Asset Management.
     * **[!UICONTROL Generative model]**: Select from available built-in models, custom Firefly models trained on your brand assets, or third-party image generation providers to create images that align with your specific needs and brand requirements. [Learn more](generative-models.md). For **Gemini** with **text overlays** on images, see [Use Gemini as generative model for text-overlay image](generative-uc.md#generative-gemini).
     * **[!UICONTROL Content type]**: This categorizes the nature of the visual element, distinguishing between different forms of visual representation such as photos, graphics, or art.
     * **[!UICONTROL Visual intensity]**: You can control the image's impact by adjusting its intensity. A lower setting (2) will create a softer, more restrained appearance, while a higher setting (10) will make the image more vibrant and visually powerful.
