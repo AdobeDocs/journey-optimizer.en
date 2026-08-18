@@ -27,7 +27,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## August 2026 {#august-2026}
 
-* A new **Mobile web browser limitations** section has been added to the **Test email rendering** page, documenting why emails may render differently in Gmail or Outlook when accessed via a mobile browser, along with a workaround tip. [Read more](../content-management/rendering.md#rendering-limitations)
+* A new **Mobile web browser limitations** section has been added to the **Get started with email design** page, documenting why emails may render differently in Gmail or Outlook when accessed via a mobile browser, along with a workaround tip. [Read more](../email/get-started-email-design.md#mobile-web-limitations)
 
 * A new **Outlook rendering considerations** section has been added to the **Get started with email design** page, listing common Outlook quirks to account for during design: even numbers for padding and widths, pixel-based table widths, HTML image width attributes, ALT text, borders on table cells, and rounded corners. [Read more](../email/get-started-email-design.md#outlook-tips)
 
