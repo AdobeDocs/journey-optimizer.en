@@ -70,6 +70,10 @@ Start by setting up campaign orchestration by mapping a relational schema to the
 
      ![](assets/target-dimension-2.png)
 
-1. Click **[!UICONTROL Save]** to complete the setup. Note that once created, a **[!UICONTROL Target dimension]** cannot be removed or edited. 
+1. Click **[!UICONTROL Save]** to complete the setup. Note that once created, a **[!UICONTROL Target dimension]** cannot be edited. 
+
+1. Access ![advanced menu](assets/do-not-localize/rule-builder-icon-more.svg) to delete your **[!UICONTROL Target dimension]**.
+
+     ![](assets/target-dimension-5.png)
 
 After configuring the **[!UICONTROL Target Dimension]**, proceed to create and set up your **[!UICONTROL Channel Configuration]** and define the corresponding **[!UICONTROL Execution Details]**.
