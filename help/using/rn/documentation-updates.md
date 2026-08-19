@@ -27,7 +27,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## August 2026 {#august-2026}
 
-* A note has been added to the **Test HTML size optimization** section of the **Create an email** page to clarify that the sizes shown in the **[!UICONTROL View proofs]** pop-up reflect the HTML template size with Handlebars expressions evaluated at their minimum value — not the final delivered email size. Dynamic expressions such as `{{#each}}` loops are resolved at delivery time against the recipient's profile, which may significantly increase the actual size. [Read more](../email/create-email.md#optimize-html-proof)
+* A note has been added to the **Test HTML size optimization** section to clarify that proof sizes reflect the HTML template size (Handlebars at minimum value), not the final delivered email size, which may be larger once dynamic expressions are resolved at delivery time. [Read more](../email/create-email.md#optimize-html-proof)
 
 * A new **Mobile web browser limitations** section has been added to the **Get started with email design** page, documenting why emails may render differently in Gmail or Outlook when accessed via a mobile browser, along with a workaround tip. [Read more](../email/get-started-email-design.md#mobile-web-limitations)
 
