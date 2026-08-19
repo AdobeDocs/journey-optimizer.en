@@ -47,6 +47,8 @@ To define your RCS message content, follow the steps below.
 
     A plain text body with optional interactive buttons. Best for notifications, alerts, reminders, and conversational flows where visuals are not needed.
 
+    ![](assets/rcs_text.png)
+
     +++
 
     +++ Media
@@ -54,8 +56,11 @@ To define your RCS message content, follow the steps below.
     A standalone image or video with optional text and interactive buttons. Use it when a single visual (a product image, banner, or video clip) is the focal point of your message.
 
     1. From the Header menu, enter a **[!UICONTROL Media URL]** pointing to the image or video to display.
+        
+        ![](assets/rcs_media.png)
 
     1. If the media is a video file, optionally enter a **[!UICONTROL Thumbnail URL]**.
+
 
     +++
 
@@ -65,7 +70,10 @@ To define your RCS message content, follow the steps below.
 
     1. Enter a **[!UICONTROL Title]** and **[!UICONTROL Description]**.
 
+
     1. Enter a **[!UICONTROL Media URL]** pointing to the image or video to display.
+
+        ![](assets/rcs_card.png)
 
     1. If the media is a video file, optionally enter a **[!UICONTROL Thumbnail URL]**.
 
@@ -76,11 +84,18 @@ To define your RCS message content, follow the steps below.
     A horizontally scrollable series of rich cards in a single message, each with its own image, title, description, and buttons. Ideal for product catalogues or promotions. A minimum of 2 cards is required.
 
     1. Select a **[!UICONTROL Card width]** to control the display width of each card.
+
+        ![](assets/rcs_caroussel.png)
+   
     1. For each card, enter a **[!UICONTROL Title]** and **[!UICONTROL Description]**.
 
     1. Enter a **[!UICONTROL Media URL]** pointing to the image or video for that card.
 
+        ![](assets/rcs_caroussel_2.png)
+
     1. Optionally, select a **[!UICONTROL Media height]** and add suggested action buttons.
+
+    1. Click **[!UICONTROL Add card]**  to add a card to your carousel.
 
     +++
 
