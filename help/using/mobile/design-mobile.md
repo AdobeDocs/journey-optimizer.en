@@ -105,13 +105,17 @@ To define your RCS message content, follow the steps below.
 
     1. Enter the decimal **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** of the location.
 
-    1. Optionally, enter a **[!UICONTROL Location name]** to display as a label on the map pin.
+        ![](assets/rcs_location.png)
+
+    1. Optionally, enter a **[!UICONTROL Location name]** to display as a label on the map pin. 
 
     +++
 
-1. In the **[!UICONTROL Message text]** field, enter your message content. You can use personalization to tailor the text to each profile. Note that character limits vary by message type: 3,072 characters for Rich Media (Single) and 160 for Basic RCS.
+1. In the **[!UICONTROL Message text]** or **[!UICONTROL Description]** fields, enter your message content. You can use personalization to tailor the text to each profile. Note that character limits vary by message type: 3,072 characters for Rich Media (Single) and 160 for Basic RCS. 
 
 1. Use the **[!UICONTROL Personalization editor]** to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules.
+
+    ![](assets/rcs_perso.png)
 
 1. Optionally, add **[!UICONTROL Suggested actions]**, interactive buttons that let profiles act with a single tap. 
 
@@ -127,9 +131,13 @@ To define your RCS message content, follow the steps below.
 
     * **[!UICONTROL View location]**: opens the device's default maps application at a specified location. Provide the decimal **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** of the location to display.
 
+        ![](assets/rcs_actions.png)
+
 1. In the **[!UICONTROL Default fallback text]** field, enter the plain-text SMS version of your message. This is required and is delivered to profiles whose device or carrier does not support RCS.
 
 1. From the **[!UICONTROL Webview]** drop-down, choose the size of your **[!UICONTROL Webview]** when sending an **[!UICONTROL Open URL]** action.
+
+    ![](assets/rcs_webview.png)
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](send-mobile-message.md).
 
