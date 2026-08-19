@@ -123,10 +123,11 @@ Work with dates, times, and timezones to create time-based conditions, schedule 
 
 **Collection manipulation and analysis**
 
-Filter, sort, transform, and analyze arrays and lists to work with complex data structures and perform set operations.
+Filter, sort, transform, and analyze arrays and lists to work with complex data structures and perform set operations such as intersection, union, and difference.
 
 | Function | Description |
 |----------|-------------|
+| [differenceLists](../functions/list-functions.md#differenceLists) | Get items in one list not present in another |
 | [distinct](../functions/list-functions.md#distinct) | Get unique values (excludes nulls) |
 | [distinctWithNull](../functions/list-functions.md#distinctWithNull) | Get unique values (includes nulls) |
 | [filter](../functions/list-functions.md#filter) | Filter list based on criteria |
@@ -135,6 +136,7 @@ Filter, sort, transform, and analyze arrays and lists to work with complex data 
 | [intersect](../functions/list-functions.md#intersect) | Find common elements between lists |
 | [limit](../functions/list-functions.md#limit) | Limit number of items returned |
 | [listSize](../functions/list-functions.md#listSize) | Get size of list |
+| [mergeLists](../functions/list-functions.md#mergeLists) | Combine two lists, with or without deduplication |
 | [serializeList](../functions/list-functions.md#serializeList) | Convert list to string |
 | [sort](../functions/list-functions.md#sort) | Sort list elements |
 

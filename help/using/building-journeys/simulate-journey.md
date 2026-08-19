@@ -36,7 +36,7 @@ For an overview by journey type, see [Get started with Journey simulation](simul
 
 After activation, batch journeys with read audience entry offer two ways to run a simulation:
 
-* **[!UICONTROL Quick simulation]** runs end-to-end with generated users, generated event values, and default test settings, powered by the Journey Agent. It is a quick way to simulate a journey end to end with minimal intervention. Quick simulation starts as soon as you select this option.
+* **[!UICONTROL Quick simulation]** runs end-to-end with generated users, generated event values, and default test settings, powered by the Journey Agent. It is a quick way to simulate a journey end to end with minimal intervention. Quick simulation starts as soon as you select this option. [Watch the Quick simulation video](simulate-journey-gs.md#video)
 
 * **[!UICONTROL Manual simulation]** lets you run a simulation step by step, manually. Create simulated users (manually or with the Journey Agent), trigger them into the journey, define event payloads (manually or with the Journey Agent), and override waits.
 
@@ -147,6 +147,9 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 
     ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json.png)
 
+    +++
+
+<!--
     To reuse attribute values from a profile or [test profile](../audience/creating-test-profiles.md) in [!DNL Adobe Experience Platform]:
 
     1. Browse to the profile you want to use as a reference. On the profile detail page, click **[!UICONTROL View JSON]**. [Learn more](../audience/get-started-profiles.md)
@@ -169,11 +172,8 @@ If your journey uses an external audience, for example a CSV or Federated Audien
 
         ![Create Simulated Users JSON editor with users template and Format JSON control](assets/simulate-json-3.png)
 
-        >[!WARNING]
-        >
-        >If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
-
-    +++
+        If you paste profile JSON, remove or replace all production identifiers and contact points (email, phone, ECID, push token, and similar). Simulation will send messages using the data you provide.
+-->
 
 1. The simulated users you created appear in the **[!UICONTROL Test users]** list. For each entry, select one of the following:
 

@@ -183,6 +183,14 @@ The retention period for a mirror page is **90 days**. After that delay, the mir
 >
 >* In the [proof](../content-management/proofs.md) sent to the test profiles, the link to the mirror page is not active. It is only active in the final messages.
 
+### Decisioning in mirror pages {#decisioning-mirror-page}
+
+You can use [!DNL Decisioning] to personalize and optimize your email content, leveraging Priority Scores, Formulas, or AI Models to display the most relevant offers and content to each recipient. These [!DNL Decisioning] attributes are also rendered in mirror pages, including when the mirror page is inserted into a [visual fragment](../content-management/fragments.md), provided the mirror page is added before the fragment is published.
+
+>[!CAUTION]
+>
+>If you add a mirror page to an already published visual fragment, you must republish the campaigns or journeys that use it for the [!DNL Decisioning] attributes to display when the link is clicked.
+
 ## Customize link appearance and target {#adjust-links}
 
 You can make adjustments to your links such as underlining them, change their color, or select their target.  These changes are set in the **[!UICONTROL Settings]** and **[!UICONTROL Styles]** panes on the right section of the content editor.

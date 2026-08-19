@@ -121,7 +121,7 @@ To set rate control, enable the **[!UICONTROL Throttle delivery]** option in the
 
 To deliver your campaign message in batches over time instead of all at once, you can use wave sending. This helps balance load, support deliverability, and avoid overwhelming downstream systems (for example, call centers or landing pages). You define the number of waves, their size (by percentage or absolute number), and the schedule for each wave.
 
-[Learn how to send using waves](send-using-waves.md).
+[Learn how to send using waves](../delivery/send-using-waves.md).
 
 ## Next steps {#next}
 

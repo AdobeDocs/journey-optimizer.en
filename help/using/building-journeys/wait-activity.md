@@ -51,13 +51,13 @@ topic_v2:
 
 You can use a **[!UICONTROL Wait]** activity to define a duration before executing the next activity.  The maximum wait duration is **90 days**. 
 
-You can set two types of **Wait** activity:
+You can set three types of **Wait** activity:
 
 * A wait based on a relative duration. [Learn more](#duration) 
 * A custom date, using functions to calculate it. [Learn more](#custom) 
+* A Send-time optimization wait. [Learn more](#sto-wait)
 
 <!--
-* [Email send time optimization](#email_send_time_optimization)
 * [Fixed date](#fixed_date) 
 -->
 
@@ -127,6 +127,33 @@ Best practice is to use custom dates that are specific to your profiles, and avo
 
 To validate that the wait activity works as expected, you can use step events. [Learn more](../reports/query-examples.md#common-queries).
 
+### Send-time optimization wait {#sto-wait}
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_wait_optimization_channel"
+>title="Optimization channel"
+>abstract="Choose which channel's Send-Time Optimization model to use when calculating each profile's optimal wait time: Email or Push notification. The wait activity reuses the engagement scores already computed for that channel, so the channel you select should match the messaging behavior you want the wait to be optimized around."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_wait_optimization_type"
+>title="Optimization type"
+>abstract="For Email, choose whether the optimal wait time should be calculated to maximize opens or click-throughs. Push always optimizes for opens, since click tracking does not apply to push messages. Pick the engagement type that best matches the goal of the activity that follows this wait."
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_wait_send_within"
+>title="Send within next"
+>abstract="Set the maximum number of hours (2–100) the system can wait before continuing to the next activity. This defines the outer boundary of the window Send-Time Optimization considers when picking the best moment: a shorter window limits how much benefit the AI model can provide, while a longer window may delay downstream activities more than desired."
+
+![Define the wait duration](assets/wait_sto.png)
+
+Select the **[!UICONTROL Send-Time Optimization]** type to let Adobe's AI determine the optimal time to continue to the next activity in the path, based on each profile's predicted engagement behavior. This uses the same [Send-Time Optimization](send-time-optimization.md) model as the Email and Push actions, but decouples the wait from the send itself. The activity that follows the wait can be any activity, such as a Custom action, rather than being tied only to an Email or Push action.
+
+[Learn more about how Send-Time Optimization works and how to enable it for your organization](send-time-optimization.md#how-send-time).
+
+>[!IMPORTANT]
+>
+>Send-Time Optimization has no visibility into [quiet hours](../conflict-prioritization/quiet-hours.md) rules. Quiet hours are only evaluated when a profile reaches a **message** action, so a Send-Time Optimization Wait activity can select an optimal time that falls inside a quiet-hours window for a downstream channel action. The conflict only surfaces later, when the message is sent.
+
 ## Profile refresh after wait {#profile-refresh}
 
 When a profile is parked at a **Wait** activity in a journey starting with a **Read Audience** activity, the journey automatically refreshes the profile's attributes from the Unified Profile Service (UPS) to fetch the latest available data.
@@ -162,12 +189,14 @@ For complete understanding, this information should be combined with the documen
 * Understand how Wait activities interact with the journey global timeout (91 days)
 * Use the Wait time in test parameter to speed up test mode validation
 * Understand how profile attributes are refreshed after a Wait node in Read Audience journeys
+* Use Send-Time Optimization within a Wait activity to determine the optimal time before continuing to any downstream activity
 
 **Glossary:**
 
 * **Wait activity**: A journey orchestration activity that pauses profile progression for a specified duration or until a calculated date before the next activity executes *(product-specific)*
 * **Duration wait**: A Wait type that sets a relative time period to pause, with a maximum of 90 days *(product-specific)*
 * **Custom wait**: A Wait type that uses a `dateTimeOnly` expression derived from profile or event data to define a specific future date/time for resumption *(product-specific)*
+* **Send-time optimization wait**: A Wait type that uses Adobe's Send-Time Optimization AI model to select the optimal time to continue to the next activity, decoupled from any message send *(product-specific)*
 * **Automatic wait node**: A 3-day Wait activity automatically inserted after inbound experience activities (In-app, Code-based, Card) to keep the profile in the journey long enough to view the content *(product-specific)*
 * **Wait time in test**: A journey test mode parameter that overrides actual wait durations (default 10 seconds) so test results are returned quickly *(product-specific)*
 
@@ -180,6 +209,7 @@ For complete understanding, this information should be combined with the documen
 * Custom wait expressions must use `dateTimeOnly` format and must not include a `Z` suffix or explicit time zone offset.
 * Using a fixed static date (e.g., `toDateTimeOnly('2024-01-01T01:11:00Z')`) in a custom wait can cause issues; use profile-specific dynamic dates instead.
 * Profile attributes are refreshed from the Unified Profile Service after a wait node in Read Audience journeys, which may produce unexpected results if snapshot consistency is expected.
+* Send-Time Optimization within a Wait activity has no visibility into quiet hours rules; if a downstream channel action is protected by a quiet hours rule set to discard messages, the profile can be removed from the message delivery and exited from the journey.
 
 **Terminology:**
 
@@ -194,5 +224,6 @@ For complete understanding, this information should be combined with the documen
 * **Q: Why should I avoid appending Z to a custom wait expression?** — Adding Z or a time zone offset to a `toDateTimeOnly()` expression can cause profiles to get stuck in the wait activity; the expression must rely on the journey's configured time zone.
 * **Q: Are profile attributes updated after a Wait node?** — Yes, in journeys starting with Read Audience, the journey refreshes profile attributes from the Unified Profile Service after the wait, so downstream activities may see updated values rather than the original audience snapshot data.
 * **Q: What is the automatic wait node?** — A 3-day Wait activity automatically inserted after inbound experience activities (In-app, Code-based, Card) to ensure profiles remain in the journey long enough to see the message; it can be removed or reconfigured as needed.
+* **Q: Does the Send-Time Optimization Wait activity know about quiet hours?** — No. Quiet hours are only evaluated at the message action, so the Wait activity can pick a time inside a quiet-hours window. Depending on the quiet hours rule, the message is then queued until quiet hours end, or discarded, which also exits the profile from the journey.
 
 +++

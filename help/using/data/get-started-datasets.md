@@ -94,7 +94,7 @@ This sections lists system datasets used by [!DNL Journey Optimizer]. To view th
     * _Reporting - Journey Step Event_: Captures All Journey Step Experience Events generated from Journey Optimizer to be consumed by services like Reporting. Also critical for building reports in Customer Journey Analytics for YoY analysis. Tied to a Journey Metadata.
     * _Reporting - Journeys_: Metadata dataset housing information of each step in a journey.
     * _Reporting - BCC_: Feedback Event Dataset which stores the delivery logs for BCC emails. To be used for reporting purposes.
-    * _AJO Channels Tracking Event Dataset_: Captures all inbound WhatsApp responses, including those submitted through WhatsApp Flow templates.
+    * _AJO Channel Tracking Event Dataset_: Captures all inbound WhatsApp responses, including those submitted through WhatsApp Flow templates.
 
 * Consent
 

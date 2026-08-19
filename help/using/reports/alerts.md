@@ -445,7 +445,7 @@ You can subscribe to alerts in several ways:
 
 * **[Global (sandbox) subscription](#subscribe-alerts)**: Receive notifications for all matching journeys or campaigns in the **current sandbox**. Use this when you want broad coverage.
 * **[Journey-specific subscription](#subscribe-alerts)**: For supported journey alerts, limit notifications to **one journey** at a time from the journey inventory.
-* **Campaign-specific subscription**: Campaign lifecycle alerts can currently be subscribed to at the sandbox level only.
+* **[Campaign-specific subscription](#subscribe-alerts)**: For supported campaign lifecycle alerts, limit notifications to **one campaign** at a time from the campaign inventory.
 
 >[!BEGINTABS]
 
@@ -507,9 +507,8 @@ Open the same dialog, deselect the alert(s), and click **[!UICONTROL Save]**.
 >
 >The [Read Audience Trigger Unsuccessful](#available-alerts) alert is only available through global subscription, not per-journey subscription.
 
->[!ENDTABS]
+>[!TAB Campaign-specific subscription]
 
-<!--
 Campaign-specific subscriptions apply to the [campaign lifecycle alerts](#available-alerts). They let you monitor individual high-priority campaigns without receiving the same alert for every campaign in the sandbox.
 
 **To subscribe to campaign lifecycle alerts for a specific campaign:**
@@ -520,6 +519,8 @@ Campaign-specific subscriptions apply to the [campaign lifecycle alerts](#availa
 
 1. Select **[!UICONTROL Subscribe to alerts]**.
 
+      ![Subscribing to an alert for a specific campaign](assets/subscribe-campaign-alert.png){width=75%}
+
 1. Select the campaign lifecycle alert(s) you want from the available options (see [Campaign alerts](#available-alerts)).
 
 1. Click **[!UICONTROL Save]** to confirm your subscriptions.
@@ -528,8 +529,11 @@ Campaign-specific subscriptions apply to the [campaign lifecycle alerts](#availa
 
 Open the same dialog, deselect the alert(s), and click **[!UICONTROL Save]**.
 
-You can combine **sandbox-level** subscription (from the Alerts **[!UICONTROL Browse]** tab) with **campaign-specific** subscriptions. Use sandbox-level coverage for everything in the sandbox, and add per-campaign subscriptions only for campaigns you want to track separately.
--->
+>[!ENDTABS]
+
+>[!TIP]
+>
+>You can combine **sandbox-level** subscription (from the Alerts **[!UICONTROL Browse]** tab) with **campaign-specific** subscriptions. Use sandbox-level coverage for everything in the sandbox, and add per-campaign subscriptions only for campaigns you want to track separately.
 
 <!--To enable email alerting, refer to [Adobe Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/ui.html#enable-email-alerts){target="_blank"}.-->
 

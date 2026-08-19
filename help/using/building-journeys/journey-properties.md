@@ -455,7 +455,7 @@ The **[!UICONTROL Schedule]** section is only available when a **[!UICONTROL Rea
 
 >[!TIP]
 >
->When scheduling the journey, you can also configure wave sending to deliver journey actions in batches over time. [Learn how to send using waves in journeys](send-using-waves.md)
+>When scheduling the journey, you can also configure wave sending to deliver journey actions in batches over time. [Learn how to send using waves in journeys](../delivery/send-using-waves.md)
 
 
 ## Conflict management {#conflict}

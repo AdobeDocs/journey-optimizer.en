@@ -65,3 +65,7 @@ Detailed instructions for designing, launching, and managing sophisticated multi
 :::
 
 ::::
+
+## Additional Resources
+
+- **[Monitoring & Troubleshooting](troubleshoot-journey-landing-page.md)** - Track performance, monitor alerts, and resolve issues quickly, including troubleshooting campaign activation.
