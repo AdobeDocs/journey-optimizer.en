@@ -60,7 +60,7 @@ To create a push notification, follow the steps below:
 
 >[!TAB Add a Push to a Journey]
 
-1. Open your journey then drag and drop an **[!UICONTROL Action]** activity from the **[!UICONTROL Actions]** section of the palette. Learn more about the [Action activity](../building-journeys/journey-action.md).
+1. Open your journey then add an **[!UICONTROL Action]** activity. Learn more about the [Action activity](../building-journeys/journey-action.md).
 
     >[!IMPORTANT]
     >
@@ -122,7 +122,7 @@ For more information on how to create, configure and publish a journey, refer to
 
 1. Click **[!UICONTROL Create experiment]** to start configuring your content experiment and create treatments to measure their performance and identify the best option for your target audience. [Learn more](../content-management/content-experiment.md)
 
-1. Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
+1. From the **[!UICONTROL Schedule]** tab, Campaigns are designed to be executed on a specific date or on a recurring frequency. Learn how to configure the **[!UICONTROL Schedule]** of your campaign in [this section](../campaigns/create-campaign.md#schedule). 
 
 1. From the **[!UICONTROL Action triggers]** menu, choose the **[!UICONTROL Frequency]** of your push notification:
 
@@ -131,7 +131,7 @@ For more information on how to create, configure and publish a journey, refer to
     * Weekly
     * Monthly
 
-1. From the campaign configuration screen, click the **[!UICONTROL Edit content]** button to configure the push content. [Design a push notification](design-push.md)
+1. Access the **[!UICONTROL Content]** tab to start designing your push content. [Design a push notification](design-push.md)
 
 1. Once your message content has been defined, you can use test profiles or sample input data uploaded from a CSV / JSON file, or added manually to preview its content. [Learn how](send-push.md)
 

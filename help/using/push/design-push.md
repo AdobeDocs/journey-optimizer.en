@@ -40,6 +40,19 @@ topic_v2:
 
 Once you have created a push notification, you can design its content for iOS, Android, and Web platforms. This page guides you through composing your message, configuring on-click behavior, adding media and buttons, and setting advanced options to create engaging push notifications that resonate with your audience.
 
+## Push Notification Layout {#push-layout}
+
+>[!AVAILABILITY]
+>
+>The **[!UICONTROL Push Notification Layout]** option is only available for Android.
+
+![](assets/layout.png)
+
+Choose the layout of your push notification:
+
+* **[!UICONTROL Standard]**: Displays a compact notification with an optional icon alongside the title and body text. This is the default layout.
+* **[!UICONTROL Expanded]**: Displays a larger notification that reveals additional body text when the recipient expands it.
+
 ## Title and Body {#push-title-body}
 
 >[!CONTEXTUALHELP]
@@ -51,7 +64,9 @@ Once you have created a push notification, you can design its content for iOS, A
 
 To compose your message, click the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields. Use the personalization editor to define content, personalize data and add dynamic content. Learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 
-You can also insert profile attributes inline directly in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields by typing `{{`. An autocomplete dropdown opens at the cursor — select any attribute to insert it as a personalization token without opening the full editor. [Learn more about inline editing →](../personalization/personalize.md#inline-personalization)
+If you selected **[!UICONTROL Expanded layout]** for your Android push notification, enter a **[!UICONTROL Collapsed body]** text.
+
+You can also insert profile attributes inline directly in the **[!UICONTROL Title]** and **[!UICONTROL Body]** fields by typing `{{`. An autocomplete dropdown opens at the cursor, select any attribute to insert it as a personalization token without opening the full editor. [Learn more about inline editing](../personalization/personalize.md#inline-personalization)
 
 Use the device preview section to visualize how the push notification displays on iOS, Android, and Web.
 
@@ -72,9 +87,6 @@ Configure the action that occurs when recipients tap the body of your push notif
 * **[!UICONTROL Deeplink]**: Directs users to specific content within your app, such as a particular view, page section, or tab. Enter the deep link URL in the provided field.
 * **[!UICONTROL Web URL]**: Directs users to an external webpage. Enter the destination URL in the provided field.
 
-When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field — hover over it to see the complete URL.
-
-![](assets/push-link-tooltip.png)
 
 >[!NOTE]
 >
@@ -90,6 +102,10 @@ When a URL in any link or media field is too long to display, a tooltip icon is 
 
 Enhance your push notification by adding visual media. The available media types and implementation methods vary by operating system, as detailed in the tabs below.
 
+When a URL in any link or media field is too long to display, a tooltip icon is always visible next to the field, hover over it to see the complete URL.
+
+![](assets/push-link-tooltip.png)
+
 >[!BEGINTABS]
 
 >[!TAB Android]
@@ -104,7 +120,7 @@ You can add media using either of the following methods:
     
 * **[!UICONTROL Add media]** field: Enter the media URL directly. You can include personalization tokens in the URL.
 
-Once added, the media displays on the right of the notification body.
+Enable the **[!UICONTROL Show entire image]** option to scale the image to fit the available space so the entire image remains visible.
 
 >[!NOTE]
 >
