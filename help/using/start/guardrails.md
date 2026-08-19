@@ -149,7 +149,7 @@ The following guardrails apply to the [Journey versions](../start/user-interface
 
 * A journey starting with an event activity in v1 cannot start with something else than an event in further versions. You cannot start a journey with a **Audience Qualification** event.
 * A journey starting with a **Audience Qualification** activity in v1 must always start with a **Audience Qualification** in further versions.
-* The audience and namespace chosen in **Audience Qualification** (first node) cannot be changed in new versions.
+* The audience and namespace chosen in **Audience Qualification** (first activity) cannot be changed in new versions.
 * The reentrance rule must be the same in all journey versions.
 * A journey starting with a **Read Audience** cannot start with another event in next versions.
 * You cannot create a new version of a read audience journey with incremental read. You must duplicate the journey.
@@ -174,8 +174,8 @@ The following guardrails apply to the [Events](../event/about-events.md) in your
 * Event-triggered journeys may take up to **5 minutes** to process the first action in the journey.
 * For system-generated events, streaming data used to initiate a customer journey must be configured within Journey Optimizer first to get a unique orchestration ID. This orchestration ID must be appended to the streaming payload coming into Adobe Experience Platform. This limitation does not apply to rule-based events.
 * Business events cannot be used in conjunction with unitary events or audience qualification activities.
-* A single event can be referenced by a maximum of **25** journeys at any one time, across all live and closed journeys. When this limit is reached, publishing any additional journey that uses that event is blocked.
-* A single XDM schema can be referenced by a maximum of **100** events across all live and closed journeys at one time. When this limit is reached, publishing any journey with an event node that references that schema is blocked.
+* A single event can be referenced by a maximum of **25** journeys at any one time, across all live, closed, paused, test mode, and dry run journeys. When this limit is reached, publishing any additional journey that uses that event is blocked.
+* A single XDM schema can be referenced by a maximum of **100** events across all live, closed, paused, test mode, and dry run journeys at one time. When this limit is reached, publishing any journey with an event node that references that schema is blocked.
 * Unitary journeys (starting with an event or an audience qualification) include a guardrail that prevents journeys from being erroneously triggered multiple times for the same event. Profile reentrance is temporally blocked by default for **5 minutes**. For instance, if an event triggers a journey at 12:01 for a specific profile and another one arrives at 12:03 (whether it is the same event or a different one triggering the same journey) that journey will not start again for this profile.
 * Journey Optimizer requires events to be streamed to Data Collection Core Service (DCCS) to be able to trigger a journey. Events ingested in batch, events inserted via **Query Service**, or events from internal Journey Optimizer datasets (Message Feedback, Email Tracking, etc.) cannot be used to trigger a journey. For use cases where you cannot get streamed events, you must build an audience based on those events and use the **Read Audience** activity instead. Audience qualification can technically be used, but is not recommended as it can cause downstream challenges based on the actions used.
 
@@ -236,7 +236,7 @@ The following guardrails apply to the [Audience Qualification](../building-journ
 
 * The Audience qualification activity cannot be used with Adobe Campaign activities.
 * Supplemental identifiers are not supported for Audience qualification journeys.
-* A sandbox can include a maximum of **300** Audience Qualification nodes across all live and closed journeys. When this limit is reached, publishing journeys with additional Audience Qualification nodes is blocked.
+* A sandbox can include a maximum of **300** Audience Qualification activities across all live, closed, paused, test mode, and dry run journeys. This limit also applies to Audience Qualification activities used as exit criteria. When this limit is reached, publishing journeys with additional Audience Qualification activities is blocked.
 
 Learn more about journey processing rates and throughput limits in [this section](../building-journeys/entry-management.md#journey-processing-rate).
 
