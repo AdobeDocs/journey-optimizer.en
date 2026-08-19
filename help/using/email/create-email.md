@@ -315,6 +315,10 @@ If you have enabled the [HTML size optimization](#optimize-html-size) option, yo
     
     Use this information to validate the optimized output and confirm the email stays within the recommended 100 KB threshold before publishing.
 
+>[!NOTE]
+>
+>The sizes displayed in the **[!UICONTROL View proofs]** pop-up reflect the size of your HTML template, where Handlebars expressions are evaluated at their minimum possible value — not the size of the final delivered email. At delivery time, dynamic expressions such as `{{#each}}` loops are resolved against the recipient's profile data, which may significantly increase the actual email size.
+
 <!--
 ## Define your email content {#email-content}
 
