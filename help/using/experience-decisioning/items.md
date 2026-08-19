@@ -180,6 +180,11 @@ To set capping rules for the decision item, follow the steps detailed below.
 
     +++
 
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_capping_scope"
+>title="Capping scope"
+>abstract="Define how the capping rule applies across placements. Select **Offer level** to apply a single cap regardless of placement, **Each placement** to track capping independently per placement, or **Specific placement** to restrict capping to selected placements only."
+
 1. Use the **[!UICONTROL Capping scope]** section to define how the capping rule applies across placements. [Learn more about placements](placements.md#about)
 
     ![Capping scope section showing Offer level, Each placement, and Specific placement radio options](assets/item-capping-scope.png){width="50%"}
