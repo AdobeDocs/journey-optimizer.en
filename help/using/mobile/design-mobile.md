@@ -47,6 +47,8 @@ To define your RCS message content, follow the steps below.
 
     A plain text body with optional interactive buttons. Best for notifications, alerts, reminders, and conversational flows where visuals are not needed.
 
+    ![](assets/rcs_text.png)
+
     +++
 
     +++ Media
@@ -54,8 +56,11 @@ To define your RCS message content, follow the steps below.
     A standalone image or video with optional text and interactive buttons. Use it when a single visual (a product image, banner, or video clip) is the focal point of your message.
 
     1. From the Header menu, enter a **[!UICONTROL Media URL]** pointing to the image or video to display.
+        
+        ![](assets/rcs_media.png)
 
     1. If the media is a video file, optionally enter a **[!UICONTROL Thumbnail URL]**.
+
 
     +++
 
@@ -65,7 +70,10 @@ To define your RCS message content, follow the steps below.
 
     1. Enter a **[!UICONTROL Title]** and **[!UICONTROL Description]**.
 
+
     1. Enter a **[!UICONTROL Media URL]** pointing to the image or video to display.
+
+        ![](assets/rcs_card.png)
 
     1. If the media is a video file, optionally enter a **[!UICONTROL Thumbnail URL]**.
 
@@ -76,11 +84,18 @@ To define your RCS message content, follow the steps below.
     A horizontally scrollable series of rich cards in a single message, each with its own image, title, description, and buttons. Ideal for product catalogues or promotions. A minimum of 2 cards is required.
 
     1. Select a **[!UICONTROL Card width]** to control the display width of each card.
+
+        ![](assets/rcs_caroussel.png)
+   
     1. For each card, enter a **[!UICONTROL Title]** and **[!UICONTROL Description]**.
 
     1. Enter a **[!UICONTROL Media URL]** pointing to the image or video for that card.
 
+        ![](assets/rcs_caroussel_2.png)
+
     1. Optionally, select a **[!UICONTROL Media height]** and add suggested action buttons.
+
+    1. Click **[!UICONTROL Add card]**  to add a card to your carousel.
 
     +++
 
@@ -90,13 +105,17 @@ To define your RCS message content, follow the steps below.
 
     1. Enter the decimal **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** of the location.
 
-    1. Optionally, enter a **[!UICONTROL Location name]** to display as a label on the map pin.
+        ![](assets/rcs_location.png)
+
+    1. Optionally, enter a **[!UICONTROL Location name]** to display as a label on the map pin. 
 
     +++
 
-1. In the **[!UICONTROL Message text]** field, enter your message content. You can use personalization to tailor the text to each profile. Note that character limits vary by message type: 3,072 characters for Rich Media (Single) and 160 for Basic RCS.
+1. In the **[!UICONTROL Message text]** or **[!UICONTROL Description]** fields, enter your message content. You can use personalization to tailor the text to each profile. Note that character limits vary by message type: 3,072 characters for Rich Media (Single) and 160 for Basic RCS. 
 
 1. Use the **[!UICONTROL Personalization editor]** to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules.
+
+    ![](assets/rcs_perso.png)
 
 1. Optionally, add **[!UICONTROL Suggested actions]**, interactive buttons that let profiles act with a single tap. 
 
@@ -112,9 +131,13 @@ To define your RCS message content, follow the steps below.
 
     * **[!UICONTROL View location]**: opens the device's default maps application at a specified location. Provide the decimal **[!UICONTROL Latitude]** and **[!UICONTROL Longitude]** of the location to display.
 
+        ![](assets/rcs_actions.png)
+
 1. In the **[!UICONTROL Default fallback text]** field, enter the plain-text SMS version of your message. This is required and is delivered to profiles whose device or carrier does not support RCS.
 
 1. From the **[!UICONTROL Webview]** drop-down, choose the size of your **[!UICONTROL Webview]** when sending an **[!UICONTROL Open URL]** action.
+
+    ![](assets/rcs_webview.png)
 
 1. Click **[!UICONTROL Save]** and check your message in the preview. You can now test and check your message content as detailed in [this section](send-mobile-message.md).
 

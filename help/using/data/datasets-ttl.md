@@ -71,11 +71,11 @@ The table below lists all Journey Optimizer system-generated datasets with their
 |AJO ExD Decision Event Dataset *(formerly: ODE DecisionEvents - prod decisioning)*|Requires Decisioning add-on|13 months|n/a|
 |AJO Live Activities Feedback Event Dataset|Included|13 months|n/a|
 |AJO STO Summary Dataset|Included|13 months|n/a|
-|AJO Consent Service Dataset|Included|13 months|90 days|
-|AJO Interactive Messaging Profile Dataset|Included|13 months|90 days|
-|AJO Push Profile Dataset|Included|13 months|90 days|
-|AJO Profile Counters Extension|Included|13 months|90 days|
-|Journey Inbound|Included|13 months|90 days|
+|AJO Consent Service Dataset|Included|n/a|n/a|
+|AJO Interactive Messaging Profile Dataset|Included|n/a|n/a|
+|AJO Push Profile Dataset|Included|n/a|n/a|
+|AJO Profile Counters Extension|Included|n/a|n/a|
+|Journey Inbound|Included|n/a|n/a|
 |AJO Classification Dataset|Included|n/a|n/a|
 |AJO Channel Tracking Event Dataset|Included|13 months|90 days|
 |Adobe Loyalty Challenge State Change Event Dataset|Requires Journey Optimizer Loyalty license|13 months|n/a|
