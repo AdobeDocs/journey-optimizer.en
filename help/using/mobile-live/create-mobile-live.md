@@ -180,6 +180,74 @@ After designing your Live activity, you can track measuring the impact of your L
 >
 >If your Live activity is not appearing or updating as expected, see [Troubleshoot Live activities](troubleshoot-mobile-live.md) for step-by-step debugging guidance.
 
+## Add custom data with execution metadata {#metadata}
+
+>[!AVAILABILITY]
+>
+> `executionMetadata` is available for both **API-triggered Transactional** and **API-triggered Marketing** campaigns.
+
+Attach your own **custom data** to a profile, such as an order ID, loyalty tier, or region code, using the optional `executionMetadata` field. Journey Optimizer stores this data alongside the execution so you can retrieve it later from your **Live activity feedback dataset** and match delivery results to your own business records.
+To add custom data with execution metadata:
+
+* Add `executionMetadata` to a profile, next to `userId` and `namespace`. Only string keys and string values are accepted, convert any non-string value to a string before sending it.
+
+* Values are recorded exactly as sent. `executionMetadata` does not support personalization expressions, so any `{{...}}` expression is treated as literal text rather than resolved. You should always send final, literal values.
+
+* Each profile can carry up to **50 key/value pairs**, with a combined size limit of **2 KB** for all keys and values. Metadata exceeding this limit is discarded but the Live activity is still delivered. Limit the payload to the information required for reporting purposes.
+
++++ JSON example
+
+In this example, `orderId`, `tier`, `restaurant`, and `region` are your own values. After the Live activity is triggered, you can read them back from the feedback dataset to link the delivery to your order record.
+
+```json
+{
+    "requestId": "your-request-id",
+    "campaignId": "your-campaign-id",
+    "recipients": [
+        {
+            "type": "aep",
+            "userId": "testemail@gmail.com",
+            "namespace": "email",
+            "executionMetadata": {
+                "orderId": "A-123",
+                "tier": "gold",
+                "restaurant": "PizzaPlace",
+                "region": "EU"
+            },
+            "context": {
+                "requestPayload": {
+                    "aps": {
+                        "content-available": 1,
+                        "timestamp": 1756984054,
+                        "dismissal-date": 1756984084,
+                        "event": "update",
+                        "content-state": {
+                            "orderStatus": "Delivered"
+                        },
+                        "attributes-type": "FoodDeliveryLiveActivityAttributes",
+                        "attributes": {
+                            "restaurantName": "PizzaPlace",
+                            "liveActivityData": {
+                                "liveActivityID": "orderId1"
+                            }
+                        },
+                        "alert": {
+                            "title": "Order Delivered!",
+                            "body": "Your pizza has arrived."
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
++++
+
+After designing your Live activity, you can track measuring the impact of your Live activity with [built-in reports](../reports/campaign-global-report-cja-activity.md).
+
+
 ## How-to video
 
 Discover how to configure iOS Live activities with Adobe Journey Optimizer to deliver rich, real-time updates on the iPhone Lock Screen and Dynamic Island.
