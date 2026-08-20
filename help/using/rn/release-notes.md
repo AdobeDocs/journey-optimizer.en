@@ -99,7 +99,22 @@ The following capabilities and improvements have been introduced to Content mana
 </tbody>
 </table>
 
+
++++ Coming soon — **Information below is subject to change.**
+
+* **Content variant size warning** - Journey Optimizer now surfaces a soft-limit warning when a content variant exceeds its recommended size threshold — 1200 KB for templates and messages, 700 KB for fragments, and 1000 KB for landing pages. Saving and publishing are not blocked.
+
+* **Fragment count limits in content** - Journey Optimizer now validates the number of unique fragments used within a piece of content: up to 60 per variant and up to 120 across all variants of a single message. Warnings appear at 75% of each limit; publishing is blocked once the hard limit is reached.
+
++++
+
 ### Journeys {#aug-26-journeys}
+
+
+* **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
+
+
+Availability date: August 20, 2026
 
 * **New list functions in the advanced expression editor** - Two new functions are available in the advanced expression editor: `mergeLists` combines two lists, with or without deduplication, and `differenceLists` returns the items of one list that are not present in another. [Learn more](../building-journeys/functions/list-functions.md)
 
@@ -108,6 +123,29 @@ The following capabilities and improvements have been introduced to Content mana
 * **Send-Time Optimization in the Wait activity** - Send-Time Optimization is now available in the Wait activity, letting Adobe's AI determine the optimal time to continue to any downstream activity. [Learn more](../building-journeys/wait-activity.md#sto-wait)
 
     Availability date: August 13, 2026
+
++++ Coming soon — **Information below is subject to change.**
+
+<table>
+<thead>
+<tr>
+<th><strong>Journey-level holdout (Limited availability)</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now configure a holdout group for your journeys directly from journey properties. A holdout is a configurable percentage of your target audience that is excluded from entering the journey and receives no communication. By comparing holdout profiles against active profiles in Customer Journey Analytics reporting, you can measure the incremental lift - the true impact - that your journey delivers.</p>
+<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Add new dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.
+
+
++++
 
 ### Campaigns {#aug-26-campaigns}
 
@@ -134,6 +172,32 @@ The following capabilities and improvements have been introduced to Campaigns in
 
 * **Per-campaign lifecycle alert subscriptions** - You can now subscribe to supported campaign lifecycle alerts for a single campaign, in addition to the existing sandbox-level subscription. This lets you monitor individual high-priority campaigns without receiving the same alert for every campaign in the sandbox. [Learn more](../reports/alerts.md#subscribe-alerts)
     Availability date: August 13, 2026
+
++++ Coming soon — **Information below is subject to change.**
+
+<table>
+<thead>
+<tr>
+<th><strong>Inbound experience simulation in Action Campaigns</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
+<p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
+
+* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
+
+* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
+
++++
 
 ### Orchestrated Campaigns {#august-26-oc}
 
@@ -208,9 +272,21 @@ The following capabilities and improvements have been introduced to Orchestrated
 
 ### Channels {#august-26-channels}
 
+
+* **Live activity execution metadata (executionMetadata)** - API-triggered Live activity campaigns (Transactional and Marketing) now support an optional executionMetadata field on each recipient. This lets you attach custom key/value data, such as an order ID, loyalty tier, or region code, to an execution. [Learn more](../mobile-live/create-mobile-live.md#metadata)
+
+  Availability date: August 19, 2026
+
+
 * **Performance Add-on for throughput - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. [Learn more](../campaigns/api-triggered-high-throughput.md)
 
   Availability date: August 11, 2026
+
+### Configuration {#august-26-configuration}
+
+* **Multi-SAN support in CSR generation for custom subdomain setup** - When setting up or migrating a custom subdomain using the Custom delegation method, the Certificate Signing Request (CSR) is now automatically generated with both `data.{subdomain}` and `cdn.{subdomain}` as Subject Alternative Names (SANs). Previously, the generated CSR only included `data.{subdomain}`, requiring manual addition of `cdn.{subdomain}` before submission to the Certificate Authority. [Learn more](../configuration/custom-subdomain-migration.md#send-csr-to-ca)
+
+  Availability date: August 20, 2026
 
 ### Usability improvements {#august-26-usability}
 
@@ -233,3 +309,24 @@ The following capabilities and improvements have been introduced to Orchestrated
   Availability date: August 11, 2026
 
   [Learn more](../email/message-tracking.md#decisioning-mirror-page)
+
++++ Coming soon — **Information below is subject to change.**
+
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning support in Web Channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+* **Placement-level frequency capping in Decisioning** - Frequency capping rules in Decisioning can now be scoped to individual placements, giving you finer control over how often an offer is shown in a given surface. Two modes are available: **placement-specific capping**, which defines a cap that applies only when the offer is displayed in a selected placement, and **per-placement capping**, which applies a cap independently across every placement where the offer appears, so each placement maintains its own capping counter. Note that placement-related capping does not apply to offers capped using rules based on Adobe Experience Platform data.
+
++++

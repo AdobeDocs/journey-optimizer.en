@@ -27,6 +27,10 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## August 2026 {#august-2026}
 
+* The **Guardrails and limitations** page has been updated to clarify the Audience Qualification activity and Events guardrails: wording now consistently refers to Audience Qualification **activities** (rather than nodes), including when used as exit criteria, and both guardrails now explicitly cover **live, closed, paused, test mode, and dry run** journeys. [Read more](../start/guardrails.md#audience-qualif-g)
+
+* A note has been added to the **Test HTML size optimization** section to clarify that proof sizes reflect the HTML template size (Handlebars at minimum value), not the final delivered email size, which may be larger once dynamic expressions are resolved at delivery time. [Read more](../email/create-email.md#optimize-html-proof)
+
 * A new **Mobile web browser limitations** section has been added to the **Get started with email design** page, documenting why emails may render differently in Gmail or Outlook when accessed via a mobile browser, along with a workaround tip. [Read more](../email/get-started-email-design.md#mobile-web-limitations)
 
 * A new **Outlook rendering considerations** section has been added to the **Get started with email design** page, listing common Outlook quirks to account for during design: even numbers for padding and widths, pixel-based table widths, HTML image width attributes, ALT text, borders on table cells, and rounded corners. [Read more](../email/get-started-email-design.md#outlook-tips)
