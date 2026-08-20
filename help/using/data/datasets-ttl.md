@@ -56,19 +56,31 @@ This change will be enforced on **existing customer sandboxes** starting **Octob
 
 ## Impacted datasets {#datasets}
 
-The table below lists all impacted datasets and their respective Time-To-Live in the data lake and the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}.
+The table below lists all Journey Optimizer system-generated datasets with their respective Time-To-Live in the data lake and the [Profile Store](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html#profile-data-store){target="_blank"}. Time-series datasets are subject to TTL; record-type datasets are listed for reference and marked `n/a` in both columns. The Availability column indicates whether a dataset is included by default or requires a specific add-on or license.
 
-|Dataset|Data Lake TTL|Profile Store TTL|
-|------|-----|-----|
-|AJO Message Feedback Event Dataset|13 months|90 days|
-|AJO Email Tracking Experience Event Dataset|13 months|90 days|
-|AJO Push Tracking Experience Event Dataset|13 months|90 days|
-|AJO Surfaces Dataset|13 months|n/a|
-|AJO Inbound Activity Event Dataset|13 months|90 days|
-|AJO Secondary Recipient Feedback Event Dataset|13 months|n/a|
-|Entity Event Dataset|13 months|n/a|
-|Journey Step Events|13 months|n/a|
-|ODE DecisionEvents - prod decisioning|13 months|n/a|
+|Dataset|Availability|Data Lake TTL|Profile Store TTL|
+|------|-----|-----|-----|
+|AJO Message Feedback Event Dataset|Included|13 months|90 days|
+|AJO Email Tracking Experience Event Dataset|Included|13 months|90 days|
+|AJO Push Tracking Experience Event Dataset|Included|13 months|90 days|
+|AJO Surfaces Dataset|Included|13 months|n/a|
+|AJO Inbound Activity Event Dataset|Included|13 months|n/a|
+|AJO Secondary Recipient Feedback Event Dataset|Included|13 months|n/a|
+|AJO Entity Dataset *(formerly: Entity Event Dataset)*|Included|n/a|n/a|
+|Journey Step Events|Included|13 months|n/a|
+|AJO ExD Decision Event Dataset *(formerly: ODE DecisionEvents - prod decisioning)*|Requires Decisioning add-on|13 months|n/a|
+|AJO Live Activities Feedback Event Dataset|Included|13 months|n/a|
+|AJO STO Summary Dataset|Included|13 months|n/a|
+|AJO Consent Service Dataset|Included|n/a|n/a|
+|AJO Interactive Messaging Profile Dataset|Included|n/a|n/a|
+|AJO Push Profile Dataset|Included|n/a|n/a|
+|AJO Profile Counters Extension|Included|n/a|n/a|
+|Journey Inbound|Included|n/a|n/a|
+|AJO Classification Dataset|Included|n/a|n/a|
+|AJO Channel Tracking Event Dataset|Included|13 months|90 days|
+|Adobe Loyalty Challenge State Change Event Dataset|Requires Journey Optimizer Loyalty license|13 months|n/a|
+|AJO Message Export Dataset|Requires Message Export add-on|30 days|n/a|
+|AJO Message Event Metadata Dataset|Requires Message Export add-on|30 days|n/a|
 
 ## Frequently asked questions {#faq}
 
@@ -78,13 +90,13 @@ Need more details? Use the feedback options at the bottom of this page to raise 
 
 +++Which types of datasets are subject to TTL?
 
-TTL applies only to time-series datasets. Record-type datasets (such as entity datasets, classification datasets, and decision object repositories) are not subject to TTL and therefore do not appear in the Impacted datasets table above.
+TTL applies only to time-series datasets. Record-type datasets (such as entity datasets and classification datasets) are not subject to TTL. They are listed in the table above for reference, with `n/a` indicated in both the Data Lake TTL and Profile Store TTL columns.
 
 +++
 
 +++Will this change apply to production sandboxes only or will it apply to dev sandboxes as well?
 
-This change will apply to all sandbox types.
+This change applies to all sandbox types.
 
 +++
 

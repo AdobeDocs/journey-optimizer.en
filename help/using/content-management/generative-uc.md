@@ -280,11 +280,11 @@ The **[!UICONTROL Mode]** option under **[!UICONTROL Image settings]** controls 
 
 1. Choose your **[!UICONTROL Mode]** in the **[!UICONTROL Image settings]** menu:
 
-    * **[!UICONTROL Balanced]** (default): AI uses matching image from your Digital Asset Management library first. When that is not enough to cover the visuals you need, it generates images with AI.
+    * **[!UICONTROL Balanced]**: AI uses matching image from your Digital Asset Management library first. When that is not enough to cover the visuals you need, it generates images with AI.
       To use this, enable Use images from DAM, then choose a folder from your Digital Asset Management library to set your DAM path.
     * **[!UICONTROL DAM]** (Digital Asset Management): AI looks for a matching image in your Digital Asset Management library and uses it as part of the generated content. If no match is found, add reference content or images manually before you generate. 
       Choose a folder from your Digital Asset Management library to set your DAM path.
-    * **[!UICONTROL Creative]**: AI creates images with generative AI and does not pull images directly from your Digital Asset Management library.
+    * **[!UICONTROL Creative]** (default): AI creates images with generative AI and does not pull images directly from your Digital Asset Management library.
 
     ![](assets/image-mode-3.png)
 

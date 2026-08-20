@@ -150,6 +150,16 @@ These guardrails apply to **[!UICONTROL Simulation]**. Numeric caps are enforced
 
 +++
 
+## How-to video {#video}
+
+The video below shows how to use Quick Simulation to test customer journeys by automating key processes. It generates test profiles, orchestrates events, speeds up wait times, and validates scenarios.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3497475/?learn=on)
+
+
+
+</br>
+
 +++ AI Knowledge Reference
 
 This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
