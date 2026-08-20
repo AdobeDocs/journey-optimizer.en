@@ -276,6 +276,12 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 11, 2026
 
+### Configuration {#august-26-configuration}
+
+* **Multi-SAN support in CSR generation for custom subdomain setup** - When setting up or migrating a custom subdomain using the Custom delegation method, the Certificate Signing Request (CSR) is now automatically generated with both `data.{subdomain}` and `cdn.{subdomain}` as Subject Alternative Names (SANs). Previously, the generated CSR only included `data.{subdomain}`, requiring manual addition of `cdn.{subdomain}` before submission to the Certificate Authority. [Learn more](../configuration/custom-subdomain-migration.md#send-csr-to-ca)
+
+  Availability date: August 20, 2026
+
 ### Usability improvements {#august-26-usability}
 
 * **Bulk operations in journey inventory** - You can now perform new bulk actions directly from the journey inventory list, making it faster to manage multiple journeys at once. Select several journeys and apply any of the following new actions in a single step: **add to package**, **delete**, **move to folder**, **edit tags**, or **manage access**. This reduces the need to repeat the same action one journey at a time, streamlining journey management for teams working with large numbers of journeys. [Learn more](../building-journeys/journey-ui.md)
