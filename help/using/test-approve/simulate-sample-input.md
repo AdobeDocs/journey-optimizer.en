@@ -219,3 +219,7 @@ Journey Optimizer allows you to send proofs to email addresses while impersonati
 1. To track the proof sending, click the **[!UICONTROL View proofs]** button in the simulate content screen.
 
 ![Sent proofs list](assets/simulate-custom-sent-proofs.png)
+
+>[!NOTE]
+>
+>The mirror page link is not active in proofs sent for variants. It only activates in the final message. [Learn more](../email/message-tracking.md#mirror-page).

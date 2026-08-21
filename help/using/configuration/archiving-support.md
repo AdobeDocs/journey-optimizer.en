@@ -62,6 +62,15 @@ Regulations such as HIPAA require that [!DNL Journey Optimizer] should provide a
 >
 >[!DNL Journey Optimizer] does not own support for SMS archival requirement. For dedicated archival support, work with your SMS vendor (Sinch, Infobip, or Twilio).
 
+Use the table below to identify the right option for your requirement.
+
+| Requirement | Recommended option | Important distinction |
+| --- | --- | --- |
+| Keep a hidden copy of outbound email messages | BCC email | Sends a copy to a configured mailbox; does not expose a mirror page URL or create a queryable Experience Platform field. |
+| Export sent email or SMS content to an external system | [Message export](../configuration/message-export.md) | Writes sent content and metadata to the AJO Message Export Dataset for downstream export; does not generate a mirror page URL. |
+| Display the online version of an email to the recipient | [Mirror page link](../email/message-tracking.md#mirror-page) | Generated as part of the sent email; not a supported post-send URL retrieval API. |
+| Store the non-personalized message template or delivery metadata | Entity Dataset | Does not provide the exact personalized content received by an individual. |
+
 ## How to use BCC for emails {#bcc-email}
 
 >[!CONTEXTUALHELP]
@@ -315,3 +324,29 @@ WHERE
   bcc._experience.customerJourneyManagement.messageProfile.messageProfileID = '<x-message-profile-id>'
 ORDER BY mfe.timestamp DESC;
 ```
+
+## Frequently asked questions {#faq}
+
++++ Can I retrieve a mirror page URL after an email is sent?
+
+Not currently, through a documented public API or an Adobe Experience Platform dataset field. The [mirror page URL](../email/message-tracking.md#mirror-page) is generated as part of the message delivery process. If you need to retain or inspect sent content, use [Message export](message-export.md) or [BCC archiving](#bcc-email).
+
++++
+
++++ Is the mirror page URL available in the Entity Dataset or other tracking datasets?
+
+No. The [Entity Dataset](../data/datasets-query-examples.md#entity-dataset) provides message template and metadata information, but it should not be used as a source for the exact personalized content received by a recipient.
+
++++
+
++++ Can Message Export be used to reconstruct a mirror page URL?
+
+No. [Message Export](message-export.md) provides sent message content and metadata for downstream export, archival, compliance, or customer-care use. It does not generate or return a [mirror page URL](../email/message-tracking.md#mirror-page).
+
++++
+
++++ Which option should I use if I need to see the exact message sent to a customer?
+
+Use [Message Export](message-export.md) when you need structured sent-message content and metadata in an external system. Use [BCC](#bcc-email) when you only need a hidden copy of an outbound email retained in a mailbox. Neither option retrieves the original mirror page URL.
+
++++

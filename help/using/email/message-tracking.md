@@ -175,6 +175,8 @@ The mirror page is automatically created. Once the email is sent, when the recip
 
 The retention period for a mirror page is **90 days**. After that delay, the mirror page is no longer available.
 
+The mirror page URL is not currently available as a documented field in an Adobe Experience Platform dataset, and [!DNL Journey Optimizer] does not provide a public API to retrieve it using a delivery ID, message ID, message execution ID, or recipient identity. If you need to review or retain the content sent to a recipient, use [Message export](../configuration/message-export.md) or [BCC archiving](../configuration/archiving-support.md#bcc-email) instead.
+
 >[!CAUTION]
 >
 >* Mirror pages links are auto-generated and cannot be edited. They contain all the encrypted personalized data that is required to render the original email. As a result, using personalized attributes with large values may generate lengthy mirror pages URLs, which can prevent the link from working in web browsers that have a maximum URLs length.
