@@ -99,6 +99,7 @@ The following capabilities and improvements have been introduced to Content mana
 </tbody>
 </table>
 
+
 +++ Coming soon — **Information below is subject to change.**
 
 * **Content variant size warning** - Journey Optimizer now surfaces a soft-limit warning when a content variant exceeds its recommended size threshold — 1200 KB for templates and messages, 700 KB for fragments, and 1000 KB for landing pages. Saving and publishing are not blocked.
@@ -108,6 +109,12 @@ The following capabilities and improvements have been introduced to Content mana
 +++
 
 ### Journeys {#aug-26-journeys}
+
+
+* **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
+
+
+Availability date: August 20, 2026
 
 * **New list functions in the advanced expression editor** - Two new functions are available in the advanced expression editor: `mergeLists` combines two lists, with or without deduplication, and `differenceLists` returns the items of one list that are not present in another. [Learn more](../building-journeys/functions/list-functions.md)
 
@@ -137,7 +144,6 @@ The following capabilities and improvements have been introduced to Content mana
 
 * **Add new dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.
 
-* **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed.
 
 +++
 

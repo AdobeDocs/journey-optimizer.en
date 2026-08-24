@@ -92,6 +92,8 @@ To use a custom channel in a campaign:
 
 1. Review and activate the campaign. [Learn more](../campaigns/create-campaign.md)
 
+>[!ENDTABS]
+
 <!--
 >[!TAB Add a custom channel to an orchestrated campaign]
 
@@ -107,8 +109,6 @@ To add a custom channel in an orchestrated campaign:
 
 1. Click **[!UICONTROL Edit content]** to open the payload editor and author your message. [Learn how to author content](#author-content)
 -->
-
->[!ENDTABS]
 
 ## Author your custom channel content {#author-content}
 

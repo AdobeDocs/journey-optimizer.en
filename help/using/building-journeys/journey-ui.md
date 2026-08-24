@@ -157,6 +157,8 @@ The journey status depends on its lifecycle. It can be:
 * **Stopped**: the journey has been switched off using the **Stop** button. All individuals instantly exit the journey. [Learn more](../building-journeys/end-journey.md#stop-journey)
 * **Closed**: the journey has been closed using the **Close to new entrances** button. The journey stops letting new individuals enter the journey. Persons already in the journey can finish the journey normally. [Learn more](../building-journeys/end-journey.md)
 
+Any configured [start and end dates](journey-properties.md#dates) are surfaced in the journey header, next to the status badge. This gives you an at-a-glance view of the journey schedule without opening the properties panel.
+
 >[!NOTE]
 >
 >* The Journey authoring lifecycle also includes a set of intermediate statuses that are not available for filtering: **Publishing** (between "Draft" and "Live"), **Activating test mode** or **Deactivating test mode** (between **Draft** and **Draft (test)**), **Stopping** (between **Live** and **Stopped**), **Resuming** (between **Paused** and **Live**), **Pausing** (between **Live** and **Paused**) When a journey is in an intermediate state, it is read-only.
