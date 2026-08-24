@@ -201,7 +201,7 @@ The left navigation organizes Journey Optimizer capabilities into functional cat
 **Connections** - Integrate with other systems
 
 * **Sources** - Ingest data from external systems. [Configure sources](get-started-sources.md)
-* **Destinations** - Export data to cloud storage. [Set up destinations](../data/export-datasets.md) If your organization has Real-Time CDP or Adobe Journey Optimizer, you can also activate audiences to eligible personalization destinations, such as Adobe Target, from the [Experience Platform destinations catalog](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html){target="_blank"}.
+* **Destinations** - Export data to cloud storage. [Set up destinations](../data/export-datasets.md). If your organization has Real-Time CDP or Adobe Journey Optimizer, you can also activate audiences to eligible personalization destinations, such as Adobe Target, from the [Experience Platform destinations catalog](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/overview.html){target="_blank"}.
 
 **Customer** - Manage audiences and profiles
 
