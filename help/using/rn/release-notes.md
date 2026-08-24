@@ -144,7 +144,6 @@ Availability date: August 20, 2026
 
 * **Add new dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.
 
-
 +++
 
 ### Campaigns {#aug-26-campaigns}
@@ -272,11 +271,9 @@ The following capabilities and improvements have been introduced to Orchestrated
 
 ### Channels {#august-26-channels}
 
-
 * **Live activity execution metadata (executionMetadata)** - API-triggered Live activity campaigns (Transactional and Marketing) now support an optional executionMetadata field on each recipient. This lets you attach custom key/value data, such as an order ID, loyalty tier, or region code, to an execution. [Learn more](../mobile-live/create-mobile-live.md#metadata)
 
   Availability date: August 19, 2026
-
 
 * **Performance Add-on for throughput - Push** - A new high throughput transactional messaging mode is available in API-triggered campaigns. This mode is designed for large-scale, real-time transactional messaging and supports up to 5,000 transactions per second with higher availability. Previously only available for the email channel, this capability is now also available for the push channel, for organizations that have purchased the Adobe High Throughput Transactional Messaging add-on offering. Contact your Adobe representative for more details. [Learn more](../campaigns/api-triggered-high-throughput.md)
 
@@ -288,27 +285,15 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 20, 2026
 
-### Usability improvements {#august-26-usability}
-
-* **Bulk operations in journey inventory** - You can now perform new bulk actions directly from the journey inventory list, making it faster to manage multiple journeys at once. Select several journeys and apply any of the following new actions in a single step: **add to package**, **delete**, **move to folder**, **edit tags**, or **manage access**. This reduces the need to repeat the same action one journey at a time, streamlining journey management for teams working with large numbers of journeys. [Learn more](../building-journeys/journey-ui.md)
-
-  Availability date: August 12, 2026
-
-* **New Content Simulation experience for content testing** - The **Simulate content** workflow introduces a redesigned experience: all variants now render together in a single scrollable grid (side-by-side, stacked, or wrapped layouts), replacing the one-variant-at-a-time view. A single bottom action bar consolidates navigating between test variants, zoom, viewport switching (desktop/mobile), locale switching, adding sample inputs, generating variants with AI, picking and saving simulated users, and importing or exporting variants. Removing the left rail and collapsing extra header layers gives previews significantly more room. A **Switch to classic experience** option in the bottom action bar lets you revert to the previous experience at any time. [Learn more](../test-approve/simulate-content-variations.md)
-
-  Availability date: August 11, 2026
-
-* **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
-
-  Availability date: August 17, 2026
-
 ### Decisioning {#decisioning-august}
 
-* **Mirror pages in visual fragments** - You can now insert mirror pages into a visual fragment. Decisioning attributes render correctly on the mirror page link, even when the fragment is used in an email campaign that leverages Decisioning. The mirror page must be added to the visual fragment before the fragment is published in order for decisioning attributes to display.
+* **Placement-level frequency capping in Decisioning** - Frequency capping rules in Decisioning can now be scoped to individual placements, giving you finer control over how often an offer is shown in a given surface. Two modes are available: **placement-specific capping**, which defines a cap that applies only when the offer is displayed in a selected placement, and **per-placement capping**, which applies a cap independently across every placement where the offer appears, so each placement maintains its own capping counter. Note that placement-related capping does not apply to offers capped using rules based on Adobe Experience Platform data. [Learn more](../experience-decisioning/items.md#capping)
+
+  Availability date: August 24, 2026
+
+* **Mirror pages in visual fragments** - You can now insert mirror pages into a visual fragment. Decisioning attributes render correctly on the mirror page link, even when the fragment is used in an email campaign that leverages Decisioning. The mirror page must be added to the visual fragment before the fragment is published in order for decisioning attributes to display. [Learn more](../email/message-tracking.md#decisioning-mirror-page)
 
   Availability date: August 11, 2026
-
-  [Learn more](../email/message-tracking.md#decisioning-mirror-page)
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -327,6 +312,19 @@ The following capabilities and improvements have been introduced to Orchestrated
 </tbody>
 </table>
 
-* **Placement-level frequency capping in Decisioning** - Frequency capping rules in Decisioning can now be scoped to individual placements, giving you finer control over how often an offer is shown in a given surface. Two modes are available: **placement-specific capping**, which defines a cap that applies only when the offer is displayed in a selected placement, and **per-placement capping**, which applies a cap independently across every placement where the offer appears, so each placement maintains its own capping counter. Note that placement-related capping does not apply to offers capped using rules based on Adobe Experience Platform data.
-
 +++
+
+### Usability improvements {#august-26-usability}
+
+* **Bulk operations in journey inventory** - You can now perform new bulk actions directly from the journey inventory list, making it faster to manage multiple journeys at once. Select several journeys and apply any of the following new actions in a single step: **add to package**, **delete**, **move to folder**, **edit tags**, or **manage access**. This reduces the need to repeat the same action one journey at a time, streamlining journey management for teams working with large numbers of journeys. [Learn more](../building-journeys/journey-ui.md)
+
+  Availability date: August 12, 2026
+
+* **New Content Simulation experience for content testing** - The **Simulate content** workflow introduces a redesigned experience: all variants now render together in a single scrollable grid (side-by-side, stacked, or wrapped layouts), replacing the one-variant-at-a-time view. A single bottom action bar consolidates navigating between test variants, zoom, viewport switching (desktop/mobile), locale switching, adding sample inputs, generating variants with AI, picking and saving simulated users, and importing or exporting variants. Removing the left rail and collapsing extra header layers gives previews significantly more room. A **Switch to classic experience** option in the bottom action bar lets you revert to the previous experience at any time. [Learn more](../test-approve/simulate-content-variations.md)
+
+  Availability date: August 11, 2026
+
+* **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+
+  Availability date: August 17, 2026
+

@@ -141,7 +141,7 @@ When you select audiences or decision rules, you can see information on the esti
 >[!CONTEXTUALHELP]
 >id="ajo_exd_item_capping_scope"
 >title="Capping scope"
->abstract="Define how the capping rule applies across placements. By default, a single cap is applied regardless of placement. Select **Each placement** to track capping independently per placement, or **Specific placement** to restrict capping to selected placements only."
+>abstract="Define how the capping rule applies across placements. By default, a single cap is applied regardless of placement. Select **Each placement** to track capping independently per placement, or **Specific placement** to restrict capping to selected placements only. Note that **Specific placement** capping is only supported for the Web and Email channels."
 
 Capping is used as a constraint to define the maximum number of times an offer item can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer. You can create up to 10 cappings for a given decision item.
 
@@ -158,9 +158,9 @@ When configuring capping rules, you can reference attributes stored in Adobe Exp
 
 To set capping rules for the decision item, follow the steps detailed below.
 
-![Create capping rule form showing capping event, scope, type, threshold, and reset frequency settings](assets/item-capping-event.png){width="80%"}
-
 1. Define which **[!UICONTROL Capping event]** will be taken into account to increase the counter.
+
+    ![Create capping rule form showing capping event, scope, type, threshold, and reset frequency settings](assets/item-capping-event.png){width="80%"}
 
     * **[!UICONTROL Decision event]** (default value): Maximum number of times an offer can be presented.
     * **[!UICONTROL Impression]** (inbound channels only): Maximum number of times the offer can be displayed to a user.
@@ -187,13 +187,19 @@ To set capping rules for the decision item, follow the steps detailed below.
 
 1. Use the **[!UICONTROL Capping scope]** section to define how the capping rule applies across placements. [Learn more about placements](placements.md#about)
 
-    ![Capping scope section showing Offer level, Each placement, and Specific placement radio options](assets/item-capping-scope.png){width="50%"}
+    ![Capping scope section showing Offer level, Each placement, and Specific placement radio options](assets/item-capping-scope.png){width="70%"}
 
     * **[!UICONTROL Offer level]** (default): The cap applies per offer, regardless of the placement where it is displayed. The same offer shown in multiple placements counts once per decision event.
     * **[!UICONTROL Each placement]**: The cap applies to every placement this offer appears in. Each placement maintains its own capping counter, and new placements are tracked automatically the first time they are seen. For example, if an offer appears in a Hero Banner and a Sidebar, each placement tracks impressions independently — capping the offer in one placement does not affect the other.
-    * **[!UICONTROL Specific placement]**: The cap applies only when the offer is displayed in selected placements. Click **[!UICONTROL Select placements]** to pick which placements to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
+    * **[!UICONTROL Specific placement]**: The cap applies only when the offer is displayed in selected placements.
+    
+        >[!CAUTION]
+        >
+        >**Specific placement** capping is only supported for the **Web** and **Email** channels. It is not available for Code-based experience, SMS, Push, or Direct mail channels.
+    
+        Click **[!UICONTROL Select placements]** to pick which placements to cap. Other placements pass through uncapped. For example, if you select the Hero Banner placement with a cap of 3 impressions per day, the offer stops appearing in the Hero Banner after 3 impressions but remains eligible in all other placements.
 
-        ![Specific placement capping scope selected, showing the Select placements button and selected placement tags](assets/item-capping-scope-specific.png){width="60%"}
+        ![Specific placement capping scope selected, showing the Select placements button and selected placement tags](assets/item-capping-scope-specific.png){width="75%"}
 
     >[!NOTE]
     >
