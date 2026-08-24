@@ -286,4 +286,3 @@ Selecting a decision item or clicking the ellipsis button enables the actions de
     ![Decision item ellipsis menu showing the Undo approve option](assets/item-undo.png)
 
 * **[!UICONTROL Archive]**: Sets the decision item status to **[!UICONTROL Archived]**. The decision item is still available from the list, but you cannot set its status back to **[!UICONTROL Draft]** or **[!UICONTROL Approved]**. You can only duplicate or delete it.
-
