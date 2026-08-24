@@ -138,6 +138,11 @@ When you select audiences or decision rules, you can see information on the esti
 >title="Expression"
 >abstract="Rather that using a static value for the capping threshold, you can define your own expression. This allows you to calculate the threshold dynamically using decision attributes and/or external attributes from an Adobe Experience Platform dataset.<br/><br/>Capping rule **expressions** are currently available as a Limited Availability to all users. They are supported only for the **[!UICONTROL In total]** capping type."
 
+>[!CONTEXTUALHELP]
+>id="ajo_exd_item_capping_scope"
+>title="Capping scope"
+>abstract="Define how the capping rule applies across placements. By default, a single cap is applied regardless of placement. Select **Each placement** to track capping independently per placement, or **Specific placement** to restrict capping to selected placements only."
+
 Capping is used as a constraint to define the maximum number of times an offer item can be presented. Limiting the number of times users get specific offers allows you to avoid over-solicitating your customers and thus to optimize each touchpoint with the best offer. You can create up to 10 cappings for a given decision item.
 
 ![Decision item showing the capping rules panel with a Create capping button](assets/item-capping.png){width="80%"}
@@ -179,11 +184,6 @@ To set capping rules for the decision item, follow the steps detailed below.
     * [Configure data collection](data-collection/schema-requirement.md)
 
     +++
-
->[!CONTEXTUALHELP]
->id="ajo_exd_item_capping_scope"
->title="Capping scope"
->abstract="Define how the capping rule applies across placements. Select **Offer level** to apply a single cap regardless of placement, **Each placement** to track capping independently per placement, or **Specific placement** to restrict capping to selected placements only."
 
 1. Use the **[!UICONTROL Capping scope]** section to define how the capping rule applies across placements. [Learn more about placements](placements.md#about)
 
