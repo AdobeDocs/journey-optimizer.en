@@ -89,9 +89,9 @@ As an administrator, you can set up external integrations by following these ste
 
 1. Enter the API endpoint **[!UICONTROL URL]**. 
 
-    For path variables, wrap a label in double curly braces in the URL, for example, `https://api.example.com/v1/products/{{productId}}`, then set each placeholder in **[!UICONTROL Path Template]**.
+    For path variables, wrap a label in double curly braces in the URL, for example, `https://api.example.com/v1/products/{{productId}}`, then set each placeholder in **[!UICONTROL Path Parameter]**.
 
-1. Configure the **[!UICONTROL Path Template]** with **[!UICONTROL Name]** and **[!UICONTROL Default value]** for every placeholder you added in the URL.
+1. Configure the **[!UICONTROL Path Parameter]** with **[!UICONTROL Name]** and **[!UICONTROL Default value]** for every placeholder you added in the URL.
 
     Note that the **[!UICONTROL Name]** is a marketer-facing label in the editor only, it is not sent on the API request.
 
@@ -192,6 +192,7 @@ After the test succeeds, select **[!UICONTROL Activate]** in the integration con
 
 **See also**
 
+* [Work with Listing integrations](integrations-listing.md)
 * [Integrations troubleshooting FAQ](vendor-integration-faq.md#troubleshooting)
 * [Monitoring & Troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)
 

@@ -554,7 +554,8 @@ nudge: yes
     + [Work with GenStudio for Performance Marketing](using/integrations/genstudio.md)
     + [Integrate with Intelligent Services](using/integrations/intelligent-services.md)
     + Integrations {#integrations}
-      + [Work with Integrations](using/integrations/integrations.md)
+      + [Work with Standard integrations](using/integrations/integrations.md)
+      + [Work with Listing integrations](using/integrations/integrations-listing.md)
       + [Using External integrations for personalization](using/integrations/integrations-personalization.md)
       + [FAQ](using/integrations/vendor-integration-faq.md)
       + Sample Vendors {#vendors}
