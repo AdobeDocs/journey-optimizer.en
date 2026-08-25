@@ -29,6 +29,10 @@ You can also link a [Browsing integration](integrations-browsing.md) to a Standa
 
 As an administrator, you can set up external integrations by following these steps:
 
+### Set up the integration and request
+
+Start by creating the integration and defining how it calls the external API.
+
 1. Navigate to the **[!UICONTROL Configurations]** section in the left menu and click **[!UICONTROL Manage]** from the **[!UICONTROL Integrations]** card.
     
     Then, click **[!UICONTROL Create Integration]** to start a new configuration.
@@ -46,6 +50,12 @@ As an administrator, you can set up external integrations by following these ste
 1. Enter the API endpoint **[!UICONTROL URL]**. 
 
     For path variables, wrap a label in double curly braces in the URL, for example, `https://api.example.com/v1/products/{{productId}}`, then set each placeholder in **[!UICONTROL Path Parameter]**.
+
+1. Select **[!UICONTROL Enable browsing]** to link an active Browsing integration, so its response fields can be mapped to variables in headers, query and path parameters, and the payload. 
+
+    ➡️ See [Create Browsing integrations](integrations-browsing.md)
+
+    ![](assets/external-integration-config-12.png)
 
 1. Configure the **[!UICONTROL Path Parameter]** with **[!UICONTROL Name]** and **[!UICONTROL Default value]** for every placeholder you added in the URL.
 
@@ -68,6 +78,12 @@ As an administrator, you can set up external integrations by following these ste
     * **[!UICONTROL Mandatory]**: Specify whether this parameter is required. For mandatory **[!UICONTROL Variable]** parameters, if no value is resolved at runtime and no default is provided, request generation fails with an error and the outbound API call is not made.
 
     ![](assets/external-integration-config-3.png)
+
+With the request defined, you are ready to configure authentication, policy, and the response payload.
+
+### Configure authentication, policy, and response
+
+After defining the request, configure how it authenticates and behaves, and shape the response used for personalization.
 
 1. Choose an **[!UICONTROL Authentication Type]**:
 
@@ -101,30 +117,9 @@ As an administrator, you can set up external integrations by following these ste
     >
     >The **[!UICONTROL Response payload]** configuration defines the expected response for authoring including any schema applied in that step. Marketers may reference only exposed fields, tokens for other paths fail validation in the editor.
 
-1. Use **[!UICONTROL Send test connection]** to validate the integration. [Learn more on how to test your connection](#connection)
-    
-    Once validated, click **[!UICONTROL Activate]**.
+Once authentication, policy, and response are configured, test your connection before activating.
 
-1. Access your newly created Integration to:
-
-    * **Update**: Change **Authentication** details and **Policy configuration** only. Updates apply to live journeys and campaigns. Before you save changes, use the **[!UICONTROL Explore references]** menu to confirm where the integration is used.
-    * **Archive**: Archive an Integration configuration.
-
-    ![](assets/external-integration-config-7.png)
-
-After activation, click the ![advanced menu](assets/do-not-localize/Smock_More_18_N.svg) icon to access the **[!UICONTROL Explore references]** menu and to review usage for this configuration, including journeys and campaigns that depend on it.
-
-![](assets/external-integration-config-6.png)
-
-### Send-time limits and behavior {#configure-send-time}
-
-At send time, responses from the external API may be up to **4 MB** by default. Anything larger is treated as an integration error, and **retries are not attempted** when the failure is caused by response size. 
-
-Calls honor the **throttling** rate you configured: Journey Optimizer schedules attempts up to that limit even when the external system is down or returning errors. If **cache** is enabled, only **successful** responses are stored and reused until the cache **TTL** you defined expires; failed responses are never cached.
-
-Each queued message also carries a validity window (TTL). If processing falls behind and a message sits past that window, the system **discards** it and emits a **`MessageValidityExclusion`** event so stale work clears from the queue and resources stay available.
-
-## Testing your connection {#connection}
+## Test your connection {#connection}
 
 **[!UICONTROL Send test connection]** validates the endpoint URL, authentication, and request structure against the target API prior to activation, which reduces the risk of runtime failures during message processing. 
 
@@ -144,7 +139,35 @@ Each queued message also carries a validity window (TTL). If processing falls be
 
     ![](assets/external-integration-content-12.png)
 
-After the test succeeds, select **[!UICONTROL Activate]** in the integration configuration. See [Configure your Integration](#configure).
+After the test succeeds, select **[!UICONTROL Activate]** in the integration configuration.
+
+### Manage your integrations
+
+After a successful test, activate the integration, then update or archive it as needed.
+
+1. Once validated, click **[!UICONTROL Activate]**.
+
+1. Access your newly created Integration to:
+
+    * **Update**: Change **Authentication** details and **Policy configuration** only. Updates apply to live journeys and campaigns. Before you save changes, use the **[!UICONTROL Explore references]** menu to confirm where the integration is used.
+
+    * **Archive**: Archive an Integration configuration.
+
+        ![](assets/external-integration-config-7.png)
+
+1. After activation, click the ![advanced menu](assets/do-not-localize/Smock_More_18_N.svg) icon to access the **[!UICONTROL Explore references]** menu and to review usage for this configuration, including journeys and campaigns that depend on it.
+
+    ![](assets/external-integration-config-6.png)
+
+Once your integration is live, keep the following send-time behavior in mind.
+
+### Send-time limits and behavior {#configure-send-time}
+
+At send time, responses from the external API may be up to **4 MB** by default. Anything larger is treated as an integration error, and **retries are not attempted** when the failure is caused by response size. 
+
+Calls honor the **throttling** rate you configured: Journey Optimizer schedules attempts up to that limit even when the external system is down or returning errors. If **cache** is enabled, only **successful** responses are stored and reused until the cache **TTL** you defined expires; failed responses are never cached.
+
+Each queued message also carries a validity window (TTL). If processing falls behind and a message sits past that window, the system **discards** it and emits a **`MessageValidityExclusion`** event so stale work clears from the queue and resources stay available..
 
 **See also**
 

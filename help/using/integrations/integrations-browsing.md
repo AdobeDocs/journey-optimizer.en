@@ -19,15 +19,11 @@ keywords: integration
 
 In addition to Standard integrations, you can create **Browsing** integrations. A Browsing integration lets marketers search, browse, and paginate through items returned by an external API, then select a specific item directly in the authoring experience instead of manually entering a parameter value.
 
-## Create a Browsing integration {#create-Browsing}
+## Create a Browsing integration {#create-browsing}
 
-As an administrator, you can set up external Browsing integrations by following these steps:
+As an administrator, you create a Browsing integration from the **[!UICONTROL Browsing]** tab of the **[!UICONTROL Integrations]** configuration, using the same [step-by-step instructions](integrations-create.md#configure) as for Standard integrations. 
 
-1. Navigate to the **[!UICONTROL Configurations]** section in the left menu, click **[!UICONTROL Manage]** from the **[!UICONTROL Integrations]** card, then select the **[!UICONTROL Browsing]** tab.
-
-1. Click **[!UICONTROL Create Integration]** to start a new Browsing integration.
-
-1. Provide the integration information as detailed in the [step-by-step instructions](integrations.md#configure) for standard integrations.
+Once the integration information is provided, configure the following Browsing-specific settings:
 
 1. From the **[!UICONTROL Browsing]** menu, choose the **[!UICONTROL Items path]** where the list of items is located.
 
@@ -66,6 +62,8 @@ You can let marketers pick an item from a Browsing integration to populate a par
 ## Select items during authoring {#select-Browsing-items}
 
 When a parameter is linked to a Browsing integration, marketers see a selector in the message or journey editor instead of a plain input field. They can search and browse the paginated list of items returned by the Browsing integration, select the item they want, and confirm their selection. The corresponding **[!UICONTROL Reference path]** value is then automatically inserted into the integration parameter.
+
+![](assets/browsing_4.png)
 
 **See also**
 
