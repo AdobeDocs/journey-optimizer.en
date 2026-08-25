@@ -16,7 +16,7 @@ subfeature_v2:
     internal-label: Intelligent Services integration
 ---
 
-# Using External integrations for personalization {#integrations-personalization}
+# Use External integrations for personalization {#integrations-personalization}
 
 >[!BEGINSHADEBOX]
 

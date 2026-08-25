@@ -30,7 +30,7 @@ subfeature_v2:
 
 >[!ENDSHADEBOX]
 
-## Overview
+## Overview {#overview}
 
 The **Integrations** feature links Adobe Journey Optimizer to third-party systems whose data and composable content you already manage elsewhere. You can surface that material during authoring and at send time, which supports more responsive, personalized experiences across the channels you use in Journey Optimizer.
 
@@ -65,134 +65,31 @@ If the user was not previously created, refer to [this documentation](https://ex
 
 +++
 
-## Configure your Integration {#configure}
+## Standard vs Browsing {#standard-browsing}
 
->[!AVAILABILITY]
->
-> This integration feature is restricted to outbound channels (Email, SMS, and Push) and supports pulling JSON or HTML.
+When you access the **[!UICONTROL Integrations]** menu, the page is split into two tabs: **[!UICONTROL Standard]** and **[!UICONTROL Browsing]**. Understanding the difference between the two helps you choose the right configuration for your use case.
 
-As an administrator, you can set up external integrations by following these steps:
+* **[!UICONTROL Standard]** integrations connect Journey Optimizer directly to a third-party API to pull data or content for personalization at authoring or send time. Parameter values are either fixed constants or resolved from variables you map in your campaign or journey.
 
-1. Navigate to the **[!UICONTROL Configurations]** section in the left menu and click **[!UICONTROL Manage]** from the **[!UICONTROL Integrations]** card.
-    
-    Then, click **[!UICONTROL Create Integration]** to start a new configuration.
+  ➡️ See [Create Standard integrations](integrations-create.md)
 
-    ![](assets/external-integration-config-1.png)
+* **[!UICONTROL Browsing]** integrations let marketers search, browse, and paginate through a list of items returned by an external API, then select a specific item directly in the authoring experience instead of typing a value. A Browsing integration is linked to a Standard integration's parameter so the value marketers select is automatically passed to the API call.
 
-1. Optionally, paste a **cURL** command to auto-fill the URL, HTTP method, headers, and query parameters.
+  ➡️ See [Create Browsing integrations](integrations-browsing.md)
 
-1. Provide a **[!UICONTROL Name]** and **[!UICONTROL Description]** for your integration. 
+## Step-by-step {#set-up}
 
-    >[!NOTE]
-    >
-    >**[!UICONTROL Name]** field cannot contain spaces.
+Setting up an integration involves administrators and marketers, each playing a distinct role from configuration to content personalization.
 
-1. Enter the API endpoint **[!UICONTROL URL]**. 
+1. Make sure you have the **[!UICONTROL Manage AJO integration configuration]** and **[!UICONTROL View AJO integration configuration]** permissions before you start. 
 
-    For path variables, wrap a label in double curly braces in the URL, for example, `https://api.example.com/v1/products/{{productId}}`, then set each placeholder in **[!UICONTROL Path Parameter]**.
+    [Learn more on permissions](../administration/permissions.md).
 
-1. Configure the **[!UICONTROL Path Parameter]** with **[!UICONTROL Name]** and **[!UICONTROL Default value]** for every placeholder you added in the URL.
+1. As an administrator, create a **[!UICONTROL Standard]** integration, and optionally link it to a **[!UICONTROL Browsing]** integration so marketers can select items instead of entering values manually. 
 
-    Note that the **[!UICONTROL Name]** is a marketer-facing label in the editor only, it is not sent on the API request.
+    See [Create Standard integrations](integrations-create.md) and [Create Browsing integrations](integrations-browsing.md).
 
-    ![](assets/external-integration-config-2.png)
+1. As a marketer, apply your configured integrations to personalize Email, SMS, and Push content.
 
-1. Select the **[!UICONTROL HTTP Method]** between GET and POST.
-
-1. Click **[!UICONTROL Add Header]** and/or **[!UICONTROL Add Query Parameters]** as needed for your integration. For each parameter, provide the following details:
-
-    * **[!UICONTROL Parameter]**: The actual header or query parameter name as expected by the API.
-
-    * **[!UICONTROL Name]**: A marketer-friendly label for this parameter, authors select it when mapping values in campaigns.
-
-    * **[!UICONTROL Type]**: Choose **Constant** for a fixed value or **Variable** for dynamic input.
-
-    * **[!UICONTROL Value]**: Enter the value directly for constants, or select a variable mapping.
-
-    * **[!UICONTROL Mandatory]**: Specify whether this parameter is required. For mandatory **[!UICONTROL Variable]** parameters, if no value is resolved at runtime and no default is provided, request generation fails with an error and the outbound API call is not made.
-
-    ![](assets/external-integration-config-3.png)
-
-1. Choose an **[!UICONTROL Authentication Type]**:
-
-    * **[!UICONTROL No Authentication]**: For open APIs that do not require any credentials.
-
-    * **[!UICONTROL API key]**: Authenticate requests using a static API key. Enter your **[!UICONTROL API Key Name ​]**, **[!UICONTROL API Key Value ​]** and specify your **[!UICONTROL Location]**.
-
-    * **[!UICONTROL Basic Auth]**: Use standard HTTP Basic Authentication. Enter **[!UICONTROL Username]** and **[!UICONTROL Password]**.
-
-    * **[!UICONTROL OAuth 2.0]**: Authenticate using the OAuth 2.0 protocol. Click the ![edit](assets/do-not-localize/Smock_Edit_18_N.svg) icon to configure or update the **[!UICONTROL Payload]**.
-
-    ![](assets/external-integration-config-4.png)
-
-1. Set  **[!UICONTROL Policy configuration]** such as **[!UICONTROL Timeout]** period for API requests and choose to enable throttling, cache and/or retry.
-
-    >[!NOTE]
-    >
-    >With throttling enabled, supported rates are 50 to 5000 TPS. Limits apply to the **integration**, not each API endpoint.
-    >
-    >With retry enabled, other failures retry **three** times by default, with **200 ms**, **400 ms**, and **800 ms** between attempts.
-
-1. With the **[!UICONTROL Response payload]** field, you can decide which fields of the sample output needs to be used for message personalization. 
-    
-    Click the ![edit](assets/do-not-localize/Smock_Edit_18_N.svg) icon and paste a sample JSON response payload to automatically detect data types.
-
-1. Choose the fields to expose for personalization and specify their corresponding data types.
-
-    ![](assets/external-integration-config-5.png)
-
-    >[!NOTE]
-    >
-    >The **[!UICONTROL Response payload]** configuration defines the expected response for authoring including any schema applied in that step. Marketers may reference only exposed fields, tokens for other paths fail validation in the editor.
-
-1. Use **[!UICONTROL Send test connection]** to validate the integration. [Learn more on how to test your connection](#connection)
-    
-    Once validated, click **[!UICONTROL Activate]**.
-
-1. Access your newly created Integration to:
-
-    * **Update**: Change **Authentication** details and **Policy configuration** only. Updates apply to live journeys and campaigns. Before you save changes, use the **[!UICONTROL Explore references]** menu to confirm where the integration is used.
-    * **Archive**: Archive an Integration configuration.
-
-    ![](assets/external-integration-config-7.png)
-
-After activation, click the ![advanced menu](assets/do-not-localize/Smock_More_18_N.svg) icon to access the **[!UICONTROL Explore references]** menu and to review usage for this configuration, including journeys and campaigns that depend on it.
-
-![](assets/external-integration-config-6.png)
-
-### Send-time limits and behavior {#configure-send-time}
-
-At send time, responses from the external API may be up to **4 MB** by default. Anything larger is treated as an integration error, and **retries are not attempted** when the failure is caused by response size. 
-
-Calls honor the **throttling** rate you configured: Journey Optimizer schedules attempts up to that limit even when the external system is down or returning errors. If **cache** is enabled, only **successful** responses are stored and reused until the cache **TTL** you defined expires; failed responses are never cached.
-
-Each queued message also carries a validity window (TTL). If processing falls behind and a message sits past that window, the system **discards** it and emits a **`MessageValidityExclusion`** event so stale work clears from the queue and resources stay available.
-
-## Testing your connection {#connection}
-
-**[!UICONTROL Send test connection]** validates the endpoint URL, authentication, and request structure against the target API prior to activation, which reduces the risk of runtime failures during message processing. 
-
-1. When the URL, HTTP method, headers, and query parameters are defined, click **[!UICONTROL Send test connection]** to run a connectivity test and confirm the configuration.
-
-1. In the **[!UICONTROL Send test connection]** dialog, enter default values for any **[!UICONTROL Variable]** placeholders in the URL path, headers, and query parameters.
-    
-    Those values are included in the test request. Journey Optimizer invokes the endpoint and reports whether the connection succeeded or failed.
-
-    ![](assets/external-integration-config-11.png)
-
-1. If the test returns a successful response, select **[!UICONTROL Use as response payload]** to copy the response body into the **[!UICONTROL Response payload]** field, see step 10 under [Configure your Integration](#configure), where data types can be detected and fields can be selected for personalization.
-
-    ![](assets/external-integration-config-10.png)
-
-1. If the test does not succeed, expand the **[!UICONTROL Error]** drop-down to review the failure details, update the integration configuration as needed, and run **[!UICONTROL Send test connection]** again.
-
-    ![](assets/external-integration-content-12.png)
-
-After the test succeeds, select **[!UICONTROL Activate]** in the integration configuration. See [Configure your Integration](#configure).
-
-**See also**
-
-* [Work with Listing integrations](integrations-listing.md)
-* [Integrations troubleshooting FAQ](vendor-integration-faq.md#troubleshooting)
-* [Monitoring & Troubleshooting](../../rp_landing_pages/troubleshoot-journey-landing-page.md)
+    See [Use External integrations for personalization](integrations-personalization.md)
 
