@@ -53,13 +53,17 @@ Before publishing, make sure your journey meets the following prerequisites:
 * **Payload within limit** — The journey payload must be within the configured limit (4 MB by default). See [Journey payload size validation](../start/guardrails.md#journey-payload-size).
 * **Approval obtained** — If your journey is subject to an approval policy, request and obtain approval before publishing. [Learn more](../test-approve/gs-approval.md).
 
->[!TIP]
->
->Before publishing, validate your journey using one of the available testing options:
->
->* [Simulation](simulate-journey-gs.md) — test with simulated users, without using persistent test profiles in Adobe Experience Platform.
->* [Test mode](testing-the-journey.md) — test with persistent profiles flagged as test profiles in Adobe Experience Platform.
->* [Dry run](journey-dry-run.md) — test with real production data, without contacting profiles.
+### Choose the right validation method before publishing {#choose-validation-method}
+
+Validate your journey using one of the available testing options. Each uses a different type of data and fits a different stage of your build:
+
+| Option | Data used | Best for | Sends real messages? |
+| --- | --- | --- | --- |
+| [Simulation](simulate-journey-gs.md) | Temporary simulated users, auto-generated | Fast iteration during journey design — no need to create or wait for AEP test profiles to propagate | No |
+| [Test mode](testing-the-journey.md) | Persistent AEP test profiles | Step-by-step manual validation of branch and message logic in a draft journey | Yes — to the test profiles' real inboxes, using the same delivery pipeline as production |
+| [Dry run](journey-dry-run.md) | Real production audience data | Final pre-launch check of actual audience reach and targeting at scale, without contacting anyone | No |
+
+Neither Simulation nor Dry run delivers real communications or updates live profile data. Test mode does deliver real messages, but only to profiles you have explicitly flagged as test profiles.
 
 ## Publication process {#journey-publication}
 
@@ -211,6 +215,7 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: Publish Journey — Acronym: none — variants: activate journey, go live
 * Synonyms: "Publish" = "activate" = "go live"
 * Do not confuse: Stop (emergency halt of all profiles) ≠ Close to new entrances (manual graceful close; existing profiles finish) ≠ Closed status (automatic when a new version is published, or after manual close to new entrances)
+* Do not confuse: Simulation (temporary simulated users, no AEP test profiles needed) ≠ Test mode (persistent AEP test profiles, draft journeys only) ≠ Dry run (real production audience data, no contact, no profile update, action nodes bypassed)
 
 **FAQ:**
 * **Q: Can I edit a journey after it is published?** — Only labels, descriptions, and the journey name can be changed. To make other modifications, create a new version of the journey.
