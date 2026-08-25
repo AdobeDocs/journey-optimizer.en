@@ -83,12 +83,12 @@ Learn how to [create a channel action in an Orchestrated campaign](channels.md).
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_end"
 >title="End activity"
->abstract="The **End** activity marks the end of a branch on the canvas. Optionally, use **External signal** to start a downstream Orchestrated campaign and pass parameters when the branch completes. [Learn more](../trigger-orchestrated-campaign.md#signal-end)"
+>abstract="The **End** activity marks the end of a branch on the canvas. Optionally, use **External signal** to start a downstream Orchestrated campaign and pass parameters when the branch completes."
 
 >[!CONTEXTUALHELP]
 >id="ajo_orchestration_signal"
 >title="External signal"
->abstract="Select the downstream Orchestrated campaign to start when this branch ends, and map parameter names and values to send in the signal. The downstream campaign must be set to **Triggered by a signal** and published before this campaign reaches the End activity. [Learn more](../trigger-orchestrated-campaign.md#signal-end)"
+>abstract="Select the downstream Orchestrated campaign to start when this branch ends, and map parameter names and values to send in the signal. The downstream campaign must be set to **Triggered by a signal** and published before this campaign reaches the End activity."
 
 The following activities are specific to organizing and executing Orchestrated campaigns. Their main task is to coordinate the other activities.
 
