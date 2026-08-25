@@ -12,7 +12,7 @@ nudge: yes
 + [Journey Optimizer documentation](ajo-home.md)
 + What's new? {#whats-new} 
   + [Release cycle](using/rn/releases.md) 
-  + [Pre-release notes](using/rn/e-release-notes.md)
+  + {hide-from-toc} [Pre-release notes](using/rn/e-release-notes.md)
   + [Latest release notes](using/rn/release-notes.md)
   + Previous release notes {#previous-rn-new}
     + {hide-from-toc} [Previous release notes](/help/rp_landing_pages/previous-rn-new-landing-page.md)
@@ -451,7 +451,7 @@ nudge: yes
     + [Create a Live activity](using/mobile-live/create-mobile-live.md)
     + [Troubleshoot Live activities](using/mobile-live/troubleshoot-mobile-live.md)
     + [FAQ](using/mobile-live/mobile-live-faq.md)
-    + Configure Live activity channel {#configure}
+    + Configure Live activity channel {#configure-live-activity}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
       + [Configure Live activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
   + Custom channels {#custom-channel}
@@ -828,7 +828,7 @@ nudge: yes
       + [API Reference](/help/rp_landing_pages/api-reference-landing-page.md)
       + [Getting started](using/offers/api-reference/getting-started.md)
       + Create & manage offers using APIs {#offers-api}
-        + Placements {#placements}
+        + Placements {#dm-placements}
           + [List placements](using/offers/api-reference/offers-api/placements/placements-list.md)
           + [Lookup a placement](using/offers/api-reference/offers-api/placements/lookup.md)
           + [Create a placement](using/offers/api-reference/offers-api/placements/create.md)

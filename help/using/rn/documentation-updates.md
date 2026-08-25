@@ -39,6 +39,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 * A new **Use Image settings mode** section has been added to the generative content documentation. It explains the **Balanced**, **DAM**, and **Creative** modes available under **[!UICONTROL Image settings]**, which control whether AI-generated content sources images from your Digital Asset Management library, generates them with AI, or blends both. [Read more](../content-management/generative-uc.md#image-mode)
 
+* The **Destinations** description under **Left navigation > Main sections** has been updated to note that organizations with [!DNL Real-Time CDP] or [!DNL Adobe Journey Optimizer] can also activate audiences to eligible personalization destinations, such as [!DNL Adobe Target], from the Experience Platform destinations catalog. [Read more](../start/user-interface.md#main-sections)
+
 ## July 2026 {#july-2026} 
 
 * A new **Delivery settings** section has been added to the documentation navigation. It groups delivery-related features that apply across journeys, campaigns, and orchestrated campaigns: **Send using waves**, **Send-Time optimization**, and **Channel optimization** have all been moved there from the Journeys section.
