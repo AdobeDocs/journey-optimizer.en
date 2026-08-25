@@ -429,14 +429,15 @@ Learn more about [Journey Fragments](journey-fragments.md).
 
 +++ How do I test my journey before publishing it?
 
-Journey Optimizer offers two testing approaches:
+Journey Optimizer offers three validation methods:
 
-* **Test mode**: Simulate individual profiles moving through the journey step by step, allowing you to verify logic, conditions, and actions before going live.
+* **Journey Simulation**: Validate your journey with temporary, auto-generated simulated users — no need to create or wait for real test profiles. Best for fast iteration during journey design.
+* **Test mode**: Walk real (but designated test) profiles through the journey step by step, allowing you to verify logic, conditions, and actions before going live.
 * **Dry run mode**: Execute your journey using real production data without contacting actual customers or updating profile information. This gives you confidence in audience targeting and journey design.
 
 **Best practice**: Always test journeys before publishing to ensure they work as expected and to identify any issues early.
 
-Learn more about [test mode](testing-the-journey.md) and [dry run](journey-dry-run.md).
+See [Choose how to test and validate your journey](choose-validation-method.md) for a full comparison, or learn more about [simulation](simulate-journey-gs.md), [test mode](testing-the-journey.md), and [dry run](journey-dry-run.md).
 
 +++
 
