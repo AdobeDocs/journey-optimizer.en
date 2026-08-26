@@ -57,6 +57,8 @@ When a challenge task, milestone, or challenge completes **and has a reward valu
 
 This guide covers how to configure a reward provider, create reward definitions, write the `rewardJsonata` expression, and understand what context is available to it at evaluation time.
 
+➡️ [Watch how to set up a loyalty reward provider](#video)
+
 ## Two-level model
 
 Rewards are organized in two levels:
@@ -470,3 +472,8 @@ To develop and test an expression before publishing, use the [JSONata Exerciser]
 | `milestone` accessed when source is `"task"` or `"challenge"` | `milestone` is null; expression throws or produces null fields | Check `rewardContext.source` before accessing `milestone`, or only use `milestone` in definitions attached to milestone rewards |
 | Expression returns an array instead of an object | Provider receives unexpected payload structure | Wrap array-returning expressions in an outer object: `{ "items": [...] }` |
 
+## How-to videos {#video}
+
+➡️ Watch how to set up a loyalty reward provider
+
+>[!VIDEO](https://video.tv.adobe.com/v/3497346?quality=12)

@@ -270,6 +270,8 @@ To configure challenge content:
 
    You can add multiple actions to represent the challenge across different surfaces.
 
+➡️ [Watch how to build a challenge content card](#video)
+
 After configuring the content, set up messaging to engage customers throughout the challenge lifecycle.
 
 ### Configure messaging {#configure-messaging}
@@ -302,6 +304,8 @@ Select the associated **[!UICONTROL Channel configuration]** and click **[!UICON
 | **[!UICONTROL Code-based experience]** | Deliver content through a custom implementation using AJO's code-based channel. [About code-based experiences](../code-based/get-started-code-based.md) · [Create a code-based experience](../code-based/create-code-based.md) |
 | **[!UICONTROL Custom action]** | Trigger an external system or custom endpoint. [About custom actions](../action/about-custom-action-configuration.md) |
 
+➡️ [Watch how to set up lifecycle messaging for a challenge](#video)
+
 Your challenge is now fully configured with its settings, structure, content, and messaging. To launch it, you must publish the challenge and its associated journey.
 
 ## Launching the challenge {#launch}
@@ -311,6 +315,8 @@ You have two options for launching your challenge:
 * **[!UICONTROL Publish Challenge]** (available in the **[!UICONTROL ...]** menu) — Use this option to publish the challenge without generating a journey. This allows you to test, preview, and simulate the challenge experience before delivery. Customers will not receive the challenge until you generate and publish a journey.
 
 * **[!UICONTROL Generate Journey]** — Use this option to automatically publish the challenge and create the journey that will orchestrate your challenge delivery to customers.
+
+➡️ [Watch how to publish a challenge and generate a journey](#video)
 
 ### Publish the challenge {#publish-challenge}
 
@@ -361,4 +367,16 @@ Learn how to create and configure loyalty challenges with these step-by-step vid
 **Configure rewards** - Set up reward delivery and fulfillment
 
 >[!VIDEO](https://video.tv.adobe.com/v/3496481?quality=12)
+
+➡️ Watch how to build a challenge content card
+
+>[!VIDEO](https://video.tv.adobe.com/v/3496529?quality=12)
+
+➡️ Watch how to set up lifecycle messaging for a challenge
+
+>[!VIDEO](https://video.tv.adobe.com/v/3497455?quality=12)
+
+➡️ Watch how to publish a challenge and generate a journey
+
+>[!VIDEO](https://video.tv.adobe.com/v/3498577?quality=12)
 
