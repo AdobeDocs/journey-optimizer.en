@@ -93,7 +93,7 @@ Learn more about [journey types](entry-management.md#types-of-journeys).
 
 +++
 
-+++ What's the difference between a journey and a campaign?
++++ What is the difference between a journey and a campaign?
 
 **[Journeys](journey.md)** are multi-step orchestrations that react to events or target audiences, allowing for complex logic, conditions, wait times, and multiple touch points across the customer lifecycle.
 
@@ -205,9 +205,9 @@ Use **unitary journeys** when:
 
 Use **read audience journeys** when:
 
-* You're sending batch communications to a group (e.g., monthly newsletter, promotional campaigns)
+* You are sending batch communications to a group (e.g., monthly newsletter, promotional campaigns)
 * All customers should receive the message around the same time
-* You're targeting a pre-defined audience segment
+* You are targeting a pre-defined audience segment
 
 +++
 
@@ -264,7 +264,7 @@ You can add conditions using the **Condition activity** from the orchestration p
 
 * Create simple or advanced conditions using the expression editor
 * Split the journey into multiple paths based on profile attributes, audience membership, events, or contextual data
-* Define timeout paths for profiles that don't meet the condition within a specified time
+* Define timeout paths for profiles that do not meet the condition within a specified time
 
 Learn more about [conditions](conditions.md).
 
@@ -316,7 +316,7 @@ Learn more about [event configuration](../event/about-events.md) and [email acti
 
 +++
 
-+++ Can I resend a message if someone doesn't open or click it?
++++ Can I resend a message if someone does not open or click it?
 
 Yes. Use a **[!UICONTROL Reaction]** event with a **Timeout**:
 
@@ -336,7 +336,7 @@ Learn more about [Reaction events](reaction-events.md).
 
 Create an event-triggered journey using a **[!UICONTROL Reaction]** event with a Timeout:
 
-1. **Configure a "Cart Abandoned" event**: Triggered when items are added but checkout isn't completed within a timeframe
+1. **Configure a "Cart Abandoned" event**: Triggered when items are added but checkout is not completed within a timeframe
 2. **Send an initial message** (optional): Email acknowledging cart items
 3. **Add a [!UICONTROL Reaction] event immediately after the channel action**: Configure it to listen for a Purchase event
 4. **Set a timeout period**: Define a timeout (e.g., 1-2 hours) on the **[!UICONTROL Reaction]** event to give the customer time to complete naturally
@@ -495,7 +495,7 @@ Learn more about [ending journeys](end-journey.md).
 
 +++
 
-+++ What's the difference between "Close to new entrances" and "Stop"?
++++ What is the difference between "Close to new entrances" and "Stop"?
 
 **Close to new entrances**:
 
@@ -529,15 +529,15 @@ Learn more about [journey reporting](report-journey.md).
 
 +++
 
-+++ Why didn't a profile enter my journey?
++++ Why did not a profile enter my journey?
 
 Common reasons profiles may not enter a journey:
 
 * **Event not received**: The triggering event was not sent or properly configured
-* **Audience criteria not met**: The profile doesn't qualify for the entry audience
+* **Audience criteria not met**: The profile does not qualify for the entry audience
 * **Re-entrance rules**: The profile recently completed the journey and re-entrance is blocked
 * **Journey not published**: The journey is in draft status
-* **Invalid namespace**: The journey namespace doesn't match the profile identity
+* **Invalid namespace**: The journey namespace does not match the profile identity
 * **Journey closed**: The journey is no longer accepting new entrances
 * **Streaming audience qualification timing**: For journeys using Audience Qualification with streaming audiences, profiles may not enter if they were already in the audience before the journey was published. They can also be delayed if the journey has not completed its activation period (up to 10 minutes after publishing).
 
@@ -560,7 +560,7 @@ Learn more about [journey step events](../reports/sharing-overview.md).
 
 +++
 
-+++ How can I troubleshoot a journey that isn't working as expected?
++++ How can I troubleshoot a journey that is not working as expected?
 
 Journey Optimizer provides several troubleshooting resources:
 
@@ -612,7 +612,7 @@ Learn more about [journey live reporting](report-journey.md).
 
 **Common reasons and solutions**:
 
-* **Consent issues**: Recipients haven't opted in to receive communications
+* **Consent issues**: Recipients have not opted in to receive communications
   Solution: Check consent policies and opt-in status
   
 * **Suppression list**: Email addresses are on the suppression list
@@ -727,7 +727,7 @@ Yes, depending on the **re-entrance settings**:
 * **Allow re-entrance**: Profiles can enter the journey multiple times after completing it
 * **Re-entrance wait period**: Define a minimum time between journey entries (e.g., 7 days)
 * **Force re-entrance on event**: Trigger a new journey instance even if the profile is already in the journey
-* **Supplemental identifier**: Use a supplemental ID to allow profiles to re-enter the journey multiple times for different entities (e.g., different orders, bookings, or transactions), even while they're already in the journey
+* **Supplemental identifier**: Use a supplemental ID to allow profiles to re-enter the journey multiple times for different entities (e.g., different orders, bookings, or transactions), even while they are already in the journey
 
 **Best practice**: Use re-entrance rules to prevent message fatigue and ensure appropriate pacing. Consider using supplemental identifiers for transactional journeys where profiles need to enter multiple times for different transactions.
 
@@ -897,7 +897,7 @@ Learn more about [merge policies](../audience/get-started-profiles.md) and [iden
 
 +++
 
-+++ What's the difference between a Condition and a Wait activity?
++++ What is the difference between a Condition and a Wait activity?
 
 | | **Condition Activity** | **Wait Activity** |
 |---|---|---|

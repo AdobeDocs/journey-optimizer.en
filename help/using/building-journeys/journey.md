@@ -189,7 +189,7 @@ Use wait times, jumps, profile updates, and audience management to create sophis
 
 ## Your journey creation workflow {#workflow}
 
-Building successful journeys follows a clear, repeatable process. Here's your step-by-step workflow:
+Building successful journeys follows a clear, repeatable process. Here is your step-by-step workflow:
 
 **1. Plan** → **2. Design** → **3. Test** → **4. Publish** → **5. Monitor** → **6. Optimize**
 
@@ -197,8 +197,8 @@ Building successful journeys follows a clear, repeatable process. Here's your st
 
 Before opening the designer, clarify your objectives:
 
-* **What's the goal?** (e.g., onboard new customers, re-engage inactive users)
-* **Who's the audience?** (specific segment, event-driven individuals)
+* **What is the goal?** (e.g., onboard new customers, re-engage inactive users)
+* **Who is the audience?** (specific segment, event-driven individuals)
 * **Which journey type fits?** (See [journey types](#journey-types) above)
 * **What channels will you use?** (email, push, SMS, etc.)
 
