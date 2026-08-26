@@ -21,6 +21,16 @@ version: Journey Orchestration
 
 [!DNL Adobe Journey Optimizer] gives you three ways to validate a journey before it goes live. They are not interchangeable: each uses a different kind of data, fits a different stage of your build, and carries different real-world consequences. Understanding the difference up front helps you avoid two common mistakes — spending time creating test profiles when a quick simulation would do, or assuming a validation step is fully "safe" when it can still contact real inboxes or make real outbound calls.
 
+## New to validation? Start here {#quick-pick}
+
+If you're not sure which method applies to you, answer this one question:
+
+* **I'm still designing my journey and want to test a branch quickly, without creating test profiles.** → Use **[Journey Simulation](simulate-journey-gs.md)**.
+* **I want to manually walk through my draft journey step by step, using real (but designated test) profiles.** → Use **[Test mode](testing-the-journey.md)**.
+* **I'm about to publish and want a final check against my real production audience, without contacting anyone.** → Use **[Journey Dry run](journey-dry-run.md)**.
+
+Still not sure, or want the full picture? Keep reading — each method is explained in detail below.
+
 ## The three validation methods {#validation-methods}
 
 >[!BEGINTABS]
@@ -39,7 +49,7 @@ Key mechanics:
 
 >[!IMPORTANT]
 >
->Simulation sends real messages to the execution addresses (email, phone, push token) configured on the simulated users — for example, your own email address — using the same delivery pipeline as production. It doesn't contact real customers or update live profile data, but the messages themselves are real.
+>Simulation sends real messages to the [execution addresses](simulate-journey.md#test-users) (email, phone, push token) configured on the simulated users — for example, your own email address — using the same delivery pipeline as production. It doesn't contact real customers or update live profile data, but the messages themselves are real.
 
 **Perfect for:** Validating a new branch (for example, two new decision-policy paths) without waiting on AEP test-profile propagation.
 
@@ -49,12 +59,12 @@ Key mechanics:
 
 **When to use:** Manually verifying branch and message logic step by step, with real (but designated test) profiles walking through your draft journey.
 
-[Test mode](testing-the-journey.md) lets you validate a draft journey using persistent AEP test profiles. You fire events manually from the interface to confirm that branching logic and message delivery mechanics work as designed, before any production audience touches the journey.
+[Test mode](testing-the-journey.md) lets you validate a draft journey using persistent [AEP test profiles](../audience/creating-test-profiles.md). You fire events manually from the interface to confirm that branching logic and message delivery mechanics work as designed, before any production audience touches the journey.
 
 Key mechanics:
 
 * Only profiles flagged as "test profiles" in Real-time Customer Profile can enter a journey in test mode.
-* Test mode is available only for draft journeys that use a namespace, since it must check against AEP whether a person is a test profile.
+* Test mode is available only for draft journeys that use a [namespace](../audience/get-started-identity.md), since it must check against AEP whether a person is a test profile.
 * A maximum of 100 test profiles can enter a journey during a single test session, and events can only be fired from the interface, not from external systems via API.
 * Disabling test mode removes all profiles that entered the journey and clears reporting.
 
@@ -70,7 +80,7 @@ Key mechanics:
 
 **When to use:** A final, production-realistic check right before you publish.
 
-[Journey Dry run](journey-dry-run.md) is a special journey publication mode that runs your journey against real production audience and segmentation data, without contacting real customers or updating profile information. The journey activates like a live journey — profiles flow through branches and nodes exactly as they would in production — but action nodes such as email, SMS, and custom actions are bypassed.
+[Journey Dry run](journey-dry-run.md) is a special journey publication mode that runs your journey against real production audience and segmentation data, without contacting real customers or updating profile information. The journey activates like a live journey — profiles flow through branches and nodes exactly as they would in production — but [action nodes](about-journey-activities.md) such as email, SMS, and custom actions are bypassed.
 
 Key mechanics:
 
@@ -106,6 +116,14 @@ If you're about to **publish** and want a final check against your actual produc
 | [Test mode](testing-the-journey.md) | Persistent AEP test profiles | Yes — to the test profiles' real inboxes, using the production delivery pipeline | No | No (test profiles only) | Manually verifying branch/message logic step by step in a draft journey |
 | [Journey Dry run](journey-dry-run.md) | Real production audience/data | No (actions bypassed) | No | No | Final pre-launch check of actual audience reach, targeting, and branch logic at real scale |
 
+## Common mistakes to avoid {#common-mistakes}
+
+* **Assuming Journey Simulation is fully "safe."** It's the fastest way to test, but it still sends real messages to the execution address configured on each simulated user — usually your own inbox. Don't assume nothing gets sent.
+* **Creating AEP test profiles when Journey Simulation would do.** If you just need to validate a new branch or decision-policy path quickly, Simulation skips the wait for test-profile propagation entirely — save Test mode for when you actually need real test profiles.
+* **Treating Test mode as "dry."** Test mode profiles receive real messages through the production delivery pipeline. Make sure your test profiles only use addresses you control.
+* **Expecting Journey Dry run to catch content or delivery issues.** Dry run bypasses action nodes entirely — it validates audience reach and branch logic, not message content or delivery mechanics. Use Simulation or Test mode for that.
+* **Forgetting the namespace requirement for Test mode.** Test mode only works on draft journeys that use a namespace — without one, Journey Optimizer can't check whether a profile is flagged as a test profile.
+
 ## Next steps {#next-steps}
 
 * **[Get started with journey simulation](simulate-journey-gs.md)** — Run your first simulation
@@ -121,7 +139,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page compares the three journey validation methods in Adobe Journey Optimizer — Journey Simulation, Test mode, and Journey Dry run — and provides a decision guide and quick-comparison table to help users choose the right one for their current stage of building a journey.
+* **TL;DR:** This page compares the three journey validation methods in Adobe Journey Optimizer — Journey Simulation, Test mode, and Journey Dry run — and provides a one-question quick pick, a decision guide, a quick-comparison table, and a list of common mistakes to help users choose the right one for their current stage of building a journey.
 
 **Intents:**
 
@@ -131,6 +149,7 @@ For complete understanding, this information should be combined with the documen
 * Understand when to use Test mode for step-by-step manual validation with real test profiles
 * Understand when to use Journey Dry run for a final pre-launch check against production data
 * Understand which validation methods send real messages or contact real customers
+* Avoid common mistakes when picking or using a validation method
 
 **Glossary:**
 
