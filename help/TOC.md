@@ -65,7 +65,7 @@ nudge: yes
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
     + Validate your journey {#validate-journey}
-      <!-- + [Choose how to test and validate your journey](using/building-journeys/choose-validation-method.md) -->
+      + {hide-from-toc} [Choose how to test and validate your journey](using/building-journeys/choose-validation-method.md)
       + Simulation {#simulate-journey}
         + [Get started with journey simulation](using/building-journeys/simulate-journey-gs.md) 
         + [Simulate your journey](using/building-journeys/simulate-journey.md) 
