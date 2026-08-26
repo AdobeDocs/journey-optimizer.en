@@ -37,7 +37,7 @@ Start by creating the integration and defining how it calls the external API.
     
     Then, click **[!UICONTROL Create Integration]** to start a new configuration.
 
-    ![](assets/external-integration-config-1.png)
+    ![Integrations card with the Create Integration button in the Configurations section](assets/external-integration-config-1.png){zoomable="yes"}
 
 1. Optionally, paste a **cURL** command to auto-fill the URL, HTTP method, headers, and query parameters.
 
@@ -55,13 +55,13 @@ Start by creating the integration and defining how it calls the external API.
 
     ➡️ See [Create Browsing integrations](integrations-browsing.md)
 
-    ![](assets/external-integration-config-12.png)
+    ![Enable browsing option linking a Browsing integration to a Standard integration parameter](assets/external-integration-config-12.png){zoomable="yes"}
 
 1. Configure the **[!UICONTROL Path Parameter]** with **[!UICONTROL Name]** and **[!UICONTROL Default value]** for every placeholder you added in the URL.
 
     Note that the **[!UICONTROL Name]** is a marketer-facing label in the editor only, it is not sent on the API request.
 
-    ![](assets/external-integration-config-2.png)
+    ![Path Parameter configuration with Name and Default value fields for each placeholder](assets/external-integration-config-2.png){zoomable="yes"}
 
 1. Select the **[!UICONTROL HTTP Method]** between GET and POST.
 
@@ -77,7 +77,7 @@ Start by creating the integration and defining how it calls the external API.
 
     * **[!UICONTROL Mandatory]**: Specify whether this parameter is required. For mandatory **[!UICONTROL Variable]** parameters, if no value is resolved at runtime and no default is provided, request generation fails with an error and the outbound API call is not made.
 
-    ![](assets/external-integration-config-3.png)
+    ![Header and query parameter configuration with Parameter, Name, Type, Value, and Mandatory fields](assets/external-integration-config-3.png){zoomable="yes"}
 
 With the request defined, you are ready to configure authentication, policy, and the response payload.
 
@@ -95,7 +95,7 @@ After defining the request, configure how it authenticates and behaves, and shap
 
     * **[!UICONTROL OAuth 2.0]**: Authenticate using the OAuth 2.0 protocol. Click the ![edit](assets/do-not-localize/Smock_Edit_18_N.svg) icon to configure or update the **[!UICONTROL Payload]**.
 
-    ![](assets/external-integration-config-4.png)
+    ![Authentication Type options including No Authentication, API key, Basic Auth, and OAuth 2.0](assets/external-integration-config-4.png){zoomable="yes"}
 
 1. Set  **[!UICONTROL Policy configuration]** such as **[!UICONTROL Timeout]** period for API requests and choose to enable throttling, cache and/or retry.
 
@@ -111,7 +111,7 @@ After defining the request, configure how it authenticates and behaves, and shap
 
     * **[!UICONTROL GraphQL]**: Paste your GraphQL query. Journey Optimizer generates an **[!UICONTROL Operation name]** automatically and lets you map the corresponding query variables.
 
-        ![](assets/external-integration-config-13.png)
+        ![GraphQL payload with generated operation name and query variable mapping](assets/external-integration-config-13.png){zoomable="yes"}
 
 1. Choose the **[!UICONTROL Response type]** between **JSON** and **HTML**.
 
@@ -121,7 +121,7 @@ After defining the request, configure how it authenticates and behaves, and shap
 
 1. Choose the fields to expose for personalization and specify their corresponding data types.
 
-    ![](assets/external-integration-config-5.png)
+    ![Response payload fields selected for personalization with detected data types](assets/external-integration-config-5.png){zoomable="yes"}
 
     >[!NOTE]
     >
@@ -139,19 +139,19 @@ Once authentication, policy, and response are configured, test your connection b
     
     Those values are included in the test request. Journey Optimizer invokes the endpoint and reports whether the connection succeeded or failed.
 
-    ![](assets/external-integration-config-11.png)
+    ![Send test connection dialog with default values for variable placeholders](assets/external-integration-config-11.png){zoomable="yes"}
 
 1. If the test returns a successful response, select **[!UICONTROL Use as response payload]** to copy the response body into the **[!UICONTROL Response payload]** field, see step 10 under [Configure your Integration](#configure), where data types can be detected and fields can be selected for personalization.
 
-    ![](assets/external-integration-config-10.png)
+    ![Successful test connection response with the Use as response payload option](assets/external-integration-config-10.png){zoomable="yes"}
 
 1. If the test does not succeed, expand the **[!UICONTROL Error]** drop-down to review the failure details, update the integration configuration as needed, and run **[!UICONTROL Send test connection]** again.
 
-    ![](assets/external-integration-content-12.png)
+    ![Test connection error details displayed in the Error drop-down](assets/external-integration-content-12.png){zoomable="yes"}
 
 After the test succeeds, select **[!UICONTROL Activate]** in the integration configuration.
 
-### Manage your integrations
+## Manage your integrations
 
 After a successful test, activate the integration, then update or archive it as needed.
 
@@ -163,15 +163,15 @@ After a successful test, activate the integration, then update or archive it as 
 
     * **Archive**: Archive an Integration configuration.
 
-        ![](assets/external-integration-config-7.png)
+        ![Update and Archive options for an integration configuration](assets/external-integration-config-7.png){zoomable="yes"}
 
 1. After activation, click the ![advanced menu](assets/do-not-localize/Smock_More_18_N.svg) icon to access the **[!UICONTROL Explore references]** menu and to review usage for this configuration, including journeys and campaigns that depend on it.
 
-    ![](assets/external-integration-config-6.png)
+    ![Explore references menu showing journeys and campaigns that use the integration](assets/external-integration-config-6.png){zoomable="yes"}
 
 Once your integration is live, keep the following send-time behavior in mind.
 
-### Send-time limits and behavior {#configure-send-time}
+## Send-time limits and behavior {#configure-send-time}
 
 At send time, responses from the external API may be up to **4 MB** by default. Anything larger is treated as an integration error, and **retries are not attempted** when the failure is caused by response size. 
 

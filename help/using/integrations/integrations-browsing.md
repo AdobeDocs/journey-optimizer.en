@@ -27,11 +27,11 @@ Once the integration information is provided, configure the following **Browsing
 
 1. From the **[!UICONTROL Items configuration]** menu, choose the **[!UICONTROL Items path]** where the list of items is located.
 
-    ![](assets/browsing_1.png)
+    ![Items configuration menu with the Items path field selected](assets/browsing_1.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Search configuration]** drop-down, **[!UICONTROL Enable search]** and select which parameter carries the search query, then provide a description for marketers.
 
-    ![](assets/browsing_2.png)
+    ![Search configuration with Enable search toggled on and a search parameter selected](assets/browsing_2.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Pagination configuration]** menu, enable **[!UICONTROL Pagination]** and choose a pagination type:
 
@@ -44,7 +44,7 @@ Once the integration information is provided, configure the following **Browsing
         * **[!UICONTROL Limit parameter]**: Specify the request parameter that indicates the number of items to return.
         * **[!UICONTROL Page size]**: Set the number of items to request per page.
         
-        ![](assets/browsing_3.png)
+        ![Offset pagination fields including Total path, Offset parameter, Limit parameter, and Page size](assets/browsing_3.png){zoomable="yes"}
 
         +++
 
@@ -59,7 +59,7 @@ Once the integration information is provided, configure the following **Browsing
         * **[!UICONTROL First page is]**: Select whether the first page in the sequence is numbered 0 or 1.
         * **[!UICONTROL Total pages path]**: Provide the path to the total page count in the response body. Optional if you've provided the total count path.
 
-        ![](assets/browsing_8.png)
+        ![Page pagination fields including Total path, Page parameter, Page size parameter, and First page is](assets/browsing_8.png){zoomable="yes"}
 
         +++
 
@@ -74,7 +74,7 @@ Once the integration information is provided, configure the following **Browsing
         * **[!UICONTROL Next cursor source]**: Select where the next cursor value is read from in the response.
         * **[!UICONTROL Next cursor path]**: Provide the path to the next cursor value in the response body.
 
-        ![](assets/browsing_9.png)
+        ![Cursor pagination fields including Total path, Cursor parameter, and Next cursor path](assets/browsing_9.png){zoomable="yes"}
 
         +++
 
@@ -85,9 +85,9 @@ Once the integration information is provided, configure the following **Browsing
 
         For each column, choose the **[!UICONTROL Label]** and the **[!UICONTROL Data path]**. Optionally, select **[!UICONTROL Quick map]** to add several fields as columns at once.
 
-        You can reorder columns as needed, or select ![](assets/do-not-localize/Smock_Delete_18_N.svg) to remove a column.
+        You can reorder columns as needed, or select ![delete](assets/do-not-localize/Smock_Delete_18_N.svg) to remove a column.
 
-        ![](assets/browsing_7.png)
+        ![Table render configuration with Label and Data path defined for each column](assets/browsing_7.png){zoomable="yes"}
 
         +++
 
@@ -99,7 +99,7 @@ Once the integration information is provided, configure the following **Browsing
         * **[!UICONTROL Secondary path]**: Specify the data key for the subtitle.
         * **[!UICONTROL Tag path]**: Specify the data key for the tag badge.
 
-        ![](assets/browsing_6.png)
+        ![List render configuration with Primary path, Secondary path, and Tag path fields](assets/browsing_6.png){zoomable="yes"}
 
         +++
 
@@ -111,7 +111,7 @@ Once the integration information is provided, configure the following **Browsing
         * **[!UICONTROL Image path]**: Specify the data key for the avatar image URL.
         * **[!UICONTROL Description path]**: Provide the data key for the subtitle shown below the name.
 
-        ![](assets/browsing_5.png)
+        ![Avatar render configuration with Name path, Image path, and Description path fields](assets/browsing_5.png){zoomable="yes"}
 
         +++
 
@@ -127,7 +127,7 @@ You can let marketers pick an item from a **[!UICONTROL Browsing]** integration 
 
 1. Choose the Browsing integration to link.
 
-    ![](assets/external-integration-config-12.png)
+    ![Enable browsing option linking a Browsing integration to a Standard integration parameter](assets/external-integration-config-12.png){zoomable="yes"}
 
 1. Save and publish the **[!UICONTROL Standard]** integration.
 
@@ -139,11 +139,11 @@ When a parameter is linked to a **[!UICONTROL Browsing]** integration, marketers
 
     [Learn more on components](../email/content-components.md)
 
-    ![](assets/browsing_10.png)
+    ![Add personalization option in the Text or HTML component](assets/browsing_10.png){zoomable="yes"}
 
 1. Navigate to the **[!UICONTROL Integrations]** section and click **[!UICONTROL Open integrations]** to view all active integrations.
 
-    ![](assets/external-integration-content-2.png)
+    ![Integrations section with the Open integrations option in the content editor](assets/external-integration-content-2.png){zoomable="yes"}
 
 1. Select an integration.
 
@@ -151,7 +151,7 @@ When a parameter is linked to a **[!UICONTROL Browsing]** integration, marketers
 
     The corresponding **[!UICONTROL Reference path]** value is then automatically inserted into the integration parameter.
 
-    ![](assets/browsing_4.png)
+    ![Browsing integration item selector with search and pagination in the content editor](assets/browsing_4.png){zoomable="yes"}
 
 1. Click **[!UICONTROL Save]**.
 
