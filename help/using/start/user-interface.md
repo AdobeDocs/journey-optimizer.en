@@ -381,3 +381,24 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 
 <!-- Asset selector content generation -->
 
+<!--SMS webhooks inbound relay -->
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_relay_auth_body"
+>title="Auth body"
+>abstract="The request body Journey Optimizer sends to the authentication endpoint when requesting a token. Always enter valid JSON, even if Auth Content Type is set to `application/x-www-form-urlencoded`. Journey Optimizer serializes it to the correct format server-side before calling the token endpoint. Example: `{"grant_type":"client_credentials","client_id":"...","client_secret":"...","scope":"..."}`"
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_relay_header_parameters"
+>title="Header Parameters"
+>abstract="Static HTTP headers included with every relay request to the destination endpoint, such as an API key, for example, x-api-key. These are sent alongside any authentication token configured above. Add one header per row as a name/value pair."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_relay_auth_type"
+>title="Authentication Type"
+>abstract="How Journey Optimizer authenticates with the relay destination. Choose **No Authentication** to relay messages without credentials, or **Custom Authentication** to first request a token from an authentication endpoint, for example, an OAuth client-credentials flow, and attach it to every relay request."
+
+>[!CONTEXTUALHELP]
+>id="ajo_admin_sms_webhook_relay_url"
+>title="Relay destination URL"
+>abstract="The HTTPS endpoint Journey Optimizer calls to relay each incoming message. Journey Optimizer sends a separate HTTP POST here per message received. This is distinct from the Auth URL under Custom Authentication, which is used only to obtain an access token, not to receive messages."
