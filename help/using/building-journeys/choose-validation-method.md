@@ -9,6 +9,7 @@ role: User
 level: Beginner, Intermediate
 keywords: test, simulate, simulation, test mode, dry run, journey, validate, compare, choose, decision guide
 version: Journey Orchestration
+hide: true
 ---
 
 # Choose how to test and validate your journey {#choose-validation-method}

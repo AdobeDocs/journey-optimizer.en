@@ -20,6 +20,8 @@ subfeature_v2: []
 
 >[!ENDSHADEBOX]
 
+<!-- Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md). -->
+
 >[!IMPORTANT]
 >
 >* To use **[!UICONTROL Simulation]**, assign at least one permission from the **[!UICONTROL Journeys]** capability: **Simulate journeys**, **Publish journeys**, or **Approve and Publish journeys**. The same permissions let you create and manage simulated users, **[!UICONTROL Simulated Users]** permissions are not required. [Learn more](../administration/permissions.md)
