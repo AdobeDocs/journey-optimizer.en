@@ -26,7 +26,7 @@ subfeature_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how administrators configure, test, and activate external integrations that connect Adobe Journey Optimizer to third-party APIs for personalized, dynamic content in outbound channels.
+**On this page:** Learn how administrators configure, test, and activate external integrations that connect Adobe Journey Optimizer to third-party APIs, so marketers can use them to build personalized, dynamic content in outbound channels.
 
 >[!ENDSHADEBOX]
 

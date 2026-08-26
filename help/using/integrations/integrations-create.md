@@ -13,7 +13,7 @@ keywords: integration
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how administrators configure, test, and activate external integrations that connect Adobe Journey Optimizer to third-party APIs for personalized, dynamic content in outbound channels.
+**On this page:** Learn how administrators configure, test, and activate external integrations that connect Adobe Journey Optimizer to third-party APIs, so marketers can use them to build personalized, dynamic content in outbound channels.
 
 >[!ENDSHADEBOX]
 
@@ -105,8 +105,18 @@ After defining the request, configure how it authenticates and behaves, and shap
     >
     >With retry enabled, other failures retry **three** times by default, with **200 ms**, **400 ms**, and **800 ms** between attempts.
 
+1. For a **POST** method, configure the **[!UICONTROL Payload]** by choosing a **[!UICONTROL Body type]**:
+
+    * **[!UICONTROL JSON]**: Click the ![edit](assets/do-not-localize/Smock_Edit_18_N.svg) icon and paste your JSON request payload. Map the variables you need to fulfill in the payload.
+
+    * **[!UICONTROL GraphQL]**: Paste your GraphQL query. Journey Optimizer generates an **[!UICONTROL Operation name]** automatically and lets you map the corresponding query variables.
+
+        ![](assets/external-integration-config-13.png)
+
+1. Choose the **[!UICONTROL Response type]** between **JSON** and **HTML**.
+
 1. With the **[!UICONTROL Response payload]** field, you can decide which fields of the sample output needs to be used for message personalization. 
-    
+
     Click the ![edit](assets/do-not-localize/Smock_Edit_18_N.svg) icon and paste a sample JSON response payload to automatically detect data types.
 
 1. Choose the fields to expose for personalization and specify their corresponding data types.
