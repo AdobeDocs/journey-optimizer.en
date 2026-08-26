@@ -35,7 +35,7 @@ Once the integration information is provided, configure the following **Browsing
 
 1. In the **[!UICONTROL Pagination configuration]** menu, enable **[!UICONTROL Pagination]** and choose a pagination type:
 
-    * +++ Offset
+    +++ Offset
 
         Configure the following fields to set up **[!UICONTROL Offset]** pagination:
 
@@ -48,7 +48,7 @@ Once the integration information is provided, configure the following **Browsing
 
     +++
 
-    * +++ Page
+    +++ Page
 
         Configure the following fields to set up **[!UICONTROL Page]** pagination:
 
@@ -63,7 +63,7 @@ Once the integration information is provided, configure the following **Browsing
 
     +++
 
-    * +++ Cursor
+    +++ Cursor
 
         Configure the following fields to set up **[!UICONTROL Cursor]** pagination:
 
@@ -81,7 +81,7 @@ Once the integration information is provided, configure the following **Browsing
 
 1. From the **[!UICONTROL Render]** menu, choose how items are displayed to marketers:
 
-    * +++ Table
+    +++ Table
 
         For each column, choose the **[!UICONTROL Label]** and the **[!UICONTROL Data path]**. Optionally, select **[!UICONTROL Quick map]** to add several fields as columns at once.
 
@@ -91,7 +91,7 @@ Once the integration information is provided, configure the following **Browsing
 
     +++
 
-    * +++ List
+    +++ List
 
         Fill in the following details:
 
@@ -103,7 +103,7 @@ Once the integration information is provided, configure the following **Browsing
 
     +++
 
-    * +++ Avatar
+    +++ Avatar
 
         Fill in the following details:
 
