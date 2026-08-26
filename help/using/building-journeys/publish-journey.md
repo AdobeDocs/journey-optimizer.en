@@ -51,7 +51,7 @@ Before publishing, make sure your journey meets the following prerequisites:
 * **No validation errors** — You cannot publish a journey that contains errors. [Test your journey](testing-the-journey.md) first, and [troubleshoot any activity errors](../building-journeys/troubleshooting.md#activity-errors).
 * **Publish permission** — Publishing requires the **[!DNL Publish journeys]** high-level permission. Learn more about [managing access rights](../administration/permissions-overview.md).
 * **Payload within limit** — The journey payload must be within the configured limit (4 MB by default). See [Journey payload size validation](../start/guardrails.md#journey-payload-size).
-* **Approval obtained** — If your journey is subject to an approval policy, request and obtain approval before publishing. [Learn more](../test-approve/gs-approval.md).
+* **Approval policy compliance** — If your journey is subject to an approval policy, publishing submits it for approval instead of publishing it right away. Once an approver signs off, the journey is published automatically — there's no separate publish step to perform afterward. [Learn more](../test-approve/gs-approval.md).
 
 ### Choose the right validation method before publishing {#choose-validation-method}
 
@@ -59,11 +59,11 @@ Validate your journey using one of the available testing options. Each uses a di
 
 | Option | Data used | Best for | Sends real messages? |
 | --- | --- | --- | --- |
-| [Simulation](simulate-journey-gs.md) | Temporary simulated users, auto-generated | Fast iteration during journey design — no need to create or wait for AEP test profiles to propagate | No |
+| [Simulation](simulate-journey-gs.md) | Temporary simulated users, manually created or auto-generated | Fast iteration during journey design — no need to create or wait for AEP test profiles to propagate | Yes — to the execution addresses defined at the simulated user level |
 | [Test mode](testing-the-journey.md) | Persistent AEP test profiles | Step-by-step manual validation of branch and message logic in a draft journey | Yes — to the test profiles' real inboxes, using the same delivery pipeline as production |
 | [Dry run](journey-dry-run.md) | Real production audience data | Final pre-launch check of actual audience reach and targeting at scale, without contacting anyone | No |
 
-Neither Simulation nor Dry run delivers real communications or updates live profile data. Test mode does deliver real messages, but only to profiles you have explicitly flagged as test profiles.
+Dry run never delivers real communications or updates live profile data. Simulation and Test mode do deliver real messages — Simulation to the execution addresses defined on the simulated users, and Test mode to the real inboxes of profiles you have explicitly flagged as test profiles.
 
 ## Publication process {#journey-publication}
 
@@ -75,7 +75,7 @@ Steps to publish a journey are detailed below:
 
     >[!NOTE]
     >
-    > If your journey is subject to an approval policy, you must request approval to publish your journey. [Learn more](../test-approve/gs-approval.md)
+    > If your journey is subject to an approval policy, clicking **[!UICONTROL Publish]** submits the journey for approval instead of publishing it right away. Once an approver signs off, the journey is published automatically — you don't need to publish it again. [Learn more](../test-approve/gs-approval.md)
 
     ![Publish button in journey toolbar to activate the journey](assets/journeyuc1_18.png)
 
