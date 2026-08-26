@@ -431,7 +431,7 @@ Learn more about [Journey Fragments](journey-fragments.md).
 
 Journey Optimizer offers three validation methods:
 
-* **Journey Simulation**: Validate your journey with temporary, auto-generated simulated users — no need to create or wait for real test profiles. Best for fast iteration during journey design.
+* **Journey Simulation**: Validate your journey with temporary simulated users, manually created or auto-generated — no need to create or wait for real test profiles. Best for fast iteration during journey design.
 * **Test mode**: Walk real (but designated test) profiles through the journey step by step, allowing you to verify logic, conditions, and actions before going live.
 * **Dry run mode**: Execute your journey using real production data without contacting actual customers or updating profile information. This gives you confidence in audience targeting and journey design.
 

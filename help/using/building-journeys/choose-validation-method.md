@@ -29,13 +29,17 @@ version: Journey Orchestration
 
 **When to use:** Fast iteration during journey design, especially right before a deadline or when testing new decision-policy branches.
 
-[Journey Simulation](simulate-journey-gs.md) validates your journey with temporary, auto-generated simulated users — no need to create or wait for real Adobe Experience Platform (AEP) test profiles to propagate. The Journey Simulation Agent automatically generates the test events your journey needs and matches them to the right simulated users, triggering the journey in seconds.
+[Journey Simulation](simulate-journey-gs.md) validates your journey with temporary simulated users, manually created or auto-generated — no need to create or wait for real Adobe Experience Platform (AEP) test profiles to propagate. The Journey Simulation Agent automatically generates the test events your journey needs and matches them to the right simulated users, triggering the journey in seconds.
 
 Key mechanics:
 
 * Simulated users are temporary and disposable; they are not real profiles in AEP.
 * Exit criteria, consent policies, frequency/journey capping, opt-out/suppression, and quiet hours are not evaluated.
 * Custom actions and external data source calls still make real outbound calls — they are not mocked.
+
+>[!IMPORTANT]
+>
+>Simulation sends real messages to the execution addresses (email, phone, push token) configured on the simulated users — for example, your own email address — using the same delivery pipeline as production. It doesn't contact real customers or update live profile data, but the messages themselves are real.
 
 **Perfect for:** Validating a new branch (for example, two new decision-policy paths) without waiting on AEP test-profile propagation.
 
@@ -84,7 +88,7 @@ Key mechanics:
 
 The answer usually comes down to one question: *how close to production do you need this test to be?*
 
-If you're still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation**. It needs no real profiles and runs in seconds.
+If you're still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation**. It needs no real profiles and runs in seconds. Just remember it sends real messages to the execution addresses configured on the simulated users.
 
 If you need to **manually verify branch and message logic step by step**, and you're willing to create or reuse AEP test profiles, use **Test mode**. Just remember it sends real messages to those test profiles' real inboxes.
 
@@ -96,11 +100,11 @@ If you're about to **publish** and want a final check against your actual produc
 
 ## Quick comparison {#quick-comparison}
 
-| Method | Data used | Contacts customers? | Updates profiles? | Best for |
-|---|---|---|---|---|
-| [Journey Simulation](simulate-journey-gs.md) | Temporary simulated users, auto-generated | No | No | Fast iteration, especially for new decision-policy branches, without waiting on real test-profile propagation |
-| [Test mode](testing-the-journey.md) | Persistent AEP test profiles | No | No (test profiles only) | Manually verifying branch/message logic step by step in a draft journey |
-| [Journey Dry run](journey-dry-run.md) | Real production audience/data | No (actions bypassed) | No | Final pre-launch check of actual audience reach, targeting, and branch logic at real scale |
+| Method | Data used | Sends real messages? | Contacts customers? | Updates profiles? | Best for |
+|---|---|---|---|---|---|
+| [Journey Simulation](simulate-journey-gs.md) | Temporary simulated users, manually created or auto-generated | Yes — to the execution addresses configured on the simulated users | No | No | Fast iteration, especially for new decision-policy branches, without waiting on real test-profile propagation |
+| [Test mode](testing-the-journey.md) | Persistent AEP test profiles | Yes — to the test profiles' real inboxes, using the production delivery pipeline | No | No (test profiles only) | Manually verifying branch/message logic step by step in a draft journey |
+| [Journey Dry run](journey-dry-run.md) | Real production audience/data | No (actions bypassed) | No | No | Final pre-launch check of actual audience reach, targeting, and branch logic at real scale |
 
 ## Next steps {#next-steps}
 
@@ -130,7 +134,7 @@ For complete understanding, this information should be combined with the documen
 
 **Glossary:**
 
-* **Journey Simulation**: A validation method that uses temporary, auto-generated simulated users to test a journey without needing real AEP test profiles. *(product-specific)*
+* **Journey Simulation**: A validation method that uses temporary simulated users, manually created or auto-generated, to test a journey without needing real AEP test profiles. *(product-specific)*
 * **Test mode**: A validation method that uses persistent AEP test profiles, flagged in Real-time Customer Profile, to manually walk through a draft journey's branch and message logic. *(product-specific)*
 * **Journey Dry run**: A publication mode that runs a journey against real production audience data without contacting customers or updating profile data; action nodes are bypassed. *(product-specific)*
 * **Simulation Agent**: The mechanism that automatically generates test events and matches them to simulated users during Journey Simulation. *(product-specific)*
@@ -139,10 +143,11 @@ For complete understanding, this information should be combined with the documen
 
 * Test mode is only available for draft journeys that use a namespace, and supports a maximum of 100 test profiles per session
 * Test mode events can only be fired from the interface, not from external systems via API
-* Test mode sends real messages to test profiles' real inboxes using the production delivery pipeline — unlike Journey Simulation and Journey Dry run
+* Test mode sends real messages to test profiles' real inboxes using the production delivery pipeline
 * Disabling test mode removes all profiles that entered the journey and clears its reporting
 * Journey Simulation does not evaluate exit criteria, consent policies, frequency/journey capping, opt-out/suppression, or quiet hours
 * Journey Simulation's custom actions and external data source calls are real, not mocked
+* Journey Simulation sends real messages to the execution addresses (email, phone, push token) configured on the simulated users, using the same delivery pipeline as production — unlike Journey Dry run, which never sends real messages
 * Journey Dry run is currently a Limited Availability feature, being rolled out globally over time
 * Journey Dry run bypasses action nodes (email, SMS, custom actions) but still routes profiles through branches and nodes using real production data
 
@@ -151,11 +156,12 @@ For complete understanding, this information should be combined with the documen
 * Canonical name: Journey Simulation — variants: simulate, simulation mode
 * Canonical name: Test mode — variants: journey testing, test your journey
 * Canonical name: Journey Dry run — variants: dry run, dry run mode
-* Do not confuse: Journey Simulation (temporary simulated users, no AEP test profiles needed) ≠ Test mode (persistent AEP test profiles, sends real messages to those profiles) ≠ Journey Dry run (real production audience data, no contact, no profile update, action nodes bypassed)
+* Do not confuse: Journey Simulation (temporary simulated users, no AEP test profiles needed, sends real messages to the simulated users' configured execution addresses) ≠ Test mode (persistent AEP test profiles, sends real messages to those profiles' real inboxes) ≠ Journey Dry run (real production audience data, no contact, no profile update, action nodes bypassed, never sends real messages)
 
 **FAQ:**
 
 * **Q: Which validation method should I use while I'm still designing a journey?** — Use Journey Simulation; it needs no real test profiles and runs in seconds, making it ideal for fast iteration.
+* **Q: Does Journey Simulation send real messages?** — Yes. Simulation delivers real messages to the execution addresses (email, phone, push token) configured on the simulated users — often the tester's own address — using the same delivery pipeline as production. It does not contact real customers or update live profile data, but the messages themselves are real.
 * **Q: Does Test mode send real emails or SMS?** — Yes. Test mode delivers real messages to the actual inboxes of your test profiles, using the same delivery pipeline as production. It does not contact real customers, but the messages themselves are real.
 * **Q: Does Journey Dry run send any messages?** — No. Dry run bypasses action nodes such as email, SMS, and custom actions, so profiles flow through the journey logic without any message being sent.
 * **Q: I need to validate a new branch quickly before a deadline. Which method fits?** — Journey Simulation; it generates disposable simulated users on demand instead of requiring you to pre-create and wait for real test profiles.
