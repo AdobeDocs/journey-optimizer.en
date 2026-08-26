@@ -7,7 +7,6 @@ feature: Content Assistant
 topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner
-hide: true
 ---
 # C2PA metadata in AI Assistant {#generative-content-credentials}
 
