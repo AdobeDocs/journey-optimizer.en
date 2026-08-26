@@ -49,3 +49,4 @@ Some ways of bringing images into your content, such as extracting an image from
 
 * [Adobe Experience Cloud Generative AI User Guidelines](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html){target="_blank"}
 * [Guardrails and limitations](gs-generative.md#generative-guardrails)
+* [Generative AI content transparency](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency#related-links)
