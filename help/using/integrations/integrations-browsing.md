@@ -37,12 +37,12 @@ Once the integration information is provided, configure the following **Browsing
 
     +++ Offset
 
-        Configure the following fields to set up **[!UICONTROL Offset]** pagination:
+    Configure the following fields to set up **[!UICONTROL Offset]** pagination:
 
-        * **[!UICONTROL Total path]**: Provide the path to the total result count in the response body.
-        * **[!UICONTROL Offset parameter]**: Specify the request parameter that indicates the number of items to skip.
-        * **[!UICONTROL Limit parameter]**: Specify the request parameter that indicates the number of items to return.
-        * **[!UICONTROL Page size]**: Set the number of items to request per page.
+    * **[!UICONTROL Total path]**: Provide the path to the total result count in the response body.
+    * **[!UICONTROL Offset parameter]**: Specify the request parameter that indicates the number of items to skip.
+    * **[!UICONTROL Limit parameter]**: Specify the request parameter that indicates the number of items to return.
+    * **[!UICONTROL Page size]**: Set the number of items to request per page.
         
         ![Offset pagination fields including Total path, Offset parameter, Limit parameter, and Page size](assets/browsing_3.png){zoomable="yes"}
 
@@ -50,14 +50,14 @@ Once the integration information is provided, configure the following **Browsing
 
     +++ Page
 
-        Configure the following fields to set up **[!UICONTROL Page]** pagination:
+    Configure the following fields to set up **[!UICONTROL Page]** pagination:
 
-        * **[!UICONTROL Total path]**: Provide the path to the total result count in the response body.
-        * **[!UICONTROL Page parameter]**: Specify the request parameter that indicates the page number.
-        * **[!UICONTROL Page size parameter]**: Specify the request parameter that indicates the number of items per page.
-        * **[!UICONTROL Page size]**: Set the number of items to request per page.
-        * **[!UICONTROL First page is]**: Select whether the first page in the sequence is numbered 0 or 1.
-        * **[!UICONTROL Total pages path]**: Provide the path to the total page count in the response body. Optional if you've provided the total count path.
+    * **[!UICONTROL Total path]**: Provide the path to the total result count in the response body.
+    * **[!UICONTROL Page parameter]**: Specify the request parameter that indicates the page number.
+    * **[!UICONTROL Page size parameter]**: Specify the request parameter that indicates the number of items per page.
+    * **[!UICONTROL Page size]**: Set the number of items to request per page.
+    * **[!UICONTROL First page is]**: Select whether the first page in the sequence is numbered 0 or 1.
+    * **[!UICONTROL Total pages path]**: Provide the path to the total page count in the response body. Optional if you've provided the total count path.
 
         ![Page pagination fields including Total path, Page parameter, Page size parameter, and First page is](assets/browsing_8.png){zoomable="yes"}
 
@@ -65,14 +65,14 @@ Once the integration information is provided, configure the following **Browsing
 
     +++ Cursor
 
-        Configure the following fields to set up **[!UICONTROL Cursor]** pagination:
+    Configure the following fields to set up **[!UICONTROL Cursor]** pagination:
 
-        * **[!UICONTROL Total path]**: Provide the path to the total result count in the response body.
-        * **[!UICONTROL Cursor parameter]**: Specify the request parameter that carries the cursor value.
-        * **[!UICONTROL Limit parameter]**: Specify the request parameter that indicates the number of items to return.
-        * **[!UICONTROL Page size]**: Set the number of items to request per page.
-        * **[!UICONTROL Next cursor source]**: Select where the next cursor value is read from in the response.
-        * **[!UICONTROL Next cursor path]**: Provide the path to the next cursor value in the response body.
+    * **[!UICONTROL Total path]**: Provide the path to the total result count in the response body.
+    * **[!UICONTROL Cursor parameter]**: Specify the request parameter that carries the cursor value.
+    * **[!UICONTROL Limit parameter]**: Specify the request parameter that indicates the number of items to return.
+    * **[!UICONTROL Page size]**: Set the number of items to request per page.
+    * **[!UICONTROL Next cursor source]**: Select where the next cursor value is read from in the response.
+    * **[!UICONTROL Next cursor path]**: Provide the path to the next cursor value in the response body.
 
         ![Cursor pagination fields including Total path, Cursor parameter, and Next cursor path](assets/browsing_9.png){zoomable="yes"}
 
@@ -83,35 +83,35 @@ Once the integration information is provided, configure the following **Browsing
 
     +++ Table
 
-        For each column, choose the **[!UICONTROL Label]** and the **[!UICONTROL Data path]**. Optionally, select **[!UICONTROL Quick map]** to add several fields as columns at once.
+    For each column, choose the **[!UICONTROL Label]** and the **[!UICONTROL Data path]**. Optionally, select **[!UICONTROL Quick map]** to add several fields as columns at once.
 
-        You can reorder columns as needed, or select ![delete](assets/do-not-localize/Smock_Delete_18_N.svg) to remove a column.
+    You can reorder columns as needed, or select ![delete](assets/do-not-localize/Smock_Delete_18_N.svg) to remove a column.
 
-        ![Table render configuration with Label and Data path defined for each column](assets/browsing_7.png){zoomable="yes"}
+    ![Table render configuration with Label and Data path defined for each column](assets/browsing_7.png){zoomable="yes"}
 
     +++
 
     +++ List
 
-        Fill in the following details:
+    Fill in the following details:
 
-        * **[!UICONTROL Primary path]**: Provide the data key for the main label of each item.
-        * **[!UICONTROL Secondary path]**: Specify the data key for the subtitle.
-        * **[!UICONTROL Tag path]**: Specify the data key for the tag badge.
+    * **[!UICONTROL Primary path]**: Provide the data key for the main label of each item.
+    * **[!UICONTROL Secondary path]**: Specify the data key for the subtitle.
+    * **[!UICONTROL Tag path]**: Specify the data key for the tag badge.
 
-        ![List render configuration with Primary path, Secondary path, and Tag path fields](assets/browsing_6.png){zoomable="yes"}
+    ![List render configuration with Primary path, Secondary path, and Tag path fields](assets/browsing_6.png){zoomable="yes"}
 
     +++
 
     +++ Avatar
 
-        Fill in the following details:
+    Fill in the following details:
 
-        * **[!UICONTROL Name path]**: Specify the data key for the display name shown below the avatar.
-        * **[!UICONTROL Image path]**: Specify the data key for the avatar image URL.
-        * **[!UICONTROL Description path]**: Provide the data key for the subtitle shown below the name.
+    * **[!UICONTROL Name path]**: Specify the data key for the display name shown below the avatar.
+    * **[!UICONTROL Image path]**: Specify the data key for the avatar image URL.
+    * **[!UICONTROL Description path]**: Provide the data key for the subtitle shown below the name.
 
-        ![Avatar render configuration with Name path, Image path, and Description path fields](assets/browsing_5.png){zoomable="yes"}
+    ![Avatar render configuration with Name path, Image path, and Description path fields](assets/browsing_5.png){zoomable="yes"}
 
     +++
 
