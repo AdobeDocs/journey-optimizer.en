@@ -46,7 +46,7 @@ Once the integration information is provided, configure the following **Browsing
         
         ![Offset pagination fields including Total path, Offset parameter, Limit parameter, and Page size](assets/browsing_3.png){zoomable="yes"}
 
-        +++
+    +++
 
     * +++ Page
 
@@ -61,7 +61,7 @@ Once the integration information is provided, configure the following **Browsing
 
         ![Page pagination fields including Total path, Page parameter, Page size parameter, and First page is](assets/browsing_8.png){zoomable="yes"}
 
-        +++
+    +++
 
     * +++ Cursor
 
@@ -76,7 +76,7 @@ Once the integration information is provided, configure the following **Browsing
 
         ![Cursor pagination fields including Total path, Cursor parameter, and Next cursor path](assets/browsing_9.png){zoomable="yes"}
 
-        +++
+    +++
 
 
 1. From the **[!UICONTROL Render]** menu, choose how items are displayed to marketers:
@@ -89,7 +89,7 @@ Once the integration information is provided, configure the following **Browsing
 
         ![Table render configuration with Label and Data path defined for each column](assets/browsing_7.png){zoomable="yes"}
 
-        +++
+    +++
 
     * +++ List
 
@@ -101,7 +101,7 @@ Once the integration information is provided, configure the following **Browsing
 
         ![List render configuration with Primary path, Secondary path, and Tag path fields](assets/browsing_6.png){zoomable="yes"}
 
-        +++
+    +++
 
     * +++ Avatar
 
@@ -113,7 +113,7 @@ Once the integration information is provided, configure the following **Browsing
 
         ![Avatar render configuration with Name path, Image path, and Description path fields](assets/browsing_5.png){zoomable="yes"}
 
-        +++
+    +++
 
 1. Click **[!UICONTROL Test browsing]** to preview the search and pagination behavior with the configured settings.
 
