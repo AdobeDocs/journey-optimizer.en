@@ -128,6 +128,23 @@ Availability date: August 20, 2026
 <table>
 <thead>
 <tr>
+<th><strong>Generate expressions with AI in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The journey advanced expression editor now integrates AI-powered expression generation: describe the expression you want to build in natural language, and the editor generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Availability date: August 31, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey-level holdout (Limited availability)</strong><br/></th>
 </tr>
 </thead>

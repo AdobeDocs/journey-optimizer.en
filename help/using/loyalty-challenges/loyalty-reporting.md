@@ -17,6 +17,8 @@ Use Loyalty Challenges reporting to see how your challenges are performing. Chec
 
 To open the reporting dashboards, go to **[!UICONTROL Loyalty Challenges]** in Journey Optimizer and select **[!UICONTROL Performance]** in the left navigation.
 
+➡️ [Watch how to measure challenge performance with challenge reports](#video)
+
 The reporting interface has two tabs:
 
 * **[Reports](#reports-view)**: Numbers and charts for your challenges.
@@ -84,3 +86,8 @@ Each card carries a **category tag** that identifies which part of your program 
 | **Member lifecycle** | How members progress through enrollment, engagement, and churn stages |
 | **Trend** | Time-based patterns such as weekly cycles, seasonal spikes, or trend reversals |
 
+## How-to videos {#video}
+
+➡️ Watch how to measure challenge performance with challenge reports
+
+>[!VIDEO](https://video.tv.adobe.com/v/3497534?quality=12)
