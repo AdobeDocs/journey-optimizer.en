@@ -61,11 +61,11 @@ Key mechanics:
 
 **When to use:** Manually verifying branch and message logic step by step, with real (but designated test) profiles walking through your draft journey.
 
-[Journey Test mode](testing-the-journey.md) lets you validate a draft journey using persistent [AEP test profiles](../audience/creating-test-profiles.md). You fire events manually from the interface to confirm that branching logic and message delivery mechanics work as designed, before any production audience touches the journey.
+[Journey Test mode](testing-the-journey.md) lets you validate a draft journey using persistent [AEP test profiles](../audience/creating-test-profiles.md). To confirm that branching logic and message delivery mechanics work as designed before any production audience touches the journey, fire events manually from the interface.
 
 Key mechanics:
 
-* Only profiles flagged as "test profiles" in Real-time Customer Profile can enter a journey in Journey Test mode.
+* Only profiles flagged as "test profiles" in Real-Time Customer Profile can enter a journey in Journey Test mode.
 * Journey Test mode is available only for draft journeys that use a [namespace](../audience/get-started-identity.md), since it must check against AEP whether a person is a test profile.
 * A maximum of 100 test profiles can enter a journey during a single test session, and events can only be fired from the interface, not from external systems via API.
 * Disabling Journey Test mode removes all profiles that entered the journey and clears reporting.
@@ -87,7 +87,7 @@ Key mechanics:
 Key mechanics:
 
 * Uses your actual production audience, so you see real reach and targeting at scale (for example, catching a bug where an entire branch unexpectedly receives zero profiles).
-* On each activation, you can choose to disable wait activities (so metrics come back faster) and disable external data source calls (so the journey stays fully siloed).
+* On each activation, to get metrics back faster you can disable wait activities, and to keep the journey fully siloed you can disable external data source calls.
 * This is currently a **Limited Availability** feature, being rolled out globally over time.
 
 **Perfect for:** Catching issues like mistyped condition nodes or audiences that unexpectedly do not reach a branch, right before flipping the journey live.
@@ -102,7 +102,7 @@ Start with a simple question: do you already have test profiles that fit your us
 
 Beyond that choice, the answer usually comes down to one more question: *how close to production do you need this test to be?*
 
-If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation** to validate your journey's logic. It needs no real profiles and runs in seconds, and it remains a valid choice later in your build too, whenever creating suitable test profiles for your use case is not practical. Just remember it sends real messages to the execution addresses configured on the simulated users.
+If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation**. It needs no real profiles and runs in seconds, and it remains a valid choice later in your build too, whenever creating suitable test profiles for your use case is not practical. Just remember it sends real messages to the execution addresses configured on the simulated users.
 
 If you need to **manually verify branch and message logic step by step**, and you are willing to create or reuse AEP test profiles, use **Journey Test mode**. Just remember it sends real messages to those test profiles' real inboxes.
 
@@ -128,7 +128,7 @@ None of these methods contact real customers. Profile data is also left untouche
 * **Creating AEP test profiles when Journey Simulation would do.** If you just need to validate a new branch or decision-policy path quickly, Simulation skips the wait for test-profile propagation entirely — save Journey Test mode for when you actually need real test profiles.
 * **Treating Journey Test mode as "dry."** Journey Test mode profiles receive real messages through the production delivery pipeline. Make sure your test profiles only use addresses you control.
 * **Expecting Journey Dry run to catch content or delivery issues.** Dry run bypasses action nodes entirely — it validates audience reach and branch logic, not message content or delivery mechanics. Use Simulation or Journey Test mode for that.
-* **Forgetting the namespace requirement for Journey Test mode.** Journey Test mode only works on draft journeys that use a namespace — without one, Journey Optimizer cannot check whether a profile is flagged as a test profile.
+* **Forgetting the namespace requirement for Journey Test mode.** Journey Test mode only works on draft journeys that use a namespace, because Journey Optimizer needs a namespace to check whether a profile is flagged as a test profile.
 
 ## Next steps {#next-steps}
 
@@ -161,7 +161,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 
 * **Journey Simulation**: A validation method that uses temporary simulated users, manually created or auto-generated, to test a journey without needing real AEP test profiles. *(product-specific)*
-* **Journey Test mode**: A validation method that uses persistent AEP test profiles, flagged in Real-time Customer Profile, to manually walk through a draft journey's branch and message logic. *(product-specific)*
+* **Journey Test mode**: A validation method that uses persistent AEP test profiles, flagged in Real-Time Customer Profile, to manually walk through a draft journey's branch and message logic. *(product-specific)*
 * **Journey Dry run**: A publication mode that runs a journey against real production audience data without contacting customers or updating profile data; action nodes are bypassed. *(product-specific)*
 * **Simulation Agent**: The mechanism that automatically generates test events and matches them to simulated users during Journey Simulation. *(product-specific)*
 
