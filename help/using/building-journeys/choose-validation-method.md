@@ -103,9 +103,11 @@ Key mechanics:
 
 ## Which method should you use? {#decision-guide}
 
-The answer usually comes down to one question: *how close to production do you need this test to be?*
+Start with a simple question: do you already have test profiles that fit your use case? If yes, **Test mode** lets you validate step by step with them. If not — or if creating them for this particular use case is not practical — **Journey Simulation** gets you validated in seconds instead.
 
-If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation** to validate your journey's logic. It needs no real profiles and runs in seconds, and it remains a valid choice later in your build too, whenever creating suitable test profiles for your use case isn't practical. Just remember it sends real messages to the execution addresses configured on the simulated users.
+Beyond that choice, the answer usually comes down to one more question: *how close to production do you need this test to be?*
+
+If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation** to validate your journey's logic. It needs no real profiles and runs in seconds, and it remains a valid choice later in your build too, whenever creating suitable test profiles for your use case is not practical. Just remember it sends real messages to the execution addresses configured on the simulated users.
 
 If you need to **manually verify branch and message logic step by step**, and you are willing to create or reuse AEP test profiles, use **Test mode**. Just remember it sends real messages to those test profiles' real inboxes.
 
