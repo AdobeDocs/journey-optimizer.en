@@ -44,7 +44,7 @@ Understand how to set up, manage, and execute approval processes to ensure quali
 
 Test Your Journey
 
-Validate your journey before publishing by testing it with specific profiles to ensure events, conditions, and actions work as expected. Available for draft journeys that use a namespace.
+Validate your journey before publishing by testing it with specific profiles to ensure events, conditions, and actions work as expected. Available for draft journeys that use a namespace. For fast iteration without test profiles, use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) instead.
 
 [Test your journey](../using/building-journeys/testing-the-journey.md)
 :::
@@ -232,14 +232,18 @@ The right testing approach depends on what you're building and what you need to 
 
 **For all journeys:**
 
-* Use [test mode](../using/building-journeys/testing-the-journey.md) to simulate profile progression (draft journeys only, requires namespace) or [dry run](../using/building-journeys/journey-dry-run.md) to analyze execution paths without sending messages
+* Use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) to quickly test a branch with temporary simulated users, no test profiles required
+* Use [test mode](../using/building-journeys/testing-the-journey.md) to manually walk through branch and message logic with real AEP test profiles (draft journeys only, requires namespace)
+* Use [dry run](../using/building-journeys/journey-dry-run.md) to check actual audience reach and branch logic at scale, right before publishing, without sending messages
 * Test individual messages using [preview and proofs](../using/content-management/preview-test.md)
 * Check [conflicts](../using/conflict-prioritization/conflicts.md) with other journeys and campaigns
 * Submit for [approval](../using/test-approve/gs-approval.md) before publishing
 
+<!-- Not sure which of the three journey validation methods to use? See [Choose how to test and validate your journey](../using/building-journeys/choose-validation-method.md) for a full comparison. -->
+
 **For complex journeys:**
 
-* Use test mode and dry run together to thoroughly validate branching logic and execution paths
+* Use Journey Simulation while iterating on branch logic, then test mode and dry run together to thoroughly validate branching logic and execution paths before publishing
 * Test different entry conditions and profile attributes systematically
 
 **Note:** Conflict detection and journey capping are available for unitary, Audience Qualification, and Read Audience journeys only.
@@ -273,6 +277,8 @@ To maximize the effectiveness of your testing efforts, follow these recommended 
 
 1. **Use seed lists for stakeholder monitoring** - Configure [seed lists](../using/configuration/seed-lists.md) to automatically include internal stakeholders who will receive copies of all deliveries at execution time for quality monitoring and compliance verification (email channel only).
 
+1. **Iterate with Journey Simulation before creating test profiles** - Use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) to quickly validate a new branch or decision-policy path with temporary simulated users, saving [test mode](../using/building-journeys/testing-the-journey.md) for when you need to manually walk through the journey with real AEP test profiles.
+
 1. **Simulate journey paths** - For complex journeys with multiple branches, use [test mode](../using/building-journeys/testing-the-journey.md) to test different entry conditions and profile attributes to validate all possible paths. Available for draft journeys that use a namespace.
 
 1. **Check deliverability indicators** - Review [spam scores](../using/content-management/spam-report.md), authentication status, and email health metrics before large sends (email channel only).
@@ -289,7 +295,7 @@ Follow this 4-phase approach to validate your campaigns and journeys before laun
 |-------|-------------|-------------|
 | **1. Content validation** | Personalization, design, rendering | [Preview with test profiles](../using/content-management/preview-test.md), test [multiple variations](../using/test-approve/simulate-sample-input.md) with CSV/JSON, verify [rendering](../using/content-management/rendering.md) across devices |
 | **2. Technical checks** | Deliverability, links, conflicts | Run [spam score checks](../using/content-management/spam-report.md), validate links, check for [conflicts](../using/conflict-prioritization/conflicts.md) with other campaigns |
-| **3. Journey logic** (journeys only) | Entry conditions, flow, branching | Use [test mode](../using/building-journeys/testing-the-journey.md) to simulate progression, run [dry run](../using/building-journeys/journey-dry-run.md) for complex paths |
+| **3. Journey logic** (journeys only) | Entry conditions, flow, branching | Use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) for fast iteration, [test mode](../using/building-journeys/testing-the-journey.md) to walk through logic with real test profiles, and [dry run](../using/building-journeys/journey-dry-run.md) for a final check at scale <!-- — see [how to choose](../using/building-journeys/choose-validation-method.md) --> |
 | **4. Pre-launch** | Settings, approvals, monitoring | Submit for [approval](../using/test-approve/gs-approval.md), verify schedules and audiences, enable [alerts](../using/reports/alerts.md) |
 
 **Pro tip:** Start with the [personalization playground](../using/personalization/personalize.md#playground) to test expressions before building content, and always check [conflict detection](../using/conflict-prioritization/conflicts.md) before launch to prevent over-messaging.
@@ -354,7 +360,9 @@ Familiarize yourself with these essential testing concepts to better understand 
 
 **[Test profiles](../using/content-management/test-profiles.md)** - Synthetic customer profiles (not real customers) used to preview personalized content. Flagged in Real-time Customer Profile Service. Required for test mode and content preview. [Learn how to create test profiles](../using/audience/creating-test-profiles.md)
 
-**[Test mode](../using/building-journeys/testing-the-journey.md)** - Journey simulation feature that sends test profiles through journey paths. Limitations: Draft journeys only, requires namespace, test profiles only. [See test mode documentation](../using/building-journeys/testing-the-journey.md)
+**[Journey Simulation](../using/building-journeys/simulate-journey-gs.md)** - Validation method that runs a journey with temporary simulated users, manually created or auto-generated, instead of real AEP test profiles. Use case: Fast iteration during journey design. [Get started with journey simulation](../using/building-journeys/simulate-journey-gs.md)
+
+**[Test mode](../using/building-journeys/testing-the-journey.md)** - Journey validation feature that sends real AEP test profiles through journey paths. Limitations: Draft journeys only, requires namespace, test profiles only. [See test mode documentation](../using/building-journeys/testing-the-journey.md)
 
 **[Dry run](../using/building-journeys/journey-dry-run.md)** - Journey execution analysis tool that traces paths without sending messages or making API calls. Use case: Validate logic without consuming resources. [Learn about dry run](../using/building-journeys/journey-dry-run.md)
 
@@ -422,13 +430,13 @@ Understand how testing capabilities connect to each other and to your broader Jo
 * Testing + Content experiments - Performance optimization
 * Testing + Reporting - Continuous improvement cycle
 * Test profiles + Personalization - Content validation
-* Dry run + Test mode - Comprehensive journey validation
+* Journey Simulation + Test mode + Dry run - Comprehensive journey validation
 
 ### Common capability combinations
 
 * Content testing: Test profiles + Sample input data + Personalization playground
 * Email validation: Rendering tests + Spam scores + Test profiles + Proofs
-* Journey validation: Test mode + Dry run + Test profiles
+* Journey validation: Journey Simulation + Test mode + Dry run + Test profiles
 * Pre-launch checklist: All technical tests + Conflict detection + Approval workflows
 
 >[!TAB Common questions]
@@ -445,11 +453,12 @@ Understand how testing capabilities connect to each other and to your broader Jo
 **Alternative:** Create 3-5 representative [test profiles](../using/audience/creating-test-profiles.md) covering key segments
 **Learning tool:** Experiment first in [personalization playground](../using/personalization/personalize.md#playground)
 
-### Q: What's the difference between test mode and dry run for journeys?
+### Q: What's the difference between Journey Simulation, test mode, and dry run?
 
-**Test mode:** Sends test profiles through journey, triggers actual actions, generates test messages. Requires draft journey + namespace.
-**Dry run:** Traces execution paths without sending anything. Works on any journey status. No messages sent, no actions executed.
-**Use together:** Test mode for message testing + Dry run for logic validation - comprehensive coverage.
+**Journey Simulation:** Runs the journey with temporary simulated users, no real AEP test profiles needed. Sends real messages to the simulated users' configured addresses.
+**Test mode:** Sends real AEP test profiles through the journey, triggers actual actions, generates test messages. Requires draft journey + namespace.
+**Dry run:** Traces execution paths against real production audience data without sending anything. No messages sent, no actions executed.
+**Use together:** Journey Simulation while iterating on design, test mode for manual message/logic testing with real test profiles, dry run for a final logic check at scale.<!-- See [Choose how to test and validate your journey](../using/building-journeys/choose-validation-method.md) for a full comparison. -->
 
 ### Q: Can I test journeys in production/live status?
 
