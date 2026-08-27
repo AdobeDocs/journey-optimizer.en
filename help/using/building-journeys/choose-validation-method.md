@@ -15,11 +15,11 @@ version: Journey Orchestration
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Compare Journey Simulation, Journey Test mode, and Journey Dry run, and learn which one fits your current stage of building a journey — from fast iteration during design to a final pre-launch check against your live audience.
+**On this page:** Compare Journey Simulation, Journey Test mode, and Journey Dry run. Learn which one fits your current stage of building a journey — from fast iteration during design to a final pre-launch check against your live audience.
 
 >[!ENDSHADEBOX]
 
-[!DNL Adobe Journey Optimizer] gives you three ways to validate a journey before it goes live. They are not interchangeable: each uses a different kind of data, fits a different stage of your build, and carries different real-world consequences. Understanding the difference up front helps you avoid two common mistakes — spending time creating test profiles when a quick simulation would do, or assuming a validation step is fully "safe" when it can still contact real inboxes or make real outbound calls.
+[!DNL Adobe Journey Optimizer] gives you three ways to validate a journey before it goes live. They are not interchangeable: each uses a different kind of data, fits a different stage of your build, and carries different real-world consequences. Understanding the difference up front helps you avoid two common mistakes. The first is spending time creating test profiles when a quick simulation would do. The second is assuming a validation step is fully "safe" when it can still contact real inboxes or make real outbound calls.
 
 This page focuses on validating journey flow and branching logic. For the full picture of testing and approval capabilities — including content preview, email rendering and spam checks, A/B experiments, and approval workflows — see [Test, validate & approve](../../rp_landing_pages/test-landing-page.md).
 
@@ -39,7 +39,7 @@ Still not sure, or want the full picture? Keep reading — each method is explai
 
 >[!TAB Journey Simulation]
 
-**When to use:** Fast iteration during journey design, especially right before a deadline or when testing new branches or paths — and it also works well as an ongoing validation method whenever creating a suitable test profile for your use case is impractical.
+**When to use:** Fast iteration during journey design, especially right before a deadline or when testing new branches or paths. It also works well as an ongoing validation method whenever creating a suitable test profile for your use case is impractical.
 
 [Journey Simulation](simulate-journey-gs.md) validates your journey with temporary simulated users — no need to create or wait for real Adobe Experience Platform (AEP) test profiles to propagate. You can create simulated users manually, or let AI automatically generate the test events your journey needs and match them to the right simulated users, triggering the journey in seconds.
 
@@ -51,7 +51,7 @@ Key mechanics:
 
 >[!IMPORTANT]
 >
->Simulation sends real messages to the [execution addresses](simulate-journey.md#test-users) (email, phone, push token) configured on the simulated users — for example, your own email address — using the same delivery pipeline as production. It does not contact real customers or update live profile data, but the messages themselves are real.
+>Simulation sends real messages to the [execution addresses](simulate-journey.md#test-users) (email, phone, push token) configured on the simulated users — for example, your own email address. It uses the same delivery pipeline as production. It does not contact real customers or update live profile data, but the messages themselves are real.
 
 **Perfect for:** Validating a new branch (for example, two new decision-policy paths) without waiting on AEP test-profile propagation.
 
@@ -74,7 +74,7 @@ Key mechanics:
 >
 >Journey Test mode sends real messages to the actual inboxes of your test profiles, using the same delivery pipeline as production. It does not contact real customers, but it is not a "dry" simulation either — make sure your test profiles use addresses you control.
 
-**Pain point:** Creating and propagating new AEP test profiles takes time. [Journey Simulation](simulate-journey-gs.md) offers a fast alternative that requires no test profiles at all — useful not only while you wait for profiles to propagate, but any time creating a suitable test profile for your use case is impractical.
+**Pain point:** Creating and propagating new AEP test profiles takes time. [Journey Simulation](simulate-journey-gs.md) offers a fast alternative that requires no test profiles at all. It is useful not only while you wait for profiles to propagate, but any time creating a suitable test profile for your use case is impractical.
 
 ➡️ [Test your journey](testing-the-journey.md)
 
@@ -82,7 +82,7 @@ Key mechanics:
 
 **When to use:** A final, production-realistic check right before you publish.
 
-[Journey Dry run](journey-dry-run.md) is a special journey publication mode that runs your journey against real production audience and segmentation data, without contacting real customers or updating profile information. The journey activates like a live journey — profiles flow through branches and nodes exactly as they would in production — but [action nodes](about-journey-activities.md) such as email, SMS, and custom actions are bypassed.
+[Journey Dry run](journey-dry-run.md) is a special journey publication mode that runs your journey against real production audience and segmentation data, without contacting real customers or updating profile information. The journey activates like a live journey, and profiles flow through branches and nodes exactly as they would in production. However, [action nodes](about-journey-activities.md) such as email, SMS, and custom actions are bypassed.
 
 Key mechanics:
 
@@ -102,11 +102,11 @@ Start with a simple question: do you already have test profiles that fit your us
 
 Beyond that choice, the answer usually comes down to one more question: *how close to production do you need this test to be?*
 
-If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation**. It needs no real profiles and runs in seconds, and it remains a valid choice later in your build too, whenever creating suitable test profiles for your use case is not practical. Just remember it sends real messages to the execution addresses configured on the simulated users.
+If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation**. It needs no real profiles and runs in seconds. It also remains a valid choice later in your build, whenever creating suitable test profiles for your use case is not practical. Just remember it sends real messages to the execution addresses configured on the simulated users.
 
 If you need to **manually verify branch and message logic step by step**, and you are willing to create or reuse AEP test profiles, use **Journey Test mode**. Just remember it sends real messages to those test profiles' real inboxes.
 
-If you are about to **publish** and want a final check of the expected volumes against your actual production audience — without contacting anyone or changing any profile data — use **Journey Dry run**.
+If you are about to **publish** and want a final check of the expected volumes against your actual production audience, use **Journey Dry run**. It never contacts anyone or changes any profile data.
 
 >[!TIP]
 >
