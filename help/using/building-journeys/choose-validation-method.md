@@ -40,7 +40,7 @@ Still not sure, or want the full picture? Keep reading — each method is explai
 
 >[!TAB Journey Simulation]
 
-**When to use:** Fast iteration during journey design, especially right before a deadline or when testing new decision-policy branches — and it also works well as an ongoing validation method whenever creating a suitable test profile for your use case is impractical.
+**When to use:** Fast iteration during journey design, especially right before a deadline or when testing new branches or paths — and it also works well as an ongoing validation method whenever creating a suitable test profile for your use case is impractical.
 
 [Journey Simulation](simulate-journey-gs.md) validates your journey with temporary simulated users — no need to create or wait for real Adobe Experience Platform (AEP) test profiles to propagate. You can create simulated users manually, or let AI automatically generate the test events your journey needs and match them to the right simulated users, triggering the journey in seconds.
 
