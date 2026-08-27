@@ -146,7 +146,7 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page compares the three journey validation methods in Adobe Journey Optimizer — Journey Simulation, Journey Test mode, and Journey Dry run — and provides a one-question quick pick, a decision guide, a quick-comparison table, and a list of common mistakes to help users choose the right one for their current stage of building a journey.
+* **TL;DR:** This page compares the three journey validation methods in Adobe Journey Optimizer — Journey Simulation, Journey Test mode, and Journey Dry run. It provides a one-question quick pick, a decision guide, a quick-comparison table, and a list of common mistakes to help users choose the right one for their current stage of building a journey.
 
 **Intents:**
 
