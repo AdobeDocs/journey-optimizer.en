@@ -83,6 +83,10 @@ Continue with [Create and manage simulated users](#test-users), [Trigger your ev
 
 ## Create and manage simulated users {#test-users}
 
+>[!CAUTION]
+>
+>Sending a simulated user triggers a real message send. if an impacted dataset, e.g. feedback events or tracking events, is profile-enabled, this can create a persistent profile in Adobe Experience Platform for that user, even though the run is a simulation.
+
 Simulated users are temporary profile-like entities you define in **[!UICONTROL Simulation settings]**. This section covers how to create them, save them for reuse, adjust or remove them from the list, and send them into the journey.
 
 If your journey uses an external audience, for example a CSV or Federated Audience Composition audience, and your conditions, expressions, or personalization rely on enrichment attributes from it, you can mock those attributes on a simulated user just like profile attributes. This lets you drive the user into a specific branch based on the value you set, without running the actual audience.
@@ -288,7 +292,7 @@ For complete understanding, this information should be combined with the documen
 **Glossary:**
 * **Quick simulation**: An automated simulation mode that generates users and event values using the Journey Agent and runs the full journey with minimal manual steps *(product-specific)*
 * **Manual simulation**: A step-by-step simulation mode where practitioners control user creation, event payloads, and timing individually *(product-specific)*
-* **Simulated users**: Temporary profile-like entities used in Simulation that do not persist in Adobe Experience Platform *(product-specific)*
+* **Simulated users**: Temporary profile-like entities used in Simulation. Sending a simulated user triggers a real message send, which can currently result in a persistent profile being created in Adobe Experience Platform *(product-specific)*
 * **Journey Agent**: The AI component that generates simulated users and event payloads during AI-assisted simulation *(product-specific)*
 * **Test settings**: The Simulation panel tab where Wait durations and execution addresses (email, phone, push token) can be overridden for the simulation run *(product-specific)*
 * **Results log**: The execution log accessible from the Results tab showing per-activity outcomes, durations, and errors for each simulated user *(product-specific)*
