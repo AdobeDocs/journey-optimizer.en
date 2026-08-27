@@ -40,13 +40,13 @@ Still not sure, or want the full picture? Keep reading — each method is explai
 
 >[!TAB Journey Simulation]
 
-**When to use:** Fast iteration during journey design, especially right before a deadline or when testing new decision-policy branches.
+**When to use:** Fast iteration during journey design, especially right before a deadline or when testing new decision-policy branches — and it also works well as an ongoing validation method whenever creating a suitable test profile for your use case is impractical.
 
 [Journey Simulation](simulate-journey-gs.md) validates your journey with temporary simulated users — no need to create or wait for real Adobe Experience Platform (AEP) test profiles to propagate. You can create simulated users manually, or let AI automatically generate the test events your journey needs and match them to the right simulated users, triggering the journey in seconds.
 
 Key mechanics:
 
-* Simulated users are temporary and disposable; they are not real profiles in AEP.
+* Simulated users are not real profiles in AEP; you can also save them to the [inventory](simulate-journey.md#test-users) to reuse across future simulations instead of creating them from scratch each time.
 * Exit criteria, consent policies, frequency/journey capping, opt-out/suppression, and quiet hours are not evaluated.
 * Custom actions and external data source calls still make real outbound calls — they are not mocked.
 
@@ -79,7 +79,7 @@ Key mechanics:
 >
 >Test mode sends real messages to the actual inboxes of your test profiles, using the same delivery pipeline as production. It does not contact real customers, but it is not a "dry" simulation either — make sure your test profiles use addresses you control.
 
-**Pain point:** Creating and propagating new AEP test profiles takes time, which is limiting when you need to quickly validate a new branch. If that is your goal, [Journey Simulation](simulate-journey-gs.md) solves this specific problem instead.
+**Pain point:** Creating and propagating new AEP test profiles takes time. [Journey Simulation](simulate-journey-gs.md) offers a fast alternative that requires no test profiles at all — useful not only while you wait for profiles to propagate, but any time creating a suitable test profile for your use case is impractical.
 
 ➡️ [Test your journey](testing-the-journey.md)
 
@@ -105,7 +105,7 @@ Key mechanics:
 
 The answer usually comes down to one question: *how close to production do you need this test to be?*
 
-If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation** to validate your journey's logic. It needs no real profiles and runs in seconds. Just remember it sends real messages to the execution addresses configured on the simulated users.
+If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation** to validate your journey's logic. It needs no real profiles and runs in seconds, and it remains a valid choice later in your build too, whenever creating suitable test profiles for your use case isn't practical. Just remember it sends real messages to the execution addresses configured on the simulated users.
 
 If you need to **manually verify branch and message logic step by step**, and you are willing to create or reuse AEP test profiles, use **Test mode**. Just remember it sends real messages to those test profiles' real inboxes.
 
