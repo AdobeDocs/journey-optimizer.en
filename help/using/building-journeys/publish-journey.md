@@ -51,7 +51,7 @@ Before publishing, make sure your journey meets the following prerequisites:
 * **No validation errors** — You cannot publish a journey that contains errors. [Test your journey](testing-the-journey.md) first, and [troubleshoot any activity errors](../building-journeys/troubleshooting.md#activity-errors).
 * **Publish permission** — Publishing requires the **[!DNL Publish journeys]** high-level permission. Learn more about [managing access rights](../administration/permissions-overview.md).
 * **Payload within limit** — The journey payload must be within the configured limit (4 MB by default). See [Journey payload size validation](../start/guardrails.md#journey-payload-size).
-* **Approval policy compliance** — If your journey is subject to an approval policy, publishing submits it for approval instead of publishing it right away. Once an approver signs off, the journey is published automatically — there's no separate publish step to perform afterward. [Learn more](../test-approve/gs-approval.md).
+* **Approval policy compliance** — If your journey is subject to an approval policy, publishing submits it for approval instead of publishing it right away. Once an approver signs off, the journey is published automatically — there is no separate publish step to perform afterward. [Learn more](../test-approve/gs-approval.md).
 
 ### Choose the right validation method before publishing {#choose-validation-method}
 
@@ -65,6 +65,8 @@ Validate your journey using one of the available testing options. Each uses a di
 
 Dry run never delivers real communications or updates live profile data. Simulation and Test mode do deliver real messages — Simulation to the execution addresses defined on the simulated users, and Test mode to the real inboxes of profiles you have explicitly flagged as test profiles.
 
+<!-- For a full comparison of these three methods, see [Choose how to test and validate your journey](choose-validation-method.md). -->
+
 ## Publication process {#journey-publication}
 
 Steps to publish a journey are detailed below:
@@ -75,7 +77,7 @@ Steps to publish a journey are detailed below:
 
     >[!NOTE]
     >
-    > If your journey is subject to an approval policy, clicking **[!UICONTROL Publish]** submits the journey for approval instead of publishing it right away. Once an approver signs off, the journey is published automatically — you don't need to publish it again. [Learn more](../test-approve/gs-approval.md)
+    > If your journey is subject to an approval policy, clicking **[!UICONTROL Publish]** submits the journey for approval instead of publishing it right away. Once an approver signs off, the journey is published automatically — you do not need to publish it again. [Learn more](../test-approve/gs-approval.md)
 
     ![Publish button in journey toolbar to activate the journey](assets/journeyuc1_18.png)
 
@@ -141,7 +143,7 @@ When you publish a new version of a journey, the previous version automatically 
 
 ## Frequently asked questions {#faq}
 
-**Why can't I publish my journey?**
+**Why cannot I publish my journey?**
 
 The most common reason is that the journey contains validation errors — you cannot publish a journey with errors. Other blockers include exceeding the [payload size limit](../start/guardrails.md#journey-payload-size), missing the **[!DNL Publish journeys]** permission, or a pending [approval](../test-approve/gs-approval.md). See [Before you publish](#before-you-publish) and [troubleshoot activity errors](../building-journeys/troubleshooting.md#activity-errors).
 
@@ -163,7 +165,7 @@ Yes. If you change an offer decision used in a journey's message, unpublish and 
 
 **Can I publish a journey that requires approval?**
 
-If your journey is subject to an approval policy, you must request approval before publishing. [Learn more about approval](../test-approve/gs-approval.md).
+If your journey is subject to an approval policy, clicking **[!UICONTROL Publish]** submits it for approval instead of publishing it right away. The journey is published automatically once an approver signs off — there is no separate publish step to perform afterward. [Learn more about approval](../test-approve/gs-approval.md).
 
 ## Related topics {#related-topics}
 
@@ -222,6 +224,6 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens to profiles in an older journey version when a new version is published?** — Profiles already in the previous version stay there until they finish; new profiles enter the latest version.
 * **Q: Can I republish a Closed journey version?** — No. Once a previous version is Closed, it stays closed even if the latest version is stopped.
 * **Q: What should I do if an offer decision used in the journey changes?** — Unpublish the journey and republish it to incorporate the updated offer decision.
-* **Q: Is approval required before publishing?** — Only if your journey is subject to an approval policy; in that case, you must request approval first.
+* **Q: Is approval required before publishing?** — Only if your journey is subject to an approval policy; in that case, publishing submits the journey for approval instead of publishing it right away, and it is published automatically once an approver signs off.
 
 +++

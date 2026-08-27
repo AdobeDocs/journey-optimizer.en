@@ -64,11 +64,13 @@ nudge: yes
     + [Set your journey properties](using/building-journeys/journey-properties.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
-    + Simulation {#simulate-journey}
-      + [Get started with journey simulation](using/building-journeys/simulate-journey-gs.md) 
-      + [Simulate your journey](using/building-journeys/simulate-journey.md) 
-    + [Test your journey](using/building-journeys/testing-the-journey.md)
-    + [Journey Dry run](using/building-journeys/journey-dry-run.md)
+    + Validate your journey {#validate-journey}
+      + {hide-from-toc} [Choose how to test and validate your journey](using/building-journeys/choose-validation-method.md)
+      + Simulation {#simulate-journey}
+        + [Get started with journey simulation](using/building-journeys/simulate-journey-gs.md) 
+        + [Simulate your journey](using/building-journeys/simulate-journey.md) 
+      + [Test your journey](using/building-journeys/testing-the-journey.md)
+      + [Journey Dry run](using/building-journeys/journey-dry-run.md)
     + [Publish your journey](using/building-journeys/publish-journey.md)
     + [Pause a journey](using/building-journeys/journey-pause.md)
     + [Live report in your journey](using/building-journeys/report-journey.md)

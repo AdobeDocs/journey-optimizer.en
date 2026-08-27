@@ -189,7 +189,7 @@ Use wait times, jumps, profile updates, and audience management to create sophis
 
 ## Your journey creation workflow {#workflow}
 
-Building successful journeys follows a clear, repeatable process. Here's your step-by-step workflow:
+Building successful journeys follows a clear, repeatable process. Here is your step-by-step workflow:
 
 **1. Plan** → **2. Design** → **3. Test** → **4. Publish** → **5. Monitor** → **6. Optimize**
 
@@ -197,8 +197,8 @@ Building successful journeys follows a clear, repeatable process. Here's your st
 
 Before opening the designer, clarify your objectives:
 
-* **What's the goal?** (e.g., onboard new customers, re-engage inactive users)
-* **Who's the audience?** (specific segment, event-driven individuals)
+* **What is the goal?** (e.g., onboard new customers, re-engage inactive users)
+* **Who is the audience?** (specific segment, event-driven individuals)
 * **Which journey type fits?** (See [journey types](#journey-types) above)
 * **What channels will you use?** (email, push, SMS, etc.)
 
@@ -218,11 +218,13 @@ Use the journey designer to build your flow:
 
 Always test your journey to catch issues before customers experience them:
 
-* Use **test mode** to simulate the journey with test profiles
+* Use **Journey Simulation** for fast iteration with temporary simulated users, no test profiles needed
+* Use **test mode** to walk real (but designated test) profiles through the journey step by step
 * Use **dry run** to execute the journey against real production data without sending communications or updating profiles
 * Verify all conditions, messages, and actions work as expected
 * Check timing, data flows, and personalization
 
+<!-- [Choose how to test and validate your journey →](choose-validation-method.md) -->
 [Test your journey →](testing-the-journey.md) | [Learn about dry run →](journey-dry-run.md)
 
 ### 4. Publish your journey {#publish}
@@ -486,7 +488,7 @@ For complete understanding, this information should be combined with the documen
 * **Journey designer**: The visual drag-and-drop canvas in AJO used to build and configure journey flows without writing code. *(product-specific)*
 * **Test mode**: A journey validation mode that uses persistent Adobe Experience Platform test profiles (explicitly flagged as test profiles) to traverse a draft journey before it is published. *(product-specific)*
 * **Dry run**: A special publication mode that executes the journey against real production data without sending communications or updating profiles. *(product-specific)*
-* **Simulation**: A validation mode that uses temporary simulated users generated on the fly; simulated users do not persist in Adobe Experience Platform. *(product-specific)*
+* **Simulation**: A validation mode that uses temporary simulated users, manually created or auto-generated; simulated users do not persist in Adobe Experience Platform. *(product-specific)*
 * **Orchestrated campaigns**: Multi-step batch workflows in AJO that use relational data (profiles + products/stores/bookings) and process all profiles together with exact pre-send counts. *(product-specific)*
 
 **Guardrails:**
@@ -506,7 +508,7 @@ For complete understanding, this information should be combined with the documen
 * **Q: What is the difference between a journey and a campaign in Journey Optimizer?** — Journeys provide 1:1 real-time orchestration where each profile progresses at its own pace through conditional logic; Campaigns deliver messages simultaneously to an audience on a schedule or via API trigger; Orchestrated campaigns are batch canvas workflows for complex multi-entity segmentation.
 * **Q: Can I edit a live journey?** — Limited elements such as name and message content can be edited; structural changes require creating a new version of the journey.
 * **Q: What are the steps to build a journey?** — The six-step workflow is: Plan, Design in the canvas, Test (test mode or dry run), Publish, Monitor performance, and Optimize/iterate.
-* **Q: How do I validate a journey without sending real messages?** — Use Simulation (temporary simulated users), Test mode (persistent AEP test profiles), or Dry run (real production data without customer contact or profile updates). Dry run profiles count toward Engageable Profiles and live journey quota.
+* **Q: How do I validate a journey without contacting real customers?** — Use Simulation (temporary simulated users — note this does send real messages, but only to the execution addresses configured on those simulated users), Test mode (persistent AEP test profiles — note this does send real messages to those test profiles' inboxes), or Dry run (real production data, action nodes bypassed, no messages sent). Dry run profiles count toward Engageable Profiles and live journey quota. <!-- See [Choose how to test and validate your journey](choose-validation-method.md) for a full comparison. -->
 * **Q: What journey type should I use for a welcome email triggered by a subscription?** — Use a Unitary journey, which is triggered by a specific individual event such as a subscription sign-up.
 
 +++
