@@ -20,7 +20,7 @@ subfeature_v2: []
 
 >[!ENDSHADEBOX]
 
-<!-- Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md). -->
+Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 Use **[!UICONTROL Simulation]** to validate your journey with **simulated users** before you publish. This page walks you through **[!UICONTROL Quick simulation]** and **[!UICONTROL Manual simulation]**, creating and sending simulated users, triggering unitary events when your journey needs them, and reviewing the **[!UICONTROL Results]** log. 
 

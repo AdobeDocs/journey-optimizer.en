@@ -49,7 +49,7 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
-<!-- Not sure Test mode is the right method for you? [Compare all three validation options](choose-validation-method.md). -->
+Not sure Test mode is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 >[!CONTEXTUALHELP]
 >id="ajo_journey_test"

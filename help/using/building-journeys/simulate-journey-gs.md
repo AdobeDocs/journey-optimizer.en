@@ -20,7 +20,7 @@ subfeature_v2: []
 
 >[!ENDSHADEBOX]
 
-<!-- Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md). -->
+Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 >[!IMPORTANT]
 >
