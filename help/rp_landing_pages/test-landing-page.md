@@ -40,21 +40,11 @@ Understand how to set up, manage, and execute approval processes to ensure quali
 :::
 
 :::
-![icon](https://cdn.experienceleague.adobe.com/icons/vial.svg)
-
-Journey Simulation
-
-Validate a journey in seconds using temporary simulated users, without needing to create or wait for real AEP test profiles. Ideal for fast iteration during design.
-
-[Get started with journey simulation](../using/building-journeys/simulate-journey-gs.md)
-:::
-
-:::
 ![icon](https://cdn.experienceleague.adobe.com/icons/bullseye.svg)
 
 Test Your Journey
 
-Validate your journey before publishing by testing it with specific profiles to ensure events, conditions, and actions work as expected. Available for draft journeys that use a namespace.
+Validate your journey before publishing by testing it with specific profiles to ensure events, conditions, and actions work as expected. Available for draft journeys that use a namespace. For fast iteration without test profiles, use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) instead.
 
 [Test your journey](../using/building-journeys/testing-the-journey.md)
 :::
