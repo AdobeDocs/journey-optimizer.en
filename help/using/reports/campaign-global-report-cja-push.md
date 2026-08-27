@@ -128,6 +128,40 @@ The **[!UICONTROL Bounces Reasons]** table provides a comprehensive overview of 
 
 The **[!UICONTROL Error Reasons]** table allows you to identify the specific errors that occurred during the sending process of your push notifications, facilitating a thorough analysis of any issues encountered.
 
++++ Learn more about Error reasons
+
+Each push notification send is classified into one of the following reasons, based on the response returned by the push notification provider ([!DNL Apple Push Notification service (APNs)] or [!DNL Firebase Cloud Messaging (FCM)]):
+
+* **SENT**: The notification was accepted by the provider.
+* **DENYLIST**: The device token is no longer valid (for example, the app was uninstalled or the token expired). The token is added to the denylist and future sends to it are skipped.
+* **MALFORMED_NOTIFICATION**: The notification payload was rejected by the provider as invalid (for example, payload too large, empty, or missing required fields).
+* **INVALID_PUSH_CREDENTIAL**: The push credential (certificate, key, or topic configuration) used to send the notification is invalid or does not match the target device/app.
+* **PUSH_PROVIDER_ERROR**: The provider returned a transient or unexpected error (for example, rate limiting or an internal error). These sends are retried automatically.
+
+**APNs**
+
+| HTTP status | APNs reason | Error reason |
+| --- | --- | --- |
+| 400 / 410 | `Unregistered`, `ExpiredToken`, `BadDeviceToken` | DENYLIST |
+| 400 / 413 | `PayloadTooLarge`, `PayloadEmpty`, `InvalidPushType`, `BadTopic`, `MissingTopic` | MALFORMED_NOTIFICATION |
+| 400 / 403 | `DeviceTokenNotForTopic`, `BadCertificate`, `TopicDisallowed`, `BadCertificateEnvironment` | INVALID_PUSH_CREDENTIAL |
+| 429 / 500 / 503 | `TooManyRequests`, `TooManyProviderTokenUpdates`, `InternalServerError`, `ServiceUnavailable` | PUSH_PROVIDER_ERROR |
+| any other | any other / none | PUSH_PROVIDER_ERROR |
+
+**FCM**
+
+| HTTP status | FCM error code | Error reason |
+| --- | --- | --- |
+| 404 | `UNREGISTERED` (`NOT_FOUND`) | DENYLIST |
+| 400 | `INVALID_ARGUMENT` | MALFORMED_NOTIFICATION |
+| 403 | `SENDER_ID_MISMATCH` (`PERMISSION_DENIED`) | INVALID_PUSH_CREDENTIAL |
+| 429 | `QUOTA_EXCEEDED` (`RESOURCE_EXHAUSTED`) | PUSH_PROVIDER_ERROR |
+| 500 | `INTERNAL` | PUSH_PROVIDER_ERROR |
+| 503 | `UNAVAILABLE` | PUSH_PROVIDER_ERROR |
+| any other | `UNSPECIFIED_ERROR` / any other / none | PUSH_PROVIDER_ERROR |
+
++++
+
 ## Exclude reasons {#exclude-reasons-push}
 
 ![](assets/cja-campaign-push-excluded.png)
