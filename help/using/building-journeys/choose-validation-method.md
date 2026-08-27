@@ -28,9 +28,9 @@ This page focuses on validating journey flow and branching logic. For the full p
 
 If you are not sure which method applies to you, answer this one question:
 
-* **I am still designing my journey and want to test a branch quickly, without creating test profiles.** → Use **[Journey Simulation](simulate-journey-gs.md)**.
-* **I want to manually walk through my draft journey step by step, using real (but designated test) profiles.** → Use **[Test mode](testing-the-journey.md)**.
-* **I am about to publish and want a final check against my real production audience, without contacting anyone.** → Use **[Journey Dry run](journey-dry-run.md)**.
+* **I am still designing my journey and want to quickly validate a branch's logic, without creating test profiles.** → Use **[Journey Simulation](simulate-journey-gs.md)**.
+* **I want to manually validate my draft journey's logic step by step, using real (but designated test) profiles.** → Use **[Test mode](testing-the-journey.md)**.
+* **I am about to publish and want a final check of the expected volumes against my real production audience, without contacting anyone.** → Use **[Journey Dry run](journey-dry-run.md)**.
 
 Still not sure, or want the full picture? Keep reading — each method is explained in detail below.
 
@@ -42,13 +42,17 @@ Still not sure, or want the full picture? Keep reading — each method is explai
 
 **When to use:** Fast iteration during journey design, especially right before a deadline or when testing new decision-policy branches.
 
-[Journey Simulation](simulate-journey-gs.md) validates your journey with temporary simulated users, manually created or auto-generated — no need to create or wait for real Adobe Experience Platform (AEP) test profiles to propagate. The Journey Simulation Agent automatically generates the test events your journey needs and matches them to the right simulated users, triggering the journey in seconds.
+[Journey Simulation](simulate-journey-gs.md) validates your journey with temporary simulated users — no need to create or wait for real Adobe Experience Platform (AEP) test profiles to propagate. You can create simulated users manually, or let AI automatically generate the test events your journey needs and match them to the right simulated users, triggering the journey in seconds.
 
 Key mechanics:
 
 * Simulated users are temporary and disposable; they are not real profiles in AEP.
 * Exit criteria, consent policies, frequency/journey capping, opt-out/suppression, and quiet hours are not evaluated.
 * Custom actions and external data source calls still make real outbound calls — they are not mocked.
+
+>[!NOTE]
+>
+>Due to a known issue, some simulated user activity can currently result in a persistent profile being created in Adobe Experience Platform, without being flagged as a test profile. This is being addressed; in the meantime, keep this in mind if your organization closely tracks profile counts.
 
 >[!IMPORTANT]
 >
@@ -101,11 +105,11 @@ Key mechanics:
 
 The answer usually comes down to one question: *how close to production do you need this test to be?*
 
-If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation**. It needs no real profiles and runs in seconds. Just remember it sends real messages to the execution addresses configured on the simulated users.
+If you are still **iterating on journey design** — testing a new branch, working against a deadline — use **Journey Simulation** to validate your journey's logic. It needs no real profiles and runs in seconds. Just remember it sends real messages to the execution addresses configured on the simulated users.
 
 If you need to **manually verify branch and message logic step by step**, and you are willing to create or reuse AEP test profiles, use **Test mode**. Just remember it sends real messages to those test profiles' real inboxes.
 
-If you are about to **publish** and want a final check against your actual production audience — without contacting anyone or changing any profile data — use **Journey Dry run**.
+If you are about to **publish** and want a final check of the expected volumes against your actual production audience — without contacting anyone or changing any profile data — use **Journey Dry run**.
 
 >[!TIP]
 >
