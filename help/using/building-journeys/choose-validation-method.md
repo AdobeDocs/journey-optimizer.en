@@ -50,10 +50,6 @@ Key mechanics:
 * Exit criteria, consent policies, frequency/journey capping, opt-out/suppression, and quiet hours are not evaluated.
 * Custom actions and external data source calls still make real outbound calls — they are not mocked.
 
->[!NOTE]
->
->Due to a known issue, some simulated user activity can currently result in a persistent profile being created in Adobe Experience Platform, without being flagged as a test profile. This is being addressed; in the meantime, keep this in mind if your organization closely tracks profile counts.
-
 >[!IMPORTANT]
 >
 >Simulation sends real messages to the [execution addresses](simulate-journey.md#test-users) (email, phone, push token) configured on the simulated users — for example, your own email address — using the same delivery pipeline as production. It does not contact real customers or update live profile data, but the messages themselves are real.
