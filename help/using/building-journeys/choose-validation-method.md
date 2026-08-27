@@ -111,11 +111,13 @@ If you are about to **publish** and want a final check against your actual produ
 
 ## Quick comparison {#quick-comparison}
 
-| Method | Data used | Sends real messages? | Contacts customers? | Updates profiles? | Best for |
-|---|---|---|---|---|---|
-| [Journey Simulation](simulate-journey-gs.md) | Temporary simulated users, manually created or auto-generated | Yes — to the execution addresses configured on the simulated users | No | No | Fast iteration, especially for new decision-policy branches, without waiting on real test-profile propagation |
-| [Test mode](testing-the-journey.md) | Persistent AEP test profiles | Yes — to the test profiles' real inboxes, using the production delivery pipeline | No | No (test profiles only) | Manually verifying branch/message logic step by step in a draft journey |
-| [Journey Dry run](journey-dry-run.md) | Real production audience/data | No (actions bypassed) | No | No | Final pre-launch check of actual audience reach, targeting, and branch logic at real scale |
+| Method | Data used | Sends real messages? | Best for |
+|---|---|---|---|
+| [Journey Simulation](simulate-journey-gs.md) | Temporary simulated users, manually created or auto-generated | Yes — to the execution addresses configured on the simulated users | Fast iteration, especially for new decision-policy branches, without waiting on real test-profile propagation |
+| [Test mode](testing-the-journey.md) | Persistent AEP test profiles | Yes — to the test profiles' real inboxes, using the production delivery pipeline | Manually verifying branch/message logic step by step in a draft journey |
+| [Journey Dry run](journey-dry-run.md) | Real production audience/data | No (actions bypassed) | Final pre-launch check of actual audience reach, targeting, and branch logic at real scale |
+
+None of these methods contact real customers. Profile data is also left untouched in every case, except that Test mode updates the test profiles used to run it (not real customer profiles).
 
 ## Common mistakes to avoid {#common-mistakes}
 
