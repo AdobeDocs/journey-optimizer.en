@@ -1,7 +1,7 @@
 ---
 solution: Journey Optimizer
 product: journey optimizer
-title: Choose how to test and validate your journey
+title: Choose a validation method
 description: Compare Journey Simulation, Journey Test mode, and Journey Dry run, and choose the right validation method for your journey before publishing.
 feature: Journeys, Get Started, Test Profiles
 topic: Content Management
@@ -11,7 +11,7 @@ keywords: test, simulate, simulation, test mode, dry run, journey, validate, com
 version: Journey Orchestration
 ---
 
-# Choose how to test and validate your journey {#choose-validation-method}
+# Choose a validation method {#choose-validation-method}
 
 >[!BEGINSHADEBOX]
 

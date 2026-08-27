@@ -65,7 +65,7 @@ Validate your journey using one of the available testing options. Each uses a di
 
 Dry run never delivers real communications or updates live profile data. Simulation and Test mode do deliver real messages — Simulation to the execution addresses defined on the simulated users, and Test mode to the real inboxes of profiles you have explicitly flagged as test profiles.
 
-For a full comparison of these three methods, see [Choose how to test and validate your journey](choose-validation-method.md).
+For a full comparison of these three methods, see [Choose a validation method](choose-validation-method.md).
 
 ## Publication process {#journey-publication}
 
