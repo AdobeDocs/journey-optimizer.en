@@ -98,7 +98,7 @@ Learn more on testing journeys in test mode in [this section](../building-journe
 
 ### Simulate a journey {#simulate-journey}
 
-[!DNL Journey Optimizer]'s **Simulation** mode lets you validate your journey end-to-end using simulated users—temporary profile-like entities that do not persist in Adobe Experience Platform—without requiring pre-created test profiles.
+[!DNL Journey Optimizer]'s **Simulation** mode lets you validate your journey end-to-end using simulated users—temporary profile-like entities without requiring pre-created test profiles.
 
 For custom channels, simulation resolves personalization expressions and renders the payload preview for each simulated user, so you can verify that the correct content would be delivered before going live.
 
@@ -111,10 +111,6 @@ To simulate a journey using a custom channel:
 1. Configure any required entry events, then trigger the simulated users through the journey.
 
 1. When a simulated user reaches the custom channel action node, inspect the resolved payload in the preview panel to confirm that personalization tokens and payload structure are correct.
-
->[!NOTE]
->
->Simulation is available for both draft and live journeys, and uses temporary simulated users that do not count toward profile quotas or real endpoint calls.
 
 Learn more about journey simulation in [this section](../building-journeys/simulate-journey-gs.md).
 

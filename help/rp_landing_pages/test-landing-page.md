@@ -239,7 +239,7 @@ The right testing approach depends on what you're building and what you need to 
 * Check [conflicts](../using/conflict-prioritization/conflicts.md) with other journeys and campaigns
 * Submit for [approval](../using/test-approve/gs-approval.md) before publishing
 
-<!-- Not sure which of the three journey validation methods to use? See [Choose how to test and validate your journey](../using/building-journeys/choose-validation-method.md) for a full comparison. -->
+Not sure which of the three journey validation methods to use? See [Choose a validation method](../using/building-journeys/choose-validation-method.md) for a full comparison.
 
 **For complex journeys:**
 
@@ -295,7 +295,7 @@ Follow this 4-phase approach to validate your campaigns and journeys before laun
 |-------|-------------|-------------|
 | **1. Content validation** | Personalization, design, rendering | [Preview with test profiles](../using/content-management/preview-test.md), test [multiple variations](../using/test-approve/simulate-sample-input.md) with CSV/JSON, verify [rendering](../using/content-management/rendering.md) across devices |
 | **2. Technical checks** | Deliverability, links, conflicts | Run [spam score checks](../using/content-management/spam-report.md), validate links, check for [conflicts](../using/conflict-prioritization/conflicts.md) with other campaigns |
-| **3. Journey logic** (journeys only) | Entry conditions, flow, branching | Use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) for fast iteration, [test mode](../using/building-journeys/testing-the-journey.md) to walk through logic with real test profiles, and [dry run](../using/building-journeys/journey-dry-run.md) for a final check at scale <!-- — see [how to choose](../using/building-journeys/choose-validation-method.md) --> |
+| **3. Journey logic** (journeys only) | Entry conditions, flow, branching | Use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) for fast iteration, [test mode](../using/building-journeys/testing-the-journey.md) to walk through logic with real test profiles, and [dry run](../using/building-journeys/journey-dry-run.md) for a final check at scale — see [how to choose](../using/building-journeys/choose-validation-method.md) |
 | **4. Pre-launch** | Settings, approvals, monitoring | Submit for [approval](../using/test-approve/gs-approval.md), verify schedules and audiences, enable [alerts](../using/reports/alerts.md) |
 
 **Pro tip:** Start with the [personalization playground](../using/personalization/personalize.md#playground) to test expressions before building content, and always check [conflict detection](../using/conflict-prioritization/conflicts.md) before launch to prevent over-messaging.
@@ -458,7 +458,7 @@ Understand how testing capabilities connect to each other and to your broader Jo
 **Journey Simulation:** Runs the journey with temporary simulated users, no real AEP test profiles needed. Sends real messages to the simulated users' configured addresses.
 **Test mode:** Sends real AEP test profiles through the journey, triggers actual actions, generates test messages. Requires draft journey + namespace.
 **Dry run:** Traces execution paths against real production audience data without sending anything. No messages sent, no actions executed.
-**Use together:** Journey Simulation while iterating on design, test mode for manual message/logic testing with real test profiles, dry run for a final logic check at scale.<!-- See [Choose how to test and validate your journey](../using/building-journeys/choose-validation-method.md) for a full comparison. -->
+**Use together:** Journey Simulation while iterating on design, test mode for manual message/logic testing with real test profiles, dry run for a final logic check at scale. See [Choose a validation method](../using/building-journeys/choose-validation-method.md) for a full comparison.
 
 ### Q: Can I test journeys in production/live status?
 

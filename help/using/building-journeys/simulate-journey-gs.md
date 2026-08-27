@@ -20,7 +20,7 @@ subfeature_v2: []
 
 >[!ENDSHADEBOX]
 
-<!-- Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md). -->
+Not sure Simulation is the right method for you? [Compare all three validation options](choose-validation-method.md).
 
 >[!IMPORTANT]
 >
@@ -31,7 +31,7 @@ subfeature_v2: []
 >* For AI in simulation (**[!UICONTROL Quick simulation]**, AI-generated users, **[!UICONTROL Generate event values]**), assign **[!UICONTROL Generate Content]** from the **[!UICONTROL AI Assistant]** capability.
 
 You can set the journey to **[!UICONTROL Simulation]** in addition to **Draft**, **Test mode**, and **Live**. In Simulation, you test with **simulated users**: temporary profile-like entities you add, without using persistent test profiles in Adobe Experience Platform.
-   
+
 Adobe Journey Optimizer offers two ways to test and validate your journey:
 
 * **[Simulation](simulate-journey.md#test-users)**: Use the **[!UICONTROL Simulation]** journey feature and simulated users without pre-created profiles in Adobe Experience Platform, supporting both AI-powered and manually created users.
@@ -130,6 +130,7 @@ The following capabilities are not supported in **[!UICONTROL Simulation]**.
 | Wave sending in journeys | Not supported. |
 | Quiet hours | Not evaluated nor applied during simulation. |
 | Privacy service | Simulated users are not GDPR-compliant persistent profiles. Do not include real customer data in simulated users. |
+| Profile persistence | Sending a simulated user into a journey triggers a real message send through the standard delivery pipeline. If an impacted dataset, e.g. feedback events or tracking events, is profile-enabled, this can result in a persistent profile being created in Adobe Experience Platform for that simulated user, even though the run is flagged as a simulation. |
 
 +++
 
@@ -179,7 +180,7 @@ For complete understanding, this information should be combined with the documen
 * Decide whether to use Quick simulation or Manual simulation based on testing needs
 
 **Glossary:**
-* **Simulated users**: Temporary profile-like entities created for Simulation without persisting in Adobe Experience Platform *(product-specific)*
+* **Simulated users**: Temporary profile-like entities created for Simulation. Sending a simulated user triggers a real message send, which can currently result in a persistent profile being created in Adobe Experience Platform *(product-specific)*
 * **Simulation**: A journey state (alongside Draft, Test mode, and Live) used for testing with simulated users rather than persistent test profiles *(product-specific)*
 * **Journey Agent**: The AI component that generates simulated users, event values, and test settings during Quick simulation and AI-assisted Manual simulation *(product-specific)*
 * **Quick simulation**: An automated end-to-end simulation run that generates users and events with minimal manual input *(product-specific)*
@@ -206,7 +207,7 @@ For complete understanding, this information should be combined with the documen
 
 **FAQ:**
 * **Q: What permissions do I need to use Simulation?** — You need at least one of: Simulate journeys, Publish journeys, or Approve and Publish journeys. AI features additionally require Generate Content permission from the AI Assistant capability.
-* **Q: How does Simulation differ from Test mode?** — Simulation uses temporary simulated users created on the fly without persistent Adobe Experience Platform profiles; Test mode uses persistent profiles explicitly flagged as test profiles in AEP.
+* **Q: How does Simulation differ from Test mode?** — Simulation uses temporary simulated users created on the fly, generally without pre-created profiles in Adobe Experience Platform; Test mode uses persistent profiles explicitly flagged as test profiles in AEP. Sending a simulated user still triggers a real message send, which can result in a persistent profile being created.
 * **Q: Can I simulate a journey that starts with a Business Event?** — No. Journeys triggered by a Business Event cannot be run in Simulation.
 * **Q: How many simulated users can I test in a single simulation run?** — Up to 100 unique simulated users per run; each Send all action is capped at 20 users at once.
 * **Q: Are consent policies enforced during Simulation?** — No. Consent policy evaluation, frequency capping, opt-out management, and quiet hours are all not evaluated during Simulation.
