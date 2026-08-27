@@ -239,7 +239,7 @@ The right testing approach depends on what you're building and what you need to 
 * Check [conflicts](../using/conflict-prioritization/conflicts.md) with other journeys and campaigns
 * Submit for [approval](../using/test-approve/gs-approval.md) before publishing
 
-Not sure which of the three journey validation methods to use? See [Choose how to test and validate your journey](../using/building-journeys/choose-validation-method.md) for a full comparison.
+Not sure which of the three journey validation methods to use? See [Choose a validation method](../using/building-journeys/choose-validation-method.md) for a full comparison.
 
 **For complex journeys:**
 
@@ -458,7 +458,7 @@ Understand how testing capabilities connect to each other and to your broader Jo
 **Journey Simulation:** Runs the journey with temporary simulated users, no real AEP test profiles needed. Sends real messages to the simulated users' configured addresses.
 **Test mode:** Sends real AEP test profiles through the journey, triggers actual actions, generates test messages. Requires draft journey + namespace.
 **Dry run:** Traces execution paths against real production audience data without sending anything. No messages sent, no actions executed.
-**Use together:** Journey Simulation while iterating on design, test mode for manual message/logic testing with real test profiles, dry run for a final logic check at scale. See [Choose how to test and validate your journey](../using/building-journeys/choose-validation-method.md) for a full comparison.
+**Use together:** Journey Simulation while iterating on design, test mode for manual message/logic testing with real test profiles, dry run for a final logic check at scale. See [Choose a validation method](../using/building-journeys/choose-validation-method.md) for a full comparison.
 
 ### Q: Can I test journeys in production/live status?
 

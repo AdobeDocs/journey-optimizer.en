@@ -27,7 +27,7 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## August 2026 {#august-2026}
 
-* A new **Choose how to test and validate your journey** page is now available. It compares Journey Simulation, Test mode, and Journey Dry run — the data each uses, whether it sends real messages, common mistakes to avoid, and a decision guide for picking the right method at each stage of building a journey. [Read more](../building-journeys/choose-validation-method.md)
+* A new **Choose a validation method** page is now available. It compares Journey Simulation, Test mode, and Journey Dry run — the data each uses, whether it sends real messages, common mistakes to avoid, and a decision guide for picking the right method at each stage of building a journey. [Read more](../building-journeys/choose-validation-method.md)
 
 * The **Guardrails and limitations** page has been updated to clarify the Audience Qualification activity and Events guardrails: wording now consistently refers to Audience Qualification **activities** (rather than nodes), including when used as exit criteria, and both guardrails now explicitly cover **live, closed, paused, test mode, and dry run** journeys. [Read more](../start/guardrails.md#audience-qualif-g)
 
