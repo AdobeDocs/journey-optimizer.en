@@ -132,12 +132,6 @@ The **[!UICONTROL Error Reasons]** table allows you to identify the specific err
 
 Each push notification send is classified into one of the following reasons, based on the response returned by the push notification provider ([!DNL Apple Push Notification service (APNs)] or [!DNL Firebase Cloud Messaging (FCM)]):
 
-* **SENT**: The notification was accepted by the provider.
-* **DENYLIST**: The device token is no longer valid (for example, the app was uninstalled or the token expired). The token is added to the denylist and future sends to it are skipped.
-* **MALFORMED_NOTIFICATION**: The notification payload was rejected by the provider as invalid (for example, payload too large, empty, or missing required fields).
-* **INVALID_PUSH_CREDENTIAL**: The push credential (certificate, key, or topic configuration) used to send the notification is invalid or does not match the target device/app.
-* **PUSH_PROVIDER_ERROR**: The provider returned a transient or unexpected error (for example, rate limiting or an internal error). These sends are retried automatically.
-
 **APNs**
 
 | HTTP status | APNs reason | Error reason |
