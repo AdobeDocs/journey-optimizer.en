@@ -44,7 +44,7 @@ Understand how to set up, manage, and execute approval processes to ensure quali
 
 Test Your Journey
 
-Validate your journey before publishing by testing it with specific profiles to ensure events, conditions, and actions work as expected. Available for draft journeys that use a namespace. For fast iteration without test profiles, use [Journey Simulation](../using/building-journeys/simulate-journey-gs.md) instead.
+Validate your journey before publishing by testing it with specific profiles to ensure events, conditions, and actions work as expected. Available for draft journeys that use a namespace. Not sure which method fits? See [Choose a validation method](../using/building-journeys/choose-validation-method.md).
 
 [Test your journey](../using/building-journeys/testing-the-journey.md)
 :::
