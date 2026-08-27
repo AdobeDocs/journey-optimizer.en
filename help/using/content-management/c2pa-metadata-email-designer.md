@@ -52,3 +52,4 @@ There is not yet a way to inspect a Content Credential directly inside the email
 ## Additional resources
 
 * [C2PA metadata in Generate content](generative-c2pa-metadata.md)
+* [Generative AI content transparency](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency)
