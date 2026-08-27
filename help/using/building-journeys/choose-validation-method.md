@@ -22,6 +22,8 @@ hide: true
 
 [!DNL Adobe Journey Optimizer] gives you three ways to validate a journey before it goes live. They are not interchangeable: each uses a different kind of data, fits a different stage of your build, and carries different real-world consequences. Understanding the difference up front helps you avoid two common mistakes — spending time creating test profiles when a quick simulation would do, or assuming a validation step is fully "safe" when it can still contact real inboxes or make real outbound calls.
 
+This page focuses on validating journey flow and branching logic. For the full picture of testing and approval capabilities — including content preview, email rendering and spam checks, A/B experiments, and approval workflows — see [Test, validate & approve](../../rp_landing_pages/test-landing-page.md).
+
 ## New to validation? Start here {#quick-pick}
 
 If you are not sure which method applies to you, answer this one question:
@@ -135,6 +137,7 @@ None of these methods contact real customers. Profile data is also left untouche
 * **[Publish your journey](publish-journey.md)** — Prerequisites and the publication process
 * **[Get started with journeys](journey.md)** — Fundamentals and capabilities overview
 * **[Journey Orchestration FAQ](journey-faq.md)** — Common questions answered
+* **[Test, validate & approve](../../rp_landing_pages/test-landing-page.md)** — Full testing and approval landscape, including content preview, rendering/spam checks, experiments, and approval workflows
 
 +++ AI Knowledge Reference
 
