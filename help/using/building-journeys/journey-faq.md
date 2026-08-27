@@ -437,7 +437,7 @@ Journey Optimizer offers three validation methods:
 
 **Best practice**: Always test journeys before publishing to ensure they work as expected and to identify any issues early.
 
-<!-- See [Choose how to test and validate your journey](choose-validation-method.md) for a full comparison, or --> Learn more about [simulation](simulate-journey-gs.md), [test mode](testing-the-journey.md), and [dry run](journey-dry-run.md).
+See [Choose how to test and validate your journey](choose-validation-method.md) for a full comparison, or learn more about [simulation](simulate-journey-gs.md), [test mode](testing-the-journey.md), and [dry run](journey-dry-run.md).
 
 +++
 
