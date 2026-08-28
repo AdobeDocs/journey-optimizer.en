@@ -364,19 +364,22 @@ The following guardrails apply to the [email channel](../email/get-started-email
 
 When publishing journeys that contain email messages, the total message content size must not exceed **2 MB** after backend processing. During publication, the system automatically processes message content by patching links, images, and applying transformations, which increases the payload size beyond the authored content size.
 
+This size limitation also applies to other backend operations that process the full email payload, such as **[!UICONTROL Copy to other locales]** in [multilingual content management](../content-management/multilingual-manual.md). Even though you are only copying content between locales, the operation serializes and processes the complete email payload, so it can fail with the same size error.
+
 >[!CAUTION]
 >
->If the final processed message content exceeds **2 MB**, journey publication will fail. Keep your authored message content well below 2 MB — ideally under **1 MB** — to allow a buffer of 300–400 KB for backend processing overhead.
+>If the final processed message content exceeds **2 MB**, the operation (journey publication or copy to other locales) will fail. Keep your authored message content well below 2 MB, ideally under **1 MB**, to allow a buffer of 300–400 KB for backend processing overhead.
 
-**Best practices to prevent publication failures:**
+**Best practices to prevent failures:**
 
 * Keep authored email content under **1 MB**
 * Minimize the number of content variants
 * Optimize and compress images before adding them to messages
 * Remove unused assets and unnecessary HTML elements
 * Test message size before publishing journeys to production
+* When copying content to multiple locales, copy to fewer locales at a time to reduce processing overhead
 
-If journey publication fails due to content size, reduce your message content and republish the journey.
+If publication or the copy operation fails due to content size, reduce your message content and try again.
 
 ### SMS guardrails {#sms-guardrails}
 
