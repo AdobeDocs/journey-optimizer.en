@@ -123,9 +123,13 @@ To configure your LINE content, follow the steps below.
 
 1. Click **[!UICONTROL Edit code]** to edit JSON content.
 
+    ![](assets/campaign-line-2.png)
+
 1. Use the personalization editor to define content, add personalization and dynamic content. You can use any attribute, such as the profile name or city for example. You can also define conditional rules. Browse to the following pages to learn more about [personalization](../personalization/personalize.md) and [dynamic content](../personalization/get-started-dynamic-content.md) in the personalization editor.
 
-1. Click **[!UICONTROL Save]** and check your message in the preview.
+1. Click **[!UICONTROL Save and close]** and check your message in the preview.
+
+    ![](assets/campaign-line-3.png)
 
 1. Use **[!UICONTROL Simulate content]** to preview your LINE message content and personalized content. [Learn more](send-line.md)
 
