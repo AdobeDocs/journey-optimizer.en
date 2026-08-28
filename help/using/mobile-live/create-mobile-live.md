@@ -187,6 +187,9 @@ After designing your Live activity, you can track measuring the impact of your L
 > `executionMetadata` is available for both **API-triggered Transactional** and **API-triggered Marketing** campaigns.
 
 Attach your own **custom data** to a profile, such as an order ID, loyalty tier, or region code, using the optional `executionMetadata` field. Journey Optimizer stores this data alongside the execution so you can retrieve it later from your **Live activity feedback dataset** and match delivery results to your own business records.
+
+To send this data via the API, see the [Messaging API reference for the `executionMetadata` field](https://developer.adobe.com/journey-optimizer-apis/references/messaging#operation/postIMUnitaryMessageExecution!path=recipients/0/executionMetadata&t=request). To read the values back on the device, see the [Mobile SDK guide on receiving execution metadata from the API trigger](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/live-activities/tutorial#receiving-execution-metadata-from-the-api-trigger).
+
 To add custom data with execution metadata:
 
 * Add `executionMetadata` to a profile, next to `userId` and `namespace`. Only string keys and string values are accepted, convert any non-string value to a string before sending it.
@@ -244,9 +247,6 @@ In this example, `orderId`, `tier`, `restaurant`, and `region` are your own valu
 ```
 
 +++
-
-After designing your Live activity, you can track measuring the impact of your Live activity with [built-in reports](../reports/campaign-global-report-cja-activity.md).
-
 
 ## How-to video
 
