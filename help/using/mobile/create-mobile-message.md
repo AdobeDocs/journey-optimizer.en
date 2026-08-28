@@ -128,7 +128,7 @@ For more information on how to create, configure and publish a journey, refer to
     * Weekly
     * Month
     
-You can now start designing the content of your Mobile message from the **[!UICONTROL Edit content]** button, as detailed below. [Learn more](design-mobile.md)
+You can now access the **[!UICONTROL Content]** tab to start designing your Mobile message. [Learn more](design-mobile.md)
 
 For more information on how to create, configure and activate a campaign, refer to [this page](../campaigns/get-started-with-campaigns.md).
 

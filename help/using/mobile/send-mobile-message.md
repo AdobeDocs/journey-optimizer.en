@@ -81,8 +81,6 @@ Note that the character count does not reflect variations introduced by dynamic 
 
 You must check alerts in the upper section of the editor. Some of them are simple warnings, but others can prevent you from sending the message. Two types of alerts can happen: warnings and errors.
 
-![](assets/sms-alert-button.png)
-
 * **Warnings** refer to recommendations and best practices. For example, a warning message is displayed if your Mobile message is empty or if character limits may be exceeded with dynamic content.
 
     **Character limits:** 160 characters per segment (GSM 7-bit), 70 for Unicode/emojis, up to 1500 characters total.
