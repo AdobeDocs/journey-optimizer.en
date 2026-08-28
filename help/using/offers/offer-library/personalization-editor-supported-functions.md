@@ -51,7 +51,6 @@ The Offer Decisioning backend supports only a **subset** of the functions availa
 * Let
 * Default fallback value
 * fragment
-* datasetLookup
 * externalDataLookup (Alpha)
 * Inline
 * Url
