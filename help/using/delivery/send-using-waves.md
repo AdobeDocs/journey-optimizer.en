@@ -273,7 +273,7 @@ For complete understanding, this information should be combined with the documen
 **Journey-specific guardrails:**
 
 * Wave start cannot be before journey start
-* The last wave must be scheduled within 6 days and 18 hours of the journey start; exceeding this triggers an error
+* The last wave must be scheduled within 6 days and 18 hours of the journey start; exceeding this triggers a validation error
 * Audience splitting can take up to 1 hour; profiles may be delayed
 * Two waves never run simultaneously within the same journey version
 * Wave starts can be delayed by platform quota limits or heavy system load
