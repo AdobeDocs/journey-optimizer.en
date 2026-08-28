@@ -566,7 +566,9 @@ nudge: yes
   + Generate content {#generate-content}
     + [Get started with Generate content](using/content-management/gs-generative.md)
     + [AI prompt best pratices](using/content-management/ai-assistant-prompting-guide.md)
-    + [Content Credentials in Generate content](using/content-management/generative-c2pa-metadata.md)
+    + C2PA metadata {#c2pa}
+      + [C2PA metadata in Generate content](using/content-management/generative-c2pa-metadata.md)
+      + [C2PA metadata in Email and Landing Page Designer](using/content-management/c2pa-metadata-email-designer.md)
     + [Generate full content with AI](using/content-management/generative-full-content.md)
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
