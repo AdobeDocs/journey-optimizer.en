@@ -27,6 +27,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## August 2026 {#august-2026}
 
+* The **Send using waves** page has been updated to document that the last wave in a read-audience journey must be scheduled within **6 days and 18 hours** of the journey start. Exceeding this window triggers a validation error and prevents the journey from entering test mode or going live. [Read more](../delivery/send-using-waves.md#limitations-guardrails)
+
 * A new **Suppress feedback events** section has been added to the **Decision management data collection** page, documenting how to use the `dryRun` flag to suppress decision events during testing and prevent feedback from being captured for reporting and frequency capping counters. [Read more](../offers/data-collection/data-collection.md#suppress-feedback)
 
 * A new **Choose a validation method** page is now available. It compares Journey Simulation, Test mode, and Journey Dry run — the data each uses, whether it sends real messages, common mistakes to avoid, and a decision guide for picking the right method at each stage of building a journey. [Read more](../building-journeys/choose-validation-method.md)
