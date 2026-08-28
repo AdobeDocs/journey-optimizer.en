@@ -252,6 +252,10 @@ The following video is intended to support your understanding of the components 
 >[!VIDEO](https://video.tv.adobe.com/v/329919/?quality=12)
 -->
 
+>[!NOTE]
+>
+>When testing your implementation, you can use the `dryRun` flag to suppress feedback events. [Learn more](../../data-collection/data-collection.md#suppress-feedback)
+
 ## Next steps {#next-steps}
 
 By following this API guide, you have created and delivered offers using the [!DNL Decisions] API. For more information, see the [overview on Decision Management](../../../offers/get-started/starting-offer-decisioning.md).
