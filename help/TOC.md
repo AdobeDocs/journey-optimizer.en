@@ -640,7 +640,6 @@ nudge: yes
     + [Reporting & experimentation prerequisites](using/reports/reporting-configuration.md)
     + [Exclusion reasons](using/reports/exclusion-list.md)
     + Campaign reports {#campaign-reporting}
-      + [Campaign reports](/help/rp_landing_pages/campaign-reporting-landing-page.md)
       + [Campaign report](using/reports/campaign-global-report-cja.md)
       + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
       + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
