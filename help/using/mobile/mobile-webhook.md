@@ -60,6 +60,8 @@ When setting up a webhook, you can define its purpose based on the type of data 
 >
 >Inbound keyword data is stored in the _AJO Email Tracking Dataset_ system dataset, unless a custom dataset is configured. A profile must have at least one message sent from [!DNL Journey Optimizer] before incoming messages are captured. [Learn more](../data/get-started-datasets.md#system-datasets)
 
+{{$include /help/_includes/mobile-opt-out-keyword-override.md}}
+
 Depending on your provider, there will be different expectations on what needs to be set up to have a successful SMS implementation:
 
 * **Sinch and Sinch Conversational**: Create one webhook that handles both inbound and feedback events. No payload configuration is required.
