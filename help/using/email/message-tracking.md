@@ -139,11 +139,7 @@ To insert links into your email content, follow the steps below:
 
 1. Enter the desired URL in the corresponding field, or select a landing page, and define the link settings and styles. [Learn more](#adjust-links)
 
-    For interpreting URLs, [!DNL Journey Optimizer] complies with the URI syntax ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), which disables some special international characters in URLs.
-    
-    When trying to send the proof or email, if you are returned an error involving a URL added to your content, URL encode the string as a workaround.
-    
-    For example, if a URL path contains an apostrophe (`'`), use `%27` instead (e.g., `https://example.com/nature%27s-miracle` instead of `https://example.com/nature's-miracle`).
+    For interpreting URLs, [!DNL Journey Optimizer] complies with the URI syntax ([RFC 3986 standard](https://datatracker.ietf.org/doc/html/rfc3986){target="_blank"}), which disables some special international characters in URLs. When trying to send the proof or email, if you are returned an error involving a URL added to your content, URL encode the string as a workaround. For example, if a URL path contains an apostrophe (`'`), use `%27` instead (e.g., `https://example.com/nature%27s-miracle` instead of `https://example.com/nature's-miracle`).
     
     >[!CAUTION]
     >
