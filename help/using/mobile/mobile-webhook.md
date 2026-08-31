@@ -424,11 +424,11 @@ For Custom SMS providers, create two separate webhooks: one for Feedback events 
 
     ```json
     {
-    "clientReference": "{{client_reference}}",
+    "clientReference": "\{\{client_reference\}\}",
     "statuses": [
         {
-            "code": "{{failureCode}}",
-            "status": "{{feedbackStatus}}"
+            "code": "\{\{failureCode\}\}",
+            "status": "\{\{feedbackStatus\}\}"
         }
     ]
     }
