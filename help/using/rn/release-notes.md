@@ -56,6 +56,24 @@ topic_v2:
 
 ## September '26 updates {#sep-26-updates}
 
+<table>
+<thead>
+<tr>
+<th><strong>Generate expressions with AI in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The journey advanced expression editor now integrates AI-powered expression generation: describe the expression you want to build in natural language, and the editor generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>For more information, refer to the <a href="../building-journeys/expression/generate-expression.md">detailed documentation</a>.</p>
+<p>Availability date: September 1, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 * **New dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.  [Learn more](../building-journeys/functions/date-functions.md#dateDiff)
 
   Availability date: September 1, 2026
@@ -151,23 +169,6 @@ Availability date: August 20, 2026
     Availability date: August 13, 2026
 
 +++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Generate expressions with AI in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The journey advanced expression editor now integrates AI-powered expression generation: describe the expression you want to build in natural language, and the editor generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>Availability date: August 31, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 <table>
 <thead>
