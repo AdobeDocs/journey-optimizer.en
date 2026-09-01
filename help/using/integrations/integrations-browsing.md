@@ -121,7 +121,7 @@ Once the integration information is provided, configure the following **Browsing
 
 ## Link a Browsing integration to a Standard integration {#use-Browsing}
 
-You can let marketers pick an item from a **[!UICONTROL Browsing]** integration to populate a parameter value in a Standard integration.
+Once a Browsing integration is created, you can link it to a parameter on a Standard integration so marketers can select values through the Browsing selector instead of entering them manually.
 
 1. While configuring a parameter on a **[!UICONTROL Standard]** integration, enable **[!UICONTROL Browsing]**.
 
