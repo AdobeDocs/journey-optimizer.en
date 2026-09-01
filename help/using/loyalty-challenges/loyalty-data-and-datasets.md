@@ -28,6 +28,7 @@ Loyalty and rewards connectors listed in Journey Optimizer documentation include
 * **Talon.One**
 * **Capillary**
 * **Kobie**
+* **LAVA**
 
 For connector onboarding and end-to-end setup, see [Get started with sources connectors](../start/get-started-sources.md) and the [Experience Platform sources catalog](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"}.
 

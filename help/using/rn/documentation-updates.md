@@ -25,9 +25,13 @@ subfeature_v2:
 
 This page lists all the latest changes in [!DNL Journey Optimizer] documentation, in addition to the updates related to the Monthly release features and improvements.
 
-## August 2026 {#august-2026}
+## September 2026 {#september-2026}
 
 * The **Configure your Channel configuration** page now includes a note clarifying that the schema used for secondary dimension must have a primary key, and that composite primary keys are not supported. [Read more](../orchestrated/channel-config.md)
+
+* The **Loyalty data and datasets** and **Get started with sources** pages have been updated to include LAVA as a supported loyalty and rewards connector, alongside Talon.One, Capillary, and Kobie. [Read more](../loyalty-challenges/loyalty-data-and-datasets.md)
+
+## August 2026 {#august-2026}
 
 * The **Add visual fragments to your emails** page now clarifies that a fragment with dynamic content and an empty default state appears blank in the Email Designer — simulate with a matching profile to preview the content. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
 
