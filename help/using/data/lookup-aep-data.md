@@ -52,7 +52,7 @@ subfeature_v2:
 
 >[!NOTE]
 >
->The data lookup capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+>The data lookup capability is in Limited Availability and is available to all Journey Optimizer customers.
 
 Learn more on how to access and work with datasets in this section : [Get started with datasets](../data/get-started-datasets.md)
 
