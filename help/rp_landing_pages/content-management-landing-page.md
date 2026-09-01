@@ -81,3 +81,4 @@ Integrate Adobe solutions like Experience Manager, Stock, and GenStudio for stre
 - **[Generate Content](ai-assistant-landing-page.md)** - Use AI to generate and personalize content across emails, SMS, web pages, and experiments.
 - **[Multilingual Content Management](content-multilingual-landing-page.md)** - Create and manage multilingual content using manual and automated translation workflows.
 - **[Content Experimentation](../using/content-management/get-started-experiment.md)** - Set up and analyze experiments to optimize audience engagement and campaign outcomes.
+- **[AI-powered, on-brand content creation in Adobe Journey Optimizer for marketers](https://experienceleague.adobe.com/en/courses/ajo-ai-powered-on-brand-content-creation-for-marketers)** - Learn how to use Adobe Journey Optimizer's AI capabilities and features to create, refine, and govern on-brand content across channels and locales.
