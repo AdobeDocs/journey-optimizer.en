@@ -44,7 +44,7 @@ Below the key metrics, the **Challenges** section gives you two views of challen
 ![](assets/reporting-challenge-challenges.png)
 
 * **Challenge engagement**: A timeline showing how many members started, are in progress, and completed challenges over the period.
-* **Challenge reports**: A table of all your challenges with details like type, tasks, status, and enrollment numbers. Use the search bar to find a specific challenge. Select a challenge to see its full report with engagement trends and performance details.
+* **Challenge reports**: A table of all your challenges with details like type, status, and enrollment numbers. Use the search bar to find a specific challenge. Select a challenge to see its full report with engagement trends and performance details.
 
     +++Challenge report example
 
