@@ -101,27 +101,6 @@ topic_v2:
 
 ## August '26 release notes {#aug-26-updates}
 
-<!--
-### Loyalty {#aug-26-loyalty}
-
-<table>
-<thead>
-<tr>
-<th><strong>Loyalty Insights skill</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Journey Optimizer introduces <strong>Loyalty Insights</strong>, a new CX Coworker skill for asking questions about challenge performance and other loyalty program data ingested into the Loyalty field groups in Adobe Experience Platform.</p>
-<p>For more information, refer to the <a href="../start/ajo-coworker-skills.md">detailed documentation</a>.</p>
-<p>Availability date: August 12, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
--->
-
 ### Content Management
 
 The following capabilities and improvements have been introduced to Content management in this release.
@@ -295,6 +274,25 @@ The following capabilities and improvements have been introduced to Orchestrated
 * **Target dimension simplification** - The active targeting dimension is now shown on the workflow canvas, so you can see which dimension is used by a channel activity. The multi-entity segmentation flow is simpler as you no longer need a separate "Change dimension" activity. Moreover, you can now choose explicitly whether messages are sent at the profile level or at a secondary dimension level. [Learn more](../orchestrated/activities/channels.md#add)
 
   Availability date: August 18, 2026
+
+### Loyalty {#aug-26-loyalty}
+
+<table>
+<thead>
+<tr>
+<th><strong>Loyalty Insights skill</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Journey Optimizer introduces <strong>Loyalty Insights</strong>, a new CX Coworker skill for asking questions about challenge performance and other loyalty program data ingested into the Loyalty field groups in Adobe Experience Platform.</p>
+<p>For more information, refer to the <a href="../start/ajo-coworker-skills.md#loyalty-skills">detailed documentation</a>.</p>
+<p>Availability date: August 31, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Channels {#august-26-channels}
 
