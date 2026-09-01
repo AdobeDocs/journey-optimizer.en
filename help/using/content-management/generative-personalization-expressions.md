@@ -35,15 +35,15 @@ subfeature_v2:
 [!UICONTROL Generate Content] helps you generate new personalization from plain language, explain what existing expressions do, and fix issues in selected code, so that you spend less time on syntax and manual field discovery. You can also iterate on a selection or ask for other changes in conversation. It is available in two ways:
 
 * **[!UICONTROL Personalization Editor]** — wherever the editor is available across channels (subject line, body, and other fields that open it). This is the general path for AI-assisted personalization. For where and how to open the editor, see [Add personalization](../personalization/personalization-build-expressions.md#where).
-* **Email Designer toolbar** — when you author emails in the Email Designer, select a component and use **[!UICONTROL Add expression]** in the contextual toolbar to open the assistant in a toolbox without opening the full editor first. This entry point is not available outside email authoring. See [Generate from the Email Designer](#generate-email-designer).
+* **Email Designer toolbar** — when you author emails in the Email Designer, select a component and use **[!UICONTROL Add expression]** in the contextual toolbar to open the expression generator in a toolbox without opening the full editor first. This entry point is not available outside email authoring. See [Generate from the Email Designer](#generate-email-designer).
 
 For broader Generate Content setup and languages, see [Get started with Generate Content](gs-generative.md). For personalization concepts, see [Get started with personalization](../personalization/personalize.md). To write prompts that produce usable expressions, see [Write effective prompts for personalization expressions](#prompt-best-practices). For content-generation prompt ideas (tone, style, brand), see [Generate content prompt best practices](ai-assistant-prompting-guide.md).
 
-Depending on your campaign or journey context, the assistant can work with data and constructs the [!UICONTROL Personalization Editor] already exposes — for example profile attributes, segment membership, helper functions, and related personalization sources.
+Depending on your campaign or journey context, [!UICONTROL Generate Content] can work with data and constructs the [!UICONTROL Personalization Editor] already exposes — for example profile attributes, segment membership, helper functions, and related personalization sources.
 
 >[!NOTE]
 >
->The assistant keeps context from your prompts only while [!UICONTROL Generate Content] stays open in that session. Closing the assistant or the editor clears the conversation; the next time you open the assistant, you start a new conversation.
+>[!UICONTROL Generate Content] keeps context from your prompts only while it stays open in that session. Closing [!UICONTROL Generate Content] or the editor clears the conversation; the next time you open it, you start a new conversation.
 
 ## Generate personalization expressions {#generate}
 
@@ -65,31 +65,27 @@ These steps cover generating personalization expressions from scratch. To work w
     >
     >Any unrelated prompt or question returns an out-of-scope error. Adjust your prompt and ask a relevant question about the personalization you need.
 
-1. You can keep discussing with the assistant in a multi-turn conversation: it keeps context from your prompts so you can refine the same expression step by step. To start over, click the **[!UICONTROL New session]** button.
+1. You can keep discussing with [!UICONTROL Generate Content] in a multi-turn conversation: it keeps context from your prompts so you can refine the same expression step by step. To start over, click the **[!UICONTROL New session]** button.
 
     ![](assets/ai-perso-question.png)
 
-1. After you generate an expression, click **[!UICONTROL Show previews for sample profiles]** to see how the expression evaluates against **one** synthetic sample profile and to view the associated payload as JSON. The preview is a **single** spot check so you can gain confidence that your code resolves as expected — it does **not** simulate multiple recipients, varied data, or full coverage. Sample data is not saved or stored in your organization.
+1. Use the **[!UICONTROL Add explanation]** button to add inline documentation explaining what the expression does.
 
-    If you need the sample adjusted (for example, different attributes emphasized), describe what you need in the discussion with the assistant and include the keyword **preview** in your prompt.
+    ![](assets/ai-perso-explain.png)
+
+1. Click the **[!UICONTROL Preview]** button to see how the expression evaluates against a sample profile and to view the associated payload as JSON.
 
     ![](assets/ai-perso-preview-button.png)
+    
+    This control is for a quick check of your personalization code in the editor — not a full message preview of your content. For complete validation of the experience, use your usual simulation flow. [Learn how to preview & test your content](../content-management/preview-test.md)
 
-    +++Preview example
-
-    ![](assets/ai-perso-preview.png)
+    If you need the sample adjusted (for example, different attributes emphasized), describe what you need in the discussion with [!UICONTROL Generate Content] and include the keyword **preview** in your prompt.
 
     >[!NOTE]
     >
     >Do not expect multiple preview rows or exhaustive scenarios here. The control is intentionally limited to **one** sample evaluation for a quick code check, not partial coverage across many profiles. Asking for an unrealistically large set of previews may cause the request to fail.
-    
-    +++
 
-    >[!NOTE]
-    >
-    >This control is for a quick check of your personalization code in the editor — not a full message preview of your content. For complete validation of the experience, use your usual simulation flow. [Learn how to preview & test your content](../content-management/preview-test.md)
-
-1. To implement the output in your personalization expression, click **[!UICONTROL Apply]**. The assistant output is inserted at the cursor location in the personalization editor. To replace code that is already there instead, select that code in the editor first, then use **[!UICONTROL Edit with Generate Content]** (see [Edit, fix or explain existing code](#edit-existing)).
+1. To implement the output in your personalization expression, click **[!UICONTROL Apply]**. The output is inserted at the cursor location in the personalization editor. To replace code that is already there instead, select that code in the editor first, then use **[!UICONTROL Edit with Generate Content]** (see [Edit, fix or explain existing code](#edit-existing)).
 
     You can also copy the output and paste it where you need it using the ![Copy icon](../orchestrated/assets/do-not-localize/activity-copy.svg) icon.
 
@@ -99,19 +95,19 @@ You can select an existing personalization expression and use Generate Content t
 
 1. Select existing personalization code in the editor.
 
-1. Right-click the selection and choose **[!UICONTROL Edit with Generate Content]** so the assistant uses your selection as context.
+1. Right-click the selection and choose **[!UICONTROL Edit with Generate Content]** so [!UICONTROL Generate Content] uses your selection as context.
 
     ![](assets/ai-perso-right-click.png)
 
-1. **[!UICONTROL Generate Content]** opens. In **[!UICONTROL Quick Commands]**, click **[!UICONTROL Explain]** or **[!UICONTROL Fix]**, or use the text field to ask for other changes and start a conversation.
+1. **[!UICONTROL Generate Content]** opens. Select the **[!UICONTROL Explain]** or **[!UICONTROL Fix]** button, or use the text field to ask for other changes and start a conversation.
 
     ![](assets/ai-perso-edit.png)
 
-1. When you use **[!UICONTROL Fix]**, click **[!UICONTROL Show fix details]** in the discussion to show an explanation of the fix and a line-by-line before and after preview.
+1. When you select **[!UICONTROL Fix]**, click **[!UICONTROL Show fix details]** in the discussion to show an explanation of the fix and a line-by-line before and after preview.
 
     ![](assets/ai-perso-fix.png)
 
-1. As when you generate a personalization expression, click **[!UICONTROL Apply]** to implement the assistant output. It replaces the code you had selected in the personalization editor. For example, if you asked for an explanation of the code, applying will add comments in the expression that describe what it does.
+1. As when you generate a personalization expression, click **[!UICONTROL Apply]** to implement the generated output. It replaces the code you had selected in the personalization editor. For example, if you asked for an explanation of the code, applying will add comments in the expression that describe what it does.
 
 ## Generate from the Email Designer toolbar {#generate-email-designer}
 
@@ -127,9 +123,9 @@ In the Email Designer, you can use [!UICONTROL Generate content for personalizat
 
     ![](assets/ai-perso-add-expression.png)
 
-1. A toolbox opens where you can prompt Generate Content for personalization. Type what you need in plain language, the assistant suggests profile fields and other attributes that match your prompt so you can build the expression faster.
+1. A toolbox opens where you can prompt Generate Content for personalization. Type what you need in plain language, and [!UICONTROL Generate Content] suggests profile fields and other attributes that match your prompt so you can build the expression faster.
 
-1. The assistant generates the expression.
+1. [!UICONTROL Generate Content] generates the expression.
 
     ![](assets/ai-perso-add-expression-insert.png)
 
@@ -144,7 +140,7 @@ In the Email Designer, you can use [!UICONTROL Generate content for personalizat
 
 ## Write effective prompts for personalization expressions {#prompt-best-practices}
 
-Prompts for personalization expressions differ from content-generation prompts, which center on tone, style, and brand. Because the assistant builds template logic that resolves against profile and contextual data, your prompt should describe that logic precisely. Start from the customer experience you want to deliver, then express it in terms the assistant can translate into an expression.
+Prompts for personalization expressions differ from content-generation prompts, which center on tone, style, and brand. Because [!UICONTROL Generate Content] builds template logic that resolves against profile and contextual data, your prompt should describe that logic precisely. Start from the customer experience you want to deliver, then express it in terms [!UICONTROL Generate Content] can translate into an expression.
 
 An effective prompt generally defines four elements:
 
@@ -153,21 +149,21 @@ An effective prompt generally defines four elements:
 * **Output** — what to display when the condition is met, including any required format.
 * **Fallback** — what to display when the data is missing or the condition is not met.
 
-For example, a request to *take the customer's renewal date, add one year, format it as MM/dd/yy, and display nothing when the renewal date is missing* provides a data source, a transformation, an output format, and a fallback — everything the assistant needs to produce a usable expression.
+For example, a request to *take the customer's renewal date, add one year, format it as MM/dd/yy, and display nothing when the renewal date is missing* provides a data source, a transformation, an output format, and a fallback — everything [!UICONTROL Generate Content] needs to produce a usable expression.
 
 ### Recommendations {#prompt-recommendations}
 
 To get the most relevant results:
 
 * Keep each prompt focused on a single personalization rule rather than combining several unrelated rules in one request.
-* Reference only fields, fragments, offers, and datasets that exist in your environment. The assistant works with what the editor exposes and does not create data sources for you.
+* Reference only fields, fragments, offers, and datasets that exist in your environment. [!UICONTROL Generate Content] works with what the editor exposes and does not create data sources for you.
 * Describe fallback behavior for optional or potentially missing data, so the expression resolves gracefully for every profile.
 * State the expected output structure explicitly when it matters — for example, the keys an offer payload must return as JSON.
 * When you edit existing code, provide only the relevant expression as context instead of an entire message, and use **[!UICONTROL Explain]** to understand code before you apply a **[!UICONTROL Fix]** or other change.
 
 ## Data and setup requirements {#requirements}
 
-The assistant generates expressions from the resources the [!UICONTROL Personalization Editor] already exposes, so the underlying data must be configured and available. If a prompt does not return a usable expression, confirm that:
+[!UICONTROL Generate Content] generates expressions from the resources the [!UICONTROL Personalization Editor] already exposes, so the underlying data must be configured and available. If a prompt does not return a usable expression, confirm that:
 
 * the field you referenced belongs to a schema that is active in your environment,
 * any fragment you want to reuse is published,

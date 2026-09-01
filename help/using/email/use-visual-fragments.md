@@ -131,6 +131,10 @@ When working with visual fragments that contain conditional content, follow thes
 * Restructure by moving each fragment with conditional content into its own structure block at the email level
 * Save and verify that conditional content variants are properly restored
 
+>[!NOTE]
+>
+>If a fragment uses dynamic content and its default state is empty, the fragment may appear blank when added to an email in the Email Designer. This is expected behavior — the system uses the default variant as a fallback to ensure consistency. To preview the actual content, [simulate your email](../content-management/preview-test.md) using a profile that meets the conditions defined in the fragment's dynamic content rules.
+
 ## Use implicit variables {#implicit-variables-in-fragments}
 
 The implicit variables enhance the existing fragment functionality to improve efficiency for content reusability & scripting use cases. Fragments can use input variables and create output variables usable in campaign and journey content.

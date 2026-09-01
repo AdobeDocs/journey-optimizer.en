@@ -64,11 +64,13 @@ nudge: yes
     + [Set your journey properties](using/building-journeys/journey-properties.md)
     + [Configure and track your journey metrics](using/building-journeys/success-metrics.md)
     + [Design your journey](using/building-journeys/using-the-journey-designer.md)
-    + Simulation {#simulate-journey}
-      + [Get started with journey simulation](using/building-journeys/simulate-journey-gs.md) 
-      + [Simulate your journey](using/building-journeys/simulate-journey.md) 
-    + [Test your journey](using/building-journeys/testing-the-journey.md)
-    + [Journey Dry run](using/building-journeys/journey-dry-run.md)
+    + Validate your journey {#validate-journey}
+      + [Choose a validation method](using/building-journeys/choose-validation-method.md)
+      + Simulation {#simulate-journey}
+        + [Get started with journey simulation](using/building-journeys/simulate-journey-gs.md) 
+        + [Simulate your journey](using/building-journeys/simulate-journey.md) 
+      + [Test your journey](using/building-journeys/testing-the-journey.md)
+      + [Journey Dry run](using/building-journeys/journey-dry-run.md)
     + [Publish your journey](using/building-journeys/publish-journey.md)
     + [Pause a journey](using/building-journeys/journey-pause.md)
     + [Live report in your journey](using/building-journeys/report-journey.md)
@@ -451,7 +453,7 @@ nudge: yes
     + [Create a Live activity](using/mobile-live/create-mobile-live.md)
     + [Troubleshoot Live activities](using/mobile-live/troubleshoot-mobile-live.md)
     + [FAQ](using/mobile-live/mobile-live-faq.md)
-    + Configure Live activity channel {#configure}
+    + Configure Live activity channel {#configure-live-activity}
       + [Configure Live activity in Journey Optimizer](using/mobile-live/mobile-live-configuration.md)
       + [Configure Live activity SDK integration](using/mobile-live/mobile-live-configuration-sdk.md)
   + Custom channels {#custom-channel}
@@ -566,7 +568,9 @@ nudge: yes
   + Generate content {#generate-content}
     + [Get started with Generate content](using/content-management/gs-generative.md)
     + [AI prompt best pratices](using/content-management/ai-assistant-prompting-guide.md)
-    + {hide-from-toc}[Content Credentials in AI Assistant](using/content-management/generative-c2pa-metadata.md)
+    + C2PA metadata {#c2pa}
+      + [C2PA metadata in Generate content](using/content-management/generative-c2pa-metadata.md)
+      + [C2PA metadata in Email and Landing Page Designer](using/content-management/c2pa-metadata-email-designer.md)
     + [Generate full content with AI](using/content-management/generative-full-content.md)
     + [Generate text with AI](using/content-management/generative-text.md)
     + [Generate images with AI](using/content-management/generative-image.md)
@@ -638,7 +642,6 @@ nudge: yes
     + [Reporting & experimentation prerequisites](using/reports/reporting-configuration.md)
     + [Exclusion reasons](using/reports/exclusion-list.md)
     + Campaign reports {#campaign-reporting}
-      + [Campaign reports](/help/rp_landing_pages/campaign-reporting-landing-page.md)
       + [Campaign report](using/reports/campaign-global-report-cja.md)
       + [Code-based campaign report](using/reports/campaign-global-report-cja-code.md)
       + [Content card campaign report](using/reports/campaign-global-report-cja-content.md)
@@ -830,7 +833,7 @@ nudge: yes
       + [API Reference](/help/rp_landing_pages/api-reference-landing-page.md)
       + [Getting started](using/offers/api-reference/getting-started.md)
       + Create & manage offers using APIs {#offers-api}
-        + Placements {#placements}
+        + Placements {#dm-placements}
           + [List placements](using/offers/api-reference/offers-api/placements/placements-list.md)
           + [Lookup a placement](using/offers/api-reference/offers-api/placements/lookup.md)
           + [Create a placement](using/offers/api-reference/offers-api/placements/create.md)

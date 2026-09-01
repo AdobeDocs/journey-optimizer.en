@@ -27,6 +27,16 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## August 2026 {#august-2026}
 
+* The **Add visual fragments to your emails** page now clarifies that a fragment with dynamic content and an empty default state appears blank in the Email Designer — simulate with a matching profile to preview the content. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
+
+* The **Track your messages** page has been updated to clarify that unsupported URL characters (e.g., apostrophes) must be percent-encoded, and that leaving them unencoded can break tracked links and URL tracking parameters. [Read more](../email/message-tracking.md#insert-links)
+
+* The **Send using waves** page has been updated to document that the last wave in a read-audience journey must be scheduled within **6 days and 18 hours** of the journey start. Exceeding this window triggers a validation error and prevents the journey from entering test mode or going live. [Read more](../delivery/send-using-waves.md#limitations-guardrails)
+
+* A new **Suppress feedback events** section has been added to the **Decision management data collection** page, documenting how to use the `dryRun` flag to suppress decision events during testing and prevent feedback from being captured for reporting and frequency capping counters. [Read more](../offers/data-collection/data-collection.md#suppress-feedback)
+
+* A new **Choose a validation method** page is now available. It compares Journey Simulation, Test mode, and Journey Dry run — the data each uses, whether it sends real messages, common mistakes to avoid, and a decision guide for picking the right method at each stage of building a journey. [Read more](../building-journeys/choose-validation-method.md)
+
 * The **Guardrails and limitations** page has been updated to clarify the Audience Qualification activity and Events guardrails: wording now consistently refers to Audience Qualification **activities** (rather than nodes), including when used as exit criteria, and both guardrails now explicitly cover **live, closed, paused, test mode, and dry run** journeys. [Read more](../start/guardrails.md#audience-qualif-g)
 
 * A note has been added to the **Test HTML size optimization** section to clarify that proof sizes reflect the HTML template size (Handlebars at minimum value), not the final delivered email size, which may be larger once dynamic expressions are resolved at delivery time. [Read more](../email/create-email.md#optimize-html-proof)
@@ -40,6 +50,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 * A new **Use Image settings mode** section has been added to the generative content documentation. It explains the **Balanced**, **DAM**, and **Creative** modes available under **[!UICONTROL Image settings]**, which control whether AI-generated content sources images from your Digital Asset Management library, generates them with AI, or blends both. [Read more](../content-management/generative-uc.md#image-mode)
 
 * The **Destinations** description under **Left navigation > Main sections** has been updated to note that organizations with [!DNL Real-Time CDP] or [!DNL Adobe Journey Optimizer] can also activate audiences to eligible personalization destinations, such as [!DNL Adobe Target], from the Experience Platform destinations catalog. [Read more](../start/user-interface.md#main-sections)
+
+* How-to videos have been added to the Loyalty Challenges documentation for creating challenges, setting up reward providers, and monitoring challenge performance. [Watch the challenge videos](../loyalty-challenges/create-challenges.md#video), [watch the reward provider video](../loyalty-challenges/reward-definition-guide.md#video), and [watch the reporting video](../loyalty-challenges/loyalty-reporting.md#video).
 
 ## July 2026 {#july-2026} 
 

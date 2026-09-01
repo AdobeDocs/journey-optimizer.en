@@ -131,6 +131,8 @@ The **[!UICONTROL Bounces Reasons]** table provides a comprehensive overview of 
 
 The **[!UICONTROL Error Reasons]** table allows you to identify the specific errors that occurred during the sending process of your push notifications, facilitating a thorough analysis of any issues encountered.
 
+Refer to [this section](campaign-global-report-cja-push.md#error-reasons-push) for the detailed list of push error reasons.
+
 ## Excluded reasons {#exclude-reasons-push}
 
 ![](assets/cja-campaign-push-excluded.png)
