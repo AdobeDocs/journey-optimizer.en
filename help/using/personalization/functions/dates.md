@@ -247,6 +247,10 @@ The following operation gets all the keys for the map `identityMap`.
 
 The `dateDiff` function is used to retrieve the difference between two dates in number of days.
 
+>[!NOTE]
+>
+>This is a different function from the `dateDiff` available in the [journey expression editor](../../building-journeys/functions/date-functions.md#dateDiff). The journey expression editor version also accepts `dateOnly` and `dateTimeOnly` parameters, and returns milliseconds instead of days for `dateTime` and `dateTimeOnly` inputs.
+
 **Syntax**
 
 ```sql
