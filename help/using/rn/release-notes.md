@@ -65,14 +65,14 @@ topic_v2:
 <table>
 <thead>
 <tr>
-<th><strong>Generate expressions with AI in journeys</strong><br/></th>
+<th><strong>Inbound experience simulation in Action Campaigns</strong><br/></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>
-<p>The journey advanced expression editor now integrates AI-powered expression generation: describe the expression you want to build in natural language, and the editor generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
+<p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
 <p>Availability date: September 4, 2026</p>
 </td>
 </tr>
@@ -155,6 +155,23 @@ Availability date: August 20, 2026
 <table>
 <thead>
 <tr>
+<th><strong>Generate expressions with AI in journeys</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>The journey advanced expression editor now integrates AI-powered expression generation: describe the expression you want to build in natural language, and the editor generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
+<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
+<p>Availability date: August 31, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
 <th><strong>Journey-level holdout (Limited availability)</strong><br/></th>
 </tr>
 </thead>
@@ -198,21 +215,6 @@ The following capabilities and improvements have been introduced to Campaigns in
 
 +++ Coming soon — **Information below is subject to change.**
 
-<table>
-<thead>
-<tr>
-<th><strong>Inbound experience simulation in Action Campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
-<p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
-</td>
-</tr>
-</tbody>
-</table>
 
 * **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
 
