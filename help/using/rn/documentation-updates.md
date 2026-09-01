@@ -27,6 +27,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## August 2026 {#august-2026}
 
+* The **Configure your Channel configuration** page now includes a note clarifying that the schema used for secondary dimension must have a primary key, and that composite primary keys are not supported. [Read more](../orchestrated/channel-config.md)
+
 * The **Add visual fragments to your emails** page now clarifies that a fragment with dynamic content and an empty default state appears blank in the Email Designer — simulate with a matching profile to preview the content. [Read more](../email/use-visual-fragments.md#fragment-dynamic-content)
 
 * The **Track your messages** page has been updated to clarify that unsupported URL characters (e.g., apostrophes) must be percent-encoded, and that leaving them unencoded can break tracked links and URL tracking parameters. [Read more](../email/message-tracking.md#insert-links)

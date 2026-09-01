@@ -77,6 +77,9 @@ To configure you channel configuration:
 
           For example, if the secondary dimension represents a booking or subscription, the execution address, such as an email, can be taken from that level. This is useful in cases where profiles use a different contact detail when booking or subscribing to a service.
 
+          >[!NOTE]
+          >The schema used for the secondary dimension must have a primary key. Composite primary keys are not supported for secondary dimensions.
+
 1. From the **[!UICONTROL Delivery address]** field, click ![edit icon](assets/do-not-localize/edit.svg) to choose the specific field to use for your message delivery.
 
      ![](assets/target-dimension-4.png)
