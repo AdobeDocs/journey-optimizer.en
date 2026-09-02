@@ -70,8 +70,6 @@ To access this feature, your organization must have signed the [!DNL Generative 
 
 **Permissions**
 
-* To access and create templates, your role must include the **[!UICONTROL Manage content templates]** permission (under the **Content Management** resource). [Learn more about permissions](../administration/permissions.md)
-
 * To use the image to HTML converter, you need to be granted the **Generate Content** permission. Learn how to assign Content generation related permissions in [this section](../content-management/gs-generative.md#generative-access).
 
 **Agreement**
