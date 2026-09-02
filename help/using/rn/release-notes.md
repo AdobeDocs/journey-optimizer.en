@@ -56,6 +56,8 @@ topic_v2:
 
 ## September '26 updates {#sep-26-updates}
 
+### Journeys {#sep-26-journeys}
+
 <table>
 <thead>
 <tr>
@@ -96,6 +98,8 @@ topic_v2:
 
   Availability date: September 1, 2026
 
+### Campaigns {#sep-26-campaigns}
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -114,6 +118,12 @@ topic_v2:
 </tr>
 </tbody>
 </table>
+
+* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
+
+* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
+
+* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
 
 +++
 
@@ -154,7 +164,6 @@ The following capabilities and improvements have been introduced to Content mana
 
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
 
-
   Availability date: August 20, 2026
 
 * **New list functions in the advanced expression editor** - Two new functions are available in the advanced expression editor: `mergeLists` combines two lists, with or without deduplication, and `differenceLists` returns the items of one list that are not present in another. [Learn more](../building-journeys/functions/list-functions.md)
@@ -191,17 +200,6 @@ The following capabilities and improvements have been introduced to Campaigns in
 * **Per-campaign lifecycle alert subscriptions** - You can now subscribe to supported campaign lifecycle alerts for a single campaign, in addition to the existing sandbox-level subscription. This lets you monitor individual high-priority campaigns without receiving the same alert for every campaign in the sandbox. [Learn more](../reports/alerts.md#subscribe-alerts)
 
   Availability date: August 13, 2026
-
-+++ Coming soon — **Information below is subject to change.**
-
-
-* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
-
-* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
-
-* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
-
-+++
 
 ### Orchestrated Campaigns {#august-26-oc}
 
