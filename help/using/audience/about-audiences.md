@@ -113,3 +113,14 @@ Once your audiences are ready, you can select them when building journeys or cre
 Learn about unified customer profiles and audiences in Journey Optimizer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432671?quality=12)
+
+
+>[!DONOTLOCALIZE]
+>
+>+++ AI Knowledge Reference
+>
+>This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
+>
+>For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
+>
+>+++
