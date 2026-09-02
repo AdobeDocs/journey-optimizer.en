@@ -155,15 +155,15 @@ The following capabilities and improvements have been introduced to Content mana
 * **Start and end dates in the journey header** - When start and/or end dates are configured on a journey, they are now surfaced in the journey header next to the status badge. The displayed label adapts based on whether each date is upcoming or has already passed. [Read more](../building-journeys/journey-properties.md#dates)
 
 
-Availability date: August 20, 2026
+  Availability date: August 20, 2026
 
 * **New list functions in the advanced expression editor** - Two new functions are available in the advanced expression editor: `mergeLists` combines two lists, with or without deduplication, and `differenceLists` returns the items of one list that are not present in another. [Learn more](../building-journeys/functions/list-functions.md)
 
-    Availability date: August 13, 2026
+  Availability date: August 13, 2026
 
 * **Send-Time Optimization in the Wait activity** - Send-Time Optimization is now available in the Wait activity, letting Adobe's AI determine the optimal time to continue to any downstream activity. [Learn more](../building-journeys/wait-activity.md#sto-wait)
 
-    Availability date: August 13, 2026
+  Availability date: August 13, 2026
 
 ### Campaigns {#aug-26-campaigns}
 
@@ -189,7 +189,8 @@ The following capabilities and improvements have been introduced to Campaigns in
 </table>
 
 * **Per-campaign lifecycle alert subscriptions** - You can now subscribe to supported campaign lifecycle alerts for a single campaign, in addition to the existing sandbox-level subscription. This lets you monitor individual high-priority campaigns without receiving the same alert for every campaign in the sandbox. [Learn more](../reports/alerts.md#subscribe-alerts)
-    Availability date: August 13, 2026
+
+  Availability date: August 13, 2026
 
 +++ Coming soon — **Information below is subject to change.**
 
@@ -318,27 +319,12 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 11, 2026
 
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Decisioning support in Web Channel</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-+++
-
 ### Usability improvements {#august-26-usability}
 
+* **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+
+  Availability date: August 17, 2026
+  
 * **Bulk operations in journey inventory** - You can now perform new bulk actions directly from the journey inventory list, making it faster to manage multiple journeys at once. Select several journeys and apply any of the following new actions in a single step: **add to package**, **delete**, **move to folder**, **edit tags**, or **manage access**. This reduces the need to repeat the same action one journey at a time, streamlining journey management for teams working with large numbers of journeys. [Learn more](../building-journeys/journey-ui.md)
 
   Availability date: August 12, 2026
@@ -347,6 +333,4 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 11, 2026
 
-* **Multi-selection in the new journey canvas** - The new journey canvas experience introduces simplified multi-node selection: hold Shift and drag to select multiple nodes at once, rather than selecting them individually. This enables bulk actions, such as copy, delete, or save as a journey fragment, to be performed efficiently across several nodes. [Learn more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
 
-  Availability date: August 17, 2026
