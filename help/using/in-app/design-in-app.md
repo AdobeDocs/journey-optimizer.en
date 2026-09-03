@@ -98,7 +98,7 @@ From the **Content** tab, you can define and personalize the content of the noti
 ### Close button {#close-button}
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_inapp_authoring_close"
+>id="ajo_campaigns_Inapp_authoring_closeButtton"
 >title="Choose the Style of your Close button."
 >abstract="The close button section gives you options to select variations of the message close button and an option to upload a custom image."
 
@@ -121,7 +121,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can check t
 ### Media {#add-media}
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_inapp_authoring_media"
+>id="ajo_campaigns_Inapp_authoring_Media"
 >title="Add media to your In-app message to create a compelling experience for end user."
 >abstract="Provide either a direct link to content or use the asset selector to pick media in Asset Essentials to add to your message."
 
@@ -141,7 +141,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can customi
 ### Content {#title-body}
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_inapp_authoring_content"
+>id="ajo_campaigns_Inapp_authoring_Content"
 >title="To compose your message, enter the content in the Header and Body fields."
 >abstract="Both header and body text can be added here. To include personalization tokens, open the personalization dialog."
 
@@ -164,7 +164,7 @@ If the **[!UICONTROL Advanced formatting mode]** is switched on, you can choose 
 ### Buttons {#add-buttons}
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_inapp_authoring_buttons"
+>id="ajo_campaigns_inapp_authoring_ctabuttons"
 >title="Add buttons for users to interact with your In-app message."
 >abstract="This section will allow you to add call-to-action buttons to your message. You can include custom text and targets for each button."
 
@@ -207,6 +207,11 @@ From the **Settings** tab, you can define the message layout and preview your In
 >title="Preview your In-app message."
 >abstract="This is the preview image that will be displayed when your message is sent to the device's message summary."
 
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_Inapp_authoring_settingsPreview"
+>title="Preview your In-app message."
+>abstract="This is the preview image that will be displayed when your message is sent to the device's message summary."
+
 >[!NOTE]
 >
 >Preview is only available for Mobile In-app messages.
@@ -224,9 +229,15 @@ The **[!UICONTROL App Preview]** allows you to add a background behind your In-a
 ### Layout {#layout-options}
 
 >[!CONTEXTUALHELP]
->id="ajo_campaigns_inapp_authoring_layout"
+>id="ajo_campaigns_Inapp_authoring_layout"
 >title="Define the message layout of your In-app message."
 >abstract="This section allows you to add a background to your In-app message. This requires the UI takeover to be enabled."
+
+>[!CONTEXTUALHELP]
+>id="ajo_campaigns_Inapp_authoring_settingsLayout"
+>title="Define the message layout of your In-app message."
+>abstract="This section allows you to add a background to your In-app message. This requires the UI takeover to be enabled."
+
 
 ![](assets/in_app_web_design_6.png)
 
