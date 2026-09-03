@@ -32,6 +32,7 @@ Date functions enable you to manipulate and work with date and time values withi
 Use date functions when you need to:
 
 * Get the current time or date with specific timezone handling ([now](#now), [nowWithDelta](#nowWithDelta), [currentTimeInMillis](#currentTimeInMillis))
+* Calculate the difference between two dates or date-times, in days or milliseconds depending on the parameter type ([dateDiff](#dateDiff))
 * Check if a date falls within a specific time range ([inLastDays](#inLastDays), [inLastHours](#inLastHours), [inLastMonths](#inLastMonths), [inLastYears](#inLastYears), [inNextDays](#inNextDays), [inNextHours](#inNextHours), [inNextMonths](#inNextMonths), [inNextYears](#inNextYears))
 * Modify date and time components ([setHours](#setHours), [setDays](#setDays), [updateTimeZone](#updateTimeZone))
 * Perform time-based calculations and comparisons
@@ -72,6 +73,67 @@ Returns an integer.
 `currentTimeInMillis()`
 
 Returns "1544712617131".
+
++++
+
+## dateDiff {#dateDiff}
+
+Returns the difference between two dates or date-times of the same type. The unit of the result depends on the parameter type: `dateOnly` parameters return the difference in **days**, while `dateTimeOnly` and `dateTime` parameters return the difference in **milliseconds**. Returns `null` if either parameter is `null`.
+
+>[!NOTE]
+>
+>This is a different function from the `dateDiff` available in the [personalization editor](../../personalization/functions/dates.md#date-diff). The personalization editor version only accepts `dateTime` parameters and always returns the difference in days.
+
++++Syntax
+
+`dateDiff(<date1>,<date2>)`
+
++++
+
++++Parameters
+
+| Parameter | Type                                 |
+|-----------|--------------------------------------|
+| date 1    | dateOnly, dateTimeOnly, or dateTime  |
+| date 2    | dateOnly, dateTimeOnly, or dateTime  |
+
+Both parameters must use the same data type; mixing types (for example, `dateOnly` with `dateTime`) is not supported. Parameters can be literal date values, other functions such as `now()`, or contextual attributes (event payload fields, custom action response fields, profile or entity fields, and variables) as long as they are typed as `dateOnly`, `dateTimeOnly`, or `dateTime`.
+
++++
+
++++Signatures and returned type
+
+`dateDiff(<dateOnly>,<dateOnly>)`
+
+Returns an integer representing the number of days between the two dates.
+
+`dateDiff(<dateTimeOnly>,<dateTimeOnly>)`
+
+Returns an integer representing the number of milliseconds between the two date-times.
+
+`dateDiff(<dateTime>,<dateTime>)`
+
+Returns an integer representing the number of milliseconds between the two date-times.
+
++++
+
++++Examples
+
+`dateDiff(toDateOnly('2023-12-15'), toDateOnly('2023-12-12'))`
+
+Returns 3 (days).
+
+`dateDiff(toDateTimeOnly('2023-12-15T00:00:00'), toDateTimeOnly('2023-12-12T00:00:00'))`
+
+Returns 259200000 (milliseconds, equivalent to 3 days).
+
+`dateDiff(now(), toDateTime('2024-12-25T00:00:00Z'))`
+
+Returns the number of milliseconds between today and December 25, 2024.
+
+`dateDiff(#{ExperiencePlatform.ProfileFieldGroup.person.birthDate}, toDateOnly('2023-01-01'))`
+
+Returns the number of days between the profile's `birthDate` field and January 1, 2023, assuming `birthDate` is typed as `dateOnly`.
 
 +++
 
@@ -587,12 +649,14 @@ For complete understanding, this information should be combined with the documen
 **Intents:**
 * Get the current datetime (with optional timezone) using `now` or `nowWithDelta`
 * Retrieve the current time as an epoch integer using `currentTimeInMillis`
+* Calculate the difference between two dates or date-times using `dateDiff`
 * Check if a datetime falls within the last N days, hours, months, or years using `inLastDays`, `inLastHours`, `inLastMonths`, `inLastYears`
 * Check if a datetime falls within the next N days, hours, months, or years using `inNextDays`, `inNextHours`, `inNextMonths`, `inNextYears`
 * Force a specific hour or day of the month on a datetime value using `setHours` or `setDays`
 * Convert a datetime to a different timezone while preserving the same instant using `updateTimeZone`
 
 **Glossary:**
+* **dateOnly**: A date value with no time or timezone information *(product-specific)*
 * **dateTime**: A date-time value that includes timezone offset information *(product-specific)*
 * **dateTimeOnly**: A date-time value with no timezone information *(product-specific)*
 * **epoch milliseconds**: An integer representing the number of milliseconds elapsed since 1970-01-01T00:00:00Z
@@ -602,6 +666,9 @@ For complete understanding, this information should be combined with the documen
 * `now()` is only available in journey expressions; for email personalization use `getCurrentZonedDateTime()` instead
 * The timezone ID in `nowWithDelta` must be a string constant — field references and dynamic expressions are not supported
 * The timezone ID in `updateTimeZone` must be a string constant
+* `dateDiff` requires both parameters to be the same data type (`dateOnly`, `dateTimeOnly`, or `dateTime`); mixing types is not supported
+* `dateDiff` returns `null` if either parameter is `null`
+* `dateDiff` returns days for `dateOnly` parameters, but milliseconds (not days) for `dateTimeOnly` and `dateTime` parameters — convert accordingly when comparing results across types
 
 **Terminology:**
 * Canonical name: Date functions — Acronym: none — variants: date-time functions, temporal functions
@@ -609,6 +676,7 @@ For complete understanding, this information should be combined with the documen
 * Do not confuse: "inLastDays" (looks back in time) ≠ "inNextDays" (looks forward in time)
 * Do not confuse: "setHours" (replaces the hour component) ≠ "nowWithDelta" (offsets the current time)
 * Do not confuse: "updateTimeZone" (same instant, different timezone representation) ≠ "setHours" (changes the time value itself)
+* Do not confuse: the journey expression editor's `dateDiff` (accepts `dateOnly`, `dateTimeOnly`, or `dateTime`; returns days or milliseconds depending on type) ≠ the personalization editor's `dateDiff` (accepts only `dateTime`; always returns days)
 
 **FAQ:**
 * **Q: Can I use `now()` in email personalization content?** — No, `now()` is only available in journey expressions. Use `getCurrentZonedDateTime()` for email personalization.

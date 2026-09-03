@@ -217,7 +217,7 @@ The following capabilities and improvements have been added to journeys in this 
 
   Availability date: July 29, 2026
 
-* **Circuit breaker protection for slow custom action endpoints** - For endpoints routed through the slow custom action service, Journey Optimizer now temporarily caps all calls for up to 5 minutes when more than 20% of calls in a 120-second window exceed 10 seconds, if there are at least 200 calls in the 120-second observation window. This helps prevent overloading endpoints that are already slow. [Learn more](../configuration/external-systems.md#response-time)
+* **Circuit breaker protection for slow custom action endpoints** - For endpoints routed through the slow custom action service, Journey Optimizer now temporarily caps all calls for up to 5 minutes when more than 20% of calls in a 120-second window exceed 5 seconds, if there are at least 200 calls in the 120-second observation window. This helps prevent overloading endpoints that are already slow. [Learn more](../configuration/external-systems.md#response-time)
 
   Availability date: July 29, 2026. This capability is being gradually rolled out across regions.
 

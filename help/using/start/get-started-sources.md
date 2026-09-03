@@ -104,6 +104,7 @@ Journey Optimizer supports various types of sources to connect with your existin
 * Talon.One
 * Capillary
 * Kobie
+* LAVA
 
 ➡️ See the complete list in the [Experience Platform sources catalog](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#sources-catalog){target="_blank"}
 

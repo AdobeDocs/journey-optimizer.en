@@ -7,7 +7,6 @@ feature: Journeys
 topic: Content Management
 role: User
 level: Intermediate
-badge: label="Public beta" type="Informative"
 mini-toc-levels: 2
 feature_v2: []
 subfeature_v2: []
@@ -20,11 +19,9 @@ subfeature_v2: []
 >title="Generate expressions with AI"
 >abstract="Use AI to build and generate expressions directly in the Journey advanced expression editor. For example in conditions, **Optimize** activities, or **Wait** activities that use a custom date. When you describe what you need in plain language, AI generates the corresponding expression for you."
 
->[!AVAILABILITY]
+>[!IMPORTANT]
 >
->This feature is currently in **public beta**. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../../rn/releases.md).
->
-Before using this capability, read the related [Guardrails and Limitations](../../content-management/gs-generative.md#generative-guardrails) that apply to generative AI features in Journey Optimizer.
+>Before using this capability, read the related [Guardrails and Limitations](../../content-management/gs-generative.md#generative-guardrails) that apply to generative AI features in Journey Optimizer.
 
 This AI-powered capability, built into the Journey advanced expression editor, helps you generate valid expressions from plain language prompts.
 
@@ -34,7 +31,7 @@ It is available wherever the Journey **[!UICONTROL Advanced expression editor]**
 
 To generate an expression with AI:
 
-1. Open the **[!UICONTROL Advanced expression editor]** in your journey, nfor example from a branching condition, an **[!UICONTROL Optimize]** activity, or a **[!UICONTROL Wait]** activity with a custom date.
+1. Open the **[!UICONTROL Advanced expression editor]** in your journey, for example from a branching condition, an **[!UICONTROL Optimize]** activity, or a **[!UICONTROL Wait]** activity with a custom date.
 
    ![](../assets/expression-assistant-pane.png)
 
@@ -85,6 +82,12 @@ When a **[!UICONTROL Wait]** activity uses a custom date, you define when the pr
 * *"wait node: 30 days from now at 10 PM as date time only"*
 * *"wait until 9am today in UTC timezone, return as date time only"*
 
+### Audience membership prompts {#example-prompts-audience}
+
+Describe the audience membership check you want to make in plain language. For example:
+
+* *"check to see if profile is in the Gold Loyalty audience"*
+
 ## Related resources {#related}
 
 * [Work with the advanced expression editor](expressionadvanced.md) — Overview of the expression editor interface and supported syntax.
@@ -104,6 +107,7 @@ For complete understanding, this information should be combined with the documen
 * Apply a generated expression directly into the advanced expression editor with the Apply button
 * Use AI-based expression generation inside Optimize activities, Condition activities, and custom-date Wait activities
 * Provide example prompts for event-based conditions and `dateTimeOnly` wait expressions
+* Check audience membership using a natural language prompt, such as asking whether a profile is in the Gold Loyalty audience
 * Troubleshoot failed generation by revising prompts to reference valid field names and data sources
 
 **Glossary:**
@@ -115,7 +119,6 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Generate expressions with AI is currently in **public beta** — availability and behavior may change
 * Generative AI guardrails and limitations from the main Generate Content documentation apply to this feature
 * If the assistant references fields not present in your journey's data sources, it returns an error — revise the prompt to use available field names
 * The exact generated expression syntax depends on the fields and activities configured in your specific journey
@@ -132,6 +135,4 @@ For complete understanding, this information should be combined with the documen
 * **Q: What happens if AI cannot generate a valid expression?** — An error message appears; you should revise your prompt to use field names and data sources that exist in your journey configuration.
 * **Q: How do I insert a generated expression into the editor?** — Click the **Apply** button in the assistant panel to insert it directly at the current cursor position in the advanced expression editor.
 * **Q: Can Generate expressions with AI create `dateTimeOnly` expressions for Wait activities?** — Yes; for example prompting "30 days from now at 10 PM as date time only" generates the appropriate `dateTimeOnly` expression.
-* **Q: Is Generate expressions with AI generally available?** — No; it is currently in public beta. Check the Journey Optimizer release cycle page for availability updates.
-
 +++
