@@ -110,9 +110,7 @@ Some nodes prevent **[!UICONTROL Simulation]** from starting. Others run in simu
 
 </br>
 
-+++  Decisioning behavior
-
-**[!UICONTROL Content Decision]** nodes, the **[!UICONTROL Optimize]** activity's **[!UICONTROL Targeting rule]** method, and actions whose content uses [!DNL Adobe Journey Optimizer] decisioning (for example, email content driven by a decision policy) are supported in **[!UICONTROL Simulation]**. The Journey Agent evaluates the configured decision policy against the simulated user's profile attributes.
++++ Decisioning behavior
 
 The following Decisioning element are supported:
 
