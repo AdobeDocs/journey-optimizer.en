@@ -97,9 +97,8 @@ Some nodes prevent **[!UICONTROL Simulation]** from starting. Others run in simu
 | Business Events | You cannot run journeys that start with a business event in **[!UICONTROL Simulation]**. |
 | Inbound channels | You cannot run journeys that include an inbound channel node in **[!UICONTROL Simulation]**. |
 | Supplemental ID (multiple re-entrance) | **[!UICONTROL Simulation]** does not start when multiple re-entrance is enabled and the same simulated user could have several active instances at once. |
-| Content Decision node | Remove or change this activity before you simulate the journey. |
 | Dataset Lookup | **[!UICONTROL Simulation]** does not support customer dataset lookups by key. Remove or change this activity before you run a simulation. |
-| **[!UICONTROL Optimize]** activity | **[!UICONTROL Experiment]** and **[!UICONTROL Targeting rule]** are not supported. Remove or change the node before you simulate.<br><br>Other **[!UICONTROL Optimize]** methods behave as follows:<br><br>**[!UICONTROL Percentage split]**: The Journey Agent creates one simulated user per branch, not according to branch percentages. At runtime, live evaluation picks the branch and it may differ from the generated path. You cannot mock a branch choice. To steer users, rely on branch order on the canvas. The top branch is always chosen.<br><br>**[!UICONTROL Time condition]**: Conditions apply at runtime as in a live journey. For example, a window from 8:00 to 20:00 only lets users through while simulation runs inside that window. You cannot mock execution time. Set the condition to match the current time when you test.<br><br>**[!UICONTROL Date condition]**: Conditions apply at runtime as in a live journey. For example, a date of June 8, 2026 only lets users through when simulation runs on that date. You cannot mock execution date. Set the condition to the current date when you test.<br><br>**[!UICONTROL Profile cap]**: Caps are not enforced during simulation. The Journey Agent creates one simulated user per branch. You cannot mock a branch choice. To steer users, rely on branch order on the canvas. The top branch is always chosen. |
+| **[!UICONTROL Optimize]** activity | **[!UICONTROL Experiment]** is not supported. Remove or change the node before you simulate.<br><br>Other **[!UICONTROL Optimize]** methods behave as follows:<br><br>**[!UICONTROL Targeting rule]**: The Journey Agent evaluates the configured rule against the simulated user's profile attributes to select the branch.<br><br>**[!UICONTROL Percentage split]**: The Journey Agent creates one simulated user per branch, not according to branch percentages. At runtime, live evaluation picks the branch and it may differ from the generated path. You cannot mock a branch choice. To steer users, rely on branch order on the canvas. The top branch is always chosen.<br><br>**[!UICONTROL Time condition]**: Conditions apply at runtime as in a live journey. For example, a window from 8:00 to 20:00 only lets users through while simulation runs inside that window. You cannot mock execution time. Set the condition to match the current time when you test.<br><br>**[!UICONTROL Date condition]**: Conditions apply at runtime as in a live journey. For example, a date of June 8, 2026 only lets users through when simulation runs on that date. You cannot mock execution date. Set the condition to the current date when you test.<br><br>**[!UICONTROL Profile cap]**: Caps are not enforced during simulation. The Journey Agent creates one simulated user per branch. You cannot mock a branch choice. To steer users, rely on branch order on the canvas. The top branch is always chosen. |
 | Timeout and error branches | The Journey Agent does not generate users for activity timeout or error branches. Users only enter those paths if a real timeout or error happens during simulation. |
 | Timeout branch (event activities) | Simulated users are created, but in **[!UICONTROL Manual simulation]** the Journey Agent does not decide who enters an event timeout branch. Control the path by sending or not sending the event. For example, to test a timeout branch, wait out the configured timeout and do not send the event. **[!UICONTROL Quick simulation]** can send or withhold events automatically to cover timeout branches. |
 | Reaction events | Reaction events run in simulation, but the action must happen in real life. For example, an email **open** reaction requires opening the proof message. You cannot mock reactions in the simulation UI. |
@@ -111,14 +110,33 @@ Some nodes prevent **[!UICONTROL Simulation]** from starting. Others run in simu
 
 </br>
 
++++  Decisioning behavior
+
+**[!UICONTROL Content Decision]** nodes, the **[!UICONTROL Optimize]** activity's **[!UICONTROL Targeting rule]** method, and actions whose content uses [!DNL Adobe Journey Optimizer] decisioning (for example, email content driven by a decision policy) are supported in **[!UICONTROL Simulation]**. The Journey Agent evaluates the configured decision policy against the simulated user's profile attributes.
+
+The following Decisioning element are supported:
+
+| Decisioning element | Notes |
+| -- | -- |
+| Offer eligibility | Supported, including eligibility based on profile attributes. |
+| Eligibility rule | Supported. The rule can contain profile attributes. |
+| Eligibility audience | Supported when the audience is added to the simulated user's profile. |
+| Ranking by offer priority | Supported. Profile attributes are not involved. |
+| Ranking by formula | Supported. The formula can use profile attributes. |
+| Ranking by **[!UICONTROL AI Model - Auto]** | Supported. Ranking is based only on the offer and the configured dataset, profile attributes are not involved. Requires the necessary data to be present in the configured dataset. |
+| Ranking by **[!UICONTROL AI Model - Personalization]** | Supported. The audience is considered for ranking, not for eligibility. Because ranking is AI-driven, returned offers may vary between simulation runs. |
+
++++
+
+</br>
+
 +++ Functional limitations
 
-The following capabilities are not supported in **[!UICONTROL Simulation]**.
+The following capabilities are **not** supported in **[!UICONTROL Simulation]**.
 
 | Capability | Notes |
 | --- | --- |
 | Exit criteria | Exit criteria are not applied when you run **[!UICONTROL Simulation]**. |
-| [!DNL Adobe Journey Optimizer] decisioning inside an action, for example, email content with Adobe Journey Optimizer decisioning | Action proofs for content that uses [!DNL Adobe Journey Optimizer] decisioning are not generated. |
 | Mock custom action response | [!UICONTROL Custom actions] perform a real outbound call by default. Mocking the response so no external call runs is not supported. |
 | Consent policy evaluation | Consent cannot be mocked at the simulated-user level and consent policies are not evaluated during simulation. |
 | Journey capping and arbitration | Not evaluated nor enforced during simulation. |
@@ -169,12 +187,13 @@ This section contains structured knowledge intended to support interpretation, r
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
-* **TL;DR:** This page introduces the Journey Simulation feature in Adobe Journey Optimizer, explaining how it differs from Test mode, which journey types it supports, how to launch a simulation, and what its node-level, functional, and quantitative limitations are.
+* **TL;DR:** This page introduces the Journey Simulation feature in Adobe Journey Optimizer, explaining how it differs from Test mode, which journey types it supports, how to launch a simulation, how [!DNL Adobe Journey Optimizer] decisioning behaves during a simulation, and what its node-level, functional, and quantitative limitations are.
 
 **Intents:**
 * Understand the difference between Simulation and Test mode for validating journeys
 * Launch a Simulation session for a batch, unitary, or mixed journey type
 * Identify which journey nodes block or restrict Simulation from running
+* Determine how Content Decision nodes, Optimize Targeting rule, and AJO-decisioned actions behave during Simulation
 * Determine which features are unsupported during Simulation (e.g., consent, frequency capping, STO)
 * Plan around quantitative guardrails such as maximum simulated users per sandbox
 * Decide whether to use Quick simulation or Manual simulation based on testing needs
@@ -212,5 +231,6 @@ For complete understanding, this information should be combined with the documen
 * **Q: How many simulated users can I test in a single simulation run?** — Up to 100 unique simulated users per run; each Send all action is capped at 20 users at once.
 * **Q: Are consent policies enforced during Simulation?** — No. Consent policy evaluation, frequency capping, opt-out management, and quiet hours are all not evaluated during Simulation.
 * **Q: What happens if my journey has more than 50 paths during AI generation?** — The Journey Agent randomly selects paths to produce a maximum of 50 simulated users.
+* **Q: Are Content Decision nodes and Adobe Journey Optimizer decisioning supported in Simulation?** — Yes. Content Decision nodes, the Optimize activity's Targeting rule method, and actions whose content uses Adobe Journey Optimizer decisioning are all supported. The Journey Agent evaluates the decision policy against the simulated user's profile attributes; offer eligibility and ranking by rule, audience, priority, or formula are fully supported, and ranking by AI Model — Personalization works but returned offers may vary between runs.
 
 +++
