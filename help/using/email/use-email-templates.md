@@ -82,3 +82,5 @@ You can choose from:
 1. Click **[!UICONTROL Use this template]** on top right of the screen.
 
 1. Edit your content as desired using the Email Designer.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-use-email-templates.md}}
