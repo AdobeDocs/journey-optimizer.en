@@ -28,9 +28,9 @@ For complete understanding, this information should be combined with the documen
 
 **Guardrails:**
 
-* Up to 6 messages with a PDF attachment per profile per year, whether the attachment is static or personalized (hard limit).
-* Maximum 5 MB per attachment; for emails with personalized attachments, all static and personalized PDFs share a combined 5 MB limit by default (hard limit). The PDF Attachments add-on raises the combined personalized limit to 10 MB.
-* Up to five PDF attachments per email, counting static and personalized together (hard limit) — for example, one static PDF plus up to four personalized PDFs.
+* Up to 6 messages with a PDF attachment per profile per year, whether the attachment is static or personalized.
+* Maximum 5 MB per attachment; for emails with personalized attachments, all static and personalized PDFs share a combined 5 MB limit by default. The PDF Attachments add-on raises the combined personalized limit to 10 MB.
+* Up to five PDF attachments per email, counting static and personalized together — for example, one static PDF plus up to four personalized PDFs.
 * Only the PDF format is allowed for attachments.
 * Personalized PDF attachments are supported only for transactional API-triggered email campaigns.
 * Personalized PDFs must be uploaded to the attachment-specific Data Landing Zone container; it is currently the only supported storage location for them.

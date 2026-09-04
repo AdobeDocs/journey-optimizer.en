@@ -37,7 +37,7 @@ For complete understanding, this information should be combined with the documen
 
 **Terminology:**
 
-* Canonical name: URL tracking — Acronym: n/a — variants: URL tracking parameters, preset URL tracking parameters
+* Canonical name: URL tracking — Acronym: n/a — variants: URL tracking parameters
 * Synonyms: "Source action id" = "ID of the Email action"; "Source id" = "ID of the journey or campaign"
 * Do not confuse: "Source action id / name" (the Email action) ≠ "Source id / name" (the journey or campaign)
 * Do not confuse: configuration-level "URL tracking parameters" (applied to all content URLs) ≠ dynamic personalized tracking parameters added to individual links in content

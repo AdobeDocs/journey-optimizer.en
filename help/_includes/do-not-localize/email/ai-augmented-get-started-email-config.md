@@ -37,7 +37,7 @@ For complete understanding, this information should be combined with the documen
 **Terminology:**
 
 * Canonical name: email configuration — Acronym: n/a — variants: email channel configuration, email channel setup
-* Synonyms: "channel configuration" = "email surface configuration"
+* Synonyms: n/a
 * Do not confuse: "From email prefix" / "Error email prefix" (use the delegated subdomain suffix) ≠ "Sender name" / "Sender email" (a full address for a different transmitting party)
 
 **FAQ:**
