@@ -56,4 +56,4 @@ Depending on the context of use, the expression editor can return different valu
 |Custom timer|dateTimeOnly|
 |Action parameters mapping|Any|
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-generalities.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-generalities.md}}

@@ -73,4 +73,4 @@ An end-to-end use case is presented in this [section](../building-journeys/ajo-a
 
 ![[!DNL Adobe Campaign] v7/v8 action configuration and integration settings](assets/accintegration2.png)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-using-adobe-campaign-v7-v8.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-using-adobe-campaign-v7-v8.md}}

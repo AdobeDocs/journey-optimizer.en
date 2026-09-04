@@ -278,4 +278,4 @@ When an event is triggered using the test mode, a dataset is automatically gener
 
 The test mode automatically creates an Experience Event and sends it to [!DNL Adobe Experience Platform]. The name of the source for this experience Event is "Journey Orchestration Test Events".
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-testing-the-journey.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-testing-the-journey.md}}

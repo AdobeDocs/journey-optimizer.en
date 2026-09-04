@@ -487,4 +487,4 @@ Understand the applicable use cases for a journey that is triggered by the read 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424997?quality=12)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-read-audience.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-read-audience.md}}

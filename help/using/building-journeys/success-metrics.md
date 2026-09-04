@@ -131,4 +131,4 @@ To begin tracking your journey metrics, follow the steps outlined below:
 
     ![Success metrics dropdown showing available events for goal tracking](assets/success_metric_2.png)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-success-metrics.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-success-metrics.md}}

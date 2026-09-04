@@ -461,4 +461,4 @@ Returns "PT1.52S".
 
 +++
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-functions-conversion-functions.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-functions-conversion-functions.md}}

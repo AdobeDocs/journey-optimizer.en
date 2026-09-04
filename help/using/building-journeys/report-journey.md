@@ -95,4 +95,4 @@ If issues persist after verifying these items, contact your Adobe administrator 
 >* [Configure and track your journey metrics](success-metrics.md)
 >* [Custom journey reports](../reports/sharing-overview.md)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-report-journey.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-report-journey.md}}

@@ -297,4 +297,4 @@ Discover the components of a journey and understand the basics of building a jou
 * **[Journey Tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/journey-designer-overview){target="_blank"}** - Learn journey building through hands-on video tutorials
 * **[Journey guardrails & limitations](../start/guardrails.md)** - Check guardrails and limitations when using [!DNL Adobe Journey Optimizer]
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-get-started.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journey-get-started.md}}

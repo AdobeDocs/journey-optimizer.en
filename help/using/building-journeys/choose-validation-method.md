@@ -140,4 +140,4 @@ None of these methods contact real customers. Profile data is also left untouche
 * **[Journey Orchestration FAQ](journey-faq.md)** — Common questions answered
 * **[Test, validate & approve](../../rp_landing_pages/test-landing-page.md)** — Full testing and approval landscape, including content preview, rendering/spam checks, experiments, and approval workflows
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-choose-validation-method.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-choose-validation-method.md}}

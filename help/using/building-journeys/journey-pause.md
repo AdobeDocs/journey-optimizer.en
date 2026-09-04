@@ -305,4 +305,4 @@ You can use the [[!DNL Adobe Experience Platform] Query Service](https://experie
 
     1. If the journey was paused with the hold option selected but profiles were discarded due to exceeding the 10-million quota, those profiles will still be discarded when they reach the next action node.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-pause.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journey-pause.md}}

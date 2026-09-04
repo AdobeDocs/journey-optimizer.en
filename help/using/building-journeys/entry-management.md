@@ -188,4 +188,4 @@ After 91 days, a Read audience journey switches to the **Finished** status. This
 * [End a journey](end-journey.md) - Understand how journeys close and finish
 * [Journey use cases](jo-use-cases.md) - See complete examples with entry and exit configurations
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-entry-management.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-entry-management.md}}

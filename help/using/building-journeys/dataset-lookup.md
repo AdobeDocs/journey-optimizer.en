@@ -233,4 +233,4 @@ The data retrieved by the **[!UICONTROL Dataset lookup]** activity is stored in 
 
 **Fix:** Open the dataset lookup activity, locate the **[!UICONTROL Lookup key(s)]** field, and switch to **advanced mode** to redefine the key expression. Save the activity and republish the journey.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-dataset-lookup.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-dataset-lookup.md}}

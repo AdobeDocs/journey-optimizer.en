@@ -208,4 +208,4 @@ To manually scale the winner of your experiments:
 
 Note that scaling the treatment may take up to one hour. You will receive a notification once the manual scaling process is finished.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-path-experimentation.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-path-experimentation.md}}

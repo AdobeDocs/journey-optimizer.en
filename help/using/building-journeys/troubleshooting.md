@@ -78,4 +78,4 @@ You can define a fallback action in case of an error for the following journey a
 
 When an error occurs in an action or a condition, the journey of an individual stops. The only way to make it continue is to solve the issue. To avoid interrupting the journey, you can also check the option **[!UICONTROL Add an alternative path in case of a timeout or an error]** in the activity's properties. Learn more in [this section](../building-journeys/using-the-journey-designer.md#paths).
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-troubleshooting.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-troubleshooting.md}}

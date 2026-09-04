@@ -183,4 +183,4 @@ This expression returns the second push notification token of the list.
 
 The result is `token_2`.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-collection-management-functions.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-collection-management-functions.md}}

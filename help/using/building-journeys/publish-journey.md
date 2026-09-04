@@ -183,4 +183,4 @@ Learn how to publish a journey in this video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424998?quality=12)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-publish-journey.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-publish-journey.md}}

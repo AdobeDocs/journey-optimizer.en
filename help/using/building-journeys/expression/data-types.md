@@ -346,4 +346,4 @@ Polymorphism is not supported, hence all the expressions contained in the list s
 [toDuration(500),toDuration(800)]
 ```
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-data-types.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-data-types.md}}

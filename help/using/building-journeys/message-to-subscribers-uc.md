@@ -83,4 +83,4 @@ To configure this journey, follow these steps:
 >
 >Email address override should only be used for specific use cases. Most of the time, you do not need to change the email address because the value defined as the primary address in the **[!UICONTROL Execution fields]** is the one that should be used. [Learn more](../configuration/primary-email-addresses.md)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-message-to-subscribers-uc.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-message-to-subscribers-uc.md}}

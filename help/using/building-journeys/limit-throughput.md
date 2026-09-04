@@ -107,4 +107,4 @@ As an additional guardrail, you can also use Capping capabilities.
 >
 >Unlike Capping capabilities, which protect an endpoint by being global to all journeys of a sandbox, this workaround works only at journey level. This means that if multiple journeys are running in parallel and are targeting the same endpoint, you will need to take that into account while designing your journey. This workaround is therefore not suitable for every use case.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-limit-throughput.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-limit-throughput.md}}

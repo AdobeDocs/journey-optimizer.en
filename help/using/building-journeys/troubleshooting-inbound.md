@@ -244,4 +244,4 @@ Go through the same debugging steps as for [Scenario 1](#debugging-steps) to che
 - [Streaming Ingestion APIs Troubleshooting](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/troubleshooting.html)
 -->
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-troubleshooting-inbound.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-troubleshooting-inbound.md}}

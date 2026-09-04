@@ -221,4 +221,4 @@ Once testing is complete:
 * [Expression editor](expression/expressionadvanced.md) - Build complex expressions
 * [Journey best practices](journey-gs.md#best-practices) - Recommended approaches for journey design
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-weekday-email-uc.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-weekday-email-uc.md}}

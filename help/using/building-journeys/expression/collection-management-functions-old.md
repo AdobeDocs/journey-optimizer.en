@@ -258,4 +258,4 @@ This expression retrieves the name of the last product in the product list of a 
 currentDataPackField.eventType == "commerce.productListAdds").productListItems.last(currentDataPackField.priceTotal >= 150).name}
 ```
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-collection-management-functions-old.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-collection-management-functions-old.md}}

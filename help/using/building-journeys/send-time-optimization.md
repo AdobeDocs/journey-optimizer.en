@@ -213,4 +213,4 @@ To avoid sending Push messages to customers during night time hours, schedule ba
 
 +++
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-send-time-optimization.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-send-time-optimization.md}}

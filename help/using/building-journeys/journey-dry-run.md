@@ -233,4 +233,4 @@ Learn how to dry run your journeys in this video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464681/?learn=on&enablevpops)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-dry-run.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journey-dry-run.md}}

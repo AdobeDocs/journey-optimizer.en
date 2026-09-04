@@ -140,4 +140,4 @@ Learn more about using audiences in Adobe Journey Optimizer:
 * **[Using audiences in conditions](../conditions.md#using-a-segment)** - Create conditional journey paths based on audience membership using the Optimize activity
 * **[Journey properties - Merge policies](../journey-properties.md)** - Understand how merge policies work when using multiple audiences with the inAudience function
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-functions-functioninaudience.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-functions-functioninaudience.md}}

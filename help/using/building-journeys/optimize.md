@@ -97,4 +97,4 @@ Select the optimization method that best fits your use case:
 * Want to send different audiences down specific paths? → Go to [Path targeting](path-targeting.md)
 * Want to create conditional logic (if/then scenarios)? → Go to [Conditions](conditions.md)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-optimize.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-optimize.md}}

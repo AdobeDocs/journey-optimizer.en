@@ -204,4 +204,4 @@ For this example, follow these steps:
 
     ![Advanced mode editor for complex field mapping](assets/custom-action-aep-9.png)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-custom-action-aep.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-custom-action-aep.md}}

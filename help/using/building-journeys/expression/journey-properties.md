@@ -79,4 +79,4 @@ Below are a few examples of use cases:
 |Time|lastActionExecutionElapsedTime|Last action execution elapsed time|Time spent to execute the latest action|
 | |lastDataFetchElapsedTime|Last data fetch elapsed time|Time spent to execute the latest data fetch from data sources|
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-journey-properties.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-journey-properties.md}}

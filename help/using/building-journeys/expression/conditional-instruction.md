@@ -83,4 +83,4 @@ Example for an action activity (for a field that expects a string as the result 
       ('fcm')
    ```
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-conditional-instruction.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-conditional-instruction.md}}

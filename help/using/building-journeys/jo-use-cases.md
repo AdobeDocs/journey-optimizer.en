@@ -268,4 +268,4 @@ Browse the following blog posts to find more guidance and best practices when bu
 </td>
 </tr></table>
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-jo-use-cases.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-jo-use-cases.md}}

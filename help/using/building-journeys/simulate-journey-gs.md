@@ -163,4 +163,4 @@ The video below shows how to use Quick Simulation to test customer journeys by a
 
 </br>
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-simulate-journey-gs.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-simulate-journey-gs.md}}

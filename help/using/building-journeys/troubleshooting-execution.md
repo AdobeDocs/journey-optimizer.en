@@ -256,4 +256,4 @@ If tracking URLs in sent emails contain empty placeholders such as `cid=em-acou-
 
 To resolve this, either republish the journey ([create a new version and publish it](publish-journey.md#journey-create-new-version)), or remove the reference to the affected context field from the [URL tracking parameters](../email/url-tracking.md) in the channel configuration or email content.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-troubleshooting-execution.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-troubleshooting-execution.md}}

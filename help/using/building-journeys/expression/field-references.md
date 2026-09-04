@@ -175,4 +175,4 @@ Example:
 #{Weather.main.temperature, params: {localisation: #{GPSLocalisation.main.coordinates, params: {city: @event{Profile.address.city}}}}}
 ```
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-field-references.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-field-references.md}}

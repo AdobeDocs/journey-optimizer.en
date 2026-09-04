@@ -194,4 +194,4 @@ If your use case cannot be solved using one of the alternative approaches listed
 
 +++
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-exp-event-lookup.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-exp-event-lookup.md}}
