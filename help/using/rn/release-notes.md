@@ -98,6 +98,12 @@ topic_v2:
 
   Availability date: September 1, 2026
 
+### Content Management {#sep-26-content-management}
+
+* **AJO Content Management MCP tools in CX Coworker** - CX Coworker now includes 15 new AJO Content Management MCP tools, letting you discover and manage AJO content assets directly through natural language prompts. You can list and retrieve content templates, fragments, landing pages, and journey/campaign action content (including multi-lingual variants), as well as create and update content templates, and create, update, clone, and publish fragments. [Learn more](../start/ajo-coworker-skills.md#content-management)
+
+  Availability date: September 3, 2026
+
 ### Campaigns {#sep-26-campaigns}
 
 +++ Coming soon — **Information below is subject to change.**
