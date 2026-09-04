@@ -90,3 +90,5 @@ To open the advanced HTML editor and edit your HTML source, follow these steps.
 * [Code your own email content](code-content.md)
 * [Create content templates](../content-management/create-content-templates.md)
 * [Get started with the Email Designer](get-started-email-design.md)
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-email-expert-mode.md}}

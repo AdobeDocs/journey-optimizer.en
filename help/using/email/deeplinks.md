@@ -346,3 +346,5 @@ The link opens in the device's default web browser (standard click tracking beha
 
 +++
 
+{{$include /help/_includes/do-not-localize/email/ai-augmented-deeplinks.md}}
+
