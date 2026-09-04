@@ -58,3 +58,5 @@ Before you can deliver Content card experiences through the Inbox, you must defi
 You can now select your configuration when creating your Inbox experience. 
 
 ➡️ [Follow the steps detailed in this page](inbox-create.md)
+
+{{$include /help/_includes/do-not-localize/inbox/ai-augmented-inbox-configuration.md}}
