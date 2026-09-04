@@ -30,8 +30,9 @@ CX Coworker provides various skills for managing Journeys and Loyalty challenges
 
 * **Journey Create**: Build and configure marketing journeys through natural language prompts
 * **Channel Content Create**: Generate, edit, and manage channel-specific content (email, push, SMS) for journeys using AI-powered content generation
-* **Content Management**: List, retrieve, create, update, and publish content templates, fragments, landing pages, and journey/campaign inline message content
 * **Journey Analyze**: Analyze journeys, detect issues, uncover insights, and optimize journey performance
+
+CX Coworker also has a new set of **AJO Content Management MCP tools**, to discover, create, and manage content templates, fragments, landing pages, and journey/campaign inline message content.
 
 **Loyalty-focused skills:**
 
@@ -235,10 +236,10 @@ The following functionalities are currently not supported:
 >
 >This feature is available for all customers with access to CX Coworker.
 
-Content Management enables Journey Optimizer users to discover and manage AJO content assets — content templates, fragments, landing pages, and journey/campaign inline message content — directly from CX Coworker using natural language prompts. It lets you go from "tell me about my content" to "go build, update, and publish it," without leaving the conversation.
+Content Management enables Journey Optimizer users to discover and manage AJO content assets — content templates, fragments, landing pages, and journey/campaign inline message content — directly from CX Coworker using natural language prompts. It lets you go from "tell me about my content" to "go build, update, and publish it," without leaving the conversation. This capability is powered by 15 read and write-capable MCP tools for AJO Content.
 
 <!--For RN:
-**Content Management skill in CX Coworker** - CX Coworker now includes a new **Content Management** skill, letting you discover and manage AJO content assets directly through natural language prompts. You can list and retrieve content templates, fragments, landing pages, and journey/campaign inline message content, as well as create and import content templates (including from an allowlisted external source such as Figma, via URL or HTML), update templates, and create, update, clone, and publish fragments, and update inline message content on journey or campaign action nodes. [Read more](../start/ajo-coworker-skills.md#content-management)
+CX Coworker now includes 15 new **AJO Content Management MCP tools**, letting you discover and manage AJO content assets directly through natural language prompts. You can list and retrieve content templates, fragments, landing pages, and journey/campaign action content (including multi-lingual variants), as well as create and update content templates, and create, update, clone, and publish fragments. [Read more](../start/ajo-coworker-skills.md#content-management)
 
 Availability date: September 2, 2026
 -->
@@ -256,13 +257,12 @@ Availability date: September 2, 2026
    * "Get the details of landing page page-123."
    * "What content is configured for the email variant of the action node in campaign camp-789?"
 
-1. **Create and import content templates**
+1. **Create content templates**
 
    * Create a new content template for any channel.
-   * Import a template from an allowlisted external source, such as a Figma page, via URL or HTML.
 
    Sample prompts:
-   * "Create an email template named Summer Sale from this Figma page URL."
+   * "Create an email template named Summer Sale with this HTML content."
    * "Create a new SMS template called Flash Alert."
 
 1. **Update content templates**
@@ -294,20 +294,20 @@ Availability date: September 2, 2026
    * "Update the email variant of the action node in campaign camp-789 with this new content."
    * "What channel variants are defined on this action node?"
 
-#### In scope skills
+#### In scope
 
 The following capabilities are supported by Content Management:
 
 * **List and get content templates**: Browse content templates and retrieve their structure and metadata.
 * **List and get fragments**: Browse content and expression fragments and retrieve their details.
 * **List and get landing pages**: Browse landing pages and retrieve their metadata and page content.
-* **Get campaign/journey inline content**: Retrieve the inline message content configured on a campaign or journey action node.
-* **Create and import content templates**: Create a new template for any channel, including import from an allowlisted external source (e.g. Figma) via URL or HTML.
+* **Get campaign/journey inline content**: Retrieve the inline message content configured on a campaign or journey action node, including multi-lingual variants.
+* **Create content templates**: Create a new template for any channel.
 * **Update content templates**: Fully replace the content of an existing template.
 * **Create, update, clone, and publish fragments**: Create new fragments, update existing ones, clone a fragment under a new name, and submit a draft fragment for publication.
-* **Update inline message content**: Replace a channel variant on a campaign/journey action node's inline message, and list the channel variants defined on an action node.
+* **Update inline message content**: Replace a channel variant on a campaign/journey action node's inline message, including multi-lingual variants, and list the channel variants defined on an action node.
 
-#### Out of scope skills
+#### Out of scope
 
 The following functionalities are currently not supported:
 
