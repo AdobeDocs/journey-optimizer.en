@@ -48,3 +48,5 @@ To create a message inbox through a campaign, follow these steps:
 1. Review and activate your campaign to send messages to the inbox.
 
 You can now choose this Inbox when creating your [Content card campaign](../content-card/create-content-card.md).
+
+{{$include /help/_includes/do-not-localize/inbox/ai-augmented-inbox-create.md}}

@@ -141,3 +141,4 @@ The inbox relies on two Web SDK commands:
 
 1. Update the `datastreamId`, `orgId`, and `SURFACE` constant in `src/app/page.js` to point at your AJO environment before testing.
 
+{{$include /help/_includes/do-not-localize/inbox/ai-augmented-inbox-configuration-sdk.md}}
