@@ -116,7 +116,7 @@ To define specific content that will enable users to select and submit their cho
 
     >[!NOTE]
     >
-    >This check runs both in the browser and on the server, so a submission is still rejected even if the browser-side check is bypassed — for example, by a bot or another automated request.
+    >This check runs both in the browser and on the server, so a submission is still rejected even if the client-side check is bypassed — for example, by a bot or another automated request.
 
 1. Choose what will be updated between the three following options:
 
