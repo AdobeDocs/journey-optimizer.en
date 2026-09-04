@@ -238,12 +238,6 @@ The following functionalities are currently not supported:
 
 Content Management enables Journey Optimizer users to discover and manage AJO content assets — content templates, fragments, landing pages, and journey/campaign inline message content — directly from CX Coworker using natural language prompts. It lets you go from "tell me about my content" to "go build, update, and publish it," without leaving the conversation. This capability is powered by 15 read and write-capable MCP tools for AJO Content.
 
-<!--For RN:
-CX Coworker now includes 15 new **AJO Content Management MCP tools**, letting you discover and manage AJO content assets directly through natural language prompts. You can list and retrieve content templates, fragments, landing pages, and journey/campaign action content (including multi-lingual variants), as well as create and update content templates, and create, update, clone, and publish fragments. [Read more](../start/ajo-coworker-skills.md#content-management)
-
-Availability date: September 2, 2026
--->
-
 #### Key use cases
 
 1. **Browse and inspect content**
