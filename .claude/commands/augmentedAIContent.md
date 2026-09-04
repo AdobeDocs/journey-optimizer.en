@@ -1,41 +1,34 @@
 # augmentedAIContent
 
-Appends an auto-generated **Quick reference** section at the end of one or more markdown files in the Journey Optimizer documentation repository.
+Generates an auto-created **AI Knowledge Reference** accordion for one or more markdown pages in the Journey Optimizer documentation repository, and stores it as a **non-localized include** so it is not translated.
 
 ## Target repository
 
 `help/using/` (relative to repo root)
 
-## Section and tab syntax (Experience League)
-
-### Section heading
+## Accordion syntax (Experience League)
 
 ```
-## Quick reference {#quick-reference}
-```
-
-### Tabs
-
-```
->[!BEGINTABS]
-
->[!TAB Tab name]
++++ AI Knowledge Reference
 
 Content here — any standard markdown is valid.
 
->[!TAB Another tab]
-
-Content here.
-
->[!ENDTABS]
++++
 ```
 
 **Rules:**
 
-- `>[!BEGINTABS]` and `>[!ENDTABS]` each on their own line, surrounded by blank lines
-- `>[!TAB Name]` on its own line, followed by a blank line before content
-- Tab names are title-case, short (1–3 words)
-- Blank line before `>[!BEGINTABS]` and after `>[!ENDTABS]`
+- `+++ AI Knowledge Reference` opens the accordion (one space after `+++`); `+++` alone on a line closes it
+- Blank line before the opening `+++` and after the closing `+++`
+- The title is always exactly `AI Knowledge Reference`
+
+## Include syntax (Experience League)
+
+```
+{{$include /help/_includes/do-not-localize/<folder>/<include-file>.md}}
+```
+
+Content pulled in via `{{$include}}` from `help/_includes/do-not-localize/` is **excluded from localization** — this is how the block stays untranslated.
 
 ---
 
@@ -55,17 +48,17 @@ If a folder is given, list the `.md` files found and confirm before processing.
 
 1. **Read the file** in full.
 2. **Understand the page topic** — what feature, concept, or task does it cover?
-3. **Generate the section content** using the content generation rules below.
+3. **Generate the block content** using the content generation rules below.
 4. **Run the post-generation validation checklist** (see below) — do not skip.
-5. **Check** whether a Quick reference section already exists at the end (look for `## Quick reference` near the end). If yes, ask the user: replace or skip?
+5. **Check** whether an AI Knowledge Reference block already exists — either inline (`+++ AI Knowledge Reference` near the end) or already externalized (an `{{$include /help/_includes/do-not-localize/.../ai-augmented-...}}` line). If yes, ask the user: replace or skip? On replace, overwrite the include file (and if the block was still inline, remove the inline block and add the include line instead).
 
 ### Step 3 — Verify every claim against the page body
 
-Before appending, re-read the generated section claim by claim. This step is **mandatory and cannot be skipped**, even for short files. Correct any failure before proceeding to Step 4.
+Before writing the block, re-read the generated content claim by claim. This step is **mandatory and cannot be skipped**, even for short files. Correct any failure before proceeding to Step 4.
 
 **Terminology and labels**
 
-- [ ] Every term, label, and UI name in the section appears in the page body — not imported from another page or inferred from general product knowledge
+- [ ] Every term, label, and UI name in the block appears in the page body — not imported from another page or inferred from general product knowledge
 - [ ] No synonym is listed unless both forms appear on the page
 - [ ] Every "Do not confuse" entry references only concepts mentioned on this page
 
@@ -74,7 +67,7 @@ Before appending, re-read the generated section claim by claim. This step is **m
 - [ ] Every numeric value matches the page body exactly
 - [ ] A limit is called **hard** only if the page body uses that word or clearly implies the system enforces it (e.g., "cannot exceed", "maximum … allowed", "only … supported")
 - [ ] A limit is called **recommended** only if the page body uses that word or an equivalent ("for best performance", "it is recommended")
-- [ ] If the page body gives no qualifier, the section gives none — do not invent one
+- [ ] If the page body gives no qualifier, the block gives none — do not invent one
 - [ ] No meta-commentary about what the source page does or does not say (e.g., "no specific number is stated on this page")
 
 **Glossary definitions**
@@ -87,69 +80,95 @@ Before appending, re-read the generated section claim by claim. This step is **m
 - [ ] Every specific detail (UI affordances, button names, field names, step sequences) is stated in the page body — not inferred or imported from other pages
 - [ ] No answer introduces information the page body does not address
 
-**Correction rule:** If any check fails, correct the content **before** appending. Log every correction in the Step 5 report.
+**Correction rule:** If any check fails, correct the content **before** writing the block. Log every correction in the Step 5 report.
 
 ---
 
-### Step 4 — Append the section
+### Step 4 — Write the block to a do-not-localize include, then include it
 
-Use the fixed opening block and full template defined in the **Content generation rules** below. Append at the very end of the file, followed immediately by the sync comment:
+The generated block must **not be localized**, so it is not written inline in the page. Instead it lives in a separate include file under `help/_includes/do-not-localize/`, which is excluded from translation, and the page pulls it in with `{{$include}}`. (This is the DOCAC-15581 convention.)
+
+**a. Derive the include filename** from the page path relative to its top-level section folder under `help/using/`: strip the `.md` extension, replace any remaining `/` with `-`, and prefix with `ai-augmented-`. This flattening keeps the flat include directory collision-free.
+
+Examples (section `building-journeys`):
+
+| Page | Include file |
+|---|---|
+| `help/using/building-journeys/end-journey.md` | `ai-augmented-end-journey.md` |
+| `help/using/building-journeys/expression/journey-properties.md` | `ai-augmented-expression-journey-properties.md` |
+
+**b. Write the include file** at `help/_includes/do-not-localize/<section-folder>/<include-file>` (create the `<section-folder>` subdirectory if it does not exist — one subfolder per top-level AJO section, e.g. `building-journeys/`, `email/`). Use exactly this structure — `title` frontmatter, an `# AI Knowledge Reference` heading, the complete accordion from the **Full template** below, then the sync comment:
 
 ```
-<!-- ai-section-version: 1 | source-hash: [first 8 chars of MD5 of file content before section] -->
+---
+title: AI Knowledge Reference
+---
+# AI Knowledge Reference
+
+[complete "+++ AI Knowledge Reference" accordion from the Full template below]
+
+<!-- ai-section-version: 1 | source-hash: [first 8 chars of MD5 of the including page's body, excluding the {{$include}} line] -->
 ```
 
-This comment allows future tooling and writers to detect when the page body has drifted from the section. Do not modify any other content.
+**c. Add the include call** as the last line of the page, preceded by a blank line. Do not modify any other page content:
+
+```
+{{$include /help/_includes/do-not-localize/<section-folder>/<include-file>}}
+```
+
+The sync comment still enables drift detection: the source-hash is computed over the including page's body, so future tooling and writers can tell when the page has drifted from the block. Two files change per page: the **include file** (created) and the **page** (one `{{$include}}` line added).
 
 ### Step 5 — Report
 
-- Files modified ✓
-- Files skipped + reason (already has section / empty / index page)
+- Files modified ✓ (include file created + page's `{{$include}}` line)
+- Files skipped + reason (already has block / empty / index page)
 - Any validation warnings raised during Step 2
 
 ---
 
 ## Content generation rules
 
-Analyse the page and produce the tabs below **in order**. Skip a tab entirely if no meaningful content can be extracted for it.
+Analyse the page and produce the sections below **in order** inside the accordion. Skip a section entirely if no meaningful content can be extracted for it.
 
-### Section heading and fixed opening — verbatim, do not modify
+### Fixed opening — verbatim, do not modify
 
-Every Quick reference section must begin with this exact block. Copy it as-is; do not paraphrase, condense, or reorder:
+Every AI Knowledge Reference accordion must begin with this exact block. Copy it as-is; do not paraphrase, condense, or reorder:
 
 ```
-## Quick reference {#quick-reference}
++++ AI Knowledge Reference
 
 This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 ```
 
-The `>[!BEGINTABS]` block follows immediately after these two paragraphs.
+The page-specific sections below follow immediately after these two paragraphs, still inside the same accordion. (The whole accordion is written into the do-not-localize include file, per Step 4 — not inline in the page.)
 
-### Tab 1 — Overview
+### 1. TL;DR
 
-One-sentence TL;DR summary of what the page teaches or enables, followed by 3–6 things a user can accomplish after reading this page.
+One sentence: what does this page teach or enable?
 
 ```
->[!TAB Overview]
+* **TL;DR:** [one sentence]
+```
 
-**TL;DR**
+### 2. Intents
 
-[one sentence]
+3–6 things a user can accomplish after reading this page.
 
-**Intents**
+```
+**Intents:**
 
 * [action]
 * [action]
 ```
 
-### Tab 2 — Glossary
+### 3. Glossary
 
 Key terms specific to this page/feature with short definitions. Flag product-specific terms.
 
 ```
->[!TAB Glossary]
+**Glossary:**
 
 * **[Term]**: [definition] *(product-specific)*
 ```
@@ -164,16 +183,33 @@ If the page covers any form of testing, previewing, or simulated execution, you 
 
 Include only the modes present in the page. Copy the product-accurate term from the page body — do not substitute "synthetic profiles", "fake data", or "without real data" for any of these.
 
-### Tab 3 — Terminology
+### 4. Guardrails
+
+Limitations, prerequisites, permissions, or constraints mentioned on the page.
+
+```
+**Guardrails:**
+
+* [guardrail]
+```
+
+**Guardrail precision rules — mandatory:**
+
+- **Qualify every numeric limit** as either recommended or hard. Example: "Maximum 10 dataset lookups per message (hard limit)" not "Maximum 10 dataset lookups".
+- **Qualify every throughput or rate figure** with its scope. Example: "150,000 messages/hour TPS cap (per sandbox)" not "150,000 messages/hour cap".
+- **Cross-check every guardrail against the page body** before including it. If the page says 10 and the block would say 5, the block is wrong. The page body is authoritative.
+- **Do not infer guardrails** that are not stated on the page. If a constraint exists but the page does not state it, omit it.
+
+### 5. Terminology
 
 Canonical names, acronyms, accepted variants, synonyms, disambiguation. Primarily for AI pipeline normalisation.
 
 ```
->[!TAB Terminology]
+**Terminology:**
 
-* **Canonical name:** [name] — Acronym: [acronym] — variants: [list]
-* **Synonyms:** "[term A]" = "[term B]"
-* **Do not confuse:** "[term]" ≠ "[other term]"
+* Canonical name: [name] — Acronym: [acronym] — variants: [list]
+* Synonyms: "[term A]" = "[term B]"
+* Do not confuse: "[term]" ≠ "[other term]"
 ```
 
 **Status and lifecycle precision rule:**
@@ -183,33 +219,14 @@ When the page describes a lifecycle (journey statuses, message statuses, campaig
 * Do not confuse: "Stop" (user-initiated action) ≠ "Stopped" (resulting status) ≠ "Close" (action on Live journey allowing in-progress profiles to finish) ≠ "Closed" (resulting status)
 ```
 
-### Tab 4 — Guardrails & Limitations
+### 6. FAQ
 
-Limitations, prerequisites, permissions, or constraints mentioned on the page.
-
-```
->[!TAB Guardrails & Limitations]
-
-* [guardrail]
-```
-
-**Guardrail precision rules — mandatory:**
-
-- **Qualify every numeric limit** as either recommended or hard. Example: "Maximum 10 dataset lookups per message (hard limit)" not "Maximum 10 dataset lookups".
-- **Qualify every throughput or rate figure** with its scope. Example: "150,000 messages/hour TPS cap (per sandbox)" not "150,000 messages/hour cap".
-- **Cross-check every guardrail against the page body** before including it. If the page says 10 and the section would say 5, the section is wrong. The page body is authoritative.
-- **Do not infer guardrails** that are not stated on the page. If a constraint exists but the page does not state it, omit it.
-
-### Tab 5 — FAQ
-
-3–6 questions a user might ask, with short answers. Format each as a bold question heading followed by a paragraph answer.
+3–6 questions a user might ask, with short answers.
 
 ```
->[!TAB FAQ]
+**FAQ:**
 
-**Q: [question]**
-
-[short answer]
+* **Q: [question]** — [short answer]
 ```
 
 **FAQ precision rule:**
@@ -226,11 +243,11 @@ Answers must use the same verb and noun choices as the page body. Do not introdu
 
 ## Post-generation validation checklist
 
-Run this checklist on every section before appending. Flag any failure to the user before proceeding.
+Run this checklist on every block before writing the include. Flag any failure to the user before proceeding.
 
 ### Guardrail check
 
-- [ ] Every numeric value in the section exists verbatim or is derivable from the page body
+- [ ] Every numeric value in the block exists verbatim or is derivable from the page body
 - [ ] Every limit is qualified as recommended or hard
 - [ ] Every throughput figure includes its scope (sandbox / org / instance)
 
@@ -243,73 +260,77 @@ Run this checklist on every section before appending. Flag any failure to the us
 - [ ] Glossary does not contain generic marketing terms unrelated to the page
 - [ ] FAQ answers do not introduce information absent from the page
 
-If any check fails, correct the section before appending. Log the correction in the Step 4 report.
+If any check fails, correct the block before writing the include. Log the correction in the Step 5 report.
 
 ---
 
 ## Sync responsibility
 
-The Quick reference section is a derivative of the page body at a point in time. It must be treated as part of the page.
+The AI Knowledge Reference block is a derivative of the page body at a point in time. It must be treated as part of the page.
 
 **When the page body is updated (release PRs, corrections, etc.):**
 
-- If the update changes any guardrail, limit, status label, or validation mode described in the section → regenerate or manually update the section in the same PR.
-- If the update is unrelated to section content (e.g. procedure steps, screenshot updates) → the section may remain unchanged, but review it briefly.
+- If the update changes any guardrail, limit, status label, or validation mode described in the block → regenerate or manually update the block in the same PR.
+- If the update is unrelated to block content (e.g. procedure steps, screenshot updates) → the block may remain unchanged, but review it briefly.
 
-The sync comment appended after the section (`<!-- ai-section-version -->`) is the signal: if the file content before the section has changed since that hash was written, the section is a candidate for review.
+The sync comment inside the include file (`<!-- ai-section-version -->`) is the signal: if the including page's body has changed since that hash was written, the block is a candidate for review. When updating, edit the include file under `help/_includes/do-not-localize/`, not the page.
 
 ---
 
 ## Full template
 
-```markdown
+Include file (`help/_includes/do-not-localize/<section-folder>/ai-augmented-<page>.md`):
 
-## Quick reference {#quick-reference}
+```markdown
+---
+title: AI Knowledge Reference
+---
+# AI Knowledge Reference
+
++++ AI Knowledge Reference
 
 This section contains structured knowledge intended to support interpretation, retrieval, and question answering related to this topic.
 
 For complete understanding, this information should be combined with the documentation on this page. Neither source is intended to stand alone; the page describes the feature, while this section provides additional context that helps disambiguate terminology, intent, applicability, and constraints.
 
->[!BEGINTABS]
+* **TL;DR:** [one sentence]
 
->[!TAB Overview]
-
-**TL;DR**
-
-[one sentence]
-
-**Intents**
+**Intents:**
 
 * [intent]
 
->[!TAB Glossary]
+**Glossary:**
 
 * **[Term]**: [definition] *(product-specific)*
 
->[!TAB Terminology]
+**Guardrails:**
 
-* **Canonical name:** [name] — Acronym: [acronym] — variants: [variants]
-* **Synonyms:** "[a]" = "[b]"
-* **Do not confuse:** "[x]" ≠ "[y]"
+* [guardrail — qualify each numeric limit as recommended|hard, each throughput figure with scope sandbox|org]
 
->[!TAB Guardrails & Limitations]
+**Terminology:**
 
-* [guardrail — type: recommended|hard — scope: sandbox|org]
+* Canonical name: [name] — Acronym: [acronym] — variants: [variants]
+* Synonyms: "[a]" = "[b]"
+* Do not confuse: "[x]" ≠ "[y]"
 
->[!TAB FAQ]
+**FAQ:**
 
-**Q: [question]**
+* **Q: [question]** — [short answer]
 
-[short answer]
-
->[!ENDTABS]
++++
 
 <!-- ai-section-version: 1 | source-hash: [hash] -->
+```
+
+Line added to the page:
+
+```
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-end-journey.md}}
 ```
 
 ## Notes
 
 - Process files one by one for quality.
 - Flag very short or index-only pages and ask the user whether to skip.
-- Do not create new files — only edit existing `.md` files.
+- The only new file created per page is its do-not-localize include (Step 4); the page itself is edited only to add the single `{{$include}}` line. Do not otherwise create or restructure files.
 - The post-generation validation checklist is not optional. Run it for every file, including bulk operations.
