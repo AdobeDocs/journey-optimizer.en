@@ -98,6 +98,12 @@ topic_v2:
 
   Availability date: September 1, 2026
 
+### Content Management {#sep-26-content-management}
+
+* **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. This validation, along with existing mandatory text fields, is now enforced server-side, so submissions can no longer bypass required fields — including through bots, security scanners, or automated requests that skip client-side checks. [Learn more](../landing-pages/lp-content.md#use-form-component)
+
+  Availability date: September 4, 2026
+
 ### Campaigns {#sep-26-campaigns}
 
 +++ Coming soon — **Information below is subject to change.**
