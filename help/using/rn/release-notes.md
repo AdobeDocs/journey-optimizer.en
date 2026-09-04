@@ -56,6 +56,25 @@ topic_v2:
 
 ## September '26 updates {#sep-26-updates}
 
+### Content Management {#sep-26-content-management}
+
+<table>
+<thead>
+<tr>
+<th><strong>Content Management MCP tools in CX Coworker</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>CX Coworker now has a new set of <strong>AJO Content Management MCP tools</strong>, letting you discover and manage Journey Optimizer content assets through natural language prompts. Ask it to list or retrieve content templates, fragments, landing pages, and journey/campaign inline message content. It can also create content, update templates, and create, update, clone, and publish fragments — plus update inline channel action content directly in journey and campaign.</p>
+<p>For more information, refer to the <a href="../start/ajo-coworker-skills.md#content-management">detailed documentation</a>.</p>
+<p>Availability date: September 3, 2026</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 ### Journeys {#sep-26-journeys}
 
 <table>
@@ -97,12 +116,6 @@ topic_v2:
 * **New dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.  [Learn more](../building-journeys/functions/date-functions.md#dateDiff)
 
   Availability date: September 1, 2026
-
-### Content Management {#sep-26-content-management}
-
-* **AJO Content Management MCP tools in CX Coworker** - CX Coworker now includes 15 new AJO Content Management MCP tools, letting you discover and manage AJO content assets directly through natural language prompts. You can list and retrieve content templates, fragments, landing pages, and journey/campaign action content (including multi-lingual variants), as well as create and update content templates, and create, update, clone, and publish fragments. [Learn more](../start/ajo-coworker-skills.md#content-management)
-
-  Availability date: September 3, 2026
 
 ### Campaigns {#sep-26-campaigns}
 
