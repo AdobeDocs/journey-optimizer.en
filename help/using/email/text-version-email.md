@@ -261,3 +261,5 @@ Yes! Include full URLs (e.g., https://example.com/page) and most email clients w
 
 **Should I include images in plain text?**  
 No, plain text doesn't support images. Instead, describe what the image shows or provide a link to view it online.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-text-version-email.md}}

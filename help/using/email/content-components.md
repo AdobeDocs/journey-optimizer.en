@@ -288,3 +288,5 @@ Use the **[!UICONTROL Grid]** component to organize content into a structure com
     >Use the **[!UICONTROL Do not stack columns on mobile]** option to preserve the grid layout on mobile devices instead of stacking columns vertically.
 
 1. Drop other content components into each cell as needed, and adjust styling from the **[!UICONTROL Styles]** tab for each component.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-content-components.md}}
