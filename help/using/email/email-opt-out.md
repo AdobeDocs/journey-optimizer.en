@@ -224,3 +224,5 @@ For the entire landing page opt-out flow to complete successfully, the following
     As a result, this user will not receive communication from your brand unless subscribed again.
 
 This event sequence ensures that the unsubscription process is properly tracked and the profile's consent preferences are accurately reflected in the system. If any step in this flow is missing or occurs out of order, it may indicate an issue with the opt-out implementation that should be investigated.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-email-opt-out.md}}
