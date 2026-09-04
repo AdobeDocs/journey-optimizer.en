@@ -112,6 +112,12 @@ To define specific content that will enable users to select and submit their cho
     * **[!UICONTROL Opt out if checked]**: users need to check the box to remove their consent (opt-out).
     * **[!UICONTROL Opt in if checked, opt out if unchecked]**: this option enables you to insert a single checkbox for opt-in/opt-out. Users need to check the box to consent (opt-in), and uncheck it to remove their consent (opt-out).
 
+1. Select **[!UICONTROL Make form field mandatory]** if you want to require users to select this checkbox before they can submit the form. If this option is enabled and the checkbox is not selected, the form cannot be submitted.
+
+    >[!NOTE]
+    >
+    >This check runs both in the browser and on the server, so a submission is still rejected even if the browser-side check is bypassed — for example, by a bot or another automated request.
+
 1. Choose what will be updated between the three following options:
 
     ![](assets/lp_designer-form-update-options.png)
