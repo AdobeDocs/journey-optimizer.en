@@ -121,3 +121,4 @@ Push notifications are not the right fit for every message. Consider another cha
 * The content is sensitive or private and should not be visible on a lock screen, where anyone near the device could see it
 * Most of your users access your service from desktop rather than a mobile app, where push notifications have limited or no reach
 
+{{$include /help/_includes/do-not-localize/push/ai-augmented-get-started-push.md}}
