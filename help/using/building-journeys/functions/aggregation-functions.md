@@ -505,4 +505,4 @@ Returns 18.6.
 
 +++
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-functions-aggregation-functions.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-functions-aggregation-functions.md}}

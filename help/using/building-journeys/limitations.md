@@ -75,4 +75,4 @@ You can choose from one of these two solutions:
 
 * Streamed audiences are always up-to-date but batch audiences will not be calculated at retrieval time. They are only evaluated every day at the daily batch evaluation time.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-limitations.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-limitations.md}}

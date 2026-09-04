@@ -98,4 +98,4 @@ Returns 3.
 
 +++
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-functions-math-functions.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-functions-math-functions.md}}

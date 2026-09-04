@@ -83,4 +83,4 @@ Follow these steps to configure the reaction events:
 * Reaction events track clicks on links of the type "tracked". Unsubscription and mirror page links are not taken into account.
 * Email opens are tracked using a 0-pixel image included in the email. If email clients (such as Gmail) block images, email opens will not be taken into account.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-reaction-events.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-reaction-events.md}}

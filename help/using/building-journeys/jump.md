@@ -195,4 +195,4 @@ In the following cases, the Jump step is treated as a **failed action** in Journ
 * A reentrance period is configured on the target journey. Even when re-entry is allowed in principle, the profile cannot re-enter until the period elapses (the Jump fails with a "non-reentrant for the period" status).
 * The target journey version cannot be located, has been deleted, is in a finished state, or has been stopped.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-jump.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-jump.md}}

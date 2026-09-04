@@ -113,4 +113,4 @@ Keep the journey name focused on the customer milestone it drives (e.g. *First l
 >
 >For a broader discussion of this approach and its benefits at scale, see [Best practices for advanced journeys in Journey Optimizer](https://experienceleague.adobe.com/en/perspectives/best-practices-for-advanced-journeys-in-journey-optimizer){target="_blank"}.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-tags.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-tags.md}}

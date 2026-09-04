@@ -32,4 +32,4 @@ The **[!UICONTROL End]** activity allows you to mark the end of each path of the
 ![](assets/journey54.png)
 -->
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-end-activity.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-end-activity.md}}

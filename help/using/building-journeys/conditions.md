@@ -227,4 +227,4 @@ To use an audience in a journey condition, follow these steps:
 
 ➡️ **See it in practice:** Learn how to use time and day-of-week conditions to [send emails only on weekdays](weekday-email-uc.md).
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-conditions.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-conditions.md}}

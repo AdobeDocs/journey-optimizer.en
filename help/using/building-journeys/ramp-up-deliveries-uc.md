@@ -72,4 +72,4 @@ The purpose of this use case is to create a journey to ramp up your email delive
 
 After your IP has warmed up, you can remove this condition.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-ramp-up-deliveries-uc.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-ramp-up-deliveries-uc.md}}

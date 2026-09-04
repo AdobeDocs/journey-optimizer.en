@@ -215,4 +215,4 @@ Not sure where to start? Here are three typical scenarios where journeys deliver
 * **[Troubleshooting journeys](troubleshooting.md)** - Find solutions to common journey issues and best practices for debugging.
 * **[Journey tutorials](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/journeys/introduction-to-building-a-journey){target="_blank"}** - Explore step-by-step video tutorials on journey building and best practices.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journey-gs.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-gs.md}}

@@ -273,4 +273,4 @@ For **Wait** activities, the log includes two duration-related values:
 
 When errors appear in the log, leave **Simulation**, apply the required changes to the journey, and run **Simulation** again. After validation succeeds, publish the journey. See [Publish your journey](../building-journeys/publish-journey.md).
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-simulate-journey.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-simulate-journey.md}}

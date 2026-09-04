@@ -208,5 +208,5 @@ The following operations are available:
 >
 >You can pause/resume up to 10 journeys per operation.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journey-ui.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-ui.md}}
 

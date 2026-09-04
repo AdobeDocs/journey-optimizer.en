@@ -174,4 +174,4 @@ Example: If a profile qualifies for a "silver customer" audience at journey star
 
 Each inbound experience activity (In-app message, Code-based experience, or Card) comes with a 3-days **Wait** activity. As inbound messages automatically end when a profile reach out the end of the journey, we assume that you want your users to see it at least for 3 days. You can remove this **Wait** activity, or change its configuration if needed.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-wait-activity.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-wait-activity.md}}

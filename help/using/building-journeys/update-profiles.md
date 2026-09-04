@@ -119,4 +119,4 @@ For more information on how to turn an existing profile into a test profile, ref
 * Up to five field/value pairs can be updated in a single **[!UICONTROL Update Profile]** action. Use the **[!UICONTROL Update another field]** button to add more pairs.
 * For better performance, group multiple attribute updates into a single **[!UICONTROL Update Profile]** action rather than using one action per attribute.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-update-profiles.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-update-profiles.md}}

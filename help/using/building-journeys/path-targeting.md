@@ -141,4 +141,4 @@ Customers who have recently purchased can go into a short "Thank you + Cross-sel
 
 +++
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-path-targeting.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-path-targeting.md}}

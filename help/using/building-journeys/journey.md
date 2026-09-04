@@ -464,4 +464,4 @@ Set up **[journey alerts](../reports/alerts.md)** to receive real-time notificat
 
 **Ready to build your first journey?** [Get started now →](journey-gs.md)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journey.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey.md}}

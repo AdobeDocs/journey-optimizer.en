@@ -173,5 +173,5 @@ Connect the sub-journeys using the [**[!UICONTROL Jump]**](jump.md) activity so 
 >If your goal is to build a gamified loyalty program with challenges, tasks, and built-in reward tracking, Journey Optimizer also offers a dedicated **Loyalty Challenges** capability.
 -->
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journeys-uc.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journeys-uc.md}}
 

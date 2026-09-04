@@ -89,4 +89,4 @@ If a time zone has been defined for a profile, it is retrieved and used by the j
 
 The start and end dates of a journey cannot be linked to a specific time zone. They are automatically associated to the instance's time zone.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-timezone-management.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-timezone-management.md}}

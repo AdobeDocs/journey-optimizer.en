@@ -886,4 +886,4 @@ Returns "79e70b7f-8a85-400b-97a1-9f9826121553".
 
 +++
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-functions-string-functions.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-functions-string-functions.md}}

@@ -263,4 +263,4 @@ For each content decision activity, the step event includes decisioning data at 
 }
 ```
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-content-decision.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-content-decision.md}}

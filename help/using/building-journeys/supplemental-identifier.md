@@ -334,4 +334,4 @@ Learn how to enable and apply a supplemental identifier in [!DNL Adobe Journey O
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464792?quality=12)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-supplemental-identifier.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-supplemental-identifier.md}}

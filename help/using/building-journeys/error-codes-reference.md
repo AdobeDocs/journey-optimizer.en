@@ -197,4 +197,4 @@ If you encounter persistent errors that cannot be resolved using this guide:
 * [Demystifying [!DNL Adobe Journey Optimizer] Error Codes: Part 1](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/ba-p/760884){target="_blank"}
 * [Demystifying [!DNL Adobe Journey Optimizer] Error Codes: Part 2](https://experienceleaguecommunities.adobe.com/t5/journey-optimizer-blogs/demystifying-adobe-journey-optimizer-error-codes-root-causes-and/bc-p/782661){target="_blank"}
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-error-codes-reference.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-error-codes-reference.md}}

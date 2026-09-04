@@ -62,4 +62,4 @@ Explanation:
 
 The function will return **[!UICONTROL true]** if the individual within the journey instance is part of the Adobe Experience Platform audience named "men over 50", **[!UICONTROL false]** otherwise.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-functions-functioninsegment.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-functions-functioninsegment.md}}

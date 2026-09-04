@@ -372,4 +372,4 @@ Instead of using the built-in message capabilities, you can use custom actions t
    * [[!DNL Journey Optimizer] and Campaign v7/v8](../action/acc-action.md)
    * [[!DNL Journey Optimizer] and Campaign Standard](../action/acs-action.md)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journey-action.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-action.md}}

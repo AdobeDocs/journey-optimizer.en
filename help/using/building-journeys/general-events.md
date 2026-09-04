@@ -91,4 +91,4 @@ The defined timeout applies to all the events positioned after the **[!UICONTROL
 
 ![Multiple events with timeout configurations in journey](assets/event-timeout-group.png)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-general-events.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-general-events.md}}

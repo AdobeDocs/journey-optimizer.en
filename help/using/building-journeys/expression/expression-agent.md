@@ -86,4 +86,4 @@ When a **[!UICONTROL Wait]** activity uses a custom date, you define when the pr
 * [Work with the advanced expression editor](expressionadvanced.md) — Overview of the expression editor interface and supported syntax.
 * [Get started with Generate Content in Journey Optimizer](../../content-management/gs-generative.md) — General guardrails, access, and setup for generative AI features.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-expression-agent.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-expression-agent.md}}

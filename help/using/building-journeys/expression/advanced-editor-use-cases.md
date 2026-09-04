@@ -187,4 +187,4 @@ Explanation: This example uses `substr` and `lastIndexOf` functions to remove cu
 
 For more on how to use the advanced expression editor, watch [this video](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/introduction-to-building-a-journey.html).
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-advanced-editor-use-cases.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-advanced-editor-use-cases.md}}

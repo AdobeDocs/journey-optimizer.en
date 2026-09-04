@@ -638,4 +638,4 @@ If the value of the timestamp field is `2021-11-16T16:55:12.939318+01:00`, then 
 
 +++
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-functions-date-functions.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-functions-date-functions.md}}

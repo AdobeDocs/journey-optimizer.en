@@ -146,4 +146,4 @@ You also need to define the **[!UICONTROL Registration Token]**. The expression 
 
 These are the fields expected by the transactional template used in your [!DNL Adobe Campaign] Standard message. These fields can be used to personalize your message, apply conditional formatting, or pick a specific message variant.
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-using-adobe-campaign-standard.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-using-adobe-campaign-standard.md}}

@@ -126,4 +126,4 @@ If you select a field from an external data source requiring a parameter to be c
 
 For more complex use cases, if you want to include the parameters of the data source in the main expression, you can define their values using the "params" keyword. See [this page](../expression/field-references.md).
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-expressionadvanced.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-expressionadvanced.md}}

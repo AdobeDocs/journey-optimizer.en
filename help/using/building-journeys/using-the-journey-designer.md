@@ -210,4 +210,4 @@ Here are the steps to copy/paste activities:
 1. In any journey, press **Ctrl/Command + V** to paste the activities without linking them to an existing node. Pasted activities are placed in the same order. After being pasted, activities stay selected so you can easily move them. You can also place the cursor on an empty place holder and hit **Ctrl/Command + V**. Pasted activities will be linked to the node. 
     ![Pasted activities in journey canvas ready to be connected](assets/copy-paste3.png)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-using-the-journey-designer.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-using-the-journey-designer.md}}

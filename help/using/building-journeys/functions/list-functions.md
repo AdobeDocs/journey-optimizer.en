@@ -863,4 +863,4 @@ Returns the listObject ordered by SKU attribute (ascending order)
 
 +++
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-functions-list-functions.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-functions-list-functions.md}}

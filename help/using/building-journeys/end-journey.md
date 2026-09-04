@@ -172,4 +172,4 @@ When stopped, the journey status is set to **[!UICONTROL Stopped]**.
 * [Configure exit criteria](journey-properties.md#exit-criteria) - Set up automatic profile removal from journeys
 * [Pause a journey](journey-pause.md) - Temporarily halt journey execution
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-end-journey.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-end-journey.md}}

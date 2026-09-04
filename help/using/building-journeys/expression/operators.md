@@ -494,4 +494,4 @@ Returns a _dateTime_ (with UTC time zone) one hour later from current time
 
 Returns a _duration_ PT2H
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-operators.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-operators.md}}

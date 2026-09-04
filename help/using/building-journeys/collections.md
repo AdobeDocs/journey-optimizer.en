@@ -252,4 +252,4 @@ Browse the sections below to learn more about configuring, using and troubleshoo
 * [Custom action troubleshooting](../action/troubleshoot-custom-action.md) - Learn how to troubleshoot a custom action
 * [Iterate over contextual data](../personalization/iterate-contextual-data.md#arrays-in-journeys) - Learn how to work with arrays in Journey expressions and iterate over custom action responses, event data, and dataset lookups in message personalization
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-collections.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-collections.md}}

@@ -1021,4 +1021,4 @@ For more learning and updates, explore the following resources:
 * [Journey use cases](jo-use-cases.md)
 * [Journey Optimizer Product Description](https://helpx.adobe.com/legal/product-descriptions/adobe-journey-optimizer.html){target="_blank"}
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journey-faq.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-faq.md}}

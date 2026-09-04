@@ -137,4 +137,4 @@ Now that you have chosen a journey type:
 * **[Get started with journeys](journey.md)** — Fundamentals and capabilities overview
 * **[Journey Orchestration FAQ](journey-faq.md)** — Common questions answered
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-journey-types-selection-v2.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-journey-types-selection-v2.md}}

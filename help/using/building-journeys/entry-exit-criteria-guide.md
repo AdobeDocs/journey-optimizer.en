@@ -251,4 +251,4 @@ Start by clearly mapping your customer triggers and exit points, test thoroughly
 
 [Audience qualification events](audience-qualification-events.md) | [Success metrics and goals](success-metrics.md) | [Conflict management](../conflict-prioritization/conflicts.md) | [Frequency capping](../conflict-prioritization/rule-sets.md) | [Testing journeys](testing-the-journey.md) | [Optimize activity](optimize.md) | [Reaction events](reaction-events.md) | [Wait activity](wait-activity.md)
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-entry-exit-criteria-guide.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-entry-exit-criteria-guide.md}}

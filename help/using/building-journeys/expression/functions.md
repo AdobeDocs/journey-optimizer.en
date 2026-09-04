@@ -199,4 +199,4 @@ Now that you understand the available functions, explore:
 * **[Operators](operators.md)** - Discover operators you can use with functions to build logic
 * **[Field references](field-references.md)** - Understand how to reference data fields in your expressions
 
-{{$include /help/_includes/do-not-localize/building-journeys/ai-knowledge-reference-expression-functions.md}}
+{{$include /help/_includes/do-not-localize/building-journeys/ai-augmented-expression-functions.md}}
