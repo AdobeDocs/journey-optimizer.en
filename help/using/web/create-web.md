@@ -313,3 +313,5 @@ When a web journey or campaign is live, you can stop it to prevent your audience
 The video below shows how to create a web campaign, configure its properties, review, and publish it.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418800/?quality=12&learn=on)
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-create-web.md}}
