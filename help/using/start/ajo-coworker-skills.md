@@ -448,7 +448,7 @@ Key use cases :
    * "Show the total loyalty discounts broken down by product category during August 2026."
    * "Show me the loyalty program performance report for Q3 2026."
 
-### Content Management {#content-management}
+## Content Management tools {#content-management}
 
 >[!AVAILABILITY]
 >
