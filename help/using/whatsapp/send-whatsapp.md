@@ -86,3 +86,5 @@ The following fields are captured:
 | `interactiveSelectedID` | ID of the selected option from WhatsApp. |
 
 To query this dataset, use the `ajo_email_tracking_experience_event_dataset` table in Query Service. For query patterns and related use cases, see [Dataset query examples](../data/datasets-query-examples.md).
+
+{{$include /help/_includes/do-not-localize/whatsapp/ai-augmented-send-whatsapp.md}}

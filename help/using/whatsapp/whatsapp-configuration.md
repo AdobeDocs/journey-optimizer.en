@@ -265,3 +265,5 @@ The video below shows how to set up the WhatsApp channel in Adobe Journey Optimi
 >[!VIDEO](https://video.tv.adobe.com/v/3470268/?learn=on)
 
 +++
+
+{{$include /help/_includes/do-not-localize/whatsapp/ai-augmented-whatsapp-configuration.md}}
