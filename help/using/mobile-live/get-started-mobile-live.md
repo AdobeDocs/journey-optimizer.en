@@ -39,15 +39,11 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover how Live activities deliver persistent, real-time updates on the iPhone Lock Screen and Dynamic Island so you can keep users engaged during ongoing events and plan the configuration and API-triggered campaigns needed to send them with Adobe Journey Optimizer.
+**On this page:** Discover how Live activities deliver persistent, real-time updates on the Android or iPhone Lock Screen and Dynamic Island so you can keep users engaged during ongoing events and plan the configuration and API-triggered campaigns needed to send them with Adobe Journey Optimizer.
 
 >[!ENDSHADEBOX]
 
-Live activities are persistent, glanceable UI elements displayed on the device lock screen. They let your app present real-time, up-to-date information — keeping users informed throughout an ongoing event without requiring them to open the app or receive repeated push notifications.
-
->[!AVAILABILITY]
->
->Live activities in Adobe Journey Optimizer are only compatible with Apple iOS.
+Live activities are persistent, glanceable UI elements displayed on the device lock screen. They let your app present real-time, up-to-date information, keeping users informed throughout an ongoing event without requiring them to open the app or receive repeated push notifications.
 
 Unlike traditional push notifications, Live activities represent **state-based engagement**: instead of delivering one-time alerts, they maintain a continuous, contextual presence that updates dynamically as events evolve.
 
@@ -69,18 +65,18 @@ Unlike traditional push notifications, Live activities represent **state-based e
 </tr>
 </table>
 
-With Adobe Journey Optimizer, you can remotely **start**, **update**, and **end** Live activities programmatically through API-triggered campaigns — supporting both individual and audience-based use cases at scale.
+With Adobe Journey Optimizer, you can remotely **start**, **update**, and **end** Live activities programmatically through API-triggered campaigns,  supporting both individual and audience-based use cases at scale.
 
 Live activities can **only** be initiated via **API-triggered** campaigns, allowing you to provide custom payloads and perform all personalization through your own payload.
 The appropriate **API-triggered** campaign type must be selected based on the intended Live activity use case:
 
-* Select **API-triggered Marketing** for broadcast use cases — audience-based updates sent at scale:
+* Select **API-triggered Marketing** for broadcast use cases,  audience-based updates sent at scale:
 
     * Sports scores and live event countdowns
     * Flight status updates for all passengers on a route
     * Shared experiences across a user segment
 
-* Select **API-triggered Transactional** for individual use cases — 1:1 real-time updates per user:
+* Select **API-triggered Transactional** for individual use cases, 1:1 real-time updates per user:
 
     * Order tracking and delivery progress
     * Ride or service status updates
