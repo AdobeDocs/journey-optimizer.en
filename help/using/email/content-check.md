@@ -125,3 +125,5 @@ Size warnings (for example, HTML exceeding 100 KB) are **proactive signals** to 
 
 * Emails being clipped by Gmail, which clips messages at approximately 102 KB of HTML
 * Slow rendering on mobile devices or on low-bandwidth connections
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-content-check.md}}

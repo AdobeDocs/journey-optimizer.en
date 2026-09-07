@@ -53,3 +53,5 @@ Follow these steps to configure and use Inbox:
 * [Customizing Inbox](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/inbox-ui/Android/tutorial/customizing-inbox): Adjust inbox layout, styling, and interaction behavior for your Android app (Adobe Developer documentation).
 
 * [Listening to Inbox Events](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer/inbox-ui/Android/tutorial/listening-inbox-events): Subscribe to inbox callbacks for user actions and lifecycle updates on Android (Adobe Developer documentation).
+
+{{$include /help/_includes/do-not-localize/inbox/ai-augmented-inbox-gs.md}}

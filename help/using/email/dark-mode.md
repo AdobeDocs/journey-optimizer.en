@@ -364,3 +364,5 @@ Other email clients do not support dark mode at all:
 | WEB.DE Desktop Webmail |
 | T-online.de |
 -->
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-dark-mode.md}}

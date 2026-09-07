@@ -175,3 +175,5 @@ Learn how to create email content with the message editor.
 Learn how to configure content experiments to A/B test and explore email content best drives your business objectives.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419893)
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-get-started-email-design.md}}

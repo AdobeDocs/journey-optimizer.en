@@ -105,3 +105,5 @@ You can dynamically preview the resulting tracking URL. Each time you add, edit 
 >[!NOTE]
 >
 >You can also add dynamic personalized tracking parameters to the links present in your email content. [Learn more](surface-personalization.md#personalize-url-tracking)
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-url-tracking.md}}

@@ -142,3 +142,5 @@ Set up dynamic subdomains, personalized headers, and URL tracking to deliver tai
 :::
 
 ::::
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-get-started-email-config.md}}
