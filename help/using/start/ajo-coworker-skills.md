@@ -10,11 +10,11 @@ level: Beginner
 mini-toc-levels: 2
 ---
 
-# Journey Optimizer skills in CX Coworker {#ajo-coworker-skills}
+# Journey Optimizer AI capabilities in CX Coworker {#ajo-coworker-skills}
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Discover the Adobe Journey Optimizer skills available in CX Coworker — from creating and analyzing journeys to generating channel content and managing content assets — with detailed guidance, example prompts, and best practices for each skill.
+**On this page:** Discover the Adobe Journey Optimizer AI capabilities available in CX Coworker — from creating and analyzing journeys to generating channel content and managing content assets — with detailed guidance, example prompts, and best practices for each capability.
 
 >[!ENDSHADEBOX]
 
@@ -26,13 +26,13 @@ With its AI-powered skills, CX Coworker enables Journey Optimizer users to creat
 
 CX Coworker provides various skills for managing Journeys and Loyalty challenges:
 
-**Journey-focused skills:**
+**Journey-focused AI capabilities:**
 
 * **Journey Create**: Build and configure marketing journeys through natural language prompts
 * **Channel Content Create**: Generate, edit, and manage channel-specific content (email, push, SMS) for journeys using AI-powered content generation
 * **Journey Analyze**: Analyze journeys, detect issues, uncover insights, and optimize journey performance
 
-**Loyalty-focused skills:**
+**Loyalty-focused AI capabilities:**
 
 * **Loyalty Challenge Management**: Create and manage loyalty challenges using natural language prompts
 * **Loyalty Agent - Data Insight Skill**: Query and analyze loyalty program performance data using natural language
@@ -49,7 +49,7 @@ In addition, **Journey Simulation** is a Journey Optimizer feature that includes
 * Quick simulation
 -->
 
-## Journey skills {#journey-skills}
+## Journeys {#journey-skills}
 
 ### Journey Create {#journey-create}
 
@@ -309,6 +309,21 @@ Journey Analyze offers a range of functionalities that can be leveraged to optim
    * "Show me the root cause of custom action failures in journey [Journey Name]."
    * "Are there any custom action errors affecting journey [Journey Name] right now?"
 
+1. **Analyze Journey Anomalies**
+
+   * Detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts compared to historical baselines, including when the question is phrased around the number of profiles entering, exiting, or completing the journey.
+   * Confirm whether a flagged change is a genuine anomaly using a deterministic statistical check, rather than relying on the raw anomaly flag alone.
+   * Run bounded, read-only diagnostics against journey-execution data to identify a likely root cause, surfacing what each check looked for and found alongside the recommendation.
+   * Investigate anomaly alerts that reference a specific journey version and timestamp.
+
+   Sample prompts:
+   * "Why did entries drop for my Welcome journey yesterday?"
+   * "Did exits spike for the Cart Abandonment journey this week?"
+   * "Sends look low for the Renewal Reminder journey today — what happened?"
+   * "Why was there a sudden drop in the number of profiles entering my Member Anniversary Thank You journey in the last 30 days?"
+   * "Fewer profiles than usual are completing my Renewal Reminder journey this month — why?"
+   * "An anomaly alert was triggered for journey [Journey Version ID] at [timestamp] — investigate."
+
 #### In scope skills
 
 The following capabilities are supported by Journey Analyze:
@@ -317,13 +332,13 @@ The following capabilities are supported by Journey Analyze:
 * **Integration with Other Skills**: Collaborates with Audience and Data Insights capabilities for deeper analysis.
 * **Response structuration**: reasoning (explain the logic), analysis summary (highlight key points), issue details (describe the problem), and recommendation (propose next steps).
 * **Custom action error analysis**: Detect and diagnose custom action failures and error spikes within a journey.
+* **Anomaly detection**: Detect and confirm statistically significant spikes, drops, or flatlines in a journey's entry, exit, or send counts, and surface a likely root cause.
 
 #### Out of scope skills
 
 The following functionalities are currently not supported:
 
 * **Automated Journey Creation**
-* **Real-Time Anomaly Detection**
 * **Channels overlap**
 * **Journey entry analysis**
 * **Technical issue analysis**
@@ -343,7 +358,7 @@ To maximize the effectiveness of Journey Analyze, follow these best practices:
 * **Monitor Regularly**: Schedule regular reviews of journey performance to identify trends and anomalies.
 * **Optimize Segmentation**: Ensure audience segmentation is balanced to avoid fatigue and maximize engagement.
 
-## Loyalty skills {#loyalty-skills}
+## Loyalty {#loyalty-skills}
 
 >[!AVAILABILITY]
 >

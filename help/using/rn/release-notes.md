@@ -117,6 +117,10 @@ topic_v2:
 
   Availability date: September 1, 2026
 
+* **Analyze Journey Anomalies skill** - CX Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../start/ajo-coworker-skills.md#journey-analyze)
+
+  Availability date: September 2, 2026
+
 ### Campaigns {#sep-26-campaigns}
 
 +++ Coming soon — **Information below is subject to change.**
