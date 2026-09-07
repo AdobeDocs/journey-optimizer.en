@@ -8,6 +8,12 @@ topic: Artificial Intelligence
 role: User
 level: Beginner
 mini-toc-levels: 2
+feature_v2:
+  - id: d998adac-2f81-400b-a669-d07bb196e4eb
+    internal-label: Journeys
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
+subfeature_v2: []
 ---
 
 # Journey Optimizer AI capabilities in CX Coworker {#ajo-coworker-skills}

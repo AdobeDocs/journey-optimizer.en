@@ -9,8 +9,12 @@ role: User
 level: Intermediate
 keywords: targeting, rules, journey, path, optimization, personalization
 exl-id: b30ce5c9-a0e2-4601-97a3-5bec648368e4
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+subfeature_v2:
+  - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
+    internal-label: Orchestration activities
 ---
 # Leverage path targeting {#targeting}
 
