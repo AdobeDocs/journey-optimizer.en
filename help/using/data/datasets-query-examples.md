@@ -115,7 +115,7 @@ The related schema is AJO Message Feedback Event Schema.
 >
 >This dataset uses batch ingestion. Expect a data latency of up to 2 hours when querying this dataset or using it for reporting purposes.
 
-For the complete list of fields, field paths, data types, and descriptions, see the [AJO Schemas](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"} reference.
+For the complete list of fields, field paths, data types, and descriptions, see the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ For the complete list of fields, field paths, data types, and descriptions, see 
 
 Use the `isTestExecution` field to distinguish test executions from non-test executions when the field is populated.
 
-Before building a query, use the [AJO Schemas](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"} reference to confirm the current field path, data type, and description for the AJO Message Feedback Event Schema.
+Before building a query, use the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"} to confirm the current field path, data type, and description for the AJO Message Feedback Event Schema.
 
 Interpret populated values as follows:
 
@@ -137,9 +137,9 @@ Interpret populated values as follows:
 
 Do not automatically convert `NULL` to `false`, and do not assume that every null value represents a production execution. If a reporting implementation has validated that null values represent non-test records for a specific channel or historical period, apply that mapping in a downstream reporting view and document the rule explicitly.
 
-Some historical or channel-specific records may not populate every message-context field. Consumers should therefore test field availability by channel and preserve nulls rather than treating them as empty strings or inferred values.
+Some historical or channel-specific records may not populate every message-context field. You should therefore test field availability by channel and preserve nulls rather than treating them as empty strings or inferred values.
 
-Run this query only after confirming the `isTestExecution` path in the [AJO Schemas](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"} reference:
+Run this query only after confirming the `isTestExecution` path in the [Adobe Journey Optimizer Schema Reference](https://experienceleague.adobe.com/en/tools/ajo-schemas){target="_blank"}:
 
 ```sql
 SELECT
