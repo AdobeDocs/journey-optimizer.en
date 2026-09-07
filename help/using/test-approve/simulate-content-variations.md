@@ -40,6 +40,11 @@ topic_v2:
 
 >[!ENDSHADEBOX]
 
+>[!CONTEXTUALHELP]
+>id="ajo_simulate_content_variations"
+>title="Simulate using sample input"
+>abstract="In this screen, you can preview and compare all your content variants side by side. Create variants by entering values manually, uploading a CSV or JSON file, auto-generating them with AI, or selecting existing simulated users."
+
 The **[!UICONTROL Simulate content variations]** experience has been redesigned to make testing and comparing your variants faster and easier. All variants now render together in a single scrollable grid, and every control you need is available from a single bottom action bar.
 
 To access the new experience, from your content, click **[!UICONTROL Simulate content]** to open the content simulation screen. If variants are already available, the preview grid is shown immediately. If none exist yet, a blank variant is displayed and you can start creating them using any of the methods described below.
