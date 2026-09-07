@@ -8,6 +8,10 @@ topic: Content Management
 role: User
 level: Beginner, Intermediate
 keywords: modules, email designer, headers, hero, cards, footer, email layout, drag and drop
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
+subfeature_v2: []
 ---
 
 # Use modules in the Email Designer {#email-layout-modules}

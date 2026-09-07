@@ -9,7 +9,9 @@ TQID: https://experienceleague.adobe.com/I7beoyvv-vzc39XjLlPl8iIpxtxOmSkD5AtxW0b
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
-feature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

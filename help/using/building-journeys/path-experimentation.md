@@ -9,8 +9,12 @@ role: User
 level: Intermediate
 keywords: experimentation, experiment, journey, path, optimization, A/B testing, multi-armed bandit, scale the winner
 exl-id: 7241ade3-577c-4bb3-b0c3-017133871ca5
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+subfeature_v2:
+  - id: d328f775-66ee-431a-bd26-490e1e80c48f
+    internal-label: Path experimentation
 ---
 # Use path experimentation {#experimentation}
 

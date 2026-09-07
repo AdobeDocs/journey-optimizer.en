@@ -9,6 +9,12 @@ role: Admin, User
 level: Beginner
 keywords: journey optimizer, package, license, campaigns, journeys, channels, decisioning, outbound, mobile, web, modular, sms, mms, whatsapp, add-ons, select, prime, ultimate, legacy
 hide: true
+feature_v2:
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
+subfeature_v2:
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 ---
 
 # Adobe Journey Optimizer packages and capabilities {#ajo-packages}
