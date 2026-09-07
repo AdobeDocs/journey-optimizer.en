@@ -77,7 +77,7 @@ topic_v2:
 
 * **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. [Learn more](../landing-pages/lp-content.md#use-form-component)
 
-  Availability date: September 4, 2026
+  Availability date: September 4, 2026 
 
 ### Journeys {#sep-26-journeys}
 
