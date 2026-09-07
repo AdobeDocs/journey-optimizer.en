@@ -75,6 +75,10 @@ topic_v2:
 </tbody>
 </table>
 
+* **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. [Learn more](../landing-pages/lp-content.md#use-form-component)
+
+  Availability date: September 4, 2026
+
 ### Journeys {#sep-26-journeys}
 
 <table>
@@ -116,12 +120,6 @@ topic_v2:
 * **New dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.  [Learn more](../building-journeys/functions/date-functions.md#dateDiff)
 
   Availability date: September 1, 2026
-
-### Content Management {#sep-26-content-management}
-
-* **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. This validation, along with existing mandatory text fields, is now enforced server-side, so submissions can no longer bypass required fields — including through bots, security scanners, or automated requests that skip client-side checks. [Learn more](../landing-pages/lp-content.md#use-form-component)
-
-  Availability date: September 4, 2026
 
 ### Campaigns {#sep-26-campaigns}
 
