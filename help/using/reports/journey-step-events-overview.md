@@ -170,6 +170,30 @@ WHERE _experience.journeyOrchestration.stepEvents.actionExecutionError IS NOT NU
 GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
 ```
 
+**Custom action analysis**
+
+Use journey step events to verify that Journey Optimizer executed a custom action, and to inspect its status, latency, and error details:
+
+```sql
+-- Example: Inspect custom action execution for a journey
+SELECT
+  timestamp,
+  _experience.journeyOrchestration.stepEvents.profileID AS profile_id,
+  _experience.journeyOrchestration.stepEvents.nodeName AS node_name,
+  _experience.journeyOrchestration.stepEvents.actionID AS action_id,
+  _experience.journeyOrchestration.stepEvents.actionName AS action_name,
+  _experience.journeyOrchestration.stepEvents.actionType AS action_type,
+  _experience.journeyOrchestration.stepEvents.stepStatus AS step_status,
+  _experience.journeyOrchestration.stepEvents.actionExecutionError AS action_execution_error,
+  _experience.journeyOrchestration.stepEvents.actionExecutionErrorCode AS action_execution_error_code
+FROM journey_step_events
+WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>'
+AND _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction'
+ORDER BY timestamp DESC;
+```
+
+This query reports execution details on the Journey Optimizer side only. A successful result does not confirm that the external system delivered a message — check the external service's logs or reporting for downstream delivery status. Learn how to [choose the correct dataset](../data/datasets-query-examples.md#choose-the-correct-dataset) for message-delivery feedback.
+
 **Journey funnel analysis**
 
 - Track conversion rates at each journey step
