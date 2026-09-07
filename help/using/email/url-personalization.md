@@ -181,3 +181,5 @@ Before activating a journey or campaign, follow the recommendations below:
 * Send a [proof](../content-management/proofs.md) and click links to confirm the resolved URL starts with `http`/`https` and keeps the expected structure.
 * If tracking parameters are appended, confirm the final URL includes them (either via configuration-level URL tracking or per-link tracking parameters).
 -->
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-url-personalization.md}}

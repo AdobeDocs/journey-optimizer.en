@@ -221,3 +221,5 @@ To avoid this type of error, make sure the header parameters you define use pers
 >[!NOTE]
 >
 >Learn more about deliverability in [this section](../reports/deliverability.md)
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-surface-personalization.md}}

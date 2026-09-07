@@ -118,3 +118,5 @@ This video explains how to:
 * Do bulk actions on modifications
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424536/?quality=12&learn=on)
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-spa.md}}

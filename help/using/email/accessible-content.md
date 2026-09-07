@@ -400,3 +400,5 @@ Providing keyboard navigation and focus support allows people who cannot use a m
         * Enter or Space should toggle checkboxes.
 
         * Enter or Space should trigger buttons.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-accessible-content.md}}

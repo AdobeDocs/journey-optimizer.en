@@ -76,5 +76,7 @@ The following module categories are available out of the box. Multiple layout va
 | **[!UICONTROL Teams]** | Team members, authors, or speakers with a photo, name, and role. |
 | **[!UICONTROL Footers]** | Complete email footer with navigation links, social media icons, legal copy, and required opt-out and mirror-page links. |
 
+{{$include /help/_includes/do-not-localize/email/ai-augmented-email-modules.md}}
+
 
 

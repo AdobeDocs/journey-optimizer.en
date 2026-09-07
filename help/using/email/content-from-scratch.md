@@ -161,3 +161,5 @@ To start building your content, follow the steps below:
 1. You can also validate your content quality to assess readability, effectiveness, and content cohesiveness. [Learn more about content quality validation](../content-management/brands-score.md#validate-quality)
 
 1. When your content is ready, click **[!UICONTROL Save]**.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-content-from-scratch.md}}

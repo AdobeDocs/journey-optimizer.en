@@ -100,3 +100,5 @@ Automated setup is done. You can now visit your tag mobile property and configur
 * [Configure the push channel](push-configuration.md)
 * [Push notification report](../reports/journey-global-report-cja-push.md#track-link-url-push)
 * [Create a push notification](create-push.md)
+
+{{$include /help/_includes/do-not-localize/push/ai-augmented-mobile-onboarding-wf.md}}
