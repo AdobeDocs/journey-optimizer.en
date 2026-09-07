@@ -27,6 +27,8 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* The **Design your journey** page now includes a full tutorial section on the new canvas experience, covering how to add activities, use the toolbar icons, select multiple activities for bulk actions, copy and paste activities, and join or detach branches. [Read more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+
 * The **Configure your Channel configuration** page now includes a note clarifying that the schema used for secondary dimension must have a primary key, and that composite primary keys are not supported. [Read more](../orchestrated/channel-config.md)
 
 * The **Loyalty data and datasets** and **Get started with sources** pages have been updated to include LAVA as a supported loyalty and rewards connector, alongside Talon.One, Capillary, and Kobie. [Read more](../loyalty-challenges/loyalty-data-and-datasets.md)
