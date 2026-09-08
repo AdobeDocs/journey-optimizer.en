@@ -23,6 +23,10 @@ feature_v2:
 subfeature_v2:
   - id: c41e8697-e629-4c38-96b3-564faaa17acf
     internal-label: Dynamic content
+  - id: fae48155-b23f-40d2-a252-a25bce350b4d
+    internal-label: Email configuration
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

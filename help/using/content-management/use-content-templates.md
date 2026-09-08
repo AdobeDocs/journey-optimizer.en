@@ -18,10 +18,12 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
-    internal-label: Templates
+  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
+    internal-label: Email design
   - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
     internal-label: Fragments
+  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
+    internal-label: Templates
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

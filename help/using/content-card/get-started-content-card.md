@@ -18,6 +18,8 @@ feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
 subfeature_v2:
+  - id: bc543dba-f0db-4234-b5da-877a5c1664e2
+    internal-label: Content cards
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74

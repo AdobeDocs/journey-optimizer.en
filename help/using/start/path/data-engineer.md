@@ -17,6 +17,8 @@ feature_v2:
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
 subfeature_v2:
+  - id: d08afb72-92f6-4856-88e3-11ec34313c2f
+    internal-label: Event configuration
   - id: af7571a6-3ddb-4c1c-abdf-4d4dde592140
     internal-label: Source connectors
 role_v2:

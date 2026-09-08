@@ -15,6 +15,8 @@ product_v2:
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
     internal-label: Audience Qualification events
