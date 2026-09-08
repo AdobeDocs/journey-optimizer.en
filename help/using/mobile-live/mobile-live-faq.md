@@ -51,8 +51,15 @@ topic_v2:
 
 +++What is the difference between a Live activity and a Push notification?
 
-A Live activity provides persistent, real-time updates on the Lock Screen and Dynamic Island without requiring users to unlock their device. Push notifications are temporary alerts that disappear once dismissed. A Live activity stays visible and can be updated multiple times until explicitly ended.
+A Live Update is a persistent, continuously-updating notification (delivery status, live scores, ride/ETA, etc.) that stays on the Lock Screen, in the notification shade, or as a status-bar chip, and refreshes in place without the user reopening the app. A regular push notification is a one-shot alert that disappears once dismissed. 
 
+On iOS, this is implemented as a Live Activity. On Android, it is a promoted ongoing notification.
+
++++
+
++++How does an Android Live Update relate to an iOS Live Activity?
+
+They are the same product concept in Journey Optimizer and use the same Headless API and campaign model. iOS renders a system widget, Android renders an ongoing notification from an FCM data message. You author campaigns the same way, only the payload block and the app-side rendering differ.
 +++
 
 +++How many Live activity instances can be active at once?
@@ -69,11 +76,13 @@ In practice:
 
 * Each Live activity instance has a unique `Activity.id`, which lets you update or end it individually.
 
+Android has no equivalent to iOS's ~5-instance cap. Each Live Update is an ongoing notification your app manages directly. A broadcast Live Update is a single channel that many devices subscribe to. In practice, limits come from how many notifications you want visible to users and your own tracking, not a hard OS ceiling.
+
 +++
 
 +++Do users need to have the app open to receive Live activity updates?
 
-No. A Live activity can be started, updated, and ended remotely even when the app is completely closed, one of the key benefits of the feature.
+No. Start, update, and end are delivered remotely and work with the app in the background or closed. On Android, the FCM data message wakes your app briefly to (re)post the notification on each update, so Android delivery is sensitive to battery optimization / Doze.
 
 +++
 
@@ -84,15 +93,35 @@ No. A Live activity can be started, updated, and ended remotely even when the ap
 * iOS 18+: Broadcast channel support for audience-based Live activities
 +++
 
++++ Which Android versions are supported? 
+
+Native Live Updates require Android 16. On earlier Android versions, the same campaign falls back to a standard ongoing notification, which your app posts and updates from the FCM data message. You will also need a Mobile SDK version that supports Live Update handling.
+
++++
+
 +++How long can a Live activity remain active?
 
 Apple limits Live activity to **8 hours of active updates**. After that, the system automatically ends the activity, though it may remain visible in a static state for up to **12 additional hours** before removal. You can also end a Live activity sooner by setting a `dismissalDate` or explicitly calling `activity.end()` in your app.
+
+Android has no fixed 8-hour expiry like iOS. An ongoing notification stays active until your app sends an end event or the app/user dismisses it, subject to FCM delivery and device battery/Doze behavior.
 
 +++
 
 +++ What are the rate limits?
 
-Campaigns have a default rate limit of 500 transactional messages per second across all channels, including iOS Live activities. This limit applies to all channels combined, and there is no separate rate limit specifically for iOS Live activities.
+Campaigns have a default rate limit of 500 transactional messages per second across all channels, including iOS Live activities. This limit applies to all channels combined, and there is no separate rate limit specifically for iOS Live activities or Android Live updates.
+
++++
+
++++ Where does a Live Update appear on Android?
+
+Android has no equivalent to Dynamic Island. Instead, a Live Update surfaces in the notification shade, as a status-bar chip, and, on supported devices running the Android 16 progress style, on the Always-On Display. Its appearance is defined by your app's notification, not by a separate widget extension.
+
++++
+
++++ Can a single campaign target both iOS and Android?
+
+No. A Live Update channel configuration targets a single platform, so iOS and Android are always set up as separate campaigns, each with its own channel configuration, this applies to both unitary and broadcast. You need to create one campaign for iOS and one for Android.
 
 +++
 
