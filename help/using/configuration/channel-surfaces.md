@@ -20,9 +20,9 @@ feature_v2:
     internal-label: Configuration
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
-subfeature_v2:
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
+subfeature_v2:
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
   - id: d2e8a157-b3b0-4143-9ff3-809bf400be56

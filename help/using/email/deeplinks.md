@@ -8,7 +8,9 @@ topic: Content Management
 role: User, Developer
 level: Intermediate
 keywords: deeplink, deep link, universal links, app links, email, sms
-feature_v2: []
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
 subfeature_v2: []
 ---
  
@@ -346,3 +348,4 @@ The link opens in the device's default web browser (standard click tracking beha
 
 +++
 
+{{$include /help/_includes/do-not-localize/email/ai-augmented-deeplinks.md}}

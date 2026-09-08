@@ -258,3 +258,4 @@ Reporting on openings and clicks is available in the [Live report](../reports/li
 
 For detailed guidance on URL personalization (including how to personalize URL tracking parameters and how to personalize a complete/base URL), refer to [URL personalization](url-personalization.md).
 
+{{$include /help/_includes/do-not-localize/email/ai-augmented-message-tracking.md}}

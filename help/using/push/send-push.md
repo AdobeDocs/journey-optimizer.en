@@ -89,3 +89,4 @@ When your push message is ready, complete the configuration of your [journey](..
 * [Add a message in a journey](../building-journeys/journey-action.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)
 
+{{$include /help/_includes/do-not-localize/push/ai-augmented-send-push.md}}

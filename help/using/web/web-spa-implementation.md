@@ -5,6 +5,14 @@ feature: Web Channel
 topic: Content Management
 role: Developer
 level: Intermediate
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
+  - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
+    internal-label: Web channel
 ---
 # Implement single-page applications (SPAs) {#web-spa-implementation}
 
@@ -175,3 +183,5 @@ class Products extends Component {
     }
 }
 ```
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-spa-implementation.md}}

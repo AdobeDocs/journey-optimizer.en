@@ -9,8 +9,12 @@ role: User
 level: Intermediate
 keywords: fragments, journey, reuse, nodes, canvas, inventory, reusable
 version: Journey Orchestration
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: b15c7c2e-788c-4eb7-86a8-390565b0d2c9
+    internal-label: Journey design
 ---
 
 # Journey Fragments {#journey-fragments}

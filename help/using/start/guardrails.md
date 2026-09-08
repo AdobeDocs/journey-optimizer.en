@@ -13,8 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
   - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
     internal-label: Guardrails and limitations
 subfeature_v2:
@@ -460,11 +458,7 @@ The following guardrails apply to the [fragments](../content-management/fragment
 * To create, edit, archive, and publish fragments you need the **[!DNL Manage library items]** and **[Publish Fragment]** permissions included in the **[!DNL Content Library Manager]** product profile. [Learn more](../administration/ootb-product-profiles.md#content-library-manager)
 * Visual fragments are only available for the Email channel.
 * Expression fragments are not available for the In-app channel.
-* Fragments cannot exceed **700 KB**. This is a system guardrail for fragment size storage and processing. To stay below this threshold, split large content into multiple reusable fragments, reduce heavy markup, and optimize linked assets.
-
-  >[!NOTE]
-  >
-  >If a visual fragment exceeds **100 KB** or an expression fragment exceeds **200 KB**, this can cause truncation issues in email delivery.
+* Fragments cannot exceed **700 KB**. To stay below this threshold, split large content into multiple reusable fragments, reduce heavy markup, and optimize linked assets.
 
 * **Fragment count limits**: the number of unique fragments used within a piece of content is validated during authoring. Only fragments (including AEM fragments) referenced directly are counted — fragments nested inside other fragments are not counted separately.
 

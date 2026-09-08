@@ -134,3 +134,5 @@ Personalized PDF attachments must be uploaded to the attachment-specific [Data L
 At send time, [!DNL Journey Optimizer] fetches the file from the specified location and attaches it to the message for that recipient. Personalized PDF attachments are supported for [High Throughput](../campaigns/api-triggered-high-throughput.md) campaigns in the primary region. They are not supported during regional failover.
 
 For the full API payload reference, see the [Interactive Message Execution API documentation](https://developer.adobe.com/journey-optimizer-apis/references/messaging#tag/execution){target="_blank"}.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-pdf-attachments.md}}

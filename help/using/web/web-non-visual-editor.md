@@ -93,3 +93,5 @@ To author your web experiences with the non-visual editor, follow the steps belo
     ![](assets/web-campaign-modifications.png)
 
     You can also switch to the web designer if desired. All your modifications will be preserved.
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-non-visual-editor.md}}

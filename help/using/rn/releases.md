@@ -15,18 +15,14 @@ product_v2:
 feature_v2:
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
-  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
-    internal-label: Release notes
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
 subfeature_v2:
-  - id: eac3bd2c-b027-4dfa-80d2-0bd752ae4794
-    internal-label: Product updates
-  - id: e437f8db-d1f7-44c0-bdc0-b0a361adc4c0
-    internal-label: Pre-release notes
-  - id: c4e1378f-bb85-43a2-8b7c-1623ad3b14b5
-    internal-label: Documentation updates
+  - id: a7b2bfc5-be71-4740-b371-76fa6be8df02
+    internal-label: Journey Optimizer release notes
 ---
 # Journey Optimizer release cycle {#releases}
 

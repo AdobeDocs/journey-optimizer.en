@@ -12,6 +12,8 @@ product_v2:
 feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
