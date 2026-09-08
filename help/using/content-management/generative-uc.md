@@ -13,8 +13,6 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
-    internal-label: Guardrails and limitations
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1

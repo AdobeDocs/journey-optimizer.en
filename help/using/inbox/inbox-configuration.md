@@ -6,6 +6,16 @@ topic: Content Management
 role: Admin
 level: Experienced
 exl-id: d308ab4a-843c-4729-ad18-97d89c708357
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: bd995268-c4fc-41c8-8f09-eb370effe46e
+    internal-label: Inbox channel
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
 ---
 # Configure Inbox {#inbox-configuration}
 

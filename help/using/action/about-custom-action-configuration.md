@@ -21,12 +21,6 @@ feature_v2:
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: c2beecbb-b93e-4ae3-baa9-72adcdc06781
-    internal-label: Action configuration
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
 role_v2:

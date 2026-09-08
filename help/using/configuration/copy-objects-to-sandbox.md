@@ -23,18 +23,8 @@ feature_v2:
 subfeature_v2:
   - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
     internal-label: Best practices
-  - id: c6e980f5-2d4f-494f-beef-186b9ecf1513
-    internal-label: Fragments
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
-  - id: d2e8a157-b3b0-4143-9ff3-809bf400be56
-    internal-label: Sandboxes
-  - id: d595a60b-bcf5-4a63-a189-66a0be755cc7
-    internal-label: Templates
-  - id: e23d48b5-7858-4d45-9c56-9e2b4be8500e
-    internal-label: Business rules
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

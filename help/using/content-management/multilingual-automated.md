@@ -19,14 +19,10 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: bc543dba-f0db-4234-b5da-877a5c1664e2
-    internal-label: Content cards
   - id: ea4139d9-3405-4b34-ad6e-c3ca120cc269
     internal-label: Multilingual content
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

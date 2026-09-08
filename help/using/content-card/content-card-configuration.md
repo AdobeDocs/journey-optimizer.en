@@ -18,12 +18,8 @@ feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
 subfeature_v2:
-  - id: bc543dba-f0db-4234-b5da-877a5c1664e2
-    internal-label: Content cards
   - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
     internal-label: In App channel
-  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
-    internal-label: Mobile SDK
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations
 role_v2:

@@ -21,15 +21,7 @@ feature_v2:
     internal-label: Journeys
   - id: df64005d-8f9a-422e-ba4d-c6f6dc3454b4
     internal-label: Use cases
-subfeature_v2:
-  - id: d8353d85-5da7-453d-bd68-40ad33fa0ab7
-    internal-label: Action activities
-  - id: e57d1da4-32c2-4cc6-945c-9feb219156ff
-    internal-label: Event activities
-  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
-    internal-label: Reaction events
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+subfeature_v2: []
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

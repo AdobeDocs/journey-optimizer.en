@@ -16,17 +16,11 @@ product_v2:
 feature_v2:
   - id: d556b755-390a-43f0-be32-a08cf6236126
     internal-label: Configuration
-  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
-    internal-label: Content management
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
+  - id: bb359667-ec7d-4d4b-8663-5850fc219d32
+    internal-label: Administration
 subfeature_v2:
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: fae48155-b23f-40d2-a252-a25bce350b4d
-    internal-label: Email configuration
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
   - id: a9cf78bf-e9e4-4836-85a5-b6b3cf93bf56
     internal-label: Consent management
 role_v2:

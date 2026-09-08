@@ -18,15 +18,7 @@ feature_v2:
     internal-label: Activities
   - id: d998adac-2f81-400b-a669-d07bb196e4eb
     internal-label: Journeys
-subfeature_v2:
-  - id: cce82f05-fc3c-4af7-85ff-8bba603861a7
-    internal-label: Condition activities
-  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
-    internal-label: Custom actions
-  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
-    internal-label: Reaction events
-  - id: fa683eda-48de-4558-af32-2673edcd44fe
-    internal-label: Events
+subfeature_v2: []
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

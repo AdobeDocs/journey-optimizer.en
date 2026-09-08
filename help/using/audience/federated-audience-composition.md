@@ -11,6 +11,10 @@ exl-id: 90328ba9-e6b0-4105-abcf-3e3a9ed41aa6
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
 subfeature_v2:
   - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
     internal-label: Audience Qualification events

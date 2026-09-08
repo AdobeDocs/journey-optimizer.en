@@ -19,14 +19,10 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: ea4139d9-3405-4b34-ad6e-c3ca120cc269
-    internal-label: Multilingual content
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: ea4139d9-3405-4b34-ad6e-c3ca120cc269
+    internal-label: Multilingual content
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

@@ -10,15 +10,15 @@ level: Beginner
 feature_v2:
   - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
     internal-label: Journey management
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
-  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
-    internal-label: Audiences
-  - id: e95b6013-acbe-46e9-a3b5-b80e14088d7d
-    internal-label: Audience guardrails
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
+    internal-label: Audiences
+  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
+    internal-label: Audience Qualification events
 ---
 
 # Get started with profiles & audiences {#gs-profiles-audiences}

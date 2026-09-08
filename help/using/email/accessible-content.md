@@ -21,12 +21,6 @@ feature_v2:
 subfeature_v2:
   - id: b19d9237-76be-466d-a869-aacf2d72205f
     internal-label: Landing pages
-  - id: b5cb2dff-e9ba-4e50-a3eb-6a50eef729b8
-    internal-label: Email rendering
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

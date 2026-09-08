@@ -15,7 +15,7 @@ subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
   - id: d48edf2f-7bae-4df0-a9d4-7cabfb867d23
-    internal-label: Loyalty challenges (AJO)
+    internal-label: Loyalty challenges
 ---
 # Get started with loyalty challenges {#get-started-loyalty-challenges}
 

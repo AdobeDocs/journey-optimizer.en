@@ -21,12 +21,8 @@ feature_v2:
 subfeature_v2:
   - id: c41e8697-e629-4c38-96b3-564faaa17acf
     internal-label: Dynamic content
-  - id: ee5bb250-0884-4d71-86eb-d8489e8bcadd
-    internal-label: Email design
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

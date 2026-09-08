@@ -15,17 +15,15 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
-  - id: b3a93754-a8b8-46eb-9421-7eccaeeb3dff
-    internal-label: Best practices
-  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
-    internal-label: Get started
-  - id: b3b09fe1-10f1-4793-9f6b-1ca0269eebe7
-    internal-label: SMS and MMS channel
-  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
-    internal-label: Channel configurations
   - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
     internal-label: Subdomains
+  - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
+    internal-label: Channel configurations
+  - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
+    internal-label: Get started
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin

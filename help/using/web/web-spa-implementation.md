@@ -8,6 +8,8 @@ level: Intermediate
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
 subfeature_v2:
   - id: d056adbe-402d-4f42-9746-f3d424e598b1
     internal-label: Web SDK

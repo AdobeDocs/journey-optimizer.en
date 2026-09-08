@@ -19,14 +19,10 @@ feature_v2:
   - id: fe338112-e2ce-4876-8989-fc4d497613f1
     internal-label: Email
 subfeature_v2:
-  - id: ea4139d9-3405-4b34-ad6e-c3ca120cc269
-    internal-label: Multilingual content
-  - id: fb9a80eb-bebc-492f-a0e9-584595621ebb
-    internal-label: Publish
-  - id: f29a52db-c90c-4345-902e-b586d1406d8d
-    internal-label: Content experiment
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: f29a52db-c90c-4345-902e-b586d1406d8d
+    internal-label: Content experiment
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

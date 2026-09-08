@@ -7,10 +7,12 @@ role: User
 level: Intermediate
 exl-id: f0f83bd2-7c2b-4d9b-b455-e1df12dfa175
 feature_v2:
-  - id: b49ca41f-eb7a-4f4b-abeb-a97c06fd0c04
-    internal-label: Track and monitor
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: c96d2aa5-76a2-443d-8d23-5de95577c909
     internal-label: Mobile SDK
