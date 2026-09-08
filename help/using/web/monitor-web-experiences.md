@@ -80,3 +80,5 @@ This information can be useful to improve your website users' experience. For ex
 1. To remove click tracking on an element, select the corresponding delete icon.
 
 Once your campaign is live, you can check the number of clicks for each element in the campaign web [live report](../reports/campaign-live-report.md#web-tab) and [Customer Journey Analytics report](../reports/campaign-global-report-cja-web.md).
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-monitor-web-experiences.md}}

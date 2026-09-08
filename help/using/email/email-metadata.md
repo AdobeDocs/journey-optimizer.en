@@ -79,3 +79,5 @@ To configure these settings, follow the steps below.
     ![](assets/email_body_settings.png)
 
 1. Click **[!UICONTROL Save]** to confirm your changes.
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-email-metadata.md}}

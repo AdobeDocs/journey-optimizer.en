@@ -189,3 +189,5 @@ If you wish to undelegate a web subdomain, reach out to your Adobe representativ
 If the web subdomain was a [new delegated subdomain](#web-configure-new-subdomain), you can delete the CNAME DNS record that you created for the web subdomain from your hosting solution (but do not delete the original email subdomain if any).
 
 After you request is handled by Adobe, the undelegated domain is no longer displayed on the subdomain inventory page.
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-delegated-subdomains.md}}

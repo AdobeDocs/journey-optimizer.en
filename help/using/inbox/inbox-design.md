@@ -65,3 +65,4 @@ For the complete procedure to create an inbox campaign, refer to [Create an Inbo
 
 When you are ready, review your settings and activate the inbox. After activation, you can use it with [Content cards](../content-card/create-content-card.md).
 
+{{$include /help/_includes/do-not-localize/inbox/ai-augmented-inbox-design.md}}

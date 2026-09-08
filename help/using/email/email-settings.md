@@ -236,3 +236,5 @@ However, you can change this default execution field at the email channel config
 To do this, edit the **[!UICONTROL Delivery address]** field and select an item from the list of available email-type XDM fields. [Learn more](../configuration/primary-email-addresses.md#override-execution-address-channel-config)
 
 ![](assets/email-config-delivery-address.png)
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-email-settings.md}}

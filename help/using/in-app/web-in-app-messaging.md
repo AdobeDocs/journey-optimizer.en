@@ -6,6 +6,14 @@ topic: Content Management
 role: Developer
 level: Intermediate
 keywords: in-app, message, web sdk, configuration
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
+    internal-label: Mobile SDK
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
 ---
 # Configure Web In-app Messaging support in Web SDK
 

@@ -198,3 +198,5 @@ The ability to change the device size is designed for responsive sites that rend
 The video below shows how to author a web experience using the web designer in [!DNL Journey Optimizer] campaigns.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418803/?quality=12&learn=on)
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-visual-editor.md}}

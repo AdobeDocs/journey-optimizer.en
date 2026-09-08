@@ -9,7 +9,9 @@ role: Admin
 level: Experienced
 keywords: CC, carbon copy, email, channel configuration, email headers, BCC
 exl-id: 9649cc07-3183-4510-b5d9-b1e33eff43e9
-feature_v2: []
+feature_v2:
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: cf64c7f6-7428-4ae5-b158-8df9771f38f4
     internal-label: Channel configurations

@@ -6,6 +6,14 @@ topic: Content Management
 role: Developer
 level: Intermediate
 keywords: ajo;ajo web;adobe journey optimizer;renderDecisions;surfaces;decisions;propositions;scope;schema
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2:
+  - id: d056adbe-402d-4f42-9746-f3d424e598b1
+    internal-label: Web SDK
+  - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
+    internal-label: Web channel
 ---
 # Using [!DNL Adobe Journey Optimizer] with the [!DNL Experience Platform Web SDK]
 
@@ -121,3 +129,5 @@ Sample Journey Optimizer content proposition:
 To debug Adobe Journey Optimizer personalization implementations, use [Web SDK debugging](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/debugging.html){target="_blank"}. [!DNL Adobe Journey Optimizer] debug traces are available when troubleshooting using [[!DNL Adobe Experience Platform Assurance]](https://developer.adobe.com/client-sdks/documentation/platform-assurance/). Check for events with the `AJO:` prefix.
 
 ![assurance-ajo-trace](assets/assurance-ajo-trace.png)
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-sdk.md}}

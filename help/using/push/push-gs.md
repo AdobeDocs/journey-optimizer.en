@@ -109,3 +109,5 @@ The following pictorial shows the various steps, end-to-end, involved in configu
 * [Create a push notification](create-push.md)
 * [Add a message in a journey](../building-journeys/journey-action.md)
 * [Add a message in a campaign](../campaigns/create-campaign.md)
+
+{{$include /help/_includes/do-not-localize/push/ai-augmented-push-gs.md}}

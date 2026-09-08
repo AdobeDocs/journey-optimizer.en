@@ -214,3 +214,5 @@ Each change creates a new element in the **[!UICONTROL Modifications]** panel. B
 If you use the **[!UICONTROL Page `<head>`]** modification type for two campaigns impacting the same URL, the JavaScript is injected into the page from both campaigns. [!DNL Journey Optimizer] automatically determines the order of the delivered content. Make sure the code does not depend on placement. It is up to you to make sure there are no conflicts in the code.
 
 +++
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-manage-web-modifications.md}}

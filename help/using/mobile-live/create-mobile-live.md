@@ -184,7 +184,7 @@ After designing your Live activity, you can track measuring the impact of your L
 
 >[!AVAILABILITY]
 >
-> `executionMetadata` is available for both **API-triggered Transactional** and **API-triggered Marketing** campaigns.
+> `executionMetadata` is only available for **API-triggered Transactional** campaigns.
 
 Attach your own **custom data** to a profile, such as an order ID, loyalty tier, or region code, using the optional `executionMetadata` field. Journey Optimizer stores this data alongside the execution so you can retrieve it later from your **Live activity feedback dataset** and match delivery results to your own business records.
 

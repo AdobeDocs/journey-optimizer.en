@@ -460,3 +460,5 @@ Your event is now created and can now be used in a journey.
 1. Click **[!UICONTROL Send]**.
 
 Your event will be triggered and you will receive your push notification to your mobile app.
+
+{{$include /help/_includes/do-not-localize/push/ai-augmented-push-configuration.md}}

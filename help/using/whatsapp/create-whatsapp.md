@@ -241,3 +241,5 @@ The video below shows how to create a multi-step WhatsApp journey using Adobe Jo
 >[!VIDEO](https://video.tv.adobe.com/v/3470282/?learn=on")
 
 +++
+
+{{$include /help/_includes/do-not-localize/whatsapp/ai-augmented-create-whatsapp.md}}

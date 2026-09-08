@@ -9,7 +9,9 @@ role: Developer, Admin
 level: Experienced
 keywords: data, governance, DULE, labels, labelling, platform, policy
 exl-id: be3efd3b-35d5-4cf7-9015-29d1e305355d
-feature_v2: []
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
 subfeature_v2: []
 ---
 # Data Governance {#restrict-fields}

@@ -14,11 +14,15 @@ product_v2:
 feature_v2:
   - id: dc22c819-3f29-4e91-8b7d-5c6719831141
     internal-label: Content management
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
 subfeature_v2:
   - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
     internal-label: Preview
   - id: a5683ded-e5d5-4ec6-b9fd-e1b56a94ab96
     internal-label: Proofs
+  - id: bf7a266e-e483-42c6-b5bc-09ca6e49900c
+    internal-label: Approval workflows
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -39,6 +43,11 @@ topic_v2:
 **On this page:** Preview all your content variants at a glance in a side-by-side grid, manage them from a consolidated bottom action bar, and switch back to the classic experience at any time.
 
 >[!ENDSHADEBOX]
+
+>[!CONTEXTUALHELP]
+>id="ajo_simulate_content_variations"
+>title="Simulate using sample input"
+>abstract="In this screen, you can preview and compare all your content variants side by side. Create variants by entering values manually, uploading a CSV or JSON file, auto-generating them with AI, or selecting existing simulated users."
 
 The **[!UICONTROL Simulate content variations]** experience has been redesigned to make testing and comparing your variants faster and easier. All variants now render together in a single scrollable grid, and every control you need is available from a single bottom action bar.
 

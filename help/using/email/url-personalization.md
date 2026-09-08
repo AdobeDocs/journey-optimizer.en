@@ -8,7 +8,9 @@ topic: Content Management
 role: User
 level: Intermediate, Experienced
 keywords: url, link, personalization, tracking, encode, curly braces
-feature_v2: []
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
 subfeature_v2:
   - id: c41e8697-e629-4c38-96b3-564faaa17acf
     internal-label: Dynamic content
@@ -181,3 +183,5 @@ Before activating a journey or campaign, follow the recommendations below:
 * Send a [proof](../content-management/proofs.md) and click links to confirm the resolved URL starts with `http`/`https` and keeps the expected structure.
 * If tracking parameters are appended, confirm the final URL includes them (either via configuration-level URL tracking or per-link tracking parameters).
 -->
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-url-personalization.md}}

@@ -44,7 +44,7 @@ topic_v2:
 
 >[!BEGINSHADEBOX]
 
-**On this page:** Learn how to set a journey's global properties — including its name, entrance rules, time zone, start and end dates, timeout, exit criteria, and conflict management — from the right rail during authoring.
+**On this page:** Learn how to set a journey's global properties — including its name, entrance rules, time zone, start and end dates, timeout, exit criteria, conflict management, and holdout configuration (Limited Availability) — from the right rail during authoring.
 
 >[!ENDSHADEBOX]
 
@@ -64,7 +64,7 @@ From this section, define the name of the journey, add a description, and set yo
 You can:
 
 * Assign [!DNL Adobe Experience Platform] Unified Tags to your journey, to easily classify them and improve search from the campaigns list. [Learn how to work with tags](../start/search-filter-categorize.md#tags)
-* Select your journey metrics. [Learn how to configure and track your journey metrics](success-metrics.md)
+* Select your journey success metrics. [Learn how to configure and track your journey success metrics](success-metrics.md)
 * Manage [entrance and reentrance](#entrance). Profile entrance management depends on the type of journey. Details are available on [this page](entry-management.md)
 * Manage [access to data](#manage-access)
 * Select the journey and profile [timezones](#timezone)    
@@ -72,6 +72,7 @@ You can:
 * Define a [timeout duration](#timeout) in journey activities (for Admin users only)
 * Monitor the [current journey payload size](#journey-payload-size) to avoid publishing errors
 * Monitor conflicts and prioritize your journeys using [conflict management tools](#conflict)
+* [Measure journey lift with a holdout group (Limited Availability)](#performance-management) to quantify your journey's incremental effectiveness
 
 ![Journey properties configuration pane with general settings and advanced options](assets/new-journey-properties.png){width="80%"}{zoomable="yes"}
 
@@ -479,6 +480,37 @@ The **[!UICONTROL Conflict management]** section in the journey's properties all
 
 * **View conflicts** with other journeys, campaigns, or channel configurations. If you wish to identify overlap on audience, start & end date, channel configuration, channel, or rule set you can view potential conflicts here. [Learn how to identify potential conflicts in journey](../conflict-prioritization/conflicts.md)
 
+## Measure journey lift with a holdout group {#performance-management}
+
+>[!AVAILABILITY]
+>
+>This capability is currently in Limited Availability. To gain access, contact your Adobe representative. For full details about the release cycle and availability phases, see [Journey Optimizer release cycle](../rn/releases.md).
+
+>[!CONTEXTUALHELP]
+>id="ajo_journey_properties_performance_measurement"
+>title="Performance measurement"
+>abstract="Configure a journey-level holdout group to measure the incremental effectiveness of your journey. Select a success metric and set a holdout percentage to exclude that portion of your audience from entering the journey. Excluded profiles are tracked via exclusion events and can be compared against active profiles in Customer Journey Analytics reporting to measure lift."
+
+The **[!UICONTROL Performance measurement]** section in journey properties lets you configure a **journey-level holdout group** to measure the incremental effectiveness of your journey.
+
+A holdout is a randomly selected percentage of your target audience that is excluded from entering the journey and receives no communication. By comparing the outcomes of holdout profiles against those of profiles who entered the journey, you can measure the incremental lift, i.e. the actual impact that the journey has on the audience.
+
+### Configure holdout {#configure-holdout}
+
+To configure a holdout for your journey:
+
+1. In journey properties **[!UICONTROL Performance measurement]** section, select the **[!UICONTROL Success metric]** you want to use to measure the journey's performance and calculate incremental lift against the holdout group.
+
+1. Toggle **[!UICONTROL Measure lift using a holdout]** to enable the holdout group.
+
+1. Enter the **[!UICONTROL Holdout percentage]**: the share of your audience that will be excluded from entering the journey.
+
+    ![](assets/performance-measurement.png)
+
+    *In this example, 50% of the audience will be assigned to the holdout group and will not be entering the journey. For the rest of the audience, the journey will run as normal and the Email Opens (AJO) metric will be used by Customer Journey Analytics to measure the lift.*
+
+1. Click **[!UICONTROL Save]**.
+
 ## Frequently asked questions {#faq}
 
 **Where do I find a journey's properties?**
@@ -552,6 +584,9 @@ This page explains how to configure and manage all global settings for a journey
 * **Conflict management**: Tools in journey properties for assigning priority scores, applying rule sets, and identifying overlapping journeys or campaigns. *(product-specific)*
 * **Journey payload size**: The current size of the journey's definition payload compared to the configured limit; exceeding the limit blocks publication. *(product-specific)*
 * **OLAC (Object Level Access Control)**: A permission model that restricts access to individual journeys using data usage labels.
+* **Holdout group (journey-level) (Limited Availability)**: Configured in the **Measure journey lift with a holdout group** section of journey properties; lets you exclude a percentage of your audience from the journey to measure its incremental effectiveness. *(product-specific)*
+* **Holdout group**: A percentage of the target audience excluded from entering a journey, used as a baseline to measure the journey's incremental effectiveness. Profiles in the holdout group are tracked via exclusion events. *(product-specific)*
+* **Incremental lift**: The measurable difference in outcome between profiles who entered the journey (active group) and profiles who did not (holdout group), used to quantify the journey's true impact.
 
 >[!TAB Terminology]
 
@@ -570,6 +605,10 @@ This page explains how to configure and manage all global settings for a journey
 * When an audience merge policy is updated, any active journey referencing that audience must be republished
 * Inconsistent merge policies in a journey block publication; inconsistencies in message personalization do not raise an alert
 * For live journeys, the properties panel shows only the publication date and publisher name
+* Holdout: minimum 5% of audience and 1,000 profiles recommended for statistical significance
+* Holdout: open and click metrics are not meaningful — use bottom-of-funnel conversion metrics instead
+* Holdout: only one success metric per journey; cross-journey holdout is not supported here
+* Holdout percentage changes in a new journey version apply to new entrants only
 
 >[!TAB FAQ]
 
@@ -596,5 +635,9 @@ The end date stops all new entries and automatically exits active profiles on th
 **Q: How is the merge policy determined for a journey?**
 
 It depends on the journey type: Read Audience and Audience Qualification journeys use the audience's merge policy; Unitary event journeys use the default merge policy; Business event journeys use the merge policy from the targeted audience in the subsequent Read Audience activity.
+
+**Q: How does the holdout group work?**
+
+The holdout group is a configurable percentage of your target audience excluded from entering the journey. Assignment is deterministic (the same profile always maps to holdout for the same journey) and evaluated at entry time. Holdout profiles do not receive any communication but are tracked via exclusion events in the dataset for downstream CJA lift reporting. See [Measure journey lift with a holdout group](#performance-management).
 
 >[!ENDTABS]

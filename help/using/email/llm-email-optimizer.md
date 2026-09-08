@@ -6,7 +6,9 @@ topic: Content Management, Artificial Intelligence
 role: User
 level: Beginner, Intermediate
 exl-id: 0c2f95ce-28a0-480c-9829-b7e4975b6340
-feature_v2: []
+feature_v2:
+  - id: fe338112-e2ce-4876-8989-fc4d497613f1
+    internal-label: Email
 subfeature_v2: []
 ---
 # Optimize email for AI inboxes {#email-text-optimizer}
@@ -119,3 +121,5 @@ The Optimize email for AI inboxes capability helps you prepare a version of your
 
 * [Get started with email design](get-started-email-design.md)
 * For Adobe generative features more broadly, see [Get started with Generate Content](../content-management/gs-generative.md).
+
+{{$include /help/_includes/do-not-localize/email/ai-augmented-llm-email-optimizer.md}}

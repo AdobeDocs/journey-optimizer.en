@@ -171,3 +171,5 @@ When creating a [rule that matches multiple pages](#web-page-matching-rule), you
     </tr>
     </tbody>
 </table>
+
+{{$include /help/_includes/do-not-localize/web/ai-augmented-web-configuration.md}}
