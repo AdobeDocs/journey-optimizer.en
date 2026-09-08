@@ -123,6 +123,8 @@ topic_v2:
 
 ### Campaigns {#sep-26-campaigns}
 
+* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
+
 +++ Coming soon — **Information below is subject to change.**
 
 <table>
@@ -136,15 +138,12 @@ topic_v2:
 <td>
 <p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
 <p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
-<p>Availability date: September 4, 2026</p>
 </td>
 </tr>
 </tbody>
 </table>
 
 * **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
-
-* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
 
 * **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
 
