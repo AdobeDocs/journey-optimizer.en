@@ -16,7 +16,11 @@ feature_v2:
     internal-label: Administration
   - id: b3538224-471e-4c63-a444-9b19d89ae29c
     internal-label: Activities
-subfeature_v2: []
+subfeature_v2:
+  - id: cfba2953-2ce9-4b00-a00c-71cd338ae63f
+    internal-label: Custom actions
+  - id: ebd64fe4-362a-4a1c-9476-b2573ed12a95
+    internal-label: Reaction events
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner

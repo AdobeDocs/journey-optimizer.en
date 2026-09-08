@@ -25,14 +25,12 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
 subfeature_v2:
-  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
-    internal-label: Performance monitoring
-  - id: a7289281-9ae4-47b1-b8cf-4028b98af776
-    internal-label: Deliverability
-  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
-    internal-label: Metrics catalog
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: b5afe8bf-bda6-41b5-ba06-922638872d63
+    internal-label: Metrics catalog
+  - id: d145add9-d5b9-481b-aa8a-e15e6bb7f813
+    internal-label: Performance monitoring
 ---
 # Get started with reporting capabilities {#get-started-report}
 

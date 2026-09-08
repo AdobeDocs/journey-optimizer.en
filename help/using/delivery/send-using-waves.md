@@ -9,6 +9,10 @@ role: User
 level: Intermediate
 mini-toc-levels: 1
 keywords: waves, batches, schedule, journey, campaign, orchestrated, deliverability
+feature_v2:
+  - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
+    internal-label: Communication channels
+subfeature_v2: []
 ---
 # Send using waves {#send-using-waves}
 

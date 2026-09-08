@@ -16,6 +16,8 @@ feature_v2:
     internal-label: Administration
   - id: b856530c-d60b-42d8-a19d-df2dfd7fe62a
     internal-label: Access control
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
 subfeature_v2:
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started

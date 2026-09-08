@@ -6,6 +6,16 @@ feature: Channel Configuration
 level: Intermediate
 keywords: custom channel, subdomains, configuration
 badge: label="Limited Availability" type="Informative"
+feature_v2:
+  - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
+    internal-label: Integrations
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
+subfeature_v2:
+  - id: dcce7166-436e-4b78-aa5f-c7012ff3a9e3
+    internal-label: Custom Channels
+  - id: e5329d1b-e590-4e24-a3fb-ef3fe0f2c721
+    internal-label: Subdomains
 ---
 # Configure custom channel subdomains {#custom-channel-subdomains}
 

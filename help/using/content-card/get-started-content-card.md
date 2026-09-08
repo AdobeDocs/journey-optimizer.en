@@ -20,12 +20,10 @@ feature_v2:
 subfeature_v2:
   - id: bc543dba-f0db-4234-b5da-877a5c1664e2
     internal-label: Content cards
-  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
-    internal-label: In App channel
-  - id: c96d2aa5-76a2-443d-8d23-5de95577c909
-    internal-label: Mobile SDK
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
+  - id: cc5c44e2-54a1-4927-b794-442cd87d8f74
+    internal-label: In App channel
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
