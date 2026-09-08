@@ -15,8 +15,6 @@ subfeature_v2:
     internal-label: Get started
   - id: b32bb433-f8c6-4931-8e52-e657230a3bf2
     internal-label: Audiences
-  - id: f42b4d14-fe8a-428b-b62e-e7995eaab1b3
-    internal-label: Audience Qualification events
 ---
 
 # Get started with profiles & audiences {#gs-profiles-audiences}
