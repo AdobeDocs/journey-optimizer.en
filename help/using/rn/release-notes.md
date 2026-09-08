@@ -113,6 +113,17 @@ topic_v2:
 </tbody>
 </table>
 
+* **Decisioning in Journey simulation** - You can now simulate journeys that rely on Adobe Journey Optimizer decisioning, with the following newly supported:
+
+  * Content Decision nodes are now supported in Simulation.
+  * The Optimize activity's Targeting rule method is now supported in Simulation.
+  * Actions with Adobe Journey Optimizer–decisioned content (e.g., email using a decision policy) are now supported in Simulation.
+  * Decision policies using Offer eligibility and ranking by rule, audience, priority, or formula are fully supported. Ranking by AI Model - Personalization is also supported, though returned offers may vary between runs.
+
+  [Learn more](../building-journeys/simulate-journey-gs.md)
+
+  Availability date: September 8, 2026
+
 * **New dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.  [Learn more](../building-journeys/functions/date-functions.md#dateDiff)
 
   Availability date: September 1, 2026
