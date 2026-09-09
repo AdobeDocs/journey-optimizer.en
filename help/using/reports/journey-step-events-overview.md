@@ -175,11 +175,9 @@ GROUP BY _experience.journeyOrchestration.stepEvents.nodeName;
 Use journey step events to verify that Journey Optimizer executed a custom action, and to inspect its status, latency, and error details:
 
 ```sql
--- Example: Inspect custom action execution for a journey
+-- Example: Inspect custom action execution for a given custom action and profile in a journey
 SELECT
   timestamp,
-  _experience.journeyOrchestration.stepEvents.profileID AS profile_id,
-  _experience.journeyOrchestration.stepEvents.nodeName AS node_name,
   _experience.journeyOrchestration.stepEvents.actionID AS action_id,
   _experience.journeyOrchestration.stepEvents.actionName AS action_name,
   _experience.journeyOrchestration.stepEvents.actionType AS action_type,
@@ -189,12 +187,14 @@ SELECT
 FROM journey_step_events
 WHERE _experience.journeyOrchestration.stepEvents.journeyVersionID = '<journey-version-id>'
 AND _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction'
+AND _experience.journeyOrchestration.stepEvents.profileID = '<profile-id>'
+AND _experience.journeyOrchestration.stepEvents.nodeName = '<node-name>'
 ORDER BY timestamp DESC;
 ```
 
 >[!NOTE]
 >
->This query can return a large number of rows, especially for high-volume journeys or journeys that contain multiple custom action nodes. As a best practice, add filters on `actionID` and `profileID` to scope the results to a single custom action and a single profile when troubleshooting a specific execution.
+>This query is scoped to a single profile and journey node. Without the `profileID` and `nodeName` filters, the query can return a large number of rows, especially for high-volume journeys or journeys that contain multiple custom action nodes.
 
 This query reports execution details on the Journey Optimizer side only. A successful result does not confirm that the external system delivered a message — check the external service's logs or reporting for downstream delivery status. Learn how to [choose the correct dataset](../data/datasets-query-examples.md#choose-the-correct-dataset) for message-delivery feedback.
 
