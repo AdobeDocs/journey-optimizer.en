@@ -278,7 +278,7 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >[!CONTEXTUALHELP]
 >id="ajo_oc_campaign_ovv_4"
 >title="Available channels"
->abstract="Email, SMS, Push notifications, Direct mail, LINE, and Custom channels"
+>abstract="Email, SMS, Push notifications, and Direct mail"
 
 <!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
 
@@ -303,7 +303,7 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >[!CONTEXTUALHELP]
 >id="ajo_oc_api_camppaign_ovv_2"
 >title="Marketing messages"
->abstract="Promotional content (requires opt-in, subject to business rules)"
+>abstract="Promotional content, including broadcast Live activities such as sports scores or flight status updates (requires opt-in, subject to business rules)"
 
 >[!CONTEXTUALHELP]
 >id="ajo_oc_api_camppaign_ovv_3"
@@ -313,7 +313,7 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >[!CONTEXTUALHELP]
 >id="ajo_oc_api_camppaign_ovv_4"
 >title="Available channels"
->abstract="Email, SMS, Push notifications"
+>abstract="Email, SMS, Push notifications, and Live activities"
 <!--APPROVAL POLICIES-->
 
 
