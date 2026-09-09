@@ -192,6 +192,10 @@ AND _experience.journeyOrchestration.stepEvents.actionType = 'customHttpAction'
 ORDER BY timestamp DESC;
 ```
 
+>[!NOTE]
+>
+>This query can return a large number of rows, especially for high-volume journeys or journeys that contain multiple custom action nodes. As a best practice, add filters on `actionID` and `profileID` to scope the results to a single custom action and a single profile when troubleshooting a specific execution.
+
 This query reports execution details on the Journey Optimizer side only. A successful result does not confirm that the external system delivered a message — check the external service's logs or reporting for downstream delivery status. Learn how to [choose the correct dataset](../data/datasets-query-examples.md#choose-the-correct-dataset) for message-delivery feedback.
 
 **Journey funnel analysis**
