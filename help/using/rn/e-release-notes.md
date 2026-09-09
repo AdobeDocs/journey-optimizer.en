@@ -167,7 +167,6 @@ The following capabilities and improvements are coming to channels in this relea
 <td>
 <p>Journey Optimizer now expands its real-time mobile personalization capabilities by extending <strong>Live Activity support to Android</strong>. You can deliver real-time progress updates directly to users, such as order tracking, flight statuses, live event updates, and real-time sports scores.</p>
 <p>Beyond supporting iOS Live Activities, Journey Optimizer now manages temporary push tokens for Android Live Updates across its platform configurations. It supports both broadcast and transactional update flows using API-triggered campaigns and headless APIs.</p>
-<p>Availability date: September 15, 2026</p>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
 </td>
@@ -277,118 +276,6 @@ The following improvement is coming to the Email Designer in this release.
 The following improvement is coming to administration in this release.
 
 * **Feedback loop OTP process for custom subdomains** - The Feedback Loop (FBL) custom subdomain configuration process has been improved by surfacing the Yahoo sender hub **One-Time Password (OTP)** directly within the product UI. Users can now automatically retrieve and display the OTP generated during the Yahoo sender hub domain ownership verification. <!-- Documentation link: TBD -->
-
-### Latest updates {#sep-26-latest-updates}
-
-The following capabilities and improvements were already released earlier this month and are duplicated here from the [release notes](release-notes.md) for reference.
-
-### Content Management {#sep-26-content-management-live}
-
-<table>
-<thead>
-<tr>
-<th><strong>Content Management MCP tools in CX Coworker</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>CX Coworker now has a new set of <strong>Content Management MCP tools</strong>, letting you discover and manage Journey Optimizer content assets through natural language prompts. Ask it to list or retrieve content templates, fragments, landing pages, and journey/campaign inline message content. It can also create content, update templates, and create, update, clone, and publish fragments — plus update inline channel action content directly in journey and campaign.</p>
-<p>For more information, refer to the <a href="../start/ajo-coworker-skills.md#content-management">detailed documentation</a>.</p>
-<p>Availability date: September 3, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Mandatory consent checkbox for landing pages** - You can now make a checkbox mandatory in the landing page form component, requiring visitors to select it (for example, to give consent) before they can submit the form. [Learn more](../landing-pages/lp-content.md#use-form-component)
-
-  Availability date: September 4, 2026 
-
-### Journeys {#sep-26-journeys-live}
-
-<table>
-<thead>
-<tr>
-<th><strong>Journey-level holdout (Limited availability)</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now configure a holdout group for your journeys directly from journey properties. A holdout is a configurable percentage of your target audience that is excluded from entering the journey and receives no communication. By comparing holdout profiles against active profiles in Customer Journey Analytics reporting, you can measure the incremental lift - the true impact - that your journey delivers.</p>
-<p>This capability is only available for a set of organizations (Limited Availability). To gain access, contact your Adobe representative. For full details about the release cycle and availability phases, see <a href="releases.md">Journey Optimizer release cycle</a>.</p>
-<p>For more information, refer to the <a href="../building-journeys/journey-properties.md#performance-management">detailed documentation</a>.</p>
-<p>Availability date: September 1, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-<table>
-<thead>
-<tr>
-<th><strong>Generate expressions with AI in journeys</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>The journey advanced expression editor now integrates AI-powered expression generation: describe the expression you want to build in natural language, and the editor generates ready-to-use code you can apply immediately or refine through follow-up prompts.</p>
-<p>Previously released in Limited Availability, this capability is now available to all environments (General Availability).</p>
-<p>For more information, refer to the <a href="../building-journeys/expression/generate-expression.md">detailed documentation</a>.</p>
-<p>Availability date: September 1, 2026</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Decisioning in Journey simulation** - You can now simulate journeys that rely on Adobe Journey Optimizer decisioning, with the following newly supported:
-
-  * Content Decision nodes are now supported in Simulation.
-  * The Optimize activity's Targeting rule method is now supported in Simulation.
-  * Actions with Adobe Journey Optimizer–decisioned content (e.g., email using a decision policy) are now supported in Simulation.
-  * Decision policies using Offer eligibility and ranking by rule, audience, priority, or formula are fully supported. Ranking by AI Model - Personalization is also supported, though returned offers may vary between runs.
-
-  [Learn more](../building-journeys/simulate-journey-gs.md)
-
-  Availability date: September 8, 2026
-
-* **New dateDiff function in journey expression editor** - The journey expression editor now includes the `dateDiff` function, which calculates the difference between two dates in number of days. This function is useful for time-based logic such as creating deadlines, calculating customer lifecycle durations, or building countdown timers in journey conditions.  [Learn more](../building-journeys/functions/date-functions.md#dateDiff)
-
-  Availability date: September 1, 2026
-
-* **Analyze Journey Anomalies skill** - CX Coworker can now detect unexpected spikes, drops, or flatlines in a journey's entry, exit, or message-send counts against historical baselines using the **Analyze Journey Anomalies** skill. Once a real anomaly is confirmed, the skill runs read-only diagnostics to surface a likely root cause and recommendation. [Learn more](../start/ajo-coworker-skills.md#journey-analyze)
-
-  Availability date: September 2, 2026
-
-### Campaigns {#sep-26-campaigns-live}
-
-* **Action Campaign authoring flow redesign** - Adobe Journey Optimizer Action Campaign authoring flow has been redesigned to deliver a significantly more intuitive, efficient, and seamless user experience.
-
-+++ Coming soon — **Information below is subject to change.**
-
-<table>
-<thead>
-<tr>
-<th><strong>Inbound experience simulation in Action Campaigns</strong><br/></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<p>You can now simulate inbound channel actions in Action Campaigns before going live. Use simulation mode to test your configuration with simulated users and preview the rendered experience, including a generated URL and QR code, so you can validate rules, decisioning, and content rendering end-to-end.</p>
-<p>This capability is currently in private beta and available to a limited set of organizations. Contact your Adobe representative for more information.</p>
-</td>
-</tr>
-</tbody>
-</table>
-
-* **Folders for Action Campaigns** - You can now organize your Action Campaigns into folders to improve navigation and management in the interface.
-
-* **Override the default execution fields in Action Campaigns** - Previously available at the journey level, you can now override the default execution fields configured globally for your Email, SMS, and WhatsApp deliveries in the Action Campaign parameters.
-
-+++
 
 <!--
 
