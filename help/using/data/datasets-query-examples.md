@@ -62,6 +62,29 @@ To view the complete list of fields and attributes for each schema, consult the 
 
 See also several commonly used [examples to query Journey Step Events](../reports/query-examples.md). 
 
+## Choose the correct dataset {#choose-the-correct-dataset}
+
+Before running a query, confirm which dataset matches the type of action you want to analyze in your journey.
+
+1. To check message-delivery feedback for native Journey Optimizer channel actions (such as `sent` or `bounce` statuses), use the [Message Feedback Event Dataset](#message-feedback-event-dataset).
+1. To check email interaction events such as opens and clicks, use the [Email Tracking Experience Event Dataset](#email-tracking-experience-event-dataset).
+1. To verify that Journey Optimizer executed a custom action, and to inspect its execution status, latency, and error details, use the [Journey Step Event](#journey-step-event) dataset.
+
+>[!NOTE]
+>
+>A successful custom action HTTP call confirms only that the call completed. It does not confirm that the external system delivered a message. To confirm downstream delivery, check the external system's logs or reporting. Learn how to [troubleshoot your live journey execution](../building-journeys/troubleshooting-execution.md#checking-that-messages-are-sent-successfully).
+
+### If a query returns "Table not provisioned for dataset" {#table-not-provisioned}
+
+This message does not necessarily mean the dataset failed to provision. Before contacting Adobe Support, check the following:
+
+1. In the Datasets workspace, enable **Show system datasets**. System-generated datasets are hidden by default. Learn how to [access datasets](get-started-datasets.md#access).
+1. Confirm the exact table name used in your query matches the table name shown in the Datasets workspace for your sandbox.
+1. Confirm that the journey action type matches the dataset you are querying. See [Choose the correct dataset](#choose-the-correct-dataset).
+1. For datasets that use batch ingestion, such as the Message Feedback Event Dataset, allow up to two hours for data to become available.
+1. For custom actions, query the [Journey Step Event](#journey-step-event) dataset rather than expecting a Message Feedback Event record for the external delivery.
+
+If the dataset should contain data and the table remains unavailable, collect the sandbox name, dataset name, query ID, and timestamp before contacting Adobe Support.
 
 ## Email tracking Experience event dataset{#email-tracking-experience-event-dataset}
 
