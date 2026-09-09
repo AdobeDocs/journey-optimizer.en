@@ -164,6 +164,10 @@ If individuals flow the right way in the journey but do not receive messages the
 
 In case of a message sent via a custom action, the only thing that can be checked during journey test is the fact that the call of the custom action's system leads to an error or not. If the call to the external system associated with the custom action does not lead to an error but does not lead to a message sending, some investigations should be done on the external system's side.
 
+>[!NOTE]
+>
+>For native Journey Optimizer channel actions, query the Message Feedback Event Dataset to confirm delivery status such as `sent` or `bounce`. For custom actions, query the Journey Step Event dataset to confirm that Journey Optimizer executed the action successfully — a successful HTTP call does not by itself confirm that the external system delivered a message. Learn how to [choose the correct dataset](../data/datasets-query-examples.md#choose-the-correct-dataset) for your use case.
+
 ## Understanding duplicate entries in Journey step events {#duplicate-step-events}
 
 Use this section to understand why duplicate rows can appear in Journey Step Events.
