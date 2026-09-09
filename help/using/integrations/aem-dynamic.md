@@ -59,7 +59,7 @@ To learn more about Dynamic Media in Adobe Experience Manager as a Cloud Service
 
 * For Dynamic Media Scene7 assets, Journey Optimizer adds default modifiers (`bfc=off&fmt=png-alpha`) at the start of the URL. If your preset also sets `fmt` or `bfc`, it takes precedence, since Scene7 uses the last occurrence of a repeated parameter. To avoid unexpected results, remove `fmt`/`bfc` from the preset, or move it before the default modifiers in the URL.
 
-* By design, the asset selector returns a `/images`-based URL format. If you want to deliver an asset in its original formatm, for example, GIF or SVG, you need to manually update the URL to use the `/content` path instead. Learn more in [Dynamic Media best practices documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-best-practices#deliver-gif-images){target="_blank"}.
+* By design, the asset selector returns a `/images`-based URL format. If you want to deliver an asset in its original format, for example, GIF or SVG, you need to manually update the URL to use the `/content` path instead. Learn more in [Dynamic Media best practices documentation](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-best-practices#deliver-gif-images){target="_blank"}.
 
 
 ## Add and manage Dynamic media {#dynamic-media}
@@ -124,7 +124,7 @@ To personalize your text overlay, follow these steps:
 
 1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
 
-    You can also simply copy and paste your assets URL.
+    You can also simply copy and paste your asset's URL.
 
 1. Browse through your AEM assets and select the one you want to add to your content.
 
@@ -132,7 +132,7 @@ To personalize your text overlay, follow these steps:
 
     ![](assets/do-not-localize/dynamic_media_layout.gif)
 
-1. Update the images parameters:
+1. Update the image's parameters:
 
     * **Layer**: enter the base element where your text is placed.
     * **Size**: update the size of your text block.
@@ -213,7 +213,7 @@ You can insert your dynamic template directly into your content using the HTML c
 
 1. From the **[!UICONTROL Edit HTML]** menu, access **[!UICONTROL Assets]** then **[!UICONTROL Open asset selector]**.
 
-    You can also simply copy and paste your assets URL.
+    You can also simply copy and paste your asset's URL.
 
 1. Adjust the image text parameters as needed to match your asset requirements.
 
