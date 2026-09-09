@@ -79,10 +79,6 @@ Through the **Optimize** activity, you can perform the following actions on your
 
 * [Leverage targeting rules](path-targeting.md) - Define specific rules that must be met for a customer to be eligible to enter one of the journey paths, based on audience segments, profile attributes, or contextual data. This ensures the right audience enters the specified path.
 
-    >[!AVAILABILITY]
-    >
-    >This capability is currently in Limited Availability. To request access, contact your Adobe representative.
-
 * [Apply conditions](conditions.md) - Create conditional paths based on specific criteria such as data sources, time, date, percentage splits, or profile caps. This is the equivalent of the former Condition activity.
 
 ## How it works {#how-it-works}
