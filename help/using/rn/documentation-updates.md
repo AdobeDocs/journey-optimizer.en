@@ -23,7 +23,29 @@ This page lists all the latest changes in [!DNL Journey Optimizer] documentation
 
 ## September 2026 {#september-2026}
 
+* The **Optimize** activity documentation no longer flags the **Targeting rule** method as Limited Availability: targeting rules are now generally available. [Read more](../building-journeys/optimize.md#optimization-methods)
+
 * The **Design your journey** page now includes a full tutorial section on the new canvas experience, covering how to add activities, use the toolbar icons, select multiple activities for bulk actions, copy and paste activities, and join or detach branches. [Read more](../building-journeys/using-the-journey-designer.md#canvas-capabilities)
+
+* New guidance has been added for verifying custom action delivery: the **Dataset query examples** page now explains how to choose between the Message Feedback Event, Email Tracking, and Journey Step Event datasets depending on the action type, and documents how to resolve a "Table not provisioned for dataset" error. The **Journey step events overview** and **Troubleshoot your live journey execution** pages have been updated accordingly, clarifying that a successful custom action call only confirms that Journey Optimizer executed the action, not that the external system delivered a message. [Read more](../data/datasets-query-examples.md#choose-the-correct-dataset)
+
+* A new **Analyze Journey Anomalies** skill has been documented under **Journey Analyze** in the CX Coworker page. It detects unexpected spikes, drops, or flatlines in a journey's entry, exit, or send counts against historical baselines, and runs read-only diagnostics to surface a likely root cause. [Read more](../start/ajo-coworker-skills.md#journey-analyze)
+
+* The **Guardrails and limitations** page has been corrected to remove outdated notes stating that visual fragments over 100 KB or expression fragments over 200 KB can cause truncation issues in email delivery: only the single 700 KB fragment size guardrail applies. [Read more](../start/guardrails.md#fragments-guardrails)
+
+* The **Create a Live activity** page has been corrected: the `executionMetadata` field is available only for **API-triggered Transactional** campaigns, not for API-triggered Marketing campaigns as previously stated. [Read more](../mobile-live/create-mobile-live.md#metadata)
+
+* The **AJO Message Feedback Event Dataset** documentation has been expanded to clarify that it covers message delivery feedback across all channels (Email, SMS/RCS/MMS, Direct Mail), not just email and push, and now includes a **Classify test and non-test executions** section explaining how to interpret the `isTestExecution` field, including `NULL` or missing values. [Read more](../data/datasets-query-examples.md#classify-test-executions)
+
+* A new **Content Management** capability has been documented for CX Coworker, powered by 15 read/write MCP tools that let you discover, create, update, clone, and publish content templates, fragments, landing pages, and journey/campaign inline message content using natural language prompts. [Read more](../start/ajo-coworker-skills.md#content-management)
+
+* The **Add content to your landing page** documentation now describes a **Make form field mandatory** option for consent checkboxes: when enabled, the form cannot be submitted unless the checkbox is selected, and the check is enforced both client-side and server-side. [Read more](../landing-pages/lp-content.md#use-form-component)
+
+* The **Get started with Journey Simulation** page has been updated to document that Content Decision nodes and the **Optimize** activity's Targeting rule method are now supported in Simulation (previously listed as blocking), with a new **Decisioning behavior** table detailing how offer eligibility, eligibility rules and audiences, and ranking methods are evaluated during a simulation run. [Read more](../building-journeys/simulate-journey-gs.md#limitations)
+
+* The **Convert images to email content templates** page has been corrected to remove an inaccurate permissions requirement: the **Manage content templates** permission is not required to access and create templates with the image to HTML converter — only the **Generate Content** permission is needed. [Read more](../content-management/image-to-html.md#access-image-to-html)
+
+* The **External systems (custom actions)** page has been corrected: the circuit breaker for slow custom action endpoints now activates when more than 20% of calls in a 120-second window exceed **5 seconds** (previously documented as 10 seconds). [Read more](../configuration/external-systems.md#response-time)
 
 * The **Configure your Channel configuration** page now includes a note clarifying that the schema used for secondary dimension must have a primary key, and that composite primary keys are not supported. [Read more](../orchestrated/channel-config.md)
 
