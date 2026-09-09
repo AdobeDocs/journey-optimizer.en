@@ -41,7 +41,7 @@ CX Coworker provides various skills for managing Journeys and Loyalty challenges
 **Loyalty-focused AI capabilities:**
 
 * **Loyalty Challenge Management**: Create and manage loyalty challenges using natural language prompts
-* **Loyalty Agent - Data Insight Skill**: Query and analyze loyalty program performance data using natural language
+* **Loyalty Insights Skill**: Query and analyze loyalty program performance data using natural language
 
 CX Coworker also includes a set of **Content Management MCP tools**, to discover, create, and manage Journey Optimizer content templates, fragments, landing pages, and journey/campaign inline message content. [Learn more](#content-management)
 
@@ -428,9 +428,9 @@ The following functionalities are currently not supported:
 1. **State the reward**: Points, miles, statement credits, status extensions, vouchers, or perks granted on completion.
 1. **Reference the qualifying event**: Point to the specific SKU, product, account action, or engagement event the challenge tracks.
 
-### Loyalty Agent - Data Insight {#loyalty-data-insight}
+### Loyalty Insights Skill {#loyalty-data-insight}
 
-Loyalty Agent - Data Insight Skill enables Journey Optimizer users to analyze and query loyalty program performance data using natural language. This skill provides insights into loyalty points, member tiers, redemptions, and revenue metrics, allowing loyalty administrators and analysts to make data-driven decisions about their loyalty programs.
+Loyalty Insights Skill enables Journey Optimizer users to analyze and query loyalty program performance data using natural language. This skill provides insights into loyalty points, member tiers, redemptions, and revenue metrics, allowing loyalty administrators and analysts to make data-driven decisions about their loyalty programs.
 
 Key use cases :
 
