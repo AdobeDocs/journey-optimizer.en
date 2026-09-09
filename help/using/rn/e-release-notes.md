@@ -56,7 +56,7 @@ The following capability is coming to content management in this release.
 <li>Converts marketing goals, reference screenshots, or Figma design links into custom layout plans and production-ready email HTML.</li>
 <li>Manages reusable brand assets, design tokens, and structural email templates.</li>
 <li>Audits assembled email code for corporate compliance, visual design quality, and WCAG 2.1 AA accessibility standards.</li>
-<li>Exports approved HTML directly into Adobe Journey Optimizer (AJO) and Adobe Campaign.</li>
+<li>Exports approved HTML directly into Adobe Journey Optimizer and Adobe Campaign.</li>
 </ul>
 <!-- GIF placeholder: to be added -->
 <!-- Documentation link: TBD -->
@@ -177,7 +177,7 @@ The following capabilities and improvements are coming to channels in this relea
 <table>
 <thead>
 <tr>
-<th><strong>Custom outbound channel (GA)</strong><br/></th>
+<th><strong>Custom outbound channel (General Availability)</strong><br/></th>
 </tr>
 </thead>
 <tbody>
