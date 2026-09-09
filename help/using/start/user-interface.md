@@ -278,46 +278,42 @@ AI Assistant provides instant help and operational insights. Click the AI Assist
 >[!CONTEXTUALHELP]
 >id="ajo_oc_campaign_ovv_4"
 >title="Available channels"
->abstract="Email, SMS, Push notifications, Direct mail, LINE and Custom channels"
+>abstract="Email, SMS, Push notifications, Direct mail, LINE, and Custom channels"
 
 <!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS + JOURNEYS SKU -->
 
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_jo_campaign_ovv_1"
+>id="ajo_oc_jo_camppaign_ovv_1"
 >title="Guided UI to create and send a campaign"
->abstract="Set one or multiple actions with a channel, choose an audience, set the content, define a schedule and you are ready to send"
-
+>abstract="Set one or multiple actions with a channel, choose an audience, set a content, define a schedule and you are ready to send"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_jo_campaign_ovv_2"
+>id="ajo_oc_jo_camppaign_ovv_2"
 >title="Available channels"
 >abstract="Email, SMS, Push notifications, In-app, Web, Code-based experiences"
 
-
 <!--OVERVIEW TAB ORCHESTRATED CAMPAIGNS - API triggered tab -->
 
-
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_campaign_ovv_1"
+>id="ajo_oc_api_camppaign_ovv_1"
 >title="Transactional API triggered campaigns"
 >abstract="Trigger real-time messages through API calls"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_campaign_ovv_2"
+>id="ajo_oc_api_camppaign_ovv_2"
 >title="Marketing messages"
 >abstract="Promotional content (requires opt-in, subject to business rules)"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_campaign_ovv_3"
+>id="ajo_oc_api_camppaign_ovv_3"
 >title="Transactional messages"
 >abstract="Service-related content (confirmation, alerts, not subject to marketing consent)"
 
 >[!CONTEXTUALHELP]
->id="ajo_oc_api_campaign_ovv_4"
+>id="ajo_oc_api_camppaign_ovv_4"
 >title="Available channels"
 >abstract="Email, SMS, Push notifications"
-
 <!--APPROVAL POLICIES-->
 
 
