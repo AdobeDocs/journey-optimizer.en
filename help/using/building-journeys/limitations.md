@@ -10,8 +10,12 @@ level: Intermediate
 keywords: journeys, limitation
 exl-id: 5d59f21c-f76e-45a9-a839-55816e39758a
 version: Journey Orchestration
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: ad78185d-8f79-40ad-9bad-cbde74af74ee
+    internal-label: Guardrails and limitations
+subfeature_v2:
+  - id: a6c67b0d-bd3e-4d5d-95a8-882e3709d632
+    internal-label: Journey guardrails
 ---
 # Limitations {#journey-limitations}
 

@@ -9,8 +9,12 @@ role: Developer
 level: Experienced
 keywords: query, collections, functions, payload, journey
 version: Journey Orchestration
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: fda7be7c-b81e-42c0-95a9-616e5b893c03
+    internal-label: Build expressions
+subfeature_v2:
+  - id: f0577040-fadd-46a1-b0ae-9c7f828bb2da
+    internal-label: Collection management functions
 ---
 # Collection management functions 
 

@@ -10,6 +10,10 @@ level: Intermediate
 version: Campaign Orchestration
 exl-id: 3f2a1c0d-8e9b-4a7c-b5d1-0f2e3a4b5c6d
 feature_v2:
+  - id: b423a773-0a58-4a77-b65d-3dd4ae6ef841
+    internal-label: Campaign Orchestration
+  - id: b3538224-471e-4c63-a444-9b19d89ae29c
+    internal-label: Activities
 subfeature_v2:
   - id: b5e335a9-0e5f-4dda-8845-c4ac5dca2be4
     internal-label: Orchestration activities

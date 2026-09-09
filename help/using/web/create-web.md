@@ -13,15 +13,17 @@ product_v2:
 feature_v2:
   - id: d0a62d3c-b79e-47e4-929e-40ef3cffa037
     internal-label: Communication channels
+  - id: a984631b-2bae-4860-9b15-69c41a799dcb
+    internal-label: APIs and SDKs
+  - id: dc22c819-3f29-4e91-8b7d-5c6719831141
+    internal-label: Content management
 subfeature_v2:
-  - id: f29a52db-c90c-4345-902e-b586d1406d8d
-    internal-label: Content experiment
-  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
-    internal-label: Preview
   - id: c618a0dc-1818-4c6d-9916-0d92e6796f24
     internal-label: Web channel
   - id: d056adbe-402d-4f42-9746-f3d424e598b1
     internal-label: Web SDK
+  - id: f8d2e9f0-69c9-40cd-890f-71336c8dfff7
+    internal-label: Preview
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User

@@ -12,8 +12,8 @@ product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
     internal-label: Journey Optimizer
 feature_v2:
-  - id: d998adac-2f81-400b-a669-d07bb196e4eb
-    internal-label: Journeys
+  - id: d556b755-390a-43f0-be32-a08cf6236126
+    internal-label: Configuration
   - id: fe96aceb-8194-4a8a-a6b0-75302d02804d
     internal-label: Integrations
 role_v2:
@@ -34,6 +34,8 @@ topic_v2:
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
 subfeature_v2:
+  - id: af7571a6-3ddb-4c1c-abdf-4d4dde592140
+    internal-label: Source connectors
   - id: e30b0a1a-b594-47b8-af94-1e3a2be6df11
     internal-label: Get started
 ---

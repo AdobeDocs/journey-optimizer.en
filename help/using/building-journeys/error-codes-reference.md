@@ -9,8 +9,12 @@ role: User
 level: Intermediate
 keywords: error, codes, troubleshooting, journey, campaign, messages
 exl-id: 84924153-1bb5-465a-b91c-797628fc816c
-feature_v2: []
-subfeature_v2: []
+feature_v2:
+  - id: baecb07f-ce89-4ebb-9cd9-0f7c053f944f
+    internal-label: Journey management
+subfeature_v2:
+  - id: bf4bee78-72fe-48e8-ba77-2ecb14c2827d
+    internal-label: Journey troubleshooting
 ---
 # Error codes reference {#error-codes}
 
