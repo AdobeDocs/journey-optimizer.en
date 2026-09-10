@@ -352,9 +352,9 @@ The following capabilities and improvements have been introduced to Orchestrated
 
 ### Email Designer {#august-26-email-designer}
 
-* **Layer text over background images and change column counts freely in the Email Designer** - You can now layer a text component directly over a background image inside a structure without the previous non-intuitive workarounds. You can also change the column count of an existing structure — for example, from 2 columns to 3 — without deleting it and losing your content; existing content reflows into the new column layout instead. [Learn more](../email/content-from-scratch.md)
+* **Change column counts freely in the Email Designer** - You can now change the column count of an existing structure — for example, from 2 columns to 3 — without deleting it and losing your content. [Learn more](../email/content-from-scratch.md)
 
-  Availability date: August 11, 2026
+  Availability date: August 5, 2026
 
 * **New Cover and Contain options for background image placement in the Email Designer** - The background image placement options now include Cover and Contain, alongside the existing Fit, Full Width, Full Height, and Repeat options. Cover scales the image proportionally to fill the structure or column, cropping any overflow; Contain scales it proportionally to fit within the container without cropping. Both combine with the existing alignment options to control which part of the image stays in view. [Learn more](../email/backgrounds.md)
 

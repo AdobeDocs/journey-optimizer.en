@@ -118,6 +118,8 @@ To start building your content, follow the steps below:
 
     Select the **[!UICONTROL n:n column]** component to define the number of columns of your choice (between 3 and 10). You can also define the width of each column by moving the arrows at the bottom of each column.
 
+    You can change the **[!UICONTROL Columns number]** of an existing structure at any time from the **[!UICONTROL Settings]** tab, even after adding content to it — your existing content is preserved instead of being lost.
+
    >[!NOTE]
    >
    >Each column size cannot be under 10% of the total width of the structure component. You cannot remove a column that is not empty.
