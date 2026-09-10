@@ -265,6 +265,23 @@ The following improvement is coming to campaigns in this release.
 
 The following improvement is coming to Decisioning in this release.
 
+<table>
+<thead>
+<tr>
+<th><strong>Decisioning support in Web channel</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Decisioning is now available for the Web channel. You can use decision policies directly in the web visual editor to deliver the most relevant offers to each visitor.</p>
+<!-- GIF placeholder: to be added -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
+
 * **Decisioning rule generation from CX Coworker** - The **AI-assisted decisioning rule generation** experience, previously available via the right rail, is now accessible through CX Coworker, which replaces the right rail as the way to build rules with AI. <!-- Documentation link: TBD -->
 
 ### Email Designer {#sep-26-email-designer}
