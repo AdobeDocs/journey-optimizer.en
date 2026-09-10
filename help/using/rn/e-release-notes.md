@@ -152,6 +152,8 @@ The following capabilities and improvements are coming to journeys in this relea
 
 * **Supplemental ID support in Journey simulation** - **Supplemental ID** is now supported in Journey simulation, allowing you to test complex user scenarios for both read-audience and event-triggered journeys. <!-- Documentation link: TBD -->
 
+* **Refined batch audience evaluation wait logic** - In the **Read audience activity**, the "Trigger after batch audience evaluation" option in journeys now waits for a fresh audience evaluation only when a batch segmentation is already in progress and the batch to activate differs from the one used in the previous run, avoiding unnecessary delays for journeys that don't need to wait. <!-- Documentation link: TBD -->
+
 ### Channels {#sep-26-channels}
 
 The following capabilities and improvements are coming to channels in this release.
