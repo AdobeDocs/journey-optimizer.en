@@ -77,6 +77,22 @@ Below are the available background settings that you can use.
 
     ![](assets/background_4.png)
 
+  Once a background image is set, use the **[!UICONTROL Image placement]** dropdown to control how the image fills the structure or column:
+
+  * **[!UICONTROL Fit]** - Stretches the image to fill the container on both axes, without preserving its aspect ratio.
+  * **[!UICONTROL Full Width]** - Scales the image proportionally to the container's width and centers it vertically.
+  * **[!UICONTROL Full Width - Top]** - Same as **[!UICONTROL Full Width]**, anchored to the top of the container. Overflow is cropped at the bottom.
+  * **[!UICONTROL Full Width - Bottom]** - Same as **[!UICONTROL Full Width]**, anchored to the bottom of the container. Overflow is cropped at the top.
+  * **[!UICONTROL Full Height]** - Scales the image proportionally to the container's height and centers it horizontally.
+  * **[!UICONTROL Full Height - Left]** - Same as **[!UICONTROL Full Height]**, anchored to the left of the container. Overflow is cropped on the right.
+  * **[!UICONTROL Full Height - Right]** - Same as **[!UICONTROL Full Height]**, anchored to the right of the container. Overflow is cropped on the left.
+  * **[!UICONTROL Repeat]** - Tiles the image at its original size to fill the container.
+  * **[!UICONTROL Left]**, **[!UICONTROL Right]**, **[!UICONTROL Center]**, **[!UICONTROL Top]**, **[!UICONTROL Bottom]** - Positions the image at its original size, anchored to the corresponding edge or center of the container.
+
+  >[!NOTE]
+  >
+  >**[!UICONTROL Full Width - Top]**, **[!UICONTROL Full Width - Bottom]**, **[!UICONTROL Full Height - Left]**, and **[!UICONTROL Full Height - Right]** give you more control over which part of the image stays in view when it doesn't match the structure's proportions, compared to using **[!UICONTROL Fit]**, **[!UICONTROL Full Width]**, or **[!UICONTROL Full Height]** alone.
+
 * Set a background color at the column level.
 
   >[!NOTE]

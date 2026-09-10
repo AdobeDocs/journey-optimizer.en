@@ -356,7 +356,7 @@ The following capabilities and improvements have been introduced to Orchestrated
 
   Availability date: August 5, 2026
 
-* **New Cover and Contain options for background image placement in the Email Designer** - The background image placement options now include Cover and Contain, alongside the existing Fit, Full Width, Full Height, and Repeat options. Cover scales the image proportionally to fill the structure or column, cropping any overflow; Contain scales it proportionally to fit within the container without cropping. Both combine with the existing alignment options to control which part of the image stays in view. [Learn more](../email/backgrounds.md)
+* **More background image placement options in the Email Designer** - Four new Image placement options are available for background images: Full Width - Top, Full Width - Bottom, Full Height - Left, and Full Height - Right. Each scales the image proportionally along one axis, like the existing Full Width and Full Height options, but anchors it to a specific edge instead of centering it, giving you more control over which part of a hero image stays in view. [Learn more](../email/backgrounds.md)
 
   Availability date: August 4, 2026
 
