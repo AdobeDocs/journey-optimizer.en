@@ -86,6 +86,23 @@ The following capability and improvement are coming to Loyalty in this release.
 </tbody>
 </table>
 
+<table>
+<thead>
+<tr>
+<th><strong>Loyalty event mapping updates</strong><br/></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Creating or editing an Event Mapping now uses a new **visual mapping builder**: select a schema, pick fields from a searchable field selector, map each field to a loyalty event field with per-row connection status, and preview the auto-generated JSONata expression, with the option to switch to manual JSONata editing at any time.</p><p>In addition, "Event Definitions" in Loyalty admin have been renamed to "Event Mappings", with a refreshed list view that shows the human-readable Experience event schema name.</p>
+<!-- GIF placeholder: to be added -->
+<!-- Documentation link: TBD -->
+</td>
+</tr>
+</tbody>
+</table>
+
 * **CX Coworker loyalty recommendation skill** - Marketers can now request **challenge opportunities** directly in CX Coworker's conversational interface, getting grounded challenge ideas based on real loyalty program trends and turning them into live challenges without leaving the chat. <!-- Documentation link: TBD -->
 
 ### Onboarding {#sep-26-onboarding}
